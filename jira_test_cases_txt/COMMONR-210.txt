@@ -1,5 +1,35 @@
 ■ 이슈 키: COMMONR-210
 ■ 제목: SEOS(Elite Key) 카드 지원
+■ 설명: 1. Smart Card Format 추가
+- 선택 창에서 iCLASS Seos 옵션 지원
+- DESFire Card 설정과 동일하게 입력 범위, 입력 값 옵션, 입력 값 표시 지원 : 16진수 Hex (16 Byte)
+> 16 Byte 범위로 0 부터 FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF 까지 입력 가능
+- ADF의 주소 표시 지원 : 변경 불가
+- Object Data 표시 지원 : 변경 가능(미표시)
+- Primary, Secondary Auth Key 설정
+- 암호화 방식: AES Only(미표시)
+
+2. 장치 설정
+- SEOS 카드의 데이터영역을 지원하는 장치는 W2, A2, BS2, P2 신규 FW 해당
+- 미지원 장치 SEOS Card Layout 설정 : SEOS Card Layout 무시
+- SEOS Configuration Card Key 설정 LED
+|Process Config Card	|Success Config Card|
+|Green	|Blue|
+|Black	|Red|
+|Cyan||
+- 초기화(공장 초기화, 네트워크 유지 초기화) 유지 항목 : SEOS Config(ADF Address, Object Data), Elite Key
+- 초기화 항목 : Primary Key, Secondary
+
+3. Test시 유의사항
+> Key 입력범위 : AES 16자(재확인 후 업데이트 예정)
+> ADF Address : Card에 기등록된 값 "0x2A8570811E1000070000020000" - 개발 검증 시 사용하는 값
+> Data Object ID/Size : Card에 기등록된 값(제조사 설정값)
+
+※ BSPP-41의 최성빈 수석님 Comment 내용 참고.
+SEOS 카드의 경우 SE Processor(SAM카드)의 Key와 다른 Key를 가진 카드로 인증을 시도할 경우 SEOS카드 에서는 응답 시간이 점차 길어지게 됩니다.
+(SEOS의 카드의 경우 보안강화를 위해서 키가 다른 경우 해당 카드가 일정 시간동안 동작하지 않는 것으로 확인됩니다.)
+ 
+우리제품에서 SEOS 카드의 경우 PAC(일반 HID 카드번호)와 AOC/SSC를 동시에 사용하기 위해서는 사용하고자하는 SEOS 카드의 키를 모두 동일하게 만들어야 하는데, 이부분이 다른 카드들과는 컨셉이 상이하게 됩니다.
 ============================================================
 
 ■ 테스트 스텝

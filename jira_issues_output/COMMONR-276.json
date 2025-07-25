@@ -1,0 +1,57 @@
+{
+  "id": "COMMONR-276",
+  "content": [
+    [
+      1,
+      "1. 바이오스타에 Intelligent Peripheral Device 추가\n2. RS485 모드: Master 설정\n3. Intelligent PD 옵션값 설정",
+      "",
+      "1. 해당 옵션들에 대해 지원하지 않는다.\n> UI 미표시"
+    ],
+    [
+      2,
+      "1. 바이오스타에 Intelligent Peripheral Device 추가\n2. RS485 모드: Slave 설정\n3. Intelligent PD 옵션값 설정",
+      "",
+      "1. 해당 옵션들에 대해 지원하지 않는다.\n> UI 미표시"
+    ],
+    [
+      3,
+      "1. 바이오스타에 Intelligent Peripheral Device 추가\n2. RS485 모드: Default 설정 \n3. Exception Code/Use User ID 설정\n4. 인증을 통해 동작확인",
+      "",
+      "1. 해당 옵션들에 대해 지원한다.\n> Exception Code\n: 사용안함(Default)/사용함\n> Output Info\n: Card ID(Default)/User ID\n> OSDP ID\n: 0(Default)\n2. 해당 옵션들은 3rd party Controller와 통신되지 않을 때에는 동작에 전혀 영향을 주지 않는다."
+    ],
+    [
+      4,
+      "[BioStar에 장치 추가된 상태]\n\n1. HID OSDP Tool과 연결\n 2. RS485 모드: Default 설정\n 3. 바이오스타에서 Intelligent PD 옵션 설정\n 4. 등록카드로 인증을 통해 동작확인",
+      "Intelligent Slave 옵션\n> Default 설정",
+      "1. 3rd party Controller에 등록된 카드ID가 출력된다."
+    ],
+    [
+      5,
+      "[BioStar에 장치 추가된 상태]\n\n1. HID OSDP Tool과 연결\n 2. RS485 모드: Default 설정\n 3. 바이오스타에서 Intelligent PD 옵션 설정\n 4. 미등록카드로 인증을 통해 동작확인",
+      "Intelligent Slave 옵션\n> Default 설정",
+      "1. Exception Code가 미설정(Default)되어 있으므로 3rd party Controller에 출력되는 값이 없다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-276",
+    "description": "",
+    "test_step": [
+      "1. 바이오스타에 Intelligent Peripheral Device 추가\n2. RS485 모드: Master 설정\n3. Intelligent PD 옵션값 설정",
+      "1. 바이오스타에 Intelligent Peripheral Device 추가\n2. RS485 모드: Slave 설정\n3. Intelligent PD 옵션값 설정",
+      "1. 바이오스타에 Intelligent Peripheral Device 추가\n2. RS485 모드: Default 설정 \n3. Exception Code/Use User ID 설정\n4. 인증을 통해 동작확인",
+      "[BioStar에 장치 추가된 상태]\n\n1. HID OSDP Tool과 연결\n 2. RS485 모드: Default 설정\n 3. 바이오스타에서 Intelligent PD 옵션 설정\n 4. 등록카드로 인증을 통해 동작확인",
+      "[BioStar에 장치 추가된 상태]\n\n1. HID OSDP Tool과 연결\n 2. RS485 모드: Default 설정\n 3. 바이오스타에서 Intelligent PD 옵션 설정\n 4. 미등록카드로 인증을 통해 동작확인"
+    ],
+    "data": [
+      "Intelligent Slave 옵션\n> Default 설정",
+      "Intelligent Slave 옵션\n> Default 설정"
+    ],
+    "expected_result": [
+      "1. 해당 옵션들에 대해 지원하지 않는다.\n> UI 미표시",
+      "1. 해당 옵션들에 대해 지원하지 않는다.\n> UI 미표시",
+      "1. 해당 옵션들에 대해 지원한다.\n> Exception Code\n: 사용안함(Default)/사용함\n> Output Info\n: Card ID(Default)/User ID\n> OSDP ID\n: 0(Default)\n2. 해당 옵션들은 3rd party Controller와 통신되지 않을 때에는 동작에 전혀 영향을 주지 않는다.",
+      "1. 3rd party Controller에 등록된 카드ID가 출력된다.",
+      "1. Exception Code가 미설정(Default)되어 있으므로 3rd party Controller에 출력되는 값이 없다."
+    ]
+  }
+}

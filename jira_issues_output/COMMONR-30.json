@@ -1,0 +1,189 @@
+{
+  "id": "COMMONR-30",
+  "content": [
+    [
+      1,
+      "1. User> Add User\n2. Fingerprint 및 PIN 추가\n3. Device> 지문인증모드 설정\n4. 해당 사용자로 인증시도",
+      "Master, Slave 확인\n: Master장치(Station,Entry계열)\n: Slave 장치(Station,Entry계열)\n> 지문Only(Default) 모드\n> 지문+PIN 모드",
+      "설정한 인증모드로 동작되어야 한다.\n> 인증 성공/실패에 따라 로그가 남는다.\n> Master에서 복합인증 수행시, 인증결과 출력 혹은 취소 버튼, 인증타임아웃 등을 통해서 매칭이 취소된 후 새로운 Credential이 입력될 수 있다.\n> Slave에서 복합인증 수행시, 인증 결과 출력 혹은 타임아웃 발생 후 새로운 Credential을 다시 입력할 수 있다."
+    ],
+    [
+      2,
+      "<A 스케줄 생성한 상태>\n1. Device> 지문인증모드\n2. 지문인증모드에 동일한 스케줄 설정",
+      "",
+      "> 동일 모드에 대해 스케줄 중복설정이 불가능해야 한다.\n> 'Always'로 설정된 경우 동일모드에서는 스케줄 설정이 불가능해야 한다."
+    ],
+    [
+      3,
+      "1. User> Add User> 지문만 등록된 사용자 추가\n2. Device> 지문+PIN 인증모드 설정\n3. 해당 사용자로 인증시도",
+      "",
+      "> 지문인증시 인증실패로 동작되면서 'No PIN Credential' 에러 팝업이 떠야한다.\n> 로그는 AUth Fail 사용자 ID 로 남아야 한다."
+    ],
+    [
+      4,
+      "1. User> Add User> 지문과 PIN 등록된 사용자 추가\n2. Device> 1:N Security Level 설정\n3. 지문인증모드를 설정 후 해당 사용자로 인증시도",
+      "1:N Security Level\n> Normal(Default)\n> High\n> Highest\n : 장치에서는 Normal, Secure, Most Secure 로 표시됨\n\n지문인증모드\n> 지문Only 모드\n> 지문+PIN 모드",
+      "지문, 지문+PIN 인증시 각각의 설정에 대해 동작되어야 한다.\n> 개인인증모드, 장치인증모드 상관없이 지문, 지문+PIN에 대해 1:N Security Level을 따라가야 한다."
+    ],
+    [
+      5,
+      "1. User> Add User> 지문 등록된 사용자 추가\n2. Device> Sensor Sensitivity 설정\n3. 해당 사용자로 지문인증시도",
+      "Sensor Sensitivity\n> 1~7 (Default)\n",
+      "각각의 설정에 대해 인증이 동작되어야 한다.\n: 1로 설정 후 지문인증시 인증성공율이 낮아진다.\n: 7로 설정 후 지문인증시 인증실패율이 낮아진다."
+    ],
+    [
+      6,
+      "1. User> Add User> 지문 등록된 사용자 추가\n2. Device> 1:N Fast Mode 설정\n3. 등록한 사용자로 지문인증 시도\n4. 등록되지 않은 사용자로 지문인증 시도\n",
+      "1:N Fast Mode\n> Auto(Default)\n> Normal\n> Fast\n> Fastest",
+      "> 등록되지 않은 사용자로 인증할 경우 각각의 설정에 대해 인증실패로 동작되어야 한다.\n> 등록된 사용자로 인증할 경우 각각의 설정에 대해 인증이 동작되어야 한다.\n"
+    ],
+    [
+      7,
+      "1. Device> 지문인증모드 설정\n2. User> Add User> 지문등록\n3. 2지이상 지문등록한 다음 협박지문 설정\n4. 설정한 지문인증모드에 협박지문으로 인증시도",
+      "지문인증모드\n> 지문Only\n> 지문+PIN",
+      "협박지문으로 인증할 경우 협박지문으로 동작되어야 한다.\n> 협박지문 로그가 남는다."
+    ],
+    [
+      8,
+      "<스케줄을 생성한 상태>\n1. Device> 지문인증모드에 스케줄 설정\n2. 지문인증시도",
+      "지문인증모드\n> 지문 모드\n> 지문+PIN 모드",
+      "> 현재 시간의 스케줄로 설정된 인증모드로 동작되어야 한다.\n> 현재 시간이 스케줄에 포함되지 않은 인증모드로 인증시 'Authentication failed (Invalid credential)'로 인증실패가 되어야 한다."
+    ],
+    [
+      9,
+      "1. Device> 지문인증모드\n2. 다중 인증모드 설정\n3. 설정한 모드의 처음에 해당하는 모드 입력 후 설정한 Auth Timeout 시간내 입력시도",
+      "Auth Timeout : 3s ~ 20s\n다중지원 지문인증모드\n> 지문+PIN 모드\n\n> 단일장치 및 RS485 구성에 대해 모두 확인사항\n(on) FS2(M)-지문 인증 가능 장치(S)",
+      "인증성공으로 동작되어야 한다.\n> Slave 장치의 경우\n : Matching TimeOut - Slave\n : Auth. TimeOut - Slave\n : Msg. TimeOut- Slave"
+    ],
+    [
+      10,
+      "1. Device> 지문인증모드\n2. 다중 인증모드 설정\n3. 설정한 모드의 처음에 해당하는 모드 입력 후 설정한 Auth Timeout 시간내 나머지 모드에 대해 미입력",
+      "Auth Timeout : 3s ~ 20s\n> 지문+PIN 모드\n\n> 단일장치 및 RS485 구성에 대해 모두 확인사항\n(on) FS2(M)-지문인증 가능 장치(S)",
+      "Auth Timeout이 발생되어 인증실패로 동작되어야 한다.\n> Slave 장치의 경우\n : Matching TimeOut - Slave\n : Auth. TimeOut - Slave\n : Msg. TimeOut- Slave"
+    ],
+    [
+      11,
+      "1. Device > Matching Timeout 설정",
+      "Matching Timeout\n1s ~ 20s(Default: 5s)",
+      "선택한 값이 설정되어야 한다.\n> Device에 저장된 값과 비교"
+    ],
+    [
+      12,
+      "1. Device> 지문인증모드(지문Only) 설정\n2. Matching Timeout 설정\n3. User> Add User> 장치에서 지원하는 지문사용자 최대로 등록\n4. 등록된 지문인증시도\n5. 등록되지 않은 지문인증시도\n\n※ 장치별 사용자/로그 사양 Test Case 참조",
+      "Matching Timeout\n> 1s ~ 20s(Default: 5s)\n\n> 단일장치 및 RS485 구성에 대해 모두 확인사항",
+      "설정한 시간내 인증성공 유무를 출력해주어야 한다.\n설정한 시간내 Matching이 이루어지지 않은 경우 인증실패로 동작되어야 한다.\n> Slave 장치의 경우\n : Matching TimeOut - Slave\n : Auth. TimeOut - Slave\n : Msg. TimeOut- Slave"
+    ],
+    [
+      13,
+      "1. Device > Fingerprint LFD 설정",
+      "지문인증모드\n> Fingerprint (Only)\n> Fingerprint + PIN\n\nFingerprint LFD\n> Not Used(Default), Level 1, Level 2, Level 3",
+      "1. 선택한 값이 설정되어야 한다.\n> Device 에 저장된 값과 비교\n2. 인증 성공/실패가 발생하는지 확인한다.\n> 성능은 고려 안함\n> System Reset 없이 정상 동작함\n> 위조 지문 검출시 인증 실패 로그 남지 않는다.\n3. 장치 재부팅 시에도 위조지문관련해서는 검사를 유지해야 된다.\n4. 위조 지문 설정이 지문 스캔 속도에 영향이 없어야 한다."
+    ],
+    [
+      14,
+      "1. Device > Advanced Enrollment 설정",
+      "Advanced Enrollment\n> Enable(Default)\n> Disable",
+      "1. 선택한 값이 설정되어야 한다.\n> Device 에 저장된 값과 비교\n2. Enable 설정시 장치에서 사용자 등록 > 지문 입력시 Feedback 을 준다.\n> 손가락을 센서 중앙이 아닌 좌/우에 치우쳐서 입력시 센서 중앙에 손가락을 위치시켜야 한다는 팝업 발생한다.\n3. Disable 설정시 장치에서 사용자 등록 > 지문 입력시 Feedback 을 주지 않는다.\n> 손가락을 센서 중앙이 아닌 좌/우에 치우쳐서 입력시 팝업 발생없이 지문 추가된다."
+    ],
+    [
+      15,
+      "1. User> Add User\n2. Fingerprint 및 PIN 추가\n3. Device> 지문인증모드 설정\n4. 해당 사용자로 인증시도\n5. 장치 재부팅 -> 재인증",
+      "Master, Slave 확인\n> 지문Only(Default) 모드\n> 지문+PIN 모드\n> 지문 업데이트 도중 Power Off/On",
+      "설정한 인증모드로 동작되어야 한다.\n> 인증 성공/실패에 따라 로그가 남는다."
+    ],
+    [
+      16,
+      "1. Template Format을 설정한다.\n2. 사용자 지문을 센서의 좌우로 치우쳐서 등록\n3. 센서의 중앙에서 인증시도",
+      "",
+      "인증이 성공으로 동작되어야 한다."
+    ],
+    [
+      17,
+      "1. UserID 1 추가(지문 미등록)\n2. UserID 4 추가(지문 2지등록)\n3. UserID 4의 지문으로 인증\n4. 인증성공 Msg 출력 후 전원Off/On \n5. UserID 4의 지문으로 재인증 시도\n6. Step 3)4)5) 반복테스트 시에도 문제가 없는지 확인",
+      "",
+      "다른 UserID로 오인증되지 않고 정상적으로 인증이 이루어져야 한다.\n> UI가 있는 장치의 경우 인증성공시 화면에 출력되는 UserID 확인 및 로그 확인\n> UI가 없는 장치의 경우 로그 확인"
+    ],
+    [
+      18,
+      "1. User> 지문사용자 등록\n2. 등록한 사용자로 지문인증시도\n3. 성공확인\n4. 5초 경과 전 전원Off/On\n5. 지문재인증 시도",
+      "",
+      "인증성공이 정상적으로 이루어져야 한다."
+    ],
+    [
+      19,
+      "1. SQL2012에서 DB복구(BioStar v1.92)\n2. 장치에 사용자 전송\n3. BioStar2에 사용자 업로드\n4. 프로젝트 진행중인 장치에 사용자 전송\n5. 지문인증시도",
+      "DB위치\n> \\\\192.168.1.8\\Share\\부서업무\\BMS\\기술기획\\99.BK\\TS고객첨부파일\\8062\\\n",
+      "1. Reboot없이 인증실패로 동작되어야 한다.\n   > 복구한 DB는 고객DB로 인증실패로 동작.\n   > FISF-425 참조"
+    ],
+    [
+      20,
+      "[F2 V1.1.2 이상]\n1. User > Add User >  +Finger > +Add > Scan Finger\n2. 장치에서 Scan Finger 팝업이 뜨면 얼굴 인증 시도",
+      "",
+      "1. Scan Finger시 백그라운드에서 얼굴 인증이 비활성화 되어 얼굴인증이 불가해야 한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-30",
+    "description": "",
+    "test_step": [
+      "1. User> Add User\n2. Fingerprint 및 PIN 추가\n3. Device> 지문인증모드 설정\n4. 해당 사용자로 인증시도",
+      "<A 스케줄 생성한 상태>\n1. Device> 지문인증모드\n2. 지문인증모드에 동일한 스케줄 설정",
+      "1. User> Add User> 지문만 등록된 사용자 추가\n2. Device> 지문+PIN 인증모드 설정\n3. 해당 사용자로 인증시도",
+      "1. User> Add User> 지문과 PIN 등록된 사용자 추가\n2. Device> 1:N Security Level 설정\n3. 지문인증모드를 설정 후 해당 사용자로 인증시도",
+      "1. User> Add User> 지문 등록된 사용자 추가\n2. Device> Sensor Sensitivity 설정\n3. 해당 사용자로 지문인증시도",
+      "1. User> Add User> 지문 등록된 사용자 추가\n2. Device> 1:N Fast Mode 설정\n3. 등록한 사용자로 지문인증 시도\n4. 등록되지 않은 사용자로 지문인증 시도\n",
+      "1. Device> 지문인증모드 설정\n2. User> Add User> 지문등록\n3. 2지이상 지문등록한 다음 협박지문 설정\n4. 설정한 지문인증모드에 협박지문으로 인증시도",
+      "<스케줄을 생성한 상태>\n1. Device> 지문인증모드에 스케줄 설정\n2. 지문인증시도",
+      "1. Device> 지문인증모드\n2. 다중 인증모드 설정\n3. 설정한 모드의 처음에 해당하는 모드 입력 후 설정한 Auth Timeout 시간내 입력시도",
+      "1. Device> 지문인증모드\n2. 다중 인증모드 설정\n3. 설정한 모드의 처음에 해당하는 모드 입력 후 설정한 Auth Timeout 시간내 나머지 모드에 대해 미입력",
+      "1. Device > Matching Timeout 설정",
+      "1. Device> 지문인증모드(지문Only) 설정\n2. Matching Timeout 설정\n3. User> Add User> 장치에서 지원하는 지문사용자 최대로 등록\n4. 등록된 지문인증시도\n5. 등록되지 않은 지문인증시도\n\n※ 장치별 사용자/로그 사양 Test Case 참조",
+      "1. Device > Fingerprint LFD 설정",
+      "1. Device > Advanced Enrollment 설정",
+      "1. User> Add User\n2. Fingerprint 및 PIN 추가\n3. Device> 지문인증모드 설정\n4. 해당 사용자로 인증시도\n5. 장치 재부팅 -> 재인증",
+      "1. Template Format을 설정한다.\n2. 사용자 지문을 센서의 좌우로 치우쳐서 등록\n3. 센서의 중앙에서 인증시도",
+      "1. UserID 1 추가(지문 미등록)\n2. UserID 4 추가(지문 2지등록)\n3. UserID 4의 지문으로 인증\n4. 인증성공 Msg 출력 후 전원Off/On \n5. UserID 4의 지문으로 재인증 시도\n6. Step 3)4)5) 반복테스트 시에도 문제가 없는지 확인",
+      "1. User> 지문사용자 등록\n2. 등록한 사용자로 지문인증시도\n3. 성공확인\n4. 5초 경과 전 전원Off/On\n5. 지문재인증 시도",
+      "1. SQL2012에서 DB복구(BioStar v1.92)\n2. 장치에 사용자 전송\n3. BioStar2에 사용자 업로드\n4. 프로젝트 진행중인 장치에 사용자 전송\n5. 지문인증시도",
+      "[F2 V1.1.2 이상]\n1. User > Add User >  +Finger > +Add > Scan Finger\n2. 장치에서 Scan Finger 팝업이 뜨면 얼굴 인증 시도"
+    ],
+    "data": [
+      "Master, Slave 확인\n: Master장치(Station,Entry계열)\n: Slave 장치(Station,Entry계열)\n> 지문Only(Default) 모드\n> 지문+PIN 모드",
+      "1:N Security Level\n> Normal(Default)\n> High\n> Highest\n : 장치에서는 Normal, Secure, Most Secure 로 표시됨\n\n지문인증모드\n> 지문Only 모드\n> 지문+PIN 모드",
+      "Sensor Sensitivity\n> 1~7 (Default)\n",
+      "1:N Fast Mode\n> Auto(Default)\n> Normal\n> Fast\n> Fastest",
+      "지문인증모드\n> 지문Only\n> 지문+PIN",
+      "지문인증모드\n> 지문 모드\n> 지문+PIN 모드",
+      "Auth Timeout : 3s ~ 20s\n다중지원 지문인증모드\n> 지문+PIN 모드\n\n> 단일장치 및 RS485 구성에 대해 모두 확인사항\n(on) FS2(M)-지문 인증 가능 장치(S)",
+      "Auth Timeout : 3s ~ 20s\n> 지문+PIN 모드\n\n> 단일장치 및 RS485 구성에 대해 모두 확인사항\n(on) FS2(M)-지문인증 가능 장치(S)",
+      "Matching Timeout\n1s ~ 20s(Default: 5s)",
+      "Matching Timeout\n> 1s ~ 20s(Default: 5s)\n\n> 단일장치 및 RS485 구성에 대해 모두 확인사항",
+      "지문인증모드\n> Fingerprint (Only)\n> Fingerprint + PIN\n\nFingerprint LFD\n> Not Used(Default), Level 1, Level 2, Level 3",
+      "Advanced Enrollment\n> Enable(Default)\n> Disable",
+      "Master, Slave 확인\n> 지문Only(Default) 모드\n> 지문+PIN 모드\n> 지문 업데이트 도중 Power Off/On",
+      "DB위치\n> \\\\192.168.1.8\\Share\\부서업무\\BMS\\기술기획\\99.BK\\TS고객첨부파일\\8062\\\n"
+    ],
+    "expected_result": [
+      "설정한 인증모드로 동작되어야 한다.\n> 인증 성공/실패에 따라 로그가 남는다.\n> Master에서 복합인증 수행시, 인증결과 출력 혹은 취소 버튼, 인증타임아웃 등을 통해서 매칭이 취소된 후 새로운 Credential이 입력될 수 있다.\n> Slave에서 복합인증 수행시, 인증 결과 출력 혹은 타임아웃 발생 후 새로운 Credential을 다시 입력할 수 있다.",
+      "> 동일 모드에 대해 스케줄 중복설정이 불가능해야 한다.\n> 'Always'로 설정된 경우 동일모드에서는 스케줄 설정이 불가능해야 한다.",
+      "> 지문인증시 인증실패로 동작되면서 'No PIN Credential' 에러 팝업이 떠야한다.\n> 로그는 AUth Fail 사용자 ID 로 남아야 한다.",
+      "지문, 지문+PIN 인증시 각각의 설정에 대해 동작되어야 한다.\n> 개인인증모드, 장치인증모드 상관없이 지문, 지문+PIN에 대해 1:N Security Level을 따라가야 한다.",
+      "각각의 설정에 대해 인증이 동작되어야 한다.\n: 1로 설정 후 지문인증시 인증성공율이 낮아진다.\n: 7로 설정 후 지문인증시 인증실패율이 낮아진다.",
+      "> 등록되지 않은 사용자로 인증할 경우 각각의 설정에 대해 인증실패로 동작되어야 한다.\n> 등록된 사용자로 인증할 경우 각각의 설정에 대해 인증이 동작되어야 한다.\n",
+      "협박지문으로 인증할 경우 협박지문으로 동작되어야 한다.\n> 협박지문 로그가 남는다.",
+      "> 현재 시간의 스케줄로 설정된 인증모드로 동작되어야 한다.\n> 현재 시간이 스케줄에 포함되지 않은 인증모드로 인증시 'Authentication failed (Invalid credential)'로 인증실패가 되어야 한다.",
+      "인증성공으로 동작되어야 한다.\n> Slave 장치의 경우\n : Matching TimeOut - Slave\n : Auth. TimeOut - Slave\n : Msg. TimeOut- Slave",
+      "Auth Timeout이 발생되어 인증실패로 동작되어야 한다.\n> Slave 장치의 경우\n : Matching TimeOut - Slave\n : Auth. TimeOut - Slave\n : Msg. TimeOut- Slave",
+      "선택한 값이 설정되어야 한다.\n> Device에 저장된 값과 비교",
+      "설정한 시간내 인증성공 유무를 출력해주어야 한다.\n설정한 시간내 Matching이 이루어지지 않은 경우 인증실패로 동작되어야 한다.\n> Slave 장치의 경우\n : Matching TimeOut - Slave\n : Auth. TimeOut - Slave\n : Msg. TimeOut- Slave",
+      "1. 선택한 값이 설정되어야 한다.\n> Device 에 저장된 값과 비교\n2. 인증 성공/실패가 발생하는지 확인한다.\n> 성능은 고려 안함\n> System Reset 없이 정상 동작함\n> 위조 지문 검출시 인증 실패 로그 남지 않는다.\n3. 장치 재부팅 시에도 위조지문관련해서는 검사를 유지해야 된다.\n4. 위조 지문 설정이 지문 스캔 속도에 영향이 없어야 한다.",
+      "1. 선택한 값이 설정되어야 한다.\n> Device 에 저장된 값과 비교\n2. Enable 설정시 장치에서 사용자 등록 > 지문 입력시 Feedback 을 준다.\n> 손가락을 센서 중앙이 아닌 좌/우에 치우쳐서 입력시 센서 중앙에 손가락을 위치시켜야 한다는 팝업 발생한다.\n3. Disable 설정시 장치에서 사용자 등록 > 지문 입력시 Feedback 을 주지 않는다.\n> 손가락을 센서 중앙이 아닌 좌/우에 치우쳐서 입력시 팝업 발생없이 지문 추가된다.",
+      "설정한 인증모드로 동작되어야 한다.\n> 인증 성공/실패에 따라 로그가 남는다.",
+      "인증이 성공으로 동작되어야 한다.",
+      "다른 UserID로 오인증되지 않고 정상적으로 인증이 이루어져야 한다.\n> UI가 있는 장치의 경우 인증성공시 화면에 출력되는 UserID 확인 및 로그 확인\n> UI가 없는 장치의 경우 로그 확인",
+      "인증성공이 정상적으로 이루어져야 한다.",
+      "1. Reboot없이 인증실패로 동작되어야 한다.\n   > 복구한 DB는 고객DB로 인증실패로 동작.\n   > FISF-425 참조",
+      "1. Scan Finger시 백그라운드에서 얼굴 인증이 비활성화 되어 얼굴인증이 불가해야 한다."
+    ]
+  }
+}

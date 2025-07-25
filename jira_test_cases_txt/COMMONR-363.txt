@@ -1,5 +1,36 @@
 ■ 이슈 키: COMMONR-363
 ■ 제목: Mask - Configuration 설정 동작 확인
+■ 설명: 마스크 착용 높이 및 기준
+> 마스크로 코끝을 포함하여 콧구멍을 덮는 것
+
+ 
+
+BDP-988 얼굴 인증 시 마스크 착용한 경우 인증 거부 옵션 지원 추가
+
+1.요구사항
+ * 얼굴 인증 장치의 상세 설정 화면에서 마스크 검출 시에 마스크를 착용 중일 때 인증 실패 처리하는 옵션을 설정할 수 있다. 
+ ** Mask Detection 설정에 신규 옵션을 추가하여 마스크를 착용하고 인증을 시도하는 경우에는 인증 실패 처리하는 기능을 지원한다. 
+ ** 설정 위치
+ *** 장치 상세 페이지 > Mask > Mask Configuration 
+ ** Mask Detection 기능의 동작을 단계화하여 마스크 검출 기능을 설정하여 사용할 수 있다. 
+ *** BioStar 2 v2.9.7까지는 하나의 옵션에서 Mask Detection에 대하여 세 가지 모드로 선택하게 되어 있었다. 
+ **** 기존 옵션 - Mask Detection
+ ***** 1)Not Use
+ ***** 2)Use (Deny access when failed to detect mask)
+ ***** 3)Use (Allow access after leaving log when failed to detect mask)
+ *** BioStar 2 v2.9.8에서는 Mask Detection에 대하여 동작이 추가되어 네 가지 모드로 선택할 수 있다. 
+ **** Mask Detection 
+ ***** 옵션값 
+ ***** 
+ ****** 1)Not Use
+ ****** 2)Use (Deny access when failed to detect mask)
+ ****** 3)Use (Allow access after leaving log when failed to detect mask)
+ ****** 4)Use (Deny access when wearing mask)
+ **** Mask Detection을 신규 옵션인 4)Use (Deny access when wearing mask) 를 선택한 경우에는 'Mask Check Mode - Check Mode'는 Check Before Authentication으로 고정되고 변경할 수 없게 한다. 
+
+2. 반영 버전
+ SW1팀에서 2.9.8 반영을 목표로 작업 예정
+ * *Capability 신규 추가*
 ============================================================
 
 ■ 테스트 스텝

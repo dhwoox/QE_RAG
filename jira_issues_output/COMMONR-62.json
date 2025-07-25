@@ -1,0 +1,240 @@
+{
+  "id": "COMMONR-62",
+  "content": [
+    [
+      1,
+      "1. Setting > Card Format > Smart Card\n2. Smart Card Layout 추가\n3. 장치> Smart Card Layout 설정\n4. User> 기 등록된 사용자 선택> Card> SmartCard> 사용자 정보 Write",
+      "카드발급\n> Mifare / Mifare Plus Card\n> DesFire EV1/EV2 Card\n> iClass / iClass SE Card\n\nSmart Card\n> AOC/SCC",
+      "사용자 정보가 카드에 Write 되어야 한다.\n> 카드에 Write할 메모리가 여유로울 경우 Wite되어야 한다.\n> 카드에 Write할 메모리가 부족할 경우 Wite 중 실패되어야 한다.\n=> Device Timeout 팝업 발생"
+    ],
+    [
+      2,
+      "1. Smart Card Layout 추가\n> 발급된 카드의 Key와 상이\n2. 장치> 위에서 추가한 Layout 설정\n3. 기 발급된 Smart Card 리드",
+      "카드발급\n> Mifare / Mifare Plus Card\n> DesFire EV1/EV2 Card\n> iClass / iClass SE Card\n\nSmart Card\n> AOC/SCC\n\n※ DESFire / DESFire EV1 경우 - App, File, Encryption Type 에 대해 기 발급된 카드와 동일하게 설정.\n\n",
+      "발급된 정보가 아닌 CSN으로 리드된다."
+    ],
+    [
+      3,
+      "1. Smart Card Layout 추가\n> Primary Key: 발급된 카드키와 상이\n> Secondary Key: 발급된 카드키와 동일\n4. 장치> 위에서 추가한 Layout 설정\n5. 기 발급된 Smart Card 리드",
+      "카드발급\n> Mifare / Mifare Plus Card\n> DesFire EV1/EV2 Card\n> iClass / iClass SE Card\n\nSmart Card\n> AOC/SCC\n\n※ DESFire / DESFire EV1 경우 - App, File, Encryption Type 에 대해 기 발급된 카드와 동일하게 설정.\n\n",
+      "발급된 정보로 리드된다."
+    ],
+    [
+      4,
+      "1. Smart Card Layout 추가\n> Primary Key & Encryption Type\n: 발급된 카드키와 상이Primary \n> Secondary Key: 사용안함 설정\n2. 장치> 위에서 추가한 \nLayout 설정\n3. Smart Card 리드",
+      "카드발급\n> Mifare / Mifare Plus Card\n> DesFire EV1/EV2 Card\n> iClass / iClass SE Card\n\nSmart Card\n> AOC/SCC",
+      "발급된 정보가 아닌 CSN으로 리드된다."
+    ],
+    [
+      5,
+      "1. Setting> Card Format> Smart Card> Add Smart Card\n2. Key 및 Layout 설정\n3. User> 기 등록된 사용자 선택> Card> SmartCard> 사용자 정보 Write",
+      "Mifare / Mifare Plus Card\n> 1K Card(Byte)\n> 2K Card(Byte)\n> 4K Card(Byte)\n\nSmart Card\n> AOC/SCC",
+      "> 카드에 Write할 메모리가 여유로울 경우 Wite되어야 한다.\n> 카드에 Write할 메모리가 부족할 경우 Wite 중 실패되어야 한다.\n=> Device Timeout 팝업 발생"
+    ],
+    [
+      6,
+      "1. Setting> Card Format> Smart Card> Add Smart Card\n2. Key 및 Layout 설정\n3. User> 기 등록된 사용자 선택> Card> SmartCard> 사용자 정보 Write",
+      "Mifare DesFire / Mifare DesFire EV1 Card\n> 2K Card(Byte)\n> 4K Card(Byte)\n> 8K Card(Byte)\n\nSmart Card\n> AOC/SCC",
+      "> 카드에 Write할 메모리가 여유로울 경우 Wite되어야 한다.\n> 카드에 Write할 메모리가 부족할 경우 Wite 중 실패되어야 한다.\n=> Device Timeout 팝업 발생\n> Blackfin 장치와 Station 장치 각각 카드 읽는 시간이 같아야 한다. \n\n"
+    ],
+    [
+      7,
+      "1. Setting> Card Format> Smart Card> Add Smart Card\n2. Key 및 Layout 설정\n3. User> 기 등록된 사용자 선택> Card> SmartCard> 사용자 정보 Write",
+      "iClass / iClass SE Card\n> 2K bits / 2 Application\n> 16K bits / 2 Application\n> 16K bits / 16 Application\n> 32K bits / (16K/2+16K/1)\n> 32K bits / (16K/16+16K/1)\n\nSmart Card\n> AOC/SCC",
+      "> 카드에 Write할 메모리가 여유로울 경우 Wite되어야 한다.\n> 카드에 Write할 메모리가 부족할 경우 Wite 중 실패되어야 한다.\n=> Device Timeout 팝업 발생\n> Blackfin 장치와 Station 장치 각각 카드 읽는 시간이 같아야 한다. \n"
+    ],
+    [
+      8,
+      "<Card Format 설정 & 장치에 Layout 설정된 상태>\n1. User> 기 등록된 사용자 선택> Card> Read Card> Format Card\n2. SmartCard> Secure Credential 카드에 사용자 정보 Write",
+      "사용자 ID\n > 숫자 : 기존과 동일\n > 영숫자 : Default(공란), 24 byte 범위 내에서 10진수 숫자 1 부터 입력 지원\n\n포맷\n> 영숫자 모드가 불일치 해도 카드 레이아웃만 동일하면 장치 상관 없이 가능\n: 영숫자 모드 불일치, 미지원 FW",
+      "> 출입그룹 정보는 장치에 저장되어야 하고, 카드ID/지문/PIN 정보만 저장되어야 한다.\n> 카드 Type/Template 개수/발급회차가 저장되어야 한다.\n-: 카드 Type(AOC, SCC), Summary의 ID(Issue Count : x) - 카드 사양으로 8개를 초과 할 수없음"
+    ],
+    [
+      9,
+      "1. Step 9에서 발급한 Secure Credential 카드 인증시도",
+      "인증시도\n> 단일장치\n> Master-Slave 장치\n> 장치 인증 모드별\n=: Card, 이중인증, 근태, 권한별 메뉴 진입\n=: ID, Finger - 의미가 없음",
+      "> 발급된 정보로 인증성공으로 동작한다."
+    ],
+    [
+      10,
+      "<Card Format 설정 & 장치에 Layout 설정된 상태>\n1. User> 기 등록된 사용자 선택> Card> Read Card> Format Card\n2. SmartCard> Access On 카드에 사용자 정보 Write",
+      "사용자 ID\n > 숫자, 영숫자, 특수 문자('_','-')\n\n포맷\n> 영숫자 모드가 불일치 해도 카드 레이아웃만 동일하면 장치 상관 없이 가능\n: 영숫자 모드 불일치, 미지원 FW",
+      "> 인증에 필요한 모든 정보(개인인증모드 포함)가 저장되어야 한다.\n> Access On 카드 Write시 발급회차가 발급되어야 한다.\n-: 카드 Type(AOC, SCC), Summary의 ID(Issue Count : x) - 카드 사양으로 8개를 초과 할 수없음"
+    ],
+    [
+      11,
+      "1. Step 11에서 발급한 Access On 카드 인증시도",
+      "인증시도\n> 단일장치 & RS485 구성된 Master/Slave 장치\n> 카드인증모드\n> 카드인증을 통한 관리자 메뉴진입\n> 이중인증/근태인증",
+      "> 발급된 정보로 인증성공으로 동작한다.\n: 장치에 등록된 사용자와는 무관하게 인증되어야 한다."
+    ],
+    [
+      12,
+      "1. A Layout를 이용하여 카드 발급\n2. B Layout이 적용된 장치에 A Layout으로 발급된 Card 리드\n3. 해당 장치를 포맷 후 재발급 시도",
+      "카드발급\n> Mifare / Mifare Plus Card\n> Mifare DesFire / Mifare DesFire EV1 Card\n> iClass / iClass SE Card",
+      "1. A Layout이 적용된 장치에서 읽혀야 한다.\n2. B Layout 장치에서는 A Layout에서 발급한 카드가 CSN으로 동작을 한다.\n> Key가 다른 경우에도 CSN으로 인식이 되어야 한다.\n3. B Layout에 Secondary Key을 등록하여 포맷이나 재발급을 한다."
+    ],
+    [
+      13,
+      "1. A Layout를 이용하여 카드 발급\n2. B Layout이 적용된 장치에 A Layout으로 발급된 Card 리드\n3. 해당 장치를 포맷 후 재발급 시도",
+      "A Layout - DESFire/DESFire EV1\n> DES/3DES 설정\nB Layout - DESFire/DESFire EV1\n> AES 설정",
+      "1. A Layout이 적용된 장치에서 읽혀야 한다.\n2. B Layout 장치에서는 A Layout에서 발급한 카드가 CSN으로 동작을 한다.\n> Encryption Type이 다른 경우(Key가 다른 경우 포함)에도 CSN으로 인식된다.\n> Format 시도시 실패 한다.\n3. 구형 버전에서는 AES로 지정시 내부적으로 DES/3DES로 동작을 한다.\n> DESFire EV1- AES로 발급 시 DES/3DES로 변경 안됨(DES/3DES -> AES로 1회 변경 가능)"
+    ],
+    [
+      14,
+      "1. Device> Layout에 A Card Format으로 설정\n2. User> Smart Card 발급\n3. Device> Layout에 B Card Format으로 설정\n4. step2에서 발급받은 카드로 인증시도",
+      "Smart Card 발급\n> Mifare/Desfire\n> Iclass \n\n<A Card Format 설정>\n-) Primary Key는 임의 설정\n-) Secondary Key는 Default 설정\n\n<B Card Format 설정>\n-) Primary Key는 Default 설정\n-) Secondary Key는 사용안함 설정",
+      "인증실패로 동작되어야 한다."
+    ],
+    [
+      15,
+      "1. Device> Layout에 A Card Format으로 설정\n2. User> Smart Card 발급\n3. Device> Layout에 B Card Format으로 설정\n4. User> step2에서 발급받은 카드로 인증시도",
+      "Smart Card 발급\n> Desfire/Mifare/Iclass\n\nex.DesFire 설정\n<A Card Format 설정>\n-) Primary Key는 1111111111111111 설정\n\n<B Card Format 설정>\n-) Primary Key는 2222222222222222 설정\n-) Secondary Key는 1111111111111111 설정",
+      "1. Secondary Key로 인해 B Card Format으로 카드발급이 이루어져야 하고 발급된 카드로 인증성공이 되어야 한다."
+    ],
+    [
+      16,
+      "1. Setting> Server> Smart Card> Add Smart Card\n2. DesFire> 설정 후 Apply\n3. Device> DesFire로 생성한 Layout 설정\n4. User> Card 발급 시도",
+      "추후 수정 예정\n\n[BioStar] 설정 범위\nApp ID: 1(Default) ~ 16777215\n=> Default, 임의값 설정해 확인\n\nMax : 28\n\nFile ID: 1 ~ 31\n=> Default, 임의값 설정해 확인\n\nMax : 32",
+      "1. 카드발급이 정상적으로 이루어져야 한다.\n> BioStar 상의 입력값은 별도 확인 필요\n> Desfire / Desfire EV1 Card Memory Structure\nMax App : 28, Max File : 32(1 Per Application - Desfire EV1), 16(1 Per Application - Desfire)\nApplication ID 0 - Reserved\n1 ~ 27 사용 가능 \nFile ID\n0 ~ 15 (Desfire)\n0 ~ 31 (Desfire EV1)"
+    ],
+    [
+      17,
+      "1. Device> Layout 설정\n2. User> AOC 카드발급> Private Auth Mode 설정\n3. 발급받은 카드로 인증시도",
+      "사용자 ID 모드\n> 숫자/영숫자\n\nPrivate Auth Mode\n> Card Only / Card + PIN / Card+FP / Card + FP or PIN / Card + FP + PIN",
+      "1. AOC 카드에 Write된 개인인증모드로 동작되어야 한다.\n> 사용자의 개인 인증 모드와 별도로 동작 \n> Data 암호화(HashKey) 사용 시 PIN이 포함된 경우 HashKey에 의해 인증 성공/실패로 동작\n> SCC 제외\n> Card + Face : 제외"
+    ],
+    [
+      18,
+      "1. Device> Layout 설정\n2. User> AOC/SCC 카드발급\n3. 발급받은 카드로 인증시도",
+      "ISO 1443A RID(Random CSN 생성)카드",
+      "1. RID 카드는 AOC/SCC로 동작이 되어야 한다.\n: 카드 인식음, 인증 성공/실패 로그 등 발생\n2. RID 카드는 CSN 모드에서는 RID 카드는 무시되어 반응이 없어야 한다.\n: 카드 인식음, 인증 실패 로그 등 미발생"
+    ],
+    [
+      19,
+      "1. 1.x BioStar를 이용해 카드발급\n2. 발급받은 카드를 이용해 2.x 장치에서 카드리드\n3. 해당 장치를 포맷 후 재발급 시도",
+      "1. Support V2.x Device\n> V2.x Device(CS 40 제외)\n> Entry V2 미지원\n> V1.x Card Layout 설정",
+      "1. 1.x에서 발급한 카드를 2.x에서 읽혀야 한다.\n> V1.x(DES/3DES) -> V2.x(DES/3DES)\n2. 해당 카드에 대해 2.x에서 포맷 및 재발급은 미지원한다.\n> V1.x TOC Read만 지원"
+    ],
+    [
+      20,
+      "키 변경으로 카드 발급 시도\n> Primary Key : 새로 발급할 Key값 입력\n> Secondary Key : 발급한 Key값 입력",
+      "Hex 전용으로 미입력 시나, 홀수로 입력한 경우 FF나 O을 채워서 전송 \n예)\n: 사용자 입력값 \"1230\"\n-> FW 전달 값 12 30 FF FF FF FF\n: 사용자 입력값 \"AF0\"\n-> FW 전달 값 0A F0 FF FF FF FF\nKey 입력 범위\n> Description 참조\n",
+      "1. 새로 설정된 Primary 키로 발급된다.\n> 미입력 시나, 홀수로 입력한 경우 FF나 0을 채워서 등록 / 전송\n2. Auto Tool을 통해 장치에 전송된 Card Layout을 확인하여 Key 정상 유무 확인한다.\n> 인증 유무 포함"
+    ],
+    [
+      21,
+      "0. Setting > Server > User/Device Management 에서 'AoC 발급 시 개인정보 삭제' : Enable\n1. Device> Layout 설정\n2. User> 개인인증모드 설정> AOC 카드발급> Private Auth Mode 설정\n3. 발급받은 카드로 인증시도",
+      "사용자 ID 모드\n> 숫자/영숫자\n\nPrivate Auth Mode\n> Card Only / Card + PIN / Card+FP / Card + FP or PIN / Card + FP + PIN\n\nPrivate Info\n> FP, PIN, Face, Email, Phone, Birthday , Gender\n(birthday, gender는 DB에만 존재하는 data)",
+      "1.AOC 카드 발급 성공 시 사용자의 개인정보가 삭제된다.\n> ID/Finger/Face 인증 시도 - 인증 실패 발생\n> Card 인증 시도 - 개인 인증 모드 or 장치 인증 모드에 의해 인증 성공 / 실패 발생  \n> SCC - 개인 정보 유지\n2.AOC 카드에 Write된 개인인증모드로 동작되어야 한다.\n> 사용자의 개인 인증 모드와 별도로 동작 \n> Data 암호화(HashKey) 사용 시 PIN이 포함된 경우 HashKey에 의해 인증 성공/실패로 동작\n> SCC 제외\n> Card + Face : 제외\n> FW 지원 유무에 따라 미지원 버전은 개인 인증 모드를 무시하고 동작, BioStar에서 발급 시에는 FW 버전 상관 없이 Private Auth 발급 가능"
+    ],
+    [
+      22,
+      "1. 얼굴을 포함해 SmartCard 발급\n2. 동일 사용자 아이디(장치에 저장된)의 \"얼굴\"만 삭제\n3. 발급된 카드로 재인증 시도",
+      "SmartCard 발급\n> SCC\n\n대상제품\n> 얼굴지원제품\n\n인증모드\n> 카드+얼굴",
+      "1. 발급된 정보로 인증성공한다.\n>DFW-601"
+    ],
+    [
+      23,
+      "[Old/New SAM 적용시료]\n1. iClass Smart Card 발급(Old/New 무관)\n2. 스마트 카드 레이아웃> 발급한 스마트 카드의 키와 동일한 레이아웃(Primary) 설정 후 장치에 적용\n3. Old/New SAM 시료에서 카드 리드",
+      "iClass Smart Card 메모리별\n> 2K bits / 2 Application\n> 16K bits / 2 Application\n> 16K bits / 16 Application\n> 32K bits / (16K/2+16K/1)\n> 32K bits / (16K/16+16K/1)\n\nSmart Card\n> AOC/SCC",
+      "1. Primary Key가 맞으므로 발급된 정보로 인증성공된다"
+    ],
+    [
+      24,
+      "[Old/New SAM 적용시료]\n1. iClass Smart Card 발급\n2. 스마트 카드 레이아웃>발급한 스마트 카드의 키와 동일한 레이아웃(Secondary) 설정 후 장치에 적용\n3. Old/New SAM 시료에서 카드 리드",
+      "iClass Smart Card 메모리별\n> 2K bits / 2 Application\n> 16K bits / 2 Application\n> 16K bits / 16 Application\n> 32K bits / (16K/2+16K/1)\n> 32K bits / (16K/16+16K/1)\n\nSmart Card\n> AOC/SCC",
+      "1. Secondary Key가 맞으므로 발급된 정보로 인증성공된다"
+    ],
+    [
+      25,
+      "[Old/New SAM 적용시료]\n1. iClass Smart Card 발급\n2. 스마트 카드 레이아웃> 발급한 스마트 카드의 키와 상이한 레이아웃(Primary/Secondary) 설정 후 장치에 적용\n3. Old/New SAM 시료에서 카드 리드",
+      "iClass Smart Card 메모리별\n> 2K bits / 2 Application\n> 16K bits / 2 Application\n> 16K bits / 16 Application\n> 32K bits / (16K/2+16K/1)\n> 32K bits / (16K/16+16K/1)\n\nSmart Card\n> AOC/SCC",
+      "1. 키가 맞지 않음으로 인증실패로 동작된다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-62",
+    "description": "",
+    "test_step": [
+      "1. Setting > Card Format > Smart Card\n2. Smart Card Layout 추가\n3. 장치> Smart Card Layout 설정\n4. User> 기 등록된 사용자 선택> Card> SmartCard> 사용자 정보 Write",
+      "1. Smart Card Layout 추가\n> 발급된 카드의 Key와 상이\n2. 장치> 위에서 추가한 Layout 설정\n3. 기 발급된 Smart Card 리드",
+      "1. Smart Card Layout 추가\n> Primary Key: 발급된 카드키와 상이\n> Secondary Key: 발급된 카드키와 동일\n4. 장치> 위에서 추가한 Layout 설정\n5. 기 발급된 Smart Card 리드",
+      "1. Smart Card Layout 추가\n> Primary Key & Encryption Type\n: 발급된 카드키와 상이Primary \n> Secondary Key: 사용안함 설정\n2. 장치> 위에서 추가한 \nLayout 설정\n3. Smart Card 리드",
+      "1. Setting> Card Format> Smart Card> Add Smart Card\n2. Key 및 Layout 설정\n3. User> 기 등록된 사용자 선택> Card> SmartCard> 사용자 정보 Write",
+      "1. Setting> Card Format> Smart Card> Add Smart Card\n2. Key 및 Layout 설정\n3. User> 기 등록된 사용자 선택> Card> SmartCard> 사용자 정보 Write",
+      "1. Setting> Card Format> Smart Card> Add Smart Card\n2. Key 및 Layout 설정\n3. User> 기 등록된 사용자 선택> Card> SmartCard> 사용자 정보 Write",
+      "<Card Format 설정 & 장치에 Layout 설정된 상태>\n1. User> 기 등록된 사용자 선택> Card> Read Card> Format Card\n2. SmartCard> Secure Credential 카드에 사용자 정보 Write",
+      "1. Step 9에서 발급한 Secure Credential 카드 인증시도",
+      "<Card Format 설정 & 장치에 Layout 설정된 상태>\n1. User> 기 등록된 사용자 선택> Card> Read Card> Format Card\n2. SmartCard> Access On 카드에 사용자 정보 Write",
+      "1. Step 11에서 발급한 Access On 카드 인증시도",
+      "1. A Layout를 이용하여 카드 발급\n2. B Layout이 적용된 장치에 A Layout으로 발급된 Card 리드\n3. 해당 장치를 포맷 후 재발급 시도",
+      "1. A Layout를 이용하여 카드 발급\n2. B Layout이 적용된 장치에 A Layout으로 발급된 Card 리드\n3. 해당 장치를 포맷 후 재발급 시도",
+      "1. Device> Layout에 A Card Format으로 설정\n2. User> Smart Card 발급\n3. Device> Layout에 B Card Format으로 설정\n4. step2에서 발급받은 카드로 인증시도",
+      "1. Device> Layout에 A Card Format으로 설정\n2. User> Smart Card 발급\n3. Device> Layout에 B Card Format으로 설정\n4. User> step2에서 발급받은 카드로 인증시도",
+      "1. Setting> Server> Smart Card> Add Smart Card\n2. DesFire> 설정 후 Apply\n3. Device> DesFire로 생성한 Layout 설정\n4. User> Card 발급 시도",
+      "1. Device> Layout 설정\n2. User> AOC 카드발급> Private Auth Mode 설정\n3. 발급받은 카드로 인증시도",
+      "1. Device> Layout 설정\n2. User> AOC/SCC 카드발급\n3. 발급받은 카드로 인증시도",
+      "1. 1.x BioStar를 이용해 카드발급\n2. 발급받은 카드를 이용해 2.x 장치에서 카드리드\n3. 해당 장치를 포맷 후 재발급 시도",
+      "키 변경으로 카드 발급 시도\n> Primary Key : 새로 발급할 Key값 입력\n> Secondary Key : 발급한 Key값 입력",
+      "0. Setting > Server > User/Device Management 에서 'AoC 발급 시 개인정보 삭제' : Enable\n1. Device> Layout 설정\n2. User> 개인인증모드 설정> AOC 카드발급> Private Auth Mode 설정\n3. 발급받은 카드로 인증시도",
+      "1. 얼굴을 포함해 SmartCard 발급\n2. 동일 사용자 아이디(장치에 저장된)의 \"얼굴\"만 삭제\n3. 발급된 카드로 재인증 시도",
+      "[Old/New SAM 적용시료]\n1. iClass Smart Card 발급(Old/New 무관)\n2. 스마트 카드 레이아웃> 발급한 스마트 카드의 키와 동일한 레이아웃(Primary) 설정 후 장치에 적용\n3. Old/New SAM 시료에서 카드 리드",
+      "[Old/New SAM 적용시료]\n1. iClass Smart Card 발급\n2. 스마트 카드 레이아웃>발급한 스마트 카드의 키와 동일한 레이아웃(Secondary) 설정 후 장치에 적용\n3. Old/New SAM 시료에서 카드 리드",
+      "[Old/New SAM 적용시료]\n1. iClass Smart Card 발급\n2. 스마트 카드 레이아웃> 발급한 스마트 카드의 키와 상이한 레이아웃(Primary/Secondary) 설정 후 장치에 적용\n3. Old/New SAM 시료에서 카드 리드"
+    ],
+    "data": [
+      "카드발급\n> Mifare / Mifare Plus Card\n> DesFire EV1/EV2 Card\n> iClass / iClass SE Card\n\nSmart Card\n> AOC/SCC",
+      "카드발급\n> Mifare / Mifare Plus Card\n> DesFire EV1/EV2 Card\n> iClass / iClass SE Card\n\nSmart Card\n> AOC/SCC\n\n※ DESFire / DESFire EV1 경우 - App, File, Encryption Type 에 대해 기 발급된 카드와 동일하게 설정.\n\n",
+      "카드발급\n> Mifare / Mifare Plus Card\n> DesFire EV1/EV2 Card\n> iClass / iClass SE Card\n\nSmart Card\n> AOC/SCC\n\n※ DESFire / DESFire EV1 경우 - App, File, Encryption Type 에 대해 기 발급된 카드와 동일하게 설정.\n\n",
+      "카드발급\n> Mifare / Mifare Plus Card\n> DesFire EV1/EV2 Card\n> iClass / iClass SE Card\n\nSmart Card\n> AOC/SCC",
+      "Mifare / Mifare Plus Card\n> 1K Card(Byte)\n> 2K Card(Byte)\n> 4K Card(Byte)\n\nSmart Card\n> AOC/SCC",
+      "Mifare DesFire / Mifare DesFire EV1 Card\n> 2K Card(Byte)\n> 4K Card(Byte)\n> 8K Card(Byte)\n\nSmart Card\n> AOC/SCC",
+      "iClass / iClass SE Card\n> 2K bits / 2 Application\n> 16K bits / 2 Application\n> 16K bits / 16 Application\n> 32K bits / (16K/2+16K/1)\n> 32K bits / (16K/16+16K/1)\n\nSmart Card\n> AOC/SCC",
+      "사용자 ID\n > 숫자 : 기존과 동일\n > 영숫자 : Default(공란), 24 byte 범위 내에서 10진수 숫자 1 부터 입력 지원\n\n포맷\n> 영숫자 모드가 불일치 해도 카드 레이아웃만 동일하면 장치 상관 없이 가능\n: 영숫자 모드 불일치, 미지원 FW",
+      "인증시도\n> 단일장치\n> Master-Slave 장치\n> 장치 인증 모드별\n=: Card, 이중인증, 근태, 권한별 메뉴 진입\n=: ID, Finger - 의미가 없음",
+      "사용자 ID\n > 숫자, 영숫자, 특수 문자('_','-')\n\n포맷\n> 영숫자 모드가 불일치 해도 카드 레이아웃만 동일하면 장치 상관 없이 가능\n: 영숫자 모드 불일치, 미지원 FW",
+      "인증시도\n> 단일장치 & RS485 구성된 Master/Slave 장치\n> 카드인증모드\n> 카드인증을 통한 관리자 메뉴진입\n> 이중인증/근태인증",
+      "카드발급\n> Mifare / Mifare Plus Card\n> Mifare DesFire / Mifare DesFire EV1 Card\n> iClass / iClass SE Card",
+      "A Layout - DESFire/DESFire EV1\n> DES/3DES 설정\nB Layout - DESFire/DESFire EV1\n> AES 설정",
+      "Smart Card 발급\n> Mifare/Desfire\n> Iclass \n\n<A Card Format 설정>\n-) Primary Key는 임의 설정\n-) Secondary Key는 Default 설정\n\n<B Card Format 설정>\n-) Primary Key는 Default 설정\n-) Secondary Key는 사용안함 설정",
+      "Smart Card 발급\n> Desfire/Mifare/Iclass\n\nex.DesFire 설정\n<A Card Format 설정>\n-) Primary Key는 1111111111111111 설정\n\n<B Card Format 설정>\n-) Primary Key는 2222222222222222 설정\n-) Secondary Key는 1111111111111111 설정",
+      "추후 수정 예정\n\n[BioStar] 설정 범위\nApp ID: 1(Default) ~ 16777215\n=> Default, 임의값 설정해 확인\n\nMax : 28\n\nFile ID: 1 ~ 31\n=> Default, 임의값 설정해 확인\n\nMax : 32",
+      "사용자 ID 모드\n> 숫자/영숫자\n\nPrivate Auth Mode\n> Card Only / Card + PIN / Card+FP / Card + FP or PIN / Card + FP + PIN",
+      "ISO 1443A RID(Random CSN 생성)카드",
+      "1. Support V2.x Device\n> V2.x Device(CS 40 제외)\n> Entry V2 미지원\n> V1.x Card Layout 설정",
+      "Hex 전용으로 미입력 시나, 홀수로 입력한 경우 FF나 O을 채워서 전송 \n예)\n: 사용자 입력값 \"1230\"\n-> FW 전달 값 12 30 FF FF FF FF\n: 사용자 입력값 \"AF0\"\n-> FW 전달 값 0A F0 FF FF FF FF\nKey 입력 범위\n> Description 참조\n",
+      "사용자 ID 모드\n> 숫자/영숫자\n\nPrivate Auth Mode\n> Card Only / Card + PIN / Card+FP / Card + FP or PIN / Card + FP + PIN\n\nPrivate Info\n> FP, PIN, Face, Email, Phone, Birthday , Gender\n(birthday, gender는 DB에만 존재하는 data)",
+      "SmartCard 발급\n> SCC\n\n대상제품\n> 얼굴지원제품\n\n인증모드\n> 카드+얼굴",
+      "iClass Smart Card 메모리별\n> 2K bits / 2 Application\n> 16K bits / 2 Application\n> 16K bits / 16 Application\n> 32K bits / (16K/2+16K/1)\n> 32K bits / (16K/16+16K/1)\n\nSmart Card\n> AOC/SCC",
+      "iClass Smart Card 메모리별\n> 2K bits / 2 Application\n> 16K bits / 2 Application\n> 16K bits / 16 Application\n> 32K bits / (16K/2+16K/1)\n> 32K bits / (16K/16+16K/1)\n\nSmart Card\n> AOC/SCC",
+      "iClass Smart Card 메모리별\n> 2K bits / 2 Application\n> 16K bits / 2 Application\n> 16K bits / 16 Application\n> 32K bits / (16K/2+16K/1)\n> 32K bits / (16K/16+16K/1)\n\nSmart Card\n> AOC/SCC"
+    ],
+    "expected_result": [
+      "사용자 정보가 카드에 Write 되어야 한다.\n> 카드에 Write할 메모리가 여유로울 경우 Wite되어야 한다.\n> 카드에 Write할 메모리가 부족할 경우 Wite 중 실패되어야 한다.\n=> Device Timeout 팝업 발생",
+      "발급된 정보가 아닌 CSN으로 리드된다.",
+      "발급된 정보로 리드된다.",
+      "발급된 정보가 아닌 CSN으로 리드된다.",
+      "> 카드에 Write할 메모리가 여유로울 경우 Wite되어야 한다.\n> 카드에 Write할 메모리가 부족할 경우 Wite 중 실패되어야 한다.\n=> Device Timeout 팝업 발생",
+      "> 카드에 Write할 메모리가 여유로울 경우 Wite되어야 한다.\n> 카드에 Write할 메모리가 부족할 경우 Wite 중 실패되어야 한다.\n=> Device Timeout 팝업 발생\n> Blackfin 장치와 Station 장치 각각 카드 읽는 시간이 같아야 한다. \n\n",
+      "> 카드에 Write할 메모리가 여유로울 경우 Wite되어야 한다.\n> 카드에 Write할 메모리가 부족할 경우 Wite 중 실패되어야 한다.\n=> Device Timeout 팝업 발생\n> Blackfin 장치와 Station 장치 각각 카드 읽는 시간이 같아야 한다. \n",
+      "> 출입그룹 정보는 장치에 저장되어야 하고, 카드ID/지문/PIN 정보만 저장되어야 한다.\n> 카드 Type/Template 개수/발급회차가 저장되어야 한다.\n-: 카드 Type(AOC, SCC), Summary의 ID(Issue Count : x) - 카드 사양으로 8개를 초과 할 수없음",
+      "> 발급된 정보로 인증성공으로 동작한다.",
+      "> 인증에 필요한 모든 정보(개인인증모드 포함)가 저장되어야 한다.\n> Access On 카드 Write시 발급회차가 발급되어야 한다.\n-: 카드 Type(AOC, SCC), Summary의 ID(Issue Count : x) - 카드 사양으로 8개를 초과 할 수없음",
+      "> 발급된 정보로 인증성공으로 동작한다.\n: 장치에 등록된 사용자와는 무관하게 인증되어야 한다.",
+      "1. A Layout이 적용된 장치에서 읽혀야 한다.\n2. B Layout 장치에서는 A Layout에서 발급한 카드가 CSN으로 동작을 한다.\n> Key가 다른 경우에도 CSN으로 인식이 되어야 한다.\n3. B Layout에 Secondary Key을 등록하여 포맷이나 재발급을 한다.",
+      "1. A Layout이 적용된 장치에서 읽혀야 한다.\n2. B Layout 장치에서는 A Layout에서 발급한 카드가 CSN으로 동작을 한다.\n> Encryption Type이 다른 경우(Key가 다른 경우 포함)에도 CSN으로 인식된다.\n> Format 시도시 실패 한다.\n3. 구형 버전에서는 AES로 지정시 내부적으로 DES/3DES로 동작을 한다.\n> DESFire EV1- AES로 발급 시 DES/3DES로 변경 안됨(DES/3DES -> AES로 1회 변경 가능)",
+      "인증실패로 동작되어야 한다.",
+      "1. Secondary Key로 인해 B Card Format으로 카드발급이 이루어져야 하고 발급된 카드로 인증성공이 되어야 한다.",
+      "1. 카드발급이 정상적으로 이루어져야 한다.\n> BioStar 상의 입력값은 별도 확인 필요\n> Desfire / Desfire EV1 Card Memory Structure\nMax App : 28, Max File : 32(1 Per Application - Desfire EV1), 16(1 Per Application - Desfire)\nApplication ID 0 - Reserved\n1 ~ 27 사용 가능 \nFile ID\n0 ~ 15 (Desfire)\n0 ~ 31 (Desfire EV1)",
+      "1. AOC 카드에 Write된 개인인증모드로 동작되어야 한다.\n> 사용자의 개인 인증 모드와 별도로 동작 \n> Data 암호화(HashKey) 사용 시 PIN이 포함된 경우 HashKey에 의해 인증 성공/실패로 동작\n> SCC 제외\n> Card + Face : 제외",
+      "1. RID 카드는 AOC/SCC로 동작이 되어야 한다.\n: 카드 인식음, 인증 성공/실패 로그 등 발생\n2. RID 카드는 CSN 모드에서는 RID 카드는 무시되어 반응이 없어야 한다.\n: 카드 인식음, 인증 실패 로그 등 미발생",
+      "1. 1.x에서 발급한 카드를 2.x에서 읽혀야 한다.\n> V1.x(DES/3DES) -> V2.x(DES/3DES)\n2. 해당 카드에 대해 2.x에서 포맷 및 재발급은 미지원한다.\n> V1.x TOC Read만 지원",
+      "1. 새로 설정된 Primary 키로 발급된다.\n> 미입력 시나, 홀수로 입력한 경우 FF나 0을 채워서 등록 / 전송\n2. Auto Tool을 통해 장치에 전송된 Card Layout을 확인하여 Key 정상 유무 확인한다.\n> 인증 유무 포함",
+      "1.AOC 카드 발급 성공 시 사용자의 개인정보가 삭제된다.\n> ID/Finger/Face 인증 시도 - 인증 실패 발생\n> Card 인증 시도 - 개인 인증 모드 or 장치 인증 모드에 의해 인증 성공 / 실패 발생  \n> SCC - 개인 정보 유지\n2.AOC 카드에 Write된 개인인증모드로 동작되어야 한다.\n> 사용자의 개인 인증 모드와 별도로 동작 \n> Data 암호화(HashKey) 사용 시 PIN이 포함된 경우 HashKey에 의해 인증 성공/실패로 동작\n> SCC 제외\n> Card + Face : 제외\n> FW 지원 유무에 따라 미지원 버전은 개인 인증 모드를 무시하고 동작, BioStar에서 발급 시에는 FW 버전 상관 없이 Private Auth 발급 가능",
+      "1. 발급된 정보로 인증성공한다.\n>DFW-601",
+      "1. Primary Key가 맞으므로 발급된 정보로 인증성공된다",
+      "1. Secondary Key가 맞으므로 발급된 정보로 인증성공된다",
+      "1. 키가 맞지 않음으로 인증실패로 동작된다."
+    ]
+  }
+}

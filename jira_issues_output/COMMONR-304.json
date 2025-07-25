@@ -1,0 +1,186 @@
+{
+  "id": "COMMONR-304",
+  "content": [
+    [
+      1,
+      "1. Device> Card Type> Template on Mobile\n2. ToM Ouput Byte Order 설정UI 유무 확인",
+      "Default: MSB",
+      "1. ToM Ouput Byte Order 설정 옵션이 노출된다.\n=> RS485모드: Default, Master 일 경우 노출,\nONYXFW-779 참고"
+    ],
+    [
+      2,
+      "[장치의 RS485 모드: Default/Master]\n1. Device> Card Type> Template on Mobile\n2. ToM Ouput Byte Order 설정\n3. ToM 발급",
+      "Byte Order\n> MSB\n> LSB\n\nToM 발급\n> ToM_AOC\n> ToM_SCC",
+      "1. Byte Order 설정과 무관하게 기존 방식대로 발급된다.\n> 발급할 Card ID 12345 -> 12345로 발급"
+    ],
+    [
+      3,
+      "[RS485 구성]\n1. User> +Mobile > Card Type: Template on Mobile\n2. Enroll\n3. 이메일을 통해 전달된 링크에서 ToM 발급",
+      "Byte Order\n> MSB / LSB\n\nDevice\n> Master/ Slave\n\nToM\n> ToM_AOC / ToM_SCC",
+      "1. 발급한 값으로 리드된다.\n> Byte Order의 영향을 받지 않는다."
+    ],
+    [
+      4,
+      "[OSDP Tool과 연결]\n1. Device> Card Type> Template on Mobile\n2. ToM Ouput Byte Order: MSB 설정\n3. ToM Read\n4. OSDP Tool에 출력되는 값 확인",
+      "OSDP로 연결된 장치\n> Slave 모드\n\n입력할 ToM - ToM_AOC/ToM_SCC(숫자모드에서 발급)\n> ex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)",
+      "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount로 출력\n=> BitCount 32 & 133 2BF4(=Dec 20130804)로 표시"
+    ],
+    [
+      5,
+      "[OSDP Tool과 연결]\n1. Device> Card Type> Template on Mobile\n2. ToM Output Byte Order: LSB 설정\n3. ToM Read\n4. OSDP Tool에 출력되는 값 확인",
+      "OSDP로 연결된 장치\n> Slave 모드\n\n입력할 ToM  - ToM_AOC/ToM_SCC\n> ex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)",
+      "1. 발급된 Card ID가 LSB로 출력된다.\n> 발급된 Card ID만큼의 BitCount로 출력\n=> BitCount 32 & F42B 3301(=Dec 4096471809)로 표시"
+    ],
+    [
+      6,
+      "[OSDP Tool과 연결]\n\n1. Device> Card Type> Template On Mobile\n2. ToM Output Byte Order: MSB/LSB 설정\n3. ToM Read\n4. OSDP Tool에 출력되는 값 확인",
+      "OSDP로 연결된 장치\n> Slave 모드\n\nToM Output Bye Order\n> MSB/LSB\n\n입력할 ToM - ToM_AOC(영숫자모드에서 발급-숫자ID)\n\n> ex. 발급한 Card ID - 224650164369",
+      "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount 출력\n\nMSB\n> 224650164369: Bitcount 40 & 344E317891 로 출력\n\nLSB\n> 224650164369: Bitcount 40 & 9178314E34 로 출력\n"
+    ],
+    [
+      7,
+      "[OSDP Tool과 연결]\n\n1. Device> Card Type> Template On Mobile\n2. ToM Output Byte Order: MSB/LSB 설정\n3. ToM Read\n4. OSDP Tool에 출력되는 값 확인",
+      "OSDP로 연결된 장치\n> Slave 모드\n\nToM Output Byte Order\n> MSB/LSB\n\n입력할 ToM  - ToM_SCC(영숫자모드에서 발급-숫자ID)\n\n\n> ex. 발급한 Card ID - 20220531(=Hex. 01348a73)",
+      "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount 출력\n\nMSB\n> Bitcount 32 & 01348a73 로 출력\n\nLSB\n> Bitcount 32 & 738a3401 로 출력\n"
+    ],
+    [
+      8,
+      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> Template on Mobile\n2. ToM Output Byte Order: MSB 설정\n3. 위겐드 리더로 연결된 ToM 입력",
+      "SmartCard - ToM_AOC/ToM_SCC(숫자모드에서 발급)\nex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)\n\nCSN Wiegand Format\n > Default로 지원되는 Format\n > Custom으로 생성한 Format\n\n Wiegand Output Mode\n > Normal\n\nWiegand Output Info\n > Card ID",
+      "1. 발급된 Card ID가 설정된 Wiegand Format에 따라 출력된다.\n\n※ MSB일 때 카드ID: 20130804\n> 설정 포맷 > 32bit인 경우 - 발급된 카드ID에서 설정된 포맷만큼 잘려서 출력\n> 설정 포맷 = 32bit인 경우 - 발급된 카드ID 그대로 출력\n> 설정 포맷 < 32bit인 경우 - 발급된 카드ID 그대로 출력"
+    ],
+    [
+      9,
+      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> Template on Mobile\n2. ToM Output Byte Order: LSB 설정\n3. ToM Read",
+      "SmartCard - ToM_AOC/ToM_SCC(숫자모드에서 발급)\nex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)\n\n\nCSN Wiegand Format\n > Default로 지원되는 Format\n > Custom으로 생성한 Format\n\nWiegand Output Mode\n > Normal\n\nWiegand Output Info\n > Card ID",
+      "1. 발급된 Card ID의 LSB값이 설정된 Wiegand Format에 따라 출력된다.\n\n※ LSB인 경우 카드ID: 4096471809\n> 설정 포맷 > 32bit인 경우 - 발급된 카드ID에서 설정된 포맷만큼 잘려서 출력\n> 설정 포맷 = 32bit인 경우 - 발급된 카드ID 그대로 출력\n> 설정 포맷 < 32bit인 경우 - 발급된 카드ID 그대로 출력"
+    ],
+    [
+      10,
+      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> Template on Mobile\n2. ToM Output Byte Order: MSB 설정\n3. 위겐드 리더로 연결된 ToM Read",
+      "SmartCard - ToM_AOC/ToM_SCC\n\nWiegand Output Info\n> User ID",
+      "1. AOC: 발급된 Card ID(=User ID)가 출력된다.\n2. SCC: 발급된 Card ID가 등록된 User ID가 출력된다.\n\n> MSB 출력 확인"
+    ],
+    [
+      11,
+      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> Template on Mobile\n2. ToM Ouput Byte Order: LSB 설정\n3. ToM Read",
+      "SmartCard - ToM_AOC/ToM_SCC\n\n\nWiegand Output Info\n> User ID",
+      "1. AOC: 발급된 Card ID(=User ID)가 출력된다.\n2. SCC: 발급된 Card ID가 등록된 User ID가 출력된다.\n\n> LSB 출력 확인"
+    ],
+    [
+      12,
+      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> Template on Mobile\n2. ToM Output Byte Order: MSB/LSB 설정\n3. 위겐드 리더로 연결된 ToM Read",
+      "ToM Output Byte Order\n> MSB/LSB\n\n입력할 ToM - ToM_AOC(영숫자모드에서 발급-숫자ID)\n> ex. 발급한 Card ID - 224650164368(= 323234363530313634333638)\n\n-Wiegand Output Mode\n-> Bypass\n\nWiegand Output Info\n> Card ID",
+      "1. 발급된 Card ID가 설정된 Wiegand Format에 따라 출력된다.\n\n> MSB\n- 224650164368일 때, MBS 값인 224650164368에 대해 Wiegand Format에 맞게 출력된다.\n\n> LSB\n- 224650164368일 때, LSB 값인 620491787828 에 대해 Wiegand Format에 맞게 출력된다."
+    ],
+    [
+      13,
+      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> Template on Mobile\n2. ToM Output Byte Order: MSB/LSB 설정\n3. 위겐드 리더로 연결된 ToM Read",
+      "ToM Output Byte Order\n> MSB/LSB\n\n입력할 ToM - SCC(영숫자모드에서 발급-숫자ID)\n> ex. 발급한 Card ID - 20220531(=Hex. 01348a73)\n\n-Wiegand Output Mode\n-> Bypass\n\nWiegand Output Info\n> Card ID",
+      "1. 발급된 Card ID의 값이 설정된 Wiegand Format에 따라 출력된다.\n\n>MSB\n20220531 로 출력\n\n>LSB\n1938437121 로 출력"
+    ],
+    [
+      14,
+      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> Template on Mobile\n2. ToM Output Byte Order: MSB 설정\n3. 위겐드 리더로 연결된 ToM Read",
+      "ToM Output Byte Order\n> MSB\n\n입력할 ToM - AOC/SCC(영숫자모드에서 발급-숫자ID)\n> User id - 2001\n\n\n-Wiegand Output Mode\n-> Normal\n\nWiegand Output Info\n> User ID",
+      "1. 등록된 User ID가 출력된다.\n\n> MSB 출력 확인\n ToM_AoC: 2001로 출력\n ToM_SCC: 842018865 로 출력"
+    ],
+    [
+      15,
+      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> Template on Mobile\n2. ToM Output Byte Order: LSB 설정\n3. 위겐드 리더로 연결된 ToM Read",
+      "ToM Output Byte Order\n> LSB\n\n입력할 ToM - AOC/SCC(영숫자모드에서 발급-숫자ID)\n>User id - 2001\n\n-Wiegand Output Mode\n-> Normal\n\nWiegand Output Info\n> User ID",
+      "1. 등록된 User ID가 출력된다.\n\n> LSB 출력 확인\n ToM_AoC: 53511로 출력\n ToM_SCC: 825241650로 출력"
+    ],
+    [
+      16,
+      "[OSDP Tool과 연결]\n1. Device> Card Type> Template on Mobile\n2. ToM Output Byte Order: MSB 설정\n3. ToM Read\n4. OSDP Tool에 출력되는 값 확인",
+      "OSDP로 연결된 장치\n> Default 모드\n> Output info - Card ID\n\n입력할 ToM  - ToM_AOC/ToM_SCC(숫자모드에서 발급)\n> ex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)",
+      "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount로 출력\n=> BitCount 32 & 133 2BF4(=Dec 20130804)로 표시"
+    ],
+    [
+      17,
+      "[OSDP Tool과 연결]\n1. Device> Card Type> Template on Mobile\n2. ToM Output Byte Order: LSB 설정\n3. ToM Read\n4. OSDP Tool에 출력되는 값 확인",
+      "OSDP로 연결된 장치\n> Default 모드\n> Output info - Card ID\n\n입력할 ToM  - ToM_AOC/ToM_SCC\n> ex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)",
+      "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount로 출력\n=> BitCount 32 & F42B 3301(=Dec 4096471809)로 표시"
+    ],
+    [
+      18,
+      "[OSDP Tool과 연결]\n1. Device> Card Type> Template On Mobile\n2. ToM Output Byte Order: MSB 설정\n3. ToM Read\n4. OSDP Tool에 출력되는 값 확인",
+      "OSDP로 연결된 장치\n> Default 모드\n> Output info - User ID\n\n입력할 ToM  - ToM_AOC/ToM_SCC\n\n발급된 User ID\n> 1Byte로 발급\n> 최대(=32Byte)로 발급",
+      "1. User ID의 경우도 Byte Order의 영향을 받는다.\n> 발급된 User ID로 출력된다.\n> 발급된 User ID 만큼의 BitCount로 출력\n\n"
+    ],
+    [
+      19,
+      "[OSDP Tool과 연결]\n1. Device> Card Type> Template On Mobile\n2. ToM Output Byte Order: LSB 설정\n3. ToM Read\n4. OSDP Tool에 출력되는 값 확인",
+      "OSDP로 연결된 장치\n> Default 모드\n> Output info - User ID\n\n입력할 ToM  - ToM_AOC/ToM_SCC\n\n발급된 User ID\n> 1Byte로 발급\n> 최대(=32Byte)로 발급",
+      "1. User ID의 경우도 Byte Order의 영향을 받는다.\n> 발급된 User ID의 LSB로 출력\n> 발급된 User ID의 LSB에 해당하는 만큼의 BitCount로 출력\n"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-304",
+    "description": "",
+    "test_step": [
+      "1. Device> Card Type> Template on Mobile\n2. ToM Ouput Byte Order 설정UI 유무 확인",
+      "[장치의 RS485 모드: Default/Master]\n1. Device> Card Type> Template on Mobile\n2. ToM Ouput Byte Order 설정\n3. ToM 발급",
+      "[RS485 구성]\n1. User> +Mobile > Card Type: Template on Mobile\n2. Enroll\n3. 이메일을 통해 전달된 링크에서 ToM 발급",
+      "[OSDP Tool과 연결]\n1. Device> Card Type> Template on Mobile\n2. ToM Ouput Byte Order: MSB 설정\n3. ToM Read\n4. OSDP Tool에 출력되는 값 확인",
+      "[OSDP Tool과 연결]\n1. Device> Card Type> Template on Mobile\n2. ToM Output Byte Order: LSB 설정\n3. ToM Read\n4. OSDP Tool에 출력되는 값 확인",
+      "[OSDP Tool과 연결]\n\n1. Device> Card Type> Template On Mobile\n2. ToM Output Byte Order: MSB/LSB 설정\n3. ToM Read\n4. OSDP Tool에 출력되는 값 확인",
+      "[OSDP Tool과 연결]\n\n1. Device> Card Type> Template On Mobile\n2. ToM Output Byte Order: MSB/LSB 설정\n3. ToM Read\n4. OSDP Tool에 출력되는 값 확인",
+      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> Template on Mobile\n2. ToM Output Byte Order: MSB 설정\n3. 위겐드 리더로 연결된 ToM 입력",
+      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> Template on Mobile\n2. ToM Output Byte Order: LSB 설정\n3. ToM Read",
+      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> Template on Mobile\n2. ToM Output Byte Order: MSB 설정\n3. 위겐드 리더로 연결된 ToM Read",
+      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> Template on Mobile\n2. ToM Ouput Byte Order: LSB 설정\n3. ToM Read",
+      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> Template on Mobile\n2. ToM Output Byte Order: MSB/LSB 설정\n3. 위겐드 리더로 연결된 ToM Read",
+      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> Template on Mobile\n2. ToM Output Byte Order: MSB/LSB 설정\n3. 위겐드 리더로 연결된 ToM Read",
+      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> Template on Mobile\n2. ToM Output Byte Order: MSB 설정\n3. 위겐드 리더로 연결된 ToM Read",
+      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> Template on Mobile\n2. ToM Output Byte Order: LSB 설정\n3. 위겐드 리더로 연결된 ToM Read",
+      "[OSDP Tool과 연결]\n1. Device> Card Type> Template on Mobile\n2. ToM Output Byte Order: MSB 설정\n3. ToM Read\n4. OSDP Tool에 출력되는 값 확인",
+      "[OSDP Tool과 연결]\n1. Device> Card Type> Template on Mobile\n2. ToM Output Byte Order: LSB 설정\n3. ToM Read\n4. OSDP Tool에 출력되는 값 확인",
+      "[OSDP Tool과 연결]\n1. Device> Card Type> Template On Mobile\n2. ToM Output Byte Order: MSB 설정\n3. ToM Read\n4. OSDP Tool에 출력되는 값 확인",
+      "[OSDP Tool과 연결]\n1. Device> Card Type> Template On Mobile\n2. ToM Output Byte Order: LSB 설정\n3. ToM Read\n4. OSDP Tool에 출력되는 값 확인"
+    ],
+    "data": [
+      "Default: MSB",
+      "Byte Order\n> MSB\n> LSB\n\nToM 발급\n> ToM_AOC\n> ToM_SCC",
+      "Byte Order\n> MSB / LSB\n\nDevice\n> Master/ Slave\n\nToM\n> ToM_AOC / ToM_SCC",
+      "OSDP로 연결된 장치\n> Slave 모드\n\n입력할 ToM - ToM_AOC/ToM_SCC(숫자모드에서 발급)\n> ex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)",
+      "OSDP로 연결된 장치\n> Slave 모드\n\n입력할 ToM  - ToM_AOC/ToM_SCC\n> ex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)",
+      "OSDP로 연결된 장치\n> Slave 모드\n\nToM Output Bye Order\n> MSB/LSB\n\n입력할 ToM - ToM_AOC(영숫자모드에서 발급-숫자ID)\n\n> ex. 발급한 Card ID - 224650164369",
+      "OSDP로 연결된 장치\n> Slave 모드\n\nToM Output Byte Order\n> MSB/LSB\n\n입력할 ToM  - ToM_SCC(영숫자모드에서 발급-숫자ID)\n\n\n> ex. 발급한 Card ID - 20220531(=Hex. 01348a73)",
+      "SmartCard - ToM_AOC/ToM_SCC(숫자모드에서 발급)\nex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)\n\nCSN Wiegand Format\n > Default로 지원되는 Format\n > Custom으로 생성한 Format\n\n Wiegand Output Mode\n > Normal\n\nWiegand Output Info\n > Card ID",
+      "SmartCard - ToM_AOC/ToM_SCC(숫자모드에서 발급)\nex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)\n\n\nCSN Wiegand Format\n > Default로 지원되는 Format\n > Custom으로 생성한 Format\n\nWiegand Output Mode\n > Normal\n\nWiegand Output Info\n > Card ID",
+      "SmartCard - ToM_AOC/ToM_SCC\n\nWiegand Output Info\n> User ID",
+      "SmartCard - ToM_AOC/ToM_SCC\n\n\nWiegand Output Info\n> User ID",
+      "ToM Output Byte Order\n> MSB/LSB\n\n입력할 ToM - ToM_AOC(영숫자모드에서 발급-숫자ID)\n> ex. 발급한 Card ID - 224650164368(= 323234363530313634333638)\n\n-Wiegand Output Mode\n-> Bypass\n\nWiegand Output Info\n> Card ID",
+      "ToM Output Byte Order\n> MSB/LSB\n\n입력할 ToM - SCC(영숫자모드에서 발급-숫자ID)\n> ex. 발급한 Card ID - 20220531(=Hex. 01348a73)\n\n-Wiegand Output Mode\n-> Bypass\n\nWiegand Output Info\n> Card ID",
+      "ToM Output Byte Order\n> MSB\n\n입력할 ToM - AOC/SCC(영숫자모드에서 발급-숫자ID)\n> User id - 2001\n\n\n-Wiegand Output Mode\n-> Normal\n\nWiegand Output Info\n> User ID",
+      "ToM Output Byte Order\n> LSB\n\n입력할 ToM - AOC/SCC(영숫자모드에서 발급-숫자ID)\n>User id - 2001\n\n-Wiegand Output Mode\n-> Normal\n\nWiegand Output Info\n> User ID",
+      "OSDP로 연결된 장치\n> Default 모드\n> Output info - Card ID\n\n입력할 ToM  - ToM_AOC/ToM_SCC(숫자모드에서 발급)\n> ex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)",
+      "OSDP로 연결된 장치\n> Default 모드\n> Output info - Card ID\n\n입력할 ToM  - ToM_AOC/ToM_SCC\n> ex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)",
+      "OSDP로 연결된 장치\n> Default 모드\n> Output info - User ID\n\n입력할 ToM  - ToM_AOC/ToM_SCC\n\n발급된 User ID\n> 1Byte로 발급\n> 최대(=32Byte)로 발급",
+      "OSDP로 연결된 장치\n> Default 모드\n> Output info - User ID\n\n입력할 ToM  - ToM_AOC/ToM_SCC\n\n발급된 User ID\n> 1Byte로 발급\n> 최대(=32Byte)로 발급"
+    ],
+    "expected_result": [
+      "1. ToM Ouput Byte Order 설정 옵션이 노출된다.\n=> RS485모드: Default, Master 일 경우 노출,\nONYXFW-779 참고",
+      "1. Byte Order 설정과 무관하게 기존 방식대로 발급된다.\n> 발급할 Card ID 12345 -> 12345로 발급",
+      "1. 발급한 값으로 리드된다.\n> Byte Order의 영향을 받지 않는다.",
+      "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount로 출력\n=> BitCount 32 & 133 2BF4(=Dec 20130804)로 표시",
+      "1. 발급된 Card ID가 LSB로 출력된다.\n> 발급된 Card ID만큼의 BitCount로 출력\n=> BitCount 32 & F42B 3301(=Dec 4096471809)로 표시",
+      "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount 출력\n\nMSB\n> 224650164369: Bitcount 40 & 344E317891 로 출력\n\nLSB\n> 224650164369: Bitcount 40 & 9178314E34 로 출력\n",
+      "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount 출력\n\nMSB\n> Bitcount 32 & 01348a73 로 출력\n\nLSB\n> Bitcount 32 & 738a3401 로 출력\n",
+      "1. 발급된 Card ID가 설정된 Wiegand Format에 따라 출력된다.\n\n※ MSB일 때 카드ID: 20130804\n> 설정 포맷 > 32bit인 경우 - 발급된 카드ID에서 설정된 포맷만큼 잘려서 출력\n> 설정 포맷 = 32bit인 경우 - 발급된 카드ID 그대로 출력\n> 설정 포맷 < 32bit인 경우 - 발급된 카드ID 그대로 출력",
+      "1. 발급된 Card ID의 LSB값이 설정된 Wiegand Format에 따라 출력된다.\n\n※ LSB인 경우 카드ID: 4096471809\n> 설정 포맷 > 32bit인 경우 - 발급된 카드ID에서 설정된 포맷만큼 잘려서 출력\n> 설정 포맷 = 32bit인 경우 - 발급된 카드ID 그대로 출력\n> 설정 포맷 < 32bit인 경우 - 발급된 카드ID 그대로 출력",
+      "1. AOC: 발급된 Card ID(=User ID)가 출력된다.\n2. SCC: 발급된 Card ID가 등록된 User ID가 출력된다.\n\n> MSB 출력 확인",
+      "1. AOC: 발급된 Card ID(=User ID)가 출력된다.\n2. SCC: 발급된 Card ID가 등록된 User ID가 출력된다.\n\n> LSB 출력 확인",
+      "1. 발급된 Card ID가 설정된 Wiegand Format에 따라 출력된다.\n\n> MSB\n- 224650164368일 때, MBS 값인 224650164368에 대해 Wiegand Format에 맞게 출력된다.\n\n> LSB\n- 224650164368일 때, LSB 값인 620491787828 에 대해 Wiegand Format에 맞게 출력된다.",
+      "1. 발급된 Card ID의 값이 설정된 Wiegand Format에 따라 출력된다.\n\n>MSB\n20220531 로 출력\n\n>LSB\n1938437121 로 출력",
+      "1. 등록된 User ID가 출력된다.\n\n> MSB 출력 확인\n ToM_AoC: 2001로 출력\n ToM_SCC: 842018865 로 출력",
+      "1. 등록된 User ID가 출력된다.\n\n> LSB 출력 확인\n ToM_AoC: 53511로 출력\n ToM_SCC: 825241650로 출력",
+      "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount로 출력\n=> BitCount 32 & 133 2BF4(=Dec 20130804)로 표시",
+      "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount로 출력\n=> BitCount 32 & F42B 3301(=Dec 4096471809)로 표시",
+      "1. User ID의 경우도 Byte Order의 영향을 받는다.\n> 발급된 User ID로 출력된다.\n> 발급된 User ID 만큼의 BitCount로 출력\n\n",
+      "1. User ID의 경우도 Byte Order의 영향을 받는다.\n> 발급된 User ID의 LSB로 출력\n> 발급된 User ID의 LSB에 해당하는 만큼의 BitCount로 출력\n"
+    ]
+  }
+}

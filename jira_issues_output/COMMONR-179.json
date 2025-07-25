@@ -1,0 +1,41 @@
+{
+  "id": "COMMONR-179",
+  "content": [
+    [
+      1,
+      "1. USER > ADD USER\n2. Information, Credential 입력 > Apply\n3. 장치로 사용자 전송",
+      "[BioStar]- ADD NEW USER\n1. ID 유효 범위\n> Station : 1~32자 (FwAutoTest Tool 로 확인)\n> Entry : 1~4294967294\n> 숫자만 입력 가능\n2. Name 유효 범위 \n> Max : 48자\n> 한글, 영문, 숫자, 특문 입력 가능\n3. Period 유효 범위\n> 2001/01/01, 00:00 ~ 2030/12/31, 23:59\n4. Status 설정\n> Active/Inactive\n5. Access Group 설정\n> 17개 이상의 Access Group 생성된 상태\n> Access Group 생성은 출입그룹 Test Case 를 통해 확인\n6. PIN 유효 범위\n> 1~16자 입력 가능\n> Min : 4자 이상\n> ***** 표시\n7. Auth Mode 설정\n> Private Mode/Device Default\n8. Private Mode 설정 \n> 지문 : 지문, 지문+PIN\n> 카드 : 카드, 카드+지문, 카드+PIN, 카드+지문/PIN, 카드+지문+PIN\n> ID : ID+지문, ID+PIN, ID+지문/PIN, ID+지문+PIN\n9. Credential 관련 설정\n> Fingerprint : Max 10지\n> Card : Max 8장\n= CSN (Mifare/EM/ISO15693/FeliCa/B Card), Wiegand (HID Prox/iClass/iClass SE/iClass SEOS), Access On Card, Secure Credential Card\n10. 1:1 Security Level 관련 설정\n> Device Default, Lowest, Low, Normal, High, Highest",
+      "1. 장치에서 BioStar 를 통해 입력한 Information, Credential이 정상적으로 표시되어야 한다.\n>  각 장치별로 개인 정보 암호화 키에 의해 암호화/복호화 이루어짐"
+    ],
+    [
+      2,
+      "1. Menu > User > 추가(+) / ADD User\n2. Credential 입력 > Apply",
+      "",
+      "1. 장치를 통해 입력한 Information, Credential이 정상적으로 표시되어야 한다.\n>  각 장치별로 개인 정보 암호화 키에 의해 암호화/복호화 이루어짐"
+    ],
+    [
+      3,
+      "1. Menu > Device > USB Memory\n2. Import > User 선택 > 확인\n3. 파일 선택 > 확인",
+      "1. USB Memory 삽입된 상태\n2. USB Memory 에 Export 한 사용자(50만명) 존재",
+      "USB Memory 의 사용자가 이상없이 장치로 Import 된다.\n> 각 장치별로 개인 정보 암호화 키에 의해 암호화/복호화 이루어짐"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-179",
+    "description": "",
+    "test_step": [
+      "1. USER > ADD USER\n2. Information, Credential 입력 > Apply\n3. 장치로 사용자 전송",
+      "1. Menu > User > 추가(+) / ADD User\n2. Credential 입력 > Apply",
+      "1. Menu > Device > USB Memory\n2. Import > User 선택 > 확인\n3. 파일 선택 > 확인"
+    ],
+    "data": [
+      "[BioStar]- ADD NEW USER\n1. ID 유효 범위\n> Station : 1~32자 (FwAutoTest Tool 로 확인)\n> Entry : 1~4294967294\n> 숫자만 입력 가능\n2. Name 유효 범위 \n> Max : 48자\n> 한글, 영문, 숫자, 특문 입력 가능\n3. Period 유효 범위\n> 2001/01/01, 00:00 ~ 2030/12/31, 23:59\n4. Status 설정\n> Active/Inactive\n5. Access Group 설정\n> 17개 이상의 Access Group 생성된 상태\n> Access Group 생성은 출입그룹 Test Case 를 통해 확인\n6. PIN 유효 범위\n> 1~16자 입력 가능\n> Min : 4자 이상\n> ***** 표시\n7. Auth Mode 설정\n> Private Mode/Device Default\n8. Private Mode 설정 \n> 지문 : 지문, 지문+PIN\n> 카드 : 카드, 카드+지문, 카드+PIN, 카드+지문/PIN, 카드+지문+PIN\n> ID : ID+지문, ID+PIN, ID+지문/PIN, ID+지문+PIN\n9. Credential 관련 설정\n> Fingerprint : Max 10지\n> Card : Max 8장\n= CSN (Mifare/EM/ISO15693/FeliCa/B Card), Wiegand (HID Prox/iClass/iClass SE/iClass SEOS), Access On Card, Secure Credential Card\n10. 1:1 Security Level 관련 설정\n> Device Default, Lowest, Low, Normal, High, Highest",
+      "1. USB Memory 삽입된 상태\n2. USB Memory 에 Export 한 사용자(50만명) 존재"
+    ],
+    "expected_result": [
+      "1. 장치에서 BioStar 를 통해 입력한 Information, Credential이 정상적으로 표시되어야 한다.\n>  각 장치별로 개인 정보 암호화 키에 의해 암호화/복호화 이루어짐",
+      "1. 장치를 통해 입력한 Information, Credential이 정상적으로 표시되어야 한다.\n>  각 장치별로 개인 정보 암호화 키에 의해 암호화/복호화 이루어짐",
+      "USB Memory 의 사용자가 이상없이 장치로 Import 된다.\n> 각 장치별로 개인 정보 암호화 키에 의해 암호화/복호화 이루어짐"
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "COMMONR-353",
+  "content": [
+    [
+      1,
+      "1. FW Upgrade 시도\n2. Upgrade 진행 중 장치의 전원OFF \n   > 장치에 Write 중일 때\n3. 전원 재인가 후 동작확인",
+      "장치모드: Default/Master",
+      "1. 전원인가 후 나머지 부분에 대해 Write되며,업그레이드 완료 후 정상적으로 부팅이 된다."
+    ],
+    [
+      2,
+      "<RS485 구성>\n1. Slave 장치에 FW Upgrade 시도\n2. Slave Upgrade 진행 중 Slave 장치의 전원OFF\n   > 장치에 Write 중일 때\n3. Slave 장치 전원 재인가 후 동작확인",
+      "",
+      "1. 전원인가 후 나머지 부분에 대해 Write되며,업그레이드 완료 후 정상적으로 부팅이 된다."
+    ],
+    [
+      3,
+      "1. 장치에 USB 장착 후 장치 전원인가\n2. Recovery Mode로의 진입여부 확인",
+      "USB에 저장파일\n> Recovery File: 기간 만료",
+      "1. Recovery Mode로 진입이 되지 않고, 정상적으로 부팅이 이루어져야 한다."
+    ],
+    [
+      4,
+      "1. 장치에 USB 장착 후 장치 전원인가\n2. Recovery Mode로의 진입여부 확인",
+      "전체관리자 등록된 상태\n\nUSB에 저장파일\n> Recovery File: Device ID 상이 ",
+      "1. Recovery Mode로 진입이 되지 않고, 정상적으로 부팅이 이루어져야 한다."
+    ],
+    [
+      5,
+      "1. 장치에 USB 장착 후 장치 전원인가\n2. Recovery Mode로의 진입여부 확인",
+      "전체관리자 등록된 상태\n> FW 파일\n> Recovery File: 유효한 정보 저장",
+      "1. Recovery Mode로 진입된다."
+    ],
+    [
+      6,
+      "1. 잘못된 FW Upgrade 시도\n> Upgrade 성공은 되는 파일\n2. Recovery 파일 저장된 USB 장착\n3. 장치 전원 재인가\n4. 동작확인",
+      "확인장치\n> Master\n\n잘못된 FW\n> 개발자에 요청해 FW 전달받아 확인필요",
+      "1. FW Upgrade 중 문제발생시 부팅되지 않고 멈춘다.\n2. 전원재인가 후 Recovery Mode로 동작된다."
+    ],
+    [
+      7,
+      "1. USB 장착\n2. 관리자 인증\n3. 파일전송완료 후 장치재부팅\n4. 장치 재부팅시 Recovery Mode로의 진입여부 확인",
+      "전체관리자 등록된 상태\n\nUSB에 저장파일\n> FW 파일\n> Recovery File: 유효한 정보 저장",
+      "1. FW Upgrade 진행 후 Recovery Mode로 진입된다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-353",
+    "description": "",
+    "test_step": [
+      "1. FW Upgrade 시도\n2. Upgrade 진행 중 장치의 전원OFF \n   > 장치에 Write 중일 때\n3. 전원 재인가 후 동작확인",
+      "<RS485 구성>\n1. Slave 장치에 FW Upgrade 시도\n2. Slave Upgrade 진행 중 Slave 장치의 전원OFF\n   > 장치에 Write 중일 때\n3. Slave 장치 전원 재인가 후 동작확인",
+      "1. 장치에 USB 장착 후 장치 전원인가\n2. Recovery Mode로의 진입여부 확인",
+      "1. 장치에 USB 장착 후 장치 전원인가\n2. Recovery Mode로의 진입여부 확인",
+      "1. 장치에 USB 장착 후 장치 전원인가\n2. Recovery Mode로의 진입여부 확인",
+      "1. 잘못된 FW Upgrade 시도\n> Upgrade 성공은 되는 파일\n2. Recovery 파일 저장된 USB 장착\n3. 장치 전원 재인가\n4. 동작확인",
+      "1. USB 장착\n2. 관리자 인증\n3. 파일전송완료 후 장치재부팅\n4. 장치 재부팅시 Recovery Mode로의 진입여부 확인"
+    ],
+    "data": [
+      "장치모드: Default/Master",
+      "USB에 저장파일\n> Recovery File: 기간 만료",
+      "전체관리자 등록된 상태\n\nUSB에 저장파일\n> Recovery File: Device ID 상이 ",
+      "전체관리자 등록된 상태\n> FW 파일\n> Recovery File: 유효한 정보 저장",
+      "확인장치\n> Master\n\n잘못된 FW\n> 개발자에 요청해 FW 전달받아 확인필요",
+      "전체관리자 등록된 상태\n\nUSB에 저장파일\n> FW 파일\n> Recovery File: 유효한 정보 저장"
+    ],
+    "expected_result": [
+      "1. 전원인가 후 나머지 부분에 대해 Write되며,업그레이드 완료 후 정상적으로 부팅이 된다.",
+      "1. 전원인가 후 나머지 부분에 대해 Write되며,업그레이드 완료 후 정상적으로 부팅이 된다.",
+      "1. Recovery Mode로 진입이 되지 않고, 정상적으로 부팅이 이루어져야 한다.",
+      "1. Recovery Mode로 진입이 되지 않고, 정상적으로 부팅이 이루어져야 한다.",
+      "1. Recovery Mode로 진입된다.",
+      "1. FW Upgrade 중 문제발생시 부팅되지 않고 멈춘다.\n2. 전원재인가 후 Recovery Mode로 동작된다.",
+      "1. FW Upgrade 진행 후 Recovery Mode로 진입된다."
+    ]
+  }
+}

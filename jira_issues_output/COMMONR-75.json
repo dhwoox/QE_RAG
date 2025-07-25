@@ -1,0 +1,190 @@
+{
+  "id": "COMMONR-75",
+  "content": [
+    [
+      1,
+      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > TCP/IP",
+      "BioStar 연결된 상태 - 고정, 유동\n1. Use DHCP\n2. IP Address\n3. Subnet Mask\n4. Gateway\n5. Device Port",
+      "1. DHCP Check 시 IP Address, Subnet Mask, Gateway가 비활성화된 상태에서 표시된다.\n2. DHCP Uncheck 시 IP Address, Subnet Mask, Gateway가 활성화된 상태에서 표시된다.\n3. Device Port는 항시 활성화된 상태로 표시가 된다."
+    ],
+    [
+      2,
+      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > TCP/IP > Use DHCP : Check > Apply",
+      "1. FIX(Static) Connection\n> DHCP 로 변경시 Static IP 와 다른 IP 를 할당받는 경우\n> DHCP 로 변경시 Static IP 와 동일한 IP 를 할당받는 경우 (DHCP 에서 자동으로 할당받은 IP 를 Static IP 에 입력, 이와 같은 경우 DHCP 로 변경시 동일한 IP 를 받아오는 설정을 할 수 있음)",
+      "1. Static IP 와 다른 IP 를 할당받은 경우 Device가 연결이 끊어진다.\n2. Static IP 와 동일한 IP 를 할당받은 경우 Device가 연결이 끊어지고 잠시 뒤 자동으로 연결이 되어 DHCP로 동작이 된다.\n> Device에 설정된 정보와 비교\n3. Device Port는 항상 활성화된 상태로 표시가 된다.\n> TCP, Ethernet, DHCP 로그가 남는다."
+    ],
+    [
+      3,
+      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > TCP/IP > Use DHCP : Check > Apply\n2. 장치에서 Lan Cable 탈착 > 장착\n3. 장치 전원 OFF > ON",
+      "",
+      "1. Lan Cable 탈착 후 장착시 정상적으로 IP 할당받아 연결되어야 한다.\n> 3분 이내에 IP 할당받아 연결되는지 확인\n2. 전원 OFF 후 ON 시 정상적으로 IP 할당받아 연결되어야 한다.\n> 3분 이내에 IP 할당받아 연결되는지 확인"
+    ],
+    [
+      4,
+      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > TCP/IP > Use DHCP : Uncheck\n2. IP Address, Gateway, Subnet Mask, Device Port 입력 > Apply",
+      "1. DHCP Connection",
+      "1. Deivce가 연결이 끊어지고 잠시 뒤 자동으로 연결되어 Static으로 동작이 된다.\n> 자동 연결이 안된 경우 Reconnected 동작 확인\n2. 직접 입력한 IP Address, Gateway, Subnet Mask, Device Port, DNS Server Address 가 표시된다.\n= Device에 설정된 정보와 비교\n> TCP, Ethernet 로그가 남는다.\n> DNS 입력 후 BioStar 와 정상적으로 연결되는지 확인"
+    ],
+    [
+      5,
+      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > TCP/IP\n2. Support 100 BASE-T 설정 > Apply",
+      "[Entry 계열]\n1. Support 100 BASE-T\n> Use\n> Not Use",
+      "1. 설정값이 바로 적용되어야 한다.\n2. Use 설정시 100 BASE-T 속도로 이더넷 네트워크에 연결한다.\n3. Not Use 설정시 10 BASE-T 속도로 이더넷 네트워크에 연결한다.\n[확인방법]\n보유중인 Switch Hub 에서 확인한다.\n> DS-2400, 10/100Mbps 24port Fast Ethernet Switch"
+    ],
+    [
+      6,
+      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > WLAN",
+      "BioStar 연결된 상태 - 고정, 유동\n1. Use\n2. Operation Mode\n3. SSID\n4. Authorization Type\n5. Encryption Type\n6. Authorization Key",
+      "1. WLAN 사용 시 Use에 Check가 된 상태로 Operation Mode, SSID, Authorization Type, Encryption Type, Authorization Key가 비활성화된 상태로 표시된다.\n= TCP/IP에 AP로 받은 IP가 표시되는 지 Devcie와 비교\n2. WLAN 미사용 시 Use에 Uncheck가 된 상태로 Operation Mode, SSID, Authorization Type, Encryption Type, Authorization Key가 비활성화된 상태로 표시된다."
+    ],
+    [
+      7,
+      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > WLAN",
+      "1. 장치의 Network 가 WiFi 연결되어 추가된 상태\n2. BioStar 는 WLAN ReadOnly",
+      "1. WLAN 사용 시 Use에 Check가 된 상태이다.\n2. Operation Mode, SSID, Authorization Type, Encryption Type, Authorization Key가 비활성화된 상태로 표시된다.\n= AP로 부터 부여 받은 정보가 표시됨\n3. TCP/IP 는 장치와 동일한 정보가 표시된다.\n=Device와 비교"
+    ],
+    [
+      8,
+      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > WLAN",
+      "1. 장치의 Network 가 Lan cable 연결되어 추가된 상태\n2. BioStar 는 WLAN ReadOnly",
+      "1. WLAN 미사용 시 Use에 Uncheck가 된 상태이다.\n2. Operation Mode, SSID, Authorization Type, Encryption Type, Authorization Key가 비활성화된 상태로 표시된다."
+    ],
+    [
+      9,
+      "1. BioStar> 장치검색> 장치추가\n2. 장치에 전송시도\n2. 전송이 완료되지 않은 상태에서 BioStar 서버 종료\n3. 장치상태확인",
+      "전송항목\n> 사용자 전송 or 동기화",
+      "1. 서버종료 전까지 사용자 전송 및 동기화가 이루어져야 한다.\n2. 서버 종료 이후에 장치Reboot이 발생되지 않아야 한다."
+    ],
+    [
+      10,
+      "1. BioStar에서 A 장치연결\n2. B 장치의 IP Address를 A 장치와 동일한 IP로 설정 후 유지\n3. 장치상태확인",
+      "A 연결장치\n> 고정IP 설정",
+      "1. IP 충돌이 되지만 장치Reboot이 발생되지 않아야 한다."
+    ],
+    [
+      11,
+      "1. BioStar> 장치검색> 장치추가\n2. BioStar Setting 실행\n3. BioStar Server Stop/Start 10회 이상 On/Off 시도\n4. 장치상태 확인",
+      "",
+      "1. Reboot되지 않아야 한다."
+    ],
+    [
+      12,
+      "<BioStar에 장치연결된 상태>\n1. DHCP 서버로 연결된 외부 네트워크선 연결해제\n2. 20초~30초 후 네트워크선 재연결\n3. IP 할당 및 BioStar와의 연결확인",
+      "연결된 장치 - DHCP 설정",
+      "1. DHCP로 IP를 받아와야 한다.\n2. BioStar와의 연결이 정상적으로 이루어져야 한다.\n> Ping 확인\n> BioStar와의 연결상태 확인"
+    ],
+    [
+      13,
+      "1. 허브에 PC와 장치 연결\n2. 허브에 DHCP 서버로 연결된 외부 네트워크선을 연결\n3. BioStar에서 검색 및 추가 후 연결확인",
+      "장치 - DHCP 설정",
+      "1. DHCP로 IP를 받아와야 한다.\n2. 검색 및 추가가 정상적으로 이루어져야 한다.\n3. 추가 후 Connected 상태를 유지해야 한다."
+    ],
+    [
+      14,
+      "1. BioStar 설치 PC 와 장치 연결\n2. 장치의 네트워크를 DHCP에서 FIX로 변경하고 BioStar에 통신이 가능한 IP 입력\n3. BioStar에서 검색 및 추가 후 연결확인",
+      "BioStar - No DHCP Server \n장치 - FIX 설정",
+      "1. FIX로 입력한 IP, GateWay, Subnetmask가 정상적으로 입력된다.\n> Lan Cable 연결 유무 상관 없이 동작\n2. 검색 및 추가가 정상적으로 이루어져야 한다.\n3. 추가 후 Connected 상태를 유지해야 한다."
+    ],
+    [
+      15,
+      "1. 외부LAN선을 스위치에 연결\n2. 스위치와 AP지원 IPTIME 공유기간 LAN선 연결\n3. AP지원 IPTIME 공유기에 PC, 장치 LAN선 연결\n4. 외부IP에 PING 시도",
+      "외부IP\nex) ping -c 2 106.10.108.146(아모텍)(시리얼포트 연결)\n\n163.44.196.104 - 태국 업체 ",
+      "1. PING이 정상적으로 나간다.\n   > 외부네트워크와의 통신 확인\n※ FISF-557 참고"
+    ],
+    [
+      16,
+      "[wi-fi - Nomal 상태에서 장치재부팅]\n1. 장치 wifi 연결\n2. 장치 재부팅\n3. wi-fi 연결 유지 확인",
+      "use DHCP: ON/OFF",
+      "1. 장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.\n>홈화면 wifi 아이콘 표시"
+    ],
+    [
+      17,
+      "[wi-fi - 장치재부팅 완료 전 공유기 연결]\n1.장치 wifi 연결\n2.장치 OFF\n3.공유기 OFF > ON\n4.장치 ON\n5.Wi-fi 연결 유지 확인",
+      "",
+      "1. 장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.\n>홈화면 wifi 아이콘 표시"
+    ],
+    [
+      18,
+      "[wi-fi - 장치재부팅 완료 후 공유기 연결]\n1.장치 wifi 연결\n2. 장치 OFF\n3. 공유기 OFF\n4. 장치 ON(재부팅 완료)\n5. 공유기 ON \n6. Wi-fi 연결 유지확인\n",
+      "",
+      "1. 공유기,장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.\n>홈화면 wifi 아이콘 표시"
+    ],
+    [
+      19,
+      "[wi-fi - 장치 재부팅 후 공유기 전원 Off / ON]\n1.장치 wifi 연결\n2. 장치재부팅(재부팅 완료)\n3. 공유기 OFF\n4. 와이파이 연결 끊어짐, 홈화면 wi-fi 아이콘 사라짐 확인\n5. 공유기 ON\n6. Wi-fi 연결 유지확인\n",
+      "use DHCP: ON/OFF",
+      "1. 공유기,장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.\n>홈화면 wifi 아이콘 표시"
+    ],
+    [
+      20,
+      "[wi-fi - Normal 상태에서 공유기 전원 Off/ON]\n1.장치 wifi 연결\n2.공유기 OFF/ON\n4. 와이파이 연결 끊어짐, 홈화면 wi-fi 아이콘 사라짐 확인\n5. 공유기 ON\n6. Wi-fi 연결 유지확인\n",
+      "",
+      "1. 공유기,장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.\n>홈화면 wifi 아이콘 표시"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-75",
+    "description": "",
+    "test_step": [
+      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > TCP/IP",
+      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > TCP/IP > Use DHCP : Check > Apply",
+      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > TCP/IP > Use DHCP : Check > Apply\n2. 장치에서 Lan Cable 탈착 > 장착\n3. 장치 전원 OFF > ON",
+      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > TCP/IP > Use DHCP : Uncheck\n2. IP Address, Gateway, Subnet Mask, Device Port 입력 > Apply",
+      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > TCP/IP\n2. Support 100 BASE-T 설정 > Apply",
+      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > WLAN",
+      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > WLAN",
+      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > WLAN",
+      "1. BioStar> 장치검색> 장치추가\n2. 장치에 전송시도\n2. 전송이 완료되지 않은 상태에서 BioStar 서버 종료\n3. 장치상태확인",
+      "1. BioStar에서 A 장치연결\n2. B 장치의 IP Address를 A 장치와 동일한 IP로 설정 후 유지\n3. 장치상태확인",
+      "1. BioStar> 장치검색> 장치추가\n2. BioStar Setting 실행\n3. BioStar Server Stop/Start 10회 이상 On/Off 시도\n4. 장치상태 확인",
+      "<BioStar에 장치연결된 상태>\n1. DHCP 서버로 연결된 외부 네트워크선 연결해제\n2. 20초~30초 후 네트워크선 재연결\n3. IP 할당 및 BioStar와의 연결확인",
+      "1. 허브에 PC와 장치 연결\n2. 허브에 DHCP 서버로 연결된 외부 네트워크선을 연결\n3. BioStar에서 검색 및 추가 후 연결확인",
+      "1. BioStar 설치 PC 와 장치 연결\n2. 장치의 네트워크를 DHCP에서 FIX로 변경하고 BioStar에 통신이 가능한 IP 입력\n3. BioStar에서 검색 및 추가 후 연결확인",
+      "1. 외부LAN선을 스위치에 연결\n2. 스위치와 AP지원 IPTIME 공유기간 LAN선 연결\n3. AP지원 IPTIME 공유기에 PC, 장치 LAN선 연결\n4. 외부IP에 PING 시도",
+      "[wi-fi - Nomal 상태에서 장치재부팅]\n1. 장치 wifi 연결\n2. 장치 재부팅\n3. wi-fi 연결 유지 확인",
+      "[wi-fi - 장치재부팅 완료 전 공유기 연결]\n1.장치 wifi 연결\n2.장치 OFF\n3.공유기 OFF > ON\n4.장치 ON\n5.Wi-fi 연결 유지 확인",
+      "[wi-fi - 장치재부팅 완료 후 공유기 연결]\n1.장치 wifi 연결\n2. 장치 OFF\n3. 공유기 OFF\n4. 장치 ON(재부팅 완료)\n5. 공유기 ON \n6. Wi-fi 연결 유지확인\n",
+      "[wi-fi - 장치 재부팅 후 공유기 전원 Off / ON]\n1.장치 wifi 연결\n2. 장치재부팅(재부팅 완료)\n3. 공유기 OFF\n4. 와이파이 연결 끊어짐, 홈화면 wi-fi 아이콘 사라짐 확인\n5. 공유기 ON\n6. Wi-fi 연결 유지확인\n",
+      "[wi-fi - Normal 상태에서 공유기 전원 Off/ON]\n1.장치 wifi 연결\n2.공유기 OFF/ON\n4. 와이파이 연결 끊어짐, 홈화면 wi-fi 아이콘 사라짐 확인\n5. 공유기 ON\n6. Wi-fi 연결 유지확인\n"
+    ],
+    "data": [
+      "BioStar 연결된 상태 - 고정, 유동\n1. Use DHCP\n2. IP Address\n3. Subnet Mask\n4. Gateway\n5. Device Port",
+      "1. FIX(Static) Connection\n> DHCP 로 변경시 Static IP 와 다른 IP 를 할당받는 경우\n> DHCP 로 변경시 Static IP 와 동일한 IP 를 할당받는 경우 (DHCP 에서 자동으로 할당받은 IP 를 Static IP 에 입력, 이와 같은 경우 DHCP 로 변경시 동일한 IP 를 받아오는 설정을 할 수 있음)",
+      "1. DHCP Connection",
+      "[Entry 계열]\n1. Support 100 BASE-T\n> Use\n> Not Use",
+      "BioStar 연결된 상태 - 고정, 유동\n1. Use\n2. Operation Mode\n3. SSID\n4. Authorization Type\n5. Encryption Type\n6. Authorization Key",
+      "1. 장치의 Network 가 WiFi 연결되어 추가된 상태\n2. BioStar 는 WLAN ReadOnly",
+      "1. 장치의 Network 가 Lan cable 연결되어 추가된 상태\n2. BioStar 는 WLAN ReadOnly",
+      "전송항목\n> 사용자 전송 or 동기화",
+      "A 연결장치\n> 고정IP 설정",
+      "연결된 장치 - DHCP 설정",
+      "장치 - DHCP 설정",
+      "BioStar - No DHCP Server \n장치 - FIX 설정",
+      "외부IP\nex) ping -c 2 106.10.108.146(아모텍)(시리얼포트 연결)\n\n163.44.196.104 - 태국 업체 ",
+      "use DHCP: ON/OFF",
+      "use DHCP: ON/OFF"
+    ],
+    "expected_result": [
+      "1. DHCP Check 시 IP Address, Subnet Mask, Gateway가 비활성화된 상태에서 표시된다.\n2. DHCP Uncheck 시 IP Address, Subnet Mask, Gateway가 활성화된 상태에서 표시된다.\n3. Device Port는 항시 활성화된 상태로 표시가 된다.",
+      "1. Static IP 와 다른 IP 를 할당받은 경우 Device가 연결이 끊어진다.\n2. Static IP 와 동일한 IP 를 할당받은 경우 Device가 연결이 끊어지고 잠시 뒤 자동으로 연결이 되어 DHCP로 동작이 된다.\n> Device에 설정된 정보와 비교\n3. Device Port는 항상 활성화된 상태로 표시가 된다.\n> TCP, Ethernet, DHCP 로그가 남는다.",
+      "1. Lan Cable 탈착 후 장착시 정상적으로 IP 할당받아 연결되어야 한다.\n> 3분 이내에 IP 할당받아 연결되는지 확인\n2. 전원 OFF 후 ON 시 정상적으로 IP 할당받아 연결되어야 한다.\n> 3분 이내에 IP 할당받아 연결되는지 확인",
+      "1. Deivce가 연결이 끊어지고 잠시 뒤 자동으로 연결되어 Static으로 동작이 된다.\n> 자동 연결이 안된 경우 Reconnected 동작 확인\n2. 직접 입력한 IP Address, Gateway, Subnet Mask, Device Port, DNS Server Address 가 표시된다.\n= Device에 설정된 정보와 비교\n> TCP, Ethernet 로그가 남는다.\n> DNS 입력 후 BioStar 와 정상적으로 연결되는지 확인",
+      "1. 설정값이 바로 적용되어야 한다.\n2. Use 설정시 100 BASE-T 속도로 이더넷 네트워크에 연결한다.\n3. Not Use 설정시 10 BASE-T 속도로 이더넷 네트워크에 연결한다.\n[확인방법]\n보유중인 Switch Hub 에서 확인한다.\n> DS-2400, 10/100Mbps 24port Fast Ethernet Switch",
+      "1. WLAN 사용 시 Use에 Check가 된 상태로 Operation Mode, SSID, Authorization Type, Encryption Type, Authorization Key가 비활성화된 상태로 표시된다.\n= TCP/IP에 AP로 받은 IP가 표시되는 지 Devcie와 비교\n2. WLAN 미사용 시 Use에 Uncheck가 된 상태로 Operation Mode, SSID, Authorization Type, Encryption Type, Authorization Key가 비활성화된 상태로 표시된다.",
+      "1. WLAN 사용 시 Use에 Check가 된 상태이다.\n2. Operation Mode, SSID, Authorization Type, Encryption Type, Authorization Key가 비활성화된 상태로 표시된다.\n= AP로 부터 부여 받은 정보가 표시됨\n3. TCP/IP 는 장치와 동일한 정보가 표시된다.\n=Device와 비교",
+      "1. WLAN 미사용 시 Use에 Uncheck가 된 상태이다.\n2. Operation Mode, SSID, Authorization Type, Encryption Type, Authorization Key가 비활성화된 상태로 표시된다.",
+      "1. 서버종료 전까지 사용자 전송 및 동기화가 이루어져야 한다.\n2. 서버 종료 이후에 장치Reboot이 발생되지 않아야 한다.",
+      "1. IP 충돌이 되지만 장치Reboot이 발생되지 않아야 한다.",
+      "1. Reboot되지 않아야 한다.",
+      "1. DHCP로 IP를 받아와야 한다.\n2. BioStar와의 연결이 정상적으로 이루어져야 한다.\n> Ping 확인\n> BioStar와의 연결상태 확인",
+      "1. DHCP로 IP를 받아와야 한다.\n2. 검색 및 추가가 정상적으로 이루어져야 한다.\n3. 추가 후 Connected 상태를 유지해야 한다.",
+      "1. FIX로 입력한 IP, GateWay, Subnetmask가 정상적으로 입력된다.\n> Lan Cable 연결 유무 상관 없이 동작\n2. 검색 및 추가가 정상적으로 이루어져야 한다.\n3. 추가 후 Connected 상태를 유지해야 한다.",
+      "1. PING이 정상적으로 나간다.\n   > 외부네트워크와의 통신 확인\n※ FISF-557 참고",
+      "1. 장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.\n>홈화면 wifi 아이콘 표시",
+      "1. 장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.\n>홈화면 wifi 아이콘 표시",
+      "1. 공유기,장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.\n>홈화면 wifi 아이콘 표시",
+      "1. 공유기,장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.\n>홈화면 wifi 아이콘 표시",
+      "1. 공유기,장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.\n>홈화면 wifi 아이콘 표시"
+    ]
+  }
+}

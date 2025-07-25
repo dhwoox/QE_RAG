@@ -1,5 +1,16 @@
 ■ 이슈 키: COMMONR-276
 ■ 제목: [Intelligent Slave] RS485 모드에 따른 Intelligent PD 지원 옵션
+■ 설명: 요구사항 정의
+> http://192.168.1.4:8001/browse/BDP-92
+
+관련 테스트를 진행하기 위한 전제조건
+> CS40 V1.5.1 / BEW2 V1.6.3 / BSL2 V1.6.1 / BEP2 V1.4.1 / XP2 V1.2.3  이상 버전
+> RS-485 mode 가 Default 상태로 Suprema 장치가 아닌 3rd-party Controller 에 연결
+
+작성된 TestCase 내용
+> 바이오스타에서 Intelligent PD 장치를 추가했을 때 RS485 모드에 따른 Exception Code / Use User ID / OSDP Address옵션 지원유무 확인
+
+ 
 ============================================================
 
 ■ 테스트 스텝

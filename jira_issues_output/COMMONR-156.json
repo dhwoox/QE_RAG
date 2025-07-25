@@ -1,0 +1,69 @@
+{
+  "id": "COMMONR-156",
+  "content": [
+    [
+      1,
+      "1. Door> 장치선택> Door Relay/ExitButton/DoorSensor 설정\n2. Forced Open Alarm> 장치ID & Index 입력\n3. ActionType: Relay 선택> Stop Flag: Door Closed 선택\n4. Relay 항목 설정 후 Add> 확인\n5. 해당 Config를 장치로 전송\n6. Forced Open을 발생시켜 동작확인\n",
+      "RS485 구성한 상태에서 모두 확인\n> Master\n> Slave(장치)\n> DM20\n> SIO2",
+      "1. Forced Open Alarm 이 발생하게 되면 Relay(=Output Signal)가 설정한대로 동작한다.\n2. Alarm이 발생하는 도중 Door Closed시 Alarm Clear가 된다."
+    ],
+    [
+      2,
+      "1. Door> 장치선택> Door Relay/ExitButton/DoorSensor 설정\n2. Forced Open Alarm> 장치ID & Index 입력\n3. ActionType: LED 선택> Stop Flag: Door Closed 선택\n4. LED 항목 설정 후 Add> 확인\n5. 해당 Config를 장치로 전송\n6. Forced Open을 발생시켜 동작확인\n",
+      "RS485 구성한 상태에서 모두 확인\n> Master\n> Slave(장치)",
+      "1. Forced Open Alarm 이 발생하게 되면 LED가 설정한대로 동작한다.\n2. Alarm이 발생하는 도중 Door Closed시 Alarm Clear가 된다."
+    ],
+    [
+      3,
+      "1. Door> 장치선택> Door Relay/ExitButton/DoorSensor 설정\n2. Forced Open Alarm> 장치ID & Index 입력\n3. ActionType: Buzzer 선택> Stop Flag: Door Closed 선택\n4. Buzzer 항목 설정 후 Add> 확인\n5. 해당 Config를 장치로 전송\n6. Forced Open을 발생시켜 동작확인\n",
+      "RS485 구성한 상태에서 모두 확인\n> Master\n> Slave(장치)",
+      "1. Forced Open Alarm 이 발생하게 되면 Buzzer가 설정한대로 동작한다.\n2. Alarm이 발생하는 도중 Door Closed시 Alarm Clear가 된다."
+    ],
+    [
+      4,
+      "1. Door> 장치선택> Door Relay/ExitButton/DoorSensor 설정\n2. Held Open Alarm> 장치ID & Index 입력\n3. ActionType: Relay 선택> Stop Flag: Door Closed 선택\n4. Relay 항목 설정 후 Add> 확인\n5. 해당 Config를 장치로 전송\n6. Held Open을 발생시켜 동작확인\n",
+      "RS485 구성한 상태에서 모두 확인\n> Master\n> Slave(장치)\n> DM20\n> SIO2",
+      "1. Held Open Alarm 이 발생하게 되면 Relay(=Output Signal)가 설정한대로 동작한다.\n2. Alarm이 발생하는 도중 Door Closed시 Alarm Clear가 된다."
+    ],
+    [
+      5,
+      "1. Door> 장치선택> Door Relay/ExitButton/DoorSensor 설정\n2. Held Open Alarm> 장치ID & Index 입력\n3. ActionType: LED 선택> Stop Flag: Door Closed 선택\n4. LED 항목 설정 후 Add> 확인\n5. 해당 Config를 장치로 전송\n6. Held Open을 발생시켜 동작확인\n",
+      "RS485 구성한 상태에서 모두 확인\n> Master\n> Slave(장치)",
+      "1. Held Open Alarm 이 발생하게 되면 LED가 설정한대로 동작한다.\n2. Alarm이 발생하는 도중 Door Closed시 Alarm Clear가 된다."
+    ],
+    [
+      6,
+      "1. Door> 장치선택> Door Relay/ExitButton/DoorSensor 설정\n2. Held Open Alarm> 장치ID & Index 입력\n3. ActionType: Buzzer 선택> Stop Flag: Door Closed 선택\n4. Buzzer 항목 설정 후 Add> 확인\n5. 해당 Config를 장치로 전송\n6. Held Open을 발생시켜 동작확인\n",
+      "RS485 구성한 상태에서 모두 확인\n> Master\n> Slave(장치)",
+      "1. Held Open Alarm 이 발생하게 되면 Buzzer가 설정한대로 동작한다.\n2. Alarm이 발생하는 도중 Door Closed시 Alarm Clear가 된다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-156",
+    "description": "",
+    "test_step": [
+      "1. Door> 장치선택> Door Relay/ExitButton/DoorSensor 설정\n2. Forced Open Alarm> 장치ID & Index 입력\n3. ActionType: Relay 선택> Stop Flag: Door Closed 선택\n4. Relay 항목 설정 후 Add> 확인\n5. 해당 Config를 장치로 전송\n6. Forced Open을 발생시켜 동작확인\n",
+      "1. Door> 장치선택> Door Relay/ExitButton/DoorSensor 설정\n2. Forced Open Alarm> 장치ID & Index 입력\n3. ActionType: LED 선택> Stop Flag: Door Closed 선택\n4. LED 항목 설정 후 Add> 확인\n5. 해당 Config를 장치로 전송\n6. Forced Open을 발생시켜 동작확인\n",
+      "1. Door> 장치선택> Door Relay/ExitButton/DoorSensor 설정\n2. Forced Open Alarm> 장치ID & Index 입력\n3. ActionType: Buzzer 선택> Stop Flag: Door Closed 선택\n4. Buzzer 항목 설정 후 Add> 확인\n5. 해당 Config를 장치로 전송\n6. Forced Open을 발생시켜 동작확인\n",
+      "1. Door> 장치선택> Door Relay/ExitButton/DoorSensor 설정\n2. Held Open Alarm> 장치ID & Index 입력\n3. ActionType: Relay 선택> Stop Flag: Door Closed 선택\n4. Relay 항목 설정 후 Add> 확인\n5. 해당 Config를 장치로 전송\n6. Held Open을 발생시켜 동작확인\n",
+      "1. Door> 장치선택> Door Relay/ExitButton/DoorSensor 설정\n2. Held Open Alarm> 장치ID & Index 입력\n3. ActionType: LED 선택> Stop Flag: Door Closed 선택\n4. LED 항목 설정 후 Add> 확인\n5. 해당 Config를 장치로 전송\n6. Held Open을 발생시켜 동작확인\n",
+      "1. Door> 장치선택> Door Relay/ExitButton/DoorSensor 설정\n2. Held Open Alarm> 장치ID & Index 입력\n3. ActionType: Buzzer 선택> Stop Flag: Door Closed 선택\n4. Buzzer 항목 설정 후 Add> 확인\n5. 해당 Config를 장치로 전송\n6. Held Open을 발생시켜 동작확인\n"
+    ],
+    "data": [
+      "RS485 구성한 상태에서 모두 확인\n> Master\n> Slave(장치)\n> DM20\n> SIO2",
+      "RS485 구성한 상태에서 모두 확인\n> Master\n> Slave(장치)",
+      "RS485 구성한 상태에서 모두 확인\n> Master\n> Slave(장치)",
+      "RS485 구성한 상태에서 모두 확인\n> Master\n> Slave(장치)\n> DM20\n> SIO2",
+      "RS485 구성한 상태에서 모두 확인\n> Master\n> Slave(장치)",
+      "RS485 구성한 상태에서 모두 확인\n> Master\n> Slave(장치)"
+    ],
+    "expected_result": [
+      "1. Forced Open Alarm 이 발생하게 되면 Relay(=Output Signal)가 설정한대로 동작한다.\n2. Alarm이 발생하는 도중 Door Closed시 Alarm Clear가 된다.",
+      "1. Forced Open Alarm 이 발생하게 되면 LED가 설정한대로 동작한다.\n2. Alarm이 발생하는 도중 Door Closed시 Alarm Clear가 된다.",
+      "1. Forced Open Alarm 이 발생하게 되면 Buzzer가 설정한대로 동작한다.\n2. Alarm이 발생하는 도중 Door Closed시 Alarm Clear가 된다.",
+      "1. Held Open Alarm 이 발생하게 되면 Relay(=Output Signal)가 설정한대로 동작한다.\n2. Alarm이 발생하는 도중 Door Closed시 Alarm Clear가 된다.",
+      "1. Held Open Alarm 이 발생하게 되면 LED가 설정한대로 동작한다.\n2. Alarm이 발생하는 도중 Door Closed시 Alarm Clear가 된다.",
+      "1. Held Open Alarm 이 발생하게 되면 Buzzer가 설정한대로 동작한다.\n2. Alarm이 발생하는 도중 Door Closed시 Alarm Clear가 된다."
+    ]
+  }
+}

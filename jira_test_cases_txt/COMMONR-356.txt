@@ -1,5 +1,17 @@
 ■ 이슈 키: COMMONR-356
 ■ 제목: [FISF-2299] Custom Smart Card Layout 지원 관련해 서버와 장치간 호환성 검증 TC
+■ 설명: Custom Smart Card Layout 지원
+> 바이오스타 v2.9.4
+> FW - https://jira.suprema.co.kr/browse/BES-708 링크 참조
+
+검증환경
+> 카드마스크 설정 변경없이 디폴트 상태에서 확인진행
+
+Diaglog 상 확인 방법(카드리드시)
+> https://jira.suprema.co.kr/browse/XPASSRII-565 의 첨부파일 참조
+=> CardType[0x01] - CSN Type
+=> CardType[0x0d] - Custom Smart Card Type
+
 ============================================================
 
 ■ 테스트 스텝

@@ -1,0 +1,76 @@
+{
+  "id": "COMMONR-123",
+  "content": [
+    [
+      1,
+      "<Controller - Reader Wiegand 연결>\n\n1. Device> Controller 선택\n2. Wiegand In/Out: In 설정\n3. Wiegand 포맷 : 모두체크\n4. Reader에 카드 Read(Wiegand Card)",
+      "",
+      "시스템에 설정된 포맷중에서 자동으로 매칭\n> Format Type의 영향을 받지 않음"
+    ],
+    [
+      2,
+      "<Controller - Reader Wiegand 연결>\n\n1. Device> Reader Wiegand 선택\n2. Wiegand Out 설정 및 Bypass Mode 사용 설정\n3. Reader에 카드 Read(Wiegand Card)",
+      "",
+      "1) Card ID가 Bypass되어 출력"
+    ],
+    [
+      3,
+      "<Controller - Reader Wiegand 연결>\n\n1. Device> Reader Wiegand 선택\n2. 인증모드 설정\n3. Wiegand Out 설정 및 Bypass Mode 사용 설정\n4. Wiegand 포맷 : 모두 체크\n5. Reader에 카드 Read(CSN Card)",
+      "인증모드\n> 지문인증모드\n> 얼굴인증모드\n> 카드인증모드\n> ID인증모드",
+      "1) CSN Card의 경우 지정된 포맷으로 읽도록 선택해줘야 함\n2) 포맷이 설정된 경우 Card ID가 Bypass되어 출력"
+    ],
+    [
+      4,
+      "<Controller - Reader Wiegand 연결>\n\n1. Device> Reader Wiegand> Card ID 형식> Format Type: Wiegand 설정\n2. 인증모드 설정\n3. Wiegand Out 설정 및 Bypass Mode 사용안함 설정\n4. Wiegand 포맷 : Wiegand Card와 동일한 포맷으로 설정\n5. Reader에 카드 Read(CSN Card)",
+      "인증모드\n> 지문인증모드\n> 얼굴인증모드\n> 카드인증모드\n> ID인증모드",
+      "1) 인증성공 후 카드ID 출력"
+    ],
+    [
+      5,
+      "<Controller - Reader Wiegand 연결>\n\n1. Device> Reader Wiegand 선택\n2. 인증모드 설정\n3. Wiegand Out 설정 및 Bypass Mode 사용안함 설정\n4. Wiegand 포맷 : 모두 체크\n5. Reader에 카드 Read(Wiegand Card)",
+      "인증모드\n> 지문인증모드\n> 얼굴인증모드\n> 카드인증모드\n> ID인증모드",
+      "1) 인증성공 후 시스템에 설정된 포맷중에서 자동으로 매칭되어 카드ID 출력\n2) 인증한 사용자에 등록된 첫번째 카드가 Wiegand 카드인 경우 해당 Wiegand Format으로 출력(지문/얼굴/ID 인증모드)\n3) 등록된 첫번째 카드가 Wiegand 카드가 아닌 경우 설정한 Format에 맞게 출력(지문/얼굴/ID 인증모드)\n> Fingerprint/Secure Credential Card/CSN Wiegand Card"
+    ],
+    [
+      6,
+      "1. Device> Wiegand Reader> Card ID 형식> Format Type: Wiegand 설정\n2. 인증모드 설정\n3. Wiegand Out 설정 및 Bypass Mode 사용안함 설정\n4. Wiegand 포맷 : Wiegand Card와 동일한 포맷으로 설정\n5. Reader에 카드 Read(Wiegand Card)",
+      "인증모드\n> 지문인증모드\n> 얼굴인증모드\n> 카드인증모드\n> ID인증모드",
+      "1) 인증성공 후 지정된 포맷으로 카드ID 출력\n2) 인증한 사용자에 등록된 첫번째 카드가 Wiegand 카드인 경우 해당 Wiegand Format으로 출력(지문/얼굴/ID 인증모드)\n3) 등록된 첫번째 카드가 Wiegand 카드가 아닌 경우 설정한 Format에 맞게 출력(지문/얼굴/ID 인증모드)\n> Fingerprint/Secure Credential Card/CSN Wiegand Card"
+    ],
+    [
+      7,
+      "<Wiegand Out 장치- 사용자에 지문/얼굴/PIN 등록된 상태>\n1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Wiegand Bypass: Disable 설정\n4. Wiegand Out 장치에 인증시도",
+      "인증모드\n> 지문인증모드\n> 얼굴인증모드\n> ID인증모드",
+      "등록된 카드가 없기 때문에 Wiegand In 장치에서 아무런 반응이 없어야 한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-123",
+    "description": "",
+    "test_step": [
+      "<Controller - Reader Wiegand 연결>\n\n1. Device> Controller 선택\n2. Wiegand In/Out: In 설정\n3. Wiegand 포맷 : 모두체크\n4. Reader에 카드 Read(Wiegand Card)",
+      "<Controller - Reader Wiegand 연결>\n\n1. Device> Reader Wiegand 선택\n2. Wiegand Out 설정 및 Bypass Mode 사용 설정\n3. Reader에 카드 Read(Wiegand Card)",
+      "<Controller - Reader Wiegand 연결>\n\n1. Device> Reader Wiegand 선택\n2. 인증모드 설정\n3. Wiegand Out 설정 및 Bypass Mode 사용 설정\n4. Wiegand 포맷 : 모두 체크\n5. Reader에 카드 Read(CSN Card)",
+      "<Controller - Reader Wiegand 연결>\n\n1. Device> Reader Wiegand> Card ID 형식> Format Type: Wiegand 설정\n2. 인증모드 설정\n3. Wiegand Out 설정 및 Bypass Mode 사용안함 설정\n4. Wiegand 포맷 : Wiegand Card와 동일한 포맷으로 설정\n5. Reader에 카드 Read(CSN Card)",
+      "<Controller - Reader Wiegand 연결>\n\n1. Device> Reader Wiegand 선택\n2. 인증모드 설정\n3. Wiegand Out 설정 및 Bypass Mode 사용안함 설정\n4. Wiegand 포맷 : 모두 체크\n5. Reader에 카드 Read(Wiegand Card)",
+      "1. Device> Wiegand Reader> Card ID 형식> Format Type: Wiegand 설정\n2. 인증모드 설정\n3. Wiegand Out 설정 및 Bypass Mode 사용안함 설정\n4. Wiegand 포맷 : Wiegand Card와 동일한 포맷으로 설정\n5. Reader에 카드 Read(Wiegand Card)",
+      "<Wiegand Out 장치- 사용자에 지문/얼굴/PIN 등록된 상태>\n1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Wiegand Bypass: Disable 설정\n4. Wiegand Out 장치에 인증시도"
+    ],
+    "data": [
+      "인증모드\n> 지문인증모드\n> 얼굴인증모드\n> 카드인증모드\n> ID인증모드",
+      "인증모드\n> 지문인증모드\n> 얼굴인증모드\n> 카드인증모드\n> ID인증모드",
+      "인증모드\n> 지문인증모드\n> 얼굴인증모드\n> 카드인증모드\n> ID인증모드",
+      "인증모드\n> 지문인증모드\n> 얼굴인증모드\n> 카드인증모드\n> ID인증모드",
+      "인증모드\n> 지문인증모드\n> 얼굴인증모드\n> ID인증모드"
+    ],
+    "expected_result": [
+      "시스템에 설정된 포맷중에서 자동으로 매칭\n> Format Type의 영향을 받지 않음",
+      "1) Card ID가 Bypass되어 출력",
+      "1) CSN Card의 경우 지정된 포맷으로 읽도록 선택해줘야 함\n2) 포맷이 설정된 경우 Card ID가 Bypass되어 출력",
+      "1) 인증성공 후 카드ID 출력",
+      "1) 인증성공 후 시스템에 설정된 포맷중에서 자동으로 매칭되어 카드ID 출력\n2) 인증한 사용자에 등록된 첫번째 카드가 Wiegand 카드인 경우 해당 Wiegand Format으로 출력(지문/얼굴/ID 인증모드)\n3) 등록된 첫번째 카드가 Wiegand 카드가 아닌 경우 설정한 Format에 맞게 출력(지문/얼굴/ID 인증모드)\n> Fingerprint/Secure Credential Card/CSN Wiegand Card",
+      "1) 인증성공 후 지정된 포맷으로 카드ID 출력\n2) 인증한 사용자에 등록된 첫번째 카드가 Wiegand 카드인 경우 해당 Wiegand Format으로 출력(지문/얼굴/ID 인증모드)\n3) 등록된 첫번째 카드가 Wiegand 카드가 아닌 경우 설정한 Format에 맞게 출력(지문/얼굴/ID 인증모드)\n> Fingerprint/Secure Credential Card/CSN Wiegand Card",
+      "등록된 카드가 없기 때문에 Wiegand In 장치에서 아무런 반응이 없어야 한다."
+    ]
+  }
+}

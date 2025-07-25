@@ -1,0 +1,186 @@
+{
+  "id": "COMMONR-41",
+  "content": [
+    [
+      1,
+      "1. Door > Add Door > Dual Authentication > Device :  No Device 설정 확인 > Apply\n",
+      "[BioStar]\n1. 기본 값 : 사용 안함\n",
+      "1. 기본값은 '사용안함'이다.\n2. 이중인증이 동작하지 않는다.(인증시 일반 인증 성공이 발생한다.)"
+    ],
+    [
+      2,
+      "1. Door > Add Door > Dual Authentication > Device : Entry Device 설정 > Apply",
+      "[BioStar]\n1. Dual Authentication - Device\n> Entry Device Only",
+      "1. 입실용 장치에서 이중인증이 동작된다.\n2. 퇴실용 장치에서는 이중인증이 동작하지 않는다.(인증시 일반 인증 성공이 발생한다.)"
+    ],
+    [
+      3,
+      "1. Door > Add Door > Dual Authentication > Device : Exit Device 설정 > Apply\n",
+      "[BioStar]\n1. Dual Authentication - Device\n> Exit Device Only",
+      "1. 입실용 장치에서 이중인증이 동작하지 않는다.(인증시 일반 인증 성공이 발생한다.)\n2. 퇴실용 장치에서는 이중인증이 동작한다."
+    ],
+    [
+      4,
+      "1. Door > Add Door > Dual Authentication > Device : 임의의 Device 설정 > Approval Type : None 설정 확인 > Apply\n",
+      "[BioStar]\n1. Approval Type - None 설정\n > 기본값 : None\n",
+      "1. None일 경우, 임의로 설정한 Device의 Door가 속한 출입 그룹에 따라 인증성공이 이루어진다.\n2. 로그는 인증 성공/인증 성공/이중인증 성공으로 남는다.\n> Station : Dual Auth가 표시 되며, 두번째 인증 대기\n> Entry : LED가 깜박이며, 두번째 인증 대기"
+    ],
+    [
+      5,
+      "1. Door > Add Door > Dual Authentication > Device : 임의의 Device 설정 > Approval Type : Last 설정 > Approval Group : 임의의 Group 선택 > Apply",
+      "[BioStar]\n1. Approval Type - Last 설정\n1) 승인권한 없는 사용자+승인권한 있는 사용자\n2) 승인권한 있는 사용자+승인권한 있는 사용자\n3) 승인권한 있는 사용자+승인권한 없는 사용자\n4) 승인권한 없는 사용자+승인권한 없는 사용자",
+      "1. 이중인증이 성공한다.(설정1,2)\n2. 이중인증이 실패한다.(설정3,4)\n3. 각 사용자의 인증성공/실패 로그가 남는다.\n4. 이중인증 성공/실패로그가 남는다."
+    ],
+    [
+      6,
+      "1. Door > Add Door > Dual Authentication > Device : 임의의 Device 설정 > Approval Type : 임의로 설정 > Timeout : 해당값 설정 > Apply",
+      "[BioStar]\n1. 기본값 : 15초\n2. 입력 범위\n > 1s, 3s, 5s, 10s, 15s, 30s, 1m, 3m, 5m, 10m, 15m",
+      "1. 첫번째 인증 후 두번째 인증까지 대기하는 시간을 말한다. 설정한 값만큼의 대기시간이 동작한다.\n2. 인증성공/인증성공/이중인증 성공로그 이렇게 3개의 로그가 남는다.\n> Station : Dual Auth가 표시 되며, 두번째 인증 대기\n> Entry : LED가 깜박이며, 두번째 인증 대기\n3. 이중인증 실패시 인증성공/인증실패 로그가 남는다."
+    ],
+    [
+      7,
+      "1. Door > Add Door > Dual Authentication > Device : 임의의 Device 설정 > Approval Type : Last 설정 > Approval Group : 임의의 Group 선택(17개까지 선택시도) > Apply",
+      "[BioStar]\n1. Approval Type : Last\n> Approval Group - Max 16개",
+      "1. 1~16개 까지 선택가능하다.\n2. 이중인증 승인 그룹에 속한 사용자만이 이중인증 승인권한을 갖는다."
+    ],
+    [
+      8,
+      "1. Door > Add Door > Dual Authentication > Device : 임의의 Device 설정 > Approval Type : None 설정 > Schedule : Always 또는 임의의 Schedule 설정 > Apply",
+      "[BioStar]\n1. 기본값 : Always\n2. 임의의 스케줄 설정",
+      "1. Always 설정 시 항상 이중인증으로 동작한다.\n2. 임의의 스케줄 지정시, 스케줄에 포함된 시간에만 이중인증으로 동작한다."
+    ],
+    [
+      9,
+      "1. Door > Add Door > Dual Authentication > Device : 임의의 Device 설정 > Approval Type : Last 설정 > Approval Group : 임의의 Group 선택 > Schedule : Always 또는 임의의 Schedule 설정 > Apply",
+      "[BioStar]\n1. 기본값 : Always\n2. 임의의 스케줄 설정",
+      "1. Always 설정 시 항상 이중인증으로 동작한다.\n2. 임의의 스케줄 지정시, 스케줄에 포함된 시간에만 이중인증으로 동작한다."
+    ],
+    [
+      10,
+      "1. Device > 장치 상세 진입 > Authentication > Full Access변경  \n2. Door > Add Door > Dual Authentication > Device :  No Device 설정 확인 > Apply\n",
+      "[BioStar]\n1. Dual Authentication - Device\n> 기본 값 : None\n> Entry Device Only\n> Exit Device Only",
+      "1. 기본값은 '사용안함'이다.\n2. 이중인증이 동작하지 않는다.(인증시 일반 인증 성공이 발생한다.)"
+    ],
+    [
+      11,
+      "1. Device > 장치 상세 진입 > Authentication > Full Access변경  \n2. Door > Add Door > Dual Authentication > Device : Entry Device 설정 > Apply",
+      "[BioStar]\n1. Dual Authentication - Device\n> Entry Device Only",
+      "1. 입실용 장치에서 이중인증이 동작된다.\n2. 퇴실용 장치에서는 이중인증이 동작하지 않는다.(인증시 일반 인증 성공이 발생한다.)"
+    ],
+    [
+      12,
+      "1. Device > 장치 상세 진입 > Authentication > Full Access변경  \n2. Door > Add Door > Dual Authentication > Device : Exit Device 설정 > Apply",
+      "[BioStar]\n1. Dual Authentication - Device\n> Exit Device Only",
+      "1. 입실용 장치에서 이중인증이 동작하지 않는다.(인증시 일반 인증 성공이 발생한다.)\n2. 퇴실용 장치에서는 이중인증이 동작한다."
+    ],
+    [
+      13,
+      "1. Device > 장치 상세 진입 > Authentication > Full Access변경  \n2. Door > Add Door > Dual Authentication > Device : 임의의 Device 설정 > Approval Type : None 설정 확인 > Apply\n",
+      "[BioStar]\n1. 기본값 : None 설정\n1) 출입그룹을 지니고 있는 사용자 모두 가능.",
+      "1. None일 경우, 출입 그룹과 관련 없이 인증성공이 이루어진다.\n2. 로그는 인증 성공/인증 성공/이중인증 성공으로 남는다."
+    ],
+    [
+      14,
+      "1. Device > 장치 상세 진입 > Authentication > Full Access변경  \n2. Door > Add Door > Dual Authentication > Device : 임의의 Device 설정 > Approval Type : Last 설정 > Approval Group : 임의의 Group 선택 > Apply",
+      "[BioStar]\n1. Approval Type - Last 설정\n1) 승인권한 없는 사용자+승인권한 있는 사용자\n2) 승인권한 있는 사용자+승인권한 있는 사용자\n3) 승인권한 있는 사용자+승인권한 없는 사용자\n4) 승인권한 없는 사용자+승인권한 없는 사용자\n\n(*) Group 선택시 다른 Door 만 포함된 Access Group 선택",
+      "1. 이중인증이 성공한다.(설정1,2)\n2. 이중인증이 실패한다.(설정3,4)\n3. 각 사용자의 인증성공/실패 로그가 남는다.\n4. 이중인증 성공/실패로그가 남는다."
+    ],
+    [
+      15,
+      "1. Device > 장치 상세 진입 > Authentication > Full Access변경  \n2. Door > Add Door > Dual Authentication > Device : 임의의 Device 설정 > Approval Type : 임의로 설정 > Timeout : 해당값 설정 > Apply",
+      "[BioStar]\n1. 기본값 : 15초\n2. 입력 범위 : BioStar UI\n > 1s, 3s, 5s, 10s, 15s, 30s, 1m, 3m, 5m, 10m, 15m",
+      "1. 첫번째 인증 후 두번째 인증까지 대기하는 시간을 말한다. 설정한 값만큼의 대기시간이 동작한다.\n2. 인증성공/인증성공/이중인증 성공로그 이렇게 3개의 로그가 남는다.\n3. 이중인증 실패시 인증성공/인증실패 로그가 남는다."
+    ],
+    [
+      16,
+      "1. Device > 장치 상세 진입 > Authentication > Full Access변경  \n2. Door > Add Door > Dual Authentication > Device : 임의의 Device 설정 > Approval Type : Last 설정 > Approval Group : 임의의 Group 선택(17개까지 선택시도) > Apply",
+      "[BioStar]\n1. Approval Type : Last\n> Approval Group - Max 16\n\n(*) Group 선택시 다른 Door 만 포함된 Access Group 선택\n",
+      "1. 1~16개 까지 선택가능하다.\n2. 이중인증 승인 그룹에 속한 사용자만이 이중인증 승인권한을 갖는다."
+    ],
+    [
+      17,
+      "1. Device > 장치 상세 진입 > Authentication > Full Access변경  \n2. Door > Add Door > Dual Authentication > Device : 임의의 Device 설정 > Approval Type : None 설정 > Schedule : Always 또는 임의의 Schedule 설정 > Apply",
+      "[BioStar]\n1. 기본값 : Always\n2. 임의의 스케줄 설정",
+      "1. Always 설정 시 항상 이중인증으로 동작한다.\n2. 임의의 스케줄 지정시, 스케줄에 포함된 시간에만 이중인증으로 동작한다."
+    ],
+    [
+      18,
+      "1. Device > 장치 상세 진입 > Authentication > Full Access변경  \n2. Door > Add Door > Dual Authentication > Device : 임의의 Device 설정 > Approval Type : Last 설정 > Approval Group : 임의의 Group 선택 > Schedule : Always 또는 임의의 Schedule 설정 > Apply",
+      "[BioStar]\n1. 기본값 : Always\n2. 임의의 스케줄 설정\n\n(*) Group 선택시 다른 Door 만 포함된 Access Group 선택\n",
+      "1. Always 설정 시 항상 이중인증으로 동작한다.\n2. 임의의 스케줄 지정시, 스케줄에 포함된 시간에만 이중인증으로 동작한다."
+    ],
+    [
+      19,
+      "1. RS485 연결\n2. Master/Slave 근태> 자동으로 설정\n3. Door> 이중인증 설정\n4. 첫번째 인증 전 수동으로 근태선택 후 인증\n5. 두번째 인증 전 수동으로 근태선택 후 인증",
+      "[BioStar]\n1) Master/Slave : TA[By Schedule]\n> Dual Auth -> 수동 근태 선택 -> 첫 번째 사용자로 인증 시도 -> 수동 근태 선택 -> 두 번째 사용자로 인증 시도",
+      "1. 첫번째 인증 전 선택한 수동근태 설정이 첫번째 인증에, 두번째 인증 전 선택한 수동근태 설정이 두번째 인증에 적용되어 동작되어야 한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-41",
+    "description": "",
+    "test_step": [
+      "1. Door > Add Door > Dual Authentication > Device :  No Device 설정 확인 > Apply\n",
+      "1. Door > Add Door > Dual Authentication > Device : Entry Device 설정 > Apply",
+      "1. Door > Add Door > Dual Authentication > Device : Exit Device 설정 > Apply\n",
+      "1. Door > Add Door > Dual Authentication > Device : 임의의 Device 설정 > Approval Type : None 설정 확인 > Apply\n",
+      "1. Door > Add Door > Dual Authentication > Device : 임의의 Device 설정 > Approval Type : Last 설정 > Approval Group : 임의의 Group 선택 > Apply",
+      "1. Door > Add Door > Dual Authentication > Device : 임의의 Device 설정 > Approval Type : 임의로 설정 > Timeout : 해당값 설정 > Apply",
+      "1. Door > Add Door > Dual Authentication > Device : 임의의 Device 설정 > Approval Type : Last 설정 > Approval Group : 임의의 Group 선택(17개까지 선택시도) > Apply",
+      "1. Door > Add Door > Dual Authentication > Device : 임의의 Device 설정 > Approval Type : None 설정 > Schedule : Always 또는 임의의 Schedule 설정 > Apply",
+      "1. Door > Add Door > Dual Authentication > Device : 임의의 Device 설정 > Approval Type : Last 설정 > Approval Group : 임의의 Group 선택 > Schedule : Always 또는 임의의 Schedule 설정 > Apply",
+      "1. Device > 장치 상세 진입 > Authentication > Full Access변경  \n2. Door > Add Door > Dual Authentication > Device :  No Device 설정 확인 > Apply\n",
+      "1. Device > 장치 상세 진입 > Authentication > Full Access변경  \n2. Door > Add Door > Dual Authentication > Device : Entry Device 설정 > Apply",
+      "1. Device > 장치 상세 진입 > Authentication > Full Access변경  \n2. Door > Add Door > Dual Authentication > Device : Exit Device 설정 > Apply",
+      "1. Device > 장치 상세 진입 > Authentication > Full Access변경  \n2. Door > Add Door > Dual Authentication > Device : 임의의 Device 설정 > Approval Type : None 설정 확인 > Apply\n",
+      "1. Device > 장치 상세 진입 > Authentication > Full Access변경  \n2. Door > Add Door > Dual Authentication > Device : 임의의 Device 설정 > Approval Type : Last 설정 > Approval Group : 임의의 Group 선택 > Apply",
+      "1. Device > 장치 상세 진입 > Authentication > Full Access변경  \n2. Door > Add Door > Dual Authentication > Device : 임의의 Device 설정 > Approval Type : 임의로 설정 > Timeout : 해당값 설정 > Apply",
+      "1. Device > 장치 상세 진입 > Authentication > Full Access변경  \n2. Door > Add Door > Dual Authentication > Device : 임의의 Device 설정 > Approval Type : Last 설정 > Approval Group : 임의의 Group 선택(17개까지 선택시도) > Apply",
+      "1. Device > 장치 상세 진입 > Authentication > Full Access변경  \n2. Door > Add Door > Dual Authentication > Device : 임의의 Device 설정 > Approval Type : None 설정 > Schedule : Always 또는 임의의 Schedule 설정 > Apply",
+      "1. Device > 장치 상세 진입 > Authentication > Full Access변경  \n2. Door > Add Door > Dual Authentication > Device : 임의의 Device 설정 > Approval Type : Last 설정 > Approval Group : 임의의 Group 선택 > Schedule : Always 또는 임의의 Schedule 설정 > Apply",
+      "1. RS485 연결\n2. Master/Slave 근태> 자동으로 설정\n3. Door> 이중인증 설정\n4. 첫번째 인증 전 수동으로 근태선택 후 인증\n5. 두번째 인증 전 수동으로 근태선택 후 인증"
+    ],
+    "data": [
+      "[BioStar]\n1. 기본 값 : 사용 안함\n",
+      "[BioStar]\n1. Dual Authentication - Device\n> Entry Device Only",
+      "[BioStar]\n1. Dual Authentication - Device\n> Exit Device Only",
+      "[BioStar]\n1. Approval Type - None 설정\n > 기본값 : None\n",
+      "[BioStar]\n1. Approval Type - Last 설정\n1) 승인권한 없는 사용자+승인권한 있는 사용자\n2) 승인권한 있는 사용자+승인권한 있는 사용자\n3) 승인권한 있는 사용자+승인권한 없는 사용자\n4) 승인권한 없는 사용자+승인권한 없는 사용자",
+      "[BioStar]\n1. 기본값 : 15초\n2. 입력 범위\n > 1s, 3s, 5s, 10s, 15s, 30s, 1m, 3m, 5m, 10m, 15m",
+      "[BioStar]\n1. Approval Type : Last\n> Approval Group - Max 16개",
+      "[BioStar]\n1. 기본값 : Always\n2. 임의의 스케줄 설정",
+      "[BioStar]\n1. 기본값 : Always\n2. 임의의 스케줄 설정",
+      "[BioStar]\n1. Dual Authentication - Device\n> 기본 값 : None\n> Entry Device Only\n> Exit Device Only",
+      "[BioStar]\n1. Dual Authentication - Device\n> Entry Device Only",
+      "[BioStar]\n1. Dual Authentication - Device\n> Exit Device Only",
+      "[BioStar]\n1. 기본값 : None 설정\n1) 출입그룹을 지니고 있는 사용자 모두 가능.",
+      "[BioStar]\n1. Approval Type - Last 설정\n1) 승인권한 없는 사용자+승인권한 있는 사용자\n2) 승인권한 있는 사용자+승인권한 있는 사용자\n3) 승인권한 있는 사용자+승인권한 없는 사용자\n4) 승인권한 없는 사용자+승인권한 없는 사용자\n\n(*) Group 선택시 다른 Door 만 포함된 Access Group 선택",
+      "[BioStar]\n1. 기본값 : 15초\n2. 입력 범위 : BioStar UI\n > 1s, 3s, 5s, 10s, 15s, 30s, 1m, 3m, 5m, 10m, 15m",
+      "[BioStar]\n1. Approval Type : Last\n> Approval Group - Max 16\n\n(*) Group 선택시 다른 Door 만 포함된 Access Group 선택\n",
+      "[BioStar]\n1. 기본값 : Always\n2. 임의의 스케줄 설정",
+      "[BioStar]\n1. 기본값 : Always\n2. 임의의 스케줄 설정\n\n(*) Group 선택시 다른 Door 만 포함된 Access Group 선택\n",
+      "[BioStar]\n1) Master/Slave : TA[By Schedule]\n> Dual Auth -> 수동 근태 선택 -> 첫 번째 사용자로 인증 시도 -> 수동 근태 선택 -> 두 번째 사용자로 인증 시도"
+    ],
+    "expected_result": [
+      "1. 기본값은 '사용안함'이다.\n2. 이중인증이 동작하지 않는다.(인증시 일반 인증 성공이 발생한다.)",
+      "1. 입실용 장치에서 이중인증이 동작된다.\n2. 퇴실용 장치에서는 이중인증이 동작하지 않는다.(인증시 일반 인증 성공이 발생한다.)",
+      "1. 입실용 장치에서 이중인증이 동작하지 않는다.(인증시 일반 인증 성공이 발생한다.)\n2. 퇴실용 장치에서는 이중인증이 동작한다.",
+      "1. None일 경우, 임의로 설정한 Device의 Door가 속한 출입 그룹에 따라 인증성공이 이루어진다.\n2. 로그는 인증 성공/인증 성공/이중인증 성공으로 남는다.\n> Station : Dual Auth가 표시 되며, 두번째 인증 대기\n> Entry : LED가 깜박이며, 두번째 인증 대기",
+      "1. 이중인증이 성공한다.(설정1,2)\n2. 이중인증이 실패한다.(설정3,4)\n3. 각 사용자의 인증성공/실패 로그가 남는다.\n4. 이중인증 성공/실패로그가 남는다.",
+      "1. 첫번째 인증 후 두번째 인증까지 대기하는 시간을 말한다. 설정한 값만큼의 대기시간이 동작한다.\n2. 인증성공/인증성공/이중인증 성공로그 이렇게 3개의 로그가 남는다.\n> Station : Dual Auth가 표시 되며, 두번째 인증 대기\n> Entry : LED가 깜박이며, 두번째 인증 대기\n3. 이중인증 실패시 인증성공/인증실패 로그가 남는다.",
+      "1. 1~16개 까지 선택가능하다.\n2. 이중인증 승인 그룹에 속한 사용자만이 이중인증 승인권한을 갖는다.",
+      "1. Always 설정 시 항상 이중인증으로 동작한다.\n2. 임의의 스케줄 지정시, 스케줄에 포함된 시간에만 이중인증으로 동작한다.",
+      "1. Always 설정 시 항상 이중인증으로 동작한다.\n2. 임의의 스케줄 지정시, 스케줄에 포함된 시간에만 이중인증으로 동작한다.",
+      "1. 기본값은 '사용안함'이다.\n2. 이중인증이 동작하지 않는다.(인증시 일반 인증 성공이 발생한다.)",
+      "1. 입실용 장치에서 이중인증이 동작된다.\n2. 퇴실용 장치에서는 이중인증이 동작하지 않는다.(인증시 일반 인증 성공이 발생한다.)",
+      "1. 입실용 장치에서 이중인증이 동작하지 않는다.(인증시 일반 인증 성공이 발생한다.)\n2. 퇴실용 장치에서는 이중인증이 동작한다.",
+      "1. None일 경우, 출입 그룹과 관련 없이 인증성공이 이루어진다.\n2. 로그는 인증 성공/인증 성공/이중인증 성공으로 남는다.",
+      "1. 이중인증이 성공한다.(설정1,2)\n2. 이중인증이 실패한다.(설정3,4)\n3. 각 사용자의 인증성공/실패 로그가 남는다.\n4. 이중인증 성공/실패로그가 남는다.",
+      "1. 첫번째 인증 후 두번째 인증까지 대기하는 시간을 말한다. 설정한 값만큼의 대기시간이 동작한다.\n2. 인증성공/인증성공/이중인증 성공로그 이렇게 3개의 로그가 남는다.\n3. 이중인증 실패시 인증성공/인증실패 로그가 남는다.",
+      "1. 1~16개 까지 선택가능하다.\n2. 이중인증 승인 그룹에 속한 사용자만이 이중인증 승인권한을 갖는다.",
+      "1. Always 설정 시 항상 이중인증으로 동작한다.\n2. 임의의 스케줄 지정시, 스케줄에 포함된 시간에만 이중인증으로 동작한다.",
+      "1. Always 설정 시 항상 이중인증으로 동작한다.\n2. 임의의 스케줄 지정시, 스케줄에 포함된 시간에만 이중인증으로 동작한다.",
+      "1. 첫번째 인증 전 선택한 수동근태 설정이 첫번째 인증에, 두번째 인증 전 선택한 수동근태 설정이 두번째 인증에 적용되어 동작되어야 한다."
+    ]
+  }
+}

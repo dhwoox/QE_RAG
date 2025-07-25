@@ -1,0 +1,33 @@
+{
+  "id": "COMMONR-297",
+  "content": [
+    [
+      1,
+      "1. 바이오스타 > 동일한 사진으로 2명 이상의 사용자에 Visual Face 등록 후 장치로 전송\n2. 중복으로 등록된 사용자로 인증시도\n3. 중복으로 등록되지 않은 사용자로 인증시도\n4. 결과출력확인",
+      "Face 인증모드\n> Face Only\n> Face + Finger\n> Face + PIN\n> Face + Finger/PIN\n> Face + Finger + PIN",
+      "1. 중복사용자로 인증시 실패가 출력되어야 한다.\n2. 중복으로 등록되지 않은 사용자로 인증시 Auth Mode Error가 표시되지 않아야 한다."
+    ],
+    [
+      2,
+      "[중복얼굴 등록 후 장치로 전송]\n1. 중복으로 등록된 사용자로 인증시도\n2. 중복으로 등록된 사용자 1초 정도 카메라에 노출 후 중복으로 등록되지 않은 사용자로 인증시도\n3. 결과확인",
+      "Face 인증모드\n> Face Only\n> Face + Finger\n> Face + PIN\n> Face + Finger/PIN\n> Face + Finger + PIN\n\n인증장치\n> Master\n> Slave",
+      "1. 중복사용자로 인증시 실패가 출력되어야 한다.\n2. 중복으로 등록되지 않은 사용자에 대해 인증성공으로 동작되고 Relay가 동작되어야 한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-297",
+    "description": "",
+    "test_step": [
+      "1. 바이오스타 > 동일한 사진으로 2명 이상의 사용자에 Visual Face 등록 후 장치로 전송\n2. 중복으로 등록된 사용자로 인증시도\n3. 중복으로 등록되지 않은 사용자로 인증시도\n4. 결과출력확인",
+      "[중복얼굴 등록 후 장치로 전송]\n1. 중복으로 등록된 사용자로 인증시도\n2. 중복으로 등록된 사용자 1초 정도 카메라에 노출 후 중복으로 등록되지 않은 사용자로 인증시도\n3. 결과확인"
+    ],
+    "data": [
+      "Face 인증모드\n> Face Only\n> Face + Finger\n> Face + PIN\n> Face + Finger/PIN\n> Face + Finger + PIN",
+      "Face 인증모드\n> Face Only\n> Face + Finger\n> Face + PIN\n> Face + Finger/PIN\n> Face + Finger + PIN\n\n인증장치\n> Master\n> Slave"
+    ],
+    "expected_result": [
+      "1. 중복사용자로 인증시 실패가 출력되어야 한다.\n2. 중복으로 등록되지 않은 사용자로 인증시 Auth Mode Error가 표시되지 않아야 한다.",
+      "1. 중복사용자로 인증시 실패가 출력되어야 한다.\n2. 중복으로 등록되지 않은 사용자에 대해 인증성공으로 동작되고 Relay가 동작되어야 한다."
+    ]
+  }
+}

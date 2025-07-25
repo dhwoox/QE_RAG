@@ -1,0 +1,318 @@
+{
+  "id": "COMMONR-260",
+  "content": [
+    [
+      1,
+      "1. Door 추가\n2. Door Sensor 미설정\n3. APB 출입유무 체크옵션 출력유무 확인",
+      "",
+      "1. Door Sensor가 설정되지 않은 경우 APB 출입유무 체크옵션이 출력되지 않는다."
+    ],
+    [
+      2,
+      "1. Door 추가\n2. Door Sensor 설정\n3. APB 출입유무 체크옵션 출력유무 확인",
+      "",
+      "1. Door Sensor가 설정되면 APB 출입유무 체크옵션이 출력된다."
+    ],
+    [
+      3,
+      "1. Door 추가\n2. APB 출입유무 체크옵션: ON 설정\n3. APB 미설정\n4. 인증성공해 문열림 발생\n5. 다시 재인증시도",
+      "",
+      "1. APB 위반으로 동작하지 않고, 인증성공으로 동작한다."
+    ],
+    [
+      4,
+      "1. Door 설정\n2. 인증성공> Relay Unlock/Lock\n3. 동일사용자로 다시 인증시도",
+      ": 출입체크 Disable\nAPB\n> Soft APB\n> Hard APB",
+      "1. APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작"
+    ],
+    [
+      5,
+      "1. Door 설정\n2. 인증성공> Relay Unlock 후 문열림 발생\n3. 동일사용자로 다시 인증시도",
+      ": 출입체크 Disable\nAPB\n> Soft APB\n> Hard APB",
+      "1. APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작"
+    ],
+    [
+      6,
+      "1. Door 설정\n2. 인증성공> Relay Unlock/Lock\n3. 동일사용자로 다시 인증시도",
+      ": 출입체크 Enable\nAPB\n> Soft APB\n> Hard APB",
+      "1. APB 위반에 걸리지 않고 인증성공으로 동작한다."
+    ],
+    [
+      7,
+      "1. Door 설정\n2. 인증성공> Relay Unlock 후 문열림 발생\n3. 동일사용자로 다시 인증시도",
+      ": 출입체크 Enable\nAPB\n> Soft APB\n> Hard APB",
+      "1. APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작\n2. APB 위반 로그가 남는다.\n3. 설정된 APB Alarm이 발생된다."
+    ],
+    [
+      8,
+      "1. Door 설정\n2. Forced Open 상태에서 동일사용자로 반복 인증시도",
+      ": 출입체크 Enable\nAPB\n> Soft APB\n> Hard APB",
+      "1. Door Open 상태에서 연속 인증시 두번째 인증에서 APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작\n2. APB 위반 로그가 남는다."
+    ],
+    [
+      9,
+      "1. Door 설정\n2. Forced Open/ Closed\n3. 동일사용자로 반복 인증시도 ",
+      ": 출입체크 Enable\nAPB\n> Soft APB\n> Hard APB",
+      "1. APB 위반에 걸리지 않고 인증성공으로 동작한다."
+    ],
+    [
+      10,
+      "1. Door 설정\n2. A 사용자 인증성공> Relay Unlock \n3. B 사용자 인증성공> Door Open/Close\n4. A & B 사용자 다시 인증시도\n5. Monitoring> APB 초기화(A or B)\n6. A or B 사용자 다시 인증시도",
+      ": 출입체크 Enable\n: APB\n> Soft APB\n> Hard APB",
+      "1. A,B 사용자 모두 APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작\n2. APB 상태로그가 남는다.\n3. Monitoring에서 특정 사용자에 대해 APB 초기화할 수 있다.\n4. APB 초기화 후 재인증시 인증성공으로 동작한다."
+    ],
+    [
+      11,
+      "1. Door 설정\n2. A 사용자 인증성공> Relay Unlock/Lock\n3. Exit Button/Door Sensor 접지로 Door Unlock> Door Open/Close\n4. A 사용자 다시 인증시도",
+      ": 출입체크 Enable\n: APB\n> Soft APB\n> Hard APB",
+      "1. APB 위반에 걸리지 않고 인증성공으로 동작한다."
+    ],
+    [
+      12,
+      "1. 출입체크 Disable된 Door로 APB Zone 설정\n2. 인증성공\n3. 동일사용자로 다시 인증시도",
+      ": Local/Global APB\n> Soft APB\n> Hard APB",
+      "1. APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작\n2. APB 위반 로그가 남는다.\n3. 설정된 APB Alarm이 발생된다."
+    ],
+    [
+      13,
+      "1. 출입체크 Disable된 Door로 APB Zone 설정\n2. 인증성공> Relay Unlock> 문열림 발생\n3. 동일사용자로 다시 인증시도",
+      ": Local/Global APB\n> Soft APB\n> Hard APB",
+      "1. APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작\n2. APB 위반 로그가 남는다.\n3. 설정된 APB Alarm이 발생된다."
+    ],
+    [
+      14,
+      "1. 출입체크 Disable된 Door로 APB Zone 설정\n2. 인증성공> Relay Unlock> 문열림 발생\n3. 동일사용자로 다시 인증시도",
+      ": Local/Global APB\n> Soft APB\n> Hard APB\n: 인증\n> BypassGroup에 속한 사용자",
+      "1. APB 위반에 걸리지 않고 인증성공으로 동작한다."
+    ],
+    [
+      15,
+      "1. 출입체크 Enable된 Door로 APB Zone 설정\n2. 인증성공> Relay Unlock/Lock\n3. 동일사용자로 다시 인증시도",
+      ": Local/Global APB\n> Soft APB\n> Hard APB",
+      "1. APB 위반에 걸리지 않고 인증성공으로 동작한다."
+    ],
+    [
+      16,
+      "1. 출입체크 Enable된 Door로 APB Zone 설정\n2. 인증성공> Relay Unlock> 문열림 발생\n3. 동일사용자로 다시 인증시도",
+      ": Local/Global APB\n> Soft APB\n> Hard APB",
+      "1. APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작\n2. APB 위반 로그가 남는다.\n3. 설정된 APB Alarm이 발생된다."
+    ],
+    [
+      17,
+      "1. 출입체크 Enable된 Door로 APB Zone 설정\n2. 인증성공> Relay Unlock> 문열림 발생\n3. 동일사용자로 다시 인증시도",
+      ": Local/Global APB\n> Soft APB\n> Hard APB\n: 인증\n> BypassGroup에 속한 사용자",
+      "1. APB 위반에 걸리지 않고 인증성공으로 동작한다."
+    ],
+    [
+      18,
+      "1. 출입체크 Enable된 Door로 APB Zone 설정\n2. Forced Open 상태에서 동일사용자로 반복 인증시도",
+      ": Local/Global APB\n> Soft APB\n> Hard APB",
+      "1. APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작\n2. APB 위반 로그가 남는다.\n3. 설정된 APB Alarm이 발생된다."
+    ],
+    [
+      19,
+      "1. 출입체크 Enable된 Door로 APB Zone 설정\n2. Forced Open 상태에서 동일사용자로 반복 인증시도",
+      ": Local/Global APB\n> Soft APB\n> Hard APB\n: 인증\n> BypassGroup에 속한 사용자",
+      "1. APB 위반에 걸리지 않고 인증성공으로 동작한다."
+    ],
+    [
+      20,
+      "1. 출입체크 Enable된 Door로 APB Zone 설정\n2. Entry Device에 인증성공 후 문열림 발생\n3. Entry Device로 설정된 다른 장치에 인증시도\n4. Exit Device로 설정된 장치에 인증시도",
+      ": Local/Global APB\n> Soft APB\n> Hard APB\n: BypassGroup 미설정",
+      "1. APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작\n> APB 위반 로그가 남는다.\n2. Exit Device에 인증시 인증성공으로 동작한다."
+    ],
+    [
+      21,
+      "1. 출입체크 Enable된 Door로 APB Zone 설정\n2. Entry Device에 인증성공 후 문열림 발생\n3. Exit Device로 설정된 장치에 인증시도(Unlock/Lock으로만 동작)\n4. Entry Device에 인증재시도",
+      ": Local/Global APB\n> Soft APB\n> Hard APB\n: BypassGroup 미설정",
+      "1. APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작\n2. APB 위반 로그가 남는다.\n3. 설정된 APB Alarm이 발생된다."
+    ],
+    [
+      22,
+      "1. 출입체크 Enable된 Door로 APB Zone 설정\n2. Entry Device에 인증성공 후 문열림 발생\n3. Exit Device로 설정된 장치에 인증성공 후 문열림 발생\n4. Entry Device에 인증재시도",
+      ": Local/Global APB\n> Soft APB\n> Hard APB\n: BypassGroup 미설정",
+      "1. APB 위반에 걸리지 않고 인증성공으로 동작한다."
+    ],
+    [
+      23,
+      "1. 출입체크 Enable된 Door + 출입체크 Disable된 Door 로 APB Zone 설정\n2. Entry Device로 설정된 출입체크 미설정 장치에 인증성공\n3. Entry Device로 설정된 출입체크 설정 장치에 인증시도",
+      ": Local/Global APB\n> Soft APB\n> Hard APB\n: BypassGroup 미설정",
+      "1. APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작\n2. APB 위반 로그가 남는다.\n3. 설정된 APB Alarm이 발생된다."
+    ],
+    [
+      24,
+      "1. 출입체크 Enable된 Door + 출입체크 Disable된 Door 로 APB Zone 설정\n2. Entry Device로 설정된 출입체크 설정 장치에 인증성공\n3. Entry Device로 설정된 출입체크 미설정 장치에 인증시도",
+      ": Local/Global APB\n> Soft APB\n> Hard APB\n: BypassGroup 미설정",
+      "1. APB 위반에 걸리지 않고 인증성공으로 동작한다."
+    ],
+    [
+      25,
+      "1. 출입체크 Enable된 Door + 출입 미체크 Reader 로 APB Zone 설정\n2. Entry Device로 설정된 Reader에 인증성공\n3. Entry Device로 설정된 출입체크 설정 장치에 인증시도",
+      ": Local/Global APB\n> Soft APB\n> Hard APB\n: BypassGroup 미설정",
+      "1. APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작\n2. APB 위반 로그가 남는다.\n3. 설정된 APB Alarm이 발생된다."
+    ],
+    [
+      26,
+      "1. 출입체크 Enable된 Door + Reader 로 APB Zone 설정\n2. Entry Device로 설정된 출입체크 설정 장치에 인증성공\n3. Entry Device로 설정된 Reader에 인증시도\n> Reader : 출입 체크/미체크 상관 없음",
+      ": Local/Global APB\n> Soft APB\n> Hard APB\n: BypassGroup 미설정",
+      "1. APB 위반에 걸리지 않고 인증성공으로 동작한다."
+    ],
+    [
+      27,
+      "1. Door에 Dual Auth 설정\n2. 첫번째 사용자 인증 후 두번째 사용자 인증실패\n3. 다시 첫번째 사용자 인증시도",
+      ": 출입체크 Enable\nAPB\n> Soft APB\n> Hard APB",
+      "1. APB 위반에 걸리지 않고 두번째 인증을 받기위해 대기로 동작한다."
+    ],
+    [
+      28,
+      "1. Door에 Dual Auth 설정\n2. 첫번째 사용자 인증 후 두번째 사용자 인증성공\n3. 다시 첫번째 사용자 인증시도",
+      ": 출입체크 Enable\nAPB\n> Soft APB\n> Hard APB",
+      "1. APB 위반에 걸리지 않고 두번째 인증을 받기위해 대기로 동작한다."
+    ],
+    [
+      29,
+      "1. Door에 Dual Auth 설정\n2. 첫번째 사용자 인증 후 두번째 사용자 인증성공> 문열림 발생\n3. 다시 첫번째 사용자 인증시도",
+      ": 출입체크 Enable\nAPB\n> Soft APB\n> Hard APB",
+      "1. 첫번째/두번째 사용자 모두 APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작\n2. APB 위반 로그가 남는다.\n3. 설정된 APB Alarm이 발생된다."
+    ],
+    [
+      30,
+      "1. Door에 Dual Auth 설정\n2. 문이 열린 상태에서 첫번쨰 사용자 인증성공 후 두번째 사용자 인증실패\n3. 다시 첫번째 사용자 인증시도",
+      ": 출입체크 Enable\nAPB\n> Soft APB\n> Hard APB",
+      "1. APB 위반에 걸리지 않고 두번째 인증을 받기위해 대기로 동작한다."
+    ],
+    [
+      31,
+      "1. Door에 Dual Auth 설정\n2. A 사용자 + B 사용자 인증성공> Relay On\n3. A 사용자 + C 사용자 인증성공 후 문열림 발생\n4. A or B or C 사용자로 인증시도",
+      ": 출입체크 Enable\n\n: 이중인증\n> 입실장시/퇴실장치\n> 관리자 인증순서 - 사용안함/마지막\n\n: APB\n> Soft APB\n> Hard APB",
+      "1. A, B, C 사용자 모두 APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작\n2. APB 위반 로그가 남는다.\n3. 설정된 APB Alarm이 발생된다."
+    ],
+    [
+      32,
+      "1. Door에 Dual Auth 설정 후 APB Zone 설정\n2. Dual Auth 조건에 의해 이중인증실패\n3. 다시 Step 2 실행\n4. 동작확인",
+      ": 이중인증\n> 입실장시/퇴실장치\n> 관리자 인증순서 - 마지막\n\n: 출입체크 Disable\n\n: Local/Global APB\n> Soft APB\n> Hard APB",
+      "1. 이중인증 실패로 동작되어야 한다."
+    ],
+    [
+      33,
+      "1. Door에 Dual Auth 설정 후 APB Zone 설정\n2. Dual Auth 조건에 의해 이중인증실패\n3. 다시 Step 2 실행\n4. 동작확인",
+      ": 이중인증\n> 입실장시/퇴실장치\n> 관리자 인증순서 - 마지막\n\n: 출입체크 Enable\n\n: Local/Global APB\n> Soft APB\n> Hard APB",
+      "1. APB 위반에 걸리지 않고 이중인증실패로 동작한다."
+    ],
+    [
+      34,
+      "1. Door에 Dual Auth 설정 후 APB Zone 설정\n2. Dual Auth 조건에 의해 이중인증실패(사용자 A + B 인증)\n3. Dual Auth 조건에 의해 인증성공(사용자 A + C 인증) 후 문열림 발생\n4. A + B 인증, A + C 인증 후 동작확인",
+      ": 이중인증\n> 입실장시/퇴실장치\n> 관리자 인증순서 - 마지막\n\n: 출입체크 Enable\n\n: Local/Global APB\n> Soft APB\n> Hard APB",
+      "1. A, C 사용자가 APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작\n2. APB 위반 로그가 남는다.\n3. 설정된 APB Alarm이 발생된다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-260",
+    "description": "",
+    "test_step": [
+      "1. Door 추가\n2. Door Sensor 미설정\n3. APB 출입유무 체크옵션 출력유무 확인",
+      "1. Door 추가\n2. Door Sensor 설정\n3. APB 출입유무 체크옵션 출력유무 확인",
+      "1. Door 추가\n2. APB 출입유무 체크옵션: ON 설정\n3. APB 미설정\n4. 인증성공해 문열림 발생\n5. 다시 재인증시도",
+      "1. Door 설정\n2. 인증성공> Relay Unlock/Lock\n3. 동일사용자로 다시 인증시도",
+      "1. Door 설정\n2. 인증성공> Relay Unlock 후 문열림 발생\n3. 동일사용자로 다시 인증시도",
+      "1. Door 설정\n2. 인증성공> Relay Unlock/Lock\n3. 동일사용자로 다시 인증시도",
+      "1. Door 설정\n2. 인증성공> Relay Unlock 후 문열림 발생\n3. 동일사용자로 다시 인증시도",
+      "1. Door 설정\n2. Forced Open 상태에서 동일사용자로 반복 인증시도",
+      "1. Door 설정\n2. Forced Open/ Closed\n3. 동일사용자로 반복 인증시도 ",
+      "1. Door 설정\n2. A 사용자 인증성공> Relay Unlock \n3. B 사용자 인증성공> Door Open/Close\n4. A & B 사용자 다시 인증시도\n5. Monitoring> APB 초기화(A or B)\n6. A or B 사용자 다시 인증시도",
+      "1. Door 설정\n2. A 사용자 인증성공> Relay Unlock/Lock\n3. Exit Button/Door Sensor 접지로 Door Unlock> Door Open/Close\n4. A 사용자 다시 인증시도",
+      "1. 출입체크 Disable된 Door로 APB Zone 설정\n2. 인증성공\n3. 동일사용자로 다시 인증시도",
+      "1. 출입체크 Disable된 Door로 APB Zone 설정\n2. 인증성공> Relay Unlock> 문열림 발생\n3. 동일사용자로 다시 인증시도",
+      "1. 출입체크 Disable된 Door로 APB Zone 설정\n2. 인증성공> Relay Unlock> 문열림 발생\n3. 동일사용자로 다시 인증시도",
+      "1. 출입체크 Enable된 Door로 APB Zone 설정\n2. 인증성공> Relay Unlock/Lock\n3. 동일사용자로 다시 인증시도",
+      "1. 출입체크 Enable된 Door로 APB Zone 설정\n2. 인증성공> Relay Unlock> 문열림 발생\n3. 동일사용자로 다시 인증시도",
+      "1. 출입체크 Enable된 Door로 APB Zone 설정\n2. 인증성공> Relay Unlock> 문열림 발생\n3. 동일사용자로 다시 인증시도",
+      "1. 출입체크 Enable된 Door로 APB Zone 설정\n2. Forced Open 상태에서 동일사용자로 반복 인증시도",
+      "1. 출입체크 Enable된 Door로 APB Zone 설정\n2. Forced Open 상태에서 동일사용자로 반복 인증시도",
+      "1. 출입체크 Enable된 Door로 APB Zone 설정\n2. Entry Device에 인증성공 후 문열림 발생\n3. Entry Device로 설정된 다른 장치에 인증시도\n4. Exit Device로 설정된 장치에 인증시도",
+      "1. 출입체크 Enable된 Door로 APB Zone 설정\n2. Entry Device에 인증성공 후 문열림 발생\n3. Exit Device로 설정된 장치에 인증시도(Unlock/Lock으로만 동작)\n4. Entry Device에 인증재시도",
+      "1. 출입체크 Enable된 Door로 APB Zone 설정\n2. Entry Device에 인증성공 후 문열림 발생\n3. Exit Device로 설정된 장치에 인증성공 후 문열림 발생\n4. Entry Device에 인증재시도",
+      "1. 출입체크 Enable된 Door + 출입체크 Disable된 Door 로 APB Zone 설정\n2. Entry Device로 설정된 출입체크 미설정 장치에 인증성공\n3. Entry Device로 설정된 출입체크 설정 장치에 인증시도",
+      "1. 출입체크 Enable된 Door + 출입체크 Disable된 Door 로 APB Zone 설정\n2. Entry Device로 설정된 출입체크 설정 장치에 인증성공\n3. Entry Device로 설정된 출입체크 미설정 장치에 인증시도",
+      "1. 출입체크 Enable된 Door + 출입 미체크 Reader 로 APB Zone 설정\n2. Entry Device로 설정된 Reader에 인증성공\n3. Entry Device로 설정된 출입체크 설정 장치에 인증시도",
+      "1. 출입체크 Enable된 Door + Reader 로 APB Zone 설정\n2. Entry Device로 설정된 출입체크 설정 장치에 인증성공\n3. Entry Device로 설정된 Reader에 인증시도\n> Reader : 출입 체크/미체크 상관 없음",
+      "1. Door에 Dual Auth 설정\n2. 첫번째 사용자 인증 후 두번째 사용자 인증실패\n3. 다시 첫번째 사용자 인증시도",
+      "1. Door에 Dual Auth 설정\n2. 첫번째 사용자 인증 후 두번째 사용자 인증성공\n3. 다시 첫번째 사용자 인증시도",
+      "1. Door에 Dual Auth 설정\n2. 첫번째 사용자 인증 후 두번째 사용자 인증성공> 문열림 발생\n3. 다시 첫번째 사용자 인증시도",
+      "1. Door에 Dual Auth 설정\n2. 문이 열린 상태에서 첫번쨰 사용자 인증성공 후 두번째 사용자 인증실패\n3. 다시 첫번째 사용자 인증시도",
+      "1. Door에 Dual Auth 설정\n2. A 사용자 + B 사용자 인증성공> Relay On\n3. A 사용자 + C 사용자 인증성공 후 문열림 발생\n4. A or B or C 사용자로 인증시도",
+      "1. Door에 Dual Auth 설정 후 APB Zone 설정\n2. Dual Auth 조건에 의해 이중인증실패\n3. 다시 Step 2 실행\n4. 동작확인",
+      "1. Door에 Dual Auth 설정 후 APB Zone 설정\n2. Dual Auth 조건에 의해 이중인증실패\n3. 다시 Step 2 실행\n4. 동작확인",
+      "1. Door에 Dual Auth 설정 후 APB Zone 설정\n2. Dual Auth 조건에 의해 이중인증실패(사용자 A + B 인증)\n3. Dual Auth 조건에 의해 인증성공(사용자 A + C 인증) 후 문열림 발생\n4. A + B 인증, A + C 인증 후 동작확인"
+    ],
+    "data": [
+      ": 출입체크 Disable\nAPB\n> Soft APB\n> Hard APB",
+      ": 출입체크 Disable\nAPB\n> Soft APB\n> Hard APB",
+      ": 출입체크 Enable\nAPB\n> Soft APB\n> Hard APB",
+      ": 출입체크 Enable\nAPB\n> Soft APB\n> Hard APB",
+      ": 출입체크 Enable\nAPB\n> Soft APB\n> Hard APB",
+      ": 출입체크 Enable\nAPB\n> Soft APB\n> Hard APB",
+      ": 출입체크 Enable\n: APB\n> Soft APB\n> Hard APB",
+      ": 출입체크 Enable\n: APB\n> Soft APB\n> Hard APB",
+      ": Local/Global APB\n> Soft APB\n> Hard APB",
+      ": Local/Global APB\n> Soft APB\n> Hard APB",
+      ": Local/Global APB\n> Soft APB\n> Hard APB\n: 인증\n> BypassGroup에 속한 사용자",
+      ": Local/Global APB\n> Soft APB\n> Hard APB",
+      ": Local/Global APB\n> Soft APB\n> Hard APB",
+      ": Local/Global APB\n> Soft APB\n> Hard APB\n: 인증\n> BypassGroup에 속한 사용자",
+      ": Local/Global APB\n> Soft APB\n> Hard APB",
+      ": Local/Global APB\n> Soft APB\n> Hard APB\n: 인증\n> BypassGroup에 속한 사용자",
+      ": Local/Global APB\n> Soft APB\n> Hard APB\n: BypassGroup 미설정",
+      ": Local/Global APB\n> Soft APB\n> Hard APB\n: BypassGroup 미설정",
+      ": Local/Global APB\n> Soft APB\n> Hard APB\n: BypassGroup 미설정",
+      ": Local/Global APB\n> Soft APB\n> Hard APB\n: BypassGroup 미설정",
+      ": Local/Global APB\n> Soft APB\n> Hard APB\n: BypassGroup 미설정",
+      ": Local/Global APB\n> Soft APB\n> Hard APB\n: BypassGroup 미설정",
+      ": Local/Global APB\n> Soft APB\n> Hard APB\n: BypassGroup 미설정",
+      ": 출입체크 Enable\nAPB\n> Soft APB\n> Hard APB",
+      ": 출입체크 Enable\nAPB\n> Soft APB\n> Hard APB",
+      ": 출입체크 Enable\nAPB\n> Soft APB\n> Hard APB",
+      ": 출입체크 Enable\nAPB\n> Soft APB\n> Hard APB",
+      ": 출입체크 Enable\n\n: 이중인증\n> 입실장시/퇴실장치\n> 관리자 인증순서 - 사용안함/마지막\n\n: APB\n> Soft APB\n> Hard APB",
+      ": 이중인증\n> 입실장시/퇴실장치\n> 관리자 인증순서 - 마지막\n\n: 출입체크 Disable\n\n: Local/Global APB\n> Soft APB\n> Hard APB",
+      ": 이중인증\n> 입실장시/퇴실장치\n> 관리자 인증순서 - 마지막\n\n: 출입체크 Enable\n\n: Local/Global APB\n> Soft APB\n> Hard APB",
+      ": 이중인증\n> 입실장시/퇴실장치\n> 관리자 인증순서 - 마지막\n\n: 출입체크 Enable\n\n: Local/Global APB\n> Soft APB\n> Hard APB"
+    ],
+    "expected_result": [
+      "1. Door Sensor가 설정되지 않은 경우 APB 출입유무 체크옵션이 출력되지 않는다.",
+      "1. Door Sensor가 설정되면 APB 출입유무 체크옵션이 출력된다.",
+      "1. APB 위반으로 동작하지 않고, 인증성공으로 동작한다.",
+      "1. APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작",
+      "1. APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작",
+      "1. APB 위반에 걸리지 않고 인증성공으로 동작한다.",
+      "1. APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작\n2. APB 위반 로그가 남는다.\n3. 설정된 APB Alarm이 발생된다.",
+      "1. Door Open 상태에서 연속 인증시 두번째 인증에서 APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작\n2. APB 위반 로그가 남는다.",
+      "1. APB 위반에 걸리지 않고 인증성공으로 동작한다.",
+      "1. A,B 사용자 모두 APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작\n2. APB 상태로그가 남는다.\n3. Monitoring에서 특정 사용자에 대해 APB 초기화할 수 있다.\n4. APB 초기화 후 재인증시 인증성공으로 동작한다.",
+      "1. APB 위반에 걸리지 않고 인증성공으로 동작한다.",
+      "1. APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작\n2. APB 위반 로그가 남는다.\n3. 설정된 APB Alarm이 발생된다.",
+      "1. APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작\n2. APB 위반 로그가 남는다.\n3. 설정된 APB Alarm이 발생된다.",
+      "1. APB 위반에 걸리지 않고 인증성공으로 동작한다.",
+      "1. APB 위반에 걸리지 않고 인증성공으로 동작한다.",
+      "1. APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작\n2. APB 위반 로그가 남는다.\n3. 설정된 APB Alarm이 발생된다.",
+      "1. APB 위반에 걸리지 않고 인증성공으로 동작한다.",
+      "1. APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작\n2. APB 위반 로그가 남는다.\n3. 설정된 APB Alarm이 발생된다.",
+      "1. APB 위반에 걸리지 않고 인증성공으로 동작한다.",
+      "1. APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작\n> APB 위반 로그가 남는다.\n2. Exit Device에 인증시 인증성공으로 동작한다.",
+      "1. APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작\n2. APB 위반 로그가 남는다.\n3. 설정된 APB Alarm이 발생된다.",
+      "1. APB 위반에 걸리지 않고 인증성공으로 동작한다.",
+      "1. APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작\n2. APB 위반 로그가 남는다.\n3. 설정된 APB Alarm이 발생된다.",
+      "1. APB 위반에 걸리지 않고 인증성공으로 동작한다.",
+      "1. APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작\n2. APB 위반 로그가 남는다.\n3. 설정된 APB Alarm이 발생된다.",
+      "1. APB 위반에 걸리지 않고 인증성공으로 동작한다.",
+      "1. APB 위반에 걸리지 않고 두번째 인증을 받기위해 대기로 동작한다.",
+      "1. APB 위반에 걸리지 않고 두번째 인증을 받기위해 대기로 동작한다.",
+      "1. 첫번째/두번째 사용자 모두 APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작\n2. APB 위반 로그가 남는다.\n3. 설정된 APB Alarm이 발생된다.",
+      "1. APB 위반에 걸리지 않고 두번째 인증을 받기위해 대기로 동작한다.",
+      "1. A, B, C 사용자 모두 APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작\n2. APB 위반 로그가 남는다.\n3. 설정된 APB Alarm이 발생된다.",
+      "1. 이중인증 실패로 동작되어야 한다.",
+      "1. APB 위반에 걸리지 않고 이중인증실패로 동작한다.",
+      "1. A, C 사용자가 APB 위반으로 동작한다.\n> Soft APB - 인증성공로 동작\n> Hard APB - 인증실패로 동작\n2. APB 위반 로그가 남는다.\n3. 설정된 APB Alarm이 발생된다."
+    ]
+  }
+}

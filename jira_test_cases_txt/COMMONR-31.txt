@@ -1,5 +1,18 @@
 ■ 이슈 키: COMMONR-31
 ■ 제목: 인증 - 카드
+■ 설명: 카드 인증모드에서의 동작에 이상이 없는지 확인(설정 및 인증)
+ - CSN Format 카드
+ : Mifare Classic/Mifare Plus/Mifare Desfire/Mifare Desfire EV1, EM, Felica, ISO-15693
+ - Wiegand Format 카드
+ : HID, IClass SR/SE
+
+동작 사양 : Slave에서 설정할 수 있는 항목은 설정대로 동작함 
+ Auth. TimeOut - 각각 설정한 대로 동작 
+ Matching TimeOut - 각각 설정한 대로 동작 
+ Msg . TimeOut - 각각 설정한 대로 동작 
+ Scan. TimeOut - 각각 설정한 대로 동작
+ - W3 / CS40
+ : QR지원 제품 Slave일 때, QR 비활성화로 지원하지 않음 → Master가 QR 지원 장치일 시 Slave도 지원 
 ============================================================
 
 ■ 테스트 스텝

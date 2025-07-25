@@ -1,0 +1,75 @@
+{
+  "id": "COMMONR-256",
+  "content": [
+    [
+      1,
+      "1. Master - D2 Revision 모델 RS485 연결\n2. Slave 검색 및 추가\n",
+      "",
+      "1. 검색이되고 추가된다."
+    ],
+    [
+      2,
+      "1. Master - XPD2 RS485 추가된 상태\n2. D2 상세정보페이지 진입\n3. 장치정보 및 Config 확인\n4. Config 변경 후 저장\n5. 적용유무 확인\n",
+      "",
+      "1. 장치 정보 및 Config값이 정상표시된다.\n2. 변경한 Config에 대해서는 정상적으로 적용된다."
+    ],
+    [
+      3,
+      "1. Master - D2 & D2 Revision 모델 RS485 연결\n2. Slave 검색 및 추가\n3. 장치정보 확인",
+      "",
+      "1. 연결된 모든 장치가 검색되고 추가된다.\n2. 추가된 장치의 정보가 정상적으로 표시된다.\n"
+    ],
+    [
+      4,
+      "1. Master - D2 Revision 모델 RS485 연결\n2. Slave 검색 및 추가\n3. Micom FW Upgrade 시도",
+      "Micom FW Upgrade\n> D2 FW",
+      "1. D2 FW로 Upgrade가 되지 않는다."
+    ],
+    [
+      5,
+      "1. Master - D2 Revision 모델 RS485 연결\n2. Slave 검색 및 추가\n3. Micom FW Upgrade 시도",
+      "Micom FW Upgrade\n> D2 Rev FW",
+      "1. FW Upgrade가 정상적으로 이루어져야 한다."
+    ],
+    [
+      6,
+      "1. Master - D2 Revision 모델 RS485 연결\n2. Slave 검색 및 추가\n3. BLE FW Upgrade 시도",
+      "BLE FW Upgrade\n> D2 BLE FW",
+      "1. D2 BLE FW로 Upgrade가 되지 않는다."
+    ],
+    [
+      7,
+      "1. Master - D2 Revision 모델 RS485 연결\n2. Slave 검색 및 추가\n3. BLE FW Upgrade 시도",
+      "BLE FW Upgrade\n> D2 Rev BLE FW",
+      "1. FW Upgrade가 정상적으로 이루어져야 한다.\n> BLE Upgrade 중 카드입력이 막힌다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-256",
+    "description": "",
+    "test_step": [
+      "1. Master - D2 Revision 모델 RS485 연결\n2. Slave 검색 및 추가\n",
+      "1. Master - XPD2 RS485 추가된 상태\n2. D2 상세정보페이지 진입\n3. 장치정보 및 Config 확인\n4. Config 변경 후 저장\n5. 적용유무 확인\n",
+      "1. Master - D2 & D2 Revision 모델 RS485 연결\n2. Slave 검색 및 추가\n3. 장치정보 확인",
+      "1. Master - D2 Revision 모델 RS485 연결\n2. Slave 검색 및 추가\n3. Micom FW Upgrade 시도",
+      "1. Master - D2 Revision 모델 RS485 연결\n2. Slave 검색 및 추가\n3. Micom FW Upgrade 시도",
+      "1. Master - D2 Revision 모델 RS485 연결\n2. Slave 검색 및 추가\n3. BLE FW Upgrade 시도",
+      "1. Master - D2 Revision 모델 RS485 연결\n2. Slave 검색 및 추가\n3. BLE FW Upgrade 시도"
+    ],
+    "data": [
+      "Micom FW Upgrade\n> D2 FW",
+      "Micom FW Upgrade\n> D2 Rev FW",
+      "BLE FW Upgrade\n> D2 BLE FW",
+      "BLE FW Upgrade\n> D2 Rev BLE FW"
+    ],
+    "expected_result": [
+      "1. 검색이되고 추가된다.",
+      "1. 장치 정보 및 Config값이 정상표시된다.\n2. 변경한 Config에 대해서는 정상적으로 적용된다.",
+      "1. 연결된 모든 장치가 검색되고 추가된다.\n2. 추가된 장치의 정보가 정상적으로 표시된다.\n",
+      "1. D2 FW로 Upgrade가 되지 않는다.",
+      "1. FW Upgrade가 정상적으로 이루어져야 한다.",
+      "1. D2 BLE FW로 Upgrade가 되지 않는다.",
+      "1. FW Upgrade가 정상적으로 이루어져야 한다.\n> BLE Upgrade 중 카드입력이 막힌다."
+    ]
+  }
+}

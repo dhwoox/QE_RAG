@@ -1,0 +1,33 @@
+{
+  "id": "COMMONR-24",
+  "content": [
+    [
+      1,
+      "1. DEVICE > Device List > Device 선택 > Manage Users in Device[기능 버튼내에서 선택]\n2. 로드된 사용자 선택 > 삭제",
+      "[BioStar]\n1. 1명 선택\n2. 2명 이상 선택\n3. 전체 선택",
+      "1. 선택한 사용자가 삭제되어야 한다.\n> 장치에서 사용자 삭제 확인\n>  User : Delete Form Device와 동일함"
+    ],
+    [
+      2,
+      "1. USER > User List > User 선택 > Delete User",
+      "[BioStar]\n= Automatic User Synchronization : All Devices[사용]",
+      "1. Biostar에 연결된 모든 장치의 사용자가 삭제되어야 한다.\n2. 삭제간 장치 Reboot이 발생되지 않아야 한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-24",
+    "description": "",
+    "test_step": [
+      "1. DEVICE > Device List > Device 선택 > Manage Users in Device[기능 버튼내에서 선택]\n2. 로드된 사용자 선택 > 삭제",
+      "1. USER > User List > User 선택 > Delete User"
+    ],
+    "data": [
+      "[BioStar]\n1. 1명 선택\n2. 2명 이상 선택\n3. 전체 선택",
+      "[BioStar]\n= Automatic User Synchronization : All Devices[사용]"
+    ],
+    "expected_result": [
+      "1. 선택한 사용자가 삭제되어야 한다.\n> 장치에서 사용자 삭제 확인\n>  User : Delete Form Device와 동일함",
+      "1. Biostar에 연결된 모든 장치의 사용자가 삭제되어야 한다.\n2. 삭제간 장치 Reboot이 발생되지 않아야 한다."
+    ]
+  }
+}

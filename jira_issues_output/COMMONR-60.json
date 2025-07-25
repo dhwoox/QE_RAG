@@ -1,0 +1,69 @@
+{
+  "id": "COMMONR-60",
+  "content": [
+    [
+      1,
+      "1. Device> CSN Card Format\n2. Format Type : Normal 설정\n3. Byte Order : MSB 설정\n4. User> Add User> Card\n5. Device 선택 후 카드Read",
+      "CSN Format 카드\n> Mifare/Mifare Desfire\n> EM\n> Felica\n> ISO-15693",
+      "> 카드가 가지고 있는 ID값이 그대로 읽힌다.\n-: Max Card ID : 256bit 지원\n> Master-Slave에서 동일하게 동작된다."
+    ],
+    [
+      2,
+      "1. Device> CSN Card Format\n2. Format Type : Wiegand 설정\n3. Byte Order : MSB 설정\n4. Wiegand Format 설정\n5. User> Add User> Card\n6. Device 선택 후 카드Read",
+      "CSN Format 카드\n> Mifare/Mifare Desfire\n> EM\n> Felica\n> ISO-15693\n",
+      "> Wiegand Format에 맞게 카드ID가 읽힌다.\n예제) 26bit 위겐드포맷에 32bit 카드를 읽었을 경우 32bit 중 26bit만 읽힌다.\n> Master-Slave에서 동일하게 동작된다."
+    ],
+    [
+      3,
+      "1. Device> CSN Card Format\n2. Format Type : Normal 설정\n3. Byte Order : LSB 설정\n4. User> Add User> Card\n5. Device 선택 후 카드Read",
+      "CSN Format 카드\n> Mifare/Mifare Desfire\n> EM\n> Felica\n> ISO-15693",
+      "> 카드ID값이 LSB형태로 읽힌다.\n  단, EM카드의 경우 FC(1Byte)-ID(4Byte)로 구성되는데 FC 부분은 Byte Order에 영향을 받지 않고 ID 부분에서 LSB 형태로 읽혀야 한다.\n> Master-Slave에서 동일하게 동작된다."
+    ],
+    [
+      4,
+      "1. Device> CSN Card Format\n2. Format Type : Wiegand 설정\n3. Byte Order : LSB 설정\n4. Wiegand Format 설정\n5. User> Add User> Card\n6. Device 선택 후 카드Read",
+      "CSN Format 카드\n> Mifare/Mifare Desfire\n> EM\n> Felica\n> ISO-15693",
+      "> Wiegand Format에 맞게 카드ID가 LSB 형태로 읽힌다. 단, EM카드의 경우 FC(1Byte)-ID(4Byte)로 구성되는데 FC 부분은 Byte Order에 영향을 받지 않고 ID 부분에서 LSB 형태로 읽혀야 한다.\n> Master-Slave에서 동일하게 동작되어야 한다.\n예제) 26bit 위겐드포맷에 32bit 카드를 읽었을 경우 32bit 중 26bit만 읽혀야 한다.\n> Master-Slave에서 동일하게 동작되어야 한다."
+    ],
+    [
+      5,
+      "1. Device> Wiegand Card Format\n2. Wiegand Format 설정\n3. User> Add User> Card\n4. Device 선택 후 카드Read",
+      "Wiegand Format 카드\n> HID Prox\n> iCLASS\n\nWiegand Format\n> 최대 15개 지원(Default 포함)",
+      "> 카드가 지원하는 Format과 설정한 Wiegand Format이 동일한 경우 카드가 가지고 있는 ID값이 그대로 읽힌다.\n => Wiegand Format을 지원하는 HID, ICLASS 카드의 경우 Byte Order에 영향을 받지 않아야 한다.\n> Master-Slave에서 동일하게 동작된다."
+    ],
+    [
+      6,
+      "<Wiegand Card Format: Max 설정>\n1. Device> Wiegand Card Format\n2. Wiegand Format 설정\n3. Wiegand Card로 인증시도",
+      "Wiegand Format\n> 모두체크\n> 일부만 체크",
+      "1. 설정한 포맷과 매칭되어 Card ID 출력된다.\n2. 입력한 Card ID와 일치하는 포맷이 없는 경우 인증되지 않는다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-60",
+    "description": "",
+    "test_step": [
+      "1. Device> CSN Card Format\n2. Format Type : Normal 설정\n3. Byte Order : MSB 설정\n4. User> Add User> Card\n5. Device 선택 후 카드Read",
+      "1. Device> CSN Card Format\n2. Format Type : Wiegand 설정\n3. Byte Order : MSB 설정\n4. Wiegand Format 설정\n5. User> Add User> Card\n6. Device 선택 후 카드Read",
+      "1. Device> CSN Card Format\n2. Format Type : Normal 설정\n3. Byte Order : LSB 설정\n4. User> Add User> Card\n5. Device 선택 후 카드Read",
+      "1. Device> CSN Card Format\n2. Format Type : Wiegand 설정\n3. Byte Order : LSB 설정\n4. Wiegand Format 설정\n5. User> Add User> Card\n6. Device 선택 후 카드Read",
+      "1. Device> Wiegand Card Format\n2. Wiegand Format 설정\n3. User> Add User> Card\n4. Device 선택 후 카드Read",
+      "<Wiegand Card Format: Max 설정>\n1. Device> Wiegand Card Format\n2. Wiegand Format 설정\n3. Wiegand Card로 인증시도"
+    ],
+    "data": [
+      "CSN Format 카드\n> Mifare/Mifare Desfire\n> EM\n> Felica\n> ISO-15693",
+      "CSN Format 카드\n> Mifare/Mifare Desfire\n> EM\n> Felica\n> ISO-15693\n",
+      "CSN Format 카드\n> Mifare/Mifare Desfire\n> EM\n> Felica\n> ISO-15693",
+      "CSN Format 카드\n> Mifare/Mifare Desfire\n> EM\n> Felica\n> ISO-15693",
+      "Wiegand Format 카드\n> HID Prox\n> iCLASS\n\nWiegand Format\n> 최대 15개 지원(Default 포함)",
+      "Wiegand Format\n> 모두체크\n> 일부만 체크"
+    ],
+    "expected_result": [
+      "> 카드가 가지고 있는 ID값이 그대로 읽힌다.\n-: Max Card ID : 256bit 지원\n> Master-Slave에서 동일하게 동작된다.",
+      "> Wiegand Format에 맞게 카드ID가 읽힌다.\n예제) 26bit 위겐드포맷에 32bit 카드를 읽었을 경우 32bit 중 26bit만 읽힌다.\n> Master-Slave에서 동일하게 동작된다.",
+      "> 카드ID값이 LSB형태로 읽힌다.\n  단, EM카드의 경우 FC(1Byte)-ID(4Byte)로 구성되는데 FC 부분은 Byte Order에 영향을 받지 않고 ID 부분에서 LSB 형태로 읽혀야 한다.\n> Master-Slave에서 동일하게 동작된다.",
+      "> Wiegand Format에 맞게 카드ID가 LSB 형태로 읽힌다. 단, EM카드의 경우 FC(1Byte)-ID(4Byte)로 구성되는데 FC 부분은 Byte Order에 영향을 받지 않고 ID 부분에서 LSB 형태로 읽혀야 한다.\n> Master-Slave에서 동일하게 동작되어야 한다.\n예제) 26bit 위겐드포맷에 32bit 카드를 읽었을 경우 32bit 중 26bit만 읽혀야 한다.\n> Master-Slave에서 동일하게 동작되어야 한다.",
+      "> 카드가 지원하는 Format과 설정한 Wiegand Format이 동일한 경우 카드가 가지고 있는 ID값이 그대로 읽힌다.\n => Wiegand Format을 지원하는 HID, ICLASS 카드의 경우 Byte Order에 영향을 받지 않아야 한다.\n> Master-Slave에서 동일하게 동작된다.",
+      "1. 설정한 포맷과 매칭되어 Card ID 출력된다.\n2. 입력한 Card ID와 일치하는 포맷이 없는 경우 인증되지 않는다."
+    ]
+  }
+}

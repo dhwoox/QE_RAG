@@ -1,5 +1,68 @@
 ■ 이슈 키: COMMONR-296
 ■ 제목: [BDP-685] CS-40에서 3rd party OSDP 리더 지원
+■ 설명: https://jira.suprema.co.kr/browse/BDP-685
+
+CS-40 을 ACU 로 하여, 타사 OSDP device 를 PD 로 연결하여 사용하기 지원
+
+1.1 지원 OSDP 버전 : OSDP 2.2
+ 1.2 대상 OSDP Device
+ > HID
+ => HID® Signo™ Keypad Reader 20 & 20K (OSDP certified)
+ > STid
+ => ARCS-A/BT & B/BT (OSDP certified)
+
+1.3 OSDP Device 연결방법
+ > 제조사가 제공하는 툴을 이용해 Device ID 미리 세팅한 후에 등록하는 걸 전제로 함.
+ > OSDP ID 설정(변경)을 제공하지 않는다.
+ > OSDP ID 의 중복 체크
+ > OSDP Device 를 실제 연결하기 전에 OSDP 장치를 추가 및 설정할 수 있다. (설정한 OSDP ID와 동일한 ID를 가진 OSDP Device 가 해당 포트에 결선되면 연결이 이루어짐)
+
+1.4 3rd party OSDP device 지원 대수
+ > 한 채널 당 2대, 총 8대까지 연결할 수 있다.
+
+1.5 OSDP Reader
+ > 연결한 OSDP device 가 인증을 위한 카드 리더일 때, 이 타입을 선택한다.
+ > Authentication, Unlock 설정이 가능하다.
+ > CS-40 의 장치 Trigger & Action 설정에서 Trigger 로 활용할 수 있다.
+ > OSDP Reader 정상 연결 상태는 Normal(Active), Normal(Inactive)로 출력
+ > OSDP Reader 중 연결이 해제된 상태는 Disconnected 상태 유지 됨
+=> Normal(Active) : OSDP Device 가 CS-40에 정상적으로 연결되어 있으며, CS-40이 OSDP Device 의 메시지에 대한 동작을 수행한다.
+=>Normal(Inactive) : OSDP Device 가 CS-40에 정상적으로 연결되어 있으나, CS-40이 OSDP Device 의 메시지에 대한 동작을 수행하지 않는다.
+=> Disconnected : OSDP Device 가 CS-40에 연결이 해제됨.
+=> 연결이 해제되었다가 다시 연결되는 경우 마지막 상태로 변경되어야 한다.
+==> Normal(Inactive) 상태에서 연결이 해제되어 Disconnected 로 변경되었다가 다시 연결이 정상적으로 돌아오면 여전히 Normal(Inactive) 상태가 유지되어야 한다.
+
+1.6 LED/Buzzer 설정 
+ - Waiting Input
+ - Auth Succeess
+ - Auth Fail
+
+ — 이벤트 별 LED 의 기본값
+||LED Event||Mode||Cycle||Color 1 ||Color 1 Duration||Color 2||Color 1 Duration||
+|Waiting Input|Blinking|Infinite|Green|300|OFF(Black)|300|
+|Auth Success|Constant|-|Green|1000|-|-|
+|Auth Fail|Constant|-|Red|1000|-|-|
+
+— 이벤트 별 Buzzer 의 기본값 
+||Buzzer Event||Mode||Cycle||On Duration||OFF Duration||
+|Waiting Input|OFF|-|-|-|
+|Auth Success|Constant|-|200ms|-|
+|Auth Fail|Beeping|2|100ms|100ms|
+
+1.7 OSDP device 지원 범위
+> 출입문
+> 구역
+> 엘리베이터
+※ 미지원: 글로벌 트리거앤액션
+
+1.8 지원 가능한 구역 종류
+> APB: Local/Global
+> Fire Alarm: Local/Global
+> Scheduled Lock
+> Scheduled Unlock
+> Intrusion Alarm
+> Interlock
+> Muster
 ============================================================
 
 ■ 테스트 스텝

@@ -1,0 +1,96 @@
+{
+  "id": "COMMONR-255",
+  "content": [
+    [
+      1,
+      "1. 본문의 테스트 환경 구성\n2. 통신에 문제없는지 유무 확인",
+      "Master: Old 버전\nSlave(단말기 & IO Device): New 버전",
+      "1. 호환성에 문제가 없어야 한다."
+    ],
+    [
+      2,
+      "1. 본문의 테스트 환경 구성\n2. 통신에 문제없는지 유무 확인",
+      "Master: New 버전\nSlave(단말기 & IO Device): Old 버전",
+      "1. 호환성에 문제가 없어야 한다."
+    ],
+    [
+      3,
+      "1. 본문의 테스트 환경 구성\n2. 통신에 문제없는지 유무 확인",
+      "Master: New 버전\nSlave(단말기 & IO Device): New 버전",
+      "1. 호환성에 문제가 없어야 한다."
+    ],
+    [
+      4,
+      "1. 본문의 테스트 환경 구성\n2. 출입문 or TriggerAction 설정\n3. Input에 대한 Output 동작여부 확인",
+      "Master: Old 버전\nSlave(단말기 & IO Device): New 버전",
+      "1. 호환성에 문제가 없어야 한다.\n> Input & Output 모두 설정한대로 동작된다."
+    ],
+    [
+      5,
+      "1. 본문의 테스트 환경 구성\n2. 출입문 or TriggerAction 설정\n3. Input에 대한 Output 동작여부 확",
+      "Master: New 버전\nSlave(단말기 & IODevice): Old 버전",
+      "1. 호환성에 문제가 없어야 한다.\n> Input & Output 모두 설정한대로 동작된다."
+    ],
+    [
+      6,
+      "1. 본문의 테스트 환경 구성\n2. 출입문 or TriggerAction 설정\n3. Master/Slave 모두 Input에 대한 Output 동작여부 확인",
+      "Master: New 버전\nSlave(단말기 & IODevice): New 버전",
+      "1. 호환성에 문제가 없어야 한다.\n> Input & Output 모두 설정한대로 동작된다."
+    ],
+    [
+      7,
+      "1. 본문의 테스트 환경 구성\n2. Slave에서 지원하는 모든 인증모드에 대한 동작여부 확인",
+      "Master: Old 버전\nSlave: New 버전",
+      "1. 호환성에 문제가 없어야 한다.\n> 올바른 인증결과를 출력한다."
+    ],
+    [
+      8,
+      "1. 본문의 테스트 환경 구성\n2. Slave에서 지원하는 모든 인증모드에 대한 동작여부 확인",
+      "Master: New 버전\nSlave: Old 버전",
+      "1. 호환성에 문제가 없어야 한다.\n> 올바른 인증결과를 출력한다."
+    ],
+    [
+      9,
+      "1. 본문의 테스트 환경 구성\n2. Slave에서 지원하는 모든 인증모드에 대한 동작여부 확인",
+      "Master: New 버전\nSlave: New 버전",
+      "1. 호환성에 문제가 없어야 한다.\n> 올바른 인증결과를 출력한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-255",
+    "description": "",
+    "test_step": [
+      "1. 본문의 테스트 환경 구성\n2. 통신에 문제없는지 유무 확인",
+      "1. 본문의 테스트 환경 구성\n2. 통신에 문제없는지 유무 확인",
+      "1. 본문의 테스트 환경 구성\n2. 통신에 문제없는지 유무 확인",
+      "1. 본문의 테스트 환경 구성\n2. 출입문 or TriggerAction 설정\n3. Input에 대한 Output 동작여부 확인",
+      "1. 본문의 테스트 환경 구성\n2. 출입문 or TriggerAction 설정\n3. Input에 대한 Output 동작여부 확",
+      "1. 본문의 테스트 환경 구성\n2. 출입문 or TriggerAction 설정\n3. Master/Slave 모두 Input에 대한 Output 동작여부 확인",
+      "1. 본문의 테스트 환경 구성\n2. Slave에서 지원하는 모든 인증모드에 대한 동작여부 확인",
+      "1. 본문의 테스트 환경 구성\n2. Slave에서 지원하는 모든 인증모드에 대한 동작여부 확인",
+      "1. 본문의 테스트 환경 구성\n2. Slave에서 지원하는 모든 인증모드에 대한 동작여부 확인"
+    ],
+    "data": [
+      "Master: Old 버전\nSlave(단말기 & IO Device): New 버전",
+      "Master: New 버전\nSlave(단말기 & IO Device): Old 버전",
+      "Master: New 버전\nSlave(단말기 & IO Device): New 버전",
+      "Master: Old 버전\nSlave(단말기 & IO Device): New 버전",
+      "Master: New 버전\nSlave(단말기 & IODevice): Old 버전",
+      "Master: New 버전\nSlave(단말기 & IODevice): New 버전",
+      "Master: Old 버전\nSlave: New 버전",
+      "Master: New 버전\nSlave: Old 버전",
+      "Master: New 버전\nSlave: New 버전"
+    ],
+    "expected_result": [
+      "1. 호환성에 문제가 없어야 한다.",
+      "1. 호환성에 문제가 없어야 한다.",
+      "1. 호환성에 문제가 없어야 한다.",
+      "1. 호환성에 문제가 없어야 한다.\n> Input & Output 모두 설정한대로 동작된다.",
+      "1. 호환성에 문제가 없어야 한다.\n> Input & Output 모두 설정한대로 동작된다.",
+      "1. 호환성에 문제가 없어야 한다.\n> Input & Output 모두 설정한대로 동작된다.",
+      "1. 호환성에 문제가 없어야 한다.\n> 올바른 인증결과를 출력한다.",
+      "1. 호환성에 문제가 없어야 한다.\n> 올바른 인증결과를 출력한다.",
+      "1. 호환성에 문제가 없어야 한다.\n> 올바른 인증결과를 출력한다."
+    ]
+  }
+}

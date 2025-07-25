@@ -1,0 +1,501 @@
+{
+  "id": "COMMONR-327",
+  "content": [
+    [
+      1,
+      "[RS485모드: Default]\n1. 장치 메뉴> Network> Authentication Result 항목 유무 확인",
+      "대상\n> 액정이 탑재된 Station 장치들\n(TC는 F2 기준으로 작성)",
+      "1. BDP-805를 지원하는 버전의 장치들에 서는 해당 항목이 표시된다."
+    ],
+    [
+      2,
+      "[RS485모드: Master]\n1. 장치 메뉴> Network> Authentication Result 항목 유무 확인",
+      "대상\n> 액정이 탑재된 Station 장치들\n(TC는 F2 기준으로 작성)",
+      "1. 해당 항목이 표시되지 않는다."
+    ],
+    [
+      3,
+      "[RS485모드: Slave]\n1. 장치 메뉴> Network> Authentication Result 항목 유무 확인",
+      "대상\n> 액정이 탑재된 Station 장치들\n(TC는 F2 기준으로 작성)",
+      "1. BDP-805를 지원하는 버전의 장치들에 서는 해당 항목이 표시된다."
+    ],
+    [
+      4,
+      "[연결모드: Default]\n\n※ CS40 & OSDP로 연결된 장치에는 동일한 사용자 및 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. CS40에 저장된 사용자의 카드를 장치에 인증시도",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n"
+    ],
+    [
+      5,
+      "[연결모드: Default]\n\n※ CS40 & OSDP로 연결된 장치에는 동일한 사용자 및 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. CS40에 저장되지 않은 카드를 장치에 인증시도",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n"
+    ],
+    [
+      6,
+      "[연결모드: Default]\n\n※ CS40 & OSDP로 연결된 장치에는 동일한 사용자 및 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Device Matching Result 선택 후 OK\n2. CS40에 저장된 사용자의 카드를 장치에 인증시도",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name이 출력됨\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n"
+    ],
+    [
+      7,
+      "[연결모드: Default]\n\n※ CS40 & OSDP로 연결된 장치에는 동일한 사용자 및 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Device Matching Result 선택 후 OK\n2. CS40에 저장되지 않은 카드를 장치에 인증시도",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n"
+    ],
+    [
+      8,
+      "[연결모드: Default]\n※ CS40 & OSDP로 연결된 장치에는 동일한 사용자 및 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result:  Display Result from Controller 선택 후 OK\n2. CS40에 저장된 사용자의 카드를 장치에 인증시도\n",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Red)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n"
+    ],
+    [
+      9,
+      "[연결모드: Default]\n※ CS40 & OSDP로 연결된 장치에는 동일한 사용자 및 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result:  Display Result from Controller 선택 후 OK\n2. CS40에 저장되지 않은 사용자의 카드를 장치에 인증시도\n",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Red)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n"
+    ],
+    [
+      10,
+      "[연결모드: Default]\n※ CS40 & OSDP로 연결된 장치에는 동일한 사용자 및 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. CS40에 저장된 사용자의 카드를 장치에 인증시도",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green X)\n> Auth Fail(=Red X)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "1. 장치에서는 카드입력음만 출력된다.\n2. \"Access Granted\"UI 및 인증성공음을 출력하지 않는다.\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n"
+    ],
+    [
+      11,
+      "[연결모드: Default]\n ※ OSDP로 연결된 장치에 등록된 사용자만 모든 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n 2. CS40에 저장되지 않은 사용자의 카드를 장치에 인증시도",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green X)\n> Auth Fail(=Red X)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "1. 장치에서는 카드입력음만 출력된다.\n2. \"Access Denied\"UI 와 인증실패음을 출력하지 않는다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n"
+    ],
+    [
+      12,
+      "[연결모드: Default]\n※ CS40 & OSDP로 연결된 장치에는 동일한 사용자 및 크리덴셜 등록된 상태\n\n1. OSDP로 연결된 장치에 등록된 얼굴인증\n",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n"
+    ],
+    [
+      13,
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에 등록된 사용자만 모든 크리덴셜 등록된 상태\n\n1. OSDP로 연결된 장치에 등록된 얼굴인증\n",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n"
+    ],
+    [
+      14,
+      "[연결모드: Default]\n※ CS40 & OSDP로 연결된 장치에는 동일한 사용자 및 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 지문인증\n",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n"
+    ],
+    [
+      15,
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에 등록된 사용자만 모든 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 지문인증\n",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n"
+    ],
+    [
+      16,
+      "[연결모드: Default]\n※ CS40 & OSDP로 연결된 장치에는 동일한 사용자 및 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 ID 인증모드로 인증\n",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n"
+    ],
+    [
+      17,
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에 등록된 사용자만 모든 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 ID 인증모드로 인증\n",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n"
+    ],
+    [
+      18,
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에는 QR 사용자 등록된 상태\n※CS40에는 QR값이 CSN 카드로 등록된 사용자 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 QR 인증\n",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID\n\nQR/Barcode Type\n> QR/Barcode로 발급\n> Biostar 2 QR로 발급",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n"
+    ],
+    [
+      19,
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에 등록된 사용자만 모든 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 QR 인증\n",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID\n\nQR/Barcode Type\n> QR/Barcode로 발급\n> Biostar 2 QR로 발급",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n"
+    ],
+    [
+      20,
+      "[연결모드: Default]\n※ CS40 & OSDP로 연결된 장치에는 동일한 사용자 및 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 모바일 카드 인증\n",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n"
+    ],
+    [
+      21,
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에 등록된 사용자만 모든 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 모바일 카드 인증\n",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n"
+    ],
+    [
+      22,
+      "[연결모드: Default]\n※ OSDP 장치에 Card 외 모든 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 임의 크리덴셜로 인증",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID\n: Exception Code - Disabled",
+      "1. 반응이 없다.\n> 출력되는 카드ID가 없으므로"
+    ],
+    [
+      23,
+      "[연결모드: Default]\n※ OSDP 장치에 Card 외 모든 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 임의 크리덴셜로 인증",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID\n: Exception Code - Enabled\n: Exception Code Value - 임의값",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력"
+    ],
+    [
+      24,
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에는 카드 사용자 등록된 상태\n※ CS40에는 OSDP에서 인증한 사용자의 User ID가 Card ID로 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 카드인증\n",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n"
+    ],
+    [
+      25,
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에는 카드 사용자 등록된 상태\n※ CS40에는 OSDP에서 인증한 사용자의 User ID가 Card ID로 등록되지 않은 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 카드인증",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n"
+    ],
+    [
+      26,
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에는 얼굴 사용자 등록된 상태\n※ CS40에는 OSDP에서 인증한 사용자의 User ID가 Card ID로 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 얼굴인증\n",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n"
+    ],
+    [
+      27,
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에는 얼굴 사용자 등록된 상태\n※ CS40에는 OSDP에서 인증한 사용자의 User ID가 Card ID로 등록되지 않은 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 얼굴인증\n",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n"
+    ],
+    [
+      28,
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에는 지문 사용자 등록된 상태\n※ CS40에는 OSDP에서 인증한 사용자의 User ID가 Card ID로 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 지문인증\n",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n"
+    ],
+    [
+      29,
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에는 지문 사용자 등록된 상태\n※ CS40에는 OSDP에서 인증한 사용자의 User ID가 Card ID로 등록되지 않은 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 지문인증\n",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n"
+    ],
+    [
+      30,
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에는 PIN 사용자 등록된 상태\n※ CS40에는 OSDP에서 인증한 사용자의 User ID가 Card ID로 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 ID 인증모드로 인증\n",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n"
+    ],
+    [
+      31,
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에는 PIN 사용자 등록된 상태\n※ CS40에는 OSDP에서 인증한 사용자의 User ID가 Card ID로 등록되지 않은 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 ID 인증모드로 인증\n",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n"
+    ],
+    [
+      32,
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에는 QR 사용자 등록된 상태\n※ CS40에는 QR 사용자의 User ID가 CSN 카드 값으로 등록된 사용자 존재\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 QR 인증\n",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n"
+    ],
+    [
+      33,
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에는 QR 사용자 등록된 상태\n※ CS40에는 QR 사용자의 User ID가 CSN 카드 값으로 등록된 사용자 미존재\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 QR 인증\n",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n"
+    ],
+    [
+      34,
+      "[연결모드: Default]\n※ OSDP 장치에 AOC 사용자 등록된 상태\n※ CS40에는 AOC 카드의 카드 값이 CSN카드로 등록된 사용자 존재\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 AOC 카드인증\n",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID/User ID",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n"
+    ],
+    [
+      35,
+      "[연결모드: Default]\n※ OSDP 장치에 AOC 사용자 등록된 상태\n※ CS40에는 AOC 카드의 카드 값이 CSN카드로 등록된 사용자 미존재\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 AOC 카드인증",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID/User ID",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력"
+    ],
+    [
+      36,
+      "[연결모드: Default]\n※ OSDP 장치에 SCC 사용자 등록된 상태\n※ CS40에는 SCC 카드의 카드 값이 CSN카드로 등록된 사용자 존재\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 SCC 카드인증",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n"
+    ],
+    [
+      37,
+      "[연결모드: Default]\n※ OSDP 장치에 SCC 사용자 등록된 상태\n※ CS40에는 SCC 카드의 카드 값이 CSN카드로 등록된 사용자 미존재\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 SCC 카드인증",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력"
+    ],
+    [
+      38,
+      "[연결모드: Default]\n※ OSDP 장치에 SCC 사용자 등록된 상태\n※ CS40에는 SCC 카드의 USER ID가 CSN카드로 등록된 사용자 존재\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 SCC 카드인증",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n"
+    ],
+    [
+      39,
+      "[연결모드: Default]\n※ OSDP 장치에 SCC 사용자 등록된 상태\n※ CS40에는 SCC 카드의 USER ID가 CSN카드로 등록된 사용자 미존재\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 SCC 카드인증",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n"
+    ],
+    [
+      40,
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에는 모바일 카드 사용자 등록된 상태\n※ CS40에는 OSDP에서 인증한 사용자의 User ID가 Card ID로 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 모바일 카드 인증\n",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n"
+    ],
+    [
+      41,
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에는 모바일 카드 사용자 등록된 상태\n※ CS40에는 OSDP에서 인증한 사용자의 User ID가 Card ID로 등록되지 않은 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 모바일 카드 인증\n",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n"
+    ],
+    [
+      42,
+      "[연결모드: Default]\n※ CS40에는 Exception Code Value가 Card ID로 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록되지 않은 임의 크리덴셜로 인증",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID\n: Exception Code - Enabled\n: Exception Code Value - 임의값",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증실패 & OSDP:인증성공 출력"
+    ],
+    [
+      43,
+      "[연결모드: Slave]\n※ CS40에 등록된 사용자에는 모든 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 카드인증",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nOSDP Reader 인증모드\n> Card Only",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 OSDP:인증성공 출력\n"
+    ],
+    [
+      44,
+      "[연결모드: Slave]\n※ CS40에 등록된 사용자에는 모든 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 카드인증",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nOSDP Reader 인증모드\n> Card + PIN",
+      "1. 카드입력은만 발생하고 결과를 출력하지 않는다.\n> 로그상 OSDP: Authentication failed(Timeout) 출력"
+    ],
+    [
+      45,
+      "[연결모드: Slave]\n※ CS40에 등록된 사용자에는 모든 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 얼굴인증",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nOSDP Reader 인증모드\n> Card Only",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 OSDP:Authentication failed(Invalid credential) 출력"
+    ],
+    [
+      46,
+      "[연결모드: Slave]\n※ CS40에 등록된 사용자에는 모든 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 지문인증",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nOSDP Reader 인증모드\n> Card Only",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 OSDP:Authentication failed(Invalid credential) 출력"
+    ],
+    [
+      47,
+      "[연결모드: Slave]\n※ CS40에 등록된 사용자에는 모든 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 ID인증",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nOSDP Reader 인증모드\n> Card Only",
+      "1. 반응이 없다.\n> 출력되는 카드ID가 없으므로\n=> ID+PIN 인증 시 결과 미출력 \n\n* ID + 지문, 지문 인증 시 결과 출력 (SLAVE 일 때 지문은 무조건 보내기 때문에 POPUP이 동작)"
+    ],
+    [
+      48,
+      "[연결모드: Slave]\n※ CS40에 등록된 사용자에는 모든 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 모바일 카드인증",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nOSDP Reader 인증모드\n> Card Only",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 OSDP:인증성공 출력\n"
+    ],
+    [
+      49,
+      "[연결모드: Slave]\n※ CS40에 등록된 사용자에는 모든 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 모바일 카드인증",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nOSDP Reader 인증모드\n> Card + PIN",
+      "1. 카드입력음만 발생하고 결과를 출력하지 않는다.\n> 로그상 OSDP: Authentication failed(Timeout) 출력"
+    ],
+    [
+      50,
+      "[연결모드: Slave]\n※ OSDP 장치에 AOC 사용자 등록된 상태\n※ CS40에는 AOC 카드의 카드 값이 CSN카드로 등록된 사용자 존재\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 AOC 카드인증",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nOSDP Reader 인증모드\n> Card Only\n\nAOC Card\n> 개인인증모드 미포함해 발급된 상태",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 OSDP:인증성공 출력\n"
+    ],
+    [
+      51,
+      "[연결모드: Slave]\n※ OSDP 장치에 AOC 사용자 등록된 상태\n※ CS40에는 AOC 카드의 카드 값이 CSN카드로 등록된 사용자 존재\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 AOC 카드인증",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nOSDP Reader 인증모드\n> Card + PIN",
+      "1. 카드입력음만 발생하고 결과를 출력하지 않는다.\n> 로그상 OSDP: Authentication failed(Timeout) 출력"
+    ],
+    [
+      52,
+      "[연결모드: Slave]\n※ OSDP 장치에 AOC 사용자 등록된 상태\n※ CS40에는 AOC 카드의 카드 값이 CSN카드로 등록된 사용자 존재\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 AOC 카드인증",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nOSDP Reader 인증모드\n> Card Only\n\nAOC Card\n> 개인인증모드로 발급된 상태",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 OSDP:인증성공 출력\n"
+    ],
+    [
+      53,
+      "[연결모드: Slave]\n※ OSDP 장치에 SCC 사용자 등록된 상태\n※ CS40에는 SCC 카드의 카드 값이 CSN카드로 등록된 사용자 존재\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 SCC 카드인증",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nOSDP Reader 인증모드\n> Card Only",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 OSDP:인증성공 출력\n\n"
+    ],
+    [
+      54,
+      "[연결모드: Slave]\n※ OSDP 장치에 SCC 사용자 등록된 상태\n※ CS40에는 SCC 카드의 카드 값이 CSN카드로 등록된 사용자 존재\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 SCC 카드인증",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nOSDP Reader 인증모드\n> Card + PIN",
+      "1. 카드입력음만 발생하고 결과를 출력하지 않는다.\n> 로그상 OSDP: Authentication failed(Timeout) 출력"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-327",
+    "description": "",
+    "test_step": [
+      "[RS485모드: Default]\n1. 장치 메뉴> Network> Authentication Result 항목 유무 확인",
+      "[RS485모드: Master]\n1. 장치 메뉴> Network> Authentication Result 항목 유무 확인",
+      "[RS485모드: Slave]\n1. 장치 메뉴> Network> Authentication Result 항목 유무 확인",
+      "[연결모드: Default]\n\n※ CS40 & OSDP로 연결된 장치에는 동일한 사용자 및 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. CS40에 저장된 사용자의 카드를 장치에 인증시도",
+      "[연결모드: Default]\n\n※ CS40 & OSDP로 연결된 장치에는 동일한 사용자 및 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. CS40에 저장되지 않은 카드를 장치에 인증시도",
+      "[연결모드: Default]\n\n※ CS40 & OSDP로 연결된 장치에는 동일한 사용자 및 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Device Matching Result 선택 후 OK\n2. CS40에 저장된 사용자의 카드를 장치에 인증시도",
+      "[연결모드: Default]\n\n※ CS40 & OSDP로 연결된 장치에는 동일한 사용자 및 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Device Matching Result 선택 후 OK\n2. CS40에 저장되지 않은 카드를 장치에 인증시도",
+      "[연결모드: Default]\n※ CS40 & OSDP로 연결된 장치에는 동일한 사용자 및 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result:  Display Result from Controller 선택 후 OK\n2. CS40에 저장된 사용자의 카드를 장치에 인증시도\n",
+      "[연결모드: Default]\n※ CS40 & OSDP로 연결된 장치에는 동일한 사용자 및 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result:  Display Result from Controller 선택 후 OK\n2. CS40에 저장되지 않은 사용자의 카드를 장치에 인증시도\n",
+      "[연결모드: Default]\n※ CS40 & OSDP로 연결된 장치에는 동일한 사용자 및 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. CS40에 저장된 사용자의 카드를 장치에 인증시도",
+      "[연결모드: Default]\n ※ OSDP로 연결된 장치에 등록된 사용자만 모든 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n 2. CS40에 저장되지 않은 사용자의 카드를 장치에 인증시도",
+      "[연결모드: Default]\n※ CS40 & OSDP로 연결된 장치에는 동일한 사용자 및 크리덴셜 등록된 상태\n\n1. OSDP로 연결된 장치에 등록된 얼굴인증\n",
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에 등록된 사용자만 모든 크리덴셜 등록된 상태\n\n1. OSDP로 연결된 장치에 등록된 얼굴인증\n",
+      "[연결모드: Default]\n※ CS40 & OSDP로 연결된 장치에는 동일한 사용자 및 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 지문인증\n",
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에 등록된 사용자만 모든 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 지문인증\n",
+      "[연결모드: Default]\n※ CS40 & OSDP로 연결된 장치에는 동일한 사용자 및 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 ID 인증모드로 인증\n",
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에 등록된 사용자만 모든 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 ID 인증모드로 인증\n",
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에는 QR 사용자 등록된 상태\n※CS40에는 QR값이 CSN 카드로 등록된 사용자 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 QR 인증\n",
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에 등록된 사용자만 모든 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 QR 인증\n",
+      "[연결모드: Default]\n※ CS40 & OSDP로 연결된 장치에는 동일한 사용자 및 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 모바일 카드 인증\n",
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에 등록된 사용자만 모든 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 모바일 카드 인증\n",
+      "[연결모드: Default]\n※ OSDP 장치에 Card 외 모든 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 임의 크리덴셜로 인증",
+      "[연결모드: Default]\n※ OSDP 장치에 Card 외 모든 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 임의 크리덴셜로 인증",
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에는 카드 사용자 등록된 상태\n※ CS40에는 OSDP에서 인증한 사용자의 User ID가 Card ID로 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 카드인증\n",
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에는 카드 사용자 등록된 상태\n※ CS40에는 OSDP에서 인증한 사용자의 User ID가 Card ID로 등록되지 않은 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 카드인증",
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에는 얼굴 사용자 등록된 상태\n※ CS40에는 OSDP에서 인증한 사용자의 User ID가 Card ID로 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 얼굴인증\n",
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에는 얼굴 사용자 등록된 상태\n※ CS40에는 OSDP에서 인증한 사용자의 User ID가 Card ID로 등록되지 않은 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 얼굴인증\n",
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에는 지문 사용자 등록된 상태\n※ CS40에는 OSDP에서 인증한 사용자의 User ID가 Card ID로 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 지문인증\n",
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에는 지문 사용자 등록된 상태\n※ CS40에는 OSDP에서 인증한 사용자의 User ID가 Card ID로 등록되지 않은 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 지문인증\n",
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에는 PIN 사용자 등록된 상태\n※ CS40에는 OSDP에서 인증한 사용자의 User ID가 Card ID로 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 ID 인증모드로 인증\n",
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에는 PIN 사용자 등록된 상태\n※ CS40에는 OSDP에서 인증한 사용자의 User ID가 Card ID로 등록되지 않은 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 ID 인증모드로 인증\n",
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에는 QR 사용자 등록된 상태\n※ CS40에는 QR 사용자의 User ID가 CSN 카드 값으로 등록된 사용자 존재\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 QR 인증\n",
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에는 QR 사용자 등록된 상태\n※ CS40에는 QR 사용자의 User ID가 CSN 카드 값으로 등록된 사용자 미존재\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 QR 인증\n",
+      "[연결모드: Default]\n※ OSDP 장치에 AOC 사용자 등록된 상태\n※ CS40에는 AOC 카드의 카드 값이 CSN카드로 등록된 사용자 존재\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 AOC 카드인증\n",
+      "[연결모드: Default]\n※ OSDP 장치에 AOC 사용자 등록된 상태\n※ CS40에는 AOC 카드의 카드 값이 CSN카드로 등록된 사용자 미존재\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 AOC 카드인증",
+      "[연결모드: Default]\n※ OSDP 장치에 SCC 사용자 등록된 상태\n※ CS40에는 SCC 카드의 카드 값이 CSN카드로 등록된 사용자 존재\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 SCC 카드인증",
+      "[연결모드: Default]\n※ OSDP 장치에 SCC 사용자 등록된 상태\n※ CS40에는 SCC 카드의 카드 값이 CSN카드로 등록된 사용자 미존재\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 SCC 카드인증",
+      "[연결모드: Default]\n※ OSDP 장치에 SCC 사용자 등록된 상태\n※ CS40에는 SCC 카드의 USER ID가 CSN카드로 등록된 사용자 존재\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 SCC 카드인증",
+      "[연결모드: Default]\n※ OSDP 장치에 SCC 사용자 등록된 상태\n※ CS40에는 SCC 카드의 USER ID가 CSN카드로 등록된 사용자 미존재\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 SCC 카드인증",
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에는 모바일 카드 사용자 등록된 상태\n※ CS40에는 OSDP에서 인증한 사용자의 User ID가 Card ID로 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 모바일 카드 인증\n",
+      "[연결모드: Default]\n※ OSDP로 연결된 장치에는 모바일 카드 사용자 등록된 상태\n※ CS40에는 OSDP에서 인증한 사용자의 User ID가 Card ID로 등록되지 않은 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록된 모바일 카드 인증\n",
+      "[연결모드: Default]\n※ CS40에는 Exception Code Value가 Card ID로 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 등록되지 않은 임의 크리덴셜로 인증",
+      "[연결모드: Slave]\n※ CS40에 등록된 사용자에는 모든 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 카드인증",
+      "[연결모드: Slave]\n※ CS40에 등록된 사용자에는 모든 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 카드인증",
+      "[연결모드: Slave]\n※ CS40에 등록된 사용자에는 모든 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 얼굴인증",
+      "[연결모드: Slave]\n※ CS40에 등록된 사용자에는 모든 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 지문인증",
+      "[연결모드: Slave]\n※ CS40에 등록된 사용자에는 모든 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 ID인증",
+      "[연결모드: Slave]\n※ CS40에 등록된 사용자에는 모든 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 모바일 카드인증",
+      "[연결모드: Slave]\n※ CS40에 등록된 사용자에는 모든 크리덴셜 등록된 상태\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 모바일 카드인증",
+      "[연결모드: Slave]\n※ OSDP 장치에 AOC 사용자 등록된 상태\n※ CS40에는 AOC 카드의 카드 값이 CSN카드로 등록된 사용자 존재\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 AOC 카드인증",
+      "[연결모드: Slave]\n※ OSDP 장치에 AOC 사용자 등록된 상태\n※ CS40에는 AOC 카드의 카드 값이 CSN카드로 등록된 사용자 존재\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 AOC 카드인증",
+      "[연결모드: Slave]\n※ OSDP 장치에 AOC 사용자 등록된 상태\n※ CS40에는 AOC 카드의 카드 값이 CSN카드로 등록된 사용자 존재\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 AOC 카드인증",
+      "[연결모드: Slave]\n※ OSDP 장치에 SCC 사용자 등록된 상태\n※ CS40에는 SCC 카드의 카드 값이 CSN카드로 등록된 사용자 존재\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 SCC 카드인증",
+      "[연결모드: Slave]\n※ OSDP 장치에 SCC 사용자 등록된 상태\n※ CS40에는 SCC 카드의 카드 값이 CSN카드로 등록된 사용자 존재\n\n1. 장치 메뉴> Network> Authentication Result: Display Result from Controller 선택 후 OK\n2. OSDP로 연결된 장치에 SCC 카드인증"
+    ],
+    "data": [
+      "대상\n> 액정이 탑재된 Station 장치들\n(TC는 F2 기준으로 작성)",
+      "대상\n> 액정이 탑재된 Station 장치들\n(TC는 F2 기준으로 작성)",
+      "대상\n> 액정이 탑재된 Station 장치들\n(TC는 F2 기준으로 작성)",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Red)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Red)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green X)\n> Auth Fail(=Red X)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green X)\n> Auth Fail(=Red X)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID\n\nQR/Barcode Type\n> QR/Barcode로 발급\n> Biostar 2 QR로 발급",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID\n\nQR/Barcode Type\n> QR/Barcode로 발급\n> Biostar 2 QR로 발급",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID\n: Exception Code - Disabled",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID\n: Exception Code - Enabled\n: Exception Code Value - 임의값",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID/User ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID/User ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - Card ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nIntelligent Slave(=인증장치)\n: Output Info - User ID\n: Exception Code - Enabled\n: Exception Code Value - 임의값",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nOSDP Reader 인증모드\n> Card Only",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nOSDP Reader 인증모드\n> Card + PIN",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nOSDP Reader 인증모드\n> Card Only",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nOSDP Reader 인증모드\n> Card Only",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nOSDP Reader 인증모드\n> Card Only",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nOSDP Reader 인증모드\n> Card Only",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nOSDP Reader 인증모드\n> Card + PIN",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nOSDP Reader 인증모드\n> Card Only\n\nAOC Card\n> 개인인증모드 미포함해 발급된 상태",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nOSDP Reader 인증모드\n> Card + PIN",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nOSDP Reader 인증모드\n> Card Only\n\nAOC Card\n> 개인인증모드로 발급된 상태",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nOSDP Reader 인증모드\n> Card Only",
+      "CS40의 OSDP Reader LED/Buzzer \n> Auth Success(=Green)\n> Auth Fail(=Red)\n\nOSDP Reader 인증모드\n> Card + PIN"
+    ],
+    "expected_result": [
+      "1. BDP-805를 지원하는 버전의 장치들에 서는 해당 항목이 표시된다.",
+      "1. 해당 항목이 표시되지 않는다.",
+      "1. BDP-805를 지원하는 버전의 장치들에 서는 해당 항목이 표시된다.",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name이 출력됨\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n",
+      "1. 장치에서는 카드입력음만 출력된다.\n2. \"Access Granted\"UI 및 인증성공음을 출력하지 않는다.\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n",
+      "1. 장치에서는 카드입력음만 출력된다.\n2. \"Access Denied\"UI 와 인증실패음을 출력하지 않는다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n",
+      "1. 반응이 없다.\n> 출력되는 카드ID가 없으므로",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증성공 & OSDP:인증성공 출력\n",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 장치:인증성공 & OSDP:인증실패 출력\n",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 장치:인증실패 & OSDP:인증성공 출력",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 OSDP:인증성공 출력\n",
+      "1. 카드입력은만 발생하고 결과를 출력하지 않는다.\n> 로그상 OSDP: Authentication failed(Timeout) 출력",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 OSDP:Authentication failed(Invalid credential) 출력",
+      "1. 장치 화면에 \"Access Denied\" UI 와 인증실패음을 출력한다.\n> 로그상 OSDP:Authentication failed(Invalid credential) 출력",
+      "1. 반응이 없다.\n> 출력되는 카드ID가 없으므로\n=> ID+PIN 인증 시 결과 미출력 \n\n* ID + 지문, 지문 인증 시 결과 출력 (SLAVE 일 때 지문은 무조건 보내기 때문에 POPUP이 동작)",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 OSDP:인증성공 출력\n",
+      "1. 카드입력음만 발생하고 결과를 출력하지 않는다.\n> 로그상 OSDP: Authentication failed(Timeout) 출력",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 OSDP:인증성공 출력\n",
+      "1. 카드입력음만 발생하고 결과를 출력하지 않는다.\n> 로그상 OSDP: Authentication failed(Timeout) 출력",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 OSDP:인증성공 출력\n",
+      "1. 장치 화면에 \"Access Granted\" UI 와 인증성공음을 출력한다.\n=> User Name은 출력되지 않음\n> 로그상 OSDP:인증성공 출력\n\n",
+      "1. 카드입력음만 발생하고 결과를 출력하지 않는다.\n> 로그상 OSDP: Authentication failed(Timeout) 출력"
+    ]
+  }
+}

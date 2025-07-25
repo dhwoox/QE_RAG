@@ -1,5 +1,28 @@
 ■ 이슈 키: COMMONR-218
 ■ 제목: 장치 - Secure Tamper
+■ 설명: 1) 장치별로 탬퍼 발생 시 사용자및 로그 삭제를 선택할 수 있도록 설정 제공해야 함
+2) SSL 사용 시 Data암호화 사용 관련 옵션이 표시 되고 , Data 암호화 사용 시 장치에서는 Default로 장치의 사용자 및 로그, 보안 키 삭제 기능이 Disable 되어 Tamper On이 발생하는 경우 해당 동작을 한다.  (Data암호화 사용 시에는 '장치의 사용자 및 로그, 암호화 키 삭제'기능을 Disable에서 Enable로 변경 가능하도록 표시된다.)
+ >{color:#d04437} Data 암호화 사용 시 장치에서는 Default로 장치의 사용자 및 로그, 보안 키 삭제 기능이 Disabled(Off:Default) 상태를 유지하고, FW에서 수동으로 사용자가 변경 가능으로 동작 한다.{color}
+ > Slave 장치에 대해서는 아무런 동작을 안하기 때문에 의미가 없음 (Slave장치에는 Secure Tamper출력되지 않음)
+ > Data암호화 '사용'에서 '사용 안 함'으로 변경 시, 연결된 장치들의 '장치의 사용자 및 로그, 암호화 키 삭제'기능은 Enabled 유지한다. 사용자는 Disabled로 변경이 가능하다.
+ > {color:#d04437}Device Menu / BioStar Device Info - Secure Tamper / 보안 탬퍼{color}
+ 3) Data 암호화를 사용하지 않는 경우는 Device Info> Advanced>User/Log/Secure Key Delete All 항목을 추가하여 사용자가 수동으로 설정 할 수 있다.
+ > Tamper On으로 사용자 삭제 된 경우 수동으로 사용자를 다시 전송해야 함
+4) 암호화 관련 키 삭제 하는 기능 추가 : BSPP-129, BSPP-269, BSPP-62 관련 사양 협의 시 추가됨
+5) SystemConfig.clearOnTamper 가 켜진상태에서 Tamper on 발생시 장치는 다음과 같이 동작하도록 구현됨.
+>1. 사용자 관련 Database 테이블 삭제 (User/Card/Fingerprint/UserName/Image/Blacklist/...)
+>2. EventLog 테이블 삭제 (lastLogID 유지)
+>3. BS2_EVENT_DEVICE_TAMPER_ON(= 0x4000) 이벤트 로그 생성
+>4. BS2_EVENT_DEVICE_EVENT_LOG_CLEARED(= 0x4200) 이벤트 로그 생성
+>5. BS2_EVENT_DEVICE_DATABASE_RESET(=0x4501) 이벤트 로그 생성
+{color:#d04437} 6) Tamper On 발생 시 삭제 Data : User, Log, Data 암호화 Key, Smart Card Layout, SSL 인증서, GDPR, RS485 키만 삭제하고 baudrate 및 rs-485 mode 등은 유지되어야 한다. {color}
+7) 장치 메뉴 표시 위치 및 문구 
+{panel:title=Secure Tamper(보안 탬퍼 발생)}
+||장치||메뉴 위치||비고||
+|BS2|Device > More Settings > Relay / Interphone / Secure Tamper (보안 탬퍼 발생) / Device Info / Memory Info|Quick Menu 미표시|
+|A2|Device > Secure Tamper (보안 탬퍼 발생)|
+|FS2|Device > Secure Tamper (보안 탬퍼 발생)|
+{panel}
 ============================================================
 
 ■ 테스트 스텝

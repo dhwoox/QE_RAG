@@ -1,5 +1,18 @@
 ■ 이슈 키: COMMONR-68
 ■ 제목: Triggered & Action - Input
+■ 설명: (i) Device의 Trigger&Action 설정값이 아래와 같이 변경되어야합니다.
+ - BioStar_DISCONNECTED -> 지원되야함
+ - Network_DISCONNECTED -> Xpass, XpassS2를 제외하고 지원되어야 함
+
+(i) Add New Signal 설정 값(예)
+ - Delay : 100 / Count : 1000 / On : 2 / Off : 2
+ - 임의의 Signal 설정에 대해서 확인 필요
+
+(i) Door & Elevator Relay와의 중복 사용 금지
+
+CS-40이 Master로 연결구성된 경우
+> Action에 대해 Function 항목 미출력.(인증성공/실패에 대한 동작은 Master 장치에서 이루어지기 때문에 CS40이 Master인 경우에는 의미가 없음)
+=> Master가 CS40이 아닌 경우에는 Funtion 항목 출력되어 동작가능함.
 ============================================================
 
 ■ 테스트 스텝

@@ -1,0 +1,177 @@
+{
+  "id": "COMMONR-211",
+  "content": [
+    [
+      1,
+      "1. 개인인증모드가 설정된 사용자 정보를 AOC 카드에 발급\n2. 장치에 AOC Card 인증\n3. 인증결과 확인",
+      "AOC 카드발급\n> 숫자모드에서 발급\n> 영숫자 모드에서 발급\n\nAOC Card - Mifare/DesFire\n\n개인인증모드(카드인증모드)\n> 카드 Only\n> 카드+지문\n> 카드+PIN\n> 카드+지문/PIN\n> 카드+지문+PIN",
+      "1. Card Data, LED/Buzzer Control 정보를 확인할 수 있다.\n> Raw Bit Array Card Data Report\n=> BitCount\n: 영숫자모드/숫자모드 - 발급한 Card ID에 해당하는 bit로 출력 \n=> Card Data\n> LED Control Command\n> Buzzer Control Command"
+    ],
+    [
+      2,
+      "1. 개인인증모드가 설정된 사용자 정보를 AOC 카드에 발급\n2. 장치에 AOC Card Read\n3. AOC Card 다음에 입력해야할 Credential 미입력\n4. AuthTimeout 동작유무 확인",
+      "AOC Card - Mifare/DesFire\n\n개인인증모드(카드인증모드)\n> 다중모드",
+      "1. Auth Timeout으로 동작되어야 한다.\n> Entry 계열 - 점멸중이던 LED OFF(Buzzer 미발생)\n> L2 - 크리덴셜 입력문구 출력 후 Auth Timeout이 지나면 Main으로 화면전환"
+    ],
+    [
+      3,
+      "1. 개인인증모드가 설정된 사용자 정보를 AOC 카드에 발급\n2. AOC 카드 Read 후 등록된 Credential 정보와 다른 값으로 인증시도\n3. 인증결과 확인",
+      "AOC Card - Mifare/DesFire\n\n개인인증모드(카드인증모드)\n> 카드+지문\n> 카드+PIN\n> 카드+지문/PIN\n> 카드+지문+PIN",
+      "1. Write된 정보와 다른 Credential 값으로 인증시 '띡'소리만 출력 후 인증결과를 Noti하지 않는다."
+    ],
+    [
+      4,
+      "1. 개인인증모드가 설정된 사용자 정보를 AOC 카드에 발급\n2. 키패드 미지원 장치에 AOC Card 인증\n3. 인증결과 확인",
+      "AOC Card - Mifare/DesFire\n\n개인인증모드(카드인증모드)\n> 카드+PIN\n> 카드+지문+PIN",
+      "1. 카드 Read시 '띡'소리만 출력 후 인증결과를 Noti하지 않는다.\n2. LED는 Normal 상태를 유지한다."
+    ],
+    [
+      5,
+      "1. 개인인증모드를 설정하지 않은 사용자 정보를 AOC 카드에 발급\n2. 장치인증모드 설정\n3. 인증결과 확인",
+      "AOC 카드발급\n> 숫자모드에서 발급\n> 영숫자 모드에서 발급\n\nAOC Card - Mifare/DesFire\n\n장치인증모드\n> 카드인증모드의 Default 모드",
+      "1. 장치인증모드로 동작한다.\n2. Card Data, LED/Buzzer Control 정보를 확인할 수 있다.\n> Raw Bit Array Card Data Report\n=> BitCount\n: 영숫자모드/숫자모드 - 발급한 Card ID에 해당하는 bit로 출력 \n=> Card Data\n> LED Control Command\n> Buzzer Control Command"
+    ],
+    [
+      6,
+      "1. 개인인증모드가 설정된 사용자 정보를 AOC 카드에 발급\n2. 장치에 AOC Card 인증\n3. 인증결과 확인",
+      "AOC 카드발급\n> 숫자모드에서 발급\n> 영숫자 모드에서 발급\n\nAOC Card - ICLASS/SEOS Card\n\n개인인증모드(카드인증모드)\n> 카드 Only\n> 카드+지문\n> 카드+PIN\n> 카드+지문/PIN\n> 카드+지문+PIN",
+      "1. Card Data, LED/Buzzer Control 정보를 확인할 수 있다.\n> Raw Bit Array Card Data Report\n=> bitCount: Pac Data 값의 BitCount로 표시\n=> Pac Data\n> LED Control Command\n> Buzzer Control Command"
+    ],
+    [
+      7,
+      "1. 개인인증모드가 설정된 사용자 정보를 AOC 카드에 발급\n2. 장치에 AOC Card Read\n3. AOC Card 다음에 입력해야할 Credential 미입력\n4. AuthTimeout 동작유무 확인",
+      "AOC Card - ICLASS/SEOS Card\n\n개인인증모드(카드인증모드)\n> 다중모드",
+      "1. Auth Timeout으로 동작되어야 한다."
+    ],
+    [
+      8,
+      "1. 개인인증모드가 설정된 사용자 정보를 AOC 카드에 발급\n2. AOC 카드 Read 후 등록된 Credential 정보와 다른 값으로 인증시도\n3. 인증결과 확인",
+      "AOC Card - ICLASS/SEOS Card\n\n개인인증모드(카드인증모드)\n> 카드+지문\n> 카드+PIN\n> 카드+지문/PIN\n> 카드+지문+PIN",
+      "1. Write된 정보와 다른 Credential 값으로 인증시 '띡'소리만 출력 후 인증결과를 Noti하지 않는다."
+    ],
+    [
+      9,
+      "1. 개인인증모드가 설정된 사용자 정보를 AOC 카드에 발급\n2. 키패드 미지원 장치에 AOC Card 인증\n3. 인증결과 확인",
+      "AOC Card - ICLASS/SEOS Card\n\n개인인증모드(카드인증모드)\n> 카드+PIN\n> 카드+지문+PIN",
+      "1. 카드 Read시 '띡'소리만 출력 후 인증결과를 Noti하지 않는다."
+    ],
+    [
+      10,
+      "1. 개인인증모드를 설정하지 않은 사용자 정보를 AOC 카드에 발급\n2. 장치인증모드 설정\n3. 인증결과 확인",
+      "AOC Card - ICLASS/SEOS Card\n\n장치인증모드\n> 카드인증모드의 Default 모드",
+      "1. 장치인증모드로 동작한다.\n2. Card Data, LED/Buzzer Control 정보를 확인할 수 있다.\n> Raw Bit Array Card Data Report\n=> bitCount: Pac Data 값의 BitCount로 표시\n=> Pac Data\n> LED Control Command\n> Buzzer Control Command"
+    ],
+    [
+      11,
+      "1. Slave로 연결된 장치에 AOC Card 인증시도\n2. MFG Log 출력유무 확인\n3. Slave로 연결된 장치에 CSN, SCC Card 인증시도\n",
+      "AOC Card - Mifare/ICLASS/SEOS Card",
+      "1. Master 장치로 Raw Data(Card Data/Pac Data) 전송 후 OSDP_MFG_CANCEL, OSDP_MFG_DEFER_AUTH_TIMEOUT, OSDP_MFG_TNA(OSDP_TNA_KEY_SELECTED) 출력되지 않아야 한다.\n2. Card Data, LED/Buzzer Control 정보를 확인할 수 있다.\n> Raw Bit Array Card Data Report\n=> Pac Data, Card ID\n> LED Control Command\n> Buzzer Control Command"
+    ],
+    [
+      12,
+      "1. Reader Number > 0 선택\n2. Temp Command Code > Set 선택\n3. Temp On Time In Milliseconds > 3000 선택\n4. Temp Off Time In Milliseconds > 1000 선택\n5. Temp On Color > Red 선택\n6. Temp Off Color > Green 선택 \n7. Run Time In Milliseconds > 4000 선택",
+      "Perm Command Code: Nop\n\nTemp On Time: 3000\nTemp Off Time: 1000\nTemp On/Off Color: Black/Red/Green/Amber/Blue 임의설정",
+      "1. ON/OFF에 해당하는 LED가 점멸된다.(1회)\n=> 3초간 On Color 출력, 1초간 Off Color 출력\n2. Cancel시 설정한 LED가 초기화되어 동작된다."
+    ],
+    [
+      13,
+      "1. OSDP Tool 실행> 장치연결\n2. Messageing> LED Control Command\n3. Perm Command Code: Set 설정\n4. Perm On/Off TIme 설정\n5. Perm On/Off Color 설정\n6. Send> 장치의 LED 확인\n7. Temp Command Code: Cancel 설정\n8. Send> 장치의 LED 확인",
+      "Temp Command Code: Nop\n\nPerm On Time: 1000\nPerm Off Time: 5000\nPerm On/Off Color: Black/Red/Green/Amber/Blue 임의설정",
+      "1. ON/OFF에 해당하는 LED가 점멸된다.(반복)\n=> 1초간 On Color 출력, 5초간 Off Color 출력\n2. Cancel시 설정한 LED가 초기화되어 동작된다.\n=> Perm은 같은 Perm로 Set하기 전 까지 이전 설정 유지"
+    ],
+    [
+      14,
+      "1. OSDP Tool 실행> 장치연결\n2. Messageing> Buzzer Control Command\n3. Tone: Enable 설정\n4. On/Off 설정\n5. Number Of Cycles 설정\n6. Send> 장치에서 Buzzer 출력여부 확인",
+      "1. On/Off: 임의설정\n2. Number Of Cycles: 임의설정",
+      "1. Buzzer음이 설정한 Cycles만큼 동작한다.\n=> On: 1, Off: 1, Cycles: 5 설정시 0.1초 간격으로 Buzzer음 5회 발생\n=> On: 1, Off: 0, Cycles: 5으로 설정한 경우 5회에 해당하는 만큼의 Buzzer음 발생(삐이이이익~)"
+    ],
+    [
+      15,
+      "1. OSDP Tool 실행> 장치연결\n2. Messageing> LED Control Command\n3. Perm Command Code: Set 설정\n4. Perm On/Off TIme 설정\n5. Perm On/Off Color 설정\n6. Send> 장치의 LED 확인",
+      "Temp Command Code: Cancel",
+      "1. Perm에 설정한대로 ON/OFF에 해당하는 LED가 점멸된다.(반복)\n=> 1초간 On Color 출력, 5초간 Off Color 출력"
+    ],
+    [
+      16,
+      "1. SCC 카드 발급\n2. 장치에 SCC Card 인증\n3. BitCount 확인",
+      "SCC 카드발급\n> 숫자모드에서 발급\n> 영숫자 모드에서 발급\n\nSCC Card - Mifare/DesFire",
+      "1. 발급된 카드ID가 출력된다.\n> 발급된 카드ID 만큼의 BitCount가 표시"
+    ],
+    [
+      17,
+      "1. SCC 카드 발급\n2. 장치에 SCC Card 인증\n3. BitCount 확인",
+      "SCC 카드발급\n> 숫자모드에서 발급\n> 영숫자 모드에서 발급\n\nSCC Card - ICLASS/SEOS Card",
+      "1. PAC Data가 출력된다.\n> 리드된 카드가 지원하는 포맷으로 BitCount가 표시"
+    ],
+    [
+      18,
+      "[Master-Slave로 연결된 상태 & 등록예정 버전으로 Upgrade된 상태]\n1. Slave로 연결된 장치를 암호화 미지원 버전으로 FW Downgrade\n2. Slave 리스트에서 FW Downgrade한 장치 삭제\n3. Downgrade한 장치를 이더넷으로 바이오스타에 연결 후 RS485 모드를 Slave 로 변경\n4. OSDP Tool에 해당 장치연결\n5. Default Key로 Secure 통신시도",
+      "암호화 미지원 버전\n> 2020 1Q 이전 버전",
+      "1. Default Key로 암호화 통신이 이루어진다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-211",
+    "description": "",
+    "test_step": [
+      "1. 개인인증모드가 설정된 사용자 정보를 AOC 카드에 발급\n2. 장치에 AOC Card 인증\n3. 인증결과 확인",
+      "1. 개인인증모드가 설정된 사용자 정보를 AOC 카드에 발급\n2. 장치에 AOC Card Read\n3. AOC Card 다음에 입력해야할 Credential 미입력\n4. AuthTimeout 동작유무 확인",
+      "1. 개인인증모드가 설정된 사용자 정보를 AOC 카드에 발급\n2. AOC 카드 Read 후 등록된 Credential 정보와 다른 값으로 인증시도\n3. 인증결과 확인",
+      "1. 개인인증모드가 설정된 사용자 정보를 AOC 카드에 발급\n2. 키패드 미지원 장치에 AOC Card 인증\n3. 인증결과 확인",
+      "1. 개인인증모드를 설정하지 않은 사용자 정보를 AOC 카드에 발급\n2. 장치인증모드 설정\n3. 인증결과 확인",
+      "1. 개인인증모드가 설정된 사용자 정보를 AOC 카드에 발급\n2. 장치에 AOC Card 인증\n3. 인증결과 확인",
+      "1. 개인인증모드가 설정된 사용자 정보를 AOC 카드에 발급\n2. 장치에 AOC Card Read\n3. AOC Card 다음에 입력해야할 Credential 미입력\n4. AuthTimeout 동작유무 확인",
+      "1. 개인인증모드가 설정된 사용자 정보를 AOC 카드에 발급\n2. AOC 카드 Read 후 등록된 Credential 정보와 다른 값으로 인증시도\n3. 인증결과 확인",
+      "1. 개인인증모드가 설정된 사용자 정보를 AOC 카드에 발급\n2. 키패드 미지원 장치에 AOC Card 인증\n3. 인증결과 확인",
+      "1. 개인인증모드를 설정하지 않은 사용자 정보를 AOC 카드에 발급\n2. 장치인증모드 설정\n3. 인증결과 확인",
+      "1. Slave로 연결된 장치에 AOC Card 인증시도\n2. MFG Log 출력유무 확인\n3. Slave로 연결된 장치에 CSN, SCC Card 인증시도\n",
+      "1. Reader Number > 0 선택\n2. Temp Command Code > Set 선택\n3. Temp On Time In Milliseconds > 3000 선택\n4. Temp Off Time In Milliseconds > 1000 선택\n5. Temp On Color > Red 선택\n6. Temp Off Color > Green 선택 \n7. Run Time In Milliseconds > 4000 선택",
+      "1. OSDP Tool 실행> 장치연결\n2. Messageing> LED Control Command\n3. Perm Command Code: Set 설정\n4. Perm On/Off TIme 설정\n5. Perm On/Off Color 설정\n6. Send> 장치의 LED 확인\n7. Temp Command Code: Cancel 설정\n8. Send> 장치의 LED 확인",
+      "1. OSDP Tool 실행> 장치연결\n2. Messageing> Buzzer Control Command\n3. Tone: Enable 설정\n4. On/Off 설정\n5. Number Of Cycles 설정\n6. Send> 장치에서 Buzzer 출력여부 확인",
+      "1. OSDP Tool 실행> 장치연결\n2. Messageing> LED Control Command\n3. Perm Command Code: Set 설정\n4. Perm On/Off TIme 설정\n5. Perm On/Off Color 설정\n6. Send> 장치의 LED 확인",
+      "1. SCC 카드 발급\n2. 장치에 SCC Card 인증\n3. BitCount 확인",
+      "1. SCC 카드 발급\n2. 장치에 SCC Card 인증\n3. BitCount 확인",
+      "[Master-Slave로 연결된 상태 & 등록예정 버전으로 Upgrade된 상태]\n1. Slave로 연결된 장치를 암호화 미지원 버전으로 FW Downgrade\n2. Slave 리스트에서 FW Downgrade한 장치 삭제\n3. Downgrade한 장치를 이더넷으로 바이오스타에 연결 후 RS485 모드를 Slave 로 변경\n4. OSDP Tool에 해당 장치연결\n5. Default Key로 Secure 통신시도"
+    ],
+    "data": [
+      "AOC 카드발급\n> 숫자모드에서 발급\n> 영숫자 모드에서 발급\n\nAOC Card - Mifare/DesFire\n\n개인인증모드(카드인증모드)\n> 카드 Only\n> 카드+지문\n> 카드+PIN\n> 카드+지문/PIN\n> 카드+지문+PIN",
+      "AOC Card - Mifare/DesFire\n\n개인인증모드(카드인증모드)\n> 다중모드",
+      "AOC Card - Mifare/DesFire\n\n개인인증모드(카드인증모드)\n> 카드+지문\n> 카드+PIN\n> 카드+지문/PIN\n> 카드+지문+PIN",
+      "AOC Card - Mifare/DesFire\n\n개인인증모드(카드인증모드)\n> 카드+PIN\n> 카드+지문+PIN",
+      "AOC 카드발급\n> 숫자모드에서 발급\n> 영숫자 모드에서 발급\n\nAOC Card - Mifare/DesFire\n\n장치인증모드\n> 카드인증모드의 Default 모드",
+      "AOC 카드발급\n> 숫자모드에서 발급\n> 영숫자 모드에서 발급\n\nAOC Card - ICLASS/SEOS Card\n\n개인인증모드(카드인증모드)\n> 카드 Only\n> 카드+지문\n> 카드+PIN\n> 카드+지문/PIN\n> 카드+지문+PIN",
+      "AOC Card - ICLASS/SEOS Card\n\n개인인증모드(카드인증모드)\n> 다중모드",
+      "AOC Card - ICLASS/SEOS Card\n\n개인인증모드(카드인증모드)\n> 카드+지문\n> 카드+PIN\n> 카드+지문/PIN\n> 카드+지문+PIN",
+      "AOC Card - ICLASS/SEOS Card\n\n개인인증모드(카드인증모드)\n> 카드+PIN\n> 카드+지문+PIN",
+      "AOC Card - ICLASS/SEOS Card\n\n장치인증모드\n> 카드인증모드의 Default 모드",
+      "AOC Card - Mifare/ICLASS/SEOS Card",
+      "Perm Command Code: Nop\n\nTemp On Time: 3000\nTemp Off Time: 1000\nTemp On/Off Color: Black/Red/Green/Amber/Blue 임의설정",
+      "Temp Command Code: Nop\n\nPerm On Time: 1000\nPerm Off Time: 5000\nPerm On/Off Color: Black/Red/Green/Amber/Blue 임의설정",
+      "1. On/Off: 임의설정\n2. Number Of Cycles: 임의설정",
+      "Temp Command Code: Cancel",
+      "SCC 카드발급\n> 숫자모드에서 발급\n> 영숫자 모드에서 발급\n\nSCC Card - Mifare/DesFire",
+      "SCC 카드발급\n> 숫자모드에서 발급\n> 영숫자 모드에서 발급\n\nSCC Card - ICLASS/SEOS Card",
+      "암호화 미지원 버전\n> 2020 1Q 이전 버전"
+    ],
+    "expected_result": [
+      "1. Card Data, LED/Buzzer Control 정보를 확인할 수 있다.\n> Raw Bit Array Card Data Report\n=> BitCount\n: 영숫자모드/숫자모드 - 발급한 Card ID에 해당하는 bit로 출력 \n=> Card Data\n> LED Control Command\n> Buzzer Control Command",
+      "1. Auth Timeout으로 동작되어야 한다.\n> Entry 계열 - 점멸중이던 LED OFF(Buzzer 미발생)\n> L2 - 크리덴셜 입력문구 출력 후 Auth Timeout이 지나면 Main으로 화면전환",
+      "1. Write된 정보와 다른 Credential 값으로 인증시 '띡'소리만 출력 후 인증결과를 Noti하지 않는다.",
+      "1. 카드 Read시 '띡'소리만 출력 후 인증결과를 Noti하지 않는다.\n2. LED는 Normal 상태를 유지한다.",
+      "1. 장치인증모드로 동작한다.\n2. Card Data, LED/Buzzer Control 정보를 확인할 수 있다.\n> Raw Bit Array Card Data Report\n=> BitCount\n: 영숫자모드/숫자모드 - 발급한 Card ID에 해당하는 bit로 출력 \n=> Card Data\n> LED Control Command\n> Buzzer Control Command",
+      "1. Card Data, LED/Buzzer Control 정보를 확인할 수 있다.\n> Raw Bit Array Card Data Report\n=> bitCount: Pac Data 값의 BitCount로 표시\n=> Pac Data\n> LED Control Command\n> Buzzer Control Command",
+      "1. Auth Timeout으로 동작되어야 한다.",
+      "1. Write된 정보와 다른 Credential 값으로 인증시 '띡'소리만 출력 후 인증결과를 Noti하지 않는다.",
+      "1. 카드 Read시 '띡'소리만 출력 후 인증결과를 Noti하지 않는다.",
+      "1. 장치인증모드로 동작한다.\n2. Card Data, LED/Buzzer Control 정보를 확인할 수 있다.\n> Raw Bit Array Card Data Report\n=> bitCount: Pac Data 값의 BitCount로 표시\n=> Pac Data\n> LED Control Command\n> Buzzer Control Command",
+      "1. Master 장치로 Raw Data(Card Data/Pac Data) 전송 후 OSDP_MFG_CANCEL, OSDP_MFG_DEFER_AUTH_TIMEOUT, OSDP_MFG_TNA(OSDP_TNA_KEY_SELECTED) 출력되지 않아야 한다.\n2. Card Data, LED/Buzzer Control 정보를 확인할 수 있다.\n> Raw Bit Array Card Data Report\n=> Pac Data, Card ID\n> LED Control Command\n> Buzzer Control Command",
+      "1. ON/OFF에 해당하는 LED가 점멸된다.(1회)\n=> 3초간 On Color 출력, 1초간 Off Color 출력\n2. Cancel시 설정한 LED가 초기화되어 동작된다.",
+      "1. ON/OFF에 해당하는 LED가 점멸된다.(반복)\n=> 1초간 On Color 출력, 5초간 Off Color 출력\n2. Cancel시 설정한 LED가 초기화되어 동작된다.\n=> Perm은 같은 Perm로 Set하기 전 까지 이전 설정 유지",
+      "1. Buzzer음이 설정한 Cycles만큼 동작한다.\n=> On: 1, Off: 1, Cycles: 5 설정시 0.1초 간격으로 Buzzer음 5회 발생\n=> On: 1, Off: 0, Cycles: 5으로 설정한 경우 5회에 해당하는 만큼의 Buzzer음 발생(삐이이이익~)",
+      "1. Perm에 설정한대로 ON/OFF에 해당하는 LED가 점멸된다.(반복)\n=> 1초간 On Color 출력, 5초간 Off Color 출력",
+      "1. 발급된 카드ID가 출력된다.\n> 발급된 카드ID 만큼의 BitCount가 표시",
+      "1. PAC Data가 출력된다.\n> 리드된 카드가 지원하는 포맷으로 BitCount가 표시",
+      "1. Default Key로 암호화 통신이 이루어진다."
+    ]
+  }
+}

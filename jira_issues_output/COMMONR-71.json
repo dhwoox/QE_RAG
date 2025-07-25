@@ -1,0 +1,42 @@
+{
+  "id": "COMMONR-71",
+  "content": [
+    [
+      1,
+      "1. 장시간 연속 인증 실행\n  ",
+      " = 카드(Smart Card, Mobile(NFC/BLE) 포함)/지문\n = 얼굴 검출(해당 장치만 : BioStation A2)\n = 얼굴 인증(해당 장미참 : FaceStation2)\n\n> 단일 장치 및 RS 485 환경 구성에 Door의 APB Zone, Zone의 Local/Global APB에 대한 확인\n : User Full 상태 \n",
+      "1. Date, Time이 임의로 변경 되지 않아야 한다.\n2. System Reset이 발생하더라도 재부팅이 되어 정상 동작이 되어야 한다.\n3. APB Rule에 위배되지 않고 정상적으로 인증이 되어야 한다.\n> 네트워크 먹통 현상, Ping에 대한 무반응이 있는 지 확인\n"
+    ],
+    [
+      2,
+      "1. 일정 거리내에서 QR Code 장시간 연속 인증 실행",
+      "1. QR Code가 장치의 센서와 10cm에 위치.\n2. QR Code는 가로*세로 3cm 이내.\n3. 장치는 실제 벽면에 거치하는것과 같은 상태로 거치.\n4. ADB Log로 TOF 거리 확인.\n5. 검증 기간 : 약 5일 이상",
+      "1. ADB Viewer의 TOF 거리가 10cm로 잘 들어왔는지 Log 확인이 되어야 한다.\n"
+    ],
+    [
+      3,
+      "1. Image Log - Enabled 설정\n2. 장시간 연속인증 실행\n3. 수시로 Image Log 정상출력 유무 확인",
+      "대상\n> Image Log 지원장치",
+      "1. 비정상적인 Reboot이 발생되지 않아야 한다.\n2. Image Log가 정상적으로 저장 및 표시되어야 한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-71",
+    "description": "",
+    "test_step": [
+      "1. 장시간 연속 인증 실행\n  ",
+      "1. 일정 거리내에서 QR Code 장시간 연속 인증 실행",
+      "1. Image Log - Enabled 설정\n2. 장시간 연속인증 실행\n3. 수시로 Image Log 정상출력 유무 확인"
+    ],
+    "data": [
+      " = 카드(Smart Card, Mobile(NFC/BLE) 포함)/지문\n = 얼굴 검출(해당 장치만 : BioStation A2)\n = 얼굴 인증(해당 장미참 : FaceStation2)\n\n> 단일 장치 및 RS 485 환경 구성에 Door의 APB Zone, Zone의 Local/Global APB에 대한 확인\n : User Full 상태 \n",
+      "1. QR Code가 장치의 센서와 10cm에 위치.\n2. QR Code는 가로*세로 3cm 이내.\n3. 장치는 실제 벽면에 거치하는것과 같은 상태로 거치.\n4. ADB Log로 TOF 거리 확인.\n5. 검증 기간 : 약 5일 이상",
+      "대상\n> Image Log 지원장치"
+    ],
+    "expected_result": [
+      "1. Date, Time이 임의로 변경 되지 않아야 한다.\n2. System Reset이 발생하더라도 재부팅이 되어 정상 동작이 되어야 한다.\n3. APB Rule에 위배되지 않고 정상적으로 인증이 되어야 한다.\n> 네트워크 먹통 현상, Ping에 대한 무반응이 있는 지 확인\n",
+      "1. ADB Viewer의 TOF 거리가 10cm로 잘 들어왔는지 Log 확인이 되어야 한다.\n",
+      "1. 비정상적인 Reboot이 발생되지 않아야 한다.\n2. Image Log가 정상적으로 저장 및 표시되어야 한다."
+    ]
+  }
+}

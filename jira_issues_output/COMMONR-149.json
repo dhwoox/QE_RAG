@@ -1,0 +1,24 @@
+{
+  "id": "COMMONR-149",
+  "content": [
+    [
+      1,
+      "1) A/B장치 Door Sensor 설정\n2) A장치의 Relay Com 단자 + B장치의 Switch GND 단자 접지\n3) A장치의 Relay No 단자 + B장치의 Exit Button에서 설정한 Switch 단자 접지\n4) A 장치에 연속으로 카드입력되도록 설정(Diagtool 이용)\n> 5일 ~ 10일\n5) B 장치의 로그에 Unlock/Lock 로그 출력확인\n\n>> Door Sensor에 연결 시 Forced Open door, Door Open, Closed가 발생함",
+      "Diagtool Tool 이용\n> Repeat 3000 => 3초마다 카드입력됨\n\n7일이상 Stress Test 진행\n> 최소 150,000회 이상 동작확인",
+      "Relay 동작횟수가 카드입력횟수와 동일해야 한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-149",
+    "description": "",
+    "test_step": [
+      "1) A/B장치 Door Sensor 설정\n2) A장치의 Relay Com 단자 + B장치의 Switch GND 단자 접지\n3) A장치의 Relay No 단자 + B장치의 Exit Button에서 설정한 Switch 단자 접지\n4) A 장치에 연속으로 카드입력되도록 설정(Diagtool 이용)\n> 5일 ~ 10일\n5) B 장치의 로그에 Unlock/Lock 로그 출력확인\n\n>> Door Sensor에 연결 시 Forced Open door, Door Open, Closed가 발생함"
+    ],
+    "data": [
+      "Diagtool Tool 이용\n> Repeat 3000 => 3초마다 카드입력됨\n\n7일이상 Stress Test 진행\n> 최소 150,000회 이상 동작확인"
+    ],
+    "expected_result": [
+      "Relay 동작횟수가 카드입력횟수와 동일해야 한다."
+    ]
+  }
+}

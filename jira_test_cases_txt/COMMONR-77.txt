@@ -1,5 +1,22 @@
 ■ 이슈 키: COMMONR-77
 ■ 제목: 통신 - RS-485
+■ 설명: RS-485 설정 및 동작에 이상이 없는지 확인
+
+RS-485 통신 암호화 키 변경
+ > Master : Primary / Secondary / Master Communication Key / Slave Communication Key
+ > Slave : Slave Communication Key(Primary / Secondary 의미 없음)
+ > Default : 의미 없음
+
+암호화 키 - 16자 고정
+
+FST2 RS 485 사양
+> 기존 다른 V2.x 제품과 동일하게 RS 485 연결의 Slave에 대해서 지원
+ : Slave 장치에서 캡쳐한 얼굴 Template을 Master로 전달하고 Master에서 매칭을 수행.
+ : Master와 동일하게 인증모드 사용이 가능
+ : FL/FS2가 Master인 경우, 연결 가능한 Slave의 FS/FL는 1개 이며, FS2/FL을 제외한 기존 다른 V2.x 제품은 FS2/FL이 없는 경우 31개, 있는 경우 30개 연결 가능
+ : Slave에서는 개인인증 메세지, 그룹 매칭 기능은 미지원
+ : FS2/FL 장치간 Master-Slave 연결 가능
+ : BioStar V2.7.3.x - FS2/FL(M)인 경우, Slave에 FS2/FL이 있는 경우, FS2/FL은 1개, 나머지 30개는 기존 다른 V2.x 제품 추가가 가능하도록 수정 예정
 ============================================================
 
 ■ 테스트 스텝

@@ -1,5 +1,21 @@
 ■ 이슈 키: COMMONR-256
 ■ 제목: XPD2의 추가된 Device Type 지원
+■ 설명: 1. 모델명은 기존 사양 그대로 유지 (변경 없음)
+- XPD2-MDB, XPD2-GDB, XPD2-GKDB
+
+ 
+2. HW버전은 명시적으로 변경
+- V01 → V02
+
+
+3. FW 및 BioStar 2 에서는 Device Type 으로 구분
+BS2_DEVICE_TYPE_XPASS_D2_REV             = 0x1B,
+BS2_DEVICE_TYPE_XPASS_D2_KEYPAD_REV      = 0x1C,
+ 
+
+4. XPD2 F/W 버전 (3월 등록 기준)
+기존 HW : V1.3.0
+신규 HW : V1.4.0
 ============================================================
 
 ■ 테스트 스텝

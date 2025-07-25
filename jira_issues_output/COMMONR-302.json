@@ -1,0 +1,632 @@
+{
+  "id": "COMMONR-302",
+  "content": [
+    [
+      1,
+      "[OSDP Module을 물리적으로 결선하지 않은 상태]\n1. CS40> 마우스 우클릭> Add OSDP Device\n2. Select OSDP Device Type 팝업 출력\n3. OSDP Antenna 선택 후 cancel 버튼 클릭",
+      "",
+      "팝업 닫히며 OSDP Module 추가 되지 않음"
+    ],
+    [
+      2,
+      "[OSDP Module을 물리적으로 결선하지 않은 상태]\n1. CS40> 마우스 우클릭> Add OSDP Device\n2. Select OSDP Device Type 팝업 출력\n3. OSDP Antenna 선택 후 OK 버튼 클릭",
+      "CS40 라이선스 비활성화 상태",
+      "OSDP Module 추가 되지 않으며 에러 팝업 출력\n- 국문 : 무선 도어락을 사용하기 위해서는 먼저 도어락 라이선스를 활성화해야 합니다. \n- 영문 : To use the door lock, you should activate the door lock license before."
+    ],
+    [
+      3,
+      "[OSDP Module을 물리적으로 결선하지 않은 상태]\n1. CS40> 마우스 우클릭> Add OSDP Device\n2. Select OSDP Device Type 팝업 출력\n3. OSDP Antenna 선택 후 OK 버튼 클릭\n4. Add OSDP Device 팝업 출력\n5. OSDP Module 추가할 포트 선택",
+      "CS40 라이선스 활성화 상태",
+      "Add New OSDP Device 화면 출력"
+    ],
+    [
+      4,
+      "1. Add New OSDP Device 화면 출력",
+      "",
+      "아래와 같이 값 출력 됨\nInformation\n- Title : Add New OSDP Device\n- Name : Device Name\n- OSDP Device Type : OSDP Antenna\n- Port : Port (비활성화)\n- Device ID : CS-40이 부여하는 Device ID (비활성화)\n- Vendor Code : 빈칸 (비활성화)\n- Serial Number : 빈칸 (비활성화)\n- Product Name : 빈칸 (비활성화)\n- Hardware Version : 빈칸 (비활성화)\n- Firmware Version : 빈칸 (비활성화)\n- Status : Active\n\nNetwork(RS-485)\n- OSDP ID\n- Secure Communication : Use"
+    ],
+    [
+      5,
+      "1. Add New OSDP Device 화면\n2. OSDP ID 입력 후 Apply",
+      "OSDP ID \n>0번 ~ 119번 설정 가능",
+      "All Devices 화면으로 전환"
+    ],
+    [
+      6,
+      "1. OSDP Module 두개가 추가된 상태\n2. CS40> 마우스 우클릭> Add OSDP Device\n3. Select OSDP Device Type 팝업 출력\n4. OSDP Antenna 선택 후 OK 버튼 클릭\n5. Add New OSDP Device 화면에서 Apply",
+      "",
+      "1. 에러 메시지 출력\n: CS40 한대에 무선 안테나 모듈 2대까지 연결 가능하다.\n\n- 국문 : 최대 OSDP 장치 수에 도달하여 더 이상 추가할 수 없습니다."
+    ],
+    [
+      7,
+      "1.OSDP Module 한개가 추가된 상태\n2.CS40>마우스우클릭>Add OSDP Device\n3.Select OSDP Device Type 팝업 출력\n4.OSDP Antenna 선택 > OK 선택\n5.Add osdp Device  팝업 확인",
+      "",
+      "이미 OSDP Module이 추가되어 있는 포트는 비활성화되어 출력된다."
+    ],
+    [
+      8,
+      "1. CS40> 마우스 우클릭> Add OSDP Device\n2. Select OSDP Device Type 팝업 출력\n3. OSDP Reader 선택 후 OK 버튼 클릭\n4. Add OSDP Device 팝업 출력\n5. OSDP Antenna 추가된 포트 확인",
+      "",
+      "Port 버튼 비활성화 문구 출력\n: 하나의 Port에 하나의 OSDP 모듈만 추가 가능\n- 국문 : OSDP 안테나 연결됨"
+    ],
+    [
+      9,
+      "1. OSDP Antenna 하나 추가된 상태\n2. OSDP Antenna> 마우스 우클릭> Delete Device\n",
+      "",
+      "OSDP Antenna 삭제가 된다.\n: 하위에 연결된 무선 도어락이 Door, Zone으로 설정되어 있는 경우 삭제 불가"
+    ],
+    [
+      10,
+      "1. OSDP Module 하나 추가된 상태\n2. OSDP Module> 마우스 우클릭> Delete Device > OSDP Module 삭제됨\n3. CS40> 마우스 우클릭> Add OSDP Device\n4. Select OSDP Device Type 팝업 출력\n5. OSDP Antenna 선택 후 OK 버튼 클릭\n6. Add OSDP Device 팝업 출력\n7. OSDP Module 추가할 포트 선택",
+      "",
+      "Add New OSDP Module 화면 출력된다.\n: 기존 추가 되어있다가 삭제 된 OSDP Module 의 포트도 활성화 되어 표시된다.\n: 추가된 OSDP Module 삭제 후 OSDP Module을 새로 추가할 경우 문제 없이 추가되어야 한다."
+    ],
+    [
+      11,
+      "1. OSDP Module 추가, 삭제를 반복해서 진행",
+      "10번 이상",
+      "반복적인 추가, 삭제에도 문제없이 추가, 삭제되어야한다."
+    ],
+    [
+      12,
+      "1. 추가한 OSDP Module 상세페이지 진입",
+      "",
+      "아래와 같이 값 출력 됨\nInformation\n- Title : OSDP Antenna\n- Name : Device Name\n- OSDP Device Type : OSDP Antenna\n- Port : Port (비활성화)\n- Device ID : CS-40이 부여하는 Device ID (비활성화)\n- Vendor Code : 빈칸 (비활성화)\n- Serial Number : 빈칸 (비활성화)\n- Product Name : 빈칸 (비활성화)\n- Hardware Version : 빈칸 (비활성화)\n- Firmware Version : 빈칸 (비활성화)\n- Status : Active\n\nNetwork(RS-485)\n- OSDP ID : 설정한 OSDP ID\n- Secure Communication : Use"
+    ],
+    [
+      13,
+      "1. 설정한 OSDP ID와 다른 ID를 가진 OSDP Module을 물리적으로 CS40 과 연결\n2. 통신유무 확인",
+      "",
+      "설정한 OSDP ID와 다른 ID를 가진 OSDP Device가 해당 포트에 결선되면 연결되지 않는다."
+    ],
+    [
+      14,
+      "1. 설정한 OSDP ID와 동일한 ID를 가진 OSDP Module을 물리적으로 CS40 과 연결\n2. 통신유무 확인",
+      "",
+      "설정한 OSDP ID와 동일한 ID를 가진 OSDP Device가 해당 포트에 결선되면 연결이 이루어진다.\n: RS-485 Connected 이벤트 로그 발생"
+    ],
+    [
+      15,
+      "[OSDP Module 물리적으로 연결된 상태]\n1. OSDP Module 상세페이지 진입",
+      "",
+      "OSDP Module 정보가 정상적으로 출력된다."
+    ],
+    [
+      16,
+      "[OSDP Module 물리적으로 연결된 상태]\n1. Status를 Inactive로 변경",
+      "",
+      "Deactivation Warning Message 팝업 발생\n비활성화 시, 해당 OSDP Module 하위에 연결된 Door Lock 에 설정해 놓은 Trigger & Action, Zone 등이 동작하지 않을 수 있다는 경고 메시지를 발생\n- 국문 : OSDP 장치가 비활성화 되고 설정한 대로 동작하지 않습니다. 계속 하시겠습니까?\n- 영문 : OSDP device will not work once it is deactivated. Continue?"
+    ],
+    [
+      17,
+      "[OSDP Module 물리적으로 연결된 상태]\n1. Status를 Inactive로 변경후 Apply",
+      "",
+      "1. Device List의 Status가 Normal (Inactive)로 출력\n2. BioStar UI상 아이콘은 회색처리"
+    ],
+    [
+      18,
+      "[OSDP Module 물리적으로 연결된 상태]\n1. Status를 Inactive로 설정 후 동작확인",
+      "",
+      "1. 비활성화 시, CS40 은 OSDP Module 및 해당 OSDP Module 에 연결된 Door Lock 의 메시지에 대한 동작들을 수행하지 않는다."
+    ],
+    [
+      19,
+      "[OSDP Module 물리적으로 연결된 상태]\n1. OSDP Module 상세페이지 진입\n2. Status를 Active로 변경후 Apply",
+      "",
+      "1. Device List의 Status가 Normal (Active)로 출력\n2. 장치에 입력에 따른 CS40이 동작"
+    ],
+    [
+      20,
+      "[OSDP Module 물리적으로 연결된 상태&도어락 추가하지 않은 상태]\n1. OSDP Module 상세페이지 진입\n2. OSDP ID 변경 후 Apply",
+      "> OSDP ID\n=> 0~119번 설정가능",
+      "1. OSDP 변경 가능하지만 연결 끊어짐을 안내하는 메시지 출력\n- 국문 : OSDP ID를 변경하면 OSDP 장치가 OSDP ID 불일치로 연결 해제될 수 있습니다.\n- 영문 : If you change the OSDP ID, the OSDP device may be disconnected due to the OSDP ID mismatch.\n\n2. 설정된 OSDP ID로 연결된 상태에서 주소 변경시 연결 끊어짐 발생"
+    ],
+    [
+      21,
+      "[OSDP Module 물리적으로 연결된 상태&도어락 추가하여 연결 된 상태]\n1. OSDP Module 상세페이지 진입\n2. OSDP ID 변경",
+      "",
+      "OSDP ID 변경 불가"
+    ],
+    [
+      22,
+      "[OSDP Module 물리적으로 연결된 상태]\n1. OSDP Module 상세페이지 진입\n2. Secure Communication ",
+      "> Secure Communication \n=> Default: Use",
+      "Use 상태로 변경 불가(비활성화)\n: 안테나 모듈의 경우 무조건 보안 통신을 하기에, 해당 옵션은 수정 하지 못함"
+    ],
+    [
+      23,
+      "1. 장치목록에서 OSDP Module에 해당하는 장치정보 확인",
+      "",
+      "1. OSDP Module인 경우 Device Address에 OSDP 주소를 표시한다.\n2. Device Status에서는 OSDP 장치의 연결 및 활성화 상태를 표시한다.\n> Normal(Active)\n> Normal(Inactive)\n> Disconnected"
+    ],
+    [
+      24,
+      "[OSDP Module 추가된 상태]\n1. OSDP Module에 추가할 무선도어락에 커맨드 카드 태깅\n2. 삑소리 나며 서비스 모드로 진입\n3. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\n4. Auto Add Wireless Door Lock 팝업 출력",
+      ": 연결할 무선도어락이 서비스 모드여야함\n: 서비스모드로 진입하기 위해 무선 도어락에 커맨드 카드 태깅",
+      "1. 무선 도어락이 OSDP Module에 연결되면 파란불 3번 깜빡인다\n2. Auto Add Wireless Door Lock 팝업에 무선 도어락 표시\n"
+    ],
+    [
+      25,
+      "[OSDP Module 추가된 상태]\n1. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\n2. Auto Add Wireless Door Lock 팝업 출력",
+      "",
+      "1. OSDP Module이 연결할 수 있는 무선 도어락이 표시된다.\n2. 무선 도어락의 Serial Number, Device Type 표시\n> Serial Number : 무선 도어락의 Serial Number\n> Device Type : 무선 도어락 장치 이름/타입 표시 (Door Handle, Door Knob)"
+    ],
+    [
+      26,
+      "[OSDP Module 추가된 상태]\n1. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\n2. Auto Add Wireless Door Lock 팝업 출력\n3. 검색된 무선 도어락 표시",
+      "",
+      "무선 도어락이 리스트에 뜨면 OSDP 모듈밑으로 자동으로 추가가 된다.\n: 무선 도어락은 무선 안테나 모듈 한대에 최개 6대까지 연결할 수 있다\n\n※ 무선 도어락 연결 사양은 최대 8대까지 연결할 수 있지만, 연결 동작 및 운영 안정성을 고려하여 6대까지만 연결할 수 있도록 제한\n\n"
+    ],
+    [
+      27,
+      "1. Device > 장치 리스트 > 추가된 무선 도어락 확인",
+      "",
+      "추가된 무선 도어락 타입에 따라 Knob, Handle 형태의 아이콘이 맞게 표시된다. "
+    ],
+    [
+      28,
+      "[OSDP Module 추가된 상태]\n1. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\n2. 서비스 모드로 진입한 무선 도어락이 없는 상태",
+      "",
+      "검색되는 무선 도어락 없어서 타임아웃 발생\n: 무선 도어락이 검색되지 않습니다. "
+    ],
+    [
+      29,
+      "[OSDP Module 추가된 상태]\n1. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\n2. 하나의 무선 도어락 서비스 모드 진입\n3. Auto Add Wireless Door Lock 팝업 출력\n4. 검색된 무선 도어락 표시",
+      "",
+      "서비스 모드에 진입한 무선 도어락만 연결되어 표시"
+    ],
+    [
+      30,
+      "[OSDP Module 추가된 상태]\n1. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\n2. 두개 이상의 무선 도어락 서비스 모드 진입\n3. Auto Add Wireless Door Lock 팝업 출력\n4. 검색된 무선 도어락 표시",
+      "",
+      "서비스 모드에 진입한 2개 이상의 무선 도어락만 연결되어 표시\n\n: TC 수정 예정.\n무선 도어락은 한번에 한 대씩만 추가할 수 있다"
+    ],
+    [
+      31,
+      "[OSDP Module 추가된 상태 & 한개 이상 연결되어있는 무선 도어락]\n1. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\n2. 이미 연결되어있는 무선 도어락 서비스 모드 진입(커맨드카드 태킹)\n3. Auto Add Wireless Door Lock 팝업 출력\n4. 검색된 무선 도어락 표시",
+      "",
+      "이미 추가되어 연결되어 있는 무선 도어락이기 때문에 팝업창에 출력되지 않는다.\n\n: TC 수정 예정\n결과값 확인 후 수정 예정\n\n: Device Timed Out??"
+    ],
+    [
+      32,
+      "[OSDP Module 추가된 상태]\n1. 발급된 라이선스로 연결 가능한 최대 대수 만큼 연결된 상태\n2. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock",
+      "",
+      "에러 메시지 발생\n: 적용된 라이선스로 연결할 수 있는 최대 무선 도어락 수에 도달하여 더 이상 추가할 수 없습니다."
+    ],
+    [
+      33,
+      "[OSDP Module 추가된 상태]\n\n1. 연결 가능한 최대 대수 확인",
+      "> 무선 안테나 모듈 2대 \n> 무선 도어락 12대",
+      "1. 무선 안테나 1대당 6개의 무선 도어락 연결 확인\n2. 무선 안테나 모듈 2대에 무선 도어락 최대 12개 연결 확인"
+    ],
+    [
+      34,
+      "1. 무선 도어락 추가, 삭제를 반복해서 진행",
+      "10번 이상",
+      "반복적인 추가, 삭제에도 문제없이 추가, 삭제되어야한다."
+    ],
+    [
+      35,
+      "1. 추가된 무선 도어락 상세페이지 진입",
+      "",
+      "아래와 같이 값 출력 됨\nInformation\n- Name : Door Lock(\"device ID\")\n- Device Type : Door Lock (비활성화)\n- Port : Add OSDP device 시 선택한 Port (비활성화)\n- Serial Number : OSDP Device 로 부터 전송되는 Device ID\n- Device ID : CS-40이 부여하는 Device ID (비활성화)\n- Product Name : Model Code (비활성화)\n- Vendor Code : OSDP Device로 부터 전송되는 Vendor Code 표시 (비활성화)\n- Hardware Version\n- Firmware Version\n- Locked\n- Status : Active\n\nAuthentication\n- Auth Mode : Card / Always\n- Full Access : Disabled"
+    ],
+    [
+      36,
+      "1. 추가된 무선 도어락이 있는 경우\n2. OSDP 모듈과 멀어지도록 무선도어락 이동",
+      "",
+      "OSDP Module과 멀어지면 연결이 끊어지고, 다시 가까워지면 연결된다."
+    ],
+    [
+      37,
+      "1. 무선 도어락의 배터리가 다한 상태\n2. 무선 도어락의 배터리 교체",
+      "",
+      "배터리가 다하면 연결이 끊어지고, 무선 도어락의 배터리 교체 시 다시 연결된다."
+    ],
+    [
+      38,
+      "1. Authentication 동작확인\n2. 사용자에 등록된 Card 인증 시도",
+      "Authentication 항목\n> Auth Mode\n=> Card Only / Always",
+      "1. 설정된 인증모드로 동작된다.\n2. 인증 성공 되며, 무선 도어락이 동작한다."
+    ],
+    [
+      39,
+      "1. Authentication 동작확인\n2. 등록되지 않은 Card 인증 시도",
+      "Authentication 항목\n> Auth Mode\n=> Card Only / Always",
+      "1. 인증 실패 되며, 무선 도어락이 동작하지 않는다."
+    ],
+    [
+      40,
+      "1. 무선 도어락에 사용자에 등록 된 MIFARE 카드 인증 시도",
+      "",
+      "인증 성공 되며, 무선 도어락이 동작된다."
+    ],
+    [
+      41,
+      "1. 무선 도어락에 사용자에 등록 된 MIFARE 이외의 카드 인증 시도",
+      "",
+      "CSN 타입의 카드는 인증 실패 되며, 무선 도어락이 동작하지 않는다.\nWiegand 타입의 카드는 아무런 반응이 없다.\n: CSN 타입의 MIFARE 카드만 지원\n: AoC 경우 추후 진행"
+    ],
+    [
+      42,
+      "1. Card 인증모드에 스케줄 설정\n2. 사용자에 등록된 Card 인증 시도",
+      "아래와 같이 스케줄을 생성\n\nSchedule1 : 현재시간 5분 후 시작 ~ 5분간 유지 후 종료\n\nAuthentication 항목\n> Auth Mode\n=> Card Only / Schedule1 ",
+      "1. 인증 실패 되며, 무선 도어락이 동작하지 않는다. (현재시간)\n2. 인증 성공 되며, 무선 도어락이 동작한다. (현재시간 5분후 Schedule1에 설정된 시간)\n3. 인증 실패 되며, 무선 도어락이 동작하지 않는다. (현재시간 10분후 Schedule1에 포함되지 않은 시간)"
+    ],
+    [
+      43,
+      "1. 사용자에 등록된 Card 연속 인증 시도",
+      "",
+      "1. 인증 성공 되며 장치의 연결이 끊기면 안된다."
+    ],
+    [
+      44,
+      "1. 블랙리스트로 등록된 Card 인증 시도",
+      "",
+      "인증 실패 되며, 무선 도어락이 동작하지 않는다."
+    ],
+    [
+      45,
+      "1. 사용자에 등록된 카드를 여러장 겹친 상태에서 장치에 연속적으로 인증시도",
+      "",
+      "1. 인증결과(=인증성공)를 정상적으로 출력해주어야 한다."
+    ],
+    [
+      46,
+      "1. 사용자에 등록되지 않은 카드를 여러장 겹친 상태에서 장치에 연속적으로 인증시도",
+      "",
+      "1. 인증결과(=인증실패)를 정상적으로 출력해주어야 한다."
+    ],
+    [
+      47,
+      "1. 사용자에 등록된 카드 + 등록되지 않은 카드를 여러장 겹친 상태에서 장치에 연속적으로 인증시도",
+      "",
+      "1. 인증결과(=실패or성공)를 정상적으로 출력해주어야 한다."
+    ],
+    [
+      48,
+      "1. Full Access : Disabled\n2. 무선 도어락을 설정하여 Door 생성\n2. 사용자에 등록된 Card 인증 시도",
+      "출입그룹이 설정되지 않은 상태",
+      "1. 인증 실패 되며, 무선 도어락이 동작하지 않는다."
+    ],
+    [
+      49,
+      "1. Full Access : Enabled\n2. 무선 도어락을 설정하여 Door 생성\n2. 사용자에 등록된 Card 인증 시도",
+      "출입그룹이 설정되지 않은 상태",
+      "1. 인증 성공 되며, 무선 도어락이 동작한다."
+    ],
+    [
+      50,
+      "1. 무선 도어락 > 장치 상세페이지 > Status를 Inactive로 변경",
+      "",
+      "비활성화 시, 무선 도어락에 설정해 놓은 Trigger & Action, Zone 등이 동작하지 않는다."
+    ],
+    [
+      51,
+      "1. 무선 도어락 > 장치 상세페이지 > Status를 Active로 변경 후 Apply",
+      "",
+      "무선 도어락이 활성화되며 설정해 놓은대로 동작한다."
+    ],
+    [
+      52,
+      "1. 무선 도어락> 마우스 우클릭> Delete Wireless Door Lock",
+      "",
+      "OSDP Module에 연결된 무선 도어락이 삭제된다.\n* 무선 도어락에 출입문/구역 등이 설정된 경우에는 삭제 불가"
+    ],
+    [
+      53,
+      "1. 무선 도어락 > 마우스 우클릭 > Deactivate All Wireless Door Lock",
+      "",
+      "1. 비활성화 시 무선 도어락의 메시지에 대한 동작들을 수행하지 않는다."
+    ],
+    [
+      54,
+      "1. CS40 > OSDP Reader LED/Buzzer 설정\n> Auth Success\n> Auth Fail",
+      "LED",
+      "1. 연결된 무선 도어락이 LED가 설정된대로 동작한다.\n: 인증 실패 시에는 별도의 설정 없이 RED LED 를 표현이 가능\n: 인증 성공일 경우에만 CS-40에서 GREEN LED 실행에 대한 명령을 전송"
+    ],
+    [
+      55,
+      "1. CS40 > Trigger&Action\n2. Device : CS40 - OSDP Module, 무선도어락\n3. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : CS40 선택 > Event List : BioStar Disconnected 선택\n- Device List에서 해당 Device 선택 후 Reconnect 버튼 1회 클릭",
+      "Action Device : 무선 도어락\n1. Action 선택\n: Disable Device",
+      "1. Disabled Device로 설정한 무선 도어락이 잠긴다.\n> 인증 불가\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 정상 동작 확인"
+    ],
+    [
+      56,
+      "1. CS40 > Trigger&Action\n2. Device : CS40 - OSDP Module, 무선도어락\n3. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : 무선 도어락 선택 > Event List : 1:1 authentication failed(Card)선택",
+      "Action Device : 무선 도어락\n1. Action 선택\n: Disable Device",
+      "1. Disabled Device로 설정한 무선 도어락이 잠긴다.\n> 인증 불가\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 정상 동작 확인"
+    ],
+    [
+      57,
+      "1. CS40 > Trigger&Action\n2. Device : CS40 - OSDP Module, 무선도어락\n3. Device > Advanced > Trigger & Action > +Add > Trigger > Input > Device : CS40 선택 > Port 설정 > Switch Type > Duration> Schedule 선택",
+      "Action Device : 무선 도어락\n1. Action 선택\n: Release All Alarm\n: Disable Device",
+      "1. Release All Alarm 무선 도어락 출력\n2. Disabled Device로 설정한 무선 도어락이 잠긴다.\n> 인증 불가\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 정상 동작 확인"
+    ],
+    [
+      58,
+      "1. 무선 도어락 Lock 상태\n2. CS40 > 마우스 우클릭 > Reboot",
+      "",
+      "CS40이 재부팅되어 재연결 된 후에도 무선 도어락은 Lock 상태 유지하여야 한다."
+    ],
+    [
+      59,
+      "1. 무선 도어락 Lock 상태\n2. 무선 도어락 상세페이지 진입\n3. Unlock으로 변경 후 상세페이지에 머무는 상태\n4. 무선 도어락 Lock 상태로 변경\n5. 상세페이지 Apply로 설정 후 장치 리스트로 전환 ",
+      "",
+      "무선 도어락은 Lock 상태여야 한다."
+    ],
+    [
+      60,
+      "1. CS40> 마우스 우클릭> Reconnected\n2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인",
+      "",
+      "1. Reconnected 시 연결이 끊긴다.\n> RS485 Disconnected 로그출력\n2. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력"
+    ],
+    [
+      61,
+      "1. CS40> 마우스 우클릭> Reboot\n2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인",
+      "",
+      "1. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력"
+    ],
+    [
+      62,
+      "1. CS40 Power Off/On\n2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인",
+      "",
+      "1. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력"
+    ],
+    [
+      63,
+      "1. MONITORING > Door Lock Status\n2. 무선 도어락의 배터리 상태 변경",
+      "0 -> 1\n1 -> 2\n2 -> 3",
+      "무선 도어락의 배터리 상태가 변경되어 발생된 Notify를 저장하여 보여준다.\n: CS40에서 12시간에 한번씩 무선 도어락의 상태를 확인"
+    ],
+    [
+      64,
+      "1. 무선 도어락의 배터리가 거의 없는 경우",
+      "",
+      "Alert을 통해 알림이 제공된다."
+    ],
+    [
+      65,
+      "1. MONITORING > Door Lock Status",
+      "",
+      "무선 도어락 상태가 표시 된다.\n: 배터리 상태가 2 또는 3인 무선 도어락이 있다면 아이콘에 알림 표시가 된다.\n- 배터리 상태 2인 경우, 노란색으로 표시\n- 배터리 상태 3인 경우, 빨간색으로 표시"
+    ],
+    [
+      66,
+      "1. MONITORING > Door Lock Status\n2. 무선 도어락의 배터리 상태 변경",
+      "",
+      "1. Event Log, Real-time Log 페이지에 로그 출력"
+    ],
+    [
+      67,
+      "1. CS40 초기화",
+      "Restore to default\n> All\n> Without Network",
+      "하위 장치가 모두 삭제된다."
+    ],
+    [
+      68,
+      "1. 무선 도어락의 대수에 대한 라이선스 발급\n2. Biostar2 라이선스 화면",
+      "",
+      "무선 도어락 라이선스 현황에 대해서 확인 가능"
+    ],
+    [
+      69,
+      "1. 무선 도어락의 대수에 대한 라이선스 발급\n2. Biostar2 라이선스 화면\n3. 추가로 무선 도어락의 라이선스 발급",
+      "",
+      "Biostar2 라이선스 화면에서 라이선스 추가된 갯수만큼 증가 확인"
+    ],
+    [
+      70,
+      "[EventLog]\n1. Biostar>MONITORING>Door Status>무선도어락 체크>'OPEN' 선택",
+      "무선도어락 door 설정된 상태",
+      "1. Event Log, Real-time Log에 관련 로그가 남는다.\n> Wireless door lock - Door open requested by operator\n> CoreStation - Door open request sent"
+    ],
+    [
+      71,
+      "[EventLog]\n1. Biostar>MONITORING>Door Status>무선도어락 체크>'Manual Unlock' 선택",
+      "무선도어락 door 설정된 상태",
+      "1. Event Log, Real-time Log에 관련 로그가 남는다.\n> Wireless door lock - Door unlock requested by operator\n> CoreStation - Door unlock request sent"
+    ],
+    [
+      72,
+      "[EventLog]\n1. Biostar>MONITORING>Door Status>무선도어락 체크>'Manual lock' 선택",
+      "무선도어락 door 설정된 상태",
+      "1. Event Log, Real-time Log에 관련 로그가 남는다.\n> Wireless door lock - Door lock requested by operator\n> CoreStation - Door lock request sent"
+    ],
+    [
+      73,
+      "[EventLog]\n1. Biostar>MONITORING>Door Status>무선도어락 체크>'Release' 선택",
+      "무선도어락 door 설정된 상태",
+      "1. Event Log, Real-time Log에 관련 로그가 남는다.\n> Wireless door lock - Door release requested by operator\n> CoreStation - Door lock release sent"
+    ],
+    [
+      74,
+      "[EventLog]\n1. 무선도어락에 인증 성공",
+      "무선도어락 door 설정된 상태",
+      "1. Event Log, Real-time Log에 관련 로그가 남는다.\n> Wireless door lock - 1:1 authentication succeeded (Card)\n> CoreStation - Door open request sent"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-302",
+    "description": "",
+    "test_step": [
+      "[OSDP Module을 물리적으로 결선하지 않은 상태]\n1. CS40> 마우스 우클릭> Add OSDP Device\n2. Select OSDP Device Type 팝업 출력\n3. OSDP Antenna 선택 후 cancel 버튼 클릭",
+      "[OSDP Module을 물리적으로 결선하지 않은 상태]\n1. CS40> 마우스 우클릭> Add OSDP Device\n2. Select OSDP Device Type 팝업 출력\n3. OSDP Antenna 선택 후 OK 버튼 클릭",
+      "[OSDP Module을 물리적으로 결선하지 않은 상태]\n1. CS40> 마우스 우클릭> Add OSDP Device\n2. Select OSDP Device Type 팝업 출력\n3. OSDP Antenna 선택 후 OK 버튼 클릭\n4. Add OSDP Device 팝업 출력\n5. OSDP Module 추가할 포트 선택",
+      "1. Add New OSDP Device 화면 출력",
+      "1. Add New OSDP Device 화면\n2. OSDP ID 입력 후 Apply",
+      "1. OSDP Module 두개가 추가된 상태\n2. CS40> 마우스 우클릭> Add OSDP Device\n3. Select OSDP Device Type 팝업 출력\n4. OSDP Antenna 선택 후 OK 버튼 클릭\n5. Add New OSDP Device 화면에서 Apply",
+      "1.OSDP Module 한개가 추가된 상태\n2.CS40>마우스우클릭>Add OSDP Device\n3.Select OSDP Device Type 팝업 출력\n4.OSDP Antenna 선택 > OK 선택\n5.Add osdp Device  팝업 확인",
+      "1. CS40> 마우스 우클릭> Add OSDP Device\n2. Select OSDP Device Type 팝업 출력\n3. OSDP Reader 선택 후 OK 버튼 클릭\n4. Add OSDP Device 팝업 출력\n5. OSDP Antenna 추가된 포트 확인",
+      "1. OSDP Antenna 하나 추가된 상태\n2. OSDP Antenna> 마우스 우클릭> Delete Device\n",
+      "1. OSDP Module 하나 추가된 상태\n2. OSDP Module> 마우스 우클릭> Delete Device > OSDP Module 삭제됨\n3. CS40> 마우스 우클릭> Add OSDP Device\n4. Select OSDP Device Type 팝업 출력\n5. OSDP Antenna 선택 후 OK 버튼 클릭\n6. Add OSDP Device 팝업 출력\n7. OSDP Module 추가할 포트 선택",
+      "1. OSDP Module 추가, 삭제를 반복해서 진행",
+      "1. 추가한 OSDP Module 상세페이지 진입",
+      "1. 설정한 OSDP ID와 다른 ID를 가진 OSDP Module을 물리적으로 CS40 과 연결\n2. 통신유무 확인",
+      "1. 설정한 OSDP ID와 동일한 ID를 가진 OSDP Module을 물리적으로 CS40 과 연결\n2. 통신유무 확인",
+      "[OSDP Module 물리적으로 연결된 상태]\n1. OSDP Module 상세페이지 진입",
+      "[OSDP Module 물리적으로 연결된 상태]\n1. Status를 Inactive로 변경",
+      "[OSDP Module 물리적으로 연결된 상태]\n1. Status를 Inactive로 변경후 Apply",
+      "[OSDP Module 물리적으로 연결된 상태]\n1. Status를 Inactive로 설정 후 동작확인",
+      "[OSDP Module 물리적으로 연결된 상태]\n1. OSDP Module 상세페이지 진입\n2. Status를 Active로 변경후 Apply",
+      "[OSDP Module 물리적으로 연결된 상태&도어락 추가하지 않은 상태]\n1. OSDP Module 상세페이지 진입\n2. OSDP ID 변경 후 Apply",
+      "[OSDP Module 물리적으로 연결된 상태&도어락 추가하여 연결 된 상태]\n1. OSDP Module 상세페이지 진입\n2. OSDP ID 변경",
+      "[OSDP Module 물리적으로 연결된 상태]\n1. OSDP Module 상세페이지 진입\n2. Secure Communication ",
+      "1. 장치목록에서 OSDP Module에 해당하는 장치정보 확인",
+      "[OSDP Module 추가된 상태]\n1. OSDP Module에 추가할 무선도어락에 커맨드 카드 태깅\n2. 삑소리 나며 서비스 모드로 진입\n3. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\n4. Auto Add Wireless Door Lock 팝업 출력",
+      "[OSDP Module 추가된 상태]\n1. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\n2. Auto Add Wireless Door Lock 팝업 출력",
+      "[OSDP Module 추가된 상태]\n1. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\n2. Auto Add Wireless Door Lock 팝업 출력\n3. 검색된 무선 도어락 표시",
+      "1. Device > 장치 리스트 > 추가된 무선 도어락 확인",
+      "[OSDP Module 추가된 상태]\n1. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\n2. 서비스 모드로 진입한 무선 도어락이 없는 상태",
+      "[OSDP Module 추가된 상태]\n1. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\n2. 하나의 무선 도어락 서비스 모드 진입\n3. Auto Add Wireless Door Lock 팝업 출력\n4. 검색된 무선 도어락 표시",
+      "[OSDP Module 추가된 상태]\n1. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\n2. 두개 이상의 무선 도어락 서비스 모드 진입\n3. Auto Add Wireless Door Lock 팝업 출력\n4. 검색된 무선 도어락 표시",
+      "[OSDP Module 추가된 상태 & 한개 이상 연결되어있는 무선 도어락]\n1. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\n2. 이미 연결되어있는 무선 도어락 서비스 모드 진입(커맨드카드 태킹)\n3. Auto Add Wireless Door Lock 팝업 출력\n4. 검색된 무선 도어락 표시",
+      "[OSDP Module 추가된 상태]\n1. 발급된 라이선스로 연결 가능한 최대 대수 만큼 연결된 상태\n2. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock",
+      "[OSDP Module 추가된 상태]\n\n1. 연결 가능한 최대 대수 확인",
+      "1. 무선 도어락 추가, 삭제를 반복해서 진행",
+      "1. 추가된 무선 도어락 상세페이지 진입",
+      "1. 추가된 무선 도어락이 있는 경우\n2. OSDP 모듈과 멀어지도록 무선도어락 이동",
+      "1. 무선 도어락의 배터리가 다한 상태\n2. 무선 도어락의 배터리 교체",
+      "1. Authentication 동작확인\n2. 사용자에 등록된 Card 인증 시도",
+      "1. Authentication 동작확인\n2. 등록되지 않은 Card 인증 시도",
+      "1. 무선 도어락에 사용자에 등록 된 MIFARE 카드 인증 시도",
+      "1. 무선 도어락에 사용자에 등록 된 MIFARE 이외의 카드 인증 시도",
+      "1. Card 인증모드에 스케줄 설정\n2. 사용자에 등록된 Card 인증 시도",
+      "1. 사용자에 등록된 Card 연속 인증 시도",
+      "1. 블랙리스트로 등록된 Card 인증 시도",
+      "1. 사용자에 등록된 카드를 여러장 겹친 상태에서 장치에 연속적으로 인증시도",
+      "1. 사용자에 등록되지 않은 카드를 여러장 겹친 상태에서 장치에 연속적으로 인증시도",
+      "1. 사용자에 등록된 카드 + 등록되지 않은 카드를 여러장 겹친 상태에서 장치에 연속적으로 인증시도",
+      "1. Full Access : Disabled\n2. 무선 도어락을 설정하여 Door 생성\n2. 사용자에 등록된 Card 인증 시도",
+      "1. Full Access : Enabled\n2. 무선 도어락을 설정하여 Door 생성\n2. 사용자에 등록된 Card 인증 시도",
+      "1. 무선 도어락 > 장치 상세페이지 > Status를 Inactive로 변경",
+      "1. 무선 도어락 > 장치 상세페이지 > Status를 Active로 변경 후 Apply",
+      "1. 무선 도어락> 마우스 우클릭> Delete Wireless Door Lock",
+      "1. 무선 도어락 > 마우스 우클릭 > Deactivate All Wireless Door Lock",
+      "1. CS40 > OSDP Reader LED/Buzzer 설정\n> Auth Success\n> Auth Fail",
+      "1. CS40 > Trigger&Action\n2. Device : CS40 - OSDP Module, 무선도어락\n3. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : CS40 선택 > Event List : BioStar Disconnected 선택\n- Device List에서 해당 Device 선택 후 Reconnect 버튼 1회 클릭",
+      "1. CS40 > Trigger&Action\n2. Device : CS40 - OSDP Module, 무선도어락\n3. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : 무선 도어락 선택 > Event List : 1:1 authentication failed(Card)선택",
+      "1. CS40 > Trigger&Action\n2. Device : CS40 - OSDP Module, 무선도어락\n3. Device > Advanced > Trigger & Action > +Add > Trigger > Input > Device : CS40 선택 > Port 설정 > Switch Type > Duration> Schedule 선택",
+      "1. 무선 도어락 Lock 상태\n2. CS40 > 마우스 우클릭 > Reboot",
+      "1. 무선 도어락 Lock 상태\n2. 무선 도어락 상세페이지 진입\n3. Unlock으로 변경 후 상세페이지에 머무는 상태\n4. 무선 도어락 Lock 상태로 변경\n5. 상세페이지 Apply로 설정 후 장치 리스트로 전환 ",
+      "1. CS40> 마우스 우클릭> Reconnected\n2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인",
+      "1. CS40> 마우스 우클릭> Reboot\n2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인",
+      "1. CS40 Power Off/On\n2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인",
+      "1. MONITORING > Door Lock Status\n2. 무선 도어락의 배터리 상태 변경",
+      "1. 무선 도어락의 배터리가 거의 없는 경우",
+      "1. MONITORING > Door Lock Status",
+      "1. MONITORING > Door Lock Status\n2. 무선 도어락의 배터리 상태 변경",
+      "1. CS40 초기화",
+      "1. 무선 도어락의 대수에 대한 라이선스 발급\n2. Biostar2 라이선스 화면",
+      "1. 무선 도어락의 대수에 대한 라이선스 발급\n2. Biostar2 라이선스 화면\n3. 추가로 무선 도어락의 라이선스 발급",
+      "[EventLog]\n1. Biostar>MONITORING>Door Status>무선도어락 체크>'OPEN' 선택",
+      "[EventLog]\n1. Biostar>MONITORING>Door Status>무선도어락 체크>'Manual Unlock' 선택",
+      "[EventLog]\n1. Biostar>MONITORING>Door Status>무선도어락 체크>'Manual lock' 선택",
+      "[EventLog]\n1. Biostar>MONITORING>Door Status>무선도어락 체크>'Release' 선택",
+      "[EventLog]\n1. 무선도어락에 인증 성공"
+    ],
+    "data": [
+      "CS40 라이선스 비활성화 상태",
+      "CS40 라이선스 활성화 상태",
+      "OSDP ID \n>0번 ~ 119번 설정 가능",
+      "10번 이상",
+      "> OSDP ID\n=> 0~119번 설정가능",
+      "> Secure Communication \n=> Default: Use",
+      ": 연결할 무선도어락이 서비스 모드여야함\n: 서비스모드로 진입하기 위해 무선 도어락에 커맨드 카드 태깅",
+      "> 무선 안테나 모듈 2대 \n> 무선 도어락 12대",
+      "10번 이상",
+      "Authentication 항목\n> Auth Mode\n=> Card Only / Always",
+      "Authentication 항목\n> Auth Mode\n=> Card Only / Always",
+      "아래와 같이 스케줄을 생성\n\nSchedule1 : 현재시간 5분 후 시작 ~ 5분간 유지 후 종료\n\nAuthentication 항목\n> Auth Mode\n=> Card Only / Schedule1 ",
+      "출입그룹이 설정되지 않은 상태",
+      "출입그룹이 설정되지 않은 상태",
+      "LED",
+      "Action Device : 무선 도어락\n1. Action 선택\n: Disable Device",
+      "Action Device : 무선 도어락\n1. Action 선택\n: Disable Device",
+      "Action Device : 무선 도어락\n1. Action 선택\n: Release All Alarm\n: Disable Device",
+      "0 -> 1\n1 -> 2\n2 -> 3",
+      "Restore to default\n> All\n> Without Network",
+      "무선도어락 door 설정된 상태",
+      "무선도어락 door 설정된 상태",
+      "무선도어락 door 설정된 상태",
+      "무선도어락 door 설정된 상태",
+      "무선도어락 door 설정된 상태"
+    ],
+    "expected_result": [
+      "팝업 닫히며 OSDP Module 추가 되지 않음",
+      "OSDP Module 추가 되지 않으며 에러 팝업 출력\n- 국문 : 무선 도어락을 사용하기 위해서는 먼저 도어락 라이선스를 활성화해야 합니다. \n- 영문 : To use the door lock, you should activate the door lock license before.",
+      "Add New OSDP Device 화면 출력",
+      "아래와 같이 값 출력 됨\nInformation\n- Title : Add New OSDP Device\n- Name : Device Name\n- OSDP Device Type : OSDP Antenna\n- Port : Port (비활성화)\n- Device ID : CS-40이 부여하는 Device ID (비활성화)\n- Vendor Code : 빈칸 (비활성화)\n- Serial Number : 빈칸 (비활성화)\n- Product Name : 빈칸 (비활성화)\n- Hardware Version : 빈칸 (비활성화)\n- Firmware Version : 빈칸 (비활성화)\n- Status : Active\n\nNetwork(RS-485)\n- OSDP ID\n- Secure Communication : Use",
+      "All Devices 화면으로 전환",
+      "1. 에러 메시지 출력\n: CS40 한대에 무선 안테나 모듈 2대까지 연결 가능하다.\n\n- 국문 : 최대 OSDP 장치 수에 도달하여 더 이상 추가할 수 없습니다.",
+      "이미 OSDP Module이 추가되어 있는 포트는 비활성화되어 출력된다.",
+      "Port 버튼 비활성화 문구 출력\n: 하나의 Port에 하나의 OSDP 모듈만 추가 가능\n- 국문 : OSDP 안테나 연결됨",
+      "OSDP Antenna 삭제가 된다.\n: 하위에 연결된 무선 도어락이 Door, Zone으로 설정되어 있는 경우 삭제 불가",
+      "Add New OSDP Module 화면 출력된다.\n: 기존 추가 되어있다가 삭제 된 OSDP Module 의 포트도 활성화 되어 표시된다.\n: 추가된 OSDP Module 삭제 후 OSDP Module을 새로 추가할 경우 문제 없이 추가되어야 한다.",
+      "반복적인 추가, 삭제에도 문제없이 추가, 삭제되어야한다.",
+      "아래와 같이 값 출력 됨\nInformation\n- Title : OSDP Antenna\n- Name : Device Name\n- OSDP Device Type : OSDP Antenna\n- Port : Port (비활성화)\n- Device ID : CS-40이 부여하는 Device ID (비활성화)\n- Vendor Code : 빈칸 (비활성화)\n- Serial Number : 빈칸 (비활성화)\n- Product Name : 빈칸 (비활성화)\n- Hardware Version : 빈칸 (비활성화)\n- Firmware Version : 빈칸 (비활성화)\n- Status : Active\n\nNetwork(RS-485)\n- OSDP ID : 설정한 OSDP ID\n- Secure Communication : Use",
+      "설정한 OSDP ID와 다른 ID를 가진 OSDP Device가 해당 포트에 결선되면 연결되지 않는다.",
+      "설정한 OSDP ID와 동일한 ID를 가진 OSDP Device가 해당 포트에 결선되면 연결이 이루어진다.\n: RS-485 Connected 이벤트 로그 발생",
+      "OSDP Module 정보가 정상적으로 출력된다.",
+      "Deactivation Warning Message 팝업 발생\n비활성화 시, 해당 OSDP Module 하위에 연결된 Door Lock 에 설정해 놓은 Trigger & Action, Zone 등이 동작하지 않을 수 있다는 경고 메시지를 발생\n- 국문 : OSDP 장치가 비활성화 되고 설정한 대로 동작하지 않습니다. 계속 하시겠습니까?\n- 영문 : OSDP device will not work once it is deactivated. Continue?",
+      "1. Device List의 Status가 Normal (Inactive)로 출력\n2. BioStar UI상 아이콘은 회색처리",
+      "1. 비활성화 시, CS40 은 OSDP Module 및 해당 OSDP Module 에 연결된 Door Lock 의 메시지에 대한 동작들을 수행하지 않는다.",
+      "1. Device List의 Status가 Normal (Active)로 출력\n2. 장치에 입력에 따른 CS40이 동작",
+      "1. OSDP 변경 가능하지만 연결 끊어짐을 안내하는 메시지 출력\n- 국문 : OSDP ID를 변경하면 OSDP 장치가 OSDP ID 불일치로 연결 해제될 수 있습니다.\n- 영문 : If you change the OSDP ID, the OSDP device may be disconnected due to the OSDP ID mismatch.\n\n2. 설정된 OSDP ID로 연결된 상태에서 주소 변경시 연결 끊어짐 발생",
+      "OSDP ID 변경 불가",
+      "Use 상태로 변경 불가(비활성화)\n: 안테나 모듈의 경우 무조건 보안 통신을 하기에, 해당 옵션은 수정 하지 못함",
+      "1. OSDP Module인 경우 Device Address에 OSDP 주소를 표시한다.\n2. Device Status에서는 OSDP 장치의 연결 및 활성화 상태를 표시한다.\n> Normal(Active)\n> Normal(Inactive)\n> Disconnected",
+      "1. 무선 도어락이 OSDP Module에 연결되면 파란불 3번 깜빡인다\n2. Auto Add Wireless Door Lock 팝업에 무선 도어락 표시\n",
+      "1. OSDP Module이 연결할 수 있는 무선 도어락이 표시된다.\n2. 무선 도어락의 Serial Number, Device Type 표시\n> Serial Number : 무선 도어락의 Serial Number\n> Device Type : 무선 도어락 장치 이름/타입 표시 (Door Handle, Door Knob)",
+      "무선 도어락이 리스트에 뜨면 OSDP 모듈밑으로 자동으로 추가가 된다.\n: 무선 도어락은 무선 안테나 모듈 한대에 최개 6대까지 연결할 수 있다\n\n※ 무선 도어락 연결 사양은 최대 8대까지 연결할 수 있지만, 연결 동작 및 운영 안정성을 고려하여 6대까지만 연결할 수 있도록 제한\n\n",
+      "추가된 무선 도어락 타입에 따라 Knob, Handle 형태의 아이콘이 맞게 표시된다. ",
+      "검색되는 무선 도어락 없어서 타임아웃 발생\n: 무선 도어락이 검색되지 않습니다. ",
+      "서비스 모드에 진입한 무선 도어락만 연결되어 표시",
+      "서비스 모드에 진입한 2개 이상의 무선 도어락만 연결되어 표시\n\n: TC 수정 예정.\n무선 도어락은 한번에 한 대씩만 추가할 수 있다",
+      "이미 추가되어 연결되어 있는 무선 도어락이기 때문에 팝업창에 출력되지 않는다.\n\n: TC 수정 예정\n결과값 확인 후 수정 예정\n\n: Device Timed Out??",
+      "에러 메시지 발생\n: 적용된 라이선스로 연결할 수 있는 최대 무선 도어락 수에 도달하여 더 이상 추가할 수 없습니다.",
+      "1. 무선 안테나 1대당 6개의 무선 도어락 연결 확인\n2. 무선 안테나 모듈 2대에 무선 도어락 최대 12개 연결 확인",
+      "반복적인 추가, 삭제에도 문제없이 추가, 삭제되어야한다.",
+      "아래와 같이 값 출력 됨\nInformation\n- Name : Door Lock(\"device ID\")\n- Device Type : Door Lock (비활성화)\n- Port : Add OSDP device 시 선택한 Port (비활성화)\n- Serial Number : OSDP Device 로 부터 전송되는 Device ID\n- Device ID : CS-40이 부여하는 Device ID (비활성화)\n- Product Name : Model Code (비활성화)\n- Vendor Code : OSDP Device로 부터 전송되는 Vendor Code 표시 (비활성화)\n- Hardware Version\n- Firmware Version\n- Locked\n- Status : Active\n\nAuthentication\n- Auth Mode : Card / Always\n- Full Access : Disabled",
+      "OSDP Module과 멀어지면 연결이 끊어지고, 다시 가까워지면 연결된다.",
+      "배터리가 다하면 연결이 끊어지고, 무선 도어락의 배터리 교체 시 다시 연결된다.",
+      "1. 설정된 인증모드로 동작된다.\n2. 인증 성공 되며, 무선 도어락이 동작한다.",
+      "1. 인증 실패 되며, 무선 도어락이 동작하지 않는다.",
+      "인증 성공 되며, 무선 도어락이 동작된다.",
+      "CSN 타입의 카드는 인증 실패 되며, 무선 도어락이 동작하지 않는다.\nWiegand 타입의 카드는 아무런 반응이 없다.\n: CSN 타입의 MIFARE 카드만 지원\n: AoC 경우 추후 진행",
+      "1. 인증 실패 되며, 무선 도어락이 동작하지 않는다. (현재시간)\n2. 인증 성공 되며, 무선 도어락이 동작한다. (현재시간 5분후 Schedule1에 설정된 시간)\n3. 인증 실패 되며, 무선 도어락이 동작하지 않는다. (현재시간 10분후 Schedule1에 포함되지 않은 시간)",
+      "1. 인증 성공 되며 장치의 연결이 끊기면 안된다.",
+      "인증 실패 되며, 무선 도어락이 동작하지 않는다.",
+      "1. 인증결과(=인증성공)를 정상적으로 출력해주어야 한다.",
+      "1. 인증결과(=인증실패)를 정상적으로 출력해주어야 한다.",
+      "1. 인증결과(=실패or성공)를 정상적으로 출력해주어야 한다.",
+      "1. 인증 실패 되며, 무선 도어락이 동작하지 않는다.",
+      "1. 인증 성공 되며, 무선 도어락이 동작한다.",
+      "비활성화 시, 무선 도어락에 설정해 놓은 Trigger & Action, Zone 등이 동작하지 않는다.",
+      "무선 도어락이 활성화되며 설정해 놓은대로 동작한다.",
+      "OSDP Module에 연결된 무선 도어락이 삭제된다.\n* 무선 도어락에 출입문/구역 등이 설정된 경우에는 삭제 불가",
+      "1. 비활성화 시 무선 도어락의 메시지에 대한 동작들을 수행하지 않는다.",
+      "1. 연결된 무선 도어락이 LED가 설정된대로 동작한다.\n: 인증 실패 시에는 별도의 설정 없이 RED LED 를 표현이 가능\n: 인증 성공일 경우에만 CS-40에서 GREEN LED 실행에 대한 명령을 전송",
+      "1. Disabled Device로 설정한 무선 도어락이 잠긴다.\n> 인증 불가\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 정상 동작 확인",
+      "1. Disabled Device로 설정한 무선 도어락이 잠긴다.\n> 인증 불가\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 정상 동작 확인",
+      "1. Release All Alarm 무선 도어락 출력\n2. Disabled Device로 설정한 무선 도어락이 잠긴다.\n> 인증 불가\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 정상 동작 확인",
+      "CS40이 재부팅되어 재연결 된 후에도 무선 도어락은 Lock 상태 유지하여야 한다.",
+      "무선 도어락은 Lock 상태여야 한다.",
+      "1. Reconnected 시 연결이 끊긴다.\n> RS485 Disconnected 로그출력\n2. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력",
+      "1. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력",
+      "1. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력",
+      "무선 도어락의 배터리 상태가 변경되어 발생된 Notify를 저장하여 보여준다.\n: CS40에서 12시간에 한번씩 무선 도어락의 상태를 확인",
+      "Alert을 통해 알림이 제공된다.",
+      "무선 도어락 상태가 표시 된다.\n: 배터리 상태가 2 또는 3인 무선 도어락이 있다면 아이콘에 알림 표시가 된다.\n- 배터리 상태 2인 경우, 노란색으로 표시\n- 배터리 상태 3인 경우, 빨간색으로 표시",
+      "1. Event Log, Real-time Log 페이지에 로그 출력",
+      "하위 장치가 모두 삭제된다.",
+      "무선 도어락 라이선스 현황에 대해서 확인 가능",
+      "Biostar2 라이선스 화면에서 라이선스 추가된 갯수만큼 증가 확인",
+      "1. Event Log, Real-time Log에 관련 로그가 남는다.\n> Wireless door lock - Door open requested by operator\n> CoreStation - Door open request sent",
+      "1. Event Log, Real-time Log에 관련 로그가 남는다.\n> Wireless door lock - Door unlock requested by operator\n> CoreStation - Door unlock request sent",
+      "1. Event Log, Real-time Log에 관련 로그가 남는다.\n> Wireless door lock - Door lock requested by operator\n> CoreStation - Door lock request sent",
+      "1. Event Log, Real-time Log에 관련 로그가 남는다.\n> Wireless door lock - Door release requested by operator\n> CoreStation - Door lock release sent",
+      "1. Event Log, Real-time Log에 관련 로그가 남는다.\n> Wireless door lock - 1:1 authentication succeeded (Card)\n> CoreStation - Door open request sent"
+    ]
+  }
+}

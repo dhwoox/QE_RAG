@@ -1,0 +1,51 @@
+{
+  "id": "COMMONR-216",
+  "content": [
+    [
+      1,
+      "<Controller - One Device Reader Wiegand 연결>\n\n1. Device> Controller 선택\n2. Wiegand In/Out: In 설정\n3. Wiegand 포맷 : 모두체크\n4. One Device Reader에 카드 Read(Wiegand Card)",
+      "[BioStar]\nWiegand Input \n> Wiegand Reader 미추가 상태\nOne Device Reader\n> 저장된 사용자에 카드ID, 지문, PIN, 얼굴 등록된 상태\n> 3rd Party Wiegand Reader",
+      "시스템에 설정된 포맷중에서 자동으로 매칭\n> Format Type의 영향을 받지 않음"
+    ],
+    [
+      2,
+      "<Controller - One Device Reader Wiegand 연결>\n\n1. Device> One Device Reader Wiegand> Card ID 형식> Format Type: Wiegand 설정\n2. 인증모드 설정\n3. Wiegand Out 설정 및 Bypass Mode 사용함 설정\n4. Wiegand 포맷 : Wiegand Card와 동일한 포맷으로 설정\n5. One Device Reader(3rd Party Wiegand Reader)에 카드 인증 시도(Wiegand / CSN Card / ToM)",
+      "[BioStar]\nWiegand Input \n> Wiegand Reader 미추가 상태\nOne Device Reader\n> 저장된 사용자에 카드ID, 지문, PIN, 얼굴 등록된 상태\n> 3rd Party Wiegand Reader",
+      "1) Card ID가 Bypass되어 출력\n> Wiegand Out인 경우 인증하지않고 카드ID를 내보내야 한다.\n> Wiegand Out 장치에 카드입력시 \"띡\"소리만 출력되어야 한다.\n> 카드가 입력수단의 처음인 경우 카드입력시 다음의 인증수단을 입력하지 않더라도 바로 카드ID가 출력되어야 한다."
+    ],
+    [
+      3,
+      "<Controller - One Device Reader Wiegand 연결>\n\n1. Device> One Device Reader Wiegand> Card ID 형식> Format Type: Wiegand 설정\n2. 인증모드 설정\n3. Wiegand Out 설정 및 Bypass Mode 사용안함 설정\n4. Wiegand 포맷 : Wiegand Card와 동일한 포맷으로 설정\n5. One Device Reader에 인증 시도",
+      "[BioStar]\nWiegand Input \n> Wiegand Reader 미추가 상태\nOne Device Reader\n> 저장된 사용자에 카드ID, 지문, PIN, 얼굴 등록된 상태\n> 3rd Party Wiegand Reader\n인증모드\n> 지문인증모드\n> 얼굴인증모드\n> 카드인증모드\n> ID인증모드",
+      "1) 인증성공 후 지정된 포맷으로 카드ID 출력\n2) 인증한 사용자에 등록된 첫번째 카드가 Wiegand 카드인 경우 해당 Wiegand Format으로 출력(지문/얼굴/ID 인증모드)\n3) 등록된 첫번째 카드가 Wiegand 카드가 아닌 경우 설정한 Format에 맞게 출력(지문/얼굴/ID 인증모드)\nWiegand Out 장치에서 인증으로 동작 후 인증성공되면 카드ID가 출력되어야 한다.\n> SCC인 경우 24 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴 인 경우 24 Byte 카드 ID를 사용하여 출력함\n: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함\n> AOC인 경우 32 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다."
+    ],
+    [
+      4,
+      "<Controller - One Device Reader Wiegand 연결>\n1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Wiegand Bypass: Disable 설정\n4. One Device Reader에 인증 시도",
+      "[BioStar]\nWiegand Input \n> Wiegand Reader 미추가 상태\nOne Device Reader\n> 저장된 사용자에 지문 Or 얼굴만 등록된 상태\n> 3rd Party Wiegand Reader\n\nFS2 제외 장치\n> 지문인증모드\nFS2\n> 얼굴인증모드",
+      "1. One Device Reader에 지문 or 얼굴 인증시 Wiegand In 장치에서 아무런 반응이 없어야 한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-216",
+    "description": "",
+    "test_step": [
+      "<Controller - One Device Reader Wiegand 연결>\n\n1. Device> Controller 선택\n2. Wiegand In/Out: In 설정\n3. Wiegand 포맷 : 모두체크\n4. One Device Reader에 카드 Read(Wiegand Card)",
+      "<Controller - One Device Reader Wiegand 연결>\n\n1. Device> One Device Reader Wiegand> Card ID 형식> Format Type: Wiegand 설정\n2. 인증모드 설정\n3. Wiegand Out 설정 및 Bypass Mode 사용함 설정\n4. Wiegand 포맷 : Wiegand Card와 동일한 포맷으로 설정\n5. One Device Reader(3rd Party Wiegand Reader)에 카드 인증 시도(Wiegand / CSN Card / ToM)",
+      "<Controller - One Device Reader Wiegand 연결>\n\n1. Device> One Device Reader Wiegand> Card ID 형식> Format Type: Wiegand 설정\n2. 인증모드 설정\n3. Wiegand Out 설정 및 Bypass Mode 사용안함 설정\n4. Wiegand 포맷 : Wiegand Card와 동일한 포맷으로 설정\n5. One Device Reader에 인증 시도",
+      "<Controller - One Device Reader Wiegand 연결>\n1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Wiegand Bypass: Disable 설정\n4. One Device Reader에 인증 시도"
+    ],
+    "data": [
+      "[BioStar]\nWiegand Input \n> Wiegand Reader 미추가 상태\nOne Device Reader\n> 저장된 사용자에 카드ID, 지문, PIN, 얼굴 등록된 상태\n> 3rd Party Wiegand Reader",
+      "[BioStar]\nWiegand Input \n> Wiegand Reader 미추가 상태\nOne Device Reader\n> 저장된 사용자에 카드ID, 지문, PIN, 얼굴 등록된 상태\n> 3rd Party Wiegand Reader",
+      "[BioStar]\nWiegand Input \n> Wiegand Reader 미추가 상태\nOne Device Reader\n> 저장된 사용자에 카드ID, 지문, PIN, 얼굴 등록된 상태\n> 3rd Party Wiegand Reader\n인증모드\n> 지문인증모드\n> 얼굴인증모드\n> 카드인증모드\n> ID인증모드",
+      "[BioStar]\nWiegand Input \n> Wiegand Reader 미추가 상태\nOne Device Reader\n> 저장된 사용자에 지문 Or 얼굴만 등록된 상태\n> 3rd Party Wiegand Reader\n\nFS2 제외 장치\n> 지문인증모드\nFS2\n> 얼굴인증모드"
+    ],
+    "expected_result": [
+      "시스템에 설정된 포맷중에서 자동으로 매칭\n> Format Type의 영향을 받지 않음",
+      "1) Card ID가 Bypass되어 출력\n> Wiegand Out인 경우 인증하지않고 카드ID를 내보내야 한다.\n> Wiegand Out 장치에 카드입력시 \"띡\"소리만 출력되어야 한다.\n> 카드가 입력수단의 처음인 경우 카드입력시 다음의 인증수단을 입력하지 않더라도 바로 카드ID가 출력되어야 한다.",
+      "1) 인증성공 후 지정된 포맷으로 카드ID 출력\n2) 인증한 사용자에 등록된 첫번째 카드가 Wiegand 카드인 경우 해당 Wiegand Format으로 출력(지문/얼굴/ID 인증모드)\n3) 등록된 첫번째 카드가 Wiegand 카드가 아닌 경우 설정한 Format에 맞게 출력(지문/얼굴/ID 인증모드)\nWiegand Out 장치에서 인증으로 동작 후 인증성공되면 카드ID가 출력되어야 한다.\n> SCC인 경우 24 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴 인 경우 24 Byte 카드 ID를 사용하여 출력함\n: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함\n> AOC인 경우 32 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.",
+      "1. One Device Reader에 지문 or 얼굴 인증시 Wiegand In 장치에서 아무런 반응이 없어야 한다."
+    ]
+  }
+}

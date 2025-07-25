@@ -1,5 +1,21 @@
 ■ 이슈 키: COMMONR-277
 ■ 제목: [Intelligent Slave] 장치 초기화에 따른 Intelligent PD 지원 옵션 초기화
+■ 설명: 요구사항 정의
+ > http://192.168.1.4:8001/browse/BDP-92
+
+관련 테스트를 진행하기 위한 전제조건
+> CS40 V1.5.1 / BEW2 V1.6.3 / BSL2 V1.6.1 / BEP2 V1.4.1 / XP2 V1.2.3 이상 버전
+> RS-485 mode 가 Default 상태로 Suprema 장치가 아닌 3rd-party Controller 에 연결> non-secure 모드
+> non-secure 모드
+> HID OSDP Tool과 연결 필요.
+
+작성된 TestCase 내용
+ > 장치 초기화에 따른 Exception Code / Use User ID / OSDP Address 옵션 초기화 유무 및 3rd party Controller와의 연결상태 확인
+ - Network Reset: Intelligent PD 설정값 초기화로 동작
+ - Config Reset: Intelligent PD 설정값 초기화로 동작
+ - Without Network: Intelligent PD 설정값 유지
+ - Secure Tamper: Intelligent PD 설정값 유지
+ - Factory Reset: Intelligent PD 설정값 초기화로 동작
 ============================================================
 
 ■ 테스트 스텝

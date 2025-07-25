@@ -1,5 +1,18 @@
 ■ 이슈 키: COMMONR-370
 ■ 제목: [BDP-1067]Mifare Plus EV1 SL1, SL3, SL1SL3 Mix Mode 지원[PFE 281]
+■ 설명: https://jira.suprema.co.kr/browse/BDP-1067
+ * 지원 바이오스타: V2.9.9 이상
+ => 바이오스타 UI상 Mifare Tab에서 Crypto-1 <-> AES-128 옵션을 토글키로 지원
+
+ * 지원 Device Manager: v1.2.1 이상
+
+ * 선 반영모델: XPD2 V1.8.1(2025-03 등록)
+ => 이후 릴리즈되는 모델들에 대해 순차 적용 진행
+ 
+※ Mifare Plus Suprema layout은 SL3만 지원한다.
+※ SL1 > SL2 > SL3 => SL3가 보안이 가장 좋음. 보안상 상위 레벨에서 하위 레벨로 갈 수 없음.
+※ 바이오스타 UI상에서는 지원 Byte를 모두 설정하지 않더라도 적용이 됨. 이때 설정하지 않은 뒷부분은 0xFF로 채워짐. 즉 mifare key(6byte)를 11로 설정하면 뒷부분은 0xFF로 채워서 내려보내줌(11 ff ff ff ff ff)
+=> 단, SDK는 예외. 모두 설정해줘야 함.
 ============================================================
 
 ■ 테스트 스텝

@@ -1,5 +1,33 @@
 ■ 이슈 키: COMMONR-211
 ■ 제목: [타사 ACU]Slave Device의 AoC 카드 매칭 기능
+■ 설명: (Master가 슈프리마 단말기가 아닌 경우) Slave 장치에서 Aoc Card 인증시 Slave 장치에서 매칭이 이루어지도록 함을 목적으로 한다.
+
+[동작원리]
+> AOC Card에 Write된 사용자 정보를 토대로 Matching이 성공이되면 Master 장치로 Card ID가 전송이되고 Master에서 Success를 내려보내주면 인증성공으로 동작된다.
+
+[환경구성]
+1. OsdpPanelShell 실행
+2. 커넥터를 이용해 PC와 Slave로 연결할 장치 연결
+3. Port 및 Baudrate 설정 후 Connect
+4. Start Poll 클릭해 장치와의 통신확인(Start Poll 하기 전까지는 Yellow LED 점멸, Start Poll시 Cyan/Blue LED 점멸)
+
+[OSDP DTK-v1.0.6/V2.0.0 Tool에서 확인가능 방법]
+1. Card Data, LED/Buzzer Control 정보를 확인할 수 있다
+> Raw Bit Array Card Data Report
+> LED Control Command
+> Buzzer Control Command 
+
+※ HID OSDP Tool와 장치간 LED/Buzzer 제어동작 확인 TC 추가.
+
+※ OSDP Test Case 첨부(엑셀파일)
+
+※ SCC/AOC Card에 대한 BitCount 동작사양관련해 TC Update
+1. SCC
+> iclass, seos는 pac, mifare/desfire는 card id 송출
+
+2. AOC
+> iclass, seos는 pac
+> mifare/desfire : numberic-> card id, alphanumeric -> 256bit card id(==user id) 송출
 ============================================================
 
 ■ 테스트 스텝

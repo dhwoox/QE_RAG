@@ -1,0 +1,93 @@
+{
+  "id": "COMMONR-265",
+  "content": [
+    [
+      1,
+      "1. Device> Device 선택> Device 상세 정보\n2. Server Matching 설정",
+      "Server Matching\n> Active\n> Inactive",
+      "1. 서버매칭에 대해 설정할 수 있어야 한다.\n> 서버매칭으로 동작할지, 로컬(장치)매칭으로 동작할 지에 대한 설정"
+    ],
+    [
+      2,
+      "<BioStar에서 서버매칭: 사용 설정한 상태>\n1. Device> Device 선택> Device 상세 정보\n2. Server Matching: Active 설정\n3. 인증모드 설정\n4. 인증시도",
+      "인증모드\n> 장치인증모드\n> 개인인증모드\n> 이중인증\n",
+      "1. 각 인증모드에 맞게 서버에 저장된 사용자와 매칭이 이루어져야 한다.\n> 인증 성공/실패에 따라 로그가 남는다. "
+    ],
+    [
+      3,
+      "<BioStar에서 서버매칭: 사용안함 설정한 상태>\n1. Device> Device 선택> Device 상세 정보\n2. Server Matching: Deactivate 설정\n3. 인증모드 설정\n4. 인증시도",
+      "인증모드\n> 장치인증모드\n> 개인인증모드\n> 이중인증",
+      "1. 장치 매칭이 이루어져야 한다.\n> 인증 성공/실패에 따라 로그가 남는다."
+    ],
+    [
+      4,
+      "<BioStar<->Device간 서버매칭 설정값을 상이하게 설정한 상태>\n1. Device의 인증모드 설정\n2. 인증시도",
+      "인증모드\n> 장치인증모드\n> 개인인증모드\n> 이중 인증\n\nBioStar<->Device간 서버매칭 설정\n> BioStar: 사용함 <-> Device: 사용안함\n> BioStar: 사용안함 <-> Device: 사용함",
+      "1. BioStar에서는 서버매칭: 사용안함 <-> Device에서는 서버매칭: 사용함 인 경우 \"서버인증거부\"로 동작해야 한다.\n> \"서버인증거부\" 로그가 표시되어야 한다.\n2. BioStar에서는 서버매칭: 사용함 <-> Device에서는 서버매칭: 사용안함 인 경우 로컬매칭으로 동작해야 한다."
+    ],
+    [
+      5,
+      "<BioStar에서 서버매칭: 사용 설정한 상태>\n1. Device> 장치 추가\n2. Master/Default 장치 상세정보> Server Matching: Activate 설정\n3. Master/Slave/Wiegand Reader 에 인증시도",
+      "장치추가\n> 단일장치\n> Master-Slave 연결장치\n> Master-Slave/DM20-Wiegand Reader\n> Master/Default-Wiegand Reader",
+      "1. 서버에 등록된 사용자와 매칭이 이루어져야 한다.\n2. Slave/Wiegand Reader 장치인 경우 Master의 Server Matching 설정을 따라가야 한다.\n> Slave/Wiegand Reader에 대해 (BioStar UI 상)서버매칭을 설정할 수 없어야 한다.\n> F2(DB/AB)- 서버 매칭 항목 미표시(장치, BioStar UI 상)"
+    ],
+    [
+      6,
+      "<BioStar에서 서버매칭: 사용 설정한 상태>\n1. Device > Device List > Device 선택 > Device 상세 정보\n2. Server Matching : Activate 설정\n3. BioStar 서버 종료\n4. 인증시도",
+      "",
+      "1. 장치에 저장된 사용자와 매칭이 이루어져야 한다.\n> 인증 성공/실패에 따라 로그가 남는다."
+    ],
+    [
+      7,
+      "<BioStar에서 서버매칭: 사용 설정한 상태>\n1. Device > Device List > Device 선택 > Device 상세 정보\n2. Server Matching : Activate 설정\n3. 장치재부팅 시도\n4. TCP Disconnected 상태에서 인증시도",
+      "",
+      "1. 장치에 저장된 사용자와 매칭이 이루어져야 한다.\n> 인증 성공/실패에 따라 로그가 남는다."
+    ],
+    [
+      8,
+      "<BioStar에서 서버매칭: 사용 설정한 상태>\n1. Device > Device List > Device 선택 > Device 상세 정보\n2. Server Matching : Activate 설정\n3. 장치의 랜선 물리적으로 제거\n4. 인증시도",
+      "",
+      "1. Server와 Disconnected된 것이 아니라 소켓은 유지를 하고 있기 때문에 \"인증실패\"로 동작해야 한다.\n> Network disconnected(Link disconnected)확인\n2. 서버와 연결이 완전히 끊어졌음이 확인되면 Local Matching 으로 동작되어야 한다."
+    ],
+    [
+      9,
+      "<BioStar에서 서버매칭: 사용 설정한 상태>\n1. Device > Device List > Device 선택 > Device 상세 정보\n2. Server Matching : Activate 설정\n3. BioStar 서버 종료\n4. 인증시도",
+      "1) 물리적으로 PC 자체 종료\n2) BioStar Server만 종료",
+      "1. 장치에 저장된 사용자와 매칭이 이루어져야 한다.\n> 인증 성공/실패에 따라 로그가 남는다.\n2. 서버 매칭을 수행할 때 서버와 연결이 끊어진 상태라면 로컬 매칭에 의해 인증 속도에 차이가 없어야 한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-265",
+    "description": "",
+    "test_step": [
+      "1. Device> Device 선택> Device 상세 정보\n2. Server Matching 설정",
+      "<BioStar에서 서버매칭: 사용 설정한 상태>\n1. Device> Device 선택> Device 상세 정보\n2. Server Matching: Active 설정\n3. 인증모드 설정\n4. 인증시도",
+      "<BioStar에서 서버매칭: 사용안함 설정한 상태>\n1. Device> Device 선택> Device 상세 정보\n2. Server Matching: Deactivate 설정\n3. 인증모드 설정\n4. 인증시도",
+      "<BioStar<->Device간 서버매칭 설정값을 상이하게 설정한 상태>\n1. Device의 인증모드 설정\n2. 인증시도",
+      "<BioStar에서 서버매칭: 사용 설정한 상태>\n1. Device> 장치 추가\n2. Master/Default 장치 상세정보> Server Matching: Activate 설정\n3. Master/Slave/Wiegand Reader 에 인증시도",
+      "<BioStar에서 서버매칭: 사용 설정한 상태>\n1. Device > Device List > Device 선택 > Device 상세 정보\n2. Server Matching : Activate 설정\n3. BioStar 서버 종료\n4. 인증시도",
+      "<BioStar에서 서버매칭: 사용 설정한 상태>\n1. Device > Device List > Device 선택 > Device 상세 정보\n2. Server Matching : Activate 설정\n3. 장치재부팅 시도\n4. TCP Disconnected 상태에서 인증시도",
+      "<BioStar에서 서버매칭: 사용 설정한 상태>\n1. Device > Device List > Device 선택 > Device 상세 정보\n2. Server Matching : Activate 설정\n3. 장치의 랜선 물리적으로 제거\n4. 인증시도",
+      "<BioStar에서 서버매칭: 사용 설정한 상태>\n1. Device > Device List > Device 선택 > Device 상세 정보\n2. Server Matching : Activate 설정\n3. BioStar 서버 종료\n4. 인증시도"
+    ],
+    "data": [
+      "Server Matching\n> Active\n> Inactive",
+      "인증모드\n> 장치인증모드\n> 개인인증모드\n> 이중인증\n",
+      "인증모드\n> 장치인증모드\n> 개인인증모드\n> 이중인증",
+      "인증모드\n> 장치인증모드\n> 개인인증모드\n> 이중 인증\n\nBioStar<->Device간 서버매칭 설정\n> BioStar: 사용함 <-> Device: 사용안함\n> BioStar: 사용안함 <-> Device: 사용함",
+      "장치추가\n> 단일장치\n> Master-Slave 연결장치\n> Master-Slave/DM20-Wiegand Reader\n> Master/Default-Wiegand Reader",
+      "1) 물리적으로 PC 자체 종료\n2) BioStar Server만 종료"
+    ],
+    "expected_result": [
+      "1. 서버매칭에 대해 설정할 수 있어야 한다.\n> 서버매칭으로 동작할지, 로컬(장치)매칭으로 동작할 지에 대한 설정",
+      "1. 각 인증모드에 맞게 서버에 저장된 사용자와 매칭이 이루어져야 한다.\n> 인증 성공/실패에 따라 로그가 남는다. ",
+      "1. 장치 매칭이 이루어져야 한다.\n> 인증 성공/실패에 따라 로그가 남는다.",
+      "1. BioStar에서는 서버매칭: 사용안함 <-> Device에서는 서버매칭: 사용함 인 경우 \"서버인증거부\"로 동작해야 한다.\n> \"서버인증거부\" 로그가 표시되어야 한다.\n2. BioStar에서는 서버매칭: 사용함 <-> Device에서는 서버매칭: 사용안함 인 경우 로컬매칭으로 동작해야 한다.",
+      "1. 서버에 등록된 사용자와 매칭이 이루어져야 한다.\n2. Slave/Wiegand Reader 장치인 경우 Master의 Server Matching 설정을 따라가야 한다.\n> Slave/Wiegand Reader에 대해 (BioStar UI 상)서버매칭을 설정할 수 없어야 한다.\n> F2(DB/AB)- 서버 매칭 항목 미표시(장치, BioStar UI 상)",
+      "1. 장치에 저장된 사용자와 매칭이 이루어져야 한다.\n> 인증 성공/실패에 따라 로그가 남는다.",
+      "1. 장치에 저장된 사용자와 매칭이 이루어져야 한다.\n> 인증 성공/실패에 따라 로그가 남는다.",
+      "1. Server와 Disconnected된 것이 아니라 소켓은 유지를 하고 있기 때문에 \"인증실패\"로 동작해야 한다.\n> Network disconnected(Link disconnected)확인\n2. 서버와 연결이 완전히 끊어졌음이 확인되면 Local Matching 으로 동작되어야 한다.",
+      "1. 장치에 저장된 사용자와 매칭이 이루어져야 한다.\n> 인증 성공/실패에 따라 로그가 남는다.\n2. 서버 매칭을 수행할 때 서버와 연결이 끊어진 상태라면 로컬 매칭에 의해 인증 속도에 차이가 없어야 한다."
+    ]
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "id": "COMMONR-178",
+  "content": [
+    [
+      1,
+      "1. Monitoring > Lift Status > 수동 잠김",
+      "1. 수동잠김",
+      "1. 해당 Lift에 설정된 층이 비활성화 된다.\n2. 인증성공시 Relay는 동작하지 않는다."
+    ],
+    [
+      2,
+      "1. Monitoring > Lift Status > 수동 개방",
+      "1. 수동 개방",
+      "1. 비활성화 되어있는 Lift를 다시 활성화 시킨다.\n2. 인증시도시 접근 가능하다."
+    ],
+    [
+      3,
+      "1. Monitoring > Lift Status > 해제",
+      "1. 해제",
+      "1. 수동 잠김 또는 수동 개방 상태를 해제할 수 있다."
+    ],
+    [
+      4,
+      "1. Monitoring > Lift Status > 열림",
+      "1. 열림",
+      "1. 인증하지 않아도 해당 Lift에 접근 가능하다.\n2. 해당 Lift의 Relay 입력 시간동안 Relay가 동작한다."
+    ],
+    [
+      5,
+      "1. Monitoring > Lift Status > 알람 해제",
+      "1. 알람 해제",
+      "1. Lift 옵션에서 설정한 알람 Action을 해제할 수 있다.\n> 모든 층 릴레이 열림\n> 신호출력\n2. 알람 해제시, 이전 상태로 복구 된다.\n> 예 : 수동 잠김 상태에서 알람이 걸린 후 알람 해제 시도시 수동 잠김 상태로 돌아감."
+    ],
+    [
+      6,
+      "1. Lift의 Alarm을 모든층 릴레이 열림으로 설정\n2. FireAlarm Zone을 Lift로 설정\n3. FireAlarm 발생\n4. Lift Status에서 Clear Alarm 시도",
+      "",
+      "1. FireAlarm으로 Floor가 On된 경우 Floor Status에서 Clear 불가하다."
+    ],
+    [
+      7,
+      "[사용자 인증에 의한 시작: 비활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 상태확인 및 동작확인",
+      "",
+      "1. Manual Lock으로 동작된다.\n> 로그상 Schedule Unlock, Manual Lock으로 표시\n2. Lock 상태를 유지한다."
+    ],
+    [
+      8,
+      "[사용자 인증에 의한 시작: 비활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 해제\n5. 동작확인",
+      "",
+      "1. Schedule Unlock으로 동작된다."
+    ],
+    [
+      9,
+      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 상태확인 및 동작확인",
+      "",
+      "1. Manual Lock으로 동작된다.\n> 로그상 Manual Lock으로 표시"
+    ],
+    [
+      10,
+      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 해제\n5. 동작확인",
+      "",
+      "1. Relay Off로 유지된다.\n> 로그상 Normal로 표시"
+    ],
+    [
+      11,
+      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 해제\n5. 인증 후 동작확인",
+      "인증\n> Schedule Unlock Zone의 Bypass Group에 속하지 않은 사용자",
+      "1. Open Time만큼 Relay On되었다가 Relay Off로 동작한다."
+    ],
+    [
+      12,
+      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 해제\n5. 인증 후 동작확인",
+      "인증\n> Schedule Unlock Zone의 Bypass Group에 속한 사용자",
+      "1. Unlock을 유지한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-178",
+    "description": "",
+    "test_step": [
+      "1. Monitoring > Lift Status > 수동 잠김",
+      "1. Monitoring > Lift Status > 수동 개방",
+      "1. Monitoring > Lift Status > 해제",
+      "1. Monitoring > Lift Status > 열림",
+      "1. Monitoring > Lift Status > 알람 해제",
+      "1. Lift의 Alarm을 모든층 릴레이 열림으로 설정\n2. FireAlarm Zone을 Lift로 설정\n3. FireAlarm 발생\n4. Lift Status에서 Clear Alarm 시도",
+      "[사용자 인증에 의한 시작: 비활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 상태확인 및 동작확인",
+      "[사용자 인증에 의한 시작: 비활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 해제\n5. 동작확인",
+      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 상태확인 및 동작확인",
+      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 해제\n5. 동작확인",
+      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 해제\n5. 인증 후 동작확인",
+      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 해제\n5. 인증 후 동작확인"
+    ],
+    "data": [
+      "1. 수동잠김",
+      "1. 수동 개방",
+      "1. 해제",
+      "1. 열림",
+      "1. 알람 해제",
+      "인증\n> Schedule Unlock Zone의 Bypass Group에 속하지 않은 사용자",
+      "인증\n> Schedule Unlock Zone의 Bypass Group에 속한 사용자"
+    ],
+    "expected_result": [
+      "1. 해당 Lift에 설정된 층이 비활성화 된다.\n2. 인증성공시 Relay는 동작하지 않는다.",
+      "1. 비활성화 되어있는 Lift를 다시 활성화 시킨다.\n2. 인증시도시 접근 가능하다.",
+      "1. 수동 잠김 또는 수동 개방 상태를 해제할 수 있다.",
+      "1. 인증하지 않아도 해당 Lift에 접근 가능하다.\n2. 해당 Lift의 Relay 입력 시간동안 Relay가 동작한다.",
+      "1. Lift 옵션에서 설정한 알람 Action을 해제할 수 있다.\n> 모든 층 릴레이 열림\n> 신호출력\n2. 알람 해제시, 이전 상태로 복구 된다.\n> 예 : 수동 잠김 상태에서 알람이 걸린 후 알람 해제 시도시 수동 잠김 상태로 돌아감.",
+      "1. FireAlarm으로 Floor가 On된 경우 Floor Status에서 Clear 불가하다.",
+      "1. Manual Lock으로 동작된다.\n> 로그상 Schedule Unlock, Manual Lock으로 표시\n2. Lock 상태를 유지한다.",
+      "1. Schedule Unlock으로 동작된다.",
+      "1. Manual Lock으로 동작된다.\n> 로그상 Manual Lock으로 표시",
+      "1. Relay Off로 유지된다.\n> 로그상 Normal로 표시",
+      "1. Open Time만큼 Relay On되었다가 Relay Off로 동작한다.",
+      "1. Unlock을 유지한다."
+    ]
+  }
+}

@@ -1,5 +1,27 @@
 ■ 이슈 키: COMMONR-351
 ■ 제목: [BDP-830] BioStation 3에서 TCP 로 SIP(Intercom) 기능 지원
+■ 설명: BDP-830 BioStation 3에서 TCP 로 SIP(Intercom) 기능 지원
+
+1. 개요
+현재 BioStation 3 에서는 SIP 서버 사용 시에는 UDP로만 통신하도록 설정이 되어 있다.
+BioStation 3의 Intercom 기능을 다양한 SIP 서버를 통하여 사용하기 위해서 BioStation 3에서 SIP 서버 사용 시에 TCP와 UDP 를 선택하여 설정할 수 있어야 한다. 
+
+2. 검증 방법(BES-1622 김승현 선임님 댓글 참고)
+
+1) 서버에서 통신조건을 변경하며 테스트 - QE 진행
+2) Wireshark를 이용하여 직접 통신상태 확인 - 개발자 검증으로 진행
+
+1)번의 경우 FreePBX를 서버로 둔다는 가정하에 다음과 같이 진행할 수 있습니다
+
+상단 'Settings' -> 'Asterisk SIP Settings' -> 'SIP Settings' 탭에서 다음과 같은 화면이 있습니다. 
+ !screenshot-1.png|thumbnail! 
+위에서 필요한 항목을 선택 후 'Submit' -> 'Apply config'를 누르신 후에 완료되면, 서버를 재실행 시켜야합니다. (fwconsole restart)
+재실행이 완료되었다면 BS3의 Intercom항목에서 통신방식을 변경하여 테스트해볼 수 있습니다.
+가령, 첨부된 사진과 같이 서버에서 UDP만 'Yes'고 TCP, TLS에는 'No'로 설정되어 있다고 가정하겠습니다.
+BS3에서 UDP로 설정했을 때는 전화표시가 활성화 되지만, TCP or SSL로 설정했을 때는 전화표시가 비활성화 됩니다.
+만약, 서버에서 UDP만 'No'하고 TCP, TLS에는 'Yes'로 설정했을 때를 가정하겠습니다.
+BS3에서 UDP로 설정하고 저장했을 때 전화표시가 비활성화 되지만, TCP or SSL로 설정했을 때는 전화표시가 활성화 됩니다.
+상기와 같은 방식으로 통신설정이 적용되어 있는지 확인할 수 있습니다~
 ============================================================
 
 ■ 테스트 스텝

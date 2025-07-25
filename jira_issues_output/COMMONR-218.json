@@ -1,0 +1,85 @@
+{
+  "id": "COMMONR-218",
+  "content": [
+    [
+      1,
+      "1. 설정> 시스템 보안> 장치와 보안통신: 사용 설정\n2. 장치 해시키 수동 관리: 사용안함 설정 후 저장\n3. 장치상세정보창에서 Secure Tamper 옵션확인",
+      "Secure Tamper\n> Off(Default)\n> On",
+      "1. Secure Tamper는 Off(Default) 상태를 유지한다.\n> 장치Reboot 미발생\n2. Secure Tamper의 설정에 대해 수동으로 변경이 가능하다."
+    ],
+    [
+      2,
+      "1. 설정> 시스템 보안> 장치와 보안통신: 사용 설정\n2. 장치 해시키 수동 관리: 사용 설정 후 저장\n3. 장치상세정보창에서 Secure Tamper 옵션확인",
+      "Secure Tamper\n> Off(Default)\n> On",
+      "1. Secure Tamper가 Off(Default) 상태를 유지한다.\n> 장치 Reboot 미발생.\n2. Secure Tamper의 설정에 대해서 수동으로 변경이 가능하다.\n> 자동으로 On 설정 기능 제외"
+    ],
+    [
+      3,
+      "1. 설정> 시스템 보안> 장치와 보안통신: 사용 설정\n2. 장치 해시키 수동 관리: 사용안함 설정 후 저장\n3. Tamper 발생 후 장치동작 확인",
+      "",
+      "1. Secure Tamper가 Off 상태이므로 장치에 영향주는 부분이 없어야 한다."
+    ],
+    [
+      4,
+      "1. 설정> 시스템 보안> 장치와 보안통신: 사용 설정\n2. 장치 해시키 수동 관리: 사용 설정 후 저장\n3. Tamper 발생 후 장치동작 확인",
+      "",
+      "1. Secure Tamper가 On 상태이므로 DB, Log, Key(암호화/RS485), 인증서, SmartCard Layout을 삭제한다.\n2. Secure Tamper 발생으로 사용자가 삭제된 경우 수동으로 재전송을 해줘야 한다.\n"
+    ],
+    [
+      5,
+      "[Master Admin 지원 신규HW]\n1. Master Admin 설정\n2. Secure Tamper: Enable 설정\n3. Secure Tamper 발생",
+      "UI 지원모델\n\n※ Device> Device Info> Mac을 길게 누르면 CE RED항목에 Ready로 표시로 확인가능.",
+      "1. Secure Tamper 발생시 장치 Reboot된다.\n2. Boot팅 후 Master Admin 설정화면 출력된다.\n3. 초기화 되는 사항은 스펙대로 동작한다."
+    ],
+    [
+      6,
+      "[Master Admin 지원 신규HW]\n1. Secure Tamper: Enable 설정\n2. Secure Tamper 발생",
+      "UI 미지원모델 - ex. XP2",
+      "1. Secure Tamper 발생시 장치 Reboot 되지 않는다.\n2. 초기화 되는 사항은 스펙대로 동작한다."
+    ],
+    [
+      7,
+      "[Master Admin 지원 FW로 Upgrade한 기존 HW]\n1. Master Admin 설정\n2. Secure Tamper: Enable 설정\n3. Secure Tamper 발생",
+      "UI 지원모델",
+      "1. Secure Tamper 발생시 장치 Reboot 되지 않는다.\n2. 초기화 되는 사항은 스펙대로 동작한다."
+    ],
+    [
+      8,
+      "[Master Admin 지원 FW로 Upgrade한 기존 HW]\n1. Secure Tamper: Enable 설정\n2. Secure Tamper 발생",
+      "UI 미지원모델 - ex. XP2",
+      "1. Secure Tamper 발생시 장치 Reboot 되지 않는다.\n2. 초기화 되는 사항은 스펙대로 동작한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-218",
+    "description": "",
+    "test_step": [
+      "1. 설정> 시스템 보안> 장치와 보안통신: 사용 설정\n2. 장치 해시키 수동 관리: 사용안함 설정 후 저장\n3. 장치상세정보창에서 Secure Tamper 옵션확인",
+      "1. 설정> 시스템 보안> 장치와 보안통신: 사용 설정\n2. 장치 해시키 수동 관리: 사용 설정 후 저장\n3. 장치상세정보창에서 Secure Tamper 옵션확인",
+      "1. 설정> 시스템 보안> 장치와 보안통신: 사용 설정\n2. 장치 해시키 수동 관리: 사용안함 설정 후 저장\n3. Tamper 발생 후 장치동작 확인",
+      "1. 설정> 시스템 보안> 장치와 보안통신: 사용 설정\n2. 장치 해시키 수동 관리: 사용 설정 후 저장\n3. Tamper 발생 후 장치동작 확인",
+      "[Master Admin 지원 신규HW]\n1. Master Admin 설정\n2. Secure Tamper: Enable 설정\n3. Secure Tamper 발생",
+      "[Master Admin 지원 신규HW]\n1. Secure Tamper: Enable 설정\n2. Secure Tamper 발생",
+      "[Master Admin 지원 FW로 Upgrade한 기존 HW]\n1. Master Admin 설정\n2. Secure Tamper: Enable 설정\n3. Secure Tamper 발생",
+      "[Master Admin 지원 FW로 Upgrade한 기존 HW]\n1. Secure Tamper: Enable 설정\n2. Secure Tamper 발생"
+    ],
+    "data": [
+      "Secure Tamper\n> Off(Default)\n> On",
+      "Secure Tamper\n> Off(Default)\n> On",
+      "UI 지원모델\n\n※ Device> Device Info> Mac을 길게 누르면 CE RED항목에 Ready로 표시로 확인가능.",
+      "UI 미지원모델 - ex. XP2",
+      "UI 지원모델",
+      "UI 미지원모델 - ex. XP2"
+    ],
+    "expected_result": [
+      "1. Secure Tamper는 Off(Default) 상태를 유지한다.\n> 장치Reboot 미발생\n2. Secure Tamper의 설정에 대해 수동으로 변경이 가능하다.",
+      "1. Secure Tamper가 Off(Default) 상태를 유지한다.\n> 장치 Reboot 미발생.\n2. Secure Tamper의 설정에 대해서 수동으로 변경이 가능하다.\n> 자동으로 On 설정 기능 제외",
+      "1. Secure Tamper가 Off 상태이므로 장치에 영향주는 부분이 없어야 한다.",
+      "1. Secure Tamper가 On 상태이므로 DB, Log, Key(암호화/RS485), 인증서, SmartCard Layout을 삭제한다.\n2. Secure Tamper 발생으로 사용자가 삭제된 경우 수동으로 재전송을 해줘야 한다.\n",
+      "1. Secure Tamper 발생시 장치 Reboot된다.\n2. Boot팅 후 Master Admin 설정화면 출력된다.\n3. 초기화 되는 사항은 스펙대로 동작한다.",
+      "1. Secure Tamper 발생시 장치 Reboot 되지 않는다.\n2. 초기화 되는 사항은 스펙대로 동작한다.",
+      "1. Secure Tamper 발생시 장치 Reboot 되지 않는다.\n2. 초기화 되는 사항은 스펙대로 동작한다.",
+      "1. Secure Tamper 발생시 장치 Reboot 되지 않는다.\n2. 초기화 되는 사항은 스펙대로 동작한다."
+    ]
+  }
+}

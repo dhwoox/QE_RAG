@@ -1,0 +1,261 @@
+{
+  "id": "COMMONR-350",
+  "content": [
+    [
+      1,
+      "1. 장치 상세페이지 진입\n2. Mask Detection을 Not Use 설정 후 저장\n3. Face 인증 시 Mask를 쓰지 않고 Master/Slave 장치에 인증 시도",
+      "",
+      "Face 인증 성공"
+    ],
+    [
+      2,
+      "1. 장치 상세페이지 진입\n2. Mask Detection, Mask Detect Level, Check Mode 설정\n3. Face 인증 시 Mask를 쓰지 않고 Master/Slave 장치에 인증 시도",
+      "Mask Detection : Use (Deny access when failed to detect mask)\nMask Detect Level : Strict (콧구멍이 살짝 보이는 부분)\nCheck Mode : Check before authentication",
+      "1. Master 장치\n> 장치화면 하단에 Mask Check가 출력되며 마스크 쓰지 않았기 때문에 Please wear a mask 메시지 출력되며 인증 실패 됨\n-. Check Unmasked Face Detected 로그 생성\n-. Unmasked Face Detected 로그 생성\n\n2. Slave 장치\n> 인증성공"
+    ],
+    [
+      3,
+      "\t\n1. 장치 상세페이지 진입\n2. Mask Detection, Mask Detect Level, Check Mode 설정\n3. Face 인증 시 Mask를 쓰고 Master/Slave 장치에 인증 시도",
+      "Mask Detection : Use (Deny access when failed to detect mask)\nMask Detect Level : Strict (콧구멍이 살짝 보이는 부분)\nCheck Mode : Check before authentication",
+      "1. Master 장치\n> 장치화면 하단에 Mask Check가 출력되며 인증 성공 됨\n-. 1:N Auth succeeded 로그 생성\n\n2. Slave 장치\n> 인증성공"
+    ],
+    [
+      4,
+      "\t\n1. 장치 상세페이지 진입\n2. Mask Detection, Mask Detect Level 설정\n3. Face 인증 시 Mask를 쓰지 않고 Master/Slave 장치에 인증 시도",
+      "Mask Detection : Use (Deny access when failed to detect mask)\nMask Detect Level : More Strict (콧구멍까지 마스크를 써야 함)",
+      "1. Master 장치\n> 장치화면 하단에 Mask Check가 출력되며 마스크 쓰지 않았기 때문에 Please wear a mask 메시지 출력되며 인증 실패 됨\n-. Check Unmasked Face Detected 로그 생성\n-. Unmasked Face Detected 로그 생성\n\n2. Slave 장치\n> 인증성공"
+    ],
+    [
+      5,
+      "\t\n1. 장치 상세페이지 진입\n2. Mask Detection, Mask Detect Level 설정\n3. Face 인증 시 Mask를 쓰고 Master/Slave 장치에 인증 시도",
+      "Mask Detection : Use (Deny access when failed to detect mask)\nMask Detect Level : More Strict (콧구멍까지 마스크를 써야 함",
+      "1. Master 장치\n> 장치화면 하단에 Mask Check가 출력되며 인증 성공 됨\n-. 1:N Auth succeeded 로그 생성\n\n2. Slave 장치\n> 인증성공"
+    ],
+    [
+      6,
+      "\t\n1. 장치 상세페이지 진입\n2. Mask Detection, Mask Detect Level 설정\n3. Face 인증 시 Mask를 쓰지 않고 Master/Slave 장치에 인증 시도",
+      "Mask Detection : Use (Deny access when failed to detect mask)\nMask Detect Level : Most Strict (More Strict에 얼굴 각도 추가)",
+      "1. Master 장치\n> 장치화면 하단에 Mask Check가 출력되며 마스크 쓰지 않았기 때문에 Please wear a mask 메시지 출력되며 인증 실패 됨\n-. Check Unmasked Face Detected 로그 생성\n-. Unmasked Face Detected 로그 생성\n\n2. Slave 장치\n> 인증성공"
+    ],
+    [
+      7,
+      "1. 장치 상세페이지 진입\n2. Mask Detection, Mask Detect Level 설정\n3. Face 인증 시 Mask를 쓰고 Master/Slave 장치에 인증 시도",
+      "Mask Detection : Use (Deny access when failed to detect mask)\nMask Detect Level : Most Strict (More Strict에 얼굴 각도 추가)",
+      "1. Master 장치\n> 장치화면 하단에 Mask Check가 출력되며 인증 성공 됨\n-. 1:N Auth succeeded 로그 생성\n\n2. Slave 장치\n> 인증성공"
+    ],
+    [
+      8,
+      "1. 장치 상세페이지 진입\n2. Mask Detection, Mask Detect Level 설정\n3. Face 인증 시 Mask를 쓰지 않고 Master/Slave 장치에 인증 시도",
+      "Mask Detection : Use (Allow access after leaving log when failed to detect mask)\nMask Detect Level : Strict",
+      "1. Master 장치\n> 장치화면 하단에 Mask Check가 출력되며 마스크를 쓰지 않아도 인증 성공 됨\n-. Check Unmasked Face Detected 로그 생성\n-. 1:N Auth succeeded 로그 생성\n\n2. Slave 장치\n> 인증성공"
+    ],
+    [
+      9,
+      "\t\n1. 장치 상세페이지 진입\n2. Mask Detection, Mask Detect Level 설정\n3. Face 인증 시 Mask를 쓰고 Master/Slave 장치에 인증 시도",
+      "Mask Detection : Use (Allow access after leaving log when failed to detect mask)\nMask Detect Level : Strict",
+      "1. Master 장치\n> 장치화면 하단에 Mask Check가 출력되며 인증 성공 됨\n-. 1:N Auth succeeded 로그 생성\n\n2. Slave 장치\n> 인증성공"
+    ],
+    [
+      10,
+      "1. 장치 상세페이지 진입\n2. Mask Detection, Mask Detect Level 설정\n3. Face 인증 시 Mask를 쓰지 않고 Master/Slave 장치에 인증 시도",
+      "Mask Detection : Use (Allow access after leaving log when failed to detect mask)\nMask Detect Level : More Strict",
+      "1. Master 장치\n> 장치화면 하단에 Mask Check가 출력되며 마스크를 쓰지 않아도 인증 성공 됨\n-. Check Unmasked Face Detected 로그 생성\n-. 1:N Auth succeeded 로그 생성\n\n2. Slave 장치\n> 인증성공"
+    ],
+    [
+      11,
+      "\t\n1. 장치 상세페이지 진입\n2. Mask Detection, Mask Detect Level 설정\n3. Face 인증 시 Mask를 쓰고 Master/Slave 장치에 인증 시도",
+      "Mask Detection : Use (Allow access after leaving log when failed to detect mask)\nMask Detect Level : More Strict",
+      "1. Master 장치\n> 장치화면 하단에 Mask Check가 출력되며 인증 성공 됨\n-. 1:N Auth succeeded 로그 생성\n\n2. Slave 장치\n> 인증성공"
+    ],
+    [
+      12,
+      "\t\n1. 장치 상세페이지 진입\n2. Mask Detection, Mask Detect Level 설정\n3. Face 인증 시 Mask를 쓰지 않고 Master/Slave 장치에 인증 시도",
+      "Mask Detection : Use Use (Allow access after leaving log when failed to detect mask)\nMask Detect Level : Most Strict",
+      "1. Master 장치\n> 장치화면 하단에 Mask Check가 출력되며 마스크를 쓰지 않아도 인증 성공 됨\n-. Check Unmasked Face Detected 로그 생성\n-. 1:N Auth succeeded 로그 생성\n\n2. Slave 장치\n> 인증성공"
+    ],
+    [
+      13,
+      "\t\n1. 장치 상세페이지 진입\n2. Mask Detection, Mask Detect Level 설정\n3. Face 인증 시 Mask를 쓰고 Master/Slave 장치에 인증 시도",
+      "Mask Detection : Use (Allow access after leaving log when failed to detect mask)\nMask Detect Level : Most Strict",
+      "1. Master 장치\n> 장치화면 하단에 Mask Check가 출력되며 인증 성공 됨\n-. 1:N Auth succeeded 로그 생성\n\n2. Slave 장치\n> 인증성공"
+    ],
+    [
+      14,
+      "1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Master 장치에 Mask 체크 후 Card 인증",
+      "-. Check Mode : Check before authentication\n\n-. Device의 Auth Mode에 Face 인증을 제거, Card Only 추가",
+      "1. 카메라가 인식되면  장치화면 하단에 Mask Check가 출력 됨\n2. 마스크 착용하여 Mask Check에 성공\n*화면에 'Input Card' 문구 미표시\n3. Card 인증 시 인증 성공 됨\n-. 1:1 Auth succeeded 로그 생성"
+    ],
+    [
+      15,
+      "1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Master 장치에 QR 인증 시도",
+      "Auth Mode : Card Only",
+      "1. 장치 화면에 Mask Check Required 에러 팝업 출"
+    ],
+    [
+      16,
+      "\t\n1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Master 장치에 Mask 체크 후 QR 인증",
+      "Device의 Auth Mode에 Face 인증을 제거, Card Only 추가",
+      "1. 카메라가 인식되면  장치화면 하단에 Mask Check가 출력 됨\n2. 마스크 착용하여 Mask Check에 성공하면 장치화면 우측 상단에 QR Icon과 Input Card 메시지가 출력 됨\n3. QR 인증 시 인증 성공 됨\n-. 1:1 Auth succeeded 로그 생성"
+    ],
+    [
+      17,
+      "\t\n1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Master 장치에 Mask 체크 후 QR과 Face 동시 감지 화면 출력",
+      "Device의 Auth Mode에 Face와 Card 설정",
+      "1. 카메라가 인식되면  장치화면 하단에 Mask Check가 출력 됨\n2. 마스크 착용하여 Mask Check에 성공하면 QR과 Face를 감지하는 화면이 출력 됨\n3. QR과 Face 중 하나로 인증 시 인증 성공 됨\n-. QR인증 성공 시 : 1:1 Auth succeeded 로그 생성\n-. Face인증 성공 시 : 1:N Auth succeeded 로그 생성"
+    ],
+    [
+      18,
+      "\t\n1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Master 장치에 Card 또는 ID 인증을 먼저 시도",
+      "",
+      "장치 화면에 Mask Check Required 에러 팝업 출력\n\n* 인증 전 마스크 착용을 체크하도록 설정되어 있어서 Card or ID를 입력하여 인증을 먼저 시도 시 에러가 팝업 출력 "
+    ],
+    [
+      19,
+      "1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Master/Slave 장치에 Mask를 쓰지 않고 Face 인증",
+      "-. Check Mode : Check after authentication",
+      "1. Face 인증 성공 후 장치화면 하단에 Mask Check가 출력\n2. 마스크 쓰지 않았기 때문에 Please wear a mask 메시지 출력되며 인증 실패 됨\n-. Check Unmasked Face Detected 로그 생성 : 사용자 ID, Name 정보 존재\n-. Unmasked Face Detected 로그 생성 : 사용자 ID, Name 정보 존재\n\n4. Slave 장치 \n> 인증 성공"
+    ],
+    [
+      20,
+      "\t\n1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Master/Slave 장치에 Mask를 쓰고 Face 인증",
+      "-. Check Mode : Check after authentication",
+      "1. Master 장치\n> 장치화면 하단에 Mask Check가 출력되며 인증 성공 됨\n-. 1:N Auth succeeded 로그 생성\n\n2. Slave 장치\n> 인증성공"
+    ],
+    [
+      21,
+      "\t\n1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Mask착용한 상태에서 Master 장치에 Card인증 먼저 시도 후 Mask Check 시도",
+      "",
+      "1. 카드 인증 성공 후 장치화면 하단에 Mask Check가 출력\n2. 얼굴의 마스크를 체크 후 인증 성공 됨\n-. 1:1 Auth succeeded 로그 생성"
+    ],
+    [
+      22,
+      "1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Mask착용한 상태에서 Master 장치에 QR인증 먼저 시도 후 Mask Check 시도",
+      "Auth Mode : Card Only",
+      "1. QR 인증 성공 후 장치화면 하단에 Mask Check가 출력\n2. 얼굴의 마스크를 체크 후 인증 성공 됨\n-. 1:1 Auth succeeded 로그 생성"
+    ],
+    [
+      23,
+      "\t\n1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Mask착용한 상태에서 Master 장치에 QR과 Face 동시 감지 화면 출력",
+      "",
+      "장치화면에 QR과 Face감지를 위한 화면 출력된 후 QR 또는 Face 중 하나가 매칭 되면 Mask Check 화면 출력\n-. QR인증 성공 시 : 1:1 Auth succeeded 로그 생성\n-. Face인증 성공 시 : 1:N Auth succeeded 로그 생성"
+    ],
+    [
+      24,
+      "\t\n1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Master/Slave 장치에 Mask를 쓰지 않고 Face 인증",
+      "-. Check Mode : Check without authentication",
+      "1.Master 장치\n1) 카메라 인식되면 장치화면 하단에 Mask Check가 출력\n2) 얼굴의 마스크가 인식되지 않아서 Please wear a mask 메시지 출력되며 인증 실패 됨\n-. Check Unmasked Face Detected 로그 생성 : 사용자 ID, Name 정보 없음\n-. Anonymous Fail 로그 생성 : 사용자 ID, Name 정보 없음\n\n2. Slave 장치 \n> 인증 성공"
+    ],
+    [
+      25,
+      "\t\n1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Master/Slave 장치에 Mask를 쓰고 Face 인증",
+      "-. Check Mode : Check without authentication",
+      "1.Master 장치\n1) 카메라 인식되면 장치화면 하단에 Mask Check가 출력\n2) 얼굴의 마스크가 인식되면 Access Granted 출력\n-. Anonymous Success 로그 생성 : 사용자 ID, Name 정보 없음\n\n2. Slave 장치 \n> 인증 성공"
+    ],
+    [
+      26,
+      "1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Master 장치에 QR 인증 시도",
+      "Auth Mode : Card Only",
+      "장치 화면에 Mask Check Required 에러 팝업 출력\n\n* 장치를 인증용이 아닌 마스크 착용 여부만 체크하는 용도로 QR 인증 시도 시 에러 발생"
+    ],
+    [
+      27,
+      "\t\n1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Master 장치에 Card or ID 인증 시도",
+      "",
+      "장치 화면에 Mask Check Required 에러 팝업 출력\n\n* 장치를 인증용이 아닌 마스크 착용 여부만 체크하는 용도로 Card, ID 인증 시도 시 에러 발생"
+    ],
+    [
+      28,
+      "1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Door로 설정된 Master 장치에 사용자를 저장하지 않고 Mask 쓰고 Face 인증",
+      "",
+      "1. 카메라 인식되면 장치화면 하단에 Mask Check가 출력\n2. 얼굴의 마스크가 인식되면 Access Granted 출력, 출입문이 Unlock 됨\n-. Anonymous Success 로그 생성 : 사용자 ID, Name 정보 없음\n-. Door unlocked 로그 생성\n-. Door locked 로그 생성\n\n* 장치에 인증이 아닌 마스크 체크만하여 마스크를 착용한 경우 Access Granted 처리하고 출입문을 Unlock 함"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-350",
+    "description": "",
+    "test_step": [
+      "1. 장치 상세페이지 진입\n2. Mask Detection을 Not Use 설정 후 저장\n3. Face 인증 시 Mask를 쓰지 않고 Master/Slave 장치에 인증 시도",
+      "1. 장치 상세페이지 진입\n2. Mask Detection, Mask Detect Level, Check Mode 설정\n3. Face 인증 시 Mask를 쓰지 않고 Master/Slave 장치에 인증 시도",
+      "\t\n1. 장치 상세페이지 진입\n2. Mask Detection, Mask Detect Level, Check Mode 설정\n3. Face 인증 시 Mask를 쓰고 Master/Slave 장치에 인증 시도",
+      "\t\n1. 장치 상세페이지 진입\n2. Mask Detection, Mask Detect Level 설정\n3. Face 인증 시 Mask를 쓰지 않고 Master/Slave 장치에 인증 시도",
+      "\t\n1. 장치 상세페이지 진입\n2. Mask Detection, Mask Detect Level 설정\n3. Face 인증 시 Mask를 쓰고 Master/Slave 장치에 인증 시도",
+      "\t\n1. 장치 상세페이지 진입\n2. Mask Detection, Mask Detect Level 설정\n3. Face 인증 시 Mask를 쓰지 않고 Master/Slave 장치에 인증 시도",
+      "1. 장치 상세페이지 진입\n2. Mask Detection, Mask Detect Level 설정\n3. Face 인증 시 Mask를 쓰고 Master/Slave 장치에 인증 시도",
+      "1. 장치 상세페이지 진입\n2. Mask Detection, Mask Detect Level 설정\n3. Face 인증 시 Mask를 쓰지 않고 Master/Slave 장치에 인증 시도",
+      "\t\n1. 장치 상세페이지 진입\n2. Mask Detection, Mask Detect Level 설정\n3. Face 인증 시 Mask를 쓰고 Master/Slave 장치에 인증 시도",
+      "1. 장치 상세페이지 진입\n2. Mask Detection, Mask Detect Level 설정\n3. Face 인증 시 Mask를 쓰지 않고 Master/Slave 장치에 인증 시도",
+      "\t\n1. 장치 상세페이지 진입\n2. Mask Detection, Mask Detect Level 설정\n3. Face 인증 시 Mask를 쓰고 Master/Slave 장치에 인증 시도",
+      "\t\n1. 장치 상세페이지 진입\n2. Mask Detection, Mask Detect Level 설정\n3. Face 인증 시 Mask를 쓰지 않고 Master/Slave 장치에 인증 시도",
+      "\t\n1. 장치 상세페이지 진입\n2. Mask Detection, Mask Detect Level 설정\n3. Face 인증 시 Mask를 쓰고 Master/Slave 장치에 인증 시도",
+      "1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Master 장치에 Mask 체크 후 Card 인증",
+      "1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Master 장치에 QR 인증 시도",
+      "\t\n1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Master 장치에 Mask 체크 후 QR 인증",
+      "\t\n1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Master 장치에 Mask 체크 후 QR과 Face 동시 감지 화면 출력",
+      "\t\n1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Master 장치에 Card 또는 ID 인증을 먼저 시도",
+      "1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Master/Slave 장치에 Mask를 쓰지 않고 Face 인증",
+      "\t\n1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Master/Slave 장치에 Mask를 쓰고 Face 인증",
+      "\t\n1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Mask착용한 상태에서 Master 장치에 Card인증 먼저 시도 후 Mask Check 시도",
+      "1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Mask착용한 상태에서 Master 장치에 QR인증 먼저 시도 후 Mask Check 시도",
+      "\t\n1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Mask착용한 상태에서 Master 장치에 QR과 Face 동시 감지 화면 출력",
+      "\t\n1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Master/Slave 장치에 Mask를 쓰지 않고 Face 인증",
+      "\t\n1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Master/Slave 장치에 Mask를 쓰고 Face 인증",
+      "1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Master 장치에 QR 인증 시도",
+      "\t\n1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Master 장치에 Card or ID 인증 시도",
+      "1. 장치 상세페이지 진입\n2.Mask Check Mode 설정\n3. Door로 설정된 Master 장치에 사용자를 저장하지 않고 Mask 쓰고 Face 인증"
+    ],
+    "data": [
+      "Mask Detection : Use (Deny access when failed to detect mask)\nMask Detect Level : Strict (콧구멍이 살짝 보이는 부분)\nCheck Mode : Check before authentication",
+      "Mask Detection : Use (Deny access when failed to detect mask)\nMask Detect Level : Strict (콧구멍이 살짝 보이는 부분)\nCheck Mode : Check before authentication",
+      "Mask Detection : Use (Deny access when failed to detect mask)\nMask Detect Level : More Strict (콧구멍까지 마스크를 써야 함)",
+      "Mask Detection : Use (Deny access when failed to detect mask)\nMask Detect Level : More Strict (콧구멍까지 마스크를 써야 함",
+      "Mask Detection : Use (Deny access when failed to detect mask)\nMask Detect Level : Most Strict (More Strict에 얼굴 각도 추가)",
+      "Mask Detection : Use (Deny access when failed to detect mask)\nMask Detect Level : Most Strict (More Strict에 얼굴 각도 추가)",
+      "Mask Detection : Use (Allow access after leaving log when failed to detect mask)\nMask Detect Level : Strict",
+      "Mask Detection : Use (Allow access after leaving log when failed to detect mask)\nMask Detect Level : Strict",
+      "Mask Detection : Use (Allow access after leaving log when failed to detect mask)\nMask Detect Level : More Strict",
+      "Mask Detection : Use (Allow access after leaving log when failed to detect mask)\nMask Detect Level : More Strict",
+      "Mask Detection : Use Use (Allow access after leaving log when failed to detect mask)\nMask Detect Level : Most Strict",
+      "Mask Detection : Use (Allow access after leaving log when failed to detect mask)\nMask Detect Level : Most Strict",
+      "-. Check Mode : Check before authentication\n\n-. Device의 Auth Mode에 Face 인증을 제거, Card Only 추가",
+      "Auth Mode : Card Only",
+      "Device의 Auth Mode에 Face 인증을 제거, Card Only 추가",
+      "Device의 Auth Mode에 Face와 Card 설정",
+      "-. Check Mode : Check after authentication",
+      "-. Check Mode : Check after authentication",
+      "Auth Mode : Card Only",
+      "-. Check Mode : Check without authentication",
+      "-. Check Mode : Check without authentication",
+      "Auth Mode : Card Only"
+    ],
+    "expected_result": [
+      "Face 인증 성공",
+      "1. Master 장치\n> 장치화면 하단에 Mask Check가 출력되며 마스크 쓰지 않았기 때문에 Please wear a mask 메시지 출력되며 인증 실패 됨\n-. Check Unmasked Face Detected 로그 생성\n-. Unmasked Face Detected 로그 생성\n\n2. Slave 장치\n> 인증성공",
+      "1. Master 장치\n> 장치화면 하단에 Mask Check가 출력되며 인증 성공 됨\n-. 1:N Auth succeeded 로그 생성\n\n2. Slave 장치\n> 인증성공",
+      "1. Master 장치\n> 장치화면 하단에 Mask Check가 출력되며 마스크 쓰지 않았기 때문에 Please wear a mask 메시지 출력되며 인증 실패 됨\n-. Check Unmasked Face Detected 로그 생성\n-. Unmasked Face Detected 로그 생성\n\n2. Slave 장치\n> 인증성공",
+      "1. Master 장치\n> 장치화면 하단에 Mask Check가 출력되며 인증 성공 됨\n-. 1:N Auth succeeded 로그 생성\n\n2. Slave 장치\n> 인증성공",
+      "1. Master 장치\n> 장치화면 하단에 Mask Check가 출력되며 마스크 쓰지 않았기 때문에 Please wear a mask 메시지 출력되며 인증 실패 됨\n-. Check Unmasked Face Detected 로그 생성\n-. Unmasked Face Detected 로그 생성\n\n2. Slave 장치\n> 인증성공",
+      "1. Master 장치\n> 장치화면 하단에 Mask Check가 출력되며 인증 성공 됨\n-. 1:N Auth succeeded 로그 생성\n\n2. Slave 장치\n> 인증성공",
+      "1. Master 장치\n> 장치화면 하단에 Mask Check가 출력되며 마스크를 쓰지 않아도 인증 성공 됨\n-. Check Unmasked Face Detected 로그 생성\n-. 1:N Auth succeeded 로그 생성\n\n2. Slave 장치\n> 인증성공",
+      "1. Master 장치\n> 장치화면 하단에 Mask Check가 출력되며 인증 성공 됨\n-. 1:N Auth succeeded 로그 생성\n\n2. Slave 장치\n> 인증성공",
+      "1. Master 장치\n> 장치화면 하단에 Mask Check가 출력되며 마스크를 쓰지 않아도 인증 성공 됨\n-. Check Unmasked Face Detected 로그 생성\n-. 1:N Auth succeeded 로그 생성\n\n2. Slave 장치\n> 인증성공",
+      "1. Master 장치\n> 장치화면 하단에 Mask Check가 출력되며 인증 성공 됨\n-. 1:N Auth succeeded 로그 생성\n\n2. Slave 장치\n> 인증성공",
+      "1. Master 장치\n> 장치화면 하단에 Mask Check가 출력되며 마스크를 쓰지 않아도 인증 성공 됨\n-. Check Unmasked Face Detected 로그 생성\n-. 1:N Auth succeeded 로그 생성\n\n2. Slave 장치\n> 인증성공",
+      "1. Master 장치\n> 장치화면 하단에 Mask Check가 출력되며 인증 성공 됨\n-. 1:N Auth succeeded 로그 생성\n\n2. Slave 장치\n> 인증성공",
+      "1. 카메라가 인식되면  장치화면 하단에 Mask Check가 출력 됨\n2. 마스크 착용하여 Mask Check에 성공\n*화면에 'Input Card' 문구 미표시\n3. Card 인증 시 인증 성공 됨\n-. 1:1 Auth succeeded 로그 생성",
+      "1. 장치 화면에 Mask Check Required 에러 팝업 출",
+      "1. 카메라가 인식되면  장치화면 하단에 Mask Check가 출력 됨\n2. 마스크 착용하여 Mask Check에 성공하면 장치화면 우측 상단에 QR Icon과 Input Card 메시지가 출력 됨\n3. QR 인증 시 인증 성공 됨\n-. 1:1 Auth succeeded 로그 생성",
+      "1. 카메라가 인식되면  장치화면 하단에 Mask Check가 출력 됨\n2. 마스크 착용하여 Mask Check에 성공하면 QR과 Face를 감지하는 화면이 출력 됨\n3. QR과 Face 중 하나로 인증 시 인증 성공 됨\n-. QR인증 성공 시 : 1:1 Auth succeeded 로그 생성\n-. Face인증 성공 시 : 1:N Auth succeeded 로그 생성",
+      "장치 화면에 Mask Check Required 에러 팝업 출력\n\n* 인증 전 마스크 착용을 체크하도록 설정되어 있어서 Card or ID를 입력하여 인증을 먼저 시도 시 에러가 팝업 출력 ",
+      "1. Face 인증 성공 후 장치화면 하단에 Mask Check가 출력\n2. 마스크 쓰지 않았기 때문에 Please wear a mask 메시지 출력되며 인증 실패 됨\n-. Check Unmasked Face Detected 로그 생성 : 사용자 ID, Name 정보 존재\n-. Unmasked Face Detected 로그 생성 : 사용자 ID, Name 정보 존재\n\n4. Slave 장치 \n> 인증 성공",
+      "1. Master 장치\n> 장치화면 하단에 Mask Check가 출력되며 인증 성공 됨\n-. 1:N Auth succeeded 로그 생성\n\n2. Slave 장치\n> 인증성공",
+      "1. 카드 인증 성공 후 장치화면 하단에 Mask Check가 출력\n2. 얼굴의 마스크를 체크 후 인증 성공 됨\n-. 1:1 Auth succeeded 로그 생성",
+      "1. QR 인증 성공 후 장치화면 하단에 Mask Check가 출력\n2. 얼굴의 마스크를 체크 후 인증 성공 됨\n-. 1:1 Auth succeeded 로그 생성",
+      "장치화면에 QR과 Face감지를 위한 화면 출력된 후 QR 또는 Face 중 하나가 매칭 되면 Mask Check 화면 출력\n-. QR인증 성공 시 : 1:1 Auth succeeded 로그 생성\n-. Face인증 성공 시 : 1:N Auth succeeded 로그 생성",
+      "1.Master 장치\n1) 카메라 인식되면 장치화면 하단에 Mask Check가 출력\n2) 얼굴의 마스크가 인식되지 않아서 Please wear a mask 메시지 출력되며 인증 실패 됨\n-. Check Unmasked Face Detected 로그 생성 : 사용자 ID, Name 정보 없음\n-. Anonymous Fail 로그 생성 : 사용자 ID, Name 정보 없음\n\n2. Slave 장치 \n> 인증 성공",
+      "1.Master 장치\n1) 카메라 인식되면 장치화면 하단에 Mask Check가 출력\n2) 얼굴의 마스크가 인식되면 Access Granted 출력\n-. Anonymous Success 로그 생성 : 사용자 ID, Name 정보 없음\n\n2. Slave 장치 \n> 인증 성공",
+      "장치 화면에 Mask Check Required 에러 팝업 출력\n\n* 장치를 인증용이 아닌 마스크 착용 여부만 체크하는 용도로 QR 인증 시도 시 에러 발생",
+      "장치 화면에 Mask Check Required 에러 팝업 출력\n\n* 장치를 인증용이 아닌 마스크 착용 여부만 체크하는 용도로 Card, ID 인증 시도 시 에러 발생",
+      "1. 카메라 인식되면 장치화면 하단에 Mask Check가 출력\n2. 얼굴의 마스크가 인식되면 Access Granted 출력, 출입문이 Unlock 됨\n-. Anonymous Success 로그 생성 : 사용자 ID, Name 정보 없음\n-. Door unlocked 로그 생성\n-. Door locked 로그 생성\n\n* 장치에 인증이 아닌 마스크 체크만하여 마스크를 착용한 경우 Access Granted 처리하고 출입문을 Unlock 함"
+    ]
+  }
+}

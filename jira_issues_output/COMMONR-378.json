@@ -1,0 +1,118 @@
+{
+  "id": "COMMONR-378",
+  "content": [
+    [
+      1,
+      "[장치간 RS485 연결]\n1. Floor> Add Floor> Floor 생성\n2. Status Tree> Floor> Unlock> Once 버튼 클릭\n3. Open time대로 동작되는지 확인",
+      "Floor 생성시 Open Time 확인\n: 3초/5초/10초/15초/30초/1분/3분/5분/10분/15분",
+      "1. Once 클릭시 Unlocked으로 동작되어야 하고, 설정된 Open time이 지나면 다시 Locked으로 동작되어야 한다.\n> BioStar-X 이전 Open 기능\n2. 인증하지 않아도 해당 Lift에 접근 가능하다.\n3. 해당 Lift의 Relay 입력 시간동안 Relay가 동작한다."
+    ],
+    [
+      2,
+      "[Floor 생성]\n1. Status Tree> Floor> Unlock 버튼 클릭\n2. Unlock Option 확인",
+      "[BioStar-X]\nUnlock Option\n> Once\n> Permanent",
+      "1. 선택한 Floor에 대해서 Unlock Option에 따라 Unlocked 으로 동작된다.\n> Once : 1회만 Unlock(Open)\n> Permanent : Unlocked 상태로 변경(Normalize(Release) 전까지 Unlock 유지/Manual Unlock)\n2. 비활성화 되어있는 Lift를 다시 활성화 시킨다.\n3. 인증시도시 접근 가능하다."
+    ],
+    [
+      3,
+      "[Floor 생성]\n1. Status Tree> Floor> Lock 버튼 클릭\n2. Lock Option 확인",
+      "[BioStar-X]\nLock Option\n",
+      "1. 선택한 Floor에 대해서 Locked 으로 동작된다.\n> Option : 선택 가능한 Option없음\n2. 해당 Lift에 설정된 층이 비활성화 된다.\n3. 인증성공시 Relay는 동작하지 않는다."
+    ],
+    [
+      4,
+      "[Floor 생성]\n1. Status Tree> Floor> Normalize 버튼 클릭\n2. Floor Status 확인",
+      "[BioStar-X]\nFloor Status",
+      "1. 선택한 Floor에 대해서 Normalize 할수 있다. \n2. 부팅 완료 후 Lock 상태를 유지해야 한다.\n> Unlocked -> Locked\n> Locked -> Locked\n3. 수동 잠김 또는 수동 개방 상태를 해제할 수 있다."
+    ],
+    [
+      5,
+      "[Floor 생성]\n1. Status Tree> Floor> Clear Alarm 버튼 클릭\n2. Floor Status 확인",
+      "[BioStar-X]\nFloor Status",
+      "1. Floor 옵션에서 설정한 알람 Action을 해제할 수 있다.\n> 모든 층 릴레이 열림\n> 신호출력\n2. 알람 해제시, 이전 상태로 복구 된다.\n> 예 : 수동 잠김 상태에서 알람이 걸린 후 알람 해제 시도시 수동 잠김 상태로 돌아감."
+    ],
+    [
+      6,
+      "1. Floor의 Alarm을 모든층 릴레이 열림으로 설정\n2. FireAlarm Zone> Floor로 설정\n3. FireAlarm 발생\n4. Status Tree> Floor> Clear Alarm 시도",
+      "",
+      "1. FireAlarm으로 Floor가 On된 경우 Floor Status에서 Clear 불가하다."
+    ],
+    [
+      7,
+      "[사용자 인증에 의한 시작: 비활성화]\n1. Schedule Unlock으로 동작중\n2. Status Tree> Door> Lock 버튼 클릭\n3. Master Reboot\n4. Status Tree> Floor> 상태확인 및 동작확인",
+      "",
+      "1. Manual Lock으로 동작된다.\n> 로그상 Schedule Unlock, Manual Lock으로 표시\n2. Lock 상태를 유지한다."
+    ],
+    [
+      8,
+      "[사용자 인증에 의한 시작: 비활성화]\n1. Schedule Unlock으로 동작중\n2. Status Tree> Door> Lock 버튼 클릭\n3. Master Reboot\n4. Status Tree> Floor> Clear Alarm 시도\n5. 동작확인",
+      "",
+      "1. Schedule Unlock으로 동작된다."
+    ],
+    [
+      9,
+      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Floor Status> 상태확인 및 동작확인",
+      "",
+      "1. Manual Lock으로 동작된다.\n> 로그상 Manual Lock으로 표시"
+    ],
+    [
+      10,
+      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Status Tree> Door> Lock 버튼 클릭\n3. Master Reboot\n4. Status Tree> Floor> Clear Alarm 시도\n5. 동작확인",
+      "",
+      "1. Relay Off로 유지된다.\n> 로그상 Normal로 표시"
+    ],
+    [
+      11,
+      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Status Tree> Door> Lock 버튼 클릭\n3. Master Reboot\n4. Status Tree> Floor> Clear Alarm 시도\n5. 인증 후 동작확인",
+      "인증\n> Schedule Unlock Zone의 Bypass Group에 속하지 않은 사용자",
+      "1. Open Time만큼 Relay On되었다가 Relay Off로 동작한다."
+    ],
+    [
+      12,
+      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Status Tree> Door> Lock 버튼 클릭\n3. Master Reboot\n4. Status Tree> Floor> Clear Alarm 시도\n5. 인증 후 동작확인",
+      "인증\n> Schedule Unlock Zone의 Bypass Group에 속한 사용자",
+      "1. Unlock을 유지한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-378",
+    "description": "",
+    "test_step": [
+      "[장치간 RS485 연결]\n1. Floor> Add Floor> Floor 생성\n2. Status Tree> Floor> Unlock> Once 버튼 클릭\n3. Open time대로 동작되는지 확인",
+      "[Floor 생성]\n1. Status Tree> Floor> Unlock 버튼 클릭\n2. Unlock Option 확인",
+      "[Floor 생성]\n1. Status Tree> Floor> Lock 버튼 클릭\n2. Lock Option 확인",
+      "[Floor 생성]\n1. Status Tree> Floor> Normalize 버튼 클릭\n2. Floor Status 확인",
+      "[Floor 생성]\n1. Status Tree> Floor> Clear Alarm 버튼 클릭\n2. Floor Status 확인",
+      "1. Floor의 Alarm을 모든층 릴레이 열림으로 설정\n2. FireAlarm Zone> Floor로 설정\n3. FireAlarm 발생\n4. Status Tree> Floor> Clear Alarm 시도",
+      "[사용자 인증에 의한 시작: 비활성화]\n1. Schedule Unlock으로 동작중\n2. Status Tree> Door> Lock 버튼 클릭\n3. Master Reboot\n4. Status Tree> Floor> 상태확인 및 동작확인",
+      "[사용자 인증에 의한 시작: 비활성화]\n1. Schedule Unlock으로 동작중\n2. Status Tree> Door> Lock 버튼 클릭\n3. Master Reboot\n4. Status Tree> Floor> Clear Alarm 시도\n5. 동작확인",
+      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Floor Status> 상태확인 및 동작확인",
+      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Status Tree> Door> Lock 버튼 클릭\n3. Master Reboot\n4. Status Tree> Floor> Clear Alarm 시도\n5. 동작확인",
+      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Status Tree> Door> Lock 버튼 클릭\n3. Master Reboot\n4. Status Tree> Floor> Clear Alarm 시도\n5. 인증 후 동작확인",
+      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Status Tree> Door> Lock 버튼 클릭\n3. Master Reboot\n4. Status Tree> Floor> Clear Alarm 시도\n5. 인증 후 동작확인"
+    ],
+    "data": [
+      "Floor 생성시 Open Time 확인\n: 3초/5초/10초/15초/30초/1분/3분/5분/10분/15분",
+      "[BioStar-X]\nUnlock Option\n> Once\n> Permanent",
+      "[BioStar-X]\nLock Option\n",
+      "[BioStar-X]\nFloor Status",
+      "[BioStar-X]\nFloor Status",
+      "인증\n> Schedule Unlock Zone의 Bypass Group에 속하지 않은 사용자",
+      "인증\n> Schedule Unlock Zone의 Bypass Group에 속한 사용자"
+    ],
+    "expected_result": [
+      "1. Once 클릭시 Unlocked으로 동작되어야 하고, 설정된 Open time이 지나면 다시 Locked으로 동작되어야 한다.\n> BioStar-X 이전 Open 기능\n2. 인증하지 않아도 해당 Lift에 접근 가능하다.\n3. 해당 Lift의 Relay 입력 시간동안 Relay가 동작한다.",
+      "1. 선택한 Floor에 대해서 Unlock Option에 따라 Unlocked 으로 동작된다.\n> Once : 1회만 Unlock(Open)\n> Permanent : Unlocked 상태로 변경(Normalize(Release) 전까지 Unlock 유지/Manual Unlock)\n2. 비활성화 되어있는 Lift를 다시 활성화 시킨다.\n3. 인증시도시 접근 가능하다.",
+      "1. 선택한 Floor에 대해서 Locked 으로 동작된다.\n> Option : 선택 가능한 Option없음\n2. 해당 Lift에 설정된 층이 비활성화 된다.\n3. 인증성공시 Relay는 동작하지 않는다.",
+      "1. 선택한 Floor에 대해서 Normalize 할수 있다. \n2. 부팅 완료 후 Lock 상태를 유지해야 한다.\n> Unlocked -> Locked\n> Locked -> Locked\n3. 수동 잠김 또는 수동 개방 상태를 해제할 수 있다.",
+      "1. Floor 옵션에서 설정한 알람 Action을 해제할 수 있다.\n> 모든 층 릴레이 열림\n> 신호출력\n2. 알람 해제시, 이전 상태로 복구 된다.\n> 예 : 수동 잠김 상태에서 알람이 걸린 후 알람 해제 시도시 수동 잠김 상태로 돌아감.",
+      "1. FireAlarm으로 Floor가 On된 경우 Floor Status에서 Clear 불가하다.",
+      "1. Manual Lock으로 동작된다.\n> 로그상 Schedule Unlock, Manual Lock으로 표시\n2. Lock 상태를 유지한다.",
+      "1. Schedule Unlock으로 동작된다.",
+      "1. Manual Lock으로 동작된다.\n> 로그상 Manual Lock으로 표시",
+      "1. Relay Off로 유지된다.\n> 로그상 Normal로 표시",
+      "1. Open Time만큼 Relay On되었다가 Relay Off로 동작한다.",
+      "1. Unlock을 유지한다."
+    ]
+  }
+}

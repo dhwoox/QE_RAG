@@ -1,0 +1,204 @@
+{
+  "id": "COMMONR-39",
+  "content": [
+    [
+      1,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Information",
+      "[공통]\n1. BioStar에 연결된 장치\n> Entry\n> Station",
+      "1. Name 이 표시된다.\n2. Device ID 가 표시된다.\n3. FW 버전이 표시된다.\n4. Group이 표시된다.\n5. Device Type이 표시된다.\n6. Product Name이 표시된다.\n7. Kernel 버전이 표시된다.\n> 미지원 : 0.0.0\n8. Hardware 버전이 표시된다.\n> 미지원 : 0.0.0"
+    ],
+    [
+      2,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Language 설정> Apply",
+      "[공통]\n1. 설정범위\n> Korean/English/Custom\n2. Default : English(최초 공장 출하시)\n3. Language를 Custom으로 설정시 Update Resource 파일 선택 후 Update 수행\n\n*이 후 초기화시 이전 설정값 유지",
+      "1. 영어/한국어 설정시 장치 재부팅 후 설정한 언어로 변경되어야 한다.\n> 재부팅 동작은 장치별로 상이하다.\n2. 사용자정의 설정시 장치 재부팅 후 Update Resource 로 변경되어야 한다.\n> Language Resource 파일이 없는 경우 영어로 변경되어야 한다."
+    ],
+    [
+      3,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Volume 설정> Apply",
+      "[Entry]\n1. 설정범위\n> Enable/Disable\n2. Default : Enable\n[Station]\n1. 설정범위\n> 0 ~ 100\n2. Default : 50",
+      "1. Enable 설정시 소리 나오고 Disable 설정시 소리 나오지 않아야 한다.\n2. 0 설정시 무음 처리 되어야 한다.\n3. 100에 가까워질수록 소리가 커져야 한다."
+    ],
+    [
+      4,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Menu Timeout 설정> Apply",
+      "[Entry] \n1. 설정범위\n> Always On/5/10/15/20/---/60s (5s 단위)\n2. Default : 20s\n[Station]\n1. 설정범위\n> Always On/10/20/30/---/60s (10s 단위)\n2. Default : 20s",
+      "1. 무한 설정시 메인화면으로 이동되지 않고 메뉴 화면을 유지해야 한다.\n2. 시간 설정시 메뉴에서의 마지막 입력을 기점으로 설정한 시간이 경과한 후에 메인화면으로 이동되어야 한다.\n3. 장치의 메뉴에서 Menu Timeout 설정값이 변경값에 맞게 노출되는지 확인한다."
+    ],
+    [
+      5,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Theme 설정> Apply",
+      "[Station]-BS2\n1. 설정범위\n> Theme 1 / 2 / 3 / 4\n2. Default : Theme 1",
+      "1. 메인화면에 설정한 테마에 대한 UI로 표시되어야 한다.\n> 각 테마별 색상, 아이콘 표시"
+    ],
+    [
+      6,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Theme 설정> Apply",
+      "[Station]-BSL2, BLN2, FL\n1. 설정범위\n> Normal(Theme 1)/Custom Logo(Theme 2)\n2. Default : Normal\n",
+      "1. 설정한 Home Screen 으로 장치에서 동작되어야 한다.\n> Normal - 중앙에 시간 표시, 상단에 상태 아이콘(Link, Server)\n> Custom Logo - 하단에 시간 표시, 적용된 Logo Image 표시, 상단에 상태 아이콘(DownLoad, Link, Server, RS 485)"
+    ],
+    [
+      7,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Backlight Timeout 설정> Apply",
+      "[Entry]\n1. 설정범위\n> Always On/5/10/15/20/---/60s (5s 단위)\n2. Default : 20s\n[Station]\n1. 설정범위\n> Always On/10/20/---/60s (10s 단위)\n2. Default : 20s",
+      "1. 무한 설정시 Backlight 가 OFF 되지 않고 켜진 상태를 유지해야 한다.\n2. 시간 설정시 마지막 입력을 기점으로 설정한 시간이 경과한 후에 Backlight 가 OFF 되어야 한다.\n3. 장치의 메뉴에서 Backlight Timeout 설정값이 변경값에 맞게 노출되는지 확인한다."
+    ],
+    [
+      8,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Msg. Timeout 설정> Apply",
+      "[Entry]\n1. 설정범위\n> 0.5/1/1.5/2/…/5s (0.5s 단위)\n2. Default : 2s\n[Station]\n1. 설정범위\n> 0.5/1/2/3/4/5s\n2. Default : 2s\n\n*W3 - Default :5s",
+      "1. 장치에서 발생한 알림 메시지가 설정한 시간 경과 후 사라져야 한다.\n2. 장치의 메뉴에서 Msg. Timeout 설정값이 변경값에 맞게 노출되는지 확인한다."
+    ],
+    [
+      9,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Use Voice 설정> Apply",
+      "[Station]\n1. Use Voice\n> Enable\n> Disable(Default)\n2. 음성 안내 케이스 정의\n> 지문 요청, 카드 요청, PIN 요청\n> 지문 또는 PIN 요청\n> ID, 카드, 또는 지문 요청\n> ID 또는 지문 요청\n> 카드 또는 지문 요청\n> ID, 카드 요청\n> 인증 성공\n이외의 케이스는 효과음으로 처리",
+      "1. Use Voice Enable인 경우 음성안내가 출력되어야 한다.\n2. Use Voice Disable인 경우 음성안내가 출력되지 않아야 한다."
+    ],
+    [
+      10,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Background> 항목 설정> Apply",
+      "[Station]-BS2\n1. 설정범위 : Logo(Default)/Notice/Slide Show\n2. Logo/Slide Show : Default 이미지\n3. Notice : 최초 설정시 영역내 공백 표시\n\n(/) L2, N2\n> Logo Only",
+      "1. 설정한 Background 로 장치에서 동작되어야 한다.\n> Logo : 중앙에 시계가 표시된다.\n> Notice : 중앙에 Notice 영역이 표시된다.\n> Slide Show : Default 이미지가 순차적으로 표시된다."
+    ],
+    [
+      11,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Background> 항목 설정> Update> Apply",
+      "[Station]-BS2\n1. 설정범위 : Logo(Default)/Notice/Slide Show\n2. Logo/Slide Show \n> Image Format : PNG Only\n(on) JPG, JPEG, BMP, GIF -> PNG 변환 \n> 해상도 : 320*240, 1920*1080\n> Slave 장치 Update 시 용량제한 : 1M\n:  1장 전송시 이미지 용량이 1M 이하인 경우에만 전송 가능\n: 2~10장 전송시 이미지 용량의 합이 1M 이하인 경우에만 전송 가능\n3. Notice : 최대 글자수 500자\n\n* L2의 경우 Logo만 존재\n  : Logo에서 이미지 업데이트시 Theme가 반드시 Theme2(Custom Logo)이어야 함",
+      "1. Update 한 설정값이 장치에 표시되어야 한다.\n> Update 시 Slave 장치의 연결이 해제되지 않아야 한다.\n> Logo : Update 한 이미지가 표시된다.\n> Slide Show : Update 한 이미지가 순차적으로 표시된다. \n: 1장의 이미지만 Update 한 경우 Logo 처럼 동작한다.\n> Notice : Update 한 Text 가 Notice 배경 위에 표시된다.\n: 500자 입력시 장치에서 표시 가능한 부분까지만 표시된다.(현상태)"
+    ],
+    [
+      12,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Home Screen> 항목 설정> Apply\n\n(on) Logo 설정시 Slide Show ON/OFF 항목 존재",
+      "[Station]-A2\n1. 설정범위 : Normal(Default)/Logo/Notice\n2. Logo/Slide Show : Default 이미지\n3. Notice : 최초 설정시 영역내 Undefined 표시",
+      "1. 설정한 Home Screen 으로 장치에서 동작되어야 한다.\n> Normal : 홈 스크린 중앙에 시계가 표시되고 시계의 원을 따라 애니메이션이 동작한다.\n> Logo : 홈 스크린 상단에 시계가 표시되고 Default 이미지(자사 로고)가 표시된다.\n> Slide Show : 홈 스크린 상단에 시계가 표시되고 검은색 배경화면이 표시된다.\n> Notice : 홈 스크린 상단에 시계가 표시되고 Notice 영역이 표시된다."
+    ],
+    [
+      13,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Home Screen> 항목 설정> Update> Apply\n\n(on) Logo 설정시 Slide Show ON/OFF 항목 존재",
+      "[Station]-A2\n1. 설정범위 : Logo(Slide Show)/Notice\n2. Logo/Slide Show \n> Image Format : PNG Only\n(on) JPG, JPEG, BMP, GIF -> PNG 변환 \n> 해상도 : 320*240, 1920*1080\n> Slave 장치 Update 시 용량제한 : 1M\n:  1장 전송시 이미지 용량이 1M 이하인 경우에만 전송 가능\n: 2~10장 전송시 이미지 용량의 합이 1M 이하인 경우에만 전송 가능\n3. Notice : 최대 글자수 500자",
+      "1. Update 한 설정값이 장치에 표시되어야 한다.\n> Update 시 Slave 장치의 연결이 해제되지 않아야 한다.\n> Logo : Update 한 이미지가 표시된다.\n> Slide Show : Update 한 이미지가 순차적으로 표시된다. \n: 1장의 이미지만 Update 한 경우 Logo 처럼 동작한다.\n> Notice : Update 한 Text 가 Notice 배경 위에 표시된다.\n: 500자 입력시 장치에서 표시 가능한 부분까지만 표시된다.(현상태)"
+    ],
+    [
+      14,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Sound> 항목 별 소리 설정> Update> Apply\n3. 장치 재부팅> 인증 성공> 인증 실패",
+      "[Station]\nSound \n> Format : WAVE(PCM)\n1. Start\n2. Verify Successful\n3. Verify Failed",
+      "1. 장치에서 장치 시작음, 인증 성공음, 인증 실패음이 변경한 Sound 로 출력되어야 한다."
+    ],
+    [
+      15,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Interphone\n2. Use 설정> Apply",
+      "[Station]-BS2\nInterphone Use\n> Check\n> Uncheck(Default)\nInterphone List\n> TP-nAC\n> TP-6RC",
+      "1. Check 시 장치에서 Call 버튼 입력시 인터폰 화면으로 전환된다.\n> 장치에서 Call 음 발생한다.\n> 연결된 인터폰에서 Call 음 발생한다. (장치의 볼륨을 0으로 설정한 뒤 확인한다.)\n(*) Call 음 확인시 장치와 인터폰의 거리는 1m 이상 떨어뜨린 상태에서 확인\n2. 인터폰에서 버튼 입력시 Door Unlock 이 가능하다. (Door 설정된 상태)\n3. Uncheck 시 장치에서 Call 버튼 입력시 아무 반응 없다."
+    ],
+    [
+      16,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Interphone\n2. Use 설정> Apply",
+      "[Station]-A2/FS2\nInterphone Use\n> Check\n> Uncheck(Default)\nInterphone\n> MicroSIP",
+      "1. Uncheck시 Interphone 설정 필드 전체가 비활성화된다.\n2. Use 시 Interphone 설정 필드가 활성화된다.\n3. SIP 서버 IP 주소, SIP 서버 포트, 계정 ID, 계정 비밀 번호, 문열기 버튼, 내선 번호를 설정할 수 있다.\n> SIP 서버 포트 : 5060(Predefined)\n> 문열기 버튼(DTMF) : 0 – 9, *, #\n> 내선 번호 : 최대 16개(16개 이후 추가 버튼 비활성화, 등록된 내선번호 삭제 가능)\n4. Asterisk가 설치되어 있지 않는 SIP 서버 주소를 입력하는 경우에도 정상적으로 동작 한다.\n> Crash 없이 Call 화면 미팝업"
+    ],
+    [
+      17,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Image Log\n2. Image Log 설정> Apply",
+      "[Station]-A2/FS2/F2\nImage Log\n> Enable\n> Disable\n\n(off) Slave 미지원\n",
+      "1. Enable 설정시 Configuration 항목 표시된다.\n> Configuration의 Event, Schedule 추가 후 해당 Event 동작시 Image Log 가 남는다.\n> [Requirement] Monitoring-Log 에서 항목 별 확인\n2. Disable 설정시 Configuration 항목 사라진다.\n> Configuration 에서 추가한 항목 동작시 Image Log 남지 않는다."
+    ],
+    [
+      18,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Camera\n2. Power Line Frequency 설정> Apply",
+      "[Station]-A2/F2\nPower Line Frequency\n> 50Hz\n> 60Hz",
+      "1. 변경한 설정값으로 장치에 적용되어야 한다.\n2. 사진 촬영에 이상이 없어야 한다."
+    ],
+    [
+      19,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Private Message> 입력> 적용",
+      "[Station]-FS2, FL, A2, BS2, F2\n> Server Private Message Only\n\nFS2, F2\n> Device Private Message 추가 지원\n\n(off) BioStar V2.4.1 미지원\n> AutoTest Tool로 확인가능",
+      "1. Private Message가 존재하는 경우 표시 된다.\n2. Private Message가 없는 경우 미표시 된다.\n\n> 최대 40자 이내 \n\n"
+    ],
+    [
+      20,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Home Screen> 항목 설정> Apply\n\n(on) Logo 설정시 Slide Show ON/OFF 항목 존재",
+      "[Station]-FS2, F2\n1. 설정범위\n> Normal(Default)/Logo/Notice\n2. Logo/Slide Show : Default 이미지\n3. Notice : 최초 설정시 영역내 Undefined 표시",
+      "1. 설정한 Home Screen 으로 장치에서 동작되어야 한다.\n> Normal : 홈 스크린의 좌패널(Default 이미지(FaceStation 2 얼굴 이미지), 메뉴 아이콘, 타이틀 & 근태 캡션), 우패널(상태 아이콘, 디지털 시계, 단축 아이콘)이 표시 된다.\n> Logo : 홈 스크린의 좌패널(Default 이미지(FaceStation 2 로고), 메뉴 아이콘, 타이틀 & 근태 캡션), 우패널(상태 아이콘, 디지털 시계, 단축 아이콘)이 표시 된다.\n> Slide Show : 홈 스크린의 좌패널(Default 이미지(블랙 이미지), 메뉴 아이콘, 타이틀 & 근태 캡션), 우패널(상태 아이콘, 디지털 시계, 단축 아이콘)이 표시 된다.\n> Notice : 홈 스크린의 좌패널(Default 이미지(Notice 영역-undefined), 메뉴 아이콘, 타이틀 & 근태 캡션), 우패널(상태 아이콘, 디지털 시계, 단축 아이콘)이 표시 된다."
+    ],
+    [
+      21,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Home Screen> 항목 설정> Update> Apply\n\n(on) Logo 설정시 Slide Show ON/OFF 항목 존재",
+      "[Station]-FS2, F2\n1. 설정범위\n> Logo(Slide Show)/Notice\n2. Logo/Slide Show \n> Image Format : PNG Only\n(on) JPG, JPEG, BMP, GIF -> PNG 변환 \n> 해상도 : 320*240, 1920*1080\n> Slave 장치 Update 시 용량제한 : 1M\n:  1장 전송시 이미지 용량이 1M 이하인 경우에만 전송 가능\n: 2~10장 전송시 이미지 용량의 합이 1M 이하인 경우에만 전송 가능\n3. Notice : 최대 글자수 500자",
+      "1. Update 한 설정값이 장치에 표시되어야 한다.\n> Update 시 Slave 장치의 연결이 해제되지 않아야 한다.\n> Logo : Update 한 이미지가 표시된다.\n> Slide Show : Update 한 이미지가 순차적으로 표시된다. \n: 1장의 이미지만 Update 한 경우 Logo 처럼 동작한다.\n> Notice : Update 한 Text 가 Notice 배경 위에 표시된다.\n: 500자 입력시 장치에서 표시 가능한 부분까지만 표시된다.(현상태)"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-39",
+    "description": "",
+    "test_step": [
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Information",
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Language 설정> Apply",
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Volume 설정> Apply",
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Menu Timeout 설정> Apply",
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Theme 설정> Apply",
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Theme 설정> Apply",
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Backlight Timeout 설정> Apply",
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Msg. Timeout 설정> Apply",
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Use Voice 설정> Apply",
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Background> 항목 설정> Apply",
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Background> 항목 설정> Update> Apply",
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Home Screen> 항목 설정> Apply\n\n(on) Logo 설정시 Slide Show ON/OFF 항목 존재",
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Home Screen> 항목 설정> Update> Apply\n\n(on) Logo 설정시 Slide Show ON/OFF 항목 존재",
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Sound> 항목 별 소리 설정> Update> Apply\n3. 장치 재부팅> 인증 성공> 인증 실패",
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Interphone\n2. Use 설정> Apply",
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Interphone\n2. Use 설정> Apply",
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Image Log\n2. Image Log 설정> Apply",
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Camera\n2. Power Line Frequency 설정> Apply",
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Private Message> 입력> 적용",
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Home Screen> 항목 설정> Apply\n\n(on) Logo 설정시 Slide Show ON/OFF 항목 존재",
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Advanced> Display/Sound\n2. Home Screen> 항목 설정> Update> Apply\n\n(on) Logo 설정시 Slide Show ON/OFF 항목 존재"
+    ],
+    "data": [
+      "[공통]\n1. BioStar에 연결된 장치\n> Entry\n> Station",
+      "[공통]\n1. 설정범위\n> Korean/English/Custom\n2. Default : English(최초 공장 출하시)\n3. Language를 Custom으로 설정시 Update Resource 파일 선택 후 Update 수행\n\n*이 후 초기화시 이전 설정값 유지",
+      "[Entry]\n1. 설정범위\n> Enable/Disable\n2. Default : Enable\n[Station]\n1. 설정범위\n> 0 ~ 100\n2. Default : 50",
+      "[Entry] \n1. 설정범위\n> Always On/5/10/15/20/---/60s (5s 단위)\n2. Default : 20s\n[Station]\n1. 설정범위\n> Always On/10/20/30/---/60s (10s 단위)\n2. Default : 20s",
+      "[Station]-BS2\n1. 설정범위\n> Theme 1 / 2 / 3 / 4\n2. Default : Theme 1",
+      "[Station]-BSL2, BLN2, FL\n1. 설정범위\n> Normal(Theme 1)/Custom Logo(Theme 2)\n2. Default : Normal\n",
+      "[Entry]\n1. 설정범위\n> Always On/5/10/15/20/---/60s (5s 단위)\n2. Default : 20s\n[Station]\n1. 설정범위\n> Always On/10/20/---/60s (10s 단위)\n2. Default : 20s",
+      "[Entry]\n1. 설정범위\n> 0.5/1/1.5/2/…/5s (0.5s 단위)\n2. Default : 2s\n[Station]\n1. 설정범위\n> 0.5/1/2/3/4/5s\n2. Default : 2s\n\n*W3 - Default :5s",
+      "[Station]\n1. Use Voice\n> Enable\n> Disable(Default)\n2. 음성 안내 케이스 정의\n> 지문 요청, 카드 요청, PIN 요청\n> 지문 또는 PIN 요청\n> ID, 카드, 또는 지문 요청\n> ID 또는 지문 요청\n> 카드 또는 지문 요청\n> ID, 카드 요청\n> 인증 성공\n이외의 케이스는 효과음으로 처리",
+      "[Station]-BS2\n1. 설정범위 : Logo(Default)/Notice/Slide Show\n2. Logo/Slide Show : Default 이미지\n3. Notice : 최초 설정시 영역내 공백 표시\n\n(/) L2, N2\n> Logo Only",
+      "[Station]-BS2\n1. 설정범위 : Logo(Default)/Notice/Slide Show\n2. Logo/Slide Show \n> Image Format : PNG Only\n(on) JPG, JPEG, BMP, GIF -> PNG 변환 \n> 해상도 : 320*240, 1920*1080\n> Slave 장치 Update 시 용량제한 : 1M\n:  1장 전송시 이미지 용량이 1M 이하인 경우에만 전송 가능\n: 2~10장 전송시 이미지 용량의 합이 1M 이하인 경우에만 전송 가능\n3. Notice : 최대 글자수 500자\n\n* L2의 경우 Logo만 존재\n  : Logo에서 이미지 업데이트시 Theme가 반드시 Theme2(Custom Logo)이어야 함",
+      "[Station]-A2\n1. 설정범위 : Normal(Default)/Logo/Notice\n2. Logo/Slide Show : Default 이미지\n3. Notice : 최초 설정시 영역내 Undefined 표시",
+      "[Station]-A2\n1. 설정범위 : Logo(Slide Show)/Notice\n2. Logo/Slide Show \n> Image Format : PNG Only\n(on) JPG, JPEG, BMP, GIF -> PNG 변환 \n> 해상도 : 320*240, 1920*1080\n> Slave 장치 Update 시 용량제한 : 1M\n:  1장 전송시 이미지 용량이 1M 이하인 경우에만 전송 가능\n: 2~10장 전송시 이미지 용량의 합이 1M 이하인 경우에만 전송 가능\n3. Notice : 최대 글자수 500자",
+      "[Station]\nSound \n> Format : WAVE(PCM)\n1. Start\n2. Verify Successful\n3. Verify Failed",
+      "[Station]-BS2\nInterphone Use\n> Check\n> Uncheck(Default)\nInterphone List\n> TP-nAC\n> TP-6RC",
+      "[Station]-A2/FS2\nInterphone Use\n> Check\n> Uncheck(Default)\nInterphone\n> MicroSIP",
+      "[Station]-A2/FS2/F2\nImage Log\n> Enable\n> Disable\n\n(off) Slave 미지원\n",
+      "[Station]-A2/F2\nPower Line Frequency\n> 50Hz\n> 60Hz",
+      "[Station]-FS2, FL, A2, BS2, F2\n> Server Private Message Only\n\nFS2, F2\n> Device Private Message 추가 지원\n\n(off) BioStar V2.4.1 미지원\n> AutoTest Tool로 확인가능",
+      "[Station]-FS2, F2\n1. 설정범위\n> Normal(Default)/Logo/Notice\n2. Logo/Slide Show : Default 이미지\n3. Notice : 최초 설정시 영역내 Undefined 표시",
+      "[Station]-FS2, F2\n1. 설정범위\n> Logo(Slide Show)/Notice\n2. Logo/Slide Show \n> Image Format : PNG Only\n(on) JPG, JPEG, BMP, GIF -> PNG 변환 \n> 해상도 : 320*240, 1920*1080\n> Slave 장치 Update 시 용량제한 : 1M\n:  1장 전송시 이미지 용량이 1M 이하인 경우에만 전송 가능\n: 2~10장 전송시 이미지 용량의 합이 1M 이하인 경우에만 전송 가능\n3. Notice : 최대 글자수 500자"
+    ],
+    "expected_result": [
+      "1. Name 이 표시된다.\n2. Device ID 가 표시된다.\n3. FW 버전이 표시된다.\n4. Group이 표시된다.\n5. Device Type이 표시된다.\n6. Product Name이 표시된다.\n7. Kernel 버전이 표시된다.\n> 미지원 : 0.0.0\n8. Hardware 버전이 표시된다.\n> 미지원 : 0.0.0",
+      "1. 영어/한국어 설정시 장치 재부팅 후 설정한 언어로 변경되어야 한다.\n> 재부팅 동작은 장치별로 상이하다.\n2. 사용자정의 설정시 장치 재부팅 후 Update Resource 로 변경되어야 한다.\n> Language Resource 파일이 없는 경우 영어로 변경되어야 한다.",
+      "1. Enable 설정시 소리 나오고 Disable 설정시 소리 나오지 않아야 한다.\n2. 0 설정시 무음 처리 되어야 한다.\n3. 100에 가까워질수록 소리가 커져야 한다.",
+      "1. 무한 설정시 메인화면으로 이동되지 않고 메뉴 화면을 유지해야 한다.\n2. 시간 설정시 메뉴에서의 마지막 입력을 기점으로 설정한 시간이 경과한 후에 메인화면으로 이동되어야 한다.\n3. 장치의 메뉴에서 Menu Timeout 설정값이 변경값에 맞게 노출되는지 확인한다.",
+      "1. 메인화면에 설정한 테마에 대한 UI로 표시되어야 한다.\n> 각 테마별 색상, 아이콘 표시",
+      "1. 설정한 Home Screen 으로 장치에서 동작되어야 한다.\n> Normal - 중앙에 시간 표시, 상단에 상태 아이콘(Link, Server)\n> Custom Logo - 하단에 시간 표시, 적용된 Logo Image 표시, 상단에 상태 아이콘(DownLoad, Link, Server, RS 485)",
+      "1. 무한 설정시 Backlight 가 OFF 되지 않고 켜진 상태를 유지해야 한다.\n2. 시간 설정시 마지막 입력을 기점으로 설정한 시간이 경과한 후에 Backlight 가 OFF 되어야 한다.\n3. 장치의 메뉴에서 Backlight Timeout 설정값이 변경값에 맞게 노출되는지 확인한다.",
+      "1. 장치에서 발생한 알림 메시지가 설정한 시간 경과 후 사라져야 한다.\n2. 장치의 메뉴에서 Msg. Timeout 설정값이 변경값에 맞게 노출되는지 확인한다.",
+      "1. Use Voice Enable인 경우 음성안내가 출력되어야 한다.\n2. Use Voice Disable인 경우 음성안내가 출력되지 않아야 한다.",
+      "1. 설정한 Background 로 장치에서 동작되어야 한다.\n> Logo : 중앙에 시계가 표시된다.\n> Notice : 중앙에 Notice 영역이 표시된다.\n> Slide Show : Default 이미지가 순차적으로 표시된다.",
+      "1. Update 한 설정값이 장치에 표시되어야 한다.\n> Update 시 Slave 장치의 연결이 해제되지 않아야 한다.\n> Logo : Update 한 이미지가 표시된다.\n> Slide Show : Update 한 이미지가 순차적으로 표시된다. \n: 1장의 이미지만 Update 한 경우 Logo 처럼 동작한다.\n> Notice : Update 한 Text 가 Notice 배경 위에 표시된다.\n: 500자 입력시 장치에서 표시 가능한 부분까지만 표시된다.(현상태)",
+      "1. 설정한 Home Screen 으로 장치에서 동작되어야 한다.\n> Normal : 홈 스크린 중앙에 시계가 표시되고 시계의 원을 따라 애니메이션이 동작한다.\n> Logo : 홈 스크린 상단에 시계가 표시되고 Default 이미지(자사 로고)가 표시된다.\n> Slide Show : 홈 스크린 상단에 시계가 표시되고 검은색 배경화면이 표시된다.\n> Notice : 홈 스크린 상단에 시계가 표시되고 Notice 영역이 표시된다.",
+      "1. Update 한 설정값이 장치에 표시되어야 한다.\n> Update 시 Slave 장치의 연결이 해제되지 않아야 한다.\n> Logo : Update 한 이미지가 표시된다.\n> Slide Show : Update 한 이미지가 순차적으로 표시된다. \n: 1장의 이미지만 Update 한 경우 Logo 처럼 동작한다.\n> Notice : Update 한 Text 가 Notice 배경 위에 표시된다.\n: 500자 입력시 장치에서 표시 가능한 부분까지만 표시된다.(현상태)",
+      "1. 장치에서 장치 시작음, 인증 성공음, 인증 실패음이 변경한 Sound 로 출력되어야 한다.",
+      "1. Check 시 장치에서 Call 버튼 입력시 인터폰 화면으로 전환된다.\n> 장치에서 Call 음 발생한다.\n> 연결된 인터폰에서 Call 음 발생한다. (장치의 볼륨을 0으로 설정한 뒤 확인한다.)\n(*) Call 음 확인시 장치와 인터폰의 거리는 1m 이상 떨어뜨린 상태에서 확인\n2. 인터폰에서 버튼 입력시 Door Unlock 이 가능하다. (Door 설정된 상태)\n3. Uncheck 시 장치에서 Call 버튼 입력시 아무 반응 없다.",
+      "1. Uncheck시 Interphone 설정 필드 전체가 비활성화된다.\n2. Use 시 Interphone 설정 필드가 활성화된다.\n3. SIP 서버 IP 주소, SIP 서버 포트, 계정 ID, 계정 비밀 번호, 문열기 버튼, 내선 번호를 설정할 수 있다.\n> SIP 서버 포트 : 5060(Predefined)\n> 문열기 버튼(DTMF) : 0 – 9, *, #\n> 내선 번호 : 최대 16개(16개 이후 추가 버튼 비활성화, 등록된 내선번호 삭제 가능)\n4. Asterisk가 설치되어 있지 않는 SIP 서버 주소를 입력하는 경우에도 정상적으로 동작 한다.\n> Crash 없이 Call 화면 미팝업",
+      "1. Enable 설정시 Configuration 항목 표시된다.\n> Configuration의 Event, Schedule 추가 후 해당 Event 동작시 Image Log 가 남는다.\n> [Requirement] Monitoring-Log 에서 항목 별 확인\n2. Disable 설정시 Configuration 항목 사라진다.\n> Configuration 에서 추가한 항목 동작시 Image Log 남지 않는다.",
+      "1. 변경한 설정값으로 장치에 적용되어야 한다.\n2. 사진 촬영에 이상이 없어야 한다.",
+      "1. Private Message가 존재하는 경우 표시 된다.\n2. Private Message가 없는 경우 미표시 된다.\n\n> 최대 40자 이내 \n\n",
+      "1. 설정한 Home Screen 으로 장치에서 동작되어야 한다.\n> Normal : 홈 스크린의 좌패널(Default 이미지(FaceStation 2 얼굴 이미지), 메뉴 아이콘, 타이틀 & 근태 캡션), 우패널(상태 아이콘, 디지털 시계, 단축 아이콘)이 표시 된다.\n> Logo : 홈 스크린의 좌패널(Default 이미지(FaceStation 2 로고), 메뉴 아이콘, 타이틀 & 근태 캡션), 우패널(상태 아이콘, 디지털 시계, 단축 아이콘)이 표시 된다.\n> Slide Show : 홈 스크린의 좌패널(Default 이미지(블랙 이미지), 메뉴 아이콘, 타이틀 & 근태 캡션), 우패널(상태 아이콘, 디지털 시계, 단축 아이콘)이 표시 된다.\n> Notice : 홈 스크린의 좌패널(Default 이미지(Notice 영역-undefined), 메뉴 아이콘, 타이틀 & 근태 캡션), 우패널(상태 아이콘, 디지털 시계, 단축 아이콘)이 표시 된다.",
+      "1. Update 한 설정값이 장치에 표시되어야 한다.\n> Update 시 Slave 장치의 연결이 해제되지 않아야 한다.\n> Logo : Update 한 이미지가 표시된다.\n> Slide Show : Update 한 이미지가 순차적으로 표시된다. \n: 1장의 이미지만 Update 한 경우 Logo 처럼 동작한다.\n> Notice : Update 한 Text 가 Notice 배경 위에 표시된다.\n: 500자 입력시 장치에서 표시 가능한 부분까지만 표시된다.(현상태)"
+    ]
+  }
+}

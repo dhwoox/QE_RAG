@@ -1,0 +1,320 @@
+{
+  "id": "COMMONR-252",
+  "content": [
+    [
+      1,
+      "<Wiegand Out: 2019 1H 이전FW>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "",
+      "1. 카드ID가 출력된다."
+    ],
+    [
+      2,
+      "<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "사용자ID = Card ID 동일하게 설정\n\nWiegand Out: User ID",
+      "1. 카드가 등록된 UserID가 출력된다."
+    ],
+    [
+      3,
+      "<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "Wiegand Out: Card ID",
+      "1. 카드ID가 출력된다."
+    ],
+    [
+      4,
+      "<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 지문입력\n3. 출력되는 값 확인",
+      "사용자: 지문만 등록\n\nWiegand Out: User ID",
+      "1. UserID가 출력된다."
+    ],
+    [
+      5,
+      "<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 지문입력\n3. 출력되는 값 확인",
+      "사용자: 지문만 등록\n\nWiegand Out: Card ID",
+      "1. 등록된 카드가 없기 때문에 출력되는 값이 없다."
+    ],
+    [
+      6,
+      "<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ID인증\n3. 출력되는 값 확인",
+      "사용자: PIN 등록\n\nWiegand Out: User ID",
+      "1. UserID가 출력된다."
+    ],
+    [
+      7,
+      "<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ID인증\n3. 출력되는 값 확인",
+      "사용자: PIN만 등록\n\nWiegand Out: Card ID",
+      "1. 등록된 카드가 없기 때문에 출력되는 값이 없다.\n> 사용자에 카드가 등록된 경우 카드ID가 출력된다."
+    ],
+    [
+      8,
+      "<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "Wiegand Out 장치\n> A사용자에 카드 등록된 상태\nWiegand In 장치\n> A사용자 없는 상태\n\nWiegand Out: User ID",
+      "1. UserID가 출력된다.\n> 등록된 UserID가 12인 경우 0x31 0x32인 12594로 출력."
+    ],
+    [
+      9,
+      "<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "사용자ID: sykim\n> CardID: 1234026420066176\n\nWiegand Format: 64bit\nWiegand Out: User ID",
+      "1. UserID로 출력된다.\n> sykim = 0x73 0x79 0x6B 0x69 0x6D\n따라서 495958321517로 출력."
+    ],
+    [
+      10,
+      "<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "사용자ID: sykim\n> CardID: 1234026420066176\n\nWiegand Format: 64bit\nWiegand Out: Card ID",
+      "1. 카드ID가 출력된다.\n> 인증성공으로 동작."
+    ],
+    [
+      11,
+      "<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 지문입력\n3. 출력되는 값 확인",
+      "사용자: 지문만 등록\n\nWiegand Out: User ID",
+      "1. UserID가 출력된다.\n> User ID가 2002인 경우 0x32 0x30 0x30 0x32 즉, 842018866으로 출력."
+    ],
+    [
+      12,
+      "<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 지문입력\n3. 출력되는 값 확인",
+      "사용자: 지문만 등록\n\nWiegand Out: Card ID",
+      "1. 등록된 카드가 없기 때문에 출력되는 값이 없다."
+    ],
+    [
+      13,
+      "<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ID인증\n3. 출력되는 값 확인",
+      "사용자: PIN 등록\n\nWiegand Out: User ID",
+      "1. UserID가 출력된다.\n> User ID가 4인 경우 0x34 즉, 52로 출력."
+    ],
+    [
+      14,
+      "<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ID인증\n3. 출력되는 값 확인",
+      "사용자: PIN만 등록\n\nWiegand Out: Card ID",
+      "1. 등록된 카드가 없기 때문에 출력되는 값이 없다.\n> 사용자에 카드가 등록된 경우 카드ID가 출력된다."
+    ],
+    [
+      15,
+      "<숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "리드할 카드\n> AOC\n\nWiegand Out: Card ID",
+      "1. 발급된 카드ID값이 출력된다.(기존과 동일)"
+    ],
+    [
+      16,
+      "<숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "리드할 카드\n> AOC(영숫자모드에서 영숫자ID로 발급)\n\nWiegand Out: Card ID",
+      "1. 발급된 카드ID값이 출력된다.(기존과 동일)"
+    ],
+    [
+      17,
+      "<영숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "리드할 카드\n> AOC(영숫자모드에서 숫자ID로 발급) - 2000\n\nWiegand Out: User ID",
+      "1. UserID로 출력된다\n> User ID가 2000인 경우 0x32 0x30 0x30 0x30 즉, 842018864로 출력.\n"
+    ],
+    [
+      18,
+      "<영숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "리드할 카드\n> AOC(영숫자ID로 발급) - sykim\n\nWiegand Out: User ID",
+      "1. UserID로 출력된다.\n> UserID가 sykim인 경우 0x73 0x79 0x6B 0x69 0x6D 즉, 495958321517로 출력."
+    ],
+    [
+      19,
+      "<숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "리드할 카드\n> SCC\n\nWiegand Out: Card ID",
+      "1. 카드ID로 출력된다."
+    ],
+    [
+      20,
+      "<숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "리드할 카드\n> SCC\n\nWiegand Out: User ID",
+      "1. UserID로 출력된다."
+    ],
+    [
+      21,
+      "<영숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "리드할 카드\n> SCC\n\nWiegand Out: Card ID",
+      "1. 카드ID로 출력된다."
+    ],
+    [
+      22,
+      "<영숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "리드할 카드\n> SCC\n\nWiegand Out: User ID",
+      "1. User ID로 출력된다.\n> UserID가 6인 경우 0x36 즉 54로 출력."
+    ],
+    [
+      23,
+      "<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "Wiegand Out: User ID\nBypass 모드 설정",
+      "1. 카드ID로 출력된다."
+    ],
+    [
+      24,
+      "<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "Wiegand Out: User ID\nBypass 모드 설정",
+      "1. 카드ID로 출력된다."
+    ],
+    [
+      25,
+      "[Wiegand In - Out 구성]\n1. Wiegand Out 장치 설정 변경\n2. 인증시도 ",
+      "Wiegand Out 장치 설정 변경\n> Byte Order: MSB\n> Output Info: Card ID\n\n인증시도\n> 지문/카드/ID/얼굴",
+      "1. 카드ID가 출력된다."
+    ],
+    [
+      26,
+      "[Wiegand In - Out 구성]\n1. Wiegand Out 장치 설정 변경\n2. 인증시도 ",
+      "Wiegand Out 장치 설정 변경\n> Byte Order: MSB\n> Output Info: User ID\n\n인증시도\n> 지문/카드/ID/얼굴",
+      "1. UserID가 출력된다."
+    ],
+    [
+      27,
+      "[Wiegand In - Out 구성]\n1. Wiegand Out 장치 설정 변경\n2. Wiegand Out 장치에 인증시도 ",
+      "Wiegand Out 장치 설정 변경\n> Byte Order: LSB\n> Output Info: Card ID\n\n인증시도\n> 지문/카드/ID/얼굴",
+      "1. 카드ID가 출력된다."
+    ],
+    [
+      28,
+      "[Wiegand In - Out 구성]\n1. Wiegand Out 장치 설정 변경\n2. Wiegand Out 장치에 인증시도 ",
+      "Wiegand Out 장치 설정 변경\n> Byte Order: LSB\n> Output Info: User ID\n\n인증시도\n> 지문/카드/ID/얼굴",
+      "1. UserID가 출력된다.\n> User ID인 경우 Byte Order 보지않음(카드 외 크리덴셜)\n\n"
+    ],
+    [
+      29,
+      "[ToM 지원 장치]\n<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ToM 리드\n3. 출력되는 값 확인",
+      "Wiegand Out: Card ID\n\n- ToM_AoC,ToM_SCC",
+      "1. 카드ID가 출력된다."
+    ],
+    [
+      30,
+      "[ToM 지원 장치]\n\n<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ToM 리드\n3. 출력되는 값 확인",
+      "Wiegand Out:User ID\n\n- ToM_AoC,ToM_SCC",
+      "1. 카드가 등록된 USER ID가 출력된다."
+    ],
+    [
+      31,
+      "[ToM 지원 장치]\n<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ToM 리드\n3. 출력되는 값 확인",
+      "Wiegand Out: Card ID\n\n- ToM_AoC,ToM_SCC",
+      "1. 카드ID가 출력된다."
+    ],
+    [
+      32,
+      "[ToM 지원 장치]\n\n<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ToM 리드\n3. 출력되는 값 확인",
+      "Wiegand Out: User ID\n\n- ToM_AOC 카드 발급(영숫자 모드에서 숫자id 발급)\nCard id/User id: 2001",
+      "1. 카드가 등록된 USER ID가 출력된다.\n> User ID가 2001인 경우. 2001출력"
+    ],
+    [
+      33,
+      "[ToM 지원 장치]\n<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ToM 리드\n3. 출력되는 값 확인",
+      "Wiegand Out: User ID\n\n- ToM_SCC 카드 발급(영숫자 모드에서 숫자id 발급)\nCard id: 11/User id: 2001",
+      "1. 카드가 등록된 USER ID가 출력된다.\n> User ID가 2001인 경우, 842018865 출력\n"
+    ],
+    [
+      34,
+      "[Lock Override]\n1. Wiegand In-Out 구성\n2. Wiegand Out 장치에 지문,Face 인증\n3. 출력되는 값 확인",
+      "User에 지문, Face, Card 등록되어 있는 상태\n> Wiegand Out : Card ID",
+      "1. 카드 ID가 출력되며 Emergency Unlock으로 동작한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-252",
+    "description": "",
+    "test_step": [
+      "<Wiegand Out: 2019 1H 이전FW>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 지문입력\n3. 출력되는 값 확인",
+      "<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 지문입력\n3. 출력되는 값 확인",
+      "<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ID인증\n3. 출력되는 값 확인",
+      "<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ID인증\n3. 출력되는 값 확인",
+      "<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 지문입력\n3. 출력되는 값 확인",
+      "<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 지문입력\n3. 출력되는 값 확인",
+      "<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ID인증\n3. 출력되는 값 확인",
+      "<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ID인증\n3. 출력되는 값 확인",
+      "<숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "<숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "<영숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "<영숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "<숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "<숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "<영숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "<영숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
+      "[Wiegand In - Out 구성]\n1. Wiegand Out 장치 설정 변경\n2. 인증시도 ",
+      "[Wiegand In - Out 구성]\n1. Wiegand Out 장치 설정 변경\n2. 인증시도 ",
+      "[Wiegand In - Out 구성]\n1. Wiegand Out 장치 설정 변경\n2. Wiegand Out 장치에 인증시도 ",
+      "[Wiegand In - Out 구성]\n1. Wiegand Out 장치 설정 변경\n2. Wiegand Out 장치에 인증시도 ",
+      "[ToM 지원 장치]\n<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ToM 리드\n3. 출력되는 값 확인",
+      "[ToM 지원 장치]\n\n<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ToM 리드\n3. 출력되는 값 확인",
+      "[ToM 지원 장치]\n<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ToM 리드\n3. 출력되는 값 확인",
+      "[ToM 지원 장치]\n\n<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ToM 리드\n3. 출력되는 값 확인",
+      "[ToM 지원 장치]\n<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ToM 리드\n3. 출력되는 값 확인",
+      "[Lock Override]\n1. Wiegand In-Out 구성\n2. Wiegand Out 장치에 지문,Face 인증\n3. 출력되는 값 확인"
+    ],
+    "data": [
+      "사용자ID = Card ID 동일하게 설정\n\nWiegand Out: User ID",
+      "Wiegand Out: Card ID",
+      "사용자: 지문만 등록\n\nWiegand Out: User ID",
+      "사용자: 지문만 등록\n\nWiegand Out: Card ID",
+      "사용자: PIN 등록\n\nWiegand Out: User ID",
+      "사용자: PIN만 등록\n\nWiegand Out: Card ID",
+      "Wiegand Out 장치\n> A사용자에 카드 등록된 상태\nWiegand In 장치\n> A사용자 없는 상태\n\nWiegand Out: User ID",
+      "사용자ID: sykim\n> CardID: 1234026420066176\n\nWiegand Format: 64bit\nWiegand Out: User ID",
+      "사용자ID: sykim\n> CardID: 1234026420066176\n\nWiegand Format: 64bit\nWiegand Out: Card ID",
+      "사용자: 지문만 등록\n\nWiegand Out: User ID",
+      "사용자: 지문만 등록\n\nWiegand Out: Card ID",
+      "사용자: PIN 등록\n\nWiegand Out: User ID",
+      "사용자: PIN만 등록\n\nWiegand Out: Card ID",
+      "리드할 카드\n> AOC\n\nWiegand Out: Card ID",
+      "리드할 카드\n> AOC(영숫자모드에서 영숫자ID로 발급)\n\nWiegand Out: Card ID",
+      "리드할 카드\n> AOC(영숫자모드에서 숫자ID로 발급) - 2000\n\nWiegand Out: User ID",
+      "리드할 카드\n> AOC(영숫자ID로 발급) - sykim\n\nWiegand Out: User ID",
+      "리드할 카드\n> SCC\n\nWiegand Out: Card ID",
+      "리드할 카드\n> SCC\n\nWiegand Out: User ID",
+      "리드할 카드\n> SCC\n\nWiegand Out: Card ID",
+      "리드할 카드\n> SCC\n\nWiegand Out: User ID",
+      "Wiegand Out: User ID\nBypass 모드 설정",
+      "Wiegand Out: User ID\nBypass 모드 설정",
+      "Wiegand Out 장치 설정 변경\n> Byte Order: MSB\n> Output Info: Card ID\n\n인증시도\n> 지문/카드/ID/얼굴",
+      "Wiegand Out 장치 설정 변경\n> Byte Order: MSB\n> Output Info: User ID\n\n인증시도\n> 지문/카드/ID/얼굴",
+      "Wiegand Out 장치 설정 변경\n> Byte Order: LSB\n> Output Info: Card ID\n\n인증시도\n> 지문/카드/ID/얼굴",
+      "Wiegand Out 장치 설정 변경\n> Byte Order: LSB\n> Output Info: User ID\n\n인증시도\n> 지문/카드/ID/얼굴",
+      "Wiegand Out: Card ID\n\n- ToM_AoC,ToM_SCC",
+      "Wiegand Out:User ID\n\n- ToM_AoC,ToM_SCC",
+      "Wiegand Out: Card ID\n\n- ToM_AoC,ToM_SCC",
+      "Wiegand Out: User ID\n\n- ToM_AOC 카드 발급(영숫자 모드에서 숫자id 발급)\nCard id/User id: 2001",
+      "Wiegand Out: User ID\n\n- ToM_SCC 카드 발급(영숫자 모드에서 숫자id 발급)\nCard id: 11/User id: 2001",
+      "User에 지문, Face, Card 등록되어 있는 상태\n> Wiegand Out : Card ID"
+    ],
+    "expected_result": [
+      "1. 카드ID가 출력된다.",
+      "1. 카드가 등록된 UserID가 출력된다.",
+      "1. 카드ID가 출력된다.",
+      "1. UserID가 출력된다.",
+      "1. 등록된 카드가 없기 때문에 출력되는 값이 없다.",
+      "1. UserID가 출력된다.",
+      "1. 등록된 카드가 없기 때문에 출력되는 값이 없다.\n> 사용자에 카드가 등록된 경우 카드ID가 출력된다.",
+      "1. UserID가 출력된다.\n> 등록된 UserID가 12인 경우 0x31 0x32인 12594로 출력.",
+      "1. UserID로 출력된다.\n> sykim = 0x73 0x79 0x6B 0x69 0x6D\n따라서 495958321517로 출력.",
+      "1. 카드ID가 출력된다.\n> 인증성공으로 동작.",
+      "1. UserID가 출력된다.\n> User ID가 2002인 경우 0x32 0x30 0x30 0x32 즉, 842018866으로 출력.",
+      "1. 등록된 카드가 없기 때문에 출력되는 값이 없다.",
+      "1. UserID가 출력된다.\n> User ID가 4인 경우 0x34 즉, 52로 출력.",
+      "1. 등록된 카드가 없기 때문에 출력되는 값이 없다.\n> 사용자에 카드가 등록된 경우 카드ID가 출력된다.",
+      "1. 발급된 카드ID값이 출력된다.(기존과 동일)",
+      "1. 발급된 카드ID값이 출력된다.(기존과 동일)",
+      "1. UserID로 출력된다\n> User ID가 2000인 경우 0x32 0x30 0x30 0x30 즉, 842018864로 출력.\n",
+      "1. UserID로 출력된다.\n> UserID가 sykim인 경우 0x73 0x79 0x6B 0x69 0x6D 즉, 495958321517로 출력.",
+      "1. 카드ID로 출력된다.",
+      "1. UserID로 출력된다.",
+      "1. 카드ID로 출력된다.",
+      "1. User ID로 출력된다.\n> UserID가 6인 경우 0x36 즉 54로 출력.",
+      "1. 카드ID로 출력된다.",
+      "1. 카드ID로 출력된다.",
+      "1. 카드ID가 출력된다.",
+      "1. UserID가 출력된다.",
+      "1. 카드ID가 출력된다.",
+      "1. UserID가 출력된다.\n> User ID인 경우 Byte Order 보지않음(카드 외 크리덴셜)\n\n",
+      "1. 카드ID가 출력된다.",
+      "1. 카드가 등록된 USER ID가 출력된다.",
+      "1. 카드ID가 출력된다.",
+      "1. 카드가 등록된 USER ID가 출력된다.\n> User ID가 2001인 경우. 2001출력",
+      "1. 카드가 등록된 USER ID가 출력된다.\n> User ID가 2001인 경우, 842018865 출력\n",
+      "1. 카드 ID가 출력되며 Emergency Unlock으로 동작한다."
+    ]
+  }
+}

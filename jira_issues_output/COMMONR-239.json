@@ -1,0 +1,69 @@
+{
+  "id": "COMMONR-239",
+  "content": [
+    [
+      1,
+      "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master 장치에 인증시도\n3. UI에 표시되는 인증결과 확인\n4. Slave 장치에 인증시도\n5. UI에 표시되는 인증결과 확인\n",
+      "Master Device(New Version)\n> LCD 지원장치 & 미지원 장치\n\nSlave Device(New Version)\n> LCD 지원장치",
+      "1. (Master/Slave LCD 有) 인증성공시 인증결과 + User Name&ID 가 표시되어야 한다.\n> AOC : 미지원, SCC : 지원\n2. 인증실패시 인증실패 문구만 표시된다.\n3. LCD 없는 장치의 경우 인증결과에 대해 LED/부저음으로 정상출력된다."
+    ],
+    [
+      2,
+      "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master 장치에 인증시도\n3. UI에 표시되는 인증결과 확인\n4. Slave 장치에 인증시도\n5. UI에 표시되는 인증결과 확인\n",
+      "Master Device(New Version)\n> LCD 지원장치 & 미지원 장치\nSlave Device(Old Version)\n> LCD 지원장치",
+      "1. (Master LCD 有) 인증성공시 인증결과 + User Name&ID 가 표시되어야 한다.\n> AOC : 미지원, SCC : 지원\n2. (Slave LCD 有) 인증성공시 인증결과+User ID가 표시된다.\n3. 인증실패시 인증실패 문구만 표시된다.\n4. LCD 없는 장치의 경우 인증결과에 대해 LED/부저음으로 정상출력된다."
+    ],
+    [
+      3,
+      "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master 장치에 인증시도\n3. UI에 표시되는 인증결과 확인\n4. Slave 장치에 인증시도\n5. UI에 표시되는 인증결과 확인\n",
+      "Master Device(New Version)\n> LCD 지원장치 & 미지원 장치\n\nSlave Device(Old Version)\n> Entry2.0",
+      "1. (Master LCD 有) 인증성공시 인증결과 + User Name&ID 가 표시되어야 한다.\n> AOC : 미지원, SCC : 지원\n2. (Slave LCD 有) 인증성공시 인증결과 + User ID가 표시된다.\n3. 인증실패시 인증실패 문구만 표시된다.\n4. LCD 없는 장치의 경우 인증결과에 대해 LED/부저음으로 정상출력된다."
+    ],
+    [
+      4,
+      "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master 장치에 인증시도\n3. UI에 표시되는 인증결과 확인\n4. Slave 장치에 인증시도\n5. UI에 표시되는 인증결과 확인\n",
+      "Master Device(Old Version)\n> LCD 지원장치 & 미지원 장치\n\nSlave Device(New Version)\n> LCD 지원장치",
+      "1. (Master LCD 有) 인증성공시 인증결과 + User ID 가 표시되어야 한다.\n2. (Slave LCD 有) 인증성공시 인증결과 + User ID가 표시된다.\n3. 인증실패시 인증실패 문구만 표시된다.\n4. LCD 없는 장치의 경우 인증결과에 대해 LED/부저음으로 정상출력된다."
+    ],
+    [
+      5,
+      "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master에서 지문/얼굴 입력 후 화면의 Title 확인\n3. Slave에서 지문/얼굴 입력 후 화면의 Title 확인",
+      "Master Device(New Version)\n> LCD 지원장치 & 미지원 장치\n\nSlave Device(New Version)\n> LCD 지원장치\n\nMaster/Slave 인증모드\n> 다중인증모드 설정(ex. 지문+PIN)",
+      "1. (Master/Slave LCD 有) Title에 User ID와 User Name이 표시되어야 한다.\n> BS2 - User ID Only 표시, 인증 성공 시 User ID + User Name 표시\n\n> FS2, FSF2만 Title에 미표시됨(DFW-568,FSTIIFW-1071 참조)\n\n> XS2 - ID+PIN으로 Auth Timeout이 발생 시 실패문구만 표시됨\n※ Timeout으로 실패시 실패문구&User Name 표시됨. => 관련TC도 작성예정"
+    ],
+    [
+      6,
+      "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master에서 첫번째 사용자로 인증 후 화면의 Title 확인\n3. Slave에서 첫번째 사용자로 인증 후 화면의 Title 확인",
+      "Master Device(New Version)\n> LCD 지원장치 & 미지원 장치\n\nSlave Device(New Version)\n> LCD 지원장치\n\nDoor/Lift의 Reader로 설정\n> 이중인증 설정",
+      "1. (Master/Slave LCD 有) 첫번째 사용자로 인증 후 Title에 Dual Auth 표시되어야 한다.\n\n> FS2, FSF2만 Title에 미표시됨(DFW-568,FSTIIFW-1071 참조)"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-239",
+    "description": "",
+    "test_step": [
+      "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master 장치에 인증시도\n3. UI에 표시되는 인증결과 확인\n4. Slave 장치에 인증시도\n5. UI에 표시되는 인증결과 확인\n",
+      "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master 장치에 인증시도\n3. UI에 표시되는 인증결과 확인\n4. Slave 장치에 인증시도\n5. UI에 표시되는 인증결과 확인\n",
+      "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master 장치에 인증시도\n3. UI에 표시되는 인증결과 확인\n4. Slave 장치에 인증시도\n5. UI에 표시되는 인증결과 확인\n",
+      "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master 장치에 인증시도\n3. UI에 표시되는 인증결과 확인\n4. Slave 장치에 인증시도\n5. UI에 표시되는 인증결과 확인\n",
+      "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master에서 지문/얼굴 입력 후 화면의 Title 확인\n3. Slave에서 지문/얼굴 입력 후 화면의 Title 확인",
+      "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master에서 첫번째 사용자로 인증 후 화면의 Title 확인\n3. Slave에서 첫번째 사용자로 인증 후 화면의 Title 확인"
+    ],
+    "data": [
+      "Master Device(New Version)\n> LCD 지원장치 & 미지원 장치\n\nSlave Device(New Version)\n> LCD 지원장치",
+      "Master Device(New Version)\n> LCD 지원장치 & 미지원 장치\nSlave Device(Old Version)\n> LCD 지원장치",
+      "Master Device(New Version)\n> LCD 지원장치 & 미지원 장치\n\nSlave Device(Old Version)\n> Entry2.0",
+      "Master Device(Old Version)\n> LCD 지원장치 & 미지원 장치\n\nSlave Device(New Version)\n> LCD 지원장치",
+      "Master Device(New Version)\n> LCD 지원장치 & 미지원 장치\n\nSlave Device(New Version)\n> LCD 지원장치\n\nMaster/Slave 인증모드\n> 다중인증모드 설정(ex. 지문+PIN)",
+      "Master Device(New Version)\n> LCD 지원장치 & 미지원 장치\n\nSlave Device(New Version)\n> LCD 지원장치\n\nDoor/Lift의 Reader로 설정\n> 이중인증 설정"
+    ],
+    "expected_result": [
+      "1. (Master/Slave LCD 有) 인증성공시 인증결과 + User Name&ID 가 표시되어야 한다.\n> AOC : 미지원, SCC : 지원\n2. 인증실패시 인증실패 문구만 표시된다.\n3. LCD 없는 장치의 경우 인증결과에 대해 LED/부저음으로 정상출력된다.",
+      "1. (Master LCD 有) 인증성공시 인증결과 + User Name&ID 가 표시되어야 한다.\n> AOC : 미지원, SCC : 지원\n2. (Slave LCD 有) 인증성공시 인증결과+User ID가 표시된다.\n3. 인증실패시 인증실패 문구만 표시된다.\n4. LCD 없는 장치의 경우 인증결과에 대해 LED/부저음으로 정상출력된다.",
+      "1. (Master LCD 有) 인증성공시 인증결과 + User Name&ID 가 표시되어야 한다.\n> AOC : 미지원, SCC : 지원\n2. (Slave LCD 有) 인증성공시 인증결과 + User ID가 표시된다.\n3. 인증실패시 인증실패 문구만 표시된다.\n4. LCD 없는 장치의 경우 인증결과에 대해 LED/부저음으로 정상출력된다.",
+      "1. (Master LCD 有) 인증성공시 인증결과 + User ID 가 표시되어야 한다.\n2. (Slave LCD 有) 인증성공시 인증결과 + User ID가 표시된다.\n3. 인증실패시 인증실패 문구만 표시된다.\n4. LCD 없는 장치의 경우 인증결과에 대해 LED/부저음으로 정상출력된다.",
+      "1. (Master/Slave LCD 有) Title에 User ID와 User Name이 표시되어야 한다.\n> BS2 - User ID Only 표시, 인증 성공 시 User ID + User Name 표시\n\n> FS2, FSF2만 Title에 미표시됨(DFW-568,FSTIIFW-1071 참조)\n\n> XS2 - ID+PIN으로 Auth Timeout이 발생 시 실패문구만 표시됨\n※ Timeout으로 실패시 실패문구&User Name 표시됨. => 관련TC도 작성예정",
+      "1. (Master/Slave LCD 有) 첫번째 사용자로 인증 후 Title에 Dual Auth 표시되어야 한다.\n\n> FS2, FSF2만 Title에 미표시됨(DFW-568,FSTIIFW-1071 참조)"
+    ]
+  }
+}

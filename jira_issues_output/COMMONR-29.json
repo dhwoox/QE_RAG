@@ -1,0 +1,123 @@
+{
+  "id": "COMMONR-29",
+  "content": [
+    [
+      1,
+      "1. Device> ID인증모드 설정\n2. ID인증시도",
+      "Master, Slave 확인\n: Master장치(Station,Entry계열)\n: Slave 장치(Station,Entry계열)\nID인증모드\n> ID+지문(얼굴) 모드\n> ID+PIN 모드\n> ID+지문(얼굴)/PIN 모드(Default)\n> ID+지문(얼굴)+PIN 모드",
+      "설정한 인증모드로 동작되어야 한다.\n> 인증 성공/실패에 따라 로그가 남는다.\n> 복합 인증의 경우 이를 Master에서 실행했을때, 매칭 수행이 끝나고 결과 팝업 창이 나타난 후나 취소 버튼, 인증타임아웃 등을 통해서 매칭이 취소된 후에 새로운 Credential이 입력될 수 있다.\n> 복합 인증의 경우 이를 Slave에 실행했을때, 인증 결과를 수신하거나 타임아웃이 발생한 후에는 새로운 Credential을 다시 입력할 수 있다."
+    ],
+    [
+      2,
+      "<A 스케줄 생성한 상태>\n1. Device> ID인증모드\n2. ID 인증모드들에 동일 스케줄 설정시도",
+      "A 스케줄로 ID인증모드 모두 설정시도\n> ID+지문 모드\n> ID+PIN 모드\n> ID+지문/PIN 모드(Default)\n> ID+지문+PIN 모드\n\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
+      "> 동일 모드에 대해 스케줄 중복설정이 불가능해야 한다.\n(on) 동일 스케쥴 중복 체크 : 스케줄 추가 불가능\n(off) A/B에 대한 시간별 중복 체크 : 스케줄 추가 가능 \n> 'Always'로 설정된 경우 동일모드에서는 스케줄 설정이 불가능해야 한다."
+    ],
+    [
+      3,
+      "1. Device> ID인증모드 설정\n2. 설정한 모드 중 하나에 대해서만 등록된 사용자로 인증시도",
+      "> ID+지문 모드 : PIN만 등록된 사용자로 인증\n> ID+PIN 모드 : 지문만 등록된 사용자로 인증 \n> ID+지문/PIN 모드(Default) : 카드만 등록된 사용자로 인증\n> ID+지문+PIN 모드 : 카드만 등록된 사용자로 인증\n\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
+      "ID 입력시 인증실패로 동작되면서 'Authentication failed (Invalid Credential)' 로그가 남아야 한다."
+    ],
+    [
+      4,
+      "1. User> Add User> 카드와 PIN 등록된 사용자 추가\n2. 1:1 Security Level 설정\n3. 1:1 인증을 시도",
+      "1:1 Security Level\n> 기기설정따름(Default)\n> Lowest\n> Low\n> Normal\n> High\n> Highest\n\n1:1 인증모드 모두 확인사항\n> 카드인증모드\n> ID인증모드",
+      "1:1 인증시 각각의 설정에 대해 동작되어야 한다."
+    ],
+    [
+      5,
+      "1. User> Add User\n2. Credential: Fingerprint 클릭\n3. 장치선택 후 2지 이상 지문등록\n4. 등록된 지문 중 협박지문 설정\n5. 사용자를 장치에 전송\n6. Device> ID인증모드 설정\n7. 설정한 ID인증모드에 협박지문으로 인증시도",
+      "지문등록> 5지\n> 협박지문> 마지막에 등록한 지문\n\nID인증모드\n> ID+지문\n> ID+지문/PIN\n> ID+지문+PIN",
+      "협박지문으로 인증할 경우 협박지문으로 동작되어야 한다.\n> 협박지문 로그가 남는다."
+    ],
+    [
+      6,
+      "1. User> Add User\n2. Credential: Visual Face 클릭\n3. 장치선택 후 얼굴 2개 이상(서로 다른) 등록\n4. 사용자를 장치에 전송\n5. Device> ID인증모드 설정\n6. 설정한 ID인증모드에 2개의 서로 다른 얼굴로 인증 시도",
+      "얼굴 등록 > 5개(Max) (FL/FS2)\nVisual Face 등록 > 2개(Max) (BS3/F2/W3)\n\nBS3\n> ID+Visual Face(얼굴) 모드\n> ID+PIN 모드\n> ID+Visual Face(얼굴)/PIN 모드(Default)\n> ID+Visual Face(얼굴)+PIN 모드 \n\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
+      "1. 서로 다른 얼굴로 동일 ID로 인증 성공으로 동작이 되어야 한다.\n(on) 1 User - 동일 얼굴 5 등록 : 인증 성공 (FL/FS2)\n(on) 1 User - 동일 얼굴 2 등록 : 인증 성공 (BS3/F2/W3)"
+    ],
+    [
+      7,
+      "<스케줄을 생성한 상태>\n1. Device> ID인증모드에 스케줄 설정\n2. ID인증시도",
+      "> ID+지문 모드\n> ID+PIN 모드\n> ID+지문/PIN 모드\n> ID+지문+PIN 모드\n\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
+      "> 현재 시간의 스케줄로 설정된 인증모드로 동작되어야 한다.\n> 현재 시간이 스케줄에 포함되지 않은 인증모드로 인증시 'Authentication failed (Invalid Credential)'로 인증실패가 되어야 한다."
+    ],
+    [
+      8,
+      "1. Device> Auth Timeout 설정\n",
+      "Auth Timeout \n> 3s ~ 20s \n\nDefault \n> FS2 제외 장치 : 10s\n> FS2, F2 : 5s\n",
+      "선택한 값이 설정되어야 한다."
+    ],
+    [
+      9,
+      "1. Device> ID 인증모드\n2. 다중 인증모드 설정\n3. 설정한 모드의 처음에 해당하는 모드 입력 후 설정한 Auth Timeout 시간내 입력시도",
+      "Auth Timeout : 3s ~ 20s\n\nID 다중 인증모드\n> ID+지문 모드\n> ID+PIN 모드\n> ID+지문/PIN 모드\n> ID+지문+PIN 모드\n\n> 단일장치 및 RS 485 구성에 대해 모두 확인사항\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
+      "설정한 시간내에 인증이 이루어졌으므로 인증성공으로 동작되어야 한다.\n\n> Slave 장치의 경우\n : Matching TimeOut - Slave\n : Auth. TimeOut - Slave\n : Msg. TimeOut- Slave"
+    ],
+    [
+      10,
+      "1. Device> ID 인증모드\n2. 다중 인증모드 설정\n3. 설정한 모드의 처음에 해당하는 모드 입력 후 설정한 Auth Timeout 시간내 나머지 모드에 대해 미입력",
+      "Auth Timeout : 3s ~ 20s\nID 다중 인증모드\n> ID+지문 모드\n> ID+PIN 모드\n> ID+지문/PIN 모드\n> ID+지문+PIN 모드\n\n> 단일장치 및 RS 485 구성에 대해 모두 확인사항\n\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
+      "설정한 시간내에 인증이 이루어지지 않았으므로 Auth Timeout이 발생되어 인증실패로 동작되어야 한다.\n\n> Slave 장치의 경우\n : Matching TimeOut - Slave\n : Auth. TimeOut - Slave\n : Msg. TimeOut- Slave"
+    ],
+    [
+      11,
+      "1. Device> 장치추가\n2. Full Access 설정변경\n3. 추가한 장치에 대해 Door Or Elevator 미설정\n4. User> Add User\n5. 해당 사용자로 인증시도",
+      "*출입통제 룰을 사용하지 않는 경우\n\nFull Access\n> Disable\n> Enable\n\n> 카드/지문/ID/얼굴 인증 모두 확인사항",
+      "Full Access 설정에 상관없이 인증성공으로 동작되어야 한다."
+    ],
+    [
+      12,
+      "1. Device> 장치추가\n2. Full Access 설정변경\n3. 추가한 장치에 대해 Door Or Elevator 설정\n4. User> Add User\n5. 해당 사용자로 인증시도",
+      "*출입통제 룰을 사용하는 경우\n\nFull Access\n> Disable\n> Enable\n\n> 카드/지문/ID/얼굴 인증 모두 확인사항",
+      "Full Access 가 Enable일 때에는 인증성공, Disable일 때에는 인증실패로 동작되어야 한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-29",
+    "description": "",
+    "test_step": [
+      "1. Device> ID인증모드 설정\n2. ID인증시도",
+      "<A 스케줄 생성한 상태>\n1. Device> ID인증모드\n2. ID 인증모드들에 동일 스케줄 설정시도",
+      "1. Device> ID인증모드 설정\n2. 설정한 모드 중 하나에 대해서만 등록된 사용자로 인증시도",
+      "1. User> Add User> 카드와 PIN 등록된 사용자 추가\n2. 1:1 Security Level 설정\n3. 1:1 인증을 시도",
+      "1. User> Add User\n2. Credential: Fingerprint 클릭\n3. 장치선택 후 2지 이상 지문등록\n4. 등록된 지문 중 협박지문 설정\n5. 사용자를 장치에 전송\n6. Device> ID인증모드 설정\n7. 설정한 ID인증모드에 협박지문으로 인증시도",
+      "1. User> Add User\n2. Credential: Visual Face 클릭\n3. 장치선택 후 얼굴 2개 이상(서로 다른) 등록\n4. 사용자를 장치에 전송\n5. Device> ID인증모드 설정\n6. 설정한 ID인증모드에 2개의 서로 다른 얼굴로 인증 시도",
+      "<스케줄을 생성한 상태>\n1. Device> ID인증모드에 스케줄 설정\n2. ID인증시도",
+      "1. Device> Auth Timeout 설정\n",
+      "1. Device> ID 인증모드\n2. 다중 인증모드 설정\n3. 설정한 모드의 처음에 해당하는 모드 입력 후 설정한 Auth Timeout 시간내 입력시도",
+      "1. Device> ID 인증모드\n2. 다중 인증모드 설정\n3. 설정한 모드의 처음에 해당하는 모드 입력 후 설정한 Auth Timeout 시간내 나머지 모드에 대해 미입력",
+      "1. Device> 장치추가\n2. Full Access 설정변경\n3. 추가한 장치에 대해 Door Or Elevator 미설정\n4. User> Add User\n5. 해당 사용자로 인증시도",
+      "1. Device> 장치추가\n2. Full Access 설정변경\n3. 추가한 장치에 대해 Door Or Elevator 설정\n4. User> Add User\n5. 해당 사용자로 인증시도"
+    ],
+    "data": [
+      "Master, Slave 확인\n: Master장치(Station,Entry계열)\n: Slave 장치(Station,Entry계열)\nID인증모드\n> ID+지문(얼굴) 모드\n> ID+PIN 모드\n> ID+지문(얼굴)/PIN 모드(Default)\n> ID+지문(얼굴)+PIN 모드",
+      "A 스케줄로 ID인증모드 모두 설정시도\n> ID+지문 모드\n> ID+PIN 모드\n> ID+지문/PIN 모드(Default)\n> ID+지문+PIN 모드\n\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
+      "> ID+지문 모드 : PIN만 등록된 사용자로 인증\n> ID+PIN 모드 : 지문만 등록된 사용자로 인증 \n> ID+지문/PIN 모드(Default) : 카드만 등록된 사용자로 인증\n> ID+지문+PIN 모드 : 카드만 등록된 사용자로 인증\n\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
+      "1:1 Security Level\n> 기기설정따름(Default)\n> Lowest\n> Low\n> Normal\n> High\n> Highest\n\n1:1 인증모드 모두 확인사항\n> 카드인증모드\n> ID인증모드",
+      "지문등록> 5지\n> 협박지문> 마지막에 등록한 지문\n\nID인증모드\n> ID+지문\n> ID+지문/PIN\n> ID+지문+PIN",
+      "얼굴 등록 > 5개(Max) (FL/FS2)\nVisual Face 등록 > 2개(Max) (BS3/F2/W3)\n\nBS3\n> ID+Visual Face(얼굴) 모드\n> ID+PIN 모드\n> ID+Visual Face(얼굴)/PIN 모드(Default)\n> ID+Visual Face(얼굴)+PIN 모드 \n\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
+      "> ID+지문 모드\n> ID+PIN 모드\n> ID+지문/PIN 모드\n> ID+지문+PIN 모드\n\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
+      "Auth Timeout \n> 3s ~ 20s \n\nDefault \n> FS2 제외 장치 : 10s\n> FS2, F2 : 5s\n",
+      "Auth Timeout : 3s ~ 20s\n\nID 다중 인증모드\n> ID+지문 모드\n> ID+PIN 모드\n> ID+지문/PIN 모드\n> ID+지문+PIN 모드\n\n> 단일장치 및 RS 485 구성에 대해 모두 확인사항\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
+      "Auth Timeout : 3s ~ 20s\nID 다중 인증모드\n> ID+지문 모드\n> ID+PIN 모드\n> ID+지문/PIN 모드\n> ID+지문+PIN 모드\n\n> 단일장치 및 RS 485 구성에 대해 모두 확인사항\n\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
+      "*출입통제 룰을 사용하지 않는 경우\n\nFull Access\n> Disable\n> Enable\n\n> 카드/지문/ID/얼굴 인증 모두 확인사항",
+      "*출입통제 룰을 사용하는 경우\n\nFull Access\n> Disable\n> Enable\n\n> 카드/지문/ID/얼굴 인증 모두 확인사항"
+    ],
+    "expected_result": [
+      "설정한 인증모드로 동작되어야 한다.\n> 인증 성공/실패에 따라 로그가 남는다.\n> 복합 인증의 경우 이를 Master에서 실행했을때, 매칭 수행이 끝나고 결과 팝업 창이 나타난 후나 취소 버튼, 인증타임아웃 등을 통해서 매칭이 취소된 후에 새로운 Credential이 입력될 수 있다.\n> 복합 인증의 경우 이를 Slave에 실행했을때, 인증 결과를 수신하거나 타임아웃이 발생한 후에는 새로운 Credential을 다시 입력할 수 있다.",
+      "> 동일 모드에 대해 스케줄 중복설정이 불가능해야 한다.\n(on) 동일 스케쥴 중복 체크 : 스케줄 추가 불가능\n(off) A/B에 대한 시간별 중복 체크 : 스케줄 추가 가능 \n> 'Always'로 설정된 경우 동일모드에서는 스케줄 설정이 불가능해야 한다.",
+      "ID 입력시 인증실패로 동작되면서 'Authentication failed (Invalid Credential)' 로그가 남아야 한다.",
+      "1:1 인증시 각각의 설정에 대해 동작되어야 한다.",
+      "협박지문으로 인증할 경우 협박지문으로 동작되어야 한다.\n> 협박지문 로그가 남는다.",
+      "1. 서로 다른 얼굴로 동일 ID로 인증 성공으로 동작이 되어야 한다.\n(on) 1 User - 동일 얼굴 5 등록 : 인증 성공 (FL/FS2)\n(on) 1 User - 동일 얼굴 2 등록 : 인증 성공 (BS3/F2/W3)",
+      "> 현재 시간의 스케줄로 설정된 인증모드로 동작되어야 한다.\n> 현재 시간이 스케줄에 포함되지 않은 인증모드로 인증시 'Authentication failed (Invalid Credential)'로 인증실패가 되어야 한다.",
+      "선택한 값이 설정되어야 한다.",
+      "설정한 시간내에 인증이 이루어졌으므로 인증성공으로 동작되어야 한다.\n\n> Slave 장치의 경우\n : Matching TimeOut - Slave\n : Auth. TimeOut - Slave\n : Msg. TimeOut- Slave",
+      "설정한 시간내에 인증이 이루어지지 않았으므로 Auth Timeout이 발생되어 인증실패로 동작되어야 한다.\n\n> Slave 장치의 경우\n : Matching TimeOut - Slave\n : Auth. TimeOut - Slave\n : Msg. TimeOut- Slave",
+      "Full Access 설정에 상관없이 인증성공으로 동작되어야 한다.",
+      "Full Access 가 Enable일 때에는 인증성공, Disable일 때에는 인증실패로 동작되어야 한다."
+    ]
+  }
+}

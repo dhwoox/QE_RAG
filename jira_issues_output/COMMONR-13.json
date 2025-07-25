@@ -1,0 +1,114 @@
+{
+  "id": "COMMONR-13",
+  "content": [
+    [
+      1,
+      "1. Device : Master만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Pre-defined Alarm > Device : Master 장치 선택 > Tamper on 선택\n\n* Tamper on : 장치에서 Tamper 제거",
+      "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
+      "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound가 Master 장치에서 출력된다\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n\n*사양 변경으로 인한 삭제 항목\n1. Signal Alarm에 대해 Release All Alarm이 된다.\n2. 장치가 Reboot 된다."
+    ],
+    [
+      2,
+      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Pre-defined Alarm > Device : Master 장치 선택 > Tamper on 선택\n\n* Tamper on : 장치에서 Tamper 제거",
+      "[BioStar]\nAction Device : Slave\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
+      "1. 설정한 Output이 Slave 장치에서 출력된다.\n2. 설정한 Alert Sound가 Slave 장치에서 출력된다\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n\n*사양 변경으로 인한 삭제 항목\n1. Signal Alarm에 대해 Release All Alarm이 된다.\n2. 장치가 Reboot 된다."
+    ],
+    [
+      3,
+      "1. Device : Master만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Pre-defined Alarm > Device : Master 장치 선택 > BioStar Disconnected 선택\n* BioStar Disconnected : Device List에서 해당 Device 선택 후 Reconnect 버튼 1회 클릭",
+      "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
+      "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound가 Master 장치에서 출력된다\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n\n*사양 변경으로 인한 삭제 항목\n1. Signal Alarm에 대해 Release All Alarm이 된다.\n2. 장치가 Reboot 된다."
+    ],
+    [
+      4,
+      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Pre-defined Alarm > Device : Master 장치 선택 > BioStar Disconnected 선택\n* BioStar Disconnected : Device List에서 해당 Device 선택 후 Reconnect 버튼 1회 클릭",
+      "[BioStar]\nAction Device : Slave\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
+      "1. 설정한 Output이 Slave 장치에서 출력된다.\n2. 설정한 Alert Sound가 Slave 장치에서 출력된다\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n\n*사양 변경으로 인한 삭제 항목\n1. Signal Alarm에 대해 Release All Alarm이 된다.\n2. 장치가 Reboot 된다."
+    ],
+    [
+      5,
+      "1. Device : Master만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Pre-defined Alarm > Device : Master 장치 선택 > Network Disconnected 선택\n* Network Disconnected : 장치에서 Lan선 제거",
+      "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
+      "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound가 Master 장치에서 출력된다\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n\n*사양 변경으로 인한 삭제 항목\n1. Signal Alarm에 대해 Release All Alarm이 된다.\n2. 장치가 Reboot 된다."
+    ],
+    [
+      6,
+      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Pre-defined Alarm > Device : Master 장치 선택 > Network Disconnected 선택\n* Network Disconnected : 장치에서 Lan선 제거",
+      "[BioStar]\nAction Device : Slave\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
+      "1. 설정한 Output이 Slave 장치에서 출력된다.\n2. 설정한 Alert Sound가 Slave 장치에서 출력된다\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n\n*사양 변경으로 인한 삭제 항목\n1. Signal Alarm에 대해 Release All Alarm이 된다.\n2. 장치가 Reboot 된다."
+    ],
+    [
+      7,
+      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Pre-defined Alarm > Device : Slave 장치 선택 > Tamper on 선택\n\n* Tamper on : 장치에서 Tamper 제거",
+      "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
+      "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound가 Master 장치에서 출력된다\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n\n*사양 변경으로 인한 삭제 항목\n1. Signal Alarm에 대해 Release All Alarm이 된다.\n2. 장치가 Reboot 된다."
+    ],
+    [
+      8,
+      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Pre-defined Alarm > Device : Slave 장치 선택 > Tamper on 선택\n\n* Tamper on : 장치에서 Tamper 제거",
+      "[BioStar]\nAction Device : Slave\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
+      "1. 설정한 Output이 Slave 장치에서 출력된다.\n2. 설정한 Alert Sound가 Slave 장치에서 출력된다\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n\n*사양 변경으로 인한 삭제 항목\n1. Signal Alarm에 대해 Release All Alarm이 된다.\n2. 장치가 Reboot 된다."
+    ],
+    [
+      9,
+      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Pre-defined Alarm > Device : Slave 장치 선택 > RS485 Disconnected 선택\n\n*RS485 Disconnected : Slave 장치의 RS485 4 Pin 케이블을 분리시킨다.",
+      "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
+      "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound가 Master 장치에서 출력된다\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n\n*사양 변경으로 인한 삭제 항목\n1. Signal Alarm에 대해 Release All Alarm이 된다.\n2. 장치가 Reboot 된다."
+    ],
+    [
+      10,
+      "1. Device : Master-Slave(SIO2, DM20)\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Pre-defined Alarm > Device : Master 장치 선택 > Tamper on 선택\n\n* Tamper on : 장치에서 Tamper 제거",
+      "[BioStar]\nAction Device : Master, Slave(SIO2, DM20)\n1. Action 선택\n1) Output",
+      "1. Trigger&Action에서의 Output은 최대 5개까지 설정되어야 한다.(BioStar UI)\n2. 현재 BioStar에서 5개 이상 설정이 가능하므로 5개 이상 설정하여 5번째 Action까지만 동작하는지 확인.\n3. 설정한 Action이 동시에 발생되어야 한다."
+    ],
+    [
+      11,
+      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Pre-defined Alarm > Device : Slave 장치 선택 > Tamper on, RS-485 disconnected, BioStar disconnected, Network disconnected 선택",
+      "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n\nAdd Long Signal 설정 값(예)\n  - Delay : 100 / Count : 1000 / On : 1 / Off : 0\n",
+      "1. 설정한 Output이 Slave 장치에서 출력된다.\n2. 설정한 Alert Sound가 Slave 장치에서 출력된다\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n\n*사양 변경으로 인한 삭제 항목\n1. Signal Alarm에 대해 Release All Alarm이 된다.\n2. 장치가 Reboot 된다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-13",
+    "description": "",
+    "test_step": [
+      "1. Device : Master만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Pre-defined Alarm > Device : Master 장치 선택 > Tamper on 선택\n\n* Tamper on : 장치에서 Tamper 제거",
+      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Pre-defined Alarm > Device : Master 장치 선택 > Tamper on 선택\n\n* Tamper on : 장치에서 Tamper 제거",
+      "1. Device : Master만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Pre-defined Alarm > Device : Master 장치 선택 > BioStar Disconnected 선택\n* BioStar Disconnected : Device List에서 해당 Device 선택 후 Reconnect 버튼 1회 클릭",
+      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Pre-defined Alarm > Device : Master 장치 선택 > BioStar Disconnected 선택\n* BioStar Disconnected : Device List에서 해당 Device 선택 후 Reconnect 버튼 1회 클릭",
+      "1. Device : Master만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Pre-defined Alarm > Device : Master 장치 선택 > Network Disconnected 선택\n* Network Disconnected : 장치에서 Lan선 제거",
+      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Pre-defined Alarm > Device : Master 장치 선택 > Network Disconnected 선택\n* Network Disconnected : 장치에서 Lan선 제거",
+      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Pre-defined Alarm > Device : Slave 장치 선택 > Tamper on 선택\n\n* Tamper on : 장치에서 Tamper 제거",
+      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Pre-defined Alarm > Device : Slave 장치 선택 > Tamper on 선택\n\n* Tamper on : 장치에서 Tamper 제거",
+      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Pre-defined Alarm > Device : Slave 장치 선택 > RS485 Disconnected 선택\n\n*RS485 Disconnected : Slave 장치의 RS485 4 Pin 케이블을 분리시킨다.",
+      "1. Device : Master-Slave(SIO2, DM20)\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Pre-defined Alarm > Device : Master 장치 선택 > Tamper on 선택\n\n* Tamper on : 장치에서 Tamper 제거",
+      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Pre-defined Alarm > Device : Slave 장치 선택 > Tamper on, RS-485 disconnected, BioStar disconnected, Network disconnected 선택"
+    ],
+    "data": [
+      "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
+      "[BioStar]\nAction Device : Slave\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
+      "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
+      "[BioStar]\nAction Device : Slave\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
+      "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
+      "[BioStar]\nAction Device : Slave\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
+      "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
+      "[BioStar]\nAction Device : Slave\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
+      "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
+      "[BioStar]\nAction Device : Master, Slave(SIO2, DM20)\n1. Action 선택\n1) Output",
+      "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n\nAdd Long Signal 설정 값(예)\n  - Delay : 100 / Count : 1000 / On : 1 / Off : 0\n"
+    ],
+    "expected_result": [
+      "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound가 Master 장치에서 출력된다\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n\n*사양 변경으로 인한 삭제 항목\n1. Signal Alarm에 대해 Release All Alarm이 된다.\n2. 장치가 Reboot 된다.",
+      "1. 설정한 Output이 Slave 장치에서 출력된다.\n2. 설정한 Alert Sound가 Slave 장치에서 출력된다\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n\n*사양 변경으로 인한 삭제 항목\n1. Signal Alarm에 대해 Release All Alarm이 된다.\n2. 장치가 Reboot 된다.",
+      "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound가 Master 장치에서 출력된다\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n\n*사양 변경으로 인한 삭제 항목\n1. Signal Alarm에 대해 Release All Alarm이 된다.\n2. 장치가 Reboot 된다.",
+      "1. 설정한 Output이 Slave 장치에서 출력된다.\n2. 설정한 Alert Sound가 Slave 장치에서 출력된다\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n\n*사양 변경으로 인한 삭제 항목\n1. Signal Alarm에 대해 Release All Alarm이 된다.\n2. 장치가 Reboot 된다.",
+      "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound가 Master 장치에서 출력된다\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n\n*사양 변경으로 인한 삭제 항목\n1. Signal Alarm에 대해 Release All Alarm이 된다.\n2. 장치가 Reboot 된다.",
+      "1. 설정한 Output이 Slave 장치에서 출력된다.\n2. 설정한 Alert Sound가 Slave 장치에서 출력된다\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n\n*사양 변경으로 인한 삭제 항목\n1. Signal Alarm에 대해 Release All Alarm이 된다.\n2. 장치가 Reboot 된다.",
+      "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound가 Master 장치에서 출력된다\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n\n*사양 변경으로 인한 삭제 항목\n1. Signal Alarm에 대해 Release All Alarm이 된다.\n2. 장치가 Reboot 된다.",
+      "1. 설정한 Output이 Slave 장치에서 출력된다.\n2. 설정한 Alert Sound가 Slave 장치에서 출력된다\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n\n*사양 변경으로 인한 삭제 항목\n1. Signal Alarm에 대해 Release All Alarm이 된다.\n2. 장치가 Reboot 된다.",
+      "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound가 Master 장치에서 출력된다\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n\n*사양 변경으로 인한 삭제 항목\n1. Signal Alarm에 대해 Release All Alarm이 된다.\n2. 장치가 Reboot 된다.",
+      "1. Trigger&Action에서의 Output은 최대 5개까지 설정되어야 한다.(BioStar UI)\n2. 현재 BioStar에서 5개 이상 설정이 가능하므로 5개 이상 설정하여 5번째 Action까지만 동작하는지 확인.\n3. 설정한 Action이 동시에 발생되어야 한다.",
+      "1. 설정한 Output이 Slave 장치에서 출력된다.\n2. 설정한 Alert Sound가 Slave 장치에서 출력된다\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n\n*사양 변경으로 인한 삭제 항목\n1. Signal Alarm에 대해 Release All Alarm이 된다.\n2. 장치가 Reboot 된다."
+    ]
+  }
+}

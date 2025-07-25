@@ -1,0 +1,121 @@
+{
+  "id": "COMMONR-372",
+  "content": [
+    [
+      1,
+      "[출입문]\n1. 본문에 언급한 Input Port에 대해 Door의 Exit/Sensor에 설정\n2. Switch Type에 따른 동작여부 확인",
+      "",
+      "1. N/O - Input 접지시 Unlock 및 Open으로 동작한다.\n2. N/C - Input 접지 해제시 Unlock 및 Open으로 동작한다."
+    ],
+    [
+      2,
+      "[출입문]\n1. Anti-Tailgating Sensor에 본문에 언급한 Input Port 설정\n2. Switch Type: N/O 설정\n3. 접지 상태에서 Reader에 인증 후 동작 확인\n4. 접지 해제상태에서 Reader에 인증 후 동작 확인",
+      "",
+      "1. 접지된 상태에서 인증시 Anti-Tailgating에 의해 인증실패로 동작한다.\n2. 접지 해제된 상태에서 인증시 인증성공으로 동작한다."
+    ],
+    [
+      3,
+      "[출입문]\n1. Anti-Tailgating Sensor에 본문에 언급한 Input Port 설정\n2. Switch Type: N/C 설정\n3. 접지 상태에서 Reader에 인증 후 동작 확인\n4. 접지 해제상태에서 Reader에 인증 후 동작 확인",
+      "",
+      "1. 접지된 상태에서 인증시 인증성공으로 동작한다.\n2. 접지 해제된 상태에서 인증시 Anti-Tailgating에 의해 인증실패로 동작한다."
+    ],
+    [
+      4,
+      "[FireAlarm Zone]\n1. 본문에 언급된 Input Port 설정\n2. Switch Type 설정 후 적용\n3. Switch Type에 따른 동작확인",
+      "",
+      "1. N/O일 때는 접지시 FireAlarm으로 동작한다.\n2. N/C일 때는 접지 해제시 FireAlarm으로 동작한다."
+    ],
+    [
+      5,
+      "[Intrusion Alarm Zone]\n1. Arm/Disarm Setting(Input)에 본문에 언급된 Input Port 설정\n2. Setting 한 Input Port의 Switch Type에 따른 동작확인",
+      "",
+      "1. N/O일 때는 접지시 Arm or Disram으로 동작한다.\n2. N/C일 때는 접지 해제시 Arm or Disarm으로 동작한다."
+    ],
+    [
+      6,
+      "[Intrusion Alarm Zone]\n1. Detect Intrusion에 본문에 언급된 Input Port 설정\n2. Setting 한 Input Port의 Switch Type에 따른 동작확인",
+      "",
+      "1. N/O일 때는 접지시 Arm or Disram으로 동작한다.\n2. N/C일 때는 접지 해제시 Arm or Disarm으로 동작한다."
+    ],
+    [
+      7,
+      "[Intrusion Alarm Zone]\n1. Detect Intrusion에 본문에 언급된 Input Port 설정\n2. Switch Type: N/O 설정\n3. 접지 상태에서 Reader에 인증해 Arm 동작여부 확인\n4. 접지 해제상태에서 Reader에 인증해 Arm 동작 확인",
+      "",
+      "1. 접지된 상태에서 Arm 시도시 Arm failed로 동작된다.\n2. 접지해제된 상태에서 Arm 시도시 Arm 으로 동작한다."
+    ],
+    [
+      8,
+      "[Intrusion Alarm Zone]\n1. Detect Intrusion에 본문에 언급된 Input Port 설정\n2. Switch Type: N/C 설정\n3. 접지 상태에서 Reader에 인증해 Arm 동작여부 확인\n4. 접지 해제상태에서 Reader에 인증해 Arm 동작 확인",
+      "",
+      "1. 접지된 상태에서 Arm 시도시 Arm 으로 동작된다.\n2. 접지 해제된 상태에서 Arm 시도시 Arm Failed로 동작한다."
+    ],
+    [
+      9,
+      "[Intrusion Alarm Zone]\n1. Detect Intrusion에 본문에 언급된 Input Port 설정\n2. (Arm 상태) Detect Intrusion에 설정한 Switch Type에 따른 동작확인",
+      "",
+      "1. N/O일 때는 접지시 침입감지로 동작한다.\n2. N/C일 때는 접지 해제시 침입감지로 동작한다."
+    ],
+    [
+      10,
+      "[Interlock Zone]\n1. Option의 Acion에 대해 본문에 언급된 Input Port 설정\n2. Switch Type: N/O 설정\n3. 접지 상태에서 Reader에 인증 후 동작 확인\n4. 접지 해제 상태에서 Reader에 인증 후 동작 확인",
+      "",
+      "1. 접지된 상태에서 인증 시도시 인증 실패로 동작된다.\n2. 접지 해제된 상태에서 Arm 시도시 인증 성공으로 동작한다."
+    ],
+    [
+      11,
+      "[Interlock Zone]\n1. Option의 Acion에 대해 본문에 언급된 Input Port 설정\n2. Switch Type: N/C 설정\n3. 접지 상태에서 Reader에 인증 후 동작 확인\n4. 접지 해제 상태에서 Reader에 인증 후 동작 확인",
+      "",
+      "1. 접지된 상태에서 인증 시도시 인증 성공으로 동작된다.\n2. 접지 해제된 상태에서 Arm 시도시 인증 실패로 동작한다."
+    ],
+    [
+      12,
+      "[TriggerAction - Input]\n1. 본문에 언급된 Input Prot 설정\n2. 설정한 Switch Type에 따른 동작 확인",
+      "Input 확인장치\n> CS20 or CS40",
+      "1. N/O일 때는 접지시 설정된 Action이 동작한다.\n2. N/C일 때는 접지 해제시 설정된 Action이 동작한다."
+    ],
+    [
+      13,
+      "[TriggerAction - Input]\n1. 본문에 언급된 Input Prot 설정\n2. 설정한 Switch Type에 따른 동작 확인",
+      "Input 확인장치\n> DM20 or IM120",
+      "1. N/O일 때는 접지시 설정된 Action이 동작한다.\n2. N/C일 때는 접지 해제시 설정된 Action이 동작한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-372",
+    "description": "",
+    "test_step": [
+      "[출입문]\n1. 본문에 언급한 Input Port에 대해 Door의 Exit/Sensor에 설정\n2. Switch Type에 따른 동작여부 확인",
+      "[출입문]\n1. Anti-Tailgating Sensor에 본문에 언급한 Input Port 설정\n2. Switch Type: N/O 설정\n3. 접지 상태에서 Reader에 인증 후 동작 확인\n4. 접지 해제상태에서 Reader에 인증 후 동작 확인",
+      "[출입문]\n1. Anti-Tailgating Sensor에 본문에 언급한 Input Port 설정\n2. Switch Type: N/C 설정\n3. 접지 상태에서 Reader에 인증 후 동작 확인\n4. 접지 해제상태에서 Reader에 인증 후 동작 확인",
+      "[FireAlarm Zone]\n1. 본문에 언급된 Input Port 설정\n2. Switch Type 설정 후 적용\n3. Switch Type에 따른 동작확인",
+      "[Intrusion Alarm Zone]\n1. Arm/Disarm Setting(Input)에 본문에 언급된 Input Port 설정\n2. Setting 한 Input Port의 Switch Type에 따른 동작확인",
+      "[Intrusion Alarm Zone]\n1. Detect Intrusion에 본문에 언급된 Input Port 설정\n2. Setting 한 Input Port의 Switch Type에 따른 동작확인",
+      "[Intrusion Alarm Zone]\n1. Detect Intrusion에 본문에 언급된 Input Port 설정\n2. Switch Type: N/O 설정\n3. 접지 상태에서 Reader에 인증해 Arm 동작여부 확인\n4. 접지 해제상태에서 Reader에 인증해 Arm 동작 확인",
+      "[Intrusion Alarm Zone]\n1. Detect Intrusion에 본문에 언급된 Input Port 설정\n2. Switch Type: N/C 설정\n3. 접지 상태에서 Reader에 인증해 Arm 동작여부 확인\n4. 접지 해제상태에서 Reader에 인증해 Arm 동작 확인",
+      "[Intrusion Alarm Zone]\n1. Detect Intrusion에 본문에 언급된 Input Port 설정\n2. (Arm 상태) Detect Intrusion에 설정한 Switch Type에 따른 동작확인",
+      "[Interlock Zone]\n1. Option의 Acion에 대해 본문에 언급된 Input Port 설정\n2. Switch Type: N/O 설정\n3. 접지 상태에서 Reader에 인증 후 동작 확인\n4. 접지 해제 상태에서 Reader에 인증 후 동작 확인",
+      "[Interlock Zone]\n1. Option의 Acion에 대해 본문에 언급된 Input Port 설정\n2. Switch Type: N/C 설정\n3. 접지 상태에서 Reader에 인증 후 동작 확인\n4. 접지 해제 상태에서 Reader에 인증 후 동작 확인",
+      "[TriggerAction - Input]\n1. 본문에 언급된 Input Prot 설정\n2. 설정한 Switch Type에 따른 동작 확인",
+      "[TriggerAction - Input]\n1. 본문에 언급된 Input Prot 설정\n2. 설정한 Switch Type에 따른 동작 확인"
+    ],
+    "data": [
+      "Input 확인장치\n> CS20 or CS40",
+      "Input 확인장치\n> DM20 or IM120"
+    ],
+    "expected_result": [
+      "1. N/O - Input 접지시 Unlock 및 Open으로 동작한다.\n2. N/C - Input 접지 해제시 Unlock 및 Open으로 동작한다.",
+      "1. 접지된 상태에서 인증시 Anti-Tailgating에 의해 인증실패로 동작한다.\n2. 접지 해제된 상태에서 인증시 인증성공으로 동작한다.",
+      "1. 접지된 상태에서 인증시 인증성공으로 동작한다.\n2. 접지 해제된 상태에서 인증시 Anti-Tailgating에 의해 인증실패로 동작한다.",
+      "1. N/O일 때는 접지시 FireAlarm으로 동작한다.\n2. N/C일 때는 접지 해제시 FireAlarm으로 동작한다.",
+      "1. N/O일 때는 접지시 Arm or Disram으로 동작한다.\n2. N/C일 때는 접지 해제시 Arm or Disarm으로 동작한다.",
+      "1. N/O일 때는 접지시 Arm or Disram으로 동작한다.\n2. N/C일 때는 접지 해제시 Arm or Disarm으로 동작한다.",
+      "1. 접지된 상태에서 Arm 시도시 Arm failed로 동작된다.\n2. 접지해제된 상태에서 Arm 시도시 Arm 으로 동작한다.",
+      "1. 접지된 상태에서 Arm 시도시 Arm 으로 동작된다.\n2. 접지 해제된 상태에서 Arm 시도시 Arm Failed로 동작한다.",
+      "1. N/O일 때는 접지시 침입감지로 동작한다.\n2. N/C일 때는 접지 해제시 침입감지로 동작한다.",
+      "1. 접지된 상태에서 인증 시도시 인증 실패로 동작된다.\n2. 접지 해제된 상태에서 Arm 시도시 인증 성공으로 동작한다.",
+      "1. 접지된 상태에서 인증 시도시 인증 성공으로 동작된다.\n2. 접지 해제된 상태에서 Arm 시도시 인증 실패로 동작한다.",
+      "1. N/O일 때는 접지시 설정된 Action이 동작한다.\n2. N/C일 때는 접지 해제시 설정된 Action이 동작한다.",
+      "1. N/O일 때는 접지시 설정된 Action이 동작한다.\n2. N/C일 때는 접지 해제시 설정된 Action이 동작한다."
+    ]
+  }
+}

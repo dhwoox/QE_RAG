@@ -1,0 +1,526 @@
+{
+  "id": "COMMONR-366",
+  "content": [
+    [
+      1,
+      "1. 장치 상세페이지에 진입하여 SIP Server Address에 Test용 URL 입력\n",
+      "suprema.test-dns.co.kr",
+      "1. 장치 메뉴에 voip 설정이 저장된다. \n-. Setting > Device > Intercom > SIP Account \n- SIP Server Address에 suprema.test-dns.co.kr 출력 됨"
+    ],
+    [
+      2,
+      "1. SIP Server Port 및 Username, Password 입력 후 저장",
+      "",
+      "1. 장치 메인 화면에 call 버튼이 활성화된다."
+    ],
+    [
+      3,
+      "1. 장치 화면에서 Call 버튼 선택 후 PC의 MicroSIP 계정에 연결 시도",
+      "",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력된다."
+    ],
+    [
+      4,
+      "[SIP 계정을 잘못 설정 후 동작 및 이후 정상 연결 동작 확인]\n1. 장치 상세페이지에 진입하여 Intercom > SIP Server IP 잘못된 값으로 입력 후 저장\n2. SIP Server Port, Username, Password는 사전조건에서 생성한 계정정보 입력 후 저장\n3. 장치 홈화면 확인",
+      "",
+      "1. Call버튼이 출력되나 비활성화로 출력되어 동작되지 않음"
+    ],
+    [
+      5,
+      "1. 장치 상세페이지에 진입하여 SIP Server Port를 구축한 SIP서버 포트가 아닌 값으로 입력\n2. SIP Server IP는 구축한 SIP서버 IP로 변경하고 저장 후 장치 홈화면 확인",
+      "",
+      "1. Call버튼이 출력되나 비활성화로 출력되어 동작되지 않음"
+    ],
+    [
+      6,
+      "1. 장치 상세페이지에 진입하여 SIP Username을 SIP서버에 존재하지 않는 Username으로 입력 \n2. SIP Port는 구축한 SIP서버 Port로 변경하고 저장 후 장치 홈화면 확인",
+      "",
+      "1. Call버튼이 출력되나 비활성화로 출력되어 동작되지 않음"
+    ],
+    [
+      7,
+      "1. 장치 상세페이지에 진입하여 SIP Username에 사전조건에서 생성한 계정을 입력\n2. Password에는 잘못된 값으로 입력하여 저장\n3. 장치 홈화면 확인",
+      "",
+      "1. Call버튼이 출력되나 비활성화로 출력되어 동작되지 않음"
+    ],
+    [
+      8,
+      "1. 장치 상세페이지에 진입하여 SIP Username에 사전조건에서 생성한 계정을 입력\n2. Password에는 해당 계정의 비밀번호를 입력하여 저장 \n3. 장치홈화면 확인",
+      "",
+      "1. Call버튼이 활성화로 출력되고 정상적으로 VoIP 통화 됨"
+    ],
+    [
+      9,
+      "[SIP Server Port 최소/최대 값 설정 동작 확인]\n1. 장치 상세페이지에 진입 > SIP Server Port에 1 입력 및 SIP 계정 정보 입력 후 저장",
+      "",
+      "1. 장치 메뉴에서 VoIP 설정의 SIP Server Port 출력 확인\n-  SIP Server Port: 1출력\n\n※ 출력만 확인, 연결동작은 확인 불가(Asterisk PBX에서는 1포트 설정 불가, 1024 and 65535 설정 가능))"
+    ],
+    [
+      10,
+      "1. 장치 상세페이지에 진입 > SIP Server Port에 65535 입력 후 저장\n2.장치 메뉴 Setting > Device > Intercom > SIP Account 선택",
+      "",
+      "1. SIP Server Port에 65535 출력 됨"
+    ],
+    [
+      11,
+      "[SIP Username 숫자 최소/최대값으로 계정을 생성하여 VoIP 동작 확인]\n\n1. 장치 상세페이지에 진입하여 SIP Username 0 입력 및 SIP 설정 후 저장\n2. 장치 화면에서 Call 버튼 선택 후 PC의 MicroSIP 계정에 연결 시도",
+      "User Extension:0 인 계정 생성",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력 됨\n(0으로 생성 불가 00으로 확인)"
+    ],
+    [
+      12,
+      "1. 장치 상세페이지에 진입하여 SIP Username 99999999999999999999999999999999 입력 및 SIP 설정 후 저장\n2. 장치 메뉴 Settings > Device > Intercom > SIP Account 확인",
+      "User Extension: 99999999999999999999999999999999인 계정",
+      "1. SIP Username이 99999999999999999999999999999999로 출력 됨\n(생성불가 확인 후 TC 삭제 필요)"
+    ],
+    [
+      13,
+      "[Password를 최소/최대값으로 생성하여 VoIP 동작 확인]\n\n1. 장치 상세페이지에 진입하여 Password에 a 입력 및 SIP 설정 후 저장\n2. 장치 메뉴 Settings > Device > Intercom > SIP Account 진입하여 설정 정보 확인",
+      "계정 생성 시 Secret을 a로 생성",
+      "1. Password 정상 출력 됨"
+    ],
+    [
+      14,
+      "1. 장치 화면에서 CALL 버튼 선택",
+      "",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력 됨"
+    ],
+    [
+      15,
+      "1. 장치 상세페이지에 진입하여 Password에 aaaaaaaaaabbbbbbbbbbccccccccccdd로 입력 및 SIP 설정 후 저장\n2. 장치 메뉴 Settings > Device > Intercom > SIP Account 진입하여 설정 정보 확인",
+      "계정 생성 시 Secret을 aaaaaaaaaabbbbbbbbbbccccccccccdd로 생성",
+      "1. SIP Password 정상 출력 됨"
+    ],
+    [
+      16,
+      "1. 장치 화면에서 Call 버튼 선택",
+      "",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력 됨"
+    ],
+    [
+      17,
+      "1. 장치 상세페이지에 진입하여 Password에 AbCdEfG12345!@#$%^&*()?로 입력 및 SIP 설정 후 저장\n2. 장치 화면에서 Call 버튼 선택",
+      "계정 생성 시 Secret을 AbCdEfG12345!@#$%^&*()?로 생성",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력 됨"
+    ],
+    [
+      18,
+      "[Outbound proxy server address 및 Port 설정하여 VoIP 동작 확인]\n1. 장치 상세페이지에 진입하여 Outbound Proxy Server를 Enabled 설정\n2. Outbound Proxy Server Port에 1 입력\n3. Outbound proxy server address 입력 후 SIP 계정 설정 후 저장\n4. 장치 메뉴 Settings > Device > Intercom > SIP Account 진입",
+      "192.168.42.146",
+      "1. Outbound proxy server address 및 Outbound Proxy Server Port에 설정한 값이 출력 됨\n(Outbound Proxy Server Port를 SIP 서버 환경을 사내에 구축되지 않아서 임의로 Port 변경하면서 VoIP 동작까지 검토는 불가)"
+    ],
+    [
+      19,
+      "1. 장치 상세페이지에 진입하여 Outbound Proxy Server Port에 65535 입력 후 저장\n2. 장치 메뉴 Settings > Device > Intercom > SIP Account 진입",
+      "",
+      "1. Outbound Proxy Server Port에 설정한 값이 출력 됨\n(Outbound Proxy Server Port를 SIP 서버 환경을 사내에 구축되지 않아서 임의로 Port 변경하면서 VoIP 동작까지 검토는 불가)"
+    ],
+    [
+      20,
+      "1. 장치 상세페이지에 진입하여 Outbound proxy server address 와 Outbound Proxy Server Port에 검토용 Ringcentral 계정 정보를 입력 후 저장\n2. 검토용 Ringcentral 계정의 Outbound proxy server address 와 Outbound Proxy Server Port 입력\n3. 장치 메뉴 Settings > Device > Intercom > SIP Account 진입",
+      ">> 계정 정보는 추후 SP팀에서 받기로 함",
+      "1. Outbound proxy server address/Port에 설정 값이 출력 됨"
+    ],
+    [
+      21,
+      "[VoIP 통화 시에 Open Door Button에 설정된 다이얼로 문이 열리는지 확인]\n1. 장치 상세페이지에 진입하여 Open Door Button을 0 설정 후 저장\n2. VoIP 통화 중 MicroSIP 다이얼에 0 선택",
+      "Master 장치 (BS3)\nL Slave 장치(BS3)\nL SIO2\nL DM20\n\nDoor 설정\n-. Entry Device : Master\n-. Exit Device : Slave\n-. Relay : Master Relay 0",
+      "1. 실시간 로그에 Door unlocked 로그 출력 및 VoIP에 의한 문열림 로그 출력\n> Door open request by Intercom door open button"
+    ],
+    [
+      22,
+      "1. 장치메뉴 > 이벤트로그 진입",
+      "",
+      "1. Door unlocked 로그 출력 및 VoIP에 의한 문열림 로그 출력"
+    ],
+    [
+      23,
+      "1. Door의 Relay를 Slave장치의 Relay 0으로 변경 후 저장\n2. Open Door Button을 1 설정 후 저장\n3. 장치 화면에서 Call 버튼 선택 ",
+      "",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력 됨"
+    ],
+    [
+      24,
+      "1. VoIP 통화 중 MicroSIP 다이얼에 1 선택",
+      "MicroSIP 다이얼: 1~9, *,# 설정",
+      "1. 실시간 로그에 Door unlocked 로그 출력 및 VoIP에 의한 문열림 로그 출력\n-. Door open request by Intercom door open button"
+    ],
+    [
+      25,
+      "1. 장치메뉴 > 이벤트로그에 진입",
+      "",
+      "1. Door unlocked 로그 출력 및 VoIP에 의한 문열림 로그 출력"
+    ],
+    [
+      26,
+      "[Extension Number 최대 설정 및 VoIP 동작 확인]\n1. 장치 상세페이지에 진입하여 Extension Number 128개 추가 저장\n2. 장치 메뉴 Settings > Device > Intercom > Extensions 진입하여 설정 정보 확인",
+      "",
+      "1. Extension Number 128개 정상 출력 됨"
+    ],
+    [
+      27,
+      "1. 장치 화면에서 Call 버튼 선택 후 UI 출력 확인",
+      "",
+      "1. 128개의 Extension Number가 Order에 맞게 출력됨"
+    ],
+    [
+      28,
+      "1. 장치의 Select the extension 화면에서 Order 1번의 Extension을 선택하여 PC의 MicroSIP 연결 시도",
+      "order :1번, 64번. 128번",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력 됨"
+    ],
+    [
+      29,
+      "1. 장치 상세페이지에 진입하여 Extension Number 3개 추가 설정 및 SIP 계정 설정 후 저장\n2. 장치 화면홈> Call 버튼 선택\n",
+      "Order 1 : ABC111\nOrder 2 : DEF222\nOrder 3 : GHI333",
+      "1. 설정한 Extension Number가 Order에 맞게 출력"
+    ],
+    [
+      30,
+      "1. 장치 상세페이지에 진입하여 Extension Number의 Order1을 Drag하여 Order3아래로 변경\n2. Order3을 Order2 위로 Drag하여 저장\n3. 장치 메뉴 Settings > Device > Intercom > Extensions 진입",
+      "Order 1 : DEF222\nOrder 2 : ABC111\nOrder 3 : GHI333",
+      "1. 변경된 Order에 맞게 출력 됨\nOrder 1 : DEF222\nOrder 2 : ABC111\nOrder 3 : GHI333"
+    ],
+    [
+      31,
+      "1. 장치 화면에서 Call 버튼 선택",
+      "",
+      "1. 변경한 Order에 맞게 Extension Number가 출력 됨"
+    ],
+    [
+      32,
+      "1. 장치의 Select the extension 화면에서 Order 3번의 Extension을 선택하여 PC의 MicroSIP 연결 시도",
+      "* PC의 MicroSIP는 Order 3번의 Extension 계정으로 로그인 상태",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력 됨"
+    ],
+    [
+      33,
+      "[BioStar에서 Extension Number 삭제 시 장치 동작 확인]\n1. 장치 상세페이지에 진입하여 Extension\n Number 3개 추가 설정 및 SIP 계정 설정 후 저장\n2. 장치 화면에서 Call 버튼 선택",
+      "Order 1 : ABC111\nOrder 2 : DEF222\nOrder 3 : GHI333",
+      "1. 설정한 Extension Number가 Order에 맞게 출력 됨"
+    ],
+    [
+      34,
+      "1. 장치 상세페이지에 진입하여 Extension Number의 Order 2번을 삭제 후 저장",
+      "",
+      "1. 2번 Order삭제시 3번 Order가 2번으로 설정 됨\nOrder 1 : ABC111\nOrder 2 : GHI333"
+    ],
+    [
+      35,
+      "1. 장치 메뉴 Settings > Device > Intercom > Extensions 진입하여 설정 정보 확인",
+      "",
+      "1. 삭제한 Extension Number는 출력되지 않고 Order 1, 2가 출력 됨"
+    ],
+    [
+      36,
+      "1. 장치 화면에서 Call 버튼 선택",
+      "",
+      "1. 삭제한 Extension Number는 출력되지 않고 Order 1, 2가 출력 됨\nOrder 1 : ABC111\nOrder 2 : GHI333"
+    ],
+    [
+      37,
+      "1. 장치의 Select the extension 화면에서 Order 2번의 Extension을 선택",
+      "* PC의 MicroSIP는 Order 2번의 Extension 계정으로 로그인 상태",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력 됨"
+    ],
+    [
+      38,
+      "1. 장치 상세페이지에 진입하여 Extension Number을 전체선택하여 삭제 후 새로운 Extension Number를 설정하여 저장\n2. 장치 화면에서 Call 버튼 선택",
+      "Order 1 : JKL444",
+      "1. 신규 설정한 Extension Number가 출력 됨\nOrder 1 : JKL444"
+    ],
+    [
+      39,
+      "1. 장치의 Select the extension 화면에서 신규 설정한 Extension을 선택하여 PC의 MicroSIP 연결 시도",
+      "",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력 됨"
+    ],
+    [
+      40,
+      "[Extension Number의 Data Type별 설정 동작 확인]\n1. 장치 상세페이지에 진입하여 Extension Number 대문자 32자 입력\n2. 소문자 32자 입력\n3. 숫자 32자 입력\n4. 장치 메뉴 Settings > Device > Intercom > Extensions 진입",
+      "- AAAAAAAAAABBBBBBBBBBCCCCCCCCCCDD\n- aaaaaaaaaabbbbbbbbbbccccccccccdd\n- 12345678901234567890123456789012",
+      "1. Extension Number가 정상 출력 됨"
+    ],
+    [
+      41,
+      "1. 장치 화면에서 Call 버튼 선택",
+      "",
+      "1. Extension Number가 정상 출력 됨"
+    ],
+    [
+      42,
+      "1. 장치의 Select the extension 화면에서 대문자 /소문자/숫자 Extension을 선택",
+      "",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력 됨 (freepbx가 아닌 경우)\n\n※ 대문자 / 소문자의 경우 freepbx에서 등록 불가능함 숫자의 경우에 32자는 등록은 가능하지만 연결 불가능한 것으로 확인"
+    ],
+    [
+      43,
+      "1. 장치 상세페이지에 진입하여 Extension Number에 특수문자 입력 후 저장",
+      "!@#$%^&*()<>?[]{}|\"':+=_-~`.!@#$",
+      "1. 에러 팝업 출력 됨"
+    ],
+    [
+      44,
+      "1. 장치 상세페이지에 진입하여 Extension Number에 한글 입력 후 저장",
+      "가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라",
+      "1. 에러 팝업 출력 됨"
+    ],
+    [
+      45,
+      "[Extension Number에 중복되는 번호 설정 후 동작 확인]\n1. 장치 상세페이지에 진입하여 Extension Number에 101 입력\n2. +add 후 Extension Number에 101 추가 저장",
+      "",
+      "1. 중복설정이 허용된다.\n(Display Name으로 구분할 수 있어서 목적에 따라 동일한 번호로 여러 개 설정 할 수 있기 때문)"
+    ],
+    [
+      46,
+      "1. 장치 메뉴 Settings > Device > Intercom > Extensions 진입",
+      "",
+      "1. Extension Number가 101 번호가 두개 출력 됨"
+    ],
+    [
+      47,
+      "1. 장치 화면에서 Call 버튼 선택",
+      "",
+      "1. Select the extension 화면에 101 번호가 두개 출력"
+    ],
+    [
+      48,
+      "1. 장치의 Select the extension 화면에서 첫번째 101을 선택",
+      "* PC의 MicroSIP는 101 Extension 계정으로 로그인 상태",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력 됨"
+    ],
+    [
+      49,
+      "1. 장치의 Select the extension 화면에서 두번째 101을 선택",
+      "",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력 됨"
+    ],
+    [
+      50,
+      "[Extension Number의 Display Name 설정 동작 확인]\n1. 장치 상세페이지에 진입하여 Extension Number 추가 및 Display Name입력 \n2. 장치 메뉴 Settings > Device > Intercom > Extensions 진입",
+      "Display Name\n> 대문자 48자\n> 소문자 48자 \n> 숫자 48자 \n> 특수문자 48자 \n> 한글 48자",
+      "1. Display Name이 정상 출력 됨"
+    ],
+    [
+      51,
+      "1. 장치 화면에서 Call 버튼 선택",
+      "",
+      "1. Display Name이 정상 출력 됨"
+    ],
+    [
+      52,
+      "1. 장치의 Select the extension 화면에서 Extension을 선택",
+      "Display Name\n> 대문자 48자\n> 소문자 48자 \n> 숫자 48자 \n> 특수문자 48자 \n> 한글 48자",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력 됨"
+    ],
+    [
+      53,
+      "[VoIP 사용에서 사용 안 함으로 설정 시 동작 확인]\n1. VoIP 사용 중인 장치 상세페이지 진입> Intercom 설:사용 안 함 설정\n2. 장치 메뉴 Settings > Device > Intercom 진입하여 설정 정보 확인",
+      "",
+      "1. intercom 사용 안 함으로 출력 됨"
+    ],
+    [
+      54,
+      "1. 장치 화면에 Call 버튼 출력확인",
+      "",
+      "1. Call 버튼이 출력되지 않음"
+    ],
+    [
+      55,
+      "1. PC의 MicroSIP에서 이전에 장치에 설정된 Extension Number를 입력하여 통화 시도",
+      "",
+      "1. 통화가 되지 않음"
+    ],
+    [
+      56,
+      "1. 장치 상세페이지 진입\n2. intercom 사용 설정 및 Extension Number 설정 후 저장\n3. Call버튼 선택하여 내선번호 목록 출력 상태에서 장치 상세페이지 진입하여 Intercom 설정을 사용 안 함 설정 후 저장\n4. 장치화면에서 내선번호 목록 종료(X버튼 선택)",
+      "",
+      "1. 내선번호 목록이 종료되고 장치 홈화면에 Call버튼 출력되지 않음"
+    ],
+    [
+      57,
+      "1. 장치 상세페이지 진입하여 Intercom 사용 설정 및 Extension Number 설정 후 저장\n2.Call버튼 선택 \n3. VoIP 통화 중에 장치 상세페이지 진입하여 Intercom 설정을 사용 안 함 설정 후 저장",
+      "",
+      "1. VoIP 통화연결이 종료되고 장치 홈화면에 Call버튼이 출력되지 않음"
+    ],
+    [
+      58,
+      "[Display Extension Number 설정 동작 확인]\n1. 장치 상세페이지에 진입하여 Extension Number 및 Display Name 입력\n2. Display Extension Number: Off(Not Use) 저장\n3. 장치 메뉴 Settings > Device > Intercom 진입",
+      "",
+      "1. Display Extension Number가 Off로 출력됨"
+    ],
+    [
+      59,
+      "1. 장치 화면에서 Call 버튼 선택",
+      "",
+      "1. 통화 UI에 Extension Number가 출력되지 않고 Display Name만 출력 됨"
+    ],
+    [
+      60,
+      "1. 내선번호 선택 후 통화 연결 동작 확인",
+      "",
+      "1. 통화 연결 화면에서 Extension Number가 출력되지 않음"
+    ],
+    [
+      61,
+      "1. 장치 상세페이지에 진입하여 Extension Number:빈칸으로 저장\n2. 장치 화면 call 버튼 선택",
+      "",
+      "1. Extension number 빈칸으로 입력 시에 등록 불가능하고 에러 팝업 발생됨"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-366",
+    "description": "",
+    "test_step": [
+      "1. 장치 상세페이지에 진입하여 SIP Server Address에 Test용 URL 입력\n",
+      "1. SIP Server Port 및 Username, Password 입력 후 저장",
+      "1. 장치 화면에서 Call 버튼 선택 후 PC의 MicroSIP 계정에 연결 시도",
+      "[SIP 계정을 잘못 설정 후 동작 및 이후 정상 연결 동작 확인]\n1. 장치 상세페이지에 진입하여 Intercom > SIP Server IP 잘못된 값으로 입력 후 저장\n2. SIP Server Port, Username, Password는 사전조건에서 생성한 계정정보 입력 후 저장\n3. 장치 홈화면 확인",
+      "1. 장치 상세페이지에 진입하여 SIP Server Port를 구축한 SIP서버 포트가 아닌 값으로 입력\n2. SIP Server IP는 구축한 SIP서버 IP로 변경하고 저장 후 장치 홈화면 확인",
+      "1. 장치 상세페이지에 진입하여 SIP Username을 SIP서버에 존재하지 않는 Username으로 입력 \n2. SIP Port는 구축한 SIP서버 Port로 변경하고 저장 후 장치 홈화면 확인",
+      "1. 장치 상세페이지에 진입하여 SIP Username에 사전조건에서 생성한 계정을 입력\n2. Password에는 잘못된 값으로 입력하여 저장\n3. 장치 홈화면 확인",
+      "1. 장치 상세페이지에 진입하여 SIP Username에 사전조건에서 생성한 계정을 입력\n2. Password에는 해당 계정의 비밀번호를 입력하여 저장 \n3. 장치홈화면 확인",
+      "[SIP Server Port 최소/최대 값 설정 동작 확인]\n1. 장치 상세페이지에 진입 > SIP Server Port에 1 입력 및 SIP 계정 정보 입력 후 저장",
+      "1. 장치 상세페이지에 진입 > SIP Server Port에 65535 입력 후 저장\n2.장치 메뉴 Setting > Device > Intercom > SIP Account 선택",
+      "[SIP Username 숫자 최소/최대값으로 계정을 생성하여 VoIP 동작 확인]\n\n1. 장치 상세페이지에 진입하여 SIP Username 0 입력 및 SIP 설정 후 저장\n2. 장치 화면에서 Call 버튼 선택 후 PC의 MicroSIP 계정에 연결 시도",
+      "1. 장치 상세페이지에 진입하여 SIP Username 99999999999999999999999999999999 입력 및 SIP 설정 후 저장\n2. 장치 메뉴 Settings > Device > Intercom > SIP Account 확인",
+      "[Password를 최소/최대값으로 생성하여 VoIP 동작 확인]\n\n1. 장치 상세페이지에 진입하여 Password에 a 입력 및 SIP 설정 후 저장\n2. 장치 메뉴 Settings > Device > Intercom > SIP Account 진입하여 설정 정보 확인",
+      "1. 장치 화면에서 CALL 버튼 선택",
+      "1. 장치 상세페이지에 진입하여 Password에 aaaaaaaaaabbbbbbbbbbccccccccccdd로 입력 및 SIP 설정 후 저장\n2. 장치 메뉴 Settings > Device > Intercom > SIP Account 진입하여 설정 정보 확인",
+      "1. 장치 화면에서 Call 버튼 선택",
+      "1. 장치 상세페이지에 진입하여 Password에 AbCdEfG12345!@#$%^&*()?로 입력 및 SIP 설정 후 저장\n2. 장치 화면에서 Call 버튼 선택",
+      "[Outbound proxy server address 및 Port 설정하여 VoIP 동작 확인]\n1. 장치 상세페이지에 진입하여 Outbound Proxy Server를 Enabled 설정\n2. Outbound Proxy Server Port에 1 입력\n3. Outbound proxy server address 입력 후 SIP 계정 설정 후 저장\n4. 장치 메뉴 Settings > Device > Intercom > SIP Account 진입",
+      "1. 장치 상세페이지에 진입하여 Outbound Proxy Server Port에 65535 입력 후 저장\n2. 장치 메뉴 Settings > Device > Intercom > SIP Account 진입",
+      "1. 장치 상세페이지에 진입하여 Outbound proxy server address 와 Outbound Proxy Server Port에 검토용 Ringcentral 계정 정보를 입력 후 저장\n2. 검토용 Ringcentral 계정의 Outbound proxy server address 와 Outbound Proxy Server Port 입력\n3. 장치 메뉴 Settings > Device > Intercom > SIP Account 진입",
+      "[VoIP 통화 시에 Open Door Button에 설정된 다이얼로 문이 열리는지 확인]\n1. 장치 상세페이지에 진입하여 Open Door Button을 0 설정 후 저장\n2. VoIP 통화 중 MicroSIP 다이얼에 0 선택",
+      "1. 장치메뉴 > 이벤트로그 진입",
+      "1. Door의 Relay를 Slave장치의 Relay 0으로 변경 후 저장\n2. Open Door Button을 1 설정 후 저장\n3. 장치 화면에서 Call 버튼 선택 ",
+      "1. VoIP 통화 중 MicroSIP 다이얼에 1 선택",
+      "1. 장치메뉴 > 이벤트로그에 진입",
+      "[Extension Number 최대 설정 및 VoIP 동작 확인]\n1. 장치 상세페이지에 진입하여 Extension Number 128개 추가 저장\n2. 장치 메뉴 Settings > Device > Intercom > Extensions 진입하여 설정 정보 확인",
+      "1. 장치 화면에서 Call 버튼 선택 후 UI 출력 확인",
+      "1. 장치의 Select the extension 화면에서 Order 1번의 Extension을 선택하여 PC의 MicroSIP 연결 시도",
+      "1. 장치 상세페이지에 진입하여 Extension Number 3개 추가 설정 및 SIP 계정 설정 후 저장\n2. 장치 화면홈> Call 버튼 선택\n",
+      "1. 장치 상세페이지에 진입하여 Extension Number의 Order1을 Drag하여 Order3아래로 변경\n2. Order3을 Order2 위로 Drag하여 저장\n3. 장치 메뉴 Settings > Device > Intercom > Extensions 진입",
+      "1. 장치 화면에서 Call 버튼 선택",
+      "1. 장치의 Select the extension 화면에서 Order 3번의 Extension을 선택하여 PC의 MicroSIP 연결 시도",
+      "[BioStar에서 Extension Number 삭제 시 장치 동작 확인]\n1. 장치 상세페이지에 진입하여 Extension\n Number 3개 추가 설정 및 SIP 계정 설정 후 저장\n2. 장치 화면에서 Call 버튼 선택",
+      "1. 장치 상세페이지에 진입하여 Extension Number의 Order 2번을 삭제 후 저장",
+      "1. 장치 메뉴 Settings > Device > Intercom > Extensions 진입하여 설정 정보 확인",
+      "1. 장치 화면에서 Call 버튼 선택",
+      "1. 장치의 Select the extension 화면에서 Order 2번의 Extension을 선택",
+      "1. 장치 상세페이지에 진입하여 Extension Number을 전체선택하여 삭제 후 새로운 Extension Number를 설정하여 저장\n2. 장치 화면에서 Call 버튼 선택",
+      "1. 장치의 Select the extension 화면에서 신규 설정한 Extension을 선택하여 PC의 MicroSIP 연결 시도",
+      "[Extension Number의 Data Type별 설정 동작 확인]\n1. 장치 상세페이지에 진입하여 Extension Number 대문자 32자 입력\n2. 소문자 32자 입력\n3. 숫자 32자 입력\n4. 장치 메뉴 Settings > Device > Intercom > Extensions 진입",
+      "1. 장치 화면에서 Call 버튼 선택",
+      "1. 장치의 Select the extension 화면에서 대문자 /소문자/숫자 Extension을 선택",
+      "1. 장치 상세페이지에 진입하여 Extension Number에 특수문자 입력 후 저장",
+      "1. 장치 상세페이지에 진입하여 Extension Number에 한글 입력 후 저장",
+      "[Extension Number에 중복되는 번호 설정 후 동작 확인]\n1. 장치 상세페이지에 진입하여 Extension Number에 101 입력\n2. +add 후 Extension Number에 101 추가 저장",
+      "1. 장치 메뉴 Settings > Device > Intercom > Extensions 진입",
+      "1. 장치 화면에서 Call 버튼 선택",
+      "1. 장치의 Select the extension 화면에서 첫번째 101을 선택",
+      "1. 장치의 Select the extension 화면에서 두번째 101을 선택",
+      "[Extension Number의 Display Name 설정 동작 확인]\n1. 장치 상세페이지에 진입하여 Extension Number 추가 및 Display Name입력 \n2. 장치 메뉴 Settings > Device > Intercom > Extensions 진입",
+      "1. 장치 화면에서 Call 버튼 선택",
+      "1. 장치의 Select the extension 화면에서 Extension을 선택",
+      "[VoIP 사용에서 사용 안 함으로 설정 시 동작 확인]\n1. VoIP 사용 중인 장치 상세페이지 진입> Intercom 설:사용 안 함 설정\n2. 장치 메뉴 Settings > Device > Intercom 진입하여 설정 정보 확인",
+      "1. 장치 화면에 Call 버튼 출력확인",
+      "1. PC의 MicroSIP에서 이전에 장치에 설정된 Extension Number를 입력하여 통화 시도",
+      "1. 장치 상세페이지 진입\n2. intercom 사용 설정 및 Extension Number 설정 후 저장\n3. Call버튼 선택하여 내선번호 목록 출력 상태에서 장치 상세페이지 진입하여 Intercom 설정을 사용 안 함 설정 후 저장\n4. 장치화면에서 내선번호 목록 종료(X버튼 선택)",
+      "1. 장치 상세페이지 진입하여 Intercom 사용 설정 및 Extension Number 설정 후 저장\n2.Call버튼 선택 \n3. VoIP 통화 중에 장치 상세페이지 진입하여 Intercom 설정을 사용 안 함 설정 후 저장",
+      "[Display Extension Number 설정 동작 확인]\n1. 장치 상세페이지에 진입하여 Extension Number 및 Display Name 입력\n2. Display Extension Number: Off(Not Use) 저장\n3. 장치 메뉴 Settings > Device > Intercom 진입",
+      "1. 장치 화면에서 Call 버튼 선택",
+      "1. 내선번호 선택 후 통화 연결 동작 확인",
+      "1. 장치 상세페이지에 진입하여 Extension Number:빈칸으로 저장\n2. 장치 화면 call 버튼 선택"
+    ],
+    "data": [
+      "suprema.test-dns.co.kr",
+      "User Extension:0 인 계정 생성",
+      "User Extension: 99999999999999999999999999999999인 계정",
+      "계정 생성 시 Secret을 a로 생성",
+      "계정 생성 시 Secret을 aaaaaaaaaabbbbbbbbbbccccccccccdd로 생성",
+      "계정 생성 시 Secret을 AbCdEfG12345!@#$%^&*()?로 생성",
+      "192.168.42.146",
+      ">> 계정 정보는 추후 SP팀에서 받기로 함",
+      "Master 장치 (BS3)\nL Slave 장치(BS3)\nL SIO2\nL DM20\n\nDoor 설정\n-. Entry Device : Master\n-. Exit Device : Slave\n-. Relay : Master Relay 0",
+      "MicroSIP 다이얼: 1~9, *,# 설정",
+      "order :1번, 64번. 128번",
+      "Order 1 : ABC111\nOrder 2 : DEF222\nOrder 3 : GHI333",
+      "Order 1 : DEF222\nOrder 2 : ABC111\nOrder 3 : GHI333",
+      "* PC의 MicroSIP는 Order 3번의 Extension 계정으로 로그인 상태",
+      "Order 1 : ABC111\nOrder 2 : DEF222\nOrder 3 : GHI333",
+      "* PC의 MicroSIP는 Order 2번의 Extension 계정으로 로그인 상태",
+      "Order 1 : JKL444",
+      "- AAAAAAAAAABBBBBBBBBBCCCCCCCCCCDD\n- aaaaaaaaaabbbbbbbbbbccccccccccdd\n- 12345678901234567890123456789012",
+      "!@#$%^&*()<>?[]{}|\"':+=_-~`.!@#$",
+      "가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라",
+      "* PC의 MicroSIP는 101 Extension 계정으로 로그인 상태",
+      "Display Name\n> 대문자 48자\n> 소문자 48자 \n> 숫자 48자 \n> 특수문자 48자 \n> 한글 48자",
+      "Display Name\n> 대문자 48자\n> 소문자 48자 \n> 숫자 48자 \n> 특수문자 48자 \n> 한글 48자"
+    ],
+    "expected_result": [
+      "1. 장치 메뉴에 voip 설정이 저장된다. \n-. Setting > Device > Intercom > SIP Account \n- SIP Server Address에 suprema.test-dns.co.kr 출력 됨",
+      "1. 장치 메인 화면에 call 버튼이 활성화된다.",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력된다.",
+      "1. Call버튼이 출력되나 비활성화로 출력되어 동작되지 않음",
+      "1. Call버튼이 출력되나 비활성화로 출력되어 동작되지 않음",
+      "1. Call버튼이 출력되나 비활성화로 출력되어 동작되지 않음",
+      "1. Call버튼이 출력되나 비활성화로 출력되어 동작되지 않음",
+      "1. Call버튼이 활성화로 출력되고 정상적으로 VoIP 통화 됨",
+      "1. 장치 메뉴에서 VoIP 설정의 SIP Server Port 출력 확인\n-  SIP Server Port: 1출력\n\n※ 출력만 확인, 연결동작은 확인 불가(Asterisk PBX에서는 1포트 설정 불가, 1024 and 65535 설정 가능))",
+      "1. SIP Server Port에 65535 출력 됨",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력 됨\n(0으로 생성 불가 00으로 확인)",
+      "1. SIP Username이 99999999999999999999999999999999로 출력 됨\n(생성불가 확인 후 TC 삭제 필요)",
+      "1. Password 정상 출력 됨",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
+      "1. SIP Password 정상 출력 됨",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
+      "1. Outbound proxy server address 및 Outbound Proxy Server Port에 설정한 값이 출력 됨\n(Outbound Proxy Server Port를 SIP 서버 환경을 사내에 구축되지 않아서 임의로 Port 변경하면서 VoIP 동작까지 검토는 불가)",
+      "1. Outbound Proxy Server Port에 설정한 값이 출력 됨\n(Outbound Proxy Server Port를 SIP 서버 환경을 사내에 구축되지 않아서 임의로 Port 변경하면서 VoIP 동작까지 검토는 불가)",
+      "1. Outbound proxy server address/Port에 설정 값이 출력 됨",
+      "1. 실시간 로그에 Door unlocked 로그 출력 및 VoIP에 의한 문열림 로그 출력\n> Door open request by Intercom door open button",
+      "1. Door unlocked 로그 출력 및 VoIP에 의한 문열림 로그 출력",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
+      "1. 실시간 로그에 Door unlocked 로그 출력 및 VoIP에 의한 문열림 로그 출력\n-. Door open request by Intercom door open button",
+      "1. Door unlocked 로그 출력 및 VoIP에 의한 문열림 로그 출력",
+      "1. Extension Number 128개 정상 출력 됨",
+      "1. 128개의 Extension Number가 Order에 맞게 출력됨",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
+      "1. 설정한 Extension Number가 Order에 맞게 출력",
+      "1. 변경된 Order에 맞게 출력 됨\nOrder 1 : DEF222\nOrder 2 : ABC111\nOrder 3 : GHI333",
+      "1. 변경한 Order에 맞게 Extension Number가 출력 됨",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
+      "1. 설정한 Extension Number가 Order에 맞게 출력 됨",
+      "1. 2번 Order삭제시 3번 Order가 2번으로 설정 됨\nOrder 1 : ABC111\nOrder 2 : GHI333",
+      "1. 삭제한 Extension Number는 출력되지 않고 Order 1, 2가 출력 됨",
+      "1. 삭제한 Extension Number는 출력되지 않고 Order 1, 2가 출력 됨\nOrder 1 : ABC111\nOrder 2 : GHI333",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
+      "1. 신규 설정한 Extension Number가 출력 됨\nOrder 1 : JKL444",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
+      "1. Extension Number가 정상 출력 됨",
+      "1. Extension Number가 정상 출력 됨",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력 됨 (freepbx가 아닌 경우)\n\n※ 대문자 / 소문자의 경우 freepbx에서 등록 불가능함 숫자의 경우에 32자는 등록은 가능하지만 연결 불가능한 것으로 확인",
+      "1. 에러 팝업 출력 됨",
+      "1. 에러 팝업 출력 됨",
+      "1. 중복설정이 허용된다.\n(Display Name으로 구분할 수 있어서 목적에 따라 동일한 번호로 여러 개 설정 할 수 있기 때문)",
+      "1. Extension Number가 101 번호가 두개 출력 됨",
+      "1. Select the extension 화면에 101 번호가 두개 출력",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
+      "1. Display Name이 정상 출력 됨",
+      "1. Display Name이 정상 출력 됨",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
+      "1. intercom 사용 안 함으로 출력 됨",
+      "1. Call 버튼이 출력되지 않음",
+      "1. 통화가 되지 않음",
+      "1. 내선번호 목록이 종료되고 장치 홈화면에 Call버튼 출력되지 않음",
+      "1. VoIP 통화연결이 종료되고 장치 홈화면에 Call버튼이 출력되지 않음",
+      "1. Display Extension Number가 Off로 출력됨",
+      "1. 통화 UI에 Extension Number가 출력되지 않고 Display Name만 출력 됨",
+      "1. 통화 연결 화면에서 Extension Number가 출력되지 않음",
+      "1. Extension number 빈칸으로 입력 시에 등록 불가능하고 에러 팝업 발생됨"
+    ]
+  }
+}

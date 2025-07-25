@@ -1,0 +1,146 @@
+{
+  "id": "COMMONR-210",
+  "content": [
+    [
+      1,
+      "1. 장치 전원인가 후 60초 이내에 SEOS Configuration Card Read\n2. 장치의 상태확인",
+      "",
+      "1. Configuration Card Key Write 후 Reboot된다.\n2. SEOS Configuration Card Key 설정에 대한 LED로 동작한다.\n3. SEOS 지원 장치에서는 SEOS, iCLASS, CSN, HID 모두 읽힌다."
+    ],
+    [
+      2,
+      "<Step 1 수행한 상태>\n1. Primary Key 변경없이 카드발급 시도",
+      "",
+      "1. 기본키로 발급된다.\n> 기본키 값에 대해서는 알수 없음."
+    ],
+    [
+      3,
+      "1. Configuration Card Key로 발급한 카드 Read 시도",
+      "Primary/Secondary Key 설정되지 않은 상태",
+      "1. 카드가 읽힌다."
+    ],
+    [
+      4,
+      "1. Configuration Card Key로 발급한 카드 Read 시도",
+      "Primary/Secondary Key 임의 값으로 설정된 상태",
+      "1. 카드가 읽히지 않는다."
+    ],
+    [
+      5,
+      "<Step 1 수행한 상태>\n1. Primary Key 변경 후 카드발급 시도",
+      "Key 입력범위: 32자",
+      "1. Primary 키로 발급된다.\n> 한번 키를 변경해 발급한 카드는 Configuration Card Key로 되돌릴 수 없음."
+    ],
+    [
+      6,
+      "1. 키를 변경해 발급했던 카드키를 다른키로 다시 재발급 시도\n> Primary Key: 새로발급할 Key값 입력\n> Secondary Key: 발급한 Key값 입력\n",
+      "Key 입력범위: 32자",
+      "1. 새로 설정된 Primary 키로 발급된다."
+    ],
+    [
+      7,
+      "1. 키 변경으로 카드 발급 시도\n> Primary Key: 새로발급할 Key값 입력\n> Secondary Key: 발급한 Key값 입력\n",
+      "Hex 전용으로 미입력 시나, 홀수로 입력한 경우 FF나 0을 채워서 전송\n예)\n: 사용자 입력값 \"1230\"\n-> FW 전달 값 12 30 FF FF FF FF\n: 사용자 입력값 \"AF0\"\n-> FW 전달 값 0A F0 FF FF FF FF\nKey 입력범위: 32자",
+      "1. 새로 설정된 Primary 키로 발급된다.\n> 미입력 시나, 홀수로 입력한 경우 FF나 0을 채워서 등록 / 전송\n2. Auto Tool을 통해 장치에 전송된 Card Layout을 확인하여 Key 정상 유무 확인한다.\n> 인증 유무 포함"
+    ],
+    [
+      8,
+      "1. SEOS Card로 Card 발급\n2. 인증시도",
+      "Card 발급\n> AOC Card\n> SCC Card",
+      "1. 사용자 정보가 카드에 Write된다.\n2. Read시 등록된 사용자 정보로 인증결과를 출력한다.\n3. Wiegand Out 장치에서 발급된 카드로 리드시 PAC Data로 출력된다."
+    ],
+    [
+      9,
+      "1. SEOS 미지원 장치에 SEOS 카드 Read",
+      "",
+      "1. SEOS 카드의 PAC Data로 Read된다."
+    ],
+    [
+      10,
+      "1. SEOS 지원 장치에 Primary Key가 상이한 SEOS 카드 Read",
+      "Smart Card\n> SEOS Card Masking 되어있는 상태",
+      "1. 처음엔 PAC Data로 읽히다가 점차 인증시간이 걸어져 PAC Data로 읽히는 시간이 오래걸릴수 있다.\n"
+    ],
+    [
+      11,
+      "1. SEOS 지원 장치에 Primary Key가 상이한 SEOS 카드 Read",
+      "Smart Card\n> SEOS Card Masking 이 되어있지 않은 상태",
+      "1. SEOS PAC Data로 리드된다."
+    ],
+    [
+      12,
+      "1. 장치 전원인가 후 60초 이내에 Elite Prep Card Read> 재부팅> Key Card Read> 재부팅\n2. 장치에 Card Read",
+      "Card Read\n: Elite Card\n: SEOS Card\n: iClass Card\n: Mifare Card\n\n*Elite Card Data*\n||Card 종류||Card Data||\n|Mifare DESFire EV1 SE|CSN값으로 리딩|\n|iCLASS Legacy 16k/16|Card Number(DEC):66546\nCard Number(Wiegand):1-1010|\n|SEOS 8K|Card Number(DEC):88992\nCard Number(Wiegand):1-23456|\n|iCLASS SR 16k16|Card Number(DEC):67556\nCard Number(Wiegand):1-2020|\n",
+      "1. Elite 모드로 진입한다.\n2. Elite Card(Data 참고)가 읽힌다.\n> PAC Data 인식한다.\n3. SEOS, ICLASS Card는 인식안된다.\n4. Mifare Card는 인식된다."
+    ],
+    [
+      13,
+      "1. 장치 전원인가 후 60초 이내에 STD Prep Card Read> 재부팅> Key Card Read> 재부팅\n2. 장치에 Card Read",
+      "",
+      "1. Elite 모드가 해제된다.\n2. Elite Card가 읽히지 않고, SEOS, ICLASS, Mifare 인식된다."
+    ],
+    [
+      14,
+      "1. 장치 전원인가 후 60초 이내에 SEOS Configuration Card Read\n2. Primary Key, Sencondary Key 적용\n3. 초기화 시도",
+      "초기화\n> Reset All\n> 네트워크 초기화\n> (UI있는 장치) 네트워크 유지 초기화",
+      "1. SEOS Config(ADF 주소, Object Data)는 초기화되지 않는다.\n2. Primary Key, Secondary Key만 초기화된다."
+    ],
+    [
+      15,
+      "1. 장치 전원인가 후 60초 이내에 Elite Prep Card Read> 재부팅> Key Card Read> 재부팅\n2. 초기화 시도\n3. Elite Card Read",
+      "초기화\n> Reset All\n> 네트워크 초기화\n> (UI있는 장치) 네트워크 유지 초기화",
+      "1. Elite Key는 초기화되지 않는다.\n2. Elite Card가 읽힌다.\n> Elite Card 읽히는 걸 통해 초기화되지 않음을 확인함."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-210",
+    "description": "",
+    "test_step": [
+      "1. 장치 전원인가 후 60초 이내에 SEOS Configuration Card Read\n2. 장치의 상태확인",
+      "<Step 1 수행한 상태>\n1. Primary Key 변경없이 카드발급 시도",
+      "1. Configuration Card Key로 발급한 카드 Read 시도",
+      "1. Configuration Card Key로 발급한 카드 Read 시도",
+      "<Step 1 수행한 상태>\n1. Primary Key 변경 후 카드발급 시도",
+      "1. 키를 변경해 발급했던 카드키를 다른키로 다시 재발급 시도\n> Primary Key: 새로발급할 Key값 입력\n> Secondary Key: 발급한 Key값 입력\n",
+      "1. 키 변경으로 카드 발급 시도\n> Primary Key: 새로발급할 Key값 입력\n> Secondary Key: 발급한 Key값 입력\n",
+      "1. SEOS Card로 Card 발급\n2. 인증시도",
+      "1. SEOS 미지원 장치에 SEOS 카드 Read",
+      "1. SEOS 지원 장치에 Primary Key가 상이한 SEOS 카드 Read",
+      "1. SEOS 지원 장치에 Primary Key가 상이한 SEOS 카드 Read",
+      "1. 장치 전원인가 후 60초 이내에 Elite Prep Card Read> 재부팅> Key Card Read> 재부팅\n2. 장치에 Card Read",
+      "1. 장치 전원인가 후 60초 이내에 STD Prep Card Read> 재부팅> Key Card Read> 재부팅\n2. 장치에 Card Read",
+      "1. 장치 전원인가 후 60초 이내에 SEOS Configuration Card Read\n2. Primary Key, Sencondary Key 적용\n3. 초기화 시도",
+      "1. 장치 전원인가 후 60초 이내에 Elite Prep Card Read> 재부팅> Key Card Read> 재부팅\n2. 초기화 시도\n3. Elite Card Read"
+    ],
+    "data": [
+      "Primary/Secondary Key 설정되지 않은 상태",
+      "Primary/Secondary Key 임의 값으로 설정된 상태",
+      "Key 입력범위: 32자",
+      "Key 입력범위: 32자",
+      "Hex 전용으로 미입력 시나, 홀수로 입력한 경우 FF나 0을 채워서 전송\n예)\n: 사용자 입력값 \"1230\"\n-> FW 전달 값 12 30 FF FF FF FF\n: 사용자 입력값 \"AF0\"\n-> FW 전달 값 0A F0 FF FF FF FF\nKey 입력범위: 32자",
+      "Card 발급\n> AOC Card\n> SCC Card",
+      "Smart Card\n> SEOS Card Masking 되어있는 상태",
+      "Smart Card\n> SEOS Card Masking 이 되어있지 않은 상태",
+      "Card Read\n: Elite Card\n: SEOS Card\n: iClass Card\n: Mifare Card\n\n*Elite Card Data*\n||Card 종류||Card Data||\n|Mifare DESFire EV1 SE|CSN값으로 리딩|\n|iCLASS Legacy 16k/16|Card Number(DEC):66546\nCard Number(Wiegand):1-1010|\n|SEOS 8K|Card Number(DEC):88992\nCard Number(Wiegand):1-23456|\n|iCLASS SR 16k16|Card Number(DEC):67556\nCard Number(Wiegand):1-2020|\n",
+      "초기화\n> Reset All\n> 네트워크 초기화\n> (UI있는 장치) 네트워크 유지 초기화",
+      "초기화\n> Reset All\n> 네트워크 초기화\n> (UI있는 장치) 네트워크 유지 초기화"
+    ],
+    "expected_result": [
+      "1. Configuration Card Key Write 후 Reboot된다.\n2. SEOS Configuration Card Key 설정에 대한 LED로 동작한다.\n3. SEOS 지원 장치에서는 SEOS, iCLASS, CSN, HID 모두 읽힌다.",
+      "1. 기본키로 발급된다.\n> 기본키 값에 대해서는 알수 없음.",
+      "1. 카드가 읽힌다.",
+      "1. 카드가 읽히지 않는다.",
+      "1. Primary 키로 발급된다.\n> 한번 키를 변경해 발급한 카드는 Configuration Card Key로 되돌릴 수 없음.",
+      "1. 새로 설정된 Primary 키로 발급된다.",
+      "1. 새로 설정된 Primary 키로 발급된다.\n> 미입력 시나, 홀수로 입력한 경우 FF나 0을 채워서 등록 / 전송\n2. Auto Tool을 통해 장치에 전송된 Card Layout을 확인하여 Key 정상 유무 확인한다.\n> 인증 유무 포함",
+      "1. 사용자 정보가 카드에 Write된다.\n2. Read시 등록된 사용자 정보로 인증결과를 출력한다.\n3. Wiegand Out 장치에서 발급된 카드로 리드시 PAC Data로 출력된다.",
+      "1. SEOS 카드의 PAC Data로 Read된다.",
+      "1. 처음엔 PAC Data로 읽히다가 점차 인증시간이 걸어져 PAC Data로 읽히는 시간이 오래걸릴수 있다.\n",
+      "1. SEOS PAC Data로 리드된다.",
+      "1. Elite 모드로 진입한다.\n2. Elite Card(Data 참고)가 읽힌다.\n> PAC Data 인식한다.\n3. SEOS, ICLASS Card는 인식안된다.\n4. Mifare Card는 인식된다.",
+      "1. Elite 모드가 해제된다.\n2. Elite Card가 읽히지 않고, SEOS, ICLASS, Mifare 인식된다.",
+      "1. SEOS Config(ADF 주소, Object Data)는 초기화되지 않는다.\n2. Primary Key, Secondary Key만 초기화된다.",
+      "1. Elite Key는 초기화되지 않는다.\n2. Elite Card가 읽힌다.\n> Elite Card 읽히는 걸 통해 초기화되지 않음을 확인함."
+    ]
+  }
+}

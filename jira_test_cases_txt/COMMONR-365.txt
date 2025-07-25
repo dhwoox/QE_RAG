@@ -1,5 +1,12 @@
 ■ 이슈 키: COMMONR-365
 ■ 제목: RS485 통신 개선 관련 TC - 개발자 검증
+■ 설명: 확인케이스
+- Case 1. Suprema 장치끼리 Master-Slave 연결
+- Case 2. Suprema 장치가 3rd party Reader로 연결시(OSDP Tool 활용)
+- Case 3. Suprema 장치가 Controller인 상태에서 타사 Reader 가 OSDP로 연결(CS40/CS20에 해당)
+
+위와 같이 연결된 상태에서 Baudrate 별 Slave Config를 Get/Set시, 지원되는 모든 크리덴셜로 인증시, 부팅해서 올라올 때 통신상 문제 없는지 여부 확인
+또한 이전FW와 변경된 FW와의 호환성 검증에 대해서도 확인 
 ============================================================
 
 ■ 테스트 스텝

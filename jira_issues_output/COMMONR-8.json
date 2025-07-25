@@ -1,0 +1,159 @@
+{
+  "id": "COMMONR-8",
+  "content": [
+    [
+      1,
+      "1. Setting> Schedule> Add Schedule\n2. Type : Weekly 설정\n3. 각 요일별로 Time Slot 설정\n4. 인증시도",
+      "1. Time Slot: 최대 5개 설정",
+      "1. 선택한 값이 설정되어야 한다.\n2. 인증시도시 설정한 Time Slot에 해당하는 시간일 경우 인증성공 및 인증성공 로그가 남는다."
+    ],
+    [
+      2,
+      "1. Setting> Schedule> Add Schedule\n2. Type: Daily 설정\n3. 각 요일별로 Time Slot 설정\n4. 인증시도",
+      "1. Time Slot: 최대 5개 설정",
+      "1. 선택한 값이 설정되어야 한다.\n2. 인증시도시 설정한 Time Slot에 해당하는 시간일 경우 인증성공 및 인증성공 로그가 남는다."
+    ],
+    [
+      3,
+      "1. Setting> Schedule> Add Schedule\n2. Type : Daily 설정\n3. Cycle 및 Start Date 설정\n4. Time Slot 설정\n5. 인증시도",
+      "1. Cycle : 최대 90일 설정\n2. Time Slot: 최대 5개 설정",
+      "1. 지정한 Start Date부터 Cycle이 적용된다.\n2. 지정된 기간만큼을 주기로 Schedule이 반복적으로 돌아간다.\n> Cycle을 5로 설정했을때, 1,2,3,4,5/1,2,3,4,5로 반복되어 Schedule이 동작\n3. 인증시도시 설정한 Time Slot에 해당하는 시간일 경우 인증성공 및 인증성공 로그가 남는다."
+    ],
+    [
+      4,
+      "1. Setting> Schedule> Add Schedule\n2. 최대로 설정",
+      "1. 추가한 Schedule\n> 임의의 Type 및 Time Slot 설정\n> 최대 128개 설정(Weekly 및 Daily 모두 포함)",
+      "1. Schedule을 최대 128개까지 생성가능하며 장치에 저장 가능하다.\n> Device Viewer로 확인 가능"
+    ],
+    [
+      5,
+      "1. Setting> Schedule> Add Holiday\n2. Date 및 Every Year 설정\n3. 장치의 시간을 변경해 인증시도",
+      "1. Date\n> 금일 날짜설정(ex. 20190909)\n> 금일 날짜와 동일한 전년도 날짜설정(ex. 20180909)\n> 금일 날짜와 동일한 내년도 날짜설정(ex. 20200909)\n\n2. Every Year\n> Once",
+      "1. 선택한 값이 설정되어야 한다.\n2. 설정된 날짜만 휴일스케줄로 동작하고, 현재날짜 외의 날짜에는 일반스케줄로 동작한다."
+    ],
+    [
+      6,
+      "1. Setting> Schedule> Add Holiday\n2. Date 및 Every Year 설정\n3. 장치의 시간을 변경해 인증시도",
+      "1. Date\n> 금일 날짜설정(ex. 20190909)\n> 금일 날짜와 동일한 전년도 날짜설정(ex. 20180909)\n> 금일 날짜와 동일한 내년도 날짜설정(ex. 20200909)\n\n2. Every Year\n> Yearly",
+      "1. 선택한 값이 설정되어야 한다.\n2. 설정한 날짜에 대해 매년 휴일스케줄로 동작한다."
+    ],
+    [
+      7,
+      "[Schedule: 최대 128개 설정된 상태]\n1. Setting> Schedule> Add Holiday\n2. 임의의 Type 및 Time Slot로 설정\n3. 최대 Schedule에 Holiday 설정",
+      " ",
+      "1. 하나의 Holiday는 127개의 Schedule에 설정가능하다.\n* Always 제외 127개까지 생성 가능"
+    ],
+    [
+      8,
+      "1. Setting> Schedule> Add Holiday\n2. 최대로 설정",
+      "1. 추가한 Holiday\n> 임의의 Type 및 Time Slot 설정\n> 최대 128개 설정(Once 및 Yearly 모두 포함)",
+      "1. Holiday는 최대 128개까지 생성가능하다."
+    ],
+    [
+      9,
+      "1. Setting > Schedule > Add Schedule\n2. 현재시간이 포함되게 설정\n3. 금일 날짜의 Holiday Schedule 선택\n4. Time Slot 미설정\n5. 인증시도",
+      "Holiday Time slot\n> 미설정",
+      "1. Holiday Schedule로 동작하기 때문에 인증실패 및 인증실패 로그가 남아야한다.\n"
+    ],
+    [
+      10,
+      "1. Setting> Schedule> Add Schedule\n2. 현재시간이 포함되게 설정\n3. 금일 날짜의 Holiday Schedule 선택\n4. Time Slot 설정\n5. 인증시도",
+      "Holiday Time slot\n> 현재시간이 포함되게 설정",
+      "1. Holiday Schedule로 동작하기 때문에 인증성공 및 인증성공 로그가 남는다."
+    ],
+    [
+      11,
+      "1. Setting> Schedule> Add Schedule\n2. 현재시간이 포함되게 설정\n3. 금일 날짜의 Holiday Schedule 선택\n4. Time Slot 설정\n5. 인증시도",
+      "Holiday Time slot\n> 현재시간이 미포함되게 설정",
+      "1. Holiday Schedule로 동작하기 때문에 인증실패 및 인증실패 로그가 남는다."
+    ],
+    [
+      12,
+      "1. Setting> Schedule> Add Schedule\n2. 임의의 Type 및 Time Slot 설정\n3. Holiday Schedule 최대선택\n4. Time Slot 설정\n5. Holiday에 해당 시간에 인증시도",
+      "Holiday Time slot\n> 최대 4개 설정",
+      "1. 하나의 스케줄에 최대 4개의 Holiday 스케줄이 설정가능하다.\n2. 설정된 Holiday Time Slot에 맞게 동작한다."
+    ],
+    [
+      13,
+      "1. Setting > Schedule > Add Schedule > Name 설정 > 임의의 Type 설정 > 임의의 Time Slot 설정 > Holiday Schedule 선택 > Time Slot 설정 > Apply > Holiday에 미해당 시간에 인증시도",
+      "[BioStar]\n1. 임의의 Schedule Type 설정\n2. 임의의 Time Slot 설정\n3. Holiday Schedule 설정(최대 4개)",
+      "1. 하나의 스케줄에 최대 4개의 Holiday 스케줄이 설정되어야 한다.\n2. 최대 설정 Holiday 미해당 시간에 인증시 설정한 Schedule로 동작한다."
+    ],
+    [
+      14,
+      "1. Setting> Schedule> Holiday\n2. Holiday List> Holiday 선택> 삭제",
+      "Delete\n1. 특정 Holiday\n2. 전체 Holiday(최대 128개)",
+      "1. 특정 Holiday에 대해 삭제된다.\n2. 전체 Holiday에 대해 삭제된다.\n> Device Viewer로 확인 가능."
+    ],
+    [
+      15,
+      "1. Setting> Schedule\n2. Schedule List> Schedule 선택> 삭제",
+      "Delete\n1. 특정 Schedule\n2. 전체 Schedule(최대 128개)",
+      "1. 특정 스케줄에 대해 삭제된다.\n2. 전체 스케줄에 대해 삭제된다.\n> Device Viewer로 확인 가능."
+    ],
+    [
+      16,
+      "1. Setting> Schedule> Add Schedule\n2. 임의의 Type 및 Time Slot 설정\n3. Holiday Schedule 선택\n4. Time Slot 설정\n5. Device> Time Zone/DST 변경\n6. 인증시도",
+      "DST\n> 현재시간에 영향을 주는 시간\n> 현재시간에 영향을 주지않는 시간",
+      "1. Time Zone, DST가 반영된 시간으로 설정된 Holiday Schedule로 동작해 그에맞는 결과를 출력한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-8",
+    "description": "",
+    "test_step": [
+      "1. Setting> Schedule> Add Schedule\n2. Type : Weekly 설정\n3. 각 요일별로 Time Slot 설정\n4. 인증시도",
+      "1. Setting> Schedule> Add Schedule\n2. Type: Daily 설정\n3. 각 요일별로 Time Slot 설정\n4. 인증시도",
+      "1. Setting> Schedule> Add Schedule\n2. Type : Daily 설정\n3. Cycle 및 Start Date 설정\n4. Time Slot 설정\n5. 인증시도",
+      "1. Setting> Schedule> Add Schedule\n2. 최대로 설정",
+      "1. Setting> Schedule> Add Holiday\n2. Date 및 Every Year 설정\n3. 장치의 시간을 변경해 인증시도",
+      "1. Setting> Schedule> Add Holiday\n2. Date 및 Every Year 설정\n3. 장치의 시간을 변경해 인증시도",
+      "[Schedule: 최대 128개 설정된 상태]\n1. Setting> Schedule> Add Holiday\n2. 임의의 Type 및 Time Slot로 설정\n3. 최대 Schedule에 Holiday 설정",
+      "1. Setting> Schedule> Add Holiday\n2. 최대로 설정",
+      "1. Setting > Schedule > Add Schedule\n2. 현재시간이 포함되게 설정\n3. 금일 날짜의 Holiday Schedule 선택\n4. Time Slot 미설정\n5. 인증시도",
+      "1. Setting> Schedule> Add Schedule\n2. 현재시간이 포함되게 설정\n3. 금일 날짜의 Holiday Schedule 선택\n4. Time Slot 설정\n5. 인증시도",
+      "1. Setting> Schedule> Add Schedule\n2. 현재시간이 포함되게 설정\n3. 금일 날짜의 Holiday Schedule 선택\n4. Time Slot 설정\n5. 인증시도",
+      "1. Setting> Schedule> Add Schedule\n2. 임의의 Type 및 Time Slot 설정\n3. Holiday Schedule 최대선택\n4. Time Slot 설정\n5. Holiday에 해당 시간에 인증시도",
+      "1. Setting > Schedule > Add Schedule > Name 설정 > 임의의 Type 설정 > 임의의 Time Slot 설정 > Holiday Schedule 선택 > Time Slot 설정 > Apply > Holiday에 미해당 시간에 인증시도",
+      "1. Setting> Schedule> Holiday\n2. Holiday List> Holiday 선택> 삭제",
+      "1. Setting> Schedule\n2. Schedule List> Schedule 선택> 삭제",
+      "1. Setting> Schedule> Add Schedule\n2. 임의의 Type 및 Time Slot 설정\n3. Holiday Schedule 선택\n4. Time Slot 설정\n5. Device> Time Zone/DST 변경\n6. 인증시도"
+    ],
+    "data": [
+      "1. Time Slot: 최대 5개 설정",
+      "1. Time Slot: 최대 5개 설정",
+      "1. Cycle : 최대 90일 설정\n2. Time Slot: 최대 5개 설정",
+      "1. 추가한 Schedule\n> 임의의 Type 및 Time Slot 설정\n> 최대 128개 설정(Weekly 및 Daily 모두 포함)",
+      "1. Date\n> 금일 날짜설정(ex. 20190909)\n> 금일 날짜와 동일한 전년도 날짜설정(ex. 20180909)\n> 금일 날짜와 동일한 내년도 날짜설정(ex. 20200909)\n\n2. Every Year\n> Once",
+      "1. Date\n> 금일 날짜설정(ex. 20190909)\n> 금일 날짜와 동일한 전년도 날짜설정(ex. 20180909)\n> 금일 날짜와 동일한 내년도 날짜설정(ex. 20200909)\n\n2. Every Year\n> Yearly",
+      " ",
+      "1. 추가한 Holiday\n> 임의의 Type 및 Time Slot 설정\n> 최대 128개 설정(Once 및 Yearly 모두 포함)",
+      "Holiday Time slot\n> 미설정",
+      "Holiday Time slot\n> 현재시간이 포함되게 설정",
+      "Holiday Time slot\n> 현재시간이 미포함되게 설정",
+      "Holiday Time slot\n> 최대 4개 설정",
+      "[BioStar]\n1. 임의의 Schedule Type 설정\n2. 임의의 Time Slot 설정\n3. Holiday Schedule 설정(최대 4개)",
+      "Delete\n1. 특정 Holiday\n2. 전체 Holiday(최대 128개)",
+      "Delete\n1. 특정 Schedule\n2. 전체 Schedule(최대 128개)",
+      "DST\n> 현재시간에 영향을 주는 시간\n> 현재시간에 영향을 주지않는 시간"
+    ],
+    "expected_result": [
+      "1. 선택한 값이 설정되어야 한다.\n2. 인증시도시 설정한 Time Slot에 해당하는 시간일 경우 인증성공 및 인증성공 로그가 남는다.",
+      "1. 선택한 값이 설정되어야 한다.\n2. 인증시도시 설정한 Time Slot에 해당하는 시간일 경우 인증성공 및 인증성공 로그가 남는다.",
+      "1. 지정한 Start Date부터 Cycle이 적용된다.\n2. 지정된 기간만큼을 주기로 Schedule이 반복적으로 돌아간다.\n> Cycle을 5로 설정했을때, 1,2,3,4,5/1,2,3,4,5로 반복되어 Schedule이 동작\n3. 인증시도시 설정한 Time Slot에 해당하는 시간일 경우 인증성공 및 인증성공 로그가 남는다.",
+      "1. Schedule을 최대 128개까지 생성가능하며 장치에 저장 가능하다.\n> Device Viewer로 확인 가능",
+      "1. 선택한 값이 설정되어야 한다.\n2. 설정된 날짜만 휴일스케줄로 동작하고, 현재날짜 외의 날짜에는 일반스케줄로 동작한다.",
+      "1. 선택한 값이 설정되어야 한다.\n2. 설정한 날짜에 대해 매년 휴일스케줄로 동작한다.",
+      "1. 하나의 Holiday는 127개의 Schedule에 설정가능하다.\n* Always 제외 127개까지 생성 가능",
+      "1. Holiday는 최대 128개까지 생성가능하다.",
+      "1. Holiday Schedule로 동작하기 때문에 인증실패 및 인증실패 로그가 남아야한다.\n",
+      "1. Holiday Schedule로 동작하기 때문에 인증성공 및 인증성공 로그가 남는다.",
+      "1. Holiday Schedule로 동작하기 때문에 인증실패 및 인증실패 로그가 남는다.",
+      "1. 하나의 스케줄에 최대 4개의 Holiday 스케줄이 설정가능하다.\n2. 설정된 Holiday Time Slot에 맞게 동작한다.",
+      "1. 하나의 스케줄에 최대 4개의 Holiday 스케줄이 설정되어야 한다.\n2. 최대 설정 Holiday 미해당 시간에 인증시 설정한 Schedule로 동작한다.",
+      "1. 특정 Holiday에 대해 삭제된다.\n2. 전체 Holiday에 대해 삭제된다.\n> Device Viewer로 확인 가능.",
+      "1. 특정 스케줄에 대해 삭제된다.\n2. 전체 스케줄에 대해 삭제된다.\n> Device Viewer로 확인 가능.",
+      "1. Time Zone, DST가 반영된 시간으로 설정된 Holiday Schedule로 동작해 그에맞는 결과를 출력한다."
+    ]
+  }
+}

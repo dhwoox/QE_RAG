@@ -1,0 +1,51 @@
+{
+  "id": "COMMONR-264",
+  "content": [
+    [
+      1,
+      "1. Menu > Device > USB Memory\n2. Export > 항목 선택 > OK",
+      "1. USB Memory 삽입된 상태\n2. 설정 항목 : All, User, Log\n\n\n> File Size(User 가 없는 경우) : '내보내기 할 데이터 파일을 생성할 수 없습니다.' 팝업\n> User가 없는 상태에서 All로 Export 시도 시 : '내보내기 할 데이터 파일을 생성할 수 없습니다.' 팝업",
+      "1. 선택한 항목에 맞게 장치의 정보가 USB Memory 에 Export 된다.\n> All : User, Log\n> User\n> Log\n2. Hash Key에 의한 Hashing이 동작 되어 Export 파일이 압축 폴더로 생성된다."
+    ],
+    [
+      2,
+      "1. Menu > Device > USB Memory\n2. Export > User/Log 선택 > OK",
+      "1. USB Memory 삽입된 상태\n2. BS2 Memory 용량\n > 256M 장치 : Full User(50만명) / Full Log(300만개)\n > 128M 장치 : 1:N Max User(2만명) / Full Log(300만개)\n3. XS2 Memory 용량\n > 976864K 장치 \n   : 1:1 - Full User(50만명) / Full Log(500만개)\n   : 1:N - Full User(10만명) / Full Log(500만개)\n   : Image Log - 5만개\n ",
+      "1. 장치의 사용자/로그가 USB Memory 에 Export 된다.\n2. Hash Key에 의한 Hashing이 동작 되어 Export 파일이 압축 폴더로 생성된다."
+    ],
+    [
+      3,
+      "1. Menu > Device > USB Memory\n2. Import > 항목 선택 > OK",
+      "1. USB Memory 삽입된 상태\n> BioStar2_20180123172022.tgz\n2. 설정 항목 : User",
+      "1. 선택한 항목에 맞게 USB Memory 의 정보가 장치로 Import 된다.\n> User\n2. Import할 장치의 Hash Key에 의한 Hashing이 일치하는 경우 Data 복호화하고, 서버가 준 기본(장치 자신의 Credential Key)키로 암호화하여 일치 시장치로 Import 되고, 이후 아래에 의해 Migration 진행 된다.\n> 불일치 - 1. 한글\n\"암호화 키가 다르기에 가져올 수 없습니다\"\n\n2. 영문\n\"Cannot import the data due to the encryption key value difference\"\n3. Import 완료 후 장치 재부팅 된다.\n> Secure Tamper On에 따른 동작 확인\n> Migration 진행 유무 팝업 확인"
+    ],
+    [
+      4,
+      "1. Menu > Device > USB Memory\n2. Import > User 선택 > OK",
+      "1. USB Memory 삽입된 상태\n2. USB Memory 에 Export 한 사용자(2만명, 50만명)\n\n> File Data Type 불일치 (User 선택 -> Log Import, Log 선택 -> User Import) : 'Import Fail' 팝업, Event Log : 실패 유무 저장 안함, User : 기존 사용자 유지\n> File Data 암호화 불일치 : '지원하지 않는다.' 팝업, Event Log : 실패 유무 저장 안함, User : 기존 사용자 유지\n> USB Export / Import 시 USB 연결 불안 : 'USB Connection Fail' 팝업\n> 타 장치 : 'Import Fail' 팝업",
+      "1. USB Memory 의 사용자가 장치로 Import 된다.\n2. Import할 장치의 Hash Key에 의한 Hashing이 일치하는 경우 Data 복호화하고, 서버가 준 기본(장치 자신의 Credential Key)키로 암호화하여 일치 시 장치로 Import 되고, 이후 아래에 의해 Migration 진행 된다.\n> 불일치 - 1. 한글\n\"암호화 키가 다르기에 가져올 수 없습니다\"\n\n2. 영문\n\"Cannot import the data due to the encryption key value difference\"\n3. Import 완료 후 장치 재부팅 된다.\n> Secure Tamper On에 따른 동작 확인"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-264",
+    "description": "",
+    "test_step": [
+      "1. Menu > Device > USB Memory\n2. Export > 항목 선택 > OK",
+      "1. Menu > Device > USB Memory\n2. Export > User/Log 선택 > OK",
+      "1. Menu > Device > USB Memory\n2. Import > 항목 선택 > OK",
+      "1. Menu > Device > USB Memory\n2. Import > User 선택 > OK"
+    ],
+    "data": [
+      "1. USB Memory 삽입된 상태\n2. 설정 항목 : All, User, Log\n\n\n> File Size(User 가 없는 경우) : '내보내기 할 데이터 파일을 생성할 수 없습니다.' 팝업\n> User가 없는 상태에서 All로 Export 시도 시 : '내보내기 할 데이터 파일을 생성할 수 없습니다.' 팝업",
+      "1. USB Memory 삽입된 상태\n2. BS2 Memory 용량\n > 256M 장치 : Full User(50만명) / Full Log(300만개)\n > 128M 장치 : 1:N Max User(2만명) / Full Log(300만개)\n3. XS2 Memory 용량\n > 976864K 장치 \n   : 1:1 - Full User(50만명) / Full Log(500만개)\n   : 1:N - Full User(10만명) / Full Log(500만개)\n   : Image Log - 5만개\n ",
+      "1. USB Memory 삽입된 상태\n> BioStar2_20180123172022.tgz\n2. 설정 항목 : User",
+      "1. USB Memory 삽입된 상태\n2. USB Memory 에 Export 한 사용자(2만명, 50만명)\n\n> File Data Type 불일치 (User 선택 -> Log Import, Log 선택 -> User Import) : 'Import Fail' 팝업, Event Log : 실패 유무 저장 안함, User : 기존 사용자 유지\n> File Data 암호화 불일치 : '지원하지 않는다.' 팝업, Event Log : 실패 유무 저장 안함, User : 기존 사용자 유지\n> USB Export / Import 시 USB 연결 불안 : 'USB Connection Fail' 팝업\n> 타 장치 : 'Import Fail' 팝업"
+    ],
+    "expected_result": [
+      "1. 선택한 항목에 맞게 장치의 정보가 USB Memory 에 Export 된다.\n> All : User, Log\n> User\n> Log\n2. Hash Key에 의한 Hashing이 동작 되어 Export 파일이 압축 폴더로 생성된다.",
+      "1. 장치의 사용자/로그가 USB Memory 에 Export 된다.\n2. Hash Key에 의한 Hashing이 동작 되어 Export 파일이 압축 폴더로 생성된다.",
+      "1. 선택한 항목에 맞게 USB Memory 의 정보가 장치로 Import 된다.\n> User\n2. Import할 장치의 Hash Key에 의한 Hashing이 일치하는 경우 Data 복호화하고, 서버가 준 기본(장치 자신의 Credential Key)키로 암호화하여 일치 시장치로 Import 되고, 이후 아래에 의해 Migration 진행 된다.\n> 불일치 - 1. 한글\n\"암호화 키가 다르기에 가져올 수 없습니다\"\n\n2. 영문\n\"Cannot import the data due to the encryption key value difference\"\n3. Import 완료 후 장치 재부팅 된다.\n> Secure Tamper On에 따른 동작 확인\n> Migration 진행 유무 팝업 확인",
+      "1. USB Memory 의 사용자가 장치로 Import 된다.\n2. Import할 장치의 Hash Key에 의한 Hashing이 일치하는 경우 Data 복호화하고, 서버가 준 기본(장치 자신의 Credential Key)키로 암호화하여 일치 시 장치로 Import 되고, 이후 아래에 의해 Migration 진행 된다.\n> 불일치 - 1. 한글\n\"암호화 키가 다르기에 가져올 수 없습니다\"\n\n2. 영문\n\"Cannot import the data due to the encryption key value difference\"\n3. Import 완료 후 장치 재부팅 된다.\n> Secure Tamper On에 따른 동작 확인"
+    ]
+  }
+}

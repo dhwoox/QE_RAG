@@ -1,0 +1,77 @@
+{
+  "id": "COMMONR-249",
+  "content": [
+    [
+      1,
+      "1. Door> APB 설정> 다수의 사용자에 대해 APB Violation 발생\n2. Monitoring> Door Status> Door 선택> APB 초기화 클릭\n3. 모든사용자 선택 후 확인\n4. APB Violation 된 다수의 사용자에 대해 인증시도",
+      "APB 타입\n> Soft APB\n> Hard APB",
+      "1. 모든 사용자에 대해 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)"
+    ],
+    [
+      2,
+      "1. Door> APB 설정> 다수의 APB Violation 발생\n2. Monitoring> Door Status> Door 선택> APB 초기화 클릭\n3. 특정사용자 선택 후 확인\n4. APB Violation된 사용자에 대해 인증시도",
+      "APB 타입\n> Soft APB\n> Hard APB\n\n특정사용자\n> 단일선택\n> 복수선택",
+      "1. 특정 사용자에 대해서만 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)\n\n2. 선택되지 않은 사용자에 대해서는 APB Violation 상태로 동작된다."
+    ],
+    [
+      3,
+      "1. Zone> APB Zone 설정> 다수의 사용자에 대해 APB Violation 발생\n2. Monitoring> Zone Status> Zone 선택> APB 초기화 클릭\n3. 모든사용자 선택 후 확인\n4. APB Violation 된 다수의 사용자에 대해 인증시도",
+      "모드\n> Local\n\nAPB 타입\n> Soft APB\n> Hard APB",
+      "1. 모든 사용자에 대해 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)"
+    ],
+    [
+      4,
+      "1. Zone> APB Zone 설정> 다수의 사용자에 대해 APB Violation 발생\n2. Monitoring> Zone Status> Zone 선택> APB 초기화 클릭\n3. 특정사용자 선택 후 확인\n4. APB Violation 된 다수의 사용자에 대해 인증시도",
+      "모드\n> Local\n\nAPB 타입\n> Soft APB\n> Hard APB\n\n특정사용자\n> 단일선택\n> 복수선택",
+      "1. 특정 사용자에 대해서만 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)\n\n2. 선택되지 않은 사용자에 대해서는 APB Violation 상태로 동작된다."
+    ],
+    [
+      5,
+      "1. Zone> APB Zone 설정> 다수의 사용자에 대해 APB Violation 발생\n2. Monitoring> Zone Status> Zone 선택> APB 초기화 클릭\n3. 모든사용자 선택 후 확인\n4. APB Violation 된 다수의 사용자에 대해 인증시도",
+      "모드\n> Global\n\nAPB 타입\n> Soft APB\n> Hard APB",
+      "1. 모든 사용자에 대해 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)"
+    ],
+    [
+      6,
+      "1. Zone> APB Zone 설정> 다수의 사용자에 대해 APB Violation 발생\n2. Monitoring> Zone Status> Zone 선택> APB 초기화 클릭\n3. 특정사용자 선택 후 확인\n4. APB Violation 된 다수의 사용자에 대해 인증시도",
+      "모드\n> Global\n\nAPB 타입\n> Soft APB\n> Hard APB\n\n특정사용자\n> 단일선택\n> 복수선택",
+      "1. 특정 사용자에 대해서만 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)\n\n2. 선택되지 않은 사용자에 대해서는 APB Violation 상태로 동작된다."
+    ],
+    [
+      7,
+      "1. APB Zone 추가> 다수의 사용자에 대해 APB Violation 발생\n2. APB Zone 비활성화\n3. APB Violation 되었던 다수의 사용자에 대해 인증시도",
+      "",
+      "1. APB 비활성화되어 인증 성공 된다.\n> APB Alarm 상태 유지"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-249",
+    "description": "",
+    "test_step": [
+      "1. Door> APB 설정> 다수의 사용자에 대해 APB Violation 발생\n2. Monitoring> Door Status> Door 선택> APB 초기화 클릭\n3. 모든사용자 선택 후 확인\n4. APB Violation 된 다수의 사용자에 대해 인증시도",
+      "1. Door> APB 설정> 다수의 APB Violation 발생\n2. Monitoring> Door Status> Door 선택> APB 초기화 클릭\n3. 특정사용자 선택 후 확인\n4. APB Violation된 사용자에 대해 인증시도",
+      "1. Zone> APB Zone 설정> 다수의 사용자에 대해 APB Violation 발생\n2. Monitoring> Zone Status> Zone 선택> APB 초기화 클릭\n3. 모든사용자 선택 후 확인\n4. APB Violation 된 다수의 사용자에 대해 인증시도",
+      "1. Zone> APB Zone 설정> 다수의 사용자에 대해 APB Violation 발생\n2. Monitoring> Zone Status> Zone 선택> APB 초기화 클릭\n3. 특정사용자 선택 후 확인\n4. APB Violation 된 다수의 사용자에 대해 인증시도",
+      "1. Zone> APB Zone 설정> 다수의 사용자에 대해 APB Violation 발생\n2. Monitoring> Zone Status> Zone 선택> APB 초기화 클릭\n3. 모든사용자 선택 후 확인\n4. APB Violation 된 다수의 사용자에 대해 인증시도",
+      "1. Zone> APB Zone 설정> 다수의 사용자에 대해 APB Violation 발생\n2. Monitoring> Zone Status> Zone 선택> APB 초기화 클릭\n3. 특정사용자 선택 후 확인\n4. APB Violation 된 다수의 사용자에 대해 인증시도",
+      "1. APB Zone 추가> 다수의 사용자에 대해 APB Violation 발생\n2. APB Zone 비활성화\n3. APB Violation 되었던 다수의 사용자에 대해 인증시도"
+    ],
+    "data": [
+      "APB 타입\n> Soft APB\n> Hard APB",
+      "APB 타입\n> Soft APB\n> Hard APB\n\n특정사용자\n> 단일선택\n> 복수선택",
+      "모드\n> Local\n\nAPB 타입\n> Soft APB\n> Hard APB",
+      "모드\n> Local\n\nAPB 타입\n> Soft APB\n> Hard APB\n\n특정사용자\n> 단일선택\n> 복수선택",
+      "모드\n> Global\n\nAPB 타입\n> Soft APB\n> Hard APB",
+      "모드\n> Global\n\nAPB 타입\n> Soft APB\n> Hard APB\n\n특정사용자\n> 단일선택\n> 복수선택"
+    ],
+    "expected_result": [
+      "1. 모든 사용자에 대해 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)",
+      "1. 특정 사용자에 대해서만 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)\n\n2. 선택되지 않은 사용자에 대해서는 APB Violation 상태로 동작된다.",
+      "1. 모든 사용자에 대해 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)",
+      "1. 특정 사용자에 대해서만 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)\n\n2. 선택되지 않은 사용자에 대해서는 APB Violation 상태로 동작된다.",
+      "1. 모든 사용자에 대해 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)",
+      "1. 특정 사용자에 대해서만 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)\n\n2. 선택되지 않은 사용자에 대해서는 APB Violation 상태로 동작된다.",
+      "1. APB 비활성화되어 인증 성공 된다.\n> APB Alarm 상태 유지"
+    ]
+  }
+}

@@ -1,0 +1,258 @@
+{
+  "id": "COMMONR-15",
+  "content": [
+    [
+      1,
+      "1. Setting> Card Format> Wiegand> Add Wiegand\n2. ID Field 영역 설정확인",
+      "[BioStar]\n||Predefined Wiegand Format||\n|26bit SIA Standard-H10301|\n|HID 37 bit-H10302|\n|HID 37 bit-H10304|\n|HID Corporate 1000| \n|HID Corporate 1000 48bit|\n|MIFARE CSN 32bit|\n|MIFARE CSN 34bit(Parity)|\n|DESFire 56bit|\n|DESFire 58bit(Parity)|",
+      "1.ID 영역을 4개까지 설정할 수 있다.\n(on) HID Coporate 1000 설정 참조\n||ID Field||\n|Facility Code Field|\n|ID Field|\n> Facility Code Field 추가 시 ID Field는 3개 추가 가능 \n2. ID 영역은 256Bit를 설정할 수 있다.\n> ID Bit를 256을 초과한 값에 대해 설정 후 추가되는지 확인\n3. ID 영역간에는 중복될 수 없다.\n> ID 영역간 중복되게 설정 후 추가되는지 확인"
+    ],
+    [
+      2,
+      "1. Setting> Card Format> Wiegand> Add Wiegand\n2. Parity Bits 영역 설정확인",
+      "[BioStar]\n||Predefined Wiegand Format||\n|26bit SIA Standard-H10301|\n|HID 37 bit-H10302|\n|HID 37 bit-H10304|\n|HID Corporate 1000| \n|HID Corporate 1000 48bit|\n|MIFARE CSN 32bit|\n|MIFARE CSN 34bit(Parity)|\n|DESFire 56bit|\n|DESFire 58bit(Parity)|",
+      "1. Parity 영역을 4개까지 설정할 수 있다.\n2. Parity 영역은 서로 중복될 수 있다.\n\n(on) HID Coporate 1000 설정 참조\n||Parity Bits||\n|Even|\n|Odd|"
+    ],
+    [
+      3,
+      "1. Setting> Card Format> Wiegand\n2. 수정 가능한 리스트 선택\n3. 각 항목들에 대해 설정 후 저장\n> Name, Description, Total Bits, Facility Code Field, ID Field, Parity Bits",
+      "[BioStar]\n||Predefined Wiegand Format ID||Custom Wiegand Format ID||\n|1 ~ 9|10 ~ 15|\n|수정 불가능|수정 가능|\n\n> 각 항목들에 대해 Default 포맷 참조해 설정",
+      "1. 설정한 Custom Format이 리스트에 추가된다.\n> 10 ~ 15 중 추가한 Custom이 표시 된다.\nName, Total Bits, Number of Fields, Number of Issued Cards"
+    ],
+    [
+      4,
+      "1. Setting> Card Format> Wiegand\n2. 생성된 Wiegand Custom Format 선택\n3. 설정값 변경\n> Name, Description, Total Bits, Facility Code Field, ID Field, Parity Bits",
+      "[BioStar]\n||Predefined Wiegand Format ID||Custom Wiegand Format ID||\n|1 ~ 9|10 ~ 15|\n|수정 불가능|수정 가능|\n\n> 각 항목들에 대해 Default 포맷 참조해 설정",
+      "1. 변경한 값이 저장된다.\n"
+    ],
+    [
+      5,
+      "1. Setting> Card Format> Wiegand\n2. 생성된 Wiegand Custom Format 선택\n3. 설정값 변경\n(FC 코드 필드와 ID 필드 사이에 1비트 이상 띄워서 생성)\n> Name, Description, Total Bits, Facility Code Field, ID Field, Parity Bits",
+      "[BioStar]\n||Predefined Wiegand Format ID||Custom Wiegand Format ID||\n|1 ~ 9|10 ~ 15|\n|수정 불가능|수정 가능|\n\n* FISS-4072",
+      "1. 변경한 값이 저장된다.\n2. 카드 등록 및 장치 인증 확인\n* 바이오스타 카드 등록 read 된 값과 장치에서 인증된 디스플레이 값이 일치\n* 실제 카드값과 BioStar 2 -> User에 표기되는 정보 일치 "
+    ],
+    [
+      6,
+      "1. Device> Wiegand 입력/출력에 대한 Wiegand Format 설정\n",
+      "[BioStar]\n||Predefined Wiegand Format||\n|26bit SIA Standard-H10301|\n|HID 37 bit-H10302|\n|HID 37 bit-H10304|\n|HID Corporate 1000| \n|HID Corporate 1000 48bit|\n|MIFARE CSN 32bit|\n|MIFARE CSN 34bit(Parity)|\n|DESFire 56bit|\n|DESFire 58bit(Parity)|",
+      "1. 선택한 값이 설정되어야 한다.\n2. Slave인 경우 Wiegand Input으로 강제 설정된다. \n\n(on) Master-Slave-3rd Party Reader\n > Master : Wiegand Input 설정\n > Slave : Wiegand Input 강제 설정"
+    ],
+    [
+      7,
+      "1. Device> Advanced> Wiegand> Wiegand Input/Output 설정\n",
+      "[BioStar]\nWiegand - Input/Output\n> Input (Default)\n> Output\n> Input/Output",
+      "1. Wiegand In으로 동작시킬 것인지, Wiegand Out으로 동작시킬 것인지, Wiegand In/Out(Both)로 동작 시킬 것인지 설정할 수 있다.\n"
+    ],
+    [
+      8,
+      "1. Device> Advanced>Wiegand> Wiegand Pulse 설정\n\n(on) Wiegand Output - Pulse Width, Interval",
+      "[BioStar]\n{panel:title=Wiegand Pulse}\n||Width||Interval||\n|Min(10)~Max(100)\nDefault(40)|Min(200)~Max(20000)\nDefault(10000)|\n\n{panel}",
+      "1. 선택한 값이 설정되어야 한다.\n2. Scope를 이용해 설정한 값으로 동작되는지 확인할 수 있어야 한다.\n\n(/) 측정 : RND 개발 검증 결과로 대체\n\n※ DM 20 - Wiegand Pulse Width/Pulse Interval Min/Max로 기본 설정\n> 기본 설정값 (추후 확인 예정)\n\n> Wiegand Out에 대한 동작확인은 Scope로 확인"
+    ],
+    [
+      9,
+      "1. Device> Device List> Device 선택(Master)> Advanced> Wiegand\n2. 각 항목에 대해 설정",
+      "[BioStar]\nWiegand - Input/Output\n\n(on) Wiegand Input-입력 받을 수 있는 Wiegand Format만 지원(All(15개), Multi(1개 이상))\n > Wiegand : Input, Input Format\n\n(on) Wiegand Out- Card ID Format에 따라 입력된 Card 값 출력\n > Wiegand : Output, Output Mode, Fail Code\n (/) CSN Card Format/Wiegand Card Format : Wiegand Format",
+      "1. Wiegand 설정에 대해 추가/편집/저장이 가능하다."
+    ],
+    [
+      10,
+      "1. Device> Wiegand In/Out 장치의 Wiegand Format을 동일하게 설정\n(on) Wiegand Input\n> Wiegand : Input, Input Format\n2. Wieagnd Reader에 카드인증시도",
+      "[BioStar]\n||Wiegand Format||\n|26bit SIA Standard-H10301|\n|HID 37 bit-H10302|\n|HID 37 bit-H10304|\n|HID Corporate 1000| \n|HID Corporate 1000 48bit|\n|MIFARE CSN 32bit|\n|MIFARE CSN 34bit(Parity)|\n|DESFire 56bit|\n|DESFire 58bit(Parity)|\n|추가한 Custom Format|\n\n카드인증\n> CSN/Wiegand 카드",
+      "1. Wiegand 포맷에 맞추어 Card 값이 출력된다.\n2. 미등록된 카드로 인증시도해 실패시 설정한 Wiegand 포맷에 맞추어 Card 값이 출력된다.\n> VERIFY_FAIL_CARD\n"
+    ],
+    [
+      11,
+      "1. Device> Wiegand Input 장치와 Output 장치의 Wiegand Format을 상이하게 설정\n(on) Wiegand Input \n> Wiegand : Input, Input Format\n2. Wieagnd Reader에 카드인증시도",
+      "[BioStar]\n||Wiegand Format||\n|26bit SIA Standard-H10301|\n|HID 37 bit-H10302|\n|HID 37 bit-H10304|\n|HID Corporate 1000| \n|HID Corporate 1000 48bit|\n|MIFARE CSN 32bit|\n|MIFARE CSN 34bit(Parity)|\n|DESFire 56bit|\n|DESFire 58bit(Parity)|\n|추가한 Custom Format|\n\n카드인증\n> CSN/Wiegand 카드",
+      "1. Wiegand 포맷이 다른경우 입력되는 카드ID에 대해 무시된다.\n> Mismatched Wiegand Format\n||Parity Fail||Mismatched Wiegand  Format||\n|Wiegand Legnth 동일한 상태에서 Parity만 역순으로 저장시|Wiegand Format 상이|"
+    ],
+    [
+      12,
+      "1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Enable Fail Code 체크\n4. Fail Code: 0x00 설정\n5. Wiegand Out 장치에 저장되지 않은 카드인증",
+      "[BioStar]\nWiegand Output Fail Code-Normal(Output Mode)\n> Wiegand Input과 동일하게 설정\n(on) Wiegand Out \n > Wiegand : Output, Output Mode, Fail Code\n > CSN Card Format/Wiegand Card Format : Wiegand Format\n\n카드인증\n> CSN/Wiegand 카드",
+      "1. 설정된 Format에 맞게 카드ID가 0으로 채워져서 출력된다."
+    ],
+    [
+      13,
+      "1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Enable Fail Code 체크\n4. Fail Code: 0xFF 설정\n5. Wiegand Out 장치에 저장되지 않은 카드인증",
+      "[BioStar]\nWiegand Output Fail Code-Normal(Output Mode)\n> Wiegand Input 과 동일하게 설정\n(on) Wiegand Out \n > Wiegand : Output, Output Mode, Fail Code\n > CSN Card Format/Wiegand Card Format : Wiegand Format\n\n카드인증\n> CSN/Wiegand 카드",
+      "1. 설정된 Format에 맞게 카드ID가 1로 채워져서 출력된다."
+    ],
+    [
+      14,
+      "1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Enable Fail Code 체크\n4. Fail Code 설정\n5. Bypass Mode: Enable\n6. Wiegand Out 장치에 저장되지 않은 카드인증",
+      "[BioStar]\nWiegand Out Output Mode-Bypass\n> Wiegand Input 과 동일하게 설정\n(on) Wiegand Out \n > Wiegand : Output, Output Mode, Fail Code\n > CSN Card Format/Wiegand Card Format : Wiegand Format\n\nFail Code\n> 0x00\n> 0xFF\n\n카드인증\n> CSN/Wiegand 카드",
+      "1. 카드ID가 Bypass되어 Format에 맞게 출력된다."
+    ],
+    [
+      15,
+      "<Master-Slave/DM20-Wiegand Reader 연결 \nor Master-Wiegand Reader 연결>\n1. Master Reboot\n2. Master와 연결된 Slave/DM20 혹은 Wiegand Reader 동작확인",
+      "[BioStar]",
+      "1. Master가 Reboot 되더라도 Slave/DM20 와 Wiegand Reader는 Reboot되지 않아야 한다."
+    ],
+    [
+      16,
+      "<Master-Slave/DM20-Wiegand Reader 연결 \nor Master-Wiegand Reader 연결>\n1. Wiegand Reader Reboot\n2. Wiegand Reader 와 연결된 Slave/DM20 혹은 Master 동작확인",
+      "[BioStar]",
+      "1. Wiegand Reader Reboot시 Master 혹은 Slave/DM20 은 Reboot되지 않아야 한다."
+    ],
+    [
+      17,
+      "<Master-Wiegand Reader 연결> \n1. User> Add User\n2. +Card> Wiegand Reader 선택\n3. Wiegand Reader에 카드 입력",
+      "[BioStar]\nWiegand - Input/Output\n\n(on) Wiegand Input-입력 받을 수 있는 Wiegand Format만 지원(All(15개), Multi(1개 이상))\n > Wiegand : Input, Input Format\n\n(on) Wiegand Out- Card ID Format에 따라 입력된 Card 값 출력\n > Wiegand : Output, Output Mode, Fail Code\n (/) CSN Card Format/Wiegand Card Format : Wiegand Format",
+      "1. 입력된 카드는 Wiegand Out으로 동작한다.\n2.  Wiegnad Format에 맞게 카드ID가 표시되어야 한다."
+    ],
+    [
+      18,
+      "<Master-Slave/DM20-Wiegand Reader 연결>\n1. Wiegand Reader에 카드입력",
+      "[BioStar]\nWiegand - Input/Output\n\n(on) Wiegand Input-입력 받을 수 있는 Wiegand Format만 지원(All(15개), Multi(1개 이상))\n > Wiegand : Input, Input Format\n\n(on) Wiegand Out- Card ID Format에 따라 입력된 Card 값 출력\n > Wiegand : Output, Output Mode, Fail Code\n (/) CSN Card Format/Wiegand Card Format : Wiegand Format",
+      "1. Master 장치에서는 Wiegand Reader에서 입력된 카드ID를 매칭해 일치하면 인증성공으로 동작한다."
+    ],
+    [
+      19,
+      "<Controller-Wiegand Reader 연결>\n1. Wiegand Reader에 Smart Card 인증\n> 3rd Praty, Wiegand Output(Suprema Device)",
+      "[BioStar]\nSmart Card - iClass\n> Secure Credential\n> AOC\n\nWiegand Card Format\n> Wiegand Input Format 과 동일하게 설정\n\nSmart Card Layout\n> 발급된 Smart Card Layout\n\nFail Code\n> 0x00\n> 0xFF\n\n카드인증\n> CSN/Wiegand 카드\n",
+      "1. 카드에 Write한 ID가 아닌 iClass 카드의 Secure ID(PAC Data)가 Wiegand로 출력된다.\n2. SCC인 경우 24 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴인 경우 24 Byte 카드 ID를 사용하여 출력함\n: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함\n> AOC인 경우 32 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n2. Wiegand Reader(Out) 장치가 재부팅되면 안된다."
+    ],
+    [
+      20,
+      "<Wiegand In/Out 구성된 상태 : Card 인증>\n1. 사용자에 얼굴/지문/카드/PIN 등록 후 Wiegand In/Out 장치에 전송\n2. Wiegand Out 장치에 등록된 카드인증시도\n3. Wiegand Out 장치에 등록되지 않은 카드인증시도\n4. 등록된 사용자의 얼굴/지문인증모드로 인증시도",
+      "[BioStar]\nWiegand Out Output Mode-Normal\n> Wiegand Input 과 동일하게 설정\n(on) Wiegand Out \n > Wiegand : Output, Output Mode, Fail Code\n > CSN Card Format/Wiegand Card Format : Wiegand Format",
+      "1. 인증된 사용자의 카드ID가 Wiegand Output 으로 출력되어야 함"
+    ],
+    [
+      21,
+      "<Wiegand In/Out 구성된 상태 : ID 인증>\n1. 사용자에 얼굴/지문/카드/PIN 등록 후 Wiegand In/Out 장치에 전송\n2. Wiegand Out 장치에 등록된 카드인증시도\n3. Wiegand Out 장치에 등록되지 않은 카드인증시도\n4. 등록된 사용자의 ID인증모드로 인증시도",
+      "[BioStar]\nWiegand Out Output Mode-Normal\n> Wiegand Input 과 동일하게 설정\n(on) Wiegand Out \n > Wiegand : Output, Output Mode, Fail Code\n > CSN Card Format/Wiegand Card Format : Wiegand Format",
+      "1. 인증된 사용자의 카드ID가 Wiegand Output 으로 출력되어야 함"
+    ],
+    [
+      22,
+      "<Wiegand In/Out 구성된 상태 : Face 인증>\n1. 사용자에 얼굴/지문/카드/PIN 등록 후 Wiegand In/Out 장치에 전송\n2. Wiegand Out 장치에 등록된 카드인증시도\n3. Wiegand Out 장치에 등록되지 않은 카드인증시도\n4. 등록된 사용자의 얼굴인증모드로 인증시도",
+      "[BioStar]\nWiegand Out Output Mode-Normal\n> Wiegand Input 과 동일하게 설정\n(on) Wiegand Out \n > Wiegand : Output, Output Mode, Fail Code\n > CSN Card Format/Wiegand Card Format : Wiegand Format",
+      "1. 인증된 사용자의 카드ID가 Wiegand Output 으로 출력되어야 함"
+    ],
+    [
+      23,
+      "<Wiegand In/Out 구성>\n1. Wiegand Out장치> Width/Interval 설정\n2. Wiegand Out장치에 인증시도",
+      "Width/Interval\n> 최소값 설정\n> 최대값 설정\n> 구성 \n: 3rd Party Wiegand Reader-Wiegand Input\n: Wiegand Input-DM20-3rd Party Wiegand Reader\n: Wiegand Output-Wiegand Input",
+      "1. In장치에 Wiegand 신호가 정상적으로 들어와 인증성공/실패 유무를 표시해주어야 한다.\n> Wiegand In에 대한 동작확인"
+    ],
+    [
+      24,
+      "<3rd Party Wiegand Reader(중국산) - Wiegand Input Device)\n1. Device(Wiegand Input)> Advanced>Wiegand > Wiegand Pulse 설정",
+      "[BioStar]- Wiegnad Input 기본 설정 유지\n{panel:title=Wiegand Pulse}\n||Width||Interval||\n|Min(10)~Max(1000)\nDefault(40)|Min(200)~Max(20000)\nDefault(10000)|\n※ BS2 \n> Pluse Interval : 2000(Default)\n{panel}",
+      "1. Wiegand In장치에 Wiegand 신호가 정상적으로 들어와 인증성공/실패 유무를 표시해 주어야 한다.\n> Wiegand Pulse Width의 값에 따라 적용 버전과 미적용 버전으로 동작 유무 확인 포함\n2. Scope를 이용해 설정한 값으로 동작되는지 확인할 수 있어야 한다.\n> 필요시(Wiegand Input)\n\n(/) 측정 : RND 개발 검증 결과로 대체\n\n※ DM 20 - Wiegand Pulse Width 사양 변경 적용(10 ~ 1000) 버전 이용\n\n> Wiegand Input에 대한 동작 확인"
+    ],
+    [
+      25,
+      "[Wiegand Card 지원장치]\n1. 장치 상세정보창> Card Type> Wiegand Card: Enable\n2. Wiegand Format: Custom Wiegand Format 선택> Apply\n3. Wiegand Card Read\n2. 출력값 확인",
+      "Custom Wiegand Format 설정\n=>Total Bits : 26\n=> FC : 1~5\n=> ID : 7~25\n",
+      "1. 설정된대로 리드되어야 한다.\nex) 26bit HID Prox Card: 51-160\n=> FC : 6\n=> ID : 393537\n"
+    ],
+    [
+      26,
+      "[CSN Card 지원장치]\n1. 장치 상세정보창> Card Type> Wiegand Card: Enable\n2. Wiegand Format: Custom Wiegand Format 선택> Apply\n3. Wiegand Card Read\n2. 출력값 확인",
+      "Custom Wiegand Format 설정\n=>Total Bits : 32\n=> FC : 1~8\n=> ID : 12~31\n",
+      "1. 설정된대로 리드되어야 한다.\nex) CSN Card: 1183553449645184\n=> FC : 40\n=> ID : 21632\n"
+    ],
+    [
+      27,
+      "1. Wiegand Out 장치상세정보창> Card Type> Wiegand Card: Enable & Custom Wiegand Format 설정\n2. Wiegand Bypass 설정> Apply\n3. Wiegand In 장치상세정보창> Wiegand Input/Output: Input 설정> Apply\n4. Wiegand Out 장치에 카드 리드\n5. Wiegand In 장치로 값이 들어오는지 확인",
+      "Custom Wiegand Format 설정\n=> Total Bits: 4 ~ 25 중 임의 설정\n=> ID Field로 구성",
+      "1. Wiegand Format 26보다 작은 값에 대해서도 In으로 들어와야 한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-15",
+    "description": "",
+    "test_step": [
+      "1. Setting> Card Format> Wiegand> Add Wiegand\n2. ID Field 영역 설정확인",
+      "1. Setting> Card Format> Wiegand> Add Wiegand\n2. Parity Bits 영역 설정확인",
+      "1. Setting> Card Format> Wiegand\n2. 수정 가능한 리스트 선택\n3. 각 항목들에 대해 설정 후 저장\n> Name, Description, Total Bits, Facility Code Field, ID Field, Parity Bits",
+      "1. Setting> Card Format> Wiegand\n2. 생성된 Wiegand Custom Format 선택\n3. 설정값 변경\n> Name, Description, Total Bits, Facility Code Field, ID Field, Parity Bits",
+      "1. Setting> Card Format> Wiegand\n2. 생성된 Wiegand Custom Format 선택\n3. 설정값 변경\n(FC 코드 필드와 ID 필드 사이에 1비트 이상 띄워서 생성)\n> Name, Description, Total Bits, Facility Code Field, ID Field, Parity Bits",
+      "1. Device> Wiegand 입력/출력에 대한 Wiegand Format 설정\n",
+      "1. Device> Advanced> Wiegand> Wiegand Input/Output 설정\n",
+      "1. Device> Advanced>Wiegand> Wiegand Pulse 설정\n\n(on) Wiegand Output - Pulse Width, Interval",
+      "1. Device> Device List> Device 선택(Master)> Advanced> Wiegand\n2. 각 항목에 대해 설정",
+      "1. Device> Wiegand In/Out 장치의 Wiegand Format을 동일하게 설정\n(on) Wiegand Input\n> Wiegand : Input, Input Format\n2. Wieagnd Reader에 카드인증시도",
+      "1. Device> Wiegand Input 장치와 Output 장치의 Wiegand Format을 상이하게 설정\n(on) Wiegand Input \n> Wiegand : Input, Input Format\n2. Wieagnd Reader에 카드인증시도",
+      "1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Enable Fail Code 체크\n4. Fail Code: 0x00 설정\n5. Wiegand Out 장치에 저장되지 않은 카드인증",
+      "1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Enable Fail Code 체크\n4. Fail Code: 0xFF 설정\n5. Wiegand Out 장치에 저장되지 않은 카드인증",
+      "1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Enable Fail Code 체크\n4. Fail Code 설정\n5. Bypass Mode: Enable\n6. Wiegand Out 장치에 저장되지 않은 카드인증",
+      "<Master-Slave/DM20-Wiegand Reader 연결 \nor Master-Wiegand Reader 연결>\n1. Master Reboot\n2. Master와 연결된 Slave/DM20 혹은 Wiegand Reader 동작확인",
+      "<Master-Slave/DM20-Wiegand Reader 연결 \nor Master-Wiegand Reader 연결>\n1. Wiegand Reader Reboot\n2. Wiegand Reader 와 연결된 Slave/DM20 혹은 Master 동작확인",
+      "<Master-Wiegand Reader 연결> \n1. User> Add User\n2. +Card> Wiegand Reader 선택\n3. Wiegand Reader에 카드 입력",
+      "<Master-Slave/DM20-Wiegand Reader 연결>\n1. Wiegand Reader에 카드입력",
+      "<Controller-Wiegand Reader 연결>\n1. Wiegand Reader에 Smart Card 인증\n> 3rd Praty, Wiegand Output(Suprema Device)",
+      "<Wiegand In/Out 구성된 상태 : Card 인증>\n1. 사용자에 얼굴/지문/카드/PIN 등록 후 Wiegand In/Out 장치에 전송\n2. Wiegand Out 장치에 등록된 카드인증시도\n3. Wiegand Out 장치에 등록되지 않은 카드인증시도\n4. 등록된 사용자의 얼굴/지문인증모드로 인증시도",
+      "<Wiegand In/Out 구성된 상태 : ID 인증>\n1. 사용자에 얼굴/지문/카드/PIN 등록 후 Wiegand In/Out 장치에 전송\n2. Wiegand Out 장치에 등록된 카드인증시도\n3. Wiegand Out 장치에 등록되지 않은 카드인증시도\n4. 등록된 사용자의 ID인증모드로 인증시도",
+      "<Wiegand In/Out 구성된 상태 : Face 인증>\n1. 사용자에 얼굴/지문/카드/PIN 등록 후 Wiegand In/Out 장치에 전송\n2. Wiegand Out 장치에 등록된 카드인증시도\n3. Wiegand Out 장치에 등록되지 않은 카드인증시도\n4. 등록된 사용자의 얼굴인증모드로 인증시도",
+      "<Wiegand In/Out 구성>\n1. Wiegand Out장치> Width/Interval 설정\n2. Wiegand Out장치에 인증시도",
+      "<3rd Party Wiegand Reader(중국산) - Wiegand Input Device)\n1. Device(Wiegand Input)> Advanced>Wiegand > Wiegand Pulse 설정",
+      "[Wiegand Card 지원장치]\n1. 장치 상세정보창> Card Type> Wiegand Card: Enable\n2. Wiegand Format: Custom Wiegand Format 선택> Apply\n3. Wiegand Card Read\n2. 출력값 확인",
+      "[CSN Card 지원장치]\n1. 장치 상세정보창> Card Type> Wiegand Card: Enable\n2. Wiegand Format: Custom Wiegand Format 선택> Apply\n3. Wiegand Card Read\n2. 출력값 확인",
+      "1. Wiegand Out 장치상세정보창> Card Type> Wiegand Card: Enable & Custom Wiegand Format 설정\n2. Wiegand Bypass 설정> Apply\n3. Wiegand In 장치상세정보창> Wiegand Input/Output: Input 설정> Apply\n4. Wiegand Out 장치에 카드 리드\n5. Wiegand In 장치로 값이 들어오는지 확인"
+    ],
+    "data": [
+      "[BioStar]\n||Predefined Wiegand Format||\n|26bit SIA Standard-H10301|\n|HID 37 bit-H10302|\n|HID 37 bit-H10304|\n|HID Corporate 1000| \n|HID Corporate 1000 48bit|\n|MIFARE CSN 32bit|\n|MIFARE CSN 34bit(Parity)|\n|DESFire 56bit|\n|DESFire 58bit(Parity)|",
+      "[BioStar]\n||Predefined Wiegand Format||\n|26bit SIA Standard-H10301|\n|HID 37 bit-H10302|\n|HID 37 bit-H10304|\n|HID Corporate 1000| \n|HID Corporate 1000 48bit|\n|MIFARE CSN 32bit|\n|MIFARE CSN 34bit(Parity)|\n|DESFire 56bit|\n|DESFire 58bit(Parity)|",
+      "[BioStar]\n||Predefined Wiegand Format ID||Custom Wiegand Format ID||\n|1 ~ 9|10 ~ 15|\n|수정 불가능|수정 가능|\n\n> 각 항목들에 대해 Default 포맷 참조해 설정",
+      "[BioStar]\n||Predefined Wiegand Format ID||Custom Wiegand Format ID||\n|1 ~ 9|10 ~ 15|\n|수정 불가능|수정 가능|\n\n> 각 항목들에 대해 Default 포맷 참조해 설정",
+      "[BioStar]\n||Predefined Wiegand Format ID||Custom Wiegand Format ID||\n|1 ~ 9|10 ~ 15|\n|수정 불가능|수정 가능|\n\n* FISS-4072",
+      "[BioStar]\n||Predefined Wiegand Format||\n|26bit SIA Standard-H10301|\n|HID 37 bit-H10302|\n|HID 37 bit-H10304|\n|HID Corporate 1000| \n|HID Corporate 1000 48bit|\n|MIFARE CSN 32bit|\n|MIFARE CSN 34bit(Parity)|\n|DESFire 56bit|\n|DESFire 58bit(Parity)|",
+      "[BioStar]\nWiegand - Input/Output\n> Input (Default)\n> Output\n> Input/Output",
+      "[BioStar]\n{panel:title=Wiegand Pulse}\n||Width||Interval||\n|Min(10)~Max(100)\nDefault(40)|Min(200)~Max(20000)\nDefault(10000)|\n\n{panel}",
+      "[BioStar]\nWiegand - Input/Output\n\n(on) Wiegand Input-입력 받을 수 있는 Wiegand Format만 지원(All(15개), Multi(1개 이상))\n > Wiegand : Input, Input Format\n\n(on) Wiegand Out- Card ID Format에 따라 입력된 Card 값 출력\n > Wiegand : Output, Output Mode, Fail Code\n (/) CSN Card Format/Wiegand Card Format : Wiegand Format",
+      "[BioStar]\n||Wiegand Format||\n|26bit SIA Standard-H10301|\n|HID 37 bit-H10302|\n|HID 37 bit-H10304|\n|HID Corporate 1000| \n|HID Corporate 1000 48bit|\n|MIFARE CSN 32bit|\n|MIFARE CSN 34bit(Parity)|\n|DESFire 56bit|\n|DESFire 58bit(Parity)|\n|추가한 Custom Format|\n\n카드인증\n> CSN/Wiegand 카드",
+      "[BioStar]\n||Wiegand Format||\n|26bit SIA Standard-H10301|\n|HID 37 bit-H10302|\n|HID 37 bit-H10304|\n|HID Corporate 1000| \n|HID Corporate 1000 48bit|\n|MIFARE CSN 32bit|\n|MIFARE CSN 34bit(Parity)|\n|DESFire 56bit|\n|DESFire 58bit(Parity)|\n|추가한 Custom Format|\n\n카드인증\n> CSN/Wiegand 카드",
+      "[BioStar]\nWiegand Output Fail Code-Normal(Output Mode)\n> Wiegand Input과 동일하게 설정\n(on) Wiegand Out \n > Wiegand : Output, Output Mode, Fail Code\n > CSN Card Format/Wiegand Card Format : Wiegand Format\n\n카드인증\n> CSN/Wiegand 카드",
+      "[BioStar]\nWiegand Output Fail Code-Normal(Output Mode)\n> Wiegand Input 과 동일하게 설정\n(on) Wiegand Out \n > Wiegand : Output, Output Mode, Fail Code\n > CSN Card Format/Wiegand Card Format : Wiegand Format\n\n카드인증\n> CSN/Wiegand 카드",
+      "[BioStar]\nWiegand Out Output Mode-Bypass\n> Wiegand Input 과 동일하게 설정\n(on) Wiegand Out \n > Wiegand : Output, Output Mode, Fail Code\n > CSN Card Format/Wiegand Card Format : Wiegand Format\n\nFail Code\n> 0x00\n> 0xFF\n\n카드인증\n> CSN/Wiegand 카드",
+      "[BioStar]",
+      "[BioStar]",
+      "[BioStar]\nWiegand - Input/Output\n\n(on) Wiegand Input-입력 받을 수 있는 Wiegand Format만 지원(All(15개), Multi(1개 이상))\n > Wiegand : Input, Input Format\n\n(on) Wiegand Out- Card ID Format에 따라 입력된 Card 값 출력\n > Wiegand : Output, Output Mode, Fail Code\n (/) CSN Card Format/Wiegand Card Format : Wiegand Format",
+      "[BioStar]\nWiegand - Input/Output\n\n(on) Wiegand Input-입력 받을 수 있는 Wiegand Format만 지원(All(15개), Multi(1개 이상))\n > Wiegand : Input, Input Format\n\n(on) Wiegand Out- Card ID Format에 따라 입력된 Card 값 출력\n > Wiegand : Output, Output Mode, Fail Code\n (/) CSN Card Format/Wiegand Card Format : Wiegand Format",
+      "[BioStar]\nSmart Card - iClass\n> Secure Credential\n> AOC\n\nWiegand Card Format\n> Wiegand Input Format 과 동일하게 설정\n\nSmart Card Layout\n> 발급된 Smart Card Layout\n\nFail Code\n> 0x00\n> 0xFF\n\n카드인증\n> CSN/Wiegand 카드\n",
+      "[BioStar]\nWiegand Out Output Mode-Normal\n> Wiegand Input 과 동일하게 설정\n(on) Wiegand Out \n > Wiegand : Output, Output Mode, Fail Code\n > CSN Card Format/Wiegand Card Format : Wiegand Format",
+      "[BioStar]\nWiegand Out Output Mode-Normal\n> Wiegand Input 과 동일하게 설정\n(on) Wiegand Out \n > Wiegand : Output, Output Mode, Fail Code\n > CSN Card Format/Wiegand Card Format : Wiegand Format",
+      "[BioStar]\nWiegand Out Output Mode-Normal\n> Wiegand Input 과 동일하게 설정\n(on) Wiegand Out \n > Wiegand : Output, Output Mode, Fail Code\n > CSN Card Format/Wiegand Card Format : Wiegand Format",
+      "Width/Interval\n> 최소값 설정\n> 최대값 설정\n> 구성 \n: 3rd Party Wiegand Reader-Wiegand Input\n: Wiegand Input-DM20-3rd Party Wiegand Reader\n: Wiegand Output-Wiegand Input",
+      "[BioStar]- Wiegnad Input 기본 설정 유지\n{panel:title=Wiegand Pulse}\n||Width||Interval||\n|Min(10)~Max(1000)\nDefault(40)|Min(200)~Max(20000)\nDefault(10000)|\n※ BS2 \n> Pluse Interval : 2000(Default)\n{panel}",
+      "Custom Wiegand Format 설정\n=>Total Bits : 26\n=> FC : 1~5\n=> ID : 7~25\n",
+      "Custom Wiegand Format 설정\n=>Total Bits : 32\n=> FC : 1~8\n=> ID : 12~31\n",
+      "Custom Wiegand Format 설정\n=> Total Bits: 4 ~ 25 중 임의 설정\n=> ID Field로 구성"
+    ],
+    "expected_result": [
+      "1.ID 영역을 4개까지 설정할 수 있다.\n(on) HID Coporate 1000 설정 참조\n||ID Field||\n|Facility Code Field|\n|ID Field|\n> Facility Code Field 추가 시 ID Field는 3개 추가 가능 \n2. ID 영역은 256Bit를 설정할 수 있다.\n> ID Bit를 256을 초과한 값에 대해 설정 후 추가되는지 확인\n3. ID 영역간에는 중복될 수 없다.\n> ID 영역간 중복되게 설정 후 추가되는지 확인",
+      "1. Parity 영역을 4개까지 설정할 수 있다.\n2. Parity 영역은 서로 중복될 수 있다.\n\n(on) HID Coporate 1000 설정 참조\n||Parity Bits||\n|Even|\n|Odd|",
+      "1. 설정한 Custom Format이 리스트에 추가된다.\n> 10 ~ 15 중 추가한 Custom이 표시 된다.\nName, Total Bits, Number of Fields, Number of Issued Cards",
+      "1. 변경한 값이 저장된다.\n",
+      "1. 변경한 값이 저장된다.\n2. 카드 등록 및 장치 인증 확인\n* 바이오스타 카드 등록 read 된 값과 장치에서 인증된 디스플레이 값이 일치\n* 실제 카드값과 BioStar 2 -> User에 표기되는 정보 일치 ",
+      "1. 선택한 값이 설정되어야 한다.\n2. Slave인 경우 Wiegand Input으로 강제 설정된다. \n\n(on) Master-Slave-3rd Party Reader\n > Master : Wiegand Input 설정\n > Slave : Wiegand Input 강제 설정",
+      "1. Wiegand In으로 동작시킬 것인지, Wiegand Out으로 동작시킬 것인지, Wiegand In/Out(Both)로 동작 시킬 것인지 설정할 수 있다.\n",
+      "1. 선택한 값이 설정되어야 한다.\n2. Scope를 이용해 설정한 값으로 동작되는지 확인할 수 있어야 한다.\n\n(/) 측정 : RND 개발 검증 결과로 대체\n\n※ DM 20 - Wiegand Pulse Width/Pulse Interval Min/Max로 기본 설정\n> 기본 설정값 (추후 확인 예정)\n\n> Wiegand Out에 대한 동작확인은 Scope로 확인",
+      "1. Wiegand 설정에 대해 추가/편집/저장이 가능하다.",
+      "1. Wiegand 포맷에 맞추어 Card 값이 출력된다.\n2. 미등록된 카드로 인증시도해 실패시 설정한 Wiegand 포맷에 맞추어 Card 값이 출력된다.\n> VERIFY_FAIL_CARD\n",
+      "1. Wiegand 포맷이 다른경우 입력되는 카드ID에 대해 무시된다.\n> Mismatched Wiegand Format\n||Parity Fail||Mismatched Wiegand  Format||\n|Wiegand Legnth 동일한 상태에서 Parity만 역순으로 저장시|Wiegand Format 상이|",
+      "1. 설정된 Format에 맞게 카드ID가 0으로 채워져서 출력된다.",
+      "1. 설정된 Format에 맞게 카드ID가 1로 채워져서 출력된다.",
+      "1. 카드ID가 Bypass되어 Format에 맞게 출력된다.",
+      "1. Master가 Reboot 되더라도 Slave/DM20 와 Wiegand Reader는 Reboot되지 않아야 한다.",
+      "1. Wiegand Reader Reboot시 Master 혹은 Slave/DM20 은 Reboot되지 않아야 한다.",
+      "1. 입력된 카드는 Wiegand Out으로 동작한다.\n2.  Wiegnad Format에 맞게 카드ID가 표시되어야 한다.",
+      "1. Master 장치에서는 Wiegand Reader에서 입력된 카드ID를 매칭해 일치하면 인증성공으로 동작한다.",
+      "1. 카드에 Write한 ID가 아닌 iClass 카드의 Secure ID(PAC Data)가 Wiegand로 출력된다.\n2. SCC인 경우 24 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴인 경우 24 Byte 카드 ID를 사용하여 출력함\n: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함\n> AOC인 경우 32 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n2. Wiegand Reader(Out) 장치가 재부팅되면 안된다.",
+      "1. 인증된 사용자의 카드ID가 Wiegand Output 으로 출력되어야 함",
+      "1. 인증된 사용자의 카드ID가 Wiegand Output 으로 출력되어야 함",
+      "1. 인증된 사용자의 카드ID가 Wiegand Output 으로 출력되어야 함",
+      "1. In장치에 Wiegand 신호가 정상적으로 들어와 인증성공/실패 유무를 표시해주어야 한다.\n> Wiegand In에 대한 동작확인",
+      "1. Wiegand In장치에 Wiegand 신호가 정상적으로 들어와 인증성공/실패 유무를 표시해 주어야 한다.\n> Wiegand Pulse Width의 값에 따라 적용 버전과 미적용 버전으로 동작 유무 확인 포함\n2. Scope를 이용해 설정한 값으로 동작되는지 확인할 수 있어야 한다.\n> 필요시(Wiegand Input)\n\n(/) 측정 : RND 개발 검증 결과로 대체\n\n※ DM 20 - Wiegand Pulse Width 사양 변경 적용(10 ~ 1000) 버전 이용\n\n> Wiegand Input에 대한 동작 확인",
+      "1. 설정된대로 리드되어야 한다.\nex) 26bit HID Prox Card: 51-160\n=> FC : 6\n=> ID : 393537\n",
+      "1. 설정된대로 리드되어야 한다.\nex) CSN Card: 1183553449645184\n=> FC : 40\n=> ID : 21632\n",
+      "1. Wiegand Format 26보다 작은 값에 대해서도 In으로 들어와야 한다."
+    ]
+  }
+}

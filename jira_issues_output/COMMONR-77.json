@@ -1,0 +1,228 @@
+{
+  "id": "COMMONR-77",
+  "content": [
+    [
+      1,
+      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > Serial : RS 485 변경, Baudrate 변경 > Apply",
+      "1. RS 485 Mode\n = Default(Default), Master, Slave\n\n2. Baudrate\n = 9600, 19200, 38400, 57600, 115200(Default)",
+      "1. 설정한 항목이 정상적으로 적용 되어야 한다.\n= Device / BioStar에서 확인"
+    ],
+    [
+      2,
+      "1. DEVICE > Device List > Device 선택 > Network > Serial : RS 485, Baud Rate 변경\n2. RS485 : Master, Baudrate : 115200 > Apply\n3. DEVICE > Device List > Device 선택(Default/Master) > Master 장치 마우스 우클릭 > Search Slave Device",
+      "1. Slave 장치 검색, 추가\n = Master -> Master로 설정된 장치가 연결된 경우",
+      "1. Search Slave Device 동작에 장치가 검색되지 않아야 한다."
+    ],
+    [
+      3,
+      "1. DEVICE > Device List > Device 선택 > Network > Serial : RS 485, Baud Rate 변경\n2. RS485 : Master, Baudrate : 115200 > Apply\n3. DEVICE > Device List > Device 선택(Master) > Master 장치 마우스 우클릭 > Search Slave Device",
+      "1. Slave 장치 검색, 추가\n= Master -> Default/Slave로 설정된 장치가 연결된 경우\n2. 장치 구성\n1) Master(Station)-Slave(Station(FS2/FL))\n2) Master(Blackfin)-Slave(Blackfin)\n3) Master(Station)-Slave(Blackfin)\n4) Master(Blackfin)-Slave(Station)",
+      "1. Search Slave Device 동작에 장치가 검색되어 추가 가능해야 한다.\n> RS-485 로그가 남는다.\n2. RS 아이콘이 Slave에만 표시되어야 한다.\n   : Master 미표시"
+    ],
+    [
+      4,
+      "1. DEVICE > Device List > Device 선택 > Network > Serial : RS 485, Baud Rate 변경\n2. Baudrate : Master 와 동일한 설정 > Apply\n3. DEVICE > Device List > Device 선택(Master) > Master 장치 마우스 우클릭 > Search Slave Device",
+      "1. Master, Slave의 Baudrate가 같은 경우\n = 9600 / 19200 / 38400 / 57600 / 115200\n2. 장치 구성\n1) Master(Station)-Slave(Station(FS2/FL))\n2) Master(Blackfin)-Slave(Blackfin)\n3) Master(Station)-Slave(Blackfin)\n4) Master(Blackfin)-Slave(Station)",
+      "1. Slave 장치가 검색되어 추가 가능해야 한다.\n> RS-485 로그가 남는다.\n> FS2/FL : 1개만, 기존 V2.x 제품 : 30개\n> 기존 V2.x 제품 : 31개 (FS2/FL 없는 경우) "
+    ],
+    [
+      5,
+      "1. DEVICE > Device List > Device 선택 > Network > Serial : RS 485, Baud Rate 변경\n2. Baudrate : Master 와 다른 설정 > Apply\n3. DEVICE > Device List > Device 선택(Master) > Master 장치 마우스 우클릭 > Search Slave Device",
+      "1. Master, Slave 의 Baudrate 가 다른 경우",
+      "1. Slave 장치가 검색되지 않아야 한다."
+    ],
+    [
+      6,
+      "<Master-Slave Cat5e 케이블 이용해 1.2km 연결>\n1. Device> A 장치 선택> Mater 설정\n2. (B 장치 Ethernet연결)Device> B 장치 선택> Slave or Default로 설정\n3. A, B 장치의 Baudrate을 동일한 값으로 설정\n4. A, B 장치의 Termination 설정\n5. BioStar에서 B 장치 삭제\n6. A 장치의 Slave 장치 검색",
+      "Baudrate\n> 115200 / 57600 / 38400 / 19200 / 9600\n\nTermination\n> Disable / Enable",
+      "1. Master-Slave간 거리가 근거리(100~200m)일 때, 종단저항 사용안함으로 설정했을 경우 검색/추가되어야 한다.\n2. Master-Slave간 거리가 1.2Km일 때, 종단저항 사용으로 설정했을 경우 검색/추가 되어야 한다."
+    ],
+    [
+      7,
+      "<RS485 구성된 상태 & 사용자 및 인증에 필요한 Config가 설정된 상태>\n1. Device> Search Device> Master 장치 추가\n2. Master 장치에서 Slave 장치 추가\n3. Slave 장치에서 인증시도",
+      "",
+      "1. Matching Timeout / Auth Timeout / Msg Timeout / Scan Timeout 은 Slave 장치의 설정값을 따라간다.\n2. 인증성공/실패관련 Display 및 Sound는 Slave 장치에서 표시되어야 한다.\n3. 관련로그는 Master 장치에 남아야 한다."
+    ],
+    [
+      8,
+      "<RS485 구성된 상태 & 사용자 및 인증에 필요한 Config가 설정된 상태>\n1. Device> Search Device> Master 장치 추가\n2. Master 장치에서 Slave 장치 추가\n3. Slave 장치 > Auth Timeout : 20s 설정\n4. Slave 장치에서 인증시도 > Timeout 발생까지 계속 카드 입력",
+      "Auth Timeout : 20s 설정\n",
+      "1. Auth Timeout까지 계속 카드를 입력하여 Scan Face / Card 팝업이 발생하지 않고, 계속 인증 성공/실패가 표시된다. \n> Slave 장치의 경우는, Master가 AuthTimeout 값을 가지고 있기 때문에,20초로 설정된 AuthTimeout 값을 알지 못함\n: Auth Timeout(Max) 값 + 10s 뒤에 resume동작"
+    ],
+    [
+      9,
+      "1. DEVICE > Device List > Device 선택 > Network > Serial : RS 485, Baud Rate 변경\n2. RS485 : Master, Baudrate : 115200 > Apply\n3. DEVICE > Device List > Device 선택(Master) > Master 장치 마우스 우클릭 > Search Slave Device",
+      "1. Master, Slave의 Baudrate가 같은 경우\n = 9600 / 19200 / 38400 / 57600 / 115200\n2. 장치 구성\n1) Master(Station)-Slave(Station(FS2/FL))\n2) Master(Blackfin)-Slave(Blackfin)\n3) Master(Station)-Slave(Blackfin)\n4) Master(Blackfin)-Slave(Station)",
+      "1. Slave 장치가 검색되어 추가 가능해야 한다.\n> RS-485 로그가 남는다.\n> FS2/FL : 1개만, 기존 V2.x 제품 : 30개\n> 기존 V2.x 제품 : 31개 (FS2/FL 없는 경우) "
+    ],
+    [
+      10,
+      "<Master-Slave 장치 연결 및 BioStar에서 추가된 상태>\n1. 장치메뉴 진입 시도",
+      "",
+      "Slave 장치의 RS485 연결이 되어있는 경우 메뉴진입이 불가능해야 한다."
+    ],
+    [
+      11,
+      "<Master-Slave 장치 연결 및 BioStar에서 추가된 상태>\n1. BioStar에서 Slave 장치 제거\n2. Slave 장치의 LED를 통해 Disconnected 확인(FS2 LED 없음. 타 인터페이스를 통해 미연결 확인)\n3. 장치메뉴 진입 시도",
+      "",
+      "Slave 장치의 RS485 연결이 끊어진 경우 메뉴진입이 가능하다.\n> Display&Sound, Device, Network(Communication) 메뉴만 활성화된다."
+    ],
+    [
+      12,
+      "<Master 장치 연결>\n1. Device > Search Device > Search Device List\n2. Master 선택 > 추가",
+      "1. Master 장치를 처음 추가 하는 경우\n> Direct Mode, Server Mode\n> Master RS 485 Key : Default 상태\nRS 485 Primary Key, Secondary Key, Master Comm Key, Slave Comm Key\n< > Master RS 485 Key : Default 아닌 상태\nRS 485 Primary Key, Secondary Key, Master Comm Key, Slave Comm Key",
+      "1. Master 장치 추가 시 BioStar에 설정된 RS 485 Key(Primary, Secondary)로 갱신 된다.\n> Default / Default 아닌 값 -> BioStar에 설정된 RS 485 Key(Primary, Secondary)\n> Master/Slave Comm Key : Device가 가진 값"
+    ],
+    [
+      13,
+      "<Master-Slave 장치 연결>\n1. Device> A 장치 선택> Master 설정\n2. (B 장치 Ethernet연결)Device> B 장치 선택> Slave or Default로 설정\n3. A, B 장치의 Baudrate을 동일한 값으로 설정\n4. BioStar에서 B 장치 삭제\n5. A 장치의 Slave 장치 검색",
+      "1. RS 485 Type을 변경 하는 경우\nBaudrate\n> 115200 / 57600 / 38400 / 19200 / 9600\n",
+      "1. Master 설정 변경 시 RS 485 Key(Primary, Secondary)로 설정된다.\n2. Search Slave Device 동작에 장치가 검색되어 추가가 가능하며, 이 경우 Master로 부터 Primary Key가 Slave 장치에 전송되고, 정상적으로 통신이 된다.\n> Baudrate가 다른 경우 연결이 안된다."
+    ],
+    [
+      14,
+      "1. DEVICE > Device List > Device 선택 > Network > Serial : RS 485, Baud Rate 변경\n2. A Master장치에 연결된 B Slave 장치를 C Master 장치에 연결\n3. DEVICE > Device List > Device 선택(Master) > Master 장치 마우스 우클릭 > Search Slave Device",
+      "1. Slave 장치 검색, 추가\n > Master -> Slave로 설정된 장치가 연결된 경우\n > Slave Comm Key : Master의 Primary Key, Secondary Key와 다른 경우\n > 기연결된 Slave 존재(Master와 키가 동일한 경우)",
+      "1. Search Slave Device 동작에 장치가 검색이 되나 추가시 정상적으로 통신이 안된다.\n> Master의 Primary, Secondary를 Slave의 Comm Key와 동일하게 변경하거나, Slave를 초기화 한 후 검색하여 추가시 정상적으로 Master의 Primary Key로 변경되어 통신이 된다.\n2. Search Slave Device 동작에 장치가 검색되어 추가가 가능하며, 이 경우 Master로 부터 Primary Key가 Slave 장치에 전송되고, 정상적으로 통신이 된다.\n> 키 변경 발생 시 현재 연결된 Slave의 키도 모두 변경되고, 새로 추가 되는 Slave는 변경된 키로 통신하게 된다."
+    ],
+    [
+      15,
+      "1. DEVICE > Device List > Device 선택 > Network > Serial : RS 485, Baud Rate 변경\n2. RS485 : Master, Baudrate : 115200 > Apply\n3. DEVICE > Device List > Device 선택(Default/Master) > Master 장치 마우스 우클릭 > Search Slave Device",
+      "1. Slave 장치 검색, 추가\n > Master -> Default/Slave로 설정된 장치가 연결된 경우\n > Slave Comm Key : Default/Master의 Primary Key, Secondary Key와 동일 \n > Master Power Off/On",
+      "1. Search Slave Device 동작에 장치가 검색되어 추가 가능해야 한다.\n> RS-485 로그가 남는다.\n2. Slave Key 변경 후 Master가 재부팅 된 경우에도 다음에 Slave 장치 연결 시 RS 485 Key가 변경되어야 한다."
+    ],
+    [
+      16,
+      "<Master-Slave 장치 연결 및 BioStar에서 추가된 상태>\n1. RS 485 암호키 변경 시도",
+      "1. 암호화 방식 : AES 128\n2. 입력 범위 : 16자(Hex 32자) \n",
+      "1. Master로 부터 RS 485 키가 Slave 장치에 전송되고, 정상적으로 통신이 된다.\n> Master의 Primary Key가 Slave의 Comm Key로 업데이트\n2. Master의 Primary Key, Secondary Key 중 하나만 변경이 된 경우에도 정상적으로 연결이 되어야 한다.\n> Master의 Primary Key가 Slave의 Comm Key로 업데이트"
+    ],
+    [
+      17,
+      "<Master-Slave 장치 연결>\n1. Master(A)/Slave(A) - BioStar A 연결\n2. Master(B)/Slave(B) - BioStar B 연결\n3. Master(A)/Slave(B) || Master(B)/Slave(A) : Master와 Slave를 교체 연결 시도\n4. BioStar A/BioStar B\n > 각 A 서버 Secondary : B 서버 Communication Key 입력\n > 각 B 서버 Secondary : A 서버 Communication Key 입력",
+      "1. BioStar A/BioStar B\n > 각 A 서버 Secondary : B 서버 RS 485 Slave Comm Key 입력\n > 각 B 서버 Secondary : A 서버 RS 485 Slave Comm Key 입력",
+      "1. Master로 부터 RS 485 키가 Slave 장치에 전송되고, 정상적으로 통신이 된다.\n> Slave 장치 : Primary Key, Secondary Key, Master Comm Key 변경 없음, Slave Comm Key(Master Primary Key) 변경\n> Master 장치 : Secondary Key 변경\n2. Primary Key, Secondary Key 중 하나만 변경이 된 경우에도 정상적으로 연결이 된다.\n> Slave 장치 : 각 A, B 서버 모두에 설정된 RS 485 Key가 적용된 Master Primary Key로 Slave Comm Key가 변경된다."
+    ],
+    [
+      18,
+      "<OSDP 사양을 만족하는 타사제품(ACU) 하위로\n Suprema 단말기가 Slave로 연결된 상태>\n\n1. Slave로 연결된 장치에 인증시도",
+      "인증모드\n> 카드인증모드\n> 지문(or 얼굴)인증모드\n> ID인증모드",
+      "1. 인증결과를 정상적으로 출력해주어야 한다.\n> 개발 결과물을 받아 해당 내용으로 결과대체"
+    ],
+    [
+      19,
+      "1. Master-Slave간 Primary Key로 통신되도록 설정\n2. Master Reboot> Master 부팅중인 상태에서 Slave Reboot\n3. Master/Slave 부팅완료 후 연결상태 확인",
+      "Slave Device\n> Entry / Station / IO Module",
+      "1. Primary Key로 통신이 정상적으로 이루어져야 한다."
+    ],
+    [
+      20,
+      "1. 얼굴지원제품들로 Master-Slave 구성 가능한 환경 확인\n",
+      "Master: 얼굴지원제품\n> FS2, FL, FSF2, BS3, W3\n\n물리적으로 연결된 Slave 장치\n> 얼굴지원제품 다수\n> IO Device(SIO2/DM20/OM120)\n",
+      "1. 얼굴장치들로 Master - Slave 구성시 하기와 같이 연결할 수 있다.\n\n> FS2 - FS2(or FL) + SIO2 + DM20\n> FL - FL(or FS2) + SIO2 + DM20\n> FSF2 - FSF2 + SIO2 + DM20\n> BS3 - BS3(or W3) + SIO2 + DM20\n> W3 - W3(or BS3) + SIO2 + DM20 \n\n※ 위의 구성에서 IO Device의 OM120은 Slave로 미지원 한다."
+    ],
+    [
+      21,
+      "1. 얼굴지원제품이 Master일 때 Slave 구성가능한 환경 확인\n",
+      "Master: 얼굴지원제품\n> FS2, FL, FSF2, BS3, W3\n\n물리적으로 연결된 Slave 장치\n> 얼굴지원제품 외\n> IO Device(SIO2/DM20/OM120)\n",
+      "1. 얼굴제품이 Slave로 연결이 되어 있지 않다면 총 31ea의 Slave 장치를 연결할 수 있다.\n[Slave : 지문인식장치 + 카드인식장치 + IO Device]"
+    ],
+    [
+      22,
+      "1. 얼굴미지원제품이 Master일 때 Slave 로 얼굴지원 제품이 연결된 환경 확인",
+      "Master: 얼굴미지원제품\n> 지문인식장치, 카드인식장치\n\n물리적으로 연결된 Slave 장치\n> 얼굴지원제품",
+      "1. 얼굴미지원제품이 Master인 경우 얼굴지원제품을 Slave로 추가할 수 없다.\n> Slave 검색시 바이오스타에서 경고팝업 발생시킴(P2-F2 구조로 확인)"
+    ],
+    [
+      23,
+      "1. Master에서 Slave 검색해 모든장치 추가시도",
+      "Master: 얼굴지원제품\n> FS2, FL, FSF2, BS3, W3\n\n물리적으로 연결된 Slave 장치\n> 얼굴지원제품 + 얼굴미지원제품 ",
+      "1. 추가가 되지 않는다. \n> 바이오스타 UI상 경고팝업 발생."
+    ],
+    [
+      24,
+      "1. Master에서 Slave 검색해 모든장치 추가시도",
+      "Master: 얼굴미지원제품\n\n물리적으로 연결된 Slave 장치\n> 얼굴지원제품 + 얼굴미지원제품 ",
+      "1. 추가가 되지 않는다. \n> 바이오스타 UI상 경고팝업 발생."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-77",
+    "description": "",
+    "test_step": [
+      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > Serial : RS 485 변경, Baudrate 변경 > Apply",
+      "1. DEVICE > Device List > Device 선택 > Network > Serial : RS 485, Baud Rate 변경\n2. RS485 : Master, Baudrate : 115200 > Apply\n3. DEVICE > Device List > Device 선택(Default/Master) > Master 장치 마우스 우클릭 > Search Slave Device",
+      "1. DEVICE > Device List > Device 선택 > Network > Serial : RS 485, Baud Rate 변경\n2. RS485 : Master, Baudrate : 115200 > Apply\n3. DEVICE > Device List > Device 선택(Master) > Master 장치 마우스 우클릭 > Search Slave Device",
+      "1. DEVICE > Device List > Device 선택 > Network > Serial : RS 485, Baud Rate 변경\n2. Baudrate : Master 와 동일한 설정 > Apply\n3. DEVICE > Device List > Device 선택(Master) > Master 장치 마우스 우클릭 > Search Slave Device",
+      "1. DEVICE > Device List > Device 선택 > Network > Serial : RS 485, Baud Rate 변경\n2. Baudrate : Master 와 다른 설정 > Apply\n3. DEVICE > Device List > Device 선택(Master) > Master 장치 마우스 우클릭 > Search Slave Device",
+      "<Master-Slave Cat5e 케이블 이용해 1.2km 연결>\n1. Device> A 장치 선택> Mater 설정\n2. (B 장치 Ethernet연결)Device> B 장치 선택> Slave or Default로 설정\n3. A, B 장치의 Baudrate을 동일한 값으로 설정\n4. A, B 장치의 Termination 설정\n5. BioStar에서 B 장치 삭제\n6. A 장치의 Slave 장치 검색",
+      "<RS485 구성된 상태 & 사용자 및 인증에 필요한 Config가 설정된 상태>\n1. Device> Search Device> Master 장치 추가\n2. Master 장치에서 Slave 장치 추가\n3. Slave 장치에서 인증시도",
+      "<RS485 구성된 상태 & 사용자 및 인증에 필요한 Config가 설정된 상태>\n1. Device> Search Device> Master 장치 추가\n2. Master 장치에서 Slave 장치 추가\n3. Slave 장치 > Auth Timeout : 20s 설정\n4. Slave 장치에서 인증시도 > Timeout 발생까지 계속 카드 입력",
+      "1. DEVICE > Device List > Device 선택 > Network > Serial : RS 485, Baud Rate 변경\n2. RS485 : Master, Baudrate : 115200 > Apply\n3. DEVICE > Device List > Device 선택(Master) > Master 장치 마우스 우클릭 > Search Slave Device",
+      "<Master-Slave 장치 연결 및 BioStar에서 추가된 상태>\n1. 장치메뉴 진입 시도",
+      "<Master-Slave 장치 연결 및 BioStar에서 추가된 상태>\n1. BioStar에서 Slave 장치 제거\n2. Slave 장치의 LED를 통해 Disconnected 확인(FS2 LED 없음. 타 인터페이스를 통해 미연결 확인)\n3. 장치메뉴 진입 시도",
+      "<Master 장치 연결>\n1. Device > Search Device > Search Device List\n2. Master 선택 > 추가",
+      "<Master-Slave 장치 연결>\n1. Device> A 장치 선택> Master 설정\n2. (B 장치 Ethernet연결)Device> B 장치 선택> Slave or Default로 설정\n3. A, B 장치의 Baudrate을 동일한 값으로 설정\n4. BioStar에서 B 장치 삭제\n5. A 장치의 Slave 장치 검색",
+      "1. DEVICE > Device List > Device 선택 > Network > Serial : RS 485, Baud Rate 변경\n2. A Master장치에 연결된 B Slave 장치를 C Master 장치에 연결\n3. DEVICE > Device List > Device 선택(Master) > Master 장치 마우스 우클릭 > Search Slave Device",
+      "1. DEVICE > Device List > Device 선택 > Network > Serial : RS 485, Baud Rate 변경\n2. RS485 : Master, Baudrate : 115200 > Apply\n3. DEVICE > Device List > Device 선택(Default/Master) > Master 장치 마우스 우클릭 > Search Slave Device",
+      "<Master-Slave 장치 연결 및 BioStar에서 추가된 상태>\n1. RS 485 암호키 변경 시도",
+      "<Master-Slave 장치 연결>\n1. Master(A)/Slave(A) - BioStar A 연결\n2. Master(B)/Slave(B) - BioStar B 연결\n3. Master(A)/Slave(B) || Master(B)/Slave(A) : Master와 Slave를 교체 연결 시도\n4. BioStar A/BioStar B\n > 각 A 서버 Secondary : B 서버 Communication Key 입력\n > 각 B 서버 Secondary : A 서버 Communication Key 입력",
+      "<OSDP 사양을 만족하는 타사제품(ACU) 하위로\n Suprema 단말기가 Slave로 연결된 상태>\n\n1. Slave로 연결된 장치에 인증시도",
+      "1. Master-Slave간 Primary Key로 통신되도록 설정\n2. Master Reboot> Master 부팅중인 상태에서 Slave Reboot\n3. Master/Slave 부팅완료 후 연결상태 확인",
+      "1. 얼굴지원제품들로 Master-Slave 구성 가능한 환경 확인\n",
+      "1. 얼굴지원제품이 Master일 때 Slave 구성가능한 환경 확인\n",
+      "1. 얼굴미지원제품이 Master일 때 Slave 로 얼굴지원 제품이 연결된 환경 확인",
+      "1. Master에서 Slave 검색해 모든장치 추가시도",
+      "1. Master에서 Slave 검색해 모든장치 추가시도"
+    ],
+    "data": [
+      "1. RS 485 Mode\n = Default(Default), Master, Slave\n\n2. Baudrate\n = 9600, 19200, 38400, 57600, 115200(Default)",
+      "1. Slave 장치 검색, 추가\n = Master -> Master로 설정된 장치가 연결된 경우",
+      "1. Slave 장치 검색, 추가\n= Master -> Default/Slave로 설정된 장치가 연결된 경우\n2. 장치 구성\n1) Master(Station)-Slave(Station(FS2/FL))\n2) Master(Blackfin)-Slave(Blackfin)\n3) Master(Station)-Slave(Blackfin)\n4) Master(Blackfin)-Slave(Station)",
+      "1. Master, Slave의 Baudrate가 같은 경우\n = 9600 / 19200 / 38400 / 57600 / 115200\n2. 장치 구성\n1) Master(Station)-Slave(Station(FS2/FL))\n2) Master(Blackfin)-Slave(Blackfin)\n3) Master(Station)-Slave(Blackfin)\n4) Master(Blackfin)-Slave(Station)",
+      "1. Master, Slave 의 Baudrate 가 다른 경우",
+      "Baudrate\n> 115200 / 57600 / 38400 / 19200 / 9600\n\nTermination\n> Disable / Enable",
+      "Auth Timeout : 20s 설정\n",
+      "1. Master, Slave의 Baudrate가 같은 경우\n = 9600 / 19200 / 38400 / 57600 / 115200\n2. 장치 구성\n1) Master(Station)-Slave(Station(FS2/FL))\n2) Master(Blackfin)-Slave(Blackfin)\n3) Master(Station)-Slave(Blackfin)\n4) Master(Blackfin)-Slave(Station)",
+      "1. Master 장치를 처음 추가 하는 경우\n> Direct Mode, Server Mode\n> Master RS 485 Key : Default 상태\nRS 485 Primary Key, Secondary Key, Master Comm Key, Slave Comm Key\n< > Master RS 485 Key : Default 아닌 상태\nRS 485 Primary Key, Secondary Key, Master Comm Key, Slave Comm Key",
+      "1. RS 485 Type을 변경 하는 경우\nBaudrate\n> 115200 / 57600 / 38400 / 19200 / 9600\n",
+      "1. Slave 장치 검색, 추가\n > Master -> Slave로 설정된 장치가 연결된 경우\n > Slave Comm Key : Master의 Primary Key, Secondary Key와 다른 경우\n > 기연결된 Slave 존재(Master와 키가 동일한 경우)",
+      "1. Slave 장치 검색, 추가\n > Master -> Default/Slave로 설정된 장치가 연결된 경우\n > Slave Comm Key : Default/Master의 Primary Key, Secondary Key와 동일 \n > Master Power Off/On",
+      "1. 암호화 방식 : AES 128\n2. 입력 범위 : 16자(Hex 32자) \n",
+      "1. BioStar A/BioStar B\n > 각 A 서버 Secondary : B 서버 RS 485 Slave Comm Key 입력\n > 각 B 서버 Secondary : A 서버 RS 485 Slave Comm Key 입력",
+      "인증모드\n> 카드인증모드\n> 지문(or 얼굴)인증모드\n> ID인증모드",
+      "Slave Device\n> Entry / Station / IO Module",
+      "Master: 얼굴지원제품\n> FS2, FL, FSF2, BS3, W3\n\n물리적으로 연결된 Slave 장치\n> 얼굴지원제품 다수\n> IO Device(SIO2/DM20/OM120)\n",
+      "Master: 얼굴지원제품\n> FS2, FL, FSF2, BS3, W3\n\n물리적으로 연결된 Slave 장치\n> 얼굴지원제품 외\n> IO Device(SIO2/DM20/OM120)\n",
+      "Master: 얼굴미지원제품\n> 지문인식장치, 카드인식장치\n\n물리적으로 연결된 Slave 장치\n> 얼굴지원제품",
+      "Master: 얼굴지원제품\n> FS2, FL, FSF2, BS3, W3\n\n물리적으로 연결된 Slave 장치\n> 얼굴지원제품 + 얼굴미지원제품 ",
+      "Master: 얼굴미지원제품\n\n물리적으로 연결된 Slave 장치\n> 얼굴지원제품 + 얼굴미지원제품 "
+    ],
+    "expected_result": [
+      "1. 설정한 항목이 정상적으로 적용 되어야 한다.\n= Device / BioStar에서 확인",
+      "1. Search Slave Device 동작에 장치가 검색되지 않아야 한다.",
+      "1. Search Slave Device 동작에 장치가 검색되어 추가 가능해야 한다.\n> RS-485 로그가 남는다.\n2. RS 아이콘이 Slave에만 표시되어야 한다.\n   : Master 미표시",
+      "1. Slave 장치가 검색되어 추가 가능해야 한다.\n> RS-485 로그가 남는다.\n> FS2/FL : 1개만, 기존 V2.x 제품 : 30개\n> 기존 V2.x 제품 : 31개 (FS2/FL 없는 경우) ",
+      "1. Slave 장치가 검색되지 않아야 한다.",
+      "1. Master-Slave간 거리가 근거리(100~200m)일 때, 종단저항 사용안함으로 설정했을 경우 검색/추가되어야 한다.\n2. Master-Slave간 거리가 1.2Km일 때, 종단저항 사용으로 설정했을 경우 검색/추가 되어야 한다.",
+      "1. Matching Timeout / Auth Timeout / Msg Timeout / Scan Timeout 은 Slave 장치의 설정값을 따라간다.\n2. 인증성공/실패관련 Display 및 Sound는 Slave 장치에서 표시되어야 한다.\n3. 관련로그는 Master 장치에 남아야 한다.",
+      "1. Auth Timeout까지 계속 카드를 입력하여 Scan Face / Card 팝업이 발생하지 않고, 계속 인증 성공/실패가 표시된다. \n> Slave 장치의 경우는, Master가 AuthTimeout 값을 가지고 있기 때문에,20초로 설정된 AuthTimeout 값을 알지 못함\n: Auth Timeout(Max) 값 + 10s 뒤에 resume동작",
+      "1. Slave 장치가 검색되어 추가 가능해야 한다.\n> RS-485 로그가 남는다.\n> FS2/FL : 1개만, 기존 V2.x 제품 : 30개\n> 기존 V2.x 제품 : 31개 (FS2/FL 없는 경우) ",
+      "Slave 장치의 RS485 연결이 되어있는 경우 메뉴진입이 불가능해야 한다.",
+      "Slave 장치의 RS485 연결이 끊어진 경우 메뉴진입이 가능하다.\n> Display&Sound, Device, Network(Communication) 메뉴만 활성화된다.",
+      "1. Master 장치 추가 시 BioStar에 설정된 RS 485 Key(Primary, Secondary)로 갱신 된다.\n> Default / Default 아닌 값 -> BioStar에 설정된 RS 485 Key(Primary, Secondary)\n> Master/Slave Comm Key : Device가 가진 값",
+      "1. Master 설정 변경 시 RS 485 Key(Primary, Secondary)로 설정된다.\n2. Search Slave Device 동작에 장치가 검색되어 추가가 가능하며, 이 경우 Master로 부터 Primary Key가 Slave 장치에 전송되고, 정상적으로 통신이 된다.\n> Baudrate가 다른 경우 연결이 안된다.",
+      "1. Search Slave Device 동작에 장치가 검색이 되나 추가시 정상적으로 통신이 안된다.\n> Master의 Primary, Secondary를 Slave의 Comm Key와 동일하게 변경하거나, Slave를 초기화 한 후 검색하여 추가시 정상적으로 Master의 Primary Key로 변경되어 통신이 된다.\n2. Search Slave Device 동작에 장치가 검색되어 추가가 가능하며, 이 경우 Master로 부터 Primary Key가 Slave 장치에 전송되고, 정상적으로 통신이 된다.\n> 키 변경 발생 시 현재 연결된 Slave의 키도 모두 변경되고, 새로 추가 되는 Slave는 변경된 키로 통신하게 된다.",
+      "1. Search Slave Device 동작에 장치가 검색되어 추가 가능해야 한다.\n> RS-485 로그가 남는다.\n2. Slave Key 변경 후 Master가 재부팅 된 경우에도 다음에 Slave 장치 연결 시 RS 485 Key가 변경되어야 한다.",
+      "1. Master로 부터 RS 485 키가 Slave 장치에 전송되고, 정상적으로 통신이 된다.\n> Master의 Primary Key가 Slave의 Comm Key로 업데이트\n2. Master의 Primary Key, Secondary Key 중 하나만 변경이 된 경우에도 정상적으로 연결이 되어야 한다.\n> Master의 Primary Key가 Slave의 Comm Key로 업데이트",
+      "1. Master로 부터 RS 485 키가 Slave 장치에 전송되고, 정상적으로 통신이 된다.\n> Slave 장치 : Primary Key, Secondary Key, Master Comm Key 변경 없음, Slave Comm Key(Master Primary Key) 변경\n> Master 장치 : Secondary Key 변경\n2. Primary Key, Secondary Key 중 하나만 변경이 된 경우에도 정상적으로 연결이 된다.\n> Slave 장치 : 각 A, B 서버 모두에 설정된 RS 485 Key가 적용된 Master Primary Key로 Slave Comm Key가 변경된다.",
+      "1. 인증결과를 정상적으로 출력해주어야 한다.\n> 개발 결과물을 받아 해당 내용으로 결과대체",
+      "1. Primary Key로 통신이 정상적으로 이루어져야 한다.",
+      "1. 얼굴장치들로 Master - Slave 구성시 하기와 같이 연결할 수 있다.\n\n> FS2 - FS2(or FL) + SIO2 + DM20\n> FL - FL(or FS2) + SIO2 + DM20\n> FSF2 - FSF2 + SIO2 + DM20\n> BS3 - BS3(or W3) + SIO2 + DM20\n> W3 - W3(or BS3) + SIO2 + DM20 \n\n※ 위의 구성에서 IO Device의 OM120은 Slave로 미지원 한다.",
+      "1. 얼굴제품이 Slave로 연결이 되어 있지 않다면 총 31ea의 Slave 장치를 연결할 수 있다.\n[Slave : 지문인식장치 + 카드인식장치 + IO Device]",
+      "1. 얼굴미지원제품이 Master인 경우 얼굴지원제품을 Slave로 추가할 수 없다.\n> Slave 검색시 바이오스타에서 경고팝업 발생시킴(P2-F2 구조로 확인)",
+      "1. 추가가 되지 않는다. \n> 바이오스타 UI상 경고팝업 발생.",
+      "1. 추가가 되지 않는다. \n> 바이오스타 UI상 경고팝업 발생."
+    ]
+  }
+}

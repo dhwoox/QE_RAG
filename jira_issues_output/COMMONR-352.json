@@ -1,0 +1,241 @@
+{
+  "id": "COMMONR-352",
+  "content": [
+    [
+      1,
+      "1. BioStar 2 > 장치 상세 > Authentication > 공통  확인\n2. 메뉴>authentication>Auth Result Display Otion> 메뉴 확인",
+      "RS485: Master/Slave/Default",
+      "1. 바이오스타/장치에 해당 메뉴가 표시된다.\n >User ID Display/User Name Display"
+    ],
+    [
+      2,
+      "1. 장치 초기화 > default 값 확인\n2. BioStar 2 > 장치 상세 > Authentication > 공통  확인\n3. 메뉴>authentication>Auth Result Display Otion> 메뉴 확인",
+      ">Restore to default: All\n>without Network\n>factory default",
+      "1. 바이오스타/장치에 해당 메뉴가 표시된다.\n>User ID Display: Display All/User Name Display: Display All"
+    ],
+    [
+      3,
+      "1. 장치 상세페이지 진입 후 > Auth Mode > User ID Display: Display All 선택",
+      "User ID Type: Number/Alphanumeric",
+      "1.설정한 정보가 장치에 표시된다.\n>메뉴>authentication>Auth Result Display Otion> User ID Display: Display All"
+    ],
+    [
+      4,
+      "2. 장치에 FACE/CARD/ID 인증",
+      "User ID Type: Number/Alphanumeric",
+      "1. 장치에 인증 결과가 표시된다.\n> 저장된 정보와 동일하게 ID를 있는 그대로 모두 표시\n> 인증성공 / 실패 동일한 결과 화면 표시"
+    ],
+    [
+      5,
+      "1. 장치 상세페이지 진입 후 > Auth Mode > User ID Display: Mask All but First Letter 선택",
+      "User ID Type: Number/Alphanumeric",
+      "1. 설정한 정보가 장치에 표시된다.\n>메뉴>authentication>Auth Result Display Otion> User ID Display: Mask All but First Letter"
+    ],
+    [
+      6,
+      "2. 장치에 FACE/CARD/ID 인증",
+      "User ID Type: Number/Alphanumeric",
+      "1. 장치에 인증 결과가 표시된다.\n> ID 를 첫 문자만 표시하고 그 이하는 모두 Asterisk* 처리한다.\n예시) ABC1234 >>> A****** \n> 인증성공 / 실패 동일한 결과 화면 표시"
+    ],
+    [
+      7,
+      "1. 장치 상세페이지 진입 후 > Auth Mode > User ID Display: Hide All 선택",
+      "User ID Type: Number/Alphanumeric",
+      "1.설정한 정보가 장치에 표시된다.\n>메뉴>authentication>Auth Result Display Otion> User ID Display: Hide All"
+    ],
+    [
+      8,
+      "2. 장치에 FACE/CARD/ID 인증",
+      "User ID Type: Number/Alphanumeric",
+      "1. 장치에 인증 결과가 표시된다.\n> ID 를 빈칸으로 처리하여 아예 표시하지 않는다.\n예시) ABC1234 >>>  \n> 인증성공 / 실패 동일한 결과 화면 표시"
+    ],
+    [
+      9,
+      "1. 장치 상세페이지 진입 후 > Auth Mode > User Name Display: Display All 선택",
+      "",
+      "1.설정한 정보가 장치에 표시된다.\n>현재와 동일하게 Name을 있는 그대로 모두 표시"
+    ],
+    [
+      10,
+      "2. 장치에 FACE/CARD/ID 인증",
+      "",
+      "1. 장치에 인증 결과가 표시된다.\n>현재와 동일하게 Name 을 있는 그대로 모두 표시한다."
+    ],
+    [
+      11,
+      "1. 장치 상세페이지 진입 후 > Auth Mode > User Name Display: Mask All bt First Letter 선택",
+      "",
+      "1.설정한 정보가 장치에 표시된다.\n>메뉴>authentication>Auth Result Display Otion> User Name Display: Mask All bt First Letter"
+    ],
+    [
+      12,
+      "2. 장치에 FACE/CARD/ID 인증",
+      "",
+      "1. 장치에 인증 결과가 표시된다.\n> Name 을 어절 단위로 가장 첫 문자만 표시하고 그 이하는 모두 Asterisk* 처리\n예시) Robert John Downey Jr. >>> R***** J*** D***** J** \n> 인증성공 / 실패 동일한 결과 화면 표시 "
+    ],
+    [
+      13,
+      "[name에 공백과 특수문자가 있는 경우]\n1. 장치 상세페이지 진입 후 > Auth Mode > User Name Display: Mask All bt First Letter 선택\n",
+      "user name: 한% 국 민_,^사용자",
+      "1. 한* 국 민******으로 표시된다. "
+    ],
+    [
+      14,
+      "1. 장치 상세페이지 진입 후 > Auth Mode > User Name Display: Hide All 선택",
+      "",
+      "1. 설정한 정보가 장치에 표시된다.\n>메뉴>authentication>Auth Result Display Otion> User Name Display: Hide All"
+    ],
+    [
+      15,
+      "2. 장치에 FACE/CARD/ID 인증",
+      "",
+      "1. 장치에 인증 결과가 표시된다.\n> Name 을 빈칸으로 처리하여 아예 표시하지 않음\n예시) Robert John Downey Jr. >>>  \n> 인증성공 / 실패 동일한 결과 화면 표시"
+    ],
+    [
+      16,
+      "[다중 인증 설정]\n1. Auth mode > 다중 인증 설정(ex. ID+PIN)\n2. User Name/ID Display 설정\n3. 다중 credential 적용된 사용자 생성\n4. 해당 사용자 인증 시도",
+      "1. User Name/ID Display : Hide\n2. User Name/ID Display  : First Letter Only",
+      "1. 두번째 인증 이후에 표시되는 사용자 ID, Name이 설정된 방식으로 숨겨져야 한다.\n2. 두번째 인증 이후에 인증 실패시 표시되는 사용자 ID, Name이 설정된 방식으로 숨겨져야 한다.\n* 두번째 인증 이후에 표시되는 사양은 N2, BS2a만 적용됨"
+    ],
+    [
+      17,
+      "[미지원 버전에서의 FW업그레이드]\n1. 해당 기능 미지원 버전> 지원 버전으로 FW 업그레이드 ",
+      "미지원 버전\nBS3: FW V1.3.0 이전 버전\nXS2: FW V1.3.1 이전 버전",
+      "1. 바이오스타/장치에 해당 메뉴가 표시된다.\n>User ID Display/User Name Display: Display ALL"
+    ],
+    [
+      18,
+      "[Batch Edit]\n1. 두개 이상의 장치 선택> Batch Edit 선택\n2. User ID Display 옵션 선택 후 APPLY",
+      "두 장치 모두 지원 FW",
+      "1. 변경된 정보로 저장 및 동작한다. "
+    ],
+    [
+      19,
+      "[Batch Edit]\n1. 두개 이상의 장치 선택> Batch Edit 선택\n2. User NAME Display 옵션 선택 후 APPLY",
+      "두 장치 모두 지원FW",
+      "1. 변경된 정보로 저장 및 동작한다. "
+    ],
+    [
+      20,
+      "[Batch Edit]\n1. 두개 이상의 장치 선택> Batch Edit 선택\n",
+      "지원 FW/미지원 FW 혼합 선택",
+      "1. 지원 FW에 변경된 정보로 저장 및 동작한다. "
+    ],
+    [
+      21,
+      "[해당 기능 지원 바이오스타에서 미지원FW 등록]\n1. BioStar 2 > 장치 상세 > Authentication > 공통  확인",
+      "미지원 버전\nBS3: FW V1.3.0 이전 버전\nXS2: FW V1.3.1 이전 버전\nF2: FW V2.2.0 이전 버전",
+      "1. 바이오스타에 해당 메뉴가 미표시된다.\n >User ID Display/User Name Display"
+    ],
+    [
+      22,
+      "[미지원 Biostar에서 지원FW 등록]\n1.메뉴>authentication>Auth Result Display Otion> User ID Display: DIsplay All/Mask All but First/Hide All",
+      "미지원 biostar 2.9.5\n",
+      "1. 저장한 대로 표시 및 동작한다. \n"
+    ],
+    [
+      23,
+      "[미지원 Biostar에서 지원FW 등록]\n1.메뉴>authentication>Auth Result Display Otion> User NAME Display: DIsplay All/Mask All but First/Hide All",
+      "미지원 biostar 2.9.5\n",
+      "1. 저장한 대로 표시 및 동작한다. \n"
+    ],
+    [
+      24,
+      "[JOB CODE]\n1. 장치 상세페이지 진입 후 > Auth Mode > User Name/ID Display: 임의의 옵션 설정\n2. 해당 사용자 인증",
+      "JOB코드 설정\n: DeviceList.exe / Auto Tool 에서 사용자 생성 후 확인",
+      "1. JOB코드와 설정한 옵션에 맞는 인증 결과가 출력된다. "
+    ],
+    [
+      25,
+      "[T&A]\n1. 장치 상세페이지 진입 후 > Auth Mode > User Name/ID Display: 임의의 옵션 설정\n2. T&A 선택\n3. 장치에 사용자 인증",
+      "",
+      "1. T&A 정보가 설정한 옵션에 맞게 인증 결과가 출력된다.  "
+    ],
+    [
+      26,
+      "[JOB CODE와 T&A]\n1. 장치 상세페이지 진입 후 > Auth Mode > User Name/ID Display: 임의의 옵션 설정\n2. T&A 선택 && JOB 코드 설정된 사용자로 인증",
+      "",
+      "1. T&A 와 JOB코드가 설정한 옵션에 맞는 인증 결과가 출력된다. "
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-352",
+    "description": "",
+    "test_step": [
+      "1. BioStar 2 > 장치 상세 > Authentication > 공통  확인\n2. 메뉴>authentication>Auth Result Display Otion> 메뉴 확인",
+      "1. 장치 초기화 > default 값 확인\n2. BioStar 2 > 장치 상세 > Authentication > 공통  확인\n3. 메뉴>authentication>Auth Result Display Otion> 메뉴 확인",
+      "1. 장치 상세페이지 진입 후 > Auth Mode > User ID Display: Display All 선택",
+      "2. 장치에 FACE/CARD/ID 인증",
+      "1. 장치 상세페이지 진입 후 > Auth Mode > User ID Display: Mask All but First Letter 선택",
+      "2. 장치에 FACE/CARD/ID 인증",
+      "1. 장치 상세페이지 진입 후 > Auth Mode > User ID Display: Hide All 선택",
+      "2. 장치에 FACE/CARD/ID 인증",
+      "1. 장치 상세페이지 진입 후 > Auth Mode > User Name Display: Display All 선택",
+      "2. 장치에 FACE/CARD/ID 인증",
+      "1. 장치 상세페이지 진입 후 > Auth Mode > User Name Display: Mask All bt First Letter 선택",
+      "2. 장치에 FACE/CARD/ID 인증",
+      "[name에 공백과 특수문자가 있는 경우]\n1. 장치 상세페이지 진입 후 > Auth Mode > User Name Display: Mask All bt First Letter 선택\n",
+      "1. 장치 상세페이지 진입 후 > Auth Mode > User Name Display: Hide All 선택",
+      "2. 장치에 FACE/CARD/ID 인증",
+      "[다중 인증 설정]\n1. Auth mode > 다중 인증 설정(ex. ID+PIN)\n2. User Name/ID Display 설정\n3. 다중 credential 적용된 사용자 생성\n4. 해당 사용자 인증 시도",
+      "[미지원 버전에서의 FW업그레이드]\n1. 해당 기능 미지원 버전> 지원 버전으로 FW 업그레이드 ",
+      "[Batch Edit]\n1. 두개 이상의 장치 선택> Batch Edit 선택\n2. User ID Display 옵션 선택 후 APPLY",
+      "[Batch Edit]\n1. 두개 이상의 장치 선택> Batch Edit 선택\n2. User NAME Display 옵션 선택 후 APPLY",
+      "[Batch Edit]\n1. 두개 이상의 장치 선택> Batch Edit 선택\n",
+      "[해당 기능 지원 바이오스타에서 미지원FW 등록]\n1. BioStar 2 > 장치 상세 > Authentication > 공통  확인",
+      "[미지원 Biostar에서 지원FW 등록]\n1.메뉴>authentication>Auth Result Display Otion> User ID Display: DIsplay All/Mask All but First/Hide All",
+      "[미지원 Biostar에서 지원FW 등록]\n1.메뉴>authentication>Auth Result Display Otion> User NAME Display: DIsplay All/Mask All but First/Hide All",
+      "[JOB CODE]\n1. 장치 상세페이지 진입 후 > Auth Mode > User Name/ID Display: 임의의 옵션 설정\n2. 해당 사용자 인증",
+      "[T&A]\n1. 장치 상세페이지 진입 후 > Auth Mode > User Name/ID Display: 임의의 옵션 설정\n2. T&A 선택\n3. 장치에 사용자 인증",
+      "[JOB CODE와 T&A]\n1. 장치 상세페이지 진입 후 > Auth Mode > User Name/ID Display: 임의의 옵션 설정\n2. T&A 선택 && JOB 코드 설정된 사용자로 인증"
+    ],
+    "data": [
+      "RS485: Master/Slave/Default",
+      ">Restore to default: All\n>without Network\n>factory default",
+      "User ID Type: Number/Alphanumeric",
+      "User ID Type: Number/Alphanumeric",
+      "User ID Type: Number/Alphanumeric",
+      "User ID Type: Number/Alphanumeric",
+      "User ID Type: Number/Alphanumeric",
+      "User ID Type: Number/Alphanumeric",
+      "user name: 한% 국 민_,^사용자",
+      "1. User Name/ID Display : Hide\n2. User Name/ID Display  : First Letter Only",
+      "미지원 버전\nBS3: FW V1.3.0 이전 버전\nXS2: FW V1.3.1 이전 버전",
+      "두 장치 모두 지원 FW",
+      "두 장치 모두 지원FW",
+      "지원 FW/미지원 FW 혼합 선택",
+      "미지원 버전\nBS3: FW V1.3.0 이전 버전\nXS2: FW V1.3.1 이전 버전\nF2: FW V2.2.0 이전 버전",
+      "미지원 biostar 2.9.5\n",
+      "미지원 biostar 2.9.5\n",
+      "JOB코드 설정\n: DeviceList.exe / Auto Tool 에서 사용자 생성 후 확인"
+    ],
+    "expected_result": [
+      "1. 바이오스타/장치에 해당 메뉴가 표시된다.\n >User ID Display/User Name Display",
+      "1. 바이오스타/장치에 해당 메뉴가 표시된다.\n>User ID Display: Display All/User Name Display: Display All",
+      "1.설정한 정보가 장치에 표시된다.\n>메뉴>authentication>Auth Result Display Otion> User ID Display: Display All",
+      "1. 장치에 인증 결과가 표시된다.\n> 저장된 정보와 동일하게 ID를 있는 그대로 모두 표시\n> 인증성공 / 실패 동일한 결과 화면 표시",
+      "1. 설정한 정보가 장치에 표시된다.\n>메뉴>authentication>Auth Result Display Otion> User ID Display: Mask All but First Letter",
+      "1. 장치에 인증 결과가 표시된다.\n> ID 를 첫 문자만 표시하고 그 이하는 모두 Asterisk* 처리한다.\n예시) ABC1234 >>> A****** \n> 인증성공 / 실패 동일한 결과 화면 표시",
+      "1.설정한 정보가 장치에 표시된다.\n>메뉴>authentication>Auth Result Display Otion> User ID Display: Hide All",
+      "1. 장치에 인증 결과가 표시된다.\n> ID 를 빈칸으로 처리하여 아예 표시하지 않는다.\n예시) ABC1234 >>>  \n> 인증성공 / 실패 동일한 결과 화면 표시",
+      "1.설정한 정보가 장치에 표시된다.\n>현재와 동일하게 Name을 있는 그대로 모두 표시",
+      "1. 장치에 인증 결과가 표시된다.\n>현재와 동일하게 Name 을 있는 그대로 모두 표시한다.",
+      "1.설정한 정보가 장치에 표시된다.\n>메뉴>authentication>Auth Result Display Otion> User Name Display: Mask All bt First Letter",
+      "1. 장치에 인증 결과가 표시된다.\n> Name 을 어절 단위로 가장 첫 문자만 표시하고 그 이하는 모두 Asterisk* 처리\n예시) Robert John Downey Jr. >>> R***** J*** D***** J** \n> 인증성공 / 실패 동일한 결과 화면 표시 ",
+      "1. 한* 국 민******으로 표시된다. ",
+      "1. 설정한 정보가 장치에 표시된다.\n>메뉴>authentication>Auth Result Display Otion> User Name Display: Hide All",
+      "1. 장치에 인증 결과가 표시된다.\n> Name 을 빈칸으로 처리하여 아예 표시하지 않음\n예시) Robert John Downey Jr. >>>  \n> 인증성공 / 실패 동일한 결과 화면 표시",
+      "1. 두번째 인증 이후에 표시되는 사용자 ID, Name이 설정된 방식으로 숨겨져야 한다.\n2. 두번째 인증 이후에 인증 실패시 표시되는 사용자 ID, Name이 설정된 방식으로 숨겨져야 한다.\n* 두번째 인증 이후에 표시되는 사양은 N2, BS2a만 적용됨",
+      "1. 바이오스타/장치에 해당 메뉴가 표시된다.\n>User ID Display/User Name Display: Display ALL",
+      "1. 변경된 정보로 저장 및 동작한다. ",
+      "1. 변경된 정보로 저장 및 동작한다. ",
+      "1. 지원 FW에 변경된 정보로 저장 및 동작한다. ",
+      "1. 바이오스타에 해당 메뉴가 미표시된다.\n >User ID Display/User Name Display",
+      "1. 저장한 대로 표시 및 동작한다. \n",
+      "1. 저장한 대로 표시 및 동작한다. \n",
+      "1. JOB코드와 설정한 옵션에 맞는 인증 결과가 출력된다. ",
+      "1. T&A 정보가 설정한 옵션에 맞게 인증 결과가 출력된다.  ",
+      "1. T&A 와 JOB코드가 설정한 옵션에 맞는 인증 결과가 출력된다. "
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "COMMONR-288",
+  "content": [
+    [
+      1,
+      "1. Image Log - Enable\n2. 알록달록 화려한 색의 이미지를 카메라 앞에 둔 상태에서 카드인증 반복진행   ",
+      "Device Hashkey Management\n> Not Use 상태",
+      "1. 인증결과에 대한 이미지 로그가 저장된다.\n2. 장치가 Reboot되지 않아야 한다."
+    ],
+    [
+      2,
+      "1. Image Log - Enable\n2. 알록달록 화려한 색의 이미지를 카메라 앞에 둔 상태에서 카드인증 반복진행",
+      "Device Hashkey Management\n> Use 상태",
+      "1. 인증결과에 대한 이미지 로그가 저장된다.\n2. 장치가 Reboot되지 않아야 한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-288",
+    "description": "",
+    "test_step": [
+      "1. Image Log - Enable\n2. 알록달록 화려한 색의 이미지를 카메라 앞에 둔 상태에서 카드인증 반복진행   ",
+      "1. Image Log - Enable\n2. 알록달록 화려한 색의 이미지를 카메라 앞에 둔 상태에서 카드인증 반복진행"
+    ],
+    "data": [
+      "Device Hashkey Management\n> Not Use 상태",
+      "Device Hashkey Management\n> Use 상태"
+    ],
+    "expected_result": [
+      "1. 인증결과에 대한 이미지 로그가 저장된다.\n2. 장치가 Reboot되지 않아야 한다.",
+      "1. 인증결과에 대한 이미지 로그가 저장된다.\n2. 장치가 Reboot되지 않아야 한다."
+    ]
+  }
+}

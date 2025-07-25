@@ -1,0 +1,42 @@
+{
+  "id": "COMMONR-70",
+  "content": [
+    [
+      1,
+      "1. 전원 On/Off 동작 반복",
+      "= 100회",
+      "1. 전원 ON 시 정상적으로 부팅되어야 한다.\n2. 로그에 저장된 시간이 정상적으로 표시되어야 한다.\n3. 분실되는 로그없이 표시되어야 한다.\n4. Power ON 후 지문센서가 ON 되어야 한다. (지문센서는 장치 설정값에 따라 동작한다.)\n> 점멸되지 않아야 한다.\n> 지문 센서에 지문 입력시 센서가 켜지고, 입력에 대한 동작이 되어야 한다.\n5. Power ON 후 고정 IP 상태를 유지 해야 한다.\n> DHCP로 변경 되면 안된다."
+    ],
+    [
+      2,
+      "1. Restart/Power On에 의한 Secure IC Access",
+      "Fingerprint Sensor: Always\nSecure IC Access Fail 동작",
+      "1. Restart/Power Off->On에 의해 부팅이 된다.\n2. Secure IC Access Fail이 발생하는 지 확인 한다.\n> 카드(X), 지문(X), ID(X)\n> 통신 가능\n\n향후 수정 \n> 메뉴 진입 여부, LDE 색 \n"
+    ],
+    [
+      3,
+      "1. 전원 On/Off에 의한 IR Camera 동작유무 확인",
+      "대상장치\n> IR Camera 지원장치",
+      "1. 전원ON시 정상적으로 부팅된다.\n2. IR Camera가 정상동작되고 얼굴 검출 및 그에 대한 인증결과를 출력한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-70",
+    "description": "",
+    "test_step": [
+      "1. 전원 On/Off 동작 반복",
+      "1. Restart/Power On에 의한 Secure IC Access",
+      "1. 전원 On/Off에 의한 IR Camera 동작유무 확인"
+    ],
+    "data": [
+      "= 100회",
+      "Fingerprint Sensor: Always\nSecure IC Access Fail 동작",
+      "대상장치\n> IR Camera 지원장치"
+    ],
+    "expected_result": [
+      "1. 전원 ON 시 정상적으로 부팅되어야 한다.\n2. 로그에 저장된 시간이 정상적으로 표시되어야 한다.\n3. 분실되는 로그없이 표시되어야 한다.\n4. Power ON 후 지문센서가 ON 되어야 한다. (지문센서는 장치 설정값에 따라 동작한다.)\n> 점멸되지 않아야 한다.\n> 지문 센서에 지문 입력시 센서가 켜지고, 입력에 대한 동작이 되어야 한다.\n5. Power ON 후 고정 IP 상태를 유지 해야 한다.\n> DHCP로 변경 되면 안된다.",
+      "1. Restart/Power Off->On에 의해 부팅이 된다.\n2. Secure IC Access Fail이 발생하는 지 확인 한다.\n> 카드(X), 지문(X), ID(X)\n> 통신 가능\n\n향후 수정 \n> 메뉴 진입 여부, LDE 색 \n",
+      "1. 전원ON시 정상적으로 부팅된다.\n2. IR Camera가 정상동작되고 얼굴 검출 및 그에 대한 인증결과를 출력한다."
+    ]
+  }
+}

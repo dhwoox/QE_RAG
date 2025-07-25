@@ -1,5 +1,30 @@
 ■ 이슈 키: COMMONR-177
 ■ 제목: 통신 보안 - SSL/TLS
+■ 설명: SSL/TLS 적용으로 통신 보안성 높임
+> 기존 프로토콜을 유지한 채로 통신 연결부분만 SSL로 대체
+> 대상 제품 : FS2, BS2, A2, L2, W2, P2, N2, CS40
+                     ※ XPASS/XPS2는 사양변경으로 통신보안 미지원
+
+장치 통신 보안 사용 유무(SSL 모드)
+> Root 인증서 존재 유무로 판단(TLS Handshake : End User 인증서 서버로 부터 전달)
+ 루트 인증서 저장  : 통신 보안 모드 사용
+ 루트 인증서 삭제  : 통신 보안 모드 미사용, 공장 초기화
+
+Root 인증서 관리
+> 인증서 삭제 : 공장 초기화, 통신 보안 모드 미사용
+
+공장 초기화
+> UI 있는 장치 : Root 인증서 저장 상태에서 관리자 메뉴에 '공장 초기화' 표시 
+> UI 없는 장치 : 네트워크 초기화 버튼으로 3회 입력되면 마지막 입력을 기다리는 모드로 진입하고 입력이 5초 이내에 발생 시 
+   : 입력 대기 상태(LED) : Yellow LED 점멸
+> '사용자', '로그', '설정' 모두 삭제
+   : UI 있는 장치 : 확인창 출력
+   : UI 없는 장치 : Device Viewer로 확인
+
+Re-play 공격에 대한 방어
+> Packet Sequence 검사 : TCP Packet Only
+> Request Sender : TCP 연결 직후의 Time Tick을 초기값으로 Random한 Sequence 값을 만들고, 해당 값을 Packet의 Sequence로 전송
+> Request Receiver : TCP 연결 직후 처음으로 수신한 Sequence를 저장하고, 이를 기준으로 다음 Packet의 Sequence 검사
 ============================================================
 
 ■ 테스트 스텝

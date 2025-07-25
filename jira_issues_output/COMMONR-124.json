@@ -1,0 +1,150 @@
+{
+  "id": "COMMONR-124",
+  "content": [
+    [
+      1,
+      "1. Door > Add Door > Alarm > Held Open Time을 설정",
+      "[BioStar]\n1. 기본값 : 3초 → 10초 (V2.8.14 ~)\n2. 설정범위\n > 1s, 3s, 5s, 10s, 15s, 30s, 1m, 3m, 5m, 10m,15m\n\n*출입문 센서까지 적용해야 Held Open Time 활성화 됨",
+      "1. Held Open Duration을 입력 범위만큼 설정할 수 있다."
+    ],
+    [
+      2,
+      "1. Door > Add Door > Alarm > Held Open Time 설정\n2. Exit Button 접지 후 Held Open Time으로 설정한 시간보다 길게 Door Sensor 접지",
+      "[BioStar]\nOpen Time / Held Open Time\n1. 기본값 : 3초 → 10초 (V2.8.14 ~)\n2. 설정범위\n > 1s, 3s, 5s, 10s, 15s, 30s, 1m, 3m, 5m,10m,15m",
+      "1. Held Open Time 에 설정한 시간 이후 장시간 문열림이 발생한다.\n> 강제 문열림 발생 이후 접지 상태 유지 시 장시간 문열림 발생함"
+    ],
+    [
+      3,
+      "1. Door > Add Door > Alarm : Held Open의 Action을 Output으로 설정\n2. Exit Button 접지 후 Held Open Time으로 설정한 시간보다 길게 Door Sensor 접지\n3. Alarm 동작확인",
+      "[BioStar]\n# Action Device\n1. Master 장치 선택\n2. Slave 장치 선택\n3. SIO2 선택\n4. DM20 선택",
+      "1. Output 설정한 장치에서 Signal이 발생한다.\n\n=> Monitoring에서 Clear Alarm Or 상태복귀시 해제"
+    ],
+    [
+      4,
+      "1. Door > Add Door > Alarm : Held Open의 Action> Alert Sound로 설정\n2. 장치선택 후 Alert Sound Type 설정\n3. Exit Button 접지 후 Held Open Time으로 설정한 시간보다 길게 Door Sensor 접지\n4. Alarm 동작확인",
+      "[BioStar]\n# 지원 장치 - A2, L2, BS2, FS2, N2, FL\n# Action Device\n1. Master 장치 선택\n2. Slave 장치 선택",
+      "1. 설정한 장치에서 Alert Sound Alarm이 된다.\n\n> 복수 동작 설정 시 하나의 장치는 하나의 장치 사운드만 설정 가능\n"
+    ],
+    [
+      5,
+      "1. Door > Add Door > Alarm : Held Open의 Action> Alert Sound로 설정\n2. 장치선택 후 Buzzer Volume 설정\n3. Exit Button 접지 후 Held Open Time으로 설정한 시간보다 길게 Door Sensor 접지\n4. Alarm 동작확인",
+      "[BioStar]\n# 지원 장치 - Entry, W2\n# Action Device\n1. Master 장치 선택\n2. Slave 장치 선택",
+      "1. 설정한 장치에서 Buzzer Sound Alarm이 된다.\n\n> 복수 동작 설정 시 하나의 장치는 하나의 장치 사운드만 설정 가능"
+    ],
+    [
+      6,
+      "1. Door > Add Door > Alarm > Held Open : Sound Off Option 설정\n2. Exit Button & Door Sensor 접지해 Held Open Alarm 발생\n3. Door Sensor 접지해제\n4. Alarm 동작확인",
+      "[BioStar]\n# Option \n> 문 닫힐 때",
+      "1. 설정한 값이 저장된다.\n2. 발생중이던 알람이 문이 닫히면서 멈춘다."
+    ],
+    [
+      7,
+      "1. Door > Add Door > Alarm : Held Open의 Action> Alert Sound로 설정\n2. 장치선택 후 Alert Sound Type 설정",
+      "[BioStar]\n# 지원 장치 - A2, L2, BS2, FS2, N2, FL\n# Sound Type\n1) Alarm 1\n2) Alarm 2",
+      "1. 설정한 값이 저장된다."
+    ],
+    [
+      8,
+      "1. Door > Add Door > Alarm : Held Open의 Action> Alert Sound로 설정\n2. 장치선택 후 Buzzer Volume 설정",
+      "[BioStar]\n# 지원 장치 - Entry, W2 \n# Buzzer Volume\n1) Off/Low/Medium/High",
+      "1. 설정한 값이 저장된다."
+    ],
+    [
+      9,
+      "1. Door > Add Door > Alarm : Forced Open의 Action을 Output으로 설정\n2. Door Sensor 접지\n3. Alarm 동작확인",
+      "[BioStar]\n# Action Device\n1. Master 장치 선택\n2. Slave 장치 선택\n3. IO Device 선택",
+      "1. Output 설정한 장치에서 Signal이 발생한다.\n\n=> Monitoring에서 Clear Alarm Or 상태복귀시 해제"
+    ],
+    [
+      10,
+      "1. Door > Add Door > Alarm : Forced Open의 Action을 Alert Sound로 설정\n2. Door Sensor 접지\n3. Alarm 동작확인",
+      "[BioStar]\n# 지원 장치 - A2, L2, BS2, FS2, N2, FL\n# Action Device\n1. Master 장치 선택\n2. Slave 장치 선택",
+      "1. 설정한 장치에서 Alert Sound Alarm이 된다.\n\n> 복수 동작 설정 시 하나의 장치는 하나의 장치 사운드만 설정 가능\n"
+    ],
+    [
+      11,
+      "1. Door > Add Door > Alarm : Forced Open의 Action> Alert Sound로 설정\n2. Door Sensor 접지\n3. Alarm 동작확인",
+      "[BioStar]\n# 지원 장치 - Entry, W2\n# Action Device\n1. Master 장치 선택\n2. Slave 장치 선택",
+      "1. 설정한 장치에서 Buzzer Sound Alarm이 된다.\n\n> 복수 동작 설정 시 하나의 장치는 하나의 장치 사운드만 설정 가능"
+    ],
+    [
+      12,
+      "1. Door > Add Door > Alarm > Forced Open : Sound Off Option 설정\n2. Door Sensor 접지해 Forced Open Alarm 발생\n3. Door Sensor 접지해제\n4. Alarm 동작확인",
+      "[BioStar]\n# Option \n> 문 닫힐 때",
+      "1. 설정한 값이 저장된다.\n2. 발생중이던 알람이 문이 닫히면서 멈춘다."
+    ],
+    [
+      13,
+      "1. Door > Add Door > Alarm : Forced Open의 Action> Alert Sound로 설정\n2. 장치선택 후 Alert Sound Type 설정",
+      "[BioStar]\n# 지원 장치 - A2, L2, BS2, FS2, N2, FL\n# Sound Type\n1) Alarm 1\n2) Alarm 2",
+      "1. 사운드 종류를 선택할 수 있다.\n"
+    ],
+    [
+      14,
+      "1. Door > Add Door > Alarm : Forced Open의 Action> Alert Sound로 설정\n2. 장치선택 후 Buzzer Volume 설정",
+      "[BioStar]\n# 지원 장치 - Entry, W2 \n# Buzzer Volume\n1) Off/Low/Medium/High",
+      "1. 볼륨을 선택할 수 있다."
+    ],
+    [
+      15,
+      "<Master-Slave(Device/IO Device) 연결>\n1. Door> Add Door> Door 구성\n2. Alarm : Held Open & Forced Open 설정\n3. Door Sensor 및 Exit Button 이용해 문열림 발생",
+      "[BioStar]\n# Door Configuration Relay, Exit Button, Door Sensor\n> SIO2\n> DM20\n> Device",
+      "1. Unlock 후 Open 되어야 한다.\n2. Held Open 시간만큼 문열림이 발생되면 Held Open Alarm이 발생되어야 한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-124",
+    "description": "",
+    "test_step": [
+      "1. Door > Add Door > Alarm > Held Open Time을 설정",
+      "1. Door > Add Door > Alarm > Held Open Time 설정\n2. Exit Button 접지 후 Held Open Time으로 설정한 시간보다 길게 Door Sensor 접지",
+      "1. Door > Add Door > Alarm : Held Open의 Action을 Output으로 설정\n2. Exit Button 접지 후 Held Open Time으로 설정한 시간보다 길게 Door Sensor 접지\n3. Alarm 동작확인",
+      "1. Door > Add Door > Alarm : Held Open의 Action> Alert Sound로 설정\n2. 장치선택 후 Alert Sound Type 설정\n3. Exit Button 접지 후 Held Open Time으로 설정한 시간보다 길게 Door Sensor 접지\n4. Alarm 동작확인",
+      "1. Door > Add Door > Alarm : Held Open의 Action> Alert Sound로 설정\n2. 장치선택 후 Buzzer Volume 설정\n3. Exit Button 접지 후 Held Open Time으로 설정한 시간보다 길게 Door Sensor 접지\n4. Alarm 동작확인",
+      "1. Door > Add Door > Alarm > Held Open : Sound Off Option 설정\n2. Exit Button & Door Sensor 접지해 Held Open Alarm 발생\n3. Door Sensor 접지해제\n4. Alarm 동작확인",
+      "1. Door > Add Door > Alarm : Held Open의 Action> Alert Sound로 설정\n2. 장치선택 후 Alert Sound Type 설정",
+      "1. Door > Add Door > Alarm : Held Open의 Action> Alert Sound로 설정\n2. 장치선택 후 Buzzer Volume 설정",
+      "1. Door > Add Door > Alarm : Forced Open의 Action을 Output으로 설정\n2. Door Sensor 접지\n3. Alarm 동작확인",
+      "1. Door > Add Door > Alarm : Forced Open의 Action을 Alert Sound로 설정\n2. Door Sensor 접지\n3. Alarm 동작확인",
+      "1. Door > Add Door > Alarm : Forced Open의 Action> Alert Sound로 설정\n2. Door Sensor 접지\n3. Alarm 동작확인",
+      "1. Door > Add Door > Alarm > Forced Open : Sound Off Option 설정\n2. Door Sensor 접지해 Forced Open Alarm 발생\n3. Door Sensor 접지해제\n4. Alarm 동작확인",
+      "1. Door > Add Door > Alarm : Forced Open의 Action> Alert Sound로 설정\n2. 장치선택 후 Alert Sound Type 설정",
+      "1. Door > Add Door > Alarm : Forced Open의 Action> Alert Sound로 설정\n2. 장치선택 후 Buzzer Volume 설정",
+      "<Master-Slave(Device/IO Device) 연결>\n1. Door> Add Door> Door 구성\n2. Alarm : Held Open & Forced Open 설정\n3. Door Sensor 및 Exit Button 이용해 문열림 발생"
+    ],
+    "data": [
+      "[BioStar]\n1. 기본값 : 3초 → 10초 (V2.8.14 ~)\n2. 설정범위\n > 1s, 3s, 5s, 10s, 15s, 30s, 1m, 3m, 5m, 10m,15m\n\n*출입문 센서까지 적용해야 Held Open Time 활성화 됨",
+      "[BioStar]\nOpen Time / Held Open Time\n1. 기본값 : 3초 → 10초 (V2.8.14 ~)\n2. 설정범위\n > 1s, 3s, 5s, 10s, 15s, 30s, 1m, 3m, 5m,10m,15m",
+      "[BioStar]\n# Action Device\n1. Master 장치 선택\n2. Slave 장치 선택\n3. SIO2 선택\n4. DM20 선택",
+      "[BioStar]\n# 지원 장치 - A2, L2, BS2, FS2, N2, FL\n# Action Device\n1. Master 장치 선택\n2. Slave 장치 선택",
+      "[BioStar]\n# 지원 장치 - Entry, W2\n# Action Device\n1. Master 장치 선택\n2. Slave 장치 선택",
+      "[BioStar]\n# Option \n> 문 닫힐 때",
+      "[BioStar]\n# 지원 장치 - A2, L2, BS2, FS2, N2, FL\n# Sound Type\n1) Alarm 1\n2) Alarm 2",
+      "[BioStar]\n# 지원 장치 - Entry, W2 \n# Buzzer Volume\n1) Off/Low/Medium/High",
+      "[BioStar]\n# Action Device\n1. Master 장치 선택\n2. Slave 장치 선택\n3. IO Device 선택",
+      "[BioStar]\n# 지원 장치 - A2, L2, BS2, FS2, N2, FL\n# Action Device\n1. Master 장치 선택\n2. Slave 장치 선택",
+      "[BioStar]\n# 지원 장치 - Entry, W2\n# Action Device\n1. Master 장치 선택\n2. Slave 장치 선택",
+      "[BioStar]\n# Option \n> 문 닫힐 때",
+      "[BioStar]\n# 지원 장치 - A2, L2, BS2, FS2, N2, FL\n# Sound Type\n1) Alarm 1\n2) Alarm 2",
+      "[BioStar]\n# 지원 장치 - Entry, W2 \n# Buzzer Volume\n1) Off/Low/Medium/High",
+      "[BioStar]\n# Door Configuration Relay, Exit Button, Door Sensor\n> SIO2\n> DM20\n> Device"
+    ],
+    "expected_result": [
+      "1. Held Open Duration을 입력 범위만큼 설정할 수 있다.",
+      "1. Held Open Time 에 설정한 시간 이후 장시간 문열림이 발생한다.\n> 강제 문열림 발생 이후 접지 상태 유지 시 장시간 문열림 발생함",
+      "1. Output 설정한 장치에서 Signal이 발생한다.\n\n=> Monitoring에서 Clear Alarm Or 상태복귀시 해제",
+      "1. 설정한 장치에서 Alert Sound Alarm이 된다.\n\n> 복수 동작 설정 시 하나의 장치는 하나의 장치 사운드만 설정 가능\n",
+      "1. 설정한 장치에서 Buzzer Sound Alarm이 된다.\n\n> 복수 동작 설정 시 하나의 장치는 하나의 장치 사운드만 설정 가능",
+      "1. 설정한 값이 저장된다.\n2. 발생중이던 알람이 문이 닫히면서 멈춘다.",
+      "1. 설정한 값이 저장된다.",
+      "1. 설정한 값이 저장된다.",
+      "1. Output 설정한 장치에서 Signal이 발생한다.\n\n=> Monitoring에서 Clear Alarm Or 상태복귀시 해제",
+      "1. 설정한 장치에서 Alert Sound Alarm이 된다.\n\n> 복수 동작 설정 시 하나의 장치는 하나의 장치 사운드만 설정 가능\n",
+      "1. 설정한 장치에서 Buzzer Sound Alarm이 된다.\n\n> 복수 동작 설정 시 하나의 장치는 하나의 장치 사운드만 설정 가능",
+      "1. 설정한 값이 저장된다.\n2. 발생중이던 알람이 문이 닫히면서 멈춘다.",
+      "1. 사운드 종류를 선택할 수 있다.\n",
+      "1. 볼륨을 선택할 수 있다.",
+      "1. Unlock 후 Open 되어야 한다.\n2. Held Open 시간만큼 문열림이 발생되면 Held Open Alarm이 발생되어야 한다."
+    ]
+  }
+}

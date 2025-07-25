@@ -1,0 +1,164 @@
+{
+  "id": "COMMONR-375",
+  "content": [
+    [
+      1,
+      "[BSX 전 바이오스타] \n1. 모니터링> 출입문 상태\n2. 출입문 선택> Manual Lock\n3. 출입문에 출입권한이 있는 사용자로 인증시도",
+      "Door(Door 에 Master 포함) \n> RS485 구성\n\n인증\n> 출입문으로 설정된 모든 리더",
+      "1. 인증실패가 된다.\n2. UI상 출력 메세지\n> 국문: 잠금\n> 영문: Locked\n3. 출력되는 이벤트\n> 국문: 출입거부(잠금)\n> 영문: Access denied(Locked)"
+    ],
+    [
+      2,
+      "[BSX 전 바이오스타]\n1. 모니터링> 출입문 상태\n2. 출입문 선택> Manual Lock\n3. 출입문에 출입권한이 있는 사용자로 인증시도",
+      "Door(Door 에 Master 포함) \n> Wiegand Reader 구성\n\n인증\n> 출입문으로 설정된 모든 리더",
+      "1. 인증실패가 된다.\n2. UI상 출력 메세지\n> 국문: 잠금\n> 영문: Locked\n3. 출력되는 이벤트\n> 국문: 출입거부(잠금)\n> 영문: Access denied(Locked)"
+    ],
+    [
+      3,
+      "[BSX 전 바이오스타]\n1. 모니터링> 출입문 상태\n2. 출입문 선택> Manual Lock\n3. 출입문에 출입권한이 있는 사용자로 인증시도",
+      "Door(Door 에 Master 포함) \n> Stand Alone 구성\n\n인증\n> 출입문으로 설정된 모든 리더",
+      "1. 인증실패가 된다.\n2. UI상 출력 메세지\n> 국문: 잠금\n> 영문: Locked\n3. 출력되는 이벤트\n> 국문: 출입거부(잠금)\n> 영문: Access denied(Locked)"
+    ],
+    [
+      4,
+      "[Schedule Lock 상태]\n1. 출입문에 출입권한이 있는 사용자로 인증시도",
+      "Schedule Lock Zone 설정\n> RS485 구성된 Door",
+      "1. 인증실패가 된다.\n2. UI상 출력 메세지\n> 국문: 인증 실패\n> 영문: Access Denied\n3. 출력되는 이벤트\n> 국문: 출입 거부(스케줄 잠금)\n> 영문: Access denied(Forced lock Schedule)"
+    ],
+    [
+      5,
+      "[Schedule Lock 상태]\n1. 출입문에 출입권한이 있는 사용자로 인증시도",
+      "Schedule Lock Zone 설정\n> Wiegand Reader로 구성으로 된 Door",
+      "1. 인증실패가 된다.\n2. UI상 출력 메세지\n> 국문: 인증 실패\n> 영문: Access Denied\n3. 출력되는 이벤트\n> 국문: 출입 거부(스케줄 잠금)\n> 영문: Access denied(Forced lock Schedule)"
+    ],
+    [
+      6,
+      "[Schedule Lock 상태]\n1. 출입문에 출입권한이 있는 사용자로 인증시도",
+      "Schedule Lock Zone 설정\n> Stand Alone으로 구성으로 된 Door",
+      "1. 인증실패가 된다.\n2. UI상 출력 메세지\n> 국문: 인증 실패\n> 영문: Access Denied\n3. 출력되는 이벤트\n> 국문: 출입 거부(스케줄 잠금)\n> 영문: Access denied(Forced lock Schedule)"
+    ],
+    [
+      7,
+      "[Schedule Lock 상태]\n1. BypassGroup에 설정된 사용자로 인증시도",
+      "Schedule Lock Zone 설정\n> RS485 구성된 Door\n> Wiegand Reader로 구성으로 된 Door\n> Stand Alone으로 구성으로 된 Door",
+      "1. 인증성공으로 동작되면서 출입이 가능하다."
+    ],
+    [
+      8,
+      "1. 출입문에 설정된 리더에 인증\n2. 모니터링> Manual Lock\n3. 다시 Step 1에서 인증한 리더에 동일 사용자로 재인증시도\n4. 이벤트 로그 및 동작확인",
+      "Door \n> APB 설정\n> 출입기반 APB시 센서사용옵션 Off",
+      "1. 인증실패가 된다\n2. UI상 출력 메세지\n> 국문: 잠금\n> 영문: Locked\n3. 출력되는 이벤트\n> 국문: 출입거부(잠금)\n> 영문: Access denied(Locked)\n"
+    ],
+    [
+      9,
+      "1. 출입문에 설정된 리더에 인증\n2. 모니터링> Manual Lock\n3. Step 1 수행 후 10분 이내에 동일 리더에 동일 사용자로 재인증시도\n4. 이벤트 로그 및 동작확인",
+      "Door \n> Timed APB 설정\n> Reset Time: 10min",
+      "1. 인증실패가 된다\n2. UI상 출력 메세지\n> 국문: 잠금\n> 영문: Locked\n3. 출력되는 이벤트\n> 국문: 출입거부(잠금)\n> 영문: Access denied(Locked)\n"
+    ],
+    [
+      10,
+      "1. 출입문에 설정된 리더에 인증\n2. 모니터링> Manual Lock\n3. 다시 Step 1에서 인증한 리더에 동일 사용자로 재인증시도\n4. 이벤트 로그 및 동작확인",
+      "APB Zone 설정\n> Local\n> 출입기반 APB시 센서사용옵션 Off",
+      "1. 인증실패가 된다\n2. UI상 출력 메세지\n> 국문: 잠금\n> 영문: Locked\n3. 출력되는 이벤트\n> 국문: 출입거부(잠금)\n> 영문: Access denied(Locked)\n"
+    ],
+    [
+      11,
+      "[BSX 연결된 상태] \n1. 모니터링> 출입문\n2. 출입문 선택> Lock: Timed\n3. 출입문에 출입권한이 있는 사용자로 인증시도",
+      "Timed\n> 300 설정",
+      "1. 인증실패가 된다\n2. UI상 출력 메세지\n> 국문: 잠금\n> 영문: Locked\n3. 출력되는 이벤트\n> 국문: 출입거부(잠금)\n> 영문: Access denied(Locked)\n"
+    ],
+    [
+      12,
+      "[BSX 연결된 상태] \n1. 모니터링> 출입문\n2. 출입문 선택> Lock: Permanent\n3. 출입문에 출입권한이 있는 사용자로 인증시도",
+      "",
+      "1. 인증실패가 된다\n2. UI상 출력 메세지\n> 국문: 잠금\n> 영문: Locked\n3. 출력되는 이벤트\n> 국문: 출입거부(잠금)\n> 영문: Access denied(Locked)\n"
+    ],
+    [
+      13,
+      "[장치 화면의 Door icon Lock 상태] \n1.  인증시도",
+      "대상제품\n: UI 지원 장치이면서 BDP-954 지원",
+      "1. 인증실패가 된다\n2. UI상 출력 메세지\n> 국문: 잠금\n> 영문: Locked\n3. 출력되는 이벤트\n> 국문: 출입거부(잠금)\n> 영문: Access denied(Locked)\n"
+    ],
+    [
+      14,
+      "[BSX 전 바이오스타]\n1. 모니터링> 출입문 상태\n2. 출입문 선택> Manual Lock\n3. 출입문에 출입권한이 있는 사용자로 인증시도",
+      "Door(Door 에 Master 미포함) \n> Stand Alone 구성\n> RS485 구성\n> Wiegand Reader 구성\n\n인증\n> 출입문으로 설정된 모든 리더",
+      "1. door에 설정된 기기만 locked, 인증 실패로 동작함"
+    ],
+    [
+      15,
+      "[Intelligent Slave]\n1. 모니터링 > 출입문 상태\n2. 출입문 선택 > Manual Lock\n3. 출입문에 출입권한이 있는 사용자로 인증시도",
+      "",
+      "1. 인증 성공으로 동작한다.\n2. UI 있는 장치에 Access Granted 표시됨\n※Intelligent Slave는 Reader처럼 동작하는 것이 기획 의도임"
+    ],
+    [
+      16,
+      "[Intrusion Alarm Zone]\n1. Intrusion Alarm Zone 생성\n2. Locked 상태에서 Arm / Disarm 진입",
+      "",
+      "1. Arm/Disarm으로 동작한다."
+    ],
+    [
+      17,
+      "[Intrusion Alarm Zone]\n1. Zone > Intrusion Alarm Zone 생성\n2. Arm Card 인증하여 Arm 상태 진입\n3. 출입문 선택 > Manual Lock\n4. 등록된 사용자 인증",
+      "",
+      "1. Auth Restriction이 아닌 Locked 팝업 출력\n※ 인증 시에 사용자 정보 > Door > Zone 순서로 보기 때문에 Zone의 팝업이 아닌 Door의 팝업 (Locked)가 출력된다"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-375",
+    "description": "",
+    "test_step": [
+      "[BSX 전 바이오스타] \n1. 모니터링> 출입문 상태\n2. 출입문 선택> Manual Lock\n3. 출입문에 출입권한이 있는 사용자로 인증시도",
+      "[BSX 전 바이오스타]\n1. 모니터링> 출입문 상태\n2. 출입문 선택> Manual Lock\n3. 출입문에 출입권한이 있는 사용자로 인증시도",
+      "[BSX 전 바이오스타]\n1. 모니터링> 출입문 상태\n2. 출입문 선택> Manual Lock\n3. 출입문에 출입권한이 있는 사용자로 인증시도",
+      "[Schedule Lock 상태]\n1. 출입문에 출입권한이 있는 사용자로 인증시도",
+      "[Schedule Lock 상태]\n1. 출입문에 출입권한이 있는 사용자로 인증시도",
+      "[Schedule Lock 상태]\n1. 출입문에 출입권한이 있는 사용자로 인증시도",
+      "[Schedule Lock 상태]\n1. BypassGroup에 설정된 사용자로 인증시도",
+      "1. 출입문에 설정된 리더에 인증\n2. 모니터링> Manual Lock\n3. 다시 Step 1에서 인증한 리더에 동일 사용자로 재인증시도\n4. 이벤트 로그 및 동작확인",
+      "1. 출입문에 설정된 리더에 인증\n2. 모니터링> Manual Lock\n3. Step 1 수행 후 10분 이내에 동일 리더에 동일 사용자로 재인증시도\n4. 이벤트 로그 및 동작확인",
+      "1. 출입문에 설정된 리더에 인증\n2. 모니터링> Manual Lock\n3. 다시 Step 1에서 인증한 리더에 동일 사용자로 재인증시도\n4. 이벤트 로그 및 동작확인",
+      "[BSX 연결된 상태] \n1. 모니터링> 출입문\n2. 출입문 선택> Lock: Timed\n3. 출입문에 출입권한이 있는 사용자로 인증시도",
+      "[BSX 연결된 상태] \n1. 모니터링> 출입문\n2. 출입문 선택> Lock: Permanent\n3. 출입문에 출입권한이 있는 사용자로 인증시도",
+      "[장치 화면의 Door icon Lock 상태] \n1.  인증시도",
+      "[BSX 전 바이오스타]\n1. 모니터링> 출입문 상태\n2. 출입문 선택> Manual Lock\n3. 출입문에 출입권한이 있는 사용자로 인증시도",
+      "[Intelligent Slave]\n1. 모니터링 > 출입문 상태\n2. 출입문 선택 > Manual Lock\n3. 출입문에 출입권한이 있는 사용자로 인증시도",
+      "[Intrusion Alarm Zone]\n1. Intrusion Alarm Zone 생성\n2. Locked 상태에서 Arm / Disarm 진입",
+      "[Intrusion Alarm Zone]\n1. Zone > Intrusion Alarm Zone 생성\n2. Arm Card 인증하여 Arm 상태 진입\n3. 출입문 선택 > Manual Lock\n4. 등록된 사용자 인증"
+    ],
+    "data": [
+      "Door(Door 에 Master 포함) \n> RS485 구성\n\n인증\n> 출입문으로 설정된 모든 리더",
+      "Door(Door 에 Master 포함) \n> Wiegand Reader 구성\n\n인증\n> 출입문으로 설정된 모든 리더",
+      "Door(Door 에 Master 포함) \n> Stand Alone 구성\n\n인증\n> 출입문으로 설정된 모든 리더",
+      "Schedule Lock Zone 설정\n> RS485 구성된 Door",
+      "Schedule Lock Zone 설정\n> Wiegand Reader로 구성으로 된 Door",
+      "Schedule Lock Zone 설정\n> Stand Alone으로 구성으로 된 Door",
+      "Schedule Lock Zone 설정\n> RS485 구성된 Door\n> Wiegand Reader로 구성으로 된 Door\n> Stand Alone으로 구성으로 된 Door",
+      "Door \n> APB 설정\n> 출입기반 APB시 센서사용옵션 Off",
+      "Door \n> Timed APB 설정\n> Reset Time: 10min",
+      "APB Zone 설정\n> Local\n> 출입기반 APB시 센서사용옵션 Off",
+      "Timed\n> 300 설정",
+      "대상제품\n: UI 지원 장치이면서 BDP-954 지원",
+      "Door(Door 에 Master 미포함) \n> Stand Alone 구성\n> RS485 구성\n> Wiegand Reader 구성\n\n인증\n> 출입문으로 설정된 모든 리더"
+    ],
+    "expected_result": [
+      "1. 인증실패가 된다.\n2. UI상 출력 메세지\n> 국문: 잠금\n> 영문: Locked\n3. 출력되는 이벤트\n> 국문: 출입거부(잠금)\n> 영문: Access denied(Locked)",
+      "1. 인증실패가 된다.\n2. UI상 출력 메세지\n> 국문: 잠금\n> 영문: Locked\n3. 출력되는 이벤트\n> 국문: 출입거부(잠금)\n> 영문: Access denied(Locked)",
+      "1. 인증실패가 된다.\n2. UI상 출력 메세지\n> 국문: 잠금\n> 영문: Locked\n3. 출력되는 이벤트\n> 국문: 출입거부(잠금)\n> 영문: Access denied(Locked)",
+      "1. 인증실패가 된다.\n2. UI상 출력 메세지\n> 국문: 인증 실패\n> 영문: Access Denied\n3. 출력되는 이벤트\n> 국문: 출입 거부(스케줄 잠금)\n> 영문: Access denied(Forced lock Schedule)",
+      "1. 인증실패가 된다.\n2. UI상 출력 메세지\n> 국문: 인증 실패\n> 영문: Access Denied\n3. 출력되는 이벤트\n> 국문: 출입 거부(스케줄 잠금)\n> 영문: Access denied(Forced lock Schedule)",
+      "1. 인증실패가 된다.\n2. UI상 출력 메세지\n> 국문: 인증 실패\n> 영문: Access Denied\n3. 출력되는 이벤트\n> 국문: 출입 거부(스케줄 잠금)\n> 영문: Access denied(Forced lock Schedule)",
+      "1. 인증성공으로 동작되면서 출입이 가능하다.",
+      "1. 인증실패가 된다\n2. UI상 출력 메세지\n> 국문: 잠금\n> 영문: Locked\n3. 출력되는 이벤트\n> 국문: 출입거부(잠금)\n> 영문: Access denied(Locked)\n",
+      "1. 인증실패가 된다\n2. UI상 출력 메세지\n> 국문: 잠금\n> 영문: Locked\n3. 출력되는 이벤트\n> 국문: 출입거부(잠금)\n> 영문: Access denied(Locked)\n",
+      "1. 인증실패가 된다\n2. UI상 출력 메세지\n> 국문: 잠금\n> 영문: Locked\n3. 출력되는 이벤트\n> 국문: 출입거부(잠금)\n> 영문: Access denied(Locked)\n",
+      "1. 인증실패가 된다\n2. UI상 출력 메세지\n> 국문: 잠금\n> 영문: Locked\n3. 출력되는 이벤트\n> 국문: 출입거부(잠금)\n> 영문: Access denied(Locked)\n",
+      "1. 인증실패가 된다\n2. UI상 출력 메세지\n> 국문: 잠금\n> 영문: Locked\n3. 출력되는 이벤트\n> 국문: 출입거부(잠금)\n> 영문: Access denied(Locked)\n",
+      "1. 인증실패가 된다\n2. UI상 출력 메세지\n> 국문: 잠금\n> 영문: Locked\n3. 출력되는 이벤트\n> 국문: 출입거부(잠금)\n> 영문: Access denied(Locked)\n",
+      "1. door에 설정된 기기만 locked, 인증 실패로 동작함",
+      "1. 인증 성공으로 동작한다.\n2. UI 있는 장치에 Access Granted 표시됨\n※Intelligent Slave는 Reader처럼 동작하는 것이 기획 의도임",
+      "1. Arm/Disarm으로 동작한다.",
+      "1. Auth Restriction이 아닌 Locked 팝업 출력\n※ 인증 시에 사용자 정보 > Door > Zone 순서로 보기 때문에 Zone의 팝업이 아닌 Door의 팝업 (Locked)가 출력된다"
+    ]
+  }
+}

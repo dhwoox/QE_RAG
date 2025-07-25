@@ -1,0 +1,130 @@
+{
+  "id": "COMMONR-221",
+  "content": [
+    [
+      1,
+      "1. Setting > Security > Advanced Security Settings > Secure Communication with Devcie > Not Use Or Use \n2. Device Hash Key Management > Not Use\n3. 지원 장치 추가 / 기연결 상태\n\n* 미지원 장치\n> 최신 버전 Upgrade 필요",
+      "BioStar - Default Key 설정(Data 암호화 초기)\n> Secure Communication with Device : Not Use Or Use\n> Device Hash Key Management : Not Use",
+      "1. BioStar에서 Secure Communication with Device/Device Hash Key Management : Not Use 인 경우는 Default Key로 동작이 되어 BioStar에 연결된 모든 장치에 대해서 기존 처럼 동작이 되어야 한다.\n> Secure Tamper : Off 유지 \n2. Secure Communication with Device/Device Hash Key Management : Use인 경우 사용자가 수동으로 변경시 Data 암호화 Key가 변경이 되면 안된다.\n> BioStar 이용하여 Setting에서 Hashkey Management을 사용안함으로 변경 전까지 장치나 BioStar의 Device 상세 정보를 통해 변경 시 변경 불가\n> Hashkey 입력을 안한 경우 적용이 안되고, 입력 화면 유지"
+    ],
+    [
+      2,
+      "0. Setting > System Security> 암호화 레벨 2단계 설정\n1. Setting > Security > Advanced Security Settings > Secure Communication with Devcie > Use\n2. Device Hash Key Management > 기본 Key가 아닌 임의의 32자 Key 입력 \n3. 지원 장치 추가 / 기연결 상태",
+      "BioStar\n> Secure Communication with Device : Use\n> Device Hash Key Managementt : Use\n> Device Hash Key 범위 \n: Max - 32자이내 Alphabet+Number+특수문자\n: 32자 보다 적은 경우 Full Length 32자를  입력하도록 팝업 발생",
+      "1. BioStar에 연결된 모든 장치에 대해서 Secure Tamper가 On으로 변경 되면 안된다.\n> 변경 시 장치 재부팅이 안되는 지 확인\n> Default : Off\n> 사용자가 수동으로 On/Off\n2. Secure Communication with Device/Device Hash Key Management : Use인 경우 변경이 되면 안된다.\n> BioStar 이용하여 Setting에서 Data Encrypton을 사용안함으로 변경 전까지 장치나 BioStar의 Device 상세 정보를 통해 변경 시 변경 불가\n3. Hashkey에 의해서 인증서,Hashkey가 장치에 설정 되고, 기존 장치의 사용자,로그는 모두 삭제 된다.\n> Auto User Sync 설정 유무 상관 없이 사용자가 수동으로 사용자를 전송해야 하며, 사용자가 PIN은 삭제된 상태로 장치에 사용자는 PIN이 없는 상태로 출력됨\n> BioStar Or Device에서 사용자를 추가하여 'Finger, Face, PIN' 정보를 입력 후 저장 후 출입 그룹및 인증 모드에 따라 인증 유무 발생 확인\n4. 인증서(기본, 외부) 변경 시 Data 암호화 설정은 유지 된다.\n> 인증서, Data 암호화 Key가 장치에서 삭제 되고, 기존 장치의 사용자, 로그가 삭제 되며, Default Key로 장치에 설정이 되면 안됨"
+    ],
+    [
+      3,
+      "0. Setting > System Security> 암호화 레벨 2단계 설정\n1. Setting > Security > Advanced Security Settings > Secure Communication with Devcie > Use\n2. Device Hash Key Management > 기본 Key가 아닌 임의의 32자 Key 입력 \n3. 지원 장치 추가 / 기연결 상태",
+      "BioStar\n> Secure Communication with Device : Use\n> Device Hash Key Management : Not Use\n> Data 암호화 키 범위 \n: Max - 32자이내 Alphabet+Number+특수문자\n: 32자 보다 적은 경우 Full Length 32자를  입력하도록 팝업 발생",
+      "1. BioStar에 연결된 모든 장치에 대해서 Secure Tamper가 Data 암호화 변경 전 상태가 On이면 On 유지하고, 이후 사용자가 수동으로 Off 변경 가능하다.\n> 변경 시 장치 재부팅이 안되는 지 확인\n> Data 암호화 On -> Off : Secure Tamper On 유지, 이후 사용자 변경 가능\n2. Secure Communication with Device : Use  / Device Hash Key Management : Not Use인 경우 Data 암호화 Key에 의해서 인증서, Data 암호화 Key가 장치에서 삭제 되고, 기존 장치의 사용자, 로그도 삭제 되며, Default Key로 장치에 설정이 된다.\n> Auto User Sync 설정 유무 상관 없이 사용자가 수동으로 사용자를 전송해야 하며, 사용자가 PIN은 삭제된 상태로 장치에 사용자는 PIN이 없는 상태로 출력됨\n> BioStar Or Device에서 사용자를 추가하여 'Finger, Face, PIN' 정보를 입력 후 저장 후 출입 그룹및 인증 모드에 따라 인증 유무 발생 확인"
+    ],
+    [
+      4,
+      "0. Setting > System Security> 암호화 레벨 2단계 설정\n1. Setting > Security > Advanced Security Settings > Secure Communication with Devcie > Use\n2. Device Hash Key Management> 기본 Key가 아닌 임의의 32자 Key 입력 \n3. 지원 장치 추가 / 기연결 상태",
+      "BioStar\n> Secure Communication with Device : Use\n> Device Hash Key Management : Use\n> Data 암호화 키 범위 \n: Max - 32자이내 Alphabet+Number+특수문자\n: 32자 보다 적은 경우 Full Length 32자를  입력하도록 팝업 발생",
+      "1. BioStar에 연결된 장치 중 미지원 장치에 사용자 전송 시 장치에 설정된 Key로 Finger/Face를 암호화 하여 인증 유무 판단을 하고, PIN에 대해서는 인증 실패가 발생한다.\n> FW Upgrade Alert에 의해 지원 버전으로 업그레이드 시 Data 암호화 Key가 설정이 되고, 출입 그룹 및 인증 모드에 따라 인증 유무 발생\n> Secure Communication with Device/Device Hash Key Management : Use로 인해 Secure Tamper가 On으로 변경\n> 반대의 경우도 동일하게 처리함\n2. 동일 인증서에 다른 Key 장치는 사용자, 로그 삭제가 되고, 동일 Key로 설정 된다.\n> 재부팅 미발생"
+    ],
+    [
+      5,
+      "0. Setting > System Security> 암호화 레벨 2단계 설정\n1. Setting > Security > Advanced Security Settings > Secure Communication with Devcie > Use\n2. Device Hash Key Management > 기본 Key가 아닌 임의의 32자 Key 입력 \n3. 미지원 장치 추가 / 기연결 상태\n4. AOC/SCC 발급",
+      "BioStar\n> Secure Communication with Device : Use\n> Device Hash Key Management : Use\n> Data 암호화 키 범위 \n: Max - 32자이내 Alphabet+Number+특수문자\n: 32자 보다 적은 경우 Full Length 32자를  입력하도록 팝업 발생",
+      "1. BioStar에 연결된 장치 중 미지원 장치에 사용자 전송 시 장치에 설정된 Key로 Finger/Face를 암호화 하여 인증 유무 판단을 하고, PIN에 대해서는 인증 실패가 발생한다. (지원하는 장치도 Key가 다른 경우 동일)\n> AOC : Card Only 제외하고, 출입그룹/인증 모드에 따라 인증 성공 유무 판단, PIN에 대해서는 인증 실패 \n> SCC : PIN을 제외하고, 출입 그룹/인증 모드에 따라 인증 성공 유무 판단\n\n> PIN Hash Key로 동작하는 2020 1H 이후 버전 부터는 PIN에 대해서도 정상 동작으로 변경"
+    ],
+    [
+      6,
+      "0. Setting > System Security> 암호화 레벨 2단계 설정\n1. Setting > Security > Advanced Security Settings > Secure Communication with Devcie > Use\n2. Device Hash Key Management > 기본 Key가 아닌 임의의 32자 Key 입력 \n3. 지원 장치 추가 / 기연결 상태",
+      "BioStar\n> Secure Communication with Device : Use\n> Device Hash Key Management : Use\n> Data 암호화 키 범위 \n: Max - 32자이내 Alphabet+Number+특수문자\n: 32자 보다 적은 경우 Full Length 32자를  입력하도록 팝업 발생",
+      "1. BioStar에 연결된 모든 장치에 대해서 Secure Tamper가 On으로 변경 되어야 한다.\n> 변경 시 장치 재부팅이 안되는 지 확인\n> Default : Off\n2. Secure Communication with Device/Device Hash Key Management : Use인 경우 변경이 되면 안된다.\n> BioStar 이용하여 Setting에서 Data Encrypton을 사용안함으로 변경 전까지 장치나 BioStar의 Device 상세 정보를 통해 변경 시 변경 불가\n3. Data 암호화 Key에 의해서 인증서, Data 암호화 Key가 장치에 설정 되고, 기존 장치의 사용자, 로그는 모두 삭제 된다.\n> Auto User Sync 설정 유무 상관 없이 사용자가 수동으로 사용자를 전송해야 하며, 사용자가 PIN은 삭제된 상태로 장치에 사용자는 PIN이 없는 상태로 출력됨\n> BioStar Or Device에서 사용자를 추가하여 'Finger, Face, PIN' 정보를 입력 후 저장 후 출입 그룹및 인증 모드에 따라 인증 유무 발생 확인\n4. 인증서(기본, 외부) 변경 시 Data 암호화 설정은 유지 된다.\n> 인증서, Data 암호화 Key가 장치에서 삭제 되고, 기존 장치의 사용자, 로그가 삭제 되며, Default Key로 장치에 설정이 되면 안됨"
+    ],
+    [
+      7,
+      "1. 암호화 레벨 2(통신 보안/Data 암호화) 사용\n2. 지원 장치 추가 / 기연결 상태\n3. 통신 보안만 사용 안함 변경",
+      "BioStar\n> Secure Communication with Device : Use -> Not Use\n> Device Hash Key Management : Use\n> Data 암호화 키 범위 \n: Max - 32자이내 Alphabet+Number+특수문자\n: 32자 보다 적은 경우 Full Length 32자를  입력하도록 팝업 발생",
+      "1. 통신 보안을 사용안함으로 변경 시 기존 Data 암호화(Hash Key)는 변경이 안되기 때문에 Hash Key로 동작 한다.\n> 사용자, 인증서, Data 암호화 Key 유지\n> 로그 - 유지(기존 사양 변경 - 유지)"
+    ],
+    [
+      8,
+      "1. 암호화 레벨 2(통신 보안/Data 암호화)/암호화 레벨 3 사용\n2. 지원 장치 추가 / 기연결 상태\n",
+      "BioStar\n> Secure Communication with Device : Use -> Not Use\n> Device Hash Key Management : Use\n> Data 암호화 키 범위 \n: Max - 32자이내 Alphabet+Number+특수문자\n: 32자 보다 적은 경우 Full Length 32자를  입력하도록 팝업 발생\n> 암호화 레벨 3 : Use",
+      "1. 암호화 레벨 3(GDPR)를 사용함으로 변경 시 기존 2단계 설정에 암호화 대상만 추가가 되어 동작이 된다.\n> 사용자, 로그 삭제\n> 인증서, Data 암호화 설정\n> Secure Tamper On 설정\n2. 암호화 레벨 3(GDPR)을 사용안함으로 변경 시 단계 별 설정에 맞게 동작이 된다.\n> 1차 - 사용자, 로그는 무조건 삭제\n> 2차 - 암호화 레벨에 맞게 기존 처럼 동작\n> 3차 설정 후 1차/2차로 변경 불가"
+    ],
+    [
+      9,
+      "1. 암호화 레벨 2(통신 보안/Data 암호화)/암호화 레벨 3 사용\n2. 지원 장치 추가 / 기연결 상태\n",
+      "BioStar\n> Secure Communication with Device : Use -> Not Use\n> Device Hash Key Management : Use\n> Data 암호화 키 범위 \n: Max - 32자이내 Alphabet+Number+특수문자\n: 32자 보다 적은 경우 Full Length 32자를  입력하도록 팝업 발생\n> 암호화 레벨 3 : Use",
+      "1. 암호화 레벨 3(GDPR)를 사용함으로 설정한 경우의 기존 기능 중 일부 제약으로 동작 된다.\n> USB Import/Export 미지원\n\n\n"
+    ],
+    [
+      10,
+      "1. 설정> 시스템 보안> 장치와 보안통신: 사용 설정\n2. 장치 해시키 수동 관리: 사용 설정\n3. 장치 해시키 변경 후 확인",
+      "장치 해시키 변경\n> 데이터 암호화 키: 32자\n> 관리자 암호화 키: BioStar 로그인PWD",
+      "1. 서버에서 Migration 된다.\n2. 장치에서 DB 초기화가 되고, 서버에서 사용자를 재전송해야 한다.\n> 장치 Reboot 미발생"
+    ],
+    [
+      11,
+      "[장치 해시키 수동관리: 사용 상태]\n1. 설정> 시스템 보안\n2. 장치 해시키: 다른 key로 데이타 암호화 키 변경 후 확인",
+      "",
+      "1. 서버에서 Migration 된다.\n2. 장치에서 DB 초기화가 되고, 서버에서 사용자를 재전송해야 한다.\n> 장치 Reboot 미발생"
+    ],
+    [
+      12,
+      "[장치 해시키 수동관리: 사용 상태]\n1. 설정> 시스템 보안\n2. 장치 해시키 수동관리: 사용안함 으로 설정 변경\n3. 관리자 암호입력 후 확인",
+      "",
+      "1. 서버에서 Migration 된다.\n2. DB 초기화되고, 장치 Reboot 발생된다.\n3. Secure Tamper는 사용자에 의해서 수동으로 변경 가능 하다.\n> On -> Off로\n> Off -> On으로 \n> 자동 설정 및 변경 불가 기능은 제외"
+    ],
+    [
+      13,
+      "[이상민 수석님께 요청]\n1. command 창에서 +2 Hash key 생성\n2. 장치로 해당 Hash key 전송\n3. 해당 장치 서버에 연결\n4. PIN을 가지고 있는 사용자로 인증 시도.",
+      "1. 서버는 기본값을 가지고 있는 상태\n2. 장치에는 +2의 Hash Key가 내려가 있는 상태 : 이상민 수석님께 요청 필요하며 +2의 Hash Key는 서버와 통신할때 주고 받는 고유의 값을 말함.\n3. 장치 인증모드\n:Card+PIN\n:Finger+PIN\n:ID+PIN\n4. BioStar2 v2.8.0 이후 버전 사용.\n",
+      "1. PIN을 가진 인증모드로 인증이 정상적으로 처리되어야 한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-221",
+    "description": "",
+    "test_step": [
+      "1. Setting > Security > Advanced Security Settings > Secure Communication with Devcie > Not Use Or Use \n2. Device Hash Key Management > Not Use\n3. 지원 장치 추가 / 기연결 상태\n\n* 미지원 장치\n> 최신 버전 Upgrade 필요",
+      "0. Setting > System Security> 암호화 레벨 2단계 설정\n1. Setting > Security > Advanced Security Settings > Secure Communication with Devcie > Use\n2. Device Hash Key Management > 기본 Key가 아닌 임의의 32자 Key 입력 \n3. 지원 장치 추가 / 기연결 상태",
+      "0. Setting > System Security> 암호화 레벨 2단계 설정\n1. Setting > Security > Advanced Security Settings > Secure Communication with Devcie > Use\n2. Device Hash Key Management > 기본 Key가 아닌 임의의 32자 Key 입력 \n3. 지원 장치 추가 / 기연결 상태",
+      "0. Setting > System Security> 암호화 레벨 2단계 설정\n1. Setting > Security > Advanced Security Settings > Secure Communication with Devcie > Use\n2. Device Hash Key Management> 기본 Key가 아닌 임의의 32자 Key 입력 \n3. 지원 장치 추가 / 기연결 상태",
+      "0. Setting > System Security> 암호화 레벨 2단계 설정\n1. Setting > Security > Advanced Security Settings > Secure Communication with Devcie > Use\n2. Device Hash Key Management > 기본 Key가 아닌 임의의 32자 Key 입력 \n3. 미지원 장치 추가 / 기연결 상태\n4. AOC/SCC 발급",
+      "0. Setting > System Security> 암호화 레벨 2단계 설정\n1. Setting > Security > Advanced Security Settings > Secure Communication with Devcie > Use\n2. Device Hash Key Management > 기본 Key가 아닌 임의의 32자 Key 입력 \n3. 지원 장치 추가 / 기연결 상태",
+      "1. 암호화 레벨 2(통신 보안/Data 암호화) 사용\n2. 지원 장치 추가 / 기연결 상태\n3. 통신 보안만 사용 안함 변경",
+      "1. 암호화 레벨 2(통신 보안/Data 암호화)/암호화 레벨 3 사용\n2. 지원 장치 추가 / 기연결 상태\n",
+      "1. 암호화 레벨 2(통신 보안/Data 암호화)/암호화 레벨 3 사용\n2. 지원 장치 추가 / 기연결 상태\n",
+      "1. 설정> 시스템 보안> 장치와 보안통신: 사용 설정\n2. 장치 해시키 수동 관리: 사용 설정\n3. 장치 해시키 변경 후 확인",
+      "[장치 해시키 수동관리: 사용 상태]\n1. 설정> 시스템 보안\n2. 장치 해시키: 다른 key로 데이타 암호화 키 변경 후 확인",
+      "[장치 해시키 수동관리: 사용 상태]\n1. 설정> 시스템 보안\n2. 장치 해시키 수동관리: 사용안함 으로 설정 변경\n3. 관리자 암호입력 후 확인",
+      "[이상민 수석님께 요청]\n1. command 창에서 +2 Hash key 생성\n2. 장치로 해당 Hash key 전송\n3. 해당 장치 서버에 연결\n4. PIN을 가지고 있는 사용자로 인증 시도."
+    ],
+    "data": [
+      "BioStar - Default Key 설정(Data 암호화 초기)\n> Secure Communication with Device : Not Use Or Use\n> Device Hash Key Management : Not Use",
+      "BioStar\n> Secure Communication with Device : Use\n> Device Hash Key Managementt : Use\n> Device Hash Key 범위 \n: Max - 32자이내 Alphabet+Number+특수문자\n: 32자 보다 적은 경우 Full Length 32자를  입력하도록 팝업 발생",
+      "BioStar\n> Secure Communication with Device : Use\n> Device Hash Key Management : Not Use\n> Data 암호화 키 범위 \n: Max - 32자이내 Alphabet+Number+특수문자\n: 32자 보다 적은 경우 Full Length 32자를  입력하도록 팝업 발생",
+      "BioStar\n> Secure Communication with Device : Use\n> Device Hash Key Management : Use\n> Data 암호화 키 범위 \n: Max - 32자이내 Alphabet+Number+특수문자\n: 32자 보다 적은 경우 Full Length 32자를  입력하도록 팝업 발생",
+      "BioStar\n> Secure Communication with Device : Use\n> Device Hash Key Management : Use\n> Data 암호화 키 범위 \n: Max - 32자이내 Alphabet+Number+특수문자\n: 32자 보다 적은 경우 Full Length 32자를  입력하도록 팝업 발생",
+      "BioStar\n> Secure Communication with Device : Use\n> Device Hash Key Management : Use\n> Data 암호화 키 범위 \n: Max - 32자이내 Alphabet+Number+특수문자\n: 32자 보다 적은 경우 Full Length 32자를  입력하도록 팝업 발생",
+      "BioStar\n> Secure Communication with Device : Use -> Not Use\n> Device Hash Key Management : Use\n> Data 암호화 키 범위 \n: Max - 32자이내 Alphabet+Number+특수문자\n: 32자 보다 적은 경우 Full Length 32자를  입력하도록 팝업 발생",
+      "BioStar\n> Secure Communication with Device : Use -> Not Use\n> Device Hash Key Management : Use\n> Data 암호화 키 범위 \n: Max - 32자이내 Alphabet+Number+특수문자\n: 32자 보다 적은 경우 Full Length 32자를  입력하도록 팝업 발생\n> 암호화 레벨 3 : Use",
+      "BioStar\n> Secure Communication with Device : Use -> Not Use\n> Device Hash Key Management : Use\n> Data 암호화 키 범위 \n: Max - 32자이내 Alphabet+Number+특수문자\n: 32자 보다 적은 경우 Full Length 32자를  입력하도록 팝업 발생\n> 암호화 레벨 3 : Use",
+      "장치 해시키 변경\n> 데이터 암호화 키: 32자\n> 관리자 암호화 키: BioStar 로그인PWD",
+      "1. 서버는 기본값을 가지고 있는 상태\n2. 장치에는 +2의 Hash Key가 내려가 있는 상태 : 이상민 수석님께 요청 필요하며 +2의 Hash Key는 서버와 통신할때 주고 받는 고유의 값을 말함.\n3. 장치 인증모드\n:Card+PIN\n:Finger+PIN\n:ID+PIN\n4. BioStar2 v2.8.0 이후 버전 사용.\n"
+    ],
+    "expected_result": [
+      "1. BioStar에서 Secure Communication with Device/Device Hash Key Management : Not Use 인 경우는 Default Key로 동작이 되어 BioStar에 연결된 모든 장치에 대해서 기존 처럼 동작이 되어야 한다.\n> Secure Tamper : Off 유지 \n2. Secure Communication with Device/Device Hash Key Management : Use인 경우 사용자가 수동으로 변경시 Data 암호화 Key가 변경이 되면 안된다.\n> BioStar 이용하여 Setting에서 Hashkey Management을 사용안함으로 변경 전까지 장치나 BioStar의 Device 상세 정보를 통해 변경 시 변경 불가\n> Hashkey 입력을 안한 경우 적용이 안되고, 입력 화면 유지",
+      "1. BioStar에 연결된 모든 장치에 대해서 Secure Tamper가 On으로 변경 되면 안된다.\n> 변경 시 장치 재부팅이 안되는 지 확인\n> Default : Off\n> 사용자가 수동으로 On/Off\n2. Secure Communication with Device/Device Hash Key Management : Use인 경우 변경이 되면 안된다.\n> BioStar 이용하여 Setting에서 Data Encrypton을 사용안함으로 변경 전까지 장치나 BioStar의 Device 상세 정보를 통해 변경 시 변경 불가\n3. Hashkey에 의해서 인증서,Hashkey가 장치에 설정 되고, 기존 장치의 사용자,로그는 모두 삭제 된다.\n> Auto User Sync 설정 유무 상관 없이 사용자가 수동으로 사용자를 전송해야 하며, 사용자가 PIN은 삭제된 상태로 장치에 사용자는 PIN이 없는 상태로 출력됨\n> BioStar Or Device에서 사용자를 추가하여 'Finger, Face, PIN' 정보를 입력 후 저장 후 출입 그룹및 인증 모드에 따라 인증 유무 발생 확인\n4. 인증서(기본, 외부) 변경 시 Data 암호화 설정은 유지 된다.\n> 인증서, Data 암호화 Key가 장치에서 삭제 되고, 기존 장치의 사용자, 로그가 삭제 되며, Default Key로 장치에 설정이 되면 안됨",
+      "1. BioStar에 연결된 모든 장치에 대해서 Secure Tamper가 Data 암호화 변경 전 상태가 On이면 On 유지하고, 이후 사용자가 수동으로 Off 변경 가능하다.\n> 변경 시 장치 재부팅이 안되는 지 확인\n> Data 암호화 On -> Off : Secure Tamper On 유지, 이후 사용자 변경 가능\n2. Secure Communication with Device : Use  / Device Hash Key Management : Not Use인 경우 Data 암호화 Key에 의해서 인증서, Data 암호화 Key가 장치에서 삭제 되고, 기존 장치의 사용자, 로그도 삭제 되며, Default Key로 장치에 설정이 된다.\n> Auto User Sync 설정 유무 상관 없이 사용자가 수동으로 사용자를 전송해야 하며, 사용자가 PIN은 삭제된 상태로 장치에 사용자는 PIN이 없는 상태로 출력됨\n> BioStar Or Device에서 사용자를 추가하여 'Finger, Face, PIN' 정보를 입력 후 저장 후 출입 그룹및 인증 모드에 따라 인증 유무 발생 확인",
+      "1. BioStar에 연결된 장치 중 미지원 장치에 사용자 전송 시 장치에 설정된 Key로 Finger/Face를 암호화 하여 인증 유무 판단을 하고, PIN에 대해서는 인증 실패가 발생한다.\n> FW Upgrade Alert에 의해 지원 버전으로 업그레이드 시 Data 암호화 Key가 설정이 되고, 출입 그룹 및 인증 모드에 따라 인증 유무 발생\n> Secure Communication with Device/Device Hash Key Management : Use로 인해 Secure Tamper가 On으로 변경\n> 반대의 경우도 동일하게 처리함\n2. 동일 인증서에 다른 Key 장치는 사용자, 로그 삭제가 되고, 동일 Key로 설정 된다.\n> 재부팅 미발생",
+      "1. BioStar에 연결된 장치 중 미지원 장치에 사용자 전송 시 장치에 설정된 Key로 Finger/Face를 암호화 하여 인증 유무 판단을 하고, PIN에 대해서는 인증 실패가 발생한다. (지원하는 장치도 Key가 다른 경우 동일)\n> AOC : Card Only 제외하고, 출입그룹/인증 모드에 따라 인증 성공 유무 판단, PIN에 대해서는 인증 실패 \n> SCC : PIN을 제외하고, 출입 그룹/인증 모드에 따라 인증 성공 유무 판단\n\n> PIN Hash Key로 동작하는 2020 1H 이후 버전 부터는 PIN에 대해서도 정상 동작으로 변경",
+      "1. BioStar에 연결된 모든 장치에 대해서 Secure Tamper가 On으로 변경 되어야 한다.\n> 변경 시 장치 재부팅이 안되는 지 확인\n> Default : Off\n2. Secure Communication with Device/Device Hash Key Management : Use인 경우 변경이 되면 안된다.\n> BioStar 이용하여 Setting에서 Data Encrypton을 사용안함으로 변경 전까지 장치나 BioStar의 Device 상세 정보를 통해 변경 시 변경 불가\n3. Data 암호화 Key에 의해서 인증서, Data 암호화 Key가 장치에 설정 되고, 기존 장치의 사용자, 로그는 모두 삭제 된다.\n> Auto User Sync 설정 유무 상관 없이 사용자가 수동으로 사용자를 전송해야 하며, 사용자가 PIN은 삭제된 상태로 장치에 사용자는 PIN이 없는 상태로 출력됨\n> BioStar Or Device에서 사용자를 추가하여 'Finger, Face, PIN' 정보를 입력 후 저장 후 출입 그룹및 인증 모드에 따라 인증 유무 발생 확인\n4. 인증서(기본, 외부) 변경 시 Data 암호화 설정은 유지 된다.\n> 인증서, Data 암호화 Key가 장치에서 삭제 되고, 기존 장치의 사용자, 로그가 삭제 되며, Default Key로 장치에 설정이 되면 안됨",
+      "1. 통신 보안을 사용안함으로 변경 시 기존 Data 암호화(Hash Key)는 변경이 안되기 때문에 Hash Key로 동작 한다.\n> 사용자, 인증서, Data 암호화 Key 유지\n> 로그 - 유지(기존 사양 변경 - 유지)",
+      "1. 암호화 레벨 3(GDPR)를 사용함으로 변경 시 기존 2단계 설정에 암호화 대상만 추가가 되어 동작이 된다.\n> 사용자, 로그 삭제\n> 인증서, Data 암호화 설정\n> Secure Tamper On 설정\n2. 암호화 레벨 3(GDPR)을 사용안함으로 변경 시 단계 별 설정에 맞게 동작이 된다.\n> 1차 - 사용자, 로그는 무조건 삭제\n> 2차 - 암호화 레벨에 맞게 기존 처럼 동작\n> 3차 설정 후 1차/2차로 변경 불가",
+      "1. 암호화 레벨 3(GDPR)를 사용함으로 설정한 경우의 기존 기능 중 일부 제약으로 동작 된다.\n> USB Import/Export 미지원\n\n\n",
+      "1. 서버에서 Migration 된다.\n2. 장치에서 DB 초기화가 되고, 서버에서 사용자를 재전송해야 한다.\n> 장치 Reboot 미발생",
+      "1. 서버에서 Migration 된다.\n2. 장치에서 DB 초기화가 되고, 서버에서 사용자를 재전송해야 한다.\n> 장치 Reboot 미발생",
+      "1. 서버에서 Migration 된다.\n2. DB 초기화되고, 장치 Reboot 발생된다.\n3. Secure Tamper는 사용자에 의해서 수동으로 변경 가능 하다.\n> On -> Off로\n> Off -> On으로 \n> 자동 설정 및 변경 불가 기능은 제외",
+      "1. PIN을 가진 인증모드로 인증이 정상적으로 처리되어야 한다."
+    ]
+  }
+}

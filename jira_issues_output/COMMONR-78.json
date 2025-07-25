@@ -1,0 +1,204 @@
+{
+  "id": "COMMONR-78",
+  "content": [
+    [
+      1,
+      "1. Monitoring > Real-time Log",
+      "1. 인증모드별 로그 확인\n > 인증 성공 : 지문, 얼굴, 카드, ID\n > 인증 실패 : 지문, 얼굴, 카드, ID\n > Thermal Camera에 의한 Temperature 표시",
+      "1. 인증모드별 성공/실패 로그 및 온도가 표시된다.\n> 1:1(or 1:N) authentication succeeded (인증수단)\n> 1:1(or 1:N) authentication failed (인증수단)\n2. 부가정보(근태코드, 카드인증 종류 등)와 인증이 시도된 리더ID, 사용자 ID가 표시된다."
+    ],
+    [
+      2,
+      "1. Monitoring > Real-time Log",
+      "1. 인증모드별 로그 확인\n > PIN 등록되지 않은 사용자 지문/얼굴+PIN 인증\n > 지문/얼굴 등록되지 않은 사용자 카드+지문/얼굴 인증\n > PIN 등록되지 않은 사용자 카드+PIN 인증\n > 지문/얼굴/PIN 등록되지 않은 사용자 카드+지문/얼굴/PIN 인증\n > 지문/얼굴 등록되지 않은 사용자 ID+지문/얼굴 인증\n > PIN 등록되지 않은 사용자 ID+PIN 인증\n > 지문/얼굴/PIN 등록되지 않은 사용자 ID+지문/얼굴/PIN 인증",
+      "1. 등록안됨 관련 로그가 저장된다. (Authentication failed (Invalid credential))\n > 지문/얼굴 인증 PIN 등록안됨\n > 카드인증 지문/얼굴 등록안됨\n > 카드인증 PIN 등록안됨\n > 카드인증 지문/얼굴 등록안됨(지문/얼굴/PIN 모두 등록되지 않은 사용자)\n > ID인증 지문/얼굴 등록안됨\n > ID인증 PIN 등록안됨\n > ID인증 지문/얼굴 등록안됨(지문/얼굴/PIN 모두 등록되지 않은 사용자)\n2. 부가정보(근태코드, 카드인증 종류 등)와 인증이 시도된 리더ID, 사용자 ID가 표시된다."
+    ],
+    [
+      3,
+      "1. Monitoring > Real-time Log",
+      "1. 인증모드별 로그 확인\n> 유효 기간이 지난 사용자 인증\n> 이중 인증 성공/실패",
+      "1. 유효기간 아님 관련 로그가 표시된다.\n> Access denied (Invalid period)\n2. 이중인증 성공시 인증별 성공로그 및 이중인증 성공 로그가 표시된다.\n> Dual authentication succeeded\n3. 부가정보(근태코드, 카드인증 종류 등)와 인증이 시도된 리더ID, 사용자 ID가 표시된다."
+    ],
+    [
+      4,
+      "1. Monitoring > Real-time Log",
+      "1. 출입인증관련 로그 확인\n > 출입그룹에 속한 사용자 : 인증\n > 출입그룹에 속하지 않은 사용자 : 인증",
+      "1. 출입그룹 위반 관련 로그가 표시된다.\n> Access denied (Invalid access group)\n2. 부가정보(근태코드, 카드인증 종류 등)와 인증이 시도된 리더ID가 표시된다."
+    ],
+    [
+      5,
+      "1. Monitoring > Real-time Log",
+      "1. IO관련 로그 확인\n > Pre-defined Alarm\n > Input",
+      "1. ReaderController ID 로그가 저장된다.\n2. IO장치 ID, 입력포트 인덱스가 저장된다.\n3. 사용자 ID는 표시되지 않는다."
+    ],
+    [
+      6,
+      "1. Monitoring > Real-time Log",
+      "1. IO관련 로그 확인\n > Action",
+      "1. Action이 발생하는 Reader ID 또는 ReaderController의 ID 로그가 저장된다.\n2. IO장치 ID, 출력포트 인덱스가 저장된다.(Controller 포트인 경우 IO장치 ID가 표시되지 않는다)\n3. 사용자 ID는 ActionID가 저장된다."
+    ],
+    [
+      7,
+      "1. Monitoring > Real-time Log",
+      "1. 출입문 로그 확인\n > Unlock, Lock, Open, Close, Forced Open, Held Open",
+      "1. 출입문 ID가 저장되고 해당 이벤트 로그가 저장된다.\n2. IO장치 ID, 입력포트는 저장되지 않는다.\n3. 사용자 ID 저장되지 않는다"
+    ],
+    [
+      8,
+      "1. Monitoring > Real-time Log",
+      "1. 구역 로그 확인\n > Soft APB 위반, Hard APB 위반, Timed APB 위반, Fire Alarm 위반, Forced Lock/Unlock Schedule 인증제한\n2. Intrusion Alarm Zone Log 확인\n > 경비진입, 경비실패, 해제, 경비상태, 경보상태진입, 경보상태해제, 경비수행 인증성공, 경비수행 인증실패, 해제수행 인증성공, 해제수행 인증실패, 경비중 인증 제한",
+      "1. Zone ID 로그가 저장된다.\n2. IO장치 ID, 입력포트는 저장되지 않는다.\n3. 사용자 ID 저장되지 않는다\n4. 경비 수행/해제 수행/경비 중 인증 제한 시에는 어떤 장치에서 누가 수행하였는지 확인할 수 있어야 한다.\n5. 경보-침입 발생 시에는 어떤 센서(예, 회의실 창문, 창고 외벽 등)에서 침입이 감지되었지는 확인 할 수 있어야 한다."
+    ],
+    [
+      9,
+      "1. Monitoring > Real-time Log",
+      "1. 사용자 관리 로그 확인\n > 사용자 등록, 지문/얼굴/카드/PIN/이름/부가정보 업데이트, 사용자 삭제/전체 삭제",
+      "1. ReaderController ID 로그가 저장된다.\n2. 사용자 등록시 등록성공 로그와 등록된 사용자 ID가 저장된다.\n> Device에서 등록 시 로그(Device) 등록 구분 표시\n> Server에서 등록 시 로그(Server) 등록 구분 표시\n3. 지문/얼굴/카드/PIN/부가정보 업데이트시 추가/편집/삭제 관련 로그가 저장된다.\n> Device에서 추가/편집/삭제 시 로그(Device) 등록 구분 표시\n> Server에서 추가/편집/삭제 시 로그(Server) 등록 구분 표시\n4. 사용자 삭제시 삭제성공 로그와 삭제된 사용자 ID가 저장된다.\n> Device에서 삭제 시 로그(Device) 등록 구분 표시\n> Server에서 삭제 시 로그(Server) 등록 구분 표시\n5. 사용자 전체 삭제시 사용자 ID 저장되지 않는다.\n> Device에서 전체 삭제 시 로그(Device) 등록 구분 표시\n> Server에서 전체 삭제 시 로그(Server) 등록 구분 표시"
+    ],
+    [
+      10,
+      "1. Monitoring > Real-time Log",
+      "1. IP 통신 관련 로그 확인\n > BioStar 연결 : BioStar->장치, BioStar 연결 끊김 : BioStar->장치, BioStar 연결 : 장치->BioStar, BioStar 연결 끊김 : 장치->BioStar, IP 재설정, RS485 연결 , RS485 연결끊김",
+      "1. ReaderController ID 로그가 저장된다.\n2. BioStar와의 연결/연결끊김시 사용자 ID는 저장되지 않는다.\n3. IP 재설정시 설정된 IP주소 정보가 저장된다.\n4. RS485 연결/연결끊김시 RS485 통신이 연결된 리더ID가 저장된다."
+    ],
+    [
+      11,
+      "1. Monitoring > Real-time Log\n* 장치 내 Trigger&Action 에서 Input 선택, Device : DM20 선택, Port / Switch 설정 확인",
+      "1. DM20 관련 로그 확인\n > Supervised Input-Open/Short\n > Input",
+      "1. Open과 Short에 대한 로그가 표시된다.\n= Supervised Input Short / Port No.\n= Supervised Input Open / Port No.\n2. Input에 대한 로그가 표시된다.\n= Input /Port No.\n"
+    ],
+    [
+      12,
+      "1. Device > 장치 선택 > Advanced > Image Log : Enable 설정 > Configuration : Event, Schedule 설정 > Apply\n2. Monitoring > Real-time Log > Event 발생시 Image Log 확인",
+      "1. 첨부파일 확인(BioStar&A2 Log Name)\n> FS2 ",
+      "1. 장치에서 Configuration 에 설정한 Event 발생시 Image Log 가 표시된다.\n> 장치에서도 Image Log 확인\n2. 로그 List 에 Image 포함 여부를 표시한다.\n3. 로그 선택시 해당 Image 를 보여준다.\n= 해상도 : 320 x 240\n\n> Slave 장치(DM20, SIO2포함)에서는 영상 로그 미지원"
+    ],
+    [
+      13,
+      "1) BioStar 연결 : 정상 동작 확인\n2) 랜선 제거 : BioStar와 연결이 끊어지도록 만듬\n3) 장치에 Full Log 생성 : Max인 상태에서 BioStar와 재연결",
+      "Full Log 생성(장치마다 상이)",
+      "1. BioStar와 재연결된 후에 정상적으로 실시간 로그가 전송, 표시 된다."
+    ],
+    [
+      14,
+      "1) Mobile Access로 인증시도",
+      "Mobile Access\n> BLE\n> NFC\n\n\nTemplate On Mobile\n>ToM_AoC\n>ToM_SCC",
+      "1. 일반 카드인증 이벤트로그와 분리되어 표시된다.\n> 인증성공(카드): 1:1 authentication succeeded(Mobile Card)\n> 인증실패(카드): 1:1 authentication failed(Mobile Card)\n> 인증성공(카드+지문): 1:1 authentication succeeded(Mobile Card + Fingerprint)\n> 인증성공(카드+PIN): 1:1 authentication succeeded(Mobile Card + PIN)\n> 인증성공(카드+지문+PIN): 1:1 authentication succeeded(Mobile Card + Fingerprint + PIN)\n> 1:1 협박 지문 인증성공(카드+지문): 1:1 Duress authentication succeeded(Mobile Card + Fingerprint)\n> 1:1 협박 지문 인증성공(카드+지문+PIN): 1:1 Duress authentication succeeded(Mobile Card + Fingerprint + PIN)\n> 실패에 대해서는 기존과 동일한 이벤트 로그 표시(ex. 카드 +지문에 대해 지문에서 인증실패시 1:1 인증실패(지문))"
+    ],
+    [
+      15,
+      "1) BioStar Mobile로 인증시도",
+      "Mobile Access\n> BLE\n> NFC",
+      "1. 일반 카드인증 이벤트로그와 분리되어 표시된다.\n> 인증성공(카드): 1:1 authentication succeeded(Mobile Card)\n> 인증실패(카드): 1:1 authentication failed(Mobile Card)\n> 인증성공(카드+지문): 1:1 authentication succeeded(Mobile Card + Fingerprint)\n> 인증성공(카드+PIN): 1:1 authentication succeeded(Mobile Card + PIN)\n> 인증성공(카드+지문+PIN): 1:1 authentication succeeded(Mobile Card + Fingerprint + PIN)\n> 1:1 협박 지문 인증성공(카드+지문): 1:1 Duress authentication succeeded(Mobile Card + Fingerprint)\n> 1:1 협박 지문 인증성공(카드+지문+PIN): 1:1 Duress authentication succeeded(Mobile Card + Fingerprint + PIN)\n> 실패에 대해서는 기존과 동일한 이벤트 로그 표시(ex. 카드 +지문에 대해 지문에서 인증실패시 1:1 인증실패(지문))"
+    ],
+    [
+      16,
+      "1. 등록되지 않은 카드 인증시도",
+      "[2.x Entry 계열에 해당-숫자모드]\n32bit 초과하는 카드\n> DesFire EV1\n> ISO 15693\n> Felica\n> EM\n\nISO 14443A RID (Random CSN 동작) 카드\n> Mifare(NFC 폰)\n> iClass",
+      "1. 10자리 이상의 카드ID는 카드ID의 뒷부분만 잘라서 표시해주어야 한다.\n: 로그로 확인가능\n: Max  Card ID : 256bit도 동일\n1-1. 영숫자모드를 지원하는 Entry 계열의 경우\n=> 영숫자모드일 때 카드ID 전체를 표시해준다.(XPASS/XPS2)\n2. RID 카드는 무시되어 반응이 없어야 한다.\n: 카드 인식음, 인증 실패 로그 등 미발생\n: 단, iClass SEOS는 PAC DATA가 출력되어야 함\n: Card Type에 따라 동일한 Card ID로 인식\n"
+    ],
+    [
+      17,
+      "1. 등록되지 않은 카드 인증시도",
+      "[Station 계열에 해당-숫자/영숫자모드]\n32bit 초과하는 카드\n> DesFire EV1\n> ISO 15693\n> Felica\n> EM\n\nISO 14443A RID (Random CSN 동작) 카드\n> Mifare(NFC 폰)\n> iClass",
+      "1. 카드ID 전체를 표시해줘야 한다.\n: 로그로 확인가능\n: Max  Card ID : 256bit도 동일\n2. RID 카드는 무시되어 반응이 없어야 한다.\n: 카드 인식음, 인증 실패 로그 등 미발생\n: 단, iClass SEOS는 PAC DATA가 출력되어야 함\n: Card Type에 따라 동일한 Card ID로 인식"
+    ],
+    [
+      18,
+      "1. 새로 설치한 서버에 장치 추가\n2. Full Log가 서버로 업로드됨을 확인\n3. 서버종료\n4. 장치에 여러번의 인증시도(로그가 쌓이게하는 목적)\n5. 서버 재실행\n6. 로그 업로드 여부 확인\n",
+      "로그 업데이트: 자동\n\n>이벤트 로그 FULL\n>이미지 로그 FULL\n※ 로그 쌓는 방식: AGING\n(이미지 로그 ON > 이미지 로그 FULL > 이벤트 로그 FULL)\n",
+      "1. 장치로그가 서버로 모두 업로드 된다.\n2. 서버와 연결이 끊긴 이후에 발생한 로그에 대해서만 서버로 올린다."
+    ],
+    [
+      19,
+      "1. 새로 설치한 서버에 장치 추가\n2. 수동으로 장치의 로그 업로드\n3. Full Log가 서버로 업로드됨을 확인\n4. 장치에 여러번의 인증시도(로그가 쌓이게하는 목적)\n5. 수동으로 장치의 로그 재업로드\n6. 로그 업로드 여부 확인\n",
+      "로그 업데이트: 수동\n\n>이벤트 로그 FULL\n>이미지 로그 FULL\n※ 로그 쌓는 방식: AGING\n(이미지 로그 ON > 이미지 로그 FULL > 이벤트 로그 FULL)\n",
+      "1. 장치로그가 서버로 모두 업로드 된다.\n2. 수동으로 로그 업로드 후에 발생한 로그에 대해서만 서버로 올린다."
+    ],
+    [
+      20,
+      "1. 장치에 연속인증 중 강제 전원 OFF\n2. 다시 전원ON\n3. 장치 메뉴> 이벤트 로그> 검색\n4. 이벤트 로그 확인",
+      "장치LCD 지원모델",
+      "1. 로그 중 유효하지 않은 정보가 화면에 표시되지 않는다."
+    ],
+    [
+      21,
+      "1. 장치에 연속인증 중 강제 전원 OFF\n2. 다시 전원ON\n3. 바이오스타> 모니터링> 실시간/이벤트 로그 확인",
+      "장치LCD 미지원모델",
+      "1. 로그 중 유효하지 않은 정보가 표시되지 않는다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-78",
+    "description": "",
+    "test_step": [
+      "1. Monitoring > Real-time Log",
+      "1. Monitoring > Real-time Log",
+      "1. Monitoring > Real-time Log",
+      "1. Monitoring > Real-time Log",
+      "1. Monitoring > Real-time Log",
+      "1. Monitoring > Real-time Log",
+      "1. Monitoring > Real-time Log",
+      "1. Monitoring > Real-time Log",
+      "1. Monitoring > Real-time Log",
+      "1. Monitoring > Real-time Log",
+      "1. Monitoring > Real-time Log\n* 장치 내 Trigger&Action 에서 Input 선택, Device : DM20 선택, Port / Switch 설정 확인",
+      "1. Device > 장치 선택 > Advanced > Image Log : Enable 설정 > Configuration : Event, Schedule 설정 > Apply\n2. Monitoring > Real-time Log > Event 발생시 Image Log 확인",
+      "1) BioStar 연결 : 정상 동작 확인\n2) 랜선 제거 : BioStar와 연결이 끊어지도록 만듬\n3) 장치에 Full Log 생성 : Max인 상태에서 BioStar와 재연결",
+      "1) Mobile Access로 인증시도",
+      "1) BioStar Mobile로 인증시도",
+      "1. 등록되지 않은 카드 인증시도",
+      "1. 등록되지 않은 카드 인증시도",
+      "1. 새로 설치한 서버에 장치 추가\n2. Full Log가 서버로 업로드됨을 확인\n3. 서버종료\n4. 장치에 여러번의 인증시도(로그가 쌓이게하는 목적)\n5. 서버 재실행\n6. 로그 업로드 여부 확인\n",
+      "1. 새로 설치한 서버에 장치 추가\n2. 수동으로 장치의 로그 업로드\n3. Full Log가 서버로 업로드됨을 확인\n4. 장치에 여러번의 인증시도(로그가 쌓이게하는 목적)\n5. 수동으로 장치의 로그 재업로드\n6. 로그 업로드 여부 확인\n",
+      "1. 장치에 연속인증 중 강제 전원 OFF\n2. 다시 전원ON\n3. 장치 메뉴> 이벤트 로그> 검색\n4. 이벤트 로그 확인",
+      "1. 장치에 연속인증 중 강제 전원 OFF\n2. 다시 전원ON\n3. 바이오스타> 모니터링> 실시간/이벤트 로그 확인"
+    ],
+    "data": [
+      "1. 인증모드별 로그 확인\n > 인증 성공 : 지문, 얼굴, 카드, ID\n > 인증 실패 : 지문, 얼굴, 카드, ID\n > Thermal Camera에 의한 Temperature 표시",
+      "1. 인증모드별 로그 확인\n > PIN 등록되지 않은 사용자 지문/얼굴+PIN 인증\n > 지문/얼굴 등록되지 않은 사용자 카드+지문/얼굴 인증\n > PIN 등록되지 않은 사용자 카드+PIN 인증\n > 지문/얼굴/PIN 등록되지 않은 사용자 카드+지문/얼굴/PIN 인증\n > 지문/얼굴 등록되지 않은 사용자 ID+지문/얼굴 인증\n > PIN 등록되지 않은 사용자 ID+PIN 인증\n > 지문/얼굴/PIN 등록되지 않은 사용자 ID+지문/얼굴/PIN 인증",
+      "1. 인증모드별 로그 확인\n> 유효 기간이 지난 사용자 인증\n> 이중 인증 성공/실패",
+      "1. 출입인증관련 로그 확인\n > 출입그룹에 속한 사용자 : 인증\n > 출입그룹에 속하지 않은 사용자 : 인증",
+      "1. IO관련 로그 확인\n > Pre-defined Alarm\n > Input",
+      "1. IO관련 로그 확인\n > Action",
+      "1. 출입문 로그 확인\n > Unlock, Lock, Open, Close, Forced Open, Held Open",
+      "1. 구역 로그 확인\n > Soft APB 위반, Hard APB 위반, Timed APB 위반, Fire Alarm 위반, Forced Lock/Unlock Schedule 인증제한\n2. Intrusion Alarm Zone Log 확인\n > 경비진입, 경비실패, 해제, 경비상태, 경보상태진입, 경보상태해제, 경비수행 인증성공, 경비수행 인증실패, 해제수행 인증성공, 해제수행 인증실패, 경비중 인증 제한",
+      "1. 사용자 관리 로그 확인\n > 사용자 등록, 지문/얼굴/카드/PIN/이름/부가정보 업데이트, 사용자 삭제/전체 삭제",
+      "1. IP 통신 관련 로그 확인\n > BioStar 연결 : BioStar->장치, BioStar 연결 끊김 : BioStar->장치, BioStar 연결 : 장치->BioStar, BioStar 연결 끊김 : 장치->BioStar, IP 재설정, RS485 연결 , RS485 연결끊김",
+      "1. DM20 관련 로그 확인\n > Supervised Input-Open/Short\n > Input",
+      "1. 첨부파일 확인(BioStar&A2 Log Name)\n> FS2 ",
+      "Full Log 생성(장치마다 상이)",
+      "Mobile Access\n> BLE\n> NFC\n\n\nTemplate On Mobile\n>ToM_AoC\n>ToM_SCC",
+      "Mobile Access\n> BLE\n> NFC",
+      "[2.x Entry 계열에 해당-숫자모드]\n32bit 초과하는 카드\n> DesFire EV1\n> ISO 15693\n> Felica\n> EM\n\nISO 14443A RID (Random CSN 동작) 카드\n> Mifare(NFC 폰)\n> iClass",
+      "[Station 계열에 해당-숫자/영숫자모드]\n32bit 초과하는 카드\n> DesFire EV1\n> ISO 15693\n> Felica\n> EM\n\nISO 14443A RID (Random CSN 동작) 카드\n> Mifare(NFC 폰)\n> iClass",
+      "로그 업데이트: 자동\n\n>이벤트 로그 FULL\n>이미지 로그 FULL\n※ 로그 쌓는 방식: AGING\n(이미지 로그 ON > 이미지 로그 FULL > 이벤트 로그 FULL)\n",
+      "로그 업데이트: 수동\n\n>이벤트 로그 FULL\n>이미지 로그 FULL\n※ 로그 쌓는 방식: AGING\n(이미지 로그 ON > 이미지 로그 FULL > 이벤트 로그 FULL)\n",
+      "장치LCD 지원모델",
+      "장치LCD 미지원모델"
+    ],
+    "expected_result": [
+      "1. 인증모드별 성공/실패 로그 및 온도가 표시된다.\n> 1:1(or 1:N) authentication succeeded (인증수단)\n> 1:1(or 1:N) authentication failed (인증수단)\n2. 부가정보(근태코드, 카드인증 종류 등)와 인증이 시도된 리더ID, 사용자 ID가 표시된다.",
+      "1. 등록안됨 관련 로그가 저장된다. (Authentication failed (Invalid credential))\n > 지문/얼굴 인증 PIN 등록안됨\n > 카드인증 지문/얼굴 등록안됨\n > 카드인증 PIN 등록안됨\n > 카드인증 지문/얼굴 등록안됨(지문/얼굴/PIN 모두 등록되지 않은 사용자)\n > ID인증 지문/얼굴 등록안됨\n > ID인증 PIN 등록안됨\n > ID인증 지문/얼굴 등록안됨(지문/얼굴/PIN 모두 등록되지 않은 사용자)\n2. 부가정보(근태코드, 카드인증 종류 등)와 인증이 시도된 리더ID, 사용자 ID가 표시된다.",
+      "1. 유효기간 아님 관련 로그가 표시된다.\n> Access denied (Invalid period)\n2. 이중인증 성공시 인증별 성공로그 및 이중인증 성공 로그가 표시된다.\n> Dual authentication succeeded\n3. 부가정보(근태코드, 카드인증 종류 등)와 인증이 시도된 리더ID, 사용자 ID가 표시된다.",
+      "1. 출입그룹 위반 관련 로그가 표시된다.\n> Access denied (Invalid access group)\n2. 부가정보(근태코드, 카드인증 종류 등)와 인증이 시도된 리더ID가 표시된다.",
+      "1. ReaderController ID 로그가 저장된다.\n2. IO장치 ID, 입력포트 인덱스가 저장된다.\n3. 사용자 ID는 표시되지 않는다.",
+      "1. Action이 발생하는 Reader ID 또는 ReaderController의 ID 로그가 저장된다.\n2. IO장치 ID, 출력포트 인덱스가 저장된다.(Controller 포트인 경우 IO장치 ID가 표시되지 않는다)\n3. 사용자 ID는 ActionID가 저장된다.",
+      "1. 출입문 ID가 저장되고 해당 이벤트 로그가 저장된다.\n2. IO장치 ID, 입력포트는 저장되지 않는다.\n3. 사용자 ID 저장되지 않는다",
+      "1. Zone ID 로그가 저장된다.\n2. IO장치 ID, 입력포트는 저장되지 않는다.\n3. 사용자 ID 저장되지 않는다\n4. 경비 수행/해제 수행/경비 중 인증 제한 시에는 어떤 장치에서 누가 수행하였는지 확인할 수 있어야 한다.\n5. 경보-침입 발생 시에는 어떤 센서(예, 회의실 창문, 창고 외벽 등)에서 침입이 감지되었지는 확인 할 수 있어야 한다.",
+      "1. ReaderController ID 로그가 저장된다.\n2. 사용자 등록시 등록성공 로그와 등록된 사용자 ID가 저장된다.\n> Device에서 등록 시 로그(Device) 등록 구분 표시\n> Server에서 등록 시 로그(Server) 등록 구분 표시\n3. 지문/얼굴/카드/PIN/부가정보 업데이트시 추가/편집/삭제 관련 로그가 저장된다.\n> Device에서 추가/편집/삭제 시 로그(Device) 등록 구분 표시\n> Server에서 추가/편집/삭제 시 로그(Server) 등록 구분 표시\n4. 사용자 삭제시 삭제성공 로그와 삭제된 사용자 ID가 저장된다.\n> Device에서 삭제 시 로그(Device) 등록 구분 표시\n> Server에서 삭제 시 로그(Server) 등록 구분 표시\n5. 사용자 전체 삭제시 사용자 ID 저장되지 않는다.\n> Device에서 전체 삭제 시 로그(Device) 등록 구분 표시\n> Server에서 전체 삭제 시 로그(Server) 등록 구분 표시",
+      "1. ReaderController ID 로그가 저장된다.\n2. BioStar와의 연결/연결끊김시 사용자 ID는 저장되지 않는다.\n3. IP 재설정시 설정된 IP주소 정보가 저장된다.\n4. RS485 연결/연결끊김시 RS485 통신이 연결된 리더ID가 저장된다.",
+      "1. Open과 Short에 대한 로그가 표시된다.\n= Supervised Input Short / Port No.\n= Supervised Input Open / Port No.\n2. Input에 대한 로그가 표시된다.\n= Input /Port No.\n",
+      "1. 장치에서 Configuration 에 설정한 Event 발생시 Image Log 가 표시된다.\n> 장치에서도 Image Log 확인\n2. 로그 List 에 Image 포함 여부를 표시한다.\n3. 로그 선택시 해당 Image 를 보여준다.\n= 해상도 : 320 x 240\n\n> Slave 장치(DM20, SIO2포함)에서는 영상 로그 미지원",
+      "1. BioStar와 재연결된 후에 정상적으로 실시간 로그가 전송, 표시 된다.",
+      "1. 일반 카드인증 이벤트로그와 분리되어 표시된다.\n> 인증성공(카드): 1:1 authentication succeeded(Mobile Card)\n> 인증실패(카드): 1:1 authentication failed(Mobile Card)\n> 인증성공(카드+지문): 1:1 authentication succeeded(Mobile Card + Fingerprint)\n> 인증성공(카드+PIN): 1:1 authentication succeeded(Mobile Card + PIN)\n> 인증성공(카드+지문+PIN): 1:1 authentication succeeded(Mobile Card + Fingerprint + PIN)\n> 1:1 협박 지문 인증성공(카드+지문): 1:1 Duress authentication succeeded(Mobile Card + Fingerprint)\n> 1:1 협박 지문 인증성공(카드+지문+PIN): 1:1 Duress authentication succeeded(Mobile Card + Fingerprint + PIN)\n> 실패에 대해서는 기존과 동일한 이벤트 로그 표시(ex. 카드 +지문에 대해 지문에서 인증실패시 1:1 인증실패(지문))",
+      "1. 일반 카드인증 이벤트로그와 분리되어 표시된다.\n> 인증성공(카드): 1:1 authentication succeeded(Mobile Card)\n> 인증실패(카드): 1:1 authentication failed(Mobile Card)\n> 인증성공(카드+지문): 1:1 authentication succeeded(Mobile Card + Fingerprint)\n> 인증성공(카드+PIN): 1:1 authentication succeeded(Mobile Card + PIN)\n> 인증성공(카드+지문+PIN): 1:1 authentication succeeded(Mobile Card + Fingerprint + PIN)\n> 1:1 협박 지문 인증성공(카드+지문): 1:1 Duress authentication succeeded(Mobile Card + Fingerprint)\n> 1:1 협박 지문 인증성공(카드+지문+PIN): 1:1 Duress authentication succeeded(Mobile Card + Fingerprint + PIN)\n> 실패에 대해서는 기존과 동일한 이벤트 로그 표시(ex. 카드 +지문에 대해 지문에서 인증실패시 1:1 인증실패(지문))",
+      "1. 10자리 이상의 카드ID는 카드ID의 뒷부분만 잘라서 표시해주어야 한다.\n: 로그로 확인가능\n: Max  Card ID : 256bit도 동일\n1-1. 영숫자모드를 지원하는 Entry 계열의 경우\n=> 영숫자모드일 때 카드ID 전체를 표시해준다.(XPASS/XPS2)\n2. RID 카드는 무시되어 반응이 없어야 한다.\n: 카드 인식음, 인증 실패 로그 등 미발생\n: 단, iClass SEOS는 PAC DATA가 출력되어야 함\n: Card Type에 따라 동일한 Card ID로 인식\n",
+      "1. 카드ID 전체를 표시해줘야 한다.\n: 로그로 확인가능\n: Max  Card ID : 256bit도 동일\n2. RID 카드는 무시되어 반응이 없어야 한다.\n: 카드 인식음, 인증 실패 로그 등 미발생\n: 단, iClass SEOS는 PAC DATA가 출력되어야 함\n: Card Type에 따라 동일한 Card ID로 인식",
+      "1. 장치로그가 서버로 모두 업로드 된다.\n2. 서버와 연결이 끊긴 이후에 발생한 로그에 대해서만 서버로 올린다.",
+      "1. 장치로그가 서버로 모두 업로드 된다.\n2. 수동으로 로그 업로드 후에 발생한 로그에 대해서만 서버로 올린다.",
+      "1. 로그 중 유효하지 않은 정보가 화면에 표시되지 않는다.",
+      "1. 로그 중 유효하지 않은 정보가 표시되지 않는다."
+    ]
+  }
+}

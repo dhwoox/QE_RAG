@@ -1,0 +1,121 @@
+{
+  "id": "COMMONR-224",
+  "content": [
+    [
+      1,
+      "1. Setting > Daylight Saving Time > Add\n2. Device > Device Info > Daylight Saving Time > 지정",
+      "BioStar에서 DST 설정 방법\n1. 장치 추가\n2. Setting > Daylight Saving Time 추가\n3. Device > Daylight Saving Time 추가",
+      "1. 일광 절약 시간 설정을 할 수 있다.\n> BioStar에서 기생성된 DST 중 2개를 선택, 설정 할 수 있다.\n> 중복 여부는 BioStar에서 체크\n2. BioStar 설정 없이 Device 자체 설정 시 BioStar와 연결 후 Device 상세 정보 진입하여 DST 확인 시 BioStar에 DST가 신규 생성된다.\n> Dayligh Time Saving 1....\n> Max - 200개\n3. 일광절약시간으로 동작이 된다.\n> 기본 화면, 인증결과, 시간설정, 로그\n> 스케줄 검사시에도 적용된 시간으로 동작\n> TimeZone, DST, Time 변경 시 이에 대한 Set DST, Time Zone, Time 로그 발생\n4. Slave에 대해서 Master의 DST, TimeZone으로 동기화 되는 지 확인 한다.\n> Slave는 새로 추가되는 시점\n> RS 485 연결이 끊어지고 재연결되는 시점> Master가 Biostar Or User에 의해 변경되는 시점\n> Slave가 Biostar Or User에 의해 변경되는 시점(Slave가 재연결 되기 전까지는 Master와 다르게 동작됨)"
+    ],
+    [
+      2,
+      "1. Menu> Device> Daylight Saving Time> Add",
+      "BioStar 사용 시\n> DST, TimeZone 설정\nDevice Only",
+      "1. 일광 절약 시간 설정(생성) 화면이 표시된다.\n> BioStar에서 기생성된 DST 적용 시 선택한 일광 절약 시간이 생성 및 설정 되어야 한다.\n> Max - 2개\n2. BioStar 설정 없이 Device 자체 설정 시 BioStar와 연결 후 Device 상세 정보 진입하여 DST 확인 시 BioStar에 DST가 신규 생성된다.\n> Dayligh Time Saving 1....\n> Max - 200개"
+    ],
+    [
+      3,
+      "1. Menu> Device> Daylight Saving Time> Add\n\n(on) DST 적용 시기 설정\n1 이름\n2 시작 날짜: 월/주/요일/시/분 \n3 종료 날짜: 월/주/요일/시/분",
+      "(on) Maximum DST(daylight saving time) per device\n> 2개\n(*) 제약 사항 - 정상 동작 보장 안됨\n> Start/End 짧은 경우(최소 1시간 이상)\n> 중복(겹침, 포함, 동일) 불가, 해가 넘어가는 경우는 허용.(Start : 11월 End : 3월).\n> BSCore에서 중복 여부 검사 지원한다.(Single Config Only)\n\n설정 범위\n> 월/주/요일/시/분 \n-:1월(기본값) ~ 12월\n-:1주(기본값) ~ 4주, Last\n-:월요일(기본값) ~ 일요일 \n-:시(00 ~ 24)\n-:분(00 ~ 59)\n> 연 : 입력 안함, 기본 연 반복",
+      "1. 각 설정 값을 저장할 수 있다.\n2. 각 설정 값을 변경할 수 있다.\n3. 일광절약시간제 적용 범위\n> 기본 화면, 인증결과, 시간설정, 로그\n> 스케줄 검사시에도 적용된 시간으로 동작\n4. 설정 상의 중복 여부 검사한다."
+    ],
+    [
+      4,
+      "1. Master 장치> Menu > Device > Date/Time\n2. Time Sync : Disable > Date/Time 변경 > OK\n3. Master 장치> Menu > Device > Daylight Saving Time > Add\n4. Slave 장치의 시간 확인",
+      "1. Master, Slave 연결",
+      "1. Slave 장치의 시간이 Master 장치의 시간과 동기화 된다.\n> 기존과 다르게 Master의 설정으로 Sync(변경 시점)됨\n> 변경 시점 - 1) Slave는 새로 추가되는 시점, 2) RS 485 연결이 끊어지고 재연결되는 시점, 3) Master가 Biostar Or User에 의해 변경되는 시점, 4) Slave가 Biostar Or User에 의해 변경되는 시점(Slave가 재연결 되기 전까지는 Master와 다르게 동작됨)\n> 신규 로그 추가 - DST Changed (GSDK GSDK-30 티켓 참고. Biostar DST applied)\n> TimeZone - Batch Edit, Device Info를 통해 변경 시 Master/Slave 모두 저장(Master-Slave가 TimeZone이 다른 경우 : 변경 시점(4 Case)에 의해 동기화\n> DST - Batch Edit를 통해 변경 시 Master는 기존 처럼 동작, Slave는 BioStar 상에는 성공, Device는 Fail(저장 안되나, 이후 변경 시점에 의해 DST 저장됨)\n> DST - Device Info를 통해 변경 시 Master는 기존 처럼 동작, Slave는 UI가 없어 기존 처럼 설정 못함"
+    ],
+    [
+      5,
+      "1. Menu > Device > Date/Time\n2. Time Sync : Disable 설정 > Date/Time 선택 > 유효범위값으로 Date/Time 설정 > OK\n3. Master 장치> Menu > Device > Daylight Saving Time > Add, Edit\n4. ESC > Log > Set Time 로그 확인\n",
+      "",
+      "1. 변경한 Date/Time에 대한 Set Time (Device Time Changed) 로그가 발생되어야 한다.\n2. 변경한 Time Zone, DST에 의해 Set Time(Time-zone Changed, DST Changed) 로그가 발생되어야 한다."
+    ],
+    [
+      6,
+      "1. Menu > Device > Date/Time\n2. Time Zone 변경 > OK\n3. Master 장치> Menu > Device > Daylight Saving Time\n4. Daylight Saving Time 변경 > OK",
+      "TimeZone\n1. Default : UTC\n2. 설정범위 : UTC -12:00 ~ UTC +14:00\nDaylight Saving Time\n1. Default : 없음\n2. 설정범위 : 기 설정 시 2개에 대해서 적용\n> 월/주/요일/시/분 \n-:1월(기본값) ~ 12월\n-:1주(기본값) ~ 4주, Last\n-:월요일(기본값) ~ 일요일 \n-:시(00 ~ 24)\n-:분(00 ~ 59)\n> 연 : 입력 안함, 기본 연 반복\n",
+      "1. 설정한 Time Zone, DST 에 맞게 시간이 표시된다.\n> 기기에서 시간 표시 시(기본화면, 인증결과, 시간설정, 로그 관련 화면에서), 해당 시간이 일광절약시간제 적용시기에 해당하면 설정에 맞게 시간을 표시해야 한다.\n> 기기에서 스케줄 검사 시에도 일광절약 시간이 적용된 상태로 검사한다\n> Time Zone 변경 시 Set Time 로그(Device Time Changed) 저장\n : Slave - TimeZone 미표시 \n> DST 변경 시 Set DST 로그(DST Applied) 저장"
+    ],
+    [
+      7,
+      "1. Menu > Device > Date/Time\n2. Time Zone 변경 > OK\n3. Master 장치> Menu > Device > Daylight Saving Time\n4. Daylight Saving Time 변경 > OK\n5. Restore Default > OK",
+      "1. Restore Default\n> Reset All\n> Reset Without Network\n\n2. 공장 초기화 모델 별 Procedure\n>CS20 : 보안 ON 후 INT 버튼 3번 > 1번 꾹",
+      "1. 초기화 완료 후 Time Zone, DST 항목이 초기화되지 않고 이전 설정값을 유지한다.\n> 공장 초기화 : TimeZone, DST 초기화"
+    ],
+    [
+      8,
+      "1. Menu > Device > Date/Time\n2. Time Sync : Enable > OK\n3. Master 장치> Menu > Device > Daylight Saving Time\n4. Daylight Saving Time 변경 > OK",
+      "RS 485 연결 상태\n> Slave 변경 주기\n1) Slave는 새로 추가되는 시점\n2) RS 485 연결이 끊어지고 재연결되는 시점\n3) Master가 Biostar Or User에 의해 변경되는 시점\n4) Slave가 Biostar Or User에 의해 변경되는 시점(Slave가 재연결 되기 전까지는 Master와 다르게 동작됨)\n",
+      "1. Enable 설정시 장치의 날짜/시간이 서버 시간으로 동기화 된다.\n> Time Sync 로 인한 Date/Time 변경시 Set Time 로그가 남는다.\n> Master : Server로 동기화 (Device Time Changed)\n> Slave : Master로 동기화 (Device Time Changed)\n> DST : Set DST 로그 저장"
+    ],
+    [
+      9,
+      "1. Master 장치> Menu > Device > Daylight Saving Time\n2. Daylight Saving Time 변경 > OK",
+      "",
+      "1. 사용자가 장치의 DST를 설정할 수 있어야 한다.\n> 선택시 해당 항목 설정 팝업 발생한다."
+    ],
+    [
+      10,
+      "1. Master 장치> Menu > Device > Daylight Saving Time\n2. Daylight Saving Time 변경 > OK",
+      "1. 장치 / BioStar 설정\n> TIME SYNC : Disabled\n> DST\nStart : 1월 1번째 Firday 18:00 ~ End : 2월 1번째 Thurday 20:00",
+      "1. 사용자가 장치의 DST를 설정할 수 있어야 한다.\n> 선택시 해당 항목 설정 팝업 발생한다.\n2. 종료 시점에 현재 시간에서 '-1'로 변경이 되어야 한다.\n> TimeZone, DST 변경에 대해서도 동일한 방식으로 -1, +1(TimeZone 차이 반영)로 동작 확인"
+    ],
+    [
+      11,
+      "1. Menu > Device > Date/Time\n2. Date, Time 을 윤달 및 해 넘어감을 확인할 수 있는 시간으로 설정 > OK",
+      "1. TEST 수행 날짜 기준으로 향후 5년 사이의 윤달과, 해넘어감을 확인\n||윤달||해넘김||\n|1) 2023년 2월 28일 -> 3월 1일로|2) 2023년 12월 31일 11시 59분 59초 -> 2024년 1월 1일 0시 0분 0초로|\n|3) 2024년 2월 28일 -> 2월 29일 -> 3월 1일로|4) 2024년 12월 31일 11시 59분 59초 -> 2025년1월 1일 0시 0분 0초로|\n|5) 2025년 2월 28일 -> 3월 1일로|6) 2025년 12월 31일 11시 59분 59초-> 2026년 1월 1일 0시 0분 0초로|\n|7) 2026년 2월 28일 -> 3월 1일로|8) 2026년 12월 31일 11시 59분 59초-> 2027년 1월 1일 0시 0분 0초로|\n|9) 2027년 2월 28일 -> 3월 1일로|10) 2027년 12월 31일 11시 59분 59초-> 2028년1월 1일 0시 0분 0초로|\n|11) 2028년 2월 28일 -> 2월 29일 -> 3월 1일로|12) 2028년 12월 31일 11시 59분 59초-> 2029년1월 1일 0시 0분 0초로|",
+      "1. 윤달과 해 넘어감이 정상적으로 이루어져야 한다.\n> DST 관련 확인 필요"
+    ],
+    [
+      12,
+      "1. DST개시 시간에 서버 및 장치시간 확인\n2. 서버(PC)시간을 DST 종료 직전의 시간으로 설정(ex. 2018 10/28 01:57)\n3. 바이오스타 서버 재시작\n4. DST종료 시간에 서버 및 장치시간 확인\n5. Master/Slave 장치에 인증시도 후 로그확인",
+      "테스트 전 환경설정\n1) 서버(PC), 장치, Client의 표준시간대> UTC+00:00(런던) 설정\n2) DST 생성(UTC+00:00(런던)의 일광절약시간이 3월 마지막주 일요일 1시 ~ 10월 마지막주 일요일 2시에 종료)\n3) 장치, Client DST 설정\n4) 서버(PC) 시간을 DST개시 직전 시간으로 설정(ex. 3월 마지막주 일요일 00:57)\n5) 바이오스타 서버 재시작",
+      "1. 01:00에 DST가 시작되어 장치 및 서버시간이 02:00으로 조정된다.\n2. 10월 마지막주 일요일 02:00에 DST 종료되어 장치 및 서버시간이 01:00으로 조정된다.\n3. 로그가 DST 조정된 시간으로 표시된다.(01:00에 인증로그 표시)"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-224",
+    "description": "",
+    "test_step": [
+      "1. Setting > Daylight Saving Time > Add\n2. Device > Device Info > Daylight Saving Time > 지정",
+      "1. Menu> Device> Daylight Saving Time> Add",
+      "1. Menu> Device> Daylight Saving Time> Add\n\n(on) DST 적용 시기 설정\n1 이름\n2 시작 날짜: 월/주/요일/시/분 \n3 종료 날짜: 월/주/요일/시/분",
+      "1. Master 장치> Menu > Device > Date/Time\n2. Time Sync : Disable > Date/Time 변경 > OK\n3. Master 장치> Menu > Device > Daylight Saving Time > Add\n4. Slave 장치의 시간 확인",
+      "1. Menu > Device > Date/Time\n2. Time Sync : Disable 설정 > Date/Time 선택 > 유효범위값으로 Date/Time 설정 > OK\n3. Master 장치> Menu > Device > Daylight Saving Time > Add, Edit\n4. ESC > Log > Set Time 로그 확인\n",
+      "1. Menu > Device > Date/Time\n2. Time Zone 변경 > OK\n3. Master 장치> Menu > Device > Daylight Saving Time\n4. Daylight Saving Time 변경 > OK",
+      "1. Menu > Device > Date/Time\n2. Time Zone 변경 > OK\n3. Master 장치> Menu > Device > Daylight Saving Time\n4. Daylight Saving Time 변경 > OK\n5. Restore Default > OK",
+      "1. Menu > Device > Date/Time\n2. Time Sync : Enable > OK\n3. Master 장치> Menu > Device > Daylight Saving Time\n4. Daylight Saving Time 변경 > OK",
+      "1. Master 장치> Menu > Device > Daylight Saving Time\n2. Daylight Saving Time 변경 > OK",
+      "1. Master 장치> Menu > Device > Daylight Saving Time\n2. Daylight Saving Time 변경 > OK",
+      "1. Menu > Device > Date/Time\n2. Date, Time 을 윤달 및 해 넘어감을 확인할 수 있는 시간으로 설정 > OK",
+      "1. DST개시 시간에 서버 및 장치시간 확인\n2. 서버(PC)시간을 DST 종료 직전의 시간으로 설정(ex. 2018 10/28 01:57)\n3. 바이오스타 서버 재시작\n4. DST종료 시간에 서버 및 장치시간 확인\n5. Master/Slave 장치에 인증시도 후 로그확인"
+    ],
+    "data": [
+      "BioStar에서 DST 설정 방법\n1. 장치 추가\n2. Setting > Daylight Saving Time 추가\n3. Device > Daylight Saving Time 추가",
+      "BioStar 사용 시\n> DST, TimeZone 설정\nDevice Only",
+      "(on) Maximum DST(daylight saving time) per device\n> 2개\n(*) 제약 사항 - 정상 동작 보장 안됨\n> Start/End 짧은 경우(최소 1시간 이상)\n> 중복(겹침, 포함, 동일) 불가, 해가 넘어가는 경우는 허용.(Start : 11월 End : 3월).\n> BSCore에서 중복 여부 검사 지원한다.(Single Config Only)\n\n설정 범위\n> 월/주/요일/시/분 \n-:1월(기본값) ~ 12월\n-:1주(기본값) ~ 4주, Last\n-:월요일(기본값) ~ 일요일 \n-:시(00 ~ 24)\n-:분(00 ~ 59)\n> 연 : 입력 안함, 기본 연 반복",
+      "1. Master, Slave 연결",
+      "TimeZone\n1. Default : UTC\n2. 설정범위 : UTC -12:00 ~ UTC +14:00\nDaylight Saving Time\n1. Default : 없음\n2. 설정범위 : 기 설정 시 2개에 대해서 적용\n> 월/주/요일/시/분 \n-:1월(기본값) ~ 12월\n-:1주(기본값) ~ 4주, Last\n-:월요일(기본값) ~ 일요일 \n-:시(00 ~ 24)\n-:분(00 ~ 59)\n> 연 : 입력 안함, 기본 연 반복\n",
+      "1. Restore Default\n> Reset All\n> Reset Without Network\n\n2. 공장 초기화 모델 별 Procedure\n>CS20 : 보안 ON 후 INT 버튼 3번 > 1번 꾹",
+      "RS 485 연결 상태\n> Slave 변경 주기\n1) Slave는 새로 추가되는 시점\n2) RS 485 연결이 끊어지고 재연결되는 시점\n3) Master가 Biostar Or User에 의해 변경되는 시점\n4) Slave가 Biostar Or User에 의해 변경되는 시점(Slave가 재연결 되기 전까지는 Master와 다르게 동작됨)\n",
+      "1. 장치 / BioStar 설정\n> TIME SYNC : Disabled\n> DST\nStart : 1월 1번째 Firday 18:00 ~ End : 2월 1번째 Thurday 20:00",
+      "1. TEST 수행 날짜 기준으로 향후 5년 사이의 윤달과, 해넘어감을 확인\n||윤달||해넘김||\n|1) 2023년 2월 28일 -> 3월 1일로|2) 2023년 12월 31일 11시 59분 59초 -> 2024년 1월 1일 0시 0분 0초로|\n|3) 2024년 2월 28일 -> 2월 29일 -> 3월 1일로|4) 2024년 12월 31일 11시 59분 59초 -> 2025년1월 1일 0시 0분 0초로|\n|5) 2025년 2월 28일 -> 3월 1일로|6) 2025년 12월 31일 11시 59분 59초-> 2026년 1월 1일 0시 0분 0초로|\n|7) 2026년 2월 28일 -> 3월 1일로|8) 2026년 12월 31일 11시 59분 59초-> 2027년 1월 1일 0시 0분 0초로|\n|9) 2027년 2월 28일 -> 3월 1일로|10) 2027년 12월 31일 11시 59분 59초-> 2028년1월 1일 0시 0분 0초로|\n|11) 2028년 2월 28일 -> 2월 29일 -> 3월 1일로|12) 2028년 12월 31일 11시 59분 59초-> 2029년1월 1일 0시 0분 0초로|",
+      "테스트 전 환경설정\n1) 서버(PC), 장치, Client의 표준시간대> UTC+00:00(런던) 설정\n2) DST 생성(UTC+00:00(런던)의 일광절약시간이 3월 마지막주 일요일 1시 ~ 10월 마지막주 일요일 2시에 종료)\n3) 장치, Client DST 설정\n4) 서버(PC) 시간을 DST개시 직전 시간으로 설정(ex. 3월 마지막주 일요일 00:57)\n5) 바이오스타 서버 재시작"
+    ],
+    "expected_result": [
+      "1. 일광 절약 시간 설정을 할 수 있다.\n> BioStar에서 기생성된 DST 중 2개를 선택, 설정 할 수 있다.\n> 중복 여부는 BioStar에서 체크\n2. BioStar 설정 없이 Device 자체 설정 시 BioStar와 연결 후 Device 상세 정보 진입하여 DST 확인 시 BioStar에 DST가 신규 생성된다.\n> Dayligh Time Saving 1....\n> Max - 200개\n3. 일광절약시간으로 동작이 된다.\n> 기본 화면, 인증결과, 시간설정, 로그\n> 스케줄 검사시에도 적용된 시간으로 동작\n> TimeZone, DST, Time 변경 시 이에 대한 Set DST, Time Zone, Time 로그 발생\n4. Slave에 대해서 Master의 DST, TimeZone으로 동기화 되는 지 확인 한다.\n> Slave는 새로 추가되는 시점\n> RS 485 연결이 끊어지고 재연결되는 시점> Master가 Biostar Or User에 의해 변경되는 시점\n> Slave가 Biostar Or User에 의해 변경되는 시점(Slave가 재연결 되기 전까지는 Master와 다르게 동작됨)",
+      "1. 일광 절약 시간 설정(생성) 화면이 표시된다.\n> BioStar에서 기생성된 DST 적용 시 선택한 일광 절약 시간이 생성 및 설정 되어야 한다.\n> Max - 2개\n2. BioStar 설정 없이 Device 자체 설정 시 BioStar와 연결 후 Device 상세 정보 진입하여 DST 확인 시 BioStar에 DST가 신규 생성된다.\n> Dayligh Time Saving 1....\n> Max - 200개",
+      "1. 각 설정 값을 저장할 수 있다.\n2. 각 설정 값을 변경할 수 있다.\n3. 일광절약시간제 적용 범위\n> 기본 화면, 인증결과, 시간설정, 로그\n> 스케줄 검사시에도 적용된 시간으로 동작\n4. 설정 상의 중복 여부 검사한다.",
+      "1. Slave 장치의 시간이 Master 장치의 시간과 동기화 된다.\n> 기존과 다르게 Master의 설정으로 Sync(변경 시점)됨\n> 변경 시점 - 1) Slave는 새로 추가되는 시점, 2) RS 485 연결이 끊어지고 재연결되는 시점, 3) Master가 Biostar Or User에 의해 변경되는 시점, 4) Slave가 Biostar Or User에 의해 변경되는 시점(Slave가 재연결 되기 전까지는 Master와 다르게 동작됨)\n> 신규 로그 추가 - DST Changed (GSDK GSDK-30 티켓 참고. Biostar DST applied)\n> TimeZone - Batch Edit, Device Info를 통해 변경 시 Master/Slave 모두 저장(Master-Slave가 TimeZone이 다른 경우 : 변경 시점(4 Case)에 의해 동기화\n> DST - Batch Edit를 통해 변경 시 Master는 기존 처럼 동작, Slave는 BioStar 상에는 성공, Device는 Fail(저장 안되나, 이후 변경 시점에 의해 DST 저장됨)\n> DST - Device Info를 통해 변경 시 Master는 기존 처럼 동작, Slave는 UI가 없어 기존 처럼 설정 못함",
+      "1. 변경한 Date/Time에 대한 Set Time (Device Time Changed) 로그가 발생되어야 한다.\n2. 변경한 Time Zone, DST에 의해 Set Time(Time-zone Changed, DST Changed) 로그가 발생되어야 한다.",
+      "1. 설정한 Time Zone, DST 에 맞게 시간이 표시된다.\n> 기기에서 시간 표시 시(기본화면, 인증결과, 시간설정, 로그 관련 화면에서), 해당 시간이 일광절약시간제 적용시기에 해당하면 설정에 맞게 시간을 표시해야 한다.\n> 기기에서 스케줄 검사 시에도 일광절약 시간이 적용된 상태로 검사한다\n> Time Zone 변경 시 Set Time 로그(Device Time Changed) 저장\n : Slave - TimeZone 미표시 \n> DST 변경 시 Set DST 로그(DST Applied) 저장",
+      "1. 초기화 완료 후 Time Zone, DST 항목이 초기화되지 않고 이전 설정값을 유지한다.\n> 공장 초기화 : TimeZone, DST 초기화",
+      "1. Enable 설정시 장치의 날짜/시간이 서버 시간으로 동기화 된다.\n> Time Sync 로 인한 Date/Time 변경시 Set Time 로그가 남는다.\n> Master : Server로 동기화 (Device Time Changed)\n> Slave : Master로 동기화 (Device Time Changed)\n> DST : Set DST 로그 저장",
+      "1. 사용자가 장치의 DST를 설정할 수 있어야 한다.\n> 선택시 해당 항목 설정 팝업 발생한다.",
+      "1. 사용자가 장치의 DST를 설정할 수 있어야 한다.\n> 선택시 해당 항목 설정 팝업 발생한다.\n2. 종료 시점에 현재 시간에서 '-1'로 변경이 되어야 한다.\n> TimeZone, DST 변경에 대해서도 동일한 방식으로 -1, +1(TimeZone 차이 반영)로 동작 확인",
+      "1. 윤달과 해 넘어감이 정상적으로 이루어져야 한다.\n> DST 관련 확인 필요",
+      "1. 01:00에 DST가 시작되어 장치 및 서버시간이 02:00으로 조정된다.\n2. 10월 마지막주 일요일 02:00에 DST 종료되어 장치 및 서버시간이 01:00으로 조정된다.\n3. 로그가 DST 조정된 시간으로 표시된다.(01:00에 인증로그 표시)"
+    ]
+  }
+}

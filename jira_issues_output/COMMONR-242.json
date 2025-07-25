@@ -1,0 +1,51 @@
+{
+  "id": "COMMONR-242",
+  "content": [
+    [
+      1,
+      "1. Monitoring> Door Status> Door 선택 후 Manual Unlock\n2. 장치 전원재인가> Reset 중 인증시도(지문 or 카드)",
+      "단일장치로 Door 설정(경광등 연결)\n> Relay와 경광등 연결시 Fail Safe Lock으로 연결",
+      "1. Reboot 전 상태로 동작되어야 한다.\n> Relay Off로 동작"
+    ],
+    [
+      2,
+      "1. Monitoring> Door Status> Door 선택 후 Manual Unlock\n2. 장치 전원재인가> Reset 중 인증시도(지문 or 카드)",
+      "단일장치로 Door 설정(경광등 연결)\n> Relay와 경광등 연결시 Fail Secure Lock으로 연결",
+      "1. Reboot 전 상태로 동작되어야 한다.\n> Relay On으로 동작"
+    ],
+    [
+      3,
+      "1. Monitoring> Door Status> Door 선택 후 Manual Unlock\n2. 장치> 장치상세정보창> Wiegand Config변경 후 저장\n3. Relay 상태확인",
+      "단일장치로 Door 설정(경광등 연결)\n> Relay와 경광등 연결시 Fail Safe Lock으로 연결",
+      "1. Relay Off 상태를 유지한다."
+    ],
+    [
+      4,
+      "1. Monitoring> Door Status> Door 선택 후 Manual Unlock\n2. 장치> 장치상세정보창> Wiegand Config변경 후 저장\n3. Relay 상태확인",
+      "단일장치로 Door 설정(경광등 연결)\n> Relay와 경광등 연결시 Fail Secure Lock으로 연결",
+      "1. Relay On 상태를 유지한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-242",
+    "description": "",
+    "test_step": [
+      "1. Monitoring> Door Status> Door 선택 후 Manual Unlock\n2. 장치 전원재인가> Reset 중 인증시도(지문 or 카드)",
+      "1. Monitoring> Door Status> Door 선택 후 Manual Unlock\n2. 장치 전원재인가> Reset 중 인증시도(지문 or 카드)",
+      "1. Monitoring> Door Status> Door 선택 후 Manual Unlock\n2. 장치> 장치상세정보창> Wiegand Config변경 후 저장\n3. Relay 상태확인",
+      "1. Monitoring> Door Status> Door 선택 후 Manual Unlock\n2. 장치> 장치상세정보창> Wiegand Config변경 후 저장\n3. Relay 상태확인"
+    ],
+    "data": [
+      "단일장치로 Door 설정(경광등 연결)\n> Relay와 경광등 연결시 Fail Safe Lock으로 연결",
+      "단일장치로 Door 설정(경광등 연결)\n> Relay와 경광등 연결시 Fail Secure Lock으로 연결",
+      "단일장치로 Door 설정(경광등 연결)\n> Relay와 경광등 연결시 Fail Safe Lock으로 연결",
+      "단일장치로 Door 설정(경광등 연결)\n> Relay와 경광등 연결시 Fail Secure Lock으로 연결"
+    ],
+    "expected_result": [
+      "1. Reboot 전 상태로 동작되어야 한다.\n> Relay Off로 동작",
+      "1. Reboot 전 상태로 동작되어야 한다.\n> Relay On으로 동작",
+      "1. Relay Off 상태를 유지한다.",
+      "1. Relay On 상태를 유지한다."
+    ]
+  }
+}

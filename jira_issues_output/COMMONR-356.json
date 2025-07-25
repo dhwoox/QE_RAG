@@ -1,0 +1,33 @@
+{
+  "id": "COMMONR-356",
+  "content": [
+    [
+      1,
+      "[바이오스타 V2.9.3 이하]\n1. 장치추가\n2. 상세정보창에서 Apply\n3. 장치에 Mifare Classic 카드 리드",
+      "장치FW\n> 커스텀 스마트 카드 지원",
+      "1. 카드가 읽혀야 한다.\n> CSN Type으로 리드\n=> Diag log로 확인가능(본문참조)"
+    ],
+    [
+      2,
+      "[바이오스타 V2.9.4 이상]\n1. 장치추가\n2. 상세정보창에서 Apply\n3. 장치에 Mifare Classic 카드 리드",
+      "장치FW\n> 커스텀 스마트 카드 지원",
+      "1. 카드가 읽혀야 한다.\n> CSN Type으로 리드\n=> Diag log로 확인가능(본문참조)"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-356",
+    "description": "",
+    "test_step": [
+      "[바이오스타 V2.9.3 이하]\n1. 장치추가\n2. 상세정보창에서 Apply\n3. 장치에 Mifare Classic 카드 리드",
+      "[바이오스타 V2.9.4 이상]\n1. 장치추가\n2. 상세정보창에서 Apply\n3. 장치에 Mifare Classic 카드 리드"
+    ],
+    "data": [
+      "장치FW\n> 커스텀 스마트 카드 지원",
+      "장치FW\n> 커스텀 스마트 카드 지원"
+    ],
+    "expected_result": [
+      "1. 카드가 읽혀야 한다.\n> CSN Type으로 리드\n=> Diag log로 확인가능(본문참조)",
+      "1. 카드가 읽혀야 한다.\n> CSN Type으로 리드\n=> Diag log로 확인가능(본문참조)"
+    ]
+  }
+}

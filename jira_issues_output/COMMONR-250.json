@@ -1,0 +1,546 @@
+{
+  "id": "COMMONR-250",
+  "content": [
+    [
+      1,
+      "1. CSN: EM4100 체크 후 적용\n2. EM Card 리드\n3. CSN: EM4100 언체크 후 적용\n4. EM Card 리드",
+      "CSN Card 지원모델\n> EM",
+      "1. EM4100에 체크가 된 경우 EM Card가 리드되고, 언체크시 리드되지 않는다."
+    ],
+    [
+      2,
+      "1. CSN: Mifare/Felica 체크 후 적용\n2. 카드 리드\n3. CSN: Mifare/Felica 언체크 후 적용\n4. 카드 리드",
+      "CSN Card 지원모델\n> Mifare/Felica/ISO-15693/EV1/EV2",
+      "1. 체크시 EM을 제외한 CSN 카드에 대해 리드되고, 언체크시 리드되지 않는다."
+    ],
+    [
+      3,
+      "1. CSN: EM4100 & Mifare/Felica 체크\n2. Wiegand Format 설정 및 Byte Order 설정\n3. 카드 리드",
+      "CSN Card 지원모델",
+      "1. 설정된 포맷 및 Byte Order 설정에 맞게 카드ID가 리드된다."
+    ],
+    [
+      4,
+      "1. Wiegand: iClass 체크 및 Wiegand Format 설정 후 적용\n2. iClass Card 리드\n3. Wiegand: iClass 언체크 후 적용\n4. iClass Card 리드",
+      "Wiegand Card 지원모델\n> iCLASS\n\nWiegand Format 설정\n> 리드할 카드 포맷과 동일",
+      "1. 체크시 iCLASS Card가 리드되고, 언체크시 iCLASS Card가 리드되지 않는다."
+    ],
+    [
+      5,
+      "1. Wiegand: iClass 체크 및 Wiegand Format 설정 후 적용\n2. iClass Card 리드\n3. Wiegand: iClass 언체크 후 적용\n4. iClass Card 리드",
+      "Wiegand Card 지원모델\n> iCLASS\n\nWiegand Format 설정\n> 리드할 카드 포맷과 상이",
+      "1. 체크 후 iCLASS Card 리드시 '띡'소리만 출력(= 결과미출력)되고, 언체크시 iCLASS Card가 리드되지 않는다."
+    ],
+    [
+      6,
+      "1. Wiegand: HID Prox 체크 및 Wiegand Format 설정 후 적용\n2. HID Prox Card 리드\n3. Wiegand: HID 언체크 후 적용\n4. HID Prox Card 리드",
+      "Wiegand Card 지원모델\n> HID\n\nWiegand Format 설정\n> 리드할 카드 포맷과 동일",
+      "1. 체크시 HID Prox Card가 리드되고, 언체크시 HID Prox Card가 리드되지 않는다."
+    ],
+    [
+      7,
+      "1. Wiegand: HID Prox 체크 및 Wiegand Format 설정 후 적용\n2. HID Prox Card 리드\n3. Wiegand: HID Prox 언체크 후 적용\n4. HID Prox Card 리드",
+      "Wiegand Card 지원모델\n> HID\n\nWiegand Format 설정\n> 리드할 카드 포맷과 상이",
+      "1. 체크 후 HID Prox Card 리드시 '띡'소리만 출력(= 결과미출력)되고, 언체크시 HID Prox Card가 리드되지 않는다."
+    ],
+    [
+      8,
+      "1. Mifare: Classic/Plus 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. Mifare: Classic/Plus 언체크 후 적용\n4. SmartCard 발급 및 리드",
+      "Smart Card 지원모델\n> Mifare\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
+      "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다."
+    ],
+    [
+      9,
+      "1. Mifare: Classic/Plus 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. Mifare: Classic/Plus 언체크 후 적용\n4. SmartCard 발급 및 리드",
+      "Smart Card 지원모델\n> Mifare\n\nLayout 설정\n> 스마트카드 레이아웃과 상이\n",
+      "1. 체크/언체크 상관없이 CSN으로 리드된다.\n> 카드발급 불가"
+    ],
+    [
+      10,
+      "1. Mifare: DesFire/DesFire EV1 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. Mifare: DesFire/DesFire EV1 언체크 후 적용\n4. SmartCard 발급 및 리드",
+      "Smart Card 지원모델\n> DesFire/DesFire EV1\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
+      "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다."
+    ],
+    [
+      11,
+      "1. Mifare: DesFire/DesFire EV1 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. Mifare: DesFire/DesFire EV1 언체크 후 적용\n4. SmartCard 발급 및 리드",
+      "Smart Card 지원모델\n> DesFire/DesFire EV1\n\nLayout 설정\n> 스마트카드 레이아웃과 상이",
+      "1. 체크/언체크 상관없이 CSN으로 리드된다.\n> 카드발급 불가"
+    ],
+    [
+      12,
+      "1. iCLASS: SR/SE 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. iCLASS: SR/SE 언체크 후 적용\n4. SmartCard 발급 및 리드",
+      "Smart Card 지원모델\n> iCLASS\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
+      "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 PAC Data 로 리드된다."
+    ],
+    [
+      13,
+      "1. iCLASS: SR/SE 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. iCLASS: SR/SE 언체크 후 적용\n4. SmartCard 발급 및 리드",
+      "Smart Card 지원모델\n> iCLASS\n\nLayout 설정\n> 스마트카드 레이아웃과 상이",
+      "1. 체크/언체크 상관없이 PAC Data 로 리드된다.\n> 카드발급 불가"
+    ],
+    [
+      14,
+      "1. iCLASS: SEOS 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. iCLASS: SEOS 언체크 후 적용\n4. SmartCard 발급 및 리드",
+      "Smart Card 지원모델\n> SEOS\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
+      "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 PAC Data 로 리드된다."
+    ],
+    [
+      15,
+      "1. iCLASS: SEOS 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. iCLASS: SEOS 언체크 후 적용\n4. SmartCard 발급 및 리드",
+      "Smart Card 지원모델\n> SEOS\n\nLayout 설정\n> 스마트카드 레이아웃과 상이",
+      "1. 체크/언체크 상관없이 PAC Data 로 리드된다.\n> 카드발급 불가"
+    ],
+    [
+      16,
+      "1. CSN: Mifare/Felica 체크\n2. SmartCard: Classic/Plus 언체크\n3. SmartCard 리드",
+      "리드할 SmartCard\n> Classic/Plus 카드",
+      "1. CSN으로 리드된다."
+    ],
+    [
+      17,
+      "1. CSN: Mifare/Felica 언체크\n2. SmartCard: Classic/Plus 체크 및 Layout 설정\n3. CSN Card 리드",
+      "리드할 CSN Card\n> Mifare",
+      "1. 리드되지 않는다."
+    ],
+    [
+      18,
+      "1. CSN: Mifare/Felica 체크\n2. SmartCard: DesFire/DesFire EV1 언체크\n3. SmartCard 리드",
+      "리드할 SmartCard\n> DesFire/DesFire EV1 카드",
+      "1. CSN으로 리드된다."
+    ],
+    [
+      19,
+      "1. CSN: Mifare/Felica 언체크\n2. SmartCard: DesFire/DesFire EV1 체크 및 Layout 설정\n3. CSN Card 리드",
+      "리드할 CSN Card\n> DesFire/DesFire EV1 카드",
+      "1. 리드되지 않는다."
+    ],
+    [
+      20,
+      "1. Wiegand: iCLASS 체크 및 포맷 설정\n2. SmartCard: SR/SE 언체크\n3. SmartCard 리드",
+      "리드할 SmartCard\n> iCLASS 카드\n\nWiegand Format 설정\n> 리드할 카드 포맷과 동일",
+      "1. PAC Data 로 리드된다."
+    ],
+    [
+      21,
+      "1. Wiegand: iCLASS 언체크\n2. SmartCard: SR/SE 체크 및 Layout 설정\n3. Wiegand Card 리드",
+      "리드할 Wiegand Card\n> iCLASS 카드\n\nLayout 설정\n> 스마트카드 레이아웃과 동일",
+      "1. 리드되지 않는다."
+    ],
+    [
+      22,
+      "1. Wiegand: iCLASS 체크\n2. SmartCard: SEOS 언체크\n3. SmartCard 리드",
+      "리드할 SmartCard\n> SEOS 카드\n\nWiegand Format 설정\n> 리드할 카드 포맷과 동일",
+      "1. PAC Data 로 리드된다."
+    ],
+    [
+      23,
+      "1. Wiegand: iCLASS 언체크\n2. SmartCard: SEOS 체크 및 Layout 설정\n3. Wiegand Card 리드",
+      "리드할 Wiegand Card\n> SEOS 카드\n\nLayout 설정\n> 스마트카드 레이아웃과 동일",
+      "1. 리드되지 않는다."
+    ],
+    [
+      24,
+      "[바이오스타 모바일]\n1. Mobile: NFC 체크 후 적용\n2. Mobile Card 발급 및 리드\n3. Mobile: NFC 언체크 후 적용\n4. Mobile Card 발급 및 리드",
+      "해당모델\n> P2/R2/L2\n\n모바일카드 지원모델\n> NFC\n\n모바일 - NFC 설정\n\nLayout 설정\n> 모바일카드 발급한 레이아웃과 동일",
+      "1. 체크된 경우 발급된 카드정보가 NFC로 리드되고, 언체크시 리드되지 않는다."
+    ],
+    [
+      25,
+      "[바이오스타 모바일]\n1. Mobile: NFC 체크 후 적용\n2. Mobile Card 발급 및 리드\n3. Mobile: NFC 언체크 후 적용\n4. Mobile Card 발급 및 리드",
+      "해당모델\n> P2/R2/L2\n\n모바일카드 지원모델\n> NFC\n\n모바일 - NFC 설정\n\nLayout 설정\n> 모바일카드 발급한 레이아웃과 상이",
+      "1. 리드되지 않는다."
+    ],
+    [
+      26,
+      "[바이오스타 모바일]\n1. Mobile: BLE 체크 후 적용\n2. Mobile Card 발급 및 리드\n3. Mobile: BLE 언체크 후 적용\n4. Mobile Card 발급 및 리드",
+      "해당모델\n> P2/R2/L2\n\n모바일카드 지원모델\n> BLE\n\n모바일 - BLE 설정\n\nLayout 설정\n> 모바일카드 발급한 레이아웃과 동일",
+      "1. 체크된 경우 발급된 카드정보가 BLE로 리드되고, 언체크시 리드되지 않는다."
+    ],
+    [
+      27,
+      "[바이오스타 모바일]\n1. Mobile: BLE 체크 후 적용\n2. Mobile Card 발급 및 리드\n3. Mobile: BLE 언체크 후 적용\n4. Mobile Card 발급 및 리드",
+      "해당모델\n> P2/R2/L2\n\n모바일카드 지원모델\n> BLE\n\n모바일 - BLE 설정\n\nLayout 설정\n> 모바일카드 발급한 레이아웃과 상이",
+      "1. 리드되지 않는다.\n=> 확인 후 내용 업데이트 예정"
+    ],
+    [
+      28,
+      "1. Card Type: 모두 Disable 설정 후 적용\n2. Card 리드",
+      "리드할 카드\n> CSN Card\n> Wiegand Card\n> Smart Card\n> Mobile Card",
+      "1. 리드되지 않는다."
+    ],
+    [
+      29,
+      "1. CSN: Mifare/Felica 체크\n2. SmartCard: Classic/Plus 언체크 \n3. DesFire/DesFire EV1 체크\n4. Calssic/Mifare의 Layout 설정\n5. 카드발급 및 리드시도",
+      "Smart Card 지원모델\n> Classic/Plus\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
+      "1. 포맷/발급이 안된다.\n2. CSN으로 리드된다."
+    ],
+    [
+      30,
+      "1. CSN: Mifare/Felica 체크\n2. SmartCard: Classic/Plus 체크 \n3. DesFire/DesFire EV1 언체크\n4. DesFire/DesFire EV1의 Layout 설정\n5. 카드발급 및 리드시도",
+      "Smart Card 지원모델\n> DesFire/DesFire EV1\n\nLayout 설정\n> 스마트카드 레이아웃과 동일",
+      "1. 포맷/발급이 안된다.\n2. CSN으로 리드된다."
+    ],
+    [
+      31,
+      "1. Wiegand: iCLASS 체크\n2. SmartCard: SR/SE 체크 \n3. SEOS 언체크\n4. SEOS의 Layout 설정\n5. 카드발급 및 리드시도",
+      "Smart Card 지원모델\n> SEOS\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
+      "1. 포맷/발급이 안된다.\n2. PAC Data로 리드된다."
+    ],
+    [
+      32,
+      "1. Wiegand: iCLASS 체크\n2. SmartCard: SEOS 체크 \n3. SR/SE 언체크\n4. SR/SE의 Layout 설정\n5. 카드발급 및 리드시도",
+      "Smart Card 지원모델\n> ICLASS\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
+      "1. 포맷/발급이 안된다.\n2. PAC Data로 리드된다."
+    ],
+    [
+      33,
+      "[Mobile Access]\n1. Mobile: NFC 체크 후 적용\n2. Mobile Card 리드\n3. Mobile: NFC 언체크 후 적용\n4. Mobile Card 리드",
+      "> Mobile Access 지원장치\n> 에어팝 - NFC 설정\n> CSN Card Type - Mifare/Felica 옵션에 대해 체크/언체크",
+      "1. 체크된 경우 발급된 카드정보가 NFC로 리드되고, 언체크시 리드되지 않는다.\n2. CSN Card Type의 옵션을 보지않는다."
+    ],
+    [
+      34,
+      "[Mobile Access]\n1. Mobile: BLE 체크 후 적용\n2. Mobile Card 리드\n3. Mobile: BLE 언체크 후 적용\n4. Mobile Card 리드",
+      "> Mobile Access 지원장치\n> 에어팝 - BLE 설정\n> CSN Card Type - Mifare/Felica 옵션에 대해 체크/언체크",
+      "1. 체크된 경우 발급된 카드정보가 BLE로 리드되고, 언체크시 리드되지 않는다.\n2. CSN Card Type의 옵션을 보지않는다."
+    ],
+    [
+      35,
+      "[Custom Smart Card]\n1. CSN: Mifare/Felica 체크\n2. Custom Smart Card : Classic/Plus 언체크\n3. Custom SmartCard 리드",
+      "> suprema smartcard - Enable/Disable\n> 리드할 SmartCard : Classic/Plus 카드",
+      "1. CSN으로 리드된다."
+    ],
+    [
+      36,
+      "[Custom Smart Card]\n\n1. CSN: Mifare/Felica 체크\n2. Custom SmartCard: DesFire/DesFire EV1 언체크\n3. Custom SmartCard 리드",
+      "> suprema smartcard - Enable/Disable\n> 리드할 SmartCard : DesFire/DesFire EV1 카드\n\n",
+      "1. CSN으로 리드된다."
+    ],
+    [
+      37,
+      "[Custom Smart Card]\n\n1. CSN:Mifare/Felica 체크\n2. Custom Smart Card: Felica Standard 언체크 \n3. Custom SmartCard 리드 ",
+      "> suprema smartcard - Enable/Disable\n> 리드할 SmartCard: Felica 카드",
+      "1.CSN으로 리드된다."
+    ],
+    [
+      38,
+      "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 체크\n3. suprema smartcard 리드",
+      "> Custom SmartCard - Enable/Disable\n",
+      "1. 체크된 경우 발급된 카드정보로 리드"
+    ],
+    [
+      39,
+      "[Custom Smart Card]\n\n1. CSN 언체크\n2. Custom SmartCard 언체크\n3. Custom SmartCard 리드",
+      "> suprema smartcard - Enable/Disable\n",
+      "1. 리드되지 않는다."
+    ],
+    [
+      40,
+      "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 체크\n3. Custom SmartCard 체크(레이아웃 설정)\n4. Custom SmartCard 리드",
+      "Layout 설정\n> 스마트카드 레이아웃과 상이\n> 레이아웃 없음",
+      "1. 리드되지 않는다."
+    ],
+    [
+      41,
+      "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 언체크\n3. Custom SmartCard 레이아웃 설정\n4. Custom SmartCard 리드\n5. Custom SmartCard 레이아웃 적용 해제",
+      "Layout 설정\n> 레이아웃 없음\n\n리드할 SmartCard\n> Classic/Plus 카드\n> DesFire/DesFire EV1 카드\n> Felica 카드",
+      "리드되지 않는다."
+    ],
+    [
+      42,
+      "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 체크\n3. Custom SmartCard 체크(레이아웃 설정)\n4. Custom SmartCard 리드",
+      "Layout 설정\n> 스마트카드 레이아웃과 동일",
+      "1. 체크된 경우 발급된 카드정보로 리드"
+    ],
+    [
+      43,
+      "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 언체크\n3. Custom SmartCard 체크(레이아웃 설정)\n4. Custom SmartCard 리드",
+      "Layout 설정\n> 스마트카드 레이아웃과 상이\n> 레이아웃 없음",
+      "1. 리드되지 않는다.\n- 반응 없음"
+    ],
+    [
+      44,
+      "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 언체크\n3. Custom SmartCard 체크(레이아웃 설정)\n4. Custom SmartCard 리드",
+      "Layout 설정\n> 스마트카드 레이아웃과 동일",
+      "1. 체크된 경우 발급된 카드정보로 리드"
+    ],
+    [
+      45,
+      "[Custom Smart Card]\n\n1. Mifare: Classic/Plus 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Custom SmartCard - Mifare: Classic/Plus 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
+      "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> Mifare\n\nLayout 설정\n> 스마트카드 레이아웃과 동일",
+      "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다."
+    ],
+    [
+      46,
+      "[Custom Smart Card]\n\n1. Mifare: Classic/Plus 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Mifare: Classic/Plus 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
+      "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> Mifare\n\nLayout 설정\n> 스마트카드 레이아웃과 상이",
+      "1. 체크/언체크 상관없이 CSN으로 리드된다.\n > 카드발급 불가"
+    ],
+    [
+      47,
+      "[Custom Smart Card]\n\n1. Mifare: DesFire/DesFire EV1 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Mifare: DesFire/DesFire EV1 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
+      "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> DesFire/DesFire EV1\n\nLayout 설정\n> 스마트카드 레이아웃과 동일",
+      "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다."
+    ],
+    [
+      48,
+      "[Custom Smart Card]\n\n1. Mifare: DesFire/DesFire EV1 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Mifare: DesFire/DesFire EV1 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
+      "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> DesFire/DesFire EV1\n\nLayout 설정\n> 스마트카드 레이아웃과 상이",
+      "1. 체크/언체크 상관없이 CSN으로 리드된다.\n> 카드발급 불가"
+    ],
+    [
+      49,
+      "[Custom Smart Card]\n\n1. Felica: Felica Standard 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Custom SmartCard - Felica: Felica Standard 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
+      "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> Felica\n\nLayout 설정\n>스마트카드 레이아웃과 동일",
+      "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다. "
+    ],
+    [
+      50,
+      "[Custom Smart Card]\n\n1. Felica: Felica Standard 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Custom SmartCard - Felica: Felica Standard 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
+      "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> Felica\n\nLayout 설정\n>스마트카드 레이아웃과 상이",
+      "1. 체크/언체크 상관없이 CSN으로 리드된다.\n>카드발급 불가"
+    ],
+    [
+      51,
+      "[Custom Smart Card]\n\n1. CSN: Mifare/Felica 언체크\n2. Custom SmartCard: Classic/Plus 체크 및 Layout 설정\n3. Custom SmartCard 리드",
+      "> suprema smartcard - Enable/Disable\n\n리드할 SmartCard\n> Classic/Plus 카드",
+      "1. 체크된 경우 발급된 카드정보로 리드된다."
+    ],
+    [
+      52,
+      "[Custom Smart Card]\n\n1. CSN: Mifare/Felica 언체크\n2. Custom SmartCard: DesFire/DesFire EV1 체크 및 Layout 설정\n3. Custom SmartCard 리드",
+      "> suprema smartcard - Enable/Disable\n\n리드할 SmartCard\n> DesFire/DesFire EV1 카드",
+      "1. 체크된 경우 발급된 카드정보로 리드된다."
+    ],
+    [
+      53,
+      "[Custom Smart Card]\n\n1. CSN 체크\n2. Suprema SmartCard 언체크\n3. Custom SmartCard 언체크\n4. Suprema SmartCard/Custom SmartCard 리드",
+      "리드할 SmartCard\n> Classic/Plus 카드\n> DesFire/DesFire EV1 카드\n> Felica 카드",
+      "CSN으로 리드된다."
+    ],
+    [
+      54,
+      "\t\n[Custom Smart Card]\n\n1. CSN 체크\n2. Suprema SmartCard 체크\n3. Custom SmartCard 언체크\n4. Custom SmartCard 리드",
+      "리드할 SmartCard\n> Classic/Plus 카드\n> DesFire/DesFire EV1 카드\n> Felica 카드",
+      "CSN으로 리드된다."
+    ],
+    [
+      55,
+      "\t\n[Custom Smart Card]\n\n1. CSN 체크\n2. Suprema SmartCard 언체크\n3. Custom SmartCard 체크\n4. Suprema SmartCard 리드",
+      "리드할 SmartCard\n> Classic/Plus 카드\n> DesFire/DesFire EV1 카드\n> Felica 카드",
+      "CSN으로 리드된다."
+    ],
+    [
+      56,
+      "[Template On Mobile]\n\n1. NFC 체크 후 적용\n2. ToM 발급 및 리드\n3. NFC 언체크 후 적용\n4. ToM 발급 및 리드",
+      "리드할 ToM 카드\n>NFC\n\n모바일 - NFC 설정\n\n※Face 발급 포함/미포함\n\n> Default: ON(단, 미지원 버전에서 지원 버전으로 업그레이드 시 OFF)",
+      "체크된 경우 발급된 카드정보가 NFC로 리드되고, 언체크시 리드되지 않는다.\n"
+    ],
+    [
+      57,
+      "[Template On Mobile] \n\n1. BLE 체크 후 적용\n2. ToM 발급 및 리드\n3. BLE 언체크 후 적용\n4. ToM 발급 및 리드",
+      "리드할 ToM 카드\n>BLE\n\n모바일 - BLE 설정\n\n※Face 발급 포함/미포함\n\n> Default: ON(단, 미지원 버전에서 지원 버전으로 업그레이드 시 OFF)",
+      "체크된 경우 발급된 카드 정보가 BLE로 리드되고, 언체크 시 리드되지 않는다.\n"
+    ],
+    [
+      58,
+      "[Template On Mobile] \n1. Disable 설정 후 적용\n2. ToM 발급 및 리드",
+      "리드할 ToM 카드\n>BLE,NFC\n\n모바일 - BLE,NFC 설정\n\n※Face 발급 포함/미포함\n",
+      "리드되지 않는다."
+    ],
+    [
+      59,
+      "[XP2-MHPB]\n1. 지원되는 Card Type 확인\n2. 지원되는 Card Read",
+      "지원되는 Card Type\n> EM, HID Prox, iClass, iClass SEOS",
+      "1. EM, HID Prox, iClass, iClass SEOS 항목이 체크 및 활성화되어 표시된다. \n※ (BioStar UI상) 미지원 항목에 대해서는 언체크된 상태에서 비활성화 처리\n\n2. 지원되는 카드에 대해 Read되어 인증결과를 출력한다.\n\n※ 지원되는 카드 타입에 대해 위에 기재된 TC 수행"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-250",
+    "description": "",
+    "test_step": [
+      "1. CSN: EM4100 체크 후 적용\n2. EM Card 리드\n3. CSN: EM4100 언체크 후 적용\n4. EM Card 리드",
+      "1. CSN: Mifare/Felica 체크 후 적용\n2. 카드 리드\n3. CSN: Mifare/Felica 언체크 후 적용\n4. 카드 리드",
+      "1. CSN: EM4100 & Mifare/Felica 체크\n2. Wiegand Format 설정 및 Byte Order 설정\n3. 카드 리드",
+      "1. Wiegand: iClass 체크 및 Wiegand Format 설정 후 적용\n2. iClass Card 리드\n3. Wiegand: iClass 언체크 후 적용\n4. iClass Card 리드",
+      "1. Wiegand: iClass 체크 및 Wiegand Format 설정 후 적용\n2. iClass Card 리드\n3. Wiegand: iClass 언체크 후 적용\n4. iClass Card 리드",
+      "1. Wiegand: HID Prox 체크 및 Wiegand Format 설정 후 적용\n2. HID Prox Card 리드\n3. Wiegand: HID 언체크 후 적용\n4. HID Prox Card 리드",
+      "1. Wiegand: HID Prox 체크 및 Wiegand Format 설정 후 적용\n2. HID Prox Card 리드\n3. Wiegand: HID Prox 언체크 후 적용\n4. HID Prox Card 리드",
+      "1. Mifare: Classic/Plus 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. Mifare: Classic/Plus 언체크 후 적용\n4. SmartCard 발급 및 리드",
+      "1. Mifare: Classic/Plus 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. Mifare: Classic/Plus 언체크 후 적용\n4. SmartCard 발급 및 리드",
+      "1. Mifare: DesFire/DesFire EV1 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. Mifare: DesFire/DesFire EV1 언체크 후 적용\n4. SmartCard 발급 및 리드",
+      "1. Mifare: DesFire/DesFire EV1 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. Mifare: DesFire/DesFire EV1 언체크 후 적용\n4. SmartCard 발급 및 리드",
+      "1. iCLASS: SR/SE 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. iCLASS: SR/SE 언체크 후 적용\n4. SmartCard 발급 및 리드",
+      "1. iCLASS: SR/SE 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. iCLASS: SR/SE 언체크 후 적용\n4. SmartCard 발급 및 리드",
+      "1. iCLASS: SEOS 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. iCLASS: SEOS 언체크 후 적용\n4. SmartCard 발급 및 리드",
+      "1. iCLASS: SEOS 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. iCLASS: SEOS 언체크 후 적용\n4. SmartCard 발급 및 리드",
+      "1. CSN: Mifare/Felica 체크\n2. SmartCard: Classic/Plus 언체크\n3. SmartCard 리드",
+      "1. CSN: Mifare/Felica 언체크\n2. SmartCard: Classic/Plus 체크 및 Layout 설정\n3. CSN Card 리드",
+      "1. CSN: Mifare/Felica 체크\n2. SmartCard: DesFire/DesFire EV1 언체크\n3. SmartCard 리드",
+      "1. CSN: Mifare/Felica 언체크\n2. SmartCard: DesFire/DesFire EV1 체크 및 Layout 설정\n3. CSN Card 리드",
+      "1. Wiegand: iCLASS 체크 및 포맷 설정\n2. SmartCard: SR/SE 언체크\n3. SmartCard 리드",
+      "1. Wiegand: iCLASS 언체크\n2. SmartCard: SR/SE 체크 및 Layout 설정\n3. Wiegand Card 리드",
+      "1. Wiegand: iCLASS 체크\n2. SmartCard: SEOS 언체크\n3. SmartCard 리드",
+      "1. Wiegand: iCLASS 언체크\n2. SmartCard: SEOS 체크 및 Layout 설정\n3. Wiegand Card 리드",
+      "[바이오스타 모바일]\n1. Mobile: NFC 체크 후 적용\n2. Mobile Card 발급 및 리드\n3. Mobile: NFC 언체크 후 적용\n4. Mobile Card 발급 및 리드",
+      "[바이오스타 모바일]\n1. Mobile: NFC 체크 후 적용\n2. Mobile Card 발급 및 리드\n3. Mobile: NFC 언체크 후 적용\n4. Mobile Card 발급 및 리드",
+      "[바이오스타 모바일]\n1. Mobile: BLE 체크 후 적용\n2. Mobile Card 발급 및 리드\n3. Mobile: BLE 언체크 후 적용\n4. Mobile Card 발급 및 리드",
+      "[바이오스타 모바일]\n1. Mobile: BLE 체크 후 적용\n2. Mobile Card 발급 및 리드\n3. Mobile: BLE 언체크 후 적용\n4. Mobile Card 발급 및 리드",
+      "1. Card Type: 모두 Disable 설정 후 적용\n2. Card 리드",
+      "1. CSN: Mifare/Felica 체크\n2. SmartCard: Classic/Plus 언체크 \n3. DesFire/DesFire EV1 체크\n4. Calssic/Mifare의 Layout 설정\n5. 카드발급 및 리드시도",
+      "1. CSN: Mifare/Felica 체크\n2. SmartCard: Classic/Plus 체크 \n3. DesFire/DesFire EV1 언체크\n4. DesFire/DesFire EV1의 Layout 설정\n5. 카드발급 및 리드시도",
+      "1. Wiegand: iCLASS 체크\n2. SmartCard: SR/SE 체크 \n3. SEOS 언체크\n4. SEOS의 Layout 설정\n5. 카드발급 및 리드시도",
+      "1. Wiegand: iCLASS 체크\n2. SmartCard: SEOS 체크 \n3. SR/SE 언체크\n4. SR/SE의 Layout 설정\n5. 카드발급 및 리드시도",
+      "[Mobile Access]\n1. Mobile: NFC 체크 후 적용\n2. Mobile Card 리드\n3. Mobile: NFC 언체크 후 적용\n4. Mobile Card 리드",
+      "[Mobile Access]\n1. Mobile: BLE 체크 후 적용\n2. Mobile Card 리드\n3. Mobile: BLE 언체크 후 적용\n4. Mobile Card 리드",
+      "[Custom Smart Card]\n1. CSN: Mifare/Felica 체크\n2. Custom Smart Card : Classic/Plus 언체크\n3. Custom SmartCard 리드",
+      "[Custom Smart Card]\n\n1. CSN: Mifare/Felica 체크\n2. Custom SmartCard: DesFire/DesFire EV1 언체크\n3. Custom SmartCard 리드",
+      "[Custom Smart Card]\n\n1. CSN:Mifare/Felica 체크\n2. Custom Smart Card: Felica Standard 언체크 \n3. Custom SmartCard 리드 ",
+      "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 체크\n3. suprema smartcard 리드",
+      "[Custom Smart Card]\n\n1. CSN 언체크\n2. Custom SmartCard 언체크\n3. Custom SmartCard 리드",
+      "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 체크\n3. Custom SmartCard 체크(레이아웃 설정)\n4. Custom SmartCard 리드",
+      "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 언체크\n3. Custom SmartCard 레이아웃 설정\n4. Custom SmartCard 리드\n5. Custom SmartCard 레이아웃 적용 해제",
+      "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 체크\n3. Custom SmartCard 체크(레이아웃 설정)\n4. Custom SmartCard 리드",
+      "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 언체크\n3. Custom SmartCard 체크(레이아웃 설정)\n4. Custom SmartCard 리드",
+      "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 언체크\n3. Custom SmartCard 체크(레이아웃 설정)\n4. Custom SmartCard 리드",
+      "[Custom Smart Card]\n\n1. Mifare: Classic/Plus 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Custom SmartCard - Mifare: Classic/Plus 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
+      "[Custom Smart Card]\n\n1. Mifare: Classic/Plus 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Mifare: Classic/Plus 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
+      "[Custom Smart Card]\n\n1. Mifare: DesFire/DesFire EV1 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Mifare: DesFire/DesFire EV1 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
+      "[Custom Smart Card]\n\n1. Mifare: DesFire/DesFire EV1 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Mifare: DesFire/DesFire EV1 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
+      "[Custom Smart Card]\n\n1. Felica: Felica Standard 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Custom SmartCard - Felica: Felica Standard 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
+      "[Custom Smart Card]\n\n1. Felica: Felica Standard 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Custom SmartCard - Felica: Felica Standard 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
+      "[Custom Smart Card]\n\n1. CSN: Mifare/Felica 언체크\n2. Custom SmartCard: Classic/Plus 체크 및 Layout 설정\n3. Custom SmartCard 리드",
+      "[Custom Smart Card]\n\n1. CSN: Mifare/Felica 언체크\n2. Custom SmartCard: DesFire/DesFire EV1 체크 및 Layout 설정\n3. Custom SmartCard 리드",
+      "[Custom Smart Card]\n\n1. CSN 체크\n2. Suprema SmartCard 언체크\n3. Custom SmartCard 언체크\n4. Suprema SmartCard/Custom SmartCard 리드",
+      "\t\n[Custom Smart Card]\n\n1. CSN 체크\n2. Suprema SmartCard 체크\n3. Custom SmartCard 언체크\n4. Custom SmartCard 리드",
+      "\t\n[Custom Smart Card]\n\n1. CSN 체크\n2. Suprema SmartCard 언체크\n3. Custom SmartCard 체크\n4. Suprema SmartCard 리드",
+      "[Template On Mobile]\n\n1. NFC 체크 후 적용\n2. ToM 발급 및 리드\n3. NFC 언체크 후 적용\n4. ToM 발급 및 리드",
+      "[Template On Mobile] \n\n1. BLE 체크 후 적용\n2. ToM 발급 및 리드\n3. BLE 언체크 후 적용\n4. ToM 발급 및 리드",
+      "[Template On Mobile] \n1. Disable 설정 후 적용\n2. ToM 발급 및 리드",
+      "[XP2-MHPB]\n1. 지원되는 Card Type 확인\n2. 지원되는 Card Read"
+    ],
+    "data": [
+      "CSN Card 지원모델\n> EM",
+      "CSN Card 지원모델\n> Mifare/Felica/ISO-15693/EV1/EV2",
+      "CSN Card 지원모델",
+      "Wiegand Card 지원모델\n> iCLASS\n\nWiegand Format 설정\n> 리드할 카드 포맷과 동일",
+      "Wiegand Card 지원모델\n> iCLASS\n\nWiegand Format 설정\n> 리드할 카드 포맷과 상이",
+      "Wiegand Card 지원모델\n> HID\n\nWiegand Format 설정\n> 리드할 카드 포맷과 동일",
+      "Wiegand Card 지원모델\n> HID\n\nWiegand Format 설정\n> 리드할 카드 포맷과 상이",
+      "Smart Card 지원모델\n> Mifare\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
+      "Smart Card 지원모델\n> Mifare\n\nLayout 설정\n> 스마트카드 레이아웃과 상이\n",
+      "Smart Card 지원모델\n> DesFire/DesFire EV1\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
+      "Smart Card 지원모델\n> DesFire/DesFire EV1\n\nLayout 설정\n> 스마트카드 레이아웃과 상이",
+      "Smart Card 지원모델\n> iCLASS\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
+      "Smart Card 지원모델\n> iCLASS\n\nLayout 설정\n> 스마트카드 레이아웃과 상이",
+      "Smart Card 지원모델\n> SEOS\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
+      "Smart Card 지원모델\n> SEOS\n\nLayout 설정\n> 스마트카드 레이아웃과 상이",
+      "리드할 SmartCard\n> Classic/Plus 카드",
+      "리드할 CSN Card\n> Mifare",
+      "리드할 SmartCard\n> DesFire/DesFire EV1 카드",
+      "리드할 CSN Card\n> DesFire/DesFire EV1 카드",
+      "리드할 SmartCard\n> iCLASS 카드\n\nWiegand Format 설정\n> 리드할 카드 포맷과 동일",
+      "리드할 Wiegand Card\n> iCLASS 카드\n\nLayout 설정\n> 스마트카드 레이아웃과 동일",
+      "리드할 SmartCard\n> SEOS 카드\n\nWiegand Format 설정\n> 리드할 카드 포맷과 동일",
+      "리드할 Wiegand Card\n> SEOS 카드\n\nLayout 설정\n> 스마트카드 레이아웃과 동일",
+      "해당모델\n> P2/R2/L2\n\n모바일카드 지원모델\n> NFC\n\n모바일 - NFC 설정\n\nLayout 설정\n> 모바일카드 발급한 레이아웃과 동일",
+      "해당모델\n> P2/R2/L2\n\n모바일카드 지원모델\n> NFC\n\n모바일 - NFC 설정\n\nLayout 설정\n> 모바일카드 발급한 레이아웃과 상이",
+      "해당모델\n> P2/R2/L2\n\n모바일카드 지원모델\n> BLE\n\n모바일 - BLE 설정\n\nLayout 설정\n> 모바일카드 발급한 레이아웃과 동일",
+      "해당모델\n> P2/R2/L2\n\n모바일카드 지원모델\n> BLE\n\n모바일 - BLE 설정\n\nLayout 설정\n> 모바일카드 발급한 레이아웃과 상이",
+      "리드할 카드\n> CSN Card\n> Wiegand Card\n> Smart Card\n> Mobile Card",
+      "Smart Card 지원모델\n> Classic/Plus\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
+      "Smart Card 지원모델\n> DesFire/DesFire EV1\n\nLayout 설정\n> 스마트카드 레이아웃과 동일",
+      "Smart Card 지원모델\n> SEOS\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
+      "Smart Card 지원모델\n> ICLASS\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
+      "> Mobile Access 지원장치\n> 에어팝 - NFC 설정\n> CSN Card Type - Mifare/Felica 옵션에 대해 체크/언체크",
+      "> Mobile Access 지원장치\n> 에어팝 - BLE 설정\n> CSN Card Type - Mifare/Felica 옵션에 대해 체크/언체크",
+      "> suprema smartcard - Enable/Disable\n> 리드할 SmartCard : Classic/Plus 카드",
+      "> suprema smartcard - Enable/Disable\n> 리드할 SmartCard : DesFire/DesFire EV1 카드\n\n",
+      "> suprema smartcard - Enable/Disable\n> 리드할 SmartCard: Felica 카드",
+      "> Custom SmartCard - Enable/Disable\n",
+      "> suprema smartcard - Enable/Disable\n",
+      "Layout 설정\n> 스마트카드 레이아웃과 상이\n> 레이아웃 없음",
+      "Layout 설정\n> 레이아웃 없음\n\n리드할 SmartCard\n> Classic/Plus 카드\n> DesFire/DesFire EV1 카드\n> Felica 카드",
+      "Layout 설정\n> 스마트카드 레이아웃과 동일",
+      "Layout 설정\n> 스마트카드 레이아웃과 상이\n> 레이아웃 없음",
+      "Layout 설정\n> 스마트카드 레이아웃과 동일",
+      "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> Mifare\n\nLayout 설정\n> 스마트카드 레이아웃과 동일",
+      "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> Mifare\n\nLayout 설정\n> 스마트카드 레이아웃과 상이",
+      "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> DesFire/DesFire EV1\n\nLayout 설정\n> 스마트카드 레이아웃과 동일",
+      "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> DesFire/DesFire EV1\n\nLayout 설정\n> 스마트카드 레이아웃과 상이",
+      "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> Felica\n\nLayout 설정\n>스마트카드 레이아웃과 동일",
+      "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> Felica\n\nLayout 설정\n>스마트카드 레이아웃과 상이",
+      "> suprema smartcard - Enable/Disable\n\n리드할 SmartCard\n> Classic/Plus 카드",
+      "> suprema smartcard - Enable/Disable\n\n리드할 SmartCard\n> DesFire/DesFire EV1 카드",
+      "리드할 SmartCard\n> Classic/Plus 카드\n> DesFire/DesFire EV1 카드\n> Felica 카드",
+      "리드할 SmartCard\n> Classic/Plus 카드\n> DesFire/DesFire EV1 카드\n> Felica 카드",
+      "리드할 SmartCard\n> Classic/Plus 카드\n> DesFire/DesFire EV1 카드\n> Felica 카드",
+      "리드할 ToM 카드\n>NFC\n\n모바일 - NFC 설정\n\n※Face 발급 포함/미포함\n\n> Default: ON(단, 미지원 버전에서 지원 버전으로 업그레이드 시 OFF)",
+      "리드할 ToM 카드\n>BLE\n\n모바일 - BLE 설정\n\n※Face 발급 포함/미포함\n\n> Default: ON(단, 미지원 버전에서 지원 버전으로 업그레이드 시 OFF)",
+      "리드할 ToM 카드\n>BLE,NFC\n\n모바일 - BLE,NFC 설정\n\n※Face 발급 포함/미포함\n",
+      "지원되는 Card Type\n> EM, HID Prox, iClass, iClass SEOS"
+    ],
+    "expected_result": [
+      "1. EM4100에 체크가 된 경우 EM Card가 리드되고, 언체크시 리드되지 않는다.",
+      "1. 체크시 EM을 제외한 CSN 카드에 대해 리드되고, 언체크시 리드되지 않는다.",
+      "1. 설정된 포맷 및 Byte Order 설정에 맞게 카드ID가 리드된다.",
+      "1. 체크시 iCLASS Card가 리드되고, 언체크시 iCLASS Card가 리드되지 않는다.",
+      "1. 체크 후 iCLASS Card 리드시 '띡'소리만 출력(= 결과미출력)되고, 언체크시 iCLASS Card가 리드되지 않는다.",
+      "1. 체크시 HID Prox Card가 리드되고, 언체크시 HID Prox Card가 리드되지 않는다.",
+      "1. 체크 후 HID Prox Card 리드시 '띡'소리만 출력(= 결과미출력)되고, 언체크시 HID Prox Card가 리드되지 않는다.",
+      "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다.",
+      "1. 체크/언체크 상관없이 CSN으로 리드된다.\n> 카드발급 불가",
+      "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다.",
+      "1. 체크/언체크 상관없이 CSN으로 리드된다.\n> 카드발급 불가",
+      "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 PAC Data 로 리드된다.",
+      "1. 체크/언체크 상관없이 PAC Data 로 리드된다.\n> 카드발급 불가",
+      "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 PAC Data 로 리드된다.",
+      "1. 체크/언체크 상관없이 PAC Data 로 리드된다.\n> 카드발급 불가",
+      "1. CSN으로 리드된다.",
+      "1. 리드되지 않는다.",
+      "1. CSN으로 리드된다.",
+      "1. 리드되지 않는다.",
+      "1. PAC Data 로 리드된다.",
+      "1. 리드되지 않는다.",
+      "1. PAC Data 로 리드된다.",
+      "1. 리드되지 않는다.",
+      "1. 체크된 경우 발급된 카드정보가 NFC로 리드되고, 언체크시 리드되지 않는다.",
+      "1. 리드되지 않는다.",
+      "1. 체크된 경우 발급된 카드정보가 BLE로 리드되고, 언체크시 리드되지 않는다.",
+      "1. 리드되지 않는다.\n=> 확인 후 내용 업데이트 예정",
+      "1. 리드되지 않는다.",
+      "1. 포맷/발급이 안된다.\n2. CSN으로 리드된다.",
+      "1. 포맷/발급이 안된다.\n2. CSN으로 리드된다.",
+      "1. 포맷/발급이 안된다.\n2. PAC Data로 리드된다.",
+      "1. 포맷/발급이 안된다.\n2. PAC Data로 리드된다.",
+      "1. 체크된 경우 발급된 카드정보가 NFC로 리드되고, 언체크시 리드되지 않는다.\n2. CSN Card Type의 옵션을 보지않는다.",
+      "1. 체크된 경우 발급된 카드정보가 BLE로 리드되고, 언체크시 리드되지 않는다.\n2. CSN Card Type의 옵션을 보지않는다.",
+      "1. CSN으로 리드된다.",
+      "1. CSN으로 리드된다.",
+      "1.CSN으로 리드된다.",
+      "1. 체크된 경우 발급된 카드정보로 리드",
+      "1. 리드되지 않는다.",
+      "1. 리드되지 않는다.",
+      "리드되지 않는다.",
+      "1. 체크된 경우 발급된 카드정보로 리드",
+      "1. 리드되지 않는다.\n- 반응 없음",
+      "1. 체크된 경우 발급된 카드정보로 리드",
+      "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다.",
+      "1. 체크/언체크 상관없이 CSN으로 리드된다.\n > 카드발급 불가",
+      "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다.",
+      "1. 체크/언체크 상관없이 CSN으로 리드된다.\n> 카드발급 불가",
+      "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다. ",
+      "1. 체크/언체크 상관없이 CSN으로 리드된다.\n>카드발급 불가",
+      "1. 체크된 경우 발급된 카드정보로 리드된다.",
+      "1. 체크된 경우 발급된 카드정보로 리드된다.",
+      "CSN으로 리드된다.",
+      "CSN으로 리드된다.",
+      "CSN으로 리드된다.",
+      "체크된 경우 발급된 카드정보가 NFC로 리드되고, 언체크시 리드되지 않는다.\n",
+      "체크된 경우 발급된 카드 정보가 BLE로 리드되고, 언체크 시 리드되지 않는다.\n",
+      "리드되지 않는다.",
+      "1. EM, HID Prox, iClass, iClass SEOS 항목이 체크 및 활성화되어 표시된다. \n※ (BioStar UI상) 미지원 항목에 대해서는 언체크된 상태에서 비활성화 처리\n\n2. 지원되는 카드에 대해 Read되어 인증결과를 출력한다.\n\n※ 지원되는 카드 타입에 대해 위에 기재된 TC 수행"
+    ]
+  }
+}

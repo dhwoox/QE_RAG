@@ -1,0 +1,57 @@
+{
+  "id": "COMMONR-329",
+  "content": [
+    [
+      1,
+      "[BioStar V2.9.5 이상]\n1. 사용자 Period를 2030-12-31 이후로 설정\n2. (BDP-629 미적용 FW) 장치에 사용자 전송\n3. 장치에 저장된 사용자 Period 확인\n4. 인증동작에 문제없는지 확인",
+      "",
+      "1. 전송한 사용자에 설정된 Period 대로 장치UI에서 표시된다.\n2. 인증시 Period 설정에 맞게 동작된다."
+    ],
+    [
+      2,
+      "[Biostar V2.9.4 이하]\n1. A 사용자 Period를 2030-12-31 이전으로 설정\n2. 장치는 BDP-629 적용되어 2030-12-31 이후로 A 사용자 Period가 설정되어 저장된 상태\n3. 서버에서 장치로 A 사용자 전송\n4. 장치에 저장된 A 사용자 Period 확인",
+      "",
+      "1. 서버에서 내려준 사용자의 Period 정보로 장치UI에서 표시된다."
+    ],
+    [
+      3,
+      "[Biostar V2.9.4 이하]\n1. 장치는 BDP-629 적용되어 2030-12-31 이후로 A 사용자 Period가 설정되어 저장\n2. BioStar> Device> 장치선택 후 마우스 우클릭> 장치의 사용자 관리\n3. A 사용자 선택 후 업로드\n4. 동작확인",
+      "",
+      "1. 아래와 같은 조건으로 동작이 되어야 한다.\n> BioStar V2.9.4.29(BDP-629 미지원)에서는 실패\n: Invalid format,131085\n> BioStar V2.9.5(BDP-629 지원) 이상에서는 성공"
+    ],
+    [
+      4,
+      "[Biostar V2.9.4 이하]\n\n1. (장치 BDP-629 적용) 장치메뉴> 사용자> Add User or Seearch User> 사용자 정보입력 후 적용\n 2. BioStar2 > User 리스트 확인\n3. 다른 장치 User 확인",
+      "<사용자 자동 동기화: 모든장치(장치 사용자 변경 포함 설정>",
+      "1. 아래와 같은 조건에서 사용자 추가시 자동으로 서버 및 서버에 연결된 다른 장치로 전송된다.\n> BioStar V2.9.4.29(BDP-629 미지원)에서는 실패\n: Invalid format,131085, 서버 반영 실패\n: 2030/12/31 - 기존 처럼 정상 동작\n> BioStar V2.9.5(BDP-629 지원) 이상에서는 성공\n"
+    ],
+    [
+      5,
+      "[BDP-629 지원 V1.3.0]\n0. User > Add : 2037년 포함\n1. Menu > Device > USB Memory : Export\n[BDP-629 미지원 V1.2.3]\n0. FirmWare Downgrade\n1.Menu > Device > USB Memory : Import\n2.Import > 항목 선택 > OK\n3.인증 결과 확인",
+      "USB Export / Import\n1. USB Memory 삽입된 상태\n> BioStar2_20180123172022.tgz\n2. 설정 항목 : User\n\nFirmWare Downgrade\nV1.3.0 -> V1.2.3",
+      "1. Export / Import 관련 정상 동작 한다.\n2. 2037년 미지원 버전에서도 인증 관련하여 정상 동작 한다.\n3. 2037년 미지원 버전에서 사용자 편집 시 유효기간 유효성 체크로 Invalid Format으로 등록 실패 된다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-329",
+    "description": "",
+    "test_step": [
+      "[BioStar V2.9.5 이상]\n1. 사용자 Period를 2030-12-31 이후로 설정\n2. (BDP-629 미적용 FW) 장치에 사용자 전송\n3. 장치에 저장된 사용자 Period 확인\n4. 인증동작에 문제없는지 확인",
+      "[Biostar V2.9.4 이하]\n1. A 사용자 Period를 2030-12-31 이전으로 설정\n2. 장치는 BDP-629 적용되어 2030-12-31 이후로 A 사용자 Period가 설정되어 저장된 상태\n3. 서버에서 장치로 A 사용자 전송\n4. 장치에 저장된 A 사용자 Period 확인",
+      "[Biostar V2.9.4 이하]\n1. 장치는 BDP-629 적용되어 2030-12-31 이후로 A 사용자 Period가 설정되어 저장\n2. BioStar> Device> 장치선택 후 마우스 우클릭> 장치의 사용자 관리\n3. A 사용자 선택 후 업로드\n4. 동작확인",
+      "[Biostar V2.9.4 이하]\n\n1. (장치 BDP-629 적용) 장치메뉴> 사용자> Add User or Seearch User> 사용자 정보입력 후 적용\n 2. BioStar2 > User 리스트 확인\n3. 다른 장치 User 확인",
+      "[BDP-629 지원 V1.3.0]\n0. User > Add : 2037년 포함\n1. Menu > Device > USB Memory : Export\n[BDP-629 미지원 V1.2.3]\n0. FirmWare Downgrade\n1.Menu > Device > USB Memory : Import\n2.Import > 항목 선택 > OK\n3.인증 결과 확인"
+    ],
+    "data": [
+      "<사용자 자동 동기화: 모든장치(장치 사용자 변경 포함 설정>",
+      "USB Export / Import\n1. USB Memory 삽입된 상태\n> BioStar2_20180123172022.tgz\n2. 설정 항목 : User\n\nFirmWare Downgrade\nV1.3.0 -> V1.2.3"
+    ],
+    "expected_result": [
+      "1. 전송한 사용자에 설정된 Period 대로 장치UI에서 표시된다.\n2. 인증시 Period 설정에 맞게 동작된다.",
+      "1. 서버에서 내려준 사용자의 Period 정보로 장치UI에서 표시된다.",
+      "1. 아래와 같은 조건으로 동작이 되어야 한다.\n> BioStar V2.9.4.29(BDP-629 미지원)에서는 실패\n: Invalid format,131085\n> BioStar V2.9.5(BDP-629 지원) 이상에서는 성공",
+      "1. 아래와 같은 조건에서 사용자 추가시 자동으로 서버 및 서버에 연결된 다른 장치로 전송된다.\n> BioStar V2.9.4.29(BDP-629 미지원)에서는 실패\n: Invalid format,131085, 서버 반영 실패\n: 2030/12/31 - 기존 처럼 정상 동작\n> BioStar V2.9.5(BDP-629 지원) 이상에서는 성공\n",
+      "1. Export / Import 관련 정상 동작 한다.\n2. 2037년 미지원 버전에서도 인증 관련하여 정상 동작 한다.\n3. 2037년 미지원 버전에서 사용자 편집 시 유효기간 유효성 체크로 Invalid Format으로 등록 실패 된다."
+    ]
+  }
+}

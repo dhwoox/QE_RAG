@@ -1,0 +1,33 @@
+{
+  "id": "COMMONR-101",
+  "content": [
+    [
+      1,
+      "1. Device > Search Device\n2. Device List",
+      "Avahi Daemon 구현 필요\n> Wireless/Ethernet  - DHCP Fail",
+      "1. Zero Config IP로 검색 가능해야 한다.\n> Pre-defined range\n-: Avahi 미구현 - 169.254.0.1, Avahi 구현: 169.254.xxx.xxx\n> DHCP로 IP 획득이 실패한 경우 동작이 되는 지 확인\n> Set IP로 고정 IP 설정하여 추가 가능하다.\n> UDP/TCP - Single인 경우 장치 1개 검색 가능, Multi인 경우 Avahi 미구현 시 검색 불가/Avahi 구현 시 장치 여러 개 검색 가능(TCP - Single)\n2. Device에서는 169.254.0.1, 169.254.xxx.xxx로 표시및 동작이 되어야 한다."
+    ],
+    [
+      2,
+      "1. PC IP 설정(ex. 192.168.0.15)\n2. ip time에서 ip할당 대역대를 작게 설정(ex. 192.168.0.15 ~ 192.168.0.16)\n3. PC Lan Cable과 기타 장치 1대(192.168.0.16 할당 목적)와 검증할 장치의 Lan Cable을 ip time의 일반포트에 연결(설정한 대역대에 따라 연결되는 장치수는 다를 수 있음)\n4. 바이오스타에 접속(ex. 192.168.0.15)해 장치 검색해 IP에 169.254.xxx.xxx로 표시되는지 확인",
+      "20회 연속 확인.",
+      "1. Zero Config IP로 검색 가능해야 한다.\n> Pre-defined range\n-: Avahi 미구현 - 169.254.0.1, Avahi 구현: 169.254.xxx.xxx\n> DHCP로 IP 획득이 실패한 경우 동작이 되는 지 확인\n> Set IP로 고정 IP 설정하여 추가 가능하다.\n> UDP/TCP - Single인 경우 장치 1개 검색 가능, Multi인 경우 Avahi 미구현 시 검색 불가/Avahi 구현 시 장치 여러 개 검색 가능(TCP - Single)\n2. Device에서는 169.254.0.1, 169.254.xxx.xxx로 표시및 동작이 되어야 한다.\n3. 연속 동작에도 정상적으로 동작해야 한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-101",
+    "description": "",
+    "test_step": [
+      "1. Device > Search Device\n2. Device List",
+      "1. PC IP 설정(ex. 192.168.0.15)\n2. ip time에서 ip할당 대역대를 작게 설정(ex. 192.168.0.15 ~ 192.168.0.16)\n3. PC Lan Cable과 기타 장치 1대(192.168.0.16 할당 목적)와 검증할 장치의 Lan Cable을 ip time의 일반포트에 연결(설정한 대역대에 따라 연결되는 장치수는 다를 수 있음)\n4. 바이오스타에 접속(ex. 192.168.0.15)해 장치 검색해 IP에 169.254.xxx.xxx로 표시되는지 확인"
+    ],
+    "data": [
+      "Avahi Daemon 구현 필요\n> Wireless/Ethernet  - DHCP Fail",
+      "20회 연속 확인."
+    ],
+    "expected_result": [
+      "1. Zero Config IP로 검색 가능해야 한다.\n> Pre-defined range\n-: Avahi 미구현 - 169.254.0.1, Avahi 구현: 169.254.xxx.xxx\n> DHCP로 IP 획득이 실패한 경우 동작이 되는 지 확인\n> Set IP로 고정 IP 설정하여 추가 가능하다.\n> UDP/TCP - Single인 경우 장치 1개 검색 가능, Multi인 경우 Avahi 미구현 시 검색 불가/Avahi 구현 시 장치 여러 개 검색 가능(TCP - Single)\n2. Device에서는 169.254.0.1, 169.254.xxx.xxx로 표시및 동작이 되어야 한다.",
+      "1. Zero Config IP로 검색 가능해야 한다.\n> Pre-defined range\n-: Avahi 미구현 - 169.254.0.1, Avahi 구현: 169.254.xxx.xxx\n> DHCP로 IP 획득이 실패한 경우 동작이 되는 지 확인\n> Set IP로 고정 IP 설정하여 추가 가능하다.\n> UDP/TCP - Single인 경우 장치 1개 검색 가능, Multi인 경우 Avahi 미구현 시 검색 불가/Avahi 구현 시 장치 여러 개 검색 가능(TCP - Single)\n2. Device에서는 169.254.0.1, 169.254.xxx.xxx로 표시및 동작이 되어야 한다.\n3. 연속 동작에도 정상적으로 동작해야 한다."
+    ]
+  }
+}

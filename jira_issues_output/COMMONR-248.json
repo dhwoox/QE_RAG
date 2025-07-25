@@ -1,0 +1,50 @@
+{
+  "id": "COMMONR-248",
+  "content": [
+    [
+      1,
+      "1. FW Upgrade 시도\n2. Upgrade 진행 중 장치의 전원 재인가\n   > 장치에 Write 중일 때\n3. 부팅 후 FW 정보 확인",
+      "장치모드: Default/Master",
+      "1. 전원인가 후 나머지 부분에 대해 Write된다."
+    ],
+    [
+      2,
+      "<RS485 구성>\n1. Slave 장치에 FW Upgrade 시도\n2. Slave Upgrade 진행 중 Slave 장치의 전원 재인가\n   > 장치에 Write 중일 때\n3. 부팅 후 FW 정보 확인",
+      "",
+      "1. 전원인가 후 나머지 부분에 대해 Write된다."
+    ],
+    [
+      3,
+      "1. 잘못된 FW Upgrade 시도",
+      "확인장치\n> Master/Slave\n\n잘못된 FW\n> L2 V1.3.2_20181123 BetaFW",
+      "1. FW Upgrade 중 문제발생시 부팅되지 않고 멈춘다.\n2. 전원재인가 후 처음 백업된 Recovery FW로 복구된다."
+    ],
+    [
+      4,
+      "1. BLE FW Upgrade 시도\n2. Upgrade 완료 후 장치 Reboot\n3. FW 버전 확인",
+      "BLE 지원장치",
+      "1. Recovery FW로 동작되지 않아야 한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-248",
+    "description": "",
+    "test_step": [
+      "1. FW Upgrade 시도\n2. Upgrade 진행 중 장치의 전원 재인가\n   > 장치에 Write 중일 때\n3. 부팅 후 FW 정보 확인",
+      "<RS485 구성>\n1. Slave 장치에 FW Upgrade 시도\n2. Slave Upgrade 진행 중 Slave 장치의 전원 재인가\n   > 장치에 Write 중일 때\n3. 부팅 후 FW 정보 확인",
+      "1. 잘못된 FW Upgrade 시도",
+      "1. BLE FW Upgrade 시도\n2. Upgrade 완료 후 장치 Reboot\n3. FW 버전 확인"
+    ],
+    "data": [
+      "장치모드: Default/Master",
+      "확인장치\n> Master/Slave\n\n잘못된 FW\n> L2 V1.3.2_20181123 BetaFW",
+      "BLE 지원장치"
+    ],
+    "expected_result": [
+      "1. 전원인가 후 나머지 부분에 대해 Write된다.",
+      "1. 전원인가 후 나머지 부분에 대해 Write된다.",
+      "1. FW Upgrade 중 문제발생시 부팅되지 않고 멈춘다.\n2. 전원재인가 후 처음 백업된 Recovery FW로 복구된다.",
+      "1. Recovery FW로 동작되지 않아야 한다."
+    ]
+  }
+}

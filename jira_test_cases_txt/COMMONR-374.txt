@@ -1,5 +1,17 @@
 ■ 이슈 키: COMMONR-374
 ■ 제목: [BSX지원기능][BDP-954] Door control on device
+■ 설명: 1. 기획
+https://jira.suprema.co.kr/browse/BDP-954
+2. 지원 장치
+LCD 지원 장치 : BS3, FSF2, BS2a, BLN2, XS2, BL2
+3. 사전 조건
+> BioStar 이용 Door 구성
+> Door 구성 시  반드시 Master 장치가 입실 / 퇴실 중 리더로 포함
+4. 출입문 제어 진입
+>  Admin  처럼 인증 후 진입, 현재 Master Password 기능이 추가 됨으로 반드시 인증을 요청 하나, 이 기능이 포함 안되면, Admin 처럼 인증 동작
+5. 미지원 장치
+> Master와 연결이 끊어진 Slave, Wiegand Reader, LCD 지원 장치 이외 장치
+
 ============================================================
 
 ■ 테스트 스텝

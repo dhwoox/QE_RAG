@@ -1,5 +1,53 @@
 ■ 이슈 키: COMMONR-231
 ■ 제목: 구역 - Interlock Zone - Slave Device UI 및 Alarm 동작
+■ 설명: 1. 개요:
+    안쪽 출입문과 바깥쪽 출입문이 있고 모든 출입 문이 개방되면 도주의 위험이 있으므로 어느 한쪽은 반드시 폐쇄 되어야 할 경우에 사용된다. ,
+    이중 문으로 구성 되어 (Air Lock) 다른 한 쪽 문을 통과 하기 전에 반드시 반대 쪽이 닫혀 있어야 하는 경우 사용된다.
+
+2. 요구사항
+    가. 설정
+          - CoreStation에서만 지원한다.
+          - 로컬 모드만 지원한다.
+          - 활성/비활성화를 지원한다.
+          - 출입문을 선택하도록 지원한다. (하나의 구역은 최소 2개에서 최대 4개의 출입문 지원)
+          - 출입문 선택시 Door Sensor가 구성된 CST 하위 장치의 Door들만 출력된다.
+          - 인증으로만 컨트롤 하도록 지원한다.
+          - Sensor 옵션을 지원하면서 그에 대한 N/O, N/C 타입을 지원한다.
+          - Bypass 그룹은 미지원한다.
+          - 타 Zone 과 중복으로 설정이 불가하다.(FireAlarm Zone에는 설정가능하다.)
+          - 동일타입의 Zone에 대해 중복으로 설정이 불가하다.
+
+    나. 인증 성공으로 동작하기 위한 조건
+          설정된 출입문의 상태가 Relay Lock 이면서 Door Close가 되었을 때 인증성공으로 동작하고 문이 개방되어야 한다.
+
+    다. 동작
+          - 재실 중 인증 제한이라는 옵션을 두어 재실중일 때 출입문의 개방을 허용할지 말지에 대해 동작되도록 한다. (최대 4개 지원)
+             : ex. Sensor Enable로 설정된 경우에는 문이 개방되지 않는다..(= 출입불가)
+          - Sensor enabled 인 상태에서도 fire alarm과 관리자 수동 open은 동작한다
+          - FireAlarm 발생과 관리자에 의해 컨트롤되는 부분에 대해서는 Interlock Zone보다 우선순위가 높다.
+          - 인증 성공/실패시 Slave 장치에서는 'Access Success / Access Denied'로만 Noti해준다.
+
+    라. 알람
+          - 구역 내 출입문이 개방된 상태인 이유로 인증이 제한되는 경우 장치 출력을 지정하여 Siren 및 Lamp를 동작할 수 있어야 한다.
+          - 재실 중 인증 제한(Sensor Enable)된 이유로 인증이 제한되는 경우 장치 출력을 지정하여 Siren 및 Lamp를 동작할 수 있어야 한다.
+
+    마. 모니터링
+          - 구역 내 출입문이 개방된 상태에서는 인증을 하더라도 Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시해야 한다.
+             : Zone ID, 개방된 출입문의 Door ID 정보, User ID, 출입제한(문열림에 의한) 로그가 표시되어야 한다.
+               (열린 출입문이 다수인 경우 Door ID가 모두 출력된다 => 개방된 Door Name+나머지 열린갯수로 표시되어짐)
+               -> 1) User Name / Access Denied(Interlock)
+               -> 1) Zone Name / Interlock door open denied alarm - 알람설정된 경우
+               -> 1) Door Name / Zone Name / Interlock door open denied
+               -> 2) Zone Name / Interlock zone Alarm Clear - 알람설정된 경우
+          - Sensor Enable에 의해 출입을 할 수 없는 상태에서는 인증을 하더라도 Access Deniend로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시해야 한다.
+             : Zone ID, Input ID, User ID 정보, 출입제한(Sensor에 의한) 로그가 표시되어야 한다.
+               -> 1) User Name / Access Denied(Interlock)
+               -> 1) Input ID / Zone Name / Interlock door open denied(Occupied)
+               -> 1) Zone Name / Interlock door open denied alarm(Occupied) - 알람설정된 경우
+               -> 2) Zone Name / Interlock zone Alarm Clear - 알람설정된 경우
+          - Interlock Zone에 속한 Door에 등록되지 않은 사용자로 인증할 경우 인증실패로 표시해야한다.
+          - Door Status에서 Interlock Zone에 설정된 Door를 선택해 컨트롤 하게될 경우 Warning을 발생시켜 사용자에 Noti해준다.
+ 
 ============================================================
 
 ■ 테스트 스텝

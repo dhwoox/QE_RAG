@@ -1,5 +1,18 @@
 ■ 이슈 키: COMMONR-245
 ■ 제목: [BSPP-363] Wiegand Out(Ouput, In/Output) 설정과 장치 Trigger&Action에서 Input 및 Function 설정에 따른 인증동작
+■ 설명: 동작사양
+
+> Bypass 켜짐, Function 켜짐 인 경우, 기존과 같이 Bypass 가 우선 하여 동작하고, Function 입력이 들어와야 인증 결과를 표시한다. 
+> 지원 카드 : AOC, SCC, 일반 카드
+> 매칭 유무 : 인증 모드에 따라 내부적으로 매칭 수행
+> 인증 모드: Function 동작 있을 경우, 카드, ID + PW, 그리고 지문, 얼굴 모두 동일하게 Input을 받아 인증 성공/실패를 한번만 표시한다. 
+                  단, 지문/얼굴, ID+PW 인증 실패의 경우 (Fail Code 전송과 상관 없이) 인증 실패를 장치에서 표시한다.  
+                  카드가 없어 Wiegand Out이 나가지 않는 경우에도(Function, Bypass 둘 중하나라도 설정 된 경우 상관 없이) 인증 성공/실패 미표시 한다. 
+> 인증 실패(Fail Code 설정) 시 Fail Code 동작(장치에서는 2회 인증 성공/실패 관련하여 표시)
+> 인증 실패(Fail Code 미설정) 시 별도 성공/실패 화면 표시 및 사운드, LED 발생
+> Event Code 생성 - 인증 성공/실패(Door, Zone, 인증모드 오류 포함)에 대해서, 이후 입력 신호에 따라 성공/실패 화면 표시 및 사운드 발생
+> Access Granted/Access Denied 설정 시 동작(개별, 동시)
+
 ============================================================
 
 ■ 테스트 스텝

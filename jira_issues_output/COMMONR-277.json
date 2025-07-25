@@ -1,0 +1,101 @@
+{
+  "id": "COMMONR-277",
+  "content": [
+    [
+      1,
+      "[BioStar에 장치추가된 상태]\n\n1. Intelligent PD 옵션: Default 외의 값으로 설정\n2. Network Reset 수행\n3. Intelligent PD 옵션 설정값 확인",
+      "> Exception Code: 사용안함(Default)외 다른 값\n> Output Info: Card ID(Default)외 다른 값\n> OSDP ID: 0(Default)외 다른 값",
+      "1. Intelligent PD 옵션값이 초기화된다.\n> Exception Code: 사용안함(Default)\n> Output Info: Card ID(Default)\n> OSDP ID: 0(Default)"
+    ],
+    [
+      2,
+      "[BioStar에 장치추가된 상태]\n\n1. HID OSDP Tool과 연결\n2. 바이오스타에서 Intelligent PD 옵션 설정\n3. Network Reset 수행\n4. HID OSDP Tool 과의 연결상태 확인",
+      "Intelligent PD 옵션설정\n> Default 값으로 설정\n> Default 외 값으로 설정",
+      "1. Default 값으로 설정되었던 경우 장치 부팅 후 재연결되어 통신한다.\n\n2. Default 외 값으로 설정되었던 경우 HID Tool과의 연결을 끊었다가 다시 연결을 시켜줘야 한다."
+    ],
+    [
+      3,
+      "[BioStar에 장치추가된 상태]\n\n1. 바이오스타에서 Intelligent PD 옵션: Default 외의 값으로 설정\n2. Reset All 수행\n3. Intelligent PD 옵션 설정값 확인",
+      "",
+      "1. Intelligent PD 옵션값이 초기화된다.\n> Exception Code: 사용안함(Default)\n> Output Info: Card ID(Default)\n> OSDP ID: 0(Default)"
+    ],
+    [
+      4,
+      "[BioStar에 장치추가된 상태]\n\n1. HID OSDP Tool과 연결\n2. 바이오스타에서 Intelligent PD 옵션 설정\n3. Reset All 수행\n4. HID OSDP Tool 과의 연결상태 확인",
+      "Intelligent PD 옵션설정\n> Default 값으로 설정\n> Default 외 값으로 설정",
+      "1. Default 값으로 설정되었던 경우 장치 부팅 후 재연결되어 통신한다.\n\n2. Default 외 값으로 설정되었던 경우 HID Tool과의 연결을 끊었다가 다시 연결을 시켜줘야 한다."
+    ],
+    [
+      5,
+      "[BioStar에 장치추가된 상태]\n\n1. Intelligent PD 옵션: Default 외의 값으로 설정\n2. Without Network 수행\n3. Intelligent PD 옵션 설정값 확인",
+      "",
+      "1. Intelligent PD 설정값이 유지된다."
+    ],
+    [
+      6,
+      "[BioStar에 장치추가된 상태]\n\n1. HID OSDP Tool과 연결\n2. 바이오스타에서 Intelligent PD 옵션 설정\n3. Without Network 수행\n4. HID OSDP Tool 과의 연결상태 확인",
+      "Intelligent PD 옵션설정\n> Default 값으로 설정\n> Default 외 값으로 설정",
+      "1. Intelligent PD 설정값이 유지되기 때문에 장치 부팅 후 재연결되어 통신한다."
+    ],
+    [
+      7,
+      "[BioStar에 장치추가된 상태]\n\n1. Intelligent PD 옵션: Default 외의 값으로 설정\n2. Secure Tamper 발생\n3. Intelligent PD 옵션 설정값 확인",
+      "",
+      "1. Intelligent PD 설정값이 유지된다."
+    ],
+    [
+      8,
+      "[BioStar에 장치추가된 상태]\n\n1. HID OSDP Tool과 연결\n2. 바이오스타에서 Intelligent PD 옵션 설정\n3. Secure Tamper 발생\n4. HID OSDP Tool 과의 연결상태 확인",
+      "Intelligent PD 옵션설정\n> Default 값으로 설정\n> Default 외 값으로 설정",
+      "1. Secure Tamper 발생 후 재연결되어 통신한다."
+    ],
+    [
+      9,
+      "[BioStar에 장치추가 및 인증서 저장된 상태]\n\n1. Intelligent PD 옵션: Default 외의 값으로 설정\n2. Factory Default 수행\n3. Intelligent PD 옵션 설정값 확인",
+      "",
+      "1. Intelligent PD 옵션값이 초기화된다.\n> Exception Code: 사용안함(Default)\n> Output Info: Card ID(Default)\n> OSDP ID: 0(Default)"
+    ],
+    [
+      10,
+      "[BioStar에 장치추가 및 인증서 저장된 상태]\n\n1. HID OSDP Tool과 연결\n2. 바이오스타에서 Intelligent PD 옵션 설정\n3. Factory Default 수행\n4. HID OSDP Tool 과의 연결상태 확인",
+      "Intelligent PD 옵션설정\n> Default 값으로 설정\n> Default 외 값으로 설정",
+      "1. Default 값으로 설정되었던 경우 장치 부팅 후 재연결되어 통신한다.\n\n2. Default 외 값으로 설정되었던 경우 HID Tool과의 연결을 끊었다가 다시 연결을 시켜줘야 한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-277",
+    "description": "",
+    "test_step": [
+      "[BioStar에 장치추가된 상태]\n\n1. Intelligent PD 옵션: Default 외의 값으로 설정\n2. Network Reset 수행\n3. Intelligent PD 옵션 설정값 확인",
+      "[BioStar에 장치추가된 상태]\n\n1. HID OSDP Tool과 연결\n2. 바이오스타에서 Intelligent PD 옵션 설정\n3. Network Reset 수행\n4. HID OSDP Tool 과의 연결상태 확인",
+      "[BioStar에 장치추가된 상태]\n\n1. 바이오스타에서 Intelligent PD 옵션: Default 외의 값으로 설정\n2. Reset All 수행\n3. Intelligent PD 옵션 설정값 확인",
+      "[BioStar에 장치추가된 상태]\n\n1. HID OSDP Tool과 연결\n2. 바이오스타에서 Intelligent PD 옵션 설정\n3. Reset All 수행\n4. HID OSDP Tool 과의 연결상태 확인",
+      "[BioStar에 장치추가된 상태]\n\n1. Intelligent PD 옵션: Default 외의 값으로 설정\n2. Without Network 수행\n3. Intelligent PD 옵션 설정값 확인",
+      "[BioStar에 장치추가된 상태]\n\n1. HID OSDP Tool과 연결\n2. 바이오스타에서 Intelligent PD 옵션 설정\n3. Without Network 수행\n4. HID OSDP Tool 과의 연결상태 확인",
+      "[BioStar에 장치추가된 상태]\n\n1. Intelligent PD 옵션: Default 외의 값으로 설정\n2. Secure Tamper 발생\n3. Intelligent PD 옵션 설정값 확인",
+      "[BioStar에 장치추가된 상태]\n\n1. HID OSDP Tool과 연결\n2. 바이오스타에서 Intelligent PD 옵션 설정\n3. Secure Tamper 발생\n4. HID OSDP Tool 과의 연결상태 확인",
+      "[BioStar에 장치추가 및 인증서 저장된 상태]\n\n1. Intelligent PD 옵션: Default 외의 값으로 설정\n2. Factory Default 수행\n3. Intelligent PD 옵션 설정값 확인",
+      "[BioStar에 장치추가 및 인증서 저장된 상태]\n\n1. HID OSDP Tool과 연결\n2. 바이오스타에서 Intelligent PD 옵션 설정\n3. Factory Default 수행\n4. HID OSDP Tool 과의 연결상태 확인"
+    ],
+    "data": [
+      "> Exception Code: 사용안함(Default)외 다른 값\n> Output Info: Card ID(Default)외 다른 값\n> OSDP ID: 0(Default)외 다른 값",
+      "Intelligent PD 옵션설정\n> Default 값으로 설정\n> Default 외 값으로 설정",
+      "Intelligent PD 옵션설정\n> Default 값으로 설정\n> Default 외 값으로 설정",
+      "Intelligent PD 옵션설정\n> Default 값으로 설정\n> Default 외 값으로 설정",
+      "Intelligent PD 옵션설정\n> Default 값으로 설정\n> Default 외 값으로 설정",
+      "Intelligent PD 옵션설정\n> Default 값으로 설정\n> Default 외 값으로 설정"
+    ],
+    "expected_result": [
+      "1. Intelligent PD 옵션값이 초기화된다.\n> Exception Code: 사용안함(Default)\n> Output Info: Card ID(Default)\n> OSDP ID: 0(Default)",
+      "1. Default 값으로 설정되었던 경우 장치 부팅 후 재연결되어 통신한다.\n\n2. Default 외 값으로 설정되었던 경우 HID Tool과의 연결을 끊었다가 다시 연결을 시켜줘야 한다.",
+      "1. Intelligent PD 옵션값이 초기화된다.\n> Exception Code: 사용안함(Default)\n> Output Info: Card ID(Default)\n> OSDP ID: 0(Default)",
+      "1. Default 값으로 설정되었던 경우 장치 부팅 후 재연결되어 통신한다.\n\n2. Default 외 값으로 설정되었던 경우 HID Tool과의 연결을 끊었다가 다시 연결을 시켜줘야 한다.",
+      "1. Intelligent PD 설정값이 유지된다.",
+      "1. Intelligent PD 설정값이 유지되기 때문에 장치 부팅 후 재연결되어 통신한다.",
+      "1. Intelligent PD 설정값이 유지된다.",
+      "1. Secure Tamper 발생 후 재연결되어 통신한다.",
+      "1. Intelligent PD 옵션값이 초기화된다.\n> Exception Code: 사용안함(Default)\n> Output Info: Card ID(Default)\n> OSDP ID: 0(Default)",
+      "1. Default 값으로 설정되었던 경우 장치 부팅 후 재연결되어 통신한다.\n\n2. Default 외 값으로 설정되었던 경우 HID Tool과의 연결을 끊었다가 다시 연결을 시켜줘야 한다."
+    ]
+  }
+}

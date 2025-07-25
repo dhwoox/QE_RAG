@@ -1,0 +1,40 @@
+{
+  "id": "COMMONR-267",
+  "content": [
+    [
+      1,
+      "1. 단일장치에 대해 전원인가 및 네트워크 연결된 상태\n2. 장치의 RS485 모드 설정\n3. 3주 방치\n4. Reboot 유무 확인",
+      "RS485 모드\n: Default",
+      "1. 장치 Reboot 발생되지 않아야 한다."
+    ],
+    [
+      2,
+      "1. RS485 구성으로 연결\n2. 3주간 방치\n3. Master/Slave장치에 대해 Reboot 유무 확인",
+      "",
+      "1. 장치 Reboot 발생되지 않아야 한다."
+    ],
+    [
+      3,
+      "1. RS485 구성으로 연결\n2. Slave와 연결된 RS485 케이블 물리적으로 제거\n3. 3주간 방치\n4. Master/Slave장치에 대해 Reboot 유무 확인",
+      "",
+      "1. 장치 Reboot 발생되지 않아야 한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-267",
+    "description": "",
+    "test_step": [
+      "1. 단일장치에 대해 전원인가 및 네트워크 연결된 상태\n2. 장치의 RS485 모드 설정\n3. 3주 방치\n4. Reboot 유무 확인",
+      "1. RS485 구성으로 연결\n2. 3주간 방치\n3. Master/Slave장치에 대해 Reboot 유무 확인",
+      "1. RS485 구성으로 연결\n2. Slave와 연결된 RS485 케이블 물리적으로 제거\n3. 3주간 방치\n4. Master/Slave장치에 대해 Reboot 유무 확인"
+    ],
+    "data": [
+      "RS485 모드\n: Default"
+    ],
+    "expected_result": [
+      "1. 장치 Reboot 발생되지 않아야 한다.",
+      "1. 장치 Reboot 발생되지 않아야 한다.",
+      "1. 장치 Reboot 발생되지 않아야 한다."
+    ]
+  }
+}

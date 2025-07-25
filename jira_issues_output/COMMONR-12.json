@@ -1,0 +1,182 @@
+{
+  "id": "COMMONR-12",
+  "content": [
+    [
+      1,
+      "1. Zone> Add Zone> APB Zone\n2. APB Zone의 Status 설정",
+      "Status\n> Active\n> Inactive",
+      "> Active인 경우 APB 위반시 APB 위반으로 동작해야 한다.\n> Inactive인 경우 APB 위반이 동작하지 않아야 한다."
+    ],
+    [
+      2,
+      "1. Zone> Add Zone\n2. Anti-passback Zone의 Mode 설정",
+      "Mode\n> Local Zone\n",
+      "> Master 장치에 RS485/Wiegand Reader로 연결된 장치들로 구성된 Door들로 설정이 되어야 한다.\n> Local 모드인 경우 BioStar UI에서 Network Failure Action 미지원"
+    ],
+    [
+      3,
+      "1. Zone> Add Zone\n2. Anti-passback Zone의 Mode 설정",
+      "Mode\n> Global Zone\n",
+      "> RS485/Wiegand Reader/Network로 구성된 모든 장치에 대해 설정이 되어야 한다.\n> Global 모드인 경우 BioStar UI에서 Network Failure Action 지원"
+    ],
+    [
+      4,
+      "1. Zone> Add Zone> APB Zone\n2. APB Zone Type 설정",
+      "Type\n> Soft APB\n> Hard APB",
+      "> Soft APB 위반인 경우, 인증이 성공하고 출입이 허용되어야 한다.\n> Hard APB 위반인 경우, 인증이 실패되고 출입도 통제되어야 한다.\n*APB 위반, Alarm 로그가 남는다.\n*Action 미설정시 BioStar Zone Status는 Normal\n(APB의 경우, Action 설정시 Status에 반영하며 로그는 이벤트이므로 무관)"
+    ],
+    [
+      5,
+      "1. Zone> Add Zone> APB Zone\n2. APB Reset Time 설정\n3. 하나의 리더에 동일사용자로 2회 이상 인증해 APB 위반 발생",
+      "Reset Time\n> 0(None)~7Days 설정가능",
+      "> 선택한 값이 설정되어야 한다.\n> APB Reset Time으로 설정한 시간이 지나면 이전 APB 상태는 무시되고 새로 시작되어야 한다."
+    ],
+    [
+      6,
+      "1. Zone> Add Zone> APB Zone\n2. APB 예외그룹 설정\n3. APB 예외그룹에 포함된 사용자로 인증시도",
+      "APB 예외그룹\n> 최대16개까지 설정가능",
+      "APB 예외그룹에 속한 사용자로 인증시 APB에 영향을 받지 않아야한다."
+    ],
+    [
+      7,
+      "1. Zone> Add Zone> APB Zone 추가\n2. 하나의 리더에 동일사용자로 2회 이상 인증해 APB 위반 발생\n3. Reset Time 이내 Master 장치를 Reboot",
+      "",
+      "Reset Time 이내 Master가 Reboot되는 경우 모든 APB 정보 유지\n"
+    ],
+    [
+      8,
+      "1. Zone> Add Zone> APB Zone 추가\n2. 하나의 리더에 동일사용자로 2회 이상 인증해 APB 위반 발생\n3. Reset Time 이후 Master 장치를 Reboot",
+      "",
+      "Reset Time 이후 Master가 Reboot되는 경우 모든 APB 정보가 리셋되어야 한다.\n: 발생되고 있는 Alarm은 해제\n: APB 위반 해제"
+    ],
+    [
+      9,
+      "1. Zone> Add Zone> APB Zone \n2. APB Alarm 설정",
+      "> Output\n> Release All Alarm\n> Reboot Device\n> Disable Device",
+      "APB 위반이 발생하면 설정한 Alarm이 발생해야 한다."
+    ],
+    [
+      10,
+      "<APB Alarm이 발생되는 상태>\n1. Monitoring> Zone Status\n2. APB Zone 선택\n3. Clear Alarm 및 Clear APB 클릭",
+      "",
+      "APB Alarm을 해제되어야 하고, APB 위반도 해제되어야 한다.\n: Alarm 해제 - Clear Alarm\n: 동작해제 - Clear APB\n> Clear Alarm 로그가 남는다."
+    ],
+    [
+      11,
+      "1. Zone> Add Zone> APB Zone \n2. Entry Device/Exit Device 설정",
+      "> Door로 설정된 Device\n> Door가 설정되지 않은 Device",
+      "Door로 설정된 Device뿐만 아니라 Door로 설정되지 않은 Device로도 APB Zone 구성이 가능해야 한다."
+    ],
+    [
+      12,
+      "<APB Zone 다수 생성된 상태>\n1. Zone 선택 후 삭제시도",
+      "Zone 삭제\n> 개별삭제\n> 전체삭제",
+      "Zone에 대해 개별삭제/전체삭제를 할 수 있어야 한다."
+    ],
+    [
+      13,
+      "1. 생성한 Zone 정보를 편집한다.",
+      "",
+      "Zone 정보 변경이 가능해야 한다."
+    ],
+    [
+      14,
+      "1. Zone> Add Zone> APB Zone\n2. Alarm Output 설정",
+      "최대 5개 설정 가능",
+      "Door/Zone에서의 Output은 최대 5개까지 설정되어야 한다."
+    ],
+    [
+      15,
+      "<장치간 RS485 & Wiegand Reader 연결 => Door 구성>\n1. Zone> Add Zone> APB Zone\n2. 각각의 항목 설정 후 저장\n3. Master/Slave/Wiegand Reader 각 장치에 APB 위반이 되도록 인증시도",
+      "> Global\n> Local",
+      "1. 설정한 APB 위반으로 동작되어야 한다.\n> 로그 및 동작확인\n> Global APB Alarm\n : Alarm 발생시 Anti-passback zone alarm detected 가 로그에 표시됨(장치에는 남지 않음)\n> Local APB Alarm\n : Alarm 발생시 Anti-passback zone alarm detected 가 로그에 표시됨(장치에도 남음)"
+    ],
+    [
+      16,
+      "<장치간 RS485 & Wiegand Reader 연결 => Door 구성>\n1. Zone> Add Zone> APB Zone\n2. 각각의 항목 설정 후 저장\n3. Master 장치의 Lan선 제거\n4. 약 1분 후에 Master/Slave/Wiegand Reader 장치에 APB 위반이 되도록 인증시도",
+      "Mode> Global 설정\nNetwork Failure Action> Open by auth 설정\n",
+      "1. Open by auth인 경우, APB 설정을 보지 않겠다는 의미로 인증성공으로 동작해야 한다.(사용자가 장치에 있는 경우)"
+    ],
+    [
+      17,
+      "<장치간 RS485 & Wiegand Reader 연결 => Door 구성>\n1. Zone> Add Zone> APB Zone\n2. 각각의 항목 설정 후 저장\n3. Master 장치의 Lan선 제거\n4. 약 1분 후에 Master/Slave/Wiegand Reader 장치에 APB 위반이 되도록 인증시도",
+      "Mode> Global 설정\nNetwork Failure Action> Open by auth & record APB log 설정\n\n*Record a log = Soft APB",
+      "1. Soft APB로 동작되어야 한다.\n> 로그 및 동작확인(Step 4 참고)\n> 설정한 Alarm 은 발생하지 않는다.\n\n※ 연결이 해제된 상태에서는 이전 이력을 알 수 없기 때문에 연결 해제 후 처음 인증시 인증성공&Soft APB로 동작되어야 한다."
+    ],
+    [
+      18,
+      "<장치간 RS485 & Wiegand Reader 연결 => Door 구성>\n1. Zone> Add Zone> APB Zone\n2. 각각의 항목 설정 후 저장\n3. Master 장치의 Lan선 제거\n4. 약 1분 후에 Master/Slave/Wiegand Reader 장치에 APB 위반이 되도록 인증시도",
+      "Mode> Global 설정\nNetwork Failure Action> Door locked & record APB log 설정\n*Door locked = Hard APB",
+      "1. Hard APB로 동작되어야 한다.\n> 로그 및 동작확인(Step 4 참고)\n> 설정한 Alarm 은 발생하지 않는다.\n\n※ 연결이 해제된 상태에서는 이전 이력을 알 수 없기 때문에 연결 해제 후 처음 인증시 인증실패&Hard APB로 동작되어야 한다."
+    ],
+    [
+      19,
+      "1. Zone> APB Zone> Global APB Zone 설정\n2. 장치에 인증시도\n3. 인증 후 결과출력 전 장치의 네트워크 선 연결 제거\n4. 인증결과 확인",
+      "Mode> Global 설정\nNetwork Failure Action> Open by auth\n\n연결장치: Device To Server\n",
+      "1.인증결과 출력에 영향을 주지 않아야 한다.\n> 통신 장애 발생 시의 인증에 대한 응답성 확인 \n\n※ FISF-126 재발방지대책으로 작성된 TC"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-12",
+    "description": "",
+    "test_step": [
+      "1. Zone> Add Zone> APB Zone\n2. APB Zone의 Status 설정",
+      "1. Zone> Add Zone\n2. Anti-passback Zone의 Mode 설정",
+      "1. Zone> Add Zone\n2. Anti-passback Zone의 Mode 설정",
+      "1. Zone> Add Zone> APB Zone\n2. APB Zone Type 설정",
+      "1. Zone> Add Zone> APB Zone\n2. APB Reset Time 설정\n3. 하나의 리더에 동일사용자로 2회 이상 인증해 APB 위반 발생",
+      "1. Zone> Add Zone> APB Zone\n2. APB 예외그룹 설정\n3. APB 예외그룹에 포함된 사용자로 인증시도",
+      "1. Zone> Add Zone> APB Zone 추가\n2. 하나의 리더에 동일사용자로 2회 이상 인증해 APB 위반 발생\n3. Reset Time 이내 Master 장치를 Reboot",
+      "1. Zone> Add Zone> APB Zone 추가\n2. 하나의 리더에 동일사용자로 2회 이상 인증해 APB 위반 발생\n3. Reset Time 이후 Master 장치를 Reboot",
+      "1. Zone> Add Zone> APB Zone \n2. APB Alarm 설정",
+      "<APB Alarm이 발생되는 상태>\n1. Monitoring> Zone Status\n2. APB Zone 선택\n3. Clear Alarm 및 Clear APB 클릭",
+      "1. Zone> Add Zone> APB Zone \n2. Entry Device/Exit Device 설정",
+      "<APB Zone 다수 생성된 상태>\n1. Zone 선택 후 삭제시도",
+      "1. 생성한 Zone 정보를 편집한다.",
+      "1. Zone> Add Zone> APB Zone\n2. Alarm Output 설정",
+      "<장치간 RS485 & Wiegand Reader 연결 => Door 구성>\n1. Zone> Add Zone> APB Zone\n2. 각각의 항목 설정 후 저장\n3. Master/Slave/Wiegand Reader 각 장치에 APB 위반이 되도록 인증시도",
+      "<장치간 RS485 & Wiegand Reader 연결 => Door 구성>\n1. Zone> Add Zone> APB Zone\n2. 각각의 항목 설정 후 저장\n3. Master 장치의 Lan선 제거\n4. 약 1분 후에 Master/Slave/Wiegand Reader 장치에 APB 위반이 되도록 인증시도",
+      "<장치간 RS485 & Wiegand Reader 연결 => Door 구성>\n1. Zone> Add Zone> APB Zone\n2. 각각의 항목 설정 후 저장\n3. Master 장치의 Lan선 제거\n4. 약 1분 후에 Master/Slave/Wiegand Reader 장치에 APB 위반이 되도록 인증시도",
+      "<장치간 RS485 & Wiegand Reader 연결 => Door 구성>\n1. Zone> Add Zone> APB Zone\n2. 각각의 항목 설정 후 저장\n3. Master 장치의 Lan선 제거\n4. 약 1분 후에 Master/Slave/Wiegand Reader 장치에 APB 위반이 되도록 인증시도",
+      "1. Zone> APB Zone> Global APB Zone 설정\n2. 장치에 인증시도\n3. 인증 후 결과출력 전 장치의 네트워크 선 연결 제거\n4. 인증결과 확인"
+    ],
+    "data": [
+      "Status\n> Active\n> Inactive",
+      "Mode\n> Local Zone\n",
+      "Mode\n> Global Zone\n",
+      "Type\n> Soft APB\n> Hard APB",
+      "Reset Time\n> 0(None)~7Days 설정가능",
+      "APB 예외그룹\n> 최대16개까지 설정가능",
+      "> Output\n> Release All Alarm\n> Reboot Device\n> Disable Device",
+      "> Door로 설정된 Device\n> Door가 설정되지 않은 Device",
+      "Zone 삭제\n> 개별삭제\n> 전체삭제",
+      "최대 5개 설정 가능",
+      "> Global\n> Local",
+      "Mode> Global 설정\nNetwork Failure Action> Open by auth 설정\n",
+      "Mode> Global 설정\nNetwork Failure Action> Open by auth & record APB log 설정\n\n*Record a log = Soft APB",
+      "Mode> Global 설정\nNetwork Failure Action> Door locked & record APB log 설정\n*Door locked = Hard APB",
+      "Mode> Global 설정\nNetwork Failure Action> Open by auth\n\n연결장치: Device To Server\n"
+    ],
+    "expected_result": [
+      "> Active인 경우 APB 위반시 APB 위반으로 동작해야 한다.\n> Inactive인 경우 APB 위반이 동작하지 않아야 한다.",
+      "> Master 장치에 RS485/Wiegand Reader로 연결된 장치들로 구성된 Door들로 설정이 되어야 한다.\n> Local 모드인 경우 BioStar UI에서 Network Failure Action 미지원",
+      "> RS485/Wiegand Reader/Network로 구성된 모든 장치에 대해 설정이 되어야 한다.\n> Global 모드인 경우 BioStar UI에서 Network Failure Action 지원",
+      "> Soft APB 위반인 경우, 인증이 성공하고 출입이 허용되어야 한다.\n> Hard APB 위반인 경우, 인증이 실패되고 출입도 통제되어야 한다.\n*APB 위반, Alarm 로그가 남는다.\n*Action 미설정시 BioStar Zone Status는 Normal\n(APB의 경우, Action 설정시 Status에 반영하며 로그는 이벤트이므로 무관)",
+      "> 선택한 값이 설정되어야 한다.\n> APB Reset Time으로 설정한 시간이 지나면 이전 APB 상태는 무시되고 새로 시작되어야 한다.",
+      "APB 예외그룹에 속한 사용자로 인증시 APB에 영향을 받지 않아야한다.",
+      "Reset Time 이내 Master가 Reboot되는 경우 모든 APB 정보 유지\n",
+      "Reset Time 이후 Master가 Reboot되는 경우 모든 APB 정보가 리셋되어야 한다.\n: 발생되고 있는 Alarm은 해제\n: APB 위반 해제",
+      "APB 위반이 발생하면 설정한 Alarm이 발생해야 한다.",
+      "APB Alarm을 해제되어야 하고, APB 위반도 해제되어야 한다.\n: Alarm 해제 - Clear Alarm\n: 동작해제 - Clear APB\n> Clear Alarm 로그가 남는다.",
+      "Door로 설정된 Device뿐만 아니라 Door로 설정되지 않은 Device로도 APB Zone 구성이 가능해야 한다.",
+      "Zone에 대해 개별삭제/전체삭제를 할 수 있어야 한다.",
+      "Zone 정보 변경이 가능해야 한다.",
+      "Door/Zone에서의 Output은 최대 5개까지 설정되어야 한다.",
+      "1. 설정한 APB 위반으로 동작되어야 한다.\n> 로그 및 동작확인\n> Global APB Alarm\n : Alarm 발생시 Anti-passback zone alarm detected 가 로그에 표시됨(장치에는 남지 않음)\n> Local APB Alarm\n : Alarm 발생시 Anti-passback zone alarm detected 가 로그에 표시됨(장치에도 남음)",
+      "1. Open by auth인 경우, APB 설정을 보지 않겠다는 의미로 인증성공으로 동작해야 한다.(사용자가 장치에 있는 경우)",
+      "1. Soft APB로 동작되어야 한다.\n> 로그 및 동작확인(Step 4 참고)\n> 설정한 Alarm 은 발생하지 않는다.\n\n※ 연결이 해제된 상태에서는 이전 이력을 알 수 없기 때문에 연결 해제 후 처음 인증시 인증성공&Soft APB로 동작되어야 한다.",
+      "1. Hard APB로 동작되어야 한다.\n> 로그 및 동작확인(Step 4 참고)\n> 설정한 Alarm 은 발생하지 않는다.\n\n※ 연결이 해제된 상태에서는 이전 이력을 알 수 없기 때문에 연결 해제 후 처음 인증시 인증실패&Hard APB로 동작되어야 한다.",
+      "1.인증결과 출력에 영향을 주지 않아야 한다.\n> 통신 장애 발생 시의 인증에 대한 응답성 확인 \n\n※ FISF-126 재발방지대책으로 작성된 TC"
+    ]
+  }
+}

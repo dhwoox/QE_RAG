@@ -1,0 +1,77 @@
+{
+  "id": "COMMONR-44",
+  "content": [
+    [
+      1,
+      "USB Memory을 이용한 FirmWare Upgrade을 지원한다.",
+      "각 장치별 최신 버전의 FirmWare을 USB Memory에 준비한다.\n > Station 계열 - BioStation 2, BioStation A2, FaceStation 2, FaceSttion2 F2, BioStation 3, XStation2, FaceLite, BioStation 2a",
+      "최신버전으로 FirmWare Upgrade가 된다.\n> 성공 팝업, 재부팅, 장치 상세정보의 Version확인\n: Master/Slave/Default 모두 지원한다."
+    ],
+    [
+      2,
+      "1. 정규버전에서 최신 버전으로 FW Upgrade를 시도한다.\n2. 다시 이전의 정규버전으로 FW Upgrade를 시도한다.",
+      "각 장치별 최신 버전의 FirmWare을 USB Memory에 준비한다.\n > Station 계열 - BioStation 2, BioStation A2, FaceStation 2\n > 전자서명 기능 도입 버전\n   : BS2 - v1.4.0 버전부터 도입\n   : A2 - v1.3.0 버전부터 도입\n   : FS2 - v1.0.0 버전부터 도입\n   : 이외 다른 제품은 기본 반영",
+      "1. FW Upgrade가 정상적으로 동작 한다.\n2. FW Upgrade시 서명이 유효하지 않아 Upgrade가 실패되고, Upgrade 시도 전 버전으로 유지된다."
+    ],
+    [
+      3,
+      "[XS2: DTC LCD 적용시료]\n1. 최신FW에서 FW V1.1.1 이하로 FW Downgrade 시도",
+      "",
+      "1. Upgrade Fail된다.\n> 해당시료는 v1.1.2부터 지원"
+    ],
+    [
+      4,
+      "1.장치에 메모리 Full로 채운 상태에서 FW Upgrade 시도",
+      "사용자\n> 모든 크리덴셜 저장된 상태로 Full\n\n이벤트 로그 Full\n> 이미지로그(지원시)\n> 일반로그",
+      "1. Upgrade 및 부팅이 정상적으로 이루어져야 한다."
+    ],
+    [
+      5,
+      "1. USB에 다국어 리소스파일 저장\n2. 다국어 리소스 파일 업그레이드 시도\n3. 업그레이드 후 확인",
+      "*Station 장치의 Resource File Upgrade시 다국어 지원하는 리소스파일 개발자에 요청해 진행*",
+      "1. 설정된 다국어 리소스 파일로 표시된다."
+    ],
+    [
+      6,
+      "1. USB Memory를 장치에 삽입\n2. Menu> Device> USB Memory> FW Upgrade\n3. FW Upgrade 파일 선택\n4. FW Upgrade 유무 확인",
+      "FW Upgrade 파일 선택\n> 타 모델의 FW 파일",
+      "1. FW Upgrade가 진행되지 않는다.\n> FW Upgrade Fail 팝업 발생"
+    ],
+    [
+      7,
+      "1. USB Memory를 장치에 삽입\n2. Menu> Device> USB Memory> FW Upgrade\n3. FW Upgrade 파일 선택\n4. FW Upgrade 중 USB 제거\n5. FW Upgrade 유무 확인",
+      "FW Upgrade 파일 선택\n> 검증 진행중인 모델의 FW 파일",
+      "1. FW Upgrade가 진행되지 않는다.\n> FW Upgrade Fail 팝업 발생\n\n2. USB를 Upgrade 파일 선택 후 1분이내 제거 시 재부팅된다. "
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-44",
+    "description": "",
+    "test_step": [
+      "USB Memory을 이용한 FirmWare Upgrade을 지원한다.",
+      "1. 정규버전에서 최신 버전으로 FW Upgrade를 시도한다.\n2. 다시 이전의 정규버전으로 FW Upgrade를 시도한다.",
+      "[XS2: DTC LCD 적용시료]\n1. 최신FW에서 FW V1.1.1 이하로 FW Downgrade 시도",
+      "1.장치에 메모리 Full로 채운 상태에서 FW Upgrade 시도",
+      "1. USB에 다국어 리소스파일 저장\n2. 다국어 리소스 파일 업그레이드 시도\n3. 업그레이드 후 확인",
+      "1. USB Memory를 장치에 삽입\n2. Menu> Device> USB Memory> FW Upgrade\n3. FW Upgrade 파일 선택\n4. FW Upgrade 유무 확인",
+      "1. USB Memory를 장치에 삽입\n2. Menu> Device> USB Memory> FW Upgrade\n3. FW Upgrade 파일 선택\n4. FW Upgrade 중 USB 제거\n5. FW Upgrade 유무 확인"
+    ],
+    "data": [
+      "각 장치별 최신 버전의 FirmWare을 USB Memory에 준비한다.\n > Station 계열 - BioStation 2, BioStation A2, FaceStation 2, FaceSttion2 F2, BioStation 3, XStation2, FaceLite, BioStation 2a",
+      "각 장치별 최신 버전의 FirmWare을 USB Memory에 준비한다.\n > Station 계열 - BioStation 2, BioStation A2, FaceStation 2\n > 전자서명 기능 도입 버전\n   : BS2 - v1.4.0 버전부터 도입\n   : A2 - v1.3.0 버전부터 도입\n   : FS2 - v1.0.0 버전부터 도입\n   : 이외 다른 제품은 기본 반영",
+      "사용자\n> 모든 크리덴셜 저장된 상태로 Full\n\n이벤트 로그 Full\n> 이미지로그(지원시)\n> 일반로그",
+      "*Station 장치의 Resource File Upgrade시 다국어 지원하는 리소스파일 개발자에 요청해 진행*",
+      "FW Upgrade 파일 선택\n> 타 모델의 FW 파일",
+      "FW Upgrade 파일 선택\n> 검증 진행중인 모델의 FW 파일"
+    ],
+    "expected_result": [
+      "최신버전으로 FirmWare Upgrade가 된다.\n> 성공 팝업, 재부팅, 장치 상세정보의 Version확인\n: Master/Slave/Default 모두 지원한다.",
+      "1. FW Upgrade가 정상적으로 동작 한다.\n2. FW Upgrade시 서명이 유효하지 않아 Upgrade가 실패되고, Upgrade 시도 전 버전으로 유지된다.",
+      "1. Upgrade Fail된다.\n> 해당시료는 v1.1.2부터 지원",
+      "1. Upgrade 및 부팅이 정상적으로 이루어져야 한다.",
+      "1. 설정된 다국어 리소스 파일로 표시된다.",
+      "1. FW Upgrade가 진행되지 않는다.\n> FW Upgrade Fail 팝업 발생",
+      "1. FW Upgrade가 진행되지 않는다.\n> FW Upgrade Fail 팝업 발생\n\n2. USB를 Upgrade 파일 선택 후 1분이내 제거 시 재부팅된다. "
+    ]
+  }
+}

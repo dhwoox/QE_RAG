@@ -1,0 +1,51 @@
+{
+  "id": "COMMONR-269",
+  "content": [
+    [
+      1,
+      "1. init 버튼으로 Factory Default 실행",
+      "BioStar\n> Secure Communication with Devcie : Use",
+      "1. 공장초기화 후 장치가 재부팅된다."
+    ],
+    [
+      2,
+      "1. BioStar에 UI없는 장치추가\n2. 장치의 Config에 대해 모두 변경\n3. init 버튼으로 Factory Default 실행\n4. BioStar에서 장치삭제\n5. Tool이용해 Config 확인",
+      "BioStar\n> Secure Communication with Devcie : Use",
+      "1. 설정값을 기본값으로 복원한다.\n> 모든 Config 초기화(Time Zone/DST/지문템플릿 포함)\n> RS485 Key 초기화\n=> Device Viewer로 확인가능\n> SSL 인증서 및 Key 삭제\n> 데이터 암호화 Key 삭제"
+    ],
+    [
+      3,
+      "1. init 버튼으로 Factory Default 실행",
+      "BioStar\n> Secure Communication with Devcie : Use\n> Server&Device encryption key manual management: Use",
+      "1. 공장초기화 후 장치가 재부팅된다."
+    ],
+    [
+      4,
+      "1. RS485 구성(RS485 Key 설정해 통신)\n2. 사용자 Full 전송\n3. init 버튼으로 Factory Default 실행\n4. BioStar에서 장치삭제\n5. Tool이용해 Config 확인",
+      "BioStar\n> Secure Communication with Devcie : Use\n> Server&Device encryption key manual management: Use",
+      "1. 설정값을 기본값으로 복원한다.\n> 모든 Config 초기화(Time Zone/DST/지문템플릿 포함)\n> RS485 Key 초기화\n=> Device Viewer로 확인가능\n> SSL 인증서 및 Key 삭제\n> 데이터 암호화 Key 삭제"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-269",
+    "description": "",
+    "test_step": [
+      "1. init 버튼으로 Factory Default 실행",
+      "1. BioStar에 UI없는 장치추가\n2. 장치의 Config에 대해 모두 변경\n3. init 버튼으로 Factory Default 실행\n4. BioStar에서 장치삭제\n5. Tool이용해 Config 확인",
+      "1. init 버튼으로 Factory Default 실행",
+      "1. RS485 구성(RS485 Key 설정해 통신)\n2. 사용자 Full 전송\n3. init 버튼으로 Factory Default 실행\n4. BioStar에서 장치삭제\n5. Tool이용해 Config 확인"
+    ],
+    "data": [
+      "BioStar\n> Secure Communication with Devcie : Use",
+      "BioStar\n> Secure Communication with Devcie : Use",
+      "BioStar\n> Secure Communication with Devcie : Use\n> Server&Device encryption key manual management: Use",
+      "BioStar\n> Secure Communication with Devcie : Use\n> Server&Device encryption key manual management: Use"
+    ],
+    "expected_result": [
+      "1. 공장초기화 후 장치가 재부팅된다.",
+      "1. 설정값을 기본값으로 복원한다.\n> 모든 Config 초기화(Time Zone/DST/지문템플릿 포함)\n> RS485 Key 초기화\n=> Device Viewer로 확인가능\n> SSL 인증서 및 Key 삭제\n> 데이터 암호화 Key 삭제",
+      "1. 공장초기화 후 장치가 재부팅된다.",
+      "1. 설정값을 기본값으로 복원한다.\n> 모든 Config 초기화(Time Zone/DST/지문템플릿 포함)\n> RS485 Key 초기화\n=> Device Viewer로 확인가능\n> SSL 인증서 및 Key 삭제\n> 데이터 암호화 Key 삭제"
+    ]
+  }
+}

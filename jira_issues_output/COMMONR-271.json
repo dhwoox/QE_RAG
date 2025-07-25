@@ -1,0 +1,62 @@
+{
+  "id": "COMMONR-271",
+  "content": [
+    [
+      1,
+      "1. 두 대의 장치를 이더넷으로 연결\n2. 최신 FW로 Upgrade\n3. 두 대의 장치를 RS485로 구성\n4. Master 장치 Reboot\n5. Master 부팅완료 후 통신상태 확인",
+      "",
+      "1. Master 부팅 후 Slave와의 통신에 이상이 없어야 한다."
+    ],
+    [
+      2,
+      "1. 두 대의 장치를 이더넷으로 연결\n2. 최신 FW로 Upgrade\n3. 두 대의 장치를 RS485로 구성\n4. Slave 장치 Reboot\n5. Slave 부팅완료 후 통신상태 확인",
+      "",
+      "1. Slave 부팅 후 Master와의 통신에 이상이 없어야 한다."
+    ],
+    [
+      3,
+      "1. 두 대의 장치를 이더넷으로 연결\n2. 최신 FW로 Upgrade\n3. 두 대의 장치를 RS485로 구성\n4. Master/Slave 장치 Reboot\n5. Master/Slave 부팅완료 후 통신상태 확인",
+      "",
+      "1. Master/Slave 부팅 후 RS485 통신에 이상이 없어야 한다."
+    ],
+    [
+      4,
+      "1. Master-Slave 연결\n2. Master/Slave FW Upgrade\n3. Master Reboot\n4. Master 부팅완료 후 통신상태 확인",
+      "",
+      "1. Master 부팅 후 Slave와의 통신에 이상이 없어야 한다."
+    ],
+    [
+      5,
+      "1. Master-Slave 연결\n2. Master/Slave FW Upgrade\n3. Slave Reboot\n4. Slave 부팅완료 후 통신상태 확인",
+      "",
+      "1. Slave 부팅 후 Master와의 통신에 이상이 없어야 한다."
+    ],
+    [
+      6,
+      "1. Master-Slave 연결\n2. Master/Slave FW Upgrade\n3. Master/Slave Reboot\n4. Master/Slave 부팅완료 후 통신상태 확인",
+      "",
+      "1. Master/Slave 부팅 후 RS485 통신에 이상이 없어야 한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-271",
+    "description": "",
+    "test_step": [
+      "1. 두 대의 장치를 이더넷으로 연결\n2. 최신 FW로 Upgrade\n3. 두 대의 장치를 RS485로 구성\n4. Master 장치 Reboot\n5. Master 부팅완료 후 통신상태 확인",
+      "1. 두 대의 장치를 이더넷으로 연결\n2. 최신 FW로 Upgrade\n3. 두 대의 장치를 RS485로 구성\n4. Slave 장치 Reboot\n5. Slave 부팅완료 후 통신상태 확인",
+      "1. 두 대의 장치를 이더넷으로 연결\n2. 최신 FW로 Upgrade\n3. 두 대의 장치를 RS485로 구성\n4. Master/Slave 장치 Reboot\n5. Master/Slave 부팅완료 후 통신상태 확인",
+      "1. Master-Slave 연결\n2. Master/Slave FW Upgrade\n3. Master Reboot\n4. Master 부팅완료 후 통신상태 확인",
+      "1. Master-Slave 연결\n2. Master/Slave FW Upgrade\n3. Slave Reboot\n4. Slave 부팅완료 후 통신상태 확인",
+      "1. Master-Slave 연결\n2. Master/Slave FW Upgrade\n3. Master/Slave Reboot\n4. Master/Slave 부팅완료 후 통신상태 확인"
+    ],
+    "data": [],
+    "expected_result": [
+      "1. Master 부팅 후 Slave와의 통신에 이상이 없어야 한다.",
+      "1. Slave 부팅 후 Master와의 통신에 이상이 없어야 한다.",
+      "1. Master/Slave 부팅 후 RS485 통신에 이상이 없어야 한다.",
+      "1. Master 부팅 후 Slave와의 통신에 이상이 없어야 한다.",
+      "1. Slave 부팅 후 Master와의 통신에 이상이 없어야 한다.",
+      "1. Master/Slave 부팅 후 RS485 통신에 이상이 없어야 한다."
+    ]
+  }
+}

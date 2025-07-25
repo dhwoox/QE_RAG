@@ -1,0 +1,42 @@
+{
+  "id": "COMMONR-243",
+  "content": [
+    [
+      1,
+      "<지원 장치>\n1. BioStar> Device> Manage Users in Device 선택",
+      "기준(지문, 얼굴, 카드)\n> 1:N - 지문 1지, Face 1얼굴\n> 1:1 - 카드 1장",
+      "1. 장치에 저장된 사용자/지문/얼굴/카드 정보가 출력된다."
+    ],
+    [
+      2,
+      "<지원 장치>\n1. BioStar> Device> Manage Users in Device 선택\n2. 사용자 선택 후 삭제\n3. 출력되는 사용자수 및 크리덴셜 정보 확인",
+      "기준(지문, 얼굴, 카드)\n> 1:N - 지문 1지, Face 1얼굴\n> 1:1 - 카드 1장",
+      "1. 삭제후 장치에 존재하는 전체 사용자/얼굴/지문/카드 정보가 출력된다."
+    ],
+    [
+      3,
+      "<미지원 장치>\n1. BioStar> Device> Manage Users in Device 선택",
+      "기준(지문, 얼굴, 카드)\n> 1:N - 지문 1지, Face 1얼굴\n> 1:1 - 카드 1장",
+      "1. 상단에 전체 사용자 수가 출력 되지 않는다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-243",
+    "description": "",
+    "test_step": [
+      "<지원 장치>\n1. BioStar> Device> Manage Users in Device 선택",
+      "<지원 장치>\n1. BioStar> Device> Manage Users in Device 선택\n2. 사용자 선택 후 삭제\n3. 출력되는 사용자수 및 크리덴셜 정보 확인",
+      "<미지원 장치>\n1. BioStar> Device> Manage Users in Device 선택"
+    ],
+    "data": [
+      "기준(지문, 얼굴, 카드)\n> 1:N - 지문 1지, Face 1얼굴\n> 1:1 - 카드 1장",
+      "기준(지문, 얼굴, 카드)\n> 1:N - 지문 1지, Face 1얼굴\n> 1:1 - 카드 1장",
+      "기준(지문, 얼굴, 카드)\n> 1:N - 지문 1지, Face 1얼굴\n> 1:1 - 카드 1장"
+    ],
+    "expected_result": [
+      "1. 장치에 저장된 사용자/지문/얼굴/카드 정보가 출력된다.",
+      "1. 삭제후 장치에 존재하는 전체 사용자/얼굴/지문/카드 정보가 출력된다.",
+      "1. 상단에 전체 사용자 수가 출력 되지 않는다."
+    ]
+  }
+}

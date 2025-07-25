@@ -1,0 +1,173 @@
+{
+  "id": "COMMONR-176",
+  "content": [
+    [
+      1,
+      "1. Access Control > Floor Level > Add Floor Level 선택하여 추가한다.",
+      "1. Add Floor Level",
+      "1. Floor Level을 추가할 수 있다.\n2. Floor 정보 + Schedule로 구성된다.\n3. 최대 128개를 추가할 수 있다.\n"
+    ],
+    [
+      2,
+      "1. Device > 우클릭 > Slave Search Device",
+      "",
+      "1. Lift IO를 추가할 수 있다.\n2. 하나의 Master 기기에 최대 31개까지 추가할 수 있다."
+    ],
+    [
+      3,
+      "1. Elevator > Add Elevator > 정보",
+      "",
+      "1. 정보를 설정 할 수 있다.\n2. 정보 \n> 이름 설정 가능\n> 그룹 설정 가능\n> 설명 설정 가능"
+    ],
+    [
+      4,
+      "1. Elevator > Add Elevator > 설정",
+      "",
+      "1. 설정을 설정 할 수 있다.\n2. 설정 \n> 컨드롤러 설정 가능\n: Master 혹은 Default Mode 장치만 선택 가능\n: Slave 장치는 선택 불가\n: Entry 계열의 장치 선택 불가\n: 출입문에 사용된 장치 선택 불가\n> 모듈 설정 가능\n: 컨트롤러에 연결된 Output Module만 선택 가능\n: 일반 장치 선택 불가\n: 컨트롤러가 지정되면 활성화\n: 복수 선택 가능(최대 16개)\n> 리더 설정 가능\n: 컨트롤러 장치 선택 가능\n: 컨트롤러 장치에 연결된 Slave, Wiegand 장치 선택 가능\n: IODevice 선택 불가\n: 컨트롤러가 지정된 경우에만 활성화\n: 복수 선택 가능(최대 4개)"
+    ],
+    [
+      5,
+      "1. Elevator > Add Elevator > 옵션",
+      "",
+      "1. 옵션을 설정 할 수 있다.\n2. 옵션\n> 열림시간\n: 기본값 5 sec\n: 최대 15분\n> 이중 인증"
+    ],
+    [
+      6,
+      "1. Elevator > Add Elevator > 옵션 > 알람\n",
+      "1. Add Elevator\n1) 옵션\n2) 알람\n2.1) 신호 입력\n2.2) 모든 층 릴레이 열림",
+      "1. 각 알람을 설정할 수 있다."
+    ],
+    [
+      7,
+      "1. Elevator > Add Elevator > 옵션 > 알람 > Device : Master 장치 선택 > Port : Input Port 0 선택 > Switch : Normally Open 선택 > Duration : 100 > Schedule : Always 선택",
+      "1. Action 선택\n1) 모든 층 릴레이 열림\n2) 신호 출력",
+      "1. 모든 층 릴레이가 On 된다.\n> 로그는 '모든 층 릴레이 열림 발생'으로 확인 가능하다.\n2. 설정한 신호가 Master 장치에서 출력된다.\n> 모니터링에서는 Port 로그를 남기지 않는다.\n   ※ 장치에서는 로그를 남기고 있음.(Diag Log로 확인가능)"
+    ],
+    [
+      8,
+      "1. Elevator > Add Elevator > 옵션 > 알람 > Device : Master 장치 선택 > Port : Input Port 0 선택 > Switch : Normally Close 선택 > Duration : 100 > Schedule : Always 선택",
+      "1. Action 선택\n1) 모든 층 릴레이 열림\n2) 신호 출력",
+      "1. 모든 층 릴레이가 On 된다.\n> 로그는 '모든 층 릴레이 열림 발생'으로 확인 가능하다.\n2. 설정한 신호가 Master 장치에서 출력된다.\n> 모니터링에서는 Port 로그를 남기지 않는다.\n   ※ 장치에서는 로그를 남기고 있음.(Diag Log로 확인가능)"
+    ],
+    [
+      9,
+      "1. Elevator > Add Elevator > 옵션 > 알람 > Device : Master 장치 선택 > Port : Input Port 1 선택 > Switch : Normally Open 선택 > Duration : 100 > Schedule : Always 선택",
+      "1. Action 선택\n1) 모든 층 릴레이 열림\n2) 신호 출력",
+      "1. 모든 층 릴레이가 On 된다.\n> 로그는 '모든 층 릴레이 열림 발생'으로 확인 가능하다.\n2. 설정한 신호가 Master 장치에서 출력된다.\n> 모니터링에서는 Port 로그를 남기지 않는다.\n   ※ 장치에서는 로그를 남기고 있음.(Diag Log로 확인가능)"
+    ],
+    [
+      10,
+      "1. Elevator > Add Elevator > 옵션 > 알람 > Device : Master 장치 선택 > Port : Input Port 1 선택 > Switch : Normally Close 선택 > Duration : 100 > Schedule : Always 선택",
+      "1. Action 선택\n1) 모든 층 릴레이 열림\n2) 신호 출력",
+      "1. 모든 층 릴레이가 On 된다.\n> 로그는 '모든 층 릴레이 열림 발생'으로 확인 가능하다.\n2. 설정한 신호가 Master 장치에서 출력된다.\n> 모니터링에서는 Port 로그를 남기지 않는다.\n   ※ 장치에서는 로그를 남기고 있음.(Diag Log로 확인가능)"
+    ],
+    [
+      11,
+      "1. Elevator > Add Elevator > 옵션 > 알람 > Device : Slave 장치 선택 > Port : Input Port 0 선택 > Switch : Normally Open 선택 > Duration : 100 > Schedule : Always 선택",
+      "1. Action 선택\n1) 모든 층 릴레이 열림\n2) 신호 출력",
+      "1. 모든 층 릴레이가 On 된다.\n> 로그는 '모든 층 릴레이 열림 발생'으로 확인 가능하다.\n2. 설정한 신호가 Master 장치에서 출력된다.\n> 모니터링에서는 Port 로그를 남기지 않는다.\n   ※ 장치에서는 로그를 남기고 있음.(Diag Log로 확인가능)"
+    ],
+    [
+      12,
+      "1. Elevator > Add Elevator > 옵션 > 알람 > Device : Slave 장치 선택 > Port : Input Port 0 선택 > Switch : Normally Close 선택 > Duration : 100 > Schedule : Always 선택",
+      "1. Action 선택\n1) 모든 층 릴레이 열림\n2) 신호 출력",
+      "1. 모든 층 릴레이가 On 된다.\n> 로그는 '모든 층 릴레이 열림 발생'으로 확인 가능하다.\n2. 설정한 신호가 Master 장치에서 출력된다.\n> 모니터링에서는 Port 로그를 남기지 않는다.\n   ※ 장치에서는 로그를 남기고 있음.(Diag Log로 확인가능)\n"
+    ],
+    [
+      13,
+      "1. Elevator > Add Elevator > 옵션 > 알람 > Device : Slave 장치 선택 > Port : Input Port 1 선택 > Switch : Normally Open 선택 > Duration : 100 > Schedule : Always 선택",
+      "1. Action 선택\n1) 모든 층 릴레이 열림\n2) 신호 출력",
+      "1. 모든 층 릴레이가 On 된다.\n> 로그는 '모든 층 릴레이 열림 발생'으로 확인 가능하다.\n2. 설정한 신호가 Master 장치에서 출력된다.\n> 모니터링에서는 Port 로그를 남기지 않는다.\n   ※ 장치에서는 로그를 남기고 있음.(Diag Log로 확인가능)"
+    ],
+    [
+      14,
+      "1. Elevator > Add Elevator > 옵션 > 알람 > Device : Slave 장치 선택 > Port : Input Port 1 선택 > Switch : Normally Close 선택 > Duration : 100 > Schedule : Always 선택",
+      "1. Action 선택\n1) 모든 층 릴레이 열림\n2) 신호 출력",
+      "1. 모든 층 릴레이가 On 된다.\n> 로그는 '모든 층 릴레이 열림 발생'으로 확인 가능하다.\n2. 설정한 신호가 Master 장치에서 출력된다.\n> 모니터링에서는 Port 로그를 남기지 않는다.\n   ※ 장치에서는 로그를 남기고 있음.(Diag Log로 확인가능)"
+    ],
+    [
+      15,
+      "1. Elevator > Add Elevator > 옵션 > 릴레이 제어 & 이중인증 > Tamper 설정 : OM-120, S/W : N/O\n2. Elevator > Add Elevator > 옵션 > 알람 > 작업조건 : 미리 정의된 알람, 템퍼 켜짐 > Action : 신호출력, 장치 : 임의의 장치 > 포트 : 임의의 포트 > 신호 선택 : 임의의 신호 > 확인",
+      "1. Tamper에 OM-120 장치만 설정, S/W : N/O 설정 \n2. 알람\n - 미리 정의된 알람 > 템퍼켜짐\n - Action > 신호출력\n   : 장치, 포트, 신호설정 선택",
+      "1. Tamper는 OM-120 장치만 설정 가능하다.\n2. Action의 장치는 Wiegand Reader를 제외한 모든 장치 가능(SIO2, DM20 가능)\n3. Tamper가 N/O일때 해당 Action이 발생한다.\n4. Tamper Alarm이 설정된 장치에서 울려야 한다."
+    ],
+    [
+      16,
+      "1. Elevator > Add Elevator > 옵션 > 릴레이 제어 & 이중인증 > Tamper 설정 : OM-120, S/W : N/C\n2. Elevator > Add Elevator > 옵션 > 알람 > 작업조건 : 미리 정의된 알람, 템퍼 켜짐 > Action : 신호출력, 장치 : 임의의 장치 > 포트 : 임의의 포트 > 신호 선택 : 임의의 신호 > 확인",
+      "1. Tamper에 OM-120 장치만 설정, S/W : N/C 설정 \n2. 알람\n - 미리 정의된 알람 > 템퍼켜짐\n - Action > 신호출력\n   : 장치, 포트, 신호설정 선택",
+      "1. Tamper는 OM-120 장치만 설정 가능하다.\n2. Action의 장치는 Wiegand Reader를 제외한 모든 장치 가능(SIO2, DM20 가능)\n3. Tamper가 N/C일때 해당 Action이 발생한다.\n4. Tamper Alarm이 설정된 장치에서 울려야 한다."
+    ],
+    [
+      17,
+      "1. Elevator > Add Elevator > 옵션 > 알람 > Device : DM20 장치 선택 > Port : Supervised Input Port 선택 > Switch 선택 > Duration : 100 > Schedule : Always 선택",
+      "DM20\n> Supervised Input Port 0, 1, 4, 5\n\nSwitch Type\n> Normal Open, Normal Close, Short, Open\n\n1. Action 선택\n1) 모든 층 릴레이 열림\n2) 신호 출력",
+      "1. 모든 층 릴레이가 On 된다.\n> 로그는 '모든 층 릴레이 열림 발생'으로 확인 가능하다.\n2. 설정한 신호가 Action으로 설정한 장치에서 출력된다.\n> 로그는'신호 출력'으로 확인 가능하다.\n"
+    ],
+    [
+      18,
+      "1. Elevator > Add Elevator > 옵션 > Device : 임의의 Device 설정 > Approval Type : Last 설정 > Approval Group : 임의의 Group 선택 > Schedule : Always 또는 임의의 Schedule 설정 > Apply",
+      "[BioStar]\n1. 기본값 : Always\n2. 임의의 스케줄 설정\n\n",
+      "1. Always 설정 시 항상 이중인증으로 동작한다.\n2. 임의의 스케줄 지정시, 스케줄에 포함된 시간에만 이중인증으로 동작한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-176",
+    "description": "",
+    "test_step": [
+      "1. Access Control > Floor Level > Add Floor Level 선택하여 추가한다.",
+      "1. Device > 우클릭 > Slave Search Device",
+      "1. Elevator > Add Elevator > 정보",
+      "1. Elevator > Add Elevator > 설정",
+      "1. Elevator > Add Elevator > 옵션",
+      "1. Elevator > Add Elevator > 옵션 > 알람\n",
+      "1. Elevator > Add Elevator > 옵션 > 알람 > Device : Master 장치 선택 > Port : Input Port 0 선택 > Switch : Normally Open 선택 > Duration : 100 > Schedule : Always 선택",
+      "1. Elevator > Add Elevator > 옵션 > 알람 > Device : Master 장치 선택 > Port : Input Port 0 선택 > Switch : Normally Close 선택 > Duration : 100 > Schedule : Always 선택",
+      "1. Elevator > Add Elevator > 옵션 > 알람 > Device : Master 장치 선택 > Port : Input Port 1 선택 > Switch : Normally Open 선택 > Duration : 100 > Schedule : Always 선택",
+      "1. Elevator > Add Elevator > 옵션 > 알람 > Device : Master 장치 선택 > Port : Input Port 1 선택 > Switch : Normally Close 선택 > Duration : 100 > Schedule : Always 선택",
+      "1. Elevator > Add Elevator > 옵션 > 알람 > Device : Slave 장치 선택 > Port : Input Port 0 선택 > Switch : Normally Open 선택 > Duration : 100 > Schedule : Always 선택",
+      "1. Elevator > Add Elevator > 옵션 > 알람 > Device : Slave 장치 선택 > Port : Input Port 0 선택 > Switch : Normally Close 선택 > Duration : 100 > Schedule : Always 선택",
+      "1. Elevator > Add Elevator > 옵션 > 알람 > Device : Slave 장치 선택 > Port : Input Port 1 선택 > Switch : Normally Open 선택 > Duration : 100 > Schedule : Always 선택",
+      "1. Elevator > Add Elevator > 옵션 > 알람 > Device : Slave 장치 선택 > Port : Input Port 1 선택 > Switch : Normally Close 선택 > Duration : 100 > Schedule : Always 선택",
+      "1. Elevator > Add Elevator > 옵션 > 릴레이 제어 & 이중인증 > Tamper 설정 : OM-120, S/W : N/O\n2. Elevator > Add Elevator > 옵션 > 알람 > 작업조건 : 미리 정의된 알람, 템퍼 켜짐 > Action : 신호출력, 장치 : 임의의 장치 > 포트 : 임의의 포트 > 신호 선택 : 임의의 신호 > 확인",
+      "1. Elevator > Add Elevator > 옵션 > 릴레이 제어 & 이중인증 > Tamper 설정 : OM-120, S/W : N/C\n2. Elevator > Add Elevator > 옵션 > 알람 > 작업조건 : 미리 정의된 알람, 템퍼 켜짐 > Action : 신호출력, 장치 : 임의의 장치 > 포트 : 임의의 포트 > 신호 선택 : 임의의 신호 > 확인",
+      "1. Elevator > Add Elevator > 옵션 > 알람 > Device : DM20 장치 선택 > Port : Supervised Input Port 선택 > Switch 선택 > Duration : 100 > Schedule : Always 선택",
+      "1. Elevator > Add Elevator > 옵션 > Device : 임의의 Device 설정 > Approval Type : Last 설정 > Approval Group : 임의의 Group 선택 > Schedule : Always 또는 임의의 Schedule 설정 > Apply"
+    ],
+    "data": [
+      "1. Add Floor Level",
+      "1. Add Elevator\n1) 옵션\n2) 알람\n2.1) 신호 입력\n2.2) 모든 층 릴레이 열림",
+      "1. Action 선택\n1) 모든 층 릴레이 열림\n2) 신호 출력",
+      "1. Action 선택\n1) 모든 층 릴레이 열림\n2) 신호 출력",
+      "1. Action 선택\n1) 모든 층 릴레이 열림\n2) 신호 출력",
+      "1. Action 선택\n1) 모든 층 릴레이 열림\n2) 신호 출력",
+      "1. Action 선택\n1) 모든 층 릴레이 열림\n2) 신호 출력",
+      "1. Action 선택\n1) 모든 층 릴레이 열림\n2) 신호 출력",
+      "1. Action 선택\n1) 모든 층 릴레이 열림\n2) 신호 출력",
+      "1. Action 선택\n1) 모든 층 릴레이 열림\n2) 신호 출력",
+      "1. Tamper에 OM-120 장치만 설정, S/W : N/O 설정 \n2. 알람\n - 미리 정의된 알람 > 템퍼켜짐\n - Action > 신호출력\n   : 장치, 포트, 신호설정 선택",
+      "1. Tamper에 OM-120 장치만 설정, S/W : N/C 설정 \n2. 알람\n - 미리 정의된 알람 > 템퍼켜짐\n - Action > 신호출력\n   : 장치, 포트, 신호설정 선택",
+      "DM20\n> Supervised Input Port 0, 1, 4, 5\n\nSwitch Type\n> Normal Open, Normal Close, Short, Open\n\n1. Action 선택\n1) 모든 층 릴레이 열림\n2) 신호 출력",
+      "[BioStar]\n1. 기본값 : Always\n2. 임의의 스케줄 설정\n\n"
+    ],
+    "expected_result": [
+      "1. Floor Level을 추가할 수 있다.\n2. Floor 정보 + Schedule로 구성된다.\n3. 최대 128개를 추가할 수 있다.\n",
+      "1. Lift IO를 추가할 수 있다.\n2. 하나의 Master 기기에 최대 31개까지 추가할 수 있다.",
+      "1. 정보를 설정 할 수 있다.\n2. 정보 \n> 이름 설정 가능\n> 그룹 설정 가능\n> 설명 설정 가능",
+      "1. 설정을 설정 할 수 있다.\n2. 설정 \n> 컨드롤러 설정 가능\n: Master 혹은 Default Mode 장치만 선택 가능\n: Slave 장치는 선택 불가\n: Entry 계열의 장치 선택 불가\n: 출입문에 사용된 장치 선택 불가\n> 모듈 설정 가능\n: 컨트롤러에 연결된 Output Module만 선택 가능\n: 일반 장치 선택 불가\n: 컨트롤러가 지정되면 활성화\n: 복수 선택 가능(최대 16개)\n> 리더 설정 가능\n: 컨트롤러 장치 선택 가능\n: 컨트롤러 장치에 연결된 Slave, Wiegand 장치 선택 가능\n: IODevice 선택 불가\n: 컨트롤러가 지정된 경우에만 활성화\n: 복수 선택 가능(최대 4개)",
+      "1. 옵션을 설정 할 수 있다.\n2. 옵션\n> 열림시간\n: 기본값 5 sec\n: 최대 15분\n> 이중 인증",
+      "1. 각 알람을 설정할 수 있다.",
+      "1. 모든 층 릴레이가 On 된다.\n> 로그는 '모든 층 릴레이 열림 발생'으로 확인 가능하다.\n2. 설정한 신호가 Master 장치에서 출력된다.\n> 모니터링에서는 Port 로그를 남기지 않는다.\n   ※ 장치에서는 로그를 남기고 있음.(Diag Log로 확인가능)",
+      "1. 모든 층 릴레이가 On 된다.\n> 로그는 '모든 층 릴레이 열림 발생'으로 확인 가능하다.\n2. 설정한 신호가 Master 장치에서 출력된다.\n> 모니터링에서는 Port 로그를 남기지 않는다.\n   ※ 장치에서는 로그를 남기고 있음.(Diag Log로 확인가능)",
+      "1. 모든 층 릴레이가 On 된다.\n> 로그는 '모든 층 릴레이 열림 발생'으로 확인 가능하다.\n2. 설정한 신호가 Master 장치에서 출력된다.\n> 모니터링에서는 Port 로그를 남기지 않는다.\n   ※ 장치에서는 로그를 남기고 있음.(Diag Log로 확인가능)",
+      "1. 모든 층 릴레이가 On 된다.\n> 로그는 '모든 층 릴레이 열림 발생'으로 확인 가능하다.\n2. 설정한 신호가 Master 장치에서 출력된다.\n> 모니터링에서는 Port 로그를 남기지 않는다.\n   ※ 장치에서는 로그를 남기고 있음.(Diag Log로 확인가능)",
+      "1. 모든 층 릴레이가 On 된다.\n> 로그는 '모든 층 릴레이 열림 발생'으로 확인 가능하다.\n2. 설정한 신호가 Master 장치에서 출력된다.\n> 모니터링에서는 Port 로그를 남기지 않는다.\n   ※ 장치에서는 로그를 남기고 있음.(Diag Log로 확인가능)",
+      "1. 모든 층 릴레이가 On 된다.\n> 로그는 '모든 층 릴레이 열림 발생'으로 확인 가능하다.\n2. 설정한 신호가 Master 장치에서 출력된다.\n> 모니터링에서는 Port 로그를 남기지 않는다.\n   ※ 장치에서는 로그를 남기고 있음.(Diag Log로 확인가능)\n",
+      "1. 모든 층 릴레이가 On 된다.\n> 로그는 '모든 층 릴레이 열림 발생'으로 확인 가능하다.\n2. 설정한 신호가 Master 장치에서 출력된다.\n> 모니터링에서는 Port 로그를 남기지 않는다.\n   ※ 장치에서는 로그를 남기고 있음.(Diag Log로 확인가능)",
+      "1. 모든 층 릴레이가 On 된다.\n> 로그는 '모든 층 릴레이 열림 발생'으로 확인 가능하다.\n2. 설정한 신호가 Master 장치에서 출력된다.\n> 모니터링에서는 Port 로그를 남기지 않는다.\n   ※ 장치에서는 로그를 남기고 있음.(Diag Log로 확인가능)",
+      "1. Tamper는 OM-120 장치만 설정 가능하다.\n2. Action의 장치는 Wiegand Reader를 제외한 모든 장치 가능(SIO2, DM20 가능)\n3. Tamper가 N/O일때 해당 Action이 발생한다.\n4. Tamper Alarm이 설정된 장치에서 울려야 한다.",
+      "1. Tamper는 OM-120 장치만 설정 가능하다.\n2. Action의 장치는 Wiegand Reader를 제외한 모든 장치 가능(SIO2, DM20 가능)\n3. Tamper가 N/C일때 해당 Action이 발생한다.\n4. Tamper Alarm이 설정된 장치에서 울려야 한다.",
+      "1. 모든 층 릴레이가 On 된다.\n> 로그는 '모든 층 릴레이 열림 발생'으로 확인 가능하다.\n2. 설정한 신호가 Action으로 설정한 장치에서 출력된다.\n> 로그는'신호 출력'으로 확인 가능하다.\n",
+      "1. Always 설정 시 항상 이중인증으로 동작한다.\n2. 임의의 스케줄 지정시, 스케줄에 포함된 시간에만 이중인증으로 동작한다."
+    ]
+  }
+}

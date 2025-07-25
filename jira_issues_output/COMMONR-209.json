@@ -1,0 +1,282 @@
+{
+  "id": "COMMONR-209",
+  "content": [
+    [
+      1,
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Configuration> Active/Inactive 설정",
+      "Status\n> Active\n> Inactive",
+      "1. Active 설정으로 생성한 Zone인 경우 Intrusion Alarm으로 동작해야 한다.\n> 설정에 의해 Arm/Disarm/Alarm 발생\n2. Inactive 설정으로 생성한 Zone인 경우 Intrusion Alarm이 동작하지 않아야 한다.\n> Normal 상태 동작"
+    ],
+    [
+      2,
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Configuration> Mode 설정",
+      "Mode\n> Local Zone\n",
+      "1. Master 장치에 RS485/Wiegand Reader로 연결된 장치들로 구성된 Door들로 설정이 되어야 한다.\n> Max : 32 Door\n> Zone : 동일한 RS 485 Network 구성 장치\n> Default : Local\n> 선택 표시 : Door Name+숫자\n> Door Sensor 설정 유무 상관 없이 Door Sensor가 침입 알람을 발생시킬 수 있음을 주석으로 알림\n2. Elevator에 대해서는 미지원한다."
+    ],
+    [
+      3,
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Configuration> Mode 설정",
+      "Mode\n> Global Zone\n",
+      "1. RS485/Wiegand Reader/Network로 구성된 모든 장치에 대해 설정이 되어야 한다.\n> 미지원"
+    ],
+    [
+      4,
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Delay Time 설정",
+      "Delay Time\n> Arm\n> Disarm\n> 범위 : 0s(Default) ~ 60s",
+      "1. 선택한 값이 설정 되어야 한다.\n2. Arm Delay Time 설정 시 인증 후 경과 시간 경과 후 Arm 상태로 전환된다.\n> Delay Time : 0s(대기 시간 없이 경비 상태 전환)\n3. Disarm Delay Time 설정 시 대기 시간 경과 후 경보 발생\n> Delay Time : 0s(대기 시간 없이 바로 경보 발생)\n> Delay Time 경과 시 : 설정된 Alarm 발생"
+    ],
+    [
+      5,
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Access Card 설정",
+      "Access Card\n> CSN\n> Wiegand ",
+      "1. CSN, Wiegand Card가 Access Card로 정상 등록된다.\n> Settings> Card> Activated Card에 할당 및 User Name이 해당 Intrusion Alarm Zone Name인지 확인\n> Max : 128 개\n2. 등록된 Access Card(CSN, Wiegand)로 Arm/Disarm이 동작된다."
+    ],
+    [
+      6,
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Access Card 설정\n3. Card Type, Registration Option, Device\n> Wiegand - Wiegand Format 선택\n4. Enroll ",
+      "Access Card\n> CSN\n> Wiegand \nCard Type\n> CSN/Wiegand\nRegistation Option\n> Register by Card Reader/Assign Card/Enter Manually",
+      "1. CSN, Wiegand Card가 Access Card로 정상 등록된다.\n> Settings> Card> Activated Card에 할당 및 User Name이 해당 Intrusion Alarm Zone Name인지 확인\n> Max : 128 개\n2. 등록된 Access Card(CSN, Wiegand)로 Arm/Disarm이 동작된다."
+    ],
+    [
+      7,
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Access Group 설정\n3. Access Group : +Add\n4. 출입그룹 포함된 사용자로 인증시도",
+      "Access Group\n> Max : 128 개\n> Access Level 유무 상관 없이 User/ User Group",
+      "1. Access Group에 속한 사용자만이 Arm/Disarm 권한을 갖는다.\n> Normal -> Arm : Arm \n> Arm -> Disarm : Disarm\n2. 경비 상태에서 인증 시 아래와 같이 동작한다.\n> Arm : 등록된 사용자 인증 시 '경비 중 인증 제한' 로그 발생"
+    ],
+    [
+      8,
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Arm/Disarm 개시 설정\n3. Arm/Diarm 개시 : +Add",
+      "Arm/Disarm 개시\n> Input Type : Input Port, Card, Key\n> Arm Type : Arm Only, Disarm Only, Arm/Diarm\n> Input Device : Master, Slave, IO(SIO2, OM120, DM20), Wiegand Reader",
+      "1. 경비/해제의 대상 장치(추가된 Door)에 대한 Input 설정을 할 수 있다.\n> Input Port\n> Key\n> Card\n2. 신호 입력 선택 시 Device, Port, Arm Type, Switch Type, Duration(ms) 항목을 선택할 수 있다.\n> Switch Type : NO/NC\n3. Key 입력 선택 시 Device, Arm Type항목을 선택 할 수 있다.\n4. Card 입력 선택 시 Device, Arm Type항목을 선택 할 수 있다.\n5. 경비/해제 개시 시 아래와 같이 동작한다.\n> Input Port : 특정 Input 접지(사용자 인증 필요 없음)\n> Key : 특정 Key + 사용자 인증으로 Arm/Disarm\n> Card : 특정 Card + 사용자 인증으로 Arm/Disarm"
+    ],
+    [
+      9,
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Intrusion Setting> Intrusion Sensor 설정\n3. Intrusion Sensor : +Add",
+      "Intrusion Sensor\n> Device\n> Port\n> Switch Type : NO/NC\n> Duration(ms)",
+      "1. 경비/해제의 대상 장치에 대한 Intrusion Sensor Input설정을 할 수 있다.\n> Input Port : 경비 중 침입 감지 용도\n> 경비개시/해제와 침입감지(센서)는 같은 장치 Input 설정 불가\n> Max : 128 개\n2. 신호 입력 선택 시 Intrusion Sensor Device, Port, Switch Type, Duration(ms) 항목을 선택할 수 있다.\n3. Intrusion Sensor Input으로 침입 감지 상황이 동작한다.\n> Door Sensor : 침입 감지 할 수 있음\n> 경비/해제 개시와 동일 Input 설정 불가"
+    ],
+    [
+      10,
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Arm/Disarm 개시 설정\n3. Arm/Disarm 개시 : +Add \n4. Intrusion Alarm Zone> Intrusion Setting> Intrusion Sensor : +Add로 특정 장치 Input 설정\n5. Alarm 설정",
+      "Predefined Trigger\n> 경비진입, 경비실패, 경비수행인증성공/실패, 해제수행인증성공/실패, 경비해제성공, 침입감지, 경비중인증제한, 경보상태해제\nAction\n> Output\n> Alert Sound",
+      "1. 해당 이벤트가 발생 시 Action이 동작한다.\n> Max : 128 개 (BioStar상에서는 제한 없음)\n> Alarm_Input 관련 로그는 미발생하고, Alarm 로그에서 이를 대응하여 표시함"
+    ],
+    [
+      11,
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Arm/Disarm 개시 설정\n3. Arm/Disarm 개시 : +Add \n4. Intrusion Alarm Zone> Intrusion Setting> Intrusion Sensor : +Add로 특정 장치 Input 설정\n5. 특정 장치 Port, Switch Tyep, Duration 설정> Apply\n6. Alarm 설정> Action> Output\n7. 경비 상태에서 침입 상황 발생> 동작확인",
+      "Action Device\n> Master 장치 선택\n> Slave 장치 선택\n> SIO2 선택\n> DM20 선택\n> OM120 선택\nAdd New Signal 설정 값\n Delay : 100 / Count : 1000 / On : 2 / Off : 2",
+      "1. Output 설정한 장치에서 Signal이 발생한다.\n> 경비진입, 경비실패, 경비수행인증성공/실패, 해제수행인증성공/실패, 경비해제성공, 침입감지, 경보상태해제, 경비중인증제한"
+    ],
+    [
+      12,
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Arm/Disarm 개시 설정\n3. Arm/Disarm 개시 : +Add \n4. Intrusion Alarm Zone> Intrusion Setting> Intrusion Sensor : +Add로 특정 장치 Input 설정\n5. 특정 장치 Port, Switch Tyep, Duration 설정> Apply\n6. Alarm 설정> Action> Alert Sound\n7. 경비 상태에서 침입 상황 발생> 동작확인",
+      "Action Device\n> Master 장치 선택\n> Slave 장치 선택\n> SIO2 선택\n> DM20 선택\n> OM120 선택\nAlert Buzzer Volume - Entry(P2, R2, W2)\n> Off, Low, Medium, High\nAlert Sound Type - Station(A2, BS2, L2, FS2(추후 지원))\n> Alarm 1, Alarm 2\nPlay Option \n> Infinite, Count",
+      "1. Alert Sound 설정한 장치에서 Alert Buzzer Type/Alert Sound Type이 발생한다.\n > Buzzer Type : Play Option 미지원\n > 경비진입, 경비실패, 경비수행인증성공/실패, 해제수행인증성공/실패, 경비해제성공, 침입감지, 경비중인증제한, 경보상태해제\n 2. Alarm이 발생하는 도중 Clear Alarm시 Alarm Clear가 된다.\n > Clear Alarm 로그발생\n > Disarm 인증 : Disarm 전환, Alarm 상태 유지, Alarm 발생, Alarm Clear 로그미발생(서로 관계 없음)\n\n* 침입감지로 Alarm이 발생할 경우 Zone Status에서 Alarm Clear로 경보상태 해제가능\n 침입감지 외 Action들에 의해 발생한 Alarm에 대해서는 Device를 잡고 해제가능"
+    ],
+    [
+      13,
+      "[침임감지 센서 동작 - 단일 장치]\n1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Arm/Disarm 개시 설정\n3. Arm/Disarm 개시 : +Device add\n4. Intrusion Alarm Zone> Intrusion Setting> Intrusion Sensor : +Add로 기기의 Input Port 설정\n5. Intrusion Sensor 접지 후 Arm/Disarm 카드 인증\n6. 출입그룹에 포함된 사용자로 인증 시도",
+      "Intrusion Sensor\n> Device\n> Port\n> Switch Type : NO/NC\n> Duration(ms)",
+      "1. Arming Failed 로그 및 인증 실패 알림음 출력됨"
+    ],
+    [
+      14,
+      "[침임감지 센서 동작 - (Master-Slave)]\n1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Arm/Disarm 개시 설정\n3. Arm/Disarm 개시 : +Device add\n4. Intrusion Alarm Zone> Intrusion Setting> Intrusion Sensor : +Add로 slave 기기의 Input Port 설정\n5. Intrusion Sensor 접지 후 Arm/Disarm 카드 인증\n6. 출입그룹에 포함된 사용자로 인증 시도",
+      "Intrusion Sensor\n> Device\n> Port\n> Switch Type : NO/NC\n> Duration(ms)",
+      "1. Arming Failed 로그 및 인증 실패 알림음 출력됨"
+    ],
+    [
+      15,
+      "<Intrusion Alarm Zone Alarm이 발생되는 상태>\n1. Monitoring> Zone Status\n2. Intrusion Alarm Zone 선택\n3. Clear Alarm",
+      "",
+      "1. Intrusion Alarm Zone 위반으로 발생된 Alarm이 해제된다.\n> Alarm 해제 : 명시적\n> Clear Alarm 로그 발생"
+    ],
+    [
+      16,
+      "<Intrusion Alarm Zone 다수 생성된 상태>\n1. Zone 선택 후 삭제시도",
+      "Zone 삭제\n> 개별삭제\n> 전체삭제",
+      "1. Zone에 대해 개별삭제/전체삭제를 할 수 있어야 한다.\n> Dialog : Cannot set intrusionAlarmZone: -1201 Error 출력 확인"
+    ],
+    [
+      17,
+      "1. 생성한 Zone 정보를 편집한다.",
+      "",
+      "1. Zone 정보 변경이 가능해야 한다.\n> 기기에서 Sync 동작하지 않으므로 Dialog에서 해당 정보는 확인 불가능함"
+    ],
+    [
+      18,
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Alarm Output/Alert Sound 설정",
+      "Alarm\n> 128 개",
+      "1. Zone에서의 Output, Alert Sound는 최대 128개까지 설정되어야 한다."
+    ],
+    [
+      19,
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Arm/Disarm 개시 설정\n3. Arm/Disarm 개시 : +Add \n4. Intrusion Alarm Zone> Intrusion Setting> Intrusion Sensor : +Add로 특정 장치 Input 설정\n5. 특정 장치 Port, Switch Tyep, Duration 설정> Apply\n6. Alarm 설정> Action> Alert Sound\n7. 경비 상태에서 침입 상황 발생> 동작확인\n8. Master 장치 Reboot 시도",
+      "Alarm \n> Action\n: Alter Sound\n: Device Slave",
+      "1. Arm 상태의 Master를 Reboot하는 경우 Alarm은 미발생하고, Alarm 상태는 유지된다.\n> Arm 유지\n2. Arm, Alarm 상태의 Master를 Reboot하기 전에 Disarm, Alarm 상태로 변경 후 Reboot시 Alarm은 미발생하고, Alarm 상태는 유지된다.\n> Disarm 유지"
+    ],
+    [
+      20,
+      "1. Intrusion Alarm Zone 동작\n2. Fire Alarm 동작",
+      "개별 동작\n> Fire Alarm Zone\n> Intrusion Alarm Zone",
+      "1. 최초 Intrusion Alarm Zone에 의해 Locked 된다.\n> Door Unlock - Locked 된 상태로 경비 개시\n> Fire Alarm - Unlocked 된 상태이면 우선 순위에 의해 Unlocked 된 상태로 경비 개시. Door Open 시 Alarm 발생(Fire Alarm, Intrusion Alarm)\n2. Fire Alarm 발생시 Unlocked 유지된다. \n> Fire Alarm 이 Intrusion Alarm보다 우선순위가 높다. Door Open 시 Intrusion Alarm 발생한다."
+    ],
+    [
+      21,
+      "< 추후 재확인 필요 > \n1. Intrusion Alarm Zone 동작\n2. Scheudle Unlock 동작\n3. Fire Alarm 동작\n4. Manual Lock 동작\n5. Manual Unlock 동작",
+      "우선 순위 확인\n> Fire Alarm Zone(1)\n> Manual Lock/Unlcok (Monitoring > Door Status)(2)\n> Scheduled Lock/Unlock Zone(3)\n\n>> > Intrusion Alarm Zone 동작",
+      "1. 최초 Intrusion Alarm Zone에 의해 Locked 된다.\n> Door Unlock - Locked 된 상태로 경비 개시\n> Fire Alarm - Unlocked 된 상태이면 우선 순위에 의해 Unlocked 된 상태로 경비 개시. Door Open 시 Alarm 발생(Fire Alarm, Intrusion Alarm)\n2. Schedule Unlock에 의해 Unlocked 된다.\n> Door Open - Alarm 발생(Intrusion Alarm)\n3. Fire Alarm 발생시 Unlocked 유지된다. (Fire Alarm 이 Scheduled Unlock 보다 우선순위가 높다)\n4. Manual Lock 발생시 Unlocked 유지된다. (Manual Lock 이 Fire Alarm 보다 우선순위가 낮다)\n5. Fire Alarm 해제 후 Manual Lock 발생시 Locked 된다. (Manual Lock 이 Scheduled Unlock 보다 우선순위가 높다)\n6. Fire Alarm 해제 후 Manual Unlock 발생시 Unlocked 유지된다. (Manual Unlock 이 Scheduled Unlock 보다 우선순위가 높다)\n7. Manual Lock/Unlock 해제 후 Scheduled Unlock 에 의해 Unlocked 된다."
+    ],
+    [
+      22,
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Arm/Disarm 개시 설정\n3. Arm/Disarm 개시 : +Add \n4. Intrusion Alarm Zone> Intrusion Setting> Intrusion Sensor : +Add로 특정 장치 Input 설정\n5. 특정 장치 Port, Switch Tyep, Duration 설정> Apply\n6. Alarm 설정> Action> Alert Sound\n7. 경비 상태에서 침입 상황 발생> 동작확인\n8. Master 장치 Reboot 시도",
+      "Door 설정\n> Disable Device 포함",
+      "1. 경비/해제의 대상 장치로 경비/해제가 동작한다.\n> Disable Device(Lock Device) : 해당\n 장치에서는 Card/Key 무반응, Input - 동작, 다른 장치의 Card/Key/Input에 의해서 동작\n2. Disable Device 장치는 Input에 의해 경비/해제, 침입감지/경보가 가능하고, 다른 장치에 의해서 경비/해제가 가능해야 한다."
+    ],
+    [
+      23,
+      "1. Intrusion Alarm Zone 추가\n2. CSN으로 경비/해제 카드 등록\n3. GKDB의 Keypad로 경비/해제 시도",
+      "Slave로 D2-GKDB 연결된 상태\n> GKDB의 키패드로 카드ID 입력 옵션: 사용",
+      "1. 경비/해제로 동작되어야 한다."
+    ],
+    [
+      24,
+      "1. Intrusion Alarm Zone 추가\n2. 경비시도\n3. 경비로 동작 전 Delay Time이 도는 상태에서 Master 전원 재인가\n4. Master 부팅완료 후 Master/Slave의 경비유무 상태 확인",
+      "2021 4Q 개발항목: BDP-248",
+      "1. Master/Slave 모두 경비로 동작하지 않고 Normal 상태로 동작한다."
+    ],
+    [
+      25,
+      "1. Intrusion Alarm Zone 추가\n2. 경비시도\n3. 경비로 동작 전 Delay Time이 도는 상태에서 Master 전원 재인가\n4. Master 부팅완료 후 Master/Slave의 Delay Time 알림음 출력 확인",
+      "",
+      "1. Slvae 장치에서 Delay time 알림음이 미출력된다.\n>띠띠띠~~ 알림음"
+    ],
+    [
+      26,
+      "1. Intrusion Alarm Zone 추가\n2. 경비시도\n3. 경비로 동작되는거 확인 후 Master 전원 재인가\n4. Master 부팅완료 후 Master/Slave의 경비유무 상태 확인",
+      "2021 4Q 개발항목: BDP-248",
+      "1. Master/Slave 모두 경비상태로 동작한다."
+    ],
+    [
+      27,
+      "1. Intrusion Alarm Zone 추가\n2. 경비시도\n3. 경비로 동작되는거 확인 후 다시 경비해제 시도\n4. 경비해제로 동작되는거 확인 후 Master 전원 재인가\n4. Master 부팅완료 후 Master/Slave의 경비해제 유무 상태 확인",
+      "2021 4Q 개발항목: BDP-248",
+      "1. Master/Slave 모두 경비해제 상태로 동작한다."
+    ],
+    [
+      28,
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Arm/Disarm 개시 설정\n3. Arm/Diarm 개시(Device) : +Add\n4. 인증을 통해 Arm/Disarm 후 출력되는 로그 확인",
+      "Arm/Disarm 개시\n> Device : Master/Slave/Wiegand Reader\n> Arm Type : Arm Only, Disarm Only, Arm/Diarm\n> Input Type: Card / Key / Card or Key",
+      "1. 인증을 통한 Arm/Disarm시 로그상 Arm - Disarm 로그가 출력된다."
+    ],
+    [
+      29,
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Arm/Disarm 개시 설정\n3. Arm/Diarm 개시(Input) : +Add\n4. Input을 통해 Arm/Disarm 후 출력되는 로그 확인",
+      "Arm/Disarm 개시\n> Device : Master/Slave\n> Port 설정\n> Arm Type : Arm Only, Disarm Only, Arm/Diarm\n> Switch 설정\n> Duration(ms) 설정",
+      "1. Input 을 통한 Arm/Disarm시 로그상 Arm - Disarm 로그가 출력된다."
+    ],
+    [
+      30,
+      "[Intrusion Alarm Zone 설정된 상태]\n1. Arm/Disarm시 장치에서 지원하는 각 인증모드로 진입/해제 시도",
+      "Intrusion Alarm Zone 설정\n> 인증 통한 Arm/Disarm 설정\n> arm/disarm 권한 가진 사용자는 모든 크리덴셜 등록된 상태",
+      "1. Arm/Disarm시 인증모드와 상관없이 지문/카드/ID+PIN 인증으로만 동작한다.\n=> Admin Menu 진입과 동일"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-209",
+    "description": "",
+    "test_step": [
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Configuration> Active/Inactive 설정",
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Configuration> Mode 설정",
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Configuration> Mode 설정",
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Delay Time 설정",
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Access Card 설정",
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Access Card 설정\n3. Card Type, Registration Option, Device\n> Wiegand - Wiegand Format 선택\n4. Enroll ",
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Access Group 설정\n3. Access Group : +Add\n4. 출입그룹 포함된 사용자로 인증시도",
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Arm/Disarm 개시 설정\n3. Arm/Diarm 개시 : +Add",
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Intrusion Setting> Intrusion Sensor 설정\n3. Intrusion Sensor : +Add",
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Arm/Disarm 개시 설정\n3. Arm/Disarm 개시 : +Add \n4. Intrusion Alarm Zone> Intrusion Setting> Intrusion Sensor : +Add로 특정 장치 Input 설정\n5. Alarm 설정",
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Arm/Disarm 개시 설정\n3. Arm/Disarm 개시 : +Add \n4. Intrusion Alarm Zone> Intrusion Setting> Intrusion Sensor : +Add로 특정 장치 Input 설정\n5. 특정 장치 Port, Switch Tyep, Duration 설정> Apply\n6. Alarm 설정> Action> Output\n7. 경비 상태에서 침입 상황 발생> 동작확인",
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Arm/Disarm 개시 설정\n3. Arm/Disarm 개시 : +Add \n4. Intrusion Alarm Zone> Intrusion Setting> Intrusion Sensor : +Add로 특정 장치 Input 설정\n5. 특정 장치 Port, Switch Tyep, Duration 설정> Apply\n6. Alarm 설정> Action> Alert Sound\n7. 경비 상태에서 침입 상황 발생> 동작확인",
+      "[침임감지 센서 동작 - 단일 장치]\n1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Arm/Disarm 개시 설정\n3. Arm/Disarm 개시 : +Device add\n4. Intrusion Alarm Zone> Intrusion Setting> Intrusion Sensor : +Add로 기기의 Input Port 설정\n5. Intrusion Sensor 접지 후 Arm/Disarm 카드 인증\n6. 출입그룹에 포함된 사용자로 인증 시도",
+      "[침임감지 센서 동작 - (Master-Slave)]\n1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Arm/Disarm 개시 설정\n3. Arm/Disarm 개시 : +Device add\n4. Intrusion Alarm Zone> Intrusion Setting> Intrusion Sensor : +Add로 slave 기기의 Input Port 설정\n5. Intrusion Sensor 접지 후 Arm/Disarm 카드 인증\n6. 출입그룹에 포함된 사용자로 인증 시도",
+      "<Intrusion Alarm Zone Alarm이 발생되는 상태>\n1. Monitoring> Zone Status\n2. Intrusion Alarm Zone 선택\n3. Clear Alarm",
+      "<Intrusion Alarm Zone 다수 생성된 상태>\n1. Zone 선택 후 삭제시도",
+      "1. 생성한 Zone 정보를 편집한다.",
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Alarm Output/Alert Sound 설정",
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Arm/Disarm 개시 설정\n3. Arm/Disarm 개시 : +Add \n4. Intrusion Alarm Zone> Intrusion Setting> Intrusion Sensor : +Add로 특정 장치 Input 설정\n5. 특정 장치 Port, Switch Tyep, Duration 설정> Apply\n6. Alarm 설정> Action> Alert Sound\n7. 경비 상태에서 침입 상황 발생> 동작확인\n8. Master 장치 Reboot 시도",
+      "1. Intrusion Alarm Zone 동작\n2. Fire Alarm 동작",
+      "< 추후 재확인 필요 > \n1. Intrusion Alarm Zone 동작\n2. Scheudle Unlock 동작\n3. Fire Alarm 동작\n4. Manual Lock 동작\n5. Manual Unlock 동작",
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Arm/Disarm 개시 설정\n3. Arm/Disarm 개시 : +Add \n4. Intrusion Alarm Zone> Intrusion Setting> Intrusion Sensor : +Add로 특정 장치 Input 설정\n5. 특정 장치 Port, Switch Tyep, Duration 설정> Apply\n6. Alarm 설정> Action> Alert Sound\n7. 경비 상태에서 침입 상황 발생> 동작확인\n8. Master 장치 Reboot 시도",
+      "1. Intrusion Alarm Zone 추가\n2. CSN으로 경비/해제 카드 등록\n3. GKDB의 Keypad로 경비/해제 시도",
+      "1. Intrusion Alarm Zone 추가\n2. 경비시도\n3. 경비로 동작 전 Delay Time이 도는 상태에서 Master 전원 재인가\n4. Master 부팅완료 후 Master/Slave의 경비유무 상태 확인",
+      "1. Intrusion Alarm Zone 추가\n2. 경비시도\n3. 경비로 동작 전 Delay Time이 도는 상태에서 Master 전원 재인가\n4. Master 부팅완료 후 Master/Slave의 Delay Time 알림음 출력 확인",
+      "1. Intrusion Alarm Zone 추가\n2. 경비시도\n3. 경비로 동작되는거 확인 후 Master 전원 재인가\n4. Master 부팅완료 후 Master/Slave의 경비유무 상태 확인",
+      "1. Intrusion Alarm Zone 추가\n2. 경비시도\n3. 경비로 동작되는거 확인 후 다시 경비해제 시도\n4. 경비해제로 동작되는거 확인 후 Master 전원 재인가\n4. Master 부팅완료 후 Master/Slave의 경비해제 유무 상태 확인",
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Arm/Disarm 개시 설정\n3. Arm/Diarm 개시(Device) : +Add\n4. 인증을 통해 Arm/Disarm 후 출력되는 로그 확인",
+      "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Arm/Disarm 개시 설정\n3. Arm/Diarm 개시(Input) : +Add\n4. Input을 통해 Arm/Disarm 후 출력되는 로그 확인",
+      "[Intrusion Alarm Zone 설정된 상태]\n1. Arm/Disarm시 장치에서 지원하는 각 인증모드로 진입/해제 시도"
+    ],
+    "data": [
+      "Status\n> Active\n> Inactive",
+      "Mode\n> Local Zone\n",
+      "Mode\n> Global Zone\n",
+      "Delay Time\n> Arm\n> Disarm\n> 범위 : 0s(Default) ~ 60s",
+      "Access Card\n> CSN\n> Wiegand ",
+      "Access Card\n> CSN\n> Wiegand \nCard Type\n> CSN/Wiegand\nRegistation Option\n> Register by Card Reader/Assign Card/Enter Manually",
+      "Access Group\n> Max : 128 개\n> Access Level 유무 상관 없이 User/ User Group",
+      "Arm/Disarm 개시\n> Input Type : Input Port, Card, Key\n> Arm Type : Arm Only, Disarm Only, Arm/Diarm\n> Input Device : Master, Slave, IO(SIO2, OM120, DM20), Wiegand Reader",
+      "Intrusion Sensor\n> Device\n> Port\n> Switch Type : NO/NC\n> Duration(ms)",
+      "Predefined Trigger\n> 경비진입, 경비실패, 경비수행인증성공/실패, 해제수행인증성공/실패, 경비해제성공, 침입감지, 경비중인증제한, 경보상태해제\nAction\n> Output\n> Alert Sound",
+      "Action Device\n> Master 장치 선택\n> Slave 장치 선택\n> SIO2 선택\n> DM20 선택\n> OM120 선택\nAdd New Signal 설정 값\n Delay : 100 / Count : 1000 / On : 2 / Off : 2",
+      "Action Device\n> Master 장치 선택\n> Slave 장치 선택\n> SIO2 선택\n> DM20 선택\n> OM120 선택\nAlert Buzzer Volume - Entry(P2, R2, W2)\n> Off, Low, Medium, High\nAlert Sound Type - Station(A2, BS2, L2, FS2(추후 지원))\n> Alarm 1, Alarm 2\nPlay Option \n> Infinite, Count",
+      "Intrusion Sensor\n> Device\n> Port\n> Switch Type : NO/NC\n> Duration(ms)",
+      "Intrusion Sensor\n> Device\n> Port\n> Switch Type : NO/NC\n> Duration(ms)",
+      "Zone 삭제\n> 개별삭제\n> 전체삭제",
+      "Alarm\n> 128 개",
+      "Alarm \n> Action\n: Alter Sound\n: Device Slave",
+      "개별 동작\n> Fire Alarm Zone\n> Intrusion Alarm Zone",
+      "우선 순위 확인\n> Fire Alarm Zone(1)\n> Manual Lock/Unlcok (Monitoring > Door Status)(2)\n> Scheduled Lock/Unlock Zone(3)\n\n>> > Intrusion Alarm Zone 동작",
+      "Door 설정\n> Disable Device 포함",
+      "Slave로 D2-GKDB 연결된 상태\n> GKDB의 키패드로 카드ID 입력 옵션: 사용",
+      "2021 4Q 개발항목: BDP-248",
+      "2021 4Q 개발항목: BDP-248",
+      "2021 4Q 개발항목: BDP-248",
+      "Arm/Disarm 개시\n> Device : Master/Slave/Wiegand Reader\n> Arm Type : Arm Only, Disarm Only, Arm/Diarm\n> Input Type: Card / Key / Card or Key",
+      "Arm/Disarm 개시\n> Device : Master/Slave\n> Port 설정\n> Arm Type : Arm Only, Disarm Only, Arm/Diarm\n> Switch 설정\n> Duration(ms) 설정",
+      "Intrusion Alarm Zone 설정\n> 인증 통한 Arm/Disarm 설정\n> arm/disarm 권한 가진 사용자는 모든 크리덴셜 등록된 상태"
+    ],
+    "expected_result": [
+      "1. Active 설정으로 생성한 Zone인 경우 Intrusion Alarm으로 동작해야 한다.\n> 설정에 의해 Arm/Disarm/Alarm 발생\n2. Inactive 설정으로 생성한 Zone인 경우 Intrusion Alarm이 동작하지 않아야 한다.\n> Normal 상태 동작",
+      "1. Master 장치에 RS485/Wiegand Reader로 연결된 장치들로 구성된 Door들로 설정이 되어야 한다.\n> Max : 32 Door\n> Zone : 동일한 RS 485 Network 구성 장치\n> Default : Local\n> 선택 표시 : Door Name+숫자\n> Door Sensor 설정 유무 상관 없이 Door Sensor가 침입 알람을 발생시킬 수 있음을 주석으로 알림\n2. Elevator에 대해서는 미지원한다.",
+      "1. RS485/Wiegand Reader/Network로 구성된 모든 장치에 대해 설정이 되어야 한다.\n> 미지원",
+      "1. 선택한 값이 설정 되어야 한다.\n2. Arm Delay Time 설정 시 인증 후 경과 시간 경과 후 Arm 상태로 전환된다.\n> Delay Time : 0s(대기 시간 없이 경비 상태 전환)\n3. Disarm Delay Time 설정 시 대기 시간 경과 후 경보 발생\n> Delay Time : 0s(대기 시간 없이 바로 경보 발생)\n> Delay Time 경과 시 : 설정된 Alarm 발생",
+      "1. CSN, Wiegand Card가 Access Card로 정상 등록된다.\n> Settings> Card> Activated Card에 할당 및 User Name이 해당 Intrusion Alarm Zone Name인지 확인\n> Max : 128 개\n2. 등록된 Access Card(CSN, Wiegand)로 Arm/Disarm이 동작된다.",
+      "1. CSN, Wiegand Card가 Access Card로 정상 등록된다.\n> Settings> Card> Activated Card에 할당 및 User Name이 해당 Intrusion Alarm Zone Name인지 확인\n> Max : 128 개\n2. 등록된 Access Card(CSN, Wiegand)로 Arm/Disarm이 동작된다.",
+      "1. Access Group에 속한 사용자만이 Arm/Disarm 권한을 갖는다.\n> Normal -> Arm : Arm \n> Arm -> Disarm : Disarm\n2. 경비 상태에서 인증 시 아래와 같이 동작한다.\n> Arm : 등록된 사용자 인증 시 '경비 중 인증 제한' 로그 발생",
+      "1. 경비/해제의 대상 장치(추가된 Door)에 대한 Input 설정을 할 수 있다.\n> Input Port\n> Key\n> Card\n2. 신호 입력 선택 시 Device, Port, Arm Type, Switch Type, Duration(ms) 항목을 선택할 수 있다.\n> Switch Type : NO/NC\n3. Key 입력 선택 시 Device, Arm Type항목을 선택 할 수 있다.\n4. Card 입력 선택 시 Device, Arm Type항목을 선택 할 수 있다.\n5. 경비/해제 개시 시 아래와 같이 동작한다.\n> Input Port : 특정 Input 접지(사용자 인증 필요 없음)\n> Key : 특정 Key + 사용자 인증으로 Arm/Disarm\n> Card : 특정 Card + 사용자 인증으로 Arm/Disarm",
+      "1. 경비/해제의 대상 장치에 대한 Intrusion Sensor Input설정을 할 수 있다.\n> Input Port : 경비 중 침입 감지 용도\n> 경비개시/해제와 침입감지(센서)는 같은 장치 Input 설정 불가\n> Max : 128 개\n2. 신호 입력 선택 시 Intrusion Sensor Device, Port, Switch Type, Duration(ms) 항목을 선택할 수 있다.\n3. Intrusion Sensor Input으로 침입 감지 상황이 동작한다.\n> Door Sensor : 침입 감지 할 수 있음\n> 경비/해제 개시와 동일 Input 설정 불가",
+      "1. 해당 이벤트가 발생 시 Action이 동작한다.\n> Max : 128 개 (BioStar상에서는 제한 없음)\n> Alarm_Input 관련 로그는 미발생하고, Alarm 로그에서 이를 대응하여 표시함",
+      "1. Output 설정한 장치에서 Signal이 발생한다.\n> 경비진입, 경비실패, 경비수행인증성공/실패, 해제수행인증성공/실패, 경비해제성공, 침입감지, 경보상태해제, 경비중인증제한",
+      "1. Alert Sound 설정한 장치에서 Alert Buzzer Type/Alert Sound Type이 발생한다.\n > Buzzer Type : Play Option 미지원\n > 경비진입, 경비실패, 경비수행인증성공/실패, 해제수행인증성공/실패, 경비해제성공, 침입감지, 경비중인증제한, 경보상태해제\n 2. Alarm이 발생하는 도중 Clear Alarm시 Alarm Clear가 된다.\n > Clear Alarm 로그발생\n > Disarm 인증 : Disarm 전환, Alarm 상태 유지, Alarm 발생, Alarm Clear 로그미발생(서로 관계 없음)\n\n* 침입감지로 Alarm이 발생할 경우 Zone Status에서 Alarm Clear로 경보상태 해제가능\n 침입감지 외 Action들에 의해 발생한 Alarm에 대해서는 Device를 잡고 해제가능",
+      "1. Arming Failed 로그 및 인증 실패 알림음 출력됨",
+      "1. Arming Failed 로그 및 인증 실패 알림음 출력됨",
+      "1. Intrusion Alarm Zone 위반으로 발생된 Alarm이 해제된다.\n> Alarm 해제 : 명시적\n> Clear Alarm 로그 발생",
+      "1. Zone에 대해 개별삭제/전체삭제를 할 수 있어야 한다.\n> Dialog : Cannot set intrusionAlarmZone: -1201 Error 출력 확인",
+      "1. Zone 정보 변경이 가능해야 한다.\n> 기기에서 Sync 동작하지 않으므로 Dialog에서 해당 정보는 확인 불가능함",
+      "1. Zone에서의 Output, Alert Sound는 최대 128개까지 설정되어야 한다.",
+      "1. Arm 상태의 Master를 Reboot하는 경우 Alarm은 미발생하고, Alarm 상태는 유지된다.\n> Arm 유지\n2. Arm, Alarm 상태의 Master를 Reboot하기 전에 Disarm, Alarm 상태로 변경 후 Reboot시 Alarm은 미발생하고, Alarm 상태는 유지된다.\n> Disarm 유지",
+      "1. 최초 Intrusion Alarm Zone에 의해 Locked 된다.\n> Door Unlock - Locked 된 상태로 경비 개시\n> Fire Alarm - Unlocked 된 상태이면 우선 순위에 의해 Unlocked 된 상태로 경비 개시. Door Open 시 Alarm 발생(Fire Alarm, Intrusion Alarm)\n2. Fire Alarm 발생시 Unlocked 유지된다. \n> Fire Alarm 이 Intrusion Alarm보다 우선순위가 높다. Door Open 시 Intrusion Alarm 발생한다.",
+      "1. 최초 Intrusion Alarm Zone에 의해 Locked 된다.\n> Door Unlock - Locked 된 상태로 경비 개시\n> Fire Alarm - Unlocked 된 상태이면 우선 순위에 의해 Unlocked 된 상태로 경비 개시. Door Open 시 Alarm 발생(Fire Alarm, Intrusion Alarm)\n2. Schedule Unlock에 의해 Unlocked 된다.\n> Door Open - Alarm 발생(Intrusion Alarm)\n3. Fire Alarm 발생시 Unlocked 유지된다. (Fire Alarm 이 Scheduled Unlock 보다 우선순위가 높다)\n4. Manual Lock 발생시 Unlocked 유지된다. (Manual Lock 이 Fire Alarm 보다 우선순위가 낮다)\n5. Fire Alarm 해제 후 Manual Lock 발생시 Locked 된다. (Manual Lock 이 Scheduled Unlock 보다 우선순위가 높다)\n6. Fire Alarm 해제 후 Manual Unlock 발생시 Unlocked 유지된다. (Manual Unlock 이 Scheduled Unlock 보다 우선순위가 높다)\n7. Manual Lock/Unlock 해제 후 Scheduled Unlock 에 의해 Unlocked 된다.",
+      "1. 경비/해제의 대상 장치로 경비/해제가 동작한다.\n> Disable Device(Lock Device) : 해당\n 장치에서는 Card/Key 무반응, Input - 동작, 다른 장치의 Card/Key/Input에 의해서 동작\n2. Disable Device 장치는 Input에 의해 경비/해제, 침입감지/경보가 가능하고, 다른 장치에 의해서 경비/해제가 가능해야 한다.",
+      "1. 경비/해제로 동작되어야 한다.",
+      "1. Master/Slave 모두 경비로 동작하지 않고 Normal 상태로 동작한다.",
+      "1. Slvae 장치에서 Delay time 알림음이 미출력된다.\n>띠띠띠~~ 알림음",
+      "1. Master/Slave 모두 경비상태로 동작한다.",
+      "1. Master/Slave 모두 경비해제 상태로 동작한다.",
+      "1. 인증을 통한 Arm/Disarm시 로그상 Arm - Disarm 로그가 출력된다.",
+      "1. Input 을 통한 Arm/Disarm시 로그상 Arm - Disarm 로그가 출력된다.",
+      "1. Arm/Disarm시 인증모드와 상관없이 지문/카드/ID+PIN 인증으로만 동작한다.\n=> Admin Menu 진입과 동일"
+    ]
+  }
+}

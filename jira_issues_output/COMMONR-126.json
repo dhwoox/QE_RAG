@@ -1,0 +1,104 @@
+{
+  "id": "COMMONR-126",
+  "content": [
+    [
+      1,
+      "1. Setting> Server> User/Device Management\n2. Mobile Card > 설정",
+      "1. Mobile Card \n > Enable\n > Disable (Default)\n",
+      "1. Mobile Card 발급이 활성화된 경우, 사용자에서 Smart Card Enroll 시 모바일 카드 발급 버튼이 생성된다.\n2. 활성화된 경우 지원 환경 정보가 표시된다."
+    ],
+    [
+      2,
+      "1. Setting> Card Format> Smart Card> Add Smart Card\n2. Primary Key 설정\n3. Secondary Key 사용여부 설정\n4. Device> 상세정보진입> Layout 설정\n5. User> 기 등록된 사용자 선택> Card> SmartCard> 사용자 정보 Write\n\n※ Access On/Secure Credential Card 모두 확인사항",
+      "카드발급\n> Moblie Card",
+      "사용자 정보가 카드에 Write 되어야 한다."
+    ],
+    [
+      3,
+      "1. Setting> Card Format> Smart Card> Add Smart Card> DESFire / Mobile\n2. Key 설정\n3. Device> 상세정보진입> Layout 설정\n4. User> 기 등록된 사용자 선택> Card> Smart Card> 사용자 정보 Write\n6. BioStar V2.7 Upgrade\n7. DESFire, Mobile> 인증\n\n※ Access On/Secure Credential Card 모두 확인사항",
+      "카드발급 - BioStar V2.7 이전\n> Moblie Card",
+      "1. 사용자 정보가 카드에 Write 된다.\n2. BioStar V2.7 Upgrade 이후 DESFire, Mobile Card Format이 기존 처럼 표시\n3. Smart Card(AOC, SCC) 인증 성공된다.\n> DESFire Advanced 사용 시 Mobile 설정 불가"
+    ],
+    [
+      4,
+      "<Card Format 설정 & 장치에 Layout 설정된 상태>\n1. User> 기 등록된 사용자 선택> Card> Read Card> Format Card\n2. SmartCard> Secure Credential 카드에 사용자 정보 Write",
+      "사용자 ID\n > 숫자 : 기존과 동일\n > 영숫자 : Default(공란), 24 byte 범위 내에서 10진수 숫자 1 부터 입력 지원",
+      "> 출입그룹 정보는 장치에 저장되어야 하고, 카드ID/지문/PIN 정보만 저장되어야 한다.\n> 카드 Type/Template 개수/발급회차가 저장되어야 한다."
+    ],
+    [
+      5,
+      "1. Step 4에서 발급한 Secure Credential 카드 인증시도",
+      "인증시도\n> 단일장치\n> Master-Slave 장치\n> 장치 인증 모드별\n=: Card, 이중인증, 근태, 권한별 메뉴 진입\n> 개인 인증 모드\n",
+      "> SCC의 경우 장치에 저장된 사용자 정보로 매칭이 이루어진다.\n\n:= Wiegand Reader는 본래의 Card ID값인 CSN 값으로 내보내기에 Smart Card와 무관함."
+    ],
+    [
+      6,
+      "<Card Format 설정 & 장치에 Layout 설정된 상태>\n1. User> 기 등록된 사용자 선택> Card> Read Card> Format Card\n2. SmartCard> Access On 카드에 사용자 정보 Write",
+      "사용자 ID\n > 숫자, 영숫자, 특수 문자('_','-')\n\n포맷\n> 영숫자 모드가 불일치 해도 카드 레이아웃만 동일하면 장치 상관 없이 가능\n: 영숫자 모드 불일치, 미지원 FW",
+      "> ID와 Credential을 포함해 인증에 필요한 모든 정보가 저장되어야 한다.\n> Access On 카드 Write시 발급회차가 발급되어야 한다."
+    ],
+    [
+      7,
+      "1. Step 5에서 발급한 Access On 카드 인증시도",
+      "인증시도\n> 단일장치\n> Master-Slave 장치\n> 장치 인증 모드별\n=: Card, 이중인증, 근태, 권한별 메뉴 진입\n> 개인 인증 모드\n",
+      "> 카드에 발급된 정보로 인증된다.\n=: Wiegand Out(Access On Card 발급 장치) - Card ID 출력 됨\n> 인증 성공 팝업에는 사용자 ID 만 표시된다.(장치에서 확인) \n:= Wiegand Reader는 본래의 Card ID값인 CSN 값으로 내보내기에 Smart Card와 무관함."
+    ],
+    [
+      8,
+      "1. Device> Layout 설정\n2. User> AOC/SCC Mobile 카드 발급\n3. 발급받은 카드로 인증시도",
+      "",
+      "1. 인증시 인증결과에 대해 동일한 카드ID로 인증되어야 한다.\n=> 인증할때마다 랜덤한 ID로 인증되지 않아야 한다."
+    ],
+    [
+      9,
+      "1. Device> Layout 설정\n2. User> 개인인증모드 설정> AOC 카드발급> Private Auth Mode 설정\n3. 발급받은 카드로 인증시도",
+      "사용자 ID\n > 숫자, 영숫자, 특수 문자('_','-')\nPrivate Auth Mode\n > Card Only / Card + PIN / Card+FP / Card + FP or PIN / Card + FP + PIN",
+      "1. AOC 카드에 Write된 개인인증모드로 동작되어야 한다.\n> Server&Device encryption key manual management: Use(수동 Hash Key)설정 시 PIN이 포함된 경우 발급 전후의 설정이  달라진 경우 인증 실패 발생"
+    ],
+    [
+      10,
+      "0. Setting > Server > User/Device Management 에서 'AoC 발급 시 개인정보 삭제' : Enable\n1. Device> Layout 설정\n2. User> 개인인증모드 설정> AOC 카드발급> Private Auth Mode 설정\n3. 발급받은 카드로 인증시도",
+      "사용자 ID\n > 숫자, 영숫자, 특수 문자('_','-')\nPrivate Auth Mode\n > Card Only / Card + PIN / Card+FP / Card + FP or PIN / Card + FP + PIN\nPrivate Info\n > FP, PIN, Face, Email, Phone, Birthday , Gender\n(birthday, gender는 DB에만 존재하는 data)",
+      "1.AOC 카드 발급 성공 시 사용자의 개인정보가 삭제된다.(SCC는 유지)\n2.AOC 카드에 Write된 개인인증모드로 동작되어야 한다.\n> FW 지원 유무에 따라 미지원 버전은 개인 인증 모드를 무시하고 동작, BioStar에서 발급 시에는 FW 버전 상관 없이 Private Auth 발급 가능"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-126",
+    "description": "",
+    "test_step": [
+      "1. Setting> Server> User/Device Management\n2. Mobile Card > 설정",
+      "1. Setting> Card Format> Smart Card> Add Smart Card\n2. Primary Key 설정\n3. Secondary Key 사용여부 설정\n4. Device> 상세정보진입> Layout 설정\n5. User> 기 등록된 사용자 선택> Card> SmartCard> 사용자 정보 Write\n\n※ Access On/Secure Credential Card 모두 확인사항",
+      "1. Setting> Card Format> Smart Card> Add Smart Card> DESFire / Mobile\n2. Key 설정\n3. Device> 상세정보진입> Layout 설정\n4. User> 기 등록된 사용자 선택> Card> Smart Card> 사용자 정보 Write\n6. BioStar V2.7 Upgrade\n7. DESFire, Mobile> 인증\n\n※ Access On/Secure Credential Card 모두 확인사항",
+      "<Card Format 설정 & 장치에 Layout 설정된 상태>\n1. User> 기 등록된 사용자 선택> Card> Read Card> Format Card\n2. SmartCard> Secure Credential 카드에 사용자 정보 Write",
+      "1. Step 4에서 발급한 Secure Credential 카드 인증시도",
+      "<Card Format 설정 & 장치에 Layout 설정된 상태>\n1. User> 기 등록된 사용자 선택> Card> Read Card> Format Card\n2. SmartCard> Access On 카드에 사용자 정보 Write",
+      "1. Step 5에서 발급한 Access On 카드 인증시도",
+      "1. Device> Layout 설정\n2. User> AOC/SCC Mobile 카드 발급\n3. 발급받은 카드로 인증시도",
+      "1. Device> Layout 설정\n2. User> 개인인증모드 설정> AOC 카드발급> Private Auth Mode 설정\n3. 발급받은 카드로 인증시도",
+      "0. Setting > Server > User/Device Management 에서 'AoC 발급 시 개인정보 삭제' : Enable\n1. Device> Layout 설정\n2. User> 개인인증모드 설정> AOC 카드발급> Private Auth Mode 설정\n3. 발급받은 카드로 인증시도"
+    ],
+    "data": [
+      "1. Mobile Card \n > Enable\n > Disable (Default)\n",
+      "카드발급\n> Moblie Card",
+      "카드발급 - BioStar V2.7 이전\n> Moblie Card",
+      "사용자 ID\n > 숫자 : 기존과 동일\n > 영숫자 : Default(공란), 24 byte 범위 내에서 10진수 숫자 1 부터 입력 지원",
+      "인증시도\n> 단일장치\n> Master-Slave 장치\n> 장치 인증 모드별\n=: Card, 이중인증, 근태, 권한별 메뉴 진입\n> 개인 인증 모드\n",
+      "사용자 ID\n > 숫자, 영숫자, 특수 문자('_','-')\n\n포맷\n> 영숫자 모드가 불일치 해도 카드 레이아웃만 동일하면 장치 상관 없이 가능\n: 영숫자 모드 불일치, 미지원 FW",
+      "인증시도\n> 단일장치\n> Master-Slave 장치\n> 장치 인증 모드별\n=: Card, 이중인증, 근태, 권한별 메뉴 진입\n> 개인 인증 모드\n",
+      "사용자 ID\n > 숫자, 영숫자, 특수 문자('_','-')\nPrivate Auth Mode\n > Card Only / Card + PIN / Card+FP / Card + FP or PIN / Card + FP + PIN",
+      "사용자 ID\n > 숫자, 영숫자, 특수 문자('_','-')\nPrivate Auth Mode\n > Card Only / Card + PIN / Card+FP / Card + FP or PIN / Card + FP + PIN\nPrivate Info\n > FP, PIN, Face, Email, Phone, Birthday , Gender\n(birthday, gender는 DB에만 존재하는 data)"
+    ],
+    "expected_result": [
+      "1. Mobile Card 발급이 활성화된 경우, 사용자에서 Smart Card Enroll 시 모바일 카드 발급 버튼이 생성된다.\n2. 활성화된 경우 지원 환경 정보가 표시된다.",
+      "사용자 정보가 카드에 Write 되어야 한다.",
+      "1. 사용자 정보가 카드에 Write 된다.\n2. BioStar V2.7 Upgrade 이후 DESFire, Mobile Card Format이 기존 처럼 표시\n3. Smart Card(AOC, SCC) 인증 성공된다.\n> DESFire Advanced 사용 시 Mobile 설정 불가",
+      "> 출입그룹 정보는 장치에 저장되어야 하고, 카드ID/지문/PIN 정보만 저장되어야 한다.\n> 카드 Type/Template 개수/발급회차가 저장되어야 한다.",
+      "> SCC의 경우 장치에 저장된 사용자 정보로 매칭이 이루어진다.\n\n:= Wiegand Reader는 본래의 Card ID값인 CSN 값으로 내보내기에 Smart Card와 무관함.",
+      "> ID와 Credential을 포함해 인증에 필요한 모든 정보가 저장되어야 한다.\n> Access On 카드 Write시 발급회차가 발급되어야 한다.",
+      "> 카드에 발급된 정보로 인증된다.\n=: Wiegand Out(Access On Card 발급 장치) - Card ID 출력 됨\n> 인증 성공 팝업에는 사용자 ID 만 표시된다.(장치에서 확인) \n:= Wiegand Reader는 본래의 Card ID값인 CSN 값으로 내보내기에 Smart Card와 무관함.",
+      "1. 인증시 인증결과에 대해 동일한 카드ID로 인증되어야 한다.\n=> 인증할때마다 랜덤한 ID로 인증되지 않아야 한다.",
+      "1. AOC 카드에 Write된 개인인증모드로 동작되어야 한다.\n> Server&Device encryption key manual management: Use(수동 Hash Key)설정 시 PIN이 포함된 경우 발급 전후의 설정이  달라진 경우 인증 실패 발생",
+      "1.AOC 카드 발급 성공 시 사용자의 개인정보가 삭제된다.(SCC는 유지)\n2.AOC 카드에 Write된 개인인증모드로 동작되어야 한다.\n> FW 지원 유무에 따라 미지원 버전은 개인 인증 모드를 무시하고 동작, BioStar에서 발급 시에는 FW 버전 상관 없이 Private Auth 발급 가능"
+    ]
+  }
+}

@@ -1,0 +1,389 @@
+{
+  "id": "COMMONR-330",
+  "content": [
+    [
+      1,
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치 - Trigger & Action> input> Ignore Repeated Signals Duration(ms) :  0 설정\n2. Function> Configuration 설정> Apply\n3. Apply 후 Wiegand Out 장치 카드 Read\n4. Wiegand In 장치 인증 결과 출력 > Relay 동작\n5. Relay 동작 에 따라 Wiegand Out 장치 Input 동작\n",
+      "[설명 참고하여 환경 구성 후 진행]\n\nIgnore Repeated Signals Duration(ms)\n> Default: 0초\n\nFuntion \n> Access Granted\n> Access Denied\n\n\n",
+      "1. Relay 동작에 따라 Input > function 연속 동작 \n-> 0초로 설정할 경우, 반복적인 신호를 무시하지 않는다."
+    ],
+    [
+      2,
+      "1-1. 이벤트 로그 확인",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "1) Relay 동작에 따라 동작한 function 대해 input 로그를 남긴다. \t\t\t\t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\t\t\t\t\t\n> input detected on 10번 출력(동작한 counts만큼 출력)\t\t\t\t\t\n※ 장치 로그: input detected 로그 10번 출력\t\t\t\t\t\n"
+    ],
+    [
+      3,
+      "[Wiegand In - Out 구성한 상태]\n\n1. Wiegand Out 장치 - Trigger & Action> input> Ignore Repeated Signals Duration(ms)  설정\n2. Function> Configuration 설정> Apply\n3. Apply 후 Wiegand Out 장치 카드 Read\n4. Wiegand In 장치 인증 결과 출력 > Relay 동작\n5. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "Ignore Repeated Signals Duration(ms)\n> 설정범위 : 1,000(ms)",
+      "1. Wiegand Out 후 설정된 반복 신호 무시 시간에 들어온 첫번째 Input에 대해서는 동작을 하고 반복되어 들어온 Input에 대해서는 해당 시간만큼 무시된다.\n2. 이후 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다."
+    ],
+    [
+      4,
+      "3-1. 이벤트 로그 확인",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "1) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\t\t\t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\t\t\t\t\t\n> input detected on 10번 출력(동작한 counts만큼 출력)\t\t\t\t\t\n※ 장치 로그: input detected 로그 10번 출력\n(1000(ms)면 1초로 1초 동안 무시하고 이후 들어 온 input에 대해 action이 동작했기 때문)\t\t\t\t\t\n"
+    ],
+    [
+      5,
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치 - Trigger & Action> input> Ignore Repeated Signals Duration(ms)  설정\n2. Function> Configuration 설정> Apply\n3. Apply 후 Wiegand Out 장치 카드 Read\n4. Wiegand In 장치 인증 결과 출력 > Relay 동작\n5. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "Ignore Repeated Signals Duration(ms)\n> 설정범위 : 10,000(ms)",
+      "1. Wiegand Out 후 설정된 반복 신호 무시 시간에 들어온 첫번째 Input에 대해서는 동작을 하고 반복되어 들어온 Input에 대해서는 해당 시간만큼 무시된다.\n2. 이후 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다."
+    ],
+    [
+      6,
+      "5-1. 이벤트 로그 확인",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "1) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\n> input detected on 1번 출력(동작한 counts만큼 출력)\n※ 장치 로그: input detected 로그 1번 출력"
+    ],
+    [
+      7,
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치-Trigger & Action> input> Ignore Repeated Signals Duration(ms) 설정\n2. Function> Configuration 설정> Apply\n3. Apply 후 Wiegand Out 장치 카드 Read\n4. Wiegand In 장치 인증 결과 출력 > Relay 동작\n5. 5,000(ms) 이후 input 동작 ",
+      "Ignore Repeated Signals Duration(ms)\n> 설정범위 : 5,000(ms)",
+      "1. Relay 동작에 따라 Input > function 연속 동작\n-> 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다."
+    ],
+    [
+      8,
+      "7-1. 이벤트 로그 확인",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "1) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\n> input detected on 6번 출력(동작한 counts만큼 출력)\n※ 장치 로그: input detected 로그 6번 출력\n(5000(ms)면 5초로 5초 동안 무시하고 이후 들어 온 input에 대해 action이 동작했기 때문)\n(첫번째 input 1번 + 무시시간 이후 동작한 5번 = 6번)"
+    ],
+    [
+      9,
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치-Trigger & Action> input> Ignore Repeated Signals Duration(ms): 0(ms) 설정\n2. Function> Configuration 설정> Apply\n3. Trigger & Action> 위와 동일 input> Ignore Repeated Signals Duration(ms): 8,000(ms) 설정\n4. Function> Configuration: 2번과 상이하게 설정> Apply\n5. Apply 후 Wiegand Out 장치 카드 Read\n6. Wiegand In 장치 인증 결과 출력 > Relay 동작\n7. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "",
+      "1. 2번에 설정된 Action은 계속 발생한다.\n2. 4번에 설정된 Action은 첫번째 input에 의해 Action 후 반복되어 들어온 Input에 대해서는 해당 시간만큼 무시된다.\n3. 이후 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다."
+    ],
+    [
+      10,
+      "9-1. 이벤트 로그 확인",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "1) Relay 동작에 따라 동작한 function 대해 input 로그를 남긴다. \t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\n> input detected on 10번 출력\n※ 장치 로그: input detected 로그 10번 출력\n\n3) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\t\t\t\t\t\n4번에서 설정한 function의 로그가 출력된다. \t\t\t\t\t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\t\t\t\t\t\n>input detected on 3번 출력(동작한 action만큼 출력)\t\t\t\t\t\n※ 장치 로그: input detected 로그 남음 3번 출력\t\t\t\t\t\n(8000(ms)면 8초로 8초 동안 무시하고 이후 들어 온 input에 대해 action이 동작했기 때문)\t\t\t\t\t\n(첫번째 input 1번 + 무시시간 이후 동작한 2번 = 3번)\t\t\t\t\t\n"
+    ],
+    [
+      11,
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치-Trigger & Action> input> Ignore Repeated Signals Duration(ms) 설정\n2. Function> Configuration 설정> Apply\n3. Apply 후 Wiegand Out 장치 지문 입력\n4. Wiegand In 장치 인증 결과 출력 > Relay 동작\n5. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "Ignore Repeated Signals Duration(ms)\n> Default: 0초\n",
+      "1. Relay 동작에 따라 Input > function 연속 동작\n-> 0초로 설정할 경우, 반복적인 신호를 무시하지 않는다."
+    ],
+    [
+      12,
+      "11-1. 이벤트 로그 확인",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "1) Relay 동작에 따라 동작한 function 대해 input 로그를 남긴다. \t\t\t\t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\t\t\t\t\t\n> input detected on 10번 출력(동작한 counts만큼 출력)\t\t\t\t\t\n※ 장치 로그: input detected 로그 10번 출력\t\t\t\t\t\n"
+    ],
+    [
+      13,
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치-Trigger & Action> input> Ignore Repeated Signals Duration(ms) 설정\n2. Function> Configuration 설정> Apply\n3.  Apply 후 Wiegand Out 장치 지문 입력\n4. Wiegand In 인증 성공 > Relay 동작\n5. Relay 동작 에 따라 Wiegand Out 장치 Input 동작\n6. Wiegand In 장치 인증 결과 출력 > Relay 동작\n7. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "Ignore Repeated Signals Duration(ms)\n> 설정범위 : 1,000(ms)",
+      "1. Wiegand Out 후 설정된 반복 신호 무시 시간에 들어온 첫번째 Input에 대해서는 동작을 하고 반복되어 들어온 Input에 대해서는 해당 시간만큼 무시된다.\n2. 이후 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다."
+    ],
+    [
+      14,
+      "13-1. 이벤트 로그 확인",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "1) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\t\t\t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\t\t\t\t\t\n> input detected on 10번 출력(동작한 counts만큼 출력)\t\t\t\t\t\n※ 장치 로그: input detected 로그 10번 출력\n(1000(ms)면 1초로 1초 동안 무시하고 이후 들어 온 input에 대해 action이 동작했기 때문)\t\t\t\t\t\n"
+    ],
+    [
+      15,
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치 - Trigger & Action> input> Ignore Repeated Signals Duration(ms) 설정\n2. Function> Configuration 설정> Apply\n3. Apply 후 Wiegand Out 장치 지문 입력\n4. Wiegand In 장치 인증 결과 출력 > Relay 동작\n5. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "Ignore Repeated Signals Duration(ms)\n> 설정범위 : 10,000(ms)",
+      "1. Wiegand Out 후 설정된 반복 신호 무시 시간에 들어온 첫번째 Input에 대해서는 동작을 하고 반복되어 들어온 Input에 대해서는 해당 시간만큼 무시된다.\n2. 이후 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다."
+    ],
+    [
+      16,
+      "15-1. 이벤트 로그 확인",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "1) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\n> input detected on 1번 출력(동작한 counts만큼 출력)\n※ 장치 로그: input detected 로그 1번 출력"
+    ],
+    [
+      17,
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치-Trigger & Action> input> Ignore Repeated Signals Duration(ms) 설정\n2. Function> Configuration 설정> Apply\n3. Apply 후  Wiegand Out 장치 지문 입력\n4. Wiegand In 장치 인증 결과 출력 > Relay 동작\n5. 5,000(ms) 이후 input 동작",
+      "Ignore Repeated Signals Duration(ms)\n> 설정범위 : 5,000(ms)",
+      "1. Relay 동작에 따라 Input > function 연속 동작\n-> 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다."
+    ],
+    [
+      18,
+      "17-1. 이벤트 로그 확인",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "1) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\n> input detected on 6번 출력(동작한 counts만큼 출력)\n※ 장치 로그: input detected 로그 6번 출력\n(5000(ms)면 5초로 5초 동안 무시하고 이후 들어 온 input에 대해 action이 동작했기 때문)\n(첫번째 input 1번 + 무시시간 이후 동작한 5번 = 6번)"
+    ],
+    [
+      19,
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치-Trigger & Action> input> Ignore Repeated Signals Duration(ms): 0(ms) 설정\n2. Function> Configuration 설정> Apply\n3. Trigger & Action> 위와 동일 input> Ignore Repeated Signals Duration(ms): 8,000(ms) 설정\n4. Function> Configuration: 2번과 상이하게 설정> Apply\n5. Apply 후 Wiegand Out 장치 지문 입력 Read\n6. Wiegand In 장치 인증 결과 출력 > Relay 동작\n7. Relay 동작 에 따라 Wiegand Out 장치 Input 동작\n",
+      "",
+      "1. 2번에 설정된 Action은 계속 발생한다.\n2. 4번에 설정된 Action은 첫번째 input에 의해 Action 후 반복되어 들어온 Input에 대해서는 해당 시간만큼 무시된다.\n3. 이후 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다."
+    ],
+    [
+      20,
+      "19-1. 이벤트 로그 확인",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "1) Relay 동작에 따라 동작한 function 대해 input 로그를 남긴다. \t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\n> input detected on 10번 출력\n※ 장치 로그: input detected 로그 10번 출력\n\n3) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\t\t\t\t\t\n4번에서 설정한 function의 로그가 출력된다. \t\t\t\t\t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\t\t\t\t\t\n>input detected on 3번 출력(동작한 action만큼 출력)\t\t\t\t\t\n※ 장치 로그: input detected 로그 남음 3번 출력\t\t\t\t\t\n(8000(ms)면 8초로 8초 동안 무시하고 이후 들어 온 input에 대해 action이 동작했기 때문)\t\t\t\t\t\n(첫번째 input 1번 + 무시시간 이후 동작한 2번 = 3번)\t\t\t\t\t\n"
+    ],
+    [
+      21,
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치-Trigger & Action> input> Ignore Repeated Signals Duration(ms) 설정\n2. Function> Configuration 설정> Apply\n3. Apply 후 Wiegand Out 장치 얼굴 입력\n4. Wiegand In 장치 인증 결과 출력 > Relay 동작\n5. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "Ignore Repeated Signals Duration(ms)\n> Default: 0초\n",
+      "1. Relay 동작에 따라 Input > function 연속 동작\n-> 0초로 설정할 경우, 반복적인 신호를 무시하지 않는다."
+    ],
+    [
+      22,
+      "21-1. 이벤트 로그 확인",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "1) Relay 동작에 따라 동작한 function 대해 input 로그를 남긴다. \t\t\t\t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\t\t\t\t\t\n> input detected on 10번 출력(동작한 counts만큼 출력)\t\t\t\t\t\n※ 장치 로그: input detected 로그 10번 출력\t\t\t\t\t\n"
+    ],
+    [
+      23,
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치-Trigger & Action> input> Ignore Repeated Signals Duration(ms) 설정\n2. Function> Configuration 설정> Apply\n3. Apply 후 Wiegand Out 장치 얼굴 입력\n4. Wiegand In 장치 인증 결과 출력 > Relay 동작\n5. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "Ignore Repeated Signals Duration(ms)\n> 설정범위 : 1,000(ms)",
+      "1. Wiegand Out 후 설정된 반복 신호 무시 시간에 들어온 첫번째 Input에 대해서는 동작을 하고 반복되어 들어온 Input에 대해서는 해당 시간만큼 무시된다.\n2. 이후 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다."
+    ],
+    [
+      24,
+      "23-1. 이벤트 로그 확인",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "1) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\t\t\t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\t\t\t\t\t\n> input detected on 10번 출력(동작한 counts만큼 출력)\t\t\t\t\t\n※ 장치 로그: input detected 로그 10번 출력\n(1000(ms)면 1초로 1초 동안 무시하고 이후 들어 온 input에 대해 action이 동작했기 때문)\t\t\t\t\t\n"
+    ],
+    [
+      25,
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치-Trigger & Action> input> Ignore Repeated Signals Duration(ms) 설정\n2. Function> Configuration 설정> Apply\n3. Apply 후 Wiegand Out 장치 얼굴 입력\n4. Wiegand In 장치 인증 결과 출력 > Relay 동작\n5. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "Ignore Repeated Signals Duration(ms)\n> 설정범위 : 10,000(ms)",
+      "1. Wiegand Out 후 설정된 반복 신호 무시 시간에 들어온 첫번째 Input에 대해서는 동작을 하고 반복되어 들어온 Input에 대해서는 해당 시간만큼 무시된다.\n2. 이후 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다."
+    ],
+    [
+      26,
+      "25-1. 이벤트 로그 확인",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "1) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\n> input detected on 1번 출력(동작한 counts만큼 출력)\n※ 장치 로그: input detected 로그 1번 출력"
+    ],
+    [
+      27,
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치-Trigger & Action> input> Ignore Repeated Signals Duration(ms) 설정\n2. Function> Configuration 설정> Apply\n3. Apply 후 Wiegand Out 장치 얼굴 입력\n4. Wiegand In 장치 인증 결과 출력 > Relay 동작\n5. 5,000(ms) 이후 input 동작",
+      "Ignore Repeated Signals Duration(ms)\n> 설정범위 : 5,000(ms)",
+      "1. Relay 동작에 따라 Input > function 연속 동작\n-> 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다."
+    ],
+    [
+      28,
+      "27-1. 이벤트 로그 확인",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "1) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\n> input detected on 6번 출력(동작한 counts만큼 출력)\n※ 장치 로그: input detected 로그 6번 출력\n(5000(ms)면 5초로 5초 동안 무시하고 이후 들어 온 input에 대해 action이 동작했기 때문)\n(첫번째 input 1번 + 무시시간 이후 동작한 5번 = 6번)"
+    ],
+    [
+      29,
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치-Trigger & Action> input> Ignore Repeated Signals Duration(ms): 0(ms) 설정\n2. Function> Configuration 설정> Apply\n3. Trigger & Action> 위와 동일 input> Ignore Repeated Signals Duration(ms): 8,000(ms) 설정\n4. Function> Configuration 설정> Apply\n5. Apply 후 Wiegand Out 장치 얼굴 입력\n6. Wiegand In 장치 인증 결과 출력 > Relay 동작\n7. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "",
+      "1. 2번에 설정된 Action은 계속 발생한다.\n2. 4번에 설정된 Action은 첫번째 input에 의해 Action 후 반복되어 들어온 Input에 대해서는 해당 시간만큼 무시된다.\n3. 이후 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다."
+    ],
+    [
+      30,
+      "29-1. 이벤트 로그 확인",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "1) Relay 동작에 따라 동작한 function 대해 input 로그를 남긴다. \t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\n> input detected on 10번 출력\n※ 장치 로그: input detected 로그 10번 출력\n\n3) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\t\t\t\t\t\n4번에서 설정한 function의 로그가 출력된다. \t\t\t\t\t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\t\t\t\t\t\n>input detected on 3번 출력(동작한 action만큼 출력)\t\t\t\t\t\n※ 장치 로그: input detected 로그 남음 3번 출력\t\t\t\t\t\n(8000(ms)면 8초로 8초 동안 무시하고 이후 들어 온 input에 대해 action이 동작했기 때문)\t\t\t\t\t\n(첫번째 input 1번 + 무시시간 이후 동작한 2번 = 3번)\t\t\t\t\t\n"
+    ],
+    [
+      31,
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치 - Trigger & Action> input> Ignore Repeated Signals Duration(ms) : 0 설정\n2. Function> Configuration 설정> Apply\n3. Apply 후 Wiegand Out 장치 ID인증\n4. Wiegand In 장치 인증 결과 출력 > Relay 동작\n5. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "Ignore Repeated Signals Duration(ms)\n> Default: 0초\n",
+      "1. Relay 동작에 따라 Input > function 연속 동작\n-> 0초로 설정할 경우, 반복적인 신호를 무시하지 않는다."
+    ],
+    [
+      32,
+      "31-1. 이벤트 로그 확인",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "1) Relay 동작에 따라 동작한 function 대해 input 로그를 남긴다. \t\t\t\t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\t\t\t\t\t\n> input detected on 10번 출력(동작한 counts만큼 출력)\t\t\t\t\t\n※ 장치 로그: input detected 로그 10번 출력\t\t\t\t\t\n"
+    ],
+    [
+      33,
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치-Trigger & Action> input> Ignore Repeated Signals Duration(ms) 설정\n2. Function> Configuration 설정> Apply\n3. Apply 후 Wiegand Out 장치 ID인증\n4. Wiegand In 장치 인증 결과 출력 > Relay 동작\n5. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "Ignore Repeated Signals Duration(ms)\n> 설정범위 : 1,000(ms)",
+      "1. Wiegand Out 후 설정된 반복 신호 무시 시간에 들어온 첫번째 Input에 대해서는 동작을 하고 반복되어 들어온 Input에 대해서는 해당 시간만큼 무시된다.\n2. 이후 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다."
+    ],
+    [
+      34,
+      "33-1. 이벤트 로그 확인",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "1) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\t\t\t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\t\t\t\t\t\n> input detected on 10번 출력(동작한 counts만큼 출력)\t\t\t\t\t\n※ 장치 로그: input detected 로그 10번 출력\n(1000(ms)면 1초로 1초 동안 무시하고 이후 들어 온 input에 대해 action이 동작했기 때문)\t\t\t\t\t\n"
+    ],
+    [
+      35,
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치-Trigger & Action> input> Ignore Repeated Signals Duration(ms) 설정\n2. Function> Configuration 설정> Apply\n3. Apply 후 Wiegand Out 장치 ID인증\n4. Wiegand In 장치 인증 결과 출력> Relay 동작\n5. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "Ignore Repeated Signals Duration(ms)\n> 설정범위 : 10,000(ms)",
+      "1. Wiegand Out 후 설정된 반복 신호 무시 시간에 들어온 첫번째 Input에 대해서는 동작을 하고 반복되어 들어온 Input에 대해서는 해당 시간만큼 무시된다.\n2. 이후 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다."
+    ],
+    [
+      36,
+      "35-1. 이벤트 로그 확인",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "1) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\n> input detected on 1번 출력(동작한 counts만큼 출력)\n※ 장치 로그: input detected 로그 1번 출력"
+    ],
+    [
+      37,
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치-Trigger & Action> input> Ignore Repeated Signals Duration(ms): 0(ms) 설정\n2. Function> Configuration 설정> Apply\n3. Trigger & Action> 위와 동일 input> Ignore Repeated Signals Duration(ms): 8,000(ms) 설정\n4. Function> Configuration 설정> Apply\n5. Apply 후 Wiegand Out 장치 ID 인증\n6. Wiegand In 장치 인증 결과 출력 > Relay 동작\n7. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "",
+      "1. 2번에 설정된 Action은 계속 발생한다.\n2. 4번에 설정된 Action은 첫번째 input에 의해 Action 후 반복되어 들어온 Input에 대해서는 해당 시간만큼 무시된다.\n3. 이후 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다."
+    ],
+    [
+      38,
+      "37-1. 이벤트 로그 확인",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "1) Relay 동작에 따라 동작한 function 대해 input 로그를 남긴다. \t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\n> input detected on 10번 출력\n※ 장치 로그: input detected 로그 10번 출력\n\n3) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\t\t\t\t\t\n4번에서 설정한 function의 로그가 출력된다. \t\t\t\t\t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\t\t\t\t\t\n>input detected on 3번 출력(동작한 action만큼 출력)\t\t\t\t\t\n※ 장치 로그: input detected 로그 남음 3번 출력\t\t\t\t\t\n(8000(ms)면 8초로 8초 동안 무시하고 이후 들어 온 input에 대해 action이 동작했기 때문)\t\t\t\t\t\n(첫번째 input 1번 + 무시시간 이후 동작한 2번 = 3번)\t\t\t\t\t\n"
+    ],
+    [
+      39,
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치 Fail Code 설정\n2. Trigger & Action> input> Ignore Repeated Signals Duration(ms): 8,000(ms) 설정\n3. Function> Configuration 설정> Apply\n4. Apply 후 Wiegand Out 장치 등록되지 않은 크리덴셜 입력 \n5. Wiegand In 인증 실패 > Relay 동작\n6. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "Fail Code\n> 0x00\n\nWiegand In \nEvent - 1:1 인증 실패(카드)  / Action - ouput Relay 0",
+      "1. Wiegand Out 후 8초로 설정된 반복 신호 무시 시간에 들어온 첫번째 Input에 대해서는 동작을 하고 반복되어 들어온 Input에 대해서는 해당 시간만큼 무시된다.\n2. 이후 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다."
+    ],
+    [
+      40,
+      "39-1. 이벤트 로그 확인",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "1. 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\t\t\t\t\t\n3번에서 설정한 function의 로그가 출력된다. \t\t\t\t\t\n※ 바이오스타 로그\n>1:1 authentication failed(card)\"\t\t\t\t\t\n>input detected on 3번 출력(동작한 action만큼 출력)\t\t\t\t\t\n※ 장치 로그: input detected 로그 남음 3번 출력\t\t\t\t\t\n(8000(ms)면 8초로 8초 동안 무시하고 이후 들어 온 input에 대해 action이 동작했기 때문)\t\t\t\t\t\n(첫번째 input 1번 + 무시시간 이후 동작한 2번 = 3번)\t\t\t\t\t\n"
+    ],
+    [
+      41,
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치> Fail Code 설정\n2. Trigger & Action> input> Ignore Repeated Signals Duration(ms): 8,000(ms) 설정\n3. Function> Configuration 설정> Apply\n4. Apply 후 Wiegand Out 장치 등록되지 않은 크리덴셜 입력 \n5. Wiegand In 인증 실패 > Relay 동작\n6. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "Fail Code\n> 0xFF\n\nWiegand In \nEvent - 1:1 인증 실패(카드)  / Action - ouput Relay 0",
+      "1. Wiegand Out 후 8초로 설정된 반복 신호 무시 시간에 들어온 첫번째 Input에 대해서는 동작을 하고 반복되어 들어온 Input에 대해서는 해당 시간만큼 무시된다.\n2. 이후 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다."
+    ],
+    [
+      42,
+      "31-1. 이벤트 로그 확인",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "1. 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\t\t\t\t\t\n3번에서 설정한 function의 로그가 출력된다. \t\t\t\t\t\n※ 바이오스타 로그\n>1:1 authentication failed(card)\"\t\t\t\t\t\n>input detected on 3번 출력(동작한 action만큼 출력)\t\t\t\t\t\n※ 장치 로그: input detected 로그 남음 3번 출력\t\t\t\t\t\n(8000(ms)면 8초로 8초 동안 무시하고 이후 들어 온 input에 대해 action이 동작했기 때문)\t\t\t\t\t\n(첫번째 input 1번 + 무시시간 이후 동작한 2번 = 3번)\t\t\t\t\t\n"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-330",
+    "description": "",
+    "test_step": [
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치 - Trigger & Action> input> Ignore Repeated Signals Duration(ms) :  0 설정\n2. Function> Configuration 설정> Apply\n3. Apply 후 Wiegand Out 장치 카드 Read\n4. Wiegand In 장치 인증 결과 출력 > Relay 동작\n5. Relay 동작 에 따라 Wiegand Out 장치 Input 동작\n",
+      "1-1. 이벤트 로그 확인",
+      "[Wiegand In - Out 구성한 상태]\n\n1. Wiegand Out 장치 - Trigger & Action> input> Ignore Repeated Signals Duration(ms)  설정\n2. Function> Configuration 설정> Apply\n3. Apply 후 Wiegand Out 장치 카드 Read\n4. Wiegand In 장치 인증 결과 출력 > Relay 동작\n5. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "3-1. 이벤트 로그 확인",
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치 - Trigger & Action> input> Ignore Repeated Signals Duration(ms)  설정\n2. Function> Configuration 설정> Apply\n3. Apply 후 Wiegand Out 장치 카드 Read\n4. Wiegand In 장치 인증 결과 출력 > Relay 동작\n5. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "5-1. 이벤트 로그 확인",
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치-Trigger & Action> input> Ignore Repeated Signals Duration(ms) 설정\n2. Function> Configuration 설정> Apply\n3. Apply 후 Wiegand Out 장치 카드 Read\n4. Wiegand In 장치 인증 결과 출력 > Relay 동작\n5. 5,000(ms) 이후 input 동작 ",
+      "7-1. 이벤트 로그 확인",
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치-Trigger & Action> input> Ignore Repeated Signals Duration(ms): 0(ms) 설정\n2. Function> Configuration 설정> Apply\n3. Trigger & Action> 위와 동일 input> Ignore Repeated Signals Duration(ms): 8,000(ms) 설정\n4. Function> Configuration: 2번과 상이하게 설정> Apply\n5. Apply 후 Wiegand Out 장치 카드 Read\n6. Wiegand In 장치 인증 결과 출력 > Relay 동작\n7. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "9-1. 이벤트 로그 확인",
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치-Trigger & Action> input> Ignore Repeated Signals Duration(ms) 설정\n2. Function> Configuration 설정> Apply\n3. Apply 후 Wiegand Out 장치 지문 입력\n4. Wiegand In 장치 인증 결과 출력 > Relay 동작\n5. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "11-1. 이벤트 로그 확인",
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치-Trigger & Action> input> Ignore Repeated Signals Duration(ms) 설정\n2. Function> Configuration 설정> Apply\n3.  Apply 후 Wiegand Out 장치 지문 입력\n4. Wiegand In 인증 성공 > Relay 동작\n5. Relay 동작 에 따라 Wiegand Out 장치 Input 동작\n6. Wiegand In 장치 인증 결과 출력 > Relay 동작\n7. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "13-1. 이벤트 로그 확인",
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치 - Trigger & Action> input> Ignore Repeated Signals Duration(ms) 설정\n2. Function> Configuration 설정> Apply\n3. Apply 후 Wiegand Out 장치 지문 입력\n4. Wiegand In 장치 인증 결과 출력 > Relay 동작\n5. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "15-1. 이벤트 로그 확인",
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치-Trigger & Action> input> Ignore Repeated Signals Duration(ms) 설정\n2. Function> Configuration 설정> Apply\n3. Apply 후  Wiegand Out 장치 지문 입력\n4. Wiegand In 장치 인증 결과 출력 > Relay 동작\n5. 5,000(ms) 이후 input 동작",
+      "17-1. 이벤트 로그 확인",
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치-Trigger & Action> input> Ignore Repeated Signals Duration(ms): 0(ms) 설정\n2. Function> Configuration 설정> Apply\n3. Trigger & Action> 위와 동일 input> Ignore Repeated Signals Duration(ms): 8,000(ms) 설정\n4. Function> Configuration: 2번과 상이하게 설정> Apply\n5. Apply 후 Wiegand Out 장치 지문 입력 Read\n6. Wiegand In 장치 인증 결과 출력 > Relay 동작\n7. Relay 동작 에 따라 Wiegand Out 장치 Input 동작\n",
+      "19-1. 이벤트 로그 확인",
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치-Trigger & Action> input> Ignore Repeated Signals Duration(ms) 설정\n2. Function> Configuration 설정> Apply\n3. Apply 후 Wiegand Out 장치 얼굴 입력\n4. Wiegand In 장치 인증 결과 출력 > Relay 동작\n5. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "21-1. 이벤트 로그 확인",
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치-Trigger & Action> input> Ignore Repeated Signals Duration(ms) 설정\n2. Function> Configuration 설정> Apply\n3. Apply 후 Wiegand Out 장치 얼굴 입력\n4. Wiegand In 장치 인증 결과 출력 > Relay 동작\n5. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "23-1. 이벤트 로그 확인",
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치-Trigger & Action> input> Ignore Repeated Signals Duration(ms) 설정\n2. Function> Configuration 설정> Apply\n3. Apply 후 Wiegand Out 장치 얼굴 입력\n4. Wiegand In 장치 인증 결과 출력 > Relay 동작\n5. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "25-1. 이벤트 로그 확인",
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치-Trigger & Action> input> Ignore Repeated Signals Duration(ms) 설정\n2. Function> Configuration 설정> Apply\n3. Apply 후 Wiegand Out 장치 얼굴 입력\n4. Wiegand In 장치 인증 결과 출력 > Relay 동작\n5. 5,000(ms) 이후 input 동작",
+      "27-1. 이벤트 로그 확인",
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치-Trigger & Action> input> Ignore Repeated Signals Duration(ms): 0(ms) 설정\n2. Function> Configuration 설정> Apply\n3. Trigger & Action> 위와 동일 input> Ignore Repeated Signals Duration(ms): 8,000(ms) 설정\n4. Function> Configuration 설정> Apply\n5. Apply 후 Wiegand Out 장치 얼굴 입력\n6. Wiegand In 장치 인증 결과 출력 > Relay 동작\n7. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "29-1. 이벤트 로그 확인",
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치 - Trigger & Action> input> Ignore Repeated Signals Duration(ms) : 0 설정\n2. Function> Configuration 설정> Apply\n3. Apply 후 Wiegand Out 장치 ID인증\n4. Wiegand In 장치 인증 결과 출력 > Relay 동작\n5. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "31-1. 이벤트 로그 확인",
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치-Trigger & Action> input> Ignore Repeated Signals Duration(ms) 설정\n2. Function> Configuration 설정> Apply\n3. Apply 후 Wiegand Out 장치 ID인증\n4. Wiegand In 장치 인증 결과 출력 > Relay 동작\n5. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "33-1. 이벤트 로그 확인",
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치-Trigger & Action> input> Ignore Repeated Signals Duration(ms) 설정\n2. Function> Configuration 설정> Apply\n3. Apply 후 Wiegand Out 장치 ID인증\n4. Wiegand In 장치 인증 결과 출력> Relay 동작\n5. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "35-1. 이벤트 로그 확인",
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치-Trigger & Action> input> Ignore Repeated Signals Duration(ms): 0(ms) 설정\n2. Function> Configuration 설정> Apply\n3. Trigger & Action> 위와 동일 input> Ignore Repeated Signals Duration(ms): 8,000(ms) 설정\n4. Function> Configuration 설정> Apply\n5. Apply 후 Wiegand Out 장치 ID 인증\n6. Wiegand In 장치 인증 결과 출력 > Relay 동작\n7. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "37-1. 이벤트 로그 확인",
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치 Fail Code 설정\n2. Trigger & Action> input> Ignore Repeated Signals Duration(ms): 8,000(ms) 설정\n3. Function> Configuration 설정> Apply\n4. Apply 후 Wiegand Out 장치 등록되지 않은 크리덴셜 입력 \n5. Wiegand In 인증 실패 > Relay 동작\n6. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "39-1. 이벤트 로그 확인",
+      "[Wiegand In - Out 구성한 상태]\n1. Wiegand Out 장치> Fail Code 설정\n2. Trigger & Action> input> Ignore Repeated Signals Duration(ms): 8,000(ms) 설정\n3. Function> Configuration 설정> Apply\n4. Apply 후 Wiegand Out 장치 등록되지 않은 크리덴셜 입력 \n5. Wiegand In 인증 실패 > Relay 동작\n6. Relay 동작 에 따라 Wiegand Out 장치 Input 동작",
+      "31-1. 이벤트 로그 확인"
+    ],
+    "data": [
+      "[설명 참고하여 환경 구성 후 진행]\n\nIgnore Repeated Signals Duration(ms)\n> Default: 0초\n\nFuntion \n> Access Granted\n> Access Denied\n\n\n",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "Ignore Repeated Signals Duration(ms)\n> 설정범위 : 1,000(ms)",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "Ignore Repeated Signals Duration(ms)\n> 설정범위 : 10,000(ms)",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "Ignore Repeated Signals Duration(ms)\n> 설정범위 : 5,000(ms)",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "Ignore Repeated Signals Duration(ms)\n> Default: 0초\n",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "Ignore Repeated Signals Duration(ms)\n> 설정범위 : 1,000(ms)",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "Ignore Repeated Signals Duration(ms)\n> 설정범위 : 10,000(ms)",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "Ignore Repeated Signals Duration(ms)\n> 설정범위 : 5,000(ms)",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "Ignore Repeated Signals Duration(ms)\n> Default: 0초\n",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "Ignore Repeated Signals Duration(ms)\n> 설정범위 : 1,000(ms)",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "Ignore Repeated Signals Duration(ms)\n> 설정범위 : 10,000(ms)",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "Ignore Repeated Signals Duration(ms)\n> 설정범위 : 5,000(ms)",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "Ignore Repeated Signals Duration(ms)\n> Default: 0초\n",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "Ignore Repeated Signals Duration(ms)\n> 설정범위 : 1,000(ms)",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "Ignore Repeated Signals Duration(ms)\n> 설정범위 : 10,000(ms)",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "Fail Code\n> 0x00\n\nWiegand In \nEvent - 1:1 인증 실패(카드)  / Action - ouput Relay 0",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n",
+      "Fail Code\n> 0xFF\n\nWiegand In \nEvent - 1:1 인증 실패(카드)  / Action - ouput Relay 0",
+      "ex)Add New signal\t\n\t> Delay:\t100\n\t> count:\t10\n\t> On:\t500\n\t> off:\t500\n"
+    ],
+    "expected_result": [
+      "1. Relay 동작에 따라 Input > function 연속 동작 \n-> 0초로 설정할 경우, 반복적인 신호를 무시하지 않는다.",
+      "1) Relay 동작에 따라 동작한 function 대해 input 로그를 남긴다. \t\t\t\t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\t\t\t\t\t\n> input detected on 10번 출력(동작한 counts만큼 출력)\t\t\t\t\t\n※ 장치 로그: input detected 로그 10번 출력\t\t\t\t\t\n",
+      "1. Wiegand Out 후 설정된 반복 신호 무시 시간에 들어온 첫번째 Input에 대해서는 동작을 하고 반복되어 들어온 Input에 대해서는 해당 시간만큼 무시된다.\n2. 이후 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다.",
+      "1) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\t\t\t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\t\t\t\t\t\n> input detected on 10번 출력(동작한 counts만큼 출력)\t\t\t\t\t\n※ 장치 로그: input detected 로그 10번 출력\n(1000(ms)면 1초로 1초 동안 무시하고 이후 들어 온 input에 대해 action이 동작했기 때문)\t\t\t\t\t\n",
+      "1. Wiegand Out 후 설정된 반복 신호 무시 시간에 들어온 첫번째 Input에 대해서는 동작을 하고 반복되어 들어온 Input에 대해서는 해당 시간만큼 무시된다.\n2. 이후 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다.",
+      "1) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\n> input detected on 1번 출력(동작한 counts만큼 출력)\n※ 장치 로그: input detected 로그 1번 출력",
+      "1. Relay 동작에 따라 Input > function 연속 동작\n-> 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다.",
+      "1) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\n> input detected on 6번 출력(동작한 counts만큼 출력)\n※ 장치 로그: input detected 로그 6번 출력\n(5000(ms)면 5초로 5초 동안 무시하고 이후 들어 온 input에 대해 action이 동작했기 때문)\n(첫번째 input 1번 + 무시시간 이후 동작한 5번 = 6번)",
+      "1. 2번에 설정된 Action은 계속 발생한다.\n2. 4번에 설정된 Action은 첫번째 input에 의해 Action 후 반복되어 들어온 Input에 대해서는 해당 시간만큼 무시된다.\n3. 이후 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다.",
+      "1) Relay 동작에 따라 동작한 function 대해 input 로그를 남긴다. \t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\n> input detected on 10번 출력\n※ 장치 로그: input detected 로그 10번 출력\n\n3) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\t\t\t\t\t\n4번에서 설정한 function의 로그가 출력된다. \t\t\t\t\t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\t\t\t\t\t\n>input detected on 3번 출력(동작한 action만큼 출력)\t\t\t\t\t\n※ 장치 로그: input detected 로그 남음 3번 출력\t\t\t\t\t\n(8000(ms)면 8초로 8초 동안 무시하고 이후 들어 온 input에 대해 action이 동작했기 때문)\t\t\t\t\t\n(첫번째 input 1번 + 무시시간 이후 동작한 2번 = 3번)\t\t\t\t\t\n",
+      "1. Relay 동작에 따라 Input > function 연속 동작\n-> 0초로 설정할 경우, 반복적인 신호를 무시하지 않는다.",
+      "1) Relay 동작에 따라 동작한 function 대해 input 로그를 남긴다. \t\t\t\t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\t\t\t\t\t\n> input detected on 10번 출력(동작한 counts만큼 출력)\t\t\t\t\t\n※ 장치 로그: input detected 로그 10번 출력\t\t\t\t\t\n",
+      "1. Wiegand Out 후 설정된 반복 신호 무시 시간에 들어온 첫번째 Input에 대해서는 동작을 하고 반복되어 들어온 Input에 대해서는 해당 시간만큼 무시된다.\n2. 이후 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다.",
+      "1) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\t\t\t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\t\t\t\t\t\n> input detected on 10번 출력(동작한 counts만큼 출력)\t\t\t\t\t\n※ 장치 로그: input detected 로그 10번 출력\n(1000(ms)면 1초로 1초 동안 무시하고 이후 들어 온 input에 대해 action이 동작했기 때문)\t\t\t\t\t\n",
+      "1. Wiegand Out 후 설정된 반복 신호 무시 시간에 들어온 첫번째 Input에 대해서는 동작을 하고 반복되어 들어온 Input에 대해서는 해당 시간만큼 무시된다.\n2. 이후 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다.",
+      "1) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\n> input detected on 1번 출력(동작한 counts만큼 출력)\n※ 장치 로그: input detected 로그 1번 출력",
+      "1. Relay 동작에 따라 Input > function 연속 동작\n-> 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다.",
+      "1) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\n> input detected on 6번 출력(동작한 counts만큼 출력)\n※ 장치 로그: input detected 로그 6번 출력\n(5000(ms)면 5초로 5초 동안 무시하고 이후 들어 온 input에 대해 action이 동작했기 때문)\n(첫번째 input 1번 + 무시시간 이후 동작한 5번 = 6번)",
+      "1. 2번에 설정된 Action은 계속 발생한다.\n2. 4번에 설정된 Action은 첫번째 input에 의해 Action 후 반복되어 들어온 Input에 대해서는 해당 시간만큼 무시된다.\n3. 이후 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다.",
+      "1) Relay 동작에 따라 동작한 function 대해 input 로그를 남긴다. \t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\n> input detected on 10번 출력\n※ 장치 로그: input detected 로그 10번 출력\n\n3) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\t\t\t\t\t\n4번에서 설정한 function의 로그가 출력된다. \t\t\t\t\t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\t\t\t\t\t\n>input detected on 3번 출력(동작한 action만큼 출력)\t\t\t\t\t\n※ 장치 로그: input detected 로그 남음 3번 출력\t\t\t\t\t\n(8000(ms)면 8초로 8초 동안 무시하고 이후 들어 온 input에 대해 action이 동작했기 때문)\t\t\t\t\t\n(첫번째 input 1번 + 무시시간 이후 동작한 2번 = 3번)\t\t\t\t\t\n",
+      "1. Relay 동작에 따라 Input > function 연속 동작\n-> 0초로 설정할 경우, 반복적인 신호를 무시하지 않는다.",
+      "1) Relay 동작에 따라 동작한 function 대해 input 로그를 남긴다. \t\t\t\t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\t\t\t\t\t\n> input detected on 10번 출력(동작한 counts만큼 출력)\t\t\t\t\t\n※ 장치 로그: input detected 로그 10번 출력\t\t\t\t\t\n",
+      "1. Wiegand Out 후 설정된 반복 신호 무시 시간에 들어온 첫번째 Input에 대해서는 동작을 하고 반복되어 들어온 Input에 대해서는 해당 시간만큼 무시된다.\n2. 이후 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다.",
+      "1) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\t\t\t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\t\t\t\t\t\n> input detected on 10번 출력(동작한 counts만큼 출력)\t\t\t\t\t\n※ 장치 로그: input detected 로그 10번 출력\n(1000(ms)면 1초로 1초 동안 무시하고 이후 들어 온 input에 대해 action이 동작했기 때문)\t\t\t\t\t\n",
+      "1. Wiegand Out 후 설정된 반복 신호 무시 시간에 들어온 첫번째 Input에 대해서는 동작을 하고 반복되어 들어온 Input에 대해서는 해당 시간만큼 무시된다.\n2. 이후 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다.",
+      "1) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\n> input detected on 1번 출력(동작한 counts만큼 출력)\n※ 장치 로그: input detected 로그 1번 출력",
+      "1. Relay 동작에 따라 Input > function 연속 동작\n-> 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다.",
+      "1) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\n> input detected on 6번 출력(동작한 counts만큼 출력)\n※ 장치 로그: input detected 로그 6번 출력\n(5000(ms)면 5초로 5초 동안 무시하고 이후 들어 온 input에 대해 action이 동작했기 때문)\n(첫번째 input 1번 + 무시시간 이후 동작한 5번 = 6번)",
+      "1. 2번에 설정된 Action은 계속 발생한다.\n2. 4번에 설정된 Action은 첫번째 input에 의해 Action 후 반복되어 들어온 Input에 대해서는 해당 시간만큼 무시된다.\n3. 이후 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다.",
+      "1) Relay 동작에 따라 동작한 function 대해 input 로그를 남긴다. \t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\n> input detected on 10번 출력\n※ 장치 로그: input detected 로그 10번 출력\n\n3) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\t\t\t\t\t\n4번에서 설정한 function의 로그가 출력된다. \t\t\t\t\t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\t\t\t\t\t\n>input detected on 3번 출력(동작한 action만큼 출력)\t\t\t\t\t\n※ 장치 로그: input detected 로그 남음 3번 출력\t\t\t\t\t\n(8000(ms)면 8초로 8초 동안 무시하고 이후 들어 온 input에 대해 action이 동작했기 때문)\t\t\t\t\t\n(첫번째 input 1번 + 무시시간 이후 동작한 2번 = 3번)\t\t\t\t\t\n",
+      "1. Relay 동작에 따라 Input > function 연속 동작\n-> 0초로 설정할 경우, 반복적인 신호를 무시하지 않는다.",
+      "1) Relay 동작에 따라 동작한 function 대해 input 로그를 남긴다. \t\t\t\t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\t\t\t\t\t\n> input detected on 10번 출력(동작한 counts만큼 출력)\t\t\t\t\t\n※ 장치 로그: input detected 로그 10번 출력\t\t\t\t\t\n",
+      "1. Wiegand Out 후 설정된 반복 신호 무시 시간에 들어온 첫번째 Input에 대해서는 동작을 하고 반복되어 들어온 Input에 대해서는 해당 시간만큼 무시된다.\n2. 이후 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다.",
+      "1) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\t\t\t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\t\t\t\t\t\n> input detected on 10번 출력(동작한 counts만큼 출력)\t\t\t\t\t\n※ 장치 로그: input detected 로그 10번 출력\n(1000(ms)면 1초로 1초 동안 무시하고 이후 들어 온 input에 대해 action이 동작했기 때문)\t\t\t\t\t\n",
+      "1. Wiegand Out 후 설정된 반복 신호 무시 시간에 들어온 첫번째 Input에 대해서는 동작을 하고 반복되어 들어온 Input에 대해서는 해당 시간만큼 무시된다.\n2. 이후 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다.",
+      "1) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\n> input detected on 1번 출력(동작한 counts만큼 출력)\n※ 장치 로그: input detected 로그 1번 출력",
+      "1. 2번에 설정된 Action은 계속 발생한다.\n2. 4번에 설정된 Action은 첫번째 input에 의해 Action 후 반복되어 들어온 Input에 대해서는 해당 시간만큼 무시된다.\n3. 이후 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다.",
+      "1) Relay 동작에 따라 동작한 function 대해 input 로그를 남긴다. \t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\n> input detected on 10번 출력\n※ 장치 로그: input detected 로그 10번 출력\n\n3) 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\t\t\t\t\t\n4번에서 설정한 function의 로그가 출력된다. \t\t\t\t\t\n※ 바이오스타 로그\n>1:1 authentication succeeded(card)\"\t\t\t\t\t\n>input detected on 3번 출력(동작한 action만큼 출력)\t\t\t\t\t\n※ 장치 로그: input detected 로그 남음 3번 출력\t\t\t\t\t\n(8000(ms)면 8초로 8초 동안 무시하고 이후 들어 온 input에 대해 action이 동작했기 때문)\t\t\t\t\t\n(첫번째 input 1번 + 무시시간 이후 동작한 2번 = 3번)\t\t\t\t\t\n",
+      "1. Wiegand Out 후 8초로 설정된 반복 신호 무시 시간에 들어온 첫번째 Input에 대해서는 동작을 하고 반복되어 들어온 Input에 대해서는 해당 시간만큼 무시된다.\n2. 이후 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다.",
+      "1. 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\t\t\t\t\t\n3번에서 설정한 function의 로그가 출력된다. \t\t\t\t\t\n※ 바이오스타 로그\n>1:1 authentication failed(card)\"\t\t\t\t\t\n>input detected on 3번 출력(동작한 action만큼 출력)\t\t\t\t\t\n※ 장치 로그: input detected 로그 남음 3번 출력\t\t\t\t\t\n(8000(ms)면 8초로 8초 동안 무시하고 이후 들어 온 input에 대해 action이 동작했기 때문)\t\t\t\t\t\n(첫번째 input 1번 + 무시시간 이후 동작한 2번 = 3번)\t\t\t\t\t\n",
+      "1. Wiegand Out 후 8초로 설정된 반복 신호 무시 시간에 들어온 첫번째 Input에 대해서는 동작을 하고 반복되어 들어온 Input에 대해서는 해당 시간만큼 무시된다.\n2. 이후 설정한 시간이 지나 들어온 Input에 대해서는 반복적으로 입력이 되더라도 무시하지 않고 설정된 Action이 동작된다.",
+      "1. 반복 신호 무시 시간에 들어온 첫번째 input과 이후 설정한 시간이 지나 들어온 input에 대해 로그가 남는다.\t\t\t\t\t\n3번에서 설정한 function의 로그가 출력된다. \t\t\t\t\t\n※ 바이오스타 로그\n>1:1 authentication failed(card)\"\t\t\t\t\t\n>input detected on 3번 출력(동작한 action만큼 출력)\t\t\t\t\t\n※ 장치 로그: input detected 로그 남음 3번 출력\t\t\t\t\t\n(8000(ms)면 8초로 8초 동안 무시하고 이후 들어 온 input에 대해 action이 동작했기 때문)\t\t\t\t\t\n(첫번째 input 1번 + 무시시간 이후 동작한 2번 = 3번)\t\t\t\t\t\n"
+    ]
+  }
+}

@@ -1,5 +1,27 @@
 ■ 이슈 키: COMMONR-279
 ■ 제목: [Intelligent Slave] Output Info : User ID 사용(User ID Type : Number)
+■ 설명: *요구사항 정의*
+ > http://192.168.1.4:8001/browse/BDP-92
+
+*관련 테스트를 진행하기 위한 전제조건*
+ >CS40 V1.5.1 / BEW2 V1.6.3 / BSL2 V1.6.1 / BEP2 V1.4.1 / XP2 V1.2.3 이상 버전
+ > RS-485 mode 가 Default 상태로 Suprema 장치가 아닌 3rd-party Controller 에 연결
+ > User ID Type: Number 사용
+ > Output info : User ID 사용
+
+*작성된 TestCase 내용*
+
+> [Use User ID 사용 & 숫자모드] 카드인증 성공시 출력되는 값에 대한 확인케이스
+ - CSN Card
+ - Wiegand Card
+ - Smart Card
+ - Mobile Access Card
+
+> [Use User ID 사용 & 숫자모드] 카드인증 실패시 Exception Code 설정에 따라 출력되는 값에 대한 확인케이스
+
+> [Use User ID 사용 & 숫자모드] 카드 외 크리덴셜로 인증 및 Byte Order 설정에 따른 출력되는 값에 대한 확인케이스
+ - 사용자에 카드가 미등록된 경우
+ - 사용자에 카드가 등록된 경우
 ============================================================
 
 ■ 테스트 스텝

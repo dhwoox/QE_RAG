@@ -1,0 +1,141 @@
+{
+  "id": "COMMONR-261",
+  "content": [
+    [
+      1,
+      "1. 바이오스타 접속\n2. 설정> Mobile Access\n3. 각 항목들 설정\n4. 등록용 장치설정 - 추가 클릭",
+      "각 항목 설정\n: Mobile Access 설정 - 사용\n: 이메일/암호 - (ex) 회사이메일/암호\n: 사이트ID - Test 전 환경설정 참고",
+      "1. 바이오스타에 연결된 인증장치가 모두 출력된다.\n> Diconnected 장치 / IO Device / CS40 미표시"
+    ],
+    [
+      2,
+      "1. 바이오스타 접속\n2. 설정> Mobile Access\n3. 각 항목들 설정\n4. 등록용 장치설정> 추가 클릭\n5. Mobile Access 미지원장치 선택> 추가",
+      "각 항목 설정\n: Mobile Access 설정 - 사용\n: 이메일/암호 - (ex) 회사이메일/암호\n: 사이트ID - Test 전 환경설정 참고\n\n모바일 크리덴셜 미지원장치\n: D2 Rev/XP2/N2 v1.2.0 외 장치",
+      "1. 추기시 에러팝업이 발생한다."
+    ],
+    [
+      3,
+      "1. 바이오스타 접속\n2. 설정> Mobile Access\n3. 각 항목들 설정\n4. 등록용 장치설정> 추가 클릭\n5. Mobile Access 지원장치 선택> 추가",
+      "각 항목 설정\n: Mobile Access 설정 - 사용\n: 이메일/암호 - (ex) 회사이메일/암호\n: 사이트ID - Test 전 환경설정 참고\n\n모바일 크리덴셜 지원장치\n: XPD2 Rev V1.4.0 이상 / XP2 V1.2.0 이상 / N2 V1.3.0 이상/ W2 V1.6.0 이상",
+      "1. 선택한 장치가 추가되어 리스트에 표시된다."
+    ],
+    [
+      4,
+      "1. Mobile Access 등록용 장치추가\n2. Mobile Access 카드로 인증시도",
+      "",
+      "1. 인증성공으로 동작한다."
+    ],
+    [
+      5,
+      "1. Mobile Access 등록용 장치추가\n2. 타 사이트에서 발급한 Mobile Access 카드로 인증시도",
+      "",
+      "1. 아무반응이 없다.\n> 진동만 발생."
+    ],
+    [
+      6,
+      "1. 바이오스타 접속\n2. 설정> Mobile Access\n3. 각 항목들 설정\n4. 등록용 장치설정> 장치추가\n5. Mobile Access 카드로 인증시도",
+      "각 항목 설정\n: Mobile Access 설정 - 사용\n: 이메일/암호 - (ex) 회사이메일/암호\n: 사이트ID - Test 전 환경설정 참고\n\n등록용 장치추가\n: 타 사이트의 모바일 크리덴셜 인증서 저장된 장치\n> 타 사이트에 장치가 저장되어있지 않아야 함.",
+      "1. 장치등록이 되고, 인증성공으로 동작한다."
+    ],
+    [
+      7,
+      "1. Mobile Access 등록용 장치 추가\n2. Without Network 실행\n3. Mobile Access 카드로 인증시도",
+      "",
+      "1. Mobile Access 키 삭제된다.\n2. 아무반응이 없다.\n> 진동만 발생."
+    ],
+    [
+      8,
+      "1. Mobile Access 등록용 장치 추가\n2. Config Reset 실행\n3. Mobile Access 카드로 인증시도",
+      "",
+      "1. Mobile Access 키 삭제된다.\n2. 아무반응이 없다.\n> 진동만 발생."
+    ],
+    [
+      9,
+      "1. Mobile Access 등록용 장치 추가\n2. Secure Tamper 발생\n3. Mobile Access 카드로 인증시도",
+      "",
+      "1. Secure Tamper 발생시 Mobile Access 키 삭제된다.\n2. 아무반응이 없다.\n> 진동만 발생."
+    ],
+    [
+      10,
+      "[Mobile Access 등록용 장치 추가된 상태]\n1. Mobile Access 등록용 장치리스트에서 장치 삭제\n2. Mobile Access 카드로 인증시도",
+      "",
+      "1. 장치 삭제시 Mobile Access 키 삭제된다.\n2. 아무반응이 없다.\n> 진동만 발생."
+    ],
+    [
+      11,
+      "1. Mobile Access 등록용 장치 추가\n2. Factory Default 실행\n3. Mobile Access 카드로 인증시도",
+      "",
+      "1. Factory Default시 Mobile Access 키 삭제된다.\n2. 아무반응이 없다.\n> 진동만 발생."
+    ],
+    [
+      12,
+      "[FW V1.1.0 에서 Mobile Access 사용]\n1. 바이오스타에서 v1.2.0으로 FW Upgrade\n2. 설정> Mobile Access\n3. 장치리스트 확인",
+      "장치\n> XP2 Only",
+      "1. FW v1.2.0으로 Upgrade 후 해당 장치가 Mobile Access 등록용 장치 리스트에 표시된다.\n> 장치리스트는 사이트에 등록된 기준으로 표시. 따라서 Mobile Access v1.1.0 추가시 리스트에 표시됨"
+    ],
+    [
+      13,
+      "1. Mobile Access 등록용 장치 추가\n2. Device> 장치삭제\n3. Mobile Access 등록용 장치 리스트 확인\n4. Mobile Access 카드로 인증시도",
+      "",
+      "1. 장치삭제시 Mobile Access 키 유지된다.\n> \"포털에 이미 등록된 장치\"로 표시되고 수정삭제 불가.\n2. 인증성공으로 동작한다."
+    ],
+    [
+      14,
+      "1. Mobile Access 등록용 장치 추가\n2. Device> 장치삭제\n3. Mobile Access 등록용 장치 리스트 확인\n4. 다시 바이오스타에 장치추가\n5. 모바일 크리덴셜 등록용 장치 리스트 확인",
+      "",
+      "1. 삭제하더라도 리스트에 표시된다.\n> 사이트에 등록된 기준으로 표시\n: \"포털에 이미 등록된 장치\"로 표시되고 수정삭제 불가.\n2. 재추가시 수정삭제버튼 활성화되어 표시된다."
+    ],
+    [
+      15,
+      "1. Mobile Access 등록용 장치 추가\n2. 장치 뒷면의 버튼을 이용해 Network 초기화 실행\n3. Mobile Access 카드로 인증시도",
+      "장치\n> D2 Rev / XP2 / W2 Rev / W3",
+      "1. Mobile Access 키 유지된다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-261",
+    "description": "",
+    "test_step": [
+      "1. 바이오스타 접속\n2. 설정> Mobile Access\n3. 각 항목들 설정\n4. 등록용 장치설정 - 추가 클릭",
+      "1. 바이오스타 접속\n2. 설정> Mobile Access\n3. 각 항목들 설정\n4. 등록용 장치설정> 추가 클릭\n5. Mobile Access 미지원장치 선택> 추가",
+      "1. 바이오스타 접속\n2. 설정> Mobile Access\n3. 각 항목들 설정\n4. 등록용 장치설정> 추가 클릭\n5. Mobile Access 지원장치 선택> 추가",
+      "1. Mobile Access 등록용 장치추가\n2. Mobile Access 카드로 인증시도",
+      "1. Mobile Access 등록용 장치추가\n2. 타 사이트에서 발급한 Mobile Access 카드로 인증시도",
+      "1. 바이오스타 접속\n2. 설정> Mobile Access\n3. 각 항목들 설정\n4. 등록용 장치설정> 장치추가\n5. Mobile Access 카드로 인증시도",
+      "1. Mobile Access 등록용 장치 추가\n2. Without Network 실행\n3. Mobile Access 카드로 인증시도",
+      "1. Mobile Access 등록용 장치 추가\n2. Config Reset 실행\n3. Mobile Access 카드로 인증시도",
+      "1. Mobile Access 등록용 장치 추가\n2. Secure Tamper 발생\n3. Mobile Access 카드로 인증시도",
+      "[Mobile Access 등록용 장치 추가된 상태]\n1. Mobile Access 등록용 장치리스트에서 장치 삭제\n2. Mobile Access 카드로 인증시도",
+      "1. Mobile Access 등록용 장치 추가\n2. Factory Default 실행\n3. Mobile Access 카드로 인증시도",
+      "[FW V1.1.0 에서 Mobile Access 사용]\n1. 바이오스타에서 v1.2.0으로 FW Upgrade\n2. 설정> Mobile Access\n3. 장치리스트 확인",
+      "1. Mobile Access 등록용 장치 추가\n2. Device> 장치삭제\n3. Mobile Access 등록용 장치 리스트 확인\n4. Mobile Access 카드로 인증시도",
+      "1. Mobile Access 등록용 장치 추가\n2. Device> 장치삭제\n3. Mobile Access 등록용 장치 리스트 확인\n4. 다시 바이오스타에 장치추가\n5. 모바일 크리덴셜 등록용 장치 리스트 확인",
+      "1. Mobile Access 등록용 장치 추가\n2. 장치 뒷면의 버튼을 이용해 Network 초기화 실행\n3. Mobile Access 카드로 인증시도"
+    ],
+    "data": [
+      "각 항목 설정\n: Mobile Access 설정 - 사용\n: 이메일/암호 - (ex) 회사이메일/암호\n: 사이트ID - Test 전 환경설정 참고",
+      "각 항목 설정\n: Mobile Access 설정 - 사용\n: 이메일/암호 - (ex) 회사이메일/암호\n: 사이트ID - Test 전 환경설정 참고\n\n모바일 크리덴셜 미지원장치\n: D2 Rev/XP2/N2 v1.2.0 외 장치",
+      "각 항목 설정\n: Mobile Access 설정 - 사용\n: 이메일/암호 - (ex) 회사이메일/암호\n: 사이트ID - Test 전 환경설정 참고\n\n모바일 크리덴셜 지원장치\n: XPD2 Rev V1.4.0 이상 / XP2 V1.2.0 이상 / N2 V1.3.0 이상/ W2 V1.6.0 이상",
+      "각 항목 설정\n: Mobile Access 설정 - 사용\n: 이메일/암호 - (ex) 회사이메일/암호\n: 사이트ID - Test 전 환경설정 참고\n\n등록용 장치추가\n: 타 사이트의 모바일 크리덴셜 인증서 저장된 장치\n> 타 사이트에 장치가 저장되어있지 않아야 함.",
+      "장치\n> XP2 Only",
+      "장치\n> D2 Rev / XP2 / W2 Rev / W3"
+    ],
+    "expected_result": [
+      "1. 바이오스타에 연결된 인증장치가 모두 출력된다.\n> Diconnected 장치 / IO Device / CS40 미표시",
+      "1. 추기시 에러팝업이 발생한다.",
+      "1. 선택한 장치가 추가되어 리스트에 표시된다.",
+      "1. 인증성공으로 동작한다.",
+      "1. 아무반응이 없다.\n> 진동만 발생.",
+      "1. 장치등록이 되고, 인증성공으로 동작한다.",
+      "1. Mobile Access 키 삭제된다.\n2. 아무반응이 없다.\n> 진동만 발생.",
+      "1. Mobile Access 키 삭제된다.\n2. 아무반응이 없다.\n> 진동만 발생.",
+      "1. Secure Tamper 발생시 Mobile Access 키 삭제된다.\n2. 아무반응이 없다.\n> 진동만 발생.",
+      "1. 장치 삭제시 Mobile Access 키 삭제된다.\n2. 아무반응이 없다.\n> 진동만 발생.",
+      "1. Factory Default시 Mobile Access 키 삭제된다.\n2. 아무반응이 없다.\n> 진동만 발생.",
+      "1. FW v1.2.0으로 Upgrade 후 해당 장치가 Mobile Access 등록용 장치 리스트에 표시된다.\n> 장치리스트는 사이트에 등록된 기준으로 표시. 따라서 Mobile Access v1.1.0 추가시 리스트에 표시됨",
+      "1. 장치삭제시 Mobile Access 키 유지된다.\n> \"포털에 이미 등록된 장치\"로 표시되고 수정삭제 불가.\n2. 인증성공으로 동작한다.",
+      "1. 삭제하더라도 리스트에 표시된다.\n> 사이트에 등록된 기준으로 표시\n: \"포털에 이미 등록된 장치\"로 표시되고 수정삭제 불가.\n2. 재추가시 수정삭제버튼 활성화되어 표시된다.",
+      "1. Mobile Access 키 유지된다."
+    ]
+  }
+}

@@ -1,5 +1,13 @@
 ■ 이슈 키: COMMONR-377
 ■ 제목: [BDP-1045] Server Private Message 기능 Capability 추가 
+■ 설명: https://jira.suprema.co.kr/browse/BDP-1045
+ - BioStar2> User> Advanced> Device Display Message => 해당 값은 장치에 전송하지 않음
+ - 장치상세정보창에서 Server Private Message를 On으로 설정시 User> Advanced> Device Private Message에 설정한 문구가 출력됨.
+ - Device Private Message는 BioStar2와는 무관(기존대로 SDK를 통해 검증진행)
+
+ * 해당 기능을 처음 도입하는 BioStar 2 v2.9.8 은 Capability 가 없으므로 Display 유무 + N2, W3 등 예외 처리를 하는 식으로 구분하고 있으나, 추후 해당 capability 가 모든 모델에 추가되고 나면, capability 를 통한 구분을 하는 식으로 변경하기 위해 미리 준비하고자 한다.
+
+ 
 ============================================================
 
 ■ 테스트 스텝

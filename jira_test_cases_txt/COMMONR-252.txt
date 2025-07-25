@@ -1,5 +1,32 @@
 ■ 이슈 키: COMMONR-252
 ■ 제목: [BSPP-414] Wiegand output 으로 User ID 전송
+■ 설명: > Wiegand Out으로 Card ID(=Default), User ID 지원.
+> 사용자 ID 출력을 선택하는 경우, Card ID 출력 대신 사용자 ID를 인증 성공 시 출력.
+> Bypass 사용 혹은 Smart Card 중 AoC 사용인 경우 Card ID가 출력 된다. Secure Credential Card의 경우 사용자 ID 출력 지원 한다. 
+> Xpass D2 를 제외한 모든 장치에서 지원(슬레이브로 연결 된 장치에서는 설정 불가)
+
+> User ID 출력에 대해 숫자모드/영숫자모드에서 모두 지원
+:: 숫자모드일 때, User ID 설정: User ID가 1234일 때 0x04 D2로 출력
+:: 영숫자모드일 때, User ID 설정: User ID가 1234일 때 0x31 32 33 34로 출력
+
+>> AOC(영숫자ID 발급) 카드를 User ID 설정된 장치에 리드시: User ID가 A1234일 때 0x41 31 32 33 34로 출력
+>> AOC(숫자ID 발급) 카드를 User ID 설정된 장치에 리드시: User ID가 1234일 때 0x04 D2로 출력
+>> AOC(영숫자ID 혹은 숫자ID 발급) 카드를 Card ID 설정된 장치에 리드시: User ID가 A1234일 때 발급된 카드ID가 출력(기존과 동일)
+=> AOC의 경우 장치의 모드와 상관없이 발급된 카드ID에 대해 Card ID/User ID 설정대로 출력
+
+>> (숫자모드) SCC 카드를 User ID로 설정된 장치에 리드시: User ID가 1234일 때 0x04 D2로 출력
+>> (영숫자모드) SCC 카드를 User ID로 설정된 장치에 리드시: User ID가 1234일 때 0x31 32 33 34로 출력
+
+>> (숫자모드) User ID 설정된 장치에 지문/ID 인증시: User ID가 1234일 때 0x04 D2로 출력
+>> (영숫자모드) User ID 설정된 장치에 지문/ID 인증시: User ID가 1234일 때 0x31 32 33 34로 출력
+
+>> User ID 출력과 Bypass 모드를 같이 사용할 경우, 카드의 Wiegand 출력은 기존과 동일(Card ID 출력)
+>> 미지원 FW(2019 1H 이전FW)의 경우 Card ID 설정으로 동작
+>> User ID 설정된 장치를 구버전 BioStar(2.7.6 이전버전)에 연결해 Wiegand Config가 내려오게 되면 Card ID로 동작
+
+
+ex. User ID = 48 & User ID로 Wiegand Out시 
+> 48의 Hex 값은 0x34 0x38 => 따라서 Dec로 변환된 값인 13368로 출력됨.
 ============================================================
 
 ■ 테스트 스텝

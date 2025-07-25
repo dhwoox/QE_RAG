@@ -1,5 +1,59 @@
 ■ 이슈 키: COMMONR-126
 ■ 제목: 인증 - BioStar_Mobile Card(NFC지원 / BLE지원)
+■ 설명: Mobile Credential Key 
+ > PrimaryKey 16Byte, Secondary Key 16Byte
+
+
+FS 2 기능
+
+*<소개>*
+(*) 스마트폰을 카드 처럼 사용할 수 있는 기능이다.
+(*) NFC와 BLE 모두 공통으로 적용된다.
+
+*<요구사항>*
+(*) Access On Card, Secure Credential Card 용 데이터 구조체를 그대로 사용한다.
+(*) 스마트 폰에 Access On Card가 발급된 경우, 장치 인증 모드나 개인인증 모드에 따라서 인증을 수행한다. 단, 개인인증모드가 지문/얼굴을 이용한 인증모드인 경우에는 인증모드 오류로 처리한다. 
+(*) 스마트 폰에 Secure Credential Card가 발급된 경우 Secure Credential Card의 Card ID만을 사용하여 CSN으로 처리한다.
+
+
+<<BioStar2 - 2.7 Upgrade 후 변경 사항>>
+※ DESFire Advanced 사용 시 Mobile 설정 불가
+
+<<BioStar2 환경설정 & 발급 및 인증방법에 대한 전체적인 설명>>
+※ Cloud 사용시 password level을 medium이상으로 설정
+    : 임의 사용자의 권한등급(Administrator)/로그인ID(ex. test)/암호(ex. test1234!1) 설정
+
+1. BioStar2 Cloud 설정
+    : Subdomain Name - 정규서버와 중복되지 않도록 설정(ex. aaa.biostar2.com)
+    : Administrator e-mail 설정 - ex. sykim@suprema.co.kr
+    : Cloud Server Address - apitest.biostar2.com 으로 변경
+    : Port Used by Cloud - 설정값 유지(52000)
+    : Version - v2 으로 설정
+
+2. Email 수신
+    : Cloud 설정 적용시 Administrator e-mail에 설정한 주소로 biostar2에서 메일발송
+      => 해당 메일에서 https://api.biostar2.com/v2~ 클릭> 웹 브라우저에서 URL을 api.biostar2.com -> apitest.biostar2.com으로 수정해 재접속
+
+3. Register to Biostar2  Cloud 화면
+    : Login ID 및 Password 입력(test/test1234!1)
+
+4. Mobile 접속 설정(Play Store에서 Download)
+    => Subdomain Name & Cloud Server Address 입력(abc.apitest.biostar2.com)
+    => Login ID 및 Password 입력(test/test1234!1)
+    : 로그인 후 설정에서 BLE 선택
+    ※ NFC 로 동작시킬 경우 BLE Disable 후 기기설정에서 블루투스 해제 & NFC Enable 후 사용
+
+5. 장치의 layout 설정
+    : 설정> 카드형식> 스마트 카드> 스마트 카드 추가> DesFire/모바일 탭에서 Layout 설정 후 Device에서 해당 Layout 설정
+
+6. 모바일 접속 사용자에게 모바일카드 발급
+    : test/test1234!1 설정된 사용자> 카드> 스마트 카드> Layout 설정된 장치 선택> 각 항목 선택 후 모바일카드 발급 클릭
+
+7. Mobile UI에서 느낌표 출력> 클릭> 카드클릭 후 인증
+
+
+※ FS2 - AWB 모델: NFC/BLE 지원
+※ FS2-D 모델: NFC 만 지원(BLE 미지원)
 ============================================================
 
 ■ 테스트 스텝

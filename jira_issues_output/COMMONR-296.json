@@ -1,0 +1,347 @@
+{
+  "id": "COMMONR-296",
+  "content": [
+    [
+      1,
+      "[OSDP Device 를 물리적으로 결선하지 않은 상태]\n1. CS40> 마우스 우클릭> Add OSDP Device",
+      "",
+      "1. Virtual Device ID를 가진 장치가 추가된다.\n(실제 아이콘은 Disconnected로 표시)"
+    ],
+    [
+      2,
+      "[Virtual Device ID를 가진 장치가 추가된 상태]\n1. 설정한 OSDP ID와 동일한 ID를 가진 OSDP Device 가 물리적으로 결선\n2. 통신유무 확인",
+      "",
+      "1. 설정한 OSDP ID와 동일한 ID를 가진 OSDP Device 가 해당 포트에 결선되면 연결이 이루어진다.(RS485 Connected 로그 발생)\n2. OSDP ID에 대한 중복체크가 이루어진다.\n3. CS-40 에 동일 Device ID 로 다른 장치가 연결되면 이벤트를 발생한다.(오류팝업발생)"
+    ],
+    [
+      3,
+      "[OSDP Device 에 세팅되어 있는 OSDP ID 로 연결]\n1. 추가한 OSDP Device 의 설정 진입\n2. Information 확인",
+      "OSDP Device Type \n- OSDP Reader 일 때",
+      "하기의 내용이 정상적으로 표시되어야 한다.\n1. Device Name 표시\n2. Port 정보\n3. Device ID\n4. Vendor Code\n5. Firmware Version\n6. OSDP Device Type\n7. Serial Number\n8. Product Name\n9. Hardware Version \n10. Status 및 Locked"
+    ],
+    [
+      4,
+      "[OSDP Reader가 물리적으로 연결된 상태]\n1. Status를 Active로 설정 후 동작확인",
+      "",
+      "1. 장치의 입력에 따라 CS40이 동작한다.\n> 입력된 Input 및 카드값이 출력된다."
+    ],
+    [
+      5,
+      "[OSDP Reader가 물리적으로 연결된 상태]\n1. Status를 Inactive로 설정 후 동작확인",
+      "",
+      "1. Controller와 OSDP Reader간 폴링을 하지 않으므로 장치의 입력이 발생해도 Controller는 그에 따른 동작을 하지 않는다.\n2. BioStar UI상 아이콘은 Gray 처리가 된다."
+    ],
+    [
+      6,
+      "[OSDP Reader가 물리적으로 연결된 상태]\n1. Network(RS-485) 항목 설정 후 동작확인",
+      "Network 항목\n> OSDP ID\n=> 0~126 설정가능\n> Secure Communication \n=> Default: Use",
+      "1. 장치추가때는 OSDP ID로 입력한 값으로 저장되고 해당 주소로 연결을 시도한다.\n2. 설정된 OSDP ID로 연결된 상태에서 주소 변경시 연결 끊어짐 발생한다.\n3. osdp_keyset은 처음 연결할 때 한번 내려준다.\n4. Key가 내려간 상태라면 비활성화 -> 활성화 시 가지고 있는 키로 통신한다.\n※ Default key를 가지고 있으면 장치에 다시 키를 내림.\n\n-활성화시 Controller는 Secure Key를 내린다.-\n => -활성화된 상태에서 비활성화로 변경후의 동작확인필요-"
+    ],
+    [
+      7,
+      "[OSDP Reader가 물리적으로 연결된 상태]\n1. Authentication 항목 설정 후 동작확인\n> 인증모드 동작\n> Door 설정된 상태에서 Full Access 동작\n> Card + PIN일 때의 Auth Timeout 동작",
+      "Authentication 항목\n> Auth Mode\n=> Card Only & Card + PIN 지원\n> Full Access\n=> Default: Disable\n> Auth Timeout\n=> 3 ~ 20sec 지원(Default: 5)",
+      "1. 설정된 인증모드로 동작된다.\n2. Door 설정된 상태에서 Full Access 설정에 따라 출입허용/거부로 동작된다.\n3. Card+Pin인증모드에서 Card 리드 후 Auth Timeout 설정으로 동작된다.\n> *: 취소\n> #: 입력"
+    ],
+    [
+      8,
+      "[RS485 장치가 추가되지 않은 상태]\n1. CS40> Serial> SCB Key 설정\n2. 설정 저장전에 RS485 장치 연결\n3. 설정저장시도",
+      "",
+      "1. 실패처리 되면서 에러발생한다."
+    ],
+    [
+      9,
+      "[OSDP Reader가 물리적으로 연결된 상태]\n1. CS40> OSDP Device LED/Buzzer 설정\n> Waiting Input\n> Auth Success\n> Auth Fail",
+      "LED\n> Mode\n> Cycle\n> Color/Duration\n=> Color: Off(Black) / RED / GREEN / AMBER / BLUE / MAGENTA / CYAN / WHITE\nBuzzer\n> Mode\n> Cycle\n> Duration",
+      "1. 연결된 OSDP Device의 LED/Buzzer가 설정된대로 동작한다."
+    ],
+    [
+      10,
+      "[OSDP Reader가 물리적으로 연결되어 추가된 상태]\n1. 장치목록에서 OSDP Reader에 해당하는 장치정보 확인",
+      "",
+      "1. OSDP Reader인 경우 Device Address에 OSDP 주소를 표시한다.\n2. Device Status에서는 OSDP 장치의 연결 및 활성화 상태를 표시한다.\n> Normal(Active)\n> Normal(Inactive)\n> Disconnected\n※ Batch Edit에서 OSDP Device Status를 일괄적으로 변경가능하다."
+    ],
+    [
+      11,
+      "1. CS40> Search Slave Device> 추가\n2. Add OSDP Device 추가 시도",
+      "CS40 Port\n> 0~3 & Host",
+      "1. 추가할 수 없다.\n> 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다."
+    ],
+    [
+      12,
+      "1. CS40> Add OSDP Device 추가\n2. Search suprema slave device 추가 시도",
+      "CS40 Port\n> 0~3 & Host",
+      "1. 이미 OSDP Device 가 추가되어 있는 port 에서는 장치를 검색하지 않는다."
+    ],
+    [
+      13,
+      "[Slave 및 OSDP Device와 통신중인 상태]\n1. Device Tree에 CS-40을 우클릭> Reconnected\n2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인",
+      "CS40 Port\n> 0~3 & Host",
+      "1. Reconnected 시 연결이 끊긴다.\n> Slave 및 OSDP Reader에 대해 RS485 Disconnected 로그출력\n2. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력"
+    ],
+    [
+      14,
+      "[Slave 및 OSDP Device와 통신중인 상태]\n1. CS-40이 부팅 후 재연결된 장치들의 통신유무 확인",
+      "CS40 Port\n> 0~3 & Host",
+      "1. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력"
+    ],
+    [
+      15,
+      "1. CS20> Search Slave Device> 추가\n2. Add OSDP Device 추가 시도",
+      "CS20 Port\n> 0~1 & Host",
+      "1. 추가할 수 없다.\n> 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다."
+    ],
+    [
+      16,
+      "1. CS20> Add OSDP Device 추가\n2. Search suprema slave device 추가 시도",
+      "CS20 Port\n> 0~1 & Host",
+      "1. 이미 OSDP Device 가 추가되어 있는 port 에서는 장치를 검색하지 않는다."
+    ],
+    [
+      17,
+      "[Slave 및 OSDP Device와 통신중인 상태]\n1. Device Tree에 CS-20을 우클릭> Reconnected\n2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인",
+      "CS20 Port\n> 0~1 & Host",
+      "1. Reconnected 시 연결이 끊긴다.\n> Slave 및 OSDP Reader에 대해 RS485 Disconnected 로그출력\n2. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력"
+    ],
+    [
+      18,
+      "[Slave 및 OSDP Device와 통신중인 상태]\n1.CS-20이 부팅 후 재연결된 장치들의 통신유무 확인",
+      "CS20 Port\n> 0~1 & Host",
+      "1. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력"
+    ],
+    [
+      19,
+      "1. DI24> Search Slave Device> 추가\n2. Add OSDP Device 추가 시도",
+      "DI24 Port\n> 0~1",
+      "1. 추가할 수 없다.\n> 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다."
+    ],
+    [
+      20,
+      "1. DI24> Add OSDP Device 추가\n2. Search suprema slave device 추가 시도",
+      "DI24 Port\n> 0~1",
+      "1. 이미 OSDP Device 가 추가되어 있는 port 에서는 장치를 검색하지 않는다."
+    ],
+    [
+      21,
+      "[Slave 및 OSDP Device와 통신중인 상태]\n1. Device Tree에 DI24을 우클릭> Reboot\n2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인",
+      "DI24 Port\n> 0~1",
+      "1. Reboot 시 연결이 끊긴다.\n> Slave 및 OSDP Reader에 대해 RS485 Disconnected 로그출력\n2. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력"
+    ],
+    [
+      22,
+      "[Slave 및 OSDP Device와 통신중인 상태]\n1.DI24이 부팅 후 재연결된 장치들의 통신유무 확인",
+      "DI24 Port\n> 0~1",
+      "1. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력"
+    ],
+    [
+      23,
+      "[OSDP Device 통신중인 상태]\n1. OSDP Device ID 변경 후 저장 단계를 2~3회 반복\n2. OSDP Device ID 변경 전 ID로 원복\n3. CS40 Reboot\n4. 부팅완료 후 OSDP Device와의 통신상태 확인",
+      "",
+      "1. 마지막에 설정한 OSDP Device ID로 Master와 통신이 이루어진다.\n> 1번 설정 시 OSDP Device와 CS20/40의 연결이 끊어진다."
+    ],
+    [
+      24,
+      "1. CS40> TriggerAction\n2. OSDP Device에서 Tamper 발생에 대한 설정\n3. OSDP Device에서 Tamper 발생",
+      "Trigger Action\n> Trigger - OSDP Device / Tamper On\n\n[BioStar]\nAction Device : Master / Slave / OSDP Reader\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨",
+      "1.OSDP Device 의 Tamper 이벤트를 발생시키다.\n2.Trigger에 의한 Action이 발생한다.\n> OSDP Reader - Disable Device만 표시 "
+    ],
+    [
+      25,
+      "1. Door 생성\n2. OSDP Device로 Door 구성\n3. OSDP Device에 인증시도",
+      "",
+      "1. 인증성공시 Relay가 동작되어야 한다."
+    ],
+    [
+      26,
+      "1. Door 생성\n2. OSDP Device로 Door 구성> 이중인증 설정\n3. OSDP Device에 인증시도",
+      "이중인증 설정\n> OSDP Device",
+      "1. A 사용자 인증 후 인증성공 로그가 출력되고 입력대기상태의 LED가 점멸된다.\n2. B 사용자 인증 후 인증성공로그가 출력되면서 이중인증성공/Relay On/Relay Off 로그가 출력된다."
+    ],
+    [
+      27,
+      "1. Door 생성\n2. OSDP Device로 Door 구성> APB 설정\n3. OSDP Device에 동일사용자로 반복인증시도",
+      "APB 설정\n> Soft APB\n> Hard APB",
+      "1. Soft APB시 인증성공 및 Relay가 동작한다.\n2. Hard APB시 인증실패 및 Relay가 동작하지 않는다."
+    ],
+    [
+      28,
+      "1. Floor 생성\n2. OSDP Device로 Reader 구성\n3. OSDP Device에 인증시도",
+      "",
+      "1. 인증성공시 설정된 Port의 Relay가 동작되어야 한다."
+    ],
+    [
+      29,
+      "1. APB Zone 생성\n2. OSDP Device로 Zone 구성\n3. OSDP Device에 동일사용자로 반복 인증시도",
+      "모드\n> Local\n> Global\n\nAPB 설정\n> Soft APB\n> Hard APB",
+      "1. Soft APB시 인증성공 및 Relay가 동작한다.\n2. Hard APB시 인증실패 및 Relay가 동작하지 않는다."
+    ],
+    [
+      30,
+      "1. Intrusion Alarm Zone 생성\n2. ODSP Device로 경비해제(장치) 설정\n3. 경비/해제 등 동작확인",
+      "경비종류\n> 경비\n> 해제\n> 경비/해제",
+      "1. 경비진입/경비해제로 동작한다."
+    ],
+    [
+      31,
+      "[v1.6.1 이전 버전에서Slave Device 추가]\n1. CS40 V1.6.1 이상버전으로 FW Upgrade\n2. Add OSDP Device 추가 시도",
+      "CS40 Port\n> 0~3 & Host",
+      "1. 추가할 수 없다.\n> 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다."
+    ],
+    [
+      32,
+      "[Slave Device 추가]\n1. CS20 v1.0.1 / DI24 v1.0.0 FW Upgrade\n2. Add OSDP Device 추가 시도",
+      "CS20 / DI24 Port\n> 0~1",
+      "1. 추가할 수 없다.\n> 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다."
+    ],
+    [
+      33,
+      "1. CoreStation에 SCB Key 설정\n2. OSDP Reader 추가\n3. 통신유무확인 ",
+      "CoreStation에서의 SCB Key - 3으로 값을 채워서 설정\n \n추가할 OSDP Reader가 설정된 Key - Default key",
+      "1. Default Key로 통신한다.\n※ OSDP Default Key로 연결을 한 다음에 통신이 되면 그때 Reader에 SCB Key를 내려준다."
+    ],
+    [
+      34,
+      "1. CoreStation에 SCB Key 설정\n2. OSDP Reader 추가\n3. 통신유무확인 ",
+      "SCB Key - 3으로 값을 채워서 설정\n \n추가할 OSDP Reader Key - 1~1로 설정된 key",
+      "1. SCB Key가 상이하기에 통신이 되지 않는다.\n> Disconnected로 동작됨."
+    ],
+    [
+      35,
+      "1. 3rd Party ODDP 장치 연결\n2. 장치 삭제",
+      "1. 상태 : Active\n2. 상태 : Inactive",
+      "1. 장치가 정상적으로 삭제되어야 한다.\n> DIAG log상에서 사라져야 한다.(CS20FW-131)"
+    ],
+    [
+      36,
+      "1. 3rd Party ODDP 장치 연결\n2. 상세페이지 진입 > Secure Communicatoin 설정 변경\n3. Apply",
+      "1. 상태 : Use\n2. 상태 : Not Use",
+      "1. Secure Communication 상태와 관계없이 정상적으로 통신이 되고 동작해야 한다."
+    ],
+    [
+      37,
+      "[Disable Device 발생 상태]\n1. OSDP Reader에 인증시도",
+      "Trigger & Action \n> Trigger 설정 : Input 접지, Event 발생\n> Action 설정 : Disable Device ",
+      "1. Lock되어 카드입력이 막혀야 한다."
+    ],
+    [
+      38,
+      "[Disable Device 발생 상태]\n1. Device> OSDP Reader>Information> Locked : Unlock\n2. OSDP Reader에 인증시도",
+      "",
+      "1. Unlock 버튼 클릭시 Lock 해제되어야 한다.\n2. 카드입력을 받아 인증 성공/ 실패로 동작되어야 한다.\n\n 카드입력에 대한 인증성공/실패 로그가 남아야 한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-296",
+    "description": "",
+    "test_step": [
+      "[OSDP Device 를 물리적으로 결선하지 않은 상태]\n1. CS40> 마우스 우클릭> Add OSDP Device",
+      "[Virtual Device ID를 가진 장치가 추가된 상태]\n1. 설정한 OSDP ID와 동일한 ID를 가진 OSDP Device 가 물리적으로 결선\n2. 통신유무 확인",
+      "[OSDP Device 에 세팅되어 있는 OSDP ID 로 연결]\n1. 추가한 OSDP Device 의 설정 진입\n2. Information 확인",
+      "[OSDP Reader가 물리적으로 연결된 상태]\n1. Status를 Active로 설정 후 동작확인",
+      "[OSDP Reader가 물리적으로 연결된 상태]\n1. Status를 Inactive로 설정 후 동작확인",
+      "[OSDP Reader가 물리적으로 연결된 상태]\n1. Network(RS-485) 항목 설정 후 동작확인",
+      "[OSDP Reader가 물리적으로 연결된 상태]\n1. Authentication 항목 설정 후 동작확인\n> 인증모드 동작\n> Door 설정된 상태에서 Full Access 동작\n> Card + PIN일 때의 Auth Timeout 동작",
+      "[RS485 장치가 추가되지 않은 상태]\n1. CS40> Serial> SCB Key 설정\n2. 설정 저장전에 RS485 장치 연결\n3. 설정저장시도",
+      "[OSDP Reader가 물리적으로 연결된 상태]\n1. CS40> OSDP Device LED/Buzzer 설정\n> Waiting Input\n> Auth Success\n> Auth Fail",
+      "[OSDP Reader가 물리적으로 연결되어 추가된 상태]\n1. 장치목록에서 OSDP Reader에 해당하는 장치정보 확인",
+      "1. CS40> Search Slave Device> 추가\n2. Add OSDP Device 추가 시도",
+      "1. CS40> Add OSDP Device 추가\n2. Search suprema slave device 추가 시도",
+      "[Slave 및 OSDP Device와 통신중인 상태]\n1. Device Tree에 CS-40을 우클릭> Reconnected\n2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인",
+      "[Slave 및 OSDP Device와 통신중인 상태]\n1. CS-40이 부팅 후 재연결된 장치들의 통신유무 확인",
+      "1. CS20> Search Slave Device> 추가\n2. Add OSDP Device 추가 시도",
+      "1. CS20> Add OSDP Device 추가\n2. Search suprema slave device 추가 시도",
+      "[Slave 및 OSDP Device와 통신중인 상태]\n1. Device Tree에 CS-20을 우클릭> Reconnected\n2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인",
+      "[Slave 및 OSDP Device와 통신중인 상태]\n1.CS-20이 부팅 후 재연결된 장치들의 통신유무 확인",
+      "1. DI24> Search Slave Device> 추가\n2. Add OSDP Device 추가 시도",
+      "1. DI24> Add OSDP Device 추가\n2. Search suprema slave device 추가 시도",
+      "[Slave 및 OSDP Device와 통신중인 상태]\n1. Device Tree에 DI24을 우클릭> Reboot\n2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인",
+      "[Slave 및 OSDP Device와 통신중인 상태]\n1.DI24이 부팅 후 재연결된 장치들의 통신유무 확인",
+      "[OSDP Device 통신중인 상태]\n1. OSDP Device ID 변경 후 저장 단계를 2~3회 반복\n2. OSDP Device ID 변경 전 ID로 원복\n3. CS40 Reboot\n4. 부팅완료 후 OSDP Device와의 통신상태 확인",
+      "1. CS40> TriggerAction\n2. OSDP Device에서 Tamper 발생에 대한 설정\n3. OSDP Device에서 Tamper 발생",
+      "1. Door 생성\n2. OSDP Device로 Door 구성\n3. OSDP Device에 인증시도",
+      "1. Door 생성\n2. OSDP Device로 Door 구성> 이중인증 설정\n3. OSDP Device에 인증시도",
+      "1. Door 생성\n2. OSDP Device로 Door 구성> APB 설정\n3. OSDP Device에 동일사용자로 반복인증시도",
+      "1. Floor 생성\n2. OSDP Device로 Reader 구성\n3. OSDP Device에 인증시도",
+      "1. APB Zone 생성\n2. OSDP Device로 Zone 구성\n3. OSDP Device에 동일사용자로 반복 인증시도",
+      "1. Intrusion Alarm Zone 생성\n2. ODSP Device로 경비해제(장치) 설정\n3. 경비/해제 등 동작확인",
+      "[v1.6.1 이전 버전에서Slave Device 추가]\n1. CS40 V1.6.1 이상버전으로 FW Upgrade\n2. Add OSDP Device 추가 시도",
+      "[Slave Device 추가]\n1. CS20 v1.0.1 / DI24 v1.0.0 FW Upgrade\n2. Add OSDP Device 추가 시도",
+      "1. CoreStation에 SCB Key 설정\n2. OSDP Reader 추가\n3. 통신유무확인 ",
+      "1. CoreStation에 SCB Key 설정\n2. OSDP Reader 추가\n3. 통신유무확인 ",
+      "1. 3rd Party ODDP 장치 연결\n2. 장치 삭제",
+      "1. 3rd Party ODDP 장치 연결\n2. 상세페이지 진입 > Secure Communicatoin 설정 변경\n3. Apply",
+      "[Disable Device 발생 상태]\n1. OSDP Reader에 인증시도",
+      "[Disable Device 발생 상태]\n1. Device> OSDP Reader>Information> Locked : Unlock\n2. OSDP Reader에 인증시도"
+    ],
+    "data": [
+      "OSDP Device Type \n- OSDP Reader 일 때",
+      "Network 항목\n> OSDP ID\n=> 0~126 설정가능\n> Secure Communication \n=> Default: Use",
+      "Authentication 항목\n> Auth Mode\n=> Card Only & Card + PIN 지원\n> Full Access\n=> Default: Disable\n> Auth Timeout\n=> 3 ~ 20sec 지원(Default: 5)",
+      "LED\n> Mode\n> Cycle\n> Color/Duration\n=> Color: Off(Black) / RED / GREEN / AMBER / BLUE / MAGENTA / CYAN / WHITE\nBuzzer\n> Mode\n> Cycle\n> Duration",
+      "CS40 Port\n> 0~3 & Host",
+      "CS40 Port\n> 0~3 & Host",
+      "CS40 Port\n> 0~3 & Host",
+      "CS40 Port\n> 0~3 & Host",
+      "CS20 Port\n> 0~1 & Host",
+      "CS20 Port\n> 0~1 & Host",
+      "CS20 Port\n> 0~1 & Host",
+      "CS20 Port\n> 0~1 & Host",
+      "DI24 Port\n> 0~1",
+      "DI24 Port\n> 0~1",
+      "DI24 Port\n> 0~1",
+      "DI24 Port\n> 0~1",
+      "Trigger Action\n> Trigger - OSDP Device / Tamper On\n\n[BioStar]\nAction Device : Master / Slave / OSDP Reader\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨",
+      "이중인증 설정\n> OSDP Device",
+      "APB 설정\n> Soft APB\n> Hard APB",
+      "모드\n> Local\n> Global\n\nAPB 설정\n> Soft APB\n> Hard APB",
+      "경비종류\n> 경비\n> 해제\n> 경비/해제",
+      "CS40 Port\n> 0~3 & Host",
+      "CS20 / DI24 Port\n> 0~1",
+      "CoreStation에서의 SCB Key - 3으로 값을 채워서 설정\n \n추가할 OSDP Reader가 설정된 Key - Default key",
+      "SCB Key - 3으로 값을 채워서 설정\n \n추가할 OSDP Reader Key - 1~1로 설정된 key",
+      "1. 상태 : Active\n2. 상태 : Inactive",
+      "1. 상태 : Use\n2. 상태 : Not Use",
+      "Trigger & Action \n> Trigger 설정 : Input 접지, Event 발생\n> Action 설정 : Disable Device "
+    ],
+    "expected_result": [
+      "1. Virtual Device ID를 가진 장치가 추가된다.\n(실제 아이콘은 Disconnected로 표시)",
+      "1. 설정한 OSDP ID와 동일한 ID를 가진 OSDP Device 가 해당 포트에 결선되면 연결이 이루어진다.(RS485 Connected 로그 발생)\n2. OSDP ID에 대한 중복체크가 이루어진다.\n3. CS-40 에 동일 Device ID 로 다른 장치가 연결되면 이벤트를 발생한다.(오류팝업발생)",
+      "하기의 내용이 정상적으로 표시되어야 한다.\n1. Device Name 표시\n2. Port 정보\n3. Device ID\n4. Vendor Code\n5. Firmware Version\n6. OSDP Device Type\n7. Serial Number\n8. Product Name\n9. Hardware Version \n10. Status 및 Locked",
+      "1. 장치의 입력에 따라 CS40이 동작한다.\n> 입력된 Input 및 카드값이 출력된다.",
+      "1. Controller와 OSDP Reader간 폴링을 하지 않으므로 장치의 입력이 발생해도 Controller는 그에 따른 동작을 하지 않는다.\n2. BioStar UI상 아이콘은 Gray 처리가 된다.",
+      "1. 장치추가때는 OSDP ID로 입력한 값으로 저장되고 해당 주소로 연결을 시도한다.\n2. 설정된 OSDP ID로 연결된 상태에서 주소 변경시 연결 끊어짐 발생한다.\n3. osdp_keyset은 처음 연결할 때 한번 내려준다.\n4. Key가 내려간 상태라면 비활성화 -> 활성화 시 가지고 있는 키로 통신한다.\n※ Default key를 가지고 있으면 장치에 다시 키를 내림.\n\n-활성화시 Controller는 Secure Key를 내린다.-\n => -활성화된 상태에서 비활성화로 변경후의 동작확인필요-",
+      "1. 설정된 인증모드로 동작된다.\n2. Door 설정된 상태에서 Full Access 설정에 따라 출입허용/거부로 동작된다.\n3. Card+Pin인증모드에서 Card 리드 후 Auth Timeout 설정으로 동작된다.\n> *: 취소\n> #: 입력",
+      "1. 실패처리 되면서 에러발생한다.",
+      "1. 연결된 OSDP Device의 LED/Buzzer가 설정된대로 동작한다.",
+      "1. OSDP Reader인 경우 Device Address에 OSDP 주소를 표시한다.\n2. Device Status에서는 OSDP 장치의 연결 및 활성화 상태를 표시한다.\n> Normal(Active)\n> Normal(Inactive)\n> Disconnected\n※ Batch Edit에서 OSDP Device Status를 일괄적으로 변경가능하다.",
+      "1. 추가할 수 없다.\n> 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다.",
+      "1. 이미 OSDP Device 가 추가되어 있는 port 에서는 장치를 검색하지 않는다.",
+      "1. Reconnected 시 연결이 끊긴다.\n> Slave 및 OSDP Reader에 대해 RS485 Disconnected 로그출력\n2. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력",
+      "1. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력",
+      "1. 추가할 수 없다.\n> 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다.",
+      "1. 이미 OSDP Device 가 추가되어 있는 port 에서는 장치를 검색하지 않는다.",
+      "1. Reconnected 시 연결이 끊긴다.\n> Slave 및 OSDP Reader에 대해 RS485 Disconnected 로그출력\n2. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력",
+      "1. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력",
+      "1. 추가할 수 없다.\n> 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다.",
+      "1. 이미 OSDP Device 가 추가되어 있는 port 에서는 장치를 검색하지 않는다.",
+      "1. Reboot 시 연결이 끊긴다.\n> Slave 및 OSDP Reader에 대해 RS485 Disconnected 로그출력\n2. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력",
+      "1. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력",
+      "1. 마지막에 설정한 OSDP Device ID로 Master와 통신이 이루어진다.\n> 1번 설정 시 OSDP Device와 CS20/40의 연결이 끊어진다.",
+      "1.OSDP Device 의 Tamper 이벤트를 발생시키다.\n2.Trigger에 의한 Action이 발생한다.\n> OSDP Reader - Disable Device만 표시 ",
+      "1. 인증성공시 Relay가 동작되어야 한다.",
+      "1. A 사용자 인증 후 인증성공 로그가 출력되고 입력대기상태의 LED가 점멸된다.\n2. B 사용자 인증 후 인증성공로그가 출력되면서 이중인증성공/Relay On/Relay Off 로그가 출력된다.",
+      "1. Soft APB시 인증성공 및 Relay가 동작한다.\n2. Hard APB시 인증실패 및 Relay가 동작하지 않는다.",
+      "1. 인증성공시 설정된 Port의 Relay가 동작되어야 한다.",
+      "1. Soft APB시 인증성공 및 Relay가 동작한다.\n2. Hard APB시 인증실패 및 Relay가 동작하지 않는다.",
+      "1. 경비진입/경비해제로 동작한다.",
+      "1. 추가할 수 없다.\n> 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다.",
+      "1. 추가할 수 없다.\n> 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다.",
+      "1. Default Key로 통신한다.\n※ OSDP Default Key로 연결을 한 다음에 통신이 되면 그때 Reader에 SCB Key를 내려준다.",
+      "1. SCB Key가 상이하기에 통신이 되지 않는다.\n> Disconnected로 동작됨.",
+      "1. 장치가 정상적으로 삭제되어야 한다.\n> DIAG log상에서 사라져야 한다.(CS20FW-131)",
+      "1. Secure Communication 상태와 관계없이 정상적으로 통신이 되고 동작해야 한다.",
+      "1. Lock되어 카드입력이 막혀야 한다.",
+      "1. Unlock 버튼 클릭시 Lock 해제되어야 한다.\n2. 카드입력을 받아 인증 성공/ 실패로 동작되어야 한다.\n\n 카드입력에 대한 인증성공/실패 로그가 남아야 한다."
+    ]
+  }
+}

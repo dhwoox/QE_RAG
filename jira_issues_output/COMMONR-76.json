@@ -1,0 +1,51 @@
+{
+  "id": "COMMONR-76",
+  "content": [
+    [
+      1,
+      "1. DEVICE > Device List > Device 선택 > Network > Server > Device -> Server Connection : Check\n2. Server IP, Server Port 입력 > Apply",
+      "1. Direct Mode Connection\n2. Server IP 입력",
+      "1. 동기화(Animation) 화면 후 Device가 연결이 끊어지고 잠시 뒤 자동으로 연결이 되고 Server Mode로 동작이 된다.\n= Device 에 설정된 정보와 비교\n> 로그 업로드 실패가 미발생해야 한다.\n2. Device > Network > Server : Connection Mode, Server IP, Server Port에 대해서 비교한다.\n> TCP 로그가 남는다."
+    ],
+    [
+      2,
+      "1. DEVICE > Device List > Device 선택 > Network > Server > Device -> Server Connection : Uncheck > Apply",
+      "1. Server Mode Connection\n2. Server Address\n> Server IP 입력\n> Server URL 입력",
+      "1. 동기화(Animation) 화면 후 Device가 연결이 끊어지고 잠시 뒤 자동으로 연결이 되고 Direct Mode로 동작이 된다.\n= Device 에 설정된 정보와 비교\n2. Device > Network > Server : Connection Mode, Server IP, Server Port에 대해서 비교한다.\n> TCP, Ethernet, DHCP(설정된경우) 로그가 남는다."
+    ],
+    [
+      3,
+      "1. DEVICE > Device List > Server Mode Device : 삭제\n2. Waiting Device > Device List > Device 선택 > Add Waiting Device or Drag & Drop",
+      "1. Server Mode Connection\n2. Server Address\n> Server IP 입력\n> Server URL 입력",
+      "1. Waiting Device에서 Device가 표시된다.\n2. Add Waiting Device 또는 Drag & Drop 에 의해 정상적으로 추가, 연결이 되어야 한다.\n"
+    ],
+    [
+      4,
+      "1. 장치에서 Server Mode (Direct Mode 에서 Server Mode) 로 변경\n*Server Address 에 따른 확인\n2. BioStar > DEVICE > Server Mode 변경한 장치 선택 > 마우스 우클릭 > Reconnected 선택",
+      "1. Direct Mode Connection\n2. Server Address\n> Server IP 입력\n> Server URL 입력",
+      "Reconnected 후 장치와 정상적으로 재연결되어야 한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-76",
+    "description": "",
+    "test_step": [
+      "1. DEVICE > Device List > Device 선택 > Network > Server > Device -> Server Connection : Check\n2. Server IP, Server Port 입력 > Apply",
+      "1. DEVICE > Device List > Device 선택 > Network > Server > Device -> Server Connection : Uncheck > Apply",
+      "1. DEVICE > Device List > Server Mode Device : 삭제\n2. Waiting Device > Device List > Device 선택 > Add Waiting Device or Drag & Drop",
+      "1. 장치에서 Server Mode (Direct Mode 에서 Server Mode) 로 변경\n*Server Address 에 따른 확인\n2. BioStar > DEVICE > Server Mode 변경한 장치 선택 > 마우스 우클릭 > Reconnected 선택"
+    ],
+    "data": [
+      "1. Direct Mode Connection\n2. Server IP 입력",
+      "1. Server Mode Connection\n2. Server Address\n> Server IP 입력\n> Server URL 입력",
+      "1. Server Mode Connection\n2. Server Address\n> Server IP 입력\n> Server URL 입력",
+      "1. Direct Mode Connection\n2. Server Address\n> Server IP 입력\n> Server URL 입력"
+    ],
+    "expected_result": [
+      "1. 동기화(Animation) 화면 후 Device가 연결이 끊어지고 잠시 뒤 자동으로 연결이 되고 Server Mode로 동작이 된다.\n= Device 에 설정된 정보와 비교\n> 로그 업로드 실패가 미발생해야 한다.\n2. Device > Network > Server : Connection Mode, Server IP, Server Port에 대해서 비교한다.\n> TCP 로그가 남는다.",
+      "1. 동기화(Animation) 화면 후 Device가 연결이 끊어지고 잠시 뒤 자동으로 연결이 되고 Direct Mode로 동작이 된다.\n= Device 에 설정된 정보와 비교\n2. Device > Network > Server : Connection Mode, Server IP, Server Port에 대해서 비교한다.\n> TCP, Ethernet, DHCP(설정된경우) 로그가 남는다.",
+      "1. Waiting Device에서 Device가 표시된다.\n2. Add Waiting Device 또는 Drag & Drop 에 의해 정상적으로 추가, 연결이 되어야 한다.\n",
+      "Reconnected 후 장치와 정상적으로 재연결되어야 한다."
+    ]
+  }
+}

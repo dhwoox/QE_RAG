@@ -1,0 +1,73 @@
+{
+  "id": "COMMONR-284",
+  "content": [
+    [
+      1,
+      "1. 첨부파일의 OSDP TC 수행",
+      "> Default 모드(=Intelligent Slave)\n> Slave 모드",
+      "1. 기대결과에 만족해야 한다."
+    ],
+    [
+      2,
+      "1. 타 Master에 IM120을 Slave로 추가 후 삭제\n2. 삭제한 장치를 OSDP Tool에 연결\n3. (Default Key)Secure Channel 수행",
+      "",
+      "1. 장치가 들고있는 Key와 상이하기 때문에 Secure Session이 맺어지지 않는다."
+    ],
+    [
+      3,
+      "1. 타 Master에 IM120을 Slave로 추가 후 삭제\n2. Init 버튼을 이용해 Network 초기화\n3. 초기화된 장치를 OSDP Tool에 연결\n4. (Default Key)Secure Channel 수행",
+      "",
+      "1. Default Key로 Secure Session이 맺어진다."
+    ],
+    [
+      4,
+      "1. 타 Master에 IM120을 Slave로 추가 후 삭제\n2. Init 버튼 3회 +1회 클릭으로 설정 초기화\n3. 초기화된 장치를 OSDP Tool에 연결\n4. (Default Key)Secure Channel 수행",
+      "",
+      "1. Default Key로 Secure Session이 맺어진다."
+    ],
+    [
+      5,
+      "1. OSDP Tool을 이용해 장치에 Keyset(Default Key가 아닌 key) 수행\n3. OSDP Tool과 연결끊음\n4. OSDP Tool과 연결 후 Default Key로 Secure Channel 수행",
+      "",
+      "1. Default 외의 값으로 KeySet 된 상태에서는 Secure Session이 맺어지지 않는다."
+    ],
+    [
+      6,
+      "1. OSDP Tool을 이용해 장치에 Keyset(Default Key가 아닌 key) 수행\n2. OSDP Tool과 연결끊음\n3. OSDP Tool과 연결 후 OSDP Tool의 Key를 장치와 동일하게 설정\n4. Secure Channel 수행",
+      "",
+      "1. Key set한 key로 Secure Session이 맺어진다."
+    ],
+    [
+      7,
+      "[Key Set된 장치 - OSDP Tool간 Secure Session으로 통신중]\n1. Reset 버튼 클릭\n2. Secure Session 통신유무 확인",
+      "Network Reset\nConfig Reset\nSecure Tamper\nFactory Reset",
+      "1. 장치가 들고있는 Key(=Default)와 Tool이 들고있는 Key(≠Default)가 상이하기 때문에 Secure 통신이 이루어지지 않는다.\n> Tool 종료됨."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-284",
+    "description": "",
+    "test_step": [
+      "1. 첨부파일의 OSDP TC 수행",
+      "1. 타 Master에 IM120을 Slave로 추가 후 삭제\n2. 삭제한 장치를 OSDP Tool에 연결\n3. (Default Key)Secure Channel 수행",
+      "1. 타 Master에 IM120을 Slave로 추가 후 삭제\n2. Init 버튼을 이용해 Network 초기화\n3. 초기화된 장치를 OSDP Tool에 연결\n4. (Default Key)Secure Channel 수행",
+      "1. 타 Master에 IM120을 Slave로 추가 후 삭제\n2. Init 버튼 3회 +1회 클릭으로 설정 초기화\n3. 초기화된 장치를 OSDP Tool에 연결\n4. (Default Key)Secure Channel 수행",
+      "1. OSDP Tool을 이용해 장치에 Keyset(Default Key가 아닌 key) 수행\n3. OSDP Tool과 연결끊음\n4. OSDP Tool과 연결 후 Default Key로 Secure Channel 수행",
+      "1. OSDP Tool을 이용해 장치에 Keyset(Default Key가 아닌 key) 수행\n2. OSDP Tool과 연결끊음\n3. OSDP Tool과 연결 후 OSDP Tool의 Key를 장치와 동일하게 설정\n4. Secure Channel 수행",
+      "[Key Set된 장치 - OSDP Tool간 Secure Session으로 통신중]\n1. Reset 버튼 클릭\n2. Secure Session 통신유무 확인"
+    ],
+    "data": [
+      "> Default 모드(=Intelligent Slave)\n> Slave 모드",
+      "Network Reset\nConfig Reset\nSecure Tamper\nFactory Reset"
+    ],
+    "expected_result": [
+      "1. 기대결과에 만족해야 한다.",
+      "1. 장치가 들고있는 Key와 상이하기 때문에 Secure Session이 맺어지지 않는다.",
+      "1. Default Key로 Secure Session이 맺어진다.",
+      "1. Default Key로 Secure Session이 맺어진다.",
+      "1. Default 외의 값으로 KeySet 된 상태에서는 Secure Session이 맺어지지 않는다.",
+      "1. Key set한 key로 Secure Session이 맺어진다.",
+      "1. 장치가 들고있는 Key(=Default)와 Tool이 들고있는 Key(≠Default)가 상이하기 때문에 Secure 통신이 이루어지지 않는다.\n> Tool 종료됨."
+    ]
+  }
+}

@@ -1,5 +1,19 @@
 ■ 이슈 키: COMMONR-74
 ■ 제목: Upgrade - RS 485
+■ 설명: RS-485 를 통한 Upgrade 동작에 이상이 없는지 확인
+(*) Blackfin & Station 계열 -  FirmWare, Resource Upgrade
+
+Linux, Android 불필요한 Service 및 App 제거
+Release Version에서 디버그 관련 기능 제거
+Upgrade 용 FW 파일 및 SDK 파일에 전자서명 도입
+
+Core Station 40 - Slave로 사용 불가
+R2 - Master로 사용 불가
+FS2/FL - Slave 사용 시 Face 계열은1개만(이 경우 Face 계열의 Master) 나머지는 기존 V2.x 처럼 30개 연결
+
+FW Upgrade 진행은 초기버전부터 진행하는걸로 검증범위 확대.
+
+*Station 장치의 Resource File Upgrade시 다국어 지원하는 리소스파일 개발자에 요청해 진행*
 ============================================================
 
 ■ 테스트 스텝

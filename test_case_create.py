@@ -26,7 +26,7 @@ def get_all_jira_test_cases(jql):
     while True:
         url = f"{JIRA_URL}/rest/api/2/search"
         headers = {"Accept": "application/json"}
-        params = {'jql': jql, 'fields': 'summary', 'startAt': start_at, 'maxResults': max_results}
+        params = {'jql': jql, 'fields': 'summary,description', 'startAt': start_at, 'maxResults': max_results}
 
         try:
             response = requests.get(url, headers=headers, params=params, auth=JIRA_AUTH)
@@ -68,14 +68,16 @@ def save_issues_to_files(issues):
     for issue in issues:
         issue_key = issue['key']
         summary = issue['fields'].get('summary', '제목 없음')
+        # Description 필드 가져오기
+        description = issue['fields'].get('description', '설명 없음')
         
         steps = get_xray_test_steps(issue_key)
         
         file_name = f"{issue_key}.txt"
         file_path = os.path.join(OUTPUT_FOLDER_NAME, file_name)
-        
         file_content = f"■ 이슈 키: {issue_key}\n"
         file_content += f"■ 제목: {summary}\n"
+        file_content += f"■ 설명: {description}\n"
         file_content += "=" * 60 + "\n\n"
         
         if not steps:

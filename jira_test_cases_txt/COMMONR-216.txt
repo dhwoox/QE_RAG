@@ -1,5 +1,13 @@
 ■ 이슈 키: COMMONR-216
 ■ 제목: Wiegand - One Device Mode
+■ 설명: : One Device(Legacy) 모드 지원은 장치 타입 상관 없이(Master, Default(Stand Alone)) Wiegand Input을 설정할 경우 지원한다.
+ : Slave장치는 One Device(Legacy) 모드를 미지원 함
+ -: One Device(Legacy) 모드를 지원하기 위해서는 Wiegand Input 설정에 해당 모드를 설정할 수 있도록 추가되어야 함-
+ -: One Device(Legacy) 모드일 경우 Wiegand Reader를 추가 할 수 없으며, Wiegand 입력이 있을 경우 One Device(Legacy) 입력으로 보고 처리 함-
+ -: Wiegand Reader가 추가되어 있을 경우 One Device(Legacy) 모드 변경이 불가능 함.-
+ :별도의 One Device Mode(Legacy Mode)를 설정하는 옵션은 없으며, Wiegand 리더를 추가하면 Wiegand In으로 연결된 장치가 독립된 장치로 동작하고, Wiegand 리더를 추가하지 않으면 Wiegand In으로 연결된 장치가 종속된 장치로(One Device Mode) 동작 함
+ : One Device(Legacy) 장치는 Wiegand Reader처럼 추가가 불가능하기 때문에 Tamper&LED/Buzzer설정이 불가능 함 
+ : One Device(Legacy) 입력으로 동작하는 경우와 Master 장치로 동작하는 경우의 동일한 결과를 제공해야 한다.(Event Log 등)
 ============================================================
 
 ■ 테스트 스텝

@@ -1,0 +1,105 @@
+{
+  "id": "COMMONR-245",
+  "content": [
+    [
+      1,
+      "1. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Disable\n2. Trigger&Action 설정\n   > Input 및 Function\n3. 카드인증시도 후 결과 확인\n4. Trigger&Action의 Input 접지\n5. 결과확인\n6. 등록되지않은 카드인증시도> 실패에 대한 인증결과 확인",
+      "카드인증\n> SmartCard - AOC, SCC\n> 일반카드",
+      "1. Step 3> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 5> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 6> 화면에 인증결과가 출력된다.\n=> 인증실패 및 Sound 발생됨."
+    ],
+    [
+      2,
+      "1. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable\n2. Trigger&Action 설정\n   > Input 및 Function\n3. 카드인증시도> 인증결과 확인\n4. Trigger&Action의 Input 접지\n5. 결과확인\n6. 장치에서 Bypass Disable로 변경\n7. 카드인증시도 후 결과확인\n8. Trigger&Action의 Input 접지\n9. 결과확인",
+      "카드인증\n> SmartCard - AOC, SCC\n> 일반카드",
+      "1. Step 3> 카드 입력 후 바로 Bypass 로 Wiegand 출력된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 7> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 미출력됨\n3. Step 5,9> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨."
+    ],
+    [
+      3,
+      "1. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable\n2. Trigger&Action 설정\n   > Input 및 Function\n3. 카드인증시도> 인증결과 확인\n4. Trigger&Action의 Input 접지\n5. 결과확인\n6. 장치에서 Bypass Disable로 변경\n7. 카드인증시도 후 결과확인\n8. Trigger&Action의 Input 접지\n9. 결과확인",
+      "카드인증(= Blacklist Card)\n> SmartCard - AOC, SCC\n> 일반카드",
+      "1. Step 3> 카드 입력 후 바로 Bypass 로 Wiegand 출력된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 7> Blacklist로 인증실패 처리되고 화면에 인증결과 출력된다.\n=> Wiegand Out되지 않음\n=> 인증실패 및 Sound 발생됨\n3. Step 5,9> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨."
+    ],
+    [
+      4,
+      "1. 장치의 지문인증모드 설정  \n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable/Disable 무관\n3. Trigger&Action 설정\n   > Input 및 Function\n4. 등록된 지문인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인\n7. 등록되지않은 지문인증시도> 실패에 대한 인증결과 확인",
+      "※ 보낼 데이터가 있는 경우 (CSN, SmartCard_SCC가 포함된 User)\n지문인증모드\n> 지문Only\n> 지문+PIN",
+      "1. Step 4> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 6> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 7> 화면에 인증결과가 출력된다.\n=> 인증실패 및 Sound 발생됨."
+    ],
+    [
+      5,
+      "1. 장치의 지문인증모드 설정  \n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable/Disable 무관\n3. Trigger&Action 설정\n   > Input 및 Function\n4. 등록된 지문인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인\n7. 등록되지않은 지문인증시도> 실패에 대한 인증결과 확인",
+      "※ 보낼 데이터가 없는 경우 (SmartCard_AoC, PIN만 등록된 User)\n지문인증모드\n> 지문Only\n> 지문+PIN",
+      "1. Step 4> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 출력됨\n2. Step 6> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 7> 화면에 인증결과가 출력된다.\n=> 인증실패 및 Sound 발생됨."
+    ],
+    [
+      6,
+      "1. 장치의 ID인증모드 설정\n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable/Disable 무관\n3. Trigger&Action 설정\n   > Input 및 Function\n4. 등록된 ID 인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인\n7. 등록되지않은 ID 인증시도> 실패에 대한 인증결과 확인",
+      "※ 보낼 데이터가 있는 경우 (CSN, SmartCard_SCC가 포함된 User)\nID 인증모드\n> ID+지문\n> ID+PIN\n> ID+지문/PIN\n> ID+지문+PIN",
+      "1. Step 4> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 6> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 7> 화면에 인증결과가 출력된다.\n=> 인증실패 및 Sound 발생됨."
+    ],
+    [
+      7,
+      "1. 장치의 ID인증모드 설정\n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable/Disable 무관\n3. Trigger&Action 설정\n   > Input 및 Function\n4. 등록된 ID 인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인\n7. 등록되지않은 ID 인증시도> 실패에 대한 인증결과 확인",
+      "※ 보낼 데이터가 없는 경우 (SmartCard_AoC or PIN만 등록된 User)\nID 인증모드\n> ID+지문\n> ID+PIN\n> ID+지문/PIN\n> ID+지문+PIN",
+      "1. Step 4> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 출력됨\n2. Step 6> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 7> 화면에 인증결과가 출력된다.\n=> 인증실패 및 Sound 발생됨."
+    ],
+    [
+      8,
+      "1. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Disable\n   > Fail Code - 설정\n2. Trigger&Action 설정\n   > Input 및 Function\n3. 등록되지 않은 카드인증시도 후 결과 확인\n4. Trigger&Action의 Input 접지\n5. 결과확인\n6. 등록된 카드인증시도> 실패에 대한 인증결과 확인",
+      "카드인증\n> SmartCard - AOC, SCC\n> 일반카드",
+      "1. Step 3> 카드 입력 후 바로 Bypass Disable로 Wiegand 출력된다.\n=> 인증실패 및 Sound 발생됨.\n2. Step 5> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 6> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 미출력됨"
+    ],
+    [
+      9,
+      "1. 장치의 지문인증모드 설정\n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable\n3. Trigger&Action 설정\n   > Input 및 Function\n4. Private Auth(= 카드 + 지문) 설정되어 발급된 카드로 인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인",
+      "카드인증\n> SmartCard - AOC(Private Auth 포함)\n=> Card+지문\n=> Card+PIN\n=> Card+지문/PIN\n=> Card+지문+PIN",
+      "1. Step 4> 카드 입력 후 바로 Bypass 로 Wiegand 출력된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 5> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨."
+    ],
+    [
+      10,
+      "1. 장치의 지문인증모드 설정\n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable\n3. Trigger&Action 설정\n   > Input 및 Function\n4. Private Auth(= 카드 + 지문) 설정되어 발급된 카드로 인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인",
+      "카드인증\n> SmartCard - SCC\n> 일반카드\n=> Card+지문\n=> Card+PIN\n=> Card+지문/PIN\n=> Card+지문+PIN\n",
+      "1. Step 3> 카드 입력 후 바로 Bypass 로 Wiegand 출력된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 5> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-245",
+    "description": "",
+    "test_step": [
+      "1. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Disable\n2. Trigger&Action 설정\n   > Input 및 Function\n3. 카드인증시도 후 결과 확인\n4. Trigger&Action의 Input 접지\n5. 결과확인\n6. 등록되지않은 카드인증시도> 실패에 대한 인증결과 확인",
+      "1. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable\n2. Trigger&Action 설정\n   > Input 및 Function\n3. 카드인증시도> 인증결과 확인\n4. Trigger&Action의 Input 접지\n5. 결과확인\n6. 장치에서 Bypass Disable로 변경\n7. 카드인증시도 후 결과확인\n8. Trigger&Action의 Input 접지\n9. 결과확인",
+      "1. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable\n2. Trigger&Action 설정\n   > Input 및 Function\n3. 카드인증시도> 인증결과 확인\n4. Trigger&Action의 Input 접지\n5. 결과확인\n6. 장치에서 Bypass Disable로 변경\n7. 카드인증시도 후 결과확인\n8. Trigger&Action의 Input 접지\n9. 결과확인",
+      "1. 장치의 지문인증모드 설정  \n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable/Disable 무관\n3. Trigger&Action 설정\n   > Input 및 Function\n4. 등록된 지문인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인\n7. 등록되지않은 지문인증시도> 실패에 대한 인증결과 확인",
+      "1. 장치의 지문인증모드 설정  \n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable/Disable 무관\n3. Trigger&Action 설정\n   > Input 및 Function\n4. 등록된 지문인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인\n7. 등록되지않은 지문인증시도> 실패에 대한 인증결과 확인",
+      "1. 장치의 ID인증모드 설정\n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable/Disable 무관\n3. Trigger&Action 설정\n   > Input 및 Function\n4. 등록된 ID 인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인\n7. 등록되지않은 ID 인증시도> 실패에 대한 인증결과 확인",
+      "1. 장치의 ID인증모드 설정\n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable/Disable 무관\n3. Trigger&Action 설정\n   > Input 및 Function\n4. 등록된 ID 인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인\n7. 등록되지않은 ID 인증시도> 실패에 대한 인증결과 확인",
+      "1. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Disable\n   > Fail Code - 설정\n2. Trigger&Action 설정\n   > Input 및 Function\n3. 등록되지 않은 카드인증시도 후 결과 확인\n4. Trigger&Action의 Input 접지\n5. 결과확인\n6. 등록된 카드인증시도> 실패에 대한 인증결과 확인",
+      "1. 장치의 지문인증모드 설정\n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable\n3. Trigger&Action 설정\n   > Input 및 Function\n4. Private Auth(= 카드 + 지문) 설정되어 발급된 카드로 인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인",
+      "1. 장치의 지문인증모드 설정\n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable\n3. Trigger&Action 설정\n   > Input 및 Function\n4. Private Auth(= 카드 + 지문) 설정되어 발급된 카드로 인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인"
+    ],
+    "data": [
+      "카드인증\n> SmartCard - AOC, SCC\n> 일반카드",
+      "카드인증\n> SmartCard - AOC, SCC\n> 일반카드",
+      "카드인증(= Blacklist Card)\n> SmartCard - AOC, SCC\n> 일반카드",
+      "※ 보낼 데이터가 있는 경우 (CSN, SmartCard_SCC가 포함된 User)\n지문인증모드\n> 지문Only\n> 지문+PIN",
+      "※ 보낼 데이터가 없는 경우 (SmartCard_AoC, PIN만 등록된 User)\n지문인증모드\n> 지문Only\n> 지문+PIN",
+      "※ 보낼 데이터가 있는 경우 (CSN, SmartCard_SCC가 포함된 User)\nID 인증모드\n> ID+지문\n> ID+PIN\n> ID+지문/PIN\n> ID+지문+PIN",
+      "※ 보낼 데이터가 없는 경우 (SmartCard_AoC or PIN만 등록된 User)\nID 인증모드\n> ID+지문\n> ID+PIN\n> ID+지문/PIN\n> ID+지문+PIN",
+      "카드인증\n> SmartCard - AOC, SCC\n> 일반카드",
+      "카드인증\n> SmartCard - AOC(Private Auth 포함)\n=> Card+지문\n=> Card+PIN\n=> Card+지문/PIN\n=> Card+지문+PIN",
+      "카드인증\n> SmartCard - SCC\n> 일반카드\n=> Card+지문\n=> Card+PIN\n=> Card+지문/PIN\n=> Card+지문+PIN\n"
+    ],
+    "expected_result": [
+      "1. Step 3> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 5> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 6> 화면에 인증결과가 출력된다.\n=> 인증실패 및 Sound 발생됨.",
+      "1. Step 3> 카드 입력 후 바로 Bypass 로 Wiegand 출력된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 7> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 미출력됨\n3. Step 5,9> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.",
+      "1. Step 3> 카드 입력 후 바로 Bypass 로 Wiegand 출력된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 7> Blacklist로 인증실패 처리되고 화면에 인증결과 출력된다.\n=> Wiegand Out되지 않음\n=> 인증실패 및 Sound 발생됨\n3. Step 5,9> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.",
+      "1. Step 4> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 6> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 7> 화면에 인증결과가 출력된다.\n=> 인증실패 및 Sound 발생됨.",
+      "1. Step 4> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 출력됨\n2. Step 6> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 7> 화면에 인증결과가 출력된다.\n=> 인증실패 및 Sound 발생됨.",
+      "1. Step 4> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 6> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 7> 화면에 인증결과가 출력된다.\n=> 인증실패 및 Sound 발생됨.",
+      "1. Step 4> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 출력됨\n2. Step 6> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 7> 화면에 인증결과가 출력된다.\n=> 인증실패 및 Sound 발생됨.",
+      "1. Step 3> 카드 입력 후 바로 Bypass Disable로 Wiegand 출력된다.\n=> 인증실패 및 Sound 발생됨.\n2. Step 5> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 6> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 미출력됨",
+      "1. Step 4> 카드 입력 후 바로 Bypass 로 Wiegand 출력된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 5> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.",
+      "1. Step 3> 카드 입력 후 바로 Bypass 로 Wiegand 출력된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 5> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨."
+    ]
+  }
+}

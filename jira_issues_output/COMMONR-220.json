@@ -1,0 +1,69 @@
+{
+  "id": "COMMONR-220",
+  "content": [
+    [
+      1,
+      "1. Muster Zone 생성\n2. Device/Access Group/최대 체류시간 설정\n3. Alarm 설정\n4. 최대 체류시간 초과시 Alarm 동작 확인",
+      "Alarm: Output설정\n> (Relay 지원하는) 모든 장치\n> Port/Signal Setting",
+      "1. 설정한 체류시간를 초과해 체류할 경우 설정한 Output Signal이 발생한다."
+    ],
+    [
+      2,
+      "1. Muster Zone 생성\n2. Device/Access Group/최대 체류시간 설정\n3. Alarm 설정\n4. 최대 체류시간 초과시 Alarm 동작 확인",
+      "Alarm: Sound 설정\n> (Sound/Buzzer 지원하는) 모든 장치",
+      "1. 설정한 체류시간를 초과해 체류할 경우 설정한 Buzzer/Sound가 발생한다."
+    ],
+    [
+      3,
+      "1. Muster Zone 생성\n2. Device/Access Group/최대 체류시간 설정\n3. Alarm 설정\n4. Trigger&Action 발생\n5. Muster Zone Alarm 발생\n6. Monitoring> Zone Status> Muster Zone Clear",
+      "Alarm: Output 설정\n> Relay Port가 다중지원인 Device\n: CS40\n: A2\n\nTrigger&Action 설정\n> Muster Zone Alarm에 설정한 장치의 Output Port와 중복되지 않게 설정",
+      "1. Muster Zone Alarm에 대해서만 Clear된다.\n2. Trigger&Action으로 발생되던 Output은 계속 발생된다."
+    ],
+    [
+      4,
+      "1. Muster Zone 생성\n2. Device/Access Group/최대 체류시간 설정\n3. Alarm 설정\n4. Trigger&Action 발생\n5. Muster Zone Alarm 발생\n6. Monitoring> Zone Status> Muster Zone Clear",
+      "Alarm: Output 설정\n\nTrigger&Action 설정\n> Muster Zone Alarm에 설정한 장치의 Buzzer or Sound로 설정",
+      "1. Muster Zone Alarm에 대해서만 Clear된다.\n2. Trigger&Action으로 발생되던 Output은 계속 발생된다."
+    ],
+    [
+      5,
+      "1. Muster Zone 생성\n2. Alarm 설정\n3. FireAlarm Zone 생성\n4. Alarm 설정\n5. Muster Zone Alarm 발생\n6. FireAlarm 발생\n7. Zone Status에서 Muster Zone 선택 후 Alarm Clear",
+      "Alarm: Output 설정\n> A 장치의 Relay Port로 중복되게 설정\n: Muster Zone Alarm- Port 0(Relay 0ff)\n: FireAlarm- Port 0(Relay On)",
+      "1. 중복으로 설정된 경우 FireAlarm에 대해서도 Action Clear가 된다.\n※ Global Alarm & FireAlarm의 Priority가 Urgent로 동일.\n※ 중복으로 사용안하는게 맞는 동작이나 만약 중복으로 사용될 경우 위와같이 동작이 된다는 TC임"
+    ],
+    [
+      6,
+      "1. Zone> Add Zone> Muster> Apply\n2. Name 입력\n3. Entry/Exit Device 설정\n4. Access Group 설정\n5. Max Time Limit(min.) 설정\n6. 최대 체류시간 설정\n3. Alarm 설정\n4. Entry Device에 인증\n5. 최대 체류시간 초과시 Alarm 동작 확인",
+      "Max Time Limit(min.): 1/2160/4320 \n\nAlarm: Output설정\n> Relay 지원하는 장치\n> Port/Signal Setting",
+      "1. 설정한 체류시간를 초과해 체류할 경우 설정한 Output Signal이 발생한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-220",
+    "description": "",
+    "test_step": [
+      "1. Muster Zone 생성\n2. Device/Access Group/최대 체류시간 설정\n3. Alarm 설정\n4. 최대 체류시간 초과시 Alarm 동작 확인",
+      "1. Muster Zone 생성\n2. Device/Access Group/최대 체류시간 설정\n3. Alarm 설정\n4. 최대 체류시간 초과시 Alarm 동작 확인",
+      "1. Muster Zone 생성\n2. Device/Access Group/최대 체류시간 설정\n3. Alarm 설정\n4. Trigger&Action 발생\n5. Muster Zone Alarm 발생\n6. Monitoring> Zone Status> Muster Zone Clear",
+      "1. Muster Zone 생성\n2. Device/Access Group/최대 체류시간 설정\n3. Alarm 설정\n4. Trigger&Action 발생\n5. Muster Zone Alarm 발생\n6. Monitoring> Zone Status> Muster Zone Clear",
+      "1. Muster Zone 생성\n2. Alarm 설정\n3. FireAlarm Zone 생성\n4. Alarm 설정\n5. Muster Zone Alarm 발생\n6. FireAlarm 발생\n7. Zone Status에서 Muster Zone 선택 후 Alarm Clear",
+      "1. Zone> Add Zone> Muster> Apply\n2. Name 입력\n3. Entry/Exit Device 설정\n4. Access Group 설정\n5. Max Time Limit(min.) 설정\n6. 최대 체류시간 설정\n3. Alarm 설정\n4. Entry Device에 인증\n5. 최대 체류시간 초과시 Alarm 동작 확인"
+    ],
+    "data": [
+      "Alarm: Output설정\n> (Relay 지원하는) 모든 장치\n> Port/Signal Setting",
+      "Alarm: Sound 설정\n> (Sound/Buzzer 지원하는) 모든 장치",
+      "Alarm: Output 설정\n> Relay Port가 다중지원인 Device\n: CS40\n: A2\n\nTrigger&Action 설정\n> Muster Zone Alarm에 설정한 장치의 Output Port와 중복되지 않게 설정",
+      "Alarm: Output 설정\n\nTrigger&Action 설정\n> Muster Zone Alarm에 설정한 장치의 Buzzer or Sound로 설정",
+      "Alarm: Output 설정\n> A 장치의 Relay Port로 중복되게 설정\n: Muster Zone Alarm- Port 0(Relay 0ff)\n: FireAlarm- Port 0(Relay On)",
+      "Max Time Limit(min.): 1/2160/4320 \n\nAlarm: Output설정\n> Relay 지원하는 장치\n> Port/Signal Setting"
+    ],
+    "expected_result": [
+      "1. 설정한 체류시간를 초과해 체류할 경우 설정한 Output Signal이 발생한다.",
+      "1. 설정한 체류시간를 초과해 체류할 경우 설정한 Buzzer/Sound가 발생한다.",
+      "1. Muster Zone Alarm에 대해서만 Clear된다.\n2. Trigger&Action으로 발생되던 Output은 계속 발생된다.",
+      "1. Muster Zone Alarm에 대해서만 Clear된다.\n2. Trigger&Action으로 발생되던 Output은 계속 발생된다.",
+      "1. 중복으로 설정된 경우 FireAlarm에 대해서도 Action Clear가 된다.\n※ Global Alarm & FireAlarm의 Priority가 Urgent로 동일.\n※ 중복으로 사용안하는게 맞는 동작이나 만약 중복으로 사용될 경우 위와같이 동작이 된다는 TC임",
+      "1. 설정한 체류시간를 초과해 체류할 경우 설정한 Output Signal이 발생한다."
+    ]
+  }
+}

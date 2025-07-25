@@ -1,5 +1,44 @@
 ■ 이슈 키: COMMONR-328
 ■ 제목: [BDP-659] [Feasibiilty and limitation] BioStar 2와 장치에서 비주얼 페이스 템플릿만 저장하는 옵션 지원
+■ 설명: https://jira.suprema.co.kr/browse/BDP-659
+
+바이오스타 지원버전 - V2.9.7 이상 버전
+ 대상장치 - F2, BS3, W3 
+ FW 지원버전 - F2 V2.2.0 / BS3 V1.3.0 이후 버전 / W2 V1.0.0 이후 버전
+
+0.개요
+ - 현재 BioStar 2 시스템에서 비주얼 페이스의 저장은 사람이 식별할 수 있는 1)Warped Image와 사진의 특징 정보 만을 담은 2)Template, 이렇게 두 가지를 저장하고 있다. 그러나 1)의 경우, 2)와 달리 곧바로 사람을 특정할 수 있는 정보기 때문에 이를 직접 저장, 전송하는 것이 Data Controller 또는 Data Processor 에게 관리의 부담을 지워줄 수 있어 2)를 저장, 전송하는 옵션을 제공하는 것이 필요하다.
+ - 그러한 요구에 따라,
+ BioStar 2 및 장치가 1)을 저장하지 않고, 2)만을 저장하는 옵션을 제공하여야 한다.
+ 사용자 동기화 성능 향상을 위해 BioStar 2 와 장치 간에 1), 2) 중 보유하고 있는 것만 전송할 수 있어야 한다.
+ 즉, 2)만 저장하고 있는 경우, 2)만 전송할 수 있어야 한다.
+
+※ Template 버전
+ > F2: template v1 & v2
+ > BS3: template v3
+ > W3: template v3
+
+ 
+
+※ BioStar2 관련 동작 명령어
+
+1. heidiSQL 실행
+
+2. 서버에 이미지만 있는 사용자 만들기
+"delete FROM t_crdtbin WHERE typ IN (5,9)"
+
+3. 마이그레이션 전 상황 만들기 
+ "UPDATE t_syscfg SET VAL='false' WHERE SYSCFGUID=9100;" 입력
+
+4. 마이그레이션 후 상황 만들기
+ "UPDATE t_syscfg SET VAL='true' WHERE SYSCFGUID=9100;"
+ or UI 에서 User > More > Visual Face Migration
+
+5. 발급 기록만 있는 사용자는 
+ delete FROM t_crdtbin WHERE typ IN (5,9,7)
+
+단, 수행 후 사용자 삭제 > 동기화는 다시 해주기!!
+ 신규 설치한 경우 비주얼 페이스 마이그레이션 후 상황
 ============================================================
 
 ■ 테스트 스텝

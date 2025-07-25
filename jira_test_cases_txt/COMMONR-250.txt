@@ -1,5 +1,53 @@
 ■ 이슈 키: COMMONR-250
 ■ 제목: [BSPP-408] Card Type(CSN, Wiegand, Smart Card) 별 선택 옵션 제공
+■ 설명: CSN
+ D, A, I - EM, Mifare
+ E - EM
+ M - Mifare
+
+H - X, 예외 H(BEW2-OHP) - EM, Mifare
+
+Wiegand
+ A - iClass, HID Prox
+ I - iClass
+ H - HID Prox
+
+D - X, 예외 D(FL-DB, XPD2, XP2) - HID Prox
+ E, M - X
+
+Smart
+ A - Classic/Plus, Desfire/Desfire EV1, SR/SE, SEOS
+ M, D - Classic/Plus, Desfire/Desfire EV1
+ I - SR/SE, SEOS
+
+E, H - X, 예외(BEW2-OHP) - Classic/Plus, Desfire/Desfire EV1)
+
+Mobile
+ A, D, M, I - NFC
+ BLE - 모델명 B
+
+E, H - X, 예외(BEW2-OHP) - NFC
+
+BEW2-OHP는 1.1.0 이전 버전도 이후 버전과 동일하게 처리
+
+미지원 펌웨어 - CSN,Wiegand,Smart 사용함 Mobile 출력 안됨
+ 지원 펌웨어 - 지원하는 카드 타입이 아닌 경우 체크 해제 상태로 비활성화, CSN, Wiegand, Smart UI 출력 유무는 이전 버전과 동일
+
+> 해당 항목에서 선택 된 카드만 FW에서 리딩 되도록 지원 (예: iClass 선택 시, 다른 카드 Type은 리딩 되지 않도록 함)
+ > CSN 이면서 Smart Card로 발급 & 장치 설정은 Only CSN => 카드리드시 CSN으로 리드.
+ > Wiegand 이면서 Smart Card로 발급 & 장치 설정은 Only Wiegand => 카드리드시 Pac Data로 리드.
+ > ISO-15693의 경우 Mifare/Felica에 포함(BioStar UI상 ISO-15693 명시하지 않음)
+ > SEOS Config Card의 경우 SEOS 체크유무 상관없이 동작되게 지원
+ > NFC, BLE의 경우 카드인증에 해당 하는 부분으로 Device Manager 동작과는 무관
+ > Card Type 옵션 설정에 따라 카드 등록/리드 모두 동일하게 적용되어 동작
+ > Smart Card 에 대해서는 CSN으로 등록불가(기존과 동일)
+
+> XS2의 경우도 QDPB, DPB  HID Prox 미지원
+
+Card Type UI는 Master/Slave 각각 지원되어야 한다.
+
+[BDP-1068] XP2-MAPB-H 에서 지원되는 카드 타입
+> EM, HID Prox, iClass, iClass SEOS
 ============================================================
 
 ■ 테스트 스텝

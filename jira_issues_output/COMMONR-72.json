@@ -1,0 +1,38 @@
+{
+  "id": "COMMONR-72",
+  "content": [
+    [
+      1,
+      "1. DEVICE> 장치상세정보창 진입\n2. Restore to default: All 선택",
+      "",
+      "1. Config 초기화되고, 장치 Reboot된다.\n> 사용자, 로그는 그대로 유지 하고, 설정에 대해서 일부 항목은 유지 및 기본값으로 초기화 된다."
+    ],
+    [
+      2,
+      "1. DEVICE> 장치상세정보창 진입\n2. Restore to default: All 선택\n3. 초기화된 항목확인",
+      "",
+      "기본값으로 복원한다.\n1. Wiegand Config\n2. Triggered Action Config\n3. 장치잠금/통신잠금\n4. User ID Type\n> Station: Number\n5. 스케줄 Config\n6. 출입문 Config\n7. 출입그룹 Config\n8. 구역정보 Config\n9. 그룹매칭 Config"
+    ],
+    [
+      3,
+      "1. DEVICE> 장치상세정보창 진입\n2. Restore to default: All 선택\n3. 초기화되지 않는 설정값 확인",
+      "",
+      "일부 항목들은 기본값 복원시 이전 설정값을 그대로 유지한다.\n1. 시간처리(Time Zone) \n2. 언어/리소스\n3. Blacklist\n4. User ID Type\n> Entry Device(XPASS/XPS2)\n5. 통신 보안\n6. Secure Tamper"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-72",
+    "description": "",
+    "test_step": [
+      "1. DEVICE> 장치상세정보창 진입\n2. Restore to default: All 선택",
+      "1. DEVICE> 장치상세정보창 진입\n2. Restore to default: All 선택\n3. 초기화된 항목확인",
+      "1. DEVICE> 장치상세정보창 진입\n2. Restore to default: All 선택\n3. 초기화되지 않는 설정값 확인"
+    ],
+    "data": [],
+    "expected_result": [
+      "1. Config 초기화되고, 장치 Reboot된다.\n> 사용자, 로그는 그대로 유지 하고, 설정에 대해서 일부 항목은 유지 및 기본값으로 초기화 된다.",
+      "기본값으로 복원한다.\n1. Wiegand Config\n2. Triggered Action Config\n3. 장치잠금/통신잠금\n4. User ID Type\n> Station: Number\n5. 스케줄 Config\n6. 출입문 Config\n7. 출입그룹 Config\n8. 구역정보 Config\n9. 그룹매칭 Config",
+      "일부 항목들은 기본값 복원시 이전 설정값을 그대로 유지한다.\n1. 시간처리(Time Zone) \n2. 언어/리소스\n3. Blacklist\n4. User ID Type\n> Entry Device(XPASS/XPS2)\n5. 통신 보안\n6. Secure Tamper"
+    ]
+  }
+}

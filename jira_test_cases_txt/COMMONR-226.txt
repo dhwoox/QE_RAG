@@ -1,5 +1,27 @@
 ■ 이슈 키: COMMONR-226
 ■ 제목: Triggered & Action - Event
+■ 설명: Trigger&Action에서의 All Device Action 동작확인
+> Output(=Signal)
+> Alert Sound(=Buzzer, Sound)
+> Disable Device
+
+테스트시 동작확인 범위
+> Trigger가 Event일 때: door/lift/zone 관련 이벤트를 제외한 항목에 대해 Action 확인(FW에서는 door/lift/zone 관련이벤트를 triggerAction 으로 설정하는 것은 지원되지 않음)
+> Trigger가 Input일 때:  Master/Slave의 모든 Port에 대한 Action 확인
+: CS40의 경우 일반Input/Supervised Input/Aux Port
+
+테스트시 유의사항
+> Port는 중복으로 설정해서 하지않도록 한다.(ex. Door의 Sensor에 A 장치의 Input 0이 설정되어있는데 해당 Port를 Trigger의 Input으로 재설정할 경우 오동작)
+
+& Device의 Trigger&Action 설정값이 아래와 같이 변경되어야합니다.
+ - BioStar_DISCONNECTED -> 지원되야함
+ - Network_DISCONNECTED -> Xpass, XpassS2를 제외하고 지원되어야 함
+
+& Add New Signal 설정 값(예)
+ - Delay : 100 / Count : 1000 / On : 2 / Off : 2
+ - 임의의 Signal 설정에 대해서 확인 필요
+
+& Door & Floor Relay와의 중복 사용 금지
 ============================================================
 
 ■ 테스트 스텝

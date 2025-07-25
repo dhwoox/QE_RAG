@@ -1,0 +1,148 @@
+{
+  "id": "COMMONR-95",
+  "content": [
+    [
+      1,
+      "<장치간 RS485 연결>\n1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Open 버튼 클릭\n3. Open time대로 동작되는지 확인",
+      "Door 생성시 Open Time 확인\n: 3초/5초/10초/15초/30초/1분/3분/5분/10분/15분",
+      "Open 클릭시 Unlocked으로 동작되어야 하고, 설정된 Open time이 지나면 다시 Locked으로 동작되어야 한다."
+    ],
+    [
+      2,
+      "[Door 생성]\n1. Monitoring> Door Status> Open 버튼 클릭\n2. Biostar2 Log 확인",
+      "[BDP-518]",
+      "1. Door에 설정된 Open Time 만큼 Unlocked 으로 동작된다.\n> 국문: 관리자에 의한 출입문 개방요청\n> 영문: Door open request by operator"
+    ],
+    [
+      3,
+      "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Unlock 버튼 클릭> Door 상태 확인(Unlock)\n3. Release 버튼 클릭> Door 상태확인(Lock)\n4. 장치 Reboot\n5. 부팅완료 후 Door 상태확인",
+      "Door 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치",
+      "부팅완료 후 Lock 상태를 유지해야 한다.\n> 로그확인 및 부팅시  Relay 미발생 확인\n> Door unlock request by operator / Door unlocked\n> Door release request by operator / Door locked"
+    ],
+    [
+      4,
+      "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Lock 버튼 클릭> Door 상태 확인(Lock)\n3. Release 버튼 클릭> Door 상태확인\n4. 장치 Reboot\n5. 부팅완료 후 Door 상태확인",
+      "Door 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치",
+      "부팅완료 후 인증시 Unlock으로 동작후 Open Time이 지나면 Lock으로 동작되어야 한다.\n> 로그확인 및 부팅시 Relay 미발생, 인증 시 Relay 발생 확인\n> Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock으로 표시되어야 한다.\n> Door lock request by operator / Door locked\n> Door release request by operator / Door locked"
+    ],
+    [
+      5,
+      "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Unlock 버튼 클릭> Door 상태 확인(Unlock)",
+      "Door 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치",
+      "1. Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock 으로 표시되어야 한다.\n3. 로그 확인\n> Door unlock request by operator / Door unlocked"
+    ],
+    [
+      6,
+      "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Lock 버튼 클릭> Door 상태 확인",
+      "Door 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치",
+      "1. Door가 Lock 상태를 유지해야한다.\n2. Lock 로그만 발생한다.\n> Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock으로 표시되어야 한다.\n> Door lock request by operator / Door locked\n"
+    ],
+    [
+      7,
+      "[사용자 인증에 의한 시작: 비활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 상태확인 및 동작확인",
+      "사용자 인증에 의한 시작\nZone > Add Zone > Scheduled Unlock > Started by User Authentication ",
+      "1. Manual Lock으로 동작된다.\n> 로그상 Schedule Unlock, Manual Lock으로 표시\n2. 로그 확인\n> Scheduled unlock zone started(Door)\n> Door unlock request by schedule\n> Door unlocked"
+    ],
+    [
+      8,
+      "[사용자 인증에 의한 시작: 비활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 해제\n5. 동작확인",
+      "사용자 인증에 의한 시작\nZone > Add Zone > Scheduled Unlock > Started by User Authentication ",
+      "1. Schedule Unlock으로 동작된다."
+    ],
+    [
+      9,
+      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 상태확인 및 동작확인",
+      "사용자 인증에 의한 시작\nZone > Add Zone > Scheduled Unlock > Started by User Authentication ",
+      "1. Manual Lock으로 동작된다.\n> 로그상 Manual Lock으로 표시"
+    ],
+    [
+      10,
+      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 해제\n5. 동작확인",
+      "사용자 인증에 의한 시작\nZone > Add Zone > Scheduled Unlock > Started by User Authentication ",
+      "1. Relay Off로 유지된다.\n> 로그상 Normal로 표시"
+    ],
+    [
+      11,
+      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 해제\n5. 인증 후 동작확인",
+      "인증\n> Schedule Unlock Zone의 Access Group에 속하지 않은 사용자",
+      "1. Open Time만큼 Relay On되었다가 Relay Off로 동작한다."
+    ],
+    [
+      12,
+      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 해제\n5. 인증 후 동작확인",
+      "인증\n> Schedule Unlock Zone의 Access Group에 속한 사용자",
+      "1. Unlock을 유지한다."
+    ],
+    [
+      13,
+      "1. Schedule Lock으로 동작중\n2. Manual Unlock\n3. Master Reboot\n4. Door Status> 상태확인 및 동작확인",
+      "",
+      "1. Manual Unlock으로 동작된다.\n > 로그상 Schedule Lock, Manual Unlock으로 표시\n > 인증 시 Schedule Lock에 의해 Alarm 발생\n 2. 로그 확인\n > Scheduled lock zone started\n > Door lock request by schedule\n > Door locked"
+    ],
+    [
+      14,
+      "1. Schedule Lock으로 동작중\n2. Manual Unlock\n3. Master Reboot\n4. Door Status> 해제\n5. 동작확인",
+      "",
+      "1. Schedule Lock으로 동작된다."
+    ],
+    [
+      15,
+      "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Unlock 버튼 클릭> Door 상태 확인(Unlock)\n3. Master Reboot\n4. Door Status 확인 및 인증 후 동작 확인",
+      "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치",
+      "1. Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock으로 표시되어야 한다.\n> 경광등 연결하여 Relay On 동작 확인"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-95",
+    "description": "",
+    "test_step": [
+      "<장치간 RS485 연결>\n1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Open 버튼 클릭\n3. Open time대로 동작되는지 확인",
+      "[Door 생성]\n1. Monitoring> Door Status> Open 버튼 클릭\n2. Biostar2 Log 확인",
+      "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Unlock 버튼 클릭> Door 상태 확인(Unlock)\n3. Release 버튼 클릭> Door 상태확인(Lock)\n4. 장치 Reboot\n5. 부팅완료 후 Door 상태확인",
+      "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Lock 버튼 클릭> Door 상태 확인(Lock)\n3. Release 버튼 클릭> Door 상태확인\n4. 장치 Reboot\n5. 부팅완료 후 Door 상태확인",
+      "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Unlock 버튼 클릭> Door 상태 확인(Unlock)",
+      "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Lock 버튼 클릭> Door 상태 확인",
+      "[사용자 인증에 의한 시작: 비활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 상태확인 및 동작확인",
+      "[사용자 인증에 의한 시작: 비활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 해제\n5. 동작확인",
+      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 상태확인 및 동작확인",
+      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 해제\n5. 동작확인",
+      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 해제\n5. 인증 후 동작확인",
+      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 해제\n5. 인증 후 동작확인",
+      "1. Schedule Lock으로 동작중\n2. Manual Unlock\n3. Master Reboot\n4. Door Status> 상태확인 및 동작확인",
+      "1. Schedule Lock으로 동작중\n2. Manual Unlock\n3. Master Reboot\n4. Door Status> 해제\n5. 동작확인",
+      "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Unlock 버튼 클릭> Door 상태 확인(Unlock)\n3. Master Reboot\n4. Door Status 확인 및 인증 후 동작 확인"
+    ],
+    "data": [
+      "Door 생성시 Open Time 확인\n: 3초/5초/10초/15초/30초/1분/3분/5분/10분/15분",
+      "[BDP-518]",
+      "Door 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치",
+      "Door 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치",
+      "Door 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치",
+      "Door 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치",
+      "사용자 인증에 의한 시작\nZone > Add Zone > Scheduled Unlock > Started by User Authentication ",
+      "사용자 인증에 의한 시작\nZone > Add Zone > Scheduled Unlock > Started by User Authentication ",
+      "사용자 인증에 의한 시작\nZone > Add Zone > Scheduled Unlock > Started by User Authentication ",
+      "사용자 인증에 의한 시작\nZone > Add Zone > Scheduled Unlock > Started by User Authentication ",
+      "인증\n> Schedule Unlock Zone의 Access Group에 속하지 않은 사용자",
+      "인증\n> Schedule Unlock Zone의 Access Group에 속한 사용자",
+      "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치"
+    ],
+    "expected_result": [
+      "Open 클릭시 Unlocked으로 동작되어야 하고, 설정된 Open time이 지나면 다시 Locked으로 동작되어야 한다.",
+      "1. Door에 설정된 Open Time 만큼 Unlocked 으로 동작된다.\n> 국문: 관리자에 의한 출입문 개방요청\n> 영문: Door open request by operator",
+      "부팅완료 후 Lock 상태를 유지해야 한다.\n> 로그확인 및 부팅시  Relay 미발생 확인\n> Door unlock request by operator / Door unlocked\n> Door release request by operator / Door locked",
+      "부팅완료 후 인증시 Unlock으로 동작후 Open Time이 지나면 Lock으로 동작되어야 한다.\n> 로그확인 및 부팅시 Relay 미발생, 인증 시 Relay 발생 확인\n> Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock으로 표시되어야 한다.\n> Door lock request by operator / Door locked\n> Door release request by operator / Door locked",
+      "1. Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock 으로 표시되어야 한다.\n3. 로그 확인\n> Door unlock request by operator / Door unlocked",
+      "1. Door가 Lock 상태를 유지해야한다.\n2. Lock 로그만 발생한다.\n> Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock으로 표시되어야 한다.\n> Door lock request by operator / Door locked\n",
+      "1. Manual Lock으로 동작된다.\n> 로그상 Schedule Unlock, Manual Lock으로 표시\n2. 로그 확인\n> Scheduled unlock zone started(Door)\n> Door unlock request by schedule\n> Door unlocked",
+      "1. Schedule Unlock으로 동작된다.",
+      "1. Manual Lock으로 동작된다.\n> 로그상 Manual Lock으로 표시",
+      "1. Relay Off로 유지된다.\n> 로그상 Normal로 표시",
+      "1. Open Time만큼 Relay On되었다가 Relay Off로 동작한다.",
+      "1. Unlock을 유지한다.",
+      "1. Manual Unlock으로 동작된다.\n > 로그상 Schedule Lock, Manual Unlock으로 표시\n > 인증 시 Schedule Lock에 의해 Alarm 발생\n 2. 로그 확인\n > Scheduled lock zone started\n > Door lock request by schedule\n > Door locked",
+      "1. Schedule Lock으로 동작된다.",
+      "1. Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock으로 표시되어야 한다.\n> 경광등 연결하여 Relay On 동작 확인"
+    ]
+  }
+}

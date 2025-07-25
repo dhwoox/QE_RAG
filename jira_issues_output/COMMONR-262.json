@@ -1,0 +1,46 @@
+{
+  "id": "COMMONR-262",
+  "content": [
+    [
+      1,
+      "[Boot Console 확인 Case]\n1. 장치에 Console 연결\n2. 장치 Reboot 중??\n3. 스페이스 등 Key 입력\n4. 접근 유무 확인",
+      "",
+      "1. 부팅이 정상적으로 이루어져야 한다."
+    ],
+    [
+      2,
+      "[OS Console 확인 Case]\n1. 장치에 Console 연결\n2. 장치 Reboot\n3. 스페이스 등 Key 입력\n4. 접근 유무 확인\n\n",
+      "",
+      "1. 부팅완료 후 엔터 입력시 공백으로 출력되어야 한다.\n"
+    ],
+    [
+      3,
+      "1. DiagTool에서 장치 접속\n2. Log 출력유무 확인",
+      "",
+      "1. Log가 출력되지 않는다."
+    ],
+    [
+      4,
+      "1. DiagTool에서 장치접속\n2. Admin 권한 설정\n3. TCP/IP로 장치접속 시도",
+      "",
+      "1. 접속되지 않는다.\n> Station(BTS/BES 장치들) - Diag 연결은 되고, Log만 출력안됨"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-262",
+    "description": "",
+    "test_step": [
+      "[Boot Console 확인 Case]\n1. 장치에 Console 연결\n2. 장치 Reboot 중??\n3. 스페이스 등 Key 입력\n4. 접근 유무 확인",
+      "[OS Console 확인 Case]\n1. 장치에 Console 연결\n2. 장치 Reboot\n3. 스페이스 등 Key 입력\n4. 접근 유무 확인\n\n",
+      "1. DiagTool에서 장치 접속\n2. Log 출력유무 확인",
+      "1. DiagTool에서 장치접속\n2. Admin 권한 설정\n3. TCP/IP로 장치접속 시도"
+    ],
+    "data": [],
+    "expected_result": [
+      "1. 부팅이 정상적으로 이루어져야 한다.",
+      "1. 부팅완료 후 엔터 입력시 공백으로 출력되어야 한다.\n",
+      "1. Log가 출력되지 않는다.",
+      "1. 접속되지 않는다.\n> Station(BTS/BES 장치들) - Diag 연결은 되고, Log만 출력안됨"
+    ]
+  }
+}

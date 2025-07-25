@@ -1,0 +1,123 @@
+{
+  "id": "COMMONR-293",
+  "content": [
+    [
+      1,
+      "1. Device> 카드/QR 인증모드 설정\n2. 발급한 QR/바코드 인증 시도",
+      "Master,Slave 확인\n>카드 Only 모드\n>카드 + 지문 모드\n>카드 + PIN 모드\n>카드 + 지문/PIN 모드(Default)\n>카드 + 지문 + PIN 모드",
+      "1. 설정한 인증모드로 동작되어야 한다.\n> 인증 성공/실패에 따라 로그가 남는다.\n> 복합 인증의 경우 이를 Master에서 실행했을때, 매칭 수행이 끝나고 결과 팝업 창이 나타난 후나 취소 버튼, 인증타임아웃 등을 통해서 매칭이 취소된 후에 새로운 Credential이 입력될 수 있다.\n> 복합 인증의 경우 이를 Slave에 실행했을때, 인증 결과를 수신하거나 타임아웃이 발생한 후에는 새로운 Credential을 다시 입력할 수 있다.\n\n>Master에서 지원하지 않는 인증수단으로 Slave에서 인증시도 했을 경우, 인증 결과가 정상적으로 표기되어야 한다."
+    ],
+    [
+      2,
+      "1. Device> 카드/QR 인증모드 설정\n2. 발급한 QR/바코드 인증 시도",
+      "Master,Slave 확인\n카드 인증모드 미설정\n",
+      "1. Auth Mode Error가 노출된다. "
+    ],
+    [
+      3,
+      "1.장치상세페이지 > Advanced > T&A > T&A 모드 설정\n2.장치상세페이지 > QR/Barcode > Use QR/Barcode: enable\n3.Camera 센서에 모션 입력\n4.근태 아이콘 선택\n5.임의의 근태 선택 \n6.발급한 QR/바코드 입력",
+      "QR/Barcode Type\n>BioStar 2 QR, QR/Barcode\n\nT&A Mode: By User",
+      "1. 선택한 근태가 노출된다.\n- 카메라 프리뷰 영역 상단에 표시\n\n2. 선택한 근태가 노출되며 인증 성공한다."
+    ],
+    [
+      4,
+      "1.장치상세페이지 > Advanced > T&A > T&A 모드 설정\n2.장치상세페이지 > QR/Barcode > Use QR/Barcode\n3. 발급한 QR/바코드 입력",
+      "QR/Barcode Type\n>BioStar 2 QR, QR/Barcode\n\nT&A Mode: By Schedule, Last Choice, Fixed",
+      "1. 설정한 근태가 노출된다.\n- 카메라 프리뷰 영역 상단에 표시\n\n2. 설정한 근태가 노출되며 인증 성공한다."
+    ],
+    [
+      5,
+      "1. Door > Add Door > Dual Authentication > Device : Entry Device 설정 > Apply\n2. 입/퇴실용 장치에 발급한 QR/바코드 입력",
+      "Door 설정된 상태",
+      "1. 입실용 장치에서 이중인증이 동작된다.\n2. 퇴실용 장치에서는 이중인증이 동작하지 않는다.(인증시 일반 인증 성공이 발생한다.)"
+    ],
+    [
+      6,
+      "1. Door > Add Door > Dual Authentication > Device : Exit Device 설정 > Apply\n2. 입/퇴실용 장치에 발급한 QR/바코드 입력\n",
+      "Door 설정된 상태",
+      "1. 입실용 장치에서 이중인증이 동작하지 않는다.(인증시 일반 인증 성공이 발생한다.)\n2. 퇴실용 장치에서는 이중인증이 동작한다."
+    ],
+    [
+      7,
+      "<장치인증모드-Default 상태>\n\n1. User> Add User> 카드/QR,PIN,지문,얼굴 등록\n2. 개인인증모드 설정\n3. Include Device Default Authentication Mode 설정\n4. 등록한 사용자로 인증시도",
+      "Master, Slave 확인\n개인인증모드-카드(QR -> Card로 개인 인증 동작)\n>카드 Only 모드\n>카드 + 지문 모드\n>카드 + PIN 모드\n>카드 + 지문/PIN 모드(Default)\n>카드 + 지문 + PIN 모드\n\n인증\n> 카드/QR",
+      "1. 설정한 개인인증모드로 동작되어야 한다.\n2. 지문(얼굴)/ID 인증의 경우 장치인증모드로 동작되어야 한다.\n\n"
+    ],
+    [
+      8,
+      "<장치인증모드-Default 상태>\n\n1. User> Add User> 카드/QR,PIN,지문,얼굴 등록\n2. 개인인증모드 설정\n3. Exclude Device Default Authentication Mode 설정\n4. 등록한 사용자로 인증시도",
+      "Master, Slave 확인\n개인인증모드-카드(QR -> Card로 개인 인증 동작)\n>카드 Only 모드\n>카드 + 지문 모드\n>카드 + PIN 모드\n>카드 + 지문/PIN 모드(Default)\n>카드 + 지문 + PIN 모드\n인증\n> 카드/QR",
+      "1. 설정한 개인인증모드로 동작되어야 한다.\n2. 지문(얼굴)/ID 인증의 경우 인증실패된다.\n> Authentication Failed(Invalid Credential)\n"
+    ],
+    [
+      9,
+      "<BioStar에서 서버매칭: 사용 설정한 상태>\n1. Device> Device 선택> Device 상세 정보\n2. Server Matching: Active 설정\n3. 인증모드 설정\n4. 발급한 QR/바코드 인증시도",
+      "인증모드\n> 장치인증모드\n> 개인인증모드\n> 이중인증",
+      "1. 각 인증모드에 맞게 서버에 저장된 사용자와 매칭이 이루어져야 한다.\n> 인증 성공/실패에 따라 로그가 남는다."
+    ],
+    [
+      10,
+      "<BioStar에서 서버매칭: 사용 설정한 상태>\n1. Device> 장치 추가\n2. Master/Default 장치 상세정보> Server Matching: Activate 설정\n3. Master/Slave/Wiegand Reader 에 발급한 QR/바코드로 인증시도",
+      "장치추가\n> 단일장치\n> Master-Slave 연결장치\n> Master/Default-Wiegand Reader",
+      "1. 서버에 등록된 사용자와 매칭이 이루어져야 한다.\n2. Slave/Wiegand Reader 장치인 경우 Master의 Server Matching 설정을 따라가야 한다.\n> Slave/Wiegand Reader에 대해 (BioStar UI 상)서버매칭을 설정할 수 없어야 한다."
+    ],
+    [
+      11,
+      "1. Device> A사용자 전체관리자 설정\n2. 장치 메뉴 버튼 선택\n3. A 사용자로 메뉴 진입 시도(ID+PIN,QR)\n",
+      "A사용자\n>QR 크리덴셜 등록\n\n",
+      "1. 모든 메뉴에 대해 표시가 되어야 한다.\n2. Admin Menu 진입 로그를 확인한다.\n"
+    ],
+    [
+      12,
+      "<Wiegand Out 장치- 저장된 사용자에 QR이 등록된 상태>\n1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Wiegand Bypass: Enable 설정\n4. Wiegand Out 장치에 QR/바코드 인증시도",
+      "인증모드\n> 카드/QR인증모드\n",
+      "1. Wiegand Out인 경우 인증하지않고 카드ID를 내보내야 한다.\n2 Wiegand Out 장치에 카드입력시 \"띡\"소리만 출력되어야 한다.\n3 카드가 입력수단의 처음인 경우 카드입력시 다음의 인증수단을 입력하지 않더라도 바로 카드ID가 출력되어야 한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-293",
+    "description": "",
+    "test_step": [
+      "1. Device> 카드/QR 인증모드 설정\n2. 발급한 QR/바코드 인증 시도",
+      "1. Device> 카드/QR 인증모드 설정\n2. 발급한 QR/바코드 인증 시도",
+      "1.장치상세페이지 > Advanced > T&A > T&A 모드 설정\n2.장치상세페이지 > QR/Barcode > Use QR/Barcode: enable\n3.Camera 센서에 모션 입력\n4.근태 아이콘 선택\n5.임의의 근태 선택 \n6.발급한 QR/바코드 입력",
+      "1.장치상세페이지 > Advanced > T&A > T&A 모드 설정\n2.장치상세페이지 > QR/Barcode > Use QR/Barcode\n3. 발급한 QR/바코드 입력",
+      "1. Door > Add Door > Dual Authentication > Device : Entry Device 설정 > Apply\n2. 입/퇴실용 장치에 발급한 QR/바코드 입력",
+      "1. Door > Add Door > Dual Authentication > Device : Exit Device 설정 > Apply\n2. 입/퇴실용 장치에 발급한 QR/바코드 입력\n",
+      "<장치인증모드-Default 상태>\n\n1. User> Add User> 카드/QR,PIN,지문,얼굴 등록\n2. 개인인증모드 설정\n3. Include Device Default Authentication Mode 설정\n4. 등록한 사용자로 인증시도",
+      "<장치인증모드-Default 상태>\n\n1. User> Add User> 카드/QR,PIN,지문,얼굴 등록\n2. 개인인증모드 설정\n3. Exclude Device Default Authentication Mode 설정\n4. 등록한 사용자로 인증시도",
+      "<BioStar에서 서버매칭: 사용 설정한 상태>\n1. Device> Device 선택> Device 상세 정보\n2. Server Matching: Active 설정\n3. 인증모드 설정\n4. 발급한 QR/바코드 인증시도",
+      "<BioStar에서 서버매칭: 사용 설정한 상태>\n1. Device> 장치 추가\n2. Master/Default 장치 상세정보> Server Matching: Activate 설정\n3. Master/Slave/Wiegand Reader 에 발급한 QR/바코드로 인증시도",
+      "1. Device> A사용자 전체관리자 설정\n2. 장치 메뉴 버튼 선택\n3. A 사용자로 메뉴 진입 시도(ID+PIN,QR)\n",
+      "<Wiegand Out 장치- 저장된 사용자에 QR이 등록된 상태>\n1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Wiegand Bypass: Enable 설정\n4. Wiegand Out 장치에 QR/바코드 인증시도"
+    ],
+    "data": [
+      "Master,Slave 확인\n>카드 Only 모드\n>카드 + 지문 모드\n>카드 + PIN 모드\n>카드 + 지문/PIN 모드(Default)\n>카드 + 지문 + PIN 모드",
+      "Master,Slave 확인\n카드 인증모드 미설정\n",
+      "QR/Barcode Type\n>BioStar 2 QR, QR/Barcode\n\nT&A Mode: By User",
+      "QR/Barcode Type\n>BioStar 2 QR, QR/Barcode\n\nT&A Mode: By Schedule, Last Choice, Fixed",
+      "Door 설정된 상태",
+      "Door 설정된 상태",
+      "Master, Slave 확인\n개인인증모드-카드(QR -> Card로 개인 인증 동작)\n>카드 Only 모드\n>카드 + 지문 모드\n>카드 + PIN 모드\n>카드 + 지문/PIN 모드(Default)\n>카드 + 지문 + PIN 모드\n\n인증\n> 카드/QR",
+      "Master, Slave 확인\n개인인증모드-카드(QR -> Card로 개인 인증 동작)\n>카드 Only 모드\n>카드 + 지문 모드\n>카드 + PIN 모드\n>카드 + 지문/PIN 모드(Default)\n>카드 + 지문 + PIN 모드\n인증\n> 카드/QR",
+      "인증모드\n> 장치인증모드\n> 개인인증모드\n> 이중인증",
+      "장치추가\n> 단일장치\n> Master-Slave 연결장치\n> Master/Default-Wiegand Reader",
+      "A사용자\n>QR 크리덴셜 등록\n\n",
+      "인증모드\n> 카드/QR인증모드\n"
+    ],
+    "expected_result": [
+      "1. 설정한 인증모드로 동작되어야 한다.\n> 인증 성공/실패에 따라 로그가 남는다.\n> 복합 인증의 경우 이를 Master에서 실행했을때, 매칭 수행이 끝나고 결과 팝업 창이 나타난 후나 취소 버튼, 인증타임아웃 등을 통해서 매칭이 취소된 후에 새로운 Credential이 입력될 수 있다.\n> 복합 인증의 경우 이를 Slave에 실행했을때, 인증 결과를 수신하거나 타임아웃이 발생한 후에는 새로운 Credential을 다시 입력할 수 있다.\n\n>Master에서 지원하지 않는 인증수단으로 Slave에서 인증시도 했을 경우, 인증 결과가 정상적으로 표기되어야 한다.",
+      "1. Auth Mode Error가 노출된다. ",
+      "1. 선택한 근태가 노출된다.\n- 카메라 프리뷰 영역 상단에 표시\n\n2. 선택한 근태가 노출되며 인증 성공한다.",
+      "1. 설정한 근태가 노출된다.\n- 카메라 프리뷰 영역 상단에 표시\n\n2. 설정한 근태가 노출되며 인증 성공한다.",
+      "1. 입실용 장치에서 이중인증이 동작된다.\n2. 퇴실용 장치에서는 이중인증이 동작하지 않는다.(인증시 일반 인증 성공이 발생한다.)",
+      "1. 입실용 장치에서 이중인증이 동작하지 않는다.(인증시 일반 인증 성공이 발생한다.)\n2. 퇴실용 장치에서는 이중인증이 동작한다.",
+      "1. 설정한 개인인증모드로 동작되어야 한다.\n2. 지문(얼굴)/ID 인증의 경우 장치인증모드로 동작되어야 한다.\n\n",
+      "1. 설정한 개인인증모드로 동작되어야 한다.\n2. 지문(얼굴)/ID 인증의 경우 인증실패된다.\n> Authentication Failed(Invalid Credential)\n",
+      "1. 각 인증모드에 맞게 서버에 저장된 사용자와 매칭이 이루어져야 한다.\n> 인증 성공/실패에 따라 로그가 남는다.",
+      "1. 서버에 등록된 사용자와 매칭이 이루어져야 한다.\n2. Slave/Wiegand Reader 장치인 경우 Master의 Server Matching 설정을 따라가야 한다.\n> Slave/Wiegand Reader에 대해 (BioStar UI 상)서버매칭을 설정할 수 없어야 한다.",
+      "1. 모든 메뉴에 대해 표시가 되어야 한다.\n2. Admin Menu 진입 로그를 확인한다.\n",
+      "1. Wiegand Out인 경우 인증하지않고 카드ID를 내보내야 한다.\n2 Wiegand Out 장치에 카드입력시 \"띡\"소리만 출력되어야 한다.\n3 카드가 입력수단의 처음인 경우 카드입력시 다음의 인증수단을 입력하지 않더라도 바로 카드ID가 출력되어야 한다."
+    ]
+  }
+}

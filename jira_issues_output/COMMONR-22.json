@@ -1,0 +1,78 @@
+{
+  "id": "COMMONR-22",
+  "content": [
+    [
+      1,
+      "1. USER > User List > User 선택 > User 상세 정보 > Information\n2. 이름 변경 > Apply\n3. 장치로 편집한 사용자 전송(Overwrite)",
+      "[BioStar]\n1. 최대 48자까지 입력 가능\n2. 한글, 영문, 숫자, 특문 입력 가능\n\n※ BioStar에서 UI없는 모델에게 Name을 전송안함_확인시 AutoTest Tool 이용",
+      "1. 장치에서 BioStar 를 통해 변경한 이름이 정상적으로 표시되어야 한다.\n> Name : 특수 문자 중 \\ / : * ? \" ' `< > | .는 입력 불가(장치 별 표시 문자 상이)"
+    ],
+    [
+      2,
+      "1. USER > User List > User 선택 > User 상세 정보 > Information\n2. 프로필 사진 변경> Apply\n3. 장치로 편집한 사용자 전송(Overwrite)",
+      "[BioStar]\n1. 장치에서 사용자의 프로필 사진을 지원할 경우\n(UI 지원 시료)",
+      "1. 장치에서 인증 성공 시 BioStar 를 통해 변경한 프로필 사진이 정상적으로 표시되어야 한다.\n= 추후 재확인"
+    ],
+    [
+      3,
+      "1. USER > User List > User 선택 > User 상세 정보 > Information \n2. 부가정보 변경 > Apply\n3. 장치로 편집한 사용자 전송(Overwrite)",
+      "[BioStar]\n1. 부가정보 : 그룹, 기간, 권한, 로그인ID, 암호, 이메일, 전화번호, 상태, 출입그룹",
+      "1. 장치에서 BioStar 를 통해 변경한 부가정보 중 기간, 출입 그룹이 정상적으로 표시되어야 한다."
+    ],
+    [
+      4,
+      "1. USER > User List > User 선택 > User 상세 정보 > Credential\n2. PIN 변경 > Apply\n3. 장치로 편집한 사용자 전송(Overwrite)",
+      "[BioStar]\n1. 1~16자까지 입력 가능\n2. 최소 4자 이상 입력",
+      "1. 장치에서 BioStar 를 통해 변경된 PIN  이 정상적으로 표시되어야 한다.\n> 입력된 PIN 이 ●●●● 로 표시되어야 한다.\n> 변경한 PIN 으로 인증되어야 한다."
+    ],
+    [
+      5,
+      "1. USER > User List > User 선택 > User 상세 정보 > Credential\n2. 지문 변경/추가/삭제 > Apply\n3. 장치로 편집한 사용자 전송(Overwrite)",
+      "[BioStar]\n1. 인당 최대 10지 입력 가능",
+      "1. 장치에서 BioStar 를 통해 변경/추가/삭제한 지문(수)이 정상적으로 표시되어야 한다.\n> 장치에서 변경/추가한 지문으로 인증되어야 한다.\n> 최대 지문 입력수(10지) 확인"
+    ],
+    [
+      6,
+      "1. USER > User List > User 선택 > User 상세 정보 > Credential\n2. 카드 변경/추가/삭제 > Apply\n3. 장치로 편집한 사용자 전송(Overwrite)",
+      "[BioStar]\n1. 인당 최대 8장 입력 가능\n2. CSN (Mifare/EM)\n3. Wiegand (HID Prox/iClass/iClass SE)",
+      "1. 장치에서 BioStar 를 통해 변경/추가/삭제한 카드(수)가 정상적으로 표시되어야 한다.\n> 장치에서 변경/추가한 카드로 인증되어야 한다.\n> 최대 카드 입력수(8장) 확인"
+    ],
+    [
+      7,
+      "1. USER > User List > User 선택 > User 상세 정보 > Credential\n2. 얼굴 변경/추가/삭제 > Apply\n3. 장치로 편집한 사용자 전송(Overwrite)",
+      "[BioStar]\n1. 해당 기능 지원하는 장치만 선택 가능\n2. 인당 등록 가능 Max 상이\n> 최대 5개 입력 가능 - FS2/FL\n> 최대 2개 입력 가능 - F2/BS3/W3",
+      "1. 장치에서 BioStar 를 통해 변경/추가/삭제한 얼굴(수)이 정상적으로 표시되어야 한다.\n> 장치에서 변경한 얼굴로 인증되어야 한다.\n(off) 동일 얼굴(1개)이 여러 명 사용자에 등록된 경우 인증 실패 발생\n(on) 동일 얼굴(5개)이 1명의 사용자에 등록된 경우 인증 성공 발생\n> Image Upload에 의해 변경된 얼굴로 인증되어야 한다.\n2. Quick Enrollment 설정 유무에 따라 1단계, 3단계로 얼굴 등록이 가능하다.\n> Enable : 1단계로 3D Guide 영상 상하 표시\n> Disable : 3단계로 3D Guide 영상 표시"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-22",
+    "description": "",
+    "test_step": [
+      "1. USER > User List > User 선택 > User 상세 정보 > Information\n2. 이름 변경 > Apply\n3. 장치로 편집한 사용자 전송(Overwrite)",
+      "1. USER > User List > User 선택 > User 상세 정보 > Information\n2. 프로필 사진 변경> Apply\n3. 장치로 편집한 사용자 전송(Overwrite)",
+      "1. USER > User List > User 선택 > User 상세 정보 > Information \n2. 부가정보 변경 > Apply\n3. 장치로 편집한 사용자 전송(Overwrite)",
+      "1. USER > User List > User 선택 > User 상세 정보 > Credential\n2. PIN 변경 > Apply\n3. 장치로 편집한 사용자 전송(Overwrite)",
+      "1. USER > User List > User 선택 > User 상세 정보 > Credential\n2. 지문 변경/추가/삭제 > Apply\n3. 장치로 편집한 사용자 전송(Overwrite)",
+      "1. USER > User List > User 선택 > User 상세 정보 > Credential\n2. 카드 변경/추가/삭제 > Apply\n3. 장치로 편집한 사용자 전송(Overwrite)",
+      "1. USER > User List > User 선택 > User 상세 정보 > Credential\n2. 얼굴 변경/추가/삭제 > Apply\n3. 장치로 편집한 사용자 전송(Overwrite)"
+    ],
+    "data": [
+      "[BioStar]\n1. 최대 48자까지 입력 가능\n2. 한글, 영문, 숫자, 특문 입력 가능\n\n※ BioStar에서 UI없는 모델에게 Name을 전송안함_확인시 AutoTest Tool 이용",
+      "[BioStar]\n1. 장치에서 사용자의 프로필 사진을 지원할 경우\n(UI 지원 시료)",
+      "[BioStar]\n1. 부가정보 : 그룹, 기간, 권한, 로그인ID, 암호, 이메일, 전화번호, 상태, 출입그룹",
+      "[BioStar]\n1. 1~16자까지 입력 가능\n2. 최소 4자 이상 입력",
+      "[BioStar]\n1. 인당 최대 10지 입력 가능",
+      "[BioStar]\n1. 인당 최대 8장 입력 가능\n2. CSN (Mifare/EM)\n3. Wiegand (HID Prox/iClass/iClass SE)",
+      "[BioStar]\n1. 해당 기능 지원하는 장치만 선택 가능\n2. 인당 등록 가능 Max 상이\n> 최대 5개 입력 가능 - FS2/FL\n> 최대 2개 입력 가능 - F2/BS3/W3"
+    ],
+    "expected_result": [
+      "1. 장치에서 BioStar 를 통해 변경한 이름이 정상적으로 표시되어야 한다.\n> Name : 특수 문자 중 \\ / : * ? \" ' `< > | .는 입력 불가(장치 별 표시 문자 상이)",
+      "1. 장치에서 인증 성공 시 BioStar 를 통해 변경한 프로필 사진이 정상적으로 표시되어야 한다.\n= 추후 재확인",
+      "1. 장치에서 BioStar 를 통해 변경한 부가정보 중 기간, 출입 그룹이 정상적으로 표시되어야 한다.",
+      "1. 장치에서 BioStar 를 통해 변경된 PIN  이 정상적으로 표시되어야 한다.\n> 입력된 PIN 이 ●●●● 로 표시되어야 한다.\n> 변경한 PIN 으로 인증되어야 한다.",
+      "1. 장치에서 BioStar 를 통해 변경/추가/삭제한 지문(수)이 정상적으로 표시되어야 한다.\n> 장치에서 변경/추가한 지문으로 인증되어야 한다.\n> 최대 지문 입력수(10지) 확인",
+      "1. 장치에서 BioStar 를 통해 변경/추가/삭제한 카드(수)가 정상적으로 표시되어야 한다.\n> 장치에서 변경/추가한 카드로 인증되어야 한다.\n> 최대 카드 입력수(8장) 확인",
+      "1. 장치에서 BioStar 를 통해 변경/추가/삭제한 얼굴(수)이 정상적으로 표시되어야 한다.\n> 장치에서 변경한 얼굴로 인증되어야 한다.\n(off) 동일 얼굴(1개)이 여러 명 사용자에 등록된 경우 인증 실패 발생\n(on) 동일 얼굴(5개)이 1명의 사용자에 등록된 경우 인증 성공 발생\n> Image Upload에 의해 변경된 얼굴로 인증되어야 한다.\n2. Quick Enrollment 설정 유무에 따라 1단계, 3단계로 얼굴 등록이 가능하다.\n> Enable : 1단계로 3D Guide 영상 상하 표시\n> Disable : 3단계로 3D Guide 영상 표시"
+    ]
+  }
+}

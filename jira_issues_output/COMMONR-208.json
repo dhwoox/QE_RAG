@@ -1,0 +1,114 @@
+{
+  "id": "COMMONR-208",
+  "content": [
+    [
+      1,
+      "1. Wiegand Reader 선택> Device Func> Wiegand Device> Buzzer 및 LED 설정\n2. 인증성공이 되도록 인증시도\n3. 인증실패가 되도록 인증시도",
+      "Master(=진행모델)-DM20-3rd Party Reader 연결된 상태\n> 3rd Party Reader의 Buzzer/LED Cable을 DM20의 TTL Out Port에 연결",
+      "1. 인증성공시 3rd Party Reader의 LED가 녹색으로 1초간 출력된다.\n2. 인증실패시 부저 설정한 Out Port에서 부저음이 발생된다."
+    ],
+    [
+      2,
+      "1. 사용자에 지문등록시 Slave로 연결된 지문장치 선택해 등록시도",
+      "Master\n> Entry Device",
+      "1. Entry V2장치가 Master로 설정된 경우 Master Version에 따라 Slave로 일반지문등록 지원 및 미지원으로 동작 한다.\n> Entry에서도 Master(Xpass 제외) Version에 따라 Slave에서 일반 지문 등록 지원 \n> ENTRYIIDII-477"
+    ],
+    [
+      3,
+      "1. 사용자에 지문등록시 Slave로 연결된 지문장치 선택해 등록시도",
+      "Slave로 연결된 지문장치\n> BS2 1.4 이상버전\n> BSA2 1.3 이상버전\n> L2 1.2.2 이상버전\n> W2 1.1.2 이상버전\n> FS2 1.0.0 이상버전\n> CS-40 1.0.0 이상버전\n> BSP2 1.0.0 이상버전",
+      "1. Slave일 때 일반지문 등록을 지원한다."
+    ],
+    [
+      4,
+      "1. Master 장치 선택> Device Func> FingerPrint\n2. Slave 장치 선택> Advanced Enrollment 설정> 장치적용\n3. UserInfo> Slave 장치 선택\n4. 지문추가> Quality: Low(20)로 설정> 캡쳐> 지문을 양옆으로 치우쳐 등록 시도",
+      "Advanced Enrollment: 사용",
+      "1. 설정된 Scan Timeout동안 일정 품질이상의 지문 Scan될때까지 계속 스캔을 시도한다."
+    ],
+    [
+      5,
+      "1. Master 장치 선택> Device Func> FingerPrint\n2. Slave 장치 선택> Advanced Enrollment 설정> 장치적용\n3. UserInfo> Slave 장치 선택\n4. 지문추가> Quality: Low(20)로 설정> 캡쳐> 지문을 양옆으로 치우쳐 등록 시도",
+      "Advanced Enrollment: 사용안함",
+      "1. 입력받은 지문에 대해 등록이 된다."
+    ],
+    [
+      6,
+      "1. BioStar2> Device> CS40추가> Slave 추가\n2. 서버와 Master/Slave 장치의 전원 모두 OFF\n3. 장치전원 ON> 장치 부팅 후 서버 ON\n4. Client 실행> 장치연결상태 확인",
+      "장치전원ON: Master/Slave 일부 장치(Slave로 연결된 일부 장치는 전원OFF 유지)",
+      "1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다."
+    ],
+    [
+      7,
+      "1. BioStar2> Setting> Server> Log Upload 설정\n2. Master 장치에서 Direct모드 설정\n3. Device> CS40 추가> Slave 추가\n4. 추가된 Slave 장치 연결상태 확인",
+      "Log Upload: Automatic",
+      "1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다."
+    ],
+    [
+      8,
+      "1. BioStar2> Setting> Server> Log Upload 설정\n2. Master 장치에서 Direct모드 설정\n3. Device> CS40 추가> Slave 추가\n4. 추가된 Slave 장치 연결상태 확인",
+      "Log Upload: Manual",
+      "1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다."
+    ],
+    [
+      9,
+      "1. BioStar2> Setting> Server> Log Upload 설정\n2. Master 장치에서 Server모드 설정\n3. Client 실행> Device> Waiting Device에 표시된 Master 장치 추가> Slave 추가\n4. 추가된 Slave 장치의 연결상태 확인",
+      "Log Upload: Automatic",
+      "1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다."
+    ],
+    [
+      10,
+      "1. BioStar2> Setting> Server> Log Upload 설정\n2. Master 장치에서 Server모드 설정\n3. Client 실행> Device> Waiting Device에 표시된 Master 장치 추가> Slave 추가\n4. 추가된 Slave 장치의 연결상태 확인",
+      "Log Upload: Manual",
+      "1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다."
+    ],
+    [
+      11,
+      "1. AutoTest Tool 실행\n2. 각 항목에 대해 유효하지 않은 값에 대해 설정\n3. 설정된 값 확인",
+      "확인항목(Master/Slave/Wiegand)\n: Msg.Timeout\n: Scan Timeout\n: Auth Timeout\n: Matching Timeout",
+      "1. 유효하지 않은 값이 저장시도된 경우 기본값으로 설정되어야 한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-208",
+    "description": "",
+    "test_step": [
+      "1. Wiegand Reader 선택> Device Func> Wiegand Device> Buzzer 및 LED 설정\n2. 인증성공이 되도록 인증시도\n3. 인증실패가 되도록 인증시도",
+      "1. 사용자에 지문등록시 Slave로 연결된 지문장치 선택해 등록시도",
+      "1. 사용자에 지문등록시 Slave로 연결된 지문장치 선택해 등록시도",
+      "1. Master 장치 선택> Device Func> FingerPrint\n2. Slave 장치 선택> Advanced Enrollment 설정> 장치적용\n3. UserInfo> Slave 장치 선택\n4. 지문추가> Quality: Low(20)로 설정> 캡쳐> 지문을 양옆으로 치우쳐 등록 시도",
+      "1. Master 장치 선택> Device Func> FingerPrint\n2. Slave 장치 선택> Advanced Enrollment 설정> 장치적용\n3. UserInfo> Slave 장치 선택\n4. 지문추가> Quality: Low(20)로 설정> 캡쳐> 지문을 양옆으로 치우쳐 등록 시도",
+      "1. BioStar2> Device> CS40추가> Slave 추가\n2. 서버와 Master/Slave 장치의 전원 모두 OFF\n3. 장치전원 ON> 장치 부팅 후 서버 ON\n4. Client 실행> 장치연결상태 확인",
+      "1. BioStar2> Setting> Server> Log Upload 설정\n2. Master 장치에서 Direct모드 설정\n3. Device> CS40 추가> Slave 추가\n4. 추가된 Slave 장치 연결상태 확인",
+      "1. BioStar2> Setting> Server> Log Upload 설정\n2. Master 장치에서 Direct모드 설정\n3. Device> CS40 추가> Slave 추가\n4. 추가된 Slave 장치 연결상태 확인",
+      "1. BioStar2> Setting> Server> Log Upload 설정\n2. Master 장치에서 Server모드 설정\n3. Client 실행> Device> Waiting Device에 표시된 Master 장치 추가> Slave 추가\n4. 추가된 Slave 장치의 연결상태 확인",
+      "1. BioStar2> Setting> Server> Log Upload 설정\n2. Master 장치에서 Server모드 설정\n3. Client 실행> Device> Waiting Device에 표시된 Master 장치 추가> Slave 추가\n4. 추가된 Slave 장치의 연결상태 확인",
+      "1. AutoTest Tool 실행\n2. 각 항목에 대해 유효하지 않은 값에 대해 설정\n3. 설정된 값 확인"
+    ],
+    "data": [
+      "Master(=진행모델)-DM20-3rd Party Reader 연결된 상태\n> 3rd Party Reader의 Buzzer/LED Cable을 DM20의 TTL Out Port에 연결",
+      "Master\n> Entry Device",
+      "Slave로 연결된 지문장치\n> BS2 1.4 이상버전\n> BSA2 1.3 이상버전\n> L2 1.2.2 이상버전\n> W2 1.1.2 이상버전\n> FS2 1.0.0 이상버전\n> CS-40 1.0.0 이상버전\n> BSP2 1.0.0 이상버전",
+      "Advanced Enrollment: 사용",
+      "Advanced Enrollment: 사용안함",
+      "장치전원ON: Master/Slave 일부 장치(Slave로 연결된 일부 장치는 전원OFF 유지)",
+      "Log Upload: Automatic",
+      "Log Upload: Manual",
+      "Log Upload: Automatic",
+      "Log Upload: Manual",
+      "확인항목(Master/Slave/Wiegand)\n: Msg.Timeout\n: Scan Timeout\n: Auth Timeout\n: Matching Timeout"
+    ],
+    "expected_result": [
+      "1. 인증성공시 3rd Party Reader의 LED가 녹색으로 1초간 출력된다.\n2. 인증실패시 부저 설정한 Out Port에서 부저음이 발생된다.",
+      "1. Entry V2장치가 Master로 설정된 경우 Master Version에 따라 Slave로 일반지문등록 지원 및 미지원으로 동작 한다.\n> Entry에서도 Master(Xpass 제외) Version에 따라 Slave에서 일반 지문 등록 지원 \n> ENTRYIIDII-477",
+      "1. Slave일 때 일반지문 등록을 지원한다.",
+      "1. 설정된 Scan Timeout동안 일정 품질이상의 지문 Scan될때까지 계속 스캔을 시도한다.",
+      "1. 입력받은 지문에 대해 등록이 된다.",
+      "1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다.",
+      "1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다.",
+      "1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다.",
+      "1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다.",
+      "1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다.",
+      "1. 유효하지 않은 값이 저장시도된 경우 기본값으로 설정되어야 한다."
+    ]
+  }
+}

@@ -1,5 +1,37 @@
 ■ 이슈 키: COMMONR-324
 ■ 제목: Masking 을 이용한 사용자 정보의 선별적인 업데이트
+■ 설명: [http://192.168.1.4:8001/browse/BDP-561]
+
+수정된 사용자 정보에 대해 Masking 하여 업데이트 할 수 있도록 하는 기능.
+
+선별적 업데이트 항목
+ > BS2_USER_MASK_DATA= 0x0001
+ : 모든 크리덴셜에 대한 카운트 정보, Disable 여부, 인증그룹(그룹매칭) 정보
+
+> BS2_USER_MASK_SETTING= 0x0002
+ : 유효기간 정보, 개인인증모드(기본), Security Level
+
+> BS2_USER_MASK_NAME= 0x0004
+ > BS2_USER_MASK_PHOTO= 0x0008
+ > BS2_USER_MASK_PIN= 0x0010
+ > BS2_USER_MASK_CARD= 0x0020
+ > BS2_USER_MASK_FINGER= 0x0040
+ > BS2_USER_MASK_FACE= 0x0080
+ > BS2_USER_MASK_ACCESS_GROUP= 0x0100
+ > BS2_USER_MASK_JOB= 0x0200 (바이오스타 사용 안함)
+ > BS2_USER_MASK_PHRASE= 0x0400 (바이오스타 사용 안함)
+ > BS2_USER_MASK_FACE_EX= 0x0800
+ > BS2_USER_MASK_SETTING_EX= 0x1000
+ : 개인인증모드(확장)
+
+ 
+
+테스트 환경 구성
+> 서버에는 Station 계열 제품, Entry 계열 제품 모두 연결되어진 상태에서 진행
+> Entery 계열 제품이 Master인 경우 Slave로 Station 계열 제품 연결한 상태로 진행(ex. Slave - L2 & N2)
+
+참고. QR은 Card Type으로 보고 서버에서 장치로 내려줌.(바이오스타 팝업으로도 Card/QR 최대 8장까지 입력가능이라고 노티)
+참고. Visual Face는 F2만 지원(2021/11 기준)
 ============================================================
 
 ■ 테스트 스텝

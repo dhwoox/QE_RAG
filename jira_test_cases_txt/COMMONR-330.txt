@@ -1,5 +1,52 @@
 ■ 이슈 키: COMMONR-330
 ■ 제목: [BDP-856] Wiegand Out 후 일정 시간 내 반복적인 인풋 신호를 무시하기
+■ 설명: https://jira.suprema.co.kr/browse/BDP-856
+ https://jira.suprema.co.kr/browse/BDP-877
+
+개요
+ > 타사 컨트롤러와 우리 제품을 위겐드 연동할 때, 인증에 대한 피드백 신호를 반복적으로 보내오는 경우가 있어서 이를 무시하는 처리
+
+요구사항
+ > Wiegand Out 후 피드백에 대한 Input 신호를 일정 시간 내 반복적으로 보내오는 경우 장치는 이를 무시한다.
+ > Input 별로 신호를 무시하는 시간을 초 단위로 설정할 수 있다.
+ - 설정된 시간 만큼 반복적으로 들어오는 신호를 무시한다.
+ - 0초로 설정할 경우, 반복적인 신호를 무시하지 않는다.
+ - 기본 값 : 0초(설정범위: 0 ~ 10,000)
+ - 설정 이름
+ ** 국문 : 반복 신호 무시 시간(ms)
+ ** 영문 : Ignore Repeated Signals Duration(ms)
+
+ - 해당 설정의 위치는 장치 트리거앤액션 화면에서 트리거 설정 영역의 Input 하위 설정 중 Schedule 다음으로 위치시킨다.
+ - 설정 범위를 초과하여 저장하는 경우, 실패 처리하고 아래의 에러 팝업 메시지를 띄운다.
+ ** 메시지
+ *** 국문 : 유효하지 않은 값. \{설정명}은 \{설정최소값}~\{설정최대값} 사이의 값으로 설정할 수 있습니다.
+ *** 영문 : Invalid Value. \{설정명} can be set between \{설정최소값} and \{설정최대값}.
+
+ - 참고
+ ** Gallagher 커스텀에서 5초로 정함(CISF-2373)
+ ** Paxton 커스텀에서는 Wiegand Out 후 Auth Timeout 안에서 하나의 신호만 처리, 나머지는 무시(CISF-1867)
+
+> Capability 추가
+
+- 동작
+1. Wiegand out(리더)에서 Wiegand In(컨트롤러)로 위겐드 신호 보냄(카드값)
+2. Wiegand In(컨트롤러)가 받은 카드값으로 매칭
+3. 매칭 결과를 컨트롤러가 리더에게 TTL 신호로 보냄(가령, Wiegand out 장치 input 0 은 성공, input 1 은 실패로 장치 트리거앤 액션 설정)
+ 
+- 환경 
+Wiegand In(컨트롤러) - Wiegand out(리더) 설정
+-> Wiegand In - Relay port(RLY NO, RLY NC, RLY COM) 와 Wiegand out - Input port(TTL 0,TTL 1,TTL GND) 연결
+ Wiegand In(컨트롤러) Trigger & Action 설정
+-> ex. Event - Wiegand Reader, 1:1 인증성공(카드) ,1:1 인증실패(카드) // Action - ouput Relay 0 
+ Wiegand out(리더) Trigger & Action 설정
+-> Event - Input0 or 1 / NO, NC / 반복 신호 무시 시간 // Action - Function 
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
++ 추가 개발
+BDP-1066 Wiegand Out 후 일정 시간 내 반복적인 인풋 신호를 무시할 때 이벤트도 남기지 않기
+=>BDP-856 을 통해 구현한 기능인 Wiegand Out 후 일정 시간 내 반복적인 인풋 신호 무시하는 트리거앤액션을 설정한 때, 무시된 인풋들에 대해서는 Input Detected 이벤트를 남기지 않는다.
+
 ============================================================
 
 ■ 테스트 스텝

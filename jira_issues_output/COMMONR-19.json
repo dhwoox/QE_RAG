@@ -1,0 +1,167 @@
+{
+  "id": "COMMONR-19",
+  "content": [
+    [
+      1,
+      "FirmWare Upgrade을 지원한다.\n1. DEVICE> Device List> Device 선택> FirmWare Upgrade[기능 버튼 내에서 선택]\n2. DEVICE> Device 선택> Device 상세 정보 화면> FirmWare Upgrade",
+      "[BioStar]\n1. Device 선택\n > TCP로 연결된 Device 1개\n > TCP로 연결된 동일 Device 2개 이상\n2. 각 장치별 최신 버전의 FirmWare을 선택한다.\n||Entry 계열||Station 계열||IO Module 계열||\n|BEPx|BioStation 2|DM 20|\n|BEWx|BioStation A2|SIO 2|\n|BLx|BioStation L2|OM 120|\n|XPx|FaceStation 2|\n|XPS2M|CoreStation 40|\n|W2|BoiLite N2|\n|P2|FaceLite|\n|R2|\n|XP2|",
+      "1. 각 장치별 최신 FirmWare List가 팝업된다.\n2. 해당 FirmWare로 Upgrade를 진행한다.\n3. 최신버전으로 FirmWare Upgrade가 된다.\n> 장치에서 재부팅 팝업 확인\n> 장치 재부팅 후 업그레이드 완료시 장치 상세정보의 Version 확인\n> Upgrade Log 확인"
+    ],
+    [
+      2,
+      "[UI지원 모델]\n\nResource Upgrade을 지원한다.\n1. DEVICE> Device 선택> Device 상세 정보 화면> Display/Sound> Language> Update Resource",
+      "[BioStar]\n1. 언어를 Korean, English, Custom으로 각각 지정한다.\n2. 각 장치별 최신 버전의 Resource를 선택한다.\n||Station 계열||Entry 계열||\n|BioStation 2|BLx|\n|BioStation A2|\n|BioStation L2|\n|FaceStation 2|\n|BioLite N2|\n|FaceLite|\n\n(on) Multilingual Version Upgrade\n> RND 배포 요청 예정(기본 - 영어, 한국어)",
+      "1. 각 장치별 최신 Resource List가 팝업된다.\n2. 해당 Resource로 Upgrade를 진행한다.\n3. 최신버전으로 Resource Upgrade가 된다.\n> 장치에서 성공 및 재부팅 팝업 확인\n> 장치 재부팅 후 업그레이드 완료시 장치의 Resource 확인\n> Upgrade Log 확인\n4. 언어 표시 방향 및 업그레이드한 다국어의 정상 표시 유무를 확인한다."
+    ],
+    [
+      3,
+      "1. 정규버전에서 최신 버전으로 FirmWare Upgrade를 시도한다.\n2. 설정값 및 인증동작을 확인한다.",
+      "[BioStar]\n{panel:title=정규 버전(전자 서명 미지원)}\n||Device||Version||\n|Entry|v2.4.0 이전|\n|BS2|v1.4.0 이전|\n|A2|v1.3.0 이전|\n|FS2|v1.0.0 이전|\n|W2|v1.1.0 이전|\n|L2|v1.2.0 이전|\n{panel}\n\n최신버전(전자 서명 지원)\n> 신규 등록이 예상되는 버전으로 QA 검증 배포용",
+      "1. FirmWare Upgrade 후에도 설정값을 유지해야 하고, 설정한대로 인증이 동작되어야 한다."
+    ],
+    [
+      4,
+      "1. 정규버전에서 최신 버전으로 FirmWare Upgrade를 시도한다.\n2. 정규버전에서 지원하는 Service 및 App 동작을 확인한다.",
+      "[BioStar]\n{panel:title=정규 버전(전자 서명 미지원)}\n||Device||Version||\n|Entry|v2.4.0 이전|\n|BS2|v1.4.0 이전|\n|A2|v1.3.0 이전|\n|FS2|v1.0.0 이전|\n|W2|v1.1.0 이전|\n|L2|v1.2.0 이전|\n{panel}\n\n최신버전(전자 서명 지원)\n> 신규 등록이 예상되는 버전으로 QA 검증 배포용\n",
+      "1. FireWare Upgrade 전후에 불필요한 Service 및 App이 동작하는 지 비교한다.\n> Port Scan 이용\n(/) 개발자 결과물로 대체\n\n삭제논의항목"
+    ],
+    [
+      5,
+      "1. 정규버전에서 최신 버전으로 FirmWare Upgrade를 시도한다.\n2. 기기 내부로의 접근 시도\n   > 시리얼 콘솔 이용\n   > USB 이용\n   > Diag Tool 이용",
+      "[BioStar]\n{panel:title=정규 버전(전자 서명 미지원)}\n||Device||Version||\n|Entry|v2.4.0 이전|\n|BS2|v1.4.0 이전|\n|A2|v1.3.0 이전|\n|FS2|v1.0.0 이전|\n|W2|v1.1.0 이전|\n|L2|v1.2.0 이전|\n{panel}\n\n최신버전(전자 서명 지원)\n> 신규 등록이 예상되는 버전으로 QA 검증 배포용",
+      "1. FirmWare Upgrade 전후에 기기 내부로 접근할 수 없다.\n\n(on) 시리얼 콘솔 - Kernel Log Enable(입력 불가) \n(on) USB 이용 디버거 기능 제거\n(on) Diag Tool 기능 - 연결만 되고, Log 미출력"
+    ],
+    [
+      6,
+      "1. 최신 버전에서 전자서명 기능이 없는 이전 정규버전으로 FirmWare Downgrade 시도한다.\n2. 동작확인",
+      "[BioStar]\n{panel:title=정규 버전(전자 서명 미지원)}\n||Device||Version||\n|Entry|v2.4.0 이전|\n|BS2|v1.4.0 이전|\n|A2|v1.3.0 이전|\n|W2|v1.1.0 이전|\n|L2|v1.2.0 이전|\n{panel}\n\n최신버전(전자 서명 지원)\n> 신규 등록이 예상되는 버전으로 QA 검증 배포용\n",
+      "1. FirmWare Upgrade시 서명이 유효하지 않아 Upgrade가 실패되고, 이전 버전이 유지된다.\n\n(x) Downgrade 불가"
+    ],
+    [
+      7,
+      "[BEW2: 8G emmc & HW V1.1.0 이상]\n\n1. 최신 FW에서 FW V1.1.3 미만으로 FW Downgrade 시도\n",
+      "",
+      "1. Upgrade Fail된다."
+    ],
+    [
+      8,
+      "[BEW2: 8G emmc이 아니면서 HW V1.0.0]\n\n1. 최신 FW에서 FW V1.1.3 미만으로 FW Downgrade 시도\n",
+      "",
+      "1. Upgrade Success된다."
+    ],
+    [
+      9,
+      "[BSL2: 8G emmc]\n\n1. 최신 FW에서 FW V1.2.3 미만으로 FW Downgrade 시도\n",
+      "",
+      "1. Upgrade Fail된다."
+    ],
+    [
+      10,
+      "[BSL2: 8G emmc가 아닌 경우]\n\n1. 최신 FW에서 FW V1.2.3 미만으로 FW Downgrade 시도\n",
+      "",
+      "1. Upgrade Success된다."
+    ],
+    [
+      11,
+      "[XS2: DTC LCD 적용시료]\n1. 최신FW에서 FW V1.1.1 이하로 FW Downgrade 시도",
+      "",
+      "1. Upgrade Fail된다.\n> 해당시료는 v1.1.2부터 지원"
+    ],
+    [
+      12,
+      "[XP2: BL573 신규 칩 적용시료]\n1. 최신FW에서 FW V1.2.4 하위버전으로 FW Downgrade 시도",
+      "",
+      "1. Upgrade Fail된다.\n> 해당시료는 v1.2.4부터 지원"
+    ],
+    [
+      13,
+      "[XP2: BLE - Nordic 적용시료]\n1. 최신FW에서 FW V1.3.0 하위버전으로 FW Downgrade 시도",
+      "",
+      "1. Upgrade Fail된다.\n> 해당시료는 v1.3.0부터 지원"
+    ],
+    [
+      14,
+      "[W2: HID SE Module 신규적용시료]\n1. 최신FW에서 FW V1.7.0 하위버전으로 FW Downgrade 시도",
+      "",
+      "1. Upgrade Fail된다.\n> 해당시료는 v1.7.0부터 지원"
+    ],
+    [
+      15,
+      "[N2: BLE - Nordic 적용시료]\n1. 최신FW에서 FW V1.5.0 하위버전으로 FW Downgrade 시도",
+      "",
+      "1. Upgrade Fail된다.\n> 해당시료는 v1.5.0부터 지원"
+    ],
+    [
+      16,
+      "[N2: HID SE Module 신규적용시료]\n1. 최신FW에서 FW V1.5.0 하위버전으로 FW Downgrade 시도",
+      "",
+      "1. Upgrade Fail된다.\n> 해당시료는 v1.5.0부터 지원"
+    ],
+    [
+      17,
+      "[N2: BLE 미지원 시료]\n 1. 최신FW에서 FW V1.5.0 하위버전으로 FW Downgrade 시도",
+      "Data: BLE 미지원 시료\n> BLN2-OA/OD",
+      "1. Upgrade Fail된다.\n> 해당시료는 v1.5.0부터 지원"
+    ],
+    [
+      18,
+      "1.장치에 메모리 Full로 채운 상태에서 FW Upgrade 시도",
+      "사용자\n> 모든 크리덴셜 저장된 상태로 Full\n\n이벤트 로그 Full\n> 이미지로그(지원시)\n> 일반로그",
+      "1. Upgrade 및 부팅이 정상적으로 이루어져야 한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-19",
+    "description": "",
+    "test_step": [
+      "FirmWare Upgrade을 지원한다.\n1. DEVICE> Device List> Device 선택> FirmWare Upgrade[기능 버튼 내에서 선택]\n2. DEVICE> Device 선택> Device 상세 정보 화면> FirmWare Upgrade",
+      "[UI지원 모델]\n\nResource Upgrade을 지원한다.\n1. DEVICE> Device 선택> Device 상세 정보 화면> Display/Sound> Language> Update Resource",
+      "1. 정규버전에서 최신 버전으로 FirmWare Upgrade를 시도한다.\n2. 설정값 및 인증동작을 확인한다.",
+      "1. 정규버전에서 최신 버전으로 FirmWare Upgrade를 시도한다.\n2. 정규버전에서 지원하는 Service 및 App 동작을 확인한다.",
+      "1. 정규버전에서 최신 버전으로 FirmWare Upgrade를 시도한다.\n2. 기기 내부로의 접근 시도\n   > 시리얼 콘솔 이용\n   > USB 이용\n   > Diag Tool 이용",
+      "1. 최신 버전에서 전자서명 기능이 없는 이전 정규버전으로 FirmWare Downgrade 시도한다.\n2. 동작확인",
+      "[BEW2: 8G emmc & HW V1.1.0 이상]\n\n1. 최신 FW에서 FW V1.1.3 미만으로 FW Downgrade 시도\n",
+      "[BEW2: 8G emmc이 아니면서 HW V1.0.0]\n\n1. 최신 FW에서 FW V1.1.3 미만으로 FW Downgrade 시도\n",
+      "[BSL2: 8G emmc]\n\n1. 최신 FW에서 FW V1.2.3 미만으로 FW Downgrade 시도\n",
+      "[BSL2: 8G emmc가 아닌 경우]\n\n1. 최신 FW에서 FW V1.2.3 미만으로 FW Downgrade 시도\n",
+      "[XS2: DTC LCD 적용시료]\n1. 최신FW에서 FW V1.1.1 이하로 FW Downgrade 시도",
+      "[XP2: BL573 신규 칩 적용시료]\n1. 최신FW에서 FW V1.2.4 하위버전으로 FW Downgrade 시도",
+      "[XP2: BLE - Nordic 적용시료]\n1. 최신FW에서 FW V1.3.0 하위버전으로 FW Downgrade 시도",
+      "[W2: HID SE Module 신규적용시료]\n1. 최신FW에서 FW V1.7.0 하위버전으로 FW Downgrade 시도",
+      "[N2: BLE - Nordic 적용시료]\n1. 최신FW에서 FW V1.5.0 하위버전으로 FW Downgrade 시도",
+      "[N2: HID SE Module 신규적용시료]\n1. 최신FW에서 FW V1.5.0 하위버전으로 FW Downgrade 시도",
+      "[N2: BLE 미지원 시료]\n 1. 최신FW에서 FW V1.5.0 하위버전으로 FW Downgrade 시도",
+      "1.장치에 메모리 Full로 채운 상태에서 FW Upgrade 시도"
+    ],
+    "data": [
+      "[BioStar]\n1. Device 선택\n > TCP로 연결된 Device 1개\n > TCP로 연결된 동일 Device 2개 이상\n2. 각 장치별 최신 버전의 FirmWare을 선택한다.\n||Entry 계열||Station 계열||IO Module 계열||\n|BEPx|BioStation 2|DM 20|\n|BEWx|BioStation A2|SIO 2|\n|BLx|BioStation L2|OM 120|\n|XPx|FaceStation 2|\n|XPS2M|CoreStation 40|\n|W2|BoiLite N2|\n|P2|FaceLite|\n|R2|\n|XP2|",
+      "[BioStar]\n1. 언어를 Korean, English, Custom으로 각각 지정한다.\n2. 각 장치별 최신 버전의 Resource를 선택한다.\n||Station 계열||Entry 계열||\n|BioStation 2|BLx|\n|BioStation A2|\n|BioStation L2|\n|FaceStation 2|\n|BioLite N2|\n|FaceLite|\n\n(on) Multilingual Version Upgrade\n> RND 배포 요청 예정(기본 - 영어, 한국어)",
+      "[BioStar]\n{panel:title=정규 버전(전자 서명 미지원)}\n||Device||Version||\n|Entry|v2.4.0 이전|\n|BS2|v1.4.0 이전|\n|A2|v1.3.0 이전|\n|FS2|v1.0.0 이전|\n|W2|v1.1.0 이전|\n|L2|v1.2.0 이전|\n{panel}\n\n최신버전(전자 서명 지원)\n> 신규 등록이 예상되는 버전으로 QA 검증 배포용",
+      "[BioStar]\n{panel:title=정규 버전(전자 서명 미지원)}\n||Device||Version||\n|Entry|v2.4.0 이전|\n|BS2|v1.4.0 이전|\n|A2|v1.3.0 이전|\n|FS2|v1.0.0 이전|\n|W2|v1.1.0 이전|\n|L2|v1.2.0 이전|\n{panel}\n\n최신버전(전자 서명 지원)\n> 신규 등록이 예상되는 버전으로 QA 검증 배포용\n",
+      "[BioStar]\n{panel:title=정규 버전(전자 서명 미지원)}\n||Device||Version||\n|Entry|v2.4.0 이전|\n|BS2|v1.4.0 이전|\n|A2|v1.3.0 이전|\n|FS2|v1.0.0 이전|\n|W2|v1.1.0 이전|\n|L2|v1.2.0 이전|\n{panel}\n\n최신버전(전자 서명 지원)\n> 신규 등록이 예상되는 버전으로 QA 검증 배포용",
+      "[BioStar]\n{panel:title=정규 버전(전자 서명 미지원)}\n||Device||Version||\n|Entry|v2.4.0 이전|\n|BS2|v1.4.0 이전|\n|A2|v1.3.0 이전|\n|W2|v1.1.0 이전|\n|L2|v1.2.0 이전|\n{panel}\n\n최신버전(전자 서명 지원)\n> 신규 등록이 예상되는 버전으로 QA 검증 배포용\n",
+      "Data: BLE 미지원 시료\n> BLN2-OA/OD",
+      "사용자\n> 모든 크리덴셜 저장된 상태로 Full\n\n이벤트 로그 Full\n> 이미지로그(지원시)\n> 일반로그"
+    ],
+    "expected_result": [
+      "1. 각 장치별 최신 FirmWare List가 팝업된다.\n2. 해당 FirmWare로 Upgrade를 진행한다.\n3. 최신버전으로 FirmWare Upgrade가 된다.\n> 장치에서 재부팅 팝업 확인\n> 장치 재부팅 후 업그레이드 완료시 장치 상세정보의 Version 확인\n> Upgrade Log 확인",
+      "1. 각 장치별 최신 Resource List가 팝업된다.\n2. 해당 Resource로 Upgrade를 진행한다.\n3. 최신버전으로 Resource Upgrade가 된다.\n> 장치에서 성공 및 재부팅 팝업 확인\n> 장치 재부팅 후 업그레이드 완료시 장치의 Resource 확인\n> Upgrade Log 확인\n4. 언어 표시 방향 및 업그레이드한 다국어의 정상 표시 유무를 확인한다.",
+      "1. FirmWare Upgrade 후에도 설정값을 유지해야 하고, 설정한대로 인증이 동작되어야 한다.",
+      "1. FireWare Upgrade 전후에 불필요한 Service 및 App이 동작하는 지 비교한다.\n> Port Scan 이용\n(/) 개발자 결과물로 대체\n\n삭제논의항목",
+      "1. FirmWare Upgrade 전후에 기기 내부로 접근할 수 없다.\n\n(on) 시리얼 콘솔 - Kernel Log Enable(입력 불가) \n(on) USB 이용 디버거 기능 제거\n(on) Diag Tool 기능 - 연결만 되고, Log 미출력",
+      "1. FirmWare Upgrade시 서명이 유효하지 않아 Upgrade가 실패되고, 이전 버전이 유지된다.\n\n(x) Downgrade 불가",
+      "1. Upgrade Fail된다.",
+      "1. Upgrade Success된다.",
+      "1. Upgrade Fail된다.",
+      "1. Upgrade Success된다.",
+      "1. Upgrade Fail된다.\n> 해당시료는 v1.1.2부터 지원",
+      "1. Upgrade Fail된다.\n> 해당시료는 v1.2.4부터 지원",
+      "1. Upgrade Fail된다.\n> 해당시료는 v1.3.0부터 지원",
+      "1. Upgrade Fail된다.\n> 해당시료는 v1.7.0부터 지원",
+      "1. Upgrade Fail된다.\n> 해당시료는 v1.5.0부터 지원",
+      "1. Upgrade Fail된다.\n> 해당시료는 v1.5.0부터 지원",
+      "1. Upgrade Fail된다.\n> 해당시료는 v1.5.0부터 지원",
+      "1. Upgrade 및 부팅이 정상적으로 이루어져야 한다."
+    ]
+  }
+}

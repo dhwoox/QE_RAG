@@ -1,0 +1,123 @@
+{
+  "id": "COMMONR-38",
+  "content": [
+    [
+      1,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Information> Time Synchronization with Server : Uncheck\n2. DEVICE> Device List> Device 선택> Device 상세 정보> Information> System> Display Date,Time 변경> Set Time> Apply\n3. DEVICE> Device List> Device 선택> Device 상세 정보> Information> System> Time Zone 변경> Apply\n4. DEVICE> Device List> Device 선택> Device 상세 정보> Information> System> Daylight Saving Time 변경> Apply",
+      "[BioStar]\n1. Time Synchronization with Server : Uncheck\n2. Display Date, Time 변경\n3. Time Zone \n> UTC(Default)\n4. Daylight Saving Time\n> 공백(Default)",
+      "1. 장치의 시간이 변경한 Date/Time 으로 변경/설정 되어야 한다.\n2. Real-time Log에 Set Time 로그가 남는다.\n> Device에 설정된 시간과 비교\n> 변경 전, 후으로 Set Time 로그 저장\n(Device Time changed)\n> Time Zone 변경 시 Set Time 로그 저장 \n(Time-zone changed) \n> Daylight Saving Time 적용 시 Set DST 로그 저장"
+    ],
+    [
+      2,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Information> Time Synchronization with Server : Check\n2. Time Zone 변경> Apply",
+      "[BioStar]\n1. Time Synchronization with Server : Check\n2. Time Zone\n> UTC(Default)\n3. 설정범위\n> (UTC-12:00) ~ (UTC+14:00)",
+      "1. 장치의 시간이 설정한 Time Zone 에 맞게 표시되어야 한다.\n> Device에 설정된 정보와 비교\n> DST 설정 유무에 따라 '-1', +1(TimeZone 차이 만큼 가감)"
+    ],
+    [
+      3,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Information> Time Synchronization with Server : Check\n2. Time Zone 변경> Apply\n3. DEVICE> Device List> Device 선택> Device 상세 정보> Factory Default : Reset",
+      "[BioStar]\n1. Time Zone : UTC(D) -> (UTC-12:00) ~ (UTC+14:00) 중 선택/적용",
+      "1. Reset/Reset All Without Network\n   > TimeZone/DST 유지\n2. Factory Default\n   > TimeZone/DST 초기화\n"
+    ],
+    [
+      4,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Information> Time Synchronization with Server : Check\n2. Apply",
+      "[BioStar]\n > 시간 차 : 3초 \n > 주기 : Keep Alive 시간(30초)\n  : 최대 1분 3초(사용자 전송 시에는 시간 차가 더 많이 발생함)",
+      "1. 장치의 Date/Time이 서버 시간으로 동기화되어야 한다.\n> Time Sync로 인한 Date/Time 변경시 Set Time 로그가 남는다.\n> Device에 설정된 정보와 비교"
+    ],
+    [
+      5,
+      "1. DEVICE> Device List> Device 선택(Master)> Device 상세 정보> Information\n2. Time Synchronization with Server : Uncheck\n3. DEVICE> Device List> Device 선택(Master)> Device 상세 정보> Information> System> Display Date,Time 변경> Set Time> Apply\n4. Slave Time Check",
+      "[BioStar]\nRS 485 연결 구성\n",
+      "1. Slave 장치의 시간이 Master 장치의 시간과 동기화되어야 한다.\n\n(on) Time Zone / DST\n> Time Sync 항목"
+    ],
+    [
+      6,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Information> System> Display Date,Time 변경(윤달 및 해 넘어감에 대한 시간 설정)> Set Time> Apply",
+      "[BioStar]\n 기준\n > TEST 수행 날짜 기준으로 향후 5년 사이의 윤달과, 해넘어감을 확인\n\n설정\n||윤달||해넘김||\n|1) 2023년 2월 28일 -> 3월 1일로|2) 2023년 12월 31일 11시 59분 59초 -> 2024년 1월 1일 0시 0분 0초로|\n|3) 2024년 2월 28일 -> 2월 29일 -> 3월 1일로|4) 2024년 12월 31일 11시 59분 59초 -> 2025년1월 1일 0시 0분 0초로|\n|5) 2025년 2월 28일 -> 3월 1일로|6) 2025년 12월 31일 11시 59분 59초-> 2026년 1월 1일 0시 0분 0초로|\n|7) 2026년 2월 28일 -> 3월 1일로|8) 2026년 12월 31일 11시 59분 59초-> 2027년 1월 1일 0시 0분 0초로|\n|9) 2027년 2월 28일 -> 3월 1일로|10) 2027년 12월 31일 11시 59분 59초-> 2028년1월 1일 0시 0분 0초로|\n|11) 2028년 2월 28일 -> 2월 29일 -> 3월 1일로|12) 2028년 12월 31일 11시 59분 59초-> 2029년1월 1일 0시 0분 0초로|",
+      "1. 장치의 Date/Time이 윤달 & 해넘어감에 따라 정상적으로 이루어져야 한다.\n2. 기간 내 인증/Relay 정상 동작 확인"
+    ],
+    [
+      7,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Information> System> Display Date,Time 변경",
+      "1.BDP-629\n사용자 Period 를 2037년 말까지 입력 허용과 관련해 해당 기간 장치 날짜 변경\n> 2001.01.01 00:00 ~ 2037.12.31 23:59 (2025년 기준)",
+      "1. 날짜 변경시 정상적으로 표시되고 기간내에 인증이나 relay에 이상없이 동작"
+    ],
+    [
+      8,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Information> FrimWare Upgrade> FirmWare List 선택> Confirm\n",
+      "[BioStar]\n1. FirmWare Upgrade 시 시간 변경 전/후 상태에서 \n> 시간 변경 전(장치 부팅 후 시간 변경 없는 상태)\n> 시간 변경 후(임의의 시간으로 변경 상태)",
+      "1. FirmWare Upgrade 완료 후 장치의 시간이 초기화되지 않아야 한다.\n> Upgrade 전,후 시간을 장치와 비교\n"
+    ],
+    [
+      9,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Information> Time Synchronization with Server : Check\n2. Apply\n3. Device Reboot\n4. 연속 인증",
+      "[BioStar]\nRS 485 연결 구성",
+      "1. 장치의 Date/Time이 서버 시간으로 동기화되어야 한다.\n> Time Sync로 인한 Date/Time 변경시 Set Time 로그가 남는다.\n> Reboot 후 BioStar에 연결이 되어, Time Sync가 될 때 까지 연속 인증을 시도하여 인증 화면 팝업이 1분 30초 간 지연이 발생하는 지 확인\n\n(on) 정상 : 2초 내 팝업 종료"
+    ],
+    [
+      10,
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Information> Time Synchronization with Server : Uncheck\n2. 시간변경 후 Set Time 클릭\n3. 전원재인가 후 시간확인",
+      "[BioStar]\n1. Time Synchronization with Server\n> Uncheck\n2. Display Date, Time 변경",
+      "1. 전원 재인가 후에도 시간이 유지된다.\n\n※ BioStar Server, Client의 DST, TimeZone을 장치와 동일하게 설정 후 확인 필요"
+    ],
+    [
+      11,
+      "1. Device> Device List> Devcie 선택> Devcice 상세정보> Daylight Savint Time> Apply",
+      "[BioStar]\nDayligtht Saving Time ",
+      "1. 선택한 일광 절약 시간이 설정되어야 한다."
+    ],
+    [
+      12,
+      "1. Setting> Server> 일광 절약 시간> Add\n\n(on) DST 적용 시기 설정\n1 이름 : 48자\n2 시작 날짜: 월/몇번째주/요일/시/분 \n3 종료 날짜: 월/몇번째주/요일/시/분\n4 적용 기간 : 기본 연 반복, +1 시간\n5 중복 체크, 남반구/북반구 지원\n6 Max 200개 ",
+      "(on) Maximum DST(daylight saving time) per device\n> 2개, DST 1, 2\n\n설정 범위\n> 월/몇번째주/요일/시/분 : 1월(기본값)~12월/1주(기본값)~4주, Last/월요일~일요일(기본값)/시(00(기본값) ~ 23)/분(00(기본값) ~ 59)",
+      "1. 각 설정 값을 저장할 수 있다.\n2. 각 설정 값을 변경할 수 있다.\n3. 장치에서는 일광절약시간이 적용된 상태로 동작이 된다.\n> 기본화면, 인증결과, 시간설정, 로그\n> 스케줄 검사시에도 적용된 시간으로 동작"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-38",
+    "description": "",
+    "test_step": [
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Information> Time Synchronization with Server : Uncheck\n2. DEVICE> Device List> Device 선택> Device 상세 정보> Information> System> Display Date,Time 변경> Set Time> Apply\n3. DEVICE> Device List> Device 선택> Device 상세 정보> Information> System> Time Zone 변경> Apply\n4. DEVICE> Device List> Device 선택> Device 상세 정보> Information> System> Daylight Saving Time 변경> Apply",
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Information> Time Synchronization with Server : Check\n2. Time Zone 변경> Apply",
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Information> Time Synchronization with Server : Check\n2. Time Zone 변경> Apply\n3. DEVICE> Device List> Device 선택> Device 상세 정보> Factory Default : Reset",
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Information> Time Synchronization with Server : Check\n2. Apply",
+      "1. DEVICE> Device List> Device 선택(Master)> Device 상세 정보> Information\n2. Time Synchronization with Server : Uncheck\n3. DEVICE> Device List> Device 선택(Master)> Device 상세 정보> Information> System> Display Date,Time 변경> Set Time> Apply\n4. Slave Time Check",
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Information> System> Display Date,Time 변경(윤달 및 해 넘어감에 대한 시간 설정)> Set Time> Apply",
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Information> System> Display Date,Time 변경",
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Information> FrimWare Upgrade> FirmWare List 선택> Confirm\n",
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Information> Time Synchronization with Server : Check\n2. Apply\n3. Device Reboot\n4. 연속 인증",
+      "1. DEVICE> Device List> Device 선택> Device 상세 정보> Information> Time Synchronization with Server : Uncheck\n2. 시간변경 후 Set Time 클릭\n3. 전원재인가 후 시간확인",
+      "1. Device> Device List> Devcie 선택> Devcice 상세정보> Daylight Savint Time> Apply",
+      "1. Setting> Server> 일광 절약 시간> Add\n\n(on) DST 적용 시기 설정\n1 이름 : 48자\n2 시작 날짜: 월/몇번째주/요일/시/분 \n3 종료 날짜: 월/몇번째주/요일/시/분\n4 적용 기간 : 기본 연 반복, +1 시간\n5 중복 체크, 남반구/북반구 지원\n6 Max 200개 "
+    ],
+    "data": [
+      "[BioStar]\n1. Time Synchronization with Server : Uncheck\n2. Display Date, Time 변경\n3. Time Zone \n> UTC(Default)\n4. Daylight Saving Time\n> 공백(Default)",
+      "[BioStar]\n1. Time Synchronization with Server : Check\n2. Time Zone\n> UTC(Default)\n3. 설정범위\n> (UTC-12:00) ~ (UTC+14:00)",
+      "[BioStar]\n1. Time Zone : UTC(D) -> (UTC-12:00) ~ (UTC+14:00) 중 선택/적용",
+      "[BioStar]\n > 시간 차 : 3초 \n > 주기 : Keep Alive 시간(30초)\n  : 최대 1분 3초(사용자 전송 시에는 시간 차가 더 많이 발생함)",
+      "[BioStar]\nRS 485 연결 구성\n",
+      "[BioStar]\n 기준\n > TEST 수행 날짜 기준으로 향후 5년 사이의 윤달과, 해넘어감을 확인\n\n설정\n||윤달||해넘김||\n|1) 2023년 2월 28일 -> 3월 1일로|2) 2023년 12월 31일 11시 59분 59초 -> 2024년 1월 1일 0시 0분 0초로|\n|3) 2024년 2월 28일 -> 2월 29일 -> 3월 1일로|4) 2024년 12월 31일 11시 59분 59초 -> 2025년1월 1일 0시 0분 0초로|\n|5) 2025년 2월 28일 -> 3월 1일로|6) 2025년 12월 31일 11시 59분 59초-> 2026년 1월 1일 0시 0분 0초로|\n|7) 2026년 2월 28일 -> 3월 1일로|8) 2026년 12월 31일 11시 59분 59초-> 2027년 1월 1일 0시 0분 0초로|\n|9) 2027년 2월 28일 -> 3월 1일로|10) 2027년 12월 31일 11시 59분 59초-> 2028년1월 1일 0시 0분 0초로|\n|11) 2028년 2월 28일 -> 2월 29일 -> 3월 1일로|12) 2028년 12월 31일 11시 59분 59초-> 2029년1월 1일 0시 0분 0초로|",
+      "1.BDP-629\n사용자 Period 를 2037년 말까지 입력 허용과 관련해 해당 기간 장치 날짜 변경\n> 2001.01.01 00:00 ~ 2037.12.31 23:59 (2025년 기준)",
+      "[BioStar]\n1. FirmWare Upgrade 시 시간 변경 전/후 상태에서 \n> 시간 변경 전(장치 부팅 후 시간 변경 없는 상태)\n> 시간 변경 후(임의의 시간으로 변경 상태)",
+      "[BioStar]\nRS 485 연결 구성",
+      "[BioStar]\n1. Time Synchronization with Server\n> Uncheck\n2. Display Date, Time 변경",
+      "[BioStar]\nDayligtht Saving Time ",
+      "(on) Maximum DST(daylight saving time) per device\n> 2개, DST 1, 2\n\n설정 범위\n> 월/몇번째주/요일/시/분 : 1월(기본값)~12월/1주(기본값)~4주, Last/월요일~일요일(기본값)/시(00(기본값) ~ 23)/분(00(기본값) ~ 59)"
+    ],
+    "expected_result": [
+      "1. 장치의 시간이 변경한 Date/Time 으로 변경/설정 되어야 한다.\n2. Real-time Log에 Set Time 로그가 남는다.\n> Device에 설정된 시간과 비교\n> 변경 전, 후으로 Set Time 로그 저장\n(Device Time changed)\n> Time Zone 변경 시 Set Time 로그 저장 \n(Time-zone changed) \n> Daylight Saving Time 적용 시 Set DST 로그 저장",
+      "1. 장치의 시간이 설정한 Time Zone 에 맞게 표시되어야 한다.\n> Device에 설정된 정보와 비교\n> DST 설정 유무에 따라 '-1', +1(TimeZone 차이 만큼 가감)",
+      "1. Reset/Reset All Without Network\n   > TimeZone/DST 유지\n2. Factory Default\n   > TimeZone/DST 초기화\n",
+      "1. 장치의 Date/Time이 서버 시간으로 동기화되어야 한다.\n> Time Sync로 인한 Date/Time 변경시 Set Time 로그가 남는다.\n> Device에 설정된 정보와 비교",
+      "1. Slave 장치의 시간이 Master 장치의 시간과 동기화되어야 한다.\n\n(on) Time Zone / DST\n> Time Sync 항목",
+      "1. 장치의 Date/Time이 윤달 & 해넘어감에 따라 정상적으로 이루어져야 한다.\n2. 기간 내 인증/Relay 정상 동작 확인",
+      "1. 날짜 변경시 정상적으로 표시되고 기간내에 인증이나 relay에 이상없이 동작",
+      "1. FirmWare Upgrade 완료 후 장치의 시간이 초기화되지 않아야 한다.\n> Upgrade 전,후 시간을 장치와 비교\n",
+      "1. 장치의 Date/Time이 서버 시간으로 동기화되어야 한다.\n> Time Sync로 인한 Date/Time 변경시 Set Time 로그가 남는다.\n> Reboot 후 BioStar에 연결이 되어, Time Sync가 될 때 까지 연속 인증을 시도하여 인증 화면 팝업이 1분 30초 간 지연이 발생하는 지 확인\n\n(on) 정상 : 2초 내 팝업 종료",
+      "1. 전원 재인가 후에도 시간이 유지된다.\n\n※ BioStar Server, Client의 DST, TimeZone을 장치와 동일하게 설정 후 확인 필요",
+      "1. 선택한 일광 절약 시간이 설정되어야 한다.",
+      "1. 각 설정 값을 저장할 수 있다.\n2. 각 설정 값을 변경할 수 있다.\n3. 장치에서는 일광절약시간이 적용된 상태로 동작이 된다.\n> 기본화면, 인증결과, 시간설정, 로그\n> 스케줄 검사시에도 적용된 시간으로 동작"
+    ]
+  }
+}

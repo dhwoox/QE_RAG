@@ -1,5 +1,31 @@
 ■ 이슈 키: COMMONR-15
 ■ 제목: Wiegand - 입력/출력
+■ 설명: Entry  & Station 계열 
+
+((i))Wiegand Cable Setting...
+
+1. Master-Slave-Wiegand Reader 0
+!Master-Slave-Wiegand Reader0.png!
+2. Master-DM20-Wiegand Reader 0,1
+!Master-DM20-Wiegand Reader0,1.png!
+3. Master-Wiegand Reader 0
+!Master-Wiegand Reader0.png!
+위의 세가지 케이스에 대해 확인필요
+
+& Secure Credential Card &
+ > BioStar에서 표시되는 카드 ID와 장치에서 표시되는 카드 ID 및 Wiegand로 출력되는 카드 ID가 모두 일치해야 한다.
+ > 24Byte의 카드 ID와 8Byte의 발급회차를 갖는다. 24Byte 카드 ID가 화면 및 Wiegand로 출력되고 로그에 저장되는 카드 ID이다.
+ > 카드 ID와 발급회차가 모두 일치해야 유효한 카드로 인식한다.
+ > BlackList 검사 시에도 카드 ID와 발급회차를 검사한다.
+ > Mifare 카드일 경우만 Wiegand 출력시에 24Byte 카드 ID를 사용한다.(iClass 카드는 PACs을 Wiegand Output으로 출력)
+
+& Access On Card &(iClass 카드는 PACs을 Wiegand Output으로 출력)
+ > Access On Card에 ID의 형식을 구분하는 Flag 추가
+ > ID 형식은 String, Binary 두가지 지원
+ > ID 형식이 String일 경우 로그 저장 시 해당 String을 그대로 로그의 사용자 ID에 저장
+ > ID 형식이 Binary일 경우 로그 저장 시 해당 Binary 값을 10진수로 변환하여 로그의 사용자 ID에 저장
+ > Wiegand 출력의 경우 ID 형식에 관계 없이 항상 Binary 값을 출력한다.
+
 ============================================================
 
 ■ 테스트 스텝

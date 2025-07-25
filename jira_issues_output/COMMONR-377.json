@@ -1,0 +1,167 @@
+{
+  "id": "COMMONR-377",
+  "content": [
+    [
+      1,
+      "1. 장치 > Setting > Display&sound",
+      "",
+      "1. Device Private Msg. , Server Private Msg. 항목 확인"
+    ],
+    [
+      2,
+      "LCD 있는 장치\n1. Device SDK 실행\n2. LCD 장치 연결 > Get DeviceCapability ",
+      "",
+      "1. Server Private Message 기능 ▶  Capability 확인"
+    ],
+    [
+      3,
+      "LCD 있는 장치\n1. BioStar > Device > Advanced",
+      "",
+      "1. Server private Message toggle 확인\n2. Default : Off"
+    ],
+    [
+      4,
+      "[ BioStar2 ]\n 1. User > Advanced> Device Display Message 입력 > Apply",
+      "",
+      "1. 사용자가 설정한 메세지 저장\n2. 사용자 메세지가 저장되어 있어도 Server Private Message On 하기 전 인증 화면에 아무 변화 없음"
+    ],
+    [
+      5,
+      "[ BioStar2 ]\n1. User> Advanced> Device Display Message 입력\n2. Device > Advanced > Server Private Message On\n3. 사용자 인증",
+      "",
+      "1. 인증 화면과 Device Display Message 설정한 문구가 출력됨"
+    ],
+    [
+      6,
+      "[ BioStar2 ]\n 1. User > Advanced> Device Display Message 입력\n 2. Device > Advanced > Server Private Message *Off*\n 3. 사용자 인증",
+      "",
+      "1. 기본 인증 화면 표시"
+    ],
+    [
+      7,
+      "[ BioStar2 ]\n1. User > Advanced> Device Display Message 입력\n2. Device > Advanced > Server Private Message On\n3. 사용자 인증",
+      "1. 네트워크 연결 끊김\n2. Timeout 등 문제\n3. BioStar 미연결\n4. 구버전(지원하지 않는 CMD)",
+      "1. 개인별 인증 메시지 미표시\n2. 기본 인증 화면 표시"
+    ],
+    [
+      8,
+      "[ BioStar2 ]\n1. User > Advanced> Device Display Message 입력\n2. Device > Advanced > Server Private Message On\n3. 사용자 인증",
+      "1. TA 설정된 상태",
+      "1. TA가 우선 순위가 높아 TA 관련 인증 메시지가 표시됨"
+    ],
+    [
+      9,
+      "[ BioStar2 ]\n1. User > Advanced> Device Display Message 입력\n2. Device > Advanced > Server Private Message On\n3. 장치 > Setting > Display&sound > Message Timeout > sec 설정\n4. 사용자 인증",
+      "1. 1~5 sec 설정",
+      "1. 설정한 시간(1초~5초)에 맞게 메시지 표출"
+    ],
+    [
+      10,
+      "[ BioStar2 ]\n1. User > Advanced> Device Display Message 입력\n2. Device > Advanced > Server Private Message On\n3. Setting > Display&sound > Message Timeout > 5sec 설정\n4. 사용자 인증 > 메시지 표시 화면 > 인증 재시도",
+      "",
+      "1. 메시지 계속 표시 되지 않고 화면 전환"
+    ],
+    [
+      11,
+      "[ BioStar2 ]\n1. User > Advanced> Device Display Message 입력\n2. Device > Advanced > Server Private Message On\n3. 사용자 인증",
+      "User ID : Max값 (32자리)",
+      "1. 사용자에 입력된 메세지 표출되어야 함"
+    ],
+    [
+      12,
+      "[ BioStar2 ]\n1. User > Advanced> Device Display Message 입력\n2. Device > Advanced > Server Private Message On\n3. 사용자 인증",
+      "1. Device Display Message 내용 입력 없음\n2. null 값 입력(space bar)",
+      "1. 사용자에 입력된 메시지가 없을 경우 보여주지 않음"
+    ],
+    [
+      13,
+      "[ BioStar2 ]\n1. User > Advanced> Device Display Message 입력\n2. Device > Advanced > Server Private Message On\n3. 사용자 인증",
+      "1. Device Display Message 최대 글자 수 입력\n(메시지 길이 최대 128바이트)",
+      "1. 입력 가능한 글자 수와 줄 수를 표시하여 넘어가는 경우 잘리게 됨을 표시"
+    ],
+    [
+      14,
+      "[ BioStar2 ]\n1. User > Advanced> Device Display Message 입력\n2. Device > Advanced > Server Private Message On\n3. 사용자 인증",
+      "1. 특수문자 입력(~!@#$%^&*()_+)\n2. 특수기호 입력(☆※◆→♥)",
+      "1. 입력한 특수문자 표시된 메시지 출력\n2. 특수기호는 인증 화면에 표시되지 않아 미표시된 메세지 출력"
+    ],
+    [
+      15,
+      "[ BioStar2 ]\n1. Device > Advanced > Server Private Message On\n2. 장치 > Setting > Display&sound > Device Private Msg On\n3. 사용자 인증",
+      "동일한 사용자\n1. Device Message 내용 저장된 상태\n2. Server Message 내용 없음",
+      "1. 서버 메시지가 우선수위가 높아 사용자 Device Display Message에 입력된 메시지가 없을 경우 보여주지 않음, 기본 인증 화면 표시"
+    ],
+    [
+      16,
+      "[ BioStar2 ]\n1. User > Advanced> Device Display Message 입력\n2. Device > Advanced > Server Private Message On\n3. Master 장치 인증\n4. Slave 장치 인증",
+      "",
+      "1. Master에 대해서만 지원, Slave로 동작 시에는 지원하지 않음"
+    ],
+    [
+      17,
+      "1. Biostar > Device list > 장치 2개 이상 선택\n2. Batch Edit 선택\n3. Server Private Msg toggle On\n4. Apply",
+      "",
+      "1. Batch Edit 에 추가되어 한번에 설정을 바꿀 수 있음\n2. 서버 개인 메시지 기능을 지원하는 장치에만 전송(Capbility 추가된 모델)"
+    ],
+    [
+      18,
+      "1. BioStar2 > Device > Advanced > Server private Msg toggle On or 장치 > Setting > Display&sound > Server Private Message On\n2. FW Update / Downgrade\n",
+      "",
+      "1. 업그레이드/다운그레이드 후에도 사용자가 설정한 값 유지 되어야함\n(현재 UI가 있는 장치들은 해당 capability를 보고 있어 biostar에 표출)"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-377",
+    "description": "",
+    "test_step": [
+      "1. 장치 > Setting > Display&sound",
+      "LCD 있는 장치\n1. Device SDK 실행\n2. LCD 장치 연결 > Get DeviceCapability ",
+      "LCD 있는 장치\n1. BioStar > Device > Advanced",
+      "[ BioStar2 ]\n 1. User > Advanced> Device Display Message 입력 > Apply",
+      "[ BioStar2 ]\n1. User> Advanced> Device Display Message 입력\n2. Device > Advanced > Server Private Message On\n3. 사용자 인증",
+      "[ BioStar2 ]\n 1. User > Advanced> Device Display Message 입력\n 2. Device > Advanced > Server Private Message *Off*\n 3. 사용자 인증",
+      "[ BioStar2 ]\n1. User > Advanced> Device Display Message 입력\n2. Device > Advanced > Server Private Message On\n3. 사용자 인증",
+      "[ BioStar2 ]\n1. User > Advanced> Device Display Message 입력\n2. Device > Advanced > Server Private Message On\n3. 사용자 인증",
+      "[ BioStar2 ]\n1. User > Advanced> Device Display Message 입력\n2. Device > Advanced > Server Private Message On\n3. 장치 > Setting > Display&sound > Message Timeout > sec 설정\n4. 사용자 인증",
+      "[ BioStar2 ]\n1. User > Advanced> Device Display Message 입력\n2. Device > Advanced > Server Private Message On\n3. Setting > Display&sound > Message Timeout > 5sec 설정\n4. 사용자 인증 > 메시지 표시 화면 > 인증 재시도",
+      "[ BioStar2 ]\n1. User > Advanced> Device Display Message 입력\n2. Device > Advanced > Server Private Message On\n3. 사용자 인증",
+      "[ BioStar2 ]\n1. User > Advanced> Device Display Message 입력\n2. Device > Advanced > Server Private Message On\n3. 사용자 인증",
+      "[ BioStar2 ]\n1. User > Advanced> Device Display Message 입력\n2. Device > Advanced > Server Private Message On\n3. 사용자 인증",
+      "[ BioStar2 ]\n1. User > Advanced> Device Display Message 입력\n2. Device > Advanced > Server Private Message On\n3. 사용자 인증",
+      "[ BioStar2 ]\n1. Device > Advanced > Server Private Message On\n2. 장치 > Setting > Display&sound > Device Private Msg On\n3. 사용자 인증",
+      "[ BioStar2 ]\n1. User > Advanced> Device Display Message 입력\n2. Device > Advanced > Server Private Message On\n3. Master 장치 인증\n4. Slave 장치 인증",
+      "1. Biostar > Device list > 장치 2개 이상 선택\n2. Batch Edit 선택\n3. Server Private Msg toggle On\n4. Apply",
+      "1. BioStar2 > Device > Advanced > Server private Msg toggle On or 장치 > Setting > Display&sound > Server Private Message On\n2. FW Update / Downgrade\n"
+    ],
+    "data": [
+      "1. 네트워크 연결 끊김\n2. Timeout 등 문제\n3. BioStar 미연결\n4. 구버전(지원하지 않는 CMD)",
+      "1. TA 설정된 상태",
+      "1. 1~5 sec 설정",
+      "User ID : Max값 (32자리)",
+      "1. Device Display Message 내용 입력 없음\n2. null 값 입력(space bar)",
+      "1. Device Display Message 최대 글자 수 입력\n(메시지 길이 최대 128바이트)",
+      "1. 특수문자 입력(~!@#$%^&*()_+)\n2. 특수기호 입력(☆※◆→♥)",
+      "동일한 사용자\n1. Device Message 내용 저장된 상태\n2. Server Message 내용 없음"
+    ],
+    "expected_result": [
+      "1. Device Private Msg. , Server Private Msg. 항목 확인",
+      "1. Server Private Message 기능 ▶  Capability 확인",
+      "1. Server private Message toggle 확인\n2. Default : Off",
+      "1. 사용자가 설정한 메세지 저장\n2. 사용자 메세지가 저장되어 있어도 Server Private Message On 하기 전 인증 화면에 아무 변화 없음",
+      "1. 인증 화면과 Device Display Message 설정한 문구가 출력됨",
+      "1. 기본 인증 화면 표시",
+      "1. 개인별 인증 메시지 미표시\n2. 기본 인증 화면 표시",
+      "1. TA가 우선 순위가 높아 TA 관련 인증 메시지가 표시됨",
+      "1. 설정한 시간(1초~5초)에 맞게 메시지 표출",
+      "1. 메시지 계속 표시 되지 않고 화면 전환",
+      "1. 사용자에 입력된 메세지 표출되어야 함",
+      "1. 사용자에 입력된 메시지가 없을 경우 보여주지 않음",
+      "1. 입력 가능한 글자 수와 줄 수를 표시하여 넘어가는 경우 잘리게 됨을 표시",
+      "1. 입력한 특수문자 표시된 메시지 출력\n2. 특수기호는 인증 화면에 표시되지 않아 미표시된 메세지 출력",
+      "1. 서버 메시지가 우선수위가 높아 사용자 Device Display Message에 입력된 메시지가 없을 경우 보여주지 않음, 기본 인증 화면 표시",
+      "1. Master에 대해서만 지원, Slave로 동작 시에는 지원하지 않음",
+      "1. Batch Edit 에 추가되어 한번에 설정을 바꿀 수 있음\n2. 서버 개인 메시지 기능을 지원하는 장치에만 전송(Capbility 추가된 모델)",
+      "1. 업그레이드/다운그레이드 후에도 사용자가 설정한 값 유지 되어야함\n(현재 UI가 있는 장치들은 해당 capability를 보고 있어 biostar에 표출)"
+    ]
+  }
+}

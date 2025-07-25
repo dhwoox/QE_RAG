@@ -1,0 +1,150 @@
+{
+  "id": "COMMONR-373",
+  "content": [
+    [
+      1,
+      "[장치간 RS485 연결]\n1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock> Once 버튼 클릭\n3. Open time대로 동작되는지 확인",
+      "Door 생성시 Open Time 확인\n: 3초/5초/10초/15초/30초/1분/3분/5분/10분/15분",
+      "Once 클릭시 Unlocked으로 동작되어야 하고, 설정된 Open time이 지나면 다시 Locked으로 동작되어야 한다.\n> BioStar-X 이전 Open 기능\n> Device  UI > Door Control > Unlock 아이콘 표시 확인필요"
+    ],
+    [
+      2,
+      "[Door 생성]\n1. Status Tree> Door> Unlock 버튼 클릭\n2. Unlock Option 확인",
+      "[BioStar-X]\nUnlock Option\n> Once\n> Timed\n> Permanent",
+      "선택한 Door에 대해서 Unlock Option에 따라 Unlocked 으로 동작된다.\n> Once : 1회만 Unlock(Open)\n> Timed : 일정시간 동안만 Unlock(범위 1 ~ 86,400) - 입력한 시간까지 Unlock 유지 및 시간 이후 초기화 된다. 최대 24시간 초과 할 수 없음\n> Permanent : Unlocked 상태로 변경(Normalize(Release) 전까지 Unlock 유지/Manual Unlock)"
+    ],
+    [
+      3,
+      "[Door 생성]\n1. Status Tree> Door> Lock 버튼 클릭\n2. Lock Option 확인",
+      "[BioStar-X]\nLock Option\n> Timed\n> Permanent",
+      "선택한 Door에 대해서 Lock Option에 따라 Locked 으로 동작된다.\n> Timed : 일정시간 동안만 Lock(범위 1 ~ 86,400) - 입력한 시간까지 Lock 유지 및 시간 이후 초기화 된다. 최대 24시간 초과 할 수 없음\n> Permanent : Locked 상태로 변경(Normalize(Release) 전까지 Lock 유지/Manual Lock)"
+    ],
+    [
+      4,
+      "[Door 생성]\n1. Status Tree> Door> Normalize 버튼 클릭\n2. Door Status 확인",
+      "[BioStar-X]\nDoor Status",
+      "1. 선택한 Door에 대해서 Normalize 할수 있다. \n2. Door Status 아래와 같다,\n부팅 완료 후 Lock 상태를 유지해야 한다.\n> Unlocked -> Locked\n> Locked -> Locked\n> Normalize 수행 시에 UI상으로 자물쇠 아이콘 사라짐 확인"
+    ],
+    [
+      5,
+      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock 버튼 클릭> Door 상태 확인(Unlock)\n3. Normalize 버튼 클릭> Door 상태확인(Lock)\n4. 장치 Reboot\n5. 부팅완료 후 Door 상태확인",
+      "[BioStar-X]\nDoor 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치\n\nUnlock Option\n> Once\n> Timed\n> Permanent",
+      "2. Unlock Option에 따라 unlock으로 동작한다.\n> Once : Open Time만큼 Unlock 후 door locked로 동작\n> Timed : 설정된 시간만큼 Unlock 후 normalize되며 manual unlock > door locked로 동작, door normalize log 남게 됨\n> Permanent : 지속적으로 Manual Unlock으로 동작\n> Door unlock request by operator / Door unlocked\n\n3. Normalize(Door release)로 동작한다.\n> Biostar : Door release request by operator / Door locked\n> Device : Successfully Normalized 팝업 출력 후 log 상에 Door release request로 남게 됨\n\n5. reboot 후에 door locked 상태 유지 확인"
+    ],
+    [
+      6,
+      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Lock 버튼 클릭> Door 상태 확인(Lock)\n3.Normalize 버튼 클릭> Door 상태확인\n4. 장치 Reboot\n5. 부팅완료 후 Door 상태확인",
+      "[BioStar-X]\nDoor 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치\n\nLock Option\n> Timed\n> Permanent",
+      "2. lock Option에 따라 lock으로 동작한다.\n> Timed : 설정된 시간만큼 lock 후 normalize되며 manual lock > door locked로 동작, door normalize log 남게 됨\n> Permanent : 지속적으로 Manual lock으로 동작\n> Door lock request by operator / Door locked\n\n3. Normalize(Door release)로 동작한다.\n> Biostar : Door release request by operator / Door locked\n> Device : Successfully Normalized 팝업 출력 후 log 상에 Door release request로 남게 됨\n\n5. reboot 후에 door locked 상태 유지 확인"
+    ],
+    [
+      7,
+      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock 버튼 클릭> Door 상태 확인(Unlock)",
+      "[BioStar-X]\nDoor 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치\n\nUnlock Option\n> Once\n> Timed\n> Permanent",
+      "2. Unlock Option에 따라 unlock으로 동작한다.\n> Once : Open Time만큼 Unlock 후 door locked로 동작\n> Timed : 설정된 시간만큼 Unlock 후 normalize되며 manual unlock > door locked로 동작, door normalize log 남게 됨\n> Permanent : 지속적으로 Manual Unlock으로 동작\n> Door unlock request by operator / Door unlocked"
+    ],
+    [
+      8,
+      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Lock 버튼 클릭> Door 상태 확인",
+      "[BioStar-X]\nDoor 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치\n\nLock Option\n> Timed\n> Permanent",
+      "2. lock Option에 따라 lock으로 동작한다.\n> Timed : 설정된 시간만큼 lock 후 normalize되며 manual lock > door locked로 동작, door normalize log 남게 됨\n> Permanent : 지속적으로 Manual lock으로 동작\n> Door lock request by operator / Door locked"
+    ],
+    [
+      9,
+      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock 버튼 클릭> Door 상태 확인(Unlock)\n3. Master Reboot\n4. Door Status 확인 및 인증 후 동작 확인",
+      "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치",
+      "2. Door Manual Unlock으로 동작한다 (Lock Override 동작함)\n4. Door가 재부팅 후 Normalize되고, 로그 발생한다. (Door release request by operator) [재부팅 후 Normalize되는 이슈는 BS3 v1.4.0 릴리즈 이후 수정 예정 BS3FW-1952]\n> 이후 Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock으로 표시되어야 한다.\n> 경광등 연결하여 Relay On 동작 확인"
+    ],
+    [
+      10,
+      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock 버튼 클릭> Master Main UI 확인\n3. Status Tree> Door> Lock 버튼 클릭> Master Main UI 확인",
+      "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치",
+      "2. Door가 Unlock 상태를 유지해야한다.\n> 장치 홈 화면, BiostarX Door Status 개방 자물쇠 아이콘 표시\n> Once의 경우 door open time이 지나면 door locked로 동작\n> Timed의 경우 시간이 지나면 manual unlock > door locked 상태로 동작\n\nlog 아래와 같이 표시됨\n> Biostar : Door unlock request by operator / door unlocked\n> 장치 : Door unlock request\n\n3. Door가 lock 상태를 유지해야한다.\n> 장치 홈 화면, BiostarX Door Status 잠금 자물쇠 아이콘 표시\n> Timed의 경우 시간이 지나면 manual lock > door locked 상태로 동작\n※BS3 v1.4.0 릴리즈 이후 수정 예정\n\nlog 아래와 같이 표시됨\n> Biostar : Door lock request by operator / door locked\n> 장치 : Door lock request"
+    ],
+    [
+      11,
+      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock 버튼 클릭> Slave Main UI 확인\n3. Status Tree> Door>  Lock 버튼 클릭> Slave Main UI 확인",
+      "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
+      "2. Door가 Unlock 상태를 유지해야한다.\n> 장치 홈 화면, BiostarX Door Status 개방 자물쇠 아이콘 표시\n> Once의 경우 door open time이 지나면 door locked로 동작\n> Timed의 경우 시간이 지나면 manual unlock > door locked 상태로 동작\n\nlog 아래와 같이 표시됨\n> Biostar : Door unlock request by operator / door unlocked\n> 장치 : Door unlock request\n\n3. Door가 lock 상태를 유지해야한다.\n> 장치 홈 화면, BiostarX Door Status 잠금 자물쇠 아이콘 표시\n> Timed의 경우 시간이 지나면 manual lock > door locked 상태로 동작\n\nlog 아래와 같이 표시됨\n> Biostar : Door lock request by operator / door locked\n> 장치 : Door lock request"
+    ],
+    [
+      12,
+      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock> Door 상태 확인(Unlock)\n3. Master Reboot\n4. Door Status 확인 및 인증 후 동작 확인",
+      "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치",
+      "2. Door가 Unlock 상태를 유지해야한다.\n> Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n4. Timed,Once의 경우 재부팅 시에 manual lock > door locked로 동작한다 (BS3 v1.4.0 릴리즈 이후 수정 예정)\n> Permanent의 경우 unlock 상태 유지\n"
+    ],
+    [
+      13,
+      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock> Door 상태 확인(Unlock)\n3. Slave Reboot\n4. Door Status 확인 및 인증 후 동작 확인",
+      "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
+      "2. Door가 Unlock 상태를 유지해야한다.\n> Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n4. Timed의 경우 재부팅 시에 manual lock > door locked로 동작한다 (BS3 v1.4.0 릴리즈 이후 수정 예정)\n> Permanent의 경우 manual unlock 상태 유지"
+    ],
+    [
+      14,
+      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock> Door 상태 확인(Unlock)\n3. Slave Power Off\n4. Status Tree> Door> Unlock> Door 상태 확인(Unlock)\n5. Slave Power On \n6. Door Status 확인 및 인증 후 동작 확인",
+      "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
+      "2. Door가 Unlock 상태를 유지해야한다.\n> Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n4. Door가 Unlock 상태 및 Unlock 로그 발생한다.\n> 경광등 연결하여 Relay  Off 동작 확인\n5. Disconnected된 장치가 연결된 경우, Relay가 동작되어야 한다.\n> 경광등 연결하여 Relay On 동작 확인\n> Manual Unlock 상태 유지\n> Timed의 경우 재부팅 시에 Manual Unlock > door unlocked로 동작 (BS3 v1.4.0 릴리즈 이후 수정 예정)"
+    ],
+    [
+      15,
+      "[Lock Override]\n1. Door > Add Door > Door 생성\n2. Status Tree > Door > Manual Lock > Timed\n3. Timed : 30초 설정\n4. User에 있는 Lock Override Card로 Emergency Unlock 동작\n5. 30초 후 Door Status 및 Log 확인",
+      "User\n> Lock Override 설정된 Card 포함",
+      "Emergency Unlock 상태 유지된다.\n> Door released by operator 로그 출력되며 Door Status에 Operator Lock 상태만 사라진다.\n※Emergency Unlock 해제되면 안 되며 Manual Lock 상태만 Normal로 바뀌어야함"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-373",
+    "description": "",
+    "test_step": [
+      "[장치간 RS485 연결]\n1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock> Once 버튼 클릭\n3. Open time대로 동작되는지 확인",
+      "[Door 생성]\n1. Status Tree> Door> Unlock 버튼 클릭\n2. Unlock Option 확인",
+      "[Door 생성]\n1. Status Tree> Door> Lock 버튼 클릭\n2. Lock Option 확인",
+      "[Door 생성]\n1. Status Tree> Door> Normalize 버튼 클릭\n2. Door Status 확인",
+      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock 버튼 클릭> Door 상태 확인(Unlock)\n3. Normalize 버튼 클릭> Door 상태확인(Lock)\n4. 장치 Reboot\n5. 부팅완료 후 Door 상태확인",
+      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Lock 버튼 클릭> Door 상태 확인(Lock)\n3.Normalize 버튼 클릭> Door 상태확인\n4. 장치 Reboot\n5. 부팅완료 후 Door 상태확인",
+      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock 버튼 클릭> Door 상태 확인(Unlock)",
+      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Lock 버튼 클릭> Door 상태 확인",
+      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock 버튼 클릭> Door 상태 확인(Unlock)\n3. Master Reboot\n4. Door Status 확인 및 인증 후 동작 확인",
+      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock 버튼 클릭> Master Main UI 확인\n3. Status Tree> Door> Lock 버튼 클릭> Master Main UI 확인",
+      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock 버튼 클릭> Slave Main UI 확인\n3. Status Tree> Door>  Lock 버튼 클릭> Slave Main UI 확인",
+      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock> Door 상태 확인(Unlock)\n3. Master Reboot\n4. Door Status 확인 및 인증 후 동작 확인",
+      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock> Door 상태 확인(Unlock)\n3. Slave Reboot\n4. Door Status 확인 및 인증 후 동작 확인",
+      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock> Door 상태 확인(Unlock)\n3. Slave Power Off\n4. Status Tree> Door> Unlock> Door 상태 확인(Unlock)\n5. Slave Power On \n6. Door Status 확인 및 인증 후 동작 확인",
+      "[Lock Override]\n1. Door > Add Door > Door 생성\n2. Status Tree > Door > Manual Lock > Timed\n3. Timed : 30초 설정\n4. User에 있는 Lock Override Card로 Emergency Unlock 동작\n5. 30초 후 Door Status 및 Log 확인"
+    ],
+    "data": [
+      "Door 생성시 Open Time 확인\n: 3초/5초/10초/15초/30초/1분/3분/5분/10분/15분",
+      "[BioStar-X]\nUnlock Option\n> Once\n> Timed\n> Permanent",
+      "[BioStar-X]\nLock Option\n> Timed\n> Permanent",
+      "[BioStar-X]\nDoor Status",
+      "[BioStar-X]\nDoor 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치\n\nUnlock Option\n> Once\n> Timed\n> Permanent",
+      "[BioStar-X]\nDoor 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치\n\nLock Option\n> Timed\n> Permanent",
+      "[BioStar-X]\nDoor 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치\n\nUnlock Option\n> Once\n> Timed\n> Permanent",
+      "[BioStar-X]\nDoor 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치\n\nLock Option\n> Timed\n> Permanent",
+      "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치",
+      "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치",
+      "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
+      "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치",
+      "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
+      "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
+      "User\n> Lock Override 설정된 Card 포함"
+    ],
+    "expected_result": [
+      "Once 클릭시 Unlocked으로 동작되어야 하고, 설정된 Open time이 지나면 다시 Locked으로 동작되어야 한다.\n> BioStar-X 이전 Open 기능\n> Device  UI > Door Control > Unlock 아이콘 표시 확인필요",
+      "선택한 Door에 대해서 Unlock Option에 따라 Unlocked 으로 동작된다.\n> Once : 1회만 Unlock(Open)\n> Timed : 일정시간 동안만 Unlock(범위 1 ~ 86,400) - 입력한 시간까지 Unlock 유지 및 시간 이후 초기화 된다. 최대 24시간 초과 할 수 없음\n> Permanent : Unlocked 상태로 변경(Normalize(Release) 전까지 Unlock 유지/Manual Unlock)",
+      "선택한 Door에 대해서 Lock Option에 따라 Locked 으로 동작된다.\n> Timed : 일정시간 동안만 Lock(범위 1 ~ 86,400) - 입력한 시간까지 Lock 유지 및 시간 이후 초기화 된다. 최대 24시간 초과 할 수 없음\n> Permanent : Locked 상태로 변경(Normalize(Release) 전까지 Lock 유지/Manual Lock)",
+      "1. 선택한 Door에 대해서 Normalize 할수 있다. \n2. Door Status 아래와 같다,\n부팅 완료 후 Lock 상태를 유지해야 한다.\n> Unlocked -> Locked\n> Locked -> Locked\n> Normalize 수행 시에 UI상으로 자물쇠 아이콘 사라짐 확인",
+      "2. Unlock Option에 따라 unlock으로 동작한다.\n> Once : Open Time만큼 Unlock 후 door locked로 동작\n> Timed : 설정된 시간만큼 Unlock 후 normalize되며 manual unlock > door locked로 동작, door normalize log 남게 됨\n> Permanent : 지속적으로 Manual Unlock으로 동작\n> Door unlock request by operator / Door unlocked\n\n3. Normalize(Door release)로 동작한다.\n> Biostar : Door release request by operator / Door locked\n> Device : Successfully Normalized 팝업 출력 후 log 상에 Door release request로 남게 됨\n\n5. reboot 후에 door locked 상태 유지 확인",
+      "2. lock Option에 따라 lock으로 동작한다.\n> Timed : 설정된 시간만큼 lock 후 normalize되며 manual lock > door locked로 동작, door normalize log 남게 됨\n> Permanent : 지속적으로 Manual lock으로 동작\n> Door lock request by operator / Door locked\n\n3. Normalize(Door release)로 동작한다.\n> Biostar : Door release request by operator / Door locked\n> Device : Successfully Normalized 팝업 출력 후 log 상에 Door release request로 남게 됨\n\n5. reboot 후에 door locked 상태 유지 확인",
+      "2. Unlock Option에 따라 unlock으로 동작한다.\n> Once : Open Time만큼 Unlock 후 door locked로 동작\n> Timed : 설정된 시간만큼 Unlock 후 normalize되며 manual unlock > door locked로 동작, door normalize log 남게 됨\n> Permanent : 지속적으로 Manual Unlock으로 동작\n> Door unlock request by operator / Door unlocked",
+      "2. lock Option에 따라 lock으로 동작한다.\n> Timed : 설정된 시간만큼 lock 후 normalize되며 manual lock > door locked로 동작, door normalize log 남게 됨\n> Permanent : 지속적으로 Manual lock으로 동작\n> Door lock request by operator / Door locked",
+      "2. Door Manual Unlock으로 동작한다 (Lock Override 동작함)\n4. Door가 재부팅 후 Normalize되고, 로그 발생한다. (Door release request by operator) [재부팅 후 Normalize되는 이슈는 BS3 v1.4.0 릴리즈 이후 수정 예정 BS3FW-1952]\n> 이후 Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock으로 표시되어야 한다.\n> 경광등 연결하여 Relay On 동작 확인",
+      "2. Door가 Unlock 상태를 유지해야한다.\n> 장치 홈 화면, BiostarX Door Status 개방 자물쇠 아이콘 표시\n> Once의 경우 door open time이 지나면 door locked로 동작\n> Timed의 경우 시간이 지나면 manual unlock > door locked 상태로 동작\n\nlog 아래와 같이 표시됨\n> Biostar : Door unlock request by operator / door unlocked\n> 장치 : Door unlock request\n\n3. Door가 lock 상태를 유지해야한다.\n> 장치 홈 화면, BiostarX Door Status 잠금 자물쇠 아이콘 표시\n> Timed의 경우 시간이 지나면 manual lock > door locked 상태로 동작\n※BS3 v1.4.0 릴리즈 이후 수정 예정\n\nlog 아래와 같이 표시됨\n> Biostar : Door lock request by operator / door locked\n> 장치 : Door lock request",
+      "2. Door가 Unlock 상태를 유지해야한다.\n> 장치 홈 화면, BiostarX Door Status 개방 자물쇠 아이콘 표시\n> Once의 경우 door open time이 지나면 door locked로 동작\n> Timed의 경우 시간이 지나면 manual unlock > door locked 상태로 동작\n\nlog 아래와 같이 표시됨\n> Biostar : Door unlock request by operator / door unlocked\n> 장치 : Door unlock request\n\n3. Door가 lock 상태를 유지해야한다.\n> 장치 홈 화면, BiostarX Door Status 잠금 자물쇠 아이콘 표시\n> Timed의 경우 시간이 지나면 manual lock > door locked 상태로 동작\n\nlog 아래와 같이 표시됨\n> Biostar : Door lock request by operator / door locked\n> 장치 : Door lock request",
+      "2. Door가 Unlock 상태를 유지해야한다.\n> Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n4. Timed,Once의 경우 재부팅 시에 manual lock > door locked로 동작한다 (BS3 v1.4.0 릴리즈 이후 수정 예정)\n> Permanent의 경우 unlock 상태 유지\n",
+      "2. Door가 Unlock 상태를 유지해야한다.\n> Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n4. Timed의 경우 재부팅 시에 manual lock > door locked로 동작한다 (BS3 v1.4.0 릴리즈 이후 수정 예정)\n> Permanent의 경우 manual unlock 상태 유지",
+      "2. Door가 Unlock 상태를 유지해야한다.\n> Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n4. Door가 Unlock 상태 및 Unlock 로그 발생한다.\n> 경광등 연결하여 Relay  Off 동작 확인\n5. Disconnected된 장치가 연결된 경우, Relay가 동작되어야 한다.\n> 경광등 연결하여 Relay On 동작 확인\n> Manual Unlock 상태 유지\n> Timed의 경우 재부팅 시에 Manual Unlock > door unlocked로 동작 (BS3 v1.4.0 릴리즈 이후 수정 예정)",
+      "Emergency Unlock 상태 유지된다.\n> Door released by operator 로그 출력되며 Door Status에 Operator Lock 상태만 사라진다.\n※Emergency Unlock 해제되면 안 되며 Manual Lock 상태만 Normal로 바뀌어야함"
+    ]
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "id": "COMMONR-292",
+  "content": [
+    [
+      1,
+      "1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2.Use QR/Barcode through Scanner: Enabled(default)\n3.Use QR/Barcode",
+      "Q모델(QDPB/QAPB)\n",
+      "1. Enable,Disable 설정할 수 있다.\n(default: Disabled)\n2. 하위 메뉴로 Scanner Timeout이 노출된다."
+    ],
+    [
+      2,
+      "[이하 CASE는 NoN-Q모델로 진행]\n1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2. Use QR/Barcode through Scanner",
+      "장치에 라이선스가 있는 경우",
+      "1. Enable,Disable 설정할 수 있다.\n(Default: Enable)"
+    ],
+    [
+      3,
+      "1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2. Use QR/Barcode through Scanner",
+      "장치에 라이선스가 없는 경우",
+      "1. Enable,Disable 설정할 수 없다.\n(Default: Disable)"
+    ],
+    [
+      4,
+      "1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2.Use QR/Barcode through Scanner:Disable\n3.카메라 센서에 QR 입력",
+      "",
+      "XS2\n1.하위 메뉴가 비활성화 된다.\n- Camera Timeout, Motion Sensor,Use QR as Card\n\n2. QR Preview 화면이 미노출된다.\n\nBS3\n1. Use QR as Card 비활성화\n2. QR 인증 되지 않음"
+    ],
+    [
+      5,
+      "1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2.Use QR/Barcode through Scanner:Enable",
+      "\n\n",
+      "XS2\n1. 하위 메뉴가 활성화된다.\n- Camera Timeout, Motion Sensor,Use QR as Card (영문)\n- 카메라 대기 시간, 모션 센서 감도, 카드를 QR로 인증하기(국문)\n\nBS3\n1. Use QR as Card 활성화"
+    ],
+    [
+      6,
+      "1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2.Use QR/Barcode through Scanner:Enable\n3.Camera 센서에 QR입력",
+      "",
+      "1. Camera Preview 영역에 QR Preview 화면이 출력된다.\n- 상단 아이콘 영역: 메뉴 버튼,시계, X버튼\n- 카메라 프리뷰 영역(중앙): Camera QR 스캔 가이드 표시\n- 카메라 프리뷰 영역(하단): ID아이콘, 근태 아이콘 노출\n- 하단에 안내 문구 노출 확인:Input Fingerprint / Card / ID (EN) | 지문 / 카드 / ID를 입력하십시오. (KO) "
+    ],
+    [
+      7,
+      "1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2.Use QR/Barcode through Scanner:Enable\n3. Camera Timeout 값 설정 > Apply\n4. Camera 센서에 모션 입력\n5. Preview 화면이 설정된 Scan Timeout만큼 출력 후 사라지는지 확인",
+      "QR/Barcode Camera Timeout\n:3 ~ 20초(default:10초)",
+      "1. 설정한 Camera Timeout으로 동작한다.\n- Camera Preview 영역에 QR Preview 화면이 출력되고 이후 Timeout으로 동작"
+    ],
+    [
+      8,
+      "1. 장치상세페이지> AUTHENTICATION> Use QR/Barcode through Scanner: Enable\n2. Motion Sensor:Low/Medium/High 선택\n3. Camera 센서에 QR 입력\n4. QR 입력",
+      "Motion Sensor\n>Low/Medium/High\n(default:Medium)",
+      "1. 모션을 감지해서 QR Preview 화면이 출력된다.\n* 모션 설정이 High에 가까울수록 먼 거리에서 움직이는 물체에 대한 감지가 더 잘 됨\n\n2. 입력된 QR에 대한 인증 결과가 노출된다. "
+    ],
+    [
+      9,
+      "1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2. Use QR/Barcode through Scanner: Enable\n3. Use QR as Card",
+      "",
+      "1. Enable,Disable 설정할 수 있다.\n(Default: Disabled)"
+    ],
+    [
+      10,
+      "1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2. Use QR/Barcode through Scanner: Enable/Disable\n3. Use QR as Card: Enable/Disable\n4. Camera Timeout 값 설정\n5. Motion Sensor:Low/Medium/High 선택\n6. Apply\n7. 장치 Reboot",
+      "",
+      "1. 장치가 재부팅되어도 설정값은 유지된다. "
+    ],
+    [
+      11,
+      "[QR -> CSN 등록]\n1. 메뉴>AUTHENTICATION>QR/Barcode Operation\n2. Use QR/Barcode: Enable\n3. Use QR as Card: Enable",
+      "Card Type\n>CSN/Wiegand\nCard Format Type\n>Normal",
+      "1. 사용자에 등록된 CSN/Wiegand 카드 값과 QR값이 동일할 경우 인증이 허용된다.\n- 발급된 카드 ID(10진수값)와 동일하게 QR 생성 후 인증\n(ex: 등록된 Wiegnad 카드 51-235 -> 3342571로 QR 발급)"
+    ],
+    [
+      12,
+      "[QR -> CSN 등록]\n1. 메뉴>AUTHENTICATION>QR/Barcode Operation\n2. Use QR/Barcode: Enable\n3. Use QR as Card: Disable",
+      "Card Type\n>CSN/Wiegand\nCard Format Type\n>Normal",
+      "1. 사용자에 등록된 CSN/Wiegand 카드 값과 QR값이 동일할 경우 인증이 실패된다.\n- 발급된 카드 ID(10진수값)와 동일하게 QR 생성 후 인증\n(ex: 등록된 Wiegnad 카드 51-235 -> 3342571로 QR 발급)\n"
+    ],
+    [
+      13,
+      "[QR/Barcode 등록]\n1. 메뉴>AUTHENTICATION>QR/Barcode Operation\n2. Use QR/Barcode: Enable\n3. Use QR as Card: Disable",
+      "Card Format Type\n>Normal / Wiegand",
+      "1. 사용자에 등록된 QR값이 CSN/Wiegand와 동일할 경우 인증이 성공한다.\n-QR : 159753 \n>DIAG LOG: Normal(54104662947123]) / Wiegand(54104662947123)\n"
+    ],
+    [
+      14,
+      "\t\n[QR/Barcode 등록]\n\n1. 메뉴>AUTHENTICATION>QR/Barcode Operation\n2. Use QR/Barcode: Enable\n3. Use QR as Card: Enable",
+      "Card Format Type\n>Normal / Wiegand",
+      "1. 기존 QR card type 으로 등록된 카드의 경우 data 가 동일하다고 하여도 인증 실패로 처리\n*  type 이 다르므로 인증 실패로 처리"
+    ],
+    [
+      15,
+      "[QR -> CSN 등록]\n1. 메뉴>AUTHENTICATION>QR/Barcode Operation\n2. Use QR/Barcode: Enable\n3. Use QR as Card: Enable",
+      "Card Type\n>CSN/Wiegand\nCard Format Type\n>Wiegand / 26bit",
+      "1. 사용자에 등록된 CSN/Wiegand 카드 값과 QR값이 동일할 경우 인증이 성공한다.\n- 발급된 카드 ID(10진수값)와 동일하게 QR 생성 후 인증\n> 159753 -> 2-28681"
+    ],
+    [
+      16,
+      "[QR -> CSN 등록]\n1. 메뉴>AUTHENTICATION>QR/Barcode Operation\n2. Use QR/Barcode: Enable\n3. Use QR as Card: Disable",
+      "Card Type\n>CSN/Wiegand\nCard Format Type\n>Wiegand / 26bit",
+      "1. 사용자에 등록된 CSN/Wiegand 카드 값과 QR값이 동일할 경우 인증이 실패한다.\n- 발급된 카드 ID(10진수값)와 동일하게 QR 생성 후 인증\n> 159753 -> 2-28681"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-292",
+    "description": "",
+    "test_step": [
+      "1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2.Use QR/Barcode through Scanner: Enabled(default)\n3.Use QR/Barcode",
+      "[이하 CASE는 NoN-Q모델로 진행]\n1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2. Use QR/Barcode through Scanner",
+      "1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2. Use QR/Barcode through Scanner",
+      "1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2.Use QR/Barcode through Scanner:Disable\n3.카메라 센서에 QR 입력",
+      "1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2.Use QR/Barcode through Scanner:Enable",
+      "1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2.Use QR/Barcode through Scanner:Enable\n3.Camera 센서에 QR입력",
+      "1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2.Use QR/Barcode through Scanner:Enable\n3. Camera Timeout 값 설정 > Apply\n4. Camera 센서에 모션 입력\n5. Preview 화면이 설정된 Scan Timeout만큼 출력 후 사라지는지 확인",
+      "1. 장치상세페이지> AUTHENTICATION> Use QR/Barcode through Scanner: Enable\n2. Motion Sensor:Low/Medium/High 선택\n3. Camera 센서에 QR 입력\n4. QR 입력",
+      "1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2. Use QR/Barcode through Scanner: Enable\n3. Use QR as Card",
+      "1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2. Use QR/Barcode through Scanner: Enable/Disable\n3. Use QR as Card: Enable/Disable\n4. Camera Timeout 값 설정\n5. Motion Sensor:Low/Medium/High 선택\n6. Apply\n7. 장치 Reboot",
+      "[QR -> CSN 등록]\n1. 메뉴>AUTHENTICATION>QR/Barcode Operation\n2. Use QR/Barcode: Enable\n3. Use QR as Card: Enable",
+      "[QR -> CSN 등록]\n1. 메뉴>AUTHENTICATION>QR/Barcode Operation\n2. Use QR/Barcode: Enable\n3. Use QR as Card: Disable",
+      "[QR/Barcode 등록]\n1. 메뉴>AUTHENTICATION>QR/Barcode Operation\n2. Use QR/Barcode: Enable\n3. Use QR as Card: Disable",
+      "\t\n[QR/Barcode 등록]\n\n1. 메뉴>AUTHENTICATION>QR/Barcode Operation\n2. Use QR/Barcode: Enable\n3. Use QR as Card: Enable",
+      "[QR -> CSN 등록]\n1. 메뉴>AUTHENTICATION>QR/Barcode Operation\n2. Use QR/Barcode: Enable\n3. Use QR as Card: Enable",
+      "[QR -> CSN 등록]\n1. 메뉴>AUTHENTICATION>QR/Barcode Operation\n2. Use QR/Barcode: Enable\n3. Use QR as Card: Disable"
+    ],
+    "data": [
+      "Q모델(QDPB/QAPB)\n",
+      "장치에 라이선스가 있는 경우",
+      "장치에 라이선스가 없는 경우",
+      "\n\n",
+      "QR/Barcode Camera Timeout\n:3 ~ 20초(default:10초)",
+      "Motion Sensor\n>Low/Medium/High\n(default:Medium)",
+      "Card Type\n>CSN/Wiegand\nCard Format Type\n>Normal",
+      "Card Type\n>CSN/Wiegand\nCard Format Type\n>Normal",
+      "Card Format Type\n>Normal / Wiegand",
+      "Card Format Type\n>Normal / Wiegand",
+      "Card Type\n>CSN/Wiegand\nCard Format Type\n>Wiegand / 26bit",
+      "Card Type\n>CSN/Wiegand\nCard Format Type\n>Wiegand / 26bit"
+    ],
+    "expected_result": [
+      "1. Enable,Disable 설정할 수 있다.\n(default: Disabled)\n2. 하위 메뉴로 Scanner Timeout이 노출된다.",
+      "1. Enable,Disable 설정할 수 있다.\n(Default: Enable)",
+      "1. Enable,Disable 설정할 수 없다.\n(Default: Disable)",
+      "XS2\n1.하위 메뉴가 비활성화 된다.\n- Camera Timeout, Motion Sensor,Use QR as Card\n\n2. QR Preview 화면이 미노출된다.\n\nBS3\n1. Use QR as Card 비활성화\n2. QR 인증 되지 않음",
+      "XS2\n1. 하위 메뉴가 활성화된다.\n- Camera Timeout, Motion Sensor,Use QR as Card (영문)\n- 카메라 대기 시간, 모션 센서 감도, 카드를 QR로 인증하기(국문)\n\nBS3\n1. Use QR as Card 활성화",
+      "1. Camera Preview 영역에 QR Preview 화면이 출력된다.\n- 상단 아이콘 영역: 메뉴 버튼,시계, X버튼\n- 카메라 프리뷰 영역(중앙): Camera QR 스캔 가이드 표시\n- 카메라 프리뷰 영역(하단): ID아이콘, 근태 아이콘 노출\n- 하단에 안내 문구 노출 확인:Input Fingerprint / Card / ID (EN) | 지문 / 카드 / ID를 입력하십시오. (KO) ",
+      "1. 설정한 Camera Timeout으로 동작한다.\n- Camera Preview 영역에 QR Preview 화면이 출력되고 이후 Timeout으로 동작",
+      "1. 모션을 감지해서 QR Preview 화면이 출력된다.\n* 모션 설정이 High에 가까울수록 먼 거리에서 움직이는 물체에 대한 감지가 더 잘 됨\n\n2. 입력된 QR에 대한 인증 결과가 노출된다. ",
+      "1. Enable,Disable 설정할 수 있다.\n(Default: Disabled)",
+      "1. 장치가 재부팅되어도 설정값은 유지된다. ",
+      "1. 사용자에 등록된 CSN/Wiegand 카드 값과 QR값이 동일할 경우 인증이 허용된다.\n- 발급된 카드 ID(10진수값)와 동일하게 QR 생성 후 인증\n(ex: 등록된 Wiegnad 카드 51-235 -> 3342571로 QR 발급)",
+      "1. 사용자에 등록된 CSN/Wiegand 카드 값과 QR값이 동일할 경우 인증이 실패된다.\n- 발급된 카드 ID(10진수값)와 동일하게 QR 생성 후 인증\n(ex: 등록된 Wiegnad 카드 51-235 -> 3342571로 QR 발급)\n",
+      "1. 사용자에 등록된 QR값이 CSN/Wiegand와 동일할 경우 인증이 성공한다.\n-QR : 159753 \n>DIAG LOG: Normal(54104662947123]) / Wiegand(54104662947123)\n",
+      "1. 기존 QR card type 으로 등록된 카드의 경우 data 가 동일하다고 하여도 인증 실패로 처리\n*  type 이 다르므로 인증 실패로 처리",
+      "1. 사용자에 등록된 CSN/Wiegand 카드 값과 QR값이 동일할 경우 인증이 성공한다.\n- 발급된 카드 ID(10진수값)와 동일하게 QR 생성 후 인증\n> 159753 -> 2-28681",
+      "1. 사용자에 등록된 CSN/Wiegand 카드 값과 QR값이 동일할 경우 인증이 실패한다.\n- 발급된 카드 ID(10진수값)와 동일하게 QR 생성 후 인증\n> 159753 -> 2-28681"
+    ]
+  }
+}

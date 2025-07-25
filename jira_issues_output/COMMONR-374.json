@@ -1,0 +1,239 @@
+{
+  "id": "COMMONR-374",
+  "content": [
+    [
+      1,
+      "[출입문 리더 -  Master포함]\n1. Door > Add Door > Entry Device 설정\n2. Door에 속한 장치의 Master 장치 Main UI 확인",
+      "[BioStar]\n1. Master or Slave",
+      "1. Entry Device가 설정된다.\n2. Master 장치 Main UI에 출입문 제어 아이콘 표시된다."
+    ],
+    [
+      2,
+      "[출입문 리더 - Master포함]\n1. Door > Add Door > Exit Device 설정\n2. Door에 속한 장치의 Master 장치 Main UI 확인",
+      "[BioStar]\n1. Master or Slave",
+      "1. Exit Device가 설정된다.\n2. Master 장치 Main UI에 출입문 제어 아이콘 표시된다."
+    ],
+    [
+      3,
+      "[출입문 리더 미포함]\n1. Door > Add Door > Door 생성\n2. 각 Reader에 인증시도",
+      "[BioStar]\nSlave Only(SIO2, DM20 포함)\n\nOM-120, IM-120 Relay 사용 가능\n> Floor 중복 안 된 경우",
+      "1.Master 장치 Main UI에 출입문 제어 아이콘 미표시된다. \n2.출입권한을 가진 사용자가 인증하면 설정된 출입문 Relay가 열리고,'출입문 잠금장치 개방간격'이 경과한 후에 Relay가 닫힌다.\n> Unlock Option 확인 필요\n3. 출입문 열림/닫힘 로그가 저장된다.\n> Door unlocked, Door locked\n4. 출입문 제어 설정과 별개로 동작 한다4"
+    ],
+    [
+      4,
+      "[출입문 리더 - Master포함]\n1. Door > Add Door > Door 생성\n2. 각 Reader에 인증시도",
+      "[BioStar]\n1. Master\n2. Slave(SIO2, DM20 포함)\n\nOM-120, IM-120 Relay 사용 가능\n> Floor 중복 안 된 경우",
+      "1. Master 장치 Main UI에 출입문 제어 아이콘 표시된다.\n2. 출입권한을 가진 사용자가 인증하면 설정된 출입문 Relay가 열리고,'출입문 잠금장치 개방간격'이 경과한 후에 Relay가 닫힌다.\n> Unlock Option 확인 필요\n3. 출입문 열림/닫힘 로그가 저장된다.\n> Door unlocked, Door locked\n4. 출입문 제어 설정과 별개로 동작 한다."
+    ],
+    [
+      5,
+      "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인",
+      "LCD 지원 장치\n1. Master Password 설정되지 않은 상태\n2-1. 전체 관리자가 설정된 상태\n2-2. 장치 설정 관리자만 설정된 상태\n2-3. 사용자 관리자만 설정된 상태",
+      "1. Master 장치 Main UI에 출입문 제어 아이콘이 표시 된다.\n> Admin Menu 진입과 동일하게 동작하여, 사용자 권한을 제외한 모든 권한의 사용자가 인증 없이 출입문 제어 기능을 사용할 수 있다.(확인 필요)\n> 전체/ 장치 권한 관리자로 인증 후 진입하여 출입문 제어 기능 사용 및 정상적으로 기능 동작을 해야 한다.\n> 사용자 권한은 인증 시 \"Permission Denied\" 오류 메시지 발생하고, 진입이 안된다.\n> Master Password 기능 미지원 시 일반 사용자로 출입문 제어가 가능해야 한다.\n\n*** 추후 사양 확인 필요"
+    ],
+    [
+      6,
+      "1. Door에 속한 장치의 Master 장치 Door Control 진입\n2. Unlock, Lock, Normalize(Release) 설정\n3. 적용 후 재진입하여 설정값 확인(Timed)",
+      "LCD 지원 장치\n\n> Master로 구성된 Door\n> Relay - Slave /  Master",
+      "1. 전체/장치 권한의 사용자 인증 후 출입문 제어 진입이 가능하다.\n2. 진입 후 Unlock, Lock, Normalize(Release) 출입문 제어가 가능하다.\n3. 재진입 시 이전에 설정한 값을 확인 할 수 없다.\n"
+    ],
+    [
+      7,
+      "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인\n3. Door> Manual Unlock 설정 > 동작 확인",
+      "LCD 지원 장치\nManual Unlock",
+      "1. 장치 출입문 제어 Unlock 설정에 따라 동작이 된다.\n> Permanent - Normalize(Release) 전까지 Unlock 유지\n> Timed(범위 1 ~ 86,400) - 입력한 시간까지 Unlock 유지 및 시간 이후 초기화 된다.\n2. Door가 Unlock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 개방 자물쇠 아이콘 표시\n> 유효성 체크 (공백 및 . 입력되는지 확인)\n3. Unlock 로그만 발생한다.\n> log 내용\nBiostar : Door unlock request by operator\nDevice : Door unlock request\nRelay : Door unlocked\nDevice Message : Successfully Unlocked"
+    ],
+    [
+      8,
+      "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인\n3. Door> Manual Lock 설정 > 동작 확인",
+      "LCD 지원 장치\nManual Lock",
+      "1. 장치 출입문 제어 Lock 설정에 따라 동작이 된다.\n> Permanent - Normalize(Release) 전까지 Lock 유지\n> Timed(범위 1 ~ 86,400) - 입력한 시간까지 Lock 유지 및 시간 이후 초기화 된다.\n> 유효성 체크 (공백 및 . 입력되는지 확인)\n2. Door가 Lock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 잠금 자물쇠 아이콘 표시\n3. Lock 로그만 발생한다.\n> log 내용\nBiostar : Door lock request by operator\nDevice : Door lock request\nRelay : Door locked\nDevice Message : Successfully locked"
+    ],
+    [
+      9,
+      "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인\n3. Door> Normalize(Release) 동작 확인",
+      "LCD 지원 장치\nManual Unlock / Lock 실행 상태",
+      "1. Manual Unlock 시 Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> log 내용\nBiostar : Door unlock request by operator\nDevice : Door unlock request\nRelay : Door unlocked\nDevice Message : Successfully Unlocked\n3. Manual Lock 시 Door가 Lock 상태를 유지해야한다.\n> log 내용\nBiostar : Door lock request by operator\nDevice : Door lock request\nRelay : Door locked\nDevice Message : Successfully locked\n4. Normalize 시 Door가 Lock 상태를 유지해야 한다.\n> log 내용\nBiostar : Door release request by operator\nDevice : Door release request\nDevice Msg : Successfully Normalized\nRelay : Door unlocked/locked\n> Main UI 상 시간 위 상단에 잠금 자물쇠 아이콘 표시"
+    ],
+    [
+      10,
+      "[BioStar Monitoring - Door Status]\n1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Unlock 버튼 클릭> Master Main UI 확인\n3. Monitoring> Door Status> Manual Lock 버튼 클릭> Master Main UI 확인",
+      "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치",
+      "1. Door가 Unlock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 개방 자물쇠 아이콘 표시\n2. Unlock 로그만 발생한다.\n> Manual Unlock시 Door Status Type이 Operator Unlock 으로 표시되어야 한다.\n3. 로그 확인\n> log 내용\nBiostar : Door unlock request by operator\nDevice : Door unlock request\nRelay : Door unlocked\n4. Door가 Lock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 잠금 자물쇠 아이콘 표시\n5. Lock 로그만 발생한다.\n> Manual Lock시 Door Status Type이 Operator Lock으로 표시되어야 한다.\n> log 내용\nBiostar : Door lock request by operator\nDevice : Door lock request\nRelay : Door locked\n\n*** 추후 로그 수정 예정"
+    ],
+    [
+      11,
+      "[BioStar Monitoring - Door Status]\n1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Unlock 버튼 클릭> Master Main UI 확인\n3. Monitoring> Door Status> Manual Lock 버튼 클릭> Master Main UI 확인",
+      "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
+      "1. Door가 Unlock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 개방 자물쇠 아이콘 표시\n2. Unlock 로그만 발생한다.\n> Manual Unlock시 Door Status Type이 Operator Unlock 으로 표시되어야 한다.\n3. 로그 확인\n> log 내용\nBiostar : Door unlock request by operator\nDevice : Door unlock request\nRelay : Door unlocked\n4. Door가 Lock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 잠금 자물쇠 아이콘 표시\n5. Lock 로그만 발생한다.\n> Manual Lock시 Door Status Type이 Operator Lock으로 표시되어야 한다.\n> log 내용\nBiostar : Door lock request by operator\nDevice : Door lock request\nRelay : Door locked\n\n*** 추후 로그 수정 예정"
+    ],
+    [
+      12,
+      "1. Door> Add Door> Door 생성\n2. Door> Manual Unlock> Door 상태 확인(Unlock)\n3. Master Reboot\n4. Door Status 확인 및 인증 후 동작 확인",
+      "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치",
+      "1. Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n3. Timed의 경우 reboot 시에 door normal 상태로 변경된다.\n※BS3 v1.4.0 릴리즈 이후 변경 예정"
+    ],
+    [
+      13,
+      "1. Door> Add Door> Door 생성\n2. Door> Manual Unlock> Door 상태 확인(Unlock)\n3. Slave Reboot\n4. Door Status 확인 및 인증 후 동작 확인",
+      "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
+      "1. Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n3. Timed의 경우 reboot 시에 door normal 상태로 변경된다.\n※BS3 v1.4.0 릴리즈 이후 변경 예정"
+    ],
+    [
+      14,
+      "1. Door> Add Door> Door 생성\n2. Door에 미포함된 Master 장치 Main UI 확인",
+      "Entry/Exit Device\n> Slave\n\nRelay\n> IO Device\n> Slave Device",
+      "1. 장치 출입문 제어 기능 동작 안한다.\n> 출입문 제어 기능 이전 버전과 동일하게 동작"
+    ],
+    [
+      15,
+      "1. Door> Add Door> Door 생성\n2. Door> Manual Unlock> Door 상태 확인(Unlock)\n3. Slave Power Off\n4. Door> Manual Unlock> Door 상태 확인(Unlock)\n5. Slave Power On \n6. Door Status 확인 및 인증 후 동작 확인",
+      "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
+      "1. Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n3. Door가 Unlock 상태 및 Unlock 로그 발생한다.\n> 경광등 연결하여 Relay  Off 동작 확인\n4. Disconnected된 장치가 연결된 경우, Relay가 동작되어야 한다.\n> 경광등 연결하여 Relay On 동작 확인\n> Door Unlock 상태 유지"
+    ],
+    [
+      16,
+      "[Biostar에서 진입]\n1. Door> Add Door> Door 생성\n> Door에 속한 장치의 Master 장치 Main UI 확인\n2. Biostar > Device > Restore to default: Without Network 실행\n3. 출입문 제어 표시 유무 확인",
+      "Master 장치의 네트워크 설정 변경\n> DHCP/통신모드/Baudrate/RS485 Key\n\n1) Master/Slave 장치가 Door/Zone에 속한 경우",
+      "1. (Door/Zone 설정에 의해) 에러팝업이 발생된다.\n2. 출입문 제어 표시 유지된다."
+    ],
+    [
+      17,
+      "[장치에서 진입]\n1. Door> Add Door> Door 생성\n> Door에 속한 장치의 Master 장치 Main UI 확인\n2. Master 장치> 상세정보창 진입\n3. Restore to default: Without Network  실행\n4. 출입문 제어 표시 유무 확인",
+      "Master 장치의 네트워크 설정 변경\n> DHCP/통신모드/Baudrate/RS485 Key\n\n1) Master/Slave 장치가 Door/Zone에 속한 경우",
+      "1. Master 장치의 Config 초기화 후 재부팅이 발생한다.\n2. 출입문 제어가 미표시 된다."
+    ],
+    [
+      18,
+      "1. Door> Add Door> Door 생성\n> Door에 속한 장치의 Master 장치 Main UI 확인\n2. Master 장치> 상세정보창 진입\n3. Restore to default: ResetAll  실행\n4. 출입문 제어 표시 유무 확인",
+      "Master 장치의 네트워크 설정 변경\n> DHCP/통신모드/Baudrate/RS485 Key\n\n1) Master/Slave 장치가 Door/Zone에 속한 경우",
+      "1. Biostar에서 초기화 진행 시에 (Door/Zone 설정에 의해) 에러팝업이 발생된다.\n2. Master 장치에서 초기화 진행 시에 Config 초기화 후 재부팅되어 출입문 제어가 미표시된다."
+    ],
+    [
+      19,
+      "1. Door> Add Door> Door 생성\n> Door에 속한 장치의 Master 장치 Main UI 확인\n2. Master 장치> 상세정보창 진입\n3. Restore to default: Factory Default 실행\n4. 출입문 제어 표시 유무 확인",
+      "BioStar\n> Secure Communication with Devcie : Use\n> Server&Device encryption key manual management: Use\nMaster 장치의 네트워크 설정 변경\n> DHCP/통신모드/Baudrate/RS485 Key\n\n1) Master/Slave 장치가 Door/Zone에 속한 경우",
+      "1. Master 장치가 공장 초기화 후 재부팅이 발생한다.\n2. 출입문 제어가 미표시 된다."
+    ],
+    [
+      20,
+      "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인\n3. Door> Manual Unlock/Lock 설정 > 동작 확인",
+      "Door 생성 - Relay(Master/Slave)\n> Disable Device",
+      "1. Door Control on Device가 동작 하지 않는다. \n> UI Lock 상태로 해제 전까지 Menu 진입 및 Alarm Zone에서의 Input(Device Lock 장치 Input)에 의한 동작만 가능"
+    ],
+    [
+      21,
+      "1. 설정> 시스템 보안> 장치와 보안통신: 미사용/사용설정\n2. 장치 해시키 수동 관리: 미사용/사용 설정 \n3. Door> Add Door> Door 생성\n4. Tamper 발생>  장치동작 확인",
+      "LCD 지원 장치\nSecure Tamper On \n> Master 장치",
+      "1. Secure Tamper 발생 후 출입문 제어가 표시 된다.\n> Door관련 Config는 유지 하기 때문에."
+    ],
+    [
+      22,
+      "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인",
+      "LCD 미지원 장치\n\n> Master로 구성된 Door\n> Relay - Slave /  Master",
+      "1. 장치 출입문 제어 기능 동작 안한다.\n> 출입문 제어 기능 이전 버전과 동일하게 동작"
+    ],
+    [
+      23,
+      "1. Door> Add Door> Door 생성 \n2. Door > Add Door > Dual Authentication > Device : Entry Device 설정 > Apply\n3. Door에 속한 장치의 Master 장치 Main UI 확인\n4.Door > Add Door > Dual Authentication > Device : Exit Device 설정 > Apply\n5. Door에 속한 장치의 Master 장치 Main UI 확인\"\n",
+      "[BioStar]\n1. Dual Authentication - Device\n> Entry Device Only\n> Exit Device Only\n> Both",
+      "1. Master 장치 Main UI와 인증 화면에 출입문 제어 아이콘 표시된다.\n2. 첫번째 인증 시 출입문 제어 표시 확인 후 두번째 인증 요청 전 출입문 제어 시 기존 인증은 무시하고, 출입 인증으로 전환된다.\n[> 추후 개발 시 사양 확정 예정(두번째는 미표시 할 지 …)]\n[> Arm 진입 시에도 확인 필요]"
+    ],
+    [
+      24,
+      "[Lock Override]\n1. Door > Add Door > Door 생성\n2. Device > Door Control > Manual Lock\n3. Lock Override Card로 인증\n4. Door에서 BS3 Device 제외 후 BS3 UI 확인",
+      "",
+      "3. Lock Override Card 인증 시에 자몰쇠 아이콘 및 Relay Unlock으로 표시\n4. BS3 Main UI에 Door icon & 자물쇠 Unlock Icon  미출력"
+    ],
+    [
+      25,
+      "1. Door Control icon 클릭하여 Door Control 인증 화면으로 진입\n2. Admin 사용자에 등록된 Card, Visual Face 동시 인증",
+      "1. Dual Authentication 미설정\n2. Dual Authentication 설정",
+      "Door Control 메뉴 화면 진입되며 해당 화면에서 인증 시도 시에 무반응으로 동작"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-374",
+    "description": "",
+    "test_step": [
+      "[출입문 리더 -  Master포함]\n1. Door > Add Door > Entry Device 설정\n2. Door에 속한 장치의 Master 장치 Main UI 확인",
+      "[출입문 리더 - Master포함]\n1. Door > Add Door > Exit Device 설정\n2. Door에 속한 장치의 Master 장치 Main UI 확인",
+      "[출입문 리더 미포함]\n1. Door > Add Door > Door 생성\n2. 각 Reader에 인증시도",
+      "[출입문 리더 - Master포함]\n1. Door > Add Door > Door 생성\n2. 각 Reader에 인증시도",
+      "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인",
+      "1. Door에 속한 장치의 Master 장치 Door Control 진입\n2. Unlock, Lock, Normalize(Release) 설정\n3. 적용 후 재진입하여 설정값 확인(Timed)",
+      "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인\n3. Door> Manual Unlock 설정 > 동작 확인",
+      "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인\n3. Door> Manual Lock 설정 > 동작 확인",
+      "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인\n3. Door> Normalize(Release) 동작 확인",
+      "[BioStar Monitoring - Door Status]\n1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Unlock 버튼 클릭> Master Main UI 확인\n3. Monitoring> Door Status> Manual Lock 버튼 클릭> Master Main UI 확인",
+      "[BioStar Monitoring - Door Status]\n1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Unlock 버튼 클릭> Master Main UI 확인\n3. Monitoring> Door Status> Manual Lock 버튼 클릭> Master Main UI 확인",
+      "1. Door> Add Door> Door 생성\n2. Door> Manual Unlock> Door 상태 확인(Unlock)\n3. Master Reboot\n4. Door Status 확인 및 인증 후 동작 확인",
+      "1. Door> Add Door> Door 생성\n2. Door> Manual Unlock> Door 상태 확인(Unlock)\n3. Slave Reboot\n4. Door Status 확인 및 인증 후 동작 확인",
+      "1. Door> Add Door> Door 생성\n2. Door에 미포함된 Master 장치 Main UI 확인",
+      "1. Door> Add Door> Door 생성\n2. Door> Manual Unlock> Door 상태 확인(Unlock)\n3. Slave Power Off\n4. Door> Manual Unlock> Door 상태 확인(Unlock)\n5. Slave Power On \n6. Door Status 확인 및 인증 후 동작 확인",
+      "[Biostar에서 진입]\n1. Door> Add Door> Door 생성\n> Door에 속한 장치의 Master 장치 Main UI 확인\n2. Biostar > Device > Restore to default: Without Network 실행\n3. 출입문 제어 표시 유무 확인",
+      "[장치에서 진입]\n1. Door> Add Door> Door 생성\n> Door에 속한 장치의 Master 장치 Main UI 확인\n2. Master 장치> 상세정보창 진입\n3. Restore to default: Without Network  실행\n4. 출입문 제어 표시 유무 확인",
+      "1. Door> Add Door> Door 생성\n> Door에 속한 장치의 Master 장치 Main UI 확인\n2. Master 장치> 상세정보창 진입\n3. Restore to default: ResetAll  실행\n4. 출입문 제어 표시 유무 확인",
+      "1. Door> Add Door> Door 생성\n> Door에 속한 장치의 Master 장치 Main UI 확인\n2. Master 장치> 상세정보창 진입\n3. Restore to default: Factory Default 실행\n4. 출입문 제어 표시 유무 확인",
+      "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인\n3. Door> Manual Unlock/Lock 설정 > 동작 확인",
+      "1. 설정> 시스템 보안> 장치와 보안통신: 미사용/사용설정\n2. 장치 해시키 수동 관리: 미사용/사용 설정 \n3. Door> Add Door> Door 생성\n4. Tamper 발생>  장치동작 확인",
+      "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인",
+      "1. Door> Add Door> Door 생성 \n2. Door > Add Door > Dual Authentication > Device : Entry Device 설정 > Apply\n3. Door에 속한 장치의 Master 장치 Main UI 확인\n4.Door > Add Door > Dual Authentication > Device : Exit Device 설정 > Apply\n5. Door에 속한 장치의 Master 장치 Main UI 확인\"\n",
+      "[Lock Override]\n1. Door > Add Door > Door 생성\n2. Device > Door Control > Manual Lock\n3. Lock Override Card로 인증\n4. Door에서 BS3 Device 제외 후 BS3 UI 확인",
+      "1. Door Control icon 클릭하여 Door Control 인증 화면으로 진입\n2. Admin 사용자에 등록된 Card, Visual Face 동시 인증"
+    ],
+    "data": [
+      "[BioStar]\n1. Master or Slave",
+      "[BioStar]\n1. Master or Slave",
+      "[BioStar]\nSlave Only(SIO2, DM20 포함)\n\nOM-120, IM-120 Relay 사용 가능\n> Floor 중복 안 된 경우",
+      "[BioStar]\n1. Master\n2. Slave(SIO2, DM20 포함)\n\nOM-120, IM-120 Relay 사용 가능\n> Floor 중복 안 된 경우",
+      "LCD 지원 장치\n1. Master Password 설정되지 않은 상태\n2-1. 전체 관리자가 설정된 상태\n2-2. 장치 설정 관리자만 설정된 상태\n2-3. 사용자 관리자만 설정된 상태",
+      "LCD 지원 장치\n\n> Master로 구성된 Door\n> Relay - Slave /  Master",
+      "LCD 지원 장치\nManual Unlock",
+      "LCD 지원 장치\nManual Lock",
+      "LCD 지원 장치\nManual Unlock / Lock 실행 상태",
+      "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치",
+      "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
+      "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치",
+      "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
+      "Entry/Exit Device\n> Slave\n\nRelay\n> IO Device\n> Slave Device",
+      "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
+      "Master 장치의 네트워크 설정 변경\n> DHCP/통신모드/Baudrate/RS485 Key\n\n1) Master/Slave 장치가 Door/Zone에 속한 경우",
+      "Master 장치의 네트워크 설정 변경\n> DHCP/통신모드/Baudrate/RS485 Key\n\n1) Master/Slave 장치가 Door/Zone에 속한 경우",
+      "Master 장치의 네트워크 설정 변경\n> DHCP/통신모드/Baudrate/RS485 Key\n\n1) Master/Slave 장치가 Door/Zone에 속한 경우",
+      "BioStar\n> Secure Communication with Devcie : Use\n> Server&Device encryption key manual management: Use\nMaster 장치의 네트워크 설정 변경\n> DHCP/통신모드/Baudrate/RS485 Key\n\n1) Master/Slave 장치가 Door/Zone에 속한 경우",
+      "Door 생성 - Relay(Master/Slave)\n> Disable Device",
+      "LCD 지원 장치\nSecure Tamper On \n> Master 장치",
+      "LCD 미지원 장치\n\n> Master로 구성된 Door\n> Relay - Slave /  Master",
+      "[BioStar]\n1. Dual Authentication - Device\n> Entry Device Only\n> Exit Device Only\n> Both",
+      "1. Dual Authentication 미설정\n2. Dual Authentication 설정"
+    ],
+    "expected_result": [
+      "1. Entry Device가 설정된다.\n2. Master 장치 Main UI에 출입문 제어 아이콘 표시된다.",
+      "1. Exit Device가 설정된다.\n2. Master 장치 Main UI에 출입문 제어 아이콘 표시된다.",
+      "1.Master 장치 Main UI에 출입문 제어 아이콘 미표시된다. \n2.출입권한을 가진 사용자가 인증하면 설정된 출입문 Relay가 열리고,'출입문 잠금장치 개방간격'이 경과한 후에 Relay가 닫힌다.\n> Unlock Option 확인 필요\n3. 출입문 열림/닫힘 로그가 저장된다.\n> Door unlocked, Door locked\n4. 출입문 제어 설정과 별개로 동작 한다4",
+      "1. Master 장치 Main UI에 출입문 제어 아이콘 표시된다.\n2. 출입권한을 가진 사용자가 인증하면 설정된 출입문 Relay가 열리고,'출입문 잠금장치 개방간격'이 경과한 후에 Relay가 닫힌다.\n> Unlock Option 확인 필요\n3. 출입문 열림/닫힘 로그가 저장된다.\n> Door unlocked, Door locked\n4. 출입문 제어 설정과 별개로 동작 한다.",
+      "1. Master 장치 Main UI에 출입문 제어 아이콘이 표시 된다.\n> Admin Menu 진입과 동일하게 동작하여, 사용자 권한을 제외한 모든 권한의 사용자가 인증 없이 출입문 제어 기능을 사용할 수 있다.(확인 필요)\n> 전체/ 장치 권한 관리자로 인증 후 진입하여 출입문 제어 기능 사용 및 정상적으로 기능 동작을 해야 한다.\n> 사용자 권한은 인증 시 \"Permission Denied\" 오류 메시지 발생하고, 진입이 안된다.\n> Master Password 기능 미지원 시 일반 사용자로 출입문 제어가 가능해야 한다.\n\n*** 추후 사양 확인 필요",
+      "1. 전체/장치 권한의 사용자 인증 후 출입문 제어 진입이 가능하다.\n2. 진입 후 Unlock, Lock, Normalize(Release) 출입문 제어가 가능하다.\n3. 재진입 시 이전에 설정한 값을 확인 할 수 없다.\n",
+      "1. 장치 출입문 제어 Unlock 설정에 따라 동작이 된다.\n> Permanent - Normalize(Release) 전까지 Unlock 유지\n> Timed(범위 1 ~ 86,400) - 입력한 시간까지 Unlock 유지 및 시간 이후 초기화 된다.\n2. Door가 Unlock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 개방 자물쇠 아이콘 표시\n> 유효성 체크 (공백 및 . 입력되는지 확인)\n3. Unlock 로그만 발생한다.\n> log 내용\nBiostar : Door unlock request by operator\nDevice : Door unlock request\nRelay : Door unlocked\nDevice Message : Successfully Unlocked",
+      "1. 장치 출입문 제어 Lock 설정에 따라 동작이 된다.\n> Permanent - Normalize(Release) 전까지 Lock 유지\n> Timed(범위 1 ~ 86,400) - 입력한 시간까지 Lock 유지 및 시간 이후 초기화 된다.\n> 유효성 체크 (공백 및 . 입력되는지 확인)\n2. Door가 Lock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 잠금 자물쇠 아이콘 표시\n3. Lock 로그만 발생한다.\n> log 내용\nBiostar : Door lock request by operator\nDevice : Door lock request\nRelay : Door locked\nDevice Message : Successfully locked",
+      "1. Manual Unlock 시 Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> log 내용\nBiostar : Door unlock request by operator\nDevice : Door unlock request\nRelay : Door unlocked\nDevice Message : Successfully Unlocked\n3. Manual Lock 시 Door가 Lock 상태를 유지해야한다.\n> log 내용\nBiostar : Door lock request by operator\nDevice : Door lock request\nRelay : Door locked\nDevice Message : Successfully locked\n4. Normalize 시 Door가 Lock 상태를 유지해야 한다.\n> log 내용\nBiostar : Door release request by operator\nDevice : Door release request\nDevice Msg : Successfully Normalized\nRelay : Door unlocked/locked\n> Main UI 상 시간 위 상단에 잠금 자물쇠 아이콘 표시",
+      "1. Door가 Unlock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 개방 자물쇠 아이콘 표시\n2. Unlock 로그만 발생한다.\n> Manual Unlock시 Door Status Type이 Operator Unlock 으로 표시되어야 한다.\n3. 로그 확인\n> log 내용\nBiostar : Door unlock request by operator\nDevice : Door unlock request\nRelay : Door unlocked\n4. Door가 Lock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 잠금 자물쇠 아이콘 표시\n5. Lock 로그만 발생한다.\n> Manual Lock시 Door Status Type이 Operator Lock으로 표시되어야 한다.\n> log 내용\nBiostar : Door lock request by operator\nDevice : Door lock request\nRelay : Door locked\n\n*** 추후 로그 수정 예정",
+      "1. Door가 Unlock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 개방 자물쇠 아이콘 표시\n2. Unlock 로그만 발생한다.\n> Manual Unlock시 Door Status Type이 Operator Unlock 으로 표시되어야 한다.\n3. 로그 확인\n> log 내용\nBiostar : Door unlock request by operator\nDevice : Door unlock request\nRelay : Door unlocked\n4. Door가 Lock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 잠금 자물쇠 아이콘 표시\n5. Lock 로그만 발생한다.\n> Manual Lock시 Door Status Type이 Operator Lock으로 표시되어야 한다.\n> log 내용\nBiostar : Door lock request by operator\nDevice : Door lock request\nRelay : Door locked\n\n*** 추후 로그 수정 예정",
+      "1. Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n3. Timed의 경우 reboot 시에 door normal 상태로 변경된다.\n※BS3 v1.4.0 릴리즈 이후 변경 예정",
+      "1. Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n3. Timed의 경우 reboot 시에 door normal 상태로 변경된다.\n※BS3 v1.4.0 릴리즈 이후 변경 예정",
+      "1. 장치 출입문 제어 기능 동작 안한다.\n> 출입문 제어 기능 이전 버전과 동일하게 동작",
+      "1. Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n3. Door가 Unlock 상태 및 Unlock 로그 발생한다.\n> 경광등 연결하여 Relay  Off 동작 확인\n4. Disconnected된 장치가 연결된 경우, Relay가 동작되어야 한다.\n> 경광등 연결하여 Relay On 동작 확인\n> Door Unlock 상태 유지",
+      "1. (Door/Zone 설정에 의해) 에러팝업이 발생된다.\n2. 출입문 제어 표시 유지된다.",
+      "1. Master 장치의 Config 초기화 후 재부팅이 발생한다.\n2. 출입문 제어가 미표시 된다.",
+      "1. Biostar에서 초기화 진행 시에 (Door/Zone 설정에 의해) 에러팝업이 발생된다.\n2. Master 장치에서 초기화 진행 시에 Config 초기화 후 재부팅되어 출입문 제어가 미표시된다.",
+      "1. Master 장치가 공장 초기화 후 재부팅이 발생한다.\n2. 출입문 제어가 미표시 된다.",
+      "1. Door Control on Device가 동작 하지 않는다. \n> UI Lock 상태로 해제 전까지 Menu 진입 및 Alarm Zone에서의 Input(Device Lock 장치 Input)에 의한 동작만 가능",
+      "1. Secure Tamper 발생 후 출입문 제어가 표시 된다.\n> Door관련 Config는 유지 하기 때문에.",
+      "1. 장치 출입문 제어 기능 동작 안한다.\n> 출입문 제어 기능 이전 버전과 동일하게 동작",
+      "1. Master 장치 Main UI와 인증 화면에 출입문 제어 아이콘 표시된다.\n2. 첫번째 인증 시 출입문 제어 표시 확인 후 두번째 인증 요청 전 출입문 제어 시 기존 인증은 무시하고, 출입 인증으로 전환된다.\n[> 추후 개발 시 사양 확정 예정(두번째는 미표시 할 지 …)]\n[> Arm 진입 시에도 확인 필요]",
+      "3. Lock Override Card 인증 시에 자몰쇠 아이콘 및 Relay Unlock으로 표시\n4. BS3 Main UI에 Door icon & 자물쇠 Unlock Icon  미출력",
+      "Door Control 메뉴 화면 진입되며 해당 화면에서 인증 시도 시에 무반응으로 동작"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "COMMONR-100",
+  "content": [
+    [
+      1,
+      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Authentication > Motion Sensor : Off/Low/Medium/High 설정",
+      "1. Server, Direct Mode Connection\n2. Motion Sensor\n> Off\n> Low\n> Medium\n> High",
+      "1. 얼굴 검출을 설정할 수 있어야 한다.\n= Device에 설정된 정보와 비교\n> Off : 얼굴 검출 미지원\n> Slave 장치에서는 얼굴검출 미지원\n> FS2 : 화면 터치 후 얼굴 인식 가능\n> FL : ESC Long 입력 후 얼굴 인식 가능"
+    ],
+    [
+      2,
+      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Authentication > Motion Sensor : Off/Low/Medium/High 설정\n2. 인증모드 설정\n3. 인증시도",
+      "1. Server, Direct Mode Connection\n> 장치인증모드\n> 개인인증모드\n> 이중인증\n2. Motion Sensor\n> Off\n> Low\n> Medium\n> High",
+      "1. 설정한대로 동작된다.\n2. Off 설정인 경우 자동으로 얼굴인증모드로 진입되지 않는다.(화면터치시 얼굴인증모드 진입)\n3. 가까운 거리(책상에 단말기를 두고 테스트)에서 확인시 Low/Medium/High 설정 모두 얼굴인식이 되어 얼굴인증이 이루어진다.\n4. 먼 거리에서는 High 설정에 가까울 수록 움직이는 물체에 대한 감지가 되고 얼굴인식이 되면 얼굴인증이 이루어진다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-100",
+    "description": "",
+    "test_step": [
+      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Authentication > Motion Sensor : Off/Low/Medium/High 설정",
+      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Authentication > Motion Sensor : Off/Low/Medium/High 설정\n2. 인증모드 설정\n3. 인증시도"
+    ],
+    "data": [
+      "1. Server, Direct Mode Connection\n2. Motion Sensor\n> Off\n> Low\n> Medium\n> High",
+      "1. Server, Direct Mode Connection\n> 장치인증모드\n> 개인인증모드\n> 이중인증\n2. Motion Sensor\n> Off\n> Low\n> Medium\n> High"
+    ],
+    "expected_result": [
+      "1. 얼굴 검출을 설정할 수 있어야 한다.\n= Device에 설정된 정보와 비교\n> Off : 얼굴 검출 미지원\n> Slave 장치에서는 얼굴검출 미지원\n> FS2 : 화면 터치 후 얼굴 인식 가능\n> FL : ESC Long 입력 후 얼굴 인식 가능",
+      "1. 설정한대로 동작된다.\n2. Off 설정인 경우 자동으로 얼굴인증모드로 진입되지 않는다.(화면터치시 얼굴인증모드 진입)\n3. 가까운 거리(책상에 단말기를 두고 테스트)에서 확인시 Low/Medium/High 설정 모두 얼굴인식이 되어 얼굴인증이 이루어진다.\n4. 먼 거리에서는 High 설정에 가까울 수록 움직이는 물체에 대한 감지가 되고 얼굴인식이 되면 얼굴인증이 이루어진다."
+    ]
+  }
+}

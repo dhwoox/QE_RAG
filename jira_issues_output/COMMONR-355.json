@@ -1,0 +1,33 @@
+{
+  "id": "COMMONR-355",
+  "content": [
+    [
+      1,
+      "[얼굴지원장치]\n1. USER > ADD USER > Credential\n2. Visual Face > Face 1 / Face 2 > Scan Face, Image Upload\n3. 장치로 사용자 전송",
+      "[Device]\nBioStation 3 개선 버전(QFaceEngine SDK  0.13.1 포함)\n[BioStar]\n1. 해당 기능 장치 선택\n2. 인당 등록 가능 Max 상이\n> 최대 5개 입력 가능 - FS2/FL\n> 최대 2개 입력 가능 - F2/BS3/W3",
+      "1. 장치에서 BioStar 를 통해 얼굴 등록 시 등록된 사용자의 눈이 중앙이 아닌 상태로 틀어지지 않는다.\n> 장치를 이용하여 등록 시 정상 등록 된다.\n> Image Upload를 이용하여 등록 시 정상 등록 된다.\n=> Black Boundary는 완전히 제거할 수 없다.\n2. 등록된 사용자에 대해서 인증 시 오인증 발생 없이 인증 성공/실패로 동작 한다.\n> 오인증 발생하는 상단에 얼굴 입력(눈아래)시 인증 유무 확인"
+    ],
+    [
+      2,
+      "[얼굴지원장치]\n1. USER / Operator > Enroll User > Credential\n2. FaceEX > Scan Face / Image Face > Apply\n3. 장치로 사용자 전송",
+      "[Device]\nBioStation 3 개선 버전(QFaceEngine SDK  0.13.1 포함)\n[SDK]\n1. 해당 기능 장치 선택\n2. 인당 등록 가능 Max 상이\n> 최대 5개 입력 가능 - FS2/FL\n> 최대 2개 입력 가능 - F2/BS3/W3",
+      "1. 장치에서 BioStar 를 통해 얼굴 등록 시 등록된 사용자의 눈이 중앙이 아닌 상태로 틀어지지 않는다.\n> 장치를 이용하여 등록 시 정상 등록 된다.\n> Image Upload를 이용하여 등록 시 정상 등록 된다.\n=> Black Boundary는 완전히 제거할 수 없다.\n2. 등록된 사용자에 대해서 인증 시 오인증 발생 없이 인증 성공/실패로 동작 한다.\n> 오인증 발생하는 상단에 얼굴 입력(눈아래)시 인증 유무 확인"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-355",
+    "description": "",
+    "test_step": [
+      "[얼굴지원장치]\n1. USER > ADD USER > Credential\n2. Visual Face > Face 1 / Face 2 > Scan Face, Image Upload\n3. 장치로 사용자 전송",
+      "[얼굴지원장치]\n1. USER / Operator > Enroll User > Credential\n2. FaceEX > Scan Face / Image Face > Apply\n3. 장치로 사용자 전송"
+    ],
+    "data": [
+      "[Device]\nBioStation 3 개선 버전(QFaceEngine SDK  0.13.1 포함)\n[BioStar]\n1. 해당 기능 장치 선택\n2. 인당 등록 가능 Max 상이\n> 최대 5개 입력 가능 - FS2/FL\n> 최대 2개 입력 가능 - F2/BS3/W3",
+      "[Device]\nBioStation 3 개선 버전(QFaceEngine SDK  0.13.1 포함)\n[SDK]\n1. 해당 기능 장치 선택\n2. 인당 등록 가능 Max 상이\n> 최대 5개 입력 가능 - FS2/FL\n> 최대 2개 입력 가능 - F2/BS3/W3"
+    ],
+    "expected_result": [
+      "1. 장치에서 BioStar 를 통해 얼굴 등록 시 등록된 사용자의 눈이 중앙이 아닌 상태로 틀어지지 않는다.\n> 장치를 이용하여 등록 시 정상 등록 된다.\n> Image Upload를 이용하여 등록 시 정상 등록 된다.\n=> Black Boundary는 완전히 제거할 수 없다.\n2. 등록된 사용자에 대해서 인증 시 오인증 발생 없이 인증 성공/실패로 동작 한다.\n> 오인증 발생하는 상단에 얼굴 입력(눈아래)시 인증 유무 확인",
+      "1. 장치에서 BioStar 를 통해 얼굴 등록 시 등록된 사용자의 눈이 중앙이 아닌 상태로 틀어지지 않는다.\n> 장치를 이용하여 등록 시 정상 등록 된다.\n> Image Upload를 이용하여 등록 시 정상 등록 된다.\n=> Black Boundary는 완전히 제거할 수 없다.\n2. 등록된 사용자에 대해서 인증 시 오인증 발생 없이 인증 성공/실패로 동작 한다.\n> 오인증 발생하는 상단에 얼굴 입력(눈아래)시 인증 유무 확인"
+    ]
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "id": "COMMONR-253",
+  "content": [
+    [
+      1,
+      "1. Door 추가> Anti-Tailgating 설정\n2. Switch Type으로 Sensor 접지 후 인증시도",
+      "Anti-Tailgating\n> Input Sensor - Master\n> Switch Type - N/O, N/C",
+      "1. 설정한 스위치 타입으로 동작되어 인증시 출입거부로 동작된다.\n> 출입거부(Anti-Tailgating) 로그 출력"
+    ],
+    [
+      2,
+      "1. Door 추가> Anti-Tailgating 설정\n2. Switch Type으로 Sensor 접지 후 인증시도",
+      "Anti-Tailgating\n> Input Sensor - Slave\n> Switch Type - N/O, N/C",
+      "1. 설정한 스위치 타입으로 동작되어 인증시 출입거부로 동작된다.\n> 출입거부(Anti-Tailgating) 로그 출력"
+    ],
+    [
+      3,
+      "1. Door 추가> Anti-Tailgating 설정\n2. Switch Type으로 Sensor 접지 후 인증시도",
+      "Anti-Tailgating\n> Input Sensor - I/O Device의 Input\n> Switch Type - N/O, N/C",
+      "1. 설정한 스위치 타입으로 동작되어 인증시 출입거부로 동작된다.\n> 출입거부(Anti-Tailgating) 로그 출력"
+    ],
+    [
+      4,
+      "1. Door 추가> Anti-Tailgating 설정\n2. Switch Type으로 Sensor 접지 후 인증시도",
+      "Anti-Tailgating\n> Input Sensor - I/O Device의 Supervised Input\n> Switch Type - N/O, N/C",
+      "1. 설정한 스위치 타입으로 동작되어 인증시 출입거부로 동작된다.\n> 출입거부(Anti-Tailgating) 로그 출력"
+    ],
+    [
+      5,
+      "1. Door 추가> Anti-Tailgating 설정\n2. Switch Type으로 Sensor 접지 후 인증시도",
+      "Group Matching 설정\nAnti-Tailgating\n> Input Sensor - Master/Slave\n> Switch Type - N/O, N/C",
+      "1. 설정한 스위치 타입으로 동작되어 Group Matching으로 인증시 출입거부로 동작된다.\n> 출입거부(Anti-Tailgating) 로그 출력"
+    ],
+    [
+      6,
+      "1. Door에 Anti-Tailgating 설정\n2. Trigger&Action 설정\n3. Anti-Tailgating 발생\n4. Trigger&Action 유무 확인",
+      "Trigger&Action 설정\n> Event: Anti-Tailgating(Master)\n> Action: Output Signal(Master, Slave,I/O Device)",
+      "1. Anti-Tailgating 이벤트 발생시 설정한 Action대로 동작된다.\n\n2. 발생된 Action에 대해서는 Mornitoring의 Device Status에서 장치선택해 해제 가능하다."
+    ],
+    [
+      7,
+      "1. Door에 Anti-Tailgating 설정\n2. Trigger&Action 설정\n3. Anti-Tailgating 발생\n4. Trigger&Action 유무 확인",
+      "Trigger&Action 설정\n> Event: Anti-Tailgating(Master)\n> Action: Sound(Master, Slave)",
+      "1. Anti-Tailgating 이벤트 발생시 설정한 Action대로 동작된다.\n> Master로 설정한 경우 인증실패음과 Sound의 우선순위가 같기 때문에 인증실패음만 발생됨\n\n2. 발생된 Action에 대해서는 Mornitoring의 Device Status에서 장치선택해 해제 가능하다."
+    ],
+    [
+      8,
+      "1. Door에 Anti-Tailgating 설정\n2. Trigger&Action 설정\n3. Anti-Tailgating 발생\n4. Trigger&Action 유무 확인",
+      "Trigger&Action 설정\n> Event: Anti-Tailgating(Master)\n> Action: Device Locked(Master, Slave, I/O Device)\n\n* BLNIIFW-259 참고\n> Develop branch 사용장치 - io device 에 대해 장치잠금 로그 발생\n> releaseAC branch 사용장치 - io device에 대해 장치잠금 로그 미발생",
+      "1. Anti-Tailgating 이벤트 발생시 설정한 Action대로 동작된다.\n> I/O Device의 경우 무시된다(로그 발생(Master, Biostar 생성)\n\n2. 발생된 Action에 대해서는 Device에서 장치선택해 Unlock 시 해제 가능하다."
+    ],
+    [
+      9,
+      "1. Door에 Anti-Tailgating 설정\n2. Trigger&Action 설정\n3. Anti-Tailgating 발생\n4. Trigger&Action 유무 확인",
+      "Trigger&Action 설정\n> Event: Anti-Tailgating(Slave)\n> Action: Output Signal(Master, Slave,I/O Device)",
+      "1. Anti-Tailgating 이벤트 발생시 설정한 Action대로 동작된다.\n\n2. 발생된 Action에 대해서는 Mornitoring의 Device Status에서 장치선택해 해제 가능하다."
+    ],
+    [
+      10,
+      "1. Door에 Anti-Tailgating 설정\n2. Trigger&Action 설정\n3. Anti-Tailgating 발생\n4. Trigger&Action 유무 확인",
+      "Trigger&Action 설정\n> Event: Anti-Tailgating(Slave)\n> Action: Sound(Master, Slave)",
+      "1. Anti-Tailgating 이벤트 발생시 설정한 Action대로 동작된다.\n> Master로 설정한 경우 인증실패음과 Sound의 우선순위가 같기 때문에 인증실패음만 발생됨\n\n2. 발생된 Action에 대해서는 Mornitoring의 Device Status에서 장치선택해 해제 가능하다."
+    ],
+    [
+      11,
+      "1. Door에 Anti-Tailgating 설정\n2. Trigger&Action 설정\n3. Anti-Tailgating 발생\n4. Trigger&Action 유무 확인",
+      "Trigger&Action 설정\n> Event: Anti-Tailgating(Slave)\n> Action: Device Locked(Master, Slave, I/O Device)\n\n* BLNIIFW-259 참고\n> Develop branch 사용장치 - io device 에 대해 장치잠금 로그 발생\n> releaseAC branch 사용장치 - io device에 대해 장치잠금 로그 미발생",
+      "1. Anti-Tailgating 이벤트 발생시 설정한 Action대로 동작된다.\n> I/O Device의 경우 무시된다(로그 발생(Master, Biostar 생성)\n\n2. 발생된 Action에 대해서는 Device에서 장치선택해 Unlock 시 해제 가능하다."
+    ],
+    [
+      12,
+      "1. Door 추가> Anti-Tailgating 설정\n2. Sensor 접지 후 인증시도\n3. Anti-Tailgating 설정 삭제 후 저장\n4. 삭제 전 설정한 Sensor 접지 후 인증시도",
+      "",
+      "1. 인증성공으로 동작된다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-253",
+    "description": "",
+    "test_step": [
+      "1. Door 추가> Anti-Tailgating 설정\n2. Switch Type으로 Sensor 접지 후 인증시도",
+      "1. Door 추가> Anti-Tailgating 설정\n2. Switch Type으로 Sensor 접지 후 인증시도",
+      "1. Door 추가> Anti-Tailgating 설정\n2. Switch Type으로 Sensor 접지 후 인증시도",
+      "1. Door 추가> Anti-Tailgating 설정\n2. Switch Type으로 Sensor 접지 후 인증시도",
+      "1. Door 추가> Anti-Tailgating 설정\n2. Switch Type으로 Sensor 접지 후 인증시도",
+      "1. Door에 Anti-Tailgating 설정\n2. Trigger&Action 설정\n3. Anti-Tailgating 발생\n4. Trigger&Action 유무 확인",
+      "1. Door에 Anti-Tailgating 설정\n2. Trigger&Action 설정\n3. Anti-Tailgating 발생\n4. Trigger&Action 유무 확인",
+      "1. Door에 Anti-Tailgating 설정\n2. Trigger&Action 설정\n3. Anti-Tailgating 발생\n4. Trigger&Action 유무 확인",
+      "1. Door에 Anti-Tailgating 설정\n2. Trigger&Action 설정\n3. Anti-Tailgating 발생\n4. Trigger&Action 유무 확인",
+      "1. Door에 Anti-Tailgating 설정\n2. Trigger&Action 설정\n3. Anti-Tailgating 발생\n4. Trigger&Action 유무 확인",
+      "1. Door에 Anti-Tailgating 설정\n2. Trigger&Action 설정\n3. Anti-Tailgating 발생\n4. Trigger&Action 유무 확인",
+      "1. Door 추가> Anti-Tailgating 설정\n2. Sensor 접지 후 인증시도\n3. Anti-Tailgating 설정 삭제 후 저장\n4. 삭제 전 설정한 Sensor 접지 후 인증시도"
+    ],
+    "data": [
+      "Anti-Tailgating\n> Input Sensor - Master\n> Switch Type - N/O, N/C",
+      "Anti-Tailgating\n> Input Sensor - Slave\n> Switch Type - N/O, N/C",
+      "Anti-Tailgating\n> Input Sensor - I/O Device의 Input\n> Switch Type - N/O, N/C",
+      "Anti-Tailgating\n> Input Sensor - I/O Device의 Supervised Input\n> Switch Type - N/O, N/C",
+      "Group Matching 설정\nAnti-Tailgating\n> Input Sensor - Master/Slave\n> Switch Type - N/O, N/C",
+      "Trigger&Action 설정\n> Event: Anti-Tailgating(Master)\n> Action: Output Signal(Master, Slave,I/O Device)",
+      "Trigger&Action 설정\n> Event: Anti-Tailgating(Master)\n> Action: Sound(Master, Slave)",
+      "Trigger&Action 설정\n> Event: Anti-Tailgating(Master)\n> Action: Device Locked(Master, Slave, I/O Device)\n\n* BLNIIFW-259 참고\n> Develop branch 사용장치 - io device 에 대해 장치잠금 로그 발생\n> releaseAC branch 사용장치 - io device에 대해 장치잠금 로그 미발생",
+      "Trigger&Action 설정\n> Event: Anti-Tailgating(Slave)\n> Action: Output Signal(Master, Slave,I/O Device)",
+      "Trigger&Action 설정\n> Event: Anti-Tailgating(Slave)\n> Action: Sound(Master, Slave)",
+      "Trigger&Action 설정\n> Event: Anti-Tailgating(Slave)\n> Action: Device Locked(Master, Slave, I/O Device)\n\n* BLNIIFW-259 참고\n> Develop branch 사용장치 - io device 에 대해 장치잠금 로그 발생\n> releaseAC branch 사용장치 - io device에 대해 장치잠금 로그 미발생"
+    ],
+    "expected_result": [
+      "1. 설정한 스위치 타입으로 동작되어 인증시 출입거부로 동작된다.\n> 출입거부(Anti-Tailgating) 로그 출력",
+      "1. 설정한 스위치 타입으로 동작되어 인증시 출입거부로 동작된다.\n> 출입거부(Anti-Tailgating) 로그 출력",
+      "1. 설정한 스위치 타입으로 동작되어 인증시 출입거부로 동작된다.\n> 출입거부(Anti-Tailgating) 로그 출력",
+      "1. 설정한 스위치 타입으로 동작되어 인증시 출입거부로 동작된다.\n> 출입거부(Anti-Tailgating) 로그 출력",
+      "1. 설정한 스위치 타입으로 동작되어 Group Matching으로 인증시 출입거부로 동작된다.\n> 출입거부(Anti-Tailgating) 로그 출력",
+      "1. Anti-Tailgating 이벤트 발생시 설정한 Action대로 동작된다.\n\n2. 발생된 Action에 대해서는 Mornitoring의 Device Status에서 장치선택해 해제 가능하다.",
+      "1. Anti-Tailgating 이벤트 발생시 설정한 Action대로 동작된다.\n> Master로 설정한 경우 인증실패음과 Sound의 우선순위가 같기 때문에 인증실패음만 발생됨\n\n2. 발생된 Action에 대해서는 Mornitoring의 Device Status에서 장치선택해 해제 가능하다.",
+      "1. Anti-Tailgating 이벤트 발생시 설정한 Action대로 동작된다.\n> I/O Device의 경우 무시된다(로그 발생(Master, Biostar 생성)\n\n2. 발생된 Action에 대해서는 Device에서 장치선택해 Unlock 시 해제 가능하다.",
+      "1. Anti-Tailgating 이벤트 발생시 설정한 Action대로 동작된다.\n\n2. 발생된 Action에 대해서는 Mornitoring의 Device Status에서 장치선택해 해제 가능하다.",
+      "1. Anti-Tailgating 이벤트 발생시 설정한 Action대로 동작된다.\n> Master로 설정한 경우 인증실패음과 Sound의 우선순위가 같기 때문에 인증실패음만 발생됨\n\n2. 발생된 Action에 대해서는 Mornitoring의 Device Status에서 장치선택해 해제 가능하다.",
+      "1. Anti-Tailgating 이벤트 발생시 설정한 Action대로 동작된다.\n> I/O Device의 경우 무시된다(로그 발생(Master, Biostar 생성)\n\n2. 발생된 Action에 대해서는 Device에서 장치선택해 Unlock 시 해제 가능하다.",
+      "1. 인증성공으로 동작된다."
+    ]
+  }
+}

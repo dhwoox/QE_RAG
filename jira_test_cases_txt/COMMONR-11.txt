@@ -1,5 +1,17 @@
 ■ 이슈 키: COMMONR-11
 ■ 제목: 출입그룹
+■ 설명: 출입그룹 설정 및 동작에 이상이 없는지 확인
+
+*{color:#d04437}-> Max AG : 2048
+ -> Max AL : 2048
+ -> Max FL : 2048 (추후 지원 예정)
+ -> Max AL per AG : 128
+ -> Max Door per AL : 128
+ -> Max Door per Device : 32
+ -> Max AG per User : 16{color}*
+
+※ 하나의 Access Level에 출입문 최대 128개 + 스케줄 최대 128개까지 지원함
+※ 하나의 Floor Level에 Elevator 최대 128개 + Floor Name 최대 128개 + 스케줄 최대 128개까지 지원함
 ============================================================
 
 ■ 테스트 스텝

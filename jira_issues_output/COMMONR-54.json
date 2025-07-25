@@ -1,0 +1,190 @@
+{
+  "id": "COMMONR-54",
+  "content": [
+    [
+      1,
+      "1. Zone> Add Zone\n2. FireAlarm Zone의 Status 설정 -> Configuration의 Active/Inactive\n3. FireAlarm 발생",
+      "Status\n> Active\n> Inactive",
+      "> Active인 경우 FireAlarm 발생시 FireAlarm으로 동작해야 한다.\n> Inactive인 경우 FireAlarm이 동작하지 않아야 한다."
+    ],
+    [
+      2,
+      "1. Zone> Add Zone\n2. FireAlarm Zone의 Mode 설정",
+      "Mode\n> Local Zone",
+      "> Master 장치에 RS485/Network로 연결된 장치들로 구성된 Door 또는 Elevator들로 설정이 되어야 한다.\n\n(on) 최대 32개 Door\n(on) 최대 1개 Elevator\n(off) 동시 설정 불가"
+    ],
+    [
+      3,
+      "[Door/Floor 설정된 상태]\n1. Zone> Add Zone\n2. FireAlarm Zone의 Mode 설정",
+      "Mode\n> Global Zone",
+      "> RS485/Network들로 구성된 모든 출입문에 대해 설정이 되어야 한다.\n> Door와 Elevator를 동시에 설정 가능해야 한다."
+    ],
+    [
+      4,
+      "[Door 설정된 상태]\n1. Zone> Add Zone> FireAlarm Zone\n2. FireAlarm Zone의 Input 설정",
+      "> Master 장치의 Input Port\n> Slave 장치의 Input Port",
+      "선택된 출입문의 Master/Slave 장치들의 Input Port에 대해 설정할 수 있어야 한다."
+    ],
+    [
+      5,
+      "[Elevator 설정된 상태]\n1. Zone> Add Zone\n2. FireAlarm Zone의 Input 설정",
+      "> Master 장치의 Input Port\n> Slave 장치의 Input Port",
+      "선택된 Elevator의 Master장치/Slave 장치들(OM-120 포함)의 Input Port에 대해 설정할 수 있어야 한다."
+    ],
+    [
+      6,
+      "[Door 설정된 상태]\n1. Zone> Add Zone\n2. FireAlarm Input의 Switch Type 설정",
+      "Switch Type\n> Normal Open\n> Normal Close",
+      "> Normal Open - Input Port 접지시FireAlarm이 발생되어야 한다.\n> Normal Close - Input Port 접지해제시 FireAlarm이 발생되어야 한다."
+    ],
+    [
+      7,
+      "[Door 설정된 상태]\n1. Zone> Add Zone\n2. FireAlarm Input의 Duration 설정",
+      "Duration\n> 0 ~ 65535 설정가능",
+      "설정한 Duration만큼 접지 후 Input이 발생되어야 한다.\n: 10000 설정> 10초 후 동작\n: 30000 설정> 30초 후 동작"
+    ],
+    [
+      8,
+      "[Door 설정된 상태]\n1. Zone> Add Zone\n2. FireAlarm Zone의 Alarm 설정",
+      "Alarm\n> Output\n\n(off) 사양 변경으로 인한 삭제 항목\n> Release All Alarm\n> Reboot Device\n> Disable Device",
+      "FireAlarm이 발생하면 설정한 Alarm이 발생해야 한다.\n> Output 에 대한 동작만 확인"
+    ],
+    [
+      9,
+      "1. Zone> Fire Alarm 설정\n2. Fire Alarm 발생\n3. Monitoring> Zone Status> Fire Alamr Zone 선택\n4. Unlock or Lock 버튼 클릭",
+      "",
+      "Fire Alarmed에 의해 Unlock된 Door의 상태는 Monitoring의  Unlock/Lock 보다 우선 순위가 높다. "
+    ],
+    [
+      10,
+      "<Door 및 Access Control 설정된 상태>\n1. Zone> Add Zone> Fire Alarm\n2. 각각의 항목 설정 후 저장\n3. Input 접지를 통해 FireAlarm 발생",
+      "",
+      "FireAlarm이 발생된 경우, FireAlarm Zone에 설정된 출입문들에 대해 Unlocked 상태로 동작되어야 한다.\n*Fire Alarm, Alarm, Unlocked 로그 남는다.\n> 경광등의 LED 유지"
+    ],
+    [
+      11,
+      "<FireAlarm이 발생되는 상태>\n1. Monitoring> Zone Status\n2. FireAlarm Zone 선택\n3. Clear Alarm 클릭",
+      "",
+      "FireAlarm이 해제되어야 하고, Locked 상태로 동작되어야 한다.\n*Clear Alarm, Locked 로그 남는다."
+    ],
+    [
+      12,
+      "<FireAlarm이 발생되는 상태>\n1. Master 장치 Reboot 시도\n2. Master 장치 Booting 완료 후 동작확인",
+      "Mode\n> Local",
+      "Master가 Reboot되는 경우 FireAlarm은 유지되어야 한다.\n: 발생되고 있는 Alarm Action은 유지\n: Unlocked 유지"
+    ],
+    [
+      13,
+      "<Door 및 Access Control 설정된 상태>\n1. Zone> Add Zone> Fire Alarm\n2. 각각의 항목 설정 후 저장\n3. Device> Trigger&Action 설정확인",
+      "Mode\n> Global\n> Local",
+      "> FireAlarm Zone을 Global로 설정한 경우 Trigger&Action에 설정내용이 표시되어야 한다.(Trigger&Action에서 수정불가)\n> FireAlarm Zone을 Local로 설정한 경우에는 Trigger&Action에 표시되지 않아야 한다."
+    ],
+    [
+      14,
+      "<FireAlarm Zone 다수 생성된 상태>\n1. Zone 선택 후 삭제시도",
+      "Zone 삭제\n> 개별삭제\n> 전체삭제",
+      "Zone에 대해 개별삭제/전체삭제를 할 수 있어야 한다.\n> FireAlarm 이 발생된 상태에서 Zone 삭제시 Door Relay Off로 동작"
+    ],
+    [
+      15,
+      "1. 생성한 Zone 정보 편집시도",
+      "",
+      "Zone 정보 변경이 가능해야 한다."
+    ],
+    [
+      16,
+      "1. FireAlarm Zone 생성\n2. Alarm Output 설정",
+      "Output\n> Max : 5",
+      "Door/Zone에서의 Output은 최대 5개까지 설정되어야 한다."
+    ],
+    [
+      17,
+      "1. FireAlarm Zone 생성 후 Alarm 설정\n2. Input 접지를 통해 알람 발생\n3. 알람이 발생되는 중에 Master 장치를 Reboot 시도\n4. 부팅 후 Master 장치 연결이 되면 Clear Alarm 시도",
+      "Mode\n> Local\n> Global",
+      "Clear Alarm으로 알람이 해제되어야 한다.\n> Global Fire Alarm\n : Input 접지 시 Input detected 가 로그에 표시됨(Port 포함)\n : Alarm 발생시 Fire alarm zone alarm detected 가 로그에 표시됨(장치에는 남지 않음)\n> Local Fire Alarm\n : Input 접지 시 Input detected 가 로그에 미표시됨(Fire alarm input detected 표시)\n : Alarm 발생시 Fire alarm zone alarm detected 가 로그에 표시됨(장치에도 남음)"
+    ],
+    [
+      18,
+      "<FireAlarm이 발생되는 상태>\n1. Device> FireAlarm Zone에 설정된 장치 삭제 시도",
+      "",
+      "> Alarm 이 발생되는 Zone에 포함된 장치를 삭제할 수 없어야 한다.(팝업발생)\n> Clear Alarm 후 장치삭제가 가능해야 한다."
+    ],
+    [
+      19,
+      "<장치간 RS485 연결 => Door 구성>\n1. Zone> Add Zone> Fire Alarm\n2. 각각의 항목 설정 후 저장\n3. Input 접지를 통해 알람발생\n4. Master/Slave 장치에 인증시도",
+      "Mode\n> Global\n> Local",
+      "Fire Alarm에 의해 열린 문이 인증후에도 열림상태를 유지해야 한다.\n> 경광등의 LED 유지"
+    ],
+    [
+      20,
+      "<Master-Wiegand Reader 연결 => Door 구성>\n1. Zone> Add Zone> Fire Alarm\n2. 각각의 항목 설정 후 저장\n3. Input 접지를 통해 알람발생\n4. Master/Wiegand Reader 장치에 인증시도",
+      "Mode\n> Global\n> Local",
+      "Fire Alarm에 의해 열린 문이 인증후에도 열림상태를 유지해야 한다.\n> 경광등의 LED 유지"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-54",
+    "description": "",
+    "test_step": [
+      "1. Zone> Add Zone\n2. FireAlarm Zone의 Status 설정 -> Configuration의 Active/Inactive\n3. FireAlarm 발생",
+      "1. Zone> Add Zone\n2. FireAlarm Zone의 Mode 설정",
+      "[Door/Floor 설정된 상태]\n1. Zone> Add Zone\n2. FireAlarm Zone의 Mode 설정",
+      "[Door 설정된 상태]\n1. Zone> Add Zone> FireAlarm Zone\n2. FireAlarm Zone의 Input 설정",
+      "[Elevator 설정된 상태]\n1. Zone> Add Zone\n2. FireAlarm Zone의 Input 설정",
+      "[Door 설정된 상태]\n1. Zone> Add Zone\n2. FireAlarm Input의 Switch Type 설정",
+      "[Door 설정된 상태]\n1. Zone> Add Zone\n2. FireAlarm Input의 Duration 설정",
+      "[Door 설정된 상태]\n1. Zone> Add Zone\n2. FireAlarm Zone의 Alarm 설정",
+      "1. Zone> Fire Alarm 설정\n2. Fire Alarm 발생\n3. Monitoring> Zone Status> Fire Alamr Zone 선택\n4. Unlock or Lock 버튼 클릭",
+      "<Door 및 Access Control 설정된 상태>\n1. Zone> Add Zone> Fire Alarm\n2. 각각의 항목 설정 후 저장\n3. Input 접지를 통해 FireAlarm 발생",
+      "<FireAlarm이 발생되는 상태>\n1. Monitoring> Zone Status\n2. FireAlarm Zone 선택\n3. Clear Alarm 클릭",
+      "<FireAlarm이 발생되는 상태>\n1. Master 장치 Reboot 시도\n2. Master 장치 Booting 완료 후 동작확인",
+      "<Door 및 Access Control 설정된 상태>\n1. Zone> Add Zone> Fire Alarm\n2. 각각의 항목 설정 후 저장\n3. Device> Trigger&Action 설정확인",
+      "<FireAlarm Zone 다수 생성된 상태>\n1. Zone 선택 후 삭제시도",
+      "1. 생성한 Zone 정보 편집시도",
+      "1. FireAlarm Zone 생성\n2. Alarm Output 설정",
+      "1. FireAlarm Zone 생성 후 Alarm 설정\n2. Input 접지를 통해 알람 발생\n3. 알람이 발생되는 중에 Master 장치를 Reboot 시도\n4. 부팅 후 Master 장치 연결이 되면 Clear Alarm 시도",
+      "<FireAlarm이 발생되는 상태>\n1. Device> FireAlarm Zone에 설정된 장치 삭제 시도",
+      "<장치간 RS485 연결 => Door 구성>\n1. Zone> Add Zone> Fire Alarm\n2. 각각의 항목 설정 후 저장\n3. Input 접지를 통해 알람발생\n4. Master/Slave 장치에 인증시도",
+      "<Master-Wiegand Reader 연결 => Door 구성>\n1. Zone> Add Zone> Fire Alarm\n2. 각각의 항목 설정 후 저장\n3. Input 접지를 통해 알람발생\n4. Master/Wiegand Reader 장치에 인증시도"
+    ],
+    "data": [
+      "Status\n> Active\n> Inactive",
+      "Mode\n> Local Zone",
+      "Mode\n> Global Zone",
+      "> Master 장치의 Input Port\n> Slave 장치의 Input Port",
+      "> Master 장치의 Input Port\n> Slave 장치의 Input Port",
+      "Switch Type\n> Normal Open\n> Normal Close",
+      "Duration\n> 0 ~ 65535 설정가능",
+      "Alarm\n> Output\n\n(off) 사양 변경으로 인한 삭제 항목\n> Release All Alarm\n> Reboot Device\n> Disable Device",
+      "Mode\n> Local",
+      "Mode\n> Global\n> Local",
+      "Zone 삭제\n> 개별삭제\n> 전체삭제",
+      "Output\n> Max : 5",
+      "Mode\n> Local\n> Global",
+      "Mode\n> Global\n> Local",
+      "Mode\n> Global\n> Local"
+    ],
+    "expected_result": [
+      "> Active인 경우 FireAlarm 발생시 FireAlarm으로 동작해야 한다.\n> Inactive인 경우 FireAlarm이 동작하지 않아야 한다.",
+      "> Master 장치에 RS485/Network로 연결된 장치들로 구성된 Door 또는 Elevator들로 설정이 되어야 한다.\n\n(on) 최대 32개 Door\n(on) 최대 1개 Elevator\n(off) 동시 설정 불가",
+      "> RS485/Network들로 구성된 모든 출입문에 대해 설정이 되어야 한다.\n> Door와 Elevator를 동시에 설정 가능해야 한다.",
+      "선택된 출입문의 Master/Slave 장치들의 Input Port에 대해 설정할 수 있어야 한다.",
+      "선택된 Elevator의 Master장치/Slave 장치들(OM-120 포함)의 Input Port에 대해 설정할 수 있어야 한다.",
+      "> Normal Open - Input Port 접지시FireAlarm이 발생되어야 한다.\n> Normal Close - Input Port 접지해제시 FireAlarm이 발생되어야 한다.",
+      "설정한 Duration만큼 접지 후 Input이 발생되어야 한다.\n: 10000 설정> 10초 후 동작\n: 30000 설정> 30초 후 동작",
+      "FireAlarm이 발생하면 설정한 Alarm이 발생해야 한다.\n> Output 에 대한 동작만 확인",
+      "Fire Alarmed에 의해 Unlock된 Door의 상태는 Monitoring의  Unlock/Lock 보다 우선 순위가 높다. ",
+      "FireAlarm이 발생된 경우, FireAlarm Zone에 설정된 출입문들에 대해 Unlocked 상태로 동작되어야 한다.\n*Fire Alarm, Alarm, Unlocked 로그 남는다.\n> 경광등의 LED 유지",
+      "FireAlarm이 해제되어야 하고, Locked 상태로 동작되어야 한다.\n*Clear Alarm, Locked 로그 남는다.",
+      "Master가 Reboot되는 경우 FireAlarm은 유지되어야 한다.\n: 발생되고 있는 Alarm Action은 유지\n: Unlocked 유지",
+      "> FireAlarm Zone을 Global로 설정한 경우 Trigger&Action에 설정내용이 표시되어야 한다.(Trigger&Action에서 수정불가)\n> FireAlarm Zone을 Local로 설정한 경우에는 Trigger&Action에 표시되지 않아야 한다.",
+      "Zone에 대해 개별삭제/전체삭제를 할 수 있어야 한다.\n> FireAlarm 이 발생된 상태에서 Zone 삭제시 Door Relay Off로 동작",
+      "Zone 정보 변경이 가능해야 한다.",
+      "Door/Zone에서의 Output은 최대 5개까지 설정되어야 한다.",
+      "Clear Alarm으로 알람이 해제되어야 한다.\n> Global Fire Alarm\n : Input 접지 시 Input detected 가 로그에 표시됨(Port 포함)\n : Alarm 발생시 Fire alarm zone alarm detected 가 로그에 표시됨(장치에는 남지 않음)\n> Local Fire Alarm\n : Input 접지 시 Input detected 가 로그에 미표시됨(Fire alarm input detected 표시)\n : Alarm 발생시 Fire alarm zone alarm detected 가 로그에 표시됨(장치에도 남음)",
+      "> Alarm 이 발생되는 Zone에 포함된 장치를 삭제할 수 없어야 한다.(팝업발생)\n> Clear Alarm 후 장치삭제가 가능해야 한다.",
+      "Fire Alarm에 의해 열린 문이 인증후에도 열림상태를 유지해야 한다.\n> 경광등의 LED 유지",
+      "Fire Alarm에 의해 열린 문이 인증후에도 열림상태를 유지해야 한다.\n> 경광등의 LED 유지"
+    ]
+  }
+}

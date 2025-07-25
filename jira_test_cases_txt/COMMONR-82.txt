@@ -1,5 +1,16 @@
 ■ 이슈 키: COMMONR-82
 ■ 제목: Wiegand - 입력/출력_Bypass
+■ 설명: 첫번째 등록된 카드가 CSN인 경우
+> Wiegand Format에 맞게 카드ID 출력
+
+첫번째 등록된 카드가 AOC인 경우
+> Wiegand Reader로 카드ID 나가지 않음
+
+첫번째 등록된 카드가 SCC인 경우
+> SCC의 경우 카드ID가 숫자이기 때문에 카드ID가 Format에 맞게 출력되어야 함
+
+AOC, SCC는 Bypass 적용되지 않음. 추후 개선사항으로 관리 중(BEWIIFWDI-277)
+=> Bypass 적용 완료.
 ============================================================
 
 ■ 테스트 스텝

@@ -1,5 +1,20 @@
 ■ 이슈 키: COMMONR-372
 ■ 제목: [Supervised Input 지원 장치] Supervised Input Port를 Normal Input으로 사용함에 따른 확인 케이스
+■ 설명: Supervised Input Port -> Normal Input으로 설정 후 N/O, N/C에 대한 동작여부 확인
+
+DM20 Supervised Input 지원포트 - 0,1,4,5 => 모든 장치에서 Slave로 지원
+IM120 Supervised Input 지원포트 - 0~11 => CS20/CS40에서만 Slave로 지원
+CS40 Supervised Input 지원포트 - 0~7
+CS20 Supervised Input 지원포트 - 0~5
+============================
+해당 포트들에 대해서는 Normal Input 으로 설정 및 Input Cable(Supervised Input Cable 아님) 연결한 상태에서 TC 진행
+
+환경)
+검증모델 - DM20 Slave로 구성해서 확인
+=> Master가 CS20/CS40이 아닌 경우 Slave로 DM20을 연결해서 확인
+=> CS20/CS40이 검증대상인 경우 CS20/CS40 & Slave로 연결된 DM20/IM120 모두 확인
+
+
 ============================================================
 
 ■ 테스트 스텝

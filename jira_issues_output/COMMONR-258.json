@@ -1,0 +1,237 @@
+{
+  "id": "COMMONR-258",
+  "content": [
+    [
+      1,
+      "[Door/Elevator - Elevator 설정된 상태]\n\n1. Zone> Add Zone> Scheduled Unlock Zone\n2. Active/Inactive 설정 > Door/Elevator 설정 > Zone 생성",
+      "Active/Inactive - Door/Elevator\n> Active\n> Inactive\n",
+      "> Door 선택 시 Door, Schedule을 지정하여 Schedule Unlock Zone을 생성할 수 있다.\n> Elevator 선택 시 Elevator, Floor, Schedule을 지정하여 Schedule Unlock Zone을 생성 할 수 있다. "
+    ],
+    [
+      2,
+      "[Door/Elevator - Elevator 설정된 상태]\n\n1. Zone> Add Zone> Scheduled Unlock Zone\n2. Active/Inactive 설정 > Door/Elevator 설정 > Zone 생성",
+      "Active/Inactive - Door/Elevator\n> Active\n> Inactive",
+      "> Active 설정으로 생성한 Zone인 경우 Schedule Unlock으로 Elevator가 동작해야 한다.\n: Schedule Unlock 의 설정에 의해 인증 성공/실패 발생한다.\n> Inactive 설정으로 생성한 Zone인 경우 Elevator Schedule Unlock이 동작하지 않아야 한다.\n: Normal상태로 동작"
+    ],
+    [
+      3,
+      "[Door/Elevator - Elevator 설정된 상태]\n\n1. Zone> Add Zone> Scheduled Unlock Zone\n2. Started by User Authentication 설정 > 스케줄 설정 > Zone 생성\n3. 스케줄에 설정된 시간 > Monitoring\n4. Floor Status > Floor Status Type 확인\n5. Zone Status > Status 확인\n6. 장치에서 인증 시도",
+      "Started by User Authentication\n> Inactive\n> Active",
+      "> Floor Status 의 Floor Status Type에 Schedule Unlock 표시한다.\n> Zone Status 의 Status 에 Schedule Unlock 표시한다.\n> 인증 성공 발생한다."
+    ],
+    [
+      4,
+      "[Door/Elevator - Elevator 설정된 상태]\n\n1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정\n3. 스케줄 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 인증시도\n5. 스케줄에 설정된 시간이 끝날 때의 동작 확인",
+      "Started by User Authentication\n> Inactive",
+      "> 스케줄에 설정된 시간이 되면 자동으로 Unlocked 된다.\n: 이후 Unlocked 상태 유지\n> 스케줄에 설정된 시간에 인증시 인증성공으로 동작하지만 Locked 동작은 하지 않아야 한다.\n: Unlocked 상태 유지\n> 스케줄에 설정된 시간이 끝나면 자동으로 Locked 되어야 한다."
+    ],
+    [
+      5,
+      "[Door/Elevator - Elevator 설정된 상태]\n\n1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정\n3. 스케줄 설정\n4. Scheduled Unlock Authentication Group 설정 후 적용",
+      "1. Started by User Authentication\n> Active\n\n2. Access Group\n> 최대 16개 설정 가능",
+      "> Started by User Authentication Access Group 은 최대 16개를 설정할 수 있어야 한다.\n> Scheduled Unlock Zone 추가에 이상이 없어야 한다."
+    ],
+    [
+      6,
+      "[Door/Elevator - Elevator 설정된 상태]\n\n1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정\n3. 스케줄 설정 > Access Group 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 Access Group 에 속한 사용자로 인증시도",
+      "1. Started by User Authentication\n> Active\n\n2. Access Group\n> 미선택\n> 선택",
+      "> Access Group 선택하지 않은 경우 Zone 생성이 불가하다.\n> Access Group 선택한 경우 스케줄에 설정된 시간이 되어도 자동으로 Unlocked 되지 않고 Started by User Authentication Access Group 에 속한 사용자가 인증시 Unlocked 된다.\n: 이후 Unlocked 상태 유지"
+    ],
+    [
+      7,
+      "1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정 > 스케줄 설정 > Access Group 설정 > Zone 생성\n3. 스케줄에 설정된 시간에 Started by User Authentication Access Group 에 속하지 않은 사용자 인증시도\n4. 스케줄에 설정된 시간에 Started by User Authentication Access Group 에 속한 사용자 인증시도\n5. 스케줄에 설정된 시간에 Started by User Authentication Access Group 에 속하지 않은 사용자 인증시도",
+      "Started by User Authentication\n> Active",
+      "> Started by User Authentication Access Group 에 속하지 않은 사용자로 인증시 인증성공 발생하고 Unlocked 후 Locked 된다.\n> Started by User Authentication Access Group 에 속한 사용자로 인증시 인증성공 발생하고 Unlocked 된다.\n: 이후 Unlocked 상태 유지\n> Started by User Authentication Access Group 에 속하지 않은 사용자 재인증시 인증성공 발생하나 Locked 동작은 하지 않아야 한다.\n: Unlocked 상태 유지"
+    ],
+    [
+      8,
+      "1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정\n3. 스케줄 설정 > Started by User Authentication Access Group 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 인증시도\n5. 스케줄에 설정된 시간이 끝날 때의 동작 확인",
+      "Started by User Authentication\n> Active",
+      "> 스케줄에 설정된 시간에 인증시 인증성공으로 동작하지만 Locked 동작은 하지 않아야 한다.\n: Unlocked 상태 유지\n> 스케줄에 설정된 시간이 끝나면 자동으로 Locked 되어야 한다."
+    ],
+    [
+      9,
+      "1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정\n3. 현재 시간이 포함된 스케줄 설정 후 적용\n4. Master 장치 Reboot 시도",
+      "1. Started by User Authentication\n> Inactive",
+      "1. Unlocked 상태를 유지해야 한다."
+    ],
+    [
+      10,
+      "[Door/Elevator - Elevator 설정된 상태]\n\n1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정\n3. 현재 시간이 포함된 스케줄 설정 후 적용\n4. Group에 속한 사용자로 인증\n5. (Unlock상태) Master 장치 Reboot 시도",
+      "1. Started by User Authentication\n> Active",
+      "1. Locked 상태로 변경된다.\n> Group 에 속한 사용자로 재인증시 Unlocked 로 변경"
+    ],
+    [
+      11,
+      "[Scheduled Unlock Zone 다수 생성된 상태]\n\n1. Zone > Scheduled Unlock\n2. 하나 or 다수의 Zone 선택 > 삭제",
+      "Zone 삭제\n> 개별삭제\n> 전체삭제",
+      "Zone에 대해 개별삭제/전체삭제를 할 수 있어야 한다.\n> 삭제 시 Monitoring > Floor Status > Floor Status Type : Normal로 상태 변경\n> Unlock 상태에서 삭제 시 Normal로 상태 변경"
+    ],
+    [
+      12,
+      "1. Zone > Scheduled Unlock > Zone 선택\n2. 정보 편집 > Apply",
+      "",
+      "Zone 정보 변경이 가능해야 한다.\n> Floor / Reader 변경 시에 대해서는 동작 확인 필요"
+    ],
+    [
+      13,
+      "[Door/Elevator - Elevator 설정된 상태]\n\n1. Zone> Add Zone> Schedule Unlock Zone\n2. 현재 시간이 포함된 스케줄 설정 > Zone 생성\n3. Monitoring> Floor Status> Zone에 설정된 Floor선택\n4. Unlock or Lock 버튼 클릭",
+      "",
+      "Zone에서 설정한 Schedule Unlock Zone보다 Monitoring에서의 Unlock/Lock의 우선순위가 높다."
+    ],
+    [
+      14,
+      "[Door/Elevator - Elevator 설정된 상태]\n\n1. Zone> Add Zone> Scheduled Unlock Zone> Elevator \"A\" 선택> 스케줄/Floor 설정> Zone 생성\n2. 스케줄에 설정된 시간에 Monitoring 진입\n3. Floor Status> Floor \"A\" 선택> Manual Lock 버튼 선택\n4. Floor Status 의 Floor Status Type, Floor Relay 확인\n5. Zone Status 의 Status 확인",
+      "Elevator \"A\" 로 구성된 Schedule Unlock Zone",
+      "> Floor Status 의 Floor Relay 는 Locked 로, Floor Status Type 은 Schedule Unlock, Operator Lock 으로 표시된다.\n> Zone Status 의 Status 는 Schedule Unlock 으로 표시된다.\n> Floor의 Status와 Zone의 Status는 별개로 동작 해야 함"
+    ],
+    [
+      15,
+      "[스케줄 \"A\" -> 휴일군 설정된 상태]\n\n1. Zone> Add Zone> Schedule Unlock Zone> Elevator \"A\" 선택> 스케줄 \"A\" /Floor 선택> Zone 생성\n2. 스케줄 \"A\"에 설정한 휴일군일 때 동작확인\n3. Master 장치를 Reboot\n4. 층열림 상태 확인",
+      "> 휴일군에 Time Slot 미설정\n> 휴일군에 Time Slot 설정",
+      "> 휴일군에 설정한 스케줄대로 동작되어야 한다.\n> Unlock Zone의 Elevator 열림 상태는 재부팅 후에도 유지되어야 한다."
+    ],
+    [
+      16,
+      "[Elevator, Scheduled Unlock Zone 추가된 상태]\n\n1. Floor Status : Open 동작\n2. Schedule Unlock Zone 의 스케줄에 의한 Schedule Unlock 동작\n3. Monitoring > Floor Status 내 Manual Lock/Unlock, Release, Open, Clear Alarm 버튼 선택",
+      "1. 조건\n - Floor Status : Opened 상태(Lift의 Open Time 길게 설정)\n - Scheduled Unlock Zone 동작 중\n\n2. 동작\n - Manual Lock, Manual Unlock, Release, Open, Clear Alarm 버튼 입력\n\n3. 결과 (각 Case 결과 확인)\n - Opened 상태에서 버튼 입력 결과",
+      "1. Manual Lock 선택시\n1) Manual Lock 버튼 입력 결과 : Successful 팝업\n:Schedule Unlock, Operator Lock / Locked / Last Event : Floor Released\n\n2. Manual Unlock 선택시\n1) Manual Unlock 버튼 입력 결과 : Successful 팝업 발생\n: Schedule Unlock, Operator Unlock / Unlock / Last Event : Floor Activated\n\n3. Release 선택시\n1) Release 버튼 입력 결과 : Successful 팝업\n: Schedule Unlock / Unlock / Last Event : Release by operator\n\n4. Open 선택시\n1) Open 버튼 입력 결과 : Warning 팝업(Try again after releasing the floor(s) from its alarm or lock status. Elevator Name xxxx - x층 : ㄴSchedule Unlock)\n: Schedule Unlock / Unlock / Last Event : 기존 상태 유지\n\n5. Clear Alarm 선택시\n1) Clear Alarm 버튼 입력 결과 : Successful 팝업\n: Elevator activated / Schedule Unlock / Unlock / Last Event : Elevator alarm cleared"
+    ],
+    [
+      17,
+      "[Door/Elevator - Elevator 설정된 상태]\n\n1. Scheduled Unlock 동작\n2. Fire Alarm 동작\n3. Manual Lock 동작\n4. Manual Unlock 동작",
+      "우선 순위 확인\n> Fire Alarm Zone\n> Manual Lock/Unlcok (Monitoring > Door/Floor Status)\n> Scheduled Unlock Zone",
+      "> 최초 Scheduled Unlock 에 의해 Unlocked 된다.\n> Fire Alarm 발생시 Unlocked 유지된다. (Fire Alarm 이 Scheduled Unlock 보다 우선순위가 높다)\n> Manual Lock 발생시 Unlocked 유지된다. (Manual Lock 이 Fire Alarm 보다 우선순위가 낮다)\n> Fire Alarm 해제 후 Manual Lock 발생시 Locked 된다. (Manual Lock 이 Scheduled Unlock 보다 우선순위가 높다)\n> Fire Alarm 해제 후 Manual Unlock 발생시 Unlocked 유지된다. (Manual Unlock 이 Scheduled Unlock 보다 우선순위가 높다)\n> Manual Lock/Unlock 해제 후 Scheduled Unlock 에 의해 Unlocked 된다."
+    ],
+    [
+      18,
+      "[Door/Elevator - Elevator 설정된 상태]\n\n1. RS485 연결\n2. Schedule Unlock Zone 시작\n3. Slave 장치 전원 재인가\n4. Slave 장치 부팅완료 후 Relay 상태 확인",
+      "Slave \n> Device, I/O Device",
+      "1. 연결이 끊겼다 재연결되면 Relay On 상태로 동작되어야 한다."
+    ],
+    [
+      19,
+      "[Door/Elevator - Elevator 설정된 상태]\n\n1. RS485 연결\n2. Floor Relay로 설정된 Slave Disconnected 상태\n3. Schedule Unlock 시작 & 종료\n4. Slave Connected\n5. Slave 장치의 Relay 상태 확인",
+      "Slave \n> Device, I/O Device",
+      "1. Master와 재연결 시 계속 Relay Off로 동작되어야 한다."
+    ],
+    [
+      20,
+      "[Door/Elevator - Elevator 설정된 상태]\n\n1. RS485 연결\n2. Schedule Unlock 시작\n3. Floor Relay로 설정된 Slave Disconnected 상태\n4. Schedule Unlock 종료\n5. Slave Connected\n6. Slave 장치의 Relay 상태 확인",
+      "Slave \n> Device, I/O Device",
+      "1. Master와 재연결 시 계속 Relay Off로 동작되어야 한다."
+    ],
+    [
+      21,
+      "[Door/Elevator - Elevator 설정된 상태]\n1. Unlock Schedule 에 의해 Unlock 발생\n2. Schedule Unlock Zone 선택> Inactive\n3. 로그 확인",
+      "",
+      "1. 스케줄 개방/잠금 해제 요청로그가 남는다.\n> RELEASE_ELEVATOR_BY_SCHEDULE = 0x7201 발생."
+    ],
+    [
+      22,
+      "[Lift - 12층 설정된 상태]\n1. Lift로 다수의 Schedule Unlock Zone 생성\n2. 설정한 스케줄에 맞게 Zone에 속한 Floor 동작유무 확인",
+      "다수의 Schedule Unlock Zone\n: A Zone \n  > 1~6층 & (ex)10:00~10:05\n: B Zone\n  > 7~12층 & (ex)10:03~10:10",
+      "1. 다수의 Zone에 설정한 스케줄에 맞게 Floor가 On되고, 스케줄이 종료되면 Floor가 OFF된다.\n> 스케줄 개방구역 시작,스케줄 개방요청,층 활성 로그 출력\n> 스케줄 개방구역 끝, 층 해제 로그 출력\n> A Zone Floor 개방 후 B Zone 해당 Floor가 해당 스케줄로 동작되면서 각각 스케줄에 따라 동작"
+    ],
+    [
+      23,
+      "[Lift - 12층 설정된 상태]\n1. Lift로 다수의 Schedule Unlock Zone 생성\n2. 설정한 스케줄에 맞게 Zone에 속한 Floor 동작유무 확인",
+      "다수의 Schedule Unlock Zone\n: A Zone \n  > 1~6층 & (ex)10:03~10:10\n: B Zone\n  > 7~12층 & (ex)10:00~10:05",
+      "1. 다수의 Zone에 설정한 스케줄에 맞게 Floor가 On되고, 스케줄이 종료되면 Floor가 OFF된다.\n> 스케줄 개방구역 시작,스케줄 개방요청,층 활성 로그 출력\n> 스케줄 개방구역 끝, 층 해제 로그 출력\n> B Zone Floor 개방 후 A Zone 해당 Floor가 해당 스케줄로 동작되면서 각각 스케줄에 따라 동작"
+    ],
+    [
+      24,
+      "[Lift - 12층 설정된 상태]\n1. Lift로 다수의 Schedule Unlock Zone 생성\n2. 설정한 스케줄에 맞게 Zone에 속한 Floor 동작유무 확인",
+      "다수의 Schedule Unlock Zone\n: A Zone \n  > 1~12층 & (ex)10:00~10:10\n: B Zone\n  > 13~24층 & (ex)10:10~10:20",
+      "1. 다수의 Zone에 설정한 스케줄에 맞게 Floor가 On되고, 스케줄이 종료되면 Floor가 OFF된다.\n> 스케줄 개방구역 시작,스케줄 개방요청,층 활성 로그 출력\n> 스케줄 개방구역 끝, 층 해제 로그 출력\n> A Zone 종료 시 B Zone 해당 Floor가 On으로 동작\n"
+    ],
+    [
+      25,
+      "[Lift - 12층 설정된 상태]\n1. Lift로 다수의 Schedule Unlock Zone 생성\n2. 설정한 스케줄에 맞게 Zone에 속한 Floor 동작유무 확인",
+      "다수의 Schedule Unlock Zone\n: A Zone \n  > 1~12층 & (ex)10:10~10:20\n: B Zone\n  > 13~24층 & (ex)10:00~10:10",
+      "1. 다수의 Zone에 설정한 스케줄에 맞게 Floor가 On되고, 스케줄이 종료되면 Floor가 OFF된다.\n> 스케줄 개방구역 시작,스케줄 개방요청,층 활성 로그 출력\n> 스케줄 개방구역 끝, 층 해제 로그 출력\n> B Zone 종료 시 A Zone 해당 Floor가 On으로 동작"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-258",
+    "description": "",
+    "test_step": [
+      "[Door/Elevator - Elevator 설정된 상태]\n\n1. Zone> Add Zone> Scheduled Unlock Zone\n2. Active/Inactive 설정 > Door/Elevator 설정 > Zone 생성",
+      "[Door/Elevator - Elevator 설정된 상태]\n\n1. Zone> Add Zone> Scheduled Unlock Zone\n2. Active/Inactive 설정 > Door/Elevator 설정 > Zone 생성",
+      "[Door/Elevator - Elevator 설정된 상태]\n\n1. Zone> Add Zone> Scheduled Unlock Zone\n2. Started by User Authentication 설정 > 스케줄 설정 > Zone 생성\n3. 스케줄에 설정된 시간 > Monitoring\n4. Floor Status > Floor Status Type 확인\n5. Zone Status > Status 확인\n6. 장치에서 인증 시도",
+      "[Door/Elevator - Elevator 설정된 상태]\n\n1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정\n3. 스케줄 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 인증시도\n5. 스케줄에 설정된 시간이 끝날 때의 동작 확인",
+      "[Door/Elevator - Elevator 설정된 상태]\n\n1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정\n3. 스케줄 설정\n4. Scheduled Unlock Authentication Group 설정 후 적용",
+      "[Door/Elevator - Elevator 설정된 상태]\n\n1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정\n3. 스케줄 설정 > Access Group 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 Access Group 에 속한 사용자로 인증시도",
+      "1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정 > 스케줄 설정 > Access Group 설정 > Zone 생성\n3. 스케줄에 설정된 시간에 Started by User Authentication Access Group 에 속하지 않은 사용자 인증시도\n4. 스케줄에 설정된 시간에 Started by User Authentication Access Group 에 속한 사용자 인증시도\n5. 스케줄에 설정된 시간에 Started by User Authentication Access Group 에 속하지 않은 사용자 인증시도",
+      "1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정\n3. 스케줄 설정 > Started by User Authentication Access Group 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 인증시도\n5. 스케줄에 설정된 시간이 끝날 때의 동작 확인",
+      "1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정\n3. 현재 시간이 포함된 스케줄 설정 후 적용\n4. Master 장치 Reboot 시도",
+      "[Door/Elevator - Elevator 설정된 상태]\n\n1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정\n3. 현재 시간이 포함된 스케줄 설정 후 적용\n4. Group에 속한 사용자로 인증\n5. (Unlock상태) Master 장치 Reboot 시도",
+      "[Scheduled Unlock Zone 다수 생성된 상태]\n\n1. Zone > Scheduled Unlock\n2. 하나 or 다수의 Zone 선택 > 삭제",
+      "1. Zone > Scheduled Unlock > Zone 선택\n2. 정보 편집 > Apply",
+      "[Door/Elevator - Elevator 설정된 상태]\n\n1. Zone> Add Zone> Schedule Unlock Zone\n2. 현재 시간이 포함된 스케줄 설정 > Zone 생성\n3. Monitoring> Floor Status> Zone에 설정된 Floor선택\n4. Unlock or Lock 버튼 클릭",
+      "[Door/Elevator - Elevator 설정된 상태]\n\n1. Zone> Add Zone> Scheduled Unlock Zone> Elevator \"A\" 선택> 스케줄/Floor 설정> Zone 생성\n2. 스케줄에 설정된 시간에 Monitoring 진입\n3. Floor Status> Floor \"A\" 선택> Manual Lock 버튼 선택\n4. Floor Status 의 Floor Status Type, Floor Relay 확인\n5. Zone Status 의 Status 확인",
+      "[스케줄 \"A\" -> 휴일군 설정된 상태]\n\n1. Zone> Add Zone> Schedule Unlock Zone> Elevator \"A\" 선택> 스케줄 \"A\" /Floor 선택> Zone 생성\n2. 스케줄 \"A\"에 설정한 휴일군일 때 동작확인\n3. Master 장치를 Reboot\n4. 층열림 상태 확인",
+      "[Elevator, Scheduled Unlock Zone 추가된 상태]\n\n1. Floor Status : Open 동작\n2. Schedule Unlock Zone 의 스케줄에 의한 Schedule Unlock 동작\n3. Monitoring > Floor Status 내 Manual Lock/Unlock, Release, Open, Clear Alarm 버튼 선택",
+      "[Door/Elevator - Elevator 설정된 상태]\n\n1. Scheduled Unlock 동작\n2. Fire Alarm 동작\n3. Manual Lock 동작\n4. Manual Unlock 동작",
+      "[Door/Elevator - Elevator 설정된 상태]\n\n1. RS485 연결\n2. Schedule Unlock Zone 시작\n3. Slave 장치 전원 재인가\n4. Slave 장치 부팅완료 후 Relay 상태 확인",
+      "[Door/Elevator - Elevator 설정된 상태]\n\n1. RS485 연결\n2. Floor Relay로 설정된 Slave Disconnected 상태\n3. Schedule Unlock 시작 & 종료\n4. Slave Connected\n5. Slave 장치의 Relay 상태 확인",
+      "[Door/Elevator - Elevator 설정된 상태]\n\n1. RS485 연결\n2. Schedule Unlock 시작\n3. Floor Relay로 설정된 Slave Disconnected 상태\n4. Schedule Unlock 종료\n5. Slave Connected\n6. Slave 장치의 Relay 상태 확인",
+      "[Door/Elevator - Elevator 설정된 상태]\n1. Unlock Schedule 에 의해 Unlock 발생\n2. Schedule Unlock Zone 선택> Inactive\n3. 로그 확인",
+      "[Lift - 12층 설정된 상태]\n1. Lift로 다수의 Schedule Unlock Zone 생성\n2. 설정한 스케줄에 맞게 Zone에 속한 Floor 동작유무 확인",
+      "[Lift - 12층 설정된 상태]\n1. Lift로 다수의 Schedule Unlock Zone 생성\n2. 설정한 스케줄에 맞게 Zone에 속한 Floor 동작유무 확인",
+      "[Lift - 12층 설정된 상태]\n1. Lift로 다수의 Schedule Unlock Zone 생성\n2. 설정한 스케줄에 맞게 Zone에 속한 Floor 동작유무 확인",
+      "[Lift - 12층 설정된 상태]\n1. Lift로 다수의 Schedule Unlock Zone 생성\n2. 설정한 스케줄에 맞게 Zone에 속한 Floor 동작유무 확인"
+    ],
+    "data": [
+      "Active/Inactive - Door/Elevator\n> Active\n> Inactive\n",
+      "Active/Inactive - Door/Elevator\n> Active\n> Inactive",
+      "Started by User Authentication\n> Inactive\n> Active",
+      "Started by User Authentication\n> Inactive",
+      "1. Started by User Authentication\n> Active\n\n2. Access Group\n> 최대 16개 설정 가능",
+      "1. Started by User Authentication\n> Active\n\n2. Access Group\n> 미선택\n> 선택",
+      "Started by User Authentication\n> Active",
+      "Started by User Authentication\n> Active",
+      "1. Started by User Authentication\n> Inactive",
+      "1. Started by User Authentication\n> Active",
+      "Zone 삭제\n> 개별삭제\n> 전체삭제",
+      "Elevator \"A\" 로 구성된 Schedule Unlock Zone",
+      "> 휴일군에 Time Slot 미설정\n> 휴일군에 Time Slot 설정",
+      "1. 조건\n - Floor Status : Opened 상태(Lift의 Open Time 길게 설정)\n - Scheduled Unlock Zone 동작 중\n\n2. 동작\n - Manual Lock, Manual Unlock, Release, Open, Clear Alarm 버튼 입력\n\n3. 결과 (각 Case 결과 확인)\n - Opened 상태에서 버튼 입력 결과",
+      "우선 순위 확인\n> Fire Alarm Zone\n> Manual Lock/Unlcok (Monitoring > Door/Floor Status)\n> Scheduled Unlock Zone",
+      "Slave \n> Device, I/O Device",
+      "Slave \n> Device, I/O Device",
+      "Slave \n> Device, I/O Device",
+      "다수의 Schedule Unlock Zone\n: A Zone \n  > 1~6층 & (ex)10:00~10:05\n: B Zone\n  > 7~12층 & (ex)10:03~10:10",
+      "다수의 Schedule Unlock Zone\n: A Zone \n  > 1~6층 & (ex)10:03~10:10\n: B Zone\n  > 7~12층 & (ex)10:00~10:05",
+      "다수의 Schedule Unlock Zone\n: A Zone \n  > 1~12층 & (ex)10:00~10:10\n: B Zone\n  > 13~24층 & (ex)10:10~10:20",
+      "다수의 Schedule Unlock Zone\n: A Zone \n  > 1~12층 & (ex)10:10~10:20\n: B Zone\n  > 13~24층 & (ex)10:00~10:10"
+    ],
+    "expected_result": [
+      "> Door 선택 시 Door, Schedule을 지정하여 Schedule Unlock Zone을 생성할 수 있다.\n> Elevator 선택 시 Elevator, Floor, Schedule을 지정하여 Schedule Unlock Zone을 생성 할 수 있다. ",
+      "> Active 설정으로 생성한 Zone인 경우 Schedule Unlock으로 Elevator가 동작해야 한다.\n: Schedule Unlock 의 설정에 의해 인증 성공/실패 발생한다.\n> Inactive 설정으로 생성한 Zone인 경우 Elevator Schedule Unlock이 동작하지 않아야 한다.\n: Normal상태로 동작",
+      "> Floor Status 의 Floor Status Type에 Schedule Unlock 표시한다.\n> Zone Status 의 Status 에 Schedule Unlock 표시한다.\n> 인증 성공 발생한다.",
+      "> 스케줄에 설정된 시간이 되면 자동으로 Unlocked 된다.\n: 이후 Unlocked 상태 유지\n> 스케줄에 설정된 시간에 인증시 인증성공으로 동작하지만 Locked 동작은 하지 않아야 한다.\n: Unlocked 상태 유지\n> 스케줄에 설정된 시간이 끝나면 자동으로 Locked 되어야 한다.",
+      "> Started by User Authentication Access Group 은 최대 16개를 설정할 수 있어야 한다.\n> Scheduled Unlock Zone 추가에 이상이 없어야 한다.",
+      "> Access Group 선택하지 않은 경우 Zone 생성이 불가하다.\n> Access Group 선택한 경우 스케줄에 설정된 시간이 되어도 자동으로 Unlocked 되지 않고 Started by User Authentication Access Group 에 속한 사용자가 인증시 Unlocked 된다.\n: 이후 Unlocked 상태 유지",
+      "> Started by User Authentication Access Group 에 속하지 않은 사용자로 인증시 인증성공 발생하고 Unlocked 후 Locked 된다.\n> Started by User Authentication Access Group 에 속한 사용자로 인증시 인증성공 발생하고 Unlocked 된다.\n: 이후 Unlocked 상태 유지\n> Started by User Authentication Access Group 에 속하지 않은 사용자 재인증시 인증성공 발생하나 Locked 동작은 하지 않아야 한다.\n: Unlocked 상태 유지",
+      "> 스케줄에 설정된 시간에 인증시 인증성공으로 동작하지만 Locked 동작은 하지 않아야 한다.\n: Unlocked 상태 유지\n> 스케줄에 설정된 시간이 끝나면 자동으로 Locked 되어야 한다.",
+      "1. Unlocked 상태를 유지해야 한다.",
+      "1. Locked 상태로 변경된다.\n> Group 에 속한 사용자로 재인증시 Unlocked 로 변경",
+      "Zone에 대해 개별삭제/전체삭제를 할 수 있어야 한다.\n> 삭제 시 Monitoring > Floor Status > Floor Status Type : Normal로 상태 변경\n> Unlock 상태에서 삭제 시 Normal로 상태 변경",
+      "Zone 정보 변경이 가능해야 한다.\n> Floor / Reader 변경 시에 대해서는 동작 확인 필요",
+      "Zone에서 설정한 Schedule Unlock Zone보다 Monitoring에서의 Unlock/Lock의 우선순위가 높다.",
+      "> Floor Status 의 Floor Relay 는 Locked 로, Floor Status Type 은 Schedule Unlock, Operator Lock 으로 표시된다.\n> Zone Status 의 Status 는 Schedule Unlock 으로 표시된다.\n> Floor의 Status와 Zone의 Status는 별개로 동작 해야 함",
+      "> 휴일군에 설정한 스케줄대로 동작되어야 한다.\n> Unlock Zone의 Elevator 열림 상태는 재부팅 후에도 유지되어야 한다.",
+      "1. Manual Lock 선택시\n1) Manual Lock 버튼 입력 결과 : Successful 팝업\n:Schedule Unlock, Operator Lock / Locked / Last Event : Floor Released\n\n2. Manual Unlock 선택시\n1) Manual Unlock 버튼 입력 결과 : Successful 팝업 발생\n: Schedule Unlock, Operator Unlock / Unlock / Last Event : Floor Activated\n\n3. Release 선택시\n1) Release 버튼 입력 결과 : Successful 팝업\n: Schedule Unlock / Unlock / Last Event : Release by operator\n\n4. Open 선택시\n1) Open 버튼 입력 결과 : Warning 팝업(Try again after releasing the floor(s) from its alarm or lock status. Elevator Name xxxx - x층 : ㄴSchedule Unlock)\n: Schedule Unlock / Unlock / Last Event : 기존 상태 유지\n\n5. Clear Alarm 선택시\n1) Clear Alarm 버튼 입력 결과 : Successful 팝업\n: Elevator activated / Schedule Unlock / Unlock / Last Event : Elevator alarm cleared",
+      "> 최초 Scheduled Unlock 에 의해 Unlocked 된다.\n> Fire Alarm 발생시 Unlocked 유지된다. (Fire Alarm 이 Scheduled Unlock 보다 우선순위가 높다)\n> Manual Lock 발생시 Unlocked 유지된다. (Manual Lock 이 Fire Alarm 보다 우선순위가 낮다)\n> Fire Alarm 해제 후 Manual Lock 발생시 Locked 된다. (Manual Lock 이 Scheduled Unlock 보다 우선순위가 높다)\n> Fire Alarm 해제 후 Manual Unlock 발생시 Unlocked 유지된다. (Manual Unlock 이 Scheduled Unlock 보다 우선순위가 높다)\n> Manual Lock/Unlock 해제 후 Scheduled Unlock 에 의해 Unlocked 된다.",
+      "1. 연결이 끊겼다 재연결되면 Relay On 상태로 동작되어야 한다.",
+      "1. Master와 재연결 시 계속 Relay Off로 동작되어야 한다.",
+      "1. Master와 재연결 시 계속 Relay Off로 동작되어야 한다.",
+      "1. 스케줄 개방/잠금 해제 요청로그가 남는다.\n> RELEASE_ELEVATOR_BY_SCHEDULE = 0x7201 발생.",
+      "1. 다수의 Zone에 설정한 스케줄에 맞게 Floor가 On되고, 스케줄이 종료되면 Floor가 OFF된다.\n> 스케줄 개방구역 시작,스케줄 개방요청,층 활성 로그 출력\n> 스케줄 개방구역 끝, 층 해제 로그 출력\n> A Zone Floor 개방 후 B Zone 해당 Floor가 해당 스케줄로 동작되면서 각각 스케줄에 따라 동작",
+      "1. 다수의 Zone에 설정한 스케줄에 맞게 Floor가 On되고, 스케줄이 종료되면 Floor가 OFF된다.\n> 스케줄 개방구역 시작,스케줄 개방요청,층 활성 로그 출력\n> 스케줄 개방구역 끝, 층 해제 로그 출력\n> B Zone Floor 개방 후 A Zone 해당 Floor가 해당 스케줄로 동작되면서 각각 스케줄에 따라 동작",
+      "1. 다수의 Zone에 설정한 스케줄에 맞게 Floor가 On되고, 스케줄이 종료되면 Floor가 OFF된다.\n> 스케줄 개방구역 시작,스케줄 개방요청,층 활성 로그 출력\n> 스케줄 개방구역 끝, 층 해제 로그 출력\n> A Zone 종료 시 B Zone 해당 Floor가 On으로 동작\n",
+      "1. 다수의 Zone에 설정한 스케줄에 맞게 Floor가 On되고, 스케줄이 종료되면 Floor가 OFF된다.\n> 스케줄 개방구역 시작,스케줄 개방요청,층 활성 로그 출력\n> 스케줄 개방구역 끝, 층 해제 로그 출력\n> B Zone 종료 시 A Zone 해당 Floor가 On으로 동작"
+    ]
+  }
+}

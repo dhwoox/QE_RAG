@@ -1,0 +1,33 @@
+{
+  "id": "COMMONR-193",
+  "content": [
+    [
+      1,
+      "1. Device> Search Device> 장치검색\n2. 검색된 장치가 연결상태 표시유무 확인",
+      "[BioStar]\nDevice>Search Device Or Advanced Search\n1. Server Mode Device\n2. Direct Mode Device ",
+      "1. 검색된 장치가 다른 서버에 연결된 경우 Connected(IP주소)로 표시\n> 선택 비활성화\n2. 검색된 장치가 BioEntry 기준 2.2.0 이전(2.2.0포함) F/W인 경우 Unknown으로 표시\n3. 검색된 장치가 BioStar에 연결되지 않은 경우 OK로 표시\n> OK - Direct Mode로 BioStar에 연결 안된 경우\n> N/A - Server Mode Or Direct Mode로BioStar에 연결 된 경우\n> Unknown - 2) Step 내용 참조"
+    ],
+    [
+      2,
+      "1. Device> Advanced Search> 장치검색\n2. 검색된 장치가 연결상태 표시유무 확인",
+      "[BioStar]\nDevice>Search Device Or Advanced Search\n1. Server Mode Device\n2. Direct Mode Device ",
+      "1. 검색된 장치가 다른 서버에 연결된 경우 장치 검색 안됨\n> Device Not Found 팝업\n2. 검색된 장치가 BioStar에 연결되지 않은 경우 장치 표시\n> Direct Mode 장치"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-193",
+    "description": "",
+    "test_step": [
+      "1. Device> Search Device> 장치검색\n2. 검색된 장치가 연결상태 표시유무 확인",
+      "1. Device> Advanced Search> 장치검색\n2. 검색된 장치가 연결상태 표시유무 확인"
+    ],
+    "data": [
+      "[BioStar]\nDevice>Search Device Or Advanced Search\n1. Server Mode Device\n2. Direct Mode Device ",
+      "[BioStar]\nDevice>Search Device Or Advanced Search\n1. Server Mode Device\n2. Direct Mode Device "
+    ],
+    "expected_result": [
+      "1. 검색된 장치가 다른 서버에 연결된 경우 Connected(IP주소)로 표시\n> 선택 비활성화\n2. 검색된 장치가 BioEntry 기준 2.2.0 이전(2.2.0포함) F/W인 경우 Unknown으로 표시\n3. 검색된 장치가 BioStar에 연결되지 않은 경우 OK로 표시\n> OK - Direct Mode로 BioStar에 연결 안된 경우\n> N/A - Server Mode Or Direct Mode로BioStar에 연결 된 경우\n> Unknown - 2) Step 내용 참조",
+      "1. 검색된 장치가 다른 서버에 연결된 경우 장치 검색 안됨\n> Device Not Found 팝업\n2. 검색된 장치가 BioStar에 연결되지 않은 경우 장치 표시\n> Direct Mode 장치"
+    ]
+  }
+}

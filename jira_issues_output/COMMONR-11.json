@@ -1,0 +1,123 @@
+{
+  "id": "COMMONR-11",
+  "content": [
+    [
+      1,
+      "1. Access Control> Add Access Group\n2. 임의의 Access Level 선택 > 임의의 User Group or User 선택",
+      "[BioStar]\n1. Access Rule(Group+Level) 설정\n1) Access Level + Floor Level +  User Group\n2) Access Level + Floor Level + User\n3) Access Level + Floor Level + User Group + User",
+      "1. 최대 2048개까지 추가 가능하다.\n> AG/AL/FL : 2048\n2. 출입 그룹은 사용자별 최대 16개까지 설정할 수 있다.\n3. 장치에서 사용자의 출입그룹 설정 및 변경은 불가하다.\n4. Name을 최대 48자까지 설정 할 수 있다.\n5. 출입그룹 추가 / 업데이트가 가능하다.\n6. 특정 출입 그룹 삭제가 가능하다.\n7. 전체 출입 그룹 삭제가 가능하다.\n8. 출입 그룹 정보 확인이 가능하다.\n9. 출입그룹에 속한 사용자그룹의 사용자로 인증할 경우 인증성공이 된다.\n10. 출입그룹에 속한 사용자로 인증시 인증성공 발생\n11. 출입그룹에 속한 사용자 그룹 및 사용자로 인증시 인증성공 발생"
+    ],
+    [
+      2,
+      "1. Access Control > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > 임의의 User Group or User 선택 > Access Group에 포함된 User 인증시도\n2. Access Control > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > 임의의 User Group or User 선택 > Access Group에 미포함된 User 인증시도",
+      "[BioStar]\n1. Access Group에 포함된 User\n2. Access Group에 미포함된 User",
+      "1. 출입 그룹이 있는 사용자로 인증 시 출입이 가능하다.\n2. 출입 그룹이 없는 사용자로 인증 시 출입이 불가능하다.\n"
+    ],
+    [
+      3,
+      "1. Access Control > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > Apply",
+      "[BioStar]\n1. Access Rule(Group+Level) 설정\n1) Access Level만 설정\n2) Floor Level만 설정\n3) User Group만 설정\n4) User만 설정",
+      "1. Access Rule중 2개 이상 설정가능\n2. Access Level만 추가시 Access Group 생성불가\n3. Floor Level만 추가시 Access Group 생성 불가\n4. User Group만 추가시 Access Group 생성가능\n5. User만 추가시 Access Group 생성가능\n\n(off) 4,5의 경우 대량으로 생성하였을때의 편의를 위하여 가능토록 함."
+    ],
+    [
+      4,
+      "1. Access Control > Add Access Level > Name 설정 > +Add > 임의의 Door 선택 > 현재 시간이 포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > 임의의 User Group or User 선택 > Access Group에 포함된 User 인증시도",
+      "[BioStar]\n1. Access Level을 생성할때 현재 시간이 포함된 Schedule을 선택\n",
+      "1. 인증시간이 설정한 스케줄에 포함되는 경우 인증이 성공된다. 또한 출입이 허용된다.\n"
+    ],
+    [
+      5,
+      "1. Access Control > Add Floor Level > Name 설정 > +Add > 임의의 Elevator 선택 > 선택된 Elevator Name 선택 > 현재 시간이 포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Floor Level 선택 > 임의의 User Group or User 선택 > Access Group에 포함된 User 인증시도",
+      "[BioStar]\n1. Floor Level을 생성할때 현재 시간이 포함된 Schedule을 선택\n",
+      "1. 인증시간이 설정한 스케줄에 포함되는 경우 인증이 성공된다. 또한 출입이 허용된다.\n"
+    ],
+    [
+      6,
+      "1. Access Control > Add Access Level > Name 설정 > +Add > 임의의 Door 선택 > 현재 시간이 미포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > 임의의 User Group or User 선택 > Access Group에 포함된 User 인증시도",
+      "[BioStar]\n1. Access Level을 생성할때 현재 시간이 미포함된 Schedule을 선택",
+      "1. 인증시간이 설정한 스케줄에 포함되지 않는 경우 인증이 실패된다.또한, 출입이 거부된다.\n2. 출입이 거부 될 경우, 'Access Denied' 로그와 사용자 ID가 로그에 남는다."
+    ],
+    [
+      7,
+      "1. Access Control > Add Floor Level > Name 설정 > +Add > 임의의 Elevator 선택 > 선택된 Elevator Name 선택 > 현재 시간이 미포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Floor Level 선택 > 임의의 User Group or User 선택 > Access Group에 포함된 User 인증시도",
+      "[BioStar]\n1. Floor Level을 생성할때 현재 시간이 미포함된 Schedule을 선택",
+      "1. 인증시간이 설정한 스케줄에 포함되지 않는 경우 인증이 실패된다.또한, 출입이 거부된다.\n2. 출입이 거부 될 경우, 'Access Denied' 로그와 사용자 ID가 로그에 남는다."
+    ],
+    [
+      8,
+      "1. Access Control > Add Access Level > Name 설정 > +Add > 임의의 Door 선택 >  현재 시간이 포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > User 선택 > Access Group에 미포함된 User 인증시도",
+      "[BioStar]\n1. Access Level을 생성할때 현재 시간이 포함된 Schedule을 선택\n2. Access Group에 속하지 않은 사용자",
+      "1. 출입그룹에 속하지 않은 사용자로 인증시 출입 거부된다.\n2. 'Access Denied' 로그와 사용자 ID가 로그에 남는다.\n3. 인증 리더(장치)가 속한 출입문이 출입그룹의 출입권한으로 설정되지 않은 경우 출입 거부된다.\n4. 'Access Denied' 로그와 사용자 ID가 로그에 남는다."
+    ],
+    [
+      9,
+      "1. Access Control > Add Access Level > Name 설정 > +Add > 임의의 Door 선택 >  현재 시간이 포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > User 선택 > Access Group에 미포함된 User 인증시도",
+      "[BioStar]\n1. Floor Level을 생성할때 현재 시간이 포함된 Schedule을 선택\n2. Access Group에 속하지 않은 사용자",
+      "1. 출입그룹에 속하지 않은 사용자로 인증시 출입 거부된다.\n2. 'Access Denied' 로그와 사용자 ID가 로그에 남는다.\n3. 인증 리더(장치)가 속한 Elevoatr가 출입그룹의 출입권한으로 설정되지 않은 경우 출입 거부된다.\n4. 'Access Denied' 로그와 사용자 ID가 로그에 남는다."
+    ],
+    [
+      10,
+      "1. Device > Authentication > Full Access변경\n2. Master만 Full Access 변경 > Master,Slave 인증 시도\n3. Master, Slave 모두 Full Access 변경 > Master,Slave 인증 시도",
+      "[BioStar]\n1. Master Full Access 변경\n2. Slave Full Access 변경\n",
+      "1. 해당 장치에서는 출입 그룹 적용 여부와 상관없이 이 장치에 등록된 모든 사용자의 출입 인증이 가능하다.\n2. Master만 Full Access 일경우 Master만 Full Access로 동작해야 한다.\n"
+    ],
+    [
+      11,
+      "1. Door Or Elevator 생성 > Add Access Level Or Floor Level > Add Access Group > Apply\n2. Device > Authentication > Full Access변경 > Apply",
+      "[BioStar]\n1. Device Full Access Enable로 변경",
+      "1. BioStar에서 다음과 같은 Error 팝업이 뜨며 생성 불가하다.\n*Unable to enable full access for Device included in Access Group(302)\n2. Full Access Disable로 변경시 Access Group 생성 가능"
+    ],
+    [
+      12,
+      "1. Device > Authentication > Full Access변경 > Door Or Elevator 설정 > Add Access Level Or Floor Level > Add Access Group > Apply",
+      "[BioStar]\n1. Device Full Access Enable로 변경\n2. Access Group 정보 변경",
+      "1. BioStar에서 다음과 같은 Error 팝업이 뜨며 변경 불가하다\n*Device with full access enabled cannot be assigned to Access Group(650)"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-11",
+    "description": "",
+    "test_step": [
+      "1. Access Control> Add Access Group\n2. 임의의 Access Level 선택 > 임의의 User Group or User 선택",
+      "1. Access Control > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > 임의의 User Group or User 선택 > Access Group에 포함된 User 인증시도\n2. Access Control > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > 임의의 User Group or User 선택 > Access Group에 미포함된 User 인증시도",
+      "1. Access Control > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > Apply",
+      "1. Access Control > Add Access Level > Name 설정 > +Add > 임의의 Door 선택 > 현재 시간이 포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > 임의의 User Group or User 선택 > Access Group에 포함된 User 인증시도",
+      "1. Access Control > Add Floor Level > Name 설정 > +Add > 임의의 Elevator 선택 > 선택된 Elevator Name 선택 > 현재 시간이 포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Floor Level 선택 > 임의의 User Group or User 선택 > Access Group에 포함된 User 인증시도",
+      "1. Access Control > Add Access Level > Name 설정 > +Add > 임의의 Door 선택 > 현재 시간이 미포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > 임의의 User Group or User 선택 > Access Group에 포함된 User 인증시도",
+      "1. Access Control > Add Floor Level > Name 설정 > +Add > 임의의 Elevator 선택 > 선택된 Elevator Name 선택 > 현재 시간이 미포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Floor Level 선택 > 임의의 User Group or User 선택 > Access Group에 포함된 User 인증시도",
+      "1. Access Control > Add Access Level > Name 설정 > +Add > 임의의 Door 선택 >  현재 시간이 포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > User 선택 > Access Group에 미포함된 User 인증시도",
+      "1. Access Control > Add Access Level > Name 설정 > +Add > 임의의 Door 선택 >  현재 시간이 포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > User 선택 > Access Group에 미포함된 User 인증시도",
+      "1. Device > Authentication > Full Access변경\n2. Master만 Full Access 변경 > Master,Slave 인증 시도\n3. Master, Slave 모두 Full Access 변경 > Master,Slave 인증 시도",
+      "1. Door Or Elevator 생성 > Add Access Level Or Floor Level > Add Access Group > Apply\n2. Device > Authentication > Full Access변경 > Apply",
+      "1. Device > Authentication > Full Access변경 > Door Or Elevator 설정 > Add Access Level Or Floor Level > Add Access Group > Apply"
+    ],
+    "data": [
+      "[BioStar]\n1. Access Rule(Group+Level) 설정\n1) Access Level + Floor Level +  User Group\n2) Access Level + Floor Level + User\n3) Access Level + Floor Level + User Group + User",
+      "[BioStar]\n1. Access Group에 포함된 User\n2. Access Group에 미포함된 User",
+      "[BioStar]\n1. Access Rule(Group+Level) 설정\n1) Access Level만 설정\n2) Floor Level만 설정\n3) User Group만 설정\n4) User만 설정",
+      "[BioStar]\n1. Access Level을 생성할때 현재 시간이 포함된 Schedule을 선택\n",
+      "[BioStar]\n1. Floor Level을 생성할때 현재 시간이 포함된 Schedule을 선택\n",
+      "[BioStar]\n1. Access Level을 생성할때 현재 시간이 미포함된 Schedule을 선택",
+      "[BioStar]\n1. Floor Level을 생성할때 현재 시간이 미포함된 Schedule을 선택",
+      "[BioStar]\n1. Access Level을 생성할때 현재 시간이 포함된 Schedule을 선택\n2. Access Group에 속하지 않은 사용자",
+      "[BioStar]\n1. Floor Level을 생성할때 현재 시간이 포함된 Schedule을 선택\n2. Access Group에 속하지 않은 사용자",
+      "[BioStar]\n1. Master Full Access 변경\n2. Slave Full Access 변경\n",
+      "[BioStar]\n1. Device Full Access Enable로 변경",
+      "[BioStar]\n1. Device Full Access Enable로 변경\n2. Access Group 정보 변경"
+    ],
+    "expected_result": [
+      "1. 최대 2048개까지 추가 가능하다.\n> AG/AL/FL : 2048\n2. 출입 그룹은 사용자별 최대 16개까지 설정할 수 있다.\n3. 장치에서 사용자의 출입그룹 설정 및 변경은 불가하다.\n4. Name을 최대 48자까지 설정 할 수 있다.\n5. 출입그룹 추가 / 업데이트가 가능하다.\n6. 특정 출입 그룹 삭제가 가능하다.\n7. 전체 출입 그룹 삭제가 가능하다.\n8. 출입 그룹 정보 확인이 가능하다.\n9. 출입그룹에 속한 사용자그룹의 사용자로 인증할 경우 인증성공이 된다.\n10. 출입그룹에 속한 사용자로 인증시 인증성공 발생\n11. 출입그룹에 속한 사용자 그룹 및 사용자로 인증시 인증성공 발생",
+      "1. 출입 그룹이 있는 사용자로 인증 시 출입이 가능하다.\n2. 출입 그룹이 없는 사용자로 인증 시 출입이 불가능하다.\n",
+      "1. Access Rule중 2개 이상 설정가능\n2. Access Level만 추가시 Access Group 생성불가\n3. Floor Level만 추가시 Access Group 생성 불가\n4. User Group만 추가시 Access Group 생성가능\n5. User만 추가시 Access Group 생성가능\n\n(off) 4,5의 경우 대량으로 생성하였을때의 편의를 위하여 가능토록 함.",
+      "1. 인증시간이 설정한 스케줄에 포함되는 경우 인증이 성공된다. 또한 출입이 허용된다.\n",
+      "1. 인증시간이 설정한 스케줄에 포함되는 경우 인증이 성공된다. 또한 출입이 허용된다.\n",
+      "1. 인증시간이 설정한 스케줄에 포함되지 않는 경우 인증이 실패된다.또한, 출입이 거부된다.\n2. 출입이 거부 될 경우, 'Access Denied' 로그와 사용자 ID가 로그에 남는다.",
+      "1. 인증시간이 설정한 스케줄에 포함되지 않는 경우 인증이 실패된다.또한, 출입이 거부된다.\n2. 출입이 거부 될 경우, 'Access Denied' 로그와 사용자 ID가 로그에 남는다.",
+      "1. 출입그룹에 속하지 않은 사용자로 인증시 출입 거부된다.\n2. 'Access Denied' 로그와 사용자 ID가 로그에 남는다.\n3. 인증 리더(장치)가 속한 출입문이 출입그룹의 출입권한으로 설정되지 않은 경우 출입 거부된다.\n4. 'Access Denied' 로그와 사용자 ID가 로그에 남는다.",
+      "1. 출입그룹에 속하지 않은 사용자로 인증시 출입 거부된다.\n2. 'Access Denied' 로그와 사용자 ID가 로그에 남는다.\n3. 인증 리더(장치)가 속한 Elevoatr가 출입그룹의 출입권한으로 설정되지 않은 경우 출입 거부된다.\n4. 'Access Denied' 로그와 사용자 ID가 로그에 남는다.",
+      "1. 해당 장치에서는 출입 그룹 적용 여부와 상관없이 이 장치에 등록된 모든 사용자의 출입 인증이 가능하다.\n2. Master만 Full Access 일경우 Master만 Full Access로 동작해야 한다.\n",
+      "1. BioStar에서 다음과 같은 Error 팝업이 뜨며 생성 불가하다.\n*Unable to enable full access for Device included in Access Group(302)\n2. Full Access Disable로 변경시 Access Group 생성 가능",
+      "1. BioStar에서 다음과 같은 Error 팝업이 뜨며 변경 불가하다\n*Device with full access enabled cannot be assigned to Access Group(650)"
+    ]
+  }
+}

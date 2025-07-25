@@ -1,5 +1,20 @@
 ■ 이슈 키: COMMONR-376
 ■ 제목: [BSX지원기능][BDP-953] Alternate Access Timer
+■ 설명: https://jira.suprema.co.kr/browse/BDP-953
+
+장애인 또는 (정기방문) 배달부 등 설정된 개방시간보다 더 긴 시간을 필요로 하는 특정 사용자들을 위해 긴 출입문 개방 시간을 지원
+> 사용자 - 사용자별로 "Extended Door Open Time" 사용여부 설정 지원(Enable/Disable)
+> 출입문 - "Extended Door Open Time" 설정 지원
+
+1) 현 건 확인시 Door 및 출입그룹은 기본으로 설정되어 있는 상태에서 진행
+ 
+2) Door 생성시 하기와 같이 구성 후 구성된 환경별로 케이스 진행
+> 단일 장치 구성
+> RS485 구성
+> Wiegand Reader 구성
+※ Reader/Relay/Exit/Sensor 모두 설정된 상태
+
+BSX 지원기능(초기 버전에서는 Floor 미지원. 차후에는 Floor도 지원예정)
 ============================================================
 
 ■ 테스트 스텝

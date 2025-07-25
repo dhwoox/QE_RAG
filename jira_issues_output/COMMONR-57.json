@@ -1,0 +1,87 @@
+{
+  "id": "COMMONR-57",
+  "content": [
+    [
+      1,
+      "1. USER > 전송할 사용자 선택\n2. Transfer To Device 선택 > 사용자를 전송할 장치 선택 > Transfer 선택",
+      "[BioStar] - 장치에 사용자가 없는 경우 Transfer to Device\n1. 개별 사용자\n2. 전체 사용자",
+      "선택한 개별 사용자/전체 사용자가 장치에 전송되어야 한다.\n> 장치에서 전송받은 사용자 확인\n> 사용자 추가 로그가 남는다."
+    ],
+    [
+      2,
+      "1. USER > 전송할 사용자 선택\n2. Transfer To Device 선택 > 사용자를 전송할 장치 선택\n3. Overwrite users with different information 선택 > Transfer 선택",
+      "[BioStar] - 장치에 사용자가 있을 경우에 대해 Overwrite Users\n1. 개별 사용자\n2. 전체 사용자",
+      "선택한 개별 사용자/전체 사용자가 장치에 Overwrite로 전송되어야 한다.\n> 장치에서 전송받은 사용자 확인\n> 사용자 편집 로그가 남는다."
+    ],
+    [
+      3,
+      "1. Door, Access Level/Group 생성\n2. DEVICE > 장치 선택 > Sync Device 실행\n> 장치에 전송된 설정값 확인\n3. DEVICE > Sync Device 실행한 장치 선택 > Factory Reset 실행 \n4. DEVICE > Factory Reset 실행한 장치 선택 > Sync Device 재실행\n> 장치에 전송된 설정값 확인",
+      "[BioStar] - 사용자 자동 동기화 사용인 경우",
+      "User, Access Group/Level, Door, Zone, Schedule, Holiday Group(Holiday 포함), Blacklist가 전송되어야 한다.\n (DeviceViewer에서 장치 설정 확인)\n\n *Over Spec일 경우 Sync가 Delete Data & Sync Device로 동작\n ex) BioStar2 사용자 2만 / N2 최대 1만 등록 가능 장치\n-Sync Device 사용자 동기화 되지 않음 (BLIIFWI-1023)\n -Delete Data & Sync Device 사용자 동기화 동작"
+    ],
+    [
+      4,
+      "1. USER > 사용자 선택 > 사용자 전송/삭제\n2. 전송/삭제 중 연속인증(지문/카드) or 연속 키입력",
+      "[BioStar]\n1. 사용자전송/삭제 > 3000명 \n2. 연속인증(지문/카드) > 20회\n3. 연속 키입력 > 50회\n\n(*) XPS2 의 경우 1인당 1지 기준으로 1000명",
+      "1. 사용자 전송/삭제 중 인증이 발생하면 \n2. 연속인증(지문/카드) > 20회\n3. 연속 키입력 > 50회\n\n(*) XPS2 의 경우 1인당 1지 기준으로 1000명인증에 대한 성공/실패를 발생시켜야 하고, 인증성공/실패를 발생시킨 후 다시 사용자전송/삭제가 진행되어야 한다.\n> 출입문과 출입그룹이 존재하는 경우 - 인증 성공 시 출입문이 열리는 지 확인\n2. 장치 Reboot이 발생되지 않아야 한다.\n3. 일반적인 상태에서는 사용자 전송 시 TimeOut이 발생하면 안된다.\n> Slave 장치는 해당 없음"
+    ],
+    [
+      5,
+      "1. BioStar> User> 사용자추가 후 장치에 전송\n2. Door, Access Level/Group 생성\n3. 장치에 전송된 설정 확인",
+      "[BioStar] - 사용자 자동 동기화 사용 안함인 경우\n1. 사용자 추가/전송 -> Access Group 생성",
+      "1. 사용자에 Access Group 정보가 정상적으로 내려가야 한다.\n2. 일반적인 상태에서는 사용자 전송 시 TimeOut이 발생하면 안된다.\n> Slave 장치는 해당 없음"
+    ],
+    [
+      6,
+      "1. BioStar> User> 사용자추가\n2. Door, Access Level/Group 생성\n3. 장치에 사용자전송\n4. 장치에 전송된 설정 확인",
+      "[BioStar] - 사용자 자동 동기화 사용 안함인 경우\n1. 사용자 추가, Access Group 생성 -> 사용자 전송",
+      "1. 사용자에 Access Group 정보가 정상적으로 내려가야 한다.\n2. 일반적인 상태에서는 사용자 전송 시 TimeOut이 발생하면 안된다.\n> Slave 장치는 해당 없음"
+    ],
+    [
+      7,
+      "1. BioStar> User> 사용자추가\n2. Door, Access Level/Group 생성\n3. Setting> Server> Automatic User Synchronization: All Devices 설정\n4. Device> 장치선택 후 Sync Device\n5. 장치에 전송된 설정 확인\n6. Setting> Server> Automatic User Synchronization: Not Used 설정\n7. Device> 장치선택 후 Sync Device",
+      "[BioStar] - 사용자 자동 동기화 사용 -> 사용 안함으로 변경 \n1. 자동 동기화 사용 상태와 사용 안함 상태의 비교(Access Group)",
+      "사용자동기화 끈 상태에서 Sync Device시 사용자를 제외하고, Access Group(Level, Schedule, Door)이 삭제되고, 전송 되는 데, 각 해당 사용자의 Access Group은 유지하여 정상적으로 사용자 동기화 사용전 처럼 인증에 성공해야 한다."
+    ],
+    [
+      8,
+      "0. Transfer To Device 선택> 사용자 전체 삭제\n1. USER> 전송할 사용자 전체 선택\n2. Transfer To Device 선택 > 사용자를 전송할 장치 선택> Transfer 선택> 1회 전송\n3. Overwrite users with different information 선택 > Transfer 선택> 2회 전송\n4. User Transfer 중 사용자 인증 시도\n5. Overwrite users with different information 선택 > Transfer 선택> 3회 전송",
+      "[BioStar] - 장치에 사용자가 있을 경우에 대해 Overwrite Users\n1. 전체 사용자",
+      "1. BioStar를 통해 수동으로 Overwrite로 사용자 전송 수행 한다.\n> 인증 실패/성공 로그 저장 확인\n> 장치에서 전송받은 사용자 확인\n> 사용자 편집 로그 저장 확인\n: Flash가 깨진 경우 Update Fail 발생, 문제 없는 경우 Update Success 발생"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-57",
+    "description": "",
+    "test_step": [
+      "1. USER > 전송할 사용자 선택\n2. Transfer To Device 선택 > 사용자를 전송할 장치 선택 > Transfer 선택",
+      "1. USER > 전송할 사용자 선택\n2. Transfer To Device 선택 > 사용자를 전송할 장치 선택\n3. Overwrite users with different information 선택 > Transfer 선택",
+      "1. Door, Access Level/Group 생성\n2. DEVICE > 장치 선택 > Sync Device 실행\n> 장치에 전송된 설정값 확인\n3. DEVICE > Sync Device 실행한 장치 선택 > Factory Reset 실행 \n4. DEVICE > Factory Reset 실행한 장치 선택 > Sync Device 재실행\n> 장치에 전송된 설정값 확인",
+      "1. USER > 사용자 선택 > 사용자 전송/삭제\n2. 전송/삭제 중 연속인증(지문/카드) or 연속 키입력",
+      "1. BioStar> User> 사용자추가 후 장치에 전송\n2. Door, Access Level/Group 생성\n3. 장치에 전송된 설정 확인",
+      "1. BioStar> User> 사용자추가\n2. Door, Access Level/Group 생성\n3. 장치에 사용자전송\n4. 장치에 전송된 설정 확인",
+      "1. BioStar> User> 사용자추가\n2. Door, Access Level/Group 생성\n3. Setting> Server> Automatic User Synchronization: All Devices 설정\n4. Device> 장치선택 후 Sync Device\n5. 장치에 전송된 설정 확인\n6. Setting> Server> Automatic User Synchronization: Not Used 설정\n7. Device> 장치선택 후 Sync Device",
+      "0. Transfer To Device 선택> 사용자 전체 삭제\n1. USER> 전송할 사용자 전체 선택\n2. Transfer To Device 선택 > 사용자를 전송할 장치 선택> Transfer 선택> 1회 전송\n3. Overwrite users with different information 선택 > Transfer 선택> 2회 전송\n4. User Transfer 중 사용자 인증 시도\n5. Overwrite users with different information 선택 > Transfer 선택> 3회 전송"
+    ],
+    "data": [
+      "[BioStar] - 장치에 사용자가 없는 경우 Transfer to Device\n1. 개별 사용자\n2. 전체 사용자",
+      "[BioStar] - 장치에 사용자가 있을 경우에 대해 Overwrite Users\n1. 개별 사용자\n2. 전체 사용자",
+      "[BioStar] - 사용자 자동 동기화 사용인 경우",
+      "[BioStar]\n1. 사용자전송/삭제 > 3000명 \n2. 연속인증(지문/카드) > 20회\n3. 연속 키입력 > 50회\n\n(*) XPS2 의 경우 1인당 1지 기준으로 1000명",
+      "[BioStar] - 사용자 자동 동기화 사용 안함인 경우\n1. 사용자 추가/전송 -> Access Group 생성",
+      "[BioStar] - 사용자 자동 동기화 사용 안함인 경우\n1. 사용자 추가, Access Group 생성 -> 사용자 전송",
+      "[BioStar] - 사용자 자동 동기화 사용 -> 사용 안함으로 변경 \n1. 자동 동기화 사용 상태와 사용 안함 상태의 비교(Access Group)",
+      "[BioStar] - 장치에 사용자가 있을 경우에 대해 Overwrite Users\n1. 전체 사용자"
+    ],
+    "expected_result": [
+      "선택한 개별 사용자/전체 사용자가 장치에 전송되어야 한다.\n> 장치에서 전송받은 사용자 확인\n> 사용자 추가 로그가 남는다.",
+      "선택한 개별 사용자/전체 사용자가 장치에 Overwrite로 전송되어야 한다.\n> 장치에서 전송받은 사용자 확인\n> 사용자 편집 로그가 남는다.",
+      "User, Access Group/Level, Door, Zone, Schedule, Holiday Group(Holiday 포함), Blacklist가 전송되어야 한다.\n (DeviceViewer에서 장치 설정 확인)\n\n *Over Spec일 경우 Sync가 Delete Data & Sync Device로 동작\n ex) BioStar2 사용자 2만 / N2 최대 1만 등록 가능 장치\n-Sync Device 사용자 동기화 되지 않음 (BLIIFWI-1023)\n -Delete Data & Sync Device 사용자 동기화 동작",
+      "1. 사용자 전송/삭제 중 인증이 발생하면 \n2. 연속인증(지문/카드) > 20회\n3. 연속 키입력 > 50회\n\n(*) XPS2 의 경우 1인당 1지 기준으로 1000명인증에 대한 성공/실패를 발생시켜야 하고, 인증성공/실패를 발생시킨 후 다시 사용자전송/삭제가 진행되어야 한다.\n> 출입문과 출입그룹이 존재하는 경우 - 인증 성공 시 출입문이 열리는 지 확인\n2. 장치 Reboot이 발생되지 않아야 한다.\n3. 일반적인 상태에서는 사용자 전송 시 TimeOut이 발생하면 안된다.\n> Slave 장치는 해당 없음",
+      "1. 사용자에 Access Group 정보가 정상적으로 내려가야 한다.\n2. 일반적인 상태에서는 사용자 전송 시 TimeOut이 발생하면 안된다.\n> Slave 장치는 해당 없음",
+      "1. 사용자에 Access Group 정보가 정상적으로 내려가야 한다.\n2. 일반적인 상태에서는 사용자 전송 시 TimeOut이 발생하면 안된다.\n> Slave 장치는 해당 없음",
+      "사용자동기화 끈 상태에서 Sync Device시 사용자를 제외하고, Access Group(Level, Schedule, Door)이 삭제되고, 전송 되는 데, 각 해당 사용자의 Access Group은 유지하여 정상적으로 사용자 동기화 사용전 처럼 인증에 성공해야 한다.",
+      "1. BioStar를 통해 수동으로 Overwrite로 사용자 전송 수행 한다.\n> 인증 실패/성공 로그 저장 확인\n> 장치에서 전송받은 사용자 확인\n> 사용자 편집 로그 저장 확인\n: Flash가 깨진 경우 Update Fail 발생, 문제 없는 경우 Update Success 발생"
+    ]
+  }
+}

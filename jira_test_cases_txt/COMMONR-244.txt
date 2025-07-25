@@ -1,5 +1,89 @@
 ■ 이슈 키: COMMONR-244
 ■ 제목: 인증 - Secure Credential/Access On 카드(DESFire Advanced)
+■ 설명: : Mifare DesFire / Mifare DesFire EV1 Card
+ -: Application ID, 기본값 : 1, Max : 16777215
+ -: File ID, 기본값 : 1, Max : 255
+ -: Format이 필요함
+ -: Max App : 28, Max File : 32(1 Per Application - Desfire EV1), 16(1 Per Application - Desfire)
+
+V1.x Template On Card에 대한 V2.x Device의 호환 기능 제공
+
+& Secure Credential Card &
+ 1) Write
+ > 영숫자 모드 : Card ID - Default(공란), 24 byte 범위 내에서 10진수 숫자를 1 부터 입력 지원
+ > 숫자 모드 : 기존과 동일
+ > 해당 카드 ID를 바이너리 데이터로 장치에 보내고, 장치에서는 Card ID 기반으로 표시하고, Wiegand Output 사용시 해당 Card ID 출력
+
+2) Read
+ > 발급된 Card ID를 그대로 읽음.
+
+% 주의 사항 %
+ 영숫자 모드에서 숫자 모드로 변경하는 경우에는 기존 사용자가 있으면 불가능하기 때문에, 보안 크리덴셜 카드를 보유하고 있는 모든 사용자들이 삭제됨
+ 따라서 기존 발급된 카드들은 미할당 카드 리스트에 존재함.
+ (확인 필요) 
+ > 영숫자 모드에서 발급된 카드 ID를 숫자 모드인 시스템에서 읽는 경우 : 카드 ID는 4 byte 범위 내에서 잘려서 표시됨. (DE-620/Ominikey 에서도 동일) 
+ > 영숫자 모드가 지원 되지 않는 장치에서 읽으려고 한 경우에도 카드 ID는 4 byte 범위 내에서 잘려서 표시됨 (DE-620/Ominikey 에서도 동일) 
+ > 이에 따라 잘려서 읽힌다는 경고 메시지를 표시한다. (DE-620/Ominikey 에서도 동일) 
+ > Xpass, Xpass S2의 예전 영숫자를 지원하지 않는 FW에서도 위와 동일하다.
+ (확인 필요)
+ > 스마트 카드 포맷의 경우 영숫자 모드가 일치하지 않아도 FW 버전이 달라도 포맷 지원. 해당 카드 레이아웃만 일치하면 장치 종류에 상관 없이 가능함. 예) BLN, DE-620
+
+& Access On Card &
+ 1) Write
+ > 영숫자 모드 : Card ID - User ID 그대로 표시하고 변경 불가능. 예) AAAA 라면 AAAA 라고 표시
+ > 장치에서는 영숫자 방식인 경우 영숫자로 처리하고, 숫자인 경우 숫자로 구분하여 처리한다. 따라서 Wiegand Output 사용시 Card ID를 숫자로 내보내기 위해서는 숫자 모드 사용이 필요하다
+ 2) Read
+ > 발급된 Card ID를 그대로 읽음.
+ (확인필요) 
+ > 영숫자 모드에서 발급된 카드 ID를 숫자 모드인 시스템에서 읽는 경우 : 카드 ID를 읽지 못하고 오류를 발생. (DE-620/Ominikey 에서도 동일) 
+ > 영숫자 모드가 지원하지 않는 장치에서 읽으려고 한 경우에는 카드 ID를 읽지 못하고 오류를 발생. 
+ > Xpass, Xpass S2의 예전 영숫자를 지원하지 않는 FW에서도 위와 동일하다.
+ (확인 필요) 
+ > 스마트 카드 포맷의 경우 영숫자 모드가 일치하지 않아도 FW 버전이 달라도 포맷 지원. 해당 카드 레이아웃만 일치하면 장치 종류에 상관 없이 가능. 예) BLN, DE-620
+
+Card 별 입력 범위
+ > Desfire 입력 상세
+ Hex 값 입력 창에서 16 Byte 범위로 0 부터 FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF 까지 입력 가능
+
+DESFire/DESFire EV1 Key 개선 및 Encryption Type AES 지원
+ 가. 스마트 카드 추가/편집 화면
+         1) Desfire Advanced를 사용할 경우 Mobile Card 지원 불가 (Primary Key를 설정할 수 없기 때문, Mobile카드를 위한 분리는 2.7.0에서 제외), -Desfire Smart Card가 분리되어 출력-
+         2) Desfire Smart Card에 Desfire Advanced key설정 가능한 Toggle Button이 출력 (Default : Disable ,기존모드)
+
+나. DESfire Advanced 화면
+         1) DESFire Advanced 활성화시 Primary Key,Secondary Key항목이 App Master Key, File Read Access Key, File Write Access Key항목으로 변경되어 출력된다.
+         2) App Master Key (File생성/삭제 작업시 사용하는 필요한 키)
+              : Key 입력은 HEX값으로 입력이 가능하다. (16바이트 지원)
+              : 공란 입력 후 저장 불가능 (BMRR-286)
+              : Index는 0으로 고정 (비활성화)
+         3) File Read Access Key (App내에 파일 읽기 위해 필요한 키)
+              : Key 입력은 HEX값으로 입력이 가능한다. (16바이트 지원)
+              : 공란 입력 후 저장 불가능 (BMRR-286)
+              : Index는 0~13 (14는 Free Access키, 15는 Deny Access로 사용하고 있기 때문)
+              : Index 초기 값은 1, 빈칸으로 저장 시 신규 생성시에는 Default값으로, 저장된 값을 수정시에는 이전 값으로 저장 됨, Index입력 칸에는 숫자만 입력 가능하며 허용값을 넘어갈 경우 최대 값은 13으로 자동 변환
+              : Index 0을 설정 시 Key입력칸은 비활성화 (Index 0은 App Master Key로 사용하기 때문에 동일한 키를 사용하기 위해 0을 설정한 것이라면 Key입력을 다르게 할 수 없도록 제약해야 하기 때문)
+              : File Write Access Key의 Index값이랑 동일할 경우 저장 시 Write Access Key 비활성화 됨 (동일 인덱스일 경우 Read/Write키 중 하나의 키를 사용해야 하기 때문에 Read Key만 활성화 시킴)
+         4) File Write Access Key (App내의 파일 생성하기 위해 필요한 키)
+              : Key 입력은 HEX값으로 입력이 가능하다. (16바이트 지원)
+              : 공란 입력 후 저장 불가능 (BMRR-286)
+              : Index는 0~13 (14는 Free Access키, 15는 Deny Access로 사용하고 있기 때문)
+              : Index 초기 값은 2, 빈칸으로 저장 시 신규 생성시에는 Default값으로, 저장된 값을 수정시에는 이전 값으로 저장 됨, Index입력 칸에는 숫자만 입력 가능하며 허용값을 넘어갈 경우 최대 값은 13으로 자동 변환
+              : Index 0을 설정 시 Key입력칸은 비활성화 (Index 0은 App Master Key로 사용하기 때문에 동일한 키를 사용하기 위해 0을 설정한 것이라면 Key입력을 다르게 할 수 없도록 제약해야 하기 때문)
+              : File Read Access Key의 Index값이랑 동일할 경우 저장 시 Write Access Key 비활성화 됨 (동일 인덱스일 경우 Read/Write키 중 하나의 키를 사용해야 하기 때문에 Read Key만 활성화 시킴)
+         5) App ID (User 정보가 저장될 Application ID)
+              : ID 범위는 1~16,777,215 지원
+         6) File ID (User 정보가 저장될 File ID)
+              : ID 범위는 0~31 지원
+         7) Encryption Type
+              : Default는 DES/3DES 
+              : AES, DES/3DES 선택 가능
+
+-다. Mobile Card 화면-
+         -1) Primary Key, Secondary Key를 지원하며 App ID, File ID, Encryption Type은 출력되지 않음 (확인 필요)-
+ 라. Change Card Key 미지원 
+ 마. Desfire Advanced 레이아웃을 장치에 설정 후 Desfire/EV1 Card 포맷은 지원하지 않음 (포맷이 실패 됨, PICC Master Key설정값이 레이아웃에 없기 때문, 3rd Party에서 발급한 Desfire카드를 지원하는게 목적)
+ -바. 업그레이드 시 스마트카드에 설정된 모바일/Desfire 레이아웃이 분리되어 저장된다. (Migration 필요, Desfire에 설정된 설정이 모바일 레이아웃에 동일하게 저장)-
+ 사. 구버전 FW에 대해서 Desfire Advanced 스마트카드 설정 시 에러 없이 저장 됨 (Desfire 스마트카드 동작되지 않음)
 ============================================================
 
 ■ 테스트 스텝

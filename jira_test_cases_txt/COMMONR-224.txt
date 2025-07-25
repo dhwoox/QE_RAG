@@ -1,5 +1,16 @@
 ■ 이슈 키: COMMONR-224
 ■ 제목: 장치 - Daylight Saving Time
+■ 설명: 날짜와 시간을 설정하는 과정
+
+(off) DST 관련하여 TimeZone과 같이 Master와의 시간 동기화 항목이 아니기 때문에 항상 Master와 Slave의 DST가 다른 경우에도 Master의 DST 적용 된 시간으로 로그가 표시됨
+
+RS 485(Master-Slave) 간 TimeZone, DST, 시간 관련 변경 사항
+> 기존과 다르게 Master의 설정으로 Sync(변경 시점)됨
+> 변경 시점 - 1) Slave는 새로 추가되는 시점, 2) RS 485 연결이 끊어지고 재연결되는 시점, 3) Master가 Biostar Or User에 의해 변경되는 시점, 4) Slave가 Biostar Or User에 의해 변경되는 시점(Slave가 재연결 되기 전까지는 Master와 다르게 동작됨)
+> 신규 로그 추가 - DST Changed
+> TimeZone - Batch Edit, Device Info를 통해 변경 시 Master/Slave 모두 저장(Master-Slave가 TimeZone이 다른 경우 : 변경 시점(4 Case)에 의해 동기화
+> DST - Batch Edit를 통해 변경 시 Master는 기존 처럼 동작, Slave는 BioStar 상에는 성공, Device는 Fail(저장 안되나, 이후 변경 시점에 의해 DST 저장됨)
+> DST - Device Info를 통해 변경 시 Master는 기존 처럼 동작, Slave는 UI가 없어 기존 처럼 설정 못함
 ============================================================
 
 ■ 테스트 스텝

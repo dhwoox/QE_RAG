@@ -1,0 +1,204 @@
+{
+  "id": "COMMONR-9",
+  "content": [
+    [
+      1,
+      "[UI지원모델]\n\n1. Device> 근태모드 설정\n2. 설정여부 확인",
+      "근태모드\n> 사용안함(Default)\n> By User\n> By Schedule\n> Last Choice\n> Fixed",
+      "선택한 값이 설정되어야 한다.\n> 장치에서 설정값 확인"
+    ],
+    [
+      2,
+      "[UI지원모델]\n\n1. Device> 근태캡션 설정\n2. 설정여부 확인",
+      "1. 근태 캡션 유효 범위\n> 최대 16자 설정 가능\n> 영문, 한글, 숫자, 특문",
+      "유효 범위값만 입력되어야 한다.\n> 장치에서 설정값 확인"
+    ],
+    [
+      3,
+      "[RS485 연결된 상태]\n\n1. Device> 근태모드 T&A Event의 Label 설정\n2. Master/Slave 설정여부 확인",
+      "Master / Slave\n> UI지원모델\n\nT&A Event\n> 최대 16개 지원",
+      "선택한 값이 설정되어야 한다.\n> BLN : <,> 좌, 우 방향키에 의해 등록된 근태키 표시, 지정\n> A2/FS2 : T&A 버튼으로 등록된 근태키 표시, 지정\n> BS2 : ∨ 하 방향키에 의해 등록된 근태키 표시, 지정 \n> BSL2/N2/FL : OK 버튼으로 등록된 근태키 표시, 지정"
+    ],
+    [
+      4,
+      "[RS485 연결된 상태]\n\n1. Device> 근태모드 'By User' 설정\n2. 근태캡션 설정 - 16개\n3. 근태캡션 선택하지 않은 상태에서 Master/Slave에 인증시도",
+      "Master / Slave\n> UI지원모델",
+      "1. 근태캡션을 선택하지 않은 경우 일반인증으로 동작되어야 한다.\n> 인증 성공/실패에 따라 로그가 남는다.\n> 장치에서 로그 및 설정값 확인"
+    ],
+    [
+      5,
+      "[RS485 연결된 상태]\n[스케줄 생성된 상태]\n\n1. Device> 근태모드 'By Schedule' 설정\n2. 근태이벤트에 스케줄 미설정\n3. Master/Slave에 인증시도",
+      "Master / Slave\n> UI지원모델",
+      "근태캡션이 화면에 표시되지 않고, 인증시 일반인증으로 동작되어야 한다.\n\n> Slave(FS2) 장치의 경우 - 미지원\n : Private Message"
+    ],
+    [
+      6,
+      "[RS485 연결된 상태]\n[스케줄 생성된 상태]\n\n1. Device> 근태모드 'By Schedule' 설정\n2. 16개의 근태이벤트에 스케줄 설정\n3. Master/Slave에서 현재 시간에 해당하는 근태캡션 표시유무 확인",
+      "Master / Slave\n> UI지원모델",
+      "현재 시간에 해당하는 근태캡션이 화면에 표시되어야 한다.\n> 인증 성공/실패에 따라 로그가 남는다.\n> 장치에서 로그 및 설정값 확인"
+    ],
+    [
+      7,
+      "[RS485 연결된 상태]\n\n1. Device> 근태모드 'Last Choice' 설정\n2. 근태캡션 미설정\n3. Master/Slave에 인증시도",
+      "Master / Slave\n> UI지원모델",
+      "화면에 Code 1에 해당하는 근태캡션이 표시되어야 하고, 해당 캡션으로 인증동작되어야 한다.\n\n> Slave(FS2) 장치의 경우 - 미지원\n : Private Message"
+    ],
+    [
+      8,
+      "[RS485 연결된 상태]\n\n1. Device> 근태모드 'Last Choice' 설정\n2. Master/Slave에서 근태캡션 선택 후 인증시도",
+      "Master / Slave\n> UI지원모델",
+      "화면에 근태캡션이 표시되고, 인증후에도 화면에 근태캡션이 표시되어야 한다.\n> 인증 성공/실패에 따라 로그가 남는다.\n> 장치에서 로그 확인\n\n> Slave(FS2) 장치의 경우 - 미지원\n : Private Message "
+    ],
+    [
+      9,
+      "[RS485 연결된 상태]\n\n1. Device> 근태모드 'Fixed' 설정\n2. 근태코드 설정\n3. Master/Slave에 설정여부 확인",
+      "Master / Slave\n> UI지원모델\n\n근태코드\n> 16개 중 임의선택: 1~16 모두확인",
+      "선택한 값이 설정된다.\n> 장치에서 설정값 확인"
+    ],
+    [
+      10,
+      "[RS485 연결된 상태]\n\n1. Device> 근태모드 'Fixed' 설정\n2. 근태코드 설정\n3. Master/Slave에 인증시도",
+      "Master / Slave\n> UI지원모델\n\n근태코드\n> 16개 중 임의선택: 1~16 모두확인",
+      "Fixed T&A Event로 설정한 근태캡션이 화면에 표시되어야 한다.\n> 설정된 근태로 인증이 되어야 한다.\n: 인증 성공/실패에 따라 로그가 남는다.\n> 장치에서 로그 확인\n\n> Slave(FS2) 장치의 경우 - 미지원\n : Private Message "
+    ],
+    [
+      11,
+      "[RS485 연결된 상태]\n\n1. Device> 근태모드 'Fixed' 설정\n2. 근태코드 설정\n3. Master/Slave에서 T&A Key를 눌러 설정변경 시도",
+      "Master / Slave\n> UI지원모델\n\n근태코드\n> 16개 중 임의선택: 1~16 모두확인",
+      "T&A Key 눌러도 설정이 변경되지 않는다.\n> 아무반응 없거나 에러팝업 발생(장치마다 상이함)\n(on) 추후 수정 가능\n> FS2의 경우 \n: T&A 버튼 사라짐"
+    ],
+    [
+      12,
+      "[RS485 연결된 상태]\n\n1. Device> 근태모드 설정\n2. Master/Slave에서 근태필수옵션 지원여부 확인",
+      "Master / Slave\n> UI지원모델\n\n근태모드\n> Not Use\n> By User\n> By Schedule\n> Last Choice\n> Fixed",
+      "1. By User 일 때 근태필수옵션 활성화 된다.\n2. Not Use, By Schedule, Last Choice, Fixed 일 때 근태필수옵션 활성화되지 않는다."
+    ],
+    [
+      13,
+      "[RS485 연결된 상태]\n\n1. Device> 근태모드 설정\n2. 근태필수옵션 설정\n3. Master/Slave에 인증시도",
+      "Master / Slave\n> UI지원모델\n\n근태모드\n> By User\n\n근태필수옵션\n> Enable\n> Disable",
+      "1. 선택한 값이 설정되어야 한다.\n> 장치에서 설정값 확인\n2. 근태필수옵션 Enable - 인증시 근태선택팝업이 발생한다.\n3. 근태필수옵션 Disable - 인증시 근태선택팝업이 발생되지 않고 일반인증으로 동작한다."
+    ],
+    [
+      14,
+      "1. Device> 근태모드: Not Use 설정\n2. Master/Slave에 인증시도",
+      "Master / Slave\n> UI지원모델",
+      "근태모드에 대해 선택이 불가능해야 하고 일반인증으로 동작되어야 한다."
+    ],
+    [
+      15,
+      "1. Master/Slave에서 임의의 근태키를 선택한다.\n2. 인증을 시도하지 않고 기다린다.",
+      "1. 근태키(F1~F4)중 임의의 키 누름",
+      "1. 메뉴타임 아웃에 의거하여 팝업창이 사라져야한다.\n2. Auth Timeout과는 무관.\n\n> FS2/FL의 경우\n: Auth Timeout으로 동작"
+    ],
+    [
+      16,
+      "[UI미지원 모델]\n\n1. Device> 근태모드 설정\n2. 인증을 통해 설정여부 확인",
+      "근태모드\n> 사용안함(Default)\n> By Schedule\n> Fixed",
+      "1. 선택한 값이 설정된다.\n> 인증을 통해 확인가능(로그)"
+    ],
+    [
+      17,
+      "[RS485 연결된 상태]\n[스케줄 생성된 상태]\n\n1. Device> 근태모드 'By Schedule' 설정\n2. 16개의 근태이벤트에 스케줄 설정\n3. Master/Slave에 인증시도",
+      "Master / Slave\n> UI미지원모델\n\n16개의 근태이벤트에 스케줄 설정\n> 현재시간이 해당되는 스케줄 포함",
+      "1. 현재 시간에 해당하는 근태코드로 근태인증된다.\n> 로그로 확인가능"
+    ],
+    [
+      18,
+      "[RS485 연결된 상태]\n[스케줄 생성된 상태]\n\n1. Device> 근태모드 'By Schedule' 설정\n2. 16개의 근태이벤트에 스케줄 설정\n3. Master/Slave에 인증시도",
+      "Master / Slave\n> UI미지원모델\n\n16개의 근태이벤트에 스케줄 설정\n> 현재시간이 해당되는 스케줄 미포함",
+      "1. 일반인증으로 동작한다.\n> 로그로 확인가능"
+    ],
+    [
+      19,
+      "[RS485 연결된 상태]\n\n1. Device> 근태모드 'Fixed' 설정\n2. 근태코드 설정\n3. Master/Slave에 인증을 통해 설정여부 확인",
+      "Master / Slave\n> UI지원모델\n\n근태코드\n> 16개 중 임의선택: 1~16 모두확인",
+      "1. 선택한 값이 설정된다.\n> 인증을 통해 확인가능(로그)"
+    ],
+    [
+      20,
+      "[UI지원모델 및 Admin 설정된 상태]\n\n1. 장치의 근태모드 설정되어 화면에 근태캡션 표시되는 상태\n2. Admin으로 메뉴접근 시도\n3. 메인화면으로 이동 후 화면에 근태캡션 표시유무 확인",
+      "근태모드\n> By Schedule\n> Last Choice\n> Fixed",
+      "1. 설정한 값이 유지되어야 한다.\n> 화면표시 및 저장값"
+    ],
+    [
+      21,
+      "[RS485 연결된 상태]\n\n1. Device> 근태모드 'Fixed' 설정\n2. 근태코드 설정\n3. Master/Slave에 인증을 통해 설정여부 확인\n4. 근태코드> Caption 변경\n5. Master/Slave에 인증을 통해 설정여부 확인",
+      "Master / Slave\n> UI지원모델\n\n근태코드\n> 16개 중 임의선택: 1~16 모두확인",
+      "1. 선택한 값이 설정된다.\n> 인증을 통해 확인가능(로그)\n2. 변경된 근태 Caption(Label)이 적용되어 표시 된다.\n> 인증을 통해 확인가능(변경근태)"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-9",
+    "description": "",
+    "test_step": [
+      "[UI지원모델]\n\n1. Device> 근태모드 설정\n2. 설정여부 확인",
+      "[UI지원모델]\n\n1. Device> 근태캡션 설정\n2. 설정여부 확인",
+      "[RS485 연결된 상태]\n\n1. Device> 근태모드 T&A Event의 Label 설정\n2. Master/Slave 설정여부 확인",
+      "[RS485 연결된 상태]\n\n1. Device> 근태모드 'By User' 설정\n2. 근태캡션 설정 - 16개\n3. 근태캡션 선택하지 않은 상태에서 Master/Slave에 인증시도",
+      "[RS485 연결된 상태]\n[스케줄 생성된 상태]\n\n1. Device> 근태모드 'By Schedule' 설정\n2. 근태이벤트에 스케줄 미설정\n3. Master/Slave에 인증시도",
+      "[RS485 연결된 상태]\n[스케줄 생성된 상태]\n\n1. Device> 근태모드 'By Schedule' 설정\n2. 16개의 근태이벤트에 스케줄 설정\n3. Master/Slave에서 현재 시간에 해당하는 근태캡션 표시유무 확인",
+      "[RS485 연결된 상태]\n\n1. Device> 근태모드 'Last Choice' 설정\n2. 근태캡션 미설정\n3. Master/Slave에 인증시도",
+      "[RS485 연결된 상태]\n\n1. Device> 근태모드 'Last Choice' 설정\n2. Master/Slave에서 근태캡션 선택 후 인증시도",
+      "[RS485 연결된 상태]\n\n1. Device> 근태모드 'Fixed' 설정\n2. 근태코드 설정\n3. Master/Slave에 설정여부 확인",
+      "[RS485 연결된 상태]\n\n1. Device> 근태모드 'Fixed' 설정\n2. 근태코드 설정\n3. Master/Slave에 인증시도",
+      "[RS485 연결된 상태]\n\n1. Device> 근태모드 'Fixed' 설정\n2. 근태코드 설정\n3. Master/Slave에서 T&A Key를 눌러 설정변경 시도",
+      "[RS485 연결된 상태]\n\n1. Device> 근태모드 설정\n2. Master/Slave에서 근태필수옵션 지원여부 확인",
+      "[RS485 연결된 상태]\n\n1. Device> 근태모드 설정\n2. 근태필수옵션 설정\n3. Master/Slave에 인증시도",
+      "1. Device> 근태모드: Not Use 설정\n2. Master/Slave에 인증시도",
+      "1. Master/Slave에서 임의의 근태키를 선택한다.\n2. 인증을 시도하지 않고 기다린다.",
+      "[UI미지원 모델]\n\n1. Device> 근태모드 설정\n2. 인증을 통해 설정여부 확인",
+      "[RS485 연결된 상태]\n[스케줄 생성된 상태]\n\n1. Device> 근태모드 'By Schedule' 설정\n2. 16개의 근태이벤트에 스케줄 설정\n3. Master/Slave에 인증시도",
+      "[RS485 연결된 상태]\n[스케줄 생성된 상태]\n\n1. Device> 근태모드 'By Schedule' 설정\n2. 16개의 근태이벤트에 스케줄 설정\n3. Master/Slave에 인증시도",
+      "[RS485 연결된 상태]\n\n1. Device> 근태모드 'Fixed' 설정\n2. 근태코드 설정\n3. Master/Slave에 인증을 통해 설정여부 확인",
+      "[UI지원모델 및 Admin 설정된 상태]\n\n1. 장치의 근태모드 설정되어 화면에 근태캡션 표시되는 상태\n2. Admin으로 메뉴접근 시도\n3. 메인화면으로 이동 후 화면에 근태캡션 표시유무 확인",
+      "[RS485 연결된 상태]\n\n1. Device> 근태모드 'Fixed' 설정\n2. 근태코드 설정\n3. Master/Slave에 인증을 통해 설정여부 확인\n4. 근태코드> Caption 변경\n5. Master/Slave에 인증을 통해 설정여부 확인"
+    ],
+    "data": [
+      "근태모드\n> 사용안함(Default)\n> By User\n> By Schedule\n> Last Choice\n> Fixed",
+      "1. 근태 캡션 유효 범위\n> 최대 16자 설정 가능\n> 영문, 한글, 숫자, 특문",
+      "Master / Slave\n> UI지원모델\n\nT&A Event\n> 최대 16개 지원",
+      "Master / Slave\n> UI지원모델",
+      "Master / Slave\n> UI지원모델",
+      "Master / Slave\n> UI지원모델",
+      "Master / Slave\n> UI지원모델",
+      "Master / Slave\n> UI지원모델",
+      "Master / Slave\n> UI지원모델\n\n근태코드\n> 16개 중 임의선택: 1~16 모두확인",
+      "Master / Slave\n> UI지원모델\n\n근태코드\n> 16개 중 임의선택: 1~16 모두확인",
+      "Master / Slave\n> UI지원모델\n\n근태코드\n> 16개 중 임의선택: 1~16 모두확인",
+      "Master / Slave\n> UI지원모델\n\n근태모드\n> Not Use\n> By User\n> By Schedule\n> Last Choice\n> Fixed",
+      "Master / Slave\n> UI지원모델\n\n근태모드\n> By User\n\n근태필수옵션\n> Enable\n> Disable",
+      "Master / Slave\n> UI지원모델",
+      "1. 근태키(F1~F4)중 임의의 키 누름",
+      "근태모드\n> 사용안함(Default)\n> By Schedule\n> Fixed",
+      "Master / Slave\n> UI미지원모델\n\n16개의 근태이벤트에 스케줄 설정\n> 현재시간이 해당되는 스케줄 포함",
+      "Master / Slave\n> UI미지원모델\n\n16개의 근태이벤트에 스케줄 설정\n> 현재시간이 해당되는 스케줄 미포함",
+      "Master / Slave\n> UI지원모델\n\n근태코드\n> 16개 중 임의선택: 1~16 모두확인",
+      "근태모드\n> By Schedule\n> Last Choice\n> Fixed",
+      "Master / Slave\n> UI지원모델\n\n근태코드\n> 16개 중 임의선택: 1~16 모두확인"
+    ],
+    "expected_result": [
+      "선택한 값이 설정되어야 한다.\n> 장치에서 설정값 확인",
+      "유효 범위값만 입력되어야 한다.\n> 장치에서 설정값 확인",
+      "선택한 값이 설정되어야 한다.\n> BLN : <,> 좌, 우 방향키에 의해 등록된 근태키 표시, 지정\n> A2/FS2 : T&A 버튼으로 등록된 근태키 표시, 지정\n> BS2 : ∨ 하 방향키에 의해 등록된 근태키 표시, 지정 \n> BSL2/N2/FL : OK 버튼으로 등록된 근태키 표시, 지정",
+      "1. 근태캡션을 선택하지 않은 경우 일반인증으로 동작되어야 한다.\n> 인증 성공/실패에 따라 로그가 남는다.\n> 장치에서 로그 및 설정값 확인",
+      "근태캡션이 화면에 표시되지 않고, 인증시 일반인증으로 동작되어야 한다.\n\n> Slave(FS2) 장치의 경우 - 미지원\n : Private Message",
+      "현재 시간에 해당하는 근태캡션이 화면에 표시되어야 한다.\n> 인증 성공/실패에 따라 로그가 남는다.\n> 장치에서 로그 및 설정값 확인",
+      "화면에 Code 1에 해당하는 근태캡션이 표시되어야 하고, 해당 캡션으로 인증동작되어야 한다.\n\n> Slave(FS2) 장치의 경우 - 미지원\n : Private Message",
+      "화면에 근태캡션이 표시되고, 인증후에도 화면에 근태캡션이 표시되어야 한다.\n> 인증 성공/실패에 따라 로그가 남는다.\n> 장치에서 로그 확인\n\n> Slave(FS2) 장치의 경우 - 미지원\n : Private Message ",
+      "선택한 값이 설정된다.\n> 장치에서 설정값 확인",
+      "Fixed T&A Event로 설정한 근태캡션이 화면에 표시되어야 한다.\n> 설정된 근태로 인증이 되어야 한다.\n: 인증 성공/실패에 따라 로그가 남는다.\n> 장치에서 로그 확인\n\n> Slave(FS2) 장치의 경우 - 미지원\n : Private Message ",
+      "T&A Key 눌러도 설정이 변경되지 않는다.\n> 아무반응 없거나 에러팝업 발생(장치마다 상이함)\n(on) 추후 수정 가능\n> FS2의 경우 \n: T&A 버튼 사라짐",
+      "1. By User 일 때 근태필수옵션 활성화 된다.\n2. Not Use, By Schedule, Last Choice, Fixed 일 때 근태필수옵션 활성화되지 않는다.",
+      "1. 선택한 값이 설정되어야 한다.\n> 장치에서 설정값 확인\n2. 근태필수옵션 Enable - 인증시 근태선택팝업이 발생한다.\n3. 근태필수옵션 Disable - 인증시 근태선택팝업이 발생되지 않고 일반인증으로 동작한다.",
+      "근태모드에 대해 선택이 불가능해야 하고 일반인증으로 동작되어야 한다.",
+      "1. 메뉴타임 아웃에 의거하여 팝업창이 사라져야한다.\n2. Auth Timeout과는 무관.\n\n> FS2/FL의 경우\n: Auth Timeout으로 동작",
+      "1. 선택한 값이 설정된다.\n> 인증을 통해 확인가능(로그)",
+      "1. 현재 시간에 해당하는 근태코드로 근태인증된다.\n> 로그로 확인가능",
+      "1. 일반인증으로 동작한다.\n> 로그로 확인가능",
+      "1. 선택한 값이 설정된다.\n> 인증을 통해 확인가능(로그)",
+      "1. 설정한 값이 유지되어야 한다.\n> 화면표시 및 저장값",
+      "1. 선택한 값이 설정된다.\n> 인증을 통해 확인가능(로그)\n2. 변경된 근태 Caption(Label)이 적용되어 표시 된다.\n> 인증을 통해 확인가능(변경근태)"
+    ]
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "id": "COMMONR-322",
+  "content": [
+    [
+      1,
+      "1. 잘못된 QR/사용자에 등록되지 않은 QR을 장치에 인증\n2. Monitoring > Real-time Log",
+      "> BioStar 2 QR\n> QR/Barcode",
+      "1. 인증실패 로그가 남는다.\n> KO: 1:1 인증 실패 (QR/Barcode)\n> EN: 1:1 authentication failed (QR/Barcode)"
+    ],
+    [
+      2,
+      "1. 최대 크기 초과한 QR을 장치에 인증\n(32byte 넘은 경우)\n2. Monitoring > Real-time Log",
+      "> QR/Barcode\n\nex.\nfc70e767081c5064c3ac5f3d3ba17fc08497466a",
+      "1. 인증실패 로그가 남는다.\n > KO: 1:1 인증 실패 (QR 최대 크기 초과)\n > EN: 1:1 authentication failed (Exceeded QR max size)"
+    ],
+    [
+      3,
+      "1. 복잡도가 높은 QR을 장치에 인증\n(32byte 넘은 경우)\n2. Monitoring > Real-time Log",
+      "> QR/Barcode\n\n* 첨부된 QR 사용",
+      "1. 인증실패 로그가 남는다.\n > KO: 1:1 인증 실패 (QR 최대 크기 초과)\n > EN: 1:1 authentication failed (Exceeded QR max size)"
+    ],
+    [
+      4,
+      "1. 지원하지 않는 문자열 QR을 장치에 인증(non-printable ASCII 인 경우)\n2. Monitoring > Real-time Log",
+      "> QR/Barcode\n> Use QR as Card : OFF\n\nex.\nΩ1234￥",
+      "1. 인증실패 로그가 남는다.\n> KO: \t1:1 인증 실패 (지원하지 않는 문자열)\n> EN: 1:1 authentication failed (Unsupported character)"
+    ],
+    [
+      5,
+      "1. Biostar > 장치상세 > QR/Barcode > Use QR as Card: enalbed\n2. 숫자가 아닌 데이터 QR을 장치에 인증\n3. Monitoring > Real-time Log",
+      "> QR/Barcode\n> Use QR as Card : ON\nex. \nΩ1234￥",
+      "1. 인증실패 로그가 남는다.\n> KO: 1:1 인증 실패 (숫자가 아닌 데이터)\n> EN:1:1 authentication failed (Non-numeric Data)"
+    ],
+    [
+      6,
+      "1. 인증모드별로 장치에 QR을 인증\n2. Monitorting > Real-time-Log",
+      "1. 인증모드\n> QR/Barcode\n> QR/Barcode + PIN\n> QR/Barcode + 지문\n> QR/Barcode + 얼굴\n> QR/Barcode + 지문 + PIN\n> QR/Barcode + 얼굴 + PIN \n> QR/Barcode + 얼굴/pin \n> QR/Barcode + 지문/pin\n\n2.QR 종류\n> BioStar 2 QR\n> QR/Barcode\n",
+      "1. 인증성공 로그가 남는다.\n> KO: 1:1 인증 성공 (QR/Barcode)/EN: 1:1 authentication succeeded (QR/Barcode)\n> KO: \t1:1 인증 성공 (QR/Barcode + PIN)/1:1 authentication succeeded (QR/Barcode + PIN)\n>KO: 1:1 인증 성공 (QR/Barcode + 지문)/\t1:1 authentication succeeded (QR/Barcode + Fingerprint)\n>KO: 1:1 인증 성공 (QR/Barcode + 얼굴)/EN: 1:1 authentication succeeded (QR/Barcode + Face)\n> KO: 1:1 인증 성공 (QR/Barcode + 지문 + PIN)/1:1 authentication succeeded (QR/Barcode + Fingerprint + PIN)\n> KO: 1:1 인증 성공 (QR/Barcode + 얼굴 + PIN)/1:1 authentication succeeded (QR/Barcode + Face + PIN)\n> KO: 1:1 인증 성공 (QR/Barcode + 지문 + 얼굴)/EN: 1:1 authentication succeeded (QR/Barcode + Fingerprint + Face)\n>KO: \t1:1 인증 성공 (QR/Barcode + 얼굴 + 지문)/EN: 1:1 authentication succeeded (QR/Barcode + Face + Fingerprint)"
+    ],
+    [
+      7,
+      "1. 인증모드별로 협박 지문을 인증\n2. Monitoring > Real-time-Log",
+      "1. 인증모드\n> QR/Barcode + 지문\n> QR/Barcode + 지문 + 얼굴\n> QR/Barcode + 얼굴 + 지문\n> QR/Barcode + 지문 + PIN \n> QR/Barcode + 지문/pin",
+      "1. 협박지문 로그가 남는다.\n>KO: 1:1 협박 지문 인증 (QR/Barcode + 지문)/EN: 1:1 duress authentication succeeded (QR/Barcode + Fingerprint)\n>KO: 1:1 협박 지문 인증 (QR/Barcode + 지문 + 얼굴)/EN:1:1 duress authentication succeeded (QR/Barcode + Fingerprint + Face)\n> KO: 1:1 협박 지문 인증 (QR/Barcode + 얼굴 + 지문)/EN: 1:1 duress authentication succeeded (QR/Barcode + Face + Fingerprint)\n> KO: 1:1 협박 지문 인증 (QR/Barcode + 지문 + PIN)/EN: 1:1 duress authentication succeeded (QR/Barcode + Fingerprint + PIN)"
+    ],
+    [
+      8,
+      "[Triggered & Action - Event]\n1. Device > Advanced > Trigger & Action> +Add>  QR 인증관련 이벤트 선택\n2. Action 설정\n",
+      ">1:1 authentication failed (QR/Barcode)\n>1:1 authentication failed (Exceeded QR max size)\n>1:1 authentication failed (Unsupported character)\n>1:1 authentication failed (Non-numeric Data)\n>1:1 authentication succeeded (QR/Barcode)\n>1:1 authentication succeeded (QR/Barcode + PIN)\n>1:1 authentication succeeded (QR/Barcode + Fingerprint)\n>1:1 authentication succeeded (QR/Barcode + Face)\n>1:1 authentication succeeded (QR/Barcode + Fingerprint + PIN)\n>1:1 authentication succeeded (QR/Barcode + Face + PIN)\n>1:1 authentication succeeded (QR/Barcode + Fingerprint + Face)\n>1:1 authentication succeeded (QR/Barcode + Face + Fingerprint)\n>1:1 duress authentication succeeded (QR/Barcode + Fingerprint)\n>1:1 duress authentication succeeded (QR/Barcode + Fingerprint + Face)\n>1:1 duress authentication succeeded (QR/Barcode + Face + Fingerprint)\t\n>1:1 duress authentication succeeded (QR/Barcode + Fingerprint + PIN)\n",
+      "1. 설정한 Action이 Master/Slave 장치에서 출력된다."
+    ],
+    [
+      9,
+      "[Image Log]\n1. Device > Advanced > Image Log: Enabled\n2. Configuration 추가 - QR 인증 관련\n3. QR 인증 시도\n4. Monitoring > Real-time-Log",
+      ">1:1 authentication failed (QR/Barcode)\n>1:1 authentication failed (Exceeded QR max size)\n>1:1 authentication failed (Unsupported character)\n>1:1 authentication failed (Non-numeric Data)\n>1:1 authentication succeeded (QR/Barcode)\n>1:1 authentication succeeded (QR/Barcode + PIN)\n>1:1 authentication succeeded (QR/Barcode + Fingerprint)\n>1:1 authentication succeeded (QR/Barcode + Face)\n>1:1 authentication succeeded (QR/Barcode + Fingerprint + PIN)\n>1:1 authentication succeeded (QR/Barcode + Face + PIN)\n>1:1 authentication succeeded (QR/Barcode + Fingerprint + Face)\n>1:1 authentication succeeded (QR/Barcode + Face + Fingerprint)\n>1:1 duress authentication succeeded (QR/Barcode + Fingerprint)\n>1:1 duress authentication succeeded (QR/Barcode + Fingerprint + Face)\n>1:1 duress authentication succeeded (QR/Barcode + Face + Fingerprint)\t\n>1:1 duress authentication succeeded (QR/Barcode + Fingerprint + PIN)\n",
+      "1. 설정한 Configuration에 맞게 Image log가 출력된다."
+    ],
+    [
+      10,
+      "[T&A 인증] \n1. 장치>임의의 T&A 선택 > QR 인증\n2. Monitoring > Real-time-Log",
+      "> BioStar 2 QR\n> QR/Barcode\n> QR 인증모드별",
+      "1.선택한 근태와 인증/성공 실패 로그가 남는다. "
+    ],
+    [
+      11,
+      "[Use QR as Card]\n1. 장치> QR/Barcode> Use QR/Barcode through Camera: Enable\n2. Use QR as Card: Enble\n3. 발급 받은 QR 인증",
+      "> 사용자에 등록된 카드ID로 QR 발급",
+      "1.QR 이벤트 기록이 남는다. \n> 1:1 authentication succeeded (QR/Barcode)\n\n※ BioStar 2 v2.9.5 반영 예정"
+    ],
+    [
+      12,
+      "[Use QR as Card]\n1. 장치> QR/Barcode> Use QR/Barcode through Camera: Enable\n2. Use QR as Card: Enble\n3. 발급 받은 QR 인증\n",
+      "기 등록된 사용자의 QR\n\n> BioStar 2 QR\n> QR/Barcode",
+      "1. 인증 성공/실패된다.\n> BioStar 2 QR: 인증 성공\n> QR/Barcode: 인증 실패\n\n※ BDP-488\n"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-322",
+    "description": "",
+    "test_step": [
+      "1. 잘못된 QR/사용자에 등록되지 않은 QR을 장치에 인증\n2. Monitoring > Real-time Log",
+      "1. 최대 크기 초과한 QR을 장치에 인증\n(32byte 넘은 경우)\n2. Monitoring > Real-time Log",
+      "1. 복잡도가 높은 QR을 장치에 인증\n(32byte 넘은 경우)\n2. Monitoring > Real-time Log",
+      "1. 지원하지 않는 문자열 QR을 장치에 인증(non-printable ASCII 인 경우)\n2. Monitoring > Real-time Log",
+      "1. Biostar > 장치상세 > QR/Barcode > Use QR as Card: enalbed\n2. 숫자가 아닌 데이터 QR을 장치에 인증\n3. Monitoring > Real-time Log",
+      "1. 인증모드별로 장치에 QR을 인증\n2. Monitorting > Real-time-Log",
+      "1. 인증모드별로 협박 지문을 인증\n2. Monitoring > Real-time-Log",
+      "[Triggered & Action - Event]\n1. Device > Advanced > Trigger & Action> +Add>  QR 인증관련 이벤트 선택\n2. Action 설정\n",
+      "[Image Log]\n1. Device > Advanced > Image Log: Enabled\n2. Configuration 추가 - QR 인증 관련\n3. QR 인증 시도\n4. Monitoring > Real-time-Log",
+      "[T&A 인증] \n1. 장치>임의의 T&A 선택 > QR 인증\n2. Monitoring > Real-time-Log",
+      "[Use QR as Card]\n1. 장치> QR/Barcode> Use QR/Barcode through Camera: Enable\n2. Use QR as Card: Enble\n3. 발급 받은 QR 인증",
+      "[Use QR as Card]\n1. 장치> QR/Barcode> Use QR/Barcode through Camera: Enable\n2. Use QR as Card: Enble\n3. 발급 받은 QR 인증\n"
+    ],
+    "data": [
+      "> BioStar 2 QR\n> QR/Barcode",
+      "> QR/Barcode\n\nex.\nfc70e767081c5064c3ac5f3d3ba17fc08497466a",
+      "> QR/Barcode\n\n* 첨부된 QR 사용",
+      "> QR/Barcode\n> Use QR as Card : OFF\n\nex.\nΩ1234￥",
+      "> QR/Barcode\n> Use QR as Card : ON\nex. \nΩ1234￥",
+      "1. 인증모드\n> QR/Barcode\n> QR/Barcode + PIN\n> QR/Barcode + 지문\n> QR/Barcode + 얼굴\n> QR/Barcode + 지문 + PIN\n> QR/Barcode + 얼굴 + PIN \n> QR/Barcode + 얼굴/pin \n> QR/Barcode + 지문/pin\n\n2.QR 종류\n> BioStar 2 QR\n> QR/Barcode\n",
+      "1. 인증모드\n> QR/Barcode + 지문\n> QR/Barcode + 지문 + 얼굴\n> QR/Barcode + 얼굴 + 지문\n> QR/Barcode + 지문 + PIN \n> QR/Barcode + 지문/pin",
+      ">1:1 authentication failed (QR/Barcode)\n>1:1 authentication failed (Exceeded QR max size)\n>1:1 authentication failed (Unsupported character)\n>1:1 authentication failed (Non-numeric Data)\n>1:1 authentication succeeded (QR/Barcode)\n>1:1 authentication succeeded (QR/Barcode + PIN)\n>1:1 authentication succeeded (QR/Barcode + Fingerprint)\n>1:1 authentication succeeded (QR/Barcode + Face)\n>1:1 authentication succeeded (QR/Barcode + Fingerprint + PIN)\n>1:1 authentication succeeded (QR/Barcode + Face + PIN)\n>1:1 authentication succeeded (QR/Barcode + Fingerprint + Face)\n>1:1 authentication succeeded (QR/Barcode + Face + Fingerprint)\n>1:1 duress authentication succeeded (QR/Barcode + Fingerprint)\n>1:1 duress authentication succeeded (QR/Barcode + Fingerprint + Face)\n>1:1 duress authentication succeeded (QR/Barcode + Face + Fingerprint)\t\n>1:1 duress authentication succeeded (QR/Barcode + Fingerprint + PIN)\n",
+      ">1:1 authentication failed (QR/Barcode)\n>1:1 authentication failed (Exceeded QR max size)\n>1:1 authentication failed (Unsupported character)\n>1:1 authentication failed (Non-numeric Data)\n>1:1 authentication succeeded (QR/Barcode)\n>1:1 authentication succeeded (QR/Barcode + PIN)\n>1:1 authentication succeeded (QR/Barcode + Fingerprint)\n>1:1 authentication succeeded (QR/Barcode + Face)\n>1:1 authentication succeeded (QR/Barcode + Fingerprint + PIN)\n>1:1 authentication succeeded (QR/Barcode + Face + PIN)\n>1:1 authentication succeeded (QR/Barcode + Fingerprint + Face)\n>1:1 authentication succeeded (QR/Barcode + Face + Fingerprint)\n>1:1 duress authentication succeeded (QR/Barcode + Fingerprint)\n>1:1 duress authentication succeeded (QR/Barcode + Fingerprint + Face)\n>1:1 duress authentication succeeded (QR/Barcode + Face + Fingerprint)\t\n>1:1 duress authentication succeeded (QR/Barcode + Fingerprint + PIN)\n",
+      "> BioStar 2 QR\n> QR/Barcode\n> QR 인증모드별",
+      "> 사용자에 등록된 카드ID로 QR 발급",
+      "기 등록된 사용자의 QR\n\n> BioStar 2 QR\n> QR/Barcode"
+    ],
+    "expected_result": [
+      "1. 인증실패 로그가 남는다.\n> KO: 1:1 인증 실패 (QR/Barcode)\n> EN: 1:1 authentication failed (QR/Barcode)",
+      "1. 인증실패 로그가 남는다.\n > KO: 1:1 인증 실패 (QR 최대 크기 초과)\n > EN: 1:1 authentication failed (Exceeded QR max size)",
+      "1. 인증실패 로그가 남는다.\n > KO: 1:1 인증 실패 (QR 최대 크기 초과)\n > EN: 1:1 authentication failed (Exceeded QR max size)",
+      "1. 인증실패 로그가 남는다.\n> KO: \t1:1 인증 실패 (지원하지 않는 문자열)\n> EN: 1:1 authentication failed (Unsupported character)",
+      "1. 인증실패 로그가 남는다.\n> KO: 1:1 인증 실패 (숫자가 아닌 데이터)\n> EN:1:1 authentication failed (Non-numeric Data)",
+      "1. 인증성공 로그가 남는다.\n> KO: 1:1 인증 성공 (QR/Barcode)/EN: 1:1 authentication succeeded (QR/Barcode)\n> KO: \t1:1 인증 성공 (QR/Barcode + PIN)/1:1 authentication succeeded (QR/Barcode + PIN)\n>KO: 1:1 인증 성공 (QR/Barcode + 지문)/\t1:1 authentication succeeded (QR/Barcode + Fingerprint)\n>KO: 1:1 인증 성공 (QR/Barcode + 얼굴)/EN: 1:1 authentication succeeded (QR/Barcode + Face)\n> KO: 1:1 인증 성공 (QR/Barcode + 지문 + PIN)/1:1 authentication succeeded (QR/Barcode + Fingerprint + PIN)\n> KO: 1:1 인증 성공 (QR/Barcode + 얼굴 + PIN)/1:1 authentication succeeded (QR/Barcode + Face + PIN)\n> KO: 1:1 인증 성공 (QR/Barcode + 지문 + 얼굴)/EN: 1:1 authentication succeeded (QR/Barcode + Fingerprint + Face)\n>KO: \t1:1 인증 성공 (QR/Barcode + 얼굴 + 지문)/EN: 1:1 authentication succeeded (QR/Barcode + Face + Fingerprint)",
+      "1. 협박지문 로그가 남는다.\n>KO: 1:1 협박 지문 인증 (QR/Barcode + 지문)/EN: 1:1 duress authentication succeeded (QR/Barcode + Fingerprint)\n>KO: 1:1 협박 지문 인증 (QR/Barcode + 지문 + 얼굴)/EN:1:1 duress authentication succeeded (QR/Barcode + Fingerprint + Face)\n> KO: 1:1 협박 지문 인증 (QR/Barcode + 얼굴 + 지문)/EN: 1:1 duress authentication succeeded (QR/Barcode + Face + Fingerprint)\n> KO: 1:1 협박 지문 인증 (QR/Barcode + 지문 + PIN)/EN: 1:1 duress authentication succeeded (QR/Barcode + Fingerprint + PIN)",
+      "1. 설정한 Action이 Master/Slave 장치에서 출력된다.",
+      "1. 설정한 Configuration에 맞게 Image log가 출력된다.",
+      "1.선택한 근태와 인증/성공 실패 로그가 남는다. ",
+      "1.QR 이벤트 기록이 남는다. \n> 1:1 authentication succeeded (QR/Barcode)\n\n※ BioStar 2 v2.9.5 반영 예정",
+      "1. 인증 성공/실패된다.\n> BioStar 2 QR: 인증 성공\n> QR/Barcode: 인증 실패\n\n※ BDP-488\n"
+    ]
+  }
+}

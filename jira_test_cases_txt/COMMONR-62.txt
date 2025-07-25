@@ -1,5 +1,67 @@
 ■ 이슈 키: COMMONR-62
 ■ 제목: 인증 - Secure Credential/Access On 카드(DESFire)
+■ 설명: BioStar에서 SmartCard Layout  설정 메뉴
+: Settings> Card Format> Smart Card
+
+장치에 SmrtCard Layout 적용
+: Device> 장치상세정보창> Smart Card Layout
+
+: Mifare / Mifare Plus Card
+   -: 시작 Block Index, 기본값 : 4
+: Mifare DesFire / Mifare DesFire EV1 Card
+   -: Application ID, 기본값 : 1, Max : 16777215
+   -: File ID, 기본값 : 1, Max : 32
+   -: Format이 필요함
+   -: Encryption : DES/3DES(Default), AES
+   -: Max App : 28, Max File : 32(1 Per Application - Desfire EV1), 16(1 Per Application - Desfire)
+: iClass / iClass SE Card
+   -: 시작 Block Index, 기본값 : 13
+
+V1.x Template On Card에 대한 V2.x Device의 호환 기능 제공
+
+& Secure Credential Card &
+1) Write
+ > 영숫자 모드 : Card ID - Default(공란), 24 byte 범위 내에서 10진수 숫자를 1 부터 입력 지원
+ > 숫자 모드 : 기존과 동일
+ > 해당 카드 ID를 바이너리 데이터로 장치에 보내고, 장치에서는 Card ID 기반으로 표시하고, Wiegand Output 사용시 해당 Card ID 출력
+
+ 2) Read
+ > 발급된 Card ID를 그대로 읽음.
+
+% 주의 사항 %
+영숫자 모드에서 숫자 모드로 변경하는 경우에는 기존 사용자가 있으면 불가능하기 때문에, 보안 크리덴셜 카드를 보유하고 있는 모든 사용자들이 삭제됨
+따라서 기존 발급된 카드들은 미할당 카드 리스트에 존재함.
+(확인 필요) 
+ > 영숫자 모드에서 발급된 카드 ID를 숫자 모드인 시스템에서 읽는 경우 : 카드 ID는 4 byte 범위 내에서 잘려서 표시됨. (DE-620/Ominikey 에서도 동일) 
+ > 영숫자 모드가 지원 되지 않는 장치에서 읽으려고 한 경우에도 카드 ID는 4 byte 범위 내에서 잘려서 표시됨 (DE-620/Ominikey 에서도 동일) 
+ > 이에 따라 잘려서 읽힌다는 경고 메시지를 표시한다. (DE-620/Ominikey 에서도 동일) 
+ > Xpass, Xpass S2의 예전 영숫자를 지원하지 않는 FW에서도 위와 동일하다.
+(확인 필요)
+ > 스마트 카드 포맷의 경우 영숫자 모드가 일치하지 않아도 FW 버전이 달라도 포맷 지원. 해당 카드 레이아웃만 일치하면 장치 종류에 상관 없이 가능함. 예) BLN, DE-620
+
+& Access On Card &
+1) Write
+ > 영숫자 모드 : Card ID - User ID 그대로 표시하고 변경 불가능. 예) AAAA 라면 AAAA 라고 표시
+ > 장치에서는 영숫자 방식인 경우 영숫자로 처리하고, 숫자인 경우 숫자로 구분하여 처리한다. 따라서 Wiegand Output 사용시 Card ID를 숫자로 내보내기 위해서는 숫자 모드 사용이 필요하다
+2) Read
+ > 발급된 Card ID를 그대로 읽음.
+(확인필요) 
+ > 영숫자 모드에서 발급된 카드 ID를 숫자 모드인 시스템에서 읽는 경우 : 카드 ID를 읽지 못하고 오류를 발생. (DE-620/Ominikey 에서도 동일) 
+ > 영숫자 모드가 지원하지 않는 장치에서 읽으려고 한 경우에는 카드 ID를 읽지 못하고 오류를 발생. 
+ > Xpass, Xpass S2의 예전 영숫자를 지원하지 않는 FW에서도 위와 동일하다.
+(확인 필요) 
+ > 스마트 카드 포맷의 경우 영숫자 모드가 일치하지 않아도 FW 버전이 달라도 포맷 지원. 해당 카드 레이아웃만 일치하면 장치 종류에 상관 없이 가능. 예) BLN, DE-620
+
+Card 별 입력 범위
+> Mifare 입력 상세(12자)
+Hex 값 입력 창에서 6 byte 범위로 0 부터 FFFF FFFF FFFF 까지 입력 가능
+> iClass 입력 상세(16자)
+Hex 값 입력 창에서 8 byte 범위로 0 부터 FFFF FFFF FFFF FFFF 까지 입력 가능
+> Desfire 입력 상세(32자)
+Hex 값 입력 창에서 16 Byte 범위로 0 부터 FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF 까지 입력 가능
+> iClass SEOS 입력 상세(32자)
+Hex 값 입력 창에서 16 Byte 범위로 0 부터 FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF 까지 입력 가능
+
 ============================================================
 
 ■ 테스트 스텝

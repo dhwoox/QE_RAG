@@ -1,0 +1,33 @@
+{
+  "id": "COMMONR-289",
+  "content": [
+    [
+      1,
+      "1. Mobile Access 지원 장치\n2. 2주이상 IOS로 BLE 연속인증 수행",
+      "Auth Mode\n> Card Only\n\nCard Type\n> Mobile - Enable & BLE 체크",
+      "1. BLE 인증에 문제가 없어야 한다.\n> 인증결과 정상출력\n> 비정상 Reboot 미발생"
+    ],
+    [
+      2,
+      "1. Mobile Access 지원 장치\n2. 2주이상 Android로 NFC 연속인증 수행",
+      "Auth Mode\n> Card Only\n\nCard Type\n> Mobile - Enable & NFC 체크",
+      "1. NFC 인증에 문제가 없어야 한다.\n> 인증결과 정상출력\n> 비정상 Reboot 미발생"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-289",
+    "description": "",
+    "test_step": [
+      "1. Mobile Access 지원 장치\n2. 2주이상 IOS로 BLE 연속인증 수행",
+      "1. Mobile Access 지원 장치\n2. 2주이상 Android로 NFC 연속인증 수행"
+    ],
+    "data": [
+      "Auth Mode\n> Card Only\n\nCard Type\n> Mobile - Enable & BLE 체크",
+      "Auth Mode\n> Card Only\n\nCard Type\n> Mobile - Enable & NFC 체크"
+    ],
+    "expected_result": [
+      "1. BLE 인증에 문제가 없어야 한다.\n> 인증결과 정상출력\n> 비정상 Reboot 미발생",
+      "1. NFC 인증에 문제가 없어야 한다.\n> 인증결과 정상출력\n> 비정상 Reboot 미발생"
+    ]
+  }
+}

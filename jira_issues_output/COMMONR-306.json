@@ -1,0 +1,146 @@
+{
+  "id": "COMMONR-306",
+  "content": [
+    [
+      1,
+      "1. Door > Add Door > Entry Device 설정",
+      "",
+      "CS40에 연결 되고 OSDP Module에 연결된 무선 도어락을 선택 할 수있다."
+    ],
+    [
+      2,
+      "1. Door > Add Door > Exit Device 설정",
+      "",
+      "CS40에 연결 되고 OSDP Module에 연결된 무선 도어락을 선택 할 수있다."
+    ],
+    [
+      3,
+      "1. Door > Add Door > Entry Device 설정\n2. 무선 도어락 선택",
+      "",
+      "Exit Device 에서 다른 타입의 장치를 선택할 수 없고 무선 도어락만 선택 가능"
+    ],
+    [
+      4,
+      "1. Door > Add Door > Entry Device 설정\n2. 무선 도어락이 아닌 장치 선택",
+      "",
+      "Exit Device 에서 무선 도어락이 표시는 되나 무선 도어락 선택 불가"
+    ],
+    [
+      5,
+      "1. Door > Add Door > Entry Device, Exit Device 설정\n2. 무선 도어락 선택",
+      "",
+      "Entry Device, Exit Device 로 무선 도어락이 선택된 경우에는 Door Relay 출력되지 않는다."
+    ],
+    [
+      6,
+      "1. Door 생성\n2. 무선 도어락으로 Door 구성\n3. 무선 도어락에 인증 시도",
+      "",
+      "1. 인증성공시 무선 도어락이 동작한다.\n2. 로그 발생\n: door lock\n> 1:1 authentication succeeded (Card)\n: CS40\n> Door open request sent"
+    ],
+    [
+      7,
+      "1. Door 생성\n2. 무선 도어락으로 Door 구성\n3. Open Time 설정\n4. 무선 도어락에 인증 시도",
+      "",
+      "1. 설정된 Open Time 으로 동작한다."
+    ],
+    [
+      8,
+      "1. Door 생성\n2. 무선 도어락으로 Door 구성\n3. Open Time 길게 설정\n4. 무선 도어락에 인증 시도\n5. 도어락 열린 상태에서 무선 도어락 Inactive로 변경",
+      "",
+      "1. 인증성공시 무선 도어락이 열리고, Open Time 에 맞게 동작한다."
+    ],
+    [
+      9,
+      "1. Zone> Add Zone> APB Zone 생성\n2. 무선 도어락으로 Zone 구성\n3. 무선 도어락에 동일사용자로 2회 이상 인증해 APB 위반 발생",
+      "모드\n> Local\n> Global\n\nAPB 설정\n> Soft APB\n> Hard APB",
+      "1. Soft APB시 인증성공 및 무선 도어락 동작한다.\n2. Hard APB시 인증실패 및 무선 도어락 동작하지 않는다."
+    ],
+    [
+      10,
+      "1. Zone> Add Zone> APB Zone 생성\n2. 무선 도어락으로 Zone 구성\n3. APB 예외 그룹 설정\n4. APB 예외 그룹에 포함된 사용자로 인증시도",
+      "APB 예외그룹\n> 최대16개까지 설정가능",
+      "APB 예외그룹에 속한 사용자로 인증시 APB에 영향을 받지 않아야한다."
+    ],
+    [
+      11,
+      "1. Zone> Add Zone> APB Zone 생성\n2. 무선 도어락으로 Zone 구성\n3. APB Alarm 설정",
+      "Disable Device",
+      "APB 위반이 발생하면 설정한 Alarm 이 발생해야 한다."
+    ],
+    [
+      12,
+      "<APB Alarm이 발생되는 상태>\n1. Monitoring> Zone Status\n2. APB Zone 선택\n3. Clear Alarm 및 Clear APB 클릭",
+      "",
+      "APB Alarm 해제되어야 하고, APB 위반도 해제되어야 한다."
+    ],
+    [
+      13,
+      "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Open 버튼 클릭> Door 상태 확인",
+      "",
+      "1. Open 클릭시 Unlocked으로 동작되어야 하고, 설정된 Open time이 지나면 다시 Locked으로 동작되어야 한다.\n2. 이벤트 로그 발생\n: door lock\n> Door open requested by operator\n: CS40 \n> Door open request sent"
+    ],
+    [
+      14,
+      "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Unlock 버튼 클릭> Door 상태 확인",
+      "",
+      "1. Door가 Unlock 상태를 유지해야한다.\n2. 이벤트 로그 발생\n: door lock\n> Door unlock requested by operator\n: CS40 \n> Door unlock request sent"
+    ],
+    [
+      15,
+      "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual lock 버튼 클릭> Door 상태 확인",
+      "",
+      "1. Door가 Lock 상태를 유지해야한다.\n2. 이벤트 로그 발생\n: door lock\n> Door lock requested by operator\n: CS40 \n> Door lock request sent"
+    ],
+    [
+      16,
+      "\t\n1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Release 버튼 클릭> Door 상태 확인",
+      "",
+      "1. 이벤트 로그 발생\n: door lock\n> Door release requested by operator\n: CS40 \n> Door release request sent"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-306",
+    "description": "",
+    "test_step": [
+      "1. Door > Add Door > Entry Device 설정",
+      "1. Door > Add Door > Exit Device 설정",
+      "1. Door > Add Door > Entry Device 설정\n2. 무선 도어락 선택",
+      "1. Door > Add Door > Entry Device 설정\n2. 무선 도어락이 아닌 장치 선택",
+      "1. Door > Add Door > Entry Device, Exit Device 설정\n2. 무선 도어락 선택",
+      "1. Door 생성\n2. 무선 도어락으로 Door 구성\n3. 무선 도어락에 인증 시도",
+      "1. Door 생성\n2. 무선 도어락으로 Door 구성\n3. Open Time 설정\n4. 무선 도어락에 인증 시도",
+      "1. Door 생성\n2. 무선 도어락으로 Door 구성\n3. Open Time 길게 설정\n4. 무선 도어락에 인증 시도\n5. 도어락 열린 상태에서 무선 도어락 Inactive로 변경",
+      "1. Zone> Add Zone> APB Zone 생성\n2. 무선 도어락으로 Zone 구성\n3. 무선 도어락에 동일사용자로 2회 이상 인증해 APB 위반 발생",
+      "1. Zone> Add Zone> APB Zone 생성\n2. 무선 도어락으로 Zone 구성\n3. APB 예외 그룹 설정\n4. APB 예외 그룹에 포함된 사용자로 인증시도",
+      "1. Zone> Add Zone> APB Zone 생성\n2. 무선 도어락으로 Zone 구성\n3. APB Alarm 설정",
+      "<APB Alarm이 발생되는 상태>\n1. Monitoring> Zone Status\n2. APB Zone 선택\n3. Clear Alarm 및 Clear APB 클릭",
+      "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Open 버튼 클릭> Door 상태 확인",
+      "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Unlock 버튼 클릭> Door 상태 확인",
+      "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual lock 버튼 클릭> Door 상태 확인",
+      "\t\n1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Release 버튼 클릭> Door 상태 확인"
+    ],
+    "data": [
+      "모드\n> Local\n> Global\n\nAPB 설정\n> Soft APB\n> Hard APB",
+      "APB 예외그룹\n> 최대16개까지 설정가능",
+      "Disable Device"
+    ],
+    "expected_result": [
+      "CS40에 연결 되고 OSDP Module에 연결된 무선 도어락을 선택 할 수있다.",
+      "CS40에 연결 되고 OSDP Module에 연결된 무선 도어락을 선택 할 수있다.",
+      "Exit Device 에서 다른 타입의 장치를 선택할 수 없고 무선 도어락만 선택 가능",
+      "Exit Device 에서 무선 도어락이 표시는 되나 무선 도어락 선택 불가",
+      "Entry Device, Exit Device 로 무선 도어락이 선택된 경우에는 Door Relay 출력되지 않는다.",
+      "1. 인증성공시 무선 도어락이 동작한다.\n2. 로그 발생\n: door lock\n> 1:1 authentication succeeded (Card)\n: CS40\n> Door open request sent",
+      "1. 설정된 Open Time 으로 동작한다.",
+      "1. 인증성공시 무선 도어락이 열리고, Open Time 에 맞게 동작한다.",
+      "1. Soft APB시 인증성공 및 무선 도어락 동작한다.\n2. Hard APB시 인증실패 및 무선 도어락 동작하지 않는다.",
+      "APB 예외그룹에 속한 사용자로 인증시 APB에 영향을 받지 않아야한다.",
+      "APB 위반이 발생하면 설정한 Alarm 이 발생해야 한다.",
+      "APB Alarm 해제되어야 하고, APB 위반도 해제되어야 한다.",
+      "1. Open 클릭시 Unlocked으로 동작되어야 하고, 설정된 Open time이 지나면 다시 Locked으로 동작되어야 한다.\n2. 이벤트 로그 발생\n: door lock\n> Door open requested by operator\n: CS40 \n> Door open request sent",
+      "1. Door가 Unlock 상태를 유지해야한다.\n2. 이벤트 로그 발생\n: door lock\n> Door unlock requested by operator\n: CS40 \n> Door unlock request sent",
+      "1. Door가 Lock 상태를 유지해야한다.\n2. 이벤트 로그 발생\n: door lock\n> Door lock requested by operator\n: CS40 \n> Door lock request sent",
+      "1. 이벤트 로그 발생\n: door lock\n> Door release requested by operator\n: CS40 \n> Door release request sent"
+    ]
+  }
+}

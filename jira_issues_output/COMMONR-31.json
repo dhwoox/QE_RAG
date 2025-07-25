@@ -1,0 +1,157 @@
+{
+  "id": "COMMONR-31",
+  "content": [
+    [
+      1,
+      "1. Device> 카드인증모드 설정\n2. 카드인증시도",
+      "Master, Slave 확인\n: Master장치(Station,Entry계열)\n: Slave 장치(Station,Entry계열)\n> 카드Only 모드\n> 카드+지문 모드\n> 카드+PIN 모드\n> 카드+지문/PIN 모드(Default)\n> 카드+지문+PIN 모드\n\nFS2\n> 카드Only 모드\n> 카드+얼굴 모드\n> 카드+PIN 모드\n> 카드+얼굴/PIN 모드(Default)\n> 카드+얼굴+PIN 모드\n\nW3\n> 카드Only 모드(Default)\n> 카드+얼굴 모드\n",
+      "설정한 인증모드로 동작되어야 한다.\n > 인증 성공/실패에 따라 로그가 남는다.\n > 복합 인증의 경우 이를 Master에서 실행했을때, 매칭 수행이 끝나고 결과 팝업 창이 나타난 후나 취소 버튼, 인증타임아웃 등을 통해서 매칭이 취소된 후에 새로운 Credential이 입력될 수 있다.\n > 복합 인증의 경우 이를 Slave에 실행했을때, 인증 결과를 수신하거나 타임아웃이 발생한 후에는 새로운 Credential을 다시 입력할 수 있다.\n\n>Master에서 지원하지 않는 인증수단으로 Slave에서 인증시도 했을 경우, 인증 결과가 정상적으로 표기되어야 한다.\n\nex) XS2 QAPB를 Master로 두고, W2를 Slave로 둔 후, Slave의 인증수단을 카드+지문으로 할 경우, 정상적으로 인증성공 처리 되어야 한다."
+    ],
+    [
+      2,
+      "1. Device> 카드인증모드 설정(Card+Other Credentioal)\n2. 설정한 모드 중 카드만 등록된 사용자로 인증시도",
+      "FS2 제외 장치\n> 카드+지문 모드\n> 카드+PIN 모드\n> 카드+지문/PIN 모드(Default)\n> 카드+지문+PIN 모드\n\n\nFS2\n> 카드+얼굴 모드\n> 카드+PIN 모드\n> 카드+얼굴/PIN 모드(Default)\n> 카드+얼굴+PIN 모드\n\nW3\n> 카드Only 모드(Default)\n> 카드+얼굴 모드",
+      "카드입력시 인증실패로 동작되면서 'Auth Failed Invalid Credential' 로그가 남아야 한다.\n(복합 인증의 경우 카드만 등록된 사용자 인증 시 그외 인증 조건이 맞지 않음)"
+    ],
+    [
+      3,
+      "<A 스케줄 생성한 상태>\n1. Device> 카드인증모드\n2. 카드 인증모드들에 동일 스케줄 설정시도",
+      "카드인증모드\n> 카드Only 모드\n> 카드+지문(얼굴) 모드\n> 카드+PIN 모드\n> 카드+지문(얼굴)/PIN 모드(Default)\n> 카드+지문(얼굴)+PIN 모드\n\nW3\n> 카드Only 모드(Default)\n> 카드+얼굴 모드",
+      "> 동일 모드에 대해 스케줄 중복설정이 불가능해야 한다.\n(on) 동일 스케쥴 중복 체크 : 스케줄 추가 불가능\n(off) A/B에 대한 시간별 중복 체크 : 스케줄 추가 가능 \n> 'Always'로 설정된 경우 동일모드에서는 스케줄 설정이 불가능해야 한다.\n=> ex. 카드Only가 Always인 경우 카드+지문~~ 카드+지문+PIN 모드는 사용안함으로 설정되어야 함"
+    ],
+    [
+      4,
+      "1. Device> 카드인증모드\n2. Byte Ordering 설정",
+      "> MSB(Default)\n> LSB",
+      "> CSN만 지원되어야 한다.\n> HID/ICLASS는 Byte Ordering 상관없이 동일한 카드ID가 표시되어야 한다."
+    ],
+    [
+      5,
+      "1. Device> 카드인증모드\n2. Card Format Type 설정",
+      "> Normal(Default)\n> Wiegand",
+      "> Normal인 경우 카드ID가 그대로 출력되어야 한다.\n> Wiegand인 경우 설정된 Wiegand 포맷으로 카드ID가 출력되어야 한다."
+    ],
+    [
+      6,
+      "1. Device> 카드인증모드 설정\n2. User> Add User> 지문등록\n3. 2지이상 지문등록한 다음 협박지문 설정\n4. 설정한 카드인증모드에 협박지문으로 인증시도",
+      "FS2 제외 장치\n> 카드+지문 모드\n> 카드+지문/PIN 모드(Default)\n> 카드+지문+PIN 모드\n\n> 단일장치 및 RS485 구성에 대해 모두 확인사항\n(on) FS2(M)-지문 인증 가능 장치(S)",
+      "협박지문으로 인증할 경우 협박지문으로 동작되어야 한다.\n> 협박지문 로그가 남는다."
+    ],
+    [
+      7,
+      "<스케줄을 생성한 상태>\n1. Device> 카드인증모드에 스케줄 설정\n2. 카드인증시도",
+      "카드인증모드\n> 카드Only 모드\n> 카드+지문(얼굴) 모드\n> 카드+PIN 모드\n> 카드+지문(얼굴)/PIN 모드(Default)\n> 카드+지문(얼굴)+PIN 모드\n\nW3\n> 카드Only 모드(Default)\n> 카드+얼굴 모드",
+      "> 현재 시간의 스케줄로 설정된 인증모드로 동작되어야 한다.\n> 현재 시간이 스케줄에 포함되지 않은 인증모드로 인증시 'Auth Fail Invalid Credential'로 인증실패가 되어야 한다."
+    ],
+    [
+      8,
+      "1. Device> 카드인증모드\n2. 다중 인증모드 설정\n3. 설정한 모드의 처음에 해당하는 모드 입력 후 설정한 Auth Timeout 시간내 입력시도",
+      "Auth Timeout : 3s ~ 20s\n> 카드+지문(얼굴) 모드\n> 카드+PIN 모드\n> 카드+지문(얼굴)/PIN 모드\n> 카드+지문(얼굴)+PIN 모드\n\n> 단일장치 및 RS485 구성에 대해 모두 확인사항\n(on) FS2(M)-FS2(S)\n(on) FS2(M)-FS2 제외 카드 인증 가능 장치(S)",
+      "설정한 시간내에 인증이 이루어졌으므로 인증성공으로 동작되어야 한다.\n\n> Slave 장치의 경우\n : Matching TimeOut - Slave\n : Auth. TimeOut - Slave\n : Msg. TimeOut- Slave"
+    ],
+    [
+      9,
+      "1. Device> 카드인증모드\n2. 다중 인증모드 설정\n3. 설정한 모드의 처음에 해당하는 모드 입력 후 설정한 Auth Timeout 시간내 나머지 모드에 대해 미입력",
+      "Auth Timeout : 3s ~ 20s\n> 카드+지문(얼굴) 모드\n> 카드+PIN 모드\n> 카드+지문(얼굴)/PIN 모드\n> 카드+지문(얼굴)+PIN 모드\n\n> 단일장치 및 RS485 구성에 대해 모두 확인사항\n(on) FS2(M)-FS2(S)\n(on) FS2(M)-FS2 제외 카드 인증 가능 장치(S)",
+      "설정한 시간내에 인증이 이루어지지 않았으므로 Auth Timeout이 발생되어 인증실패로 동작되어야 한다.\n\n> Slave 장치의 경우\n : Matching TimeOut - Slave\n : Auth. TimeOut - Slave\n : Msg. TimeOut- Slave"
+    ],
+    [
+      10,
+      "1. User> Add User> 카드등록\n2. 등록된 카드에 대해 Block 클릭(Blacklist 설정)\n3. 설정된 Blacklist 카드로 인증시도\n4. Blacklist로 설정된 카드에 대해 Unblock 클릭\n5. Blacklist 해제된 카드로 인증시도",
+      "Blacklist\n> Entry - Max : 1,000개\n> P2/N2 - Max : 10,000개\n> Station - Max 100,000개\n  -: 인당 Blacklist 단일 설정\n  -: 인당 Blacklist 다중 설정\n> XS2 Q 모델 : Secure QR, QR\n> W3 - Max 100,000개",
+      "> Blacklist로 설정된 카드의 경우 인증실패가 되어야 한다.(Blacklist로 동작되어짐)\n> Blacklist가 해제된 카드의 경우 인증성공이 되어야 한다."
+    ],
+    [
+      11,
+      "1. User> Add User> 카드등록\n2. 등록된 카드에 대해 Blacklist 설정\n3. Blacklist로 설정했던 카드를 Blacklist 해제 후 장치에 전송\n4. Blacklist 해제된 카드로 인증시도",
+      "사용자를 장치에 전송시\n> Sync Device",
+      "Blacklist가 해제된 카드로 동작되어야 한다."
+    ],
+    [
+      12,
+      "1. 장치에 카드인증 시도\n   > 카드를 장치에 댄 후 입력음인 '띡' 소리가 나기전에 제거 & 카드재입력 시도\n2. 위의 동작을 10회 이상 시도",
+      "카드 종류\n> AOC 발급한 카드\n> Secure Credential 발급한 카드\n> CSN 카드(등록된 상태)\n> Wiegand 카드(등록된 상태)\n> ISO 14443A RID (Random CSN 동작) 카드",
+      "1. 카드입력음이 출력 전 카드제거시 입력결과를 출력해주지 않는다.\n2. 카드입력이 되면 인증결과를 정상적으로 출력해주어야 한다."
+    ],
+    [
+      13,
+      "1. 카드가 장치에 연속으로 입력\n> 카드를 장치위에 올려놓음\n2. 장치 전원 재인가\n3. 부팅유무 확인",
+      "",
+      "1. 부팅이 정상적으로 이루어진다."
+    ],
+    [
+      14,
+      "1. User > Add User > Secure QR 발급\n2. 해당 Secure QR Blacklist 처리\n3. Blacklist 처리된 Secure QR로 장치에 인증 시도.",
+      "1. Blacklist 처리된 Secure QR",
+      "1. 장치에서 Blacklist로 인한 출입 거부 되어야 한다.\n2. 장치 Event Log에서 Auth Failed 로그의 User ID가 Secure QR의 카드 ID와 같아야 한다."
+    ],
+    [
+      15,
+      "1. User > Add User > QR 발급\n2. 해당 QR Blacklist 처리\n3. Blacklist 처리된 QR로 장치에 인증 시도.",
+      "1. Blacklist 처리된 QR",
+      "1. 장치에서 Blacklist로 인한 출입 거부 되어야 한다.\n2. 장치 Event Log에서 Auth Failed 로그의 User ID가 QR의 카드 ID와 같아야 한다."
+    ],
+    [
+      16,
+      "[F2 V1.1.2 이상]\n1. User > Add User >  +Card > Scan Card\n2. 장치에서 Scan Card 팝업이 뜨면 얼굴 인증 시도",
+      "",
+      "1. Scan Card시 백그라운드에서 얼굴 인증이 비활성화 되어 얼굴인증이 불가해야 한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-31",
+    "description": "",
+    "test_step": [
+      "1. Device> 카드인증모드 설정\n2. 카드인증시도",
+      "1. Device> 카드인증모드 설정(Card+Other Credentioal)\n2. 설정한 모드 중 카드만 등록된 사용자로 인증시도",
+      "<A 스케줄 생성한 상태>\n1. Device> 카드인증모드\n2. 카드 인증모드들에 동일 스케줄 설정시도",
+      "1. Device> 카드인증모드\n2. Byte Ordering 설정",
+      "1. Device> 카드인증모드\n2. Card Format Type 설정",
+      "1. Device> 카드인증모드 설정\n2. User> Add User> 지문등록\n3. 2지이상 지문등록한 다음 협박지문 설정\n4. 설정한 카드인증모드에 협박지문으로 인증시도",
+      "<스케줄을 생성한 상태>\n1. Device> 카드인증모드에 스케줄 설정\n2. 카드인증시도",
+      "1. Device> 카드인증모드\n2. 다중 인증모드 설정\n3. 설정한 모드의 처음에 해당하는 모드 입력 후 설정한 Auth Timeout 시간내 입력시도",
+      "1. Device> 카드인증모드\n2. 다중 인증모드 설정\n3. 설정한 모드의 처음에 해당하는 모드 입력 후 설정한 Auth Timeout 시간내 나머지 모드에 대해 미입력",
+      "1. User> Add User> 카드등록\n2. 등록된 카드에 대해 Block 클릭(Blacklist 설정)\n3. 설정된 Blacklist 카드로 인증시도\n4. Blacklist로 설정된 카드에 대해 Unblock 클릭\n5. Blacklist 해제된 카드로 인증시도",
+      "1. User> Add User> 카드등록\n2. 등록된 카드에 대해 Blacklist 설정\n3. Blacklist로 설정했던 카드를 Blacklist 해제 후 장치에 전송\n4. Blacklist 해제된 카드로 인증시도",
+      "1. 장치에 카드인증 시도\n   > 카드를 장치에 댄 후 입력음인 '띡' 소리가 나기전에 제거 & 카드재입력 시도\n2. 위의 동작을 10회 이상 시도",
+      "1. 카드가 장치에 연속으로 입력\n> 카드를 장치위에 올려놓음\n2. 장치 전원 재인가\n3. 부팅유무 확인",
+      "1. User > Add User > Secure QR 발급\n2. 해당 Secure QR Blacklist 처리\n3. Blacklist 처리된 Secure QR로 장치에 인증 시도.",
+      "1. User > Add User > QR 발급\n2. 해당 QR Blacklist 처리\n3. Blacklist 처리된 QR로 장치에 인증 시도.",
+      "[F2 V1.1.2 이상]\n1. User > Add User >  +Card > Scan Card\n2. 장치에서 Scan Card 팝업이 뜨면 얼굴 인증 시도"
+    ],
+    "data": [
+      "Master, Slave 확인\n: Master장치(Station,Entry계열)\n: Slave 장치(Station,Entry계열)\n> 카드Only 모드\n> 카드+지문 모드\n> 카드+PIN 모드\n> 카드+지문/PIN 모드(Default)\n> 카드+지문+PIN 모드\n\nFS2\n> 카드Only 모드\n> 카드+얼굴 모드\n> 카드+PIN 모드\n> 카드+얼굴/PIN 모드(Default)\n> 카드+얼굴+PIN 모드\n\nW3\n> 카드Only 모드(Default)\n> 카드+얼굴 모드\n",
+      "FS2 제외 장치\n> 카드+지문 모드\n> 카드+PIN 모드\n> 카드+지문/PIN 모드(Default)\n> 카드+지문+PIN 모드\n\n\nFS2\n> 카드+얼굴 모드\n> 카드+PIN 모드\n> 카드+얼굴/PIN 모드(Default)\n> 카드+얼굴+PIN 모드\n\nW3\n> 카드Only 모드(Default)\n> 카드+얼굴 모드",
+      "카드인증모드\n> 카드Only 모드\n> 카드+지문(얼굴) 모드\n> 카드+PIN 모드\n> 카드+지문(얼굴)/PIN 모드(Default)\n> 카드+지문(얼굴)+PIN 모드\n\nW3\n> 카드Only 모드(Default)\n> 카드+얼굴 모드",
+      "> MSB(Default)\n> LSB",
+      "> Normal(Default)\n> Wiegand",
+      "FS2 제외 장치\n> 카드+지문 모드\n> 카드+지문/PIN 모드(Default)\n> 카드+지문+PIN 모드\n\n> 단일장치 및 RS485 구성에 대해 모두 확인사항\n(on) FS2(M)-지문 인증 가능 장치(S)",
+      "카드인증모드\n> 카드Only 모드\n> 카드+지문(얼굴) 모드\n> 카드+PIN 모드\n> 카드+지문(얼굴)/PIN 모드(Default)\n> 카드+지문(얼굴)+PIN 모드\n\nW3\n> 카드Only 모드(Default)\n> 카드+얼굴 모드",
+      "Auth Timeout : 3s ~ 20s\n> 카드+지문(얼굴) 모드\n> 카드+PIN 모드\n> 카드+지문(얼굴)/PIN 모드\n> 카드+지문(얼굴)+PIN 모드\n\n> 단일장치 및 RS485 구성에 대해 모두 확인사항\n(on) FS2(M)-FS2(S)\n(on) FS2(M)-FS2 제외 카드 인증 가능 장치(S)",
+      "Auth Timeout : 3s ~ 20s\n> 카드+지문(얼굴) 모드\n> 카드+PIN 모드\n> 카드+지문(얼굴)/PIN 모드\n> 카드+지문(얼굴)+PIN 모드\n\n> 단일장치 및 RS485 구성에 대해 모두 확인사항\n(on) FS2(M)-FS2(S)\n(on) FS2(M)-FS2 제외 카드 인증 가능 장치(S)",
+      "Blacklist\n> Entry - Max : 1,000개\n> P2/N2 - Max : 10,000개\n> Station - Max 100,000개\n  -: 인당 Blacklist 단일 설정\n  -: 인당 Blacklist 다중 설정\n> XS2 Q 모델 : Secure QR, QR\n> W3 - Max 100,000개",
+      "사용자를 장치에 전송시\n> Sync Device",
+      "카드 종류\n> AOC 발급한 카드\n> Secure Credential 발급한 카드\n> CSN 카드(등록된 상태)\n> Wiegand 카드(등록된 상태)\n> ISO 14443A RID (Random CSN 동작) 카드",
+      "1. Blacklist 처리된 Secure QR",
+      "1. Blacklist 처리된 QR"
+    ],
+    "expected_result": [
+      "설정한 인증모드로 동작되어야 한다.\n > 인증 성공/실패에 따라 로그가 남는다.\n > 복합 인증의 경우 이를 Master에서 실행했을때, 매칭 수행이 끝나고 결과 팝업 창이 나타난 후나 취소 버튼, 인증타임아웃 등을 통해서 매칭이 취소된 후에 새로운 Credential이 입력될 수 있다.\n > 복합 인증의 경우 이를 Slave에 실행했을때, 인증 결과를 수신하거나 타임아웃이 발생한 후에는 새로운 Credential을 다시 입력할 수 있다.\n\n>Master에서 지원하지 않는 인증수단으로 Slave에서 인증시도 했을 경우, 인증 결과가 정상적으로 표기되어야 한다.\n\nex) XS2 QAPB를 Master로 두고, W2를 Slave로 둔 후, Slave의 인증수단을 카드+지문으로 할 경우, 정상적으로 인증성공 처리 되어야 한다.",
+      "카드입력시 인증실패로 동작되면서 'Auth Failed Invalid Credential' 로그가 남아야 한다.\n(복합 인증의 경우 카드만 등록된 사용자 인증 시 그외 인증 조건이 맞지 않음)",
+      "> 동일 모드에 대해 스케줄 중복설정이 불가능해야 한다.\n(on) 동일 스케쥴 중복 체크 : 스케줄 추가 불가능\n(off) A/B에 대한 시간별 중복 체크 : 스케줄 추가 가능 \n> 'Always'로 설정된 경우 동일모드에서는 스케줄 설정이 불가능해야 한다.\n=> ex. 카드Only가 Always인 경우 카드+지문~~ 카드+지문+PIN 모드는 사용안함으로 설정되어야 함",
+      "> CSN만 지원되어야 한다.\n> HID/ICLASS는 Byte Ordering 상관없이 동일한 카드ID가 표시되어야 한다.",
+      "> Normal인 경우 카드ID가 그대로 출력되어야 한다.\n> Wiegand인 경우 설정된 Wiegand 포맷으로 카드ID가 출력되어야 한다.",
+      "협박지문으로 인증할 경우 협박지문으로 동작되어야 한다.\n> 협박지문 로그가 남는다.",
+      "> 현재 시간의 스케줄로 설정된 인증모드로 동작되어야 한다.\n> 현재 시간이 스케줄에 포함되지 않은 인증모드로 인증시 'Auth Fail Invalid Credential'로 인증실패가 되어야 한다.",
+      "설정한 시간내에 인증이 이루어졌으므로 인증성공으로 동작되어야 한다.\n\n> Slave 장치의 경우\n : Matching TimeOut - Slave\n : Auth. TimeOut - Slave\n : Msg. TimeOut- Slave",
+      "설정한 시간내에 인증이 이루어지지 않았으므로 Auth Timeout이 발생되어 인증실패로 동작되어야 한다.\n\n> Slave 장치의 경우\n : Matching TimeOut - Slave\n : Auth. TimeOut - Slave\n : Msg. TimeOut- Slave",
+      "> Blacklist로 설정된 카드의 경우 인증실패가 되어야 한다.(Blacklist로 동작되어짐)\n> Blacklist가 해제된 카드의 경우 인증성공이 되어야 한다.",
+      "Blacklist가 해제된 카드로 동작되어야 한다.",
+      "1. 카드입력음이 출력 전 카드제거시 입력결과를 출력해주지 않는다.\n2. 카드입력이 되면 인증결과를 정상적으로 출력해주어야 한다.",
+      "1. 부팅이 정상적으로 이루어진다.",
+      "1. 장치에서 Blacklist로 인한 출입 거부 되어야 한다.\n2. 장치 Event Log에서 Auth Failed 로그의 User ID가 Secure QR의 카드 ID와 같아야 한다.",
+      "1. 장치에서 Blacklist로 인한 출입 거부 되어야 한다.\n2. 장치 Event Log에서 Auth Failed 로그의 User ID가 QR의 카드 ID와 같아야 한다.",
+      "1. Scan Card시 백그라운드에서 얼굴 인증이 비활성화 되어 얼굴인증이 불가해야 한다."
+    ]
+  }
+}

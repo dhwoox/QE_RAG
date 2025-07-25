@@ -1,0 +1,248 @@
+{
+  "id": "COMMONR-55",
+  "content": [
+    [
+      1,
+      "1. Door > Add Door > Timed APB : Not Use 설정 확인 > Apply\n2. Device 에 동일 사용자로 2회 인증 시도 ",
+      "[BioStar]\n1. 기본 값 : 사용 안함",
+      "1. 기본값은 'Not Use'이다.\n2. Not Use인 경우 Timed APB 위반이 동작하지 않아야 한다."
+    ],
+    [
+      2,
+      "1. Door > Add Door > Timed APB : Use 설정 확인 > Apply\n2. Device 에 동일 사용자로 2회 인증시도",
+      "[BioStar]\n1. Door - Entry/Exit 장치 설정",
+      "1. Timed APB 설정이 가능하다.\n2. 입실장치와 퇴실 장치는 설정된 시간에 따라 Timed APB 가 동작한다.\n> 설정된 시간 동안 재인증 불가\n> Hard Timed APB 유형으로 동작"
+    ],
+    [
+      3,
+      "1. Door > Add Door > Timed APB : Use 설정 확인 > Apply\n2. Device 에 동일 사용자로 2회 인증시도\n3. Event Log 출력 확인",
+      "",
+      "1. Timed APB 로그 및 동작 확인\n> 장치 :  '출입거부' / 'Timed APB 위반'\n> 바이오스타 : 'Access denied (Timed anti-passback)'/ 'Timed anti-passback violation detected'\n=> Hard Timed APB 유형으로 동작\n=> 장치 메인 화면 - 안티패스백 위반/APB Violation"
+    ],
+    [
+      4,
+      "1. Door > Add Door \n2. Entry 장치만 설정 \n3. Timed APB : Use 설정 > Apply \n4.Device 에 동일 사용자로 2회 인증시도",
+      "[BioStar]\n1. Door\n- Entry Device Only",
+      "1. 입실 장치만 선택이 된 경우 에도 Timed APB 설정이 가능하다. \n> 입실 장치 선택 시 Timed APB  표시 확인 \n2. 입실장치에서 설정된 시간에 따라 Timed APB가 동작한다."
+    ],
+    [
+      5,
+      "1. Door > Add Door \n2. Exit 장치만 설정 \n",
+      "[BioStar]\n1. Door\n- Exit Device Only\n(출입문 릴레이 설정)",
+      "1. 퇴실 장치만 선택이 된 경우 APB 설정 부분은 표시되지 않는다.\n* APB 설정 부분이 표시되지만, 실제 APB가 동작하지 않기 때문에 해당 부분은 표시되지 않도록 수정 예정"
+    ],
+    [
+      6,
+      "1. Door > Add Door > Timed APB : Use\n2. Timed APB Reset Time 설정 ",
+      "[BioStar]\n1. 기본값 : 10분\n2. 입력 단위 : 분\n2. 입력 범위\n > 0 ~ 60",
+      "1. APB Reset Duration을 입력 범위만큼 설정할 수 있다.\n2. 설정한 시간대로 APB 위반 상태가 유지된다.\n3. APB Reset Time으로 설정한 시간이 지나면 APB 상태가 초기화된다.\n4. 0으로 설정시 Timed APB가 초기화되지 않는다.(Timed APB 로 동작)"
+    ],
+    [
+      7,
+      "1. Door > Add Door > Timed APB : Use\n2. Timed APB Reset Time 설정 \n3. Reset Time 설정 시간 경과",
+      "[BioStar]\n1. 기본값 : 10분\n2. 입력 단위 : 분\n2. 입력 범위\n > 0 ~ 60",
+      "1. APB Reset Time으로 설정한 시간이 지나면 APB 상태가 초기화된다.\n2. 입실 장치 / 퇴실 장치 인증 및 출입문 동작 확인"
+    ],
+    [
+      8,
+      "1. Door > Add Door > Anti PassBack Type 설정",
+      "Anti PassBack Type \n> Soft\n> Hard",
+      "1. Timed APB 비활성화\n> Timed APB와 APB 를 동시에 설정 불가"
+    ],
+    [
+      9,
+      "1. Door > Add Door > Timed APB : Use 설정",
+      "",
+      "1. APB Type 비활성화\n> Timed APB와 APB 를 동시에 설정 불가"
+    ],
+    [
+      10,
+      "1. Door > Add Door > Door Sensor 설정\n2. APB 출입 유무 체크 옵션 확인 ",
+      "> Use sensor when Entry Confirmed APB enabled ",
+      "1. Timed APB 제약 info 메시지 확인\n> 'When Timed APB is Use, this option cannot be enabled. "
+    ],
+    [
+      11,
+      "1. Door > Add Door > Door Sensor 설정\n2. APB 출입 유무 체크 옵션 : ON\n3.  Timed APB : Use 설정",
+      "",
+      "1. APB 출입 유무 체크 옵션 'OFF' 로 변경 확인\n> Timed APB 미지원\n(FW에서 해당 부분의 지원이 된 이후 지원 예정)"
+    ],
+    [
+      12,
+      "[Timed APB : Use]\n1. Alarm에 Timed Anti PassBack의 Action을 Output으로 설정\n(*) Output 설정시 Door 의 Relay 와 중복되지 않게 설정\n2. 동일 사용자로 다수 인증시도",
+      "[BioStar]\n# Action Device\n1. Master 장치 선택\n2. Slave 장치 선택\n3. SIO2 선택",
+      "1. Output 설정한 장치에서 Signal이 발생한다.\n2. APB 관련 로그가 출력된다.\n> Timed anti-passback zone alarm detected"
+    ],
+    [
+      13,
+      "[Timed APB : Use]\n1. Alarm에 Timed Anti PassBack의 Action을 Release All Alarm으로 설정\n2. 동일 사용자로 다수 인증시도",
+      "[BioStar]\n# Action Device\n1. Master 장치 선택\n2. Slave 장치 선택\n3. SIO2 선택\n4. DM20 선택",
+      "1. 설정한 장치에서 Release All Alarm이 된다.\n2. Output Alarm에 대해서만 Release 된다. \n3. APB 관련 로그가 출력된다.\n> Timed anti-passback zone alarm detected"
+    ],
+    [
+      14,
+      "[Timed APB : Use]\n1. Alarm에 Timed Anti PassBack의 Action을 Reboot Device으로 설정\n2. 동일 사용자로 다수 인증시도",
+      "[BioStar]\n# Action Device\n1. Master 장치 선택\n2. Slave 장치 선택",
+      "1. Reboot Device 설정한 장치 Reboot 발생한다.\n2. APB 관련 로그가 출력된다.\n> Timed anti-passback zone alarm detected"
+    ],
+    [
+      15,
+      "[Timed APB : Use]\n1. Alarm에 Timed Anti PassBack의 Action을 Disable Device으로 설정\n2. 동일 사용자로 다수 인증시도",
+      "[BioStar]\n# Action Device\n1. Master 장치 선택\n2. Slave 장치 선택",
+      "1. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger/Face)\n> 사용자의 Credential 등록이 불가하다.(Card/Finger/Face)\n(on) Admin Menu로 접근 시 장치 상에서는 등록 가능\n> LED는 Red-Magenta 로 2초 간격으로 점멸된다.\n2. APB 관련 로그가 출력된다.\n> Timed anti-passback zone alarm detected"
+    ],
+    [
+      16,
+      "[Timed APB : Use]\n1. Timed APB 위반을 발생\n2. Reset Time 이내 Master 장치를 Reboot",
+      "",
+      "1.Reset Time 이내 장치가 재부팅 되는 경우 Timed APB 유지\n2. Timed APB 이전 설정 유지 확인"
+    ],
+    [
+      17,
+      "[Timed APB : Use]\n1. Timed APB 위반을 발생\n2. Reset Time 이후 Master 장치를 Reboot",
+      "",
+      "1. Reset Time 이후 장치가 재부팅되는 경우 모든 Timed APB 정보가 리셋되어야 한다.\n: Alarm 해제\n: Timed APB 위반 해제\n2. Timed APB 이전 설정 유지 확인"
+    ],
+    [
+      18,
+      "[Timed APB : Use]\n1. Timed APB Alarm 설정\n2. 동일 사용자로 다수 인증시도\n3. Alarm 발생유무 확인\n4. Monitoring> Door Status> Alarm Clear",
+      "APB Alarm\n> Output\n> Release All Alarm\n> Reboot Device\n> Disable Device",
+      "1. Door Status에서 Alarm Clear된다.\n2. Clear Timed APB 메시지 출력 확인\n> Timed anti-passback zone alarm cleard\n"
+    ],
+    [
+      19,
+      "[Timed APB : Use]\n1. Timed APB 위반으로 동작중인 다수의 사용자\n2. Monitoring> Door Status> Clear APB\n3. Clear APB한 사용자/Clear APB 하지 않은 사용자로 재인증시도",
+      "Clear APB\n> All User\n> Specific User",
+      "1. All User: 모든 사용자에 대해 APB 위반 해제로 인증성공된다.\n2. Specific User: 선택한 사용자에 대해서만 APB 위반이 해제되어 인증성공된다.\n> Clear APB 미해당 사용자의 APB 위반으로 동작한다."
+    ],
+    [
+      20,
+      "1. Door > Add Door > Timed APB : Use\n2. Monitoring ",
+      "",
+      "1.  Timed APB 이벤트 확인\n> Event Log\n> Real-time Log\n> Device Status\n> Graphic Map(미지원)"
+    ],
+    [
+      21,
+      "1. BioStar 2 > Settings > Alert (Authentication)",
+      "",
+      "1.  Timed APB Alert 설정 및 동작 확인"
+    ],
+    [
+      22,
+      "1. Door 및 Timed APB(Use) 설정 \n2. 장치상세정보창 >  Image Log : Enabled\n3. Timed APB 발생",
+      "Image Log 지원 장치",
+      "1. Image Log Event 출력 확인\n> 기본값으로 출력 - Access denied(Timed anti-passback)\n2. Image Log 발생 확인"
+    ],
+    [
+      23,
+      "[Timed APB : Use]\n1. Door > Timed APB 설정 \n2. Zone > Door로 설정된 장치 Global APB 설정 ",
+      "",
+      "1. 'Zone-Global APB' 와 Door-Timed APB동시 설정 가능 확인"
+    ],
+    [
+      24,
+      "1. Door > Timed APB 설정 \n2. Zone > Door로 설정된 장치 Local APB 설정 > Apply ",
+      "",
+      "1. 'Zone-Local APB' 와 Door-Timed APB동시 설정 불가 확인\n> 'The device already has an anti-passback setting. Selcet another device.' 팝업 출력\n> 출입문의 Timed APB가 설정된 장치의 경우에는 구역의 Local 모드 APB를 설정할 수 없다. "
+    ],
+    [
+      25,
+      "1. Zone > Door로 설정된 장치 Local APB 설정\n2. Door > Timed APB : Use 설정 > Apply",
+      "",
+      "1. 'Zone-Local APB' 와 Door-Timed APB동시 설정 불가 확인\n> 'The device already has an anti-passback setting. Selcet another device.' 팝업 출력\n>구역의 Local 모드 APB 가 설정된 장치의 경우에는 출입문의 Timed APB를 설정할 수 없다. "
+    ],
+    [
+      26,
+      "[Timed APB : Use]\n\n1. Timed APB 설정\n2. 동일 사용자로 다수 인증시도 \n3. 장치 팝업 & Event Log 확인",
+      "LCD 지원 장치",
+      "1. Timed APB 위반 발생\n> LCD \n국문: 안티패스백 위반\n영문: APB violation\n> Event Log - Access Denied / Timed APB Vlolation "
+    ],
+    [
+      27,
+      "[Timed APB : Use]\n1. Timed APB Alarm 설정\n2. 동일 사용자로 다수 인증시도\n3. Alarm 발생유무 확인\n4. Monitoring> Door Status> Alarm Clear",
+      "- LCD 지원 장치\n- APB Alarm\n> Output\n> Release All Alarm\n> Reboot Device\n> Disable Device",
+      "1. 설정한 Alarm 발생 및 Alarm Clear 확인\n2. 장치 Event Log 확인\n> Timed APB Alarm\n> Clear Alarm"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-55",
+    "description": "",
+    "test_step": [
+      "1. Door > Add Door > Timed APB : Not Use 설정 확인 > Apply\n2. Device 에 동일 사용자로 2회 인증 시도 ",
+      "1. Door > Add Door > Timed APB : Use 설정 확인 > Apply\n2. Device 에 동일 사용자로 2회 인증시도",
+      "1. Door > Add Door > Timed APB : Use 설정 확인 > Apply\n2. Device 에 동일 사용자로 2회 인증시도\n3. Event Log 출력 확인",
+      "1. Door > Add Door \n2. Entry 장치만 설정 \n3. Timed APB : Use 설정 > Apply \n4.Device 에 동일 사용자로 2회 인증시도",
+      "1. Door > Add Door \n2. Exit 장치만 설정 \n",
+      "1. Door > Add Door > Timed APB : Use\n2. Timed APB Reset Time 설정 ",
+      "1. Door > Add Door > Timed APB : Use\n2. Timed APB Reset Time 설정 \n3. Reset Time 설정 시간 경과",
+      "1. Door > Add Door > Anti PassBack Type 설정",
+      "1. Door > Add Door > Timed APB : Use 설정",
+      "1. Door > Add Door > Door Sensor 설정\n2. APB 출입 유무 체크 옵션 확인 ",
+      "1. Door > Add Door > Door Sensor 설정\n2. APB 출입 유무 체크 옵션 : ON\n3.  Timed APB : Use 설정",
+      "[Timed APB : Use]\n1. Alarm에 Timed Anti PassBack의 Action을 Output으로 설정\n(*) Output 설정시 Door 의 Relay 와 중복되지 않게 설정\n2. 동일 사용자로 다수 인증시도",
+      "[Timed APB : Use]\n1. Alarm에 Timed Anti PassBack의 Action을 Release All Alarm으로 설정\n2. 동일 사용자로 다수 인증시도",
+      "[Timed APB : Use]\n1. Alarm에 Timed Anti PassBack의 Action을 Reboot Device으로 설정\n2. 동일 사용자로 다수 인증시도",
+      "[Timed APB : Use]\n1. Alarm에 Timed Anti PassBack의 Action을 Disable Device으로 설정\n2. 동일 사용자로 다수 인증시도",
+      "[Timed APB : Use]\n1. Timed APB 위반을 발생\n2. Reset Time 이내 Master 장치를 Reboot",
+      "[Timed APB : Use]\n1. Timed APB 위반을 발생\n2. Reset Time 이후 Master 장치를 Reboot",
+      "[Timed APB : Use]\n1. Timed APB Alarm 설정\n2. 동일 사용자로 다수 인증시도\n3. Alarm 발생유무 확인\n4. Monitoring> Door Status> Alarm Clear",
+      "[Timed APB : Use]\n1. Timed APB 위반으로 동작중인 다수의 사용자\n2. Monitoring> Door Status> Clear APB\n3. Clear APB한 사용자/Clear APB 하지 않은 사용자로 재인증시도",
+      "1. Door > Add Door > Timed APB : Use\n2. Monitoring ",
+      "1. BioStar 2 > Settings > Alert (Authentication)",
+      "1. Door 및 Timed APB(Use) 설정 \n2. 장치상세정보창 >  Image Log : Enabled\n3. Timed APB 발생",
+      "[Timed APB : Use]\n1. Door > Timed APB 설정 \n2. Zone > Door로 설정된 장치 Global APB 설정 ",
+      "1. Door > Timed APB 설정 \n2. Zone > Door로 설정된 장치 Local APB 설정 > Apply ",
+      "1. Zone > Door로 설정된 장치 Local APB 설정\n2. Door > Timed APB : Use 설정 > Apply",
+      "[Timed APB : Use]\n\n1. Timed APB 설정\n2. 동일 사용자로 다수 인증시도 \n3. 장치 팝업 & Event Log 확인",
+      "[Timed APB : Use]\n1. Timed APB Alarm 설정\n2. 동일 사용자로 다수 인증시도\n3. Alarm 발생유무 확인\n4. Monitoring> Door Status> Alarm Clear"
+    ],
+    "data": [
+      "[BioStar]\n1. 기본 값 : 사용 안함",
+      "[BioStar]\n1. Door - Entry/Exit 장치 설정",
+      "[BioStar]\n1. Door\n- Entry Device Only",
+      "[BioStar]\n1. Door\n- Exit Device Only\n(출입문 릴레이 설정)",
+      "[BioStar]\n1. 기본값 : 10분\n2. 입력 단위 : 분\n2. 입력 범위\n > 0 ~ 60",
+      "[BioStar]\n1. 기본값 : 10분\n2. 입력 단위 : 분\n2. 입력 범위\n > 0 ~ 60",
+      "Anti PassBack Type \n> Soft\n> Hard",
+      "> Use sensor when Entry Confirmed APB enabled ",
+      "[BioStar]\n# Action Device\n1. Master 장치 선택\n2. Slave 장치 선택\n3. SIO2 선택",
+      "[BioStar]\n# Action Device\n1. Master 장치 선택\n2. Slave 장치 선택\n3. SIO2 선택\n4. DM20 선택",
+      "[BioStar]\n# Action Device\n1. Master 장치 선택\n2. Slave 장치 선택",
+      "[BioStar]\n# Action Device\n1. Master 장치 선택\n2. Slave 장치 선택",
+      "APB Alarm\n> Output\n> Release All Alarm\n> Reboot Device\n> Disable Device",
+      "Clear APB\n> All User\n> Specific User",
+      "Image Log 지원 장치",
+      "LCD 지원 장치",
+      "- LCD 지원 장치\n- APB Alarm\n> Output\n> Release All Alarm\n> Reboot Device\n> Disable Device"
+    ],
+    "expected_result": [
+      "1. 기본값은 'Not Use'이다.\n2. Not Use인 경우 Timed APB 위반이 동작하지 않아야 한다.",
+      "1. Timed APB 설정이 가능하다.\n2. 입실장치와 퇴실 장치는 설정된 시간에 따라 Timed APB 가 동작한다.\n> 설정된 시간 동안 재인증 불가\n> Hard Timed APB 유형으로 동작",
+      "1. Timed APB 로그 및 동작 확인\n> 장치 :  '출입거부' / 'Timed APB 위반'\n> 바이오스타 : 'Access denied (Timed anti-passback)'/ 'Timed anti-passback violation detected'\n=> Hard Timed APB 유형으로 동작\n=> 장치 메인 화면 - 안티패스백 위반/APB Violation",
+      "1. 입실 장치만 선택이 된 경우 에도 Timed APB 설정이 가능하다. \n> 입실 장치 선택 시 Timed APB  표시 확인 \n2. 입실장치에서 설정된 시간에 따라 Timed APB가 동작한다.",
+      "1. 퇴실 장치만 선택이 된 경우 APB 설정 부분은 표시되지 않는다.\n* APB 설정 부분이 표시되지만, 실제 APB가 동작하지 않기 때문에 해당 부분은 표시되지 않도록 수정 예정",
+      "1. APB Reset Duration을 입력 범위만큼 설정할 수 있다.\n2. 설정한 시간대로 APB 위반 상태가 유지된다.\n3. APB Reset Time으로 설정한 시간이 지나면 APB 상태가 초기화된다.\n4. 0으로 설정시 Timed APB가 초기화되지 않는다.(Timed APB 로 동작)",
+      "1. APB Reset Time으로 설정한 시간이 지나면 APB 상태가 초기화된다.\n2. 입실 장치 / 퇴실 장치 인증 및 출입문 동작 확인",
+      "1. Timed APB 비활성화\n> Timed APB와 APB 를 동시에 설정 불가",
+      "1. APB Type 비활성화\n> Timed APB와 APB 를 동시에 설정 불가",
+      "1. Timed APB 제약 info 메시지 확인\n> 'When Timed APB is Use, this option cannot be enabled. ",
+      "1. APB 출입 유무 체크 옵션 'OFF' 로 변경 확인\n> Timed APB 미지원\n(FW에서 해당 부분의 지원이 된 이후 지원 예정)",
+      "1. Output 설정한 장치에서 Signal이 발생한다.\n2. APB 관련 로그가 출력된다.\n> Timed anti-passback zone alarm detected",
+      "1. 설정한 장치에서 Release All Alarm이 된다.\n2. Output Alarm에 대해서만 Release 된다. \n3. APB 관련 로그가 출력된다.\n> Timed anti-passback zone alarm detected",
+      "1. Reboot Device 설정한 장치 Reboot 발생한다.\n2. APB 관련 로그가 출력된다.\n> Timed anti-passback zone alarm detected",
+      "1. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger/Face)\n> 사용자의 Credential 등록이 불가하다.(Card/Finger/Face)\n(on) Admin Menu로 접근 시 장치 상에서는 등록 가능\n> LED는 Red-Magenta 로 2초 간격으로 점멸된다.\n2. APB 관련 로그가 출력된다.\n> Timed anti-passback zone alarm detected",
+      "1.Reset Time 이내 장치가 재부팅 되는 경우 Timed APB 유지\n2. Timed APB 이전 설정 유지 확인",
+      "1. Reset Time 이후 장치가 재부팅되는 경우 모든 Timed APB 정보가 리셋되어야 한다.\n: Alarm 해제\n: Timed APB 위반 해제\n2. Timed APB 이전 설정 유지 확인",
+      "1. Door Status에서 Alarm Clear된다.\n2. Clear Timed APB 메시지 출력 확인\n> Timed anti-passback zone alarm cleard\n",
+      "1. All User: 모든 사용자에 대해 APB 위반 해제로 인증성공된다.\n2. Specific User: 선택한 사용자에 대해서만 APB 위반이 해제되어 인증성공된다.\n> Clear APB 미해당 사용자의 APB 위반으로 동작한다.",
+      "1.  Timed APB 이벤트 확인\n> Event Log\n> Real-time Log\n> Device Status\n> Graphic Map(미지원)",
+      "1.  Timed APB Alert 설정 및 동작 확인",
+      "1. Image Log Event 출력 확인\n> 기본값으로 출력 - Access denied(Timed anti-passback)\n2. Image Log 발생 확인",
+      "1. 'Zone-Global APB' 와 Door-Timed APB동시 설정 가능 확인",
+      "1. 'Zone-Local APB' 와 Door-Timed APB동시 설정 불가 확인\n> 'The device already has an anti-passback setting. Selcet another device.' 팝업 출력\n> 출입문의 Timed APB가 설정된 장치의 경우에는 구역의 Local 모드 APB를 설정할 수 없다. ",
+      "1. 'Zone-Local APB' 와 Door-Timed APB동시 설정 불가 확인\n> 'The device already has an anti-passback setting. Selcet another device.' 팝업 출력\n>구역의 Local 모드 APB 가 설정된 장치의 경우에는 출입문의 Timed APB를 설정할 수 없다. ",
+      "1. Timed APB 위반 발생\n> LCD \n국문: 안티패스백 위반\n영문: APB violation\n> Event Log - Access Denied / Timed APB Vlolation ",
+      "1. 설정한 Alarm 발생 및 Alarm Clear 확인\n2. 장치 Event Log 확인\n> Timed APB Alarm\n> Clear Alarm"
+    ]
+  }
+}

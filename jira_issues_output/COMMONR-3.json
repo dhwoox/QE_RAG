@@ -1,0 +1,24 @@
+{
+  "id": "COMMONR-3",
+  "content": [
+    [
+      1,
+      "서버와 장치 시간을 다르게 변경한다.\n1. Device > 임의의 장치 선택 > Information > Time Synchronization with Server 체크 > Apply\n동작확인 한다.\n",
+      "Time Zone 변경\nDisplay Date 변경 - 날짜, 시간\nTime Synchronization with Server - Check\n\n(off) DHCP Client Discovery TimeOut과는 별개\nLAN 연결 후 100초간 DHCP IP 할당 실패 시\n> 169.254.0.1 동작 확인\n3분 주기 재시도 시(장치 재부팅)\n> DHCP IP 할당 확인",
+      "BioStar Server 시간과 장치의 시간이 동기화 된다.\n > 시간 차 : 3초 \n > 주기 : Keep Alive 시간(30초)\n  : 최대 3분 이상(사용자 전송 시에는 시간 차가 더 많이 발생함)\n > Time Zone : 동기화 대상 아님(Config 재설정)"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-3",
+    "description": "",
+    "test_step": [
+      "서버와 장치 시간을 다르게 변경한다.\n1. Device > 임의의 장치 선택 > Information > Time Synchronization with Server 체크 > Apply\n동작확인 한다.\n"
+    ],
+    "data": [
+      "Time Zone 변경\nDisplay Date 변경 - 날짜, 시간\nTime Synchronization with Server - Check\n\n(off) DHCP Client Discovery TimeOut과는 별개\nLAN 연결 후 100초간 DHCP IP 할당 실패 시\n> 169.254.0.1 동작 확인\n3분 주기 재시도 시(장치 재부팅)\n> DHCP IP 할당 확인"
+    ],
+    "expected_result": [
+      "BioStar Server 시간과 장치의 시간이 동기화 된다.\n > 시간 차 : 3초 \n > 주기 : Keep Alive 시간(30초)\n  : 최대 3분 이상(사용자 전송 시에는 시간 차가 더 많이 발생함)\n > Time Zone : 동기화 대상 아님(Config 재설정)"
+    ]
+  }
+}

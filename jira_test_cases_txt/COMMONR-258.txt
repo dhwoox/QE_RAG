@@ -1,5 +1,20 @@
 ■ 이슈 키: COMMONR-258
 ■ 제목: 구역 - Scheduled Unlock Zone(Elevator)
+■ 설명: [요구사항]
+
+Scheduled Unlock Zone(Elevator)는 Lift기반으로 Elevator 전체가 아닌 특정 floor가 Scheduled Unlock 으로 동작 되어야 함
+
+Door 기반의 Schedule Unlock Zone 과 동일하게 인증 시작으로 Unlock 을 시작할 수 있는 옵션 지원 : Started by User Authentication
+
+Scheduled Lock Zone과 Scheduled Unlock Zone은 별개의 Zone이다.
+ Scheduled Lock Zone
+ : Lift 미지원
+ Scheduled Unlock Zone
+ : 강제열림 스케줄에 설정된 시간에는 층이 강제로 열리게끔 동작 
+
+ 
+
+※ 스케줄 생성한 상태에서 TC 진행
 ============================================================
 
 ■ 테스트 스텝

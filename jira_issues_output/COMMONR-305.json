@@ -1,0 +1,308 @@
+{
+  "id": "COMMONR-305",
+  "content": [
+    [
+      1,
+      "1. BioStar 2 > 장치상세(BS3) > Template on Mobile > ToM Enrollment > Visual Face: 체크/언체크\n2. 장치메뉴>AUTHENTICATION>Operation>ToM Enrollment 확인\n",
+      "Default: ON\n> Template on Mobile \n> ToM Enrollment ",
+      "1. 설정값에 따라 ON/OFF로 노출된다.\n(장치 Reboot 후에도 유지)"
+    ],
+    [
+      2,
+      "1. 장치 리셋\n2. 장치메뉴>AUTHENTICATION>Operation>ToM Enrollment 확인\n",
+      "Restore Default\n>All settings, Keep Network Settings",
+      "1. Default 값이 On으로 노출된다. "
+    ],
+    [
+      3,
+      "[ToM에 저장된 FACE 템플릿 없음]\n1. ToM Enrollment Visual Face: 체크\n2. ToM 장치에 인증 시도",
+      "인증모드\n> 카드Only 모드\n> 카드+지문(얼굴) 모드\n> 카드+PIN 모드\n> 카드+지문(얼굴)/PIN 모드(Default)\n> 카드+지문(얼굴)+PIN 모드\n\nWiegand Output Mode: Bypass 설정",
+      "1. 얼굴 등록으로 동작한다.\n"
+    ],
+    [
+      4,
+      "[ToM에 저장된 FACE 템플릿 없음]\n1. ToM Enrollment Visual Face: 언체크\n2. ToM 장치에 인증 시도\n",
+      "인증모드\n> 카드Only 모드\n> 카드+지문(얼굴) 모드\n> 카드+PIN 모드\n> 카드+지문(얼굴)/PIN 모드(Default)\n> 카드+지문(얼굴)+PIN 모드\n",
+      "1. 설정된 인증모드로 동작한다. \n> CARD 인증 성공\n> 인증 실패(얼굴 없음)\n> CARD + PIN 인증\n> CARD + PIN\n> 인증 실패(얼굴 없음)\n"
+    ],
+    [
+      5,
+      "[ToM에 저장된 FACE 템플릿 있음]\n1. ToM Enrollment Visual Face: 체크/언체크\n2. ToM 장치에 인증 시도\n",
+      "인증모드\n> 카드Only 모드\n> 카드+지문(얼굴) 모드\n> 카드+PIN 모드\n> 카드+지문(얼굴)/PIN 모드(Default)\n> 카드+지문(얼굴)+PIN 모드",
+      "1. 설정한 인증모드로 동작한다.\n>인증 성공/실패에 따라 로그가 남는다.\n> 복합인증의 경우 이를 Master에서 실행했을때, 매칭 수행이 끝나고 결과 팝업창이 나타난 후나 취소 버튼, 인증 타임아웃 등을\n통해서 매칭이 취소된 후에 새로운 Credential이 입력될 수 있다.\n> 복합인증의 경우 이를 Slavce에 실행했을때, 인증 결과를 수신하거나 타임아웃이 발생한 후에는 새로운 Credential을 다시 입력 할 수있다. \n> Master에서 지원하지 않는 인증수단으로 Slave에서 인증시도 했을 경우, 인증 결과가 정상적으로 표기되어야 한다\n> 인증 시 안내 메시지와 음성안내가 노출된다.\n"
+    ],
+    [
+      6,
+      "[ToM에 저장된 FACE 템플릿과 다른 종류의 템플릿 존재]\n\n1. ToM Enrollment Visual Face: 체크\n2. ToM 장치에 인증 시도",
+      "인증모드\n> 카드Only 모드\n> 카드+지문(얼굴) 모드\n> 카드+PIN 모드\n> 카드+지문(얼굴)/PIN 모드(Default)\n> 카드+지문(얼굴)+PIN 모드\n",
+      "1. 얼굴 등록으로 동작한다. \n"
+    ],
+    [
+      7,
+      "[에어팝을 통해 받은 ToM_SCC]\n1. ToM Enrollment Visual Face: 체크\n2. ToM 장치에 인증 시도",
+      "인증모드\n> 카드Only 모드\n> 카드+지문(얼굴) 모드\n> 카드+PIN 모드\n> 카드+지문(얼굴)/PIN 모드(Default)\n> 카드+지문(얼굴)+PIN 모드\n",
+      "1. 얼굴 등록으로 동작한다. \n"
+    ],
+    [
+      8,
+      "[에어팝을 통해 받은 ToM_SCC]\n1. ToM Enrollment Visual Face: 언체크\n2. ToM 장치에 인증 시도\n",
+      "인증모드\n> 카드Only 모드\n> 카드+지문(얼굴) 모드\n> 카드+PIN 모드\n> 카드+지문(얼굴)/PIN 모드(Default)\n> 카드+지문(얼굴)+PIN 모드\n",
+      "1. 설정된 인증모드로 동작한다. \n> CARD 인증 성공\n> 인증 실패(얼굴 없음)\n> CARD + PIN 인증\n> CARD + PIN\n> 인증 실패(얼굴 없음)\n\n※ToM 저장된 사용자에 얼굴,지문,카드가 저장되어 있을 경우 인증 성공"
+    ],
+    [
+      9,
+      "1. 등록된 Visual Face가 있는 ToM을 장치에 입력\n2. 등록된 얼굴과 다른 얼굴로 인증 시도\n",
+      "인증모드\n>카드+지문(얼굴) 모드 \n>카드 +지문(얼굴)/PIN 모드\n> 카드+지문(얼굴)+PIN 모드\n",
+      "1. 인증 실패된다.\n"
+    ],
+    [
+      10,
+      "[ToM 미지원 장치로 테스트]\t\t\t\t\n1. 발급 받은 ToM 인증 시도\t\t\t\t\n",
+      "등록된 Visual Face가 있는/없는 ToM\n",
+      "1. 아무반응이 없다.\n"
+    ],
+    [
+      11,
+      "1. Device>카드인증모드>다중인증모드 설정\n2. 설정한 모드의 처음에 해당하는 모드 입력 후 설정한 Auth Timeout 시간내 나머지 모드에 대해 미입력\n",
+      "Auth Timeout : 3s ~ 20s\n> 카드+지문(얼굴) 모드\n> 카드+PIN 모드\n> 카드+지문(얼굴)/PIN 모드\n> 카드+지문(얼굴)+PIN 모드\n",
+      "1. 설정한 시간내에 인증이 이루어지지 않았으므로 Auth Timeout이 발생되어 인증실패로 동작되어야 한다.\n> Slave 장치의 경우\n: Matching TimeOut - Slave\n: Auth. TimeOut - Slave (BS3)\n: Msg. TimeOut- Slave"
+    ],
+    [
+      12,
+      "1. 발급받은 ToM Blacklist 처리\n2. Blacklist 처리된 ToM으로 장치에 인증 시도\n",
+      "1. 등록된 Visual Face가 있는 ToM의 경우\n\n",
+      "1.Blacklist로 인한 출입 거부 되어야 한다.\n"
+    ],
+    [
+      13,
+      "1.발급 받은 ToM Blacklist 처리\n2. Blacklist 처리된 ToM을 장치에 인증 시도",
+      "1. 등록된 Visual Face가 없는 ToM의 경우",
+      "1. Visual Face 등록을 진행한다.\n> visual face 등록 미지원 장치에 인증 시 Blacklist로 인한 출입 거부 되어야 한다."
+    ],
+    [
+      14,
+      "1. Blacklist로 설정했던 ToM을 Blacklist 해제 후 장치에 전송\n2. Blacklist 해제된 ToM으로 인증시도\n",
+      "",
+      "1. Blacklist가 해제된 카드로 동작되어야 한다.\n"
+    ],
+    [
+      15,
+      "1. User>ToM 발급(+Mobile)> 개인인증모드 설정> AOC 카드발급> Private Auth Mode 설정>발급\n2. 발급받은 ToM카드로 인증시도\n",
+      "사용자 ID\n > 숫자\nPrivate Auth Mode\n > Card Only / Card + PIN / Card+FP / Card + FP or PIN / Card + FP + PIN\n",
+      "1. AOC 카드에 Write된 개인인증모드로 동작되어야 한다.\n"
+    ],
+    [
+      16,
+      "1. Setting > Server > User/Device Management 에서 'AoC 발급 시 개인정보 삭제' : Enable\n\n2. User>ToM 발급(+Mobile)> 개인인증모드 설정> AOC 카드발급> Private Auth Mode 설정\n3. 발급받은 카드로 인증시도\n",
+      "사용자 ID\n > 숫자\nPrivate Auth Mode\n > Card Only / Card + PIN / Card+FP / Card + FP or PIN / Card + FP + PIN\nPrivate Info\n > FP, PIN, Face, Email, Phone, Birthday , Gender\n(birthday, gender는 DB에만 존재하는 data)\n",
+      "1. AOC 카드 발급 성공 시 사용자의 개인정보가 삭제된다.(SCC는 유지)\n2. AOC 카드에 Write된 개인인증모드로 동작되어야 한다.\n"
+    ],
+    [
+      17,
+      "1. A장치에 사용자 B ToM 인증\n",
+      "[특정 사이트 발급 후 인증]\n> A사이트 A장치 등록\n> B사이트 B장치 등록\n\n\nVisual Face가 등록/미등록된 ToM\n\n",
+      "1. 진동만 발생한다. \n"
+    ],
+    [
+      18,
+      "[Batch Edit]\n1. ToM 지원 장치 두대이상 선택>Batch Edit 클릭\n2. ToM Enrollment > Visual Face 체크\n3. Apply\n",
+      "default: Visual Face 체크\t\n>ToM 발급(Visual Face 미등록)\t\n",
+      "1. 해당 장치 상세화면> ToM Enrollment > Visual Face 부분이 체크 설정된다. \t\t\t\t\t\t\t\t\n2. 발급 받은 ToM 입력 시 Visual Face 등록이 시작된다. \t\t\t\t\t\t\t\t\n"
+    ],
+    [
+      19,
+      "[Batch Edit]\n1. ToM 지원 장치 두대이상 선택>Batch Edit 클릭\n2. ToM Enrollment > Visual Face 언체크\n3. Apply\n",
+      ">ToM 발급(Visual Face 미등록)\t\n",
+      "1. 해당 장치 상세화면> ToM Enrollment > Visual Face 부분이 체크해제된다. \t\t\t\t\t\t\t\n1. 인증모드에 맞게 인증된다.\t\t\t\t\t\t\t\n"
+    ],
+    [
+      20,
+      "[Batch Edit]\n1. ToM 미지원 장치 두대이상 선택>Batch Edit 클릭\n2. ToM Enrollment > Visual Face 체크/언체크\n3. Apply\n4. Visual Face가 미등록된 ToM을 미지원 장치에 입력",
+      ">ToM 발급(Visual Face 미등록)\t\n\n(ToM 미지원 장치 두대이상 or 지원/미지원 장치 혼합 선택)",
+      "1. Visual Face 등록을 진행하지 않고 반응이 없다. "
+    ],
+    [
+      21,
+      "[개인인증모드] \n1. ToM을 지원하는 Master/Slave/Default 장치에 인증",
+      "개인인증모드가 설정된 ToM \n> 카드 모드\n> 카드+ 얼굴 모드\n> 카드+ PIN 모드\n> 카드+ 얼굴/PIN 모드\n> 카드+ 얼굴 +PIN 모드",
+      "1. 개인인증모드로 동작한다. "
+    ],
+    [
+      22,
+      "[Event log]\n1. ToM Template 등록",
+      "",
+      "1. 이벤트 로그가 생성된다.\n- ToM Visual Face Enrollment Succeeded\n- ToM Visual Face Enrollment Failed \n  -(Sub) ToM Visual Face Enrollment Failed (Scan Canceled)\n얼굴 등록을 장치에서 취소하는 경우\n  -(Sub) ToM Visual Face Enrollment Failed (Scan Timeout)\n얼굴 등록 타임아웃\n  -(Sub) ToM Visual Face Enrollment Failed (Template Extraction Failed)\n 장치에서 촬영한 얼굴에서 템플릿을 추출 실패한 경우\n  -(Sub) ToM Visual Face Enrollment Failed (Communication Failed)\n 장치와 앱 간의 통신 오류\n  -(Sub) ToM Visual Face Enrollment Failed (Error)\n 그 외 모든 오류\n  \n"
+    ],
+    [
+      23,
+      "[Image log]\n1. Device>Advanced>Image Log: Enabled\n2. Event 1:1 authentication succeeded (Mobile Card)\n, 1:1 authentication failed (Mobile Card) 선택 \n3. Apply\n",
+      "",
+      "1. 저장된다.\n\n\n\n"
+    ],
+    [
+      24,
+      "[Image log]\n1. 장치에 ToM 인증\n",
+      "",
+      "1. BioStar와 장치 이벤트 로그에 Image 로그가 생성된다.\n"
+    ],
+    [
+      25,
+      "[Image log]\n1. Device>Advanced>Image Log: Enabled\n2. ToM 관련 Event 삭제 후 Apply\n3. 장치에 ToM 인증",
+      "Event> 1:1 authentication succeeded ",
+      "2. Event log가 정상적으로 저장된다.\n3. log 생성되고, Image log 생성되지 않는다"
+    ],
+    [
+      26,
+      "1. BioStar에 Master-Slave로 추가된 상태\n2. 사용자 등록> Master/Slave 장치를 통해 Scan Card 수행\n3. Master/Slave 장치에 얼굴없는 TOM Read\n4. 동작확인",
+      "- BioStar 에서 scan card 하는 경우\n: write smart card\n: Format Card\n: Read Card\n\n- 장치에서 scan card 하는 경우\n: user에 카드 등록 시 \n\n- NFC/BLE 에러 팝업 상이함 각 팝업 정의 확인 필요\n:NFC/BLE\n",
+      "1. 카드 읽기 시 아무 반응 없어야한다.\n2. 카드 포맷 시 예외 처리 에러 팝업 표출\n=> 반응이 없어야 함(무시)\n-NFC: Timeout 팝업\n-BLE: Cannot write data to card 에러 팝업"
+    ],
+    [
+      27,
+      "1. 장치에 ToM 인증",
+      "1:N User 50,000명 저장\n\n인증모드\n> 카드Only 모드\n> 카드+지문(얼굴) 모드\n> 카드+PIN 모드\n> 카드+지문(얼굴)/PIN 모드(Default)\n> 카드+지문(얼굴)+PIN 모드\n",
+      "1. ToM 인증 성공한다. "
+    ],
+    [
+      28,
+      "[ToM Period에 따른 동작]\n\n1. 유효기간 이전 ToM_AoC 발급\n2. 발급한 ToM을 장치에 인증\n - Visual Face가 미등록 된 ToM",
+      "Master/Slave 장치",
+      "1. Visual Face 등록이 진행된다."
+    ],
+    [
+      29,
+      "[ToM Period에 따른 동작]\n\n1. 유효기간 이전 ToM_Aoc 발급\n2. 발급한 ToM을 장치에 인증\n - Visual Face 등록된 ToM",
+      "Master/Slave 장치",
+      "1. 유효기간전으로 인증 실패된다."
+    ],
+    [
+      30,
+      "[ToM Period에 따른 동작]\n\n1. 유효기간 만료된 ToM_AoC 장치에 인증\n - Visual Face 미등록된 ToM",
+      "Master/Slave 장치",
+      "1. Visual Face 등록이 진행된다."
+    ],
+    [
+      31,
+      "[ToM Period에 따른 동작]\n\n1. 유효기간 만료된 ToM_AoC 장치에 인증\n - Visual Face 등록된 ToM",
+      "Master/Slave 장치",
+      "1. 유효기간 만료로 인증 실패된다."
+    ],
+    [
+      32,
+      "[ToM Enrollment지원/미지원에 따른 인증]\n1. 발급 받은 ToM 카드를 ToM Enrollment 미지원 장치에 인증",
+      "> ToM Enrollment 지원 Master - 미지원 Slave\n> ToM Enrollment 미지원 Master - 지원 Slave\n\n> Visual Face 등록/미등록_ToM",
+      "1. 설정된 인증모드로 동작한다. "
+    ],
+    [
+      33,
+      "[ToM Enrollment지원/미지원에 따른 기본값 확인]\n1. 바이오스타> 장치상세 > Master/Slave 진입 > ToM Enrollment 값 확인",
+      "> ToM Enrollment 지원 Master - 미지원 Slave\n> ToM Enrollment 미지원 Master - 지원 Slave 연결\n\n------------------------------------------\n[25/06/18 기준]ToM Enrollment 지원장치: F2/BS3/W3/XS2\nToM Enrollment 미지원 장치: D2/XP2/W2\n(ToM을 지원하는 장치에 대해서만 작성)",
+      "1.지원/미지원 장치에 따라 상태가 표시된다.  \n>지원 장치일 경우, ToM Enrollment: 체크 상태\n>미지원 장치일 경우, ToM Enrollment: 없음"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-305",
+    "description": "",
+    "test_step": [
+      "1. BioStar 2 > 장치상세(BS3) > Template on Mobile > ToM Enrollment > Visual Face: 체크/언체크\n2. 장치메뉴>AUTHENTICATION>Operation>ToM Enrollment 확인\n",
+      "1. 장치 리셋\n2. 장치메뉴>AUTHENTICATION>Operation>ToM Enrollment 확인\n",
+      "[ToM에 저장된 FACE 템플릿 없음]\n1. ToM Enrollment Visual Face: 체크\n2. ToM 장치에 인증 시도",
+      "[ToM에 저장된 FACE 템플릿 없음]\n1. ToM Enrollment Visual Face: 언체크\n2. ToM 장치에 인증 시도\n",
+      "[ToM에 저장된 FACE 템플릿 있음]\n1. ToM Enrollment Visual Face: 체크/언체크\n2. ToM 장치에 인증 시도\n",
+      "[ToM에 저장된 FACE 템플릿과 다른 종류의 템플릿 존재]\n\n1. ToM Enrollment Visual Face: 체크\n2. ToM 장치에 인증 시도",
+      "[에어팝을 통해 받은 ToM_SCC]\n1. ToM Enrollment Visual Face: 체크\n2. ToM 장치에 인증 시도",
+      "[에어팝을 통해 받은 ToM_SCC]\n1. ToM Enrollment Visual Face: 언체크\n2. ToM 장치에 인증 시도\n",
+      "1. 등록된 Visual Face가 있는 ToM을 장치에 입력\n2. 등록된 얼굴과 다른 얼굴로 인증 시도\n",
+      "[ToM 미지원 장치로 테스트]\t\t\t\t\n1. 발급 받은 ToM 인증 시도\t\t\t\t\n",
+      "1. Device>카드인증모드>다중인증모드 설정\n2. 설정한 모드의 처음에 해당하는 모드 입력 후 설정한 Auth Timeout 시간내 나머지 모드에 대해 미입력\n",
+      "1. 발급받은 ToM Blacklist 처리\n2. Blacklist 처리된 ToM으로 장치에 인증 시도\n",
+      "1.발급 받은 ToM Blacklist 처리\n2. Blacklist 처리된 ToM을 장치에 인증 시도",
+      "1. Blacklist로 설정했던 ToM을 Blacklist 해제 후 장치에 전송\n2. Blacklist 해제된 ToM으로 인증시도\n",
+      "1. User>ToM 발급(+Mobile)> 개인인증모드 설정> AOC 카드발급> Private Auth Mode 설정>발급\n2. 발급받은 ToM카드로 인증시도\n",
+      "1. Setting > Server > User/Device Management 에서 'AoC 발급 시 개인정보 삭제' : Enable\n\n2. User>ToM 발급(+Mobile)> 개인인증모드 설정> AOC 카드발급> Private Auth Mode 설정\n3. 발급받은 카드로 인증시도\n",
+      "1. A장치에 사용자 B ToM 인증\n",
+      "[Batch Edit]\n1. ToM 지원 장치 두대이상 선택>Batch Edit 클릭\n2. ToM Enrollment > Visual Face 체크\n3. Apply\n",
+      "[Batch Edit]\n1. ToM 지원 장치 두대이상 선택>Batch Edit 클릭\n2. ToM Enrollment > Visual Face 언체크\n3. Apply\n",
+      "[Batch Edit]\n1. ToM 미지원 장치 두대이상 선택>Batch Edit 클릭\n2. ToM Enrollment > Visual Face 체크/언체크\n3. Apply\n4. Visual Face가 미등록된 ToM을 미지원 장치에 입력",
+      "[개인인증모드] \n1. ToM을 지원하는 Master/Slave/Default 장치에 인증",
+      "[Event log]\n1. ToM Template 등록",
+      "[Image log]\n1. Device>Advanced>Image Log: Enabled\n2. Event 1:1 authentication succeeded (Mobile Card)\n, 1:1 authentication failed (Mobile Card) 선택 \n3. Apply\n",
+      "[Image log]\n1. 장치에 ToM 인증\n",
+      "[Image log]\n1. Device>Advanced>Image Log: Enabled\n2. ToM 관련 Event 삭제 후 Apply\n3. 장치에 ToM 인증",
+      "1. BioStar에 Master-Slave로 추가된 상태\n2. 사용자 등록> Master/Slave 장치를 통해 Scan Card 수행\n3. Master/Slave 장치에 얼굴없는 TOM Read\n4. 동작확인",
+      "1. 장치에 ToM 인증",
+      "[ToM Period에 따른 동작]\n\n1. 유효기간 이전 ToM_AoC 발급\n2. 발급한 ToM을 장치에 인증\n - Visual Face가 미등록 된 ToM",
+      "[ToM Period에 따른 동작]\n\n1. 유효기간 이전 ToM_Aoc 발급\n2. 발급한 ToM을 장치에 인증\n - Visual Face 등록된 ToM",
+      "[ToM Period에 따른 동작]\n\n1. 유효기간 만료된 ToM_AoC 장치에 인증\n - Visual Face 미등록된 ToM",
+      "[ToM Period에 따른 동작]\n\n1. 유효기간 만료된 ToM_AoC 장치에 인증\n - Visual Face 등록된 ToM",
+      "[ToM Enrollment지원/미지원에 따른 인증]\n1. 발급 받은 ToM 카드를 ToM Enrollment 미지원 장치에 인증",
+      "[ToM Enrollment지원/미지원에 따른 기본값 확인]\n1. 바이오스타> 장치상세 > Master/Slave 진입 > ToM Enrollment 값 확인"
+    ],
+    "data": [
+      "Default: ON\n> Template on Mobile \n> ToM Enrollment ",
+      "Restore Default\n>All settings, Keep Network Settings",
+      "인증모드\n> 카드Only 모드\n> 카드+지문(얼굴) 모드\n> 카드+PIN 모드\n> 카드+지문(얼굴)/PIN 모드(Default)\n> 카드+지문(얼굴)+PIN 모드\n\nWiegand Output Mode: Bypass 설정",
+      "인증모드\n> 카드Only 모드\n> 카드+지문(얼굴) 모드\n> 카드+PIN 모드\n> 카드+지문(얼굴)/PIN 모드(Default)\n> 카드+지문(얼굴)+PIN 모드\n",
+      "인증모드\n> 카드Only 모드\n> 카드+지문(얼굴) 모드\n> 카드+PIN 모드\n> 카드+지문(얼굴)/PIN 모드(Default)\n> 카드+지문(얼굴)+PIN 모드",
+      "인증모드\n> 카드Only 모드\n> 카드+지문(얼굴) 모드\n> 카드+PIN 모드\n> 카드+지문(얼굴)/PIN 모드(Default)\n> 카드+지문(얼굴)+PIN 모드\n",
+      "인증모드\n> 카드Only 모드\n> 카드+지문(얼굴) 모드\n> 카드+PIN 모드\n> 카드+지문(얼굴)/PIN 모드(Default)\n> 카드+지문(얼굴)+PIN 모드\n",
+      "인증모드\n> 카드Only 모드\n> 카드+지문(얼굴) 모드\n> 카드+PIN 모드\n> 카드+지문(얼굴)/PIN 모드(Default)\n> 카드+지문(얼굴)+PIN 모드\n",
+      "인증모드\n>카드+지문(얼굴) 모드 \n>카드 +지문(얼굴)/PIN 모드\n> 카드+지문(얼굴)+PIN 모드\n",
+      "등록된 Visual Face가 있는/없는 ToM\n",
+      "Auth Timeout : 3s ~ 20s\n> 카드+지문(얼굴) 모드\n> 카드+PIN 모드\n> 카드+지문(얼굴)/PIN 모드\n> 카드+지문(얼굴)+PIN 모드\n",
+      "1. 등록된 Visual Face가 있는 ToM의 경우\n\n",
+      "1. 등록된 Visual Face가 없는 ToM의 경우",
+      "사용자 ID\n > 숫자\nPrivate Auth Mode\n > Card Only / Card + PIN / Card+FP / Card + FP or PIN / Card + FP + PIN\n",
+      "사용자 ID\n > 숫자\nPrivate Auth Mode\n > Card Only / Card + PIN / Card+FP / Card + FP or PIN / Card + FP + PIN\nPrivate Info\n > FP, PIN, Face, Email, Phone, Birthday , Gender\n(birthday, gender는 DB에만 존재하는 data)\n",
+      "[특정 사이트 발급 후 인증]\n> A사이트 A장치 등록\n> B사이트 B장치 등록\n\n\nVisual Face가 등록/미등록된 ToM\n\n",
+      "default: Visual Face 체크\t\n>ToM 발급(Visual Face 미등록)\t\n",
+      ">ToM 발급(Visual Face 미등록)\t\n",
+      ">ToM 발급(Visual Face 미등록)\t\n\n(ToM 미지원 장치 두대이상 or 지원/미지원 장치 혼합 선택)",
+      "개인인증모드가 설정된 ToM \n> 카드 모드\n> 카드+ 얼굴 모드\n> 카드+ PIN 모드\n> 카드+ 얼굴/PIN 모드\n> 카드+ 얼굴 +PIN 모드",
+      "Event> 1:1 authentication succeeded ",
+      "- BioStar 에서 scan card 하는 경우\n: write smart card\n: Format Card\n: Read Card\n\n- 장치에서 scan card 하는 경우\n: user에 카드 등록 시 \n\n- NFC/BLE 에러 팝업 상이함 각 팝업 정의 확인 필요\n:NFC/BLE\n",
+      "1:N User 50,000명 저장\n\n인증모드\n> 카드Only 모드\n> 카드+지문(얼굴) 모드\n> 카드+PIN 모드\n> 카드+지문(얼굴)/PIN 모드(Default)\n> 카드+지문(얼굴)+PIN 모드\n",
+      "Master/Slave 장치",
+      "Master/Slave 장치",
+      "Master/Slave 장치",
+      "Master/Slave 장치",
+      "> ToM Enrollment 지원 Master - 미지원 Slave\n> ToM Enrollment 미지원 Master - 지원 Slave\n\n> Visual Face 등록/미등록_ToM",
+      "> ToM Enrollment 지원 Master - 미지원 Slave\n> ToM Enrollment 미지원 Master - 지원 Slave 연결\n\n------------------------------------------\n[25/06/18 기준]ToM Enrollment 지원장치: F2/BS3/W3/XS2\nToM Enrollment 미지원 장치: D2/XP2/W2\n(ToM을 지원하는 장치에 대해서만 작성)"
+    ],
+    "expected_result": [
+      "1. 설정값에 따라 ON/OFF로 노출된다.\n(장치 Reboot 후에도 유지)",
+      "1. Default 값이 On으로 노출된다. ",
+      "1. 얼굴 등록으로 동작한다.\n",
+      "1. 설정된 인증모드로 동작한다. \n> CARD 인증 성공\n> 인증 실패(얼굴 없음)\n> CARD + PIN 인증\n> CARD + PIN\n> 인증 실패(얼굴 없음)\n",
+      "1. 설정한 인증모드로 동작한다.\n>인증 성공/실패에 따라 로그가 남는다.\n> 복합인증의 경우 이를 Master에서 실행했을때, 매칭 수행이 끝나고 결과 팝업창이 나타난 후나 취소 버튼, 인증 타임아웃 등을\n통해서 매칭이 취소된 후에 새로운 Credential이 입력될 수 있다.\n> 복합인증의 경우 이를 Slavce에 실행했을때, 인증 결과를 수신하거나 타임아웃이 발생한 후에는 새로운 Credential을 다시 입력 할 수있다. \n> Master에서 지원하지 않는 인증수단으로 Slave에서 인증시도 했을 경우, 인증 결과가 정상적으로 표기되어야 한다\n> 인증 시 안내 메시지와 음성안내가 노출된다.\n",
+      "1. 얼굴 등록으로 동작한다. \n",
+      "1. 얼굴 등록으로 동작한다. \n",
+      "1. 설정된 인증모드로 동작한다. \n> CARD 인증 성공\n> 인증 실패(얼굴 없음)\n> CARD + PIN 인증\n> CARD + PIN\n> 인증 실패(얼굴 없음)\n\n※ToM 저장된 사용자에 얼굴,지문,카드가 저장되어 있을 경우 인증 성공",
+      "1. 인증 실패된다.\n",
+      "1. 아무반응이 없다.\n",
+      "1. 설정한 시간내에 인증이 이루어지지 않았으므로 Auth Timeout이 발생되어 인증실패로 동작되어야 한다.\n> Slave 장치의 경우\n: Matching TimeOut - Slave\n: Auth. TimeOut - Slave (BS3)\n: Msg. TimeOut- Slave",
+      "1.Blacklist로 인한 출입 거부 되어야 한다.\n",
+      "1. Visual Face 등록을 진행한다.\n> visual face 등록 미지원 장치에 인증 시 Blacklist로 인한 출입 거부 되어야 한다.",
+      "1. Blacklist가 해제된 카드로 동작되어야 한다.\n",
+      "1. AOC 카드에 Write된 개인인증모드로 동작되어야 한다.\n",
+      "1. AOC 카드 발급 성공 시 사용자의 개인정보가 삭제된다.(SCC는 유지)\n2. AOC 카드에 Write된 개인인증모드로 동작되어야 한다.\n",
+      "1. 진동만 발생한다. \n",
+      "1. 해당 장치 상세화면> ToM Enrollment > Visual Face 부분이 체크 설정된다. \t\t\t\t\t\t\t\t\n2. 발급 받은 ToM 입력 시 Visual Face 등록이 시작된다. \t\t\t\t\t\t\t\t\n",
+      "1. 해당 장치 상세화면> ToM Enrollment > Visual Face 부분이 체크해제된다. \t\t\t\t\t\t\t\n1. 인증모드에 맞게 인증된다.\t\t\t\t\t\t\t\n",
+      "1. Visual Face 등록을 진행하지 않고 반응이 없다. ",
+      "1. 개인인증모드로 동작한다. ",
+      "1. 이벤트 로그가 생성된다.\n- ToM Visual Face Enrollment Succeeded\n- ToM Visual Face Enrollment Failed \n  -(Sub) ToM Visual Face Enrollment Failed (Scan Canceled)\n얼굴 등록을 장치에서 취소하는 경우\n  -(Sub) ToM Visual Face Enrollment Failed (Scan Timeout)\n얼굴 등록 타임아웃\n  -(Sub) ToM Visual Face Enrollment Failed (Template Extraction Failed)\n 장치에서 촬영한 얼굴에서 템플릿을 추출 실패한 경우\n  -(Sub) ToM Visual Face Enrollment Failed (Communication Failed)\n 장치와 앱 간의 통신 오류\n  -(Sub) ToM Visual Face Enrollment Failed (Error)\n 그 외 모든 오류\n  \n",
+      "1. 저장된다.\n\n\n\n",
+      "1. BioStar와 장치 이벤트 로그에 Image 로그가 생성된다.\n",
+      "2. Event log가 정상적으로 저장된다.\n3. log 생성되고, Image log 생성되지 않는다",
+      "1. 카드 읽기 시 아무 반응 없어야한다.\n2. 카드 포맷 시 예외 처리 에러 팝업 표출\n=> 반응이 없어야 함(무시)\n-NFC: Timeout 팝업\n-BLE: Cannot write data to card 에러 팝업",
+      "1. ToM 인증 성공한다. ",
+      "1. Visual Face 등록이 진행된다.",
+      "1. 유효기간전으로 인증 실패된다.",
+      "1. Visual Face 등록이 진행된다.",
+      "1. 유효기간 만료로 인증 실패된다.",
+      "1. 설정된 인증모드로 동작한다. ",
+      "1.지원/미지원 장치에 따라 상태가 표시된다.  \n>지원 장치일 경우, ToM Enrollment: 체크 상태\n>미지원 장치일 경우, ToM Enrollment: 없음"
+    ]
+  }
+}

@@ -1,0 +1,376 @@
+{
+  "id": "COMMONR-367",
+  "content": [
+    [
+      1,
+      "[Batch Edit로 Phonebook(내선번호) CSV Import 동작 확인]\n1. VoIP설정이 Disabled인 장치를 두 개 이상 선택\n2. Batch Edit로 Phonebook CSV Import 동작",
+      "",
+      "1. import 성공된다."
+    ],
+    [
+      2,
+      "1. 장치메뉴에 진입 intercom:ON\n2. Extensions 진입",
+      "",
+      "1. CSV Import된 내선번호가 모두 출력 됨"
+    ],
+    [
+      3,
+      "1. VoIP 사용 중이며 Extension Number가 설정되어 있는 장치를 두 개 이상 선택\n2. Batch Edit로 Phonebook CSV Import 동작",
+      "",
+      "1. Import 성공 된다."
+    ],
+    [
+      4,
+      "1. 장치화면의 Call 버튼 선택",
+      "",
+      "1. 기존 장치의 Extension Number가 삭제되고 CSV Import된 Extension Number가 출력 됨\n* 사양 : 내선번호 CSV Import는 무조건 Overwrite"
+    ],
+    [
+      5,
+      "1. VoIP 사용 중인 장치를 두 개 이상 선택\n2. Batch Edit로 Phonebook에 129개의 내선번호가 저장된 CSV Import 동작",
+      "",
+      "1. 에러 팝업이 출력되고 CSV Import가 되지 않음"
+    ],
+    [
+      6,
+      "1. VoIP 사용 중인 장치를 두 개 이상 선택\n2. Batch Edit로 Phonebook에 128개의 내선번호가 저장된 CSV Import 동작",
+      "",
+      "1. Import 성공 됨"
+    ],
+    [
+      7,
+      "1. 장치화면의 Call 버튼 선택",
+      "",
+      "1. 128개의 내선번호가 출력 됨\n"
+    ],
+    [
+      8,
+      "1. VoIP 사용 중인 장치를 두 개 이상 선택\n2. Batch Edit로 Number의 자리수가 32자를 초과 Name이 48자를 초과하는 내선번호가 포함된 CSV Import 동작",
+      "",
+      "1. 에러 팝업이 출력되고 CSV Import가 되지 않음"
+    ],
+    [
+      9,
+      "1. VoIP 사용 중인 장치를 두 개 이상 선택\n2. Batch Edit로 Phonebook에 Number의 자리수가 32자, Name이 48자인 내선번호가 포함된 CSV Import 동작",
+      "",
+      "1. Import 성공 됨"
+    ],
+    [
+      10,
+      "1. 장치화면의 Call 버튼 선택",
+      "",
+      "1. Number의 자리수가 32자를 초과하지 않고 Name이 48자를 초과하지 않는 내선번호 출력 됨"
+    ],
+    [
+      11,
+      "[Secure communication with device를 사용 중 VoIP 동작 확인]\n1. Settings > Security 진입하여 Secure communication with device를 Use로 설정\n2. 장치 화면에서 Call 버튼 선택",
+      "",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력 됨"
+    ],
+    [
+      12,
+      "[VoIP 통화 중 장치에 사용자 전송/삭제]\n1. 장치 화면에서 Call 버튼 선택 후 VoIP 통화\n2. VoIP 통화 중 BioStar에서 장치에 사용자를 전송",
+      "",
+      "1. 사용자가 전송되어도 VoIP 통화에 영향을 미치지 않음"
+    ],
+    [
+      13,
+      "1. VoIP 통화 중 BioStar에서 장치의 사용자를 삭제",
+      "",
+      "1. 사용자가 삭제되어도 VoIP 통화에 영향을 미치지 않음"
+    ],
+    [
+      14,
+      "[VoIP 통화 중 Slave 장치에 인증 동작]\n1. 장치 화면에서 Call 버튼 선택 후 VoIP 통화\n2. VoIP 통화 중 slave 장치에서 얼굴 인증 시도",
+      "BioStation3 (Master, VoIP 통화 장치)\nL BioStation3 (Slave)\n\n5. Master/Slave 장치로 Door 구성",
+      "1. 인증 성공되며 출입문이 열림\n2. VoIP 통화 이상 없음"
+    ],
+    [
+      15,
+      "1. VoIP 통화 중 Slave 장치에서 카드 인증 시도",
+      "",
+      "1. 인증 성공되며 출입문이 열림\n2. VoIP 통화 이상 없음"
+    ],
+    [
+      16,
+      "[Delete Data & Sync Device 후 VoIP 동작 확인]\n1. VoIP 설정 된 장치를 Sync Device 선택\n2. 장치에서 MicroSIP에 VoIP 통화 시도",
+      "",
+      "1. VoIP 통화 동작 됨\n"
+    ],
+    [
+      17,
+      "1. VoIP 설정 된 장치를 Delete Data&Sync Device 선택\n2. 장치에서 MicroSIP에 VoIP 통화 시도 ",
+      "",
+      "1. VoIP 통화 동작 됨"
+    ],
+    [
+      18,
+      "[Device Hashkey Management를 사용 시 VoIP 동작 확인]\n1. 장치상세페이지>Intercom 설정 및 Extension 설정\n2. 장치에서 MicroSIP SIP와 VoIP 동작 확인\n",
+      "바이오스타 보안통신:ON",
+      "1. VoIP 영상통화 정상 동작 됨"
+    ],
+    [
+      19,
+      "1. Settings > Security 진입하여 Device Hashkey Management를 설정 후 저장\n2. voip 연결",
+      "",
+      "1. VoIP 영상통화 정상 동작 됨"
+    ],
+    [
+      20,
+      "1. 장치상세> SIP 계정을 다른 계정으로 설정\n2.  MicroSIP SIP와 VoIP 동작 확인",
+      "",
+      "1. VoIP 영상통화 정상 동작 됨"
+    ],
+    [
+      21,
+      "[APB Zone으로 구성된 Door를 VoIP 통화 중 DTMF로 Door Open 시 동작 확인]\n1. 장치상세> SIP 계정 설정 및 Open Door Button을 0 설정\n2. 사용자1 Entry Device에 2번 연속 인증\n\n",
+      "1. 장치 설정\nMaster 장치 (BS3)\nL Slave 장치(BS3)\n\n2. Door 설정\n-. Entry Device : Master\n-. Exit Device : Slave\n-. Relay : Master Relay 0\n\n3. APB Zone 설정\n-. Name : APB Zone\n-. Anti-passback Type : Hard APB\n-. Entry Devices : Master\n-. Exit Devices : Slave",
+      "1. APB위반으로 인증 실패 및 APB Violation 로그 생성"
+    ],
+    [
+      22,
+      "1. 사용자2 Exit Device에 2번 연속 인증",
+      "",
+      "1. APB위반으로 인증 실패 및 APB Violation 로그 생성"
+    ],
+    [
+      23,
+      "1. 실시간 로그 진입 > VoIP 통화 중 다이얼 0입력하여 Door Open",
+      "",
+      "1. Door unlocked 로그 출력 및 VoIP에 의한 문열림 로그 출력"
+    ],
+    [
+      24,
+      "1. 통화 종료 후 사용자1 Entry Device에 인증 시도",
+      "",
+      "1. APB위반으로 인증 실패 및 APB Violation 로그 생성\n"
+    ],
+    [
+      25,
+      "1. 사용자2 Exit Device에 인증 시도",
+      "",
+      "1. APB위반으로 인증 실패 및 APB Violation 로그 생성"
+    ],
+    [
+      26,
+      "[Fire Alarm Zone으로 구성된 Door를 VoIP 통화 중 DTMF로 Door Open 시 동작 확인]\n1. 장치상세> SIP 계정 설정 및 Open Door Button을 0 설정 후 저장\n2. voip 통화중 0번 선택",
+      "1. 장치 설정\nMaster 장치 (BS3)\nL Slave 장치(BS3)\n\n2. Door 설정\n-. Name : Door1\n-. Entry Device : Master\n-. Exit Device : Slave\n-. Relay : Master Relay 0\n\n3. Fire Alarm Zone 설정\n-. Name : Fire Alarm Zone\n-. Door : Door1\n-. Device/Input : Master Input Port 0",
+      "1. Door Relay가 Unlocked 되었다가 Door Open Time이후 Locked 됨"
+    ],
+    [
+      27,
+      "1. Master Input Port 0 접지",
+      "",
+      "1. Door Status Type이 Emergency Unlock, Door Relay가 Unlocked 출력 됨"
+    ],
+    [
+      28,
+      "1. VoIP 통화 중 다이얼 0으로 Door Open",
+      "",
+      "1. Door Status Type이 Emergency Unlock, Door Relay가 Unlocked 출력됨"
+    ],
+    [
+      29,
+      "[Scheduled Lock Zone으로 구성된 Door를 VoIP 통화 중 DTMF로 Door Open 시 동작 확인]\n1. 장치상세> SIP 계정 설정 및 Open Door Button을 0 설정 후 저장\n2. Monitoring > Door Status 진입",
+      "1. 장치 설정\nMaster 장치 (BS3)\nL Slave 장치(BS3)\n\n2. Door 설정\n-. Name : Door1\n-. Entry Device : Master\n-. Exit Device : Slave\n-. Relay : Master Relay 0\n\n3. Scheduled Lock Zone 설정\n-. Name : Scheduled Lock Zone\n-. Door : Door1\n-. Schedule : Schedule1 (현재시간 포함, 앞으로 5분 후 스케줄 종료)",
+      "1.. Door Status Type이 Schedule Lock, Door Relay가 Locked 출력 됨"
+    ],
+    [
+      30,
+      "1. VoIP 통화 중 다이얼 0 입력",
+      "",
+      "1. Door Status Type이 Schedule Lock, Door Relay가 Locked 출력 유지 됨\n(Sheduled Lock상태임으로)"
+    ],
+    [
+      31,
+      "1. Scheduled Lock 상태가 종료된 후 VoIP 통화 중 다이얼 0 입력",
+      "",
+      "1. Door Status Type이 Normal, Door Relay가 Unlocked 출력 됨"
+    ],
+    [
+      32,
+      "[Scheduled Unlock Zone으로 구성된 Door를 VoIP 통화 중 DTMF로 Door Open 시 동작 확인]\n1. 장치상세 > SIP 계정 설정 및 Open Door Button을 0 설정 후 저장\n2. Monitoring > Door Status 진입",
+      "",
+      "1. Door Status Type이 Schedule Unlock, Door Relay가 Unlocked 출력 됨"
+    ],
+    [
+      33,
+      "1. VoIP 통화 중 다이얼 0 입력",
+      "",
+      "1. Door Status Type이 Schedule Unlock, Door Relay가 Unlocked 유지 됨"
+    ],
+    [
+      34,
+      "1.Scheduled Unlock 종료\n2. VoIP 통화 중 다이얼 0 입력",
+      "",
+      "1. Door Status Type이 Normal, Door Relay가 Unlocked 출력 됨"
+    ],
+    [
+      35,
+      "[Intrusion Alarm Zone으로 구성된 Door에 경비 중일 경우 Call 버튼 미출력 확인]\n1. 장치상세> SIP 계정 설정 및 Open Door Button을 0 설정 후 저장\n2. Master Input Port 1 접지\n3. 경비진입\n",
+      "",
+      "1. 장치화면에 Call 버튼이 출력되지 않음"
+    ],
+    [
+      36,
+      "[Manual Lock/Unlock 상태의 Door를 VoIP 통화 중 DTMF로 Door Open할 경우 동작 확인]\n1. 장치상세> SIP 계정 설정 및 Open Door Button을 0 설정 후 저장\n2. Monitoring > Door Status>  Manual Lock 버튼 선택",
+      "1. 장치 설정\nMaster 장치 (BS3)\nL Slave 장치(BS3)\n\n2. Door 설정\n-. Name : Door1\n-. Entry Device : Master\n-. Exit Device : Slave\n-. Relay : Master Relay 0",
+      "1. Door Status Type이 Operator Lock, Door Relay가 Locked 출력 됨"
+    ],
+    [
+      37,
+      "1. VoIP 통화 중 다이얼 0 입력",
+      "",
+      "1. Door Status Type이 Operator Lock, Door Relay가 Locked 출력 유지 됨"
+    ],
+    [
+      38,
+      "1. Door1을 체크 후 Manual Unlock 버튼 선택",
+      "",
+      "1. Door Status Type이 Operator Unlock, Door Relay가 Unlocked 출력 됨"
+    ],
+    [
+      39,
+      "1. VoIP 통화 중 다이얼 0 입력하여 Door Open 시도",
+      "",
+      "1. Door Status Type이 Operator Unlock, Door Relay가 Unlocked 출력 유지 됨"
+    ],
+    [
+      40,
+      "1. Door1을 체크 후 Release 버튼 선택",
+      "",
+      "1. Door Status Type이 Normal, Door Relay가 Locked 출력 됨"
+    ],
+    [
+      41,
+      "1. VoIP 통화 중 다이얼 0 입력",
+      "",
+      "1. Door Status Type이 Normal, Door Relay가 Unlocked 출력 됨"
+    ],
+    [
+      42,
+      "[Intercom Microphone Volume 설정 동작 확인]\n1.장치상세>Intercom 사용 설정 후 계정 정보 설정\n2. Advanced > Display/Sound의 Intercom Microphone Volume:0 설정 후 저장\n3.VOIP 통화 연결",
+      "-intercom Microphone Volume (IP 인터폰 마이크 음량) \n- 음량 0/50/100 설정\n",
+      "1. 통화 시 PC의 MicroSIP에서 장치의 음량이 장치의 마이크 설정에 맞게 출력 됨"
+    ],
+    [
+      43,
+      "[Intercom Speaker Volume 설정 동작 확인]\n1. 장치상세> Intercom 사용 설정 후 계정 정보 설정\n2. Advanced > Display/Sound의 Intercom Speaker Volume:0 설정\n3. VOIP 통화 연결",
+      "-Intercom Speaker Volume (IP 인터폰 스피커 음량)\n- 음량 0/50/100 설정",
+      "1. 통화 시 음량이 설정에 맞게 출력 됨"
+    ],
+    [
+      44,
+      "[BioStar에서 IP인터폰 비디오 해상도 설정 및 동작 확인]\n1.장치상세>Intercom Video Resolution 설정 후 저장\n2. VOIP 통화 연결\n3. Intercom Video Resolution 해상도 저장",
+      "-Intercom Video Resolution: \n- 360X640\n- 720x480 ",
+      "1. 정상적으로 연결되어 선택한 해상도에 맞게 Video및 Audio가 출력 됨"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-367",
+    "description": "",
+    "test_step": [
+      "[Batch Edit로 Phonebook(내선번호) CSV Import 동작 확인]\n1. VoIP설정이 Disabled인 장치를 두 개 이상 선택\n2. Batch Edit로 Phonebook CSV Import 동작",
+      "1. 장치메뉴에 진입 intercom:ON\n2. Extensions 진입",
+      "1. VoIP 사용 중이며 Extension Number가 설정되어 있는 장치를 두 개 이상 선택\n2. Batch Edit로 Phonebook CSV Import 동작",
+      "1. 장치화면의 Call 버튼 선택",
+      "1. VoIP 사용 중인 장치를 두 개 이상 선택\n2. Batch Edit로 Phonebook에 129개의 내선번호가 저장된 CSV Import 동작",
+      "1. VoIP 사용 중인 장치를 두 개 이상 선택\n2. Batch Edit로 Phonebook에 128개의 내선번호가 저장된 CSV Import 동작",
+      "1. 장치화면의 Call 버튼 선택",
+      "1. VoIP 사용 중인 장치를 두 개 이상 선택\n2. Batch Edit로 Number의 자리수가 32자를 초과 Name이 48자를 초과하는 내선번호가 포함된 CSV Import 동작",
+      "1. VoIP 사용 중인 장치를 두 개 이상 선택\n2. Batch Edit로 Phonebook에 Number의 자리수가 32자, Name이 48자인 내선번호가 포함된 CSV Import 동작",
+      "1. 장치화면의 Call 버튼 선택",
+      "[Secure communication with device를 사용 중 VoIP 동작 확인]\n1. Settings > Security 진입하여 Secure communication with device를 Use로 설정\n2. 장치 화면에서 Call 버튼 선택",
+      "[VoIP 통화 중 장치에 사용자 전송/삭제]\n1. 장치 화면에서 Call 버튼 선택 후 VoIP 통화\n2. VoIP 통화 중 BioStar에서 장치에 사용자를 전송",
+      "1. VoIP 통화 중 BioStar에서 장치의 사용자를 삭제",
+      "[VoIP 통화 중 Slave 장치에 인증 동작]\n1. 장치 화면에서 Call 버튼 선택 후 VoIP 통화\n2. VoIP 통화 중 slave 장치에서 얼굴 인증 시도",
+      "1. VoIP 통화 중 Slave 장치에서 카드 인증 시도",
+      "[Delete Data & Sync Device 후 VoIP 동작 확인]\n1. VoIP 설정 된 장치를 Sync Device 선택\n2. 장치에서 MicroSIP에 VoIP 통화 시도",
+      "1. VoIP 설정 된 장치를 Delete Data&Sync Device 선택\n2. 장치에서 MicroSIP에 VoIP 통화 시도 ",
+      "[Device Hashkey Management를 사용 시 VoIP 동작 확인]\n1. 장치상세페이지>Intercom 설정 및 Extension 설정\n2. 장치에서 MicroSIP SIP와 VoIP 동작 확인\n",
+      "1. Settings > Security 진입하여 Device Hashkey Management를 설정 후 저장\n2. voip 연결",
+      "1. 장치상세> SIP 계정을 다른 계정으로 설정\n2.  MicroSIP SIP와 VoIP 동작 확인",
+      "[APB Zone으로 구성된 Door를 VoIP 통화 중 DTMF로 Door Open 시 동작 확인]\n1. 장치상세> SIP 계정 설정 및 Open Door Button을 0 설정\n2. 사용자1 Entry Device에 2번 연속 인증\n\n",
+      "1. 사용자2 Exit Device에 2번 연속 인증",
+      "1. 실시간 로그 진입 > VoIP 통화 중 다이얼 0입력하여 Door Open",
+      "1. 통화 종료 후 사용자1 Entry Device에 인증 시도",
+      "1. 사용자2 Exit Device에 인증 시도",
+      "[Fire Alarm Zone으로 구성된 Door를 VoIP 통화 중 DTMF로 Door Open 시 동작 확인]\n1. 장치상세> SIP 계정 설정 및 Open Door Button을 0 설정 후 저장\n2. voip 통화중 0번 선택",
+      "1. Master Input Port 0 접지",
+      "1. VoIP 통화 중 다이얼 0으로 Door Open",
+      "[Scheduled Lock Zone으로 구성된 Door를 VoIP 통화 중 DTMF로 Door Open 시 동작 확인]\n1. 장치상세> SIP 계정 설정 및 Open Door Button을 0 설정 후 저장\n2. Monitoring > Door Status 진입",
+      "1. VoIP 통화 중 다이얼 0 입력",
+      "1. Scheduled Lock 상태가 종료된 후 VoIP 통화 중 다이얼 0 입력",
+      "[Scheduled Unlock Zone으로 구성된 Door를 VoIP 통화 중 DTMF로 Door Open 시 동작 확인]\n1. 장치상세 > SIP 계정 설정 및 Open Door Button을 0 설정 후 저장\n2. Monitoring > Door Status 진입",
+      "1. VoIP 통화 중 다이얼 0 입력",
+      "1.Scheduled Unlock 종료\n2. VoIP 통화 중 다이얼 0 입력",
+      "[Intrusion Alarm Zone으로 구성된 Door에 경비 중일 경우 Call 버튼 미출력 확인]\n1. 장치상세> SIP 계정 설정 및 Open Door Button을 0 설정 후 저장\n2. Master Input Port 1 접지\n3. 경비진입\n",
+      "[Manual Lock/Unlock 상태의 Door를 VoIP 통화 중 DTMF로 Door Open할 경우 동작 확인]\n1. 장치상세> SIP 계정 설정 및 Open Door Button을 0 설정 후 저장\n2. Monitoring > Door Status>  Manual Lock 버튼 선택",
+      "1. VoIP 통화 중 다이얼 0 입력",
+      "1. Door1을 체크 후 Manual Unlock 버튼 선택",
+      "1. VoIP 통화 중 다이얼 0 입력하여 Door Open 시도",
+      "1. Door1을 체크 후 Release 버튼 선택",
+      "1. VoIP 통화 중 다이얼 0 입력",
+      "[Intercom Microphone Volume 설정 동작 확인]\n1.장치상세>Intercom 사용 설정 후 계정 정보 설정\n2. Advanced > Display/Sound의 Intercom Microphone Volume:0 설정 후 저장\n3.VOIP 통화 연결",
+      "[Intercom Speaker Volume 설정 동작 확인]\n1. 장치상세> Intercom 사용 설정 후 계정 정보 설정\n2. Advanced > Display/Sound의 Intercom Speaker Volume:0 설정\n3. VOIP 통화 연결",
+      "[BioStar에서 IP인터폰 비디오 해상도 설정 및 동작 확인]\n1.장치상세>Intercom Video Resolution 설정 후 저장\n2. VOIP 통화 연결\n3. Intercom Video Resolution 해상도 저장"
+    ],
+    "data": [
+      "BioStation3 (Master, VoIP 통화 장치)\nL BioStation3 (Slave)\n\n5. Master/Slave 장치로 Door 구성",
+      "바이오스타 보안통신:ON",
+      "1. 장치 설정\nMaster 장치 (BS3)\nL Slave 장치(BS3)\n\n2. Door 설정\n-. Entry Device : Master\n-. Exit Device : Slave\n-. Relay : Master Relay 0\n\n3. APB Zone 설정\n-. Name : APB Zone\n-. Anti-passback Type : Hard APB\n-. Entry Devices : Master\n-. Exit Devices : Slave",
+      "1. 장치 설정\nMaster 장치 (BS3)\nL Slave 장치(BS3)\n\n2. Door 설정\n-. Name : Door1\n-. Entry Device : Master\n-. Exit Device : Slave\n-. Relay : Master Relay 0\n\n3. Fire Alarm Zone 설정\n-. Name : Fire Alarm Zone\n-. Door : Door1\n-. Device/Input : Master Input Port 0",
+      "1. 장치 설정\nMaster 장치 (BS3)\nL Slave 장치(BS3)\n\n2. Door 설정\n-. Name : Door1\n-. Entry Device : Master\n-. Exit Device : Slave\n-. Relay : Master Relay 0\n\n3. Scheduled Lock Zone 설정\n-. Name : Scheduled Lock Zone\n-. Door : Door1\n-. Schedule : Schedule1 (현재시간 포함, 앞으로 5분 후 스케줄 종료)",
+      "1. 장치 설정\nMaster 장치 (BS3)\nL Slave 장치(BS3)\n\n2. Door 설정\n-. Name : Door1\n-. Entry Device : Master\n-. Exit Device : Slave\n-. Relay : Master Relay 0",
+      "-intercom Microphone Volume (IP 인터폰 마이크 음량) \n- 음량 0/50/100 설정\n",
+      "-Intercom Speaker Volume (IP 인터폰 스피커 음량)\n- 음량 0/50/100 설정",
+      "-Intercom Video Resolution: \n- 360X640\n- 720x480 "
+    ],
+    "expected_result": [
+      "1. import 성공된다.",
+      "1. CSV Import된 내선번호가 모두 출력 됨",
+      "1. Import 성공 된다.",
+      "1. 기존 장치의 Extension Number가 삭제되고 CSV Import된 Extension Number가 출력 됨\n* 사양 : 내선번호 CSV Import는 무조건 Overwrite",
+      "1. 에러 팝업이 출력되고 CSV Import가 되지 않음",
+      "1. Import 성공 됨",
+      "1. 128개의 내선번호가 출력 됨\n",
+      "1. 에러 팝업이 출력되고 CSV Import가 되지 않음",
+      "1. Import 성공 됨",
+      "1. Number의 자리수가 32자를 초과하지 않고 Name이 48자를 초과하지 않는 내선번호 출력 됨",
+      "1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
+      "1. 사용자가 전송되어도 VoIP 통화에 영향을 미치지 않음",
+      "1. 사용자가 삭제되어도 VoIP 통화에 영향을 미치지 않음",
+      "1. 인증 성공되며 출입문이 열림\n2. VoIP 통화 이상 없음",
+      "1. 인증 성공되며 출입문이 열림\n2. VoIP 통화 이상 없음",
+      "1. VoIP 통화 동작 됨\n",
+      "1. VoIP 통화 동작 됨",
+      "1. VoIP 영상통화 정상 동작 됨",
+      "1. VoIP 영상통화 정상 동작 됨",
+      "1. VoIP 영상통화 정상 동작 됨",
+      "1. APB위반으로 인증 실패 및 APB Violation 로그 생성",
+      "1. APB위반으로 인증 실패 및 APB Violation 로그 생성",
+      "1. Door unlocked 로그 출력 및 VoIP에 의한 문열림 로그 출력",
+      "1. APB위반으로 인증 실패 및 APB Violation 로그 생성\n",
+      "1. APB위반으로 인증 실패 및 APB Violation 로그 생성",
+      "1. Door Relay가 Unlocked 되었다가 Door Open Time이후 Locked 됨",
+      "1. Door Status Type이 Emergency Unlock, Door Relay가 Unlocked 출력 됨",
+      "1. Door Status Type이 Emergency Unlock, Door Relay가 Unlocked 출력됨",
+      "1.. Door Status Type이 Schedule Lock, Door Relay가 Locked 출력 됨",
+      "1. Door Status Type이 Schedule Lock, Door Relay가 Locked 출력 유지 됨\n(Sheduled Lock상태임으로)",
+      "1. Door Status Type이 Normal, Door Relay가 Unlocked 출력 됨",
+      "1. Door Status Type이 Schedule Unlock, Door Relay가 Unlocked 출력 됨",
+      "1. Door Status Type이 Schedule Unlock, Door Relay가 Unlocked 유지 됨",
+      "1. Door Status Type이 Normal, Door Relay가 Unlocked 출력 됨",
+      "1. 장치화면에 Call 버튼이 출력되지 않음",
+      "1. Door Status Type이 Operator Lock, Door Relay가 Locked 출력 됨",
+      "1. Door Status Type이 Operator Lock, Door Relay가 Locked 출력 유지 됨",
+      "1. Door Status Type이 Operator Unlock, Door Relay가 Unlocked 출력 됨",
+      "1. Door Status Type이 Operator Unlock, Door Relay가 Unlocked 출력 유지 됨",
+      "1. Door Status Type이 Normal, Door Relay가 Locked 출력 됨",
+      "1. Door Status Type이 Normal, Door Relay가 Unlocked 출력 됨",
+      "1. 통화 시 PC의 MicroSIP에서 장치의 음량이 장치의 마이크 설정에 맞게 출력 됨",
+      "1. 통화 시 음량이 설정에 맞게 출력 됨",
+      "1. 정상적으로 연결되어 선택한 해상도에 맞게 Video및 Audio가 출력 됨"
+    ]
+  }
+}

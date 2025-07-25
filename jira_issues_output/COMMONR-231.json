@@ -1,0 +1,250 @@
+{
+  "id": "COMMONR-231",
+  "content": [
+    [
+      1,
+      "1. Interlock Zone 추가\n2. 한쪽 출입문에 Door Open 발생\n3. 반대쪽 출입문에 Forced Door Open 발생",
+      "",
+      "1. Interlock Zone의 경우 인증으로만 컨트롤된다.\n=> Interlock door open denied 알람이 설정된 경우 해당 알람 발생.\n※ 문열림된 상태에서 반대편 문이 열렸다고 해서 이전에 열렸던 문이 닫히진 않는다."
+    ],
+    [
+      2,
+      "1. 타 Zone 생성> CoreStaton 하위 장치들로 구성된 Door로 구성\n2. 타 Zone에 추가된 Door를 Interlock Zone에 추가",
+      "타 Zone 생성\n> APB Zone\n> Schedule Lock/Unlock Zone\n> FireAlarm Zone\n> Intrusion Alarm Zone",
+      "1. FireAlarm Zone을 제외한 Zone들과는 중복으로 설정불가하다.\n=> FireAlarm Zone과는 중복으로 설정가능하다."
+    ],
+    [
+      3,
+      "1. Interlock Zone 추가\n2. Active/Inactive 설정\n3. 한쪽문이 열려있는 상태에서 반대편 문에 인증시도\n4. \"재실 중 인증제한\" Input 접지 후 인증시도",
+      "",
+      "1. Active시 Interlock Zone 조건에 의해 인증제한으로 동작한다.\n2. Inactive시 Interlock Zone 조건에 영향을 받지않고 인증성공으로 동작한다."
+    ],
+    [
+      4,
+      "1. Interlock Zone 생성\n2. 한쪽 출입문에 Relay On 발생\n3. 반대쪽 출입문에 인증시도",
+      "",
+      "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다."
+    ],
+    [
+      5,
+      "1. Interlock Zone 생성\n2. 한쪽 출입문에 Door Open 발생\n3. 반대쪽 출입문에 인증시도",
+      "",
+      "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다."
+    ],
+    [
+      6,
+      "1. Interlock Zone 생성\n2. 한쪽 출입문에 Relay On 발생\n3. 반대쪽 출입문에 Exit 버튼으로 출입시도",
+      "",
+      "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다."
+    ],
+    [
+      7,
+      "1. Interlock Zone 생성\n2. 한쪽 출입문에 Door Open 발생\n3. 반대쪽 출입문에 Exit 버튼으로 출입시도",
+      "",
+      "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다."
+    ],
+    [
+      8,
+      "1. Interlock Zone 추가\n2. 출입문 및 재실 중 인증제한 옵션 설정\n3. \"재실 중 인증제한\" Input 접지\n4. 인증시도",
+      "재실시 인증제한 옵션\n: 최대 4개 지원",
+      "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.\n> Interlock Violation, Alarm - 인증 시도 장치만"
+    ],
+    [
+      9,
+      "1. Interlock Zone 추가\n2. 출입문 및 재실 중 인증제한 옵션 설정\n3. \"재실 중 인증제한\" Input 접지\n4. Exit 버튼으로 출입시도",
+      "",
+      "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.\n> Interlock Violation, Alarm - 인증 시도 장치만"
+    ],
+    [
+      10,
+      "1. Interlock Zone 생성\n2. Alarm 설정\n3. 한쪽 출입문에 Relay On 발생\n4. 반대쪽 출입문에 인증시도",
+      "Alarm\n> Event: Interlock door open denied\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
+      "1. 설정한 Alarm이 발생한다."
+    ],
+    [
+      11,
+      "1. Interlock Zone 추가\n2. A/B Door 설정\n3. \"Interlock door open denied\" Alarm 설정\n4. A Door의 Entry Device에 인증\n5. Relay Off전 A Door의 Exit Device에 인증",
+      "Door\nA Door - Entry/Exit Device 설정\nB Door - Entry/Exit Device 설정\n\nAlarm\n> Event: Interlock door open denied\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
+      "1. 설정한 Alarm이 발생한다.\n> 출력로그 확인 후 기재예정"
+    ],
+    [
+      12,
+      "1. Interlock Zone 생성\n2. Alarm 설정\n3. 한쪽 출입문에 Door Open 발생\n4. 반대쪽 출입문에 인증시도",
+      "Alarm\n> Event: Interlock door open denied\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
+      "1. 설정한 Alarm이 발생한다."
+    ],
+    [
+      13,
+      "1. Interlock Zone 생성\n2. Alarm 설정\n3. 한쪽 출입문에 Relay On 발생\n4. 반대쪽 출입문에 Exit 버튼으로 출입시도",
+      "Alarm\n> Event: Interlock door open denied\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
+      "1. 설정한 Alarm이 발생한다."
+    ],
+    [
+      14,
+      "1. Interlock Zone 생성\n2. Alarm 설정\n3. 한쪽 출입문에 Door Open 발생\n4. 반대쪽 출입문에 Exit 버튼으로 출입시도",
+      "Alarm\n> Event: Interlock door open denied\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
+      "1. 설정한 Alarm이 발생한다."
+    ],
+    [
+      15,
+      "1. Interlock Zone 추가\n2. 재실 중 인증제한 옵션 및 Alarm 설정\n3. \"재실 중 인증제한\" Input 접지\n4. 인증시도",
+      "Alarm\n> Event: 재실 중 인증제한\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
+      "1. 설정한 Alarm이 발생한다."
+    ],
+    [
+      16,
+      "1. Interlock Zone 추가\n2. 재실 중 인증제한 옵션 및 Alarm 설정\n3. \"재실 중 인증제한\" Input 접지\n4. Exit 버튼으로 출입시도",
+      "Alarm\n> Event: 재실 중 인증제한\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
+      "1. 설정한 Alarm이 발생한다."
+    ],
+    [
+      17,
+      "1. Interlock Zone 추가\n2. 등록되지 않은 사용자로 인증시도",
+      "",
+      "1. 인증실패로 동작한다."
+    ],
+    [
+      18,
+      "1. FireAlarm Zone 추가\n2. FireAlarm Zone에 추가한 Door를 Interlock Zone 추가\n3. FireAlarm 발생",
+      "",
+      "1. FireAlarm Zone에 속한 Door의 Relay가 On으로 동작된다.\n※ FireAlarm이 우선순위가 높다."
+    ],
+    [
+      19,
+      "1. FireAlarm Zone 추가\n2. FireAlarm Zone에 추가한 Door를 Interlock Zone 추가\n3. 재실 중 인증제한 옵션 설정\n4. 재실 중 인증제한 옵션의 Input 접지\n5. FireAlarm 발생",
+      "",
+      "1. FireAlarm Zone에 속한 Door의 Relay가 On으로 동작된다.\n※ FireAlarm이 우선순위가 더 높다."
+    ],
+    [
+      20,
+      "1. Interlock Zone 추가\n2. 재실 중 인증제한 옵션 설정\n3. 재실 중 인증제한 옵션의 Input 접지\n4. Door Status에서 Interlock Zone에 속한 Door 선택 후 컨트롤 시도",
+      "",
+      "1. BioStar2 UI에서 Warning 발생해 Noti해준다.\n> Manual Lock/Unlock, Open시 발생\n2. Interlock Zone에 속한 Door Relay에 대해 컨트롤 시킬 수 있다.\n3. 관리자 수동 오픈에 대한 우선순위가 더 높다."
+    ],
+    [
+      21,
+      "1. Interlock Zone 추가\n2. Alarm 설정\n3. Interlock Zone에 의한 Alarm 발생\n4. Interlock Zone 삭제시도",
+      "",
+      "1. Alarm이 발생한 경우에도 삭제가 가능하다.\n   > 선택한 항목을 목록에서 삭제를 하겠냐는 팝업 발생"
+    ],
+    [
+      22,
+      "<APB 설정된 Door 추가된 상태>\n1. Interlock Zone 생성\n2. Door 선택",
+      "",
+      "1. Door에 APB 설정된 경우 Interlock Zone의 출입문 설정 UI에서 해당출입문 미표시된다.\n> BioStar2 Spec."
+    ],
+    [
+      23,
+      "1. Interlock Zone 생성\n2. Alarm 설정\n3. Held Open Alarm 발생\n4. (Door Open 유지상태) Interlock Zone 설정된 Door에 인증해 Alarm 발생\n5. Interlock Zone에 설정된 Alarm으로 동작되는지 여부 확인",
+      "출입문\n> Held Open Alarm 설정\n: Output(= Relay On) \n: Sound or buzzer\n\nInterlock Zone\n> 문열림에 대한 Alarm 설정\n: Output(=Relay Off)\n: Sound or Buzzer\n※출입문의 Alarm에 설정한 포트와 동일포트로 설정",
+      "1. Held Open Alarm이 계속 동작되어야 한다.\n> Held Open Alarm의 Priority가 Interlock Zone Alarm보다 더 높다."
+    ],
+    [
+      24,
+      "1. Interlock Zone 생성\n2. Alarm 설정\n3. Forced Open Alarm 발생\n4. (Door Open 유지상태) Interlock Zone 설정된 Door에 인증해 Alarm 발생\n5. Interlock Zone에 설정된 Alarm으로 동작되는지 여부 확인",
+      "출입문\n> Forced Open Alarm 설정\n: Output(= Relay On)\n: Sound or buzzer\n\nInterlock Zone\n> 문열림에 대한 Alarm 설정\n: Output(=Relay Off)\n: Sound or Buzzer\n※출입문의 Alarm에 설정한 포트와 동일포트로 설정",
+      "1. Forced Open Alarm이 계속 동작되어야 한다.\n> Forced Open Alarm의 Priority가 Interlock Zone Alarm보다 더 높다."
+    ],
+    [
+      25,
+      "1. Interlock Zone 생성\n2. Alarm 설정\n3. Interlock Alarm 발생되도록 동작\n4. Zone Status의 Alarm 출력여부 확인\n5. Interlock Zone 설정변경없이 적용\n6. Zone Status의 Alarm 출력여부 확인",
+      "",
+      "1. Active/Inactive 설정과 무관하게 Alarm 상태를 유지해야 한다."
+    ],
+    [
+      26,
+      "1. Interlock Zone 생성\n2. 두개의 Door에 동시인증시도\n3. Door 개방여부 확인",
+      "",
+      "1. 두 Door가 동시에 개방되지 않아야 한다."
+    ],
+    [
+      27,
+      "1. Interlock Zone 생성\n2. 두개의 Door의 Exit Button 동시 접지시도\n3. Door 개방여부 확인",
+      "",
+      "1. 두 Door가 동시에 개방되지 않아야 한다."
+    ],
+    [
+      28,
+      "1. Interlock Zone 생성\n2. Door Status> Interlock Zone에 설정된 Door 모두선택> 수동개방\n3. Interlock Zone에 속한 임의 Door에 인증시도",
+      "",
+      "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.\n> Interlock Violation - 인증 시도 장치만\n> Alarm - Interlock Zone의 Alarm에 설정된 모든 장치에서"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-231",
+    "description": "",
+    "test_step": [
+      "1. Interlock Zone 추가\n2. 한쪽 출입문에 Door Open 발생\n3. 반대쪽 출입문에 Forced Door Open 발생",
+      "1. 타 Zone 생성> CoreStaton 하위 장치들로 구성된 Door로 구성\n2. 타 Zone에 추가된 Door를 Interlock Zone에 추가",
+      "1. Interlock Zone 추가\n2. Active/Inactive 설정\n3. 한쪽문이 열려있는 상태에서 반대편 문에 인증시도\n4. \"재실 중 인증제한\" Input 접지 후 인증시도",
+      "1. Interlock Zone 생성\n2. 한쪽 출입문에 Relay On 발생\n3. 반대쪽 출입문에 인증시도",
+      "1. Interlock Zone 생성\n2. 한쪽 출입문에 Door Open 발생\n3. 반대쪽 출입문에 인증시도",
+      "1. Interlock Zone 생성\n2. 한쪽 출입문에 Relay On 발생\n3. 반대쪽 출입문에 Exit 버튼으로 출입시도",
+      "1. Interlock Zone 생성\n2. 한쪽 출입문에 Door Open 발생\n3. 반대쪽 출입문에 Exit 버튼으로 출입시도",
+      "1. Interlock Zone 추가\n2. 출입문 및 재실 중 인증제한 옵션 설정\n3. \"재실 중 인증제한\" Input 접지\n4. 인증시도",
+      "1. Interlock Zone 추가\n2. 출입문 및 재실 중 인증제한 옵션 설정\n3. \"재실 중 인증제한\" Input 접지\n4. Exit 버튼으로 출입시도",
+      "1. Interlock Zone 생성\n2. Alarm 설정\n3. 한쪽 출입문에 Relay On 발생\n4. 반대쪽 출입문에 인증시도",
+      "1. Interlock Zone 추가\n2. A/B Door 설정\n3. \"Interlock door open denied\" Alarm 설정\n4. A Door의 Entry Device에 인증\n5. Relay Off전 A Door의 Exit Device에 인증",
+      "1. Interlock Zone 생성\n2. Alarm 설정\n3. 한쪽 출입문에 Door Open 발생\n4. 반대쪽 출입문에 인증시도",
+      "1. Interlock Zone 생성\n2. Alarm 설정\n3. 한쪽 출입문에 Relay On 발생\n4. 반대쪽 출입문에 Exit 버튼으로 출입시도",
+      "1. Interlock Zone 생성\n2. Alarm 설정\n3. 한쪽 출입문에 Door Open 발생\n4. 반대쪽 출입문에 Exit 버튼으로 출입시도",
+      "1. Interlock Zone 추가\n2. 재실 중 인증제한 옵션 및 Alarm 설정\n3. \"재실 중 인증제한\" Input 접지\n4. 인증시도",
+      "1. Interlock Zone 추가\n2. 재실 중 인증제한 옵션 및 Alarm 설정\n3. \"재실 중 인증제한\" Input 접지\n4. Exit 버튼으로 출입시도",
+      "1. Interlock Zone 추가\n2. 등록되지 않은 사용자로 인증시도",
+      "1. FireAlarm Zone 추가\n2. FireAlarm Zone에 추가한 Door를 Interlock Zone 추가\n3. FireAlarm 발생",
+      "1. FireAlarm Zone 추가\n2. FireAlarm Zone에 추가한 Door를 Interlock Zone 추가\n3. 재실 중 인증제한 옵션 설정\n4. 재실 중 인증제한 옵션의 Input 접지\n5. FireAlarm 발생",
+      "1. Interlock Zone 추가\n2. 재실 중 인증제한 옵션 설정\n3. 재실 중 인증제한 옵션의 Input 접지\n4. Door Status에서 Interlock Zone에 속한 Door 선택 후 컨트롤 시도",
+      "1. Interlock Zone 추가\n2. Alarm 설정\n3. Interlock Zone에 의한 Alarm 발생\n4. Interlock Zone 삭제시도",
+      "<APB 설정된 Door 추가된 상태>\n1. Interlock Zone 생성\n2. Door 선택",
+      "1. Interlock Zone 생성\n2. Alarm 설정\n3. Held Open Alarm 발생\n4. (Door Open 유지상태) Interlock Zone 설정된 Door에 인증해 Alarm 발생\n5. Interlock Zone에 설정된 Alarm으로 동작되는지 여부 확인",
+      "1. Interlock Zone 생성\n2. Alarm 설정\n3. Forced Open Alarm 발생\n4. (Door Open 유지상태) Interlock Zone 설정된 Door에 인증해 Alarm 발생\n5. Interlock Zone에 설정된 Alarm으로 동작되는지 여부 확인",
+      "1. Interlock Zone 생성\n2. Alarm 설정\n3. Interlock Alarm 발생되도록 동작\n4. Zone Status의 Alarm 출력여부 확인\n5. Interlock Zone 설정변경없이 적용\n6. Zone Status의 Alarm 출력여부 확인",
+      "1. Interlock Zone 생성\n2. 두개의 Door에 동시인증시도\n3. Door 개방여부 확인",
+      "1. Interlock Zone 생성\n2. 두개의 Door의 Exit Button 동시 접지시도\n3. Door 개방여부 확인",
+      "1. Interlock Zone 생성\n2. Door Status> Interlock Zone에 설정된 Door 모두선택> 수동개방\n3. Interlock Zone에 속한 임의 Door에 인증시도"
+    ],
+    "data": [
+      "타 Zone 생성\n> APB Zone\n> Schedule Lock/Unlock Zone\n> FireAlarm Zone\n> Intrusion Alarm Zone",
+      "재실시 인증제한 옵션\n: 최대 4개 지원",
+      "Alarm\n> Event: Interlock door open denied\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
+      "Door\nA Door - Entry/Exit Device 설정\nB Door - Entry/Exit Device 설정\n\nAlarm\n> Event: Interlock door open denied\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
+      "Alarm\n> Event: Interlock door open denied\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
+      "Alarm\n> Event: Interlock door open denied\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
+      "Alarm\n> Event: Interlock door open denied\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
+      "Alarm\n> Event: 재실 중 인증제한\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
+      "Alarm\n> Event: 재실 중 인증제한\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
+      "출입문\n> Held Open Alarm 설정\n: Output(= Relay On) \n: Sound or buzzer\n\nInterlock Zone\n> 문열림에 대한 Alarm 설정\n: Output(=Relay Off)\n: Sound or Buzzer\n※출입문의 Alarm에 설정한 포트와 동일포트로 설정",
+      "출입문\n> Forced Open Alarm 설정\n: Output(= Relay On)\n: Sound or buzzer\n\nInterlock Zone\n> 문열림에 대한 Alarm 설정\n: Output(=Relay Off)\n: Sound or Buzzer\n※출입문의 Alarm에 설정한 포트와 동일포트로 설정"
+    ],
+    "expected_result": [
+      "1. Interlock Zone의 경우 인증으로만 컨트롤된다.\n=> Interlock door open denied 알람이 설정된 경우 해당 알람 발생.\n※ 문열림된 상태에서 반대편 문이 열렸다고 해서 이전에 열렸던 문이 닫히진 않는다.",
+      "1. FireAlarm Zone을 제외한 Zone들과는 중복으로 설정불가하다.\n=> FireAlarm Zone과는 중복으로 설정가능하다.",
+      "1. Active시 Interlock Zone 조건에 의해 인증제한으로 동작한다.\n2. Inactive시 Interlock Zone 조건에 영향을 받지않고 인증성공으로 동작한다.",
+      "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.",
+      "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.",
+      "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.",
+      "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.",
+      "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.\n> Interlock Violation, Alarm - 인증 시도 장치만",
+      "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.\n> Interlock Violation, Alarm - 인증 시도 장치만",
+      "1. 설정한 Alarm이 발생한다.",
+      "1. 설정한 Alarm이 발생한다.\n> 출력로그 확인 후 기재예정",
+      "1. 설정한 Alarm이 발생한다.",
+      "1. 설정한 Alarm이 발생한다.",
+      "1. 설정한 Alarm이 발생한다.",
+      "1. 설정한 Alarm이 발생한다.",
+      "1. 설정한 Alarm이 발생한다.",
+      "1. 인증실패로 동작한다.",
+      "1. FireAlarm Zone에 속한 Door의 Relay가 On으로 동작된다.\n※ FireAlarm이 우선순위가 높다.",
+      "1. FireAlarm Zone에 속한 Door의 Relay가 On으로 동작된다.\n※ FireAlarm이 우선순위가 더 높다.",
+      "1. BioStar2 UI에서 Warning 발생해 Noti해준다.\n> Manual Lock/Unlock, Open시 발생\n2. Interlock Zone에 속한 Door Relay에 대해 컨트롤 시킬 수 있다.\n3. 관리자 수동 오픈에 대한 우선순위가 더 높다.",
+      "1. Alarm이 발생한 경우에도 삭제가 가능하다.\n   > 선택한 항목을 목록에서 삭제를 하겠냐는 팝업 발생",
+      "1. Door에 APB 설정된 경우 Interlock Zone의 출입문 설정 UI에서 해당출입문 미표시된다.\n> BioStar2 Spec.",
+      "1. Held Open Alarm이 계속 동작되어야 한다.\n> Held Open Alarm의 Priority가 Interlock Zone Alarm보다 더 높다.",
+      "1. Forced Open Alarm이 계속 동작되어야 한다.\n> Forced Open Alarm의 Priority가 Interlock Zone Alarm보다 더 높다.",
+      "1. Active/Inactive 설정과 무관하게 Alarm 상태를 유지해야 한다.",
+      "1. 두 Door가 동시에 개방되지 않아야 한다.",
+      "1. 두 Door가 동시에 개방되지 않아야 한다.",
+      "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.\n> Interlock Violation - 인증 시도 장치만\n> Alarm - Interlock Zone의 Alarm에 설정된 모든 장치에서"
+    ]
+  }
+}

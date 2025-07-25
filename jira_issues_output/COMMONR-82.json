@@ -1,0 +1,69 @@
+{
+  "id": "COMMONR-82",
+  "content": [
+    [
+      1,
+      "<Wiegand Out 장치- 저장된 사용자에 카드ID 등록된 상태>\n1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Wiegand Bypass: Enable 설정\n4. Wiegand Out 장치에 카드인증시도",
+      "인증모드\n> 카드인증모드\n\n카드인증\n> CSN/Wiegand 카드\n",
+      "1. Wiegand Out인 경우 인증하지않고 카드ID를 내보내야 한다.\n> iClass 카드는 PAC Data를 출력\n2 Wiegand Out 장치에 카드입력시 \"띡\"소리만 출력되어야 한다.\n3 카드가 입력수단의 처음인 경우 카드입력시 다음의 인증수단을 입력하지 않더라도 바로 카드ID가 출력되어야 한다."
+    ],
+    [
+      2,
+      "<Wiegand Out 장치- 저장된 사용자에 지문, PIN, 얼굴 등록된 상태>\n1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Wiegand Bypass: Enable 설정\n4. Wiegand Out 장치에 지문 인증시도",
+      "지문지원장치의 인증모드\n> 지문인증모드\n\n첫번째 등록된 카드\n> AOC : 미지원\n> CSN : 지원\n> Wiegand Card : 지원\n> SCC : 지원",
+      "> 복합인증의 경우 모두 수행 후 저장된 카드의 첫번째 카드ID가 출력된다.\n> Wiegand Out 장치에 지문입력시 \"띡\"소리만 출력되어야 한다.\n> 첫번째 등록된 카드가 CSN/SCC인 경우 Wiegand Out으로 동작을 한다.\n: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴 인 경우 24 Byte 카드 ID를 사용하여 출력함\n: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함\n> 첫번째 등록된 카드가 AOC인 경우 Wiegand Out으로 동작하지 않는다."
+    ],
+    [
+      3,
+      "<Wiegand Out 장치- 저장된 사용자에 지문, PIN, 얼굴 등록된 상태>\n1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Wiegand Bypass: Enable 설정\n4. Wiegand Out 장치에 얼굴 인증시도",
+      "얼굴지원 장치의 인증모드\n> 얼굴인증모드\n\n첫번째 등록된 카드\n> AOC : 미지원\n> CSN : 지원\n> Wiegand Card : 지원\n> SCC : 지원",
+      "> 복합인증의 경우 모두 수행 후 저장된 카드의 첫번째 카드ID가 출력된다.\n> Wiegand Out 장치에 얼굴입력시 \"띡\"소리만 출력되어야 한다.\n> 첫번째 등록된 카드가 CSN/SCC인 경우 Wiegand Out으로 동작을 한다.\n: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴 인 경우 24 Byte 카드 ID를 사용하여 출력함\n: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함\n> 첫번째 등록된 카드가 AOC인 경우 Wiegand Out으로 동작하지 않는다."
+    ],
+    [
+      4,
+      "<Wiegand Out 장치- 저장된 사용자에 카드ID, 지문, PIN, 얼굴 등록된 상태>\n1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Wiegand Bypass: Enable 설정\n4. Wiegand Out 장치에 ID 인증시도",
+      "인증모드\n> ID인증모드\n\n첫번째 등록된 카드\n> AOC : 미지원\n> CSN : 지원\n> Wiegand Card : 지원\n> SCC : 지원",
+      "> 복합인증의 경우 모두 수행 후 저장된 카드의 첫번째 카드ID가 출력된다.\n> Wiegand Out 장치에 ID인증모드 입력시 \"띡\"소리만 출력되어야 한다.\n> ID인증모드 입력시 인증하지 않고 저장된 카드의 첫번째 카드ID가 출력되어야 한다.\n> SCC인 경우 24 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴 인 경우 24 Byte 카드 ID를 사용하여 출력함\n: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함\n> AOC인 경우 32 Byte 카드 ID를 사용하여 Wiegand Out으로 동작하지 않는다."
+    ],
+    [
+      5,
+      "1. Wiegand In - Out 연결\n2. Wiegand Out 장치> Wiegand Bypass: Enable 설정\n3. Smart Card로 Wiegand Out 장치에 인증시도",
+      "Smart Card\n> AOC\n> SCC\n> Mobile Card",
+      "1. 인증하지 않고 Bypass되어 카드 ID가 전송되어야 한다.\n2. AOC/SCC로 인증시 In 장치에서는 인증실패로 동작한다.(CSN값으로 IN장치에 들어옴)\n※ CSN값이 사용자에 등록된 경우 인증성공으로 동작.\n3. Wiegand Reader(Out) 장치가 재부팅되면 안된다.\n4. SCC인 경우 24 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴인 경우 24 Byte 카드 ID를 사용하여 출력함\n: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함\n> AOC인 경우 32 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n\n※ 의도치않게 CardID(CSN)와 UserID가 동일한 경우 인증성공으로 동작될 수 있다.\n"
+    ],
+    [
+      6,
+      "[ToM 지원장치] \n1. Wiegand In - Out 연결\n2. Wiegand Out 장치> Wiegand Bypass: Enable 설정\n3. ToM으로 Wiegand Out 장치에 인증시도",
+      "> ToM_AoC\n> ToM_SCC ",
+      "1. 인증하지 않고 Bypass되어 카드 ID가 전송되어야 한다.\n2. AOC/SCC로 인증시 In 장치에서는 인증실패로 동작한다.(CSN값으로 IN장치에 들어옴)\n※ CSN값이 사용자에 등록된 경우 인증성공으로 동작.\n3. Wiegand Reader(Out) 장치가 재부팅되면 안된다.\n\n※ 의도치않게 CardID(CSN)와 UserID가 동일한 경우 인증성공으로 동작될 수 있다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-82",
+    "description": "",
+    "test_step": [
+      "<Wiegand Out 장치- 저장된 사용자에 카드ID 등록된 상태>\n1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Wiegand Bypass: Enable 설정\n4. Wiegand Out 장치에 카드인증시도",
+      "<Wiegand Out 장치- 저장된 사용자에 지문, PIN, 얼굴 등록된 상태>\n1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Wiegand Bypass: Enable 설정\n4. Wiegand Out 장치에 지문 인증시도",
+      "<Wiegand Out 장치- 저장된 사용자에 지문, PIN, 얼굴 등록된 상태>\n1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Wiegand Bypass: Enable 설정\n4. Wiegand Out 장치에 얼굴 인증시도",
+      "<Wiegand Out 장치- 저장된 사용자에 카드ID, 지문, PIN, 얼굴 등록된 상태>\n1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Wiegand Bypass: Enable 설정\n4. Wiegand Out 장치에 ID 인증시도",
+      "1. Wiegand In - Out 연결\n2. Wiegand Out 장치> Wiegand Bypass: Enable 설정\n3. Smart Card로 Wiegand Out 장치에 인증시도",
+      "[ToM 지원장치] \n1. Wiegand In - Out 연결\n2. Wiegand Out 장치> Wiegand Bypass: Enable 설정\n3. ToM으로 Wiegand Out 장치에 인증시도"
+    ],
+    "data": [
+      "인증모드\n> 카드인증모드\n\n카드인증\n> CSN/Wiegand 카드\n",
+      "지문지원장치의 인증모드\n> 지문인증모드\n\n첫번째 등록된 카드\n> AOC : 미지원\n> CSN : 지원\n> Wiegand Card : 지원\n> SCC : 지원",
+      "얼굴지원 장치의 인증모드\n> 얼굴인증모드\n\n첫번째 등록된 카드\n> AOC : 미지원\n> CSN : 지원\n> Wiegand Card : 지원\n> SCC : 지원",
+      "인증모드\n> ID인증모드\n\n첫번째 등록된 카드\n> AOC : 미지원\n> CSN : 지원\n> Wiegand Card : 지원\n> SCC : 지원",
+      "Smart Card\n> AOC\n> SCC\n> Mobile Card",
+      "> ToM_AoC\n> ToM_SCC "
+    ],
+    "expected_result": [
+      "1. Wiegand Out인 경우 인증하지않고 카드ID를 내보내야 한다.\n> iClass 카드는 PAC Data를 출력\n2 Wiegand Out 장치에 카드입력시 \"띡\"소리만 출력되어야 한다.\n3 카드가 입력수단의 처음인 경우 카드입력시 다음의 인증수단을 입력하지 않더라도 바로 카드ID가 출력되어야 한다.",
+      "> 복합인증의 경우 모두 수행 후 저장된 카드의 첫번째 카드ID가 출력된다.\n> Wiegand Out 장치에 지문입력시 \"띡\"소리만 출력되어야 한다.\n> 첫번째 등록된 카드가 CSN/SCC인 경우 Wiegand Out으로 동작을 한다.\n: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴 인 경우 24 Byte 카드 ID를 사용하여 출력함\n: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함\n> 첫번째 등록된 카드가 AOC인 경우 Wiegand Out으로 동작하지 않는다.",
+      "> 복합인증의 경우 모두 수행 후 저장된 카드의 첫번째 카드ID가 출력된다.\n> Wiegand Out 장치에 얼굴입력시 \"띡\"소리만 출력되어야 한다.\n> 첫번째 등록된 카드가 CSN/SCC인 경우 Wiegand Out으로 동작을 한다.\n: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴 인 경우 24 Byte 카드 ID를 사용하여 출력함\n: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함\n> 첫번째 등록된 카드가 AOC인 경우 Wiegand Out으로 동작하지 않는다.",
+      "> 복합인증의 경우 모두 수행 후 저장된 카드의 첫번째 카드ID가 출력된다.\n> Wiegand Out 장치에 ID인증모드 입력시 \"띡\"소리만 출력되어야 한다.\n> ID인증모드 입력시 인증하지 않고 저장된 카드의 첫번째 카드ID가 출력되어야 한다.\n> SCC인 경우 24 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴 인 경우 24 Byte 카드 ID를 사용하여 출력함\n: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함\n> AOC인 경우 32 Byte 카드 ID를 사용하여 Wiegand Out으로 동작하지 않는다.",
+      "1. 인증하지 않고 Bypass되어 카드 ID가 전송되어야 한다.\n2. AOC/SCC로 인증시 In 장치에서는 인증실패로 동작한다.(CSN값으로 IN장치에 들어옴)\n※ CSN값이 사용자에 등록된 경우 인증성공으로 동작.\n3. Wiegand Reader(Out) 장치가 재부팅되면 안된다.\n4. SCC인 경우 24 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴인 경우 24 Byte 카드 ID를 사용하여 출력함\n: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함\n> AOC인 경우 32 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n\n※ 의도치않게 CardID(CSN)와 UserID가 동일한 경우 인증성공으로 동작될 수 있다.\n",
+      "1. 인증하지 않고 Bypass되어 카드 ID가 전송되어야 한다.\n2. AOC/SCC로 인증시 In 장치에서는 인증실패로 동작한다.(CSN값으로 IN장치에 들어옴)\n※ CSN값이 사용자에 등록된 경우 인증성공으로 동작.\n3. Wiegand Reader(Out) 장치가 재부팅되면 안된다.\n\n※ 의도치않게 CardID(CSN)와 UserID가 동일한 경우 인증성공으로 동작될 수 있다."
+    ]
+  }
+}

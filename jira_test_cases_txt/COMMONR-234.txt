@@ -1,5 +1,28 @@
 ■ 이슈 키: COMMONR-234
 ■ 제목: 네트워크 설정을 제외한 리셋 지원
+■ 설명: BioStar2 v2.6.0부터 장치상세정보창에서 네트워크 설정을 제외한 리셋 기능을 추가로 지원한다.(BioStar2 v2.6.0 이전버전까지는 Reset All 기능만 지원함)
+
+> 네트워크 설정을 제외한 리셋 기능을 지원하지 않는 장치에서 해당 기능을 실행할 경우 'Not Supported' 에러가 출력된다.
+> 네트워크 설정을 제외한 리셋 기능 실행시 하위로 연결된 장치(Slave, Wiegand Reader)의 연결상태를 유지한 채 Master 장치의 Config만 초기화된다.
+   => 이때 Wiegand Reader의 Config도 초기화된다.(Wiegand Input, 26BIT Format으로 동작)
+> Door/Zone에 속한/속하지 않은 장치에 대해 네트워크 설정을 제외한 리셋 실행할 경우 Warning 팝업발생하고 리셋을 진행하게되면 Slave/Wiegand Reader 장치 연결상태가 유지된다.(리스트 유지)
+※ BioStar2 V2.6.0에서는 Slave, Wiegand Reader 리스트를 유지하지 않고 삭제된다.(차후 버전에서 수정예정) - FW 내부적으로는 유지됨.
+※ Door/Zone에 속한 장치에 대해 초기화 실행할 경우 초기화하지 못하도록 경고팝업이 발생하고, Door/Zone에 속하지 않은 장치에 대해 초기화시 모두 삭제한다.
+
+※ 네트워크 설정을 제외한 리셋 지원 버전(해당버전부터 지원)
+    > BS2 V1.6.0  / A2 V1.5.0 / CS40 V1.1.0 / BEP2 V1.1.0 / BSL2 V1.3.0 / BEW2 V1.2.0 / BLN2 V1.0.0 / FS2 V1.1.0
+
+※ 해당 기능에 대해서는 하위 버전과의 호환성이 보장되지 않는다.
+
+{panel:title=초기화/네트워크 설정 제외 리셋 동작/공장 초기화}
+||항목||Slave, Wiegand Reader||TimeZone, DST||Data 암호화 Key, SSL 인증서/Key||RS 485 Key, Card Key||
+|Reset All(초기화)|삭제|유지|유지, Secure Tamper 유지|삭제(Default Key 변경)|
+|Reset All Without Network(네트워크 설정 제외 리셋)|유지|유지|유지, Secure Tamper 유지|RS 485 Key 유지(Slave, Wiegand Reader 장치 유지), Card Key 삭제(Default Key 변경)|
+|Factory Default(공장 초기화)|삭제|삭제|삭제(Default Key 변경)|삭제(Default Key 변경)|
+{panel}
+
+
+
 ============================================================
 
 ■ 테스트 스텝

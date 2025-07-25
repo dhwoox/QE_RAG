@@ -1,5 +1,20 @@
 ■ 이슈 키: COMMONR-371
 ■ 제목: [BSX지원기능][BDP-962] Real Time Status of all devices connected to BioStar 3
+■ 설명: https://jira.suprema.co.kr/browse/BDP-962
+ https://jira.suprema.co.kr/browse/BDP-1002(BSS용)
+
+[https://teams.microsoft.com/l/message/19:ecc0d14090004f94a316ff252d8726ca@thread.tacv2/1738713072175?tenantId=5303b6fd-d5c2-4a9e-b1cf-b03b0162bd4d&groupId=00a70211-1691-4cc6-8fce-2b42e6a8531d&parentMessageId=1738713072175&teamName=Product%20Management&channelName=BioStar%203%20Deploy&createdTime=1738713072175&ngc=true]
+ 위의 링크 참고해 TC 작성예정
+
+Door 설정 후 TC 수행
+ > Reader/Relay/Exit Button/Door Sensor 기본적으로 설정
+
+Input 검증을 할 때 하기와 같이 진행
+ > Normal Input & Supervised Input 확인하는 케이스 진행
+ > Supervised Input 포트는 Normal Input으로 설정 후 확인하는 케이스 진행
+ > Aux Input을 지원하는 경우 Aux Input에 대한 케이스도 확인
+
+ ※ 글로벌 존의 상태는 바이오스타에서 판단할 수 있기 때문에 제외.
 ============================================================
 
 ■ 테스트 스텝

@@ -1,0 +1,84 @@
+{
+  "id": "COMMONR-79",
+  "content": [
+    [
+      1,
+      "<스케줄 생성된 상태>\n1. Device> Wiegand Reader\n2. Operation Schedule 설정\n3. Full Access 설정\n4. Wiegand Reader에 인증시도",
+      "[BioStar]\nFull Access\n> Enable\n> Disable(Default)",
+      "1. Wiegand Reader가 출입그룹에 포함된 경우 Disable로만 설정되어야 한다.\n2. 인증시 Operation Schedule에 포함된 경우 인증으로 동작되어야 한다.\n3. 인증시 Operation Schedule에 포함되지 않은 경우 잘못된 인증모드 이므로 실패로 동작되어야 한다.\n\n(/) 인증성공/실패에 대한 로그가 남아야 한다."
+    ],
+    [
+      2,
+      "<Master-DM20-Wiegand Reader 연결>\n1. Device> Wiegand Reader\n2. Tamper Port 및 Switch Type 설정\n3. Tamper 발생",
+      "[BioStar]\nTamper Port\n> Wiegand Reader의 Tamper 선을 DM20 Input Port로 연결\n\nSwitch Type\n> NO(Normal Open)\n> NC(Normal Close)",
+      "1. Tamper On 로그 발생되어야 한다.\n2. 설정한 DM20의 Tamper Port에서 LED 점등되어야 한다.\nTamper On > 점등\nTamper Off > 멸등"
+    ],
+    [
+      3,
+      "<Tamper 발생상태>\n1. Wiegand Reader에 인증시도",
+      "Tamper On 발생\n> Tamper Port : 접지\n> 브라켓 탈착 ",
+      "1. Lock되어 카드입력이 막혀야 한다."
+    ],
+    [
+      4,
+      "<Tamper 발생상태>\n1. Device>Wiegand Reader>Information> Locked : Unlock\n2. Wiegand Reader에 인증시도",
+      "",
+      "1. Unlock 버튼 클릭시 Lock 해제되어야 한다.\n2. 카드입력을 받아 Wiegand Out으로 동작되어야 한다.\n\n(/) 카드입력에 대한 인증성공/실패 로그가 남아야 한다."
+    ],
+    [
+      5,
+      "<Master-DM20-Wiegand Reader 연결>\n1. Device> Wiegand Reader> Advanced> LED/Buzzer : Green/Buzzer Port\n2. Wiegand Reader에 등록된 사용자로 인증시도\n4. Wiegand Reader에 등록되지 않은 사용자로 인증시도",
+      "[BioStar]\nLED/Buzzer\n> Wiegand Reader의GRN,BEEP 선을 DM20의 Output Port 연결\n\n||LED||Buzzer||\n|Green|Buzzer|",
+      "1. 인증성공시 Green LED Port & BEEP가 발생된다.\n> Buzzer Port : LED 미발생\n2. 인증실패시 Buzzer만 발생한다.\n\n(/) 인증성공/실패에 대한 로그가 남아야 한다."
+    ],
+    [
+      6,
+      "1. Device> Master Device 우클릭> Wiegand Reader 추가\n2. 정보 설정 및 변경\n3. Wiegand Reader 삭제",
+      "",
+      "1. 설정한 값이 저장된다.\n2. Wiegand Reader의 설정/변경/삭제시 다른  Wiegand Reader 연결에 영향을 주지 않는다.\n"
+    ],
+    [
+      7,
+      "<Master-DM20/Slave-Wiegand Reader 연결>\n1. Device> DM20/Slave 우클릭> 삭제시도",
+      "[BioStar]",
+      "1. Slave 삭제시 Wiegand Reader도 같이 삭제되어야 한다."
+    ],
+    [
+      8,
+      "1. Wiegand Out으로 설정한 장치로 카드 스캔 후 등록\n2. 다른 사용자에 등록된 지문입력\n3. Wiegand Out으로 나가는 값 확인",
+      "",
+      "1. 지문인증한 사용자에 저장된 카드ID가 위겐드 포맷에 맞게 출력되어야 한다.\n> FISF-1182"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-79",
+    "description": "",
+    "test_step": [
+      "<스케줄 생성된 상태>\n1. Device> Wiegand Reader\n2. Operation Schedule 설정\n3. Full Access 설정\n4. Wiegand Reader에 인증시도",
+      "<Master-DM20-Wiegand Reader 연결>\n1. Device> Wiegand Reader\n2. Tamper Port 및 Switch Type 설정\n3. Tamper 발생",
+      "<Tamper 발생상태>\n1. Wiegand Reader에 인증시도",
+      "<Tamper 발생상태>\n1. Device>Wiegand Reader>Information> Locked : Unlock\n2. Wiegand Reader에 인증시도",
+      "<Master-DM20-Wiegand Reader 연결>\n1. Device> Wiegand Reader> Advanced> LED/Buzzer : Green/Buzzer Port\n2. Wiegand Reader에 등록된 사용자로 인증시도\n4. Wiegand Reader에 등록되지 않은 사용자로 인증시도",
+      "1. Device> Master Device 우클릭> Wiegand Reader 추가\n2. 정보 설정 및 변경\n3. Wiegand Reader 삭제",
+      "<Master-DM20/Slave-Wiegand Reader 연결>\n1. Device> DM20/Slave 우클릭> 삭제시도",
+      "1. Wiegand Out으로 설정한 장치로 카드 스캔 후 등록\n2. 다른 사용자에 등록된 지문입력\n3. Wiegand Out으로 나가는 값 확인"
+    ],
+    "data": [
+      "[BioStar]\nFull Access\n> Enable\n> Disable(Default)",
+      "[BioStar]\nTamper Port\n> Wiegand Reader의 Tamper 선을 DM20 Input Port로 연결\n\nSwitch Type\n> NO(Normal Open)\n> NC(Normal Close)",
+      "Tamper On 발생\n> Tamper Port : 접지\n> 브라켓 탈착 ",
+      "[BioStar]\nLED/Buzzer\n> Wiegand Reader의GRN,BEEP 선을 DM20의 Output Port 연결\n\n||LED||Buzzer||\n|Green|Buzzer|",
+      "[BioStar]"
+    ],
+    "expected_result": [
+      "1. Wiegand Reader가 출입그룹에 포함된 경우 Disable로만 설정되어야 한다.\n2. 인증시 Operation Schedule에 포함된 경우 인증으로 동작되어야 한다.\n3. 인증시 Operation Schedule에 포함되지 않은 경우 잘못된 인증모드 이므로 실패로 동작되어야 한다.\n\n(/) 인증성공/실패에 대한 로그가 남아야 한다.",
+      "1. Tamper On 로그 발생되어야 한다.\n2. 설정한 DM20의 Tamper Port에서 LED 점등되어야 한다.\nTamper On > 점등\nTamper Off > 멸등",
+      "1. Lock되어 카드입력이 막혀야 한다.",
+      "1. Unlock 버튼 클릭시 Lock 해제되어야 한다.\n2. 카드입력을 받아 Wiegand Out으로 동작되어야 한다.\n\n(/) 카드입력에 대한 인증성공/실패 로그가 남아야 한다.",
+      "1. 인증성공시 Green LED Port & BEEP가 발생된다.\n> Buzzer Port : LED 미발생\n2. 인증실패시 Buzzer만 발생한다.\n\n(/) 인증성공/실패에 대한 로그가 남아야 한다.",
+      "1. 설정한 값이 저장된다.\n2. Wiegand Reader의 설정/변경/삭제시 다른  Wiegand Reader 연결에 영향을 주지 않는다.\n",
+      "1. Slave 삭제시 Wiegand Reader도 같이 삭제되어야 한다.",
+      "1. 지문인증한 사용자에 저장된 카드ID가 위겐드 포맷에 맞게 출력되어야 한다.\n> FISF-1182"
+    ]
+  }
+}

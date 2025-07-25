@@ -1,0 +1,305 @@
+{
+  "id": "COMMONR-325",
+  "content": [
+    [
+      1,
+      "1. 바이오스타의 장치 상세페이지에 진입하여 RTSP를 Enabled로 변경\n2. Address 출력 확인",
+      "",
+      "고정된 주소로 출력 됨 (rtsp://IP/stream)"
+    ],
+    [
+      2,
+      "1. 바이오스타의 장치 상세페이지에 진입하여 RTSP를 Enabled로 변경\n2. ID와 Password를 입력 후 저장\n3. VMS에 ID, PW, RTSP Address를 입력 후 송출 영상 확인",
+      "",
+      "1. 영상이 정상적으로 송출 됨\n2. RTSP 연결 성공 이벤트 로그 생성"
+    ],
+    [
+      3,
+      "바이오스타의 장치 상세페이지에 Network > TCP/IP의 IP Address설정을 변경하여 저장",
+      "",
+      "1. IP주소가 변경되어 RTSP 연결되지 않음\n2. RTSP 연결 해제 이벤트가 생성"
+    ],
+    [
+      4,
+      "1. Network > TCP/IP의 IP Address설정을 변경하여 저장\n2. RTSP의 Address 출력 확인\n3. VMS에 변경된 주소를 입력하여 영상 송출 확인",
+      "",
+      "1. 변경된 IP가 반영되어 주소 출력(rtsp://변경한 IP/stream)\n2. 영상이 정상적으로 송출"
+    ],
+    [
+      5,
+      "1. RTSP : Enable\n2. ID 입력\n3. PW 입력 후 저장\n4. VMS에 ID, PW, Address, Port를 입력 후 송출 영상 확인",
+      "ID 입력\n> 대문자 1 ~ 32자\n> 소문자 1 ~ 32자\n> 숫자 1 ~ 32자\n> 특수문자 '-', '_'포함한 대소문자, 숫자 조합의 32자",
+      "VMS에 실시간 영상이 출력"
+    ],
+    [
+      6,
+      "1. RTSP : Enable\n2. ID 입력\n3. PW 입력 후 저장\n4. VMS에 ID, PW, Address, Port를 입력 후 송출 영상 확인",
+      "PW 입력\n> 소문자 7자+숫자 1자\n> 대문자 31자+숫자 1자\n> 대문자 1자 + 숫자 7자\n> 대문자 1자 + 숫자 31자\n> 소문자 1자 + 숫자 7자\n> 소문자 1자 + 숫자 31자\n> 대문자 1자 + 특수문자 6자 + 숫자 1자\n> 소문자 1자 + 특수문자 30자 + 숫자1자\n\n\n* Password 제약조건 사양 : 8~32자, 최소 알파벳+숫자",
+      "VMS에 실시간 영상이 출력"
+    ],
+    [
+      7,
+      "1. RTSP : Enable\n2. ID와 Password를 입력\n3. Port 출력 확인",
+      "",
+      "554 출력 (장치의 RTSP Port 기본값이 554)"
+    ],
+    [
+      8,
+      "1. RTSP : Enable\n2. ID와 Password를 입력\n3. Port 출력 확인\n4. Port를 설정 후 저장\n5. VMS에 ID, PW, Address, Port를 입력 후 송출 영상 확인",
+      "Port\n> 1\n> 65535",
+      "영상이 정상적으로 송출"
+    ],
+    [
+      9,
+      "1. 바이오스타의 장치 상세페이지에 진입하여 RTSP를 Disabled로 변경하여 저장\n2. VMS에 영상 확인",
+      "",
+      "1. VMS에 실시간 영상이 출력되지 않음 (연결이 해제 됨)\n2. RTSP 연결 해제 이벤트가 생성"
+    ],
+    [
+      10,
+      "1. 장치 상세페이지에 진입하여 RTSP를 Disabled로 변경하여 저장\n2. 장치 상세페이지에 진입하여 RTSP를 Enabled로 변경하여 이전에 사용한 ID와 PW 설정 후 저장",
+      "",
+      "1. VMS에 실시간 영상이 출력\n2. RTSP 연결 성공 이벤트가 생성"
+    ],
+    [
+      11,
+      "1. Biostar2 > Device메뉴 > Slave장치를 선택하여 장치 상세페이지 진입",
+      "",
+      "RTSP 관련 설정이 출력되지 않음"
+    ],
+    [
+      12,
+      "1. VMS에 실시간 영상 출력\n2. VoIP 동작 시 동작 영향 확인",
+      "> VoIP 연결 시도 중\n> VoIP 연결 후 통화 중\n> VoIP 통화 종료 후\n> VoIP 통화 중인 상태를 10분간 유지 후\n> VoIP 통화/종료를 10회 시도",
+      "VMS에 영상 송출에는 영향이 없음"
+    ],
+    [
+      13,
+      "1. VMS에 실시간 영상 출력\n2. Image Log 캡처 이벤트 발생",
+      "> 1회\n> 100회",
+      "1. Image 로그가 정상적으로 생성 됨\n2. VMS에 실시간 영상이 끊김 없이 동작"
+    ],
+    [
+      14,
+      "1. VMS에 실시간 영상 출력\n2. Device to Server로 장치를 추가",
+      "",
+      "장치가 정상적으로 추가되며 VMS에 실시간 영상이 끊김 없이 동작"
+    ],
+    [
+      15,
+      "1. VMS에 실시간 영상 출력\n2. Server to Device로 장치를 추가",
+      "",
+      "장치가 정상적으로 추가되며 VMS에 실시간 영상이 끊김 없이 동작 "
+    ],
+    [
+      16,
+      "1. VMS에 실시간 영상 출력\n2. Biostar2 > Device > Device Tree에서 장치를 우클릭하여 Reboot 선택",
+      "",
+      "부팅 완료 후 VMS와 연결 시 영상이 송출"
+    ],
+    [
+      17,
+      "1. VMS에 실시간 영상 출력\n2. 장치의 Power를 Off/ON",
+      "",
+      "부팅 완료 후 VMS와 연결 시 영상이 송출되어야 함"
+    ],
+    [
+      18,
+      "1. VMS에 실시간 영상 출력\n2. 장치의 LAN 연결 해제 후 재연결",
+      "",
+      "재연결 된 후 VMS와 연결 시 영상이 송출 되어야 함"
+    ],
+    [
+      19,
+      "1. VMS에 실시간 영상 출력\n2. Biostar2 > Device > Device Tree에서 장치를 우클릭하여 Reconnect 선택",
+      "",
+      "VMS에 실시간 영상이 끊김 없이 동작"
+    ],
+    [
+      20,
+      "1. VMS에 실시간 영상 출력\n2. Biostar2 > Device > Device Tree에서 장치를 우클릭하여 Sync Device",
+      "",
+      "VMS에 실시간 영상이 끊김 없이 동작"
+    ],
+    [
+      21,
+      "1. VMS에 실시간 영상 출력\n2. Biostar2 > Device > Device Tree에서 장치를 우클릭하여 Delete Data & Sync Device",
+      "",
+      "VMS에 실시간 영상이 끊김 없이 동작"
+    ],
+    [
+      22,
+      "1. VMS에 실시간 영상 출력\n2. Biostar2 > Device > Device Tree에서 장치를 우클릭하여 Manage Users in Device로 장치의 사용자를 서버로 Upload 선택",
+      "",
+      "VMS에 실시간 영상이 끊김 없이 동작"
+    ],
+    [
+      23,
+      "1. VMS에 실시간 영상 출력\n2. Settings > Security 진입하여 Secure communication with device를 Use로 설정 후 저장",
+      "",
+      "1. RTSP 연결 끊어짐\n2. 재연결 된 후 VMS와 연결 시 영상이 송출 되어야 함\n(보안설정을 변경하면 SSL 구동을 위해 이더넷 링크를 내렸다 올려야 하므로 현재 BSCore 구현상 RTSP도 끊어짐)"
+    ],
+    [
+      24,
+      "\t\n1. VMS에 실시간 영상 출력\n2. Settings > Security 진입하여 Device Hashkey Management를 Use로 설정 후 저장",
+      "",
+      "VMS에 실시간 영상이 끊김 없이 동작 됨"
+    ],
+    [
+      25,
+      "1. VMS에 실시간 영상 출력\n2. Setting > Mobile Access > 장치에 Key 전송",
+      "",
+      "VMS에 실시간 영상이 끊김 없이 동작 됨"
+    ],
+    [
+      26,
+      "1. VMS에 실시간 영상 출력\n2. 바이오스타에서 장치에 저장된 모든 사용자를 삭제",
+      "> 사용자 1000명",
+      "장치의 저장된 사용자를 다수 삭제시에도 VMS에 실시간 영상이 끊김 없이 동작"
+    ],
+    [
+      27,
+      "1. VMS에 실시간 영상 출력\n2. 사용자 메뉴에서 사용자를 선택하여 Transfer To Device로 전송",
+      "> 사용자 1000명",
+      "장치에 다수의 사용자를 추가시에도 VMS에 실시간 영상이 끊김 없이 동작"
+    ],
+    [
+      28,
+      "\t\n1. VMS에 실시간 영상 출력\n2. Biostar2 > 출입그룹을 생성 시 사용자그룹을 All Users선택하여 저장",
+      "",
+      "장치에 저장된 다수의 사용자가 업데이트되어도 VMS에 실시간 영상이 끊김 없이 동작"
+    ],
+    [
+      29,
+      "1. VMS에 실시간 영상 출력\n2. Trigger & Action 설정하여 저장\n3. Input Port 0 접지",
+      "-. Trigger : Input/Master장치 Input Port 0, N/O, 100, Always\n-. Action : Alert Sound, Alarm 1, Loop",
+      "Alarm이 발생하여 Alert Sound가 출력되며, 실시간 영상은 끊김 없이 출력"
+    ],
+    [
+      30,
+      "1. VMS에 실시간 영상 출력\n2. Alarm이 발생하여 Alert Sound가 출력 중\n3. Monitoring > Device Status에서 장치 선택 후 Clear Alarm 선택",
+      "",
+      "Alarm이 Clear 되며, 실시간 영상은 끊김 없이 출력"
+    ],
+    [
+      31,
+      "1. VMS에 실시간 영상 출력\n2. Trigger & Action 설정하여 저장\n3. 등록되지 않은 Card 인증 시도",
+      "-. Trigger : Event/1:1authentication failed(Card)\n-. Action : Disable Device (Master)",
+      "(Master)장치가 잠기며, 실시간 영상은 끊김 없이 출력"
+    ],
+    [
+      32,
+      "1. VMS에 실시간 영상 출력\n2. 잠긴 장치 상세페이지 진입하여 장치를 Unlock",
+      "",
+      "장치가 Unlock되고, 실시간 영상은 끊김 없이 출력"
+    ],
+    [
+      33,
+      "1. VMS에 실시간 영상 출력\n2. Fire Alarm Zone 생성\n3. Fire Alarm이 발생",
+      "",
+      "Fire Alarm이 발생하여 Signal Output이 출력되며, 실시간 영상은 끊김 없이 출력"
+    ],
+    [
+      34,
+      "1. VMS에 실시간 영상 출력\n2. Fire Alarm이 발생\n3. Monitoring > Zone Status에서 Fire Alarm Zone 선택 후 Clear Alarm 선택",
+      "",
+      "Alarm이 Clear 되며, 실시간 영상은 끊김 없이 출력"
+    ],
+    [
+      35,
+      "1. RTSP : Enable\n2. ID와 Password를 입력\n3. Port 출력 확인\n4. Port를 설정 후 저장\n5. RTSP Video Resolution 설정\n6. VMS에 ID, PW, Address, Port를 입력 후 송출 영상 확인",
+      "RTSP Video Resolution\nBS3\n> 180x320(Default)\n> 720x480\n\nF2\n> 360x640(Default)\n> 720x480",
+      "선택한 해상도에 맞게 송출"
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-325",
+    "description": "",
+    "test_step": [
+      "1. 바이오스타의 장치 상세페이지에 진입하여 RTSP를 Enabled로 변경\n2. Address 출력 확인",
+      "1. 바이오스타의 장치 상세페이지에 진입하여 RTSP를 Enabled로 변경\n2. ID와 Password를 입력 후 저장\n3. VMS에 ID, PW, RTSP Address를 입력 후 송출 영상 확인",
+      "바이오스타의 장치 상세페이지에 Network > TCP/IP의 IP Address설정을 변경하여 저장",
+      "1. Network > TCP/IP의 IP Address설정을 변경하여 저장\n2. RTSP의 Address 출력 확인\n3. VMS에 변경된 주소를 입력하여 영상 송출 확인",
+      "1. RTSP : Enable\n2. ID 입력\n3. PW 입력 후 저장\n4. VMS에 ID, PW, Address, Port를 입력 후 송출 영상 확인",
+      "1. RTSP : Enable\n2. ID 입력\n3. PW 입력 후 저장\n4. VMS에 ID, PW, Address, Port를 입력 후 송출 영상 확인",
+      "1. RTSP : Enable\n2. ID와 Password를 입력\n3. Port 출력 확인",
+      "1. RTSP : Enable\n2. ID와 Password를 입력\n3. Port 출력 확인\n4. Port를 설정 후 저장\n5. VMS에 ID, PW, Address, Port를 입력 후 송출 영상 확인",
+      "1. 바이오스타의 장치 상세페이지에 진입하여 RTSP를 Disabled로 변경하여 저장\n2. VMS에 영상 확인",
+      "1. 장치 상세페이지에 진입하여 RTSP를 Disabled로 변경하여 저장\n2. 장치 상세페이지에 진입하여 RTSP를 Enabled로 변경하여 이전에 사용한 ID와 PW 설정 후 저장",
+      "1. Biostar2 > Device메뉴 > Slave장치를 선택하여 장치 상세페이지 진입",
+      "1. VMS에 실시간 영상 출력\n2. VoIP 동작 시 동작 영향 확인",
+      "1. VMS에 실시간 영상 출력\n2. Image Log 캡처 이벤트 발생",
+      "1. VMS에 실시간 영상 출력\n2. Device to Server로 장치를 추가",
+      "1. VMS에 실시간 영상 출력\n2. Server to Device로 장치를 추가",
+      "1. VMS에 실시간 영상 출력\n2. Biostar2 > Device > Device Tree에서 장치를 우클릭하여 Reboot 선택",
+      "1. VMS에 실시간 영상 출력\n2. 장치의 Power를 Off/ON",
+      "1. VMS에 실시간 영상 출력\n2. 장치의 LAN 연결 해제 후 재연결",
+      "1. VMS에 실시간 영상 출력\n2. Biostar2 > Device > Device Tree에서 장치를 우클릭하여 Reconnect 선택",
+      "1. VMS에 실시간 영상 출력\n2. Biostar2 > Device > Device Tree에서 장치를 우클릭하여 Sync Device",
+      "1. VMS에 실시간 영상 출력\n2. Biostar2 > Device > Device Tree에서 장치를 우클릭하여 Delete Data & Sync Device",
+      "1. VMS에 실시간 영상 출력\n2. Biostar2 > Device > Device Tree에서 장치를 우클릭하여 Manage Users in Device로 장치의 사용자를 서버로 Upload 선택",
+      "1. VMS에 실시간 영상 출력\n2. Settings > Security 진입하여 Secure communication with device를 Use로 설정 후 저장",
+      "\t\n1. VMS에 실시간 영상 출력\n2. Settings > Security 진입하여 Device Hashkey Management를 Use로 설정 후 저장",
+      "1. VMS에 실시간 영상 출력\n2. Setting > Mobile Access > 장치에 Key 전송",
+      "1. VMS에 실시간 영상 출력\n2. 바이오스타에서 장치에 저장된 모든 사용자를 삭제",
+      "1. VMS에 실시간 영상 출력\n2. 사용자 메뉴에서 사용자를 선택하여 Transfer To Device로 전송",
+      "\t\n1. VMS에 실시간 영상 출력\n2. Biostar2 > 출입그룹을 생성 시 사용자그룹을 All Users선택하여 저장",
+      "1. VMS에 실시간 영상 출력\n2. Trigger & Action 설정하여 저장\n3. Input Port 0 접지",
+      "1. VMS에 실시간 영상 출력\n2. Alarm이 발생하여 Alert Sound가 출력 중\n3. Monitoring > Device Status에서 장치 선택 후 Clear Alarm 선택",
+      "1. VMS에 실시간 영상 출력\n2. Trigger & Action 설정하여 저장\n3. 등록되지 않은 Card 인증 시도",
+      "1. VMS에 실시간 영상 출력\n2. 잠긴 장치 상세페이지 진입하여 장치를 Unlock",
+      "1. VMS에 실시간 영상 출력\n2. Fire Alarm Zone 생성\n3. Fire Alarm이 발생",
+      "1. VMS에 실시간 영상 출력\n2. Fire Alarm이 발생\n3. Monitoring > Zone Status에서 Fire Alarm Zone 선택 후 Clear Alarm 선택",
+      "1. RTSP : Enable\n2. ID와 Password를 입력\n3. Port 출력 확인\n4. Port를 설정 후 저장\n5. RTSP Video Resolution 설정\n6. VMS에 ID, PW, Address, Port를 입력 후 송출 영상 확인"
+    ],
+    "data": [
+      "ID 입력\n> 대문자 1 ~ 32자\n> 소문자 1 ~ 32자\n> 숫자 1 ~ 32자\n> 특수문자 '-', '_'포함한 대소문자, 숫자 조합의 32자",
+      "PW 입력\n> 소문자 7자+숫자 1자\n> 대문자 31자+숫자 1자\n> 대문자 1자 + 숫자 7자\n> 대문자 1자 + 숫자 31자\n> 소문자 1자 + 숫자 7자\n> 소문자 1자 + 숫자 31자\n> 대문자 1자 + 특수문자 6자 + 숫자 1자\n> 소문자 1자 + 특수문자 30자 + 숫자1자\n\n\n* Password 제약조건 사양 : 8~32자, 최소 알파벳+숫자",
+      "Port\n> 1\n> 65535",
+      "> VoIP 연결 시도 중\n> VoIP 연결 후 통화 중\n> VoIP 통화 종료 후\n> VoIP 통화 중인 상태를 10분간 유지 후\n> VoIP 통화/종료를 10회 시도",
+      "> 1회\n> 100회",
+      "> 사용자 1000명",
+      "> 사용자 1000명",
+      "-. Trigger : Input/Master장치 Input Port 0, N/O, 100, Always\n-. Action : Alert Sound, Alarm 1, Loop",
+      "-. Trigger : Event/1:1authentication failed(Card)\n-. Action : Disable Device (Master)",
+      "RTSP Video Resolution\nBS3\n> 180x320(Default)\n> 720x480\n\nF2\n> 360x640(Default)\n> 720x480"
+    ],
+    "expected_result": [
+      "고정된 주소로 출력 됨 (rtsp://IP/stream)",
+      "1. 영상이 정상적으로 송출 됨\n2. RTSP 연결 성공 이벤트 로그 생성",
+      "1. IP주소가 변경되어 RTSP 연결되지 않음\n2. RTSP 연결 해제 이벤트가 생성",
+      "1. 변경된 IP가 반영되어 주소 출력(rtsp://변경한 IP/stream)\n2. 영상이 정상적으로 송출",
+      "VMS에 실시간 영상이 출력",
+      "VMS에 실시간 영상이 출력",
+      "554 출력 (장치의 RTSP Port 기본값이 554)",
+      "영상이 정상적으로 송출",
+      "1. VMS에 실시간 영상이 출력되지 않음 (연결이 해제 됨)\n2. RTSP 연결 해제 이벤트가 생성",
+      "1. VMS에 실시간 영상이 출력\n2. RTSP 연결 성공 이벤트가 생성",
+      "RTSP 관련 설정이 출력되지 않음",
+      "VMS에 영상 송출에는 영향이 없음",
+      "1. Image 로그가 정상적으로 생성 됨\n2. VMS에 실시간 영상이 끊김 없이 동작",
+      "장치가 정상적으로 추가되며 VMS에 실시간 영상이 끊김 없이 동작",
+      "장치가 정상적으로 추가되며 VMS에 실시간 영상이 끊김 없이 동작 ",
+      "부팅 완료 후 VMS와 연결 시 영상이 송출",
+      "부팅 완료 후 VMS와 연결 시 영상이 송출되어야 함",
+      "재연결 된 후 VMS와 연결 시 영상이 송출 되어야 함",
+      "VMS에 실시간 영상이 끊김 없이 동작",
+      "VMS에 실시간 영상이 끊김 없이 동작",
+      "VMS에 실시간 영상이 끊김 없이 동작",
+      "VMS에 실시간 영상이 끊김 없이 동작",
+      "1. RTSP 연결 끊어짐\n2. 재연결 된 후 VMS와 연결 시 영상이 송출 되어야 함\n(보안설정을 변경하면 SSL 구동을 위해 이더넷 링크를 내렸다 올려야 하므로 현재 BSCore 구현상 RTSP도 끊어짐)",
+      "VMS에 실시간 영상이 끊김 없이 동작 됨",
+      "VMS에 실시간 영상이 끊김 없이 동작 됨",
+      "장치의 저장된 사용자를 다수 삭제시에도 VMS에 실시간 영상이 끊김 없이 동작",
+      "장치에 다수의 사용자를 추가시에도 VMS에 실시간 영상이 끊김 없이 동작",
+      "장치에 저장된 다수의 사용자가 업데이트되어도 VMS에 실시간 영상이 끊김 없이 동작",
+      "Alarm이 발생하여 Alert Sound가 출력되며, 실시간 영상은 끊김 없이 출력",
+      "Alarm이 Clear 되며, 실시간 영상은 끊김 없이 출력",
+      "(Master)장치가 잠기며, 실시간 영상은 끊김 없이 출력",
+      "장치가 Unlock되고, 실시간 영상은 끊김 없이 출력",
+      "Fire Alarm이 발생하여 Signal Output이 출력되며, 실시간 영상은 끊김 없이 출력",
+      "Alarm이 Clear 되며, 실시간 영상은 끊김 없이 출력",
+      "선택한 해상도에 맞게 송출"
+    ]
+  }
+}

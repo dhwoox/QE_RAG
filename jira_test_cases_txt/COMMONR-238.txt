@@ -1,5 +1,41 @@
 ■ 이슈 키: COMMONR-238
 ■ 제목: Ethernet Zone - Fire Alarm Zone
+■ 설명: Entrance Limit & Fire Alarm Zone
+> 동일 Zone ID로 설정 가능 하나, 구성 시 비정상 종료 가능
+> 동일 장치 ID로 서로 다른 Zone ID 구성 요청
+> Master/Member - Master/Default 모드 장치만, Slave 제외
+
+최신 FirmWare 지원 가능 SDK 필요
+*{color:#d04437}> SDK> BSDemo.exe 필요{color}*
+
+검증 범위 및 구성
+TCP Listen Port : 51214(SDK Recommend)
+Max Zone : 2개 확인(Master/Member, Member)
+> 8개 설정 가능
+> Master/Member 설정 가능
+> 1개의 구역 : Max 64개 Reader 포함
+> 스케줄 : Max 24 / 인증 가능 횟수 : Max 255
+Fire Alarm Input Sensor : Member Only Setting
+> Max 8개  
+: All Member Door Open
+: Fire Alarm On, Fire Alarm Event Log - Member
+: Fire Alarm Log - Master
+Clear Alarm : 정상 동작
+Master Rebooting
+: Door Unlock 유지
+: Alarm 발생
+Door - Member Only Setting
+> Max 8개 
+Max : 미확인
+Master
+> 검증용 Device(M)-P2/BS2/OM120(S)
+Member
+> 검증용 Device(M)
+
+Test 진행 전 환경설정
+> BioStar 를 이용해 User, Door, Access Group 사전 생성 및 장치 전송 
+> Device Viewer를 통해 Door ID 및 Access Group ID 체크
+> (바이오스타에 장치 추가된 상태) 바이오스타 설정 창에서 서버구동 Stop
 ============================================================
 
 ■ 테스트 스텝

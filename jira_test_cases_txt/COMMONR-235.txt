@@ -1,5 +1,17 @@
 ■ 이슈 키: COMMONR-235
 ■ 제목: Validation Check - Auth Timeout, Msg Timeout, Scan Timeout, Matching Timeout, Enrollment Timeout
+■ 설명: AuthTimeout, MsgTimeout, ScanTimeout, MatchingTimeout, Enrollment Time 설정값에 대해 유효한 값의 범위를 벗어나는 경우 기본값을 유지하도록 기능 추가
+> AutoTest Tool 이용
+※ 인증모드에 대해서는 유효성 검사 제외
+
+유효성 검사 대상
+> Master/Slave/Wiegand Reader
+
+아래와 같이 환경 구성 후 TC 진행
+> 단일장치
+> Master-Slave 연결장치
+> Master-Slave/DM20-Wiegand Reader
+> Master/Default-Wiegand Reader
 ============================================================
 
 ■ 테스트 스텝

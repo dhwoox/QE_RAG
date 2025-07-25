@@ -1,0 +1,177 @@
+{
+  "id": "COMMONR-376",
+  "content": [
+    [
+      1,
+      "1. Extended Door Open Time: Disable 인 사용자로 인증시도",
+      "Door\n> Open Time: 3초\n> Extended Door Open Time: 1~900초 중 임의값 설정",
+      "1. Open Time 으로 동작한다."
+    ],
+    [
+      2,
+      "1. Extended Door Open Time: Enable 인 사용자로 인증시도",
+      "Door\n> Open Time: 3초\n> Extended Door Open Time: 1~900초(기본값 : 10) 중 임의값 설정(ex. 30초)",
+      "1. Extended Door Open Time으로 동작한다."
+    ],
+    [
+      3,
+      "[Door 설정된 상태]\n1. 바이오스타\n2. User> List에서 2명 이상 선택\n2. Batch Edit\n3. Extended Door Open Time: Enable 설정 후 적용\n4. Batch Edit으로 설정해준 사용자로 인증시도",
+      "사용자 동기화 옵션\n: 모든장치",
+      "1. 설정한 값으로 저장된다.\n2. 인증시 Extended Door Open Time으로 동작한다."
+    ],
+    [
+      4,
+      "[Door 설정된 상태]\n1. 바이오스타\n2. User> List에서 2명 이상 선택\n2. Batch Edit\n3. Extended Door Open Time: Disable 설정 후 적용\n4. Batch Edit으로 설정해준 사용자로 인증시도",
+      "사용자 동기화 옵션\n: 모든장치",
+      "1. 설정한 값으로 저장된다.\n2. 인증시 Open Time으로 동작한다."
+    ],
+    [
+      5,
+      "[Door 설정된 상태]\n1. 바이오스타\n2. User> List에서 2명 이상 선택\n2. Batch Edit\n3. Extended Door Open Time: Enable 설정 후 적용\n4. Batch Edit으로 설정해준 사용자로 인증시도",
+      "사용자 동기화 옵션\n: 특정장치",
+      "1. 설정한 값으로 저장된다.\n2. 인증시 Extended Door Open Time으로 동작한다."
+    ],
+    [
+      6,
+      "[Door 설정된 상태]\n1. 바이오스타\n2. User> List에서 2명 이상 선택\n2. Batch Edit\n3. Extended Door Open Time: Disable 설정 후 적용\n4. Batch Edit으로 설정해준 사용자로 인증시도",
+      "사용자 동기화 옵션\n: 특정장치",
+      "1. 설정한 값으로 저장된다.\n2. 인증시 Open Time으로 동작한다."
+    ],
+    [
+      7,
+      "[Door 설정된 상태]\n1. Extended Door Open Time: Enable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Disable 설정된 사용자 인증",
+      "Door 설정값\n> Open Time: 5초\n> Extended Door Open Time : 30초\n> 이중인증 미설정",
+      "1. 마지막 유저 인증으로부터 Unlock 으로 5초간 동작한다."
+    ],
+    [
+      8,
+      "[Door 설정된 상태]\n1. Extended Door Open Time: Enable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Enable 설정된 사용자 인증",
+      "Door 설정값\n> Open Time: 5초\n> Extended Door Open Time : 30초\n> 이중인증 미설정",
+      "1. 마지막 유저 인증으로부터 Unlock 으로 30초간 동작한다."
+    ],
+    [
+      9,
+      "[Door 설정된 상태]\n1. Extended Door Open Time: Disable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Enable 설정된 사용자 인증",
+      "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초\n> 이중인증 미설정",
+      "1. 마지막 유저 인증으로부터 Unlock 으로 30초간 동작한다."
+    ],
+    [
+      10,
+      "[Door 설정된 상태]\n1. Extended Door Open Time: Disable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Disable 설정된 사용자 인증",
+      "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초\n> 이중인증 미설정",
+      "1. 마지막 유저 인증으로부터 Unlock 으로 10초간 동작한다."
+    ],
+    [
+      11,
+      "[Door 설정된 상태]\n1. Extended Door Open Time: Enable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Disable 설정된 사용자 인증",
+      "Door 설정값\n> Open Time: 5초\n> Extended Door Open Time : 30초\n> 이중인증 설정",
+      "1. Unlock 으로 30초간 동작한다.\n※ Extended Door Open TIme 설정된 유저와 같이 이중인증 시에 Extended Door Open Time으로 동작하는 것이 현재 사양임"
+    ],
+    [
+      12,
+      "[Door 설정된 상태]\n1. Extended Door Open Time: Enable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Enable 설정된 사용자 인증",
+      "Door 설정값\n> Open Time: 5초\n> Extended Door Open Time : 30초\n> 이중인증 설정",
+      "1. 마지막 유저 인증으로부터 Unlock 으로 30초간 동작한다."
+    ],
+    [
+      13,
+      "[Door 설정된 상태]\n1. Extended Door Open Time: Disable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Enable 설정된 사용자 인증",
+      "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초\n> 이중인증 설정",
+      "1. 마지막 유저 인증으로부터 Unlock 으로 30초간 동작한다."
+    ],
+    [
+      14,
+      "[Door 설정된 상태]\n1. Extended Door Open Time: Disable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Disable 설정된 사용자 인증",
+      "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초\n> 이중인증 설정",
+      "1. 마지막 유저 인증으로부터 Unlock 으로 10초간 동작한다."
+    ],
+    [
+      15,
+      "[Door 설정된 상태]\n1. Door에 Exit Button 설정 후 저장\n1. Exit Button 접지",
+      "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초",
+      "1. Unlock으로 10초간 동작 (Extended Door Open Time이 아닌 Door Open Time으로 동작한다)"
+    ],
+    [
+      16,
+      "[Door 설정된 상태]\n1. Door에 Door Sensor, Exit Button 설정 후 저장\n1. Door Sensor + Exit Button 접지",
+      "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초",
+      "1. Unlock으로 10초간 동작(Extended Door Open Time이 아닌 Door Open Time으로 동작한다)"
+    ],
+    [
+      17,
+      "[지원 - 미지원 동작]\n1. Biostar > User > Extended Door Open Time : Enable\n2. Biostar > Door > Extended Door Open Time : 10초 설정\n3. Door에 Entry : Master, Exit : Slave, Relay : Slave 설정 후에 1.에서 설정한 user에 저장된 Credential로 인증",
+      "Master : Extended Door Open Time 지원하는 FW\nSlave : Extended Door Open Time 미지원하는 장치 / FW",
+      "1. Extended Door Open Time으로 동작한다."
+    ],
+    [
+      18,
+      "[미지원 - 지원 동작]\n1. Biostar > User > Extended Door Open Time : Enable\n2. Biostar > Door > Extended Door Open Time : 10초 설정\n3. Door에 Entry : Master, Exit : Slave, Relay : Slave 설정 후에 1.에서 설정한 user에 저장된 Credential로 인증",
+      "Master : Extended Door Open Time 미지원하는 FW\nSlave : Extended Door Open Time 지원하는 FW",
+      "1. Open Time으로 동작한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-376",
+    "description": "",
+    "test_step": [
+      "1. Extended Door Open Time: Disable 인 사용자로 인증시도",
+      "1. Extended Door Open Time: Enable 인 사용자로 인증시도",
+      "[Door 설정된 상태]\n1. 바이오스타\n2. User> List에서 2명 이상 선택\n2. Batch Edit\n3. Extended Door Open Time: Enable 설정 후 적용\n4. Batch Edit으로 설정해준 사용자로 인증시도",
+      "[Door 설정된 상태]\n1. 바이오스타\n2. User> List에서 2명 이상 선택\n2. Batch Edit\n3. Extended Door Open Time: Disable 설정 후 적용\n4. Batch Edit으로 설정해준 사용자로 인증시도",
+      "[Door 설정된 상태]\n1. 바이오스타\n2. User> List에서 2명 이상 선택\n2. Batch Edit\n3. Extended Door Open Time: Enable 설정 후 적용\n4. Batch Edit으로 설정해준 사용자로 인증시도",
+      "[Door 설정된 상태]\n1. 바이오스타\n2. User> List에서 2명 이상 선택\n2. Batch Edit\n3. Extended Door Open Time: Disable 설정 후 적용\n4. Batch Edit으로 설정해준 사용자로 인증시도",
+      "[Door 설정된 상태]\n1. Extended Door Open Time: Enable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Disable 설정된 사용자 인증",
+      "[Door 설정된 상태]\n1. Extended Door Open Time: Enable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Enable 설정된 사용자 인증",
+      "[Door 설정된 상태]\n1. Extended Door Open Time: Disable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Enable 설정된 사용자 인증",
+      "[Door 설정된 상태]\n1. Extended Door Open Time: Disable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Disable 설정된 사용자 인증",
+      "[Door 설정된 상태]\n1. Extended Door Open Time: Enable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Disable 설정된 사용자 인증",
+      "[Door 설정된 상태]\n1. Extended Door Open Time: Enable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Enable 설정된 사용자 인증",
+      "[Door 설정된 상태]\n1. Extended Door Open Time: Disable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Enable 설정된 사용자 인증",
+      "[Door 설정된 상태]\n1. Extended Door Open Time: Disable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Disable 설정된 사용자 인증",
+      "[Door 설정된 상태]\n1. Door에 Exit Button 설정 후 저장\n1. Exit Button 접지",
+      "[Door 설정된 상태]\n1. Door에 Door Sensor, Exit Button 설정 후 저장\n1. Door Sensor + Exit Button 접지",
+      "[지원 - 미지원 동작]\n1. Biostar > User > Extended Door Open Time : Enable\n2. Biostar > Door > Extended Door Open Time : 10초 설정\n3. Door에 Entry : Master, Exit : Slave, Relay : Slave 설정 후에 1.에서 설정한 user에 저장된 Credential로 인증",
+      "[미지원 - 지원 동작]\n1. Biostar > User > Extended Door Open Time : Enable\n2. Biostar > Door > Extended Door Open Time : 10초 설정\n3. Door에 Entry : Master, Exit : Slave, Relay : Slave 설정 후에 1.에서 설정한 user에 저장된 Credential로 인증"
+    ],
+    "data": [
+      "Door\n> Open Time: 3초\n> Extended Door Open Time: 1~900초 중 임의값 설정",
+      "Door\n> Open Time: 3초\n> Extended Door Open Time: 1~900초(기본값 : 10) 중 임의값 설정(ex. 30초)",
+      "사용자 동기화 옵션\n: 모든장치",
+      "사용자 동기화 옵션\n: 모든장치",
+      "사용자 동기화 옵션\n: 특정장치",
+      "사용자 동기화 옵션\n: 특정장치",
+      "Door 설정값\n> Open Time: 5초\n> Extended Door Open Time : 30초\n> 이중인증 미설정",
+      "Door 설정값\n> Open Time: 5초\n> Extended Door Open Time : 30초\n> 이중인증 미설정",
+      "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초\n> 이중인증 미설정",
+      "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초\n> 이중인증 미설정",
+      "Door 설정값\n> Open Time: 5초\n> Extended Door Open Time : 30초\n> 이중인증 설정",
+      "Door 설정값\n> Open Time: 5초\n> Extended Door Open Time : 30초\n> 이중인증 설정",
+      "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초\n> 이중인증 설정",
+      "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초\n> 이중인증 설정",
+      "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초",
+      "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초",
+      "Master : Extended Door Open Time 지원하는 FW\nSlave : Extended Door Open Time 미지원하는 장치 / FW",
+      "Master : Extended Door Open Time 미지원하는 FW\nSlave : Extended Door Open Time 지원하는 FW"
+    ],
+    "expected_result": [
+      "1. Open Time 으로 동작한다.",
+      "1. Extended Door Open Time으로 동작한다.",
+      "1. 설정한 값으로 저장된다.\n2. 인증시 Extended Door Open Time으로 동작한다.",
+      "1. 설정한 값으로 저장된다.\n2. 인증시 Open Time으로 동작한다.",
+      "1. 설정한 값으로 저장된다.\n2. 인증시 Extended Door Open Time으로 동작한다.",
+      "1. 설정한 값으로 저장된다.\n2. 인증시 Open Time으로 동작한다.",
+      "1. 마지막 유저 인증으로부터 Unlock 으로 5초간 동작한다.",
+      "1. 마지막 유저 인증으로부터 Unlock 으로 30초간 동작한다.",
+      "1. 마지막 유저 인증으로부터 Unlock 으로 30초간 동작한다.",
+      "1. 마지막 유저 인증으로부터 Unlock 으로 10초간 동작한다.",
+      "1. Unlock 으로 30초간 동작한다.\n※ Extended Door Open TIme 설정된 유저와 같이 이중인증 시에 Extended Door Open Time으로 동작하는 것이 현재 사양임",
+      "1. 마지막 유저 인증으로부터 Unlock 으로 30초간 동작한다.",
+      "1. 마지막 유저 인증으로부터 Unlock 으로 30초간 동작한다.",
+      "1. 마지막 유저 인증으로부터 Unlock 으로 10초간 동작한다.",
+      "1. Unlock으로 10초간 동작 (Extended Door Open Time이 아닌 Door Open Time으로 동작한다)",
+      "1. Unlock으로 10초간 동작(Extended Door Open Time이 아닌 Door Open Time으로 동작한다)",
+      "1. Extended Door Open Time으로 동작한다.",
+      "1. Open Time으로 동작한다."
+    ]
+  }
+}

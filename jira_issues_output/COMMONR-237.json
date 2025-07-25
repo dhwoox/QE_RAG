@@ -1,0 +1,51 @@
+{
+  "id": "COMMONR-237",
+  "content": [
+    [
+      1,
+      "1. SDK 연동 : 설치 PC에 압축 해제\n> Ethernet Zone 검증이 가능한 SDK의 BSDemo.exe 실행\n2. SSL 설치 여부 설정> No\n> 기능 동작 확인으로 SSL 미설치\n3. 검증용 Device 연결 화면 표시> 2 선택\n> 장치의 IP/Port 입력",
+      "BioStar \n> User, Door, Access Group 사전 생성 및 장치 전송 완료",
+      "1. SDK 연동으로 검증용 Device 연결이 된다.\n> 미지원하는 장치는 연결 후 설정 시 'Can't connect to device(errorCode : BS_SDK_ERROR_CANNOT_FIND_DEVICE)' 발생함"
+    ],
+    [
+      2,
+      "1. Device 연결 완료\n2. Ethernet Zone Master Config 설정 화면 표시> 2 선택\n> Ethernet Zone Master 입력",
+      "BioStar \n> User, Door, Access Group 사전 생성 및 장치 전송 완료",
+      "1. Device Zone Master Config를 설정한다.\n2. Device Zone Master Config 설정 유무 및 정보 확인은 1번을 선택한다.\n> Enable : 1\nDefault : 0 (Disable)\n> Listen Port : 51214"
+    ],
+    [
+      3,
+      "1. Device 연결 완료\n2. Ethernet Zone Config 설정 화면 표시> 4 선택\n> Ethernet Zone 입력",
+      "BioStar \n> User, Door, Access Group 사전 생성 및 장치 전송 완료",
+      "1. Device Zone Config를 설정한다.\n> Entrance Limit Zone\n2. 각 항목 입력 및 선택 한다.\n> 동일 장치 ID로 Master/Member 설정 가능\n3. Device Zone Entrance Limit Zone 설정 유무 및 정보 확인은 3번을 선택한다."
+    ],
+    [
+      4,
+      "<장치간 RS485 연결/TCP 연결 => Door 구성>\n1. Device Zone> Entrance Limit Zone\n2. 각각의 항목 설정 후 저장\n3. Master/Member 인증> Entrance Limit Alarm 발생\n4. Master 장치 Reboot 시도> Reboot 후 동작 확인",
+      "BioStar \n> User, Door, Access Group 사전 생성 및 장치 전송 완료",
+      "1. 시간대별, 위반, In Case Of Disconnect_Master(Member 인증), Bypass Group에 대한 Event 및 Alarm이 동작 된다.\n> Event - Entrance Violation, Entrance Alarm, Entrance Alarm Clear\n> Alarm - Sound, Relay Action\n2. Master가 재부팅 되는 경우, 이전 인증 정보와 상태는 유지 되지 않는 다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-237",
+    "description": "",
+    "test_step": [
+      "1. SDK 연동 : 설치 PC에 압축 해제\n> Ethernet Zone 검증이 가능한 SDK의 BSDemo.exe 실행\n2. SSL 설치 여부 설정> No\n> 기능 동작 확인으로 SSL 미설치\n3. 검증용 Device 연결 화면 표시> 2 선택\n> 장치의 IP/Port 입력",
+      "1. Device 연결 완료\n2. Ethernet Zone Master Config 설정 화면 표시> 2 선택\n> Ethernet Zone Master 입력",
+      "1. Device 연결 완료\n2. Ethernet Zone Config 설정 화면 표시> 4 선택\n> Ethernet Zone 입력",
+      "<장치간 RS485 연결/TCP 연결 => Door 구성>\n1. Device Zone> Entrance Limit Zone\n2. 각각의 항목 설정 후 저장\n3. Master/Member 인증> Entrance Limit Alarm 발생\n4. Master 장치 Reboot 시도> Reboot 후 동작 확인"
+    ],
+    "data": [
+      "BioStar \n> User, Door, Access Group 사전 생성 및 장치 전송 완료",
+      "BioStar \n> User, Door, Access Group 사전 생성 및 장치 전송 완료",
+      "BioStar \n> User, Door, Access Group 사전 생성 및 장치 전송 완료",
+      "BioStar \n> User, Door, Access Group 사전 생성 및 장치 전송 완료"
+    ],
+    "expected_result": [
+      "1. SDK 연동으로 검증용 Device 연결이 된다.\n> 미지원하는 장치는 연결 후 설정 시 'Can't connect to device(errorCode : BS_SDK_ERROR_CANNOT_FIND_DEVICE)' 발생함",
+      "1. Device Zone Master Config를 설정한다.\n2. Device Zone Master Config 설정 유무 및 정보 확인은 1번을 선택한다.\n> Enable : 1\nDefault : 0 (Disable)\n> Listen Port : 51214",
+      "1. Device Zone Config를 설정한다.\n> Entrance Limit Zone\n2. 각 항목 입력 및 선택 한다.\n> 동일 장치 ID로 Master/Member 설정 가능\n3. Device Zone Entrance Limit Zone 설정 유무 및 정보 확인은 3번을 선택한다.",
+      "1. 시간대별, 위반, In Case Of Disconnect_Master(Member 인증), Bypass Group에 대한 Event 및 Alarm이 동작 된다.\n> Event - Entrance Violation, Entrance Alarm, Entrance Alarm Clear\n> Alarm - Sound, Relay Action\n2. Master가 재부팅 되는 경우, 이전 인증 정보와 상태는 유지 되지 않는 다."
+    ]
+  }
+}

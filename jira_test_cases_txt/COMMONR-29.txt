@@ -1,5 +1,18 @@
 ■ 이슈 키: COMMONR-29
 ■ 제목: 인증 - ID
+■ 설명: ID 인증모드에서의 동작에 이상이 없는지 확인(설정 및 인증)
+ > FL : ID 인증 설정 미지원, Admin : 지원, Private Auth : ID 관련 설정 정보 확인
+ > Group, TA, Job Code, Zone : 미지원
+
+동작 사양 : Slave에서 설정할 수 있는 항목은 설정대로 동작함 
+ Auth. TimeOut - 각각 설정한 대로 동작 
+ Matching TimeOut - 각각 설정한 대로 동작 
+ Msg . TimeOut - 각각 설정한 대로 동작 
+ Scan. TimeOut - 각각 설정한 대로 동작
+
+ 
+
+* ExtendedAuth 적용 (F2 - FW ver 1.0.0)
 ============================================================
 
 ■ 테스트 스텝

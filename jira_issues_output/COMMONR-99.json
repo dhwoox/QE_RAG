@@ -1,0 +1,69 @@
+{
+  "id": "COMMONR-99",
+  "content": [
+    [
+      1,
+      "1. DEVICE > 장치 선택 > Authentication > Fingerprint > Fingerprint LFD 설정 > Apply",
+      "*Master, Slave 모두 확인\n\n1. Fingerprint LFD\n> Not Use\n> Strict\n> More Strict\n> Most Strict",
+      "1. 설정한 값이 저장된다.\n2. 서버매칭 지원한다.\n> BEWIIFWDI-263 참고"
+    ],
+    [
+      2,
+      "1. Fingerprint LFD 설정\n2. 위조지문으로 인증시도\n3. UI상 출력되는 문구 확인",
+      "1. Fingerprint LFD\n> Not Use\n> Strict\n> More Strict\n> Most Strict ",
+      "1. Not Use: 위조지문으로 동작하지 않는다.\n2. Not Use 외 설정: 위조지문으로 인증시 인증 실패가 발생해야 한다.\n> 지문 추출 과정 중 빨리 때었을 때, 재시도 안내 표시 : “위조 지문 여부를 검사하고 있습니다. LED 빛이 끝날 때 까지 지문을 입력하세요”출력 - 미구현 상태\n\n※ LCD가 없는 장치의 경우 지문 추출 과정 중 빨리 때었을 때, 아무런 Action이 발생하지 않는다."
+    ],
+    [
+      3,
+      "1. Fingerprint LFD 설정\n2. 인증모드 설정\n3. 위조지문으로 인증시도",
+      "*Master, Slave 모두 확인\n\n1. 인증모드\n> 개인인증모드\n\n2. Fingerprint LFD\n> Strict\n> More Strict\n> Most Strict ",
+      "1. 위조지문으로 인증시 인증 실패가 발생해야 한다.\n\n[바이오스타 로그]\n> Strict의 경우 Authentication Failed(Bad Fingerprint Placement) 3회 출력 후  Fake Fingerprint Detected 출력\n> More/Most Strict의 경우 Authentication Failed(Bad Fingerprint Placement) 5회 출력 후  Fake Fingerprint Detected 출력\n\n[장치 로그]\n> Strict의 경우 화면에는 Access Denied 3회 발생 후 Fake Finger Detected 출력 : Event Log - Fake Finger Detected 3회 발생 후 Access Denied 1회 발생\n\n> More /Most Strict의 경우 화면에는 Access Denied 5회 발생 후 Fake Finger Detected 출력 : Event Log - Fake Finger Detected 5회 발생 후 Access Denied 1회 발생"
+    ],
+    [
+      4,
+      "[Door_이중인증 설정된 상태]\n1. Fingerprint LFD 설정\n2. 이중인증 설정된 장치에 인증시도",
+      "*Master, Slave 모두 확인\n\n1. Fingerprint LFD\n> Strict\n> More Strict\n> Most Strict ",
+      "1. 위조지문으로 인증시 인증 실패가 발생해야 한다.\n\n[바이오스타 로그]\n> Strict의 경우 Authentication Failed(Bad Fingerprint Placement) 3회 출력 후  Fake Fingerprint Detected 출력\n> More/Most Strict의 경우 Authentication Failed(Bad Fingerprint Placement) 5회 출력 후  Fake Fingerprint Detected 출력\n\n[장치 로그]\n> Strict의 경우 화면에는 Access Denied 3회 발생 후 Fake Finger Detected 출력 : Event Log - Fake Finger Detected 3회 발생 후 Access Denied 1회 발생\n\n> More /Most Strict의 경우 화면에는 Access Denied 5회 발생 후 Fake Finger Detected 출력 : Event Log - Fake Finger Detected 5회 발생 후 Access Denied 1회 발생"
+    ],
+    [
+      5,
+      "1. Fingerprint LFD 설정\n2. 사용자 추가> 지문입력시 위조지문으로 입력시도",
+      "*Master, Slave 모두 확인\n\n1. Fingerprint LFD\n> Not Use\n> Strict\n> More Strict\n> Most Strict ",
+      "1. Not Use 설정시 위조 지문에 영향 없이 정상적으로 지문 등록이 된다.\n2. Not Use 제외 설정 후 위조지문으로 등록 시 지문 입력 실패가 발생한다.\n> 지문 추출 과정 중 빨리 때었을 때, 재시도 안내 표시 : “위조 지문 여부를 검사하고 있습니다. LED 빛이 끝날 때 까지 지문을 입력하세요”- 미구현 상태\n> 지문 등록 중 위조 지문 검출 시 :  출입거부 로그는 저장하지 않고 위조 지문 검출 로그 저장\n> FSF2(S) 위조 지문 스캔 시 FSF2(M)에 Extract Fail 팝업\n> Fake Finger Detected (BioStar 미표시)\n: Authentication failed (Bad fingerprint placement) 저장\n> Fake Finger Detected (장치 로그)\n: Strict의 경우 위조지문 3회이상 입력시 해당 로그 출력\n: More /Most Strict의 경우 위조지문 5회이상 입력시 해당 로그 출력\n3. 위조 지문 설정이 지문 스캔 속도에 영향이 없어야 한다."
+    ],
+    [
+      6,
+      "1. Fingerprint LFD 설정\n2. 실제 LFD 동작여부를 확인\n3. LFD를 설정한 장치를 재부팅한다.\n4. 재부팅 후 LFD 설정이 저장되어 있는지 확인 후 해당 동작 확인. ",
+      "*Master, Slave 모두 확인\n\n1. Fingerprint LFD\n> Not Use\n> Strict\n> More Strict\n> Most Strict ",
+      "1. Not Use 설정시 위조 지문에 영향 없이 정상적으로 지문 등록이 된다.\n2.[Not Use 제외 설정] 위조지문으로 등록 후 인증 시도 시지문 입력 실패가 발생한다.\n > 지문 등록 중 위조 지문 검출 시 :  출입거부 로그는 저장하지 않고 위조 지문 검출 로그 저장\n> FSF2(S) 위조 지문 스캔 시 FSF2(M)에 Extract Fail 팝업\n > Fake Finger Detected (BioStar 미표시)\n : Authentication failed (Bad fingerprint placement) 저장\n > Fake Finger Detected (장치 로그)\n : Strict의 경우 위조지문 3회이상 입력시 해당 로그 출력\n : More /Most Strict의 경우 위조지문 5회이상 입력시 해당 로그 출력\n 3. 위조 지문 설정이 지문 스캔 속도에 영향이 없어야 한다."
+    ]
+  ],
+  "metadata": {
+    "key": "COMMONR-99",
+    "description": "",
+    "test_step": [
+      "1. DEVICE > 장치 선택 > Authentication > Fingerprint > Fingerprint LFD 설정 > Apply",
+      "1. Fingerprint LFD 설정\n2. 위조지문으로 인증시도\n3. UI상 출력되는 문구 확인",
+      "1. Fingerprint LFD 설정\n2. 인증모드 설정\n3. 위조지문으로 인증시도",
+      "[Door_이중인증 설정된 상태]\n1. Fingerprint LFD 설정\n2. 이중인증 설정된 장치에 인증시도",
+      "1. Fingerprint LFD 설정\n2. 사용자 추가> 지문입력시 위조지문으로 입력시도",
+      "1. Fingerprint LFD 설정\n2. 실제 LFD 동작여부를 확인\n3. LFD를 설정한 장치를 재부팅한다.\n4. 재부팅 후 LFD 설정이 저장되어 있는지 확인 후 해당 동작 확인. "
+    ],
+    "data": [
+      "*Master, Slave 모두 확인\n\n1. Fingerprint LFD\n> Not Use\n> Strict\n> More Strict\n> Most Strict",
+      "1. Fingerprint LFD\n> Not Use\n> Strict\n> More Strict\n> Most Strict ",
+      "*Master, Slave 모두 확인\n\n1. 인증모드\n> 개인인증모드\n\n2. Fingerprint LFD\n> Strict\n> More Strict\n> Most Strict ",
+      "*Master, Slave 모두 확인\n\n1. Fingerprint LFD\n> Strict\n> More Strict\n> Most Strict ",
+      "*Master, Slave 모두 확인\n\n1. Fingerprint LFD\n> Not Use\n> Strict\n> More Strict\n> Most Strict ",
+      "*Master, Slave 모두 확인\n\n1. Fingerprint LFD\n> Not Use\n> Strict\n> More Strict\n> Most Strict "
+    ],
+    "expected_result": [
+      "1. 설정한 값이 저장된다.\n2. 서버매칭 지원한다.\n> BEWIIFWDI-263 참고",
+      "1. Not Use: 위조지문으로 동작하지 않는다.\n2. Not Use 외 설정: 위조지문으로 인증시 인증 실패가 발생해야 한다.\n> 지문 추출 과정 중 빨리 때었을 때, 재시도 안내 표시 : “위조 지문 여부를 검사하고 있습니다. LED 빛이 끝날 때 까지 지문을 입력하세요”출력 - 미구현 상태\n\n※ LCD가 없는 장치의 경우 지문 추출 과정 중 빨리 때었을 때, 아무런 Action이 발생하지 않는다.",
+      "1. 위조지문으로 인증시 인증 실패가 발생해야 한다.\n\n[바이오스타 로그]\n> Strict의 경우 Authentication Failed(Bad Fingerprint Placement) 3회 출력 후  Fake Fingerprint Detected 출력\n> More/Most Strict의 경우 Authentication Failed(Bad Fingerprint Placement) 5회 출력 후  Fake Fingerprint Detected 출력\n\n[장치 로그]\n> Strict의 경우 화면에는 Access Denied 3회 발생 후 Fake Finger Detected 출력 : Event Log - Fake Finger Detected 3회 발생 후 Access Denied 1회 발생\n\n> More /Most Strict의 경우 화면에는 Access Denied 5회 발생 후 Fake Finger Detected 출력 : Event Log - Fake Finger Detected 5회 발생 후 Access Denied 1회 발생",
+      "1. 위조지문으로 인증시 인증 실패가 발생해야 한다.\n\n[바이오스타 로그]\n> Strict의 경우 Authentication Failed(Bad Fingerprint Placement) 3회 출력 후  Fake Fingerprint Detected 출력\n> More/Most Strict의 경우 Authentication Failed(Bad Fingerprint Placement) 5회 출력 후  Fake Fingerprint Detected 출력\n\n[장치 로그]\n> Strict의 경우 화면에는 Access Denied 3회 발생 후 Fake Finger Detected 출력 : Event Log - Fake Finger Detected 3회 발생 후 Access Denied 1회 발생\n\n> More /Most Strict의 경우 화면에는 Access Denied 5회 발생 후 Fake Finger Detected 출력 : Event Log - Fake Finger Detected 5회 발생 후 Access Denied 1회 발생",
+      "1. Not Use 설정시 위조 지문에 영향 없이 정상적으로 지문 등록이 된다.\n2. Not Use 제외 설정 후 위조지문으로 등록 시 지문 입력 실패가 발생한다.\n> 지문 추출 과정 중 빨리 때었을 때, 재시도 안내 표시 : “위조 지문 여부를 검사하고 있습니다. LED 빛이 끝날 때 까지 지문을 입력하세요”- 미구현 상태\n> 지문 등록 중 위조 지문 검출 시 :  출입거부 로그는 저장하지 않고 위조 지문 검출 로그 저장\n> FSF2(S) 위조 지문 스캔 시 FSF2(M)에 Extract Fail 팝업\n> Fake Finger Detected (BioStar 미표시)\n: Authentication failed (Bad fingerprint placement) 저장\n> Fake Finger Detected (장치 로그)\n: Strict의 경우 위조지문 3회이상 입력시 해당 로그 출력\n: More /Most Strict의 경우 위조지문 5회이상 입력시 해당 로그 출력\n3. 위조 지문 설정이 지문 스캔 속도에 영향이 없어야 한다.",
+      "1. Not Use 설정시 위조 지문에 영향 없이 정상적으로 지문 등록이 된다.\n2.[Not Use 제외 설정] 위조지문으로 등록 후 인증 시도 시지문 입력 실패가 발생한다.\n > 지문 등록 중 위조 지문 검출 시 :  출입거부 로그는 저장하지 않고 위조 지문 검출 로그 저장\n> FSF2(S) 위조 지문 스캔 시 FSF2(M)에 Extract Fail 팝업\n > Fake Finger Detected (BioStar 미표시)\n : Authentication failed (Bad fingerprint placement) 저장\n > Fake Finger Detected (장치 로그)\n : Strict의 경우 위조지문 3회이상 입력시 해당 로그 출력\n : More /Most Strict의 경우 위조지문 5회이상 입력시 해당 로그 출력\n 3. 위조 지문 설정이 지문 스캔 속도에 영향이 없어야 한다."
+    ]
+  }
+}
