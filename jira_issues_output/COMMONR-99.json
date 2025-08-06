@@ -1,69 +1,1874 @@
 {
-  "id": "COMMONR-99",
-  "content": [
-    [
-      1,
-      "1. DEVICE > 장치 선택 > Authentication > Fingerprint > Fingerprint LFD 설정 > Apply",
-      "*Master, Slave 모두 확인\n\n1. Fingerprint LFD\n> Not Use\n> Strict\n> More Strict\n> Most Strict",
-      "1. 설정한 값이 저장된다.\n2. 서버매칭 지원한다.\n> BEWIIFWDI-263 참고"
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "13366",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/13366",
+  "key": "COMMONR-99",
+  "fields": {
+    "resolution": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/resolution/10000",
+      "id": "10000",
+      "description": "[사용안함] Work has been completed on this issue.",
+      "name": "완료(Done)"
+    },
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "3.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": null,
+    "customfield_10185": null,
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "52025",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/52025",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "61566",
+          "key": "BS2AFW-326",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/61566",
+          "fields": {
+            "summary": "[LFD - Slave Scan Enroll]LFD 사용 상태에서  Slave 장치로 위조 지문으로 등록 시도 시 Fake Finger Detected가 미표시 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/3",
+              "description": "현재 담당자가 이 이슈를 처리하고 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/inprogress.png",
+              "name": "진행 중",
+              "id": "3",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/4",
+                "id": 4,
+                "key": "indeterminate",
+                "colorName": "yellow",
+                "name": "진행 중"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "37613",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/37613",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "47954",
+          "key": "ONYXFW-526",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/47954",
+          "fields": {
+            "summary": "이중인증 설정된 장치에 두번째 인증 위조지문으로 인증 시 인증실패 후 화면에 'Dual Auth'문구 유지",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11316",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11316",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "14937",
+          "key": "TIIDFI-441",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/14937",
+          "fields": {
+            "summary": "LFD, View Image 사용 시 사용자 등록 시 지문 등록 시 View Image가 먼저 동작이 되는 현상으로 위조 지문 감지에 대한 'FACK FINGER DETECT...\"가 미표시 되는현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "53397",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/53397",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "62557",
+          "key": "BEW3FW-154",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/62557",
+          "fields": {
+            "summary": "Door_이중인증 설정된 상태에서 위조지문으로 인증 시 정상 동작하지 않는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13609",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13609",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18932",
+          "key": "BEWIIFWDI-263",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18932",
+          "fields": {
+            "summary": "LFD가 서버매칭 일 경우에도 동작하는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12276",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12276",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16789",
+          "key": "BLIIFWI-451",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16789",
+          "fields": {
+            "summary": "LFD를 설정하고 사용자에 지문 등록시 위조 지문 검출 로그가 남지 않는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12308",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12308",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16850",
+          "key": "BLIIFWI-457",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16850",
+          "fields": {
+            "summary": "위조지문 설정 후 검출시 장치에서 인증 실패라고 표시되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13408",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13408",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18638",
+          "key": "BLIIFWI-559",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18638",
+          "fields": {
+            "summary": "[Tester: 최희욱] LFD 설정된 장치에 위조 지문 인증시, \"Access Denied\" 로그가 3회/5회 입력시에만 발생되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "23081",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/23081",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "29850",
+          "key": "FLFW-309",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/29850",
+          "fields": {
+            "summary": "[Live Finger Detection] FL(M)에  Slave의 LFD 오동작 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19276",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19276",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "24913",
+          "key": "FSTIIFW-801",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/24913",
+          "fields": {
+            "summary": "FS2(M)-A2(S)에서 A2(S)에 LFD 설정 시 적용이 안되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19526",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19526",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "25109",
+          "key": "FSTIIFW-835",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/25109",
+          "fields": {
+            "summary": "[Live Finger Detection] FS2(M) 사용 시 Slave의 LFD 동작 부분 문의 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12310",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12310",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16851",
+          "key": "TIIDFI-624",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16851",
+          "fields": {
+            "summary": "위조지문 사용을 하며 BioStar에서 지문 등록시 실패할때 간헐적으로 Scan Card 창이 사라지지 않는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12312",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12312",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16853",
+          "key": "TIIDFI-625",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16853",
+          "fields": {
+            "summary": "위조지문 사용을 하며 BioStar에서 지문 등록시 실패할때 간헐적으로 Access Denied 창이 사라지지 않는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "55167",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/55167",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "64365",
+          "key": "BLNIIFW-1130",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/64365",
+          "fields": {
+            "summary": "Door_이중인증 설정된 상태에서 위조지문으로 인증 시 정상 동작하지 않는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "32613",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/32613",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "42771",
+          "key": "ONYXFW-350",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/42771",
+          "fields": {
+            "summary": "위조 지문 검출 후 홈 화면 내 메뉴 버튼 사라짐&지문 인식 안됨",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "32611",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/32611",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "42796",
+          "key": "ONYXFW-355",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/42796",
+          "fields": {
+            "summary": "위조 지문 감지 설정 상태에서 지문 추출 과정에 지문을 때었을 때, 안내 팝업 미출력",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "32628",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/32628",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "42804",
+          "key": "ONYXFW-356",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/42804",
+          "fields": {
+            "summary": "위조 지문 1회 입력 시 입력음 출력 후(결과 미출력) 지문 센서는 동작하나 지문 입력이 1분 이상 무감 상태로 동작",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "52513",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/52513",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "62001",
+          "key": "ONYXFW-747",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/62001",
+          "fields": {
+            "summary": "[LFD - Slave Scan Enroll]LFD 사용 상태에서  Slave 장치로 위조 지문으로 등록 시도 시 Fake Finger Detected가 미표시 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10204",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/medium.svg",
+              "name": "Common (B)",
+              "id": "10204"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12004",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12004",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16109",
+          "key": "TIIDFI-572",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16109",
+          "fields": {
+            "summary": "LFD 사용 상태에서 실지문을 입력해도 'Fake Finger Detection'이 발생하여 인증 실패가 발생하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      },
+      {
+        "id": "12199",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12199",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "16599",
+          "key": "BLIIFWI-443",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16599",
+          "fields": {
+            "summary": "[Requirement] 위조지문감지(Live Finger Detection)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12192",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12192",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "16591",
+          "key": "BSIIDII-268",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16591",
+          "fields": {
+            "summary": "[Requirement] 위조지문감지(Live Finger Detection)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12176",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12176",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "16578",
+          "key": "TIIDFI-614",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16578",
+          "fields": {
+            "summary": "[Requirement] 위조지문감지(Live Finger Detection)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10710",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10710",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "13392",
+          "key": "TIIDFI-129",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/13392",
+          "fields": {
+            "summary": "[Requirement] 인증 - 위조지문감지 (Live Finger Detection)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "47010",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/47010",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "55438",
+          "key": "BES-850",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/55438",
+          "fields": {
+            "summary": "Main FW 개발 (LFD)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
+              "id": "5",
+              "description": "이슈의 부작업",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
+              "name": "부작업",
+              "subtask": true,
+              "avatarId": 10316
+            }
+          }
+        }
+      },
+      {
+        "id": "12711",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12711",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17776",
+          "key": "BEWIIFWDI-195",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17776",
+          "fields": {
+            "summary": "위조 지문 검출 로그 전 잘못된 지문 위치 로그가 한번 나오는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12173",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12173",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "16575",
+          "key": "BEWIIFWDI-94",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16575",
+          "fields": {
+            "summary": "[Requirement] 위조지문감지(Live Finger Detection)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12157",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12157",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "15806",
+          "key": "COMMONR-144",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/15806",
+          "fields": {
+            "summary": "LFD Message 및 기능 강화  ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/3",
+              "description": "현재 담당자가 이 이슈를 처리하고 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/inprogress.png",
+              "name": "진행 중",
+              "id": "3",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/4",
+                "id": 4,
+                "key": "indeterminate",
+                "colorName": "yellow",
+                "name": "진행 중"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10101",
+              "id": "10101",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10313&avatarType=issuetype",
+              "name": "Requirement",
+              "subtask": false,
+              "avatarId": 10313
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "1. Fingerprint LFD 설정\n2. 위조지문으로 인증시도\n3. UI상 출력되는 문구 확인",
-      "1. Fingerprint LFD\n> Not Use\n> Strict\n> More Strict\n> Most Strict ",
-      "1. Not Use: 위조지문으로 동작하지 않는다.\n2. Not Use 외 설정: 위조지문으로 인증시 인증 실패가 발생해야 한다.\n> 지문 추출 과정 중 빨리 때었을 때, 재시도 안내 표시 : “위조 지문 여부를 검사하고 있습니다. LED 빛이 끝날 때 까지 지문을 입력하세요”출력 - 미구현 상태\n\n※ LCD가 없는 장치의 경우 지문 추출 과정 중 빨리 때었을 때, 아무런 Action이 발생하지 않는다."
+    "assignee": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 6.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-99/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@1a5400ef[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@2b761131[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@688594fd[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@7361ff45[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@63dd78f9[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@542fbc38[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@1049e83c[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@6caea6a7[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@64bc017b[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@4d5bbfa8[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@120cb637[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@b8eb14f[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": "2016-02-25T13:30:45.000+0900",
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-99/watchers",
+      "watchCount": 3,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-03-31T18:24:26.000+0900",
+    "timeoriginalestimate": null,
+    "description": "위조지문 감지 설정 및 인증 동작에 이상이 없는지 확인 \r\n\r\n=: LFD 지문 추출 과정에 지문을 때었을 때, 재시도 하도록 안내 메시지 필요\r\n=: 위조 지문으로 검출 되었을 때, 관리자가 이를 인지하고 Action을 취할 수 있도록 기능 제공 필요\r\n=: Fake Finger Detected - 서로 전달하는 경우는 위조 지문으로만 연속 입력 3회나, 누적으로 3회 시(실지문이 입력되는 경우, 누적은 초기화 됨)\r\n\r\n지문을 빨리 뗀 경우 아래 메세지 표시(기존 \"Try Again\" 표시되는 상황)\r\n->지문 스캔이 완료될 때까지 손가락을 떼지 마십시오. / Do not remove the finger until it is scanned.\r\n위조지문 검출 시 UI에서는 인증 실패로 처리(위조지문 검출로 표시 하지 않음)\r\n-> 별도 위조 지문 검출 메시지 표시 하지 않는 이유는 \r\n위조 지문 시도하는 사람이 인식하지 못하도록 하며, 실제로 메시지를 보여도\r\n인증 성공률 개선에는 도움이 될 것으로 보이지 않음 \r\n-> 인증 실패로 처리에 따라 유저 스스로 입력 위치 조정 가능 할 것으로 보임\r\n위조지문 Level 에 따라 위조 지문 연속 입력 횟수를 달리함\r\n-> Strict -> 3번의 위조 지문 입력시 검출 로그 생성 \r\n-> More Strict & Most Strict -> 5 번의 위조 지문 입력시 검출 로그 생성\r\n이유는 LFD 성능의 불확실성으로 실지문 오인식 방지 차원 \r\n추후 검토 - 별도 옵션을 통해 연속 입력 횟수 변경 설정 지원 \r\n-> 별도 Time Out은 두지 않음 \r\n이유는 Time Out 으로 위조 지문 검출하지 못하는 것에도 한계가 있음\r\n위조지문 검출 로그 저장시 매칭수행하여 성공한 경우에 해당 사용자의 ID도 같이 저장(매칭 수행 기능은 서버 매칭인 경우에는 지원하지 않음)\r\n지문 등록 중에 위조지문이 검출될 경우 출입거부 로그는 저장하지 않고 위조 지문 검출 로그 저장\r\n1:1 인증 중에도 위조 지문이 입력되면 위조지문 검출루틴이 적용됨(카드+PIN 인증 중에 입력된 위조지문에 대해서는 위조지문 처리 루틴이 적용됨)",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. DEVICE &gt; 장치 선택 &gt; Authentication &gt; Fingerprint &gt; Fingerprint LFD 설정 &gt; Apply</p></td><td><p>*Master, Slave 모두 확인</p>\n\n<p>1. Fingerprint LFD<br/>&gt; Not Use<br/>&gt; Strict<br/>&gt; More Strict<br/>&gt; Most Strict</p></td><td><p>1. 설정한 값이 저장된다.<br/>2. 서버매칭 지원한다.<br/>&gt; <a href=\"https://jira.suprema.co.kr/browse/BEWIIFWDI-263\" title=\"LFD가 서버매칭 일 경우에도 동작하는 현상.\" class=\"issue-link\" data-issue-key=\"BEWIIFWDI-263\"><del>BEWIIFWDI-263</del></a> 참고</p></td></tr><tr><td>2</td><td><p>1. Fingerprint LFD 설정<br/>2. 위조지문으로 인증시도<br/>3. UI상 출력되는 문구 확인</p></td><td><p>1. Fingerprint LFD<br/>&gt; Not Use<br/>&gt; Strict<br/>&gt; More Strict<br/>&gt; Most Strict </p></td><td><p>1. Not Use: 위조지문으로 동작하지 않는다.<br/>2. Not Use 외 설정: 위조지문으로 인증시 인증 실패가 발생해야 한다.<br/>&gt; 지문 추출 과정 중 빨리 때었을 때, 재시도 안내 표시 : “위조 지문 여부를 검사하고 있습니다. LED 빛이 끝날 때 까지 지문을 입력하세요”출력 - 미구현 상태</p>\n\n<p>※ LCD가 없는 장치의 경우 지문 추출 과정 중 빨리 때었을 때, 아무런 Action이 발생하지 않는다.</p></td></tr><tr><td>3</td><td><p>1. Fingerprint LFD 설정<br/>2. 인증모드 설정<br/>3. 위조지문으로 인증시도</p></td><td><p>*Master, Slave 모두 확인</p>\n\n<p>1. 인증모드<br/>&gt; 개인인증모드</p>\n\n<p>2. Fingerprint LFD<br/>&gt; Strict<br/>&gt; More Strict<br/>&gt; Most Strict </p></td><td><p>1. 위조지문으로 인증시 인증 실패가 발생해야 한다.</p>\n\n<p><span class=\"error\">&#91;바이오스타 로그&#93;</span><br/>&gt; Strict의 경우 Authentication Failed(Bad Fingerprint Placement) 3회 출력 후  Fake Fingerprint Detected 출력<br/>&gt; More/Most Strict의 경우 Authentication Failed(Bad Fingerprint Placement) 5회 출력 후  Fake Fingerprint Detected 출력</p>\n\n<p><span class=\"error\">&#91;장치 로그&#93;</span><br/>&gt; Strict의 경우 화면에는 Access Denied 3회 발생 후 Fake Finger Detected 출력 : Event Log - Fake Finger Detected 3회 발생 후 Access Denied 1회 발생</p>\n\n<p>&gt; More /Most Strict의 경우 화면에는 Access Denied 5회 발생 후 Fake Finger Detected 출력 : Event Log - Fake Finger Detected 5회 발생 후 Access Denied 1회 발생</p></td></tr><tr><td>4</td><td><p><span class=\"error\">&#91;Door_이중인증 설정된 상태&#93;</span><br/>1. Fingerprint LFD 설정<br/>2. 이중인증 설정된 장치에 인증시도</p></td><td><p>*Master, Slave 모두 확인</p>\n\n<p>1. Fingerprint LFD<br/>&gt; Strict<br/>&gt; More Strict<br/>&gt; Most Strict </p></td><td><p>1. 위조지문으로 인증시 인증 실패가 발생해야 한다.</p>\n\n<p><span class=\"error\">&#91;바이오스타 로그&#93;</span><br/>&gt; Strict의 경우 Authentication Failed(Bad Fingerprint Placement) 3회 출력 후  Fake Fingerprint Detected 출력<br/>&gt; More/Most Strict의 경우 Authentication Failed(Bad Fingerprint Placement) 5회 출력 후  Fake Fingerprint Detected 출력</p>\n\n<p><span class=\"error\">&#91;장치 로그&#93;</span><br/>&gt; Strict의 경우 화면에는 Access Denied 3회 발생 후 Fake Finger Detected 출력 : Event Log - Fake Finger Detected 3회 발생 후 Access Denied 1회 발생</p>\n\n<p>&gt; More /Most Strict의 경우 화면에는 Access Denied 5회 발생 후 Fake Finger Detected 출력 : Event Log - Fake Finger Detected 5회 발생 후 Access Denied 1회 발생</p></td></tr><tr><td>5</td><td><p>1. Fingerprint LFD 설정<br/>2. 사용자 추가&gt; 지문입력시 위조지문으로 입력시도</p></td><td><p>*Master, Slave 모두 확인</p>\n\n<p>1. Fingerprint LFD<br/>&gt; Not Use<br/>&gt; Strict<br/>&gt; More Strict<br/>&gt; Most Strict </p></td><td><p>1. Not Use 설정시 위조 지문에 영향 없이 정상적으로 지문 등록이 된다.<br/>2. Not Use 제외 설정 후 위조지문으로 등록 시 지문 입력 실패가 발생한다.<br/>&gt; 지문 추출 과정 중 빨리 때었을 때, 재시도 안내 표시 : “위조 지문 여부를 검사하고 있습니다. LED 빛이 끝날 때 까지 지문을 입력하세요”- 미구현 상태<br/>&gt; 지문 등록 중 위조 지문 검출 시 :  출입거부 로그는 저장하지 않고 위조 지문 검출 로그 저장<br/>&gt; FSF2(S) 위조 지문 스캔 시 FSF2(M)에 Extract Fail 팝업<br/>&gt; Fake Finger Detected (BioStar 미표시)<br/>: Authentication failed (Bad fingerprint placement) 저장<br/>&gt; Fake Finger Detected (장치 로그)<br/>: Strict의 경우 위조지문 3회이상 입력시 해당 로그 출력<br/>: More /Most Strict의 경우 위조지문 5회이상 입력시 해당 로그 출력<br/>3. 위조 지문 설정이 지문 스캔 속도에 영향이 없어야 한다.</p></td></tr><tr><td>6</td><td><p>1. Fingerprint LFD 설정<br/>2. 실제 LFD 동작여부를 확인<br/>3. LFD를 설정한 장치를 재부팅한다.<br/>4. 재부팅 후 LFD 설정이 저장되어 있는지 확인 후 해당 동작 확인. </p></td><td><p>*Master, Slave 모두 확인</p>\n\n<p>1. Fingerprint LFD<br/>&gt; Not Use<br/>&gt; Strict<br/>&gt; More Strict<br/>&gt; Most Strict </p></td><td><p>1. Not Use 설정시 위조 지문에 영향 없이 정상적으로 지문 등록이 된다.<br/>2.<span class=\"error\">&#91;Not Use 제외 설정&#93;</span> 위조지문으로 등록 후 인증 시도 시지문 입력 실패가 발생한다.<br/> &gt; 지문 등록 중 위조 지문 검출 시 :  출입거부 로그는 저장하지 않고 위조 지문 검출 로그 저장<br/>&gt; FSF2(S) 위조 지문 스캔 시 FSF2(M)에 Extract Fail 팝업<br/> &gt; Fake Finger Detected (BioStar 미표시)<br/> : Authentication failed (Bad fingerprint placement) 저장<br/> &gt; Fake Finger Detected (장치 로그)<br/> : Strict의 경우 위조지문 3회이상 입력시 해당 로그 출력<br/> : More /Most Strict의 경우 위조지문 5회이상 입력시 해당 로그 출력<br/> 3. 위조 지문 설정이 지문 스캔 속도에 영향이 없어야 한다.</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [
+      "COMMONR-28"
     ],
-    [
-      3,
-      "1. Fingerprint LFD 설정\n2. 인증모드 설정\n3. 위조지문으로 인증시도",
-      "*Master, Slave 모두 확인\n\n1. 인증모드\n> 개인인증모드\n\n2. Fingerprint LFD\n> Strict\n> More Strict\n> Most Strict ",
-      "1. 위조지문으로 인증시 인증 실패가 발생해야 한다.\n\n[바이오스타 로그]\n> Strict의 경우 Authentication Failed(Bad Fingerprint Placement) 3회 출력 후  Fake Fingerprint Detected 출력\n> More/Most Strict의 경우 Authentication Failed(Bad Fingerprint Placement) 5회 출력 후  Fake Fingerprint Detected 출력\n\n[장치 로그]\n> Strict의 경우 화면에는 Access Denied 3회 발생 후 Fake Finger Detected 출력 : Event Log - Fake Finger Detected 3회 발생 후 Access Denied 1회 발생\n\n> More /Most Strict의 경우 화면에는 Access Denied 5회 발생 후 Fake Finger Detected 출력 : Event Log - Fake Finger Detected 5회 발생 후 Access Denied 1회 발생"
-    ],
-    [
-      4,
-      "[Door_이중인증 설정된 상태]\n1. Fingerprint LFD 설정\n2. 이중인증 설정된 장치에 인증시도",
-      "*Master, Slave 모두 확인\n\n1. Fingerprint LFD\n> Strict\n> More Strict\n> Most Strict ",
-      "1. 위조지문으로 인증시 인증 실패가 발생해야 한다.\n\n[바이오스타 로그]\n> Strict의 경우 Authentication Failed(Bad Fingerprint Placement) 3회 출력 후  Fake Fingerprint Detected 출력\n> More/Most Strict의 경우 Authentication Failed(Bad Fingerprint Placement) 5회 출력 후  Fake Fingerprint Detected 출력\n\n[장치 로그]\n> Strict의 경우 화면에는 Access Denied 3회 발생 후 Fake Finger Detected 출력 : Event Log - Fake Finger Detected 3회 발생 후 Access Denied 1회 발생\n\n> More /Most Strict의 경우 화면에는 Access Denied 5회 발생 후 Fake Finger Detected 출력 : Event Log - Fake Finger Detected 5회 발생 후 Access Denied 1회 발생"
-    ],
-    [
-      5,
-      "1. Fingerprint LFD 설정\n2. 사용자 추가> 지문입력시 위조지문으로 입력시도",
-      "*Master, Slave 모두 확인\n\n1. Fingerprint LFD\n> Not Use\n> Strict\n> More Strict\n> Most Strict ",
-      "1. Not Use 설정시 위조 지문에 영향 없이 정상적으로 지문 등록이 된다.\n2. Not Use 제외 설정 후 위조지문으로 등록 시 지문 입력 실패가 발생한다.\n> 지문 추출 과정 중 빨리 때었을 때, 재시도 안내 표시 : “위조 지문 여부를 검사하고 있습니다. LED 빛이 끝날 때 까지 지문을 입력하세요”- 미구현 상태\n> 지문 등록 중 위조 지문 검출 시 :  출입거부 로그는 저장하지 않고 위조 지문 검출 로그 저장\n> FSF2(S) 위조 지문 스캔 시 FSF2(M)에 Extract Fail 팝업\n> Fake Finger Detected (BioStar 미표시)\n: Authentication failed (Bad fingerprint placement) 저장\n> Fake Finger Detected (장치 로그)\n: Strict의 경우 위조지문 3회이상 입력시 해당 로그 출력\n: More /Most Strict의 경우 위조지문 5회이상 입력시 해당 로그 출력\n3. 위조 지문 설정이 지문 스캔 속도에 영향이 없어야 한다."
-    ],
-    [
-      6,
-      "1. Fingerprint LFD 설정\n2. 실제 LFD 동작여부를 확인\n3. LFD를 설정한 장치를 재부팅한다.\n4. 재부팅 후 LFD 설정이 저장되어 있는지 확인 후 해당 동작 확인. ",
-      "*Master, Slave 모두 확인\n\n1. Fingerprint LFD\n> Not Use\n> Strict\n> More Strict\n> Most Strict ",
-      "1. Not Use 설정시 위조 지문에 영향 없이 정상적으로 지문 등록이 된다.\n2.[Not Use 제외 설정] 위조지문으로 등록 후 인증 시도 시지문 입력 실패가 발생한다.\n > 지문 등록 중 위조 지문 검출 시 :  출입거부 로그는 저장하지 않고 위조 지문 검출 로그 저장\n> FSF2(S) 위조 지문 스캔 시 FSF2(M)에 Extract Fail 팝업\n > Fake Finger Detected (BioStar 미표시)\n : Authentication failed (Bad fingerprint placement) 저장\n > Fake Finger Detected (장치 로그)\n : Strict의 경우 위조지문 3회이상 입력시 해당 로그 출력\n : More /Most Strict의 경우 위조지문 5회이상 입력시 해당 로그 출력\n 3. 위조 지문 설정이 지문 스캔 속도에 영향이 없어야 한다."
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-99",
-    "description": "",
-    "test_step": [
-      "1. DEVICE > 장치 선택 > Authentication > Fingerprint > Fingerprint LFD 설정 > Apply",
-      "1. Fingerprint LFD 설정\n2. 위조지문으로 인증시도\n3. UI상 출력되는 문구 확인",
-      "1. Fingerprint LFD 설정\n2. 인증모드 설정\n3. 위조지문으로 인증시도",
-      "[Door_이중인증 설정된 상태]\n1. Fingerprint LFD 설정\n2. 이중인증 설정된 장치에 인증시도",
-      "1. Fingerprint LFD 설정\n2. 사용자 추가> 지문입력시 위조지문으로 입력시도",
-      "1. Fingerprint LFD 설정\n2. 실제 LFD 동작여부를 확인\n3. LFD를 설정한 장치를 재부팅한다.\n4. 재부팅 후 LFD 설정이 저장되어 있는지 확인 후 해당 동작 확인. "
-    ],
-    "data": [
-      "*Master, Slave 모두 확인\n\n1. Fingerprint LFD\n> Not Use\n> Strict\n> More Strict\n> Most Strict",
-      "1. Fingerprint LFD\n> Not Use\n> Strict\n> More Strict\n> Most Strict ",
-      "*Master, Slave 모두 확인\n\n1. 인증모드\n> 개인인증모드\n\n2. Fingerprint LFD\n> Strict\n> More Strict\n> Most Strict ",
-      "*Master, Slave 모두 확인\n\n1. Fingerprint LFD\n> Strict\n> More Strict\n> Most Strict ",
-      "*Master, Slave 모두 확인\n\n1. Fingerprint LFD\n> Not Use\n> Strict\n> More Strict\n> Most Strict ",
-      "*Master, Slave 모두 확인\n\n1. Fingerprint LFD\n> Not Use\n> Strict\n> More Strict\n> Most Strict "
-    ],
-    "expected_result": [
-      "1. 설정한 값이 저장된다.\n2. 서버매칭 지원한다.\n> BEWIIFWDI-263 참고",
-      "1. Not Use: 위조지문으로 동작하지 않는다.\n2. Not Use 외 설정: 위조지문으로 인증시 인증 실패가 발생해야 한다.\n> 지문 추출 과정 중 빨리 때었을 때, 재시도 안내 표시 : “위조 지문 여부를 검사하고 있습니다. LED 빛이 끝날 때 까지 지문을 입력하세요”출력 - 미구현 상태\n\n※ LCD가 없는 장치의 경우 지문 추출 과정 중 빨리 때었을 때, 아무런 Action이 발생하지 않는다.",
-      "1. 위조지문으로 인증시 인증 실패가 발생해야 한다.\n\n[바이오스타 로그]\n> Strict의 경우 Authentication Failed(Bad Fingerprint Placement) 3회 출력 후  Fake Fingerprint Detected 출력\n> More/Most Strict의 경우 Authentication Failed(Bad Fingerprint Placement) 5회 출력 후  Fake Fingerprint Detected 출력\n\n[장치 로그]\n> Strict의 경우 화면에는 Access Denied 3회 발생 후 Fake Finger Detected 출력 : Event Log - Fake Finger Detected 3회 발생 후 Access Denied 1회 발생\n\n> More /Most Strict의 경우 화면에는 Access Denied 5회 발생 후 Fake Finger Detected 출력 : Event Log - Fake Finger Detected 5회 발생 후 Access Denied 1회 발생",
-      "1. 위조지문으로 인증시 인증 실패가 발생해야 한다.\n\n[바이오스타 로그]\n> Strict의 경우 Authentication Failed(Bad Fingerprint Placement) 3회 출력 후  Fake Fingerprint Detected 출력\n> More/Most Strict의 경우 Authentication Failed(Bad Fingerprint Placement) 5회 출력 후  Fake Fingerprint Detected 출력\n\n[장치 로그]\n> Strict의 경우 화면에는 Access Denied 3회 발생 후 Fake Finger Detected 출력 : Event Log - Fake Finger Detected 3회 발생 후 Access Denied 1회 발생\n\n> More /Most Strict의 경우 화면에는 Access Denied 5회 발생 후 Fake Finger Detected 출력 : Event Log - Fake Finger Detected 5회 발생 후 Access Denied 1회 발생",
-      "1. Not Use 설정시 위조 지문에 영향 없이 정상적으로 지문 등록이 된다.\n2. Not Use 제외 설정 후 위조지문으로 등록 시 지문 입력 실패가 발생한다.\n> 지문 추출 과정 중 빨리 때었을 때, 재시도 안내 표시 : “위조 지문 여부를 검사하고 있습니다. LED 빛이 끝날 때 까지 지문을 입력하세요”- 미구현 상태\n> 지문 등록 중 위조 지문 검출 시 :  출입거부 로그는 저장하지 않고 위조 지문 검출 로그 저장\n> FSF2(S) 위조 지문 스캔 시 FSF2(M)에 Extract Fail 팝업\n> Fake Finger Detected (BioStar 미표시)\n: Authentication failed (Bad fingerprint placement) 저장\n> Fake Finger Detected (장치 로그)\n: Strict의 경우 위조지문 3회이상 입력시 해당 로그 출력\n: More /Most Strict의 경우 위조지문 5회이상 입력시 해당 로그 출력\n3. 위조 지문 설정이 지문 스캔 속도에 영향이 없어야 한다.",
-      "1. Not Use 설정시 위조 지문에 영향 없이 정상적으로 지문 등록이 된다.\n2.[Not Use 제외 설정] 위조지문으로 등록 후 인증 시도 시지문 입력 실패가 발생한다.\n > 지문 등록 중 위조 지문 검출 시 :  출입거부 로그는 저장하지 않고 위조 지문 검출 로그 저장\n> FSF2(S) 위조 지문 스캔 시 FSF2(M)에 Extract Fail 팝업\n > Fake Finger Detected (BioStar 미표시)\n : Authentication failed (Bad fingerprint placement) 저장\n > Fake Finger Detected (장치 로그)\n : Strict의 경우 위조지문 3회이상 입력시 해당 로그 출력\n : More /Most Strict의 경우 위조지문 5회이상 입력시 해당 로그 출력\n 3. 위조 지문 설정이 지문 스캔 속도에 영향이 없어야 한다."
-    ]
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 13366,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 31000,
+              "latestFinalId": 31000
+            },
+            {
+              "environment": "ES1",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29830,
+              "latestFinalId": 29830
+            },
+            {
+              "environment": "BioStarV2.9.6.30",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29830,
+              "latestFinalId": 29830
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_190805_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15255,
+              "latestFinalId": 15255
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_190809_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15616,
+              "latestFinalId": 15616
+            }
+          ]
+        },
+        {
+          "group": "FL_V1.0_190515(PS)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 14168,
+              "latestFinalId": 14168
+            }
+          ]
+        },
+        {
+          "group": "V1.7.0_190806_Interaction 7차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15088,
+              "latestFinalId": 15088
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_181119_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12968,
+              "latestFinalId": 12968
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "인증 - 위조지문감지(Live Finger Detection)",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 2152,
+          "index": 1,
+          "step": "1. DEVICE > 장치 선택 > Authentication > Fingerprint > Fingerprint LFD 설정 > Apply",
+          "data": "*Master, Slave 모두 확인\n\n1. Fingerprint LFD\n> Not Use\n> Strict\n> More Strict\n> Most Strict",
+          "result": "1. 설정한 값이 저장된다.\n2. 서버매칭 지원한다.\n> BEWIIFWDI-263 참고",
+          "attachments": []
+        },
+        {
+          "id": 3511,
+          "index": 2,
+          "step": "1. Fingerprint LFD 설정\n2. 위조지문으로 인증시도\n3. UI상 출력되는 문구 확인",
+          "data": "1. Fingerprint LFD\n> Not Use\n> Strict\n> More Strict\n> Most Strict ",
+          "result": "1. Not Use: 위조지문으로 동작하지 않는다.\n2. Not Use 외 설정: 위조지문으로 인증시 인증 실패가 발생해야 한다.\n> 지문 추출 과정 중 빨리 때었을 때, 재시도 안내 표시 : “위조 지문 여부를 검사하고 있습니다. LED 빛이 끝날 때 까지 지문을 입력하세요”출력 - 미구현 상태\n\n※ LCD가 없는 장치의 경우 지문 추출 과정 중 빨리 때었을 때, 아무런 Action이 발생하지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 11085,
+          "index": 3,
+          "step": "1. Fingerprint LFD 설정\n2. 인증모드 설정\n3. 위조지문으로 인증시도",
+          "data": "*Master, Slave 모두 확인\n\n1. 인증모드\n> 개인인증모드\n\n2. Fingerprint LFD\n> Strict\n> More Strict\n> Most Strict ",
+          "result": "1. 위조지문으로 인증시 인증 실패가 발생해야 한다.\n\n[바이오스타 로그]\n> Strict의 경우 Authentication Failed(Bad Fingerprint Placement) 3회 출력 후  Fake Fingerprint Detected 출력\n> More/Most Strict의 경우 Authentication Failed(Bad Fingerprint Placement) 5회 출력 후  Fake Fingerprint Detected 출력\n\n[장치 로그]\n> Strict의 경우 화면에는 Access Denied 3회 발생 후 Fake Finger Detected 출력 : Event Log - Fake Finger Detected 3회 발생 후 Access Denied 1회 발생\n\n> More /Most Strict의 경우 화면에는 Access Denied 5회 발생 후 Fake Finger Detected 출력 : Event Log - Fake Finger Detected 5회 발생 후 Access Denied 1회 발생",
+          "attachments": []
+        },
+        {
+          "id": 11086,
+          "index": 4,
+          "step": "[Door_이중인증 설정된 상태]\n1. Fingerprint LFD 설정\n2. 이중인증 설정된 장치에 인증시도",
+          "data": "*Master, Slave 모두 확인\n\n1. Fingerprint LFD\n> Strict\n> More Strict\n> Most Strict ",
+          "result": "1. 위조지문으로 인증시 인증 실패가 발생해야 한다.\n\n[바이오스타 로그]\n> Strict의 경우 Authentication Failed(Bad Fingerprint Placement) 3회 출력 후  Fake Fingerprint Detected 출력\n> More/Most Strict의 경우 Authentication Failed(Bad Fingerprint Placement) 5회 출력 후  Fake Fingerprint Detected 출력\n\n[장치 로그]\n> Strict의 경우 화면에는 Access Denied 3회 발생 후 Fake Finger Detected 출력 : Event Log - Fake Finger Detected 3회 발생 후 Access Denied 1회 발생\n\n> More /Most Strict의 경우 화면에는 Access Denied 5회 발생 후 Fake Finger Detected 출력 : Event Log - Fake Finger Detected 5회 발생 후 Access Denied 1회 발생",
+          "attachments": []
+        },
+        {
+          "id": 2723,
+          "index": 5,
+          "step": "1. Fingerprint LFD 설정\n2. 사용자 추가> 지문입력시 위조지문으로 입력시도",
+          "data": "*Master, Slave 모두 확인\n\n1. Fingerprint LFD\n> Not Use\n> Strict\n> More Strict\n> Most Strict ",
+          "result": "1. Not Use 설정시 위조 지문에 영향 없이 정상적으로 지문 등록이 된다.\n2. Not Use 제외 설정 후 위조지문으로 등록 시 지문 입력 실패가 발생한다.\n> 지문 추출 과정 중 빨리 때었을 때, 재시도 안내 표시 : “위조 지문 여부를 검사하고 있습니다. LED 빛이 끝날 때 까지 지문을 입력하세요”- 미구현 상태\n> 지문 등록 중 위조 지문 검출 시 :  출입거부 로그는 저장하지 않고 위조 지문 검출 로그 저장\n> FSF2(S) 위조 지문 스캔 시 FSF2(M)에 Extract Fail 팝업\n> Fake Finger Detected (BioStar 미표시)\n: Authentication failed (Bad fingerprint placement) 저장\n> Fake Finger Detected (장치 로그)\n: Strict의 경우 위조지문 3회이상 입력시 해당 로그 출력\n: More /Most Strict의 경우 위조지문 5회이상 입력시 해당 로그 출력\n3. 위조 지문 설정이 지문 스캔 속도에 영향이 없어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 14343,
+          "index": 6,
+          "step": "1. Fingerprint LFD 설정\n2. 실제 LFD 동작여부를 확인\n3. LFD를 설정한 장치를 재부팅한다.\n4. 재부팅 후 LFD 설정이 저장되어 있는지 확인 후 해당 동작 확인. ",
+          "data": "*Master, Slave 모두 확인\n\n1. Fingerprint LFD\n> Not Use\n> Strict\n> More Strict\n> Most Strict ",
+          "result": "1. Not Use 설정시 위조 지문에 영향 없이 정상적으로 지문 등록이 된다.\n2.[Not Use 제외 설정] 위조지문으로 등록 후 인증 시도 시지문 입력 실패가 발생한다.\n > 지문 등록 중 위조 지문 검출 시 :  출입거부 로그는 저장하지 않고 위조 지문 검출 로그 저장\n> FSF2(S) 위조 지문 스캔 시 FSF2(M)에 Extract Fail 팝업\n > Fake Finger Detected (BioStar 미표시)\n : Authentication failed (Bad fingerprint placement) 저장\n > Fake Finger Detected (장치 로그)\n : Strict의 경우 위조지문 3회이상 입력시 해당 로그 출력\n : More /Most Strict의 경우 위조지문 5회이상 입력시 해당 로그 출력\n 3. 위조 지문 설정이 지문 스캔 속도에 영향이 없어야 한다.",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/13366/comment/34233",
+          "id": "34233",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=thomas.kang",
+            "name": "thomas.kang",
+            "key": "thomas.kang",
+            "emailAddress": "jwkang@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=thomas.kang&avatarId=10401",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=thomas.kang&avatarId=10401",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=thomas.kang&avatarId=10401",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=thomas.kang&avatarId=10401"
+            },
+            "displayName": "강진원",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "[~hmkang] 책임님, 2번 step 에서\r\n(1) 위조 지문 1회 검출 시에는 Access Denied 로그는 남기지 않고 UI 표시만 하는 것이 사양이라고 합니다. 수정이 필요할 것 같습니다.\r\n(2) \"카드+지문 : 위조 지문을 입력한 경우 계속 지문 입력 대기 상태가 되고, 타임아웃 발생시 상황에 맞게 전환됨\" 으로 되어 있는데, 위조 지문 입력되면 기존의 \"Extraction Fail\" 경우처럼 인증 자체가 초기화됩니다. 수정이 필요할 것 같습니다.\r\n(3) 무조건 3번 연속이면 Fake Finger Detected 가 아니라, LFD level 이 strict 일 때는 3번, more strict 와 most strict 일 때는 5번 연속되어야 합니다. 수정 필요합니다.",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=thomas.kang",
+            "name": "thomas.kang",
+            "key": "thomas.kang",
+            "emailAddress": "jwkang@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=thomas.kang&avatarId=10401",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=thomas.kang&avatarId=10401",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=thomas.kang&avatarId=10401",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=thomas.kang&avatarId=10401"
+            },
+            "displayName": "강진원",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2016-04-28T14:48:51.000+0900",
+          "updated": "2016-04-28T14:54:34.000+0900"
+        },
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/13366/comment/34235",
+          "id": "34235",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "Changeset [3b6501799694dce7f2760d6baa12c3c596d9fae0|http://192.168.1.18:8080/bse/bscore/commit/3b6501799694dce7f2760d6baa12c3c596d9fae0] pushed to GitLab\n{panel}COMMONR-99 [»|http://192.168.1.18:8080/bse/bscore/commit/3b6501799694dce7f2760d6baa12c3c596d9fae0]{panel}",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2016-04-28T15:59:07.000+0900",
+          "updated": "2016-04-28T15:59:07.000+0900"
+        },
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/13366/comment/34239",
+          "id": "34239",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "Changeset [7562f40d75abdf59948f21d891b51781a7b08906|http://192.168.1.18:8080/bse/bscore/commit/7562f40d75abdf59948f21d891b51781a7b08906] pushed to GitLab\n{panel}COMMONR-99 [»|http://192.168.1.18:8080/bse/bscore/commit/7562f40d75abdf59948f21d891b51781a7b08906]{panel}",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2016-04-28T16:39:49.000+0900",
+          "updated": "2016-04-28T16:39:49.000+0900"
+        }
+      ],
+      "maxResults": 3,
+      "total": 3,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+      "name": "Minor (C)",
+      "id": "3"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+      "name": "완료",
+      "id": "10001",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "완료"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzrjmn:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2015-09-21T13:55:19.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

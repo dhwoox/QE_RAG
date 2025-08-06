@@ -1,177 +1,745 @@
 {
-  "id": "COMMONR-376",
-  "content": [
-    [
-      1,
-      "1. Extended Door Open Time: Disable 인 사용자로 인증시도",
-      "Door\n> Open Time: 3초\n> Extended Door Open Time: 1~900초 중 임의값 설정",
-      "1. Open Time 으로 동작한다."
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "69673",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/69673",
+  "key": "COMMONR-376",
+  "fields": {
+    "resolution": null,
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "0.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10173",
+      "value": "Major",
+      "id": "10173"
+    },
+    "customfield_10185": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
+      "value": "Medium (2-3일 이내 피드백)",
+      "id": "10220"
+    },
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "63201",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63201",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "72288",
+          "key": "BS3FW-1965",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72288",
+          "fields": {
+            "summary": "[Alternate Access Timer] Exit Button 접지 시에 Extended Door open time으로 동작하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "63218",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63218",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "72301",
+          "key": "BS3FW-1966",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72301",
+          "fields": {
+            "summary": "[Alternate Access Timer] BiostarX Batch Edit 수행 후 Save가 안 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "63233",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63233",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "72327",
+          "key": "BS3FW-1967",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72327",
+          "fields": {
+            "summary": "[Alternate Access Timer] Dual Auth 설정 시에 extended open time 유저 기준으로 동작하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "60494",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/60494",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "69610",
+          "key": "BES-3155",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/69610",
+          "fields": {
+            "summary": "[BDP-953] Alternate Access Timer",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
+              "id": "5",
+              "description": "이슈의 부작업",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
+              "name": "부작업",
+              "subtask": true,
+              "avatarId": 10316
+            }
+          }
+        }
+      },
+      {
+        "id": "62547",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/62547",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "70622",
+          "key": "BES-3296",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/70622",
+          "fields": {
+            "summary": "[BDP-962, 956, 954, 990, 953, 1239] BioStar X FW 개발 - 추가진행 건",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/3",
+              "id": "3",
+              "description": "해야할 일",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10318&avatarType=issuetype",
+              "name": "작업",
+              "subtask": false,
+              "avatarId": 10318
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "1. Extended Door Open Time: Enable 인 사용자로 인증시도",
-      "Door\n> Open Time: 3초\n> Extended Door Open Time: 1~900초(기본값 : 10) 중 임의값 설정(ex. 30초)",
-      "1. Extended Door Open Time으로 동작한다."
-    ],
-    [
-      3,
-      "[Door 설정된 상태]\n1. 바이오스타\n2. User> List에서 2명 이상 선택\n2. Batch Edit\n3. Extended Door Open Time: Enable 설정 후 적용\n4. Batch Edit으로 설정해준 사용자로 인증시도",
-      "사용자 동기화 옵션\n: 모든장치",
-      "1. 설정한 값으로 저장된다.\n2. 인증시 Extended Door Open Time으로 동작한다."
-    ],
-    [
-      4,
-      "[Door 설정된 상태]\n1. 바이오스타\n2. User> List에서 2명 이상 선택\n2. Batch Edit\n3. Extended Door Open Time: Disable 설정 후 적용\n4. Batch Edit으로 설정해준 사용자로 인증시도",
-      "사용자 동기화 옵션\n: 모든장치",
-      "1. 설정한 값으로 저장된다.\n2. 인증시 Open Time으로 동작한다."
-    ],
-    [
-      5,
-      "[Door 설정된 상태]\n1. 바이오스타\n2. User> List에서 2명 이상 선택\n2. Batch Edit\n3. Extended Door Open Time: Enable 설정 후 적용\n4. Batch Edit으로 설정해준 사용자로 인증시도",
-      "사용자 동기화 옵션\n: 특정장치",
-      "1. 설정한 값으로 저장된다.\n2. 인증시 Extended Door Open Time으로 동작한다."
-    ],
-    [
-      6,
-      "[Door 설정된 상태]\n1. 바이오스타\n2. User> List에서 2명 이상 선택\n2. Batch Edit\n3. Extended Door Open Time: Disable 설정 후 적용\n4. Batch Edit으로 설정해준 사용자로 인증시도",
-      "사용자 동기화 옵션\n: 특정장치",
-      "1. 설정한 값으로 저장된다.\n2. 인증시 Open Time으로 동작한다."
-    ],
-    [
-      7,
-      "[Door 설정된 상태]\n1. Extended Door Open Time: Enable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Disable 설정된 사용자 인증",
-      "Door 설정값\n> Open Time: 5초\n> Extended Door Open Time : 30초\n> 이중인증 미설정",
-      "1. 마지막 유저 인증으로부터 Unlock 으로 5초간 동작한다."
-    ],
-    [
-      8,
-      "[Door 설정된 상태]\n1. Extended Door Open Time: Enable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Enable 설정된 사용자 인증",
-      "Door 설정값\n> Open Time: 5초\n> Extended Door Open Time : 30초\n> 이중인증 미설정",
-      "1. 마지막 유저 인증으로부터 Unlock 으로 30초간 동작한다."
-    ],
-    [
-      9,
-      "[Door 설정된 상태]\n1. Extended Door Open Time: Disable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Enable 설정된 사용자 인증",
-      "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초\n> 이중인증 미설정",
-      "1. 마지막 유저 인증으로부터 Unlock 으로 30초간 동작한다."
-    ],
-    [
-      10,
-      "[Door 설정된 상태]\n1. Extended Door Open Time: Disable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Disable 설정된 사용자 인증",
-      "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초\n> 이중인증 미설정",
-      "1. 마지막 유저 인증으로부터 Unlock 으로 10초간 동작한다."
-    ],
-    [
-      11,
-      "[Door 설정된 상태]\n1. Extended Door Open Time: Enable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Disable 설정된 사용자 인증",
-      "Door 설정값\n> Open Time: 5초\n> Extended Door Open Time : 30초\n> 이중인증 설정",
-      "1. Unlock 으로 30초간 동작한다.\n※ Extended Door Open TIme 설정된 유저와 같이 이중인증 시에 Extended Door Open Time으로 동작하는 것이 현재 사양임"
-    ],
-    [
-      12,
-      "[Door 설정된 상태]\n1. Extended Door Open Time: Enable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Enable 설정된 사용자 인증",
-      "Door 설정값\n> Open Time: 5초\n> Extended Door Open Time : 30초\n> 이중인증 설정",
-      "1. 마지막 유저 인증으로부터 Unlock 으로 30초간 동작한다."
-    ],
-    [
-      13,
-      "[Door 설정된 상태]\n1. Extended Door Open Time: Disable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Enable 설정된 사용자 인증",
-      "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초\n> 이중인증 설정",
-      "1. 마지막 유저 인증으로부터 Unlock 으로 30초간 동작한다."
-    ],
-    [
-      14,
-      "[Door 설정된 상태]\n1. Extended Door Open Time: Disable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Disable 설정된 사용자 인증",
-      "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초\n> 이중인증 설정",
-      "1. 마지막 유저 인증으로부터 Unlock 으로 10초간 동작한다."
-    ],
-    [
-      15,
-      "[Door 설정된 상태]\n1. Door에 Exit Button 설정 후 저장\n1. Exit Button 접지",
-      "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초",
-      "1. Unlock으로 10초간 동작 (Extended Door Open Time이 아닌 Door Open Time으로 동작한다)"
-    ],
-    [
-      16,
-      "[Door 설정된 상태]\n1. Door에 Door Sensor, Exit Button 설정 후 저장\n1. Door Sensor + Exit Button 접지",
-      "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초",
-      "1. Unlock으로 10초간 동작(Extended Door Open Time이 아닌 Door Open Time으로 동작한다)"
-    ],
-    [
-      17,
-      "[지원 - 미지원 동작]\n1. Biostar > User > Extended Door Open Time : Enable\n2. Biostar > Door > Extended Door Open Time : 10초 설정\n3. Door에 Entry : Master, Exit : Slave, Relay : Slave 설정 후에 1.에서 설정한 user에 저장된 Credential로 인증",
-      "Master : Extended Door Open Time 지원하는 FW\nSlave : Extended Door Open Time 미지원하는 장치 / FW",
-      "1. Extended Door Open Time으로 동작한다."
-    ],
-    [
-      18,
-      "[미지원 - 지원 동작]\n1. Biostar > User > Extended Door Open Time : Enable\n2. Biostar > Door > Extended Door Open Time : 10초 설정\n3. Door에 Entry : Master, Exit : Slave, Relay : Slave 설정 후에 1.에서 설정한 user에 저장된 Credential로 인증",
-      "Master : Extended Door Open Time 미지원하는 FW\nSlave : Extended Door Open Time 지원하는 FW",
-      "1. Open Time으로 동작한다."
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-376",
-    "description": "",
-    "test_step": [
-      "1. Extended Door Open Time: Disable 인 사용자로 인증시도",
-      "1. Extended Door Open Time: Enable 인 사용자로 인증시도",
-      "[Door 설정된 상태]\n1. 바이오스타\n2. User> List에서 2명 이상 선택\n2. Batch Edit\n3. Extended Door Open Time: Enable 설정 후 적용\n4. Batch Edit으로 설정해준 사용자로 인증시도",
-      "[Door 설정된 상태]\n1. 바이오스타\n2. User> List에서 2명 이상 선택\n2. Batch Edit\n3. Extended Door Open Time: Disable 설정 후 적용\n4. Batch Edit으로 설정해준 사용자로 인증시도",
-      "[Door 설정된 상태]\n1. 바이오스타\n2. User> List에서 2명 이상 선택\n2. Batch Edit\n3. Extended Door Open Time: Enable 설정 후 적용\n4. Batch Edit으로 설정해준 사용자로 인증시도",
-      "[Door 설정된 상태]\n1. 바이오스타\n2. User> List에서 2명 이상 선택\n2. Batch Edit\n3. Extended Door Open Time: Disable 설정 후 적용\n4. Batch Edit으로 설정해준 사용자로 인증시도",
-      "[Door 설정된 상태]\n1. Extended Door Open Time: Enable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Disable 설정된 사용자 인증",
-      "[Door 설정된 상태]\n1. Extended Door Open Time: Enable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Enable 설정된 사용자 인증",
-      "[Door 설정된 상태]\n1. Extended Door Open Time: Disable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Enable 설정된 사용자 인증",
-      "[Door 설정된 상태]\n1. Extended Door Open Time: Disable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Disable 설정된 사용자 인증",
-      "[Door 설정된 상태]\n1. Extended Door Open Time: Enable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Disable 설정된 사용자 인증",
-      "[Door 설정된 상태]\n1. Extended Door Open Time: Enable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Enable 설정된 사용자 인증",
-      "[Door 설정된 상태]\n1. Extended Door Open Time: Disable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Enable 설정된 사용자 인증",
-      "[Door 설정된 상태]\n1. Extended Door Open Time: Disable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Disable 설정된 사용자 인증",
-      "[Door 설정된 상태]\n1. Door에 Exit Button 설정 후 저장\n1. Exit Button 접지",
-      "[Door 설정된 상태]\n1. Door에 Door Sensor, Exit Button 설정 후 저장\n1. Door Sensor + Exit Button 접지",
-      "[지원 - 미지원 동작]\n1. Biostar > User > Extended Door Open Time : Enable\n2. Biostar > Door > Extended Door Open Time : 10초 설정\n3. Door에 Entry : Master, Exit : Slave, Relay : Slave 설정 후에 1.에서 설정한 user에 저장된 Credential로 인증",
-      "[미지원 - 지원 동작]\n1. Biostar > User > Extended Door Open Time : Enable\n2. Biostar > Door > Extended Door Open Time : 10초 설정\n3. Door에 Entry : Master, Exit : Slave, Relay : Slave 설정 후에 1.에서 설정한 user에 저장된 Credential로 인증"
-    ],
-    "data": [
-      "Door\n> Open Time: 3초\n> Extended Door Open Time: 1~900초 중 임의값 설정",
-      "Door\n> Open Time: 3초\n> Extended Door Open Time: 1~900초(기본값 : 10) 중 임의값 설정(ex. 30초)",
-      "사용자 동기화 옵션\n: 모든장치",
-      "사용자 동기화 옵션\n: 모든장치",
-      "사용자 동기화 옵션\n: 특정장치",
-      "사용자 동기화 옵션\n: 특정장치",
-      "Door 설정값\n> Open Time: 5초\n> Extended Door Open Time : 30초\n> 이중인증 미설정",
-      "Door 설정값\n> Open Time: 5초\n> Extended Door Open Time : 30초\n> 이중인증 미설정",
-      "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초\n> 이중인증 미설정",
-      "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초\n> 이중인증 미설정",
-      "Door 설정값\n> Open Time: 5초\n> Extended Door Open Time : 30초\n> 이중인증 설정",
-      "Door 설정값\n> Open Time: 5초\n> Extended Door Open Time : 30초\n> 이중인증 설정",
-      "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초\n> 이중인증 설정",
-      "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초\n> 이중인증 설정",
-      "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초",
-      "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초",
-      "Master : Extended Door Open Time 지원하는 FW\nSlave : Extended Door Open Time 미지원하는 장치 / FW",
-      "Master : Extended Door Open Time 미지원하는 FW\nSlave : Extended Door Open Time 지원하는 FW"
-    ],
-    "expected_result": [
-      "1. Open Time 으로 동작한다.",
-      "1. Extended Door Open Time으로 동작한다.",
-      "1. 설정한 값으로 저장된다.\n2. 인증시 Extended Door Open Time으로 동작한다.",
-      "1. 설정한 값으로 저장된다.\n2. 인증시 Open Time으로 동작한다.",
-      "1. 설정한 값으로 저장된다.\n2. 인증시 Extended Door Open Time으로 동작한다.",
-      "1. 설정한 값으로 저장된다.\n2. 인증시 Open Time으로 동작한다.",
-      "1. 마지막 유저 인증으로부터 Unlock 으로 5초간 동작한다.",
-      "1. 마지막 유저 인증으로부터 Unlock 으로 30초간 동작한다.",
-      "1. 마지막 유저 인증으로부터 Unlock 으로 30초간 동작한다.",
-      "1. 마지막 유저 인증으로부터 Unlock 으로 10초간 동작한다.",
-      "1. Unlock 으로 30초간 동작한다.\n※ Extended Door Open TIme 설정된 유저와 같이 이중인증 시에 Extended Door Open Time으로 동작하는 것이 현재 사양임",
-      "1. 마지막 유저 인증으로부터 Unlock 으로 30초간 동작한다.",
-      "1. 마지막 유저 인증으로부터 Unlock 으로 30초간 동작한다.",
-      "1. 마지막 유저 인증으로부터 Unlock 으로 10초간 동작한다.",
-      "1. Unlock으로 10초간 동작 (Extended Door Open Time이 아닌 Door Open Time으로 동작한다)",
-      "1. Unlock으로 10초간 동작(Extended Door Open Time이 아닌 Door Open Time으로 동작한다)",
-      "1. Extended Door Open Time으로 동작한다.",
-      "1. Open Time으로 동작한다."
-    ]
+    "assignee": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 18.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-376/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@199b9b3f[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@4f2d12a8[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@349ab15c[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@13854d35[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@7afb40b9[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@678a3543[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6fb78bf[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@3f2e71b0[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@1ff00064[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@29e60ef4[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@7405b5f7[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@38eaf936[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": null,
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-376/watchers",
+      "watchCount": 1,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T10:28:51.000+0900",
+    "timeoriginalestimate": null,
+    "description": "https://jira.suprema.co.kr/browse/BDP-953\r\n\r\n장애인 또는 (정기방문) 배달부 등 설정된 개방시간보다 더 긴 시간을 필요로 하는 특정 사용자들을 위해 긴 출입문 개방 시간을 지원\r\n> 사용자 - 사용자별로 \"Extended Door Open Time\" 사용여부 설정 지원(Enable/Disable)\r\n> 출입문 - \"Extended Door Open Time\" 설정 지원\r\n\r\n1) 현 건 확인시 Door 및 출입그룹은 기본으로 설정되어 있는 상태에서 진행\r\n \r\n2) Door 생성시 하기와 같이 구성 후 구성된 환경별로 케이스 진행\r\n> 단일 장치 구성\r\n> RS485 구성\r\n> Wiegand Reader 구성\r\n※ Reader/Relay/Exit/Sensor 모두 설정된 상태\r\n\r\nBSX 지원기능(초기 버전에서는 Floor 미지원. 차후에는 Floor도 지원예정)",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. Extended Door Open Time: Disable 인 사용자로 인증시도</p></td><td><p>Door<br/>&gt; Open Time: 3초<br/>&gt; Extended Door Open Time: 1~900초 중 임의값 설정</p></td><td><p>1. Open Time 으로 동작한다.</p></td></tr><tr><td>2</td><td><p>1. Extended Door Open Time: Enable 인 사용자로 인증시도</p></td><td><p>Door<br/>&gt; Open Time: 3초<br/>&gt; Extended Door Open Time: 1~900초(기본값 : 10) 중 임의값 설정(ex. 30초)</p></td><td><p>1. Extended Door Open Time으로 동작한다.</p></td></tr><tr><td>3</td><td><p><span class=\"error\">&#91;Door 설정된 상태&#93;</span><br/>1. 바이오스타<br/>2. User&gt; List에서 2명 이상 선택<br/>2. Batch Edit<br/>3. Extended Door Open Time: Enable 설정 후 적용<br/>4. Batch Edit으로 설정해준 사용자로 인증시도</p></td><td><p>사용자 동기화 옵션<br/>: 모든장치</p></td><td><p>1. 설정한 값으로 저장된다.<br/>2. 인증시 Extended Door Open Time으로 동작한다.</p></td></tr><tr><td>4</td><td><p><span class=\"error\">&#91;Door 설정된 상태&#93;</span><br/>1. 바이오스타<br/>2. User&gt; List에서 2명 이상 선택<br/>2. Batch Edit<br/>3. Extended Door Open Time: Disable 설정 후 적용<br/>4. Batch Edit으로 설정해준 사용자로 인증시도</p></td><td><p>사용자 동기화 옵션<br/>: 모든장치</p></td><td><p>1. 설정한 값으로 저장된다.<br/>2. 인증시 Open Time으로 동작한다.</p></td></tr><tr><td>5</td><td><p><span class=\"error\">&#91;Door 설정된 상태&#93;</span><br/>1. 바이오스타<br/>2. User&gt; List에서 2명 이상 선택<br/>2. Batch Edit<br/>3. Extended Door Open Time: Enable 설정 후 적용<br/>4. Batch Edit으로 설정해준 사용자로 인증시도</p></td><td><p>사용자 동기화 옵션<br/>: 특정장치</p></td><td><p>1. 설정한 값으로 저장된다.<br/>2. 인증시 Extended Door Open Time으로 동작한다.</p></td></tr><tr><td>6</td><td><p><span class=\"error\">&#91;Door 설정된 상태&#93;</span><br/>1. 바이오스타<br/>2. User&gt; List에서 2명 이상 선택<br/>2. Batch Edit<br/>3. Extended Door Open Time: Disable 설정 후 적용<br/>4. Batch Edit으로 설정해준 사용자로 인증시도</p></td><td><p>사용자 동기화 옵션<br/>: 특정장치</p></td><td><p>1. 설정한 값으로 저장된다.<br/>2. 인증시 Open Time으로 동작한다.</p></td></tr><tr><td>7</td><td><p><span class=\"error\">&#91;Door 설정된 상태&#93;</span><br/>1. Extended Door Open Time: Enable 설정된 사용자 인증<br/>2. 5초 이내에<br/>3. Extended Door Open Time: Disable 설정된 사용자 인증</p></td><td><p>Door 설정값<br/>&gt; Open Time: 5초<br/>&gt; Extended Door Open Time : 30초<br/>&gt; 이중인증 미설정</p></td><td><p>1. 마지막 유저 인증으로부터 Unlock 으로 5초간 동작한다.</p></td></tr><tr><td>8</td><td><p><span class=\"error\">&#91;Door 설정된 상태&#93;</span><br/>1. Extended Door Open Time: Enable 설정된 사용자 인증<br/>2. 5초 이내에<br/>3. Extended Door Open Time: Enable 설정된 사용자 인증</p></td><td><p>Door 설정값<br/>&gt; Open Time: 5초<br/>&gt; Extended Door Open Time : 30초<br/>&gt; 이중인증 미설정</p></td><td><p>1. 마지막 유저 인증으로부터 Unlock 으로 30초간 동작한다.</p></td></tr><tr><td>9</td><td><p><span class=\"error\">&#91;Door 설정된 상태&#93;</span><br/>1. Extended Door Open Time: Disable 설정된 사용자 인증<br/>2. 5초 이내에<br/>3. Extended Door Open Time: Enable 설정된 사용자 인증</p></td><td><p>Door 설정값<br/>&gt; Open Time: 10초<br/>&gt; Extended Door Open Time : 30초<br/>&gt; 이중인증 미설정</p></td><td><p>1. 마지막 유저 인증으로부터 Unlock 으로 30초간 동작한다.</p></td></tr><tr><td>10</td><td><p><span class=\"error\">&#91;Door 설정된 상태&#93;</span><br/>1. Extended Door Open Time: Disable 설정된 사용자 인증<br/>2. 5초 이내에<br/>3. Extended Door Open Time: Disable 설정된 사용자 인증</p></td><td><p>Door 설정값<br/>&gt; Open Time: 10초<br/>&gt; Extended Door Open Time : 30초<br/>&gt; 이중인증 미설정</p></td><td><p>1. 마지막 유저 인증으로부터 Unlock 으로 10초간 동작한다.</p></td></tr><tr><td>11</td><td><p><span class=\"error\">&#91;Door 설정된 상태&#93;</span><br/>1. Extended Door Open Time: Enable 설정된 사용자 인증<br/>2. 5초 이내에<br/>3. Extended Door Open Time: Disable 설정된 사용자 인증</p></td><td><p>Door 설정값<br/>&gt; Open Time: 5초<br/>&gt; Extended Door Open Time : 30초<br/>&gt; 이중인증 설정</p></td><td><p>1. Unlock 으로 30초간 동작한다.<br/>※ Extended Door Open TIme 설정된 유저와 같이 이중인증 시에 Extended Door Open Time으로 동작하는 것이 현재 사양임</p></td></tr><tr><td>12</td><td><p><span class=\"error\">&#91;Door 설정된 상태&#93;</span><br/>1. Extended Door Open Time: Enable 설정된 사용자 인증<br/>2. 5초 이내에<br/>3. Extended Door Open Time: Enable 설정된 사용자 인증</p></td><td><p>Door 설정값<br/>&gt; Open Time: 5초<br/>&gt; Extended Door Open Time : 30초<br/>&gt; 이중인증 설정</p></td><td><p>1. 마지막 유저 인증으로부터 Unlock 으로 30초간 동작한다.</p></td></tr><tr><td>13</td><td><p><span class=\"error\">&#91;Door 설정된 상태&#93;</span><br/>1. Extended Door Open Time: Disable 설정된 사용자 인증<br/>2. 5초 이내에<br/>3. Extended Door Open Time: Enable 설정된 사용자 인증</p></td><td><p>Door 설정값<br/>&gt; Open Time: 10초<br/>&gt; Extended Door Open Time : 30초<br/>&gt; 이중인증 설정</p></td><td><p>1. 마지막 유저 인증으로부터 Unlock 으로 30초간 동작한다.</p></td></tr><tr><td>14</td><td><p><span class=\"error\">&#91;Door 설정된 상태&#93;</span><br/>1. Extended Door Open Time: Disable 설정된 사용자 인증<br/>2. 5초 이내에<br/>3. Extended Door Open Time: Disable 설정된 사용자 인증</p></td><td><p>Door 설정값<br/>&gt; Open Time: 10초<br/>&gt; Extended Door Open Time : 30초<br/>&gt; 이중인증 설정</p></td><td><p>1. 마지막 유저 인증으로부터 Unlock 으로 10초간 동작한다.</p></td></tr><tr><td>15</td><td><p><span class=\"error\">&#91;Door 설정된 상태&#93;</span><br/>1. Door에 Exit Button 설정 후 저장<br/>1. Exit Button 접지</p></td><td><p>Door 설정값<br/>&gt; Open Time: 10초<br/>&gt; Extended Door Open Time : 30초</p></td><td><p>1. Unlock으로 10초간 동작 (Extended Door Open Time이 아닌 Door Open Time으로 동작한다)</p></td></tr><tr><td>16</td><td><p><span class=\"error\">&#91;Door 설정된 상태&#93;</span><br/>1. Door에 Door Sensor, Exit Button 설정 후 저장<br/>1. Door Sensor + Exit Button 접지</p></td><td><p>Door 설정값<br/>&gt; Open Time: 10초<br/>&gt; Extended Door Open Time : 30초</p></td><td><p>1. Unlock으로 10초간 동작(Extended Door Open Time이 아닌 Door Open Time으로 동작한다)</p></td></tr><tr><td>17</td><td><p><span class=\"error\">&#91;지원 - 미지원 동작&#93;</span><br/>1. Biostar &gt; User &gt; Extended Door Open Time : Enable<br/>2. Biostar &gt; Door &gt; Extended Door Open Time : 10초 설정<br/>3. Door에 Entry : Master, Exit : Slave, Relay : Slave 설정 후에 1.에서 설정한 user에 저장된 Credential로 인증</p></td><td><p>Master : Extended Door Open Time 지원하는 FW<br/>Slave : Extended Door Open Time 미지원하는 장치 / FW</p></td><td><p>1. Extended Door Open Time으로 동작한다.</p></td></tr><tr><td>18</td><td><p><span class=\"error\">&#91;미지원 - 지원 동작&#93;</span><br/>1. Biostar &gt; User &gt; Extended Door Open Time : Enable<br/>2. Biostar &gt; Door &gt; Extended Door Open Time : 10초 설정<br/>3. Door에 Entry : Master, Exit : Slave, Relay : Slave 설정 후에 1.에서 설정한 user에 저장된 Credential로 인증</p></td><td><p>Master : Extended Door Open Time 미지원하는 FW<br/>Slave : Extended Door Open Time 지원하는 FW</p></td><td><p>1. Open Time으로 동작한다.</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [],
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 69673,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 34777,
+              "latestFinalId": 34777
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "[BSX지원기능][BDP-953] Alternate Access Timer",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 19730,
+          "index": 1,
+          "step": "1. Extended Door Open Time: Disable 인 사용자로 인증시도",
+          "data": "Door\n> Open Time: 3초\n> Extended Door Open Time: 1~900초 중 임의값 설정",
+          "result": "1. Open Time 으로 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 19731,
+          "index": 2,
+          "step": "1. Extended Door Open Time: Enable 인 사용자로 인증시도",
+          "data": "Door\n> Open Time: 3초\n> Extended Door Open Time: 1~900초(기본값 : 10) 중 임의값 설정(ex. 30초)",
+          "result": "1. Extended Door Open Time으로 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 19735,
+          "index": 3,
+          "step": "[Door 설정된 상태]\n1. 바이오스타\n2. User> List에서 2명 이상 선택\n2. Batch Edit\n3. Extended Door Open Time: Enable 설정 후 적용\n4. Batch Edit으로 설정해준 사용자로 인증시도",
+          "data": "사용자 동기화 옵션\n: 모든장치",
+          "result": "1. 설정한 값으로 저장된다.\n2. 인증시 Extended Door Open Time으로 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 19736,
+          "index": 4,
+          "step": "[Door 설정된 상태]\n1. 바이오스타\n2. User> List에서 2명 이상 선택\n2. Batch Edit\n3. Extended Door Open Time: Disable 설정 후 적용\n4. Batch Edit으로 설정해준 사용자로 인증시도",
+          "data": "사용자 동기화 옵션\n: 모든장치",
+          "result": "1. 설정한 값으로 저장된다.\n2. 인증시 Open Time으로 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 19737,
+          "index": 5,
+          "step": "[Door 설정된 상태]\n1. 바이오스타\n2. User> List에서 2명 이상 선택\n2. Batch Edit\n3. Extended Door Open Time: Enable 설정 후 적용\n4. Batch Edit으로 설정해준 사용자로 인증시도",
+          "data": "사용자 동기화 옵션\n: 특정장치",
+          "result": "1. 설정한 값으로 저장된다.\n2. 인증시 Extended Door Open Time으로 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 19738,
+          "index": 6,
+          "step": "[Door 설정된 상태]\n1. 바이오스타\n2. User> List에서 2명 이상 선택\n2. Batch Edit\n3. Extended Door Open Time: Disable 설정 후 적용\n4. Batch Edit으로 설정해준 사용자로 인증시도",
+          "data": "사용자 동기화 옵션\n: 특정장치",
+          "result": "1. 설정한 값으로 저장된다.\n2. 인증시 Open Time으로 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 19739,
+          "index": 7,
+          "step": "[Door 설정된 상태]\n1. Extended Door Open Time: Enable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Disable 설정된 사용자 인증",
+          "data": "Door 설정값\n> Open Time: 5초\n> Extended Door Open Time : 30초\n> 이중인증 미설정",
+          "result": "1. 마지막 유저 인증으로부터 Unlock 으로 5초간 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 19740,
+          "index": 8,
+          "step": "[Door 설정된 상태]\n1. Extended Door Open Time: Enable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Enable 설정된 사용자 인증",
+          "data": "Door 설정값\n> Open Time: 5초\n> Extended Door Open Time : 30초\n> 이중인증 미설정",
+          "result": "1. 마지막 유저 인증으로부터 Unlock 으로 30초간 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 19741,
+          "index": 9,
+          "step": "[Door 설정된 상태]\n1. Extended Door Open Time: Disable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Enable 설정된 사용자 인증",
+          "data": "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초\n> 이중인증 미설정",
+          "result": "1. 마지막 유저 인증으로부터 Unlock 으로 30초간 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 19742,
+          "index": 10,
+          "step": "[Door 설정된 상태]\n1. Extended Door Open Time: Disable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Disable 설정된 사용자 인증",
+          "data": "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초\n> 이중인증 미설정",
+          "result": "1. 마지막 유저 인증으로부터 Unlock 으로 10초간 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 19744,
+          "index": 11,
+          "step": "[Door 설정된 상태]\n1. Extended Door Open Time: Enable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Disable 설정된 사용자 인증",
+          "data": "Door 설정값\n> Open Time: 5초\n> Extended Door Open Time : 30초\n> 이중인증 설정",
+          "result": "1. Unlock 으로 30초간 동작한다.\n※ Extended Door Open TIme 설정된 유저와 같이 이중인증 시에 Extended Door Open Time으로 동작하는 것이 현재 사양임",
+          "attachments": [
+            {
+              "id": 1133,
+              "fileName": "extended door open time.png",
+              "fileIcon": "image.gif",
+              "fileIconAlt": "PNG File",
+              "fileSize": "16 kB",
+              "numericalFileSize": 0,
+              "created": "11/6월/25 9:03 오전",
+              "author": "dhwoo"
+            }
+          ]
+        },
+        {
+          "id": 19745,
+          "index": 12,
+          "step": "[Door 설정된 상태]\n1. Extended Door Open Time: Enable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Enable 설정된 사용자 인증",
+          "data": "Door 설정값\n> Open Time: 5초\n> Extended Door Open Time : 30초\n> 이중인증 설정",
+          "result": "1. 마지막 유저 인증으로부터 Unlock 으로 30초간 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 19746,
+          "index": 13,
+          "step": "[Door 설정된 상태]\n1. Extended Door Open Time: Disable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Enable 설정된 사용자 인증",
+          "data": "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초\n> 이중인증 설정",
+          "result": "1. 마지막 유저 인증으로부터 Unlock 으로 30초간 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 19747,
+          "index": 14,
+          "step": "[Door 설정된 상태]\n1. Extended Door Open Time: Disable 설정된 사용자 인증\n2. 5초 이내에\n3. Extended Door Open Time: Disable 설정된 사용자 인증",
+          "data": "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초\n> 이중인증 설정",
+          "result": "1. 마지막 유저 인증으로부터 Unlock 으로 10초간 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 19906,
+          "index": 15,
+          "step": "[Door 설정된 상태]\n1. Door에 Exit Button 설정 후 저장\n1. Exit Button 접지",
+          "data": "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초",
+          "result": "1. Unlock으로 10초간 동작 (Extended Door Open Time이 아닌 Door Open Time으로 동작한다)",
+          "attachments": []
+        },
+        {
+          "id": 19907,
+          "index": 16,
+          "step": "[Door 설정된 상태]\n1. Door에 Door Sensor, Exit Button 설정 후 저장\n1. Door Sensor + Exit Button 접지",
+          "data": "Door 설정값\n> Open Time: 10초\n> Extended Door Open Time : 30초",
+          "result": "1. Unlock으로 10초간 동작(Extended Door Open Time이 아닌 Door Open Time으로 동작한다)",
+          "attachments": []
+        },
+        {
+          "id": 20016,
+          "index": 17,
+          "step": "[지원 - 미지원 동작]\n1. Biostar > User > Extended Door Open Time : Enable\n2. Biostar > Door > Extended Door Open Time : 10초 설정\n3. Door에 Entry : Master, Exit : Slave, Relay : Slave 설정 후에 1.에서 설정한 user에 저장된 Credential로 인증",
+          "data": "Master : Extended Door Open Time 지원하는 FW\nSlave : Extended Door Open Time 미지원하는 장치 / FW",
+          "result": "1. Extended Door Open Time으로 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 20017,
+          "index": 18,
+          "step": "[미지원 - 지원 동작]\n1. Biostar > User > Extended Door Open Time : Enable\n2. Biostar > Door > Extended Door Open Time : 10초 설정\n3. Door에 Entry : Master, Exit : Slave, Relay : Slave 설정 후에 1.에서 설정한 user에 저장된 Credential로 인증",
+          "data": "Master : Extended Door Open Time 미지원하는 FW\nSlave : Extended Door Open Time 지원하는 FW",
+          "result": "1. Open Time으로 동작한다.",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [],
+      "maxResults": 0,
+      "total": 0,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+      "name": "미할당",
+      "id": "10100"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+      "name": "할 일",
+      "id": "10000",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "할 일"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzzfqv:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2025-02-25T08:58:26.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

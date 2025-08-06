@@ -1,77 +1,760 @@
 {
-  "id": "COMMONR-249",
-  "content": [
-    [
-      1,
-      "1. Door> APB 설정> 다수의 사용자에 대해 APB Violation 발생\n2. Monitoring> Door Status> Door 선택> APB 초기화 클릭\n3. 모든사용자 선택 후 확인\n4. APB Violation 된 다수의 사용자에 대해 인증시도",
-      "APB 타입\n> Soft APB\n> Hard APB",
-      "1. 모든 사용자에 대해 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)"
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "30180",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/30180",
+  "key": "COMMONR-249",
+  "fields": {
+    "resolution": null,
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "0.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10173",
+      "value": "Major",
+      "id": "10173"
+    },
+    "customfield_10185": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
+      "value": "Medium (2-3일 이내 피드백)",
+      "id": "10220"
+    },
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "38932",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/38932",
+        "type": {
+          "id": "10000",
+          "name": "Blocks",
+          "inward": "is blocked by",
+          "outward": "blocks",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10000"
+        },
+        "inwardIssue": {
+          "id": "49076",
+          "key": "DFW-720",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/49076",
+          "fields": {
+            "summary": "Global Apb 설정 후  첫 인증 시 인증 실패 발생 및 로그 안남음",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "38933",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/38933",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "49076",
+          "key": "DFW-720",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/49076",
+          "fields": {
+            "summary": "Global Apb 설정 후  첫 인증 시 인증 실패 발생 및 로그 안남음",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "62981",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/62981",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "72108",
+          "key": "CS20FW-239",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72108",
+          "fields": {
+            "summary": "[APB ZONE - GLOBAL/LOCAL]아래 설치 환경에서 APB Zone에 Wiegand Reader 추가 시 Wiegand Reader의 Schedule이 미할당으로 변경 되어 인증 실패가 발생하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "23534",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/23534",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "29565",
+          "key": "BSPP-407",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/29565",
+          "fields": {
+            "summary": "사용자별 APB Reset 기능 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10202",
+              "description": "개발이 완료된 요구 사항",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/generic.png",
+              "name": "개발완료",
+              "id": "10202",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      },
+      {
+        "id": "30757",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/30757",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "40009",
+          "key": "ONYXFW-195",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/40009",
+          "fields": {
+            "summary": "사용자별 APB Reset 기능 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10200",
+              "id": "10200",
+              "description": "개별 Interaction 관리용 타입",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10304&avatarType=issuetype",
+              "name": "Interaction",
+              "subtask": false,
+              "avatarId": 10304
+            }
+          }
+        }
+      },
+      {
+        "id": "23666",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/23666",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "29481",
+          "key": "XPASSII-21",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/29481",
+          "fields": {
+            "summary": "2019 1H - 사용자별 APB Reset 기능",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10200",
+              "id": "10200",
+              "description": "개별 Interaction 관리용 타입",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10304&avatarType=issuetype",
+              "name": "Interaction",
+              "subtask": false,
+              "avatarId": 10304
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "1. Door> APB 설정> 다수의 APB Violation 발생\n2. Monitoring> Door Status> Door 선택> APB 초기화 클릭\n3. 특정사용자 선택 후 확인\n4. APB Violation된 사용자에 대해 인증시도",
-      "APB 타입\n> Soft APB\n> Hard APB\n\n특정사용자\n> 단일선택\n> 복수선택",
-      "1. 특정 사용자에 대해서만 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)\n\n2. 선택되지 않은 사용자에 대해서는 APB Violation 상태로 동작된다."
-    ],
-    [
-      3,
-      "1. Zone> APB Zone 설정> 다수의 사용자에 대해 APB Violation 발생\n2. Monitoring> Zone Status> Zone 선택> APB 초기화 클릭\n3. 모든사용자 선택 후 확인\n4. APB Violation 된 다수의 사용자에 대해 인증시도",
-      "모드\n> Local\n\nAPB 타입\n> Soft APB\n> Hard APB",
-      "1. 모든 사용자에 대해 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)"
-    ],
-    [
-      4,
-      "1. Zone> APB Zone 설정> 다수의 사용자에 대해 APB Violation 발생\n2. Monitoring> Zone Status> Zone 선택> APB 초기화 클릭\n3. 특정사용자 선택 후 확인\n4. APB Violation 된 다수의 사용자에 대해 인증시도",
-      "모드\n> Local\n\nAPB 타입\n> Soft APB\n> Hard APB\n\n특정사용자\n> 단일선택\n> 복수선택",
-      "1. 특정 사용자에 대해서만 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)\n\n2. 선택되지 않은 사용자에 대해서는 APB Violation 상태로 동작된다."
-    ],
-    [
-      5,
-      "1. Zone> APB Zone 설정> 다수의 사용자에 대해 APB Violation 발생\n2. Monitoring> Zone Status> Zone 선택> APB 초기화 클릭\n3. 모든사용자 선택 후 확인\n4. APB Violation 된 다수의 사용자에 대해 인증시도",
-      "모드\n> Global\n\nAPB 타입\n> Soft APB\n> Hard APB",
-      "1. 모든 사용자에 대해 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)"
-    ],
-    [
-      6,
-      "1. Zone> APB Zone 설정> 다수의 사용자에 대해 APB Violation 발생\n2. Monitoring> Zone Status> Zone 선택> APB 초기화 클릭\n3. 특정사용자 선택 후 확인\n4. APB Violation 된 다수의 사용자에 대해 인증시도",
-      "모드\n> Global\n\nAPB 타입\n> Soft APB\n> Hard APB\n\n특정사용자\n> 단일선택\n> 복수선택",
-      "1. 특정 사용자에 대해서만 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)\n\n2. 선택되지 않은 사용자에 대해서는 APB Violation 상태로 동작된다."
-    ],
-    [
-      7,
-      "1. APB Zone 추가> 다수의 사용자에 대해 APB Violation 발생\n2. APB Zone 비활성화\n3. APB Violation 되었던 다수의 사용자에 대해 인증시도",
-      "",
-      "1. APB 비활성화되어 인증 성공 된다.\n> APB Alarm 상태 유지"
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-249",
-    "description": "",
-    "test_step": [
-      "1. Door> APB 설정> 다수의 사용자에 대해 APB Violation 발생\n2. Monitoring> Door Status> Door 선택> APB 초기화 클릭\n3. 모든사용자 선택 후 확인\n4. APB Violation 된 다수의 사용자에 대해 인증시도",
-      "1. Door> APB 설정> 다수의 APB Violation 발생\n2. Monitoring> Door Status> Door 선택> APB 초기화 클릭\n3. 특정사용자 선택 후 확인\n4. APB Violation된 사용자에 대해 인증시도",
-      "1. Zone> APB Zone 설정> 다수의 사용자에 대해 APB Violation 발생\n2. Monitoring> Zone Status> Zone 선택> APB 초기화 클릭\n3. 모든사용자 선택 후 확인\n4. APB Violation 된 다수의 사용자에 대해 인증시도",
-      "1. Zone> APB Zone 설정> 다수의 사용자에 대해 APB Violation 발생\n2. Monitoring> Zone Status> Zone 선택> APB 초기화 클릭\n3. 특정사용자 선택 후 확인\n4. APB Violation 된 다수의 사용자에 대해 인증시도",
-      "1. Zone> APB Zone 설정> 다수의 사용자에 대해 APB Violation 발생\n2. Monitoring> Zone Status> Zone 선택> APB 초기화 클릭\n3. 모든사용자 선택 후 확인\n4. APB Violation 된 다수의 사용자에 대해 인증시도",
-      "1. Zone> APB Zone 설정> 다수의 사용자에 대해 APB Violation 발생\n2. Monitoring> Zone Status> Zone 선택> APB 초기화 클릭\n3. 특정사용자 선택 후 확인\n4. APB Violation 된 다수의 사용자에 대해 인증시도",
-      "1. APB Zone 추가> 다수의 사용자에 대해 APB Violation 발생\n2. APB Zone 비활성화\n3. APB Violation 되었던 다수의 사용자에 대해 인증시도"
-    ],
-    "data": [
-      "APB 타입\n> Soft APB\n> Hard APB",
-      "APB 타입\n> Soft APB\n> Hard APB\n\n특정사용자\n> 단일선택\n> 복수선택",
-      "모드\n> Local\n\nAPB 타입\n> Soft APB\n> Hard APB",
-      "모드\n> Local\n\nAPB 타입\n> Soft APB\n> Hard APB\n\n특정사용자\n> 단일선택\n> 복수선택",
-      "모드\n> Global\n\nAPB 타입\n> Soft APB\n> Hard APB",
-      "모드\n> Global\n\nAPB 타입\n> Soft APB\n> Hard APB\n\n특정사용자\n> 단일선택\n> 복수선택"
-    ],
-    "expected_result": [
-      "1. 모든 사용자에 대해 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)",
-      "1. 특정 사용자에 대해서만 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)\n\n2. 선택되지 않은 사용자에 대해서는 APB Violation 상태로 동작된다.",
-      "1. 모든 사용자에 대해 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)",
-      "1. 특정 사용자에 대해서만 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)\n\n2. 선택되지 않은 사용자에 대해서는 APB Violation 상태로 동작된다.",
-      "1. 모든 사용자에 대해 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)",
-      "1. 특정 사용자에 대해서만 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)\n\n2. 선택되지 않은 사용자에 대해서는 APB Violation 상태로 동작된다.",
-      "1. APB 비활성화되어 인증 성공 된다.\n> APB Alarm 상태 유지"
-    ]
+    "assignee": null,
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 7.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-249/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@47664227[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@3fe4fec1[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@4e4c812a[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@56467cd4[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@323b5c3c[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@7de2278e[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@570dacc9[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@3248da20[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@5afaaae9[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@36c8386f[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@c99b19b[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@78f4f3f2[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": null,
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-249/watchers",
+      "watchCount": 1,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T10:04:08.000+0900",
+    "timeoriginalestimate": null,
+    "description": "> Door에 설정된 APB 발생시 Monitoring> Door Status에서 APB 초기화에서 해당기능 지원\r\n> Zone에 설정된 APB 발생시 Monitoring> Zone Status에서 APB 초기화에서 해당기능 지원",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. Door&gt; APB 설정&gt; 다수의 사용자에 대해 APB Violation 발생<br/>2. Monitoring&gt; Door Status&gt; Door 선택&gt; APB 초기화 클릭<br/>3. 모든사용자 선택 후 확인<br/>4. APB Violation 된 다수의 사용자에 대해 인증시도</p></td><td><p>APB 타입<br/>&gt; Soft APB<br/>&gt; Hard APB</p></td><td><p>1. 모든 사용자에 대해 APB 초기화된다.<br/>&gt; APB 초기화 로그 미출력(차후 버전에서 지원예정)</p></td></tr><tr><td>2</td><td><p>1. Door&gt; APB 설정&gt; 다수의 APB Violation 발생<br/>2. Monitoring&gt; Door Status&gt; Door 선택&gt; APB 초기화 클릭<br/>3. 특정사용자 선택 후 확인<br/>4. APB Violation된 사용자에 대해 인증시도</p></td><td><p>APB 타입<br/>&gt; Soft APB<br/>&gt; Hard APB</p>\n\n<p>특정사용자<br/>&gt; 단일선택<br/>&gt; 복수선택</p></td><td><p>1. 특정 사용자에 대해서만 APB 초기화된다.<br/>&gt; APB 초기화 로그 미출력(차후 버전에서 지원예정)</p>\n\n<p>2. 선택되지 않은 사용자에 대해서는 APB Violation 상태로 동작된다.</p></td></tr><tr><td>3</td><td><p>1. Zone&gt; APB Zone 설정&gt; 다수의 사용자에 대해 APB Violation 발생<br/>2. Monitoring&gt; Zone Status&gt; Zone 선택&gt; APB 초기화 클릭<br/>3. 모든사용자 선택 후 확인<br/>4. APB Violation 된 다수의 사용자에 대해 인증시도</p></td><td><p>모드<br/>&gt; Local</p>\n\n<p>APB 타입<br/>&gt; Soft APB<br/>&gt; Hard APB</p></td><td><p>1. 모든 사용자에 대해 APB 초기화된다.<br/>&gt; APB 초기화 로그 미출력(차후 버전에서 지원예정)</p></td></tr><tr><td>4</td><td><p>1. Zone&gt; APB Zone 설정&gt; 다수의 사용자에 대해 APB Violation 발생<br/>2. Monitoring&gt; Zone Status&gt; Zone 선택&gt; APB 초기화 클릭<br/>3. 특정사용자 선택 후 확인<br/>4. APB Violation 된 다수의 사용자에 대해 인증시도</p></td><td><p>모드<br/>&gt; Local</p>\n\n<p>APB 타입<br/>&gt; Soft APB<br/>&gt; Hard APB</p>\n\n<p>특정사용자<br/>&gt; 단일선택<br/>&gt; 복수선택</p></td><td><p>1. 특정 사용자에 대해서만 APB 초기화된다.<br/>&gt; APB 초기화 로그 미출력(차후 버전에서 지원예정)</p>\n\n<p>2. 선택되지 않은 사용자에 대해서는 APB Violation 상태로 동작된다.</p></td></tr><tr><td>5</td><td><p>1. Zone&gt; APB Zone 설정&gt; 다수의 사용자에 대해 APB Violation 발생<br/>2. Monitoring&gt; Zone Status&gt; Zone 선택&gt; APB 초기화 클릭<br/>3. 모든사용자 선택 후 확인<br/>4. APB Violation 된 다수의 사용자에 대해 인증시도</p></td><td><p>모드<br/>&gt; Global</p>\n\n<p>APB 타입<br/>&gt; Soft APB<br/>&gt; Hard APB</p></td><td><p>1. 모든 사용자에 대해 APB 초기화된다.<br/>&gt; APB 초기화 로그 미출력(차후 버전에서 지원예정)</p></td></tr><tr><td>6</td><td><p>1. Zone&gt; APB Zone 설정&gt; 다수의 사용자에 대해 APB Violation 발생<br/>2. Monitoring&gt; Zone Status&gt; Zone 선택&gt; APB 초기화 클릭<br/>3. 특정사용자 선택 후 확인<br/>4. APB Violation 된 다수의 사용자에 대해 인증시도</p></td><td><p>모드<br/>&gt; Global</p>\n\n<p>APB 타입<br/>&gt; Soft APB<br/>&gt; Hard APB</p>\n\n<p>특정사용자<br/>&gt; 단일선택<br/>&gt; 복수선택</p></td><td><p>1. 특정 사용자에 대해서만 APB 초기화된다.<br/>&gt; APB 초기화 로그 미출력(차후 버전에서 지원예정)</p>\n\n<p>2. 선택되지 않은 사용자에 대해서는 APB Violation 상태로 동작된다.</p></td></tr><tr><td>7</td><td><p>1. APB Zone 추가&gt; 다수의 사용자에 대해 APB Violation 발생<br/>2. APB Zone 비활성화<br/>3. APB Violation 되었던 다수의 사용자에 대해 인증시도</p></td><td></td><td><p>1. APB 비활성화되어 인증 성공 된다.<br/>&gt; APB Alarm 상태 유지</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [],
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 30180,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 34721,
+              "latestFinalId": 34721
+            },
+            {
+              "environment": "ES1",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29854,
+              "latestFinalId": 29854
+            },
+            {
+              "environment": "BioStarV2.9.6.30",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29854,
+              "latestFinalId": 29854
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_190805_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15287,
+              "latestFinalId": 15287
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_190809_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15643,
+              "latestFinalId": 15643
+            }
+          ]
+        },
+        {
+          "group": "V1.8.0_190806_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15400,
+              "latestFinalId": 15400
+            }
+          ]
+        },
+        {
+          "group": "V1.7.0_190806_Interaction 7차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15148,
+              "latestFinalId": 15148
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_190806_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15523,
+              "latestFinalId": 15523
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_20200601_Interaction 12차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 17255,
+              "latestFinalId": 17255
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "[BSPP-407] 사용자별 APB Reset 기능",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 10585,
+          "index": 1,
+          "step": "1. Door> APB 설정> 다수의 사용자에 대해 APB Violation 발생\n2. Monitoring> Door Status> Door 선택> APB 초기화 클릭\n3. 모든사용자 선택 후 확인\n4. APB Violation 된 다수의 사용자에 대해 인증시도",
+          "data": "APB 타입\n> Soft APB\n> Hard APB",
+          "result": "1. 모든 사용자에 대해 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)",
+          "attachments": []
+        },
+        {
+          "id": 10586,
+          "index": 2,
+          "step": "1. Door> APB 설정> 다수의 APB Violation 발생\n2. Monitoring> Door Status> Door 선택> APB 초기화 클릭\n3. 특정사용자 선택 후 확인\n4. APB Violation된 사용자에 대해 인증시도",
+          "data": "APB 타입\n> Soft APB\n> Hard APB\n\n특정사용자\n> 단일선택\n> 복수선택",
+          "result": "1. 특정 사용자에 대해서만 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)\n\n2. 선택되지 않은 사용자에 대해서는 APB Violation 상태로 동작된다.",
+          "attachments": []
+        },
+        {
+          "id": 10587,
+          "index": 3,
+          "step": "1. Zone> APB Zone 설정> 다수의 사용자에 대해 APB Violation 발생\n2. Monitoring> Zone Status> Zone 선택> APB 초기화 클릭\n3. 모든사용자 선택 후 확인\n4. APB Violation 된 다수의 사용자에 대해 인증시도",
+          "data": "모드\n> Local\n\nAPB 타입\n> Soft APB\n> Hard APB",
+          "result": "1. 모든 사용자에 대해 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)",
+          "attachments": []
+        },
+        {
+          "id": 10588,
+          "index": 4,
+          "step": "1. Zone> APB Zone 설정> 다수의 사용자에 대해 APB Violation 발생\n2. Monitoring> Zone Status> Zone 선택> APB 초기화 클릭\n3. 특정사용자 선택 후 확인\n4. APB Violation 된 다수의 사용자에 대해 인증시도",
+          "data": "모드\n> Local\n\nAPB 타입\n> Soft APB\n> Hard APB\n\n특정사용자\n> 단일선택\n> 복수선택",
+          "result": "1. 특정 사용자에 대해서만 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)\n\n2. 선택되지 않은 사용자에 대해서는 APB Violation 상태로 동작된다.",
+          "attachments": []
+        },
+        {
+          "id": 10591,
+          "index": 5,
+          "step": "1. Zone> APB Zone 설정> 다수의 사용자에 대해 APB Violation 발생\n2. Monitoring> Zone Status> Zone 선택> APB 초기화 클릭\n3. 모든사용자 선택 후 확인\n4. APB Violation 된 다수의 사용자에 대해 인증시도",
+          "data": "모드\n> Global\n\nAPB 타입\n> Soft APB\n> Hard APB",
+          "result": "1. 모든 사용자에 대해 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)",
+          "attachments": []
+        },
+        {
+          "id": 10592,
+          "index": 6,
+          "step": "1. Zone> APB Zone 설정> 다수의 사용자에 대해 APB Violation 발생\n2. Monitoring> Zone Status> Zone 선택> APB 초기화 클릭\n3. 특정사용자 선택 후 확인\n4. APB Violation 된 다수의 사용자에 대해 인증시도",
+          "data": "모드\n> Global\n\nAPB 타입\n> Soft APB\n> Hard APB\n\n특정사용자\n> 단일선택\n> 복수선택",
+          "result": "1. 특정 사용자에 대해서만 APB 초기화된다.\n> APB 초기화 로그 미출력(차후 버전에서 지원예정)\n\n2. 선택되지 않은 사용자에 대해서는 APB Violation 상태로 동작된다.",
+          "attachments": []
+        },
+        {
+          "id": 10593,
+          "index": 7,
+          "step": "1. APB Zone 추가> 다수의 사용자에 대해 APB Violation 발생\n2. APB Zone 비활성화\n3. APB Violation 되었던 다수의 사용자에 대해 인증시도",
+          "data": "",
+          "result": "1. APB 비활성화되어 인증 성공 된다.\n> APB Alarm 상태 유지",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [],
+      "maxResults": 0,
+      "total": 0,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+      "name": "미할당",
+      "id": "10100"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+      "name": "할 일",
+      "id": "10000",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "할 일"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hztia7:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2019-04-15T10:37:58.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

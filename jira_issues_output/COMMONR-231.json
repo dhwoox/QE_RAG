@@ -1,250 +1,832 @@
 {
-  "id": "COMMONR-231",
-  "content": [
-    [
-      1,
-      "1. Interlock Zone 추가\n2. 한쪽 출입문에 Door Open 발생\n3. 반대쪽 출입문에 Forced Door Open 발생",
-      "",
-      "1. Interlock Zone의 경우 인증으로만 컨트롤된다.\n=> Interlock door open denied 알람이 설정된 경우 해당 알람 발생.\n※ 문열림된 상태에서 반대편 문이 열렸다고 해서 이전에 열렸던 문이 닫히진 않는다."
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "24432",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/24432",
+  "key": "COMMONR-231",
+  "fields": {
+    "resolution": null,
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "0.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": null,
+    "customfield_10185": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
+      "value": "Medium (2-3일 이내 피드백)",
+      "id": "10220"
+    },
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "18799",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/18799",
+        "type": {
+          "id": "10001",
+          "name": "Cloners",
+          "inward": "is cloned by",
+          "outward": "clones",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10001"
+        },
+        "outwardIssue": {
+          "id": "23262",
+          "key": "CORER-42",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/23262",
+          "fields": {
+            "summary": "Interlock Zone",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "할 일",
+              "id": "10000",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "Represents a Test",
+              "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+              "name": "Test",
+              "subtask": false
+            }
+          }
+        }
+      },
+      {
+        "id": "19673",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19673",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "25169",
+          "key": "CSTFW-295",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/25169",
+          "fields": {
+            "summary": "Interlock Zone 알람(Relay, Buzzer) 발생 상태에서 Interlock Zone 삭제 시 알람 해제되지 않음",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19801",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19801",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "25374",
+          "key": "CSTFW-311",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/25374",
+          "fields": {
+            "summary": "Interlock Zone 속한 2 Door에 대해서 각각 Exit Button을 동시에 접지 시 Door가 개방되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "1. 타 Zone 생성> CoreStaton 하위 장치들로 구성된 Door로 구성\n2. 타 Zone에 추가된 Door를 Interlock Zone에 추가",
-      "타 Zone 생성\n> APB Zone\n> Schedule Lock/Unlock Zone\n> FireAlarm Zone\n> Intrusion Alarm Zone",
-      "1. FireAlarm Zone을 제외한 Zone들과는 중복으로 설정불가하다.\n=> FireAlarm Zone과는 중복으로 설정가능하다."
+    "assignee": null,
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 28.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-231/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@37c2d7ae[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@d10401c[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@62663faf[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@6d79835f[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@3a09e6bb[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@3ecb40dc[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6d038bed[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@4cc18e69[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@39888574[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@5da1ef39[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@2c0c4b83[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@6cfe3aad[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": null,
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-231/watchers",
+      "watchCount": 1,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-07-29T18:19:13.000+0900",
+    "timeoriginalestimate": null,
+    "description": "1. 개요:\r\n    안쪽 출입문과 바깥쪽 출입문이 있고 모든 출입 문이 개방되면 도주의 위험이 있으므로 어느 한쪽은 반드시 폐쇄 되어야 할 경우에 사용된다. ,\r\n    이중 문으로 구성 되어 (Air Lock) 다른 한 쪽 문을 통과 하기 전에 반드시 반대 쪽이 닫혀 있어야 하는 경우 사용된다.\r\n\r\n2. 요구사항\r\n    가. 설정\r\n          - CoreStation에서만 지원한다.\r\n          - 로컬 모드만 지원한다.\r\n          - 활성/비활성화를 지원한다.\r\n          - 출입문을 선택하도록 지원한다. (하나의 구역은 최소 2개에서 최대 4개의 출입문 지원)\r\n          - 출입문 선택시 Door Sensor가 구성된 CST 하위 장치의 Door들만 출력된다.\r\n          - 인증으로만 컨트롤 하도록 지원한다.\r\n          - Sensor 옵션을 지원하면서 그에 대한 N/O, N/C 타입을 지원한다.\r\n          - Bypass 그룹은 미지원한다.\r\n          - 타 Zone 과 중복으로 설정이 불가하다.(FireAlarm Zone에는 설정가능하다.)\r\n          - 동일타입의 Zone에 대해 중복으로 설정이 불가하다.\r\n\r\n    나. 인증 성공으로 동작하기 위한 조건\r\n          설정된 출입문의 상태가 Relay Lock 이면서 Door Close가 되었을 때 인증성공으로 동작하고 문이 개방되어야 한다.\r\n\r\n    다. 동작\r\n          - 재실 중 인증 제한이라는 옵션을 두어 재실중일 때 출입문의 개방을 허용할지 말지에 대해 동작되도록 한다. (최대 4개 지원)\r\n             : ex. Sensor Enable로 설정된 경우에는 문이 개방되지 않는다..(= 출입불가)\r\n          - Sensor enabled 인 상태에서도 fire alarm과 관리자 수동 open은 동작한다\r\n          - FireAlarm 발생과 관리자에 의해 컨트롤되는 부분에 대해서는 Interlock Zone보다 우선순위가 높다.\r\n          - 인증 성공/실패시 Slave 장치에서는 'Access Success / Access Denied'로만 Noti해준다.\r\n\r\n    라. 알람\r\n          - 구역 내 출입문이 개방된 상태인 이유로 인증이 제한되는 경우 장치 출력을 지정하여 Siren 및 Lamp를 동작할 수 있어야 한다.\r\n          - 재실 중 인증 제한(Sensor Enable)된 이유로 인증이 제한되는 경우 장치 출력을 지정하여 Siren 및 Lamp를 동작할 수 있어야 한다.\r\n\r\n    마. 모니터링\r\n          - 구역 내 출입문이 개방된 상태에서는 인증을 하더라도 Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시해야 한다.\r\n             : Zone ID, 개방된 출입문의 Door ID 정보, User ID, 출입제한(문열림에 의한) 로그가 표시되어야 한다.\r\n               (열린 출입문이 다수인 경우 Door ID가 모두 출력된다 => 개방된 Door Name+나머지 열린갯수로 표시되어짐)\r\n               -> 1) User Name / Access Denied(Interlock)\r\n               -> 1) Zone Name / Interlock door open denied alarm - 알람설정된 경우\r\n               -> 1) Door Name / Zone Name / Interlock door open denied\r\n               -> 2) Zone Name / Interlock zone Alarm Clear - 알람설정된 경우\r\n          - Sensor Enable에 의해 출입을 할 수 없는 상태에서는 인증을 하더라도 Access Deniend로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시해야 한다.\r\n             : Zone ID, Input ID, User ID 정보, 출입제한(Sensor에 의한) 로그가 표시되어야 한다.\r\n               -> 1) User Name / Access Denied(Interlock)\r\n               -> 1) Input ID / Zone Name / Interlock door open denied(Occupied)\r\n               -> 1) Zone Name / Interlock door open denied alarm(Occupied) - 알람설정된 경우\r\n               -> 2) Zone Name / Interlock zone Alarm Clear - 알람설정된 경우\r\n          - Interlock Zone에 속한 Door에 등록되지 않은 사용자로 인증할 경우 인증실패로 표시해야한다.\r\n          - Door Status에서 Interlock Zone에 설정된 Door를 선택해 컨트롤 하게될 경우 Warning을 발생시켜 사용자에 Noti해준다.\r\n ",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. Interlock Zone 추가<br/>2. 한쪽 출입문에 Door Open 발생<br/>3. 반대쪽 출입문에 Forced Door Open 발생</p></td><td></td><td><p>1. Interlock Zone의 경우 인증으로만 컨트롤된다.<br/>=&gt; Interlock door open denied 알람이 설정된 경우 해당 알람 발생.<br/>※ 문열림된 상태에서 반대편 문이 열렸다고 해서 이전에 열렸던 문이 닫히진 않는다.</p></td></tr><tr><td>2</td><td><p>1. 타 Zone 생성&gt; CoreStaton 하위 장치들로 구성된 Door로 구성<br/>2. 타 Zone에 추가된 Door를 Interlock Zone에 추가</p></td><td><p>타 Zone 생성<br/>&gt; APB Zone<br/>&gt; Schedule Lock/Unlock Zone<br/>&gt; FireAlarm Zone<br/>&gt; Intrusion Alarm Zone</p></td><td><p>1. FireAlarm Zone을 제외한 Zone들과는 중복으로 설정불가하다.<br/>=&gt; FireAlarm Zone과는 중복으로 설정가능하다.</p></td></tr><tr><td>3</td><td><p>1. Interlock Zone 추가<br/>2. Active/Inactive 설정<br/>3. 한쪽문이 열려있는 상태에서 반대편 문에 인증시도<br/>4. \"재실 중 인증제한\" Input 접지 후 인증시도</p></td><td></td><td><p>1. Active시 Interlock Zone 조건에 의해 인증제한으로 동작한다.<br/>2. Inactive시 Interlock Zone 조건에 영향을 받지않고 인증성공으로 동작한다.</p></td></tr><tr><td>4</td><td><p>1. Interlock Zone 생성<br/>2. 한쪽 출입문에 Relay On 발생<br/>3. 반대쪽 출입문에 인증시도</p></td><td></td><td><p>1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.<br/>=&gt; Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시</p>\n\n<p>2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.</p></td></tr><tr><td>5</td><td><p>1. Interlock Zone 생성<br/>2. 한쪽 출입문에 Door Open 발생<br/>3. 반대쪽 출입문에 인증시도</p></td><td></td><td><p>1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.<br/>=&gt; Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시</p>\n\n<p>2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.</p></td></tr><tr><td>6</td><td><p>1. Interlock Zone 생성<br/>2. 한쪽 출입문에 Relay On 발생<br/>3. 반대쪽 출입문에 Exit 버튼으로 출입시도</p></td><td></td><td><p>1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.<br/>=&gt; Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시</p>\n\n<p>2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.</p></td></tr><tr><td>7</td><td><p>1. Interlock Zone 생성<br/>2. 한쪽 출입문에 Door Open 발생<br/>3. 반대쪽 출입문에 Exit 버튼으로 출입시도</p></td><td></td><td><p>1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.<br/>=&gt; Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시</p>\n\n<p>2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.</p></td></tr><tr><td>8</td><td><p>1. Interlock Zone 추가<br/>2. 출입문 및 재실 중 인증제한 옵션 설정<br/>3. \"재실 중 인증제한\" Input 접지<br/>4. 인증시도</p></td><td><p>재실시 인증제한 옵션<br/>: 최대 4개 지원</p></td><td><p>1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.<br/>=&gt; Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시</p>\n\n<p>2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.<br/>&gt; Interlock Violation, Alarm - 인증 시도 장치만</p></td></tr><tr><td>9</td><td><p>1. Interlock Zone 추가<br/>2. 출입문 및 재실 중 인증제한 옵션 설정<br/>3. \"재실 중 인증제한\" Input 접지<br/>4. Exit 버튼으로 출입시도</p></td><td></td><td><p>1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.<br/>=&gt; Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시</p>\n\n<p>2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.<br/>&gt; Interlock Violation, Alarm - 인증 시도 장치만</p></td></tr><tr><td>10</td><td><p>1. Interlock Zone 생성<br/>2. Alarm 설정<br/>3. 한쪽 출입문에 Relay On 발생<br/>4. 반대쪽 출입문에 인증시도</p></td><td><p>Alarm<br/>&gt; Event: Interlock door open denied<br/>&gt; Action: Output/Alert Sound</p>\n<ul class=\"alternate\" type=\"square\">\n<li>Output: Master/Slave</li>\n<li>Alert Sound: Slave 단말기</li>\n</ul>\n</td><td><p>1. 설정한 Alarm이 발생한다.</p></td></tr><tr><td>11</td><td><p>1. Interlock Zone 추가<br/>2. A/B Door 설정<br/>3. \"Interlock door open denied\" Alarm 설정<br/>4. A Door의 Entry Device에 인증<br/>5. Relay Off전 A Door의 Exit Device에 인증</p></td><td><p>Door<br/>A Door - Entry/Exit Device 설정<br/>B Door - Entry/Exit Device 설정</p>\n\n<p>Alarm<br/>&gt; Event: Interlock door open denied<br/>&gt; Action: Output/Alert Sound</p>\n<ul class=\"alternate\" type=\"square\">\n<li>Output: Master/Slave</li>\n<li>Alert Sound: Slave 단말기</li>\n</ul>\n</td><td><p>1. 설정한 Alarm이 발생한다.<br/>&gt; 출력로그 확인 후 기재예정</p></td></tr><tr><td>12</td><td><p>1. Interlock Zone 생성<br/>2. Alarm 설정<br/>3. 한쪽 출입문에 Door Open 발생<br/>4. 반대쪽 출입문에 인증시도</p></td><td><p>Alarm<br/>&gt; Event: Interlock door open denied<br/>&gt; Action: Output/Alert Sound</p>\n<ul class=\"alternate\" type=\"square\">\n<li>Output: Master/Slave</li>\n<li>Alert Sound: Slave 단말기</li>\n</ul>\n</td><td><p>1. 설정한 Alarm이 발생한다.</p></td></tr><tr><td>13</td><td><p>1. Interlock Zone 생성<br/>2. Alarm 설정<br/>3. 한쪽 출입문에 Relay On 발생<br/>4. 반대쪽 출입문에 Exit 버튼으로 출입시도</p></td><td><p>Alarm<br/>&gt; Event: Interlock door open denied<br/>&gt; Action: Output/Alert Sound</p>\n<ul class=\"alternate\" type=\"square\">\n<li>Output: Master/Slave</li>\n<li>Alert Sound: Slave 단말기</li>\n</ul>\n</td><td><p>1. 설정한 Alarm이 발생한다.</p></td></tr><tr><td>14</td><td><p>1. Interlock Zone 생성<br/>2. Alarm 설정<br/>3. 한쪽 출입문에 Door Open 발생<br/>4. 반대쪽 출입문에 Exit 버튼으로 출입시도</p></td><td><p>Alarm<br/>&gt; Event: Interlock door open denied<br/>&gt; Action: Output/Alert Sound</p>\n<ul class=\"alternate\" type=\"square\">\n<li>Output: Master/Slave</li>\n<li>Alert Sound: Slave 단말기</li>\n</ul>\n</td><td><p>1. 설정한 Alarm이 발생한다.</p></td></tr><tr><td>15</td><td><p>1. Interlock Zone 추가<br/>2. 재실 중 인증제한 옵션 및 Alarm 설정<br/>3. \"재실 중 인증제한\" Input 접지<br/>4. 인증시도</p></td><td><p>Alarm<br/>&gt; Event: 재실 중 인증제한<br/>&gt; Action: Output/Alert Sound</p>\n<ul class=\"alternate\" type=\"square\">\n<li>Output: Master/Slave</li>\n<li>Alert Sound: Slave 단말기</li>\n</ul>\n</td><td><p>1. 설정한 Alarm이 발생한다.</p></td></tr><tr><td>16</td><td><p>1. Interlock Zone 추가<br/>2. 재실 중 인증제한 옵션 및 Alarm 설정<br/>3. \"재실 중 인증제한\" Input 접지<br/>4. Exit 버튼으로 출입시도</p></td><td><p>Alarm<br/>&gt; Event: 재실 중 인증제한<br/>&gt; Action: Output/Alert Sound</p>\n<ul class=\"alternate\" type=\"square\">\n<li>Output: Master/Slave</li>\n<li>Alert Sound: Slave 단말기</li>\n</ul>\n</td><td><p>1. 설정한 Alarm이 발생한다.</p></td></tr><tr><td>17</td><td><p>1. Interlock Zone 추가<br/>2. 등록되지 않은 사용자로 인증시도</p></td><td></td><td><p>1. 인증실패로 동작한다.</p></td></tr><tr><td>18</td><td><p>1. FireAlarm Zone 추가<br/>2. FireAlarm Zone에 추가한 Door를 Interlock Zone 추가<br/>3. FireAlarm 발생</p></td><td></td><td><p>1. FireAlarm Zone에 속한 Door의 Relay가 On으로 동작된다.<br/>※ FireAlarm이 우선순위가 높다.</p></td></tr><tr><td>19</td><td><p>1. FireAlarm Zone 추가<br/>2. FireAlarm Zone에 추가한 Door를 Interlock Zone 추가<br/>3. 재실 중 인증제한 옵션 설정<br/>4. 재실 중 인증제한 옵션의 Input 접지<br/>5. FireAlarm 발생</p></td><td></td><td><p>1. FireAlarm Zone에 속한 Door의 Relay가 On으로 동작된다.<br/>※ FireAlarm이 우선순위가 더 높다.</p></td></tr><tr><td>20</td><td><p>1. Interlock Zone 추가<br/>2. 재실 중 인증제한 옵션 설정<br/>3. 재실 중 인증제한 옵션의 Input 접지<br/>4. Door Status에서 Interlock Zone에 속한 Door 선택 후 컨트롤 시도</p></td><td></td><td><p>1. BioStar2 UI에서 Warning 발생해 Noti해준다.<br/>&gt; Manual Lock/Unlock, Open시 발생<br/>2. Interlock Zone에 속한 Door Relay에 대해 컨트롤 시킬 수 있다.<br/>3. 관리자 수동 오픈에 대한 우선순위가 더 높다.</p></td></tr><tr><td>21</td><td><p>1. Interlock Zone 추가<br/>2. Alarm 설정<br/>3. Interlock Zone에 의한 Alarm 발생<br/>4. Interlock Zone 삭제시도</p></td><td></td><td><p>1. Alarm이 발생한 경우에도 삭제가 가능하다.<br/>   &gt; 선택한 항목을 목록에서 삭제를 하겠냐는 팝업 발생</p></td></tr><tr><td>22</td><td><p>&lt;APB 설정된 Door 추가된 상태&gt;<br/>1. Interlock Zone 생성<br/>2. Door 선택</p></td><td></td><td><p>1. Door에 APB 설정된 경우 Interlock Zone의 출입문 설정 UI에서 해당출입문 미표시된다.<br/>&gt; BioStar2 Spec.</p></td></tr><tr><td>23</td><td><p>1. Interlock Zone 생성<br/>2. Alarm 설정<br/>3. Held Open Alarm 발생<br/>4. (Door Open 유지상태) Interlock Zone 설정된 Door에 인증해 Alarm 발생<br/>5. Interlock Zone에 설정된 Alarm으로 동작되는지 여부 확인</p></td><td><p>출입문<br/>&gt; Held Open Alarm 설정<br/>: Output(= Relay On) <br/>: Sound or buzzer</p>\n\n<p>Interlock Zone<br/>&gt; 문열림에 대한 Alarm 설정<br/>: Output(=Relay Off)<br/>: Sound or Buzzer<br/>※출입문의 Alarm에 설정한 포트와 동일포트로 설정</p></td><td><p>1. Held Open Alarm이 계속 동작되어야 한다.<br/>&gt; Held Open Alarm의 Priority가 Interlock Zone Alarm보다 더 높다.</p></td></tr><tr><td>24</td><td><p>1. Interlock Zone 생성<br/>2. Alarm 설정<br/>3. Forced Open Alarm 발생<br/>4. (Door Open 유지상태) Interlock Zone 설정된 Door에 인증해 Alarm 발생<br/>5. Interlock Zone에 설정된 Alarm으로 동작되는지 여부 확인</p></td><td><p>출입문<br/>&gt; Forced Open Alarm 설정<br/>: Output(= Relay On)<br/>: Sound or buzzer</p>\n\n<p>Interlock Zone<br/>&gt; 문열림에 대한 Alarm 설정<br/>: Output(=Relay Off)<br/>: Sound or Buzzer<br/>※출입문의 Alarm에 설정한 포트와 동일포트로 설정</p></td><td><p>1. Forced Open Alarm이 계속 동작되어야 한다.<br/>&gt; Forced Open Alarm의 Priority가 Interlock Zone Alarm보다 더 높다.</p></td></tr><tr><td>25</td><td><p>1. Interlock Zone 생성<br/>2. Alarm 설정<br/>3. Interlock Alarm 발생되도록 동작<br/>4. Zone Status의 Alarm 출력여부 확인<br/>5. Interlock Zone 설정변경없이 적용<br/>6. Zone Status의 Alarm 출력여부 확인</p></td><td></td><td><p>1. Active/Inactive 설정과 무관하게 Alarm 상태를 유지해야 한다.</p></td></tr><tr><td>26</td><td><p>1. Interlock Zone 생성<br/>2. 두개의 Door에 동시인증시도<br/>3. Door 개방여부 확인</p></td><td></td><td><p>1. 두 Door가 동시에 개방되지 않아야 한다.</p></td></tr><tr><td>27</td><td><p>1. Interlock Zone 생성<br/>2. 두개의 Door의 Exit Button 동시 접지시도<br/>3. Door 개방여부 확인</p></td><td></td><td><p>1. 두 Door가 동시에 개방되지 않아야 한다.</p></td></tr><tr><td>28</td><td><p>1. Interlock Zone 생성<br/>2. Door Status&gt; Interlock Zone에 설정된 Door 모두선택&gt; 수동개방<br/>3. Interlock Zone에 속한 임의 Door에 인증시도</p></td><td></td><td><p>1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.<br/>=&gt; Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시</p>\n\n<p>2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.<br/>&gt; Interlock Violation - 인증 시도 장치만<br/>&gt; Alarm - Interlock Zone의 Alarm에 설정된 모든 장치에서</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [
+      "COMMONR-47"
     ],
-    [
-      3,
-      "1. Interlock Zone 추가\n2. Active/Inactive 설정\n3. 한쪽문이 열려있는 상태에서 반대편 문에 인증시도\n4. \"재실 중 인증제한\" Input 접지 후 인증시도",
-      "",
-      "1. Active시 Interlock Zone 조건에 의해 인증제한으로 동작한다.\n2. Inactive시 Interlock Zone 조건에 영향을 받지않고 인증성공으로 동작한다."
-    ],
-    [
-      4,
-      "1. Interlock Zone 생성\n2. 한쪽 출입문에 Relay On 발생\n3. 반대쪽 출입문에 인증시도",
-      "",
-      "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다."
-    ],
-    [
-      5,
-      "1. Interlock Zone 생성\n2. 한쪽 출입문에 Door Open 발생\n3. 반대쪽 출입문에 인증시도",
-      "",
-      "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다."
-    ],
-    [
-      6,
-      "1. Interlock Zone 생성\n2. 한쪽 출입문에 Relay On 발생\n3. 반대쪽 출입문에 Exit 버튼으로 출입시도",
-      "",
-      "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다."
-    ],
-    [
-      7,
-      "1. Interlock Zone 생성\n2. 한쪽 출입문에 Door Open 발생\n3. 반대쪽 출입문에 Exit 버튼으로 출입시도",
-      "",
-      "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다."
-    ],
-    [
-      8,
-      "1. Interlock Zone 추가\n2. 출입문 및 재실 중 인증제한 옵션 설정\n3. \"재실 중 인증제한\" Input 접지\n4. 인증시도",
-      "재실시 인증제한 옵션\n: 최대 4개 지원",
-      "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.\n> Interlock Violation, Alarm - 인증 시도 장치만"
-    ],
-    [
-      9,
-      "1. Interlock Zone 추가\n2. 출입문 및 재실 중 인증제한 옵션 설정\n3. \"재실 중 인증제한\" Input 접지\n4. Exit 버튼으로 출입시도",
-      "",
-      "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.\n> Interlock Violation, Alarm - 인증 시도 장치만"
-    ],
-    [
-      10,
-      "1. Interlock Zone 생성\n2. Alarm 설정\n3. 한쪽 출입문에 Relay On 발생\n4. 반대쪽 출입문에 인증시도",
-      "Alarm\n> Event: Interlock door open denied\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
-      "1. 설정한 Alarm이 발생한다."
-    ],
-    [
-      11,
-      "1. Interlock Zone 추가\n2. A/B Door 설정\n3. \"Interlock door open denied\" Alarm 설정\n4. A Door의 Entry Device에 인증\n5. Relay Off전 A Door의 Exit Device에 인증",
-      "Door\nA Door - Entry/Exit Device 설정\nB Door - Entry/Exit Device 설정\n\nAlarm\n> Event: Interlock door open denied\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
-      "1. 설정한 Alarm이 발생한다.\n> 출력로그 확인 후 기재예정"
-    ],
-    [
-      12,
-      "1. Interlock Zone 생성\n2. Alarm 설정\n3. 한쪽 출입문에 Door Open 발생\n4. 반대쪽 출입문에 인증시도",
-      "Alarm\n> Event: Interlock door open denied\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
-      "1. 설정한 Alarm이 발생한다."
-    ],
-    [
-      13,
-      "1. Interlock Zone 생성\n2. Alarm 설정\n3. 한쪽 출입문에 Relay On 발생\n4. 반대쪽 출입문에 Exit 버튼으로 출입시도",
-      "Alarm\n> Event: Interlock door open denied\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
-      "1. 설정한 Alarm이 발생한다."
-    ],
-    [
-      14,
-      "1. Interlock Zone 생성\n2. Alarm 설정\n3. 한쪽 출입문에 Door Open 발생\n4. 반대쪽 출입문에 Exit 버튼으로 출입시도",
-      "Alarm\n> Event: Interlock door open denied\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
-      "1. 설정한 Alarm이 발생한다."
-    ],
-    [
-      15,
-      "1. Interlock Zone 추가\n2. 재실 중 인증제한 옵션 및 Alarm 설정\n3. \"재실 중 인증제한\" Input 접지\n4. 인증시도",
-      "Alarm\n> Event: 재실 중 인증제한\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
-      "1. 설정한 Alarm이 발생한다."
-    ],
-    [
-      16,
-      "1. Interlock Zone 추가\n2. 재실 중 인증제한 옵션 및 Alarm 설정\n3. \"재실 중 인증제한\" Input 접지\n4. Exit 버튼으로 출입시도",
-      "Alarm\n> Event: 재실 중 인증제한\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
-      "1. 설정한 Alarm이 발생한다."
-    ],
-    [
-      17,
-      "1. Interlock Zone 추가\n2. 등록되지 않은 사용자로 인증시도",
-      "",
-      "1. 인증실패로 동작한다."
-    ],
-    [
-      18,
-      "1. FireAlarm Zone 추가\n2. FireAlarm Zone에 추가한 Door를 Interlock Zone 추가\n3. FireAlarm 발생",
-      "",
-      "1. FireAlarm Zone에 속한 Door의 Relay가 On으로 동작된다.\n※ FireAlarm이 우선순위가 높다."
-    ],
-    [
-      19,
-      "1. FireAlarm Zone 추가\n2. FireAlarm Zone에 추가한 Door를 Interlock Zone 추가\n3. 재실 중 인증제한 옵션 설정\n4. 재실 중 인증제한 옵션의 Input 접지\n5. FireAlarm 발생",
-      "",
-      "1. FireAlarm Zone에 속한 Door의 Relay가 On으로 동작된다.\n※ FireAlarm이 우선순위가 더 높다."
-    ],
-    [
-      20,
-      "1. Interlock Zone 추가\n2. 재실 중 인증제한 옵션 설정\n3. 재실 중 인증제한 옵션의 Input 접지\n4. Door Status에서 Interlock Zone에 속한 Door 선택 후 컨트롤 시도",
-      "",
-      "1. BioStar2 UI에서 Warning 발생해 Noti해준다.\n> Manual Lock/Unlock, Open시 발생\n2. Interlock Zone에 속한 Door Relay에 대해 컨트롤 시킬 수 있다.\n3. 관리자 수동 오픈에 대한 우선순위가 더 높다."
-    ],
-    [
-      21,
-      "1. Interlock Zone 추가\n2. Alarm 설정\n3. Interlock Zone에 의한 Alarm 발생\n4. Interlock Zone 삭제시도",
-      "",
-      "1. Alarm이 발생한 경우에도 삭제가 가능하다.\n   > 선택한 항목을 목록에서 삭제를 하겠냐는 팝업 발생"
-    ],
-    [
-      22,
-      "<APB 설정된 Door 추가된 상태>\n1. Interlock Zone 생성\n2. Door 선택",
-      "",
-      "1. Door에 APB 설정된 경우 Interlock Zone의 출입문 설정 UI에서 해당출입문 미표시된다.\n> BioStar2 Spec."
-    ],
-    [
-      23,
-      "1. Interlock Zone 생성\n2. Alarm 설정\n3. Held Open Alarm 발생\n4. (Door Open 유지상태) Interlock Zone 설정된 Door에 인증해 Alarm 발생\n5. Interlock Zone에 설정된 Alarm으로 동작되는지 여부 확인",
-      "출입문\n> Held Open Alarm 설정\n: Output(= Relay On) \n: Sound or buzzer\n\nInterlock Zone\n> 문열림에 대한 Alarm 설정\n: Output(=Relay Off)\n: Sound or Buzzer\n※출입문의 Alarm에 설정한 포트와 동일포트로 설정",
-      "1. Held Open Alarm이 계속 동작되어야 한다.\n> Held Open Alarm의 Priority가 Interlock Zone Alarm보다 더 높다."
-    ],
-    [
-      24,
-      "1. Interlock Zone 생성\n2. Alarm 설정\n3. Forced Open Alarm 발생\n4. (Door Open 유지상태) Interlock Zone 설정된 Door에 인증해 Alarm 발생\n5. Interlock Zone에 설정된 Alarm으로 동작되는지 여부 확인",
-      "출입문\n> Forced Open Alarm 설정\n: Output(= Relay On)\n: Sound or buzzer\n\nInterlock Zone\n> 문열림에 대한 Alarm 설정\n: Output(=Relay Off)\n: Sound or Buzzer\n※출입문의 Alarm에 설정한 포트와 동일포트로 설정",
-      "1. Forced Open Alarm이 계속 동작되어야 한다.\n> Forced Open Alarm의 Priority가 Interlock Zone Alarm보다 더 높다."
-    ],
-    [
-      25,
-      "1. Interlock Zone 생성\n2. Alarm 설정\n3. Interlock Alarm 발생되도록 동작\n4. Zone Status의 Alarm 출력여부 확인\n5. Interlock Zone 설정변경없이 적용\n6. Zone Status의 Alarm 출력여부 확인",
-      "",
-      "1. Active/Inactive 설정과 무관하게 Alarm 상태를 유지해야 한다."
-    ],
-    [
-      26,
-      "1. Interlock Zone 생성\n2. 두개의 Door에 동시인증시도\n3. Door 개방여부 확인",
-      "",
-      "1. 두 Door가 동시에 개방되지 않아야 한다."
-    ],
-    [
-      27,
-      "1. Interlock Zone 생성\n2. 두개의 Door의 Exit Button 동시 접지시도\n3. Door 개방여부 확인",
-      "",
-      "1. 두 Door가 동시에 개방되지 않아야 한다."
-    ],
-    [
-      28,
-      "1. Interlock Zone 생성\n2. Door Status> Interlock Zone에 설정된 Door 모두선택> 수동개방\n3. Interlock Zone에 속한 임의 Door에 인증시도",
-      "",
-      "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.\n> Interlock Violation - 인증 시도 장치만\n> Alarm - Interlock Zone의 Alarm에 설정된 모든 장치에서"
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-231",
-    "description": "",
-    "test_step": [
-      "1. Interlock Zone 추가\n2. 한쪽 출입문에 Door Open 발생\n3. 반대쪽 출입문에 Forced Door Open 발생",
-      "1. 타 Zone 생성> CoreStaton 하위 장치들로 구성된 Door로 구성\n2. 타 Zone에 추가된 Door를 Interlock Zone에 추가",
-      "1. Interlock Zone 추가\n2. Active/Inactive 설정\n3. 한쪽문이 열려있는 상태에서 반대편 문에 인증시도\n4. \"재실 중 인증제한\" Input 접지 후 인증시도",
-      "1. Interlock Zone 생성\n2. 한쪽 출입문에 Relay On 발생\n3. 반대쪽 출입문에 인증시도",
-      "1. Interlock Zone 생성\n2. 한쪽 출입문에 Door Open 발생\n3. 반대쪽 출입문에 인증시도",
-      "1. Interlock Zone 생성\n2. 한쪽 출입문에 Relay On 발생\n3. 반대쪽 출입문에 Exit 버튼으로 출입시도",
-      "1. Interlock Zone 생성\n2. 한쪽 출입문에 Door Open 발생\n3. 반대쪽 출입문에 Exit 버튼으로 출입시도",
-      "1. Interlock Zone 추가\n2. 출입문 및 재실 중 인증제한 옵션 설정\n3. \"재실 중 인증제한\" Input 접지\n4. 인증시도",
-      "1. Interlock Zone 추가\n2. 출입문 및 재실 중 인증제한 옵션 설정\n3. \"재실 중 인증제한\" Input 접지\n4. Exit 버튼으로 출입시도",
-      "1. Interlock Zone 생성\n2. Alarm 설정\n3. 한쪽 출입문에 Relay On 발생\n4. 반대쪽 출입문에 인증시도",
-      "1. Interlock Zone 추가\n2. A/B Door 설정\n3. \"Interlock door open denied\" Alarm 설정\n4. A Door의 Entry Device에 인증\n5. Relay Off전 A Door의 Exit Device에 인증",
-      "1. Interlock Zone 생성\n2. Alarm 설정\n3. 한쪽 출입문에 Door Open 발생\n4. 반대쪽 출입문에 인증시도",
-      "1. Interlock Zone 생성\n2. Alarm 설정\n3. 한쪽 출입문에 Relay On 발생\n4. 반대쪽 출입문에 Exit 버튼으로 출입시도",
-      "1. Interlock Zone 생성\n2. Alarm 설정\n3. 한쪽 출입문에 Door Open 발생\n4. 반대쪽 출입문에 Exit 버튼으로 출입시도",
-      "1. Interlock Zone 추가\n2. 재실 중 인증제한 옵션 및 Alarm 설정\n3. \"재실 중 인증제한\" Input 접지\n4. 인증시도",
-      "1. Interlock Zone 추가\n2. 재실 중 인증제한 옵션 및 Alarm 설정\n3. \"재실 중 인증제한\" Input 접지\n4. Exit 버튼으로 출입시도",
-      "1. Interlock Zone 추가\n2. 등록되지 않은 사용자로 인증시도",
-      "1. FireAlarm Zone 추가\n2. FireAlarm Zone에 추가한 Door를 Interlock Zone 추가\n3. FireAlarm 발생",
-      "1. FireAlarm Zone 추가\n2. FireAlarm Zone에 추가한 Door를 Interlock Zone 추가\n3. 재실 중 인증제한 옵션 설정\n4. 재실 중 인증제한 옵션의 Input 접지\n5. FireAlarm 발생",
-      "1. Interlock Zone 추가\n2. 재실 중 인증제한 옵션 설정\n3. 재실 중 인증제한 옵션의 Input 접지\n4. Door Status에서 Interlock Zone에 속한 Door 선택 후 컨트롤 시도",
-      "1. Interlock Zone 추가\n2. Alarm 설정\n3. Interlock Zone에 의한 Alarm 발생\n4. Interlock Zone 삭제시도",
-      "<APB 설정된 Door 추가된 상태>\n1. Interlock Zone 생성\n2. Door 선택",
-      "1. Interlock Zone 생성\n2. Alarm 설정\n3. Held Open Alarm 발생\n4. (Door Open 유지상태) Interlock Zone 설정된 Door에 인증해 Alarm 발생\n5. Interlock Zone에 설정된 Alarm으로 동작되는지 여부 확인",
-      "1. Interlock Zone 생성\n2. Alarm 설정\n3. Forced Open Alarm 발생\n4. (Door Open 유지상태) Interlock Zone 설정된 Door에 인증해 Alarm 발생\n5. Interlock Zone에 설정된 Alarm으로 동작되는지 여부 확인",
-      "1. Interlock Zone 생성\n2. Alarm 설정\n3. Interlock Alarm 발생되도록 동작\n4. Zone Status의 Alarm 출력여부 확인\n5. Interlock Zone 설정변경없이 적용\n6. Zone Status의 Alarm 출력여부 확인",
-      "1. Interlock Zone 생성\n2. 두개의 Door에 동시인증시도\n3. Door 개방여부 확인",
-      "1. Interlock Zone 생성\n2. 두개의 Door의 Exit Button 동시 접지시도\n3. Door 개방여부 확인",
-      "1. Interlock Zone 생성\n2. Door Status> Interlock Zone에 설정된 Door 모두선택> 수동개방\n3. Interlock Zone에 속한 임의 Door에 인증시도"
-    ],
-    "data": [
-      "타 Zone 생성\n> APB Zone\n> Schedule Lock/Unlock Zone\n> FireAlarm Zone\n> Intrusion Alarm Zone",
-      "재실시 인증제한 옵션\n: 최대 4개 지원",
-      "Alarm\n> Event: Interlock door open denied\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
-      "Door\nA Door - Entry/Exit Device 설정\nB Door - Entry/Exit Device 설정\n\nAlarm\n> Event: Interlock door open denied\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
-      "Alarm\n> Event: Interlock door open denied\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
-      "Alarm\n> Event: Interlock door open denied\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
-      "Alarm\n> Event: Interlock door open denied\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
-      "Alarm\n> Event: 재실 중 인증제한\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
-      "Alarm\n> Event: 재실 중 인증제한\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
-      "출입문\n> Held Open Alarm 설정\n: Output(= Relay On) \n: Sound or buzzer\n\nInterlock Zone\n> 문열림에 대한 Alarm 설정\n: Output(=Relay Off)\n: Sound or Buzzer\n※출입문의 Alarm에 설정한 포트와 동일포트로 설정",
-      "출입문\n> Forced Open Alarm 설정\n: Output(= Relay On)\n: Sound or buzzer\n\nInterlock Zone\n> 문열림에 대한 Alarm 설정\n: Output(=Relay Off)\n: Sound or Buzzer\n※출입문의 Alarm에 설정한 포트와 동일포트로 설정"
-    ],
-    "expected_result": [
-      "1. Interlock Zone의 경우 인증으로만 컨트롤된다.\n=> Interlock door open denied 알람이 설정된 경우 해당 알람 발생.\n※ 문열림된 상태에서 반대편 문이 열렸다고 해서 이전에 열렸던 문이 닫히진 않는다.",
-      "1. FireAlarm Zone을 제외한 Zone들과는 중복으로 설정불가하다.\n=> FireAlarm Zone과는 중복으로 설정가능하다.",
-      "1. Active시 Interlock Zone 조건에 의해 인증제한으로 동작한다.\n2. Inactive시 Interlock Zone 조건에 영향을 받지않고 인증성공으로 동작한다.",
-      "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.",
-      "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.",
-      "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.",
-      "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.",
-      "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.\n> Interlock Violation, Alarm - 인증 시도 장치만",
-      "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.\n> Interlock Violation, Alarm - 인증 시도 장치만",
-      "1. 설정한 Alarm이 발생한다.",
-      "1. 설정한 Alarm이 발생한다.\n> 출력로그 확인 후 기재예정",
-      "1. 설정한 Alarm이 발생한다.",
-      "1. 설정한 Alarm이 발생한다.",
-      "1. 설정한 Alarm이 발생한다.",
-      "1. 설정한 Alarm이 발생한다.",
-      "1. 설정한 Alarm이 발생한다.",
-      "1. 인증실패로 동작한다.",
-      "1. FireAlarm Zone에 속한 Door의 Relay가 On으로 동작된다.\n※ FireAlarm이 우선순위가 높다.",
-      "1. FireAlarm Zone에 속한 Door의 Relay가 On으로 동작된다.\n※ FireAlarm이 우선순위가 더 높다.",
-      "1. BioStar2 UI에서 Warning 발생해 Noti해준다.\n> Manual Lock/Unlock, Open시 발생\n2. Interlock Zone에 속한 Door Relay에 대해 컨트롤 시킬 수 있다.\n3. 관리자 수동 오픈에 대한 우선순위가 더 높다.",
-      "1. Alarm이 발생한 경우에도 삭제가 가능하다.\n   > 선택한 항목을 목록에서 삭제를 하겠냐는 팝업 발생",
-      "1. Door에 APB 설정된 경우 Interlock Zone의 출입문 설정 UI에서 해당출입문 미표시된다.\n> BioStar2 Spec.",
-      "1. Held Open Alarm이 계속 동작되어야 한다.\n> Held Open Alarm의 Priority가 Interlock Zone Alarm보다 더 높다.",
-      "1. Forced Open Alarm이 계속 동작되어야 한다.\n> Forced Open Alarm의 Priority가 Interlock Zone Alarm보다 더 높다.",
-      "1. Active/Inactive 설정과 무관하게 Alarm 상태를 유지해야 한다.",
-      "1. 두 Door가 동시에 개방되지 않아야 한다.",
-      "1. 두 Door가 동시에 개방되지 않아야 한다.",
-      "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.\n> Interlock Violation - 인증 시도 장치만\n> Alarm - Interlock Zone의 Alarm에 설정된 모든 장치에서"
-    ]
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 24432,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 1,
+              "latestFinal": 0,
+              "latestId": 34433,
+              "latestFinalId": 30005
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180329",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10393,
+              "latestFinalId": 10393
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_190805_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15265,
+              "latestFinalId": 15265
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_190809_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15624,
+              "latestFinalId": 15624
+            }
+          ]
+        },
+        {
+          "group": "FL_V1.0_190515(PS)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 14176,
+              "latestFinalId": 14176
+            }
+          ]
+        },
+        {
+          "group": "V1.8.0_190806_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15386,
+              "latestFinalId": 15386
+            }
+          ]
+        },
+        {
+          "group": "V1.7.1_181204(Hotfix)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12731,
+              "latestFinalId": 12731
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_181210_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12843,
+              "latestFinalId": 12843
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180322",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10213,
+              "latestFinalId": 10213
+            }
+          ]
+        },
+        {
+          "group": "V1.7.0_190806_Interaction 7차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15133,
+              "latestFinalId": 15133
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_181119_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12978,
+              "latestFinalId": 12978
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_190806_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15507,
+              "latestFinalId": 15507
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_20200601_Interaction 12차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 17239,
+              "latestFinalId": 17239
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "구역 - Interlock Zone - Slave Device UI 및 Alarm 동작",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 5038,
+          "index": 1,
+          "step": "1. Interlock Zone 추가\n2. 한쪽 출입문에 Door Open 발생\n3. 반대쪽 출입문에 Forced Door Open 발생",
+          "data": "",
+          "result": "1. Interlock Zone의 경우 인증으로만 컨트롤된다.\n=> Interlock door open denied 알람이 설정된 경우 해당 알람 발생.\n※ 문열림된 상태에서 반대편 문이 열렸다고 해서 이전에 열렸던 문이 닫히진 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 5039,
+          "index": 2,
+          "step": "1. 타 Zone 생성> CoreStaton 하위 장치들로 구성된 Door로 구성\n2. 타 Zone에 추가된 Door를 Interlock Zone에 추가",
+          "data": "타 Zone 생성\n> APB Zone\n> Schedule Lock/Unlock Zone\n> FireAlarm Zone\n> Intrusion Alarm Zone",
+          "result": "1. FireAlarm Zone을 제외한 Zone들과는 중복으로 설정불가하다.\n=> FireAlarm Zone과는 중복으로 설정가능하다.",
+          "attachments": []
+        },
+        {
+          "id": 5041,
+          "index": 3,
+          "step": "1. Interlock Zone 추가\n2. Active/Inactive 설정\n3. 한쪽문이 열려있는 상태에서 반대편 문에 인증시도\n4. \"재실 중 인증제한\" Input 접지 후 인증시도",
+          "data": "",
+          "result": "1. Active시 Interlock Zone 조건에 의해 인증제한으로 동작한다.\n2. Inactive시 Interlock Zone 조건에 영향을 받지않고 인증성공으로 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 5043,
+          "index": 4,
+          "step": "1. Interlock Zone 생성\n2. 한쪽 출입문에 Relay On 발생\n3. 반대쪽 출입문에 인증시도",
+          "data": "",
+          "result": "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.",
+          "attachments": []
+        },
+        {
+          "id": 5044,
+          "index": 5,
+          "step": "1. Interlock Zone 생성\n2. 한쪽 출입문에 Door Open 발생\n3. 반대쪽 출입문에 인증시도",
+          "data": "",
+          "result": "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.",
+          "attachments": []
+        },
+        {
+          "id": 5045,
+          "index": 6,
+          "step": "1. Interlock Zone 생성\n2. 한쪽 출입문에 Relay On 발생\n3. 반대쪽 출입문에 Exit 버튼으로 출입시도",
+          "data": "",
+          "result": "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.",
+          "attachments": []
+        },
+        {
+          "id": 5046,
+          "index": 7,
+          "step": "1. Interlock Zone 생성\n2. 한쪽 출입문에 Door Open 발생\n3. 반대쪽 출입문에 Exit 버튼으로 출입시도",
+          "data": "",
+          "result": "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.",
+          "attachments": []
+        },
+        {
+          "id": 5047,
+          "index": 8,
+          "step": "1. Interlock Zone 추가\n2. 출입문 및 재실 중 인증제한 옵션 설정\n3. \"재실 중 인증제한\" Input 접지\n4. 인증시도",
+          "data": "재실시 인증제한 옵션\n: 최대 4개 지원",
+          "result": "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.\n> Interlock Violation, Alarm - 인증 시도 장치만",
+          "attachments": []
+        },
+        {
+          "id": 5048,
+          "index": 9,
+          "step": "1. Interlock Zone 추가\n2. 출입문 및 재실 중 인증제한 옵션 설정\n3. \"재실 중 인증제한\" Input 접지\n4. Exit 버튼으로 출입시도",
+          "data": "",
+          "result": "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.\n> Interlock Violation, Alarm - 인증 시도 장치만",
+          "attachments": []
+        },
+        {
+          "id": 5049,
+          "index": 10,
+          "step": "1. Interlock Zone 생성\n2. Alarm 설정\n3. 한쪽 출입문에 Relay On 발생\n4. 반대쪽 출입문에 인증시도",
+          "data": "Alarm\n> Event: Interlock door open denied\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
+          "result": "1. 설정한 Alarm이 발생한다.",
+          "attachments": []
+        },
+        {
+          "id": 5050,
+          "index": 11,
+          "step": "1. Interlock Zone 추가\n2. A/B Door 설정\n3. \"Interlock door open denied\" Alarm 설정\n4. A Door의 Entry Device에 인증\n5. Relay Off전 A Door의 Exit Device에 인증",
+          "data": "Door\nA Door - Entry/Exit Device 설정\nB Door - Entry/Exit Device 설정\n\nAlarm\n> Event: Interlock door open denied\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
+          "result": "1. 설정한 Alarm이 발생한다.\n> 출력로그 확인 후 기재예정",
+          "attachments": []
+        },
+        {
+          "id": 5051,
+          "index": 12,
+          "step": "1. Interlock Zone 생성\n2. Alarm 설정\n3. 한쪽 출입문에 Door Open 발생\n4. 반대쪽 출입문에 인증시도",
+          "data": "Alarm\n> Event: Interlock door open denied\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
+          "result": "1. 설정한 Alarm이 발생한다.",
+          "attachments": []
+        },
+        {
+          "id": 5052,
+          "index": 13,
+          "step": "1. Interlock Zone 생성\n2. Alarm 설정\n3. 한쪽 출입문에 Relay On 발생\n4. 반대쪽 출입문에 Exit 버튼으로 출입시도",
+          "data": "Alarm\n> Event: Interlock door open denied\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
+          "result": "1. 설정한 Alarm이 발생한다.",
+          "attachments": []
+        },
+        {
+          "id": 5053,
+          "index": 14,
+          "step": "1. Interlock Zone 생성\n2. Alarm 설정\n3. 한쪽 출입문에 Door Open 발생\n4. 반대쪽 출입문에 Exit 버튼으로 출입시도",
+          "data": "Alarm\n> Event: Interlock door open denied\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
+          "result": "1. 설정한 Alarm이 발생한다.",
+          "attachments": []
+        },
+        {
+          "id": 5054,
+          "index": 15,
+          "step": "1. Interlock Zone 추가\n2. 재실 중 인증제한 옵션 및 Alarm 설정\n3. \"재실 중 인증제한\" Input 접지\n4. 인증시도",
+          "data": "Alarm\n> Event: 재실 중 인증제한\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
+          "result": "1. 설정한 Alarm이 발생한다.",
+          "attachments": []
+        },
+        {
+          "id": 5055,
+          "index": 16,
+          "step": "1. Interlock Zone 추가\n2. 재실 중 인증제한 옵션 및 Alarm 설정\n3. \"재실 중 인증제한\" Input 접지\n4. Exit 버튼으로 출입시도",
+          "data": "Alarm\n> Event: 재실 중 인증제한\n> Action: Output/Alert Sound\n  - Output: Master/Slave\n  - Alert Sound: Slave 단말기",
+          "result": "1. 설정한 Alarm이 발생한다.",
+          "attachments": []
+        },
+        {
+          "id": 5056,
+          "index": 17,
+          "step": "1. Interlock Zone 추가\n2. 등록되지 않은 사용자로 인증시도",
+          "data": "",
+          "result": "1. 인증실패로 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 5058,
+          "index": 18,
+          "step": "1. FireAlarm Zone 추가\n2. FireAlarm Zone에 추가한 Door를 Interlock Zone 추가\n3. FireAlarm 발생",
+          "data": "",
+          "result": "1. FireAlarm Zone에 속한 Door의 Relay가 On으로 동작된다.\n※ FireAlarm이 우선순위가 높다.",
+          "attachments": []
+        },
+        {
+          "id": 5059,
+          "index": 19,
+          "step": "1. FireAlarm Zone 추가\n2. FireAlarm Zone에 추가한 Door를 Interlock Zone 추가\n3. 재실 중 인증제한 옵션 설정\n4. 재실 중 인증제한 옵션의 Input 접지\n5. FireAlarm 발생",
+          "data": "",
+          "result": "1. FireAlarm Zone에 속한 Door의 Relay가 On으로 동작된다.\n※ FireAlarm이 우선순위가 더 높다.",
+          "attachments": []
+        },
+        {
+          "id": 5060,
+          "index": 20,
+          "step": "1. Interlock Zone 추가\n2. 재실 중 인증제한 옵션 설정\n3. 재실 중 인증제한 옵션의 Input 접지\n4. Door Status에서 Interlock Zone에 속한 Door 선택 후 컨트롤 시도",
+          "data": "",
+          "result": "1. BioStar2 UI에서 Warning 발생해 Noti해준다.\n> Manual Lock/Unlock, Open시 발생\n2. Interlock Zone에 속한 Door Relay에 대해 컨트롤 시킬 수 있다.\n3. 관리자 수동 오픈에 대한 우선순위가 더 높다.",
+          "attachments": []
+        },
+        {
+          "id": 5061,
+          "index": 21,
+          "step": "1. Interlock Zone 추가\n2. Alarm 설정\n3. Interlock Zone에 의한 Alarm 발생\n4. Interlock Zone 삭제시도",
+          "data": "",
+          "result": "1. Alarm이 발생한 경우에도 삭제가 가능하다.\n   > 선택한 항목을 목록에서 삭제를 하겠냐는 팝업 발생",
+          "attachments": []
+        },
+        {
+          "id": 5062,
+          "index": 22,
+          "step": "<APB 설정된 Door 추가된 상태>\n1. Interlock Zone 생성\n2. Door 선택",
+          "data": "",
+          "result": "1. Door에 APB 설정된 경우 Interlock Zone의 출입문 설정 UI에서 해당출입문 미표시된다.\n> BioStar2 Spec.",
+          "attachments": []
+        },
+        {
+          "id": 5065,
+          "index": 23,
+          "step": "1. Interlock Zone 생성\n2. Alarm 설정\n3. Held Open Alarm 발생\n4. (Door Open 유지상태) Interlock Zone 설정된 Door에 인증해 Alarm 발생\n5. Interlock Zone에 설정된 Alarm으로 동작되는지 여부 확인",
+          "data": "출입문\n> Held Open Alarm 설정\n: Output(= Relay On) \n: Sound or buzzer\n\nInterlock Zone\n> 문열림에 대한 Alarm 설정\n: Output(=Relay Off)\n: Sound or Buzzer\n※출입문의 Alarm에 설정한 포트와 동일포트로 설정",
+          "result": "1. Held Open Alarm이 계속 동작되어야 한다.\n> Held Open Alarm의 Priority가 Interlock Zone Alarm보다 더 높다.",
+          "attachments": []
+        },
+        {
+          "id": 5066,
+          "index": 24,
+          "step": "1. Interlock Zone 생성\n2. Alarm 설정\n3. Forced Open Alarm 발생\n4. (Door Open 유지상태) Interlock Zone 설정된 Door에 인증해 Alarm 발생\n5. Interlock Zone에 설정된 Alarm으로 동작되는지 여부 확인",
+          "data": "출입문\n> Forced Open Alarm 설정\n: Output(= Relay On)\n: Sound or buzzer\n\nInterlock Zone\n> 문열림에 대한 Alarm 설정\n: Output(=Relay Off)\n: Sound or Buzzer\n※출입문의 Alarm에 설정한 포트와 동일포트로 설정",
+          "result": "1. Forced Open Alarm이 계속 동작되어야 한다.\n> Forced Open Alarm의 Priority가 Interlock Zone Alarm보다 더 높다.",
+          "attachments": []
+        },
+        {
+          "id": 5067,
+          "index": 25,
+          "step": "1. Interlock Zone 생성\n2. Alarm 설정\n3. Interlock Alarm 발생되도록 동작\n4. Zone Status의 Alarm 출력여부 확인\n5. Interlock Zone 설정변경없이 적용\n6. Zone Status의 Alarm 출력여부 확인",
+          "result": "1. Active/Inactive 설정과 무관하게 Alarm 상태를 유지해야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 5068,
+          "index": 26,
+          "step": "1. Interlock Zone 생성\n2. 두개의 Door에 동시인증시도\n3. Door 개방여부 확인",
+          "data": "",
+          "result": "1. 두 Door가 동시에 개방되지 않아야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 5069,
+          "index": 27,
+          "step": "1. Interlock Zone 생성\n2. 두개의 Door의 Exit Button 동시 접지시도\n3. Door 개방여부 확인",
+          "data": "",
+          "result": "1. 두 Door가 동시에 개방되지 않아야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 5071,
+          "index": 28,
+          "step": "1. Interlock Zone 생성\n2. Door Status> Interlock Zone에 설정된 Door 모두선택> 수동개방\n3. Interlock Zone에 속한 임의 Door에 인증시도",
+          "data": "",
+          "result": "1. Access Denied로 처리되고 Interlock Zone에 의한 출입 거부 로그를 표시한다.\n=> Zone ID, 개방된 출입문의 Door ID, User ID, 문열림에 의한 출입제한 로그 표시\n\n2. Interlock Zone 조건에 의해 인증실패가 된 경우 화면에 Interlock Violation 문구가 출력된다.\n> Interlock Violation - 인증 시도 장치만\n> Alarm - Interlock Zone의 Alarm에 설정된 모든 장치에서",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [],
+      "maxResults": 0,
+      "total": 0,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+      "name": "미할당",
+      "id": "10100"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+      "name": "할 일",
+      "id": "10000",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "할 일"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzsmf3:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2018-01-20T20:12:10.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

@@ -1,121 +1,439 @@
 {
-  "id": "COMMONR-372",
-  "content": [
-    [
-      1,
-      "[출입문]\n1. 본문에 언급한 Input Port에 대해 Door의 Exit/Sensor에 설정\n2. Switch Type에 따른 동작여부 확인",
-      "",
-      "1. N/O - Input 접지시 Unlock 및 Open으로 동작한다.\n2. N/C - Input 접지 해제시 Unlock 및 Open으로 동작한다."
-    ],
-    [
-      2,
-      "[출입문]\n1. Anti-Tailgating Sensor에 본문에 언급한 Input Port 설정\n2. Switch Type: N/O 설정\n3. 접지 상태에서 Reader에 인증 후 동작 확인\n4. 접지 해제상태에서 Reader에 인증 후 동작 확인",
-      "",
-      "1. 접지된 상태에서 인증시 Anti-Tailgating에 의해 인증실패로 동작한다.\n2. 접지 해제된 상태에서 인증시 인증성공으로 동작한다."
-    ],
-    [
-      3,
-      "[출입문]\n1. Anti-Tailgating Sensor에 본문에 언급한 Input Port 설정\n2. Switch Type: N/C 설정\n3. 접지 상태에서 Reader에 인증 후 동작 확인\n4. 접지 해제상태에서 Reader에 인증 후 동작 확인",
-      "",
-      "1. 접지된 상태에서 인증시 인증성공으로 동작한다.\n2. 접지 해제된 상태에서 인증시 Anti-Tailgating에 의해 인증실패로 동작한다."
-    ],
-    [
-      4,
-      "[FireAlarm Zone]\n1. 본문에 언급된 Input Port 설정\n2. Switch Type 설정 후 적용\n3. Switch Type에 따른 동작확인",
-      "",
-      "1. N/O일 때는 접지시 FireAlarm으로 동작한다.\n2. N/C일 때는 접지 해제시 FireAlarm으로 동작한다."
-    ],
-    [
-      5,
-      "[Intrusion Alarm Zone]\n1. Arm/Disarm Setting(Input)에 본문에 언급된 Input Port 설정\n2. Setting 한 Input Port의 Switch Type에 따른 동작확인",
-      "",
-      "1. N/O일 때는 접지시 Arm or Disram으로 동작한다.\n2. N/C일 때는 접지 해제시 Arm or Disarm으로 동작한다."
-    ],
-    [
-      6,
-      "[Intrusion Alarm Zone]\n1. Detect Intrusion에 본문에 언급된 Input Port 설정\n2. Setting 한 Input Port의 Switch Type에 따른 동작확인",
-      "",
-      "1. N/O일 때는 접지시 Arm or Disram으로 동작한다.\n2. N/C일 때는 접지 해제시 Arm or Disarm으로 동작한다."
-    ],
-    [
-      7,
-      "[Intrusion Alarm Zone]\n1. Detect Intrusion에 본문에 언급된 Input Port 설정\n2. Switch Type: N/O 설정\n3. 접지 상태에서 Reader에 인증해 Arm 동작여부 확인\n4. 접지 해제상태에서 Reader에 인증해 Arm 동작 확인",
-      "",
-      "1. 접지된 상태에서 Arm 시도시 Arm failed로 동작된다.\n2. 접지해제된 상태에서 Arm 시도시 Arm 으로 동작한다."
-    ],
-    [
-      8,
-      "[Intrusion Alarm Zone]\n1. Detect Intrusion에 본문에 언급된 Input Port 설정\n2. Switch Type: N/C 설정\n3. 접지 상태에서 Reader에 인증해 Arm 동작여부 확인\n4. 접지 해제상태에서 Reader에 인증해 Arm 동작 확인",
-      "",
-      "1. 접지된 상태에서 Arm 시도시 Arm 으로 동작된다.\n2. 접지 해제된 상태에서 Arm 시도시 Arm Failed로 동작한다."
-    ],
-    [
-      9,
-      "[Intrusion Alarm Zone]\n1. Detect Intrusion에 본문에 언급된 Input Port 설정\n2. (Arm 상태) Detect Intrusion에 설정한 Switch Type에 따른 동작확인",
-      "",
-      "1. N/O일 때는 접지시 침입감지로 동작한다.\n2. N/C일 때는 접지 해제시 침입감지로 동작한다."
-    ],
-    [
-      10,
-      "[Interlock Zone]\n1. Option의 Acion에 대해 본문에 언급된 Input Port 설정\n2. Switch Type: N/O 설정\n3. 접지 상태에서 Reader에 인증 후 동작 확인\n4. 접지 해제 상태에서 Reader에 인증 후 동작 확인",
-      "",
-      "1. 접지된 상태에서 인증 시도시 인증 실패로 동작된다.\n2. 접지 해제된 상태에서 Arm 시도시 인증 성공으로 동작한다."
-    ],
-    [
-      11,
-      "[Interlock Zone]\n1. Option의 Acion에 대해 본문에 언급된 Input Port 설정\n2. Switch Type: N/C 설정\n3. 접지 상태에서 Reader에 인증 후 동작 확인\n4. 접지 해제 상태에서 Reader에 인증 후 동작 확인",
-      "",
-      "1. 접지된 상태에서 인증 시도시 인증 성공으로 동작된다.\n2. 접지 해제된 상태에서 Arm 시도시 인증 실패로 동작한다."
-    ],
-    [
-      12,
-      "[TriggerAction - Input]\n1. 본문에 언급된 Input Prot 설정\n2. 설정한 Switch Type에 따른 동작 확인",
-      "Input 확인장치\n> CS20 or CS40",
-      "1. N/O일 때는 접지시 설정된 Action이 동작한다.\n2. N/C일 때는 접지 해제시 설정된 Action이 동작한다."
-    ],
-    [
-      13,
-      "[TriggerAction - Input]\n1. 본문에 언급된 Input Prot 설정\n2. 설정한 Switch Type에 따른 동작 확인",
-      "Input 확인장치\n> DM20 or IM120",
-      "1. N/O일 때는 접지시 설정된 Action이 동작한다.\n2. N/C일 때는 접지 해제시 설정된 Action이 동작한다."
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-372",
-    "description": "",
-    "test_step": [
-      "[출입문]\n1. 본문에 언급한 Input Port에 대해 Door의 Exit/Sensor에 설정\n2. Switch Type에 따른 동작여부 확인",
-      "[출입문]\n1. Anti-Tailgating Sensor에 본문에 언급한 Input Port 설정\n2. Switch Type: N/O 설정\n3. 접지 상태에서 Reader에 인증 후 동작 확인\n4. 접지 해제상태에서 Reader에 인증 후 동작 확인",
-      "[출입문]\n1. Anti-Tailgating Sensor에 본문에 언급한 Input Port 설정\n2. Switch Type: N/C 설정\n3. 접지 상태에서 Reader에 인증 후 동작 확인\n4. 접지 해제상태에서 Reader에 인증 후 동작 확인",
-      "[FireAlarm Zone]\n1. 본문에 언급된 Input Port 설정\n2. Switch Type 설정 후 적용\n3. Switch Type에 따른 동작확인",
-      "[Intrusion Alarm Zone]\n1. Arm/Disarm Setting(Input)에 본문에 언급된 Input Port 설정\n2. Setting 한 Input Port의 Switch Type에 따른 동작확인",
-      "[Intrusion Alarm Zone]\n1. Detect Intrusion에 본문에 언급된 Input Port 설정\n2. Setting 한 Input Port의 Switch Type에 따른 동작확인",
-      "[Intrusion Alarm Zone]\n1. Detect Intrusion에 본문에 언급된 Input Port 설정\n2. Switch Type: N/O 설정\n3. 접지 상태에서 Reader에 인증해 Arm 동작여부 확인\n4. 접지 해제상태에서 Reader에 인증해 Arm 동작 확인",
-      "[Intrusion Alarm Zone]\n1. Detect Intrusion에 본문에 언급된 Input Port 설정\n2. Switch Type: N/C 설정\n3. 접지 상태에서 Reader에 인증해 Arm 동작여부 확인\n4. 접지 해제상태에서 Reader에 인증해 Arm 동작 확인",
-      "[Intrusion Alarm Zone]\n1. Detect Intrusion에 본문에 언급된 Input Port 설정\n2. (Arm 상태) Detect Intrusion에 설정한 Switch Type에 따른 동작확인",
-      "[Interlock Zone]\n1. Option의 Acion에 대해 본문에 언급된 Input Port 설정\n2. Switch Type: N/O 설정\n3. 접지 상태에서 Reader에 인증 후 동작 확인\n4. 접지 해제 상태에서 Reader에 인증 후 동작 확인",
-      "[Interlock Zone]\n1. Option의 Acion에 대해 본문에 언급된 Input Port 설정\n2. Switch Type: N/C 설정\n3. 접지 상태에서 Reader에 인증 후 동작 확인\n4. 접지 해제 상태에서 Reader에 인증 후 동작 확인",
-      "[TriggerAction - Input]\n1. 본문에 언급된 Input Prot 설정\n2. 설정한 Switch Type에 따른 동작 확인",
-      "[TriggerAction - Input]\n1. 본문에 언급된 Input Prot 설정\n2. 설정한 Switch Type에 따른 동작 확인"
-    ],
-    "data": [
-      "Input 확인장치\n> CS20 or CS40",
-      "Input 확인장치\n> DM20 or IM120"
-    ],
-    "expected_result": [
-      "1. N/O - Input 접지시 Unlock 및 Open으로 동작한다.\n2. N/C - Input 접지 해제시 Unlock 및 Open으로 동작한다.",
-      "1. 접지된 상태에서 인증시 Anti-Tailgating에 의해 인증실패로 동작한다.\n2. 접지 해제된 상태에서 인증시 인증성공으로 동작한다.",
-      "1. 접지된 상태에서 인증시 인증성공으로 동작한다.\n2. 접지 해제된 상태에서 인증시 Anti-Tailgating에 의해 인증실패로 동작한다.",
-      "1. N/O일 때는 접지시 FireAlarm으로 동작한다.\n2. N/C일 때는 접지 해제시 FireAlarm으로 동작한다.",
-      "1. N/O일 때는 접지시 Arm or Disram으로 동작한다.\n2. N/C일 때는 접지 해제시 Arm or Disarm으로 동작한다.",
-      "1. N/O일 때는 접지시 Arm or Disram으로 동작한다.\n2. N/C일 때는 접지 해제시 Arm or Disarm으로 동작한다.",
-      "1. 접지된 상태에서 Arm 시도시 Arm failed로 동작된다.\n2. 접지해제된 상태에서 Arm 시도시 Arm 으로 동작한다.",
-      "1. 접지된 상태에서 Arm 시도시 Arm 으로 동작된다.\n2. 접지 해제된 상태에서 Arm 시도시 Arm Failed로 동작한다.",
-      "1. N/O일 때는 접지시 침입감지로 동작한다.\n2. N/C일 때는 접지 해제시 침입감지로 동작한다.",
-      "1. 접지된 상태에서 인증 시도시 인증 실패로 동작된다.\n2. 접지 해제된 상태에서 Arm 시도시 인증 성공으로 동작한다.",
-      "1. 접지된 상태에서 인증 시도시 인증 성공으로 동작된다.\n2. 접지 해제된 상태에서 Arm 시도시 인증 실패로 동작한다.",
-      "1. N/O일 때는 접지시 설정된 Action이 동작한다.\n2. N/C일 때는 접지 해제시 설정된 Action이 동작한다.",
-      "1. N/O일 때는 접지시 설정된 Action이 동작한다.\n2. N/C일 때는 접지 해제시 설정된 Action이 동작한다."
-    ]
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "69544",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/69544",
+  "key": "COMMONR-372",
+  "fields": {
+    "resolution": null,
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "0.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10173",
+      "value": "Major",
+      "id": "10173"
+    },
+    "customfield_10185": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
+      "value": "Medium (2-3일 이내 피드백)",
+      "id": "10220"
+    },
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [],
+    "assignee": null,
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 13.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-372/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@75fd8db2[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@41ae9a83[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6c557044[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@599a95cf[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@54aaca31[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@46fef517[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@16e6adc[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@cd7a3d3[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@e2e1b3a[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@3f4901a5[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@4d83b41a[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@7cfb5f42[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": null,
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-372/watchers",
+      "watchCount": 1,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T10:07:34.000+0900",
+    "timeoriginalestimate": null,
+    "description": "Supervised Input Port -> Normal Input으로 설정 후 N/O, N/C에 대한 동작여부 확인\r\n\r\nDM20 Supervised Input 지원포트 - 0,1,4,5 => 모든 장치에서 Slave로 지원\r\nIM120 Supervised Input 지원포트 - 0~11 => CS20/CS40에서만 Slave로 지원\r\nCS40 Supervised Input 지원포트 - 0~7\r\nCS20 Supervised Input 지원포트 - 0~5\r\n============================\r\n해당 포트들에 대해서는 Normal Input 으로 설정 및 Input Cable(Supervised Input Cable 아님) 연결한 상태에서 TC 진행\r\n\r\n환경)\r\n검증모델 - DM20 Slave로 구성해서 확인\r\n=> Master가 CS20/CS40이 아닌 경우 Slave로 DM20을 연결해서 확인\r\n=> CS20/CS40이 검증대상인 경우 CS20/CS40 & Slave로 연결된 DM20/IM120 모두 확인\r\n\r\n",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p><span class=\"error\">&#91;출입문&#93;</span><br/>1. 본문에 언급한 Input Port에 대해 Door의 Exit/Sensor에 설정<br/>2. Switch Type에 따른 동작여부 확인</p></td><td></td><td><p>1. N/O - Input 접지시 Unlock 및 Open으로 동작한다.<br/>2. N/C - Input 접지 해제시 Unlock 및 Open으로 동작한다.</p></td></tr><tr><td>2</td><td><p><span class=\"error\">&#91;출입문&#93;</span><br/>1. Anti-Tailgating Sensor에 본문에 언급한 Input Port 설정<br/>2. Switch Type: N/O 설정<br/>3. 접지 상태에서 Reader에 인증 후 동작 확인<br/>4. 접지 해제상태에서 Reader에 인증 후 동작 확인</p></td><td></td><td><p>1. 접지된 상태에서 인증시 Anti-Tailgating에 의해 인증실패로 동작한다.<br/>2. 접지 해제된 상태에서 인증시 인증성공으로 동작한다.</p></td></tr><tr><td>3</td><td><p><span class=\"error\">&#91;출입문&#93;</span><br/>1. Anti-Tailgating Sensor에 본문에 언급한 Input Port 설정<br/>2. Switch Type: N/C 설정<br/>3. 접지 상태에서 Reader에 인증 후 동작 확인<br/>4. 접지 해제상태에서 Reader에 인증 후 동작 확인</p></td><td></td><td><p>1. 접지된 상태에서 인증시 인증성공으로 동작한다.<br/>2. 접지 해제된 상태에서 인증시 Anti-Tailgating에 의해 인증실패로 동작한다.</p></td></tr><tr><td>4</td><td><p><span class=\"error\">&#91;FireAlarm Zone&#93;</span><br/>1. 본문에 언급된 Input Port 설정<br/>2. Switch Type 설정 후 적용<br/>3. Switch Type에 따른 동작확인</p></td><td></td><td><p>1. N/O일 때는 접지시 FireAlarm으로 동작한다.<br/>2. N/C일 때는 접지 해제시 FireAlarm으로 동작한다.</p></td></tr><tr><td>5</td><td><p><span class=\"error\">&#91;Intrusion Alarm Zone&#93;</span><br/>1. Arm/Disarm Setting(Input)에 본문에 언급된 Input Port 설정<br/>2. Setting 한 Input Port의 Switch Type에 따른 동작확인</p></td><td></td><td><p>1. N/O일 때는 접지시 Arm or Disram으로 동작한다.<br/>2. N/C일 때는 접지 해제시 Arm or Disarm으로 동작한다.</p></td></tr><tr><td>6</td><td><p><span class=\"error\">&#91;Intrusion Alarm Zone&#93;</span><br/>1. Detect Intrusion에 본문에 언급된 Input Port 설정<br/>2. Setting 한 Input Port의 Switch Type에 따른 동작확인</p></td><td></td><td><p>1. N/O일 때는 접지시 Arm or Disram으로 동작한다.<br/>2. N/C일 때는 접지 해제시 Arm or Disarm으로 동작한다.</p></td></tr><tr><td>7</td><td><p><span class=\"error\">&#91;Intrusion Alarm Zone&#93;</span><br/>1. Detect Intrusion에 본문에 언급된 Input Port 설정<br/>2. Switch Type: N/O 설정<br/>3. 접지 상태에서 Reader에 인증해 Arm 동작여부 확인<br/>4. 접지 해제상태에서 Reader에 인증해 Arm 동작 확인</p></td><td></td><td><p>1. 접지된 상태에서 Arm 시도시 Arm failed로 동작된다.<br/>2. 접지해제된 상태에서 Arm 시도시 Arm 으로 동작한다.</p></td></tr><tr><td>8</td><td><p><span class=\"error\">&#91;Intrusion Alarm Zone&#93;</span><br/>1. Detect Intrusion에 본문에 언급된 Input Port 설정<br/>2. Switch Type: N/C 설정<br/>3. 접지 상태에서 Reader에 인증해 Arm 동작여부 확인<br/>4. 접지 해제상태에서 Reader에 인증해 Arm 동작 확인</p></td><td></td><td><p>1. 접지된 상태에서 Arm 시도시 Arm 으로 동작된다.<br/>2. 접지 해제된 상태에서 Arm 시도시 Arm Failed로 동작한다.</p></td></tr><tr><td>9</td><td><p><span class=\"error\">&#91;Intrusion Alarm Zone&#93;</span><br/>1. Detect Intrusion에 본문에 언급된 Input Port 설정<br/>2. (Arm 상태) Detect Intrusion에 설정한 Switch Type에 따른 동작확인</p></td><td></td><td><p>1. N/O일 때는 접지시 침입감지로 동작한다.<br/>2. N/C일 때는 접지 해제시 침입감지로 동작한다.</p></td></tr><tr><td>10</td><td><p><span class=\"error\">&#91;Interlock Zone&#93;</span><br/>1. Option의 Acion에 대해 본문에 언급된 Input Port 설정<br/>2. Switch Type: N/O 설정<br/>3. 접지 상태에서 Reader에 인증 후 동작 확인<br/>4. 접지 해제 상태에서 Reader에 인증 후 동작 확인</p></td><td></td><td><p>1. 접지된 상태에서 인증 시도시 인증 실패로 동작된다.<br/>2. 접지 해제된 상태에서 Arm 시도시 인증 성공으로 동작한다.</p></td></tr><tr><td>11</td><td><p><span class=\"error\">&#91;Interlock Zone&#93;</span><br/>1. Option의 Acion에 대해 본문에 언급된 Input Port 설정<br/>2. Switch Type: N/C 설정<br/>3. 접지 상태에서 Reader에 인증 후 동작 확인<br/>4. 접지 해제 상태에서 Reader에 인증 후 동작 확인</p></td><td></td><td><p>1. 접지된 상태에서 인증 시도시 인증 성공으로 동작된다.<br/>2. 접지 해제된 상태에서 Arm 시도시 인증 실패로 동작한다.</p></td></tr><tr><td>12</td><td><p><span class=\"error\">&#91;TriggerAction - Input&#93;</span><br/>1. 본문에 언급된 Input Prot 설정<br/>2. 설정한 Switch Type에 따른 동작 확인</p></td><td><p>Input 확인장치<br/>&gt; CS20 or CS40</p></td><td><p>1. N/O일 때는 접지시 설정된 Action이 동작한다.<br/>2. N/C일 때는 접지 해제시 설정된 Action이 동작한다.</p></td></tr><tr><td>13</td><td><p><span class=\"error\">&#91;TriggerAction - Input&#93;</span><br/>1. 본문에 언급된 Input Prot 설정<br/>2. 설정한 Switch Type에 따른 동작 확인</p></td><td><p>Input 확인장치<br/>&gt; DM20 or IM120</p></td><td><p>1. N/O일 때는 접지시 설정된 Action이 동작한다.<br/>2. N/C일 때는 접지 해제시 설정된 Action이 동작한다.</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [],
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 69544,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 34773,
+              "latestFinalId": 34773
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "[Supervised Input 지원 장치] Supervised Input Port를 Normal Input으로 사용함에 따른 확인 케이스",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 19441,
+          "index": 1,
+          "step": "[출입문]\n1. 본문에 언급한 Input Port에 대해 Door의 Exit/Sensor에 설정\n2. Switch Type에 따른 동작여부 확인",
+          "data": "",
+          "result": "1. N/O - Input 접지시 Unlock 및 Open으로 동작한다.\n2. N/C - Input 접지 해제시 Unlock 및 Open으로 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 19442,
+          "index": 2,
+          "step": "[출입문]\n1. Anti-Tailgating Sensor에 본문에 언급한 Input Port 설정\n2. Switch Type: N/O 설정\n3. 접지 상태에서 Reader에 인증 후 동작 확인\n4. 접지 해제상태에서 Reader에 인증 후 동작 확인",
+          "data": "",
+          "result": "1. 접지된 상태에서 인증시 Anti-Tailgating에 의해 인증실패로 동작한다.\n2. 접지 해제된 상태에서 인증시 인증성공으로 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 19443,
+          "index": 3,
+          "step": "[출입문]\n1. Anti-Tailgating Sensor에 본문에 언급한 Input Port 설정\n2. Switch Type: N/C 설정\n3. 접지 상태에서 Reader에 인증 후 동작 확인\n4. 접지 해제상태에서 Reader에 인증 후 동작 확인",
+          "data": "",
+          "result": "1. 접지된 상태에서 인증시 인증성공으로 동작한다.\n2. 접지 해제된 상태에서 인증시 Anti-Tailgating에 의해 인증실패로 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 19444,
+          "index": 4,
+          "step": "[FireAlarm Zone]\n1. 본문에 언급된 Input Port 설정\n2. Switch Type 설정 후 적용\n3. Switch Type에 따른 동작확인",
+          "data": "",
+          "result": "1. N/O일 때는 접지시 FireAlarm으로 동작한다.\n2. N/C일 때는 접지 해제시 FireAlarm으로 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 19445,
+          "index": 5,
+          "step": "[Intrusion Alarm Zone]\n1. Arm/Disarm Setting(Input)에 본문에 언급된 Input Port 설정\n2. Setting 한 Input Port의 Switch Type에 따른 동작확인",
+          "data": "",
+          "result": "1. N/O일 때는 접지시 Arm or Disram으로 동작한다.\n2. N/C일 때는 접지 해제시 Arm or Disarm으로 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 19446,
+          "index": 6,
+          "step": "[Intrusion Alarm Zone]\n1. Detect Intrusion에 본문에 언급된 Input Port 설정\n2. Setting 한 Input Port의 Switch Type에 따른 동작확인",
+          "data": "",
+          "result": "1. N/O일 때는 접지시 Arm or Disram으로 동작한다.\n2. N/C일 때는 접지 해제시 Arm or Disarm으로 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 19447,
+          "index": 7,
+          "step": "[Intrusion Alarm Zone]\n1. Detect Intrusion에 본문에 언급된 Input Port 설정\n2. Switch Type: N/O 설정\n3. 접지 상태에서 Reader에 인증해 Arm 동작여부 확인\n4. 접지 해제상태에서 Reader에 인증해 Arm 동작 확인",
+          "data": "",
+          "result": "1. 접지된 상태에서 Arm 시도시 Arm failed로 동작된다.\n2. 접지해제된 상태에서 Arm 시도시 Arm 으로 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 19448,
+          "index": 8,
+          "step": "[Intrusion Alarm Zone]\n1. Detect Intrusion에 본문에 언급된 Input Port 설정\n2. Switch Type: N/C 설정\n3. 접지 상태에서 Reader에 인증해 Arm 동작여부 확인\n4. 접지 해제상태에서 Reader에 인증해 Arm 동작 확인",
+          "data": "",
+          "result": "1. 접지된 상태에서 Arm 시도시 Arm 으로 동작된다.\n2. 접지 해제된 상태에서 Arm 시도시 Arm Failed로 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 19449,
+          "index": 9,
+          "step": "[Intrusion Alarm Zone]\n1. Detect Intrusion에 본문에 언급된 Input Port 설정\n2. (Arm 상태) Detect Intrusion에 설정한 Switch Type에 따른 동작확인",
+          "data": "",
+          "result": "1. N/O일 때는 접지시 침입감지로 동작한다.\n2. N/C일 때는 접지 해제시 침입감지로 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 19450,
+          "index": 10,
+          "step": "[Interlock Zone]\n1. Option의 Acion에 대해 본문에 언급된 Input Port 설정\n2. Switch Type: N/O 설정\n3. 접지 상태에서 Reader에 인증 후 동작 확인\n4. 접지 해제 상태에서 Reader에 인증 후 동작 확인",
+          "data": "",
+          "result": "1. 접지된 상태에서 인증 시도시 인증 실패로 동작된다.\n2. 접지 해제된 상태에서 Arm 시도시 인증 성공으로 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 19451,
+          "index": 11,
+          "step": "[Interlock Zone]\n1. Option의 Acion에 대해 본문에 언급된 Input Port 설정\n2. Switch Type: N/C 설정\n3. 접지 상태에서 Reader에 인증 후 동작 확인\n4. 접지 해제 상태에서 Reader에 인증 후 동작 확인",
+          "data": "",
+          "result": "1. 접지된 상태에서 인증 시도시 인증 성공으로 동작된다.\n2. 접지 해제된 상태에서 Arm 시도시 인증 실패로 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 19452,
+          "index": 12,
+          "step": "[TriggerAction - Input]\n1. 본문에 언급된 Input Prot 설정\n2. 설정한 Switch Type에 따른 동작 확인",
+          "data": "Input 확인장치\n> CS20 or CS40",
+          "result": "1. N/O일 때는 접지시 설정된 Action이 동작한다.\n2. N/C일 때는 접지 해제시 설정된 Action이 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 19453,
+          "index": 13,
+          "step": "[TriggerAction - Input]\n1. 본문에 언급된 Input Prot 설정\n2. 설정한 Switch Type에 따른 동작 확인",
+          "data": "Input 확인장치\n> DM20 or IM120",
+          "result": "1. N/O일 때는 접지시 설정된 Action이 동작한다.\n2. N/C일 때는 접지 해제시 설정된 Action이 동작한다.",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [],
+      "maxResults": 0,
+      "total": 0,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+      "name": "미할당",
+      "id": "10100"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+      "name": "할 일",
+      "id": "10000",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "할 일"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzzf33:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2025-02-20T08:49:23.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

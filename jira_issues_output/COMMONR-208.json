@@ -1,114 +1,1027 @@
 {
-  "id": "COMMONR-208",
-  "content": [
-    [
-      1,
-      "1. Wiegand Reader 선택> Device Func> Wiegand Device> Buzzer 및 LED 설정\n2. 인증성공이 되도록 인증시도\n3. 인증실패가 되도록 인증시도",
-      "Master(=진행모델)-DM20-3rd Party Reader 연결된 상태\n> 3rd Party Reader의 Buzzer/LED Cable을 DM20의 TTL Out Port에 연결",
-      "1. 인증성공시 3rd Party Reader의 LED가 녹색으로 1초간 출력된다.\n2. 인증실패시 부저 설정한 Out Port에서 부저음이 발생된다."
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "21422",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/21422",
+  "key": "COMMONR-208",
+  "fields": {
+    "resolution": null,
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "0.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": null,
+    "customfield_10185": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
+      "value": "Medium (2-3일 이내 피드백)",
+      "id": "10220"
+    },
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "16030",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/16030",
+        "type": {
+          "id": "10001",
+          "name": "Cloners",
+          "inward": "is cloned by",
+          "outward": "clones",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10001"
+        },
+        "outwardIssue": {
+          "id": "20950",
+          "key": "CORER-29",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/20950",
+          "fields": {
+            "summary": "2017 1H 요구사항",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "할 일",
+              "id": "10000",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "Represents a Test",
+              "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+              "name": "Test",
+              "subtask": false
+            }
+          }
+        }
+      },
+      {
+        "id": "32715",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/32715",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "42872",
+          "key": "BSIIDII-1419",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/42872",
+          "fields": {
+            "summary": "[AAM] BS2DisplayConfig의 파라미터 설정 따라 리부팅 되는 이슈",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "22879",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/22879",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "29233",
+          "key": "XPASSII-16",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/29233",
+          "fields": {
+            "summary": "[BioStar2 연동] Slave로 연결된 지문단말기를 통해 지문등록시도시 Master Reboot되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "16433",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/16433",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "22103",
+          "key": "BERII-26",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/22103",
+          "fields": {
+            "summary": "[Tester:곽성희] XPS2가 Master로 설정된 상태에서 Slave장치 R2로 지문 등록 시도 시 지문 스캔 실패 팝업 발생하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "22097",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/22097",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "21606",
+          "key": "ENTRYIIDII-477",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/21606",
+          "fields": {
+            "summary": "[Hotfix] Slave 장치에서 등록용 지문 스캔 기능 지원",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/4",
+              "description": "이 이슈는 한번 해결되었지만 해결책이 올바르지 않았던 것 같습니다. 지금부터는 이슈가 할당된 것으로 표기되거나 해결된 것으로 표기할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/reopened.png",
+              "name": "다시 열림",
+              "id": "4",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "17931",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/17931",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "22766",
+          "key": "BEWIIFWDI-347",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/22766",
+          "fields": {
+            "summary": "RS485 슬레이브 장치 검색 후 연결 중에 Config 관련 Command 전달 시도하는 문제 개선",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
+              "id": "5",
+              "description": "이슈의 부작업",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
+              "name": "부작업",
+              "subtask": true,
+              "avatarId": 10316
+            }
+          }
+        }
+      },
+      {
+        "id": "17888",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/17888",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "22767",
+          "key": "BEWIIFWDI-348",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/22767",
+          "fields": {
+            "summary": "Wiegand Reader 제어용 Output Signal 설정",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
+              "id": "5",
+              "description": "이슈의 부작업",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
+              "name": "부작업",
+              "subtask": true,
+              "avatarId": 10316
+            }
+          }
+        }
+      },
+      {
+        "id": "17889",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/17889",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "22770",
+          "key": "BEWIIFWDI-351",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/22770",
+          "fields": {
+            "summary": "슬레이브 장치를 통해서도 지문 등록 지원 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
+              "id": "5",
+              "description": "이슈의 부작업",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
+              "name": "부작업",
+              "subtask": true,
+              "avatarId": 10316
+            }
+          }
+        }
+      },
+      {
+        "id": "18055",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/18055",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "23320",
+          "key": "BLIIFWI-765",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/23320",
+          "fields": {
+            "summary": "CLONE - RS485 슬레이브 장치 검색 후 연결 중에 Config 관련 Command 전달 시도하는 문제 개선",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
+              "id": "5",
+              "description": "이슈의 부작업",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
+              "name": "부작업",
+              "subtask": true,
+              "avatarId": 10316
+            }
+          }
+        }
+      },
+      {
+        "id": "18054",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/18054",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "23321",
+          "key": "BLIIFWI-766",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/23321",
+          "fields": {
+            "summary": "CLONE - Wiegand Reader 제어용 Output Signal 설정",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
+              "id": "5",
+              "description": "이슈의 부작업",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
+              "name": "부작업",
+              "subtask": true,
+              "avatarId": 10316
+            }
+          }
+        }
+      },
+      {
+        "id": "18056",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/18056",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "23324",
+          "key": "BLIIFWI-769",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/23324",
+          "fields": {
+            "summary": "CLONE - 슬레이브 장치를 통해서도 지문 등록 지원 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
+              "id": "5",
+              "description": "이슈의 부작업",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
+              "name": "부작업",
+              "subtask": true,
+              "avatarId": 10316
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "1. 사용자에 지문등록시 Slave로 연결된 지문장치 선택해 등록시도",
-      "Master\n> Entry Device",
-      "1. Entry V2장치가 Master로 설정된 경우 Master Version에 따라 Slave로 일반지문등록 지원 및 미지원으로 동작 한다.\n> Entry에서도 Master(Xpass 제외) Version에 따라 Slave에서 일반 지문 등록 지원 \n> ENTRYIIDII-477"
+    "assignee": null,
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 11.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-208/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@7d45c1b7[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@50355038[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@5cc3aec1[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@268d91f1[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@57505de1[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@1cb4d6d1[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@5dc0c620[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@1788c670[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@42e23e35[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@785a6ae6[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@2370420b[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@721abb53[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": null,
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-208/watchers",
+      "watchCount": 1,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2024-01-10T16:30:04.000+0900",
+    "timeoriginalestimate": null,
+    "description": "요구사항\r\n> Wiegand Reader에서 인증이 이루어진 경우 인증결과에 대한 LED/Buzzer 동작확인\r\n> Advanced Enrollment 설정 유무에 따른 슬레이브 장치에서의 지문등록 동작확인\r\n> Log Upload 설정과 상관없이 Slave 장치의 상태정보를 제대로 표시해주는지에 대한 동작확인\r\n",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. Wiegand Reader 선택&gt; Device Func&gt; Wiegand Device&gt; Buzzer 및 LED 설정<br/>2. 인증성공이 되도록 인증시도<br/>3. 인증실패가 되도록 인증시도</p></td><td><p>Master(=진행모델)-DM20-3rd Party Reader 연결된 상태<br/>&gt; 3rd Party Reader의 Buzzer/LED Cable을 DM20의 TTL Out Port에 연결</p></td><td><p>1. 인증성공시 3rd Party Reader의 LED가 녹색으로 1초간 출력된다.<br/>2. 인증실패시 부저 설정한 Out Port에서 부저음이 발생된다.</p></td></tr><tr><td>2</td><td><p>1. 사용자에 지문등록시 Slave로 연결된 지문장치 선택해 등록시도</p></td><td><p>Master<br/>&gt; Entry Device</p></td><td><p>1. Entry V2장치가 Master로 설정된 경우 Master Version에 따라 Slave로 일반지문등록 지원 및 미지원으로 동작 한다.<br/>&gt; Entry에서도 Master(Xpass 제외) Version에 따라 Slave에서 일반 지문 등록 지원 <br/>&gt; <a href=\"https://jira.suprema.co.kr/browse/ENTRYIIDII-477\" title=\"[Hotfix] Slave 장치에서 등록용 지문 스캔 기능 지원\" class=\"issue-link\" data-issue-key=\"ENTRYIIDII-477\">ENTRYIIDII-477</a></p></td></tr><tr><td>3</td><td><p>1. 사용자에 지문등록시 Slave로 연결된 지문장치 선택해 등록시도</p></td><td><p>Slave로 연결된 지문장치<br/>&gt; BS2 1.4 이상버전<br/>&gt; BSA2 1.3 이상버전<br/>&gt; L2 1.2.2 이상버전<br/>&gt; W2 1.1.2 이상버전<br/>&gt; FS2 1.0.0 이상버전<br/>&gt; CS-40 1.0.0 이상버전<br/>&gt; BSP2 1.0.0 이상버전</p></td><td><p>1. Slave일 때 일반지문 등록을 지원한다.</p></td></tr><tr><td>4</td><td><p>1. Master 장치 선택&gt; Device Func&gt; FingerPrint<br/>2. Slave 장치 선택&gt; Advanced Enrollment 설정&gt; 장치적용<br/>3. UserInfo&gt; Slave 장치 선택<br/>4. 지문추가&gt; Quality: Low(20)로 설정&gt; 캡쳐&gt; 지문을 양옆으로 치우쳐 등록 시도</p></td><td><p>Advanced Enrollment: 사용</p></td><td><p>1. 설정된 Scan Timeout동안 일정 품질이상의 지문 Scan될때까지 계속 스캔을 시도한다.</p></td></tr><tr><td>5</td><td><p>1. Master 장치 선택&gt; Device Func&gt; FingerPrint<br/>2. Slave 장치 선택&gt; Advanced Enrollment 설정&gt; 장치적용<br/>3. UserInfo&gt; Slave 장치 선택<br/>4. 지문추가&gt; Quality: Low(20)로 설정&gt; 캡쳐&gt; 지문을 양옆으로 치우쳐 등록 시도</p></td><td><p>Advanced Enrollment: 사용안함</p></td><td><p>1. 입력받은 지문에 대해 등록이 된다.</p></td></tr><tr><td>6</td><td><p>1. BioStar2&gt; Device&gt; CS40추가&gt; Slave 추가<br/>2. 서버와 Master/Slave 장치의 전원 모두 OFF<br/>3. 장치전원 ON&gt; 장치 부팅 후 서버 ON<br/>4. Client 실행&gt; 장치연결상태 확인</p></td><td><p>장치전원ON: Master/Slave 일부 장치(Slave로 연결된 일부 장치는 전원OFF 유지)</p></td><td><p>1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다.</p></td></tr><tr><td>7</td><td><p>1. BioStar2&gt; Setting&gt; Server&gt; Log Upload 설정<br/>2. Master 장치에서 Direct모드 설정<br/>3. Device&gt; CS40 추가&gt; Slave 추가<br/>4. 추가된 Slave 장치 연결상태 확인</p></td><td><p>Log Upload: Automatic</p></td><td><p>1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다.</p></td></tr><tr><td>8</td><td><p>1. BioStar2&gt; Setting&gt; Server&gt; Log Upload 설정<br/>2. Master 장치에서 Direct모드 설정<br/>3. Device&gt; CS40 추가&gt; Slave 추가<br/>4. 추가된 Slave 장치 연결상태 확인</p></td><td><p>Log Upload: Manual</p></td><td><p>1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다.</p></td></tr><tr><td>9</td><td><p>1. BioStar2&gt; Setting&gt; Server&gt; Log Upload 설정<br/>2. Master 장치에서 Server모드 설정<br/>3. Client 실행&gt; Device&gt; Waiting Device에 표시된 Master 장치 추가&gt; Slave 추가<br/>4. 추가된 Slave 장치의 연결상태 확인</p></td><td><p>Log Upload: Automatic</p></td><td><p>1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다.</p></td></tr><tr><td>10</td><td><p>1. BioStar2&gt; Setting&gt; Server&gt; Log Upload 설정<br/>2. Master 장치에서 Server모드 설정<br/>3. Client 실행&gt; Device&gt; Waiting Device에 표시된 Master 장치 추가&gt; Slave 추가<br/>4. 추가된 Slave 장치의 연결상태 확인</p></td><td><p>Log Upload: Manual</p></td><td><p>1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다.</p></td></tr><tr><td>11</td><td><p>1. AutoTest Tool 실행<br/>2. 각 항목에 대해 유효하지 않은 값에 대해 설정<br/>3. 설정된 값 확인</p></td><td><p>확인항목(Master/Slave/Wiegand)<br/>: Msg.Timeout<br/>: Scan Timeout<br/>: Auth Timeout<br/>: Matching Timeout</p></td><td><p>1. 유효하지 않은 값이 저장시도된 경우 기본값으로 설정되어야 한다.</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [
+      "CORER-28",
+      "COMMONR-206"
     ],
-    [
-      3,
-      "1. 사용자에 지문등록시 Slave로 연결된 지문장치 선택해 등록시도",
-      "Slave로 연결된 지문장치\n> BS2 1.4 이상버전\n> BSA2 1.3 이상버전\n> L2 1.2.2 이상버전\n> W2 1.1.2 이상버전\n> FS2 1.0.0 이상버전\n> CS-40 1.0.0 이상버전\n> BSP2 1.0.0 이상버전",
-      "1. Slave일 때 일반지문 등록을 지원한다."
-    ],
-    [
-      4,
-      "1. Master 장치 선택> Device Func> FingerPrint\n2. Slave 장치 선택> Advanced Enrollment 설정> 장치적용\n3. UserInfo> Slave 장치 선택\n4. 지문추가> Quality: Low(20)로 설정> 캡쳐> 지문을 양옆으로 치우쳐 등록 시도",
-      "Advanced Enrollment: 사용",
-      "1. 설정된 Scan Timeout동안 일정 품질이상의 지문 Scan될때까지 계속 스캔을 시도한다."
-    ],
-    [
-      5,
-      "1. Master 장치 선택> Device Func> FingerPrint\n2. Slave 장치 선택> Advanced Enrollment 설정> 장치적용\n3. UserInfo> Slave 장치 선택\n4. 지문추가> Quality: Low(20)로 설정> 캡쳐> 지문을 양옆으로 치우쳐 등록 시도",
-      "Advanced Enrollment: 사용안함",
-      "1. 입력받은 지문에 대해 등록이 된다."
-    ],
-    [
-      6,
-      "1. BioStar2> Device> CS40추가> Slave 추가\n2. 서버와 Master/Slave 장치의 전원 모두 OFF\n3. 장치전원 ON> 장치 부팅 후 서버 ON\n4. Client 실행> 장치연결상태 확인",
-      "장치전원ON: Master/Slave 일부 장치(Slave로 연결된 일부 장치는 전원OFF 유지)",
-      "1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다."
-    ],
-    [
-      7,
-      "1. BioStar2> Setting> Server> Log Upload 설정\n2. Master 장치에서 Direct모드 설정\n3. Device> CS40 추가> Slave 추가\n4. 추가된 Slave 장치 연결상태 확인",
-      "Log Upload: Automatic",
-      "1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다."
-    ],
-    [
-      8,
-      "1. BioStar2> Setting> Server> Log Upload 설정\n2. Master 장치에서 Direct모드 설정\n3. Device> CS40 추가> Slave 추가\n4. 추가된 Slave 장치 연결상태 확인",
-      "Log Upload: Manual",
-      "1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다."
-    ],
-    [
-      9,
-      "1. BioStar2> Setting> Server> Log Upload 설정\n2. Master 장치에서 Server모드 설정\n3. Client 실행> Device> Waiting Device에 표시된 Master 장치 추가> Slave 추가\n4. 추가된 Slave 장치의 연결상태 확인",
-      "Log Upload: Automatic",
-      "1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다."
-    ],
-    [
-      10,
-      "1. BioStar2> Setting> Server> Log Upload 설정\n2. Master 장치에서 Server모드 설정\n3. Client 실행> Device> Waiting Device에 표시된 Master 장치 추가> Slave 추가\n4. 추가된 Slave 장치의 연결상태 확인",
-      "Log Upload: Manual",
-      "1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다."
-    ],
-    [
-      11,
-      "1. AutoTest Tool 실행\n2. 각 항목에 대해 유효하지 않은 값에 대해 설정\n3. 설정된 값 확인",
-      "확인항목(Master/Slave/Wiegand)\n: Msg.Timeout\n: Scan Timeout\n: Auth Timeout\n: Matching Timeout",
-      "1. 유효하지 않은 값이 저장시도된 경우 기본값으로 설정되어야 한다."
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-208",
-    "description": "",
-    "test_step": [
-      "1. Wiegand Reader 선택> Device Func> Wiegand Device> Buzzer 및 LED 설정\n2. 인증성공이 되도록 인증시도\n3. 인증실패가 되도록 인증시도",
-      "1. 사용자에 지문등록시 Slave로 연결된 지문장치 선택해 등록시도",
-      "1. 사용자에 지문등록시 Slave로 연결된 지문장치 선택해 등록시도",
-      "1. Master 장치 선택> Device Func> FingerPrint\n2. Slave 장치 선택> Advanced Enrollment 설정> 장치적용\n3. UserInfo> Slave 장치 선택\n4. 지문추가> Quality: Low(20)로 설정> 캡쳐> 지문을 양옆으로 치우쳐 등록 시도",
-      "1. Master 장치 선택> Device Func> FingerPrint\n2. Slave 장치 선택> Advanced Enrollment 설정> 장치적용\n3. UserInfo> Slave 장치 선택\n4. 지문추가> Quality: Low(20)로 설정> 캡쳐> 지문을 양옆으로 치우쳐 등록 시도",
-      "1. BioStar2> Device> CS40추가> Slave 추가\n2. 서버와 Master/Slave 장치의 전원 모두 OFF\n3. 장치전원 ON> 장치 부팅 후 서버 ON\n4. Client 실행> 장치연결상태 확인",
-      "1. BioStar2> Setting> Server> Log Upload 설정\n2. Master 장치에서 Direct모드 설정\n3. Device> CS40 추가> Slave 추가\n4. 추가된 Slave 장치 연결상태 확인",
-      "1. BioStar2> Setting> Server> Log Upload 설정\n2. Master 장치에서 Direct모드 설정\n3. Device> CS40 추가> Slave 추가\n4. 추가된 Slave 장치 연결상태 확인",
-      "1. BioStar2> Setting> Server> Log Upload 설정\n2. Master 장치에서 Server모드 설정\n3. Client 실행> Device> Waiting Device에 표시된 Master 장치 추가> Slave 추가\n4. 추가된 Slave 장치의 연결상태 확인",
-      "1. BioStar2> Setting> Server> Log Upload 설정\n2. Master 장치에서 Server모드 설정\n3. Client 실행> Device> Waiting Device에 표시된 Master 장치 추가> Slave 추가\n4. 추가된 Slave 장치의 연결상태 확인",
-      "1. AutoTest Tool 실행\n2. 각 항목에 대해 유효하지 않은 값에 대해 설정\n3. 설정된 값 확인"
-    ],
-    "data": [
-      "Master(=진행모델)-DM20-3rd Party Reader 연결된 상태\n> 3rd Party Reader의 Buzzer/LED Cable을 DM20의 TTL Out Port에 연결",
-      "Master\n> Entry Device",
-      "Slave로 연결된 지문장치\n> BS2 1.4 이상버전\n> BSA2 1.3 이상버전\n> L2 1.2.2 이상버전\n> W2 1.1.2 이상버전\n> FS2 1.0.0 이상버전\n> CS-40 1.0.0 이상버전\n> BSP2 1.0.0 이상버전",
-      "Advanced Enrollment: 사용",
-      "Advanced Enrollment: 사용안함",
-      "장치전원ON: Master/Slave 일부 장치(Slave로 연결된 일부 장치는 전원OFF 유지)",
-      "Log Upload: Automatic",
-      "Log Upload: Manual",
-      "Log Upload: Automatic",
-      "Log Upload: Manual",
-      "확인항목(Master/Slave/Wiegand)\n: Msg.Timeout\n: Scan Timeout\n: Auth Timeout\n: Matching Timeout"
-    ],
-    "expected_result": [
-      "1. 인증성공시 3rd Party Reader의 LED가 녹색으로 1초간 출력된다.\n2. 인증실패시 부저 설정한 Out Port에서 부저음이 발생된다.",
-      "1. Entry V2장치가 Master로 설정된 경우 Master Version에 따라 Slave로 일반지문등록 지원 및 미지원으로 동작 한다.\n> Entry에서도 Master(Xpass 제외) Version에 따라 Slave에서 일반 지문 등록 지원 \n> ENTRYIIDII-477",
-      "1. Slave일 때 일반지문 등록을 지원한다.",
-      "1. 설정된 Scan Timeout동안 일정 품질이상의 지문 Scan될때까지 계속 스캔을 시도한다.",
-      "1. 입력받은 지문에 대해 등록이 된다.",
-      "1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다.",
-      "1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다.",
-      "1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다.",
-      "1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다.",
-      "1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다.",
-      "1. 유효하지 않은 값이 저장시도된 경우 기본값으로 설정되어야 한다."
-    ]
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 21422,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29744,
+              "latestFinalId": 29744
+            }
+          ]
+        },
+        {
+          "group": "V1.8.0_190806_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15376,
+              "latestFinalId": 15376
+            }
+          ]
+        },
+        {
+          "group": "V1.7.1_181204(Hotfix)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12721,
+              "latestFinalId": 12721
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_181210_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12792,
+              "latestFinalId": 12792
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180322",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10162,
+              "latestFinalId": 10162
+            }
+          ]
+        },
+        {
+          "group": "V1.7.0_190806_Interaction 7차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15122,
+              "latestFinalId": 15122
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_190806_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15456,
+              "latestFinalId": 15456
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_20200601_Interaction 12차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 17188,
+              "latestFinalId": 17188
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "Wiegand Out제어, Slave 지문등록, Slave 상태정보 표시관련",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 3811,
+          "index": 1,
+          "step": "1. Wiegand Reader 선택> Device Func> Wiegand Device> Buzzer 및 LED 설정\n2. 인증성공이 되도록 인증시도\n3. 인증실패가 되도록 인증시도",
+          "data": "Master(=진행모델)-DM20-3rd Party Reader 연결된 상태\n> 3rd Party Reader의 Buzzer/LED Cable을 DM20의 TTL Out Port에 연결",
+          "result": "1. 인증성공시 3rd Party Reader의 LED가 녹색으로 1초간 출력된다.\n2. 인증실패시 부저 설정한 Out Port에서 부저음이 발생된다.",
+          "attachments": []
+        },
+        {
+          "id": 3812,
+          "index": 2,
+          "step": "1. 사용자에 지문등록시 Slave로 연결된 지문장치 선택해 등록시도",
+          "data": "Master\n> Entry Device",
+          "result": "1. Entry V2장치가 Master로 설정된 경우 Master Version에 따라 Slave로 일반지문등록 지원 및 미지원으로 동작 한다.\n> Entry에서도 Master(Xpass 제외) Version에 따라 Slave에서 일반 지문 등록 지원 \n> ENTRYIIDII-477",
+          "attachments": []
+        },
+        {
+          "id": 3813,
+          "index": 3,
+          "step": "1. 사용자에 지문등록시 Slave로 연결된 지문장치 선택해 등록시도",
+          "data": "Slave로 연결된 지문장치\n> BS2 1.4 이상버전\n> BSA2 1.3 이상버전\n> L2 1.2.2 이상버전\n> W2 1.1.2 이상버전\n> FS2 1.0.0 이상버전\n> CS-40 1.0.0 이상버전\n> BSP2 1.0.0 이상버전",
+          "result": "1. Slave일 때 일반지문 등록을 지원한다.",
+          "attachments": []
+        },
+        {
+          "id": 3814,
+          "index": 4,
+          "step": "1. Master 장치 선택> Device Func> FingerPrint\n2. Slave 장치 선택> Advanced Enrollment 설정> 장치적용\n3. UserInfo> Slave 장치 선택\n4. 지문추가> Quality: Low(20)로 설정> 캡쳐> 지문을 양옆으로 치우쳐 등록 시도",
+          "data": "Advanced Enrollment: 사용",
+          "result": "1. 설정된 Scan Timeout동안 일정 품질이상의 지문 Scan될때까지 계속 스캔을 시도한다.",
+          "attachments": []
+        },
+        {
+          "id": 3815,
+          "index": 5,
+          "step": "1. Master 장치 선택> Device Func> FingerPrint\n2. Slave 장치 선택> Advanced Enrollment 설정> 장치적용\n3. UserInfo> Slave 장치 선택\n4. 지문추가> Quality: Low(20)로 설정> 캡쳐> 지문을 양옆으로 치우쳐 등록 시도",
+          "data": "Advanced Enrollment: 사용안함",
+          "result": "1. 입력받은 지문에 대해 등록이 된다.",
+          "attachments": []
+        },
+        {
+          "id": 3816,
+          "index": 6,
+          "step": "1. BioStar2> Device> CS40추가> Slave 추가\n2. 서버와 Master/Slave 장치의 전원 모두 OFF\n3. 장치전원 ON> 장치 부팅 후 서버 ON\n4. Client 실행> 장치연결상태 확인",
+          "data": "장치전원ON: Master/Slave 일부 장치(Slave로 연결된 일부 장치는 전원OFF 유지)",
+          "result": "1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 3817,
+          "index": 7,
+          "step": "1. BioStar2> Setting> Server> Log Upload 설정\n2. Master 장치에서 Direct모드 설정\n3. Device> CS40 추가> Slave 추가\n4. 추가된 Slave 장치 연결상태 확인",
+          "data": "Log Upload: Automatic",
+          "result": "1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 3818,
+          "index": 8,
+          "step": "1. BioStar2> Setting> Server> Log Upload 설정\n2. Master 장치에서 Direct모드 설정\n3. Device> CS40 추가> Slave 추가\n4. 추가된 Slave 장치 연결상태 확인",
+          "data": "Log Upload: Manual",
+          "result": "1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 3819,
+          "index": 9,
+          "step": "1. BioStar2> Setting> Server> Log Upload 설정\n2. Master 장치에서 Server모드 설정\n3. Client 실행> Device> Waiting Device에 표시된 Master 장치 추가> Slave 추가\n4. 추가된 Slave 장치의 연결상태 확인",
+          "data": "Log Upload: Automatic",
+          "result": "1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 3820,
+          "index": 10,
+          "step": "1. BioStar2> Setting> Server> Log Upload 설정\n2. Master 장치에서 Server모드 설정\n3. Client 실행> Device> Waiting Device에 표시된 Master 장치 추가> Slave 추가\n4. 추가된 Slave 장치의 연결상태 확인",
+          "data": "Log Upload: Manual",
+          "result": "1. 연결된 Slave 장치 상태정보가 정상적으로 올라와야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 3827,
+          "index": 11,
+          "step": "1. AutoTest Tool 실행\n2. 각 항목에 대해 유효하지 않은 값에 대해 설정\n3. 설정된 값 확인",
+          "data": "확인항목(Master/Slave/Wiegand)\n: Msg.Timeout\n: Scan Timeout\n: Auth Timeout\n: Matching Timeout",
+          "result": "1. 유효하지 않은 값이 저장시도된 경우 기본값으로 설정되어야 한다.",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [],
+      "maxResults": 0,
+      "total": 0,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+      "name": "미할당",
+      "id": "10100"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+      "name": "할 일",
+      "id": "10000",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "할 일"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzsd87:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2017-07-04T19:14:45.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

@@ -1,77 +1,1256 @@
 {
-  "id": "COMMONR-44",
-  "content": [
-    [
-      1,
-      "USB Memory을 이용한 FirmWare Upgrade을 지원한다.",
-      "각 장치별 최신 버전의 FirmWare을 USB Memory에 준비한다.\n > Station 계열 - BioStation 2, BioStation A2, FaceStation 2, FaceSttion2 F2, BioStation 3, XStation2, FaceLite, BioStation 2a",
-      "최신버전으로 FirmWare Upgrade가 된다.\n> 성공 팝업, 재부팅, 장치 상세정보의 Version확인\n: Master/Slave/Default 모두 지원한다."
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "12504",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/12504",
+  "key": "COMMONR-44",
+  "fields": {
+    "resolution": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/resolution/10000",
+      "id": "10000",
+      "description": "[사용안함] Work has been completed on this issue.",
+      "name": "완료(Done)"
+    },
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "1.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": null,
+    "customfield_10185": null,
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "24201",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/24201",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "30973",
+          "key": "BSIIDII-1197",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/30973",
+          "fields": {
+            "summary": "[USB Memory] 64G exFAT 인식 오류",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "47163",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/47163",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "56958",
+          "key": "DFW-966",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/56958",
+          "fields": {
+            "summary": "USB 이용하여 FW Upgrade 중 USB 제거 시 BS3 와 결과값이 다른 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "56582",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/56582",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "65670",
+          "key": "FSTIIFW-2035",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/65670",
+          "fields": {
+            "summary": "USB 이용하여 FW Upgrade 중 USB 제거 시 BS3 와 결과값이 다른 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10204",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/medium.svg",
+              "name": "Common (B)",
+              "id": "10204"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "38978",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/38978",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "48865",
+          "key": "DFW-687",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/48865",
+          "fields": {
+            "summary": "[FirmWare Upgrade]FSTF2Main.apk -> Upgrade Fail 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14403",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14403",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19623",
+          "key": "FSTIIFW-102",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19623",
+          "fields": {
+            "summary": "[전자서명 기능] Hex Editor로 임의로 FW 변경 후에 USB를 통해 Upgrade 시 재부팅이 발생한 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "16455",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/16455",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "22119",
+          "key": "BSIIDII-702",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/22119",
+          "fields": {
+            "summary": "[RS 485 Mode 변경] USB Memory 인식 후 RS 485 Mode 변경 시 오동작 - 1회",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14645",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14645",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19865",
+          "key": "FSTIIFW-176",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19865",
+          "fields": {
+            "summary": "[USB Memory FirmWare] USB FirmWare Upgrade 시도 시 1회 재부팅",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12429",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12429",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16977",
+          "key": "TIIDFI-649",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16977",
+          "fields": {
+            "summary": "USB로 이기종 FW를 선택하여 FW 업그레이드를 실행하면 장치가 Power Off 되는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "16451",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/16451",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "22118",
+          "key": "TIIDFI-1162",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/22118",
+          "fields": {
+            "summary": "[USB Memory FirmWare] USB FirmWare Upgrade 시도 시 1회 재부팅",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "48736",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/48736",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "58547",
+          "key": "FSTIIFW-1988",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/58547",
+          "fields": {
+            "summary": "USB로 타모델 FW Upgrade 시도시 UI 멈췄다가 재부팅 발생",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "34533",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/34533",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "44961",
+          "key": "ONYXFW-437",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/44961",
+          "fields": {
+            "summary": "[QR] V1.0.3 -> V1.1.0_20210805 버전으로 FW Upgrade시 Fail되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "56577",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/56577",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "61200",
+          "key": "BEW3FW-10",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/61200",
+          "fields": {
+            "summary": "[USB Upgrade]Resource Upgrade가 동작하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10204",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/medium.svg",
+              "name": "Common (B)",
+              "id": "10204"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12839",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12839",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17661",
+          "key": "BSIIDII-333",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17661",
+          "fields": {
+            "summary": "[Requirement]업그레이드 용 FW 파일 및 SDK 파일에 전자서명 도입",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12831",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12831",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17662",
+          "key": "TIIDFI-696",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17662",
+          "fields": {
+            "summary": "[Requirement]업그레이드 용 FW 파일 및 SDK 파일에 전자서명 도입",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "45321",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/45321",
+        "type": {
+          "id": "10200",
+          "name": "Tests",
+          "inward": "tested by",
+          "outward": "tests",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10200"
+        },
+        "inwardIssue": {
+          "id": "54934",
+          "key": "BS3FW-1294",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/54934",
+          "fields": {
+            "summary": "[BS3] 태국어 폰트 정규 FW에서 지원",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "1. 정규버전에서 최신 버전으로 FW Upgrade를 시도한다.\n2. 다시 이전의 정규버전으로 FW Upgrade를 시도한다.",
-      "각 장치별 최신 버전의 FirmWare을 USB Memory에 준비한다.\n > Station 계열 - BioStation 2, BioStation A2, FaceStation 2\n > 전자서명 기능 도입 버전\n   : BS2 - v1.4.0 버전부터 도입\n   : A2 - v1.3.0 버전부터 도입\n   : FS2 - v1.0.0 버전부터 도입\n   : 이외 다른 제품은 기본 반영",
-      "1. FW Upgrade가 정상적으로 동작 한다.\n2. FW Upgrade시 서명이 유효하지 않아 Upgrade가 실패되고, Upgrade 시도 전 버전으로 유지된다."
-    ],
-    [
-      3,
-      "[XS2: DTC LCD 적용시료]\n1. 최신FW에서 FW V1.1.1 이하로 FW Downgrade 시도",
-      "",
-      "1. Upgrade Fail된다.\n> 해당시료는 v1.1.2부터 지원"
-    ],
-    [
-      4,
-      "1.장치에 메모리 Full로 채운 상태에서 FW Upgrade 시도",
-      "사용자\n> 모든 크리덴셜 저장된 상태로 Full\n\n이벤트 로그 Full\n> 이미지로그(지원시)\n> 일반로그",
-      "1. Upgrade 및 부팅이 정상적으로 이루어져야 한다."
-    ],
-    [
-      5,
-      "1. USB에 다국어 리소스파일 저장\n2. 다국어 리소스 파일 업그레이드 시도\n3. 업그레이드 후 확인",
-      "*Station 장치의 Resource File Upgrade시 다국어 지원하는 리소스파일 개발자에 요청해 진행*",
-      "1. 설정된 다국어 리소스 파일로 표시된다."
-    ],
-    [
-      6,
-      "1. USB Memory를 장치에 삽입\n2. Menu> Device> USB Memory> FW Upgrade\n3. FW Upgrade 파일 선택\n4. FW Upgrade 유무 확인",
-      "FW Upgrade 파일 선택\n> 타 모델의 FW 파일",
-      "1. FW Upgrade가 진행되지 않는다.\n> FW Upgrade Fail 팝업 발생"
-    ],
-    [
-      7,
-      "1. USB Memory를 장치에 삽입\n2. Menu> Device> USB Memory> FW Upgrade\n3. FW Upgrade 파일 선택\n4. FW Upgrade 중 USB 제거\n5. FW Upgrade 유무 확인",
-      "FW Upgrade 파일 선택\n> 검증 진행중인 모델의 FW 파일",
-      "1. FW Upgrade가 진행되지 않는다.\n> FW Upgrade Fail 팝업 발생\n\n2. USB를 Upgrade 파일 선택 후 1분이내 제거 시 재부팅된다. "
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-44",
-    "description": "",
-    "test_step": [
-      "USB Memory을 이용한 FirmWare Upgrade을 지원한다.",
-      "1. 정규버전에서 최신 버전으로 FW Upgrade를 시도한다.\n2. 다시 이전의 정규버전으로 FW Upgrade를 시도한다.",
-      "[XS2: DTC LCD 적용시료]\n1. 최신FW에서 FW V1.1.1 이하로 FW Downgrade 시도",
-      "1.장치에 메모리 Full로 채운 상태에서 FW Upgrade 시도",
-      "1. USB에 다국어 리소스파일 저장\n2. 다국어 리소스 파일 업그레이드 시도\n3. 업그레이드 후 확인",
-      "1. USB Memory를 장치에 삽입\n2. Menu> Device> USB Memory> FW Upgrade\n3. FW Upgrade 파일 선택\n4. FW Upgrade 유무 확인",
-      "1. USB Memory를 장치에 삽입\n2. Menu> Device> USB Memory> FW Upgrade\n3. FW Upgrade 파일 선택\n4. FW Upgrade 중 USB 제거\n5. FW Upgrade 유무 확인"
-    ],
-    "data": [
-      "각 장치별 최신 버전의 FirmWare을 USB Memory에 준비한다.\n > Station 계열 - BioStation 2, BioStation A2, FaceStation 2, FaceSttion2 F2, BioStation 3, XStation2, FaceLite, BioStation 2a",
-      "각 장치별 최신 버전의 FirmWare을 USB Memory에 준비한다.\n > Station 계열 - BioStation 2, BioStation A2, FaceStation 2\n > 전자서명 기능 도입 버전\n   : BS2 - v1.4.0 버전부터 도입\n   : A2 - v1.3.0 버전부터 도입\n   : FS2 - v1.0.0 버전부터 도입\n   : 이외 다른 제품은 기본 반영",
-      "사용자\n> 모든 크리덴셜 저장된 상태로 Full\n\n이벤트 로그 Full\n> 이미지로그(지원시)\n> 일반로그",
-      "*Station 장치의 Resource File Upgrade시 다국어 지원하는 리소스파일 개발자에 요청해 진행*",
-      "FW Upgrade 파일 선택\n> 타 모델의 FW 파일",
-      "FW Upgrade 파일 선택\n> 검증 진행중인 모델의 FW 파일"
-    ],
-    "expected_result": [
-      "최신버전으로 FirmWare Upgrade가 된다.\n> 성공 팝업, 재부팅, 장치 상세정보의 Version확인\n: Master/Slave/Default 모두 지원한다.",
-      "1. FW Upgrade가 정상적으로 동작 한다.\n2. FW Upgrade시 서명이 유효하지 않아 Upgrade가 실패되고, Upgrade 시도 전 버전으로 유지된다.",
-      "1. Upgrade Fail된다.\n> 해당시료는 v1.1.2부터 지원",
-      "1. Upgrade 및 부팅이 정상적으로 이루어져야 한다.",
-      "1. 설정된 다국어 리소스 파일로 표시된다.",
-      "1. FW Upgrade가 진행되지 않는다.\n> FW Upgrade Fail 팝업 발생",
-      "1. FW Upgrade가 진행되지 않는다.\n> FW Upgrade Fail 팝업 발생\n\n2. USB를 Upgrade 파일 선택 후 1분이내 제거 시 재부팅된다. "
-    ]
+    "assignee": null,
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 7.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-44/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@4c274aaa[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@7eee1d4f[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@4c2cb308[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@4226cba7[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@4076a964[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@3c454a33[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@15581a40[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@61d790bf[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@149f3868[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@21dec1a[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@57427c03[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@a4d5c3c[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": "2016-02-25T13:30:42.000+0900",
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-44/watchers",
+      "watchCount": 2,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T09:45:31.000+0900",
+    "timeoriginalestimate": null,
+    "description": "USB Memory를 이용한 FirmWare Upgrade에 문제가 없는 지 확인\r\nFW Upgrade 진행은 초기버전부터 진행하는걸로 검증범위 확대.",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>USB Memory을 이용한 FirmWare Upgrade을 지원한다.</p></td><td><p>각 장치별 최신 버전의 FirmWare을 USB Memory에 준비한다.<br/> &gt; Station 계열 - BioStation 2, BioStation A2, FaceStation 2, FaceSttion2 F2, BioStation 3, XStation2, FaceLite, BioStation 2a</p></td><td><p>최신버전으로 FirmWare Upgrade가 된다.<br/>&gt; 성공 팝업, 재부팅, 장치 상세정보의 Version확인<br/>: Master/Slave/Default 모두 지원한다.</p></td></tr><tr><td>2</td><td><p>1. 정규버전에서 최신 버전으로 FW Upgrade를 시도한다.<br/>2. 다시 이전의 정규버전으로 FW Upgrade를 시도한다.</p></td><td><p>각 장치별 최신 버전의 FirmWare을 USB Memory에 준비한다.<br/> &gt; Station 계열 - BioStation 2, BioStation A2, FaceStation 2<br/> &gt; 전자서명 기능 도입 버전<br/>   : BS2 - v1.4.0 버전부터 도입<br/>   : A2 - v1.3.0 버전부터 도입<br/>   : FS2 - v1.0.0 버전부터 도입<br/>   : 이외 다른 제품은 기본 반영</p></td><td><p>1. FW Upgrade가 정상적으로 동작 한다.<br/>2. FW Upgrade시 서명이 유효하지 않아 Upgrade가 실패되고, Upgrade 시도 전 버전으로 유지된다.</p></td></tr><tr><td>3</td><td><p><span class=\"error\">&#91;XS2: DTC LCD 적용시료&#93;</span><br/>1. 최신FW에서 FW V1.1.1 이하로 FW Downgrade 시도</p></td><td></td><td><p>1. Upgrade Fail된다.<br/>&gt; 해당시료는 v1.1.2부터 지원</p></td></tr><tr><td>4</td><td><p>1.장치에 메모리 Full로 채운 상태에서 FW Upgrade 시도</p></td><td><p>사용자<br/>&gt; 모든 크리덴셜 저장된 상태로 Full</p>\n\n<p>이벤트 로그 Full<br/>&gt; 이미지로그(지원시)<br/>&gt; 일반로그</p></td><td><p>1. Upgrade 및 부팅이 정상적으로 이루어져야 한다.</p></td></tr><tr><td>5</td><td><p>1. USB에 다국어 리소스파일 저장<br/>2. 다국어 리소스 파일 업그레이드 시도<br/>3. 업그레이드 후 확인</p></td><td><p><b>Station 장치의 Resource File Upgrade시 다국어 지원하는 리소스파일 개발자에 요청해 진행</b></p></td><td><p>1. 설정된 다국어 리소스 파일로 표시된다.</p></td></tr><tr><td>6</td><td><p>1. USB Memory를 장치에 삽입<br/>2. Menu&gt; Device&gt; USB Memory&gt; FW Upgrade<br/>3. FW Upgrade 파일 선택<br/>4. FW Upgrade 유무 확인</p></td><td><p>FW Upgrade 파일 선택<br/>&gt; 타 모델의 FW 파일</p></td><td><p>1. FW Upgrade가 진행되지 않는다.<br/>&gt; FW Upgrade Fail 팝업 발생</p></td></tr><tr><td>7</td><td><p>1. USB Memory를 장치에 삽입<br/>2. Menu&gt; Device&gt; USB Memory&gt; FW Upgrade<br/>3. FW Upgrade 파일 선택<br/>4. FW Upgrade 중 USB 제거<br/>5. FW Upgrade 유무 확인</p></td><td><p>FW Upgrade 파일 선택<br/>&gt; 검증 진행중인 모델의 FW 파일</p></td><td><p>1. FW Upgrade가 진행되지 않는다.<br/>&gt; FW Upgrade Fail 팝업 발생</p>\n\n<p>2. USB를 Upgrade 파일 선택 후 1분이내 제거 시 재부팅된다. </p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [],
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 12504,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 35202,
+              "latestFinalId": 35202
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_170117(UnitTest)",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 5648,
+              "latestFinalId": 5648
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_190805_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15227,
+              "latestFinalId": 15227
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_190809_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15588,
+              "latestFinalId": 15588
+            }
+          ]
+        },
+        {
+          "group": "FL_V1.0_190515(PS)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 14140,
+              "latestFinalId": 14140
+            }
+          ]
+        },
+        {
+          "group": "V1.8.0_190806_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15315,
+              "latestFinalId": 15315
+            }
+          ]
+        },
+        {
+          "group": "V1.7.1_181204(Hotfix)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12659,
+              "latestFinalId": 12659
+            }
+          ]
+        },
+        {
+          "group": "V1.7.0_190806_Interaction 7차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15112,
+              "latestFinalId": 15112
+            }
+          ]
+        },
+        {
+          "group": "V1.1.5_4_151014(All)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 54,
+              "latestFinalId": 54
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0 170331",
+          "statusResults": [
+            {
+              "latest": 1,
+              "latestFinal": 0,
+              "latestId": 8630,
+              "latestFinalId": 6359
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_181119_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12940,
+              "latestFinalId": 12940
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "Upgrade - USB Memory",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 579,
+          "index": 1,
+          "step": "USB Memory을 이용한 FirmWare Upgrade을 지원한다.",
+          "data": "각 장치별 최신 버전의 FirmWare을 USB Memory에 준비한다.\n > Station 계열 - BioStation 2, BioStation A2, FaceStation 2, FaceSttion2 F2, BioStation 3, XStation2, FaceLite, BioStation 2a",
+          "result": "최신버전으로 FirmWare Upgrade가 된다.\n> 성공 팝업, 재부팅, 장치 상세정보의 Version확인\n: Master/Slave/Default 모두 지원한다.",
+          "attachments": []
+        },
+        {
+          "id": 2853,
+          "index": 2,
+          "step": "1. 정규버전에서 최신 버전으로 FW Upgrade를 시도한다.\n2. 다시 이전의 정규버전으로 FW Upgrade를 시도한다.",
+          "data": "각 장치별 최신 버전의 FirmWare을 USB Memory에 준비한다.\n > Station 계열 - BioStation 2, BioStation A2, FaceStation 2\n > 전자서명 기능 도입 버전\n   : BS2 - v1.4.0 버전부터 도입\n   : A2 - v1.3.0 버전부터 도입\n   : FS2 - v1.0.0 버전부터 도입\n   : 이외 다른 제품은 기본 반영",
+          "result": "1. FW Upgrade가 정상적으로 동작 한다.\n2. FW Upgrade시 서명이 유효하지 않아 Upgrade가 실패되고, Upgrade 시도 전 버전으로 유지된다.",
+          "attachments": []
+        },
+        {
+          "id": 14579,
+          "index": 3,
+          "step": "[XS2: DTC LCD 적용시료]\n1. 최신FW에서 FW V1.1.1 이하로 FW Downgrade 시도",
+          "result": "1. Upgrade Fail된다.\n> 해당시료는 v1.1.2부터 지원",
+          "attachments": []
+        },
+        {
+          "id": 14710,
+          "index": 4,
+          "step": "1.장치에 메모리 Full로 채운 상태에서 FW Upgrade 시도",
+          "data": "사용자\n> 모든 크리덴셜 저장된 상태로 Full\n\n이벤트 로그 Full\n> 이미지로그(지원시)\n> 일반로그",
+          "result": "1. Upgrade 및 부팅이 정상적으로 이루어져야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 14993,
+          "index": 5,
+          "step": "1. USB에 다국어 리소스파일 저장\n2. 다국어 리소스 파일 업그레이드 시도\n3. 업그레이드 후 확인",
+          "data": "*Station 장치의 Resource File Upgrade시 다국어 지원하는 리소스파일 개발자에 요청해 진행*",
+          "result": "1. 설정된 다국어 리소스 파일로 표시된다.",
+          "attachments": []
+        },
+        {
+          "id": 15043,
+          "index": 6,
+          "step": "1. USB Memory를 장치에 삽입\n2. Menu> Device> USB Memory> FW Upgrade\n3. FW Upgrade 파일 선택\n4. FW Upgrade 유무 확인",
+          "data": "FW Upgrade 파일 선택\n> 타 모델의 FW 파일",
+          "result": "1. FW Upgrade가 진행되지 않는다.\n> FW Upgrade Fail 팝업 발생",
+          "attachments": []
+        },
+        {
+          "id": 15044,
+          "index": 7,
+          "step": "1. USB Memory를 장치에 삽입\n2. Menu> Device> USB Memory> FW Upgrade\n3. FW Upgrade 파일 선택\n4. FW Upgrade 중 USB 제거\n5. FW Upgrade 유무 확인",
+          "data": "FW Upgrade 파일 선택\n> 검증 진행중인 모델의 FW 파일",
+          "result": "1. FW Upgrade가 진행되지 않는다.\n> FW Upgrade Fail 팝업 발생\n\n2. USB를 Upgrade 파일 선택 후 1분이내 제거 시 재부팅된다. ",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12504/comment/21132",
+          "id": "21132",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=thomas.kang",
+            "name": "thomas.kang",
+            "key": "thomas.kang",
+            "emailAddress": "jwkang@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=thomas.kang&avatarId=10401",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=thomas.kang&avatarId=10401",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=thomas.kang&avatarId=10401",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=thomas.kang&avatarId=10401"
+            },
+            "displayName": "강진원",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "[~hmkang] 책임님, 이 case 는 COMMON 에 들어갈 내용이 아닌 것 같습니다.",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=thomas.kang",
+            "name": "thomas.kang",
+            "key": "thomas.kang",
+            "emailAddress": "jwkang@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=thomas.kang&avatarId=10401",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=thomas.kang&avatarId=10401",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=thomas.kang&avatarId=10401",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=thomas.kang&avatarId=10401"
+            },
+            "displayName": "강진원",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-09-14T14:10:29.000+0900",
+          "updated": "2015-09-14T14:10:29.000+0900"
+        }
+      ],
+      "maxResults": 1,
+      "total": 1,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+      "name": "Minor (C)",
+      "id": "3"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+      "name": "완료",
+      "id": "10001",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "완료"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzs24f:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2015-08-19T17:17:46.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

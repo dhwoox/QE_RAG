@@ -1,105 +1,1068 @@
 {
-  "id": "COMMONR-245",
-  "content": [
-    [
-      1,
-      "1. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Disable\n2. Trigger&Action 설정\n   > Input 및 Function\n3. 카드인증시도 후 결과 확인\n4. Trigger&Action의 Input 접지\n5. 결과확인\n6. 등록되지않은 카드인증시도> 실패에 대한 인증결과 확인",
-      "카드인증\n> SmartCard - AOC, SCC\n> 일반카드",
-      "1. Step 3> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 5> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 6> 화면에 인증결과가 출력된다.\n=> 인증실패 및 Sound 발생됨."
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "27716",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/27716",
+  "key": "COMMONR-245",
+  "fields": {
+    "resolution": null,
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "0.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10173",
+      "value": "Major",
+      "id": "10173"
+    },
+    "customfield_10185": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
+      "value": "Medium (2-3일 이내 피드백)",
+      "id": "10220"
+    },
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "23153",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/23153",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "29919",
+          "key": "FLFW-318",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/29919",
+          "fields": {
+            "summary": "[Wiegand-Trigger&Action] Wiegand Out 장치의 화면 전환에 따른 내부 인증 동작에 따른 Wigeand Out 동작 문의 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "26874",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/26874",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "35614",
+          "key": "BLNIIFW-824",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/35614",
+          "fields": {
+            "summary": "[Wiegand Output - BlackList] FailCode 지정 시 BlackList 삭제 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "27859",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/27859",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "37440",
+          "key": "DFW-317",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/37440",
+          "fields": {
+            "summary": "[Wiegand-Trigger&Action] 장치 Trigger&Action에서 Input 및 Function 설정 시 인증 후 인증 결과가 실패로 출력되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "31120",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/31120",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "41323",
+          "key": "ONYXFW-316",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/41323",
+          "fields": {
+            "summary": "Wiegand Out장치에 Trigger&Action 설정시 미동작하는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "24353",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/24353",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "25385",
+          "key": "BLNIIFW-291",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/25385",
+          "fields": {
+            "summary": "[Tester : 이승훈] Master-Slave 구성 장비에서 Trigger & action > Function( Access granted/ Access denied) 설정 후 Input 입력 시 설정한 Function 동작 되지 않는 현상  ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "21754",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/21754",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "27947",
+          "key": "BLNIIFW-506",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/27947",
+          "fields": {
+            "summary": "[Wiegand Output-Function]Trigger&Action에서 Access Granted(Denied) 설정 동작하지 않는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "21761",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/21761",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "27950",
+          "key": "BLNIIFW-508",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/27950",
+          "fields": {
+            "summary": "[Wiegand Output(Bypass Off)-Function] Wiegand Out 동작 이상 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "26521",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/26521",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "25297",
+          "key": "XPASSRII-124",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/25297",
+          "fields": {
+            "summary": "영숫자로 발급한 AOC 카드에 대해 Wiegand Out으로 내보낼 경우 0으로 들어오는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "51972",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/51972",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "61512",
+          "key": "BEW3FW-88",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/61512",
+          "fields": {
+            "summary": "Wiegand 설정 후 카드 인증 시 자주색 LED 유지 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "21764",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/21764",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "27957",
+          "key": "BLNIIFW-509",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/27957",
+          "fields": {
+            "summary": "[Wiegand Output - Bypass] Output, Bypass , Function, Fail Code 모두 사용  상태에서의 Card와 지문, ID 인증 실패 동작 상이 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "22001",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/22001",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "28190",
+          "key": "BLNIIFW-530",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/28190",
+          "fields": {
+            "summary": "[Wiegand Ouput - Bypass] Blacke List Card 출력에 따른 동작 상이",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "1. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable\n2. Trigger&Action 설정\n   > Input 및 Function\n3. 카드인증시도> 인증결과 확인\n4. Trigger&Action의 Input 접지\n5. 결과확인\n6. 장치에서 Bypass Disable로 변경\n7. 카드인증시도 후 결과확인\n8. Trigger&Action의 Input 접지\n9. 결과확인",
-      "카드인증\n> SmartCard - AOC, SCC\n> 일반카드",
-      "1. Step 3> 카드 입력 후 바로 Bypass 로 Wiegand 출력된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 7> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 미출력됨\n3. Step 5,9> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨."
-    ],
-    [
-      3,
-      "1. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable\n2. Trigger&Action 설정\n   > Input 및 Function\n3. 카드인증시도> 인증결과 확인\n4. Trigger&Action의 Input 접지\n5. 결과확인\n6. 장치에서 Bypass Disable로 변경\n7. 카드인증시도 후 결과확인\n8. Trigger&Action의 Input 접지\n9. 결과확인",
-      "카드인증(= Blacklist Card)\n> SmartCard - AOC, SCC\n> 일반카드",
-      "1. Step 3> 카드 입력 후 바로 Bypass 로 Wiegand 출력된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 7> Blacklist로 인증실패 처리되고 화면에 인증결과 출력된다.\n=> Wiegand Out되지 않음\n=> 인증실패 및 Sound 발생됨\n3. Step 5,9> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨."
-    ],
-    [
-      4,
-      "1. 장치의 지문인증모드 설정  \n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable/Disable 무관\n3. Trigger&Action 설정\n   > Input 및 Function\n4. 등록된 지문인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인\n7. 등록되지않은 지문인증시도> 실패에 대한 인증결과 확인",
-      "※ 보낼 데이터가 있는 경우 (CSN, SmartCard_SCC가 포함된 User)\n지문인증모드\n> 지문Only\n> 지문+PIN",
-      "1. Step 4> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 6> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 7> 화면에 인증결과가 출력된다.\n=> 인증실패 및 Sound 발생됨."
-    ],
-    [
-      5,
-      "1. 장치의 지문인증모드 설정  \n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable/Disable 무관\n3. Trigger&Action 설정\n   > Input 및 Function\n4. 등록된 지문인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인\n7. 등록되지않은 지문인증시도> 실패에 대한 인증결과 확인",
-      "※ 보낼 데이터가 없는 경우 (SmartCard_AoC, PIN만 등록된 User)\n지문인증모드\n> 지문Only\n> 지문+PIN",
-      "1. Step 4> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 출력됨\n2. Step 6> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 7> 화면에 인증결과가 출력된다.\n=> 인증실패 및 Sound 발생됨."
-    ],
-    [
-      6,
-      "1. 장치의 ID인증모드 설정\n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable/Disable 무관\n3. Trigger&Action 설정\n   > Input 및 Function\n4. 등록된 ID 인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인\n7. 등록되지않은 ID 인증시도> 실패에 대한 인증결과 확인",
-      "※ 보낼 데이터가 있는 경우 (CSN, SmartCard_SCC가 포함된 User)\nID 인증모드\n> ID+지문\n> ID+PIN\n> ID+지문/PIN\n> ID+지문+PIN",
-      "1. Step 4> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 6> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 7> 화면에 인증결과가 출력된다.\n=> 인증실패 및 Sound 발생됨."
-    ],
-    [
-      7,
-      "1. 장치의 ID인증모드 설정\n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable/Disable 무관\n3. Trigger&Action 설정\n   > Input 및 Function\n4. 등록된 ID 인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인\n7. 등록되지않은 ID 인증시도> 실패에 대한 인증결과 확인",
-      "※ 보낼 데이터가 없는 경우 (SmartCard_AoC or PIN만 등록된 User)\nID 인증모드\n> ID+지문\n> ID+PIN\n> ID+지문/PIN\n> ID+지문+PIN",
-      "1. Step 4> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 출력됨\n2. Step 6> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 7> 화면에 인증결과가 출력된다.\n=> 인증실패 및 Sound 발생됨."
-    ],
-    [
-      8,
-      "1. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Disable\n   > Fail Code - 설정\n2. Trigger&Action 설정\n   > Input 및 Function\n3. 등록되지 않은 카드인증시도 후 결과 확인\n4. Trigger&Action의 Input 접지\n5. 결과확인\n6. 등록된 카드인증시도> 실패에 대한 인증결과 확인",
-      "카드인증\n> SmartCard - AOC, SCC\n> 일반카드",
-      "1. Step 3> 카드 입력 후 바로 Bypass Disable로 Wiegand 출력된다.\n=> 인증실패 및 Sound 발생됨.\n2. Step 5> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 6> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 미출력됨"
-    ],
-    [
-      9,
-      "1. 장치의 지문인증모드 설정\n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable\n3. Trigger&Action 설정\n   > Input 및 Function\n4. Private Auth(= 카드 + 지문) 설정되어 발급된 카드로 인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인",
-      "카드인증\n> SmartCard - AOC(Private Auth 포함)\n=> Card+지문\n=> Card+PIN\n=> Card+지문/PIN\n=> Card+지문+PIN",
-      "1. Step 4> 카드 입력 후 바로 Bypass 로 Wiegand 출력된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 5> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨."
-    ],
-    [
-      10,
-      "1. 장치의 지문인증모드 설정\n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable\n3. Trigger&Action 설정\n   > Input 및 Function\n4. Private Auth(= 카드 + 지문) 설정되어 발급된 카드로 인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인",
-      "카드인증\n> SmartCard - SCC\n> 일반카드\n=> Card+지문\n=> Card+PIN\n=> Card+지문/PIN\n=> Card+지문+PIN\n",
-      "1. Step 3> 카드 입력 후 바로 Bypass 로 Wiegand 출력된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 5> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨."
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-245",
-    "description": "",
-    "test_step": [
-      "1. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Disable\n2. Trigger&Action 설정\n   > Input 및 Function\n3. 카드인증시도 후 결과 확인\n4. Trigger&Action의 Input 접지\n5. 결과확인\n6. 등록되지않은 카드인증시도> 실패에 대한 인증결과 확인",
-      "1. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable\n2. Trigger&Action 설정\n   > Input 및 Function\n3. 카드인증시도> 인증결과 확인\n4. Trigger&Action의 Input 접지\n5. 결과확인\n6. 장치에서 Bypass Disable로 변경\n7. 카드인증시도 후 결과확인\n8. Trigger&Action의 Input 접지\n9. 결과확인",
-      "1. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable\n2. Trigger&Action 설정\n   > Input 및 Function\n3. 카드인증시도> 인증결과 확인\n4. Trigger&Action의 Input 접지\n5. 결과확인\n6. 장치에서 Bypass Disable로 변경\n7. 카드인증시도 후 결과확인\n8. Trigger&Action의 Input 접지\n9. 결과확인",
-      "1. 장치의 지문인증모드 설정  \n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable/Disable 무관\n3. Trigger&Action 설정\n   > Input 및 Function\n4. 등록된 지문인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인\n7. 등록되지않은 지문인증시도> 실패에 대한 인증결과 확인",
-      "1. 장치의 지문인증모드 설정  \n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable/Disable 무관\n3. Trigger&Action 설정\n   > Input 및 Function\n4. 등록된 지문인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인\n7. 등록되지않은 지문인증시도> 실패에 대한 인증결과 확인",
-      "1. 장치의 ID인증모드 설정\n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable/Disable 무관\n3. Trigger&Action 설정\n   > Input 및 Function\n4. 등록된 ID 인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인\n7. 등록되지않은 ID 인증시도> 실패에 대한 인증결과 확인",
-      "1. 장치의 ID인증모드 설정\n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable/Disable 무관\n3. Trigger&Action 설정\n   > Input 및 Function\n4. 등록된 ID 인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인\n7. 등록되지않은 ID 인증시도> 실패에 대한 인증결과 확인",
-      "1. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Disable\n   > Fail Code - 설정\n2. Trigger&Action 설정\n   > Input 및 Function\n3. 등록되지 않은 카드인증시도 후 결과 확인\n4. Trigger&Action의 Input 접지\n5. 결과확인\n6. 등록된 카드인증시도> 실패에 대한 인증결과 확인",
-      "1. 장치의 지문인증모드 설정\n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable\n3. Trigger&Action 설정\n   > Input 및 Function\n4. Private Auth(= 카드 + 지문) 설정되어 발급된 카드로 인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인",
-      "1. 장치의 지문인증모드 설정\n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable\n3. Trigger&Action 설정\n   > Input 및 Function\n4. Private Auth(= 카드 + 지문) 설정되어 발급된 카드로 인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인"
-    ],
-    "data": [
-      "카드인증\n> SmartCard - AOC, SCC\n> 일반카드",
-      "카드인증\n> SmartCard - AOC, SCC\n> 일반카드",
-      "카드인증(= Blacklist Card)\n> SmartCard - AOC, SCC\n> 일반카드",
-      "※ 보낼 데이터가 있는 경우 (CSN, SmartCard_SCC가 포함된 User)\n지문인증모드\n> 지문Only\n> 지문+PIN",
-      "※ 보낼 데이터가 없는 경우 (SmartCard_AoC, PIN만 등록된 User)\n지문인증모드\n> 지문Only\n> 지문+PIN",
-      "※ 보낼 데이터가 있는 경우 (CSN, SmartCard_SCC가 포함된 User)\nID 인증모드\n> ID+지문\n> ID+PIN\n> ID+지문/PIN\n> ID+지문+PIN",
-      "※ 보낼 데이터가 없는 경우 (SmartCard_AoC or PIN만 등록된 User)\nID 인증모드\n> ID+지문\n> ID+PIN\n> ID+지문/PIN\n> ID+지문+PIN",
-      "카드인증\n> SmartCard - AOC, SCC\n> 일반카드",
-      "카드인증\n> SmartCard - AOC(Private Auth 포함)\n=> Card+지문\n=> Card+PIN\n=> Card+지문/PIN\n=> Card+지문+PIN",
-      "카드인증\n> SmartCard - SCC\n> 일반카드\n=> Card+지문\n=> Card+PIN\n=> Card+지문/PIN\n=> Card+지문+PIN\n"
-    ],
-    "expected_result": [
-      "1. Step 3> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 5> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 6> 화면에 인증결과가 출력된다.\n=> 인증실패 및 Sound 발생됨.",
-      "1. Step 3> 카드 입력 후 바로 Bypass 로 Wiegand 출력된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 7> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 미출력됨\n3. Step 5,9> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.",
-      "1. Step 3> 카드 입력 후 바로 Bypass 로 Wiegand 출력된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 7> Blacklist로 인증실패 처리되고 화면에 인증결과 출력된다.\n=> Wiegand Out되지 않음\n=> 인증실패 및 Sound 발생됨\n3. Step 5,9> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.",
-      "1. Step 4> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 6> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 7> 화면에 인증결과가 출력된다.\n=> 인증실패 및 Sound 발생됨.",
-      "1. Step 4> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 출력됨\n2. Step 6> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 7> 화면에 인증결과가 출력된다.\n=> 인증실패 및 Sound 발생됨.",
-      "1. Step 4> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 6> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 7> 화면에 인증결과가 출력된다.\n=> 인증실패 및 Sound 발생됨.",
-      "1. Step 4> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 출력됨\n2. Step 6> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 7> 화면에 인증결과가 출력된다.\n=> 인증실패 및 Sound 발생됨.",
-      "1. Step 3> 카드 입력 후 바로 Bypass Disable로 Wiegand 출력된다.\n=> 인증실패 및 Sound 발생됨.\n2. Step 5> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 6> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 미출력됨",
-      "1. Step 4> 카드 입력 후 바로 Bypass 로 Wiegand 출력된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 5> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.",
-      "1. Step 3> 카드 입력 후 바로 Bypass 로 Wiegand 출력된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 5> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨."
-    ]
+    "assignee": null,
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 10.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-245/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@79007a4a[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@7146441a[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6c8df3f4[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@2fa80ceb[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@7e4c5530[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@401dac20[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@430cf584[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@2cac765a[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@30d5532a[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@1d8485bc[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@3980f35d[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@76515c91[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": null,
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-245/watchers",
+      "watchCount": 1,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T10:10:21.000+0900",
+    "timeoriginalestimate": null,
+    "description": "동작사양\r\n\r\n> Bypass 켜짐, Function 켜짐 인 경우, 기존과 같이 Bypass 가 우선 하여 동작하고, Function 입력이 들어와야 인증 결과를 표시한다. \r\n> 지원 카드 : AOC, SCC, 일반 카드\r\n> 매칭 유무 : 인증 모드에 따라 내부적으로 매칭 수행\r\n> 인증 모드: Function 동작 있을 경우, 카드, ID + PW, 그리고 지문, 얼굴 모두 동일하게 Input을 받아 인증 성공/실패를 한번만 표시한다. \r\n                  단, 지문/얼굴, ID+PW 인증 실패의 경우 (Fail Code 전송과 상관 없이) 인증 실패를 장치에서 표시한다.  \r\n                  카드가 없어 Wiegand Out이 나가지 않는 경우에도(Function, Bypass 둘 중하나라도 설정 된 경우 상관 없이) 인증 성공/실패 미표시 한다. \r\n> 인증 실패(Fail Code 설정) 시 Fail Code 동작(장치에서는 2회 인증 성공/실패 관련하여 표시)\r\n> 인증 실패(Fail Code 미설정) 시 별도 성공/실패 화면 표시 및 사운드, LED 발생\r\n> Event Code 생성 - 인증 성공/실패(Door, Zone, 인증모드 오류 포함)에 대해서, 이후 입력 신호에 따라 성공/실패 화면 표시 및 사운드 발생\r\n> Access Granted/Access Denied 설정 시 동작(개별, 동시)\r\n",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. 장치에 Wiegand 설정<br/>   &gt; Wiegand Out<br/>   &gt; Bypass - Disable<br/>2. Trigger&amp;Action 설정<br/>   &gt; Input 및 Function<br/>3. 카드인증시도 후 결과 확인<br/>4. Trigger&amp;Action의 Input 접지<br/>5. 결과확인<br/>6. 등록되지않은 카드인증시도&gt; 실패에 대한 인증결과 확인</p></td><td><p>카드인증<br/>&gt; SmartCard - AOC, SCC<br/>&gt; 일반카드</p></td><td><p>1. Step 3&gt; 인증모드로 수행 후 Wiegand Out으로 동작된다.<br/>=&gt; 인증결과는 화면에 미출력됨<br/>2. Step 5&gt; Function의 Action이 출력된다.<br/>=&gt; 화면표시 및 Sound 발생됨.<br/>3. Step 6&gt; 화면에 인증결과가 출력된다.<br/>=&gt; 인증실패 및 Sound 발생됨.</p></td></tr><tr><td>2</td><td><p>1. 장치에 Wiegand 설정<br/>   &gt; Wiegand Out<br/>   &gt; Bypass - Enable<br/>2. Trigger&amp;Action 설정<br/>   &gt; Input 및 Function<br/>3. 카드인증시도&gt; 인증결과 확인<br/>4. Trigger&amp;Action의 Input 접지<br/>5. 결과확인<br/>6. 장치에서 Bypass Disable로 변경<br/>7. 카드인증시도 후 결과확인<br/>8. Trigger&amp;Action의 Input 접지<br/>9. 결과확인</p></td><td><p>카드인증<br/>&gt; SmartCard - AOC, SCC<br/>&gt; 일반카드</p></td><td><p>1. Step 3&gt; 카드 입력 후 바로 Bypass 로 Wiegand 출력된다.<br/>=&gt; 인증결과는 화면에 미출력됨<br/>2. Step 7&gt; 인증모드로 수행 후 Wiegand Out으로 동작된다.<br/>=&gt; 인증결과는 화면에 미출력됨<br/>3. Step 5,9&gt; Function의 Action이 출력된다.<br/>=&gt; 화면표시 및 Sound 발생됨.</p></td></tr><tr><td>3</td><td><p>1. 장치에 Wiegand 설정<br/>   &gt; Wiegand Out<br/>   &gt; Bypass - Enable<br/>2. Trigger&amp;Action 설정<br/>   &gt; Input 및 Function<br/>3. 카드인증시도&gt; 인증결과 확인<br/>4. Trigger&amp;Action의 Input 접지<br/>5. 결과확인<br/>6. 장치에서 Bypass Disable로 변경<br/>7. 카드인증시도 후 결과확인<br/>8. Trigger&amp;Action의 Input 접지<br/>9. 결과확인</p></td><td><p>카드인증(= Blacklist Card)<br/>&gt; SmartCard - AOC, SCC<br/>&gt; 일반카드</p></td><td><p>1. Step 3&gt; 카드 입력 후 바로 Bypass 로 Wiegand 출력된다.<br/>=&gt; 인증결과는 화면에 미출력됨<br/>2. Step 7&gt; Blacklist로 인증실패 처리되고 화면에 인증결과 출력된다.<br/>=&gt; Wiegand Out되지 않음<br/>=&gt; 인증실패 및 Sound 발생됨<br/>3. Step 5,9&gt; Function의 Action이 출력된다.<br/>=&gt; 화면표시 및 Sound 발생됨.</p></td></tr><tr><td>4</td><td><p>1. 장치의 지문인증모드 설정  <br/>2. 장치에 Wiegand 설정<br/>   &gt; Wiegand Out<br/>   &gt; Bypass - Enable/Disable 무관<br/>3. Trigger&amp;Action 설정<br/>   &gt; Input 및 Function<br/>4. 등록된 지문인증시도&gt; 성공에 대한 인증결과 확인<br/>5. Trigger&amp;Action의 Input 접지<br/>6. 결과확인<br/>7. 등록되지않은 지문인증시도&gt; 실패에 대한 인증결과 확인</p></td><td><p>※ 보낼 데이터가 있는 경우 (CSN, SmartCard_SCC가 포함된 User)<br/>지문인증모드<br/>&gt; 지문Only<br/>&gt; 지문+PIN</p></td><td><p>1. Step 4&gt; 인증모드로 수행 후 Wiegand Out으로 동작된다.<br/>=&gt; 인증결과는 화면에 미출력됨<br/>2. Step 6&gt; Function의 Action이 출력된다.<br/>=&gt; 화면표시 및 Sound 발생됨.<br/>3. Step 7&gt; 화면에 인증결과가 출력된다.<br/>=&gt; 인증실패 및 Sound 발생됨.</p></td></tr><tr><td>5</td><td><p>1. 장치의 지문인증모드 설정  <br/>2. 장치에 Wiegand 설정<br/>   &gt; Wiegand Out<br/>   &gt; Bypass - Enable/Disable 무관<br/>3. Trigger&amp;Action 설정<br/>   &gt; Input 및 Function<br/>4. 등록된 지문인증시도&gt; 성공에 대한 인증결과 확인<br/>5. Trigger&amp;Action의 Input 접지<br/>6. 결과확인<br/>7. 등록되지않은 지문인증시도&gt; 실패에 대한 인증결과 확인</p></td><td><p>※ 보낼 데이터가 없는 경우 (SmartCard_AoC, PIN만 등록된 User)<br/>지문인증모드<br/>&gt; 지문Only<br/>&gt; 지문+PIN</p></td><td><p>1. Step 4&gt; 인증모드로 수행 후 Wiegand Out으로 동작된다.<br/>=&gt; 인증결과는 화면에 출력됨<br/>2. Step 6&gt; Function의 Action이 출력된다.<br/>=&gt; 화면표시 및 Sound 발생됨.<br/>3. Step 7&gt; 화면에 인증결과가 출력된다.<br/>=&gt; 인증실패 및 Sound 발생됨.</p></td></tr><tr><td>6</td><td><p>1. 장치의 ID인증모드 설정<br/>2. 장치에 Wiegand 설정<br/>   &gt; Wiegand Out<br/>   &gt; Bypass - Enable/Disable 무관<br/>3. Trigger&amp;Action 설정<br/>   &gt; Input 및 Function<br/>4. 등록된 ID 인증시도&gt; 성공에 대한 인증결과 확인<br/>5. Trigger&amp;Action의 Input 접지<br/>6. 결과확인<br/>7. 등록되지않은 ID 인증시도&gt; 실패에 대한 인증결과 확인</p></td><td><p>※ 보낼 데이터가 있는 경우 (CSN, SmartCard_SCC가 포함된 User)<br/>ID 인증모드<br/>&gt; ID+지문<br/>&gt; ID+PIN<br/>&gt; ID+지문/PIN<br/>&gt; ID+지문+PIN</p></td><td><p>1. Step 4&gt; 인증모드로 수행 후 Wiegand Out으로 동작된다.<br/>=&gt; 인증결과는 화면에 미출력됨<br/>2. Step 6&gt; Function의 Action이 출력된다.<br/>=&gt; 화면표시 및 Sound 발생됨.<br/>3. Step 7&gt; 화면에 인증결과가 출력된다.<br/>=&gt; 인증실패 및 Sound 발생됨.</p></td></tr><tr><td>7</td><td><p>1. 장치의 ID인증모드 설정<br/>2. 장치에 Wiegand 설정<br/>   &gt; Wiegand Out<br/>   &gt; Bypass - Enable/Disable 무관<br/>3. Trigger&amp;Action 설정<br/>   &gt; Input 및 Function<br/>4. 등록된 ID 인증시도&gt; 성공에 대한 인증결과 확인<br/>5. Trigger&amp;Action의 Input 접지<br/>6. 결과확인<br/>7. 등록되지않은 ID 인증시도&gt; 실패에 대한 인증결과 확인</p></td><td><p>※ 보낼 데이터가 없는 경우 (SmartCard_AoC or PIN만 등록된 User)<br/>ID 인증모드<br/>&gt; ID+지문<br/>&gt; ID+PIN<br/>&gt; ID+지문/PIN<br/>&gt; ID+지문+PIN</p></td><td><p>1. Step 4&gt; 인증모드로 수행 후 Wiegand Out으로 동작된다.<br/>=&gt; 인증결과는 화면에 출력됨<br/>2. Step 6&gt; Function의 Action이 출력된다.<br/>=&gt; 화면표시 및 Sound 발생됨.<br/>3. Step 7&gt; 화면에 인증결과가 출력된다.<br/>=&gt; 인증실패 및 Sound 발생됨.</p></td></tr><tr><td>8</td><td><p>1. 장치에 Wiegand 설정<br/>   &gt; Wiegand Out<br/>   &gt; Bypass - Disable<br/>   &gt; Fail Code - 설정<br/>2. Trigger&amp;Action 설정<br/>   &gt; Input 및 Function<br/>3. 등록되지 않은 카드인증시도 후 결과 확인<br/>4. Trigger&amp;Action의 Input 접지<br/>5. 결과확인<br/>6. 등록된 카드인증시도&gt; 실패에 대한 인증결과 확인</p></td><td><p>카드인증<br/>&gt; SmartCard - AOC, SCC<br/>&gt; 일반카드</p></td><td><p>1. Step 3&gt; 카드 입력 후 바로 Bypass Disable로 Wiegand 출력된다.<br/>=&gt; 인증실패 및 Sound 발생됨.<br/>2. Step 5&gt; Function의 Action이 출력된다.<br/>=&gt; 화면표시 및 Sound 발생됨.<br/>3. Step 6&gt; 인증모드로 수행 후 Wiegand Out으로 동작된다.<br/>=&gt; 인증결과는 화면에 미출력됨</p></td></tr><tr><td>9</td><td><p>1. 장치의 지문인증모드 설정<br/>2. 장치에 Wiegand 설정<br/>   &gt; Wiegand Out<br/>   &gt; Bypass - Enable<br/>3. Trigger&amp;Action 설정<br/>   &gt; Input 및 Function<br/>4. Private Auth(= 카드 + 지문) 설정되어 발급된 카드로 인증시도&gt; 성공에 대한 인증결과 확인<br/>5. Trigger&amp;Action의 Input 접지<br/>6. 결과확인</p></td><td><p>카드인증<br/>&gt; SmartCard - AOC(Private Auth 포함)<br/>=&gt; Card+지문<br/>=&gt; Card+PIN<br/>=&gt; Card+지문/PIN<br/>=&gt; Card+지문+PIN</p></td><td><p>1. Step 4&gt; 카드 입력 후 바로 Bypass 로 Wiegand 출력된다.<br/>=&gt; 인증결과는 화면에 미출력됨<br/>2. Step 5&gt; Function의 Action이 출력된다.<br/>=&gt; 화면표시 및 Sound 발생됨.</p></td></tr><tr><td>10</td><td><p>1. 장치의 지문인증모드 설정<br/>2. 장치에 Wiegand 설정<br/>   &gt; Wiegand Out<br/>   &gt; Bypass - Enable<br/>3. Trigger&amp;Action 설정<br/>   &gt; Input 및 Function<br/>4. Private Auth(= 카드 + 지문) 설정되어 발급된 카드로 인증시도&gt; 성공에 대한 인증결과 확인<br/>5. Trigger&amp;Action의 Input 접지<br/>6. 결과확인</p></td><td><p>카드인증<br/>&gt; SmartCard - SCC<br/>&gt; 일반카드<br/>=&gt; Card+지문<br/>=&gt; Card+PIN<br/>=&gt; Card+지문/PIN<br/>=&gt; Card+지문+PIN</p></td><td><p>1. Step 3&gt; 카드 입력 후 바로 Bypass 로 Wiegand 출력된다.<br/>=&gt; 인증결과는 화면에 미출력됨<br/>2. Step 5&gt; Function의 Action이 출력된다.<br/>=&gt; 화면표시 및 Sound 발생됨.</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [],
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 27716,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 34720,
+              "latestFinalId": 34720
+            },
+            {
+              "environment": "ES1",
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 29853,
+              "latestFinalId": 29853
+            },
+            {
+              "environment": "BioStarV2.9.6.30",
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 29853,
+              "latestFinalId": 29853
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_190805_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15276,
+              "latestFinalId": 15276
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_190809_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15625,
+              "latestFinalId": 15625
+            }
+          ]
+        },
+        {
+          "group": "FL_V1.0_190515(PS)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 14177,
+              "latestFinalId": 14177
+            }
+          ]
+        },
+        {
+          "group": "V1.8.0_190806_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15391,
+              "latestFinalId": 15391
+            }
+          ]
+        },
+        {
+          "group": "V1.7.1_181204(Hotfix)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12736,
+              "latestFinalId": 12736
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_181210_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12851,
+              "latestFinalId": 12851
+            }
+          ]
+        },
+        {
+          "group": "V1.7.0_190806_Interaction 7차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15139,
+              "latestFinalId": 15139
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_181119_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12989,
+              "latestFinalId": 12989
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_190806_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15514,
+              "latestFinalId": 15514
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_20200601_Interaction 12차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 17246,
+              "latestFinalId": 17246
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "[BSPP-363] Wiegand Out(Ouput, In/Output) 설정과 장치 Trigger&Action에서 Input 및 Function 설정에 따른 인증동작",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 9540,
+          "index": 1,
+          "step": "1. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Disable\n2. Trigger&Action 설정\n   > Input 및 Function\n3. 카드인증시도 후 결과 확인\n4. Trigger&Action의 Input 접지\n5. 결과확인\n6. 등록되지않은 카드인증시도> 실패에 대한 인증결과 확인",
+          "data": "카드인증\n> SmartCard - AOC, SCC\n> 일반카드",
+          "result": "1. Step 3> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 5> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 6> 화면에 인증결과가 출력된다.\n=> 인증실패 및 Sound 발생됨.",
+          "attachments": []
+        },
+        {
+          "id": 9541,
+          "index": 2,
+          "step": "1. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable\n2. Trigger&Action 설정\n   > Input 및 Function\n3. 카드인증시도> 인증결과 확인\n4. Trigger&Action의 Input 접지\n5. 결과확인\n6. 장치에서 Bypass Disable로 변경\n7. 카드인증시도 후 결과확인\n8. Trigger&Action의 Input 접지\n9. 결과확인",
+          "data": "카드인증\n> SmartCard - AOC, SCC\n> 일반카드",
+          "result": "1. Step 3> 카드 입력 후 바로 Bypass 로 Wiegand 출력된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 7> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 미출력됨\n3. Step 5,9> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.",
+          "attachments": []
+        },
+        {
+          "id": 9542,
+          "index": 3,
+          "step": "1. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable\n2. Trigger&Action 설정\n   > Input 및 Function\n3. 카드인증시도> 인증결과 확인\n4. Trigger&Action의 Input 접지\n5. 결과확인\n6. 장치에서 Bypass Disable로 변경\n7. 카드인증시도 후 결과확인\n8. Trigger&Action의 Input 접지\n9. 결과확인",
+          "data": "카드인증(= Blacklist Card)\n> SmartCard - AOC, SCC\n> 일반카드",
+          "result": "1. Step 3> 카드 입력 후 바로 Bypass 로 Wiegand 출력된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 7> Blacklist로 인증실패 처리되고 화면에 인증결과 출력된다.\n=> Wiegand Out되지 않음\n=> 인증실패 및 Sound 발생됨\n3. Step 5,9> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.",
+          "attachments": []
+        },
+        {
+          "id": 9543,
+          "index": 4,
+          "step": "1. 장치의 지문인증모드 설정  \n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable/Disable 무관\n3. Trigger&Action 설정\n   > Input 및 Function\n4. 등록된 지문인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인\n7. 등록되지않은 지문인증시도> 실패에 대한 인증결과 확인",
+          "data": "※ 보낼 데이터가 있는 경우 (CSN, SmartCard_SCC가 포함된 User)\n지문인증모드\n> 지문Only\n> 지문+PIN",
+          "result": "1. Step 4> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 6> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 7> 화면에 인증결과가 출력된다.\n=> 인증실패 및 Sound 발생됨.",
+          "attachments": []
+        },
+        {
+          "id": 19810,
+          "index": 5,
+          "step": "1. 장치의 지문인증모드 설정  \n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable/Disable 무관\n3. Trigger&Action 설정\n   > Input 및 Function\n4. 등록된 지문인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인\n7. 등록되지않은 지문인증시도> 실패에 대한 인증결과 확인",
+          "data": "※ 보낼 데이터가 없는 경우 (SmartCard_AoC, PIN만 등록된 User)\n지문인증모드\n> 지문Only\n> 지문+PIN",
+          "result": "1. Step 4> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 출력됨\n2. Step 6> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 7> 화면에 인증결과가 출력된다.\n=> 인증실패 및 Sound 발생됨.",
+          "attachments": []
+        },
+        {
+          "id": 9544,
+          "index": 6,
+          "step": "1. 장치의 ID인증모드 설정\n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable/Disable 무관\n3. Trigger&Action 설정\n   > Input 및 Function\n4. 등록된 ID 인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인\n7. 등록되지않은 ID 인증시도> 실패에 대한 인증결과 확인",
+          "data": "※ 보낼 데이터가 있는 경우 (CSN, SmartCard_SCC가 포함된 User)\nID 인증모드\n> ID+지문\n> ID+PIN\n> ID+지문/PIN\n> ID+지문+PIN",
+          "result": "1. Step 4> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 6> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 7> 화면에 인증결과가 출력된다.\n=> 인증실패 및 Sound 발생됨.",
+          "attachments": []
+        },
+        {
+          "id": 19811,
+          "index": 7,
+          "step": "1. 장치의 ID인증모드 설정\n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable/Disable 무관\n3. Trigger&Action 설정\n   > Input 및 Function\n4. 등록된 ID 인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인\n7. 등록되지않은 ID 인증시도> 실패에 대한 인증결과 확인",
+          "data": "※ 보낼 데이터가 없는 경우 (SmartCard_AoC or PIN만 등록된 User)\nID 인증모드\n> ID+지문\n> ID+PIN\n> ID+지문/PIN\n> ID+지문+PIN",
+          "result": "1. Step 4> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 출력됨\n2. Step 6> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 7> 화면에 인증결과가 출력된다.\n=> 인증실패 및 Sound 발생됨.",
+          "attachments": []
+        },
+        {
+          "id": 9547,
+          "index": 8,
+          "step": "1. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Disable\n   > Fail Code - 설정\n2. Trigger&Action 설정\n   > Input 및 Function\n3. 등록되지 않은 카드인증시도 후 결과 확인\n4. Trigger&Action의 Input 접지\n5. 결과확인\n6. 등록된 카드인증시도> 실패에 대한 인증결과 확인",
+          "data": "카드인증\n> SmartCard - AOC, SCC\n> 일반카드",
+          "result": "1. Step 3> 카드 입력 후 바로 Bypass Disable로 Wiegand 출력된다.\n=> 인증실패 및 Sound 발생됨.\n2. Step 5> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.\n3. Step 6> 인증모드로 수행 후 Wiegand Out으로 동작된다.\n=> 인증결과는 화면에 미출력됨",
+          "attachments": []
+        },
+        {
+          "id": 9549,
+          "index": 9,
+          "step": "1. 장치의 지문인증모드 설정\n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable\n3. Trigger&Action 설정\n   > Input 및 Function\n4. Private Auth(= 카드 + 지문) 설정되어 발급된 카드로 인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인",
+          "data": "카드인증\n> SmartCard - AOC(Private Auth 포함)\n=> Card+지문\n=> Card+PIN\n=> Card+지문/PIN\n=> Card+지문+PIN",
+          "result": "1. Step 4> 카드 입력 후 바로 Bypass 로 Wiegand 출력된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 5> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.",
+          "attachments": []
+        },
+        {
+          "id": 9550,
+          "index": 10,
+          "step": "1. 장치의 지문인증모드 설정\n2. 장치에 Wiegand 설정\n   > Wiegand Out\n   > Bypass - Enable\n3. Trigger&Action 설정\n   > Input 및 Function\n4. Private Auth(= 카드 + 지문) 설정되어 발급된 카드로 인증시도> 성공에 대한 인증결과 확인\n5. Trigger&Action의 Input 접지\n6. 결과확인",
+          "data": "카드인증\n> SmartCard - SCC\n> 일반카드\n=> Card+지문\n=> Card+PIN\n=> Card+지문/PIN\n=> Card+지문+PIN\n",
+          "result": "1. Step 3> 카드 입력 후 바로 Bypass 로 Wiegand 출력된다.\n=> 인증결과는 화면에 미출력됨\n2. Step 5> Function의 Action이 출력된다.\n=> 화면표시 및 Sound 발생됨.",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [],
+      "maxResults": 0,
+      "total": 0,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+      "name": "미할당",
+      "id": "10100"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+      "name": "할 일",
+      "id": "10000",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "할 일"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzt4c7:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2018-09-20T16:09:18.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

@@ -1,50 +1,415 @@
 {
-  "id": "COMMONR-248",
-  "content": [
-    [
-      1,
-      "1. FW Upgrade 시도\n2. Upgrade 진행 중 장치의 전원 재인가\n   > 장치에 Write 중일 때\n3. 부팅 후 FW 정보 확인",
-      "장치모드: Default/Master",
-      "1. 전원인가 후 나머지 부분에 대해 Write된다."
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "29835",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/29835",
+  "key": "COMMONR-248",
+  "fields": {
+    "resolution": null,
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "0.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10173",
+      "value": "Major",
+      "id": "10173"
+    },
+    "customfield_10185": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
+      "value": "Medium (2-3일 이내 피드백)",
+      "id": "10220"
+    },
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "54780",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/54780",
+        "type": {
+          "id": "10001",
+          "name": "Cloners",
+          "inward": "is cloned by",
+          "outward": "clones",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10001"
+        },
+        "inwardIssue": {
+          "id": "63946",
+          "key": "COMMONR-353",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/63946",
+          "fields": {
+            "summary": "Recovery 기능 검증TC",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "할 일",
+              "id": "10000",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "Represents a Test",
+              "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+              "name": "Test",
+              "subtask": false
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "<RS485 구성>\n1. Slave 장치에 FW Upgrade 시도\n2. Slave Upgrade 진행 중 Slave 장치의 전원 재인가\n   > 장치에 Write 중일 때\n3. 부팅 후 FW 정보 확인",
-      "",
-      "1. 전원인가 후 나머지 부분에 대해 Write된다."
-    ],
-    [
-      3,
-      "1. 잘못된 FW Upgrade 시도",
-      "확인장치\n> Master/Slave\n\n잘못된 FW\n> L2 V1.3.2_20181123 BetaFW",
-      "1. FW Upgrade 중 문제발생시 부팅되지 않고 멈춘다.\n2. 전원재인가 후 처음 백업된 Recovery FW로 복구된다."
-    ],
-    [
-      4,
-      "1. BLE FW Upgrade 시도\n2. Upgrade 완료 후 장치 Reboot\n3. FW 버전 확인",
-      "BLE 지원장치",
-      "1. Recovery FW로 동작되지 않아야 한다."
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-248",
-    "description": "",
-    "test_step": [
-      "1. FW Upgrade 시도\n2. Upgrade 진행 중 장치의 전원 재인가\n   > 장치에 Write 중일 때\n3. 부팅 후 FW 정보 확인",
-      "<RS485 구성>\n1. Slave 장치에 FW Upgrade 시도\n2. Slave Upgrade 진행 중 Slave 장치의 전원 재인가\n   > 장치에 Write 중일 때\n3. 부팅 후 FW 정보 확인",
-      "1. 잘못된 FW Upgrade 시도",
-      "1. BLE FW Upgrade 시도\n2. Upgrade 완료 후 장치 Reboot\n3. FW 버전 확인"
-    ],
-    "data": [
-      "장치모드: Default/Master",
-      "확인장치\n> Master/Slave\n\n잘못된 FW\n> L2 V1.3.2_20181123 BetaFW",
-      "BLE 지원장치"
-    ],
-    "expected_result": [
-      "1. 전원인가 후 나머지 부분에 대해 Write된다.",
-      "1. 전원인가 후 나머지 부분에 대해 Write된다.",
-      "1. FW Upgrade 중 문제발생시 부팅되지 않고 멈춘다.\n2. 전원재인가 후 처음 백업된 Recovery FW로 복구된다.",
-      "1. Recovery FW로 동작되지 않아야 한다."
-    ]
+    "assignee": null,
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 4.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-248/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@4a82759b[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6e261e76[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@438f2290[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@1d045139[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@4b1abb1e[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@14aaa76e[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@2e0b9cc9[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@11b98da8[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@fe506ca[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@4e35518f[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@3caa7154[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@61a37fa4[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": null,
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-248/watchers",
+      "watchCount": 1,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2024-05-31T08:42:51.000+0900",
+    "timeoriginalestimate": null,
+    "description": "> FW Upgrade 중 전원이 재인가된 경우 이전 버전으로의 복구여부 확인\r\n> 잘못된 베타FW 등이 Upgrade된 경우 이전 버전으로의 복구여부 확인\r\n\r\n※ 발생가능케이스는 계속 업데이트 예정\r\n\r\n\r\n확인방법\r\nRecovery 기능 포함된 FW로 업그레이드된 상태에서 검증진행(FW2_2019 1H 릴리즈 버전부터 지원)\r\n> 처음으로 Upgrade한 Recovery 포함된 버전으로 백업된다.(= Backup 파일이 존재할 경우 다시 백업 하지않음)\r\n\r\n\r\n해당기능 삭제.(2020 1H Release 버전부터 제외)\r\n\r\n\r\n",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. FW Upgrade 시도<br/>2. Upgrade 진행 중 장치의 전원 재인가<br/>   &gt; 장치에 Write 중일 때<br/>3. 부팅 후 FW 정보 확인</p></td><td><p>장치모드: Default/Master</p></td><td><p>1. 전원인가 후 나머지 부분에 대해 Write된다.</p></td></tr><tr><td>2</td><td><p>&lt;RS485 구성&gt;<br/>1. Slave 장치에 FW Upgrade 시도<br/>2. Slave Upgrade 진행 중 Slave 장치의 전원 재인가<br/>   &gt; 장치에 Write 중일 때<br/>3. 부팅 후 FW 정보 확인</p></td><td></td><td><p>1. 전원인가 후 나머지 부분에 대해 Write된다.</p></td></tr><tr><td>3</td><td><p>1. 잘못된 FW Upgrade 시도</p></td><td><p>확인장치<br/>&gt; Master/Slave</p>\n\n<p>잘못된 FW<br/>&gt; L2 V1.3.2_20181123 BetaFW</p></td><td><p>1. FW Upgrade 중 문제발생시 부팅되지 않고 멈춘다.<br/>2. 전원재인가 후 처음 백업된 Recovery FW로 복구된다.</p></td></tr><tr><td>4</td><td><p>1. BLE FW Upgrade 시도<br/>2. Upgrade 완료 후 장치 Reboot<br/>3. FW 버전 확인</p></td><td><p>BLE 지원장치</p></td><td><p>1. Recovery FW로 동작되지 않아야 한다.</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [],
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 29835,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15677,
+              "latestFinalId": 15677
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "펌웨어 복구(Recovery) 기능 검증TC - 미지원 기능",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 10175,
+          "index": 1,
+          "step": "1. FW Upgrade 시도\n2. Upgrade 진행 중 장치의 전원 재인가\n   > 장치에 Write 중일 때\n3. 부팅 후 FW 정보 확인",
+          "data": "장치모드: Default/Master",
+          "result": "1. 전원인가 후 나머지 부분에 대해 Write된다.",
+          "attachments": []
+        },
+        {
+          "id": 10176,
+          "index": 2,
+          "step": "<RS485 구성>\n1. Slave 장치에 FW Upgrade 시도\n2. Slave Upgrade 진행 중 Slave 장치의 전원 재인가\n   > 장치에 Write 중일 때\n3. 부팅 후 FW 정보 확인",
+          "data": "",
+          "result": "1. 전원인가 후 나머지 부분에 대해 Write된다.",
+          "attachments": []
+        },
+        {
+          "id": 10177,
+          "index": 3,
+          "step": "1. 잘못된 FW Upgrade 시도",
+          "data": "확인장치\n> Master/Slave\n\n잘못된 FW\n> L2 V1.3.2_20181123 BetaFW",
+          "result": "1. FW Upgrade 중 문제발생시 부팅되지 않고 멈춘다.\n2. 전원재인가 후 처음 백업된 Recovery FW로 복구된다.",
+          "attachments": []
+        },
+        {
+          "id": 10676,
+          "index": 4,
+          "step": "1. BLE FW Upgrade 시도\n2. Upgrade 완료 후 장치 Reboot\n3. FW 버전 확인",
+          "data": "BLE 지원장치",
+          "result": "1. Recovery FW로 동작되지 않아야 한다.",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [],
+      "maxResults": 0,
+      "total": 0,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+      "name": "미할당",
+      "id": "10100"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+      "name": "할 일",
+      "id": "10000",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "할 일"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hztg5j:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2019-03-15T13:27:58.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

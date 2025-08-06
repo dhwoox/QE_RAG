@@ -1,123 +1,1430 @@
 {
-  "id": "COMMONR-11",
-  "content": [
-    [
-      1,
-      "1. Access Control> Add Access Group\n2. 임의의 Access Level 선택 > 임의의 User Group or User 선택",
-      "[BioStar]\n1. Access Rule(Group+Level) 설정\n1) Access Level + Floor Level +  User Group\n2) Access Level + Floor Level + User\n3) Access Level + Floor Level + User Group + User",
-      "1. 최대 2048개까지 추가 가능하다.\n> AG/AL/FL : 2048\n2. 출입 그룹은 사용자별 최대 16개까지 설정할 수 있다.\n3. 장치에서 사용자의 출입그룹 설정 및 변경은 불가하다.\n4. Name을 최대 48자까지 설정 할 수 있다.\n5. 출입그룹 추가 / 업데이트가 가능하다.\n6. 특정 출입 그룹 삭제가 가능하다.\n7. 전체 출입 그룹 삭제가 가능하다.\n8. 출입 그룹 정보 확인이 가능하다.\n9. 출입그룹에 속한 사용자그룹의 사용자로 인증할 경우 인증성공이 된다.\n10. 출입그룹에 속한 사용자로 인증시 인증성공 발생\n11. 출입그룹에 속한 사용자 그룹 및 사용자로 인증시 인증성공 발생"
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "11916",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/11916",
+  "key": "COMMONR-11",
+  "fields": {
+    "resolution": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/resolution/10000",
+      "id": "10000",
+      "description": "[사용안함] Work has been completed on this issue.",
+      "name": "완료(Done)"
+    },
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "2.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": null,
+    "customfield_10185": null,
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "51428",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/51428",
+        "type": {
+          "id": "10001",
+          "name": "Cloners",
+          "inward": "is cloned by",
+          "outward": "clones",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10001"
+        },
+        "inwardIssue": {
+          "id": "60985",
+          "key": "BCRTC-115",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/60985",
+          "fields": {
+            "summary": "출입그룹",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "할 일",
+              "id": "10000",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "Represents a Test",
+              "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+              "name": "Test",
+              "subtask": false
+            }
+          }
+        }
+      },
+      {
+        "id": "13098",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13098",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "17918",
+          "key": "ENTRYIIDII-372",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17918",
+          "fields": {
+            "summary": "Delete Data & Sync Device시 장치Reboot 발생",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14497",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14497",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19606",
+          "key": "FSTIIFW-95",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19606",
+          "fields": {
+            "summary": "[Access Control] AutoTool에서 생성한 Access Group이 장치에 전송 후 확인 시 빈 공백으로 출력되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14498",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14498",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19688",
+          "key": "FSTIIFW-136",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19688",
+          "fields": {
+            "summary": "[Tester: 곽성희]  Access Group에 속한 사용자로 Slave장치에 인증 시도 시 아무 반응 없는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14661",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14661",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19914",
+          "key": "AUTODI-157",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19914",
+          "fields": {
+            "summary": "얼굴 사용자 30000명을 1개의 Access Group에 속하게 한 후 Device Viewer로 Open 시 '메모리가 부족합니다.'라는 팝업 뜨는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13718",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13718",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18384",
+          "key": "BLIIFWI-542",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18384",
+          "fields": {
+            "summary": "사용자 50만 전송 완료 후  AccessGroup To FullUser 실행 시 한참 지나 장치가 재부팅 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "20023",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/20023",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "25627",
+          "key": "AUTODI-236",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/25627",
+          "fields": {
+            "summary": "[AccessToFull Group] Access Group 1개에 Max User 이상 할당 시 오류 발생하는 경우와 Max Access Group(129개)에 Max User 할당 시 오류가 발생하도록 기존 기능에서 수정 요청",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      },
+      {
+        "id": "11172",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11172",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "14784",
+          "key": "BEWIIFWDI-28",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/14784",
+          "fields": {
+            "summary": "[Requirement] 출입그룹",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10413",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10413",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "12928",
+          "key": "BLIIFWI-72",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12928",
+          "fields": {
+            "summary": "[Requirement] Access Group",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "13147",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13147",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "18025",
+          "key": "ENTRYIIDII-382",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18025",
+          "fields": {
+            "summary": "[Requirement]1개의 AccessGroup에 포함되는 사용자 수 제한",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/5",
+              "description": "해결책이 제시되었고 보고자의 확인을 기다리는 중입니다. 지금부터는 이슈를 다시 열거나 이슈를 닫을 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/resolved.png",
+              "name": "해결됨",
+              "id": "5",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "13145",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13145",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "18029",
+          "key": "BEWIIFWDI-208",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18029",
+          "fields": {
+            "summary": "[Requirement]1개의 AccessGroup에 포함되는 사용자 수 제한",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "13149",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13149",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "18028",
+          "key": "BLIIFWI-509",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18028",
+          "fields": {
+            "summary": "[Requirement]1개의 AccessGroup에 포함되는 사용자 수 제한",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "13146",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13146",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "18026",
+          "key": "BSIIDII-346",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18026",
+          "fields": {
+            "summary": "[Requirement]1개의 AccessGroup에 포함되는 사용자 수 제한",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "13148",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13148",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "18027",
+          "key": "TIIDFI-714",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18027",
+          "fields": {
+            "summary": "[Requirement]1개의 AccessGroup에 포함되는 사용자 수 제한",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10444",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10444",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "12956",
+          "key": "TIIDFI-66",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12956",
+          "fields": {
+            "summary": "[Requirement] 출입그룹",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "1. Access Control > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > 임의의 User Group or User 선택 > Access Group에 포함된 User 인증시도\n2. Access Control > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > 임의의 User Group or User 선택 > Access Group에 미포함된 User 인증시도",
-      "[BioStar]\n1. Access Group에 포함된 User\n2. Access Group에 미포함된 User",
-      "1. 출입 그룹이 있는 사용자로 인증 시 출입이 가능하다.\n2. 출입 그룹이 없는 사용자로 인증 시 출입이 불가능하다.\n"
+    "assignee": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EC%A1%B0%EC%9E%84%EC%84%B1",
+      "name": "조임성",
+      "key": "조임성",
+      "emailAddress": "isjo@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607"
+      },
+      "displayName": "조임성",
+      "active": false,
+      "timeZone": "Asia/Seoul"
+    },
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 12.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-11/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@1534a69e[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@520359d9[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6c322c10[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@24377dde[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@11963ec9[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@5ed18592[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@237e70f4[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@3cb830c8[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@1cf831e0[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@4ed7caf8[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@1e7eea06[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@633da771[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": "2016-02-25T13:30:43.000+0900",
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-11/watchers",
+      "watchCount": 3,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T10:17:46.000+0900",
+    "timeoriginalestimate": null,
+    "description": "출입그룹 설정 및 동작에 이상이 없는지 확인\r\n\r\n*{color:#d04437}-> Max AG : 2048\r\n -> Max AL : 2048\r\n -> Max FL : 2048 (추후 지원 예정)\r\n -> Max AL per AG : 128\r\n -> Max Door per AL : 128\r\n -> Max Door per Device : 32\r\n -> Max AG per User : 16{color}*\r\n\r\n※ 하나의 Access Level에 출입문 최대 128개 + 스케줄 최대 128개까지 지원함\r\n※ 하나의 Floor Level에 Elevator 최대 128개 + Floor Name 최대 128개 + 스케줄 최대 128개까지 지원함",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. Access Control&gt; Add Access Group<br/>2. 임의의 Access Level 선택 &gt; 임의의 User Group or User 선택</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>1. Access Rule(Group+Level) 설정<br/>1) Access Level + Floor Level +  User Group<br/>2) Access Level + Floor Level + User<br/>3) Access Level + Floor Level + User Group + User</p></td><td><p>1. 최대 2048개까지 추가 가능하다.<br/>&gt; AG/AL/FL : 2048<br/>2. 출입 그룹은 사용자별 최대 16개까지 설정할 수 있다.<br/>3. 장치에서 사용자의 출입그룹 설정 및 변경은 불가하다.<br/>4. Name을 최대 48자까지 설정 할 수 있다.<br/>5. 출입그룹 추가 / 업데이트가 가능하다.<br/>6. 특정 출입 그룹 삭제가 가능하다.<br/>7. 전체 출입 그룹 삭제가 가능하다.<br/>8. 출입 그룹 정보 확인이 가능하다.<br/>9. 출입그룹에 속한 사용자그룹의 사용자로 인증할 경우 인증성공이 된다.<br/>10. 출입그룹에 속한 사용자로 인증시 인증성공 발생<br/>11. 출입그룹에 속한 사용자 그룹 및 사용자로 인증시 인증성공 발생</p></td></tr><tr><td>2</td><td><p>1. Access Control &gt; Add Access Group &gt; Name 설정 &gt; +Add &gt; 임의의 Access Level 선택 &gt; 임의의 User Group or User 선택 &gt; Access Group에 포함된 User 인증시도<br/>2. Access Control &gt; Add Access Group &gt; Name 설정 &gt; +Add &gt; 임의의 Access Level 선택 &gt; 임의의 User Group or User 선택 &gt; Access Group에 미포함된 User 인증시도</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>1. Access Group에 포함된 User<br/>2. Access Group에 미포함된 User</p></td><td><p>1. 출입 그룹이 있는 사용자로 인증 시 출입이 가능하다.<br/>2. 출입 그룹이 없는 사용자로 인증 시 출입이 불가능하다.</p></td></tr><tr><td>3</td><td><p>1. Access Control &gt; Add Access Group &gt; Name 설정 &gt; +Add &gt; 임의의 Access Level 선택 &gt; Apply</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>1. Access Rule(Group+Level) 설정<br/>1) Access Level만 설정<br/>2) Floor Level만 설정<br/>3) User Group만 설정<br/>4) User만 설정</p></td><td><p>1. Access Rule중 2개 이상 설정가능<br/>2. Access Level만 추가시 Access Group 생성불가<br/>3. Floor Level만 추가시 Access Group 생성 불가<br/>4. User Group만 추가시 Access Group 생성가능<br/>5. User만 추가시 Access Group 생성가능</p>\n\n<p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> 4,5의 경우 대량으로 생성하였을때의 편의를 위하여 가능토록 함.</p></td></tr><tr><td>4</td><td><p>1. Access Control &gt; Add Access Level &gt; Name 설정 &gt; +Add &gt; 임의의 Door 선택 &gt; 현재 시간이 포함된 Schedule 선택 &gt; Add Access Group &gt; Name 설정 &gt; +Add &gt; 임의의 Access Level 선택 &gt; 임의의 User Group or User 선택 &gt; Access Group에 포함된 User 인증시도</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>1. Access Level을 생성할때 현재 시간이 포함된 Schedule을 선택</p></td><td><p>1. 인증시간이 설정한 스케줄에 포함되는 경우 인증이 성공된다. 또한 출입이 허용된다.</p></td></tr><tr><td>5</td><td><p>1. Access Control &gt; Add Floor Level &gt; Name 설정 &gt; +Add &gt; 임의의 Elevator 선택 &gt; 선택된 Elevator Name 선택 &gt; 현재 시간이 포함된 Schedule 선택 &gt; Add Access Group &gt; Name 설정 &gt; +Add &gt; 임의의 Floor Level 선택 &gt; 임의의 User Group or User 선택 &gt; Access Group에 포함된 User 인증시도</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>1. Floor Level을 생성할때 현재 시간이 포함된 Schedule을 선택</p></td><td><p>1. 인증시간이 설정한 스케줄에 포함되는 경우 인증이 성공된다. 또한 출입이 허용된다.</p></td></tr><tr><td>6</td><td><p>1. Access Control &gt; Add Access Level &gt; Name 설정 &gt; +Add &gt; 임의의 Door 선택 &gt; 현재 시간이 미포함된 Schedule 선택 &gt; Add Access Group &gt; Name 설정 &gt; +Add &gt; 임의의 Access Level 선택 &gt; 임의의 User Group or User 선택 &gt; Access Group에 포함된 User 인증시도</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>1. Access Level을 생성할때 현재 시간이 미포함된 Schedule을 선택</p></td><td><p>1. 인증시간이 설정한 스케줄에 포함되지 않는 경우 인증이 실패된다.또한, 출입이 거부된다.<br/>2. 출입이 거부 될 경우, 'Access Denied' 로그와 사용자 ID가 로그에 남는다.</p></td></tr><tr><td>7</td><td><p>1. Access Control &gt; Add Floor Level &gt; Name 설정 &gt; +Add &gt; 임의의 Elevator 선택 &gt; 선택된 Elevator Name 선택 &gt; 현재 시간이 미포함된 Schedule 선택 &gt; Add Access Group &gt; Name 설정 &gt; +Add &gt; 임의의 Floor Level 선택 &gt; 임의의 User Group or User 선택 &gt; Access Group에 포함된 User 인증시도</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>1. Floor Level을 생성할때 현재 시간이 미포함된 Schedule을 선택</p></td><td><p>1. 인증시간이 설정한 스케줄에 포함되지 않는 경우 인증이 실패된다.또한, 출입이 거부된다.<br/>2. 출입이 거부 될 경우, 'Access Denied' 로그와 사용자 ID가 로그에 남는다.</p></td></tr><tr><td>8</td><td><p>1. Access Control &gt; Add Access Level &gt; Name 설정 &gt; +Add &gt; 임의의 Door 선택 &gt;  현재 시간이 포함된 Schedule 선택 &gt; Add Access Group &gt; Name 설정 &gt; +Add &gt; 임의의 Access Level 선택 &gt; User 선택 &gt; Access Group에 미포함된 User 인증시도</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>1. Access Level을 생성할때 현재 시간이 포함된 Schedule을 선택<br/>2. Access Group에 속하지 않은 사용자</p></td><td><p>1. 출입그룹에 속하지 않은 사용자로 인증시 출입 거부된다.<br/>2. 'Access Denied' 로그와 사용자 ID가 로그에 남는다.<br/>3. 인증 리더(장치)가 속한 출입문이 출입그룹의 출입권한으로 설정되지 않은 경우 출입 거부된다.<br/>4. 'Access Denied' 로그와 사용자 ID가 로그에 남는다.</p></td></tr><tr><td>9</td><td><p>1. Access Control &gt; Add Access Level &gt; Name 설정 &gt; +Add &gt; 임의의 Door 선택 &gt;  현재 시간이 포함된 Schedule 선택 &gt; Add Access Group &gt; Name 설정 &gt; +Add &gt; 임의의 Access Level 선택 &gt; User 선택 &gt; Access Group에 미포함된 User 인증시도</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>1. Floor Level을 생성할때 현재 시간이 포함된 Schedule을 선택<br/>2. Access Group에 속하지 않은 사용자</p></td><td><p>1. 출입그룹에 속하지 않은 사용자로 인증시 출입 거부된다.<br/>2. 'Access Denied' 로그와 사용자 ID가 로그에 남는다.<br/>3. 인증 리더(장치)가 속한 Elevoatr가 출입그룹의 출입권한으로 설정되지 않은 경우 출입 거부된다.<br/>4. 'Access Denied' 로그와 사용자 ID가 로그에 남는다.</p></td></tr><tr><td>10</td><td><p>1. Device &gt; Authentication &gt; Full Access변경<br/>2. Master만 Full Access 변경 &gt; Master,Slave 인증 시도<br/>3. Master, Slave 모두 Full Access 변경 &gt; Master,Slave 인증 시도</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>1. Master Full Access 변경<br/>2. Slave Full Access 변경</p></td><td><p>1. 해당 장치에서는 출입 그룹 적용 여부와 상관없이 이 장치에 등록된 모든 사용자의 출입 인증이 가능하다.<br/>2. Master만 Full Access 일경우 Master만 Full Access로 동작해야 한다.</p></td></tr><tr><td>11</td><td><p>1. Door Or Elevator 생성 &gt; Add Access Level Or Floor Level &gt; Add Access Group &gt; Apply<br/>2. Device &gt; Authentication &gt; Full Access변경 &gt; Apply</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>1. Device Full Access Enable로 변경</p></td><td><p>1. BioStar에서 다음과 같은 Error 팝업이 뜨며 생성 불가하다.<br/>*Unable to enable full access for Device included in Access Group(302)<br/>2. Full Access Disable로 변경시 Access Group 생성 가능</p></td></tr><tr><td>12</td><td><p>1. Device &gt; Authentication &gt; Full Access변경 &gt; Door Or Elevator 설정 &gt; Add Access Level Or Floor Level &gt; Add Access Group &gt; Apply</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>1. Device Full Access Enable로 변경<br/>2. Access Group 정보 변경</p></td><td><p>1. BioStar에서 다음과 같은 Error 팝업이 뜨며 변경 불가하다<br/>*Device with full access enabled cannot be assigned to Access Group(650)</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [
+      "COMMONR-46",
+      "COMMONR-383"
     ],
-    [
-      3,
-      "1. Access Control > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > Apply",
-      "[BioStar]\n1. Access Rule(Group+Level) 설정\n1) Access Level만 설정\n2) Floor Level만 설정\n3) User Group만 설정\n4) User만 설정",
-      "1. Access Rule중 2개 이상 설정가능\n2. Access Level만 추가시 Access Group 생성불가\n3. Floor Level만 추가시 Access Group 생성 불가\n4. User Group만 추가시 Access Group 생성가능\n5. User만 추가시 Access Group 생성가능\n\n(off) 4,5의 경우 대량으로 생성하였을때의 편의를 위하여 가능토록 함."
-    ],
-    [
-      4,
-      "1. Access Control > Add Access Level > Name 설정 > +Add > 임의의 Door 선택 > 현재 시간이 포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > 임의의 User Group or User 선택 > Access Group에 포함된 User 인증시도",
-      "[BioStar]\n1. Access Level을 생성할때 현재 시간이 포함된 Schedule을 선택\n",
-      "1. 인증시간이 설정한 스케줄에 포함되는 경우 인증이 성공된다. 또한 출입이 허용된다.\n"
-    ],
-    [
-      5,
-      "1. Access Control > Add Floor Level > Name 설정 > +Add > 임의의 Elevator 선택 > 선택된 Elevator Name 선택 > 현재 시간이 포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Floor Level 선택 > 임의의 User Group or User 선택 > Access Group에 포함된 User 인증시도",
-      "[BioStar]\n1. Floor Level을 생성할때 현재 시간이 포함된 Schedule을 선택\n",
-      "1. 인증시간이 설정한 스케줄에 포함되는 경우 인증이 성공된다. 또한 출입이 허용된다.\n"
-    ],
-    [
-      6,
-      "1. Access Control > Add Access Level > Name 설정 > +Add > 임의의 Door 선택 > 현재 시간이 미포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > 임의의 User Group or User 선택 > Access Group에 포함된 User 인증시도",
-      "[BioStar]\n1. Access Level을 생성할때 현재 시간이 미포함된 Schedule을 선택",
-      "1. 인증시간이 설정한 스케줄에 포함되지 않는 경우 인증이 실패된다.또한, 출입이 거부된다.\n2. 출입이 거부 될 경우, 'Access Denied' 로그와 사용자 ID가 로그에 남는다."
-    ],
-    [
-      7,
-      "1. Access Control > Add Floor Level > Name 설정 > +Add > 임의의 Elevator 선택 > 선택된 Elevator Name 선택 > 현재 시간이 미포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Floor Level 선택 > 임의의 User Group or User 선택 > Access Group에 포함된 User 인증시도",
-      "[BioStar]\n1. Floor Level을 생성할때 현재 시간이 미포함된 Schedule을 선택",
-      "1. 인증시간이 설정한 스케줄에 포함되지 않는 경우 인증이 실패된다.또한, 출입이 거부된다.\n2. 출입이 거부 될 경우, 'Access Denied' 로그와 사용자 ID가 로그에 남는다."
-    ],
-    [
-      8,
-      "1. Access Control > Add Access Level > Name 설정 > +Add > 임의의 Door 선택 >  현재 시간이 포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > User 선택 > Access Group에 미포함된 User 인증시도",
-      "[BioStar]\n1. Access Level을 생성할때 현재 시간이 포함된 Schedule을 선택\n2. Access Group에 속하지 않은 사용자",
-      "1. 출입그룹에 속하지 않은 사용자로 인증시 출입 거부된다.\n2. 'Access Denied' 로그와 사용자 ID가 로그에 남는다.\n3. 인증 리더(장치)가 속한 출입문이 출입그룹의 출입권한으로 설정되지 않은 경우 출입 거부된다.\n4. 'Access Denied' 로그와 사용자 ID가 로그에 남는다."
-    ],
-    [
-      9,
-      "1. Access Control > Add Access Level > Name 설정 > +Add > 임의의 Door 선택 >  현재 시간이 포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > User 선택 > Access Group에 미포함된 User 인증시도",
-      "[BioStar]\n1. Floor Level을 생성할때 현재 시간이 포함된 Schedule을 선택\n2. Access Group에 속하지 않은 사용자",
-      "1. 출입그룹에 속하지 않은 사용자로 인증시 출입 거부된다.\n2. 'Access Denied' 로그와 사용자 ID가 로그에 남는다.\n3. 인증 리더(장치)가 속한 Elevoatr가 출입그룹의 출입권한으로 설정되지 않은 경우 출입 거부된다.\n4. 'Access Denied' 로그와 사용자 ID가 로그에 남는다."
-    ],
-    [
-      10,
-      "1. Device > Authentication > Full Access변경\n2. Master만 Full Access 변경 > Master,Slave 인증 시도\n3. Master, Slave 모두 Full Access 변경 > Master,Slave 인증 시도",
-      "[BioStar]\n1. Master Full Access 변경\n2. Slave Full Access 변경\n",
-      "1. 해당 장치에서는 출입 그룹 적용 여부와 상관없이 이 장치에 등록된 모든 사용자의 출입 인증이 가능하다.\n2. Master만 Full Access 일경우 Master만 Full Access로 동작해야 한다.\n"
-    ],
-    [
-      11,
-      "1. Door Or Elevator 생성 > Add Access Level Or Floor Level > Add Access Group > Apply\n2. Device > Authentication > Full Access변경 > Apply",
-      "[BioStar]\n1. Device Full Access Enable로 변경",
-      "1. BioStar에서 다음과 같은 Error 팝업이 뜨며 생성 불가하다.\n*Unable to enable full access for Device included in Access Group(302)\n2. Full Access Disable로 변경시 Access Group 생성 가능"
-    ],
-    [
-      12,
-      "1. Device > Authentication > Full Access변경 > Door Or Elevator 설정 > Add Access Level Or Floor Level > Add Access Group > Apply",
-      "[BioStar]\n1. Device Full Access Enable로 변경\n2. Access Group 정보 변경",
-      "1. BioStar에서 다음과 같은 Error 팝업이 뜨며 변경 불가하다\n*Device with full access enabled cannot be assigned to Access Group(650)"
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-11",
-    "description": "",
-    "test_step": [
-      "1. Access Control> Add Access Group\n2. 임의의 Access Level 선택 > 임의의 User Group or User 선택",
-      "1. Access Control > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > 임의의 User Group or User 선택 > Access Group에 포함된 User 인증시도\n2. Access Control > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > 임의의 User Group or User 선택 > Access Group에 미포함된 User 인증시도",
-      "1. Access Control > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > Apply",
-      "1. Access Control > Add Access Level > Name 설정 > +Add > 임의의 Door 선택 > 현재 시간이 포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > 임의의 User Group or User 선택 > Access Group에 포함된 User 인증시도",
-      "1. Access Control > Add Floor Level > Name 설정 > +Add > 임의의 Elevator 선택 > 선택된 Elevator Name 선택 > 현재 시간이 포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Floor Level 선택 > 임의의 User Group or User 선택 > Access Group에 포함된 User 인증시도",
-      "1. Access Control > Add Access Level > Name 설정 > +Add > 임의의 Door 선택 > 현재 시간이 미포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > 임의의 User Group or User 선택 > Access Group에 포함된 User 인증시도",
-      "1. Access Control > Add Floor Level > Name 설정 > +Add > 임의의 Elevator 선택 > 선택된 Elevator Name 선택 > 현재 시간이 미포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Floor Level 선택 > 임의의 User Group or User 선택 > Access Group에 포함된 User 인증시도",
-      "1. Access Control > Add Access Level > Name 설정 > +Add > 임의의 Door 선택 >  현재 시간이 포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > User 선택 > Access Group에 미포함된 User 인증시도",
-      "1. Access Control > Add Access Level > Name 설정 > +Add > 임의의 Door 선택 >  현재 시간이 포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > User 선택 > Access Group에 미포함된 User 인증시도",
-      "1. Device > Authentication > Full Access변경\n2. Master만 Full Access 변경 > Master,Slave 인증 시도\n3. Master, Slave 모두 Full Access 변경 > Master,Slave 인증 시도",
-      "1. Door Or Elevator 생성 > Add Access Level Or Floor Level > Add Access Group > Apply\n2. Device > Authentication > Full Access변경 > Apply",
-      "1. Device > Authentication > Full Access변경 > Door Or Elevator 설정 > Add Access Level Or Floor Level > Add Access Group > Apply"
-    ],
-    "data": [
-      "[BioStar]\n1. Access Rule(Group+Level) 설정\n1) Access Level + Floor Level +  User Group\n2) Access Level + Floor Level + User\n3) Access Level + Floor Level + User Group + User",
-      "[BioStar]\n1. Access Group에 포함된 User\n2. Access Group에 미포함된 User",
-      "[BioStar]\n1. Access Rule(Group+Level) 설정\n1) Access Level만 설정\n2) Floor Level만 설정\n3) User Group만 설정\n4) User만 설정",
-      "[BioStar]\n1. Access Level을 생성할때 현재 시간이 포함된 Schedule을 선택\n",
-      "[BioStar]\n1. Floor Level을 생성할때 현재 시간이 포함된 Schedule을 선택\n",
-      "[BioStar]\n1. Access Level을 생성할때 현재 시간이 미포함된 Schedule을 선택",
-      "[BioStar]\n1. Floor Level을 생성할때 현재 시간이 미포함된 Schedule을 선택",
-      "[BioStar]\n1. Access Level을 생성할때 현재 시간이 포함된 Schedule을 선택\n2. Access Group에 속하지 않은 사용자",
-      "[BioStar]\n1. Floor Level을 생성할때 현재 시간이 포함된 Schedule을 선택\n2. Access Group에 속하지 않은 사용자",
-      "[BioStar]\n1. Master Full Access 변경\n2. Slave Full Access 변경\n",
-      "[BioStar]\n1. Device Full Access Enable로 변경",
-      "[BioStar]\n1. Device Full Access Enable로 변경\n2. Access Group 정보 변경"
-    ],
-    "expected_result": [
-      "1. 최대 2048개까지 추가 가능하다.\n> AG/AL/FL : 2048\n2. 출입 그룹은 사용자별 최대 16개까지 설정할 수 있다.\n3. 장치에서 사용자의 출입그룹 설정 및 변경은 불가하다.\n4. Name을 최대 48자까지 설정 할 수 있다.\n5. 출입그룹 추가 / 업데이트가 가능하다.\n6. 특정 출입 그룹 삭제가 가능하다.\n7. 전체 출입 그룹 삭제가 가능하다.\n8. 출입 그룹 정보 확인이 가능하다.\n9. 출입그룹에 속한 사용자그룹의 사용자로 인증할 경우 인증성공이 된다.\n10. 출입그룹에 속한 사용자로 인증시 인증성공 발생\n11. 출입그룹에 속한 사용자 그룹 및 사용자로 인증시 인증성공 발생",
-      "1. 출입 그룹이 있는 사용자로 인증 시 출입이 가능하다.\n2. 출입 그룹이 없는 사용자로 인증 시 출입이 불가능하다.\n",
-      "1. Access Rule중 2개 이상 설정가능\n2. Access Level만 추가시 Access Group 생성불가\n3. Floor Level만 추가시 Access Group 생성 불가\n4. User Group만 추가시 Access Group 생성가능\n5. User만 추가시 Access Group 생성가능\n\n(off) 4,5의 경우 대량으로 생성하였을때의 편의를 위하여 가능토록 함.",
-      "1. 인증시간이 설정한 스케줄에 포함되는 경우 인증이 성공된다. 또한 출입이 허용된다.\n",
-      "1. 인증시간이 설정한 스케줄에 포함되는 경우 인증이 성공된다. 또한 출입이 허용된다.\n",
-      "1. 인증시간이 설정한 스케줄에 포함되지 않는 경우 인증이 실패된다.또한, 출입이 거부된다.\n2. 출입이 거부 될 경우, 'Access Denied' 로그와 사용자 ID가 로그에 남는다.",
-      "1. 인증시간이 설정한 스케줄에 포함되지 않는 경우 인증이 실패된다.또한, 출입이 거부된다.\n2. 출입이 거부 될 경우, 'Access Denied' 로그와 사용자 ID가 로그에 남는다.",
-      "1. 출입그룹에 속하지 않은 사용자로 인증시 출입 거부된다.\n2. 'Access Denied' 로그와 사용자 ID가 로그에 남는다.\n3. 인증 리더(장치)가 속한 출입문이 출입그룹의 출입권한으로 설정되지 않은 경우 출입 거부된다.\n4. 'Access Denied' 로그와 사용자 ID가 로그에 남는다.",
-      "1. 출입그룹에 속하지 않은 사용자로 인증시 출입 거부된다.\n2. 'Access Denied' 로그와 사용자 ID가 로그에 남는다.\n3. 인증 리더(장치)가 속한 Elevoatr가 출입그룹의 출입권한으로 설정되지 않은 경우 출입 거부된다.\n4. 'Access Denied' 로그와 사용자 ID가 로그에 남는다.",
-      "1. 해당 장치에서는 출입 그룹 적용 여부와 상관없이 이 장치에 등록된 모든 사용자의 출입 인증이 가능하다.\n2. Master만 Full Access 일경우 Master만 Full Access로 동작해야 한다.\n",
-      "1. BioStar에서 다음과 같은 Error 팝업이 뜨며 생성 불가하다.\n*Unable to enable full access for Device included in Access Group(302)\n2. Full Access Disable로 변경시 Access Group 생성 가능",
-      "1. BioStar에서 다음과 같은 Error 팝업이 뜨며 변경 불가하다\n*Device with full access enabled cannot be assigned to Access Group(650)"
-    ]
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 11916,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 1,
+              "latestFinal": 0,
+              "latestId": 35099,
+              "latestFinalId": 34654
+            },
+            {
+              "environment": "ES1",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29794,
+              "latestFinalId": 29794
+            },
+            {
+              "environment": "BioStarV2.9.6.30",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29794,
+              "latestFinalId": 29794
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_170117(UnitTest)",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 5669,
+              "latestFinalId": 5669
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_190805_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15246,
+              "latestFinalId": 15246
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.2.8_20160603",
+          "statusResults": [
+            {
+              "latest": 2,
+              "latestFinal": 0,
+              "latestId": 1741,
+              "latestFinalId": 1562
+            }
+          ]
+        },
+        {
+          "group": "FL_V1.0_190515(PS)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 14159,
+              "latestFinalId": 14159
+            }
+          ]
+        },
+        {
+          "group": "V1.7.1_181204(Hotfix)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12680,
+              "latestFinalId": 12680
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_181210_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12762,
+              "latestFinalId": 12762
+            }
+          ]
+        },
+        {
+          "group": "V1.1.5_4_151014(All)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 32,
+              "latestFinalId": 32
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0 170331",
+          "statusResults": [
+            {
+              "latest": 1,
+              "latestFinal": 3,
+              "latestId": 8650,
+              "latestFinalId": 6379
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_181119_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12959,
+              "latestFinalId": 12959
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_190809_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15607,
+              "latestFinalId": 15607
+            }
+          ]
+        },
+        {
+          "group": "V1.8.0_190806_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15336,
+              "latestFinalId": 15336
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180322",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10132,
+              "latestFinalId": 10132
+            }
+          ]
+        },
+        {
+          "group": "V1.7.0_190806_Interaction 7차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15067,
+              "latestFinalId": 15067
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.1.5_5 - 20151016(All)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 5222,
+              "latestFinalId": 5146
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_190806_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15426,
+              "latestFinalId": 15426
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_20200601_Interaction 12차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 17158,
+              "latestFinalId": 17158
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "출입그룹",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 213,
+          "index": 1,
+          "step": "1. Access Control> Add Access Group\n2. 임의의 Access Level 선택 > 임의의 User Group or User 선택",
+          "data": "[BioStar]\n1. Access Rule(Group+Level) 설정\n1) Access Level + Floor Level +  User Group\n2) Access Level + Floor Level + User\n3) Access Level + Floor Level + User Group + User",
+          "result": "1. 최대 2048개까지 추가 가능하다.\n> AG/AL/FL : 2048\n2. 출입 그룹은 사용자별 최대 16개까지 설정할 수 있다.\n3. 장치에서 사용자의 출입그룹 설정 및 변경은 불가하다.\n4. Name을 최대 48자까지 설정 할 수 있다.\n5. 출입그룹 추가 / 업데이트가 가능하다.\n6. 특정 출입 그룹 삭제가 가능하다.\n7. 전체 출입 그룹 삭제가 가능하다.\n8. 출입 그룹 정보 확인이 가능하다.\n9. 출입그룹에 속한 사용자그룹의 사용자로 인증할 경우 인증성공이 된다.\n10. 출입그룹에 속한 사용자로 인증시 인증성공 발생\n11. 출입그룹에 속한 사용자 그룹 및 사용자로 인증시 인증성공 발생",
+          "attachments": []
+        },
+        {
+          "id": 214,
+          "index": 2,
+          "step": "1. Access Control > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > 임의의 User Group or User 선택 > Access Group에 포함된 User 인증시도\n2. Access Control > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > 임의의 User Group or User 선택 > Access Group에 미포함된 User 인증시도",
+          "data": "[BioStar]\n1. Access Group에 포함된 User\n2. Access Group에 미포함된 User",
+          "result": "1. 출입 그룹이 있는 사용자로 인증 시 출입이 가능하다.\n2. 출입 그룹이 없는 사용자로 인증 시 출입이 불가능하다.\n",
+          "attachments": []
+        },
+        {
+          "id": 215,
+          "index": 3,
+          "step": "1. Access Control > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > Apply",
+          "data": "[BioStar]\n1. Access Rule(Group+Level) 설정\n1) Access Level만 설정\n2) Floor Level만 설정\n3) User Group만 설정\n4) User만 설정",
+          "result": "1. Access Rule중 2개 이상 설정가능\n2. Access Level만 추가시 Access Group 생성불가\n3. Floor Level만 추가시 Access Group 생성 불가\n4. User Group만 추가시 Access Group 생성가능\n5. User만 추가시 Access Group 생성가능\n\n(off) 4,5의 경우 대량으로 생성하였을때의 편의를 위하여 가능토록 함.",
+          "attachments": []
+        },
+        {
+          "id": 216,
+          "index": 4,
+          "step": "1. Access Control > Add Access Level > Name 설정 > +Add > 임의의 Door 선택 > 현재 시간이 포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > 임의의 User Group or User 선택 > Access Group에 포함된 User 인증시도",
+          "data": "[BioStar]\n1. Access Level을 생성할때 현재 시간이 포함된 Schedule을 선택\n",
+          "result": "1. 인증시간이 설정한 스케줄에 포함되는 경우 인증이 성공된다. 또한 출입이 허용된다.\n",
+          "attachments": []
+        },
+        {
+          "id": 3508,
+          "index": 5,
+          "step": "1. Access Control > Add Floor Level > Name 설정 > +Add > 임의의 Elevator 선택 > 선택된 Elevator Name 선택 > 현재 시간이 포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Floor Level 선택 > 임의의 User Group or User 선택 > Access Group에 포함된 User 인증시도",
+          "data": "[BioStar]\n1. Floor Level을 생성할때 현재 시간이 포함된 Schedule을 선택\n",
+          "result": "1. 인증시간이 설정한 스케줄에 포함되는 경우 인증이 성공된다. 또한 출입이 허용된다.\n",
+          "attachments": []
+        },
+        {
+          "id": 917,
+          "index": 6,
+          "step": "1. Access Control > Add Access Level > Name 설정 > +Add > 임의의 Door 선택 > 현재 시간이 미포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > 임의의 User Group or User 선택 > Access Group에 포함된 User 인증시도",
+          "data": "[BioStar]\n1. Access Level을 생성할때 현재 시간이 미포함된 Schedule을 선택",
+          "result": "1. 인증시간이 설정한 스케줄에 포함되지 않는 경우 인증이 실패된다.또한, 출입이 거부된다.\n2. 출입이 거부 될 경우, 'Access Denied' 로그와 사용자 ID가 로그에 남는다.",
+          "attachments": []
+        },
+        {
+          "id": 3509,
+          "index": 7,
+          "step": "1. Access Control > Add Floor Level > Name 설정 > +Add > 임의의 Elevator 선택 > 선택된 Elevator Name 선택 > 현재 시간이 미포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Floor Level 선택 > 임의의 User Group or User 선택 > Access Group에 포함된 User 인증시도",
+          "data": "[BioStar]\n1. Floor Level을 생성할때 현재 시간이 미포함된 Schedule을 선택",
+          "result": "1. 인증시간이 설정한 스케줄에 포함되지 않는 경우 인증이 실패된다.또한, 출입이 거부된다.\n2. 출입이 거부 될 경우, 'Access Denied' 로그와 사용자 ID가 로그에 남는다.",
+          "attachments": []
+        },
+        {
+          "id": 918,
+          "index": 8,
+          "step": "1. Access Control > Add Access Level > Name 설정 > +Add > 임의의 Door 선택 >  현재 시간이 포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > User 선택 > Access Group에 미포함된 User 인증시도",
+          "data": "[BioStar]\n1. Access Level을 생성할때 현재 시간이 포함된 Schedule을 선택\n2. Access Group에 속하지 않은 사용자",
+          "result": "1. 출입그룹에 속하지 않은 사용자로 인증시 출입 거부된다.\n2. 'Access Denied' 로그와 사용자 ID가 로그에 남는다.\n3. 인증 리더(장치)가 속한 출입문이 출입그룹의 출입권한으로 설정되지 않은 경우 출입 거부된다.\n4. 'Access Denied' 로그와 사용자 ID가 로그에 남는다.",
+          "attachments": []
+        },
+        {
+          "id": 3510,
+          "index": 9,
+          "step": "1. Access Control > Add Access Level > Name 설정 > +Add > 임의의 Door 선택 >  현재 시간이 포함된 Schedule 선택 > Add Access Group > Name 설정 > +Add > 임의의 Access Level 선택 > User 선택 > Access Group에 미포함된 User 인증시도",
+          "data": "[BioStar]\n1. Floor Level을 생성할때 현재 시간이 포함된 Schedule을 선택\n2. Access Group에 속하지 않은 사용자",
+          "result": "1. 출입그룹에 속하지 않은 사용자로 인증시 출입 거부된다.\n2. 'Access Denied' 로그와 사용자 ID가 로그에 남는다.\n3. 인증 리더(장치)가 속한 Elevoatr가 출입그룹의 출입권한으로 설정되지 않은 경우 출입 거부된다.\n4. 'Access Denied' 로그와 사용자 ID가 로그에 남는다.",
+          "attachments": []
+        },
+        {
+          "id": 260,
+          "index": 10,
+          "step": "1. Device > Authentication > Full Access변경\n2. Master만 Full Access 변경 > Master,Slave 인증 시도\n3. Master, Slave 모두 Full Access 변경 > Master,Slave 인증 시도",
+          "data": "[BioStar]\n1. Master Full Access 변경\n2. Slave Full Access 변경\n",
+          "result": "1. 해당 장치에서는 출입 그룹 적용 여부와 상관없이 이 장치에 등록된 모든 사용자의 출입 인증이 가능하다.\n2. Master만 Full Access 일경우 Master만 Full Access로 동작해야 한다.\n",
+          "attachments": []
+        },
+        {
+          "id": 261,
+          "index": 11,
+          "step": "1. Door Or Elevator 생성 > Add Access Level Or Floor Level > Add Access Group > Apply\n2. Device > Authentication > Full Access변경 > Apply",
+          "data": "[BioStar]\n1. Device Full Access Enable로 변경",
+          "result": "1. BioStar에서 다음과 같은 Error 팝업이 뜨며 생성 불가하다.\n*Unable to enable full access for Device included in Access Group(302)\n2. Full Access Disable로 변경시 Access Group 생성 가능",
+          "attachments": []
+        },
+        {
+          "id": 300,
+          "index": 12,
+          "step": "1. Device > Authentication > Full Access변경 > Door Or Elevator 설정 > Add Access Level Or Floor Level > Add Access Group > Apply",
+          "data": "[BioStar]\n1. Device Full Access Enable로 변경\n2. Access Group 정보 변경",
+          "result": "1. BioStar에서 다음과 같은 Error 팝업이 뜨며 변경 불가하다\n*Device with full access enabled cannot be assigned to Access Group(650)",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/11916/comment/22105",
+          "id": "22105",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=scko",
+            "name": "scko",
+            "key": "scko",
+            "emailAddress": "scko@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "고승찬",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "4항목 <Access Rule중 2개 이상 설정하지 않으면 Access Group를 생성할 수 없다> 뜻이 알수 없습니다. \r\n아마도 Group을 생성할 때, Level과 Schedule이 있어야 한다는 말인 것은 아닌지 싶은데.....맞습니까?",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=scko",
+            "name": "scko",
+            "key": "scko",
+            "emailAddress": "scko@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "고승찬",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-10-09T21:17:03.000+0900",
+          "updated": "2015-10-09T21:17:03.000+0900"
+        },
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/11916/comment/226480",
+          "id": "226480",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+            "name": "김소영",
+            "key": "김소영",
+            "emailAddress": "sykim@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "김소영",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "13, 14항목인 하기 내용에 대해 확인불가로 삭제 - Test할 수 있는 방법이 없음\r\n> Entry Device 2.x 초기 모델의 경우 지원하는 사용자수가 많지 않아 확인이 가능하였으나 현재의 스펙상 확인이 어려움\r\n\r\n1. Access Group 생성시 모델별 지원하는 사용자 초과해 저장 & Max 저장 후\r\n2. 장치에 전송\r\n3. 장치에 전송된 Access Group 확인",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+            "name": "김소영",
+            "key": "김소영",
+            "emailAddress": "sykim@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "김소영",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2022-04-18T08:28:46.000+0900",
+          "updated": "2022-04-18T08:28:46.000+0900"
+        }
+      ],
+      "maxResults": 2,
+      "total": 2,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+      "name": "Minor (C)",
+      "id": "3"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+      "name": "완료",
+      "id": "10001",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "완료"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzrye7:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2015-07-27T11:15:51.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

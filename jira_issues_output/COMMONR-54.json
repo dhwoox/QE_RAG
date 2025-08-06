@@ -1,190 +1,2774 @@
 {
-  "id": "COMMONR-54",
-  "content": [
-    [
-      1,
-      "1. Zone> Add Zone\n2. FireAlarm Zone의 Status 설정 -> Configuration의 Active/Inactive\n3. FireAlarm 발생",
-      "Status\n> Active\n> Inactive",
-      "> Active인 경우 FireAlarm 발생시 FireAlarm으로 동작해야 한다.\n> Inactive인 경우 FireAlarm이 동작하지 않아야 한다."
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "12514",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/12514",
+  "key": "COMMONR-54",
+  "fields": {
+    "resolution": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/resolution/10000",
+      "id": "10000",
+      "description": "[사용안함] Work has been completed on this issue.",
+      "name": "완료(Done)"
+    },
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "0.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": null,
+    "customfield_10185": null,
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "26819",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/26819",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "35533",
+          "key": "CSTFW-682",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/35533",
+          "fields": {
+            "summary": "[Lift] FireAlarm -> Manual Unlock -> Master Reboot시 우선순위에 의한 동작오류 - Relay",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "26469",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/26469",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "34855",
+          "key": "XPASSII-237",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/34855",
+          "fields": {
+            "summary": "[Lift] FireAlarm -> Manual Unlock -> Master Reboot시 우선순위에 의한 동작오류",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "63881",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63881",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "72973",
+          "key": "BS3FW-2059",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72973",
+          "fields": {
+            "summary": "[Global FireAlarm Zone] Master Reboot시 Floor Relay Locked로 출력되는 현상(실제 장치 Relay는 Unlock으로 동작)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13639",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13639",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18930",
+          "key": "BEWIIFWDI-262",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18930",
+          "fields": {
+            "summary": "Held/Forced Open Alarm 발생 후 Clear Alarm 시 Signal만 꺼지고, 해당 장치의 Output Relay는 유지 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11937",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11937",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16030",
+          "key": "BLIIFWI-382",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16030",
+          "fields": {
+            "summary": "Fire Alarm인 상황에서 Master 장치를 강제로 Power Off-On 시켰을때 Relay가 On 되지 않는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12363",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12363",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16902",
+          "key": "BLIIFWI-460",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16902",
+          "fields": {
+            "summary": "Fire Alarm 설정시 Input Device와 Action을 모두 IODevice로 설정시 알람이 안 울리는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12365",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12365",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16903",
+          "key": "BLIIFWI-461",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16903",
+          "fields": {
+            "summary": "Fire Alarm 설정시 Action을 5개 설정 한 후 Alarm이 울리면 BioStar에서 Clear Alarm이 안되는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11355",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11355",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "15046",
+          "key": "BSIIDII-202",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/15046",
+          "fields": {
+            "summary": "Fire Alarm Zone의 Alarm Action을 Slave에 설정하고 Alarm이 울리는것을 확인 후 Zone Status에서 Clear Alarm을 두번 누르면 Master가 꺼지는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11359",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11359",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "15047",
+          "key": "BSIIDII-203",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/15047",
+          "fields": {
+            "summary": "Global Fire Alarm Zone을 설정 후 Fire Alarm 발생 로그에 Input detected (번호)가 남지 않고 Input detected 로만 남는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11383",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11383",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "15074",
+          "key": "BSIIDII-221",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/15074",
+          "fields": {
+            "summary": "Fire Alarm(Output)이 Slave에서 울리는 중에 Master 장치를 Reboot 시키면 Alarm Action이 꺼지는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14166",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14166",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19399",
+          "key": "BSIIDII-461",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19399",
+          "fields": {
+            "summary": "APB Zone과 Fire Alarm Zone이 함께 생성되어 있을때, Release All Alarm시 Fire Alarm으로 On된 Door Relay가 Off 되는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14168",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14168",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19401",
+          "key": "BSIIDII-462",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19401",
+          "fields": {
+            "summary": "APB Zone과 Fire Alarm Zone이 함께 생성되어 있을때, Release All Alarm시 Fire Alarm으로 On된 Door Relay가 Off 된 상태에서 다시 Fire Alarm이 울릴시 Door Relay On이 안되는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "16346",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/16346",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "21995",
+          "key": "CSTFW-123",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/21995",
+          "fields": {
+            "summary": "FireAlarm이 발생된 상태에서 Master Reboot 후 서버와 연결되면서 Door Closed되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14210",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14210",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19209",
+          "key": "ENTRYIIDII-422",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19209",
+          "fields": {
+            "summary": "[LIFT_16개 설정] BioStar Monitoring Floor Status에서 Open 시도시 Relay가 미동작 및 켜지고 꺼질때 까지 시간이 1분 30초 이상되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14212",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14212",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19389",
+          "key": "ENTRYIIDII-448",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19389",
+          "fields": {
+            "summary": "Door를 다수 생성 후 Master 장치 Reboot시 하나의 Door만 남아있는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14100",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14100",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19362",
+          "key": "TIIDFI-832",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19362",
+          "fields": {
+            "summary": "[Slave Device] Alarm Output을 Off 없이 On만 동작 하도록 생성 후 Alarm 발생 시 Delay/Count가 지난 뒤에Clear Alarm 시 Alarm으로 설정한 Port가 On을 유지하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14181",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14181",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19405",
+          "key": "TIIDFI-842",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19405",
+          "fields": {
+            "summary": "APB Zone과 Fire Alarm Zone이 함께 생성되어 있을때, Release All Alarm시 Fire Alarm으로 On된 Door Relay가 Off 되는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14183",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14183",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19406",
+          "key": "TIIDFI-843",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19406",
+          "fields": {
+            "summary": "APB Zone과 Fire Alarm Zone이 함께 생성되어 있을때, Release All Alarm시 Fire Alarm으로 On된 Door Relay가 Off 된 상태에서 다시 Fire Alarm이 울릴시 Door Relay On이 안되는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11939",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11939",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16031",
+          "key": "BLIIFWI-383",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16031",
+          "fields": {
+            "summary": "Global Fire Alarm인 상황에서 Master 장치가 Reboot시 Alarm Action이 유지되지 않는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11941",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11941",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16032",
+          "key": "BLIIFWI-384",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16032",
+          "fields": {
+            "summary": "Global Fire Alarm인 상황에서 Output Action을 하기 그림과 같이 설정하였을때 BioStar에서 Clear Alarm 시도시 첫번째로 설정된 Alarm만 Clear 되는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12335",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12335",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16885",
+          "key": "BSIIDII-290",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16885",
+          "fields": {
+            "summary": "Zone 에서 Mater의 Alarm Output 이 동작 중 Clear Alarm을 실행해도 Alarm 중지 안하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14213",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14213",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19299",
+          "key": "ENTRYIIDII-428",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19299",
+          "fields": {
+            "summary": "Slave에서 Alarm이 발생 중 Master 장치 Reboot시 Slave 장치의 Alarm Port가 ON 상태를 유지하게 될 경우 Alarm Port를 Clear 할 수 없는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14215",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14215",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19301",
+          "key": "ENTRYIIDII-429",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19301",
+          "fields": {
+            "summary": "Release Alarm으로 Alarm Clear시 Signal은 OFF가 되나 Alarm Port는 On 상태를 유지하는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14208",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14208",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19410",
+          "key": "ENTRYIIDII-450",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19410",
+          "fields": {
+            "summary": "BioStar Monitoring Floor Status에서 Open/Manual Unlock 시도시 Relay가 일부만 동작하는 현상 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "23179",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/23179",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "29925",
+          "key": "FLFW-321",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/29925",
+          "fields": {
+            "summary": "[Trigger Action_Supervised Input] 동일 Supervised Input에 N/O, N/C, Short, Open 설정 후 동작 시 N/O, N/C에 대해서 BioStar Event Log에 Event가 '-1'이 발생하는 현상 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "15083",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/15083",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19983",
+          "key": "FSTIIFW-247",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19983",
+          "fields": {
+            "summary": "[Tester: 곽성희] (1회성) 약 32개의 Scheduled Lock Zone 삭제 중  FST2(M)장치 Reboot되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "30883",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/30883",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "41126",
+          "key": "ONYXFW-273",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/41126",
+          "fields": {
+            "summary": "Door Alarm의 Output이 Master와 Slave에서 다르게 동작하는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "30884",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/30884",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "41151",
+          "key": "ONYXFW-277",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/41151",
+          "fields": {
+            "summary": "Clear Alarm 로그 안남는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "25619",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/25619",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "31621",
+          "key": "TIIDFI-2254",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/31621",
+          "fields": {
+            "summary": "[Fire Alarm] Master Rebooing 후 Alarm Action 동작 안함",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "10987",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10987",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "14172",
+          "key": "ENTRYIIDII-99",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/14172",
+          "fields": {
+            "summary": "FireAlarm 발생 도중에 Master 장치를 껐다 켤 경우 상태값을 유지하지 못하는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "10997",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10997",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "14281",
+          "key": "ENTRYIIDII-113",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/14281",
+          "fields": {
+            "summary": "[Fire alarm_Local Zone] 설정한 Input의 Duration대로 동작하지 않음",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12255",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12255",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16761",
+          "key": "ENTRYIIDII-281",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16761",
+          "fields": {
+            "summary": "Global Fire Alarm Zone을 설정 후 Fire Alarm 발생 로그에 Input detected (번호)가 남지 않고 Fire alarm Input detected 로만 남는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11410",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11410",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "15092",
+          "key": "TIIDFI-491",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/15092",
+          "fields": {
+            "summary": "Global Fire Alarm Zone을 설정 후 Fire Alarm 발생 로그에 Input detected (번호)가 남지 않고 Fire alarm Input detected 로만 남는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "21985",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/21985",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "28158",
+          "key": "BLNIIFW-521",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/28158",
+          "fields": {
+            "summary": "화재 감시로 Signal이 발생하는 DM20의 Wiegand Reader를 통해 인증 시 인증 결과, DM 20의 Relay가 Signal이 중지할 때 까지 미표시 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      },
+      {
+        "id": "11935",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11935",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16029",
+          "key": "BLIIFWI-381",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16029",
+          "fields": {
+            "summary": "Fire Alarm인 상황에서 Master 장치가 Reboot시 Door Relay가 쭉 On으로 유지되는것이 아니라 1초정도 Off 되었다가 다시 On되는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      },
+      {
+        "id": "11174",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11174",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "14786",
+          "key": "BEWIIFWDI-30",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/14786",
+          "fields": {
+            "summary": "[Requirement] 구역 - Fire Alarm Zone",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10508",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10508",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "13021",
+          "key": "BLIIFWI-92",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/13021",
+          "fields": {
+            "summary": "[Requirement] 구역 - Fire Alarm Zone",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12853",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12853",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17614",
+          "key": "ENTRYIIDII-327",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17614",
+          "fields": {
+            "summary": "[Requirement]Lift(Elevator) Control 기능",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/5",
+              "description": "해결책이 제시되었고 보고자의 확인을 기다리는 중입니다. 지금부터는 이슈를 다시 열거나 이슈를 닫을 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/resolved.png",
+              "name": "해결됨",
+              "id": "5",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12855",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12855",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17618",
+          "key": "BEWIIFWDI-179",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17618",
+          "fields": {
+            "summary": "[Requirement]Lift(Elevator) Control 기능",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12851",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12851",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17617",
+          "key": "BLIIFWI-488",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17617",
+          "fields": {
+            "summary": "[Requirement]Lift(Elevator) Control 기능",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12849",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12849",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17615",
+          "key": "BSIIDII-324",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17615",
+          "fields": {
+            "summary": "[Requirement]Lift(Elevator) Control 기능",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12847",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12847",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17616",
+          "key": "TIIDFI-687",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17616",
+          "fields": {
+            "summary": "[Requirement]Lift(Elevator) Control 기능",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10448",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10448",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "12960",
+          "key": "TIIDFI-68",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12960",
+          "fields": {
+            "summary": "[Requirement] 구역 - Fire Alarm Zone",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "1. Zone> Add Zone\n2. FireAlarm Zone의 Mode 설정",
-      "Mode\n> Local Zone",
-      "> Master 장치에 RS485/Network로 연결된 장치들로 구성된 Door 또는 Elevator들로 설정이 되어야 한다.\n\n(on) 최대 32개 Door\n(on) 최대 1개 Elevator\n(off) 동시 설정 불가"
+    "assignee": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 20.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-54/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@792c5823[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@2c4a3f17[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@7f7dd6cb[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@2b2fcb4[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@113a520a[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@2eb7cd3b[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@3f6d9da8[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@2a2f81ad[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@69c63ce0[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@7908eaf6[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@2a5ba8a2[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@7caf66ad[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": "2016-02-25T13:30:46.000+0900",
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-54/watchers",
+      "watchCount": 1,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T10:10:21.000+0900",
+    "timeoriginalestimate": null,
+    "description": "FireAlarm Zone\r\n: 화재발생시 구성된 모든 Door가 문열림 되도록 동작",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. Zone&gt; Add Zone<br/>2. FireAlarm Zone의 Status 설정 -&gt; Configuration의 Active/Inactive<br/>3. FireAlarm 발생</p></td><td><p>Status<br/>&gt; Active<br/>&gt; Inactive</p></td><td><p>&gt; Active인 경우 FireAlarm 발생시 FireAlarm으로 동작해야 한다.<br/>&gt; Inactive인 경우 FireAlarm이 동작하지 않아야 한다.</p></td></tr><tr><td>2</td><td><p>1. Zone&gt; Add Zone<br/>2. FireAlarm Zone의 Mode 설정</p></td><td><p>Mode<br/>&gt; Local Zone</p></td><td><p>&gt; Master 장치에 RS485/Network로 연결된 장치들로 구성된 Door 또는 Elevator들로 설정이 되어야 한다.</p>\n\n<p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> 최대 32개 Door<br/><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> 최대 1개 Elevator<br/><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> 동시 설정 불가</p></td></tr><tr><td>3</td><td><p><span class=\"error\">&#91;Door/Floor 설정된 상태&#93;</span><br/>1. Zone&gt; Add Zone<br/>2. FireAlarm Zone의 Mode 설정</p></td><td><p>Mode<br/>&gt; Global Zone</p></td><td><p>&gt; RS485/Network들로 구성된 모든 출입문에 대해 설정이 되어야 한다.<br/>&gt; Door와 Elevator를 동시에 설정 가능해야 한다.</p></td></tr><tr><td>4</td><td><p><span class=\"error\">&#91;Door 설정된 상태&#93;</span><br/>1. Zone&gt; Add Zone&gt; FireAlarm Zone<br/>2. FireAlarm Zone의 Input 설정</p></td><td><p>&gt; Master 장치의 Input Port<br/>&gt; Slave 장치의 Input Port</p></td><td><p>선택된 출입문의 Master/Slave 장치들의 Input Port에 대해 설정할 수 있어야 한다.</p></td></tr><tr><td>5</td><td><p><span class=\"error\">&#91;Elevator 설정된 상태&#93;</span><br/>1. Zone&gt; Add Zone<br/>2. FireAlarm Zone의 Input 설정</p></td><td><p>&gt; Master 장치의 Input Port<br/>&gt; Slave 장치의 Input Port</p></td><td><p>선택된 Elevator의 Master장치/Slave 장치들(OM-120 포함)의 Input Port에 대해 설정할 수 있어야 한다.</p></td></tr><tr><td>6</td><td><p><span class=\"error\">&#91;Door 설정된 상태&#93;</span><br/>1. Zone&gt; Add Zone<br/>2. FireAlarm Input의 Switch Type 설정</p></td><td><p>Switch Type<br/>&gt; Normal Open<br/>&gt; Normal Close</p></td><td><p>&gt; Normal Open - Input Port 접지시FireAlarm이 발생되어야 한다.<br/>&gt; Normal Close - Input Port 접지해제시 FireAlarm이 발생되어야 한다.</p></td></tr><tr><td>7</td><td><p><span class=\"error\">&#91;Door 설정된 상태&#93;</span><br/>1. Zone&gt; Add Zone<br/>2. FireAlarm Input의 Duration 설정</p></td><td><p>Duration<br/>&gt; 0 ~ 65535 설정가능</p></td><td><p>설정한 Duration만큼 접지 후 Input이 발생되어야 한다.<br/>: 10000 설정&gt; 10초 후 동작<br/>: 30000 설정&gt; 30초 후 동작</p></td></tr><tr><td>8</td><td><p><span class=\"error\">&#91;Door 설정된 상태&#93;</span><br/>1. Zone&gt; Add Zone<br/>2. FireAlarm Zone의 Alarm 설정</p></td><td><p>Alarm<br/>&gt; Output</p>\n\n<p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> 사양 변경으로 인한 삭제 항목<br/>&gt; Release All Alarm<br/>&gt; Reboot Device<br/>&gt; Disable Device</p></td><td><p>FireAlarm이 발생하면 설정한 Alarm이 발생해야 한다.<br/>&gt; Output 에 대한 동작만 확인</p></td></tr><tr><td>9</td><td><p>1. Zone&gt; Fire Alarm 설정<br/>2. Fire Alarm 발생<br/>3. Monitoring&gt; Zone Status&gt; Fire Alamr Zone 선택<br/>4. Unlock or Lock 버튼 클릭</p></td><td></td><td><p>Fire Alarmed에 의해 Unlock된 Door의 상태는 Monitoring의  Unlock/Lock 보다 우선 순위가 높다. </p></td></tr><tr><td>10</td><td><p>&lt;Door 및 Access Control 설정된 상태&gt;<br/>1. Zone&gt; Add Zone&gt; Fire Alarm<br/>2. 각각의 항목 설정 후 저장<br/>3. Input 접지를 통해 FireAlarm 발생</p></td><td></td><td><p>FireAlarm이 발생된 경우, FireAlarm Zone에 설정된 출입문들에 대해 Unlocked 상태로 동작되어야 한다.<br/>*Fire Alarm, Alarm, Unlocked 로그 남는다.<br/>&gt; 경광등의 LED 유지</p></td></tr><tr><td>11</td><td><p>&lt;FireAlarm이 발생되는 상태&gt;<br/>1. Monitoring&gt; Zone Status<br/>2. FireAlarm Zone 선택<br/>3. Clear Alarm 클릭</p></td><td></td><td><p>FireAlarm이 해제되어야 하고, Locked 상태로 동작되어야 한다.<br/>*Clear Alarm, Locked 로그 남는다.</p></td></tr><tr><td>12</td><td><p>&lt;FireAlarm이 발생되는 상태&gt;<br/>1. Master 장치 Reboot 시도<br/>2. Master 장치 Booting 완료 후 동작확인</p></td><td><p>Mode<br/>&gt; Local</p></td><td><p>Master가 Reboot되는 경우 FireAlarm은 유지되어야 한다.<br/>: 발생되고 있는 Alarm Action은 유지<br/>: Unlocked 유지</p></td></tr><tr><td>13</td><td><p>&lt;Door 및 Access Control 설정된 상태&gt;<br/>1. Zone&gt; Add Zone&gt; Fire Alarm<br/>2. 각각의 항목 설정 후 저장<br/>3. Device&gt; Trigger&amp;Action 설정확인</p></td><td><p>Mode<br/>&gt; Global<br/>&gt; Local</p></td><td><p>&gt; FireAlarm Zone을 Global로 설정한 경우 Trigger&amp;Action에 설정내용이 표시되어야 한다.(Trigger&amp;Action에서 수정불가)<br/>&gt; FireAlarm Zone을 Local로 설정한 경우에는 Trigger&amp;Action에 표시되지 않아야 한다.</p></td></tr><tr><td>14</td><td><p>&lt;FireAlarm Zone 다수 생성된 상태&gt;<br/>1. Zone 선택 후 삭제시도</p></td><td><p>Zone 삭제<br/>&gt; 개별삭제<br/>&gt; 전체삭제</p></td><td><p>Zone에 대해 개별삭제/전체삭제를 할 수 있어야 한다.<br/>&gt; FireAlarm 이 발생된 상태에서 Zone 삭제시 Door Relay Off로 동작</p></td></tr><tr><td>15</td><td><p>1. 생성한 Zone 정보 편집시도</p></td><td></td><td><p>Zone 정보 변경이 가능해야 한다.</p></td></tr><tr><td>16</td><td><p>1. FireAlarm Zone 생성<br/>2. Alarm Output 설정</p></td><td><p>Output<br/>&gt; Max : 5</p></td><td><p>Door/Zone에서의 Output은 최대 5개까지 설정되어야 한다.</p></td></tr><tr><td>17</td><td><p>1. FireAlarm Zone 생성 후 Alarm 설정<br/>2. Input 접지를 통해 알람 발생<br/>3. 알람이 발생되는 중에 Master 장치를 Reboot 시도<br/>4. 부팅 후 Master 장치 연결이 되면 Clear Alarm 시도</p></td><td><p>Mode<br/>&gt; Local<br/>&gt; Global</p></td><td><p>Clear Alarm으로 알람이 해제되어야 한다.<br/>&gt; Global Fire Alarm<br/> : Input 접지 시 Input detected 가 로그에 표시됨(Port 포함)<br/> : Alarm 발생시 Fire alarm zone alarm detected 가 로그에 표시됨(장치에는 남지 않음)<br/>&gt; Local Fire Alarm<br/> : Input 접지 시 Input detected 가 로그에 미표시됨(Fire alarm input detected 표시)<br/> : Alarm 발생시 Fire alarm zone alarm detected 가 로그에 표시됨(장치에도 남음)</p></td></tr><tr><td>18</td><td><p>&lt;FireAlarm이 발생되는 상태&gt;<br/>1. Device&gt; FireAlarm Zone에 설정된 장치 삭제 시도</p></td><td></td><td><p>&gt; Alarm 이 발생되는 Zone에 포함된 장치를 삭제할 수 없어야 한다.(팝업발생)<br/>&gt; Clear Alarm 후 장치삭제가 가능해야 한다.</p></td></tr><tr><td>19</td><td><p>&lt;장치간 RS485 연결 =&gt; Door 구성&gt;<br/>1. Zone&gt; Add Zone&gt; Fire Alarm<br/>2. 각각의 항목 설정 후 저장<br/>3. Input 접지를 통해 알람발생<br/>4. Master/Slave 장치에 인증시도</p></td><td><p>Mode<br/>&gt; Global<br/>&gt; Local</p></td><td><p>Fire Alarm에 의해 열린 문이 인증후에도 열림상태를 유지해야 한다.<br/>&gt; 경광등의 LED 유지</p></td></tr><tr><td>20</td><td><p>&lt;Master-Wiegand Reader 연결 =&gt; Door 구성&gt;<br/>1. Zone&gt; Add Zone&gt; Fire Alarm<br/>2. 각각의 항목 설정 후 저장<br/>3. Input 접지를 통해 알람발생<br/>4. Master/Wiegand Reader 장치에 인증시도</p></td><td><p>Mode<br/>&gt; Global<br/>&gt; Local</p></td><td><p>Fire Alarm에 의해 열린 문이 인증후에도 열림상태를 유지해야 한다.<br/>&gt; 경광등의 LED 유지</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [
+      "COMMONR-47"
     ],
-    [
-      3,
-      "[Door/Floor 설정된 상태]\n1. Zone> Add Zone\n2. FireAlarm Zone의 Mode 설정",
-      "Mode\n> Global Zone",
-      "> RS485/Network들로 구성된 모든 출입문에 대해 설정이 되어야 한다.\n> Door와 Elevator를 동시에 설정 가능해야 한다."
-    ],
-    [
-      4,
-      "[Door 설정된 상태]\n1. Zone> Add Zone> FireAlarm Zone\n2. FireAlarm Zone의 Input 설정",
-      "> Master 장치의 Input Port\n> Slave 장치의 Input Port",
-      "선택된 출입문의 Master/Slave 장치들의 Input Port에 대해 설정할 수 있어야 한다."
-    ],
-    [
-      5,
-      "[Elevator 설정된 상태]\n1. Zone> Add Zone\n2. FireAlarm Zone의 Input 설정",
-      "> Master 장치의 Input Port\n> Slave 장치의 Input Port",
-      "선택된 Elevator의 Master장치/Slave 장치들(OM-120 포함)의 Input Port에 대해 설정할 수 있어야 한다."
-    ],
-    [
-      6,
-      "[Door 설정된 상태]\n1. Zone> Add Zone\n2. FireAlarm Input의 Switch Type 설정",
-      "Switch Type\n> Normal Open\n> Normal Close",
-      "> Normal Open - Input Port 접지시FireAlarm이 발생되어야 한다.\n> Normal Close - Input Port 접지해제시 FireAlarm이 발생되어야 한다."
-    ],
-    [
-      7,
-      "[Door 설정된 상태]\n1. Zone> Add Zone\n2. FireAlarm Input의 Duration 설정",
-      "Duration\n> 0 ~ 65535 설정가능",
-      "설정한 Duration만큼 접지 후 Input이 발생되어야 한다.\n: 10000 설정> 10초 후 동작\n: 30000 설정> 30초 후 동작"
-    ],
-    [
-      8,
-      "[Door 설정된 상태]\n1. Zone> Add Zone\n2. FireAlarm Zone의 Alarm 설정",
-      "Alarm\n> Output\n\n(off) 사양 변경으로 인한 삭제 항목\n> Release All Alarm\n> Reboot Device\n> Disable Device",
-      "FireAlarm이 발생하면 설정한 Alarm이 발생해야 한다.\n> Output 에 대한 동작만 확인"
-    ],
-    [
-      9,
-      "1. Zone> Fire Alarm 설정\n2. Fire Alarm 발생\n3. Monitoring> Zone Status> Fire Alamr Zone 선택\n4. Unlock or Lock 버튼 클릭",
-      "",
-      "Fire Alarmed에 의해 Unlock된 Door의 상태는 Monitoring의  Unlock/Lock 보다 우선 순위가 높다. "
-    ],
-    [
-      10,
-      "<Door 및 Access Control 설정된 상태>\n1. Zone> Add Zone> Fire Alarm\n2. 각각의 항목 설정 후 저장\n3. Input 접지를 통해 FireAlarm 발생",
-      "",
-      "FireAlarm이 발생된 경우, FireAlarm Zone에 설정된 출입문들에 대해 Unlocked 상태로 동작되어야 한다.\n*Fire Alarm, Alarm, Unlocked 로그 남는다.\n> 경광등의 LED 유지"
-    ],
-    [
-      11,
-      "<FireAlarm이 발생되는 상태>\n1. Monitoring> Zone Status\n2. FireAlarm Zone 선택\n3. Clear Alarm 클릭",
-      "",
-      "FireAlarm이 해제되어야 하고, Locked 상태로 동작되어야 한다.\n*Clear Alarm, Locked 로그 남는다."
-    ],
-    [
-      12,
-      "<FireAlarm이 발생되는 상태>\n1. Master 장치 Reboot 시도\n2. Master 장치 Booting 완료 후 동작확인",
-      "Mode\n> Local",
-      "Master가 Reboot되는 경우 FireAlarm은 유지되어야 한다.\n: 발생되고 있는 Alarm Action은 유지\n: Unlocked 유지"
-    ],
-    [
-      13,
-      "<Door 및 Access Control 설정된 상태>\n1. Zone> Add Zone> Fire Alarm\n2. 각각의 항목 설정 후 저장\n3. Device> Trigger&Action 설정확인",
-      "Mode\n> Global\n> Local",
-      "> FireAlarm Zone을 Global로 설정한 경우 Trigger&Action에 설정내용이 표시되어야 한다.(Trigger&Action에서 수정불가)\n> FireAlarm Zone을 Local로 설정한 경우에는 Trigger&Action에 표시되지 않아야 한다."
-    ],
-    [
-      14,
-      "<FireAlarm Zone 다수 생성된 상태>\n1. Zone 선택 후 삭제시도",
-      "Zone 삭제\n> 개별삭제\n> 전체삭제",
-      "Zone에 대해 개별삭제/전체삭제를 할 수 있어야 한다.\n> FireAlarm 이 발생된 상태에서 Zone 삭제시 Door Relay Off로 동작"
-    ],
-    [
-      15,
-      "1. 생성한 Zone 정보 편집시도",
-      "",
-      "Zone 정보 변경이 가능해야 한다."
-    ],
-    [
-      16,
-      "1. FireAlarm Zone 생성\n2. Alarm Output 설정",
-      "Output\n> Max : 5",
-      "Door/Zone에서의 Output은 최대 5개까지 설정되어야 한다."
-    ],
-    [
-      17,
-      "1. FireAlarm Zone 생성 후 Alarm 설정\n2. Input 접지를 통해 알람 발생\n3. 알람이 발생되는 중에 Master 장치를 Reboot 시도\n4. 부팅 후 Master 장치 연결이 되면 Clear Alarm 시도",
-      "Mode\n> Local\n> Global",
-      "Clear Alarm으로 알람이 해제되어야 한다.\n> Global Fire Alarm\n : Input 접지 시 Input detected 가 로그에 표시됨(Port 포함)\n : Alarm 발생시 Fire alarm zone alarm detected 가 로그에 표시됨(장치에는 남지 않음)\n> Local Fire Alarm\n : Input 접지 시 Input detected 가 로그에 미표시됨(Fire alarm input detected 표시)\n : Alarm 발생시 Fire alarm zone alarm detected 가 로그에 표시됨(장치에도 남음)"
-    ],
-    [
-      18,
-      "<FireAlarm이 발생되는 상태>\n1. Device> FireAlarm Zone에 설정된 장치 삭제 시도",
-      "",
-      "> Alarm 이 발생되는 Zone에 포함된 장치를 삭제할 수 없어야 한다.(팝업발생)\n> Clear Alarm 후 장치삭제가 가능해야 한다."
-    ],
-    [
-      19,
-      "<장치간 RS485 연결 => Door 구성>\n1. Zone> Add Zone> Fire Alarm\n2. 각각의 항목 설정 후 저장\n3. Input 접지를 통해 알람발생\n4. Master/Slave 장치에 인증시도",
-      "Mode\n> Global\n> Local",
-      "Fire Alarm에 의해 열린 문이 인증후에도 열림상태를 유지해야 한다.\n> 경광등의 LED 유지"
-    ],
-    [
-      20,
-      "<Master-Wiegand Reader 연결 => Door 구성>\n1. Zone> Add Zone> Fire Alarm\n2. 각각의 항목 설정 후 저장\n3. Input 접지를 통해 알람발생\n4. Master/Wiegand Reader 장치에 인증시도",
-      "Mode\n> Global\n> Local",
-      "Fire Alarm에 의해 열린 문이 인증후에도 열림상태를 유지해야 한다.\n> 경광등의 LED 유지"
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-54",
-    "description": "",
-    "test_step": [
-      "1. Zone> Add Zone\n2. FireAlarm Zone의 Status 설정 -> Configuration의 Active/Inactive\n3. FireAlarm 발생",
-      "1. Zone> Add Zone\n2. FireAlarm Zone의 Mode 설정",
-      "[Door/Floor 설정된 상태]\n1. Zone> Add Zone\n2. FireAlarm Zone의 Mode 설정",
-      "[Door 설정된 상태]\n1. Zone> Add Zone> FireAlarm Zone\n2. FireAlarm Zone의 Input 설정",
-      "[Elevator 설정된 상태]\n1. Zone> Add Zone\n2. FireAlarm Zone의 Input 설정",
-      "[Door 설정된 상태]\n1. Zone> Add Zone\n2. FireAlarm Input의 Switch Type 설정",
-      "[Door 설정된 상태]\n1. Zone> Add Zone\n2. FireAlarm Input의 Duration 설정",
-      "[Door 설정된 상태]\n1. Zone> Add Zone\n2. FireAlarm Zone의 Alarm 설정",
-      "1. Zone> Fire Alarm 설정\n2. Fire Alarm 발생\n3. Monitoring> Zone Status> Fire Alamr Zone 선택\n4. Unlock or Lock 버튼 클릭",
-      "<Door 및 Access Control 설정된 상태>\n1. Zone> Add Zone> Fire Alarm\n2. 각각의 항목 설정 후 저장\n3. Input 접지를 통해 FireAlarm 발생",
-      "<FireAlarm이 발생되는 상태>\n1. Monitoring> Zone Status\n2. FireAlarm Zone 선택\n3. Clear Alarm 클릭",
-      "<FireAlarm이 발생되는 상태>\n1. Master 장치 Reboot 시도\n2. Master 장치 Booting 완료 후 동작확인",
-      "<Door 및 Access Control 설정된 상태>\n1. Zone> Add Zone> Fire Alarm\n2. 각각의 항목 설정 후 저장\n3. Device> Trigger&Action 설정확인",
-      "<FireAlarm Zone 다수 생성된 상태>\n1. Zone 선택 후 삭제시도",
-      "1. 생성한 Zone 정보 편집시도",
-      "1. FireAlarm Zone 생성\n2. Alarm Output 설정",
-      "1. FireAlarm Zone 생성 후 Alarm 설정\n2. Input 접지를 통해 알람 발생\n3. 알람이 발생되는 중에 Master 장치를 Reboot 시도\n4. 부팅 후 Master 장치 연결이 되면 Clear Alarm 시도",
-      "<FireAlarm이 발생되는 상태>\n1. Device> FireAlarm Zone에 설정된 장치 삭제 시도",
-      "<장치간 RS485 연결 => Door 구성>\n1. Zone> Add Zone> Fire Alarm\n2. 각각의 항목 설정 후 저장\n3. Input 접지를 통해 알람발생\n4. Master/Slave 장치에 인증시도",
-      "<Master-Wiegand Reader 연결 => Door 구성>\n1. Zone> Add Zone> Fire Alarm\n2. 각각의 항목 설정 후 저장\n3. Input 접지를 통해 알람발생\n4. Master/Wiegand Reader 장치에 인증시도"
-    ],
-    "data": [
-      "Status\n> Active\n> Inactive",
-      "Mode\n> Local Zone",
-      "Mode\n> Global Zone",
-      "> Master 장치의 Input Port\n> Slave 장치의 Input Port",
-      "> Master 장치의 Input Port\n> Slave 장치의 Input Port",
-      "Switch Type\n> Normal Open\n> Normal Close",
-      "Duration\n> 0 ~ 65535 설정가능",
-      "Alarm\n> Output\n\n(off) 사양 변경으로 인한 삭제 항목\n> Release All Alarm\n> Reboot Device\n> Disable Device",
-      "Mode\n> Local",
-      "Mode\n> Global\n> Local",
-      "Zone 삭제\n> 개별삭제\n> 전체삭제",
-      "Output\n> Max : 5",
-      "Mode\n> Local\n> Global",
-      "Mode\n> Global\n> Local",
-      "Mode\n> Global\n> Local"
-    ],
-    "expected_result": [
-      "> Active인 경우 FireAlarm 발생시 FireAlarm으로 동작해야 한다.\n> Inactive인 경우 FireAlarm이 동작하지 않아야 한다.",
-      "> Master 장치에 RS485/Network로 연결된 장치들로 구성된 Door 또는 Elevator들로 설정이 되어야 한다.\n\n(on) 최대 32개 Door\n(on) 최대 1개 Elevator\n(off) 동시 설정 불가",
-      "> RS485/Network들로 구성된 모든 출입문에 대해 설정이 되어야 한다.\n> Door와 Elevator를 동시에 설정 가능해야 한다.",
-      "선택된 출입문의 Master/Slave 장치들의 Input Port에 대해 설정할 수 있어야 한다.",
-      "선택된 Elevator의 Master장치/Slave 장치들(OM-120 포함)의 Input Port에 대해 설정할 수 있어야 한다.",
-      "> Normal Open - Input Port 접지시FireAlarm이 발생되어야 한다.\n> Normal Close - Input Port 접지해제시 FireAlarm이 발생되어야 한다.",
-      "설정한 Duration만큼 접지 후 Input이 발생되어야 한다.\n: 10000 설정> 10초 후 동작\n: 30000 설정> 30초 후 동작",
-      "FireAlarm이 발생하면 설정한 Alarm이 발생해야 한다.\n> Output 에 대한 동작만 확인",
-      "Fire Alarmed에 의해 Unlock된 Door의 상태는 Monitoring의  Unlock/Lock 보다 우선 순위가 높다. ",
-      "FireAlarm이 발생된 경우, FireAlarm Zone에 설정된 출입문들에 대해 Unlocked 상태로 동작되어야 한다.\n*Fire Alarm, Alarm, Unlocked 로그 남는다.\n> 경광등의 LED 유지",
-      "FireAlarm이 해제되어야 하고, Locked 상태로 동작되어야 한다.\n*Clear Alarm, Locked 로그 남는다.",
-      "Master가 Reboot되는 경우 FireAlarm은 유지되어야 한다.\n: 발생되고 있는 Alarm Action은 유지\n: Unlocked 유지",
-      "> FireAlarm Zone을 Global로 설정한 경우 Trigger&Action에 설정내용이 표시되어야 한다.(Trigger&Action에서 수정불가)\n> FireAlarm Zone을 Local로 설정한 경우에는 Trigger&Action에 표시되지 않아야 한다.",
-      "Zone에 대해 개별삭제/전체삭제를 할 수 있어야 한다.\n> FireAlarm 이 발생된 상태에서 Zone 삭제시 Door Relay Off로 동작",
-      "Zone 정보 변경이 가능해야 한다.",
-      "Door/Zone에서의 Output은 최대 5개까지 설정되어야 한다.",
-      "Clear Alarm으로 알람이 해제되어야 한다.\n> Global Fire Alarm\n : Input 접지 시 Input detected 가 로그에 표시됨(Port 포함)\n : Alarm 발생시 Fire alarm zone alarm detected 가 로그에 표시됨(장치에는 남지 않음)\n> Local Fire Alarm\n : Input 접지 시 Input detected 가 로그에 미표시됨(Fire alarm input detected 표시)\n : Alarm 발생시 Fire alarm zone alarm detected 가 로그에 표시됨(장치에도 남음)",
-      "> Alarm 이 발생되는 Zone에 포함된 장치를 삭제할 수 없어야 한다.(팝업발생)\n> Clear Alarm 후 장치삭제가 가능해야 한다.",
-      "Fire Alarm에 의해 열린 문이 인증후에도 열림상태를 유지해야 한다.\n> 경광등의 LED 유지",
-      "Fire Alarm에 의해 열린 문이 인증후에도 열림상태를 유지해야 한다.\n> 경광등의 LED 유지"
-    ]
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 12514,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 34677,
+              "latestFinalId": 34677
+            },
+            {
+              "environment": "ES1",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29814,
+              "latestFinalId": 29814
+            },
+            {
+              "environment": "BioStarV2.9.6.30",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29814,
+              "latestFinalId": 29814
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_170117(UnitTest)",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 5647,
+              "latestFinalId": 5647
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180329",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10309,
+              "latestFinalId": 10309
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_190805_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15226,
+              "latestFinalId": 15226
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.2.8_20160603",
+          "statusResults": [
+            {
+              "latest": 1,
+              "latestFinal": 0,
+              "latestId": 1743,
+              "latestFinalId": 1564
+            }
+          ]
+        },
+        {
+          "group": "FL_V1.0_190515(PS)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 14139,
+              "latestFinalId": 14139
+            }
+          ]
+        },
+        {
+          "group": "V1.7.1_181204(Hotfix)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12658,
+              "latestFinalId": 12658
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_181210_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12759,
+              "latestFinalId": 12759
+            }
+          ]
+        },
+        {
+          "group": "V1.1.5_4_151014(All)",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 55,
+              "latestFinalId": 55
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0 170331",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 8629,
+              "latestFinalId": 8629
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_181119_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12939,
+              "latestFinalId": 12939
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_190809_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15587,
+              "latestFinalId": 15587
+            }
+          ]
+        },
+        {
+          "group": "V1.8.0_190806_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15314,
+              "latestFinalId": 15314
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180322",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10129,
+              "latestFinalId": 10129
+            }
+          ]
+        },
+        {
+          "group": "V1.7.0_190806_Interaction 7차",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 15064,
+              "latestFinalId": 15064
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.1.5_5 - 20151016(All)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 5224,
+              "latestFinalId": 5148
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_190806_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15423,
+              "latestFinalId": 15423
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_20200601_Interaction 12차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 17155,
+              "latestFinalId": 17155
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "구역 - Fire Alarm Zone",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 583,
+          "index": 1,
+          "step": "1. Zone> Add Zone\n2. FireAlarm Zone의 Status 설정 -> Configuration의 Active/Inactive\n3. FireAlarm 발생",
+          "data": "Status\n> Active\n> Inactive",
+          "result": "> Active인 경우 FireAlarm 발생시 FireAlarm으로 동작해야 한다.\n> Inactive인 경우 FireAlarm이 동작하지 않아야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 584,
+          "index": 2,
+          "step": "1. Zone> Add Zone\n2. FireAlarm Zone의 Mode 설정",
+          "data": "Mode\n> Local Zone",
+          "result": "> Master 장치에 RS485/Network로 연결된 장치들로 구성된 Door 또는 Elevator들로 설정이 되어야 한다.\n\n(on) 최대 32개 Door\n(on) 최대 1개 Elevator\n(off) 동시 설정 불가",
+          "attachments": []
+        },
+        {
+          "id": 585,
+          "index": 3,
+          "step": "[Door/Floor 설정된 상태]\n1. Zone> Add Zone\n2. FireAlarm Zone의 Mode 설정",
+          "data": "Mode\n> Global Zone",
+          "result": "> RS485/Network들로 구성된 모든 출입문에 대해 설정이 되어야 한다.\n> Door와 Elevator를 동시에 설정 가능해야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 586,
+          "index": 4,
+          "step": "[Door 설정된 상태]\n1. Zone> Add Zone> FireAlarm Zone\n2. FireAlarm Zone의 Input 설정",
+          "data": "> Master 장치의 Input Port\n> Slave 장치의 Input Port",
+          "result": "선택된 출입문의 Master/Slave 장치들의 Input Port에 대해 설정할 수 있어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 3425,
+          "index": 5,
+          "step": "[Elevator 설정된 상태]\n1. Zone> Add Zone\n2. FireAlarm Zone의 Input 설정",
+          "data": "> Master 장치의 Input Port\n> Slave 장치의 Input Port",
+          "result": "선택된 Elevator의 Master장치/Slave 장치들(OM-120 포함)의 Input Port에 대해 설정할 수 있어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 587,
+          "index": 6,
+          "step": "[Door 설정된 상태]\n1. Zone> Add Zone\n2. FireAlarm Input의 Switch Type 설정",
+          "data": "Switch Type\n> Normal Open\n> Normal Close",
+          "result": "> Normal Open - Input Port 접지시FireAlarm이 발생되어야 한다.\n> Normal Close - Input Port 접지해제시 FireAlarm이 발생되어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 588,
+          "index": 7,
+          "step": "[Door 설정된 상태]\n1. Zone> Add Zone\n2. FireAlarm Input의 Duration 설정",
+          "data": "Duration\n> 0 ~ 65535 설정가능",
+          "result": "설정한 Duration만큼 접지 후 Input이 발생되어야 한다.\n: 10000 설정> 10초 후 동작\n: 30000 설정> 30초 후 동작",
+          "attachments": []
+        },
+        {
+          "id": 589,
+          "index": 8,
+          "step": "[Door 설정된 상태]\n1. Zone> Add Zone\n2. FireAlarm Zone의 Alarm 설정",
+          "data": "Alarm\n> Output\n\n(off) 사양 변경으로 인한 삭제 항목\n> Release All Alarm\n> Reboot Device\n> Disable Device",
+          "result": "FireAlarm이 발생하면 설정한 Alarm이 발생해야 한다.\n> Output 에 대한 동작만 확인",
+          "attachments": []
+        },
+        {
+          "id": 2206,
+          "index": 9,
+          "step": "1. Zone> Fire Alarm 설정\n2. Fire Alarm 발생\n3. Monitoring> Zone Status> Fire Alamr Zone 선택\n4. Unlock or Lock 버튼 클릭",
+          "data": "",
+          "result": "Fire Alarmed에 의해 Unlock된 Door의 상태는 Monitoring의  Unlock/Lock 보다 우선 순위가 높다. ",
+          "attachments": []
+        },
+        {
+          "id": 590,
+          "index": 10,
+          "step": "<Door 및 Access Control 설정된 상태>\n1. Zone> Add Zone> Fire Alarm\n2. 각각의 항목 설정 후 저장\n3. Input 접지를 통해 FireAlarm 발생",
+          "data": "",
+          "result": "FireAlarm이 발생된 경우, FireAlarm Zone에 설정된 출입문들에 대해 Unlocked 상태로 동작되어야 한다.\n*Fire Alarm, Alarm, Unlocked 로그 남는다.\n> 경광등의 LED 유지",
+          "attachments": []
+        },
+        {
+          "id": 591,
+          "index": 11,
+          "step": "<FireAlarm이 발생되는 상태>\n1. Monitoring> Zone Status\n2. FireAlarm Zone 선택\n3. Clear Alarm 클릭",
+          "data": "",
+          "result": "FireAlarm이 해제되어야 하고, Locked 상태로 동작되어야 한다.\n*Clear Alarm, Locked 로그 남는다.",
+          "attachments": []
+        },
+        {
+          "id": 592,
+          "index": 12,
+          "step": "<FireAlarm이 발생되는 상태>\n1. Master 장치 Reboot 시도\n2. Master 장치 Booting 완료 후 동작확인",
+          "data": "Mode\n> Local",
+          "result": "Master가 Reboot되는 경우 FireAlarm은 유지되어야 한다.\n: 발생되고 있는 Alarm Action은 유지\n: Unlocked 유지",
+          "attachments": []
+        },
+        {
+          "id": 593,
+          "index": 13,
+          "step": "<Door 및 Access Control 설정된 상태>\n1. Zone> Add Zone> Fire Alarm\n2. 각각의 항목 설정 후 저장\n3. Device> Trigger&Action 설정확인",
+          "data": "Mode\n> Global\n> Local",
+          "result": "> FireAlarm Zone을 Global로 설정한 경우 Trigger&Action에 설정내용이 표시되어야 한다.(Trigger&Action에서 수정불가)\n> FireAlarm Zone을 Local로 설정한 경우에는 Trigger&Action에 표시되지 않아야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 594,
+          "index": 14,
+          "step": "<FireAlarm Zone 다수 생성된 상태>\n1. Zone 선택 후 삭제시도",
+          "data": "Zone 삭제\n> 개별삭제\n> 전체삭제",
+          "result": "Zone에 대해 개별삭제/전체삭제를 할 수 있어야 한다.\n> FireAlarm 이 발생된 상태에서 Zone 삭제시 Door Relay Off로 동작",
+          "attachments": []
+        },
+        {
+          "id": 595,
+          "index": 15,
+          "step": "1. 생성한 Zone 정보 편집시도",
+          "data": "",
+          "result": "Zone 정보 변경이 가능해야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 596,
+          "index": 16,
+          "step": "1. FireAlarm Zone 생성\n2. Alarm Output 설정",
+          "data": "Output\n> Max : 5",
+          "result": "Door/Zone에서의 Output은 최대 5개까지 설정되어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 597,
+          "index": 17,
+          "step": "1. FireAlarm Zone 생성 후 Alarm 설정\n2. Input 접지를 통해 알람 발생\n3. 알람이 발생되는 중에 Master 장치를 Reboot 시도\n4. 부팅 후 Master 장치 연결이 되면 Clear Alarm 시도",
+          "data": "Mode\n> Local\n> Global",
+          "result": "Clear Alarm으로 알람이 해제되어야 한다.\n> Global Fire Alarm\n : Input 접지 시 Input detected 가 로그에 표시됨(Port 포함)\n : Alarm 발생시 Fire alarm zone alarm detected 가 로그에 표시됨(장치에는 남지 않음)\n> Local Fire Alarm\n : Input 접지 시 Input detected 가 로그에 미표시됨(Fire alarm input detected 표시)\n : Alarm 발생시 Fire alarm zone alarm detected 가 로그에 표시됨(장치에도 남음)",
+          "attachments": []
+        },
+        {
+          "id": 991,
+          "index": 18,
+          "step": "<FireAlarm이 발생되는 상태>\n1. Device> FireAlarm Zone에 설정된 장치 삭제 시도",
+          "data": "",
+          "result": "> Alarm 이 발생되는 Zone에 포함된 장치를 삭제할 수 없어야 한다.(팝업발생)\n> Clear Alarm 후 장치삭제가 가능해야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 2175,
+          "index": 19,
+          "step": "<장치간 RS485 연결 => Door 구성>\n1. Zone> Add Zone> Fire Alarm\n2. 각각의 항목 설정 후 저장\n3. Input 접지를 통해 알람발생\n4. Master/Slave 장치에 인증시도",
+          "data": "Mode\n> Global\n> Local",
+          "result": "Fire Alarm에 의해 열린 문이 인증후에도 열림상태를 유지해야 한다.\n> 경광등의 LED 유지",
+          "attachments": []
+        },
+        {
+          "id": 2176,
+          "index": 20,
+          "step": "<Master-Wiegand Reader 연결 => Door 구성>\n1. Zone> Add Zone> Fire Alarm\n2. 각각의 항목 설정 후 저장\n3. Input 접지를 통해 알람발생\n4. Master/Wiegand Reader 장치에 인증시도",
+          "data": "Mode\n> Global\n> Local",
+          "result": "Fire Alarm에 의해 열린 문이 인증후에도 열림상태를 유지해야 한다.\n> 경광등의 LED 유지",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [],
+      "maxResults": 0,
+      "total": 0,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+      "name": "Minor (C)",
+      "id": "3"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+      "name": "완료",
+      "id": "10001",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "완료"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzs1br:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2015-08-19T18:23:21.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

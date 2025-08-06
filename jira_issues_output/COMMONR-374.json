@@ -1,239 +1,1304 @@
 {
-  "id": "COMMONR-374",
-  "content": [
-    [
-      1,
-      "[출입문 리더 -  Master포함]\n1. Door > Add Door > Entry Device 설정\n2. Door에 속한 장치의 Master 장치 Main UI 확인",
-      "[BioStar]\n1. Master or Slave",
-      "1. Entry Device가 설정된다.\n2. Master 장치 Main UI에 출입문 제어 아이콘 표시된다."
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "69671",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/69671",
+  "key": "COMMONR-374",
+  "fields": {
+    "resolution": null,
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "0.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10173",
+      "value": "Major",
+      "id": "10173"
+    },
+    "customfield_10185": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
+      "value": "Medium (2-3일 이내 피드백)",
+      "id": "10220"
+    },
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "64137",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/64137",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "73219",
+          "key": "BS3FW-2082",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/73219",
+          "fields": {
+            "summary": "[Door Control] 관리자가 없을 때 일반 사용자로 진입이 불가능한 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "63438",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63438",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "72606",
+          "key": "BS3FW-1990",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72606",
+          "fields": {
+            "summary": "[Door Control] Door Control 진입 화면에서 얼굴 Detection 진행 중일 때  Door Control 진입하게 되면 화면이 짤리는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "63441",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63441",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "72610",
+          "key": "BS3FW-1991",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72610",
+          "fields": {
+            "summary": "[Door Control] 얼굴과 Card 동시에 인증 시에 Door Control 메뉴 진입해도 Card가 계속 인증되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "63008",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63008",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "72135",
+          "key": "BS3FW-1948",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72135",
+          "fields": {
+            "summary": "[Door Control] Master 장치를 Door에 설정했다가 빼면 Door Control Icon이 안 사라지는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "63011",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63011",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "72137",
+          "key": "BS3FW-1949",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72137",
+          "fields": {
+            "summary": "[Door Control] Timed를 소수로 설정 시에 설정한 시간이 지나도 lock,unlock이 안 풀리는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "63052",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63052",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "72167",
+          "key": "BS3FW-1952",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72167",
+          "fields": {
+            "summary": "[Door Control] Door를 Timed로 설정 한 후에 Master를 reboot하게 되면 input 로그 및 Unlock/lock 해제되지 않음",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "63054",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63054",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "72168",
+          "key": "BS3FW-1953",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72168",
+          "fields": {
+            "summary": "[Door Control] Door를 Timed로 설정 한 후에 Slave를 reboot하게 되면 Normal 상태로 초기화되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "63429",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63429",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "72589",
+          "key": "BS3FW-1988",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72589",
+          "fields": {
+            "summary": "[Door Control] Timed로 동작 중인 Manual Lock/Unlock이 나중에 설정한 Manual Lock/Unlock에 영향을 미치는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "63572",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63572",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "72720",
+          "key": "BS3FW-2000",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72720",
+          "fields": {
+            "summary": "Door Control 활성화 된 상태에서 메뉴 타임아웃을 변경 후 메인 화면에서 Door Control 진입 시도 시 입력이 없는 상태이면 \"미등록 사용자\"팝업이 발생하지 않는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10204",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/medium.svg",
+              "name": "Common (B)",
+              "id": "10204"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "63272",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63272",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "72362",
+          "key": "BS3FW-1972",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72362",
+          "fields": {
+            "summary": "[Door Control] Manual Lock/Unlock Timed에 빈칸 입력 시에 자물쇠 UI가 표시되지 않는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "63301",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63301",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "72393",
+          "key": "BS3FW-1973",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72393",
+          "fields": {
+            "summary": "[Door Control] Emergency Unlock 발생된 Door에서 장치를 Entry/Exit Device에서 해제하면 Door Control Icon은 사라지지만 Unlock 자물쇠 아이콘은 유지되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "64371",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/64371",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "inwardIssue": {
+          "id": "73461",
+          "key": "BS3FW-2119",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/73461",
+          "fields": {
+            "summary": "[Door Control] 얼굴과 Card 동시에 인증 시에 Door Control 메뉴 진입해도 Face/Card가 계속 인증되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "60492",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/60492",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "68809",
+          "key": "BES-3021",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/68809",
+          "fields": {
+            "summary": "[BDP-954] Door control on device",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
+              "id": "5",
+              "description": "이슈의 부작업",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
+              "name": "부작업",
+              "subtask": true,
+              "avatarId": 10316
+            }
+          }
+        }
+      },
+      {
+        "id": "61411",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/61411",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "70627",
+          "key": "BES-3301",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/70627",
+          "fields": {
+            "summary": "CLONE - [BDP-954] Door control on device",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
+              "id": "5",
+              "description": "이슈의 부작업",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
+              "name": "부작업",
+              "subtask": true,
+              "avatarId": 10316
+            }
+          }
+        }
+      },
+      {
+        "id": "62543",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/62543",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "70622",
+          "key": "BES-3296",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/70622",
+          "fields": {
+            "summary": "[BDP-962, 956, 954, 990, 953, 1239] BioStar X FW 개발 - 추가진행 건",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/3",
+              "id": "3",
+              "description": "해야할 일",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10318&avatarType=issuetype",
+              "name": "작업",
+              "subtask": false,
+              "avatarId": 10318
+            }
+          }
+        }
+      },
+      {
+        "id": "63064",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63064",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "72173",
+          "key": "BS3FW-1954",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72173",
+          "fields": {
+            "summary": "[Door Control] 장치의 log에 표시되는 값에 대한 개선 필요",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "[출입문 리더 - Master포함]\n1. Door > Add Door > Exit Device 설정\n2. Door에 속한 장치의 Master 장치 Main UI 확인",
-      "[BioStar]\n1. Master or Slave",
-      "1. Exit Device가 설정된다.\n2. Master 장치 Main UI에 출입문 제어 아이콘 표시된다."
-    ],
-    [
-      3,
-      "[출입문 리더 미포함]\n1. Door > Add Door > Door 생성\n2. 각 Reader에 인증시도",
-      "[BioStar]\nSlave Only(SIO2, DM20 포함)\n\nOM-120, IM-120 Relay 사용 가능\n> Floor 중복 안 된 경우",
-      "1.Master 장치 Main UI에 출입문 제어 아이콘 미표시된다. \n2.출입권한을 가진 사용자가 인증하면 설정된 출입문 Relay가 열리고,'출입문 잠금장치 개방간격'이 경과한 후에 Relay가 닫힌다.\n> Unlock Option 확인 필요\n3. 출입문 열림/닫힘 로그가 저장된다.\n> Door unlocked, Door locked\n4. 출입문 제어 설정과 별개로 동작 한다4"
-    ],
-    [
-      4,
-      "[출입문 리더 - Master포함]\n1. Door > Add Door > Door 생성\n2. 각 Reader에 인증시도",
-      "[BioStar]\n1. Master\n2. Slave(SIO2, DM20 포함)\n\nOM-120, IM-120 Relay 사용 가능\n> Floor 중복 안 된 경우",
-      "1. Master 장치 Main UI에 출입문 제어 아이콘 표시된다.\n2. 출입권한을 가진 사용자가 인증하면 설정된 출입문 Relay가 열리고,'출입문 잠금장치 개방간격'이 경과한 후에 Relay가 닫힌다.\n> Unlock Option 확인 필요\n3. 출입문 열림/닫힘 로그가 저장된다.\n> Door unlocked, Door locked\n4. 출입문 제어 설정과 별개로 동작 한다."
-    ],
-    [
-      5,
-      "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인",
-      "LCD 지원 장치\n1. Master Password 설정되지 않은 상태\n2-1. 전체 관리자가 설정된 상태\n2-2. 장치 설정 관리자만 설정된 상태\n2-3. 사용자 관리자만 설정된 상태",
-      "1. Master 장치 Main UI에 출입문 제어 아이콘이 표시 된다.\n> Admin Menu 진입과 동일하게 동작하여, 사용자 권한을 제외한 모든 권한의 사용자가 인증 없이 출입문 제어 기능을 사용할 수 있다.(확인 필요)\n> 전체/ 장치 권한 관리자로 인증 후 진입하여 출입문 제어 기능 사용 및 정상적으로 기능 동작을 해야 한다.\n> 사용자 권한은 인증 시 \"Permission Denied\" 오류 메시지 발생하고, 진입이 안된다.\n> Master Password 기능 미지원 시 일반 사용자로 출입문 제어가 가능해야 한다.\n\n*** 추후 사양 확인 필요"
-    ],
-    [
-      6,
-      "1. Door에 속한 장치의 Master 장치 Door Control 진입\n2. Unlock, Lock, Normalize(Release) 설정\n3. 적용 후 재진입하여 설정값 확인(Timed)",
-      "LCD 지원 장치\n\n> Master로 구성된 Door\n> Relay - Slave /  Master",
-      "1. 전체/장치 권한의 사용자 인증 후 출입문 제어 진입이 가능하다.\n2. 진입 후 Unlock, Lock, Normalize(Release) 출입문 제어가 가능하다.\n3. 재진입 시 이전에 설정한 값을 확인 할 수 없다.\n"
-    ],
-    [
-      7,
-      "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인\n3. Door> Manual Unlock 설정 > 동작 확인",
-      "LCD 지원 장치\nManual Unlock",
-      "1. 장치 출입문 제어 Unlock 설정에 따라 동작이 된다.\n> Permanent - Normalize(Release) 전까지 Unlock 유지\n> Timed(범위 1 ~ 86,400) - 입력한 시간까지 Unlock 유지 및 시간 이후 초기화 된다.\n2. Door가 Unlock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 개방 자물쇠 아이콘 표시\n> 유효성 체크 (공백 및 . 입력되는지 확인)\n3. Unlock 로그만 발생한다.\n> log 내용\nBiostar : Door unlock request by operator\nDevice : Door unlock request\nRelay : Door unlocked\nDevice Message : Successfully Unlocked"
-    ],
-    [
-      8,
-      "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인\n3. Door> Manual Lock 설정 > 동작 확인",
-      "LCD 지원 장치\nManual Lock",
-      "1. 장치 출입문 제어 Lock 설정에 따라 동작이 된다.\n> Permanent - Normalize(Release) 전까지 Lock 유지\n> Timed(범위 1 ~ 86,400) - 입력한 시간까지 Lock 유지 및 시간 이후 초기화 된다.\n> 유효성 체크 (공백 및 . 입력되는지 확인)\n2. Door가 Lock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 잠금 자물쇠 아이콘 표시\n3. Lock 로그만 발생한다.\n> log 내용\nBiostar : Door lock request by operator\nDevice : Door lock request\nRelay : Door locked\nDevice Message : Successfully locked"
-    ],
-    [
-      9,
-      "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인\n3. Door> Normalize(Release) 동작 확인",
-      "LCD 지원 장치\nManual Unlock / Lock 실행 상태",
-      "1. Manual Unlock 시 Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> log 내용\nBiostar : Door unlock request by operator\nDevice : Door unlock request\nRelay : Door unlocked\nDevice Message : Successfully Unlocked\n3. Manual Lock 시 Door가 Lock 상태를 유지해야한다.\n> log 내용\nBiostar : Door lock request by operator\nDevice : Door lock request\nRelay : Door locked\nDevice Message : Successfully locked\n4. Normalize 시 Door가 Lock 상태를 유지해야 한다.\n> log 내용\nBiostar : Door release request by operator\nDevice : Door release request\nDevice Msg : Successfully Normalized\nRelay : Door unlocked/locked\n> Main UI 상 시간 위 상단에 잠금 자물쇠 아이콘 표시"
-    ],
-    [
-      10,
-      "[BioStar Monitoring - Door Status]\n1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Unlock 버튼 클릭> Master Main UI 확인\n3. Monitoring> Door Status> Manual Lock 버튼 클릭> Master Main UI 확인",
-      "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치",
-      "1. Door가 Unlock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 개방 자물쇠 아이콘 표시\n2. Unlock 로그만 발생한다.\n> Manual Unlock시 Door Status Type이 Operator Unlock 으로 표시되어야 한다.\n3. 로그 확인\n> log 내용\nBiostar : Door unlock request by operator\nDevice : Door unlock request\nRelay : Door unlocked\n4. Door가 Lock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 잠금 자물쇠 아이콘 표시\n5. Lock 로그만 발생한다.\n> Manual Lock시 Door Status Type이 Operator Lock으로 표시되어야 한다.\n> log 내용\nBiostar : Door lock request by operator\nDevice : Door lock request\nRelay : Door locked\n\n*** 추후 로그 수정 예정"
-    ],
-    [
-      11,
-      "[BioStar Monitoring - Door Status]\n1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Unlock 버튼 클릭> Master Main UI 확인\n3. Monitoring> Door Status> Manual Lock 버튼 클릭> Master Main UI 확인",
-      "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
-      "1. Door가 Unlock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 개방 자물쇠 아이콘 표시\n2. Unlock 로그만 발생한다.\n> Manual Unlock시 Door Status Type이 Operator Unlock 으로 표시되어야 한다.\n3. 로그 확인\n> log 내용\nBiostar : Door unlock request by operator\nDevice : Door unlock request\nRelay : Door unlocked\n4. Door가 Lock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 잠금 자물쇠 아이콘 표시\n5. Lock 로그만 발생한다.\n> Manual Lock시 Door Status Type이 Operator Lock으로 표시되어야 한다.\n> log 내용\nBiostar : Door lock request by operator\nDevice : Door lock request\nRelay : Door locked\n\n*** 추후 로그 수정 예정"
-    ],
-    [
-      12,
-      "1. Door> Add Door> Door 생성\n2. Door> Manual Unlock> Door 상태 확인(Unlock)\n3. Master Reboot\n4. Door Status 확인 및 인증 후 동작 확인",
-      "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치",
-      "1. Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n3. Timed의 경우 reboot 시에 door normal 상태로 변경된다.\n※BS3 v1.4.0 릴리즈 이후 변경 예정"
-    ],
-    [
-      13,
-      "1. Door> Add Door> Door 생성\n2. Door> Manual Unlock> Door 상태 확인(Unlock)\n3. Slave Reboot\n4. Door Status 확인 및 인증 후 동작 확인",
-      "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
-      "1. Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n3. Timed의 경우 reboot 시에 door normal 상태로 변경된다.\n※BS3 v1.4.0 릴리즈 이후 변경 예정"
-    ],
-    [
-      14,
-      "1. Door> Add Door> Door 생성\n2. Door에 미포함된 Master 장치 Main UI 확인",
-      "Entry/Exit Device\n> Slave\n\nRelay\n> IO Device\n> Slave Device",
-      "1. 장치 출입문 제어 기능 동작 안한다.\n> 출입문 제어 기능 이전 버전과 동일하게 동작"
-    ],
-    [
-      15,
-      "1. Door> Add Door> Door 생성\n2. Door> Manual Unlock> Door 상태 확인(Unlock)\n3. Slave Power Off\n4. Door> Manual Unlock> Door 상태 확인(Unlock)\n5. Slave Power On \n6. Door Status 확인 및 인증 후 동작 확인",
-      "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
-      "1. Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n3. Door가 Unlock 상태 및 Unlock 로그 발생한다.\n> 경광등 연결하여 Relay  Off 동작 확인\n4. Disconnected된 장치가 연결된 경우, Relay가 동작되어야 한다.\n> 경광등 연결하여 Relay On 동작 확인\n> Door Unlock 상태 유지"
-    ],
-    [
-      16,
-      "[Biostar에서 진입]\n1. Door> Add Door> Door 생성\n> Door에 속한 장치의 Master 장치 Main UI 확인\n2. Biostar > Device > Restore to default: Without Network 실행\n3. 출입문 제어 표시 유무 확인",
-      "Master 장치의 네트워크 설정 변경\n> DHCP/통신모드/Baudrate/RS485 Key\n\n1) Master/Slave 장치가 Door/Zone에 속한 경우",
-      "1. (Door/Zone 설정에 의해) 에러팝업이 발생된다.\n2. 출입문 제어 표시 유지된다."
-    ],
-    [
-      17,
-      "[장치에서 진입]\n1. Door> Add Door> Door 생성\n> Door에 속한 장치의 Master 장치 Main UI 확인\n2. Master 장치> 상세정보창 진입\n3. Restore to default: Without Network  실행\n4. 출입문 제어 표시 유무 확인",
-      "Master 장치의 네트워크 설정 변경\n> DHCP/통신모드/Baudrate/RS485 Key\n\n1) Master/Slave 장치가 Door/Zone에 속한 경우",
-      "1. Master 장치의 Config 초기화 후 재부팅이 발생한다.\n2. 출입문 제어가 미표시 된다."
-    ],
-    [
-      18,
-      "1. Door> Add Door> Door 생성\n> Door에 속한 장치의 Master 장치 Main UI 확인\n2. Master 장치> 상세정보창 진입\n3. Restore to default: ResetAll  실행\n4. 출입문 제어 표시 유무 확인",
-      "Master 장치의 네트워크 설정 변경\n> DHCP/통신모드/Baudrate/RS485 Key\n\n1) Master/Slave 장치가 Door/Zone에 속한 경우",
-      "1. Biostar에서 초기화 진행 시에 (Door/Zone 설정에 의해) 에러팝업이 발생된다.\n2. Master 장치에서 초기화 진행 시에 Config 초기화 후 재부팅되어 출입문 제어가 미표시된다."
-    ],
-    [
-      19,
-      "1. Door> Add Door> Door 생성\n> Door에 속한 장치의 Master 장치 Main UI 확인\n2. Master 장치> 상세정보창 진입\n3. Restore to default: Factory Default 실행\n4. 출입문 제어 표시 유무 확인",
-      "BioStar\n> Secure Communication with Devcie : Use\n> Server&Device encryption key manual management: Use\nMaster 장치의 네트워크 설정 변경\n> DHCP/통신모드/Baudrate/RS485 Key\n\n1) Master/Slave 장치가 Door/Zone에 속한 경우",
-      "1. Master 장치가 공장 초기화 후 재부팅이 발생한다.\n2. 출입문 제어가 미표시 된다."
-    ],
-    [
-      20,
-      "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인\n3. Door> Manual Unlock/Lock 설정 > 동작 확인",
-      "Door 생성 - Relay(Master/Slave)\n> Disable Device",
-      "1. Door Control on Device가 동작 하지 않는다. \n> UI Lock 상태로 해제 전까지 Menu 진입 및 Alarm Zone에서의 Input(Device Lock 장치 Input)에 의한 동작만 가능"
-    ],
-    [
-      21,
-      "1. 설정> 시스템 보안> 장치와 보안통신: 미사용/사용설정\n2. 장치 해시키 수동 관리: 미사용/사용 설정 \n3. Door> Add Door> Door 생성\n4. Tamper 발생>  장치동작 확인",
-      "LCD 지원 장치\nSecure Tamper On \n> Master 장치",
-      "1. Secure Tamper 발생 후 출입문 제어가 표시 된다.\n> Door관련 Config는 유지 하기 때문에."
-    ],
-    [
-      22,
-      "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인",
-      "LCD 미지원 장치\n\n> Master로 구성된 Door\n> Relay - Slave /  Master",
-      "1. 장치 출입문 제어 기능 동작 안한다.\n> 출입문 제어 기능 이전 버전과 동일하게 동작"
-    ],
-    [
-      23,
-      "1. Door> Add Door> Door 생성 \n2. Door > Add Door > Dual Authentication > Device : Entry Device 설정 > Apply\n3. Door에 속한 장치의 Master 장치 Main UI 확인\n4.Door > Add Door > Dual Authentication > Device : Exit Device 설정 > Apply\n5. Door에 속한 장치의 Master 장치 Main UI 확인\"\n",
-      "[BioStar]\n1. Dual Authentication - Device\n> Entry Device Only\n> Exit Device Only\n> Both",
-      "1. Master 장치 Main UI와 인증 화면에 출입문 제어 아이콘 표시된다.\n2. 첫번째 인증 시 출입문 제어 표시 확인 후 두번째 인증 요청 전 출입문 제어 시 기존 인증은 무시하고, 출입 인증으로 전환된다.\n[> 추후 개발 시 사양 확정 예정(두번째는 미표시 할 지 …)]\n[> Arm 진입 시에도 확인 필요]"
-    ],
-    [
-      24,
-      "[Lock Override]\n1. Door > Add Door > Door 생성\n2. Device > Door Control > Manual Lock\n3. Lock Override Card로 인증\n4. Door에서 BS3 Device 제외 후 BS3 UI 확인",
-      "",
-      "3. Lock Override Card 인증 시에 자몰쇠 아이콘 및 Relay Unlock으로 표시\n4. BS3 Main UI에 Door icon & 자물쇠 Unlock Icon  미출력"
-    ],
-    [
-      25,
-      "1. Door Control icon 클릭하여 Door Control 인증 화면으로 진입\n2. Admin 사용자에 등록된 Card, Visual Face 동시 인증",
-      "1. Dual Authentication 미설정\n2. Dual Authentication 설정",
-      "Door Control 메뉴 화면 진입되며 해당 화면에서 인증 시도 시에 무반응으로 동작"
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-374",
-    "description": "",
-    "test_step": [
-      "[출입문 리더 -  Master포함]\n1. Door > Add Door > Entry Device 설정\n2. Door에 속한 장치의 Master 장치 Main UI 확인",
-      "[출입문 리더 - Master포함]\n1. Door > Add Door > Exit Device 설정\n2. Door에 속한 장치의 Master 장치 Main UI 확인",
-      "[출입문 리더 미포함]\n1. Door > Add Door > Door 생성\n2. 각 Reader에 인증시도",
-      "[출입문 리더 - Master포함]\n1. Door > Add Door > Door 생성\n2. 각 Reader에 인증시도",
-      "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인",
-      "1. Door에 속한 장치의 Master 장치 Door Control 진입\n2. Unlock, Lock, Normalize(Release) 설정\n3. 적용 후 재진입하여 설정값 확인(Timed)",
-      "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인\n3. Door> Manual Unlock 설정 > 동작 확인",
-      "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인\n3. Door> Manual Lock 설정 > 동작 확인",
-      "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인\n3. Door> Normalize(Release) 동작 확인",
-      "[BioStar Monitoring - Door Status]\n1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Unlock 버튼 클릭> Master Main UI 확인\n3. Monitoring> Door Status> Manual Lock 버튼 클릭> Master Main UI 확인",
-      "[BioStar Monitoring - Door Status]\n1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Unlock 버튼 클릭> Master Main UI 확인\n3. Monitoring> Door Status> Manual Lock 버튼 클릭> Master Main UI 확인",
-      "1. Door> Add Door> Door 생성\n2. Door> Manual Unlock> Door 상태 확인(Unlock)\n3. Master Reboot\n4. Door Status 확인 및 인증 후 동작 확인",
-      "1. Door> Add Door> Door 생성\n2. Door> Manual Unlock> Door 상태 확인(Unlock)\n3. Slave Reboot\n4. Door Status 확인 및 인증 후 동작 확인",
-      "1. Door> Add Door> Door 생성\n2. Door에 미포함된 Master 장치 Main UI 확인",
-      "1. Door> Add Door> Door 생성\n2. Door> Manual Unlock> Door 상태 확인(Unlock)\n3. Slave Power Off\n4. Door> Manual Unlock> Door 상태 확인(Unlock)\n5. Slave Power On \n6. Door Status 확인 및 인증 후 동작 확인",
-      "[Biostar에서 진입]\n1. Door> Add Door> Door 생성\n> Door에 속한 장치의 Master 장치 Main UI 확인\n2. Biostar > Device > Restore to default: Without Network 실행\n3. 출입문 제어 표시 유무 확인",
-      "[장치에서 진입]\n1. Door> Add Door> Door 생성\n> Door에 속한 장치의 Master 장치 Main UI 확인\n2. Master 장치> 상세정보창 진입\n3. Restore to default: Without Network  실행\n4. 출입문 제어 표시 유무 확인",
-      "1. Door> Add Door> Door 생성\n> Door에 속한 장치의 Master 장치 Main UI 확인\n2. Master 장치> 상세정보창 진입\n3. Restore to default: ResetAll  실행\n4. 출입문 제어 표시 유무 확인",
-      "1. Door> Add Door> Door 생성\n> Door에 속한 장치의 Master 장치 Main UI 확인\n2. Master 장치> 상세정보창 진입\n3. Restore to default: Factory Default 실행\n4. 출입문 제어 표시 유무 확인",
-      "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인\n3. Door> Manual Unlock/Lock 설정 > 동작 확인",
-      "1. 설정> 시스템 보안> 장치와 보안통신: 미사용/사용설정\n2. 장치 해시키 수동 관리: 미사용/사용 설정 \n3. Door> Add Door> Door 생성\n4. Tamper 발생>  장치동작 확인",
-      "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인",
-      "1. Door> Add Door> Door 생성 \n2. Door > Add Door > Dual Authentication > Device : Entry Device 설정 > Apply\n3. Door에 속한 장치의 Master 장치 Main UI 확인\n4.Door > Add Door > Dual Authentication > Device : Exit Device 설정 > Apply\n5. Door에 속한 장치의 Master 장치 Main UI 확인\"\n",
-      "[Lock Override]\n1. Door > Add Door > Door 생성\n2. Device > Door Control > Manual Lock\n3. Lock Override Card로 인증\n4. Door에서 BS3 Device 제외 후 BS3 UI 확인",
-      "1. Door Control icon 클릭하여 Door Control 인증 화면으로 진입\n2. Admin 사용자에 등록된 Card, Visual Face 동시 인증"
-    ],
-    "data": [
-      "[BioStar]\n1. Master or Slave",
-      "[BioStar]\n1. Master or Slave",
-      "[BioStar]\nSlave Only(SIO2, DM20 포함)\n\nOM-120, IM-120 Relay 사용 가능\n> Floor 중복 안 된 경우",
-      "[BioStar]\n1. Master\n2. Slave(SIO2, DM20 포함)\n\nOM-120, IM-120 Relay 사용 가능\n> Floor 중복 안 된 경우",
-      "LCD 지원 장치\n1. Master Password 설정되지 않은 상태\n2-1. 전체 관리자가 설정된 상태\n2-2. 장치 설정 관리자만 설정된 상태\n2-3. 사용자 관리자만 설정된 상태",
-      "LCD 지원 장치\n\n> Master로 구성된 Door\n> Relay - Slave /  Master",
-      "LCD 지원 장치\nManual Unlock",
-      "LCD 지원 장치\nManual Lock",
-      "LCD 지원 장치\nManual Unlock / Lock 실행 상태",
-      "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치",
-      "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
-      "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치",
-      "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
-      "Entry/Exit Device\n> Slave\n\nRelay\n> IO Device\n> Slave Device",
-      "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
-      "Master 장치의 네트워크 설정 변경\n> DHCP/통신모드/Baudrate/RS485 Key\n\n1) Master/Slave 장치가 Door/Zone에 속한 경우",
-      "Master 장치의 네트워크 설정 변경\n> DHCP/통신모드/Baudrate/RS485 Key\n\n1) Master/Slave 장치가 Door/Zone에 속한 경우",
-      "Master 장치의 네트워크 설정 변경\n> DHCP/통신모드/Baudrate/RS485 Key\n\n1) Master/Slave 장치가 Door/Zone에 속한 경우",
-      "BioStar\n> Secure Communication with Devcie : Use\n> Server&Device encryption key manual management: Use\nMaster 장치의 네트워크 설정 변경\n> DHCP/통신모드/Baudrate/RS485 Key\n\n1) Master/Slave 장치가 Door/Zone에 속한 경우",
-      "Door 생성 - Relay(Master/Slave)\n> Disable Device",
-      "LCD 지원 장치\nSecure Tamper On \n> Master 장치",
-      "LCD 미지원 장치\n\n> Master로 구성된 Door\n> Relay - Slave /  Master",
-      "[BioStar]\n1. Dual Authentication - Device\n> Entry Device Only\n> Exit Device Only\n> Both",
-      "1. Dual Authentication 미설정\n2. Dual Authentication 설정"
-    ],
-    "expected_result": [
-      "1. Entry Device가 설정된다.\n2. Master 장치 Main UI에 출입문 제어 아이콘 표시된다.",
-      "1. Exit Device가 설정된다.\n2. Master 장치 Main UI에 출입문 제어 아이콘 표시된다.",
-      "1.Master 장치 Main UI에 출입문 제어 아이콘 미표시된다. \n2.출입권한을 가진 사용자가 인증하면 설정된 출입문 Relay가 열리고,'출입문 잠금장치 개방간격'이 경과한 후에 Relay가 닫힌다.\n> Unlock Option 확인 필요\n3. 출입문 열림/닫힘 로그가 저장된다.\n> Door unlocked, Door locked\n4. 출입문 제어 설정과 별개로 동작 한다4",
-      "1. Master 장치 Main UI에 출입문 제어 아이콘 표시된다.\n2. 출입권한을 가진 사용자가 인증하면 설정된 출입문 Relay가 열리고,'출입문 잠금장치 개방간격'이 경과한 후에 Relay가 닫힌다.\n> Unlock Option 확인 필요\n3. 출입문 열림/닫힘 로그가 저장된다.\n> Door unlocked, Door locked\n4. 출입문 제어 설정과 별개로 동작 한다.",
-      "1. Master 장치 Main UI에 출입문 제어 아이콘이 표시 된다.\n> Admin Menu 진입과 동일하게 동작하여, 사용자 권한을 제외한 모든 권한의 사용자가 인증 없이 출입문 제어 기능을 사용할 수 있다.(확인 필요)\n> 전체/ 장치 권한 관리자로 인증 후 진입하여 출입문 제어 기능 사용 및 정상적으로 기능 동작을 해야 한다.\n> 사용자 권한은 인증 시 \"Permission Denied\" 오류 메시지 발생하고, 진입이 안된다.\n> Master Password 기능 미지원 시 일반 사용자로 출입문 제어가 가능해야 한다.\n\n*** 추후 사양 확인 필요",
-      "1. 전체/장치 권한의 사용자 인증 후 출입문 제어 진입이 가능하다.\n2. 진입 후 Unlock, Lock, Normalize(Release) 출입문 제어가 가능하다.\n3. 재진입 시 이전에 설정한 값을 확인 할 수 없다.\n",
-      "1. 장치 출입문 제어 Unlock 설정에 따라 동작이 된다.\n> Permanent - Normalize(Release) 전까지 Unlock 유지\n> Timed(범위 1 ~ 86,400) - 입력한 시간까지 Unlock 유지 및 시간 이후 초기화 된다.\n2. Door가 Unlock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 개방 자물쇠 아이콘 표시\n> 유효성 체크 (공백 및 . 입력되는지 확인)\n3. Unlock 로그만 발생한다.\n> log 내용\nBiostar : Door unlock request by operator\nDevice : Door unlock request\nRelay : Door unlocked\nDevice Message : Successfully Unlocked",
-      "1. 장치 출입문 제어 Lock 설정에 따라 동작이 된다.\n> Permanent - Normalize(Release) 전까지 Lock 유지\n> Timed(범위 1 ~ 86,400) - 입력한 시간까지 Lock 유지 및 시간 이후 초기화 된다.\n> 유효성 체크 (공백 및 . 입력되는지 확인)\n2. Door가 Lock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 잠금 자물쇠 아이콘 표시\n3. Lock 로그만 발생한다.\n> log 내용\nBiostar : Door lock request by operator\nDevice : Door lock request\nRelay : Door locked\nDevice Message : Successfully locked",
-      "1. Manual Unlock 시 Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> log 내용\nBiostar : Door unlock request by operator\nDevice : Door unlock request\nRelay : Door unlocked\nDevice Message : Successfully Unlocked\n3. Manual Lock 시 Door가 Lock 상태를 유지해야한다.\n> log 내용\nBiostar : Door lock request by operator\nDevice : Door lock request\nRelay : Door locked\nDevice Message : Successfully locked\n4. Normalize 시 Door가 Lock 상태를 유지해야 한다.\n> log 내용\nBiostar : Door release request by operator\nDevice : Door release request\nDevice Msg : Successfully Normalized\nRelay : Door unlocked/locked\n> Main UI 상 시간 위 상단에 잠금 자물쇠 아이콘 표시",
-      "1. Door가 Unlock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 개방 자물쇠 아이콘 표시\n2. Unlock 로그만 발생한다.\n> Manual Unlock시 Door Status Type이 Operator Unlock 으로 표시되어야 한다.\n3. 로그 확인\n> log 내용\nBiostar : Door unlock request by operator\nDevice : Door unlock request\nRelay : Door unlocked\n4. Door가 Lock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 잠금 자물쇠 아이콘 표시\n5. Lock 로그만 발생한다.\n> Manual Lock시 Door Status Type이 Operator Lock으로 표시되어야 한다.\n> log 내용\nBiostar : Door lock request by operator\nDevice : Door lock request\nRelay : Door locked\n\n*** 추후 로그 수정 예정",
-      "1. Door가 Unlock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 개방 자물쇠 아이콘 표시\n2. Unlock 로그만 발생한다.\n> Manual Unlock시 Door Status Type이 Operator Unlock 으로 표시되어야 한다.\n3. 로그 확인\n> log 내용\nBiostar : Door unlock request by operator\nDevice : Door unlock request\nRelay : Door unlocked\n4. Door가 Lock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 잠금 자물쇠 아이콘 표시\n5. Lock 로그만 발생한다.\n> Manual Lock시 Door Status Type이 Operator Lock으로 표시되어야 한다.\n> log 내용\nBiostar : Door lock request by operator\nDevice : Door lock request\nRelay : Door locked\n\n*** 추후 로그 수정 예정",
-      "1. Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n3. Timed의 경우 reboot 시에 door normal 상태로 변경된다.\n※BS3 v1.4.0 릴리즈 이후 변경 예정",
-      "1. Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n3. Timed의 경우 reboot 시에 door normal 상태로 변경된다.\n※BS3 v1.4.0 릴리즈 이후 변경 예정",
-      "1. 장치 출입문 제어 기능 동작 안한다.\n> 출입문 제어 기능 이전 버전과 동일하게 동작",
-      "1. Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n3. Door가 Unlock 상태 및 Unlock 로그 발생한다.\n> 경광등 연결하여 Relay  Off 동작 확인\n4. Disconnected된 장치가 연결된 경우, Relay가 동작되어야 한다.\n> 경광등 연결하여 Relay On 동작 확인\n> Door Unlock 상태 유지",
-      "1. (Door/Zone 설정에 의해) 에러팝업이 발생된다.\n2. 출입문 제어 표시 유지된다.",
-      "1. Master 장치의 Config 초기화 후 재부팅이 발생한다.\n2. 출입문 제어가 미표시 된다.",
-      "1. Biostar에서 초기화 진행 시에 (Door/Zone 설정에 의해) 에러팝업이 발생된다.\n2. Master 장치에서 초기화 진행 시에 Config 초기화 후 재부팅되어 출입문 제어가 미표시된다.",
-      "1. Master 장치가 공장 초기화 후 재부팅이 발생한다.\n2. 출입문 제어가 미표시 된다.",
-      "1. Door Control on Device가 동작 하지 않는다. \n> UI Lock 상태로 해제 전까지 Menu 진입 및 Alarm Zone에서의 Input(Device Lock 장치 Input)에 의한 동작만 가능",
-      "1. Secure Tamper 발생 후 출입문 제어가 표시 된다.\n> Door관련 Config는 유지 하기 때문에.",
-      "1. 장치 출입문 제어 기능 동작 안한다.\n> 출입문 제어 기능 이전 버전과 동일하게 동작",
-      "1. Master 장치 Main UI와 인증 화면에 출입문 제어 아이콘 표시된다.\n2. 첫번째 인증 시 출입문 제어 표시 확인 후 두번째 인증 요청 전 출입문 제어 시 기존 인증은 무시하고, 출입 인증으로 전환된다.\n[> 추후 개발 시 사양 확정 예정(두번째는 미표시 할 지 …)]\n[> Arm 진입 시에도 확인 필요]",
-      "3. Lock Override Card 인증 시에 자몰쇠 아이콘 및 Relay Unlock으로 표시\n4. BS3 Main UI에 Door icon & 자물쇠 Unlock Icon  미출력",
-      "Door Control 메뉴 화면 진입되며 해당 화면에서 인증 시도 시에 무반응으로 동작"
-    ]
+    "assignee": null,
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 25.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-374/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@4a1f90c0[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@23028207[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@5c9e8f70[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@6b3b3c5e[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@7394bbc5[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@159864fa[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@3d559c36[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@f3e9e0e[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@59a246bf[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@f4b56c5[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@1eeedf36[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@65dbec0b[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": null,
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-374/watchers",
+      "watchCount": 1,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T10:31:39.000+0900",
+    "timeoriginalestimate": null,
+    "description": "1. 기획\r\nhttps://jira.suprema.co.kr/browse/BDP-954\r\n2. 지원 장치\r\nLCD 지원 장치 : BS3, FSF2, BS2a, BLN2, XS2, BL2\r\n3. 사전 조건\r\n> BioStar 이용 Door 구성\r\n> Door 구성 시  반드시 Master 장치가 입실 / 퇴실 중 리더로 포함\r\n4. 출입문 제어 진입\r\n>  Admin  처럼 인증 후 진입, 현재 Master Password 기능이 추가 됨으로 반드시 인증을 요청 하나, 이 기능이 포함 안되면, Admin 처럼 인증 동작\r\n5. 미지원 장치\r\n> Master와 연결이 끊어진 Slave, Wiegand Reader, LCD 지원 장치 이외 장치\r\n",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p><span class=\"error\">&#91;출입문 리더 -  Master포함&#93;</span><br/>1. Door &gt; Add Door &gt; Entry Device 설정<br/>2. Door에 속한 장치의 Master 장치 Main UI 확인</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>1. Master or Slave</p></td><td><p>1. Entry Device가 설정된다.<br/>2. Master 장치 Main UI에 출입문 제어 아이콘 표시된다.</p></td></tr><tr><td>2</td><td><p><span class=\"error\">&#91;출입문 리더 - Master포함&#93;</span><br/>1. Door &gt; Add Door &gt; Exit Device 설정<br/>2. Door에 속한 장치의 Master 장치 Main UI 확인</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>1. Master or Slave</p></td><td><p>1. Exit Device가 설정된다.<br/>2. Master 장치 Main UI에 출입문 제어 아이콘 표시된다.</p></td></tr><tr><td>3</td><td><p><span class=\"error\">&#91;출입문 리더 미포함&#93;</span><br/>1. Door &gt; Add Door &gt; Door 생성<br/>2. 각 Reader에 인증시도</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Slave Only(SIO2, DM20 포함)</p>\n\n<p>OM-120, IM-120 Relay 사용 가능<br/>&gt; Floor 중복 안 된 경우</p></td><td><p>1.Master 장치 Main UI에 출입문 제어 아이콘 미표시된다. <br/>2.출입권한을 가진 사용자가 인증하면 설정된 출입문 Relay가 열리고,'출입문 잠금장치 개방간격'이 경과한 후에 Relay가 닫힌다.<br/>&gt; Unlock Option 확인 필요<br/>3. 출입문 열림/닫힘 로그가 저장된다.<br/>&gt; Door unlocked, Door locked<br/>4. 출입문 제어 설정과 별개로 동작 한다4</p></td></tr><tr><td>4</td><td><p><span class=\"error\">&#91;출입문 리더 - Master포함&#93;</span><br/>1. Door &gt; Add Door &gt; Door 생성<br/>2. 각 Reader에 인증시도</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>1. Master<br/>2. Slave(SIO2, DM20 포함)</p>\n\n<p>OM-120, IM-120 Relay 사용 가능<br/>&gt; Floor 중복 안 된 경우</p></td><td><p>1. Master 장치 Main UI에 출입문 제어 아이콘 표시된다.<br/>2. 출입권한을 가진 사용자가 인증하면 설정된 출입문 Relay가 열리고,'출입문 잠금장치 개방간격'이 경과한 후에 Relay가 닫힌다.<br/>&gt; Unlock Option 확인 필요<br/>3. 출입문 열림/닫힘 로그가 저장된다.<br/>&gt; Door unlocked, Door locked<br/>4. 출입문 제어 설정과 별개로 동작 한다.</p></td></tr><tr><td>5</td><td><p>1. Door&gt; Add Door&gt; Door 생성<br/>2. Door에 속한 장치의 Master 장치 Main UI 확인</p></td><td><p>LCD 지원 장치<br/>1. Master Password 설정되지 않은 상태<br/>2-1. 전체 관리자가 설정된 상태<br/>2-2. 장치 설정 관리자만 설정된 상태<br/>2-3. 사용자 관리자만 설정된 상태</p></td><td><p>1. Master 장치 Main UI에 출입문 제어 아이콘이 표시 된다.<br/>&gt; Admin Menu 진입과 동일하게 동작하여, 사용자 권한을 제외한 모든 권한의 사용자가 인증 없이 출입문 제어 기능을 사용할 수 있다.(확인 필요)<br/>&gt; 전체/ 장치 권한 관리자로 인증 후 진입하여 출입문 제어 기능 사용 및 정상적으로 기능 동작을 해야 한다.<br/>&gt; 사용자 권한은 인증 시 \"Permission Denied\" 오류 메시지 발생하고, 진입이 안된다.<br/>&gt; Master Password 기능 미지원 시 일반 사용자로 출입문 제어가 가능해야 한다.</p>\n\n<ul>\n<li>\n<ul>\n<li>\n<ul>\n<li>추후 사양 확인 필요</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</td></tr><tr><td>6</td><td><p>1. Door에 속한 장치의 Master 장치 Door Control 진입<br/>2. Unlock, Lock, Normalize(Release) 설정<br/>3. 적용 후 재진입하여 설정값 확인(Timed)</p></td><td><p>LCD 지원 장치</p>\n\n<p>&gt; Master로 구성된 Door<br/>&gt; Relay - Slave /  Master</p></td><td><p>1. 전체/장치 권한의 사용자 인증 후 출입문 제어 진입이 가능하다.<br/>2. 진입 후 Unlock, Lock, Normalize(Release) 출입문 제어가 가능하다.<br/>3. 재진입 시 이전에 설정한 값을 확인 할 수 없다.</p></td></tr><tr><td>7</td><td><p>1. Door&gt; Add Door&gt; Door 생성<br/>2. Door에 속한 장치의 Master 장치 Main UI 확인<br/>3. Door&gt; Manual Unlock 설정 &gt; 동작 확인</p></td><td><p>LCD 지원 장치<br/>Manual Unlock</p></td><td><p>1. 장치 출입문 제어 Unlock 설정에 따라 동작이 된다.<br/>&gt; Permanent - Normalize(Release) 전까지 Unlock 유지<br/>&gt; Timed(범위 1 ~ 86,400) - 입력한 시간까지 Unlock 유지 및 시간 이후 초기화 된다.<br/>2. Door가 Unlock 상태를 유지해야한다.<br/>&gt; Main UI 상 시간 위 상단에 개방 자물쇠 아이콘 표시<br/>&gt; 유효성 체크 (공백 및 . 입력되는지 확인)<br/>3. Unlock 로그만 발생한다.<br/>&gt; log 내용<br/>Biostar : Door unlock request by operator<br/>Device : Door unlock request<br/>Relay : Door unlocked<br/>Device Message : Successfully Unlocked</p></td></tr><tr><td>8</td><td><p>1. Door&gt; Add Door&gt; Door 생성<br/>2. Door에 속한 장치의 Master 장치 Main UI 확인<br/>3. Door&gt; Manual Lock 설정 &gt; 동작 확인</p></td><td><p>LCD 지원 장치<br/>Manual Lock</p></td><td><p>1. 장치 출입문 제어 Lock 설정에 따라 동작이 된다.<br/>&gt; Permanent - Normalize(Release) 전까지 Lock 유지<br/>&gt; Timed(범위 1 ~ 86,400) - 입력한 시간까지 Lock 유지 및 시간 이후 초기화 된다.<br/>&gt; 유효성 체크 (공백 및 . 입력되는지 확인)<br/>2. Door가 Lock 상태를 유지해야한다.<br/>&gt; Main UI 상 시간 위 상단에 잠금 자물쇠 아이콘 표시<br/>3. Lock 로그만 발생한다.<br/>&gt; log 내용<br/>Biostar : Door lock request by operator<br/>Device : Door lock request<br/>Relay : Door locked<br/>Device Message : Successfully locked</p></td></tr><tr><td>9</td><td><p>1. Door&gt; Add Door&gt; Door 생성<br/>2. Door에 속한 장치의 Master 장치 Main UI 확인<br/>3. Door&gt; Normalize(Release) 동작 확인</p></td><td><p>LCD 지원 장치<br/>Manual Unlock / Lock 실행 상태</p></td><td><p>1. Manual Unlock 시 Door가 Unlock 상태를 유지해야한다.<br/>2. Unlock 로그만 발생한다.<br/>&gt; log 내용<br/>Biostar : Door unlock request by operator<br/>Device : Door unlock request<br/>Relay : Door unlocked<br/>Device Message : Successfully Unlocked<br/>3. Manual Lock 시 Door가 Lock 상태를 유지해야한다.<br/>&gt; log 내용<br/>Biostar : Door lock request by operator<br/>Device : Door lock request<br/>Relay : Door locked<br/>Device Message : Successfully locked<br/>4. Normalize 시 Door가 Lock 상태를 유지해야 한다.<br/>&gt; log 내용<br/>Biostar : Door release request by operator<br/>Device : Door release request<br/>Device Msg : Successfully Normalized<br/>Relay : Door unlocked/locked<br/>&gt; Main UI 상 시간 위 상단에 잠금 자물쇠 아이콘 표시</p></td></tr><tr><td>10</td><td><p><span class=\"error\">&#91;BioStar Monitoring - Door Status&#93;</span><br/>1. Door&gt; Add Door&gt; Door 생성<br/>2. Monitoring&gt; Door Status&gt; Manual Unlock 버튼 클릭&gt; Master Main UI 확인<br/>3. Monitoring&gt; Door Status&gt; Manual Lock 버튼 클릭&gt; Master Main UI 확인</p></td><td><p>Door 생성 - Relay(Master)<br/>&gt; 단일장치<br/>&gt; RS 485 연결 장치</p></td><td><p>1. Door가 Unlock 상태를 유지해야한다.<br/>&gt; Main UI 상 시간 위 상단에 개방 자물쇠 아이콘 표시<br/>2. Unlock 로그만 발생한다.<br/>&gt; Manual Unlock시 Door Status Type이 Operator Unlock 으로 표시되어야 한다.<br/>3. 로그 확인<br/>&gt; log 내용<br/>Biostar : Door unlock request by operator<br/>Device : Door unlock request<br/>Relay : Door unlocked<br/>4. Door가 Lock 상태를 유지해야한다.<br/>&gt; Main UI 상 시간 위 상단에 잠금 자물쇠 아이콘 표시<br/>5. Lock 로그만 발생한다.<br/>&gt; Manual Lock시 Door Status Type이 Operator Lock으로 표시되어야 한다.<br/>&gt; log 내용<br/>Biostar : Door lock request by operator<br/>Device : Door lock request<br/>Relay : Door locked</p>\n\n<ul>\n<li>\n<ul>\n<li>\n<ul>\n<li>추후 로그 수정 예정</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</td></tr><tr><td>11</td><td><p><span class=\"error\">&#91;BioStar Monitoring - Door Status&#93;</span><br/>1. Door&gt; Add Door&gt; Door 생성<br/>2. Monitoring&gt; Door Status&gt; Manual Unlock 버튼 클릭&gt; Master Main UI 확인<br/>3. Monitoring&gt; Door Status&gt; Manual Lock 버튼 클릭&gt; Master Main UI 확인</p></td><td><p>Door 생성 - Relay(Slave)<br/>&gt; 단일장치<br/>&gt; RS 485 연결 장치</p></td><td><p>1. Door가 Unlock 상태를 유지해야한다.<br/>&gt; Main UI 상 시간 위 상단에 개방 자물쇠 아이콘 표시<br/>2. Unlock 로그만 발생한다.<br/>&gt; Manual Unlock시 Door Status Type이 Operator Unlock 으로 표시되어야 한다.<br/>3. 로그 확인<br/>&gt; log 내용<br/>Biostar : Door unlock request by operator<br/>Device : Door unlock request<br/>Relay : Door unlocked<br/>4. Door가 Lock 상태를 유지해야한다.<br/>&gt; Main UI 상 시간 위 상단에 잠금 자물쇠 아이콘 표시<br/>5. Lock 로그만 발생한다.<br/>&gt; Manual Lock시 Door Status Type이 Operator Lock으로 표시되어야 한다.<br/>&gt; log 내용<br/>Biostar : Door lock request by operator<br/>Device : Door lock request<br/>Relay : Door locked</p>\n\n<ul>\n<li>\n<ul>\n<li>\n<ul>\n<li>추후 로그 수정 예정</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</td></tr><tr><td>12</td><td><p>1. Door&gt; Add Door&gt; Door 생성<br/>2. Door&gt; Manual Unlock&gt; Door 상태 확인(Unlock)<br/>3. Master Reboot<br/>4. Door Status 확인 및 인증 후 동작 확인</p></td><td><p>Door 생성 - Relay(Master)<br/>&gt; 단일장치<br/>&gt; RS 485 연결 장치</p></td><td><p>1. Door가 Unlock 상태를 유지해야한다.<br/>2. Unlock 로그만 발생한다.<br/>&gt; 경광등 연결하여 Relay On 동작 확인<br/>3. Timed의 경우 reboot 시에 door normal 상태로 변경된다.<br/>※BS3 v1.4.0 릴리즈 이후 변경 예정</p></td></tr><tr><td>13</td><td><p>1. Door&gt; Add Door&gt; Door 생성<br/>2. Door&gt; Manual Unlock&gt; Door 상태 확인(Unlock)<br/>3. Slave Reboot<br/>4. Door Status 확인 및 인증 후 동작 확인</p></td><td><p>Door 생성 - Relay(Slave)<br/>&gt; 단일장치<br/>&gt; RS 485 연결 장치</p></td><td><p>1. Door가 Unlock 상태를 유지해야한다.<br/>2. Unlock 로그만 발생한다.<br/>&gt; 경광등 연결하여 Relay On 동작 확인<br/>3. Timed의 경우 reboot 시에 door normal 상태로 변경된다.<br/>※BS3 v1.4.0 릴리즈 이후 변경 예정</p></td></tr><tr><td>14</td><td><p>1. Door&gt; Add Door&gt; Door 생성<br/>2. Door에 미포함된 Master 장치 Main UI 확인</p></td><td><p>Entry/Exit Device<br/>&gt; Slave</p>\n\n<p>Relay<br/>&gt; IO Device<br/>&gt; Slave Device</p></td><td><p>1. 장치 출입문 제어 기능 동작 안한다.<br/>&gt; 출입문 제어 기능 이전 버전과 동일하게 동작</p></td></tr><tr><td>15</td><td><p>1. Door&gt; Add Door&gt; Door 생성<br/>2. Door&gt; Manual Unlock&gt; Door 상태 확인(Unlock)<br/>3. Slave Power Off<br/>4. Door&gt; Manual Unlock&gt; Door 상태 확인(Unlock)<br/>5. Slave Power On <br/>6. Door Status 확인 및 인증 후 동작 확인</p></td><td><p>Door 생성 - Relay(Slave)<br/>&gt; 단일장치<br/>&gt; RS 485 연결 장치</p></td><td><p>1. Door가 Unlock 상태를 유지해야한다.<br/>2. Unlock 로그만 발생한다.<br/>&gt; 경광등 연결하여 Relay On 동작 확인<br/>3. Door가 Unlock 상태 및 Unlock 로그 발생한다.<br/>&gt; 경광등 연결하여 Relay  Off 동작 확인<br/>4. Disconnected된 장치가 연결된 경우, Relay가 동작되어야 한다.<br/>&gt; 경광등 연결하여 Relay On 동작 확인<br/>&gt; Door Unlock 상태 유지</p></td></tr><tr><td>16</td><td><p><span class=\"error\">&#91;Biostar에서 진입&#93;</span><br/>1. Door&gt; Add Door&gt; Door 생성<br/>&gt; Door에 속한 장치의 Master 장치 Main UI 확인<br/>2. Biostar &gt; Device &gt; Restore to default: Without Network 실행<br/>3. 출입문 제어 표시 유무 확인</p></td><td><p>Master 장치의 네트워크 설정 변경<br/>&gt; DHCP/통신모드/Baudrate/RS485 Key</p>\n\n<p>1) Master/Slave 장치가 Door/Zone에 속한 경우</p></td><td><p>1. (Door/Zone 설정에 의해) 에러팝업이 발생된다.<br/>2. 출입문 제어 표시 유지된다.</p></td></tr><tr><td>17</td><td><p><span class=\"error\">&#91;장치에서 진입&#93;</span><br/>1. Door&gt; Add Door&gt; Door 생성<br/>&gt; Door에 속한 장치의 Master 장치 Main UI 확인<br/>2. Master 장치&gt; 상세정보창 진입<br/>3. Restore to default: Without Network  실행<br/>4. 출입문 제어 표시 유무 확인</p></td><td><p>Master 장치의 네트워크 설정 변경<br/>&gt; DHCP/통신모드/Baudrate/RS485 Key</p>\n\n<p>1) Master/Slave 장치가 Door/Zone에 속한 경우</p></td><td><p>1. Master 장치의 Config 초기화 후 재부팅이 발생한다.<br/>2. 출입문 제어가 미표시 된다.</p></td></tr><tr><td>18</td><td><p>1. Door&gt; Add Door&gt; Door 생성<br/>&gt; Door에 속한 장치의 Master 장치 Main UI 확인<br/>2. Master 장치&gt; 상세정보창 진입<br/>3. Restore to default: ResetAll  실행<br/>4. 출입문 제어 표시 유무 확인</p></td><td><p>Master 장치의 네트워크 설정 변경<br/>&gt; DHCP/통신모드/Baudrate/RS485 Key</p>\n\n<p>1) Master/Slave 장치가 Door/Zone에 속한 경우</p></td><td><p>1. Biostar에서 초기화 진행 시에 (Door/Zone 설정에 의해) 에러팝업이 발생된다.<br/>2. Master 장치에서 초기화 진행 시에 Config 초기화 후 재부팅되어 출입문 제어가 미표시된다.</p></td></tr><tr><td>19</td><td><p>1. Door&gt; Add Door&gt; Door 생성<br/>&gt; Door에 속한 장치의 Master 장치 Main UI 확인<br/>2. Master 장치&gt; 상세정보창 진입<br/>3. Restore to default: Factory Default 실행<br/>4. 출입문 제어 표시 유무 확인</p></td><td><p>BioStar<br/>&gt; Secure Communication with Devcie : Use<br/>&gt; Server&amp;Device encryption key manual management: Use<br/>Master 장치의 네트워크 설정 변경<br/>&gt; DHCP/통신모드/Baudrate/RS485 Key</p>\n\n<p>1) Master/Slave 장치가 Door/Zone에 속한 경우</p></td><td><p>1. Master 장치가 공장 초기화 후 재부팅이 발생한다.<br/>2. 출입문 제어가 미표시 된다.</p></td></tr><tr><td>20</td><td><p>1. Door&gt; Add Door&gt; Door 생성<br/>2. Door에 속한 장치의 Master 장치 Main UI 확인<br/>3. Door&gt; Manual Unlock/Lock 설정 &gt; 동작 확인</p></td><td><p>Door 생성 - Relay(Master/Slave)<br/>&gt; Disable Device</p></td><td><p>1. Door Control on Device가 동작 하지 않는다. <br/>&gt; UI Lock 상태로 해제 전까지 Menu 진입 및 Alarm Zone에서의 Input(Device Lock 장치 Input)에 의한 동작만 가능</p></td></tr><tr><td>21</td><td><p>1. 설정&gt; 시스템 보안&gt; 장치와 보안통신: 미사용/사용설정<br/>2. 장치 해시키 수동 관리: 미사용/사용 설정 <br/>3. Door&gt; Add Door&gt; Door 생성<br/>4. Tamper 발생&gt;  장치동작 확인</p></td><td><p>LCD 지원 장치<br/>Secure Tamper On <br/>&gt; Master 장치</p></td><td><p>1. Secure Tamper 발생 후 출입문 제어가 표시 된다.<br/>&gt; Door관련 Config는 유지 하기 때문에.</p></td></tr><tr><td>22</td><td><p>1. Door&gt; Add Door&gt; Door 생성<br/>2. Door에 속한 장치의 Master 장치 Main UI 확인</p></td><td><p>LCD 미지원 장치</p>\n\n<p>&gt; Master로 구성된 Door<br/>&gt; Relay - Slave /  Master</p></td><td><p>1. 장치 출입문 제어 기능 동작 안한다.<br/>&gt; 출입문 제어 기능 이전 버전과 동일하게 동작</p></td></tr><tr><td>23</td><td><p>1. Door&gt; Add Door&gt; Door 생성 <br/>2. Door &gt; Add Door &gt; Dual Authentication &gt; Device : Entry Device 설정 &gt; Apply<br/>3. Door에 속한 장치의 Master 장치 Main UI 확인<br/>4.Door &gt; Add Door &gt; Dual Authentication &gt; Device : Exit Device 설정 &gt; Apply<br/>5. Door에 속한 장치의 Master 장치 Main UI 확인\"</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>1. Dual Authentication - Device<br/>&gt; Entry Device Only<br/>&gt; Exit Device Only<br/>&gt; Both</p></td><td><p>1. Master 장치 Main UI와 인증 화면에 출입문 제어 아이콘 표시된다.<br/>2. 첫번째 인증 시 출입문 제어 표시 확인 후 두번째 인증 요청 전 출입문 제어 시 기존 인증은 무시하고, 출입 인증으로 전환된다.<br/><span class=\"error\">&#91;&gt; 추후 개발 시 사양 확정 예정(두번째는 미표시 할 지 …)&#93;</span><br/><span class=\"error\">&#91;&gt; Arm 진입 시에도 확인 필요&#93;</span></p></td></tr><tr><td>24</td><td><p><span class=\"error\">&#91;Lock Override&#93;</span><br/>1. Door &gt; Add Door &gt; Door 생성<br/>2. Device &gt; Door Control &gt; Manual Lock<br/>3. Lock Override Card로 인증<br/>4. Door에서 BS3 Device 제외 후 BS3 UI 확인</p></td><td></td><td><p>3. Lock Override Card 인증 시에 자몰쇠 아이콘 및 Relay Unlock으로 표시<br/>4. BS3 Main UI에 Door icon &amp; 자물쇠 Unlock Icon  미출력</p></td></tr><tr><td>25</td><td><p>1. Door Control icon 클릭하여 Door Control 인증 화면으로 진입<br/>2. Admin 사용자에 등록된 Card, Visual Face 동시 인증</p></td><td><p>1. Dual Authentication 미설정<br/>2. Dual Authentication 설정</p></td><td><p>Door Control 메뉴 화면 진입되며 해당 화면에서 인증 시도 시에 무반응으로 동작</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [],
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 69671,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 34775,
+              "latestFinalId": 34775
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "[BSX지원기능][BDP-954] Door control on device",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 19493,
+          "index": 1,
+          "step": "[출입문 리더 -  Master포함]\n1. Door > Add Door > Entry Device 설정\n2. Door에 속한 장치의 Master 장치 Main UI 확인",
+          "data": "[BioStar]\n1. Master or Slave",
+          "result": "1. Entry Device가 설정된다.\n2. Master 장치 Main UI에 출입문 제어 아이콘 표시된다.",
+          "attachments": []
+        },
+        {
+          "id": 19494,
+          "index": 2,
+          "step": "[출입문 리더 - Master포함]\n1. Door > Add Door > Exit Device 설정\n2. Door에 속한 장치의 Master 장치 Main UI 확인",
+          "data": "[BioStar]\n1. Master or Slave",
+          "result": "1. Exit Device가 설정된다.\n2. Master 장치 Main UI에 출입문 제어 아이콘 표시된다.",
+          "attachments": []
+        },
+        {
+          "id": 19495,
+          "index": 3,
+          "step": "[출입문 리더 미포함]\n1. Door > Add Door > Door 생성\n2. 각 Reader에 인증시도",
+          "data": "[BioStar]\nSlave Only(SIO2, DM20 포함)\n\nOM-120, IM-120 Relay 사용 가능\n> Floor 중복 안 된 경우",
+          "result": "1.Master 장치 Main UI에 출입문 제어 아이콘 미표시된다. \n2.출입권한을 가진 사용자가 인증하면 설정된 출입문 Relay가 열리고,'출입문 잠금장치 개방간격'이 경과한 후에 Relay가 닫힌다.\n> Unlock Option 확인 필요\n3. 출입문 열림/닫힘 로그가 저장된다.\n> Door unlocked, Door locked\n4. 출입문 제어 설정과 별개로 동작 한다4",
+          "attachments": []
+        },
+        {
+          "id": 19496,
+          "index": 4,
+          "step": "[출입문 리더 - Master포함]\n1. Door > Add Door > Door 생성\n2. 각 Reader에 인증시도",
+          "data": "[BioStar]\n1. Master\n2. Slave(SIO2, DM20 포함)\n\nOM-120, IM-120 Relay 사용 가능\n> Floor 중복 안 된 경우",
+          "result": "1. Master 장치 Main UI에 출입문 제어 아이콘 표시된다.\n2. 출입권한을 가진 사용자가 인증하면 설정된 출입문 Relay가 열리고,'출입문 잠금장치 개방간격'이 경과한 후에 Relay가 닫힌다.\n> Unlock Option 확인 필요\n3. 출입문 열림/닫힘 로그가 저장된다.\n> Door unlocked, Door locked\n4. 출입문 제어 설정과 별개로 동작 한다.",
+          "attachments": []
+        },
+        {
+          "id": 19497,
+          "index": 5,
+          "step": "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인",
+          "data": "LCD 지원 장치\n1. Master Password 설정되지 않은 상태\n2-1. 전체 관리자가 설정된 상태\n2-2. 장치 설정 관리자만 설정된 상태\n2-3. 사용자 관리자만 설정된 상태",
+          "result": "1. Master 장치 Main UI에 출입문 제어 아이콘이 표시 된다.\n> Admin Menu 진입과 동일하게 동작하여, 사용자 권한을 제외한 모든 권한의 사용자가 인증 없이 출입문 제어 기능을 사용할 수 있다.(확인 필요)\n> 전체/ 장치 권한 관리자로 인증 후 진입하여 출입문 제어 기능 사용 및 정상적으로 기능 동작을 해야 한다.\n> 사용자 권한은 인증 시 \"Permission Denied\" 오류 메시지 발생하고, 진입이 안된다.\n> Master Password 기능 미지원 시 일반 사용자로 출입문 제어가 가능해야 한다.\n\n*** 추후 사양 확인 필요",
+          "attachments": []
+        },
+        {
+          "id": 19498,
+          "index": 6,
+          "step": "1. Door에 속한 장치의 Master 장치 Door Control 진입\n2. Unlock, Lock, Normalize(Release) 설정\n3. 적용 후 재진입하여 설정값 확인(Timed)",
+          "data": "LCD 지원 장치\n\n> Master로 구성된 Door\n> Relay - Slave /  Master",
+          "result": "1. 전체/장치 권한의 사용자 인증 후 출입문 제어 진입이 가능하다.\n2. 진입 후 Unlock, Lock, Normalize(Release) 출입문 제어가 가능하다.\n3. 재진입 시 이전에 설정한 값을 확인 할 수 없다.\n",
+          "attachments": []
+        },
+        {
+          "id": 19499,
+          "index": 7,
+          "step": "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인\n3. Door> Manual Unlock 설정 > 동작 확인",
+          "data": "LCD 지원 장치\nManual Unlock",
+          "result": "1. 장치 출입문 제어 Unlock 설정에 따라 동작이 된다.\n> Permanent - Normalize(Release) 전까지 Unlock 유지\n> Timed(범위 1 ~ 86,400) - 입력한 시간까지 Unlock 유지 및 시간 이후 초기화 된다.\n2. Door가 Unlock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 개방 자물쇠 아이콘 표시\n> 유효성 체크 (공백 및 . 입력되는지 확인)\n3. Unlock 로그만 발생한다.\n> log 내용\nBiostar : Door unlock request by operator\nDevice : Door unlock request\nRelay : Door unlocked\nDevice Message : Successfully Unlocked",
+          "attachments": []
+        },
+        {
+          "id": 19500,
+          "index": 8,
+          "step": "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인\n3. Door> Manual Lock 설정 > 동작 확인",
+          "data": "LCD 지원 장치\nManual Lock",
+          "result": "1. 장치 출입문 제어 Lock 설정에 따라 동작이 된다.\n> Permanent - Normalize(Release) 전까지 Lock 유지\n> Timed(범위 1 ~ 86,400) - 입력한 시간까지 Lock 유지 및 시간 이후 초기화 된다.\n> 유효성 체크 (공백 및 . 입력되는지 확인)\n2. Door가 Lock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 잠금 자물쇠 아이콘 표시\n3. Lock 로그만 발생한다.\n> log 내용\nBiostar : Door lock request by operator\nDevice : Door lock request\nRelay : Door locked\nDevice Message : Successfully locked",
+          "attachments": []
+        },
+        {
+          "id": 19501,
+          "index": 9,
+          "step": "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인\n3. Door> Normalize(Release) 동작 확인",
+          "data": "LCD 지원 장치\nManual Unlock / Lock 실행 상태",
+          "result": "1. Manual Unlock 시 Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> log 내용\nBiostar : Door unlock request by operator\nDevice : Door unlock request\nRelay : Door unlocked\nDevice Message : Successfully Unlocked\n3. Manual Lock 시 Door가 Lock 상태를 유지해야한다.\n> log 내용\nBiostar : Door lock request by operator\nDevice : Door lock request\nRelay : Door locked\nDevice Message : Successfully locked\n4. Normalize 시 Door가 Lock 상태를 유지해야 한다.\n> log 내용\nBiostar : Door release request by operator\nDevice : Door release request\nDevice Msg : Successfully Normalized\nRelay : Door unlocked/locked\n> Main UI 상 시간 위 상단에 잠금 자물쇠 아이콘 표시",
+          "attachments": []
+        },
+        {
+          "id": 19502,
+          "index": 10,
+          "step": "[BioStar Monitoring - Door Status]\n1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Unlock 버튼 클릭> Master Main UI 확인\n3. Monitoring> Door Status> Manual Lock 버튼 클릭> Master Main UI 확인",
+          "data": "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치",
+          "result": "1. Door가 Unlock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 개방 자물쇠 아이콘 표시\n2. Unlock 로그만 발생한다.\n> Manual Unlock시 Door Status Type이 Operator Unlock 으로 표시되어야 한다.\n3. 로그 확인\n> log 내용\nBiostar : Door unlock request by operator\nDevice : Door unlock request\nRelay : Door unlocked\n4. Door가 Lock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 잠금 자물쇠 아이콘 표시\n5. Lock 로그만 발생한다.\n> Manual Lock시 Door Status Type이 Operator Lock으로 표시되어야 한다.\n> log 내용\nBiostar : Door lock request by operator\nDevice : Door lock request\nRelay : Door locked\n\n*** 추후 로그 수정 예정",
+          "attachments": []
+        },
+        {
+          "id": 19503,
+          "index": 11,
+          "step": "[BioStar Monitoring - Door Status]\n1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Unlock 버튼 클릭> Master Main UI 확인\n3. Monitoring> Door Status> Manual Lock 버튼 클릭> Master Main UI 확인",
+          "data": "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
+          "result": "1. Door가 Unlock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 개방 자물쇠 아이콘 표시\n2. Unlock 로그만 발생한다.\n> Manual Unlock시 Door Status Type이 Operator Unlock 으로 표시되어야 한다.\n3. 로그 확인\n> log 내용\nBiostar : Door unlock request by operator\nDevice : Door unlock request\nRelay : Door unlocked\n4. Door가 Lock 상태를 유지해야한다.\n> Main UI 상 시간 위 상단에 잠금 자물쇠 아이콘 표시\n5. Lock 로그만 발생한다.\n> Manual Lock시 Door Status Type이 Operator Lock으로 표시되어야 한다.\n> log 내용\nBiostar : Door lock request by operator\nDevice : Door lock request\nRelay : Door locked\n\n*** 추후 로그 수정 예정",
+          "attachments": []
+        },
+        {
+          "id": 19504,
+          "index": 12,
+          "step": "1. Door> Add Door> Door 생성\n2. Door> Manual Unlock> Door 상태 확인(Unlock)\n3. Master Reboot\n4. Door Status 확인 및 인증 후 동작 확인",
+          "data": "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치",
+          "result": "1. Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n3. Timed의 경우 reboot 시에 door normal 상태로 변경된다.\n※BS3 v1.4.0 릴리즈 이후 변경 예정",
+          "attachments": []
+        },
+        {
+          "id": 19505,
+          "index": 13,
+          "step": "1. Door> Add Door> Door 생성\n2. Door> Manual Unlock> Door 상태 확인(Unlock)\n3. Slave Reboot\n4. Door Status 확인 및 인증 후 동작 확인",
+          "data": "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
+          "result": "1. Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n3. Timed의 경우 reboot 시에 door normal 상태로 변경된다.\n※BS3 v1.4.0 릴리즈 이후 변경 예정",
+          "attachments": []
+        },
+        {
+          "id": 19506,
+          "index": 14,
+          "step": "1. Door> Add Door> Door 생성\n2. Door에 미포함된 Master 장치 Main UI 확인",
+          "data": "Entry/Exit Device\n> Slave\n\nRelay\n> IO Device\n> Slave Device",
+          "result": "1. 장치 출입문 제어 기능 동작 안한다.\n> 출입문 제어 기능 이전 버전과 동일하게 동작",
+          "attachments": []
+        },
+        {
+          "id": 19507,
+          "index": 15,
+          "step": "1. Door> Add Door> Door 생성\n2. Door> Manual Unlock> Door 상태 확인(Unlock)\n3. Slave Power Off\n4. Door> Manual Unlock> Door 상태 확인(Unlock)\n5. Slave Power On \n6. Door Status 확인 및 인증 후 동작 확인",
+          "data": "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
+          "result": "1. Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n3. Door가 Unlock 상태 및 Unlock 로그 발생한다.\n> 경광등 연결하여 Relay  Off 동작 확인\n4. Disconnected된 장치가 연결된 경우, Relay가 동작되어야 한다.\n> 경광등 연결하여 Relay On 동작 확인\n> Door Unlock 상태 유지",
+          "attachments": []
+        },
+        {
+          "id": 19508,
+          "index": 16,
+          "step": "[Biostar에서 진입]\n1. Door> Add Door> Door 생성\n> Door에 속한 장치의 Master 장치 Main UI 확인\n2. Biostar > Device > Restore to default: Without Network 실행\n3. 출입문 제어 표시 유무 확인",
+          "data": "Master 장치의 네트워크 설정 변경\n> DHCP/통신모드/Baudrate/RS485 Key\n\n1) Master/Slave 장치가 Door/Zone에 속한 경우",
+          "result": "1. (Door/Zone 설정에 의해) 에러팝업이 발생된다.\n2. 출입문 제어 표시 유지된다.",
+          "attachments": []
+        },
+        {
+          "id": 19509,
+          "index": 17,
+          "step": "[장치에서 진입]\n1. Door> Add Door> Door 생성\n> Door에 속한 장치의 Master 장치 Main UI 확인\n2. Master 장치> 상세정보창 진입\n3. Restore to default: Without Network  실행\n4. 출입문 제어 표시 유무 확인",
+          "data": "Master 장치의 네트워크 설정 변경\n> DHCP/통신모드/Baudrate/RS485 Key\n\n1) Master/Slave 장치가 Door/Zone에 속한 경우",
+          "result": "1. Master 장치의 Config 초기화 후 재부팅이 발생한다.\n2. 출입문 제어가 미표시 된다.",
+          "attachments": []
+        },
+        {
+          "id": 19510,
+          "index": 18,
+          "step": "1. Door> Add Door> Door 생성\n> Door에 속한 장치의 Master 장치 Main UI 확인\n2. Master 장치> 상세정보창 진입\n3. Restore to default: ResetAll  실행\n4. 출입문 제어 표시 유무 확인",
+          "data": "Master 장치의 네트워크 설정 변경\n> DHCP/통신모드/Baudrate/RS485 Key\n\n1) Master/Slave 장치가 Door/Zone에 속한 경우",
+          "result": "1. Biostar에서 초기화 진행 시에 (Door/Zone 설정에 의해) 에러팝업이 발생된다.\n2. Master 장치에서 초기화 진행 시에 Config 초기화 후 재부팅되어 출입문 제어가 미표시된다.",
+          "attachments": []
+        },
+        {
+          "id": 19511,
+          "index": 19,
+          "step": "1. Door> Add Door> Door 생성\n> Door에 속한 장치의 Master 장치 Main UI 확인\n2. Master 장치> 상세정보창 진입\n3. Restore to default: Factory Default 실행\n4. 출입문 제어 표시 유무 확인",
+          "data": "BioStar\n> Secure Communication with Devcie : Use\n> Server&Device encryption key manual management: Use\nMaster 장치의 네트워크 설정 변경\n> DHCP/통신모드/Baudrate/RS485 Key\n\n1) Master/Slave 장치가 Door/Zone에 속한 경우",
+          "result": "1. Master 장치가 공장 초기화 후 재부팅이 발생한다.\n2. 출입문 제어가 미표시 된다.",
+          "attachments": []
+        },
+        {
+          "id": 19512,
+          "index": 20,
+          "step": "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인\n3. Door> Manual Unlock/Lock 설정 > 동작 확인",
+          "data": "Door 생성 - Relay(Master/Slave)\n> Disable Device",
+          "result": "1. Door Control on Device가 동작 하지 않는다. \n> UI Lock 상태로 해제 전까지 Menu 진입 및 Alarm Zone에서의 Input(Device Lock 장치 Input)에 의한 동작만 가능",
+          "attachments": []
+        },
+        {
+          "id": 19513,
+          "index": 21,
+          "step": "1. 설정> 시스템 보안> 장치와 보안통신: 미사용/사용설정\n2. 장치 해시키 수동 관리: 미사용/사용 설정 \n3. Door> Add Door> Door 생성\n4. Tamper 발생>  장치동작 확인",
+          "data": "LCD 지원 장치\nSecure Tamper On \n> Master 장치",
+          "result": "1. Secure Tamper 발생 후 출입문 제어가 표시 된다.\n> Door관련 Config는 유지 하기 때문에.",
+          "attachments": []
+        },
+        {
+          "id": 19515,
+          "index": 22,
+          "step": "1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인",
+          "data": "LCD 미지원 장치\n\n> Master로 구성된 Door\n> Relay - Slave /  Master",
+          "result": "1. 장치 출입문 제어 기능 동작 안한다.\n> 출입문 제어 기능 이전 버전과 동일하게 동작",
+          "attachments": []
+        },
+        {
+          "id": 19518,
+          "index": 23,
+          "step": "1. Door> Add Door> Door 생성 \n2. Door > Add Door > Dual Authentication > Device : Entry Device 설정 > Apply\n3. Door에 속한 장치의 Master 장치 Main UI 확인\n4.Door > Add Door > Dual Authentication > Device : Exit Device 설정 > Apply\n5. Door에 속한 장치의 Master 장치 Main UI 확인\"\n",
+          "data": "[BioStar]\n1. Dual Authentication - Device\n> Entry Device Only\n> Exit Device Only\n> Both",
+          "result": "1. Master 장치 Main UI와 인증 화면에 출입문 제어 아이콘 표시된다.\n2. 첫번째 인증 시 출입문 제어 표시 확인 후 두번째 인증 요청 전 출입문 제어 시 기존 인증은 무시하고, 출입 인증으로 전환된다.\n[> 추후 개발 시 사양 확정 예정(두번째는 미표시 할 지 …)]\n[> Arm 진입 시에도 확인 필요]",
+          "attachments": []
+        },
+        {
+          "id": 19917,
+          "index": 24,
+          "step": "[Lock Override]\n1. Door > Add Door > Door 생성\n2. Device > Door Control > Manual Lock\n3. Lock Override Card로 인증\n4. Door에서 BS3 Device 제외 후 BS3 UI 확인",
+          "data": "",
+          "result": "3. Lock Override Card 인증 시에 자몰쇠 아이콘 및 Relay Unlock으로 표시\n4. BS3 Main UI에 Door icon & 자물쇠 Unlock Icon  미출력",
+          "attachments": []
+        },
+        {
+          "id": 19922,
+          "index": 25,
+          "step": "1. Door Control icon 클릭하여 Door Control 인증 화면으로 진입\n2. Admin 사용자에 등록된 Card, Visual Face 동시 인증",
+          "data": "1. Dual Authentication 미설정\n2. Dual Authentication 설정",
+          "result": "Door Control 메뉴 화면 진입되며 해당 화면에서 인증 시도 시에 무반응으로 동작",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [],
+      "maxResults": 0,
+      "total": 0,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+      "name": "미할당",
+      "id": "10100"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+      "name": "할 일",
+      "id": "10000",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "할 일"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzzfqf:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2025-02-25T08:55:24.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

@@ -1,118 +1,1997 @@
 {
-  "id": "COMMONR-178",
-  "content": [
-    [
-      1,
-      "1. Monitoring > Lift Status > 수동 잠김",
-      "1. 수동잠김",
-      "1. 해당 Lift에 설정된 층이 비활성화 된다.\n2. 인증성공시 Relay는 동작하지 않는다."
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "17850",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/17850",
+  "key": "COMMONR-178",
+  "fields": {
+    "resolution": null,
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "0.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": null,
+    "customfield_10185": null,
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "32462",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/32462",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "41045",
+          "key": "BLNIIFW-899",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/41045",
+          "fields": {
+            "summary": "[RS 485 통신] BLNIIFW-597 이슈 수정에 의한 485 연결 복구 시 Input 상태 초기화 코드에 의해서 Input 상태가 변경된 것으로 인지하여 Door 오동작",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "26437",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/26437",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "34862",
+          "key": "BLNIIFW-721",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/34862",
+          "fields": {
+            "summary": "[Lift] FireAlarm -> Manual Lock으로 동작 중 FireAlarm 해제 시 동작 오류",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "26439",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/26439",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "34923",
+          "key": "BLNIIFW-727",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/34923",
+          "fields": {
+            "summary": "[Lift] Schedule Unlock Zone -> Manual Lock으로 동작 중 Master Reboot 후 Relay On 동작",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14455",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14455",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19661",
+          "key": "FSTIIFW-118",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19661",
+          "fields": {
+            "summary": "[Lift] OM-120 16개 추가 후 Floor 생성 후 OM-120 미연결 시 FS2 Master가 비정상적으로 재부팅 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13410",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13410",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18268",
+          "key": "BEWIIFWDI-227",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18268",
+          "fields": {
+            "summary": "[Lift] Floor가 다수 설정되어 있는 상태에서 Open Time을 짧게 준 경우(3초) Lift Status의 열림을 동작시 Open Time이 지나더라도 일부 Floor에 대해 닫히지 않는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13592",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13592",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18916",
+          "key": "BEWIIFWDI-258",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18916",
+          "fields": {
+            "summary": "[Floor Status]  Monitoring의 Floor Status에서 Manual Unlock을 설정 후 Elevator의 설정을 다시 전송(동일 설정으로 적용) 하면 Normal로 상태가 변경 되면서 Relay가 일부 남아 있는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13475",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13475",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18367",
+          "key": "BLIIFWI-539",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18367",
+          "fields": {
+            "summary": "[Lift] Floor가 다수 설정되어 있는 상태에서 Open Time을 짧게 준 경우(3, 5초) Lift Status의 열림을 동작시 Open Time이 지나더라도 일부 Floor에 대해 닫히지 않는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13603",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13603",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18929",
+          "key": "BLIIFWI-593",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18929",
+          "fields": {
+            "summary": "[LIFT] Tamper 발생으로 모든 릴레이 활성화된 상태에서 알람해제 시도시 일부 릴레이에 대해 On 상태를 유지하는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13891",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13891",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19170",
+          "key": "BSIIDII-434",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19170",
+          "fields": {
+            "summary": "Elevator Alarm 설정 후 발생시 Relay가 이상하게 발생하는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13894",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13894",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19176",
+          "key": "BSIIDII-437",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19176",
+          "fields": {
+            "summary": "BioStar Monitoring Floor Status에서 Open 시도시 Relay가 미동작하는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13897",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13897",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19209",
+          "key": "ENTRYIIDII-422",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19209",
+          "fields": {
+            "summary": "[LIFT_16개 설정] BioStar Monitoring Floor Status에서 Open 시도시 Relay가 미동작 및 켜지고 꺼질때 까지 시간이 1분 30초 이상되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14442",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14442",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19649",
+          "key": "FSTIIFW-111",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19649",
+          "fields": {
+            "summary": "[Lift] Elevator Floor 192개 생성 후 인증 시 Master가 비정상 재부팅 된 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13479",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13479",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18703",
+          "key": "BEWIIFWDI-242",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18703",
+          "fields": {
+            "summary": "[Lift] W2에 설정한 Floor에 대해서 '모든 층 릴레이 열림'에 대해서는 기능을 확인 할 수 없는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13477",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13477",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18705",
+          "key": "BLIIFWI-573",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18705",
+          "fields": {
+            "summary": "[Lift] W2에 설정한 Floor에 대해서 '모든 층 릴레이 열림'에 대해서는 기능을 확인 할 수 없는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "16289",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/16289",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "21859",
+          "key": "BSIIDII-672",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/21859",
+          "fields": {
+            "summary": "[Floor Status] Operator Unlock 상태에서 Clear Alarm 시 Operator Unlock 상태로 전환 안됨",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "21936",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/21936",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "28114",
+          "key": "BSIIDII-1126",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/28114",
+          "fields": {
+            "summary": "[Tester : 이한희] 엘리베이터 모든 층 릴레이 활성화 이벤트 발생 시 모니터링 로그에 '29448'로 출력됨",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "61758",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/61758",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "70920",
+          "key": "CS20FW-166",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/70920",
+          "fields": {
+            "summary": "CS-20에서 설정한 Elevator를 Fire alarm zone에 global로 설정한 상태에서 alarm 발생시킨 후 Monitoring > Floor status > Clear Alarm으로 Unlock 해제 가능",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14219",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14219",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19410",
+          "key": "ENTRYIIDII-450",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19410",
+          "fields": {
+            "summary": "BioStar Monitoring Floor Status에서 Open/Manual Unlock 시도시 Relay가 일부만 동작하는 현상 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14643",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14643",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19885",
+          "key": "FSTIIFW-190",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19885",
+          "fields": {
+            "summary": "[Floor Status] Operator Unlock 상태에서 Clear Alarm 시 Operator Unlock 상태로 전환 안됨",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19576",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19576",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "22219",
+          "key": "FSTIIFW-447",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/22219",
+          "fields": {
+            "summary": "[LIFT_모든 층 릴레이 활성화 설정] LIFT를 FireAlarm Zone에 구성해 FireAlarm 발생 후 Floor Status에서 Clear Alarm시 Relay Off로 동작하는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19358",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19358",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "23121",
+          "key": "FSTIIFW-558",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/23121",
+          "fields": {
+            "summary": "[LIFT_모든 층 릴레이 활성화 설정] LIFT를 FireAlarm Zone에 구성해 FireAlarm 발생 후 Floor Status에서 Clear Alarm시 Relay Off로 동작하는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "15990",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/15990",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "21344",
+          "key": "TIIDFI-1046",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/21344",
+          "fields": {
+            "summary": "[Floor Status] Operator Unlock 상태에서 Clear Alarm 시 Operator Unlock 상태로 전환 안됨",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "33932",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/33932",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "44262",
+          "key": "ONYXFW-422",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/44262",
+          "fields": {
+            "summary": "엘리베이터 Scheduled unlock zone started/ended event log 문구 출력 오류",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19142",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19142",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "24727",
+          "key": "BLNIIFW-196",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/24727",
+          "fields": {
+            "summary": "BioStar Monitoring Floor Status에서 192개의 Floor에 대해서 Open/Manul Unlock 시도 후 바로 장치에서 인증을 통해 Floor Relay가 Open 되도록 실행 시 BioStar의 Floor Status의  Status와 Relay가 불일치 하는 현상 발생",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      },
+      {
+        "id": "12868",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12868",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17614",
+          "key": "ENTRYIIDII-327",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17614",
+          "fields": {
+            "summary": "[Requirement]Lift(Elevator) Control 기능",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/5",
+              "description": "해결책이 제시되었고 보고자의 확인을 기다리는 중입니다. 지금부터는 이슈를 다시 열거나 이슈를 닫을 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/resolved.png",
+              "name": "해결됨",
+              "id": "5",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12865",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12865",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17618",
+          "key": "BEWIIFWDI-179",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17618",
+          "fields": {
+            "summary": "[Requirement]Lift(Elevator) Control 기능",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12867",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12867",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17617",
+          "key": "BLIIFWI-488",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17617",
+          "fields": {
+            "summary": "[Requirement]Lift(Elevator) Control 기능",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12866",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12866",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17615",
+          "key": "BSIIDII-324",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17615",
+          "fields": {
+            "summary": "[Requirement]Lift(Elevator) Control 기능",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12864",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12864",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17616",
+          "key": "TIIDFI-687",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17616",
+          "fields": {
+            "summary": "[Requirement]Lift(Elevator) Control 기능",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "1. Monitoring > Lift Status > 수동 개방",
-      "1. 수동 개방",
-      "1. 비활성화 되어있는 Lift를 다시 활성화 시킨다.\n2. 인증시도시 접근 가능하다."
+    "assignee": null,
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 12.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EC%A1%B0%EC%9E%84%EC%84%B1",
+      "name": "조임성",
+      "key": "조임성",
+      "emailAddress": "isjo@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607"
+      },
+      "displayName": "조임성",
+      "active": false,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-178/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@2d619d1a[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6680c611[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@5498f5ae[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@34481162[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@1c012b09[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@68bf3581[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@7b9988bd[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@fae45ad[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@1a626e32[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@be043c2[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@3c8bee63[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@41f54772[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": null,
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-178/watchers",
+      "watchCount": 1,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T10:10:21.000+0900",
+    "timeoriginalestimate": null,
+    "description": null,
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. Monitoring &gt; Lift Status &gt; 수동 잠김</p></td><td><p>1. 수동잠김</p></td><td><p>1. 해당 Lift에 설정된 층이 비활성화 된다.<br/>2. 인증성공시 Relay는 동작하지 않는다.</p></td></tr><tr><td>2</td><td><p>1. Monitoring &gt; Lift Status &gt; 수동 개방</p></td><td><p>1. 수동 개방</p></td><td><p>1. 비활성화 되어있는 Lift를 다시 활성화 시킨다.<br/>2. 인증시도시 접근 가능하다.</p></td></tr><tr><td>3</td><td><p>1. Monitoring &gt; Lift Status &gt; 해제</p></td><td><p>1. 해제</p></td><td><p>1. 수동 잠김 또는 수동 개방 상태를 해제할 수 있다.</p></td></tr><tr><td>4</td><td><p>1. Monitoring &gt; Lift Status &gt; 열림</p></td><td><p>1. 열림</p></td><td><p>1. 인증하지 않아도 해당 Lift에 접근 가능하다.<br/>2. 해당 Lift의 Relay 입력 시간동안 Relay가 동작한다.</p></td></tr><tr><td>5</td><td><p>1. Monitoring &gt; Lift Status &gt; 알람 해제</p></td><td><p>1. 알람 해제</p></td><td><p>1. Lift 옵션에서 설정한 알람 Action을 해제할 수 있다.<br/>&gt; 모든 층 릴레이 열림<br/>&gt; 신호출력<br/>2. 알람 해제시, 이전 상태로 복구 된다.<br/>&gt; 예 : 수동 잠김 상태에서 알람이 걸린 후 알람 해제 시도시 수동 잠김 상태로 돌아감.</p></td></tr><tr><td>6</td><td><p>1. Lift의 Alarm을 모든층 릴레이 열림으로 설정<br/>2. FireAlarm Zone을 Lift로 설정<br/>3. FireAlarm 발생<br/>4. Lift Status에서 Clear Alarm 시도</p></td><td></td><td><p>1. FireAlarm으로 Floor가 On된 경우 Floor Status에서 Clear 불가하다.</p></td></tr><tr><td>7</td><td><p><span class=\"error\">&#91;사용자 인증에 의한 시작: 비활성화&#93;</span><br/>1. Schedule Unlock으로 동작중<br/>2. Manual Lock<br/>3. Master Reboot<br/>4. Lift Status&gt; 상태확인 및 동작확인</p></td><td></td><td><p>1. Manual Lock으로 동작된다.<br/>&gt; 로그상 Schedule Unlock, Manual Lock으로 표시<br/>2. Lock 상태를 유지한다.</p></td></tr><tr><td>8</td><td><p><span class=\"error\">&#91;사용자 인증에 의한 시작: 비활성화&#93;</span><br/>1. Schedule Unlock으로 동작중<br/>2. Manual Lock<br/>3. Master Reboot<br/>4. Lift Status&gt; 해제<br/>5. 동작확인</p></td><td></td><td><p>1. Schedule Unlock으로 동작된다.</p></td></tr><tr><td>9</td><td><p><span class=\"error\">&#91;사용자 인증에 의한 시작: 활성화&#93;</span><br/>1. Schedule Unlock으로 동작중<br/>2. Manual Lock<br/>3. Master Reboot<br/>4. Lift Status&gt; 상태확인 및 동작확인</p></td><td></td><td><p>1. Manual Lock으로 동작된다.<br/>&gt; 로그상 Manual Lock으로 표시</p></td></tr><tr><td>10</td><td><p><span class=\"error\">&#91;사용자 인증에 의한 시작: 활성화&#93;</span><br/>1. Schedule Unlock으로 동작중<br/>2. Manual Lock<br/>3. Master Reboot<br/>4. Lift Status&gt; 해제<br/>5. 동작확인</p></td><td></td><td><p>1. Relay Off로 유지된다.<br/>&gt; 로그상 Normal로 표시</p></td></tr><tr><td>11</td><td><p><span class=\"error\">&#91;사용자 인증에 의한 시작: 활성화&#93;</span><br/>1. Schedule Unlock으로 동작중<br/>2. Manual Lock<br/>3. Master Reboot<br/>4. Lift Status&gt; 해제<br/>5. 인증 후 동작확인</p></td><td><p>인증<br/>&gt; Schedule Unlock Zone의 Bypass Group에 속하지 않은 사용자</p></td><td><p>1. Open Time만큼 Relay On되었다가 Relay Off로 동작한다.</p></td></tr><tr><td>12</td><td><p><span class=\"error\">&#91;사용자 인증에 의한 시작: 활성화&#93;</span><br/>1. Schedule Unlock으로 동작중<br/>2. Manual Lock<br/>3. Master Reboot<br/>4. Lift Status&gt; 해제<br/>5. 인증 후 동작확인</p></td><td><p>인증<br/>&gt; Schedule Unlock Zone의 Bypass Group에 속한 사용자</p></td><td><p>1. Unlock을 유지한다.</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [
+      "COMMONR-51"
     ],
-    [
-      3,
-      "1. Monitoring > Lift Status > 해제",
-      "1. 해제",
-      "1. 수동 잠김 또는 수동 개방 상태를 해제할 수 있다."
-    ],
-    [
-      4,
-      "1. Monitoring > Lift Status > 열림",
-      "1. 열림",
-      "1. 인증하지 않아도 해당 Lift에 접근 가능하다.\n2. 해당 Lift의 Relay 입력 시간동안 Relay가 동작한다."
-    ],
-    [
-      5,
-      "1. Monitoring > Lift Status > 알람 해제",
-      "1. 알람 해제",
-      "1. Lift 옵션에서 설정한 알람 Action을 해제할 수 있다.\n> 모든 층 릴레이 열림\n> 신호출력\n2. 알람 해제시, 이전 상태로 복구 된다.\n> 예 : 수동 잠김 상태에서 알람이 걸린 후 알람 해제 시도시 수동 잠김 상태로 돌아감."
-    ],
-    [
-      6,
-      "1. Lift의 Alarm을 모든층 릴레이 열림으로 설정\n2. FireAlarm Zone을 Lift로 설정\n3. FireAlarm 발생\n4. Lift Status에서 Clear Alarm 시도",
-      "",
-      "1. FireAlarm으로 Floor가 On된 경우 Floor Status에서 Clear 불가하다."
-    ],
-    [
-      7,
-      "[사용자 인증에 의한 시작: 비활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 상태확인 및 동작확인",
-      "",
-      "1. Manual Lock으로 동작된다.\n> 로그상 Schedule Unlock, Manual Lock으로 표시\n2. Lock 상태를 유지한다."
-    ],
-    [
-      8,
-      "[사용자 인증에 의한 시작: 비활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 해제\n5. 동작확인",
-      "",
-      "1. Schedule Unlock으로 동작된다."
-    ],
-    [
-      9,
-      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 상태확인 및 동작확인",
-      "",
-      "1. Manual Lock으로 동작된다.\n> 로그상 Manual Lock으로 표시"
-    ],
-    [
-      10,
-      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 해제\n5. 동작확인",
-      "",
-      "1. Relay Off로 유지된다.\n> 로그상 Normal로 표시"
-    ],
-    [
-      11,
-      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 해제\n5. 인증 후 동작확인",
-      "인증\n> Schedule Unlock Zone의 Bypass Group에 속하지 않은 사용자",
-      "1. Open Time만큼 Relay On되었다가 Relay Off로 동작한다."
-    ],
-    [
-      12,
-      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 해제\n5. 인증 후 동작확인",
-      "인증\n> Schedule Unlock Zone의 Bypass Group에 속한 사용자",
-      "1. Unlock을 유지한다."
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-178",
-    "description": "",
-    "test_step": [
-      "1. Monitoring > Lift Status > 수동 잠김",
-      "1. Monitoring > Lift Status > 수동 개방",
-      "1. Monitoring > Lift Status > 해제",
-      "1. Monitoring > Lift Status > 열림",
-      "1. Monitoring > Lift Status > 알람 해제",
-      "1. Lift의 Alarm을 모든층 릴레이 열림으로 설정\n2. FireAlarm Zone을 Lift로 설정\n3. FireAlarm 발생\n4. Lift Status에서 Clear Alarm 시도",
-      "[사용자 인증에 의한 시작: 비활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 상태확인 및 동작확인",
-      "[사용자 인증에 의한 시작: 비활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 해제\n5. 동작확인",
-      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 상태확인 및 동작확인",
-      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 해제\n5. 동작확인",
-      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 해제\n5. 인증 후 동작확인",
-      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 해제\n5. 인증 후 동작확인"
-    ],
-    "data": [
-      "1. 수동잠김",
-      "1. 수동 개방",
-      "1. 해제",
-      "1. 열림",
-      "1. 알람 해제",
-      "인증\n> Schedule Unlock Zone의 Bypass Group에 속하지 않은 사용자",
-      "인증\n> Schedule Unlock Zone의 Bypass Group에 속한 사용자"
-    ],
-    "expected_result": [
-      "1. 해당 Lift에 설정된 층이 비활성화 된다.\n2. 인증성공시 Relay는 동작하지 않는다.",
-      "1. 비활성화 되어있는 Lift를 다시 활성화 시킨다.\n2. 인증시도시 접근 가능하다.",
-      "1. 수동 잠김 또는 수동 개방 상태를 해제할 수 있다.",
-      "1. 인증하지 않아도 해당 Lift에 접근 가능하다.\n2. 해당 Lift의 Relay 입력 시간동안 Relay가 동작한다.",
-      "1. Lift 옵션에서 설정한 알람 Action을 해제할 수 있다.\n> 모든 층 릴레이 열림\n> 신호출력\n2. 알람 해제시, 이전 상태로 복구 된다.\n> 예 : 수동 잠김 상태에서 알람이 걸린 후 알람 해제 시도시 수동 잠김 상태로 돌아감.",
-      "1. FireAlarm으로 Floor가 On된 경우 Floor Status에서 Clear 불가하다.",
-      "1. Manual Lock으로 동작된다.\n> 로그상 Schedule Unlock, Manual Lock으로 표시\n2. Lock 상태를 유지한다.",
-      "1. Schedule Unlock으로 동작된다.",
-      "1. Manual Lock으로 동작된다.\n> 로그상 Manual Lock으로 표시",
-      "1. Relay Off로 유지된다.\n> 로그상 Normal로 표시",
-      "1. Open Time만큼 Relay On되었다가 Relay Off로 동작한다.",
-      "1. Unlock을 유지한다."
-    ]
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 17850,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 34701,
+              "latestFinalId": 34701
+            },
+            {
+              "environment": "ES1",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29837,
+              "latestFinalId": 29837
+            },
+            {
+              "environment": "BioStarV2.9.6.30",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29837,
+              "latestFinalId": 29837
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_170117(UnitTest)",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 5617,
+              "latestFinalId": 5617
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180329",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10298,
+              "latestFinalId": 10298
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_190805_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15199,
+              "latestFinalId": 15199
+            }
+          ]
+        },
+        {
+          "group": "FL_V1.0_190515(PS)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 14112,
+              "latestFinalId": 14112
+            }
+          ]
+        },
+        {
+          "group": "V1.7.1_181204(Hotfix)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12716,
+              "latestFinalId": 12716
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_181210_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12748,
+              "latestFinalId": 12748
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0 170331",
+          "statusResults": [
+            {
+              "latest": 1,
+              "latestFinal": 0,
+              "latestId": 8599,
+              "latestFinalId": 6328
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_181119_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12910,
+              "latestFinalId": 12910
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_190809_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15560,
+              "latestFinalId": 15560
+            }
+          ]
+        },
+        {
+          "group": "V1.8.0_190806_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15371,
+              "latestFinalId": 15371
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180322",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10118,
+              "latestFinalId": 10118
+            }
+          ]
+        },
+        {
+          "group": "V1.7.0_190806_Interaction 7차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15059,
+              "latestFinalId": 15059
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.1.5_5 - 20151016(All)",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 5245,
+              "latestFinalId": 5245
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_190806_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15412,
+              "latestFinalId": 15412
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_20200601_Interaction 12차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 17144,
+              "latestFinalId": 17144
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "Monitoring - Lift Status",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 2875,
+          "index": 1,
+          "step": "1. Monitoring > Lift Status > 수동 잠김",
+          "data": "1. 수동잠김",
+          "result": "1. 해당 Lift에 설정된 층이 비활성화 된다.\n2. 인증성공시 Relay는 동작하지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 2876,
+          "index": 2,
+          "step": "1. Monitoring > Lift Status > 수동 개방",
+          "data": "1. 수동 개방",
+          "result": "1. 비활성화 되어있는 Lift를 다시 활성화 시킨다.\n2. 인증시도시 접근 가능하다.",
+          "attachments": []
+        },
+        {
+          "id": 2877,
+          "index": 3,
+          "step": "1. Monitoring > Lift Status > 해제",
+          "data": "1. 해제",
+          "result": "1. 수동 잠김 또는 수동 개방 상태를 해제할 수 있다.",
+          "attachments": []
+        },
+        {
+          "id": 2878,
+          "index": 4,
+          "step": "1. Monitoring > Lift Status > 열림",
+          "data": "1. 열림",
+          "result": "1. 인증하지 않아도 해당 Lift에 접근 가능하다.\n2. 해당 Lift의 Relay 입력 시간동안 Relay가 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 2879,
+          "index": 5,
+          "step": "1. Monitoring > Lift Status > 알람 해제",
+          "data": "1. 알람 해제",
+          "result": "1. Lift 옵션에서 설정한 알람 Action을 해제할 수 있다.\n> 모든 층 릴레이 열림\n> 신호출력\n2. 알람 해제시, 이전 상태로 복구 된다.\n> 예 : 수동 잠김 상태에서 알람이 걸린 후 알람 해제 시도시 수동 잠김 상태로 돌아감.",
+          "attachments": []
+        },
+        {
+          "id": 13181,
+          "index": 6,
+          "step": "1. Lift의 Alarm을 모든층 릴레이 열림으로 설정\n2. FireAlarm Zone을 Lift로 설정\n3. FireAlarm 발생\n4. Lift Status에서 Clear Alarm 시도",
+          "data": "",
+          "result": "1. FireAlarm으로 Floor가 On된 경우 Floor Status에서 Clear 불가하다.",
+          "attachments": []
+        },
+        {
+          "id": 12119,
+          "index": 7,
+          "step": "[사용자 인증에 의한 시작: 비활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 상태확인 및 동작확인",
+          "data": "",
+          "result": "1. Manual Lock으로 동작된다.\n> 로그상 Schedule Unlock, Manual Lock으로 표시\n2. Lock 상태를 유지한다.",
+          "attachments": []
+        },
+        {
+          "id": 12120,
+          "index": 8,
+          "step": "[사용자 인증에 의한 시작: 비활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 해제\n5. 동작확인",
+          "data": "",
+          "result": "1. Schedule Unlock으로 동작된다.",
+          "attachments": []
+        },
+        {
+          "id": 12121,
+          "index": 9,
+          "step": "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 상태확인 및 동작확인",
+          "data": "",
+          "result": "1. Manual Lock으로 동작된다.\n> 로그상 Manual Lock으로 표시",
+          "attachments": []
+        },
+        {
+          "id": 12122,
+          "index": 10,
+          "step": "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 해제\n5. 동작확인",
+          "data": "",
+          "result": "1. Relay Off로 유지된다.\n> 로그상 Normal로 표시",
+          "attachments": []
+        },
+        {
+          "id": 12123,
+          "index": 11,
+          "step": "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 해제\n5. 인증 후 동작확인",
+          "data": "인증\n> Schedule Unlock Zone의 Bypass Group에 속하지 않은 사용자",
+          "result": "1. Open Time만큼 Relay On되었다가 Relay Off로 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 12124,
+          "index": 12,
+          "step": "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Lift Status> 해제\n5. 인증 후 동작확인",
+          "data": "인증\n> Schedule Unlock Zone의 Bypass Group에 속한 사용자",
+          "result": "1. Unlock을 유지한다.",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [],
+      "maxResults": 0,
+      "total": 0,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+      "name": "Serious (A)",
+      "id": "2"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+      "name": "할 일",
+      "id": "10000",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "할 일"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EC%A1%B0%EC%9E%84%EC%84%B1",
+      "name": "조임성",
+      "key": "조임성",
+      "emailAddress": "isjo@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607"
+      },
+      "displayName": "조임성",
+      "active": false,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzs0m7:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2016-08-11T16:24:49.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

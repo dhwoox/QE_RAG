@@ -1,192 +1,2174 @@
 {
-  "id": "COMMONR-56",
-  "content": [
-    [
-      1,
-      "1. Zone> Add Zone> Scheduled Lock Zone\n2. Active/Inactive 설정 > Zone 생성\n3. 장치에서 인증 시도",
-      "Active/Inactive\n> Active\n> Inactive",
-      "> Active 설정으로 생성한 Zone인 경우 Scheduled Lock으로 동작해야 한다.\n: Scheduled Lock 의 설정에 의해 인증 성공/실패 발생한다.\n> Inactive 설정으로 생성한 Zone인 경우 Scheduled Lock이 동작하지 않아야 한다.\n: Normal상태로 동작"
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "12516",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/12516",
+  "key": "COMMONR-56",
+  "fields": {
+    "resolution": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/resolution/11100",
+      "id": "11100",
+      "description": "이 이슈에 대한 작업이 완료되었습니다.",
+      "name": "완료"
+    },
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "10.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": null,
+    "customfield_10185": null,
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "48194",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/48194",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "57907",
+          "key": "DFW-989",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/57907",
+          "fields": {
+            "summary": "Scheduled Lock Zone 생성 후 Bypass Group에 속하지 않은 사용자로 인증 시 인증 성공 팝업 뜨는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "26565",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/26565",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "35075",
+          "key": "CSTFW-666",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/35075",
+          "fields": {
+            "summary": "[Zone] Alarm 설정시 Output과 Release Alarm을 함께 설정하게 되면 APB 위반시 Output에 대해 동작하지 않는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12370",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12370",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16908",
+          "key": "BEWIIFWDI-156",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16908",
+          "fields": {
+            "summary": "[Scheduled Lock Zone] 인증을 통해 Release All Alarm 시 설정한 알람대로 동작 후, Master 장치 Reboot",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13638",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13638",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18930",
+          "key": "BEWIIFWDI-262",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18930",
+          "fields": {
+            "summary": "Held/Forced Open Alarm 발생 후 Clear Alarm 시 Signal만 꺼지고, 해당 장치의 Output Relay는 유지 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11375",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11375",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "15061",
+          "key": "BSIIDII-219",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/15061",
+          "fields": {
+            "summary": "Slave 장치에 IODevice가 등록이 안되는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14191",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14191",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19412",
+          "key": "BSIIDII-469",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19412",
+          "fields": {
+            "summary": "Schedule Lock Zone인 상태에서 Fire Alarm을 발생하고 Manual Unlock을  설정한 후 Zone Status에서 Clear Alarm시 Door Relay Off 되는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11412",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11412",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "15093",
+          "key": "TIIDFI-492",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/15093",
+          "fields": {
+            "summary": "[Door Close 상태에서 Schedule Lock Zone 동작중] Monitoring의 Manual Unlock 버튼 누른후 Release하고 Master 재부팅 시 Door Status Type이 Operator Unlock이 표시되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14101",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14101",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19362",
+          "key": "TIIDFI-832",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19362",
+          "fields": {
+            "summary": "[Slave Device] Alarm Output을 Off 없이 On만 동작 하도록 생성 후 Alarm 발생 시 Delay/Count가 지난 뒤에Clear Alarm 시 Alarm으로 설정한 Port가 On을 유지하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14203",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14203",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19418",
+          "key": "TIIDFI-848",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19418",
+          "fields": {
+            "summary": "Schedule Lock Zone 상태에서 Fire Alarm Input 발생으로 Door Relay On 상태에서  Manual Unlock 실행 후 Zone Status에서 Clear Alarm시 Door Relay가 Off 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13676",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13676",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19005",
+          "key": "BEWIIFWDI-276",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19005",
+          "fields": {
+            "summary": "Schedule Lock 상태에서 Alarm 발생도중 Master 장치 재부팅시 일부의 Alarm발생 Port가 ON 상태를 유지하는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11932",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11932",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16008",
+          "key": "BLIIFWI-377",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16008",
+          "fields": {
+            "summary": "Trigger & Action에서 Input으로 Slave 장치에 Output Signal을 발생토록 하였을때, BioStar의 Monitoring Device Status에서 Clear Alarm이 안되는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11385",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11385",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "15079",
+          "key": "ENTRYIIDII-230",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/15079",
+          "fields": {
+            "summary": "Door Open 상태->Lock Schedule 실행->Manual Lock 클릭 후 Door Close시 Door Status에 Schedule Lock으로 표시됨",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14728",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14728",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19983",
+          "key": "FSTIIFW-247",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19983",
+          "fields": {
+            "summary": "[Tester: 곽성희] (1회성) 약 32개의 Scheduled Lock Zone 삭제 중  FST2(M)장치 Reboot되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "21953",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/21953",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "28132",
+          "key": "FSTIIFW-1095",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/28132",
+          "fields": {
+            "summary": "[Schedule Lock Zone] Lock 상태에서 Master Rebooting 시 오동작",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13976",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13976",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19293",
+          "key": "TIIDFI-818",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19293",
+          "fields": {
+            "summary": "Schedule Lock 상태에서 Alarm 발생도중 Master 장치 재부팅시 일부의 Alarm발생 Port가 ON 상태를 유지하는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12334",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12334",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16792",
+          "key": "BSIIDII-278",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16792",
+          "fields": {
+            "summary": "미 등록된 ID로 인증 시 인증 실패 메세지가 표시되지 않는다.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11008",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11008",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "14294",
+          "key": "ENTRYIIDII-117",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/14294",
+          "fields": {
+            "summary": "[Door Open 상태에서 Schedule Lock Zone 동작중] Monitoring의 Open 버튼 누른후 Door Close시 Door Status Type 표시오류",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "24358",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/24358",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "31711",
+          "key": "BLNIIFW-646",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/31711",
+          "fields": {
+            "summary": "[Schedule Lock] Schedule Lock Violation 관련하여 문구가 짤리는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      },
+      {
+        "id": "11146",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11146",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "14758",
+          "key": "BEWIIFWDI-2",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/14758",
+          "fields": {
+            "summary": "[Requirement] 구역 - Scheduled Lock Zone 프로토콜 구현",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10389",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10389",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "12909",
+          "key": "TIIDFI-40",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12909",
+          "fields": {
+            "summary": "[Requirement] 구역 - Scheduled Lock Zone 프로토콜 구현",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10390",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10390",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "12845",
+          "key": "BSIIDII-12",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12845",
+          "fields": {
+            "summary": "[Requirement] Scheduled Lock Zone 프로토콜 구현",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10388",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10388",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "12844",
+          "key": "ENTRYIIDII-16",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12844",
+          "fields": {
+            "summary": "[Requirement] Scheduled Lock Zone 프로토콜 구현",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10797",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10797",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "13875",
+          "key": "BLIIFWI-145",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/13875",
+          "fields": {
+            "summary": "[Requirement] Scheduled Lock Zone 프로토콜 구현",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "<스케줄 생성된 상태>\n1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정 > 스케줄 설정 > Zone 생성\n3. 스케줄에 설정된 시간 > Monitoring\n4. Door Status > Door Status Type 확인\n5. Zone Status > Status 확인\n6. 장치에서 인증 시도",
-      "Door Lock Type\n> Exit Allowed\n> Access Not Allowed",
-      "> Door Status 의 Door Status Type 에 Scheduled Lock 표시한다.\n> Zone Status 의 Status 에 Scheduled Lock 표시한다.\n> 인증 실패 발생한다."
+    "assignee": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 20.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-56/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@d147e5d[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6e40f8e9[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@16c328c3[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@7fad1d42[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@d911ee3[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@6f00eb4f[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@608a435c[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@775a1502[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@72397b0c[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@1a8bbc97[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@28a99c39[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@ffc6e2b[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": "2023-05-18T18:13:26.000+0900",
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-56/watchers",
+      "watchCount": 3,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T10:10:21.000+0900",
+    "timeoriginalestimate": null,
+    "description": "Scheduled Lock Zone과 Scheduled Unlock Zone은 별개의 Zone이다. \r\n\r\nScheduled Lock Zone\r\n: 강제닫힘 스케줄에 설정된 시간에는 문이 강제로 닫히게끔 동작\r\nScheduled Unlock Zone\r\n: 강제열림 스케줄에 설정된 시간에는 문이 강제로 열리게끔 동작\r\n",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. Zone&gt; Add Zone&gt; Scheduled Lock Zone<br/>2. Active/Inactive 설정 &gt; Zone 생성<br/>3. 장치에서 인증 시도</p></td><td><p>Active/Inactive<br/>&gt; Active<br/>&gt; Inactive</p></td><td><p>&gt; Active 설정으로 생성한 Zone인 경우 Scheduled Lock으로 동작해야 한다.<br/>: Scheduled Lock 의 설정에 의해 인증 성공/실패 발생한다.<br/>&gt; Inactive 설정으로 생성한 Zone인 경우 Scheduled Lock이 동작하지 않아야 한다.<br/>: Normal상태로 동작</p></td></tr><tr><td>2</td><td><p>&lt;스케줄 생성된 상태&gt;<br/>1. Scheduled Lock Zone 생성<br/>2. Door Lock Type 설정 &gt; 스케줄 설정 &gt; Zone 생성<br/>3. 스케줄에 설정된 시간 &gt; Monitoring<br/>4. Door Status &gt; Door Status Type 확인<br/>5. Zone Status &gt; Status 확인<br/>6. 장치에서 인증 시도</p></td><td><p>Door Lock Type<br/>&gt; Exit Allowed<br/>&gt; Access Not Allowed</p></td><td><p>&gt; Door Status 의 Door Status Type 에 Scheduled Lock 표시한다.<br/>&gt; Zone Status 의 Status 에 Scheduled Lock 표시한다.<br/>&gt; 인증 실패 발생한다.</p></td></tr><tr><td>3</td><td><p>1. Scheduled Lock Zone 생성<br/>2. Door Lock Type 설정<br/>3. 스케줄 설정 &gt; Zone 생성<br/>4. Entry/Exit 장치에 인증 시도</p></td><td><p>Door Lock Type<br/>&gt; Exit Allowed</p></td><td><p>&gt; 스케줄에 설정된 시간이 되면 Exit Device 는 Locked 되지 않고 Entry Device 만 Locked 된다.<br/>&gt; Entry Device 에 인증시 인증실패 발생한다.<br/>&gt; Exit Device 에 인증시 인증성공 발생한다.</p></td></tr><tr><td>4</td><td><p>1. Scheduled Lock Zone 생성<br/>2. Door Lock Type 설정<br/>3. 스케줄 설정 &gt; Zone 생성<br/>4. Entry/Exit 장치에 인증 시도</p></td><td><p>Door Lock Type<br/>&gt; Access Not Allowed</p></td><td><p>&gt; 스케줄에 설정된 시간이 되면 Entry/Exit Device 모두 Locked 된다.<br/>&gt; Entry/Exit Device 에 인증시 인증실패 발생한다.</p></td></tr><tr><td>5</td><td><p>1. Scheduled Lock Zone 생성<br/>2. Door Lock Type 설정 &gt; 스케줄 설정<br/>3. Bypass Group 설정 &gt; Zone 생성</p></td><td><p>1. Door Lock Type<br/>&gt; Exit Allowed<br/>&gt; Access Not Allowed</p>\n\n<p>2. Bypass Group<br/>&gt; Max : 16</p></td><td><p>&gt; Bypass Group 은 최대 16개를 설정할 수 있어야 한다.<br/>&gt; Schedule Lock Zone 추가에 이상이 없어야 한다.</p></td></tr><tr><td>6</td><td><p>1. Scheduled Lock Zone 생성<br/>2. Door Lock Type : Exit Allowed 설정<br/>3. 스케줄 설정 &gt; Bypass Group : Not Use 설정 &gt; Zone 생성<br/>4. 스케줄에 설정된 시간에 Bypass Group 에 속한 사용자로 Entry/Exit 장치에 인증 시도<br/>*Bypass Group Not Use 는 Access Group 이 하나도 선택되지 않은 상태</p></td><td><p>1. Door Lock Type<br/>&gt; Exit Allowed</p>\n\n<p>2. Bypass Group<br/>&gt; Not Use</p></td><td><p>&gt; 스케줄에 설정된 시간에 Entry Device 에 인증시 인증실패 발생한다.<br/>&gt; 스케줄에 설정된 시간에 Exit Device 에 인증시 인증성공 발생한다.</p></td></tr><tr><td>7</td><td><p>1. Scheduled Lock Zone 생성<br/>2. Door Lock Type 설정<br/>3. 스케줄 설정 &gt; Bypass Group : Access Group 설정 &gt; Zone 생성<br/>4. 스케줄에 설정된 시간에 Bypass Group 에 속한 사용자로 Entry/Exit 장치에 인증 시도</p></td><td><p>1. Door Lock Type<br/>&gt; Exit Allowed</p>\n\n<p>2. Bypass Group<br/>&gt; Access Group</p></td><td><p>Bypass Group 에 속한 사용자로 스케줄에 설정된 시간에 Entry/Exit Device 에 인증시 인증성공 발생한다.</p></td></tr><tr><td>8</td><td><p>1. Scheduled Lock Zone 생성<br/>2. Door Lock Type 설정<br/>3. 스케줄 설정 &gt; Bypass Group 설정 &gt; Zone 생성<br/>4. 스케줄에 설정된 시간에 Bypass Group 에 속한 사용자로 Entry/Exit 장치에 인증 시도</p></td><td><p>1. Door Lock Type<br/>&gt; Access Not Allowed</p>\n\n<p>2. Bypass Group<br/>&gt; Not Use<br/>&gt; Access Group</p></td><td><p>&gt; Not Use 설정된 경우 스케줄에 설정된 시간에 인증시 인증실패 발생한다.<br/>&gt; Access Group 설정된 경우 스케줄에 설정된 시간에 Bypass Group 에 속한 사용자로 인증시 인증성공 발생한다.</p></td></tr><tr><td>9</td><td><p>1. Scheduled Lock Zone 생성<br/>2. Door Lock Type 설정<br/>3. 스케줄 설정 &gt; Bypass Group 설정 &gt; Zone 생성<br/>4. 스케줄에 설정된 시간이 끝날 때의 동작 확인</p></td><td><p>Door Lock Type<br/>&gt; Exit Allowed<br/>&gt; Access Not Allowed</p></td><td><p>스케줄에 설정된 시간이 끝나도 Locked 상태를 유지해야 한다.</p></td></tr><tr><td>10</td><td><p>1. Scheduled Lock Zone 생성<br/>2. Door Lock Type 설정 &gt; 스케줄 설정<br/>3. Alarm 설정 &gt; Bypass Group : Access Group 설정 &gt; Zone 생성<br/>4. 스케줄에 설정된 시간에 Bypass Group 에 속하지 않은 사용자로 Entry/Exit 장치에 인증시도<br/>5. 스케줄에 설정된 시간에 Bypass Group 에 속한 사용자로 Entry/Exit 장치에 인증시도</p></td><td><p>1. Door Lock Type<br/>&gt; Exit Allowed</p>\n\n<p>2. Alarm Action<br/>&gt; Output<br/>&gt; Release All Alarm<br/>&gt; Reboot Device<br/>&gt; Disable Device</p></td><td><p>&gt; Bypass Group 에 속하지 않은 사용자로 Entry Device 인증시 인증실패 발생하며 설정된 Alarm 동작한다.<br/>&gt; Bypass Group 에 속하지 않은 사용자로 Exit Device 인증시 인증성공 발생하고 Unlocked 후 Locked 된다.<br/>&gt; Bypass Group 에 속한 사용자로 Entry/Exit Device 인증시 인증성공 발생하고 Unlocked 후 Locked 된다.</p></td></tr><tr><td>11</td><td><p>1. Scheduled Lock Zone 생성<br/>2. Door Lock Type 설정 &gt; 스케줄 설정<br/>3. Alarm 설정 &gt; Bypass Group : Access Group 설정 &gt; Zone 생성<br/>4. 스케줄에 설정된 시간에 Bypass Group 에 속하지 않은 사용자로 Entry/Exit 장치에 인증시도<br/>5. 스케줄에 설정된 시간에 Bypass Group 에 속한 사용자로 Entry/Exit 장치에 인증시도</p></td><td><p>1. Door Lock Type<br/>&gt; Access Not Allowed</p>\n\n<p>2. Alarm Action<br/>&gt; Output<br/>&gt; Release All Alarm<br/>&gt; Reboot Device<br/>&gt; Disable Device</p></td><td><p>&gt; Bypass Group 에 속하지 않은 사용자로 인증시 인증실패 발생하며 설정된 Alarm 동작한다.<br/>&gt; Bypass Group 에 속한 사용자로 인증시 인증성공 발생하고 Unlocked 후 Locked 된다.</p></td></tr><tr><td>12</td><td><p>1. Scheduled Lock Zone 생성<br/>2. Door Lock Type 설정<br/>3. 현재 시간이 포함된 스케줄 설정 &gt; Zone 생성<br/>4. Master 장치 Reboot 시도</p></td><td><p>Door Lock Type<br/>&gt; Exit Allowed<br/>&gt; Access Not Allowed</p></td><td><p>Master가 Reboot되는 경우에도 Locked 상태를 유지해야 한다.</p></td></tr><tr><td>13</td><td><p>&lt;Scheduled Lock Zone 다수 생성된 상태&gt;<br/>1. Zone &gt; Scheduled Lock<br/>2. 하나 or 다수의 Zone 선택 &gt; 삭제</p></td><td><p>Zone 삭제<br/>&gt; 개별삭제<br/>&gt; 전체삭제</p></td><td><p>Zone에 대해 개별삭제/전체삭제를 할 수 있어야 한다.<br/>&gt; 삭제 시 Monitoring &gt; Door Status &gt; Door Ststus Type : Normal로 상태 변경</p></td></tr><tr><td>14</td><td><p>1. Zone &gt; Scheduled Lock &gt; Zone 선택<br/>2. 정보 편집 &gt; Apply</p></td><td></td><td><p>Zone 정보 변경이 가능해야 한다.</p></td></tr><tr><td>15</td><td><p>1. Scheduled Lock Zone 생성<br/>2. 현재 시간이 포함된 스케줄 설정 &gt; Zone 생성<br/>3. Monitoring&gt; Door Status&gt; Zone 에 포함된 Door 선택<br/>4. Manual Lock/Unlock 버튼 클릭</p></td><td></td><td><p>Zone에서 설정한 Scheduled Lock Zone보다 Monitoring에서의 Unlock/Lock의 우선순위가 높다.</p></td></tr><tr><td>16</td><td><p>&lt;A Door 생성한 상태&gt;<br/>1. Zone&gt; Add Scheduled Unlock Zone&gt; 강제잠금 스케줄- 12:00AM~12:00PM 설정<br/>2. Add Scheduled Lock Zone&gt; 강제열림 스케줄- 12:00PM~12:00AM 설정<br/>3. 경계가 되는 시간일 때 동작확인</p></td><td></td><td><p>11:59:59 PM 까지 Scheduled-Unlocked상태를 유지하다 12:00:00 PM에 Scheduled-Locked 상태로 변경되어야 한다. </p></td></tr><tr><td>17</td><td><p>1. Door&gt; Add Door&gt; Door \"A\" 생성<br/>2. Zone&gt; Add Zone&gt; Scheduled Lock Zone&gt; Door \"A\" 선택&gt; 스케줄 설정&gt; Zone 생성<br/>3. 스케줄에 설정된 시간에 Monitoring 진입<br/>4. Door Status&gt; Door \"A\" 선택&gt; Manual Unlock 버튼 선택<br/>5. Door Status 의 Door Status Type, Door Relay 확인<br/>6. Zone Status 의 Status 확인</p></td><td><p>Door \"A\" 로 구성된 Schedule Lock Zone</p></td><td><p>&gt; Door Status 의 Door Relay 는 Unlocked 로, Door Status Type 은 Schedule Lock,Operator Unlock으로 표시된다.<br/>&gt; Zone Status 의 Status 는 Schedule Lock 으로 표시된다.<br/>&gt; Door의 Status와 Zone의 Status는 별개로 동작 해야 함</p></td></tr><tr><td>18</td><td><p>&lt;스케줄 \"A\"에 휴일군 설정된 상태&gt;<br/>1. Door&gt; Add Door&gt; Door \"A\" 생성<br/>2. Zone&gt; Add Zone&gt; Scheduled Lock Zone&gt; Door \"A\" 선택&gt; 스케줄 \"A\" 선택&gt; Zone 생성<br/>3. 스케줄 \"A\"에 설정한 휴일군일 때 동작확인<br/>4. Master 장치를 Reboot<br/>5. 문열림 상태 확인</p></td><td><p>Schedule<br/>&gt; 휴일군에 Time Slot 미설정<br/>&gt; 휴일군에 Time Slot 설정</p></td><td><p>&gt; 휴일군에 설정한 스케줄대로 동작되어야 한다.<br/>&gt; Lock Zone의 출입문 잠김 상태는 재부팅 후에도 유지되어야 한다.</p></td></tr><tr><td>19</td><td><p>&lt;Door, Scheduled Lock Zone 추가된 상태&gt;<br/>1. Door Status : Open 동작(Door 내 설정한 Exit Button 및 Door Sensor 의 Input 접지)<br/>2. Scheduled Lock Zone 의 스케줄에 의한 Schedule Lock 동작<br/>3. Monitoring &gt; Door Status 내 Manual Lock/Unlock, Release, Open, Clear Alarm 버튼 선택</p></td><td><p>1. 조건<br/>Door Status : Opened 상태<br/>Scheduled Lock Zone 동작 중<br/>2. 동작<br/>Manual Lock, Manual Unlock, Release, Open, Clear Alarm 버튼 입력<br/>버튼 입력 후 Closed 설정(접지 해제)<br/>3. 결과 (각 Case 결과 확인)<br/>Opened 상태에서 버튼 입력 결과<br/>버튼 입력 후 Closed 설정(접지 해제) 결과</p></td><td><p>1. Manual Lock 선택시<br/>1) Manual Lock 버튼 입력 결과 : Success 팝업<br/>: Opened / Normal / Unlocked<br/>2) Manual Lock 버튼 입력 후 Closed 설정(접지 해제) 결과<br/>: Closed / Schedule Lock,Operator Lock / Locked<br/>3) 버튼 입력 없이 Closed 설정(접지 해제) 결과<br/>: Closed / Schedule Lock / Locked(공통)</p>\n\n<p>2. Manual Unlock 선택시<br/>1) Manual Unlock 버튼 입력 결과 : Success 팝업 발생<br/>: Opened / Operator Unlock / Unlocked<br/>2) Manual Unlock 버튼 입력 후 Closed 설정(접지 해제) 결과<br/>: Closed / Schedule Lock, Operator Unlock / Unlocked</p>\n\n<p>3. Release 선택시<br/>1) Release 버튼 입력 결과 : Success 팝업<br/>: Opened / Normal / Unlocked<br/>2) Release 버튼 입력 후 Closed 설정(접지 해제) 결과<br/>: Closed / Schedule Lock / Locked</p>\n\n<p>4. Open 선택시<br/>1) Open 버튼 입력 결과 : Success 팝업<br/>: Opened / Normal / Unlocked<br/>2). Open 버튼 입력 후 Closed 설정(접지 해제) 결과<br/>: Closed / Schedule Lock / Locked</p>\n\n<p>5. Clear Alarm 선택시<br/>1) Clear Alarm 버튼 입력 결과 : Success 팝업<br/>: Opened / Normal / Unlocked<br/>2) Clear Alarm 버튼 입력 후 Closed 설정(접지 해제) 결과<br/>: Closed / Schedule Lock / Locked]</p></td></tr><tr><td>20</td><td><p>1. Scheduled Lock 동작<br/>2. Fire Alarm 동작<br/>3. Manual Lock 동작<br/>4. Manual Unlock 동작</p></td><td><p>우선 순위 확인<br/>&gt; Fire Alarm Zone<br/>&gt; Manual Lock/Unlcok (Monitoring &gt; Door Status)<br/>&gt; Scheduled Lock Zone</p></td><td><p>&gt; 최초 Scheduled Lock 에 의해 Locked 된다.<br/>&gt; Fire Alarm 에 의해 Unlocked 된다. (Fire Alarm 이 Scheduled Lock 보다 우선순위가 높다)<br/>&gt; Manual Lock 발생시 Unlocked 유지된다. (Manual Lock 이 Fire Alarm 보다 우선순위가 낮다)<br/>&gt; Fire Alarm 해제 후 Manual Lock 발생시 Locked 된다. (Manual Lock 이 Scheduled Lock 보다 우선순위가 높다)<br/>&gt; Fire Alarm 해제 후 Manual Unlock 발생시 Unlocked 된다. (Manual Unlock 이 Scheduled Lock 보다 우선순위가 높다)<br/>&gt; Manual Lock/Unlock 해제 후 Scheduled Lock 에 의해 Locked 된다.</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [
+      "COMMONR-47"
     ],
-    [
-      3,
-      "1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정\n3. 스케줄 설정 > Zone 생성\n4. Entry/Exit 장치에 인증 시도",
-      "Door Lock Type\n> Exit Allowed",
-      "> 스케줄에 설정된 시간이 되면 Exit Device 는 Locked 되지 않고 Entry Device 만 Locked 된다.\n> Entry Device 에 인증시 인증실패 발생한다.\n> Exit Device 에 인증시 인증성공 발생한다."
-    ],
-    [
-      4,
-      "1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정\n3. 스케줄 설정 > Zone 생성\n4. Entry/Exit 장치에 인증 시도",
-      "Door Lock Type\n> Access Not Allowed",
-      "> 스케줄에 설정된 시간이 되면 Entry/Exit Device 모두 Locked 된다.\n> Entry/Exit Device 에 인증시 인증실패 발생한다."
-    ],
-    [
-      5,
-      "1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정 > 스케줄 설정\n3. Bypass Group 설정 > Zone 생성",
-      "1. Door Lock Type\n> Exit Allowed\n> Access Not Allowed\n\n2. Bypass Group\n> Max : 16",
-      "> Bypass Group 은 최대 16개를 설정할 수 있어야 한다.\n> Schedule Lock Zone 추가에 이상이 없어야 한다."
-    ],
-    [
-      6,
-      "1. Scheduled Lock Zone 생성\n2. Door Lock Type : Exit Allowed 설정\n3. 스케줄 설정 > Bypass Group : Not Use 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 Bypass Group 에 속한 사용자로 Entry/Exit 장치에 인증 시도\n*Bypass Group Not Use 는 Access Group 이 하나도 선택되지 않은 상태",
-      "1. Door Lock Type\n> Exit Allowed\n\n2. Bypass Group\n> Not Use",
-      "> 스케줄에 설정된 시간에 Entry Device 에 인증시 인증실패 발생한다.\n> 스케줄에 설정된 시간에 Exit Device 에 인증시 인증성공 발생한다.\n"
-    ],
-    [
-      7,
-      "1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정\n3. 스케줄 설정 > Bypass Group : Access Group 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 Bypass Group 에 속한 사용자로 Entry/Exit 장치에 인증 시도",
-      "1. Door Lock Type\n> Exit Allowed\n\n2. Bypass Group\n> Access Group",
-      "Bypass Group 에 속한 사용자로 스케줄에 설정된 시간에 Entry/Exit Device 에 인증시 인증성공 발생한다."
-    ],
-    [
-      8,
-      "1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정\n3. 스케줄 설정 > Bypass Group 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 Bypass Group 에 속한 사용자로 Entry/Exit 장치에 인증 시도",
-      "1. Door Lock Type\n> Access Not Allowed\n\n2. Bypass Group\n> Not Use\n> Access Group",
-      "> Not Use 설정된 경우 스케줄에 설정된 시간에 인증시 인증실패 발생한다.\n> Access Group 설정된 경우 스케줄에 설정된 시간에 Bypass Group 에 속한 사용자로 인증시 인증성공 발생한다."
-    ],
-    [
-      9,
-      "1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정\n3. 스케줄 설정 > Bypass Group 설정 > Zone 생성\n4. 스케줄에 설정된 시간이 끝날 때의 동작 확인",
-      "Door Lock Type\n> Exit Allowed\n> Access Not Allowed",
-      "스케줄에 설정된 시간이 끝나도 Locked 상태를 유지해야 한다."
-    ],
-    [
-      10,
-      "1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정 > 스케줄 설정\n3. Alarm 설정 > Bypass Group : Access Group 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 Bypass Group 에 속하지 않은 사용자로 Entry/Exit 장치에 인증시도\n5. 스케줄에 설정된 시간에 Bypass Group 에 속한 사용자로 Entry/Exit 장치에 인증시도",
-      "1. Door Lock Type\n> Exit Allowed\n\n2. Alarm Action\n> Output\n> Release All Alarm\n> Reboot Device\n> Disable Device",
-      "> Bypass Group 에 속하지 않은 사용자로 Entry Device 인증시 인증실패 발생하며 설정된 Alarm 동작한다.\n> Bypass Group 에 속하지 않은 사용자로 Exit Device 인증시 인증성공 발생하고 Unlocked 후 Locked 된다.\n> Bypass Group 에 속한 사용자로 Entry/Exit Device 인증시 인증성공 발생하고 Unlocked 후 Locked 된다."
-    ],
-    [
-      11,
-      "1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정 > 스케줄 설정\n3. Alarm 설정 > Bypass Group : Access Group 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 Bypass Group 에 속하지 않은 사용자로 Entry/Exit 장치에 인증시도\n5. 스케줄에 설정된 시간에 Bypass Group 에 속한 사용자로 Entry/Exit 장치에 인증시도",
-      "1. Door Lock Type\n> Access Not Allowed\n\n2. Alarm Action\n> Output\n> Release All Alarm\n> Reboot Device\n> Disable Device",
-      "> Bypass Group 에 속하지 않은 사용자로 인증시 인증실패 발생하며 설정된 Alarm 동작한다.\n> Bypass Group 에 속한 사용자로 인증시 인증성공 발생하고 Unlocked 후 Locked 된다."
-    ],
-    [
-      12,
-      "1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정\n3. 현재 시간이 포함된 스케줄 설정 > Zone 생성\n4. Master 장치 Reboot 시도",
-      "Door Lock Type\n> Exit Allowed\n> Access Not Allowed",
-      "Master가 Reboot되는 경우에도 Locked 상태를 유지해야 한다."
-    ],
-    [
-      13,
-      "<Scheduled Lock Zone 다수 생성된 상태>\n1. Zone > Scheduled Lock\n2. 하나 or 다수의 Zone 선택 > 삭제",
-      "Zone 삭제\n> 개별삭제\n> 전체삭제",
-      "Zone에 대해 개별삭제/전체삭제를 할 수 있어야 한다.\n> 삭제 시 Monitoring > Door Status > Door Ststus Type : Normal로 상태 변경"
-    ],
-    [
-      14,
-      "1. Zone > Scheduled Lock > Zone 선택\n2. 정보 편집 > Apply",
-      "",
-      "Zone 정보 변경이 가능해야 한다."
-    ],
-    [
-      15,
-      "1. Scheduled Lock Zone 생성\n2. 현재 시간이 포함된 스케줄 설정 > Zone 생성\n3. Monitoring> Door Status> Zone 에 포함된 Door 선택\n4. Manual Lock/Unlock 버튼 클릭",
-      "",
-      "Zone에서 설정한 Scheduled Lock Zone보다 Monitoring에서의 Unlock/Lock의 우선순위가 높다."
-    ],
-    [
-      16,
-      "<A Door 생성한 상태>\n1. Zone> Add Scheduled Unlock Zone> 강제잠금 스케줄- 12:00AM~12:00PM 설정\n2. Add Scheduled Lock Zone> 강제열림 스케줄- 12:00PM~12:00AM 설정\n3. 경계가 되는 시간일 때 동작확인",
-      "",
-      "11:59:59 PM 까지 Scheduled-Unlocked상태를 유지하다 12:00:00 PM에 Scheduled-Locked 상태로 변경되어야 한다. "
-    ],
-    [
-      17,
-      "1. Door> Add Door> Door \"A\" 생성\n2. Zone> Add Zone> Scheduled Lock Zone> Door \"A\" 선택> 스케줄 설정> Zone 생성\n3. 스케줄에 설정된 시간에 Monitoring 진입\n4. Door Status> Door \"A\" 선택> Manual Unlock 버튼 선택\n5. Door Status 의 Door Status Type, Door Relay 확인\n6. Zone Status 의 Status 확인",
-      "Door \"A\" 로 구성된 Schedule Lock Zone",
-      "> Door Status 의 Door Relay 는 Unlocked 로, Door Status Type 은 Schedule Lock,Operator Unlock으로 표시된다.\n> Zone Status 의 Status 는 Schedule Lock 으로 표시된다.\n> Door의 Status와 Zone의 Status는 별개로 동작 해야 함"
-    ],
-    [
-      18,
-      "<스케줄 \"A\"에 휴일군 설정된 상태>\n1. Door> Add Door> Door \"A\" 생성\n2. Zone> Add Zone> Scheduled Lock Zone> Door \"A\" 선택> 스케줄 \"A\" 선택> Zone 생성\n3. 스케줄 \"A\"에 설정한 휴일군일 때 동작확인\n4. Master 장치를 Reboot\n5. 문열림 상태 확인",
-      "Schedule\n> 휴일군에 Time Slot 미설정\n> 휴일군에 Time Slot 설정",
-      "> 휴일군에 설정한 스케줄대로 동작되어야 한다.\n> Lock Zone의 출입문 잠김 상태는 재부팅 후에도 유지되어야 한다."
-    ],
-    [
-      19,
-      "<Door, Scheduled Lock Zone 추가된 상태>\n1. Door Status : Open 동작(Door 내 설정한 Exit Button 및 Door Sensor 의 Input 접지)\n2. Scheduled Lock Zone 의 스케줄에 의한 Schedule Lock 동작\n3. Monitoring > Door Status 내 Manual Lock/Unlock, Release, Open, Clear Alarm 버튼 선택",
-      "1. 조건\nDoor Status : Opened 상태\nScheduled Lock Zone 동작 중\n2. 동작\nManual Lock, Manual Unlock, Release, Open, Clear Alarm 버튼 입력\n버튼 입력 후 Closed 설정(접지 해제)\n3. 결과 (각 Case 결과 확인)\nOpened 상태에서 버튼 입력 결과\n버튼 입력 후 Closed 설정(접지 해제) 결과",
-      "1. Manual Lock 선택시\n1) Manual Lock 버튼 입력 결과 : Success 팝업\n: Opened / Normal / Unlocked\n2) Manual Lock 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Lock,Operator Lock / Locked\n3) 버튼 입력 없이 Closed 설정(접지 해제) 결과\n: Closed / Schedule Lock / Locked(공통)\n\n2. Manual Unlock 선택시\n1) Manual Unlock 버튼 입력 결과 : Success 팝업 발생\n: Opened / Operator Unlock / Unlocked\n2) Manual Unlock 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Lock, Operator Unlock / Unlocked\n\n3. Release 선택시\n1) Release 버튼 입력 결과 : Success 팝업\n: Opened / Normal / Unlocked\n2) Release 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Lock / Locked\n\n4. Open 선택시\n1) Open 버튼 입력 결과 : Success 팝업\n: Opened / Normal / Unlocked\n2). Open 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Lock / Locked\n\n5. Clear Alarm 선택시\n1) Clear Alarm 버튼 입력 결과 : Success 팝업\n: Opened / Normal / Unlocked\n2) Clear Alarm 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Lock / Locked]"
-    ],
-    [
-      20,
-      "1. Scheduled Lock 동작\n2. Fire Alarm 동작\n3. Manual Lock 동작\n4. Manual Unlock 동작",
-      "우선 순위 확인\n> Fire Alarm Zone\n> Manual Lock/Unlcok (Monitoring > Door Status)\n> Scheduled Lock Zone",
-      "> 최초 Scheduled Lock 에 의해 Locked 된다.\n> Fire Alarm 에 의해 Unlocked 된다. (Fire Alarm 이 Scheduled Lock 보다 우선순위가 높다)\n> Manual Lock 발생시 Unlocked 유지된다. (Manual Lock 이 Fire Alarm 보다 우선순위가 낮다)\n> Fire Alarm 해제 후 Manual Lock 발생시 Locked 된다. (Manual Lock 이 Scheduled Lock 보다 우선순위가 높다)\n> Fire Alarm 해제 후 Manual Unlock 발생시 Unlocked 된다. (Manual Unlock 이 Scheduled Lock 보다 우선순위가 높다)\n> Manual Lock/Unlock 해제 후 Scheduled Lock 에 의해 Locked 된다."
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-56",
-    "description": "",
-    "test_step": [
-      "1. Zone> Add Zone> Scheduled Lock Zone\n2. Active/Inactive 설정 > Zone 생성\n3. 장치에서 인증 시도",
-      "<스케줄 생성된 상태>\n1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정 > 스케줄 설정 > Zone 생성\n3. 스케줄에 설정된 시간 > Monitoring\n4. Door Status > Door Status Type 확인\n5. Zone Status > Status 확인\n6. 장치에서 인증 시도",
-      "1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정\n3. 스케줄 설정 > Zone 생성\n4. Entry/Exit 장치에 인증 시도",
-      "1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정\n3. 스케줄 설정 > Zone 생성\n4. Entry/Exit 장치에 인증 시도",
-      "1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정 > 스케줄 설정\n3. Bypass Group 설정 > Zone 생성",
-      "1. Scheduled Lock Zone 생성\n2. Door Lock Type : Exit Allowed 설정\n3. 스케줄 설정 > Bypass Group : Not Use 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 Bypass Group 에 속한 사용자로 Entry/Exit 장치에 인증 시도\n*Bypass Group Not Use 는 Access Group 이 하나도 선택되지 않은 상태",
-      "1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정\n3. 스케줄 설정 > Bypass Group : Access Group 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 Bypass Group 에 속한 사용자로 Entry/Exit 장치에 인증 시도",
-      "1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정\n3. 스케줄 설정 > Bypass Group 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 Bypass Group 에 속한 사용자로 Entry/Exit 장치에 인증 시도",
-      "1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정\n3. 스케줄 설정 > Bypass Group 설정 > Zone 생성\n4. 스케줄에 설정된 시간이 끝날 때의 동작 확인",
-      "1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정 > 스케줄 설정\n3. Alarm 설정 > Bypass Group : Access Group 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 Bypass Group 에 속하지 않은 사용자로 Entry/Exit 장치에 인증시도\n5. 스케줄에 설정된 시간에 Bypass Group 에 속한 사용자로 Entry/Exit 장치에 인증시도",
-      "1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정 > 스케줄 설정\n3. Alarm 설정 > Bypass Group : Access Group 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 Bypass Group 에 속하지 않은 사용자로 Entry/Exit 장치에 인증시도\n5. 스케줄에 설정된 시간에 Bypass Group 에 속한 사용자로 Entry/Exit 장치에 인증시도",
-      "1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정\n3. 현재 시간이 포함된 스케줄 설정 > Zone 생성\n4. Master 장치 Reboot 시도",
-      "<Scheduled Lock Zone 다수 생성된 상태>\n1. Zone > Scheduled Lock\n2. 하나 or 다수의 Zone 선택 > 삭제",
-      "1. Zone > Scheduled Lock > Zone 선택\n2. 정보 편집 > Apply",
-      "1. Scheduled Lock Zone 생성\n2. 현재 시간이 포함된 스케줄 설정 > Zone 생성\n3. Monitoring> Door Status> Zone 에 포함된 Door 선택\n4. Manual Lock/Unlock 버튼 클릭",
-      "<A Door 생성한 상태>\n1. Zone> Add Scheduled Unlock Zone> 강제잠금 스케줄- 12:00AM~12:00PM 설정\n2. Add Scheduled Lock Zone> 강제열림 스케줄- 12:00PM~12:00AM 설정\n3. 경계가 되는 시간일 때 동작확인",
-      "1. Door> Add Door> Door \"A\" 생성\n2. Zone> Add Zone> Scheduled Lock Zone> Door \"A\" 선택> 스케줄 설정> Zone 생성\n3. 스케줄에 설정된 시간에 Monitoring 진입\n4. Door Status> Door \"A\" 선택> Manual Unlock 버튼 선택\n5. Door Status 의 Door Status Type, Door Relay 확인\n6. Zone Status 의 Status 확인",
-      "<스케줄 \"A\"에 휴일군 설정된 상태>\n1. Door> Add Door> Door \"A\" 생성\n2. Zone> Add Zone> Scheduled Lock Zone> Door \"A\" 선택> 스케줄 \"A\" 선택> Zone 생성\n3. 스케줄 \"A\"에 설정한 휴일군일 때 동작확인\n4. Master 장치를 Reboot\n5. 문열림 상태 확인",
-      "<Door, Scheduled Lock Zone 추가된 상태>\n1. Door Status : Open 동작(Door 내 설정한 Exit Button 및 Door Sensor 의 Input 접지)\n2. Scheduled Lock Zone 의 스케줄에 의한 Schedule Lock 동작\n3. Monitoring > Door Status 내 Manual Lock/Unlock, Release, Open, Clear Alarm 버튼 선택",
-      "1. Scheduled Lock 동작\n2. Fire Alarm 동작\n3. Manual Lock 동작\n4. Manual Unlock 동작"
-    ],
-    "data": [
-      "Active/Inactive\n> Active\n> Inactive",
-      "Door Lock Type\n> Exit Allowed\n> Access Not Allowed",
-      "Door Lock Type\n> Exit Allowed",
-      "Door Lock Type\n> Access Not Allowed",
-      "1. Door Lock Type\n> Exit Allowed\n> Access Not Allowed\n\n2. Bypass Group\n> Max : 16",
-      "1. Door Lock Type\n> Exit Allowed\n\n2. Bypass Group\n> Not Use",
-      "1. Door Lock Type\n> Exit Allowed\n\n2. Bypass Group\n> Access Group",
-      "1. Door Lock Type\n> Access Not Allowed\n\n2. Bypass Group\n> Not Use\n> Access Group",
-      "Door Lock Type\n> Exit Allowed\n> Access Not Allowed",
-      "1. Door Lock Type\n> Exit Allowed\n\n2. Alarm Action\n> Output\n> Release All Alarm\n> Reboot Device\n> Disable Device",
-      "1. Door Lock Type\n> Access Not Allowed\n\n2. Alarm Action\n> Output\n> Release All Alarm\n> Reboot Device\n> Disable Device",
-      "Door Lock Type\n> Exit Allowed\n> Access Not Allowed",
-      "Zone 삭제\n> 개별삭제\n> 전체삭제",
-      "Door \"A\" 로 구성된 Schedule Lock Zone",
-      "Schedule\n> 휴일군에 Time Slot 미설정\n> 휴일군에 Time Slot 설정",
-      "1. 조건\nDoor Status : Opened 상태\nScheduled Lock Zone 동작 중\n2. 동작\nManual Lock, Manual Unlock, Release, Open, Clear Alarm 버튼 입력\n버튼 입력 후 Closed 설정(접지 해제)\n3. 결과 (각 Case 결과 확인)\nOpened 상태에서 버튼 입력 결과\n버튼 입력 후 Closed 설정(접지 해제) 결과",
-      "우선 순위 확인\n> Fire Alarm Zone\n> Manual Lock/Unlcok (Monitoring > Door Status)\n> Scheduled Lock Zone"
-    ],
-    "expected_result": [
-      "> Active 설정으로 생성한 Zone인 경우 Scheduled Lock으로 동작해야 한다.\n: Scheduled Lock 의 설정에 의해 인증 성공/실패 발생한다.\n> Inactive 설정으로 생성한 Zone인 경우 Scheduled Lock이 동작하지 않아야 한다.\n: Normal상태로 동작",
-      "> Door Status 의 Door Status Type 에 Scheduled Lock 표시한다.\n> Zone Status 의 Status 에 Scheduled Lock 표시한다.\n> 인증 실패 발생한다.",
-      "> 스케줄에 설정된 시간이 되면 Exit Device 는 Locked 되지 않고 Entry Device 만 Locked 된다.\n> Entry Device 에 인증시 인증실패 발생한다.\n> Exit Device 에 인증시 인증성공 발생한다.",
-      "> 스케줄에 설정된 시간이 되면 Entry/Exit Device 모두 Locked 된다.\n> Entry/Exit Device 에 인증시 인증실패 발생한다.",
-      "> Bypass Group 은 최대 16개를 설정할 수 있어야 한다.\n> Schedule Lock Zone 추가에 이상이 없어야 한다.",
-      "> 스케줄에 설정된 시간에 Entry Device 에 인증시 인증실패 발생한다.\n> 스케줄에 설정된 시간에 Exit Device 에 인증시 인증성공 발생한다.\n",
-      "Bypass Group 에 속한 사용자로 스케줄에 설정된 시간에 Entry/Exit Device 에 인증시 인증성공 발생한다.",
-      "> Not Use 설정된 경우 스케줄에 설정된 시간에 인증시 인증실패 발생한다.\n> Access Group 설정된 경우 스케줄에 설정된 시간에 Bypass Group 에 속한 사용자로 인증시 인증성공 발생한다.",
-      "스케줄에 설정된 시간이 끝나도 Locked 상태를 유지해야 한다.",
-      "> Bypass Group 에 속하지 않은 사용자로 Entry Device 인증시 인증실패 발생하며 설정된 Alarm 동작한다.\n> Bypass Group 에 속하지 않은 사용자로 Exit Device 인증시 인증성공 발생하고 Unlocked 후 Locked 된다.\n> Bypass Group 에 속한 사용자로 Entry/Exit Device 인증시 인증성공 발생하고 Unlocked 후 Locked 된다.",
-      "> Bypass Group 에 속하지 않은 사용자로 인증시 인증실패 발생하며 설정된 Alarm 동작한다.\n> Bypass Group 에 속한 사용자로 인증시 인증성공 발생하고 Unlocked 후 Locked 된다.",
-      "Master가 Reboot되는 경우에도 Locked 상태를 유지해야 한다.",
-      "Zone에 대해 개별삭제/전체삭제를 할 수 있어야 한다.\n> 삭제 시 Monitoring > Door Status > Door Ststus Type : Normal로 상태 변경",
-      "Zone 정보 변경이 가능해야 한다.",
-      "Zone에서 설정한 Scheduled Lock Zone보다 Monitoring에서의 Unlock/Lock의 우선순위가 높다.",
-      "11:59:59 PM 까지 Scheduled-Unlocked상태를 유지하다 12:00:00 PM에 Scheduled-Locked 상태로 변경되어야 한다. ",
-      "> Door Status 의 Door Relay 는 Unlocked 로, Door Status Type 은 Schedule Lock,Operator Unlock으로 표시된다.\n> Zone Status 의 Status 는 Schedule Lock 으로 표시된다.\n> Door의 Status와 Zone의 Status는 별개로 동작 해야 함",
-      "> 휴일군에 설정한 스케줄대로 동작되어야 한다.\n> Lock Zone의 출입문 잠김 상태는 재부팅 후에도 유지되어야 한다.",
-      "1. Manual Lock 선택시\n1) Manual Lock 버튼 입력 결과 : Success 팝업\n: Opened / Normal / Unlocked\n2) Manual Lock 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Lock,Operator Lock / Locked\n3) 버튼 입력 없이 Closed 설정(접지 해제) 결과\n: Closed / Schedule Lock / Locked(공통)\n\n2. Manual Unlock 선택시\n1) Manual Unlock 버튼 입력 결과 : Success 팝업 발생\n: Opened / Operator Unlock / Unlocked\n2) Manual Unlock 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Lock, Operator Unlock / Unlocked\n\n3. Release 선택시\n1) Release 버튼 입력 결과 : Success 팝업\n: Opened / Normal / Unlocked\n2) Release 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Lock / Locked\n\n4. Open 선택시\n1) Open 버튼 입력 결과 : Success 팝업\n: Opened / Normal / Unlocked\n2). Open 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Lock / Locked\n\n5. Clear Alarm 선택시\n1) Clear Alarm 버튼 입력 결과 : Success 팝업\n: Opened / Normal / Unlocked\n2) Clear Alarm 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Lock / Locked]",
-      "> 최초 Scheduled Lock 에 의해 Locked 된다.\n> Fire Alarm 에 의해 Unlocked 된다. (Fire Alarm 이 Scheduled Lock 보다 우선순위가 높다)\n> Manual Lock 발생시 Unlocked 유지된다. (Manual Lock 이 Fire Alarm 보다 우선순위가 낮다)\n> Fire Alarm 해제 후 Manual Lock 발생시 Locked 된다. (Manual Lock 이 Scheduled Lock 보다 우선순위가 높다)\n> Fire Alarm 해제 후 Manual Unlock 발생시 Unlocked 된다. (Manual Unlock 이 Scheduled Lock 보다 우선순위가 높다)\n> Manual Lock/Unlock 해제 후 Scheduled Lock 에 의해 Locked 된다."
-    ]
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 12516,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 34679,
+              "latestFinalId": 34679
+            },
+            {
+              "environment": "ES1",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29815,
+              "latestFinalId": 29815
+            },
+            {
+              "environment": "BioStarV2.9.6.30",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29815,
+              "latestFinalId": 29815
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_170117(UnitTest)",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 5646,
+              "latestFinalId": 5646
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_190805_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15225,
+              "latestFinalId": 15225
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.2.8_20160603",
+          "statusResults": [
+            {
+              "latest": 1,
+              "latestFinal": 0,
+              "latestId": 1744,
+              "latestFinalId": 1565
+            }
+          ]
+        },
+        {
+          "group": "FL_V1.0_190515(PS)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 14138,
+              "latestFinalId": 14138
+            }
+          ]
+        },
+        {
+          "group": "V1.7.1_181204(Hotfix)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12657,
+              "latestFinalId": 12657
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_181210_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12760,
+              "latestFinalId": 12760
+            }
+          ]
+        },
+        {
+          "group": "V1.1.5_4_151014(All)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 57,
+              "latestFinalId": 57
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0 170331",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 8628,
+              "latestFinalId": 8628
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_181119_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 12938,
+              "latestFinalId": 12938
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_190809_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15586,
+              "latestFinalId": 15586
+            }
+          ]
+        },
+        {
+          "group": "V1.8.0_190806_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15313,
+              "latestFinalId": 15313
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180322",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10130,
+              "latestFinalId": 10130
+            }
+          ]
+        },
+        {
+          "group": "V1.7.0_190806_Interaction 7차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15065,
+              "latestFinalId": 15065
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.1.5_5 - 20151016(All)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 5225,
+              "latestFinalId": 5149
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_190806_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15424,
+              "latestFinalId": 15424
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_20200601_Interaction 12차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 17156,
+              "latestFinalId": 17156
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "구역 - Scheduled Lock Zone",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 612,
+          "index": 1,
+          "step": "1. Zone> Add Zone> Scheduled Lock Zone\n2. Active/Inactive 설정 > Zone 생성\n3. 장치에서 인증 시도",
+          "data": "Active/Inactive\n> Active\n> Inactive",
+          "result": "> Active 설정으로 생성한 Zone인 경우 Scheduled Lock으로 동작해야 한다.\n: Scheduled Lock 의 설정에 의해 인증 성공/실패 발생한다.\n> Inactive 설정으로 생성한 Zone인 경우 Scheduled Lock이 동작하지 않아야 한다.\n: Normal상태로 동작",
+          "attachments": []
+        },
+        {
+          "id": 613,
+          "index": 2,
+          "step": "<스케줄 생성된 상태>\n1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정 > 스케줄 설정 > Zone 생성\n3. 스케줄에 설정된 시간 > Monitoring\n4. Door Status > Door Status Type 확인\n5. Zone Status > Status 확인\n6. 장치에서 인증 시도",
+          "data": "Door Lock Type\n> Exit Allowed\n> Access Not Allowed",
+          "result": "> Door Status 의 Door Status Type 에 Scheduled Lock 표시한다.\n> Zone Status 의 Status 에 Scheduled Lock 표시한다.\n> 인증 실패 발생한다.",
+          "attachments": []
+        },
+        {
+          "id": 615,
+          "index": 3,
+          "step": "1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정\n3. 스케줄 설정 > Zone 생성\n4. Entry/Exit 장치에 인증 시도",
+          "data": "Door Lock Type\n> Exit Allowed",
+          "result": "> 스케줄에 설정된 시간이 되면 Exit Device 는 Locked 되지 않고 Entry Device 만 Locked 된다.\n> Entry Device 에 인증시 인증실패 발생한다.\n> Exit Device 에 인증시 인증성공 발생한다.",
+          "attachments": []
+        },
+        {
+          "id": 2233,
+          "index": 4,
+          "step": "1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정\n3. 스케줄 설정 > Zone 생성\n4. Entry/Exit 장치에 인증 시도",
+          "data": "Door Lock Type\n> Access Not Allowed",
+          "result": "> 스케줄에 설정된 시간이 되면 Entry/Exit Device 모두 Locked 된다.\n> Entry/Exit Device 에 인증시 인증실패 발생한다.",
+          "attachments": []
+        },
+        {
+          "id": 2230,
+          "index": 5,
+          "step": "1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정 > 스케줄 설정\n3. Bypass Group 설정 > Zone 생성",
+          "data": "1. Door Lock Type\n> Exit Allowed\n> Access Not Allowed\n\n2. Bypass Group\n> Max : 16",
+          "result": "> Bypass Group 은 최대 16개를 설정할 수 있어야 한다.\n> Schedule Lock Zone 추가에 이상이 없어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 614,
+          "index": 6,
+          "step": "1. Scheduled Lock Zone 생성\n2. Door Lock Type : Exit Allowed 설정\n3. 스케줄 설정 > Bypass Group : Not Use 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 Bypass Group 에 속한 사용자로 Entry/Exit 장치에 인증 시도\n*Bypass Group Not Use 는 Access Group 이 하나도 선택되지 않은 상태",
+          "data": "1. Door Lock Type\n> Exit Allowed\n\n2. Bypass Group\n> Not Use",
+          "result": "> 스케줄에 설정된 시간에 Entry Device 에 인증시 인증실패 발생한다.\n> 스케줄에 설정된 시간에 Exit Device 에 인증시 인증성공 발생한다.\n",
+          "attachments": []
+        },
+        {
+          "id": 2236,
+          "index": 7,
+          "step": "1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정\n3. 스케줄 설정 > Bypass Group : Access Group 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 Bypass Group 에 속한 사용자로 Entry/Exit 장치에 인증 시도",
+          "data": "1. Door Lock Type\n> Exit Allowed\n\n2. Bypass Group\n> Access Group",
+          "result": "Bypass Group 에 속한 사용자로 스케줄에 설정된 시간에 Entry/Exit Device 에 인증시 인증성공 발생한다.",
+          "attachments": []
+        },
+        {
+          "id": 2235,
+          "index": 8,
+          "step": "1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정\n3. 스케줄 설정 > Bypass Group 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 Bypass Group 에 속한 사용자로 Entry/Exit 장치에 인증 시도",
+          "data": "1. Door Lock Type\n> Access Not Allowed\n\n2. Bypass Group\n> Not Use\n> Access Group",
+          "result": "> Not Use 설정된 경우 스케줄에 설정된 시간에 인증시 인증실패 발생한다.\n> Access Group 설정된 경우 스케줄에 설정된 시간에 Bypass Group 에 속한 사용자로 인증시 인증성공 발생한다.",
+          "attachments": []
+        },
+        {
+          "id": 2232,
+          "index": 9,
+          "step": "1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정\n3. 스케줄 설정 > Bypass Group 설정 > Zone 생성\n4. 스케줄에 설정된 시간이 끝날 때의 동작 확인",
+          "data": "Door Lock Type\n> Exit Allowed\n> Access Not Allowed",
+          "result": "스케줄에 설정된 시간이 끝나도 Locked 상태를 유지해야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 2245,
+          "index": 10,
+          "step": "1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정 > 스케줄 설정\n3. Alarm 설정 > Bypass Group : Access Group 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 Bypass Group 에 속하지 않은 사용자로 Entry/Exit 장치에 인증시도\n5. 스케줄에 설정된 시간에 Bypass Group 에 속한 사용자로 Entry/Exit 장치에 인증시도",
+          "data": "1. Door Lock Type\n> Exit Allowed\n\n2. Alarm Action\n> Output\n> Release All Alarm\n> Reboot Device\n> Disable Device",
+          "result": "> Bypass Group 에 속하지 않은 사용자로 Entry Device 인증시 인증실패 발생하며 설정된 Alarm 동작한다.\n> Bypass Group 에 속하지 않은 사용자로 Exit Device 인증시 인증성공 발생하고 Unlocked 후 Locked 된다.\n> Bypass Group 에 속한 사용자로 Entry/Exit Device 인증시 인증성공 발생하고 Unlocked 후 Locked 된다.",
+          "attachments": []
+        },
+        {
+          "id": 2243,
+          "index": 11,
+          "step": "1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정 > 스케줄 설정\n3. Alarm 설정 > Bypass Group : Access Group 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 Bypass Group 에 속하지 않은 사용자로 Entry/Exit 장치에 인증시도\n5. 스케줄에 설정된 시간에 Bypass Group 에 속한 사용자로 Entry/Exit 장치에 인증시도",
+          "data": "1. Door Lock Type\n> Access Not Allowed\n\n2. Alarm Action\n> Output\n> Release All Alarm\n> Reboot Device\n> Disable Device",
+          "result": "> Bypass Group 에 속하지 않은 사용자로 인증시 인증실패 발생하며 설정된 Alarm 동작한다.\n> Bypass Group 에 속한 사용자로 인증시 인증성공 발생하고 Unlocked 후 Locked 된다.",
+          "attachments": []
+        },
+        {
+          "id": 618,
+          "index": 12,
+          "step": "1. Scheduled Lock Zone 생성\n2. Door Lock Type 설정\n3. 현재 시간이 포함된 스케줄 설정 > Zone 생성\n4. Master 장치 Reboot 시도",
+          "data": "Door Lock Type\n> Exit Allowed\n> Access Not Allowed",
+          "result": "Master가 Reboot되는 경우에도 Locked 상태를 유지해야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 627,
+          "index": 13,
+          "step": "<Scheduled Lock Zone 다수 생성된 상태>\n1. Zone > Scheduled Lock\n2. 하나 or 다수의 Zone 선택 > 삭제",
+          "data": "Zone 삭제\n> 개별삭제\n> 전체삭제",
+          "result": "Zone에 대해 개별삭제/전체삭제를 할 수 있어야 한다.\n> 삭제 시 Monitoring > Door Status > Door Ststus Type : Normal로 상태 변경",
+          "attachments": []
+        },
+        {
+          "id": 628,
+          "index": 14,
+          "step": "1. Zone > Scheduled Lock > Zone 선택\n2. 정보 편집 > Apply",
+          "data": "",
+          "result": "Zone 정보 변경이 가능해야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 1505,
+          "index": 15,
+          "step": "1. Scheduled Lock Zone 생성\n2. 현재 시간이 포함된 스케줄 설정 > Zone 생성\n3. Monitoring> Door Status> Zone 에 포함된 Door 선택\n4. Manual Lock/Unlock 버튼 클릭",
+          "data": "",
+          "result": "Zone에서 설정한 Scheduled Lock Zone보다 Monitoring에서의 Unlock/Lock의 우선순위가 높다.",
+          "attachments": []
+        },
+        {
+          "id": 1778,
+          "index": 16,
+          "step": "<A Door 생성한 상태>\n1. Zone> Add Scheduled Unlock Zone> 강제잠금 스케줄- 12:00AM~12:00PM 설정\n2. Add Scheduled Lock Zone> 강제열림 스케줄- 12:00PM~12:00AM 설정\n3. 경계가 되는 시간일 때 동작확인",
+          "data": "",
+          "result": "11:59:59 PM 까지 Scheduled-Unlocked상태를 유지하다 12:00:00 PM에 Scheduled-Locked 상태로 변경되어야 한다. ",
+          "attachments": []
+        },
+        {
+          "id": 1779,
+          "index": 17,
+          "step": "1. Door> Add Door> Door \"A\" 생성\n2. Zone> Add Zone> Scheduled Lock Zone> Door \"A\" 선택> 스케줄 설정> Zone 생성\n3. 스케줄에 설정된 시간에 Monitoring 진입\n4. Door Status> Door \"A\" 선택> Manual Unlock 버튼 선택\n5. Door Status 의 Door Status Type, Door Relay 확인\n6. Zone Status 의 Status 확인",
+          "data": "Door \"A\" 로 구성된 Schedule Lock Zone",
+          "result": "> Door Status 의 Door Relay 는 Unlocked 로, Door Status Type 은 Schedule Lock,Operator Unlock으로 표시된다.\n> Zone Status 의 Status 는 Schedule Lock 으로 표시된다.\n> Door의 Status와 Zone의 Status는 별개로 동작 해야 함",
+          "attachments": []
+        },
+        {
+          "id": 2190,
+          "index": 18,
+          "step": "<스케줄 \"A\"에 휴일군 설정된 상태>\n1. Door> Add Door> Door \"A\" 생성\n2. Zone> Add Zone> Scheduled Lock Zone> Door \"A\" 선택> 스케줄 \"A\" 선택> Zone 생성\n3. 스케줄 \"A\"에 설정한 휴일군일 때 동작확인\n4. Master 장치를 Reboot\n5. 문열림 상태 확인",
+          "data": "Schedule\n> 휴일군에 Time Slot 미설정\n> 휴일군에 Time Slot 설정",
+          "result": "> 휴일군에 설정한 스케줄대로 동작되어야 한다.\n> Lock Zone의 출입문 잠김 상태는 재부팅 후에도 유지되어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 2250,
+          "index": 19,
+          "step": "<Door, Scheduled Lock Zone 추가된 상태>\n1. Door Status : Open 동작(Door 내 설정한 Exit Button 및 Door Sensor 의 Input 접지)\n2. Scheduled Lock Zone 의 스케줄에 의한 Schedule Lock 동작\n3. Monitoring > Door Status 내 Manual Lock/Unlock, Release, Open, Clear Alarm 버튼 선택",
+          "data": "1. 조건\nDoor Status : Opened 상태\nScheduled Lock Zone 동작 중\n2. 동작\nManual Lock, Manual Unlock, Release, Open, Clear Alarm 버튼 입력\n버튼 입력 후 Closed 설정(접지 해제)\n3. 결과 (각 Case 결과 확인)\nOpened 상태에서 버튼 입력 결과\n버튼 입력 후 Closed 설정(접지 해제) 결과",
+          "result": "1. Manual Lock 선택시\n1) Manual Lock 버튼 입력 결과 : Success 팝업\n: Opened / Normal / Unlocked\n2) Manual Lock 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Lock,Operator Lock / Locked\n3) 버튼 입력 없이 Closed 설정(접지 해제) 결과\n: Closed / Schedule Lock / Locked(공통)\n\n2. Manual Unlock 선택시\n1) Manual Unlock 버튼 입력 결과 : Success 팝업 발생\n: Opened / Operator Unlock / Unlocked\n2) Manual Unlock 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Lock, Operator Unlock / Unlocked\n\n3. Release 선택시\n1) Release 버튼 입력 결과 : Success 팝업\n: Opened / Normal / Unlocked\n2) Release 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Lock / Locked\n\n4. Open 선택시\n1) Open 버튼 입력 결과 : Success 팝업\n: Opened / Normal / Unlocked\n2). Open 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Lock / Locked\n\n5. Clear Alarm 선택시\n1) Clear Alarm 버튼 입력 결과 : Success 팝업\n: Opened / Normal / Unlocked\n2) Clear Alarm 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Lock / Locked]",
+          "attachments": []
+        },
+        {
+          "id": 2262,
+          "index": 20,
+          "step": "1. Scheduled Lock 동작\n2. Fire Alarm 동작\n3. Manual Lock 동작\n4. Manual Unlock 동작",
+          "data": "우선 순위 확인\n> Fire Alarm Zone\n> Manual Lock/Unlcok (Monitoring > Door Status)\n> Scheduled Lock Zone",
+          "result": "> 최초 Scheduled Lock 에 의해 Locked 된다.\n> Fire Alarm 에 의해 Unlocked 된다. (Fire Alarm 이 Scheduled Lock 보다 우선순위가 높다)\n> Manual Lock 발생시 Unlocked 유지된다. (Manual Lock 이 Fire Alarm 보다 우선순위가 낮다)\n> Fire Alarm 해제 후 Manual Lock 발생시 Locked 된다. (Manual Lock 이 Scheduled Lock 보다 우선순위가 높다)\n> Fire Alarm 해제 후 Manual Unlock 발생시 Unlocked 된다. (Manual Unlock 이 Scheduled Lock 보다 우선순위가 높다)\n> Manual Lock/Unlock 해제 후 Scheduled Lock 에 의해 Locked 된다.",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12516/comment/21525",
+          "id": "21525",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "1. 현재 시각이 active FLU zone의 lock/unlock schedule 에 다다르면 해당 Door는 forced lock/unlock 상태가 되고 관련 로그가 남음.\r\n2. 현재 시각이 active FLU zone의 lock/unlock schedule 을 벗어나면 해당 Door는 forced lock/unlock 상태가 해제되고 관련 로그가 남음.",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-09-23T08:11:20.000+0900",
+          "updated": "2015-09-23T08:11:20.000+0900"
+        },
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12516/comment/21526",
+          "id": "21526",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "3. FLU zone이 inactive 상태가 되면 해당 Door는 forced lock/unlock 상태가 해제되고 관련 로그가 남음.",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-09-23T08:11:46.000+0900",
+          "updated": "2015-09-23T08:11:46.000+0900"
+        },
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12516/comment/21527",
+          "id": "21527",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "4. forced lock 상태가 되면 등록된 bypass 사용자만이 인증에 성공함.\r\n5. non-bypass 사용자가 인증을 시도할 경우 violation 이 발생하고 Alarm 이 등록된 경우 해당 action이 수행됨.",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-09-23T08:12:00.000+0900",
+          "updated": "2015-09-23T08:12:00.000+0900"
+        },
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12516/comment/21528",
+          "id": "21528",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "6. bidirectional 설정이 enabled 되면 forced lock 상태인 Door를 통해 나오는 것도 제한됨.(exit button 포함.)",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-09-23T08:12:13.000+0900",
+          "updated": "2015-09-23T08:12:13.000+0900"
+        },
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12516/comment/21530",
+          "id": "21530",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "7. 복수의 FLU zone이 동일 Door를 포함하고 schedule 이 겹치는 경우, 해당 Door는 뒤늦게 시작되는 schedule 에 따라 동작함.\r\n\r\n* F/L 시작 - F/U 시작 - F/L 끝 - F/U 끝 인 경우\r\n  Forced Locked - Forced Unlocked - Normal Locked - Normal Locked\r\n\r\n* F/U 시작 - F/L 시작 - F/U 끝 - F/L 끝 인 경우\r\n  Forced Unlocked - Forced Locked - Normal Locked - Normal Locked\r\n \r\n* F/L 시작 - F/L 시작 - F/L 끝 - F/L 끝 인 경우\r\n  Forced Locked - Forced Locked - Normal Locked - Normal Locked\r\n\r\n* F/U 시작 - F/U 시작 - F/U 끝 - F/U 끝 인 경우\r\n  Forced Unlocked - Forced Unlocked - Normal Locked - Normal Locked\r\n",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-09-23T08:15:29.000+0900",
+          "updated": "2015-09-23T08:24:57.000+0900"
+        },
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12516/comment/21531",
+          "id": "21531",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "8. unlockGroup 이 등록될 경우 unlock schedule 이 시작되어도 해당 group user가 인증할 때 까지 FLU zone의 상태는 바뀌지 않음.(forced unlocked 상태에서 Device가 reboot 될 경우엔 unlockGroup 의 재인증이 필요함.)",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-09-23T08:18:43.000+0900",
+          "updated": "2015-09-23T08:18:43.000+0900"
+        },
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12516/comment/21532",
+          "id": "21532",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "9. forced lock 상태인 Door에 non-bypass user 가 인증을 시도할 경우 violation 이 발생하고 Alarm 이 등록된 경우 해당 action이 수행됨.",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-09-23T08:18:56.000+0900",
+          "updated": "2015-09-23T08:18:56.000+0900"
+        },
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12516/comment/21533",
+          "id": "21533",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "10. forced lock 상태인 Door 를 인증에 의해 잠시 unlock 시킨 상태에서 해당 FLU zone 의 lock schedule 이 끝난 경우 Zone 의 상태는 즉시 갱신되나 Door 의 상태는 설정에 따라 지연 동작함.",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-09-23T08:19:08.000+0900",
+          "updated": "2015-09-23T08:19:08.000+0900"
+        },
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12516/comment/21534",
+          "id": "21534",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "11. FLU zone 의 lock schedule 이 시작되어도 Emergency/Operator Unlock 된 Door 의 상태는 바뀌지 않음. 이후 Emergency/Operator Unlock 이 해제되었을때 여전히 lock schedule 이라면 즉시 lock 상태로 바뀜.\r\n12. FLU zone 의 unlock schedule 이 시작되어도 Operator Lock 된 Door 의 상태는 바뀌지 않음. 이후 Operator Lock 이 해제되었을때 여전히 unlock schedule 이라면 즉시-unlockGroup 인증이 불필요한 경우- unlock 상태로 바뀜.",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-09-23T08:19:18.000+0900",
+          "updated": "2015-09-23T08:19:18.000+0900"
+        },
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12516/comment/94487",
+          "id": "94487",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+            "name": "김소영",
+            "key": "김소영",
+            "emailAddress": "sykim@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "김소영",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "Step 21 TC 제거\r\n> 구역에 설정된 Door에 대해 설정변경시 BioStar UI에서 변경불가하도록 막아 진행불가한 TC로 삭제",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+            "name": "김소영",
+            "key": "김소영",
+            "emailAddress": "sykim@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "김소영",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2018-06-28T14:34:24.000+0900",
+          "updated": "2018-06-28T14:34:24.000+0900"
+        }
+      ],
+      "maxResults": 10,
+      "total": 10,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+      "name": "Minor (C)",
+      "id": "3"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+      "name": "완료",
+      "id": "10001",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "완료"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzrxrb:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2015-08-19T18:24:58.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

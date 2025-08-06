@@ -1,148 +1,1385 @@
 {
-  "id": "COMMONR-95",
-  "content": [
-    [
-      1,
-      "<장치간 RS485 연결>\n1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Open 버튼 클릭\n3. Open time대로 동작되는지 확인",
-      "Door 생성시 Open Time 확인\n: 3초/5초/10초/15초/30초/1분/3분/5분/10분/15분",
-      "Open 클릭시 Unlocked으로 동작되어야 하고, 설정된 Open time이 지나면 다시 Locked으로 동작되어야 한다."
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "13178",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/13178",
+  "key": "COMMONR-95",
+  "fields": {
+    "resolution": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/resolution/10000",
+      "id": "10000",
+      "description": "[사용안함] Work has been completed on this issue.",
+      "name": "완료(Done)"
+    },
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "6.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": null,
+    "customfield_10185": null,
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "26557",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/26557",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "35074",
+          "key": "CSTFW-665",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/35074",
+          "fields": {
+            "summary": "Manual Unlock 상태에서 Master Reboot 하게 되면 Master의 Relay가 On 안되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14142",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14142",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19389",
+          "key": "ENTRYIIDII-448",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19389",
+          "fields": {
+            "summary": "Door를 다수 생성 후 Master 장치 Reboot시 하나의 Door만 남아있는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "15756",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/15756",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "21217",
+          "key": "CSTFW-56",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/21217",
+          "fields": {
+            "summary": "Door Status에서 Release, Open에 대해 동작되지 않는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "23071",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/23071",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "29829",
+          "key": "FLFW-308",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/29829",
+          "fields": {
+            "summary": "[Fire Alarm Zone] Emergency Unlock 상태에서 Master 부팅 직후 Zone을 삭제 하는 경우 Relay Off가 안되는 현상 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "23569",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/23569",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "30499",
+          "key": "FLFW-381",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/30499",
+          "fields": {
+            "summary": "[RS 485 통신] Slave 장치의 Input 정보, 상태에 대해서 최초 추가 시 요청하여 Slave Rebooting 후  Door 생성 시  Slave Door 오동작 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14140",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14140",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19387",
+          "key": "ENTRYIIDII-447",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19387",
+          "fields": {
+            "summary": "[RS-485 구성] Door 다수 생성 후 Door Status에서 Open으로 동작시 설정한 Open Time보다 더 길게 개방으로 동작하는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "10560",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10560",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "13187",
+          "key": "BLIIFWI-114",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/13187",
+          "fields": {
+            "summary": "[Requirement] Monitoring - Door Status",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10605",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10605",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "13284",
+          "key": "ENTRYIIDII-20",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/13284",
+          "fields": {
+            "summary": "[Requirement] Monitoring - Door Status",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10557",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10557",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "13184",
+          "key": "TIIDFI-122",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/13184",
+          "fields": {
+            "summary": "[Requirement] Monitoring - Door Status",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "35006",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/35006",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "45607",
+          "key": "BAS-487",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/45607",
+          "fields": {
+            "summary": "Test Case 작성",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
+              "id": "5",
+              "description": "이슈의 부작업",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
+              "name": "부작업",
+              "subtask": true,
+              "avatarId": 10316
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "[Door 생성]\n1. Monitoring> Door Status> Open 버튼 클릭\n2. Biostar2 Log 확인",
-      "[BDP-518]",
-      "1. Door에 설정된 Open Time 만큼 Unlocked 으로 동작된다.\n> 국문: 관리자에 의한 출입문 개방요청\n> 영문: Door open request by operator"
+    "assignee": null,
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 15.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-95/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@17d5f703[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@2ea4b117[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@24e5db43[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@2fc2eac1[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@1f2396e8[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@1dce6b7[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@b690a0c[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@33457d42[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@30522914[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@56dd98f7[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@15a7c14a[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@d9001d1[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": "2016-02-25T13:30:45.000+0900",
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-95/watchers",
+      "watchCount": 2,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T10:23:31.000+0900",
+    "timeoriginalestimate": null,
+    "description": "Unlock, Lock, Release, Open 기능에 대한 출입문의 동작 확인\r\n\r\n15번 TC 확인시 경광등이 없을 경우 IM-120 연결하여 확인 가능\r\n 1. Door 설정 > Relay 설정\r\n 2. 설정한 NO 케이블은 IN+ 에 연결\r\n 3. COM 선은 IN-에 연결 \r\n 4. 연결한 INPUT에서 정상적으로 점등 되는지 확인(Lock 상태에서 점등 / NC에 연결시 Unlock 상태에서 점등)\r\n !image-2024-12-17-11-05-25-608.png|width=306,height=306!",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>&lt;장치간 RS485 연결&gt;<br/>1. Door&gt; Add Door&gt; Door 생성<br/>2. Monitoring&gt; Door Status&gt; Open 버튼 클릭<br/>3. Open time대로 동작되는지 확인</p></td><td><p>Door 생성시 Open Time 확인<br/>: 3초/5초/10초/15초/30초/1분/3분/5분/10분/15분</p></td><td><p>Open 클릭시 Unlocked으로 동작되어야 하고, 설정된 Open time이 지나면 다시 Locked으로 동작되어야 한다.</p></td></tr><tr><td>2</td><td><p><span class=\"error\">&#91;Door 생성&#93;</span><br/>1. Monitoring&gt; Door Status&gt; Open 버튼 클릭<br/>2. Biostar2 Log 확인</p></td><td><p><a href=\"https://jira.suprema.co.kr/browse/BDP-518\" title=\"Exit button 및 operator open 로그 추가\" class=\"issue-link\" data-issue-key=\"BDP-518\"><del>BDP-518</del></a></p></td><td><p>1. Door에 설정된 Open Time 만큼 Unlocked 으로 동작된다.<br/>&gt; 국문: 관리자에 의한 출입문 개방요청<br/>&gt; 영문: Door open request by operator</p></td></tr><tr><td>3</td><td><p>1. Door&gt; Add Door&gt; Door 생성<br/>2. Monitoring&gt; Door Status&gt; Manual Unlock 버튼 클릭&gt; Door 상태 확인(Unlock)<br/>3. Release 버튼 클릭&gt; Door 상태확인(Lock)<br/>4. 장치 Reboot<br/>5. 부팅완료 후 Door 상태확인</p></td><td><p>Door 생성<br/>&gt; 단일장치<br/>&gt; RS485 연결장치<br/>&gt; Master-Wiegand Reader 연결장치<br/>&gt; Master-Slave/DM20-Wiegand Reader 연결장치</p></td><td><p>부팅완료 후 Lock 상태를 유지해야 한다.<br/>&gt; 로그확인 및 부팅시  Relay 미발생 확인<br/>&gt; Door unlock request by operator / Door unlocked<br/>&gt; Door release request by operator / Door locked</p></td></tr><tr><td>4</td><td><p>1. Door&gt; Add Door&gt; Door 생성<br/>2. Monitoring&gt; Door Status&gt; Manual Lock 버튼 클릭&gt; Door 상태 확인(Lock)<br/>3. Release 버튼 클릭&gt; Door 상태확인<br/>4. 장치 Reboot<br/>5. 부팅완료 후 Door 상태확인</p></td><td><p>Door 생성<br/>&gt; 단일장치<br/>&gt; RS485 연결장치<br/>&gt; Master-Wiegand Reader 연결장치<br/>&gt; Master-Slave/DM20-Wiegand Reader 연결장치</p></td><td><p>부팅완료 후 인증시 Unlock으로 동작후 Open Time이 지나면 Lock으로 동작되어야 한다.<br/>&gt; 로그확인 및 부팅시 Relay 미발생, 인증 시 Relay 발생 확인<br/>&gt; Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock으로 표시되어야 한다.<br/>&gt; Door lock request by operator / Door locked<br/>&gt; Door release request by operator / Door locked</p></td></tr><tr><td>5</td><td><p>1. Door&gt; Add Door&gt; Door 생성<br/>2. Monitoring&gt; Door Status&gt; Manual Unlock 버튼 클릭&gt; Door 상태 확인(Unlock)</p></td><td><p>Door 생성<br/>&gt; 단일장치<br/>&gt; RS485 연결장치<br/>&gt; Master-Wiegand Reader 연결장치<br/>&gt; Master-Slave/DM20-Wiegand Reader 연결장치</p></td><td><p>1. Door가 Unlock 상태를 유지해야한다.<br/>2. Unlock 로그만 발생한다.<br/>&gt; Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock 으로 표시되어야 한다.<br/>3. 로그 확인<br/>&gt; Door unlock request by operator / Door unlocked</p></td></tr><tr><td>6</td><td><p>1. Door&gt; Add Door&gt; Door 생성<br/>2. Monitoring&gt; Door Status&gt; Manual Lock 버튼 클릭&gt; Door 상태 확인</p></td><td><p>Door 생성<br/>&gt; 단일장치<br/>&gt; RS485 연결장치<br/>&gt; Master-Wiegand Reader 연결장치<br/>&gt; Master-Slave/DM20-Wiegand Reader 연결장치</p></td><td><p>1. Door가 Lock 상태를 유지해야한다.<br/>2. Lock 로그만 발생한다.<br/>&gt; Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock으로 표시되어야 한다.<br/>&gt; Door lock request by operator / Door locked</p></td></tr><tr><td>7</td><td><p><span class=\"error\">&#91;사용자 인증에 의한 시작: 비활성화&#93;</span><br/>1. Schedule Unlock으로 동작중<br/>2. Manual Lock<br/>3. Master Reboot<br/>4. Door Status&gt; 상태확인 및 동작확인</p></td><td><p>사용자 인증에 의한 시작<br/>Zone &gt; Add Zone &gt; Scheduled Unlock &gt; Started by User Authentication </p></td><td><p>1. Manual Lock으로 동작된다.<br/>&gt; 로그상 Schedule Unlock, Manual Lock으로 표시<br/>2. 로그 확인<br/>&gt; Scheduled unlock zone started(Door)<br/>&gt; Door unlock request by schedule<br/>&gt; Door unlocked</p></td></tr><tr><td>8</td><td><p><span class=\"error\">&#91;사용자 인증에 의한 시작: 비활성화&#93;</span><br/>1. Schedule Unlock으로 동작중<br/>2. Manual Lock<br/>3. Master Reboot<br/>4. Door Status&gt; 해제<br/>5. 동작확인</p></td><td><p>사용자 인증에 의한 시작<br/>Zone &gt; Add Zone &gt; Scheduled Unlock &gt; Started by User Authentication </p></td><td><p>1. Schedule Unlock으로 동작된다.</p></td></tr><tr><td>9</td><td><p><span class=\"error\">&#91;사용자 인증에 의한 시작: 활성화&#93;</span><br/>1. Schedule Unlock으로 동작중<br/>2. Manual Lock<br/>3. Master Reboot<br/>4. Door Status&gt; 상태확인 및 동작확인</p></td><td><p>사용자 인증에 의한 시작<br/>Zone &gt; Add Zone &gt; Scheduled Unlock &gt; Started by User Authentication </p></td><td><p>1. Manual Lock으로 동작된다.<br/>&gt; 로그상 Manual Lock으로 표시</p></td></tr><tr><td>10</td><td><p><span class=\"error\">&#91;사용자 인증에 의한 시작: 활성화&#93;</span><br/>1. Schedule Unlock으로 동작중<br/>2. Manual Lock<br/>3. Master Reboot<br/>4. Door Status&gt; 해제<br/>5. 동작확인</p></td><td><p>사용자 인증에 의한 시작<br/>Zone &gt; Add Zone &gt; Scheduled Unlock &gt; Started by User Authentication </p></td><td><p>1. Relay Off로 유지된다.<br/>&gt; 로그상 Normal로 표시</p></td></tr><tr><td>11</td><td><p><span class=\"error\">&#91;사용자 인증에 의한 시작: 활성화&#93;</span><br/>1. Schedule Unlock으로 동작중<br/>2. Manual Lock<br/>3. Master Reboot<br/>4. Door Status&gt; 해제<br/>5. 인증 후 동작확인</p></td><td><p>인증<br/>&gt; Schedule Unlock Zone의 Access Group에 속하지 않은 사용자</p></td><td><p>1. Open Time만큼 Relay On되었다가 Relay Off로 동작한다.</p></td></tr><tr><td>12</td><td><p><span class=\"error\">&#91;사용자 인증에 의한 시작: 활성화&#93;</span><br/>1. Schedule Unlock으로 동작중<br/>2. Manual Lock<br/>3. Master Reboot<br/>4. Door Status&gt; 해제<br/>5. 인증 후 동작확인</p></td><td><p>인증<br/>&gt; Schedule Unlock Zone의 Access Group에 속한 사용자</p></td><td><p>1. Unlock을 유지한다.</p></td></tr><tr><td>13</td><td><p>1. Schedule Lock으로 동작중<br/>2. Manual Unlock<br/>3. Master Reboot<br/>4. Door Status&gt; 상태확인 및 동작확인</p></td><td></td><td><p>1. Manual Unlock으로 동작된다.<br/> &gt; 로그상 Schedule Lock, Manual Unlock으로 표시<br/> &gt; 인증 시 Schedule Lock에 의해 Alarm 발생<br/> 2. 로그 확인<br/> &gt; Scheduled lock zone started<br/> &gt; Door lock request by schedule<br/> &gt; Door locked</p></td></tr><tr><td>14</td><td><p>1. Schedule Lock으로 동작중<br/>2. Manual Unlock<br/>3. Master Reboot<br/>4. Door Status&gt; 해제<br/>5. 동작확인</p></td><td></td><td><p>1. Schedule Lock으로 동작된다.</p></td></tr><tr><td>15</td><td><p>1. Door&gt; Add Door&gt; Door 생성<br/>2. Monitoring&gt; Door Status&gt; Manual Unlock 버튼 클릭&gt; Door 상태 확인(Unlock)<br/>3. Master Reboot<br/>4. Door Status 확인 및 인증 후 동작 확인</p></td><td><p>Door 생성 - Relay(Master)<br/>&gt; 단일장치<br/>&gt; RS 485 연결 장치</p></td><td><p>1. Door가 Unlock 상태를 유지해야한다.<br/>2. Unlock 로그만 발생한다.<br/>&gt; Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock으로 표시되어야 한다.<br/>&gt; 경광등 연결하여 Relay On 동작 확인</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [
+      "COMMONR-51"
     ],
-    [
-      3,
-      "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Unlock 버튼 클릭> Door 상태 확인(Unlock)\n3. Release 버튼 클릭> Door 상태확인(Lock)\n4. 장치 Reboot\n5. 부팅완료 후 Door 상태확인",
-      "Door 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치",
-      "부팅완료 후 Lock 상태를 유지해야 한다.\n> 로그확인 및 부팅시  Relay 미발생 확인\n> Door unlock request by operator / Door unlocked\n> Door release request by operator / Door locked"
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 13178,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 34693,
+              "latestFinalId": 34693
+            },
+            {
+              "environment": "ES1",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29829,
+              "latestFinalId": 29829
+            },
+            {
+              "environment": "BioStarV2.9.6.30",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29829,
+              "latestFinalId": 29829
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_170117(UnitTest)",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 5629,
+              "latestFinalId": 5629
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180329",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10297,
+              "latestFinalId": 10297
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_190805_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15211,
+              "latestFinalId": 15211
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.2.8_20160603",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 1752,
+              "latestFinalId": 1752
+            }
+          ]
+        },
+        {
+          "group": "FL_V1.0_190515(PS)",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 14124,
+              "latestFinalId": 14124
+            }
+          ]
+        },
+        {
+          "group": "V1.7.1_181204(Hotfix)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12640,
+              "latestFinalId": 12640
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_181210_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12747,
+              "latestFinalId": 12747
+            }
+          ]
+        },
+        {
+          "group": "V1.1.5_4_151014(All)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 76,
+              "latestFinalId": 76
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0 170331",
+          "statusResults": [
+            {
+              "latest": 1,
+              "latestFinal": 0,
+              "latestId": 8611,
+              "latestFinalId": 6340
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_181119_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12922,
+              "latestFinalId": 12922
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_190809_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15572,
+              "latestFinalId": 15572
+            }
+          ]
+        },
+        {
+          "group": "V1.8.0_190806_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15298,
+              "latestFinalId": 15298
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180322",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10117,
+              "latestFinalId": 10117
+            }
+          ]
+        },
+        {
+          "group": "V1.7.0_190806_Interaction 7차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15058,
+              "latestFinalId": 15058
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.1.5_5 - 20151016(All)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 5233,
+              "latestFinalId": 5233
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_190806_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15411,
+              "latestFinalId": 15411
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_20200601_Interaction 12차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 17143,
+              "latestFinalId": 17143
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "Monitoring - Door Status",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 2041,
+          "index": 1,
+          "step": "<장치간 RS485 연결>\n1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Open 버튼 클릭\n3. Open time대로 동작되는지 확인",
+          "data": "Door 생성시 Open Time 확인\n: 3초/5초/10초/15초/30초/1분/3분/5분/10분/15분",
+          "result": "Open 클릭시 Unlocked으로 동작되어야 하고, 설정된 Open time이 지나면 다시 Locked으로 동작되어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 14396,
+          "index": 2,
+          "step": "[Door 생성]\n1. Monitoring> Door Status> Open 버튼 클릭\n2. Biostar2 Log 확인",
+          "data": "[BDP-518]",
+          "result": "1. Door에 설정된 Open Time 만큼 Unlocked 으로 동작된다.\n> 국문: 관리자에 의한 출입문 개방요청\n> 영문: Door open request by operator",
+          "attachments": []
+        },
+        {
+          "id": 2042,
+          "index": 3,
+          "step": "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Unlock 버튼 클릭> Door 상태 확인(Unlock)\n3. Release 버튼 클릭> Door 상태확인(Lock)\n4. 장치 Reboot\n5. 부팅완료 후 Door 상태확인",
+          "data": "Door 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치",
+          "result": "부팅완료 후 Lock 상태를 유지해야 한다.\n> 로그확인 및 부팅시  Relay 미발생 확인\n> Door unlock request by operator / Door unlocked\n> Door release request by operator / Door locked",
+          "attachments": []
+        },
+        {
+          "id": 2043,
+          "index": 4,
+          "step": "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Lock 버튼 클릭> Door 상태 확인(Lock)\n3. Release 버튼 클릭> Door 상태확인\n4. 장치 Reboot\n5. 부팅완료 후 Door 상태확인",
+          "data": "Door 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치",
+          "result": "부팅완료 후 인증시 Unlock으로 동작후 Open Time이 지나면 Lock으로 동작되어야 한다.\n> 로그확인 및 부팅시 Relay 미발생, 인증 시 Relay 발생 확인\n> Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock으로 표시되어야 한다.\n> Door lock request by operator / Door locked\n> Door release request by operator / Door locked",
+          "attachments": []
+        },
+        {
+          "id": 2189,
+          "index": 5,
+          "step": "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Unlock 버튼 클릭> Door 상태 확인(Unlock)",
+          "data": "Door 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치",
+          "result": "1. Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock 으로 표시되어야 한다.\n3. 로그 확인\n> Door unlock request by operator / Door unlocked",
+          "attachments": []
+        },
+        {
+          "id": 2202,
+          "index": 6,
+          "step": "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Lock 버튼 클릭> Door 상태 확인",
+          "data": "Door 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치",
+          "result": "1. Door가 Lock 상태를 유지해야한다.\n2. Lock 로그만 발생한다.\n> Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock으로 표시되어야 한다.\n> Door lock request by operator / Door locked\n",
+          "attachments": []
+        },
+        {
+          "id": 12125,
+          "index": 7,
+          "step": "[사용자 인증에 의한 시작: 비활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 상태확인 및 동작확인",
+          "data": "사용자 인증에 의한 시작\nZone > Add Zone > Scheduled Unlock > Started by User Authentication ",
+          "result": "1. Manual Lock으로 동작된다.\n> 로그상 Schedule Unlock, Manual Lock으로 표시\n2. 로그 확인\n> Scheduled unlock zone started(Door)\n> Door unlock request by schedule\n> Door unlocked",
+          "attachments": []
+        },
+        {
+          "id": 12126,
+          "index": 8,
+          "step": "[사용자 인증에 의한 시작: 비활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 해제\n5. 동작확인",
+          "data": "사용자 인증에 의한 시작\nZone > Add Zone > Scheduled Unlock > Started by User Authentication ",
+          "result": "1. Schedule Unlock으로 동작된다.",
+          "attachments": []
+        },
+        {
+          "id": 12127,
+          "index": 9,
+          "step": "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 상태확인 및 동작확인",
+          "data": "사용자 인증에 의한 시작\nZone > Add Zone > Scheduled Unlock > Started by User Authentication ",
+          "result": "1. Manual Lock으로 동작된다.\n> 로그상 Manual Lock으로 표시",
+          "attachments": []
+        },
+        {
+          "id": 12128,
+          "index": 10,
+          "step": "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 해제\n5. 동작확인",
+          "data": "사용자 인증에 의한 시작\nZone > Add Zone > Scheduled Unlock > Started by User Authentication ",
+          "result": "1. Relay Off로 유지된다.\n> 로그상 Normal로 표시",
+          "attachments": []
+        },
+        {
+          "id": 12129,
+          "index": 11,
+          "step": "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 해제\n5. 인증 후 동작확인",
+          "data": "인증\n> Schedule Unlock Zone의 Access Group에 속하지 않은 사용자",
+          "result": "1. Open Time만큼 Relay On되었다가 Relay Off로 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 12130,
+          "index": 12,
+          "step": "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 해제\n5. 인증 후 동작확인",
+          "data": "인증\n> Schedule Unlock Zone의 Access Group에 속한 사용자",
+          "result": "1. Unlock을 유지한다.",
+          "attachments": []
+        },
+        {
+          "id": 12131,
+          "index": 13,
+          "step": "1. Schedule Lock으로 동작중\n2. Manual Unlock\n3. Master Reboot\n4. Door Status> 상태확인 및 동작확인",
+          "data": "",
+          "result": "1. Manual Unlock으로 동작된다.\n > 로그상 Schedule Lock, Manual Unlock으로 표시\n > 인증 시 Schedule Lock에 의해 Alarm 발생\n 2. 로그 확인\n > Scheduled lock zone started\n > Door lock request by schedule\n > Door locked",
+          "attachments": []
+        },
+        {
+          "id": 12132,
+          "index": 14,
+          "step": "1. Schedule Lock으로 동작중\n2. Manual Unlock\n3. Master Reboot\n4. Door Status> 해제\n5. 동작확인",
+          "data": "",
+          "result": "1. Schedule Lock으로 동작된다.",
+          "attachments": []
+        },
+        {
+          "id": 13919,
+          "index": 15,
+          "step": "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Unlock 버튼 클릭> Door 상태 확인(Unlock)\n3. Master Reboot\n4. Door Status 확인 및 인증 후 동작 확인",
+          "data": "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치",
+          "result": "1. Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock으로 표시되어야 한다.\n> 경광등 연결하여 Relay On 동작 확인",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/13178/comment/21253",
+          "id": "21253",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "1. Normal 상태의 Door 에 대하여 \"Open\" 을 시도하면 해당 Door에 설정된 시간동안 Unlock 되었다가 Lock 상태로 바뀜.",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-09-18T12:53:55.000+0900",
+          "updated": "2015-09-18T13:49:58.000+0900"
+        },
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/13178/comment/21254",
+          "id": "21254",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "2. Operator Lock/Unlock 상태인 Door 에 대하여 \"Open\" 을 시도하더라도 해당 Door 의 상태는 바뀌지 않음.",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-09-18T13:12:35.000+0900",
+          "updated": "2015-09-18T14:04:49.000+0900"
+        },
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/13178/comment/21256",
+          "id": "21256",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "3. Operator Lock/Unlock 상태인 Door 에 대하여 인증에 성공하더라도 Door 상태는 바뀌지 않음.",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-09-18T13:30:55.000+0900",
+          "updated": "2015-09-18T14:08:05.000+0900"
+        },
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/13178/comment/21257",
+          "id": "21257",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "4. Operator Lock/Unlock 상태는 \"Release\" 가 될 때까지 해제되지 않음.(장치가 reboot 되어도 유지됨.)",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-09-18T13:47:16.000+0900",
+          "updated": "2015-09-18T14:06:28.000+0900"
+        },
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/13178/comment/21258",
+          "id": "21258",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "5. Operator Lock 상태인 Door 를 포함하는 FireAlarmZone 이 Alarm 상태가 되면 해당 Door 는 즉시 unlock 되고 Alarm 이 해제되면 다시 Operator Lock 상태가 됨.",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-09-18T13:51:04.000+0900",
+          "updated": "2015-09-18T16:01:41.000+0900"
+        },
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/13178/comment/21261",
+          "id": "21261",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "6. 일시 잠금해제 상태인 Door 에 대하여 인증이나 \"Open\" 을 시도하면 해당 Door 에 대한 unlock 상태가 연장되나 Operator Lock 을 시도하면 즉시 lock 상태가 됨.",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-09-18T16:01:13.000+0900",
+          "updated": "2015-09-18T16:01:54.000+0900"
+        }
+      ],
+      "maxResults": 6,
+      "total": 6,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+      "name": "Minor (C)",
+      "id": "3"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+      "name": "완료",
+      "id": "10001",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "완료"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzrxqn:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2015-09-15T09:35:05.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [
+      {
+        "self": "https://jira.suprema.co.kr/rest/api/2/attachment/120242",
+        "id": "120242",
+        "filename": "image-2024-12-17-11-05-25-608.png",
+        "author": {
+          "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EC%B0%A8%EB%82%A8%EA%B8%B0",
+          "name": "차남기",
+          "key": "JIRAUSER14012",
+          "emailAddress": "ngcha@suprema.co.kr",
+          "avatarUrls": {
+            "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+            "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+            "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+            "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+          },
+          "displayName": "차남기",
+          "active": true,
+          "timeZone": "Asia/Seoul"
+        },
+        "created": "2024-12-17T11:05:27.000+0900",
+        "size": 10353695,
+        "mimeType": "image/png",
+        "content": "https://jira.suprema.co.kr/secure/attachment/120242/image-2024-12-17-11-05-25-608.png",
+        "thumbnail": "https://jira.suprema.co.kr/secure/thumbnail/120242/_thumb_120242.png"
+      }
     ],
-    [
-      4,
-      "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Lock 버튼 클릭> Door 상태 확인(Lock)\n3. Release 버튼 클릭> Door 상태확인\n4. 장치 Reboot\n5. 부팅완료 후 Door 상태확인",
-      "Door 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치",
-      "부팅완료 후 인증시 Unlock으로 동작후 Open Time이 지나면 Lock으로 동작되어야 한다.\n> 로그확인 및 부팅시 Relay 미발생, 인증 시 Relay 발생 확인\n> Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock으로 표시되어야 한다.\n> Door lock request by operator / Door locked\n> Door release request by operator / Door locked"
-    ],
-    [
-      5,
-      "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Unlock 버튼 클릭> Door 상태 확인(Unlock)",
-      "Door 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치",
-      "1. Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock 으로 표시되어야 한다.\n3. 로그 확인\n> Door unlock request by operator / Door unlocked"
-    ],
-    [
-      6,
-      "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Lock 버튼 클릭> Door 상태 확인",
-      "Door 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치",
-      "1. Door가 Lock 상태를 유지해야한다.\n2. Lock 로그만 발생한다.\n> Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock으로 표시되어야 한다.\n> Door lock request by operator / Door locked\n"
-    ],
-    [
-      7,
-      "[사용자 인증에 의한 시작: 비활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 상태확인 및 동작확인",
-      "사용자 인증에 의한 시작\nZone > Add Zone > Scheduled Unlock > Started by User Authentication ",
-      "1. Manual Lock으로 동작된다.\n> 로그상 Schedule Unlock, Manual Lock으로 표시\n2. 로그 확인\n> Scheduled unlock zone started(Door)\n> Door unlock request by schedule\n> Door unlocked"
-    ],
-    [
-      8,
-      "[사용자 인증에 의한 시작: 비활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 해제\n5. 동작확인",
-      "사용자 인증에 의한 시작\nZone > Add Zone > Scheduled Unlock > Started by User Authentication ",
-      "1. Schedule Unlock으로 동작된다."
-    ],
-    [
-      9,
-      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 상태확인 및 동작확인",
-      "사용자 인증에 의한 시작\nZone > Add Zone > Scheduled Unlock > Started by User Authentication ",
-      "1. Manual Lock으로 동작된다.\n> 로그상 Manual Lock으로 표시"
-    ],
-    [
-      10,
-      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 해제\n5. 동작확인",
-      "사용자 인증에 의한 시작\nZone > Add Zone > Scheduled Unlock > Started by User Authentication ",
-      "1. Relay Off로 유지된다.\n> 로그상 Normal로 표시"
-    ],
-    [
-      11,
-      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 해제\n5. 인증 후 동작확인",
-      "인증\n> Schedule Unlock Zone의 Access Group에 속하지 않은 사용자",
-      "1. Open Time만큼 Relay On되었다가 Relay Off로 동작한다."
-    ],
-    [
-      12,
-      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 해제\n5. 인증 후 동작확인",
-      "인증\n> Schedule Unlock Zone의 Access Group에 속한 사용자",
-      "1. Unlock을 유지한다."
-    ],
-    [
-      13,
-      "1. Schedule Lock으로 동작중\n2. Manual Unlock\n3. Master Reboot\n4. Door Status> 상태확인 및 동작확인",
-      "",
-      "1. Manual Unlock으로 동작된다.\n > 로그상 Schedule Lock, Manual Unlock으로 표시\n > 인증 시 Schedule Lock에 의해 Alarm 발생\n 2. 로그 확인\n > Scheduled lock zone started\n > Door lock request by schedule\n > Door locked"
-    ],
-    [
-      14,
-      "1. Schedule Lock으로 동작중\n2. Manual Unlock\n3. Master Reboot\n4. Door Status> 해제\n5. 동작확인",
-      "",
-      "1. Schedule Lock으로 동작된다."
-    ],
-    [
-      15,
-      "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Unlock 버튼 클릭> Door 상태 확인(Unlock)\n3. Master Reboot\n4. Door Status 확인 및 인증 후 동작 확인",
-      "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치",
-      "1. Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock으로 표시되어야 한다.\n> 경광등 연결하여 Relay On 동작 확인"
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-95",
-    "description": "",
-    "test_step": [
-      "<장치간 RS485 연결>\n1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Open 버튼 클릭\n3. Open time대로 동작되는지 확인",
-      "[Door 생성]\n1. Monitoring> Door Status> Open 버튼 클릭\n2. Biostar2 Log 확인",
-      "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Unlock 버튼 클릭> Door 상태 확인(Unlock)\n3. Release 버튼 클릭> Door 상태확인(Lock)\n4. 장치 Reboot\n5. 부팅완료 후 Door 상태확인",
-      "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Lock 버튼 클릭> Door 상태 확인(Lock)\n3. Release 버튼 클릭> Door 상태확인\n4. 장치 Reboot\n5. 부팅완료 후 Door 상태확인",
-      "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Unlock 버튼 클릭> Door 상태 확인(Unlock)",
-      "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Lock 버튼 클릭> Door 상태 확인",
-      "[사용자 인증에 의한 시작: 비활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 상태확인 및 동작확인",
-      "[사용자 인증에 의한 시작: 비활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 해제\n5. 동작확인",
-      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 상태확인 및 동작확인",
-      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 해제\n5. 동작확인",
-      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 해제\n5. 인증 후 동작확인",
-      "[사용자 인증에 의한 시작: 활성화]\n1. Schedule Unlock으로 동작중\n2. Manual Lock\n3. Master Reboot\n4. Door Status> 해제\n5. 인증 후 동작확인",
-      "1. Schedule Lock으로 동작중\n2. Manual Unlock\n3. Master Reboot\n4. Door Status> 상태확인 및 동작확인",
-      "1. Schedule Lock으로 동작중\n2. Manual Unlock\n3. Master Reboot\n4. Door Status> 해제\n5. 동작확인",
-      "1. Door> Add Door> Door 생성\n2. Monitoring> Door Status> Manual Unlock 버튼 클릭> Door 상태 확인(Unlock)\n3. Master Reboot\n4. Door Status 확인 및 인증 후 동작 확인"
-    ],
-    "data": [
-      "Door 생성시 Open Time 확인\n: 3초/5초/10초/15초/30초/1분/3분/5분/10분/15분",
-      "[BDP-518]",
-      "Door 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치",
-      "Door 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치",
-      "Door 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치",
-      "Door 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치",
-      "사용자 인증에 의한 시작\nZone > Add Zone > Scheduled Unlock > Started by User Authentication ",
-      "사용자 인증에 의한 시작\nZone > Add Zone > Scheduled Unlock > Started by User Authentication ",
-      "사용자 인증에 의한 시작\nZone > Add Zone > Scheduled Unlock > Started by User Authentication ",
-      "사용자 인증에 의한 시작\nZone > Add Zone > Scheduled Unlock > Started by User Authentication ",
-      "인증\n> Schedule Unlock Zone의 Access Group에 속하지 않은 사용자",
-      "인증\n> Schedule Unlock Zone의 Access Group에 속한 사용자",
-      "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치"
-    ],
-    "expected_result": [
-      "Open 클릭시 Unlocked으로 동작되어야 하고, 설정된 Open time이 지나면 다시 Locked으로 동작되어야 한다.",
-      "1. Door에 설정된 Open Time 만큼 Unlocked 으로 동작된다.\n> 국문: 관리자에 의한 출입문 개방요청\n> 영문: Door open request by operator",
-      "부팅완료 후 Lock 상태를 유지해야 한다.\n> 로그확인 및 부팅시  Relay 미발생 확인\n> Door unlock request by operator / Door unlocked\n> Door release request by operator / Door locked",
-      "부팅완료 후 인증시 Unlock으로 동작후 Open Time이 지나면 Lock으로 동작되어야 한다.\n> 로그확인 및 부팅시 Relay 미발생, 인증 시 Relay 발생 확인\n> Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock으로 표시되어야 한다.\n> Door lock request by operator / Door locked\n> Door release request by operator / Door locked",
-      "1. Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock 으로 표시되어야 한다.\n3. 로그 확인\n> Door unlock request by operator / Door unlocked",
-      "1. Door가 Lock 상태를 유지해야한다.\n2. Lock 로그만 발생한다.\n> Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock으로 표시되어야 한다.\n> Door lock request by operator / Door locked\n",
-      "1. Manual Lock으로 동작된다.\n> 로그상 Schedule Unlock, Manual Lock으로 표시\n2. 로그 확인\n> Scheduled unlock zone started(Door)\n> Door unlock request by schedule\n> Door unlocked",
-      "1. Schedule Unlock으로 동작된다.",
-      "1. Manual Lock으로 동작된다.\n> 로그상 Manual Lock으로 표시",
-      "1. Relay Off로 유지된다.\n> 로그상 Normal로 표시",
-      "1. Open Time만큼 Relay On되었다가 Relay Off로 동작한다.",
-      "1. Unlock을 유지한다.",
-      "1. Manual Unlock으로 동작된다.\n > 로그상 Schedule Lock, Manual Unlock으로 표시\n > 인증 시 Schedule Lock에 의해 Alarm 발생\n 2. 로그 확인\n > Scheduled lock zone started\n > Door lock request by schedule\n > Door locked",
-      "1. Schedule Lock으로 동작된다.",
-      "1. Door가 Unlock 상태를 유지해야한다.\n2. Unlock 로그만 발생한다.\n> Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock으로 표시되어야 한다.\n> 경광등 연결하여 Relay On 동작 확인"
-    ]
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

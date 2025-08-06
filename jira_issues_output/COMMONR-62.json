@@ -1,240 +1,3112 @@
 {
-  "id": "COMMONR-62",
-  "content": [
-    [
-      1,
-      "1. Setting > Card Format > Smart Card\n2. Smart Card Layout 추가\n3. 장치> Smart Card Layout 설정\n4. User> 기 등록된 사용자 선택> Card> SmartCard> 사용자 정보 Write",
-      "카드발급\n> Mifare / Mifare Plus Card\n> DesFire EV1/EV2 Card\n> iClass / iClass SE Card\n\nSmart Card\n> AOC/SCC",
-      "사용자 정보가 카드에 Write 되어야 한다.\n> 카드에 Write할 메모리가 여유로울 경우 Wite되어야 한다.\n> 카드에 Write할 메모리가 부족할 경우 Wite 중 실패되어야 한다.\n=> Device Timeout 팝업 발생"
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "12752",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/12752",
+  "key": "COMMONR-62",
+  "fields": {
+    "resolution": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/resolution/10000",
+      "id": "10000",
+      "description": "[사용안함] Work has been completed on this issue.",
+      "name": "완료(Done)"
+    },
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "1.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": null,
+    "customfield_10185": null,
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "12159",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12159",
+        "type": {
+          "id": "10001",
+          "name": "Cloners",
+          "inward": "is cloned by",
+          "outward": "clones",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10001"
+        },
+        "inwardIssue": {
+          "id": "16485",
+          "key": "COMMONR-126",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16485",
+          "fields": {
+            "summary": "인증 - BioStar_Mobile Card(NFC지원 / BLE지원)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "할 일",
+              "id": "10000",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "Represents a Test",
+              "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+              "name": "Test",
+              "subtask": false
+            }
+          }
+        }
+      },
+      {
+        "id": "21432",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/21432",
+        "type": {
+          "id": "10001",
+          "name": "Cloners",
+          "inward": "is cloned by",
+          "outward": "clones",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10001"
+        },
+        "inwardIssue": {
+          "id": "27665",
+          "key": "COMMONR-244",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/27665",
+          "fields": {
+            "summary": "인증 - Secure Credential/Access On 카드(DESFire Advanced)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "할 일",
+              "id": "10000",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "Represents a Test",
+              "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+              "name": "Test",
+              "subtask": false
+            }
+          }
+        }
+      },
+      {
+        "id": "15578",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/15578",
+        "type": {
+          "id": "10001",
+          "name": "Cloners",
+          "inward": "is cloned by",
+          "outward": "clones",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10001"
+        },
+        "inwardIssue": {
+          "id": "21058",
+          "key": "TIIR-164",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/21058",
+          "fields": {
+            "summary": "Smart Card(AOC/SCC) - iClass SEOS Card(Elite Key)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "할 일",
+              "id": "10000",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "Represents a Test",
+              "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+              "name": "Test",
+              "subtask": false
+            }
+          }
+        }
+      },
+      {
+        "id": "13102",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13102",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16444",
+          "key": "ENTRYIIDII-271",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16444",
+          "fields": {
+            "summary": "[Hotfix V2.2.5 BEWI] 장치에 설정된 Layout과 다른 Smart Card로 인증 성공 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13059",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13059",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18087",
+          "key": "ENTRYIIDII-388",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18087",
+          "fields": {
+            "summary": "관리자 메뉴 진입 시도 후 AOC 사용자의 카드로 인증 결과 발생 확인 후 일반 인증 시 LED가 분홍색으로 유지되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "24196",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/24196",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "31408",
+          "key": "FLFW-452",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/31408",
+          "fields": {
+            "summary": "[Desfire EV1 Advanced] 기 발급된 Desfire EV1 Advanced Card에 대해서 인식률이 떨어지는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "20743",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/20743",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "25380",
+          "key": "TIIDFI-1874",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/25380",
+          "fields": {
+            "summary": "iClass SE 32K로 지문 4개 스마트 카드 발급이 되지 않음",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/4",
+              "description": "이 이슈는 한번 해결되었지만 해결책이 올바르지 않았던 것 같습니다. 지금부터는 이슈가 할당된 것으로 표기되거나 해결된 것으로 표기할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/reopened.png",
+              "name": "다시 열림",
+              "id": "4",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "22949",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/22949",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "29726",
+          "key": "XPASSII-41",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/29726",
+          "fields": {
+            "summary": "DesFire_AES 타입에 대해 Format 안되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "16440",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/16440",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "21868",
+          "key": "BERII-14",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/21868",
+          "fields": {
+            "summary": "SCC에 대해서 인증 시 인증 실패가 발생하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19778",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19778",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "25343",
+          "key": "BLNIIFW-286",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/25343",
+          "fields": {
+            "summary": "iClass 관련하여 Smart Card 발급이 안되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "26886",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/26886",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "35636",
+          "key": "BLNIIFW-828",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/35636",
+          "fields": {
+            "summary": "[DESFire EV1 Advanced/Normal] DES/AES Encryption Mode에서 발급된 AOC 인식 오류(Crad CRC Error)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19717",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19717",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "25232",
+          "key": "BSIIDII-1001",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/25232",
+          "fields": {
+            "summary": "Primary Key를 Default 포함하여 1회 Key를 변경한 후 다시 New Primary Key나 Default로 설정 시 iClass AOC.SCC가 발급이 안되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "48463",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/48463",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "58218",
+          "key": "DFW-1021",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/58218",
+          "fields": {
+            "summary": "얼굴 포함 SCC 카드 발급하여 인증 시 호환되지 않는 얼굴 템플릿입니다. 팝업창뜨는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14430",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14430",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19630",
+          "key": "FSTIIFW-105",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19630",
+          "fields": {
+            "summary": "장치 인증모드가 카드 관련 복합 인증 모드일때, 기 발급된 Smart Card로 인증 불가한 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19719",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19719",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "25231",
+          "key": "FSTIIFW-873",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/25231",
+          "fields": {
+            "summary": "Primary Key를 Default 포함하여 1회 Key를 변경한 후 다시 New Primary Key나 Default로 설정 시 iClass AOC.SCC가 발급이 안되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14271",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14271",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19442",
+          "key": "TIIDFI-855",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19442",
+          "fields": {
+            "summary": "OIPW장치에서 기발급된 Secure Credential Card에 대해서 Read는 정상 동작을 하나, Write가 실패하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "53304",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/53304",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "62461",
+          "key": "BEW3FW-144",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/62461",
+          "fields": {
+            "summary": "특정 시료에서 AoC 카드 인증되지 않는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13074",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13074",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "17114",
+          "key": "BEWIIFWDI-174",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17114",
+          "fields": {
+            "summary": "CSN 타입의 카드 ID를 Wiegand Format을 적용하여 변경한 경우 카드 ID 타입이 CSN으로 남아있는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13506",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13506",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18320",
+          "key": "BEWIIFWDI-231",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18320",
+          "fields": {
+            "summary": "[V1.x Card] V1.x TOC 발급 후 Auto Tool에서 1.x Card 인식 시 Slave 장치에 대해서는 설정을 할 수 없어 동작이 안되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11580",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11580",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "15488",
+          "key": "BLIIFWI-343",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/15488",
+          "fields": {
+            "summary": "BioStar에서 Secure Credential Card 및 Access On Card 등록 및 포맷이 안되는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "17381",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/17381",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "23085",
+          "key": "BLIIFWI-744",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/23085",
+          "fields": {
+            "summary": "[Tester:김용성] AOC 카드에 Write된 개인인증모드로 동작하지 않는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19945",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19945",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "25533",
+          "key": "BLNIIFW-320",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/25533",
+          "fields": {
+            "summary": "[iClass AOC/SCC] 2K에 대해서 지문 없이 Card ID만으로 발급이 안되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14762",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14762",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "20077",
+          "key": "FSTIIFW-285",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/20077",
+          "fields": {
+            "summary": "Smart Card 발급한 Key와 Read한 Key가 상이함에도 발급된 카드정보를 읽어오는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14775",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14775",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "20088",
+          "key": "FSTIIFW-293",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/20088",
+          "fields": {
+            "summary": "[Smart Card] Default 적용 시 Fail 발생",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12360",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12360",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16874",
+          "key": "BEWIIFWDI-151",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16874",
+          "fields": {
+            "summary": "Station 장치에서 DesFire Card로 Smart Card 를 발급할 경우 Entry Device에서의 발급과정과 상이한 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14824",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14824",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "20151",
+          "key": "FSTIIFW-322",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/20151",
+          "fields": {
+            "summary": "[V1.x Card-iClass] V1.x TOC(iClass) 발급 후 Auto Tool에서 1.x Card 인식 시 인식이 안되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13134",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13134",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "inwardIssue": {
+          "id": "18048",
+          "key": "BLIIFWI-513",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18048",
+          "fields": {
+            "summary": "[Requirement]Access On Card에 개인인증 모드 추가",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "11159",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11159",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "14771",
+          "key": "BEWIIFWDI-15",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/14771",
+          "fields": {
+            "summary": "[Requirement] 인증 - Secure Credential/Access On 카드",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "13182",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13182",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "18040",
+          "key": "ENTRYIIDII-384",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18040",
+          "fields": {
+            "summary": "[Requirement]ISO14443A 카드 처리시 RID는 무시하도록 처리",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/5",
+              "description": "해결책이 제시되었고 보고자의 확인을 기다리는 중입니다. 지금부터는 이슈를 다시 열거나 이슈를 닫을 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/resolved.png",
+              "name": "해결됨",
+              "id": "5",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "13152",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13152",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "18045",
+          "key": "ENTRYIIDII-385",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18045",
+          "fields": {
+            "summary": "[Requirement]Access On Card에 개인인증 모드 추가",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/5",
+              "description": "해결책이 제시되었고 보고자의 확인을 기다리는 중입니다. 지금부터는 이슈를 다시 열거나 이슈를 닫을 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/resolved.png",
+              "name": "해결됨",
+              "id": "5",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "13174",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13174",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "18044",
+          "key": "BEWIIFWDI-211",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18044",
+          "fields": {
+            "summary": "[Requirement]ISO14443A 카드 처리시 RID는 무시하도록 처리",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "13132",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13132",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "18049",
+          "key": "BEWIIFWDI-212",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18049",
+          "fields": {
+            "summary": "[Requirement]Access On Card에 개인인증 모드 추가",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "13176",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13176",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "18043",
+          "key": "BLIIFWI-512",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18043",
+          "fields": {
+            "summary": "[Requirement]ISO14443A 카드 처리시 RID는 무시하도록 처리",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "13178",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13178",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "18041",
+          "key": "BSIIDII-349",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18041",
+          "fields": {
+            "summary": "[Requirement]ISO14443A 카드 처리시 RID는 무시하도록 처리",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "13150",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13150",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "18046",
+          "key": "BSIIDII-350",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18046",
+          "fields": {
+            "summary": "[Requirement]Access On Card에 개인인증 모드 추가",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "13180",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13180",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "18042",
+          "key": "TIIDFI-717",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18042",
+          "fields": {
+            "summary": "[Requirement]ISO14443A 카드 처리시 RID는 무시하도록 처리",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12763",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12763",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "16103",
+          "key": "BEWIIFWDI-83",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16103",
+          "fields": {
+            "summary": "[Requirement]V1.x Template On Card를 V2.x 장치에서 지원하는 기능",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12762",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12762",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "16208",
+          "key": "BLIIFWI-403",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16208",
+          "fields": {
+            "summary": "[Requirement]V1.x Template On Card를 V2.x 장치에서 지원하는 기능",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12765",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12765",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "16100",
+          "key": "BSIIDII-254",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16100",
+          "fields": {
+            "summary": "[Requirement] V1.x Template On Card를 V2.x 장치에서 지원하는 기능",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12764",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12764",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "16101",
+          "key": "TIIDFI-567",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16101",
+          "fields": {
+            "summary": "[Requirement] V1.x Template On Card를 V2.x 장치에서 지원하는 기능",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10428",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10428",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "12941",
+          "key": "TIIDFI-53",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12941",
+          "fields": {
+            "summary": "[Requirement] 인증 - Secure Credential/Access On 카드",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10810",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10810",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "13906",
+          "key": "BLIIFWI-152",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/13906",
+          "fields": {
+            "summary": "[Requirement] 인증 - Secure Credential/Access On 카드",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "13151",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13151",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "18047",
+          "key": "TIIDFI-718",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18047",
+          "fields": {
+            "summary": "[Requirement]Access On Card에 개인인증 모드 추가",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      },
+      {
+        "id": "18437",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/18437",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "23524",
+          "key": "BSIIDII-821",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/23524",
+          "fields": {
+            "summary": "04. Interaction - Access On Card에 Private Auth 지원",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10200",
+              "id": "10200",
+              "description": "개별 Interaction 관리용 타입",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10304&avatarType=issuetype",
+              "name": "Interaction",
+              "subtask": false,
+              "avatarId": 10304
+            }
+          }
+        }
+      },
+      {
+        "id": "18446",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/18446",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "23597",
+          "key": "BSIIDII-835",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/23597",
+          "fields": {
+            "summary": "07. Interaction - Access On Card 발급 후 DB에서 지문 삭제 여부 묻는 동작 추가 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10200",
+              "id": "10200",
+              "description": "개별 Interaction 관리용 타입",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10304&avatarType=issuetype",
+              "name": "Interaction",
+              "subtask": false,
+              "avatarId": 10304
+            }
+          }
+        }
+      },
+      {
+        "id": "18435",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/18435",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "23527",
+          "key": "FSTIIFW-672",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/23527",
+          "fields": {
+            "summary": "2017 - 2H 04. Interaction - Access On Card에 Private Auth 지원",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10200",
+              "id": "10200",
+              "description": "개별 Interaction 관리용 타입",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10304&avatarType=issuetype",
+              "name": "Interaction",
+              "subtask": false,
+              "avatarId": 10304
+            }
+          }
+        }
+      },
+      {
+        "id": "18448",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/18448",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "23600",
+          "key": "FSTIIFW-683",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/23600",
+          "fields": {
+            "summary": "2017 - 2H 07. Interaction - Access On Card 발급 후 DB에서 지문 삭제 여부 묻는 동작 추가 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10200",
+              "id": "10200",
+              "description": "개별 Interaction 관리용 타입",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10304&avatarType=issuetype",
+              "name": "Interaction",
+              "subtask": false,
+              "avatarId": 10304
+            }
+          }
+        }
+      },
+      {
+        "id": "18436",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/18436",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "23520",
+          "key": "TIIDFI-1558",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/23520",
+          "fields": {
+            "summary": "04. Interaction - Access On Card에 Private Auth 지원",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10200",
+              "id": "10200",
+              "description": "개별 Interaction 관리용 타입",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10304&avatarType=issuetype",
+              "name": "Interaction",
+              "subtask": false,
+              "avatarId": 10304
+            }
+          }
+        }
+      },
+      {
+        "id": "18444",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/18444",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "23594",
+          "key": "TIIDFI-1572",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/23594",
+          "fields": {
+            "summary": "07. Interaction - Access On Card 발급 후 DB에서 지문 삭제 여부 묻는 동작 추가 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10200",
+              "id": "10200",
+              "description": "개별 Interaction 관리용 타입",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10304&avatarType=issuetype",
+              "name": "Interaction",
+              "subtask": false,
+              "avatarId": 10304
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "1. Smart Card Layout 추가\n> 발급된 카드의 Key와 상이\n2. 장치> 위에서 추가한 Layout 설정\n3. 기 발급된 Smart Card 리드",
-      "카드발급\n> Mifare / Mifare Plus Card\n> DesFire EV1/EV2 Card\n> iClass / iClass SE Card\n\nSmart Card\n> AOC/SCC\n\n※ DESFire / DESFire EV1 경우 - App, File, Encryption Type 에 대해 기 발급된 카드와 동일하게 설정.\n\n",
-      "발급된 정보가 아닌 CSN으로 리드된다."
+    "assignee": null,
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 25.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-62/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@5138e4b1[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@212b7ff5[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@40b68108[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@3a188a3c[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@ce63819[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@35b22eed[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@41f85792[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@3f4f6cfb[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@254bdfb[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@26353e1a[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@2572a989[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@611e2168[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": "2016-02-25T13:30:44.000+0900",
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-62/watchers",
+      "watchCount": 2,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T10:20:18.000+0900",
+    "timeoriginalestimate": null,
+    "description": "BioStar에서 SmartCard Layout  설정 메뉴\r\n: Settings> Card Format> Smart Card\r\n\r\n장치에 SmrtCard Layout 적용\r\n: Device> 장치상세정보창> Smart Card Layout\r\n\r\n: Mifare / Mifare Plus Card\r\n   -: 시작 Block Index, 기본값 : 4\r\n: Mifare DesFire / Mifare DesFire EV1 Card\r\n   -: Application ID, 기본값 : 1, Max : 16777215\r\n   -: File ID, 기본값 : 1, Max : 32\r\n   -: Format이 필요함\r\n   -: Encryption : DES/3DES(Default), AES\r\n   -: Max App : 28, Max File : 32(1 Per Application - Desfire EV1), 16(1 Per Application - Desfire)\r\n: iClass / iClass SE Card\r\n   -: 시작 Block Index, 기본값 : 13\r\n\r\nV1.x Template On Card에 대한 V2.x Device의 호환 기능 제공\r\n\r\n& Secure Credential Card &\r\n1) Write\r\n > 영숫자 모드 : Card ID - Default(공란), 24 byte 범위 내에서 10진수 숫자를 1 부터 입력 지원\r\n > 숫자 모드 : 기존과 동일\r\n > 해당 카드 ID를 바이너리 데이터로 장치에 보내고, 장치에서는 Card ID 기반으로 표시하고, Wiegand Output 사용시 해당 Card ID 출력\r\n\r\n 2) Read\r\n > 발급된 Card ID를 그대로 읽음.\r\n\r\n% 주의 사항 %\r\n영숫자 모드에서 숫자 모드로 변경하는 경우에는 기존 사용자가 있으면 불가능하기 때문에, 보안 크리덴셜 카드를 보유하고 있는 모든 사용자들이 삭제됨\r\n따라서 기존 발급된 카드들은 미할당 카드 리스트에 존재함.\r\n(확인 필요) \r\n > 영숫자 모드에서 발급된 카드 ID를 숫자 모드인 시스템에서 읽는 경우 : 카드 ID는 4 byte 범위 내에서 잘려서 표시됨. (DE-620/Ominikey 에서도 동일) \r\n > 영숫자 모드가 지원 되지 않는 장치에서 읽으려고 한 경우에도 카드 ID는 4 byte 범위 내에서 잘려서 표시됨 (DE-620/Ominikey 에서도 동일) \r\n > 이에 따라 잘려서 읽힌다는 경고 메시지를 표시한다. (DE-620/Ominikey 에서도 동일) \r\n > Xpass, Xpass S2의 예전 영숫자를 지원하지 않는 FW에서도 위와 동일하다.\r\n(확인 필요)\r\n > 스마트 카드 포맷의 경우 영숫자 모드가 일치하지 않아도 FW 버전이 달라도 포맷 지원. 해당 카드 레이아웃만 일치하면 장치 종류에 상관 없이 가능함. 예) BLN, DE-620\r\n\r\n& Access On Card &\r\n1) Write\r\n > 영숫자 모드 : Card ID - User ID 그대로 표시하고 변경 불가능. 예) AAAA 라면 AAAA 라고 표시\r\n > 장치에서는 영숫자 방식인 경우 영숫자로 처리하고, 숫자인 경우 숫자로 구분하여 처리한다. 따라서 Wiegand Output 사용시 Card ID를 숫자로 내보내기 위해서는 숫자 모드 사용이 필요하다\r\n2) Read\r\n > 발급된 Card ID를 그대로 읽음.\r\n(확인필요) \r\n > 영숫자 모드에서 발급된 카드 ID를 숫자 모드인 시스템에서 읽는 경우 : 카드 ID를 읽지 못하고 오류를 발생. (DE-620/Ominikey 에서도 동일) \r\n > 영숫자 모드가 지원하지 않는 장치에서 읽으려고 한 경우에는 카드 ID를 읽지 못하고 오류를 발생. \r\n > Xpass, Xpass S2의 예전 영숫자를 지원하지 않는 FW에서도 위와 동일하다.\r\n(확인 필요) \r\n > 스마트 카드 포맷의 경우 영숫자 모드가 일치하지 않아도 FW 버전이 달라도 포맷 지원. 해당 카드 레이아웃만 일치하면 장치 종류에 상관 없이 가능. 예) BLN, DE-620\r\n\r\nCard 별 입력 범위\r\n> Mifare 입력 상세(12자)\r\nHex 값 입력 창에서 6 byte 범위로 0 부터 FFFF FFFF FFFF 까지 입력 가능\r\n> iClass 입력 상세(16자)\r\nHex 값 입력 창에서 8 byte 범위로 0 부터 FFFF FFFF FFFF FFFF 까지 입력 가능\r\n> Desfire 입력 상세(32자)\r\nHex 값 입력 창에서 16 Byte 범위로 0 부터 FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF 까지 입력 가능\r\n> iClass SEOS 입력 상세(32자)\r\nHex 값 입력 창에서 16 Byte 범위로 0 부터 FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF 까지 입력 가능\r\n",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. Setting &gt; Card Format &gt; Smart Card<br/>2. Smart Card Layout 추가<br/>3. 장치&gt; Smart Card Layout 설정<br/>4. User&gt; 기 등록된 사용자 선택&gt; Card&gt; SmartCard&gt; 사용자 정보 Write</p></td><td><p>카드발급<br/>&gt; Mifare / Mifare Plus Card<br/>&gt; DesFire EV1/EV2 Card<br/>&gt; iClass / iClass SE Card</p>\n\n<p>Smart Card<br/>&gt; AOC/SCC</p></td><td><p>사용자 정보가 카드에 Write 되어야 한다.<br/>&gt; 카드에 Write할 메모리가 여유로울 경우 Wite되어야 한다.<br/>&gt; 카드에 Write할 메모리가 부족할 경우 Wite 중 실패되어야 한다.<br/>=&gt; Device Timeout 팝업 발생</p></td></tr><tr><td>2</td><td><p>1. Smart Card Layout 추가<br/>&gt; 발급된 카드의 Key와 상이<br/>2. 장치&gt; 위에서 추가한 Layout 설정<br/>3. 기 발급된 Smart Card 리드</p></td><td><p>카드발급<br/>&gt; Mifare / Mifare Plus Card<br/>&gt; DesFire EV1/EV2 Card<br/>&gt; iClass / iClass SE Card</p>\n\n<p>Smart Card<br/>&gt; AOC/SCC</p>\n\n<p>※ DESFire / DESFire EV1 경우 - App, File, Encryption Type 에 대해 기 발급된 카드와 동일하게 설정.</p>\n</td><td><p>발급된 정보가 아닌 CSN으로 리드된다.</p></td></tr><tr><td>3</td><td><p>1. Smart Card Layout 추가<br/>&gt; Primary Key: 발급된 카드키와 상이<br/>&gt; Secondary Key: 발급된 카드키와 동일<br/>4. 장치&gt; 위에서 추가한 Layout 설정<br/>5. 기 발급된 Smart Card 리드</p></td><td><p>카드발급<br/>&gt; Mifare / Mifare Plus Card<br/>&gt; DesFire EV1/EV2 Card<br/>&gt; iClass / iClass SE Card</p>\n\n<p>Smart Card<br/>&gt; AOC/SCC</p>\n\n<p>※ DESFire / DESFire EV1 경우 - App, File, Encryption Type 에 대해 기 발급된 카드와 동일하게 설정.</p>\n</td><td><p>발급된 정보로 리드된다.</p></td></tr><tr><td>4</td><td><p>1. Smart Card Layout 추가<br/>&gt; Primary Key &amp; Encryption Type<br/>: 발급된 카드키와 상이Primary <br/>&gt; Secondary Key: 사용안함 설정<br/>2. 장치&gt; 위에서 추가한 <br/>Layout 설정<br/>3. Smart Card 리드</p></td><td><p>카드발급<br/>&gt; Mifare / Mifare Plus Card<br/>&gt; DesFire EV1/EV2 Card<br/>&gt; iClass / iClass SE Card</p>\n\n<p>Smart Card<br/>&gt; AOC/SCC</p></td><td><p>발급된 정보가 아닌 CSN으로 리드된다.</p></td></tr><tr><td>5</td><td><p>1. Setting&gt; Card Format&gt; Smart Card&gt; Add Smart Card<br/>2. Key 및 Layout 설정<br/>3. User&gt; 기 등록된 사용자 선택&gt; Card&gt; SmartCard&gt; 사용자 정보 Write</p></td><td><p>Mifare / Mifare Plus Card<br/>&gt; 1K Card(Byte)<br/>&gt; 2K Card(Byte)<br/>&gt; 4K Card(Byte)</p>\n\n<p>Smart Card<br/>&gt; AOC/SCC</p></td><td><p>&gt; 카드에 Write할 메모리가 여유로울 경우 Wite되어야 한다.<br/>&gt; 카드에 Write할 메모리가 부족할 경우 Wite 중 실패되어야 한다.<br/>=&gt; Device Timeout 팝업 발생</p></td></tr><tr><td>6</td><td><p>1. Setting&gt; Card Format&gt; Smart Card&gt; Add Smart Card<br/>2. Key 및 Layout 설정<br/>3. User&gt; 기 등록된 사용자 선택&gt; Card&gt; SmartCard&gt; 사용자 정보 Write</p></td><td><p>Mifare DesFire / Mifare DesFire EV1 Card<br/>&gt; 2K Card(Byte)<br/>&gt; 4K Card(Byte)<br/>&gt; 8K Card(Byte)</p>\n\n<p>Smart Card<br/>&gt; AOC/SCC</p></td><td><p>&gt; 카드에 Write할 메모리가 여유로울 경우 Wite되어야 한다.<br/>&gt; 카드에 Write할 메모리가 부족할 경우 Wite 중 실패되어야 한다.<br/>=&gt; Device Timeout 팝업 발생<br/>&gt; Blackfin 장치와 Station 장치 각각 카드 읽는 시간이 같아야 한다. </p>\n</td></tr><tr><td>7</td><td><p>1. Setting&gt; Card Format&gt; Smart Card&gt; Add Smart Card<br/>2. Key 및 Layout 설정<br/>3. User&gt; 기 등록된 사용자 선택&gt; Card&gt; SmartCard&gt; 사용자 정보 Write</p></td><td><p>iClass / iClass SE Card<br/>&gt; 2K bits / 2 Application<br/>&gt; 16K bits / 2 Application<br/>&gt; 16K bits / 16 Application<br/>&gt; 32K bits / (16K/2+16K/1)<br/>&gt; 32K bits / (16K/16+16K/1)</p>\n\n<p>Smart Card<br/>&gt; AOC/SCC</p></td><td><p>&gt; 카드에 Write할 메모리가 여유로울 경우 Wite되어야 한다.<br/>&gt; 카드에 Write할 메모리가 부족할 경우 Wite 중 실패되어야 한다.<br/>=&gt; Device Timeout 팝업 발생<br/>&gt; Blackfin 장치와 Station 장치 각각 카드 읽는 시간이 같아야 한다. </p></td></tr><tr><td>8</td><td><p>&lt;Card Format 설정 &amp; 장치에 Layout 설정된 상태&gt;<br/>1. User&gt; 기 등록된 사용자 선택&gt; Card&gt; Read Card&gt; Format Card<br/>2. SmartCard&gt; Secure Credential 카드에 사용자 정보 Write</p></td><td><p>사용자 ID<br/> &gt; 숫자 : 기존과 동일<br/> &gt; 영숫자 : Default(공란), 24 byte 범위 내에서 10진수 숫자 1 부터 입력 지원</p>\n\n<p>포맷<br/>&gt; 영숫자 모드가 불일치 해도 카드 레이아웃만 동일하면 장치 상관 없이 가능<br/>: 영숫자 모드 불일치, 미지원 FW</p></td><td><p>&gt; 출입그룹 정보는 장치에 저장되어야 하고, 카드ID/지문/PIN 정보만 저장되어야 한다.<br/>&gt; 카드 Type/Template 개수/발급회차가 저장되어야 한다.<br/>-: 카드 Type(AOC, SCC), Summary의 ID(Issue Count : x) - 카드 사양으로 8개를 초과 할 수없음</p></td></tr><tr><td>9</td><td><p>1. Step 9에서 발급한 Secure Credential 카드 인증시도</p></td><td><p>인증시도<br/>&gt; 단일장치<br/>&gt; Master-Slave 장치<br/>&gt; 장치 인증 모드별<br/>=: Card, 이중인증, 근태, 권한별 메뉴 진입<br/>=: ID, Finger - 의미가 없음</p></td><td><p>&gt; 발급된 정보로 인증성공으로 동작한다.</p></td></tr><tr><td>10</td><td><p>&lt;Card Format 설정 &amp; 장치에 Layout 설정된 상태&gt;<br/>1. User&gt; 기 등록된 사용자 선택&gt; Card&gt; Read Card&gt; Format Card<br/>2. SmartCard&gt; Access On 카드에 사용자 정보 Write</p></td><td><p>사용자 ID<br/> &gt; 숫자, 영숫자, 특수 문자('_','-')</p>\n\n<p>포맷<br/>&gt; 영숫자 모드가 불일치 해도 카드 레이아웃만 동일하면 장치 상관 없이 가능<br/>: 영숫자 모드 불일치, 미지원 FW</p></td><td><p>&gt; 인증에 필요한 모든 정보(개인인증모드 포함)가 저장되어야 한다.<br/>&gt; Access On 카드 Write시 발급회차가 발급되어야 한다.<br/>-: 카드 Type(AOC, SCC), Summary의 ID(Issue Count : x) - 카드 사양으로 8개를 초과 할 수없음</p></td></tr><tr><td>11</td><td><p>1. Step 11에서 발급한 Access On 카드 인증시도</p></td><td><p>인증시도<br/>&gt; 단일장치 &amp; RS485 구성된 Master/Slave 장치<br/>&gt; 카드인증모드<br/>&gt; 카드인증을 통한 관리자 메뉴진입<br/>&gt; 이중인증/근태인증</p></td><td><p>&gt; 발급된 정보로 인증성공으로 동작한다.<br/>: 장치에 등록된 사용자와는 무관하게 인증되어야 한다.</p></td></tr><tr><td>12</td><td><p>1. A Layout를 이용하여 카드 발급<br/>2. B Layout이 적용된 장치에 A Layout으로 발급된 Card 리드<br/>3. 해당 장치를 포맷 후 재발급 시도</p></td><td><p>카드발급<br/>&gt; Mifare / Mifare Plus Card<br/>&gt; Mifare DesFire / Mifare DesFire EV1 Card<br/>&gt; iClass / iClass SE Card</p></td><td><p>1. A Layout이 적용된 장치에서 읽혀야 한다.<br/>2. B Layout 장치에서는 A Layout에서 발급한 카드가 CSN으로 동작을 한다.<br/>&gt; Key가 다른 경우에도 CSN으로 인식이 되어야 한다.<br/>3. B Layout에 Secondary Key을 등록하여 포맷이나 재발급을 한다.</p></td></tr><tr><td>13</td><td><p>1. A Layout를 이용하여 카드 발급<br/>2. B Layout이 적용된 장치에 A Layout으로 발급된 Card 리드<br/>3. 해당 장치를 포맷 후 재발급 시도</p></td><td><p>A Layout - DESFire/DESFire EV1<br/>&gt; DES/3DES 설정<br/>B Layout - DESFire/DESFire EV1<br/>&gt; AES 설정</p></td><td><p>1. A Layout이 적용된 장치에서 읽혀야 한다.<br/>2. B Layout 장치에서는 A Layout에서 발급한 카드가 CSN으로 동작을 한다.<br/>&gt; Encryption Type이 다른 경우(Key가 다른 경우 포함)에도 CSN으로 인식된다.<br/>&gt; Format 시도시 실패 한다.<br/>3. 구형 버전에서는 AES로 지정시 내부적으로 DES/3DES로 동작을 한다.<br/>&gt; DESFire EV1- AES로 발급 시 DES/3DES로 변경 안됨(DES/3DES -&gt; AES로 1회 변경 가능)</p></td></tr><tr><td>14</td><td><p>1. Device&gt; Layout에 A Card Format으로 설정<br/>2. User&gt; Smart Card 발급<br/>3. Device&gt; Layout에 B Card Format으로 설정<br/>4. step2에서 발급받은 카드로 인증시도</p></td><td><p>Smart Card 발급<br/>&gt; Mifare/Desfire<br/>&gt; Iclass </p>\n\n<p>&lt;A Card Format 설정&gt;<br/>-) Primary Key는 임의 설정<br/>-) Secondary Key는 Default 설정</p>\n\n<p>&lt;B Card Format 설정&gt;<br/>-) Primary Key는 Default 설정<br/>-) Secondary Key는 사용안함 설정</p></td><td><p>인증실패로 동작되어야 한다.</p></td></tr><tr><td>15</td><td><p>1. Device&gt; Layout에 A Card Format으로 설정<br/>2. User&gt; Smart Card 발급<br/>3. Device&gt; Layout에 B Card Format으로 설정<br/>4. User&gt; step2에서 발급받은 카드로 인증시도</p></td><td><p>Smart Card 발급<br/>&gt; Desfire/Mifare/Iclass</p>\n\n<p>ex.DesFire 설정<br/>&lt;A Card Format 설정&gt;<br/>-) Primary Key는 1111111111111111 설정</p>\n\n<p>&lt;B Card Format 설정&gt;<br/>-) Primary Key는 2222222222222222 설정<br/>-) Secondary Key는 1111111111111111 설정</p></td><td><p>1. Secondary Key로 인해 B Card Format으로 카드발급이 이루어져야 하고 발급된 카드로 인증성공이 되어야 한다.</p></td></tr><tr><td>16</td><td><p>1. Setting&gt; Server&gt; Smart Card&gt; Add Smart Card<br/>2. DesFire&gt; 설정 후 Apply<br/>3. Device&gt; DesFire로 생성한 Layout 설정<br/>4. User&gt; Card 발급 시도</p></td><td><p>추후 수정 예정</p>\n\n<p><span class=\"error\">&#91;BioStar&#93;</span> 설정 범위<br/>App ID: 1(Default) ~ 16777215<br/>=&gt; Default, 임의값 설정해 확인</p>\n\n<p>Max : 28</p>\n\n<p>File ID: 1 ~ 31<br/>=&gt; Default, 임의값 설정해 확인</p>\n\n<p>Max : 32</p></td><td><p>1. 카드발급이 정상적으로 이루어져야 한다.<br/>&gt; BioStar 상의 입력값은 별도 확인 필요<br/>&gt; Desfire / Desfire EV1 Card Memory Structure<br/>Max App : 28, Max File : 32(1 Per Application - Desfire EV1), 16(1 Per Application - Desfire)<br/>Application ID 0 - Reserved<br/>1 ~ 27 사용 가능 <br/>File ID<br/>0 ~ 15 (Desfire)<br/>0 ~ 31 (Desfire EV1)</p></td></tr><tr><td>17</td><td><p>1. Device&gt; Layout 설정<br/>2. User&gt; AOC 카드발급&gt; Private Auth Mode 설정<br/>3. 발급받은 카드로 인증시도</p></td><td><p>사용자 ID 모드<br/>&gt; 숫자/영숫자</p>\n\n<p>Private Auth Mode<br/>&gt; Card Only / Card + PIN / Card+FP / Card + FP or PIN / Card + FP + PIN</p></td><td><p>1. AOC 카드에 Write된 개인인증모드로 동작되어야 한다.<br/>&gt; 사용자의 개인 인증 모드와 별도로 동작 <br/>&gt; Data 암호화(HashKey) 사용 시 PIN이 포함된 경우 HashKey에 의해 인증 성공/실패로 동작<br/>&gt; SCC 제외<br/>&gt; Card + Face : 제외</p></td></tr><tr><td>18</td><td><p>1. Device&gt; Layout 설정<br/>2. User&gt; AOC/SCC 카드발급<br/>3. 발급받은 카드로 인증시도</p></td><td><p>ISO 1443A RID(Random CSN 생성)카드</p></td><td><p>1. RID 카드는 AOC/SCC로 동작이 되어야 한다.<br/>: 카드 인식음, 인증 성공/실패 로그 등 발생<br/>2. RID 카드는 CSN 모드에서는 RID 카드는 무시되어 반응이 없어야 한다.<br/>: 카드 인식음, 인증 실패 로그 등 미발생</p></td></tr><tr><td>19</td><td><p>1. 1.x BioStar를 이용해 카드발급<br/>2. 발급받은 카드를 이용해 2.x 장치에서 카드리드<br/>3. 해당 장치를 포맷 후 재발급 시도</p></td><td><p>1. Support V2.x Device<br/>&gt; V2.x Device(CS 40 제외)<br/>&gt; Entry V2 미지원<br/>&gt; V1.x Card Layout 설정</p></td><td><p>1. 1.x에서 발급한 카드를 2.x에서 읽혀야 한다.<br/>&gt; V1.x(DES/3DES) -&gt; V2.x(DES/3DES)<br/>2. 해당 카드에 대해 2.x에서 포맷 및 재발급은 미지원한다.<br/>&gt; V1.x TOC Read만 지원</p></td></tr><tr><td>20</td><td><p>키 변경으로 카드 발급 시도<br/>&gt; Primary Key : 새로 발급할 Key값 입력<br/>&gt; Secondary Key : 발급한 Key값 입력</p></td><td><p>Hex 전용으로 미입력 시나, 홀수로 입력한 경우 FF나 O을 채워서 전송 <br/>예)<br/>: 사용자 입력값 \"1230\"<br/>-&gt; FW 전달 값 12 30 FF FF FF FF<br/>: 사용자 입력값 \"AF0\"<br/>-&gt; FW 전달 값 0A F0 FF FF FF FF<br/>Key 입력 범위<br/>&gt; Description 참조</p></td><td><p>1. 새로 설정된 Primary 키로 발급된다.<br/>&gt; 미입력 시나, 홀수로 입력한 경우 FF나 0을 채워서 등록 / 전송<br/>2. Auto Tool을 통해 장치에 전송된 Card Layout을 확인하여 Key 정상 유무 확인한다.<br/>&gt; 인증 유무 포함</p></td></tr><tr><td>21</td><td><p>0. Setting &gt; Server &gt; User/Device Management 에서 'AoC 발급 시 개인정보 삭제' : Enable<br/>1. Device&gt; Layout 설정<br/>2. User&gt; 개인인증모드 설정&gt; AOC 카드발급&gt; Private Auth Mode 설정<br/>3. 발급받은 카드로 인증시도</p></td><td><p>사용자 ID 모드<br/>&gt; 숫자/영숫자</p>\n\n<p>Private Auth Mode<br/>&gt; Card Only / Card + PIN / Card+FP / Card + FP or PIN / Card + FP + PIN</p>\n\n<p>Private Info<br/>&gt; FP, PIN, Face, Email, Phone, Birthday , Gender<br/>(birthday, gender는 DB에만 존재하는 data)</p></td><td><p>1.AOC 카드 발급 성공 시 사용자의 개인정보가 삭제된다.<br/>&gt; ID/Finger/Face 인증 시도 - 인증 실패 발생<br/>&gt; Card 인증 시도 - 개인 인증 모드 or 장치 인증 모드에 의해 인증 성공 / 실패 발생  <br/>&gt; SCC - 개인 정보 유지<br/>2.AOC 카드에 Write된 개인인증모드로 동작되어야 한다.<br/>&gt; 사용자의 개인 인증 모드와 별도로 동작 <br/>&gt; Data 암호화(HashKey) 사용 시 PIN이 포함된 경우 HashKey에 의해 인증 성공/실패로 동작<br/>&gt; SCC 제외<br/>&gt; Card + Face : 제외<br/>&gt; FW 지원 유무에 따라 미지원 버전은 개인 인증 모드를 무시하고 동작, BioStar에서 발급 시에는 FW 버전 상관 없이 Private Auth 발급 가능</p></td></tr><tr><td>22</td><td><p>1. 얼굴을 포함해 SmartCard 발급<br/>2. 동일 사용자 아이디(장치에 저장된)의 \"얼굴\"만 삭제<br/>3. 발급된 카드로 재인증 시도</p></td><td><p>SmartCard 발급<br/>&gt; SCC</p>\n\n<p>대상제품<br/>&gt; 얼굴지원제품</p>\n\n<p>인증모드<br/>&gt; 카드+얼굴</p></td><td><p>1. 발급된 정보로 인증성공한다.<br/>&gt;<a href=\"https://jira.suprema.co.kr/browse/DFW-601\" title=\"[SCC 오동작] SCC로 발급된 사용자의 얼굴만 삭제 후 기 발급된 SCC를 이용하여 얼굴 인증 시도 시 인증 실패가 발생하는 현상\" class=\"issue-link\" data-issue-key=\"DFW-601\"><del>DFW-601</del></a></p></td></tr><tr><td>23</td><td><p><span class=\"error\">&#91;Old/New SAM 적용시료&#93;</span><br/>1. iClass Smart Card 발급(Old/New 무관)<br/>2. 스마트 카드 레이아웃&gt; 발급한 스마트 카드의 키와 동일한 레이아웃(Primary) 설정 후 장치에 적용<br/>3. Old/New SAM 시료에서 카드 리드</p></td><td><p>iClass Smart Card 메모리별<br/>&gt; 2K bits / 2 Application<br/>&gt; 16K bits / 2 Application<br/>&gt; 16K bits / 16 Application<br/>&gt; 32K bits / (16K/2+16K/1)<br/>&gt; 32K bits / (16K/16+16K/1)</p>\n\n<p>Smart Card<br/>&gt; AOC/SCC</p></td><td><p>1. Primary Key가 맞으므로 발급된 정보로 인증성공된다</p></td></tr><tr><td>24</td><td><p><span class=\"error\">&#91;Old/New SAM 적용시료&#93;</span><br/>1. iClass Smart Card 발급<br/>2. 스마트 카드 레이아웃&gt;발급한 스마트 카드의 키와 동일한 레이아웃(Secondary) 설정 후 장치에 적용<br/>3. Old/New SAM 시료에서 카드 리드</p></td><td><p>iClass Smart Card 메모리별<br/>&gt; 2K bits / 2 Application<br/>&gt; 16K bits / 2 Application<br/>&gt; 16K bits / 16 Application<br/>&gt; 32K bits / (16K/2+16K/1)<br/>&gt; 32K bits / (16K/16+16K/1)</p>\n\n<p>Smart Card<br/>&gt; AOC/SCC</p></td><td><p>1. Secondary Key가 맞으므로 발급된 정보로 인증성공된다</p></td></tr><tr><td>25</td><td><p><span class=\"error\">&#91;Old/New SAM 적용시료&#93;</span><br/>1. iClass Smart Card 발급<br/>2. 스마트 카드 레이아웃&gt; 발급한 스마트 카드의 키와 상이한 레이아웃(Primary/Secondary) 설정 후 장치에 적용<br/>3. Old/New SAM 시료에서 카드 리드</p></td><td><p>iClass Smart Card 메모리별<br/>&gt; 2K bits / 2 Application<br/>&gt; 16K bits / 2 Application<br/>&gt; 16K bits / 16 Application<br/>&gt; 32K bits / (16K/2+16K/1)<br/>&gt; 32K bits / (16K/16+16K/1)</p>\n\n<p>Smart Card<br/>&gt; AOC/SCC</p></td><td><p>1. 키가 맞지 않음으로 인증실패로 동작된다.</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [
+      "COMMONR-28"
     ],
-    [
-      3,
-      "1. Smart Card Layout 추가\n> Primary Key: 발급된 카드키와 상이\n> Secondary Key: 발급된 카드키와 동일\n4. 장치> 위에서 추가한 Layout 설정\n5. 기 발급된 Smart Card 리드",
-      "카드발급\n> Mifare / Mifare Plus Card\n> DesFire EV1/EV2 Card\n> iClass / iClass SE Card\n\nSmart Card\n> AOC/SCC\n\n※ DESFire / DESFire EV1 경우 - App, File, Encryption Type 에 대해 기 발급된 카드와 동일하게 설정.\n\n",
-      "발급된 정보로 리드된다."
-    ],
-    [
-      4,
-      "1. Smart Card Layout 추가\n> Primary Key & Encryption Type\n: 발급된 카드키와 상이Primary \n> Secondary Key: 사용안함 설정\n2. 장치> 위에서 추가한 \nLayout 설정\n3. Smart Card 리드",
-      "카드발급\n> Mifare / Mifare Plus Card\n> DesFire EV1/EV2 Card\n> iClass / iClass SE Card\n\nSmart Card\n> AOC/SCC",
-      "발급된 정보가 아닌 CSN으로 리드된다."
-    ],
-    [
-      5,
-      "1. Setting> Card Format> Smart Card> Add Smart Card\n2. Key 및 Layout 설정\n3. User> 기 등록된 사용자 선택> Card> SmartCard> 사용자 정보 Write",
-      "Mifare / Mifare Plus Card\n> 1K Card(Byte)\n> 2K Card(Byte)\n> 4K Card(Byte)\n\nSmart Card\n> AOC/SCC",
-      "> 카드에 Write할 메모리가 여유로울 경우 Wite되어야 한다.\n> 카드에 Write할 메모리가 부족할 경우 Wite 중 실패되어야 한다.\n=> Device Timeout 팝업 발생"
-    ],
-    [
-      6,
-      "1. Setting> Card Format> Smart Card> Add Smart Card\n2. Key 및 Layout 설정\n3. User> 기 등록된 사용자 선택> Card> SmartCard> 사용자 정보 Write",
-      "Mifare DesFire / Mifare DesFire EV1 Card\n> 2K Card(Byte)\n> 4K Card(Byte)\n> 8K Card(Byte)\n\nSmart Card\n> AOC/SCC",
-      "> 카드에 Write할 메모리가 여유로울 경우 Wite되어야 한다.\n> 카드에 Write할 메모리가 부족할 경우 Wite 중 실패되어야 한다.\n=> Device Timeout 팝업 발생\n> Blackfin 장치와 Station 장치 각각 카드 읽는 시간이 같아야 한다. \n\n"
-    ],
-    [
-      7,
-      "1. Setting> Card Format> Smart Card> Add Smart Card\n2. Key 및 Layout 설정\n3. User> 기 등록된 사용자 선택> Card> SmartCard> 사용자 정보 Write",
-      "iClass / iClass SE Card\n> 2K bits / 2 Application\n> 16K bits / 2 Application\n> 16K bits / 16 Application\n> 32K bits / (16K/2+16K/1)\n> 32K bits / (16K/16+16K/1)\n\nSmart Card\n> AOC/SCC",
-      "> 카드에 Write할 메모리가 여유로울 경우 Wite되어야 한다.\n> 카드에 Write할 메모리가 부족할 경우 Wite 중 실패되어야 한다.\n=> Device Timeout 팝업 발생\n> Blackfin 장치와 Station 장치 각각 카드 읽는 시간이 같아야 한다. \n"
-    ],
-    [
-      8,
-      "<Card Format 설정 & 장치에 Layout 설정된 상태>\n1. User> 기 등록된 사용자 선택> Card> Read Card> Format Card\n2. SmartCard> Secure Credential 카드에 사용자 정보 Write",
-      "사용자 ID\n > 숫자 : 기존과 동일\n > 영숫자 : Default(공란), 24 byte 범위 내에서 10진수 숫자 1 부터 입력 지원\n\n포맷\n> 영숫자 모드가 불일치 해도 카드 레이아웃만 동일하면 장치 상관 없이 가능\n: 영숫자 모드 불일치, 미지원 FW",
-      "> 출입그룹 정보는 장치에 저장되어야 하고, 카드ID/지문/PIN 정보만 저장되어야 한다.\n> 카드 Type/Template 개수/발급회차가 저장되어야 한다.\n-: 카드 Type(AOC, SCC), Summary의 ID(Issue Count : x) - 카드 사양으로 8개를 초과 할 수없음"
-    ],
-    [
-      9,
-      "1. Step 9에서 발급한 Secure Credential 카드 인증시도",
-      "인증시도\n> 단일장치\n> Master-Slave 장치\n> 장치 인증 모드별\n=: Card, 이중인증, 근태, 권한별 메뉴 진입\n=: ID, Finger - 의미가 없음",
-      "> 발급된 정보로 인증성공으로 동작한다."
-    ],
-    [
-      10,
-      "<Card Format 설정 & 장치에 Layout 설정된 상태>\n1. User> 기 등록된 사용자 선택> Card> Read Card> Format Card\n2. SmartCard> Access On 카드에 사용자 정보 Write",
-      "사용자 ID\n > 숫자, 영숫자, 특수 문자('_','-')\n\n포맷\n> 영숫자 모드가 불일치 해도 카드 레이아웃만 동일하면 장치 상관 없이 가능\n: 영숫자 모드 불일치, 미지원 FW",
-      "> 인증에 필요한 모든 정보(개인인증모드 포함)가 저장되어야 한다.\n> Access On 카드 Write시 발급회차가 발급되어야 한다.\n-: 카드 Type(AOC, SCC), Summary의 ID(Issue Count : x) - 카드 사양으로 8개를 초과 할 수없음"
-    ],
-    [
-      11,
-      "1. Step 11에서 발급한 Access On 카드 인증시도",
-      "인증시도\n> 단일장치 & RS485 구성된 Master/Slave 장치\n> 카드인증모드\n> 카드인증을 통한 관리자 메뉴진입\n> 이중인증/근태인증",
-      "> 발급된 정보로 인증성공으로 동작한다.\n: 장치에 등록된 사용자와는 무관하게 인증되어야 한다."
-    ],
-    [
-      12,
-      "1. A Layout를 이용하여 카드 발급\n2. B Layout이 적용된 장치에 A Layout으로 발급된 Card 리드\n3. 해당 장치를 포맷 후 재발급 시도",
-      "카드발급\n> Mifare / Mifare Plus Card\n> Mifare DesFire / Mifare DesFire EV1 Card\n> iClass / iClass SE Card",
-      "1. A Layout이 적용된 장치에서 읽혀야 한다.\n2. B Layout 장치에서는 A Layout에서 발급한 카드가 CSN으로 동작을 한다.\n> Key가 다른 경우에도 CSN으로 인식이 되어야 한다.\n3. B Layout에 Secondary Key을 등록하여 포맷이나 재발급을 한다."
-    ],
-    [
-      13,
-      "1. A Layout를 이용하여 카드 발급\n2. B Layout이 적용된 장치에 A Layout으로 발급된 Card 리드\n3. 해당 장치를 포맷 후 재발급 시도",
-      "A Layout - DESFire/DESFire EV1\n> DES/3DES 설정\nB Layout - DESFire/DESFire EV1\n> AES 설정",
-      "1. A Layout이 적용된 장치에서 읽혀야 한다.\n2. B Layout 장치에서는 A Layout에서 발급한 카드가 CSN으로 동작을 한다.\n> Encryption Type이 다른 경우(Key가 다른 경우 포함)에도 CSN으로 인식된다.\n> Format 시도시 실패 한다.\n3. 구형 버전에서는 AES로 지정시 내부적으로 DES/3DES로 동작을 한다.\n> DESFire EV1- AES로 발급 시 DES/3DES로 변경 안됨(DES/3DES -> AES로 1회 변경 가능)"
-    ],
-    [
-      14,
-      "1. Device> Layout에 A Card Format으로 설정\n2. User> Smart Card 발급\n3. Device> Layout에 B Card Format으로 설정\n4. step2에서 발급받은 카드로 인증시도",
-      "Smart Card 발급\n> Mifare/Desfire\n> Iclass \n\n<A Card Format 설정>\n-) Primary Key는 임의 설정\n-) Secondary Key는 Default 설정\n\n<B Card Format 설정>\n-) Primary Key는 Default 설정\n-) Secondary Key는 사용안함 설정",
-      "인증실패로 동작되어야 한다."
-    ],
-    [
-      15,
-      "1. Device> Layout에 A Card Format으로 설정\n2. User> Smart Card 발급\n3. Device> Layout에 B Card Format으로 설정\n4. User> step2에서 발급받은 카드로 인증시도",
-      "Smart Card 발급\n> Desfire/Mifare/Iclass\n\nex.DesFire 설정\n<A Card Format 설정>\n-) Primary Key는 1111111111111111 설정\n\n<B Card Format 설정>\n-) Primary Key는 2222222222222222 설정\n-) Secondary Key는 1111111111111111 설정",
-      "1. Secondary Key로 인해 B Card Format으로 카드발급이 이루어져야 하고 발급된 카드로 인증성공이 되어야 한다."
-    ],
-    [
-      16,
-      "1. Setting> Server> Smart Card> Add Smart Card\n2. DesFire> 설정 후 Apply\n3. Device> DesFire로 생성한 Layout 설정\n4. User> Card 발급 시도",
-      "추후 수정 예정\n\n[BioStar] 설정 범위\nApp ID: 1(Default) ~ 16777215\n=> Default, 임의값 설정해 확인\n\nMax : 28\n\nFile ID: 1 ~ 31\n=> Default, 임의값 설정해 확인\n\nMax : 32",
-      "1. 카드발급이 정상적으로 이루어져야 한다.\n> BioStar 상의 입력값은 별도 확인 필요\n> Desfire / Desfire EV1 Card Memory Structure\nMax App : 28, Max File : 32(1 Per Application - Desfire EV1), 16(1 Per Application - Desfire)\nApplication ID 0 - Reserved\n1 ~ 27 사용 가능 \nFile ID\n0 ~ 15 (Desfire)\n0 ~ 31 (Desfire EV1)"
-    ],
-    [
-      17,
-      "1. Device> Layout 설정\n2. User> AOC 카드발급> Private Auth Mode 설정\n3. 발급받은 카드로 인증시도",
-      "사용자 ID 모드\n> 숫자/영숫자\n\nPrivate Auth Mode\n> Card Only / Card + PIN / Card+FP / Card + FP or PIN / Card + FP + PIN",
-      "1. AOC 카드에 Write된 개인인증모드로 동작되어야 한다.\n> 사용자의 개인 인증 모드와 별도로 동작 \n> Data 암호화(HashKey) 사용 시 PIN이 포함된 경우 HashKey에 의해 인증 성공/실패로 동작\n> SCC 제외\n> Card + Face : 제외"
-    ],
-    [
-      18,
-      "1. Device> Layout 설정\n2. User> AOC/SCC 카드발급\n3. 발급받은 카드로 인증시도",
-      "ISO 1443A RID(Random CSN 생성)카드",
-      "1. RID 카드는 AOC/SCC로 동작이 되어야 한다.\n: 카드 인식음, 인증 성공/실패 로그 등 발생\n2. RID 카드는 CSN 모드에서는 RID 카드는 무시되어 반응이 없어야 한다.\n: 카드 인식음, 인증 실패 로그 등 미발생"
-    ],
-    [
-      19,
-      "1. 1.x BioStar를 이용해 카드발급\n2. 발급받은 카드를 이용해 2.x 장치에서 카드리드\n3. 해당 장치를 포맷 후 재발급 시도",
-      "1. Support V2.x Device\n> V2.x Device(CS 40 제외)\n> Entry V2 미지원\n> V1.x Card Layout 설정",
-      "1. 1.x에서 발급한 카드를 2.x에서 읽혀야 한다.\n> V1.x(DES/3DES) -> V2.x(DES/3DES)\n2. 해당 카드에 대해 2.x에서 포맷 및 재발급은 미지원한다.\n> V1.x TOC Read만 지원"
-    ],
-    [
-      20,
-      "키 변경으로 카드 발급 시도\n> Primary Key : 새로 발급할 Key값 입력\n> Secondary Key : 발급한 Key값 입력",
-      "Hex 전용으로 미입력 시나, 홀수로 입력한 경우 FF나 O을 채워서 전송 \n예)\n: 사용자 입력값 \"1230\"\n-> FW 전달 값 12 30 FF FF FF FF\n: 사용자 입력값 \"AF0\"\n-> FW 전달 값 0A F0 FF FF FF FF\nKey 입력 범위\n> Description 참조\n",
-      "1. 새로 설정된 Primary 키로 발급된다.\n> 미입력 시나, 홀수로 입력한 경우 FF나 0을 채워서 등록 / 전송\n2. Auto Tool을 통해 장치에 전송된 Card Layout을 확인하여 Key 정상 유무 확인한다.\n> 인증 유무 포함"
-    ],
-    [
-      21,
-      "0. Setting > Server > User/Device Management 에서 'AoC 발급 시 개인정보 삭제' : Enable\n1. Device> Layout 설정\n2. User> 개인인증모드 설정> AOC 카드발급> Private Auth Mode 설정\n3. 발급받은 카드로 인증시도",
-      "사용자 ID 모드\n> 숫자/영숫자\n\nPrivate Auth Mode\n> Card Only / Card + PIN / Card+FP / Card + FP or PIN / Card + FP + PIN\n\nPrivate Info\n> FP, PIN, Face, Email, Phone, Birthday , Gender\n(birthday, gender는 DB에만 존재하는 data)",
-      "1.AOC 카드 발급 성공 시 사용자의 개인정보가 삭제된다.\n> ID/Finger/Face 인증 시도 - 인증 실패 발생\n> Card 인증 시도 - 개인 인증 모드 or 장치 인증 모드에 의해 인증 성공 / 실패 발생  \n> SCC - 개인 정보 유지\n2.AOC 카드에 Write된 개인인증모드로 동작되어야 한다.\n> 사용자의 개인 인증 모드와 별도로 동작 \n> Data 암호화(HashKey) 사용 시 PIN이 포함된 경우 HashKey에 의해 인증 성공/실패로 동작\n> SCC 제외\n> Card + Face : 제외\n> FW 지원 유무에 따라 미지원 버전은 개인 인증 모드를 무시하고 동작, BioStar에서 발급 시에는 FW 버전 상관 없이 Private Auth 발급 가능"
-    ],
-    [
-      22,
-      "1. 얼굴을 포함해 SmartCard 발급\n2. 동일 사용자 아이디(장치에 저장된)의 \"얼굴\"만 삭제\n3. 발급된 카드로 재인증 시도",
-      "SmartCard 발급\n> SCC\n\n대상제품\n> 얼굴지원제품\n\n인증모드\n> 카드+얼굴",
-      "1. 발급된 정보로 인증성공한다.\n>DFW-601"
-    ],
-    [
-      23,
-      "[Old/New SAM 적용시료]\n1. iClass Smart Card 발급(Old/New 무관)\n2. 스마트 카드 레이아웃> 발급한 스마트 카드의 키와 동일한 레이아웃(Primary) 설정 후 장치에 적용\n3. Old/New SAM 시료에서 카드 리드",
-      "iClass Smart Card 메모리별\n> 2K bits / 2 Application\n> 16K bits / 2 Application\n> 16K bits / 16 Application\n> 32K bits / (16K/2+16K/1)\n> 32K bits / (16K/16+16K/1)\n\nSmart Card\n> AOC/SCC",
-      "1. Primary Key가 맞으므로 발급된 정보로 인증성공된다"
-    ],
-    [
-      24,
-      "[Old/New SAM 적용시료]\n1. iClass Smart Card 발급\n2. 스마트 카드 레이아웃>발급한 스마트 카드의 키와 동일한 레이아웃(Secondary) 설정 후 장치에 적용\n3. Old/New SAM 시료에서 카드 리드",
-      "iClass Smart Card 메모리별\n> 2K bits / 2 Application\n> 16K bits / 2 Application\n> 16K bits / 16 Application\n> 32K bits / (16K/2+16K/1)\n> 32K bits / (16K/16+16K/1)\n\nSmart Card\n> AOC/SCC",
-      "1. Secondary Key가 맞으므로 발급된 정보로 인증성공된다"
-    ],
-    [
-      25,
-      "[Old/New SAM 적용시료]\n1. iClass Smart Card 발급\n2. 스마트 카드 레이아웃> 발급한 스마트 카드의 키와 상이한 레이아웃(Primary/Secondary) 설정 후 장치에 적용\n3. Old/New SAM 시료에서 카드 리드",
-      "iClass Smart Card 메모리별\n> 2K bits / 2 Application\n> 16K bits / 2 Application\n> 16K bits / 16 Application\n> 32K bits / (16K/2+16K/1)\n> 32K bits / (16K/16+16K/1)\n\nSmart Card\n> AOC/SCC",
-      "1. 키가 맞지 않음으로 인증실패로 동작된다."
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-62",
-    "description": "",
-    "test_step": [
-      "1. Setting > Card Format > Smart Card\n2. Smart Card Layout 추가\n3. 장치> Smart Card Layout 설정\n4. User> 기 등록된 사용자 선택> Card> SmartCard> 사용자 정보 Write",
-      "1. Smart Card Layout 추가\n> 발급된 카드의 Key와 상이\n2. 장치> 위에서 추가한 Layout 설정\n3. 기 발급된 Smart Card 리드",
-      "1. Smart Card Layout 추가\n> Primary Key: 발급된 카드키와 상이\n> Secondary Key: 발급된 카드키와 동일\n4. 장치> 위에서 추가한 Layout 설정\n5. 기 발급된 Smart Card 리드",
-      "1. Smart Card Layout 추가\n> Primary Key & Encryption Type\n: 발급된 카드키와 상이Primary \n> Secondary Key: 사용안함 설정\n2. 장치> 위에서 추가한 \nLayout 설정\n3. Smart Card 리드",
-      "1. Setting> Card Format> Smart Card> Add Smart Card\n2. Key 및 Layout 설정\n3. User> 기 등록된 사용자 선택> Card> SmartCard> 사용자 정보 Write",
-      "1. Setting> Card Format> Smart Card> Add Smart Card\n2. Key 및 Layout 설정\n3. User> 기 등록된 사용자 선택> Card> SmartCard> 사용자 정보 Write",
-      "1. Setting> Card Format> Smart Card> Add Smart Card\n2. Key 및 Layout 설정\n3. User> 기 등록된 사용자 선택> Card> SmartCard> 사용자 정보 Write",
-      "<Card Format 설정 & 장치에 Layout 설정된 상태>\n1. User> 기 등록된 사용자 선택> Card> Read Card> Format Card\n2. SmartCard> Secure Credential 카드에 사용자 정보 Write",
-      "1. Step 9에서 발급한 Secure Credential 카드 인증시도",
-      "<Card Format 설정 & 장치에 Layout 설정된 상태>\n1. User> 기 등록된 사용자 선택> Card> Read Card> Format Card\n2. SmartCard> Access On 카드에 사용자 정보 Write",
-      "1. Step 11에서 발급한 Access On 카드 인증시도",
-      "1. A Layout를 이용하여 카드 발급\n2. B Layout이 적용된 장치에 A Layout으로 발급된 Card 리드\n3. 해당 장치를 포맷 후 재발급 시도",
-      "1. A Layout를 이용하여 카드 발급\n2. B Layout이 적용된 장치에 A Layout으로 발급된 Card 리드\n3. 해당 장치를 포맷 후 재발급 시도",
-      "1. Device> Layout에 A Card Format으로 설정\n2. User> Smart Card 발급\n3. Device> Layout에 B Card Format으로 설정\n4. step2에서 발급받은 카드로 인증시도",
-      "1. Device> Layout에 A Card Format으로 설정\n2. User> Smart Card 발급\n3. Device> Layout에 B Card Format으로 설정\n4. User> step2에서 발급받은 카드로 인증시도",
-      "1. Setting> Server> Smart Card> Add Smart Card\n2. DesFire> 설정 후 Apply\n3. Device> DesFire로 생성한 Layout 설정\n4. User> Card 발급 시도",
-      "1. Device> Layout 설정\n2. User> AOC 카드발급> Private Auth Mode 설정\n3. 발급받은 카드로 인증시도",
-      "1. Device> Layout 설정\n2. User> AOC/SCC 카드발급\n3. 발급받은 카드로 인증시도",
-      "1. 1.x BioStar를 이용해 카드발급\n2. 발급받은 카드를 이용해 2.x 장치에서 카드리드\n3. 해당 장치를 포맷 후 재발급 시도",
-      "키 변경으로 카드 발급 시도\n> Primary Key : 새로 발급할 Key값 입력\n> Secondary Key : 발급한 Key값 입력",
-      "0. Setting > Server > User/Device Management 에서 'AoC 발급 시 개인정보 삭제' : Enable\n1. Device> Layout 설정\n2. User> 개인인증모드 설정> AOC 카드발급> Private Auth Mode 설정\n3. 발급받은 카드로 인증시도",
-      "1. 얼굴을 포함해 SmartCard 발급\n2. 동일 사용자 아이디(장치에 저장된)의 \"얼굴\"만 삭제\n3. 발급된 카드로 재인증 시도",
-      "[Old/New SAM 적용시료]\n1. iClass Smart Card 발급(Old/New 무관)\n2. 스마트 카드 레이아웃> 발급한 스마트 카드의 키와 동일한 레이아웃(Primary) 설정 후 장치에 적용\n3. Old/New SAM 시료에서 카드 리드",
-      "[Old/New SAM 적용시료]\n1. iClass Smart Card 발급\n2. 스마트 카드 레이아웃>발급한 스마트 카드의 키와 동일한 레이아웃(Secondary) 설정 후 장치에 적용\n3. Old/New SAM 시료에서 카드 리드",
-      "[Old/New SAM 적용시료]\n1. iClass Smart Card 발급\n2. 스마트 카드 레이아웃> 발급한 스마트 카드의 키와 상이한 레이아웃(Primary/Secondary) 설정 후 장치에 적용\n3. Old/New SAM 시료에서 카드 리드"
-    ],
-    "data": [
-      "카드발급\n> Mifare / Mifare Plus Card\n> DesFire EV1/EV2 Card\n> iClass / iClass SE Card\n\nSmart Card\n> AOC/SCC",
-      "카드발급\n> Mifare / Mifare Plus Card\n> DesFire EV1/EV2 Card\n> iClass / iClass SE Card\n\nSmart Card\n> AOC/SCC\n\n※ DESFire / DESFire EV1 경우 - App, File, Encryption Type 에 대해 기 발급된 카드와 동일하게 설정.\n\n",
-      "카드발급\n> Mifare / Mifare Plus Card\n> DesFire EV1/EV2 Card\n> iClass / iClass SE Card\n\nSmart Card\n> AOC/SCC\n\n※ DESFire / DESFire EV1 경우 - App, File, Encryption Type 에 대해 기 발급된 카드와 동일하게 설정.\n\n",
-      "카드발급\n> Mifare / Mifare Plus Card\n> DesFire EV1/EV2 Card\n> iClass / iClass SE Card\n\nSmart Card\n> AOC/SCC",
-      "Mifare / Mifare Plus Card\n> 1K Card(Byte)\n> 2K Card(Byte)\n> 4K Card(Byte)\n\nSmart Card\n> AOC/SCC",
-      "Mifare DesFire / Mifare DesFire EV1 Card\n> 2K Card(Byte)\n> 4K Card(Byte)\n> 8K Card(Byte)\n\nSmart Card\n> AOC/SCC",
-      "iClass / iClass SE Card\n> 2K bits / 2 Application\n> 16K bits / 2 Application\n> 16K bits / 16 Application\n> 32K bits / (16K/2+16K/1)\n> 32K bits / (16K/16+16K/1)\n\nSmart Card\n> AOC/SCC",
-      "사용자 ID\n > 숫자 : 기존과 동일\n > 영숫자 : Default(공란), 24 byte 범위 내에서 10진수 숫자 1 부터 입력 지원\n\n포맷\n> 영숫자 모드가 불일치 해도 카드 레이아웃만 동일하면 장치 상관 없이 가능\n: 영숫자 모드 불일치, 미지원 FW",
-      "인증시도\n> 단일장치\n> Master-Slave 장치\n> 장치 인증 모드별\n=: Card, 이중인증, 근태, 권한별 메뉴 진입\n=: ID, Finger - 의미가 없음",
-      "사용자 ID\n > 숫자, 영숫자, 특수 문자('_','-')\n\n포맷\n> 영숫자 모드가 불일치 해도 카드 레이아웃만 동일하면 장치 상관 없이 가능\n: 영숫자 모드 불일치, 미지원 FW",
-      "인증시도\n> 단일장치 & RS485 구성된 Master/Slave 장치\n> 카드인증모드\n> 카드인증을 통한 관리자 메뉴진입\n> 이중인증/근태인증",
-      "카드발급\n> Mifare / Mifare Plus Card\n> Mifare DesFire / Mifare DesFire EV1 Card\n> iClass / iClass SE Card",
-      "A Layout - DESFire/DESFire EV1\n> DES/3DES 설정\nB Layout - DESFire/DESFire EV1\n> AES 설정",
-      "Smart Card 발급\n> Mifare/Desfire\n> Iclass \n\n<A Card Format 설정>\n-) Primary Key는 임의 설정\n-) Secondary Key는 Default 설정\n\n<B Card Format 설정>\n-) Primary Key는 Default 설정\n-) Secondary Key는 사용안함 설정",
-      "Smart Card 발급\n> Desfire/Mifare/Iclass\n\nex.DesFire 설정\n<A Card Format 설정>\n-) Primary Key는 1111111111111111 설정\n\n<B Card Format 설정>\n-) Primary Key는 2222222222222222 설정\n-) Secondary Key는 1111111111111111 설정",
-      "추후 수정 예정\n\n[BioStar] 설정 범위\nApp ID: 1(Default) ~ 16777215\n=> Default, 임의값 설정해 확인\n\nMax : 28\n\nFile ID: 1 ~ 31\n=> Default, 임의값 설정해 확인\n\nMax : 32",
-      "사용자 ID 모드\n> 숫자/영숫자\n\nPrivate Auth Mode\n> Card Only / Card + PIN / Card+FP / Card + FP or PIN / Card + FP + PIN",
-      "ISO 1443A RID(Random CSN 생성)카드",
-      "1. Support V2.x Device\n> V2.x Device(CS 40 제외)\n> Entry V2 미지원\n> V1.x Card Layout 설정",
-      "Hex 전용으로 미입력 시나, 홀수로 입력한 경우 FF나 O을 채워서 전송 \n예)\n: 사용자 입력값 \"1230\"\n-> FW 전달 값 12 30 FF FF FF FF\n: 사용자 입력값 \"AF0\"\n-> FW 전달 값 0A F0 FF FF FF FF\nKey 입력 범위\n> Description 참조\n",
-      "사용자 ID 모드\n> 숫자/영숫자\n\nPrivate Auth Mode\n> Card Only / Card + PIN / Card+FP / Card + FP or PIN / Card + FP + PIN\n\nPrivate Info\n> FP, PIN, Face, Email, Phone, Birthday , Gender\n(birthday, gender는 DB에만 존재하는 data)",
-      "SmartCard 발급\n> SCC\n\n대상제품\n> 얼굴지원제품\n\n인증모드\n> 카드+얼굴",
-      "iClass Smart Card 메모리별\n> 2K bits / 2 Application\n> 16K bits / 2 Application\n> 16K bits / 16 Application\n> 32K bits / (16K/2+16K/1)\n> 32K bits / (16K/16+16K/1)\n\nSmart Card\n> AOC/SCC",
-      "iClass Smart Card 메모리별\n> 2K bits / 2 Application\n> 16K bits / 2 Application\n> 16K bits / 16 Application\n> 32K bits / (16K/2+16K/1)\n> 32K bits / (16K/16+16K/1)\n\nSmart Card\n> AOC/SCC",
-      "iClass Smart Card 메모리별\n> 2K bits / 2 Application\n> 16K bits / 2 Application\n> 16K bits / 16 Application\n> 32K bits / (16K/2+16K/1)\n> 32K bits / (16K/16+16K/1)\n\nSmart Card\n> AOC/SCC"
-    ],
-    "expected_result": [
-      "사용자 정보가 카드에 Write 되어야 한다.\n> 카드에 Write할 메모리가 여유로울 경우 Wite되어야 한다.\n> 카드에 Write할 메모리가 부족할 경우 Wite 중 실패되어야 한다.\n=> Device Timeout 팝업 발생",
-      "발급된 정보가 아닌 CSN으로 리드된다.",
-      "발급된 정보로 리드된다.",
-      "발급된 정보가 아닌 CSN으로 리드된다.",
-      "> 카드에 Write할 메모리가 여유로울 경우 Wite되어야 한다.\n> 카드에 Write할 메모리가 부족할 경우 Wite 중 실패되어야 한다.\n=> Device Timeout 팝업 발생",
-      "> 카드에 Write할 메모리가 여유로울 경우 Wite되어야 한다.\n> 카드에 Write할 메모리가 부족할 경우 Wite 중 실패되어야 한다.\n=> Device Timeout 팝업 발생\n> Blackfin 장치와 Station 장치 각각 카드 읽는 시간이 같아야 한다. \n\n",
-      "> 카드에 Write할 메모리가 여유로울 경우 Wite되어야 한다.\n> 카드에 Write할 메모리가 부족할 경우 Wite 중 실패되어야 한다.\n=> Device Timeout 팝업 발생\n> Blackfin 장치와 Station 장치 각각 카드 읽는 시간이 같아야 한다. \n",
-      "> 출입그룹 정보는 장치에 저장되어야 하고, 카드ID/지문/PIN 정보만 저장되어야 한다.\n> 카드 Type/Template 개수/발급회차가 저장되어야 한다.\n-: 카드 Type(AOC, SCC), Summary의 ID(Issue Count : x) - 카드 사양으로 8개를 초과 할 수없음",
-      "> 발급된 정보로 인증성공으로 동작한다.",
-      "> 인증에 필요한 모든 정보(개인인증모드 포함)가 저장되어야 한다.\n> Access On 카드 Write시 발급회차가 발급되어야 한다.\n-: 카드 Type(AOC, SCC), Summary의 ID(Issue Count : x) - 카드 사양으로 8개를 초과 할 수없음",
-      "> 발급된 정보로 인증성공으로 동작한다.\n: 장치에 등록된 사용자와는 무관하게 인증되어야 한다.",
-      "1. A Layout이 적용된 장치에서 읽혀야 한다.\n2. B Layout 장치에서는 A Layout에서 발급한 카드가 CSN으로 동작을 한다.\n> Key가 다른 경우에도 CSN으로 인식이 되어야 한다.\n3. B Layout에 Secondary Key을 등록하여 포맷이나 재발급을 한다.",
-      "1. A Layout이 적용된 장치에서 읽혀야 한다.\n2. B Layout 장치에서는 A Layout에서 발급한 카드가 CSN으로 동작을 한다.\n> Encryption Type이 다른 경우(Key가 다른 경우 포함)에도 CSN으로 인식된다.\n> Format 시도시 실패 한다.\n3. 구형 버전에서는 AES로 지정시 내부적으로 DES/3DES로 동작을 한다.\n> DESFire EV1- AES로 발급 시 DES/3DES로 변경 안됨(DES/3DES -> AES로 1회 변경 가능)",
-      "인증실패로 동작되어야 한다.",
-      "1. Secondary Key로 인해 B Card Format으로 카드발급이 이루어져야 하고 발급된 카드로 인증성공이 되어야 한다.",
-      "1. 카드발급이 정상적으로 이루어져야 한다.\n> BioStar 상의 입력값은 별도 확인 필요\n> Desfire / Desfire EV1 Card Memory Structure\nMax App : 28, Max File : 32(1 Per Application - Desfire EV1), 16(1 Per Application - Desfire)\nApplication ID 0 - Reserved\n1 ~ 27 사용 가능 \nFile ID\n0 ~ 15 (Desfire)\n0 ~ 31 (Desfire EV1)",
-      "1. AOC 카드에 Write된 개인인증모드로 동작되어야 한다.\n> 사용자의 개인 인증 모드와 별도로 동작 \n> Data 암호화(HashKey) 사용 시 PIN이 포함된 경우 HashKey에 의해 인증 성공/실패로 동작\n> SCC 제외\n> Card + Face : 제외",
-      "1. RID 카드는 AOC/SCC로 동작이 되어야 한다.\n: 카드 인식음, 인증 성공/실패 로그 등 발생\n2. RID 카드는 CSN 모드에서는 RID 카드는 무시되어 반응이 없어야 한다.\n: 카드 인식음, 인증 실패 로그 등 미발생",
-      "1. 1.x에서 발급한 카드를 2.x에서 읽혀야 한다.\n> V1.x(DES/3DES) -> V2.x(DES/3DES)\n2. 해당 카드에 대해 2.x에서 포맷 및 재발급은 미지원한다.\n> V1.x TOC Read만 지원",
-      "1. 새로 설정된 Primary 키로 발급된다.\n> 미입력 시나, 홀수로 입력한 경우 FF나 0을 채워서 등록 / 전송\n2. Auto Tool을 통해 장치에 전송된 Card Layout을 확인하여 Key 정상 유무 확인한다.\n> 인증 유무 포함",
-      "1.AOC 카드 발급 성공 시 사용자의 개인정보가 삭제된다.\n> ID/Finger/Face 인증 시도 - 인증 실패 발생\n> Card 인증 시도 - 개인 인증 모드 or 장치 인증 모드에 의해 인증 성공 / 실패 발생  \n> SCC - 개인 정보 유지\n2.AOC 카드에 Write된 개인인증모드로 동작되어야 한다.\n> 사용자의 개인 인증 모드와 별도로 동작 \n> Data 암호화(HashKey) 사용 시 PIN이 포함된 경우 HashKey에 의해 인증 성공/실패로 동작\n> SCC 제외\n> Card + Face : 제외\n> FW 지원 유무에 따라 미지원 버전은 개인 인증 모드를 무시하고 동작, BioStar에서 발급 시에는 FW 버전 상관 없이 Private Auth 발급 가능",
-      "1. 발급된 정보로 인증성공한다.\n>DFW-601",
-      "1. Primary Key가 맞으므로 발급된 정보로 인증성공된다",
-      "1. Secondary Key가 맞으므로 발급된 정보로 인증성공된다",
-      "1. 키가 맞지 않음으로 인증실패로 동작된다."
-    ]
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 12752,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 34683,
+              "latestFinalId": 34683
+            },
+            {
+              "environment": "ES1",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29819,
+              "latestFinalId": 29819
+            },
+            {
+              "environment": "BioStarV2.9.6.30",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29819,
+              "latestFinalId": 29819
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_170117(UnitTest)",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 5643,
+              "latestFinalId": 5643
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180329",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10338,
+              "latestFinalId": 10338
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_190805_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15222,
+              "latestFinalId": 15222
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.2.8_20160603",
+          "statusResults": [
+            {
+              "latest": 2,
+              "latestFinal": 2,
+              "latestId": 1760,
+              "latestFinalId": 1760
+            }
+          ]
+        },
+        {
+          "group": "FL_V1.0_190515(PS)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 14135,
+              "latestFinalId": 14135
+            }
+          ]
+        },
+        {
+          "group": "V1.7.1_181204(Hotfix)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12653,
+              "latestFinalId": 12653
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_181210_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12788,
+              "latestFinalId": 12788
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0 170331",
+          "statusResults": [
+            {
+              "latest": 1,
+              "latestFinal": 3,
+              "latestId": 8625,
+              "latestFinalId": 6354
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_181119_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12935,
+              "latestFinalId": 12935
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_190809_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 15583,
+              "latestFinalId": 15583
+            }
+          ]
+        },
+        {
+          "group": "V1.8.0_190806_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15309,
+              "latestFinalId": 15309
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180322",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10158,
+              "latestFinalId": 10158
+            }
+          ]
+        },
+        {
+          "group": "V1.7.0_190806_Interaction 7차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15098,
+              "latestFinalId": 15098
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.1.5_5 - 20151016(All)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 5242,
+              "latestFinalId": 5242
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_190806_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15452,
+              "latestFinalId": 15452
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_20200601_Interaction 12차",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 17184,
+              "latestFinalId": 17184
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "인증 - Secure Credential/Access On 카드(DESFire)",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 1074,
+          "index": 1,
+          "step": "1. Setting > Card Format > Smart Card\n2. Smart Card Layout 추가\n3. 장치> Smart Card Layout 설정\n4. User> 기 등록된 사용자 선택> Card> SmartCard> 사용자 정보 Write",
+          "data": "카드발급\n> Mifare / Mifare Plus Card\n> DesFire EV1/EV2 Card\n> iClass / iClass SE Card\n\nSmart Card\n> AOC/SCC",
+          "result": "사용자 정보가 카드에 Write 되어야 한다.\n> 카드에 Write할 메모리가 여유로울 경우 Wite되어야 한다.\n> 카드에 Write할 메모리가 부족할 경우 Wite 중 실패되어야 한다.\n=> Device Timeout 팝업 발생",
+          "attachments": []
+        },
+        {
+          "id": 1116,
+          "index": 2,
+          "step": "1. Smart Card Layout 추가\n> 발급된 카드의 Key와 상이\n2. 장치> 위에서 추가한 Layout 설정\n3. 기 발급된 Smart Card 리드",
+          "data": "카드발급\n> Mifare / Mifare Plus Card\n> DesFire EV1/EV2 Card\n> iClass / iClass SE Card\n\nSmart Card\n> AOC/SCC\n\n※ DESFire / DESFire EV1 경우 - App, File, Encryption Type 에 대해 기 발급된 카드와 동일하게 설정.\n\n",
+          "result": "발급된 정보가 아닌 CSN으로 리드된다.",
+          "attachments": []
+        },
+        {
+          "id": 1118,
+          "index": 3,
+          "step": "1. Smart Card Layout 추가\n> Primary Key: 발급된 카드키와 상이\n> Secondary Key: 발급된 카드키와 동일\n4. 장치> 위에서 추가한 Layout 설정\n5. 기 발급된 Smart Card 리드",
+          "data": "카드발급\n> Mifare / Mifare Plus Card\n> DesFire EV1/EV2 Card\n> iClass / iClass SE Card\n\nSmart Card\n> AOC/SCC\n\n※ DESFire / DESFire EV1 경우 - App, File, Encryption Type 에 대해 기 발급된 카드와 동일하게 설정.\n\n",
+          "result": "발급된 정보로 리드된다.",
+          "attachments": []
+        },
+        {
+          "id": 9545,
+          "index": 4,
+          "step": "1. Smart Card Layout 추가\n> Primary Key & Encryption Type\n: 발급된 카드키와 상이Primary \n> Secondary Key: 사용안함 설정\n2. 장치> 위에서 추가한 \nLayout 설정\n3. Smart Card 리드",
+          "data": "카드발급\n> Mifare / Mifare Plus Card\n> DesFire EV1/EV2 Card\n> iClass / iClass SE Card\n\nSmart Card\n> AOC/SCC",
+          "result": "발급된 정보가 아닌 CSN으로 리드된다.",
+          "attachments": []
+        },
+        {
+          "id": 1095,
+          "index": 5,
+          "step": "1. Setting> Card Format> Smart Card> Add Smart Card\n2. Key 및 Layout 설정\n3. User> 기 등록된 사용자 선택> Card> SmartCard> 사용자 정보 Write",
+          "data": "Mifare / Mifare Plus Card\n> 1K Card(Byte)\n> 2K Card(Byte)\n> 4K Card(Byte)\n\nSmart Card\n> AOC/SCC",
+          "result": "> 카드에 Write할 메모리가 여유로울 경우 Wite되어야 한다.\n> 카드에 Write할 메모리가 부족할 경우 Wite 중 실패되어야 한다.\n=> Device Timeout 팝업 발생",
+          "attachments": []
+        },
+        {
+          "id": 1096,
+          "index": 6,
+          "step": "1. Setting> Card Format> Smart Card> Add Smart Card\n2. Key 및 Layout 설정\n3. User> 기 등록된 사용자 선택> Card> SmartCard> 사용자 정보 Write",
+          "data": "Mifare DesFire / Mifare DesFire EV1 Card\n> 2K Card(Byte)\n> 4K Card(Byte)\n> 8K Card(Byte)\n\nSmart Card\n> AOC/SCC",
+          "result": "> 카드에 Write할 메모리가 여유로울 경우 Wite되어야 한다.\n> 카드에 Write할 메모리가 부족할 경우 Wite 중 실패되어야 한다.\n=> Device Timeout 팝업 발생\n> Blackfin 장치와 Station 장치 각각 카드 읽는 시간이 같아야 한다. \n\n",
+          "attachments": []
+        },
+        {
+          "id": 1097,
+          "index": 7,
+          "step": "1. Setting> Card Format> Smart Card> Add Smart Card\n2. Key 및 Layout 설정\n3. User> 기 등록된 사용자 선택> Card> SmartCard> 사용자 정보 Write",
+          "data": "iClass / iClass SE Card\n> 2K bits / 2 Application\n> 16K bits / 2 Application\n> 16K bits / 16 Application\n> 32K bits / (16K/2+16K/1)\n> 32K bits / (16K/16+16K/1)\n\nSmart Card\n> AOC/SCC",
+          "result": "> 카드에 Write할 메모리가 여유로울 경우 Wite되어야 한다.\n> 카드에 Write할 메모리가 부족할 경우 Wite 중 실패되어야 한다.\n=> Device Timeout 팝업 발생\n> Blackfin 장치와 Station 장치 각각 카드 읽는 시간이 같아야 한다. \n",
+          "attachments": []
+        },
+        {
+          "id": 1106,
+          "index": 8,
+          "step": "<Card Format 설정 & 장치에 Layout 설정된 상태>\n1. User> 기 등록된 사용자 선택> Card> Read Card> Format Card\n2. SmartCard> Secure Credential 카드에 사용자 정보 Write",
+          "data": "사용자 ID\n > 숫자 : 기존과 동일\n > 영숫자 : Default(공란), 24 byte 범위 내에서 10진수 숫자 1 부터 입력 지원\n\n포맷\n> 영숫자 모드가 불일치 해도 카드 레이아웃만 동일하면 장치 상관 없이 가능\n: 영숫자 모드 불일치, 미지원 FW",
+          "result": "> 출입그룹 정보는 장치에 저장되어야 하고, 카드ID/지문/PIN 정보만 저장되어야 한다.\n> 카드 Type/Template 개수/발급회차가 저장되어야 한다.\n-: 카드 Type(AOC, SCC), Summary의 ID(Issue Count : x) - 카드 사양으로 8개를 초과 할 수없음",
+          "attachments": []
+        },
+        {
+          "id": 1108,
+          "index": 9,
+          "step": "1. Step 9에서 발급한 Secure Credential 카드 인증시도",
+          "data": "인증시도\n> 단일장치\n> Master-Slave 장치\n> 장치 인증 모드별\n=: Card, 이중인증, 근태, 권한별 메뉴 진입\n=: ID, Finger - 의미가 없음",
+          "result": "> 발급된 정보로 인증성공으로 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 1107,
+          "index": 10,
+          "step": "<Card Format 설정 & 장치에 Layout 설정된 상태>\n1. User> 기 등록된 사용자 선택> Card> Read Card> Format Card\n2. SmartCard> Access On 카드에 사용자 정보 Write",
+          "data": "사용자 ID\n > 숫자, 영숫자, 특수 문자('_','-')\n\n포맷\n> 영숫자 모드가 불일치 해도 카드 레이아웃만 동일하면 장치 상관 없이 가능\n: 영숫자 모드 불일치, 미지원 FW",
+          "result": "> 인증에 필요한 모든 정보(개인인증모드 포함)가 저장되어야 한다.\n> Access On 카드 Write시 발급회차가 발급되어야 한다.\n-: 카드 Type(AOC, SCC), Summary의 ID(Issue Count : x) - 카드 사양으로 8개를 초과 할 수없음",
+          "attachments": []
+        },
+        {
+          "id": 1109,
+          "index": 11,
+          "step": "1. Step 11에서 발급한 Access On 카드 인증시도",
+          "data": "인증시도\n> 단일장치 & RS485 구성된 Master/Slave 장치\n> 카드인증모드\n> 카드인증을 통한 관리자 메뉴진입\n> 이중인증/근태인증",
+          "result": "> 발급된 정보로 인증성공으로 동작한다.\n: 장치에 등록된 사용자와는 무관하게 인증되어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 2349,
+          "index": 12,
+          "step": "1. A Layout를 이용하여 카드 발급\n2. B Layout이 적용된 장치에 A Layout으로 발급된 Card 리드\n3. 해당 장치를 포맷 후 재발급 시도",
+          "data": "카드발급\n> Mifare / Mifare Plus Card\n> Mifare DesFire / Mifare DesFire EV1 Card\n> iClass / iClass SE Card",
+          "result": "1. A Layout이 적용된 장치에서 읽혀야 한다.\n2. B Layout 장치에서는 A Layout에서 발급한 카드가 CSN으로 동작을 한다.\n> Key가 다른 경우에도 CSN으로 인식이 되어야 한다.\n3. B Layout에 Secondary Key을 등록하여 포맷이나 재발급을 한다.",
+          "attachments": []
+        },
+        {
+          "id": 9546,
+          "index": 13,
+          "step": "1. A Layout를 이용하여 카드 발급\n2. B Layout이 적용된 장치에 A Layout으로 발급된 Card 리드\n3. 해당 장치를 포맷 후 재발급 시도",
+          "data": "A Layout - DESFire/DESFire EV1\n> DES/3DES 설정\nB Layout - DESFire/DESFire EV1\n> AES 설정",
+          "result": "1. A Layout이 적용된 장치에서 읽혀야 한다.\n2. B Layout 장치에서는 A Layout에서 발급한 카드가 CSN으로 동작을 한다.\n> Encryption Type이 다른 경우(Key가 다른 경우 포함)에도 CSN으로 인식된다.\n> Format 시도시 실패 한다.\n3. 구형 버전에서는 AES로 지정시 내부적으로 DES/3DES로 동작을 한다.\n> DESFire EV1- AES로 발급 시 DES/3DES로 변경 안됨(DES/3DES -> AES로 1회 변경 가능)",
+          "attachments": []
+        },
+        {
+          "id": 2634,
+          "index": 14,
+          "step": "1. Device> Layout에 A Card Format으로 설정\n2. User> Smart Card 발급\n3. Device> Layout에 B Card Format으로 설정\n4. step2에서 발급받은 카드로 인증시도",
+          "data": "Smart Card 발급\n> Mifare/Desfire\n> Iclass \n\n<A Card Format 설정>\n-) Primary Key는 임의 설정\n-) Secondary Key는 Default 설정\n\n<B Card Format 설정>\n-) Primary Key는 Default 설정\n-) Secondary Key는 사용안함 설정",
+          "result": "인증실패로 동작되어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 2778,
+          "index": 15,
+          "step": "1. Device> Layout에 A Card Format으로 설정\n2. User> Smart Card 발급\n3. Device> Layout에 B Card Format으로 설정\n4. User> step2에서 발급받은 카드로 인증시도",
+          "data": "Smart Card 발급\n> Desfire/Mifare/Iclass\n\nex.DesFire 설정\n<A Card Format 설정>\n-) Primary Key는 1111111111111111 설정\n\n<B Card Format 설정>\n-) Primary Key는 2222222222222222 설정\n-) Secondary Key는 1111111111111111 설정",
+          "result": "1. Secondary Key로 인해 B Card Format으로 카드발급이 이루어져야 하고 발급된 카드로 인증성공이 되어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 3488,
+          "index": 16,
+          "step": "1. Setting> Server> Smart Card> Add Smart Card\n2. DesFire> 설정 후 Apply\n3. Device> DesFire로 생성한 Layout 설정\n4. User> Card 발급 시도",
+          "data": "추후 수정 예정\n\n[BioStar] 설정 범위\nApp ID: 1(Default) ~ 16777215\n=> Default, 임의값 설정해 확인\n\nMax : 28\n\nFile ID: 1 ~ 31\n=> Default, 임의값 설정해 확인\n\nMax : 32",
+          "result": "1. 카드발급이 정상적으로 이루어져야 한다.\n> BioStar 상의 입력값은 별도 확인 필요\n> Desfire / Desfire EV1 Card Memory Structure\nMax App : 28, Max File : 32(1 Per Application - Desfire EV1), 16(1 Per Application - Desfire)\nApplication ID 0 - Reserved\n1 ~ 27 사용 가능 \nFile ID\n0 ~ 15 (Desfire)\n0 ~ 31 (Desfire EV1)",
+          "attachments": []
+        },
+        {
+          "id": 2943,
+          "index": 17,
+          "step": "1. Device> Layout 설정\n2. User> AOC 카드발급> Private Auth Mode 설정\n3. 발급받은 카드로 인증시도",
+          "data": "사용자 ID 모드\n> 숫자/영숫자\n\nPrivate Auth Mode\n> Card Only / Card + PIN / Card+FP / Card + FP or PIN / Card + FP + PIN",
+          "result": "1. AOC 카드에 Write된 개인인증모드로 동작되어야 한다.\n> 사용자의 개인 인증 모드와 별도로 동작 \n> Data 암호화(HashKey) 사용 시 PIN이 포함된 경우 HashKey에 의해 인증 성공/실패로 동작\n> SCC 제외\n> Card + Face : 제외",
+          "attachments": []
+        },
+        {
+          "id": 2953,
+          "index": 18,
+          "step": "1. Device> Layout 설정\n2. User> AOC/SCC 카드발급\n3. 발급받은 카드로 인증시도",
+          "data": "ISO 1443A RID(Random CSN 생성)카드",
+          "result": "1. RID 카드는 AOC/SCC로 동작이 되어야 한다.\n: 카드 인식음, 인증 성공/실패 로그 등 발생\n2. RID 카드는 CSN 모드에서는 RID 카드는 무시되어 반응이 없어야 한다.\n: 카드 인식음, 인증 실패 로그 등 미발생",
+          "attachments": []
+        },
+        {
+          "id": 2271,
+          "index": 19,
+          "step": "1. 1.x BioStar를 이용해 카드발급\n2. 발급받은 카드를 이용해 2.x 장치에서 카드리드\n3. 해당 장치를 포맷 후 재발급 시도",
+          "data": "1. Support V2.x Device\n> V2.x Device(CS 40 제외)\n> Entry V2 미지원\n> V1.x Card Layout 설정",
+          "result": "1. 1.x에서 발급한 카드를 2.x에서 읽혀야 한다.\n> V1.x(DES/3DES) -> V2.x(DES/3DES)\n2. 해당 카드에 대해 2.x에서 포맷 및 재발급은 미지원한다.\n> V1.x TOC Read만 지원",
+          "attachments": []
+        },
+        {
+          "id": 4621,
+          "index": 20,
+          "step": "키 변경으로 카드 발급 시도\n> Primary Key : 새로 발급할 Key값 입력\n> Secondary Key : 발급한 Key값 입력",
+          "data": "Hex 전용으로 미입력 시나, 홀수로 입력한 경우 FF나 O을 채워서 전송 \n예)\n: 사용자 입력값 \"1230\"\n-> FW 전달 값 12 30 FF FF FF FF\n: 사용자 입력값 \"AF0\"\n-> FW 전달 값 0A F0 FF FF FF FF\nKey 입력 범위\n> Description 참조\n",
+          "result": "1. 새로 설정된 Primary 키로 발급된다.\n> 미입력 시나, 홀수로 입력한 경우 FF나 0을 채워서 등록 / 전송\n2. Auto Tool을 통해 장치에 전송된 Card Layout을 확인하여 Key 정상 유무 확인한다.\n> 인증 유무 포함",
+          "attachments": []
+        },
+        {
+          "id": 4855,
+          "index": 21,
+          "step": "0. Setting > Server > User/Device Management 에서 'AoC 발급 시 개인정보 삭제' : Enable\n1. Device> Layout 설정\n2. User> 개인인증모드 설정> AOC 카드발급> Private Auth Mode 설정\n3. 발급받은 카드로 인증시도",
+          "data": "사용자 ID 모드\n> 숫자/영숫자\n\nPrivate Auth Mode\n> Card Only / Card + PIN / Card+FP / Card + FP or PIN / Card + FP + PIN\n\nPrivate Info\n> FP, PIN, Face, Email, Phone, Birthday , Gender\n(birthday, gender는 DB에만 존재하는 data)",
+          "result": "1.AOC 카드 발급 성공 시 사용자의 개인정보가 삭제된다.\n> ID/Finger/Face 인증 시도 - 인증 실패 발생\n> Card 인증 시도 - 개인 인증 모드 or 장치 인증 모드에 의해 인증 성공 / 실패 발생  \n> SCC - 개인 정보 유지\n2.AOC 카드에 Write된 개인인증모드로 동작되어야 한다.\n> 사용자의 개인 인증 모드와 별도로 동작 \n> Data 암호화(HashKey) 사용 시 PIN이 포함된 경우 HashKey에 의해 인증 성공/실패로 동작\n> SCC 제외\n> Card + Face : 제외\n> FW 지원 유무에 따라 미지원 버전은 개인 인증 모드를 무시하고 동작, BioStar에서 발급 시에는 FW 버전 상관 없이 Private Auth 발급 가능",
+          "attachments": []
+        },
+        {
+          "id": 14764,
+          "index": 22,
+          "step": "1. 얼굴을 포함해 SmartCard 발급\n2. 동일 사용자 아이디(장치에 저장된)의 \"얼굴\"만 삭제\n3. 발급된 카드로 재인증 시도",
+          "data": "SmartCard 발급\n> SCC\n\n대상제품\n> 얼굴지원제품\n\n인증모드\n> 카드+얼굴",
+          "result": "1. 발급된 정보로 인증성공한다.\n>DFW-601",
+          "attachments": []
+        },
+        {
+          "id": 19100,
+          "index": 23,
+          "step": "[Old/New SAM 적용시료]\n1. iClass Smart Card 발급(Old/New 무관)\n2. 스마트 카드 레이아웃> 발급한 스마트 카드의 키와 동일한 레이아웃(Primary) 설정 후 장치에 적용\n3. Old/New SAM 시료에서 카드 리드",
+          "data": "iClass Smart Card 메모리별\n> 2K bits / 2 Application\n> 16K bits / 2 Application\n> 16K bits / 16 Application\n> 32K bits / (16K/2+16K/1)\n> 32K bits / (16K/16+16K/1)\n\nSmart Card\n> AOC/SCC",
+          "result": "1. Primary Key가 맞으므로 발급된 정보로 인증성공된다",
+          "attachments": []
+        },
+        {
+          "id": 19101,
+          "index": 24,
+          "step": "[Old/New SAM 적용시료]\n1. iClass Smart Card 발급\n2. 스마트 카드 레이아웃>발급한 스마트 카드의 키와 동일한 레이아웃(Secondary) 설정 후 장치에 적용\n3. Old/New SAM 시료에서 카드 리드",
+          "data": "iClass Smart Card 메모리별\n> 2K bits / 2 Application\n> 16K bits / 2 Application\n> 16K bits / 16 Application\n> 32K bits / (16K/2+16K/1)\n> 32K bits / (16K/16+16K/1)\n\nSmart Card\n> AOC/SCC",
+          "result": "1. Secondary Key가 맞으므로 발급된 정보로 인증성공된다",
+          "attachments": []
+        },
+        {
+          "id": 19102,
+          "index": 25,
+          "step": "[Old/New SAM 적용시료]\n1. iClass Smart Card 발급\n2. 스마트 카드 레이아웃> 발급한 스마트 카드의 키와 상이한 레이아웃(Primary/Secondary) 설정 후 장치에 적용\n3. Old/New SAM 시료에서 카드 리드",
+          "data": "iClass Smart Card 메모리별\n> 2K bits / 2 Application\n> 16K bits / 2 Application\n> 16K bits / 16 Application\n> 32K bits / (16K/2+16K/1)\n> 32K bits / (16K/16+16K/1)\n\nSmart Card\n> AOC/SCC",
+          "result": "1. 키가 맞지 않음으로 인증실패로 동작된다.",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12752/comment/23353",
+          "id": "23353",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "6/7/8. Card Write 시도는 항상 성공하고 용량초과나 CRC 에러등이 발생할 경우엔 Read 에러가 발생하게 됨.",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=smlee",
+            "name": "smlee",
+            "key": "smlee",
+            "emailAddress": "smlee@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11028",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11028",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11028",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11028"
+            },
+            "displayName": "이상민",
+            "active": false,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-10-27T08:25:10.000+0900",
+          "updated": "2015-10-27T08:25:26.000+0900"
+        }
+      ],
+      "maxResults": 1,
+      "total": 1,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+      "name": "Minor (C)",
+      "id": "3"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+      "name": "완료",
+      "id": "10001",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "완료"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzs9b3:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2015-08-26T09:16:47.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

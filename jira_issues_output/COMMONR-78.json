@@ -1,204 +1,2011 @@
 {
-  "id": "COMMONR-78",
-  "content": [
-    [
-      1,
-      "1. Monitoring > Real-time Log",
-      "1. 인증모드별 로그 확인\n > 인증 성공 : 지문, 얼굴, 카드, ID\n > 인증 실패 : 지문, 얼굴, 카드, ID\n > Thermal Camera에 의한 Temperature 표시",
-      "1. 인증모드별 성공/실패 로그 및 온도가 표시된다.\n> 1:1(or 1:N) authentication succeeded (인증수단)\n> 1:1(or 1:N) authentication failed (인증수단)\n2. 부가정보(근태코드, 카드인증 종류 등)와 인증이 시도된 리더ID, 사용자 ID가 표시된다."
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "12831",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/12831",
+  "key": "COMMONR-78",
+  "fields": {
+    "resolution": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/resolution/10000",
+      "id": "10000",
+      "description": "[사용안함] Work has been completed on this issue.",
+      "name": "완료(Done)"
+    },
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "0.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": null,
+    "customfield_10185": null,
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "23930",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/23930",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "21330",
+          "key": "BLIIFWI-649",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/21330",
+          "fields": {
+            "summary": "서버로 로그 업로드시 장치 네트워크가 먹통되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "55322",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/55322",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "62582",
+          "key": "BLNIIFW-1112",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/62582",
+          "fields": {
+            "summary": "GetLogExt 종료 조건 수정",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "50165",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/50165",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "59958",
+          "key": "CSTFW-859",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/59958",
+          "fields": {
+            "summary": "로그 Full 장치를 Biostar2에 연결 시 펌웨어 업그레이드 필요(장치 데이터베이스 손상) 출력 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "26828",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/26828",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "34758",
+          "key": "CSTFW-652",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/34758",
+          "fields": {
+            "summary": "[FISF-1346] 장치의 이벤트 로그가 발생한 순서대로 실시간 전송되지 않는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "26826",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/26826",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "35071",
+          "key": "CSTFW-662",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/35071",
+          "fields": {
+            "summary": "잘못된 로그가 쌓여 서버에 로그 못올리는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "23407",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/23407",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "30332",
+          "key": "XPASSII-113",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/30332",
+          "fields": {
+            "summary": "이벤트 로그 저장안되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "20324",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/20324",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "26080",
+          "key": "BLNIIFW-388",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/26080",
+          "fields": {
+            "summary": "[Hotfix][Log Upload] Event Header와 Table간의 불일치로 인해 (깨진 경우) BioStar에서 Log Upload가 완료 안되는 현상 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "15545",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/15545",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "21028",
+          "key": "BSIIDII-537",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/21028",
+          "fields": {
+            "summary": "[Hotfix] [Full Log] BioStar와 연결 시 무한 반복 로그 요청",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "16801",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/16801",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "22344",
+          "key": "BSIIDII-730",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/22344",
+          "fields": {
+            "summary": "[Hotfix][Log Upload] Event Header와 Table간의 불일치로 인해 (깨진 경우) BioStar에서 Log Upload가 완료 안되는 현상 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13965",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13965",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19111",
+          "key": "ENTRYIIDII-403",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19111",
+          "fields": {
+            "summary": "사용자에 카드사용자 4만명 저장 후 장치재부팅시 무한Reboot으로 동작하는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "16148",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/16148",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "21614",
+          "key": "ENTRYIIDII-485",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/21614",
+          "fields": {
+            "summary": "[Hotfix] [Full Log] BioStar와 연결 시무한 반복 로그 요청",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "15089",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/15089",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "20414",
+          "key": "FSTIIFW-390",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/20414",
+          "fields": {
+            "summary": "[Hotfix][Full Log] BioStar와 연결 시 무한 반복 로그 요청",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "31273",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/31273",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "41396",
+          "key": "ONYXFW-328",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/41396",
+          "fields": {
+            "summary": "NFC 동작 안하는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "15541",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/15541",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "21027",
+          "key": "TIIDFI-1005",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/21027",
+          "fields": {
+            "summary": "[Hotfix] [Full Log] BioStar와 연결 시무한 반복 로그 요청",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "16799",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/16799",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "22336",
+          "key": "TIIDFI-1217",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/22336",
+          "fields": {
+            "summary": "[Hotfix][Log Upload] Event Header와 Table간의 불일치로 인해 (깨진 경우) BioStar에서 Log Upload가 완료 안되는 현상 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "53388",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/53388",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "61543",
+          "key": "BEW3FW-90",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/61543",
+          "fields": {
+            "summary": "Full Log 장치 최신 로그 수동 업로드 후 Diag Log Tool 확인 시 Log 가 계속 올라가는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "53386",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/53386",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "62511",
+          "key": "BEW3FW-148",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/62511",
+          "fields": {
+            "summary": "Full Log 장치를 Biostar2에 연결 시 Diag log에 계속 로그 올라가는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "58845",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/58845",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "68012",
+          "key": "CS20FW-60",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/68012",
+          "fields": {
+            "summary": "CS20 Supervised input/input 동작 안함",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "59885",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/59885",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "68989",
+          "key": "CS20FW-87",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/68989",
+          "fields": {
+            "summary": "CS-20에 연결된 XS2(Slave)의 전원을 off->on 후 인증시도시 인증모드 오류라고 표시되며 실패함",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "60006",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/60006",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "69021",
+          "key": "CS20FW-91",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/69021",
+          "fields": {
+            "summary": "CS-20(Master) - DM20(Slave) 연결 상태에서 DM20의 Input port를 Supervised로 변경 후 Apply 선택해도 적용되지 않음",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12903",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12903",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "17874",
+          "key": "ENTRYIIDII-360",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17874",
+          "fields": {
+            "summary": "[Dual Auth] Wiegand Reader를 이용하여 이중인증 시 이중인증 성공 로그가 미표시 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "21955",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/21955",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "27852",
+          "key": "TIIDFI-2050",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/27852",
+          "fields": {
+            "summary": "[Fire Alarm -> Activate Relay for All Floors] Floor Staus에서 Clear Alarm 시도 시 미설정 Event 발생 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "61006",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/61006",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "70213",
+          "key": "CS20FW-130",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/70213",
+          "fields": {
+            "summary": "[Full Log] BioStar와 연결 시 무한 반복 로그 요청",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14036",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14036",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19320",
+          "key": "ENTRYIIDII-433",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19320",
+          "fields": {
+            "summary": "[Tester: 곽성희] 영숫자ID 사용자 4만명(Full)삭제 후 로그 뷰어 확인 시 로그가  100개 미만으로 출력되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "15059",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/15059",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "20349",
+          "key": "FSTIIFW-365",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/20349",
+          "fields": {
+            "summary": "Slave 장치에 지문 템플릿만 있는 사용자를 ID+얼굴 인증 모드로 인증시 '얼굴 없음' 에러창 미출력하는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "10556",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10556",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "13182",
+          "key": "TIIDFI-121",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/13182",
+          "fields": {
+            "summary": "[Requirement] Monitoring - Log",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10518",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10518",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "13031",
+          "key": "BLIIFWI-102",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/13031",
+          "fields": {
+            "summary": "[Requirement] Monitoring - Log",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "1. Monitoring > Real-time Log",
-      "1. 인증모드별 로그 확인\n > PIN 등록되지 않은 사용자 지문/얼굴+PIN 인증\n > 지문/얼굴 등록되지 않은 사용자 카드+지문/얼굴 인증\n > PIN 등록되지 않은 사용자 카드+PIN 인증\n > 지문/얼굴/PIN 등록되지 않은 사용자 카드+지문/얼굴/PIN 인증\n > 지문/얼굴 등록되지 않은 사용자 ID+지문/얼굴 인증\n > PIN 등록되지 않은 사용자 ID+PIN 인증\n > 지문/얼굴/PIN 등록되지 않은 사용자 ID+지문/얼굴/PIN 인증",
-      "1. 등록안됨 관련 로그가 저장된다. (Authentication failed (Invalid credential))\n > 지문/얼굴 인증 PIN 등록안됨\n > 카드인증 지문/얼굴 등록안됨\n > 카드인증 PIN 등록안됨\n > 카드인증 지문/얼굴 등록안됨(지문/얼굴/PIN 모두 등록되지 않은 사용자)\n > ID인증 지문/얼굴 등록안됨\n > ID인증 PIN 등록안됨\n > ID인증 지문/얼굴 등록안됨(지문/얼굴/PIN 모두 등록되지 않은 사용자)\n2. 부가정보(근태코드, 카드인증 종류 등)와 인증이 시도된 리더ID, 사용자 ID가 표시된다."
+    "assignee": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=kijo",
+      "name": "kijo",
+      "key": "kijo",
+      "emailAddress": "kijo@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "조광일",
+      "active": false,
+      "timeZone": "Asia/Seoul"
+    },
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 21.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-78/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@5524f9a0[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@62d31369[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@7e32db5c[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@400c7a8[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@32028d8c[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@70bd3c16[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@18bde166[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@1a82485e[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@3ccad86f[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@250e1e6c[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@52cf7d7a[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@5a870fc5[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": "2016-02-25T13:30:42.000+0900",
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-78/watchers",
+      "watchCount": 1,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T09:45:33.000+0900",
+    "timeoriginalestimate": null,
+    "description": "실시간 로그 \r\n - 장치에서 발생하는 Event Log에 대한 ",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. Monitoring &gt; Real-time Log</p></td><td><p>1. 인증모드별 로그 확인<br/> &gt; 인증 성공 : 지문, 얼굴, 카드, ID<br/> &gt; 인증 실패 : 지문, 얼굴, 카드, ID<br/> &gt; Thermal Camera에 의한 Temperature 표시</p></td><td><p>1. 인증모드별 성공/실패 로그 및 온도가 표시된다.<br/>&gt; 1:1(or 1:N) authentication succeeded (인증수단)<br/>&gt; 1:1(or 1:N) authentication failed (인증수단)<br/>2. 부가정보(근태코드, 카드인증 종류 등)와 인증이 시도된 리더ID, 사용자 ID가 표시된다.</p></td></tr><tr><td>2</td><td><p>1. Monitoring &gt; Real-time Log</p></td><td><p>1. 인증모드별 로그 확인<br/> &gt; PIN 등록되지 않은 사용자 지문/얼굴+PIN 인증<br/> &gt; 지문/얼굴 등록되지 않은 사용자 카드+지문/얼굴 인증<br/> &gt; PIN 등록되지 않은 사용자 카드+PIN 인증<br/> &gt; 지문/얼굴/PIN 등록되지 않은 사용자 카드+지문/얼굴/PIN 인증<br/> &gt; 지문/얼굴 등록되지 않은 사용자 ID+지문/얼굴 인증<br/> &gt; PIN 등록되지 않은 사용자 ID+PIN 인증<br/> &gt; 지문/얼굴/PIN 등록되지 않은 사용자 ID+지문/얼굴/PIN 인증</p></td><td><p>1. 등록안됨 관련 로그가 저장된다. (Authentication failed (Invalid credential))<br/> &gt; 지문/얼굴 인증 PIN 등록안됨<br/> &gt; 카드인증 지문/얼굴 등록안됨<br/> &gt; 카드인증 PIN 등록안됨<br/> &gt; 카드인증 지문/얼굴 등록안됨(지문/얼굴/PIN 모두 등록되지 않은 사용자)<br/> &gt; ID인증 지문/얼굴 등록안됨<br/> &gt; ID인증 PIN 등록안됨<br/> &gt; ID인증 지문/얼굴 등록안됨(지문/얼굴/PIN 모두 등록되지 않은 사용자)<br/>2. 부가정보(근태코드, 카드인증 종류 등)와 인증이 시도된 리더ID, 사용자 ID가 표시된다.</p></td></tr><tr><td>3</td><td><p>1. Monitoring &gt; Real-time Log</p></td><td><p>1. 인증모드별 로그 확인<br/>&gt; 유효 기간이 지난 사용자 인증<br/>&gt; 이중 인증 성공/실패</p></td><td><p>1. 유효기간 아님 관련 로그가 표시된다.<br/>&gt; Access denied (Invalid period)<br/>2. 이중인증 성공시 인증별 성공로그 및 이중인증 성공 로그가 표시된다.<br/>&gt; Dual authentication succeeded<br/>3. 부가정보(근태코드, 카드인증 종류 등)와 인증이 시도된 리더ID, 사용자 ID가 표시된다.</p></td></tr><tr><td>4</td><td><p>1. Monitoring &gt; Real-time Log</p></td><td><p>1. 출입인증관련 로그 확인<br/> &gt; 출입그룹에 속한 사용자 : 인증<br/> &gt; 출입그룹에 속하지 않은 사용자 : 인증</p></td><td><p>1. 출입그룹 위반 관련 로그가 표시된다.<br/>&gt; Access denied (Invalid access group)<br/>2. 부가정보(근태코드, 카드인증 종류 등)와 인증이 시도된 리더ID가 표시된다.</p></td></tr><tr><td>5</td><td><p>1. Monitoring &gt; Real-time Log</p></td><td><p>1. IO관련 로그 확인<br/> &gt; Pre-defined Alarm<br/> &gt; Input</p></td><td><p>1. ReaderController ID 로그가 저장된다.<br/>2. IO장치 ID, 입력포트 인덱스가 저장된다.<br/>3. 사용자 ID는 표시되지 않는다.</p></td></tr><tr><td>6</td><td><p>1. Monitoring &gt; Real-time Log</p></td><td><p>1. IO관련 로그 확인<br/> &gt; Action</p></td><td><p>1. Action이 발생하는 Reader ID 또는 ReaderController의 ID 로그가 저장된다.<br/>2. IO장치 ID, 출력포트 인덱스가 저장된다.(Controller 포트인 경우 IO장치 ID가 표시되지 않는다)<br/>3. 사용자 ID는 ActionID가 저장된다.</p></td></tr><tr><td>7</td><td><p>1. Monitoring &gt; Real-time Log</p></td><td><p>1. 출입문 로그 확인<br/> &gt; Unlock, Lock, Open, Close, Forced Open, Held Open</p></td><td><p>1. 출입문 ID가 저장되고 해당 이벤트 로그가 저장된다.<br/>2. IO장치 ID, 입력포트는 저장되지 않는다.<br/>3. 사용자 ID 저장되지 않는다</p></td></tr><tr><td>8</td><td><p>1. Monitoring &gt; Real-time Log</p></td><td><p>1. 구역 로그 확인<br/> &gt; Soft APB 위반, Hard APB 위반, Timed APB 위반, Fire Alarm 위반, Forced Lock/Unlock Schedule 인증제한<br/>2. Intrusion Alarm Zone Log 확인<br/> &gt; 경비진입, 경비실패, 해제, 경비상태, 경보상태진입, 경보상태해제, 경비수행 인증성공, 경비수행 인증실패, 해제수행 인증성공, 해제수행 인증실패, 경비중 인증 제한</p></td><td><p>1. Zone ID 로그가 저장된다.<br/>2. IO장치 ID, 입력포트는 저장되지 않는다.<br/>3. 사용자 ID 저장되지 않는다<br/>4. 경비 수행/해제 수행/경비 중 인증 제한 시에는 어떤 장치에서 누가 수행하였는지 확인할 수 있어야 한다.<br/>5. 경보-침입 발생 시에는 어떤 센서(예, 회의실 창문, 창고 외벽 등)에서 침입이 감지되었지는 확인 할 수 있어야 한다.</p></td></tr><tr><td>9</td><td><p>1. Monitoring &gt; Real-time Log</p></td><td><p>1. 사용자 관리 로그 확인<br/> &gt; 사용자 등록, 지문/얼굴/카드/PIN/이름/부가정보 업데이트, 사용자 삭제/전체 삭제</p></td><td><p>1. ReaderController ID 로그가 저장된다.<br/>2. 사용자 등록시 등록성공 로그와 등록된 사용자 ID가 저장된다.<br/>&gt; Device에서 등록 시 로그(Device) 등록 구분 표시<br/>&gt; Server에서 등록 시 로그(Server) 등록 구분 표시<br/>3. 지문/얼굴/카드/PIN/부가정보 업데이트시 추가/편집/삭제 관련 로그가 저장된다.<br/>&gt; Device에서 추가/편집/삭제 시 로그(Device) 등록 구분 표시<br/>&gt; Server에서 추가/편집/삭제 시 로그(Server) 등록 구분 표시<br/>4. 사용자 삭제시 삭제성공 로그와 삭제된 사용자 ID가 저장된다.<br/>&gt; Device에서 삭제 시 로그(Device) 등록 구분 표시<br/>&gt; Server에서 삭제 시 로그(Server) 등록 구분 표시<br/>5. 사용자 전체 삭제시 사용자 ID 저장되지 않는다.<br/>&gt; Device에서 전체 삭제 시 로그(Device) 등록 구분 표시<br/>&gt; Server에서 전체 삭제 시 로그(Server) 등록 구분 표시</p></td></tr><tr><td>10</td><td><p>1. Monitoring &gt; Real-time Log</p></td><td><p>1. IP 통신 관련 로그 확인<br/> &gt; BioStar 연결 : BioStar-&gt;장치, BioStar 연결 끊김 : BioStar-&gt;장치, BioStar 연결 : 장치-&gt;BioStar, BioStar 연결 끊김 : 장치-&gt;BioStar, IP 재설정, RS485 연결 , RS485 연결끊김</p></td><td><p>1. ReaderController ID 로그가 저장된다.<br/>2. BioStar와의 연결/연결끊김시 사용자 ID는 저장되지 않는다.<br/>3. IP 재설정시 설정된 IP주소 정보가 저장된다.<br/>4. RS485 연결/연결끊김시 RS485 통신이 연결된 리더ID가 저장된다.</p></td></tr><tr><td>11</td><td><p>1. Monitoring &gt; Real-time Log</p>\n<ul>\n<li>장치 내 Trigger&amp;Action 에서 Input 선택, Device : DM20 선택, Port / Switch 설정 확인</li>\n</ul>\n</td><td><p>1. DM20 관련 로그 확인<br/> &gt; Supervised Input-Open/Short<br/> &gt; Input</p></td><td><p>1. Open과 Short에 대한 로그가 표시된다.<br/>= Supervised Input Short / Port No.<br/>= Supervised Input Open / Port No.<br/>2. Input에 대한 로그가 표시된다.<br/>= Input /Port No.</p></td></tr><tr><td>12</td><td><p>1. Device &gt; 장치 선택 &gt; Advanced &gt; Image Log : Enable 설정 &gt; Configuration : Event, Schedule 설정 &gt; Apply<br/>2. Monitoring &gt; Real-time Log &gt; Event 발생시 Image Log 확인</p></td><td><p>1. 첨부파일 확인(BioStar&amp;A2 Log Name)<br/>&gt; FS2 </p></td><td><p>1. 장치에서 Configuration 에 설정한 Event 발생시 Image Log 가 표시된다.<br/>&gt; 장치에서도 Image Log 확인<br/>2. 로그 List 에 Image 포함 여부를 표시한다.<br/>3. 로그 선택시 해당 Image 를 보여준다.<br/>= 해상도 : 320 x 240</p>\n\n<p>&gt; Slave 장치(DM20, SIO2포함)에서는 영상 로그 미지원</p></td></tr><tr><td>13</td><td><p>1) BioStar 연결 : 정상 동작 확인<br/>2) 랜선 제거 : BioStar와 연결이 끊어지도록 만듬<br/>3) 장치에 Full Log 생성 : Max인 상태에서 BioStar와 재연결</p></td><td><p>Full Log 생성(장치마다 상이)</p></td><td><p>1. BioStar와 재연결된 후에 정상적으로 실시간 로그가 전송, 표시 된다.</p></td></tr><tr><td>14</td><td><p>1) Mobile Access로 인증시도</p></td><td><p>Mobile Access<br/>&gt; BLE<br/>&gt; NFC</p>\n\n\n<p>Template On Mobile<br/>&gt;ToM_AoC<br/>&gt;ToM_SCC</p></td><td><p>1. 일반 카드인증 이벤트로그와 분리되어 표시된다.<br/>&gt; 인증성공(카드): 1:1 authentication succeeded(Mobile Card)<br/>&gt; 인증실패(카드): 1:1 authentication failed(Mobile Card)<br/>&gt; 인증성공(카드+지문): 1:1 authentication succeeded(Mobile Card + Fingerprint)<br/>&gt; 인증성공(카드+PIN): 1:1 authentication succeeded(Mobile Card + PIN)<br/>&gt; 인증성공(카드+지문+PIN): 1:1 authentication succeeded(Mobile Card + Fingerprint + PIN)<br/>&gt; 1:1 협박 지문 인증성공(카드+지문): 1:1 Duress authentication succeeded(Mobile Card + Fingerprint)<br/>&gt; 1:1 협박 지문 인증성공(카드+지문+PIN): 1:1 Duress authentication succeeded(Mobile Card + Fingerprint + PIN)<br/>&gt; 실패에 대해서는 기존과 동일한 이벤트 로그 표시(ex. 카드 +지문에 대해 지문에서 인증실패시 1:1 인증실패(지문))</p></td></tr><tr><td>15</td><td><p>1) BioStar Mobile로 인증시도</p></td><td><p>Mobile Access<br/>&gt; BLE<br/>&gt; NFC</p></td><td><p>1. 일반 카드인증 이벤트로그와 분리되어 표시된다.<br/>&gt; 인증성공(카드): 1:1 authentication succeeded(Mobile Card)<br/>&gt; 인증실패(카드): 1:1 authentication failed(Mobile Card)<br/>&gt; 인증성공(카드+지문): 1:1 authentication succeeded(Mobile Card + Fingerprint)<br/>&gt; 인증성공(카드+PIN): 1:1 authentication succeeded(Mobile Card + PIN)<br/>&gt; 인증성공(카드+지문+PIN): 1:1 authentication succeeded(Mobile Card + Fingerprint + PIN)<br/>&gt; 1:1 협박 지문 인증성공(카드+지문): 1:1 Duress authentication succeeded(Mobile Card + Fingerprint)<br/>&gt; 1:1 협박 지문 인증성공(카드+지문+PIN): 1:1 Duress authentication succeeded(Mobile Card + Fingerprint + PIN)<br/>&gt; 실패에 대해서는 기존과 동일한 이벤트 로그 표시(ex. 카드 +지문에 대해 지문에서 인증실패시 1:1 인증실패(지문))</p></td></tr><tr><td>16</td><td><p>1. 등록되지 않은 카드 인증시도</p></td><td><p><span class=\"error\">&#91;2.x Entry 계열에 해당-숫자모드&#93;</span><br/>32bit 초과하는 카드<br/>&gt; DesFire EV1<br/>&gt; ISO 15693<br/>&gt; Felica<br/>&gt; EM</p>\n\n<p>ISO 14443A RID (Random CSN 동작) 카드<br/>&gt; Mifare(NFC 폰)<br/>&gt; iClass</p></td><td><p>1. 10자리 이상의 카드ID는 카드ID의 뒷부분만 잘라서 표시해주어야 한다.<br/>: 로그로 확인가능<br/>: Max  Card ID : 256bit도 동일<br/>1-1. 영숫자모드를 지원하는 Entry 계열의 경우<br/>=&gt; 영숫자모드일 때 카드ID 전체를 표시해준다.(XPASS/XPS2)<br/>2. RID 카드는 무시되어 반응이 없어야 한다.<br/>: 카드 인식음, 인증 실패 로그 등 미발생<br/>: 단, iClass SEOS는 PAC DATA가 출력되어야 함<br/>: Card Type에 따라 동일한 Card ID로 인식</p></td></tr><tr><td>17</td><td><p>1. 등록되지 않은 카드 인증시도</p></td><td><p><span class=\"error\">&#91;Station 계열에 해당-숫자/영숫자모드&#93;</span><br/>32bit 초과하는 카드<br/>&gt; DesFire EV1<br/>&gt; ISO 15693<br/>&gt; Felica<br/>&gt; EM</p>\n\n<p>ISO 14443A RID (Random CSN 동작) 카드<br/>&gt; Mifare(NFC 폰)<br/>&gt; iClass</p></td><td><p>1. 카드ID 전체를 표시해줘야 한다.<br/>: 로그로 확인가능<br/>: Max  Card ID : 256bit도 동일<br/>2. RID 카드는 무시되어 반응이 없어야 한다.<br/>: 카드 인식음, 인증 실패 로그 등 미발생<br/>: 단, iClass SEOS는 PAC DATA가 출력되어야 함<br/>: Card Type에 따라 동일한 Card ID로 인식</p></td></tr><tr><td>18</td><td><p>1. 새로 설치한 서버에 장치 추가<br/>2. Full Log가 서버로 업로드됨을 확인<br/>3. 서버종료<br/>4. 장치에 여러번의 인증시도(로그가 쌓이게하는 목적)<br/>5. 서버 재실행<br/>6. 로그 업로드 여부 확인</p></td><td><p>로그 업데이트: 자동</p>\n\n<p>&gt;이벤트 로그 FULL<br/>&gt;이미지 로그 FULL<br/>※ 로그 쌓는 방식: AGING<br/>(이미지 로그 ON &gt; 이미지 로그 FULL &gt; 이벤트 로그 FULL)</p></td><td><p>1. 장치로그가 서버로 모두 업로드 된다.<br/>2. 서버와 연결이 끊긴 이후에 발생한 로그에 대해서만 서버로 올린다.</p></td></tr><tr><td>19</td><td><p>1. 새로 설치한 서버에 장치 추가<br/>2. 수동으로 장치의 로그 업로드<br/>3. Full Log가 서버로 업로드됨을 확인<br/>4. 장치에 여러번의 인증시도(로그가 쌓이게하는 목적)<br/>5. 수동으로 장치의 로그 재업로드<br/>6. 로그 업로드 여부 확인</p></td><td><p>로그 업데이트: 수동</p>\n\n<p>&gt;이벤트 로그 FULL<br/>&gt;이미지 로그 FULL<br/>※ 로그 쌓는 방식: AGING<br/>(이미지 로그 ON &gt; 이미지 로그 FULL &gt; 이벤트 로그 FULL)</p></td><td><p>1. 장치로그가 서버로 모두 업로드 된다.<br/>2. 수동으로 로그 업로드 후에 발생한 로그에 대해서만 서버로 올린다.</p></td></tr><tr><td>20</td><td><p>1. 장치에 연속인증 중 강제 전원 OFF<br/>2. 다시 전원ON<br/>3. 장치 메뉴&gt; 이벤트 로그&gt; 검색<br/>4. 이벤트 로그 확인</p></td><td><p>장치LCD 지원모델</p></td><td><p>1. 로그 중 유효하지 않은 정보가 화면에 표시되지 않는다.</p></td></tr><tr><td>21</td><td><p>1. 장치에 연속인증 중 강제 전원 OFF<br/>2. 다시 전원ON<br/>3. 바이오스타&gt; 모니터링&gt; 실시간/이벤트 로그 확인</p></td><td><p>장치LCD 미지원모델</p></td><td><p>1. 로그 중 유효하지 않은 정보가 표시되지 않는다.</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [
+      "COMMONR-51"
     ],
-    [
-      3,
-      "1. Monitoring > Real-time Log",
-      "1. 인증모드별 로그 확인\n> 유효 기간이 지난 사용자 인증\n> 이중 인증 성공/실패",
-      "1. 유효기간 아님 관련 로그가 표시된다.\n> Access denied (Invalid period)\n2. 이중인증 성공시 인증별 성공로그 및 이중인증 성공 로그가 표시된다.\n> Dual authentication succeeded\n3. 부가정보(근태코드, 카드인증 종류 등)와 인증이 시도된 리더ID, 사용자 ID가 표시된다."
-    ],
-    [
-      4,
-      "1. Monitoring > Real-time Log",
-      "1. 출입인증관련 로그 확인\n > 출입그룹에 속한 사용자 : 인증\n > 출입그룹에 속하지 않은 사용자 : 인증",
-      "1. 출입그룹 위반 관련 로그가 표시된다.\n> Access denied (Invalid access group)\n2. 부가정보(근태코드, 카드인증 종류 등)와 인증이 시도된 리더ID가 표시된다."
-    ],
-    [
-      5,
-      "1. Monitoring > Real-time Log",
-      "1. IO관련 로그 확인\n > Pre-defined Alarm\n > Input",
-      "1. ReaderController ID 로그가 저장된다.\n2. IO장치 ID, 입력포트 인덱스가 저장된다.\n3. 사용자 ID는 표시되지 않는다."
-    ],
-    [
-      6,
-      "1. Monitoring > Real-time Log",
-      "1. IO관련 로그 확인\n > Action",
-      "1. Action이 발생하는 Reader ID 또는 ReaderController의 ID 로그가 저장된다.\n2. IO장치 ID, 출력포트 인덱스가 저장된다.(Controller 포트인 경우 IO장치 ID가 표시되지 않는다)\n3. 사용자 ID는 ActionID가 저장된다."
-    ],
-    [
-      7,
-      "1. Monitoring > Real-time Log",
-      "1. 출입문 로그 확인\n > Unlock, Lock, Open, Close, Forced Open, Held Open",
-      "1. 출입문 ID가 저장되고 해당 이벤트 로그가 저장된다.\n2. IO장치 ID, 입력포트는 저장되지 않는다.\n3. 사용자 ID 저장되지 않는다"
-    ],
-    [
-      8,
-      "1. Monitoring > Real-time Log",
-      "1. 구역 로그 확인\n > Soft APB 위반, Hard APB 위반, Timed APB 위반, Fire Alarm 위반, Forced Lock/Unlock Schedule 인증제한\n2. Intrusion Alarm Zone Log 확인\n > 경비진입, 경비실패, 해제, 경비상태, 경보상태진입, 경보상태해제, 경비수행 인증성공, 경비수행 인증실패, 해제수행 인증성공, 해제수행 인증실패, 경비중 인증 제한",
-      "1. Zone ID 로그가 저장된다.\n2. IO장치 ID, 입력포트는 저장되지 않는다.\n3. 사용자 ID 저장되지 않는다\n4. 경비 수행/해제 수행/경비 중 인증 제한 시에는 어떤 장치에서 누가 수행하였는지 확인할 수 있어야 한다.\n5. 경보-침입 발생 시에는 어떤 센서(예, 회의실 창문, 창고 외벽 등)에서 침입이 감지되었지는 확인 할 수 있어야 한다."
-    ],
-    [
-      9,
-      "1. Monitoring > Real-time Log",
-      "1. 사용자 관리 로그 확인\n > 사용자 등록, 지문/얼굴/카드/PIN/이름/부가정보 업데이트, 사용자 삭제/전체 삭제",
-      "1. ReaderController ID 로그가 저장된다.\n2. 사용자 등록시 등록성공 로그와 등록된 사용자 ID가 저장된다.\n> Device에서 등록 시 로그(Device) 등록 구분 표시\n> Server에서 등록 시 로그(Server) 등록 구분 표시\n3. 지문/얼굴/카드/PIN/부가정보 업데이트시 추가/편집/삭제 관련 로그가 저장된다.\n> Device에서 추가/편집/삭제 시 로그(Device) 등록 구분 표시\n> Server에서 추가/편집/삭제 시 로그(Server) 등록 구분 표시\n4. 사용자 삭제시 삭제성공 로그와 삭제된 사용자 ID가 저장된다.\n> Device에서 삭제 시 로그(Device) 등록 구분 표시\n> Server에서 삭제 시 로그(Server) 등록 구분 표시\n5. 사용자 전체 삭제시 사용자 ID 저장되지 않는다.\n> Device에서 전체 삭제 시 로그(Device) 등록 구분 표시\n> Server에서 전체 삭제 시 로그(Server) 등록 구분 표시"
-    ],
-    [
-      10,
-      "1. Monitoring > Real-time Log",
-      "1. IP 통신 관련 로그 확인\n > BioStar 연결 : BioStar->장치, BioStar 연결 끊김 : BioStar->장치, BioStar 연결 : 장치->BioStar, BioStar 연결 끊김 : 장치->BioStar, IP 재설정, RS485 연결 , RS485 연결끊김",
-      "1. ReaderController ID 로그가 저장된다.\n2. BioStar와의 연결/연결끊김시 사용자 ID는 저장되지 않는다.\n3. IP 재설정시 설정된 IP주소 정보가 저장된다.\n4. RS485 연결/연결끊김시 RS485 통신이 연결된 리더ID가 저장된다."
-    ],
-    [
-      11,
-      "1. Monitoring > Real-time Log\n* 장치 내 Trigger&Action 에서 Input 선택, Device : DM20 선택, Port / Switch 설정 확인",
-      "1. DM20 관련 로그 확인\n > Supervised Input-Open/Short\n > Input",
-      "1. Open과 Short에 대한 로그가 표시된다.\n= Supervised Input Short / Port No.\n= Supervised Input Open / Port No.\n2. Input에 대한 로그가 표시된다.\n= Input /Port No.\n"
-    ],
-    [
-      12,
-      "1. Device > 장치 선택 > Advanced > Image Log : Enable 설정 > Configuration : Event, Schedule 설정 > Apply\n2. Monitoring > Real-time Log > Event 발생시 Image Log 확인",
-      "1. 첨부파일 확인(BioStar&A2 Log Name)\n> FS2 ",
-      "1. 장치에서 Configuration 에 설정한 Event 발생시 Image Log 가 표시된다.\n> 장치에서도 Image Log 확인\n2. 로그 List 에 Image 포함 여부를 표시한다.\n3. 로그 선택시 해당 Image 를 보여준다.\n= 해상도 : 320 x 240\n\n> Slave 장치(DM20, SIO2포함)에서는 영상 로그 미지원"
-    ],
-    [
-      13,
-      "1) BioStar 연결 : 정상 동작 확인\n2) 랜선 제거 : BioStar와 연결이 끊어지도록 만듬\n3) 장치에 Full Log 생성 : Max인 상태에서 BioStar와 재연결",
-      "Full Log 생성(장치마다 상이)",
-      "1. BioStar와 재연결된 후에 정상적으로 실시간 로그가 전송, 표시 된다."
-    ],
-    [
-      14,
-      "1) Mobile Access로 인증시도",
-      "Mobile Access\n> BLE\n> NFC\n\n\nTemplate On Mobile\n>ToM_AoC\n>ToM_SCC",
-      "1. 일반 카드인증 이벤트로그와 분리되어 표시된다.\n> 인증성공(카드): 1:1 authentication succeeded(Mobile Card)\n> 인증실패(카드): 1:1 authentication failed(Mobile Card)\n> 인증성공(카드+지문): 1:1 authentication succeeded(Mobile Card + Fingerprint)\n> 인증성공(카드+PIN): 1:1 authentication succeeded(Mobile Card + PIN)\n> 인증성공(카드+지문+PIN): 1:1 authentication succeeded(Mobile Card + Fingerprint + PIN)\n> 1:1 협박 지문 인증성공(카드+지문): 1:1 Duress authentication succeeded(Mobile Card + Fingerprint)\n> 1:1 협박 지문 인증성공(카드+지문+PIN): 1:1 Duress authentication succeeded(Mobile Card + Fingerprint + PIN)\n> 실패에 대해서는 기존과 동일한 이벤트 로그 표시(ex. 카드 +지문에 대해 지문에서 인증실패시 1:1 인증실패(지문))"
-    ],
-    [
-      15,
-      "1) BioStar Mobile로 인증시도",
-      "Mobile Access\n> BLE\n> NFC",
-      "1. 일반 카드인증 이벤트로그와 분리되어 표시된다.\n> 인증성공(카드): 1:1 authentication succeeded(Mobile Card)\n> 인증실패(카드): 1:1 authentication failed(Mobile Card)\n> 인증성공(카드+지문): 1:1 authentication succeeded(Mobile Card + Fingerprint)\n> 인증성공(카드+PIN): 1:1 authentication succeeded(Mobile Card + PIN)\n> 인증성공(카드+지문+PIN): 1:1 authentication succeeded(Mobile Card + Fingerprint + PIN)\n> 1:1 협박 지문 인증성공(카드+지문): 1:1 Duress authentication succeeded(Mobile Card + Fingerprint)\n> 1:1 협박 지문 인증성공(카드+지문+PIN): 1:1 Duress authentication succeeded(Mobile Card + Fingerprint + PIN)\n> 실패에 대해서는 기존과 동일한 이벤트 로그 표시(ex. 카드 +지문에 대해 지문에서 인증실패시 1:1 인증실패(지문))"
-    ],
-    [
-      16,
-      "1. 등록되지 않은 카드 인증시도",
-      "[2.x Entry 계열에 해당-숫자모드]\n32bit 초과하는 카드\n> DesFire EV1\n> ISO 15693\n> Felica\n> EM\n\nISO 14443A RID (Random CSN 동작) 카드\n> Mifare(NFC 폰)\n> iClass",
-      "1. 10자리 이상의 카드ID는 카드ID의 뒷부분만 잘라서 표시해주어야 한다.\n: 로그로 확인가능\n: Max  Card ID : 256bit도 동일\n1-1. 영숫자모드를 지원하는 Entry 계열의 경우\n=> 영숫자모드일 때 카드ID 전체를 표시해준다.(XPASS/XPS2)\n2. RID 카드는 무시되어 반응이 없어야 한다.\n: 카드 인식음, 인증 실패 로그 등 미발생\n: 단, iClass SEOS는 PAC DATA가 출력되어야 함\n: Card Type에 따라 동일한 Card ID로 인식\n"
-    ],
-    [
-      17,
-      "1. 등록되지 않은 카드 인증시도",
-      "[Station 계열에 해당-숫자/영숫자모드]\n32bit 초과하는 카드\n> DesFire EV1\n> ISO 15693\n> Felica\n> EM\n\nISO 14443A RID (Random CSN 동작) 카드\n> Mifare(NFC 폰)\n> iClass",
-      "1. 카드ID 전체를 표시해줘야 한다.\n: 로그로 확인가능\n: Max  Card ID : 256bit도 동일\n2. RID 카드는 무시되어 반응이 없어야 한다.\n: 카드 인식음, 인증 실패 로그 등 미발생\n: 단, iClass SEOS는 PAC DATA가 출력되어야 함\n: Card Type에 따라 동일한 Card ID로 인식"
-    ],
-    [
-      18,
-      "1. 새로 설치한 서버에 장치 추가\n2. Full Log가 서버로 업로드됨을 확인\n3. 서버종료\n4. 장치에 여러번의 인증시도(로그가 쌓이게하는 목적)\n5. 서버 재실행\n6. 로그 업로드 여부 확인\n",
-      "로그 업데이트: 자동\n\n>이벤트 로그 FULL\n>이미지 로그 FULL\n※ 로그 쌓는 방식: AGING\n(이미지 로그 ON > 이미지 로그 FULL > 이벤트 로그 FULL)\n",
-      "1. 장치로그가 서버로 모두 업로드 된다.\n2. 서버와 연결이 끊긴 이후에 발생한 로그에 대해서만 서버로 올린다."
-    ],
-    [
-      19,
-      "1. 새로 설치한 서버에 장치 추가\n2. 수동으로 장치의 로그 업로드\n3. Full Log가 서버로 업로드됨을 확인\n4. 장치에 여러번의 인증시도(로그가 쌓이게하는 목적)\n5. 수동으로 장치의 로그 재업로드\n6. 로그 업로드 여부 확인\n",
-      "로그 업데이트: 수동\n\n>이벤트 로그 FULL\n>이미지 로그 FULL\n※ 로그 쌓는 방식: AGING\n(이미지 로그 ON > 이미지 로그 FULL > 이벤트 로그 FULL)\n",
-      "1. 장치로그가 서버로 모두 업로드 된다.\n2. 수동으로 로그 업로드 후에 발생한 로그에 대해서만 서버로 올린다."
-    ],
-    [
-      20,
-      "1. 장치에 연속인증 중 강제 전원 OFF\n2. 다시 전원ON\n3. 장치 메뉴> 이벤트 로그> 검색\n4. 이벤트 로그 확인",
-      "장치LCD 지원모델",
-      "1. 로그 중 유효하지 않은 정보가 화면에 표시되지 않는다."
-    ],
-    [
-      21,
-      "1. 장치에 연속인증 중 강제 전원 OFF\n2. 다시 전원ON\n3. 바이오스타> 모니터링> 실시간/이벤트 로그 확인",
-      "장치LCD 미지원모델",
-      "1. 로그 중 유효하지 않은 정보가 표시되지 않는다."
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-78",
-    "description": "",
-    "test_step": [
-      "1. Monitoring > Real-time Log",
-      "1. Monitoring > Real-time Log",
-      "1. Monitoring > Real-time Log",
-      "1. Monitoring > Real-time Log",
-      "1. Monitoring > Real-time Log",
-      "1. Monitoring > Real-time Log",
-      "1. Monitoring > Real-time Log",
-      "1. Monitoring > Real-time Log",
-      "1. Monitoring > Real-time Log",
-      "1. Monitoring > Real-time Log",
-      "1. Monitoring > Real-time Log\n* 장치 내 Trigger&Action 에서 Input 선택, Device : DM20 선택, Port / Switch 설정 확인",
-      "1. Device > 장치 선택 > Advanced > Image Log : Enable 설정 > Configuration : Event, Schedule 설정 > Apply\n2. Monitoring > Real-time Log > Event 발생시 Image Log 확인",
-      "1) BioStar 연결 : 정상 동작 확인\n2) 랜선 제거 : BioStar와 연결이 끊어지도록 만듬\n3) 장치에 Full Log 생성 : Max인 상태에서 BioStar와 재연결",
-      "1) Mobile Access로 인증시도",
-      "1) BioStar Mobile로 인증시도",
-      "1. 등록되지 않은 카드 인증시도",
-      "1. 등록되지 않은 카드 인증시도",
-      "1. 새로 설치한 서버에 장치 추가\n2. Full Log가 서버로 업로드됨을 확인\n3. 서버종료\n4. 장치에 여러번의 인증시도(로그가 쌓이게하는 목적)\n5. 서버 재실행\n6. 로그 업로드 여부 확인\n",
-      "1. 새로 설치한 서버에 장치 추가\n2. 수동으로 장치의 로그 업로드\n3. Full Log가 서버로 업로드됨을 확인\n4. 장치에 여러번의 인증시도(로그가 쌓이게하는 목적)\n5. 수동으로 장치의 로그 재업로드\n6. 로그 업로드 여부 확인\n",
-      "1. 장치에 연속인증 중 강제 전원 OFF\n2. 다시 전원ON\n3. 장치 메뉴> 이벤트 로그> 검색\n4. 이벤트 로그 확인",
-      "1. 장치에 연속인증 중 강제 전원 OFF\n2. 다시 전원ON\n3. 바이오스타> 모니터링> 실시간/이벤트 로그 확인"
-    ],
-    "data": [
-      "1. 인증모드별 로그 확인\n > 인증 성공 : 지문, 얼굴, 카드, ID\n > 인증 실패 : 지문, 얼굴, 카드, ID\n > Thermal Camera에 의한 Temperature 표시",
-      "1. 인증모드별 로그 확인\n > PIN 등록되지 않은 사용자 지문/얼굴+PIN 인증\n > 지문/얼굴 등록되지 않은 사용자 카드+지문/얼굴 인증\n > PIN 등록되지 않은 사용자 카드+PIN 인증\n > 지문/얼굴/PIN 등록되지 않은 사용자 카드+지문/얼굴/PIN 인증\n > 지문/얼굴 등록되지 않은 사용자 ID+지문/얼굴 인증\n > PIN 등록되지 않은 사용자 ID+PIN 인증\n > 지문/얼굴/PIN 등록되지 않은 사용자 ID+지문/얼굴/PIN 인증",
-      "1. 인증모드별 로그 확인\n> 유효 기간이 지난 사용자 인증\n> 이중 인증 성공/실패",
-      "1. 출입인증관련 로그 확인\n > 출입그룹에 속한 사용자 : 인증\n > 출입그룹에 속하지 않은 사용자 : 인증",
-      "1. IO관련 로그 확인\n > Pre-defined Alarm\n > Input",
-      "1. IO관련 로그 확인\n > Action",
-      "1. 출입문 로그 확인\n > Unlock, Lock, Open, Close, Forced Open, Held Open",
-      "1. 구역 로그 확인\n > Soft APB 위반, Hard APB 위반, Timed APB 위반, Fire Alarm 위반, Forced Lock/Unlock Schedule 인증제한\n2. Intrusion Alarm Zone Log 확인\n > 경비진입, 경비실패, 해제, 경비상태, 경보상태진입, 경보상태해제, 경비수행 인증성공, 경비수행 인증실패, 해제수행 인증성공, 해제수행 인증실패, 경비중 인증 제한",
-      "1. 사용자 관리 로그 확인\n > 사용자 등록, 지문/얼굴/카드/PIN/이름/부가정보 업데이트, 사용자 삭제/전체 삭제",
-      "1. IP 통신 관련 로그 확인\n > BioStar 연결 : BioStar->장치, BioStar 연결 끊김 : BioStar->장치, BioStar 연결 : 장치->BioStar, BioStar 연결 끊김 : 장치->BioStar, IP 재설정, RS485 연결 , RS485 연결끊김",
-      "1. DM20 관련 로그 확인\n > Supervised Input-Open/Short\n > Input",
-      "1. 첨부파일 확인(BioStar&A2 Log Name)\n> FS2 ",
-      "Full Log 생성(장치마다 상이)",
-      "Mobile Access\n> BLE\n> NFC\n\n\nTemplate On Mobile\n>ToM_AoC\n>ToM_SCC",
-      "Mobile Access\n> BLE\n> NFC",
-      "[2.x Entry 계열에 해당-숫자모드]\n32bit 초과하는 카드\n> DesFire EV1\n> ISO 15693\n> Felica\n> EM\n\nISO 14443A RID (Random CSN 동작) 카드\n> Mifare(NFC 폰)\n> iClass",
-      "[Station 계열에 해당-숫자/영숫자모드]\n32bit 초과하는 카드\n> DesFire EV1\n> ISO 15693\n> Felica\n> EM\n\nISO 14443A RID (Random CSN 동작) 카드\n> Mifare(NFC 폰)\n> iClass",
-      "로그 업데이트: 자동\n\n>이벤트 로그 FULL\n>이미지 로그 FULL\n※ 로그 쌓는 방식: AGING\n(이미지 로그 ON > 이미지 로그 FULL > 이벤트 로그 FULL)\n",
-      "로그 업데이트: 수동\n\n>이벤트 로그 FULL\n>이미지 로그 FULL\n※ 로그 쌓는 방식: AGING\n(이미지 로그 ON > 이미지 로그 FULL > 이벤트 로그 FULL)\n",
-      "장치LCD 지원모델",
-      "장치LCD 미지원모델"
-    ],
-    "expected_result": [
-      "1. 인증모드별 성공/실패 로그 및 온도가 표시된다.\n> 1:1(or 1:N) authentication succeeded (인증수단)\n> 1:1(or 1:N) authentication failed (인증수단)\n2. 부가정보(근태코드, 카드인증 종류 등)와 인증이 시도된 리더ID, 사용자 ID가 표시된다.",
-      "1. 등록안됨 관련 로그가 저장된다. (Authentication failed (Invalid credential))\n > 지문/얼굴 인증 PIN 등록안됨\n > 카드인증 지문/얼굴 등록안됨\n > 카드인증 PIN 등록안됨\n > 카드인증 지문/얼굴 등록안됨(지문/얼굴/PIN 모두 등록되지 않은 사용자)\n > ID인증 지문/얼굴 등록안됨\n > ID인증 PIN 등록안됨\n > ID인증 지문/얼굴 등록안됨(지문/얼굴/PIN 모두 등록되지 않은 사용자)\n2. 부가정보(근태코드, 카드인증 종류 등)와 인증이 시도된 리더ID, 사용자 ID가 표시된다.",
-      "1. 유효기간 아님 관련 로그가 표시된다.\n> Access denied (Invalid period)\n2. 이중인증 성공시 인증별 성공로그 및 이중인증 성공 로그가 표시된다.\n> Dual authentication succeeded\n3. 부가정보(근태코드, 카드인증 종류 등)와 인증이 시도된 리더ID, 사용자 ID가 표시된다.",
-      "1. 출입그룹 위반 관련 로그가 표시된다.\n> Access denied (Invalid access group)\n2. 부가정보(근태코드, 카드인증 종류 등)와 인증이 시도된 리더ID가 표시된다.",
-      "1. ReaderController ID 로그가 저장된다.\n2. IO장치 ID, 입력포트 인덱스가 저장된다.\n3. 사용자 ID는 표시되지 않는다.",
-      "1. Action이 발생하는 Reader ID 또는 ReaderController의 ID 로그가 저장된다.\n2. IO장치 ID, 출력포트 인덱스가 저장된다.(Controller 포트인 경우 IO장치 ID가 표시되지 않는다)\n3. 사용자 ID는 ActionID가 저장된다.",
-      "1. 출입문 ID가 저장되고 해당 이벤트 로그가 저장된다.\n2. IO장치 ID, 입력포트는 저장되지 않는다.\n3. 사용자 ID 저장되지 않는다",
-      "1. Zone ID 로그가 저장된다.\n2. IO장치 ID, 입력포트는 저장되지 않는다.\n3. 사용자 ID 저장되지 않는다\n4. 경비 수행/해제 수행/경비 중 인증 제한 시에는 어떤 장치에서 누가 수행하였는지 확인할 수 있어야 한다.\n5. 경보-침입 발생 시에는 어떤 센서(예, 회의실 창문, 창고 외벽 등)에서 침입이 감지되었지는 확인 할 수 있어야 한다.",
-      "1. ReaderController ID 로그가 저장된다.\n2. 사용자 등록시 등록성공 로그와 등록된 사용자 ID가 저장된다.\n> Device에서 등록 시 로그(Device) 등록 구분 표시\n> Server에서 등록 시 로그(Server) 등록 구분 표시\n3. 지문/얼굴/카드/PIN/부가정보 업데이트시 추가/편집/삭제 관련 로그가 저장된다.\n> Device에서 추가/편집/삭제 시 로그(Device) 등록 구분 표시\n> Server에서 추가/편집/삭제 시 로그(Server) 등록 구분 표시\n4. 사용자 삭제시 삭제성공 로그와 삭제된 사용자 ID가 저장된다.\n> Device에서 삭제 시 로그(Device) 등록 구분 표시\n> Server에서 삭제 시 로그(Server) 등록 구분 표시\n5. 사용자 전체 삭제시 사용자 ID 저장되지 않는다.\n> Device에서 전체 삭제 시 로그(Device) 등록 구분 표시\n> Server에서 전체 삭제 시 로그(Server) 등록 구분 표시",
-      "1. ReaderController ID 로그가 저장된다.\n2. BioStar와의 연결/연결끊김시 사용자 ID는 저장되지 않는다.\n3. IP 재설정시 설정된 IP주소 정보가 저장된다.\n4. RS485 연결/연결끊김시 RS485 통신이 연결된 리더ID가 저장된다.",
-      "1. Open과 Short에 대한 로그가 표시된다.\n= Supervised Input Short / Port No.\n= Supervised Input Open / Port No.\n2. Input에 대한 로그가 표시된다.\n= Input /Port No.\n",
-      "1. 장치에서 Configuration 에 설정한 Event 발생시 Image Log 가 표시된다.\n> 장치에서도 Image Log 확인\n2. 로그 List 에 Image 포함 여부를 표시한다.\n3. 로그 선택시 해당 Image 를 보여준다.\n= 해상도 : 320 x 240\n\n> Slave 장치(DM20, SIO2포함)에서는 영상 로그 미지원",
-      "1. BioStar와 재연결된 후에 정상적으로 실시간 로그가 전송, 표시 된다.",
-      "1. 일반 카드인증 이벤트로그와 분리되어 표시된다.\n> 인증성공(카드): 1:1 authentication succeeded(Mobile Card)\n> 인증실패(카드): 1:1 authentication failed(Mobile Card)\n> 인증성공(카드+지문): 1:1 authentication succeeded(Mobile Card + Fingerprint)\n> 인증성공(카드+PIN): 1:1 authentication succeeded(Mobile Card + PIN)\n> 인증성공(카드+지문+PIN): 1:1 authentication succeeded(Mobile Card + Fingerprint + PIN)\n> 1:1 협박 지문 인증성공(카드+지문): 1:1 Duress authentication succeeded(Mobile Card + Fingerprint)\n> 1:1 협박 지문 인증성공(카드+지문+PIN): 1:1 Duress authentication succeeded(Mobile Card + Fingerprint + PIN)\n> 실패에 대해서는 기존과 동일한 이벤트 로그 표시(ex. 카드 +지문에 대해 지문에서 인증실패시 1:1 인증실패(지문))",
-      "1. 일반 카드인증 이벤트로그와 분리되어 표시된다.\n> 인증성공(카드): 1:1 authentication succeeded(Mobile Card)\n> 인증실패(카드): 1:1 authentication failed(Mobile Card)\n> 인증성공(카드+지문): 1:1 authentication succeeded(Mobile Card + Fingerprint)\n> 인증성공(카드+PIN): 1:1 authentication succeeded(Mobile Card + PIN)\n> 인증성공(카드+지문+PIN): 1:1 authentication succeeded(Mobile Card + Fingerprint + PIN)\n> 1:1 협박 지문 인증성공(카드+지문): 1:1 Duress authentication succeeded(Mobile Card + Fingerprint)\n> 1:1 협박 지문 인증성공(카드+지문+PIN): 1:1 Duress authentication succeeded(Mobile Card + Fingerprint + PIN)\n> 실패에 대해서는 기존과 동일한 이벤트 로그 표시(ex. 카드 +지문에 대해 지문에서 인증실패시 1:1 인증실패(지문))",
-      "1. 10자리 이상의 카드ID는 카드ID의 뒷부분만 잘라서 표시해주어야 한다.\n: 로그로 확인가능\n: Max  Card ID : 256bit도 동일\n1-1. 영숫자모드를 지원하는 Entry 계열의 경우\n=> 영숫자모드일 때 카드ID 전체를 표시해준다.(XPASS/XPS2)\n2. RID 카드는 무시되어 반응이 없어야 한다.\n: 카드 인식음, 인증 실패 로그 등 미발생\n: 단, iClass SEOS는 PAC DATA가 출력되어야 함\n: Card Type에 따라 동일한 Card ID로 인식\n",
-      "1. 카드ID 전체를 표시해줘야 한다.\n: 로그로 확인가능\n: Max  Card ID : 256bit도 동일\n2. RID 카드는 무시되어 반응이 없어야 한다.\n: 카드 인식음, 인증 실패 로그 등 미발생\n: 단, iClass SEOS는 PAC DATA가 출력되어야 함\n: Card Type에 따라 동일한 Card ID로 인식",
-      "1. 장치로그가 서버로 모두 업로드 된다.\n2. 서버와 연결이 끊긴 이후에 발생한 로그에 대해서만 서버로 올린다.",
-      "1. 장치로그가 서버로 모두 업로드 된다.\n2. 수동으로 로그 업로드 후에 발생한 로그에 대해서만 서버로 올린다.",
-      "1. 로그 중 유효하지 않은 정보가 화면에 표시되지 않는다.",
-      "1. 로그 중 유효하지 않은 정보가 표시되지 않는다."
-    ]
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 12831,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 1,
+              "latestFinal": 0,
+              "latestId": 35216,
+              "latestFinalId": 34690
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_170117(UnitTest)",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 5633,
+              "latestFinalId": 5633
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180329",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10296,
+              "latestFinalId": 10296
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_190805_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15214,
+              "latestFinalId": 15214
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.2.8_20160603",
+          "statusResults": [
+            {
+              "latest": 1,
+              "latestFinal": 0,
+              "latestId": 1751,
+              "latestFinalId": 1572
+            }
+          ]
+        },
+        {
+          "group": "FL_V1.0_190515(PS)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 14127,
+              "latestFinalId": 14127
+            }
+          ]
+        },
+        {
+          "group": "V1.7.1_181204(Hotfix)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12643,
+              "latestFinalId": 12643
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_181210_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12746,
+              "latestFinalId": 12746
+            }
+          ]
+        },
+        {
+          "group": "V1.1.5_4_151014(All)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 72,
+              "latestFinalId": 72
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0 170331",
+          "statusResults": [
+            {
+              "latest": 1,
+              "latestFinal": 3,
+              "latestId": 8615,
+              "latestFinalId": 6344
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_181119_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12925,
+              "latestFinalId": 12925
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_190809_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15575,
+              "latestFinalId": 15575
+            }
+          ]
+        },
+        {
+          "group": "V1.8.0_190806_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15301,
+              "latestFinalId": 15301
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180322",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10116,
+              "latestFinalId": 10116
+            }
+          ]
+        },
+        {
+          "group": "V1.7.0_190806_Interaction 7차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15057,
+              "latestFinalId": 15057
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.1.5_5 - 20151016(All)",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 5232,
+              "latestFinalId": 5232
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_190806_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15410,
+              "latestFinalId": 15410
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_20200601_Interaction 12차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 17142,
+              "latestFinalId": 17142
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "Monitoring - Log",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 1142,
+          "index": 1,
+          "step": "1. Monitoring > Real-time Log",
+          "data": "1. 인증모드별 로그 확인\n > 인증 성공 : 지문, 얼굴, 카드, ID\n > 인증 실패 : 지문, 얼굴, 카드, ID\n > Thermal Camera에 의한 Temperature 표시",
+          "result": "1. 인증모드별 성공/실패 로그 및 온도가 표시된다.\n> 1:1(or 1:N) authentication succeeded (인증수단)\n> 1:1(or 1:N) authentication failed (인증수단)\n2. 부가정보(근태코드, 카드인증 종류 등)와 인증이 시도된 리더ID, 사용자 ID가 표시된다.",
+          "attachments": []
+        },
+        {
+          "id": 1155,
+          "index": 2,
+          "step": "1. Monitoring > Real-time Log",
+          "data": "1. 인증모드별 로그 확인\n > PIN 등록되지 않은 사용자 지문/얼굴+PIN 인증\n > 지문/얼굴 등록되지 않은 사용자 카드+지문/얼굴 인증\n > PIN 등록되지 않은 사용자 카드+PIN 인증\n > 지문/얼굴/PIN 등록되지 않은 사용자 카드+지문/얼굴/PIN 인증\n > 지문/얼굴 등록되지 않은 사용자 ID+지문/얼굴 인증\n > PIN 등록되지 않은 사용자 ID+PIN 인증\n > 지문/얼굴/PIN 등록되지 않은 사용자 ID+지문/얼굴/PIN 인증",
+          "result": "1. 등록안됨 관련 로그가 저장된다. (Authentication failed (Invalid credential))\n > 지문/얼굴 인증 PIN 등록안됨\n > 카드인증 지문/얼굴 등록안됨\n > 카드인증 PIN 등록안됨\n > 카드인증 지문/얼굴 등록안됨(지문/얼굴/PIN 모두 등록되지 않은 사용자)\n > ID인증 지문/얼굴 등록안됨\n > ID인증 PIN 등록안됨\n > ID인증 지문/얼굴 등록안됨(지문/얼굴/PIN 모두 등록되지 않은 사용자)\n2. 부가정보(근태코드, 카드인증 종류 등)와 인증이 시도된 리더ID, 사용자 ID가 표시된다.",
+          "attachments": []
+        },
+        {
+          "id": 1158,
+          "index": 3,
+          "step": "1. Monitoring > Real-time Log",
+          "data": "1. 인증모드별 로그 확인\n> 유효 기간이 지난 사용자 인증\n> 이중 인증 성공/실패",
+          "result": "1. 유효기간 아님 관련 로그가 표시된다.\n> Access denied (Invalid period)\n2. 이중인증 성공시 인증별 성공로그 및 이중인증 성공 로그가 표시된다.\n> Dual authentication succeeded\n3. 부가정보(근태코드, 카드인증 종류 등)와 인증이 시도된 리더ID, 사용자 ID가 표시된다.",
+          "attachments": []
+        },
+        {
+          "id": 1144,
+          "index": 4,
+          "step": "1. Monitoring > Real-time Log",
+          "data": "1. 출입인증관련 로그 확인\n > 출입그룹에 속한 사용자 : 인증\n > 출입그룹에 속하지 않은 사용자 : 인증",
+          "result": "1. 출입그룹 위반 관련 로그가 표시된다.\n> Access denied (Invalid access group)\n2. 부가정보(근태코드, 카드인증 종류 등)와 인증이 시도된 리더ID가 표시된다.",
+          "attachments": []
+        },
+        {
+          "id": 1151,
+          "index": 5,
+          "step": "1. Monitoring > Real-time Log",
+          "data": "1. IO관련 로그 확인\n > Pre-defined Alarm\n > Input",
+          "result": "1. ReaderController ID 로그가 저장된다.\n2. IO장치 ID, 입력포트 인덱스가 저장된다.\n3. 사용자 ID는 표시되지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 1153,
+          "index": 6,
+          "step": "1. Monitoring > Real-time Log",
+          "data": "1. IO관련 로그 확인\n > Action",
+          "result": "1. Action이 발생하는 Reader ID 또는 ReaderController의 ID 로그가 저장된다.\n2. IO장치 ID, 출력포트 인덱스가 저장된다.(Controller 포트인 경우 IO장치 ID가 표시되지 않는다)\n3. 사용자 ID는 ActionID가 저장된다.",
+          "attachments": []
+        },
+        {
+          "id": 1145,
+          "index": 7,
+          "step": "1. Monitoring > Real-time Log",
+          "data": "1. 출입문 로그 확인\n > Unlock, Lock, Open, Close, Forced Open, Held Open",
+          "result": "1. 출입문 ID가 저장되고 해당 이벤트 로그가 저장된다.\n2. IO장치 ID, 입력포트는 저장되지 않는다.\n3. 사용자 ID 저장되지 않는다",
+          "attachments": []
+        },
+        {
+          "id": 1147,
+          "index": 8,
+          "step": "1. Monitoring > Real-time Log",
+          "data": "1. 구역 로그 확인\n > Soft APB 위반, Hard APB 위반, Timed APB 위반, Fire Alarm 위반, Forced Lock/Unlock Schedule 인증제한\n2. Intrusion Alarm Zone Log 확인\n > 경비진입, 경비실패, 해제, 경비상태, 경보상태진입, 경보상태해제, 경비수행 인증성공, 경비수행 인증실패, 해제수행 인증성공, 해제수행 인증실패, 경비중 인증 제한",
+          "result": "1. Zone ID 로그가 저장된다.\n2. IO장치 ID, 입력포트는 저장되지 않는다.\n3. 사용자 ID 저장되지 않는다\n4. 경비 수행/해제 수행/경비 중 인증 제한 시에는 어떤 장치에서 누가 수행하였는지 확인할 수 있어야 한다.\n5. 경보-침입 발생 시에는 어떤 센서(예, 회의실 창문, 창고 외벽 등)에서 침입이 감지되었지는 확인 할 수 있어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 1148,
+          "index": 9,
+          "step": "1. Monitoring > Real-time Log",
+          "data": "1. 사용자 관리 로그 확인\n > 사용자 등록, 지문/얼굴/카드/PIN/이름/부가정보 업데이트, 사용자 삭제/전체 삭제",
+          "result": "1. ReaderController ID 로그가 저장된다.\n2. 사용자 등록시 등록성공 로그와 등록된 사용자 ID가 저장된다.\n> Device에서 등록 시 로그(Device) 등록 구분 표시\n> Server에서 등록 시 로그(Server) 등록 구분 표시\n3. 지문/얼굴/카드/PIN/부가정보 업데이트시 추가/편집/삭제 관련 로그가 저장된다.\n> Device에서 추가/편집/삭제 시 로그(Device) 등록 구분 표시\n> Server에서 추가/편집/삭제 시 로그(Server) 등록 구분 표시\n4. 사용자 삭제시 삭제성공 로그와 삭제된 사용자 ID가 저장된다.\n> Device에서 삭제 시 로그(Device) 등록 구분 표시\n> Server에서 삭제 시 로그(Server) 등록 구분 표시\n5. 사용자 전체 삭제시 사용자 ID 저장되지 않는다.\n> Device에서 전체 삭제 시 로그(Device) 등록 구분 표시\n> Server에서 전체 삭제 시 로그(Server) 등록 구분 표시",
+          "attachments": []
+        },
+        {
+          "id": 1149,
+          "index": 10,
+          "step": "1. Monitoring > Real-time Log",
+          "data": "1. IP 통신 관련 로그 확인\n > BioStar 연결 : BioStar->장치, BioStar 연결 끊김 : BioStar->장치, BioStar 연결 : 장치->BioStar, BioStar 연결 끊김 : 장치->BioStar, IP 재설정, RS485 연결 , RS485 연결끊김",
+          "result": "1. ReaderController ID 로그가 저장된다.\n2. BioStar와의 연결/연결끊김시 사용자 ID는 저장되지 않는다.\n3. IP 재설정시 설정된 IP주소 정보가 저장된다.\n4. RS485 연결/연결끊김시 RS485 통신이 연결된 리더ID가 저장된다.",
+          "attachments": []
+        },
+        {
+          "id": 1159,
+          "index": 11,
+          "step": "1. Monitoring > Real-time Log\n* 장치 내 Trigger&Action 에서 Input 선택, Device : DM20 선택, Port / Switch 설정 확인",
+          "data": "1. DM20 관련 로그 확인\n > Supervised Input-Open/Short\n > Input",
+          "result": "1. Open과 Short에 대한 로그가 표시된다.\n= Supervised Input Short / Port No.\n= Supervised Input Open / Port No.\n2. Input에 대한 로그가 표시된다.\n= Input /Port No.\n",
+          "attachments": []
+        },
+        {
+          "id": 1161,
+          "index": 12,
+          "step": "1. Device > 장치 선택 > Advanced > Image Log : Enable 설정 > Configuration : Event, Schedule 설정 > Apply\n2. Monitoring > Real-time Log > Event 발생시 Image Log 확인",
+          "data": "1. 첨부파일 확인(BioStar&A2 Log Name)\n> FS2 ",
+          "result": "1. 장치에서 Configuration 에 설정한 Event 발생시 Image Log 가 표시된다.\n> 장치에서도 Image Log 확인\n2. 로그 List 에 Image 포함 여부를 표시한다.\n3. 로그 선택시 해당 Image 를 보여준다.\n= 해상도 : 320 x 240\n\n> Slave 장치(DM20, SIO2포함)에서는 영상 로그 미지원",
+          "attachments": [
+            {
+              "id": 12,
+              "fileName": "Image Log_BioStar&A2.xlsx",
+              "fileIcon": "excel.gif",
+              "fileIconAlt": "Microsoft Excel",
+              "fileSize": "11 kB",
+              "numericalFileSize": 0,
+              "created": "24/11월/15 11:22 오전",
+              "author": "kijo"
+            }
+          ]
+        },
+        {
+          "id": 2798,
+          "index": 13,
+          "step": "1) BioStar 연결 : 정상 동작 확인\n2) 랜선 제거 : BioStar와 연결이 끊어지도록 만듬\n3) 장치에 Full Log 생성 : Max인 상태에서 BioStar와 재연결",
+          "data": "Full Log 생성(장치마다 상이)",
+          "result": "1. BioStar와 재연결된 후에 정상적으로 실시간 로그가 전송, 표시 된다.",
+          "attachments": []
+        },
+        {
+          "id": 12788,
+          "index": 14,
+          "step": "1) Mobile Access로 인증시도",
+          "data": "Mobile Access\n> BLE\n> NFC\n\n\nTemplate On Mobile\n>ToM_AoC\n>ToM_SCC",
+          "result": "1. 일반 카드인증 이벤트로그와 분리되어 표시된다.\n> 인증성공(카드): 1:1 authentication succeeded(Mobile Card)\n> 인증실패(카드): 1:1 authentication failed(Mobile Card)\n> 인증성공(카드+지문): 1:1 authentication succeeded(Mobile Card + Fingerprint)\n> 인증성공(카드+PIN): 1:1 authentication succeeded(Mobile Card + PIN)\n> 인증성공(카드+지문+PIN): 1:1 authentication succeeded(Mobile Card + Fingerprint + PIN)\n> 1:1 협박 지문 인증성공(카드+지문): 1:1 Duress authentication succeeded(Mobile Card + Fingerprint)\n> 1:1 협박 지문 인증성공(카드+지문+PIN): 1:1 Duress authentication succeeded(Mobile Card + Fingerprint + PIN)\n> 실패에 대해서는 기존과 동일한 이벤트 로그 표시(ex. 카드 +지문에 대해 지문에서 인증실패시 1:1 인증실패(지문))",
+          "attachments": []
+        },
+        {
+          "id": 12819,
+          "index": 15,
+          "step": "1) BioStar Mobile로 인증시도",
+          "data": "Mobile Access\n> BLE\n> NFC",
+          "result": "1. 일반 카드인증 이벤트로그와 분리되어 표시된다.\n> 인증성공(카드): 1:1 authentication succeeded(Mobile Card)\n> 인증실패(카드): 1:1 authentication failed(Mobile Card)\n> 인증성공(카드+지문): 1:1 authentication succeeded(Mobile Card + Fingerprint)\n> 인증성공(카드+PIN): 1:1 authentication succeeded(Mobile Card + PIN)\n> 인증성공(카드+지문+PIN): 1:1 authentication succeeded(Mobile Card + Fingerprint + PIN)\n> 1:1 협박 지문 인증성공(카드+지문): 1:1 Duress authentication succeeded(Mobile Card + Fingerprint)\n> 1:1 협박 지문 인증성공(카드+지문+PIN): 1:1 Duress authentication succeeded(Mobile Card + Fingerprint + PIN)\n> 실패에 대해서는 기존과 동일한 이벤트 로그 표시(ex. 카드 +지문에 대해 지문에서 인증실패시 1:1 인증실패(지문))",
+          "attachments": []
+        },
+        {
+          "id": 13137,
+          "index": 16,
+          "step": "1. 등록되지 않은 카드 인증시도",
+          "data": "[2.x Entry 계열에 해당-숫자모드]\n32bit 초과하는 카드\n> DesFire EV1\n> ISO 15693\n> Felica\n> EM\n\nISO 14443A RID (Random CSN 동작) 카드\n> Mifare(NFC 폰)\n> iClass",
+          "result": "1. 10자리 이상의 카드ID는 카드ID의 뒷부분만 잘라서 표시해주어야 한다.\n: 로그로 확인가능\n: Max  Card ID : 256bit도 동일\n1-1. 영숫자모드를 지원하는 Entry 계열의 경우\n=> 영숫자모드일 때 카드ID 전체를 표시해준다.(XPASS/XPS2)\n2. RID 카드는 무시되어 반응이 없어야 한다.\n: 카드 인식음, 인증 실패 로그 등 미발생\n: 단, iClass SEOS는 PAC DATA가 출력되어야 함\n: Card Type에 따라 동일한 Card ID로 인식\n",
+          "attachments": []
+        },
+        {
+          "id": 13138,
+          "index": 17,
+          "step": "1. 등록되지 않은 카드 인증시도",
+          "data": "[Station 계열에 해당-숫자/영숫자모드]\n32bit 초과하는 카드\n> DesFire EV1\n> ISO 15693\n> Felica\n> EM\n\nISO 14443A RID (Random CSN 동작) 카드\n> Mifare(NFC 폰)\n> iClass",
+          "result": "1. 카드ID 전체를 표시해줘야 한다.\n: 로그로 확인가능\n: Max  Card ID : 256bit도 동일\n2. RID 카드는 무시되어 반응이 없어야 한다.\n: 카드 인식음, 인증 실패 로그 등 미발생\n: 단, iClass SEOS는 PAC DATA가 출력되어야 함\n: Card Type에 따라 동일한 Card ID로 인식",
+          "attachments": []
+        },
+        {
+          "id": 13625,
+          "index": 18,
+          "step": "1. 새로 설치한 서버에 장치 추가\n2. Full Log가 서버로 업로드됨을 확인\n3. 서버종료\n4. 장치에 여러번의 인증시도(로그가 쌓이게하는 목적)\n5. 서버 재실행\n6. 로그 업로드 여부 확인\n",
+          "data": "로그 업데이트: 자동\n\n>이벤트 로그 FULL\n>이미지 로그 FULL\n※ 로그 쌓는 방식: AGING\n(이미지 로그 ON > 이미지 로그 FULL > 이벤트 로그 FULL)\n",
+          "result": "1. 장치로그가 서버로 모두 업로드 된다.\n2. 서버와 연결이 끊긴 이후에 발생한 로그에 대해서만 서버로 올린다.",
+          "attachments": []
+        },
+        {
+          "id": 13626,
+          "index": 19,
+          "step": "1. 새로 설치한 서버에 장치 추가\n2. 수동으로 장치의 로그 업로드\n3. Full Log가 서버로 업로드됨을 확인\n4. 장치에 여러번의 인증시도(로그가 쌓이게하는 목적)\n5. 수동으로 장치의 로그 재업로드\n6. 로그 업로드 여부 확인\n",
+          "data": "로그 업데이트: 수동\n\n>이벤트 로그 FULL\n>이미지 로그 FULL\n※ 로그 쌓는 방식: AGING\n(이미지 로그 ON > 이미지 로그 FULL > 이벤트 로그 FULL)\n",
+          "result": "1. 장치로그가 서버로 모두 업로드 된다.\n2. 수동으로 로그 업로드 후에 발생한 로그에 대해서만 서버로 올린다.",
+          "attachments": []
+        },
+        {
+          "id": 14956,
+          "index": 20,
+          "step": "1. 장치에 연속인증 중 강제 전원 OFF\n2. 다시 전원ON\n3. 장치 메뉴> 이벤트 로그> 검색\n4. 이벤트 로그 확인",
+          "data": "장치LCD 지원모델",
+          "result": "1. 로그 중 유효하지 않은 정보가 화면에 표시되지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 14957,
+          "index": 21,
+          "step": "1. 장치에 연속인증 중 강제 전원 OFF\n2. 다시 전원ON\n3. 바이오스타> 모니터링> 실시간/이벤트 로그 확인",
+          "data": "장치LCD 미지원모델",
+          "result": "1. 로그 중 유효하지 않은 정보가 표시되지 않는다.",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [],
+      "maxResults": 0,
+      "total": 0,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+      "name": "Minor (C)",
+      "id": "3"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+      "name": "완료",
+      "id": "10001",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "완료"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzs46n:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2015-09-01T15:03:06.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

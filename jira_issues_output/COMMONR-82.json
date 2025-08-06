@@ -1,69 +1,2552 @@
 {
-  "id": "COMMONR-82",
-  "content": [
-    [
-      1,
-      "<Wiegand Out 장치- 저장된 사용자에 카드ID 등록된 상태>\n1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Wiegand Bypass: Enable 설정\n4. Wiegand Out 장치에 카드인증시도",
-      "인증모드\n> 카드인증모드\n\n카드인증\n> CSN/Wiegand 카드\n",
-      "1. Wiegand Out인 경우 인증하지않고 카드ID를 내보내야 한다.\n> iClass 카드는 PAC Data를 출력\n2 Wiegand Out 장치에 카드입력시 \"띡\"소리만 출력되어야 한다.\n3 카드가 입력수단의 처음인 경우 카드입력시 다음의 인증수단을 입력하지 않더라도 바로 카드ID가 출력되어야 한다."
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "12851",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/12851",
+  "key": "COMMONR-82",
+  "fields": {
+    "resolution": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/resolution/10000",
+      "id": "10000",
+      "description": "[사용안함] Work has been completed on this issue.",
+      "name": "완료(Done)"
+    },
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "0.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": null,
+    "customfield_10185": null,
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "39130",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/39130",
+        "type": {
+          "id": "10000",
+          "name": "Blocks",
+          "inward": "is blocked by",
+          "outward": "blocks",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10000"
+        },
+        "inwardIssue": {
+          "id": "49218",
+          "key": "DFW-744",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/49218",
+          "fields": {
+            "summary": "Wiegand 연결 후 카드 인증 시 바이오 스타에 로그가 남지 않는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/5",
+              "description": "해결책이 제시되었고 보고자의 확인을 기다리는 중입니다. 지금부터는 이슈를 다시 열거나 이슈를 닫을 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/resolved.png",
+              "name": "해결됨",
+              "id": "5",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14158",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14158",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19398",
+          "key": "BSIIDII-460",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19398",
+          "fields": {
+            "summary": "Secure Credential Card를 사용하는 사용자를 Bypass로 인증시 인증모드별 카드 ID가 다른 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12561",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12561",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "17363",
+          "key": "TIIDFI-679",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17363",
+          "fields": {
+            "summary": "장치를 Wiegand Out 장치로 사용하며 Bypass 적용시 카드 읽기 시 \"띡\"소리가 나지 않는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19269",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19269",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "24909",
+          "key": "BLNIIFW-222",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/24909",
+          "fields": {
+            "summary": "[Wiegand Input] Wiegand 통신 불가 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13859",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13859",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19147",
+          "key": "BSIIDII-426",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19147",
+          "fields": {
+            "summary": "Wiegand In-Out을 모두 37bit로 설정 후 Out 장치에서 인증시 In 장치에선 26bit로만 읽는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13860",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13860",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19152",
+          "key": "BSIIDII-428",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19152",
+          "fields": {
+            "summary": "Wiegand Out 장치에서 PIN이 등록되어 있지 않은 사용자로 ID+PIN으로 인증 시도 후, PIN이 설정된 사용자를 인증시 Wiegand Reader에서 PIN이 없는 사용자로 인증성공 되는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13862",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13862",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19154",
+          "key": "BSIIDII-429",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19154",
+          "fields": {
+            "summary": "지문만 등록되어 있는 사용자를 Fail Code가 설정된 Wiegand Out 장치에서 인증시 Fail Code가 동작하는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14059",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14059",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19326",
+          "key": "ENTRYIIDII-434",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19326",
+          "fields": {
+            "summary": "[Tester: 곽성희] 영숫자or숫자ID 지문들어간 인증모드로 인증시 인증실패되는 문제 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14423",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14423",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19629",
+          "key": "FSTIIFW-104",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19629",
+          "fields": {
+            "summary": "Wiegand Out에서 Bypass 사용시 얼굴 및 ID에 관련하여 인증이 안되는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14716",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14716",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19971",
+          "key": "FSTIIFW-240",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19971",
+          "fields": {
+            "summary": "카드인증(CSN/Wiegand Card) 중 장치 Reboot",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "31117",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/31117",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "41322",
+          "key": "ONYXFW-315",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/41322",
+          "fields": {
+            "summary": "Wiegand Out에서 카드 ID가 긴 SCC 카드 리딩시 이벤트 로그에 카드 값이 공백으로 표시되는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13967",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13967",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19287",
+          "key": "TIIDFI-816",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19287",
+          "fields": {
+            "summary": "[Wiegand Out - SCC] Wiegand In-Out을 모두 192bit로 설정 후 Out 장치에서 지문/ID로 인증시 26bit로 출력이 되어, In 장치에서 Miss matched Wiegand Format이 발생하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "51953",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/51953",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "61489",
+          "key": "BEW3FW-86",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/61489",
+          "fields": {
+            "summary": "[Wiegand Reader] 영숫자 모드에서 발급받은  TOM인증을 위갠드 리더에 인증 시 IN장치에 카드값이 빈값으로 들어옴",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "51951",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/51951",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "61490",
+          "key": "BEW3FW-87",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/61490",
+          "fields": {
+            "summary": "[Wiegand Reader] 숫자모드에서 발급받은 ToM_SCC카드를 위갠드 리더에 인증 시 IN장치에서 인증 성공으로 동작",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12470",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12470",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "17019",
+          "key": "BLIIFWI-471",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17019",
+          "fields": {
+            "summary": "다수의 카드가 등록된 사용자의 지문으로 Wiegand Out 장치에 인증할 경우, 잘못된 카드ID로 출력되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13685",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13685",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18989",
+          "key": "BLIIFWI-610",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18989",
+          "fields": {
+            "summary": " [등록된 첫번째 카드가 SCC인 상태] Wiegand Out 장치에서 지문/ID 인증모드로 인증할 경우 잘못된 값으로 출력되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19976",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19976",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "25591",
+          "key": "BLNIIFW-333",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/25591",
+          "fields": {
+            "summary": "[One Device] Wiegand Bypass설정 후 SCC(iClass) 카드로 인증 시 0으로 출력이 되며, Bypass가 동작되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14157",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14157",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19306",
+          "key": "BSIIDII-444",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19306",
+          "fields": {
+            "summary": "Wiegand IN-OUT Format을 256bit로 설정시 In에서 카드 값을 받지 못하는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "15712",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/15712",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "21190",
+          "key": "CSTFW-52",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/21190",
+          "fields": {
+            "summary": "Wiegand Reader에서 지문+PIN으로 인증한 경우 결과가 AuthMode Fail 되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11401",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11401",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "15089",
+          "key": "ENTRYIIDII-234",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/15089",
+          "fields": {
+            "summary": "[Wiegand Bypass] Out장치에서 지문/ID 인증모드로 인증시 해당 사용자에 처음 등록된 카드가 CSN이 아닌 경우 카드ID출력되지 않는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12901",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12901",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "17865",
+          "key": "ENTRYIIDII-359",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17865",
+          "fields": {
+            "summary": "[Wiegand Input] Wiegand Input 장치에서 Wiegand Output 장치에서 지문 인증 모드로 인증 시 처음 등록된 카드(37bit)가 26bit로 인식되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14127",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14127",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19132",
+          "key": "ENTRYIIDII-410",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19132",
+          "fields": {
+            "summary": "[XPASS] 특정포맷 이상 설정할 경우 인증성공 후 Wiegand Card ID가 출력되지 않는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14063",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14063",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19339",
+          "key": "ENTRYIIDII-435",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19339",
+          "fields": {
+            "summary": "[Tester: 곽성희] Wiegand In/Out장치 연결 후 복합인증(지문) 시도 시 Wiegand 값이 정상적으로 나오지 않는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14425",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14425",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19616",
+          "key": "FSTIIFW-101",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19616",
+          "fields": {
+            "summary": "Wiegand Out 장치에 Format을 37bit로 설정 후 인증시 카드 ID가 이상한 값으로 읽혀지는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "10993",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10993",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "14275",
+          "key": "BSIIDII-100",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/14275",
+          "fields": {
+            "summary": "Bypass 설정 후 Wiegand Out 장치에서 ID+지문으로 인증시, ID 입력후 지문을 입력한 후에도 Out 장치에서 지문입력을 요하는 팝업이 사라지지 않는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "10994",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10994",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "14276",
+          "key": "BSIIDII-101",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/14276",
+          "fields": {
+            "summary": "[문의] 카드가 없는 사용자로 Wiegand Out 장치에서 지문 인증시 IN 장치에서 인증 실패가 나는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11006",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11006",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "14287",
+          "key": "ENTRYIIDII-115",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/14287",
+          "fields": {
+            "summary": "Wiegand Bypass 이면서 복합인증모드인 경우 인증모드를 모두 입력하지 않더라도 카드값이 전송되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "52066",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/52066",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "60926",
+          "key": "BES-1799",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/60926",
+          "fields": {
+            "summary": "Template On Mobile(TOM) 안드로이드 제품군 지원",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10300",
+              "id": "10300",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10315&avatarType=issuetype",
+              "name": "이야기",
+              "subtask": false,
+              "avatarId": 10315
+            }
+          }
+        }
+      },
+      {
+        "id": "52853",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/52853",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "62124",
+          "key": "BES-2006",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/62124",
+          "fields": {
+            "summary": "Template On Mobile(TOM) 안드로이드 제품군 지원(추가진행)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10300",
+              "id": "10300",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10315&avatarType=issuetype",
+              "name": "이야기",
+              "subtask": false,
+              "avatarId": 10315
+            }
+          }
+        }
+      },
+      {
+        "id": "15705",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/15705",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "20745",
+          "key": "AUTODI-172",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/20745",
+          "fields": {
+            "summary": "[AutoTest] Smart Card 발급한 카드정보에 대해 해당사용자에 업데이트 되도록 요청",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/5",
+              "description": "해결책이 제시되었고 보고자의 확인을 기다리는 중입니다. 지금부터는 이슈를 다시 열거나 이슈를 닫을 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/resolved.png",
+              "name": "해결됨",
+              "id": "5",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      },
+      {
+        "id": "13688",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13688",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19009",
+          "key": "BLIIFWI-614",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19009",
+          "fields": {
+            "summary": "Wiegand Out에서 문자로 발급된 AOC 카드 인증하면 Bypass가 미동작하는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      },
+      {
+        "id": "20310",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/20310",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "26071",
+          "key": "BSIIDII-1035",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/26071",
+          "fields": {
+            "summary": "[Hotfix][Smart Card-Bypass] AOC Bypass 미동작",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      },
+      {
+        "id": "15066",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/15066",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "20377",
+          "key": "FSTIIFW-378",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/20377",
+          "fields": {
+            "summary": "[Hotfix][Smart Card-Bypass] AOC Bypass 미동작",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      },
+      {
+        "id": "13970",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13970",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19289",
+          "key": "TIIDFI-817",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19289",
+          "fields": {
+            "summary": "Wiegand Out에서 문자로 발급된 AOC 카드 인증하면 Bypass가 미동작하는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      },
+      {
+        "id": "20528",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/20528",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "26374",
+          "key": "TIIDFI-1915",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/26374",
+          "fields": {
+            "summary": "[Hotfix][Smart Card-Bypass] AOC Bypass 미동작",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      },
+      {
+        "id": "12991",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12991",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "14554",
+          "key": "TIIDFI-288",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/14554",
+          "fields": {
+            "summary": "Access On Card 발급 후 Wiegand Out에서 인증 시 Wiegand Input에서는 인증실패가 발생하는 현상으로 개선 필요",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      },
+      {
+        "id": "11867",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11867",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "15960",
+          "key": "TIIDFI-529",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/15960",
+          "fields": {
+            "summary": "[Requirement] Wiegand - 입력/출력_Bypass",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "11182",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11182",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "14795",
+          "key": "BEWIIFWDI-38",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/14795",
+          "fields": {
+            "summary": "[Requirement] Wiegand - 입력/출력_Bypass",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10520",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10520",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "13033",
+          "key": "BLIIFWI-104",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/13033",
+          "fields": {
+            "summary": "[Requirement] Wiegand - 입력/출력_Bypass",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10460",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10460",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "12972",
+          "key": "TIIDFI-78",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12972",
+          "fields": {
+            "summary": "[Requirement] Wiegand - 입력/출력_Bypass",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "13673",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13673",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17524",
+          "key": "COMMONR-166",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17524",
+          "fields": {
+            "summary": "Secure Credential 카드ID 처리 변경",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/3",
+              "description": "현재 담당자가 이 이슈를 처리하고 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/inprogress.png",
+              "name": "진행 중",
+              "id": "3",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/4",
+                "id": 4,
+                "key": "indeterminate",
+                "colorName": "yellow",
+                "name": "진행 중"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10101",
+              "id": "10101",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10313&avatarType=issuetype",
+              "name": "Requirement",
+              "subtask": false,
+              "avatarId": 10313
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "<Wiegand Out 장치- 저장된 사용자에 지문, PIN, 얼굴 등록된 상태>\n1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Wiegand Bypass: Enable 설정\n4. Wiegand Out 장치에 지문 인증시도",
-      "지문지원장치의 인증모드\n> 지문인증모드\n\n첫번째 등록된 카드\n> AOC : 미지원\n> CSN : 지원\n> Wiegand Card : 지원\n> SCC : 지원",
-      "> 복합인증의 경우 모두 수행 후 저장된 카드의 첫번째 카드ID가 출력된다.\n> Wiegand Out 장치에 지문입력시 \"띡\"소리만 출력되어야 한다.\n> 첫번째 등록된 카드가 CSN/SCC인 경우 Wiegand Out으로 동작을 한다.\n: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴 인 경우 24 Byte 카드 ID를 사용하여 출력함\n: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함\n> 첫번째 등록된 카드가 AOC인 경우 Wiegand Out으로 동작하지 않는다."
+    "assignee": null,
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 6.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-82/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@1f7875a1[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@b863b92[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@46b39194[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@7c53687b[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@745a6fe8[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@3f7bd92e[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@659ed064[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@2e96c1c[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@25eb7686[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@44b879bc[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@57b69cbf[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@1ef693d9[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": "2016-02-25T13:30:40.000+0900",
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-82/watchers",
+      "watchCount": 1,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T10:10:21.000+0900",
+    "timeoriginalestimate": null,
+    "description": "첫번째 등록된 카드가 CSN인 경우\r\n> Wiegand Format에 맞게 카드ID 출력\r\n\r\n첫번째 등록된 카드가 AOC인 경우\r\n> Wiegand Reader로 카드ID 나가지 않음\r\n\r\n첫번째 등록된 카드가 SCC인 경우\r\n> SCC의 경우 카드ID가 숫자이기 때문에 카드ID가 Format에 맞게 출력되어야 함\r\n\r\nAOC, SCC는 Bypass 적용되지 않음. 추후 개선사항으로 관리 중(BEWIIFWDI-277)\r\n=> Bypass 적용 완료.",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>&lt;Wiegand Out 장치- 저장된 사용자에 카드ID 등록된 상태&gt;<br/>1. Device&gt; 장치추가<br/>2. Wiegand Out 및 Format 설정<br/>3. Wiegand Bypass: Enable 설정<br/>4. Wiegand Out 장치에 카드인증시도</p></td><td><p>인증모드<br/>&gt; 카드인증모드</p>\n\n<p>카드인증<br/>&gt; CSN/Wiegand 카드</p></td><td><p>1. Wiegand Out인 경우 인증하지않고 카드ID를 내보내야 한다.<br/>&gt; iClass 카드는 PAC Data를 출력<br/>2 Wiegand Out 장치에 카드입력시 \"띡\"소리만 출력되어야 한다.<br/>3 카드가 입력수단의 처음인 경우 카드입력시 다음의 인증수단을 입력하지 않더라도 바로 카드ID가 출력되어야 한다.</p></td></tr><tr><td>2</td><td><p>&lt;Wiegand Out 장치- 저장된 사용자에 지문, PIN, 얼굴 등록된 상태&gt;<br/>1. Device&gt; 장치추가<br/>2. Wiegand Out 및 Format 설정<br/>3. Wiegand Bypass: Enable 설정<br/>4. Wiegand Out 장치에 지문 인증시도</p></td><td><p>지문지원장치의 인증모드<br/>&gt; 지문인증모드</p>\n\n<p>첫번째 등록된 카드<br/>&gt; AOC : 미지원<br/>&gt; CSN : 지원<br/>&gt; Wiegand Card : 지원<br/>&gt; SCC : 지원</p></td><td><p>&gt; 복합인증의 경우 모두 수행 후 저장된 카드의 첫번째 카드ID가 출력된다.<br/>&gt; Wiegand Out 장치에 지문입력시 \"띡\"소리만 출력되어야 한다.<br/>&gt; 첫번째 등록된 카드가 CSN/SCC인 경우 Wiegand Out으로 동작을 한다.<br/>: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴 인 경우 24 Byte 카드 ID를 사용하여 출력함<br/>: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함<br/>&gt; 첫번째 등록된 카드가 AOC인 경우 Wiegand Out으로 동작하지 않는다.</p></td></tr><tr><td>3</td><td><p>&lt;Wiegand Out 장치- 저장된 사용자에 지문, PIN, 얼굴 등록된 상태&gt;<br/>1. Device&gt; 장치추가<br/>2. Wiegand Out 및 Format 설정<br/>3. Wiegand Bypass: Enable 설정<br/>4. Wiegand Out 장치에 얼굴 인증시도</p></td><td><p>얼굴지원 장치의 인증모드<br/>&gt; 얼굴인증모드</p>\n\n<p>첫번째 등록된 카드<br/>&gt; AOC : 미지원<br/>&gt; CSN : 지원<br/>&gt; Wiegand Card : 지원<br/>&gt; SCC : 지원</p></td><td><p>&gt; 복합인증의 경우 모두 수행 후 저장된 카드의 첫번째 카드ID가 출력된다.<br/>&gt; Wiegand Out 장치에 얼굴입력시 \"띡\"소리만 출력되어야 한다.<br/>&gt; 첫번째 등록된 카드가 CSN/SCC인 경우 Wiegand Out으로 동작을 한다.<br/>: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴 인 경우 24 Byte 카드 ID를 사용하여 출력함<br/>: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함<br/>&gt; 첫번째 등록된 카드가 AOC인 경우 Wiegand Out으로 동작하지 않는다.</p></td></tr><tr><td>4</td><td><p>&lt;Wiegand Out 장치- 저장된 사용자에 카드ID, 지문, PIN, 얼굴 등록된 상태&gt;<br/>1. Device&gt; 장치추가<br/>2. Wiegand Out 및 Format 설정<br/>3. Wiegand Bypass: Enable 설정<br/>4. Wiegand Out 장치에 ID 인증시도</p></td><td><p>인증모드<br/>&gt; ID인증모드</p>\n\n<p>첫번째 등록된 카드<br/>&gt; AOC : 미지원<br/>&gt; CSN : 지원<br/>&gt; Wiegand Card : 지원<br/>&gt; SCC : 지원</p></td><td><p>&gt; 복합인증의 경우 모두 수행 후 저장된 카드의 첫번째 카드ID가 출력된다.<br/>&gt; Wiegand Out 장치에 ID인증모드 입력시 \"띡\"소리만 출력되어야 한다.<br/>&gt; ID인증모드 입력시 인증하지 않고 저장된 카드의 첫번째 카드ID가 출력되어야 한다.<br/>&gt; SCC인 경우 24 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.<br/>: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴 인 경우 24 Byte 카드 ID를 사용하여 출력함<br/>: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함<br/>&gt; AOC인 경우 32 Byte 카드 ID를 사용하여 Wiegand Out으로 동작하지 않는다.</p></td></tr><tr><td>5</td><td><p>1. Wiegand In - Out 연결<br/>2. Wiegand Out 장치&gt; Wiegand Bypass: Enable 설정<br/>3. Smart Card로 Wiegand Out 장치에 인증시도</p></td><td><p>Smart Card<br/>&gt; AOC<br/>&gt; SCC<br/>&gt; Mobile Card</p></td><td><p>1. 인증하지 않고 Bypass되어 카드 ID가 전송되어야 한다.<br/>2. AOC/SCC로 인증시 In 장치에서는 인증실패로 동작한다.(CSN값으로 IN장치에 들어옴)<br/>※ CSN값이 사용자에 등록된 경우 인증성공으로 동작.<br/>3. Wiegand Reader(Out) 장치가 재부팅되면 안된다.<br/>4. SCC인 경우 24 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.<br/>: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴인 경우 24 Byte 카드 ID를 사용하여 출력함<br/>: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함<br/>&gt; AOC인 경우 32 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.</p>\n\n<p>※ 의도치않게 CardID(CSN)와 UserID가 동일한 경우 인증성공으로 동작될 수 있다.</p></td></tr><tr><td>6</td><td><p><span class=\"error\">&#91;ToM 지원장치&#93;</span> <br/>1. Wiegand In - Out 연결<br/>2. Wiegand Out 장치&gt; Wiegand Bypass: Enable 설정<br/>3. ToM으로 Wiegand Out 장치에 인증시도</p></td><td><p>&gt; ToM_AoC<br/>&gt; ToM_SCC </p></td><td><p>1. 인증하지 않고 Bypass되어 카드 ID가 전송되어야 한다.<br/>2. AOC/SCC로 인증시 In 장치에서는 인증실패로 동작한다.(CSN값으로 IN장치에 들어옴)<br/>※ CSN값이 사용자에 등록된 경우 인증성공으로 동작.<br/>3. Wiegand Reader(Out) 장치가 재부팅되면 안된다.</p>\n\n<p>※ 의도치않게 CardID(CSN)와 UserID가 동일한 경우 인증성공으로 동작될 수 있다.</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [
+      "COMMONR-52"
     ],
-    [
-      3,
-      "<Wiegand Out 장치- 저장된 사용자에 지문, PIN, 얼굴 등록된 상태>\n1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Wiegand Bypass: Enable 설정\n4. Wiegand Out 장치에 얼굴 인증시도",
-      "얼굴지원 장치의 인증모드\n> 얼굴인증모드\n\n첫번째 등록된 카드\n> AOC : 미지원\n> CSN : 지원\n> Wiegand Card : 지원\n> SCC : 지원",
-      "> 복합인증의 경우 모두 수행 후 저장된 카드의 첫번째 카드ID가 출력된다.\n> Wiegand Out 장치에 얼굴입력시 \"띡\"소리만 출력되어야 한다.\n> 첫번째 등록된 카드가 CSN/SCC인 경우 Wiegand Out으로 동작을 한다.\n: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴 인 경우 24 Byte 카드 ID를 사용하여 출력함\n: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함\n> 첫번째 등록된 카드가 AOC인 경우 Wiegand Out으로 동작하지 않는다."
-    ],
-    [
-      4,
-      "<Wiegand Out 장치- 저장된 사용자에 카드ID, 지문, PIN, 얼굴 등록된 상태>\n1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Wiegand Bypass: Enable 설정\n4. Wiegand Out 장치에 ID 인증시도",
-      "인증모드\n> ID인증모드\n\n첫번째 등록된 카드\n> AOC : 미지원\n> CSN : 지원\n> Wiegand Card : 지원\n> SCC : 지원",
-      "> 복합인증의 경우 모두 수행 후 저장된 카드의 첫번째 카드ID가 출력된다.\n> Wiegand Out 장치에 ID인증모드 입력시 \"띡\"소리만 출력되어야 한다.\n> ID인증모드 입력시 인증하지 않고 저장된 카드의 첫번째 카드ID가 출력되어야 한다.\n> SCC인 경우 24 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴 인 경우 24 Byte 카드 ID를 사용하여 출력함\n: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함\n> AOC인 경우 32 Byte 카드 ID를 사용하여 Wiegand Out으로 동작하지 않는다."
-    ],
-    [
-      5,
-      "1. Wiegand In - Out 연결\n2. Wiegand Out 장치> Wiegand Bypass: Enable 설정\n3. Smart Card로 Wiegand Out 장치에 인증시도",
-      "Smart Card\n> AOC\n> SCC\n> Mobile Card",
-      "1. 인증하지 않고 Bypass되어 카드 ID가 전송되어야 한다.\n2. AOC/SCC로 인증시 In 장치에서는 인증실패로 동작한다.(CSN값으로 IN장치에 들어옴)\n※ CSN값이 사용자에 등록된 경우 인증성공으로 동작.\n3. Wiegand Reader(Out) 장치가 재부팅되면 안된다.\n4. SCC인 경우 24 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴인 경우 24 Byte 카드 ID를 사용하여 출력함\n: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함\n> AOC인 경우 32 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n\n※ 의도치않게 CardID(CSN)와 UserID가 동일한 경우 인증성공으로 동작될 수 있다.\n"
-    ],
-    [
-      6,
-      "[ToM 지원장치] \n1. Wiegand In - Out 연결\n2. Wiegand Out 장치> Wiegand Bypass: Enable 설정\n3. ToM으로 Wiegand Out 장치에 인증시도",
-      "> ToM_AoC\n> ToM_SCC ",
-      "1. 인증하지 않고 Bypass되어 카드 ID가 전송되어야 한다.\n2. AOC/SCC로 인증시 In 장치에서는 인증실패로 동작한다.(CSN값으로 IN장치에 들어옴)\n※ CSN값이 사용자에 등록된 경우 인증성공으로 동작.\n3. Wiegand Reader(Out) 장치가 재부팅되면 안된다.\n\n※ 의도치않게 CardID(CSN)와 UserID가 동일한 경우 인증성공으로 동작될 수 있다."
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-82",
-    "description": "",
-    "test_step": [
-      "<Wiegand Out 장치- 저장된 사용자에 카드ID 등록된 상태>\n1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Wiegand Bypass: Enable 설정\n4. Wiegand Out 장치에 카드인증시도",
-      "<Wiegand Out 장치- 저장된 사용자에 지문, PIN, 얼굴 등록된 상태>\n1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Wiegand Bypass: Enable 설정\n4. Wiegand Out 장치에 지문 인증시도",
-      "<Wiegand Out 장치- 저장된 사용자에 지문, PIN, 얼굴 등록된 상태>\n1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Wiegand Bypass: Enable 설정\n4. Wiegand Out 장치에 얼굴 인증시도",
-      "<Wiegand Out 장치- 저장된 사용자에 카드ID, 지문, PIN, 얼굴 등록된 상태>\n1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Wiegand Bypass: Enable 설정\n4. Wiegand Out 장치에 ID 인증시도",
-      "1. Wiegand In - Out 연결\n2. Wiegand Out 장치> Wiegand Bypass: Enable 설정\n3. Smart Card로 Wiegand Out 장치에 인증시도",
-      "[ToM 지원장치] \n1. Wiegand In - Out 연결\n2. Wiegand Out 장치> Wiegand Bypass: Enable 설정\n3. ToM으로 Wiegand Out 장치에 인증시도"
-    ],
-    "data": [
-      "인증모드\n> 카드인증모드\n\n카드인증\n> CSN/Wiegand 카드\n",
-      "지문지원장치의 인증모드\n> 지문인증모드\n\n첫번째 등록된 카드\n> AOC : 미지원\n> CSN : 지원\n> Wiegand Card : 지원\n> SCC : 지원",
-      "얼굴지원 장치의 인증모드\n> 얼굴인증모드\n\n첫번째 등록된 카드\n> AOC : 미지원\n> CSN : 지원\n> Wiegand Card : 지원\n> SCC : 지원",
-      "인증모드\n> ID인증모드\n\n첫번째 등록된 카드\n> AOC : 미지원\n> CSN : 지원\n> Wiegand Card : 지원\n> SCC : 지원",
-      "Smart Card\n> AOC\n> SCC\n> Mobile Card",
-      "> ToM_AoC\n> ToM_SCC "
-    ],
-    "expected_result": [
-      "1. Wiegand Out인 경우 인증하지않고 카드ID를 내보내야 한다.\n> iClass 카드는 PAC Data를 출력\n2 Wiegand Out 장치에 카드입력시 \"띡\"소리만 출력되어야 한다.\n3 카드가 입력수단의 처음인 경우 카드입력시 다음의 인증수단을 입력하지 않더라도 바로 카드ID가 출력되어야 한다.",
-      "> 복합인증의 경우 모두 수행 후 저장된 카드의 첫번째 카드ID가 출력된다.\n> Wiegand Out 장치에 지문입력시 \"띡\"소리만 출력되어야 한다.\n> 첫번째 등록된 카드가 CSN/SCC인 경우 Wiegand Out으로 동작을 한다.\n: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴 인 경우 24 Byte 카드 ID를 사용하여 출력함\n: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함\n> 첫번째 등록된 카드가 AOC인 경우 Wiegand Out으로 동작하지 않는다.",
-      "> 복합인증의 경우 모두 수행 후 저장된 카드의 첫번째 카드ID가 출력된다.\n> Wiegand Out 장치에 얼굴입력시 \"띡\"소리만 출력되어야 한다.\n> 첫번째 등록된 카드가 CSN/SCC인 경우 Wiegand Out으로 동작을 한다.\n: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴 인 경우 24 Byte 카드 ID를 사용하여 출력함\n: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함\n> 첫번째 등록된 카드가 AOC인 경우 Wiegand Out으로 동작하지 않는다.",
-      "> 복합인증의 경우 모두 수행 후 저장된 카드의 첫번째 카드ID가 출력된다.\n> Wiegand Out 장치에 ID인증모드 입력시 \"띡\"소리만 출력되어야 한다.\n> ID인증모드 입력시 인증하지 않고 저장된 카드의 첫번째 카드ID가 출력되어야 한다.\n> SCC인 경우 24 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴 인 경우 24 Byte 카드 ID를 사용하여 출력함\n: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함\n> AOC인 경우 32 Byte 카드 ID를 사용하여 Wiegand Out으로 동작하지 않는다.",
-      "1. 인증하지 않고 Bypass되어 카드 ID가 전송되어야 한다.\n2. AOC/SCC로 인증시 In 장치에서는 인증실패로 동작한다.(CSN값으로 IN장치에 들어옴)\n※ CSN값이 사용자에 등록된 경우 인증성공으로 동작.\n3. Wiegand Reader(Out) 장치가 재부팅되면 안된다.\n4. SCC인 경우 24 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴인 경우 24 Byte 카드 ID를 사용하여 출력함\n: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함\n> AOC인 경우 32 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n\n※ 의도치않게 CardID(CSN)와 UserID가 동일한 경우 인증성공으로 동작될 수 있다.\n",
-      "1. 인증하지 않고 Bypass되어 카드 ID가 전송되어야 한다.\n2. AOC/SCC로 인증시 In 장치에서는 인증실패로 동작한다.(CSN값으로 IN장치에 들어옴)\n※ CSN값이 사용자에 등록된 경우 인증성공으로 동작.\n3. Wiegand Reader(Out) 장치가 재부팅되면 안된다.\n\n※ 의도치않게 CardID(CSN)와 UserID가 동일한 경우 인증성공으로 동작될 수 있다."
-    ]
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 12851,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 35109,
+              "latestFinalId": 35109
+            },
+            {
+              "environment": "ES1",
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 29828,
+              "latestFinalId": 29828
+            },
+            {
+              "environment": "BioStarV2.9.6.30",
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 29828,
+              "latestFinalId": 29828
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_170117(UnitTest)",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 5631,
+              "latestFinalId": 5631
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180329",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10293,
+              "latestFinalId": 10293
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_190805_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15212,
+              "latestFinalId": 15212
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.2.8_20160603",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 1754,
+              "latestFinalId": 1754
+            }
+          ]
+        },
+        {
+          "group": "FL_V1.0_190515(PS)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 14125,
+              "latestFinalId": 14125
+            }
+          ]
+        },
+        {
+          "group": "V1.7.1_181204(Hotfix)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12641,
+              "latestFinalId": 12641
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_181210_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12743,
+              "latestFinalId": 12743
+            }
+          ]
+        },
+        {
+          "group": "V1.1.5_4_151014(All)",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 74,
+              "latestFinalId": 74
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0 170331",
+          "statusResults": [
+            {
+              "latest": 1,
+              "latestFinal": 0,
+              "latestId": 8613,
+              "latestFinalId": 6342
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_181119_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12923,
+              "latestFinalId": 12923
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_190809_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15573,
+              "latestFinalId": 15573
+            }
+          ]
+        },
+        {
+          "group": "V1.8.0_190806_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15299,
+              "latestFinalId": 15299
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180322",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10113,
+              "latestFinalId": 10113
+            }
+          ]
+        },
+        {
+          "group": "V1.7.0_190806_Interaction 7차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15060,
+              "latestFinalId": 15060
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.1.5_5 - 20151016(All)",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 5235,
+              "latestFinalId": 5235
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_190806_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15407,
+              "latestFinalId": 15407
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_20200601_Interaction 12차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 17139,
+              "latestFinalId": 17139
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "Wiegand - 입력/출력_Bypass",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 1258,
+          "index": 1,
+          "step": "<Wiegand Out 장치- 저장된 사용자에 카드ID 등록된 상태>\n1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Wiegand Bypass: Enable 설정\n4. Wiegand Out 장치에 카드인증시도",
+          "data": "인증모드\n> 카드인증모드\n\n카드인증\n> CSN/Wiegand 카드\n",
+          "result": "1. Wiegand Out인 경우 인증하지않고 카드ID를 내보내야 한다.\n> iClass 카드는 PAC Data를 출력\n2 Wiegand Out 장치에 카드입력시 \"띡\"소리만 출력되어야 한다.\n3 카드가 입력수단의 처음인 경우 카드입력시 다음의 인증수단을 입력하지 않더라도 바로 카드ID가 출력되어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 1261,
+          "index": 2,
+          "step": "<Wiegand Out 장치- 저장된 사용자에 지문, PIN, 얼굴 등록된 상태>\n1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Wiegand Bypass: Enable 설정\n4. Wiegand Out 장치에 지문 인증시도",
+          "data": "지문지원장치의 인증모드\n> 지문인증모드\n\n첫번째 등록된 카드\n> AOC : 미지원\n> CSN : 지원\n> Wiegand Card : 지원\n> SCC : 지원",
+          "result": "> 복합인증의 경우 모두 수행 후 저장된 카드의 첫번째 카드ID가 출력된다.\n> Wiegand Out 장치에 지문입력시 \"띡\"소리만 출력되어야 한다.\n> 첫번째 등록된 카드가 CSN/SCC인 경우 Wiegand Out으로 동작을 한다.\n: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴 인 경우 24 Byte 카드 ID를 사용하여 출력함\n: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함\n> 첫번째 등록된 카드가 AOC인 경우 Wiegand Out으로 동작하지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 13140,
+          "index": 3,
+          "step": "<Wiegand Out 장치- 저장된 사용자에 지문, PIN, 얼굴 등록된 상태>\n1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Wiegand Bypass: Enable 설정\n4. Wiegand Out 장치에 얼굴 인증시도",
+          "data": "얼굴지원 장치의 인증모드\n> 얼굴인증모드\n\n첫번째 등록된 카드\n> AOC : 미지원\n> CSN : 지원\n> Wiegand Card : 지원\n> SCC : 지원",
+          "result": "> 복합인증의 경우 모두 수행 후 저장된 카드의 첫번째 카드ID가 출력된다.\n> Wiegand Out 장치에 얼굴입력시 \"띡\"소리만 출력되어야 한다.\n> 첫번째 등록된 카드가 CSN/SCC인 경우 Wiegand Out으로 동작을 한다.\n: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴 인 경우 24 Byte 카드 ID를 사용하여 출력함\n: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함\n> 첫번째 등록된 카드가 AOC인 경우 Wiegand Out으로 동작하지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 1276,
+          "index": 4,
+          "step": "<Wiegand Out 장치- 저장된 사용자에 카드ID, 지문, PIN, 얼굴 등록된 상태>\n1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Wiegand Bypass: Enable 설정\n4. Wiegand Out 장치에 ID 인증시도",
+          "data": "인증모드\n> ID인증모드\n\n첫번째 등록된 카드\n> AOC : 미지원\n> CSN : 지원\n> Wiegand Card : 지원\n> SCC : 지원",
+          "result": "> 복합인증의 경우 모두 수행 후 저장된 카드의 첫번째 카드ID가 출력된다.\n> Wiegand Out 장치에 ID인증모드 입력시 \"띡\"소리만 출력되어야 한다.\n> ID인증모드 입력시 인증하지 않고 저장된 카드의 첫번째 카드ID가 출력되어야 한다.\n> SCC인 경우 24 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴 인 경우 24 Byte 카드 ID를 사용하여 출력함\n: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함\n> AOC인 경우 32 Byte 카드 ID를 사용하여 Wiegand Out으로 동작하지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 9363,
+          "index": 5,
+          "step": "1. Wiegand In - Out 연결\n2. Wiegand Out 장치> Wiegand Bypass: Enable 설정\n3. Smart Card로 Wiegand Out 장치에 인증시도",
+          "data": "Smart Card\n> AOC\n> SCC\n> Mobile Card",
+          "result": "1. 인증하지 않고 Bypass되어 카드 ID가 전송되어야 한다.\n2. AOC/SCC로 인증시 In 장치에서는 인증실패로 동작한다.(CSN값으로 IN장치에 들어옴)\n※ CSN값이 사용자에 등록된 경우 인증성공으로 동작.\n3. Wiegand Reader(Out) 장치가 재부팅되면 안된다.\n4. SCC인 경우 24 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴인 경우 24 Byte 카드 ID를 사용하여 출력함\n: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함\n> AOC인 경우 32 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n\n※ 의도치않게 CardID(CSN)와 UserID가 동일한 경우 인증성공으로 동작될 수 있다.\n",
+          "attachments": []
+        },
+        {
+          "id": 16954,
+          "index": 6,
+          "step": "[ToM 지원장치] \n1. Wiegand In - Out 연결\n2. Wiegand Out 장치> Wiegand Bypass: Enable 설정\n3. ToM으로 Wiegand Out 장치에 인증시도",
+          "data": "> ToM_AoC\n> ToM_SCC ",
+          "result": "1. 인증하지 않고 Bypass되어 카드 ID가 전송되어야 한다.\n2. AOC/SCC로 인증시 In 장치에서는 인증실패로 동작한다.(CSN값으로 IN장치에 들어옴)\n※ CSN값이 사용자에 등록된 경우 인증성공으로 동작.\n3. Wiegand Reader(Out) 장치가 재부팅되면 안된다.\n\n※ 의도치않게 CardID(CSN)와 UserID가 동일한 경우 인증성공으로 동작될 수 있다.",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [],
+      "maxResults": 0,
+      "total": 0,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+      "name": "Minor (C)",
+      "id": "3"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+      "name": "완료",
+      "id": "10001",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "완료"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzs7xr:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2015-09-02T09:57:48.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

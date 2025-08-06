@@ -1,172 +1,2202 @@
 {
-  "id": "COMMONR-40",
-  "content": [
-    [
-      1,
-      "1. Door > Add Door > Entry Device 설정",
-      "[BioStar]\n1. Master\n2. Slave\n3. Wiegand Reader\n",
-      "Entry Device가 설정된다."
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "12498",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/12498",
+  "key": "COMMONR-40",
+  "fields": {
+    "resolution": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/resolution/10000",
+      "id": "10000",
+      "description": "[사용안함] Work has been completed on this issue.",
+      "name": "완료(Done)"
+    },
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "6.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": null,
+    "customfield_10185": null,
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "51430",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/51430",
+        "type": {
+          "id": "10001",
+          "name": "Cloners",
+          "inward": "is cloned by",
+          "outward": "clones",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10001"
+        },
+        "inwardIssue": {
+          "id": "60987",
+          "key": "BCRTC-117",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/60987",
+          "fields": {
+            "summary": "출입문 - 설정",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "할 일",
+              "id": "10000",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "Represents a Test",
+              "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+              "name": "Test",
+              "subtask": false
+            }
+          }
+        }
+      },
+      {
+        "id": "24187",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/24187",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "31404",
+          "key": "FLFW-449",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/31404",
+          "fields": {
+            "summary": "[RS 485 통신] DM20 추가 후 Wiegand Reader 추가 시 Master 비정상 재부팅",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "34417",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/34417",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "44511",
+          "key": "ONYXFW-433",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/44511",
+          "fields": {
+            "summary": "[OM120 의 특정 Port를 Door Relay로 설정한 상태] Door Sensor 접지 상태에서 마스터 장치 Reboot 후 Door Sensor 접지 해제시 Relay On 유지되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/3",
+              "description": "현재 담당자가 이 이슈를 처리하고 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/inprogress.png",
+              "name": "진행 중",
+              "id": "3",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/4",
+                "id": 4,
+                "key": "indeterminate",
+                "colorName": "yellow",
+                "name": "진행 중"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "23187",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/23187",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "29738",
+          "key": "FLFW-282",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/29738",
+          "fields": {
+            "summary": "[LIFT] LIFT(OM120) Disconnected 상태에서(팝업 표시 확인) Reader에 인증 후 LIFT(OM120) 연결하게 되면 연결 후 Open Time동안 Relay가 동작되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13644",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13644",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18930",
+          "key": "BEWIIFWDI-262",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18930",
+          "fields": {
+            "summary": "Held/Forced Open Alarm 발생 후 Clear Alarm 시 Signal만 꺼지고, 해당 장치의 Output Relay는 유지 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "21980",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/21980",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "28152",
+          "key": "BEWIIFWDI-650",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/28152",
+          "fields": {
+            "summary": "인증 후 Door Status 진입시 Watchdog으로 Reboot 되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13623",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13623",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18943",
+          "key": "BLIIFWI-600",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18943",
+          "fields": {
+            "summary": "[Door] Alarm이 동작중인 상태_Clear Alarm시 출력중인 Signal은 Off되나 해당 Port는 On을 유지하는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14674",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14674",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19931",
+          "key": "FSTIIFW-214",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19931",
+          "fields": {
+            "summary": "특정시료에서 Input Port 동작되지 않는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "23458",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/23458",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "30408",
+          "key": "XPASSII-118",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/30408",
+          "fields": {
+            "summary": "Relay로 설정된 장치 연결이 끊어진 상태에서 인증 후 Relay 설정장치를 재연결하게되면 Relay 동작되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13640",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13640",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18949",
+          "key": "BEWIIFWDI-268",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18949",
+          "fields": {
+            "summary": "Relay On&Door Open 상태에서 Master Reboot시도_부팅시 Door Sensor 해제되었음에도 Relay가 OFF되었다가 다시 On되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13695",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13695",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18939",
+          "key": "BLIIFWI-598",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18939",
+          "fields": {
+            "summary": "Relay On&Door Open 상태에서 Master Reboot시도_부팅시 Door Sensor 해제되었음에도 Relay가 OFF되었다가 다시 On되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "20493",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/20493",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "26305",
+          "key": "CSTFW-392",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/26305",
+          "fields": {
+            "summary": "Master Reboot 후 Door Status의 Door Relay 정보가 잘못표시되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "23191",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/23191",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "29951",
+          "key": "FLFW-323",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/29951",
+          "fields": {
+            "summary": "Door Relay가 Slave로 설정 후 RS 485 Cable을 제거한 후 Master에서 인증 후 인증 성공 확인 후 Slave를 재연결하면 Relay가 동작하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "23194",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/23194",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "29952",
+          "key": "FLFW-324",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/29952",
+          "fields": {
+            "summary": "Door Relay가 Slave로 설정 후 RS 485 Cable을 제거한 후 Slave에서 인증 후 인증 성공 확인 후 Slave를 재연결하면 Relay가 동작하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14518",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14518",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19704",
+          "key": "FSTIIFW-144",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19704",
+          "fields": {
+            "summary": "Door의 Relay, Exit Button, Door Sensor를 모두 DM20의 Port를 설정시 Door Relay, Exit Button, Door Sensor이 미동작하는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "21943",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/21943",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "28128",
+          "key": "FSTIIFW-1091",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/28128",
+          "fields": {
+            "summary": "[Door Status] Manual Unlock/Lock 시도 후 Master Reboot 시 상태 오류 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "21950",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/21950",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "28131",
+          "key": "FSTIIFW-1094",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/28131",
+          "fields": {
+            "summary": "Door Relay가 Slave로 설정 후 RS 485 Cable을 제거한 후 Master에서 인증 후 인증 성공 확인 후 Slave를 재연결하면 Relay가 동작하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "21947",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/21947",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "28129",
+          "key": "TIIDFI-2061",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/28129",
+          "fields": {
+            "summary": "[Door Status] Manual Unlock/Lock 시도 후 Master Reboot 시 상태 오류 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "24310",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/24310",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "31619",
+          "key": "TIIDFI-2253",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/31619",
+          "fields": {
+            "summary": "[RS 485 통신]  Schedule Unlock & Manual Unlock 상태에서 Master 재부팅 시 간혹 RS 485 Slave와 연결이 안되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "28252",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/28252",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "37863",
+          "key": "TIIDFI-2552",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/37863",
+          "fields": {
+            "summary": "Door Relay가 Slave로 설정 후 RS 485 Cable을 제거한 후 Master에서 인증 후 인증 성공 확인 후 Slave를 재연결하면 Relay가 동작하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "10972",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10972",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "14172",
+          "key": "ENTRYIIDII-99",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/14172",
+          "fields": {
+            "summary": "FireAlarm 발생 도중에 Master 장치를 껐다 켤 경우 상태값을 유지하지 못하는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "10496",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10496",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "13009",
+          "key": "BLIIFWI-88",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/13009",
+          "fields": {
+            "summary": "[Requirement] 출입문 - 설정",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "59049",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/59049",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "68265",
+          "key": "CS20FW-78",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/68265",
+          "fields": {
+            "summary": "[CS-20]Door Relay 설정시 설정값에 대한 측정결과 요청",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10500",
+              "id": "10500",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10320&avatarType=issuetype",
+              "name": "Technical Inquiry",
+              "subtask": false,
+              "avatarId": 10320
+            }
+          }
+        }
+      },
+      {
+        "id": "35005",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/35005",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "45607",
+          "key": "BAS-487",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/45607",
+          "fields": {
+            "summary": "Test Case 작성",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
+              "id": "5",
+              "description": "이슈의 부작업",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
+              "name": "부작업",
+              "subtask": true,
+              "avatarId": 10316
+            }
+          }
+        }
+      },
+      {
+        "id": "11161",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11161",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "14773",
+          "key": "BEWIIFWDI-17",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/14773",
+          "fields": {
+            "summary": "[Requirement] 출입문 - 설정",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10431",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10431",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "12943",
+          "key": "TIIDFI-55",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12943",
+          "fields": {
+            "summary": "[Requirement] 출입문 - 설정",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "45318",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/45318",
+        "type": {
+          "id": "10200",
+          "name": "Tests",
+          "inward": "tested by",
+          "outward": "tests",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10200"
+        },
+        "inwardIssue": {
+          "id": "55164",
+          "key": "BS3FW-1305",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/55164",
+          "fields": {
+            "summary": "[FISF-2096] Slave 로 부터의 Receive 실패시 Retry 하는 부분 적용(ReleaseAC와 동일하게 수정)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "1. Door > Add Door > Exit Device 설정",
-      "[BioStar]\n1. Master\n2. Slave\n3. Wiegand Reader",
-      "Exit Device가 설정된다."
+    "assignee": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EC%A1%B0%EC%9E%84%EC%84%B1",
+      "name": "조임성",
+      "key": "조임성",
+      "emailAddress": "isjo@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607"
+      },
+      "displayName": "조임성",
+      "active": false,
+      "timeZone": "Asia/Seoul"
+    },
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 18.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EC%A1%B0%EC%9E%84%EC%84%B1",
+      "name": "조임성",
+      "key": "조임성",
+      "emailAddress": "isjo@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607"
+      },
+      "displayName": "조임성",
+      "active": false,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-40/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@7bcd057f[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@323f2fa5[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@144368f8[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@5f4a3fd2[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@30aebc60[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@43013fa[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@bbbbf2c[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@581b526[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@4089444a[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@44a22062[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@12b6a505[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@1a961af0[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": "2016-02-25T13:30:44.000+0900",
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-40/watchers",
+      "watchCount": 2,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T10:17:09.000+0900",
+    "timeoriginalestimate": null,
+    "description": "출입문 설정 및 동작에 이상이 없는지 확인",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. Door &gt; Add Door &gt; Entry Device 설정</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>1. Master<br/>2. Slave<br/>3. Wiegand Reader</p></td><td><p>Entry Device가 설정된다.</p></td></tr><tr><td>2</td><td><p>1. Door &gt; Add Door &gt; Exit Device 설정</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>1. Master<br/>2. Slave<br/>3. Wiegand Reader</p></td><td><p>Exit Device가 설정된다.</p></td></tr><tr><td>3</td><td><p>1. Door &gt; Add Door &gt; Door Relay 설정 &gt; Apply<br/>2. 각 Reader에 인증시도</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>1. Master<br/>2. Slave(SIO2, DM20 포함)</p>\n\n<p>OM-120 Relay 사용 가능<br/>&gt; Floor 중복 안 된 경우</p></td><td><p>1. Door Relay가 설정된다<br/>2. 출입권한을 가진 사용자가 인증하면 설정된 출입문 Relay가 열리고,'출입문 잠금장치 개방간격'이 경과한 후에 Relay가 닫힌다.<br/>3. 출입문 열림/닫힘 로그가 저장된다.<br/>&gt; Door unlocked, Door locked</p></td></tr><tr><td>4</td><td><p>1. Door &gt; Add Door &gt; Exit Button 설정 &gt; Apply </p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>1. Master<br/>2. Slave(SIO2, DM20 포함)</p></td><td><p>1. Exit 버튼으로 사용할 입력포트를 설정할 수 있다.<br/>2. WiegandReader는 설정불가(Master/Slave만 설정 가능)<br/>3. 입력방식을 N/O, N/C로 설정할 수 있다.<br/>4. Exit Button 을 이용한 relay 동작 ON/OFF 를 설정 할 수 있다. <br/>5. 접지시 Relay가 열리고 Open Time이 경과한 후 Relay가 닫힌다.<br/>&gt; Does not activate realy : OFF<br/>6. 출입문 열림/닫힘 로그가 저장된다.<br/>&gt; Door unlocked, Door locked</p></td></tr><tr><td>5</td><td><p>1. Door &gt; Add Door &gt; Exit Button 설정 &gt; Apply <br/>2. Exit Button input 접지<br/>3. Biostar2 Log 확인</p></td><td><p><a href=\"https://jira.suprema.co.kr/browse/BDP-518\" title=\"Exit button 및 operator open 로그 추가\" class=\"issue-link\" data-issue-key=\"BDP-518\"><del>BDP-518</del></a><br/>Door &gt; Exit Button &gt; Input port 설정한 포트에 맞게 접지(ex 0번/1번 포트 선+GRD 선)</p></td><td><p>1. Exit 버튼 입력에 대한 로그가 저장된다.<br/>&gt; 국문: 퇴실버튼에 의한 출입문 개방 요청<br/>&gt; 영문: Door open request by exit button</p></td></tr><tr><td>6</td><td><p>1. Door &gt; Add Door &gt; Door Sensor 설정 &gt; Apply<br/>2. Input 접지/접지해제</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>1. Master<br/>2. Slave(SIO2, DM20 포함)</p></td><td><p>1. Door Sensor가 설정된다.<br/>2. 출입문이 열리고 닫히면서 출입문 열림/닫힘로 로그 저장된다.<br/>&gt; Door opened / Door closed</p></td></tr><tr><td>7</td><td><p>1. Door &gt; Add Door &gt; Apply &gt; 장치 재부팅 후 BioStar에 재 연결 &gt; Door 설정 확인</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span></p></td><td><p>1. 재부팅후에도 출입문 설정값은 유지가 된다.</p></td></tr><tr><td>8</td><td><p>1. RS485로 장치 연결 &gt; Door &gt; Add Door<br/>장치 연결 : 장치-장치, 장치-SIO2, 장치-OM-120, 장치-DM-20 Door 설정<br/><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/warning.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> A Door : 장치(M)-장치(S)                     <br/><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/warning.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> B Door : 장치(M)-SIO2(S)<br/><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/warning.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> C Door : 장치(M)-OM-120(S)<br/><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/warning.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> D Door : 장치(M)-DM-20(S)</p>\n\n<p>2. Door Open(인증을 통해 Unlocked 한 후 Door Sensor 접지를 통해 Open 상태로 만듦)<br/>3. Master 장치 Reboot 후 Door Sensor 접지 해제<br/>4. 각 Door의 장치에 인증시도</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>각 Door의 Relay는 Master와 Slave의 Relay를 모두 설정해봄</p>\n\n<p>*Relay로 설정된 장치 재부팅 시 Exit 버튼까지 접지된 상태면 unlock 유지</p></td><td><p>1. Master 재부팅 후 장치의 상태는 Close 상태이므로 Lock된 상태로 동작함.<br/>2. Master 재부팅 후 인증성공시 Locked/Unlocked 정상동작되어야 한다.</p></td></tr><tr><td>9</td><td><p>1. RS485로 장치 연결 &gt; Door &gt; Add Door<br/>장치 연결 : 장치-장치, 장치-SIO2<br/>Door 설정<br/><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/warning.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> A Door : 장치(M)-장치(S)                     <br/><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/warning.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> B Door : 장치(M)-SIO2(S)</p>\n\n<p>2. BioStar&gt;Monitoring&gt;Door Status&gt;Door 선택&gt;Manual Unlock&gt;Unlock 동작 확인<br/>3. Master 장치 Reboot<br/>4. 각 Door의 장치에 인증시도</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span></p></td><td><p>1. Reboot 후 Unlock상태를 유지한다.<br/>2. 인증후에도 Open Time을 따라가지 않고, Unlock상태를 유지해야 한다.</p></td></tr><tr><td>10</td><td><p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/star_yellow.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> DM20이용 출입문 4개 제어_1</p>\n\n<p>&lt;Pre-Conditions&gt;</p>\n\n<p>Master Device, Slave(DM20 1대/Device 2대), Wiegand Reader 2대</p>\n\n<p>1. Master 장치와 Slave 장치, DM20을 RS485로 연결</p>\n\n<p>2. DM20에 Wiegand Reader 2대 연결</p>\n\n<p>3. Wiegand Reader 0,1 에 대해 DM20의 Input/Relay Port를 이용해 Door를 각각 구성</p>\n\n<p>4. Slave 장치 2대에 대해 DM20의 Input/Relay Port를 이용해 Door를 각각 구성</p>\n\n<p>5. 인증을 통해 Door 제어가 정상적으로 동작하는지 확인</p></td><td></td><td><p>1. 인증성공시 Unlocked/Locked으로 동작된다.</p></td></tr><tr><td>11</td><td><p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/star_yellow.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> DM20이용 출입문 4개 제어_2</p>\n\n<p>&lt;Pre-Conditions&gt;</p>\n\n<p>Master Device, Slave(DM20 2대), Wiegand Reader 4대</p>\n\n<p>1. Master 장치와 DM20 2대를 RS485로 연결</p>\n\n<p>2. 각각의 DM20에 Wiegand Reader 2대씩 연결</p>\n\n<p>3. 각각의 Wiegand Reader 에 대해 DM20의 Input/Relay Port를 이용해 Door를 각각 구성</p>\n\n<p>4. 인증을 통해 Door 제어가 정상적으로 동작하는지 확인</p></td><td></td><td><p>1. 인증성공시 Unlocked/Locked으로 동작된다.</p></td></tr><tr><td>12</td><td><p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/star_yellow.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> DM20이용 출입문 2개 제어_1</p>\n\n<p>&lt;Pre-Conditions&gt;</p>\n\n<p>Master Device, DM20 1대, Wiegand Reader 2대</p>\n\n<p>1. Master 장치와 DM20을 RS485로 연결</p>\n\n<p>2. DM20에 Wiegand Reader 2대 연결</p>\n\n<p>3. Wiegand Reader 0,1에 대해 DM20의 Input/Relay Port를 이용해 Door를 각각 구성</p>\n\n<p>4. 인증을 통해 Door 제어가 정상적으로 동작하는지 확인</p></td><td></td><td><p>1. 인증성공시 Unlocked/Locked으로 동작된다.</p></td></tr><tr><td>13</td><td><p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/star_yellow.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> DM20이용 출입문 2개 제어_2</p>\n\n<p>&lt;Pre-Conditions&gt;</p>\n\n<p>Master Device, DM20 1대, Slave Device, Wiegand Reader 2대</p>\n\n<p>1. Master 장치와 Slave 장치, DM20을 RS485로 연결</p>\n\n<p>2. DM20에 Wiegand Reader 2대 연결</p>\n\n<p>3. Wiegand Reader 0에 대해 DM20의 Input/Relay Port를 이용해 Door 구성</p>\n\n<p>4. Wiegand Reader 1과 Slave 장치에 대해 DM20의 Input/Relay Port를 이용해 Door 구성</p>\n\n<p>5. 인증을 통해 Door 제어가 정상적으로 동작하는지 확인</p></td><td></td><td><p>1. 인증성공시 Unlocked/Locked으로 동작된다.</p></td></tr><tr><td>14</td><td><p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/star_yellow.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> DM20이용 출입문 2개 제어_APB</p>\n\n<p>&lt;Pre-Conditions&gt;</p>\n\n<p>Master Device, Slave(DM20 1대/Device 2대), Wiegand Reader 2대</p>\n\n<p>1. Master 장치와 DM20, Slave 장치 2대를 RS485로 연결</p>\n\n<p>2. DM20에 Wiegand Reader 2대씩 연결</p>\n\n<p>3. Wiegand Reader 0과 Slave 장치에 대해 DM20의 Input/Relay Port를 이용해 Door를 각각 구성</p>\n\n<p>4. Wiegand Reader 1과 Slave 장치에 대해 DM20의 Input/Relay Port를 이용해 Door를 각각 구성</p>\n\n<p>5. APB 설정</p>\n\n<p>6. 동일 Reader에 반복인증을 했을 경우 동작확인</p></td><td></td><td><p>1. APB 위반으로 동작되어야 한다.<br/>&gt; Door 내 Entry/Exit Device 중 한쪽에만 사용자가 2번 인증을 한 경우 APB 위반 발생</p></td></tr><tr><td>15</td><td><p>1. Door &gt; Add Door &gt; Door Relay 설정 &gt; Apply</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>1. Master<br/>2. Slave(SIO2, DM20 포함)</p>\n\n<p>OM-120 Relay 사용 가능<br/>&gt; Floor 중복 안 된 경우</p></td><td><p>1. Door Relay가 설정된다<br/>2. 출입권한을 가진 사용자가 인증하면 설정된 출입문 Relay가 열리고,'출입문 잠금장치 개방간격'이 경과한 후에 Relay가 닫힌다.<br/>3. 출입문 열림/닫힘 로그가 저장된다.<br/>&gt; Door unlocked, Door locked<br/>4. Scope를 이용하여 설정한 값으로 동작이 되는 지 확인할 수 있어야 한다.<br/><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/check.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> 측정 : RND 개발 검증 결과로 대체</p>\n\n<p>※ Relay에 대한 동작 확인: Scope, LED 유지 시간(경광등 포함)</p></td></tr><tr><td>16</td><td><p>1. Door 추가<br/>2. Relay로 설정된 장치 Disconnected<br/>3. Door 설정이면서 연결된 장치에 인증<br/>4. Disconnected된 장치에 대해 Connected<br/>5. Relay 동작 유무확인</p></td><td><p>Entry/Exit Device<br/>&gt; Slave</p>\n\n<p>Relay<br/>&gt; IO Device<br/>&gt; Slave Device</p></td><td><p>1. Relay로 설정된 장치가 Disconnected인 경우 인증성공으로는 동작하지만 Relay는 동작하지 않는다.<br/>2. Disconnected된 장치가 연결된 후에도 Relay가 동작되지 않아야 한다.(이전의 인증성공에 대한 동작에 대해 무시해야 함)</p></td></tr><tr><td>17</td><td><p><span class=\"error\">&#91;APB : Use&#93;</span><br/> 1. APB 위반을 발생<br/> 2. Reset Time 이내 Master 장치를 Reboot</p></td><td><p>Soft APB<br/>Hard APB</p></td><td><p>1.Reset Time 이내 장치가 재부팅 되는 경우 APB 유지<br/> 2. APB 이전 설정 유지 확인</p></td></tr><tr><td>18</td><td><p><span class=\"error\">&#91;APB : Use&#93;</span><br/>1. APB 위반을 발생<br/>2. Reset Time 이후 Master 장치를 Reboot</p></td><td><p>Soft APB<br/>Hard APB</p></td><td><p>1. Reset Time 이후 장치가 재부팅되는 경우 모든 APB 정보가 리셋되어야 한다.<br/> : Alarm 해제<br/> : APB 위반 해제<br/> 2. APB 이전 설정 유지 확인</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [
+      "COMMONR-33",
+      "COMMONR-383"
     ],
-    [
-      3,
-      "1. Door > Add Door > Door Relay 설정 > Apply\n2. 각 Reader에 인증시도",
-      "[BioStar]\n1. Master\n2. Slave(SIO2, DM20 포함)\n\nOM-120 Relay 사용 가능\n> Floor 중복 안 된 경우",
-      "1. Door Relay가 설정된다\n2. 출입권한을 가진 사용자가 인증하면 설정된 출입문 Relay가 열리고,'출입문 잠금장치 개방간격'이 경과한 후에 Relay가 닫힌다.\n3. 출입문 열림/닫힘 로그가 저장된다.\n> Door unlocked, Door locked"
-    ],
-    [
-      4,
-      "1. Door > Add Door > Exit Button 설정 > Apply \n",
-      "[BioStar]\n1. Master\n2. Slave(SIO2, DM20 포함)",
-      "1. Exit 버튼으로 사용할 입력포트를 설정할 수 있다.\n2. WiegandReader는 설정불가(Master/Slave만 설정 가능)\n3. 입력방식을 N/O, N/C로 설정할 수 있다.\n4. Exit Button 을 이용한 relay 동작 ON/OFF 를 설정 할 수 있다. \n5. 접지시 Relay가 열리고 Open Time이 경과한 후 Relay가 닫힌다.\n> Does not activate realy : OFF\n6. 출입문 열림/닫힘 로그가 저장된다.\n> Door unlocked, Door locked\n"
-    ],
-    [
-      5,
-      "1. Door > Add Door > Exit Button 설정 > Apply \n2. Exit Button input 접지\n3. Biostar2 Log 확인",
-      "[BDP-518]\nDoor > Exit Button > Input port 설정한 포트에 맞게 접지(ex 0번/1번 포트 선+GRD 선)",
-      "1. Exit 버튼 입력에 대한 로그가 저장된다.\n> 국문: 퇴실버튼에 의한 출입문 개방 요청\n> 영문: Door open request by exit button"
-    ],
-    [
-      6,
-      "1. Door > Add Door > Door Sensor 설정 > Apply\n2. Input 접지/접지해제",
-      "[BioStar]\n1. Master\n2. Slave(SIO2, DM20 포함)",
-      "1. Door Sensor가 설정된다.\n2. 출입문이 열리고 닫히면서 출입문 열림/닫힘로 로그 저장된다.\n> Door opened / Door closed"
-    ],
-    [
-      7,
-      "1. Door > Add Door > Apply > 장치 재부팅 후 BioStar에 재 연결 > Door 설정 확인",
-      "[BioStar]",
-      "1. 재부팅후에도 출입문 설정값은 유지가 된다."
-    ],
-    [
-      8,
-      "1. RS485로 장치 연결 > Door > Add Door\n장치 연결 : 장치-장치, 장치-SIO2, 장치-OM-120, 장치-DM-20 Door 설정\n(!) A Door : 장치(M)-장치(S)                     \n(!) B Door : 장치(M)-SIO2(S)\n(!) C Door : 장치(M)-OM-120(S)\n(!) D Door : 장치(M)-DM-20(S)\n\n2. Door Open(인증을 통해 Unlocked 한 후 Door Sensor 접지를 통해 Open 상태로 만듦)\n3. Master 장치 Reboot 후 Door Sensor 접지 해제\n4. 각 Door의 장치에 인증시도",
-      "[BioStar]\n각 Door의 Relay는 Master와 Slave의 Relay를 모두 설정해봄\n\n*Relay로 설정된 장치 재부팅 시 Exit 버튼까지 접지된 상태면 unlock 유지",
-      "1. Master 재부팅 후 장치의 상태는 Close 상태이므로 Lock된 상태로 동작함.\n2. Master 재부팅 후 인증성공시 Locked/Unlocked 정상동작되어야 한다."
-    ],
-    [
-      9,
-      "1. RS485로 장치 연결 > Door > Add Door\n장치 연결 : 장치-장치, 장치-SIO2\nDoor 설정\n(!) A Door : 장치(M)-장치(S)                     \n(!) B Door : 장치(M)-SIO2(S)\n \n2. BioStar>Monitoring>Door Status>Door 선택>Manual Unlock>Unlock 동작 확인\n3. Master 장치 Reboot\n4. 각 Door의 장치에 인증시도",
-      "[BioStar]",
-      "1. Reboot 후 Unlock상태를 유지한다.\n2. 인증후에도 Open Time을 따라가지 않고, Unlock상태를 유지해야 한다."
-    ],
-    [
-      10,
-      "(*) DM20이용 출입문 4개 제어_1\n\n<Pre-Conditions>\n\nMaster Device, Slave(DM20 1대/Device 2대), Wiegand Reader 2대\n\n1. Master 장치와 Slave 장치, DM20을 RS485로 연결\n\n2. DM20에 Wiegand Reader 2대 연결\n\n3. Wiegand Reader 0,1 에 대해 DM20의 Input/Relay Port를 이용해 Door를 각각 구성\n\n4. Slave 장치 2대에 대해 DM20의 Input/Relay Port를 이용해 Door를 각각 구성\n\n5. 인증을 통해 Door 제어가 정상적으로 동작하는지 확인",
-      "",
-      "1. 인증성공시 Unlocked/Locked으로 동작된다."
-    ],
-    [
-      11,
-      "(*) DM20이용 출입문 4개 제어_2\n\n<Pre-Conditions>\n\nMaster Device, Slave(DM20 2대), Wiegand Reader 4대\n\n1. Master 장치와 DM20 2대를 RS485로 연결\n\n2. 각각의 DM20에 Wiegand Reader 2대씩 연결\n\n3. 각각의 Wiegand Reader 에 대해 DM20의 Input/Relay Port를 이용해 Door를 각각 구성\n\n4. 인증을 통해 Door 제어가 정상적으로 동작하는지 확인",
-      "",
-      "1. 인증성공시 Unlocked/Locked으로 동작된다."
-    ],
-    [
-      12,
-      "(*) DM20이용 출입문 2개 제어_1\n\n<Pre-Conditions>\n\nMaster Device, DM20 1대, Wiegand Reader 2대\n\n1. Master 장치와 DM20을 RS485로 연결\n\n2. DM20에 Wiegand Reader 2대 연결\n\n3. Wiegand Reader 0,1에 대해 DM20의 Input/Relay Port를 이용해 Door를 각각 구성\n\n4. 인증을 통해 Door 제어가 정상적으로 동작하는지 확인",
-      "",
-      "1. 인증성공시 Unlocked/Locked으로 동작된다."
-    ],
-    [
-      13,
-      "(*) DM20이용 출입문 2개 제어_2\n\n<Pre-Conditions>\n\nMaster Device, DM20 1대, Slave Device, Wiegand Reader 2대\n\n1. Master 장치와 Slave 장치, DM20을 RS485로 연결\n\n2. DM20에 Wiegand Reader 2대 연결\n\n3. Wiegand Reader 0에 대해 DM20의 Input/Relay Port를 이용해 Door 구성\n\n4. Wiegand Reader 1과 Slave 장치에 대해 DM20의 Input/Relay Port를 이용해 Door 구성\n\n5. 인증을 통해 Door 제어가 정상적으로 동작하는지 확인",
-      "",
-      "1. 인증성공시 Unlocked/Locked으로 동작된다."
-    ],
-    [
-      14,
-      "(*) DM20이용 출입문 2개 제어_APB\n\n<Pre-Conditions>\n\nMaster Device, Slave(DM20 1대/Device 2대), Wiegand Reader 2대\n\n1. Master 장치와 DM20, Slave 장치 2대를 RS485로 연결\n\n2. DM20에 Wiegand Reader 2대씩 연결\n\n3. Wiegand Reader 0과 Slave 장치에 대해 DM20의 Input/Relay Port를 이용해 Door를 각각 구성\n\n4. Wiegand Reader 1과 Slave 장치에 대해 DM20의 Input/Relay Port를 이용해 Door를 각각 구성\n\n5. APB 설정\n\n6. 동일 Reader에 반복인증을 했을 경우 동작확인\n",
-      "",
-      "1. APB 위반으로 동작되어야 한다.\n> Door 내 Entry/Exit Device 중 한쪽에만 사용자가 2번 인증을 한 경우 APB 위반 발생"
-    ],
-    [
-      15,
-      "1. Door > Add Door > Door Relay 설정 > Apply",
-      "[BioStar]\n1. Master\n2. Slave(SIO2, DM20 포함)\n\nOM-120 Relay 사용 가능\n> Floor 중복 안 된 경우",
-      "1. Door Relay가 설정된다\n2. 출입권한을 가진 사용자가 인증하면 설정된 출입문 Relay가 열리고,'출입문 잠금장치 개방간격'이 경과한 후에 Relay가 닫힌다.\n3. 출입문 열림/닫힘 로그가 저장된다.\n> Door unlocked, Door locked\n4. Scope를 이용하여 설정한 값으로 동작이 되는 지 확인할 수 있어야 한다.\n(/) 측정 : RND 개발 검증 결과로 대체\n\n※ Relay에 대한 동작 확인: Scope, LED 유지 시간(경광등 포함)"
-    ],
-    [
-      16,
-      "1. Door 추가\n2. Relay로 설정된 장치 Disconnected\n3. Door 설정이면서 연결된 장치에 인증\n4. Disconnected된 장치에 대해 Connected\n5. Relay 동작 유무확인",
-      "Entry/Exit Device\n> Slave\n\nRelay\n> IO Device\n> Slave Device",
-      "1. Relay로 설정된 장치가 Disconnected인 경우 인증성공으로는 동작하지만 Relay는 동작하지 않는다.\n2. Disconnected된 장치가 연결된 후에도 Relay가 동작되지 않아야 한다.(이전의 인증성공에 대한 동작에 대해 무시해야 함)"
-    ],
-    [
-      17,
-      "[APB : Use]\n 1. APB 위반을 발생\n 2. Reset Time 이내 Master 장치를 Reboot",
-      "Soft APB\nHard APB",
-      "1.Reset Time 이내 장치가 재부팅 되는 경우 APB 유지\n 2. APB 이전 설정 유지 확인"
-    ],
-    [
-      18,
-      "[APB : Use]\n1. APB 위반을 발생\n2. Reset Time 이후 Master 장치를 Reboot",
-      "Soft APB\nHard APB",
-      "1. Reset Time 이후 장치가 재부팅되는 경우 모든 APB 정보가 리셋되어야 한다.\n : Alarm 해제\n : APB 위반 해제\n 2. APB 이전 설정 유지 확인"
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-40",
-    "description": "",
-    "test_step": [
-      "1. Door > Add Door > Entry Device 설정",
-      "1. Door > Add Door > Exit Device 설정",
-      "1. Door > Add Door > Door Relay 설정 > Apply\n2. 각 Reader에 인증시도",
-      "1. Door > Add Door > Exit Button 설정 > Apply \n",
-      "1. Door > Add Door > Exit Button 설정 > Apply \n2. Exit Button input 접지\n3. Biostar2 Log 확인",
-      "1. Door > Add Door > Door Sensor 설정 > Apply\n2. Input 접지/접지해제",
-      "1. Door > Add Door > Apply > 장치 재부팅 후 BioStar에 재 연결 > Door 설정 확인",
-      "1. RS485로 장치 연결 > Door > Add Door\n장치 연결 : 장치-장치, 장치-SIO2, 장치-OM-120, 장치-DM-20 Door 설정\n(!) A Door : 장치(M)-장치(S)                     \n(!) B Door : 장치(M)-SIO2(S)\n(!) C Door : 장치(M)-OM-120(S)\n(!) D Door : 장치(M)-DM-20(S)\n\n2. Door Open(인증을 통해 Unlocked 한 후 Door Sensor 접지를 통해 Open 상태로 만듦)\n3. Master 장치 Reboot 후 Door Sensor 접지 해제\n4. 각 Door의 장치에 인증시도",
-      "1. RS485로 장치 연결 > Door > Add Door\n장치 연결 : 장치-장치, 장치-SIO2\nDoor 설정\n(!) A Door : 장치(M)-장치(S)                     \n(!) B Door : 장치(M)-SIO2(S)\n \n2. BioStar>Monitoring>Door Status>Door 선택>Manual Unlock>Unlock 동작 확인\n3. Master 장치 Reboot\n4. 각 Door의 장치에 인증시도",
-      "(*) DM20이용 출입문 4개 제어_1\n\n<Pre-Conditions>\n\nMaster Device, Slave(DM20 1대/Device 2대), Wiegand Reader 2대\n\n1. Master 장치와 Slave 장치, DM20을 RS485로 연결\n\n2. DM20에 Wiegand Reader 2대 연결\n\n3. Wiegand Reader 0,1 에 대해 DM20의 Input/Relay Port를 이용해 Door를 각각 구성\n\n4. Slave 장치 2대에 대해 DM20의 Input/Relay Port를 이용해 Door를 각각 구성\n\n5. 인증을 통해 Door 제어가 정상적으로 동작하는지 확인",
-      "(*) DM20이용 출입문 4개 제어_2\n\n<Pre-Conditions>\n\nMaster Device, Slave(DM20 2대), Wiegand Reader 4대\n\n1. Master 장치와 DM20 2대를 RS485로 연결\n\n2. 각각의 DM20에 Wiegand Reader 2대씩 연결\n\n3. 각각의 Wiegand Reader 에 대해 DM20의 Input/Relay Port를 이용해 Door를 각각 구성\n\n4. 인증을 통해 Door 제어가 정상적으로 동작하는지 확인",
-      "(*) DM20이용 출입문 2개 제어_1\n\n<Pre-Conditions>\n\nMaster Device, DM20 1대, Wiegand Reader 2대\n\n1. Master 장치와 DM20을 RS485로 연결\n\n2. DM20에 Wiegand Reader 2대 연결\n\n3. Wiegand Reader 0,1에 대해 DM20의 Input/Relay Port를 이용해 Door를 각각 구성\n\n4. 인증을 통해 Door 제어가 정상적으로 동작하는지 확인",
-      "(*) DM20이용 출입문 2개 제어_2\n\n<Pre-Conditions>\n\nMaster Device, DM20 1대, Slave Device, Wiegand Reader 2대\n\n1. Master 장치와 Slave 장치, DM20을 RS485로 연결\n\n2. DM20에 Wiegand Reader 2대 연결\n\n3. Wiegand Reader 0에 대해 DM20의 Input/Relay Port를 이용해 Door 구성\n\n4. Wiegand Reader 1과 Slave 장치에 대해 DM20의 Input/Relay Port를 이용해 Door 구성\n\n5. 인증을 통해 Door 제어가 정상적으로 동작하는지 확인",
-      "(*) DM20이용 출입문 2개 제어_APB\n\n<Pre-Conditions>\n\nMaster Device, Slave(DM20 1대/Device 2대), Wiegand Reader 2대\n\n1. Master 장치와 DM20, Slave 장치 2대를 RS485로 연결\n\n2. DM20에 Wiegand Reader 2대씩 연결\n\n3. Wiegand Reader 0과 Slave 장치에 대해 DM20의 Input/Relay Port를 이용해 Door를 각각 구성\n\n4. Wiegand Reader 1과 Slave 장치에 대해 DM20의 Input/Relay Port를 이용해 Door를 각각 구성\n\n5. APB 설정\n\n6. 동일 Reader에 반복인증을 했을 경우 동작확인\n",
-      "1. Door > Add Door > Door Relay 설정 > Apply",
-      "1. Door 추가\n2. Relay로 설정된 장치 Disconnected\n3. Door 설정이면서 연결된 장치에 인증\n4. Disconnected된 장치에 대해 Connected\n5. Relay 동작 유무확인",
-      "[APB : Use]\n 1. APB 위반을 발생\n 2. Reset Time 이내 Master 장치를 Reboot",
-      "[APB : Use]\n1. APB 위반을 발생\n2. Reset Time 이후 Master 장치를 Reboot"
-    ],
-    "data": [
-      "[BioStar]\n1. Master\n2. Slave\n3. Wiegand Reader\n",
-      "[BioStar]\n1. Master\n2. Slave\n3. Wiegand Reader",
-      "[BioStar]\n1. Master\n2. Slave(SIO2, DM20 포함)\n\nOM-120 Relay 사용 가능\n> Floor 중복 안 된 경우",
-      "[BioStar]\n1. Master\n2. Slave(SIO2, DM20 포함)",
-      "[BDP-518]\nDoor > Exit Button > Input port 설정한 포트에 맞게 접지(ex 0번/1번 포트 선+GRD 선)",
-      "[BioStar]\n1. Master\n2. Slave(SIO2, DM20 포함)",
-      "[BioStar]",
-      "[BioStar]\n각 Door의 Relay는 Master와 Slave의 Relay를 모두 설정해봄\n\n*Relay로 설정된 장치 재부팅 시 Exit 버튼까지 접지된 상태면 unlock 유지",
-      "[BioStar]",
-      "[BioStar]\n1. Master\n2. Slave(SIO2, DM20 포함)\n\nOM-120 Relay 사용 가능\n> Floor 중복 안 된 경우",
-      "Entry/Exit Device\n> Slave\n\nRelay\n> IO Device\n> Slave Device",
-      "Soft APB\nHard APB",
-      "Soft APB\nHard APB"
-    ],
-    "expected_result": [
-      "Entry Device가 설정된다.",
-      "Exit Device가 설정된다.",
-      "1. Door Relay가 설정된다\n2. 출입권한을 가진 사용자가 인증하면 설정된 출입문 Relay가 열리고,'출입문 잠금장치 개방간격'이 경과한 후에 Relay가 닫힌다.\n3. 출입문 열림/닫힘 로그가 저장된다.\n> Door unlocked, Door locked",
-      "1. Exit 버튼으로 사용할 입력포트를 설정할 수 있다.\n2. WiegandReader는 설정불가(Master/Slave만 설정 가능)\n3. 입력방식을 N/O, N/C로 설정할 수 있다.\n4. Exit Button 을 이용한 relay 동작 ON/OFF 를 설정 할 수 있다. \n5. 접지시 Relay가 열리고 Open Time이 경과한 후 Relay가 닫힌다.\n> Does not activate realy : OFF\n6. 출입문 열림/닫힘 로그가 저장된다.\n> Door unlocked, Door locked\n",
-      "1. Exit 버튼 입력에 대한 로그가 저장된다.\n> 국문: 퇴실버튼에 의한 출입문 개방 요청\n> 영문: Door open request by exit button",
-      "1. Door Sensor가 설정된다.\n2. 출입문이 열리고 닫히면서 출입문 열림/닫힘로 로그 저장된다.\n> Door opened / Door closed",
-      "1. 재부팅후에도 출입문 설정값은 유지가 된다.",
-      "1. Master 재부팅 후 장치의 상태는 Close 상태이므로 Lock된 상태로 동작함.\n2. Master 재부팅 후 인증성공시 Locked/Unlocked 정상동작되어야 한다.",
-      "1. Reboot 후 Unlock상태를 유지한다.\n2. 인증후에도 Open Time을 따라가지 않고, Unlock상태를 유지해야 한다.",
-      "1. 인증성공시 Unlocked/Locked으로 동작된다.",
-      "1. 인증성공시 Unlocked/Locked으로 동작된다.",
-      "1. 인증성공시 Unlocked/Locked으로 동작된다.",
-      "1. 인증성공시 Unlocked/Locked으로 동작된다.",
-      "1. APB 위반으로 동작되어야 한다.\n> Door 내 Entry/Exit Device 중 한쪽에만 사용자가 2번 인증을 한 경우 APB 위반 발생",
-      "1. Door Relay가 설정된다\n2. 출입권한을 가진 사용자가 인증하면 설정된 출입문 Relay가 열리고,'출입문 잠금장치 개방간격'이 경과한 후에 Relay가 닫힌다.\n3. 출입문 열림/닫힘 로그가 저장된다.\n> Door unlocked, Door locked\n4. Scope를 이용하여 설정한 값으로 동작이 되는 지 확인할 수 있어야 한다.\n(/) 측정 : RND 개발 검증 결과로 대체\n\n※ Relay에 대한 동작 확인: Scope, LED 유지 시간(경광등 포함)",
-      "1. Relay로 설정된 장치가 Disconnected인 경우 인증성공으로는 동작하지만 Relay는 동작하지 않는다.\n2. Disconnected된 장치가 연결된 후에도 Relay가 동작되지 않아야 한다.(이전의 인증성공에 대한 동작에 대해 무시해야 함)",
-      "1.Reset Time 이내 장치가 재부팅 되는 경우 APB 유지\n 2. APB 이전 설정 유지 확인",
-      "1. Reset Time 이후 장치가 재부팅되는 경우 모든 APB 정보가 리셋되어야 한다.\n : Alarm 해제\n : APB 위반 해제\n 2. APB 이전 설정 유지 확인"
-    ]
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 12498,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 35107,
+              "latestFinalId": 34673
+            },
+            {
+              "environment": "ES1",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29811,
+              "latestFinalId": 29811
+            },
+            {
+              "environment": "BioStarV2.9.6.30",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29811,
+              "latestFinalId": 29811
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_170117(UnitTest)",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 5651,
+              "latestFinalId": 5651
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_190805_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15230,
+              "latestFinalId": 15230
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.2.8_20160603",
+          "statusResults": [
+            {
+              "latest": 2,
+              "latestFinal": 2,
+              "latestId": 1731,
+              "latestFinalId": 1731
+            }
+          ]
+        },
+        {
+          "group": "FL_V1.0_190515(PS)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 14143,
+              "latestFinalId": 14143
+            }
+          ]
+        },
+        {
+          "group": "V1.7.1_181204(Hotfix)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12662,
+              "latestFinalId": 12662
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_181210_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 12772,
+              "latestFinalId": 12772
+            }
+          ]
+        },
+        {
+          "group": "V1.1.5_4_151014(All)",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 51,
+              "latestFinalId": 51
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0 170331",
+          "statusResults": [
+            {
+              "latest": 1,
+              "latestFinal": 0,
+              "latestId": 8633,
+              "latestFinalId": 6362
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_181119_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 12943,
+              "latestFinalId": 12943
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_190809_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 15591,
+              "latestFinalId": 15591
+            }
+          ]
+        },
+        {
+          "group": "V1.8.0_190806_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15318,
+              "latestFinalId": 15318
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180322",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10142,
+              "latestFinalId": 10142
+            }
+          ]
+        },
+        {
+          "group": "V1.7.0_190806_Interaction 7차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15097,
+              "latestFinalId": 15097
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.1.5_5 - 20151016(All)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 5212,
+              "latestFinalId": 5212
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_190806_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15436,
+              "latestFinalId": 15436
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_20200601_Interaction 12차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 17168,
+              "latestFinalId": 17168
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "출입문 - 설정",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 469,
+          "index": 1,
+          "step": "1. Door > Add Door > Entry Device 설정",
+          "data": "[BioStar]\n1. Master\n2. Slave\n3. Wiegand Reader\n",
+          "result": "Entry Device가 설정된다.",
+          "attachments": []
+        },
+        {
+          "id": 470,
+          "index": 2,
+          "step": "1. Door > Add Door > Exit Device 설정",
+          "data": "[BioStar]\n1. Master\n2. Slave\n3. Wiegand Reader",
+          "result": "Exit Device가 설정된다.",
+          "attachments": []
+        },
+        {
+          "id": 471,
+          "index": 3,
+          "step": "1. Door > Add Door > Door Relay 설정 > Apply\n2. 각 Reader에 인증시도",
+          "data": "[BioStar]\n1. Master\n2. Slave(SIO2, DM20 포함)\n\nOM-120 Relay 사용 가능\n> Floor 중복 안 된 경우",
+          "result": "1. Door Relay가 설정된다\n2. 출입권한을 가진 사용자가 인증하면 설정된 출입문 Relay가 열리고,'출입문 잠금장치 개방간격'이 경과한 후에 Relay가 닫힌다.\n3. 출입문 열림/닫힘 로그가 저장된다.\n> Door unlocked, Door locked",
+          "attachments": []
+        },
+        {
+          "id": 472,
+          "index": 4,
+          "step": "1. Door > Add Door > Exit Button 설정 > Apply \n",
+          "data": "[BioStar]\n1. Master\n2. Slave(SIO2, DM20 포함)",
+          "result": "1. Exit 버튼으로 사용할 입력포트를 설정할 수 있다.\n2. WiegandReader는 설정불가(Master/Slave만 설정 가능)\n3. 입력방식을 N/O, N/C로 설정할 수 있다.\n4. Exit Button 을 이용한 relay 동작 ON/OFF 를 설정 할 수 있다. \n5. 접지시 Relay가 열리고 Open Time이 경과한 후 Relay가 닫힌다.\n> Does not activate realy : OFF\n6. 출입문 열림/닫힘 로그가 저장된다.\n> Door unlocked, Door locked\n",
+          "attachments": []
+        },
+        {
+          "id": 14395,
+          "index": 5,
+          "step": "1. Door > Add Door > Exit Button 설정 > Apply \n2. Exit Button input 접지\n3. Biostar2 Log 확인",
+          "data": "[BDP-518]\nDoor > Exit Button > Input port 설정한 포트에 맞게 접지(ex 0번/1번 포트 선+GRD 선)",
+          "result": "1. Exit 버튼 입력에 대한 로그가 저장된다.\n> 국문: 퇴실버튼에 의한 출입문 개방 요청\n> 영문: Door open request by exit button",
+          "attachments": []
+        },
+        {
+          "id": 473,
+          "index": 6,
+          "step": "1. Door > Add Door > Door Sensor 설정 > Apply\n2. Input 접지/접지해제",
+          "data": "[BioStar]\n1. Master\n2. Slave(SIO2, DM20 포함)",
+          "result": "1. Door Sensor가 설정된다.\n2. 출입문이 열리고 닫히면서 출입문 열림/닫힘로 로그 저장된다.\n> Door opened / Door closed",
+          "attachments": []
+        },
+        {
+          "id": 506,
+          "index": 7,
+          "step": "1. Door > Add Door > Apply > 장치 재부팅 후 BioStar에 재 연결 > Door 설정 확인",
+          "data": "[BioStar]",
+          "result": "1. 재부팅후에도 출입문 설정값은 유지가 된다.",
+          "attachments": []
+        },
+        {
+          "id": 507,
+          "index": 8,
+          "step": "1. RS485로 장치 연결 > Door > Add Door\n장치 연결 : 장치-장치, 장치-SIO2, 장치-OM-120, 장치-DM-20 Door 설정\n(!) A Door : 장치(M)-장치(S)                     \n(!) B Door : 장치(M)-SIO2(S)\n(!) C Door : 장치(M)-OM-120(S)\n(!) D Door : 장치(M)-DM-20(S)\n\n2. Door Open(인증을 통해 Unlocked 한 후 Door Sensor 접지를 통해 Open 상태로 만듦)\n3. Master 장치 Reboot 후 Door Sensor 접지 해제\n4. 각 Door의 장치에 인증시도",
+          "data": "[BioStar]\n각 Door의 Relay는 Master와 Slave의 Relay를 모두 설정해봄\n\n*Relay로 설정된 장치 재부팅 시 Exit 버튼까지 접지된 상태면 unlock 유지",
+          "result": "1. Master 재부팅 후 장치의 상태는 Close 상태이므로 Lock된 상태로 동작함.\n2. Master 재부팅 후 인증성공시 Locked/Unlocked 정상동작되어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 508,
+          "index": 9,
+          "step": "1. RS485로 장치 연결 > Door > Add Door\n장치 연결 : 장치-장치, 장치-SIO2\nDoor 설정\n(!) A Door : 장치(M)-장치(S)                     \n(!) B Door : 장치(M)-SIO2(S)\n \n2. BioStar>Monitoring>Door Status>Door 선택>Manual Unlock>Unlock 동작 확인\n3. Master 장치 Reboot\n4. 각 Door의 장치에 인증시도",
+          "data": "[BioStar]",
+          "result": "1. Reboot 후 Unlock상태를 유지한다.\n2. 인증후에도 Open Time을 따라가지 않고, Unlock상태를 유지해야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 574,
+          "index": 10,
+          "step": "(*) DM20이용 출입문 4개 제어_1\n\n<Pre-Conditions>\n\nMaster Device, Slave(DM20 1대/Device 2대), Wiegand Reader 2대\n\n1. Master 장치와 Slave 장치, DM20을 RS485로 연결\n\n2. DM20에 Wiegand Reader 2대 연결\n\n3. Wiegand Reader 0,1 에 대해 DM20의 Input/Relay Port를 이용해 Door를 각각 구성\n\n4. Slave 장치 2대에 대해 DM20의 Input/Relay Port를 이용해 Door를 각각 구성\n\n5. 인증을 통해 Door 제어가 정상적으로 동작하는지 확인",
+          "data": "",
+          "result": "1. 인증성공시 Unlocked/Locked으로 동작된다.",
+          "attachments": []
+        },
+        {
+          "id": 575,
+          "index": 11,
+          "step": "(*) DM20이용 출입문 4개 제어_2\n\n<Pre-Conditions>\n\nMaster Device, Slave(DM20 2대), Wiegand Reader 4대\n\n1. Master 장치와 DM20 2대를 RS485로 연결\n\n2. 각각의 DM20에 Wiegand Reader 2대씩 연결\n\n3. 각각의 Wiegand Reader 에 대해 DM20의 Input/Relay Port를 이용해 Door를 각각 구성\n\n4. 인증을 통해 Door 제어가 정상적으로 동작하는지 확인",
+          "data": "",
+          "result": "1. 인증성공시 Unlocked/Locked으로 동작된다.",
+          "attachments": []
+        },
+        {
+          "id": 576,
+          "index": 12,
+          "step": "(*) DM20이용 출입문 2개 제어_1\n\n<Pre-Conditions>\n\nMaster Device, DM20 1대, Wiegand Reader 2대\n\n1. Master 장치와 DM20을 RS485로 연결\n\n2. DM20에 Wiegand Reader 2대 연결\n\n3. Wiegand Reader 0,1에 대해 DM20의 Input/Relay Port를 이용해 Door를 각각 구성\n\n4. 인증을 통해 Door 제어가 정상적으로 동작하는지 확인",
+          "data": "",
+          "result": "1. 인증성공시 Unlocked/Locked으로 동작된다.",
+          "attachments": []
+        },
+        {
+          "id": 577,
+          "index": 13,
+          "step": "(*) DM20이용 출입문 2개 제어_2\n\n<Pre-Conditions>\n\nMaster Device, DM20 1대, Slave Device, Wiegand Reader 2대\n\n1. Master 장치와 Slave 장치, DM20을 RS485로 연결\n\n2. DM20에 Wiegand Reader 2대 연결\n\n3. Wiegand Reader 0에 대해 DM20의 Input/Relay Port를 이용해 Door 구성\n\n4. Wiegand Reader 1과 Slave 장치에 대해 DM20의 Input/Relay Port를 이용해 Door 구성\n\n5. 인증을 통해 Door 제어가 정상적으로 동작하는지 확인",
+          "data": "",
+          "result": "1. 인증성공시 Unlocked/Locked으로 동작된다.",
+          "attachments": []
+        },
+        {
+          "id": 578,
+          "index": 14,
+          "step": "(*) DM20이용 출입문 2개 제어_APB\n\n<Pre-Conditions>\n\nMaster Device, Slave(DM20 1대/Device 2대), Wiegand Reader 2대\n\n1. Master 장치와 DM20, Slave 장치 2대를 RS485로 연결\n\n2. DM20에 Wiegand Reader 2대씩 연결\n\n3. Wiegand Reader 0과 Slave 장치에 대해 DM20의 Input/Relay Port를 이용해 Door를 각각 구성\n\n4. Wiegand Reader 1과 Slave 장치에 대해 DM20의 Input/Relay Port를 이용해 Door를 각각 구성\n\n5. APB 설정\n\n6. 동일 Reader에 반복인증을 했을 경우 동작확인\n",
+          "data": "",
+          "result": "1. APB 위반으로 동작되어야 한다.\n> Door 내 Entry/Exit Device 중 한쪽에만 사용자가 2번 인증을 한 경우 APB 위반 발생",
+          "attachments": []
+        },
+        {
+          "id": 5536,
+          "index": 15,
+          "step": "1. Door > Add Door > Door Relay 설정 > Apply",
+          "data": "[BioStar]\n1. Master\n2. Slave(SIO2, DM20 포함)\n\nOM-120 Relay 사용 가능\n> Floor 중복 안 된 경우",
+          "result": "1. Door Relay가 설정된다\n2. 출입권한을 가진 사용자가 인증하면 설정된 출입문 Relay가 열리고,'출입문 잠금장치 개방간격'이 경과한 후에 Relay가 닫힌다.\n3. 출입문 열림/닫힘 로그가 저장된다.\n> Door unlocked, Door locked\n4. Scope를 이용하여 설정한 값으로 동작이 되는 지 확인할 수 있어야 한다.\n(/) 측정 : RND 개발 검증 결과로 대체\n\n※ Relay에 대한 동작 확인: Scope, LED 유지 시간(경광등 포함)",
+          "attachments": []
+        },
+        {
+          "id": 5828,
+          "index": 16,
+          "step": "1. Door 추가\n2. Relay로 설정된 장치 Disconnected\n3. Door 설정이면서 연결된 장치에 인증\n4. Disconnected된 장치에 대해 Connected\n5. Relay 동작 유무확인",
+          "data": "Entry/Exit Device\n> Slave\n\nRelay\n> IO Device\n> Slave Device",
+          "result": "1. Relay로 설정된 장치가 Disconnected인 경우 인증성공으로는 동작하지만 Relay는 동작하지 않는다.\n2. Disconnected된 장치가 연결된 후에도 Relay가 동작되지 않아야 한다.(이전의 인증성공에 대한 동작에 대해 무시해야 함)",
+          "attachments": []
+        },
+        {
+          "id": 18902,
+          "index": 17,
+          "step": "[APB : Use]\n 1. APB 위반을 발생\n 2. Reset Time 이내 Master 장치를 Reboot",
+          "data": "Soft APB\nHard APB",
+          "result": "1.Reset Time 이내 장치가 재부팅 되는 경우 APB 유지\n 2. APB 이전 설정 유지 확인",
+          "attachments": []
+        },
+        {
+          "id": 18903,
+          "index": 18,
+          "step": "[APB : Use]\n1. APB 위반을 발생\n2. Reset Time 이후 Master 장치를 Reboot",
+          "data": "Soft APB\nHard APB",
+          "result": "1. Reset Time 이후 장치가 재부팅되는 경우 모든 APB 정보가 리셋되어야 한다.\n : Alarm 해제\n : APB 위반 해제\n 2. APB 이전 설정 유지 확인",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12498/comment/21890",
+          "id": "21890",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=scko",
+            "name": "scko",
+            "key": "scko",
+            "emailAddress": "scko@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "고승찬",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "1, 2는 EntryDevice, ExitDevice가 Door가 Device에 저장이 되는 부분을 테스트하기 위함이기 때문에, Slave와 Wiegand의 ID을 넣어주는 것에 불가하기 때문에, 값 전달 테스트만 행한다.",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=scko",
+            "name": "scko",
+            "key": "scko",
+            "emailAddress": "scko@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "고승찬",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-10-07T01:27:35.000+0900",
+          "updated": "2015-10-07T01:27:35.000+0900"
+        },
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12498/comment/21891",
+          "id": "21891",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=scko",
+            "name": "scko",
+            "key": "scko",
+            "emailAddress": "scko@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "고승찬",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "4는 출입문-옵션에서 테스트를 한 부분으로 중복테스임으로 PASS한다.",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=scko",
+            "name": "scko",
+            "key": "scko",
+            "emailAddress": "scko@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "고승찬",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-10-07T01:28:27.000+0900",
+          "updated": "2015-10-07T01:38:05.000+0900"
+        },
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12498/comment/22635",
+          "id": "22635",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=scko",
+            "name": "scko",
+            "key": "scko",
+            "emailAddress": "scko@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "고승찬",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "3, 4번 항목은 출입문 Lock/UnLock 인 듯 싶습니다.",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=scko",
+            "name": "scko",
+            "key": "scko",
+            "emailAddress": "scko@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "고승찬",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-10-18T22:59:40.000+0900",
+          "updated": "2015-10-18T23:11:35.000+0900"
+        },
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12498/comment/22636",
+          "id": "22636",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=scko",
+            "name": "scko",
+            "key": "scko",
+            "emailAddress": "scko@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "고승찬",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "10 ~ 13 항목에서는 Held Open/Forced Open에 대한 설정이 없습니다.\r\n그리고, 그 항목에 대한 언급은 Alarm 항목으로 하는 것이 낫을 듯 싶습니다.\r\n그런 것이 아니라면, Held Open/Forced Open 설정을 해주세요.",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=scko",
+            "name": "scko",
+            "key": "scko",
+            "emailAddress": "scko@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "고승찬",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-10-18T23:43:54.000+0900",
+          "updated": "2015-10-18T23:43:54.000+0900"
+        },
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12498/comment/22637",
+          "id": "22637",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=scko",
+            "name": "scko",
+            "key": "scko",
+            "emailAddress": "scko@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "고승찬",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "14항목 APB 동작이라는것을 어떻게 알수 있을까요? 설명이 필요할 듯 보입니다.",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=scko",
+            "name": "scko",
+            "key": "scko",
+            "emailAddress": "scko@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "고승찬",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-10-18T23:46:03.000+0900",
+          "updated": "2015-10-18T23:46:03.000+0900"
+        },
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12498/comment/22949",
+          "id": "22949",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=scko",
+            "name": "scko",
+            "key": "scko",
+            "emailAddress": "scko@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "고승찬",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "8번 항목을 설명이 더 필요합니다. \r\n- [2. Door Open(인증을 통해 Unlocked 한 후 Door Sensor 접지를 통해 Open 상태로 만듦)] 에서 인증/Door Sensor는 Master와 Slave 중 어느 장치에 해야 하는건가요?\r\n- [3. Master 장치 Reboot 후 Door Sensor 접지 해제]에서 Door Sensor 해제는 Master/Slave에서 어느 장치에 해야 하는건가요?\r\n- [4. 각 Door의 장치에 인증시도] 에서 인증은 Master/Slave 어디 장치에 해야 하는건가요?",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=scko",
+            "name": "scko",
+            "key": "scko",
+            "emailAddress": "scko@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "고승찬",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-10-22T00:59:37.000+0900",
+          "updated": "2015-10-22T00:59:56.000+0900"
+        }
+      ],
+      "maxResults": 6,
+      "total": 6,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+      "name": "Minor (C)",
+      "id": "3"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+      "name": "완료",
+      "id": "10001",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "완료"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EC%A1%B0%EC%9E%84%EC%84%B1",
+      "name": "조임성",
+      "key": "조임성",
+      "emailAddress": "isjo@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607"
+      },
+      "displayName": "조임성",
+      "active": false,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzrxpr:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2015-08-19T08:25:55.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

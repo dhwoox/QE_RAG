@@ -1,167 +1,3412 @@
 {
-  "id": "COMMONR-19",
-  "content": [
-    [
-      1,
-      "FirmWare Upgrade을 지원한다.\n1. DEVICE> Device List> Device 선택> FirmWare Upgrade[기능 버튼 내에서 선택]\n2. DEVICE> Device 선택> Device 상세 정보 화면> FirmWare Upgrade",
-      "[BioStar]\n1. Device 선택\n > TCP로 연결된 Device 1개\n > TCP로 연결된 동일 Device 2개 이상\n2. 각 장치별 최신 버전의 FirmWare을 선택한다.\n||Entry 계열||Station 계열||IO Module 계열||\n|BEPx|BioStation 2|DM 20|\n|BEWx|BioStation A2|SIO 2|\n|BLx|BioStation L2|OM 120|\n|XPx|FaceStation 2|\n|XPS2M|CoreStation 40|\n|W2|BoiLite N2|\n|P2|FaceLite|\n|R2|\n|XP2|",
-      "1. 각 장치별 최신 FirmWare List가 팝업된다.\n2. 해당 FirmWare로 Upgrade를 진행한다.\n3. 최신버전으로 FirmWare Upgrade가 된다.\n> 장치에서 재부팅 팝업 확인\n> 장치 재부팅 후 업그레이드 완료시 장치 상세정보의 Version 확인\n> Upgrade Log 확인"
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "11924",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/11924",
+  "key": "COMMONR-19",
+  "fields": {
+    "resolution": null,
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "0.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": null,
+    "customfield_10185": null,
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "10326",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10326",
+        "type": {
+          "id": "10001",
+          "name": "Cloners",
+          "inward": "is cloned by",
+          "outward": "clones",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10001"
+        },
+        "inwardIssue": {
+          "id": "12800",
+          "key": "COMMONR-74",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12800",
+          "fields": {
+            "summary": "Upgrade - RS 485",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "Represents a Test",
+              "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+              "name": "Test",
+              "subtask": false
+            }
+          }
+        }
+      },
+      {
+        "id": "39747",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/39747",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "50022",
+          "key": "DFW-802",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/50022",
+          "fields": {
+            "summary": "USB 로 custom된 Resource Upgrade 시 upgrade 실패.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "39749",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/39749",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "50023",
+          "key": "DFW-803",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/50023",
+          "fields": {
+            "summary": "USB로 Resource Upgrade 시 변경된 string 으로 적용되지 않음. ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "35166",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/35166",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "45779",
+          "key": "BLNIIFW-936",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/45779",
+          "fields": {
+            "summary": "N2(M)-L2(S) 연결 상태에서 L2 slave 장치 FW upgrade 시 업그레이드 실패 및 N2 장치 재부팅",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13091",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13091",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18019",
+          "key": "ENTRYIIDII-381",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18019",
+          "fields": {
+            "summary": "[RS 485 신뢰성] V2.3_Slave[Entry] 장치에 Card Read 시 Slave 장치의 LED가 Red를 유지하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/5",
+              "description": "해결책이 제시되었고 보고자의 확인을 기다리는 중입니다. 지금부터는 이슈를 다시 열거나 이슈를 닫을 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/resolved.png",
+              "name": "해결됨",
+              "id": "5",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "36700",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/36700",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "47219",
+          "key": "CSTFW-742",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/47219",
+          "fields": {
+            "summary": "XS2 slave 장치 Update Resource Fail.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "56728",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/56728",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "65845",
+          "key": "FSTIIFW-2045",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/65845",
+          "fields": {
+            "summary": "[고객용 FW]USB Cable 이용하여 접속이 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "33792",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/33792",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "44086",
+          "key": "ONYXFW-402",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/44086",
+          "fields": {
+            "summary": "고객용 FW에서 Diag log가 출력되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "40050",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/40050",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "50296",
+          "key": "XPASSII-361",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/50296",
+          "fields": {
+            "summary": "이전 정규버전에서 V1.3.0으로 Upgrade 시 config 초기화되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "18718",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/18718",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "24319",
+          "key": "BLNIIFW-132",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/24319",
+          "fields": {
+            "summary": "[FirmWare Upgrade] Upgrade 오류",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14224",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14224",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18402",
+          "key": "BSIIDII-382",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18402",
+          "fields": {
+            "summary": "Slave 업그레이드가 실패하는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "32301",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/32301",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "42410",
+          "key": "TIIDFI-2583",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/42410",
+          "fields": {
+            "summary": " Slave 업그레이드 실패나는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13068",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13068",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18089",
+          "key": "BLIIFWI-517",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18089",
+          "fields": {
+            "summary": "V1.0.0 -> V1.1.1 Upgrade 시 장치가 먹통이 되어 메인화면에서 더이상 진행이 안되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "24000",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/24000",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "31144",
+          "key": "BLIIFWI-1101",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/31144",
+          "fields": {
+            "summary": "Master가 정규버전인 상태에서 Slave로 연결된 L2(정규FW)에 FW Upgrade 시도시 Master Reboot되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11320",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11320",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "14976",
+          "key": "BSIIDII-185",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/14976",
+          "fields": {
+            "summary": "[USB Memory] 장치 FW 업그레이드 시 로그 남지 않는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "38980",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/38980",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "48865",
+          "key": "DFW-687",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/48865",
+          "fields": {
+            "summary": "[FirmWare Upgrade]FSTF2Main.apk -> Upgrade Fail 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "39531",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/39531",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "49561",
+          "key": "DFW-793",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/49561",
+          "fields": {
+            "summary": "[Max User/Log] FirmWare Upgrade(Network) 시 RAM 부족으로 부팅 불가 현상 발생",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11340",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11340",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "14978",
+          "key": "ENTRYIIDII-203",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/14978",
+          "fields": {
+            "summary": "FW Upgrade 시 Device Timed out 발생(Upgrade 실패)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11387",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11387",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "15070",
+          "key": "ENTRYIIDII-229",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/15070",
+          "fields": {
+            "summary": "[BEWx_Slave 장치] v2.0.4->v2.2.0으로 FW Upgrade시 Fail 발생",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12742",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12742",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "17782",
+          "key": "ENTRYIIDII-347",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17782",
+          "fields": {
+            "summary": "2.2.3에서 2.3으로 FW 업그레이드 시 전원이 들어오지 않는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12979",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12979",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18013",
+          "key": "ENTRYIIDII-376",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18013",
+          "fields": {
+            "summary": "[Device] V2.2.3_Slave[Entry] 장치에 Card Read 시  Master 장치가 Reboot되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "23367",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/23367",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "30293",
+          "key": "XPASSII-105",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/30293",
+          "fields": {
+            "summary": "4/17일자 FW로 Upgrade 후 장치먹통되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13419",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13419",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18494",
+          "key": "BEWIIFWDI-235",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18494",
+          "fields": {
+            "summary": "[전자서명] 전자서명 기능이 추가된 FW를 가진 Slave 장치에서 1.0.0_160315으로 다운그레이드시 BioStar에서 Success라고 보여지는 현상. ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13473",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13473",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18314",
+          "key": "BLIIFWI-531",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18314",
+          "fields": {
+            "summary": "[전자서명] 전자서명 기능이 추가된 FW를 가진 Slave 장치에서 1.0.0_160315으로 다운그레이드시 BioStar에서 Success라고 보여지는 현상. ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "22114",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/22114",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "23257",
+          "key": "BLIIFWI-753",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/23257",
+          "fields": {
+            "summary": "[사용자 50만명 등록된 상태] FW Upgrade 도중 Reboot되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "58870",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/58870",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "67918",
+          "key": "CS20FW-48",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/67918",
+          "fields": {
+            "summary": "CS20(M)-XS2(S)연결 후 XS2에서 Resource, logo update 실패",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14232",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14232",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19347",
+          "key": "ENTRYIIDII-438",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19347",
+          "fields": {
+            "summary": "Final 버전에서 디버그 관련기능 제거되지 않은 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13400",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13400",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18315",
+          "key": "TIIDFI-735",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18315",
+          "fields": {
+            "summary": "[전자서명] 전자서명 기능이 추가된 FW를 가진 Slave 장치에서 1.1.0으로 다운그레이드시 BioStar에서 Success라고 보여지는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "60050",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/60050",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "69145",
+          "key": "CS20FW-98",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/69145",
+          "fields": {
+            "summary": "CS20에 연결된 XP2 Nordic 장치에서 최신 FW->1.3.0 하위버전으로 다운그레이드 시 업그레이드 성공 팝업이 발생하는 현상(실제로 다운그레이드X)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "51729",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/51729",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "61283",
+          "key": "XPASSII-440",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/61283",
+          "fields": {
+            "summary": "slave 로 연결된 XP2 BLE573,Nordic 시료 미지원 버전으로 Downgrade 시 성공 팝업 및 로그 출력",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "57710",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/57710",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "61200",
+          "key": "BEW3FW-10",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/61200",
+          "fields": {
+            "summary": "[USB Upgrade]Resource Upgrade가 동작하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10204",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/medium.svg",
+              "name": "Common (B)",
+              "id": "10204"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "55873",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/55873",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "64504",
+          "key": "BEW3FW-238",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/64504",
+          "fields": {
+            "summary": "장치에 저장된 기본 폰트 상태에서 언어 변경 없는 상태로 Custom을 지정한 경우, 영어로 나오지만, 지원 영어와는 폰트가 다른 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19319",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19319",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "17659",
+          "key": "BEWIIFWDI-187",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17659",
+          "fields": {
+            "summary": "[Requirement]Linux, Android 불필요한 Service 및 App 제거",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "19176",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19176",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "17658",
+          "key": "BLIIFWI-496",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17658",
+          "fields": {
+            "summary": "[Requirement]Linux, Android 불필요한 Service 및 App 제거",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "18897",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/18897",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "24541",
+          "key": "BLNIIFW-162",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/24541",
+          "fields": {
+            "summary": "[Requirement]릴리즈 버전에서 디버그 관련 기능 제거",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      },
+      {
+        "id": "16399",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/16399",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "17620",
+          "key": "BSIIDII-325",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17620",
+          "fields": {
+            "summary": "[Requirement]릴리즈 버전에서 디버그 관련 기능 제거",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      },
+      {
+        "id": "14772",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14772",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "20086",
+          "key": "FSTIIFW-292",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/20086",
+          "fields": {
+            "summary": "[Requirement]릴리즈 버전에서 디버그 관련 기능 제거",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      },
+      {
+        "id": "16401",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/16401",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "17621",
+          "key": "TIIDFI-688",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17621",
+          "fields": {
+            "summary": "[Requirement]릴리즈 버전에서 디버그 관련 기능 제거",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      },
+      {
+        "id": "11167",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11167",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "14779",
+          "key": "BEWIIFWDI-23",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/14779",
+          "fields": {
+            "summary": "[Requirement] Upgarde - Network",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10437",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10437",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "12949",
+          "key": "BLIIFWI-77",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12949",
+          "fields": {
+            "summary": "[Requirement] Upgrade - Network",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12838",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12838",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17660",
+          "key": "ENTRYIIDII-336",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17660",
+          "fields": {
+            "summary": "[Requirement]업그레이드 용 FW 파일 및 SDK 파일에 전자서명 도입",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12791",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12791",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17619",
+          "key": "ENTRYIIDII-328",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17619",
+          "fields": {
+            "summary": "[Requirement]릴리즈 버전에서 디버그 관련 기능 제거",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/5",
+              "description": "해결책이 제시되었고 보고자의 확인을 기다리는 중입니다. 지금부터는 이슈를 다시 열거나 이슈를 닫을 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/resolved.png",
+              "name": "해결됨",
+              "id": "5",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12781",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12781",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17655",
+          "key": "ENTRYIIDII-335",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17655",
+          "fields": {
+            "summary": "[Requirement]Linux, Android 불필요한 Service 및 App 제거",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/5",
+              "description": "해결책이 제시되었고 보고자의 확인을 기다리는 중입니다. 지금부터는 이슈를 다시 열거나 이슈를 닫을 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/resolved.png",
+              "name": "해결됨",
+              "id": "5",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12789",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12789",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17623",
+          "key": "BEWIIFWDI-180",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17623",
+          "fields": {
+            "summary": "[Requirement]릴리즈 버전에서 디버그 관련 기능 제거",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12779",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12779",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17659",
+          "key": "BEWIIFWDI-187",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17659",
+          "fields": {
+            "summary": "[Requirement]Linux, Android 불필요한 Service 및 App 제거",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12841",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12841",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17665",
+          "key": "BEWIIFWDI-188",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17665",
+          "fields": {
+            "summary": "[Requirement]업그레이드 용 FW 파일 및 SDK 파일에 전자서명 도입",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12785",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12785",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17622",
+          "key": "BLIIFWI-489",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17622",
+          "fields": {
+            "summary": "[Requirement]릴리즈 버전에서 디버그 관련 기능 제거",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12775",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12775",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17658",
+          "key": "BLIIFWI-496",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17658",
+          "fields": {
+            "summary": "[Requirement]Linux, Android 불필요한 Service 및 App 제거",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12834",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12834",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17663",
+          "key": "BLIIFWI-497",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17663",
+          "fields": {
+            "summary": "[Requirement]업그레이드 용 FW 파일 및 SDK 파일에 전자서명 도입",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "18907",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/18907",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "24543",
+          "key": "BLNIIFW-163",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/24543",
+          "fields": {
+            "summary": "[Requirement]Linux, Android 불필요한 Service 및 App 제거",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12787",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12787",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17656",
+          "key": "BSIIDII-332",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17656",
+          "fields": {
+            "summary": "[Requirement]Linux, Android 불필요한 Service 및 App 제거",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12836",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12836",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17661",
+          "key": "BSIIDII-333",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17661",
+          "fields": {
+            "summary": "[Requirement]업그레이드 용 FW 파일 및 SDK 파일에 전자서명 도입",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12773",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12773",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17657",
+          "key": "TIIDFI-695",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17657",
+          "fields": {
+            "summary": "[Requirement]Linux, Android 불필요한 Service 및 App 제거",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12832",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12832",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17662",
+          "key": "TIIDFI-696",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17662",
+          "fields": {
+            "summary": "[Requirement]업그레이드 용 FW 파일 및 SDK 파일에 전자서명 도입",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10438",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10438",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "12950",
+          "key": "TIIDFI-61",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12950",
+          "fields": {
+            "summary": "[Requirement] Upgarde - Network",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12783",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12783",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17621",
+          "key": "TIIDFI-688",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17621",
+          "fields": {
+            "summary": "[Requirement]릴리즈 버전에서 디버그 관련 기능 제거",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      },
+      {
+        "id": "45320",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/45320",
+        "type": {
+          "id": "10200",
+          "name": "Tests",
+          "inward": "tested by",
+          "outward": "tests",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10200"
+        },
+        "inwardIssue": {
+          "id": "54934",
+          "key": "BS3FW-1294",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/54934",
+          "fields": {
+            "summary": "[BS3] 태국어 폰트 정규 FW에서 지원",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "[UI지원 모델]\n\nResource Upgrade을 지원한다.\n1. DEVICE> Device 선택> Device 상세 정보 화면> Display/Sound> Language> Update Resource",
-      "[BioStar]\n1. 언어를 Korean, English, Custom으로 각각 지정한다.\n2. 각 장치별 최신 버전의 Resource를 선택한다.\n||Station 계열||Entry 계열||\n|BioStation 2|BLx|\n|BioStation A2|\n|BioStation L2|\n|FaceStation 2|\n|BioLite N2|\n|FaceLite|\n\n(on) Multilingual Version Upgrade\n> RND 배포 요청 예정(기본 - 영어, 한국어)",
-      "1. 각 장치별 최신 Resource List가 팝업된다.\n2. 해당 Resource로 Upgrade를 진행한다.\n3. 최신버전으로 Resource Upgrade가 된다.\n> 장치에서 성공 및 재부팅 팝업 확인\n> 장치 재부팅 후 업그레이드 완료시 장치의 Resource 확인\n> Upgrade Log 확인\n4. 언어 표시 방향 및 업그레이드한 다국어의 정상 표시 유무를 확인한다."
+    "assignee": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=bts_tester",
+      "name": "bts_tester",
+      "key": "test",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "BTS Tester",
+      "active": false,
+      "timeZone": "Asia/Seoul"
+    },
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 18.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-19/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@5d87be27[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@380c651b[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@67bcb9a2[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@3cc32cf3[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@44039f39[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@11331b36[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@13c0d11b[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@3641c324[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6ee36882[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@670024c3[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@725d6931[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@4a3ddcbd[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": null,
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-19/watchers",
+      "watchCount": 1,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T10:40:47.000+0900",
+    "timeoriginalestimate": null,
+    "description": "Network 를 통한 Upgrade 동작에 이상이 없는지 확인\r\n(*) Entry & Station 계열 - FirmWare, Resource Upgrade\r\n\r\nLinux, Android 불필요한 Service 및 App 제거\r\nRelease Version에서 디버그 관련 기능 제거\r\nUpgrade 용 FW 파일 및 SDK 파일에 전자서명 도입\r\n\r\nFW Upgrade 진행은 초기버전부터 진행하는걸로 검증범위 확대.\r\n\r\n*Station 장치의 Resource File Upgrade시 다국어 지원하는 리소스파일 개발자에 요청해 진행*",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>FirmWare Upgrade을 지원한다.<br/>1. DEVICE&gt; Device List&gt; Device 선택&gt; FirmWare Upgrade<span class=\"error\">&#91;기능 버튼 내에서 선택&#93;</span><br/>2. DEVICE&gt; Device 선택&gt; Device 상세 정보 화면&gt; FirmWare Upgrade</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>1. Device 선택<br/> &gt; TCP로 연결된 Device 1개<br/> &gt; TCP로 연결된 동일 Device 2개 이상<br/>2. 각 장치별 최신 버전의 FirmWare을 선택한다.</p>\n<div class='table-wrap'>\n<table class='confluenceTable'><tbody>\n<tr>\n<th class='confluenceTh'>Entry 계열</th>\n<th class='confluenceTh'>Station 계열</th>\n<th class='confluenceTh'>IO Module 계열</th>\n</tr>\n<tr>\n<td class='confluenceTd'>BEPx</td>\n<td class='confluenceTd'>BioStation 2</td>\n<td class='confluenceTd'>DM 20</td>\n</tr>\n<tr>\n<td class='confluenceTd'>BEWx</td>\n<td class='confluenceTd'>BioStation A2</td>\n<td class='confluenceTd'>SIO 2</td>\n</tr>\n<tr>\n<td class='confluenceTd'>BLx</td>\n<td class='confluenceTd'>BioStation L2</td>\n<td class='confluenceTd'>OM 120</td>\n</tr>\n<tr>\n<td class='confluenceTd'>XPx</td>\n<td class='confluenceTd'>FaceStation 2</td>\n</tr>\n<tr>\n<td class='confluenceTd'>XPS2M</td>\n<td class='confluenceTd'>CoreStation 40</td>\n</tr>\n<tr>\n<td class='confluenceTd'>W2</td>\n<td class='confluenceTd'>BoiLite N2</td>\n</tr>\n<tr>\n<td class='confluenceTd'>P2</td>\n<td class='confluenceTd'>FaceLite</td>\n</tr>\n<tr>\n<td class='confluenceTd'>R2</td>\n</tr>\n<tr>\n<td class='confluenceTd'>XP2</td>\n</tr>\n</tbody></table>\n</div>\n</td><td><p>1. 각 장치별 최신 FirmWare List가 팝업된다.<br/>2. 해당 FirmWare로 Upgrade를 진행한다.<br/>3. 최신버전으로 FirmWare Upgrade가 된다.<br/>&gt; 장치에서 재부팅 팝업 확인<br/>&gt; 장치 재부팅 후 업그레이드 완료시 장치 상세정보의 Version 확인<br/>&gt; Upgrade Log 확인</p></td></tr><tr><td>2</td><td><p><span class=\"error\">&#91;UI지원 모델&#93;</span></p>\n\n<p>Resource Upgrade을 지원한다.<br/>1. DEVICE&gt; Device 선택&gt; Device 상세 정보 화면&gt; Display/Sound&gt; Language&gt; Update Resource</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>1. 언어를 Korean, English, Custom으로 각각 지정한다.<br/>2. 각 장치별 최신 버전의 Resource를 선택한다.</p>\n<div class='table-wrap'>\n<table class='confluenceTable'><tbody>\n<tr>\n<th class='confluenceTh'>Station 계열</th>\n<th class='confluenceTh'>Entry 계열</th>\n</tr>\n<tr>\n<td class='confluenceTd'>BioStation 2</td>\n<td class='confluenceTd'>BLx</td>\n</tr>\n<tr>\n<td class='confluenceTd'>BioStation A2</td>\n</tr>\n<tr>\n<td class='confluenceTd'>BioStation L2</td>\n</tr>\n<tr>\n<td class='confluenceTd'>FaceStation 2</td>\n</tr>\n<tr>\n<td class='confluenceTd'>BioLite N2</td>\n</tr>\n<tr>\n<td class='confluenceTd'>FaceLite</td>\n</tr>\n</tbody></table>\n</div>\n\n\n<p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> Multilingual Version Upgrade<br/>&gt; RND 배포 요청 예정(기본 - 영어, 한국어)</p></td><td><p>1. 각 장치별 최신 Resource List가 팝업된다.<br/>2. 해당 Resource로 Upgrade를 진행한다.<br/>3. 최신버전으로 Resource Upgrade가 된다.<br/>&gt; 장치에서 성공 및 재부팅 팝업 확인<br/>&gt; 장치 재부팅 후 업그레이드 완료시 장치의 Resource 확인<br/>&gt; Upgrade Log 확인<br/>4. 언어 표시 방향 및 업그레이드한 다국어의 정상 표시 유무를 확인한다.</p></td></tr><tr><td>3</td><td><p>1. 정규버전에서 최신 버전으로 FirmWare Upgrade를 시도한다.<br/>2. 설정값 및 인증동작을 확인한다.</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span></p>\n<div class=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;\"><b>정규 버전(전자 서명 미지원)</b></div><div class=\"panelContent\">\n<div class='table-wrap'>\n<table class='confluenceTable'><tbody>\n<tr>\n<th class='confluenceTh'>Device</th>\n<th class='confluenceTh'>Version</th>\n</tr>\n<tr>\n<td class='confluenceTd'>Entry</td>\n<td class='confluenceTd'>v2.4.0 이전</td>\n</tr>\n<tr>\n<td class='confluenceTd'>BS2</td>\n<td class='confluenceTd'>v1.4.0 이전</td>\n</tr>\n<tr>\n<td class='confluenceTd'>A2</td>\n<td class='confluenceTd'>v1.3.0 이전</td>\n</tr>\n<tr>\n<td class='confluenceTd'>FS2</td>\n<td class='confluenceTd'>v1.0.0 이전</td>\n</tr>\n<tr>\n<td class='confluenceTd'>W2</td>\n<td class='confluenceTd'>v1.1.0 이전</td>\n</tr>\n<tr>\n<td class='confluenceTd'>L2</td>\n<td class='confluenceTd'>v1.2.0 이전</td>\n</tr>\n</tbody></table>\n</div>\n</div></div>\n\n<p>최신버전(전자 서명 지원)<br/>&gt; 신규 등록이 예상되는 버전으로 QA 검증 배포용</p></td><td><p>1. FirmWare Upgrade 후에도 설정값을 유지해야 하고, 설정한대로 인증이 동작되어야 한다.</p></td></tr><tr><td>4</td><td><p>1. 정규버전에서 최신 버전으로 FirmWare Upgrade를 시도한다.<br/>2. 정규버전에서 지원하는 Service 및 App 동작을 확인한다.</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span></p>\n<div class=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;\"><b>정규 버전(전자 서명 미지원)</b></div><div class=\"panelContent\">\n<div class='table-wrap'>\n<table class='confluenceTable'><tbody>\n<tr>\n<th class='confluenceTh'>Device</th>\n<th class='confluenceTh'>Version</th>\n</tr>\n<tr>\n<td class='confluenceTd'>Entry</td>\n<td class='confluenceTd'>v2.4.0 이전</td>\n</tr>\n<tr>\n<td class='confluenceTd'>BS2</td>\n<td class='confluenceTd'>v1.4.0 이전</td>\n</tr>\n<tr>\n<td class='confluenceTd'>A2</td>\n<td class='confluenceTd'>v1.3.0 이전</td>\n</tr>\n<tr>\n<td class='confluenceTd'>FS2</td>\n<td class='confluenceTd'>v1.0.0 이전</td>\n</tr>\n<tr>\n<td class='confluenceTd'>W2</td>\n<td class='confluenceTd'>v1.1.0 이전</td>\n</tr>\n<tr>\n<td class='confluenceTd'>L2</td>\n<td class='confluenceTd'>v1.2.0 이전</td>\n</tr>\n</tbody></table>\n</div>\n</div></div>\n\n<p>최신버전(전자 서명 지원)<br/>&gt; 신규 등록이 예상되는 버전으로 QA 검증 배포용</p></td><td><p>1. FireWare Upgrade 전후에 불필요한 Service 및 App이 동작하는 지 비교한다.<br/>&gt; Port Scan 이용<br/><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/check.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> 개발자 결과물로 대체</p>\n\n<p>삭제논의항목</p></td></tr><tr><td>5</td><td><p>1. 정규버전에서 최신 버전으로 FirmWare Upgrade를 시도한다.<br/>2. 기기 내부로의 접근 시도<br/>   &gt; 시리얼 콘솔 이용<br/>   &gt; USB 이용<br/>   &gt; Diag Tool 이용</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span></p>\n<div class=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;\"><b>정규 버전(전자 서명 미지원)</b></div><div class=\"panelContent\">\n<div class='table-wrap'>\n<table class='confluenceTable'><tbody>\n<tr>\n<th class='confluenceTh'>Device</th>\n<th class='confluenceTh'>Version</th>\n</tr>\n<tr>\n<td class='confluenceTd'>Entry</td>\n<td class='confluenceTd'>v2.4.0 이전</td>\n</tr>\n<tr>\n<td class='confluenceTd'>BS2</td>\n<td class='confluenceTd'>v1.4.0 이전</td>\n</tr>\n<tr>\n<td class='confluenceTd'>A2</td>\n<td class='confluenceTd'>v1.3.0 이전</td>\n</tr>\n<tr>\n<td class='confluenceTd'>FS2</td>\n<td class='confluenceTd'>v1.0.0 이전</td>\n</tr>\n<tr>\n<td class='confluenceTd'>W2</td>\n<td class='confluenceTd'>v1.1.0 이전</td>\n</tr>\n<tr>\n<td class='confluenceTd'>L2</td>\n<td class='confluenceTd'>v1.2.0 이전</td>\n</tr>\n</tbody></table>\n</div>\n</div></div>\n\n<p>최신버전(전자 서명 지원)<br/>&gt; 신규 등록이 예상되는 버전으로 QA 검증 배포용</p></td><td><p>1. FirmWare Upgrade 전후에 기기 내부로 접근할 수 없다.</p>\n\n<p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> 시리얼 콘솔 - Kernel Log Enable(입력 불가) <br/><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> USB 이용 디버거 기능 제거<br/><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> Diag Tool 기능 - 연결만 되고, Log 미출력</p></td></tr><tr><td>6</td><td><p>1. 최신 버전에서 전자서명 기능이 없는 이전 정규버전으로 FirmWare Downgrade 시도한다.<br/>2. 동작확인</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span></p>\n<div class=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;\"><b>정규 버전(전자 서명 미지원)</b></div><div class=\"panelContent\">\n<div class='table-wrap'>\n<table class='confluenceTable'><tbody>\n<tr>\n<th class='confluenceTh'>Device</th>\n<th class='confluenceTh'>Version</th>\n</tr>\n<tr>\n<td class='confluenceTd'>Entry</td>\n<td class='confluenceTd'>v2.4.0 이전</td>\n</tr>\n<tr>\n<td class='confluenceTd'>BS2</td>\n<td class='confluenceTd'>v1.4.0 이전</td>\n</tr>\n<tr>\n<td class='confluenceTd'>A2</td>\n<td class='confluenceTd'>v1.3.0 이전</td>\n</tr>\n<tr>\n<td class='confluenceTd'>W2</td>\n<td class='confluenceTd'>v1.1.0 이전</td>\n</tr>\n<tr>\n<td class='confluenceTd'>L2</td>\n<td class='confluenceTd'>v1.2.0 이전</td>\n</tr>\n</tbody></table>\n</div>\n</div></div>\n\n<p>최신버전(전자 서명 지원)<br/>&gt; 신규 등록이 예상되는 버전으로 QA 검증 배포용</p></td><td><p>1. FirmWare Upgrade시 서명이 유효하지 않아 Upgrade가 실패되고, 이전 버전이 유지된다.</p>\n\n<p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/error.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> Downgrade 불가</p></td></tr><tr><td>7</td><td><p><span class=\"error\">&#91;BEW2: 8G emmc &amp; HW V1.1.0 이상&#93;</span></p>\n\n<p>1. 최신 FW에서 FW V1.1.3 미만으로 FW Downgrade 시도</p></td><td></td><td><p>1. Upgrade Fail된다.</p></td></tr><tr><td>8</td><td><p><span class=\"error\">&#91;BEW2: 8G emmc이 아니면서 HW V1.0.0&#93;</span></p>\n\n<p>1. 최신 FW에서 FW V1.1.3 미만으로 FW Downgrade 시도</p></td><td></td><td><p>1. Upgrade Success된다.</p></td></tr><tr><td>9</td><td><p><span class=\"error\">&#91;BSL2: 8G emmc&#93;</span></p>\n\n<p>1. 최신 FW에서 FW V1.2.3 미만으로 FW Downgrade 시도</p></td><td></td><td><p>1. Upgrade Fail된다.</p></td></tr><tr><td>10</td><td><p><span class=\"error\">&#91;BSL2: 8G emmc가 아닌 경우&#93;</span></p>\n\n<p>1. 최신 FW에서 FW V1.2.3 미만으로 FW Downgrade 시도</p></td><td></td><td><p>1. Upgrade Success된다.</p></td></tr><tr><td>11</td><td><p><span class=\"error\">&#91;XS2: DTC LCD 적용시료&#93;</span><br/>1. 최신FW에서 FW V1.1.1 이하로 FW Downgrade 시도</p></td><td></td><td><p>1. Upgrade Fail된다.<br/>&gt; 해당시료는 v1.1.2부터 지원</p></td></tr><tr><td>12</td><td><p><span class=\"error\">&#91;XP2: BL573 신규 칩 적용시료&#93;</span><br/>1. 최신FW에서 FW V1.2.4 하위버전으로 FW Downgrade 시도</p></td><td></td><td><p>1. Upgrade Fail된다.<br/>&gt; 해당시료는 v1.2.4부터 지원</p></td></tr><tr><td>13</td><td><p><span class=\"error\">&#91;XP2: BLE - Nordic 적용시료&#93;</span><br/>1. 최신FW에서 FW V1.3.0 하위버전으로 FW Downgrade 시도</p></td><td></td><td><p>1. Upgrade Fail된다.<br/>&gt; 해당시료는 v1.3.0부터 지원</p></td></tr><tr><td>14</td><td><p><span class=\"error\">&#91;W2: HID SE Module 신규적용시료&#93;</span><br/>1. 최신FW에서 FW V1.7.0 하위버전으로 FW Downgrade 시도</p></td><td></td><td><p>1. Upgrade Fail된다.<br/>&gt; 해당시료는 v1.7.0부터 지원</p></td></tr><tr><td>15</td><td><p><span class=\"error\">&#91;N2: BLE - Nordic 적용시료&#93;</span><br/>1. 최신FW에서 FW V1.5.0 하위버전으로 FW Downgrade 시도</p></td><td></td><td><p>1. Upgrade Fail된다.<br/>&gt; 해당시료는 v1.5.0부터 지원</p></td></tr><tr><td>16</td><td><p><span class=\"error\">&#91;N2: HID SE Module 신규적용시료&#93;</span><br/>1. 최신FW에서 FW V1.5.0 하위버전으로 FW Downgrade 시도</p></td><td></td><td><p>1. Upgrade Fail된다.<br/>&gt; 해당시료는 v1.5.0부터 지원</p></td></tr><tr><td>17</td><td><p><span class=\"error\">&#91;N2: BLE 미지원 시료&#93;</span><br/> 1. 최신FW에서 FW V1.5.0 하위버전으로 FW Downgrade 시도</p></td><td><p>Data: BLE 미지원 시료<br/>&gt; BLN2-OA/OD</p></td><td><p>1. Upgrade Fail된다.<br/>&gt; 해당시료는 v1.5.0부터 지원</p></td></tr><tr><td>18</td><td><p>1.장치에 메모리 Full로 채운 상태에서 FW Upgrade 시도</p></td><td><p>사용자<br/>&gt; 모든 크리덴셜 저장된 상태로 Full</p>\n\n<p>이벤트 로그 Full<br/>&gt; 이미지로그(지원시)<br/>&gt; 일반로그</p></td><td><p>1. Upgrade 및 부팅이 정상적으로 이루어져야 한다.</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [
+      "COMMONR-43",
+      "COMMONR-383"
     ],
-    [
-      3,
-      "1. 정규버전에서 최신 버전으로 FirmWare Upgrade를 시도한다.\n2. 설정값 및 인증동작을 확인한다.",
-      "[BioStar]\n{panel:title=정규 버전(전자 서명 미지원)}\n||Device||Version||\n|Entry|v2.4.0 이전|\n|BS2|v1.4.0 이전|\n|A2|v1.3.0 이전|\n|FS2|v1.0.0 이전|\n|W2|v1.1.0 이전|\n|L2|v1.2.0 이전|\n{panel}\n\n최신버전(전자 서명 지원)\n> 신규 등록이 예상되는 버전으로 QA 검증 배포용",
-      "1. FirmWare Upgrade 후에도 설정값을 유지해야 하고, 설정한대로 인증이 동작되어야 한다."
-    ],
-    [
-      4,
-      "1. 정규버전에서 최신 버전으로 FirmWare Upgrade를 시도한다.\n2. 정규버전에서 지원하는 Service 및 App 동작을 확인한다.",
-      "[BioStar]\n{panel:title=정규 버전(전자 서명 미지원)}\n||Device||Version||\n|Entry|v2.4.0 이전|\n|BS2|v1.4.0 이전|\n|A2|v1.3.0 이전|\n|FS2|v1.0.0 이전|\n|W2|v1.1.0 이전|\n|L2|v1.2.0 이전|\n{panel}\n\n최신버전(전자 서명 지원)\n> 신규 등록이 예상되는 버전으로 QA 검증 배포용\n",
-      "1. FireWare Upgrade 전후에 불필요한 Service 및 App이 동작하는 지 비교한다.\n> Port Scan 이용\n(/) 개발자 결과물로 대체\n\n삭제논의항목"
-    ],
-    [
-      5,
-      "1. 정규버전에서 최신 버전으로 FirmWare Upgrade를 시도한다.\n2. 기기 내부로의 접근 시도\n   > 시리얼 콘솔 이용\n   > USB 이용\n   > Diag Tool 이용",
-      "[BioStar]\n{panel:title=정규 버전(전자 서명 미지원)}\n||Device||Version||\n|Entry|v2.4.0 이전|\n|BS2|v1.4.0 이전|\n|A2|v1.3.0 이전|\n|FS2|v1.0.0 이전|\n|W2|v1.1.0 이전|\n|L2|v1.2.0 이전|\n{panel}\n\n최신버전(전자 서명 지원)\n> 신규 등록이 예상되는 버전으로 QA 검증 배포용",
-      "1. FirmWare Upgrade 전후에 기기 내부로 접근할 수 없다.\n\n(on) 시리얼 콘솔 - Kernel Log Enable(입력 불가) \n(on) USB 이용 디버거 기능 제거\n(on) Diag Tool 기능 - 연결만 되고, Log 미출력"
-    ],
-    [
-      6,
-      "1. 최신 버전에서 전자서명 기능이 없는 이전 정규버전으로 FirmWare Downgrade 시도한다.\n2. 동작확인",
-      "[BioStar]\n{panel:title=정규 버전(전자 서명 미지원)}\n||Device||Version||\n|Entry|v2.4.0 이전|\n|BS2|v1.4.0 이전|\n|A2|v1.3.0 이전|\n|W2|v1.1.0 이전|\n|L2|v1.2.0 이전|\n{panel}\n\n최신버전(전자 서명 지원)\n> 신규 등록이 예상되는 버전으로 QA 검증 배포용\n",
-      "1. FirmWare Upgrade시 서명이 유효하지 않아 Upgrade가 실패되고, 이전 버전이 유지된다.\n\n(x) Downgrade 불가"
-    ],
-    [
-      7,
-      "[BEW2: 8G emmc & HW V1.1.0 이상]\n\n1. 최신 FW에서 FW V1.1.3 미만으로 FW Downgrade 시도\n",
-      "",
-      "1. Upgrade Fail된다."
-    ],
-    [
-      8,
-      "[BEW2: 8G emmc이 아니면서 HW V1.0.0]\n\n1. 최신 FW에서 FW V1.1.3 미만으로 FW Downgrade 시도\n",
-      "",
-      "1. Upgrade Success된다."
-    ],
-    [
-      9,
-      "[BSL2: 8G emmc]\n\n1. 최신 FW에서 FW V1.2.3 미만으로 FW Downgrade 시도\n",
-      "",
-      "1. Upgrade Fail된다."
-    ],
-    [
-      10,
-      "[BSL2: 8G emmc가 아닌 경우]\n\n1. 최신 FW에서 FW V1.2.3 미만으로 FW Downgrade 시도\n",
-      "",
-      "1. Upgrade Success된다."
-    ],
-    [
-      11,
-      "[XS2: DTC LCD 적용시료]\n1. 최신FW에서 FW V1.1.1 이하로 FW Downgrade 시도",
-      "",
-      "1. Upgrade Fail된다.\n> 해당시료는 v1.1.2부터 지원"
-    ],
-    [
-      12,
-      "[XP2: BL573 신규 칩 적용시료]\n1. 최신FW에서 FW V1.2.4 하위버전으로 FW Downgrade 시도",
-      "",
-      "1. Upgrade Fail된다.\n> 해당시료는 v1.2.4부터 지원"
-    ],
-    [
-      13,
-      "[XP2: BLE - Nordic 적용시료]\n1. 최신FW에서 FW V1.3.0 하위버전으로 FW Downgrade 시도",
-      "",
-      "1. Upgrade Fail된다.\n> 해당시료는 v1.3.0부터 지원"
-    ],
-    [
-      14,
-      "[W2: HID SE Module 신규적용시료]\n1. 최신FW에서 FW V1.7.0 하위버전으로 FW Downgrade 시도",
-      "",
-      "1. Upgrade Fail된다.\n> 해당시료는 v1.7.0부터 지원"
-    ],
-    [
-      15,
-      "[N2: BLE - Nordic 적용시료]\n1. 최신FW에서 FW V1.5.0 하위버전으로 FW Downgrade 시도",
-      "",
-      "1. Upgrade Fail된다.\n> 해당시료는 v1.5.0부터 지원"
-    ],
-    [
-      16,
-      "[N2: HID SE Module 신규적용시료]\n1. 최신FW에서 FW V1.5.0 하위버전으로 FW Downgrade 시도",
-      "",
-      "1. Upgrade Fail된다.\n> 해당시료는 v1.5.0부터 지원"
-    ],
-    [
-      17,
-      "[N2: BLE 미지원 시료]\n 1. 최신FW에서 FW V1.5.0 하위버전으로 FW Downgrade 시도",
-      "Data: BLE 미지원 시료\n> BLN2-OA/OD",
-      "1. Upgrade Fail된다.\n> 해당시료는 v1.5.0부터 지원"
-    ],
-    [
-      18,
-      "1.장치에 메모리 Full로 채운 상태에서 FW Upgrade 시도",
-      "사용자\n> 모든 크리덴셜 저장된 상태로 Full\n\n이벤트 로그 Full\n> 이미지로그(지원시)\n> 일반로그",
-      "1. Upgrade 및 부팅이 정상적으로 이루어져야 한다."
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-19",
-    "description": "",
-    "test_step": [
-      "FirmWare Upgrade을 지원한다.\n1. DEVICE> Device List> Device 선택> FirmWare Upgrade[기능 버튼 내에서 선택]\n2. DEVICE> Device 선택> Device 상세 정보 화면> FirmWare Upgrade",
-      "[UI지원 모델]\n\nResource Upgrade을 지원한다.\n1. DEVICE> Device 선택> Device 상세 정보 화면> Display/Sound> Language> Update Resource",
-      "1. 정규버전에서 최신 버전으로 FirmWare Upgrade를 시도한다.\n2. 설정값 및 인증동작을 확인한다.",
-      "1. 정규버전에서 최신 버전으로 FirmWare Upgrade를 시도한다.\n2. 정규버전에서 지원하는 Service 및 App 동작을 확인한다.",
-      "1. 정규버전에서 최신 버전으로 FirmWare Upgrade를 시도한다.\n2. 기기 내부로의 접근 시도\n   > 시리얼 콘솔 이용\n   > USB 이용\n   > Diag Tool 이용",
-      "1. 최신 버전에서 전자서명 기능이 없는 이전 정규버전으로 FirmWare Downgrade 시도한다.\n2. 동작확인",
-      "[BEW2: 8G emmc & HW V1.1.0 이상]\n\n1. 최신 FW에서 FW V1.1.3 미만으로 FW Downgrade 시도\n",
-      "[BEW2: 8G emmc이 아니면서 HW V1.0.0]\n\n1. 최신 FW에서 FW V1.1.3 미만으로 FW Downgrade 시도\n",
-      "[BSL2: 8G emmc]\n\n1. 최신 FW에서 FW V1.2.3 미만으로 FW Downgrade 시도\n",
-      "[BSL2: 8G emmc가 아닌 경우]\n\n1. 최신 FW에서 FW V1.2.3 미만으로 FW Downgrade 시도\n",
-      "[XS2: DTC LCD 적용시료]\n1. 최신FW에서 FW V1.1.1 이하로 FW Downgrade 시도",
-      "[XP2: BL573 신규 칩 적용시료]\n1. 최신FW에서 FW V1.2.4 하위버전으로 FW Downgrade 시도",
-      "[XP2: BLE - Nordic 적용시료]\n1. 최신FW에서 FW V1.3.0 하위버전으로 FW Downgrade 시도",
-      "[W2: HID SE Module 신규적용시료]\n1. 최신FW에서 FW V1.7.0 하위버전으로 FW Downgrade 시도",
-      "[N2: BLE - Nordic 적용시료]\n1. 최신FW에서 FW V1.5.0 하위버전으로 FW Downgrade 시도",
-      "[N2: HID SE Module 신규적용시료]\n1. 최신FW에서 FW V1.5.0 하위버전으로 FW Downgrade 시도",
-      "[N2: BLE 미지원 시료]\n 1. 최신FW에서 FW V1.5.0 하위버전으로 FW Downgrade 시도",
-      "1.장치에 메모리 Full로 채운 상태에서 FW Upgrade 시도"
-    ],
-    "data": [
-      "[BioStar]\n1. Device 선택\n > TCP로 연결된 Device 1개\n > TCP로 연결된 동일 Device 2개 이상\n2. 각 장치별 최신 버전의 FirmWare을 선택한다.\n||Entry 계열||Station 계열||IO Module 계열||\n|BEPx|BioStation 2|DM 20|\n|BEWx|BioStation A2|SIO 2|\n|BLx|BioStation L2|OM 120|\n|XPx|FaceStation 2|\n|XPS2M|CoreStation 40|\n|W2|BoiLite N2|\n|P2|FaceLite|\n|R2|\n|XP2|",
-      "[BioStar]\n1. 언어를 Korean, English, Custom으로 각각 지정한다.\n2. 각 장치별 최신 버전의 Resource를 선택한다.\n||Station 계열||Entry 계열||\n|BioStation 2|BLx|\n|BioStation A2|\n|BioStation L2|\n|FaceStation 2|\n|BioLite N2|\n|FaceLite|\n\n(on) Multilingual Version Upgrade\n> RND 배포 요청 예정(기본 - 영어, 한국어)",
-      "[BioStar]\n{panel:title=정규 버전(전자 서명 미지원)}\n||Device||Version||\n|Entry|v2.4.0 이전|\n|BS2|v1.4.0 이전|\n|A2|v1.3.0 이전|\n|FS2|v1.0.0 이전|\n|W2|v1.1.0 이전|\n|L2|v1.2.0 이전|\n{panel}\n\n최신버전(전자 서명 지원)\n> 신규 등록이 예상되는 버전으로 QA 검증 배포용",
-      "[BioStar]\n{panel:title=정규 버전(전자 서명 미지원)}\n||Device||Version||\n|Entry|v2.4.0 이전|\n|BS2|v1.4.0 이전|\n|A2|v1.3.0 이전|\n|FS2|v1.0.0 이전|\n|W2|v1.1.0 이전|\n|L2|v1.2.0 이전|\n{panel}\n\n최신버전(전자 서명 지원)\n> 신규 등록이 예상되는 버전으로 QA 검증 배포용\n",
-      "[BioStar]\n{panel:title=정규 버전(전자 서명 미지원)}\n||Device||Version||\n|Entry|v2.4.0 이전|\n|BS2|v1.4.0 이전|\n|A2|v1.3.0 이전|\n|FS2|v1.0.0 이전|\n|W2|v1.1.0 이전|\n|L2|v1.2.0 이전|\n{panel}\n\n최신버전(전자 서명 지원)\n> 신규 등록이 예상되는 버전으로 QA 검증 배포용",
-      "[BioStar]\n{panel:title=정규 버전(전자 서명 미지원)}\n||Device||Version||\n|Entry|v2.4.0 이전|\n|BS2|v1.4.0 이전|\n|A2|v1.3.0 이전|\n|W2|v1.1.0 이전|\n|L2|v1.2.0 이전|\n{panel}\n\n최신버전(전자 서명 지원)\n> 신규 등록이 예상되는 버전으로 QA 검증 배포용\n",
-      "Data: BLE 미지원 시료\n> BLN2-OA/OD",
-      "사용자\n> 모든 크리덴셜 저장된 상태로 Full\n\n이벤트 로그 Full\n> 이미지로그(지원시)\n> 일반로그"
-    ],
-    "expected_result": [
-      "1. 각 장치별 최신 FirmWare List가 팝업된다.\n2. 해당 FirmWare로 Upgrade를 진행한다.\n3. 최신버전으로 FirmWare Upgrade가 된다.\n> 장치에서 재부팅 팝업 확인\n> 장치 재부팅 후 업그레이드 완료시 장치 상세정보의 Version 확인\n> Upgrade Log 확인",
-      "1. 각 장치별 최신 Resource List가 팝업된다.\n2. 해당 Resource로 Upgrade를 진행한다.\n3. 최신버전으로 Resource Upgrade가 된다.\n> 장치에서 성공 및 재부팅 팝업 확인\n> 장치 재부팅 후 업그레이드 완료시 장치의 Resource 확인\n> Upgrade Log 확인\n4. 언어 표시 방향 및 업그레이드한 다국어의 정상 표시 유무를 확인한다.",
-      "1. FirmWare Upgrade 후에도 설정값을 유지해야 하고, 설정한대로 인증이 동작되어야 한다.",
-      "1. FireWare Upgrade 전후에 불필요한 Service 및 App이 동작하는 지 비교한다.\n> Port Scan 이용\n(/) 개발자 결과물로 대체\n\n삭제논의항목",
-      "1. FirmWare Upgrade 전후에 기기 내부로 접근할 수 없다.\n\n(on) 시리얼 콘솔 - Kernel Log Enable(입력 불가) \n(on) USB 이용 디버거 기능 제거\n(on) Diag Tool 기능 - 연결만 되고, Log 미출력",
-      "1. FirmWare Upgrade시 서명이 유효하지 않아 Upgrade가 실패되고, 이전 버전이 유지된다.\n\n(x) Downgrade 불가",
-      "1. Upgrade Fail된다.",
-      "1. Upgrade Success된다.",
-      "1. Upgrade Fail된다.",
-      "1. Upgrade Success된다.",
-      "1. Upgrade Fail된다.\n> 해당시료는 v1.1.2부터 지원",
-      "1. Upgrade Fail된다.\n> 해당시료는 v1.2.4부터 지원",
-      "1. Upgrade Fail된다.\n> 해당시료는 v1.3.0부터 지원",
-      "1. Upgrade Fail된다.\n> 해당시료는 v1.7.0부터 지원",
-      "1. Upgrade Fail된다.\n> 해당시료는 v1.5.0부터 지원",
-      "1. Upgrade Fail된다.\n> 해당시료는 v1.5.0부터 지원",
-      "1. Upgrade Fail된다.\n> 해당시료는 v1.5.0부터 지원",
-      "1. Upgrade 및 부팅이 정상적으로 이루어져야 한다."
-    ]
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 11924,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 35103,
+              "latestFinalId": 34658
+            },
+            {
+              "environment": "ES1",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29797,
+              "latestFinalId": 29797
+            },
+            {
+              "environment": "BioStarV2.9.6.30",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29797,
+              "latestFinalId": 29797
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_170117(UnitTest)",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 5665,
+              "latestFinalId": 5665
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_190805_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15243,
+              "latestFinalId": 15243
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.2.8_20160603",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 1735,
+              "latestFinalId": 1735
+            }
+          ]
+        },
+        {
+          "group": "FL_V1.0_190515(PS)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 14156,
+              "latestFinalId": 14156
+            }
+          ]
+        },
+        {
+          "group": "V1.7.1_181204(Hotfix)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12677,
+              "latestFinalId": 12677
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_181210_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12754,
+              "latestFinalId": 12754
+            }
+          ]
+        },
+        {
+          "group": "V1.1.5_4_151014(All)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 36,
+              "latestFinalId": 36
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0 170331",
+          "statusResults": [
+            {
+              "latest": 1,
+              "latestFinal": 3,
+              "latestId": 8646,
+              "latestFinalId": 6375
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_181119_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12956,
+              "latestFinalId": 12956
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_190809_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15604,
+              "latestFinalId": 15604
+            }
+          ]
+        },
+        {
+          "group": "V1.8.0_190806_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15333,
+              "latestFinalId": 15333
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180322",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10124,
+              "latestFinalId": 10124
+            }
+          ]
+        },
+        {
+          "group": "V1.7.0_190806_Interaction 7차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15072,
+              "latestFinalId": 15072
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.1.5_5 - 20151016(All)",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 5216,
+              "latestFinalId": 5216
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_190806_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15418,
+              "latestFinalId": 15418
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_20200601_Interaction 12차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 17150,
+              "latestFinalId": 17150
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "Upgrade - Network",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 40,
+          "index": 1,
+          "step": "FirmWare Upgrade을 지원한다.\n1. DEVICE> Device List> Device 선택> FirmWare Upgrade[기능 버튼 내에서 선택]\n2. DEVICE> Device 선택> Device 상세 정보 화면> FirmWare Upgrade",
+          "data": "[BioStar]\n1. Device 선택\n > TCP로 연결된 Device 1개\n > TCP로 연결된 동일 Device 2개 이상\n2. 각 장치별 최신 버전의 FirmWare을 선택한다.\n||Entry 계열||Station 계열||IO Module 계열||\n|BEPx|BioStation 2|DM 20|\n|BEWx|BioStation A2|SIO 2|\n|BLx|BioStation L2|OM 120|\n|XPx|FaceStation 2|\n|XPS2M|CoreStation 40|\n|W2|BoiLite N2|\n|P2|FaceLite|\n|R2|\n|XP2|",
+          "result": "1. 각 장치별 최신 FirmWare List가 팝업된다.\n2. 해당 FirmWare로 Upgrade를 진행한다.\n3. 최신버전으로 FirmWare Upgrade가 된다.\n> 장치에서 재부팅 팝업 확인\n> 장치 재부팅 후 업그레이드 완료시 장치 상세정보의 Version 확인\n> Upgrade Log 확인",
+          "attachments": []
+        },
+        {
+          "id": 45,
+          "index": 2,
+          "step": "[UI지원 모델]\n\nResource Upgrade을 지원한다.\n1. DEVICE> Device 선택> Device 상세 정보 화면> Display/Sound> Language> Update Resource",
+          "data": "[BioStar]\n1. 언어를 Korean, English, Custom으로 각각 지정한다.\n2. 각 장치별 최신 버전의 Resource를 선택한다.\n||Station 계열||Entry 계열||\n|BioStation 2|BLx|\n|BioStation A2|\n|BioStation L2|\n|FaceStation 2|\n|BioLite N2|\n|FaceLite|\n\n(on) Multilingual Version Upgrade\n> RND 배포 요청 예정(기본 - 영어, 한국어)",
+          "result": "1. 각 장치별 최신 Resource List가 팝업된다.\n2. 해당 Resource로 Upgrade를 진행한다.\n3. 최신버전으로 Resource Upgrade가 된다.\n> 장치에서 성공 및 재부팅 팝업 확인\n> 장치 재부팅 후 업그레이드 완료시 장치의 Resource 확인\n> Upgrade Log 확인\n4. 언어 표시 방향 및 업그레이드한 다국어의 정상 표시 유무를 확인한다.",
+          "attachments": []
+        },
+        {
+          "id": 1040,
+          "index": 3,
+          "step": "1. 정규버전에서 최신 버전으로 FirmWare Upgrade를 시도한다.\n2. 설정값 및 인증동작을 확인한다.",
+          "data": "[BioStar]\n{panel:title=정규 버전(전자 서명 미지원)}\n||Device||Version||\n|Entry|v2.4.0 이전|\n|BS2|v1.4.0 이전|\n|A2|v1.3.0 이전|\n|FS2|v1.0.0 이전|\n|W2|v1.1.0 이전|\n|L2|v1.2.0 이전|\n{panel}\n\n최신버전(전자 서명 지원)\n> 신규 등록이 예상되는 버전으로 QA 검증 배포용",
+          "result": "1. FirmWare Upgrade 후에도 설정값을 유지해야 하고, 설정한대로 인증이 동작되어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 2844,
+          "index": 4,
+          "step": "1. 정규버전에서 최신 버전으로 FirmWare Upgrade를 시도한다.\n2. 정규버전에서 지원하는 Service 및 App 동작을 확인한다.",
+          "data": "[BioStar]\n{panel:title=정규 버전(전자 서명 미지원)}\n||Device||Version||\n|Entry|v2.4.0 이전|\n|BS2|v1.4.0 이전|\n|A2|v1.3.0 이전|\n|FS2|v1.0.0 이전|\n|W2|v1.1.0 이전|\n|L2|v1.2.0 이전|\n{panel}\n\n최신버전(전자 서명 지원)\n> 신규 등록이 예상되는 버전으로 QA 검증 배포용\n",
+          "result": "1. FireWare Upgrade 전후에 불필요한 Service 및 App이 동작하는 지 비교한다.\n> Port Scan 이용\n(/) 개발자 결과물로 대체\n\n삭제논의항목",
+          "attachments": []
+        },
+        {
+          "id": 2846,
+          "index": 5,
+          "step": "1. 정규버전에서 최신 버전으로 FirmWare Upgrade를 시도한다.\n2. 기기 내부로의 접근 시도\n   > 시리얼 콘솔 이용\n   > USB 이용\n   > Diag Tool 이용",
+          "data": "[BioStar]\n{panel:title=정규 버전(전자 서명 미지원)}\n||Device||Version||\n|Entry|v2.4.0 이전|\n|BS2|v1.4.0 이전|\n|A2|v1.3.0 이전|\n|FS2|v1.0.0 이전|\n|W2|v1.1.0 이전|\n|L2|v1.2.0 이전|\n{panel}\n\n최신버전(전자 서명 지원)\n> 신규 등록이 예상되는 버전으로 QA 검증 배포용",
+          "result": "1. FirmWare Upgrade 전후에 기기 내부로 접근할 수 없다.\n\n(on) 시리얼 콘솔 - Kernel Log Enable(입력 불가) \n(on) USB 이용 디버거 기능 제거\n(on) Diag Tool 기능 - 연결만 되고, Log 미출력",
+          "attachments": []
+        },
+        {
+          "id": 2851,
+          "index": 6,
+          "step": "1. 최신 버전에서 전자서명 기능이 없는 이전 정규버전으로 FirmWare Downgrade 시도한다.\n2. 동작확인",
+          "data": "[BioStar]\n{panel:title=정규 버전(전자 서명 미지원)}\n||Device||Version||\n|Entry|v2.4.0 이전|\n|BS2|v1.4.0 이전|\n|A2|v1.3.0 이전|\n|W2|v1.1.0 이전|\n|L2|v1.2.0 이전|\n{panel}\n\n최신버전(전자 서명 지원)\n> 신규 등록이 예상되는 버전으로 QA 검증 배포용\n",
+          "result": "1. FirmWare Upgrade시 서명이 유효하지 않아 Upgrade가 실패되고, 이전 버전이 유지된다.\n\n(x) Downgrade 불가",
+          "attachments": []
+        },
+        {
+          "id": 11038,
+          "index": 7,
+          "step": "[BEW2: 8G emmc & HW V1.1.0 이상]\n\n1. 최신 FW에서 FW V1.1.3 미만으로 FW Downgrade 시도\n",
+          "data": "",
+          "result": "1. Upgrade Fail된다.",
+          "attachments": []
+        },
+        {
+          "id": 11039,
+          "index": 8,
+          "step": "[BEW2: 8G emmc이 아니면서 HW V1.0.0]\n\n1. 최신 FW에서 FW V1.1.3 미만으로 FW Downgrade 시도\n",
+          "data": "",
+          "result": "1. Upgrade Success된다.",
+          "attachments": []
+        },
+        {
+          "id": 11040,
+          "index": 9,
+          "step": "[BSL2: 8G emmc]\n\n1. 최신 FW에서 FW V1.2.3 미만으로 FW Downgrade 시도\n",
+          "data": "",
+          "result": "1. Upgrade Fail된다.",
+          "attachments": []
+        },
+        {
+          "id": 11041,
+          "index": 10,
+          "step": "[BSL2: 8G emmc가 아닌 경우]\n\n1. 최신 FW에서 FW V1.2.3 미만으로 FW Downgrade 시도\n",
+          "result": "1. Upgrade Success된다.",
+          "attachments": []
+        },
+        {
+          "id": 14578,
+          "index": 11,
+          "step": "[XS2: DTC LCD 적용시료]\n1. 최신FW에서 FW V1.1.1 이하로 FW Downgrade 시도",
+          "data": "",
+          "result": "1. Upgrade Fail된다.\n> 해당시료는 v1.1.2부터 지원",
+          "attachments": []
+        },
+        {
+          "id": 14703,
+          "index": 12,
+          "step": "[XP2: BL573 신규 칩 적용시료]\n1. 최신FW에서 FW V1.2.4 하위버전으로 FW Downgrade 시도",
+          "data": "",
+          "result": "1. Upgrade Fail된다.\n> 해당시료는 v1.2.4부터 지원",
+          "attachments": []
+        },
+        {
+          "id": 14704,
+          "index": 13,
+          "step": "[XP2: BLE - Nordic 적용시료]\n1. 최신FW에서 FW V1.3.0 하위버전으로 FW Downgrade 시도",
+          "data": "",
+          "result": "1. Upgrade Fail된다.\n> 해당시료는 v1.3.0부터 지원",
+          "attachments": []
+        },
+        {
+          "id": 14705,
+          "index": 14,
+          "step": "[W2: HID SE Module 신규적용시료]\n1. 최신FW에서 FW V1.7.0 하위버전으로 FW Downgrade 시도",
+          "data": "",
+          "result": "1. Upgrade Fail된다.\n> 해당시료는 v1.7.0부터 지원",
+          "attachments": []
+        },
+        {
+          "id": 14706,
+          "index": 15,
+          "step": "[N2: BLE - Nordic 적용시료]\n1. 최신FW에서 FW V1.5.0 하위버전으로 FW Downgrade 시도",
+          "data": "",
+          "result": "1. Upgrade Fail된다.\n> 해당시료는 v1.5.0부터 지원",
+          "attachments": []
+        },
+        {
+          "id": 14708,
+          "index": 16,
+          "step": "[N2: HID SE Module 신규적용시료]\n1. 최신FW에서 FW V1.5.0 하위버전으로 FW Downgrade 시도",
+          "result": "1. Upgrade Fail된다.\n> 해당시료는 v1.5.0부터 지원",
+          "attachments": []
+        },
+        {
+          "id": 18096,
+          "index": 17,
+          "step": "[N2: BLE 미지원 시료]\n 1. 최신FW에서 FW V1.5.0 하위버전으로 FW Downgrade 시도",
+          "data": "Data: BLE 미지원 시료\n> BLN2-OA/OD",
+          "result": "1. Upgrade Fail된다.\n> 해당시료는 v1.5.0부터 지원",
+          "attachments": []
+        },
+        {
+          "id": 14709,
+          "index": 18,
+          "step": "1.장치에 메모리 Full로 채운 상태에서 FW Upgrade 시도",
+          "data": "사용자\n> 모든 크리덴셜 저장된 상태로 Full\n\n이벤트 로그 Full\n> 이미지로그(지원시)\n> 일반로그",
+          "result": "1. Upgrade 및 부팅이 정상적으로 이루어져야 한다.",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [],
+      "maxResults": 0,
+      "total": 0,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+      "name": "Minor (C)",
+      "id": "3"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/3",
+      "description": "현재 담당자가 이 이슈를 처리하고 있습니다.",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/inprogress.png",
+      "name": "진행 중",
+      "id": "3",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/4",
+        "id": 4,
+        "key": "indeterminate",
+        "colorName": "yellow",
+        "name": "진행 중"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzs1tb:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2015-07-27T11:19:09.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

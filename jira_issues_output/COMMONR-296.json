@@ -1,347 +1,1564 @@
 {
-  "id": "COMMONR-296",
-  "content": [
-    [
-      1,
-      "[OSDP Device 를 물리적으로 결선하지 않은 상태]\n1. CS40> 마우스 우클릭> Add OSDP Device",
-      "",
-      "1. Virtual Device ID를 가진 장치가 추가된다.\n(실제 아이콘은 Disconnected로 표시)"
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "53745",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/53745",
+  "key": "COMMONR-296",
+  "fields": {
+    "resolution": null,
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "0.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10173",
+      "value": "Major",
+      "id": "10173"
+    },
+    "customfield_10185": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
+      "value": "Medium (2-3일 이내 피드백)",
+      "id": "10220"
+    },
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "50058",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/50058",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "59865",
+          "key": "CSTFW-856",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/59865",
+          "fields": {
+            "summary": "Suprema Slave 장치를 삭제 후 재연결한 다음 CS40 재부팅 시 연결되어 있던 OSDP 장치가 Disconnected 상태로 동작하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/3",
+              "description": "현재 담당자가 이 이슈를 처리하고 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/inprogress.png",
+              "name": "진행 중",
+              "id": "3",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/4",
+                "id": 4,
+                "key": "indeterminate",
+                "colorName": "yellow",
+                "name": "진행 중"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "61874",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/61874",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "71034",
+          "key": "XPASSRII-657",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/71034",
+          "fields": {
+            "summary": "DI-24에 연결한 OSDP 장치의 LED 신호가 정상적으로 표시되지 않음",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/3",
+              "description": "현재 담당자가 이 이슈를 처리하고 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/inprogress.png",
+              "name": "진행 중",
+              "id": "3",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/4",
+                "id": 4,
+                "key": "indeterminate",
+                "colorName": "yellow",
+                "name": "진행 중"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "61805",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/61805",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "70998",
+          "key": "DI24FW-114",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/70998",
+          "fields": {
+            "summary": "DI-24에 연결된 OSDP reader의 Secure Communication 설정을 Not Use로 변경하면 연결이 끊어지고 재연결 되지 않음",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "61809",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/61809",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "71002",
+          "key": "DI24FW-116",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/71002",
+          "fields": {
+            "summary": "DI-24 OSDP reader의 Auth mode를 Card+PIN 설정 후 카드 인증 > PIN 입력하면 Auth Timeout으로 인증 실패함",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "58461",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/58461",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "67640",
+          "key": "CS20FW-32",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/67640",
+          "fields": {
+            "summary": "CS20에 OSDP 장치 추가 시 Invalid Device ID 팝업 발생",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "61728",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/61728",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "70762",
+          "key": "CS20FW-170",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/70762",
+          "fields": {
+            "summary": "DI-24에 연결된 3rd party OSDP(타사 OSDP)장치에 인증시도시 아무런 정보도 들어오지 않음",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "62132",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/62132",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "71330",
+          "key": "CS20FW-202",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/71330",
+          "fields": {
+            "summary": "CS-20의 Host port와 RS485 port중 1개 사용중인 상태에서 OSDP reader가 추가되지 않음",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "62965",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/62965",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "72104",
+          "key": "CS20FW-238",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72104",
+          "fields": {
+            "summary": "[APB ZONE - GLOBAL]아래 설치 환경에서 Global APB Zone 구성 시 DI24에 추가된 OSDP Reader와 Entry, Exit 장치 추가 시 Watchdog Timeout 발생으로 CS20이 재부팅 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "61131",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/61131",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "70375",
+          "key": "DI24FW-64",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/70375",
+          "fields": {
+            "summary": "DI-24에 3rd party OSDP 장치 연결했을 때 로그상으로는 정상적으로 연결되었다고 표시되지만, BioStar에서는 연결되지 않은 UI가 표시되고 동작하지 않음",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "61807",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/61807",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "71000",
+          "key": "DI24FW-115",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/71000",
+          "fields": {
+            "summary": "DI24에 연결된 OSDP Reader에 대해서 Lock 상태를 Unlock 할 수 없는 현상으로 BioStar UI가 비활성화 상태",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "58519",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/58519",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "67733",
+          "key": "CS20FW-39",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/67733",
+          "fields": {
+            "summary": "cs20에 osdp 장치 연결 후 biostar 장치상세에 시리얼 번호 출력안됨",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "61017",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/61017",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "70221",
+          "key": "CS20FW-131",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/70221",
+          "fields": {
+            "summary": "CS20에 OSDP 장치 추가 후 비활성화 후 삭제 시 BioStar 상에는 미표시가 되나,  Diag 상에서는  끊어진 상태로 OSDP 장치 ID가 표시 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "61933",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/61933",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "71093",
+          "key": "CS20FW-189",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/71093",
+          "fields": {
+            "summary": "OSDP 장치로 door 구성 후 dual auth 설정하면 OSDP reader에 인증시 waiting auth나 auth success 효과 대신 auth fail 효과가 나타남",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "62889",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/62889",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "72030",
+          "key": "CS20FW-232",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72030",
+          "fields": {
+            "summary": "DI24 Port 0에 OSDP 장치 추가 시 Watchdog Timeout을 OSDP Reader 장치가 추가 안되거나, CS20이 비정상 재부팅 하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "61821",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/61821",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "70222",
+          "key": "DI24FW-52",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/70222",
+          "fields": {
+            "summary": "DI24에 OSDP 장치 추가 후 비활성화 후 삭제 시 BioStar 상에는 미표시가 되나,  Diag 상에서는  끊어진 상태로 OSDP 장치 ID가 표시 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "63251",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63251",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "72337",
+          "key": "DI24FW-174",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72337",
+          "fields": {
+            "summary": "OSDP Reader의 Buzzer 설정 변경 시  Auth Success을 Constant/Infinite으로 적용 시 인증 성공 발생 상태에서  Auth Success을 OFF로 변경 후  인증 성공 발생 시 Buzzer가 계속 동작 하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10204",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/medium.svg",
+              "name": "Common (B)",
+              "id": "10204"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "61871",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/61871",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "71030",
+          "key": "CS20FW-191",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/71030",
+          "fields": {
+            "summary": "[DI24 - 설정 정보] DI24 FirmWare Upgrade 후 OSDP Reader Port 정보 오류",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "43912",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/43912",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "52415",
+          "key": "BES-387",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/52415",
+          "fields": {
+            "summary": "Test Case 작성",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
+              "id": "5",
+              "description": "이슈의 부작업",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
+              "name": "부작업",
+              "subtask": true,
+              "avatarId": 10316
+            }
+          }
+        }
+      },
+      {
+        "id": "44091",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/44091",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "53859",
+          "key": "BES-530",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/53859",
+          "fields": {
+            "summary": "CLONE - Test Case 작성",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
+              "id": "5",
+              "description": "이슈의 부작업",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
+              "name": "부작업",
+              "subtask": true,
+              "avatarId": 10316
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "[Virtual Device ID를 가진 장치가 추가된 상태]\n1. 설정한 OSDP ID와 동일한 ID를 가진 OSDP Device 가 물리적으로 결선\n2. 통신유무 확인",
-      "",
-      "1. 설정한 OSDP ID와 동일한 ID를 가진 OSDP Device 가 해당 포트에 결선되면 연결이 이루어진다.(RS485 Connected 로그 발생)\n2. OSDP ID에 대한 중복체크가 이루어진다.\n3. CS-40 에 동일 Device ID 로 다른 장치가 연결되면 이벤트를 발생한다.(오류팝업발생)"
-    ],
-    [
-      3,
-      "[OSDP Device 에 세팅되어 있는 OSDP ID 로 연결]\n1. 추가한 OSDP Device 의 설정 진입\n2. Information 확인",
-      "OSDP Device Type \n- OSDP Reader 일 때",
-      "하기의 내용이 정상적으로 표시되어야 한다.\n1. Device Name 표시\n2. Port 정보\n3. Device ID\n4. Vendor Code\n5. Firmware Version\n6. OSDP Device Type\n7. Serial Number\n8. Product Name\n9. Hardware Version \n10. Status 및 Locked"
-    ],
-    [
-      4,
-      "[OSDP Reader가 물리적으로 연결된 상태]\n1. Status를 Active로 설정 후 동작확인",
-      "",
-      "1. 장치의 입력에 따라 CS40이 동작한다.\n> 입력된 Input 및 카드값이 출력된다."
-    ],
-    [
-      5,
-      "[OSDP Reader가 물리적으로 연결된 상태]\n1. Status를 Inactive로 설정 후 동작확인",
-      "",
-      "1. Controller와 OSDP Reader간 폴링을 하지 않으므로 장치의 입력이 발생해도 Controller는 그에 따른 동작을 하지 않는다.\n2. BioStar UI상 아이콘은 Gray 처리가 된다."
-    ],
-    [
-      6,
-      "[OSDP Reader가 물리적으로 연결된 상태]\n1. Network(RS-485) 항목 설정 후 동작확인",
-      "Network 항목\n> OSDP ID\n=> 0~126 설정가능\n> Secure Communication \n=> Default: Use",
-      "1. 장치추가때는 OSDP ID로 입력한 값으로 저장되고 해당 주소로 연결을 시도한다.\n2. 설정된 OSDP ID로 연결된 상태에서 주소 변경시 연결 끊어짐 발생한다.\n3. osdp_keyset은 처음 연결할 때 한번 내려준다.\n4. Key가 내려간 상태라면 비활성화 -> 활성화 시 가지고 있는 키로 통신한다.\n※ Default key를 가지고 있으면 장치에 다시 키를 내림.\n\n-활성화시 Controller는 Secure Key를 내린다.-\n => -활성화된 상태에서 비활성화로 변경후의 동작확인필요-"
-    ],
-    [
-      7,
-      "[OSDP Reader가 물리적으로 연결된 상태]\n1. Authentication 항목 설정 후 동작확인\n> 인증모드 동작\n> Door 설정된 상태에서 Full Access 동작\n> Card + PIN일 때의 Auth Timeout 동작",
-      "Authentication 항목\n> Auth Mode\n=> Card Only & Card + PIN 지원\n> Full Access\n=> Default: Disable\n> Auth Timeout\n=> 3 ~ 20sec 지원(Default: 5)",
-      "1. 설정된 인증모드로 동작된다.\n2. Door 설정된 상태에서 Full Access 설정에 따라 출입허용/거부로 동작된다.\n3. Card+Pin인증모드에서 Card 리드 후 Auth Timeout 설정으로 동작된다.\n> *: 취소\n> #: 입력"
-    ],
-    [
-      8,
-      "[RS485 장치가 추가되지 않은 상태]\n1. CS40> Serial> SCB Key 설정\n2. 설정 저장전에 RS485 장치 연결\n3. 설정저장시도",
-      "",
-      "1. 실패처리 되면서 에러발생한다."
-    ],
-    [
-      9,
-      "[OSDP Reader가 물리적으로 연결된 상태]\n1. CS40> OSDP Device LED/Buzzer 설정\n> Waiting Input\n> Auth Success\n> Auth Fail",
-      "LED\n> Mode\n> Cycle\n> Color/Duration\n=> Color: Off(Black) / RED / GREEN / AMBER / BLUE / MAGENTA / CYAN / WHITE\nBuzzer\n> Mode\n> Cycle\n> Duration",
-      "1. 연결된 OSDP Device의 LED/Buzzer가 설정된대로 동작한다."
-    ],
-    [
-      10,
-      "[OSDP Reader가 물리적으로 연결되어 추가된 상태]\n1. 장치목록에서 OSDP Reader에 해당하는 장치정보 확인",
-      "",
-      "1. OSDP Reader인 경우 Device Address에 OSDP 주소를 표시한다.\n2. Device Status에서는 OSDP 장치의 연결 및 활성화 상태를 표시한다.\n> Normal(Active)\n> Normal(Inactive)\n> Disconnected\n※ Batch Edit에서 OSDP Device Status를 일괄적으로 변경가능하다."
-    ],
-    [
-      11,
-      "1. CS40> Search Slave Device> 추가\n2. Add OSDP Device 추가 시도",
-      "CS40 Port\n> 0~3 & Host",
-      "1. 추가할 수 없다.\n> 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다."
-    ],
-    [
-      12,
-      "1. CS40> Add OSDP Device 추가\n2. Search suprema slave device 추가 시도",
-      "CS40 Port\n> 0~3 & Host",
-      "1. 이미 OSDP Device 가 추가되어 있는 port 에서는 장치를 검색하지 않는다."
-    ],
-    [
-      13,
-      "[Slave 및 OSDP Device와 통신중인 상태]\n1. Device Tree에 CS-40을 우클릭> Reconnected\n2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인",
-      "CS40 Port\n> 0~3 & Host",
-      "1. Reconnected 시 연결이 끊긴다.\n> Slave 및 OSDP Reader에 대해 RS485 Disconnected 로그출력\n2. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력"
-    ],
-    [
-      14,
-      "[Slave 및 OSDP Device와 통신중인 상태]\n1. CS-40이 부팅 후 재연결된 장치들의 통신유무 확인",
-      "CS40 Port\n> 0~3 & Host",
-      "1. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력"
-    ],
-    [
-      15,
-      "1. CS20> Search Slave Device> 추가\n2. Add OSDP Device 추가 시도",
-      "CS20 Port\n> 0~1 & Host",
-      "1. 추가할 수 없다.\n> 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다."
-    ],
-    [
-      16,
-      "1. CS20> Add OSDP Device 추가\n2. Search suprema slave device 추가 시도",
-      "CS20 Port\n> 0~1 & Host",
-      "1. 이미 OSDP Device 가 추가되어 있는 port 에서는 장치를 검색하지 않는다."
-    ],
-    [
-      17,
-      "[Slave 및 OSDP Device와 통신중인 상태]\n1. Device Tree에 CS-20을 우클릭> Reconnected\n2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인",
-      "CS20 Port\n> 0~1 & Host",
-      "1. Reconnected 시 연결이 끊긴다.\n> Slave 및 OSDP Reader에 대해 RS485 Disconnected 로그출력\n2. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력"
-    ],
-    [
-      18,
-      "[Slave 및 OSDP Device와 통신중인 상태]\n1.CS-20이 부팅 후 재연결된 장치들의 통신유무 확인",
-      "CS20 Port\n> 0~1 & Host",
-      "1. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력"
-    ],
-    [
-      19,
-      "1. DI24> Search Slave Device> 추가\n2. Add OSDP Device 추가 시도",
-      "DI24 Port\n> 0~1",
-      "1. 추가할 수 없다.\n> 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다."
-    ],
-    [
-      20,
-      "1. DI24> Add OSDP Device 추가\n2. Search suprema slave device 추가 시도",
-      "DI24 Port\n> 0~1",
-      "1. 이미 OSDP Device 가 추가되어 있는 port 에서는 장치를 검색하지 않는다."
-    ],
-    [
-      21,
-      "[Slave 및 OSDP Device와 통신중인 상태]\n1. Device Tree에 DI24을 우클릭> Reboot\n2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인",
-      "DI24 Port\n> 0~1",
-      "1. Reboot 시 연결이 끊긴다.\n> Slave 및 OSDP Reader에 대해 RS485 Disconnected 로그출력\n2. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력"
-    ],
-    [
-      22,
-      "[Slave 및 OSDP Device와 통신중인 상태]\n1.DI24이 부팅 후 재연결된 장치들의 통신유무 확인",
-      "DI24 Port\n> 0~1",
-      "1. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력"
-    ],
-    [
-      23,
-      "[OSDP Device 통신중인 상태]\n1. OSDP Device ID 변경 후 저장 단계를 2~3회 반복\n2. OSDP Device ID 변경 전 ID로 원복\n3. CS40 Reboot\n4. 부팅완료 후 OSDP Device와의 통신상태 확인",
-      "",
-      "1. 마지막에 설정한 OSDP Device ID로 Master와 통신이 이루어진다.\n> 1번 설정 시 OSDP Device와 CS20/40의 연결이 끊어진다."
-    ],
-    [
-      24,
-      "1. CS40> TriggerAction\n2. OSDP Device에서 Tamper 발생에 대한 설정\n3. OSDP Device에서 Tamper 발생",
-      "Trigger Action\n> Trigger - OSDP Device / Tamper On\n\n[BioStar]\nAction Device : Master / Slave / OSDP Reader\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨",
-      "1.OSDP Device 의 Tamper 이벤트를 발생시키다.\n2.Trigger에 의한 Action이 발생한다.\n> OSDP Reader - Disable Device만 표시 "
-    ],
-    [
-      25,
-      "1. Door 생성\n2. OSDP Device로 Door 구성\n3. OSDP Device에 인증시도",
-      "",
-      "1. 인증성공시 Relay가 동작되어야 한다."
-    ],
-    [
-      26,
-      "1. Door 생성\n2. OSDP Device로 Door 구성> 이중인증 설정\n3. OSDP Device에 인증시도",
-      "이중인증 설정\n> OSDP Device",
-      "1. A 사용자 인증 후 인증성공 로그가 출력되고 입력대기상태의 LED가 점멸된다.\n2. B 사용자 인증 후 인증성공로그가 출력되면서 이중인증성공/Relay On/Relay Off 로그가 출력된다."
-    ],
-    [
-      27,
-      "1. Door 생성\n2. OSDP Device로 Door 구성> APB 설정\n3. OSDP Device에 동일사용자로 반복인증시도",
-      "APB 설정\n> Soft APB\n> Hard APB",
-      "1. Soft APB시 인증성공 및 Relay가 동작한다.\n2. Hard APB시 인증실패 및 Relay가 동작하지 않는다."
-    ],
-    [
-      28,
-      "1. Floor 생성\n2. OSDP Device로 Reader 구성\n3. OSDP Device에 인증시도",
-      "",
-      "1. 인증성공시 설정된 Port의 Relay가 동작되어야 한다."
-    ],
-    [
-      29,
-      "1. APB Zone 생성\n2. OSDP Device로 Zone 구성\n3. OSDP Device에 동일사용자로 반복 인증시도",
-      "모드\n> Local\n> Global\n\nAPB 설정\n> Soft APB\n> Hard APB",
-      "1. Soft APB시 인증성공 및 Relay가 동작한다.\n2. Hard APB시 인증실패 및 Relay가 동작하지 않는다."
-    ],
-    [
-      30,
-      "1. Intrusion Alarm Zone 생성\n2. ODSP Device로 경비해제(장치) 설정\n3. 경비/해제 등 동작확인",
-      "경비종류\n> 경비\n> 해제\n> 경비/해제",
-      "1. 경비진입/경비해제로 동작한다."
-    ],
-    [
-      31,
-      "[v1.6.1 이전 버전에서Slave Device 추가]\n1. CS40 V1.6.1 이상버전으로 FW Upgrade\n2. Add OSDP Device 추가 시도",
-      "CS40 Port\n> 0~3 & Host",
-      "1. 추가할 수 없다.\n> 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다."
-    ],
-    [
-      32,
-      "[Slave Device 추가]\n1. CS20 v1.0.1 / DI24 v1.0.0 FW Upgrade\n2. Add OSDP Device 추가 시도",
-      "CS20 / DI24 Port\n> 0~1",
-      "1. 추가할 수 없다.\n> 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다."
-    ],
-    [
-      33,
-      "1. CoreStation에 SCB Key 설정\n2. OSDP Reader 추가\n3. 통신유무확인 ",
-      "CoreStation에서의 SCB Key - 3으로 값을 채워서 설정\n \n추가할 OSDP Reader가 설정된 Key - Default key",
-      "1. Default Key로 통신한다.\n※ OSDP Default Key로 연결을 한 다음에 통신이 되면 그때 Reader에 SCB Key를 내려준다."
-    ],
-    [
-      34,
-      "1. CoreStation에 SCB Key 설정\n2. OSDP Reader 추가\n3. 통신유무확인 ",
-      "SCB Key - 3으로 값을 채워서 설정\n \n추가할 OSDP Reader Key - 1~1로 설정된 key",
-      "1. SCB Key가 상이하기에 통신이 되지 않는다.\n> Disconnected로 동작됨."
-    ],
-    [
-      35,
-      "1. 3rd Party ODDP 장치 연결\n2. 장치 삭제",
-      "1. 상태 : Active\n2. 상태 : Inactive",
-      "1. 장치가 정상적으로 삭제되어야 한다.\n> DIAG log상에서 사라져야 한다.(CS20FW-131)"
-    ],
-    [
-      36,
-      "1. 3rd Party ODDP 장치 연결\n2. 상세페이지 진입 > Secure Communicatoin 설정 변경\n3. Apply",
-      "1. 상태 : Use\n2. 상태 : Not Use",
-      "1. Secure Communication 상태와 관계없이 정상적으로 통신이 되고 동작해야 한다."
-    ],
-    [
-      37,
-      "[Disable Device 발생 상태]\n1. OSDP Reader에 인증시도",
-      "Trigger & Action \n> Trigger 설정 : Input 접지, Event 발생\n> Action 설정 : Disable Device ",
-      "1. Lock되어 카드입력이 막혀야 한다."
-    ],
-    [
-      38,
-      "[Disable Device 발생 상태]\n1. Device> OSDP Reader>Information> Locked : Unlock\n2. OSDP Reader에 인증시도",
-      "",
-      "1. Unlock 버튼 클릭시 Lock 해제되어야 한다.\n2. 카드입력을 받아 인증 성공/ 실패로 동작되어야 한다.\n\n 카드입력에 대한 인증성공/실패 로그가 남아야 한다."
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-296",
-    "description": "",
-    "test_step": [
-      "[OSDP Device 를 물리적으로 결선하지 않은 상태]\n1. CS40> 마우스 우클릭> Add OSDP Device",
-      "[Virtual Device ID를 가진 장치가 추가된 상태]\n1. 설정한 OSDP ID와 동일한 ID를 가진 OSDP Device 가 물리적으로 결선\n2. 통신유무 확인",
-      "[OSDP Device 에 세팅되어 있는 OSDP ID 로 연결]\n1. 추가한 OSDP Device 의 설정 진입\n2. Information 확인",
-      "[OSDP Reader가 물리적으로 연결된 상태]\n1. Status를 Active로 설정 후 동작확인",
-      "[OSDP Reader가 물리적으로 연결된 상태]\n1. Status를 Inactive로 설정 후 동작확인",
-      "[OSDP Reader가 물리적으로 연결된 상태]\n1. Network(RS-485) 항목 설정 후 동작확인",
-      "[OSDP Reader가 물리적으로 연결된 상태]\n1. Authentication 항목 설정 후 동작확인\n> 인증모드 동작\n> Door 설정된 상태에서 Full Access 동작\n> Card + PIN일 때의 Auth Timeout 동작",
-      "[RS485 장치가 추가되지 않은 상태]\n1. CS40> Serial> SCB Key 설정\n2. 설정 저장전에 RS485 장치 연결\n3. 설정저장시도",
-      "[OSDP Reader가 물리적으로 연결된 상태]\n1. CS40> OSDP Device LED/Buzzer 설정\n> Waiting Input\n> Auth Success\n> Auth Fail",
-      "[OSDP Reader가 물리적으로 연결되어 추가된 상태]\n1. 장치목록에서 OSDP Reader에 해당하는 장치정보 확인",
-      "1. CS40> Search Slave Device> 추가\n2. Add OSDP Device 추가 시도",
-      "1. CS40> Add OSDP Device 추가\n2. Search suprema slave device 추가 시도",
-      "[Slave 및 OSDP Device와 통신중인 상태]\n1. Device Tree에 CS-40을 우클릭> Reconnected\n2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인",
-      "[Slave 및 OSDP Device와 통신중인 상태]\n1. CS-40이 부팅 후 재연결된 장치들의 통신유무 확인",
-      "1. CS20> Search Slave Device> 추가\n2. Add OSDP Device 추가 시도",
-      "1. CS20> Add OSDP Device 추가\n2. Search suprema slave device 추가 시도",
-      "[Slave 및 OSDP Device와 통신중인 상태]\n1. Device Tree에 CS-20을 우클릭> Reconnected\n2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인",
-      "[Slave 및 OSDP Device와 통신중인 상태]\n1.CS-20이 부팅 후 재연결된 장치들의 통신유무 확인",
-      "1. DI24> Search Slave Device> 추가\n2. Add OSDP Device 추가 시도",
-      "1. DI24> Add OSDP Device 추가\n2. Search suprema slave device 추가 시도",
-      "[Slave 및 OSDP Device와 통신중인 상태]\n1. Device Tree에 DI24을 우클릭> Reboot\n2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인",
-      "[Slave 및 OSDP Device와 통신중인 상태]\n1.DI24이 부팅 후 재연결된 장치들의 통신유무 확인",
-      "[OSDP Device 통신중인 상태]\n1. OSDP Device ID 변경 후 저장 단계를 2~3회 반복\n2. OSDP Device ID 변경 전 ID로 원복\n3. CS40 Reboot\n4. 부팅완료 후 OSDP Device와의 통신상태 확인",
-      "1. CS40> TriggerAction\n2. OSDP Device에서 Tamper 발생에 대한 설정\n3. OSDP Device에서 Tamper 발생",
-      "1. Door 생성\n2. OSDP Device로 Door 구성\n3. OSDP Device에 인증시도",
-      "1. Door 생성\n2. OSDP Device로 Door 구성> 이중인증 설정\n3. OSDP Device에 인증시도",
-      "1. Door 생성\n2. OSDP Device로 Door 구성> APB 설정\n3. OSDP Device에 동일사용자로 반복인증시도",
-      "1. Floor 생성\n2. OSDP Device로 Reader 구성\n3. OSDP Device에 인증시도",
-      "1. APB Zone 생성\n2. OSDP Device로 Zone 구성\n3. OSDP Device에 동일사용자로 반복 인증시도",
-      "1. Intrusion Alarm Zone 생성\n2. ODSP Device로 경비해제(장치) 설정\n3. 경비/해제 등 동작확인",
-      "[v1.6.1 이전 버전에서Slave Device 추가]\n1. CS40 V1.6.1 이상버전으로 FW Upgrade\n2. Add OSDP Device 추가 시도",
-      "[Slave Device 추가]\n1. CS20 v1.0.1 / DI24 v1.0.0 FW Upgrade\n2. Add OSDP Device 추가 시도",
-      "1. CoreStation에 SCB Key 설정\n2. OSDP Reader 추가\n3. 통신유무확인 ",
-      "1. CoreStation에 SCB Key 설정\n2. OSDP Reader 추가\n3. 통신유무확인 ",
-      "1. 3rd Party ODDP 장치 연결\n2. 장치 삭제",
-      "1. 3rd Party ODDP 장치 연결\n2. 상세페이지 진입 > Secure Communicatoin 설정 변경\n3. Apply",
-      "[Disable Device 발생 상태]\n1. OSDP Reader에 인증시도",
-      "[Disable Device 발생 상태]\n1. Device> OSDP Reader>Information> Locked : Unlock\n2. OSDP Reader에 인증시도"
-    ],
-    "data": [
-      "OSDP Device Type \n- OSDP Reader 일 때",
-      "Network 항목\n> OSDP ID\n=> 0~126 설정가능\n> Secure Communication \n=> Default: Use",
-      "Authentication 항목\n> Auth Mode\n=> Card Only & Card + PIN 지원\n> Full Access\n=> Default: Disable\n> Auth Timeout\n=> 3 ~ 20sec 지원(Default: 5)",
-      "LED\n> Mode\n> Cycle\n> Color/Duration\n=> Color: Off(Black) / RED / GREEN / AMBER / BLUE / MAGENTA / CYAN / WHITE\nBuzzer\n> Mode\n> Cycle\n> Duration",
-      "CS40 Port\n> 0~3 & Host",
-      "CS40 Port\n> 0~3 & Host",
-      "CS40 Port\n> 0~3 & Host",
-      "CS40 Port\n> 0~3 & Host",
-      "CS20 Port\n> 0~1 & Host",
-      "CS20 Port\n> 0~1 & Host",
-      "CS20 Port\n> 0~1 & Host",
-      "CS20 Port\n> 0~1 & Host",
-      "DI24 Port\n> 0~1",
-      "DI24 Port\n> 0~1",
-      "DI24 Port\n> 0~1",
-      "DI24 Port\n> 0~1",
-      "Trigger Action\n> Trigger - OSDP Device / Tamper On\n\n[BioStar]\nAction Device : Master / Slave / OSDP Reader\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨",
-      "이중인증 설정\n> OSDP Device",
-      "APB 설정\n> Soft APB\n> Hard APB",
-      "모드\n> Local\n> Global\n\nAPB 설정\n> Soft APB\n> Hard APB",
-      "경비종류\n> 경비\n> 해제\n> 경비/해제",
-      "CS40 Port\n> 0~3 & Host",
-      "CS20 / DI24 Port\n> 0~1",
-      "CoreStation에서의 SCB Key - 3으로 값을 채워서 설정\n \n추가할 OSDP Reader가 설정된 Key - Default key",
-      "SCB Key - 3으로 값을 채워서 설정\n \n추가할 OSDP Reader Key - 1~1로 설정된 key",
-      "1. 상태 : Active\n2. 상태 : Inactive",
-      "1. 상태 : Use\n2. 상태 : Not Use",
-      "Trigger & Action \n> Trigger 설정 : Input 접지, Event 발생\n> Action 설정 : Disable Device "
-    ],
-    "expected_result": [
-      "1. Virtual Device ID를 가진 장치가 추가된다.\n(실제 아이콘은 Disconnected로 표시)",
-      "1. 설정한 OSDP ID와 동일한 ID를 가진 OSDP Device 가 해당 포트에 결선되면 연결이 이루어진다.(RS485 Connected 로그 발생)\n2. OSDP ID에 대한 중복체크가 이루어진다.\n3. CS-40 에 동일 Device ID 로 다른 장치가 연결되면 이벤트를 발생한다.(오류팝업발생)",
-      "하기의 내용이 정상적으로 표시되어야 한다.\n1. Device Name 표시\n2. Port 정보\n3. Device ID\n4. Vendor Code\n5. Firmware Version\n6. OSDP Device Type\n7. Serial Number\n8. Product Name\n9. Hardware Version \n10. Status 및 Locked",
-      "1. 장치의 입력에 따라 CS40이 동작한다.\n> 입력된 Input 및 카드값이 출력된다.",
-      "1. Controller와 OSDP Reader간 폴링을 하지 않으므로 장치의 입력이 발생해도 Controller는 그에 따른 동작을 하지 않는다.\n2. BioStar UI상 아이콘은 Gray 처리가 된다.",
-      "1. 장치추가때는 OSDP ID로 입력한 값으로 저장되고 해당 주소로 연결을 시도한다.\n2. 설정된 OSDP ID로 연결된 상태에서 주소 변경시 연결 끊어짐 발생한다.\n3. osdp_keyset은 처음 연결할 때 한번 내려준다.\n4. Key가 내려간 상태라면 비활성화 -> 활성화 시 가지고 있는 키로 통신한다.\n※ Default key를 가지고 있으면 장치에 다시 키를 내림.\n\n-활성화시 Controller는 Secure Key를 내린다.-\n => -활성화된 상태에서 비활성화로 변경후의 동작확인필요-",
-      "1. 설정된 인증모드로 동작된다.\n2. Door 설정된 상태에서 Full Access 설정에 따라 출입허용/거부로 동작된다.\n3. Card+Pin인증모드에서 Card 리드 후 Auth Timeout 설정으로 동작된다.\n> *: 취소\n> #: 입력",
-      "1. 실패처리 되면서 에러발생한다.",
-      "1. 연결된 OSDP Device의 LED/Buzzer가 설정된대로 동작한다.",
-      "1. OSDP Reader인 경우 Device Address에 OSDP 주소를 표시한다.\n2. Device Status에서는 OSDP 장치의 연결 및 활성화 상태를 표시한다.\n> Normal(Active)\n> Normal(Inactive)\n> Disconnected\n※ Batch Edit에서 OSDP Device Status를 일괄적으로 변경가능하다.",
-      "1. 추가할 수 없다.\n> 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다.",
-      "1. 이미 OSDP Device 가 추가되어 있는 port 에서는 장치를 검색하지 않는다.",
-      "1. Reconnected 시 연결이 끊긴다.\n> Slave 및 OSDP Reader에 대해 RS485 Disconnected 로그출력\n2. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력",
-      "1. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력",
-      "1. 추가할 수 없다.\n> 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다.",
-      "1. 이미 OSDP Device 가 추가되어 있는 port 에서는 장치를 검색하지 않는다.",
-      "1. Reconnected 시 연결이 끊긴다.\n> Slave 및 OSDP Reader에 대해 RS485 Disconnected 로그출력\n2. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력",
-      "1. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력",
-      "1. 추가할 수 없다.\n> 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다.",
-      "1. 이미 OSDP Device 가 추가되어 있는 port 에서는 장치를 검색하지 않는다.",
-      "1. Reboot 시 연결이 끊긴다.\n> Slave 및 OSDP Reader에 대해 RS485 Disconnected 로그출력\n2. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력",
-      "1. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력",
-      "1. 마지막에 설정한 OSDP Device ID로 Master와 통신이 이루어진다.\n> 1번 설정 시 OSDP Device와 CS20/40의 연결이 끊어진다.",
-      "1.OSDP Device 의 Tamper 이벤트를 발생시키다.\n2.Trigger에 의한 Action이 발생한다.\n> OSDP Reader - Disable Device만 표시 ",
-      "1. 인증성공시 Relay가 동작되어야 한다.",
-      "1. A 사용자 인증 후 인증성공 로그가 출력되고 입력대기상태의 LED가 점멸된다.\n2. B 사용자 인증 후 인증성공로그가 출력되면서 이중인증성공/Relay On/Relay Off 로그가 출력된다.",
-      "1. Soft APB시 인증성공 및 Relay가 동작한다.\n2. Hard APB시 인증실패 및 Relay가 동작하지 않는다.",
-      "1. 인증성공시 설정된 Port의 Relay가 동작되어야 한다.",
-      "1. Soft APB시 인증성공 및 Relay가 동작한다.\n2. Hard APB시 인증실패 및 Relay가 동작하지 않는다.",
-      "1. 경비진입/경비해제로 동작한다.",
-      "1. 추가할 수 없다.\n> 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다.",
-      "1. 추가할 수 없다.\n> 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다.",
-      "1. Default Key로 통신한다.\n※ OSDP Default Key로 연결을 한 다음에 통신이 되면 그때 Reader에 SCB Key를 내려준다.",
-      "1. SCB Key가 상이하기에 통신이 되지 않는다.\n> Disconnected로 동작됨.",
-      "1. 장치가 정상적으로 삭제되어야 한다.\n> DIAG log상에서 사라져야 한다.(CS20FW-131)",
-      "1. Secure Communication 상태와 관계없이 정상적으로 통신이 되고 동작해야 한다.",
-      "1. Lock되어 카드입력이 막혀야 한다.",
-      "1. Unlock 버튼 클릭시 Lock 해제되어야 한다.\n2. 카드입력을 받아 인증 성공/ 실패로 동작되어야 한다.\n\n 카드입력에 대한 인증성공/실패 로그가 남아야 한다."
-    ]
+    "assignee": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 38.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-296/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@45e0a4[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@525a9c96[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@3e748fef[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@384c0a9b[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@59976b65[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@1028cba2[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@a3935bf[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@5279feb1[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@30577bd8[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@6674c3ab[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@25238617[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@38327874[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": null,
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-296/watchers",
+      "watchCount": 1,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-06-10T17:20:52.000+0900",
+    "timeoriginalestimate": null,
+    "description": "https://jira.suprema.co.kr/browse/BDP-685\r\n\r\nCS-40 을 ACU 로 하여, 타사 OSDP device 를 PD 로 연결하여 사용하기 지원\r\n\r\n1.1 지원 OSDP 버전 : OSDP 2.2\r\n 1.2 대상 OSDP Device\r\n > HID\r\n => HID® Signo™ Keypad Reader 20 & 20K (OSDP certified)\r\n > STid\r\n => ARCS-A/BT & B/BT (OSDP certified)\r\n\r\n1.3 OSDP Device 연결방법\r\n > 제조사가 제공하는 툴을 이용해 Device ID 미리 세팅한 후에 등록하는 걸 전제로 함.\r\n > OSDP ID 설정(변경)을 제공하지 않는다.\r\n > OSDP ID 의 중복 체크\r\n > OSDP Device 를 실제 연결하기 전에 OSDP 장치를 추가 및 설정할 수 있다. (설정한 OSDP ID와 동일한 ID를 가진 OSDP Device 가 해당 포트에 결선되면 연결이 이루어짐)\r\n\r\n1.4 3rd party OSDP device 지원 대수\r\n > 한 채널 당 2대, 총 8대까지 연결할 수 있다.\r\n\r\n1.5 OSDP Reader\r\n > 연결한 OSDP device 가 인증을 위한 카드 리더일 때, 이 타입을 선택한다.\r\n > Authentication, Unlock 설정이 가능하다.\r\n > CS-40 의 장치 Trigger & Action 설정에서 Trigger 로 활용할 수 있다.\r\n > OSDP Reader 정상 연결 상태는 Normal(Active), Normal(Inactive)로 출력\r\n > OSDP Reader 중 연결이 해제된 상태는 Disconnected 상태 유지 됨\r\n=> Normal(Active) : OSDP Device 가 CS-40에 정상적으로 연결되어 있으며, CS-40이 OSDP Device 의 메시지에 대한 동작을 수행한다.\r\n=>Normal(Inactive) : OSDP Device 가 CS-40에 정상적으로 연결되어 있으나, CS-40이 OSDP Device 의 메시지에 대한 동작을 수행하지 않는다.\r\n=> Disconnected : OSDP Device 가 CS-40에 연결이 해제됨.\r\n=> 연결이 해제되었다가 다시 연결되는 경우 마지막 상태로 변경되어야 한다.\r\n==> Normal(Inactive) 상태에서 연결이 해제되어 Disconnected 로 변경되었다가 다시 연결이 정상적으로 돌아오면 여전히 Normal(Inactive) 상태가 유지되어야 한다.\r\n\r\n1.6 LED/Buzzer 설정 \r\n - Waiting Input\r\n - Auth Succeess\r\n - Auth Fail\r\n\r\n — 이벤트 별 LED 의 기본값\r\n||LED Event||Mode||Cycle||Color 1 ||Color 1 Duration||Color 2||Color 1 Duration||\r\n|Waiting Input|Blinking|Infinite|Green|300|OFF(Black)|300|\r\n|Auth Success|Constant|-|Green|1000|-|-|\r\n|Auth Fail|Constant|-|Red|1000|-|-|\r\n\r\n— 이벤트 별 Buzzer 의 기본값 \r\n||Buzzer Event||Mode||Cycle||On Duration||OFF Duration||\r\n|Waiting Input|OFF|-|-|-|\r\n|Auth Success|Constant|-|200ms|-|\r\n|Auth Fail|Beeping|2|100ms|100ms|\r\n\r\n1.7 OSDP device 지원 범위\r\n> 출입문\r\n> 구역\r\n> 엘리베이터\r\n※ 미지원: 글로벌 트리거앤액션\r\n\r\n1.8 지원 가능한 구역 종류\r\n> APB: Local/Global\r\n> Fire Alarm: Local/Global\r\n> Scheduled Lock\r\n> Scheduled Unlock\r\n> Intrusion Alarm\r\n> Interlock\r\n> Muster",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p><span class=\"error\">&#91;OSDP Device 를 물리적으로 결선하지 않은 상태&#93;</span><br/>1. CS40&gt; 마우스 우클릭&gt; Add OSDP Device</p></td><td></td><td><p>1. Virtual Device ID를 가진 장치가 추가된다.<br/>(실제 아이콘은 Disconnected로 표시)</p></td></tr><tr><td>2</td><td><p><span class=\"error\">&#91;Virtual Device ID를 가진 장치가 추가된 상태&#93;</span><br/>1. 설정한 OSDP ID와 동일한 ID를 가진 OSDP Device 가 물리적으로 결선<br/>2. 통신유무 확인</p></td><td></td><td><p>1. 설정한 OSDP ID와 동일한 ID를 가진 OSDP Device 가 해당 포트에 결선되면 연결이 이루어진다.(RS485 Connected 로그 발생)<br/>2. OSDP ID에 대한 중복체크가 이루어진다.<br/>3. CS-40 에 동일 Device ID 로 다른 장치가 연결되면 이벤트를 발생한다.(오류팝업발생)</p></td></tr><tr><td>3</td><td><p><span class=\"error\">&#91;OSDP Device 에 세팅되어 있는 OSDP ID 로 연결&#93;</span><br/>1. 추가한 OSDP Device 의 설정 진입<br/>2. Information 확인</p></td><td><p>OSDP Device Type </p>\n<ul class=\"alternate\" type=\"square\">\n<li>OSDP Reader 일 때</li>\n</ul>\n</td><td><p>하기의 내용이 정상적으로 표시되어야 한다.<br/>1. Device Name 표시<br/>2. Port 정보<br/>3. Device ID<br/>4. Vendor Code<br/>5. Firmware Version<br/>6. OSDP Device Type<br/>7. Serial Number<br/>8. Product Name<br/>9. Hardware Version <br/>10. Status 및 Locked</p></td></tr><tr><td>4</td><td><p><span class=\"error\">&#91;OSDP Reader가 물리적으로 연결된 상태&#93;</span><br/>1. Status를 Active로 설정 후 동작확인</p></td><td></td><td><p>1. 장치의 입력에 따라 CS40이 동작한다.<br/>&gt; 입력된 Input 및 카드값이 출력된다.</p></td></tr><tr><td>5</td><td><p><span class=\"error\">&#91;OSDP Reader가 물리적으로 연결된 상태&#93;</span><br/>1. Status를 Inactive로 설정 후 동작확인</p></td><td></td><td><p>1. Controller와 OSDP Reader간 폴링을 하지 않으므로 장치의 입력이 발생해도 Controller는 그에 따른 동작을 하지 않는다.<br/>2. BioStar UI상 아이콘은 Gray 처리가 된다.</p></td></tr><tr><td>6</td><td><p><span class=\"error\">&#91;OSDP Reader가 물리적으로 연결된 상태&#93;</span><br/>1. Network(RS-485) 항목 설정 후 동작확인</p></td><td><p>Network 항목<br/>&gt; OSDP ID<br/>=&gt; 0~126 설정가능<br/>&gt; Secure Communication <br/>=&gt; Default: Use</p></td><td><p>1. 장치추가때는 OSDP ID로 입력한 값으로 저장되고 해당 주소로 연결을 시도한다.<br/>2. 설정된 OSDP ID로 연결된 상태에서 주소 변경시 연결 끊어짐 발생한다.<br/>3. osdp_keyset은 처음 연결할 때 한번 내려준다.<br/>4. Key가 내려간 상태라면 비활성화 -&gt; 활성화 시 가지고 있는 키로 통신한다.<br/>※ Default key를 가지고 있으면 장치에 다시 키를 내림.</p>\n\n<p><del>활성화시 Controller는 Secure Key를 내린다.</del><br/> =&gt; <del>활성화된 상태에서 비활성화로 변경후의 동작확인필요</del></p></td></tr><tr><td>7</td><td><p><span class=\"error\">&#91;OSDP Reader가 물리적으로 연결된 상태&#93;</span><br/>1. Authentication 항목 설정 후 동작확인<br/>&gt; 인증모드 동작<br/>&gt; Door 설정된 상태에서 Full Access 동작<br/>&gt; Card + PIN일 때의 Auth Timeout 동작</p></td><td><p>Authentication 항목<br/>&gt; Auth Mode<br/>=&gt; Card Only &amp; Card + PIN 지원<br/>&gt; Full Access<br/>=&gt; Default: Disable<br/>&gt; Auth Timeout<br/>=&gt; 3 ~ 20sec 지원(Default: 5)</p></td><td><p>1. 설정된 인증모드로 동작된다.<br/>2. Door 설정된 상태에서 Full Access 설정에 따라 출입허용/거부로 동작된다.<br/>3. Card+Pin인증모드에서 Card 리드 후 Auth Timeout 설정으로 동작된다.<br/>&gt; *: 취소<br/>&gt; #: 입력</p></td></tr><tr><td>8</td><td><p><span class=\"error\">&#91;RS485 장치가 추가되지 않은 상태&#93;</span><br/>1. CS40&gt; Serial&gt; SCB Key 설정<br/>2. 설정 저장전에 RS485 장치 연결<br/>3. 설정저장시도</p></td><td></td><td><p>1. 실패처리 되면서 에러발생한다.</p></td></tr><tr><td>9</td><td><p><span class=\"error\">&#91;OSDP Reader가 물리적으로 연결된 상태&#93;</span><br/>1. CS40&gt; OSDP Device LED/Buzzer 설정<br/>&gt; Waiting Input<br/>&gt; Auth Success<br/>&gt; Auth Fail</p></td><td><p>LED<br/>&gt; Mode<br/>&gt; Cycle<br/>&gt; Color/Duration<br/>=&gt; Color: Off(Black) / RED / GREEN / AMBER / BLUE / MAGENTA / CYAN / WHITE<br/>Buzzer<br/>&gt; Mode<br/>&gt; Cycle<br/>&gt; Duration</p></td><td><p>1. 연결된 OSDP Device의 LED/Buzzer가 설정된대로 동작한다.</p></td></tr><tr><td>10</td><td><p><span class=\"error\">&#91;OSDP Reader가 물리적으로 연결되어 추가된 상태&#93;</span><br/>1. 장치목록에서 OSDP Reader에 해당하는 장치정보 확인</p></td><td></td><td><p>1. OSDP Reader인 경우 Device Address에 OSDP 주소를 표시한다.<br/>2. Device Status에서는 OSDP 장치의 연결 및 활성화 상태를 표시한다.<br/>&gt; Normal(Active)<br/>&gt; Normal(Inactive)<br/>&gt; Disconnected<br/>※ Batch Edit에서 OSDP Device Status를 일괄적으로 변경가능하다.</p></td></tr><tr><td>11</td><td><p>1. CS40&gt; Search Slave Device&gt; 추가<br/>2. Add OSDP Device 추가 시도</p></td><td><p>CS40 Port<br/>&gt; 0~3 &amp; Host</p></td><td><p>1. 추가할 수 없다.<br/>&gt; 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다.</p></td></tr><tr><td>12</td><td><p>1. CS40&gt; Add OSDP Device 추가<br/>2. Search suprema slave device 추가 시도</p></td><td><p>CS40 Port<br/>&gt; 0~3 &amp; Host</p></td><td><p>1. 이미 OSDP Device 가 추가되어 있는 port 에서는 장치를 검색하지 않는다.</p></td></tr><tr><td>13</td><td><p><span class=\"error\">&#91;Slave 및 OSDP Device와 통신중인 상태&#93;</span><br/>1. Device Tree에 CS-40을 우클릭&gt; Reconnected<br/>2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인</p></td><td><p>CS40 Port<br/>&gt; 0~3 &amp; Host</p></td><td><p>1. Reconnected 시 연결이 끊긴다.<br/>&gt; Slave 및 OSDP Reader에 대해 RS485 Disconnected 로그출력<br/>2. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력</p></td></tr><tr><td>14</td><td><p><span class=\"error\">&#91;Slave 및 OSDP Device와 통신중인 상태&#93;</span><br/>1. CS-40이 부팅 후 재연결된 장치들의 통신유무 확인</p></td><td><p>CS40 Port<br/>&gt; 0~3 &amp; Host</p></td><td><p>1. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력</p></td></tr><tr><td>15</td><td><p>1. CS20&gt; Search Slave Device&gt; 추가<br/>2. Add OSDP Device 추가 시도</p></td><td><p>CS20 Port<br/>&gt; 0~1 &amp; Host</p></td><td><p>1. 추가할 수 없다.<br/>&gt; 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다.</p></td></tr><tr><td>16</td><td><p>1. CS20&gt; Add OSDP Device 추가<br/>2. Search suprema slave device 추가 시도</p></td><td><p>CS20 Port<br/>&gt; 0~1 &amp; Host</p></td><td><p>1. 이미 OSDP Device 가 추가되어 있는 port 에서는 장치를 검색하지 않는다.</p></td></tr><tr><td>17</td><td><p><span class=\"error\">&#91;Slave 및 OSDP Device와 통신중인 상태&#93;</span><br/>1. Device Tree에 CS-20을 우클릭&gt; Reconnected<br/>2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인</p></td><td><p>CS20 Port<br/>&gt; 0~1 &amp; Host</p></td><td><p>1. Reconnected 시 연결이 끊긴다.<br/>&gt; Slave 및 OSDP Reader에 대해 RS485 Disconnected 로그출력<br/>2. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력</p></td></tr><tr><td>18</td><td><p><span class=\"error\">&#91;Slave 및 OSDP Device와 통신중인 상태&#93;</span><br/>1.CS-20이 부팅 후 재연결된 장치들의 통신유무 확인</p></td><td><p>CS20 Port<br/>&gt; 0~1 &amp; Host</p></td><td><p>1. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력</p></td></tr><tr><td>19</td><td><p>1. DI24&gt; Search Slave Device&gt; 추가<br/>2. Add OSDP Device 추가 시도</p></td><td><p>DI24 Port<br/>&gt; 0~1</p></td><td><p>1. 추가할 수 없다.<br/>&gt; 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다.</p></td></tr><tr><td>20</td><td><p>1. DI24&gt; Add OSDP Device 추가<br/>2. Search suprema slave device 추가 시도</p></td><td><p>DI24 Port<br/>&gt; 0~1</p></td><td><p>1. 이미 OSDP Device 가 추가되어 있는 port 에서는 장치를 검색하지 않는다.</p></td></tr><tr><td>21</td><td><p><span class=\"error\">&#91;Slave 및 OSDP Device와 통신중인 상태&#93;</span><br/>1. Device Tree에 DI24을 우클릭&gt; Reboot<br/>2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인</p></td><td><p>DI24 Port<br/>&gt; 0~1</p></td><td><p>1. Reboot 시 연결이 끊긴다.<br/>&gt; Slave 및 OSDP Reader에 대해 RS485 Disconnected 로그출력<br/>2. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력</p></td></tr><tr><td>22</td><td><p><span class=\"error\">&#91;Slave 및 OSDP Device와 통신중인 상태&#93;</span><br/>1.DI24이 부팅 후 재연결된 장치들의 통신유무 확인</p></td><td><p>DI24 Port<br/>&gt; 0~1</p></td><td><p>1. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력</p></td></tr><tr><td>23</td><td><p><span class=\"error\">&#91;OSDP Device 통신중인 상태&#93;</span><br/>1. OSDP Device ID 변경 후 저장 단계를 2~3회 반복<br/>2. OSDP Device ID 변경 전 ID로 원복<br/>3. CS40 Reboot<br/>4. 부팅완료 후 OSDP Device와의 통신상태 확인</p></td><td></td><td><p>1. 마지막에 설정한 OSDP Device ID로 Master와 통신이 이루어진다.<br/>&gt; 1번 설정 시 OSDP Device와 CS20/40의 연결이 끊어진다.</p></td></tr><tr><td>24</td><td><p>1. CS40&gt; TriggerAction<br/>2. OSDP Device에서 Tamper 발생에 대한 설정<br/>3. OSDP Device에서 Tamper 발생</p></td><td><p>Trigger Action<br/>&gt; Trigger - OSDP Device / Tamper On</p>\n\n<p><span class=\"error\">&#91;BioStar&#93;</span><br/>Action Device : Master / Slave / OSDP Reader<br/>1. Action 선택<br/>1) Output<br/>2) Alert Sound<br/>3) Disable Device</p>\n\n<p>*Alert Sound<br/>&gt; 지원하는 장치만 표시됨</p></td><td><p>1.OSDP Device 의 Tamper 이벤트를 발생시키다.<br/>2.Trigger에 의한 Action이 발생한다.<br/>&gt; OSDP Reader - Disable Device만 표시 </p></td></tr><tr><td>25</td><td><p>1. Door 생성<br/>2. OSDP Device로 Door 구성<br/>3. OSDP Device에 인증시도</p></td><td></td><td><p>1. 인증성공시 Relay가 동작되어야 한다.</p></td></tr><tr><td>26</td><td><p>1. Door 생성<br/>2. OSDP Device로 Door 구성&gt; 이중인증 설정<br/>3. OSDP Device에 인증시도</p></td><td><p>이중인증 설정<br/>&gt; OSDP Device</p></td><td><p>1. A 사용자 인증 후 인증성공 로그가 출력되고 입력대기상태의 LED가 점멸된다.<br/>2. B 사용자 인증 후 인증성공로그가 출력되면서 이중인증성공/Relay On/Relay Off 로그가 출력된다.</p></td></tr><tr><td>27</td><td><p>1. Door 생성<br/>2. OSDP Device로 Door 구성&gt; APB 설정<br/>3. OSDP Device에 동일사용자로 반복인증시도</p></td><td><p>APB 설정<br/>&gt; Soft APB<br/>&gt; Hard APB</p></td><td><p>1. Soft APB시 인증성공 및 Relay가 동작한다.<br/>2. Hard APB시 인증실패 및 Relay가 동작하지 않는다.</p></td></tr><tr><td>28</td><td><p>1. Floor 생성<br/>2. OSDP Device로 Reader 구성<br/>3. OSDP Device에 인증시도</p></td><td></td><td><p>1. 인증성공시 설정된 Port의 Relay가 동작되어야 한다.</p></td></tr><tr><td>29</td><td><p>1. APB Zone 생성<br/>2. OSDP Device로 Zone 구성<br/>3. OSDP Device에 동일사용자로 반복 인증시도</p></td><td><p>모드<br/>&gt; Local<br/>&gt; Global</p>\n\n<p>APB 설정<br/>&gt; Soft APB<br/>&gt; Hard APB</p></td><td><p>1. Soft APB시 인증성공 및 Relay가 동작한다.<br/>2. Hard APB시 인증실패 및 Relay가 동작하지 않는다.</p></td></tr><tr><td>30</td><td><p>1. Intrusion Alarm Zone 생성<br/>2. ODSP Device로 경비해제(장치) 설정<br/>3. 경비/해제 등 동작확인</p></td><td><p>경비종류<br/>&gt; 경비<br/>&gt; 해제<br/>&gt; 경비/해제</p></td><td><p>1. 경비진입/경비해제로 동작한다.</p></td></tr><tr><td>31</td><td><p><span class=\"error\">&#91;v1.6.1 이전 버전에서Slave Device 추가&#93;</span><br/>1. CS40 V1.6.1 이상버전으로 FW Upgrade<br/>2. Add OSDP Device 추가 시도</p></td><td><p>CS40 Port<br/>&gt; 0~3 &amp; Host</p></td><td><p>1. 추가할 수 없다.<br/>&gt; 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다.</p></td></tr><tr><td>32</td><td><p><span class=\"error\">&#91;Slave Device 추가&#93;</span><br/>1. CS20 v1.0.1 / DI24 v1.0.0 FW Upgrade<br/>2. Add OSDP Device 추가 시도</p></td><td><p>CS20 / DI24 Port<br/>&gt; 0~1</p></td><td><p>1. 추가할 수 없다.<br/>&gt; 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다.</p></td></tr><tr><td>33</td><td><p>1. CoreStation에 SCB Key 설정<br/>2. OSDP Reader 추가<br/>3. 통신유무확인 </p></td><td><p>CoreStation에서의 SCB Key - 3으로 값을 채워서 설정</p>\n\n<p>추가할 OSDP Reader가 설정된 Key - Default key</p></td><td><p>1. Default Key로 통신한다.<br/>※ OSDP Default Key로 연결을 한 다음에 통신이 되면 그때 Reader에 SCB Key를 내려준다.</p></td></tr><tr><td>34</td><td><p>1. CoreStation에 SCB Key 설정<br/>2. OSDP Reader 추가<br/>3. 통신유무확인 </p></td><td><p>SCB Key - 3으로 값을 채워서 설정</p>\n\n<p>추가할 OSDP Reader Key - 1~1로 설정된 key</p></td><td><p>1. SCB Key가 상이하기에 통신이 되지 않는다.<br/>&gt; Disconnected로 동작됨.</p></td></tr><tr><td>35</td><td><p>1. 3rd Party ODDP 장치 연결<br/>2. 장치 삭제</p></td><td><p>1. 상태 : Active<br/>2. 상태 : Inactive</p></td><td><p>1. 장치가 정상적으로 삭제되어야 한다.<br/>&gt; DIAG log상에서 사라져야 한다.(<a href=\"https://jira.suprema.co.kr/browse/CS20FW-131\" title=\"CS20에 OSDP 장치 추가 후 비활성화 후 삭제 시 BioStar 상에는 미표시가 되나,  Diag 상에서는  끊어진 상태로 OSDP 장치 ID가 표시 되는 현상\" class=\"issue-link\" data-issue-key=\"CS20FW-131\"><del>CS20FW-131</del></a>)</p></td></tr><tr><td>36</td><td><p>1. 3rd Party ODDP 장치 연결<br/>2. 상세페이지 진입 &gt; Secure Communicatoin 설정 변경<br/>3. Apply</p></td><td><p>1. 상태 : Use<br/>2. 상태 : Not Use</p></td><td><p>1. Secure Communication 상태와 관계없이 정상적으로 통신이 되고 동작해야 한다.</p></td></tr><tr><td>37</td><td><p><span class=\"error\">&#91;Disable Device 발생 상태&#93;</span><br/>1. OSDP Reader에 인증시도</p></td><td><p>Trigger &amp; Action <br/>&gt; Trigger 설정 : Input 접지, Event 발생<br/>&gt; Action 설정 : Disable Device </p></td><td><p>1. Lock되어 카드입력이 막혀야 한다.</p></td></tr><tr><td>38</td><td><p><span class=\"error\">&#91;Disable Device 발생 상태&#93;</span><br/>1. Device&gt; OSDP Reader&gt;Information&gt; Locked : Unlock<br/>2. OSDP Reader에 인증시도</p></td><td></td><td><p>1. Unlock 버튼 클릭시 Lock 해제되어야 한다.<br/>2. 카드입력을 받아 인증 성공/ 실패로 동작되어야 한다.</p>\n\n<p> 카드입력에 대한 인증성공/실패 로그가 남아야 한다.</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [],
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 53745,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 34477,
+              "latestFinalId": 34477
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "[BDP-685] CS-40에서 3rd party OSDP 리더 지원",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 14919,
+          "index": 1,
+          "step": "[OSDP Device 를 물리적으로 결선하지 않은 상태]\n1. CS40> 마우스 우클릭> Add OSDP Device",
+          "data": "",
+          "result": "1. Virtual Device ID를 가진 장치가 추가된다.\n(실제 아이콘은 Disconnected로 표시)",
+          "attachments": []
+        },
+        {
+          "id": 14920,
+          "index": 2,
+          "step": "[Virtual Device ID를 가진 장치가 추가된 상태]\n1. 설정한 OSDP ID와 동일한 ID를 가진 OSDP Device 가 물리적으로 결선\n2. 통신유무 확인",
+          "data": "",
+          "result": "1. 설정한 OSDP ID와 동일한 ID를 가진 OSDP Device 가 해당 포트에 결선되면 연결이 이루어진다.(RS485 Connected 로그 발생)\n2. OSDP ID에 대한 중복체크가 이루어진다.\n3. CS-40 에 동일 Device ID 로 다른 장치가 연결되면 이벤트를 발생한다.(오류팝업발생)",
+          "attachments": []
+        },
+        {
+          "id": 14911,
+          "index": 3,
+          "step": "[OSDP Device 에 세팅되어 있는 OSDP ID 로 연결]\n1. 추가한 OSDP Device 의 설정 진입\n2. Information 확인",
+          "data": "OSDP Device Type \n- OSDP Reader 일 때",
+          "result": "하기의 내용이 정상적으로 표시되어야 한다.\n1. Device Name 표시\n2. Port 정보\n3. Device ID\n4. Vendor Code\n5. Firmware Version\n6. OSDP Device Type\n7. Serial Number\n8. Product Name\n9. Hardware Version \n10. Status 및 Locked",
+          "attachments": []
+        },
+        {
+          "id": 14913,
+          "index": 4,
+          "step": "[OSDP Reader가 물리적으로 연결된 상태]\n1. Status를 Active로 설정 후 동작확인",
+          "data": "",
+          "result": "1. 장치의 입력에 따라 CS40이 동작한다.\n> 입력된 Input 및 카드값이 출력된다.",
+          "attachments": []
+        },
+        {
+          "id": 14914,
+          "index": 5,
+          "step": "[OSDP Reader가 물리적으로 연결된 상태]\n1. Status를 Inactive로 설정 후 동작확인",
+          "data": "",
+          "result": "1. Controller와 OSDP Reader간 폴링을 하지 않으므로 장치의 입력이 발생해도 Controller는 그에 따른 동작을 하지 않는다.\n2. BioStar UI상 아이콘은 Gray 처리가 된다.",
+          "attachments": []
+        },
+        {
+          "id": 14912,
+          "index": 6,
+          "step": "[OSDP Reader가 물리적으로 연결된 상태]\n1. Network(RS-485) 항목 설정 후 동작확인",
+          "data": "Network 항목\n> OSDP ID\n=> 0~126 설정가능\n> Secure Communication \n=> Default: Use",
+          "result": "1. 장치추가때는 OSDP ID로 입력한 값으로 저장되고 해당 주소로 연결을 시도한다.\n2. 설정된 OSDP ID로 연결된 상태에서 주소 변경시 연결 끊어짐 발생한다.\n3. osdp_keyset은 처음 연결할 때 한번 내려준다.\n4. Key가 내려간 상태라면 비활성화 -> 활성화 시 가지고 있는 키로 통신한다.\n※ Default key를 가지고 있으면 장치에 다시 키를 내림.\n\n-활성화시 Controller는 Secure Key를 내린다.-\n => -활성화된 상태에서 비활성화로 변경후의 동작확인필요-",
+          "attachments": []
+        },
+        {
+          "id": 14915,
+          "index": 7,
+          "step": "[OSDP Reader가 물리적으로 연결된 상태]\n1. Authentication 항목 설정 후 동작확인\n> 인증모드 동작\n> Door 설정된 상태에서 Full Access 동작\n> Card + PIN일 때의 Auth Timeout 동작",
+          "data": "Authentication 항목\n> Auth Mode\n=> Card Only & Card + PIN 지원\n> Full Access\n=> Default: Disable\n> Auth Timeout\n=> 3 ~ 20sec 지원(Default: 5)",
+          "result": "1. 설정된 인증모드로 동작된다.\n2. Door 설정된 상태에서 Full Access 설정에 따라 출입허용/거부로 동작된다.\n3. Card+Pin인증모드에서 Card 리드 후 Auth Timeout 설정으로 동작된다.\n> *: 취소\n> #: 입력",
+          "attachments": []
+        },
+        {
+          "id": 14916,
+          "index": 8,
+          "step": "[RS485 장치가 추가되지 않은 상태]\n1. CS40> Serial> SCB Key 설정\n2. 설정 저장전에 RS485 장치 연결\n3. 설정저장시도",
+          "data": "",
+          "result": "1. 실패처리 되면서 에러발생한다.",
+          "attachments": []
+        },
+        {
+          "id": 14917,
+          "index": 9,
+          "step": "[OSDP Reader가 물리적으로 연결된 상태]\n1. CS40> OSDP Device LED/Buzzer 설정\n> Waiting Input\n> Auth Success\n> Auth Fail",
+          "data": "LED\n> Mode\n> Cycle\n> Color/Duration\n=> Color: Off(Black) / RED / GREEN / AMBER / BLUE / MAGENTA / CYAN / WHITE\nBuzzer\n> Mode\n> Cycle\n> Duration",
+          "result": "1. 연결된 OSDP Device의 LED/Buzzer가 설정된대로 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 14918,
+          "index": 10,
+          "step": "[OSDP Reader가 물리적으로 연결되어 추가된 상태]\n1. 장치목록에서 OSDP Reader에 해당하는 장치정보 확인",
+          "data": "",
+          "result": "1. OSDP Reader인 경우 Device Address에 OSDP 주소를 표시한다.\n2. Device Status에서는 OSDP 장치의 연결 및 활성화 상태를 표시한다.\n> Normal(Active)\n> Normal(Inactive)\n> Disconnected\n※ Batch Edit에서 OSDP Device Status를 일괄적으로 변경가능하다.",
+          "attachments": []
+        },
+        {
+          "id": 14921,
+          "index": 11,
+          "step": "1. CS40> Search Slave Device> 추가\n2. Add OSDP Device 추가 시도",
+          "data": "CS40 Port\n> 0~3 & Host",
+          "result": "1. 추가할 수 없다.\n> 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다.",
+          "attachments": []
+        },
+        {
+          "id": 14922,
+          "index": 12,
+          "step": "1. CS40> Add OSDP Device 추가\n2. Search suprema slave device 추가 시도",
+          "data": "CS40 Port\n> 0~3 & Host",
+          "result": "1. 이미 OSDP Device 가 추가되어 있는 port 에서는 장치를 검색하지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 14923,
+          "index": 13,
+          "step": "[Slave 및 OSDP Device와 통신중인 상태]\n1. Device Tree에 CS-40을 우클릭> Reconnected\n2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인",
+          "data": "CS40 Port\n> 0~3 & Host",
+          "result": "1. Reconnected 시 연결이 끊긴다.\n> Slave 및 OSDP Reader에 대해 RS485 Disconnected 로그출력\n2. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력",
+          "attachments": []
+        },
+        {
+          "id": 14925,
+          "index": 14,
+          "step": "[Slave 및 OSDP Device와 통신중인 상태]\n1. CS-40이 부팅 후 재연결된 장치들의 통신유무 확인",
+          "data": "CS40 Port\n> 0~3 & Host",
+          "result": "1. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력",
+          "attachments": []
+        },
+        {
+          "id": 19830,
+          "index": 15,
+          "step": "1. CS20> Search Slave Device> 추가\n2. Add OSDP Device 추가 시도",
+          "data": "CS20 Port\n> 0~1 & Host",
+          "result": "1. 추가할 수 없다.\n> 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다.",
+          "attachments": []
+        },
+        {
+          "id": 19831,
+          "index": 16,
+          "step": "1. CS20> Add OSDP Device 추가\n2. Search suprema slave device 추가 시도",
+          "data": "CS20 Port\n> 0~1 & Host",
+          "result": "1. 이미 OSDP Device 가 추가되어 있는 port 에서는 장치를 검색하지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 19832,
+          "index": 17,
+          "step": "[Slave 및 OSDP Device와 통신중인 상태]\n1. Device Tree에 CS-20을 우클릭> Reconnected\n2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인",
+          "data": "CS20 Port\n> 0~1 & Host",
+          "result": "1. Reconnected 시 연결이 끊긴다.\n> Slave 및 OSDP Reader에 대해 RS485 Disconnected 로그출력\n2. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력",
+          "attachments": []
+        },
+        {
+          "id": 19833,
+          "index": 18,
+          "step": "[Slave 및 OSDP Device와 통신중인 상태]\n1.CS-20이 부팅 후 재연결된 장치들의 통신유무 확인",
+          "data": "CS20 Port\n> 0~1 & Host",
+          "result": "1. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력",
+          "attachments": []
+        },
+        {
+          "id": 19834,
+          "index": 19,
+          "step": "1. DI24> Search Slave Device> 추가\n2. Add OSDP Device 추가 시도",
+          "data": "DI24 Port\n> 0~1",
+          "result": "1. 추가할 수 없다.\n> 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다.",
+          "attachments": []
+        },
+        {
+          "id": 19835,
+          "index": 20,
+          "step": "1. DI24> Add OSDP Device 추가\n2. Search suprema slave device 추가 시도",
+          "data": "DI24 Port\n> 0~1",
+          "result": "1. 이미 OSDP Device 가 추가되어 있는 port 에서는 장치를 검색하지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 19836,
+          "index": 21,
+          "step": "[Slave 및 OSDP Device와 통신중인 상태]\n1. Device Tree에 DI24을 우클릭> Reboot\n2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인",
+          "data": "DI24 Port\n> 0~1",
+          "result": "1. Reboot 시 연결이 끊긴다.\n> Slave 및 OSDP Reader에 대해 RS485 Disconnected 로그출력\n2. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력",
+          "attachments": []
+        },
+        {
+          "id": 19837,
+          "index": 22,
+          "step": "[Slave 및 OSDP Device와 통신중인 상태]\n1.DI24이 부팅 후 재연결된 장치들의 통신유무 확인",
+          "data": "DI24 Port\n> 0~1",
+          "result": "1. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력",
+          "attachments": []
+        },
+        {
+          "id": 14970,
+          "index": 23,
+          "step": "[OSDP Device 통신중인 상태]\n1. OSDP Device ID 변경 후 저장 단계를 2~3회 반복\n2. OSDP Device ID 변경 전 ID로 원복\n3. CS40 Reboot\n4. 부팅완료 후 OSDP Device와의 통신상태 확인",
+          "data": "",
+          "result": "1. 마지막에 설정한 OSDP Device ID로 Master와 통신이 이루어진다.\n> 1번 설정 시 OSDP Device와 CS20/40의 연결이 끊어진다.",
+          "attachments": []
+        },
+        {
+          "id": 14926,
+          "index": 24,
+          "step": "1. CS40> TriggerAction\n2. OSDP Device에서 Tamper 발생에 대한 설정\n3. OSDP Device에서 Tamper 발생",
+          "data": "Trigger Action\n> Trigger - OSDP Device / Tamper On\n\n[BioStar]\nAction Device : Master / Slave / OSDP Reader\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨",
+          "result": "1.OSDP Device 의 Tamper 이벤트를 발생시키다.\n2.Trigger에 의한 Action이 발생한다.\n> OSDP Reader - Disable Device만 표시 ",
+          "attachments": []
+        },
+        {
+          "id": 14927,
+          "index": 25,
+          "step": "1. Door 생성\n2. OSDP Device로 Door 구성\n3. OSDP Device에 인증시도",
+          "data": "",
+          "result": "1. 인증성공시 Relay가 동작되어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 14967,
+          "index": 26,
+          "step": "1. Door 생성\n2. OSDP Device로 Door 구성> 이중인증 설정\n3. OSDP Device에 인증시도",
+          "data": "이중인증 설정\n> OSDP Device",
+          "result": "1. A 사용자 인증 후 인증성공 로그가 출력되고 입력대기상태의 LED가 점멸된다.\n2. B 사용자 인증 후 인증성공로그가 출력되면서 이중인증성공/Relay On/Relay Off 로그가 출력된다.",
+          "attachments": []
+        },
+        {
+          "id": 14966,
+          "index": 27,
+          "step": "1. Door 생성\n2. OSDP Device로 Door 구성> APB 설정\n3. OSDP Device에 동일사용자로 반복인증시도",
+          "data": "APB 설정\n> Soft APB\n> Hard APB",
+          "result": "1. Soft APB시 인증성공 및 Relay가 동작한다.\n2. Hard APB시 인증실패 및 Relay가 동작하지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 14965,
+          "index": 28,
+          "step": "1. Floor 생성\n2. OSDP Device로 Reader 구성\n3. OSDP Device에 인증시도",
+          "result": "1. 인증성공시 설정된 Port의 Relay가 동작되어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 14968,
+          "index": 29,
+          "step": "1. APB Zone 생성\n2. OSDP Device로 Zone 구성\n3. OSDP Device에 동일사용자로 반복 인증시도",
+          "data": "모드\n> Local\n> Global\n\nAPB 설정\n> Soft APB\n> Hard APB",
+          "result": "1. Soft APB시 인증성공 및 Relay가 동작한다.\n2. Hard APB시 인증실패 및 Relay가 동작하지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 14969,
+          "index": 30,
+          "step": "1. Intrusion Alarm Zone 생성\n2. ODSP Device로 경비해제(장치) 설정\n3. 경비/해제 등 동작확인",
+          "data": "경비종류\n> 경비\n> 해제\n> 경비/해제",
+          "result": "1. 경비진입/경비해제로 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 14964,
+          "index": 31,
+          "step": "[v1.6.1 이전 버전에서Slave Device 추가]\n1. CS40 V1.6.1 이상버전으로 FW Upgrade\n2. Add OSDP Device 추가 시도",
+          "data": "CS40 Port\n> 0~3 & Host",
+          "result": "1. 추가할 수 없다.\n> 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다.",
+          "attachments": []
+        },
+        {
+          "id": 19838,
+          "index": 32,
+          "step": "[Slave Device 추가]\n1. CS20 v1.0.1 / DI24 v1.0.0 FW Upgrade\n2. Add OSDP Device 추가 시도",
+          "data": "CS20 / DI24 Port\n> 0~1",
+          "result": "1. 추가할 수 없다.\n> 하나의 RS-485 포트에서 Suprema Slave 와 OSDP Device 를 혼용할 수 없다.",
+          "attachments": []
+        },
+        {
+          "id": 19325,
+          "index": 33,
+          "step": "1. CoreStation에 SCB Key 설정\n2. OSDP Reader 추가\n3. 통신유무확인 ",
+          "data": "CoreStation에서의 SCB Key - 3으로 값을 채워서 설정\n \n추가할 OSDP Reader가 설정된 Key - Default key",
+          "result": "1. Default Key로 통신한다.\n※ OSDP Default Key로 연결을 한 다음에 통신이 되면 그때 Reader에 SCB Key를 내려준다.",
+          "attachments": []
+        },
+        {
+          "id": 19326,
+          "index": 34,
+          "step": "1. CoreStation에 SCB Key 설정\n2. OSDP Reader 추가\n3. 통신유무확인 ",
+          "data": "SCB Key - 3으로 값을 채워서 설정\n \n추가할 OSDP Reader Key - 1~1로 설정된 key",
+          "result": "1. SCB Key가 상이하기에 통신이 되지 않는다.\n> Disconnected로 동작됨.",
+          "attachments": []
+        },
+        {
+          "id": 19766,
+          "index": 35,
+          "step": "1. 3rd Party ODDP 장치 연결\n2. 장치 삭제",
+          "data": "1. 상태 : Active\n2. 상태 : Inactive",
+          "result": "1. 장치가 정상적으로 삭제되어야 한다.\n> DIAG log상에서 사라져야 한다.(CS20FW-131)",
+          "attachments": []
+        },
+        {
+          "id": 19827,
+          "index": 36,
+          "step": "1. 3rd Party ODDP 장치 연결\n2. 상세페이지 진입 > Secure Communicatoin 설정 변경\n3. Apply",
+          "data": "1. 상태 : Use\n2. 상태 : Not Use",
+          "result": "1. Secure Communication 상태와 관계없이 정상적으로 통신이 되고 동작해야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 19828,
+          "index": 37,
+          "step": "[Disable Device 발생 상태]\n1. OSDP Reader에 인증시도",
+          "data": "Trigger & Action \n> Trigger 설정 : Input 접지, Event 발생\n> Action 설정 : Disable Device ",
+          "result": "1. Lock되어 카드입력이 막혀야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 19829,
+          "index": 38,
+          "step": "[Disable Device 발생 상태]\n1. Device> OSDP Reader>Information> Locked : Unlock\n2. OSDP Reader에 인증시도",
+          "result": "1. Unlock 버튼 클릭시 Lock 해제되어야 한다.\n2. 카드입력을 받아 인증 성공/ 실패로 동작되어야 한다.\n\n 카드입력에 대한 인증성공/실패 로그가 남아야 한다.",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [],
+      "maxResults": 0,
+      "total": 0,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+      "name": "미할당",
+      "id": "10100"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/3",
+      "description": "현재 담당자가 이 이슈를 처리하고 있습니다.",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/inprogress.png",
+      "name": "진행 중",
+      "id": "3",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/4",
+        "id": 4,
+        "key": "indeterminate",
+        "colorName": "yellow",
+        "name": "진행 중"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzwye7:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2022-11-25T14:10:13.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

@@ -1,123 +1,2331 @@
 {
-  "id": "COMMONR-29",
-  "content": [
-    [
-      1,
-      "1. Device> ID인증모드 설정\n2. ID인증시도",
-      "Master, Slave 확인\n: Master장치(Station,Entry계열)\n: Slave 장치(Station,Entry계열)\nID인증모드\n> ID+지문(얼굴) 모드\n> ID+PIN 모드\n> ID+지문(얼굴)/PIN 모드(Default)\n> ID+지문(얼굴)+PIN 모드",
-      "설정한 인증모드로 동작되어야 한다.\n> 인증 성공/실패에 따라 로그가 남는다.\n> 복합 인증의 경우 이를 Master에서 실행했을때, 매칭 수행이 끝나고 결과 팝업 창이 나타난 후나 취소 버튼, 인증타임아웃 등을 통해서 매칭이 취소된 후에 새로운 Credential이 입력될 수 있다.\n> 복합 인증의 경우 이를 Slave에 실행했을때, 인증 결과를 수신하거나 타임아웃이 발생한 후에는 새로운 Credential을 다시 입력할 수 있다."
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "12471",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/12471",
+  "key": "COMMONR-29",
+  "fields": {
+    "resolution": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/resolution/10000",
+      "id": "10000",
+      "description": "[사용안함] Work has been completed on this issue.",
+      "name": "완료(Done)"
+    },
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "3.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": null,
+    "customfield_10185": null,
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "38897",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/38897",
+        "type": {
+          "id": "10000",
+          "name": "Blocks",
+          "inward": "is blocked by",
+          "outward": "blocks",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10000"
+        },
+        "inwardIssue": {
+          "id": "49058",
+          "key": "DFW-716",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/49058",
+          "fields": {
+            "summary": "서로 다른 얼굴 등록한 사용자 ID+얼굴모드에서 마네킹 얼굴 인식 못하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "51421",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/51421",
+        "type": {
+          "id": "10001",
+          "name": "Cloners",
+          "inward": "is cloned by",
+          "outward": "clones",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10001"
+        },
+        "inwardIssue": {
+          "id": "60978",
+          "key": "BCRTC-108",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/60978",
+          "fields": {
+            "summary": "인증 - ID",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "할 일",
+              "id": "10000",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "Represents a Test",
+              "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+              "name": "Test",
+              "subtask": false
+            }
+          }
+        }
+      },
+      {
+        "id": "43437",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/43437",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "53261",
+          "key": "CSTFW-786",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/53261",
+          "fields": {
+            "summary": "1:1 인증 실패(ID) 되며 사용자 인증되지 않는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "52205",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/52205",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "61757",
+          "key": "BS2AFW-342",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/61757",
+          "fields": {
+            "summary": "[Slave-ID 인증 오동작]Slave 장치에서  영숫자 ID 16자 이상으로 인증 시 미등록 사용자로 인증 실패가 발생하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "62853",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/62853",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "71991",
+          "key": "CS20FW-231",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/71991",
+          "fields": {
+            "summary": "[User ID Max 오류]CS20(M)에 연결된 XS2 Slave로 Max User ID 32자(영문자) 입력 시 1:1 인증 실패가 발생하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/3",
+              "description": "현재 담당자가 이 이슈를 처리하고 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/inprogress.png",
+              "name": "진행 중",
+              "id": "3",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/4",
+                "id": 4,
+                "key": "indeterminate",
+                "colorName": "yellow",
+                "name": "진행 중"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "26527",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/26527",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "35045",
+          "key": "BLNIIFW-758",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/35045",
+          "fields": {
+            "summary": "[1:1 Security Level - Low] Duress Finger에 대해서 인증 실패 발생하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "39005",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/39005",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "49058",
+          "key": "DFW-716",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/49058",
+          "fields": {
+            "summary": "서로 다른 얼굴 등록한 사용자 ID+얼굴모드에서 마네킹 얼굴 인식 못하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "33960",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/33960",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "44334",
+          "key": "ONYXFW-427",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/44334",
+          "fields": {
+            "summary": "[ExtendedAuth 를 지원하지 않는 Slave 장치에 지문, 지문/PIN 포함된 인증모드로 설정된 상태] 지문, PIN이 미등록된 사용자로 인증시 에러팝업 문구가 -760, -762로 표시되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "21992",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/21992",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "28172",
+          "key": "BLNIIFW-526",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/28172",
+          "fields": {
+            "summary": "사용자 자동 동기화 해제 후 Duress Finger 등록 후 1:1 ID/Card로 인증 시 일반인증으로 동작하는 경우가 있는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "47055",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/47055",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "56851",
+          "key": "DFW-959",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/56851",
+          "fields": {
+            "summary": "설정한 ID 인증모드가 적용되지 않는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "23270",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/23270",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "30035",
+          "key": "FLFW-339",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/30035",
+          "fields": {
+            "summary": "[RS 485] FL(M)/FS2(S)에 대한 사용자 1명 당 Sub로 다른 얼굴에 대한 동작 상이",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14788",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14788",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "20067",
+          "key": "FSTIIFW-281",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/20067",
+          "fields": {
+            "summary": "[얼굴사용자 3만명이 등록된 상태] ID로 인증불가한 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19453",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19453",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "25018",
+          "key": "FSTIIFW-822",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/25018",
+          "fields": {
+            "summary": "[DRAMS] L2 에서 인증하면 리셋 증상이 나옴 (재현 가능)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13380",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13380",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18588",
+          "key": "BLIIFWI-556",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18588",
+          "fields": {
+            "summary": "[Tester: 최희욱] 복합인증 시, 2차 인증때 설정된 인증 수단이 아니지만 입력되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "21329",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/21329",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "26610",
+          "key": "BLIIFWI-981",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/26610",
+          "fields": {
+            "summary": "Slave의 경우 Master의 Auth Timeout으로 동작 후 화면이 메인화면으로 전환되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19452",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19452",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "25056",
+          "key": "BLNIIFW-243",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/25056",
+          "fields": {
+            "summary": "Master가 FS2이고, Slave가 FS2인 경우의 Slave의 Auth Timeout이 동작을 하나, UI 상으로는 5초로 동작이 되어 두번재 인증 요청 팝업이 종료 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14436",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14436",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19592",
+          "key": "FSTIIFW-90",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19592",
+          "fields": {
+            "summary": "간헐적으로 인증 모드 오류나는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11368",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11368",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "15048",
+          "key": "TIIDFI-479",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/15048",
+          "fields": {
+            "summary": "Slave에서 Auth TimeOut을 20초 설정 후 확인 시 10초에 인증 창이 사라지고, 20초 후에 Auth Time Out이 발생하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14056",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14056",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16043",
+          "key": "TIIDFI-550",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16043",
+          "fields": {
+            "summary": "Master/Slave의 Auth Timeout 동작이 다른 현상(Timeout 초기화 관련)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "50233",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/50233",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "60027",
+          "key": "CSTFW-863",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/60027",
+          "fields": {
+            "summary": "Slave로 연결된 FS2 Auth Timeout 기본값이 10초로 출력 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11569",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11569",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "15430",
+          "key": "BLIIFWI-326",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/15430",
+          "fields": {
+            "summary": "Slave에서 ID 관련 복합 인증시에 Auth Timeout을 10초 이상으로 설정하면 Auth Timeout팝업이 안뜨고 두번째 인증대기창에 문구가 겹쳐서 나오는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "10963",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10963",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "14224",
+          "key": "BSIIDII-90",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/14224",
+          "fields": {
+            "summary": "Slave장치에서 Auth Timeout이 Master 장치를 따라가는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "15034",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/15034",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "20349",
+          "key": "FSTIIFW-365",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/20349",
+          "fields": {
+            "summary": "Slave 장치에 지문 템플릿만 있는 사용자를 ID+얼굴 인증 모드로 인증시 '얼굴 없음' 에러창 미출력하는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12382",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12382",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16915",
+          "key": "TIIDFI-638",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16915",
+          "fields": {
+            "summary": "인증 ID 입력 팝업에서 empty 상태로 OK 를 누를경우 Master와 Slave 동작이 상이함.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12420",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12420",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16964",
+          "key": "BSIIDII-302",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16964",
+          "fields": {
+            "summary": "서버매칭시 ID 인증의 경우, Slave 장치에서 ID 입력 후 Main 화면으로 전환(약 1초간)되었다가 두번째 인증으로 넘어가는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      },
+      {
+        "id": "11151",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11151",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "14763",
+          "key": "BEWIIFWDI-7",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/14763",
+          "fields": {
+            "summary": "[Requirement] 인증 - ID",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10445",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10445",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "12957",
+          "key": "BLIIFWI-79",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12957",
+          "fields": {
+            "summary": "[Requirement] 인증 - ID",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12809",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12809",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17810",
+          "key": "BEWIIFWDI-199",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17810",
+          "fields": {
+            "summary": "[Requirement]Credential 입력 후 처리 방식 통일",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12806",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12806",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17809",
+          "key": "BLIIFWI-503",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17809",
+          "fields": {
+            "summary": "[Requirement]Credential 입력 후 처리 방식 통일",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12803",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12803",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17807",
+          "key": "BSIIDII-343",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17807",
+          "fields": {
+            "summary": "[Requirement]Credential 입력 후 처리 방식 통일",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12797",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12797",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17808",
+          "key": "TIIDFI-708",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17808",
+          "fields": {
+            "summary": "[Requirement]Credential 입력 후 처리 방식 통일",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10416",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10416",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "12931",
+          "key": "TIIDFI-45",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12931",
+          "fields": {
+            "summary": "[Requirement] 인증 - ID",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "19782",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19782",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "25347",
+          "key": "BLNIIFW-288",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/25347",
+          "fields": {
+            "summary": "[Requirement]Credential 입력 후 처리 방식 통일",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "<A 스케줄 생성한 상태>\n1. Device> ID인증모드\n2. ID 인증모드들에 동일 스케줄 설정시도",
-      "A 스케줄로 ID인증모드 모두 설정시도\n> ID+지문 모드\n> ID+PIN 모드\n> ID+지문/PIN 모드(Default)\n> ID+지문+PIN 모드\n\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
-      "> 동일 모드에 대해 스케줄 중복설정이 불가능해야 한다.\n(on) 동일 스케쥴 중복 체크 : 스케줄 추가 불가능\n(off) A/B에 대한 시간별 중복 체크 : 스케줄 추가 가능 \n> 'Always'로 설정된 경우 동일모드에서는 스케줄 설정이 불가능해야 한다."
+    "assignee": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 12.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-29/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@373ad85b[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@1f3121e9[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@791e3d1a[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@6fb675b9[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@3c46319[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@2557086e[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@2da90733[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@716eb482[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@5192cd1d[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@4c9bab39[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@29eead06[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@2d20d61d[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": "2016-02-25T13:30:46.000+0900",
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-29/watchers",
+      "watchCount": 2,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T10:17:46.000+0900",
+    "timeoriginalestimate": null,
+    "description": "ID 인증모드에서의 동작에 이상이 없는지 확인(설정 및 인증)\r\n > FL : ID 인증 설정 미지원, Admin : 지원, Private Auth : ID 관련 설정 정보 확인\r\n > Group, TA, Job Code, Zone : 미지원\r\n\r\n동작 사양 : Slave에서 설정할 수 있는 항목은 설정대로 동작함 \r\n Auth. TimeOut - 각각 설정한 대로 동작 \r\n Matching TimeOut - 각각 설정한 대로 동작 \r\n Msg . TimeOut - 각각 설정한 대로 동작 \r\n Scan. TimeOut - 각각 설정한 대로 동작\r\n\r\n \r\n\r\n* ExtendedAuth 적용 (F2 - FW ver 1.0.0)",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. Device&gt; ID인증모드 설정<br/>2. ID인증시도</p></td><td><p>Master, Slave 확인<br/>: Master장치(Station,Entry계열)<br/>: Slave 장치(Station,Entry계열)<br/>ID인증모드<br/>&gt; ID+지문(얼굴) 모드<br/>&gt; ID+PIN 모드<br/>&gt; ID+지문(얼굴)/PIN 모드(Default)<br/>&gt; ID+지문(얼굴)+PIN 모드</p></td><td><p>설정한 인증모드로 동작되어야 한다.<br/>&gt; 인증 성공/실패에 따라 로그가 남는다.<br/>&gt; 복합 인증의 경우 이를 Master에서 실행했을때, 매칭 수행이 끝나고 결과 팝업 창이 나타난 후나 취소 버튼, 인증타임아웃 등을 통해서 매칭이 취소된 후에 새로운 Credential이 입력될 수 있다.<br/>&gt; 복합 인증의 경우 이를 Slave에 실행했을때, 인증 결과를 수신하거나 타임아웃이 발생한 후에는 새로운 Credential을 다시 입력할 수 있다.</p></td></tr><tr><td>2</td><td><p>&lt;A 스케줄 생성한 상태&gt;<br/>1. Device&gt; ID인증모드<br/>2. ID 인증모드들에 동일 스케줄 설정시도</p></td><td><p>A 스케줄로 ID인증모드 모두 설정시도<br/>&gt; ID+지문 모드<br/>&gt; ID+PIN 모드<br/>&gt; ID+지문/PIN 모드(Default)<br/>&gt; ID+지문+PIN 모드</p>\n\n<p>FS2<br/>&gt; ID+얼굴 모드<br/>&gt; ID+PIN 모드<br/>&gt; ID+얼굴/PIN 모드(Default)<br/>&gt; ID+얼굴+PIN 모드 </p></td><td><p>&gt; 동일 모드에 대해 스케줄 중복설정이 불가능해야 한다.<br/><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> 동일 스케쥴 중복 체크 : 스케줄 추가 불가능<br/><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> A/B에 대한 시간별 중복 체크 : 스케줄 추가 가능 <br/>&gt; 'Always'로 설정된 경우 동일모드에서는 스케줄 설정이 불가능해야 한다.</p></td></tr><tr><td>3</td><td><p>1. Device&gt; ID인증모드 설정<br/>2. 설정한 모드 중 하나에 대해서만 등록된 사용자로 인증시도</p></td><td><p>&gt; ID+지문 모드 : PIN만 등록된 사용자로 인증<br/>&gt; ID+PIN 모드 : 지문만 등록된 사용자로 인증 <br/>&gt; ID+지문/PIN 모드(Default) : 카드만 등록된 사용자로 인증<br/>&gt; ID+지문+PIN 모드 : 카드만 등록된 사용자로 인증</p>\n\n<p>FS2<br/>&gt; ID+얼굴 모드<br/>&gt; ID+PIN 모드<br/>&gt; ID+얼굴/PIN 모드(Default)<br/>&gt; ID+얼굴+PIN 모드 </p></td><td><p>ID 입력시 인증실패로 동작되면서 'Authentication failed (Invalid Credential)' 로그가 남아야 한다.</p></td></tr><tr><td>4</td><td><p>1. User&gt; Add User&gt; 카드와 PIN 등록된 사용자 추가<br/>2. 1:1 Security Level 설정<br/>3. 1:1 인증을 시도</p></td><td><p>1:1 Security Level<br/>&gt; 기기설정따름(Default)<br/>&gt; Lowest<br/>&gt; Low<br/>&gt; Normal<br/>&gt; High<br/>&gt; Highest</p>\n\n<p>1:1 인증모드 모두 확인사항<br/>&gt; 카드인증모드<br/>&gt; ID인증모드</p></td><td><p>1:1 인증시 각각의 설정에 대해 동작되어야 한다.</p></td></tr><tr><td>5</td><td><p>1. User&gt; Add User<br/>2. Credential: Fingerprint 클릭<br/>3. 장치선택 후 2지 이상 지문등록<br/>4. 등록된 지문 중 협박지문 설정<br/>5. 사용자를 장치에 전송<br/>6. Device&gt; ID인증모드 설정<br/>7. 설정한 ID인증모드에 협박지문으로 인증시도</p></td><td><p>지문등록&gt; 5지<br/>&gt; 협박지문&gt; 마지막에 등록한 지문</p>\n\n<p>ID인증모드<br/>&gt; ID+지문<br/>&gt; ID+지문/PIN<br/>&gt; ID+지문+PIN</p></td><td><p>협박지문으로 인증할 경우 협박지문으로 동작되어야 한다.<br/>&gt; 협박지문 로그가 남는다.</p></td></tr><tr><td>6</td><td><p>1. User&gt; Add User<br/>2. Credential: Visual Face 클릭<br/>3. 장치선택 후 얼굴 2개 이상(서로 다른) 등록<br/>4. 사용자를 장치에 전송<br/>5. Device&gt; ID인증모드 설정<br/>6. 설정한 ID인증모드에 2개의 서로 다른 얼굴로 인증 시도</p></td><td><p>얼굴 등록 &gt; 5개(Max) (FL/FS2)<br/>Visual Face 등록 &gt; 2개(Max) (BS3/F2/W3)</p>\n\n<p>BS3<br/>&gt; ID+Visual Face(얼굴) 모드<br/>&gt; ID+PIN 모드<br/>&gt; ID+Visual Face(얼굴)/PIN 모드(Default)<br/>&gt; ID+Visual Face(얼굴)+PIN 모드 </p>\n\n<p>FS2<br/>&gt; ID+얼굴 모드<br/>&gt; ID+PIN 모드<br/>&gt; ID+얼굴/PIN 모드(Default)<br/>&gt; ID+얼굴+PIN 모드 </p></td><td><p>1. 서로 다른 얼굴로 동일 ID로 인증 성공으로 동작이 되어야 한다.<br/><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> 1 User - 동일 얼굴 5 등록 : 인증 성공 (FL/FS2)<br/><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> 1 User - 동일 얼굴 2 등록 : 인증 성공 (BS3/F2/W3)</p></td></tr><tr><td>7</td><td><p>&lt;스케줄을 생성한 상태&gt;<br/>1. Device&gt; ID인증모드에 스케줄 설정<br/>2. ID인증시도</p></td><td><p>&gt; ID+지문 모드<br/>&gt; ID+PIN 모드<br/>&gt; ID+지문/PIN 모드<br/>&gt; ID+지문+PIN 모드</p>\n\n<p>FS2<br/>&gt; ID+얼굴 모드<br/>&gt; ID+PIN 모드<br/>&gt; ID+얼굴/PIN 모드(Default)<br/>&gt; ID+얼굴+PIN 모드 </p></td><td><p>&gt; 현재 시간의 스케줄로 설정된 인증모드로 동작되어야 한다.<br/>&gt; 현재 시간이 스케줄에 포함되지 않은 인증모드로 인증시 'Authentication failed (Invalid Credential)'로 인증실패가 되어야 한다.</p></td></tr><tr><td>8</td><td><p>1. Device&gt; Auth Timeout 설정</p></td><td><p>Auth Timeout <br/>&gt; 3s ~ 20s </p>\n\n<p>Default <br/>&gt; FS2 제외 장치 : 10s<br/>&gt; FS2, F2 : 5s</p></td><td><p>선택한 값이 설정되어야 한다.</p></td></tr><tr><td>9</td><td><p>1. Device&gt; ID 인증모드<br/>2. 다중 인증모드 설정<br/>3. 설정한 모드의 처음에 해당하는 모드 입력 후 설정한 Auth Timeout 시간내 입력시도</p></td><td><p>Auth Timeout : 3s ~ 20s</p>\n\n<p>ID 다중 인증모드<br/>&gt; ID+지문 모드<br/>&gt; ID+PIN 모드<br/>&gt; ID+지문/PIN 모드<br/>&gt; ID+지문+PIN 모드</p>\n\n<p>&gt; 단일장치 및 RS 485 구성에 대해 모두 확인사항<br/>FS2<br/>&gt; ID+얼굴 모드<br/>&gt; ID+PIN 모드<br/>&gt; ID+얼굴/PIN 모드(Default)<br/>&gt; ID+얼굴+PIN 모드 </p></td><td><p>설정한 시간내에 인증이 이루어졌으므로 인증성공으로 동작되어야 한다.</p>\n\n<p>&gt; Slave 장치의 경우<br/> : Matching TimeOut - Slave<br/> : Auth. TimeOut - Slave<br/> : Msg. TimeOut- Slave</p></td></tr><tr><td>10</td><td><p>1. Device&gt; ID 인증모드<br/>2. 다중 인증모드 설정<br/>3. 설정한 모드의 처음에 해당하는 모드 입력 후 설정한 Auth Timeout 시간내 나머지 모드에 대해 미입력</p></td><td><p>Auth Timeout : 3s ~ 20s<br/>ID 다중 인증모드<br/>&gt; ID+지문 모드<br/>&gt; ID+PIN 모드<br/>&gt; ID+지문/PIN 모드<br/>&gt; ID+지문+PIN 모드</p>\n\n<p>&gt; 단일장치 및 RS 485 구성에 대해 모두 확인사항</p>\n\n<p>FS2<br/>&gt; ID+얼굴 모드<br/>&gt; ID+PIN 모드<br/>&gt; ID+얼굴/PIN 모드(Default)<br/>&gt; ID+얼굴+PIN 모드 </p></td><td><p>설정한 시간내에 인증이 이루어지지 않았으므로 Auth Timeout이 발생되어 인증실패로 동작되어야 한다.</p>\n\n<p>&gt; Slave 장치의 경우<br/> : Matching TimeOut - Slave<br/> : Auth. TimeOut - Slave<br/> : Msg. TimeOut- Slave</p></td></tr><tr><td>11</td><td><p>1. Device&gt; 장치추가<br/>2. Full Access 설정변경<br/>3. 추가한 장치에 대해 Door Or Elevator 미설정<br/>4. User&gt; Add User<br/>5. 해당 사용자로 인증시도</p></td><td><p>*출입통제 룰을 사용하지 않는 경우</p>\n\n<p>Full Access<br/>&gt; Disable<br/>&gt; Enable</p>\n\n<p>&gt; 카드/지문/ID/얼굴 인증 모두 확인사항</p></td><td><p>Full Access 설정에 상관없이 인증성공으로 동작되어야 한다.</p></td></tr><tr><td>12</td><td><p>1. Device&gt; 장치추가<br/>2. Full Access 설정변경<br/>3. 추가한 장치에 대해 Door Or Elevator 설정<br/>4. User&gt; Add User<br/>5. 해당 사용자로 인증시도</p></td><td><p>*출입통제 룰을 사용하는 경우</p>\n\n<p>Full Access<br/>&gt; Disable<br/>&gt; Enable</p>\n\n<p>&gt; 카드/지문/ID/얼굴 인증 모두 확인사항</p></td><td><p>Full Access 가 Enable일 때에는 인증성공, Disable일 때에는 인증실패로 동작되어야 한다.</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [
+      "COMMONR-28",
+      "COMMONR-383"
     ],
-    [
-      3,
-      "1. Device> ID인증모드 설정\n2. 설정한 모드 중 하나에 대해서만 등록된 사용자로 인증시도",
-      "> ID+지문 모드 : PIN만 등록된 사용자로 인증\n> ID+PIN 모드 : 지문만 등록된 사용자로 인증 \n> ID+지문/PIN 모드(Default) : 카드만 등록된 사용자로 인증\n> ID+지문+PIN 모드 : 카드만 등록된 사용자로 인증\n\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
-      "ID 입력시 인증실패로 동작되면서 'Authentication failed (Invalid Credential)' 로그가 남아야 한다."
-    ],
-    [
-      4,
-      "1. User> Add User> 카드와 PIN 등록된 사용자 추가\n2. 1:1 Security Level 설정\n3. 1:1 인증을 시도",
-      "1:1 Security Level\n> 기기설정따름(Default)\n> Lowest\n> Low\n> Normal\n> High\n> Highest\n\n1:1 인증모드 모두 확인사항\n> 카드인증모드\n> ID인증모드",
-      "1:1 인증시 각각의 설정에 대해 동작되어야 한다."
-    ],
-    [
-      5,
-      "1. User> Add User\n2. Credential: Fingerprint 클릭\n3. 장치선택 후 2지 이상 지문등록\n4. 등록된 지문 중 협박지문 설정\n5. 사용자를 장치에 전송\n6. Device> ID인증모드 설정\n7. 설정한 ID인증모드에 협박지문으로 인증시도",
-      "지문등록> 5지\n> 협박지문> 마지막에 등록한 지문\n\nID인증모드\n> ID+지문\n> ID+지문/PIN\n> ID+지문+PIN",
-      "협박지문으로 인증할 경우 협박지문으로 동작되어야 한다.\n> 협박지문 로그가 남는다."
-    ],
-    [
-      6,
-      "1. User> Add User\n2. Credential: Visual Face 클릭\n3. 장치선택 후 얼굴 2개 이상(서로 다른) 등록\n4. 사용자를 장치에 전송\n5. Device> ID인증모드 설정\n6. 설정한 ID인증모드에 2개의 서로 다른 얼굴로 인증 시도",
-      "얼굴 등록 > 5개(Max) (FL/FS2)\nVisual Face 등록 > 2개(Max) (BS3/F2/W3)\n\nBS3\n> ID+Visual Face(얼굴) 모드\n> ID+PIN 모드\n> ID+Visual Face(얼굴)/PIN 모드(Default)\n> ID+Visual Face(얼굴)+PIN 모드 \n\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
-      "1. 서로 다른 얼굴로 동일 ID로 인증 성공으로 동작이 되어야 한다.\n(on) 1 User - 동일 얼굴 5 등록 : 인증 성공 (FL/FS2)\n(on) 1 User - 동일 얼굴 2 등록 : 인증 성공 (BS3/F2/W3)"
-    ],
-    [
-      7,
-      "<스케줄을 생성한 상태>\n1. Device> ID인증모드에 스케줄 설정\n2. ID인증시도",
-      "> ID+지문 모드\n> ID+PIN 모드\n> ID+지문/PIN 모드\n> ID+지문+PIN 모드\n\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
-      "> 현재 시간의 스케줄로 설정된 인증모드로 동작되어야 한다.\n> 현재 시간이 스케줄에 포함되지 않은 인증모드로 인증시 'Authentication failed (Invalid Credential)'로 인증실패가 되어야 한다."
-    ],
-    [
-      8,
-      "1. Device> Auth Timeout 설정\n",
-      "Auth Timeout \n> 3s ~ 20s \n\nDefault \n> FS2 제외 장치 : 10s\n> FS2, F2 : 5s\n",
-      "선택한 값이 설정되어야 한다."
-    ],
-    [
-      9,
-      "1. Device> ID 인증모드\n2. 다중 인증모드 설정\n3. 설정한 모드의 처음에 해당하는 모드 입력 후 설정한 Auth Timeout 시간내 입력시도",
-      "Auth Timeout : 3s ~ 20s\n\nID 다중 인증모드\n> ID+지문 모드\n> ID+PIN 모드\n> ID+지문/PIN 모드\n> ID+지문+PIN 모드\n\n> 단일장치 및 RS 485 구성에 대해 모두 확인사항\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
-      "설정한 시간내에 인증이 이루어졌으므로 인증성공으로 동작되어야 한다.\n\n> Slave 장치의 경우\n : Matching TimeOut - Slave\n : Auth. TimeOut - Slave\n : Msg. TimeOut- Slave"
-    ],
-    [
-      10,
-      "1. Device> ID 인증모드\n2. 다중 인증모드 설정\n3. 설정한 모드의 처음에 해당하는 모드 입력 후 설정한 Auth Timeout 시간내 나머지 모드에 대해 미입력",
-      "Auth Timeout : 3s ~ 20s\nID 다중 인증모드\n> ID+지문 모드\n> ID+PIN 모드\n> ID+지문/PIN 모드\n> ID+지문+PIN 모드\n\n> 단일장치 및 RS 485 구성에 대해 모두 확인사항\n\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
-      "설정한 시간내에 인증이 이루어지지 않았으므로 Auth Timeout이 발생되어 인증실패로 동작되어야 한다.\n\n> Slave 장치의 경우\n : Matching TimeOut - Slave\n : Auth. TimeOut - Slave\n : Msg. TimeOut- Slave"
-    ],
-    [
-      11,
-      "1. Device> 장치추가\n2. Full Access 설정변경\n3. 추가한 장치에 대해 Door Or Elevator 미설정\n4. User> Add User\n5. 해당 사용자로 인증시도",
-      "*출입통제 룰을 사용하지 않는 경우\n\nFull Access\n> Disable\n> Enable\n\n> 카드/지문/ID/얼굴 인증 모두 확인사항",
-      "Full Access 설정에 상관없이 인증성공으로 동작되어야 한다."
-    ],
-    [
-      12,
-      "1. Device> 장치추가\n2. Full Access 설정변경\n3. 추가한 장치에 대해 Door Or Elevator 설정\n4. User> Add User\n5. 해당 사용자로 인증시도",
-      "*출입통제 룰을 사용하는 경우\n\nFull Access\n> Disable\n> Enable\n\n> 카드/지문/ID/얼굴 인증 모두 확인사항",
-      "Full Access 가 Enable일 때에는 인증성공, Disable일 때에는 인증실패로 동작되어야 한다."
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-29",
-    "description": "",
-    "test_step": [
-      "1. Device> ID인증모드 설정\n2. ID인증시도",
-      "<A 스케줄 생성한 상태>\n1. Device> ID인증모드\n2. ID 인증모드들에 동일 스케줄 설정시도",
-      "1. Device> ID인증모드 설정\n2. 설정한 모드 중 하나에 대해서만 등록된 사용자로 인증시도",
-      "1. User> Add User> 카드와 PIN 등록된 사용자 추가\n2. 1:1 Security Level 설정\n3. 1:1 인증을 시도",
-      "1. User> Add User\n2. Credential: Fingerprint 클릭\n3. 장치선택 후 2지 이상 지문등록\n4. 등록된 지문 중 협박지문 설정\n5. 사용자를 장치에 전송\n6. Device> ID인증모드 설정\n7. 설정한 ID인증모드에 협박지문으로 인증시도",
-      "1. User> Add User\n2. Credential: Visual Face 클릭\n3. 장치선택 후 얼굴 2개 이상(서로 다른) 등록\n4. 사용자를 장치에 전송\n5. Device> ID인증모드 설정\n6. 설정한 ID인증모드에 2개의 서로 다른 얼굴로 인증 시도",
-      "<스케줄을 생성한 상태>\n1. Device> ID인증모드에 스케줄 설정\n2. ID인증시도",
-      "1. Device> Auth Timeout 설정\n",
-      "1. Device> ID 인증모드\n2. 다중 인증모드 설정\n3. 설정한 모드의 처음에 해당하는 모드 입력 후 설정한 Auth Timeout 시간내 입력시도",
-      "1. Device> ID 인증모드\n2. 다중 인증모드 설정\n3. 설정한 모드의 처음에 해당하는 모드 입력 후 설정한 Auth Timeout 시간내 나머지 모드에 대해 미입력",
-      "1. Device> 장치추가\n2. Full Access 설정변경\n3. 추가한 장치에 대해 Door Or Elevator 미설정\n4. User> Add User\n5. 해당 사용자로 인증시도",
-      "1. Device> 장치추가\n2. Full Access 설정변경\n3. 추가한 장치에 대해 Door Or Elevator 설정\n4. User> Add User\n5. 해당 사용자로 인증시도"
-    ],
-    "data": [
-      "Master, Slave 확인\n: Master장치(Station,Entry계열)\n: Slave 장치(Station,Entry계열)\nID인증모드\n> ID+지문(얼굴) 모드\n> ID+PIN 모드\n> ID+지문(얼굴)/PIN 모드(Default)\n> ID+지문(얼굴)+PIN 모드",
-      "A 스케줄로 ID인증모드 모두 설정시도\n> ID+지문 모드\n> ID+PIN 모드\n> ID+지문/PIN 모드(Default)\n> ID+지문+PIN 모드\n\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
-      "> ID+지문 모드 : PIN만 등록된 사용자로 인증\n> ID+PIN 모드 : 지문만 등록된 사용자로 인증 \n> ID+지문/PIN 모드(Default) : 카드만 등록된 사용자로 인증\n> ID+지문+PIN 모드 : 카드만 등록된 사용자로 인증\n\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
-      "1:1 Security Level\n> 기기설정따름(Default)\n> Lowest\n> Low\n> Normal\n> High\n> Highest\n\n1:1 인증모드 모두 확인사항\n> 카드인증모드\n> ID인증모드",
-      "지문등록> 5지\n> 협박지문> 마지막에 등록한 지문\n\nID인증모드\n> ID+지문\n> ID+지문/PIN\n> ID+지문+PIN",
-      "얼굴 등록 > 5개(Max) (FL/FS2)\nVisual Face 등록 > 2개(Max) (BS3/F2/W3)\n\nBS3\n> ID+Visual Face(얼굴) 모드\n> ID+PIN 모드\n> ID+Visual Face(얼굴)/PIN 모드(Default)\n> ID+Visual Face(얼굴)+PIN 모드 \n\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
-      "> ID+지문 모드\n> ID+PIN 모드\n> ID+지문/PIN 모드\n> ID+지문+PIN 모드\n\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
-      "Auth Timeout \n> 3s ~ 20s \n\nDefault \n> FS2 제외 장치 : 10s\n> FS2, F2 : 5s\n",
-      "Auth Timeout : 3s ~ 20s\n\nID 다중 인증모드\n> ID+지문 모드\n> ID+PIN 모드\n> ID+지문/PIN 모드\n> ID+지문+PIN 모드\n\n> 단일장치 및 RS 485 구성에 대해 모두 확인사항\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
-      "Auth Timeout : 3s ~ 20s\nID 다중 인증모드\n> ID+지문 모드\n> ID+PIN 모드\n> ID+지문/PIN 모드\n> ID+지문+PIN 모드\n\n> 단일장치 및 RS 485 구성에 대해 모두 확인사항\n\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
-      "*출입통제 룰을 사용하지 않는 경우\n\nFull Access\n> Disable\n> Enable\n\n> 카드/지문/ID/얼굴 인증 모두 확인사항",
-      "*출입통제 룰을 사용하는 경우\n\nFull Access\n> Disable\n> Enable\n\n> 카드/지문/ID/얼굴 인증 모두 확인사항"
-    ],
-    "expected_result": [
-      "설정한 인증모드로 동작되어야 한다.\n> 인증 성공/실패에 따라 로그가 남는다.\n> 복합 인증의 경우 이를 Master에서 실행했을때, 매칭 수행이 끝나고 결과 팝업 창이 나타난 후나 취소 버튼, 인증타임아웃 등을 통해서 매칭이 취소된 후에 새로운 Credential이 입력될 수 있다.\n> 복합 인증의 경우 이를 Slave에 실행했을때, 인증 결과를 수신하거나 타임아웃이 발생한 후에는 새로운 Credential을 다시 입력할 수 있다.",
-      "> 동일 모드에 대해 스케줄 중복설정이 불가능해야 한다.\n(on) 동일 스케쥴 중복 체크 : 스케줄 추가 불가능\n(off) A/B에 대한 시간별 중복 체크 : 스케줄 추가 가능 \n> 'Always'로 설정된 경우 동일모드에서는 스케줄 설정이 불가능해야 한다.",
-      "ID 입력시 인증실패로 동작되면서 'Authentication failed (Invalid Credential)' 로그가 남아야 한다.",
-      "1:1 인증시 각각의 설정에 대해 동작되어야 한다.",
-      "협박지문으로 인증할 경우 협박지문으로 동작되어야 한다.\n> 협박지문 로그가 남는다.",
-      "1. 서로 다른 얼굴로 동일 ID로 인증 성공으로 동작이 되어야 한다.\n(on) 1 User - 동일 얼굴 5 등록 : 인증 성공 (FL/FS2)\n(on) 1 User - 동일 얼굴 2 등록 : 인증 성공 (BS3/F2/W3)",
-      "> 현재 시간의 스케줄로 설정된 인증모드로 동작되어야 한다.\n> 현재 시간이 스케줄에 포함되지 않은 인증모드로 인증시 'Authentication failed (Invalid Credential)'로 인증실패가 되어야 한다.",
-      "선택한 값이 설정되어야 한다.",
-      "설정한 시간내에 인증이 이루어졌으므로 인증성공으로 동작되어야 한다.\n\n> Slave 장치의 경우\n : Matching TimeOut - Slave\n : Auth. TimeOut - Slave\n : Msg. TimeOut- Slave",
-      "설정한 시간내에 인증이 이루어지지 않았으므로 Auth Timeout이 발생되어 인증실패로 동작되어야 한다.\n\n> Slave 장치의 경우\n : Matching TimeOut - Slave\n : Auth. TimeOut - Slave\n : Msg. TimeOut- Slave",
-      "Full Access 설정에 상관없이 인증성공으로 동작되어야 한다.",
-      "Full Access 가 Enable일 때에는 인증성공, Disable일 때에는 인증실패로 동작되어야 한다."
-    ]
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 12471,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 1,
+              "latestFinal": 0,
+              "latestId": 35087,
+              "latestFinalId": 34664
+            },
+            {
+              "environment": "ES1",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29803,
+              "latestFinalId": 29803
+            },
+            {
+              "environment": "BioStarV2.9.6.30",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29803,
+              "latestFinalId": 29803
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_170117(UnitTest)",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 5659,
+              "latestFinalId": 5659
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_190805_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15237,
+              "latestFinalId": 15237
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.2.8_20160603",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 1721,
+              "latestFinalId": 1721
+            }
+          ]
+        },
+        {
+          "group": "FL_V1.0_190515(PS)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 14150,
+              "latestFinalId": 14150
+            }
+          ]
+        },
+        {
+          "group": "V1.7.1_181204(Hotfix)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12671,
+              "latestFinalId": 12671
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_181210_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12774,
+              "latestFinalId": 12774
+            }
+          ]
+        },
+        {
+          "group": "V1.1.5_4_151014(All)",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 42,
+              "latestFinalId": 42
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0 170331",
+          "statusResults": [
+            {
+              "latest": 1,
+              "latestFinal": 0,
+              "latestId": 8640,
+              "latestFinalId": 6369
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_181119_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12950,
+              "latestFinalId": 12950
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_190809_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15598,
+              "latestFinalId": 15598
+            }
+          ]
+        },
+        {
+          "group": "V1.8.0_190806_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15327,
+              "latestFinalId": 15327
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180322",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10144,
+              "latestFinalId": 10144
+            }
+          ]
+        },
+        {
+          "group": "V1.7.0_190806_Interaction 7차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15080,
+              "latestFinalId": 15080
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.1.5_5 - 20151016(All)",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 105,
+              "latestFinalId": 105
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_190806_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15438,
+              "latestFinalId": 15438
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_20200601_Interaction 12차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 17170,
+              "latestFinalId": 17170
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "인증 - ID",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 633,
+          "index": 1,
+          "step": "1. Device> ID인증모드 설정\n2. ID인증시도",
+          "data": "Master, Slave 확인\n: Master장치(Station,Entry계열)\n: Slave 장치(Station,Entry계열)\nID인증모드\n> ID+지문(얼굴) 모드\n> ID+PIN 모드\n> ID+지문(얼굴)/PIN 모드(Default)\n> ID+지문(얼굴)+PIN 모드",
+          "result": "설정한 인증모드로 동작되어야 한다.\n> 인증 성공/실패에 따라 로그가 남는다.\n> 복합 인증의 경우 이를 Master에서 실행했을때, 매칭 수행이 끝나고 결과 팝업 창이 나타난 후나 취소 버튼, 인증타임아웃 등을 통해서 매칭이 취소된 후에 새로운 Credential이 입력될 수 있다.\n> 복합 인증의 경우 이를 Slave에 실행했을때, 인증 결과를 수신하거나 타임아웃이 발생한 후에는 새로운 Credential을 다시 입력할 수 있다.",
+          "attachments": []
+        },
+        {
+          "id": 644,
+          "index": 2,
+          "step": "<A 스케줄 생성한 상태>\n1. Device> ID인증모드\n2. ID 인증모드들에 동일 스케줄 설정시도",
+          "data": "A 스케줄로 ID인증모드 모두 설정시도\n> ID+지문 모드\n> ID+PIN 모드\n> ID+지문/PIN 모드(Default)\n> ID+지문+PIN 모드\n\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
+          "result": "> 동일 모드에 대해 스케줄 중복설정이 불가능해야 한다.\n(on) 동일 스케쥴 중복 체크 : 스케줄 추가 불가능\n(off) A/B에 대한 시간별 중복 체크 : 스케줄 추가 가능 \n> 'Always'로 설정된 경우 동일모드에서는 스케줄 설정이 불가능해야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 645,
+          "index": 3,
+          "step": "1. Device> ID인증모드 설정\n2. 설정한 모드 중 하나에 대해서만 등록된 사용자로 인증시도",
+          "data": "> ID+지문 모드 : PIN만 등록된 사용자로 인증\n> ID+PIN 모드 : 지문만 등록된 사용자로 인증 \n> ID+지문/PIN 모드(Default) : 카드만 등록된 사용자로 인증\n> ID+지문+PIN 모드 : 카드만 등록된 사용자로 인증\n\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
+          "result": "ID 입력시 인증실패로 동작되면서 'Authentication failed (Invalid Credential)' 로그가 남아야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 651,
+          "index": 4,
+          "step": "1. User> Add User> 카드와 PIN 등록된 사용자 추가\n2. 1:1 Security Level 설정\n3. 1:1 인증을 시도",
+          "data": "1:1 Security Level\n> 기기설정따름(Default)\n> Lowest\n> Low\n> Normal\n> High\n> Highest\n\n1:1 인증모드 모두 확인사항\n> 카드인증모드\n> ID인증모드",
+          "result": "1:1 인증시 각각의 설정에 대해 동작되어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 656,
+          "index": 5,
+          "step": "1. User> Add User\n2. Credential: Fingerprint 클릭\n3. 장치선택 후 2지 이상 지문등록\n4. 등록된 지문 중 협박지문 설정\n5. 사용자를 장치에 전송\n6. Device> ID인증모드 설정\n7. 설정한 ID인증모드에 협박지문으로 인증시도",
+          "data": "지문등록> 5지\n> 협박지문> 마지막에 등록한 지문\n\nID인증모드\n> ID+지문\n> ID+지문/PIN\n> ID+지문+PIN",
+          "result": "협박지문으로 인증할 경우 협박지문으로 동작되어야 한다.\n> 협박지문 로그가 남는다.",
+          "attachments": []
+        },
+        {
+          "id": 3479,
+          "index": 6,
+          "step": "1. User> Add User\n2. Credential: Visual Face 클릭\n3. 장치선택 후 얼굴 2개 이상(서로 다른) 등록\n4. 사용자를 장치에 전송\n5. Device> ID인증모드 설정\n6. 설정한 ID인증모드에 2개의 서로 다른 얼굴로 인증 시도",
+          "data": "얼굴 등록 > 5개(Max) (FL/FS2)\nVisual Face 등록 > 2개(Max) (BS3/F2/W3)\n\nBS3\n> ID+Visual Face(얼굴) 모드\n> ID+PIN 모드\n> ID+Visual Face(얼굴)/PIN 모드(Default)\n> ID+Visual Face(얼굴)+PIN 모드 \n\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
+          "result": "1. 서로 다른 얼굴로 동일 ID로 인증 성공으로 동작이 되어야 한다.\n(on) 1 User - 동일 얼굴 5 등록 : 인증 성공 (FL/FS2)\n(on) 1 User - 동일 얼굴 2 등록 : 인증 성공 (BS3/F2/W3)",
+          "attachments": []
+        },
+        {
+          "id": 663,
+          "index": 7,
+          "step": "<스케줄을 생성한 상태>\n1. Device> ID인증모드에 스케줄 설정\n2. ID인증시도",
+          "data": "> ID+지문 모드\n> ID+PIN 모드\n> ID+지문/PIN 모드\n> ID+지문+PIN 모드\n\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
+          "result": "> 현재 시간의 스케줄로 설정된 인증모드로 동작되어야 한다.\n> 현재 시간이 스케줄에 포함되지 않은 인증모드로 인증시 'Authentication failed (Invalid Credential)'로 인증실패가 되어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 668,
+          "index": 8,
+          "step": "1. Device> Auth Timeout 설정\n",
+          "data": "Auth Timeout \n> 3s ~ 20s \n\nDefault \n> FS2 제외 장치 : 10s\n> FS2, F2 : 5s\n",
+          "result": "선택한 값이 설정되어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 669,
+          "index": 9,
+          "step": "1. Device> ID 인증모드\n2. 다중 인증모드 설정\n3. 설정한 모드의 처음에 해당하는 모드 입력 후 설정한 Auth Timeout 시간내 입력시도",
+          "data": "Auth Timeout : 3s ~ 20s\n\nID 다중 인증모드\n> ID+지문 모드\n> ID+PIN 모드\n> ID+지문/PIN 모드\n> ID+지문+PIN 모드\n\n> 단일장치 및 RS 485 구성에 대해 모두 확인사항\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
+          "result": "설정한 시간내에 인증이 이루어졌으므로 인증성공으로 동작되어야 한다.\n\n> Slave 장치의 경우\n : Matching TimeOut - Slave\n : Auth. TimeOut - Slave\n : Msg. TimeOut- Slave",
+          "attachments": []
+        },
+        {
+          "id": 674,
+          "index": 10,
+          "step": "1. Device> ID 인증모드\n2. 다중 인증모드 설정\n3. 설정한 모드의 처음에 해당하는 모드 입력 후 설정한 Auth Timeout 시간내 나머지 모드에 대해 미입력",
+          "data": "Auth Timeout : 3s ~ 20s\nID 다중 인증모드\n> ID+지문 모드\n> ID+PIN 모드\n> ID+지문/PIN 모드\n> ID+지문+PIN 모드\n\n> 단일장치 및 RS 485 구성에 대해 모두 확인사항\n\nFS2\n> ID+얼굴 모드\n> ID+PIN 모드\n> ID+얼굴/PIN 모드(Default)\n> ID+얼굴+PIN 모드 ",
+          "result": "설정한 시간내에 인증이 이루어지지 않았으므로 Auth Timeout이 발생되어 인증실패로 동작되어야 한다.\n\n> Slave 장치의 경우\n : Matching TimeOut - Slave\n : Auth. TimeOut - Slave\n : Msg. TimeOut- Slave",
+          "attachments": []
+        },
+        {
+          "id": 688,
+          "index": 11,
+          "step": "1. Device> 장치추가\n2. Full Access 설정변경\n3. 추가한 장치에 대해 Door Or Elevator 미설정\n4. User> Add User\n5. 해당 사용자로 인증시도",
+          "data": "*출입통제 룰을 사용하지 않는 경우\n\nFull Access\n> Disable\n> Enable\n\n> 카드/지문/ID/얼굴 인증 모두 확인사항",
+          "result": "Full Access 설정에 상관없이 인증성공으로 동작되어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 689,
+          "index": 12,
+          "step": "1. Device> 장치추가\n2. Full Access 설정변경\n3. 추가한 장치에 대해 Door Or Elevator 설정\n4. User> Add User\n5. 해당 사용자로 인증시도",
+          "data": "*출입통제 룰을 사용하는 경우\n\nFull Access\n> Disable\n> Enable\n\n> 카드/지문/ID/얼굴 인증 모두 확인사항",
+          "result": "Full Access 가 Enable일 때에는 인증성공, Disable일 때에는 인증실패로 동작되어야 한다.",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12471/comment/22101",
+          "id": "22101",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=scko",
+            "name": "scko",
+            "key": "scko",
+            "emailAddress": "scko@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "고승찬",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "5항목은 협박지문을 선택 가능할 수도 있으니, 반드시 마지막 지문일 필요는 없을 듯 보입니다.\r\nTestCase 수정을 가능할까요?",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=scko",
+            "name": "scko",
+            "key": "scko",
+            "emailAddress": "scko@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "고승찬",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-10-09T17:34:55.000+0900",
+          "updated": "2015-10-09T17:34:55.000+0900"
+        },
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12471/comment/22102",
+          "id": "22102",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=scko",
+            "name": "scko",
+            "key": "scko",
+            "emailAddress": "scko@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "고승찬",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "6항목은 ID-인증과 관련이 없을 듯 보입니다. 재고 바랍니다. (중복입니다.)\r\n",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=scko",
+            "name": "scko",
+            "key": "scko",
+            "emailAddress": "scko@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "고승찬",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-10-09T17:53:48.000+0900",
+          "updated": "2015-10-09T17:55:00.000+0900"
+        },
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12471/comment/22103",
+          "id": "22103",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=scko",
+            "name": "scko",
+            "key": "scko",
+            "emailAddress": "scko@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "고승찬",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "7항목은 ID-인증과 관련이 없을 듯 보입니다. 재고 바랍니다.(중복입니다.)",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=scko",
+            "name": "scko",
+            "key": "scko",
+            "emailAddress": "scko@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "고승찬",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-10-09T17:54:34.000+0900",
+          "updated": "2015-10-09T17:55:15.000+0900"
+        }
+      ],
+      "maxResults": 3,
+      "total": 3,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+      "name": "Minor (C)",
+      "id": "3"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+      "name": "완료",
+      "id": "10001",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "완료"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzrszz:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2015-08-18T21:55:15.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

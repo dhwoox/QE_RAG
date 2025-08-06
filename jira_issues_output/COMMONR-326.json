@@ -1,234 +1,582 @@
 {
-  "id": "COMMONR-326",
-  "content": [
-    [
-      1,
-      "1. Settings>Card Format> Smart Card > Add Smart Card\n2. Card Type: Custom Smart Card 선택\n3. Felica Tab 선택\n4. Layout UI확인",
-      "",
-      "1. System Code, Service Code, ID Field 입력이 가능하다. \n> id Field: Block Number, Skip Bytes, Data Size"
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "59934",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/59934",
+  "key": "COMMONR-326",
+  "fields": {
+    "resolution": null,
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "0.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10173",
+      "value": "Major",
+      "id": "10173"
+    },
+    "customfield_10185": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
+      "value": "Medium (2-3일 이내 피드백)",
+      "id": "10220"
+    },
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "64366",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/64366",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "72819",
+          "key": "BS3FW-2027",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72819",
+          "fields": {
+            "summary": "Biostar2 장치 상세 apply 적용 후 장치 상세 재 진입 시 에러 팝업 표출",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/5",
+              "description": "해결책이 제시되었고 보고자의 확인을 기다리는 중입니다. 지금부터는 이슈를 다시 열거나 이슈를 닫을 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/resolved.png",
+              "name": "해결됨",
+              "id": "5",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "[Custom Smart Card Layout 설정된 상태]\n1. 장치상세정보창> Card Type\n2. Custom Smart Card: Layout 설정\n3. User> User Add> +Card\n4. Card Type: Smart Card 선택\n5. Device: Custom Smart Card Layout 설정된 장치 선택\n6. SmartCard Type: Custom Smart Card 선택\n7. Registration Option: Register by Card Reader\n8. Read Card> 카드읽히지 않은 상태로 10초간 유지\n",
-      "Custom Smart Card\n> Felica: Felica Standard 설정",
-      "1. Timeout 발생된다.\n"
-    ],
-    [
-      3,
-      "[Custom Smart Card Layout 설정된 상태]\t\n1. 장치상세정보창> Card Type\n2. Custom Smart Card: Layout 설정\t\n3. User> User Add> +Card\t\n4. Card Type: Smart Card 선택\t\n5. Device: Custom Smart Card Layout 설정된 장치 선택\t\n6. SmartCard Type: Custom Smart Card 선택\t\n7. Registration Option: Register by Card Reader\t\n8. Read Card> Custom Smart Card Read: Felica\t",
-      "Custom Smart Card\n> Felica: Felica Standard 설정\n\nCustom Smart Card Read\n> System Code, Service Code 일치\n\nRegistration Option\n> Register by Card Reader\n",
-      "1. 타사에서 발급한 스마트 카드가 등록된다."
-    ],
-    [
-      4,
-      "[Custom Smart Card Layout 설정된 상태]\t\n1. 장치상세정보창> Card Type\n2. Custom Smart Card: Layout 설정\t\n3. User> User Add> +Card\t\n4. Card Type: Smart Card 선택\t\n5. Device: Custom Smart Card Layout 설정된 장치 선택\t\n6. SmartCard Type: Custom Smart Card 선택\t\n7. Registration Option: Enter Manually\t\n8. 카드 데이터를 10진수 형태로 입력> ENROLL",
-      "Custom Smart Card\n[MSB]\n> Felica: Felica Standard 설정\n\nCustom Smart Card Read\n> System Code, Service Code 일치\n\nRegistration Option\n> Enter Manually\n",
-      "1. 타사에서 발급한 스마트 카드가 등록된다.\n예시: 샘플카드데이터\nKOJC001119 > 31313139 3036303159594D4D4444 3030(16진수) -> 65387592708525716620606209286704738352(10진수)\n[MSB]\nKOJCOO1120 > 313132303036303159594D4D44443030(16진수) -> 65387612277881857643897594892060471344(10진수)\n[LSB]\nKOJCOO1120 > 303044444D4D59593031303632303131(16진수) -> 64053558662177587889391474675505312049(10진수)"
-    ],
-    [
-      5,
-      "[Custom Smart Card Layout 설정된 상태]\t\n1. 장치상세정보창> Card Type\n2. Custom Smart Card: Layout 설정\t\n3. User> User Add> +Card\t\n4. Card Type: Smart Card 선택\t\n5. Device: Custom Smart Card Layout 설정된 장치 선택\t\n6. SmartCard Type: Custom Smart Card 선택\t\n7. Registration Option: Register by Card Reader\t\n8. Read Card> Custom Smart Card Read: Felica\t\n",
-      "Custom Smart Card\n> Felica: Felica Standard 설정\n\nCustom Smart Card Read\n> System Code, Service Code 불일치\n\nCSN Card Type\n>ON/OFF\n",
-      "1. CSN 카드 옵션에 따라 동작한다.\n> OFF일 경우, Device Timeout으로 동작한다.\n> ON일 경우, CSN 값을 읽어온다."
-    ],
-    [
-      6,
-      "[Custom Smart Card Layout 설정된 상태]\n\n1. 장치에 Felica 카드 인증\n2. 카드값 확인(DIAG,Biostar)",
-      "Custom SmartCard Layout \n> System code 일치, Service Code 불일치\n> Layout: none\n\nCSN Card Type\n>ON",
-      "1. 인증 실패로 동작한다.\n2. IDm으로 읽힌다.\n(FeliCa에서는 CSN값이 아닌 IDm으로 부름)\n\n예시: 샘플카드데이터\nKOJC001120 > 31313230 3036303159594D4D4444 3030 -> 0x01 0x2E 0x50 0xF4 0x9F 0x57 0x37 0x46(DIAG) /85094454542153542(Biostar)"
-    ],
-    [
-      7,
-      "1. 장치상세정보창> Card Type\n2. Custom Smart Card: Layout 설정\n3. Byte Order 설정: MSB\n4. Custom Smart Card Read",
-      "",
-      "1. Byte Order 설정에 맞게 출력된다.\n(CSN과 동일하게 MSB/LSB 가 다른 카드로 인식)\n\n\n※ Biostar에서 카드값 10진수로 표기\n(Felica에 저장된 카드 데이터 유형이 ASCII로 되어있으므로 추후 Biostar에서 ASCII값으로 확인할 수 있는 서버 설정 추가 예정)\n"
-    ],
-    [
-      8,
-      "1. 장치상세정보창> Card Type\n2. Custom Smart Card: Layout 설정\n3. Byte Order 설정: LSB\n4. Custom Smart Card Read",
-      "",
-      "1. Byte Order 설정에 맞게 출력된다.\n\n※ CSN과 동일하게 MSB/LSB 가 다른 카드로 인식)\n"
-    ],
-    [
-      9,
-      "1. User> Add User> +Card\n2. Custom Smart Card: Felica 등록\n3. Custom Smart Card Block\n4. Custom Smart Card Unblock",
-      "Custom SmartCard Layout\n> System Code, Service Code 일치\n",
-      "1. Block시 Blacklist로 동작된다.\n2. Unblock시 인증성공으로 동작된다.\n\n※ biostar에는 카드값이 짤려서 나올 수 있음\n"
-    ],
-    [
-      10,
-      "1. Custom Smart Card Read: 장치에 Felica 카드 리드\n",
-      "Custom SmartCard Layout \n> System code, Service Code 불일치\n\nCSN Card Type\n>ON/OFF",
-      "1. CSN 카드 옵션에 따라 동작한다.\n> OFF일 경우, Device Timeout으로 동작한다.\n> ON일 경우, CSN 값을 읽어온다."
-    ],
-    [
-      11,
-      "1. Settings> Card Format> Smart Card> Add Smart Card\n2. Card Type: Custom Smart Card 선택\n3. Smart Card Tab 선택\n4. Layout UI 설정\n5. 장치에 Custom Smart Card Layout 설정\n6. Custom Smart Card Read: Felica",
-      "Felica Layout 설정\n예시)샘플카드\n> System Code: FE00h\n> Service Code: 174bh\n> ID Field \nblock Number: 1 /Skip Bytes: 12 / Data Size:4\nblock Number: 2 /Skip Bytes: 6/ Data Size:10\nblock Number: 3 /Skip Bytes: 0/ Data Size:2",
-      "1. Felica Layout 설정이 일치할 경우 저장된 사용자로 인증된다.\n2. Felica Layout 설정이 불일치할 경우 인증 실패된다."
-    ],
-    [
-      12,
-      "1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 Custom Smart Card Read: Felica\n3. Wiegand In으로 들어온 값 확인\n",
-      "Wiegand Out 장치\n> Custom Smart Card Layout 설정\n\nWiegand Format\n> Default\n> 임의 Custom Format\n\nCustom Smart Card Byte Order\n> MSB\n",
-      "1. 리드된 카드ID가 위겐드 포맷에 맞게 동작된다.\n"
-    ],
-    [
-      13,
-      "1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 Custom Smart Card Read: Felica\n3. Wiegand In으로 들어온 값 확인\n",
-      "Wiegand Out 장치\n> Custom Smart Card Layout 설정\n\n\n\nWiegand Format\n> Default\n> 임의 Custom Format\n\nCustom Smart Card Byte Order\n> LSB",
-      "1. 리드된 카드ID의 LSB값이 위겐드 포맷에 맞게 동작된다.\n"
-    ],
-    [
-      14,
-      "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read: Felica\n3. OSDP로 출력되는 값 확인",
-      "3rd party reader\n> RS485 모드: Default\n\nCustom Smart Card Layout 설정\n\n\nCustom Smart Card Byte Order\n> MSB",
-      "1. 인증성공 후 발급된 카드ID가 출력된다.\n"
-    ],
-    [
-      15,
-      "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read: Felica\n3. OSDP로 출력되는 값 확인",
-      "3rd party reader\n> RS485 모드: Default\n\nCustom Smart Card Layout 설정\n\nCustom Smart Card Byte Order\n>LSB",
-      "1. 인증성공 후 발급된 카드ID가 LSB값으로 출력된다.\n"
-    ],
-    [
-      16,
-      "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read: Felica\n3. OSDP로 출력되는 값 확인\n",
-      "3rd party reader\n> RS485 모드: Slave\n\nCustom Smart Card Layout 설정\n\nCustom Smart Card Byte Order\n> MSB\n",
-      "1. 인증성공 후 발급된 카드ID가 MSB값 출력된다.\n"
-    ],
-    [
-      17,
-      "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read: Felica\n3. OSDP로 출력되는 값 확인",
-      "3rd party reader\n> RS485 모드: Slave\n\nCustom Smart Card Layout 설정\n\nCustom Smart Card Byte Order\n> LSB\n",
-      "1. 인증성공 후 발급된 카드ID가 LSB값으로 출력된다.\n"
-    ],
-    [
-      18,
-      "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read: Felica\n3. OSDP로 출력되는 값 확인",
-      "OSDP로 연결된 장치\n> Default 모드\n> Output info - User ID\n\nCustom Smart Card Layout 설정\n\nCustom Smart Card Byte Order\n> MSB\n\n",
-      "1. MSB Card 로 등록한 사용자 ID 가 출력된다.\n\n"
-    ],
-    [
-      19,
-      "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read: Felica\n3. OSDP로 출력되는 값 확인\n",
-      "OSDP로 연결된 장치\n> Default 모드\n> Output info - User ID\n\nCustom Smart Card Layout 설정\n\nCustom Smart Card Byte Order\n> LSB\n",
-      "1. LSB Card 로 등록한 사용자 ID 가 출력된다.\n"
-    ],
-    [
-      20,
-      "1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 Custom Smart Card Read: Felica\n4. Wiegand In으로 들어온 값 확인",
-      "Wiegand Out 장치\n> Custom Smart Card Layout 설정\n\nWiegand Output Info\n> User ID\n\nWiegand Format\n> Default\n> 임의 Custom Format\n\nCustom Smart Card Byte Order\n> MSB\n\nUser ID Type\n>Number/Alphanumeric\n>Wiegand Format: 64bit\n>ex) 사용자ID: 12345(숫자)\n사용자ID: sykim(영숫자)",
-      "1. MSB Card 로 등록한 사용자 ID 가 출력된다.\n\n> 12345(숫자)로 출력\n> sykim = 0x73 0x79 0x6B 0x69 0x6D\n따라서 495958321517(영숫자)로 출력."
-    ],
-    [
-      21,
-      "1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 Custom Smart Card Read: Felica\n3. Wiegand In으로 들어온 값 확인\n",
-      "Wiegand Out 장치\n> Custom Smart Card Layout 설정\n\nWiegand Output Info\n> User ID\n\nWiegand Format\n> Default\n> 임의 Custom Format\n\nCustom Smart Card Byte Order\n> LSB\n\nUser ID Type\n>Number/Alphanumeric\n>Wiegand Format: 256bit\n>ex) 사용자ID: 5678(숫자)\n사용자ID: youbin(영숫자)",
-      "1. LSB Card 로 등록한 사용자 ID 가 출력된다.\n\n> 5678(숫자)로 출력\n> youbin = 0x79 0x6F 0x75 0x62 0x69 0x6E\n따라서 133519617714542(영숫자)로 출력."
-    ],
-    [
-      22,
-      "[미지원 FW에 인증하는 경우]\n1. 장치에 Felica 카드 인증",
-      "FW\n>Felica 미지원 FW (v1.3.0 이전 버전)\n\ncard type\n>CSN Card: Enabled\n> Suprema Smart Card: Enabled/disabled\n(미지원 FW의 경우 FELICA Layout 설정 불가)",
-      "1. 인증 실패로 동작한다.\n2. IDm으로 읽힌다.\n(FeliCa에서는 CSN값이 아닌 IDm으로 부름)"
-    ],
-    [
-      23,
-      "[Batch Edit]\n1. Custom SmartCard 지원 장치 두대이상 선택 > Batch Edit 클릭",
-      "",
-      "1. 'Custom Smart Card','Custom Smart Card Layout 옵션확인\n> Default - Disable"
-    ],
-    [
-      24,
-      "[Batch Edit]\n1. Custom SmartCard 지원 장치 두대이상 선택 > Batch Edit  클릭\n2. Custom Smart Card > Enabled\n3. FeliCa Standard 체크/언체크 > Apply\n4. 장치 상세 정보창 진입",
-      "",
-      "1. 선택한 옵션이 적용되어있다.\n> 장치상세: Card Type: Custom Smart Card: FeliCa: Felica Standard 체크/언체크 상태"
-    ],
-    [
-      25,
-      "[Batch Edit]\n1. Custom SmartCard 지원 장치 두대이상 선택 > Batch Edit  클릭\n2. Custom Smart Card > Layout 선택\n3. Layout 선택 후 적용\n4. 장치 상세 정보창 진입",
-      "",
-      "1. 커스텀 스마트 카드로 생성된 Layout 목록 표시 확인\n> 커스텀 스마트 카드로 생성된 Layout 목록만 표시\n2. 선택한  Layout 적용 확인"
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-326",
-    "description": "",
-    "test_step": [
-      "1. Settings>Card Format> Smart Card > Add Smart Card\n2. Card Type: Custom Smart Card 선택\n3. Felica Tab 선택\n4. Layout UI확인",
-      "[Custom Smart Card Layout 설정된 상태]\n1. 장치상세정보창> Card Type\n2. Custom Smart Card: Layout 설정\n3. User> User Add> +Card\n4. Card Type: Smart Card 선택\n5. Device: Custom Smart Card Layout 설정된 장치 선택\n6. SmartCard Type: Custom Smart Card 선택\n7. Registration Option: Register by Card Reader\n8. Read Card> 카드읽히지 않은 상태로 10초간 유지\n",
-      "[Custom Smart Card Layout 설정된 상태]\t\n1. 장치상세정보창> Card Type\n2. Custom Smart Card: Layout 설정\t\n3. User> User Add> +Card\t\n4. Card Type: Smart Card 선택\t\n5. Device: Custom Smart Card Layout 설정된 장치 선택\t\n6. SmartCard Type: Custom Smart Card 선택\t\n7. Registration Option: Register by Card Reader\t\n8. Read Card> Custom Smart Card Read: Felica\t",
-      "[Custom Smart Card Layout 설정된 상태]\t\n1. 장치상세정보창> Card Type\n2. Custom Smart Card: Layout 설정\t\n3. User> User Add> +Card\t\n4. Card Type: Smart Card 선택\t\n5. Device: Custom Smart Card Layout 설정된 장치 선택\t\n6. SmartCard Type: Custom Smart Card 선택\t\n7. Registration Option: Enter Manually\t\n8. 카드 데이터를 10진수 형태로 입력> ENROLL",
-      "[Custom Smart Card Layout 설정된 상태]\t\n1. 장치상세정보창> Card Type\n2. Custom Smart Card: Layout 설정\t\n3. User> User Add> +Card\t\n4. Card Type: Smart Card 선택\t\n5. Device: Custom Smart Card Layout 설정된 장치 선택\t\n6. SmartCard Type: Custom Smart Card 선택\t\n7. Registration Option: Register by Card Reader\t\n8. Read Card> Custom Smart Card Read: Felica\t\n",
-      "[Custom Smart Card Layout 설정된 상태]\n\n1. 장치에 Felica 카드 인증\n2. 카드값 확인(DIAG,Biostar)",
-      "1. 장치상세정보창> Card Type\n2. Custom Smart Card: Layout 설정\n3. Byte Order 설정: MSB\n4. Custom Smart Card Read",
-      "1. 장치상세정보창> Card Type\n2. Custom Smart Card: Layout 설정\n3. Byte Order 설정: LSB\n4. Custom Smart Card Read",
-      "1. User> Add User> +Card\n2. Custom Smart Card: Felica 등록\n3. Custom Smart Card Block\n4. Custom Smart Card Unblock",
-      "1. Custom Smart Card Read: 장치에 Felica 카드 리드\n",
-      "1. Settings> Card Format> Smart Card> Add Smart Card\n2. Card Type: Custom Smart Card 선택\n3. Smart Card Tab 선택\n4. Layout UI 설정\n5. 장치에 Custom Smart Card Layout 설정\n6. Custom Smart Card Read: Felica",
-      "1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 Custom Smart Card Read: Felica\n3. Wiegand In으로 들어온 값 확인\n",
-      "1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 Custom Smart Card Read: Felica\n3. Wiegand In으로 들어온 값 확인\n",
-      "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read: Felica\n3. OSDP로 출력되는 값 확인",
-      "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read: Felica\n3. OSDP로 출력되는 값 확인",
-      "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read: Felica\n3. OSDP로 출력되는 값 확인\n",
-      "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read: Felica\n3. OSDP로 출력되는 값 확인",
-      "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read: Felica\n3. OSDP로 출력되는 값 확인",
-      "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read: Felica\n3. OSDP로 출력되는 값 확인\n",
-      "1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 Custom Smart Card Read: Felica\n4. Wiegand In으로 들어온 값 확인",
-      "1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 Custom Smart Card Read: Felica\n3. Wiegand In으로 들어온 값 확인\n",
-      "[미지원 FW에 인증하는 경우]\n1. 장치에 Felica 카드 인증",
-      "[Batch Edit]\n1. Custom SmartCard 지원 장치 두대이상 선택 > Batch Edit 클릭",
-      "[Batch Edit]\n1. Custom SmartCard 지원 장치 두대이상 선택 > Batch Edit  클릭\n2. Custom Smart Card > Enabled\n3. FeliCa Standard 체크/언체크 > Apply\n4. 장치 상세 정보창 진입",
-      "[Batch Edit]\n1. Custom SmartCard 지원 장치 두대이상 선택 > Batch Edit  클릭\n2. Custom Smart Card > Layout 선택\n3. Layout 선택 후 적용\n4. 장치 상세 정보창 진입"
-    ],
-    "data": [
-      "Custom Smart Card\n> Felica: Felica Standard 설정",
-      "Custom Smart Card\n> Felica: Felica Standard 설정\n\nCustom Smart Card Read\n> System Code, Service Code 일치\n\nRegistration Option\n> Register by Card Reader\n",
-      "Custom Smart Card\n[MSB]\n> Felica: Felica Standard 설정\n\nCustom Smart Card Read\n> System Code, Service Code 일치\n\nRegistration Option\n> Enter Manually\n",
-      "Custom Smart Card\n> Felica: Felica Standard 설정\n\nCustom Smart Card Read\n> System Code, Service Code 불일치\n\nCSN Card Type\n>ON/OFF\n",
-      "Custom SmartCard Layout \n> System code 일치, Service Code 불일치\n> Layout: none\n\nCSN Card Type\n>ON",
-      "Custom SmartCard Layout\n> System Code, Service Code 일치\n",
-      "Custom SmartCard Layout \n> System code, Service Code 불일치\n\nCSN Card Type\n>ON/OFF",
-      "Felica Layout 설정\n예시)샘플카드\n> System Code: FE00h\n> Service Code: 174bh\n> ID Field \nblock Number: 1 /Skip Bytes: 12 / Data Size:4\nblock Number: 2 /Skip Bytes: 6/ Data Size:10\nblock Number: 3 /Skip Bytes: 0/ Data Size:2",
-      "Wiegand Out 장치\n> Custom Smart Card Layout 설정\n\nWiegand Format\n> Default\n> 임의 Custom Format\n\nCustom Smart Card Byte Order\n> MSB\n",
-      "Wiegand Out 장치\n> Custom Smart Card Layout 설정\n\n\n\nWiegand Format\n> Default\n> 임의 Custom Format\n\nCustom Smart Card Byte Order\n> LSB",
-      "3rd party reader\n> RS485 모드: Default\n\nCustom Smart Card Layout 설정\n\n\nCustom Smart Card Byte Order\n> MSB",
-      "3rd party reader\n> RS485 모드: Default\n\nCustom Smart Card Layout 설정\n\nCustom Smart Card Byte Order\n>LSB",
-      "3rd party reader\n> RS485 모드: Slave\n\nCustom Smart Card Layout 설정\n\nCustom Smart Card Byte Order\n> MSB\n",
-      "3rd party reader\n> RS485 모드: Slave\n\nCustom Smart Card Layout 설정\n\nCustom Smart Card Byte Order\n> LSB\n",
-      "OSDP로 연결된 장치\n> Default 모드\n> Output info - User ID\n\nCustom Smart Card Layout 설정\n\nCustom Smart Card Byte Order\n> MSB\n\n",
-      "OSDP로 연결된 장치\n> Default 모드\n> Output info - User ID\n\nCustom Smart Card Layout 설정\n\nCustom Smart Card Byte Order\n> LSB\n",
-      "Wiegand Out 장치\n> Custom Smart Card Layout 설정\n\nWiegand Output Info\n> User ID\n\nWiegand Format\n> Default\n> 임의 Custom Format\n\nCustom Smart Card Byte Order\n> MSB\n\nUser ID Type\n>Number/Alphanumeric\n>Wiegand Format: 64bit\n>ex) 사용자ID: 12345(숫자)\n사용자ID: sykim(영숫자)",
-      "Wiegand Out 장치\n> Custom Smart Card Layout 설정\n\nWiegand Output Info\n> User ID\n\nWiegand Format\n> Default\n> 임의 Custom Format\n\nCustom Smart Card Byte Order\n> LSB\n\nUser ID Type\n>Number/Alphanumeric\n>Wiegand Format: 256bit\n>ex) 사용자ID: 5678(숫자)\n사용자ID: youbin(영숫자)",
-      "FW\n>Felica 미지원 FW (v1.3.0 이전 버전)\n\ncard type\n>CSN Card: Enabled\n> Suprema Smart Card: Enabled/disabled\n(미지원 FW의 경우 FELICA Layout 설정 불가)"
-    ],
-    "expected_result": [
-      "1. System Code, Service Code, ID Field 입력이 가능하다. \n> id Field: Block Number, Skip Bytes, Data Size",
-      "1. Timeout 발생된다.\n",
-      "1. 타사에서 발급한 스마트 카드가 등록된다.",
-      "1. 타사에서 발급한 스마트 카드가 등록된다.\n예시: 샘플카드데이터\nKOJC001119 > 31313139 3036303159594D4D4444 3030(16진수) -> 65387592708525716620606209286704738352(10진수)\n[MSB]\nKOJCOO1120 > 313132303036303159594D4D44443030(16진수) -> 65387612277881857643897594892060471344(10진수)\n[LSB]\nKOJCOO1120 > 303044444D4D59593031303632303131(16진수) -> 64053558662177587889391474675505312049(10진수)",
-      "1. CSN 카드 옵션에 따라 동작한다.\n> OFF일 경우, Device Timeout으로 동작한다.\n> ON일 경우, CSN 값을 읽어온다.",
-      "1. 인증 실패로 동작한다.\n2. IDm으로 읽힌다.\n(FeliCa에서는 CSN값이 아닌 IDm으로 부름)\n\n예시: 샘플카드데이터\nKOJC001120 > 31313230 3036303159594D4D4444 3030 -> 0x01 0x2E 0x50 0xF4 0x9F 0x57 0x37 0x46(DIAG) /85094454542153542(Biostar)",
-      "1. Byte Order 설정에 맞게 출력된다.\n(CSN과 동일하게 MSB/LSB 가 다른 카드로 인식)\n\n\n※ Biostar에서 카드값 10진수로 표기\n(Felica에 저장된 카드 데이터 유형이 ASCII로 되어있으므로 추후 Biostar에서 ASCII값으로 확인할 수 있는 서버 설정 추가 예정)\n",
-      "1. Byte Order 설정에 맞게 출력된다.\n\n※ CSN과 동일하게 MSB/LSB 가 다른 카드로 인식)\n",
-      "1. Block시 Blacklist로 동작된다.\n2. Unblock시 인증성공으로 동작된다.\n\n※ biostar에는 카드값이 짤려서 나올 수 있음\n",
-      "1. CSN 카드 옵션에 따라 동작한다.\n> OFF일 경우, Device Timeout으로 동작한다.\n> ON일 경우, CSN 값을 읽어온다.",
-      "1. Felica Layout 설정이 일치할 경우 저장된 사용자로 인증된다.\n2. Felica Layout 설정이 불일치할 경우 인증 실패된다.",
-      "1. 리드된 카드ID가 위겐드 포맷에 맞게 동작된다.\n",
-      "1. 리드된 카드ID의 LSB값이 위겐드 포맷에 맞게 동작된다.\n",
-      "1. 인증성공 후 발급된 카드ID가 출력된다.\n",
-      "1. 인증성공 후 발급된 카드ID가 LSB값으로 출력된다.\n",
-      "1. 인증성공 후 발급된 카드ID가 MSB값 출력된다.\n",
-      "1. 인증성공 후 발급된 카드ID가 LSB값으로 출력된다.\n",
-      "1. MSB Card 로 등록한 사용자 ID 가 출력된다.\n\n",
-      "1. LSB Card 로 등록한 사용자 ID 가 출력된다.\n",
-      "1. MSB Card 로 등록한 사용자 ID 가 출력된다.\n\n> 12345(숫자)로 출력\n> sykim = 0x73 0x79 0x6B 0x69 0x6D\n따라서 495958321517(영숫자)로 출력.",
-      "1. LSB Card 로 등록한 사용자 ID 가 출력된다.\n\n> 5678(숫자)로 출력\n> youbin = 0x79 0x6F 0x75 0x62 0x69 0x6E\n따라서 133519617714542(영숫자)로 출력.",
-      "1. 인증 실패로 동작한다.\n2. IDm으로 읽힌다.\n(FeliCa에서는 CSN값이 아닌 IDm으로 부름)",
-      "1. 'Custom Smart Card','Custom Smart Card Layout 옵션확인\n> Default - Disable",
-      "1. 선택한 옵션이 적용되어있다.\n> 장치상세: Card Type: Custom Smart Card: FeliCa: Felica Standard 체크/언체크 상태",
-      "1. 커스텀 스마트 카드로 생성된 Layout 목록 표시 확인\n> 커스텀 스마트 카드로 생성된 Layout 목록만 표시\n2. 선택한  Layout 적용 확인"
-    ]
+    "assignee": null,
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 25.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=ybwoo",
+      "name": "ybwoo",
+      "key": "JIRAUSER13405",
+      "emailAddress": "ybwoo@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "우유빈",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-326/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@29804d91[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@416e08f1[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@4817ee3[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@3599d702[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@4e243a[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@1d07da46[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@127ec963[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@69a42de9[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@183aab13[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@3bcc97b8[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@5f1d7473[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@171ec11c[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": null,
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-326/watchers",
+      "watchCount": 1,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T09:45:38.000+0900",
+    "timeoriginalestimate": null,
+    "description": "https://jira.suprema.co.kr/browse/BDP-870\r\n * BS3에서만 우선 지원\r\n * 현재 슈프리마 장치에서는 일본 및 아시아 지역에서 사용 중인 FeliCa 카드의 특정 영역 읽기를 지원하지 못하고 있다. \r\n ** FeliCa의 IDm은 현재도 읽을 수 있음, 기본 시스템 코드를 통하여 IDm 을 CSN 처럼 읽고 있음.\r\n * FeliCa의 경우, MIFARE, DESFire와는 다른 카드 구조를 가지고 있기 때문에 별도의 레이아웃을 설정할 수 있도록 지원하여 해당 카드를 읽을 수 있도록 지원한다. \r\n ** 지금 진행 중인 프로젝트에서는 FeliCa 카드  읽기 기능만 지원하여도 프로젝트 요구사항에 충족할 수 있고, 빠르게 적용하기 위하여 커스텀 스마트 카드의 유형으로 FeliCa 카드를 지원한다. \r\n\r\n \r\n\r\n \r\n * FeliCa 샘플 수령, BES 샘플 카드 전달 완료\r\n ## 사이트에서 사용하는 카드 샘플 3장 수령 완료\r\n ### 카드 앞면에 KOJC001119, KOJC001120, KOJC001121 기재되어 있음\r\n ### ({color:#de350b}*Confidential*{color}) 카드 데이터 포맷: 기업코드(4) + 개인코드(10) + 갱신횟수(2)\r\n #### 시스템 코드: FE00h\r\n #### 서비스 코드: 174bh\r\n #### 블록 수: 5\r\n #### 키 없음\r\n\r\n * Card Type(CSN, Wiegand, Smart Card) 별 선택 옵션 설정 후 진행\r\n 1. CSN: 체크\r\n 2. Suprema SmartCard: 체크/언체크\r\n 3. Custom SmartCard : Felica Standard 체크\r\n\r\n * 샘플카드데이터(BES-1469)\r\n\r\n # KOJC001119 > 31313139 3036303159594D4D4444 3030\r\n >>기업코드:1119, 개인코드: 0601YYMMDD, 갱신횟수: 00(ASCII코드)\r\n # KOJC001120 > 31313230 3036303159594D4D4444 3030\r\n >>기업코드:1120, 개인코드: 0601YYMMDD, 갱신횟수: 00(ASCII코드)\r\n # KOJC001121 > 31313231 3036303159594D4D4444 3030\r\n >>기업코드:1121, 개인코드: 0601YYMMDD, 갱신횟수: 00(ASCII코드)\r\n\r\n * Felica layout 설정\r\n 시스템 코드: FE00\r\n 서비스 코드: 174b\r\n ID 필드:\r\n\r\n||읽는순서||블록번호||바이트 건너뛰기||데이터 크기||\r\n|1|1|12|4|\r\n|2|2|6|10|\r\n|3|3|0|2|\r\n\r\n \r\n * 추후 지원이 필요한 내용\r\n\r\n # FeliCa에 저장된 카드 데이터 유형이 ASCII로 되어 있으므로 BioStar 2에서 카드 값을 ASCII 값으로 확인할 수 있도록 서버 설정을 추가 지원한다.\r\n 영향받는 페이지: USER (카드 등록 시 - 직접 입력/미할당 카드 선택/스캔 등록), MONITORING (사용자에게 미할당된 FeliCa카드를 장치에 접촉했을 경우)",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. Settings&gt;Card Format&gt; Smart Card &gt; Add Smart Card<br/>2. Card Type: Custom Smart Card 선택<br/>3. Felica Tab 선택<br/>4. Layout UI확인</p></td><td></td><td><p>1. System Code, Service Code, ID Field 입력이 가능하다. <br/>&gt; id Field: Block Number, Skip Bytes, Data Size</p></td></tr><tr><td>2</td><td><p><span class=\"error\">&#91;Custom Smart Card Layout 설정된 상태&#93;</span><br/>1. 장치상세정보창&gt; Card Type<br/>2. Custom Smart Card: Layout 설정<br/>3. User&gt; User Add&gt; +Card<br/>4. Card Type: Smart Card 선택<br/>5. Device: Custom Smart Card Layout 설정된 장치 선택<br/>6. SmartCard Type: Custom Smart Card 선택<br/>7. Registration Option: Register by Card Reader<br/>8. Read Card&gt; 카드읽히지 않은 상태로 10초간 유지</p></td><td><p>Custom Smart Card<br/>&gt; Felica: Felica Standard 설정</p></td><td><p>1. Timeout 발생된다.</p></td></tr><tr><td>3</td><td><p><span class=\"error\">&#91;Custom Smart Card Layout 설정된 상태&#93;</span><br/>1. 장치상세정보창&gt; Card Type<br/>2. Custom Smart Card: Layout 설정<br/>3. User&gt; User Add&gt; +Card<br/>4. Card Type: Smart Card 선택<br/>5. Device: Custom Smart Card Layout 설정된 장치 선택<br/>6. SmartCard Type: Custom Smart Card 선택<br/>7. Registration Option: Register by Card Reader<br/>8. Read Card&gt; Custom Smart Card Read: Felica</p></td><td><p>Custom Smart Card<br/>&gt; Felica: Felica Standard 설정</p>\n\n<p>Custom Smart Card Read<br/>&gt; System Code, Service Code 일치</p>\n\n<p>Registration Option<br/>&gt; Register by Card Reader</p></td><td><p>1. 타사에서 발급한 스마트 카드가 등록된다.</p></td></tr><tr><td>4</td><td><p><span class=\"error\">&#91;Custom Smart Card Layout 설정된 상태&#93;</span><br/>1. 장치상세정보창&gt; Card Type<br/>2. Custom Smart Card: Layout 설정<br/>3. User&gt; User Add&gt; +Card<br/>4. Card Type: Smart Card 선택<br/>5. Device: Custom Smart Card Layout 설정된 장치 선택<br/>6. SmartCard Type: Custom Smart Card 선택<br/>7. Registration Option: Enter Manually<br/>8. 카드 데이터를 10진수 형태로 입력&gt; ENROLL</p></td><td><p>Custom Smart Card<br/><span class=\"error\">&#91;MSB&#93;</span><br/>&gt; Felica: Felica Standard 설정</p>\n\n<p>Custom Smart Card Read<br/>&gt; System Code, Service Code 일치</p>\n\n<p>Registration Option<br/>&gt; Enter Manually</p></td><td><p>1. 타사에서 발급한 스마트 카드가 등록된다.<br/>예시: 샘플카드데이터<br/>KOJC001119 &gt; 31313139 3036303159594D4D4444 3030(16진수) -&gt; 65387592708525716620606209286704738352(10진수)<br/><span class=\"error\">&#91;MSB&#93;</span><br/>KOJCOO1120 &gt; 313132303036303159594D4D44443030(16진수) -&gt; 65387612277881857643897594892060471344(10진수)<br/><span class=\"error\">&#91;LSB&#93;</span><br/>KOJCOO1120 &gt; 303044444D4D59593031303632303131(16진수) -&gt; 64053558662177587889391474675505312049(10진수)</p></td></tr><tr><td>5</td><td><p><span class=\"error\">&#91;Custom Smart Card Layout 설정된 상태&#93;</span><br/>1. 장치상세정보창&gt; Card Type<br/>2. Custom Smart Card: Layout 설정<br/>3. User&gt; User Add&gt; +Card<br/>4. Card Type: Smart Card 선택<br/>5. Device: Custom Smart Card Layout 설정된 장치 선택<br/>6. SmartCard Type: Custom Smart Card 선택<br/>7. Registration Option: Register by Card Reader<br/>8. Read Card&gt; Custom Smart Card Read: Felica</p></td><td><p>Custom Smart Card<br/>&gt; Felica: Felica Standard 설정</p>\n\n<p>Custom Smart Card Read<br/>&gt; System Code, Service Code 불일치</p>\n\n<p>CSN Card Type<br/>&gt;ON/OFF</p></td><td><p>1. CSN 카드 옵션에 따라 동작한다.<br/>&gt; OFF일 경우, Device Timeout으로 동작한다.<br/>&gt; ON일 경우, CSN 값을 읽어온다.</p></td></tr><tr><td>6</td><td><p><span class=\"error\">&#91;Custom Smart Card Layout 설정된 상태&#93;</span></p>\n\n<p>1. 장치에 Felica 카드 인증<br/>2. 카드값 확인(DIAG,Biostar)</p></td><td><p>Custom SmartCard Layout <br/>&gt; System code 일치, Service Code 불일치<br/>&gt; Layout: none</p>\n\n<p>CSN Card Type<br/>&gt;ON</p></td><td><p>1. 인증 실패로 동작한다.<br/>2. IDm으로 읽힌다.<br/>(FeliCa에서는 CSN값이 아닌 IDm으로 부름)</p>\n\n<p>예시: 샘플카드데이터<br/>KOJC001120 &gt; 31313230 3036303159594D4D4444 3030 -&gt; 0x01 0x2E 0x50 0xF4 0x9F 0x57 0x37 0x46(DIAG) /85094454542153542(Biostar)</p></td></tr><tr><td>7</td><td><p>1. 장치상세정보창&gt; Card Type<br/>2. Custom Smart Card: Layout 설정<br/>3. Byte Order 설정: MSB<br/>4. Custom Smart Card Read</p></td><td></td><td><p>1. Byte Order 설정에 맞게 출력된다.<br/>(CSN과 동일하게 MSB/LSB 가 다른 카드로 인식)</p>\n\n\n<p>※ Biostar에서 카드값 10진수로 표기<br/>(Felica에 저장된 카드 데이터 유형이 ASCII로 되어있으므로 추후 Biostar에서 ASCII값으로 확인할 수 있는 서버 설정 추가 예정)</p></td></tr><tr><td>8</td><td><p>1. 장치상세정보창&gt; Card Type<br/>2. Custom Smart Card: Layout 설정<br/>3. Byte Order 설정: LSB<br/>4. Custom Smart Card Read</p></td><td></td><td><p>1. Byte Order 설정에 맞게 출력된다.</p>\n\n<p>※ CSN과 동일하게 MSB/LSB 가 다른 카드로 인식)</p></td></tr><tr><td>9</td><td><p>1. User&gt; Add User&gt; +Card<br/>2. Custom Smart Card: Felica 등록<br/>3. Custom Smart Card Block<br/>4. Custom Smart Card Unblock</p></td><td><p>Custom SmartCard Layout<br/>&gt; System Code, Service Code 일치</p></td><td><p>1. Block시 Blacklist로 동작된다.<br/>2. Unblock시 인증성공으로 동작된다.</p>\n\n<p>※ biostar에는 카드값이 짤려서 나올 수 있음</p></td></tr><tr><td>10</td><td><p>1. Custom Smart Card Read: 장치에 Felica 카드 리드</p></td><td><p>Custom SmartCard Layout <br/>&gt; System code, Service Code 불일치</p>\n\n<p>CSN Card Type<br/>&gt;ON/OFF</p></td><td><p>1. CSN 카드 옵션에 따라 동작한다.<br/>&gt; OFF일 경우, Device Timeout으로 동작한다.<br/>&gt; ON일 경우, CSN 값을 읽어온다.</p></td></tr><tr><td>11</td><td><p>1. Settings&gt; Card Format&gt; Smart Card&gt; Add Smart Card<br/>2. Card Type: Custom Smart Card 선택<br/>3. Smart Card Tab 선택<br/>4. Layout UI 설정<br/>5. 장치에 Custom Smart Card Layout 설정<br/>6. Custom Smart Card Read: Felica</p></td><td><p>Felica Layout 설정<br/>예시)샘플카드<br/>&gt; System Code: FE00h<br/>&gt; Service Code: 174bh<br/>&gt; ID Field <br/>block Number: 1 /Skip Bytes: 12 / Data Size:4<br/>block Number: 2 /Skip Bytes: 6/ Data Size:10<br/>block Number: 3 /Skip Bytes: 0/ Data Size:2</p></td><td><p>1. Felica Layout 설정이 일치할 경우 저장된 사용자로 인증된다.<br/>2. Felica Layout 설정이 불일치할 경우 인증 실패된다.</p></td></tr><tr><td>12</td><td><p>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 Custom Smart Card Read: Felica<br/>3. Wiegand In으로 들어온 값 확인</p></td><td><p>Wiegand Out 장치<br/>&gt; Custom Smart Card Layout 설정</p>\n\n<p>Wiegand Format<br/>&gt; Default<br/>&gt; 임의 Custom Format</p>\n\n<p>Custom Smart Card Byte Order<br/>&gt; MSB</p></td><td><p>1. 리드된 카드ID가 위겐드 포맷에 맞게 동작된다.</p></td></tr><tr><td>13</td><td><p>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 Custom Smart Card Read: Felica<br/>3. Wiegand In으로 들어온 값 확인</p></td><td><p>Wiegand Out 장치<br/>&gt; Custom Smart Card Layout 설정</p>\n\n\n\n<p>Wiegand Format<br/>&gt; Default<br/>&gt; 임의 Custom Format</p>\n\n<p>Custom Smart Card Byte Order<br/>&gt; LSB</p></td><td><p>1. 리드된 카드ID의 LSB값이 위겐드 포맷에 맞게 동작된다.</p></td></tr><tr><td>14</td><td><p>1. OSDP Tool과 연결<br/>2. 연결된 장치에 Custom Smart Card Read: Felica<br/>3. OSDP로 출력되는 값 확인</p></td><td><p>3rd party reader<br/>&gt; RS485 모드: Default</p>\n\n<p>Custom Smart Card Layout 설정</p>\n\n\n<p>Custom Smart Card Byte Order<br/>&gt; MSB</p></td><td><p>1. 인증성공 후 발급된 카드ID가 출력된다.</p></td></tr><tr><td>15</td><td><p>1. OSDP Tool과 연결<br/>2. 연결된 장치에 Custom Smart Card Read: Felica<br/>3. OSDP로 출력되는 값 확인</p></td><td><p>3rd party reader<br/>&gt; RS485 모드: Default</p>\n\n<p>Custom Smart Card Layout 설정</p>\n\n<p>Custom Smart Card Byte Order<br/>&gt;LSB</p></td><td><p>1. 인증성공 후 발급된 카드ID가 LSB값으로 출력된다.</p></td></tr><tr><td>16</td><td><p>1. OSDP Tool과 연결<br/>2. 연결된 장치에 Custom Smart Card Read: Felica<br/>3. OSDP로 출력되는 값 확인</p></td><td><p>3rd party reader<br/>&gt; RS485 모드: Slave</p>\n\n<p>Custom Smart Card Layout 설정</p>\n\n<p>Custom Smart Card Byte Order<br/>&gt; MSB</p></td><td><p>1. 인증성공 후 발급된 카드ID가 MSB값 출력된다.</p></td></tr><tr><td>17</td><td><p>1. OSDP Tool과 연결<br/>2. 연결된 장치에 Custom Smart Card Read: Felica<br/>3. OSDP로 출력되는 값 확인</p></td><td><p>3rd party reader<br/>&gt; RS485 모드: Slave</p>\n\n<p>Custom Smart Card Layout 설정</p>\n\n<p>Custom Smart Card Byte Order<br/>&gt; LSB</p></td><td><p>1. 인증성공 후 발급된 카드ID가 LSB값으로 출력된다.</p></td></tr><tr><td>18</td><td><p>1. OSDP Tool과 연결<br/>2. 연결된 장치에 Custom Smart Card Read: Felica<br/>3. OSDP로 출력되는 값 확인</p></td><td><p>OSDP로 연결된 장치<br/>&gt; Default 모드<br/>&gt; Output info - User ID</p>\n\n<p>Custom Smart Card Layout 설정</p>\n\n<p>Custom Smart Card Byte Order<br/>&gt; MSB</p>\n</td><td><p>1. MSB Card 로 등록한 사용자 ID 가 출력된다.</p>\n</td></tr><tr><td>19</td><td><p>1. OSDP Tool과 연결<br/>2. 연결된 장치에 Custom Smart Card Read: Felica<br/>3. OSDP로 출력되는 값 확인</p></td><td><p>OSDP로 연결된 장치<br/>&gt; Default 모드<br/>&gt; Output info - User ID</p>\n\n<p>Custom Smart Card Layout 설정</p>\n\n<p>Custom Smart Card Byte Order<br/>&gt; LSB</p></td><td><p>1. LSB Card 로 등록한 사용자 ID 가 출력된다.</p></td></tr><tr><td>20</td><td><p>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 Custom Smart Card Read: Felica<br/>4. Wiegand In으로 들어온 값 확인</p></td><td><p>Wiegand Out 장치<br/>&gt; Custom Smart Card Layout 설정</p>\n\n<p>Wiegand Output Info<br/>&gt; User ID</p>\n\n<p>Wiegand Format<br/>&gt; Default<br/>&gt; 임의 Custom Format</p>\n\n<p>Custom Smart Card Byte Order<br/>&gt; MSB</p>\n\n<p>User ID Type<br/>&gt;Number/Alphanumeric<br/>&gt;Wiegand Format: 64bit<br/>&gt;ex) 사용자ID: 12345(숫자)<br/>사용자ID: sykim(영숫자)</p></td><td><p>1. MSB Card 로 등록한 사용자 ID 가 출력된다.</p>\n\n<p>&gt; 12345(숫자)로 출력<br/>&gt; sykim = 0x73 0x79 0x6B 0x69 0x6D<br/>따라서 495958321517(영숫자)로 출력.</p></td></tr><tr><td>21</td><td><p>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 Custom Smart Card Read: Felica<br/>3. Wiegand In으로 들어온 값 확인</p></td><td><p>Wiegand Out 장치<br/>&gt; Custom Smart Card Layout 설정</p>\n\n<p>Wiegand Output Info<br/>&gt; User ID</p>\n\n<p>Wiegand Format<br/>&gt; Default<br/>&gt; 임의 Custom Format</p>\n\n<p>Custom Smart Card Byte Order<br/>&gt; LSB</p>\n\n<p>User ID Type<br/>&gt;Number/Alphanumeric<br/>&gt;Wiegand Format: 256bit<br/>&gt;ex) 사용자ID: 5678(숫자)<br/>사용자ID: youbin(영숫자)</p></td><td><p>1. LSB Card 로 등록한 사용자 ID 가 출력된다.</p>\n\n<p>&gt; 5678(숫자)로 출력<br/>&gt; youbin = 0x79 0x6F 0x75 0x62 0x69 0x6E<br/>따라서 133519617714542(영숫자)로 출력.</p></td></tr><tr><td>22</td><td><p><span class=\"error\">&#91;미지원 FW에 인증하는 경우&#93;</span><br/>1. 장치에 Felica 카드 인증</p></td><td><p>FW<br/>&gt;Felica 미지원 FW (v1.3.0 이전 버전)</p>\n\n<p>card type<br/>&gt;CSN Card: Enabled<br/>&gt; Suprema Smart Card: Enabled/disabled<br/>(미지원 FW의 경우 FELICA Layout 설정 불가)</p></td><td><p>1. 인증 실패로 동작한다.<br/>2. IDm으로 읽힌다.<br/>(FeliCa에서는 CSN값이 아닌 IDm으로 부름)</p></td></tr><tr><td>23</td><td><p><span class=\"error\">&#91;Batch Edit&#93;</span><br/>1. Custom SmartCard 지원 장치 두대이상 선택 &gt; Batch Edit 클릭</p></td><td></td><td><p>1. 'Custom Smart Card','Custom Smart Card Layout 옵션확인<br/>&gt; Default - Disable</p></td></tr><tr><td>24</td><td><p><span class=\"error\">&#91;Batch Edit&#93;</span><br/>1. Custom SmartCard 지원 장치 두대이상 선택 &gt; Batch Edit  클릭<br/>2. Custom Smart Card &gt; Enabled<br/>3. FeliCa Standard 체크/언체크 &gt; Apply<br/>4. 장치 상세 정보창 진입</p></td><td></td><td><p>1. 선택한 옵션이 적용되어있다.<br/>&gt; 장치상세: Card Type: Custom Smart Card: FeliCa: Felica Standard 체크/언체크 상태</p></td></tr><tr><td>25</td><td><p><span class=\"error\">&#91;Batch Edit&#93;</span><br/>1. Custom SmartCard 지원 장치 두대이상 선택 &gt; Batch Edit  클릭<br/>2. Custom Smart Card &gt; Layout 선택<br/>3. Layout 선택 후 적용<br/>4. 장치 상세 정보창 진입</p></td><td></td><td><p>1. 커스텀 스마트 카드로 생성된 Layout 목록 표시 확인<br/>&gt; 커스텀 스마트 카드로 생성된 Layout 목록만 표시<br/>2. 선택한  Layout 적용 확인</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [],
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 59934,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 35282,
+              "latestFinalId": 35282
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "[BDP-870] 커스텀 스마트 카드에서 FeliCa 지원",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 17441,
+          "index": 1,
+          "step": "1. Settings>Card Format> Smart Card > Add Smart Card\n2. Card Type: Custom Smart Card 선택\n3. Felica Tab 선택\n4. Layout UI확인",
+          "data": "",
+          "result": "1. System Code, Service Code, ID Field 입력이 가능하다. \n> id Field: Block Number, Skip Bytes, Data Size",
+          "attachments": []
+        },
+        {
+          "id": 17442,
+          "index": 2,
+          "step": "[Custom Smart Card Layout 설정된 상태]\n1. 장치상세정보창> Card Type\n2. Custom Smart Card: Layout 설정\n3. User> User Add> +Card\n4. Card Type: Smart Card 선택\n5. Device: Custom Smart Card Layout 설정된 장치 선택\n6. SmartCard Type: Custom Smart Card 선택\n7. Registration Option: Register by Card Reader\n8. Read Card> 카드읽히지 않은 상태로 10초간 유지\n",
+          "data": "Custom Smart Card\n> Felica: Felica Standard 설정",
+          "result": "1. Timeout 발생된다.\n",
+          "attachments": []
+        },
+        {
+          "id": 17443,
+          "index": 3,
+          "step": "[Custom Smart Card Layout 설정된 상태]\t\n1. 장치상세정보창> Card Type\n2. Custom Smart Card: Layout 설정\t\n3. User> User Add> +Card\t\n4. Card Type: Smart Card 선택\t\n5. Device: Custom Smart Card Layout 설정된 장치 선택\t\n6. SmartCard Type: Custom Smart Card 선택\t\n7. Registration Option: Register by Card Reader\t\n8. Read Card> Custom Smart Card Read: Felica\t",
+          "data": "Custom Smart Card\n> Felica: Felica Standard 설정\n\nCustom Smart Card Read\n> System Code, Service Code 일치\n\nRegistration Option\n> Register by Card Reader\n",
+          "result": "1. 타사에서 발급한 스마트 카드가 등록된다.",
+          "attachments": []
+        },
+        {
+          "id": 17546,
+          "index": 4,
+          "step": "[Custom Smart Card Layout 설정된 상태]\t\n1. 장치상세정보창> Card Type\n2. Custom Smart Card: Layout 설정\t\n3. User> User Add> +Card\t\n4. Card Type: Smart Card 선택\t\n5. Device: Custom Smart Card Layout 설정된 장치 선택\t\n6. SmartCard Type: Custom Smart Card 선택\t\n7. Registration Option: Enter Manually\t\n8. 카드 데이터를 10진수 형태로 입력> ENROLL",
+          "data": "Custom Smart Card\n[MSB]\n> Felica: Felica Standard 설정\n\nCustom Smart Card Read\n> System Code, Service Code 일치\n\nRegistration Option\n> Enter Manually\n",
+          "result": "1. 타사에서 발급한 스마트 카드가 등록된다.\n예시: 샘플카드데이터\nKOJC001119 > 31313139 3036303159594D4D4444 3030(16진수) -> 65387592708525716620606209286704738352(10진수)\n[MSB]\nKOJCOO1120 > 313132303036303159594D4D44443030(16진수) -> 65387612277881857643897594892060471344(10진수)\n[LSB]\nKOJCOO1120 > 303044444D4D59593031303632303131(16진수) -> 64053558662177587889391474675505312049(10진수)",
+          "attachments": []
+        },
+        {
+          "id": 17444,
+          "index": 5,
+          "step": "[Custom Smart Card Layout 설정된 상태]\t\n1. 장치상세정보창> Card Type\n2. Custom Smart Card: Layout 설정\t\n3. User> User Add> +Card\t\n4. Card Type: Smart Card 선택\t\n5. Device: Custom Smart Card Layout 설정된 장치 선택\t\n6. SmartCard Type: Custom Smart Card 선택\t\n7. Registration Option: Register by Card Reader\t\n8. Read Card> Custom Smart Card Read: Felica\t\n",
+          "data": "Custom Smart Card\n> Felica: Felica Standard 설정\n\nCustom Smart Card Read\n> System Code, Service Code 불일치\n\nCSN Card Type\n>ON/OFF\n",
+          "result": "1. CSN 카드 옵션에 따라 동작한다.\n> OFF일 경우, Device Timeout으로 동작한다.\n> ON일 경우, CSN 값을 읽어온다.",
+          "attachments": []
+        },
+        {
+          "id": 17854,
+          "index": 6,
+          "step": "[Custom Smart Card Layout 설정된 상태]\n\n1. 장치에 Felica 카드 인증\n2. 카드값 확인(DIAG,Biostar)",
+          "data": "Custom SmartCard Layout \n> System code 일치, Service Code 불일치\n> Layout: none\n\nCSN Card Type\n>ON",
+          "result": "1. 인증 실패로 동작한다.\n2. IDm으로 읽힌다.\n(FeliCa에서는 CSN값이 아닌 IDm으로 부름)\n\n예시: 샘플카드데이터\nKOJC001120 > 31313230 3036303159594D4D4444 3030 -> 0x01 0x2E 0x50 0xF4 0x9F 0x57 0x37 0x46(DIAG) /85094454542153542(Biostar)",
+          "attachments": []
+        },
+        {
+          "id": 17445,
+          "index": 7,
+          "step": "1. 장치상세정보창> Card Type\n2. Custom Smart Card: Layout 설정\n3. Byte Order 설정: MSB\n4. Custom Smart Card Read",
+          "data": "",
+          "result": "1. Byte Order 설정에 맞게 출력된다.\n(CSN과 동일하게 MSB/LSB 가 다른 카드로 인식)\n\n\n※ Biostar에서 카드값 10진수로 표기\n(Felica에 저장된 카드 데이터 유형이 ASCII로 되어있으므로 추후 Biostar에서 ASCII값으로 확인할 수 있는 서버 설정 추가 예정)\n",
+          "attachments": []
+        },
+        {
+          "id": 17446,
+          "index": 8,
+          "step": "1. 장치상세정보창> Card Type\n2. Custom Smart Card: Layout 설정\n3. Byte Order 설정: LSB\n4. Custom Smart Card Read",
+          "data": "",
+          "result": "1. Byte Order 설정에 맞게 출력된다.\n\n※ CSN과 동일하게 MSB/LSB 가 다른 카드로 인식)\n",
+          "attachments": []
+        },
+        {
+          "id": 17447,
+          "index": 9,
+          "step": "1. User> Add User> +Card\n2. Custom Smart Card: Felica 등록\n3. Custom Smart Card Block\n4. Custom Smart Card Unblock",
+          "data": "Custom SmartCard Layout\n> System Code, Service Code 일치\n",
+          "result": "1. Block시 Blacklist로 동작된다.\n2. Unblock시 인증성공으로 동작된다.\n\n※ biostar에는 카드값이 짤려서 나올 수 있음\n",
+          "attachments": []
+        },
+        {
+          "id": 17545,
+          "index": 10,
+          "step": "1. Custom Smart Card Read: 장치에 Felica 카드 리드\n",
+          "data": "Custom SmartCard Layout \n> System code, Service Code 불일치\n\nCSN Card Type\n>ON/OFF",
+          "result": "1. CSN 카드 옵션에 따라 동작한다.\n> OFF일 경우, Device Timeout으로 동작한다.\n> ON일 경우, CSN 값을 읽어온다.",
+          "attachments": []
+        },
+        {
+          "id": 17460,
+          "index": 11,
+          "step": "1. Settings> Card Format> Smart Card> Add Smart Card\n2. Card Type: Custom Smart Card 선택\n3. Smart Card Tab 선택\n4. Layout UI 설정\n5. 장치에 Custom Smart Card Layout 설정\n6. Custom Smart Card Read: Felica",
+          "data": "Felica Layout 설정\n예시)샘플카드\n> System Code: FE00h\n> Service Code: 174bh\n> ID Field \nblock Number: 1 /Skip Bytes: 12 / Data Size:4\nblock Number: 2 /Skip Bytes: 6/ Data Size:10\nblock Number: 3 /Skip Bytes: 0/ Data Size:2",
+          "result": "1. Felica Layout 설정이 일치할 경우 저장된 사용자로 인증된다.\n2. Felica Layout 설정이 불일치할 경우 인증 실패된다.",
+          "attachments": []
+        },
+        {
+          "id": 17449,
+          "index": 12,
+          "step": "1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 Custom Smart Card Read: Felica\n3. Wiegand In으로 들어온 값 확인\n",
+          "data": "Wiegand Out 장치\n> Custom Smart Card Layout 설정\n\nWiegand Format\n> Default\n> 임의 Custom Format\n\nCustom Smart Card Byte Order\n> MSB\n",
+          "result": "1. 리드된 카드ID가 위겐드 포맷에 맞게 동작된다.\n",
+          "attachments": []
+        },
+        {
+          "id": 17450,
+          "index": 13,
+          "step": "1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 Custom Smart Card Read: Felica\n3. Wiegand In으로 들어온 값 확인\n",
+          "data": "Wiegand Out 장치\n> Custom Smart Card Layout 설정\n\n\n\nWiegand Format\n> Default\n> 임의 Custom Format\n\nCustom Smart Card Byte Order\n> LSB",
+          "result": "1. 리드된 카드ID의 LSB값이 위겐드 포맷에 맞게 동작된다.\n",
+          "attachments": []
+        },
+        {
+          "id": 17451,
+          "index": 14,
+          "step": "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read: Felica\n3. OSDP로 출력되는 값 확인",
+          "data": "3rd party reader\n> RS485 모드: Default\n\nCustom Smart Card Layout 설정\n\n\nCustom Smart Card Byte Order\n> MSB",
+          "result": "1. 인증성공 후 발급된 카드ID가 출력된다.\n",
+          "attachments": []
+        },
+        {
+          "id": 17452,
+          "index": 15,
+          "step": "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read: Felica\n3. OSDP로 출력되는 값 확인",
+          "data": "3rd party reader\n> RS485 모드: Default\n\nCustom Smart Card Layout 설정\n\nCustom Smart Card Byte Order\n>LSB",
+          "result": "1. 인증성공 후 발급된 카드ID가 LSB값으로 출력된다.\n",
+          "attachments": []
+        },
+        {
+          "id": 17453,
+          "index": 16,
+          "step": "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read: Felica\n3. OSDP로 출력되는 값 확인\n",
+          "data": "3rd party reader\n> RS485 모드: Slave\n\nCustom Smart Card Layout 설정\n\nCustom Smart Card Byte Order\n> MSB\n",
+          "result": "1. 인증성공 후 발급된 카드ID가 MSB값 출력된다.\n",
+          "attachments": []
+        },
+        {
+          "id": 17454,
+          "index": 17,
+          "step": "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read: Felica\n3. OSDP로 출력되는 값 확인",
+          "data": "3rd party reader\n> RS485 모드: Slave\n\nCustom Smart Card Layout 설정\n\nCustom Smart Card Byte Order\n> LSB\n",
+          "result": "1. 인증성공 후 발급된 카드ID가 LSB값으로 출력된다.\n",
+          "attachments": []
+        },
+        {
+          "id": 17456,
+          "index": 18,
+          "step": "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read: Felica\n3. OSDP로 출력되는 값 확인",
+          "data": "OSDP로 연결된 장치\n> Default 모드\n> Output info - User ID\n\nCustom Smart Card Layout 설정\n\nCustom Smart Card Byte Order\n> MSB\n\n",
+          "result": "1. MSB Card 로 등록한 사용자 ID 가 출력된다.\n\n",
+          "attachments": []
+        },
+        {
+          "id": 17457,
+          "index": 19,
+          "step": "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read: Felica\n3. OSDP로 출력되는 값 확인\n",
+          "data": "OSDP로 연결된 장치\n> Default 모드\n> Output info - User ID\n\nCustom Smart Card Layout 설정\n\nCustom Smart Card Byte Order\n> LSB\n",
+          "result": "1. LSB Card 로 등록한 사용자 ID 가 출력된다.\n",
+          "attachments": []
+        },
+        {
+          "id": 17458,
+          "index": 20,
+          "step": "1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 Custom Smart Card Read: Felica\n4. Wiegand In으로 들어온 값 확인",
+          "data": "Wiegand Out 장치\n> Custom Smart Card Layout 설정\n\nWiegand Output Info\n> User ID\n\nWiegand Format\n> Default\n> 임의 Custom Format\n\nCustom Smart Card Byte Order\n> MSB\n\nUser ID Type\n>Number/Alphanumeric\n>Wiegand Format: 64bit\n>ex) 사용자ID: 12345(숫자)\n사용자ID: sykim(영숫자)",
+          "result": "1. MSB Card 로 등록한 사용자 ID 가 출력된다.\n\n> 12345(숫자)로 출력\n> sykim = 0x73 0x79 0x6B 0x69 0x6D\n따라서 495958321517(영숫자)로 출력.",
+          "attachments": []
+        },
+        {
+          "id": 17459,
+          "index": 21,
+          "step": "1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 Custom Smart Card Read: Felica\n3. Wiegand In으로 들어온 값 확인\n",
+          "data": "Wiegand Out 장치\n> Custom Smart Card Layout 설정\n\nWiegand Output Info\n> User ID\n\nWiegand Format\n> Default\n> 임의 Custom Format\n\nCustom Smart Card Byte Order\n> LSB\n\nUser ID Type\n>Number/Alphanumeric\n>Wiegand Format: 256bit\n>ex) 사용자ID: 5678(숫자)\n사용자ID: youbin(영숫자)",
+          "result": "1. LSB Card 로 등록한 사용자 ID 가 출력된다.\n\n> 5678(숫자)로 출력\n> youbin = 0x79 0x6F 0x75 0x62 0x69 0x6E\n따라서 133519617714542(영숫자)로 출력.",
+          "attachments": []
+        },
+        {
+          "id": 17455,
+          "index": 22,
+          "step": "[미지원 FW에 인증하는 경우]\n1. 장치에 Felica 카드 인증",
+          "data": "FW\n>Felica 미지원 FW (v1.3.0 이전 버전)\n\ncard type\n>CSN Card: Enabled\n> Suprema Smart Card: Enabled/disabled\n(미지원 FW의 경우 FELICA Layout 설정 불가)",
+          "result": "1. 인증 실패로 동작한다.\n2. IDm으로 읽힌다.\n(FeliCa에서는 CSN값이 아닌 IDm으로 부름)",
+          "attachments": []
+        },
+        {
+          "id": 17526,
+          "index": 23,
+          "step": "[Batch Edit]\n1. Custom SmartCard 지원 장치 두대이상 선택 > Batch Edit 클릭",
+          "result": "1. 'Custom Smart Card','Custom Smart Card Layout 옵션확인\n> Default - Disable",
+          "attachments": []
+        },
+        {
+          "id": 17527,
+          "index": 24,
+          "step": "[Batch Edit]\n1. Custom SmartCard 지원 장치 두대이상 선택 > Batch Edit  클릭\n2. Custom Smart Card > Enabled\n3. FeliCa Standard 체크/언체크 > Apply\n4. 장치 상세 정보창 진입",
+          "data": "",
+          "result": "1. 선택한 옵션이 적용되어있다.\n> 장치상세: Card Type: Custom Smart Card: FeliCa: Felica Standard 체크/언체크 상태",
+          "attachments": []
+        },
+        {
+          "id": 17528,
+          "index": 25,
+          "step": "[Batch Edit]\n1. Custom SmartCard 지원 장치 두대이상 선택 > Batch Edit  클릭\n2. Custom Smart Card > Layout 선택\n3. Layout 선택 후 적용\n4. 장치 상세 정보창 진입",
+          "result": "1. 커스텀 스마트 카드로 생성된 Layout 목록 표시 확인\n> 커스텀 스마트 카드로 생성된 Layout 목록만 표시\n2. 선택한  Layout 적용 확인",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [],
+      "maxResults": 0,
+      "total": 0,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+      "name": "미할당",
+      "id": "10100"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+      "name": "할 일",
+      "id": "10000",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "할 일"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=ybwoo",
+      "name": "ybwoo",
+      "key": "JIRAUSER13405",
+      "emailAddress": "ybwoo@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "우유빈",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzxxdb:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2023-11-01T13:48:34.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

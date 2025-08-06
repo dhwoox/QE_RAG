@@ -1,105 +1,541 @@
 {
-  "id": "COMMONR-235",
-  "content": [
-    [
-      1,
-      "1. Tool 실행> Device Func> Auth\n2. Matching Timeout: 유효한 값 설정> 저장\n3. Auth 재진입해 설정값 확인",
-      "Matching Timeout\n> 1~20(Default: 5)sec\n\n확인대상\n> 단일장치\n> Master/Slave/Wiegand Reader",
-      "1. 설정한 Matching Timeout 이 정상적으로 표시된다.\n> 설정한 Matching Timeout내에 인증결과 출력되는지 확인"
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "24444",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/24444",
+  "key": "COMMONR-235",
+  "fields": {
+    "resolution": null,
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "1.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": null,
+    "customfield_10185": null,
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "18813",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/18813",
+        "type": {
+          "id": "10001",
+          "name": "Cloners",
+          "inward": "is cloned by",
+          "outward": "clones",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10001"
+        },
+        "outwardIssue": {
+          "id": "24145",
+          "key": "BNRTC-55",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/24145",
+          "fields": {
+            "summary": "Validation Check - Auth Mode, Auth Timeout, Msg Timeout, Scan Timeout, Matching Timeout, Enrollment Timeout",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "할 일",
+              "id": "10000",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "Represents a Test",
+              "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+              "name": "Test",
+              "subtask": false
+            }
+          }
+        }
+      },
+      {
+        "id": "20183",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/20183",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "20568",
+          "key": "BSPP-177",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/20568",
+          "fields": {
+            "summary": "인증모드 및 AuthTimeout, MsgTimeout, ScanTimeout, MatchingTimeout, Enrollment Time 유효하지 않은 값 검사 기능 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10202",
+              "description": "개발이 완료된 요구 사항",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/generic.png",
+              "name": "개발완료",
+              "id": "10202",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "1. Tool 실행> Device Func> Auth\n2. Matching Timeout: 유효하지 않은 값 설정> 저장\n3. Auth 재진입해 설정값 확인",
-      "Matching Timeout\n> 1~20(Default: 5)sec\n\n확인대상\n> 단일장치\n> Master/Slave/Wiegand Reader",
-      "1. 유효 범위를 벗어 나는 경우 기본값으로 설정된다.\n> Matching Timeout 기본값내에 인증결과 출력되는지 확인"
-    ],
-    [
-      3,
-      "1. Tool 실행> Device Func> Auth\n2. Auth Timeout: 유효한 값 설정> 저장\n3. Auth 재진입해 설정값 확인",
-      "Auth Timeout\n> 3~20(Default: 10)sec\n\n확인대상\n> 단일장치\n> Master/Slave/Wiegand Reader",
-      "1. 설정한 Auth Timeout 이 정상적으로 표시된다.\n> Auth Timeout이 설정한 값으로 동작되는지 확인"
-    ],
-    [
-      4,
-      "1. Tool 실행> Device Func> Auth\n2. Auth Timeout: 유효하지 않은 값 설정> 저장\n3. Auth 재진입해 설정값 확인",
-      "Auth Timeout\n> 3~20(Default: 10)sec\n\n확인대상\n> 단일장치\n> Master/Slave/Wiegand Reader",
-      "1. 유효 범위를 벗어 나는 경우 기본값으로 설정된다.\n> Auth Timeout이 기본값으로 동작되는지 확인"
-    ],
-    [
-      5,
-      "1. Tool 실행> Device Func> Display\n2. Msg. Timeout: 유효한 값 설정> 저장\n3. Display 재진입해 설정값 확인",
-      "Msg. Timeout\n> 0.5~5(Default: 2)sec\n\n확인대상(UI있는 제품)\n> 단일장치\n> Master/Slave",
-      "1. 설정한 Msg. Timeout 이 정상적으로 표시된다.\n>> Msg.Timeout이 설정한 값으로 동작되는지 확인"
-    ],
-    [
-      6,
-      "1. Tool 실행> Device Func> Display\n2. Msg. Timeout: 유효하지 않은 값 설정> 저장\n3. Display 재진입해 설정값 확인",
-      "Msg. Timeout\n> 0.5~5(Default: 2)sec\n\n확인대상(UI있는 제품)\n> 단일장치\n> Master/Slave",
-      "1. 유효 범위를 벗어 나는 경우 기본값으로 설정된다.\n> Msg.Timeout이 기본값으로 동작되는지 확인"
-    ],
-    [
-      7,
-      "1. Tool 실행> Device Func> FingerPrint\n2. Scan Timeout: 유효한 값 설정> 저장\n3. FingerPrint 재진입해 설정값 확인",
-      "Scan Timeout\n> 1~20(Default: 10)sec\n\n확인대상\n> 단일장치\n> Master/Slave",
-      "1. 설정한 Scan Timeout이 정상적으로 표시된다.\n> 카드/지문 등록시 설정한 값으로 동작되는지 확인"
-    ],
-    [
-      8,
-      "1. Tool 실행> Device Func> FingerPrint\n2. Scan Timeout: 유효하지 않은 값 설정> 저장\n3. FingerPrint 재진입해 설정값 확인",
-      "Scan Timeout\n> 1~20(Default: 10)sec\n\n확인대상\n> 단일장치\n> Master/Slave",
-      "1. 유효 범위를 벗어 나는 경우 기본값으로 설정된다.\n> 카드/지문 등록시 기본값으로 동작되는지 확인"
-    ],
-    [
-      9,
-      "1. Tool 실행> Device Func> Face\n2. Enroll Timeout 설정 > 확인\n\n※ FS2로 TC 보완필요\n\n\n",
-      "Enroll Timeout\n\n확인대상\n> FS2",
-      "1. 설정한 Enroll Timeout 이 정상적으로 표시되어야 한다.\n> 60 Sec 설정에 가까울 수록 얼굴등록 성공률 높음\n> 설정한 Enroll Timeout 내에 얼굴등록이 완료 되어야 함\n2. 유효 범위를 벗어 나는 경우 기본값으로 설정이 되는 지 확인한다."
-    ],
-    [
-      10,
-      "[Wiegand Reader 연결된 구성]\n1. Tool 실행> Device Func> Auth\n2. Wiegand Reader 선택\n3. Card> Card Only 외의 모드에 대해 항상사용 설정> 저장\n4. Auth 재진입해 설정값 확인",
-      "Wiegand Reader의 인증모드 기본값\n> Card Only\n\n확인대상\n> Wiegand Reader",
-      "1. Card Only에 항상사용으로 표시된다."
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-235",
-    "description": "",
-    "test_step": [
-      "1. Tool 실행> Device Func> Auth\n2. Matching Timeout: 유효한 값 설정> 저장\n3. Auth 재진입해 설정값 확인",
-      "1. Tool 실행> Device Func> Auth\n2. Matching Timeout: 유효하지 않은 값 설정> 저장\n3. Auth 재진입해 설정값 확인",
-      "1. Tool 실행> Device Func> Auth\n2. Auth Timeout: 유효한 값 설정> 저장\n3. Auth 재진입해 설정값 확인",
-      "1. Tool 실행> Device Func> Auth\n2. Auth Timeout: 유효하지 않은 값 설정> 저장\n3. Auth 재진입해 설정값 확인",
-      "1. Tool 실행> Device Func> Display\n2. Msg. Timeout: 유효한 값 설정> 저장\n3. Display 재진입해 설정값 확인",
-      "1. Tool 실행> Device Func> Display\n2. Msg. Timeout: 유효하지 않은 값 설정> 저장\n3. Display 재진입해 설정값 확인",
-      "1. Tool 실행> Device Func> FingerPrint\n2. Scan Timeout: 유효한 값 설정> 저장\n3. FingerPrint 재진입해 설정값 확인",
-      "1. Tool 실행> Device Func> FingerPrint\n2. Scan Timeout: 유효하지 않은 값 설정> 저장\n3. FingerPrint 재진입해 설정값 확인",
-      "1. Tool 실행> Device Func> Face\n2. Enroll Timeout 설정 > 확인\n\n※ FS2로 TC 보완필요\n\n\n",
-      "[Wiegand Reader 연결된 구성]\n1. Tool 실행> Device Func> Auth\n2. Wiegand Reader 선택\n3. Card> Card Only 외의 모드에 대해 항상사용 설정> 저장\n4. Auth 재진입해 설정값 확인"
-    ],
-    "data": [
-      "Matching Timeout\n> 1~20(Default: 5)sec\n\n확인대상\n> 단일장치\n> Master/Slave/Wiegand Reader",
-      "Matching Timeout\n> 1~20(Default: 5)sec\n\n확인대상\n> 단일장치\n> Master/Slave/Wiegand Reader",
-      "Auth Timeout\n> 3~20(Default: 10)sec\n\n확인대상\n> 단일장치\n> Master/Slave/Wiegand Reader",
-      "Auth Timeout\n> 3~20(Default: 10)sec\n\n확인대상\n> 단일장치\n> Master/Slave/Wiegand Reader",
-      "Msg. Timeout\n> 0.5~5(Default: 2)sec\n\n확인대상(UI있는 제품)\n> 단일장치\n> Master/Slave",
-      "Msg. Timeout\n> 0.5~5(Default: 2)sec\n\n확인대상(UI있는 제품)\n> 단일장치\n> Master/Slave",
-      "Scan Timeout\n> 1~20(Default: 10)sec\n\n확인대상\n> 단일장치\n> Master/Slave",
-      "Scan Timeout\n> 1~20(Default: 10)sec\n\n확인대상\n> 단일장치\n> Master/Slave",
-      "Enroll Timeout\n\n확인대상\n> FS2",
-      "Wiegand Reader의 인증모드 기본값\n> Card Only\n\n확인대상\n> Wiegand Reader"
-    ],
-    "expected_result": [
-      "1. 설정한 Matching Timeout 이 정상적으로 표시된다.\n> 설정한 Matching Timeout내에 인증결과 출력되는지 확인",
-      "1. 유효 범위를 벗어 나는 경우 기본값으로 설정된다.\n> Matching Timeout 기본값내에 인증결과 출력되는지 확인",
-      "1. 설정한 Auth Timeout 이 정상적으로 표시된다.\n> Auth Timeout이 설정한 값으로 동작되는지 확인",
-      "1. 유효 범위를 벗어 나는 경우 기본값으로 설정된다.\n> Auth Timeout이 기본값으로 동작되는지 확인",
-      "1. 설정한 Msg. Timeout 이 정상적으로 표시된다.\n>> Msg.Timeout이 설정한 값으로 동작되는지 확인",
-      "1. 유효 범위를 벗어 나는 경우 기본값으로 설정된다.\n> Msg.Timeout이 기본값으로 동작되는지 확인",
-      "1. 설정한 Scan Timeout이 정상적으로 표시된다.\n> 카드/지문 등록시 설정한 값으로 동작되는지 확인",
-      "1. 유효 범위를 벗어 나는 경우 기본값으로 설정된다.\n> 카드/지문 등록시 기본값으로 동작되는지 확인",
-      "1. 설정한 Enroll Timeout 이 정상적으로 표시되어야 한다.\n> 60 Sec 설정에 가까울 수록 얼굴등록 성공률 높음\n> 설정한 Enroll Timeout 내에 얼굴등록이 완료 되어야 함\n2. 유효 범위를 벗어 나는 경우 기본값으로 설정이 되는 지 확인한다.",
-      "1. Card Only에 항상사용으로 표시된다."
-    ]
+    "assignee": null,
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 10.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-235/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@55f60988[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@5dba463[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@4996ec40[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@1136a1ad[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@44145c0e[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@2069075e[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@5e630bff[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@7afcf257[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@1cee352a[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@7455921e[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@322f4398[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@2f5c71c0[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": null,
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-235/watchers",
+      "watchCount": 1,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2022-11-15T13:15:41.000+0900",
+    "timeoriginalestimate": null,
+    "description": "AuthTimeout, MsgTimeout, ScanTimeout, MatchingTimeout, Enrollment Time 설정값에 대해 유효한 값의 범위를 벗어나는 경우 기본값을 유지하도록 기능 추가\r\n> AutoTest Tool 이용\r\n※ 인증모드에 대해서는 유효성 검사 제외\r\n\r\n유효성 검사 대상\r\n> Master/Slave/Wiegand Reader\r\n\r\n아래와 같이 환경 구성 후 TC 진행\r\n> 단일장치\r\n> Master-Slave 연결장치\r\n> Master-Slave/DM20-Wiegand Reader\r\n> Master/Default-Wiegand Reader",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. Tool 실행&gt; Device Func&gt; Auth<br/>2. Matching Timeout: 유효한 값 설정&gt; 저장<br/>3. Auth 재진입해 설정값 확인</p></td><td><p>Matching Timeout<br/>&gt; 1~20(Default: 5)sec</p>\n\n<p>확인대상<br/>&gt; 단일장치<br/>&gt; Master/Slave/Wiegand Reader</p></td><td><p>1. 설정한 Matching Timeout 이 정상적으로 표시된다.<br/>&gt; 설정한 Matching Timeout내에 인증결과 출력되는지 확인</p></td></tr><tr><td>2</td><td><p>1. Tool 실행&gt; Device Func&gt; Auth<br/>2. Matching Timeout: 유효하지 않은 값 설정&gt; 저장<br/>3. Auth 재진입해 설정값 확인</p></td><td><p>Matching Timeout<br/>&gt; 1~20(Default: 5)sec</p>\n\n<p>확인대상<br/>&gt; 단일장치<br/>&gt; Master/Slave/Wiegand Reader</p></td><td><p>1. 유효 범위를 벗어 나는 경우 기본값으로 설정된다.<br/>&gt; Matching Timeout 기본값내에 인증결과 출력되는지 확인</p></td></tr><tr><td>3</td><td><p>1. Tool 실행&gt; Device Func&gt; Auth<br/>2. Auth Timeout: 유효한 값 설정&gt; 저장<br/>3. Auth 재진입해 설정값 확인</p></td><td><p>Auth Timeout<br/>&gt; 3~20(Default: 10)sec</p>\n\n<p>확인대상<br/>&gt; 단일장치<br/>&gt; Master/Slave/Wiegand Reader</p></td><td><p>1. 설정한 Auth Timeout 이 정상적으로 표시된다.<br/>&gt; Auth Timeout이 설정한 값으로 동작되는지 확인</p></td></tr><tr><td>4</td><td><p>1. Tool 실행&gt; Device Func&gt; Auth<br/>2. Auth Timeout: 유효하지 않은 값 설정&gt; 저장<br/>3. Auth 재진입해 설정값 확인</p></td><td><p>Auth Timeout<br/>&gt; 3~20(Default: 10)sec</p>\n\n<p>확인대상<br/>&gt; 단일장치<br/>&gt; Master/Slave/Wiegand Reader</p></td><td><p>1. 유효 범위를 벗어 나는 경우 기본값으로 설정된다.<br/>&gt; Auth Timeout이 기본값으로 동작되는지 확인</p></td></tr><tr><td>5</td><td><p>1. Tool 실행&gt; Device Func&gt; Display<br/>2. Msg. Timeout: 유효한 값 설정&gt; 저장<br/>3. Display 재진입해 설정값 확인</p></td><td><p>Msg. Timeout<br/>&gt; 0.5~5(Default: 2)sec</p>\n\n<p>확인대상(UI있는 제품)<br/>&gt; 단일장치<br/>&gt; Master/Slave</p></td><td><p>1. 설정한 Msg. Timeout 이 정상적으로 표시된다.<br/>&gt;&gt; Msg.Timeout이 설정한 값으로 동작되는지 확인</p></td></tr><tr><td>6</td><td><p>1. Tool 실행&gt; Device Func&gt; Display<br/>2. Msg. Timeout: 유효하지 않은 값 설정&gt; 저장<br/>3. Display 재진입해 설정값 확인</p></td><td><p>Msg. Timeout<br/>&gt; 0.5~5(Default: 2)sec</p>\n\n<p>확인대상(UI있는 제품)<br/>&gt; 단일장치<br/>&gt; Master/Slave</p></td><td><p>1. 유효 범위를 벗어 나는 경우 기본값으로 설정된다.<br/>&gt; Msg.Timeout이 기본값으로 동작되는지 확인</p></td></tr><tr><td>7</td><td><p>1. Tool 실행&gt; Device Func&gt; FingerPrint<br/>2. Scan Timeout: 유효한 값 설정&gt; 저장<br/>3. FingerPrint 재진입해 설정값 확인</p></td><td><p>Scan Timeout<br/>&gt; 1~20(Default: 10)sec</p>\n\n<p>확인대상<br/>&gt; 단일장치<br/>&gt; Master/Slave</p></td><td><p>1. 설정한 Scan Timeout이 정상적으로 표시된다.<br/>&gt; 카드/지문 등록시 설정한 값으로 동작되는지 확인</p></td></tr><tr><td>8</td><td><p>1. Tool 실행&gt; Device Func&gt; FingerPrint<br/>2. Scan Timeout: 유효하지 않은 값 설정&gt; 저장<br/>3. FingerPrint 재진입해 설정값 확인</p></td><td><p>Scan Timeout<br/>&gt; 1~20(Default: 10)sec</p>\n\n<p>확인대상<br/>&gt; 단일장치<br/>&gt; Master/Slave</p></td><td><p>1. 유효 범위를 벗어 나는 경우 기본값으로 설정된다.<br/>&gt; 카드/지문 등록시 기본값으로 동작되는지 확인</p></td></tr><tr><td>9</td><td><p>1. Tool 실행&gt; Device Func&gt; Face<br/>2. Enroll Timeout 설정 &gt; 확인</p>\n\n<p>※ FS2로 TC 보완필요</p>\n\n</td><td><p>Enroll Timeout</p>\n\n<p>확인대상<br/>&gt; FS2</p></td><td><p>1. 설정한 Enroll Timeout 이 정상적으로 표시되어야 한다.<br/>&gt; 60 Sec 설정에 가까울 수록 얼굴등록 성공률 높음<br/>&gt; 설정한 Enroll Timeout 내에 얼굴등록이 완료 되어야 함<br/>2. 유효 범위를 벗어 나는 경우 기본값으로 설정이 되는 지 확인한다.</p></td></tr><tr><td>10</td><td><p><span class=\"error\">&#91;Wiegand Reader 연결된 구성&#93;</span><br/>1. Tool 실행&gt; Device Func&gt; Auth<br/>2. Wiegand Reader 선택<br/>3. Card&gt; Card Only 외의 모드에 대해 항상사용 설정&gt; 저장<br/>4. Auth 재진입해 설정값 확인</p></td><td><p>Wiegand Reader의 인증모드 기본값<br/>&gt; Card Only</p>\n\n<p>확인대상<br/>&gt; Wiegand Reader</p></td><td><p>1. Card Only에 항상사용으로 표시된다.</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [],
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 24444,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 26578,
+              "latestFinalId": 26578
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "Validation Check - Auth Timeout, Msg Timeout, Scan Timeout, Matching Timeout, Enrollment Timeout",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 5324,
+          "index": 1,
+          "step": "1. Tool 실행> Device Func> Auth\n2. Matching Timeout: 유효한 값 설정> 저장\n3. Auth 재진입해 설정값 확인",
+          "data": "Matching Timeout\n> 1~20(Default: 5)sec\n\n확인대상\n> 단일장치\n> Master/Slave/Wiegand Reader",
+          "result": "1. 설정한 Matching Timeout 이 정상적으로 표시된다.\n> 설정한 Matching Timeout내에 인증결과 출력되는지 확인",
+          "attachments": []
+        },
+        {
+          "id": 5115,
+          "index": 2,
+          "step": "1. Tool 실행> Device Func> Auth\n2. Matching Timeout: 유효하지 않은 값 설정> 저장\n3. Auth 재진입해 설정값 확인",
+          "data": "Matching Timeout\n> 1~20(Default: 5)sec\n\n확인대상\n> 단일장치\n> Master/Slave/Wiegand Reader",
+          "result": "1. 유효 범위를 벗어 나는 경우 기본값으로 설정된다.\n> Matching Timeout 기본값내에 인증결과 출력되는지 확인",
+          "attachments": []
+        },
+        {
+          "id": 5117,
+          "index": 3,
+          "step": "1. Tool 실행> Device Func> Auth\n2. Auth Timeout: 유효한 값 설정> 저장\n3. Auth 재진입해 설정값 확인",
+          "data": "Auth Timeout\n> 3~20(Default: 10)sec\n\n확인대상\n> 단일장치\n> Master/Slave/Wiegand Reader",
+          "result": "1. 설정한 Auth Timeout 이 정상적으로 표시된다.\n> Auth Timeout이 설정한 값으로 동작되는지 확인",
+          "attachments": []
+        },
+        {
+          "id": 5326,
+          "index": 4,
+          "step": "1. Tool 실행> Device Func> Auth\n2. Auth Timeout: 유효하지 않은 값 설정> 저장\n3. Auth 재진입해 설정값 확인",
+          "data": "Auth Timeout\n> 3~20(Default: 10)sec\n\n확인대상\n> 단일장치\n> Master/Slave/Wiegand Reader",
+          "result": "1. 유효 범위를 벗어 나는 경우 기본값으로 설정된다.\n> Auth Timeout이 기본값으로 동작되는지 확인",
+          "attachments": []
+        },
+        {
+          "id": 5116,
+          "index": 5,
+          "step": "1. Tool 실행> Device Func> Display\n2. Msg. Timeout: 유효한 값 설정> 저장\n3. Display 재진입해 설정값 확인",
+          "data": "Msg. Timeout\n> 0.5~5(Default: 2)sec\n\n확인대상(UI있는 제품)\n> 단일장치\n> Master/Slave",
+          "result": "1. 설정한 Msg. Timeout 이 정상적으로 표시된다.\n>> Msg.Timeout이 설정한 값으로 동작되는지 확인",
+          "attachments": []
+        },
+        {
+          "id": 5325,
+          "index": 6,
+          "step": "1. Tool 실행> Device Func> Display\n2. Msg. Timeout: 유효하지 않은 값 설정> 저장\n3. Display 재진입해 설정값 확인",
+          "data": "Msg. Timeout\n> 0.5~5(Default: 2)sec\n\n확인대상(UI있는 제품)\n> 단일장치\n> Master/Slave",
+          "result": "1. 유효 범위를 벗어 나는 경우 기본값으로 설정된다.\n> Msg.Timeout이 기본값으로 동작되는지 확인",
+          "attachments": []
+        },
+        {
+          "id": 5118,
+          "index": 7,
+          "step": "1. Tool 실행> Device Func> FingerPrint\n2. Scan Timeout: 유효한 값 설정> 저장\n3. FingerPrint 재진입해 설정값 확인",
+          "data": "Scan Timeout\n> 1~20(Default: 10)sec\n\n확인대상\n> 단일장치\n> Master/Slave",
+          "result": "1. 설정한 Scan Timeout이 정상적으로 표시된다.\n> 카드/지문 등록시 설정한 값으로 동작되는지 확인",
+          "attachments": []
+        },
+        {
+          "id": 5327,
+          "index": 8,
+          "step": "1. Tool 실행> Device Func> FingerPrint\n2. Scan Timeout: 유효하지 않은 값 설정> 저장\n3. FingerPrint 재진입해 설정값 확인",
+          "data": "Scan Timeout\n> 1~20(Default: 10)sec\n\n확인대상\n> 단일장치\n> Master/Slave",
+          "result": "1. 유효 범위를 벗어 나는 경우 기본값으로 설정된다.\n> 카드/지문 등록시 기본값으로 동작되는지 확인",
+          "attachments": []
+        },
+        {
+          "id": 5119,
+          "index": 9,
+          "step": "1. Tool 실행> Device Func> Face\n2. Enroll Timeout 설정 > 확인\n\n※ FS2로 TC 보완필요\n\n\n",
+          "data": "Enroll Timeout\n\n확인대상\n> FS2",
+          "result": "1. 설정한 Enroll Timeout 이 정상적으로 표시되어야 한다.\n> 60 Sec 설정에 가까울 수록 얼굴등록 성공률 높음\n> 설정한 Enroll Timeout 내에 얼굴등록이 완료 되어야 함\n2. 유효 범위를 벗어 나는 경우 기본값으로 설정이 되는 지 확인한다.",
+          "attachments": []
+        },
+        {
+          "id": 5328,
+          "index": 10,
+          "step": "[Wiegand Reader 연결된 구성]\n1. Tool 실행> Device Func> Auth\n2. Wiegand Reader 선택\n3. Card> Card Only 외의 모드에 대해 항상사용 설정> 저장\n4. Auth 재진입해 설정값 확인",
+          "data": "Wiegand Reader의 인증모드 기본값\n> Card Only\n\n확인대상\n> Wiegand Reader",
+          "result": "1. Card Only에 항상사용으로 표시된다.",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/24444/comment/87227",
+          "id": "87227",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+            "name": "김소영",
+            "key": "김소영",
+            "emailAddress": "sykim@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "김소영",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "4/4 TC보완 완료",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+            "name": "김소영",
+            "key": "김소영",
+            "emailAddress": "sykim@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "김소영",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2018-04-04T16:42:46.000+0900",
+          "updated": "2018-04-04T16:42:46.000+0900"
+        }
+      ],
+      "maxResults": 1,
+      "total": 1,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+      "name": "Minor (C)",
+      "id": "3"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+      "name": "할 일",
+      "id": "10000",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "할 일"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzsmhj:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2018-01-22T13:04:44.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

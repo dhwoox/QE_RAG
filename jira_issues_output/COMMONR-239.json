@@ -1,69 +1,926 @@
 {
-  "id": "COMMONR-239",
-  "content": [
-    [
-      1,
-      "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master 장치에 인증시도\n3. UI에 표시되는 인증결과 확인\n4. Slave 장치에 인증시도\n5. UI에 표시되는 인증결과 확인\n",
-      "Master Device(New Version)\n> LCD 지원장치 & 미지원 장치\n\nSlave Device(New Version)\n> LCD 지원장치",
-      "1. (Master/Slave LCD 有) 인증성공시 인증결과 + User Name&ID 가 표시되어야 한다.\n> AOC : 미지원, SCC : 지원\n2. 인증실패시 인증실패 문구만 표시된다.\n3. LCD 없는 장치의 경우 인증결과에 대해 LED/부저음으로 정상출력된다."
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "26479",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/26479",
+  "key": "COMMONR-239",
+  "fields": {
+    "resolution": null,
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "0.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10173",
+      "value": "Major",
+      "id": "10173"
+    },
+    "customfield_10185": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
+      "value": "Medium (2-3일 이내 피드백)",
+      "id": "10220"
+    },
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "33220",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/33220",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "43411",
+          "key": "DFW-568",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/43411",
+          "fields": {
+            "summary": "[Slave - User Name 표시] Slave 모드에서 인증 시 화면에 User Name 표시 관련 구현 문의 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "27348",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/27348",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "36492",
+          "key": "FSTIIFW-1684",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/36492",
+          "fields": {
+            "summary": "[OSDP 표준화] 정규 버전의 FS2(M)에 Slave로 연결된 New 버전의 FS2(S)에서 Face 인증 시 인증 실패가 발생하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "52754",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/52754",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "62066",
+          "key": "ONYXFW-755",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/62066",
+          "fields": {
+            "summary": "[RS 485 - 오동작] Slave에서 지문 인증 시 실패가 발생하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "21720",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/21720",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "27909",
+          "key": "BLNIIFW-497",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/27909",
+          "fields": {
+            "summary": "[Next Credential 입력 요청 화면] Master와 상이하게 동작",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "60973",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/60973",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "70182",
+          "key": "CS20FW-126",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/70182",
+          "fields": {
+            "summary": "[BS3-Visual AOC 발급]CS20(M) 하위 XS2(S)장치에 Mifare AOC 카드 인증 시  Access denied(invalid period)로 인증 실패되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "55209",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/55209",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "64309",
+          "key": "DFW-1131",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/64309",
+          "fields": {
+            "summary": "[Auth result display 옵션] user id display: HIDE ALL/User name display: Display all 옵션 시 name,id 모두 미표시됨",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "55208",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/55208",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "64363",
+          "key": "DFW-1146",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/64363",
+          "fields": {
+            "summary": " [Auth result display 옵션] user id display: Mask All but First Letter/User name display: Mask All but First Letter, Display all 옵션 시 Job Code 미표시 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "23027",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/23027",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "29458",
+          "key": "FLFW-253",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/29458",
+          "fields": {
+            "summary": "[Next Credential 입력 요청 화면] Master와 상이하게 동작",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "48337",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/48337",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "58064",
+          "key": "DFW-1008",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/58064",
+          "fields": {
+            "summary": "Slave(F2) 장치에 ID + PIN 로 인증 확인 시 이름 출력 되지 않는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10109",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/generic.png",
+              "name": "Developed",
+              "id": "10109",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/4",
+                "id": 4,
+                "key": "indeterminate",
+                "colorName": "yellow",
+                "name": "진행 중"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master 장치에 인증시도\n3. UI에 표시되는 인증결과 확인\n4. Slave 장치에 인증시도\n5. UI에 표시되는 인증결과 확인\n",
-      "Master Device(New Version)\n> LCD 지원장치 & 미지원 장치\nSlave Device(Old Version)\n> LCD 지원장치",
-      "1. (Master LCD 有) 인증성공시 인증결과 + User Name&ID 가 표시되어야 한다.\n> AOC : 미지원, SCC : 지원\n2. (Slave LCD 有) 인증성공시 인증결과+User ID가 표시된다.\n3. 인증실패시 인증실패 문구만 표시된다.\n4. LCD 없는 장치의 경우 인증결과에 대해 LED/부저음으로 정상출력된다."
-    ],
-    [
-      3,
-      "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master 장치에 인증시도\n3. UI에 표시되는 인증결과 확인\n4. Slave 장치에 인증시도\n5. UI에 표시되는 인증결과 확인\n",
-      "Master Device(New Version)\n> LCD 지원장치 & 미지원 장치\n\nSlave Device(Old Version)\n> Entry2.0",
-      "1. (Master LCD 有) 인증성공시 인증결과 + User Name&ID 가 표시되어야 한다.\n> AOC : 미지원, SCC : 지원\n2. (Slave LCD 有) 인증성공시 인증결과 + User ID가 표시된다.\n3. 인증실패시 인증실패 문구만 표시된다.\n4. LCD 없는 장치의 경우 인증결과에 대해 LED/부저음으로 정상출력된다."
-    ],
-    [
-      4,
-      "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master 장치에 인증시도\n3. UI에 표시되는 인증결과 확인\n4. Slave 장치에 인증시도\n5. UI에 표시되는 인증결과 확인\n",
-      "Master Device(Old Version)\n> LCD 지원장치 & 미지원 장치\n\nSlave Device(New Version)\n> LCD 지원장치",
-      "1. (Master LCD 有) 인증성공시 인증결과 + User ID 가 표시되어야 한다.\n2. (Slave LCD 有) 인증성공시 인증결과 + User ID가 표시된다.\n3. 인증실패시 인증실패 문구만 표시된다.\n4. LCD 없는 장치의 경우 인증결과에 대해 LED/부저음으로 정상출력된다."
-    ],
-    [
-      5,
-      "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master에서 지문/얼굴 입력 후 화면의 Title 확인\n3. Slave에서 지문/얼굴 입력 후 화면의 Title 확인",
-      "Master Device(New Version)\n> LCD 지원장치 & 미지원 장치\n\nSlave Device(New Version)\n> LCD 지원장치\n\nMaster/Slave 인증모드\n> 다중인증모드 설정(ex. 지문+PIN)",
-      "1. (Master/Slave LCD 有) Title에 User ID와 User Name이 표시되어야 한다.\n> BS2 - User ID Only 표시, 인증 성공 시 User ID + User Name 표시\n\n> FS2, FSF2만 Title에 미표시됨(DFW-568,FSTIIFW-1071 참조)\n\n> XS2 - ID+PIN으로 Auth Timeout이 발생 시 실패문구만 표시됨\n※ Timeout으로 실패시 실패문구&User Name 표시됨. => 관련TC도 작성예정"
-    ],
-    [
-      6,
-      "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master에서 첫번째 사용자로 인증 후 화면의 Title 확인\n3. Slave에서 첫번째 사용자로 인증 후 화면의 Title 확인",
-      "Master Device(New Version)\n> LCD 지원장치 & 미지원 장치\n\nSlave Device(New Version)\n> LCD 지원장치\n\nDoor/Lift의 Reader로 설정\n> 이중인증 설정",
-      "1. (Master/Slave LCD 有) 첫번째 사용자로 인증 후 Title에 Dual Auth 표시되어야 한다.\n\n> FS2, FSF2만 Title에 미표시됨(DFW-568,FSTIIFW-1071 참조)"
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-239",
-    "description": "",
-    "test_step": [
-      "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master 장치에 인증시도\n3. UI에 표시되는 인증결과 확인\n4. Slave 장치에 인증시도\n5. UI에 표시되는 인증결과 확인\n",
-      "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master 장치에 인증시도\n3. UI에 표시되는 인증결과 확인\n4. Slave 장치에 인증시도\n5. UI에 표시되는 인증결과 확인\n",
-      "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master 장치에 인증시도\n3. UI에 표시되는 인증결과 확인\n4. Slave 장치에 인증시도\n5. UI에 표시되는 인증결과 확인\n",
-      "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master 장치에 인증시도\n3. UI에 표시되는 인증결과 확인\n4. Slave 장치에 인증시도\n5. UI에 표시되는 인증결과 확인\n",
-      "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master에서 지문/얼굴 입력 후 화면의 Title 확인\n3. Slave에서 지문/얼굴 입력 후 화면의 Title 확인",
-      "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master에서 첫번째 사용자로 인증 후 화면의 Title 확인\n3. Slave에서 첫번째 사용자로 인증 후 화면의 Title 확인"
-    ],
-    "data": [
-      "Master Device(New Version)\n> LCD 지원장치 & 미지원 장치\n\nSlave Device(New Version)\n> LCD 지원장치",
-      "Master Device(New Version)\n> LCD 지원장치 & 미지원 장치\nSlave Device(Old Version)\n> LCD 지원장치",
-      "Master Device(New Version)\n> LCD 지원장치 & 미지원 장치\n\nSlave Device(Old Version)\n> Entry2.0",
-      "Master Device(Old Version)\n> LCD 지원장치 & 미지원 장치\n\nSlave Device(New Version)\n> LCD 지원장치",
-      "Master Device(New Version)\n> LCD 지원장치 & 미지원 장치\n\nSlave Device(New Version)\n> LCD 지원장치\n\nMaster/Slave 인증모드\n> 다중인증모드 설정(ex. 지문+PIN)",
-      "Master Device(New Version)\n> LCD 지원장치 & 미지원 장치\n\nSlave Device(New Version)\n> LCD 지원장치\n\nDoor/Lift의 Reader로 설정\n> 이중인증 설정"
-    ],
-    "expected_result": [
-      "1. (Master/Slave LCD 有) 인증성공시 인증결과 + User Name&ID 가 표시되어야 한다.\n> AOC : 미지원, SCC : 지원\n2. 인증실패시 인증실패 문구만 표시된다.\n3. LCD 없는 장치의 경우 인증결과에 대해 LED/부저음으로 정상출력된다.",
-      "1. (Master LCD 有) 인증성공시 인증결과 + User Name&ID 가 표시되어야 한다.\n> AOC : 미지원, SCC : 지원\n2. (Slave LCD 有) 인증성공시 인증결과+User ID가 표시된다.\n3. 인증실패시 인증실패 문구만 표시된다.\n4. LCD 없는 장치의 경우 인증결과에 대해 LED/부저음으로 정상출력된다.",
-      "1. (Master LCD 有) 인증성공시 인증결과 + User Name&ID 가 표시되어야 한다.\n> AOC : 미지원, SCC : 지원\n2. (Slave LCD 有) 인증성공시 인증결과 + User ID가 표시된다.\n3. 인증실패시 인증실패 문구만 표시된다.\n4. LCD 없는 장치의 경우 인증결과에 대해 LED/부저음으로 정상출력된다.",
-      "1. (Master LCD 有) 인증성공시 인증결과 + User ID 가 표시되어야 한다.\n2. (Slave LCD 有) 인증성공시 인증결과 + User ID가 표시된다.\n3. 인증실패시 인증실패 문구만 표시된다.\n4. LCD 없는 장치의 경우 인증결과에 대해 LED/부저음으로 정상출력된다.",
-      "1. (Master/Slave LCD 有) Title에 User ID와 User Name이 표시되어야 한다.\n> BS2 - User ID Only 표시, 인증 성공 시 User ID + User Name 표시\n\n> FS2, FSF2만 Title에 미표시됨(DFW-568,FSTIIFW-1071 참조)\n\n> XS2 - ID+PIN으로 Auth Timeout이 발생 시 실패문구만 표시됨\n※ Timeout으로 실패시 실패문구&User Name 표시됨. => 관련TC도 작성예정",
-      "1. (Master/Slave LCD 有) 첫번째 사용자로 인증 후 Title에 Dual Auth 표시되어야 한다.\n\n> FS2, FSF2만 Title에 미표시됨(DFW-568,FSTIIFW-1071 참조)"
-    ]
+    "assignee": null,
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 6.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-239/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@2ffd41c5[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6a48e92a[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@1c5e896f[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@31f22277[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@13ba3bca[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@a8c7ebb[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@62f19b74[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@42b0ecc7[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@96fb30[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@6986343f[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@7423840[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@42d13abb[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": null,
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-239/watchers",
+      "watchCount": 1,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T10:04:08.000+0900",
+    "timeoriginalestimate": null,
+    "description": "사용자 추가시 User Name 설정한 상태에서 사용자 등록 후 검증진행\r\n\r\n> BioStar2 v2.7.0에서 UI없는 장치들에 User Name 전송하도록 지원.\r\n> BioStar 2.7.0과 같이 등록되는 FW에서 지원 - A2/BS2/FS2/N2\r\n> CS40 v1.1.0, BEP2 v1.1.0, BEW2 v1.2.1, BLS2 v1.3.1 버전부터 지원\r\n  \r\n※ 이전 버전들에서의 동작사양\r\n> (LCD 있는) Master: 인증성공시 인증결과 + User Name&ID 표시 / 인증실패시 인증실패 문구만 표시\r\n> (LCD 있는) Slave: 인증성공시 인증결과 + User ID표시 / 인증실패시 문구만 표시\r\n",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>&lt;RS485 구성&gt;<br/>1. User Name이 설정된 사용자를 장치에 전송<br/>2. Master 장치에 인증시도<br/>3. UI에 표시되는 인증결과 확인<br/>4. Slave 장치에 인증시도<br/>5. UI에 표시되는 인증결과 확인</p></td><td><p>Master Device(New Version)<br/>&gt; LCD 지원장치 &amp; 미지원 장치</p>\n\n<p>Slave Device(New Version)<br/>&gt; LCD 지원장치</p></td><td><p>1. (Master/Slave LCD 有) 인증성공시 인증결과 + User Name&amp;ID 가 표시되어야 한다.<br/>&gt; AOC : 미지원, SCC : 지원<br/>2. 인증실패시 인증실패 문구만 표시된다.<br/>3. LCD 없는 장치의 경우 인증결과에 대해 LED/부저음으로 정상출력된다.</p></td></tr><tr><td>2</td><td><p>&lt;RS485 구성&gt;<br/>1. User Name이 설정된 사용자를 장치에 전송<br/>2. Master 장치에 인증시도<br/>3. UI에 표시되는 인증결과 확인<br/>4. Slave 장치에 인증시도<br/>5. UI에 표시되는 인증결과 확인</p></td><td><p>Master Device(New Version)<br/>&gt; LCD 지원장치 &amp; 미지원 장치<br/>Slave Device(Old Version)<br/>&gt; LCD 지원장치</p></td><td><p>1. (Master LCD 有) 인증성공시 인증결과 + User Name&amp;ID 가 표시되어야 한다.<br/>&gt; AOC : 미지원, SCC : 지원<br/>2. (Slave LCD 有) 인증성공시 인증결과+User ID가 표시된다.<br/>3. 인증실패시 인증실패 문구만 표시된다.<br/>4. LCD 없는 장치의 경우 인증결과에 대해 LED/부저음으로 정상출력된다.</p></td></tr><tr><td>3</td><td><p>&lt;RS485 구성&gt;<br/>1. User Name이 설정된 사용자를 장치에 전송<br/>2. Master 장치에 인증시도<br/>3. UI에 표시되는 인증결과 확인<br/>4. Slave 장치에 인증시도<br/>5. UI에 표시되는 인증결과 확인</p></td><td><p>Master Device(New Version)<br/>&gt; LCD 지원장치 &amp; 미지원 장치</p>\n\n<p>Slave Device(Old Version)<br/>&gt; Entry2.0</p></td><td><p>1. (Master LCD 有) 인증성공시 인증결과 + User Name&amp;ID 가 표시되어야 한다.<br/>&gt; AOC : 미지원, SCC : 지원<br/>2. (Slave LCD 有) 인증성공시 인증결과 + User ID가 표시된다.<br/>3. 인증실패시 인증실패 문구만 표시된다.<br/>4. LCD 없는 장치의 경우 인증결과에 대해 LED/부저음으로 정상출력된다.</p></td></tr><tr><td>4</td><td><p>&lt;RS485 구성&gt;<br/>1. User Name이 설정된 사용자를 장치에 전송<br/>2. Master 장치에 인증시도<br/>3. UI에 표시되는 인증결과 확인<br/>4. Slave 장치에 인증시도<br/>5. UI에 표시되는 인증결과 확인</p></td><td><p>Master Device(Old Version)<br/>&gt; LCD 지원장치 &amp; 미지원 장치</p>\n\n<p>Slave Device(New Version)<br/>&gt; LCD 지원장치</p></td><td><p>1. (Master LCD 有) 인증성공시 인증결과 + User ID 가 표시되어야 한다.<br/>2. (Slave LCD 有) 인증성공시 인증결과 + User ID가 표시된다.<br/>3. 인증실패시 인증실패 문구만 표시된다.<br/>4. LCD 없는 장치의 경우 인증결과에 대해 LED/부저음으로 정상출력된다.</p></td></tr><tr><td>5</td><td><p>&lt;RS485 구성&gt;<br/>1. User Name이 설정된 사용자를 장치에 전송<br/>2. Master에서 지문/얼굴 입력 후 화면의 Title 확인<br/>3. Slave에서 지문/얼굴 입력 후 화면의 Title 확인</p></td><td><p>Master Device(New Version)<br/>&gt; LCD 지원장치 &amp; 미지원 장치</p>\n\n<p>Slave Device(New Version)<br/>&gt; LCD 지원장치</p>\n\n<p>Master/Slave 인증모드<br/>&gt; 다중인증모드 설정(ex. 지문+PIN)</p></td><td><p>1. (Master/Slave LCD 有) Title에 User ID와 User Name이 표시되어야 한다.<br/>&gt; BS2 - User ID Only 표시, 인증 성공 시 User ID + User Name 표시</p>\n\n<p>&gt; FS2, FSF2만 Title에 미표시됨(<a href=\"https://jira.suprema.co.kr/browse/DFW-568\" title=\"[Slave - User Name 표시] Slave 모드에서 인증 시 화면에 User Name 표시 관련 구현 문의 \" class=\"issue-link\" data-issue-key=\"DFW-568\">DFW-568</a>,<a href=\"https://jira.suprema.co.kr/browse/FSTIIFW-1071\" title=\"[[Next Credential 입력 요청 화면] Master와 상이하게 동작\" class=\"issue-link\" data-issue-key=\"FSTIIFW-1071\"><del>FSTIIFW-1071</del></a> 참조)</p>\n\n<p>&gt; XS2 - ID+PIN으로 Auth Timeout이 발생 시 실패문구만 표시됨<br/>※ Timeout으로 실패시 실패문구&amp;User Name 표시됨. =&gt; 관련TC도 작성예정</p></td></tr><tr><td>6</td><td><p>&lt;RS485 구성&gt;<br/>1. User Name이 설정된 사용자를 장치에 전송<br/>2. Master에서 첫번째 사용자로 인증 후 화면의 Title 확인<br/>3. Slave에서 첫번째 사용자로 인증 후 화면의 Title 확인</p></td><td><p>Master Device(New Version)<br/>&gt; LCD 지원장치 &amp; 미지원 장치</p>\n\n<p>Slave Device(New Version)<br/>&gt; LCD 지원장치</p>\n\n<p>Door/Lift의 Reader로 설정<br/>&gt; 이중인증 설정</p></td><td><p>1. (Master/Slave LCD 有) 첫번째 사용자로 인증 후 Title에 Dual Auth 표시되어야 한다.</p>\n\n<p>&gt; FS2, FSF2만 Title에 미표시됨(<a href=\"https://jira.suprema.co.kr/browse/DFW-568\" title=\"[Slave - User Name 표시] Slave 모드에서 인증 시 화면에 User Name 표시 관련 구현 문의 \" class=\"issue-link\" data-issue-key=\"DFW-568\">DFW-568</a>,<a href=\"https://jira.suprema.co.kr/browse/FSTIIFW-1071\" title=\"[[Next Credential 입력 요청 화면] Master와 상이하게 동작\" class=\"issue-link\" data-issue-key=\"FSTIIFW-1071\"><del>FSTIIFW-1071</del></a> 참조)</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [],
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 26479,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 34716,
+              "latestFinalId": 34716
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_190805_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15279,
+              "latestFinalId": 15279
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_190809_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15628,
+              "latestFinalId": 15628
+            }
+          ]
+        },
+        {
+          "group": "FL_V1.0_190515(PS)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 14180,
+              "latestFinalId": 14180
+            }
+          ]
+        },
+        {
+          "group": "V1.8.0_190806_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15389,
+              "latestFinalId": 15389
+            }
+          ]
+        },
+        {
+          "group": "V1.7.1_181204(Hotfix)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12734,
+              "latestFinalId": 12734
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_181210_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 12848,
+              "latestFinalId": 12848
+            }
+          ]
+        },
+        {
+          "group": "V1.7.0_190806_Interaction 7차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15137,
+              "latestFinalId": 15137
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_181119_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12992,
+              "latestFinalId": 12992
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_190806_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15511,
+              "latestFinalId": 15511
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_20200601_Interaction 12차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 17243,
+              "latestFinalId": 17243
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "LCD 있는 장치에서 Slave 모드여도 인증 성공 후 User Name 표시  ",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 9359,
+          "index": 1,
+          "step": "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master 장치에 인증시도\n3. UI에 표시되는 인증결과 확인\n4. Slave 장치에 인증시도\n5. UI에 표시되는 인증결과 확인\n",
+          "data": "Master Device(New Version)\n> LCD 지원장치 & 미지원 장치\n\nSlave Device(New Version)\n> LCD 지원장치",
+          "result": "1. (Master/Slave LCD 有) 인증성공시 인증결과 + User Name&ID 가 표시되어야 한다.\n> AOC : 미지원, SCC : 지원\n2. 인증실패시 인증실패 문구만 표시된다.\n3. LCD 없는 장치의 경우 인증결과에 대해 LED/부저음으로 정상출력된다.",
+          "attachments": []
+        },
+        {
+          "id": 9360,
+          "index": 2,
+          "step": "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master 장치에 인증시도\n3. UI에 표시되는 인증결과 확인\n4. Slave 장치에 인증시도\n5. UI에 표시되는 인증결과 확인\n",
+          "data": "Master Device(New Version)\n> LCD 지원장치 & 미지원 장치\nSlave Device(Old Version)\n> LCD 지원장치",
+          "result": "1. (Master LCD 有) 인증성공시 인증결과 + User Name&ID 가 표시되어야 한다.\n> AOC : 미지원, SCC : 지원\n2. (Slave LCD 有) 인증성공시 인증결과+User ID가 표시된다.\n3. 인증실패시 인증실패 문구만 표시된다.\n4. LCD 없는 장치의 경우 인증결과에 대해 LED/부저음으로 정상출력된다.",
+          "attachments": []
+        },
+        {
+          "id": 9361,
+          "index": 3,
+          "step": "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master 장치에 인증시도\n3. UI에 표시되는 인증결과 확인\n4. Slave 장치에 인증시도\n5. UI에 표시되는 인증결과 확인\n",
+          "data": "Master Device(New Version)\n> LCD 지원장치 & 미지원 장치\n\nSlave Device(Old Version)\n> Entry2.0",
+          "result": "1. (Master LCD 有) 인증성공시 인증결과 + User Name&ID 가 표시되어야 한다.\n> AOC : 미지원, SCC : 지원\n2. (Slave LCD 有) 인증성공시 인증결과 + User ID가 표시된다.\n3. 인증실패시 인증실패 문구만 표시된다.\n4. LCD 없는 장치의 경우 인증결과에 대해 LED/부저음으로 정상출력된다.",
+          "attachments": []
+        },
+        {
+          "id": 9362,
+          "index": 4,
+          "step": "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master 장치에 인증시도\n3. UI에 표시되는 인증결과 확인\n4. Slave 장치에 인증시도\n5. UI에 표시되는 인증결과 확인\n",
+          "data": "Master Device(Old Version)\n> LCD 지원장치 & 미지원 장치\n\nSlave Device(New Version)\n> LCD 지원장치",
+          "result": "1. (Master LCD 有) 인증성공시 인증결과 + User ID 가 표시되어야 한다.\n2. (Slave LCD 有) 인증성공시 인증결과 + User ID가 표시된다.\n3. 인증실패시 인증실패 문구만 표시된다.\n4. LCD 없는 장치의 경우 인증결과에 대해 LED/부저음으로 정상출력된다.",
+          "attachments": []
+        },
+        {
+          "id": 10165,
+          "index": 5,
+          "step": "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master에서 지문/얼굴 입력 후 화면의 Title 확인\n3. Slave에서 지문/얼굴 입력 후 화면의 Title 확인",
+          "data": "Master Device(New Version)\n> LCD 지원장치 & 미지원 장치\n\nSlave Device(New Version)\n> LCD 지원장치\n\nMaster/Slave 인증모드\n> 다중인증모드 설정(ex. 지문+PIN)",
+          "result": "1. (Master/Slave LCD 有) Title에 User ID와 User Name이 표시되어야 한다.\n> BS2 - User ID Only 표시, 인증 성공 시 User ID + User Name 표시\n\n> FS2, FSF2만 Title에 미표시됨(DFW-568,FSTIIFW-1071 참조)\n\n> XS2 - ID+PIN으로 Auth Timeout이 발생 시 실패문구만 표시됨\n※ Timeout으로 실패시 실패문구&User Name 표시됨. => 관련TC도 작성예정",
+          "attachments": []
+        },
+        {
+          "id": 10166,
+          "index": 6,
+          "step": "<RS485 구성>\n1. User Name이 설정된 사용자를 장치에 전송\n2. Master에서 첫번째 사용자로 인증 후 화면의 Title 확인\n3. Slave에서 첫번째 사용자로 인증 후 화면의 Title 확인",
+          "data": "Master Device(New Version)\n> LCD 지원장치 & 미지원 장치\n\nSlave Device(New Version)\n> LCD 지원장치\n\nDoor/Lift의 Reader로 설정\n> 이중인증 설정",
+          "result": "1. (Master/Slave LCD 有) 첫번째 사용자로 인증 후 Title에 Dual Auth 표시되어야 한다.\n\n> FS2, FSF2만 Title에 미표시됨(DFW-568,FSTIIFW-1071 참조)",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [],
+      "maxResults": 0,
+      "total": 0,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+      "name": "미할당",
+      "id": "10100"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+      "name": "할 일",
+      "id": "10000",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "할 일"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzsxhj:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2018-05-18T13:20:15.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

@@ -1,329 +1,1177 @@
 {
-  "id": "COMMONR-283",
-  "content": [
-    [
-      1,
-      "1. Device> Card Type> SmartCard\n2. Byte Order 설정UI 유무 확인",
-      "",
-      "1. SmartCard의 Byte Order 설정 옵션이 추가된다.\n> BS2CardConfig에 옵션추가\n> Default/Master 모드에서 지원\n\n+ BDP-880 Slave 모드 지원"
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "45645",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/45645",
+  "key": "COMMONR-283",
+  "fields": {
+    "resolution": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/resolution/10002",
+      "id": "10002",
+      "description": "[사용안함] Work has been completed on this issue.",
+      "name": "완료"
+    },
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "0.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10173",
+      "value": "Major",
+      "id": "10173"
+    },
+    "customfield_10185": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
+      "value": "Medium (2-3일 이내 피드백)",
+      "id": "10220"
+    },
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "39885",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/39885",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "50161",
+          "key": "BEWIIFWDI-947",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/50161",
+          "fields": {
+            "summary": "[OSDP 연동] SmartCard Layout을 LSB로 설정 후 SmartCard Read시 부저음 발생 및 OSDP 툴과 연결 끊김. 이후 Reboot",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "39844",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/39844",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "50162",
+          "key": "BEWIIFWDI-948",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/50162",
+          "fields": {
+            "summary": "SmartCard Byte Order LSB 로 변경 후 Wiegand out 장치에 인증 시 발급된 Card ID LSB 로 미출력 및 장치 재부팅  ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "49748",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/49748",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "59574",
+          "key": "BPIIFW-138",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/59574",
+          "fields": {
+            "summary": "Output info - User ID 로 선택하였을 때 바이트오더의 영향을 받지 않고 MSB로 출력됨(영숫자모드)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "47985",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/47985",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "57433",
+          "key": "BS2AFW-118",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/57433",
+          "fields": {
+            "summary": "[Intelligent Slave] Output Info : User ID 발급 후 인증 시 CARD ID가 출력되는 현상(iclass,seos)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "48078",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/48078",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "57776",
+          "key": "DFW-981",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/57776",
+          "fields": {
+            "summary": "Intelligent Slave output info를 User ID 로 선택하였을 때 바이트오더의 영향을 받지 않고 MSB로 출력됨(OSDP로 연결 시)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "54761",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/54761",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "63905",
+          "key": "BLNIIFW-1122",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/63905",
+          "fields": {
+            "summary": "[Intelligent PD] 'Output Info : User ID' 로 선택 후 카드 인증 시 User ID 가 아닌 Card ID 로 출력",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "45798",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/45798",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "55578",
+          "key": "BS3FW-1328",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/55578",
+          "fields": {
+            "summary": "Intelligent Slave output info를 User ID 로 선택하였을 때 바이트오더의 영향을 받지 않고 MSB로 출력됨(OSDP로 연결 시)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "35003",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/35003",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "45622",
+          "key": "BAS-489",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/45622",
+          "fields": {
+            "summary": "Test Case 작성",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
+              "id": "5",
+              "description": "이슈의 부작업",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
+              "name": "부작업",
+              "subtask": true,
+              "avatarId": 10316
+            }
+          }
+        }
+      },
+      {
+        "id": "38677",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/38677",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "48678",
+          "key": "BES-33",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/48678",
+          "fields": {
+            "summary": "재논의된 스펙 재검토 및 TC Update",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
+              "id": "5",
+              "description": "이슈의 부작업",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
+              "name": "부작업",
+              "subtask": true,
+              "avatarId": 10316
+            }
+          }
+        }
+      },
+      {
+        "id": "48007",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/48007",
+        "type": {
+          "id": "10200",
+          "name": "Tests",
+          "inward": "tested by",
+          "outward": "tests",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10200"
+        },
+        "outwardIssue": {
+          "id": "54770",
+          "key": "DFW-943",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/54770",
+          "fields": {
+            "summary": "[BDP-511] Smartcard output byte order 설정_사양변경",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      },
+      {
+        "id": "45322",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/45322",
+        "type": {
+          "id": "10200",
+          "name": "Tests",
+          "inward": "tested by",
+          "outward": "tests",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10200"
+        },
+        "inwardIssue": {
+          "id": "54769",
+          "key": "BS3FW-1275",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/54769",
+          "fields": {
+            "summary": "[BDP-511] Smartcard output byte order 설정_사양변경",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "[장치의 RS485 모드: Default/Master]\n1. Device> Card Type> SmartCard\n2. Byte Order 설정\n3. SmartCard Write",
-      "Byte Order\n> MSB\n> LSB\n\nSmartCard Write\n> AOC\n> SCC",
-      "1. Byte Order 설정과 무관하게 기존 방식대로 Write된다.\n> 발급할 Card ID 12345 -> 12345로 발급"
-    ],
-    [
-      3,
-      "[RS485 구성 & SmartCard Layout 설정된 상태]\n1. 사용자> +Card> Card Type: Read Card\n2. Device 선택 후 Read Card\n3. 읽히는 값 확인",
-      "Byte Order\n> MSB / LSB\n\nDevice\n> Master/ Slave\n\nSmartCard\n> AOC / SCC",
-      "1. 발급한 값으로 리드된다.\n> Byte Order의 영향을 받지 않는다."
-    ],
-    [
-      4,
-      "[RS485 구성]\n1. Device(=Master)> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. Device 선택 후 SmartCard Read\n4. 출력되는 값 확인",
-      "SmartCard - AOC/SCC\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n\nDevice\n> Master/Slave",
-      "1. 발급된 Card ID로 출력된다.\n> Master/Slave 모두 동일"
-    ],
-    [
-      5,
-      "[RS485 구성]\n1. Device(=Master)> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. Device 선택 후 SmartCard Read\n4. 출력되는 값 확인",
-      "SmartCard - AOC/SCC\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n\nDevice\n> Master/Slave",
-      "1. 발급된 Card ID로 출력된다.\n> Master/Slave 모두 동일"
-    ],
-    [
-      6,
-      "[RS485 구성]\n1. Device(=Master)> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. Device 선택 후 SmartCard Read\n4. 출력되는 값 확인",
-      "SmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n\nDevice\n> Master/Slave",
-      "1. 발급된 Card ID로 출력된다.\n> Master/Slave 모두 동일"
-    ],
-    [
-      7,
-      "[RS485 구성]\n1. Device(=Master)> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. Device 선택 후 SmartCard Read\n4. 출력되는 값 확인",
-      "SmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n\nDevice\n> Master/Slave",
-      "1. 발급된 Card ID로 출력된다.\n> Master/Slave 모두 동일"
-    ],
-    [
-      8,
-      "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "OSDP로 연결된 장치\n> Slave 모드\n\nSmartCard - AOC/SCC(숫자모드에서 발급)\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n> ex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)",
-      "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount로 출력\n=> BitCount 32 & 133 2BF4(=Dec 20130804)로 표시"
-    ],
-    [
-      9,
-      "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "OSDP로 연결된 장치\n> Slave 모드\n\nSmartCard - AOC/SCC\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n> ex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)",
-      "1. 발급된 Card ID가 LSB로 출력된다.\n> 발급된 Card ID만큼의 BitCount로 출력\n=> BitCount 32 & F42B 3301(=Dec 4096471809)로 표시"
-    ],
-    [
-      10,
-      "[OSDP Tool과 연결]\n\n1. Device> Card Type> SmartCard\n2. SmartCard Byte Order 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "OSDP로 연결된 장치\n> Slave 모드\n\nSmart Card Byte Order\n> MSB/LSB\n\nSmartCard - AOC(영숫자모드에서 발급-숫자ID/영숫자ID)\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n> ex. 발급한 Card ID - jiyoon(= 6A 69 79 6F 6F 6E 00 00 00 .... 00)\n> ex. 발급한 Card ID - 224650164368(= 323234363530313634333638)",
-      "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount 출력\n\nMSB\n> jiyoon: Bitcount 48 & 6A69 796F 6F6E 로 출력\n> 224650164368: Bitcount 96 & 323234363530313634333638 로 출력\n\nLSB\n> jiyoon: Bitcount 48 & 6E6F 6F79 696A 로 출력\n> 224650164368: Bitcount 96 & 383633343631303536343232 로 출력\n"
-    ],
-    [
-      11,
-      "[OSDP Tool과 연결]\n\n1. Device> Card Type> SmartCard\n2. SmartCard Byte Order 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "OSDP로 연결된 장치\n> Slave 모드\n\nSmart Card Byte Order\n> MSB/LSB\n\nSmartCard - SCC(영숫자모드에서 발급-숫자ID)\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n\n> ex. 발급한 Card ID - 20220531(=Hex. 01348a73)",
-      "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount 출력\n\nMSB\n> Bitcount 32 & 01348a73 로 출력\n\nLSB\n> Bitcount 32 & 738a3401 로 출력\n"
-    ],
-    [
-      12,
-      "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "OSDP로 연결된 장치\n> Slave 모드\n\nSmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n",
-      "1. Iclass 카드는 PAC Data가 출력된다.\n> 기존과 동일"
-    ],
-    [
-      13,
-      "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "OSDP로 연결된 장치\n> Slave 모드\n\nSmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n",
-      "1. Iclass 카드는 PAC Data가 출력된다.\n> 기존과 동일"
-    ],
-    [
-      14,
-      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. 위겐드 리더로 연결된 SmartCard Read",
-      "SmartCard - AOC/SCC(숫자모드에서 발급)\n > Mifare - Classic/Plus, DesFire/DesFire EV1\nex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)\n\nCSN Wiegand Format\n > Default로 지원되는 Format\n > Custom으로 생성한 Format\n\n -Wiegand Output Mode-\n -> Normal-\n\nWiegand Output Info\n > Card ID",
-      "1. 발급된 Card ID가 설정된 Wiegand Format에 따라 출력된다.\n\n※ MSB일 때 카드ID: 133 2BF4\n> 설정 포맷 > 32bit인 경우 - 발급된 카드ID에서 설정된 포맷만큼 잘려서 출력\n> 설정 포맷 = 32bit인 경우 - 발급된 카드ID 그대로 출력\n> 설정 포맷 < 32bit인 경우 - 발급된 카드ID 그대로 출력"
-    ],
-    [
-      15,
-      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. SmartCard Read",
-      "SmartCard - AOC/SCC(숫자모드에서 발급)\n > Mifare - Classic/Plus, DesFire/DesFire EV1\nex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)\n\n\nCSN Wiegand Format\n > Default로 지원되는 Format\n > Custom으로 생성한 Format\n\n-Wiegand Output Mode-\n -> Normal-\n\nWiegand Output Info\n > Card ID",
-      "1. 발급된 Card ID의 LSB값이 설정된 Wiegand Format에 따라 출력된다.\n\n※ LSB인 경우 카드ID: F42B 3301\n> 설정 포맷 > 32bit인 경우 - 발급된 카드ID에서 설정된 포맷만큼 잘려서 출력\n> 설정 포맷 = 32bit인 경우 - 발급된 카드ID 그대로 출력\n> 설정 포맷 < 32bit인 경우 - 발급된 카드ID 그대로 출력"
-    ],
-    [
-      16,
-      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. SmartCard Byte Order 설정\n3. 위겐드 리더로 연결된 SmartCard Read",
-      "Smart Card Byte Order\n> MSB/LSB\n\nSmartCard - AOC(영숫자모드에서 발급-숫자ID/영숫자ID)\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n> ex. 발급한 Card ID - jiyoon(= 6A 69 79 6F 6F 6E 00 00 00 .... 00)\n> ex. 발급한 Card ID - 224650164368(= 323234363530313634333638)\n\nCSN Wiegand Format\n> Default로 지원되는 Format\n> Custom으로 생성한 Format\n\n-Wiegand Output Mode\n-> Bypass-\n\nWiegand Output Info\n> Card ID",
-      "1. 발급된 Card ID가 설정된 Wiegand Format에 따라 출력된다.\n\n> MSB\n- jiyoon일 때, 6A 69 79 6F 6F 6E 에 대해 Wiegand Format에 맞게 출력된다.\n- 224650164368일 때, MBS 값인 323234363530313634333638에 대해 Wiegand Format에 맞게 출력된다.\n\n> LSB\n- jiyoon일 때, LSB 값인 6E 6F 6F 79 69 6A 에 대해 Wiegand Format에 맞게 출력된다.\n- 224650164368일 때, LSB 값인 383633343631303536343232 에 대해 Wiegand Format에 맞게 출력된다."
-    ],
-    [
-      17,
-      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. SmartCard Byte Order 설정\n3. SmartCard Read",
-      "Smart Card Byte Order\n> MSB/LSB\n\nSmartCard - SCC(영숫자모드에서 발급-숫자ID)\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n> ex. 발급한 Card ID - 20220531(=Hex. 01348a73)\n\nCSN Wiegand Format\n> Default로 지원되는 Format\n> Custom으로 생성한 Format\n\n-Wiegand Output Mode\n-> Bypass-\n\nWiegand Output Info\n> Card ID",
-      "1. 발급된 Card ID의 값이 설정된 Wiegand Format에 따라 출력된다.\n\n>MSB\n01348a73 로 출력\n\n>LSB\n738a3401 로 출력"
-    ],
-    [
-      18,
-      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. 위겐드 리더로 연결된 SmartCard Read",
-      "SmartCard - AOC/SCC\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n\nWiegand Output Info\n> User ID",
-      "1. AOC: 발급된 Card ID(=User ID)가 출력된다.\n2. SCC: 발급된 Card ID가 등록된 User ID가 출력된다.\n\n> MSB/LSB 출력 확인"
-    ],
-    [
-      19,
-      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. SmartCard Read",
-      "SmartCard - AOC/SCC\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n\nWiegand Output Info\n> User ID",
-      "1. AOC: 발급된 Card ID(=User ID)가 출력된다.\n2. SCC: 발급된 Card ID가 등록된 User ID가 출력된다.\n\n> MSB/LSB 출력 확인"
-    ],
-    [
-      20,
-      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. SmartCard Read",
-      "SmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n\nWiegand Output Info\n> Card ID",
-      "1. Iclass 카드는 PAC Data가 출력된다.\n> 기존과 동일"
-    ],
-    [
-      21,
-      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. SmartCard Read",
-      "SmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n\nWiegand Output Info\n> Card ID",
-      "1. Iclass 카드는 PAC Data가 출력된다.\n> 기존과 동일"
-    ],
-    [
-      22,
-      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. SmartCard Read",
-      "SmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n\nWiegand Output Info\n> User ID",
-      "1. User ID의 경우도 Byte Order의 영향을 받는다.\n> 발급된 User ID로 출력된다.\n> 발급된 User ID 만큼의 BitCount로 출력\n"
-    ],
-    [
-      23,
-      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. SmartCard Read",
-      "SmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n\nWiegand Output Info\n> User ID",
-      "1. User ID의 경우도 Byte Order의 영향을 받는다.\n> 발급된 User ID의 LSB로 출력\n> 발급된 User ID의 LSB에 해당하는 만큼의 BitCount로 출력"
-    ],
-    [
-      24,
-      "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "OSDP로 연결된 장치\n> Default 모드\n> Output info - Card ID\n\nSmartCard - AOC/SCC(숫자모드에서 발급)\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n> ex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)",
-      "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount로 출력\n=> BitCount 32 & 133 2BF4(=Dec 20130804)로 표시"
-    ],
-    [
-      25,
-      "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "OSDP로 연결된 장치\n> Default 모드\n> Output info - Card ID\n\nSmartCard - AOC/SCC\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n> ex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)",
-      "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount로 출력\n=> BitCount 32 & F42B 3301(=Dec 4096471809)로 표시"
-    ],
-    [
-      26,
-      "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. SmartCard Byte Order 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "OSDP로 연결된 장치\n> Default 모드\n> Output info - Card ID\n\nSmart Card Byte Order\n> MSB/LSB\n\nSmartCard - AOC(영숫자모드에서 발급-숫자ID/영숫자ID)\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n> ex. 발급한 Card ID - jiyoon(= 6A 69 79 6F 6F 6E 00 00 00 .... 00)\n> ex. 발급한 Card ID - 224650164368(= 323234363530313634333638)",
-      "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount 출력\n\nMSB\n> jiyoon: Bitcount 48 & 6A69 796F 6F6E 로 출력\n> 224650164368: Bitcount 96 & 323234363530313634333638 로 출력\n\nLSB\n> jiyoon: Bitcount 48 & 6E6F 6F79 696A 로 출력\n> 224650164368: Bitcount 96 & 383633343631303536343232 로 출력\n"
-    ],
-    [
-      27,
-      "[OSDP Tool과 연결]\n\n1. Device> Card Type> SmartCard\n2. SmartCard Byte Order 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "OSDP로 연결된 장치\n> Default 모드\n> Output info - Card ID\n\nSmart Card Byte Order\n> MSB/LSB\n\nSmartCard - SCC(영숫자모드에서 발급-숫자ID)\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n\n> ex. 발급한 Card ID - 20220531(=Hex. 01348a73)",
-      "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount 출력\n\nMSB\n> Bitcount 32 & 01348a73 로 출력\n\nLSB\n> Bitcount 32 & 738a3401 로 출력\n"
-    ],
-    [
-      28,
-      "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "OSDP로 연결된 장치\n> Default 모드\n> Output info - Card ID\n\nSmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS",
-      "1. Iclass 카드는 PAC Data가 출력된다.\n> 기존과 동일"
-    ],
-    [
-      29,
-      "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "OSDP로 연결된 장치\n> Default 모드\n> Output info - Card ID\n\nSmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS",
-      "1. Iclass 카드는 PAC Data가 출력된다.\n> 기존과 동일"
-    ],
-    [
-      30,
-      "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "OSDP로 연결된 장치\n > Default 모드\n > Output info - User ID(숫자ID)\n\nSmartCard - AOC/SCC\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n\n발급된 User ID\n > 1Byte로 발급\n > 최대(=32Byte)로 발급",
-      "1. User ID의 경우도 Byte Order의 영향을 받는다.\n> 발급된 User ID(MSB)로 출력된다.\n> 발급된 User ID 만큼의 BitCount로 출력\n\n"
-    ],
-    [
-      31,
-      "[OSDP Tool과 연결]\n\n1. Device> Card Type> SmartCard\n2. Byte Order: LSB설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "OSDP로 연결된 장치\n> Default 모드\n> Output info - User ID(숫자ID)\n\nSmartCard - AOC/SCC\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n\n발급된 User ID\n> 1Byte로 발급\n> 최대(=32Byte)로 발급",
-      "1. User ID의 경우도 Byte Order의 영향을 받는다.\n> 발급된 User ID(LSB)로 출력된다.\n> 발급된 User ID 만큼의 BitCount로 출력"
-    ],
-    [
-      32,
-      "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: MSB/LSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "OSDP로 연결된 장치\n > Default 모드\n > Output info - User ID(영숫자ID-숫자,영숫자)\n\nSmartCard - AOC/SCC\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n\nSmartCard - AOC(영숫자모드에서 발급-숫자ID/영숫자ID)\n> ex. 발급한 Card ID - jiyoon(= 6A 69 79 6F 6F 6E 00 00 00 .... 00)\n> ex. 발급한 Card ID - 224650164368(= 323234363530313634333638)\n\n\n\nSmartCard - SCC(영숫자모드에서 발급-숫자ID/영숫자ID)\n> ex. 발급한 User ID - jiyoon(= 6A 69 79 6F 6F 6E 00 00 00 .... 00)/Card ID - 1\n> ex. 발급한 User ID - 224650164368(= 323234363530313634333638)/Card ID - 1",
-      "1. User ID의 경우도 Byte Order의 영향을 받는다.\n> 발급된 User ID로 출력된다.\n\n\n\nMSB\n> jiyoon: Bitcount 48 & 6A69 796F 6F6E 로 출력\n> 224650164368: Bitcount 96 & 323234363530313634333638 로 출력\n\nLSB\n> jiyoon: Bitcount 48 & 6E6F 6F79 696A 로 출력\n> 224650164368: Bitcount 96 & 383633343631303536343232 로 출력"
-    ],
-    [
-      33,
-      "[OSDP Tool과 연결]\n\n1. Device> Card Type> SmartCard\n2. Byte Order: MSB/LSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "OSDP로 연결된 장치\n> Default 모드\n> Output info - User ID(영숫자ID-숫자,영숫자)\n\nSmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n\nSmartCard - AOC(영숫자모드에서 발급-숫자ID/영숫자ID)\n> ex. 발급한 Card ID - jiyoon(= 6A 69 79 6F 6F 6E 00 00 00 .... 00)\n> ex. 발급한 Card ID - 224650164368(= 323234363530313634333638)\n\n\n\nSmartCard - SCC(영숫자모드에서 발급-숫자ID/영숫자ID)\n> ex. 발급한 User ID - jiyoon(= 6A 69 79 6F 6F 6E 00 00 00 .... 00)/Card ID - 1\n> ex. 발급한 User ID - 224650164368(= 323234363530313634333638)/Card ID - 1\n",
-      "1. User ID의 경우도 Byte Order의 영향을 받는다.\n\nMSB\n> jiyoon: Bitcount 48 & 6A69 796F 6F6E 로 출력\n> 224650164368: Bitcount 96 & 323234363530313634333638 로 출력\n\nLSB\n> jiyoon: Bitcount 48 & 6E6F 6F79 696A 로 출력\n> 224650164368: Bitcount 96 & 383633343631303536343232 로 출력\n"
-    ],
-    [
-      34,
-      "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "OSDP로 연결된 장치\n> Default 모드\n> Output info - User ID(숫자ID)\n\nSmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n\n발급된 User ID\n> 1Byte로 발급\n> 최대(=32Byte)로 발급",
-      "1. User ID의 경우도 Byte Order의 영향을 받는다.\n> 발급된 User ID의 MSB로 출력\n> 발급된 User ID의 MSB에 해당하는 만큼의 BitCount로 출력\n"
-    ],
-    [
-      35,
-      "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "OSDP로 연결된 장치\n> Default 모드\n> Output info - User ID(숫자ID)\n\nSmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n\n발급된 User ID\n> 1Byte로 발급\n> 최대(=32Byte)로 발급",
-      "1. User ID의 경우도 Byte Order의 영향을 받는다.\n> 발급된 User ID의 LSB로 출력\n> 발급된 User ID의 LSB에 해당하는 만큼의 BitCount로 출력\n"
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-283",
-    "description": "",
-    "test_step": [
-      "1. Device> Card Type> SmartCard\n2. Byte Order 설정UI 유무 확인",
-      "[장치의 RS485 모드: Default/Master]\n1. Device> Card Type> SmartCard\n2. Byte Order 설정\n3. SmartCard Write",
-      "[RS485 구성 & SmartCard Layout 설정된 상태]\n1. 사용자> +Card> Card Type: Read Card\n2. Device 선택 후 Read Card\n3. 읽히는 값 확인",
-      "[RS485 구성]\n1. Device(=Master)> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. Device 선택 후 SmartCard Read\n4. 출력되는 값 확인",
-      "[RS485 구성]\n1. Device(=Master)> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. Device 선택 후 SmartCard Read\n4. 출력되는 값 확인",
-      "[RS485 구성]\n1. Device(=Master)> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. Device 선택 후 SmartCard Read\n4. 출력되는 값 확인",
-      "[RS485 구성]\n1. Device(=Master)> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. Device 선택 후 SmartCard Read\n4. 출력되는 값 확인",
-      "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "[OSDP Tool과 연결]\n\n1. Device> Card Type> SmartCard\n2. SmartCard Byte Order 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "[OSDP Tool과 연결]\n\n1. Device> Card Type> SmartCard\n2. SmartCard Byte Order 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. 위겐드 리더로 연결된 SmartCard Read",
-      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. SmartCard Read",
-      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. SmartCard Byte Order 설정\n3. 위겐드 리더로 연결된 SmartCard Read",
-      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. SmartCard Byte Order 설정\n3. SmartCard Read",
-      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. 위겐드 리더로 연결된 SmartCard Read",
-      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. SmartCard Read",
-      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. SmartCard Read",
-      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. SmartCard Read",
-      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. SmartCard Read",
-      "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. SmartCard Read",
-      "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. SmartCard Byte Order 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "[OSDP Tool과 연결]\n\n1. Device> Card Type> SmartCard\n2. SmartCard Byte Order 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "[OSDP Tool과 연결]\n\n1. Device> Card Type> SmartCard\n2. Byte Order: LSB설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: MSB/LSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "[OSDP Tool과 연결]\n\n1. Device> Card Type> SmartCard\n2. Byte Order: MSB/LSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
-      "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인"
-    ],
-    "data": [
-      "Byte Order\n> MSB\n> LSB\n\nSmartCard Write\n> AOC\n> SCC",
-      "Byte Order\n> MSB / LSB\n\nDevice\n> Master/ Slave\n\nSmartCard\n> AOC / SCC",
-      "SmartCard - AOC/SCC\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n\nDevice\n> Master/Slave",
-      "SmartCard - AOC/SCC\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n\nDevice\n> Master/Slave",
-      "SmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n\nDevice\n> Master/Slave",
-      "SmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n\nDevice\n> Master/Slave",
-      "OSDP로 연결된 장치\n> Slave 모드\n\nSmartCard - AOC/SCC(숫자모드에서 발급)\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n> ex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)",
-      "OSDP로 연결된 장치\n> Slave 모드\n\nSmartCard - AOC/SCC\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n> ex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)",
-      "OSDP로 연결된 장치\n> Slave 모드\n\nSmart Card Byte Order\n> MSB/LSB\n\nSmartCard - AOC(영숫자모드에서 발급-숫자ID/영숫자ID)\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n> ex. 발급한 Card ID - jiyoon(= 6A 69 79 6F 6F 6E 00 00 00 .... 00)\n> ex. 발급한 Card ID - 224650164368(= 323234363530313634333638)",
-      "OSDP로 연결된 장치\n> Slave 모드\n\nSmart Card Byte Order\n> MSB/LSB\n\nSmartCard - SCC(영숫자모드에서 발급-숫자ID)\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n\n> ex. 발급한 Card ID - 20220531(=Hex. 01348a73)",
-      "OSDP로 연결된 장치\n> Slave 모드\n\nSmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n",
-      "OSDP로 연결된 장치\n> Slave 모드\n\nSmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n",
-      "SmartCard - AOC/SCC(숫자모드에서 발급)\n > Mifare - Classic/Plus, DesFire/DesFire EV1\nex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)\n\nCSN Wiegand Format\n > Default로 지원되는 Format\n > Custom으로 생성한 Format\n\n -Wiegand Output Mode-\n -> Normal-\n\nWiegand Output Info\n > Card ID",
-      "SmartCard - AOC/SCC(숫자모드에서 발급)\n > Mifare - Classic/Plus, DesFire/DesFire EV1\nex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)\n\n\nCSN Wiegand Format\n > Default로 지원되는 Format\n > Custom으로 생성한 Format\n\n-Wiegand Output Mode-\n -> Normal-\n\nWiegand Output Info\n > Card ID",
-      "Smart Card Byte Order\n> MSB/LSB\n\nSmartCard - AOC(영숫자모드에서 발급-숫자ID/영숫자ID)\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n> ex. 발급한 Card ID - jiyoon(= 6A 69 79 6F 6F 6E 00 00 00 .... 00)\n> ex. 발급한 Card ID - 224650164368(= 323234363530313634333638)\n\nCSN Wiegand Format\n> Default로 지원되는 Format\n> Custom으로 생성한 Format\n\n-Wiegand Output Mode\n-> Bypass-\n\nWiegand Output Info\n> Card ID",
-      "Smart Card Byte Order\n> MSB/LSB\n\nSmartCard - SCC(영숫자모드에서 발급-숫자ID)\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n> ex. 발급한 Card ID - 20220531(=Hex. 01348a73)\n\nCSN Wiegand Format\n> Default로 지원되는 Format\n> Custom으로 생성한 Format\n\n-Wiegand Output Mode\n-> Bypass-\n\nWiegand Output Info\n> Card ID",
-      "SmartCard - AOC/SCC\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n\nWiegand Output Info\n> User ID",
-      "SmartCard - AOC/SCC\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n\nWiegand Output Info\n> User ID",
-      "SmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n\nWiegand Output Info\n> Card ID",
-      "SmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n\nWiegand Output Info\n> Card ID",
-      "SmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n\nWiegand Output Info\n> User ID",
-      "SmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n\nWiegand Output Info\n> User ID",
-      "OSDP로 연결된 장치\n> Default 모드\n> Output info - Card ID\n\nSmartCard - AOC/SCC(숫자모드에서 발급)\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n> ex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)",
-      "OSDP로 연결된 장치\n> Default 모드\n> Output info - Card ID\n\nSmartCard - AOC/SCC\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n> ex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)",
-      "OSDP로 연결된 장치\n> Default 모드\n> Output info - Card ID\n\nSmart Card Byte Order\n> MSB/LSB\n\nSmartCard - AOC(영숫자모드에서 발급-숫자ID/영숫자ID)\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n> ex. 발급한 Card ID - jiyoon(= 6A 69 79 6F 6F 6E 00 00 00 .... 00)\n> ex. 발급한 Card ID - 224650164368(= 323234363530313634333638)",
-      "OSDP로 연결된 장치\n> Default 모드\n> Output info - Card ID\n\nSmart Card Byte Order\n> MSB/LSB\n\nSmartCard - SCC(영숫자모드에서 발급-숫자ID)\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n\n> ex. 발급한 Card ID - 20220531(=Hex. 01348a73)",
-      "OSDP로 연결된 장치\n> Default 모드\n> Output info - Card ID\n\nSmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS",
-      "OSDP로 연결된 장치\n> Default 모드\n> Output info - Card ID\n\nSmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS",
-      "OSDP로 연결된 장치\n > Default 모드\n > Output info - User ID(숫자ID)\n\nSmartCard - AOC/SCC\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n\n발급된 User ID\n > 1Byte로 발급\n > 최대(=32Byte)로 발급",
-      "OSDP로 연결된 장치\n> Default 모드\n> Output info - User ID(숫자ID)\n\nSmartCard - AOC/SCC\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n\n발급된 User ID\n> 1Byte로 발급\n> 최대(=32Byte)로 발급",
-      "OSDP로 연결된 장치\n > Default 모드\n > Output info - User ID(영숫자ID-숫자,영숫자)\n\nSmartCard - AOC/SCC\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n\nSmartCard - AOC(영숫자모드에서 발급-숫자ID/영숫자ID)\n> ex. 발급한 Card ID - jiyoon(= 6A 69 79 6F 6F 6E 00 00 00 .... 00)\n> ex. 발급한 Card ID - 224650164368(= 323234363530313634333638)\n\n\n\nSmartCard - SCC(영숫자모드에서 발급-숫자ID/영숫자ID)\n> ex. 발급한 User ID - jiyoon(= 6A 69 79 6F 6F 6E 00 00 00 .... 00)/Card ID - 1\n> ex. 발급한 User ID - 224650164368(= 323234363530313634333638)/Card ID - 1",
-      "OSDP로 연결된 장치\n> Default 모드\n> Output info - User ID(영숫자ID-숫자,영숫자)\n\nSmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n\nSmartCard - AOC(영숫자모드에서 발급-숫자ID/영숫자ID)\n> ex. 발급한 Card ID - jiyoon(= 6A 69 79 6F 6F 6E 00 00 00 .... 00)\n> ex. 발급한 Card ID - 224650164368(= 323234363530313634333638)\n\n\n\nSmartCard - SCC(영숫자모드에서 발급-숫자ID/영숫자ID)\n> ex. 발급한 User ID - jiyoon(= 6A 69 79 6F 6F 6E 00 00 00 .... 00)/Card ID - 1\n> ex. 발급한 User ID - 224650164368(= 323234363530313634333638)/Card ID - 1\n",
-      "OSDP로 연결된 장치\n> Default 모드\n> Output info - User ID(숫자ID)\n\nSmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n\n발급된 User ID\n> 1Byte로 발급\n> 최대(=32Byte)로 발급",
-      "OSDP로 연결된 장치\n> Default 모드\n> Output info - User ID(숫자ID)\n\nSmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n\n발급된 User ID\n> 1Byte로 발급\n> 최대(=32Byte)로 발급"
-    ],
-    "expected_result": [
-      "1. SmartCard의 Byte Order 설정 옵션이 추가된다.\n> BS2CardConfig에 옵션추가\n> Default/Master 모드에서 지원\n\n+ BDP-880 Slave 모드 지원",
-      "1. Byte Order 설정과 무관하게 기존 방식대로 Write된다.\n> 발급할 Card ID 12345 -> 12345로 발급",
-      "1. 발급한 값으로 리드된다.\n> Byte Order의 영향을 받지 않는다.",
-      "1. 발급된 Card ID로 출력된다.\n> Master/Slave 모두 동일",
-      "1. 발급된 Card ID로 출력된다.\n> Master/Slave 모두 동일",
-      "1. 발급된 Card ID로 출력된다.\n> Master/Slave 모두 동일",
-      "1. 발급된 Card ID로 출력된다.\n> Master/Slave 모두 동일",
-      "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount로 출력\n=> BitCount 32 & 133 2BF4(=Dec 20130804)로 표시",
-      "1. 발급된 Card ID가 LSB로 출력된다.\n> 발급된 Card ID만큼의 BitCount로 출력\n=> BitCount 32 & F42B 3301(=Dec 4096471809)로 표시",
-      "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount 출력\n\nMSB\n> jiyoon: Bitcount 48 & 6A69 796F 6F6E 로 출력\n> 224650164368: Bitcount 96 & 323234363530313634333638 로 출력\n\nLSB\n> jiyoon: Bitcount 48 & 6E6F 6F79 696A 로 출력\n> 224650164368: Bitcount 96 & 383633343631303536343232 로 출력\n",
-      "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount 출력\n\nMSB\n> Bitcount 32 & 01348a73 로 출력\n\nLSB\n> Bitcount 32 & 738a3401 로 출력\n",
-      "1. Iclass 카드는 PAC Data가 출력된다.\n> 기존과 동일",
-      "1. Iclass 카드는 PAC Data가 출력된다.\n> 기존과 동일",
-      "1. 발급된 Card ID가 설정된 Wiegand Format에 따라 출력된다.\n\n※ MSB일 때 카드ID: 133 2BF4\n> 설정 포맷 > 32bit인 경우 - 발급된 카드ID에서 설정된 포맷만큼 잘려서 출력\n> 설정 포맷 = 32bit인 경우 - 발급된 카드ID 그대로 출력\n> 설정 포맷 < 32bit인 경우 - 발급된 카드ID 그대로 출력",
-      "1. 발급된 Card ID의 LSB값이 설정된 Wiegand Format에 따라 출력된다.\n\n※ LSB인 경우 카드ID: F42B 3301\n> 설정 포맷 > 32bit인 경우 - 발급된 카드ID에서 설정된 포맷만큼 잘려서 출력\n> 설정 포맷 = 32bit인 경우 - 발급된 카드ID 그대로 출력\n> 설정 포맷 < 32bit인 경우 - 발급된 카드ID 그대로 출력",
-      "1. 발급된 Card ID가 설정된 Wiegand Format에 따라 출력된다.\n\n> MSB\n- jiyoon일 때, 6A 69 79 6F 6F 6E 에 대해 Wiegand Format에 맞게 출력된다.\n- 224650164368일 때, MBS 값인 323234363530313634333638에 대해 Wiegand Format에 맞게 출력된다.\n\n> LSB\n- jiyoon일 때, LSB 값인 6E 6F 6F 79 69 6A 에 대해 Wiegand Format에 맞게 출력된다.\n- 224650164368일 때, LSB 값인 383633343631303536343232 에 대해 Wiegand Format에 맞게 출력된다.",
-      "1. 발급된 Card ID의 값이 설정된 Wiegand Format에 따라 출력된다.\n\n>MSB\n01348a73 로 출력\n\n>LSB\n738a3401 로 출력",
-      "1. AOC: 발급된 Card ID(=User ID)가 출력된다.\n2. SCC: 발급된 Card ID가 등록된 User ID가 출력된다.\n\n> MSB/LSB 출력 확인",
-      "1. AOC: 발급된 Card ID(=User ID)가 출력된다.\n2. SCC: 발급된 Card ID가 등록된 User ID가 출력된다.\n\n> MSB/LSB 출력 확인",
-      "1. Iclass 카드는 PAC Data가 출력된다.\n> 기존과 동일",
-      "1. Iclass 카드는 PAC Data가 출력된다.\n> 기존과 동일",
-      "1. User ID의 경우도 Byte Order의 영향을 받는다.\n> 발급된 User ID로 출력된다.\n> 발급된 User ID 만큼의 BitCount로 출력\n",
-      "1. User ID의 경우도 Byte Order의 영향을 받는다.\n> 발급된 User ID의 LSB로 출력\n> 발급된 User ID의 LSB에 해당하는 만큼의 BitCount로 출력",
-      "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount로 출력\n=> BitCount 32 & 133 2BF4(=Dec 20130804)로 표시",
-      "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount로 출력\n=> BitCount 32 & F42B 3301(=Dec 4096471809)로 표시",
-      "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount 출력\n\nMSB\n> jiyoon: Bitcount 48 & 6A69 796F 6F6E 로 출력\n> 224650164368: Bitcount 96 & 323234363530313634333638 로 출력\n\nLSB\n> jiyoon: Bitcount 48 & 6E6F 6F79 696A 로 출력\n> 224650164368: Bitcount 96 & 383633343631303536343232 로 출력\n",
-      "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount 출력\n\nMSB\n> Bitcount 32 & 01348a73 로 출력\n\nLSB\n> Bitcount 32 & 738a3401 로 출력\n",
-      "1. Iclass 카드는 PAC Data가 출력된다.\n> 기존과 동일",
-      "1. Iclass 카드는 PAC Data가 출력된다.\n> 기존과 동일",
-      "1. User ID의 경우도 Byte Order의 영향을 받는다.\n> 발급된 User ID(MSB)로 출력된다.\n> 발급된 User ID 만큼의 BitCount로 출력\n\n",
-      "1. User ID의 경우도 Byte Order의 영향을 받는다.\n> 발급된 User ID(LSB)로 출력된다.\n> 발급된 User ID 만큼의 BitCount로 출력",
-      "1. User ID의 경우도 Byte Order의 영향을 받는다.\n> 발급된 User ID로 출력된다.\n\n\n\nMSB\n> jiyoon: Bitcount 48 & 6A69 796F 6F6E 로 출력\n> 224650164368: Bitcount 96 & 323234363530313634333638 로 출력\n\nLSB\n> jiyoon: Bitcount 48 & 6E6F 6F79 696A 로 출력\n> 224650164368: Bitcount 96 & 383633343631303536343232 로 출력",
-      "1. User ID의 경우도 Byte Order의 영향을 받는다.\n\nMSB\n> jiyoon: Bitcount 48 & 6A69 796F 6F6E 로 출력\n> 224650164368: Bitcount 96 & 323234363530313634333638 로 출력\n\nLSB\n> jiyoon: Bitcount 48 & 6E6F 6F79 696A 로 출력\n> 224650164368: Bitcount 96 & 383633343631303536343232 로 출력\n",
-      "1. User ID의 경우도 Byte Order의 영향을 받는다.\n> 발급된 User ID의 MSB로 출력\n> 발급된 User ID의 MSB에 해당하는 만큼의 BitCount로 출력\n",
-      "1. User ID의 경우도 Byte Order의 영향을 받는다.\n> 발급된 User ID의 LSB로 출력\n> 발급된 User ID의 LSB에 해당하는 만큼의 BitCount로 출력\n"
-    ]
+    "assignee": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 35.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-283/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@115e4856[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@1c81318f[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@292fd7f2[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@3c379611[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@63a45867[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@286fce0f[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@7fa81cb7[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@7faf8a4d[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@3e8992bf[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@68c02cd7[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@57b2d8dc[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@54ccdd85[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": "2021-10-29T10:31:29.000+0900",
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-283/watchers",
+      "watchCount": 1,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T10:34:28.000+0900",
+    "timeoriginalestimate": null,
+    "description": "BDP-511\r\n\r\nBioStar2 v2.8.16 에 해당기능 지원\r\n\r\n \r\n\r\n*1.1.1.3.2 iClass 카드들은 Out 되는 값을 Card ID 로 사용 시, byte order 설정에 영향을 받지 않으며 PAC data 그대로 출력한다.\r\n * 1.1.1.3.2.1 단, User ID 를 Out 값으로 설정 시, User ID 가 출력되고 byte order 설정에 영향을 받는다.",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. Device&gt; Card Type&gt; SmartCard<br/>2. Byte Order 설정UI 유무 확인</p></td><td></td><td><p>1. SmartCard의 Byte Order 설정 옵션이 추가된다.<br/>&gt; BS2CardConfig에 옵션추가<br/>&gt; Default/Master 모드에서 지원</p>\n\n<p>+ <a href=\"https://jira.suprema.co.kr/browse/BDP-880\" title=\"TCP/IP 로 연결된 장치의 RS-485 모드가 Slave 일 때도, Capability 를 전송하기\" class=\"issue-link\" data-issue-key=\"BDP-880\"><del>BDP-880</del></a> Slave 모드 지원</p></td></tr><tr><td>2</td><td><p><span class=\"error\">&#91;장치의 RS485 모드: Default/Master&#93;</span><br/>1. Device&gt; Card Type&gt; SmartCard<br/>2. Byte Order 설정<br/>3. SmartCard Write</p></td><td><p>Byte Order<br/>&gt; MSB<br/>&gt; LSB</p>\n\n<p>SmartCard Write<br/>&gt; AOC<br/>&gt; SCC</p></td><td><p>1. Byte Order 설정과 무관하게 기존 방식대로 Write된다.<br/>&gt; 발급할 Card ID 12345 -&gt; 12345로 발급</p></td></tr><tr><td>3</td><td><p><span class=\"error\">&#91;RS485 구성 &amp; SmartCard Layout 설정된 상태&#93;</span><br/>1. 사용자&gt; +Card&gt; Card Type: Read Card<br/>2. Device 선택 후 Read Card<br/>3. 읽히는 값 확인</p></td><td><p>Byte Order<br/>&gt; MSB / LSB</p>\n\n<p>Device<br/>&gt; Master/ Slave</p>\n\n<p>SmartCard<br/>&gt; AOC / SCC</p></td><td><p>1. 발급한 값으로 리드된다.<br/>&gt; Byte Order의 영향을 받지 않는다.</p></td></tr><tr><td>4</td><td><p><span class=\"error\">&#91;RS485 구성&#93;</span><br/>1. Device(=Master)&gt; Card Type&gt; SmartCard<br/>2. Byte Order: MSB 설정<br/>3. Device 선택 후 SmartCard Read<br/>4. 출력되는 값 확인</p></td><td><p>SmartCard - AOC/SCC<br/>&gt; Mifare - Classic/Plus, DesFire/DesFire EV1</p>\n\n<p>Device<br/>&gt; Master/Slave</p></td><td><p>1. 발급된 Card ID로 출력된다.<br/>&gt; Master/Slave 모두 동일</p></td></tr><tr><td>5</td><td><p><span class=\"error\">&#91;RS485 구성&#93;</span><br/>1. Device(=Master)&gt; Card Type&gt; SmartCard<br/>2. Byte Order: LSB 설정<br/>3. Device 선택 후 SmartCard Read<br/>4. 출력되는 값 확인</p></td><td><p>SmartCard - AOC/SCC<br/>&gt; Mifare - Classic/Plus, DesFire/DesFire EV1</p>\n\n<p>Device<br/>&gt; Master/Slave</p></td><td><p>1. 발급된 Card ID로 출력된다.<br/>&gt; Master/Slave 모두 동일</p></td></tr><tr><td>6</td><td><p><span class=\"error\">&#91;RS485 구성&#93;</span><br/>1. Device(=Master)&gt; Card Type&gt; SmartCard<br/>2. Byte Order: MSB 설정<br/>3. Device 선택 후 SmartCard Read<br/>4. 출력되는 값 확인</p></td><td><p>SmartCard - AOC/SCC<br/>&gt; Iclass - SR/SE, SEOS</p>\n\n<p>Device<br/>&gt; Master/Slave</p></td><td><p>1. 발급된 Card ID로 출력된다.<br/>&gt; Master/Slave 모두 동일</p></td></tr><tr><td>7</td><td><p><span class=\"error\">&#91;RS485 구성&#93;</span><br/>1. Device(=Master)&gt; Card Type&gt; SmartCard<br/>2. Byte Order: LSB 설정<br/>3. Device 선택 후 SmartCard Read<br/>4. 출력되는 값 확인</p></td><td><p>SmartCard - AOC/SCC<br/>&gt; Iclass - SR/SE, SEOS</p>\n\n<p>Device<br/>&gt; Master/Slave</p></td><td><p>1. 발급된 Card ID로 출력된다.<br/>&gt; Master/Slave 모두 동일</p></td></tr><tr><td>8</td><td><p><span class=\"error\">&#91;OSDP Tool과 연결&#93;</span><br/>1. Device&gt; Card Type&gt; SmartCard<br/>2. Byte Order: MSB 설정<br/>3. SmartCard Read<br/>4. OSDP Tool에 출력되는 값 확인</p></td><td><p>OSDP로 연결된 장치<br/>&gt; Slave 모드</p>\n\n<p>SmartCard - AOC/SCC(숫자모드에서 발급)<br/>&gt; Mifare - Classic/Plus, DesFire/DesFire EV1<br/>&gt; ex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)</p></td><td><p>1. 발급된 Card ID로 출력된다.<br/>&gt; 발급된 Card ID만큼의 BitCount로 출력<br/>=&gt; BitCount 32 &amp; 133 2BF4(=Dec 20130804)로 표시</p></td></tr><tr><td>9</td><td><p><span class=\"error\">&#91;OSDP Tool과 연결&#93;</span><br/>1. Device&gt; Card Type&gt; SmartCard<br/>2. Byte Order: LSB 설정<br/>3. SmartCard Read<br/>4. OSDP Tool에 출력되는 값 확인</p></td><td><p>OSDP로 연결된 장치<br/>&gt; Slave 모드</p>\n\n<p>SmartCard - AOC/SCC<br/>&gt; Mifare - Classic/Plus, DesFire/DesFire EV1<br/>&gt; ex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)</p></td><td><p>1. 발급된 Card ID가 LSB로 출력된다.<br/>&gt; 발급된 Card ID만큼의 BitCount로 출력<br/>=&gt; BitCount 32 &amp; F42B 3301(=Dec 4096471809)로 표시</p></td></tr><tr><td>10</td><td><p><span class=\"error\">&#91;OSDP Tool과 연결&#93;</span></p>\n\n<p>1. Device&gt; Card Type&gt; SmartCard<br/>2. SmartCard Byte Order 설정<br/>3. SmartCard Read<br/>4. OSDP Tool에 출력되는 값 확인</p></td><td><p>OSDP로 연결된 장치<br/>&gt; Slave 모드</p>\n\n<p>Smart Card Byte Order<br/>&gt; MSB/LSB</p>\n\n<p>SmartCard - AOC(영숫자모드에서 발급-숫자ID/영숫자ID)<br/>&gt; Mifare - Classic/Plus, DesFire/DesFire EV1<br/>&gt; ex. 발급한 Card ID - jiyoon(= 6A 69 79 6F 6F 6E 00 00 00 .... 00)<br/>&gt; ex. 발급한 Card ID - 224650164368(= 323234363530313634333638)</p></td><td><p>1. 발급된 Card ID로 출력된다.<br/>&gt; 발급된 Card ID만큼의 BitCount 출력</p>\n\n<p>MSB<br/>&gt; jiyoon: Bitcount 48 &amp; 6A69 796F 6F6E 로 출력<br/>&gt; 224650164368: Bitcount 96 &amp; 323234363530313634333638 로 출력</p>\n\n<p>LSB<br/>&gt; jiyoon: Bitcount 48 &amp; 6E6F 6F79 696A 로 출력<br/>&gt; 224650164368: Bitcount 96 &amp; 383633343631303536343232 로 출력</p></td></tr><tr><td>11</td><td><p><span class=\"error\">&#91;OSDP Tool과 연결&#93;</span></p>\n\n<p>1. Device&gt; Card Type&gt; SmartCard<br/>2. SmartCard Byte Order 설정<br/>3. SmartCard Read<br/>4. OSDP Tool에 출력되는 값 확인</p></td><td><p>OSDP로 연결된 장치<br/>&gt; Slave 모드</p>\n\n<p>Smart Card Byte Order<br/>&gt; MSB/LSB</p>\n\n<p>SmartCard - SCC(영숫자모드에서 발급-숫자ID)<br/>&gt; Mifare - Classic/Plus, DesFire/DesFire EV1</p>\n\n<p>&gt; ex. 발급한 Card ID - 20220531(=Hex. 01348a73)</p></td><td><p>1. 발급된 Card ID로 출력된다.<br/>&gt; 발급된 Card ID만큼의 BitCount 출력</p>\n\n<p>MSB<br/>&gt; Bitcount 32 &amp; 01348a73 로 출력</p>\n\n<p>LSB<br/>&gt; Bitcount 32 &amp; 738a3401 로 출력</p></td></tr><tr><td>12</td><td><p><span class=\"error\">&#91;OSDP Tool과 연결&#93;</span><br/>1. Device&gt; Card Type&gt; SmartCard<br/>2. Byte Order: MSB 설정<br/>3. SmartCard Read<br/>4. OSDP Tool에 출력되는 값 확인</p></td><td><p>OSDP로 연결된 장치<br/>&gt; Slave 모드</p>\n\n<p>SmartCard - AOC/SCC<br/>&gt; Iclass - SR/SE, SEOS</p></td><td><p>1. Iclass 카드는 PAC Data가 출력된다.<br/>&gt; 기존과 동일</p></td></tr><tr><td>13</td><td><p><span class=\"error\">&#91;OSDP Tool과 연결&#93;</span><br/>1. Device&gt; Card Type&gt; SmartCard<br/>2. Byte Order: LSB 설정<br/>3. SmartCard Read<br/>4. OSDP Tool에 출력되는 값 확인</p></td><td><p>OSDP로 연결된 장치<br/>&gt; Slave 모드</p>\n\n<p>SmartCard - AOC/SCC<br/>&gt; Iclass - SR/SE, SEOS</p></td><td><p>1. Iclass 카드는 PAC Data가 출력된다.<br/>&gt; 기존과 동일</p></td></tr><tr><td>14</td><td><p><span class=\"error\">&#91;Wiegand Reader로 연결&#93;</span><br/>1. Wiegand Reader로 연결된 Device&gt; Card Type&gt; SmartCard<br/>2. Byte Order: MSB 설정<br/>3. 위겐드 리더로 연결된 SmartCard Read</p></td><td><p>SmartCard - AOC/SCC(숫자모드에서 발급)<br/> &gt; Mifare - Classic/Plus, DesFire/DesFire EV1<br/>ex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)</p>\n\n<p>CSN Wiegand Format<br/> &gt; Default로 지원되는 Format<br/> &gt; Custom으로 생성한 Format</p>\n\n<p> <del>Wiegand Output Mode</del><br/> <del>&gt; Normal</del></p>\n\n<p>Wiegand Output Info<br/> &gt; Card ID</p></td><td><p>1. 발급된 Card ID가 설정된 Wiegand Format에 따라 출력된다.</p>\n\n<p>※ MSB일 때 카드ID: 133 2BF4<br/>&gt; 설정 포맷 &gt; 32bit인 경우 - 발급된 카드ID에서 설정된 포맷만큼 잘려서 출력<br/>&gt; 설정 포맷 = 32bit인 경우 - 발급된 카드ID 그대로 출력<br/>&gt; 설정 포맷 &lt; 32bit인 경우 - 발급된 카드ID 그대로 출력</p></td></tr><tr><td>15</td><td><p><span class=\"error\">&#91;Wiegand Reader로 연결&#93;</span><br/>1. Wiegand Reader로 연결된 Device&gt; Card Type&gt; SmartCard<br/>2. Byte Order: LSB 설정<br/>3. SmartCard Read</p></td><td><p>SmartCard - AOC/SCC(숫자모드에서 발급)<br/> &gt; Mifare - Classic/Plus, DesFire/DesFire EV1<br/>ex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)</p>\n\n\n<p>CSN Wiegand Format<br/> &gt; Default로 지원되는 Format<br/> &gt; Custom으로 생성한 Format</p>\n\n<p><del>Wiegand Output Mode</del><br/> <del>&gt; Normal</del></p>\n\n<p>Wiegand Output Info<br/> &gt; Card ID</p></td><td><p>1. 발급된 Card ID의 LSB값이 설정된 Wiegand Format에 따라 출력된다.</p>\n\n<p>※ LSB인 경우 카드ID: F42B 3301<br/>&gt; 설정 포맷 &gt; 32bit인 경우 - 발급된 카드ID에서 설정된 포맷만큼 잘려서 출력<br/>&gt; 설정 포맷 = 32bit인 경우 - 발급된 카드ID 그대로 출력<br/>&gt; 설정 포맷 &lt; 32bit인 경우 - 발급된 카드ID 그대로 출력</p></td></tr><tr><td>16</td><td><p><span class=\"error\">&#91;Wiegand Reader로 연결&#93;</span><br/>1. Wiegand Reader로 연결된 Device&gt; Card Type&gt; SmartCard<br/>2. SmartCard Byte Order 설정<br/>3. 위겐드 리더로 연결된 SmartCard Read</p></td><td><p>Smart Card Byte Order<br/>&gt; MSB/LSB</p>\n\n<p>SmartCard - AOC(영숫자모드에서 발급-숫자ID/영숫자ID)<br/>&gt; Mifare - Classic/Plus, DesFire/DesFire EV1<br/>&gt; ex. 발급한 Card ID - jiyoon(= 6A 69 79 6F 6F 6E 00 00 00 .... 00)<br/>&gt; ex. 발급한 Card ID - 224650164368(= 323234363530313634333638)</p>\n\n<p>CSN Wiegand Format<br/>&gt; Default로 지원되는 Format<br/>&gt; Custom으로 생성한 Format</p>\n\n<p>-Wiegand Output Mode<br/><del>&gt; Bypass</del></p>\n\n<p>Wiegand Output Info<br/>&gt; Card ID</p></td><td><p>1. 발급된 Card ID가 설정된 Wiegand Format에 따라 출력된다.</p>\n\n<p>&gt; MSB</p>\n<ul class=\"alternate\" type=\"square\">\n<li>jiyoon일 때, 6A 69 79 6F 6F 6E 에 대해 Wiegand Format에 맞게 출력된다.</li>\n<li>224650164368일 때, MBS 값인 323234363530313634333638에 대해 Wiegand Format에 맞게 출력된다.</li>\n</ul>\n\n\n<p>&gt; LSB</p>\n<ul class=\"alternate\" type=\"square\">\n<li>jiyoon일 때, LSB 값인 6E 6F 6F 79 69 6A 에 대해 Wiegand Format에 맞게 출력된다.</li>\n<li>224650164368일 때, LSB 값인 383633343631303536343232 에 대해 Wiegand Format에 맞게 출력된다.</li>\n</ul>\n</td></tr><tr><td>17</td><td><p><span class=\"error\">&#91;Wiegand Reader로 연결&#93;</span><br/>1. Wiegand Reader로 연결된 Device&gt; Card Type&gt; SmartCard<br/>2. SmartCard Byte Order 설정<br/>3. SmartCard Read</p></td><td><p>Smart Card Byte Order<br/>&gt; MSB/LSB</p>\n\n<p>SmartCard - SCC(영숫자모드에서 발급-숫자ID)<br/>&gt; Mifare - Classic/Plus, DesFire/DesFire EV1<br/>&gt; ex. 발급한 Card ID - 20220531(=Hex. 01348a73)</p>\n\n<p>CSN Wiegand Format<br/>&gt; Default로 지원되는 Format<br/>&gt; Custom으로 생성한 Format</p>\n\n<p>-Wiegand Output Mode<br/><del>&gt; Bypass</del></p>\n\n<p>Wiegand Output Info<br/>&gt; Card ID</p></td><td><p>1. 발급된 Card ID의 값이 설정된 Wiegand Format에 따라 출력된다.</p>\n\n<p>&gt;MSB<br/>01348a73 로 출력</p>\n\n<p>&gt;LSB<br/>738a3401 로 출력</p></td></tr><tr><td>18</td><td><p><span class=\"error\">&#91;Wiegand Reader로 연결&#93;</span><br/>1. Wiegand Reader로 연결된 Device&gt; Card Type&gt; SmartCard<br/>2. Byte Order: MSB 설정<br/>3. 위겐드 리더로 연결된 SmartCard Read</p></td><td><p>SmartCard - AOC/SCC<br/>&gt; Mifare - Classic/Plus, DesFire/DesFire EV1</p>\n\n<p>Wiegand Output Info<br/>&gt; User ID</p></td><td><p>1. AOC: 발급된 Card ID(=User ID)가 출력된다.<br/>2. SCC: 발급된 Card ID가 등록된 User ID가 출력된다.</p>\n\n<p>&gt; MSB/LSB 출력 확인</p></td></tr><tr><td>19</td><td><p><span class=\"error\">&#91;Wiegand Reader로 연결&#93;</span><br/>1. Wiegand Reader로 연결된 Device&gt; Card Type&gt; SmartCard<br/>2. Byte Order: LSB 설정<br/>3. SmartCard Read</p></td><td><p>SmartCard - AOC/SCC<br/>&gt; Mifare - Classic/Plus, DesFire/DesFire EV1</p>\n\n<p>Wiegand Output Info<br/>&gt; User ID</p></td><td><p>1. AOC: 발급된 Card ID(=User ID)가 출력된다.<br/>2. SCC: 발급된 Card ID가 등록된 User ID가 출력된다.</p>\n\n<p>&gt; MSB/LSB 출력 확인</p></td></tr><tr><td>20</td><td><p><span class=\"error\">&#91;Wiegand Reader로 연결&#93;</span><br/>1. Wiegand Reader로 연결된 Device&gt; Card Type&gt; SmartCard<br/>2. Byte Order: MSB 설정<br/>3. SmartCard Read</p></td><td><p>SmartCard - AOC/SCC<br/>&gt; Iclass - SR/SE, SEOS</p>\n\n<p>Wiegand Output Info<br/>&gt; Card ID</p></td><td><p>1. Iclass 카드는 PAC Data가 출력된다.<br/>&gt; 기존과 동일</p></td></tr><tr><td>21</td><td><p><span class=\"error\">&#91;Wiegand Reader로 연결&#93;</span><br/>1. Wiegand Reader로 연결된 Device&gt; Card Type&gt; SmartCard<br/>2. Byte Order: LSB 설정<br/>3. SmartCard Read</p></td><td><p>SmartCard - AOC/SCC<br/>&gt; Iclass - SR/SE, SEOS</p>\n\n<p>Wiegand Output Info<br/>&gt; Card ID</p></td><td><p>1. Iclass 카드는 PAC Data가 출력된다.<br/>&gt; 기존과 동일</p></td></tr><tr><td>22</td><td><p><span class=\"error\">&#91;Wiegand Reader로 연결&#93;</span><br/>1. Wiegand Reader로 연결된 Device&gt; Card Type&gt; SmartCard<br/>2. Byte Order: MSB 설정<br/>3. SmartCard Read</p></td><td><p>SmartCard - AOC/SCC<br/>&gt; Iclass - SR/SE, SEOS</p>\n\n<p>Wiegand Output Info<br/>&gt; User ID</p></td><td><p>1. User ID의 경우도 Byte Order의 영향을 받는다.<br/>&gt; 발급된 User ID로 출력된다.<br/>&gt; 발급된 User ID 만큼의 BitCount로 출력</p></td></tr><tr><td>23</td><td><p><span class=\"error\">&#91;Wiegand Reader로 연결&#93;</span><br/>1. Wiegand Reader로 연결된 Device&gt; Card Type&gt; SmartCard<br/>2. Byte Order: LSB 설정<br/>3. SmartCard Read</p></td><td><p>SmartCard - AOC/SCC<br/>&gt; Iclass - SR/SE, SEOS</p>\n\n<p>Wiegand Output Info<br/>&gt; User ID</p></td><td><p>1. User ID의 경우도 Byte Order의 영향을 받는다.<br/>&gt; 발급된 User ID의 LSB로 출력<br/>&gt; 발급된 User ID의 LSB에 해당하는 만큼의 BitCount로 출력</p></td></tr><tr><td>24</td><td><p><span class=\"error\">&#91;OSDP Tool과 연결&#93;</span><br/>1. Device&gt; Card Type&gt; SmartCard<br/>2. Byte Order: MSB 설정<br/>3. SmartCard Read<br/>4. OSDP Tool에 출력되는 값 확인</p></td><td><p>OSDP로 연결된 장치<br/>&gt; Default 모드<br/>&gt; Output info - Card ID</p>\n\n<p>SmartCard - AOC/SCC(숫자모드에서 발급)<br/>&gt; Mifare - Classic/Plus, DesFire/DesFire EV1<br/>&gt; ex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)</p></td><td><p>1. 발급된 Card ID로 출력된다.<br/>&gt; 발급된 Card ID만큼의 BitCount로 출력<br/>=&gt; BitCount 32 &amp; 133 2BF4(=Dec 20130804)로 표시</p></td></tr><tr><td>25</td><td><p><span class=\"error\">&#91;OSDP Tool과 연결&#93;</span><br/>1. Device&gt; Card Type&gt; SmartCard<br/>2. Byte Order: LSB 설정<br/>3. SmartCard Read<br/>4. OSDP Tool에 출력되는 값 확인</p></td><td><p>OSDP로 연결된 장치<br/>&gt; Default 모드<br/>&gt; Output info - Card ID</p>\n\n<p>SmartCard - AOC/SCC<br/>&gt; Mifare - Classic/Plus, DesFire/DesFire EV1<br/>&gt; ex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)</p></td><td><p>1. 발급된 Card ID로 출력된다.<br/>&gt; 발급된 Card ID만큼의 BitCount로 출력<br/>=&gt; BitCount 32 &amp; F42B 3301(=Dec 4096471809)로 표시</p></td></tr><tr><td>26</td><td><p><span class=\"error\">&#91;OSDP Tool과 연결&#93;</span><br/>1. Device&gt; Card Type&gt; SmartCard<br/>2. SmartCard Byte Order 설정<br/>3. SmartCard Read<br/>4. OSDP Tool에 출력되는 값 확인</p></td><td><p>OSDP로 연결된 장치<br/>&gt; Default 모드<br/>&gt; Output info - Card ID</p>\n\n<p>Smart Card Byte Order<br/>&gt; MSB/LSB</p>\n\n<p>SmartCard - AOC(영숫자모드에서 발급-숫자ID/영숫자ID)<br/>&gt; Mifare - Classic/Plus, DesFire/DesFire EV1<br/>&gt; ex. 발급한 Card ID - jiyoon(= 6A 69 79 6F 6F 6E 00 00 00 .... 00)<br/>&gt; ex. 발급한 Card ID - 224650164368(= 323234363530313634333638)</p></td><td><p>1. 발급된 Card ID로 출력된다.<br/>&gt; 발급된 Card ID만큼의 BitCount 출력</p>\n\n<p>MSB<br/>&gt; jiyoon: Bitcount 48 &amp; 6A69 796F 6F6E 로 출력<br/>&gt; 224650164368: Bitcount 96 &amp; 323234363530313634333638 로 출력</p>\n\n<p>LSB<br/>&gt; jiyoon: Bitcount 48 &amp; 6E6F 6F79 696A 로 출력<br/>&gt; 224650164368: Bitcount 96 &amp; 383633343631303536343232 로 출력</p></td></tr><tr><td>27</td><td><p><span class=\"error\">&#91;OSDP Tool과 연결&#93;</span></p>\n\n<p>1. Device&gt; Card Type&gt; SmartCard<br/>2. SmartCard Byte Order 설정<br/>3. SmartCard Read<br/>4. OSDP Tool에 출력되는 값 확인</p></td><td><p>OSDP로 연결된 장치<br/>&gt; Default 모드<br/>&gt; Output info - Card ID</p>\n\n<p>Smart Card Byte Order<br/>&gt; MSB/LSB</p>\n\n<p>SmartCard - SCC(영숫자모드에서 발급-숫자ID)<br/>&gt; Mifare - Classic/Plus, DesFire/DesFire EV1</p>\n\n<p>&gt; ex. 발급한 Card ID - 20220531(=Hex. 01348a73)</p></td><td><p>1. 발급된 Card ID로 출력된다.<br/>&gt; 발급된 Card ID만큼의 BitCount 출력</p>\n\n<p>MSB<br/>&gt; Bitcount 32 &amp; 01348a73 로 출력</p>\n\n<p>LSB<br/>&gt; Bitcount 32 &amp; 738a3401 로 출력</p></td></tr><tr><td>28</td><td><p><span class=\"error\">&#91;OSDP Tool과 연결&#93;</span><br/>1. Device&gt; Card Type&gt; SmartCard<br/>2. Byte Order: MSB 설정<br/>3. SmartCard Read<br/>4. OSDP Tool에 출력되는 값 확인</p></td><td><p>OSDP로 연결된 장치<br/>&gt; Default 모드<br/>&gt; Output info - Card ID</p>\n\n<p>SmartCard - AOC/SCC<br/>&gt; Iclass - SR/SE, SEOS</p></td><td><p>1. Iclass 카드는 PAC Data가 출력된다.<br/>&gt; 기존과 동일</p></td></tr><tr><td>29</td><td><p><span class=\"error\">&#91;OSDP Tool과 연결&#93;</span><br/>1. Device&gt; Card Type&gt; SmartCard<br/>2. Byte Order: LSB 설정<br/>3. SmartCard Read<br/>4. OSDP Tool에 출력되는 값 확인</p></td><td><p>OSDP로 연결된 장치<br/>&gt; Default 모드<br/>&gt; Output info - Card ID</p>\n\n<p>SmartCard - AOC/SCC<br/>&gt; Iclass - SR/SE, SEOS</p></td><td><p>1. Iclass 카드는 PAC Data가 출력된다.<br/>&gt; 기존과 동일</p></td></tr><tr><td>30</td><td><p><span class=\"error\">&#91;OSDP Tool과 연결&#93;</span><br/>1. Device&gt; Card Type&gt; SmartCard<br/>2. Byte Order: MSB 설정<br/>3. SmartCard Read<br/>4. OSDP Tool에 출력되는 값 확인</p></td><td><p>OSDP로 연결된 장치<br/> &gt; Default 모드<br/> &gt; Output info - User ID(숫자ID)</p>\n\n<p>SmartCard - AOC/SCC<br/>&gt; Mifare - Classic/Plus, DesFire/DesFire EV1</p>\n\n<p>발급된 User ID<br/> &gt; 1Byte로 발급<br/> &gt; 최대(=32Byte)로 발급</p></td><td><p>1. User ID의 경우도 Byte Order의 영향을 받는다.<br/>&gt; 발급된 User ID(MSB)로 출력된다.<br/>&gt; 발급된 User ID 만큼의 BitCount로 출력</p>\n</td></tr><tr><td>31</td><td><p><span class=\"error\">&#91;OSDP Tool과 연결&#93;</span></p>\n\n<p>1. Device&gt; Card Type&gt; SmartCard<br/>2. Byte Order: LSB설정<br/>3. SmartCard Read<br/>4. OSDP Tool에 출력되는 값 확인</p></td><td><p>OSDP로 연결된 장치<br/>&gt; Default 모드<br/>&gt; Output info - User ID(숫자ID)</p>\n\n<p>SmartCard - AOC/SCC<br/>&gt; Mifare - Classic/Plus, DesFire/DesFire EV1</p>\n\n<p>발급된 User ID<br/>&gt; 1Byte로 발급<br/>&gt; 최대(=32Byte)로 발급</p></td><td><p>1. User ID의 경우도 Byte Order의 영향을 받는다.<br/>&gt; 발급된 User ID(LSB)로 출력된다.<br/>&gt; 발급된 User ID 만큼의 BitCount로 출력</p></td></tr><tr><td>32</td><td><p><span class=\"error\">&#91;OSDP Tool과 연결&#93;</span><br/>1. Device&gt; Card Type&gt; SmartCard<br/>2. Byte Order: MSB/LSB 설정<br/>3. SmartCard Read<br/>4. OSDP Tool에 출력되는 값 확인</p></td><td><p>OSDP로 연결된 장치<br/> &gt; Default 모드<br/> &gt; Output info - User ID(영숫자ID-숫자,영숫자)</p>\n\n<p>SmartCard - AOC/SCC<br/>&gt; Mifare - Classic/Plus, DesFire/DesFire EV1</p>\n\n<p>SmartCard - AOC(영숫자모드에서 발급-숫자ID/영숫자ID)<br/>&gt; ex. 발급한 Card ID - jiyoon(= 6A 69 79 6F 6F 6E 00 00 00 .... 00)<br/>&gt; ex. 발급한 Card ID - 224650164368(= 323234363530313634333638)</p>\n\n\n\n<p>SmartCard - SCC(영숫자모드에서 발급-숫자ID/영숫자ID)<br/>&gt; ex. 발급한 User ID - jiyoon(= 6A 69 79 6F 6F 6E 00 00 00 .... 00)/Card ID - 1<br/>&gt; ex. 발급한 User ID - 224650164368(= 323234363530313634333638)/Card ID - 1</p></td><td><p>1. User ID의 경우도 Byte Order의 영향을 받는다.<br/>&gt; 발급된 User ID로 출력된다.</p>\n\n\n\n<p>MSB<br/>&gt; jiyoon: Bitcount 48 &amp; 6A69 796F 6F6E 로 출력<br/>&gt; 224650164368: Bitcount 96 &amp; 323234363530313634333638 로 출력</p>\n\n<p>LSB<br/>&gt; jiyoon: Bitcount 48 &amp; 6E6F 6F79 696A 로 출력<br/>&gt; 224650164368: Bitcount 96 &amp; 383633343631303536343232 로 출력</p></td></tr><tr><td>33</td><td><p><span class=\"error\">&#91;OSDP Tool과 연결&#93;</span></p>\n\n<p>1. Device&gt; Card Type&gt; SmartCard<br/>2. Byte Order: MSB/LSB 설정<br/>3. SmartCard Read<br/>4. OSDP Tool에 출력되는 값 확인</p></td><td><p>OSDP로 연결된 장치<br/>&gt; Default 모드<br/>&gt; Output info - User ID(영숫자ID-숫자,영숫자)</p>\n\n<p>SmartCard - AOC/SCC<br/>&gt; Iclass - SR/SE, SEOS</p>\n\n<p>SmartCard - AOC(영숫자모드에서 발급-숫자ID/영숫자ID)<br/>&gt; ex. 발급한 Card ID - jiyoon(= 6A 69 79 6F 6F 6E 00 00 00 .... 00)<br/>&gt; ex. 발급한 Card ID - 224650164368(= 323234363530313634333638)</p>\n\n\n\n<p>SmartCard - SCC(영숫자모드에서 발급-숫자ID/영숫자ID)<br/>&gt; ex. 발급한 User ID - jiyoon(= 6A 69 79 6F 6F 6E 00 00 00 .... 00)/Card ID - 1<br/>&gt; ex. 발급한 User ID - 224650164368(= 323234363530313634333638)/Card ID - 1</p></td><td><p>1. User ID의 경우도 Byte Order의 영향을 받는다.</p>\n\n<p>MSB<br/>&gt; jiyoon: Bitcount 48 &amp; 6A69 796F 6F6E 로 출력<br/>&gt; 224650164368: Bitcount 96 &amp; 323234363530313634333638 로 출력</p>\n\n<p>LSB<br/>&gt; jiyoon: Bitcount 48 &amp; 6E6F 6F79 696A 로 출력<br/>&gt; 224650164368: Bitcount 96 &amp; 383633343631303536343232 로 출력</p></td></tr><tr><td>34</td><td><p><span class=\"error\">&#91;OSDP Tool과 연결&#93;</span><br/>1. Device&gt; Card Type&gt; SmartCard<br/>2. Byte Order: MSB 설정<br/>3. SmartCard Read<br/>4. OSDP Tool에 출력되는 값 확인</p></td><td><p>OSDP로 연결된 장치<br/>&gt; Default 모드<br/>&gt; Output info - User ID(숫자ID)</p>\n\n<p>SmartCard - AOC/SCC<br/>&gt; Iclass - SR/SE, SEOS</p>\n\n<p>발급된 User ID<br/>&gt; 1Byte로 발급<br/>&gt; 최대(=32Byte)로 발급</p></td><td><p>1. User ID의 경우도 Byte Order의 영향을 받는다.<br/>&gt; 발급된 User ID의 MSB로 출력<br/>&gt; 발급된 User ID의 MSB에 해당하는 만큼의 BitCount로 출력</p></td></tr><tr><td>35</td><td><p><span class=\"error\">&#91;OSDP Tool과 연결&#93;</span><br/>1. Device&gt; Card Type&gt; SmartCard<br/>2. Byte Order: LSB 설정<br/>3. SmartCard Read<br/>4. OSDP Tool에 출력되는 값 확인</p></td><td><p>OSDP로 연결된 장치<br/>&gt; Default 모드<br/>&gt; Output info - User ID(숫자ID)</p>\n\n<p>SmartCard - AOC/SCC<br/>&gt; Iclass - SR/SE, SEOS</p>\n\n<p>발급된 User ID<br/>&gt; 1Byte로 발급<br/>&gt; 최대(=32Byte)로 발급</p></td><td><p>1. User ID의 경우도 Byte Order의 영향을 받는다.<br/>&gt; 발급된 User ID의 LSB로 출력<br/>&gt; 발급된 User ID의 LSB에 해당하는 만큼의 BitCount로 출력</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [],
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 45645,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 34737,
+              "latestFinalId": 34737
+            },
+            {
+              "environment": "ES1",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29870,
+              "latestFinalId": 29870
+            },
+            {
+              "environment": "BioStarV2.9.6.30",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29870,
+              "latestFinalId": 29870
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "Smartcard byte order 설정",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 14426,
+          "index": 1,
+          "step": "1. Device> Card Type> SmartCard\n2. Byte Order 설정UI 유무 확인",
+          "data": "",
+          "result": "1. SmartCard의 Byte Order 설정 옵션이 추가된다.\n> BS2CardConfig에 옵션추가\n> Default/Master 모드에서 지원\n\n+ BDP-880 Slave 모드 지원",
+          "attachments": []
+        },
+        {
+          "id": 14427,
+          "index": 2,
+          "step": "[장치의 RS485 모드: Default/Master]\n1. Device> Card Type> SmartCard\n2. Byte Order 설정\n3. SmartCard Write",
+          "data": "Byte Order\n> MSB\n> LSB\n\nSmartCard Write\n> AOC\n> SCC",
+          "result": "1. Byte Order 설정과 무관하게 기존 방식대로 Write된다.\n> 발급할 Card ID 12345 -> 12345로 발급",
+          "attachments": []
+        },
+        {
+          "id": 14459,
+          "index": 3,
+          "step": "[RS485 구성 & SmartCard Layout 설정된 상태]\n1. 사용자> +Card> Card Type: Read Card\n2. Device 선택 후 Read Card\n3. 읽히는 값 확인",
+          "data": "Byte Order\n> MSB / LSB\n\nDevice\n> Master/ Slave\n\nSmartCard\n> AOC / SCC",
+          "result": "1. 발급한 값으로 리드된다.\n> Byte Order의 영향을 받지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 14428,
+          "index": 4,
+          "step": "[RS485 구성]\n1. Device(=Master)> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. Device 선택 후 SmartCard Read\n4. 출력되는 값 확인",
+          "data": "SmartCard - AOC/SCC\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n\nDevice\n> Master/Slave",
+          "result": "1. 발급된 Card ID로 출력된다.\n> Master/Slave 모두 동일",
+          "attachments": []
+        },
+        {
+          "id": 14429,
+          "index": 5,
+          "step": "[RS485 구성]\n1. Device(=Master)> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. Device 선택 후 SmartCard Read\n4. 출력되는 값 확인",
+          "data": "SmartCard - AOC/SCC\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n\nDevice\n> Master/Slave",
+          "result": "1. 발급된 Card ID로 출력된다.\n> Master/Slave 모두 동일",
+          "attachments": []
+        },
+        {
+          "id": 14430,
+          "index": 6,
+          "step": "[RS485 구성]\n1. Device(=Master)> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. Device 선택 후 SmartCard Read\n4. 출력되는 값 확인",
+          "data": "SmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n\nDevice\n> Master/Slave",
+          "result": "1. 발급된 Card ID로 출력된다.\n> Master/Slave 모두 동일",
+          "attachments": []
+        },
+        {
+          "id": 14431,
+          "index": 7,
+          "step": "[RS485 구성]\n1. Device(=Master)> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. Device 선택 후 SmartCard Read\n4. 출력되는 값 확인",
+          "data": "SmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n\nDevice\n> Master/Slave",
+          "result": "1. 발급된 Card ID로 출력된다.\n> Master/Slave 모두 동일",
+          "attachments": []
+        },
+        {
+          "id": 14455,
+          "index": 8,
+          "step": "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
+          "data": "OSDP로 연결된 장치\n> Slave 모드\n\nSmartCard - AOC/SCC(숫자모드에서 발급)\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n> ex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)",
+          "result": "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount로 출력\n=> BitCount 32 & 133 2BF4(=Dec 20130804)로 표시",
+          "attachments": []
+        },
+        {
+          "id": 14456,
+          "index": 9,
+          "step": "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
+          "data": "OSDP로 연결된 장치\n> Slave 모드\n\nSmartCard - AOC/SCC\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n> ex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)",
+          "result": "1. 발급된 Card ID가 LSB로 출력된다.\n> 발급된 Card ID만큼의 BitCount로 출력\n=> BitCount 32 & F42B 3301(=Dec 4096471809)로 표시",
+          "attachments": []
+        },
+        {
+          "id": 14622,
+          "index": 10,
+          "step": "[OSDP Tool과 연결]\n\n1. Device> Card Type> SmartCard\n2. SmartCard Byte Order 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
+          "data": "OSDP로 연결된 장치\n> Slave 모드\n\nSmart Card Byte Order\n> MSB/LSB\n\nSmartCard - AOC(영숫자모드에서 발급-숫자ID/영숫자ID)\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n> ex. 발급한 Card ID - jiyoon(= 6A 69 79 6F 6F 6E 00 00 00 .... 00)\n> ex. 발급한 Card ID - 224650164368(= 323234363530313634333638)",
+          "result": "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount 출력\n\nMSB\n> jiyoon: Bitcount 48 & 6A69 796F 6F6E 로 출력\n> 224650164368: Bitcount 96 & 323234363530313634333638 로 출력\n\nLSB\n> jiyoon: Bitcount 48 & 6E6F 6F79 696A 로 출력\n> 224650164368: Bitcount 96 & 383633343631303536343232 로 출력\n",
+          "attachments": []
+        },
+        {
+          "id": 14621,
+          "index": 11,
+          "step": "[OSDP Tool과 연결]\n\n1. Device> Card Type> SmartCard\n2. SmartCard Byte Order 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
+          "data": "OSDP로 연결된 장치\n> Slave 모드\n\nSmart Card Byte Order\n> MSB/LSB\n\nSmartCard - SCC(영숫자모드에서 발급-숫자ID)\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n\n> ex. 발급한 Card ID - 20220531(=Hex. 01348a73)",
+          "result": "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount 출력\n\nMSB\n> Bitcount 32 & 01348a73 로 출력\n\nLSB\n> Bitcount 32 & 738a3401 로 출력\n",
+          "attachments": []
+        },
+        {
+          "id": 14457,
+          "index": 12,
+          "step": "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
+          "data": "OSDP로 연결된 장치\n> Slave 모드\n\nSmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n",
+          "result": "1. Iclass 카드는 PAC Data가 출력된다.\n> 기존과 동일",
+          "attachments": []
+        },
+        {
+          "id": 14458,
+          "index": 13,
+          "step": "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
+          "data": "OSDP로 연결된 장치\n> Slave 모드\n\nSmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n",
+          "result": "1. Iclass 카드는 PAC Data가 출력된다.\n> 기존과 동일",
+          "attachments": []
+        },
+        {
+          "id": 14432,
+          "index": 14,
+          "step": "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. 위겐드 리더로 연결된 SmartCard Read",
+          "data": "SmartCard - AOC/SCC(숫자모드에서 발급)\n > Mifare - Classic/Plus, DesFire/DesFire EV1\nex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)\n\nCSN Wiegand Format\n > Default로 지원되는 Format\n > Custom으로 생성한 Format\n\n -Wiegand Output Mode-\n -> Normal-\n\nWiegand Output Info\n > Card ID",
+          "result": "1. 발급된 Card ID가 설정된 Wiegand Format에 따라 출력된다.\n\n※ MSB일 때 카드ID: 133 2BF4\n> 설정 포맷 > 32bit인 경우 - 발급된 카드ID에서 설정된 포맷만큼 잘려서 출력\n> 설정 포맷 = 32bit인 경우 - 발급된 카드ID 그대로 출력\n> 설정 포맷 < 32bit인 경우 - 발급된 카드ID 그대로 출력",
+          "attachments": []
+        },
+        {
+          "id": 14433,
+          "index": 15,
+          "step": "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. SmartCard Read",
+          "data": "SmartCard - AOC/SCC(숫자모드에서 발급)\n > Mifare - Classic/Plus, DesFire/DesFire EV1\nex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)\n\n\nCSN Wiegand Format\n > Default로 지원되는 Format\n > Custom으로 생성한 Format\n\n-Wiegand Output Mode-\n -> Normal-\n\nWiegand Output Info\n > Card ID",
+          "result": "1. 발급된 Card ID의 LSB값이 설정된 Wiegand Format에 따라 출력된다.\n\n※ LSB인 경우 카드ID: F42B 3301\n> 설정 포맷 > 32bit인 경우 - 발급된 카드ID에서 설정된 포맷만큼 잘려서 출력\n> 설정 포맷 = 32bit인 경우 - 발급된 카드ID 그대로 출력\n> 설정 포맷 < 32bit인 경우 - 발급된 카드ID 그대로 출력",
+          "attachments": []
+        },
+        {
+          "id": 14451,
+          "index": 16,
+          "step": "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. SmartCard Byte Order 설정\n3. 위겐드 리더로 연결된 SmartCard Read",
+          "data": "Smart Card Byte Order\n> MSB/LSB\n\nSmartCard - AOC(영숫자모드에서 발급-숫자ID/영숫자ID)\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n> ex. 발급한 Card ID - jiyoon(= 6A 69 79 6F 6F 6E 00 00 00 .... 00)\n> ex. 발급한 Card ID - 224650164368(= 323234363530313634333638)\n\nCSN Wiegand Format\n> Default로 지원되는 Format\n> Custom으로 생성한 Format\n\n-Wiegand Output Mode\n-> Bypass-\n\nWiegand Output Info\n> Card ID",
+          "result": "1. 발급된 Card ID가 설정된 Wiegand Format에 따라 출력된다.\n\n> MSB\n- jiyoon일 때, 6A 69 79 6F 6F 6E 에 대해 Wiegand Format에 맞게 출력된다.\n- 224650164368일 때, MBS 값인 323234363530313634333638에 대해 Wiegand Format에 맞게 출력된다.\n\n> LSB\n- jiyoon일 때, LSB 값인 6E 6F 6F 79 69 6A 에 대해 Wiegand Format에 맞게 출력된다.\n- 224650164368일 때, LSB 값인 383633343631303536343232 에 대해 Wiegand Format에 맞게 출력된다.",
+          "attachments": []
+        },
+        {
+          "id": 14452,
+          "index": 17,
+          "step": "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. SmartCard Byte Order 설정\n3. SmartCard Read",
+          "data": "Smart Card Byte Order\n> MSB/LSB\n\nSmartCard - SCC(영숫자모드에서 발급-숫자ID)\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n> ex. 발급한 Card ID - 20220531(=Hex. 01348a73)\n\nCSN Wiegand Format\n> Default로 지원되는 Format\n> Custom으로 생성한 Format\n\n-Wiegand Output Mode\n-> Bypass-\n\nWiegand Output Info\n> Card ID",
+          "result": "1. 발급된 Card ID의 값이 설정된 Wiegand Format에 따라 출력된다.\n\n>MSB\n01348a73 로 출력\n\n>LSB\n738a3401 로 출력",
+          "attachments": []
+        },
+        {
+          "id": 14443,
+          "index": 18,
+          "step": "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. 위겐드 리더로 연결된 SmartCard Read",
+          "data": "SmartCard - AOC/SCC\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n\nWiegand Output Info\n> User ID",
+          "result": "1. AOC: 발급된 Card ID(=User ID)가 출력된다.\n2. SCC: 발급된 Card ID가 등록된 User ID가 출력된다.\n\n> MSB/LSB 출력 확인",
+          "attachments": []
+        },
+        {
+          "id": 14444,
+          "index": 19,
+          "step": "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. SmartCard Read",
+          "data": "SmartCard - AOC/SCC\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n\nWiegand Output Info\n> User ID",
+          "result": "1. AOC: 발급된 Card ID(=User ID)가 출력된다.\n2. SCC: 발급된 Card ID가 등록된 User ID가 출력된다.\n\n> MSB/LSB 출력 확인",
+          "attachments": []
+        },
+        {
+          "id": 14434,
+          "index": 20,
+          "step": "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. SmartCard Read",
+          "data": "SmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n\nWiegand Output Info\n> Card ID",
+          "result": "1. Iclass 카드는 PAC Data가 출력된다.\n> 기존과 동일",
+          "attachments": []
+        },
+        {
+          "id": 14435,
+          "index": 21,
+          "step": "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. SmartCard Read",
+          "data": "SmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n\nWiegand Output Info\n> Card ID",
+          "result": "1. Iclass 카드는 PAC Data가 출력된다.\n> 기존과 동일",
+          "attachments": []
+        },
+        {
+          "id": 17138,
+          "index": 22,
+          "step": "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. SmartCard Read",
+          "data": "SmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n\nWiegand Output Info\n> User ID",
+          "result": "1. User ID의 경우도 Byte Order의 영향을 받는다.\n> 발급된 User ID로 출력된다.\n> 발급된 User ID 만큼의 BitCount로 출력\n",
+          "attachments": []
+        },
+        {
+          "id": 17139,
+          "index": 23,
+          "step": "[Wiegand Reader로 연결]\n1. Wiegand Reader로 연결된 Device> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. SmartCard Read",
+          "data": "SmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n\nWiegand Output Info\n> User ID",
+          "result": "1. User ID의 경우도 Byte Order의 영향을 받는다.\n> 발급된 User ID의 LSB로 출력\n> 발급된 User ID의 LSB에 해당하는 만큼의 BitCount로 출력",
+          "attachments": []
+        },
+        {
+          "id": 14640,
+          "index": 24,
+          "step": "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
+          "data": "OSDP로 연결된 장치\n> Default 모드\n> Output info - Card ID\n\nSmartCard - AOC/SCC(숫자모드에서 발급)\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n> ex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)",
+          "result": "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount로 출력\n=> BitCount 32 & 133 2BF4(=Dec 20130804)로 표시",
+          "attachments": []
+        },
+        {
+          "id": 14641,
+          "index": 25,
+          "step": "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
+          "data": "OSDP로 연결된 장치\n> Default 모드\n> Output info - Card ID\n\nSmartCard - AOC/SCC\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n> ex. 발급한 Card ID - 20130804(=Hex. 133 2BF4)",
+          "result": "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount로 출력\n=> BitCount 32 & F42B 3301(=Dec 4096471809)로 표시",
+          "attachments": []
+        },
+        {
+          "id": 14642,
+          "index": 26,
+          "step": "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. SmartCard Byte Order 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
+          "data": "OSDP로 연결된 장치\n> Default 모드\n> Output info - Card ID\n\nSmart Card Byte Order\n> MSB/LSB\n\nSmartCard - AOC(영숫자모드에서 발급-숫자ID/영숫자ID)\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n> ex. 발급한 Card ID - jiyoon(= 6A 69 79 6F 6F 6E 00 00 00 .... 00)\n> ex. 발급한 Card ID - 224650164368(= 323234363530313634333638)",
+          "result": "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount 출력\n\nMSB\n> jiyoon: Bitcount 48 & 6A69 796F 6F6E 로 출력\n> 224650164368: Bitcount 96 & 323234363530313634333638 로 출력\n\nLSB\n> jiyoon: Bitcount 48 & 6E6F 6F79 696A 로 출력\n> 224650164368: Bitcount 96 & 383633343631303536343232 로 출력\n",
+          "attachments": []
+        },
+        {
+          "id": 14643,
+          "index": 27,
+          "step": "[OSDP Tool과 연결]\n\n1. Device> Card Type> SmartCard\n2. SmartCard Byte Order 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
+          "data": "OSDP로 연결된 장치\n> Default 모드\n> Output info - Card ID\n\nSmart Card Byte Order\n> MSB/LSB\n\nSmartCard - SCC(영숫자모드에서 발급-숫자ID)\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n\n> ex. 발급한 Card ID - 20220531(=Hex. 01348a73)",
+          "result": "1. 발급된 Card ID로 출력된다.\n> 발급된 Card ID만큼의 BitCount 출력\n\nMSB\n> Bitcount 32 & 01348a73 로 출력\n\nLSB\n> Bitcount 32 & 738a3401 로 출력\n",
+          "attachments": []
+        },
+        {
+          "id": 14644,
+          "index": 28,
+          "step": "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
+          "data": "OSDP로 연결된 장치\n> Default 모드\n> Output info - Card ID\n\nSmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS",
+          "result": "1. Iclass 카드는 PAC Data가 출력된다.\n> 기존과 동일",
+          "attachments": []
+        },
+        {
+          "id": 14645,
+          "index": 29,
+          "step": "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
+          "data": "OSDP로 연결된 장치\n> Default 모드\n> Output info - Card ID\n\nSmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS",
+          "result": "1. Iclass 카드는 PAC Data가 출력된다.\n> 기존과 동일",
+          "attachments": []
+        },
+        {
+          "id": 14646,
+          "index": 30,
+          "step": "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
+          "data": "OSDP로 연결된 장치\n > Default 모드\n > Output info - User ID(숫자ID)\n\nSmartCard - AOC/SCC\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n\n발급된 User ID\n > 1Byte로 발급\n > 최대(=32Byte)로 발급",
+          "result": "1. User ID의 경우도 Byte Order의 영향을 받는다.\n> 발급된 User ID(MSB)로 출력된다.\n> 발급된 User ID 만큼의 BitCount로 출력\n\n",
+          "attachments": []
+        },
+        {
+          "id": 17211,
+          "index": 31,
+          "step": "[OSDP Tool과 연결]\n\n1. Device> Card Type> SmartCard\n2. Byte Order: LSB설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
+          "data": "OSDP로 연결된 장치\n> Default 모드\n> Output info - User ID(숫자ID)\n\nSmartCard - AOC/SCC\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n\n발급된 User ID\n> 1Byte로 발급\n> 최대(=32Byte)로 발급",
+          "result": "1. User ID의 경우도 Byte Order의 영향을 받는다.\n> 발급된 User ID(LSB)로 출력된다.\n> 발급된 User ID 만큼의 BitCount로 출력",
+          "attachments": []
+        },
+        {
+          "id": 17213,
+          "index": 32,
+          "step": "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: MSB/LSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
+          "data": "OSDP로 연결된 장치\n > Default 모드\n > Output info - User ID(영숫자ID-숫자,영숫자)\n\nSmartCard - AOC/SCC\n> Mifare - Classic/Plus, DesFire/DesFire EV1\n\nSmartCard - AOC(영숫자모드에서 발급-숫자ID/영숫자ID)\n> ex. 발급한 Card ID - jiyoon(= 6A 69 79 6F 6F 6E 00 00 00 .... 00)\n> ex. 발급한 Card ID - 224650164368(= 323234363530313634333638)\n\n\n\nSmartCard - SCC(영숫자모드에서 발급-숫자ID/영숫자ID)\n> ex. 발급한 User ID - jiyoon(= 6A 69 79 6F 6F 6E 00 00 00 .... 00)/Card ID - 1\n> ex. 발급한 User ID - 224650164368(= 323234363530313634333638)/Card ID - 1",
+          "result": "1. User ID의 경우도 Byte Order의 영향을 받는다.\n> 발급된 User ID로 출력된다.\n\n\n\nMSB\n> jiyoon: Bitcount 48 & 6A69 796F 6F6E 로 출력\n> 224650164368: Bitcount 96 & 323234363530313634333638 로 출력\n\nLSB\n> jiyoon: Bitcount 48 & 6E6F 6F79 696A 로 출력\n> 224650164368: Bitcount 96 & 383633343631303536343232 로 출력",
+          "attachments": []
+        },
+        {
+          "id": 17215,
+          "index": 33,
+          "step": "[OSDP Tool과 연결]\n\n1. Device> Card Type> SmartCard\n2. Byte Order: MSB/LSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
+          "data": "OSDP로 연결된 장치\n> Default 모드\n> Output info - User ID(영숫자ID-숫자,영숫자)\n\nSmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n\nSmartCard - AOC(영숫자모드에서 발급-숫자ID/영숫자ID)\n> ex. 발급한 Card ID - jiyoon(= 6A 69 79 6F 6F 6E 00 00 00 .... 00)\n> ex. 발급한 Card ID - 224650164368(= 323234363530313634333638)\n\n\n\nSmartCard - SCC(영숫자모드에서 발급-숫자ID/영숫자ID)\n> ex. 발급한 User ID - jiyoon(= 6A 69 79 6F 6F 6E 00 00 00 .... 00)/Card ID - 1\n> ex. 발급한 User ID - 224650164368(= 323234363530313634333638)/Card ID - 1\n",
+          "result": "1. User ID의 경우도 Byte Order의 영향을 받는다.\n\nMSB\n> jiyoon: Bitcount 48 & 6A69 796F 6F6E 로 출력\n> 224650164368: Bitcount 96 & 323234363530313634333638 로 출력\n\nLSB\n> jiyoon: Bitcount 48 & 6E6F 6F79 696A 로 출력\n> 224650164368: Bitcount 96 & 383633343631303536343232 로 출력\n",
+          "attachments": []
+        },
+        {
+          "id": 17608,
+          "index": 34,
+          "step": "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: MSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
+          "data": "OSDP로 연결된 장치\n> Default 모드\n> Output info - User ID(숫자ID)\n\nSmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n\n발급된 User ID\n> 1Byte로 발급\n> 최대(=32Byte)로 발급",
+          "result": "1. User ID의 경우도 Byte Order의 영향을 받는다.\n> 발급된 User ID의 MSB로 출력\n> 발급된 User ID의 MSB에 해당하는 만큼의 BitCount로 출력\n",
+          "attachments": []
+        },
+        {
+          "id": 17212,
+          "index": 35,
+          "step": "[OSDP Tool과 연결]\n1. Device> Card Type> SmartCard\n2. Byte Order: LSB 설정\n3. SmartCard Read\n4. OSDP Tool에 출력되는 값 확인",
+          "data": "OSDP로 연결된 장치\n> Default 모드\n> Output info - User ID(숫자ID)\n\nSmartCard - AOC/SCC\n> Iclass - SR/SE, SEOS\n\n발급된 User ID\n> 1Byte로 발급\n> 최대(=32Byte)로 발급",
+          "result": "1. User ID의 경우도 Byte Order의 영향을 받는다.\n> 발급된 User ID의 LSB로 출력\n> 발급된 User ID의 LSB에 해당하는 만큼의 BitCount로 출력\n",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [],
+      "maxResults": 0,
+      "total": 0,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+      "name": "미할당",
+      "id": "10100"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+      "name": "완료",
+      "id": "10001",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "완료"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzvqp3:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2021-09-23T10:11:19.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

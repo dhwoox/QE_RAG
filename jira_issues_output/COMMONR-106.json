@@ -1,192 +1,1923 @@
 {
-  "id": "COMMONR-106",
-  "content": [
-    [
-      1,
-      "[Door/Elevator - Door 설정된 상태]\n\n1. Zone> Add Zone> Scheduled Unlock Zone\n2. Active/Inactive 설정 > Door/Elevator 설정 > Zone 생성",
-      "Active/Inactive - Door/Elevator\n> Active\n> Inactive\n",
-      "> Door 선택 시 Door, Schedule을 지정하여 Schedule Unlock Zone을 생성할 수 있다.\n> Elevator 선택 시 Elevator, Floor, Schedule을 지정하여 Schedule Unlock Zone을 생성 할 수 있다. "
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "13862",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/13862",
+  "key": "COMMONR-106",
+  "fields": {
+    "resolution": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/resolution/10000",
+      "id": "10000",
+      "description": "[사용안함] Work has been completed on this issue.",
+      "name": "완료(Done)"
+    },
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "1.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": null,
+    "customfield_10185": null,
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "26515",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/26515",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "34943",
+          "key": "BLNIIFW-742",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/34943",
+          "fields": {
+            "summary": "Schedule_Unlock_Lift관련하여 Slave 연결을 끊고, Schedule Unlock Zone을 시작/종료 후 Slave 연결 시 Schedule Unlock Zone에 의한 Relay On이 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "16661",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/16661",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "22273",
+          "key": "BSIIDII-722",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/22273",
+          "fields": {
+            "summary": "[Schedule Unlock Zone] Unlock 상태에서 Master Reboot시 일부 Relay가 Off로 동작하는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "16653",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/16653",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "22267",
+          "key": "CSTFW-145",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/22267",
+          "fields": {
+            "summary": "[Schedule Unlock Zone] Unlock 상태에서 Master Reboot시 일부 Relay가 Off로 동작하는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "20473",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/20473",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "26275",
+          "key": "CSTFW-391",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/26275",
+          "fields": {
+            "summary": "[Schedule Unlock Zone] Started by User Authentication 활성화된 상태에서 스케줄에 의해 문이 열린 후 Master Reboot하게되면 Unlock 상태를 유지하는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "31096",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/31096",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "41302",
+          "key": "ONYXFW-301",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/41302",
+          "fields": {
+            "summary": "Schedule Unlock Zone일때, 설정한 출입그룹이 아닌 사용자가 인증시 Zone이 실행되는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "31098",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/31098",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "41303",
+          "key": "ONYXFW-302",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/41303",
+          "fields": {
+            "summary": " Schedule Unlock Zone일때, Master가 Reboot되고 나서 Relay On되는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "31772",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/31772",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "41882",
+          "key": "ONYXFW-335",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/41882",
+          "fields": {
+            "summary": "출입문 설정 후 스케줄 개방구역일때 Master 재부팅시 Relay Lock되는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11414",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11414",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "15093",
+          "key": "TIIDFI-492",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/15093",
+          "fields": {
+            "summary": "[Door Close 상태에서 Schedule Lock Zone 동작중] Monitoring의 Manual Unlock 버튼 누른후 Release하고 Master 재부팅 시 Door Status Type이 Operator Unlock이 표시되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14205",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14205",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19418",
+          "key": "TIIDFI-848",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19418",
+          "fields": {
+            "summary": "Schedule Lock Zone 상태에서 Fire Alarm Input 발생으로 Door Relay On 상태에서  Manual Unlock 실행 후 Zone Status에서 Clear Alarm시 Door Relay가 Off 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "16658",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/16658",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "22272",
+          "key": "TIIDFI-1200",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/22272",
+          "fields": {
+            "summary": "[Schedule Unlock Zone] Unlock 상태에서 Master Reboot시 일부 Relay가 Off로 동작하는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "52082",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/52082",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "61411",
+          "key": "BEW3FW-63",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/61411",
+          "fields": {
+            "summary": "[Schedule Unlock Zone] Relay On 상태에서 Relay 설정 장치 전원 재인가 시 Relay On 상태로 동작하지 않는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12374",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12374",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16911",
+          "key": "BEWIIFWDI-157",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16911",
+          "fields": {
+            "summary": "Scheduled Unlock Zone 추가 및 개별삭제/전체삭제 이후, Door에 Zone 반영되지 않으며, Sync Device 시 Error 발생되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "32480",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/32480",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "42587",
+          "key": "BLNIIFW-918",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/42587",
+          "fields": {
+            "summary": "[Schedule Unlock-Door] RS485로 연결된 Slave장치가 끊어졌다 재연결될 경우 Relay 상태가 끊기기 전 상태로 유지 안되는 문제 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19867",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19867",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "25050",
+          "key": "CSTFW-285",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/25050",
+          "fields": {
+            "summary": "[FISF-660] RS485로 연결된 장치가 끊어졌다 재연결될 경우 Relay 상태가 끊기기 전 상태로 유지안되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19869",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19869",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "25158",
+          "key": "CSTFW-293",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/25158",
+          "fields": {
+            "summary": "Door Relay로 설정된 장치연결이 해제된 상태에서 Schedule Unlock 시작&종료가 된 후 장치연결을 한 경우 Door Relay 상태가 On상태로 동작하는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "22401",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/22401",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "28946",
+          "key": "CSTFW-476",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/28946",
+          "fields": {
+            "summary": "Schedule Unlock & Manual Lock 된 상태에서 Master 부팅되면 Schedule Unlock으로 동작하는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "15082",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/15082",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19983",
+          "key": "FSTIIFW-247",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19983",
+          "fields": {
+            "summary": "[Tester: 곽성희] (1회성) 약 32개의 Scheduled Lock Zone 삭제 중  FST2(M)장치 Reboot되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12467",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12467",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16961",
+          "key": "BEWIIFWDI-164",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16961",
+          "fields": {
+            "summary": "다수의 Scheduled Unlock Zone 추가 후, 한개씩 Inactive 시 Master Reboot되는 문제(간헐적 발생)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12465",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12465",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "17005",
+          "key": "BEWIIFWDI-172",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17005",
+          "fields": {
+            "summary": "Relay로만 구성된 Door를 Schedule Unlocked Zone에 설정 후 Inactive시 Locked되었다가 Unlocked으로 동작되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12332",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12332",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16870",
+          "key": "BLIIFWI-459",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16870",
+          "fields": {
+            "summary": "Zone Scheduled Unlock&Door 설정 후 Scheduled Unlock 동작 안됨",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "21983",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/21983",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "28156",
+          "key": "BLNIIFW-520",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/28156",
+          "fields": {
+            "summary": "[Schedule Unlock Zone] Slave Disconnected 및 Unlock Zone Start&Stop 후 Slave 재연결 시 Relay 상태 동작 문의 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "10798",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10798",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "13876",
+          "key": "BLIIFWI-146",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/13876",
+          "fields": {
+            "summary": "[Requirement] Scheduled Unlock Zone 프로토콜 구현",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10796",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10796",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "13874",
+          "key": "BSIIDII-21",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/13874",
+          "fields": {
+            "summary": "[Requirement] Scheduled Unlock Zone 프로토콜 구현",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10795",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10795",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "13873",
+          "key": "ENTRYIIDII-75",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/13873",
+          "fields": {
+            "summary": "[Requirement] Scheduled Unlock Zone 프로토콜 구현",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10794",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10794",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "13872",
+          "key": "TIIDFI-162",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/13872",
+          "fields": {
+            "summary": "[Requirement] 구역 - Scheduled Unlock Zone 프로토콜 구현",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "[Door/Elevator - Door 설정된 상태]\n\n1. Zone> Add Zone> Scheduled Unlock Zone\n2. Active/Inactive 설정 > Zone 생성",
-      "Active/Inactive - Door/Elevator\n> Active\n> Inactive",
-      "> Active 설정으로 생성한 Zone인 경우 Schedule Unlock으로 동작해야 한다.\n: Schedule Unlock 의 설정에 의해 인증 성공/실패 발생한다.\n> Inactive 설정으로 생성한 Zone인 경우 Schedule Unlock이 동작하지 않아야 한다.\n: Normal상태로 동작"
+    "assignee": null,
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 20.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=kijo",
+      "name": "kijo",
+      "key": "kijo",
+      "emailAddress": "kijo@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "조광일",
+      "active": false,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-106/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@367ca69a[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@5043ad45[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@7f4d8963[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@32a93a4a[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@c71d767[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@152e1a66[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6bb8f31[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@7dbb8ec6[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@7ff3b4f9[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@1a6b6c4b[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@40f3aa30[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@611fd156[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": "2016-02-25T13:30:42.000+0900",
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-106/watchers",
+      "watchCount": 2,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T10:10:21.000+0900",
+    "timeoriginalestimate": null,
+    "description": "Scheduled Lock Zone과 Scheduled Unlock Zone은 별개의 Zone이다.\r\nScheduled Lock Zone\r\n: 강제닫힘 스케줄에 설정된 시간에는 문이 강제로 닫히게끔 동작\r\nScheduled Unlock Zone\r\n: 강제열림 스케줄에 설정된 시간에는 문이 강제로 열리게끔 동작\r\n\r\n※ 스케줄 생성한 상태에서 TC 진행",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p><span class=\"error\">&#91;Door/Elevator - Door 설정된 상태&#93;</span></p>\n\n<p>1. Zone&gt; Add Zone&gt; Scheduled Unlock Zone<br/>2. Active/Inactive 설정 &gt; Door/Elevator 설정 &gt; Zone 생성</p></td><td><p>Active/Inactive - Door/Elevator<br/>&gt; Active<br/>&gt; Inactive</p></td><td><p>&gt; Door 선택 시 Door, Schedule을 지정하여 Schedule Unlock Zone을 생성할 수 있다.<br/>&gt; Elevator 선택 시 Elevator, Floor, Schedule을 지정하여 Schedule Unlock Zone을 생성 할 수 있다. </p></td></tr><tr><td>2</td><td><p><span class=\"error\">&#91;Door/Elevator - Door 설정된 상태&#93;</span></p>\n\n<p>1. Zone&gt; Add Zone&gt; Scheduled Unlock Zone<br/>2. Active/Inactive 설정 &gt; Zone 생성</p></td><td><p>Active/Inactive - Door/Elevator<br/>&gt; Active<br/>&gt; Inactive</p></td><td><p>&gt; Active 설정으로 생성한 Zone인 경우 Schedule Unlock으로 동작해야 한다.<br/>: Schedule Unlock 의 설정에 의해 인증 성공/실패 발생한다.<br/>&gt; Inactive 설정으로 생성한 Zone인 경우 Schedule Unlock이 동작하지 않아야 한다.<br/>: Normal상태로 동작</p></td></tr><tr><td>3</td><td><p><span class=\"error\">&#91;Door/Elevator - Door 설정된 상태&#93;</span></p>\n\n<p>1. Zone&gt; Add Zone&gt; Scheduled Unlock Zone<br/>2. Started by User Authentication 설정 &gt; 스케줄 설정 &gt; Zone 생성<br/>3. 스케줄에 설정된 시간 &gt; Monitoring<br/>4. Door Status &gt; Door Status Type 확인<br/>5. Zone Status &gt; Status 확인<br/>6. 장치에서 인증 시도</p></td><td><p>Started by User Authentication<br/>&gt; Inactive<br/>&gt; Active</p></td><td><p>&gt; Door Status 의 Door Status Type 에 Schedule Unlock 표시한다.<br/>&gt; Zone Status 의 Status 에 Schedule Unlock 표시한다.<br/>&gt; 인증 성공 발생한다.</p></td></tr><tr><td>4</td><td><p><span class=\"error\">&#91;Door/Elevator - Door 설정된 상태&#93;</span></p>\n\n<p>1. Zone&gt; Add Zone&gt; Scheduled Unlock Zone<br/>2. Started by User Authentication : Inactive 설정<br/>3. 스케줄 설정 &gt; Zone 생성<br/>4. 스케줄에 설정된 시간에 인증시도<br/>5. 스케줄에 설정된 시간이 끝날 때의 동작 확인</p></td><td><p>Started by User Authentication<br/>&gt; Inactive</p></td><td><p>&gt; 스케줄에 설정된 시간이 되면 자동으로 Unlocked 된다.<br/>: 이후 Unlocked 상태 유지<br/>&gt; 스케줄에 설정된 시간에 인증시 인증성공으로 동작하지만 Locked 동작은 하지 않아야 한다.<br/>: Unlocked 상태 유지<br/>&gt; 스케줄에 설정된 시간이 끝나면 자동으로 Locked 되어야 한다.</p></td></tr><tr><td>5</td><td><p><span class=\"error\">&#91;Door/Elevator - Door 설정된 상태&#93;</span></p>\n\n<p>1. Scheduled Unlock Zone 생성<br/>2. Started by User Authentication 설정<br/>3. 스케줄 설정<br/>4. Scheduled Unlock Authentication Group 설정 후 적용</p></td><td><p>1. Started by User Authentication<br/>&gt; Active</p>\n\n<p>2. Access Group<br/>&gt; 최대 16개 설정 가능</p></td><td><p>&gt; Started by User Authentication Access Group 은 최대 16개를 설정할 수 있어야 한다.<br/>&gt; Scheduled Unlock Zone 추가에 이상이 없어야 한다.</p></td></tr><tr><td>6</td><td><p><span class=\"error\">&#91;Door/Elevator - Door 설정된 상태&#93;</span></p>\n\n<p>1. Scheduled Unlock Zone 생성<br/>2. Started by User Authentication 설정<br/>3. 스케줄 설정 &gt; Access Group 설정 &gt; Zone 생성<br/>4. 스케줄에 설정된 시간에 Access Group 에 속한 사용자로 인증시도</p></td><td><p>1. Started by User Authentication<br/>&gt; Active</p>\n\n<p>2. Access Group<br/>&gt; 미선택<br/>&gt; 선택</p></td><td><p>&gt; Access Group 선택하지 않은 경우 Zone 생성이 불가하다.<br/>&gt; Access Group 선택한 경우 스케줄에 설정된 시간이 되어도 자동으로 Unlocked 되지 않고 Started by User Authentication Access Group 에 속한 사용자가 인증시 Unlocked 된다.<br/>: 이후 Unlocked 상태 유지</p></td></tr><tr><td>7</td><td><p>1. Scheduled Unlock Zone 생성<br/>2. Started by User Authentication 설정 &gt; 스케줄 설정 &gt; Access Group 설정 &gt; Zone 생성<br/>3. 스케줄에 설정된 시간에 Started by User Authentication Access Group 에 속하지 않은 사용자 인증시도<br/>4. 스케줄에 설정된 시간에 Started by User Authentication Access Group 에 속한 사용자 인증시도<br/>5. 스케줄에 설정된 시간에 Started by User Authentication Access Group 에 속하지 않은 사용자 인증시도</p></td><td><p>Started by User Authentication<br/>&gt; Active</p></td><td><p>&gt; Started by User Authentication Access Group 에 속하지 않은 사용자로 인증시 인증성공 발생하고 Unlocked 후 Locked 된다.<br/>&gt; Started by User Authentication Access Group 에 속한 사용자로 인증시 인증성공 발생하고 Unlocked 된다.<br/>: 이후 Unlocked 상태 유지<br/>&gt; Started by User Authentication Access Group 에 속하지 않은 사용자 재인증시 인증성공 발생하나 Locked 동작은 하지 않아야 한다.<br/>: Unlocked 상태 유지</p></td></tr><tr><td>8</td><td><p>1. Scheduled Unlock Zone 생성<br/>2. Started by User Authentication 설정<br/>3. 스케줄 설정 &gt; Started by User Authentication Access Group 설정 &gt; Zone 생성<br/>4. 스케줄에 설정된 시간에 인증시도<br/>5. 스케줄에 설정된 시간이 끝날 때의 동작 확인</p></td><td><p>Started by User Authentication<br/>&gt; Active</p></td><td><p>&gt; 스케줄에 설정된 시간에 인증시 인증성공으로 동작하지만 Locked 동작은 하지 않아야 한다.<br/>: Unlocked 상태 유지<br/>&gt; 스케줄에 설정된 시간이 끝나면 자동으로 Locked 되어야 한다.</p></td></tr><tr><td>9</td><td><p>1. Scheduled Unlock Zone 생성<br/>2. Started by User Authentication 설정<br/>3. 현재 시간이 포함된 스케줄 설정 후 적용<br/>4. Master 장치 Reboot 시도</p></td><td><p>1. Started by User Authentication<br/>&gt; Inactive</p></td><td><p>1. Unlocked 상태를 유지해야 한다.</p></td></tr><tr><td>10</td><td><p><span class=\"error\">&#91;Door/Elevator - Door 설정된 상태&#93;</span></p>\n\n<p>1. Scheduled Unlock Zone 생성<br/>2. Started by User Authentication 설정<br/>3. 현재 시간이 포함된 스케줄 설정 후 적용<br/>4. Group에 속한 사용자로 인증<br/>5. (Unlock상태) Master 장치 Reboot 시도</p></td><td><p>1. Started by User Authentication<br/>&gt; Active</p></td><td><p>1. Locked 상태로 변경된다.<br/>&gt; Group 에 속한 사용자로 재인증시 Unlocked 로 변경</p></td></tr><tr><td>11</td><td><p><span class=\"error\">&#91;Scheduled Unlock Zone 다수 생성된 상태&#93;</span></p>\n\n<p>1. Zone &gt; Scheduled Unlock<br/>2. 하나 or 다수의 Zone 선택 &gt; 삭제</p></td><td><p>Zone 삭제<br/>&gt; 개별삭제<br/>&gt; 전체삭제</p></td><td><p>Zone에 대해 개별삭제/전체삭제를 할 수 있어야 한다.<br/>&gt; 삭제 시 Monitoring &gt; Door Status &gt; Door Status Type : Normal로 상태 변경</p></td></tr><tr><td>12</td><td><p>1. Zone &gt; Scheduled Unlock &gt; Zone 선택<br/>2. 정보 편집 &gt; Apply</p></td><td></td><td><p>Zone 정보 변경이 가능해야 한다.</p></td></tr><tr><td>13</td><td><p>1. Zone&gt; Add Zone&gt; Schedule Unlock Zone<br/>2. 현재 시간이 포함된 스케줄 설정 &gt; Zone 생성<br/>3. Monitoring&gt; Door Status&gt; Zone에 설정된 Door선택<br/>4. Unlock or Lock 버튼 클릭</p></td><td></td><td><p>Zone에서 설정한 Schedule Unlock Zone보다 Monitoring에서의 Unlock/Lock의 우선순위가 높다.</p></td></tr><tr><td>14</td><td><p><span class=\"error\">&#91;A Door 생성한 상태&#93;</span></p>\n\n<p>1. Zone&gt; Add Schedule Lock Zone&gt; 강제잠금 스케줄- 12:00AM~12:00PM 설정<br/>2. Add Schedule Unlock Zone&gt; 강제열림 스케줄- 12:00PM~12:00AM 설정<br/>3. 경계가 되는 시간일 때 동작확인</p></td><td></td><td><p>11:59:59 PM 까지 Schedule Locked상태를 유지하다 12:00:00 PM에 Schedule Unlocked 상태로 변경되어야 한다. <br/>&gt; Schedule Unlock Authentication 설정 시에는 인증을 해야 Zone Status가 Schedule Unlock으로 표시됨, 인증 전에는 Normal 상태에서</p></td></tr><tr><td>15</td><td><p>1. Door&gt; Add Door&gt; Door \"A\" 생성<br/>2. Zone&gt; Add Zone&gt; Scheduled Unlock Zone&gt; Door \"A\" 선택&gt; 스케줄 설정&gt; Zone 생성<br/>3. 스케줄에 설정된 시간에 Monitoring 진입<br/>4. Door Status&gt; Door \"A\" 선택&gt; Manual Lock 버튼 선택<br/>5. Door Status 의 Door Status Type, Door Relay 확인<br/>6. Zone Status 의 Status 확인</p></td><td><p>Door \"A\" 로 구성된 Schedule Unlock Zone</p></td><td><p>&gt; Door Status 의 Door Relay 는 Locked 로, Door Status Type 은 Schedule Unlock, Operator Lock 으로 표시된다.<br/>&gt; Zone Status 의 Status 는 Schedule Unlock 으로 표시된다.<br/>&gt; Door의 Status와 Zone의 Status는 별개로 동작 해야 함</p></td></tr><tr><td>16</td><td><p><span class=\"error\">&#91;스케줄 &quot;A&quot; -&gt; 휴일군 설정된 상태&#93;</span></p>\n\n<p>1. Door&gt; Add Door&gt; Door \"A\" 생성<br/>2. Zone&gt; Add Zone&gt; Scheduled Unlock Zone&gt; Door \"A\" 선택&gt; 스케줄 \"A\" 선택&gt; Zone 생성<br/>3. 스케줄 \"A\"에 설정한 휴일군일 때 동작확인<br/>4. Master 장치를 Reboot<br/>5. 문열림 상태 확인</p></td><td><p>&gt; 휴일군에 Time Slot 미설정<br/>&gt; 휴일군에 Time Slot 설정</p></td><td><p>&gt; 휴일군에 설정한 스케줄대로 동작되어야 한다.<br/>&gt; Unlock Zone의 출입문 열림 상태는 재부팅 후에도 유지되어야 한다.</p></td></tr><tr><td>17</td><td><p><span class=\"error\">&#91;Door, Scheduled Unlock Zone 추가된 상태&#93;</span></p>\n\n<p>1. Door Status : Open 동작(Door 내 설정한 Door Sensor와 Exit Button Input 접지)<br/>2. Scheduled Unlock Zone 의 스케줄에 의한 Schedule Unlock 동작<br/>3. Monitoring &gt; Door Status 내 Manual Lock/Unlock, Release, Open, Clear Alarm 버튼 선택</p></td><td><p>1. 조건</p>\n<ul class=\"alternate\" type=\"square\">\n<li>Door Status : Opened 상태</li>\n<li>Scheduled Unlock Zone 동작 중</li>\n</ul>\n\n\n<p>2. 동작</p>\n<ul class=\"alternate\" type=\"square\">\n<li>Manual Lock, Manual Unlock, Release, Open, Clear Alarm 버튼 입력</li>\n<li>버튼 입력 후 Closed 설정(접지 해제)</li>\n</ul>\n\n\n<p>3. 결과 (각 Case 결과 확인)</p>\n<ul class=\"alternate\" type=\"square\">\n<li>Opened 상태에서 버튼 입력 결과</li>\n<li>버튼 입력 후 Closed 설정(접지 해제) 결과</li>\n</ul>\n</td><td><p>1. Manual Lock 선택시<br/>1) Manual Lock 버튼 입력 결과 : Success 팝업<br/>: Opened / Schedule Unlock / Unlocked<br/>2) Manual Lock 버튼 입력 후 Closed 설정(접지 해제) 결과<br/>: Closed / Schedule Unlock, Operator Lock / Locked<br/>3) 버튼 입력 없이 Closed 설정(접지 해제) 결과<br/>: Closed / Schedule Unlock / Unlocked(공통)</p>\n\n<p>2. Manual Unlock 선택시<br/>1) Manual Unlock 버튼 입력 결과 : Success 팝업 발생<br/>: Opened / Schedule Unlock, Operator Unlock / Unlocked<br/>2) Manual Unlock 버튼 입력 후 Closed 설정(접지 해제) 결과<br/>: Closed / Schedule Unlock, Operator Unlock / Unlocked</p>\n\n<p>3. Release 선택시<br/>1) Release 버튼 입력 결과 : Success 팝업<br/>: Opened / Schedule Unlock / Unlocked<br/>2) Release 버튼 입력 후 Closed 설정(접지 해제) 결과<br/>: Closed / Schedule Unlock / Unlocked</p>\n\n<p>4. Open 선택시<br/>1) Open 버튼 입력 결과 : Warning 팝업(Release the alert or lock and try again Door Name:Schedule Unlock)<br/>: Opened / Schedule Unlock / Unlocked<br/>2) Open 버튼 입력 후 Closed 설정(접지 해제) 결과<br/>: Closed / Schedule Unlock / Unlocked</p>\n\n<p>5. Clear Alarm 선택시<br/>1) Clear Alarm 버튼 입력 결과 : Success 팝업<br/>: Opened / Schedule Unlock / Unlocked<br/>2) Clear Alarm 버튼 입력 후 Closed 설정(접지 해제) 결과<br/>: Closed / Schedule Unlock / Unlocked</p></td></tr><tr><td>18</td><td><p><span class=\"error\">&#91;Door/Elevator - Elevator 설정된 상태&#93;</span></p>\n\n<p>1. Scheduled Unlock 동작<br/>2. Fire Alarm 동작<br/>3. Manual Lock 동작<br/>4. Manual Unlock 동작</p></td><td><p>우선 순위 확인<br/>&gt; Fire Alarm Zone<br/>&gt; Manual Lock/Unlcok (Monitoring &gt; Door Status)<br/>&gt; Scheduled Unlock Zone</p></td><td><p>&gt; 최초 Scheduled Unlock 에 의해 Unlocked 된다.<br/>&gt; Fire Alarm 발생시 Unlocked 유지된다. (Fire Alarm 이 Scheduled Unlock 보다 우선순위가 높다)<br/>&gt; Manual Lock 발생시 Unlocked 유지된다. (Manual Lock 이 Fire Alarm 보다 우선순위가 낮다)<br/>&gt; Fire Alarm 해제 후 Manual Lock 발생시 Locked 된다. (Manual Lock 이 Scheduled Unlock 보다 우선순위가 높다)<br/>&gt; Fire Alarm 해제 후 Manual Unlock 발생시 Unlocked 유지된다. (Manual Unlock 이 Scheduled Unlock 보다 우선순위가 높다)<br/>&gt; Manual Lock/Unlock 해제 후 Scheduled Unlock 에 의해 Unlocked 된다.</p></td></tr><tr><td>19</td><td><p>1. RS485 연결<br/>2. Schedule Unlock Zone 시작<br/>3. Slave 장치 전원 재인가<br/>4. Slave 장치 부팅완료 후 Relay 상태 확인</p></td><td><p>Slave <br/>&gt; Device, I/O Device</p></td><td><p>1. 연결이 끊겼다 재연결되면 Relay On 상태로 동작되어야 한다.</p></td></tr><tr><td>20</td><td><p>1. RS485 연결<br/>2. Door Relay로 설정된 Slave Disconnected 상태<br/>3. Schedule Unlock 시작 &amp; 종료<br/>4. Slave Connected<br/>5. Slave 장치의 Relay 상태 확인</p></td><td><p>Slave <br/>&gt; Device, I/O Device</p></td><td><p>1. Master와 재연결 시 계속 Relay Off로 동작되어야 한다.</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [
+      "COMMONR-47"
     ],
-    [
-      3,
-      "[Door/Elevator - Door 설정된 상태]\n\n1. Zone> Add Zone> Scheduled Unlock Zone\n2. Started by User Authentication 설정 > 스케줄 설정 > Zone 생성\n3. 스케줄에 설정된 시간 > Monitoring\n4. Door Status > Door Status Type 확인\n5. Zone Status > Status 확인\n6. 장치에서 인증 시도",
-      "Started by User Authentication\n> Inactive\n> Active",
-      "> Door Status 의 Door Status Type 에 Schedule Unlock 표시한다.\n> Zone Status 의 Status 에 Schedule Unlock 표시한다.\n> 인증 성공 발생한다."
-    ],
-    [
-      4,
-      "[Door/Elevator - Door 설정된 상태]\n\n1. Zone> Add Zone> Scheduled Unlock Zone\n2. Started by User Authentication : Inactive 설정\n3. 스케줄 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 인증시도\n5. 스케줄에 설정된 시간이 끝날 때의 동작 확인",
-      "Started by User Authentication\n> Inactive",
-      "> 스케줄에 설정된 시간이 되면 자동으로 Unlocked 된다.\n: 이후 Unlocked 상태 유지\n> 스케줄에 설정된 시간에 인증시 인증성공으로 동작하지만 Locked 동작은 하지 않아야 한다.\n: Unlocked 상태 유지\n> 스케줄에 설정된 시간이 끝나면 자동으로 Locked 되어야 한다."
-    ],
-    [
-      5,
-      "[Door/Elevator - Door 설정된 상태]\n\n1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정\n3. 스케줄 설정\n4. Scheduled Unlock Authentication Group 설정 후 적용",
-      "1. Started by User Authentication\n> Active\n\n2. Access Group\n> 최대 16개 설정 가능",
-      "> Started by User Authentication Access Group 은 최대 16개를 설정할 수 있어야 한다.\n> Scheduled Unlock Zone 추가에 이상이 없어야 한다."
-    ],
-    [
-      6,
-      "[Door/Elevator - Door 설정된 상태]\n\n1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정\n3. 스케줄 설정 > Access Group 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 Access Group 에 속한 사용자로 인증시도",
-      "1. Started by User Authentication\n> Active\n\n2. Access Group\n> 미선택\n> 선택",
-      "> Access Group 선택하지 않은 경우 Zone 생성이 불가하다.\n> Access Group 선택한 경우 스케줄에 설정된 시간이 되어도 자동으로 Unlocked 되지 않고 Started by User Authentication Access Group 에 속한 사용자가 인증시 Unlocked 된다.\n: 이후 Unlocked 상태 유지"
-    ],
-    [
-      7,
-      "1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정 > 스케줄 설정 > Access Group 설정 > Zone 생성\n3. 스케줄에 설정된 시간에 Started by User Authentication Access Group 에 속하지 않은 사용자 인증시도\n4. 스케줄에 설정된 시간에 Started by User Authentication Access Group 에 속한 사용자 인증시도\n5. 스케줄에 설정된 시간에 Started by User Authentication Access Group 에 속하지 않은 사용자 인증시도",
-      "Started by User Authentication\n> Active",
-      "> Started by User Authentication Access Group 에 속하지 않은 사용자로 인증시 인증성공 발생하고 Unlocked 후 Locked 된다.\n> Started by User Authentication Access Group 에 속한 사용자로 인증시 인증성공 발생하고 Unlocked 된다.\n: 이후 Unlocked 상태 유지\n> Started by User Authentication Access Group 에 속하지 않은 사용자 재인증시 인증성공 발생하나 Locked 동작은 하지 않아야 한다.\n: Unlocked 상태 유지"
-    ],
-    [
-      8,
-      "1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정\n3. 스케줄 설정 > Started by User Authentication Access Group 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 인증시도\n5. 스케줄에 설정된 시간이 끝날 때의 동작 확인",
-      "Started by User Authentication\n> Active",
-      "> 스케줄에 설정된 시간에 인증시 인증성공으로 동작하지만 Locked 동작은 하지 않아야 한다.\n: Unlocked 상태 유지\n> 스케줄에 설정된 시간이 끝나면 자동으로 Locked 되어야 한다."
-    ],
-    [
-      9,
-      "1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정\n3. 현재 시간이 포함된 스케줄 설정 후 적용\n4. Master 장치 Reboot 시도",
-      "1. Started by User Authentication\n> Inactive",
-      "1. Unlocked 상태를 유지해야 한다."
-    ],
-    [
-      10,
-      "[Door/Elevator - Door 설정된 상태]\n\n1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정\n3. 현재 시간이 포함된 스케줄 설정 후 적용\n4. Group에 속한 사용자로 인증\n5. (Unlock상태) Master 장치 Reboot 시도",
-      "1. Started by User Authentication\n> Active",
-      "1. Locked 상태로 변경된다.\n> Group 에 속한 사용자로 재인증시 Unlocked 로 변경"
-    ],
-    [
-      11,
-      "[Scheduled Unlock Zone 다수 생성된 상태]\n\n1. Zone > Scheduled Unlock\n2. 하나 or 다수의 Zone 선택 > 삭제",
-      "Zone 삭제\n> 개별삭제\n> 전체삭제",
-      "Zone에 대해 개별삭제/전체삭제를 할 수 있어야 한다.\n> 삭제 시 Monitoring > Door Status > Door Status Type : Normal로 상태 변경"
-    ],
-    [
-      12,
-      "1. Zone > Scheduled Unlock > Zone 선택\n2. 정보 편집 > Apply",
-      "",
-      "Zone 정보 변경이 가능해야 한다."
-    ],
-    [
-      13,
-      "1. Zone> Add Zone> Schedule Unlock Zone\n2. 현재 시간이 포함된 스케줄 설정 > Zone 생성\n3. Monitoring> Door Status> Zone에 설정된 Door선택\n4. Unlock or Lock 버튼 클릭",
-      "",
-      "Zone에서 설정한 Schedule Unlock Zone보다 Monitoring에서의 Unlock/Lock의 우선순위가 높다."
-    ],
-    [
-      14,
-      "[A Door 생성한 상태]\n\n1. Zone> Add Schedule Lock Zone> 강제잠금 스케줄- 12:00AM~12:00PM 설정\n2. Add Schedule Unlock Zone> 강제열림 스케줄- 12:00PM~12:00AM 설정\n3. 경계가 되는 시간일 때 동작확인",
-      "",
-      "11:59:59 PM 까지 Schedule Locked상태를 유지하다 12:00:00 PM에 Schedule Unlocked 상태로 변경되어야 한다. \n> Schedule Unlock Authentication 설정 시에는 인증을 해야 Zone Status가 Schedule Unlock으로 표시됨, 인증 전에는 Normal 상태에서"
-    ],
-    [
-      15,
-      "1. Door> Add Door> Door \"A\" 생성\n2. Zone> Add Zone> Scheduled Unlock Zone> Door \"A\" 선택> 스케줄 설정> Zone 생성\n3. 스케줄에 설정된 시간에 Monitoring 진입\n4. Door Status> Door \"A\" 선택> Manual Lock 버튼 선택\n5. Door Status 의 Door Status Type, Door Relay 확인\n6. Zone Status 의 Status 확인",
-      "Door \"A\" 로 구성된 Schedule Unlock Zone",
-      "> Door Status 의 Door Relay 는 Locked 로, Door Status Type 은 Schedule Unlock, Operator Lock 으로 표시된다.\n> Zone Status 의 Status 는 Schedule Unlock 으로 표시된다.\n> Door의 Status와 Zone의 Status는 별개로 동작 해야 함"
-    ],
-    [
-      16,
-      "[스케줄 \"A\" -> 휴일군 설정된 상태]\n\n1. Door> Add Door> Door \"A\" 생성\n2. Zone> Add Zone> Scheduled Unlock Zone> Door \"A\" 선택> 스케줄 \"A\" 선택> Zone 생성\n3. 스케줄 \"A\"에 설정한 휴일군일 때 동작확인\n4. Master 장치를 Reboot\n5. 문열림 상태 확인",
-      "> 휴일군에 Time Slot 미설정\n> 휴일군에 Time Slot 설정",
-      "> 휴일군에 설정한 스케줄대로 동작되어야 한다.\n> Unlock Zone의 출입문 열림 상태는 재부팅 후에도 유지되어야 한다."
-    ],
-    [
-      17,
-      "[Door, Scheduled Unlock Zone 추가된 상태]\n\n1. Door Status : Open 동작(Door 내 설정한 Door Sensor와 Exit Button Input 접지)\n2. Scheduled Unlock Zone 의 스케줄에 의한 Schedule Unlock 동작\n3. Monitoring > Door Status 내 Manual Lock/Unlock, Release, Open, Clear Alarm 버튼 선택",
-      "1. 조건\n - Door Status : Opened 상태\n - Scheduled Unlock Zone 동작 중\n\n2. 동작\n - Manual Lock, Manual Unlock, Release, Open, Clear Alarm 버튼 입력\n - 버튼 입력 후 Closed 설정(접지 해제)\n\n3. 결과 (각 Case 결과 확인)\n - Opened 상태에서 버튼 입력 결과\n - 버튼 입력 후 Closed 설정(접지 해제) 결과",
-      "1. Manual Lock 선택시\n1) Manual Lock 버튼 입력 결과 : Success 팝업\n: Opened / Schedule Unlock / Unlocked\n2) Manual Lock 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Unlock, Operator Lock / Locked\n3) 버튼 입력 없이 Closed 설정(접지 해제) 결과\n: Closed / Schedule Unlock / Unlocked(공통)\n\n2. Manual Unlock 선택시\n1) Manual Unlock 버튼 입력 결과 : Success 팝업 발생\n: Opened / Schedule Unlock, Operator Unlock / Unlocked\n2) Manual Unlock 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Unlock, Operator Unlock / Unlocked\n\n3. Release 선택시\n1) Release 버튼 입력 결과 : Success 팝업\n: Opened / Schedule Unlock / Unlocked\n2) Release 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Unlock / Unlocked\n\n4. Open 선택시\n1) Open 버튼 입력 결과 : Warning 팝업(Release the alert or lock and try again Door Name:Schedule Unlock)\n: Opened / Schedule Unlock / Unlocked\n2) Open 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Unlock / Unlocked\n\n5. Clear Alarm 선택시\n1) Clear Alarm 버튼 입력 결과 : Success 팝업\n: Opened / Schedule Unlock / Unlocked\n2) Clear Alarm 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Unlock / Unlocked"
-    ],
-    [
-      18,
-      "[Door/Elevator - Elevator 설정된 상태]\n\n1. Scheduled Unlock 동작\n2. Fire Alarm 동작\n3. Manual Lock 동작\n4. Manual Unlock 동작",
-      "우선 순위 확인\n> Fire Alarm Zone\n> Manual Lock/Unlcok (Monitoring > Door Status)\n> Scheduled Unlock Zone",
-      "> 최초 Scheduled Unlock 에 의해 Unlocked 된다.\n> Fire Alarm 발생시 Unlocked 유지된다. (Fire Alarm 이 Scheduled Unlock 보다 우선순위가 높다)\n> Manual Lock 발생시 Unlocked 유지된다. (Manual Lock 이 Fire Alarm 보다 우선순위가 낮다)\n> Fire Alarm 해제 후 Manual Lock 발생시 Locked 된다. (Manual Lock 이 Scheduled Unlock 보다 우선순위가 높다)\n> Fire Alarm 해제 후 Manual Unlock 발생시 Unlocked 유지된다. (Manual Unlock 이 Scheduled Unlock 보다 우선순위가 높다)\n> Manual Lock/Unlock 해제 후 Scheduled Unlock 에 의해 Unlocked 된다."
-    ],
-    [
-      19,
-      "1. RS485 연결\n2. Schedule Unlock Zone 시작\n3. Slave 장치 전원 재인가\n4. Slave 장치 부팅완료 후 Relay 상태 확인",
-      "Slave \n> Device, I/O Device",
-      "1. 연결이 끊겼다 재연결되면 Relay On 상태로 동작되어야 한다."
-    ],
-    [
-      20,
-      "1. RS485 연결\n2. Door Relay로 설정된 Slave Disconnected 상태\n3. Schedule Unlock 시작 & 종료\n4. Slave Connected\n5. Slave 장치의 Relay 상태 확인",
-      "Slave \n> Device, I/O Device",
-      "1. Master와 재연결 시 계속 Relay Off로 동작되어야 한다."
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-106",
-    "description": "",
-    "test_step": [
-      "[Door/Elevator - Door 설정된 상태]\n\n1. Zone> Add Zone> Scheduled Unlock Zone\n2. Active/Inactive 설정 > Door/Elevator 설정 > Zone 생성",
-      "[Door/Elevator - Door 설정된 상태]\n\n1. Zone> Add Zone> Scheduled Unlock Zone\n2. Active/Inactive 설정 > Zone 생성",
-      "[Door/Elevator - Door 설정된 상태]\n\n1. Zone> Add Zone> Scheduled Unlock Zone\n2. Started by User Authentication 설정 > 스케줄 설정 > Zone 생성\n3. 스케줄에 설정된 시간 > Monitoring\n4. Door Status > Door Status Type 확인\n5. Zone Status > Status 확인\n6. 장치에서 인증 시도",
-      "[Door/Elevator - Door 설정된 상태]\n\n1. Zone> Add Zone> Scheduled Unlock Zone\n2. Started by User Authentication : Inactive 설정\n3. 스케줄 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 인증시도\n5. 스케줄에 설정된 시간이 끝날 때의 동작 확인",
-      "[Door/Elevator - Door 설정된 상태]\n\n1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정\n3. 스케줄 설정\n4. Scheduled Unlock Authentication Group 설정 후 적용",
-      "[Door/Elevator - Door 설정된 상태]\n\n1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정\n3. 스케줄 설정 > Access Group 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 Access Group 에 속한 사용자로 인증시도",
-      "1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정 > 스케줄 설정 > Access Group 설정 > Zone 생성\n3. 스케줄에 설정된 시간에 Started by User Authentication Access Group 에 속하지 않은 사용자 인증시도\n4. 스케줄에 설정된 시간에 Started by User Authentication Access Group 에 속한 사용자 인증시도\n5. 스케줄에 설정된 시간에 Started by User Authentication Access Group 에 속하지 않은 사용자 인증시도",
-      "1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정\n3. 스케줄 설정 > Started by User Authentication Access Group 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 인증시도\n5. 스케줄에 설정된 시간이 끝날 때의 동작 확인",
-      "1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정\n3. 현재 시간이 포함된 스케줄 설정 후 적용\n4. Master 장치 Reboot 시도",
-      "[Door/Elevator - Door 설정된 상태]\n\n1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정\n3. 현재 시간이 포함된 스케줄 설정 후 적용\n4. Group에 속한 사용자로 인증\n5. (Unlock상태) Master 장치 Reboot 시도",
-      "[Scheduled Unlock Zone 다수 생성된 상태]\n\n1. Zone > Scheduled Unlock\n2. 하나 or 다수의 Zone 선택 > 삭제",
-      "1. Zone > Scheduled Unlock > Zone 선택\n2. 정보 편집 > Apply",
-      "1. Zone> Add Zone> Schedule Unlock Zone\n2. 현재 시간이 포함된 스케줄 설정 > Zone 생성\n3. Monitoring> Door Status> Zone에 설정된 Door선택\n4. Unlock or Lock 버튼 클릭",
-      "[A Door 생성한 상태]\n\n1. Zone> Add Schedule Lock Zone> 강제잠금 스케줄- 12:00AM~12:00PM 설정\n2. Add Schedule Unlock Zone> 강제열림 스케줄- 12:00PM~12:00AM 설정\n3. 경계가 되는 시간일 때 동작확인",
-      "1. Door> Add Door> Door \"A\" 생성\n2. Zone> Add Zone> Scheduled Unlock Zone> Door \"A\" 선택> 스케줄 설정> Zone 생성\n3. 스케줄에 설정된 시간에 Monitoring 진입\n4. Door Status> Door \"A\" 선택> Manual Lock 버튼 선택\n5. Door Status 의 Door Status Type, Door Relay 확인\n6. Zone Status 의 Status 확인",
-      "[스케줄 \"A\" -> 휴일군 설정된 상태]\n\n1. Door> Add Door> Door \"A\" 생성\n2. Zone> Add Zone> Scheduled Unlock Zone> Door \"A\" 선택> 스케줄 \"A\" 선택> Zone 생성\n3. 스케줄 \"A\"에 설정한 휴일군일 때 동작확인\n4. Master 장치를 Reboot\n5. 문열림 상태 확인",
-      "[Door, Scheduled Unlock Zone 추가된 상태]\n\n1. Door Status : Open 동작(Door 내 설정한 Door Sensor와 Exit Button Input 접지)\n2. Scheduled Unlock Zone 의 스케줄에 의한 Schedule Unlock 동작\n3. Monitoring > Door Status 내 Manual Lock/Unlock, Release, Open, Clear Alarm 버튼 선택",
-      "[Door/Elevator - Elevator 설정된 상태]\n\n1. Scheduled Unlock 동작\n2. Fire Alarm 동작\n3. Manual Lock 동작\n4. Manual Unlock 동작",
-      "1. RS485 연결\n2. Schedule Unlock Zone 시작\n3. Slave 장치 전원 재인가\n4. Slave 장치 부팅완료 후 Relay 상태 확인",
-      "1. RS485 연결\n2. Door Relay로 설정된 Slave Disconnected 상태\n3. Schedule Unlock 시작 & 종료\n4. Slave Connected\n5. Slave 장치의 Relay 상태 확인"
-    ],
-    "data": [
-      "Active/Inactive - Door/Elevator\n> Active\n> Inactive\n",
-      "Active/Inactive - Door/Elevator\n> Active\n> Inactive",
-      "Started by User Authentication\n> Inactive\n> Active",
-      "Started by User Authentication\n> Inactive",
-      "1. Started by User Authentication\n> Active\n\n2. Access Group\n> 최대 16개 설정 가능",
-      "1. Started by User Authentication\n> Active\n\n2. Access Group\n> 미선택\n> 선택",
-      "Started by User Authentication\n> Active",
-      "Started by User Authentication\n> Active",
-      "1. Started by User Authentication\n> Inactive",
-      "1. Started by User Authentication\n> Active",
-      "Zone 삭제\n> 개별삭제\n> 전체삭제",
-      "Door \"A\" 로 구성된 Schedule Unlock Zone",
-      "> 휴일군에 Time Slot 미설정\n> 휴일군에 Time Slot 설정",
-      "1. 조건\n - Door Status : Opened 상태\n - Scheduled Unlock Zone 동작 중\n\n2. 동작\n - Manual Lock, Manual Unlock, Release, Open, Clear Alarm 버튼 입력\n - 버튼 입력 후 Closed 설정(접지 해제)\n\n3. 결과 (각 Case 결과 확인)\n - Opened 상태에서 버튼 입력 결과\n - 버튼 입력 후 Closed 설정(접지 해제) 결과",
-      "우선 순위 확인\n> Fire Alarm Zone\n> Manual Lock/Unlcok (Monitoring > Door Status)\n> Scheduled Unlock Zone",
-      "Slave \n> Device, I/O Device",
-      "Slave \n> Device, I/O Device"
-    ],
-    "expected_result": [
-      "> Door 선택 시 Door, Schedule을 지정하여 Schedule Unlock Zone을 생성할 수 있다.\n> Elevator 선택 시 Elevator, Floor, Schedule을 지정하여 Schedule Unlock Zone을 생성 할 수 있다. ",
-      "> Active 설정으로 생성한 Zone인 경우 Schedule Unlock으로 동작해야 한다.\n: Schedule Unlock 의 설정에 의해 인증 성공/실패 발생한다.\n> Inactive 설정으로 생성한 Zone인 경우 Schedule Unlock이 동작하지 않아야 한다.\n: Normal상태로 동작",
-      "> Door Status 의 Door Status Type 에 Schedule Unlock 표시한다.\n> Zone Status 의 Status 에 Schedule Unlock 표시한다.\n> 인증 성공 발생한다.",
-      "> 스케줄에 설정된 시간이 되면 자동으로 Unlocked 된다.\n: 이후 Unlocked 상태 유지\n> 스케줄에 설정된 시간에 인증시 인증성공으로 동작하지만 Locked 동작은 하지 않아야 한다.\n: Unlocked 상태 유지\n> 스케줄에 설정된 시간이 끝나면 자동으로 Locked 되어야 한다.",
-      "> Started by User Authentication Access Group 은 최대 16개를 설정할 수 있어야 한다.\n> Scheduled Unlock Zone 추가에 이상이 없어야 한다.",
-      "> Access Group 선택하지 않은 경우 Zone 생성이 불가하다.\n> Access Group 선택한 경우 스케줄에 설정된 시간이 되어도 자동으로 Unlocked 되지 않고 Started by User Authentication Access Group 에 속한 사용자가 인증시 Unlocked 된다.\n: 이후 Unlocked 상태 유지",
-      "> Started by User Authentication Access Group 에 속하지 않은 사용자로 인증시 인증성공 발생하고 Unlocked 후 Locked 된다.\n> Started by User Authentication Access Group 에 속한 사용자로 인증시 인증성공 발생하고 Unlocked 된다.\n: 이후 Unlocked 상태 유지\n> Started by User Authentication Access Group 에 속하지 않은 사용자 재인증시 인증성공 발생하나 Locked 동작은 하지 않아야 한다.\n: Unlocked 상태 유지",
-      "> 스케줄에 설정된 시간에 인증시 인증성공으로 동작하지만 Locked 동작은 하지 않아야 한다.\n: Unlocked 상태 유지\n> 스케줄에 설정된 시간이 끝나면 자동으로 Locked 되어야 한다.",
-      "1. Unlocked 상태를 유지해야 한다.",
-      "1. Locked 상태로 변경된다.\n> Group 에 속한 사용자로 재인증시 Unlocked 로 변경",
-      "Zone에 대해 개별삭제/전체삭제를 할 수 있어야 한다.\n> 삭제 시 Monitoring > Door Status > Door Status Type : Normal로 상태 변경",
-      "Zone 정보 변경이 가능해야 한다.",
-      "Zone에서 설정한 Schedule Unlock Zone보다 Monitoring에서의 Unlock/Lock의 우선순위가 높다.",
-      "11:59:59 PM 까지 Schedule Locked상태를 유지하다 12:00:00 PM에 Schedule Unlocked 상태로 변경되어야 한다. \n> Schedule Unlock Authentication 설정 시에는 인증을 해야 Zone Status가 Schedule Unlock으로 표시됨, 인증 전에는 Normal 상태에서",
-      "> Door Status 의 Door Relay 는 Locked 로, Door Status Type 은 Schedule Unlock, Operator Lock 으로 표시된다.\n> Zone Status 의 Status 는 Schedule Unlock 으로 표시된다.\n> Door의 Status와 Zone의 Status는 별개로 동작 해야 함",
-      "> 휴일군에 설정한 스케줄대로 동작되어야 한다.\n> Unlock Zone의 출입문 열림 상태는 재부팅 후에도 유지되어야 한다.",
-      "1. Manual Lock 선택시\n1) Manual Lock 버튼 입력 결과 : Success 팝업\n: Opened / Schedule Unlock / Unlocked\n2) Manual Lock 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Unlock, Operator Lock / Locked\n3) 버튼 입력 없이 Closed 설정(접지 해제) 결과\n: Closed / Schedule Unlock / Unlocked(공통)\n\n2. Manual Unlock 선택시\n1) Manual Unlock 버튼 입력 결과 : Success 팝업 발생\n: Opened / Schedule Unlock, Operator Unlock / Unlocked\n2) Manual Unlock 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Unlock, Operator Unlock / Unlocked\n\n3. Release 선택시\n1) Release 버튼 입력 결과 : Success 팝업\n: Opened / Schedule Unlock / Unlocked\n2) Release 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Unlock / Unlocked\n\n4. Open 선택시\n1) Open 버튼 입력 결과 : Warning 팝업(Release the alert or lock and try again Door Name:Schedule Unlock)\n: Opened / Schedule Unlock / Unlocked\n2) Open 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Unlock / Unlocked\n\n5. Clear Alarm 선택시\n1) Clear Alarm 버튼 입력 결과 : Success 팝업\n: Opened / Schedule Unlock / Unlocked\n2) Clear Alarm 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Unlock / Unlocked",
-      "> 최초 Scheduled Unlock 에 의해 Unlocked 된다.\n> Fire Alarm 발생시 Unlocked 유지된다. (Fire Alarm 이 Scheduled Unlock 보다 우선순위가 높다)\n> Manual Lock 발생시 Unlocked 유지된다. (Manual Lock 이 Fire Alarm 보다 우선순위가 낮다)\n> Fire Alarm 해제 후 Manual Lock 발생시 Locked 된다. (Manual Lock 이 Scheduled Unlock 보다 우선순위가 높다)\n> Fire Alarm 해제 후 Manual Unlock 발생시 Unlocked 유지된다. (Manual Unlock 이 Scheduled Unlock 보다 우선순위가 높다)\n> Manual Lock/Unlock 해제 후 Scheduled Unlock 에 의해 Unlocked 된다.",
-      "1. 연결이 끊겼다 재연결되면 Relay On 상태로 동작되어야 한다.",
-      "1. Master와 재연결 시 계속 Relay Off로 동작되어야 한다."
-    ]
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 13862,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 34696,
+              "latestFinalId": 34696
+            },
+            {
+              "environment": "ES1",
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 29832,
+              "latestFinalId": 29832
+            },
+            {
+              "environment": "BioStarV2.9.6.30",
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 29832,
+              "latestFinalId": 29832
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_170117(UnitTest)",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 5625,
+              "latestFinalId": 5625
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_190805_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15207,
+              "latestFinalId": 15207
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.2.8_20160603",
+          "statusResults": [
+            {
+              "latest": 1,
+              "latestFinal": 0,
+              "latestId": 1745,
+              "latestFinalId": 1566
+            }
+          ]
+        },
+        {
+          "group": "FL_V1.0_190515(PS)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 14120,
+              "latestFinalId": 14120
+            }
+          ]
+        },
+        {
+          "group": "V1.7.1_181204(Hotfix)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12636,
+              "latestFinalId": 12636
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_181210_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 12761,
+              "latestFinalId": 12761
+            }
+          ]
+        },
+        {
+          "group": "V1.1.5_4_151014(All)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 82,
+              "latestFinalId": 82
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0 170331",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 8607,
+              "latestFinalId": 8607
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_181119_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 12918,
+              "latestFinalId": 12918
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_190809_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15568,
+              "latestFinalId": 15568
+            }
+          ]
+        },
+        {
+          "group": "V1.8.0_190806_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15294,
+              "latestFinalId": 15294
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180322",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10131,
+              "latestFinalId": 10131
+            }
+          ]
+        },
+        {
+          "group": "V1.7.0_190806_Interaction 7차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15066,
+              "latestFinalId": 15066
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.1.5_5 - 20151016(All)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 5226,
+              "latestFinalId": 5150
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_190806_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15425,
+              "latestFinalId": 15425
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_20200601_Interaction 12차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 17157,
+              "latestFinalId": 17157
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "구역 - Scheduled Unlock Zone(Door)",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 12054,
+          "index": 1,
+          "step": "[Door/Elevator - Door 설정된 상태]\n\n1. Zone> Add Zone> Scheduled Unlock Zone\n2. Active/Inactive 설정 > Door/Elevator 설정 > Zone 생성",
+          "data": "Active/Inactive - Door/Elevator\n> Active\n> Inactive\n",
+          "result": "> Door 선택 시 Door, Schedule을 지정하여 Schedule Unlock Zone을 생성할 수 있다.\n> Elevator 선택 시 Elevator, Floor, Schedule을 지정하여 Schedule Unlock Zone을 생성 할 수 있다. ",
+          "attachments": []
+        },
+        {
+          "id": 2207,
+          "index": 2,
+          "step": "[Door/Elevator - Door 설정된 상태]\n\n1. Zone> Add Zone> Scheduled Unlock Zone\n2. Active/Inactive 설정 > Zone 생성",
+          "data": "Active/Inactive - Door/Elevator\n> Active\n> Inactive",
+          "result": "> Active 설정으로 생성한 Zone인 경우 Schedule Unlock으로 동작해야 한다.\n: Schedule Unlock 의 설정에 의해 인증 성공/실패 발생한다.\n> Inactive 설정으로 생성한 Zone인 경우 Schedule Unlock이 동작하지 않아야 한다.\n: Normal상태로 동작",
+          "attachments": []
+        },
+        {
+          "id": 2208,
+          "index": 3,
+          "step": "[Door/Elevator - Door 설정된 상태]\n\n1. Zone> Add Zone> Scheduled Unlock Zone\n2. Started by User Authentication 설정 > 스케줄 설정 > Zone 생성\n3. 스케줄에 설정된 시간 > Monitoring\n4. Door Status > Door Status Type 확인\n5. Zone Status > Status 확인\n6. 장치에서 인증 시도",
+          "data": "Started by User Authentication\n> Inactive\n> Active",
+          "result": "> Door Status 의 Door Status Type 에 Schedule Unlock 표시한다.\n> Zone Status 의 Status 에 Schedule Unlock 표시한다.\n> 인증 성공 발생한다.",
+          "attachments": []
+        },
+        {
+          "id": 2213,
+          "index": 4,
+          "step": "[Door/Elevator - Door 설정된 상태]\n\n1. Zone> Add Zone> Scheduled Unlock Zone\n2. Started by User Authentication : Inactive 설정\n3. 스케줄 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 인증시도\n5. 스케줄에 설정된 시간이 끝날 때의 동작 확인",
+          "data": "Started by User Authentication\n> Inactive",
+          "result": "> 스케줄에 설정된 시간이 되면 자동으로 Unlocked 된다.\n: 이후 Unlocked 상태 유지\n> 스케줄에 설정된 시간에 인증시 인증성공으로 동작하지만 Locked 동작은 하지 않아야 한다.\n: Unlocked 상태 유지\n> 스케줄에 설정된 시간이 끝나면 자동으로 Locked 되어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 2212,
+          "index": 5,
+          "step": "[Door/Elevator - Door 설정된 상태]\n\n1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정\n3. 스케줄 설정\n4. Scheduled Unlock Authentication Group 설정 후 적용",
+          "data": "1. Started by User Authentication\n> Active\n\n2. Access Group\n> 최대 16개 설정 가능",
+          "result": "> Started by User Authentication Access Group 은 최대 16개를 설정할 수 있어야 한다.\n> Scheduled Unlock Zone 추가에 이상이 없어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 2227,
+          "index": 6,
+          "step": "[Door/Elevator - Door 설정된 상태]\n\n1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정\n3. 스케줄 설정 > Access Group 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 Access Group 에 속한 사용자로 인증시도",
+          "data": "1. Started by User Authentication\n> Active\n\n2. Access Group\n> 미선택\n> 선택",
+          "result": "> Access Group 선택하지 않은 경우 Zone 생성이 불가하다.\n> Access Group 선택한 경우 스케줄에 설정된 시간이 되어도 자동으로 Unlocked 되지 않고 Started by User Authentication Access Group 에 속한 사용자가 인증시 Unlocked 된다.\n: 이후 Unlocked 상태 유지",
+          "attachments": []
+        },
+        {
+          "id": 2228,
+          "index": 7,
+          "step": "1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정 > 스케줄 설정 > Access Group 설정 > Zone 생성\n3. 스케줄에 설정된 시간에 Started by User Authentication Access Group 에 속하지 않은 사용자 인증시도\n4. 스케줄에 설정된 시간에 Started by User Authentication Access Group 에 속한 사용자 인증시도\n5. 스케줄에 설정된 시간에 Started by User Authentication Access Group 에 속하지 않은 사용자 인증시도",
+          "data": "Started by User Authentication\n> Active",
+          "result": "> Started by User Authentication Access Group 에 속하지 않은 사용자로 인증시 인증성공 발생하고 Unlocked 후 Locked 된다.\n> Started by User Authentication Access Group 에 속한 사용자로 인증시 인증성공 발생하고 Unlocked 된다.\n: 이후 Unlocked 상태 유지\n> Started by User Authentication Access Group 에 속하지 않은 사용자 재인증시 인증성공 발생하나 Locked 동작은 하지 않아야 한다.\n: Unlocked 상태 유지",
+          "attachments": []
+        },
+        {
+          "id": 2224,
+          "index": 8,
+          "step": "1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정\n3. 스케줄 설정 > Started by User Authentication Access Group 설정 > Zone 생성\n4. 스케줄에 설정된 시간에 인증시도\n5. 스케줄에 설정된 시간이 끝날 때의 동작 확인",
+          "data": "Started by User Authentication\n> Active",
+          "result": "> 스케줄에 설정된 시간에 인증시 인증성공으로 동작하지만 Locked 동작은 하지 않아야 한다.\n: Unlocked 상태 유지\n> 스케줄에 설정된 시간이 끝나면 자동으로 Locked 되어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 2215,
+          "index": 9,
+          "step": "1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정\n3. 현재 시간이 포함된 스케줄 설정 후 적용\n4. Master 장치 Reboot 시도",
+          "data": "1. Started by User Authentication\n> Inactive",
+          "result": "1. Unlocked 상태를 유지해야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 11082,
+          "index": 10,
+          "step": "[Door/Elevator - Door 설정된 상태]\n\n1. Scheduled Unlock Zone 생성\n2. Started by User Authentication 설정\n3. 현재 시간이 포함된 스케줄 설정 후 적용\n4. Group에 속한 사용자로 인증\n5. (Unlock상태) Master 장치 Reboot 시도",
+          "data": "1. Started by User Authentication\n> Active",
+          "result": "1. Locked 상태로 변경된다.\n> Group 에 속한 사용자로 재인증시 Unlocked 로 변경",
+          "attachments": []
+        },
+        {
+          "id": 2216,
+          "index": 11,
+          "step": "[Scheduled Unlock Zone 다수 생성된 상태]\n\n1. Zone > Scheduled Unlock\n2. 하나 or 다수의 Zone 선택 > 삭제",
+          "data": "Zone 삭제\n> 개별삭제\n> 전체삭제",
+          "result": "Zone에 대해 개별삭제/전체삭제를 할 수 있어야 한다.\n> 삭제 시 Monitoring > Door Status > Door Status Type : Normal로 상태 변경",
+          "attachments": []
+        },
+        {
+          "id": 2217,
+          "index": 12,
+          "step": "1. Zone > Scheduled Unlock > Zone 선택\n2. 정보 편집 > Apply",
+          "data": "",
+          "result": "Zone 정보 변경이 가능해야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 2219,
+          "index": 13,
+          "step": "1. Zone> Add Zone> Schedule Unlock Zone\n2. 현재 시간이 포함된 스케줄 설정 > Zone 생성\n3. Monitoring> Door Status> Zone에 설정된 Door선택\n4. Unlock or Lock 버튼 클릭",
+          "data": "",
+          "result": "Zone에서 설정한 Schedule Unlock Zone보다 Monitoring에서의 Unlock/Lock의 우선순위가 높다.",
+          "attachments": []
+        },
+        {
+          "id": 2220,
+          "index": 14,
+          "step": "[A Door 생성한 상태]\n\n1. Zone> Add Schedule Lock Zone> 강제잠금 스케줄- 12:00AM~12:00PM 설정\n2. Add Schedule Unlock Zone> 강제열림 스케줄- 12:00PM~12:00AM 설정\n3. 경계가 되는 시간일 때 동작확인",
+          "data": "",
+          "result": "11:59:59 PM 까지 Schedule Locked상태를 유지하다 12:00:00 PM에 Schedule Unlocked 상태로 변경되어야 한다. \n> Schedule Unlock Authentication 설정 시에는 인증을 해야 Zone Status가 Schedule Unlock으로 표시됨, 인증 전에는 Normal 상태에서",
+          "attachments": []
+        },
+        {
+          "id": 2221,
+          "index": 15,
+          "step": "1. Door> Add Door> Door \"A\" 생성\n2. Zone> Add Zone> Scheduled Unlock Zone> Door \"A\" 선택> 스케줄 설정> Zone 생성\n3. 스케줄에 설정된 시간에 Monitoring 진입\n4. Door Status> Door \"A\" 선택> Manual Lock 버튼 선택\n5. Door Status 의 Door Status Type, Door Relay 확인\n6. Zone Status 의 Status 확인",
+          "data": "Door \"A\" 로 구성된 Schedule Unlock Zone",
+          "result": "> Door Status 의 Door Relay 는 Locked 로, Door Status Type 은 Schedule Unlock, Operator Lock 으로 표시된다.\n> Zone Status 의 Status 는 Schedule Unlock 으로 표시된다.\n> Door의 Status와 Zone의 Status는 별개로 동작 해야 함",
+          "attachments": []
+        },
+        {
+          "id": 2222,
+          "index": 16,
+          "step": "[스케줄 \"A\" -> 휴일군 설정된 상태]\n\n1. Door> Add Door> Door \"A\" 생성\n2. Zone> Add Zone> Scheduled Unlock Zone> Door \"A\" 선택> 스케줄 \"A\" 선택> Zone 생성\n3. 스케줄 \"A\"에 설정한 휴일군일 때 동작확인\n4. Master 장치를 Reboot\n5. 문열림 상태 확인",
+          "data": "> 휴일군에 Time Slot 미설정\n> 휴일군에 Time Slot 설정",
+          "result": "> 휴일군에 설정한 스케줄대로 동작되어야 한다.\n> Unlock Zone의 출입문 열림 상태는 재부팅 후에도 유지되어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 2251,
+          "index": 17,
+          "step": "[Door, Scheduled Unlock Zone 추가된 상태]\n\n1. Door Status : Open 동작(Door 내 설정한 Door Sensor와 Exit Button Input 접지)\n2. Scheduled Unlock Zone 의 스케줄에 의한 Schedule Unlock 동작\n3. Monitoring > Door Status 내 Manual Lock/Unlock, Release, Open, Clear Alarm 버튼 선택",
+          "data": "1. 조건\n - Door Status : Opened 상태\n - Scheduled Unlock Zone 동작 중\n\n2. 동작\n - Manual Lock, Manual Unlock, Release, Open, Clear Alarm 버튼 입력\n - 버튼 입력 후 Closed 설정(접지 해제)\n\n3. 결과 (각 Case 결과 확인)\n - Opened 상태에서 버튼 입력 결과\n - 버튼 입력 후 Closed 설정(접지 해제) 결과",
+          "result": "1. Manual Lock 선택시\n1) Manual Lock 버튼 입력 결과 : Success 팝업\n: Opened / Schedule Unlock / Unlocked\n2) Manual Lock 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Unlock, Operator Lock / Locked\n3) 버튼 입력 없이 Closed 설정(접지 해제) 결과\n: Closed / Schedule Unlock / Unlocked(공통)\n\n2. Manual Unlock 선택시\n1) Manual Unlock 버튼 입력 결과 : Success 팝업 발생\n: Opened / Schedule Unlock, Operator Unlock / Unlocked\n2) Manual Unlock 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Unlock, Operator Unlock / Unlocked\n\n3. Release 선택시\n1) Release 버튼 입력 결과 : Success 팝업\n: Opened / Schedule Unlock / Unlocked\n2) Release 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Unlock / Unlocked\n\n4. Open 선택시\n1) Open 버튼 입력 결과 : Warning 팝업(Release the alert or lock and try again Door Name:Schedule Unlock)\n: Opened / Schedule Unlock / Unlocked\n2) Open 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Unlock / Unlocked\n\n5. Clear Alarm 선택시\n1) Clear Alarm 버튼 입력 결과 : Success 팝업\n: Opened / Schedule Unlock / Unlocked\n2) Clear Alarm 버튼 입력 후 Closed 설정(접지 해제) 결과\n: Closed / Schedule Unlock / Unlocked",
+          "attachments": []
+        },
+        {
+          "id": 2263,
+          "index": 18,
+          "step": "[Door/Elevator - Elevator 설정된 상태]\n\n1. Scheduled Unlock 동작\n2. Fire Alarm 동작\n3. Manual Lock 동작\n4. Manual Unlock 동작",
+          "data": "우선 순위 확인\n> Fire Alarm Zone\n> Manual Lock/Unlcok (Monitoring > Door Status)\n> Scheduled Unlock Zone",
+          "result": "> 최초 Scheduled Unlock 에 의해 Unlocked 된다.\n> Fire Alarm 발생시 Unlocked 유지된다. (Fire Alarm 이 Scheduled Unlock 보다 우선순위가 높다)\n> Manual Lock 발생시 Unlocked 유지된다. (Manual Lock 이 Fire Alarm 보다 우선순위가 낮다)\n> Fire Alarm 해제 후 Manual Lock 발생시 Locked 된다. (Manual Lock 이 Scheduled Unlock 보다 우선순위가 높다)\n> Fire Alarm 해제 후 Manual Unlock 발생시 Unlocked 유지된다. (Manual Unlock 이 Scheduled Unlock 보다 우선순위가 높다)\n> Manual Lock/Unlock 해제 후 Scheduled Unlock 에 의해 Unlocked 된다.",
+          "attachments": []
+        },
+        {
+          "id": 5290,
+          "index": 19,
+          "step": "1. RS485 연결\n2. Schedule Unlock Zone 시작\n3. Slave 장치 전원 재인가\n4. Slave 장치 부팅완료 후 Relay 상태 확인",
+          "data": "Slave \n> Device, I/O Device",
+          "result": "1. 연결이 끊겼다 재연결되면 Relay On 상태로 동작되어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 5291,
+          "index": 20,
+          "step": "1. RS485 연결\n2. Door Relay로 설정된 Slave Disconnected 상태\n3. Schedule Unlock 시작 & 종료\n4. Slave Connected\n5. Slave 장치의 Relay 상태 확인",
+          "data": "Slave \n> Device, I/O Device",
+          "result": "1. Master와 재연결 시 계속 Relay Off로 동작되어야 한다.",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/13862/comment/94295",
+          "id": "94295",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+            "name": "김소영",
+            "key": "김소영",
+            "emailAddress": "sykim@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "김소영",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "Step 17 TC 삭제\r\n> Zone에 속한 Door의 Relay Port를 변경해 변경된 Port로의 동작여부 확인하는 TC\r\n   => Zone에 속한 Door의 설정에 대해 BioStar UI에서 변경불가로 확인불가능",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+            "name": "김소영",
+            "key": "김소영",
+            "emailAddress": "sykim@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "김소영",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2018-06-27T09:59:47.000+0900",
+          "updated": "2018-06-27T10:03:36.000+0900"
+        }
+      ],
+      "maxResults": 1,
+      "total": 1,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+      "name": "Minor (C)",
+      "id": "3"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+      "name": "완료",
+      "id": "10001",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "완료"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=kijo",
+      "name": "kijo",
+      "key": "kijo",
+      "emailAddress": "kijo@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "조광일",
+      "active": false,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzs35r:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2015-09-30T14:49:14.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

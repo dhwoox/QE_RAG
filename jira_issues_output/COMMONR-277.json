@@ -1,101 +1,480 @@
 {
-  "id": "COMMONR-277",
-  "content": [
-    [
-      1,
-      "[BioStar에 장치추가된 상태]\n\n1. Intelligent PD 옵션: Default 외의 값으로 설정\n2. Network Reset 수행\n3. Intelligent PD 옵션 설정값 확인",
-      "> Exception Code: 사용안함(Default)외 다른 값\n> Output Info: Card ID(Default)외 다른 값\n> OSDP ID: 0(Default)외 다른 값",
-      "1. Intelligent PD 옵션값이 초기화된다.\n> Exception Code: 사용안함(Default)\n> Output Info: Card ID(Default)\n> OSDP ID: 0(Default)"
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "44724",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/44724",
+  "key": "COMMONR-277",
+  "fields": {
+    "resolution": null,
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "0.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": "2025-08-05T09:43:25.301+0900",
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10173",
+      "value": "Major",
+      "id": "10173"
+    },
+    "customfield_10185": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
+      "value": "Medium (2-3일 이내 피드백)",
+      "id": "10220"
+    },
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "51736",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/51736",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "61290",
+          "key": "BEW3FW-37",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/61290",
+          "fields": {
+            "summary": "장치에서 네트워크 초기화 시 Intelligent PD 옵션 초기화 되지 않음",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "[BioStar에 장치추가된 상태]\n\n1. HID OSDP Tool과 연결\n2. 바이오스타에서 Intelligent PD 옵션 설정\n3. Network Reset 수행\n4. HID OSDP Tool 과의 연결상태 확인",
-      "Intelligent PD 옵션설정\n> Default 값으로 설정\n> Default 외 값으로 설정",
-      "1. Default 값으로 설정되었던 경우 장치 부팅 후 재연결되어 통신한다.\n\n2. Default 외 값으로 설정되었던 경우 HID Tool과의 연결을 끊었다가 다시 연결을 시켜줘야 한다."
+    "assignee": null,
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 10.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EC%A1%B0%EC%9E%84%EC%84%B1",
+      "name": "조임성",
+      "key": "조임성",
+      "emailAddress": "isjo@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607"
+      },
+      "displayName": "조임성",
+      "active": false,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-277/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@351502e[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@54e01197[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@49673eda[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@1d5fe2c8[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@3b3c89ad[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@d0248c7[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@7d633653[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@1f48c295[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@40e64130[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@5fbd7d9b[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@3b880991[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@620d281f[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": null,
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-277/watchers",
+      "watchCount": 1,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T10:10:21.000+0900",
+    "timeoriginalestimate": null,
+    "description": "요구사항 정의\r\n > http://192.168.1.4:8001/browse/BDP-92\r\n\r\n관련 테스트를 진행하기 위한 전제조건\r\n> CS40 V1.5.1 / BEW2 V1.6.3 / BSL2 V1.6.1 / BEP2 V1.4.1 / XP2 V1.2.3 이상 버전\r\n> RS-485 mode 가 Default 상태로 Suprema 장치가 아닌 3rd-party Controller 에 연결> non-secure 모드\r\n> non-secure 모드\r\n> HID OSDP Tool과 연결 필요.\r\n\r\n작성된 TestCase 내용\r\n > 장치 초기화에 따른 Exception Code / Use User ID / OSDP Address 옵션 초기화 유무 및 3rd party Controller와의 연결상태 확인\r\n - Network Reset: Intelligent PD 설정값 초기화로 동작\r\n - Config Reset: Intelligent PD 설정값 초기화로 동작\r\n - Without Network: Intelligent PD 설정값 유지\r\n - Secure Tamper: Intelligent PD 설정값 유지\r\n - Factory Reset: Intelligent PD 설정값 초기화로 동작",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p><span class=\"error\">&#91;BioStar에 장치추가된 상태&#93;</span></p>\n\n<p>1. Intelligent PD 옵션: Default 외의 값으로 설정<br/>2. Network Reset 수행<br/>3. Intelligent PD 옵션 설정값 확인</p></td><td><p>&gt; Exception Code: 사용안함(Default)외 다른 값<br/>&gt; Output Info: Card ID(Default)외 다른 값<br/>&gt; OSDP ID: 0(Default)외 다른 값</p></td><td><p>1. Intelligent PD 옵션값이 초기화된다.<br/>&gt; Exception Code: 사용안함(Default)<br/>&gt; Output Info: Card ID(Default)<br/>&gt; OSDP ID: 0(Default)</p></td></tr><tr><td>2</td><td><p><span class=\"error\">&#91;BioStar에 장치추가된 상태&#93;</span></p>\n\n<p>1. HID OSDP Tool과 연결<br/>2. 바이오스타에서 Intelligent PD 옵션 설정<br/>3. Network Reset 수행<br/>4. HID OSDP Tool 과의 연결상태 확인</p></td><td><p>Intelligent PD 옵션설정<br/>&gt; Default 값으로 설정<br/>&gt; Default 외 값으로 설정</p></td><td><p>1. Default 값으로 설정되었던 경우 장치 부팅 후 재연결되어 통신한다.</p>\n\n<p>2. Default 외 값으로 설정되었던 경우 HID Tool과의 연결을 끊었다가 다시 연결을 시켜줘야 한다.</p></td></tr><tr><td>3</td><td><p><span class=\"error\">&#91;BioStar에 장치추가된 상태&#93;</span></p>\n\n<p>1. 바이오스타에서 Intelligent PD 옵션: Default 외의 값으로 설정<br/>2. Reset All 수행<br/>3. Intelligent PD 옵션 설정값 확인</p></td><td></td><td><p>1. Intelligent PD 옵션값이 초기화된다.<br/>&gt; Exception Code: 사용안함(Default)<br/>&gt; Output Info: Card ID(Default)<br/>&gt; OSDP ID: 0(Default)</p></td></tr><tr><td>4</td><td><p><span class=\"error\">&#91;BioStar에 장치추가된 상태&#93;</span></p>\n\n<p>1. HID OSDP Tool과 연결<br/>2. 바이오스타에서 Intelligent PD 옵션 설정<br/>3. Reset All 수행<br/>4. HID OSDP Tool 과의 연결상태 확인</p></td><td><p>Intelligent PD 옵션설정<br/>&gt; Default 값으로 설정<br/>&gt; Default 외 값으로 설정</p></td><td><p>1. Default 값으로 설정되었던 경우 장치 부팅 후 재연결되어 통신한다.</p>\n\n<p>2. Default 외 값으로 설정되었던 경우 HID Tool과의 연결을 끊었다가 다시 연결을 시켜줘야 한다.</p></td></tr><tr><td>5</td><td><p><span class=\"error\">&#91;BioStar에 장치추가된 상태&#93;</span></p>\n\n<p>1. Intelligent PD 옵션: Default 외의 값으로 설정<br/>2. Without Network 수행<br/>3. Intelligent PD 옵션 설정값 확인</p></td><td></td><td><p>1. Intelligent PD 설정값이 유지된다.</p></td></tr><tr><td>6</td><td><p><span class=\"error\">&#91;BioStar에 장치추가된 상태&#93;</span></p>\n\n<p>1. HID OSDP Tool과 연결<br/>2. 바이오스타에서 Intelligent PD 옵션 설정<br/>3. Without Network 수행<br/>4. HID OSDP Tool 과의 연결상태 확인</p></td><td><p>Intelligent PD 옵션설정<br/>&gt; Default 값으로 설정<br/>&gt; Default 외 값으로 설정</p></td><td><p>1. Intelligent PD 설정값이 유지되기 때문에 장치 부팅 후 재연결되어 통신한다.</p></td></tr><tr><td>7</td><td><p><span class=\"error\">&#91;BioStar에 장치추가된 상태&#93;</span></p>\n\n<p>1. Intelligent PD 옵션: Default 외의 값으로 설정<br/>2. Secure Tamper 발생<br/>3. Intelligent PD 옵션 설정값 확인</p></td><td></td><td><p>1. Intelligent PD 설정값이 유지된다.</p></td></tr><tr><td>8</td><td><p><span class=\"error\">&#91;BioStar에 장치추가된 상태&#93;</span></p>\n\n<p>1. HID OSDP Tool과 연결<br/>2. 바이오스타에서 Intelligent PD 옵션 설정<br/>3. Secure Tamper 발생<br/>4. HID OSDP Tool 과의 연결상태 확인</p></td><td><p>Intelligent PD 옵션설정<br/>&gt; Default 값으로 설정<br/>&gt; Default 외 값으로 설정</p></td><td><p>1. Secure Tamper 발생 후 재연결되어 통신한다.</p></td></tr><tr><td>9</td><td><p><span class=\"error\">&#91;BioStar에 장치추가 및 인증서 저장된 상태&#93;</span></p>\n\n<p>1. Intelligent PD 옵션: Default 외의 값으로 설정<br/>2. Factory Default 수행<br/>3. Intelligent PD 옵션 설정값 확인</p></td><td></td><td><p>1. Intelligent PD 옵션값이 초기화된다.<br/>&gt; Exception Code: 사용안함(Default)<br/>&gt; Output Info: Card ID(Default)<br/>&gt; OSDP ID: 0(Default)</p></td></tr><tr><td>10</td><td><p><span class=\"error\">&#91;BioStar에 장치추가 및 인증서 저장된 상태&#93;</span></p>\n\n<p>1. HID OSDP Tool과 연결<br/>2. 바이오스타에서 Intelligent PD 옵션 설정<br/>3. Factory Default 수행<br/>4. HID OSDP Tool 과의 연결상태 확인</p></td><td><p>Intelligent PD 옵션설정<br/>&gt; Default 값으로 설정<br/>&gt; Default 외 값으로 설정</p></td><td><p>1. Default 값으로 설정되었던 경우 장치 부팅 후 재연결되어 통신한다.</p>\n\n<p>2. Default 외 값으로 설정되었던 경우 HID Tool과의 연결을 끊었다가 다시 연결을 시켜줘야 한다.</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [
+      "COMMONR-275"
     ],
-    [
-      3,
-      "[BioStar에 장치추가된 상태]\n\n1. 바이오스타에서 Intelligent PD 옵션: Default 외의 값으로 설정\n2. Reset All 수행\n3. Intelligent PD 옵션 설정값 확인",
-      "",
-      "1. Intelligent PD 옵션값이 초기화된다.\n> Exception Code: 사용안함(Default)\n> Output Info: Card ID(Default)\n> OSDP ID: 0(Default)"
-    ],
-    [
-      4,
-      "[BioStar에 장치추가된 상태]\n\n1. HID OSDP Tool과 연결\n2. 바이오스타에서 Intelligent PD 옵션 설정\n3. Reset All 수행\n4. HID OSDP Tool 과의 연결상태 확인",
-      "Intelligent PD 옵션설정\n> Default 값으로 설정\n> Default 외 값으로 설정",
-      "1. Default 값으로 설정되었던 경우 장치 부팅 후 재연결되어 통신한다.\n\n2. Default 외 값으로 설정되었던 경우 HID Tool과의 연결을 끊었다가 다시 연결을 시켜줘야 한다."
-    ],
-    [
-      5,
-      "[BioStar에 장치추가된 상태]\n\n1. Intelligent PD 옵션: Default 외의 값으로 설정\n2. Without Network 수행\n3. Intelligent PD 옵션 설정값 확인",
-      "",
-      "1. Intelligent PD 설정값이 유지된다."
-    ],
-    [
-      6,
-      "[BioStar에 장치추가된 상태]\n\n1. HID OSDP Tool과 연결\n2. 바이오스타에서 Intelligent PD 옵션 설정\n3. Without Network 수행\n4. HID OSDP Tool 과의 연결상태 확인",
-      "Intelligent PD 옵션설정\n> Default 값으로 설정\n> Default 외 값으로 설정",
-      "1. Intelligent PD 설정값이 유지되기 때문에 장치 부팅 후 재연결되어 통신한다."
-    ],
-    [
-      7,
-      "[BioStar에 장치추가된 상태]\n\n1. Intelligent PD 옵션: Default 외의 값으로 설정\n2. Secure Tamper 발생\n3. Intelligent PD 옵션 설정값 확인",
-      "",
-      "1. Intelligent PD 설정값이 유지된다."
-    ],
-    [
-      8,
-      "[BioStar에 장치추가된 상태]\n\n1. HID OSDP Tool과 연결\n2. 바이오스타에서 Intelligent PD 옵션 설정\n3. Secure Tamper 발생\n4. HID OSDP Tool 과의 연결상태 확인",
-      "Intelligent PD 옵션설정\n> Default 값으로 설정\n> Default 외 값으로 설정",
-      "1. Secure Tamper 발생 후 재연결되어 통신한다."
-    ],
-    [
-      9,
-      "[BioStar에 장치추가 및 인증서 저장된 상태]\n\n1. Intelligent PD 옵션: Default 외의 값으로 설정\n2. Factory Default 수행\n3. Intelligent PD 옵션 설정값 확인",
-      "",
-      "1. Intelligent PD 옵션값이 초기화된다.\n> Exception Code: 사용안함(Default)\n> Output Info: Card ID(Default)\n> OSDP ID: 0(Default)"
-    ],
-    [
-      10,
-      "[BioStar에 장치추가 및 인증서 저장된 상태]\n\n1. HID OSDP Tool과 연결\n2. 바이오스타에서 Intelligent PD 옵션 설정\n3. Factory Default 수행\n4. HID OSDP Tool 과의 연결상태 확인",
-      "Intelligent PD 옵션설정\n> Default 값으로 설정\n> Default 외 값으로 설정",
-      "1. Default 값으로 설정되었던 경우 장치 부팅 후 재연결되어 통신한다.\n\n2. Default 외 값으로 설정되었던 경우 HID Tool과의 연결을 끊었다가 다시 연결을 시켜줘야 한다."
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-277",
-    "description": "",
-    "test_step": [
-      "[BioStar에 장치추가된 상태]\n\n1. Intelligent PD 옵션: Default 외의 값으로 설정\n2. Network Reset 수행\n3. Intelligent PD 옵션 설정값 확인",
-      "[BioStar에 장치추가된 상태]\n\n1. HID OSDP Tool과 연결\n2. 바이오스타에서 Intelligent PD 옵션 설정\n3. Network Reset 수행\n4. HID OSDP Tool 과의 연결상태 확인",
-      "[BioStar에 장치추가된 상태]\n\n1. 바이오스타에서 Intelligent PD 옵션: Default 외의 값으로 설정\n2. Reset All 수행\n3. Intelligent PD 옵션 설정값 확인",
-      "[BioStar에 장치추가된 상태]\n\n1. HID OSDP Tool과 연결\n2. 바이오스타에서 Intelligent PD 옵션 설정\n3. Reset All 수행\n4. HID OSDP Tool 과의 연결상태 확인",
-      "[BioStar에 장치추가된 상태]\n\n1. Intelligent PD 옵션: Default 외의 값으로 설정\n2. Without Network 수행\n3. Intelligent PD 옵션 설정값 확인",
-      "[BioStar에 장치추가된 상태]\n\n1. HID OSDP Tool과 연결\n2. 바이오스타에서 Intelligent PD 옵션 설정\n3. Without Network 수행\n4. HID OSDP Tool 과의 연결상태 확인",
-      "[BioStar에 장치추가된 상태]\n\n1. Intelligent PD 옵션: Default 외의 값으로 설정\n2. Secure Tamper 발생\n3. Intelligent PD 옵션 설정값 확인",
-      "[BioStar에 장치추가된 상태]\n\n1. HID OSDP Tool과 연결\n2. 바이오스타에서 Intelligent PD 옵션 설정\n3. Secure Tamper 발생\n4. HID OSDP Tool 과의 연결상태 확인",
-      "[BioStar에 장치추가 및 인증서 저장된 상태]\n\n1. Intelligent PD 옵션: Default 외의 값으로 설정\n2. Factory Default 수행\n3. Intelligent PD 옵션 설정값 확인",
-      "[BioStar에 장치추가 및 인증서 저장된 상태]\n\n1. HID OSDP Tool과 연결\n2. 바이오스타에서 Intelligent PD 옵션 설정\n3. Factory Default 수행\n4. HID OSDP Tool 과의 연결상태 확인"
-    ],
-    "data": [
-      "> Exception Code: 사용안함(Default)외 다른 값\n> Output Info: Card ID(Default)외 다른 값\n> OSDP ID: 0(Default)외 다른 값",
-      "Intelligent PD 옵션설정\n> Default 값으로 설정\n> Default 외 값으로 설정",
-      "Intelligent PD 옵션설정\n> Default 값으로 설정\n> Default 외 값으로 설정",
-      "Intelligent PD 옵션설정\n> Default 값으로 설정\n> Default 외 값으로 설정",
-      "Intelligent PD 옵션설정\n> Default 값으로 설정\n> Default 외 값으로 설정",
-      "Intelligent PD 옵션설정\n> Default 값으로 설정\n> Default 외 값으로 설정"
-    ],
-    "expected_result": [
-      "1. Intelligent PD 옵션값이 초기화된다.\n> Exception Code: 사용안함(Default)\n> Output Info: Card ID(Default)\n> OSDP ID: 0(Default)",
-      "1. Default 값으로 설정되었던 경우 장치 부팅 후 재연결되어 통신한다.\n\n2. Default 외 값으로 설정되었던 경우 HID Tool과의 연결을 끊었다가 다시 연결을 시켜줘야 한다.",
-      "1. Intelligent PD 옵션값이 초기화된다.\n> Exception Code: 사용안함(Default)\n> Output Info: Card ID(Default)\n> OSDP ID: 0(Default)",
-      "1. Default 값으로 설정되었던 경우 장치 부팅 후 재연결되어 통신한다.\n\n2. Default 외 값으로 설정되었던 경우 HID Tool과의 연결을 끊었다가 다시 연결을 시켜줘야 한다.",
-      "1. Intelligent PD 설정값이 유지된다.",
-      "1. Intelligent PD 설정값이 유지되기 때문에 장치 부팅 후 재연결되어 통신한다.",
-      "1. Intelligent PD 설정값이 유지된다.",
-      "1. Secure Tamper 발생 후 재연결되어 통신한다.",
-      "1. Intelligent PD 옵션값이 초기화된다.\n> Exception Code: 사용안함(Default)\n> Output Info: Card ID(Default)\n> OSDP ID: 0(Default)",
-      "1. Default 값으로 설정되었던 경우 장치 부팅 후 재연결되어 통신한다.\n\n2. Default 외 값으로 설정되었던 경우 HID Tool과의 연결을 끊었다가 다시 연결을 시켜줘야 한다."
-    ]
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 44724,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 34733,
+              "latestFinalId": 34733
+            },
+            {
+              "environment": "ES1",
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 29873,
+              "latestFinalId": 29873
+            },
+            {
+              "environment": "BioStarV2.9.6.30",
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 29873,
+              "latestFinalId": 29873
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "[Intelligent Slave] 장치 초기화에 따른 Intelligent PD 지원 옵션 초기화",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 14237,
+          "index": 1,
+          "step": "[BioStar에 장치추가된 상태]\n\n1. Intelligent PD 옵션: Default 외의 값으로 설정\n2. Network Reset 수행\n3. Intelligent PD 옵션 설정값 확인",
+          "data": "> Exception Code: 사용안함(Default)외 다른 값\n> Output Info: Card ID(Default)외 다른 값\n> OSDP ID: 0(Default)외 다른 값",
+          "result": "1. Intelligent PD 옵션값이 초기화된다.\n> Exception Code: 사용안함(Default)\n> Output Info: Card ID(Default)\n> OSDP ID: 0(Default)",
+          "attachments": []
+        },
+        {
+          "id": 14238,
+          "index": 2,
+          "step": "[BioStar에 장치추가된 상태]\n\n1. HID OSDP Tool과 연결\n2. 바이오스타에서 Intelligent PD 옵션 설정\n3. Network Reset 수행\n4. HID OSDP Tool 과의 연결상태 확인",
+          "data": "Intelligent PD 옵션설정\n> Default 값으로 설정\n> Default 외 값으로 설정",
+          "result": "1. Default 값으로 설정되었던 경우 장치 부팅 후 재연결되어 통신한다.\n\n2. Default 외 값으로 설정되었던 경우 HID Tool과의 연결을 끊었다가 다시 연결을 시켜줘야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 14239,
+          "index": 3,
+          "step": "[BioStar에 장치추가된 상태]\n\n1. 바이오스타에서 Intelligent PD 옵션: Default 외의 값으로 설정\n2. Reset All 수행\n3. Intelligent PD 옵션 설정값 확인",
+          "data": "",
+          "result": "1. Intelligent PD 옵션값이 초기화된다.\n> Exception Code: 사용안함(Default)\n> Output Info: Card ID(Default)\n> OSDP ID: 0(Default)",
+          "attachments": []
+        },
+        {
+          "id": 14240,
+          "index": 4,
+          "step": "[BioStar에 장치추가된 상태]\n\n1. HID OSDP Tool과 연결\n2. 바이오스타에서 Intelligent PD 옵션 설정\n3. Reset All 수행\n4. HID OSDP Tool 과의 연결상태 확인",
+          "data": "Intelligent PD 옵션설정\n> Default 값으로 설정\n> Default 외 값으로 설정",
+          "result": "1. Default 값으로 설정되었던 경우 장치 부팅 후 재연결되어 통신한다.\n\n2. Default 외 값으로 설정되었던 경우 HID Tool과의 연결을 끊었다가 다시 연결을 시켜줘야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 14241,
+          "index": 5,
+          "step": "[BioStar에 장치추가된 상태]\n\n1. Intelligent PD 옵션: Default 외의 값으로 설정\n2. Without Network 수행\n3. Intelligent PD 옵션 설정값 확인",
+          "data": "",
+          "result": "1. Intelligent PD 설정값이 유지된다.",
+          "attachments": []
+        },
+        {
+          "id": 14242,
+          "index": 6,
+          "step": "[BioStar에 장치추가된 상태]\n\n1. HID OSDP Tool과 연결\n2. 바이오스타에서 Intelligent PD 옵션 설정\n3. Without Network 수행\n4. HID OSDP Tool 과의 연결상태 확인",
+          "data": "Intelligent PD 옵션설정\n> Default 값으로 설정\n> Default 외 값으로 설정",
+          "result": "1. Intelligent PD 설정값이 유지되기 때문에 장치 부팅 후 재연결되어 통신한다.",
+          "attachments": []
+        },
+        {
+          "id": 14243,
+          "index": 7,
+          "step": "[BioStar에 장치추가된 상태]\n\n1. Intelligent PD 옵션: Default 외의 값으로 설정\n2. Secure Tamper 발생\n3. Intelligent PD 옵션 설정값 확인",
+          "data": "",
+          "result": "1. Intelligent PD 설정값이 유지된다.",
+          "attachments": []
+        },
+        {
+          "id": 14244,
+          "index": 8,
+          "step": "[BioStar에 장치추가된 상태]\n\n1. HID OSDP Tool과 연결\n2. 바이오스타에서 Intelligent PD 옵션 설정\n3. Secure Tamper 발생\n4. HID OSDP Tool 과의 연결상태 확인",
+          "data": "Intelligent PD 옵션설정\n> Default 값으로 설정\n> Default 외 값으로 설정",
+          "result": "1. Secure Tamper 발생 후 재연결되어 통신한다.",
+          "attachments": []
+        },
+        {
+          "id": 14245,
+          "index": 9,
+          "step": "[BioStar에 장치추가 및 인증서 저장된 상태]\n\n1. Intelligent PD 옵션: Default 외의 값으로 설정\n2. Factory Default 수행\n3. Intelligent PD 옵션 설정값 확인",
+          "data": "",
+          "result": "1. Intelligent PD 옵션값이 초기화된다.\n> Exception Code: 사용안함(Default)\n> Output Info: Card ID(Default)\n> OSDP ID: 0(Default)",
+          "attachments": []
+        },
+        {
+          "id": 14246,
+          "index": 10,
+          "step": "[BioStar에 장치추가 및 인증서 저장된 상태]\n\n1. HID OSDP Tool과 연결\n2. 바이오스타에서 Intelligent PD 옵션 설정\n3. Factory Default 수행\n4. HID OSDP Tool 과의 연결상태 확인",
+          "data": "Intelligent PD 옵션설정\n> Default 값으로 설정\n> Default 외 값으로 설정",
+          "result": "1. Default 값으로 설정되었던 경우 장치 부팅 후 재연결되어 통신한다.\n\n2. Default 외 값으로 설정되었던 경우 HID Tool과의 연결을 끊었다가 다시 연결을 시켜줘야 한다.",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [],
+      "maxResults": 0,
+      "total": 0,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+      "name": "미할당",
+      "id": "10100"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+      "name": "할 일",
+      "id": "10000",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "할 일"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EC%A1%B0%EC%9E%84%EC%84%B1",
+      "name": "조임성",
+      "key": "조임성",
+      "emailAddress": "isjo@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607"
+      },
+      "displayName": "조임성",
+      "active": false,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzvme7:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2021-08-02T10:05:05.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

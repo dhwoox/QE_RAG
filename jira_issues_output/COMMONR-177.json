@@ -1,139 +1,2189 @@
 {
-  "id": "COMMONR-177",
-  "content": [
-    [
-      1,
-      "[장치와 보안 통신: 사용]\n1. Device> UDP Search> 인증서를 가지지 않은 장치추가",
-      "장치의 네트워크 설정\n> 고정IP / 유동IP",
-      "1. 장치 추가 시 Root 인증서가 서버로 부터 장치에 전송이 된 후 서버와 통신가능하다.\n> 추가시 Disconnected로 동작 후 인증서 적용되면 Connected로 상태전환"
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "17842",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/17842",
+  "key": "COMMONR-177",
+  "fields": {
+    "resolution": null,
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "0.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": null,
+    "customfield_10185": null,
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "12846",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12846",
+        "type": {
+          "id": "10001",
+          "name": "Cloners",
+          "inward": "is cloned by",
+          "outward": "clones",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10001"
+        },
+        "outwardIssue": {
+          "id": "12801",
+          "key": "COMMONR-75",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12801",
+          "fields": {
+            "summary": "통신 - TCP/IP",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "Represents a Test",
+              "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+              "name": "Test",
+              "subtask": false
+            }
+          }
+        }
+      },
+      {
+        "id": "63029",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63029",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "69566",
+          "key": "CS20FW-113",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/69566",
+          "fields": {
+            "summary": "SSL 모드사용시 CS-20을 UDP Search에서 서버모드 변경하면 접속이 되지 않음(특정환경)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/3",
+              "description": "현재 담당자가 이 이슈를 처리하고 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/inprogress.png",
+              "name": "진행 중",
+              "id": "3",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/4",
+                "id": 4,
+                "key": "indeterminate",
+                "colorName": "yellow",
+                "name": "진행 중"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "26455",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/26455",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "34673",
+          "key": "BLNIIFW-695",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/34673",
+          "fields": {
+            "summary": "[통신 보안] SSL 통신 보안 사용 상태에서 FW Upgrade 시, 사용자 동기화 중 장치가 비정상 종료 되거나, Upgrade가 안되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "32855",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/32855",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "42810",
+          "key": "BSIIDII-1416",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/42810",
+          "fields": {
+            "summary": "[FirmWare Downgrade] 정규 버전 Downgrade 관련 오동작 문의",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "27861",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/27861",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "37445",
+          "key": "FLFW-561",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/37445",
+          "fields": {
+            "summary": "[통신 보안]인증서 존재하는 Slave 장치 연결 오동작",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14624",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14624",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19862",
+          "key": "BLIIFWI-640",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19862",
+          "fields": {
+            "summary": "[통신 보안(SSL/TLS) 서버모드로 연결된 A2 장치에 BioStar에서 기본 인증서로 사용으로 변경 시 BioStar에 연결이 안되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "18571",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/18571",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "24165",
+          "key": "BLNIIFW-36",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/24165",
+          "fields": {
+            "summary": "[통신 보안(SSL/TLS) Direct, Server Mode의 N2 장치에 대해서 통신 보안 사용으로 동작이 안되는 현상 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "16299",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/16299",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "21476",
+          "key": "CSTFW-81",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/21476",
+          "fields": {
+            "summary": "기본 인증서가 내려간 상태에서 외부인증서 내릴경우 장치에 새 인증서가 내려가지 않는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "16297",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/16297",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "21588",
+          "key": "CSTFW-91",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/21588",
+          "fields": {
+            "summary": "기본인증서 장치로 내린 후 서버와 연결이 안되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14649",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14649",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19898",
+          "key": "FSTIIFW-196",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19898",
+          "fields": {
+            "summary": "[통신 보안 (SSL/TLS) 사용]  [Device] FST2 장치 연결 후, 삭제하고 재연결시 장치보안으로 연결 불가",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19502",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19502",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "24931",
+          "key": "FSTIIFW-807",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/24931",
+          "fields": {
+            "summary": "[통신 보안(SSL/TLS) 사용] Delete the Root Certificate 실행 시 장치 재부팅 됨",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19500",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19500",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "24934",
+          "key": "FSTIIFW-808",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/24934",
+          "fields": {
+            "summary": "[통신 보안(SSL/TLS)] 장치 내에서 SSL 인증서 삭제 시 BioStar에 통신이 되는 현상 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13824",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13824",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19070",
+          "key": "TIIDFI-789",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19070",
+          "fields": {
+            "summary": "[통신 보안 (SSL/TLS)사용] 무선으로 서버 모드가 설정된 상태에서 장치가 계속 Watchdog에 의해 재부팅이 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "23377",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/23377",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "30044",
+          "key": "XPASSII-76",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/30044",
+          "fields": {
+            "summary": "인증서 내린 후 서버와 재연결이 안되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13585",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13585",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18908",
+          "key": "BEWIIFWDI-256",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18908",
+          "fields": {
+            "summary": "[SSL/TLS] 통신 보안 사용 시 Server Mode로 통신이 되지 않는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13607",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13607",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18784",
+          "key": "BLIIFWI-581",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18784",
+          "fields": {
+            "summary": "[IIN] Device to Server로 통신되지 않는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19149",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19149",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "24746",
+          "key": "BLIIFWI-865",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/24746",
+          "fields": {
+            "summary": "[Tester : 김민구] 장치와 보안통신 활성화 후 장치 재부팅되지 않음 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19155",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19155",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "24756",
+          "key": "BLIIFWI-868",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/24756",
+          "fields": {
+            "summary": "[Tester : 김민구] 인증서 존재하는 Slave 연결시 UDP/TCP 장치 검색/추가/연결됨 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19229",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19229",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "24865",
+          "key": "BLNIIFW-216",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/24865",
+          "fields": {
+            "summary": "[통신 보안(SSL/TLS)] 인증서 존재하는 Slave 장치의 TCP/UDP 연결 동작 사양 문의 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19464",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19464",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "25064",
+          "key": "BSIIDII-978",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/25064",
+          "fields": {
+            "summary": "[Tester : 이승훈] 인증서 존재하는 장비 제거 후 Biostar에서 통신 보안 Off 후 다시 통신 보안 On 할 경우 장비추가 시 Disconnected 상태로 추가되는 문제    ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19547",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19547",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "24976",
+          "key": "FSTIIFW-817",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/24976",
+          "fields": {
+            "summary": "통신보안, Data 암호화 사용 상태에서 Secure Tamper나 장치에서 SSL 인증서 삭제 후 장치의 RS 485 Mode를 Slave로 변경 시 SSL 인증서를 전송 받고, BioStar와 연결이 안되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "21475",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/21475",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "27720",
+          "key": "FSTIIFW-1051",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/27720",
+          "fields": {
+            "summary": "[Tester : 고재민] 장치와 보안통신 Enable상태에서 장치 Restore / Factory Reset을 진행해도 장치와 연결이 되지 않는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14489",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14489",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19679",
+          "key": "AUTODI-137",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19679",
+          "fields": {
+            "summary": "[통신 보안(SSL/TLS)] 통신 보안(SSL/TLS) 사용 시 A/B PC에서의 인증서가 동일하게 동작이 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      },
+      {
+        "id": "30299",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/30299",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "40471",
+          "key": "BFSFW-46",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/40471",
+          "fields": {
+            "summary": "[Open SSL] New Version Upgrade Test Case",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10401",
+              "id": "10401",
+              "description": "Represents a Sub Test Execution",
+              "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/sub-test-execution.png",
+              "name": "Sub Test Execution",
+              "subtask": true
+            }
+          }
+        }
+      },
+      {
+        "id": "13185",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13185",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "18034",
+          "key": "BEWIIFWDI-209",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18034",
+          "fields": {
+            "summary": "[Requirement]TCP/IP 기반 프로토콜에 Packet Sequence 검사 기능 추가",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "13186",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13186",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "18033",
+          "key": "BLIIFWI-510",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18033",
+          "fields": {
+            "summary": "[Requirement]TCP/IP 기반 프로토콜에 Packet Sequence 검사 기능 추가",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "13187",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13187",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "18031",
+          "key": "BSIIDII-347",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18031",
+          "fields": {
+            "summary": "[Requirement]TCP/IP 기반 프로토콜에 Packet Sequence 검사 기능 추가",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "13188",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13188",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "18032",
+          "key": "TIIDFI-715",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18032",
+          "fields": {
+            "summary": "[Requirement]TCP/IP 기반 프로토콜에 Packet Sequence 검사 기능 추가",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12873",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12873",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17640",
+          "key": "ENTRYIIDII-332",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17640",
+          "fields": {
+            "summary": "[Requirement]SSL 및 TLS 적용",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12870",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12870",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17644",
+          "key": "BEWIIFWDI-184",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17644",
+          "fields": {
+            "summary": "[Requirement]SSL 및 TLS 적용",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12872",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12872",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17643",
+          "key": "BLIIFWI-493",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17643",
+          "fields": {
+            "summary": "[Requirement]SSL 및 TLS 적용",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12871",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12871",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17641",
+          "key": "BSIIDII-329",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17641",
+          "fields": {
+            "summary": "[Requirement]SSL 및 TLS 적용",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12869",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12869",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "17642",
+          "key": "TIIDFI-692",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17642",
+          "fields": {
+            "summary": "[Requirement]SSL 및 TLS 적용",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "[장치와 보안 통신: 사용]\n1. DEVICE > UDP Search> 장치를 서버모드로 설정변경\n2. Wating Device 에 표시되는 장치추가",
-      "장치의 네트워크 설정\n> 고정IP / 유동IP",
-      "1. 장치 추가 시 Root 인증서가 서버로 부터 장치에 전송이 된 후 서버와 통신가능하다.\n> 추가시 Disconnected로 동작 후 인증서 적용되면 Connected로 상태전환"
+    "assignee": null,
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 15.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-177/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@285e73be[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6bac1dd4[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@9558972[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@29c6731[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@760a0bb5[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@4ae32301[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6fd82d36[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@e9c6a13[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@286d8fd6[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@7bc55af1[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@55da7922[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@387b5d78[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": null,
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-177/watchers",
+      "watchCount": 1,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T09:45:33.000+0900",
+    "timeoriginalestimate": null,
+    "description": "SSL/TLS 적용으로 통신 보안성 높임\r\n> 기존 프로토콜을 유지한 채로 통신 연결부분만 SSL로 대체\r\n> 대상 제품 : FS2, BS2, A2, L2, W2, P2, N2, CS40\r\n                     ※ XPASS/XPS2는 사양변경으로 통신보안 미지원\r\n\r\n장치 통신 보안 사용 유무(SSL 모드)\r\n> Root 인증서 존재 유무로 판단(TLS Handshake : End User 인증서 서버로 부터 전달)\r\n 루트 인증서 저장  : 통신 보안 모드 사용\r\n 루트 인증서 삭제  : 통신 보안 모드 미사용, 공장 초기화\r\n\r\nRoot 인증서 관리\r\n> 인증서 삭제 : 공장 초기화, 통신 보안 모드 미사용\r\n\r\n공장 초기화\r\n> UI 있는 장치 : Root 인증서 저장 상태에서 관리자 메뉴에 '공장 초기화' 표시 \r\n> UI 없는 장치 : 네트워크 초기화 버튼으로 3회 입력되면 마지막 입력을 기다리는 모드로 진입하고 입력이 5초 이내에 발생 시 \r\n   : 입력 대기 상태(LED) : Yellow LED 점멸\r\n> '사용자', '로그', '설정' 모두 삭제\r\n   : UI 있는 장치 : 확인창 출력\r\n   : UI 없는 장치 : Device Viewer로 확인\r\n\r\nRe-play 공격에 대한 방어\r\n> Packet Sequence 검사 : TCP Packet Only\r\n> Request Sender : TCP 연결 직후의 Time Tick을 초기값으로 Random한 Sequence 값을 만들고, 해당 값을 Packet의 Sequence로 전송\r\n> Request Receiver : TCP 연결 직후 처음으로 수신한 Sequence를 저장하고, 이를 기준으로 다음 Packet의 Sequence 검사",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p><span class=\"error\">&#91;장치와 보안 통신: 사용&#93;</span><br/>1. Device&gt; UDP Search&gt; 인증서를 가지지 않은 장치추가</p></td><td><p>장치의 네트워크 설정<br/>&gt; 고정IP / 유동IP</p></td><td><p>1. 장치 추가 시 Root 인증서가 서버로 부터 장치에 전송이 된 후 서버와 통신가능하다.<br/>&gt; 추가시 Disconnected로 동작 후 인증서 적용되면 Connected로 상태전환</p></td></tr><tr><td>2</td><td><p><span class=\"error\">&#91;장치와 보안 통신: 사용&#93;</span><br/>1. DEVICE &gt; UDP Search&gt; 장치를 서버모드로 설정변경<br/>2. Wating Device 에 표시되는 장치추가</p></td><td><p>장치의 네트워크 설정<br/>&gt; 고정IP / 유동IP</p></td><td><p>1. 장치 추가 시 Root 인증서가 서버로 부터 장치에 전송이 된 후 서버와 통신가능하다.<br/>&gt; 추가시 Disconnected로 동작 후 인증서 적용되면 Connected로 상태전환</p></td></tr><tr><td>3</td><td><p><span class=\"error\">&#91;장치와 보안 통신: 사용&#93;</span><br/>1. DEVICE &gt; UDP Search<br/>2. 서버와 동일한 인증서를 가진 장치추가</p></td><td></td><td><p>1. 장치 추가 시 정상적으로 추가가 된다.</p></td></tr><tr><td>4</td><td><p><span class=\"error\">&#91;장치와 보안 통신: 사용&#93;</span><br/>1. DEVICE &gt; UDP Search<br/>2. 서버와 상이한 인증서를 가진 장치추가시도</p></td><td></td><td><p>1. UDP Search의 경우 추가는 되나 Disconnected로 동작된다.</p></td></tr><tr><td>5</td><td><p><span class=\"error\">&#91;장치와 보안 통신:사용&#93;</span><br/>1. DEVICE &gt; UDP Search&gt; 서버와 동일한 인증서를 가진 장치에 대해 서버모드로 설정변경<br/>2.Waiting Device에 표시 및 추가유무 확인</p></td><td></td><td><p>1. 장치 추가 시 정상적으로 추가가 된다.</p></td></tr><tr><td>6</td><td><p><span class=\"error\">&#91;장치와 보안 통신:사용&#93;</span><br/>1. DEVICE &gt; UDP Search&gt; 서버와 상이한 인증서를 가진 장치에 대해 서버모드로 설정변경<br/>2.Waiting Device에 표시 및 추가유무 확인</p></td><td></td><td><p>1. 장치 추가 시 추가가 안된다.<br/>&gt; Waiting Device 미표시됨</p></td></tr><tr><td>7</td><td><p><span class=\"error\">&#91;장치와 보안 통신: 사용&#93;</span><br/>1. DEVICE &gt; Search Device &gt; Device 선택<br/>2. SSL/TLS 미지원 FW 장치 추가시도</p></td><td></td><td><p>1. 장치 추가 시 장치 펌웨어의 미지원으로 추가가 안된다.<br/>&gt; 오류 팝업 발생</p></td></tr><tr><td>8</td><td><p><span class=\"error\">&#91;장치와 보안 통신: 사용&#93;</span><br/>1. DEVICE &gt; Advanced Search로 타 서버 인증서를 가진 장치 추가시도</p></td><td></td><td><p>1. 장치를 찾을 수 없다는 오류 팝업 발생된다.</p></td></tr><tr><td>9</td><td><p><span class=\"error\">&#91;장치와 보안 통신: 미사용&#93;</span><br/>1. DEVICE &gt; Search Device &gt; Device 선택<br/>2. 타 서버 인증서를 가진 장치 추가시도</p></td><td></td><td><p>1. 장치 추가불가하다.</p></td></tr><tr><td>10</td><td><p>1. 서버에 장치추가<br/>2. 장치와 보안통신 및 외부인증서 설정<br/>3. 장치 Reboot여부 확인<br/>4. Reboot 후 서버와의 연결상태 확인</p></td><td><p>연결모드<br/>&gt; Server Mode<br/>&gt; Direct Mode</p>\n\n<p>장치와 보안통신<br/>&gt; 사용</p>\n\n<p>외부인증서<br/>&gt; 사용안함<br/>&gt; 사용</p></td><td><p>1. Reboot되지 않는다.<br/>2. 장치 Reboot 후 서버와의 연결이 정상적으로 이루어진다.</p>\n\n<p>※ 만약 Secure Tamper 설정에 의해 Tamper On이 발생하면 Database Reset이 되고, 이후 동작이 진행된다.</p></td></tr><tr><td>11</td><td><p>1. 서버에 장치추가<br/>2. 장치와 보안통신 및 외부인증서 설정<br/>3. 장치의 연결모드 변경<br/>4. 장치연결상태 확인</p></td><td><p>연결모드<br/>&gt; Server Mode<br/>&gt; Direct Mode</p>\n\n<p>장치와 보안통신<br/>&gt; 사용</p>\n\n<p>외부인증서 사용<br/>&gt; 사용안함<br/>&gt; 사용</p></td><td><p>1. 변경된 설정적용 후 서버와의 연결이 끊어졌다가 재연결이 이루어져야 한다.</p></td></tr><tr><td>12</td><td><p>1. 장치와 보안 통신 사용 설정<br/>2. FirmWare Upgrade 시도</p></td><td></td><td><p>1. FW Upgrade가 정상적으로 이루어져야 한다.</p></td></tr><tr><td>13</td><td><p>1. 장치와 보안통신 사용 설정<br/>2. 장치 해시키 수동관리 사용 설정<br/>3. FirmWare Upgrade 시도</p></td><td></td><td><p>1. FW Upgrade가 정상적으로 이루어져야 한다.</p></td></tr><tr><td>14</td><td><p><span class=\"error\">&#91;사용자 동기화: 모든장치 &amp; 장치와 보안 통신: 사용&#93;</span><br/>1. 장치추가<br/>2. Timeout 및 Reboot 유무 확인</p></td><td></td><td><p>1. 서버와 연결이 끊어지거나, 비정상적으로 재부팅이 발생하지 않아야 한다.</p></td></tr><tr><td>15</td><td><p><span class=\"error\">&#91;사용자 동기화: 모든장치 &amp; 장치와 보안 통신: 사용 &amp; 장치 해시키 수동관리: 사용&#93;</span><br/>1. 장치추가<br/>2. Timeout 및 Reboot 유무 확인</p></td><td></td><td><p>1. 서버와 연결이 끊어지거나, 비정상적으로 재부팅이 발생하지 않아야 한다.</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [
+      "COMMONR-45"
     ],
-    [
-      3,
-      "[장치와 보안 통신: 사용]\n1. DEVICE > UDP Search\n2. 서버와 동일한 인증서를 가진 장치추가",
-      "",
-      "1. 장치 추가 시 정상적으로 추가가 된다."
-    ],
-    [
-      4,
-      "[장치와 보안 통신: 사용]\n1. DEVICE > UDP Search\n2. 서버와 상이한 인증서를 가진 장치추가시도",
-      "",
-      "1. UDP Search의 경우 추가는 되나 Disconnected로 동작된다."
-    ],
-    [
-      5,
-      "[장치와 보안 통신:사용]\n1. DEVICE > UDP Search> 서버와 동일한 인증서를 가진 장치에 대해 서버모드로 설정변경\n2.Waiting Device에 표시 및 추가유무 확인\n",
-      "",
-      "1. 장치 추가 시 정상적으로 추가가 된다."
-    ],
-    [
-      6,
-      "[장치와 보안 통신:사용]\n1. DEVICE > UDP Search> 서버와 상이한 인증서를 가진 장치에 대해 서버모드로 설정변경\n2.Waiting Device에 표시 및 추가유무 확인\n",
-      "",
-      "1. 장치 추가 시 추가가 안된다.\n> Waiting Device 미표시됨"
-    ],
-    [
-      7,
-      "[장치와 보안 통신: 사용]\n1. DEVICE > Search Device > Device 선택\n2. SSL/TLS 미지원 FW 장치 추가시도",
-      "",
-      "1. 장치 추가 시 장치 펌웨어의 미지원으로 추가가 안된다.\n> 오류 팝업 발생"
-    ],
-    [
-      8,
-      "[장치와 보안 통신: 사용]\n1. DEVICE > Advanced Search로 타 서버 인증서를 가진 장치 추가시도",
-      "",
-      "1. 장치를 찾을 수 없다는 오류 팝업 발생된다."
-    ],
-    [
-      9,
-      "[장치와 보안 통신: 미사용]\n1. DEVICE > Search Device > Device 선택\n2. 타 서버 인증서를 가진 장치 추가시도",
-      "",
-      "1. 장치 추가불가하다."
-    ],
-    [
-      10,
-      "1. 서버에 장치추가\n2. 장치와 보안통신 및 외부인증서 설정\n3. 장치 Reboot여부 확인\n4. Reboot 후 서버와의 연결상태 확인",
-      "연결모드\n> Server Mode\n> Direct Mode\n\n장치와 보안통신\n> 사용\n\n외부인증서\n> 사용안함\n> 사용",
-      "1. Reboot되지 않는다.\n2. 장치 Reboot 후 서버와의 연결이 정상적으로 이루어진다.\n\n※ 만약 Secure Tamper 설정에 의해 Tamper On이 발생하면 Database Reset이 되고, 이후 동작이 진행된다."
-    ],
-    [
-      11,
-      "1. 서버에 장치추가\n2. 장치와 보안통신 및 외부인증서 설정\n3. 장치의 연결모드 변경\n4. 장치연결상태 확인",
-      "연결모드\n> Server Mode\n> Direct Mode\n\n장치와 보안통신\n> 사용\n\n외부인증서 사용\n> 사용안함\n> 사용",
-      "1. 변경된 설정적용 후 서버와의 연결이 끊어졌다가 재연결이 이루어져야 한다."
-    ],
-    [
-      12,
-      "1. 장치와 보안 통신 사용 설정\n2. FirmWare Upgrade 시도",
-      "",
-      "1. FW Upgrade가 정상적으로 이루어져야 한다."
-    ],
-    [
-      13,
-      "1. 장치와 보안통신 사용 설정\n2. 장치 해시키 수동관리 사용 설정\n3. FirmWare Upgrade 시도",
-      "",
-      "1. FW Upgrade가 정상적으로 이루어져야 한다."
-    ],
-    [
-      14,
-      "[사용자 동기화: 모든장치 & 장치와 보안 통신: 사용]\n1. 장치추가\n2. Timeout 및 Reboot 유무 확인",
-      "",
-      "1. 서버와 연결이 끊어지거나, 비정상적으로 재부팅이 발생하지 않아야 한다."
-    ],
-    [
-      15,
-      "[사용자 동기화: 모든장치 & 장치와 보안 통신: 사용 & 장치 해시키 수동관리: 사용]\n1. 장치추가\n2. Timeout 및 Reboot 유무 확인",
-      "",
-      "1. 서버와 연결이 끊어지거나, 비정상적으로 재부팅이 발생하지 않아야 한다."
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-177",
-    "description": "",
-    "test_step": [
-      "[장치와 보안 통신: 사용]\n1. Device> UDP Search> 인증서를 가지지 않은 장치추가",
-      "[장치와 보안 통신: 사용]\n1. DEVICE > UDP Search> 장치를 서버모드로 설정변경\n2. Wating Device 에 표시되는 장치추가",
-      "[장치와 보안 통신: 사용]\n1. DEVICE > UDP Search\n2. 서버와 동일한 인증서를 가진 장치추가",
-      "[장치와 보안 통신: 사용]\n1. DEVICE > UDP Search\n2. 서버와 상이한 인증서를 가진 장치추가시도",
-      "[장치와 보안 통신:사용]\n1. DEVICE > UDP Search> 서버와 동일한 인증서를 가진 장치에 대해 서버모드로 설정변경\n2.Waiting Device에 표시 및 추가유무 확인\n",
-      "[장치와 보안 통신:사용]\n1. DEVICE > UDP Search> 서버와 상이한 인증서를 가진 장치에 대해 서버모드로 설정변경\n2.Waiting Device에 표시 및 추가유무 확인\n",
-      "[장치와 보안 통신: 사용]\n1. DEVICE > Search Device > Device 선택\n2. SSL/TLS 미지원 FW 장치 추가시도",
-      "[장치와 보안 통신: 사용]\n1. DEVICE > Advanced Search로 타 서버 인증서를 가진 장치 추가시도",
-      "[장치와 보안 통신: 미사용]\n1. DEVICE > Search Device > Device 선택\n2. 타 서버 인증서를 가진 장치 추가시도",
-      "1. 서버에 장치추가\n2. 장치와 보안통신 및 외부인증서 설정\n3. 장치 Reboot여부 확인\n4. Reboot 후 서버와의 연결상태 확인",
-      "1. 서버에 장치추가\n2. 장치와 보안통신 및 외부인증서 설정\n3. 장치의 연결모드 변경\n4. 장치연결상태 확인",
-      "1. 장치와 보안 통신 사용 설정\n2. FirmWare Upgrade 시도",
-      "1. 장치와 보안통신 사용 설정\n2. 장치 해시키 수동관리 사용 설정\n3. FirmWare Upgrade 시도",
-      "[사용자 동기화: 모든장치 & 장치와 보안 통신: 사용]\n1. 장치추가\n2. Timeout 및 Reboot 유무 확인",
-      "[사용자 동기화: 모든장치 & 장치와 보안 통신: 사용 & 장치 해시키 수동관리: 사용]\n1. 장치추가\n2. Timeout 및 Reboot 유무 확인"
-    ],
-    "data": [
-      "장치의 네트워크 설정\n> 고정IP / 유동IP",
-      "장치의 네트워크 설정\n> 고정IP / 유동IP",
-      "연결모드\n> Server Mode\n> Direct Mode\n\n장치와 보안통신\n> 사용\n\n외부인증서\n> 사용안함\n> 사용",
-      "연결모드\n> Server Mode\n> Direct Mode\n\n장치와 보안통신\n> 사용\n\n외부인증서 사용\n> 사용안함\n> 사용"
-    ],
-    "expected_result": [
-      "1. 장치 추가 시 Root 인증서가 서버로 부터 장치에 전송이 된 후 서버와 통신가능하다.\n> 추가시 Disconnected로 동작 후 인증서 적용되면 Connected로 상태전환",
-      "1. 장치 추가 시 Root 인증서가 서버로 부터 장치에 전송이 된 후 서버와 통신가능하다.\n> 추가시 Disconnected로 동작 후 인증서 적용되면 Connected로 상태전환",
-      "1. 장치 추가 시 정상적으로 추가가 된다.",
-      "1. UDP Search의 경우 추가는 되나 Disconnected로 동작된다.",
-      "1. 장치 추가 시 정상적으로 추가가 된다.",
-      "1. 장치 추가 시 추가가 안된다.\n> Waiting Device 미표시됨",
-      "1. 장치 추가 시 장치 펌웨어의 미지원으로 추가가 안된다.\n> 오류 팝업 발생",
-      "1. 장치를 찾을 수 없다는 오류 팝업 발생된다.",
-      "1. 장치 추가불가하다.",
-      "1. Reboot되지 않는다.\n2. 장치 Reboot 후 서버와의 연결이 정상적으로 이루어진다.\n\n※ 만약 Secure Tamper 설정에 의해 Tamper On이 발생하면 Database Reset이 되고, 이후 동작이 진행된다.",
-      "1. 변경된 설정적용 후 서버와의 연결이 끊어졌다가 재연결이 이루어져야 한다.",
-      "1. FW Upgrade가 정상적으로 이루어져야 한다.",
-      "1. FW Upgrade가 정상적으로 이루어져야 한다.",
-      "1. 서버와 연결이 끊어지거나, 비정상적으로 재부팅이 발생하지 않아야 한다.",
-      "1. 서버와 연결이 끊어지거나, 비정상적으로 재부팅이 발생하지 않아야 한다."
-    ]
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 17842,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 2,
+              "latestFinal": 0,
+              "latestId": 35226,
+              "latestFinalId": 34700
+            },
+            {
+              "environment": "ES1",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29836,
+              "latestFinalId": 29836
+            },
+            {
+              "environment": "BioStarV2.9.6.30",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29836,
+              "latestFinalId": 29836
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_170117(UnitTest)",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 5618,
+              "latestFinalId": 5618
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_190805_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15200,
+              "latestFinalId": 15200
+            }
+          ]
+        },
+        {
+          "group": "FL_V1.0_190515(PS)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 14113,
+              "latestFinalId": 14113
+            }
+          ]
+        },
+        {
+          "group": "V1.7.1_181204(Hotfix)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12717,
+              "latestFinalId": 12717
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_181210_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12753,
+              "latestFinalId": 12753
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0 170331",
+          "statusResults": [
+            {
+              "latest": 1,
+              "latestFinal": 0,
+              "latestId": 8600,
+              "latestFinalId": 6329
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_181119_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12911,
+              "latestFinalId": 12911
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_190809_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15561,
+              "latestFinalId": 15561
+            }
+          ]
+        },
+        {
+          "group": "V1.8.0_190806_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15372,
+              "latestFinalId": 15372
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180322",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10123,
+              "latestFinalId": 10123
+            }
+          ]
+        },
+        {
+          "group": "V1.7.0_190806_Interaction 7차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15099,
+              "latestFinalId": 15099
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_190806_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15417,
+              "latestFinalId": 15417
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_20200601_Interaction 12차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 17149,
+              "latestFinalId": 17149
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "통신 보안 - SSL/TLS",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 2880,
+          "index": 1,
+          "step": "[장치와 보안 통신: 사용]\n1. Device> UDP Search> 인증서를 가지지 않은 장치추가",
+          "data": "장치의 네트워크 설정\n> 고정IP / 유동IP",
+          "result": "1. 장치 추가 시 Root 인증서가 서버로 부터 장치에 전송이 된 후 서버와 통신가능하다.\n> 추가시 Disconnected로 동작 후 인증서 적용되면 Connected로 상태전환",
+          "attachments": []
+        },
+        {
+          "id": 2881,
+          "index": 2,
+          "step": "[장치와 보안 통신: 사용]\n1. DEVICE > UDP Search> 장치를 서버모드로 설정변경\n2. Wating Device 에 표시되는 장치추가",
+          "data": "장치의 네트워크 설정\n> 고정IP / 유동IP",
+          "result": "1. 장치 추가 시 Root 인증서가 서버로 부터 장치에 전송이 된 후 서버와 통신가능하다.\n> 추가시 Disconnected로 동작 후 인증서 적용되면 Connected로 상태전환",
+          "attachments": []
+        },
+        {
+          "id": 2866,
+          "index": 3,
+          "step": "[장치와 보안 통신: 사용]\n1. DEVICE > UDP Search\n2. 서버와 동일한 인증서를 가진 장치추가",
+          "data": "",
+          "result": "1. 장치 추가 시 정상적으로 추가가 된다.",
+          "attachments": []
+        },
+        {
+          "id": 2882,
+          "index": 4,
+          "step": "[장치와 보안 통신: 사용]\n1. DEVICE > UDP Search\n2. 서버와 상이한 인증서를 가진 장치추가시도",
+          "data": "",
+          "result": "1. UDP Search의 경우 추가는 되나 Disconnected로 동작된다.",
+          "attachments": []
+        },
+        {
+          "id": 2874,
+          "index": 5,
+          "step": "[장치와 보안 통신:사용]\n1. DEVICE > UDP Search> 서버와 동일한 인증서를 가진 장치에 대해 서버모드로 설정변경\n2.Waiting Device에 표시 및 추가유무 확인\n",
+          "data": "",
+          "result": "1. 장치 추가 시 정상적으로 추가가 된다.",
+          "attachments": []
+        },
+        {
+          "id": 2883,
+          "index": 6,
+          "step": "[장치와 보안 통신:사용]\n1. DEVICE > UDP Search> 서버와 상이한 인증서를 가진 장치에 대해 서버모드로 설정변경\n2.Waiting Device에 표시 및 추가유무 확인\n",
+          "data": "",
+          "result": "1. 장치 추가 시 추가가 안된다.\n> Waiting Device 미표시됨",
+          "attachments": []
+        },
+        {
+          "id": 2870,
+          "index": 7,
+          "step": "[장치와 보안 통신: 사용]\n1. DEVICE > Search Device > Device 선택\n2. SSL/TLS 미지원 FW 장치 추가시도",
+          "data": "",
+          "result": "1. 장치 추가 시 장치 펌웨어의 미지원으로 추가가 안된다.\n> 오류 팝업 발생",
+          "attachments": []
+        },
+        {
+          "id": 11083,
+          "index": 8,
+          "step": "[장치와 보안 통신: 사용]\n1. DEVICE > Advanced Search로 타 서버 인증서를 가진 장치 추가시도",
+          "data": "",
+          "result": "1. 장치를 찾을 수 없다는 오류 팝업 발생된다.",
+          "attachments": []
+        },
+        {
+          "id": 11084,
+          "index": 9,
+          "step": "[장치와 보안 통신: 미사용]\n1. DEVICE > Search Device > Device 선택\n2. 타 서버 인증서를 가진 장치 추가시도",
+          "data": "",
+          "result": "1. 장치 추가불가하다.",
+          "attachments": []
+        },
+        {
+          "id": 3512,
+          "index": 10,
+          "step": "1. 서버에 장치추가\n2. 장치와 보안통신 및 외부인증서 설정\n3. 장치 Reboot여부 확인\n4. Reboot 후 서버와의 연결상태 확인",
+          "data": "연결모드\n> Server Mode\n> Direct Mode\n\n장치와 보안통신\n> 사용\n\n외부인증서\n> 사용안함\n> 사용",
+          "result": "1. Reboot되지 않는다.\n2. 장치 Reboot 후 서버와의 연결이 정상적으로 이루어진다.\n\n※ 만약 Secure Tamper 설정에 의해 Tamper On이 발생하면 Database Reset이 되고, 이후 동작이 진행된다.",
+          "attachments": []
+        },
+        {
+          "id": 3516,
+          "index": 11,
+          "step": "1. 서버에 장치추가\n2. 장치와 보안통신 및 외부인증서 설정\n3. 장치의 연결모드 변경\n4. 장치연결상태 확인",
+          "data": "연결모드\n> Server Mode\n> Direct Mode\n\n장치와 보안통신\n> 사용\n\n외부인증서 사용\n> 사용안함\n> 사용",
+          "result": "1. 변경된 설정적용 후 서버와의 연결이 끊어졌다가 재연결이 이루어져야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 12358,
+          "index": 12,
+          "step": "1. 장치와 보안 통신 사용 설정\n2. FirmWare Upgrade 시도",
+          "data": "",
+          "result": "1. FW Upgrade가 정상적으로 이루어져야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 13170,
+          "index": 13,
+          "step": "1. 장치와 보안통신 사용 설정\n2. 장치 해시키 수동관리 사용 설정\n3. FirmWare Upgrade 시도",
+          "data": "",
+          "result": "1. FW Upgrade가 정상적으로 이루어져야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 13169,
+          "index": 14,
+          "step": "[사용자 동기화: 모든장치 & 장치와 보안 통신: 사용]\n1. 장치추가\n2. Timeout 및 Reboot 유무 확인",
+          "data": "",
+          "result": "1. 서버와 연결이 끊어지거나, 비정상적으로 재부팅이 발생하지 않아야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 13171,
+          "index": 15,
+          "step": "[사용자 동기화: 모든장치 & 장치와 보안 통신: 사용 & 장치 해시키 수동관리: 사용]\n1. 장치추가\n2. Timeout 및 Reboot 유무 확인",
+          "data": "",
+          "result": "1. 서버와 연결이 끊어지거나, 비정상적으로 재부팅이 발생하지 않아야 한다.",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [],
+      "maxResults": 0,
+      "total": 0,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+      "name": "Minor (C)",
+      "id": "3"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+      "name": "할 일",
+      "id": "10000",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "할 일"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzs0nr:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2016-08-11T08:53:25.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

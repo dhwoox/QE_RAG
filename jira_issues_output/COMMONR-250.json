@@ -1,546 +1,2472 @@
 {
-  "id": "COMMONR-250",
-  "content": [
-    [
-      1,
-      "1. CSN: EM4100 체크 후 적용\n2. EM Card 리드\n3. CSN: EM4100 언체크 후 적용\n4. EM Card 리드",
-      "CSN Card 지원모델\n> EM",
-      "1. EM4100에 체크가 된 경우 EM Card가 리드되고, 언체크시 리드되지 않는다."
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "30181",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/30181",
+  "key": "COMMONR-250",
+  "fields": {
+    "resolution": null,
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "0.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10173",
+      "value": "Major",
+      "id": "10173"
+    },
+    "customfield_10185": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
+      "value": "Medium (2-3일 이내 피드백)",
+      "id": "10220"
+    },
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "26500",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/26500",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "35007",
+          "key": "BLNIIFW-754",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/35007",
+          "fields": {
+            "summary": "[Card Type] CSN 체크 & SmartCard 미체크(Layout은 설정)된 상태에서 카드발급/포멧시 성공되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "64420",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/64420",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "72819",
+          "key": "BS3FW-2027",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72819",
+          "fields": {
+            "summary": "Biostar2 장치 상세 apply 적용 후 장치 상세 재 진입 시 에러 팝업 표출",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/5",
+              "description": "해결책이 제시되었고 보고자의 확인을 기다리는 중입니다. 지금부터는 이슈를 다시 열거나 이슈를 닫을 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/resolved.png",
+              "name": "해결됨",
+              "id": "5",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "26805",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/26805",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "35518",
+          "key": "BLNIIFW-811",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/35518",
+          "fields": {
+            "summary": "[Device Key] Slave 장치에 iClass Smart Card Layout 적용 시 RS 485 연결이 끊어지고, 저장이 안되어 이전 Read시 무반응이나 Device Timeout이 발생하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "26808",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/26808",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "35520",
+          "key": "BLNIIFW-812",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/35520",
+          "fields": {
+            "summary": "[Card Type] SEOS 미체크 & SmartCard Layout은 설정된 상태에서 iClass SEOS Read시 오동작",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "28014",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/28014",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "37619",
+          "key": "FLFW-571",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/37619",
+          "fields": {
+            "summary": "HID Prox 지원 관련 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "28016",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/28016",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "37623",
+          "key": "FLFW-572",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/37623",
+          "fields": {
+            "summary": "[Smart Card] Classic Uncheck 시 Format 오류",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "28247",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/28247",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "37629",
+          "key": "TIIDFI-2543",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/37629",
+          "fields": {
+            "summary": "[Smart Card] Classic Uncheck 시 Format 오류",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "28389",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/28389",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "34919",
+          "key": "XPASSII-240",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/34919",
+          "fields": {
+            "summary": "[Card Type] CSN 체크 & SmartCard 미체크(Layout은 설정)된 상태에서 카드발급이 성공으로 동작하는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "26651",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/26651",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "35218",
+          "key": "XPASSRII-395",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/35218",
+          "fields": {
+            "summary": "[D2/D2 Rev] SmartCard Layout을 설정된 상태에서 Disable시킨 후 SmartCard를 Read시 CSN으로도 안읽히는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "49844",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/49844",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "59685",
+          "key": "BEWIIFWDI-1033",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/59685",
+          "fields": {
+            "summary": "[Suprema Smartcard]Mifare: DesFire/DesFire EV1 언체크 후 해당 카드 인증 시 인증 성공으로 동작",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "49867",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/49867",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "59687",
+          "key": "BPIIFW-148",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/59687",
+          "fields": {
+            "summary": "[Suprema Smartcard]Mifare: DesFire/DesFire EV1 언체크 후 해당 카드 인증 시 인증 성공으로 동작",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "61025",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/61025",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "70238",
+          "key": "DI24FW-53",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/70238",
+          "fields": {
+            "summary": "DI-24에 연결된 slave 장치에 mobile credential certificatation 전송에 실패함",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "31279",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/31279",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "41396",
+          "key": "ONYXFW-328",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/41396",
+          "fields": {
+            "summary": "NFC 동작 안하는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "45066",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/45066",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "54941",
+          "key": "XPASSRII-553",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/54941",
+          "fields": {
+            "summary": "Custom Smart Card 언체크 상태에서 Desfire 카드 입력 시 CSN으로 리드되지 않음.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "29096",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/29096",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "33063",
+          "key": "BEWIIFWDI-759",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/33063",
+          "fields": {
+            "summary": "[iCLASS] Smart Card Type에서 SR/SE 체크/언체크 상관없이 (Layout이 동일하면) 발급된 정보로 리드되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "49874",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/49874",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "59708",
+          "key": "BEWIIFWDI-1037",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/59708",
+          "fields": {
+            "summary": "[Custom Smart Card] Mifare: DesFire/DesFire EV1 언체크 > Custrom desfire 카드 CSN 으로 리드 되지 않음 / '띡' 소리 출력",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "49876",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/49876",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "59707",
+          "key": "BPIIFW-150",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/59707",
+          "fields": {
+            "summary": "[Custom Smart Card] Mifare: DesFire/DesFire EV1 언체크 > Custrom desfire 카드 CSN 으로 리드 되지 않음 / '띡' 소리 출력",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "57713",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/57713",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "59714",
+          "key": "BPIIFW-152",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/59714",
+          "fields": {
+            "summary": "키가 불일치하는 Custm Smart Card 리드 시 0으로 읽히는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "58895",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/58895",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "68083",
+          "key": "CS20FW-71",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/68083",
+          "fields": {
+            "summary": "CS20에 XS2(ToM 지원) 연결 후 ToM 카드 인증 시 Master 장치 재부팅 함",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "48428",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/48428",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "58173",
+          "key": "DFW-1014",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/58173",
+          "fields": {
+            "summary": "Mifare: DesFire/DesFire EV1 언체크 후 카드 리드 시 발급된 카드 정보로 읽히는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "58473",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/58473",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "67651",
+          "key": "ONYXFW-842",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/67651",
+          "fields": {
+            "summary": "Mifare-Custom Smart Card 스캔 시 카드 ID '0'으로 출력됨",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "51669",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/51669",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "61236",
+          "key": "XPASSII-439",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/61236",
+          "fields": {
+            "summary": "[MAPB] Smart Card Type에서 SR/SE 체크/언체크 상관없이 (Layout이 동일하면) 발급된 정보로 리드되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "51893",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/51893",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "61415",
+          "key": "XPASSII-443",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/61415",
+          "fields": {
+            "summary": "장치 NFC 옵션 비활성화 상태이나 NFC-모바일카드 인증 성공",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "62361",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/62361",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "71548",
+          "key": "XPASSII-599",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/71548",
+          "fields": {
+            "summary": "CSN 모바일 NFC 동작 동작 안하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "62374",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/62374",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "71552",
+          "key": "XPASSRII-664",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/71552",
+          "fields": {
+            "summary": "CSN 모바일 NFC 동작 동작 안하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "51352",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/51352",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "60917",
+          "key": "BS2AFW-298",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/60917",
+          "fields": {
+            "summary": "CustomSmartCard 레이아웃을 None으로 했는데 커스텀카드로 인식되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "52071",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/52071",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "60926",
+          "key": "BES-1799",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/60926",
+          "fields": {
+            "summary": "Template On Mobile(TOM) 안드로이드 제품군 지원",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10300",
+              "id": "10300",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10315&avatarType=issuetype",
+              "name": "이야기",
+              "subtask": false,
+              "avatarId": 10315
+            }
+          }
+        }
+      },
+      {
+        "id": "52857",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/52857",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "62124",
+          "key": "BES-2006",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/62124",
+          "fields": {
+            "summary": "Template On Mobile(TOM) 안드로이드 제품군 지원(추가진행)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10300",
+              "id": "10300",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10315&avatarType=issuetype",
+              "name": "이야기",
+              "subtask": false,
+              "avatarId": 10315
+            }
+          }
+        }
+      },
+      {
+        "id": "24124",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/24124",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "31178",
+          "key": "BLNIIFW-632",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/31178",
+          "fields": {
+            "summary": "[Card Type - Prox/EM] CSN, Wiegand Card에 대해서 Uncheck로 적용을 해도 동작이 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      },
+      {
+        "id": "49836",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/49836",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "59669",
+          "key": "BEWIIFWDI-1031",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/59669",
+          "fields": {
+            "summary": "CSN/Suprema Smartcard 카드 '사용 안 함' 설정 후 레이아웃 설정 된 Custom SmartCard (DESFire Adv) 리드 시 반응 없음",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "45797",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/45797",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "55568",
+          "key": "XPASSRII-558",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/55568",
+          "fields": {
+            "summary": "Smart Card 언체크 상태에서 Desfire Smart Card 카드 입력 시 인증 성공으로 동작.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "23533",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/23533",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "29566",
+          "key": "BSPP-408",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/29566",
+          "fields": {
+            "summary": "Card  Type(CSN, Wiegand, Smart Card) 별 선택 옵션 제공",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10202",
+              "description": "개발이 완료된 요구 사항",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/generic.png",
+              "name": "개발완료",
+              "id": "10202",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      },
+      {
+        "id": "23705",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/23705",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "29488",
+          "key": "XPASSII-22",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/29488",
+          "fields": {
+            "summary": "2019 1H - CSN, Wiegand, Smart Card 카드 종류 지정하여 리딩 되도록 선택 옵션 지원",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10200",
+              "id": "10200",
+              "description": "개별 Interaction 관리용 타입",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10304&avatarType=issuetype",
+              "name": "Interaction",
+              "subtask": false,
+              "avatarId": 10304
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "1. CSN: Mifare/Felica 체크 후 적용\n2. 카드 리드\n3. CSN: Mifare/Felica 언체크 후 적용\n4. 카드 리드",
-      "CSN Card 지원모델\n> Mifare/Felica/ISO-15693/EV1/EV2",
-      "1. 체크시 EM을 제외한 CSN 카드에 대해 리드되고, 언체크시 리드되지 않는다."
-    ],
-    [
-      3,
-      "1. CSN: EM4100 & Mifare/Felica 체크\n2. Wiegand Format 설정 및 Byte Order 설정\n3. 카드 리드",
-      "CSN Card 지원모델",
-      "1. 설정된 포맷 및 Byte Order 설정에 맞게 카드ID가 리드된다."
-    ],
-    [
-      4,
-      "1. Wiegand: iClass 체크 및 Wiegand Format 설정 후 적용\n2. iClass Card 리드\n3. Wiegand: iClass 언체크 후 적용\n4. iClass Card 리드",
-      "Wiegand Card 지원모델\n> iCLASS\n\nWiegand Format 설정\n> 리드할 카드 포맷과 동일",
-      "1. 체크시 iCLASS Card가 리드되고, 언체크시 iCLASS Card가 리드되지 않는다."
-    ],
-    [
-      5,
-      "1. Wiegand: iClass 체크 및 Wiegand Format 설정 후 적용\n2. iClass Card 리드\n3. Wiegand: iClass 언체크 후 적용\n4. iClass Card 리드",
-      "Wiegand Card 지원모델\n> iCLASS\n\nWiegand Format 설정\n> 리드할 카드 포맷과 상이",
-      "1. 체크 후 iCLASS Card 리드시 '띡'소리만 출력(= 결과미출력)되고, 언체크시 iCLASS Card가 리드되지 않는다."
-    ],
-    [
-      6,
-      "1. Wiegand: HID Prox 체크 및 Wiegand Format 설정 후 적용\n2. HID Prox Card 리드\n3. Wiegand: HID 언체크 후 적용\n4. HID Prox Card 리드",
-      "Wiegand Card 지원모델\n> HID\n\nWiegand Format 설정\n> 리드할 카드 포맷과 동일",
-      "1. 체크시 HID Prox Card가 리드되고, 언체크시 HID Prox Card가 리드되지 않는다."
-    ],
-    [
-      7,
-      "1. Wiegand: HID Prox 체크 및 Wiegand Format 설정 후 적용\n2. HID Prox Card 리드\n3. Wiegand: HID Prox 언체크 후 적용\n4. HID Prox Card 리드",
-      "Wiegand Card 지원모델\n> HID\n\nWiegand Format 설정\n> 리드할 카드 포맷과 상이",
-      "1. 체크 후 HID Prox Card 리드시 '띡'소리만 출력(= 결과미출력)되고, 언체크시 HID Prox Card가 리드되지 않는다."
-    ],
-    [
-      8,
-      "1. Mifare: Classic/Plus 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. Mifare: Classic/Plus 언체크 후 적용\n4. SmartCard 발급 및 리드",
-      "Smart Card 지원모델\n> Mifare\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
-      "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다."
-    ],
-    [
-      9,
-      "1. Mifare: Classic/Plus 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. Mifare: Classic/Plus 언체크 후 적용\n4. SmartCard 발급 및 리드",
-      "Smart Card 지원모델\n> Mifare\n\nLayout 설정\n> 스마트카드 레이아웃과 상이\n",
-      "1. 체크/언체크 상관없이 CSN으로 리드된다.\n> 카드발급 불가"
-    ],
-    [
-      10,
-      "1. Mifare: DesFire/DesFire EV1 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. Mifare: DesFire/DesFire EV1 언체크 후 적용\n4. SmartCard 발급 및 리드",
-      "Smart Card 지원모델\n> DesFire/DesFire EV1\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
-      "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다."
-    ],
-    [
-      11,
-      "1. Mifare: DesFire/DesFire EV1 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. Mifare: DesFire/DesFire EV1 언체크 후 적용\n4. SmartCard 발급 및 리드",
-      "Smart Card 지원모델\n> DesFire/DesFire EV1\n\nLayout 설정\n> 스마트카드 레이아웃과 상이",
-      "1. 체크/언체크 상관없이 CSN으로 리드된다.\n> 카드발급 불가"
-    ],
-    [
-      12,
-      "1. iCLASS: SR/SE 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. iCLASS: SR/SE 언체크 후 적용\n4. SmartCard 발급 및 리드",
-      "Smart Card 지원모델\n> iCLASS\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
-      "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 PAC Data 로 리드된다."
-    ],
-    [
-      13,
-      "1. iCLASS: SR/SE 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. iCLASS: SR/SE 언체크 후 적용\n4. SmartCard 발급 및 리드",
-      "Smart Card 지원모델\n> iCLASS\n\nLayout 설정\n> 스마트카드 레이아웃과 상이",
-      "1. 체크/언체크 상관없이 PAC Data 로 리드된다.\n> 카드발급 불가"
-    ],
-    [
-      14,
-      "1. iCLASS: SEOS 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. iCLASS: SEOS 언체크 후 적용\n4. SmartCard 발급 및 리드",
-      "Smart Card 지원모델\n> SEOS\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
-      "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 PAC Data 로 리드된다."
-    ],
-    [
-      15,
-      "1. iCLASS: SEOS 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. iCLASS: SEOS 언체크 후 적용\n4. SmartCard 발급 및 리드",
-      "Smart Card 지원모델\n> SEOS\n\nLayout 설정\n> 스마트카드 레이아웃과 상이",
-      "1. 체크/언체크 상관없이 PAC Data 로 리드된다.\n> 카드발급 불가"
-    ],
-    [
-      16,
-      "1. CSN: Mifare/Felica 체크\n2. SmartCard: Classic/Plus 언체크\n3. SmartCard 리드",
-      "리드할 SmartCard\n> Classic/Plus 카드",
-      "1. CSN으로 리드된다."
-    ],
-    [
-      17,
-      "1. CSN: Mifare/Felica 언체크\n2. SmartCard: Classic/Plus 체크 및 Layout 설정\n3. CSN Card 리드",
-      "리드할 CSN Card\n> Mifare",
-      "1. 리드되지 않는다."
-    ],
-    [
-      18,
-      "1. CSN: Mifare/Felica 체크\n2. SmartCard: DesFire/DesFire EV1 언체크\n3. SmartCard 리드",
-      "리드할 SmartCard\n> DesFire/DesFire EV1 카드",
-      "1. CSN으로 리드된다."
-    ],
-    [
-      19,
-      "1. CSN: Mifare/Felica 언체크\n2. SmartCard: DesFire/DesFire EV1 체크 및 Layout 설정\n3. CSN Card 리드",
-      "리드할 CSN Card\n> DesFire/DesFire EV1 카드",
-      "1. 리드되지 않는다."
-    ],
-    [
-      20,
-      "1. Wiegand: iCLASS 체크 및 포맷 설정\n2. SmartCard: SR/SE 언체크\n3. SmartCard 리드",
-      "리드할 SmartCard\n> iCLASS 카드\n\nWiegand Format 설정\n> 리드할 카드 포맷과 동일",
-      "1. PAC Data 로 리드된다."
-    ],
-    [
-      21,
-      "1. Wiegand: iCLASS 언체크\n2. SmartCard: SR/SE 체크 및 Layout 설정\n3. Wiegand Card 리드",
-      "리드할 Wiegand Card\n> iCLASS 카드\n\nLayout 설정\n> 스마트카드 레이아웃과 동일",
-      "1. 리드되지 않는다."
-    ],
-    [
-      22,
-      "1. Wiegand: iCLASS 체크\n2. SmartCard: SEOS 언체크\n3. SmartCard 리드",
-      "리드할 SmartCard\n> SEOS 카드\n\nWiegand Format 설정\n> 리드할 카드 포맷과 동일",
-      "1. PAC Data 로 리드된다."
-    ],
-    [
-      23,
-      "1. Wiegand: iCLASS 언체크\n2. SmartCard: SEOS 체크 및 Layout 설정\n3. Wiegand Card 리드",
-      "리드할 Wiegand Card\n> SEOS 카드\n\nLayout 설정\n> 스마트카드 레이아웃과 동일",
-      "1. 리드되지 않는다."
-    ],
-    [
-      24,
-      "[바이오스타 모바일]\n1. Mobile: NFC 체크 후 적용\n2. Mobile Card 발급 및 리드\n3. Mobile: NFC 언체크 후 적용\n4. Mobile Card 발급 및 리드",
-      "해당모델\n> P2/R2/L2\n\n모바일카드 지원모델\n> NFC\n\n모바일 - NFC 설정\n\nLayout 설정\n> 모바일카드 발급한 레이아웃과 동일",
-      "1. 체크된 경우 발급된 카드정보가 NFC로 리드되고, 언체크시 리드되지 않는다."
-    ],
-    [
-      25,
-      "[바이오스타 모바일]\n1. Mobile: NFC 체크 후 적용\n2. Mobile Card 발급 및 리드\n3. Mobile: NFC 언체크 후 적용\n4. Mobile Card 발급 및 리드",
-      "해당모델\n> P2/R2/L2\n\n모바일카드 지원모델\n> NFC\n\n모바일 - NFC 설정\n\nLayout 설정\n> 모바일카드 발급한 레이아웃과 상이",
-      "1. 리드되지 않는다."
-    ],
-    [
-      26,
-      "[바이오스타 모바일]\n1. Mobile: BLE 체크 후 적용\n2. Mobile Card 발급 및 리드\n3. Mobile: BLE 언체크 후 적용\n4. Mobile Card 발급 및 리드",
-      "해당모델\n> P2/R2/L2\n\n모바일카드 지원모델\n> BLE\n\n모바일 - BLE 설정\n\nLayout 설정\n> 모바일카드 발급한 레이아웃과 동일",
-      "1. 체크된 경우 발급된 카드정보가 BLE로 리드되고, 언체크시 리드되지 않는다."
-    ],
-    [
-      27,
-      "[바이오스타 모바일]\n1. Mobile: BLE 체크 후 적용\n2. Mobile Card 발급 및 리드\n3. Mobile: BLE 언체크 후 적용\n4. Mobile Card 발급 및 리드",
-      "해당모델\n> P2/R2/L2\n\n모바일카드 지원모델\n> BLE\n\n모바일 - BLE 설정\n\nLayout 설정\n> 모바일카드 발급한 레이아웃과 상이",
-      "1. 리드되지 않는다.\n=> 확인 후 내용 업데이트 예정"
-    ],
-    [
-      28,
-      "1. Card Type: 모두 Disable 설정 후 적용\n2. Card 리드",
-      "리드할 카드\n> CSN Card\n> Wiegand Card\n> Smart Card\n> Mobile Card",
-      "1. 리드되지 않는다."
-    ],
-    [
-      29,
-      "1. CSN: Mifare/Felica 체크\n2. SmartCard: Classic/Plus 언체크 \n3. DesFire/DesFire EV1 체크\n4. Calssic/Mifare의 Layout 설정\n5. 카드발급 및 리드시도",
-      "Smart Card 지원모델\n> Classic/Plus\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
-      "1. 포맷/발급이 안된다.\n2. CSN으로 리드된다."
-    ],
-    [
-      30,
-      "1. CSN: Mifare/Felica 체크\n2. SmartCard: Classic/Plus 체크 \n3. DesFire/DesFire EV1 언체크\n4. DesFire/DesFire EV1의 Layout 설정\n5. 카드발급 및 리드시도",
-      "Smart Card 지원모델\n> DesFire/DesFire EV1\n\nLayout 설정\n> 스마트카드 레이아웃과 동일",
-      "1. 포맷/발급이 안된다.\n2. CSN으로 리드된다."
-    ],
-    [
-      31,
-      "1. Wiegand: iCLASS 체크\n2. SmartCard: SR/SE 체크 \n3. SEOS 언체크\n4. SEOS의 Layout 설정\n5. 카드발급 및 리드시도",
-      "Smart Card 지원모델\n> SEOS\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
-      "1. 포맷/발급이 안된다.\n2. PAC Data로 리드된다."
-    ],
-    [
-      32,
-      "1. Wiegand: iCLASS 체크\n2. SmartCard: SEOS 체크 \n3. SR/SE 언체크\n4. SR/SE의 Layout 설정\n5. 카드발급 및 리드시도",
-      "Smart Card 지원모델\n> ICLASS\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
-      "1. 포맷/발급이 안된다.\n2. PAC Data로 리드된다."
-    ],
-    [
-      33,
-      "[Mobile Access]\n1. Mobile: NFC 체크 후 적용\n2. Mobile Card 리드\n3. Mobile: NFC 언체크 후 적용\n4. Mobile Card 리드",
-      "> Mobile Access 지원장치\n> 에어팝 - NFC 설정\n> CSN Card Type - Mifare/Felica 옵션에 대해 체크/언체크",
-      "1. 체크된 경우 발급된 카드정보가 NFC로 리드되고, 언체크시 리드되지 않는다.\n2. CSN Card Type의 옵션을 보지않는다."
-    ],
-    [
-      34,
-      "[Mobile Access]\n1. Mobile: BLE 체크 후 적용\n2. Mobile Card 리드\n3. Mobile: BLE 언체크 후 적용\n4. Mobile Card 리드",
-      "> Mobile Access 지원장치\n> 에어팝 - BLE 설정\n> CSN Card Type - Mifare/Felica 옵션에 대해 체크/언체크",
-      "1. 체크된 경우 발급된 카드정보가 BLE로 리드되고, 언체크시 리드되지 않는다.\n2. CSN Card Type의 옵션을 보지않는다."
-    ],
-    [
-      35,
-      "[Custom Smart Card]\n1. CSN: Mifare/Felica 체크\n2. Custom Smart Card : Classic/Plus 언체크\n3. Custom SmartCard 리드",
-      "> suprema smartcard - Enable/Disable\n> 리드할 SmartCard : Classic/Plus 카드",
-      "1. CSN으로 리드된다."
-    ],
-    [
-      36,
-      "[Custom Smart Card]\n\n1. CSN: Mifare/Felica 체크\n2. Custom SmartCard: DesFire/DesFire EV1 언체크\n3. Custom SmartCard 리드",
-      "> suprema smartcard - Enable/Disable\n> 리드할 SmartCard : DesFire/DesFire EV1 카드\n\n",
-      "1. CSN으로 리드된다."
-    ],
-    [
-      37,
-      "[Custom Smart Card]\n\n1. CSN:Mifare/Felica 체크\n2. Custom Smart Card: Felica Standard 언체크 \n3. Custom SmartCard 리드 ",
-      "> suprema smartcard - Enable/Disable\n> 리드할 SmartCard: Felica 카드",
-      "1.CSN으로 리드된다."
-    ],
-    [
-      38,
-      "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 체크\n3. suprema smartcard 리드",
-      "> Custom SmartCard - Enable/Disable\n",
-      "1. 체크된 경우 발급된 카드정보로 리드"
-    ],
-    [
-      39,
-      "[Custom Smart Card]\n\n1. CSN 언체크\n2. Custom SmartCard 언체크\n3. Custom SmartCard 리드",
-      "> suprema smartcard - Enable/Disable\n",
-      "1. 리드되지 않는다."
-    ],
-    [
-      40,
-      "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 체크\n3. Custom SmartCard 체크(레이아웃 설정)\n4. Custom SmartCard 리드",
-      "Layout 설정\n> 스마트카드 레이아웃과 상이\n> 레이아웃 없음",
-      "1. 리드되지 않는다."
-    ],
-    [
-      41,
-      "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 언체크\n3. Custom SmartCard 레이아웃 설정\n4. Custom SmartCard 리드\n5. Custom SmartCard 레이아웃 적용 해제",
-      "Layout 설정\n> 레이아웃 없음\n\n리드할 SmartCard\n> Classic/Plus 카드\n> DesFire/DesFire EV1 카드\n> Felica 카드",
-      "리드되지 않는다."
-    ],
-    [
-      42,
-      "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 체크\n3. Custom SmartCard 체크(레이아웃 설정)\n4. Custom SmartCard 리드",
-      "Layout 설정\n> 스마트카드 레이아웃과 동일",
-      "1. 체크된 경우 발급된 카드정보로 리드"
-    ],
-    [
-      43,
-      "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 언체크\n3. Custom SmartCard 체크(레이아웃 설정)\n4. Custom SmartCard 리드",
-      "Layout 설정\n> 스마트카드 레이아웃과 상이\n> 레이아웃 없음",
-      "1. 리드되지 않는다.\n- 반응 없음"
-    ],
-    [
-      44,
-      "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 언체크\n3. Custom SmartCard 체크(레이아웃 설정)\n4. Custom SmartCard 리드",
-      "Layout 설정\n> 스마트카드 레이아웃과 동일",
-      "1. 체크된 경우 발급된 카드정보로 리드"
-    ],
-    [
-      45,
-      "[Custom Smart Card]\n\n1. Mifare: Classic/Plus 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Custom SmartCard - Mifare: Classic/Plus 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
-      "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> Mifare\n\nLayout 설정\n> 스마트카드 레이아웃과 동일",
-      "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다."
-    ],
-    [
-      46,
-      "[Custom Smart Card]\n\n1. Mifare: Classic/Plus 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Mifare: Classic/Plus 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
-      "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> Mifare\n\nLayout 설정\n> 스마트카드 레이아웃과 상이",
-      "1. 체크/언체크 상관없이 CSN으로 리드된다.\n > 카드발급 불가"
-    ],
-    [
-      47,
-      "[Custom Smart Card]\n\n1. Mifare: DesFire/DesFire EV1 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Mifare: DesFire/DesFire EV1 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
-      "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> DesFire/DesFire EV1\n\nLayout 설정\n> 스마트카드 레이아웃과 동일",
-      "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다."
-    ],
-    [
-      48,
-      "[Custom Smart Card]\n\n1. Mifare: DesFire/DesFire EV1 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Mifare: DesFire/DesFire EV1 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
-      "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> DesFire/DesFire EV1\n\nLayout 설정\n> 스마트카드 레이아웃과 상이",
-      "1. 체크/언체크 상관없이 CSN으로 리드된다.\n> 카드발급 불가"
-    ],
-    [
-      49,
-      "[Custom Smart Card]\n\n1. Felica: Felica Standard 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Custom SmartCard - Felica: Felica Standard 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
-      "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> Felica\n\nLayout 설정\n>스마트카드 레이아웃과 동일",
-      "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다. "
-    ],
-    [
-      50,
-      "[Custom Smart Card]\n\n1. Felica: Felica Standard 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Custom SmartCard - Felica: Felica Standard 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
-      "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> Felica\n\nLayout 설정\n>스마트카드 레이아웃과 상이",
-      "1. 체크/언체크 상관없이 CSN으로 리드된다.\n>카드발급 불가"
-    ],
-    [
-      51,
-      "[Custom Smart Card]\n\n1. CSN: Mifare/Felica 언체크\n2. Custom SmartCard: Classic/Plus 체크 및 Layout 설정\n3. Custom SmartCard 리드",
-      "> suprema smartcard - Enable/Disable\n\n리드할 SmartCard\n> Classic/Plus 카드",
-      "1. 체크된 경우 발급된 카드정보로 리드된다."
-    ],
-    [
-      52,
-      "[Custom Smart Card]\n\n1. CSN: Mifare/Felica 언체크\n2. Custom SmartCard: DesFire/DesFire EV1 체크 및 Layout 설정\n3. Custom SmartCard 리드",
-      "> suprema smartcard - Enable/Disable\n\n리드할 SmartCard\n> DesFire/DesFire EV1 카드",
-      "1. 체크된 경우 발급된 카드정보로 리드된다."
-    ],
-    [
-      53,
-      "[Custom Smart Card]\n\n1. CSN 체크\n2. Suprema SmartCard 언체크\n3. Custom SmartCard 언체크\n4. Suprema SmartCard/Custom SmartCard 리드",
-      "리드할 SmartCard\n> Classic/Plus 카드\n> DesFire/DesFire EV1 카드\n> Felica 카드",
-      "CSN으로 리드된다."
-    ],
-    [
-      54,
-      "\t\n[Custom Smart Card]\n\n1. CSN 체크\n2. Suprema SmartCard 체크\n3. Custom SmartCard 언체크\n4. Custom SmartCard 리드",
-      "리드할 SmartCard\n> Classic/Plus 카드\n> DesFire/DesFire EV1 카드\n> Felica 카드",
-      "CSN으로 리드된다."
-    ],
-    [
-      55,
-      "\t\n[Custom Smart Card]\n\n1. CSN 체크\n2. Suprema SmartCard 언체크\n3. Custom SmartCard 체크\n4. Suprema SmartCard 리드",
-      "리드할 SmartCard\n> Classic/Plus 카드\n> DesFire/DesFire EV1 카드\n> Felica 카드",
-      "CSN으로 리드된다."
-    ],
-    [
-      56,
-      "[Template On Mobile]\n\n1. NFC 체크 후 적용\n2. ToM 발급 및 리드\n3. NFC 언체크 후 적용\n4. ToM 발급 및 리드",
-      "리드할 ToM 카드\n>NFC\n\n모바일 - NFC 설정\n\n※Face 발급 포함/미포함\n\n> Default: ON(단, 미지원 버전에서 지원 버전으로 업그레이드 시 OFF)",
-      "체크된 경우 발급된 카드정보가 NFC로 리드되고, 언체크시 리드되지 않는다.\n"
-    ],
-    [
-      57,
-      "[Template On Mobile] \n\n1. BLE 체크 후 적용\n2. ToM 발급 및 리드\n3. BLE 언체크 후 적용\n4. ToM 발급 및 리드",
-      "리드할 ToM 카드\n>BLE\n\n모바일 - BLE 설정\n\n※Face 발급 포함/미포함\n\n> Default: ON(단, 미지원 버전에서 지원 버전으로 업그레이드 시 OFF)",
-      "체크된 경우 발급된 카드 정보가 BLE로 리드되고, 언체크 시 리드되지 않는다.\n"
-    ],
-    [
-      58,
-      "[Template On Mobile] \n1. Disable 설정 후 적용\n2. ToM 발급 및 리드",
-      "리드할 ToM 카드\n>BLE,NFC\n\n모바일 - BLE,NFC 설정\n\n※Face 발급 포함/미포함\n",
-      "리드되지 않는다."
-    ],
-    [
-      59,
-      "[XP2-MHPB]\n1. 지원되는 Card Type 확인\n2. 지원되는 Card Read",
-      "지원되는 Card Type\n> EM, HID Prox, iClass, iClass SEOS",
-      "1. EM, HID Prox, iClass, iClass SEOS 항목이 체크 및 활성화되어 표시된다. \n※ (BioStar UI상) 미지원 항목에 대해서는 언체크된 상태에서 비활성화 처리\n\n2. 지원되는 카드에 대해 Read되어 인증결과를 출력한다.\n\n※ 지원되는 카드 타입에 대해 위에 기재된 TC 수행"
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-250",
-    "description": "",
-    "test_step": [
-      "1. CSN: EM4100 체크 후 적용\n2. EM Card 리드\n3. CSN: EM4100 언체크 후 적용\n4. EM Card 리드",
-      "1. CSN: Mifare/Felica 체크 후 적용\n2. 카드 리드\n3. CSN: Mifare/Felica 언체크 후 적용\n4. 카드 리드",
-      "1. CSN: EM4100 & Mifare/Felica 체크\n2. Wiegand Format 설정 및 Byte Order 설정\n3. 카드 리드",
-      "1. Wiegand: iClass 체크 및 Wiegand Format 설정 후 적용\n2. iClass Card 리드\n3. Wiegand: iClass 언체크 후 적용\n4. iClass Card 리드",
-      "1. Wiegand: iClass 체크 및 Wiegand Format 설정 후 적용\n2. iClass Card 리드\n3. Wiegand: iClass 언체크 후 적용\n4. iClass Card 리드",
-      "1. Wiegand: HID Prox 체크 및 Wiegand Format 설정 후 적용\n2. HID Prox Card 리드\n3. Wiegand: HID 언체크 후 적용\n4. HID Prox Card 리드",
-      "1. Wiegand: HID Prox 체크 및 Wiegand Format 설정 후 적용\n2. HID Prox Card 리드\n3. Wiegand: HID Prox 언체크 후 적용\n4. HID Prox Card 리드",
-      "1. Mifare: Classic/Plus 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. Mifare: Classic/Plus 언체크 후 적용\n4. SmartCard 발급 및 리드",
-      "1. Mifare: Classic/Plus 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. Mifare: Classic/Plus 언체크 후 적용\n4. SmartCard 발급 및 리드",
-      "1. Mifare: DesFire/DesFire EV1 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. Mifare: DesFire/DesFire EV1 언체크 후 적용\n4. SmartCard 발급 및 리드",
-      "1. Mifare: DesFire/DesFire EV1 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. Mifare: DesFire/DesFire EV1 언체크 후 적용\n4. SmartCard 발급 및 리드",
-      "1. iCLASS: SR/SE 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. iCLASS: SR/SE 언체크 후 적용\n4. SmartCard 발급 및 리드",
-      "1. iCLASS: SR/SE 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. iCLASS: SR/SE 언체크 후 적용\n4. SmartCard 발급 및 리드",
-      "1. iCLASS: SEOS 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. iCLASS: SEOS 언체크 후 적용\n4. SmartCard 발급 및 리드",
-      "1. iCLASS: SEOS 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. iCLASS: SEOS 언체크 후 적용\n4. SmartCard 발급 및 리드",
-      "1. CSN: Mifare/Felica 체크\n2. SmartCard: Classic/Plus 언체크\n3. SmartCard 리드",
-      "1. CSN: Mifare/Felica 언체크\n2. SmartCard: Classic/Plus 체크 및 Layout 설정\n3. CSN Card 리드",
-      "1. CSN: Mifare/Felica 체크\n2. SmartCard: DesFire/DesFire EV1 언체크\n3. SmartCard 리드",
-      "1. CSN: Mifare/Felica 언체크\n2. SmartCard: DesFire/DesFire EV1 체크 및 Layout 설정\n3. CSN Card 리드",
-      "1. Wiegand: iCLASS 체크 및 포맷 설정\n2. SmartCard: SR/SE 언체크\n3. SmartCard 리드",
-      "1. Wiegand: iCLASS 언체크\n2. SmartCard: SR/SE 체크 및 Layout 설정\n3. Wiegand Card 리드",
-      "1. Wiegand: iCLASS 체크\n2. SmartCard: SEOS 언체크\n3. SmartCard 리드",
-      "1. Wiegand: iCLASS 언체크\n2. SmartCard: SEOS 체크 및 Layout 설정\n3. Wiegand Card 리드",
-      "[바이오스타 모바일]\n1. Mobile: NFC 체크 후 적용\n2. Mobile Card 발급 및 리드\n3. Mobile: NFC 언체크 후 적용\n4. Mobile Card 발급 및 리드",
-      "[바이오스타 모바일]\n1. Mobile: NFC 체크 후 적용\n2. Mobile Card 발급 및 리드\n3. Mobile: NFC 언체크 후 적용\n4. Mobile Card 발급 및 리드",
-      "[바이오스타 모바일]\n1. Mobile: BLE 체크 후 적용\n2. Mobile Card 발급 및 리드\n3. Mobile: BLE 언체크 후 적용\n4. Mobile Card 발급 및 리드",
-      "[바이오스타 모바일]\n1. Mobile: BLE 체크 후 적용\n2. Mobile Card 발급 및 리드\n3. Mobile: BLE 언체크 후 적용\n4. Mobile Card 발급 및 리드",
-      "1. Card Type: 모두 Disable 설정 후 적용\n2. Card 리드",
-      "1. CSN: Mifare/Felica 체크\n2. SmartCard: Classic/Plus 언체크 \n3. DesFire/DesFire EV1 체크\n4. Calssic/Mifare의 Layout 설정\n5. 카드발급 및 리드시도",
-      "1. CSN: Mifare/Felica 체크\n2. SmartCard: Classic/Plus 체크 \n3. DesFire/DesFire EV1 언체크\n4. DesFire/DesFire EV1의 Layout 설정\n5. 카드발급 및 리드시도",
-      "1. Wiegand: iCLASS 체크\n2. SmartCard: SR/SE 체크 \n3. SEOS 언체크\n4. SEOS의 Layout 설정\n5. 카드발급 및 리드시도",
-      "1. Wiegand: iCLASS 체크\n2. SmartCard: SEOS 체크 \n3. SR/SE 언체크\n4. SR/SE의 Layout 설정\n5. 카드발급 및 리드시도",
-      "[Mobile Access]\n1. Mobile: NFC 체크 후 적용\n2. Mobile Card 리드\n3. Mobile: NFC 언체크 후 적용\n4. Mobile Card 리드",
-      "[Mobile Access]\n1. Mobile: BLE 체크 후 적용\n2. Mobile Card 리드\n3. Mobile: BLE 언체크 후 적용\n4. Mobile Card 리드",
-      "[Custom Smart Card]\n1. CSN: Mifare/Felica 체크\n2. Custom Smart Card : Classic/Plus 언체크\n3. Custom SmartCard 리드",
-      "[Custom Smart Card]\n\n1. CSN: Mifare/Felica 체크\n2. Custom SmartCard: DesFire/DesFire EV1 언체크\n3. Custom SmartCard 리드",
-      "[Custom Smart Card]\n\n1. CSN:Mifare/Felica 체크\n2. Custom Smart Card: Felica Standard 언체크 \n3. Custom SmartCard 리드 ",
-      "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 체크\n3. suprema smartcard 리드",
-      "[Custom Smart Card]\n\n1. CSN 언체크\n2. Custom SmartCard 언체크\n3. Custom SmartCard 리드",
-      "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 체크\n3. Custom SmartCard 체크(레이아웃 설정)\n4. Custom SmartCard 리드",
-      "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 언체크\n3. Custom SmartCard 레이아웃 설정\n4. Custom SmartCard 리드\n5. Custom SmartCard 레이아웃 적용 해제",
-      "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 체크\n3. Custom SmartCard 체크(레이아웃 설정)\n4. Custom SmartCard 리드",
-      "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 언체크\n3. Custom SmartCard 체크(레이아웃 설정)\n4. Custom SmartCard 리드",
-      "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 언체크\n3. Custom SmartCard 체크(레이아웃 설정)\n4. Custom SmartCard 리드",
-      "[Custom Smart Card]\n\n1. Mifare: Classic/Plus 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Custom SmartCard - Mifare: Classic/Plus 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
-      "[Custom Smart Card]\n\n1. Mifare: Classic/Plus 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Mifare: Classic/Plus 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
-      "[Custom Smart Card]\n\n1. Mifare: DesFire/DesFire EV1 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Mifare: DesFire/DesFire EV1 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
-      "[Custom Smart Card]\n\n1. Mifare: DesFire/DesFire EV1 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Mifare: DesFire/DesFire EV1 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
-      "[Custom Smart Card]\n\n1. Felica: Felica Standard 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Custom SmartCard - Felica: Felica Standard 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
-      "[Custom Smart Card]\n\n1. Felica: Felica Standard 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Custom SmartCard - Felica: Felica Standard 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
-      "[Custom Smart Card]\n\n1. CSN: Mifare/Felica 언체크\n2. Custom SmartCard: Classic/Plus 체크 및 Layout 설정\n3. Custom SmartCard 리드",
-      "[Custom Smart Card]\n\n1. CSN: Mifare/Felica 언체크\n2. Custom SmartCard: DesFire/DesFire EV1 체크 및 Layout 설정\n3. Custom SmartCard 리드",
-      "[Custom Smart Card]\n\n1. CSN 체크\n2. Suprema SmartCard 언체크\n3. Custom SmartCard 언체크\n4. Suprema SmartCard/Custom SmartCard 리드",
-      "\t\n[Custom Smart Card]\n\n1. CSN 체크\n2. Suprema SmartCard 체크\n3. Custom SmartCard 언체크\n4. Custom SmartCard 리드",
-      "\t\n[Custom Smart Card]\n\n1. CSN 체크\n2. Suprema SmartCard 언체크\n3. Custom SmartCard 체크\n4. Suprema SmartCard 리드",
-      "[Template On Mobile]\n\n1. NFC 체크 후 적용\n2. ToM 발급 및 리드\n3. NFC 언체크 후 적용\n4. ToM 발급 및 리드",
-      "[Template On Mobile] \n\n1. BLE 체크 후 적용\n2. ToM 발급 및 리드\n3. BLE 언체크 후 적용\n4. ToM 발급 및 리드",
-      "[Template On Mobile] \n1. Disable 설정 후 적용\n2. ToM 발급 및 리드",
-      "[XP2-MHPB]\n1. 지원되는 Card Type 확인\n2. 지원되는 Card Read"
-    ],
-    "data": [
-      "CSN Card 지원모델\n> EM",
-      "CSN Card 지원모델\n> Mifare/Felica/ISO-15693/EV1/EV2",
-      "CSN Card 지원모델",
-      "Wiegand Card 지원모델\n> iCLASS\n\nWiegand Format 설정\n> 리드할 카드 포맷과 동일",
-      "Wiegand Card 지원모델\n> iCLASS\n\nWiegand Format 설정\n> 리드할 카드 포맷과 상이",
-      "Wiegand Card 지원모델\n> HID\n\nWiegand Format 설정\n> 리드할 카드 포맷과 동일",
-      "Wiegand Card 지원모델\n> HID\n\nWiegand Format 설정\n> 리드할 카드 포맷과 상이",
-      "Smart Card 지원모델\n> Mifare\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
-      "Smart Card 지원모델\n> Mifare\n\nLayout 설정\n> 스마트카드 레이아웃과 상이\n",
-      "Smart Card 지원모델\n> DesFire/DesFire EV1\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
-      "Smart Card 지원모델\n> DesFire/DesFire EV1\n\nLayout 설정\n> 스마트카드 레이아웃과 상이",
-      "Smart Card 지원모델\n> iCLASS\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
-      "Smart Card 지원모델\n> iCLASS\n\nLayout 설정\n> 스마트카드 레이아웃과 상이",
-      "Smart Card 지원모델\n> SEOS\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
-      "Smart Card 지원모델\n> SEOS\n\nLayout 설정\n> 스마트카드 레이아웃과 상이",
-      "리드할 SmartCard\n> Classic/Plus 카드",
-      "리드할 CSN Card\n> Mifare",
-      "리드할 SmartCard\n> DesFire/DesFire EV1 카드",
-      "리드할 CSN Card\n> DesFire/DesFire EV1 카드",
-      "리드할 SmartCard\n> iCLASS 카드\n\nWiegand Format 설정\n> 리드할 카드 포맷과 동일",
-      "리드할 Wiegand Card\n> iCLASS 카드\n\nLayout 설정\n> 스마트카드 레이아웃과 동일",
-      "리드할 SmartCard\n> SEOS 카드\n\nWiegand Format 설정\n> 리드할 카드 포맷과 동일",
-      "리드할 Wiegand Card\n> SEOS 카드\n\nLayout 설정\n> 스마트카드 레이아웃과 동일",
-      "해당모델\n> P2/R2/L2\n\n모바일카드 지원모델\n> NFC\n\n모바일 - NFC 설정\n\nLayout 설정\n> 모바일카드 발급한 레이아웃과 동일",
-      "해당모델\n> P2/R2/L2\n\n모바일카드 지원모델\n> NFC\n\n모바일 - NFC 설정\n\nLayout 설정\n> 모바일카드 발급한 레이아웃과 상이",
-      "해당모델\n> P2/R2/L2\n\n모바일카드 지원모델\n> BLE\n\n모바일 - BLE 설정\n\nLayout 설정\n> 모바일카드 발급한 레이아웃과 동일",
-      "해당모델\n> P2/R2/L2\n\n모바일카드 지원모델\n> BLE\n\n모바일 - BLE 설정\n\nLayout 설정\n> 모바일카드 발급한 레이아웃과 상이",
-      "리드할 카드\n> CSN Card\n> Wiegand Card\n> Smart Card\n> Mobile Card",
-      "Smart Card 지원모델\n> Classic/Plus\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
-      "Smart Card 지원모델\n> DesFire/DesFire EV1\n\nLayout 설정\n> 스마트카드 레이아웃과 동일",
-      "Smart Card 지원모델\n> SEOS\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
-      "Smart Card 지원모델\n> ICLASS\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
-      "> Mobile Access 지원장치\n> 에어팝 - NFC 설정\n> CSN Card Type - Mifare/Felica 옵션에 대해 체크/언체크",
-      "> Mobile Access 지원장치\n> 에어팝 - BLE 설정\n> CSN Card Type - Mifare/Felica 옵션에 대해 체크/언체크",
-      "> suprema smartcard - Enable/Disable\n> 리드할 SmartCard : Classic/Plus 카드",
-      "> suprema smartcard - Enable/Disable\n> 리드할 SmartCard : DesFire/DesFire EV1 카드\n\n",
-      "> suprema smartcard - Enable/Disable\n> 리드할 SmartCard: Felica 카드",
-      "> Custom SmartCard - Enable/Disable\n",
-      "> suprema smartcard - Enable/Disable\n",
-      "Layout 설정\n> 스마트카드 레이아웃과 상이\n> 레이아웃 없음",
-      "Layout 설정\n> 레이아웃 없음\n\n리드할 SmartCard\n> Classic/Plus 카드\n> DesFire/DesFire EV1 카드\n> Felica 카드",
-      "Layout 설정\n> 스마트카드 레이아웃과 동일",
-      "Layout 설정\n> 스마트카드 레이아웃과 상이\n> 레이아웃 없음",
-      "Layout 설정\n> 스마트카드 레이아웃과 동일",
-      "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> Mifare\n\nLayout 설정\n> 스마트카드 레이아웃과 동일",
-      "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> Mifare\n\nLayout 설정\n> 스마트카드 레이아웃과 상이",
-      "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> DesFire/DesFire EV1\n\nLayout 설정\n> 스마트카드 레이아웃과 동일",
-      "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> DesFire/DesFire EV1\n\nLayout 설정\n> 스마트카드 레이아웃과 상이",
-      "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> Felica\n\nLayout 설정\n>스마트카드 레이아웃과 동일",
-      "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> Felica\n\nLayout 설정\n>스마트카드 레이아웃과 상이",
-      "> suprema smartcard - Enable/Disable\n\n리드할 SmartCard\n> Classic/Plus 카드",
-      "> suprema smartcard - Enable/Disable\n\n리드할 SmartCard\n> DesFire/DesFire EV1 카드",
-      "리드할 SmartCard\n> Classic/Plus 카드\n> DesFire/DesFire EV1 카드\n> Felica 카드",
-      "리드할 SmartCard\n> Classic/Plus 카드\n> DesFire/DesFire EV1 카드\n> Felica 카드",
-      "리드할 SmartCard\n> Classic/Plus 카드\n> DesFire/DesFire EV1 카드\n> Felica 카드",
-      "리드할 ToM 카드\n>NFC\n\n모바일 - NFC 설정\n\n※Face 발급 포함/미포함\n\n> Default: ON(단, 미지원 버전에서 지원 버전으로 업그레이드 시 OFF)",
-      "리드할 ToM 카드\n>BLE\n\n모바일 - BLE 설정\n\n※Face 발급 포함/미포함\n\n> Default: ON(단, 미지원 버전에서 지원 버전으로 업그레이드 시 OFF)",
-      "리드할 ToM 카드\n>BLE,NFC\n\n모바일 - BLE,NFC 설정\n\n※Face 발급 포함/미포함\n",
-      "지원되는 Card Type\n> EM, HID Prox, iClass, iClass SEOS"
-    ],
-    "expected_result": [
-      "1. EM4100에 체크가 된 경우 EM Card가 리드되고, 언체크시 리드되지 않는다.",
-      "1. 체크시 EM을 제외한 CSN 카드에 대해 리드되고, 언체크시 리드되지 않는다.",
-      "1. 설정된 포맷 및 Byte Order 설정에 맞게 카드ID가 리드된다.",
-      "1. 체크시 iCLASS Card가 리드되고, 언체크시 iCLASS Card가 리드되지 않는다.",
-      "1. 체크 후 iCLASS Card 리드시 '띡'소리만 출력(= 결과미출력)되고, 언체크시 iCLASS Card가 리드되지 않는다.",
-      "1. 체크시 HID Prox Card가 리드되고, 언체크시 HID Prox Card가 리드되지 않는다.",
-      "1. 체크 후 HID Prox Card 리드시 '띡'소리만 출력(= 결과미출력)되고, 언체크시 HID Prox Card가 리드되지 않는다.",
-      "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다.",
-      "1. 체크/언체크 상관없이 CSN으로 리드된다.\n> 카드발급 불가",
-      "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다.",
-      "1. 체크/언체크 상관없이 CSN으로 리드된다.\n> 카드발급 불가",
-      "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 PAC Data 로 리드된다.",
-      "1. 체크/언체크 상관없이 PAC Data 로 리드된다.\n> 카드발급 불가",
-      "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 PAC Data 로 리드된다.",
-      "1. 체크/언체크 상관없이 PAC Data 로 리드된다.\n> 카드발급 불가",
-      "1. CSN으로 리드된다.",
-      "1. 리드되지 않는다.",
-      "1. CSN으로 리드된다.",
-      "1. 리드되지 않는다.",
-      "1. PAC Data 로 리드된다.",
-      "1. 리드되지 않는다.",
-      "1. PAC Data 로 리드된다.",
-      "1. 리드되지 않는다.",
-      "1. 체크된 경우 발급된 카드정보가 NFC로 리드되고, 언체크시 리드되지 않는다.",
-      "1. 리드되지 않는다.",
-      "1. 체크된 경우 발급된 카드정보가 BLE로 리드되고, 언체크시 리드되지 않는다.",
-      "1. 리드되지 않는다.\n=> 확인 후 내용 업데이트 예정",
-      "1. 리드되지 않는다.",
-      "1. 포맷/발급이 안된다.\n2. CSN으로 리드된다.",
-      "1. 포맷/발급이 안된다.\n2. CSN으로 리드된다.",
-      "1. 포맷/발급이 안된다.\n2. PAC Data로 리드된다.",
-      "1. 포맷/발급이 안된다.\n2. PAC Data로 리드된다.",
-      "1. 체크된 경우 발급된 카드정보가 NFC로 리드되고, 언체크시 리드되지 않는다.\n2. CSN Card Type의 옵션을 보지않는다.",
-      "1. 체크된 경우 발급된 카드정보가 BLE로 리드되고, 언체크시 리드되지 않는다.\n2. CSN Card Type의 옵션을 보지않는다.",
-      "1. CSN으로 리드된다.",
-      "1. CSN으로 리드된다.",
-      "1.CSN으로 리드된다.",
-      "1. 체크된 경우 발급된 카드정보로 리드",
-      "1. 리드되지 않는다.",
-      "1. 리드되지 않는다.",
-      "리드되지 않는다.",
-      "1. 체크된 경우 발급된 카드정보로 리드",
-      "1. 리드되지 않는다.\n- 반응 없음",
-      "1. 체크된 경우 발급된 카드정보로 리드",
-      "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다.",
-      "1. 체크/언체크 상관없이 CSN으로 리드된다.\n > 카드발급 불가",
-      "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다.",
-      "1. 체크/언체크 상관없이 CSN으로 리드된다.\n> 카드발급 불가",
-      "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다. ",
-      "1. 체크/언체크 상관없이 CSN으로 리드된다.\n>카드발급 불가",
-      "1. 체크된 경우 발급된 카드정보로 리드된다.",
-      "1. 체크된 경우 발급된 카드정보로 리드된다.",
-      "CSN으로 리드된다.",
-      "CSN으로 리드된다.",
-      "CSN으로 리드된다.",
-      "체크된 경우 발급된 카드정보가 NFC로 리드되고, 언체크시 리드되지 않는다.\n",
-      "체크된 경우 발급된 카드 정보가 BLE로 리드되고, 언체크 시 리드되지 않는다.\n",
-      "리드되지 않는다.",
-      "1. EM, HID Prox, iClass, iClass SEOS 항목이 체크 및 활성화되어 표시된다. \n※ (BioStar UI상) 미지원 항목에 대해서는 언체크된 상태에서 비활성화 처리\n\n2. 지원되는 카드에 대해 Read되어 인증결과를 출력한다.\n\n※ 지원되는 카드 타입에 대해 위에 기재된 TC 수행"
-    ]
+    "assignee": null,
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 59.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-250/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@521650c3[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@5292da78[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@44b5c25f[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@b091ab[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@83907e9[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@4824f4c[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6ecfd2b9[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@6a763b02[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@2ab07fea[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@3c5ebddf[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@2c94eaf7[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@77e16a4c[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": null,
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-250/watchers",
+      "watchCount": 2,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T09:45:35.000+0900",
+    "timeoriginalestimate": null,
+    "description": "CSN\r\n D, A, I - EM, Mifare\r\n E - EM\r\n M - Mifare\r\n\r\nH - X, 예외 H(BEW2-OHP) - EM, Mifare\r\n\r\nWiegand\r\n A - iClass, HID Prox\r\n I - iClass\r\n H - HID Prox\r\n\r\nD - X, 예외 D(FL-DB, XPD2, XP2) - HID Prox\r\n E, M - X\r\n\r\nSmart\r\n A - Classic/Plus, Desfire/Desfire EV1, SR/SE, SEOS\r\n M, D - Classic/Plus, Desfire/Desfire EV1\r\n I - SR/SE, SEOS\r\n\r\nE, H - X, 예외(BEW2-OHP) - Classic/Plus, Desfire/Desfire EV1)\r\n\r\nMobile\r\n A, D, M, I - NFC\r\n BLE - 모델명 B\r\n\r\nE, H - X, 예외(BEW2-OHP) - NFC\r\n\r\nBEW2-OHP는 1.1.0 이전 버전도 이후 버전과 동일하게 처리\r\n\r\n미지원 펌웨어 - CSN,Wiegand,Smart 사용함 Mobile 출력 안됨\r\n 지원 펌웨어 - 지원하는 카드 타입이 아닌 경우 체크 해제 상태로 비활성화, CSN, Wiegand, Smart UI 출력 유무는 이전 버전과 동일\r\n\r\n> 해당 항목에서 선택 된 카드만 FW에서 리딩 되도록 지원 (예: iClass 선택 시, 다른 카드 Type은 리딩 되지 않도록 함)\r\n > CSN 이면서 Smart Card로 발급 & 장치 설정은 Only CSN => 카드리드시 CSN으로 리드.\r\n > Wiegand 이면서 Smart Card로 발급 & 장치 설정은 Only Wiegand => 카드리드시 Pac Data로 리드.\r\n > ISO-15693의 경우 Mifare/Felica에 포함(BioStar UI상 ISO-15693 명시하지 않음)\r\n > SEOS Config Card의 경우 SEOS 체크유무 상관없이 동작되게 지원\r\n > NFC, BLE의 경우 카드인증에 해당 하는 부분으로 Device Manager 동작과는 무관\r\n > Card Type 옵션 설정에 따라 카드 등록/리드 모두 동일하게 적용되어 동작\r\n > Smart Card 에 대해서는 CSN으로 등록불가(기존과 동일)\r\n\r\n> XS2의 경우도 QDPB, DPB  HID Prox 미지원\r\n\r\nCard Type UI는 Master/Slave 각각 지원되어야 한다.\r\n\r\n[BDP-1068] XP2-MAPB-H 에서 지원되는 카드 타입\r\n> EM, HID Prox, iClass, iClass SEOS",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. CSN: EM4100 체크 후 적용<br/>2. EM Card 리드<br/>3. CSN: EM4100 언체크 후 적용<br/>4. EM Card 리드</p></td><td><p>CSN Card 지원모델<br/>&gt; EM</p></td><td><p>1. EM4100에 체크가 된 경우 EM Card가 리드되고, 언체크시 리드되지 않는다.</p></td></tr><tr><td>2</td><td><p>1. CSN: Mifare/Felica 체크 후 적용<br/>2. 카드 리드<br/>3. CSN: Mifare/Felica 언체크 후 적용<br/>4. 카드 리드</p></td><td><p>CSN Card 지원모델<br/>&gt; Mifare/Felica/ISO-15693/EV1/EV2</p></td><td><p>1. 체크시 EM을 제외한 CSN 카드에 대해 리드되고, 언체크시 리드되지 않는다.</p></td></tr><tr><td>3</td><td><p>1. CSN: EM4100 &amp; Mifare/Felica 체크<br/>2. Wiegand Format 설정 및 Byte Order 설정<br/>3. 카드 리드</p></td><td><p>CSN Card 지원모델</p></td><td><p>1. 설정된 포맷 및 Byte Order 설정에 맞게 카드ID가 리드된다.</p></td></tr><tr><td>4</td><td><p>1. Wiegand: iClass 체크 및 Wiegand Format 설정 후 적용<br/>2. iClass Card 리드<br/>3. Wiegand: iClass 언체크 후 적용<br/>4. iClass Card 리드</p></td><td><p>Wiegand Card 지원모델<br/>&gt; iCLASS</p>\n\n<p>Wiegand Format 설정<br/>&gt; 리드할 카드 포맷과 동일</p></td><td><p>1. 체크시 iCLASS Card가 리드되고, 언체크시 iCLASS Card가 리드되지 않는다.</p></td></tr><tr><td>5</td><td><p>1. Wiegand: iClass 체크 및 Wiegand Format 설정 후 적용<br/>2. iClass Card 리드<br/>3. Wiegand: iClass 언체크 후 적용<br/>4. iClass Card 리드</p></td><td><p>Wiegand Card 지원모델<br/>&gt; iCLASS</p>\n\n<p>Wiegand Format 설정<br/>&gt; 리드할 카드 포맷과 상이</p></td><td><p>1. 체크 후 iCLASS Card 리드시 '띡'소리만 출력(= 결과미출력)되고, 언체크시 iCLASS Card가 리드되지 않는다.</p></td></tr><tr><td>6</td><td><p>1. Wiegand: HID Prox 체크 및 Wiegand Format 설정 후 적용<br/>2. HID Prox Card 리드<br/>3. Wiegand: HID 언체크 후 적용<br/>4. HID Prox Card 리드</p></td><td><p>Wiegand Card 지원모델<br/>&gt; HID</p>\n\n<p>Wiegand Format 설정<br/>&gt; 리드할 카드 포맷과 동일</p></td><td><p>1. 체크시 HID Prox Card가 리드되고, 언체크시 HID Prox Card가 리드되지 않는다.</p></td></tr><tr><td>7</td><td><p>1. Wiegand: HID Prox 체크 및 Wiegand Format 설정 후 적용<br/>2. HID Prox Card 리드<br/>3. Wiegand: HID Prox 언체크 후 적용<br/>4. HID Prox Card 리드</p></td><td><p>Wiegand Card 지원모델<br/>&gt; HID</p>\n\n<p>Wiegand Format 설정<br/>&gt; 리드할 카드 포맷과 상이</p></td><td><p>1. 체크 후 HID Prox Card 리드시 '띡'소리만 출력(= 결과미출력)되고, 언체크시 HID Prox Card가 리드되지 않는다.</p></td></tr><tr><td>8</td><td><p>1. Mifare: Classic/Plus 체크 및 Layout 설정 후 적용<br/>2. SmartCard 발급 및 리드<br/>3. Mifare: Classic/Plus 언체크 후 적용<br/>4. SmartCard 발급 및 리드</p></td><td><p>Smart Card 지원모델<br/>&gt; Mifare</p>\n\n<p>Layout 설정<br/>&gt; 스마트카드 레이아웃과 동일</p></td><td><p>1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다.</p></td></tr><tr><td>9</td><td><p>1. Mifare: Classic/Plus 체크 및 Layout 설정 후 적용<br/>2. SmartCard 발급 및 리드<br/>3. Mifare: Classic/Plus 언체크 후 적용<br/>4. SmartCard 발급 및 리드</p></td><td><p>Smart Card 지원모델<br/>&gt; Mifare</p>\n\n<p>Layout 설정<br/>&gt; 스마트카드 레이아웃과 상이</p></td><td><p>1. 체크/언체크 상관없이 CSN으로 리드된다.<br/>&gt; 카드발급 불가</p></td></tr><tr><td>10</td><td><p>1. Mifare: DesFire/DesFire EV1 체크 및 Layout 설정 후 적용<br/>2. SmartCard 발급 및 리드<br/>3. Mifare: DesFire/DesFire EV1 언체크 후 적용<br/>4. SmartCard 발급 및 리드</p></td><td><p>Smart Card 지원모델<br/>&gt; DesFire/DesFire EV1</p>\n\n<p>Layout 설정<br/>&gt; 스마트카드 레이아웃과 동일</p></td><td><p>1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다.</p></td></tr><tr><td>11</td><td><p>1. Mifare: DesFire/DesFire EV1 체크 및 Layout 설정 후 적용<br/>2. SmartCard 발급 및 리드<br/>3. Mifare: DesFire/DesFire EV1 언체크 후 적용<br/>4. SmartCard 발급 및 리드</p></td><td><p>Smart Card 지원모델<br/>&gt; DesFire/DesFire EV1</p>\n\n<p>Layout 설정<br/>&gt; 스마트카드 레이아웃과 상이</p></td><td><p>1. 체크/언체크 상관없이 CSN으로 리드된다.<br/>&gt; 카드발급 불가</p></td></tr><tr><td>12</td><td><p>1. iCLASS: SR/SE 체크 및 Layout 설정 후 적용<br/>2. SmartCard 발급 및 리드<br/>3. iCLASS: SR/SE 언체크 후 적용<br/>4. SmartCard 발급 및 리드</p></td><td><p>Smart Card 지원모델<br/>&gt; iCLASS</p>\n\n<p>Layout 설정<br/>&gt; 스마트카드 레이아웃과 동일</p></td><td><p>1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 PAC Data 로 리드된다.</p></td></tr><tr><td>13</td><td><p>1. iCLASS: SR/SE 체크 및 Layout 설정 후 적용<br/>2. SmartCard 발급 및 리드<br/>3. iCLASS: SR/SE 언체크 후 적용<br/>4. SmartCard 발급 및 리드</p></td><td><p>Smart Card 지원모델<br/>&gt; iCLASS</p>\n\n<p>Layout 설정<br/>&gt; 스마트카드 레이아웃과 상이</p></td><td><p>1. 체크/언체크 상관없이 PAC Data 로 리드된다.<br/>&gt; 카드발급 불가</p></td></tr><tr><td>14</td><td><p>1. iCLASS: SEOS 체크 및 Layout 설정 후 적용<br/>2. SmartCard 발급 및 리드<br/>3. iCLASS: SEOS 언체크 후 적용<br/>4. SmartCard 발급 및 리드</p></td><td><p>Smart Card 지원모델<br/>&gt; SEOS</p>\n\n<p>Layout 설정<br/>&gt; 스마트카드 레이아웃과 동일</p></td><td><p>1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 PAC Data 로 리드된다.</p></td></tr><tr><td>15</td><td><p>1. iCLASS: SEOS 체크 및 Layout 설정 후 적용<br/>2. SmartCard 발급 및 리드<br/>3. iCLASS: SEOS 언체크 후 적용<br/>4. SmartCard 발급 및 리드</p></td><td><p>Smart Card 지원모델<br/>&gt; SEOS</p>\n\n<p>Layout 설정<br/>&gt; 스마트카드 레이아웃과 상이</p></td><td><p>1. 체크/언체크 상관없이 PAC Data 로 리드된다.<br/>&gt; 카드발급 불가</p></td></tr><tr><td>16</td><td><p>1. CSN: Mifare/Felica 체크<br/>2. SmartCard: Classic/Plus 언체크<br/>3. SmartCard 리드</p></td><td><p>리드할 SmartCard<br/>&gt; Classic/Plus 카드</p></td><td><p>1. CSN으로 리드된다.</p></td></tr><tr><td>17</td><td><p>1. CSN: Mifare/Felica 언체크<br/>2. SmartCard: Classic/Plus 체크 및 Layout 설정<br/>3. CSN Card 리드</p></td><td><p>리드할 CSN Card<br/>&gt; Mifare</p></td><td><p>1. 리드되지 않는다.</p></td></tr><tr><td>18</td><td><p>1. CSN: Mifare/Felica 체크<br/>2. SmartCard: DesFire/DesFire EV1 언체크<br/>3. SmartCard 리드</p></td><td><p>리드할 SmartCard<br/>&gt; DesFire/DesFire EV1 카드</p></td><td><p>1. CSN으로 리드된다.</p></td></tr><tr><td>19</td><td><p>1. CSN: Mifare/Felica 언체크<br/>2. SmartCard: DesFire/DesFire EV1 체크 및 Layout 설정<br/>3. CSN Card 리드</p></td><td><p>리드할 CSN Card<br/>&gt; DesFire/DesFire EV1 카드</p></td><td><p>1. 리드되지 않는다.</p></td></tr><tr><td>20</td><td><p>1. Wiegand: iCLASS 체크 및 포맷 설정<br/>2. SmartCard: SR/SE 언체크<br/>3. SmartCard 리드</p></td><td><p>리드할 SmartCard<br/>&gt; iCLASS 카드</p>\n\n<p>Wiegand Format 설정<br/>&gt; 리드할 카드 포맷과 동일</p></td><td><p>1. PAC Data 로 리드된다.</p></td></tr><tr><td>21</td><td><p>1. Wiegand: iCLASS 언체크<br/>2. SmartCard: SR/SE 체크 및 Layout 설정<br/>3. Wiegand Card 리드</p></td><td><p>리드할 Wiegand Card<br/>&gt; iCLASS 카드</p>\n\n<p>Layout 설정<br/>&gt; 스마트카드 레이아웃과 동일</p></td><td><p>1. 리드되지 않는다.</p></td></tr><tr><td>22</td><td><p>1. Wiegand: iCLASS 체크<br/>2. SmartCard: SEOS 언체크<br/>3. SmartCard 리드</p></td><td><p>리드할 SmartCard<br/>&gt; SEOS 카드</p>\n\n<p>Wiegand Format 설정<br/>&gt; 리드할 카드 포맷과 동일</p></td><td><p>1. PAC Data 로 리드된다.</p></td></tr><tr><td>23</td><td><p>1. Wiegand: iCLASS 언체크<br/>2. SmartCard: SEOS 체크 및 Layout 설정<br/>3. Wiegand Card 리드</p></td><td><p>리드할 Wiegand Card<br/>&gt; SEOS 카드</p>\n\n<p>Layout 설정<br/>&gt; 스마트카드 레이아웃과 동일</p></td><td><p>1. 리드되지 않는다.</p></td></tr><tr><td>24</td><td><p><span class=\"error\">&#91;바이오스타 모바일&#93;</span><br/>1. Mobile: NFC 체크 후 적용<br/>2. Mobile Card 발급 및 리드<br/>3. Mobile: NFC 언체크 후 적용<br/>4. Mobile Card 발급 및 리드</p></td><td><p>해당모델<br/>&gt; P2/R2/L2</p>\n\n<p>모바일카드 지원모델<br/>&gt; NFC</p>\n\n<p>모바일 - NFC 설정</p>\n\n<p>Layout 설정<br/>&gt; 모바일카드 발급한 레이아웃과 동일</p></td><td><p>1. 체크된 경우 발급된 카드정보가 NFC로 리드되고, 언체크시 리드되지 않는다.</p></td></tr><tr><td>25</td><td><p><span class=\"error\">&#91;바이오스타 모바일&#93;</span><br/>1. Mobile: NFC 체크 후 적용<br/>2. Mobile Card 발급 및 리드<br/>3. Mobile: NFC 언체크 후 적용<br/>4. Mobile Card 발급 및 리드</p></td><td><p>해당모델<br/>&gt; P2/R2/L2</p>\n\n<p>모바일카드 지원모델<br/>&gt; NFC</p>\n\n<p>모바일 - NFC 설정</p>\n\n<p>Layout 설정<br/>&gt; 모바일카드 발급한 레이아웃과 상이</p></td><td><p>1. 리드되지 않는다.</p></td></tr><tr><td>26</td><td><p><span class=\"error\">&#91;바이오스타 모바일&#93;</span><br/>1. Mobile: BLE 체크 후 적용<br/>2. Mobile Card 발급 및 리드<br/>3. Mobile: BLE 언체크 후 적용<br/>4. Mobile Card 발급 및 리드</p></td><td><p>해당모델<br/>&gt; P2/R2/L2</p>\n\n<p>모바일카드 지원모델<br/>&gt; BLE</p>\n\n<p>모바일 - BLE 설정</p>\n\n<p>Layout 설정<br/>&gt; 모바일카드 발급한 레이아웃과 동일</p></td><td><p>1. 체크된 경우 발급된 카드정보가 BLE로 리드되고, 언체크시 리드되지 않는다.</p></td></tr><tr><td>27</td><td><p><span class=\"error\">&#91;바이오스타 모바일&#93;</span><br/>1. Mobile: BLE 체크 후 적용<br/>2. Mobile Card 발급 및 리드<br/>3. Mobile: BLE 언체크 후 적용<br/>4. Mobile Card 발급 및 리드</p></td><td><p>해당모델<br/>&gt; P2/R2/L2</p>\n\n<p>모바일카드 지원모델<br/>&gt; BLE</p>\n\n<p>모바일 - BLE 설정</p>\n\n<p>Layout 설정<br/>&gt; 모바일카드 발급한 레이아웃과 상이</p></td><td><p>1. 리드되지 않는다.<br/>=&gt; 확인 후 내용 업데이트 예정</p></td></tr><tr><td>28</td><td><p>1. Card Type: 모두 Disable 설정 후 적용<br/>2. Card 리드</p></td><td><p>리드할 카드<br/>&gt; CSN Card<br/>&gt; Wiegand Card<br/>&gt; Smart Card<br/>&gt; Mobile Card</p></td><td><p>1. 리드되지 않는다.</p></td></tr><tr><td>29</td><td><p>1. CSN: Mifare/Felica 체크<br/>2. SmartCard: Classic/Plus 언체크 <br/>3. DesFire/DesFire EV1 체크<br/>4. Calssic/Mifare의 Layout 설정<br/>5. 카드발급 및 리드시도</p></td><td><p>Smart Card 지원모델<br/>&gt; Classic/Plus</p>\n\n<p>Layout 설정<br/>&gt; 스마트카드 레이아웃과 동일</p></td><td><p>1. 포맷/발급이 안된다.<br/>2. CSN으로 리드된다.</p></td></tr><tr><td>30</td><td><p>1. CSN: Mifare/Felica 체크<br/>2. SmartCard: Classic/Plus 체크 <br/>3. DesFire/DesFire EV1 언체크<br/>4. DesFire/DesFire EV1의 Layout 설정<br/>5. 카드발급 및 리드시도</p></td><td><p>Smart Card 지원모델<br/>&gt; DesFire/DesFire EV1</p>\n\n<p>Layout 설정<br/>&gt; 스마트카드 레이아웃과 동일</p></td><td><p>1. 포맷/발급이 안된다.<br/>2. CSN으로 리드된다.</p></td></tr><tr><td>31</td><td><p>1. Wiegand: iCLASS 체크<br/>2. SmartCard: SR/SE 체크 <br/>3. SEOS 언체크<br/>4. SEOS의 Layout 설정<br/>5. 카드발급 및 리드시도</p></td><td><p>Smart Card 지원모델<br/>&gt; SEOS</p>\n\n<p>Layout 설정<br/>&gt; 스마트카드 레이아웃과 동일</p></td><td><p>1. 포맷/발급이 안된다.<br/>2. PAC Data로 리드된다.</p></td></tr><tr><td>32</td><td><p>1. Wiegand: iCLASS 체크<br/>2. SmartCard: SEOS 체크 <br/>3. SR/SE 언체크<br/>4. SR/SE의 Layout 설정<br/>5. 카드발급 및 리드시도</p></td><td><p>Smart Card 지원모델<br/>&gt; ICLASS</p>\n\n<p>Layout 설정<br/>&gt; 스마트카드 레이아웃과 동일</p></td><td><p>1. 포맷/발급이 안된다.<br/>2. PAC Data로 리드된다.</p></td></tr><tr><td>33</td><td><p><span class=\"error\">&#91;Mobile Access&#93;</span><br/>1. Mobile: NFC 체크 후 적용<br/>2. Mobile Card 리드<br/>3. Mobile: NFC 언체크 후 적용<br/>4. Mobile Card 리드</p></td><td><p>&gt; Mobile Access 지원장치<br/>&gt; 에어팝 - NFC 설정<br/>&gt; CSN Card Type - Mifare/Felica 옵션에 대해 체크/언체크</p></td><td><p>1. 체크된 경우 발급된 카드정보가 NFC로 리드되고, 언체크시 리드되지 않는다.<br/>2. CSN Card Type의 옵션을 보지않는다.</p></td></tr><tr><td>34</td><td><p><span class=\"error\">&#91;Mobile Access&#93;</span><br/>1. Mobile: BLE 체크 후 적용<br/>2. Mobile Card 리드<br/>3. Mobile: BLE 언체크 후 적용<br/>4. Mobile Card 리드</p></td><td><p>&gt; Mobile Access 지원장치<br/>&gt; 에어팝 - BLE 설정<br/>&gt; CSN Card Type - Mifare/Felica 옵션에 대해 체크/언체크</p></td><td><p>1. 체크된 경우 발급된 카드정보가 BLE로 리드되고, 언체크시 리드되지 않는다.<br/>2. CSN Card Type의 옵션을 보지않는다.</p></td></tr><tr><td>35</td><td><p><span class=\"error\">&#91;Custom Smart Card&#93;</span><br/>1. CSN: Mifare/Felica 체크<br/>2. Custom Smart Card : Classic/Plus 언체크<br/>3. Custom SmartCard 리드</p></td><td><p>&gt; suprema smartcard - Enable/Disable<br/>&gt; 리드할 SmartCard : Classic/Plus 카드</p></td><td><p>1. CSN으로 리드된다.</p></td></tr><tr><td>36</td><td><p><span class=\"error\">&#91;Custom Smart Card&#93;</span></p>\n\n<p>1. CSN: Mifare/Felica 체크<br/>2. Custom SmartCard: DesFire/DesFire EV1 언체크<br/>3. Custom SmartCard 리드</p></td><td><p>&gt; suprema smartcard - Enable/Disable<br/>&gt; 리드할 SmartCard : DesFire/DesFire EV1 카드</p>\n</td><td><p>1. CSN으로 리드된다.</p></td></tr><tr><td>37</td><td><p><span class=\"error\">&#91;Custom Smart Card&#93;</span></p>\n\n<p>1. CSN:Mifare/Felica 체크<br/>2. Custom Smart Card: Felica Standard 언체크 <br/>3. Custom SmartCard 리드 </p></td><td><p>&gt; suprema smartcard - Enable/Disable<br/>&gt; 리드할 SmartCard: Felica 카드</p></td><td><p>1.CSN으로 리드된다.</p></td></tr><tr><td>38</td><td><p><span class=\"error\">&#91;Custom Smart Card&#93;</span></p>\n\n<p>1. CSN 언체크<br/>2. suprema smartcard 체크<br/>3. suprema smartcard 리드</p></td><td><p>&gt; Custom SmartCard - Enable/Disable</p></td><td><p>1. 체크된 경우 발급된 카드정보로 리드</p></td></tr><tr><td>39</td><td><p><span class=\"error\">&#91;Custom Smart Card&#93;</span></p>\n\n<p>1. CSN 언체크<br/>2. Custom SmartCard 언체크<br/>3. Custom SmartCard 리드</p></td><td><p>&gt; suprema smartcard - Enable/Disable</p></td><td><p>1. 리드되지 않는다.</p></td></tr><tr><td>40</td><td><p><span class=\"error\">&#91;Custom Smart Card&#93;</span></p>\n\n<p>1. CSN 언체크<br/>2. suprema smartcard 체크<br/>3. Custom SmartCard 체크(레이아웃 설정)<br/>4. Custom SmartCard 리드</p></td><td><p>Layout 설정<br/>&gt; 스마트카드 레이아웃과 상이<br/>&gt; 레이아웃 없음</p></td><td><p>1. 리드되지 않는다.</p></td></tr><tr><td>41</td><td><p><span class=\"error\">&#91;Custom Smart Card&#93;</span></p>\n\n<p>1. CSN 언체크<br/>2. suprema smartcard 언체크<br/>3. Custom SmartCard 레이아웃 설정<br/>4. Custom SmartCard 리드<br/>5. Custom SmartCard 레이아웃 적용 해제</p></td><td><p>Layout 설정<br/>&gt; 레이아웃 없음</p>\n\n<p>리드할 SmartCard<br/>&gt; Classic/Plus 카드<br/>&gt; DesFire/DesFire EV1 카드<br/>&gt; Felica 카드</p></td><td><p>리드되지 않는다.</p></td></tr><tr><td>42</td><td><p><span class=\"error\">&#91;Custom Smart Card&#93;</span></p>\n\n<p>1. CSN 언체크<br/>2. suprema smartcard 체크<br/>3. Custom SmartCard 체크(레이아웃 설정)<br/>4. Custom SmartCard 리드</p></td><td><p>Layout 설정<br/>&gt; 스마트카드 레이아웃과 동일</p></td><td><p>1. 체크된 경우 발급된 카드정보로 리드</p></td></tr><tr><td>43</td><td><p><span class=\"error\">&#91;Custom Smart Card&#93;</span></p>\n\n<p>1. CSN 언체크<br/>2. suprema smartcard 언체크<br/>3. Custom SmartCard 체크(레이아웃 설정)<br/>4. Custom SmartCard 리드</p></td><td><p>Layout 설정<br/>&gt; 스마트카드 레이아웃과 상이<br/>&gt; 레이아웃 없음</p></td><td><p>1. 리드되지 않는다.</p>\n<ul class=\"alternate\" type=\"square\">\n<li>반응 없음</li>\n</ul>\n</td></tr><tr><td>44</td><td><p><span class=\"error\">&#91;Custom Smart Card&#93;</span></p>\n\n<p>1. CSN 언체크<br/>2. suprema smartcard 언체크<br/>3. Custom SmartCard 체크(레이아웃 설정)<br/>4. Custom SmartCard 리드</p></td><td><p>Layout 설정<br/>&gt; 스마트카드 레이아웃과 동일</p></td><td><p>1. 체크된 경우 발급된 카드정보로 리드</p></td></tr><tr><td>45</td><td><p><span class=\"error\">&#91;Custom Smart Card&#93;</span></p>\n\n<p>1. Mifare: Classic/Plus 체크 및 Layout 설정 후 적용<br/>2. Custom SmartCard 발급 및 리드<br/>3. Custom SmartCard - Mifare: Classic/Plus 언체크 후 적용<br/>4. Custom SmartCard 발급 및 리드</p></td><td><p>&gt; suprema smartcard - Enable/Disable</p>\n\n<p>Smart Card 지원모델<br/>&gt; Mifare</p>\n\n<p>Layout 설정<br/>&gt; 스마트카드 레이아웃과 동일</p></td><td><p>1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다.</p></td></tr><tr><td>46</td><td><p><span class=\"error\">&#91;Custom Smart Card&#93;</span></p>\n\n<p>1. Mifare: Classic/Plus 체크 및 Layout 설정 후 적용<br/>2. Custom SmartCard 발급 및 리드<br/>3. Mifare: Classic/Plus 언체크 후 적용<br/>4. Custom SmartCard 발급 및 리드</p></td><td><p>&gt; suprema smartcard - Enable/Disable</p>\n\n<p>Smart Card 지원모델<br/>&gt; Mifare</p>\n\n<p>Layout 설정<br/>&gt; 스마트카드 레이아웃과 상이</p></td><td><p>1. 체크/언체크 상관없이 CSN으로 리드된다.<br/> &gt; 카드발급 불가</p></td></tr><tr><td>47</td><td><p><span class=\"error\">&#91;Custom Smart Card&#93;</span></p>\n\n<p>1. Mifare: DesFire/DesFire EV1 체크 및 Layout 설정 후 적용<br/>2. Custom SmartCard 발급 및 리드<br/>3. Mifare: DesFire/DesFire EV1 언체크 후 적용<br/>4. Custom SmartCard 발급 및 리드</p></td><td><p>&gt; suprema smartcard - Enable/Disable</p>\n\n<p>Smart Card 지원모델<br/>&gt; DesFire/DesFire EV1</p>\n\n<p>Layout 설정<br/>&gt; 스마트카드 레이아웃과 동일</p></td><td><p>1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다.</p></td></tr><tr><td>48</td><td><p><span class=\"error\">&#91;Custom Smart Card&#93;</span></p>\n\n<p>1. Mifare: DesFire/DesFire EV1 체크 및 Layout 설정 후 적용<br/>2. Custom SmartCard 발급 및 리드<br/>3. Mifare: DesFire/DesFire EV1 언체크 후 적용<br/>4. Custom SmartCard 발급 및 리드</p></td><td><p>&gt; suprema smartcard - Enable/Disable</p>\n\n<p>Smart Card 지원모델<br/>&gt; DesFire/DesFire EV1</p>\n\n<p>Layout 설정<br/>&gt; 스마트카드 레이아웃과 상이</p></td><td><p>1. 체크/언체크 상관없이 CSN으로 리드된다.<br/>&gt; 카드발급 불가</p></td></tr><tr><td>49</td><td><p><span class=\"error\">&#91;Custom Smart Card&#93;</span></p>\n\n<p>1. Felica: Felica Standard 체크 및 Layout 설정 후 적용<br/>2. Custom SmartCard 발급 및 리드<br/>3. Custom SmartCard - Felica: Felica Standard 언체크 후 적용<br/>4. Custom SmartCard 발급 및 리드</p></td><td><p>&gt; suprema smartcard - Enable/Disable</p>\n\n<p>Smart Card 지원모델<br/>&gt; Felica</p>\n\n<p>Layout 설정<br/>&gt;스마트카드 레이아웃과 동일</p></td><td><p>1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다. </p></td></tr><tr><td>50</td><td><p><span class=\"error\">&#91;Custom Smart Card&#93;</span></p>\n\n<p>1. Felica: Felica Standard 체크 및 Layout 설정 후 적용<br/>2. Custom SmartCard 발급 및 리드<br/>3. Custom SmartCard - Felica: Felica Standard 언체크 후 적용<br/>4. Custom SmartCard 발급 및 리드</p></td><td><p>&gt; suprema smartcard - Enable/Disable</p>\n\n<p>Smart Card 지원모델<br/>&gt; Felica</p>\n\n<p>Layout 설정<br/>&gt;스마트카드 레이아웃과 상이</p></td><td><p>1. 체크/언체크 상관없이 CSN으로 리드된다.<br/>&gt;카드발급 불가</p></td></tr><tr><td>51</td><td><p><span class=\"error\">&#91;Custom Smart Card&#93;</span></p>\n\n<p>1. CSN: Mifare/Felica 언체크<br/>2. Custom SmartCard: Classic/Plus 체크 및 Layout 설정<br/>3. Custom SmartCard 리드</p></td><td><p>&gt; suprema smartcard - Enable/Disable</p>\n\n<p>리드할 SmartCard<br/>&gt; Classic/Plus 카드</p></td><td><p>1. 체크된 경우 발급된 카드정보로 리드된다.</p></td></tr><tr><td>52</td><td><p><span class=\"error\">&#91;Custom Smart Card&#93;</span></p>\n\n<p>1. CSN: Mifare/Felica 언체크<br/>2. Custom SmartCard: DesFire/DesFire EV1 체크 및 Layout 설정<br/>3. Custom SmartCard 리드</p></td><td><p>&gt; suprema smartcard - Enable/Disable</p>\n\n<p>리드할 SmartCard<br/>&gt; DesFire/DesFire EV1 카드</p></td><td><p>1. 체크된 경우 발급된 카드정보로 리드된다.</p></td></tr><tr><td>53</td><td><p><span class=\"error\">&#91;Custom Smart Card&#93;</span></p>\n\n<p>1. CSN 체크<br/>2. Suprema SmartCard 언체크<br/>3. Custom SmartCard 언체크<br/>4. Suprema SmartCard/Custom SmartCard 리드</p></td><td><p>리드할 SmartCard<br/>&gt; Classic/Plus 카드<br/>&gt; DesFire/DesFire EV1 카드<br/>&gt; Felica 카드</p></td><td><p>CSN으로 리드된다.</p></td></tr><tr><td>54</td><td>\n<p><span class=\"error\">&#91;Custom Smart Card&#93;</span></p>\n\n<p>1. CSN 체크<br/>2. Suprema SmartCard 체크<br/>3. Custom SmartCard 언체크<br/>4. Custom SmartCard 리드</p></td><td><p>리드할 SmartCard<br/>&gt; Classic/Plus 카드<br/>&gt; DesFire/DesFire EV1 카드<br/>&gt; Felica 카드</p></td><td><p>CSN으로 리드된다.</p></td></tr><tr><td>55</td><td>\n<p><span class=\"error\">&#91;Custom Smart Card&#93;</span></p>\n\n<p>1. CSN 체크<br/>2. Suprema SmartCard 언체크<br/>3. Custom SmartCard 체크<br/>4. Suprema SmartCard 리드</p></td><td><p>리드할 SmartCard<br/>&gt; Classic/Plus 카드<br/>&gt; DesFire/DesFire EV1 카드<br/>&gt; Felica 카드</p></td><td><p>CSN으로 리드된다.</p></td></tr><tr><td>56</td><td><p><span class=\"error\">&#91;Template On Mobile&#93;</span></p>\n\n<p>1. NFC 체크 후 적용<br/>2. ToM 발급 및 리드<br/>3. NFC 언체크 후 적용<br/>4. ToM 발급 및 리드</p></td><td><p>리드할 ToM 카드<br/>&gt;NFC</p>\n\n<p>모바일 - NFC 설정</p>\n\n<p>※Face 발급 포함/미포함</p>\n\n<p>&gt; Default: ON(단, 미지원 버전에서 지원 버전으로 업그레이드 시 OFF)</p></td><td><p>체크된 경우 발급된 카드정보가 NFC로 리드되고, 언체크시 리드되지 않는다.</p></td></tr><tr><td>57</td><td><p><span class=\"error\">&#91;Template On Mobile&#93;</span> </p>\n\n<p>1. BLE 체크 후 적용<br/>2. ToM 발급 및 리드<br/>3. BLE 언체크 후 적용<br/>4. ToM 발급 및 리드</p></td><td><p>리드할 ToM 카드<br/>&gt;BLE</p>\n\n<p>모바일 - BLE 설정</p>\n\n<p>※Face 발급 포함/미포함</p>\n\n<p>&gt; Default: ON(단, 미지원 버전에서 지원 버전으로 업그레이드 시 OFF)</p></td><td><p>체크된 경우 발급된 카드 정보가 BLE로 리드되고, 언체크 시 리드되지 않는다.</p></td></tr><tr><td>58</td><td><p><span class=\"error\">&#91;Template On Mobile&#93;</span> <br/>1. Disable 설정 후 적용<br/>2. ToM 발급 및 리드</p></td><td><p>리드할 ToM 카드<br/>&gt;BLE,NFC</p>\n\n<p>모바일 - BLE,NFC 설정</p>\n\n<p>※Face 발급 포함/미포함</p></td><td><p>리드되지 않는다.</p></td></tr><tr><td>59</td><td><p><span class=\"error\">&#91;XP2-MHPB&#93;</span><br/>1. 지원되는 Card Type 확인<br/>2. 지원되는 Card Read</p></td><td><p>지원되는 Card Type<br/>&gt; EM, HID Prox, iClass, iClass SEOS</p></td><td><p>1. EM, HID Prox, iClass, iClass SEOS 항목이 체크 및 활성화되어 표시된다. <br/>※ (BioStar UI상) 미지원 항목에 대해서는 언체크된 상태에서 비활성화 처리</p>\n\n<p>2. 지원되는 카드에 대해 Read되어 인증결과를 출력한다.</p>\n\n<p>※ 지원되는 카드 타입에 대해 위에 기재된 TC 수행</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [],
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 30181,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 1,
+              "latestFinal": 3,
+              "latestId": 35247,
+              "latestFinalId": 34722
+            },
+            {
+              "environment": "ES1",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29855,
+              "latestFinalId": 29855
+            },
+            {
+              "environment": "BioStarV2.9.6.30",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29855,
+              "latestFinalId": 29855
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_190805_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15286,
+              "latestFinalId": 15286
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_190809_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15642,
+              "latestFinalId": 15642
+            }
+          ]
+        },
+        {
+          "group": "V1.8.0_190806_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15399,
+              "latestFinalId": 15399
+            }
+          ]
+        },
+        {
+          "group": "V1.7.0_190806_Interaction 7차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15147,
+              "latestFinalId": 15147
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_190806_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 15521,
+              "latestFinalId": 15521
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_20200601_Interaction 12차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 17253,
+              "latestFinalId": 17253
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "[BSPP-408] Card Type(CSN, Wiegand, Smart Card) 별 선택 옵션 제공",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 10565,
+          "index": 1,
+          "step": "1. CSN: EM4100 체크 후 적용\n2. EM Card 리드\n3. CSN: EM4100 언체크 후 적용\n4. EM Card 리드",
+          "data": "CSN Card 지원모델\n> EM",
+          "result": "1. EM4100에 체크가 된 경우 EM Card가 리드되고, 언체크시 리드되지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 10566,
+          "index": 2,
+          "step": "1. CSN: Mifare/Felica 체크 후 적용\n2. 카드 리드\n3. CSN: Mifare/Felica 언체크 후 적용\n4. 카드 리드",
+          "data": "CSN Card 지원모델\n> Mifare/Felica/ISO-15693/EV1/EV2",
+          "result": "1. 체크시 EM을 제외한 CSN 카드에 대해 리드되고, 언체크시 리드되지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 10567,
+          "index": 3,
+          "step": "1. CSN: EM4100 & Mifare/Felica 체크\n2. Wiegand Format 설정 및 Byte Order 설정\n3. 카드 리드",
+          "data": "CSN Card 지원모델",
+          "result": "1. 설정된 포맷 및 Byte Order 설정에 맞게 카드ID가 리드된다.",
+          "attachments": []
+        },
+        {
+          "id": 10568,
+          "index": 4,
+          "step": "1. Wiegand: iClass 체크 및 Wiegand Format 설정 후 적용\n2. iClass Card 리드\n3. Wiegand: iClass 언체크 후 적용\n4. iClass Card 리드",
+          "data": "Wiegand Card 지원모델\n> iCLASS\n\nWiegand Format 설정\n> 리드할 카드 포맷과 동일",
+          "result": "1. 체크시 iCLASS Card가 리드되고, 언체크시 iCLASS Card가 리드되지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 10595,
+          "index": 5,
+          "step": "1. Wiegand: iClass 체크 및 Wiegand Format 설정 후 적용\n2. iClass Card 리드\n3. Wiegand: iClass 언체크 후 적용\n4. iClass Card 리드",
+          "data": "Wiegand Card 지원모델\n> iCLASS\n\nWiegand Format 설정\n> 리드할 카드 포맷과 상이",
+          "result": "1. 체크 후 iCLASS Card 리드시 '띡'소리만 출력(= 결과미출력)되고, 언체크시 iCLASS Card가 리드되지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 10594,
+          "index": 6,
+          "step": "1. Wiegand: HID Prox 체크 및 Wiegand Format 설정 후 적용\n2. HID Prox Card 리드\n3. Wiegand: HID 언체크 후 적용\n4. HID Prox Card 리드",
+          "data": "Wiegand Card 지원모델\n> HID\n\nWiegand Format 설정\n> 리드할 카드 포맷과 동일",
+          "result": "1. 체크시 HID Prox Card가 리드되고, 언체크시 HID Prox Card가 리드되지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 10596,
+          "index": 7,
+          "step": "1. Wiegand: HID Prox 체크 및 Wiegand Format 설정 후 적용\n2. HID Prox Card 리드\n3. Wiegand: HID Prox 언체크 후 적용\n4. HID Prox Card 리드",
+          "data": "Wiegand Card 지원모델\n> HID\n\nWiegand Format 설정\n> 리드할 카드 포맷과 상이",
+          "result": "1. 체크 후 HID Prox Card 리드시 '띡'소리만 출력(= 결과미출력)되고, 언체크시 HID Prox Card가 리드되지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 10597,
+          "index": 8,
+          "step": "1. Mifare: Classic/Plus 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. Mifare: Classic/Plus 언체크 후 적용\n4. SmartCard 발급 및 리드",
+          "data": "Smart Card 지원모델\n> Mifare\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
+          "result": "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다.",
+          "attachments": []
+        },
+        {
+          "id": 10598,
+          "index": 9,
+          "step": "1. Mifare: Classic/Plus 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. Mifare: Classic/Plus 언체크 후 적용\n4. SmartCard 발급 및 리드",
+          "data": "Smart Card 지원모델\n> Mifare\n\nLayout 설정\n> 스마트카드 레이아웃과 상이\n",
+          "result": "1. 체크/언체크 상관없이 CSN으로 리드된다.\n> 카드발급 불가",
+          "attachments": []
+        },
+        {
+          "id": 10599,
+          "index": 10,
+          "step": "1. Mifare: DesFire/DesFire EV1 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. Mifare: DesFire/DesFire EV1 언체크 후 적용\n4. SmartCard 발급 및 리드",
+          "data": "Smart Card 지원모델\n> DesFire/DesFire EV1\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
+          "result": "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다.",
+          "attachments": []
+        },
+        {
+          "id": 10600,
+          "index": 11,
+          "step": "1. Mifare: DesFire/DesFire EV1 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. Mifare: DesFire/DesFire EV1 언체크 후 적용\n4. SmartCard 발급 및 리드",
+          "data": "Smart Card 지원모델\n> DesFire/DesFire EV1\n\nLayout 설정\n> 스마트카드 레이아웃과 상이",
+          "result": "1. 체크/언체크 상관없이 CSN으로 리드된다.\n> 카드발급 불가",
+          "attachments": []
+        },
+        {
+          "id": 10601,
+          "index": 12,
+          "step": "1. iCLASS: SR/SE 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. iCLASS: SR/SE 언체크 후 적용\n4. SmartCard 발급 및 리드",
+          "data": "Smart Card 지원모델\n> iCLASS\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
+          "result": "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 PAC Data 로 리드된다.",
+          "attachments": []
+        },
+        {
+          "id": 10602,
+          "index": 13,
+          "step": "1. iCLASS: SR/SE 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. iCLASS: SR/SE 언체크 후 적용\n4. SmartCard 발급 및 리드",
+          "data": "Smart Card 지원모델\n> iCLASS\n\nLayout 설정\n> 스마트카드 레이아웃과 상이",
+          "result": "1. 체크/언체크 상관없이 PAC Data 로 리드된다.\n> 카드발급 불가",
+          "attachments": []
+        },
+        {
+          "id": 10603,
+          "index": 14,
+          "step": "1. iCLASS: SEOS 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. iCLASS: SEOS 언체크 후 적용\n4. SmartCard 발급 및 리드",
+          "data": "Smart Card 지원모델\n> SEOS\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
+          "result": "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 PAC Data 로 리드된다.",
+          "attachments": []
+        },
+        {
+          "id": 10604,
+          "index": 15,
+          "step": "1. iCLASS: SEOS 체크 및 Layout 설정 후 적용\n2. SmartCard 발급 및 리드\n3. iCLASS: SEOS 언체크 후 적용\n4. SmartCard 발급 및 리드",
+          "data": "Smart Card 지원모델\n> SEOS\n\nLayout 설정\n> 스마트카드 레이아웃과 상이",
+          "result": "1. 체크/언체크 상관없이 PAC Data 로 리드된다.\n> 카드발급 불가",
+          "attachments": []
+        },
+        {
+          "id": 10605,
+          "index": 16,
+          "step": "1. CSN: Mifare/Felica 체크\n2. SmartCard: Classic/Plus 언체크\n3. SmartCard 리드",
+          "data": "리드할 SmartCard\n> Classic/Plus 카드",
+          "result": "1. CSN으로 리드된다.",
+          "attachments": []
+        },
+        {
+          "id": 10606,
+          "index": 17,
+          "step": "1. CSN: Mifare/Felica 언체크\n2. SmartCard: Classic/Plus 체크 및 Layout 설정\n3. CSN Card 리드",
+          "data": "리드할 CSN Card\n> Mifare",
+          "result": "1. 리드되지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 10607,
+          "index": 18,
+          "step": "1. CSN: Mifare/Felica 체크\n2. SmartCard: DesFire/DesFire EV1 언체크\n3. SmartCard 리드",
+          "data": "리드할 SmartCard\n> DesFire/DesFire EV1 카드",
+          "result": "1. CSN으로 리드된다.",
+          "attachments": []
+        },
+        {
+          "id": 10608,
+          "index": 19,
+          "step": "1. CSN: Mifare/Felica 언체크\n2. SmartCard: DesFire/DesFire EV1 체크 및 Layout 설정\n3. CSN Card 리드",
+          "data": "리드할 CSN Card\n> DesFire/DesFire EV1 카드",
+          "result": "1. 리드되지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 10609,
+          "index": 20,
+          "step": "1. Wiegand: iCLASS 체크 및 포맷 설정\n2. SmartCard: SR/SE 언체크\n3. SmartCard 리드",
+          "data": "리드할 SmartCard\n> iCLASS 카드\n\nWiegand Format 설정\n> 리드할 카드 포맷과 동일",
+          "result": "1. PAC Data 로 리드된다.",
+          "attachments": []
+        },
+        {
+          "id": 10610,
+          "index": 21,
+          "step": "1. Wiegand: iCLASS 언체크\n2. SmartCard: SR/SE 체크 및 Layout 설정\n3. Wiegand Card 리드",
+          "data": "리드할 Wiegand Card\n> iCLASS 카드\n\nLayout 설정\n> 스마트카드 레이아웃과 동일",
+          "result": "1. 리드되지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 10611,
+          "index": 22,
+          "step": "1. Wiegand: iCLASS 체크\n2. SmartCard: SEOS 언체크\n3. SmartCard 리드",
+          "data": "리드할 SmartCard\n> SEOS 카드\n\nWiegand Format 설정\n> 리드할 카드 포맷과 동일",
+          "result": "1. PAC Data 로 리드된다.",
+          "attachments": []
+        },
+        {
+          "id": 10612,
+          "index": 23,
+          "step": "1. Wiegand: iCLASS 언체크\n2. SmartCard: SEOS 체크 및 Layout 설정\n3. Wiegand Card 리드",
+          "data": "리드할 Wiegand Card\n> SEOS 카드\n\nLayout 설정\n> 스마트카드 레이아웃과 동일",
+          "result": "1. 리드되지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 10615,
+          "index": 24,
+          "step": "[바이오스타 모바일]\n1. Mobile: NFC 체크 후 적용\n2. Mobile Card 발급 및 리드\n3. Mobile: NFC 언체크 후 적용\n4. Mobile Card 발급 및 리드",
+          "data": "해당모델\n> P2/R2/L2\n\n모바일카드 지원모델\n> NFC\n\n모바일 - NFC 설정\n\nLayout 설정\n> 모바일카드 발급한 레이아웃과 동일",
+          "result": "1. 체크된 경우 발급된 카드정보가 NFC로 리드되고, 언체크시 리드되지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 10616,
+          "index": 25,
+          "step": "[바이오스타 모바일]\n1. Mobile: NFC 체크 후 적용\n2. Mobile Card 발급 및 리드\n3. Mobile: NFC 언체크 후 적용\n4. Mobile Card 발급 및 리드",
+          "data": "해당모델\n> P2/R2/L2\n\n모바일카드 지원모델\n> NFC\n\n모바일 - NFC 설정\n\nLayout 설정\n> 모바일카드 발급한 레이아웃과 상이",
+          "result": "1. 리드되지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 10617,
+          "index": 26,
+          "step": "[바이오스타 모바일]\n1. Mobile: BLE 체크 후 적용\n2. Mobile Card 발급 및 리드\n3. Mobile: BLE 언체크 후 적용\n4. Mobile Card 발급 및 리드",
+          "data": "해당모델\n> P2/R2/L2\n\n모바일카드 지원모델\n> BLE\n\n모바일 - BLE 설정\n\nLayout 설정\n> 모바일카드 발급한 레이아웃과 동일",
+          "result": "1. 체크된 경우 발급된 카드정보가 BLE로 리드되고, 언체크시 리드되지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 10618,
+          "index": 27,
+          "step": "[바이오스타 모바일]\n1. Mobile: BLE 체크 후 적용\n2. Mobile Card 발급 및 리드\n3. Mobile: BLE 언체크 후 적용\n4. Mobile Card 발급 및 리드",
+          "data": "해당모델\n> P2/R2/L2\n\n모바일카드 지원모델\n> BLE\n\n모바일 - BLE 설정\n\nLayout 설정\n> 모바일카드 발급한 레이아웃과 상이",
+          "result": "1. 리드되지 않는다.\n=> 확인 후 내용 업데이트 예정",
+          "attachments": []
+        },
+        {
+          "id": 10613,
+          "index": 28,
+          "step": "1. Card Type: 모두 Disable 설정 후 적용\n2. Card 리드",
+          "data": "리드할 카드\n> CSN Card\n> Wiegand Card\n> Smart Card\n> Mobile Card",
+          "result": "1. 리드되지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 10645,
+          "index": 29,
+          "step": "1. CSN: Mifare/Felica 체크\n2. SmartCard: Classic/Plus 언체크 \n3. DesFire/DesFire EV1 체크\n4. Calssic/Mifare의 Layout 설정\n5. 카드발급 및 리드시도",
+          "data": "Smart Card 지원모델\n> Classic/Plus\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
+          "result": "1. 포맷/발급이 안된다.\n2. CSN으로 리드된다.",
+          "attachments": []
+        },
+        {
+          "id": 10646,
+          "index": 30,
+          "step": "1. CSN: Mifare/Felica 체크\n2. SmartCard: Classic/Plus 체크 \n3. DesFire/DesFire EV1 언체크\n4. DesFire/DesFire EV1의 Layout 설정\n5. 카드발급 및 리드시도",
+          "data": "Smart Card 지원모델\n> DesFire/DesFire EV1\n\nLayout 설정\n> 스마트카드 레이아웃과 동일",
+          "result": "1. 포맷/발급이 안된다.\n2. CSN으로 리드된다.",
+          "attachments": []
+        },
+        {
+          "id": 10647,
+          "index": 31,
+          "step": "1. Wiegand: iCLASS 체크\n2. SmartCard: SR/SE 체크 \n3. SEOS 언체크\n4. SEOS의 Layout 설정\n5. 카드발급 및 리드시도",
+          "data": "Smart Card 지원모델\n> SEOS\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
+          "result": "1. 포맷/발급이 안된다.\n2. PAC Data로 리드된다.",
+          "attachments": []
+        },
+        {
+          "id": 10648,
+          "index": 32,
+          "step": "1. Wiegand: iCLASS 체크\n2. SmartCard: SEOS 체크 \n3. SR/SE 언체크\n4. SR/SE의 Layout 설정\n5. 카드발급 및 리드시도",
+          "data": "Smart Card 지원모델\n> ICLASS\n\nLayout 설정\n> 스마트카드 레이아웃과 동일\n",
+          "result": "1. 포맷/발급이 안된다.\n2. PAC Data로 리드된다.",
+          "attachments": []
+        },
+        {
+          "id": 14056,
+          "index": 33,
+          "step": "[Mobile Access]\n1. Mobile: NFC 체크 후 적용\n2. Mobile Card 리드\n3. Mobile: NFC 언체크 후 적용\n4. Mobile Card 리드",
+          "data": "> Mobile Access 지원장치\n> 에어팝 - NFC 설정\n> CSN Card Type - Mifare/Felica 옵션에 대해 체크/언체크",
+          "result": "1. 체크된 경우 발급된 카드정보가 NFC로 리드되고, 언체크시 리드되지 않는다.\n2. CSN Card Type의 옵션을 보지않는다.",
+          "attachments": []
+        },
+        {
+          "id": 14058,
+          "index": 34,
+          "step": "[Mobile Access]\n1. Mobile: BLE 체크 후 적용\n2. Mobile Card 리드\n3. Mobile: BLE 언체크 후 적용\n4. Mobile Card 리드",
+          "data": "> Mobile Access 지원장치\n> 에어팝 - BLE 설정\n> CSN Card Type - Mifare/Felica 옵션에 대해 체크/언체크",
+          "result": "1. 체크된 경우 발급된 카드정보가 BLE로 리드되고, 언체크시 리드되지 않는다.\n2. CSN Card Type의 옵션을 보지않는다.",
+          "attachments": []
+        },
+        {
+          "id": 14944,
+          "index": 35,
+          "step": "[Custom Smart Card]\n1. CSN: Mifare/Felica 체크\n2. Custom Smart Card : Classic/Plus 언체크\n3. Custom SmartCard 리드",
+          "data": "> suprema smartcard - Enable/Disable\n> 리드할 SmartCard : Classic/Plus 카드",
+          "result": "1. CSN으로 리드된다.",
+          "attachments": []
+        },
+        {
+          "id": 14945,
+          "index": 36,
+          "step": "[Custom Smart Card]\n\n1. CSN: Mifare/Felica 체크\n2. Custom SmartCard: DesFire/DesFire EV1 언체크\n3. Custom SmartCard 리드",
+          "data": "> suprema smartcard - Enable/Disable\n> 리드할 SmartCard : DesFire/DesFire EV1 카드\n\n",
+          "result": "1. CSN으로 리드된다.",
+          "attachments": []
+        },
+        {
+          "id": 17523,
+          "index": 37,
+          "step": "[Custom Smart Card]\n\n1. CSN:Mifare/Felica 체크\n2. Custom Smart Card: Felica Standard 언체크 \n3. Custom SmartCard 리드 ",
+          "data": "> suprema smartcard - Enable/Disable\n> 리드할 SmartCard: Felica 카드",
+          "result": "1.CSN으로 리드된다.",
+          "attachments": []
+        },
+        {
+          "id": 14995,
+          "index": 38,
+          "step": "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 체크\n3. suprema smartcard 리드",
+          "data": "> Custom SmartCard - Enable/Disable\n",
+          "result": "1. 체크된 경우 발급된 카드정보로 리드",
+          "attachments": []
+        },
+        {
+          "id": 14955,
+          "index": 39,
+          "step": "[Custom Smart Card]\n\n1. CSN 언체크\n2. Custom SmartCard 언체크\n3. Custom SmartCard 리드",
+          "data": "> suprema smartcard - Enable/Disable\n",
+          "result": "1. 리드되지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 17094,
+          "index": 40,
+          "step": "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 체크\n3. Custom SmartCard 체크(레이아웃 설정)\n4. Custom SmartCard 리드",
+          "data": "Layout 설정\n> 스마트카드 레이아웃과 상이\n> 레이아웃 없음",
+          "result": "1. 리드되지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 17230,
+          "index": 41,
+          "step": "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 언체크\n3. Custom SmartCard 레이아웃 설정\n4. Custom SmartCard 리드\n5. Custom SmartCard 레이아웃 적용 해제",
+          "data": "Layout 설정\n> 레이아웃 없음\n\n리드할 SmartCard\n> Classic/Plus 카드\n> DesFire/DesFire EV1 카드\n> Felica 카드",
+          "result": "리드되지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 17095,
+          "index": 42,
+          "step": "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 체크\n3. Custom SmartCard 체크(레이아웃 설정)\n4. Custom SmartCard 리드",
+          "data": "Layout 설정\n> 스마트카드 레이아웃과 동일",
+          "result": "1. 체크된 경우 발급된 카드정보로 리드",
+          "attachments": []
+        },
+        {
+          "id": 17093,
+          "index": 43,
+          "step": "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 언체크\n3. Custom SmartCard 체크(레이아웃 설정)\n4. Custom SmartCard 리드",
+          "data": "Layout 설정\n> 스마트카드 레이아웃과 상이\n> 레이아웃 없음",
+          "result": "1. 리드되지 않는다.\n- 반응 없음",
+          "attachments": []
+        },
+        {
+          "id": 14994,
+          "index": 44,
+          "step": "[Custom Smart Card]\n\n1. CSN 언체크\n2. suprema smartcard 언체크\n3. Custom SmartCard 체크(레이아웃 설정)\n4. Custom SmartCard 리드",
+          "data": "Layout 설정\n> 스마트카드 레이아웃과 동일",
+          "result": "1. 체크된 경우 발급된 카드정보로 리드",
+          "attachments": []
+        },
+        {
+          "id": 14949,
+          "index": 45,
+          "step": "[Custom Smart Card]\n\n1. Mifare: Classic/Plus 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Custom SmartCard - Mifare: Classic/Plus 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
+          "data": "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> Mifare\n\nLayout 설정\n> 스마트카드 레이아웃과 동일",
+          "result": "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다.",
+          "attachments": []
+        },
+        {
+          "id": 14950,
+          "index": 46,
+          "step": "[Custom Smart Card]\n\n1. Mifare: Classic/Plus 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Mifare: Classic/Plus 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
+          "data": "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> Mifare\n\nLayout 설정\n> 스마트카드 레이아웃과 상이",
+          "result": "1. 체크/언체크 상관없이 CSN으로 리드된다.\n > 카드발급 불가",
+          "attachments": []
+        },
+        {
+          "id": 14951,
+          "index": 47,
+          "step": "[Custom Smart Card]\n\n1. Mifare: DesFire/DesFire EV1 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Mifare: DesFire/DesFire EV1 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
+          "data": "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> DesFire/DesFire EV1\n\nLayout 설정\n> 스마트카드 레이아웃과 동일",
+          "result": "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다.",
+          "attachments": []
+        },
+        {
+          "id": 14952,
+          "index": 48,
+          "step": "[Custom Smart Card]\n\n1. Mifare: DesFire/DesFire EV1 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Mifare: DesFire/DesFire EV1 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
+          "data": "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> DesFire/DesFire EV1\n\nLayout 설정\n> 스마트카드 레이아웃과 상이",
+          "result": "1. 체크/언체크 상관없이 CSN으로 리드된다.\n> 카드발급 불가",
+          "attachments": []
+        },
+        {
+          "id": 17524,
+          "index": 49,
+          "step": "[Custom Smart Card]\n\n1. Felica: Felica Standard 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Custom SmartCard - Felica: Felica Standard 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
+          "data": "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> Felica\n\nLayout 설정\n>스마트카드 레이아웃과 동일",
+          "result": "1. 체크된 경우 발급된 카드정보로 리드되고, 언체크시 CSN으로 리드된다. ",
+          "attachments": []
+        },
+        {
+          "id": 17525,
+          "index": 50,
+          "step": "[Custom Smart Card]\n\n1. Felica: Felica Standard 체크 및 Layout 설정 후 적용\n2. Custom SmartCard 발급 및 리드\n3. Custom SmartCard - Felica: Felica Standard 언체크 후 적용\n4. Custom SmartCard 발급 및 리드",
+          "data": "> suprema smartcard - Enable/Disable\n\nSmart Card 지원모델\n> Felica\n\nLayout 설정\n>스마트카드 레이아웃과 상이",
+          "result": "1. 체크/언체크 상관없이 CSN으로 리드된다.\n>카드발급 불가",
+          "attachments": []
+        },
+        {
+          "id": 14953,
+          "index": 51,
+          "step": "[Custom Smart Card]\n\n1. CSN: Mifare/Felica 언체크\n2. Custom SmartCard: Classic/Plus 체크 및 Layout 설정\n3. Custom SmartCard 리드",
+          "data": "> suprema smartcard - Enable/Disable\n\n리드할 SmartCard\n> Classic/Plus 카드",
+          "result": "1. 체크된 경우 발급된 카드정보로 리드된다.",
+          "attachments": []
+        },
+        {
+          "id": 14954,
+          "index": 52,
+          "step": "[Custom Smart Card]\n\n1. CSN: Mifare/Felica 언체크\n2. Custom SmartCard: DesFire/DesFire EV1 체크 및 Layout 설정\n3. Custom SmartCard 리드",
+          "data": "> suprema smartcard - Enable/Disable\n\n리드할 SmartCard\n> DesFire/DesFire EV1 카드",
+          "result": "1. 체크된 경우 발급된 카드정보로 리드된다.",
+          "attachments": []
+        },
+        {
+          "id": 15001,
+          "index": 53,
+          "step": "[Custom Smart Card]\n\n1. CSN 체크\n2. Suprema SmartCard 언체크\n3. Custom SmartCard 언체크\n4. Suprema SmartCard/Custom SmartCard 리드",
+          "data": "리드할 SmartCard\n> Classic/Plus 카드\n> DesFire/DesFire EV1 카드\n> Felica 카드",
+          "result": "CSN으로 리드된다.",
+          "attachments": []
+        },
+        {
+          "id": 15002,
+          "index": 54,
+          "step": "\t\n[Custom Smart Card]\n\n1. CSN 체크\n2. Suprema SmartCard 체크\n3. Custom SmartCard 언체크\n4. Custom SmartCard 리드",
+          "data": "리드할 SmartCard\n> Classic/Plus 카드\n> DesFire/DesFire EV1 카드\n> Felica 카드",
+          "result": "CSN으로 리드된다.",
+          "attachments": []
+        },
+        {
+          "id": 15003,
+          "index": 55,
+          "step": "\t\n[Custom Smart Card]\n\n1. CSN 체크\n2. Suprema SmartCard 언체크\n3. Custom SmartCard 체크\n4. Suprema SmartCard 리드",
+          "data": "리드할 SmartCard\n> Classic/Plus 카드\n> DesFire/DesFire EV1 카드\n> Felica 카드",
+          "result": "CSN으로 리드된다.",
+          "attachments": []
+        },
+        {
+          "id": 15049,
+          "index": 56,
+          "step": "[Template On Mobile]\n\n1. NFC 체크 후 적용\n2. ToM 발급 및 리드\n3. NFC 언체크 후 적용\n4. ToM 발급 및 리드",
+          "data": "리드할 ToM 카드\n>NFC\n\n모바일 - NFC 설정\n\n※Face 발급 포함/미포함\n\n> Default: ON(단, 미지원 버전에서 지원 버전으로 업그레이드 시 OFF)",
+          "result": "체크된 경우 발급된 카드정보가 NFC로 리드되고, 언체크시 리드되지 않는다.\n",
+          "attachments": []
+        },
+        {
+          "id": 15050,
+          "index": 57,
+          "step": "[Template On Mobile] \n\n1. BLE 체크 후 적용\n2. ToM 발급 및 리드\n3. BLE 언체크 후 적용\n4. ToM 발급 및 리드",
+          "data": "리드할 ToM 카드\n>BLE\n\n모바일 - BLE 설정\n\n※Face 발급 포함/미포함\n\n> Default: ON(단, 미지원 버전에서 지원 버전으로 업그레이드 시 OFF)",
+          "result": "체크된 경우 발급된 카드 정보가 BLE로 리드되고, 언체크 시 리드되지 않는다.\n",
+          "attachments": []
+        },
+        {
+          "id": 15051,
+          "index": 58,
+          "step": "[Template On Mobile] \n1. Disable 설정 후 적용\n2. ToM 발급 및 리드",
+          "data": "리드할 ToM 카드\n>BLE,NFC\n\n모바일 - BLE,NFC 설정\n\n※Face 발급 포함/미포함\n",
+          "result": "리드되지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 19327,
+          "index": 59,
+          "step": "[XP2-MHPB]\n1. 지원되는 Card Type 확인\n2. 지원되는 Card Read",
+          "data": "지원되는 Card Type\n> EM, HID Prox, iClass, iClass SEOS",
+          "result": "1. EM, HID Prox, iClass, iClass SEOS 항목이 체크 및 활성화되어 표시된다. \n※ (BioStar UI상) 미지원 항목에 대해서는 언체크된 상태에서 비활성화 처리\n\n2. 지원되는 카드에 대해 Read되어 인증결과를 출력한다.\n\n※ 지원되는 카드 타입에 대해 위에 기재된 TC 수행",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [],
+      "maxResults": 0,
+      "total": 0,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+      "name": "미할당",
+      "id": "10100"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+      "name": "할 일",
+      "id": "10000",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "할 일"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hztiaf:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2019-04-15T10:38:28.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

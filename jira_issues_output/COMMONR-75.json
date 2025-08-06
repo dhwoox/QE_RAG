@@ -1,190 +1,1642 @@
 {
-  "id": "COMMONR-75",
-  "content": [
-    [
-      1,
-      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > TCP/IP",
-      "BioStar 연결된 상태 - 고정, 유동\n1. Use DHCP\n2. IP Address\n3. Subnet Mask\n4. Gateway\n5. Device Port",
-      "1. DHCP Check 시 IP Address, Subnet Mask, Gateway가 비활성화된 상태에서 표시된다.\n2. DHCP Uncheck 시 IP Address, Subnet Mask, Gateway가 활성화된 상태에서 표시된다.\n3. Device Port는 항시 활성화된 상태로 표시가 된다."
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "12801",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/12801",
+  "key": "COMMONR-75",
+  "fields": {
+    "resolution": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/resolution/10000",
+      "id": "10000",
+      "description": "[사용안함] Work has been completed on this issue.",
+      "name": "완료(Done)"
+    },
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "0.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": null,
+    "customfield_10185": null,
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "10327",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10327",
+        "type": {
+          "id": "10001",
+          "name": "Cloners",
+          "inward": "is cloned by",
+          "outward": "clones",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10001"
+        },
+        "outwardIssue": {
+          "id": "12787",
+          "key": "TIIR-29",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12787",
+          "fields": {
+            "summary": "Network - TCP/IP",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "Represents a Test",
+              "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+              "name": "Test",
+              "subtask": false
+            }
+          }
+        }
+      },
+      {
+        "id": "12846",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12846",
+        "type": {
+          "id": "10001",
+          "name": "Cloners",
+          "inward": "is cloned by",
+          "outward": "clones",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10001"
+        },
+        "inwardIssue": {
+          "id": "17842",
+          "key": "COMMONR-177",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17842",
+          "fields": {
+            "summary": "통신 보안 - SSL/TLS",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "할 일",
+              "id": "10000",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "Represents a Test",
+              "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+              "name": "Test",
+              "subtask": false
+            }
+          }
+        }
+      },
+      {
+        "id": "10991",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10991",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "11516",
+          "key": "ENTRYIIDII-223",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/11516",
+          "fields": {
+            "summary": "0012532: Support 100 BASE-T를 Use로 설정 후 100m Ethernet Cable 연결시 IP 받아오지 못함",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "23030",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/23030",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "29813",
+          "key": "FLFW-304",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/29813",
+          "fields": {
+            "summary": "BioStar에 기연결된 2개의 장치에서 A 장치를 B 장치의 IP로 변경시 BioStar에서는 A 장치의 연결이 끊어진 상태이나, 장치 화면 상에는 Status ICON(별)이 표시 된 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "43171",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/43171",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "52888",
+          "key": "DFW-882",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/52888",
+          "fields": {
+            "summary": "DNS 설정 시 대기 시간 초과 팝업 출력 후 장치 재부팅",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "27429",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/27429",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "36504",
+          "key": "FSTIIFW-1686",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/36504",
+          "fields": {
+            "summary": "[Solution Expert] FS2-AWB에서 Wifi 자동 연결이 안되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11563",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11563",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "15433",
+          "key": "BLIIFWI-328",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/15433",
+          "fields": {
+            "summary": "Support 100Base-T에 대해서 항상 100Base로 동작하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "10992",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10992",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "14273",
+          "key": "ENTRYIIDII-111",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/14273",
+          "fields": {
+            "summary": "[XPS2] Support 100Base-T에 대해 동작하지 않음",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12930",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12930",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "17902",
+          "key": "ENTRYIIDII-365",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17902",
+          "fields": {
+            "summary": "[Device] Master 장치를 검색해서 추가 시 연결 끊김으로 표시가 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14696",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14696",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19897",
+          "key": "FSTIIFW-195",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19897",
+          "fields": {
+            "summary": "[TCP/IP] Fix IP 설정 정보 변경 이슈",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "15038",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/15038",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "20300",
+          "key": "FSTIIFW-351",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/20300",
+          "fields": {
+            "summary": "[TCP/IP] Fix IP 설정 정보 변경 이슈",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "16733",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/16733",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "22313",
+          "key": "BSIIDII-727",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/22313",
+          "fields": {
+            "summary": "BioStar에 연결이 끊어진 후에도 Status ICON(별)은 표시되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13841",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13841",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19140",
+          "key": "TIIDFI-806",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19140",
+          "fields": {
+            "summary": "[Ethernet] 고정 IP 설정 및 Server Mode 설정 시 계속 DHCP로 동작이 되면서 Zero Config로 동작이 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "16730",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/16730",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "22312",
+          "key": "TIIDFI-1208",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/22312",
+          "fields": {
+            "summary": "BioStar에 연결이 끊어진 후에도 Status ICON(별)은 표시되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "56016",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/56016",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "64822",
+          "key": "BEW3FW-254",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/64822",
+          "fields": {
+            "summary": "짧은 DNS 서버를 입력할 경우 정상 동작하지 않는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14530",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14530",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19715",
+          "key": "AUTODI-144",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19715",
+          "fields": {
+            "summary": "Wireless으로 연결된 FS2가 상세검색으로 추가 시 OpenSocet Error나 Tool이 비정상 종료가 되거나, 검색으로 추가시 ID가 0으로 표시가 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      },
+      {
+        "id": "11169",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11169",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "14781",
+          "key": "BEWIIFWDI-25",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/14781",
+          "fields": {
+            "summary": "[Requirement] 통신 - TCP/IP",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10515",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10515",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "13028",
+          "key": "BLIIFWI-99",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/13028",
+          "fields": {
+            "summary": "[Requirement] 통신 - TCP/IP",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "11038",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11038",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "14453",
+          "key": "BSIIDII-114",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/14453",
+          "fields": {
+            "summary": "[Requirement] Network - TCP/IP",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10440",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10440",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "12952",
+          "key": "TIIDFI-63",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12952",
+          "fields": {
+            "summary": "[Requirement] 통신 - TCP/IP",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > TCP/IP > Use DHCP : Check > Apply",
-      "1. FIX(Static) Connection\n> DHCP 로 변경시 Static IP 와 다른 IP 를 할당받는 경우\n> DHCP 로 변경시 Static IP 와 동일한 IP 를 할당받는 경우 (DHCP 에서 자동으로 할당받은 IP 를 Static IP 에 입력, 이와 같은 경우 DHCP 로 변경시 동일한 IP 를 받아오는 설정을 할 수 있음)",
-      "1. Static IP 와 다른 IP 를 할당받은 경우 Device가 연결이 끊어진다.\n2. Static IP 와 동일한 IP 를 할당받은 경우 Device가 연결이 끊어지고 잠시 뒤 자동으로 연결이 되어 DHCP로 동작이 된다.\n> Device에 설정된 정보와 비교\n3. Device Port는 항상 활성화된 상태로 표시가 된다.\n> TCP, Ethernet, DHCP 로그가 남는다."
+    "assignee": null,
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 20.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-75/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@5d131575[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@449fbcdc[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@629f12be[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@5bdf3b6d[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@dc67b44[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@3a0f57a5[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@209fa8b8[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@239fb95[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@3c9baccd[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@7ce96684[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@21eecbc9[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@6c467932[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": "2016-02-25T13:30:41.000+0900",
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-75/watchers",
+      "watchCount": 1,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T09:45:32.000+0900",
+    "timeoriginalestimate": null,
+    "description": "TCP/IP 설정 및 동작에 이상이 없는지 확인",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. DEVICE &gt; Device List &gt; Device 선택 &gt; Device 상세 정보 &gt; Network &gt; TCP/IP</p></td><td><p>BioStar 연결된 상태 - 고정, 유동<br/>1. Use DHCP<br/>2. IP Address<br/>3. Subnet Mask<br/>4. Gateway<br/>5. Device Port</p></td><td><p>1. DHCP Check 시 IP Address, Subnet Mask, Gateway가 비활성화된 상태에서 표시된다.<br/>2. DHCP Uncheck 시 IP Address, Subnet Mask, Gateway가 활성화된 상태에서 표시된다.<br/>3. Device Port는 항시 활성화된 상태로 표시가 된다.</p></td></tr><tr><td>2</td><td><p>1. DEVICE &gt; Device List &gt; Device 선택 &gt; Device 상세 정보 &gt; Network &gt; TCP/IP &gt; Use DHCP : Check &gt; Apply</p></td><td><p>1. FIX(Static) Connection<br/>&gt; DHCP 로 변경시 Static IP 와 다른 IP 를 할당받는 경우<br/>&gt; DHCP 로 변경시 Static IP 와 동일한 IP 를 할당받는 경우 (DHCP 에서 자동으로 할당받은 IP 를 Static IP 에 입력, 이와 같은 경우 DHCP 로 변경시 동일한 IP 를 받아오는 설정을 할 수 있음)</p></td><td><p>1. Static IP 와 다른 IP 를 할당받은 경우 Device가 연결이 끊어진다.<br/>2. Static IP 와 동일한 IP 를 할당받은 경우 Device가 연결이 끊어지고 잠시 뒤 자동으로 연결이 되어 DHCP로 동작이 된다.<br/>&gt; Device에 설정된 정보와 비교<br/>3. Device Port는 항상 활성화된 상태로 표시가 된다.<br/>&gt; TCP, Ethernet, DHCP 로그가 남는다.</p></td></tr><tr><td>3</td><td><p>1. DEVICE &gt; Device List &gt; Device 선택 &gt; Device 상세 정보 &gt; Network &gt; TCP/IP &gt; Use DHCP : Check &gt; Apply<br/>2. 장치에서 Lan Cable 탈착 &gt; 장착<br/>3. 장치 전원 OFF &gt; ON</p></td><td></td><td><p>1. Lan Cable 탈착 후 장착시 정상적으로 IP 할당받아 연결되어야 한다.<br/>&gt; 3분 이내에 IP 할당받아 연결되는지 확인<br/>2. 전원 OFF 후 ON 시 정상적으로 IP 할당받아 연결되어야 한다.<br/>&gt; 3분 이내에 IP 할당받아 연결되는지 확인</p></td></tr><tr><td>4</td><td><p>1. DEVICE &gt; Device List &gt; Device 선택 &gt; Device 상세 정보 &gt; Network &gt; TCP/IP &gt; Use DHCP : Uncheck<br/>2. IP Address, Gateway, Subnet Mask, Device Port 입력 &gt; Apply</p></td><td><p>1. DHCP Connection</p></td><td><p>1. Deivce가 연결이 끊어지고 잠시 뒤 자동으로 연결되어 Static으로 동작이 된다.<br/>&gt; 자동 연결이 안된 경우 Reconnected 동작 확인<br/>2. 직접 입력한 IP Address, Gateway, Subnet Mask, Device Port, DNS Server Address 가 표시된다.<br/>= Device에 설정된 정보와 비교<br/>&gt; TCP, Ethernet 로그가 남는다.<br/>&gt; DNS 입력 후 BioStar 와 정상적으로 연결되는지 확인</p></td></tr><tr><td>5</td><td><p>1. DEVICE &gt; Device List &gt; Device 선택 &gt; Device 상세 정보 &gt; Network &gt; TCP/IP<br/>2. Support 100 BASE-T 설정 &gt; Apply</p></td><td><p><span class=\"error\">&#91;Entry 계열&#93;</span><br/>1. Support 100 BASE-T<br/>&gt; Use<br/>&gt; Not Use</p></td><td><p>1. 설정값이 바로 적용되어야 한다.<br/>2. Use 설정시 100 BASE-T 속도로 이더넷 네트워크에 연결한다.<br/>3. Not Use 설정시 10 BASE-T 속도로 이더넷 네트워크에 연결한다.<br/><span class=\"error\">&#91;확인방법&#93;</span><br/>보유중인 Switch Hub 에서 확인한다.<br/>&gt; DS-2400, 10/100Mbps 24port Fast Ethernet Switch</p></td></tr><tr><td>6</td><td><p>1. DEVICE &gt; Device List &gt; Device 선택 &gt; Device 상세 정보 &gt; Network &gt; WLAN</p></td><td><p>BioStar 연결된 상태 - 고정, 유동<br/>1. Use<br/>2. Operation Mode<br/>3. SSID<br/>4. Authorization Type<br/>5. Encryption Type<br/>6. Authorization Key</p></td><td><p>1. WLAN 사용 시 Use에 Check가 된 상태로 Operation Mode, SSID, Authorization Type, Encryption Type, Authorization Key가 비활성화된 상태로 표시된다.<br/>= TCP/IP에 AP로 받은 IP가 표시되는 지 Devcie와 비교<br/>2. WLAN 미사용 시 Use에 Uncheck가 된 상태로 Operation Mode, SSID, Authorization Type, Encryption Type, Authorization Key가 비활성화된 상태로 표시된다.</p></td></tr><tr><td>7</td><td><p>1. DEVICE &gt; Device List &gt; Device 선택 &gt; Device 상세 정보 &gt; Network &gt; WLAN</p></td><td><p>1. 장치의 Network 가 WiFi 연결되어 추가된 상태<br/>2. BioStar 는 WLAN ReadOnly</p></td><td><p>1. WLAN 사용 시 Use에 Check가 된 상태이다.<br/>2. Operation Mode, SSID, Authorization Type, Encryption Type, Authorization Key가 비활성화된 상태로 표시된다.<br/>= AP로 부터 부여 받은 정보가 표시됨<br/>3. TCP/IP 는 장치와 동일한 정보가 표시된다.<br/>=Device와 비교</p></td></tr><tr><td>8</td><td><p>1. DEVICE &gt; Device List &gt; Device 선택 &gt; Device 상세 정보 &gt; Network &gt; WLAN</p></td><td><p>1. 장치의 Network 가 Lan cable 연결되어 추가된 상태<br/>2. BioStar 는 WLAN ReadOnly</p></td><td><p>1. WLAN 미사용 시 Use에 Uncheck가 된 상태이다.<br/>2. Operation Mode, SSID, Authorization Type, Encryption Type, Authorization Key가 비활성화된 상태로 표시된다.</p></td></tr><tr><td>9</td><td><p>1. BioStar&gt; 장치검색&gt; 장치추가<br/>2. 장치에 전송시도<br/>2. 전송이 완료되지 않은 상태에서 BioStar 서버 종료<br/>3. 장치상태확인</p></td><td><p>전송항목<br/>&gt; 사용자 전송 or 동기화</p></td><td><p>1. 서버종료 전까지 사용자 전송 및 동기화가 이루어져야 한다.<br/>2. 서버 종료 이후에 장치Reboot이 발생되지 않아야 한다.</p></td></tr><tr><td>10</td><td><p>1. BioStar에서 A 장치연결<br/>2. B 장치의 IP Address를 A 장치와 동일한 IP로 설정 후 유지<br/>3. 장치상태확인</p></td><td><p>A 연결장치<br/>&gt; 고정IP 설정</p></td><td><p>1. IP 충돌이 되지만 장치Reboot이 발생되지 않아야 한다.</p></td></tr><tr><td>11</td><td><p>1. BioStar&gt; 장치검색&gt; 장치추가<br/>2. BioStar Setting 실행<br/>3. BioStar Server Stop/Start 10회 이상 On/Off 시도<br/>4. 장치상태 확인</p></td><td></td><td><p>1. Reboot되지 않아야 한다.</p></td></tr><tr><td>12</td><td><p>&lt;BioStar에 장치연결된 상태&gt;<br/>1. DHCP 서버로 연결된 외부 네트워크선 연결해제<br/>2. 20초~30초 후 네트워크선 재연결<br/>3. IP 할당 및 BioStar와의 연결확인</p></td><td><p>연결된 장치 - DHCP 설정</p></td><td><p>1. DHCP로 IP를 받아와야 한다.<br/>2. BioStar와의 연결이 정상적으로 이루어져야 한다.<br/>&gt; Ping 확인<br/>&gt; BioStar와의 연결상태 확인</p></td></tr><tr><td>13</td><td><p>1. 허브에 PC와 장치 연결<br/>2. 허브에 DHCP 서버로 연결된 외부 네트워크선을 연결<br/>3. BioStar에서 검색 및 추가 후 연결확인</p></td><td><p>장치 - DHCP 설정</p></td><td><p>1. DHCP로 IP를 받아와야 한다.<br/>2. 검색 및 추가가 정상적으로 이루어져야 한다.<br/>3. 추가 후 Connected 상태를 유지해야 한다.</p></td></tr><tr><td>14</td><td><p>1. BioStar 설치 PC 와 장치 연결<br/>2. 장치의 네트워크를 DHCP에서 FIX로 변경하고 BioStar에 통신이 가능한 IP 입력<br/>3. BioStar에서 검색 및 추가 후 연결확인</p></td><td><p>BioStar - No DHCP Server <br/>장치 - FIX 설정</p></td><td><p>1. FIX로 입력한 IP, GateWay, Subnetmask가 정상적으로 입력된다.<br/>&gt; Lan Cable 연결 유무 상관 없이 동작<br/>2. 검색 및 추가가 정상적으로 이루어져야 한다.<br/>3. 추가 후 Connected 상태를 유지해야 한다.</p></td></tr><tr><td>15</td><td><p>1. 외부LAN선을 스위치에 연결<br/>2. 스위치와 AP지원 IPTIME 공유기간 LAN선 연결<br/>3. AP지원 IPTIME 공유기에 PC, 장치 LAN선 연결<br/>4. 외부IP에 PING 시도</p></td><td><p>외부IP<br/>ex) ping -c 2 106.10.108.146(아모텍)(시리얼포트 연결)</p>\n\n<p>163.44.196.104 - 태국 업체 </p></td><td><p>1. PING이 정상적으로 나간다.<br/>   &gt; 외부네트워크와의 통신 확인<br/>※ <a href=\"https://jira.suprema.co.kr/browse/FISF-557\" title=\"FaceStation2 서버 접속 이슈 문의\" class=\"issue-link\" data-issue-key=\"FISF-557\"><del>FISF-557</del></a> 참고</p></td></tr><tr><td>16</td><td><p><span class=\"error\">&#91;wi-fi - Nomal 상태에서 장치재부팅&#93;</span><br/>1. 장치 wifi 연결<br/>2. 장치 재부팅<br/>3. wi-fi 연결 유지 확인</p></td><td><p>use DHCP: ON/OFF</p></td><td><p>1. 장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.<br/>&gt;홈화면 wifi 아이콘 표시</p></td></tr><tr><td>17</td><td><p><span class=\"error\">&#91;wi-fi - 장치재부팅 완료 전 공유기 연결&#93;</span><br/>1.장치 wifi 연결<br/>2.장치 OFF<br/>3.공유기 OFF &gt; ON<br/>4.장치 ON<br/>5.Wi-fi 연결 유지 확인</p></td><td></td><td><p>1. 장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.<br/>&gt;홈화면 wifi 아이콘 표시</p></td></tr><tr><td>18</td><td><p><span class=\"error\">&#91;wi-fi - 장치재부팅 완료 후 공유기 연결&#93;</span><br/>1.장치 wifi 연결<br/>2. 장치 OFF<br/>3. 공유기 OFF<br/>4. 장치 ON(재부팅 완료)<br/>5. 공유기 ON <br/>6. Wi-fi 연결 유지확인</p></td><td></td><td><p>1. 공유기,장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.<br/>&gt;홈화면 wifi 아이콘 표시</p></td></tr><tr><td>19</td><td><p><span class=\"error\">&#91;wi-fi - 장치 재부팅 후 공유기 전원 Off / ON&#93;</span><br/>1.장치 wifi 연결<br/>2. 장치재부팅(재부팅 완료)<br/>3. 공유기 OFF<br/>4. 와이파이 연결 끊어짐, 홈화면 wi-fi 아이콘 사라짐 확인<br/>5. 공유기 ON<br/>6. Wi-fi 연결 유지확인</p></td><td><p>use DHCP: ON/OFF</p></td><td><p>1. 공유기,장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.<br/>&gt;홈화면 wifi 아이콘 표시</p></td></tr><tr><td>20</td><td><p><span class=\"error\">&#91;wi-fi - Normal 상태에서 공유기 전원 Off/ON&#93;</span><br/>1.장치 wifi 연결<br/>2.공유기 OFF/ON<br/>4. 와이파이 연결 끊어짐, 홈화면 wi-fi 아이콘 사라짐 확인<br/>5. 공유기 ON<br/>6. Wi-fi 연결 유지확인</p></td><td></td><td><p>1. 공유기,장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.<br/>&gt;홈화면 wifi 아이콘 표시</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [
+      "COMMONR-45"
     ],
-    [
-      3,
-      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > TCP/IP > Use DHCP : Check > Apply\n2. 장치에서 Lan Cable 탈착 > 장착\n3. 장치 전원 OFF > ON",
-      "",
-      "1. Lan Cable 탈착 후 장착시 정상적으로 IP 할당받아 연결되어야 한다.\n> 3분 이내에 IP 할당받아 연결되는지 확인\n2. 전원 OFF 후 ON 시 정상적으로 IP 할당받아 연결되어야 한다.\n> 3분 이내에 IP 할당받아 연결되는지 확인"
-    ],
-    [
-      4,
-      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > TCP/IP > Use DHCP : Uncheck\n2. IP Address, Gateway, Subnet Mask, Device Port 입력 > Apply",
-      "1. DHCP Connection",
-      "1. Deivce가 연결이 끊어지고 잠시 뒤 자동으로 연결되어 Static으로 동작이 된다.\n> 자동 연결이 안된 경우 Reconnected 동작 확인\n2. 직접 입력한 IP Address, Gateway, Subnet Mask, Device Port, DNS Server Address 가 표시된다.\n= Device에 설정된 정보와 비교\n> TCP, Ethernet 로그가 남는다.\n> DNS 입력 후 BioStar 와 정상적으로 연결되는지 확인"
-    ],
-    [
-      5,
-      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > TCP/IP\n2. Support 100 BASE-T 설정 > Apply",
-      "[Entry 계열]\n1. Support 100 BASE-T\n> Use\n> Not Use",
-      "1. 설정값이 바로 적용되어야 한다.\n2. Use 설정시 100 BASE-T 속도로 이더넷 네트워크에 연결한다.\n3. Not Use 설정시 10 BASE-T 속도로 이더넷 네트워크에 연결한다.\n[확인방법]\n보유중인 Switch Hub 에서 확인한다.\n> DS-2400, 10/100Mbps 24port Fast Ethernet Switch"
-    ],
-    [
-      6,
-      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > WLAN",
-      "BioStar 연결된 상태 - 고정, 유동\n1. Use\n2. Operation Mode\n3. SSID\n4. Authorization Type\n5. Encryption Type\n6. Authorization Key",
-      "1. WLAN 사용 시 Use에 Check가 된 상태로 Operation Mode, SSID, Authorization Type, Encryption Type, Authorization Key가 비활성화된 상태로 표시된다.\n= TCP/IP에 AP로 받은 IP가 표시되는 지 Devcie와 비교\n2. WLAN 미사용 시 Use에 Uncheck가 된 상태로 Operation Mode, SSID, Authorization Type, Encryption Type, Authorization Key가 비활성화된 상태로 표시된다."
-    ],
-    [
-      7,
-      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > WLAN",
-      "1. 장치의 Network 가 WiFi 연결되어 추가된 상태\n2. BioStar 는 WLAN ReadOnly",
-      "1. WLAN 사용 시 Use에 Check가 된 상태이다.\n2. Operation Mode, SSID, Authorization Type, Encryption Type, Authorization Key가 비활성화된 상태로 표시된다.\n= AP로 부터 부여 받은 정보가 표시됨\n3. TCP/IP 는 장치와 동일한 정보가 표시된다.\n=Device와 비교"
-    ],
-    [
-      8,
-      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > WLAN",
-      "1. 장치의 Network 가 Lan cable 연결되어 추가된 상태\n2. BioStar 는 WLAN ReadOnly",
-      "1. WLAN 미사용 시 Use에 Uncheck가 된 상태이다.\n2. Operation Mode, SSID, Authorization Type, Encryption Type, Authorization Key가 비활성화된 상태로 표시된다."
-    ],
-    [
-      9,
-      "1. BioStar> 장치검색> 장치추가\n2. 장치에 전송시도\n2. 전송이 완료되지 않은 상태에서 BioStar 서버 종료\n3. 장치상태확인",
-      "전송항목\n> 사용자 전송 or 동기화",
-      "1. 서버종료 전까지 사용자 전송 및 동기화가 이루어져야 한다.\n2. 서버 종료 이후에 장치Reboot이 발생되지 않아야 한다."
-    ],
-    [
-      10,
-      "1. BioStar에서 A 장치연결\n2. B 장치의 IP Address를 A 장치와 동일한 IP로 설정 후 유지\n3. 장치상태확인",
-      "A 연결장치\n> 고정IP 설정",
-      "1. IP 충돌이 되지만 장치Reboot이 발생되지 않아야 한다."
-    ],
-    [
-      11,
-      "1. BioStar> 장치검색> 장치추가\n2. BioStar Setting 실행\n3. BioStar Server Stop/Start 10회 이상 On/Off 시도\n4. 장치상태 확인",
-      "",
-      "1. Reboot되지 않아야 한다."
-    ],
-    [
-      12,
-      "<BioStar에 장치연결된 상태>\n1. DHCP 서버로 연결된 외부 네트워크선 연결해제\n2. 20초~30초 후 네트워크선 재연결\n3. IP 할당 및 BioStar와의 연결확인",
-      "연결된 장치 - DHCP 설정",
-      "1. DHCP로 IP를 받아와야 한다.\n2. BioStar와의 연결이 정상적으로 이루어져야 한다.\n> Ping 확인\n> BioStar와의 연결상태 확인"
-    ],
-    [
-      13,
-      "1. 허브에 PC와 장치 연결\n2. 허브에 DHCP 서버로 연결된 외부 네트워크선을 연결\n3. BioStar에서 검색 및 추가 후 연결확인",
-      "장치 - DHCP 설정",
-      "1. DHCP로 IP를 받아와야 한다.\n2. 검색 및 추가가 정상적으로 이루어져야 한다.\n3. 추가 후 Connected 상태를 유지해야 한다."
-    ],
-    [
-      14,
-      "1. BioStar 설치 PC 와 장치 연결\n2. 장치의 네트워크를 DHCP에서 FIX로 변경하고 BioStar에 통신이 가능한 IP 입력\n3. BioStar에서 검색 및 추가 후 연결확인",
-      "BioStar - No DHCP Server \n장치 - FIX 설정",
-      "1. FIX로 입력한 IP, GateWay, Subnetmask가 정상적으로 입력된다.\n> Lan Cable 연결 유무 상관 없이 동작\n2. 검색 및 추가가 정상적으로 이루어져야 한다.\n3. 추가 후 Connected 상태를 유지해야 한다."
-    ],
-    [
-      15,
-      "1. 외부LAN선을 스위치에 연결\n2. 스위치와 AP지원 IPTIME 공유기간 LAN선 연결\n3. AP지원 IPTIME 공유기에 PC, 장치 LAN선 연결\n4. 외부IP에 PING 시도",
-      "외부IP\nex) ping -c 2 106.10.108.146(아모텍)(시리얼포트 연결)\n\n163.44.196.104 - 태국 업체 ",
-      "1. PING이 정상적으로 나간다.\n   > 외부네트워크와의 통신 확인\n※ FISF-557 참고"
-    ],
-    [
-      16,
-      "[wi-fi - Nomal 상태에서 장치재부팅]\n1. 장치 wifi 연결\n2. 장치 재부팅\n3. wi-fi 연결 유지 확인",
-      "use DHCP: ON/OFF",
-      "1. 장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.\n>홈화면 wifi 아이콘 표시"
-    ],
-    [
-      17,
-      "[wi-fi - 장치재부팅 완료 전 공유기 연결]\n1.장치 wifi 연결\n2.장치 OFF\n3.공유기 OFF > ON\n4.장치 ON\n5.Wi-fi 연결 유지 확인",
-      "",
-      "1. 장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.\n>홈화면 wifi 아이콘 표시"
-    ],
-    [
-      18,
-      "[wi-fi - 장치재부팅 완료 후 공유기 연결]\n1.장치 wifi 연결\n2. 장치 OFF\n3. 공유기 OFF\n4. 장치 ON(재부팅 완료)\n5. 공유기 ON \n6. Wi-fi 연결 유지확인\n",
-      "",
-      "1. 공유기,장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.\n>홈화면 wifi 아이콘 표시"
-    ],
-    [
-      19,
-      "[wi-fi - 장치 재부팅 후 공유기 전원 Off / ON]\n1.장치 wifi 연결\n2. 장치재부팅(재부팅 완료)\n3. 공유기 OFF\n4. 와이파이 연결 끊어짐, 홈화면 wi-fi 아이콘 사라짐 확인\n5. 공유기 ON\n6. Wi-fi 연결 유지확인\n",
-      "use DHCP: ON/OFF",
-      "1. 공유기,장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.\n>홈화면 wifi 아이콘 표시"
-    ],
-    [
-      20,
-      "[wi-fi - Normal 상태에서 공유기 전원 Off/ON]\n1.장치 wifi 연결\n2.공유기 OFF/ON\n4. 와이파이 연결 끊어짐, 홈화면 wi-fi 아이콘 사라짐 확인\n5. 공유기 ON\n6. Wi-fi 연결 유지확인\n",
-      "",
-      "1. 공유기,장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.\n>홈화면 wifi 아이콘 표시"
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-75",
-    "description": "",
-    "test_step": [
-      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > TCP/IP",
-      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > TCP/IP > Use DHCP : Check > Apply",
-      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > TCP/IP > Use DHCP : Check > Apply\n2. 장치에서 Lan Cable 탈착 > 장착\n3. 장치 전원 OFF > ON",
-      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > TCP/IP > Use DHCP : Uncheck\n2. IP Address, Gateway, Subnet Mask, Device Port 입력 > Apply",
-      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > TCP/IP\n2. Support 100 BASE-T 설정 > Apply",
-      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > WLAN",
-      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > WLAN",
-      "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > WLAN",
-      "1. BioStar> 장치검색> 장치추가\n2. 장치에 전송시도\n2. 전송이 완료되지 않은 상태에서 BioStar 서버 종료\n3. 장치상태확인",
-      "1. BioStar에서 A 장치연결\n2. B 장치의 IP Address를 A 장치와 동일한 IP로 설정 후 유지\n3. 장치상태확인",
-      "1. BioStar> 장치검색> 장치추가\n2. BioStar Setting 실행\n3. BioStar Server Stop/Start 10회 이상 On/Off 시도\n4. 장치상태 확인",
-      "<BioStar에 장치연결된 상태>\n1. DHCP 서버로 연결된 외부 네트워크선 연결해제\n2. 20초~30초 후 네트워크선 재연결\n3. IP 할당 및 BioStar와의 연결확인",
-      "1. 허브에 PC와 장치 연결\n2. 허브에 DHCP 서버로 연결된 외부 네트워크선을 연결\n3. BioStar에서 검색 및 추가 후 연결확인",
-      "1. BioStar 설치 PC 와 장치 연결\n2. 장치의 네트워크를 DHCP에서 FIX로 변경하고 BioStar에 통신이 가능한 IP 입력\n3. BioStar에서 검색 및 추가 후 연결확인",
-      "1. 외부LAN선을 스위치에 연결\n2. 스위치와 AP지원 IPTIME 공유기간 LAN선 연결\n3. AP지원 IPTIME 공유기에 PC, 장치 LAN선 연결\n4. 외부IP에 PING 시도",
-      "[wi-fi - Nomal 상태에서 장치재부팅]\n1. 장치 wifi 연결\n2. 장치 재부팅\n3. wi-fi 연결 유지 확인",
-      "[wi-fi - 장치재부팅 완료 전 공유기 연결]\n1.장치 wifi 연결\n2.장치 OFF\n3.공유기 OFF > ON\n4.장치 ON\n5.Wi-fi 연결 유지 확인",
-      "[wi-fi - 장치재부팅 완료 후 공유기 연결]\n1.장치 wifi 연결\n2. 장치 OFF\n3. 공유기 OFF\n4. 장치 ON(재부팅 완료)\n5. 공유기 ON \n6. Wi-fi 연결 유지확인\n",
-      "[wi-fi - 장치 재부팅 후 공유기 전원 Off / ON]\n1.장치 wifi 연결\n2. 장치재부팅(재부팅 완료)\n3. 공유기 OFF\n4. 와이파이 연결 끊어짐, 홈화면 wi-fi 아이콘 사라짐 확인\n5. 공유기 ON\n6. Wi-fi 연결 유지확인\n",
-      "[wi-fi - Normal 상태에서 공유기 전원 Off/ON]\n1.장치 wifi 연결\n2.공유기 OFF/ON\n4. 와이파이 연결 끊어짐, 홈화면 wi-fi 아이콘 사라짐 확인\n5. 공유기 ON\n6. Wi-fi 연결 유지확인\n"
-    ],
-    "data": [
-      "BioStar 연결된 상태 - 고정, 유동\n1. Use DHCP\n2. IP Address\n3. Subnet Mask\n4. Gateway\n5. Device Port",
-      "1. FIX(Static) Connection\n> DHCP 로 변경시 Static IP 와 다른 IP 를 할당받는 경우\n> DHCP 로 변경시 Static IP 와 동일한 IP 를 할당받는 경우 (DHCP 에서 자동으로 할당받은 IP 를 Static IP 에 입력, 이와 같은 경우 DHCP 로 변경시 동일한 IP 를 받아오는 설정을 할 수 있음)",
-      "1. DHCP Connection",
-      "[Entry 계열]\n1. Support 100 BASE-T\n> Use\n> Not Use",
-      "BioStar 연결된 상태 - 고정, 유동\n1. Use\n2. Operation Mode\n3. SSID\n4. Authorization Type\n5. Encryption Type\n6. Authorization Key",
-      "1. 장치의 Network 가 WiFi 연결되어 추가된 상태\n2. BioStar 는 WLAN ReadOnly",
-      "1. 장치의 Network 가 Lan cable 연결되어 추가된 상태\n2. BioStar 는 WLAN ReadOnly",
-      "전송항목\n> 사용자 전송 or 동기화",
-      "A 연결장치\n> 고정IP 설정",
-      "연결된 장치 - DHCP 설정",
-      "장치 - DHCP 설정",
-      "BioStar - No DHCP Server \n장치 - FIX 설정",
-      "외부IP\nex) ping -c 2 106.10.108.146(아모텍)(시리얼포트 연결)\n\n163.44.196.104 - 태국 업체 ",
-      "use DHCP: ON/OFF",
-      "use DHCP: ON/OFF"
-    ],
-    "expected_result": [
-      "1. DHCP Check 시 IP Address, Subnet Mask, Gateway가 비활성화된 상태에서 표시된다.\n2. DHCP Uncheck 시 IP Address, Subnet Mask, Gateway가 활성화된 상태에서 표시된다.\n3. Device Port는 항시 활성화된 상태로 표시가 된다.",
-      "1. Static IP 와 다른 IP 를 할당받은 경우 Device가 연결이 끊어진다.\n2. Static IP 와 동일한 IP 를 할당받은 경우 Device가 연결이 끊어지고 잠시 뒤 자동으로 연결이 되어 DHCP로 동작이 된다.\n> Device에 설정된 정보와 비교\n3. Device Port는 항상 활성화된 상태로 표시가 된다.\n> TCP, Ethernet, DHCP 로그가 남는다.",
-      "1. Lan Cable 탈착 후 장착시 정상적으로 IP 할당받아 연결되어야 한다.\n> 3분 이내에 IP 할당받아 연결되는지 확인\n2. 전원 OFF 후 ON 시 정상적으로 IP 할당받아 연결되어야 한다.\n> 3분 이내에 IP 할당받아 연결되는지 확인",
-      "1. Deivce가 연결이 끊어지고 잠시 뒤 자동으로 연결되어 Static으로 동작이 된다.\n> 자동 연결이 안된 경우 Reconnected 동작 확인\n2. 직접 입력한 IP Address, Gateway, Subnet Mask, Device Port, DNS Server Address 가 표시된다.\n= Device에 설정된 정보와 비교\n> TCP, Ethernet 로그가 남는다.\n> DNS 입력 후 BioStar 와 정상적으로 연결되는지 확인",
-      "1. 설정값이 바로 적용되어야 한다.\n2. Use 설정시 100 BASE-T 속도로 이더넷 네트워크에 연결한다.\n3. Not Use 설정시 10 BASE-T 속도로 이더넷 네트워크에 연결한다.\n[확인방법]\n보유중인 Switch Hub 에서 확인한다.\n> DS-2400, 10/100Mbps 24port Fast Ethernet Switch",
-      "1. WLAN 사용 시 Use에 Check가 된 상태로 Operation Mode, SSID, Authorization Type, Encryption Type, Authorization Key가 비활성화된 상태로 표시된다.\n= TCP/IP에 AP로 받은 IP가 표시되는 지 Devcie와 비교\n2. WLAN 미사용 시 Use에 Uncheck가 된 상태로 Operation Mode, SSID, Authorization Type, Encryption Type, Authorization Key가 비활성화된 상태로 표시된다.",
-      "1. WLAN 사용 시 Use에 Check가 된 상태이다.\n2. Operation Mode, SSID, Authorization Type, Encryption Type, Authorization Key가 비활성화된 상태로 표시된다.\n= AP로 부터 부여 받은 정보가 표시됨\n3. TCP/IP 는 장치와 동일한 정보가 표시된다.\n=Device와 비교",
-      "1. WLAN 미사용 시 Use에 Uncheck가 된 상태이다.\n2. Operation Mode, SSID, Authorization Type, Encryption Type, Authorization Key가 비활성화된 상태로 표시된다.",
-      "1. 서버종료 전까지 사용자 전송 및 동기화가 이루어져야 한다.\n2. 서버 종료 이후에 장치Reboot이 발생되지 않아야 한다.",
-      "1. IP 충돌이 되지만 장치Reboot이 발생되지 않아야 한다.",
-      "1. Reboot되지 않아야 한다.",
-      "1. DHCP로 IP를 받아와야 한다.\n2. BioStar와의 연결이 정상적으로 이루어져야 한다.\n> Ping 확인\n> BioStar와의 연결상태 확인",
-      "1. DHCP로 IP를 받아와야 한다.\n2. 검색 및 추가가 정상적으로 이루어져야 한다.\n3. 추가 후 Connected 상태를 유지해야 한다.",
-      "1. FIX로 입력한 IP, GateWay, Subnetmask가 정상적으로 입력된다.\n> Lan Cable 연결 유무 상관 없이 동작\n2. 검색 및 추가가 정상적으로 이루어져야 한다.\n3. 추가 후 Connected 상태를 유지해야 한다.",
-      "1. PING이 정상적으로 나간다.\n   > 외부네트워크와의 통신 확인\n※ FISF-557 참고",
-      "1. 장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.\n>홈화면 wifi 아이콘 표시",
-      "1. 장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.\n>홈화면 wifi 아이콘 표시",
-      "1. 공유기,장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.\n>홈화면 wifi 아이콘 표시",
-      "1. 공유기,장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.\n>홈화면 wifi 아이콘 표시",
-      "1. 공유기,장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.\n>홈화면 wifi 아이콘 표시"
-    ]
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 12801,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 2,
+              "latestFinal": 0,
+              "latestId": 35213,
+              "latestFinalId": 34687
+            },
+            {
+              "environment": "ES1",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29823,
+              "latestFinalId": 29823
+            },
+            {
+              "environment": "BioStarV2.9.6.30",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29823,
+              "latestFinalId": 29823
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_170117(UnitTest)",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 5636,
+              "latestFinalId": 5636
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_190805_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15217,
+              "latestFinalId": 15217
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.2.8_20160603",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 1737,
+              "latestFinalId": 1737
+            }
+          ]
+        },
+        {
+          "group": "FL_V1.0_190515(PS)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 14130,
+              "latestFinalId": 14130
+            }
+          ]
+        },
+        {
+          "group": "V1.7.1_181204(Hotfix)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12646,
+              "latestFinalId": 12646
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_181210_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12749,
+              "latestFinalId": 12749
+            }
+          ]
+        },
+        {
+          "group": "V1.1.5_4_151014(All)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 69,
+              "latestFinalId": 69
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0 170331",
+          "statusResults": [
+            {
+              "latest": 1,
+              "latestFinal": 3,
+              "latestId": 8618,
+              "latestFinalId": 6347
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_181119_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12928,
+              "latestFinalId": 12928
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_190809_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15578,
+              "latestFinalId": 15578
+            }
+          ]
+        },
+        {
+          "group": "V1.8.0_190806_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15304,
+              "latestFinalId": 15304
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180322",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10119,
+              "latestFinalId": 10119
+            }
+          ]
+        },
+        {
+          "group": "V1.7.0_190806_Interaction 7차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15068,
+              "latestFinalId": 15068
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.1.5_5 - 20151016(All)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 5218,
+              "latestFinalId": 5218
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_190806_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15413,
+              "latestFinalId": 15413
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_20200601_Interaction 12차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 17145,
+              "latestFinalId": 17145
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "통신 - TCP/IP",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 1063,
+          "index": 1,
+          "step": "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > TCP/IP",
+          "data": "BioStar 연결된 상태 - 고정, 유동\n1. Use DHCP\n2. IP Address\n3. Subnet Mask\n4. Gateway\n5. Device Port",
+          "result": "1. DHCP Check 시 IP Address, Subnet Mask, Gateway가 비활성화된 상태에서 표시된다.\n2. DHCP Uncheck 시 IP Address, Subnet Mask, Gateway가 활성화된 상태에서 표시된다.\n3. Device Port는 항시 활성화된 상태로 표시가 된다.",
+          "attachments": []
+        },
+        {
+          "id": 1064,
+          "index": 2,
+          "step": "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > TCP/IP > Use DHCP : Check > Apply",
+          "data": "1. FIX(Static) Connection\n> DHCP 로 변경시 Static IP 와 다른 IP 를 할당받는 경우\n> DHCP 로 변경시 Static IP 와 동일한 IP 를 할당받는 경우 (DHCP 에서 자동으로 할당받은 IP 를 Static IP 에 입력, 이와 같은 경우 DHCP 로 변경시 동일한 IP 를 받아오는 설정을 할 수 있음)",
+          "result": "1. Static IP 와 다른 IP 를 할당받은 경우 Device가 연결이 끊어진다.\n2. Static IP 와 동일한 IP 를 할당받은 경우 Device가 연결이 끊어지고 잠시 뒤 자동으로 연결이 되어 DHCP로 동작이 된다.\n> Device에 설정된 정보와 비교\n3. Device Port는 항상 활성화된 상태로 표시가 된다.\n> TCP, Ethernet, DHCP 로그가 남는다.",
+          "attachments": []
+        },
+        {
+          "id": 2181,
+          "index": 3,
+          "step": "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > TCP/IP > Use DHCP : Check > Apply\n2. 장치에서 Lan Cable 탈착 > 장착\n3. 장치 전원 OFF > ON",
+          "data": "",
+          "result": "1. Lan Cable 탈착 후 장착시 정상적으로 IP 할당받아 연결되어야 한다.\n> 3분 이내에 IP 할당받아 연결되는지 확인\n2. 전원 OFF 후 ON 시 정상적으로 IP 할당받아 연결되어야 한다.\n> 3분 이내에 IP 할당받아 연결되는지 확인",
+          "attachments": []
+        },
+        {
+          "id": 1065,
+          "index": 4,
+          "step": "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > TCP/IP > Use DHCP : Uncheck\n2. IP Address, Gateway, Subnet Mask, Device Port 입력 > Apply",
+          "data": "1. DHCP Connection",
+          "result": "1. Deivce가 연결이 끊어지고 잠시 뒤 자동으로 연결되어 Static으로 동작이 된다.\n> 자동 연결이 안된 경우 Reconnected 동작 확인\n2. 직접 입력한 IP Address, Gateway, Subnet Mask, Device Port, DNS Server Address 가 표시된다.\n= Device에 설정된 정보와 비교\n> TCP, Ethernet 로그가 남는다.\n> DNS 입력 후 BioStar 와 정상적으로 연결되는지 확인",
+          "attachments": []
+        },
+        {
+          "id": 2180,
+          "index": 5,
+          "step": "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > TCP/IP\n2. Support 100 BASE-T 설정 > Apply",
+          "data": "[Entry 계열]\n1. Support 100 BASE-T\n> Use\n> Not Use",
+          "result": "1. 설정값이 바로 적용되어야 한다.\n2. Use 설정시 100 BASE-T 속도로 이더넷 네트워크에 연결한다.\n3. Not Use 설정시 10 BASE-T 속도로 이더넷 네트워크에 연결한다.\n[확인방법]\n보유중인 Switch Hub 에서 확인한다.\n> DS-2400, 10/100Mbps 24port Fast Ethernet Switch",
+          "attachments": []
+        },
+        {
+          "id": 1119,
+          "index": 6,
+          "step": "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > WLAN",
+          "data": "BioStar 연결된 상태 - 고정, 유동\n1. Use\n2. Operation Mode\n3. SSID\n4. Authorization Type\n5. Encryption Type\n6. Authorization Key",
+          "result": "1. WLAN 사용 시 Use에 Check가 된 상태로 Operation Mode, SSID, Authorization Type, Encryption Type, Authorization Key가 비활성화된 상태로 표시된다.\n= TCP/IP에 AP로 받은 IP가 표시되는 지 Devcie와 비교\n2. WLAN 미사용 시 Use에 Uncheck가 된 상태로 Operation Mode, SSID, Authorization Type, Encryption Type, Authorization Key가 비활성화된 상태로 표시된다.",
+          "attachments": []
+        },
+        {
+          "id": 1121,
+          "index": 7,
+          "step": "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > WLAN",
+          "data": "1. 장치의 Network 가 WiFi 연결되어 추가된 상태\n2. BioStar 는 WLAN ReadOnly",
+          "result": "1. WLAN 사용 시 Use에 Check가 된 상태이다.\n2. Operation Mode, SSID, Authorization Type, Encryption Type, Authorization Key가 비활성화된 상태로 표시된다.\n= AP로 부터 부여 받은 정보가 표시됨\n3. TCP/IP 는 장치와 동일한 정보가 표시된다.\n=Device와 비교",
+          "attachments": []
+        },
+        {
+          "id": 1122,
+          "index": 8,
+          "step": "1. DEVICE > Device List > Device 선택 > Device 상세 정보 > Network > WLAN",
+          "data": "1. 장치의 Network 가 Lan cable 연결되어 추가된 상태\n2. BioStar 는 WLAN ReadOnly",
+          "result": "1. WLAN 미사용 시 Use에 Uncheck가 된 상태이다.\n2. Operation Mode, SSID, Authorization Type, Encryption Type, Authorization Key가 비활성화된 상태로 표시된다.",
+          "attachments": []
+        },
+        {
+          "id": 2908,
+          "index": 9,
+          "step": "1. BioStar> 장치검색> 장치추가\n2. 장치에 전송시도\n2. 전송이 완료되지 않은 상태에서 BioStar 서버 종료\n3. 장치상태확인",
+          "data": "전송항목\n> 사용자 전송 or 동기화",
+          "result": "1. 서버종료 전까지 사용자 전송 및 동기화가 이루어져야 한다.\n2. 서버 종료 이후에 장치Reboot이 발생되지 않아야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 2909,
+          "index": 10,
+          "step": "1. BioStar에서 A 장치연결\n2. B 장치의 IP Address를 A 장치와 동일한 IP로 설정 후 유지\n3. 장치상태확인",
+          "data": "A 연결장치\n> 고정IP 설정",
+          "result": "1. IP 충돌이 되지만 장치Reboot이 발생되지 않아야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 2911,
+          "index": 11,
+          "step": "1. BioStar> 장치검색> 장치추가\n2. BioStar Setting 실행\n3. BioStar Server Stop/Start 10회 이상 On/Off 시도\n4. 장치상태 확인",
+          "data": "",
+          "result": "1. Reboot되지 않아야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 2947,
+          "index": 12,
+          "step": "<BioStar에 장치연결된 상태>\n1. DHCP 서버로 연결된 외부 네트워크선 연결해제\n2. 20초~30초 후 네트워크선 재연결\n3. IP 할당 및 BioStar와의 연결확인",
+          "data": "연결된 장치 - DHCP 설정",
+          "result": "1. DHCP로 IP를 받아와야 한다.\n2. BioStar와의 연결이 정상적으로 이루어져야 한다.\n> Ping 확인\n> BioStar와의 연결상태 확인",
+          "attachments": []
+        },
+        {
+          "id": 2948,
+          "index": 13,
+          "step": "1. 허브에 PC와 장치 연결\n2. 허브에 DHCP 서버로 연결된 외부 네트워크선을 연결\n3. BioStar에서 검색 및 추가 후 연결확인",
+          "data": "장치 - DHCP 설정",
+          "result": "1. DHCP로 IP를 받아와야 한다.\n2. 검색 및 추가가 정상적으로 이루어져야 한다.\n3. 추가 후 Connected 상태를 유지해야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 3501,
+          "index": 14,
+          "step": "1. BioStar 설치 PC 와 장치 연결\n2. 장치의 네트워크를 DHCP에서 FIX로 변경하고 BioStar에 통신이 가능한 IP 입력\n3. BioStar에서 검색 및 추가 후 연결확인",
+          "data": "BioStar - No DHCP Server \n장치 - FIX 설정",
+          "result": "1. FIX로 입력한 IP, GateWay, Subnetmask가 정상적으로 입력된다.\n> Lan Cable 연결 유무 상관 없이 동작\n2. 검색 및 추가가 정상적으로 이루어져야 한다.\n3. 추가 후 Connected 상태를 유지해야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 3821,
+          "index": 15,
+          "step": "1. 외부LAN선을 스위치에 연결\n2. 스위치와 AP지원 IPTIME 공유기간 LAN선 연결\n3. AP지원 IPTIME 공유기에 PC, 장치 LAN선 연결\n4. 외부IP에 PING 시도",
+          "data": "외부IP\nex) ping -c 2 106.10.108.146(아모텍)(시리얼포트 연결)\n\n163.44.196.104 - 태국 업체 ",
+          "result": "1. PING이 정상적으로 나간다.\n   > 외부네트워크와의 통신 확인\n※ FISF-557 참고",
+          "attachments": []
+        },
+        {
+          "id": 18484,
+          "index": 16,
+          "step": "[wi-fi - Nomal 상태에서 장치재부팅]\n1. 장치 wifi 연결\n2. 장치 재부팅\n3. wi-fi 연결 유지 확인",
+          "data": "use DHCP: ON/OFF",
+          "result": "1. 장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.\n>홈화면 wifi 아이콘 표시",
+          "attachments": []
+        },
+        {
+          "id": 18485,
+          "index": 17,
+          "step": "[wi-fi - 장치재부팅 완료 전 공유기 연결]\n1.장치 wifi 연결\n2.장치 OFF\n3.공유기 OFF > ON\n4.장치 ON\n5.Wi-fi 연결 유지 확인",
+          "data": "",
+          "result": "1. 장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.\n>홈화면 wifi 아이콘 표시",
+          "attachments": []
+        },
+        {
+          "id": 18486,
+          "index": 18,
+          "step": "[wi-fi - 장치재부팅 완료 후 공유기 연결]\n1.장치 wifi 연결\n2. 장치 OFF\n3. 공유기 OFF\n4. 장치 ON(재부팅 완료)\n5. 공유기 ON \n6. Wi-fi 연결 유지확인\n",
+          "data": "",
+          "result": "1. 공유기,장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.\n>홈화면 wifi 아이콘 표시",
+          "attachments": []
+        },
+        {
+          "id": 18488,
+          "index": 19,
+          "step": "[wi-fi - 장치 재부팅 후 공유기 전원 Off / ON]\n1.장치 wifi 연결\n2. 장치재부팅(재부팅 완료)\n3. 공유기 OFF\n4. 와이파이 연결 끊어짐, 홈화면 wi-fi 아이콘 사라짐 확인\n5. 공유기 ON\n6. Wi-fi 연결 유지확인\n",
+          "data": "use DHCP: ON/OFF",
+          "result": "1. 공유기,장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.\n>홈화면 wifi 아이콘 표시",
+          "attachments": []
+        },
+        {
+          "id": 18489,
+          "index": 20,
+          "step": "[wi-fi - Normal 상태에서 공유기 전원 Off/ON]\n1.장치 wifi 연결\n2.공유기 OFF/ON\n4. 와이파이 연결 끊어짐, 홈화면 wi-fi 아이콘 사라짐 확인\n5. 공유기 ON\n6. Wi-fi 연결 유지확인\n",
+          "result": "1. 공유기,장치가 부팅 완료 후 일정 시간이 지나고 wifi 재연결된다.\n>홈화면 wifi 아이콘 표시",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [],
+      "maxResults": 0,
+      "total": 0,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+      "name": "Minor (C)",
+      "id": "3"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+      "name": "완료",
+      "id": "10001",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "완료"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzs3en:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2015-08-31T18:48:42.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

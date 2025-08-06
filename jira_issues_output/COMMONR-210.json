@@ -1,146 +1,1224 @@
 {
-  "id": "COMMONR-210",
-  "content": [
-    [
-      1,
-      "1. 장치 전원인가 후 60초 이내에 SEOS Configuration Card Read\n2. 장치의 상태확인",
-      "",
-      "1. Configuration Card Key Write 후 Reboot된다.\n2. SEOS Configuration Card Key 설정에 대한 LED로 동작한다.\n3. SEOS 지원 장치에서는 SEOS, iCLASS, CSN, HID 모두 읽힌다."
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "22844",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/22844",
+  "key": "COMMONR-210",
+  "fields": {
+    "resolution": null,
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "0.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": null,
+    "customfield_10185": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
+      "value": "Medium (2-3일 이내 피드백)",
+      "id": "10220"
+    },
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "17912",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/17912",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "23460",
+          "key": "BEWIIFWDI-395",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/23460",
+          "fields": {
+            "summary": "SEOS 카드 Key 변경해 발급안되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19331",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19331",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "24955",
+          "key": "BLNIIFW-228",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/24955",
+          "fields": {
+            "summary": "[iClass SEOS Card] Read 가능하나, Write 시 Fail 발생",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19333",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19333",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "24957",
+          "key": "BLNIIFW-229",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/24957",
+          "fields": {
+            "summary": "Elite Pre에 대해서는 동작이 되고, 이후 Elite Key관련해서는 CSN으로 동작이 되면서 Elite Mode로 동작이 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "47514",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/47514",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "57163",
+          "key": "BS2AFW-50",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/57163",
+          "fields": {
+            "summary": "엘리트 모드 진입 불가(재부팅 X)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "48384",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/48384",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "58116",
+          "key": "BS2AFW-222",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/58116",
+          "fields": {
+            "summary": "SEOS Config card, Elite Card 리드 시 인증 실패로 동작",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "31183",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/31183",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "41341",
+          "key": "ONYXFW-319",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/41341",
+          "fields": {
+            "summary": "Elite Card 리딩 안되는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "28282",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/28282",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "37904",
+          "key": "TIIDFI-2555",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/37904",
+          "fields": {
+            "summary": "[iClass Elite Key] Elite Config 등록 오동작(1)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "52018",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/52018",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "61559",
+          "key": "BEW3FW-91",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/61559",
+          "fields": {
+            "summary": "Elite 모드로 진입 되지 않는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "18215",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/18215",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "23738",
+          "key": "BEWIIFWDI-431",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/23738",
+          "fields": {
+            "summary": "[SEOS] Wiegand Out 장치에서 발급된 카드로 리드시 PAC Data가 아닌 발급된 카드ID로 출력되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "47044",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/47044",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "56339",
+          "key": "BLNIIFW-1068",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/56339",
+          "fields": {
+            "summary": "NEW HID + New FW OAB  시료에서 elite 모드로 진입하지 않는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19956",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19956",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "25554",
+          "key": "BEWIIFWDI-554",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/25554",
+          "fields": {
+            "summary": "일부 시료들에 대해 Elite Card의 Key Card에 대해 Write 실패관련 분석필요",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/4",
+              "description": "이 이슈는 한번 해결되었지만 해결책이 올바르지 않았던 것 같습니다. 지금부터는 이슈가 할당된 것으로 표기되거나 해결된 것으로 표기할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/reopened.png",
+              "name": "다시 열림",
+              "id": "4",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      },
+      {
+        "id": "17923",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/17923",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "22775",
+          "key": "BEWIIFWDI-356",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/22775",
+          "fields": {
+            "summary": "SEOS 카드(Elite Key, RF 성능 개선 포함) 지원",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
+              "id": "5",
+              "description": "이슈의 부작업",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
+              "name": "부작업",
+              "subtask": true,
+              "avatarId": 10316
+            }
+          }
+        }
+      },
+      {
+        "id": "54891",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/54891",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "63920",
+          "key": "BLNIIFW-1123",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/63920",
+          "fields": {
+            "summary": "SEOS Config card, Elite Card 리드 시 인증 실패로 동작",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "<Step 1 수행한 상태>\n1. Primary Key 변경없이 카드발급 시도",
-      "",
-      "1. 기본키로 발급된다.\n> 기본키 값에 대해서는 알수 없음."
+    "assignee": null,
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 15.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-210/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@5b16dfbb[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@137e22d7[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6f5877ac[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@d52880a[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@715bdae9[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@7a9034a[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@2be0f104[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@326b2eaa[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@1dc8369c[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@5234d53c[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@7ef066af[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@158519a5[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": null,
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-210/watchers",
+      "watchCount": 1,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T10:04:08.000+0900",
+    "timeoriginalestimate": null,
+    "description": "1. Smart Card Format 추가\r\n- 선택 창에서 iCLASS Seos 옵션 지원\r\n- DESFire Card 설정과 동일하게 입력 범위, 입력 값 옵션, 입력 값 표시 지원 : 16진수 Hex (16 Byte)\r\n> 16 Byte 범위로 0 부터 FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF 까지 입력 가능\r\n- ADF의 주소 표시 지원 : 변경 불가\r\n- Object Data 표시 지원 : 변경 가능(미표시)\r\n- Primary, Secondary Auth Key 설정\r\n- 암호화 방식: AES Only(미표시)\r\n\r\n2. 장치 설정\r\n- SEOS 카드의 데이터영역을 지원하는 장치는 W2, A2, BS2, P2 신규 FW 해당\r\n- 미지원 장치 SEOS Card Layout 설정 : SEOS Card Layout 무시\r\n- SEOS Configuration Card Key 설정 LED\r\n|Process Config Card\t|Success Config Card|\r\n|Green\t|Blue|\r\n|Black\t|Red|\r\n|Cyan||\r\n- 초기화(공장 초기화, 네트워크 유지 초기화) 유지 항목 : SEOS Config(ADF Address, Object Data), Elite Key\r\n- 초기화 항목 : Primary Key, Secondary\r\n\r\n3. Test시 유의사항\r\n> Key 입력범위 : AES 16자(재확인 후 업데이트 예정)\r\n> ADF Address : Card에 기등록된 값 \"0x2A8570811E1000070000020000\" - 개발 검증 시 사용하는 값\r\n> Data Object ID/Size : Card에 기등록된 값(제조사 설정값)\r\n\r\n※ BSPP-41의 최성빈 수석님 Comment 내용 참고.\r\nSEOS 카드의 경우 SE Processor(SAM카드)의 Key와 다른 Key를 가진 카드로 인증을 시도할 경우 SEOS카드 에서는 응답 시간이 점차 길어지게 됩니다.\r\n(SEOS의 카드의 경우 보안강화를 위해서 키가 다른 경우 해당 카드가 일정 시간동안 동작하지 않는 것으로 확인됩니다.)\r\n \r\n우리제품에서 SEOS 카드의 경우 PAC(일반 HID 카드번호)와 AOC/SSC를 동시에 사용하기 위해서는 사용하고자하는 SEOS 카드의 키를 모두 동일하게 만들어야 하는데, 이부분이 다른 카드들과는 컨셉이 상이하게 됩니다.",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. 장치 전원인가 후 60초 이내에 SEOS Configuration Card Read<br/>2. 장치의 상태확인</p></td><td></td><td><p>1. Configuration Card Key Write 후 Reboot된다.<br/>2. SEOS Configuration Card Key 설정에 대한 LED로 동작한다.<br/>3. SEOS 지원 장치에서는 SEOS, iCLASS, CSN, HID 모두 읽힌다.</p></td></tr><tr><td>2</td><td><p>&lt;Step 1 수행한 상태&gt;<br/>1. Primary Key 변경없이 카드발급 시도</p></td><td></td><td><p>1. 기본키로 발급된다.<br/>&gt; 기본키 값에 대해서는 알수 없음.</p></td></tr><tr><td>3</td><td><p>1. Configuration Card Key로 발급한 카드 Read 시도</p></td><td><p>Primary/Secondary Key 설정되지 않은 상태</p></td><td><p>1. 카드가 읽힌다.</p></td></tr><tr><td>4</td><td><p>1. Configuration Card Key로 발급한 카드 Read 시도</p></td><td><p>Primary/Secondary Key 임의 값으로 설정된 상태</p></td><td><p>1. 카드가 읽히지 않는다.</p></td></tr><tr><td>5</td><td><p>&lt;Step 1 수행한 상태&gt;<br/>1. Primary Key 변경 후 카드발급 시도</p></td><td><p>Key 입력범위: 32자</p></td><td><p>1. Primary 키로 발급된다.<br/>&gt; 한번 키를 변경해 발급한 카드는 Configuration Card Key로 되돌릴 수 없음.</p></td></tr><tr><td>6</td><td><p>1. 키를 변경해 발급했던 카드키를 다른키로 다시 재발급 시도<br/>&gt; Primary Key: 새로발급할 Key값 입력<br/>&gt; Secondary Key: 발급한 Key값 입력</p></td><td><p>Key 입력범위: 32자</p></td><td><p>1. 새로 설정된 Primary 키로 발급된다.</p></td></tr><tr><td>7</td><td><p>1. 키 변경으로 카드 발급 시도<br/>&gt; Primary Key: 새로발급할 Key값 입력<br/>&gt; Secondary Key: 발급한 Key값 입력</p></td><td><p>Hex 전용으로 미입력 시나, 홀수로 입력한 경우 FF나 0을 채워서 전송<br/>예)<br/>: 사용자 입력값 \"1230\"<br/>-&gt; FW 전달 값 12 30 FF FF FF FF<br/>: 사용자 입력값 \"AF0\"<br/>-&gt; FW 전달 값 0A F0 FF FF FF FF<br/>Key 입력범위: 32자</p></td><td><p>1. 새로 설정된 Primary 키로 발급된다.<br/>&gt; 미입력 시나, 홀수로 입력한 경우 FF나 0을 채워서 등록 / 전송<br/>2. Auto Tool을 통해 장치에 전송된 Card Layout을 확인하여 Key 정상 유무 확인한다.<br/>&gt; 인증 유무 포함</p></td></tr><tr><td>8</td><td><p>1. SEOS Card로 Card 발급<br/>2. 인증시도</p></td><td><p>Card 발급<br/>&gt; AOC Card<br/>&gt; SCC Card</p></td><td><p>1. 사용자 정보가 카드에 Write된다.<br/>2. Read시 등록된 사용자 정보로 인증결과를 출력한다.<br/>3. Wiegand Out 장치에서 발급된 카드로 리드시 PAC Data로 출력된다.</p></td></tr><tr><td>9</td><td><p>1. SEOS 미지원 장치에 SEOS 카드 Read</p></td><td></td><td><p>1. SEOS 카드의 PAC Data로 Read된다.</p></td></tr><tr><td>10</td><td><p>1. SEOS 지원 장치에 Primary Key가 상이한 SEOS 카드 Read</p></td><td><p>Smart Card<br/>&gt; SEOS Card Masking 되어있는 상태</p></td><td><p>1. 처음엔 PAC Data로 읽히다가 점차 인증시간이 걸어져 PAC Data로 읽히는 시간이 오래걸릴수 있다.</p></td></tr><tr><td>11</td><td><p>1. SEOS 지원 장치에 Primary Key가 상이한 SEOS 카드 Read</p></td><td><p>Smart Card<br/>&gt; SEOS Card Masking 이 되어있지 않은 상태</p></td><td><p>1. SEOS PAC Data로 리드된다.</p></td></tr><tr><td>12</td><td><p>1. 장치 전원인가 후 60초 이내에 Elite Prep Card Read&gt; 재부팅&gt; Key Card Read&gt; 재부팅<br/>2. 장치에 Card Read</p></td><td><p>Card Read<br/>: Elite Card<br/>: SEOS Card<br/>: iClass Card<br/>: Mifare Card</p>\n\n<p><b>Elite Card Data</b></p>\n<div class='table-wrap'>\n<table class='confluenceTable'><tbody>\n<tr>\n<th class='confluenceTh'>Card 종류</th>\n<th class='confluenceTh'>Card Data</th>\n</tr>\n<tr>\n<td class='confluenceTd'>Mifare DESFire EV1 SE</td>\n<td class='confluenceTd'>CSN값으로 리딩</td>\n</tr>\n<tr>\n<td class='confluenceTd'>iCLASS Legacy 16k/16</td>\n<td class='confluenceTd'>Card Number(DEC):66546<br/>Card Number(Wiegand):1-1010</td>\n</tr>\n<tr>\n<td class='confluenceTd'>SEOS 8K</td>\n<td class='confluenceTd'>Card Number(DEC):88992<br/>Card Number(Wiegand):1-23456</td>\n</tr>\n<tr>\n<td class='confluenceTd'>iCLASS SR 16k16</td>\n<td class='confluenceTd'>Card Number(DEC):67556<br/>Card Number(Wiegand):1-2020</td>\n</tr>\n</tbody></table>\n</div>\n</td><td><p>1. Elite 모드로 진입한다.<br/>2. Elite Card(Data 참고)가 읽힌다.<br/>&gt; PAC Data 인식한다.<br/>3. SEOS, ICLASS Card는 인식안된다.<br/>4. Mifare Card는 인식된다.</p></td></tr><tr><td>13</td><td><p>1. 장치 전원인가 후 60초 이내에 STD Prep Card Read&gt; 재부팅&gt; Key Card Read&gt; 재부팅<br/>2. 장치에 Card Read</p></td><td></td><td><p>1. Elite 모드가 해제된다.<br/>2. Elite Card가 읽히지 않고, SEOS, ICLASS, Mifare 인식된다.</p></td></tr><tr><td>14</td><td><p>1. 장치 전원인가 후 60초 이내에 SEOS Configuration Card Read<br/>2. Primary Key, Sencondary Key 적용<br/>3. 초기화 시도</p></td><td><p>초기화<br/>&gt; Reset All<br/>&gt; 네트워크 초기화<br/>&gt; (UI있는 장치) 네트워크 유지 초기화</p></td><td><p>1. SEOS Config(ADF 주소, Object Data)는 초기화되지 않는다.<br/>2. Primary Key, Secondary Key만 초기화된다.</p></td></tr><tr><td>15</td><td><p>1. 장치 전원인가 후 60초 이내에 Elite Prep Card Read&gt; 재부팅&gt; Key Card Read&gt; 재부팅<br/>2. 초기화 시도<br/>3. Elite Card Read</p></td><td><p>초기화<br/>&gt; Reset All<br/>&gt; 네트워크 초기화<br/>&gt; (UI있는 장치) 네트워크 유지 초기화</p></td><td><p>1. Elite Key는 초기화되지 않는다.<br/>2. Elite Card가 읽힌다.<br/>&gt; Elite Card 읽히는 걸 통해 초기화되지 않음을 확인함.</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [
+      "COMMONR-28"
     ],
-    [
-      3,
-      "1. Configuration Card Key로 발급한 카드 Read 시도",
-      "Primary/Secondary Key 설정되지 않은 상태",
-      "1. 카드가 읽힌다."
-    ],
-    [
-      4,
-      "1. Configuration Card Key로 발급한 카드 Read 시도",
-      "Primary/Secondary Key 임의 값으로 설정된 상태",
-      "1. 카드가 읽히지 않는다."
-    ],
-    [
-      5,
-      "<Step 1 수행한 상태>\n1. Primary Key 변경 후 카드발급 시도",
-      "Key 입력범위: 32자",
-      "1. Primary 키로 발급된다.\n> 한번 키를 변경해 발급한 카드는 Configuration Card Key로 되돌릴 수 없음."
-    ],
-    [
-      6,
-      "1. 키를 변경해 발급했던 카드키를 다른키로 다시 재발급 시도\n> Primary Key: 새로발급할 Key값 입력\n> Secondary Key: 발급한 Key값 입력\n",
-      "Key 입력범위: 32자",
-      "1. 새로 설정된 Primary 키로 발급된다."
-    ],
-    [
-      7,
-      "1. 키 변경으로 카드 발급 시도\n> Primary Key: 새로발급할 Key값 입력\n> Secondary Key: 발급한 Key값 입력\n",
-      "Hex 전용으로 미입력 시나, 홀수로 입력한 경우 FF나 0을 채워서 전송\n예)\n: 사용자 입력값 \"1230\"\n-> FW 전달 값 12 30 FF FF FF FF\n: 사용자 입력값 \"AF0\"\n-> FW 전달 값 0A F0 FF FF FF FF\nKey 입력범위: 32자",
-      "1. 새로 설정된 Primary 키로 발급된다.\n> 미입력 시나, 홀수로 입력한 경우 FF나 0을 채워서 등록 / 전송\n2. Auto Tool을 통해 장치에 전송된 Card Layout을 확인하여 Key 정상 유무 확인한다.\n> 인증 유무 포함"
-    ],
-    [
-      8,
-      "1. SEOS Card로 Card 발급\n2. 인증시도",
-      "Card 발급\n> AOC Card\n> SCC Card",
-      "1. 사용자 정보가 카드에 Write된다.\n2. Read시 등록된 사용자 정보로 인증결과를 출력한다.\n3. Wiegand Out 장치에서 발급된 카드로 리드시 PAC Data로 출력된다."
-    ],
-    [
-      9,
-      "1. SEOS 미지원 장치에 SEOS 카드 Read",
-      "",
-      "1. SEOS 카드의 PAC Data로 Read된다."
-    ],
-    [
-      10,
-      "1. SEOS 지원 장치에 Primary Key가 상이한 SEOS 카드 Read",
-      "Smart Card\n> SEOS Card Masking 되어있는 상태",
-      "1. 처음엔 PAC Data로 읽히다가 점차 인증시간이 걸어져 PAC Data로 읽히는 시간이 오래걸릴수 있다.\n"
-    ],
-    [
-      11,
-      "1. SEOS 지원 장치에 Primary Key가 상이한 SEOS 카드 Read",
-      "Smart Card\n> SEOS Card Masking 이 되어있지 않은 상태",
-      "1. SEOS PAC Data로 리드된다."
-    ],
-    [
-      12,
-      "1. 장치 전원인가 후 60초 이내에 Elite Prep Card Read> 재부팅> Key Card Read> 재부팅\n2. 장치에 Card Read",
-      "Card Read\n: Elite Card\n: SEOS Card\n: iClass Card\n: Mifare Card\n\n*Elite Card Data*\n||Card 종류||Card Data||\n|Mifare DESFire EV1 SE|CSN값으로 리딩|\n|iCLASS Legacy 16k/16|Card Number(DEC):66546\nCard Number(Wiegand):1-1010|\n|SEOS 8K|Card Number(DEC):88992\nCard Number(Wiegand):1-23456|\n|iCLASS SR 16k16|Card Number(DEC):67556\nCard Number(Wiegand):1-2020|\n",
-      "1. Elite 모드로 진입한다.\n2. Elite Card(Data 참고)가 읽힌다.\n> PAC Data 인식한다.\n3. SEOS, ICLASS Card는 인식안된다.\n4. Mifare Card는 인식된다."
-    ],
-    [
-      13,
-      "1. 장치 전원인가 후 60초 이내에 STD Prep Card Read> 재부팅> Key Card Read> 재부팅\n2. 장치에 Card Read",
-      "",
-      "1. Elite 모드가 해제된다.\n2. Elite Card가 읽히지 않고, SEOS, ICLASS, Mifare 인식된다."
-    ],
-    [
-      14,
-      "1. 장치 전원인가 후 60초 이내에 SEOS Configuration Card Read\n2. Primary Key, Sencondary Key 적용\n3. 초기화 시도",
-      "초기화\n> Reset All\n> 네트워크 초기화\n> (UI있는 장치) 네트워크 유지 초기화",
-      "1. SEOS Config(ADF 주소, Object Data)는 초기화되지 않는다.\n2. Primary Key, Secondary Key만 초기화된다."
-    ],
-    [
-      15,
-      "1. 장치 전원인가 후 60초 이내에 Elite Prep Card Read> 재부팅> Key Card Read> 재부팅\n2. 초기화 시도\n3. Elite Card Read",
-      "초기화\n> Reset All\n> 네트워크 초기화\n> (UI있는 장치) 네트워크 유지 초기화",
-      "1. Elite Key는 초기화되지 않는다.\n2. Elite Card가 읽힌다.\n> Elite Card 읽히는 걸 통해 초기화되지 않음을 확인함."
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-210",
-    "description": "",
-    "test_step": [
-      "1. 장치 전원인가 후 60초 이내에 SEOS Configuration Card Read\n2. 장치의 상태확인",
-      "<Step 1 수행한 상태>\n1. Primary Key 변경없이 카드발급 시도",
-      "1. Configuration Card Key로 발급한 카드 Read 시도",
-      "1. Configuration Card Key로 발급한 카드 Read 시도",
-      "<Step 1 수행한 상태>\n1. Primary Key 변경 후 카드발급 시도",
-      "1. 키를 변경해 발급했던 카드키를 다른키로 다시 재발급 시도\n> Primary Key: 새로발급할 Key값 입력\n> Secondary Key: 발급한 Key값 입력\n",
-      "1. 키 변경으로 카드 발급 시도\n> Primary Key: 새로발급할 Key값 입력\n> Secondary Key: 발급한 Key값 입력\n",
-      "1. SEOS Card로 Card 발급\n2. 인증시도",
-      "1. SEOS 미지원 장치에 SEOS 카드 Read",
-      "1. SEOS 지원 장치에 Primary Key가 상이한 SEOS 카드 Read",
-      "1. SEOS 지원 장치에 Primary Key가 상이한 SEOS 카드 Read",
-      "1. 장치 전원인가 후 60초 이내에 Elite Prep Card Read> 재부팅> Key Card Read> 재부팅\n2. 장치에 Card Read",
-      "1. 장치 전원인가 후 60초 이내에 STD Prep Card Read> 재부팅> Key Card Read> 재부팅\n2. 장치에 Card Read",
-      "1. 장치 전원인가 후 60초 이내에 SEOS Configuration Card Read\n2. Primary Key, Sencondary Key 적용\n3. 초기화 시도",
-      "1. 장치 전원인가 후 60초 이내에 Elite Prep Card Read> 재부팅> Key Card Read> 재부팅\n2. 초기화 시도\n3. Elite Card Read"
-    ],
-    "data": [
-      "Primary/Secondary Key 설정되지 않은 상태",
-      "Primary/Secondary Key 임의 값으로 설정된 상태",
-      "Key 입력범위: 32자",
-      "Key 입력범위: 32자",
-      "Hex 전용으로 미입력 시나, 홀수로 입력한 경우 FF나 0을 채워서 전송\n예)\n: 사용자 입력값 \"1230\"\n-> FW 전달 값 12 30 FF FF FF FF\n: 사용자 입력값 \"AF0\"\n-> FW 전달 값 0A F0 FF FF FF FF\nKey 입력범위: 32자",
-      "Card 발급\n> AOC Card\n> SCC Card",
-      "Smart Card\n> SEOS Card Masking 되어있는 상태",
-      "Smart Card\n> SEOS Card Masking 이 되어있지 않은 상태",
-      "Card Read\n: Elite Card\n: SEOS Card\n: iClass Card\n: Mifare Card\n\n*Elite Card Data*\n||Card 종류||Card Data||\n|Mifare DESFire EV1 SE|CSN값으로 리딩|\n|iCLASS Legacy 16k/16|Card Number(DEC):66546\nCard Number(Wiegand):1-1010|\n|SEOS 8K|Card Number(DEC):88992\nCard Number(Wiegand):1-23456|\n|iCLASS SR 16k16|Card Number(DEC):67556\nCard Number(Wiegand):1-2020|\n",
-      "초기화\n> Reset All\n> 네트워크 초기화\n> (UI있는 장치) 네트워크 유지 초기화",
-      "초기화\n> Reset All\n> 네트워크 초기화\n> (UI있는 장치) 네트워크 유지 초기화"
-    ],
-    "expected_result": [
-      "1. Configuration Card Key Write 후 Reboot된다.\n2. SEOS Configuration Card Key 설정에 대한 LED로 동작한다.\n3. SEOS 지원 장치에서는 SEOS, iCLASS, CSN, HID 모두 읽힌다.",
-      "1. 기본키로 발급된다.\n> 기본키 값에 대해서는 알수 없음.",
-      "1. 카드가 읽힌다.",
-      "1. 카드가 읽히지 않는다.",
-      "1. Primary 키로 발급된다.\n> 한번 키를 변경해 발급한 카드는 Configuration Card Key로 되돌릴 수 없음.",
-      "1. 새로 설정된 Primary 키로 발급된다.",
-      "1. 새로 설정된 Primary 키로 발급된다.\n> 미입력 시나, 홀수로 입력한 경우 FF나 0을 채워서 등록 / 전송\n2. Auto Tool을 통해 장치에 전송된 Card Layout을 확인하여 Key 정상 유무 확인한다.\n> 인증 유무 포함",
-      "1. 사용자 정보가 카드에 Write된다.\n2. Read시 등록된 사용자 정보로 인증결과를 출력한다.\n3. Wiegand Out 장치에서 발급된 카드로 리드시 PAC Data로 출력된다.",
-      "1. SEOS 카드의 PAC Data로 Read된다.",
-      "1. 처음엔 PAC Data로 읽히다가 점차 인증시간이 걸어져 PAC Data로 읽히는 시간이 오래걸릴수 있다.\n",
-      "1. SEOS PAC Data로 리드된다.",
-      "1. Elite 모드로 진입한다.\n2. Elite Card(Data 참고)가 읽힌다.\n> PAC Data 인식한다.\n3. SEOS, ICLASS Card는 인식안된다.\n4. Mifare Card는 인식된다.",
-      "1. Elite 모드가 해제된다.\n2. Elite Card가 읽히지 않고, SEOS, ICLASS, Mifare 인식된다.",
-      "1. SEOS Config(ADF 주소, Object Data)는 초기화되지 않는다.\n2. Primary Key, Secondary Key만 초기화된다.",
-      "1. Elite Key는 초기화되지 않는다.\n2. Elite Card가 읽힌다.\n> Elite Card 읽히는 걸 통해 초기화되지 않음을 확인함."
-    ]
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 22844,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 34706,
+              "latestFinalId": 34706
+            },
+            {
+              "environment": "ES1",
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 29842,
+              "latestFinalId": 29842
+            },
+            {
+              "environment": "BioStarV2.9.6.30",
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 29842,
+              "latestFinalId": 29842
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180329",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10384,
+              "latestFinalId": 10384
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_190805_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15257,
+              "latestFinalId": 15257
+            }
+          ]
+        },
+        {
+          "group": "V1.8.0_190806_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15378,
+              "latestFinalId": 15378
+            }
+          ]
+        },
+        {
+          "group": "V1.7.1_181204(Hotfix)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12723,
+              "latestFinalId": 12723
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_181210_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12834,
+              "latestFinalId": 12834
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180322",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10204,
+              "latestFinalId": 10204
+            }
+          ]
+        },
+        {
+          "group": "V1.7.0_190806_Interaction 7차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15124,
+              "latestFinalId": 15124
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_181119_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12970,
+              "latestFinalId": 12970
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_190806_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15498,
+              "latestFinalId": 15498
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_20200601_Interaction 12차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 17230,
+              "latestFinalId": 17230
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "SEOS(Elite Key) 카드 지원",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 4034,
+          "index": 1,
+          "step": "1. 장치 전원인가 후 60초 이내에 SEOS Configuration Card Read\n2. 장치의 상태확인",
+          "data": "",
+          "result": "1. Configuration Card Key Write 후 Reboot된다.\n2. SEOS Configuration Card Key 설정에 대한 LED로 동작한다.\n3. SEOS 지원 장치에서는 SEOS, iCLASS, CSN, HID 모두 읽힌다.",
+          "attachments": []
+        },
+        {
+          "id": 4035,
+          "index": 2,
+          "step": "<Step 1 수행한 상태>\n1. Primary Key 변경없이 카드발급 시도",
+          "data": "",
+          "result": "1. 기본키로 발급된다.\n> 기본키 값에 대해서는 알수 없음.",
+          "attachments": []
+        },
+        {
+          "id": 4038,
+          "index": 3,
+          "step": "1. Configuration Card Key로 발급한 카드 Read 시도",
+          "data": "Primary/Secondary Key 설정되지 않은 상태",
+          "result": "1. 카드가 읽힌다.",
+          "attachments": []
+        },
+        {
+          "id": 4039,
+          "index": 4,
+          "step": "1. Configuration Card Key로 발급한 카드 Read 시도",
+          "data": "Primary/Secondary Key 임의 값으로 설정된 상태",
+          "result": "1. 카드가 읽히지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 4036,
+          "index": 5,
+          "step": "<Step 1 수행한 상태>\n1. Primary Key 변경 후 카드발급 시도",
+          "data": "Key 입력범위: 32자",
+          "result": "1. Primary 키로 발급된다.\n> 한번 키를 변경해 발급한 카드는 Configuration Card Key로 되돌릴 수 없음.",
+          "attachments": []
+        },
+        {
+          "id": 4620,
+          "index": 6,
+          "step": "1. 키를 변경해 발급했던 카드키를 다른키로 다시 재발급 시도\n> Primary Key: 새로발급할 Key값 입력\n> Secondary Key: 발급한 Key값 입력\n",
+          "data": "Key 입력범위: 32자",
+          "result": "1. 새로 설정된 Primary 키로 발급된다.",
+          "attachments": []
+        },
+        {
+          "id": 4037,
+          "index": 7,
+          "step": "1. 키 변경으로 카드 발급 시도\n> Primary Key: 새로발급할 Key값 입력\n> Secondary Key: 발급한 Key값 입력\n",
+          "data": "Hex 전용으로 미입력 시나, 홀수로 입력한 경우 FF나 0을 채워서 전송\n예)\n: 사용자 입력값 \"1230\"\n-> FW 전달 값 12 30 FF FF FF FF\n: 사용자 입력값 \"AF0\"\n-> FW 전달 값 0A F0 FF FF FF FF\nKey 입력범위: 32자",
+          "result": "1. 새로 설정된 Primary 키로 발급된다.\n> 미입력 시나, 홀수로 입력한 경우 FF나 0을 채워서 등록 / 전송\n2. Auto Tool을 통해 장치에 전송된 Card Layout을 확인하여 Key 정상 유무 확인한다.\n> 인증 유무 포함",
+          "attachments": []
+        },
+        {
+          "id": 4042,
+          "index": 8,
+          "step": "1. SEOS Card로 Card 발급\n2. 인증시도",
+          "data": "Card 발급\n> AOC Card\n> SCC Card",
+          "result": "1. 사용자 정보가 카드에 Write된다.\n2. Read시 등록된 사용자 정보로 인증결과를 출력한다.\n3. Wiegand Out 장치에서 발급된 카드로 리드시 PAC Data로 출력된다.",
+          "attachments": []
+        },
+        {
+          "id": 4043,
+          "index": 9,
+          "step": "1. SEOS 미지원 장치에 SEOS 카드 Read",
+          "data": "",
+          "result": "1. SEOS 카드의 PAC Data로 Read된다.",
+          "attachments": []
+        },
+        {
+          "id": 4044,
+          "index": 10,
+          "step": "1. SEOS 지원 장치에 Primary Key가 상이한 SEOS 카드 Read",
+          "data": "Smart Card\n> SEOS Card Masking 되어있는 상태",
+          "result": "1. 처음엔 PAC Data로 읽히다가 점차 인증시간이 걸어져 PAC Data로 읽히는 시간이 오래걸릴수 있다.\n",
+          "attachments": []
+        },
+        {
+          "id": 12776,
+          "index": 11,
+          "step": "1. SEOS 지원 장치에 Primary Key가 상이한 SEOS 카드 Read",
+          "data": "Smart Card\n> SEOS Card Masking 이 되어있지 않은 상태",
+          "result": "1. SEOS PAC Data로 리드된다.",
+          "attachments": []
+        },
+        {
+          "id": 4040,
+          "index": 12,
+          "step": "1. 장치 전원인가 후 60초 이내에 Elite Prep Card Read> 재부팅> Key Card Read> 재부팅\n2. 장치에 Card Read",
+          "data": "Card Read\n: Elite Card\n: SEOS Card\n: iClass Card\n: Mifare Card\n\n*Elite Card Data*\n||Card 종류||Card Data||\n|Mifare DESFire EV1 SE|CSN값으로 리딩|\n|iCLASS Legacy 16k/16|Card Number(DEC):66546\nCard Number(Wiegand):1-1010|\n|SEOS 8K|Card Number(DEC):88992\nCard Number(Wiegand):1-23456|\n|iCLASS SR 16k16|Card Number(DEC):67556\nCard Number(Wiegand):1-2020|\n",
+          "result": "1. Elite 모드로 진입한다.\n2. Elite Card(Data 참고)가 읽힌다.\n> PAC Data 인식한다.\n3. SEOS, ICLASS Card는 인식안된다.\n4. Mifare Card는 인식된다.",
+          "attachments": [
+            {
+              "id": 1135,
+              "fileName": "Elite 모드 진입.png",
+              "fileIcon": "image.gif",
+              "fileIconAlt": "PNG File",
+              "fileSize": "285 kB",
+              "numericalFileSize": 0,
+              "created": "12/6월/25 3:59 오후",
+              "author": "separk"
+            }
+          ]
+        },
+        {
+          "id": 4041,
+          "index": 13,
+          "step": "1. 장치 전원인가 후 60초 이내에 STD Prep Card Read> 재부팅> Key Card Read> 재부팅\n2. 장치에 Card Read",
+          "data": "",
+          "result": "1. Elite 모드가 해제된다.\n2. Elite Card가 읽히지 않고, SEOS, ICLASS, Mifare 인식된다.",
+          "attachments": [
+            {
+              "id": 1136,
+              "fileName": "Elite 모드 해제(STD).png",
+              "fileIcon": "image.gif",
+              "fileIconAlt": "PNG File",
+              "fileSize": "285 kB",
+              "numericalFileSize": 0,
+              "created": "12/6월/25 4:06 오후",
+              "author": "separk"
+            }
+          ]
+        },
+        {
+          "id": 4045,
+          "index": 14,
+          "step": "1. 장치 전원인가 후 60초 이내에 SEOS Configuration Card Read\n2. Primary Key, Sencondary Key 적용\n3. 초기화 시도",
+          "data": "초기화\n> Reset All\n> 네트워크 초기화\n> (UI있는 장치) 네트워크 유지 초기화",
+          "result": "1. SEOS Config(ADF 주소, Object Data)는 초기화되지 않는다.\n2. Primary Key, Secondary Key만 초기화된다.",
+          "attachments": []
+        },
+        {
+          "id": 4046,
+          "index": 15,
+          "step": "1. 장치 전원인가 후 60초 이내에 Elite Prep Card Read> 재부팅> Key Card Read> 재부팅\n2. 초기화 시도\n3. Elite Card Read",
+          "data": "초기화\n> Reset All\n> 네트워크 초기화\n> (UI있는 장치) 네트워크 유지 초기화",
+          "result": "1. Elite Key는 초기화되지 않는다.\n2. Elite Card가 읽힌다.\n> Elite Card 읽히는 걸 통해 초기화되지 않음을 확인함.",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [],
+      "maxResults": 0,
+      "total": 0,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+      "name": "미할당",
+      "id": "10100"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+      "name": "할 일",
+      "id": "10000",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "할 일"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzs74v:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2017-10-18T13:37:09.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

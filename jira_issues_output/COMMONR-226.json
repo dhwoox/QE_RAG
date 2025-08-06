@@ -1,236 +1,1695 @@
 {
-  "id": "COMMONR-226",
-  "content": [
-    [
-      1,
-      "1. Device : Master만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Tamper On 선택\n\n* Tamper on : 장치에서 Tamper 제거",
-      "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
-      "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n\n*사양 변경으로 인한 삭제 항목\n1. Signal Alarm에 대해 Release All Alarm이 된다.\n2. 장치가 Reboot 된다."
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "24311",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/24311",
+  "key": "COMMONR-226",
+  "fields": {
+    "resolution": null,
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "0.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": null,
+    "customfield_10185": null,
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "39513",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/39513",
+        "type": {
+          "id": "10000",
+          "name": "Blocks",
+          "inward": "is blocked by",
+          "outward": "blocks",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10000"
+        },
+        "inwardIssue": {
+          "id": "49550",
+          "key": "DFW-792",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/49550",
+          "fields": {
+            "summary": "Triggered & Action에서 Occupancy Limit Violation (Network Failure) 발생 시 설정한 Action으로 동작하지 않는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "38999",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/38999",
+        "type": {
+          "id": "10000",
+          "name": "Blocks",
+          "inward": "is blocked by",
+          "outward": "blocks",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10000"
+        },
+        "inwardIssue": {
+          "id": "49129",
+          "key": "DFW-728",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/49129",
+          "fields": {
+            "summary": "SIO2, DM20 장치 잠금 로그 남는 이슈",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/4",
+              "description": "이 이슈는 한번 해결되었지만 해결책이 올바르지 않았던 것 같습니다. 지금부터는 이슈가 할당된 것으로 표기되거나 해결된 것으로 표기할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/reopened.png",
+              "name": "다시 열림",
+              "id": "4",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "39515",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/39515",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "49550",
+          "key": "DFW-792",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/49550",
+          "fields": {
+            "summary": "Triggered & Action에서 Occupancy Limit Violation (Network Failure) 발생 시 설정한 Action으로 동작하지 않는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "53420",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/53420",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "62579",
+          "key": "ONYXFW-800",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/62579",
+          "fields": {
+            "summary": "[TriggerAction-오동작]동일 Action으로 Sound/Buzzer와 Output이 설정된 경우 1회 Master 장치가 Watchdog에 의해 1회 비정상 재부팅 발생한 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "32736",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/32736",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "42887",
+          "key": "BSIIDII-1421",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/42887",
+          "fields": {
+            "summary": "장치 잠금상태에서 Master 재부팅 후 서버에 장치 연결 안되는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "32734",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/32734",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "42873",
+          "key": "BSIIDII-1420",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/42873",
+          "fields": {
+            "summary": "Trigger&Action에서 Input으로 DM20에 Action이 미발생하는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "56267",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/56267",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "65442",
+          "key": "BEW3FW-265",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/65442",
+          "fields": {
+            "summary": "SLAVE에서 Trigger & Action Authentication failed(Timeout)이벤트로 장치 락될때 Lock LED출력과 동시에 IR LED점멸 안됨이 아니라 얼굴 미입력 또는 Authtimeout 시간이 지난 후 IR LED 점멸 안됨",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10204",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/medium.svg",
+              "name": "Common (B)",
+              "id": "10204"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "54851",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/54851",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "64010",
+          "key": "BEW3FW-213",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/64010",
+          "fields": {
+            "summary": " Trigger&Action 및 Alarm설정으로 Alert Sound 출력 시 Sound가 출력되다가 끊김",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "39021",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/39021",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "49129",
+          "key": "DFW-728",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/49129",
+          "fields": {
+            "summary": "SIO2, DM20 장치 잠금 로그 남는 이슈",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/4",
+              "description": "이 이슈는 한번 해결되었지만 해결책이 올바르지 않았던 것 같습니다. 지금부터는 이슈가 할당된 것으로 표기되거나 해결된 것으로 표기할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/reopened.png",
+              "name": "다시 열림",
+              "id": "4",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "26492",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/26492",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "34994",
+          "key": "BLNIIFW-753",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/34994",
+          "fields": {
+            "summary": "[Device Locked] Device Locked 장치 재부팅 시 Slave만 Unlocked로 동작하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "27073",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/27073",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "35954",
+          "key": "BSIIDII-1356",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/35954",
+          "fields": {
+            "summary": "[RS 485 통신] Master의 Tamper On에 대한 Trigger로 설정된 Slave의 Action이 Master Rebooting 시 Slave  Output Action만 동작하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "27631",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/27631",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "36941",
+          "key": "FSTIIFW-1727",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/36941",
+          "fields": {
+            "summary": "[Private Auth] BSA2(S)에서의 1:1 Duress Finger에 대한 FS2(M) 오동작",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "20148",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/20148",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "25810",
+          "key": "BLNIIFW-368",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/25810",
+          "fields": {
+            "summary": "장치 재부팅 후 Tamper On 발생 시 팝업 미발생 하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19338",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19338",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "24961",
+          "key": "BLNIIFW-232",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/24961",
+          "fields": {
+            "summary": "Trigger&Action에 Duress로 설정 시 Alert Sound 등 Action 미발생 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "24241",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/24241",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "31440",
+          "key": "BSIIDII-1227",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/31440",
+          "fields": {
+            "summary": "[Held/Forced Open Alarm] Alarm Clear 오동작",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "53311",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/53311",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "62251",
+          "key": "ONYXFW-766",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/62251",
+          "fields": {
+            "summary": "[XS2 Camera QR]Device Lock(Disable Device) 상태에서 Camera QR이 동작이 되어, QR 입력 시 인식음이 발생하고,이후 Unlock 시 입력한 QR에 의해 인증 성공이 동작 하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "58927",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/58927",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "68114",
+          "key": "CS20FW-75",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/68114",
+          "fields": {
+            "summary": "CS20(M)-XS2(S) SLAVE QR 설정 불가",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19634",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19634",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "25164",
+          "key": "FSTIIFW-844",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/25164",
+          "fields": {
+            "summary": "Master 장치를 이용한 동일 Trigger에 대해서 Delay Relay Action과 Release All Alarm이 발생한 경우, Delay Relay Action이 동작 하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "21481",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/21481",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "27722",
+          "key": "BEWIIFWDI-623",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/27722",
+          "fields": {
+            "summary": "Trigger&Action 설정 시, 임의 이벤트에 대하여 Alert Sound와 Disable Device를 동시에 설정하면 해당 이벤트 동작 시, Alert Sound 출력안됨",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "61110",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/61110",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "70346",
+          "key": "CS20FW-139",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/70346",
+          "fields": {
+            "summary": "Trigger&Action에서 Slave가 없음에도 Alert Sound가 설정 가능한 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "19336",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19336",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "24959",
+          "key": "BLNIIFW-231",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/24959",
+          "fields": {
+            "summary": "경보 사운드 출력 시 경보음 출력이 빠르게 출력되어 출력이 이상해 보임",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Tamper On 선택\n\n* Tamper on : 장치에서 Tamper 제거",
-      "[BioStar]\nAction Device : Slave(SIO2, DM20포함)\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
-      "1. 설정한 Output이 Slave 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Slave 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n\n*사양 변경으로 인한 삭제 항목\n1. Signal Alarm에 대해 Release All Alarm이 된다.\n2. 장치가 Reboot 된다."
+    "assignee": null,
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 25.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-226/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@1e1da8a0[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@70b5eaf4[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@13010fa2[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@4cbcb57c[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@4df1621c[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@7af14716[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@61163bf5[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@482875fe[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@e8f1f65[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@7e362055[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@2e2f75f5[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@25a3624b[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": null,
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-226/watchers",
+      "watchCount": 1,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T10:04:08.000+0900",
+    "timeoriginalestimate": null,
+    "description": "Trigger&Action에서의 All Device Action 동작확인\r\n> Output(=Signal)\r\n> Alert Sound(=Buzzer, Sound)\r\n> Disable Device\r\n\r\n테스트시 동작확인 범위\r\n> Trigger가 Event일 때: door/lift/zone 관련 이벤트를 제외한 항목에 대해 Action 확인(FW에서는 door/lift/zone 관련이벤트를 triggerAction 으로 설정하는 것은 지원되지 않음)\r\n> Trigger가 Input일 때:  Master/Slave의 모든 Port에 대한 Action 확인\r\n: CS40의 경우 일반Input/Supervised Input/Aux Port\r\n\r\n테스트시 유의사항\r\n> Port는 중복으로 설정해서 하지않도록 한다.(ex. Door의 Sensor에 A 장치의 Input 0이 설정되어있는데 해당 Port를 Trigger의 Input으로 재설정할 경우 오동작)\r\n\r\n& Device의 Trigger&Action 설정값이 아래와 같이 변경되어야합니다.\r\n - BioStar_DISCONNECTED -> 지원되야함\r\n - Network_DISCONNECTED -> Xpass, XpassS2를 제외하고 지원되어야 함\r\n\r\n& Add New Signal 설정 값(예)\r\n - Delay : 100 / Count : 1000 / On : 2 / Off : 2\r\n - 임의의 Signal 설정에 대해서 확인 필요\r\n\r\n& Door & Floor Relay와의 중복 사용 금지",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. Device : Master만 연결<br/>2. Device &gt; Advanced &gt; Trigger &amp; Action &gt; +Add &gt; Trigger &gt; Event &gt; Device : Master 장치 선택 &gt; Tamper On 선택</p>\n\n<ul>\n<li>Tamper on : 장치에서 Tamper 제거</li>\n</ul>\n</td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Action Device : Master<br/>1. Action 선택<br/>1) Output<br/>2) Alert Sound<br/>3) Disable Device</p>\n\n<p>*Alert Sound<br/>&gt; 지원하는 장치만 표시됨<br/>*사양 변경으로 인한 삭제 항목<br/>1) Release All Alarm<br/>2) Reboot Device<br/>3) Access Granted<br/>4) Access Denied</p></td><td><p>1. 설정한 Output이 Master 장치에서 출력된다.<br/>2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.<br/>2-1) Alert Sound Type이 출력된다.<br/> &gt; Device : 하위 장치가 존재할 경우<br/> &gt; Alert Sound Type : Sound가 목록에 존재<br/> &gt; Play Option : Infinite/Counts 존재 <br/>2-2) Alert Buzzer Type이 출력된다.<br/> &gt; Device : 하위 장치가 존재할 경우<br/> &gt; Alert Buzzer Type : low/medium/high<br/>2-3) IO 장치 제외<br/>3. Disable Device로 설정한 장치가 잠긴다.<br/>&gt; 메뉴 진입은 가능하다. (Master 장치만)<br/>&gt; 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)<br/>&gt; LED는 Red-Magenta 로 2초 간격 전환된다.<br/>&gt; 장치 잠금/해제 로그가 남는다.<br/>&gt; 장치 잠금 해제 후 장치 정상동작 확인(인증)</p>\n\n<p>*사양 변경으로 인한 삭제 항목<br/>1. Signal Alarm에 대해 Release All Alarm이 된다.<br/>2. 장치가 Reboot 된다.</p></td></tr><tr><td>2</td><td><p>1. Device : Master-Slave(SIO2, DM20) 연결<br/>2. Device &gt; Advanced &gt; Trigger &amp; Action &gt; +Add &gt; Trigger &gt; Event &gt; Device : Master 장치 선택 &gt; Tamper On 선택</p>\n\n<ul>\n<li>Tamper on : 장치에서 Tamper 제거</li>\n</ul>\n</td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Action Device : Slave(SIO2, DM20포함)<br/>1. Action 선택<br/>1) Output<br/>2) Alert Sound<br/>3) Disable Device</p>\n\n<p>*Alert Sound<br/>&gt; 지원하는 장치만 표시됨<br/>*사양 변경으로 인한 삭제 항목<br/>1) Release All Alarm<br/>2) Reboot Device<br/>3) Access Granted<br/>4) Access Denied</p></td><td><p>1. 설정한 Output이 Slave 장치에서 출력된다.<br/>2. 설정한 Alert Sound Alarm이 Slave 장치에서 출력된다.<br/>2-1) Alert Sound Type이 출력된다.<br/> &gt; Device : 하위 장치가 존재할 경우<br/> &gt; Alert Sound Type : Sound가 목록에 존재<br/> &gt; Play Option : Infinite/Counts 존재 <br/>2-2) Alert Buzzer Type이 출력된다.<br/> &gt; Device : 하위 장치가 존재할 경우<br/> &gt; Alert Buzzer Type : low/medium/high<br/>2-3) IO 장치 제외<br/>3. Disable Device로 설정한 장치가 잠긴다.<br/>&gt; 메뉴 진입은 가능하다. (Master 장치만)<br/>&gt; 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)<br/>&gt; LED는 Red-Magenta 로 2초 간격 전환된다.<br/>&gt; 장치 잠금/해제 로그가 남는다.<br/>&gt; 장치 잠금 해제 후 장치 정상동작 확인(인증)</p>\n\n<p>*사양 변경으로 인한 삭제 항목<br/>1. Signal Alarm에 대해 Release All Alarm이 된다.<br/>2. 장치가 Reboot 된다.</p></td></tr><tr><td>3</td><td><p>1. Device : Master만 연결<br/>2. Device &gt; Advanced &gt; Trigger &amp; Action &gt; +Add &gt; Trigger &gt; Event &gt; Device : Master 장치 선택 &gt; BioStar Disconnected 선택</p>\n<ul>\n<li>BioStar Disconnected : Device List에서 해당 Device 선택 후 Reconnect 버튼 1회 클릭</li>\n</ul>\n</td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Action Device : Master<br/>1. Action 선택<br/>1) Output<br/>2) Alert Sound<br/>3) Disable Device</p>\n\n<p>*Alert Sound<br/>&gt; 지원하는 장치만 표시됨<br/>*사양 변경으로 인한 삭제 항목<br/>1) Release All Alarm<br/>2) Reboot Device<br/>3) Access Granted<br/>4) Access Denied</p></td><td><p>1. 설정한 Output이 Master 장치에서 출력된다.<br/>2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.<br/>2-1) Alert Sound Type이 출력된다.<br/> &gt; Device : 하위 장치가 존재할 경우<br/> &gt; Alert Sound Type : Sound가 목록에 존재<br/> &gt; Play Option : Infinite/Counts 존재 <br/>2-2) Alert Buzzer Type이 출력된다.<br/> &gt; Device : 하위 장치가 존재할 경우<br/> &gt; Alert Buzzer Type : low/medium/high<br/>2-3) IO 장치 제외<br/>3. Disable Device로 설정한 장치가 잠긴다.<br/>&gt; 메뉴 진입은 가능하다. (Master 장치만)<br/>&gt; 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)<br/>&gt; LED는 Red-Magenta 로 2초 간격 전환된다.<br/>&gt; 장치 잠금/해제 로그가 남는다.<br/>&gt; 장치 잠금 해제 후 장치 정상동작 확인(인증)</p></td></tr><tr><td>4</td><td><p>1. Device : Master-Slave(SIO2, DM20) 연결<br/>2. Device &gt; Advanced &gt; Trigger &amp; Action &gt; +Add &gt; Trigger &gt; Event &gt; Device : Master 장치 선택 &gt; BioStar Disconnected 선택</p>\n<ul>\n<li>BioStar Disconnected : Device List에서 해당 Device 선택 후 Reconnect 버튼 1회 클릭</li>\n</ul>\n</td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Action Device : Slave(SIO2, DM20포함)<br/>1. Action 선택<br/>1) Output<br/>2) Alert Sound<br/>3) Disable Device</p>\n\n<p>*Alert Sound<br/>&gt; 지원하는 장치만 표시됨<br/>*사양 변경으로 인한 삭제 항목<br/>1) Release All Alarm<br/>2) Reboot Device<br/>3) Access Granted<br/>4) Access Denied</p></td><td><p>1. 설정한 Output이 Slave 장치에서 출력된다.<br/>2. 설정한 Alert Sound Alarm이 Slave 장치에서 출력된다.<br/>2-1) Alert Sound Type이 출력된다.<br/> &gt; Device : 하위 장치가 존재할 경우<br/> &gt; Alert Sound Type : Sound가 목록에 존재<br/> &gt; Play Option : Infinite/Counts 존재 <br/>2-2) Alert Buzzer Type이 출력된다.<br/> &gt; Device : 하위 장치가 존재할 경우<br/> &gt; Alert Buzzer Type : low/medium/high<br/>2-3) IO 장치 제외<br/>3. Disable Device로 설정한 장치가 잠긴다.<br/>&gt; 메뉴 진입은 가능하다. (Master 장치만)<br/>&gt; 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)<br/>&gt; LED는 Red-Magenta 로 2초 간격 전환된다.<br/>&gt; 장치 잠금/해제 로그가 남는다.<br/>&gt; 장치 잠금 해제 후 장치 정상동작 확인(인증)</p></td></tr><tr><td>5</td><td><p>1. Device : Master만 연결<br/>2. Device &gt; Advanced &gt; Trigger &amp; Action &gt; +Add &gt; Trigger &gt; Event &gt; Device : Master 장치 선택 &gt; Network Disconnected 선택</p>\n<ul>\n<li>Network Disconnected : 장치에서 Lan선 제거</li>\n</ul>\n</td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Action Device : Master<br/>1. Action 선택<br/>1) Output<br/>2) Alert Sound<br/>3) Disable Device</p>\n\n<p>*Alert Sound<br/>&gt; 지원하는 장치만 표시됨<br/>*사양 변경으로 인한 삭제 항목<br/>1) Release All Alarm<br/>2) Reboot Device<br/>3) Access Granted<br/>4) Access Denied</p>\n\n<p>※ XPASS와 XPS2의 경우 Link Disconnect 지원 안됨.</p></td><td><p>1. 설정한 Output이 Master 장치에서 출력된다.<br/>2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.<br/>2-1) Alert Sound Type이 출력된다.<br/> &gt; Device : 하위 장치가 존재할 경우<br/> &gt; Alert Sound Type : Sound가 목록에 존재<br/> &gt; Play Option : Infinite/Counts 존재 <br/>2-2) Alert Buzzer Type이 출력된다.<br/> &gt; Device : 하위 장치가 존재할 경우<br/> &gt; Alert Buzzer Type : low/medium/high<br/>2-3) IO 장치 제외<br/>3. Disable Device로 설정한 장치가 잠긴다.<br/>&gt; 메뉴 진입은 가능하다. (Master 장치만)<br/>&gt; 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)<br/>&gt; LED는 Red-Magenta 로 2초 간격 전환된다.<br/>&gt; 장치 잠금/해제 로그가 남는다.<br/>&gt; 장치 잠금 해제 후 장치 정상동작 확인(인증)</p></td></tr><tr><td>6</td><td><p>1. Device : Master-Slave(SIO2, DM20) 연결<br/>2. Device &gt; Advanced &gt; Trigger &amp; Action &gt; +Add &gt; Trigger &gt; Event &gt; Device : Master 장치 선택 &gt; Network Disconnected 선택</p>\n<ul>\n<li>Network Disconnected : 장치에서 Lan선 제거</li>\n</ul>\n</td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Action Device : Slave(SIO2, DM20포함)<br/>1. Action 선택<br/>1) Output<br/>2) Alert Sound<br/>3) Disable Device</p>\n\n<p>*Alert Sound<br/>&gt; 지원하는 장치만 표시됨<br/>*사양 변경으로 인한 삭제 항목<br/>1) Release All Alarm<br/>2) Reboot Device<br/>3) Access Granted<br/>4) Access Denied</p></td><td><p>1. 설정한 Output이 Slave 장치에서 출력된다.<br/>2. 설정한 Alert Sound Alarm이 Slave 장치에서 출력된다.<br/>2-1) Alert Sound Type이 출력된다.<br/> &gt; Device : 하위 장치가 존재할 경우<br/> &gt; Alert Sound Type : Sound가 목록에 존재<br/> &gt; Play Option : Infinite/Counts 존재 <br/>2-2) Alert Buzzer Type이 출력된다.<br/> &gt; Device : 하위 장치가 존재할 경우<br/> &gt; Alert Buzzer Type : low/medium/high<br/>2-3) IO 장치 제외<br/>3. Disable Device로 설정한 장치가 잠긴다.<br/>&gt; 메뉴 진입은 가능하다. (Master 장치만)<br/>&gt; 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)<br/>&gt; LED는 Red-Magenta 로 2초 간격 전환된다.<br/>&gt; 장치 잠금/해제 로그가 남는다.<br/>&gt; 장치 잠금 해제 후 장치 정상동작 확인(인증)</p></td></tr><tr><td>7</td><td><p>1. Device : Master-Slave(SIO2, DM20) 연결<br/>2. Device &gt; Advanced &gt; Trigger &amp; Action &gt; +Add &gt; Trigger &gt; Event &gt; Device : Slave 장치 선택 &gt; Tamper On 선택</p>\n\n<ul>\n<li>Tamper on : 장치에서 Tamper 제거</li>\n</ul>\n</td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Action Device : Master<br/>1. Action 선택<br/>1) Output<br/>2) Alert Sound<br/>3) Disable Device</p>\n\n<p>*Alert Sound<br/>&gt; 지원하는 장치만 표시됨<br/>*사양 변경으로 인한 삭제 항목<br/>1) Release All Alarm<br/>2) Reboot Device<br/>3) Access Granted<br/>4) Access Denied</p></td><td><p>1. 설정한 Output이 Master 장치에서 출력된다.<br/>2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.<br/>2-1) Alert Sound Type이 출력된다.<br/> &gt; Device : 하위 장치가 존재할 경우<br/> &gt; Alert Sound Type : Sound가 목록에 존재<br/> &gt; Play Option : Infinite/Counts 존재 <br/>2-2) Alert Buzzer Type이 출력된다.<br/> &gt; Device : 하위 장치가 존재할 경우<br/> &gt; Alert Buzzer Type : low/medium/high<br/>2-3) IO 장치 제외<br/>3. Disable Device로 설정한 장치가 잠긴다.<br/>&gt; 메뉴 진입은 가능하다. (Master 장치만)<br/>&gt; 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)<br/>&gt; LED는 Red-Magenta 로 2초 간격 전환된다.<br/>&gt; 장치 잠금/해제 로그가 남는다.<br/>&gt; 장치 잠금 해제 후 장치 정상동작 확인(인증)</p></td></tr><tr><td>8</td><td><p>1. Device : Master-Slave(SIO2, DM20) 연결<br/>2. Device &gt; Advanced &gt; Trigger &amp; Action &gt; +Add &gt; Trigger &gt; Event &gt; Device : Slave 장치 선택 &gt; Tamper On 선택</p>\n\n<ul>\n<li>Tamper on : 장치에서 Tamper 제거</li>\n</ul>\n</td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Action Device : Slave(SIO2, DM20포함)<br/>1. Action 선택<br/>1) Output<br/>2) Alert Sound<br/>3) Disable Device</p>\n\n<p>*Alert Sound<br/>&gt; 지원하는 장치만 표시됨<br/>*사양 변경으로 인한 삭제 항목<br/>1) Release All Alarm<br/>2) Reboot Device<br/>3) Access Granted<br/>4) Access Denied</p></td><td><p>1. 설정한 Output이 Slave 장치에서 출력된다.<br/>2. 설정한 Alert Sound Alarm이 Slave 장치에서 출력된다.<br/>2-1) Alert Sound Type이 출력된다.<br/> &gt; Device : 하위 장치가 존재할 경우<br/> &gt; Alert Sound Type : Sound가 목록에 존재<br/> &gt; Play Option : Infinite/Counts 존재 <br/>2-2) Alert Buzzer Type이 출력된다.<br/> &gt; Device : 하위 장치가 존재할 경우<br/> &gt; Alert Buzzer Type : low/medium/high<br/>2-3) IO 장치 제외<br/>3. Disable Device로 설정한 장치가 잠긴다.<br/>&gt; 메뉴 진입은 가능하다. (Master 장치만)<br/>&gt; 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)<br/>&gt; LED는 Red-Magenta 로 2초 간격 전환된다.<br/>&gt; 장치 잠금/해제 로그가 남는다.<br/>&gt; 장치 잠금 해제 후 장치 정상동작 확인(인증)</p></td></tr><tr><td>9</td><td><p>1. Device : Master-Slave(SIO2, DM20) 연결<br/>2. Device &gt; Advanced &gt; Trigger &amp; Action &gt; +Add &gt; Trigger &gt; Event &gt; Device : Slave 장치 선택 &gt; RS485 Disconnected 선택</p>\n\n<ul>\n<li>RS485 Disconnected : Slave 장치의 RS485 4 Pin 케이블을 분리시킨다.</li>\n</ul>\n</td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Action Device : Master<br/>1. Action 선택<br/>1) Output<br/>2) Alert Sound<br/>3) Disable Device</p>\n\n<p>*Alert Sound<br/>&gt; 지원하는 장치만 표시됨<br/>*사양 변경으로 인한 삭제 항목<br/>1) Release All Alarm<br/>2) Reboot Device<br/>3) Access Granted<br/>4) Access Denied</p></td><td><p>1. 설정한 Output이 Master 장치에서 출력된다.<br/>2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.<br/>2-1) Alert Sound Type이 출력된다.<br/> &gt; Device : 하위 장치가 존재할 경우<br/> &gt; Alert Sound Type : Sound가 목록에 존재<br/> &gt; Play Option : Infinite/Counts 존재 <br/>2-2) Alert Buzzer Type이 출력된다.<br/> &gt; Device : 하위 장치가 존재할 경우<br/> &gt; Alert Buzzer Type : low/medium/high<br/>2-3) IO 장치 제외<br/>3. Disable Device로 설정한 장치가 잠긴다.<br/>&gt; 메뉴 진입은 가능하다. (Master 장치만)<br/>&gt; 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)<br/>&gt; LED는 Red-Magenta 로 2초 간격 전환된다.<br/>&gt; 장치 잠금/해제 로그가 남는다.<br/>&gt; 장치 잠금 해제 후 장치 정상동작 확인(인증)</p></td></tr><tr><td>10</td><td><p>1. Device : Master-Slave(SIO2, DM20) 연결<br/>2. Device &gt; Advanced &gt; Trigger &amp; Action &gt; +Add &gt; Trigger &gt; Event &gt; Device : Slave 장치 선택 &gt; Temper on, RS-485 disconnected, BioStar disconnected, Network disconnected 선택</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Action Device : Master<br/>1. Action 선택<br/>1) Output</p>\n\n<p>Add Long Signal 설정 값(예)</p>\n<ul class=\"alternate\" type=\"square\">\n<li>Delay : 100 / Count : 1000 / On : 1 / Off : 0</li>\n</ul>\n</td><td><p>1. 설정한 Output이 Master 장치에서 출력된다.<br/>2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.<br/>2-1) Alert Sound Type이 출력된다.<br/> &gt; Device : 하위 장치가 존재할 경우<br/> &gt; Alert Sound Type : Sound가 목록에 존재<br/> &gt; Play Option : Infinite/Counts 존재 <br/>2-2) Alert Buzzer Type이 출력된다.<br/> &gt; Device : 하위 장치가 존재할 경우<br/> &gt; Alert Buzzer Type : low/medium/high<br/>2-3) IO 장치 제외<br/>3. Disable Device로 설정한 장치가 잠긴다.<br/>&gt; 메뉴 진입은 가능하다. (Master 장치만)<br/>&gt; 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)<br/>&gt; LED는 Red-Magenta 로 2초 간격 전환된다.<br/>&gt; 장치 잠금/해제 로그가 남는다.<br/>&gt; 장치 잠금 해제 후 장치 정상동작 확인(인증)</p></td></tr><tr><td>11</td><td><p>1. Device : Master-Slave(SIO2, DM20) 연결<br/>2. Device &gt; Advanced &gt; Trigger &amp; Action &gt; +Add &gt; Trigger &gt; Event &gt; Device : Master/Slave 장치 선택 &gt; 1:N / 1:1 Duress  선택</p>\n\n<p>-. 1:1 인증 관련 : <br/>&gt; 1:1 인증 성공(ID+PIN)/(ID+지문)/(ID+지문+PIN)/(ID+얼굴)/(ID+얼굴+PIN)/(카드)/(카드+PIN)/(카드+지문)/(카드+지문+PIN)/(카드+얼굴)/(카드+얼굴+PIN)/(액세스온카드)/(액세스온카드+PIN)/(액세스온카드+지문)/(액세스온카드+지문+PIN)(모바일카드)/(모바일카드 + 지문)/(모바일카드+지문+PIN)/(모바일카드+얼굴)/(모바일카드+얼굴+PIN)/(모바일카드+얼굴+지문)/(모바일카드+지문+얼굴) <br/>&gt; 1:1 협박 지문 인증 (카드+지문),(카드+지문+PIN),(엑세스온카드+지문), (엑세스온카드+지문+PIN) </p>\n\n<p>-. 1:N 인증 관련 : <br/>&gt; 1:N 인증 성공(지문)/(지문+PIN)/(얼굴)/(얼굴+PIN),<br/>&gt; 1:N 협박 지문 인증 (지문)/(지문+PIN)/(얼굴)/(얼굴+PIN)<br/>&gt; 이중 인증 성공</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Action Device : Master/Slave<br/>1. Action 선택<br/>1) Output<br/>2) Alert Sound<br/>3) Disable Device</p>\n\n<p>*Alert Sound<br/>&gt; 지원하는 장치만 표시됨</p>\n\n<p>Add Long Signal 설정 값(예)</p>\n<ul class=\"alternate\" type=\"square\">\n<li>Delay : 100 / Count : 1000 / On : 1 / Off : 0</li>\n</ul>\n</td><td><p>1. 설정한 Output이 Master/Slave 장치에서 출력된다.<br/>2. 설정한 Alert Sound Alarm이 Master/Slave 장치에서 출력된다.<br/>2-1) Alert Sound Type이 출력된다.<br/> &gt; Device : 하위 장치가 존재할 경우<br/> &gt; Alert Sound Type : Sound가 목록에 존재<br/> &gt; Play Option : Infinite/Counts 존재 <br/>2-2) Alert Buzzer Type이 출력된다.<br/> &gt; Device : 하위 장치가 존재할 경우<br/> &gt; Alert Buzzer Type : low/medium/high<br/>2-3) IO 장치 제외<br/>3. Disable Device로 설정한 장치가 잠긴다.<br/>&gt; 메뉴 진입은 가능하다. (Master 장치만)<br/>&gt; 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)<br/>&gt; LED는 Red-Magenta 로 2초 간격 전환된다.<br/>&gt; 장치 잠금/해제 로그가 남는다.<br/>&gt; 장치 잠금 해제 후 장치 정상동작 확인(인증)</p></td></tr><tr><td>12</td><td><p>1. Device : Master-Slave(SIO2, DM20)<br/>2. Device &gt; Advanced &gt; Trigger &amp; Action &gt; +Add &gt; Trigger &gt; Event &gt; Device : Master 장치 선택 &gt; Tamper On 선택</p>\n\n<ul>\n<li>Tamper on : 장치에서 Tamper 제거</li>\n</ul>\n</td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Action Device : Master, Slave(SIO2, DM20)<br/>1. Action 선택<br/>1) Output</p></td><td><p>1. Trigger&amp;Action에서의 Action은 최대 128 개까지 설정된다.<br/>&gt; Event 중 Door/Lift/Zone에 해당하는 Action은 Trigger에서 설정을 해도 동작 안함<br/>2. 설정한 Action이 동시에 발생되어야 한다.<br/>&gt; 최소 5개 이상 확인</p></td></tr><tr><td>13</td><td><p>1. Master: Disable 상태<br/>2. Master 전원재인가<br/>3. 부팅여부 확인</p></td><td></td><td><p>1. 부팅이 정상적으로 이루어져야 한다.<br/>&gt; 장치 타입별 확인 필수</p></td></tr><tr><td>14</td><td><p>1. Slave: Disable 상태<br/>2. Slave 전원재인가<br/>3. 부팅여부 확인</p></td><td></td><td><p>1. 부팅이 정상적으로 이루어져야 한다.<br/>&gt; 장치 타입별 확인 필수</p></td></tr><tr><td>15</td><td><p>1. Device : Master만 연결<br/>2. Device &gt; Advanced &gt; Trigger &amp; Action &gt; +Add &gt; Trigger &gt; Event &gt; Device : Master 장치 선택 &gt; Occupancy Limit Violation (Count Full) 선택</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Action Device : Master<br/>1. Action 선택<br/>1) Output<br/>2) Alert Sound<br/>3) Disable Device</p>\n\n<p>*Alert Sound<br/>&gt; 지원하는 장치만 표시됨</p></td><td><p>1. 설정한 Output이 Master 장치에서 출력된다.<br/>2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.<br/>2-1) Alert Sound Type이 출력된다.<br/>&gt; Device : 하위 장치가 존재할 경우<br/>&gt; Alert Sound Type : Sound가 목록에 존재<br/>&gt; Play Option : Infinite/Counts 존재<br/>2-2) Alert Buzzer Type이 출력된다.<br/>&gt; Device : 하위 장치가 존재할 경우<br/>&gt; Alert Buzzer Type : low/medium/high<br/>2-3) IO 장치 제외<br/>3. Disable Device로 설정한 장치가 잠긴다.<br/>&gt; 메뉴 진입은 가능하다. (Master 장치만)<br/>&gt; 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)<br/>&gt; LED는 Red-Magenta 로 2초 간격 전환된다.<br/>&gt; 장치 잠금/해제 로그가 남는다.<br/>&gt; 장치 잠금 해제 후 장치 정상동작 확인(인증)</p></td></tr><tr><td>16</td><td><p>1. Device : Master-Slave(SIO2, DM20) 연결<br/>2. Device &gt; Advanced &gt; Trigger &amp; Action &gt; +Add &gt; Trigger &gt; Event &gt; Device : Master 장치 선택 &gt; Occupancy Limit Violation (Count Full) 선택</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Action Device : Slave(SIO2, DM20포함)<br/>1. Action 선택<br/>1) Output<br/>2) Alert Sound<br/>3) Disable Device</p>\n\n<p>*Alert Sound<br/>&gt; 지원하는 장치만 표시됨</p></td><td><p>1. 설정한 Output이 Slave 장치에서 출력된다.<br/>2. 설정한 Alert Sound Alarm이 Slave 장치에서 출력된다.<br/>2-1) Alert Sound Type이 출력된다.<br/>&gt; Device : 하위 장치가 존재할 경우<br/>&gt; Alert Sound Type : Sound가 목록에 존재<br/>&gt; Play Option : Infinite/Counts 존재<br/>2-2) Alert Buzzer Type이 출력된다.<br/>&gt; Device : 하위 장치가 존재할 경우<br/>&gt; Alert Buzzer Type : low/medium/high<br/>2-3) IO 장치 제외<br/>3. Disable Device로 설정한 장치가 잠긴다.<br/>&gt; 메뉴 진입은 가능하다. (Master 장치만)<br/>&gt; 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)<br/>&gt; LED는 Red-Magenta 로 2초 간격 전환된다.<br/>&gt; 장치 잠금/해제 로그가 남는다.<br/>&gt; 장치 잠금 해제 후 장치 정상동작 확인(인증)</p></td></tr><tr><td>17</td><td><p><span class=\"error\">&#91;Occupancy Limit Zone - Network failure Action: Only Exit Allowed&#93;</span><br/>1. Device : Master만 연결<br/>2. Device &gt; Advanced &gt; Trigger &amp; Action &gt; +Add &gt; Trigger &gt; Event &gt; Device : Master 장치 선택 &gt; Occupancy Limit Violation (Network Failure) 선택</p>\n\n<p>Network Disconnected : 장치에서 Lan선 제거</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Action Device : Master<br/>1. Action 선택<br/>1) Output<br/>2) Alert Sound<br/>3) Disable Device</p>\n\n<p>*Alert Sound<br/>&gt; 지원하는 장치만 표시됨</p></td><td><p>1. 설정한 Output이 Master 장치에서 출력된다.<br/>2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.<br/>2-1) Alert Sound Type이 출력된다.<br/>&gt; Device : 하위 장치가 존재할 경우<br/>&gt; Alert Sound Type : Sound가 목록에 존재<br/>&gt; Play Option : Infinite/Counts 존재<br/>2-2) Alert Buzzer Type이 출력된다.<br/>&gt; Device : 하위 장치가 존재할 경우<br/>&gt; Alert Buzzer Type : low/medium/high<br/>2-3) IO 장치 제외<br/>3. Disable Device로 설정한 장치가 잠긴다.<br/>&gt; 메뉴 진입은 가능하다. (Master 장치만)<br/>&gt; 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)<br/>&gt; LED는 Red-Magenta 로 2초 간격 전환된다.<br/>&gt; 장치 잠금/해제 로그가 남는다.<br/>&gt; 장치 잠금 해제 후 장치 정상동작 확인(인증)</p></td></tr><tr><td>18</td><td><p>1. Device : Master-Slave(SIO2, DM20) 연결<br/>2. Device &gt; Advanced &gt; Trigger &amp; Action &gt; +Add &gt; Trigger &gt; Event &gt; Device : Master 장치 선택 &gt; Occupancy Limit Violation (Network Failure) 선택</p>\n\n<p>Network Disconnected : 장치에서 Lan선 제거</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Action Device : Slave(SIO2, DM20포함)<br/>1. Action 선택<br/>1) Output<br/>2) Alert Sound<br/>3) Disable Device</p>\n\n<p>*Alert Sound<br/>&gt; 지원하는 장치만 표시됨</p></td><td><p>1. 설정한 Output이 Slave 장치에서 출력된다.<br/>2. 설정한 Alert Sound Alarm이 Slave 장치에서 출력된다.<br/>2-1) Alert Sound Type이 출력된다.<br/>&gt; Device : 하위 장치가 존재할 경우<br/>&gt; Alert Sound Type : Sound가 목록에 존재<br/>&gt; Play Option : Infinite/Counts 존재<br/>2-2) Alert Buzzer Type이 출력된다.<br/>&gt; Device : 하위 장치가 존재할 경우<br/>&gt; Alert Buzzer Type : low/medium/high<br/>2-3) IO 장치 제외<br/>3. Disable Device로 설정한 장치가 잠긴다.<br/>&gt; 메뉴 진입은 가능하다. (Master 장치만)<br/>&gt; 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)<br/>&gt; LED는 Red-Magenta 로 2초 간격 전환된다.<br/>&gt; 장치 잠금/해제 로그가 남는다.<br/>&gt; 장치 잠금 해제 후 장치 정상동작 확인(인증)</p></td></tr><tr><td>19</td><td><p>1. Device: Master-Slave 연결<br/>2. Device &gt; Advanced &gt; Trigger &amp; Action &gt; +Add &gt; Trigger &gt; Event &gt; Device : Master 장치 선택 &gt; 1:N Authentication succeeded(Face) 선택<br/>3. Action&gt; Disable Device&gt; Master / Slave<br/>4. 얼굴인증성공 후 Lock 유무 확인 및 IR LED 동작확인</p></td><td><p>Master - Slave 연결<br/>&gt; Face 지원 장치<br/>=&gt; BS3, F2, W3</p></td><td><p>1. Device Lock으로 동작한다.<br/>2. Locked 된 상태에서는 IR LED가 점멸되지 않아야 한다.</p>\n\n<p>※ Master/Slave 모두 동작확인</p></td></tr><tr><td>20</td><td><p>1. Device: Master-Slave 연결<br/> 2. Device &gt; Advanced &gt; Trigger &amp; Action &gt; +Add &gt; Trigger &gt; Event &gt; Device : Master 장치 선택 &gt; Authentication failed(Timeout) 선택<br/> 3. Action&gt; Disable Device&gt; Master / Slave<br/> 4. 얼굴인증실패 후 Lock 유무 확인 및 IR LED 동작확인</p></td><td><p>Master - Slave 연결<br/>&gt; Face 지원 장치<br/>=&gt; BS3, F2, W3</p></td><td><p>1. Device Lock으로 동작한다.<br/>2. Locked 된 상태에서는 IR LED가 점멸되지 않아야 한다.</p>\n\n<p>※ Master/Slave 모두 동작확인</p></td></tr><tr><td>21</td><td><p><span class=\"error\">&#91;Camera QR&#93;</span><br/>1. Device : Master/Default만 연결<br/>2. Device &gt; Advanced &gt; Trigger &amp; Action &gt; +Add &gt; Trigger &gt; Event &gt; Device : Master/Default 장치 선택 &gt; Event 선택 <br/>3. Action &gt; Disable Device<br/>4. Trigger 로 설정한 Evnet 발생</p></td><td><p>Action Device : Master/Default(Camera QR 지원 장치)</p>\n\n<p>&gt; QR/Barcode : Enabled<br/>&gt; Camera 활성화/비활성화</p></td><td><p>1. Disable Device로 설정한 장치가 잠긴다.<br/>&gt; 메뉴 진입은 가능하다. (Master 장치만)<br/>&gt; motion을 띄워 Camera를 활성화 시킨 상태에서 Disable 시 Camera QR비활성화<br/>2. 모든 인증모드에서 인증이 불가하다.<br/>(ID / Card / Fnger / Face/QR 인증 불가)<br/>&gt; Camera QR 화면 미출력<br/>3. 장치 잠금 해제 후 장치 정상동작 확인(인증)<br/>4. 장치 잠금/해제 로그가 남는다.</p></td></tr><tr><td>22</td><td><p><span class=\"error\">&#91;Camera QR&#93;</span></p>\n\n<p>1. Device : Master-Slave(SIO2, DM20) 연결<br/>2. Device &gt; Advanced &gt; Trigger &amp; Action &gt; +Add &gt; Trigger &gt; Event &gt; Device : Master 장치 선택 &gt; Event 선택 <br/>3.  Action &gt; Disable Device<br/>4. Trigger 로 설정한 Evnet 발생</p></td><td><p>Action Device : Slave(Camera QR 지원 장치)</p>\n\n<p>&gt; QR/Barcode : Enabled<br/>&gt; Camera 활성화/비활성화</p></td><td><p>1. Disable Device로 설정한 장치가 잠긴다.<br/>&gt; motion을 띄워 Camera를 활성화 시킨 상태에서 Disable 시 Camera QR 비활성화<br/>2. 모든 인증모드에서 인증이 불가하다.<br/>(ID / Card / Fnger / Face/QR 인증 불가)<br/>&gt; Camera QR 화면 미출력<br/>3. 장치 잠금 해제 후 장치 정상동작 확인(인증)<br/>4. 장치 잠금/해제 로그가 남는다.</p></td></tr><tr><td>23</td><td><p><span class=\"error\">&#91;Camera QR&#93;</span></p>\n\n<p>1. Device : Master-Slave(SIO2, DM20) 연결<br/>2. Device &gt; Advanced &gt; Trigger &amp; Action &gt; +Add &gt; Trigger &gt; Event &gt; Device : Slave 장치 선택 &gt; Event 선택 <br/>3.  Action &gt; Disable Device<br/>4. Trigger 로 설정한 Evnet 발생</p></td><td><p>Action Device : Master(Camera QR 지원 장치)</p>\n\n<p>&gt; QR/Barcode : Enabled<br/>&gt; Camera 활성화/비활성화</p></td><td><p>1. Disable Device로 설정한 장치가 잠긴다.<br/>&gt; 메뉴 진입은 가능하다. (Master 장치만)<br/>&gt; motion을 띄워 Camera를 활성화 시킨 상태에서 Disable 시 Camera QR 비활성화<br/>2. 모든 인증모드에서 인증이 불가하다.<br/>(ID / Card / Fnger / Face/QR 인증 불가)<br/>&gt; Camera QR 화면 미출력<br/>3. 장치 잠금 해제 후 장치 정상동작 확인(인증)<br/>4. 장치 잠금/해제 로그가 남는다.</p></td></tr><tr><td>24</td><td><p>1. Device &gt; Advanced &gt; Trigger &amp; Action &gt; +Add <br/>2. Trigger: Event&gt; 장치 및 BioStar Disconnected 선택<br/>3. Action: Disable Device 선택 후 저장<br/>4. 장치리스트에서 마우스 우클릭&gt; 재연결<br/>5. Disable로 동작유무 확인<br/>6. 장치 Reboot 후 Disable 상태 유지 및 서버와 재연결 유무 확인</p></td><td></td><td><p>1. 서버와 연결이 해제되면서 장치가 Disable 상태로 동작한다.<br/>2. 장치 Reboot 후 Disable 상태 유지 및 서버와 통신이 정상적으로 이루어진다.<br/>3. 이벤트 로그 확인시 BioStar2 연결해제 &amp; 장치잠금 로그가 남는다.<br/>=&gt; 반복적으로 로그가 남지 않는다.</p></td></tr><tr><td>25</td><td><p>1. Device &gt; Advanced &gt; Trigger &amp; Action &gt; +Add <br/>2. Trigger: Event&gt; 장치 및 BioStar Disconnected 선택<br/>3. Action: Disable Device 선택 후 저장<br/>4. BioStar2 Setting&gt; 서버 Stop<br/>5. Disable로 동작유무 확인<br/>6. BioStar2 Setting&gt; 서버 Start<br/>7. 장치 Reboot 후 Disable 상태 유지 및 서버와 재연결 유무 확인</p></td><td></td><td><p>1. 서버와 연결이 해제되면서 장치가 Disable 상태로 동작한다.<br/>2. 장치 Reboot 후 Disable 상태 유지 및 서버와 통신이 정상적으로 이루어진다.<br/>3. 이벤트 로그 확인시 BioStar2 연결해제 &amp; 장치잠금 로그가 남는다.<br/>=&gt; 반복적으로 로그가 남지 않는다.</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [
+      "COMMONR-49"
     ],
-    [
-      3,
-      "1. Device : Master만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > BioStar Disconnected 선택\n* BioStar Disconnected : Device List에서 해당 Device 선택 후 Reconnect 버튼 1회 클릭",
-      "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
-      "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n"
-    ],
-    [
-      4,
-      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > BioStar Disconnected 선택\n* BioStar Disconnected : Device List에서 해당 Device 선택 후 Reconnect 버튼 1회 클릭",
-      "[BioStar]\nAction Device : Slave(SIO2, DM20포함)\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
-      "1. 설정한 Output이 Slave 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Slave 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)"
-    ],
-    [
-      5,
-      "1. Device : Master만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Network Disconnected 선택\n* Network Disconnected : 장치에서 Lan선 제거",
-      "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied\n\n※ XPASS와 XPS2의 경우 Link Disconnect 지원 안됨.",
-      "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)"
-    ],
-    [
-      6,
-      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Network Disconnected 선택\n* Network Disconnected : 장치에서 Lan선 제거",
-      "[BioStar]\nAction Device : Slave(SIO2, DM20포함)\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
-      "1. 설정한 Output이 Slave 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Slave 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)"
-    ],
-    [
-      7,
-      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Slave 장치 선택 > Tamper On 선택\n\n* Tamper on : 장치에서 Tamper 제거",
-      "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
-      "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)"
-    ],
-    [
-      8,
-      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Slave 장치 선택 > Tamper On 선택\n\n* Tamper on : 장치에서 Tamper 제거",
-      "[BioStar]\nAction Device : Slave(SIO2, DM20포함)\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
-      "1. 설정한 Output이 Slave 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Slave 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)"
-    ],
-    [
-      9,
-      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Slave 장치 선택 > RS485 Disconnected 선택\n\n* RS485 Disconnected : Slave 장치의 RS485 4 Pin 케이블을 분리시킨다.",
-      "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
-      "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)"
-    ],
-    [
-      10,
-      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Slave 장치 선택 > Temper on, RS-485 disconnected, BioStar disconnected, Network disconnected 선택",
-      "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n\nAdd Long Signal 설정 값(예)\n  - Delay : 100 / Count : 1000 / On : 1 / Off : 0\n",
-      "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)"
-    ],
-    [
-      11,
-      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master/Slave 장치 선택 > 1:N / 1:1 Duress  선택\n\n-. 1:1 인증 관련 : \n> 1:1 인증 성공(ID+PIN)/(ID+지문)/(ID+지문+PIN)/(ID+얼굴)/(ID+얼굴+PIN)/(카드)/(카드+PIN)/(카드+지문)/(카드+지문+PIN)/(카드+얼굴)/(카드+얼굴+PIN)/(액세스온카드)/(액세스온카드+PIN)/(액세스온카드+지문)/(액세스온카드+지문+PIN)(모바일카드)/(모바일카드 + 지문)/(모바일카드+지문+PIN)/(모바일카드+얼굴)/(모바일카드+얼굴+PIN)/(모바일카드+얼굴+지문)/(모바일카드+지문+얼굴) \n> 1:1 협박 지문 인증 (카드+지문),(카드+지문+PIN),(엑세스온카드+지문), (엑세스온카드+지문+PIN) \n\n-. 1:N 인증 관련 : \n> 1:N 인증 성공(지문)/(지문+PIN)/(얼굴)/(얼굴+PIN),\n> 1:N 협박 지문 인증 (지문)/(지문+PIN)/(얼굴)/(얼굴+PIN)\n> 이중 인증 성공",
-      "[BioStar]\nAction Device : Master/Slave\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n\nAdd Long Signal 설정 값(예)\n  - Delay : 100 / Count : 1000 / On : 1 / Off : 0\n",
-      "1. 설정한 Output이 Master/Slave 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master/Slave 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)"
-    ],
-    [
-      12,
-      "1. Device : Master-Slave(SIO2, DM20)\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Tamper On 선택\n\n* Tamper on : 장치에서 Tamper 제거",
-      "[BioStar]\nAction Device : Master, Slave(SIO2, DM20)\n1. Action 선택\n1) Output",
-      "1. Trigger&Action에서의 Action은 최대 128 개까지 설정된다.\n> Event 중 Door/Lift/Zone에 해당하는 Action은 Trigger에서 설정을 해도 동작 안함\n2. 설정한 Action이 동시에 발생되어야 한다.\n> 최소 5개 이상 확인"
-    ],
-    [
-      13,
-      "1. Master: Disable 상태\n2. Master 전원재인가\n3. 부팅여부 확인",
-      "",
-      "1. 부팅이 정상적으로 이루어져야 한다.\n> 장치 타입별 확인 필수"
-    ],
-    [
-      14,
-      "1. Slave: Disable 상태\n2. Slave 전원재인가\n3. 부팅여부 확인",
-      "",
-      "1. 부팅이 정상적으로 이루어져야 한다.\n> 장치 타입별 확인 필수"
-    ],
-    [
-      15,
-      "1. Device : Master만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Occupancy Limit Violation (Count Full) 선택",
-      "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨",
-      "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n> Device : 하위 장치가 존재할 경우\n> Alert Sound Type : Sound가 목록에 존재\n> Play Option : Infinite/Counts 존재\n2-2) Alert Buzzer Type이 출력된다.\n> Device : 하위 장치가 존재할 경우\n> Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)"
-    ],
-    [
-      16,
-      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Occupancy Limit Violation (Count Full) 선택",
-      "[BioStar]\nAction Device : Slave(SIO2, DM20포함)\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨",
-      "1. 설정한 Output이 Slave 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Slave 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n> Device : 하위 장치가 존재할 경우\n> Alert Sound Type : Sound가 목록에 존재\n> Play Option : Infinite/Counts 존재\n2-2) Alert Buzzer Type이 출력된다.\n> Device : 하위 장치가 존재할 경우\n> Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)"
-    ],
-    [
-      17,
-      "[Occupancy Limit Zone - Network failure Action: Only Exit Allowed]\n1. Device : Master만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Occupancy Limit Violation (Network Failure) 선택\n\nNetwork Disconnected : 장치에서 Lan선 제거",
-      "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨",
-      "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n> Device : 하위 장치가 존재할 경우\n> Alert Sound Type : Sound가 목록에 존재\n> Play Option : Infinite/Counts 존재\n2-2) Alert Buzzer Type이 출력된다.\n> Device : 하위 장치가 존재할 경우\n> Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)"
-    ],
-    [
-      18,
-      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Occupancy Limit Violation (Network Failure) 선택\n\nNetwork Disconnected : 장치에서 Lan선 제거",
-      "[BioStar]\nAction Device : Slave(SIO2, DM20포함)\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨",
-      "1. 설정한 Output이 Slave 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Slave 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n> Device : 하위 장치가 존재할 경우\n> Alert Sound Type : Sound가 목록에 존재\n> Play Option : Infinite/Counts 존재\n2-2) Alert Buzzer Type이 출력된다.\n> Device : 하위 장치가 존재할 경우\n> Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)"
-    ],
-    [
-      19,
-      "1. Device: Master-Slave 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > 1:N Authentication succeeded(Face) 선택\n3. Action> Disable Device> Master / Slave\n4. 얼굴인증성공 후 Lock 유무 확인 및 IR LED 동작확인",
-      "Master - Slave 연결\n> Face 지원 장치\n=> BS3, F2, W3",
-      "1. Device Lock으로 동작한다.\n2. Locked 된 상태에서는 IR LED가 점멸되지 않아야 한다.\n\n※ Master/Slave 모두 동작확인"
-    ],
-    [
-      20,
-      "1. Device: Master-Slave 연결\n 2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Authentication failed(Timeout) 선택\n 3. Action> Disable Device> Master / Slave\n 4. 얼굴인증실패 후 Lock 유무 확인 및 IR LED 동작확인",
-      "Master - Slave 연결\n> Face 지원 장치\n=> BS3, F2, W3",
-      "1. Device Lock으로 동작한다.\n2. Locked 된 상태에서는 IR LED가 점멸되지 않아야 한다.\n\n※ Master/Slave 모두 동작확인"
-    ],
-    [
-      21,
-      "[Camera QR]\n1. Device : Master/Default만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master/Default 장치 선택 > Event 선택 \n3. Action > Disable Device\n4. Trigger 로 설정한 Evnet 발생",
-      "Action Device : Master/Default(Camera QR 지원 장치)\n\n> QR/Barcode : Enabled\n> Camera 활성화/비활성화",
-      "1. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> motion을 띄워 Camera를 활성화 시킨 상태에서 Disable 시 Camera QR비활성화\n2. 모든 인증모드에서 인증이 불가하다.\n(ID / Card / Fnger / Face/QR 인증 불가)\n> Camera QR 화면 미출력\n3. 장치 잠금 해제 후 장치 정상동작 확인(인증)\n4. 장치 잠금/해제 로그가 남는다."
-    ],
-    [
-      22,
-      "[Camera QR]\n\t\n1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Event 선택 \n3.  Action > Disable Device\n4. Trigger 로 설정한 Evnet 발생",
-      "Action Device : Slave(Camera QR 지원 장치)\n\n> QR/Barcode : Enabled\n> Camera 활성화/비활성화",
-      "1. Disable Device로 설정한 장치가 잠긴다.\n> motion을 띄워 Camera를 활성화 시킨 상태에서 Disable 시 Camera QR 비활성화\n2. 모든 인증모드에서 인증이 불가하다.\n(ID / Card / Fnger / Face/QR 인증 불가)\n> Camera QR 화면 미출력\n3. 장치 잠금 해제 후 장치 정상동작 확인(인증)\n4. 장치 잠금/해제 로그가 남는다."
-    ],
-    [
-      23,
-      "[Camera QR]\n\t\n1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Slave 장치 선택 > Event 선택 \n3.  Action > Disable Device\n4. Trigger 로 설정한 Evnet 발생",
-      "Action Device : Master(Camera QR 지원 장치)\n\n> QR/Barcode : Enabled\n> Camera 활성화/비활성화",
-      "1. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> motion을 띄워 Camera를 활성화 시킨 상태에서 Disable 시 Camera QR 비활성화\n2. 모든 인증모드에서 인증이 불가하다.\n(ID / Card / Fnger / Face/QR 인증 불가)\n> Camera QR 화면 미출력\n3. 장치 잠금 해제 후 장치 정상동작 확인(인증)\n4. 장치 잠금/해제 로그가 남는다."
-    ],
-    [
-      24,
-      "1. Device > Advanced > Trigger & Action > +Add \n2. Trigger: Event> 장치 및 BioStar Disconnected 선택\n3. Action: Disable Device 선택 후 저장\n4. 장치리스트에서 마우스 우클릭> 재연결\n5. Disable로 동작유무 확인\n6. 장치 Reboot 후 Disable 상태 유지 및 서버와 재연결 유무 확인",
-      "",
-      "1. 서버와 연결이 해제되면서 장치가 Disable 상태로 동작한다.\n2. 장치 Reboot 후 Disable 상태 유지 및 서버와 통신이 정상적으로 이루어진다.\n3. 이벤트 로그 확인시 BioStar2 연결해제 & 장치잠금 로그가 남는다.\n=> 반복적으로 로그가 남지 않는다."
-    ],
-    [
-      25,
-      "1. Device > Advanced > Trigger & Action > +Add \n2. Trigger: Event> 장치 및 BioStar Disconnected 선택\n3. Action: Disable Device 선택 후 저장\n4. BioStar2 Setting> 서버 Stop\n5. Disable로 동작유무 확인\n6. BioStar2 Setting> 서버 Start\n7. 장치 Reboot 후 Disable 상태 유지 및 서버와 재연결 유무 확인",
-      "",
-      "1. 서버와 연결이 해제되면서 장치가 Disable 상태로 동작한다.\n2. 장치 Reboot 후 Disable 상태 유지 및 서버와 통신이 정상적으로 이루어진다.\n3. 이벤트 로그 확인시 BioStar2 연결해제 & 장치잠금 로그가 남는다.\n=> 반복적으로 로그가 남지 않는다."
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-226",
-    "description": "",
-    "test_step": [
-      "1. Device : Master만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Tamper On 선택\n\n* Tamper on : 장치에서 Tamper 제거",
-      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Tamper On 선택\n\n* Tamper on : 장치에서 Tamper 제거",
-      "1. Device : Master만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > BioStar Disconnected 선택\n* BioStar Disconnected : Device List에서 해당 Device 선택 후 Reconnect 버튼 1회 클릭",
-      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > BioStar Disconnected 선택\n* BioStar Disconnected : Device List에서 해당 Device 선택 후 Reconnect 버튼 1회 클릭",
-      "1. Device : Master만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Network Disconnected 선택\n* Network Disconnected : 장치에서 Lan선 제거",
-      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Network Disconnected 선택\n* Network Disconnected : 장치에서 Lan선 제거",
-      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Slave 장치 선택 > Tamper On 선택\n\n* Tamper on : 장치에서 Tamper 제거",
-      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Slave 장치 선택 > Tamper On 선택\n\n* Tamper on : 장치에서 Tamper 제거",
-      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Slave 장치 선택 > RS485 Disconnected 선택\n\n* RS485 Disconnected : Slave 장치의 RS485 4 Pin 케이블을 분리시킨다.",
-      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Slave 장치 선택 > Temper on, RS-485 disconnected, BioStar disconnected, Network disconnected 선택",
-      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master/Slave 장치 선택 > 1:N / 1:1 Duress  선택\n\n-. 1:1 인증 관련 : \n> 1:1 인증 성공(ID+PIN)/(ID+지문)/(ID+지문+PIN)/(ID+얼굴)/(ID+얼굴+PIN)/(카드)/(카드+PIN)/(카드+지문)/(카드+지문+PIN)/(카드+얼굴)/(카드+얼굴+PIN)/(액세스온카드)/(액세스온카드+PIN)/(액세스온카드+지문)/(액세스온카드+지문+PIN)(모바일카드)/(모바일카드 + 지문)/(모바일카드+지문+PIN)/(모바일카드+얼굴)/(모바일카드+얼굴+PIN)/(모바일카드+얼굴+지문)/(모바일카드+지문+얼굴) \n> 1:1 협박 지문 인증 (카드+지문),(카드+지문+PIN),(엑세스온카드+지문), (엑세스온카드+지문+PIN) \n\n-. 1:N 인증 관련 : \n> 1:N 인증 성공(지문)/(지문+PIN)/(얼굴)/(얼굴+PIN),\n> 1:N 협박 지문 인증 (지문)/(지문+PIN)/(얼굴)/(얼굴+PIN)\n> 이중 인증 성공",
-      "1. Device : Master-Slave(SIO2, DM20)\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Tamper On 선택\n\n* Tamper on : 장치에서 Tamper 제거",
-      "1. Master: Disable 상태\n2. Master 전원재인가\n3. 부팅여부 확인",
-      "1. Slave: Disable 상태\n2. Slave 전원재인가\n3. 부팅여부 확인",
-      "1. Device : Master만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Occupancy Limit Violation (Count Full) 선택",
-      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Occupancy Limit Violation (Count Full) 선택",
-      "[Occupancy Limit Zone - Network failure Action: Only Exit Allowed]\n1. Device : Master만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Occupancy Limit Violation (Network Failure) 선택\n\nNetwork Disconnected : 장치에서 Lan선 제거",
-      "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Occupancy Limit Violation (Network Failure) 선택\n\nNetwork Disconnected : 장치에서 Lan선 제거",
-      "1. Device: Master-Slave 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > 1:N Authentication succeeded(Face) 선택\n3. Action> Disable Device> Master / Slave\n4. 얼굴인증성공 후 Lock 유무 확인 및 IR LED 동작확인",
-      "1. Device: Master-Slave 연결\n 2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Authentication failed(Timeout) 선택\n 3. Action> Disable Device> Master / Slave\n 4. 얼굴인증실패 후 Lock 유무 확인 및 IR LED 동작확인",
-      "[Camera QR]\n1. Device : Master/Default만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master/Default 장치 선택 > Event 선택 \n3. Action > Disable Device\n4. Trigger 로 설정한 Evnet 발생",
-      "[Camera QR]\n\t\n1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Event 선택 \n3.  Action > Disable Device\n4. Trigger 로 설정한 Evnet 발생",
-      "[Camera QR]\n\t\n1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Slave 장치 선택 > Event 선택 \n3.  Action > Disable Device\n4. Trigger 로 설정한 Evnet 발생",
-      "1. Device > Advanced > Trigger & Action > +Add \n2. Trigger: Event> 장치 및 BioStar Disconnected 선택\n3. Action: Disable Device 선택 후 저장\n4. 장치리스트에서 마우스 우클릭> 재연결\n5. Disable로 동작유무 확인\n6. 장치 Reboot 후 Disable 상태 유지 및 서버와 재연결 유무 확인",
-      "1. Device > Advanced > Trigger & Action > +Add \n2. Trigger: Event> 장치 및 BioStar Disconnected 선택\n3. Action: Disable Device 선택 후 저장\n4. BioStar2 Setting> 서버 Stop\n5. Disable로 동작유무 확인\n6. BioStar2 Setting> 서버 Start\n7. 장치 Reboot 후 Disable 상태 유지 및 서버와 재연결 유무 확인"
-    ],
-    "data": [
-      "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
-      "[BioStar]\nAction Device : Slave(SIO2, DM20포함)\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
-      "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
-      "[BioStar]\nAction Device : Slave(SIO2, DM20포함)\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
-      "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied\n\n※ XPASS와 XPS2의 경우 Link Disconnect 지원 안됨.",
-      "[BioStar]\nAction Device : Slave(SIO2, DM20포함)\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
-      "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
-      "[BioStar]\nAction Device : Slave(SIO2, DM20포함)\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
-      "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
-      "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n\nAdd Long Signal 설정 값(예)\n  - Delay : 100 / Count : 1000 / On : 1 / Off : 0\n",
-      "[BioStar]\nAction Device : Master/Slave\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n\nAdd Long Signal 설정 값(예)\n  - Delay : 100 / Count : 1000 / On : 1 / Off : 0\n",
-      "[BioStar]\nAction Device : Master, Slave(SIO2, DM20)\n1. Action 선택\n1) Output",
-      "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨",
-      "[BioStar]\nAction Device : Slave(SIO2, DM20포함)\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨",
-      "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨",
-      "[BioStar]\nAction Device : Slave(SIO2, DM20포함)\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨",
-      "Master - Slave 연결\n> Face 지원 장치\n=> BS3, F2, W3",
-      "Master - Slave 연결\n> Face 지원 장치\n=> BS3, F2, W3",
-      "Action Device : Master/Default(Camera QR 지원 장치)\n\n> QR/Barcode : Enabled\n> Camera 활성화/비활성화",
-      "Action Device : Slave(Camera QR 지원 장치)\n\n> QR/Barcode : Enabled\n> Camera 활성화/비활성화",
-      "Action Device : Master(Camera QR 지원 장치)\n\n> QR/Barcode : Enabled\n> Camera 활성화/비활성화"
-    ],
-    "expected_result": [
-      "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n\n*사양 변경으로 인한 삭제 항목\n1. Signal Alarm에 대해 Release All Alarm이 된다.\n2. 장치가 Reboot 된다.",
-      "1. 설정한 Output이 Slave 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Slave 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n\n*사양 변경으로 인한 삭제 항목\n1. Signal Alarm에 대해 Release All Alarm이 된다.\n2. 장치가 Reboot 된다.",
-      "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n",
-      "1. 설정한 Output이 Slave 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Slave 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)",
-      "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)",
-      "1. 설정한 Output이 Slave 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Slave 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)",
-      "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)",
-      "1. 설정한 Output이 Slave 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Slave 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)",
-      "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)",
-      "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)",
-      "1. 설정한 Output이 Master/Slave 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master/Slave 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)",
-      "1. Trigger&Action에서의 Action은 최대 128 개까지 설정된다.\n> Event 중 Door/Lift/Zone에 해당하는 Action은 Trigger에서 설정을 해도 동작 안함\n2. 설정한 Action이 동시에 발생되어야 한다.\n> 최소 5개 이상 확인",
-      "1. 부팅이 정상적으로 이루어져야 한다.\n> 장치 타입별 확인 필수",
-      "1. 부팅이 정상적으로 이루어져야 한다.\n> 장치 타입별 확인 필수",
-      "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n> Device : 하위 장치가 존재할 경우\n> Alert Sound Type : Sound가 목록에 존재\n> Play Option : Infinite/Counts 존재\n2-2) Alert Buzzer Type이 출력된다.\n> Device : 하위 장치가 존재할 경우\n> Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)",
-      "1. 설정한 Output이 Slave 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Slave 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n> Device : 하위 장치가 존재할 경우\n> Alert Sound Type : Sound가 목록에 존재\n> Play Option : Infinite/Counts 존재\n2-2) Alert Buzzer Type이 출력된다.\n> Device : 하위 장치가 존재할 경우\n> Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)",
-      "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n> Device : 하위 장치가 존재할 경우\n> Alert Sound Type : Sound가 목록에 존재\n> Play Option : Infinite/Counts 존재\n2-2) Alert Buzzer Type이 출력된다.\n> Device : 하위 장치가 존재할 경우\n> Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)",
-      "1. 설정한 Output이 Slave 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Slave 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n> Device : 하위 장치가 존재할 경우\n> Alert Sound Type : Sound가 목록에 존재\n> Play Option : Infinite/Counts 존재\n2-2) Alert Buzzer Type이 출력된다.\n> Device : 하위 장치가 존재할 경우\n> Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)",
-      "1. Device Lock으로 동작한다.\n2. Locked 된 상태에서는 IR LED가 점멸되지 않아야 한다.\n\n※ Master/Slave 모두 동작확인",
-      "1. Device Lock으로 동작한다.\n2. Locked 된 상태에서는 IR LED가 점멸되지 않아야 한다.\n\n※ Master/Slave 모두 동작확인",
-      "1. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> motion을 띄워 Camera를 활성화 시킨 상태에서 Disable 시 Camera QR비활성화\n2. 모든 인증모드에서 인증이 불가하다.\n(ID / Card / Fnger / Face/QR 인증 불가)\n> Camera QR 화면 미출력\n3. 장치 잠금 해제 후 장치 정상동작 확인(인증)\n4. 장치 잠금/해제 로그가 남는다.",
-      "1. Disable Device로 설정한 장치가 잠긴다.\n> motion을 띄워 Camera를 활성화 시킨 상태에서 Disable 시 Camera QR 비활성화\n2. 모든 인증모드에서 인증이 불가하다.\n(ID / Card / Fnger / Face/QR 인증 불가)\n> Camera QR 화면 미출력\n3. 장치 잠금 해제 후 장치 정상동작 확인(인증)\n4. 장치 잠금/해제 로그가 남는다.",
-      "1. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> motion을 띄워 Camera를 활성화 시킨 상태에서 Disable 시 Camera QR 비활성화\n2. 모든 인증모드에서 인증이 불가하다.\n(ID / Card / Fnger / Face/QR 인증 불가)\n> Camera QR 화면 미출력\n3. 장치 잠금 해제 후 장치 정상동작 확인(인증)\n4. 장치 잠금/해제 로그가 남는다.",
-      "1. 서버와 연결이 해제되면서 장치가 Disable 상태로 동작한다.\n2. 장치 Reboot 후 Disable 상태 유지 및 서버와 통신이 정상적으로 이루어진다.\n3. 이벤트 로그 확인시 BioStar2 연결해제 & 장치잠금 로그가 남는다.\n=> 반복적으로 로그가 남지 않는다.",
-      "1. 서버와 연결이 해제되면서 장치가 Disable 상태로 동작한다.\n2. 장치 Reboot 후 Disable 상태 유지 및 서버와 통신이 정상적으로 이루어진다.\n3. 이벤트 로그 확인시 BioStar2 연결해제 & 장치잠금 로그가 남는다.\n=> 반복적으로 로그가 남지 않는다."
-    ]
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 24311,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 34713,
+              "latestFinalId": 34713
+            },
+            {
+              "environment": "ES1",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29848,
+              "latestFinalId": 29848
+            },
+            {
+              "environment": "BioStarV2.9.6.30",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29848,
+              "latestFinalId": 29848
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180329",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10394,
+              "latestFinalId": 10394
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_190805_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15252,
+              "latestFinalId": 15252
+            }
+          ]
+        },
+        {
+          "group": "FL_V1.0_190515(PS)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 14165,
+              "latestFinalId": 14165
+            }
+          ]
+        },
+        {
+          "group": "V1.7.1_181204(Hotfix)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12720,
+              "latestFinalId": 12720
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_181210_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12844,
+              "latestFinalId": 12844
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0 170331",
+          "statusResults": [
+            {
+              "latest": 1,
+              "latestFinal": 1,
+              "latestId": 8658,
+              "latestFinalId": 8658
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_181119_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12965,
+              "latestFinalId": 12965
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_190809_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15613,
+              "latestFinalId": 15613
+            }
+          ]
+        },
+        {
+          "group": "V1.8.0_190806_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15375,
+              "latestFinalId": 15375
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180322",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10214,
+              "latestFinalId": 10214
+            }
+          ]
+        },
+        {
+          "group": "V1.7.0_190806_Interaction 7차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15135,
+              "latestFinalId": 15135
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_190806_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15508,
+              "latestFinalId": 15508
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_20200601_Interaction 12차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 17240,
+              "latestFinalId": 17240
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "Triggered & Action - Event",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 4991,
+          "index": 1,
+          "step": "1. Device : Master만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Tamper On 선택\n\n* Tamper on : 장치에서 Tamper 제거",
+          "data": "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
+          "result": "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n\n*사양 변경으로 인한 삭제 항목\n1. Signal Alarm에 대해 Release All Alarm이 된다.\n2. 장치가 Reboot 된다.",
+          "attachments": []
+        },
+        {
+          "id": 4992,
+          "index": 2,
+          "step": "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Tamper On 선택\n\n* Tamper on : 장치에서 Tamper 제거",
+          "data": "[BioStar]\nAction Device : Slave(SIO2, DM20포함)\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
+          "result": "1. 설정한 Output이 Slave 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Slave 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n\n*사양 변경으로 인한 삭제 항목\n1. Signal Alarm에 대해 Release All Alarm이 된다.\n2. 장치가 Reboot 된다.",
+          "attachments": []
+        },
+        {
+          "id": 4993,
+          "index": 3,
+          "step": "1. Device : Master만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > BioStar Disconnected 선택\n* BioStar Disconnected : Device List에서 해당 Device 선택 후 Reconnect 버튼 1회 클릭",
+          "data": "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
+          "result": "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n",
+          "attachments": []
+        },
+        {
+          "id": 4995,
+          "index": 4,
+          "step": "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > BioStar Disconnected 선택\n* BioStar Disconnected : Device List에서 해당 Device 선택 후 Reconnect 버튼 1회 클릭",
+          "data": "[BioStar]\nAction Device : Slave(SIO2, DM20포함)\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
+          "result": "1. 설정한 Output이 Slave 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Slave 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)",
+          "attachments": []
+        },
+        {
+          "id": 4994,
+          "index": 5,
+          "step": "1. Device : Master만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Network Disconnected 선택\n* Network Disconnected : 장치에서 Lan선 제거",
+          "data": "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied\n\n※ XPASS와 XPS2의 경우 Link Disconnect 지원 안됨.",
+          "result": "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)",
+          "attachments": []
+        },
+        {
+          "id": 4996,
+          "index": 6,
+          "step": "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Network Disconnected 선택\n* Network Disconnected : 장치에서 Lan선 제거",
+          "data": "[BioStar]\nAction Device : Slave(SIO2, DM20포함)\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
+          "result": "1. 설정한 Output이 Slave 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Slave 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)",
+          "attachments": []
+        },
+        {
+          "id": 4997,
+          "index": 7,
+          "step": "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Slave 장치 선택 > Tamper On 선택\n\n* Tamper on : 장치에서 Tamper 제거",
+          "data": "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
+          "result": "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)",
+          "attachments": []
+        },
+        {
+          "id": 4998,
+          "index": 8,
+          "step": "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Slave 장치 선택 > Tamper On 선택\n\n* Tamper on : 장치에서 Tamper 제거",
+          "data": "[BioStar]\nAction Device : Slave(SIO2, DM20포함)\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
+          "result": "1. 설정한 Output이 Slave 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Slave 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)",
+          "attachments": []
+        },
+        {
+          "id": 4999,
+          "index": 9,
+          "step": "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Slave 장치 선택 > RS485 Disconnected 선택\n\n* RS485 Disconnected : Slave 장치의 RS485 4 Pin 케이블을 분리시킨다.",
+          "data": "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied",
+          "result": "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)",
+          "attachments": []
+        },
+        {
+          "id": 5001,
+          "index": 10,
+          "step": "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Slave 장치 선택 > Temper on, RS-485 disconnected, BioStar disconnected, Network disconnected 선택",
+          "data": "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n\nAdd Long Signal 설정 값(예)\n  - Delay : 100 / Count : 1000 / On : 1 / Off : 0\n",
+          "result": "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)",
+          "attachments": []
+        },
+        {
+          "id": 5007,
+          "index": 11,
+          "step": "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master/Slave 장치 선택 > 1:N / 1:1 Duress  선택\n\n-. 1:1 인증 관련 : \n> 1:1 인증 성공(ID+PIN)/(ID+지문)/(ID+지문+PIN)/(ID+얼굴)/(ID+얼굴+PIN)/(카드)/(카드+PIN)/(카드+지문)/(카드+지문+PIN)/(카드+얼굴)/(카드+얼굴+PIN)/(액세스온카드)/(액세스온카드+PIN)/(액세스온카드+지문)/(액세스온카드+지문+PIN)(모바일카드)/(모바일카드 + 지문)/(모바일카드+지문+PIN)/(모바일카드+얼굴)/(모바일카드+얼굴+PIN)/(모바일카드+얼굴+지문)/(모바일카드+지문+얼굴) \n> 1:1 협박 지문 인증 (카드+지문),(카드+지문+PIN),(엑세스온카드+지문), (엑세스온카드+지문+PIN) \n\n-. 1:N 인증 관련 : \n> 1:N 인증 성공(지문)/(지문+PIN)/(얼굴)/(얼굴+PIN),\n> 1:N 협박 지문 인증 (지문)/(지문+PIN)/(얼굴)/(얼굴+PIN)\n> 이중 인증 성공",
+          "data": "[BioStar]\nAction Device : Master/Slave\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n\nAdd Long Signal 설정 값(예)\n  - Delay : 100 / Count : 1000 / On : 1 / Off : 0\n",
+          "result": "1. 설정한 Output이 Master/Slave 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master/Slave 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)",
+          "attachments": []
+        },
+        {
+          "id": 5000,
+          "index": 12,
+          "step": "1. Device : Master-Slave(SIO2, DM20)\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Tamper On 선택\n\n* Tamper on : 장치에서 Tamper 제거",
+          "data": "[BioStar]\nAction Device : Master, Slave(SIO2, DM20)\n1. Action 선택\n1) Output",
+          "result": "1. Trigger&Action에서의 Action은 최대 128 개까지 설정된다.\n> Event 중 Door/Lift/Zone에 해당하는 Action은 Trigger에서 설정을 해도 동작 안함\n2. 설정한 Action이 동시에 발생되어야 한다.\n> 최소 5개 이상 확인",
+          "attachments": []
+        },
+        {
+          "id": 11024,
+          "index": 13,
+          "step": "1. Master: Disable 상태\n2. Master 전원재인가\n3. 부팅여부 확인",
+          "data": "",
+          "result": "1. 부팅이 정상적으로 이루어져야 한다.\n> 장치 타입별 확인 필수",
+          "attachments": []
+        },
+        {
+          "id": 11025,
+          "index": 14,
+          "step": "1. Slave: Disable 상태\n2. Slave 전원재인가\n3. 부팅여부 확인",
+          "data": "",
+          "result": "1. 부팅이 정상적으로 이루어져야 한다.\n> 장치 타입별 확인 필수",
+          "attachments": []
+        },
+        {
+          "id": 14060,
+          "index": 15,
+          "step": "1. Device : Master만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Occupancy Limit Violation (Count Full) 선택",
+          "data": "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨",
+          "result": "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n> Device : 하위 장치가 존재할 경우\n> Alert Sound Type : Sound가 목록에 존재\n> Play Option : Infinite/Counts 존재\n2-2) Alert Buzzer Type이 출력된다.\n> Device : 하위 장치가 존재할 경우\n> Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)",
+          "attachments": []
+        },
+        {
+          "id": 14061,
+          "index": 16,
+          "step": "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Occupancy Limit Violation (Count Full) 선택",
+          "data": "[BioStar]\nAction Device : Slave(SIO2, DM20포함)\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨",
+          "result": "1. 설정한 Output이 Slave 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Slave 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n> Device : 하위 장치가 존재할 경우\n> Alert Sound Type : Sound가 목록에 존재\n> Play Option : Infinite/Counts 존재\n2-2) Alert Buzzer Type이 출력된다.\n> Device : 하위 장치가 존재할 경우\n> Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)",
+          "attachments": []
+        },
+        {
+          "id": 14062,
+          "index": 17,
+          "step": "[Occupancy Limit Zone - Network failure Action: Only Exit Allowed]\n1. Device : Master만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Occupancy Limit Violation (Network Failure) 선택\n\nNetwork Disconnected : 장치에서 Lan선 제거",
+          "data": "[BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨",
+          "result": "1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n> Device : 하위 장치가 존재할 경우\n> Alert Sound Type : Sound가 목록에 존재\n> Play Option : Infinite/Counts 존재\n2-2) Alert Buzzer Type이 출력된다.\n> Device : 하위 장치가 존재할 경우\n> Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)",
+          "attachments": []
+        },
+        {
+          "id": 14063,
+          "index": 18,
+          "step": "1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Occupancy Limit Violation (Network Failure) 선택\n\nNetwork Disconnected : 장치에서 Lan선 제거",
+          "data": "[BioStar]\nAction Device : Slave(SIO2, DM20포함)\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨",
+          "result": "1. 설정한 Output이 Slave 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Slave 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n> Device : 하위 장치가 존재할 경우\n> Alert Sound Type : Sound가 목록에 존재\n> Play Option : Infinite/Counts 존재\n2-2) Alert Buzzer Type이 출력된다.\n> Device : 하위 장치가 존재할 경우\n> Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)",
+          "attachments": []
+        },
+        {
+          "id": 17205,
+          "index": 19,
+          "step": "1. Device: Master-Slave 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > 1:N Authentication succeeded(Face) 선택\n3. Action> Disable Device> Master / Slave\n4. 얼굴인증성공 후 Lock 유무 확인 및 IR LED 동작확인",
+          "data": "Master - Slave 연결\n> Face 지원 장치\n=> BS3, F2, W3",
+          "result": "1. Device Lock으로 동작한다.\n2. Locked 된 상태에서는 IR LED가 점멸되지 않아야 한다.\n\n※ Master/Slave 모두 동작확인",
+          "attachments": []
+        },
+        {
+          "id": 17206,
+          "index": 20,
+          "step": "1. Device: Master-Slave 연결\n 2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Authentication failed(Timeout) 선택\n 3. Action> Disable Device> Master / Slave\n 4. 얼굴인증실패 후 Lock 유무 확인 및 IR LED 동작확인",
+          "data": "Master - Slave 연결\n> Face 지원 장치\n=> BS3, F2, W3",
+          "result": "1. Device Lock으로 동작한다.\n2. Locked 된 상태에서는 IR LED가 점멸되지 않아야 한다.\n\n※ Master/Slave 모두 동작확인",
+          "attachments": []
+        },
+        {
+          "id": 18007,
+          "index": 21,
+          "step": "[Camera QR]\n1. Device : Master/Default만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master/Default 장치 선택 > Event 선택 \n3. Action > Disable Device\n4. Trigger 로 설정한 Evnet 발생",
+          "data": "Action Device : Master/Default(Camera QR 지원 장치)\n\n> QR/Barcode : Enabled\n> Camera 활성화/비활성화",
+          "result": "1. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> motion을 띄워 Camera를 활성화 시킨 상태에서 Disable 시 Camera QR비활성화\n2. 모든 인증모드에서 인증이 불가하다.\n(ID / Card / Fnger / Face/QR 인증 불가)\n> Camera QR 화면 미출력\n3. 장치 잠금 해제 후 장치 정상동작 확인(인증)\n4. 장치 잠금/해제 로그가 남는다.",
+          "attachments": []
+        },
+        {
+          "id": 18008,
+          "index": 22,
+          "step": "[Camera QR]\n\t\n1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Event 선택 \n3.  Action > Disable Device\n4. Trigger 로 설정한 Evnet 발생",
+          "data": "Action Device : Slave(Camera QR 지원 장치)\n\n> QR/Barcode : Enabled\n> Camera 활성화/비활성화",
+          "result": "1. Disable Device로 설정한 장치가 잠긴다.\n> motion을 띄워 Camera를 활성화 시킨 상태에서 Disable 시 Camera QR 비활성화\n2. 모든 인증모드에서 인증이 불가하다.\n(ID / Card / Fnger / Face/QR 인증 불가)\n> Camera QR 화면 미출력\n3. 장치 잠금 해제 후 장치 정상동작 확인(인증)\n4. 장치 잠금/해제 로그가 남는다.",
+          "attachments": []
+        },
+        {
+          "id": 18009,
+          "index": 23,
+          "step": "[Camera QR]\n\t\n1. Device : Master-Slave(SIO2, DM20) 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Slave 장치 선택 > Event 선택 \n3.  Action > Disable Device\n4. Trigger 로 설정한 Evnet 발생",
+          "data": "Action Device : Master(Camera QR 지원 장치)\n\n> QR/Barcode : Enabled\n> Camera 활성화/비활성화",
+          "result": "1. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> motion을 띄워 Camera를 활성화 시킨 상태에서 Disable 시 Camera QR 비활성화\n2. 모든 인증모드에서 인증이 불가하다.\n(ID / Card / Fnger / Face/QR 인증 불가)\n> Camera QR 화면 미출력\n3. 장치 잠금 해제 후 장치 정상동작 확인(인증)\n4. 장치 잠금/해제 로그가 남는다.",
+          "attachments": []
+        },
+        {
+          "id": 18418,
+          "index": 24,
+          "step": "1. Device > Advanced > Trigger & Action > +Add \n2. Trigger: Event> 장치 및 BioStar Disconnected 선택\n3. Action: Disable Device 선택 후 저장\n4. 장치리스트에서 마우스 우클릭> 재연결\n5. Disable로 동작유무 확인\n6. 장치 Reboot 후 Disable 상태 유지 및 서버와 재연결 유무 확인",
+          "data": "",
+          "result": "1. 서버와 연결이 해제되면서 장치가 Disable 상태로 동작한다.\n2. 장치 Reboot 후 Disable 상태 유지 및 서버와 통신이 정상적으로 이루어진다.\n3. 이벤트 로그 확인시 BioStar2 연결해제 & 장치잠금 로그가 남는다.\n=> 반복적으로 로그가 남지 않는다.",
+          "attachments": []
+        },
+        {
+          "id": 18419,
+          "index": 25,
+          "step": "1. Device > Advanced > Trigger & Action > +Add \n2. Trigger: Event> 장치 및 BioStar Disconnected 선택\n3. Action: Disable Device 선택 후 저장\n4. BioStar2 Setting> 서버 Stop\n5. Disable로 동작유무 확인\n6. BioStar2 Setting> 서버 Start\n7. 장치 Reboot 후 Disable 상태 유지 및 서버와 재연결 유무 확인",
+          "data": "",
+          "result": "1. 서버와 연결이 해제되면서 장치가 Disable 상태로 동작한다.\n2. 장치 Reboot 후 Disable 상태 유지 및 서버와 통신이 정상적으로 이루어진다.\n3. 이벤트 로그 확인시 BioStar2 연결해제 & 장치잠금 로그가 남는다.\n=> 반복적으로 로그가 남지 않는다.",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [],
+      "maxResults": 0,
+      "total": 0,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+      "name": "Minor (C)",
+      "id": "3"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+      "name": "할 일",
+      "id": "10000",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "할 일"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzslr3:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2018-01-11T15:36:09.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

@@ -1,182 +1,2382 @@
 {
-  "id": "COMMONR-12",
-  "content": [
-    [
-      1,
-      "1. Zone> Add Zone> APB Zone\n2. APB Zone의 Status 설정",
-      "Status\n> Active\n> Inactive",
-      "> Active인 경우 APB 위반시 APB 위반으로 동작해야 한다.\n> Inactive인 경우 APB 위반이 동작하지 않아야 한다."
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "11917",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/11917",
+  "key": "COMMONR-12",
+  "fields": {
+    "resolution": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/resolution/10000",
+      "id": "10000",
+      "description": "[사용안함] Work has been completed on this issue.",
+      "name": "완료(Done)"
+    },
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "0.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": null,
+    "customfield_10185": null,
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "60174",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/60174",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "69333",
+          "key": "BS3FW-1887",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/69333",
+          "fields": {
+            "summary": "특정 카드로 APB 위반 후 reboot시, 인증까지 오래 걸리는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "60108",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/60108",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "50634",
+          "key": "BS3FW-655",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/50634",
+          "fields": {
+            "summary": "Global APB Zone 설정된 장치의 네트워크 연결 선 제거 후 인증 시, 일시적으로 인증 결과 화면이 약 3~5초 이후에 출력 됨",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "26517",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/26517",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "35033",
+          "key": "BLNIIFW-757",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/35033",
+          "fields": {
+            "summary": "[Glabal APB] Device Lock에 대해서 Clear가 안되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "26559",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/26559",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "35075",
+          "key": "CSTFW-666",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/35075",
+          "fields": {
+            "summary": "[Zone] Alarm 설정시 Output과 Release Alarm을 함께 설정하게 되면 APB 위반시 Output에 대해 동작하지 않는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "39198",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/39198",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "49076",
+          "key": "DFW-720",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/49076",
+          "fields": {
+            "summary": "Global Apb 설정 후  첫 인증 시 인증 실패 발생 및 로그 안남음",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13462",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13462",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18719",
+          "key": "BEWIIFWDI-246",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18719",
+          "fields": {
+            "summary": "Global APB를 생성시 Entry, Exit Device를 Wiegand 3rd part Reader로 설정 후 APB 발생시 Wiegand 1에 설정된 Reader기에서 APB가 미 발생하는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "16379",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/16379",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "22067",
+          "key": "BERII-23",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/22067",
+          "fields": {
+            "summary": "[Tester:곽성희] 항시 통과 그룹에 등록되지 않은 사용자로 인증 시 APB발생되지 않는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12055",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12055",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16279",
+          "key": "BLIIFWI-415",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16279",
+          "fields": {
+            "summary": "APB Zone에서 Alarm Action을 Slave Reboot Device로 설정 후 Alarm이 울리고 Action 후에 Slave RS485모드가 Default로 변경되는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11404",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11404",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "15090",
+          "key": "TIIDFI-489",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/15090",
+          "fields": {
+            "summary": "APB Reset Time이 지나기 전에 APB가 풀림",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "28249",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/28249",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19300",
+          "key": "TIIDFI-819",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19300",
+          "fields": {
+            "summary": "[IO Device] Alarm Output을 Off 없이 On만 동작 하도록 생성 후 Alarm 발생 시 Delay/Count가 지난 뒤에Clear Alarm 시 Alarm으로 설정한 Port가 On을 유지하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14098",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14098",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19362",
+          "key": "TIIDFI-832",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19362",
+          "fields": {
+            "summary": "[Slave Device] Alarm Output을 Off 없이 On만 동작 하도록 생성 후 Alarm 발생 시 Delay/Count가 지난 뒤에Clear Alarm 시 Alarm으로 설정한 Port가 On을 유지하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "52096",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/52096",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "61612",
+          "key": "BEW3FW-99",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/61612",
+          "fields": {
+            "summary": "[APB ZONE] Network Failure Action> Open by auth & record APB log 설정 후 Wegand reader에서 Soft APB 로그가 남지않는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11943",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11943",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16007",
+          "key": "BLIIFWI-376",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16007",
+          "fields": {
+            "summary": "Door APB Alarm을 Slave에 Release All Alarm으로 설정시 동작하지 않는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13493",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13493",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "18749",
+          "key": "BLIIFWI-575",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18749",
+          "fields": {
+            "summary": "[Tester: 최희욱] Wiegand Reader로 Door 설정된 상태에서 Hard APB 동작 오류(Zone 동일)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11349",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11349",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "15037",
+          "key": "BSIIDII-199",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/15037",
+          "fields": {
+            "summary": "APB Alarm Output이 5개 이상 설정가능한 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12337",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12337",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16885",
+          "key": "BSIIDII-290",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16885",
+          "fields": {
+            "summary": "Zone 에서 Mater의 Alarm Output 이 동작 중 Clear Alarm을 실행해도 Alarm 중지 안하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12398",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12398",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16937",
+          "key": "BSIIDII-296",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16937",
+          "fields": {
+            "summary": "APB Alarm 동작 중 Master 장치 Reboot 시 APB 정보가 리셋되지 않는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13957",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13957",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19279",
+          "key": "BSIIDII-441",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19279",
+          "fields": {
+            "summary": "APB Zone일때, Alarm이 발생한 상태에서 Master를 재부팅하면 Alarm으로 설정한 Port가 On을 유지하는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "27020",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/27020",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19341",
+          "key": "BSIIDII-448",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19341",
+          "fields": {
+            "summary": "APB Zone일때, Slave 장치에 Alarm이 발생한 상태에서 Master를 재부팅하면 Alarm으로 설정한 Port가 On을 유지하는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "15645",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/15645",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "21138",
+          "key": "CSTFW-47",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/21138",
+          "fields": {
+            "summary": "설정한 APB ResetTime으로 동작되지 않는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11357",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11357",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "15042",
+          "key": "ENTRYIIDII-216",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/15042",
+          "fields": {
+            "summary": "APB Alarm에 대해 Monitoring에서 Clear Alarm시 Device Timeout 발생",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12615",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12615",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "17554",
+          "key": "ENTRYIIDII-315",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17554",
+          "fields": {
+            "summary": "APB Zone에 Newtwork Failure Action 이 설정 된 상태일때 무조건 APB 위반이 발생하는 현상 발생",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12924",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12924",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "17906",
+          "key": "ENTRYIIDII-366",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17906",
+          "fields": {
+            "summary": "Hard APB일때, Reset Time 1440min(기본값)으로 설정하면 Reset Time이 미동작하는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12926",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12926",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "17907",
+          "key": "ENTRYIIDII-367",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/17907",
+          "fields": {
+            "summary": "Local APB일때, Anti-passback zone alarm detected 로그가 장치에 남지 않는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "13990",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/13990",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19301",
+          "key": "ENTRYIIDII-429",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19301",
+          "fields": {
+            "summary": "Release Alarm으로 Alarm Clear시 Signal은 OFF가 되나 Alarm Port는 On 상태를 유지하는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "18702",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/18702",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "24299",
+          "key": "FSTIIFW-758",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/24299",
+          "fields": {
+            "summary": "[Tester : 김남경] APB Global 모드 설정 상태에서 APB 위반 시 장치 내 이벤트 로그에 APB 위반 로그가 출력되는 문제",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "30879",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/30879",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "41126",
+          "key": "ONYXFW-273",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/41126",
+          "fields": {
+            "summary": "Door Alarm의 Output이 Master와 Slave에서 다르게 동작하는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "30880",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/30880",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "41144",
+          "key": "ONYXFW-276",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/41144",
+          "fields": {
+            "summary": "Clear APB 로그 안남는 현상.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "52092",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/52092",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "61608",
+          "key": "BEW3FW-97",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/61608",
+          "fields": {
+            "summary": "[APB ZONE] global soft APB 설정 후 > Release All Alarm 동작 안함",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "59997",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/59997",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "69094",
+          "key": "CS20FW-95",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/69094",
+          "fields": {
+            "summary": "네트워크 연결 선 제거 후 Slave 장치에 인증 시도 시 인증 속도가 3초 이상 걸리는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "60568",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/60568",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "69743",
+          "key": "CS20FW-119",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/69743",
+          "fields": {
+            "summary": "APB Zone의 Network Failure Action을 설정했을 때 한 번만 인증해도 APB로 동작하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "12400",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12400",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "16938",
+          "key": "BSIIDII-297",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/16938",
+          "fields": {
+            "summary": "Hard APB 동작 중 에러 팝업 메시지 오류",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11173",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11173",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "14785",
+          "key": "BEWIIFWDI-29",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/14785",
+          "fields": {
+            "summary": "[Requirement] 구역 - APB Zone",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10414",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10414",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "12929",
+          "key": "BLIIFWI-73",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12929",
+          "fields": {
+            "summary": "[Requirement] 구역 - APB Zone",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10447",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10447",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "12958",
+          "key": "TIIDFI-67",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12958",
+          "fields": {
+            "summary": "[Requirement] 구역 - APB Zone",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "1. Zone> Add Zone\n2. Anti-passback Zone의 Mode 설정",
-      "Mode\n> Local Zone\n",
-      "> Master 장치에 RS485/Wiegand Reader로 연결된 장치들로 구성된 Door들로 설정이 되어야 한다.\n> Local 모드인 경우 BioStar UI에서 Network Failure Action 미지원"
+    "assignee": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 19.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-12/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@59153a[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@5e6b470c[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@38a9b886[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@3cfedbb8[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@66f4b2b2[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@1a82ffdc[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6f1a1982[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@25733cc2[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@66516bfc[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@6b2014f5[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@54c9d61a[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@6860756d[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": "2016-02-25T13:30:43.000+0900",
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-12/watchers",
+      "watchCount": 1,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T10:10:21.000+0900",
+    "timeoriginalestimate": null,
+    "description": "APB Zone\r\n: 하나의 리더에 동일한 사용자로 인증이 발생된 경우 APB 위반 발생\r\n  => 하나의 카드를 여러 사람이 돌려쓰는거 방지\r\n\r\n복합인증모드가 설정된 상태에서 APB Fail 이 발생되는 경우\r\n-: 지문+PIN : 첫번째 인증모드인 지문에서 APB Fail 로 동작함\r\n-: 카드인증모드 : 첫번째 인증모드인 카드에서 APB Fail 로 동작함\r\n-: ID 인증모드 : 설정된 인증모드에 대해 모두 입력 후 APB Fail 로 동작함",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. Zone&gt; Add Zone&gt; APB Zone<br/>2. APB Zone의 Status 설정</p></td><td><p>Status<br/>&gt; Active<br/>&gt; Inactive</p></td><td><p>&gt; Active인 경우 APB 위반시 APB 위반으로 동작해야 한다.<br/>&gt; Inactive인 경우 APB 위반이 동작하지 않아야 한다.</p></td></tr><tr><td>2</td><td><p>1. Zone&gt; Add Zone<br/>2. Anti-passback Zone의 Mode 설정</p></td><td><p>Mode<br/>&gt; Local Zone</p></td><td><p>&gt; Master 장치에 RS485/Wiegand Reader로 연결된 장치들로 구성된 Door들로 설정이 되어야 한다.<br/>&gt; Local 모드인 경우 BioStar UI에서 Network Failure Action 미지원</p></td></tr><tr><td>3</td><td><p>1. Zone&gt; Add Zone<br/>2. Anti-passback Zone의 Mode 설정</p></td><td><p>Mode<br/>&gt; Global Zone</p></td><td><p>&gt; RS485/Wiegand Reader/Network로 구성된 모든 장치에 대해 설정이 되어야 한다.<br/>&gt; Global 모드인 경우 BioStar UI에서 Network Failure Action 지원</p></td></tr><tr><td>4</td><td><p>1. Zone&gt; Add Zone&gt; APB Zone<br/>2. APB Zone Type 설정</p></td><td><p>Type<br/>&gt; Soft APB<br/>&gt; Hard APB</p></td><td><p>&gt; Soft APB 위반인 경우, 인증이 성공하고 출입이 허용되어야 한다.<br/>&gt; Hard APB 위반인 경우, 인증이 실패되고 출입도 통제되어야 한다.<br/>*APB 위반, Alarm 로그가 남는다.<br/>*Action 미설정시 BioStar Zone Status는 Normal<br/>(APB의 경우, Action 설정시 Status에 반영하며 로그는 이벤트이므로 무관)</p></td></tr><tr><td>5</td><td><p>1. Zone&gt; Add Zone&gt; APB Zone<br/>2. APB Reset Time 설정<br/>3. 하나의 리더에 동일사용자로 2회 이상 인증해 APB 위반 발생</p></td><td><p>Reset Time<br/>&gt; 0(None)~7Days 설정가능</p></td><td><p>&gt; 선택한 값이 설정되어야 한다.<br/>&gt; APB Reset Time으로 설정한 시간이 지나면 이전 APB 상태는 무시되고 새로 시작되어야 한다.</p></td></tr><tr><td>6</td><td><p>1. Zone&gt; Add Zone&gt; APB Zone<br/>2. APB 예외그룹 설정<br/>3. APB 예외그룹에 포함된 사용자로 인증시도</p></td><td><p>APB 예외그룹<br/>&gt; 최대16개까지 설정가능</p></td><td><p>APB 예외그룹에 속한 사용자로 인증시 APB에 영향을 받지 않아야한다.</p></td></tr><tr><td>7</td><td><p>1. Zone&gt; Add Zone&gt; APB Zone 추가<br/>2. 하나의 리더에 동일사용자로 2회 이상 인증해 APB 위반 발생<br/>3. Reset Time 이내 Master 장치를 Reboot</p></td><td></td><td><p>Reset Time 이내 Master가 Reboot되는 경우 모든 APB 정보 유지</p></td></tr><tr><td>8</td><td><p>1. Zone&gt; Add Zone&gt; APB Zone 추가<br/>2. 하나의 리더에 동일사용자로 2회 이상 인증해 APB 위반 발생<br/>3. Reset Time 이후 Master 장치를 Reboot</p></td><td></td><td><p>Reset Time 이후 Master가 Reboot되는 경우 모든 APB 정보가 리셋되어야 한다.<br/>: 발생되고 있는 Alarm은 해제<br/>: APB 위반 해제</p></td></tr><tr><td>9</td><td><p>1. Zone&gt; Add Zone&gt; APB Zone <br/>2. APB Alarm 설정</p></td><td><p>&gt; Output<br/>&gt; Release All Alarm<br/>&gt; Reboot Device<br/>&gt; Disable Device</p></td><td><p>APB 위반이 발생하면 설정한 Alarm이 발생해야 한다.</p></td></tr><tr><td>10</td><td><p>&lt;APB Alarm이 발생되는 상태&gt;<br/>1. Monitoring&gt; Zone Status<br/>2. APB Zone 선택<br/>3. Clear Alarm 및 Clear APB 클릭</p></td><td></td><td><p>APB Alarm을 해제되어야 하고, APB 위반도 해제되어야 한다.<br/>: Alarm 해제 - Clear Alarm<br/>: 동작해제 - Clear APB<br/>&gt; Clear Alarm 로그가 남는다.</p></td></tr><tr><td>11</td><td><p>1. Zone&gt; Add Zone&gt; APB Zone <br/>2. Entry Device/Exit Device 설정</p></td><td><p>&gt; Door로 설정된 Device<br/>&gt; Door가 설정되지 않은 Device</p></td><td><p>Door로 설정된 Device뿐만 아니라 Door로 설정되지 않은 Device로도 APB Zone 구성이 가능해야 한다.</p></td></tr><tr><td>12</td><td><p>&lt;APB Zone 다수 생성된 상태&gt;<br/>1. Zone 선택 후 삭제시도</p></td><td><p>Zone 삭제<br/>&gt; 개별삭제<br/>&gt; 전체삭제</p></td><td><p>Zone에 대해 개별삭제/전체삭제를 할 수 있어야 한다.</p></td></tr><tr><td>13</td><td><p>1. 생성한 Zone 정보를 편집한다.</p></td><td></td><td><p>Zone 정보 변경이 가능해야 한다.</p></td></tr><tr><td>14</td><td><p>1. Zone&gt; Add Zone&gt; APB Zone<br/>2. Alarm Output 설정</p></td><td><p>최대 5개 설정 가능</p></td><td><p>Door/Zone에서의 Output은 최대 5개까지 설정되어야 한다.</p></td></tr><tr><td>15</td><td><p>&lt;장치간 RS485 &amp; Wiegand Reader 연결 =&gt; Door 구성&gt;<br/>1. Zone&gt; Add Zone&gt; APB Zone<br/>2. 각각의 항목 설정 후 저장<br/>3. Master/Slave/Wiegand Reader 각 장치에 APB 위반이 되도록 인증시도</p></td><td><p>&gt; Global<br/>&gt; Local</p></td><td><p>1. 설정한 APB 위반으로 동작되어야 한다.<br/>&gt; 로그 및 동작확인<br/>&gt; Global APB Alarm<br/> : Alarm 발생시 Anti-passback zone alarm detected 가 로그에 표시됨(장치에는 남지 않음)<br/>&gt; Local APB Alarm<br/> : Alarm 발생시 Anti-passback zone alarm detected 가 로그에 표시됨(장치에도 남음)</p></td></tr><tr><td>16</td><td><p>&lt;장치간 RS485 &amp; Wiegand Reader 연결 =&gt; Door 구성&gt;<br/>1. Zone&gt; Add Zone&gt; APB Zone<br/>2. 각각의 항목 설정 후 저장<br/>3. Master 장치의 Lan선 제거<br/>4. 약 1분 후에 Master/Slave/Wiegand Reader 장치에 APB 위반이 되도록 인증시도</p></td><td><p>Mode&gt; Global 설정<br/>Network Failure Action&gt; Open by auth 설정</p></td><td><p>1. Open by auth인 경우, APB 설정을 보지 않겠다는 의미로 인증성공으로 동작해야 한다.(사용자가 장치에 있는 경우)</p></td></tr><tr><td>17</td><td><p>&lt;장치간 RS485 &amp; Wiegand Reader 연결 =&gt; Door 구성&gt;<br/>1. Zone&gt; Add Zone&gt; APB Zone<br/>2. 각각의 항목 설정 후 저장<br/>3. Master 장치의 Lan선 제거<br/>4. 약 1분 후에 Master/Slave/Wiegand Reader 장치에 APB 위반이 되도록 인증시도</p></td><td><p>Mode&gt; Global 설정<br/>Network Failure Action&gt; Open by auth &amp; record APB log 설정</p>\n\n<p>*Record a log = Soft APB</p></td><td><p>1. Soft APB로 동작되어야 한다.<br/>&gt; 로그 및 동작확인(Step 4 참고)<br/>&gt; 설정한 Alarm 은 발생하지 않는다.</p>\n\n<p>※ 연결이 해제된 상태에서는 이전 이력을 알 수 없기 때문에 연결 해제 후 처음 인증시 인증성공&amp;Soft APB로 동작되어야 한다.</p></td></tr><tr><td>18</td><td><p>&lt;장치간 RS485 &amp; Wiegand Reader 연결 =&gt; Door 구성&gt;<br/>1. Zone&gt; Add Zone&gt; APB Zone<br/>2. 각각의 항목 설정 후 저장<br/>3. Master 장치의 Lan선 제거<br/>4. 약 1분 후에 Master/Slave/Wiegand Reader 장치에 APB 위반이 되도록 인증시도</p></td><td><p>Mode&gt; Global 설정<br/>Network Failure Action&gt; Door locked &amp; record APB log 설정<br/>*Door locked = Hard APB</p></td><td><p>1. Hard APB로 동작되어야 한다.<br/>&gt; 로그 및 동작확인(Step 4 참고)<br/>&gt; 설정한 Alarm 은 발생하지 않는다.</p>\n\n<p>※ 연결이 해제된 상태에서는 이전 이력을 알 수 없기 때문에 연결 해제 후 처음 인증시 인증실패&amp;Hard APB로 동작되어야 한다.</p></td></tr><tr><td>19</td><td><p>1. Zone&gt; APB Zone&gt; Global APB Zone 설정<br/>2. 장치에 인증시도<br/>3. 인증 후 결과출력 전 장치의 네트워크 선 연결 제거<br/>4. 인증결과 확인</p></td><td><p>Mode&gt; Global 설정<br/>Network Failure Action&gt; Open by auth</p>\n\n<p>연결장치: Device To Server</p></td><td><p>1.인증결과 출력에 영향을 주지 않아야 한다.<br/>&gt; 통신 장애 발생 시의 인증에 대한 응답성 확인 </p>\n\n<p>※ <a href=\"https://jira.suprema.co.kr/browse/FISF-126\" title=\"금일 오전(16일) 사내 설치된 제품에 인증속도가 현저히 떨어지는 문제 발생(3초 이상 걸림)\" class=\"issue-link\" data-issue-key=\"FISF-126\"><del>FISF-126</del></a> 재발방지대책으로 작성된 TC</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [
+      "COMMONR-47"
     ],
-    [
-      3,
-      "1. Zone> Add Zone\n2. Anti-passback Zone의 Mode 설정",
-      "Mode\n> Global Zone\n",
-      "> RS485/Wiegand Reader/Network로 구성된 모든 장치에 대해 설정이 되어야 한다.\n> Global 모드인 경우 BioStar UI에서 Network Failure Action 지원"
-    ],
-    [
-      4,
-      "1. Zone> Add Zone> APB Zone\n2. APB Zone Type 설정",
-      "Type\n> Soft APB\n> Hard APB",
-      "> Soft APB 위반인 경우, 인증이 성공하고 출입이 허용되어야 한다.\n> Hard APB 위반인 경우, 인증이 실패되고 출입도 통제되어야 한다.\n*APB 위반, Alarm 로그가 남는다.\n*Action 미설정시 BioStar Zone Status는 Normal\n(APB의 경우, Action 설정시 Status에 반영하며 로그는 이벤트이므로 무관)"
-    ],
-    [
-      5,
-      "1. Zone> Add Zone> APB Zone\n2. APB Reset Time 설정\n3. 하나의 리더에 동일사용자로 2회 이상 인증해 APB 위반 발생",
-      "Reset Time\n> 0(None)~7Days 설정가능",
-      "> 선택한 값이 설정되어야 한다.\n> APB Reset Time으로 설정한 시간이 지나면 이전 APB 상태는 무시되고 새로 시작되어야 한다."
-    ],
-    [
-      6,
-      "1. Zone> Add Zone> APB Zone\n2. APB 예외그룹 설정\n3. APB 예외그룹에 포함된 사용자로 인증시도",
-      "APB 예외그룹\n> 최대16개까지 설정가능",
-      "APB 예외그룹에 속한 사용자로 인증시 APB에 영향을 받지 않아야한다."
-    ],
-    [
-      7,
-      "1. Zone> Add Zone> APB Zone 추가\n2. 하나의 리더에 동일사용자로 2회 이상 인증해 APB 위반 발생\n3. Reset Time 이내 Master 장치를 Reboot",
-      "",
-      "Reset Time 이내 Master가 Reboot되는 경우 모든 APB 정보 유지\n"
-    ],
-    [
-      8,
-      "1. Zone> Add Zone> APB Zone 추가\n2. 하나의 리더에 동일사용자로 2회 이상 인증해 APB 위반 발생\n3. Reset Time 이후 Master 장치를 Reboot",
-      "",
-      "Reset Time 이후 Master가 Reboot되는 경우 모든 APB 정보가 리셋되어야 한다.\n: 발생되고 있는 Alarm은 해제\n: APB 위반 해제"
-    ],
-    [
-      9,
-      "1. Zone> Add Zone> APB Zone \n2. APB Alarm 설정",
-      "> Output\n> Release All Alarm\n> Reboot Device\n> Disable Device",
-      "APB 위반이 발생하면 설정한 Alarm이 발생해야 한다."
-    ],
-    [
-      10,
-      "<APB Alarm이 발생되는 상태>\n1. Monitoring> Zone Status\n2. APB Zone 선택\n3. Clear Alarm 및 Clear APB 클릭",
-      "",
-      "APB Alarm을 해제되어야 하고, APB 위반도 해제되어야 한다.\n: Alarm 해제 - Clear Alarm\n: 동작해제 - Clear APB\n> Clear Alarm 로그가 남는다."
-    ],
-    [
-      11,
-      "1. Zone> Add Zone> APB Zone \n2. Entry Device/Exit Device 설정",
-      "> Door로 설정된 Device\n> Door가 설정되지 않은 Device",
-      "Door로 설정된 Device뿐만 아니라 Door로 설정되지 않은 Device로도 APB Zone 구성이 가능해야 한다."
-    ],
-    [
-      12,
-      "<APB Zone 다수 생성된 상태>\n1. Zone 선택 후 삭제시도",
-      "Zone 삭제\n> 개별삭제\n> 전체삭제",
-      "Zone에 대해 개별삭제/전체삭제를 할 수 있어야 한다."
-    ],
-    [
-      13,
-      "1. 생성한 Zone 정보를 편집한다.",
-      "",
-      "Zone 정보 변경이 가능해야 한다."
-    ],
-    [
-      14,
-      "1. Zone> Add Zone> APB Zone\n2. Alarm Output 설정",
-      "최대 5개 설정 가능",
-      "Door/Zone에서의 Output은 최대 5개까지 설정되어야 한다."
-    ],
-    [
-      15,
-      "<장치간 RS485 & Wiegand Reader 연결 => Door 구성>\n1. Zone> Add Zone> APB Zone\n2. 각각의 항목 설정 후 저장\n3. Master/Slave/Wiegand Reader 각 장치에 APB 위반이 되도록 인증시도",
-      "> Global\n> Local",
-      "1. 설정한 APB 위반으로 동작되어야 한다.\n> 로그 및 동작확인\n> Global APB Alarm\n : Alarm 발생시 Anti-passback zone alarm detected 가 로그에 표시됨(장치에는 남지 않음)\n> Local APB Alarm\n : Alarm 발생시 Anti-passback zone alarm detected 가 로그에 표시됨(장치에도 남음)"
-    ],
-    [
-      16,
-      "<장치간 RS485 & Wiegand Reader 연결 => Door 구성>\n1. Zone> Add Zone> APB Zone\n2. 각각의 항목 설정 후 저장\n3. Master 장치의 Lan선 제거\n4. 약 1분 후에 Master/Slave/Wiegand Reader 장치에 APB 위반이 되도록 인증시도",
-      "Mode> Global 설정\nNetwork Failure Action> Open by auth 설정\n",
-      "1. Open by auth인 경우, APB 설정을 보지 않겠다는 의미로 인증성공으로 동작해야 한다.(사용자가 장치에 있는 경우)"
-    ],
-    [
-      17,
-      "<장치간 RS485 & Wiegand Reader 연결 => Door 구성>\n1. Zone> Add Zone> APB Zone\n2. 각각의 항목 설정 후 저장\n3. Master 장치의 Lan선 제거\n4. 약 1분 후에 Master/Slave/Wiegand Reader 장치에 APB 위반이 되도록 인증시도",
-      "Mode> Global 설정\nNetwork Failure Action> Open by auth & record APB log 설정\n\n*Record a log = Soft APB",
-      "1. Soft APB로 동작되어야 한다.\n> 로그 및 동작확인(Step 4 참고)\n> 설정한 Alarm 은 발생하지 않는다.\n\n※ 연결이 해제된 상태에서는 이전 이력을 알 수 없기 때문에 연결 해제 후 처음 인증시 인증성공&Soft APB로 동작되어야 한다."
-    ],
-    [
-      18,
-      "<장치간 RS485 & Wiegand Reader 연결 => Door 구성>\n1. Zone> Add Zone> APB Zone\n2. 각각의 항목 설정 후 저장\n3. Master 장치의 Lan선 제거\n4. 약 1분 후에 Master/Slave/Wiegand Reader 장치에 APB 위반이 되도록 인증시도",
-      "Mode> Global 설정\nNetwork Failure Action> Door locked & record APB log 설정\n*Door locked = Hard APB",
-      "1. Hard APB로 동작되어야 한다.\n> 로그 및 동작확인(Step 4 참고)\n> 설정한 Alarm 은 발생하지 않는다.\n\n※ 연결이 해제된 상태에서는 이전 이력을 알 수 없기 때문에 연결 해제 후 처음 인증시 인증실패&Hard APB로 동작되어야 한다."
-    ],
-    [
-      19,
-      "1. Zone> APB Zone> Global APB Zone 설정\n2. 장치에 인증시도\n3. 인증 후 결과출력 전 장치의 네트워크 선 연결 제거\n4. 인증결과 확인",
-      "Mode> Global 설정\nNetwork Failure Action> Open by auth\n\n연결장치: Device To Server\n",
-      "1.인증결과 출력에 영향을 주지 않아야 한다.\n> 통신 장애 발생 시의 인증에 대한 응답성 확인 \n\n※ FISF-126 재발방지대책으로 작성된 TC"
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-12",
-    "description": "",
-    "test_step": [
-      "1. Zone> Add Zone> APB Zone\n2. APB Zone의 Status 설정",
-      "1. Zone> Add Zone\n2. Anti-passback Zone의 Mode 설정",
-      "1. Zone> Add Zone\n2. Anti-passback Zone의 Mode 설정",
-      "1. Zone> Add Zone> APB Zone\n2. APB Zone Type 설정",
-      "1. Zone> Add Zone> APB Zone\n2. APB Reset Time 설정\n3. 하나의 리더에 동일사용자로 2회 이상 인증해 APB 위반 발생",
-      "1. Zone> Add Zone> APB Zone\n2. APB 예외그룹 설정\n3. APB 예외그룹에 포함된 사용자로 인증시도",
-      "1. Zone> Add Zone> APB Zone 추가\n2. 하나의 리더에 동일사용자로 2회 이상 인증해 APB 위반 발생\n3. Reset Time 이내 Master 장치를 Reboot",
-      "1. Zone> Add Zone> APB Zone 추가\n2. 하나의 리더에 동일사용자로 2회 이상 인증해 APB 위반 발생\n3. Reset Time 이후 Master 장치를 Reboot",
-      "1. Zone> Add Zone> APB Zone \n2. APB Alarm 설정",
-      "<APB Alarm이 발생되는 상태>\n1. Monitoring> Zone Status\n2. APB Zone 선택\n3. Clear Alarm 및 Clear APB 클릭",
-      "1. Zone> Add Zone> APB Zone \n2. Entry Device/Exit Device 설정",
-      "<APB Zone 다수 생성된 상태>\n1. Zone 선택 후 삭제시도",
-      "1. 생성한 Zone 정보를 편집한다.",
-      "1. Zone> Add Zone> APB Zone\n2. Alarm Output 설정",
-      "<장치간 RS485 & Wiegand Reader 연결 => Door 구성>\n1. Zone> Add Zone> APB Zone\n2. 각각의 항목 설정 후 저장\n3. Master/Slave/Wiegand Reader 각 장치에 APB 위반이 되도록 인증시도",
-      "<장치간 RS485 & Wiegand Reader 연결 => Door 구성>\n1. Zone> Add Zone> APB Zone\n2. 각각의 항목 설정 후 저장\n3. Master 장치의 Lan선 제거\n4. 약 1분 후에 Master/Slave/Wiegand Reader 장치에 APB 위반이 되도록 인증시도",
-      "<장치간 RS485 & Wiegand Reader 연결 => Door 구성>\n1. Zone> Add Zone> APB Zone\n2. 각각의 항목 설정 후 저장\n3. Master 장치의 Lan선 제거\n4. 약 1분 후에 Master/Slave/Wiegand Reader 장치에 APB 위반이 되도록 인증시도",
-      "<장치간 RS485 & Wiegand Reader 연결 => Door 구성>\n1. Zone> Add Zone> APB Zone\n2. 각각의 항목 설정 후 저장\n3. Master 장치의 Lan선 제거\n4. 약 1분 후에 Master/Slave/Wiegand Reader 장치에 APB 위반이 되도록 인증시도",
-      "1. Zone> APB Zone> Global APB Zone 설정\n2. 장치에 인증시도\n3. 인증 후 결과출력 전 장치의 네트워크 선 연결 제거\n4. 인증결과 확인"
-    ],
-    "data": [
-      "Status\n> Active\n> Inactive",
-      "Mode\n> Local Zone\n",
-      "Mode\n> Global Zone\n",
-      "Type\n> Soft APB\n> Hard APB",
-      "Reset Time\n> 0(None)~7Days 설정가능",
-      "APB 예외그룹\n> 최대16개까지 설정가능",
-      "> Output\n> Release All Alarm\n> Reboot Device\n> Disable Device",
-      "> Door로 설정된 Device\n> Door가 설정되지 않은 Device",
-      "Zone 삭제\n> 개별삭제\n> 전체삭제",
-      "최대 5개 설정 가능",
-      "> Global\n> Local",
-      "Mode> Global 설정\nNetwork Failure Action> Open by auth 설정\n",
-      "Mode> Global 설정\nNetwork Failure Action> Open by auth & record APB log 설정\n\n*Record a log = Soft APB",
-      "Mode> Global 설정\nNetwork Failure Action> Door locked & record APB log 설정\n*Door locked = Hard APB",
-      "Mode> Global 설정\nNetwork Failure Action> Open by auth\n\n연결장치: Device To Server\n"
-    ],
-    "expected_result": [
-      "> Active인 경우 APB 위반시 APB 위반으로 동작해야 한다.\n> Inactive인 경우 APB 위반이 동작하지 않아야 한다.",
-      "> Master 장치에 RS485/Wiegand Reader로 연결된 장치들로 구성된 Door들로 설정이 되어야 한다.\n> Local 모드인 경우 BioStar UI에서 Network Failure Action 미지원",
-      "> RS485/Wiegand Reader/Network로 구성된 모든 장치에 대해 설정이 되어야 한다.\n> Global 모드인 경우 BioStar UI에서 Network Failure Action 지원",
-      "> Soft APB 위반인 경우, 인증이 성공하고 출입이 허용되어야 한다.\n> Hard APB 위반인 경우, 인증이 실패되고 출입도 통제되어야 한다.\n*APB 위반, Alarm 로그가 남는다.\n*Action 미설정시 BioStar Zone Status는 Normal\n(APB의 경우, Action 설정시 Status에 반영하며 로그는 이벤트이므로 무관)",
-      "> 선택한 값이 설정되어야 한다.\n> APB Reset Time으로 설정한 시간이 지나면 이전 APB 상태는 무시되고 새로 시작되어야 한다.",
-      "APB 예외그룹에 속한 사용자로 인증시 APB에 영향을 받지 않아야한다.",
-      "Reset Time 이내 Master가 Reboot되는 경우 모든 APB 정보 유지\n",
-      "Reset Time 이후 Master가 Reboot되는 경우 모든 APB 정보가 리셋되어야 한다.\n: 발생되고 있는 Alarm은 해제\n: APB 위반 해제",
-      "APB 위반이 발생하면 설정한 Alarm이 발생해야 한다.",
-      "APB Alarm을 해제되어야 하고, APB 위반도 해제되어야 한다.\n: Alarm 해제 - Clear Alarm\n: 동작해제 - Clear APB\n> Clear Alarm 로그가 남는다.",
-      "Door로 설정된 Device뿐만 아니라 Door로 설정되지 않은 Device로도 APB Zone 구성이 가능해야 한다.",
-      "Zone에 대해 개별삭제/전체삭제를 할 수 있어야 한다.",
-      "Zone 정보 변경이 가능해야 한다.",
-      "Door/Zone에서의 Output은 최대 5개까지 설정되어야 한다.",
-      "1. 설정한 APB 위반으로 동작되어야 한다.\n> 로그 및 동작확인\n> Global APB Alarm\n : Alarm 발생시 Anti-passback zone alarm detected 가 로그에 표시됨(장치에는 남지 않음)\n> Local APB Alarm\n : Alarm 발생시 Anti-passback zone alarm detected 가 로그에 표시됨(장치에도 남음)",
-      "1. Open by auth인 경우, APB 설정을 보지 않겠다는 의미로 인증성공으로 동작해야 한다.(사용자가 장치에 있는 경우)",
-      "1. Soft APB로 동작되어야 한다.\n> 로그 및 동작확인(Step 4 참고)\n> 설정한 Alarm 은 발생하지 않는다.\n\n※ 연결이 해제된 상태에서는 이전 이력을 알 수 없기 때문에 연결 해제 후 처음 인증시 인증성공&Soft APB로 동작되어야 한다.",
-      "1. Hard APB로 동작되어야 한다.\n> 로그 및 동작확인(Step 4 참고)\n> 설정한 Alarm 은 발생하지 않는다.\n\n※ 연결이 해제된 상태에서는 이전 이력을 알 수 없기 때문에 연결 해제 후 처음 인증시 인증실패&Hard APB로 동작되어야 한다.",
-      "1.인증결과 출력에 영향을 주지 않아야 한다.\n> 통신 장애 발생 시의 인증에 대한 응답성 확인 \n\n※ FISF-126 재발방지대책으로 작성된 TC"
-    ]
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 11917,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 34655,
+              "latestFinalId": 34655
+            },
+            {
+              "environment": "ES1",
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 29795,
+              "latestFinalId": 29795
+            },
+            {
+              "environment": "BioStarV2.9.6.30",
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 29795,
+              "latestFinalId": 29795
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_170117(UnitTest)",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 5668,
+              "latestFinalId": 5668
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180329",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10308,
+              "latestFinalId": 10308
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_190805_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15245,
+              "latestFinalId": 15245
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.2.8_20160603",
+          "statusResults": [
+            {
+              "latest": 1,
+              "latestFinal": 0,
+              "latestId": 1742,
+              "latestFinalId": 1563
+            }
+          ]
+        },
+        {
+          "group": "FL_V1.0_190515(PS)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 14158,
+              "latestFinalId": 14158
+            }
+          ]
+        },
+        {
+          "group": "V1.7.1_181204(Hotfix)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12679,
+              "latestFinalId": 12679
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_181210_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12758,
+              "latestFinalId": 12758
+            }
+          ]
+        },
+        {
+          "group": "V1.1.5_4_151014(All)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 33,
+              "latestFinalId": 33
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0 170331",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 8649,
+              "latestFinalId": 8649
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_181119_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12958,
+              "latestFinalId": 12958
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_190809_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15606,
+              "latestFinalId": 15606
+            }
+          ]
+        },
+        {
+          "group": "V1.8.0_190806_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15335,
+              "latestFinalId": 15335
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180322",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10128,
+              "latestFinalId": 10128
+            }
+          ]
+        },
+        {
+          "group": "V1.7.0_190806_Interaction 7차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15063,
+              "latestFinalId": 15063
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.1.5_5 - 20151016(All)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 3,
+              "latestId": 5223,
+              "latestFinalId": 5147
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_190806_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15422,
+              "latestFinalId": 15422
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_20200601_Interaction 12차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 17154,
+              "latestFinalId": 17154
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "구역 - APB Zone",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 47,
+          "index": 1,
+          "step": "1. Zone> Add Zone> APB Zone\n2. APB Zone의 Status 설정",
+          "data": "Status\n> Active\n> Inactive",
+          "result": "> Active인 경우 APB 위반시 APB 위반으로 동작해야 한다.\n> Inactive인 경우 APB 위반이 동작하지 않아야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 2316,
+          "index": 2,
+          "step": "1. Zone> Add Zone\n2. Anti-passback Zone의 Mode 설정",
+          "data": "Mode\n> Local Zone\n",
+          "result": "> Master 장치에 RS485/Wiegand Reader로 연결된 장치들로 구성된 Door들로 설정이 되어야 한다.\n> Local 모드인 경우 BioStar UI에서 Network Failure Action 미지원",
+          "attachments": []
+        },
+        {
+          "id": 2317,
+          "index": 3,
+          "step": "1. Zone> Add Zone\n2. Anti-passback Zone의 Mode 설정",
+          "data": "Mode\n> Global Zone\n",
+          "result": "> RS485/Wiegand Reader/Network로 구성된 모든 장치에 대해 설정이 되어야 한다.\n> Global 모드인 경우 BioStar UI에서 Network Failure Action 지원",
+          "attachments": []
+        },
+        {
+          "id": 48,
+          "index": 4,
+          "step": "1. Zone> Add Zone> APB Zone\n2. APB Zone Type 설정",
+          "data": "Type\n> Soft APB\n> Hard APB",
+          "result": "> Soft APB 위반인 경우, 인증이 성공하고 출입이 허용되어야 한다.\n> Hard APB 위반인 경우, 인증이 실패되고 출입도 통제되어야 한다.\n*APB 위반, Alarm 로그가 남는다.\n*Action 미설정시 BioStar Zone Status는 Normal\n(APB의 경우, Action 설정시 Status에 반영하며 로그는 이벤트이므로 무관)",
+          "attachments": []
+        },
+        {
+          "id": 50,
+          "index": 5,
+          "step": "1. Zone> Add Zone> APB Zone\n2. APB Reset Time 설정\n3. 하나의 리더에 동일사용자로 2회 이상 인증해 APB 위반 발생",
+          "data": "Reset Time\n> 0(None)~7Days 설정가능",
+          "result": "> 선택한 값이 설정되어야 한다.\n> APB Reset Time으로 설정한 시간이 지나면 이전 APB 상태는 무시되고 새로 시작되어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 54,
+          "index": 6,
+          "step": "1. Zone> Add Zone> APB Zone\n2. APB 예외그룹 설정\n3. APB 예외그룹에 포함된 사용자로 인증시도",
+          "data": "APB 예외그룹\n> 최대16개까지 설정가능",
+          "result": "APB 예외그룹에 속한 사용자로 인증시 APB에 영향을 받지 않아야한다.",
+          "attachments": []
+        },
+        {
+          "id": 55,
+          "index": 7,
+          "step": "1. Zone> Add Zone> APB Zone 추가\n2. 하나의 리더에 동일사용자로 2회 이상 인증해 APB 위반 발생\n3. Reset Time 이내 Master 장치를 Reboot",
+          "data": "",
+          "result": "Reset Time 이내 Master가 Reboot되는 경우 모든 APB 정보 유지\n",
+          "attachments": []
+        },
+        {
+          "id": 18904,
+          "index": 8,
+          "step": "1. Zone> Add Zone> APB Zone 추가\n2. 하나의 리더에 동일사용자로 2회 이상 인증해 APB 위반 발생\n3. Reset Time 이후 Master 장치를 Reboot",
+          "data": "",
+          "result": "Reset Time 이후 Master가 Reboot되는 경우 모든 APB 정보가 리셋되어야 한다.\n: 발생되고 있는 Alarm은 해제\n: APB 위반 해제",
+          "attachments": []
+        },
+        {
+          "id": 56,
+          "index": 9,
+          "step": "1. Zone> Add Zone> APB Zone \n2. APB Alarm 설정",
+          "data": "> Output\n> Release All Alarm\n> Reboot Device\n> Disable Device",
+          "result": "APB 위반이 발생하면 설정한 Alarm이 발생해야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 57,
+          "index": 10,
+          "step": "<APB Alarm이 발생되는 상태>\n1. Monitoring> Zone Status\n2. APB Zone 선택\n3. Clear Alarm 및 Clear APB 클릭",
+          "data": "",
+          "result": "APB Alarm을 해제되어야 하고, APB 위반도 해제되어야 한다.\n: Alarm 해제 - Clear Alarm\n: 동작해제 - Clear APB\n> Clear Alarm 로그가 남는다.",
+          "attachments": []
+        },
+        {
+          "id": 58,
+          "index": 11,
+          "step": "1. Zone> Add Zone> APB Zone \n2. Entry Device/Exit Device 설정",
+          "data": "> Door로 설정된 Device\n> Door가 설정되지 않은 Device",
+          "result": "Door로 설정된 Device뿐만 아니라 Door로 설정되지 않은 Device로도 APB Zone 구성이 가능해야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 254,
+          "index": 12,
+          "step": "<APB Zone 다수 생성된 상태>\n1. Zone 선택 후 삭제시도",
+          "data": "Zone 삭제\n> 개별삭제\n> 전체삭제",
+          "result": "Zone에 대해 개별삭제/전체삭제를 할 수 있어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 255,
+          "index": 13,
+          "step": "1. 생성한 Zone 정보를 편집한다.",
+          "data": "",
+          "result": "Zone 정보 변경이 가능해야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 307,
+          "index": 14,
+          "step": "1. Zone> Add Zone> APB Zone\n2. Alarm Output 설정",
+          "data": "최대 5개 설정 가능",
+          "result": "Door/Zone에서의 Output은 최대 5개까지 설정되어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 2318,
+          "index": 15,
+          "step": "<장치간 RS485 & Wiegand Reader 연결 => Door 구성>\n1. Zone> Add Zone> APB Zone\n2. 각각의 항목 설정 후 저장\n3. Master/Slave/Wiegand Reader 각 장치에 APB 위반이 되도록 인증시도",
+          "data": "> Global\n> Local",
+          "result": "1. 설정한 APB 위반으로 동작되어야 한다.\n> 로그 및 동작확인\n> Global APB Alarm\n : Alarm 발생시 Anti-passback zone alarm detected 가 로그에 표시됨(장치에는 남지 않음)\n> Local APB Alarm\n : Alarm 발생시 Anti-passback zone alarm detected 가 로그에 표시됨(장치에도 남음)",
+          "attachments": []
+        },
+        {
+          "id": 2320,
+          "index": 16,
+          "step": "<장치간 RS485 & Wiegand Reader 연결 => Door 구성>\n1. Zone> Add Zone> APB Zone\n2. 각각의 항목 설정 후 저장\n3. Master 장치의 Lan선 제거\n4. 약 1분 후에 Master/Slave/Wiegand Reader 장치에 APB 위반이 되도록 인증시도",
+          "data": "Mode> Global 설정\nNetwork Failure Action> Open by auth 설정\n",
+          "result": "1. Open by auth인 경우, APB 설정을 보지 않겠다는 의미로 인증성공으로 동작해야 한다.(사용자가 장치에 있는 경우)",
+          "attachments": []
+        },
+        {
+          "id": 2321,
+          "index": 17,
+          "step": "<장치간 RS485 & Wiegand Reader 연결 => Door 구성>\n1. Zone> Add Zone> APB Zone\n2. 각각의 항목 설정 후 저장\n3. Master 장치의 Lan선 제거\n4. 약 1분 후에 Master/Slave/Wiegand Reader 장치에 APB 위반이 되도록 인증시도",
+          "data": "Mode> Global 설정\nNetwork Failure Action> Open by auth & record APB log 설정\n\n*Record a log = Soft APB",
+          "result": "1. Soft APB로 동작되어야 한다.\n> 로그 및 동작확인(Step 4 참고)\n> 설정한 Alarm 은 발생하지 않는다.\n\n※ 연결이 해제된 상태에서는 이전 이력을 알 수 없기 때문에 연결 해제 후 처음 인증시 인증성공&Soft APB로 동작되어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 2322,
+          "index": 18,
+          "step": "<장치간 RS485 & Wiegand Reader 연결 => Door 구성>\n1. Zone> Add Zone> APB Zone\n2. 각각의 항목 설정 후 저장\n3. Master 장치의 Lan선 제거\n4. 약 1분 후에 Master/Slave/Wiegand Reader 장치에 APB 위반이 되도록 인증시도",
+          "data": "Mode> Global 설정\nNetwork Failure Action> Door locked & record APB log 설정\n*Door locked = Hard APB",
+          "result": "1. Hard APB로 동작되어야 한다.\n> 로그 및 동작확인(Step 4 참고)\n> 설정한 Alarm 은 발생하지 않는다.\n\n※ 연결이 해제된 상태에서는 이전 이력을 알 수 없기 때문에 연결 해제 후 처음 인증시 인증실패&Hard APB로 동작되어야 한다.",
+          "attachments": []
+        },
+        {
+          "id": 2946,
+          "index": 19,
+          "step": "1. Zone> APB Zone> Global APB Zone 설정\n2. 장치에 인증시도\n3. 인증 후 결과출력 전 장치의 네트워크 선 연결 제거\n4. 인증결과 확인",
+          "data": "Mode> Global 설정\nNetwork Failure Action> Open by auth\n\n연결장치: Device To Server\n",
+          "result": "1.인증결과 출력에 영향을 주지 않아야 한다.\n> 통신 장애 발생 시의 인증에 대한 응답성 확인 \n\n※ FISF-126 재발방지대책으로 작성된 TC",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [],
+      "maxResults": 0,
+      "total": 0,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+      "name": "Minor (C)",
+      "id": "3"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+      "name": "완료",
+      "id": "10001",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "완료"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzs1on:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2015-07-27T11:16:24.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

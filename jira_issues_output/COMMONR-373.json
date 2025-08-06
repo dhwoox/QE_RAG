@@ -1,150 +1,840 @@
 {
-  "id": "COMMONR-373",
-  "content": [
-    [
-      1,
-      "[장치간 RS485 연결]\n1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock> Once 버튼 클릭\n3. Open time대로 동작되는지 확인",
-      "Door 생성시 Open Time 확인\n: 3초/5초/10초/15초/30초/1분/3분/5분/10분/15분",
-      "Once 클릭시 Unlocked으로 동작되어야 하고, 설정된 Open time이 지나면 다시 Locked으로 동작되어야 한다.\n> BioStar-X 이전 Open 기능\n> Device  UI > Door Control > Unlock 아이콘 표시 확인필요"
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "69670",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/69670",
+  "key": "COMMONR-373",
+  "fields": {
+    "resolution": null,
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "0.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10173",
+      "value": "Major",
+      "id": "10173"
+    },
+    "customfield_10185": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
+      "value": "Medium (2-3일 이내 피드백)",
+      "id": "10220"
+    },
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "64330",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/64330",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "73430",
+          "key": "BS3FW-2109",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/73430",
+          "fields": {
+            "summary": "[Door Mode Override] Timed 경우 재부팅 시 Door Status Nomal이지만 Door Relay Unlocked로 보여지는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "63059",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63059",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "72167",
+          "key": "BS3FW-1952",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72167",
+          "fields": {
+            "summary": "[Door Control] Door를 Timed로 설정 한 후에 Master를 reboot하게 되면 input 로그 및 Unlock/lock 해제되지 않음",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "63060",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63060",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "72168",
+          "key": "BS3FW-1953",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72168",
+          "fields": {
+            "summary": "[Door Control] Door를 Timed로 설정 한 후에 Slave를 reboot하게 되면 Normal 상태로 초기화되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "63255",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63255",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "72228",
+          "key": "BS3FW-1955",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72228",
+          "fields": {
+            "summary": "[Lock Override] Emergency Unlock 상태에서 Manual Unlock의 설정한 시간이 지나면 Normalized log가 출력되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "64325",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/64325",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "73424",
+          "key": "BS3FW-2107",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/73424",
+          "fields": {
+            "summary": "[Lock Override] Emergency Unlock 상태에서 Manual Unlock의 설정한 시간이 지나도 Door Status에 Operator Lock 상태가 사라지지 않음 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
+              "name": "Major (B+)",
+              "id": "10200"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "60491",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/60491",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "68808",
+          "key": "BES-3020",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/68808",
+          "fields": {
+            "summary": "[BDP-956] 서버 관리자가 출입문을 일정 시간 동안만 Locked/Unlocked로 제어할 수 있는 기능 (Door Mode Override)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
+              "id": "5",
+              "description": "이슈의 부작업",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
+              "name": "부작업",
+              "subtask": true,
+              "avatarId": 10316
+            }
+          }
+        }
+      },
+      {
+        "id": "61401",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/61401",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "70626",
+          "key": "BES-3300",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/70626",
+          "fields": {
+            "summary": "CLONE - [BDP-956] 서버 관리자가 출입문을 일정 시간 동안만 Locked/Unlocked로 제어할 수 있는 기능 (Door Mode Override)",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
+              "id": "5",
+              "description": "이슈의 부작업",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
+              "name": "부작업",
+              "subtask": true,
+              "avatarId": 10316
+            }
+          }
+        }
+      },
+      {
+        "id": "62544",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/62544",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "70622",
+          "key": "BES-3296",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/70622",
+          "fields": {
+            "summary": "[BDP-962, 956, 954, 990, 953, 1239] BioStar X FW 개발 - 추가진행 건",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/3",
+              "id": "3",
+              "description": "해야할 일",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10318&avatarType=issuetype",
+              "name": "작업",
+              "subtask": false,
+              "avatarId": 10318
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "[Door 생성]\n1. Status Tree> Door> Unlock 버튼 클릭\n2. Unlock Option 확인",
-      "[BioStar-X]\nUnlock Option\n> Once\n> Timed\n> Permanent",
-      "선택한 Door에 대해서 Unlock Option에 따라 Unlocked 으로 동작된다.\n> Once : 1회만 Unlock(Open)\n> Timed : 일정시간 동안만 Unlock(범위 1 ~ 86,400) - 입력한 시간까지 Unlock 유지 및 시간 이후 초기화 된다. 최대 24시간 초과 할 수 없음\n> Permanent : Unlocked 상태로 변경(Normalize(Release) 전까지 Unlock 유지/Manual Unlock)"
-    ],
-    [
-      3,
-      "[Door 생성]\n1. Status Tree> Door> Lock 버튼 클릭\n2. Lock Option 확인",
-      "[BioStar-X]\nLock Option\n> Timed\n> Permanent",
-      "선택한 Door에 대해서 Lock Option에 따라 Locked 으로 동작된다.\n> Timed : 일정시간 동안만 Lock(범위 1 ~ 86,400) - 입력한 시간까지 Lock 유지 및 시간 이후 초기화 된다. 최대 24시간 초과 할 수 없음\n> Permanent : Locked 상태로 변경(Normalize(Release) 전까지 Lock 유지/Manual Lock)"
-    ],
-    [
-      4,
-      "[Door 생성]\n1. Status Tree> Door> Normalize 버튼 클릭\n2. Door Status 확인",
-      "[BioStar-X]\nDoor Status",
-      "1. 선택한 Door에 대해서 Normalize 할수 있다. \n2. Door Status 아래와 같다,\n부팅 완료 후 Lock 상태를 유지해야 한다.\n> Unlocked -> Locked\n> Locked -> Locked\n> Normalize 수행 시에 UI상으로 자물쇠 아이콘 사라짐 확인"
-    ],
-    [
-      5,
-      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock 버튼 클릭> Door 상태 확인(Unlock)\n3. Normalize 버튼 클릭> Door 상태확인(Lock)\n4. 장치 Reboot\n5. 부팅완료 후 Door 상태확인",
-      "[BioStar-X]\nDoor 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치\n\nUnlock Option\n> Once\n> Timed\n> Permanent",
-      "2. Unlock Option에 따라 unlock으로 동작한다.\n> Once : Open Time만큼 Unlock 후 door locked로 동작\n> Timed : 설정된 시간만큼 Unlock 후 normalize되며 manual unlock > door locked로 동작, door normalize log 남게 됨\n> Permanent : 지속적으로 Manual Unlock으로 동작\n> Door unlock request by operator / Door unlocked\n\n3. Normalize(Door release)로 동작한다.\n> Biostar : Door release request by operator / Door locked\n> Device : Successfully Normalized 팝업 출력 후 log 상에 Door release request로 남게 됨\n\n5. reboot 후에 door locked 상태 유지 확인"
-    ],
-    [
-      6,
-      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Lock 버튼 클릭> Door 상태 확인(Lock)\n3.Normalize 버튼 클릭> Door 상태확인\n4. 장치 Reboot\n5. 부팅완료 후 Door 상태확인",
-      "[BioStar-X]\nDoor 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치\n\nLock Option\n> Timed\n> Permanent",
-      "2. lock Option에 따라 lock으로 동작한다.\n> Timed : 설정된 시간만큼 lock 후 normalize되며 manual lock > door locked로 동작, door normalize log 남게 됨\n> Permanent : 지속적으로 Manual lock으로 동작\n> Door lock request by operator / Door locked\n\n3. Normalize(Door release)로 동작한다.\n> Biostar : Door release request by operator / Door locked\n> Device : Successfully Normalized 팝업 출력 후 log 상에 Door release request로 남게 됨\n\n5. reboot 후에 door locked 상태 유지 확인"
-    ],
-    [
-      7,
-      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock 버튼 클릭> Door 상태 확인(Unlock)",
-      "[BioStar-X]\nDoor 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치\n\nUnlock Option\n> Once\n> Timed\n> Permanent",
-      "2. Unlock Option에 따라 unlock으로 동작한다.\n> Once : Open Time만큼 Unlock 후 door locked로 동작\n> Timed : 설정된 시간만큼 Unlock 후 normalize되며 manual unlock > door locked로 동작, door normalize log 남게 됨\n> Permanent : 지속적으로 Manual Unlock으로 동작\n> Door unlock request by operator / Door unlocked"
-    ],
-    [
-      8,
-      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Lock 버튼 클릭> Door 상태 확인",
-      "[BioStar-X]\nDoor 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치\n\nLock Option\n> Timed\n> Permanent",
-      "2. lock Option에 따라 lock으로 동작한다.\n> Timed : 설정된 시간만큼 lock 후 normalize되며 manual lock > door locked로 동작, door normalize log 남게 됨\n> Permanent : 지속적으로 Manual lock으로 동작\n> Door lock request by operator / Door locked"
-    ],
-    [
-      9,
-      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock 버튼 클릭> Door 상태 확인(Unlock)\n3. Master Reboot\n4. Door Status 확인 및 인증 후 동작 확인",
-      "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치",
-      "2. Door Manual Unlock으로 동작한다 (Lock Override 동작함)\n4. Door가 재부팅 후 Normalize되고, 로그 발생한다. (Door release request by operator) [재부팅 후 Normalize되는 이슈는 BS3 v1.4.0 릴리즈 이후 수정 예정 BS3FW-1952]\n> 이후 Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock으로 표시되어야 한다.\n> 경광등 연결하여 Relay On 동작 확인"
-    ],
-    [
-      10,
-      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock 버튼 클릭> Master Main UI 확인\n3. Status Tree> Door> Lock 버튼 클릭> Master Main UI 확인",
-      "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치",
-      "2. Door가 Unlock 상태를 유지해야한다.\n> 장치 홈 화면, BiostarX Door Status 개방 자물쇠 아이콘 표시\n> Once의 경우 door open time이 지나면 door locked로 동작\n> Timed의 경우 시간이 지나면 manual unlock > door locked 상태로 동작\n\nlog 아래와 같이 표시됨\n> Biostar : Door unlock request by operator / door unlocked\n> 장치 : Door unlock request\n\n3. Door가 lock 상태를 유지해야한다.\n> 장치 홈 화면, BiostarX Door Status 잠금 자물쇠 아이콘 표시\n> Timed의 경우 시간이 지나면 manual lock > door locked 상태로 동작\n※BS3 v1.4.0 릴리즈 이후 수정 예정\n\nlog 아래와 같이 표시됨\n> Biostar : Door lock request by operator / door locked\n> 장치 : Door lock request"
-    ],
-    [
-      11,
-      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock 버튼 클릭> Slave Main UI 확인\n3. Status Tree> Door>  Lock 버튼 클릭> Slave Main UI 확인",
-      "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
-      "2. Door가 Unlock 상태를 유지해야한다.\n> 장치 홈 화면, BiostarX Door Status 개방 자물쇠 아이콘 표시\n> Once의 경우 door open time이 지나면 door locked로 동작\n> Timed의 경우 시간이 지나면 manual unlock > door locked 상태로 동작\n\nlog 아래와 같이 표시됨\n> Biostar : Door unlock request by operator / door unlocked\n> 장치 : Door unlock request\n\n3. Door가 lock 상태를 유지해야한다.\n> 장치 홈 화면, BiostarX Door Status 잠금 자물쇠 아이콘 표시\n> Timed의 경우 시간이 지나면 manual lock > door locked 상태로 동작\n\nlog 아래와 같이 표시됨\n> Biostar : Door lock request by operator / door locked\n> 장치 : Door lock request"
-    ],
-    [
-      12,
-      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock> Door 상태 확인(Unlock)\n3. Master Reboot\n4. Door Status 확인 및 인증 후 동작 확인",
-      "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치",
-      "2. Door가 Unlock 상태를 유지해야한다.\n> Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n4. Timed,Once의 경우 재부팅 시에 manual lock > door locked로 동작한다 (BS3 v1.4.0 릴리즈 이후 수정 예정)\n> Permanent의 경우 unlock 상태 유지\n"
-    ],
-    [
-      13,
-      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock> Door 상태 확인(Unlock)\n3. Slave Reboot\n4. Door Status 확인 및 인증 후 동작 확인",
-      "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
-      "2. Door가 Unlock 상태를 유지해야한다.\n> Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n4. Timed의 경우 재부팅 시에 manual lock > door locked로 동작한다 (BS3 v1.4.0 릴리즈 이후 수정 예정)\n> Permanent의 경우 manual unlock 상태 유지"
-    ],
-    [
-      14,
-      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock> Door 상태 확인(Unlock)\n3. Slave Power Off\n4. Status Tree> Door> Unlock> Door 상태 확인(Unlock)\n5. Slave Power On \n6. Door Status 확인 및 인증 후 동작 확인",
-      "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
-      "2. Door가 Unlock 상태를 유지해야한다.\n> Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n4. Door가 Unlock 상태 및 Unlock 로그 발생한다.\n> 경광등 연결하여 Relay  Off 동작 확인\n5. Disconnected된 장치가 연결된 경우, Relay가 동작되어야 한다.\n> 경광등 연결하여 Relay On 동작 확인\n> Manual Unlock 상태 유지\n> Timed의 경우 재부팅 시에 Manual Unlock > door unlocked로 동작 (BS3 v1.4.0 릴리즈 이후 수정 예정)"
-    ],
-    [
-      15,
-      "[Lock Override]\n1. Door > Add Door > Door 생성\n2. Status Tree > Door > Manual Lock > Timed\n3. Timed : 30초 설정\n4. User에 있는 Lock Override Card로 Emergency Unlock 동작\n5. 30초 후 Door Status 및 Log 확인",
-      "User\n> Lock Override 설정된 Card 포함",
-      "Emergency Unlock 상태 유지된다.\n> Door released by operator 로그 출력되며 Door Status에 Operator Lock 상태만 사라진다.\n※Emergency Unlock 해제되면 안 되며 Manual Lock 상태만 Normal로 바뀌어야함"
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-373",
-    "description": "",
-    "test_step": [
-      "[장치간 RS485 연결]\n1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock> Once 버튼 클릭\n3. Open time대로 동작되는지 확인",
-      "[Door 생성]\n1. Status Tree> Door> Unlock 버튼 클릭\n2. Unlock Option 확인",
-      "[Door 생성]\n1. Status Tree> Door> Lock 버튼 클릭\n2. Lock Option 확인",
-      "[Door 생성]\n1. Status Tree> Door> Normalize 버튼 클릭\n2. Door Status 확인",
-      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock 버튼 클릭> Door 상태 확인(Unlock)\n3. Normalize 버튼 클릭> Door 상태확인(Lock)\n4. 장치 Reboot\n5. 부팅완료 후 Door 상태확인",
-      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Lock 버튼 클릭> Door 상태 확인(Lock)\n3.Normalize 버튼 클릭> Door 상태확인\n4. 장치 Reboot\n5. 부팅완료 후 Door 상태확인",
-      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock 버튼 클릭> Door 상태 확인(Unlock)",
-      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Lock 버튼 클릭> Door 상태 확인",
-      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock 버튼 클릭> Door 상태 확인(Unlock)\n3. Master Reboot\n4. Door Status 확인 및 인증 후 동작 확인",
-      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock 버튼 클릭> Master Main UI 확인\n3. Status Tree> Door> Lock 버튼 클릭> Master Main UI 확인",
-      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock 버튼 클릭> Slave Main UI 확인\n3. Status Tree> Door>  Lock 버튼 클릭> Slave Main UI 확인",
-      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock> Door 상태 확인(Unlock)\n3. Master Reboot\n4. Door Status 확인 및 인증 후 동작 확인",
-      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock> Door 상태 확인(Unlock)\n3. Slave Reboot\n4. Door Status 확인 및 인증 후 동작 확인",
-      "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock> Door 상태 확인(Unlock)\n3. Slave Power Off\n4. Status Tree> Door> Unlock> Door 상태 확인(Unlock)\n5. Slave Power On \n6. Door Status 확인 및 인증 후 동작 확인",
-      "[Lock Override]\n1. Door > Add Door > Door 생성\n2. Status Tree > Door > Manual Lock > Timed\n3. Timed : 30초 설정\n4. User에 있는 Lock Override Card로 Emergency Unlock 동작\n5. 30초 후 Door Status 및 Log 확인"
-    ],
-    "data": [
-      "Door 생성시 Open Time 확인\n: 3초/5초/10초/15초/30초/1분/3분/5분/10분/15분",
-      "[BioStar-X]\nUnlock Option\n> Once\n> Timed\n> Permanent",
-      "[BioStar-X]\nLock Option\n> Timed\n> Permanent",
-      "[BioStar-X]\nDoor Status",
-      "[BioStar-X]\nDoor 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치\n\nUnlock Option\n> Once\n> Timed\n> Permanent",
-      "[BioStar-X]\nDoor 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치\n\nLock Option\n> Timed\n> Permanent",
-      "[BioStar-X]\nDoor 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치\n\nUnlock Option\n> Once\n> Timed\n> Permanent",
-      "[BioStar-X]\nDoor 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치\n\nLock Option\n> Timed\n> Permanent",
-      "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치",
-      "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치",
-      "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
-      "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치",
-      "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
-      "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
-      "User\n> Lock Override 설정된 Card 포함"
-    ],
-    "expected_result": [
-      "Once 클릭시 Unlocked으로 동작되어야 하고, 설정된 Open time이 지나면 다시 Locked으로 동작되어야 한다.\n> BioStar-X 이전 Open 기능\n> Device  UI > Door Control > Unlock 아이콘 표시 확인필요",
-      "선택한 Door에 대해서 Unlock Option에 따라 Unlocked 으로 동작된다.\n> Once : 1회만 Unlock(Open)\n> Timed : 일정시간 동안만 Unlock(범위 1 ~ 86,400) - 입력한 시간까지 Unlock 유지 및 시간 이후 초기화 된다. 최대 24시간 초과 할 수 없음\n> Permanent : Unlocked 상태로 변경(Normalize(Release) 전까지 Unlock 유지/Manual Unlock)",
-      "선택한 Door에 대해서 Lock Option에 따라 Locked 으로 동작된다.\n> Timed : 일정시간 동안만 Lock(범위 1 ~ 86,400) - 입력한 시간까지 Lock 유지 및 시간 이후 초기화 된다. 최대 24시간 초과 할 수 없음\n> Permanent : Locked 상태로 변경(Normalize(Release) 전까지 Lock 유지/Manual Lock)",
-      "1. 선택한 Door에 대해서 Normalize 할수 있다. \n2. Door Status 아래와 같다,\n부팅 완료 후 Lock 상태를 유지해야 한다.\n> Unlocked -> Locked\n> Locked -> Locked\n> Normalize 수행 시에 UI상으로 자물쇠 아이콘 사라짐 확인",
-      "2. Unlock Option에 따라 unlock으로 동작한다.\n> Once : Open Time만큼 Unlock 후 door locked로 동작\n> Timed : 설정된 시간만큼 Unlock 후 normalize되며 manual unlock > door locked로 동작, door normalize log 남게 됨\n> Permanent : 지속적으로 Manual Unlock으로 동작\n> Door unlock request by operator / Door unlocked\n\n3. Normalize(Door release)로 동작한다.\n> Biostar : Door release request by operator / Door locked\n> Device : Successfully Normalized 팝업 출력 후 log 상에 Door release request로 남게 됨\n\n5. reboot 후에 door locked 상태 유지 확인",
-      "2. lock Option에 따라 lock으로 동작한다.\n> Timed : 설정된 시간만큼 lock 후 normalize되며 manual lock > door locked로 동작, door normalize log 남게 됨\n> Permanent : 지속적으로 Manual lock으로 동작\n> Door lock request by operator / Door locked\n\n3. Normalize(Door release)로 동작한다.\n> Biostar : Door release request by operator / Door locked\n> Device : Successfully Normalized 팝업 출력 후 log 상에 Door release request로 남게 됨\n\n5. reboot 후에 door locked 상태 유지 확인",
-      "2. Unlock Option에 따라 unlock으로 동작한다.\n> Once : Open Time만큼 Unlock 후 door locked로 동작\n> Timed : 설정된 시간만큼 Unlock 후 normalize되며 manual unlock > door locked로 동작, door normalize log 남게 됨\n> Permanent : 지속적으로 Manual Unlock으로 동작\n> Door unlock request by operator / Door unlocked",
-      "2. lock Option에 따라 lock으로 동작한다.\n> Timed : 설정된 시간만큼 lock 후 normalize되며 manual lock > door locked로 동작, door normalize log 남게 됨\n> Permanent : 지속적으로 Manual lock으로 동작\n> Door lock request by operator / Door locked",
-      "2. Door Manual Unlock으로 동작한다 (Lock Override 동작함)\n4. Door가 재부팅 후 Normalize되고, 로그 발생한다. (Door release request by operator) [재부팅 후 Normalize되는 이슈는 BS3 v1.4.0 릴리즈 이후 수정 예정 BS3FW-1952]\n> 이후 Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock으로 표시되어야 한다.\n> 경광등 연결하여 Relay On 동작 확인",
-      "2. Door가 Unlock 상태를 유지해야한다.\n> 장치 홈 화면, BiostarX Door Status 개방 자물쇠 아이콘 표시\n> Once의 경우 door open time이 지나면 door locked로 동작\n> Timed의 경우 시간이 지나면 manual unlock > door locked 상태로 동작\n\nlog 아래와 같이 표시됨\n> Biostar : Door unlock request by operator / door unlocked\n> 장치 : Door unlock request\n\n3. Door가 lock 상태를 유지해야한다.\n> 장치 홈 화면, BiostarX Door Status 잠금 자물쇠 아이콘 표시\n> Timed의 경우 시간이 지나면 manual lock > door locked 상태로 동작\n※BS3 v1.4.0 릴리즈 이후 수정 예정\n\nlog 아래와 같이 표시됨\n> Biostar : Door lock request by operator / door locked\n> 장치 : Door lock request",
-      "2. Door가 Unlock 상태를 유지해야한다.\n> 장치 홈 화면, BiostarX Door Status 개방 자물쇠 아이콘 표시\n> Once의 경우 door open time이 지나면 door locked로 동작\n> Timed의 경우 시간이 지나면 manual unlock > door locked 상태로 동작\n\nlog 아래와 같이 표시됨\n> Biostar : Door unlock request by operator / door unlocked\n> 장치 : Door unlock request\n\n3. Door가 lock 상태를 유지해야한다.\n> 장치 홈 화면, BiostarX Door Status 잠금 자물쇠 아이콘 표시\n> Timed의 경우 시간이 지나면 manual lock > door locked 상태로 동작\n\nlog 아래와 같이 표시됨\n> Biostar : Door lock request by operator / door locked\n> 장치 : Door lock request",
-      "2. Door가 Unlock 상태를 유지해야한다.\n> Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n4. Timed,Once의 경우 재부팅 시에 manual lock > door locked로 동작한다 (BS3 v1.4.0 릴리즈 이후 수정 예정)\n> Permanent의 경우 unlock 상태 유지\n",
-      "2. Door가 Unlock 상태를 유지해야한다.\n> Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n4. Timed의 경우 재부팅 시에 manual lock > door locked로 동작한다 (BS3 v1.4.0 릴리즈 이후 수정 예정)\n> Permanent의 경우 manual unlock 상태 유지",
-      "2. Door가 Unlock 상태를 유지해야한다.\n> Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n4. Door가 Unlock 상태 및 Unlock 로그 발생한다.\n> 경광등 연결하여 Relay  Off 동작 확인\n5. Disconnected된 장치가 연결된 경우, Relay가 동작되어야 한다.\n> 경광등 연결하여 Relay On 동작 확인\n> Manual Unlock 상태 유지\n> Timed의 경우 재부팅 시에 Manual Unlock > door unlocked로 동작 (BS3 v1.4.0 릴리즈 이후 수정 예정)",
-      "Emergency Unlock 상태 유지된다.\n> Door released by operator 로그 출력되며 Door Status에 Operator Lock 상태만 사라진다.\n※Emergency Unlock 해제되면 안 되며 Manual Lock 상태만 Normal로 바뀌어야함"
-    ]
+    "assignee": null,
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 15.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-373/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@36617974[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@33088d77[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6efbae4c[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@19efe5d1[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@52a92781[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@674cdaff[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@54f68194[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@32d137b6[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@295f8b42[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@284537b4[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@48dff909[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@73080b23[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": null,
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-373/watchers",
+      "watchCount": 1,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-04T13:28:58.000+0900",
+    "timeoriginalestimate": null,
+    "description": "https://jira.suprema.co.kr/browse/BDP-956\r\nMONITORING > Door Status 화면(BioStar 2 기준)\r\n> Door> Manual Locked, Manual Unlocked. Open, Clear Alarm와 같이 특정 상황에 따라 출입문의 상태를 임의로 제어",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p><span class=\"error\">&#91;장치간 RS485 연결&#93;</span><br/>1. Door&gt; Add Door&gt; Door 생성<br/>2. Status Tree&gt; Door&gt; Unlock&gt; Once 버튼 클릭<br/>3. Open time대로 동작되는지 확인</p></td><td><p>Door 생성시 Open Time 확인<br/>: 3초/5초/10초/15초/30초/1분/3분/5분/10분/15분</p></td><td><p>Once 클릭시 Unlocked으로 동작되어야 하고, 설정된 Open time이 지나면 다시 Locked으로 동작되어야 한다.<br/>&gt; BioStar-X 이전 Open 기능</p></td></tr><tr><td>2</td><td><p><span class=\"error\">&#91;Door 생성&#93;</span><br/>1. Status Tree&gt; Door&gt; Unlock 버튼 클릭<br/>2. Unlock Option 확인</p></td><td><p><span class=\"error\">&#91;BioStar-X&#93;</span><br/>Unlock Option<br/>&gt; Once<br/>&gt; Timed<br/>&gt; Permanent</p></td><td><p>선택한 Door에 대해서 Unlock Option에 따라 Unlocked 으로 동작된다.<br/>&gt; Once : 1회만 Unlock(Open)<br/>&gt; Timed : 일정시간 동안만 Unlock(범위 1 ~ 86,400) - 입력한 시간까지 Unlock 유지 및 시간 이후 초기화 된다. 최대 24시간 초과 할 수 없음<br/>&gt; Permanent : Unlocked 상태로 변경(Normalize(Release) 전까지 Unlock 유지/Manual Unlock)</p></td></tr><tr><td>3</td><td><p><span class=\"error\">&#91;Door 생성&#93;</span><br/>1. Status Tree&gt; Door&gt; Lock 버튼 클릭<br/>2. Lock Option 확인</p></td><td><p><span class=\"error\">&#91;BioStar-X&#93;</span><br/>Lock Option<br/>&gt; Timed<br/>&gt; Permanent</p></td><td><p>선택한 Door에 대해서 Lock Option에 따라 Locked 으로 동작된다.<br/>&gt; Timed : 일정시간 동안만 Lock(범위 1 ~ 86,400) - 입력한 시간까지 Lock 유지 및 시간 이후 초기화 된다. 최대 24시간 초과 할 수 없음<br/>&gt; Permanent : Locked 상태로 변경(Normalize(Release) 전까지 Lock 유지/Manual Lock)</p></td></tr><tr><td>4</td><td><p><span class=\"error\">&#91;Door 생성&#93;</span><br/>1. Status Tree&gt; Door&gt; Normalize 버튼 클릭<br/>2. Door Status 확인</p></td><td><p><span class=\"error\">&#91;BioStar-X&#93;</span><br/>Door Status</p></td><td><p>1. 선택한 Door에 대해서 Normalize 할수 있다. <br/>2. Door Status 아래와 같다,<br/>부팅 완료 후 Lock 상태를 유지해야 한다.<br/>&gt; Unlocked -&gt; Locked<br/>&gt; Locked -&gt; Locked<br/>&gt; Normalize 수행 시에 UI상으로 자물쇠 아이콘 사라짐 확인</p></td></tr><tr><td>5</td><td><p>1. Door&gt; Add Door&gt; Door 생성<br/>2. Status Tree&gt; Door&gt; Unlock 버튼 클릭&gt; Door 상태 확인(Unlock)<br/>3. Normalize 버튼 클릭&gt; Door 상태확인(Lock)<br/>4. 장치 Reboot<br/>5. 부팅완료 후 Door 상태확인</p></td><td><p><span class=\"error\">&#91;BioStar-X&#93;</span><br/>Door 생성<br/>&gt; 단일장치<br/>&gt; RS485 연결장치<br/>&gt; Master-Wiegand Reader 연결장치<br/>&gt; Master-Slave/DM20-Wiegand Reader 연결장치</p>\n\n<p>Unlock Option<br/>&gt; Once<br/>&gt; Timed<br/>&gt; Permanent</p></td><td><p>2. Unlock Option에 따라 unlock으로 동작한다.<br/>&gt; Once : Open Time만큼 Unlock 후 door locked로 동작<br/>&gt; Timed : 설정된 시간만큼 Unlock 후 normalize되며 manual unlock &gt; door locked로 동작, door normalize log 남게 됨<br/>&gt; Permanent : 지속적으로 Manual Unlock으로 동작<br/>&gt; Door unlock request by operator / Door unlocked</p>\n\n<p>3. Normalize(Door release)로 동작한다.<br/>&gt; Biostar : Door release request by operator / Door locked<br/>&gt; Device : Successfully Normalized 팝업 출력 후 log 상에 Door release request로 남게 됨</p>\n\n<p>5. reboot 후에 door locked 상태 유지 확인</p></td></tr><tr><td>6</td><td><p>1. Door&gt; Add Door&gt; Door 생성<br/>2. Status Tree&gt; Door&gt; Lock 버튼 클릭&gt; Door 상태 확인(Lock)<br/>3.Normalize 버튼 클릭&gt; Door 상태확인<br/>4. 장치 Reboot<br/>5. 부팅완료 후 Door 상태확인</p></td><td><p><span class=\"error\">&#91;BioStar-X&#93;</span><br/>Door 생성<br/>&gt; 단일장치<br/>&gt; RS485 연결장치<br/>&gt; Master-Wiegand Reader 연결장치<br/>&gt; Master-Slave/DM20-Wiegand Reader 연결장치</p>\n\n<p>Lock Option<br/>&gt; Timed<br/>&gt; Permanent</p></td><td><p>2. lock Option에 따라 lock으로 동작한다.<br/>&gt; Timed : 설정된 시간만큼 lock 후 normalize되며 manual lock &gt; door locked로 동작, door normalize log 남게 됨<br/>&gt; Permanent : 지속적으로 Manual lock으로 동작<br/>&gt; Door lock request by operator / Door locked</p>\n\n<p>3. Normalize(Door release)로 동작한다.<br/>&gt; Biostar : Door release request by operator / Door locked<br/>&gt; Device : Successfully Normalized 팝업 출력 후 log 상에 Door release request로 남게 됨</p>\n\n<p>5. reboot 후에 door locked 상태 유지 확인</p></td></tr><tr><td>7</td><td><p>1. Door&gt; Add Door&gt; Door 생성<br/>2. Status Tree&gt; Door&gt; Unlock 버튼 클릭&gt; Door 상태 확인(Unlock)</p></td><td><p><span class=\"error\">&#91;BioStar-X&#93;</span><br/>Door 생성<br/>&gt; 단일장치<br/>&gt; RS485 연결장치<br/>&gt; Master-Wiegand Reader 연결장치<br/>&gt; Master-Slave/DM20-Wiegand Reader 연결장치</p>\n\n<p>Unlock Option<br/>&gt; Once<br/>&gt; Timed<br/>&gt; Permanent</p></td><td><p>2. Unlock Option에 따라 unlock으로 동작한다.<br/>&gt; Once : Open Time만큼 Unlock 후 door locked로 동작<br/>&gt; Timed : 설정된 시간만큼 Unlock 후 normalize되며 manual unlock &gt; door locked로 동작, door normalize log 남게 됨<br/>&gt; Permanent : 지속적으로 Manual Unlock으로 동작<br/>&gt; Door unlock request by operator / Door unlocked</p></td></tr><tr><td>8</td><td><p>1. Door&gt; Add Door&gt; Door 생성<br/>2. Status Tree&gt; Door&gt; Lock 버튼 클릭&gt; Door 상태 확인</p></td><td><p><span class=\"error\">&#91;BioStar-X&#93;</span><br/>Door 생성<br/>&gt; 단일장치<br/>&gt; RS485 연결장치<br/>&gt; Master-Wiegand Reader 연결장치<br/>&gt; Master-Slave/DM20-Wiegand Reader 연결장치</p>\n\n<p>Lock Option<br/>&gt; Timed<br/>&gt; Permanent</p></td><td><p>2. lock Option에 따라 lock으로 동작한다.<br/>&gt; Timed : 설정된 시간만큼 lock 후 normalize되며 manual lock &gt; door locked로 동작, door normalize log 남게 됨<br/>&gt; Permanent : 지속적으로 Manual lock으로 동작<br/>&gt; Door lock request by operator / Door locked</p></td></tr><tr><td>9</td><td><p>1. Door&gt; Add Door&gt; Door 생성<br/>2. Status Tree&gt; Door&gt; Unlock 버튼 클릭&gt; Door 상태 확인(Unlock)<br/>3. Master Reboot<br/>4. Door Status 확인 및 인증 후 동작 확인</p></td><td><p>Door 생성 - Relay(Master)<br/>&gt; 단일장치<br/>&gt; RS 485 연결 장치</p></td><td><p>2. Door Manual Unlock으로 동작한다 (Lock Override 동작함)<br/>4. Door Control 동작에 따라 다르게 동작한다<br/>&gt; Permanent : Door가 재부팅되어도 Unlock 상태 유지된다.<br/>&gt; Timed 동작 시 : Door가 재부팅 후 Normalize되고, 로그 발생한다. (Door release request by operator)<br/>&gt; 이후 Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock으로 표시되어야 한다.<br/>&gt; 경광등 연결하여 Relay On 동작 확인</p></td></tr><tr><td>10</td><td><p>1. Door&gt; Add Door&gt; Door 생성<br/>2. Status Tree&gt; Door&gt; Unlock 버튼 클릭&gt; Master Main UI 확인<br/>3. Status Tree&gt; Door&gt; Lock 버튼 클릭&gt; Master Main UI 확인</p></td><td><p>Door 생성 - Relay(Master)<br/>&gt; 단일장치<br/>&gt; RS 485 연결 장치</p></td><td><p>2. Door가 Unlock 상태를 유지해야한다.<br/>&gt; 장치 홈 화면, BiostarX Door Status 개방 자물쇠 아이콘 표시<br/>&gt; Once의 경우 door open time이 지나면 door locked로 동작<br/>&gt; Timed의 경우 시간이 지나면 manual unlock &gt; door locked 상태로 동작</p>\n\n<p>log 아래와 같이 표시됨<br/>&gt; Biostar : Door unlock request by operator / door unlocked<br/>&gt; 장치 : Door unlock request</p>\n\n<p>3. Door가 lock 상태를 유지해야한다.<br/>&gt; 장치 홈 화면, BiostarX Door Status 잠금 자물쇠 아이콘 표시<br/>&gt; Timed의 경우 시간이 지나면 manual lock &gt; door locked 상태로 동작<br/>※BS3 v1.4.0 릴리즈 이후 수정 예정</p>\n\n<p>log 아래와 같이 표시됨<br/>&gt; Biostar : Door lock request by operator / door locked<br/>&gt; 장치 : Door lock request</p></td></tr><tr><td>11</td><td><p>1. Door&gt; Add Door&gt; Door 생성<br/>2. Status Tree&gt; Door&gt; Unlock 버튼 클릭&gt; Slave Main UI 확인<br/>3. Status Tree&gt; Door&gt;  Lock 버튼 클릭&gt; Slave Main UI 확인</p></td><td><p>Door 생성 - Relay(Slave)<br/>&gt; 단일장치<br/>&gt; RS 485 연결 장치</p></td><td><p>2. Door가 Unlock 상태를 유지해야한다.<br/>&gt; 장치 홈 화면, BiostarX Door Status 개방 자물쇠 아이콘 표시<br/>&gt; Once의 경우 door open time이 지나면 door locked로 동작<br/>&gt; Timed의 경우 시간이 지나면 manual unlock &gt; door locked 상태로 동작</p>\n\n<p>log 아래와 같이 표시됨<br/>&gt; Biostar : Door unlock request by operator / door unlocked<br/>&gt; 장치 : Door unlock request</p>\n\n<p>3. Door가 lock 상태를 유지해야한다.<br/>&gt; 장치 홈 화면, BiostarX Door Status 잠금 자물쇠 아이콘 표시<br/>&gt; Timed의 경우 시간이 지나면 manual lock &gt; door locked 상태로 동작</p>\n\n<p>log 아래와 같이 표시됨<br/>&gt; Biostar : Door lock request by operator / door locked<br/>&gt; 장치 : Door lock request</p></td></tr><tr><td>12</td><td><p>1. Door&gt; Add Door&gt; Door 생성<br/>2. Status Tree&gt; Door&gt; Unlock&gt; Door 상태 확인(Unlock)<br/>3. Master Reboot<br/>4. Door Status 확인 및 인증 후 동작 확인</p></td><td><p>Door 생성 - Relay(Master)<br/>&gt; 단일장치<br/>&gt; RS 485 연결 장치</p></td><td><p>2. Door가 Unlock 상태를 유지해야한다.<br/>&gt; Unlock 로그만 발생한다.<br/>&gt; 경광등 연결하여 Relay On 동작 확인<br/>4. Timed,Once의 경우 재부팅 시에 manual lock &gt; door locked로 동작한다 (BS3 v1.4.0 릴리즈 이후 수정 예정)<br/>&gt; Permanent의 경우 unlock 상태 유지</p></td></tr><tr><td>13</td><td><p>1. Door&gt; Add Door&gt; Door 생성<br/>2. Status Tree&gt; Door&gt; Unlock&gt; Door 상태 확인(Unlock)<br/>3. Slave Reboot<br/>4. Door Status 확인 및 인증 후 동작 확인</p></td><td><p>Door 생성 - Relay(Slave)<br/>&gt; 단일장치<br/>&gt; RS 485 연결 장치</p></td><td><p>2. Door가 Unlock 상태를 유지해야한다.<br/>&gt; Unlock 로그만 발생한다.<br/>&gt; 경광등 연결하여 Relay On 동작 확인<br/>4. Timed의 경우 재부팅 시에 manual lock &gt; door locked로 동작한다 (BS3 v1.4.0 릴리즈 이후 수정 예정)<br/>&gt; Permanent의 경우 manual unlock 상태 유지</p></td></tr><tr><td>14</td><td><p>1. Door&gt; Add Door&gt; Door 생성<br/>2. Status Tree&gt; Door&gt; Unlock&gt; Door 상태 확인(Unlock)<br/>3. Slave Power Off<br/>4. Status Tree&gt; Door&gt; Unlock&gt; Door 상태 확인(Unlock)<br/>5. Slave Power On <br/>6. Door Status 확인 및 인증 후 동작 확인</p></td><td><p>Door 생성 - Relay(Slave)<br/>&gt; 단일장치<br/>&gt; RS 485 연결 장치</p></td><td><p>2. Door가 Unlock 상태를 유지해야한다.<br/>&gt; Unlock 로그만 발생한다.<br/>&gt; 경광등 연결하여 Relay On 동작 확인<br/>4. Door가 Unlock 상태 및 Unlock 로그 발생한다.<br/>&gt; 경광등 연결하여 Relay  Off 동작 확인<br/>5. Disconnected된 장치가 연결된 경우, Relay가 동작되어야 한다.<br/>&gt; 경광등 연결하여 Relay On 동작 확인<br/>&gt; Manual Unlock 상태 유지<br/>&gt; Timed의 경우 재부팅 시에 Manual Unlock &gt; door unlocked로 동작 (BS3 v1.4.0 릴리즈 이후 수정 예정)</p></td></tr><tr><td>15</td><td><p><span class=\"error\">&#91;Lock Override&#93;</span><br/>1. Door &gt; Add Door &gt; Door 생성<br/>2. Status Tree &gt; Door &gt; Manual Lock &gt; Timed<br/>3. Timed : 30초 설정<br/>4. User에 있는 Lock Override Card로 Emergency Unlock 동작<br/>5. 30초 후 Door Status 및 Log 확인</p></td><td><p>User<br/>&gt; Lock Override 설정된 Card 포함</p></td><td><p>Emergency Unlock 상태 유지된다.<br/>&gt; Door released by operator 로그 출력되며 Door Status에 Operator Lock 상태만 사라진다.<br/>※Emergency Unlock 해제되면 안 되며 Manual Lock 상태만 Normal로 바뀌어야함</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [],
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 69670,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 35299,
+              "latestFinalId": 35299
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "[BSX지원기능][BDP-956] 서버 관리자가 출입문을 일정 시간 동안만 Locked/Unlocked로 제어할 수 있는 기능 (Door Mode Override)",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 19529,
+          "index": 1,
+          "step": "[장치간 RS485 연결]\n1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock> Once 버튼 클릭\n3. Open time대로 동작되는지 확인",
+          "data": "Door 생성시 Open Time 확인\n: 3초/5초/10초/15초/30초/1분/3분/5분/10분/15분",
+          "result": "Once 클릭시 Unlocked으로 동작되어야 하고, 설정된 Open time이 지나면 다시 Locked으로 동작되어야 한다.\n> BioStar-X 이전 Open 기능",
+          "attachments": []
+        },
+        {
+          "id": 19530,
+          "index": 2,
+          "step": "[Door 생성]\n1. Status Tree> Door> Unlock 버튼 클릭\n2. Unlock Option 확인",
+          "data": "[BioStar-X]\nUnlock Option\n> Once\n> Timed\n> Permanent",
+          "result": "선택한 Door에 대해서 Unlock Option에 따라 Unlocked 으로 동작된다.\n> Once : 1회만 Unlock(Open)\n> Timed : 일정시간 동안만 Unlock(범위 1 ~ 86,400) - 입력한 시간까지 Unlock 유지 및 시간 이후 초기화 된다. 최대 24시간 초과 할 수 없음\n> Permanent : Unlocked 상태로 변경(Normalize(Release) 전까지 Unlock 유지/Manual Unlock)",
+          "attachments": []
+        },
+        {
+          "id": 19531,
+          "index": 3,
+          "step": "[Door 생성]\n1. Status Tree> Door> Lock 버튼 클릭\n2. Lock Option 확인",
+          "data": "[BioStar-X]\nLock Option\n> Timed\n> Permanent",
+          "result": "선택한 Door에 대해서 Lock Option에 따라 Locked 으로 동작된다.\n> Timed : 일정시간 동안만 Lock(범위 1 ~ 86,400) - 입력한 시간까지 Lock 유지 및 시간 이후 초기화 된다. 최대 24시간 초과 할 수 없음\n> Permanent : Locked 상태로 변경(Normalize(Release) 전까지 Lock 유지/Manual Lock)",
+          "attachments": []
+        },
+        {
+          "id": 19532,
+          "index": 4,
+          "step": "[Door 생성]\n1. Status Tree> Door> Normalize 버튼 클릭\n2. Door Status 확인",
+          "data": "[BioStar-X]\nDoor Status",
+          "result": "1. 선택한 Door에 대해서 Normalize 할수 있다. \n2. Door Status 아래와 같다,\n부팅 완료 후 Lock 상태를 유지해야 한다.\n> Unlocked -> Locked\n> Locked -> Locked\n> Normalize 수행 시에 UI상으로 자물쇠 아이콘 사라짐 확인",
+          "attachments": []
+        },
+        {
+          "id": 19533,
+          "index": 5,
+          "step": "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock 버튼 클릭> Door 상태 확인(Unlock)\n3. Normalize 버튼 클릭> Door 상태확인(Lock)\n4. 장치 Reboot\n5. 부팅완료 후 Door 상태확인",
+          "data": "[BioStar-X]\nDoor 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치\n\nUnlock Option\n> Once\n> Timed\n> Permanent",
+          "result": "2. Unlock Option에 따라 unlock으로 동작한다.\n> Once : Open Time만큼 Unlock 후 door locked로 동작\n> Timed : 설정된 시간만큼 Unlock 후 normalize되며 manual unlock > door locked로 동작, door normalize log 남게 됨\n> Permanent : 지속적으로 Manual Unlock으로 동작\n> Door unlock request by operator / Door unlocked\n\n3. Normalize(Door release)로 동작한다.\n> Biostar : Door release request by operator / Door locked\n> Device : Successfully Normalized 팝업 출력 후 log 상에 Door release request로 남게 됨\n\n5. reboot 후에 door locked 상태 유지 확인",
+          "attachments": []
+        },
+        {
+          "id": 19534,
+          "index": 6,
+          "step": "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Lock 버튼 클릭> Door 상태 확인(Lock)\n3.Normalize 버튼 클릭> Door 상태확인\n4. 장치 Reboot\n5. 부팅완료 후 Door 상태확인",
+          "data": "[BioStar-X]\nDoor 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치\n\nLock Option\n> Timed\n> Permanent",
+          "result": "2. lock Option에 따라 lock으로 동작한다.\n> Timed : 설정된 시간만큼 lock 후 normalize되며 manual lock > door locked로 동작, door normalize log 남게 됨\n> Permanent : 지속적으로 Manual lock으로 동작\n> Door lock request by operator / Door locked\n\n3. Normalize(Door release)로 동작한다.\n> Biostar : Door release request by operator / Door locked\n> Device : Successfully Normalized 팝업 출력 후 log 상에 Door release request로 남게 됨\n\n5. reboot 후에 door locked 상태 유지 확인",
+          "attachments": []
+        },
+        {
+          "id": 19535,
+          "index": 7,
+          "step": "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock 버튼 클릭> Door 상태 확인(Unlock)",
+          "data": "[BioStar-X]\nDoor 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치\n\nUnlock Option\n> Once\n> Timed\n> Permanent",
+          "result": "2. Unlock Option에 따라 unlock으로 동작한다.\n> Once : Open Time만큼 Unlock 후 door locked로 동작\n> Timed : 설정된 시간만큼 Unlock 후 normalize되며 manual unlock > door locked로 동작, door normalize log 남게 됨\n> Permanent : 지속적으로 Manual Unlock으로 동작\n> Door unlock request by operator / Door unlocked",
+          "attachments": []
+        },
+        {
+          "id": 19536,
+          "index": 8,
+          "step": "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Lock 버튼 클릭> Door 상태 확인",
+          "data": "[BioStar-X]\nDoor 생성\n> 단일장치\n> RS485 연결장치\n> Master-Wiegand Reader 연결장치\n> Master-Slave/DM20-Wiegand Reader 연결장치\n\nLock Option\n> Timed\n> Permanent",
+          "result": "2. lock Option에 따라 lock으로 동작한다.\n> Timed : 설정된 시간만큼 lock 후 normalize되며 manual lock > door locked로 동작, door normalize log 남게 됨\n> Permanent : 지속적으로 Manual lock으로 동작\n> Door lock request by operator / Door locked",
+          "attachments": []
+        },
+        {
+          "id": 19537,
+          "index": 9,
+          "step": "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock 버튼 클릭> Door 상태 확인(Unlock)\n3. Master Reboot\n4. Door Status 확인 및 인증 후 동작 확인",
+          "data": "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치",
+          "result": "2. Door Manual Unlock으로 동작한다 (Lock Override 동작함)\n4. Door Control 동작에 따라 다르게 동작한다\n> Permanent : Door가 재부팅되어도 Unlock 상태 유지된다.\n> Timed 동작 시 : Door가 재부팅 후 Normalize되고, 로그 발생한다. (Door release request by operator)\n> 이후 Manual Lock/Unlock시 Door Status Type이 Operator Lock/Unlock으로 표시되어야 한다.\n> 경광등 연결하여 Relay On 동작 확인",
+          "attachments": []
+        },
+        {
+          "id": 19538,
+          "index": 10,
+          "step": "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock 버튼 클릭> Master Main UI 확인\n3. Status Tree> Door> Lock 버튼 클릭> Master Main UI 확인",
+          "data": "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치",
+          "result": "2. Door가 Unlock 상태를 유지해야한다.\n> 장치 홈 화면, BiostarX Door Status 개방 자물쇠 아이콘 표시\n> Once의 경우 door open time이 지나면 door locked로 동작\n> Timed의 경우 시간이 지나면 manual unlock > door locked 상태로 동작\n\nlog 아래와 같이 표시됨\n> Biostar : Door unlock request by operator / door unlocked\n> 장치 : Door unlock request\n\n3. Door가 lock 상태를 유지해야한다.\n> 장치 홈 화면, BiostarX Door Status 잠금 자물쇠 아이콘 표시\n> Timed의 경우 시간이 지나면 manual lock > door locked 상태로 동작\n※BS3 v1.4.0 릴리즈 이후 수정 예정\n\nlog 아래와 같이 표시됨\n> Biostar : Door lock request by operator / door locked\n> 장치 : Door lock request",
+          "attachments": []
+        },
+        {
+          "id": 19539,
+          "index": 11,
+          "step": "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock 버튼 클릭> Slave Main UI 확인\n3. Status Tree> Door>  Lock 버튼 클릭> Slave Main UI 확인",
+          "data": "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
+          "result": "2. Door가 Unlock 상태를 유지해야한다.\n> 장치 홈 화면, BiostarX Door Status 개방 자물쇠 아이콘 표시\n> Once의 경우 door open time이 지나면 door locked로 동작\n> Timed의 경우 시간이 지나면 manual unlock > door locked 상태로 동작\n\nlog 아래와 같이 표시됨\n> Biostar : Door unlock request by operator / door unlocked\n> 장치 : Door unlock request\n\n3. Door가 lock 상태를 유지해야한다.\n> 장치 홈 화면, BiostarX Door Status 잠금 자물쇠 아이콘 표시\n> Timed의 경우 시간이 지나면 manual lock > door locked 상태로 동작\n\nlog 아래와 같이 표시됨\n> Biostar : Door lock request by operator / door locked\n> 장치 : Door lock request",
+          "attachments": []
+        },
+        {
+          "id": 19540,
+          "index": 12,
+          "step": "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock> Door 상태 확인(Unlock)\n3. Master Reboot\n4. Door Status 확인 및 인증 후 동작 확인",
+          "data": "Door 생성 - Relay(Master)\n> 단일장치\n> RS 485 연결 장치",
+          "result": "2. Door가 Unlock 상태를 유지해야한다.\n> Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n4. Timed,Once의 경우 재부팅 시에 manual lock > door locked로 동작한다 (BS3 v1.4.0 릴리즈 이후 수정 예정)\n> Permanent의 경우 unlock 상태 유지\n",
+          "attachments": []
+        },
+        {
+          "id": 19541,
+          "index": 13,
+          "step": "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock> Door 상태 확인(Unlock)\n3. Slave Reboot\n4. Door Status 확인 및 인증 후 동작 확인",
+          "data": "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
+          "result": "2. Door가 Unlock 상태를 유지해야한다.\n> Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n4. Timed의 경우 재부팅 시에 manual lock > door locked로 동작한다 (BS3 v1.4.0 릴리즈 이후 수정 예정)\n> Permanent의 경우 manual unlock 상태 유지",
+          "attachments": []
+        },
+        {
+          "id": 19542,
+          "index": 14,
+          "step": "1. Door> Add Door> Door 생성\n2. Status Tree> Door> Unlock> Door 상태 확인(Unlock)\n3. Slave Power Off\n4. Status Tree> Door> Unlock> Door 상태 확인(Unlock)\n5. Slave Power On \n6. Door Status 확인 및 인증 후 동작 확인",
+          "data": "Door 생성 - Relay(Slave)\n> 단일장치\n> RS 485 연결 장치",
+          "result": "2. Door가 Unlock 상태를 유지해야한다.\n> Unlock 로그만 발생한다.\n> 경광등 연결하여 Relay On 동작 확인\n4. Door가 Unlock 상태 및 Unlock 로그 발생한다.\n> 경광등 연결하여 Relay  Off 동작 확인\n5. Disconnected된 장치가 연결된 경우, Relay가 동작되어야 한다.\n> 경광등 연결하여 Relay On 동작 확인\n> Manual Unlock 상태 유지\n> Timed의 경우 재부팅 시에 Manual Unlock > door unlocked로 동작 (BS3 v1.4.0 릴리즈 이후 수정 예정)",
+          "attachments": []
+        },
+        {
+          "id": 19916,
+          "index": 15,
+          "step": "[Lock Override]\n1. Door > Add Door > Door 생성\n2. Status Tree > Door > Manual Lock > Timed\n3. Timed : 30초 설정\n4. User에 있는 Lock Override Card로 Emergency Unlock 동작\n5. 30초 후 Door Status 및 Log 확인",
+          "data": "User\n> Lock Override 설정된 Card 포함",
+          "result": "Emergency Unlock 상태 유지된다.\n> Door released by operator 로그 출력되며 Door Status에 Operator Lock 상태만 사라진다.\n※Emergency Unlock 해제되면 안 되며 Manual Lock 상태만 Normal로 바뀌어야함",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [],
+      "maxResults": 0,
+      "total": 0,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+      "name": "미할당",
+      "id": "10100"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+      "name": "할 일",
+      "id": "10000",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "할 일"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
+      "name": "김소영",
+      "key": "김소영",
+      "emailAddress": "sykim@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+      },
+      "displayName": "김소영",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzzfq7:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2025-02-25T08:54:16.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }

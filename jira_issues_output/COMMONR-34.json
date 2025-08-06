@@ -1,123 +1,1333 @@
 {
-  "id": "COMMONR-34",
-  "content": [
-    [
-      1,
-      "1. Door > Add Door > Open Time 설정 > Apply\n2. 인증 & Exit 버튼으로 Open Time 확인(최소/중간/최대)",
-      "Open Time\n> 1s, 3s(Default), 5s, 10s, 15s, 30s, 1m, 3m, 5m, 10m, 15m",
-      "1. 설정한값이 저장된다.\n2. 인증성공 혹은 Exit 버튼에 의해 설정된 Open Time으로 동작한다."
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "12476",
+  "self": "https://jira.suprema.co.kr/rest/api/2/issue/12476",
+  "key": "COMMONR-34",
+  "fields": {
+    "resolution": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/resolution/10000",
+      "id": "10000",
+      "description": "[사용안함] Work has been completed on this issue.",
+      "name": "완료(Done)"
+    },
+    "customfield_13103": null,
+    "customfield_10510": null,
+    "customfield_10500": "2.0",
+    "customfield_10501": null,
+    "customfield_10502": null,
+    "customfield_12802": null,
+    "customfield_12804": null,
+    "customfield_10505": null,
+    "customfield_12803": null,
+    "customfield_10506": null,
+    "customfield_12806": null,
+    "customfield_10507": null,
+    "customfield_12805": null,
+    "customfield_10508": null,
+    "customfield_12808": null,
+    "customfield_10509": null,
+    "lastViewed": null,
+    "customfield_10180": null,
+    "customfield_10181": null,
+    "customfield_10182": null,
+    "customfield_10183": null,
+    "customfield_10184": null,
+    "customfield_10185": null,
+    "labels": [],
+    "customfield_11702": null,
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [
+      {
+        "id": "51429",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/51429",
+        "type": {
+          "id": "10001",
+          "name": "Cloners",
+          "inward": "is cloned by",
+          "outward": "clones",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10001"
+        },
+        "inwardIssue": {
+          "id": "60986",
+          "key": "BCRTC-116",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/60986",
+          "fields": {
+            "summary": "출입문 - 옵션",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "할 일",
+              "id": "10000",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "Represents a Test",
+              "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+              "name": "Test",
+              "subtask": false
+            }
+          }
+        }
+      },
+      {
+        "id": "41006",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/41006",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "50913",
+          "key": "BLNIIFW-1031",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/50913",
+          "fields": {
+            "summary": "Exit button 으로 Door Open 시 장치 로그 출력 오류.",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "47892",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/47892",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "57110",
+          "key": "BS2AFW-47",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/57110",
+          "fields": {
+            "summary": "Action > Alert Sound 출력 안됨",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "47893",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/47893",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "57596",
+          "key": "BS2AFW-151",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/57596",
+          "fields": {
+            "summary": "출입문 설정 에서 Alert Sound > BS2a 장치 선택 시  'Alert Sound Type' 가 아닌 ' Buzzer Volume' 로 출력",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "11336",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11336",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "15016",
+          "key": "TIIDFI-470",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/15016",
+          "fields": {
+            "summary": "Open Time(15분)으로 설정된 시간에 대해서 1초 늦게 동작이 되는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
+              "name": "Critical (A+)",
+              "id": "1"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "63236",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63236",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "72330",
+          "key": "BS3FW-1968",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72330",
+          "fields": {
+            "summary": "Door open request by exit button 로그 출력되지 않음",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "63245",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63245",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "72334",
+          "key": "BS3FW-1969",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72334",
+          "fields": {
+            "summary": "Exit Button 에 입력이 감지되었을 때, Relay 동작하는 현상",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
+              "name": "Serious (A)",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+              "name": "버그",
+              "subtask": false,
+              "avatarId": 10303
+            }
+          }
+        }
+      },
+      {
+        "id": "14511",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/14511",
+        "type": {
+          "id": "10201",
+          "name": "Defect",
+          "inward": "created by",
+          "outward": "created",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
+        },
+        "outwardIssue": {
+          "id": "19701",
+          "key": "AUTODI-138",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19701",
+          "fields": {
+            "summary": "[Door] Access Control의 Door에서 Use Automatic Door에 대한 기능 추가 요청",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
+              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
+              "name": "열림",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "할 일"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
+              "id": "4",
+              "description": "기존 기능이나 작업의 개선점.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
+              "name": "개선",
+              "subtask": false,
+              "avatarId": 10310
+            }
+          }
+        }
+      },
+      {
+        "id": "11160",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/11160",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "14772",
+          "key": "BEWIIFWDI-16",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/14772",
+          "fields": {
+            "summary": "[Requirement] 출입문 - 옵션",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "10463",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10463",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "outwardIssue": {
+          "id": "12975",
+          "key": "BLIIFWI-83",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12975",
+          "fields": {
+            "summary": "[Requirement] 출입문 - 옵션",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "35004",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/35004",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "45606",
+          "key": "BAS-486",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/45606",
+          "fields": {
+            "summary": "Test Case 작성",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
+              "name": "미할당",
+              "id": "10100"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
+              "id": "5",
+              "description": "이슈의 부작업",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
+              "name": "부작업",
+              "subtask": true,
+              "avatarId": 10316
+            }
+          }
+        }
+      },
+      {
+        "id": "10429",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/10429",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "12942",
+          "key": "TIIDFI-54",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12942",
+          "fields": {
+            "summary": "[Requirement] 출입문 - 옵션",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
+              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "닫힘",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+              "name": "Minor (C)",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
+              "id": "2",
+              "description": "개발해야할 제품의 새 기능.",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
+              "name": "새 기능",
+              "subtask": false,
+              "avatarId": 10311
+            }
+          }
+        }
+      },
+      {
+        "id": "12150",
+        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/12150",
+        "type": {
+          "id": "10003",
+          "name": "Relates",
+          "inward": "relates to",
+          "outward": "relates to",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
+        },
+        "inwardIssue": {
+          "id": "15834",
+          "key": "COMMONR-135",
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/15834",
+          "fields": {
+            "summary": "자동문 지원 Option 제공 ",
+            "status": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+              "name": "완료",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "완료"
+              }
+            },
+            "priority": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10000",
+              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/blocker.svg",
+              "name": "Fatal (S)",
+              "id": "10000"
+            },
+            "issuetype": {
+              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10101",
+              "id": "10101",
+              "description": "",
+              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10313&avatarType=issuetype",
+              "name": "Requirement",
+              "subtask": false,
+              "avatarId": 10313
+            }
+          }
+        }
+      }
     ],
-    [
-      2,
-      "1. Door > Add Door > Door Sensor 설정 > Apply\n2. Option > Use Automatic Door 및 Lock When door is closed UI 확인\n",
-      "Lock When door is closed(닫힘 시 잠금)\n> Off(Default)/On\nUse Automatic Door(자동문 사용)\n> Off(Default)/On",
-      "1. Door Sensor 미사용 시 해당 옵션은 미표시된다.\n2. 두 옵션은 동시에 사용할 수 없다.\n> Use Automatic Door: ON 시 Lock When door is closed는 OFF로 동작\n> Lock When door is closed: ON 시 Use Automatic Door UI 미표시"
+    "assignee": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EC%A1%B0%EC%9E%84%EC%84%B1",
+      "name": "조임성",
+      "key": "조임성",
+      "emailAddress": "isjo@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607"
+      },
+      "displayName": "조임성",
+      "active": false,
+      "timeZone": "Asia/Seoul"
+    },
+    "components": [],
+    "customfield_10170": null,
+    "customfield_10171": null,
+    "customfield_10172": null,
+    "customfield_10174": null,
+    "customfield_10175": null,
+    "customfield_10176": null,
+    "customfield_10177": null,
+    "customfield_10178": null,
+    "customfield_10179": null,
+    "customfield_10600": 12.0,
+    "customfield_10601": [],
+    "customfield_12901": null,
+    "customfield_10602": null,
+    "customfield_12900": null,
+    "subtasks": [],
+    "reporter": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "customfield_10168": null,
+    "customfield_10169": null,
+    "customfield_11800": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-34/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
+      "id": "10000",
+      "description": "Represents a Test",
+      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
+      "name": "Test",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "COMMONR",
+      "name": "Common Requirement And Test Case",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
+        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
+        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
+        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
+      },
+      "projectCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "Requirements And Test Cases For The BioStar System Device",
+        "name": "BioStar System Device Requirement And Test Case"
+      }
+    },
+    "customfield_11000": null,
+    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@73618218[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@1c40804b[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@40b07eca[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@58eaec4f[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@2255e4d4[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@6ff5ef0b[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@2c708a11[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@23f78344[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@2e09a0aa[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@6e449fd7[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@464ca00c[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@59bef622[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "resolutiondate": "2016-02-25T13:30:41.000+0900",
+    "watches": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-34/watchers",
+      "watchCount": 2,
+      "isWatching": false
+    },
+    "customfield_11900": null,
+    "customfield_11901": null,
+    "updated": "2025-08-01T11:01:12.000+0900",
+    "timeoriginalestimate": null,
+    "description": "출입문 옵션 설정 및 동작에 이상이 없는지 확인\r\n \r\n (/) 자동문 경우 : 출입문의 닫힘 신호를 기다리지 않고 잠금 장치 Lock",
+    "customfield_10251": null,
+    "customfield_10252": null,
+    "customfield_10253": null,
+    "customfield_10254": null,
+    "customfield_10255": null,
+    "timetracking": {},
+    "customfield_10257": null,
+    "customfield_10247": null,
+    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. Door &gt; Add Door &gt; Open Time 설정 &gt; Apply<br/>2. 인증 &amp; Exit 버튼으로 Open Time 확인(최소/중간/최대)</p></td><td><p>Open Time<br/>&gt; 1s, 3s(Default), 5s, 10s, 15s, 30s, 1m, 3m, 5m, 10m, 15m</p></td><td><p>1. 설정한값이 저장된다.<br/>2. 인증성공 혹은 Exit 버튼에 의해 설정된 Open Time으로 동작한다.</p></td></tr><tr><td>2</td><td><p>1. Door &gt; Add Door &gt; Door Sensor 설정 &gt; Apply<br/>2. Option &gt; Use Automatic Door 및 Lock When door is closed UI 확인</p></td><td><p>Lock When door is closed(닫힘 시 잠금)<br/>&gt; Off(Default)/On<br/>Use Automatic Door(자동문 사용)<br/>&gt; Off(Default)/On</p></td><td><p>1. Door Sensor 미사용 시 해당 옵션은 미표시된다.<br/>2. 두 옵션은 동시에 사용할 수 없다.<br/>&gt; Use Automatic Door: ON 시 Lock When door is closed는 OFF로 동작<br/>&gt; Lock When door is closed: ON 시 Use Automatic Door UI 미표시</p></td></tr><tr><td>3</td><td><p>1. Door&gt; Use Automatic Door 설정<br/>2. Exit Button &amp; Door Sensor 접지<br/>3. Relay 발생 후 Door Open<br/>4. Door Open된 상태에서의 Relay 동작 확인</p></td><td><p>Open Time: 5sec</p>\n\n<p>Use Automatic Door : On</p></td><td><p>1. 문열림 상태 상관없이 Open Time이 지나면 Relay Off로 동작한다.</p></td></tr><tr><td>4</td><td><p>1. Door&gt; Use Automatic Door 설정<br/>2. Exit Button &amp; Door Sensor 접지<br/>3. Relay 발생 후 Door Open<br/>4. Door Open된 상태에서의 Relay 동작 확인</p></td><td><p>Open Time: 5sec</p>\n\n<p>&gt; Use Automatic Door : Off</p></td><td><p>1. 문열림 상태에서는 Open Time이 지나더라도 Relay On을 유지한다.</p></td></tr><tr><td>5</td><td><p>1. Door&gt; Lock when door is closed 설정<br/>2. Exit Button &amp; Door Sensor 접지<br/>3. Door Open된 상태에서의 Open Timeout 전 Door Sensor 접지해제<br/>4. Relay 동작확인</p></td><td><p>Open Time: 30sec</p>\n\n<p>Lock when door is closed: On</p></td><td><p>1. Lock 되면서 Relay Off로 동작한다.</p></td></tr><tr><td>6</td><td><p>1. Door&gt; Lock when door is closed 설정<br/>2. Exit Button &amp; Door Sensor 접지<br/>3. Door Open 상태에서 Door Sensor 접지/해제 반복<br/>4. Relay 동작확인</p></td><td><p>Open Time: 30sec</p>\n\n<p>Lock when door is closed: Off</p></td><td><p>1. Open Time 동안 문열고 닫기를 여러번 반복할 수 있다.<br/>2. Open Time이 지난 후 Lock된다.</p></td></tr><tr><td>7</td><td><p>1. Door&gt; Add Door&gt; Exit Button 설정<br/>2. Exit Button 설정에 따른 UI 표시유무 확인</p></td><td><p><a href=\"https://jira.suprema.co.kr/browse/BDP-523\" title=\"Exit button 이 relay 를 동작하지 않도록 하는 옵션\" class=\"issue-link\" data-issue-key=\"BDP-523\"><del>BDP-523</del></a></p></td><td><p>1. Exit Button 설정시 \"Does not activate relay\" 옵션 표시된다.<br/>&gt; Exit Button 미설정시 해당옵션 미표시<br/>2. \"Does not activate relay\" 옵션의 Default 값은 \"OFF\"이다.</p></td></tr><tr><td>8</td><td><p>1. Door&gt; Exit Button 설정<br/>2. Does not activate relay 설정<br/>3. Exit Button 접지</p></td><td><p>Does not activate relay: OFF</p></td><td><p>1. Exit Button 에 입력시 Open Tiem 만큼 relay 가 동작된다.<br/>국문 : 퇴실 버튼에 의한 출입문 개방 요청 <br/>영문 : Door open request by exit button <br/>2. 이후 설정된 Open Time이 지나면 Door Locked 로그가 남는다.</p></td></tr><tr><td>9</td><td><p>1. Door&gt; Exit Button 설정<br/>2. Does not activate relay 설정<br/>3. Exit Button 접지<br/>4. 동작 및 로그 확인</p></td><td><p>Does not activate relay: ON</p></td><td><p>1. Exit Button 에 입력이 감지되어도 relay 는 동작하지 않지만 출입문 개방에 대한 로그는 남는다.<br/>&gt; Door open request by exit button (Relay does not activate) &amp; Door Unlocked 로그 출력<br/>※ 국문 - 퇴실 버튼 입력에 의한 출입문 개방 요청<br/>2. 이후 설정된 Open Time이 지나면 Door Locked 로그가 남는다.</p>\n\n<p>※UZ Door의 경우  Unlock - Lock 이 아닌 Timer로 unlock - lock을 요청했다는 로그 하나로 하기 때문에 로그를 남기지 않음</p></td></tr><tr><td>10</td><td><p>1. Door&gt; Exit button 설정 <br/>2. Does not activate relay 설정<br/>3. Exit Button &amp; Door Sensor 접지<br/>4. 동작 및 로그 확인</p></td><td><p>Does not activate relay: ON</p></td><td><p>1. 옵션이 ON된 상태에서 Exit Button 후 Door Sensor 접지시 Forced Door Open 으로 동작하지 않는다.<br/>&gt; Door Open request by exit button &amp; Door Unlocked &amp; Door Opened 로그가 남는다.</p></td></tr><tr><td>11</td><td><p>1. Door&gt; Exit button 설정<br/>2. Does not activate relay 설정<br/>3. Held Open Time 설정<br/>4. Exit Button 접지 후 Held Open Time 만큼 Door Sensor 접지유지<br/>5. 동작 및 로그 확인</p></td><td><p>Does not activate relay: ON</p>\n\n<p>Held Open Time : 임의설정</p></td><td><p>1. Held Door Opened 로 동작된다.<br/>&gt; Door Open request by exit button &amp; Door Unlocked &amp; Door Opened &amp; Held Door Opened 로그가 남는다.<br/>2. 접지 해제시 Door Locked &amp; Door Closed 로그가 남는다.</p></td></tr><tr><td>12</td><td><p>1. Door&gt; Exit button 설정<br/>2. Door &gt; Does not activate relay 설정 <br/>3. Door &gt; Add Door &gt; Alarm &gt; Held Open Time을 설정<br/>4. Door &gt; Add Door &gt; Alarm : Held Open의 Action 설정<br/>5. Exit Button &amp; Door Sensor 접지</p></td><td><p>1. Does not activate relay : On<br/>2. Held Open Time : 5sec<br/>3. Action - Ouput/Alert Sound</p>\n\n<ul>\n<li>Action Device<br/>1. Master 장치 선택<br/>2. Slave 장치 선택<br/>3. SIO2 선택<br/>4. DM20 선택</li>\n</ul>\n</td><td><p>1. Output 설정한 장치에서 Action 이 발생한다.<br/>2. Alert sound 가 발생하는 도중 Door Closed시 Alarm Clear가 된다.</p></td></tr></table>",
+    "customfield_10248": null,
+    "customfield_10006": [
+      "COMMONR-33"
     ],
-    [
-      3,
-      "1. Door> Use Automatic Door 설정\n2. Exit Button & Door Sensor 접지\n3. Relay 발생 후 Door Open\n4. Door Open된 상태에서의 Relay 동작 확인\n",
-      "Open Time: 5sec\n\nUse Automatic Door : On",
-      "1. 문열림 상태 상관없이 Open Time이 지나면 Relay Off로 동작한다."
-    ],
-    [
-      4,
-      "1. Door> Use Automatic Door 설정\n2. Exit Button & Door Sensor 접지\n3. Relay 발생 후 Door Open\n4. Door Open된 상태에서의 Relay 동작 확인\n",
-      "Open Time: 5sec\n\n> Use Automatic Door : Off",
-      "1. 문열림 상태에서는 Open Time이 지나더라도 Relay On을 유지한다."
-    ],
-    [
-      5,
-      "1. Door> Lock when door is closed 설정\n2. Exit Button & Door Sensor 접지\n3. Door Open된 상태에서의 Open Timeout 전 Door Sensor 접지해제\n4. Relay 동작확인",
-      "Open Time: 30sec\n\nLock when door is closed: On",
-      "1. Lock 되면서 Relay Off로 동작한다."
-    ],
-    [
-      6,
-      "1. Door> Lock when door is closed 설정\n2. Exit Button & Door Sensor 접지\n3. Door Open 상태에서 Door Sensor 접지/해제 반복\n4. Relay 동작확인",
-      "Open Time: 30sec\n\nLock when door is closed: Off",
-      "1. Open Time 동안 문열고 닫기를 여러번 반복할 수 있다.\n2. Open Time이 지난 후 Lock된다."
-    ],
-    [
-      7,
-      "1. Door> Add Door> Exit Button 설정\n2. Exit Button 설정에 따른 UI 표시유무 확인",
-      "[BDP-523]",
-      "1. Exit Button 설정시 \"Does not activate relay\" 옵션 표시된다.\n> Exit Button 미설정시 해당옵션 미표시\n2. \"Does not activate relay\" 옵션의 Default 값은 \"OFF\"이다."
-    ],
-    [
-      8,
-      "1. Door> Exit Button 설정\n2. Does not activate relay 설정\n3. Exit Button 접지\n",
-      "Does not activate relay: OFF",
-      "1. Exit Button 에 입력시 Open Tiem 만큼 relay 가 동작된다.\n국문 : 퇴실 버튼에 의한 출입문 개방 요청 \n영문 : Door open request by exit button \n2. 이후 설정된 Open Time이 지나면 Door Locked 로그가 남는다."
-    ],
-    [
-      9,
-      "1. Door> Exit Button 설정\n2. Does not activate relay 설정\n3. Exit Button 접지\n4. 동작 및 로그 확인",
-      "Does not activate relay: ON",
-      "1. Exit Button 에 입력이 감지되어도 relay 는 동작하지 않지만 출입문 개방에 대한 로그는 남는다.\n> Door open request by exit button (Relay does not activate) & Door Unlocked 로그 출력\n※ 국문 - 퇴실 버튼 입력에 의한 출입문 개방 요청\n2. 이후 설정된 Open Time이 지나면 Door Locked 로그가 남는다.\n\n※UZ Door의 경우  Unlock - Lock 이 아닌 Timer로 unlock - lock을 요청했다는 로그 하나로 하기 때문에 로그를 남기지 않음"
-    ],
-    [
-      10,
-      "1. Door> Exit button 설정 \n2. Does not activate relay 설정\n3. Exit Button & Door Sensor 접지\n4. 동작 및 로그 확인",
-      "Does not activate relay: ON",
-      "1. 옵션이 ON된 상태에서 Exit Button 후 Door Sensor 접지시 Forced Door Open 으로 동작하지 않는다.\n> Door Open request by exit button & Door Unlocked & Door Opened 로그가 남는다."
-    ],
-    [
-      11,
-      "1. Door> Exit button 설정\n2. Does not activate relay 설정\n3. Held Open Time 설정\n4. Exit Button 접지 후 Held Open Time 만큼 Door Sensor 접지유지\n5. 동작 및 로그 확인",
-      "Does not activate relay: ON\n\nHeld Open Time : 임의설정",
-      "1. Held Door Opened 로 동작된다.\n> Door Open request by exit button & Door Unlocked & Door Opened & Held Door Opened 로그가 남는다.\n2. 접지 해제시 Door Locked & Door Closed 로그가 남는다."
-    ],
-    [
-      12,
-      "1. Door> Exit button 설정\n2. Door > Does not activate relay 설정 \n3. Door > Add Door > Alarm > Held Open Time을 설정\n4. Door > Add Door > Alarm : Held Open의 Action 설정\n5. Exit Button & Door Sensor 접지\n",
-      "1. Does not activate relay : On\n2. Held Open Time : 5sec\n3. Action - Ouput/Alert Sound\n\n* Action Device\n1. Master 장치 선택\n2. Slave 장치 선택\n3. SIO2 선택\n4. DM20 선택",
-      "1. Output 설정한 장치에서 Action 이 발생한다.\n2. Alert sound 가 발생하는 도중 Door Closed시 Alarm Clear가 된다."
-    ]
-  ],
-  "metadata": {
-    "key": "COMMONR-34",
-    "description": "",
-    "test_step": [
-      "1. Door > Add Door > Open Time 설정 > Apply\n2. 인증 & Exit 버튼으로 Open Time 확인(최소/중간/최대)",
-      "1. Door > Add Door > Door Sensor 설정 > Apply\n2. Option > Use Automatic Door 및 Lock When door is closed UI 확인\n",
-      "1. Door> Use Automatic Door 설정\n2. Exit Button & Door Sensor 접지\n3. Relay 발생 후 Door Open\n4. Door Open된 상태에서의 Relay 동작 확인\n",
-      "1. Door> Use Automatic Door 설정\n2. Exit Button & Door Sensor 접지\n3. Relay 발생 후 Door Open\n4. Door Open된 상태에서의 Relay 동작 확인\n",
-      "1. Door> Lock when door is closed 설정\n2. Exit Button & Door Sensor 접지\n3. Door Open된 상태에서의 Open Timeout 전 Door Sensor 접지해제\n4. Relay 동작확인",
-      "1. Door> Lock when door is closed 설정\n2. Exit Button & Door Sensor 접지\n3. Door Open 상태에서 Door Sensor 접지/해제 반복\n4. Relay 동작확인",
-      "1. Door> Add Door> Exit Button 설정\n2. Exit Button 설정에 따른 UI 표시유무 확인",
-      "1. Door> Exit Button 설정\n2. Does not activate relay 설정\n3. Exit Button 접지\n",
-      "1. Door> Exit Button 설정\n2. Does not activate relay 설정\n3. Exit Button 접지\n4. 동작 및 로그 확인",
-      "1. Door> Exit button 설정 \n2. Does not activate relay 설정\n3. Exit Button & Door Sensor 접지\n4. 동작 및 로그 확인",
-      "1. Door> Exit button 설정\n2. Does not activate relay 설정\n3. Held Open Time 설정\n4. Exit Button 접지 후 Held Open Time 만큼 Door Sensor 접지유지\n5. 동작 및 로그 확인",
-      "1. Door> Exit button 설정\n2. Door > Does not activate relay 설정 \n3. Door > Add Door > Alarm > Held Open Time을 설정\n4. Door > Add Door > Alarm : Held Open의 Action 설정\n5. Exit Button & Door Sensor 접지\n"
-    ],
-    "data": [
-      "Open Time\n> 1s, 3s(Default), 5s, 10s, 15s, 30s, 1m, 3m, 5m, 10m, 15m",
-      "Lock When door is closed(닫힘 시 잠금)\n> Off(Default)/On\nUse Automatic Door(자동문 사용)\n> Off(Default)/On",
-      "Open Time: 5sec\n\nUse Automatic Door : On",
-      "Open Time: 5sec\n\n> Use Automatic Door : Off",
-      "Open Time: 30sec\n\nLock when door is closed: On",
-      "Open Time: 30sec\n\nLock when door is closed: Off",
-      "[BDP-523]",
-      "Does not activate relay: OFF",
-      "Does not activate relay: ON",
-      "Does not activate relay: ON",
-      "Does not activate relay: ON\n\nHeld Open Time : 임의설정",
-      "1. Does not activate relay : On\n2. Held Open Time : 5sec\n3. Action - Ouput/Alert Sound\n\n* Action Device\n1. Master 장치 선택\n2. Slave 장치 선택\n3. SIO2 선택\n4. DM20 선택"
-    ],
-    "expected_result": [
-      "1. 설정한값이 저장된다.\n2. 인증성공 혹은 Exit 버튼에 의해 설정된 Open Time으로 동작한다.",
-      "1. Door Sensor 미사용 시 해당 옵션은 미표시된다.\n2. 두 옵션은 동시에 사용할 수 없다.\n> Use Automatic Door: ON 시 Lock When door is closed는 OFF로 동작\n> Lock When door is closed: ON 시 Use Automatic Door UI 미표시",
-      "1. 문열림 상태 상관없이 Open Time이 지나면 Relay Off로 동작한다.",
-      "1. 문열림 상태에서는 Open Time이 지나더라도 Relay On을 유지한다.",
-      "1. Lock 되면서 Relay Off로 동작한다.",
-      "1. Open Time 동안 문열고 닫기를 여러번 반복할 수 있다.\n2. Open Time이 지난 후 Lock된다.",
-      "1. Exit Button 설정시 \"Does not activate relay\" 옵션 표시된다.\n> Exit Button 미설정시 해당옵션 미표시\n2. \"Does not activate relay\" 옵션의 Default 값은 \"OFF\"이다.",
-      "1. Exit Button 에 입력시 Open Tiem 만큼 relay 가 동작된다.\n국문 : 퇴실 버튼에 의한 출입문 개방 요청 \n영문 : Door open request by exit button \n2. 이후 설정된 Open Time이 지나면 Door Locked 로그가 남는다.",
-      "1. Exit Button 에 입력이 감지되어도 relay 는 동작하지 않지만 출입문 개방에 대한 로그는 남는다.\n> Door open request by exit button (Relay does not activate) & Door Unlocked 로그 출력\n※ 국문 - 퇴실 버튼 입력에 의한 출입문 개방 요청\n2. 이후 설정된 Open Time이 지나면 Door Locked 로그가 남는다.\n\n※UZ Door의 경우  Unlock - Lock 이 아닌 Timer로 unlock - lock을 요청했다는 로그 하나로 하기 때문에 로그를 남기지 않음",
-      "1. 옵션이 ON된 상태에서 Exit Button 후 Door Sensor 접지시 Forced Door Open 으로 동작하지 않는다.\n> Door Open request by exit button & Door Unlocked & Door Opened 로그가 남는다.",
-      "1. Held Door Opened 로 동작된다.\n> Door Open request by exit button & Door Unlocked & Door Opened & Held Door Opened 로그가 남는다.\n2. 접지 해제시 Door Locked & Door Closed 로그가 남는다.",
-      "1. Output 설정한 장치에서 Action 이 발생한다.\n2. Alert sound 가 발생하는 도중 Door Closed시 Alarm Clear가 된다."
-    ]
+    "customfield_10007": [],
+    "customfield_10008": {
+      "issueId": 12476,
+      "statuses": [
+        {
+          "statusResults": [
+            {
+              "latest": 1,
+              "latestFinal": 0,
+              "latestId": 35311,
+              "latestFinalId": 34668
+            },
+            {
+              "environment": "ES1",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29807,
+              "latestFinalId": 29807
+            },
+            {
+              "environment": "BioStarV2.9.6.30",
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 29807,
+              "latestFinalId": 29807
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_170117(UnitTest)",
+          "statusResults": [
+            {
+              "latest": 3,
+              "latestFinal": 3,
+              "latestId": 5656,
+              "latestFinalId": 5656
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_190805_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15234,
+              "latestFinalId": 15234
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.2.8_20160603",
+          "statusResults": [
+            {
+              "latest": 1,
+              "latestFinal": 0,
+              "latestId": 1728,
+              "latestFinalId": 1549
+            }
+          ]
+        },
+        {
+          "group": "FL_V1.0_190515(PS)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 14147,
+              "latestFinalId": 14147
+            }
+          ]
+        },
+        {
+          "group": "V1.7.1_181204(Hotfix)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12667,
+              "latestFinalId": 12667
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_181210_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12769,
+              "latestFinalId": 12769
+            }
+          ]
+        },
+        {
+          "group": "V1.1.5_4_151014(All)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 46,
+              "latestFinalId": 46
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0 170331",
+          "statusResults": [
+            {
+              "latest": 1,
+              "latestFinal": 0,
+              "latestId": 8637,
+              "latestFinalId": 6366
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_181119_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 12947,
+              "latestFinalId": 12947
+            }
+          ]
+        },
+        {
+          "group": "V1.1.0_190809_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15595,
+              "latestFinalId": 15595
+            }
+          ]
+        },
+        {
+          "group": "V1.8.0_190806_Interaction 6차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15323,
+              "latestFinalId": 15323
+            }
+          ]
+        },
+        {
+          "group": "V1.0.0_180322",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 10139,
+              "latestFinalId": 10139
+            }
+          ]
+        },
+        {
+          "group": "V1.7.0_190806_Interaction 7차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15077,
+              "latestFinalId": 15077
+            }
+          ]
+        },
+        {
+          "group": "Entry 2.1.5_5 - 20151016(All)",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 5209,
+              "latestFinalId": 5209
+            }
+          ]
+        },
+        {
+          "group": "V1.2.0_190806_Interaction 5차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 15433,
+              "latestFinalId": 15433
+            }
+          ]
+        },
+        {
+          "group": "V1.3.0_20200601_Interaction 12차",
+          "statusResults": [
+            {
+              "latest": 0,
+              "latestFinal": 0,
+              "latestId": 17165,
+              "latestFinalId": 17165
+            }
+          ]
+        }
+      ]
+    },
+    "customfield_12309": null,
+    "customfield_10802": null,
+    "customfield_10803": null,
+    "customfield_10805": null,
+    "summary": "출입문 - 옵션",
+    "customfield_10240": null,
+    "customfield_10000": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
+      "value": "Manual",
+      "id": "10000"
+    },
+    "customfield_10243": null,
+    "customfield_10001": null,
+    "customfield_10244": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10246": null,
+    "customfield_10004": {
+      "steps": [
+        {
+          "id": 687,
+          "index": 1,
+          "step": "1. Door > Add Door > Open Time 설정 > Apply\n2. 인증 & Exit 버튼으로 Open Time 확인(최소/중간/최대)",
+          "data": "Open Time\n> 1s, 3s(Default), 5s, 10s, 15s, 30s, 1m, 3m, 5m, 10m, 15m",
+          "result": "1. 설정한값이 저장된다.\n2. 인증성공 혹은 Exit 버튼에 의해 설정된 Open Time으로 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 2655,
+          "index": 2,
+          "step": "1. Door > Add Door > Door Sensor 설정 > Apply\n2. Option > Use Automatic Door 및 Lock When door is closed UI 확인\n",
+          "data": "Lock When door is closed(닫힘 시 잠금)\n> Off(Default)/On\nUse Automatic Door(자동문 사용)\n> Off(Default)/On",
+          "result": "1. Door Sensor 미사용 시 해당 옵션은 미표시된다.\n2. 두 옵션은 동시에 사용할 수 없다.\n> Use Automatic Door: ON 시 Lock When door is closed는 OFF로 동작\n> Lock When door is closed: ON 시 Use Automatic Door UI 미표시",
+          "attachments": []
+        },
+        {
+          "id": 2760,
+          "index": 3,
+          "step": "1. Door> Use Automatic Door 설정\n2. Exit Button & Door Sensor 접지\n3. Relay 발생 후 Door Open\n4. Door Open된 상태에서의 Relay 동작 확인\n",
+          "data": "Open Time: 5sec\n\nUse Automatic Door : On",
+          "result": "1. 문열림 상태 상관없이 Open Time이 지나면 Relay Off로 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 2761,
+          "index": 4,
+          "step": "1. Door> Use Automatic Door 설정\n2. Exit Button & Door Sensor 접지\n3. Relay 발생 후 Door Open\n4. Door Open된 상태에서의 Relay 동작 확인\n",
+          "data": "Open Time: 5sec\n\n> Use Automatic Door : Off",
+          "result": "1. 문열림 상태에서는 Open Time이 지나더라도 Relay On을 유지한다.",
+          "attachments": []
+        },
+        {
+          "id": 11042,
+          "index": 5,
+          "step": "1. Door> Lock when door is closed 설정\n2. Exit Button & Door Sensor 접지\n3. Door Open된 상태에서의 Open Timeout 전 Door Sensor 접지해제\n4. Relay 동작확인",
+          "data": "Open Time: 30sec\n\nLock when door is closed: On",
+          "result": "1. Lock 되면서 Relay Off로 동작한다.",
+          "attachments": []
+        },
+        {
+          "id": 11043,
+          "index": 6,
+          "step": "1. Door> Lock when door is closed 설정\n2. Exit Button & Door Sensor 접지\n3. Door Open 상태에서 Door Sensor 접지/해제 반복\n4. Relay 동작확인",
+          "data": "Open Time: 30sec\n\nLock when door is closed: Off",
+          "result": "1. Open Time 동안 문열고 닫기를 여러번 반복할 수 있다.\n2. Open Time이 지난 후 Lock된다.",
+          "attachments": []
+        },
+        {
+          "id": 14397,
+          "index": 7,
+          "step": "1. Door> Add Door> Exit Button 설정\n2. Exit Button 설정에 따른 UI 표시유무 확인",
+          "data": "[BDP-523]",
+          "result": "1. Exit Button 설정시 \"Does not activate relay\" 옵션 표시된다.\n> Exit Button 미설정시 해당옵션 미표시\n2. \"Does not activate relay\" 옵션의 Default 값은 \"OFF\"이다.",
+          "attachments": []
+        },
+        {
+          "id": 14683,
+          "index": 8,
+          "step": "1. Door> Exit Button 설정\n2. Does not activate relay 설정\n3. Exit Button 접지\n",
+          "data": "Does not activate relay: OFF",
+          "result": "1. Exit Button 에 입력시 Open Tiem 만큼 relay 가 동작된다.\n국문 : 퇴실 버튼에 의한 출입문 개방 요청 \n영문 : Door open request by exit button \n2. 이후 설정된 Open Time이 지나면 Door Locked 로그가 남는다.",
+          "attachments": []
+        },
+        {
+          "id": 14398,
+          "index": 9,
+          "step": "1. Door> Exit Button 설정\n2. Does not activate relay 설정\n3. Exit Button 접지\n4. 동작 및 로그 확인",
+          "data": "Does not activate relay: ON",
+          "result": "1. Exit Button 에 입력이 감지되어도 relay 는 동작하지 않지만 출입문 개방에 대한 로그는 남는다.\n> Door open request by exit button (Relay does not activate) & Door Unlocked 로그 출력\n※ 국문 - 퇴실 버튼 입력에 의한 출입문 개방 요청\n2. 이후 설정된 Open Time이 지나면 Door Locked 로그가 남는다.\n\n※UZ Door의 경우  Unlock - Lock 이 아닌 Timer로 unlock - lock을 요청했다는 로그 하나로 하기 때문에 로그를 남기지 않음",
+          "attachments": []
+        },
+        {
+          "id": 14400,
+          "index": 10,
+          "step": "1. Door> Exit button 설정 \n2. Does not activate relay 설정\n3. Exit Button & Door Sensor 접지\n4. 동작 및 로그 확인",
+          "data": "Does not activate relay: ON",
+          "result": "1. 옵션이 ON된 상태에서 Exit Button 후 Door Sensor 접지시 Forced Door Open 으로 동작하지 않는다.\n> Door Open request by exit button & Door Unlocked & Door Opened 로그가 남는다.",
+          "attachments": []
+        },
+        {
+          "id": 14399,
+          "index": 11,
+          "step": "1. Door> Exit button 설정\n2. Does not activate relay 설정\n3. Held Open Time 설정\n4. Exit Button 접지 후 Held Open Time 만큼 Door Sensor 접지유지\n5. 동작 및 로그 확인",
+          "data": "Does not activate relay: ON\n\nHeld Open Time : 임의설정",
+          "result": "1. Held Door Opened 로 동작된다.\n> Door Open request by exit button & Door Unlocked & Door Opened & Held Door Opened 로그가 남는다.\n2. 접지 해제시 Door Locked & Door Closed 로그가 남는다.",
+          "attachments": []
+        },
+        {
+          "id": 14402,
+          "index": 12,
+          "step": "1. Door> Exit button 설정\n2. Door > Does not activate relay 설정 \n3. Door > Add Door > Alarm > Held Open Time을 설정\n4. Door > Add Door > Alarm : Held Open의 Action 설정\n5. Exit Button & Door Sensor 접지\n",
+          "data": "1. Does not activate relay : On\n2. Held Open Time : 5sec\n3. Action - Ouput/Alert Sound\n\n* Action Device\n1. Master 장치 선택\n2. Slave 장치 선택\n3. SIO2 선택\n4. DM20 선택",
+          "result": "1. Output 설정한 장치에서 Action 이 발생한다.\n2. Alert sound 가 발생하는 도중 Door Closed시 Alarm Clear가 된다.",
+          "attachments": []
+        }
+      ]
+    },
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "environment": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "duedate": null,
+    "comment": {
+      "comments": [
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12476/comment/22113",
+          "id": "22113",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=scko",
+            "name": "scko",
+            "key": "scko",
+            "emailAddress": "scko@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "고승찬",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "항목 테스트에서 <1s, 3s, 5s, 10s, 15s, 30s, 1m, 3m, 5m,10m,15m> 11회를 테스트를 하고 있는지요?\r\n이런 것이라면 모든 테스트가 값이 들어가는 값들을 다 테스트를 해야 하는 것은 무리가 있는 듯 싶습니다.\r\n재고해 볼 필요가 있을 듯 보입니다.",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=scko",
+            "name": "scko",
+            "key": "scko",
+            "emailAddress": "scko@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "고승찬",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-10-11T18:37:52.000+0900",
+          "updated": "2015-10-11T18:37:52.000+0900"
+        },
+        {
+          "self": "https://jira.suprema.co.kr/rest/api/2/issue/12476/comment/22114",
+          "id": "22114",
+          "author": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=scko",
+            "name": "scko",
+            "key": "scko",
+            "emailAddress": "scko@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "고승찬",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "body": "Open Time 값이 설정이 되는지 안되는지를 보는 테스트라면 Result에 로그 남는다는 것을 삭제해주셔야 할 듯으로 보입니다.\r\n그게 아니라면 OpenTime 설정만 하면 되는 것이 아니기 때문에, 그 데이타 설정을 더 정확하게 기재하는 것이 맞을 것으로 보입니다.\r\n\r\n",
+          "updateAuthor": {
+            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=scko",
+            "name": "scko",
+            "key": "scko",
+            "emailAddress": "scko@suprema.co.kr",
+            "avatarUrls": {
+              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
+              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
+              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
+              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "고승찬",
+            "active": true,
+            "timeZone": "Asia/Seoul"
+          },
+          "created": "2015-10-11T18:40:31.000+0900",
+          "updated": "2015-10-11T18:40:31.000+0900"
+        }
+      ],
+      "maxResults": 2,
+      "total": 2,
+      "startAt": 0
+    },
+    "customfield_10230": null,
+    "fixVersions": [],
+    "customfield_10231": null,
+    "customfield_10232": null,
+    "customfield_10233": null,
+    "customfield_12410": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_10225": null,
+    "customfield_12404": null,
+    "customfield_10226": null,
+    "customfield_12403": null,
+    "customfield_10227": null,
+    "customfield_12406": null,
+    "customfield_10228": null,
+    "customfield_10229": null,
+    "customfield_10900": null,
+    "customfield_12408": null,
+    "customfield_10901": null,
+    "customfield_10902": null,
+    "customfield_10903": null,
+    "customfield_12409": null,
+    "customfield_10904": null,
+    "customfield_10905": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
+      "name": "Minor (C)",
+      "id": "3"
+    },
+    "customfield_10221": null,
+    "customfield_12400": null,
+    "customfield_12402": null,
+    "customfield_10224": null,
+    "customfield_10214": null,
+    "customfield_10217": null,
+    "customfield_10218": null,
+    "timeestimate": null,
+    "versions": [],
+    "customfield_10219": null,
+    "status": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
+      "description": "",
+      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
+      "name": "완료",
+      "id": "10001",
+      "statusCategory": {
+        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "완료"
+      }
+    },
+    "customfield_12510": null,
+    "customfield_10213": null,
+    "customfield_12511": null,
+    "customfield_10203": null,
+    "customfield_10204": null,
+    "customfield_12502": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10207": null,
+    "aggregatetimeestimate": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "customfield_12509": null,
+    "customfield_12508": null,
+    "creator": {
+      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
+      "name": "hmkang",
+      "key": "hmkang",
+      "emailAddress": "hmkang@suprema.co.kr",
+      "avatarUrls": {
+        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
+        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
+        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
+        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
+      },
+      "displayName": "강현민",
+      "active": true,
+      "timeZone": "Asia/Seoul"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10320": null,
+    "customfield_10321": null,
+    "customfield_12501": null,
+    "customfield_10202": null,
+    "customfield_12500": null,
+    "customfield_10313": "1|hzrxpb:",
+    "customfield_10316": null,
+    "customfield_10317": null,
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10310": null,
+    "customfield_10302": null,
+    "customfield_10303": null,
+    "customfield_12601": null,
+    "customfield_10304": null,
+    "customfield_10305": null,
+    "customfield_10308": null,
+    "workratio": -1,
+    "created": "2015-08-18T21:58:58.000+0900",
+    "customfield_10533": null,
+    "customfield_10534": null,
+    "customfield_11501": null,
+    "customfield_11503": null,
+    "customfield_13001": null,
+    "customfield_13000": null,
+    "customfield_10530": null,
+    "customfield_10531": null,
+    "customfield_10532": null,
+    "customfield_10401": null,
+    "customfield_10522": null,
+    "customfield_10402": null,
+    "customfield_12700": null,
+    "customfield_10524": null,
+    "customfield_10525": null,
+    "customfield_12702": null,
+    "attachment": [],
+    "customfield_10526": null,
+    "customfield_12704": null,
+    "customfield_10528": null,
+    "customfield_12706": null,
+    "customfield_10520": null,
+    "customfield_10521": null,
+    "customfield_10400": null,
+    "customfield_10511": null,
+    "customfield_10512": null,
+    "customfield_11600": null,
+    "customfield_10513": null,
+    "customfield_10514": null,
+    "customfield_10515": null,
+    "customfield_10516": null,
+    "customfield_10517": null,
+    "customfield_10518": null,
+    "customfield_10519": null
   }
 }
