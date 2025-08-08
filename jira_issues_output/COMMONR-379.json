@@ -1,1729 +1,308 @@
-{
-  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
-  "id": "69843",
-  "self": "https://jira.suprema.co.kr/rest/api/2/issue/69843",
-  "key": "COMMONR-379",
-  "fields": {
-    "resolution": null,
-    "customfield_13103": null,
-    "customfield_10510": null,
-    "customfield_10500": "9.0",
-    "customfield_10501": null,
-    "customfield_10502": null,
-    "customfield_12802": null,
-    "customfield_12804": null,
-    "customfield_10505": null,
-    "customfield_12803": null,
-    "customfield_10506": null,
-    "customfield_12806": null,
-    "customfield_10507": null,
-    "customfield_12805": null,
-    "customfield_10508": null,
-    "customfield_12808": null,
-    "customfield_10509": null,
-    "lastViewed": null,
-    "customfield_10180": null,
-    "customfield_10181": null,
-    "customfield_10182": null,
-    "customfield_10183": null,
-    "customfield_10184": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10173",
-      "value": "Major",
-      "id": "10173"
-    },
-    "customfield_10185": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
-      "value": "Medium (2-3일 이내 피드백)",
-      "id": "10220"
-    },
-    "labels": [],
-    "customfield_11702": null,
-    "aggregatetimeoriginalestimate": null,
-    "issuelinks": [
-      {
-        "id": "64049",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/64049",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "72934",
-          "key": "BS3FW-2052",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72934",
-          "fields": {
-            "summary": "[Biostar X] Fire Alarm 관련 log 숫자로 표시되는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
-              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
-              "name": "열림",
-              "id": "1",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
-                "id": 2,
-                "key": "new",
-                "colorName": "blue-gray",
-                "name": "할 일"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "64106",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/64106",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "73183",
-          "key": "BS3FW-2076",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/73183",
-          "fields": {
-            "summary": "[Lock override] Door 삭제 시 Lock Override에 의해 Unlock된 Relay가 Lock으로 동작 안하는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/4",
-              "description": "이 이슈는 한번 해결되었지만 해결책이 올바르지 않았던 것 같습니다. 지금부터는 이슈가 할당된 것으로 표기되거나 해결된 것으로 표기할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/reopened.png",
-              "name": "다시 열림",
-              "id": "4",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
-                "id": 2,
-                "key": "new",
-                "colorName": "blue-gray",
-                "name": "할 일"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
-              "name": "Major (B+)",
-              "id": "10200"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "64081",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/64081",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "73156",
-          "key": "BS3FW-2075",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/73156",
-          "fields": {
-            "summary": "[Lock Override] Arm+ Disable Device(Lock Device) 상태일 때, Lock Override 카드 인증 안되는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "63153",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63153",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "72229",
-          "key": "BS3FW-1956",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72229",
-          "fields": {
-            "summary": "[Lock Override] Emergency Unlock 상태에서 Lock Override Card로 Admin Menu 진입이 불가능한 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
-              "name": "Major (B+)",
-              "id": "10200"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "63170",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63170",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "72230",
-          "key": "BS3FW-1957",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72230",
-          "fields": {
-            "summary": "[Lock Override] Emergency Unlock 상태에서 Lock Override Card로 Door Control 진입이 불가능한 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
-              "name": "Major (B+)",
-              "id": "10200"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "63132",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63132",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "72232",
-          "key": "BS3FW-1958",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72232",
-          "fields": {
-            "summary": "[Lock Override] Emergency Unlock 상태에서 Release 버튼 누르게 되면 Normal로 동작하는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
-              "name": "Major (B+)",
-              "id": "10200"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "63160",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63160",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "72249",
-          "key": "BS3FW-1959",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72249",
-          "fields": {
-            "summary": "[Lock Override] Manual Unlock 상태에서 Emergency Unlock이 발생하는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
-              "name": "Major (B+)",
-              "id": "10200"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "63172",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63172",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "72252",
-          "key": "BS3FW-1960",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72252",
-          "fields": {
-            "summary": "[Lock Override] AoC Card, Biostar QR 인증 시에 Lock Override로 동작하는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
-              "name": "Major (B+)",
-              "id": "10200"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "63167",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63167",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "72260",
-          "key": "BS3FW-1962",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72260",
-          "fields": {
-            "summary": "[Lock Override] Fire Alarm Zone을 삭제하게 되면 Emergency Unlock이 해제되는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
-              "name": "Major (B+)",
-              "id": "10200"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "63178",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63178",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "72265",
-          "key": "BS3FW-1964",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72265",
-          "fields": {
-            "summary": "[Lock Override] Lock Override Credential 1000개 초과하여 등록해도 에러 메세지 출력되지 않는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
-              "name": "Major (B+)",
-              "id": "10200"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "63473",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63473",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "72649",
-          "key": "BS3FW-1993",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72649",
-          "fields": {
-            "summary": "[Lock Override] Lock Override Card가 해당 기능 미지원하는 SW에서 Lock Override로 동작하는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
-              "name": "Major (B+)",
-              "id": "10200"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "63565",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63565",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "72712",
-          "key": "BS3FW-1998",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72712",
-          "fields": {
-            "summary": "[Lock Override] Emergency Unlock 상태에서 Manual Lock/Unlock 후 Release 시에 Emergency Unlock Alarm이 동작하는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
-              "name": "Major (B+)",
-              "id": "10200"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "60664",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/60664",
-        "type": {
-          "id": "10003",
-          "name": "Relates",
-          "inward": "relates to",
-          "outward": "relates to",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
-        },
-        "inwardIssue": {
-          "id": "68563",
-          "key": "BES-2969",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/68563",
-          "fields": {
-            "summary": "[BDP-1239] Lock Override(=Fireman's Card) - 2025 1Q 진행",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "완료",
-              "id": "10001",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
-              "id": "5",
-              "description": "이슈의 부작업",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
-              "name": "부작업",
-              "subtask": true,
-              "avatarId": 10316
-            }
-          }
-        }
-      },
-      {
-        "id": "62545",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/62545",
-        "type": {
-          "id": "10003",
-          "name": "Relates",
-          "inward": "relates to",
-          "outward": "relates to",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
-        },
-        "inwardIssue": {
-          "id": "70622",
-          "key": "BES-3296",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/70622",
-          "fields": {
-            "summary": "[BDP-962, 956, 954, 990, 953, 1239] BioStar X FW 개발 - 추가진행 건",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "완료",
-              "id": "10001",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/3",
-              "id": "3",
-              "description": "해야할 일",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10318&avatarType=issuetype",
-              "name": "작업",
-              "subtask": false,
-              "avatarId": 10318
-            }
-          }
-        }
-      }
-    ],
-    "assignee": null,
-    "components": [],
-    "customfield_10170": null,
-    "customfield_10171": null,
-    "customfield_10172": null,
-    "customfield_10174": null,
-    "customfield_10175": null,
-    "customfield_10176": null,
-    "customfield_10177": null,
-    "customfield_10178": null,
-    "customfield_10179": null,
-    "customfield_10600": 33.0,
-    "customfield_10601": [],
-    "customfield_12901": null,
-    "customfield_10602": null,
-    "customfield_12900": null,
-    "subtasks": [],
-    "reporter": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
-      "name": "hmkang",
-      "key": "hmkang",
-      "emailAddress": "hmkang@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
-      },
-      "displayName": "강현민",
-      "active": true,
-      "timeZone": "Asia/Seoul"
-    },
-    "customfield_10168": null,
-    "customfield_10169": null,
-    "customfield_11800": null,
-    "progress": {
-      "progress": 0,
-      "total": 0
-    },
-    "votes": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-379/votes",
-      "votes": 0,
-      "hasVoted": false
-    },
-    "worklog": {
-      "startAt": 0,
-      "maxResults": 20,
-      "total": 0,
-      "worklogs": []
-    },
-    "issuetype": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
-      "id": "10000",
-      "description": "Represents a Test",
-      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
-      "name": "Test",
-      "subtask": false
-    },
-    "project": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
-      "id": "10000",
-      "key": "COMMONR",
-      "name": "Common Requirement And Test Case",
-      "projectTypeKey": "software",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
-        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
-        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
-        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
-      },
-      "projectCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
-        "id": "10000",
-        "description": "Requirements And Test Cases For The BioStar System Device",
-        "name": "BioStar System Device Requirement And Test Case"
-      }
-    },
-    "customfield_11000": null,
-    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@1c78b4f8[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@527f9c51[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@b13428d[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@2520caaa[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@72a0aa92[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@fd240ee[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@1e446cb3[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@3d92904b[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@4a915951[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@57d9a5dd[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6a457a61[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@43fcbfaa[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
-    "resolutiondate": null,
-    "watches": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-379/watchers",
-      "watchCount": 4,
-      "isWatching": false
-    },
-    "customfield_11900": null,
-    "customfield_11901": null,
-    "updated": "2025-08-04T14:49:55.000+0900",
-    "timeoriginalestimate": null,
-    "description": "https://jira.suprema.co.kr/browse/BDP-1239\r\n\r\n!LockOverride 동작 Case[최종].jpg|thumbnail!\r\n\r\n*Emergency Unlock 동작 시에*\r\n> Device Private Msg, Server Pritvate Msg 표시되지 않음\r\n> T&A Code, Job Code 표시되지 않음",
-    "customfield_10251": null,
-    "customfield_10252": null,
-    "customfield_10253": null,
-    "customfield_10254": null,
-    "customfield_10255": null,
-    "timetracking": {},
-    "customfield_10257": null,
-    "customfield_10247": null,
-    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p><span class=\"error\">&#91;BioStar-X&#93;</span><br/>1. USER &gt; ADD USER<br/>2. Credential(카드) &gt; Device 선택</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span> - 카드 등록 가능 장치<br/>&gt; Scan(Registerd by Card Reader)<br/>&gt; Enter Manually<br/>&gt; Assign Card</p></td><td><p>1. 카드 등록은 Master, Salve를 통해 Scan, Manually, Assign으로 등록가능하다.<br/>&gt;  BioStar에 기등록된 카드를 복제하여 사용하는 것을 방지하기 위해  Secure Credential Card(SCC) 유형만 등록/사용<br/>2. 장치가 Disable 상태일땐 모든 지문/카드 등록 불가능하다.<br/>3. 등록하는 장치의 Card Type Masking 비활성화 시 등록 및 사용할 수 없다.<br/>&gt; 메시지 팝업 확인 필요</p></td></tr><tr><td>2</td><td><p><span class=\"error\">&#91;BioStar-X&#93;</span><br/>1. USER &gt; 카드 등록된 사용자 선택<br/>2. Credential &gt; Security Option&gt; Lock Override선택 &gt; Apply<br/>3. 장치로 사용자 전송</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span> - Security Option<br/>1. Lock Override 설정<br/>&gt; Max : 1,000개<br/>&gt; User : 8개 <br/>&gt; Default : Uncheck<br/>2. Lock Override 미지원<br/><span class=\"error\">&#91;Card&#93;</span><br/>Suprema Smart Card - Access on Card<br/>Mobile Access<br/>Template on Mobile - Access on Card<br/><span class=\"error\">&#91;Biometric&#93;</span><br/>Face<br/>Fingerprint<br/><span class=\"error\">&#91;QR&#93;</span><br/>QR/Barcode<br/>BioStar QR<br/><span class=\"error\">&#91;PIN&#93;</span></p></td><td><p>1. 장치에서 BioStar 를 통해 입력한 Credential이 정상적으로 반영 되어야 한다.<br/>&gt; Card / Mobile Access - SCC<br/>2. LockOverride(Fireman's Card) 설정된 카드로 인증시 아래 사항을 확인하여 Door Relay를 개방한다.<br/>&gt; 최대 설정 개수(1,000개) 확인<br/>&gt; User - 8개<br/>&gt; 장치에서의 크리덴셜의 인증 시작 / LockOverride 설정 확인 / 해당 크리덴셜의 카드 타입이 Lock Override가 설정된 카드 타입과 동일한 지 확인</p></td></tr><tr><td>3</td><td><p><span class=\"error\">&#91;Stand Alone&#93;</span><br/>1. Door 미구성<br/>2. Step 2에서 등록한 Lock Override &gt; Master/Slave 장치에 인증 시도</p></td><td><p>Device Relay</p></td><td><p>1. 일반 인증 처럼 동작 한다.<br/>&gt; 출입문 미설정이기 때문에 Lock Override, Door Control 모두 미지원<br/>&gt; 일반 인증 처럼 - 등록 여부에 따라 인증 성공/실패 메시지 팝업</p></td></tr><tr><td>4</td><td><p><span class=\"error\">&#91;장치간 RS485 연결 =&gt; Door 구성 상태&#93;</span><br/>1. Door&gt; Add Door&gt; Door 구성<br/>2. Step 2에서 등록한 Lock Override &gt; Master/Slave 장치에 인증 시도</p></td><td><p>Lock Override<br/>&gt; Schedule Lock<br/>&gt; Operator Lock(Manual Lock)<br/>Door -&gt; Disable Device</p></td><td><p>1. Lock Override로 인증 시 Unlock 후 Open 되어야 하며, 열림상태를 유지해야 한다.<br/>&gt; 일반 인증 무시 - Lock Override Card 동작<br/>&gt; LCD 존재 유무에 따른 표시 : Lock Override / 비상개방 카드 활성화<br/>&gt; 출입문 열려 있음 표시 : 비상 개방(eventType.4145) / Emergency Open (eventType.4145)<br/>2. Lock Override로 인증 시 이벤트는 아래와 같다.<br/>&gt; Door release request by emergency / 출입문 비상 개방/잠금 해제 (eventType.23554)<br/>&gt; Door unlock request by emergency / 출입문 비상 개방 요청 (eventType.24066)<br/>&gt;&gt; Event: 1:1 authentication succeeded (Lock Override)(영문) / 1:1 인증 성공 (비상 개방 카드)(eventType.4145)</p>\n\n\n<ul>\n<li>출입문 열려 있음 표시 - 비상 개방 카드 활성화 / Fireman's Card에 대해서 스트링 수정 여부 확인 필요</li>\n<li>LCD 존재 유무에 따른 표시 - 추후 논의 후 요구사항 및 코멘트 확인 필요로 현재는 Non LCD 장치는 본건의 제외</li>\n</ul>\n</td></tr><tr><td>5</td><td><p><span class=\"error\">&#91;BioStar X - User&#93;</span><br/>1. User &gt; Credential &gt; Security Option <br/>2. Assign Lock Override </p></td><td><p>Lock Override</p></td><td><p>1. Lock Override가 할당된 목록을 확인 할 수 있다.<br/>&gt;  Lock Override 지원 - CSN, SCC(Smart Card, CSN Mobile/Template On Mobile))<br/>2. Lock Override Auto Sync로 동작을 한다.(자동)<br/>&gt; 사용자 동기화 모드와 별개로 동작<br/>&gt; 장치가 끊어진 상태에서 등록된 Lock Override는 장치가 재연결되면 장치로 재전송된다.<br/>&gt; 장치 동기화 시에는 별다른 로그를 남기지 않는다.<br/>3. Lock Override 할당 카드는 사용자 유효성과는 별개로 동작한다. 단 Lock Override 동작 조건 확인 필요<br/>&gt; Period 경과 유무<br/>&gt; Status 유무<br/>&gt; 장치에 사용자 정보가 없는 (싱크되지 않은 경우나 장치UI통해 삭제된)경우</p></td></tr><tr><td>6</td><td><p><span class=\"error\">&#91;BioStar X - User&#93;</span><br/>1. User &gt; Credential &gt; Security Option <br/>2. Assign Lock Override </p></td><td><p>Lock Override<br/>&gt; Max Enroll</p></td><td><p>1. Lock Override Max 이상 장치에 등록 시 유무 확인 한다.<br/>&gt; Max : 1000개 / User : 8개<br/>&gt; Max 이상 등록 시 메시지 팝업 추후 확인 </p></td></tr><tr><td>7</td><td><p><span class=\"error\">&#91;BioStar-X&#93;</span><br/>1. USER &gt; 기등록된 LockOverride <br/>2. Credential &gt; Block버튼&gt; Apply<br/>3. 장치로 사용자 전송</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span> - Lock Override<br/>1. Lock Override 설정<br/>&gt; Max : 1,000개<br/>&gt; User : 8개 </p></td><td><p>1. 장치에서 BioStar 를 통해 입력한 Credential이 정상적으로 반영 되어야 한다.<br/>2. Block(Blacklist) 설정된 Lock Override Card로 인증 시 Lock Overrie로 동작 한다.<br/>&gt; Lock Override가 BlackList보다 우선 </p></td></tr><tr><td>8</td><td><p><span class=\"error\">&#91;출입문/구역 미설정 상태&#93;</span><br/>1. Step 2에서 등록한 Lock Override &gt; 인증 시도</p></td><td><p>인증시도<br/>&gt; 단일장치<br/>&gt; Master-Slave 장치<br/>&gt; 장치 인증 모드별<br/>=: Card, 이중인증, 근태, 권한별 메뉴 진입</p></td><td><p>1. 출입문/구역 미설정으로 인해 일반 인증으로 동작한다.<br/>&gt; Lock Override 동작 조건이 아닌 경우, 일반 인증 처럼 동작한다.</p></td></tr><tr><td>9</td><td><p><span class=\"error\">&#91;장치간 RS485 연결 =&gt; Door 구성 상태&#93;</span><br/>1. Door&gt; Add Door&gt; Door 구성<br/>2. Step 2에서 등록한 Lock Override &gt; Master/Slave 장치에 인증 시도</p></td><td><p>Lock Override<br/>&gt; Schedule Lock<br/>&gt; Operator Lock(Manual Lock)</p></td><td><p>1. Lock Override로 인증 시 Unlock 상태를 유지해야 한다.<br/>&gt; 일반 인증 무시 <br/>&gt; LCD 존재 유무에 따른 표시 : Lock Override / 비상개방 카드 활성화<br/>&gt; Door Open은 사용자 직접 출입문을 열고 나가는 경우 event 발생<br/>2. Held Open Alarm은 미발생되어야 한다.<br/>3. Dual Auth 무시하고, Card Only로 동작되어 Lock Override로 인증 시 동작한다.<br/>4. Master와 연결이 끊어진 Slave는 지원하지 않는다.<br/>5. Lock Override로 인증 시 이벤트는 아래와 같다.<br/>&gt; Door release request by emergency / 출입문 비상 잠금 해제 (eventType.23554)<br/>&gt; Door unlock request by emergency / 출입문 비상 개방 요청 (eventType.24066)<br/>&gt;&gt; Event: 1:1 authentication succeeded (Lock Override)(영문) / 1:1 인증 성공 (비상 개방 카드)(eventType.4145)</p>\n\n\n<ul>\n<li>출입문 열려 있음 표시 - 비상 개방 카드 활성화 / Fireman's Card에 대해서 스트링 수정 여부 확인 필요</li>\n<li>LCD 존재 유무에 따른 표시 - 추후 논의 후 요구사항 및 코멘트 확인 필요로 현재는 Non LCD 장치는 본건의 제외</li>\n</ul>\n</td></tr><tr><td>10</td><td><p>1. Zone&gt; Add Zone&gt; Intrusion Alarm Zone<br/>2. Intrusion Alarm Zone&gt; Arm/Disarm Setting&gt; Access Group 설정<br/>3. Access Group : +Add<br/>4. Step 2에서 등록한 Lock Override 인증 시도</p></td><td><p>Lock Override<br/>&gt; Schedule Lock<br/>&gt; Operator Lock(Manual Lock)<br/>Device<br/>&gt; Disable Device</p></td><td><p>1. Access Group에 속한 사용자만이 Arm/Disarm 권한을 갖는다.<br/>&gt; Normal -&gt; Arm : Arm <br/>&gt; Arm -&gt; Disarm : Disarm<br/>2. 경비 상태에서 인증 시 아래와 같이 동작한다.<br/>&gt; Disable Device(Lock Device) - 일반 인증 동작 안하고, Lock Override에 대한 카드만 동작하고, Lock Override 조건 이면 Unlock 상태, Arm 상태 유지<br/>&gt; Lock Override 미동작 조건이면 Arm 상태의 출입문이 닫힘 상태 유지된다. Arm 상태 유지<br/>&gt; Disarm - Disarm<br/>&gt; Lock Override - 동작 조건이면 Lock Override로 동작</p></td></tr><tr><td>11</td><td><p><span class=\"error\">&#91;장치간 RS485 연결 =&gt; Door 구성 상태&#93;</span></p>\n\n<p>1. Door&gt; Add Door&gt; Door 구성<br/>2. Schedule Lock &amp; Manual LocK 동작<br/>3. Step 2에서 등록한 Lock Override &gt; Master/Slave 장치에 인증 시도<br/>4. Master / Slave 장치 화면표시 확인</p></td><td><p>Lock Override<br/>&gt; Schedule Lock<br/>&gt; Operator Lock(Manual Lock)</p></td><td><p>1. Lock Override 설정 카드로 장치에 인증 시 비상 동작 했음을 장치 화면에 표시한다.<br/>&gt; Master/Slave 표시<br/>&gt; 표시하는 기간 : Emergency Unlock이 Normalize 될 때까지<br/>2. Lock Override 비상 동작에 대한 인증 결과는 인증 메시지 표시 시간을 따라 동작한다.<br/>&gt; 비상 개방(eventType.4145) / Emergency Open (eventType.4145)  </p>\n</td></tr><tr><td>12</td><td><p><span class=\"error\">&#91;장치간 RS485 연결 =&gt; Door 구성 상태&#93;</span></p>\n\n<p>1. Door&gt; Add Door&gt; Door 구성<br/>2. Intrusion Alarm Zone 동작<br/>3. Scheudle Unlock 동작<br/>4. Fire Alarm 동작<br/>5. Manual Lock 동작<br/>6. Manual Unlock 동작</p>\n\n<ul>\n<li>\n<ul>\n<li>각 단계별 Step 2에서 등록한 Lock Override 인증 시도</li>\n</ul>\n</li>\n</ul>\n</td><td><p>우선 순위 확인<br/>&gt; Lock Override(1)<br/>&gt; Fire Alarm Zone(1)<br/>&gt; Manual Lock/Unlcok (Monitoring &gt; Door Status)(2)<br/>&gt; Scheduled Lock/Unlock Zone(3)</p>\n\n<p>&gt;&gt; &gt; Intrusion Alarm Zone 동작</p></td><td><p>1. 최초 Intrusion Alarm Zone에 의해 Locked 된다.<br/>&gt; Door Unlock - Locked 된 상태로 경비 개시<br/>&gt; Fire Alarm - Unlocked 된 상태이면 우선 순위에 의해 Unlocked 된 상태로 경비 개시. Door Open 시 Alarm 발생(Fire Alarm, Intrusion Alarm)<br/>&gt; Lock Override 인증 - Door Locked(Lock Override) 상태, Arm 상태이면, Lock -&gt; Unlocked 상태로, Unlock 상태이면 반응 없음<br/>2. Schedule Unlock에 의해 Unlocked 된다.<br/>&gt; Door Open - Alarm 발생(Intrusion Alarm)<br/>&gt; Lock Override 인증 - 반응 없음<br/>3. Fire Alarm 발생시 Unlocked 유지된다. (Fire Alarm 이 Scheduled Unlock 보다 우선순위가 높다)<br/>4. Manual Lock 발생시 Unlocked 유지된다. (Manual Lock 이 Fire Alarm 보다 우선순위가 낮다)<br/>&gt; Lock Override에 의해 비상 개방으로 동작(Emergency Unlock)<br/>5. Fire Alarm 해제 후 Manual Lock 발생시 Locked 된다. (Manual Lock 이 Scheduled Unlock 보다 우선순위가 높다)<br/>6. Fire Alarm 해제 후 Manual Unlock 발생시 Unlocked 유지된다. (Manual Unlock 이 Scheduled Unlock 보다 우선순위가 높다)<br/>7. Manual Lock/Unlock 해제 후 Scheduled Unlock 에 의해 Unlocked 된다.</p></td></tr><tr><td>13</td><td><p><span class=\"error\">&#91;장치간 RS485 연결 =&gt; Door 구성 상태&#93;</span></p>\n\n<p>1. Door&gt; Add Door&gt; Door 구성<br/>2. Schedule Lock &amp; Manual Lock 동작 <br/>3. Step 2에서 등록한 Lock Override 인증 시도<br/>4. Fire Alarm 동작</p></td><td><p>우선 순위 확인<br/>&gt; Lock Override(1)<br/> : Schedule Lock<br/> : Manual Lock<br/>&gt; Fire Alarm Zone(1)</p></td><td><p>1. 최초 Schedule Lock &amp; Manual Lock에 의해 Locked 된다.<br/>2. Lock Override로 인증 시 Unlocked 된다.<br/>3. Fire Alarm 발생시 Unlocked 유지된다. (Fire Alarm과 Lock Override 우선순위가 같다)<br/>4. Fire Alarm 해제 시 Locked 된다.<br/>&gt; Lock Override에 의한 Door도 Locked로 초기화 된다.<br/>5. Door Control에 의해 출입문 상태를 Normalized로 복구 할 수 없다.(알람 해제 후 가능)</p></td></tr><tr><td>14</td><td><p><span class=\"error\">&#91;장치간 RS485 연결 =&gt; Door 구성 상태&#93;</span></p>\n\n<p>1. Door&gt; Add Door&gt; Door 구성<br/>2. Schedule Lock &amp; Manual LocK 동작<br/>3. Step 2에서 등록한 Lock Override &gt; Master/Slave 장치에 인증 시도<br/>4. Master / Slave 장치 Reboot 시도<br/>5. Master / Slave 장치 Rebooting 완료 후 동작</p></td><td><p>Lock Override<br/>&gt; Schedule Lock<br/>&gt; Operator Lock(Manual Lock)</p></td><td><p>1. Master &amp; Slave 장치가 Reboot되는 경우에도 Lock Override 로 동작한 상태는 Unlock 상태를 유지해야 한다.</p>\n</td></tr><tr><td>15</td><td><p><span class=\"error\">&#91;장치간 RS485 연결 =&gt; Door 구성 상태&#93;</span></p>\n\n<p>1. Door&gt; Add Door&gt; Door 구성<br/>2. Schedule Lock &amp; Manual LocK 동작<br/>3. Step 2에서 등록한 Lock Override &gt; Master/Slave 장치에 인증 시도<br/>4. Zone 삭제<br/>5. Door 삭제</p>\n\n<ul>\n<li>편집(정보 변경)은 Zone 구성 상태로 가정하고 제외</li>\n</ul>\n</td><td><p>Lock Override<br/>&gt; Schedule Lock<br/>&gt; Operator Lock(Manual Lock)</p></td><td><p>1. Zone 삭제 시 Emergency Unlock 유지됨<br/>2. Door 삭제 시 Lock Override에 의해 Unlock된 Relay를 Lock로 동작 한다.</p></td></tr><tr><td>16</td><td><p><span class=\"error\">&#91;Door 생성 - 출입그룹 미생성&#93;</span><br/>1. Door &gt; Add Door &gt; Door 구성<br/>2. 출입그룹 미생성<br/>3. <b>Schedule Lock 동작</b><br/>4. Step 2에서 등록한 Lock Override &gt; Master/Slave 장치에 인증 시도</p></td><td><p>Lock Override<br/>&gt; Schedule Lock<br/>&gt; Operator Lock(Manual Lock)</p></td><td><p>1. Lock Override로 인증 시 비상 개방으로 동작 한다.</p></td></tr><tr><td>17</td><td><p><span class=\"error\">&#91;Door 생성 - 출입그룹 미생성&#93;</span><br/>1. Door &gt; Add Door &gt; Door 구성<br/>2. 출입그룹 미생성<br/>3. <b>Manual Lock</b> 동작<br/>4. Step 2에서 등록한 Lock Override &gt; Master/Slave 장치에 인증 시도</p></td><td><p>Lock Override<br/>&gt; Schedule Lock<br/>&gt; Operator Lock(Manual Lock)</p></td><td><p>1.Lock Override로 인증 시 비상 개방으로 동작한다.</p></td></tr><tr><td>18</td><td><p><span class=\"error\">&#91;Door 생성&#93;</span><br/>1. Door &gt; Add Door &gt; Door 구성<br/>2. Manual Lock 동작<br/>3. Admin Menu 로그인 시도(Step 2에서 등록한 Lock Override) &gt; Master장치에 인증 시도</p></td><td><p>1. Card<br/>&gt; Admin User에 등록된 Card이자 Lock Override 설정된 Card</p></td><td><p>1.Admin Menu 인증을 통해 장치 메뉴가 출력된다.<br/>&gt; Lock Override 설정 의미 없음</p></td></tr><tr><td>19</td><td><p><span class=\"error\">&#91;Door 생성&#93;</span><br/>1. Door &gt; Add Door &gt; Door 구성<br/>2. Manual Lock 동작<br/>3. Door Control &gt; Card로 진입 시도</p></td><td><p>1. Card<br/>&gt; Admin User에 등록된 Card이자 Lock Override 설정된 Card</p></td><td><p>1. Door Control 진입 가능해야함</p></td></tr><tr><td>20</td><td><p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> <b>Door, Zone 생성</b><br/>1. Door &gt; Add Door &gt; Door 구성<br/>2. Zone &gt; Schedule Lock 구성<br/>3. Manual Lock / Unlock 동작<br/>4. (Step 2에서 등록한 Lock Override) Master/Slave 장치에 인증 시도</p></td><td></td><td><p>1. Emergency Unlock으로 동작한다</p></td></tr><tr><td>21</td><td><p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> <b>Door, Zone 생성</b><br/>1. Door &gt; Add Door &gt; Door 구성<br/>2. Zone &gt; Schedule Unlock 구성<br/>3. Manual lock 동작<br/>4. (Step 2에서 등록한 Lock Override) Master/Slave 장치에 인증 시도</p></td><td></td><td><p>1. Emergency Unlock으로 동작한다.</p></td></tr><tr><td>22</td><td><p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> <b>Door, Zone 생성</b><br/>1. Door &gt; Add Door &gt; Door 구성<br/>2. Zone &gt; Schedule Unlock 구성<br/>3. Manual unlock 동작<br/>4. (Step 2에서 등록한 Lock Override) Master/Slave 장치에 인증 시도</p></td><td></td><td><p>1. 일반 인증으로 동작한다.<br/>(장치 Credential로 동작)</p></td></tr><tr><td>23</td><td><p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> <b>Intrusion Alarm Zone</b><br/>1. Zone &gt; Intrusion Alarm Zone 구성<br/>2. Manual Lock 동작<br/>3. Arm 카드 인식 후 User에 등록된 카드 인식하여 Arm 동작<br/>4. Disarm 카드 인식 후 Lock Override 카드 인식</p></td><td></td><td><p>1. Emergency Unlock으로 동작한다<br/>※Schedule Unlock 설정되어 있어도 동일하게 동작해야함</p></td></tr><tr><td>24</td><td><p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> <b>Intrusion Alarm Zone</b><br/>1. Zone &gt; Intrusion Alarm Zone 구성<br/>2. Zone &gt; Schedule Lock Zone 구성<br/>3. Arm 카드 인식 후 User에 등록된 카드 인식하여 Arm 동작<br/>4. Disarm 카드 인식 후 Lock Override 카드 인식</p></td><td></td><td><p>1. Emergency Unlock으로 동작한다<br/>※ Manual Unlock/lock 설정되어 있어도 동일하게 동작해야함</p></td></tr><tr><td>25</td><td><p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> <b>Fire Alarm Zone</b><br/>1. Zone &gt; Fire Alarm Zone 구성<br/>2. Manual Lock 동작<br/>3. Fire Alarm Input 접지하여 Fire Alarm 발생<br/>4. Lock Override Card 인증하여 Emergency Unlock으로 동작<br/>5. Fire Alarm Zone 삭제</p></td><td></td><td><p>1. Normal 상태로 동작<br/>※ Emergency Unlock은 Fire Alarm에 의한 Emergency인지 Lock Override에 대한 Emergency인지 구분하지 않아 삭제해도 Emergency Unlock 해제되어야 함</p></td></tr><tr><td>26</td><td><p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> <b>미지원 장치 및 FW</b><br/>1. Door 구성 후 Manual Lock<br/>2. 미지원 장치 Slave에 Lock Override Card 인증 시도<br/>3. 미지원 FW Slave 장치에 Lock Override Card 인증 시도</p></td><td></td><td><p>1. 인증 성공/실패 상관 없이 Emergency Unlock으로 동작한다. (장치 성공 / 실패 관계 없이 Emergency Unlock으로 동작하는 것이 현재 사양임)<br/>※ 장치별 현재 동작<br/>XP2, D2, W2 : Fail Buzzer / LED 출력<br/>F2 : Access Granted 팝업 출력<br/>XS2, BS3, W3 : Access Denied 팝업 출력</p></td></tr><tr><td>27</td><td><p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> <b>지원 &gt; 미지원 SW</b><br/>1. 지원하는 SW에서 Door 구성 후 Manual Lock<br/>2. 지원 / 미지원 장치 Master/Slave에 Lock Override Card 인증<br/>3. 미지원하는 SW로 Downgrade<br/>4. Biostar에 장치 연결 후에 Door 구성 후, Manual Lock<br/>5. 장치에 Lock Override Card 인증</p></td><td><p>지원 SW<br/>&gt; Biostar2 v3.0.0.74 이상</p>\n\n<p>미지원 SW<br/>&gt; Biostar2 v2.9.x.x</p></td><td><p>2. Emergency Unlock으로 동작한다.<br/>5. 미지원하는 SW에서도 Lock Override로 동작 가능 (호환성을 보장하지 않음)</p></td></tr><tr><td>28</td><td><p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> <b>Alarm 해제</b><br/>1. User &gt; Card에 Lock Override Check<br/>2. Door &gt; Add Door &gt; Door 구성<br/>3. Device or Door &gt; Manual Lock<br/>4. Lock Override Card 인증하여 Emergency Unlock 발생<br/>5. Monitoring &gt; Door Status &gt; Clear Alarm<br/>(BSX의 경우에 Door 우클릭)</p></td><td></td><td><p>1. Emergency Unlock 해제 되어야 함</p></td></tr><tr><td>29</td><td><p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> <b>Alarm 해제</b><br/>1. User &gt; Card에 Lock Override Check<br/>2. Door &gt; Add Door &gt; Door 구성<br/>3. Zone &gt; Schedule Lock<br/>4. Lock Override Card 인증하여 Emergency Unlock 발생<br/>5. Monitoring &gt; Door Status &gt; Clear Alarm<br/>(BSX의 경우에 Door 우클릭)</p></td><td></td><td><p>1. Emergency Unlock 해제 되어야 함</p></td></tr><tr><td>30</td><td><p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> <b>Alarm 상태에서 Normalize 동작</b><br/>1. User &gt; Card에 Lock Override Check<br/>2. Door &gt; Add Door &gt; Door 구성<br/>3. Device or Door &gt; Manual Lock<br/>4. Lock Override Card 인증하여 Emergency Unlock 발생<br/>5. Monitoring &gt; Door Status &gt; Normalize(Release)<br/>(BSX의 경우에 Door 우클릭)</p></td><td></td><td><p>1. Manual Lock 상태만 해제 되어야 함, Relay Unlock 유지<br/>(Emergency Unlock 해제되면 안 됨)</p></td></tr><tr><td>31</td><td><p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> <b>Alarm 상태에서 Normalize 동작</b><br/>1. User &gt; Card에 Lock Override Check<br/>2. Door &gt; Add Door &gt; Door 구성<br/>3. Device or Door &gt; Manual Lock<br/>4. Lock Override Card 인증하여 Emergency Unlock 발생<br/>5. Device &gt; Door Control &gt; Normalize(Release)</p></td><td></td><td><p>1. Manual Lock 상태만 해제 되어야 함, Relay Unlock 유지<br/>(Emergency Unlock 해제되면 안 됨)</p></td></tr><tr><td>32</td><td><p><b><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> lock override 초기화</b><br/>1. without network reset 동작 후 lock override 확인<br/>2. all reset 동작 후 lock override 확인<br/>3. secure tamper 동작 후 lock override 확인<br/>4. factory default 동작 후 lock override 확인</p></td><td></td><td><p>1,2 : lock Override로 동작한다<br/>3,4 : 일반 인증으로 동작한다<br/>※ lock override는 사용자의 정보를 따라가기 때문에 사용자 정보가 삭제되는 secure tamper, factory default에서 일반 인증으로 동작됨</p></td></tr><tr><td>33</td><td><p><b><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> lock override 상태에서 manual lock / unlock 후 Normalize</b><br/>1. Door Control / Biostar로 Manual lock 동작<br/>2. Lock Override Card로 Emergency Unlock 발생<br/>3. Door Control &gt; Manual Lock / Unlock 후 Normalize(Release)</p></td><td></td><td><p>1. Manual Lock / Unlock 상태만 해제된다 (Emergency Unlock만 유지, Alarm 발생)</p></td></tr></table>",
-    "customfield_10248": null,
-    "customfield_10006": [],
-    "customfield_10007": [],
-    "customfield_10008": {
-      "issueId": 69843,
-      "statuses": [
-        {
-          "statusResults": [
-            {
-              "latest": 3,
-              "latestFinal": 3,
-              "latestId": 35305,
-              "latestFinalId": 35305
-            }
-          ]
-        }
-      ]
-    },
-    "customfield_12309": null,
-    "customfield_10802": null,
-    "customfield_10803": null,
-    "customfield_10805": null,
-    "summary": "[BSX지원기능][BDP-1239]Emergency 등급으로 출입문을 제어할 수 있는 크리덴셜의 설정 기능 (Lock Override)",
-    "customfield_10240": null,
-    "customfield_10000": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
-      "value": "Manual",
-      "id": "10000"
-    },
-    "customfield_10243": null,
-    "customfield_10001": null,
-    "customfield_10244": null,
-    "customfield_10002": null,
-    "customfield_10003": null,
-    "customfield_10246": null,
-    "customfield_10004": {
-      "steps": [
-        {
-          "id": 19594,
-          "index": 1,
-          "step": "[BioStar-X]\n1. USER > ADD USER\n2. Credential(카드) > Device 선택",
-          "data": "[BioStar] - 카드 등록 가능 장치\n> Scan(Registerd by Card Reader)\n> Enter Manually\n> Assign Card",
-          "result": "1. 카드 등록은 Master, Salve를 통해 Scan, Manually, Assign으로 등록가능하다.\n>  BioStar에 기등록된 카드를 복제하여 사용하는 것을 방지하기 위해  Secure Credential Card(SCC) 유형만 등록/사용\n2. 장치가 Disable 상태일땐 모든 지문/카드 등록 불가능하다.\n3. 등록하는 장치의 Card Type Masking 비활성화 시 등록 및 사용할 수 없다.\n> 메시지 팝업 확인 필요",
-          "attachments": []
-        },
-        {
-          "id": 19595,
-          "index": 2,
-          "step": "[BioStar-X]\n1. USER > 카드 등록된 사용자 선택\n2. Credential > Security Option> Lock Override선택 > Apply\n3. 장치로 사용자 전송",
-          "data": "[BioStar] - Security Option\n1. Lock Override 설정\n> Max : 1,000개\n> User : 8개 \n> Default : Uncheck\n2. Lock Override 미지원\n[Card]\nSuprema Smart Card - Access on Card\nMobile Access\nTemplate on Mobile - Access on Card\n[Biometric]\nFace\nFingerprint\n[QR]\nQR/Barcode\nBioStar QR\n[PIN]",
-          "result": "1. 장치에서 BioStar 를 통해 입력한 Credential이 정상적으로 반영 되어야 한다.\n> Card / Mobile Access - SCC\n2. LockOverride(Fireman's Card) 설정된 카드로 인증시 아래 사항을 확인하여 Door Relay를 개방한다.\n> 최대 설정 개수(1,000개) 확인\n> User - 8개\n> 장치에서의 크리덴셜의 인증 시작 / LockOverride 설정 확인 / 해당 크리덴셜의 카드 타입이 Lock Override가 설정된 카드 타입과 동일한 지 확인",
-          "attachments": []
-        },
-        {
-          "id": 19596,
-          "index": 3,
-          "step": "[Stand Alone]\n1. Door 미구성\n2. Step 2에서 등록한 Lock Override > Master/Slave 장치에 인증 시도",
-          "data": "Device Relay\n",
-          "result": "1. 일반 인증 처럼 동작 한다.\n> 출입문 미설정이기 때문에 Lock Override, Door Control 모두 미지원\n> 일반 인증 처럼 - 등록 여부에 따라 인증 성공/실패 메시지 팝업",
-          "attachments": []
-        },
-        {
-          "id": 19597,
-          "index": 4,
-          "step": "[장치간 RS485 연결 => Door 구성 상태]\n1. Door> Add Door> Door 구성\n2. Step 2에서 등록한 Lock Override > Master/Slave 장치에 인증 시도",
-          "data": "Lock Override\n> Schedule Lock\n> Operator Lock(Manual Lock)\nDoor -> Disable Device\n",
-          "result": "1. Lock Override로 인증 시 Unlock 후 Open 되어야 하며, 열림상태를 유지해야 한다.\n> 일반 인증 무시 - Lock Override Card 동작\n> LCD 존재 유무에 따른 표시 : Lock Override / 비상개방 카드 활성화\n> 출입문 열려 있음 표시 : 비상 개방(eventType.4145) / Emergency Open (eventType.4145)\n2. Lock Override로 인증 시 이벤트는 아래와 같다.\n> Door release request by emergency / 출입문 비상 개방/잠금 해제 (eventType.23554)\n> Door unlock request by emergency / 출입문 비상 개방 요청 (eventType.24066)\n>> Event: 1:1 authentication succeeded (Lock Override)(영문) / 1:1 인증 성공 (비상 개방 카드)(eventType.4145)\n\n\n* 출입문 열려 있음 표시 - 비상 개방 카드 활성화 / Fireman's Card에 대해서 스트링 수정 여부 확인 필요\n* LCD 존재 유무에 따른 표시 - 추후 논의 후 요구사항 및 코멘트 확인 필요로 현재는 Non LCD 장치는 본건의 제외",
-          "attachments": []
-        },
-        {
-          "id": 19598,
-          "index": 5,
-          "step": "[BioStar X - User]\n1. User > Credential > Security Option \n2. Assign Lock Override \n",
-          "data": "Lock Override",
-          "result": "1. Lock Override가 할당된 목록을 확인 할 수 있다.\n>  Lock Override 지원 - CSN, SCC(Smart Card, CSN Mobile/Template On Mobile))\n2. Lock Override Auto Sync로 동작을 한다.(자동)\n> 사용자 동기화 모드와 별개로 동작\n> 장치가 끊어진 상태에서 등록된 Lock Override는 장치가 재연결되면 장치로 재전송된다.\n> 장치 동기화 시에는 별다른 로그를 남기지 않는다.\n3. Lock Override 할당 카드는 사용자 유효성과는 별개로 동작한다. 단 Lock Override 동작 조건 확인 필요\n> Period 경과 유무\n> Status 유무\n> 장치에 사용자 정보가 없는 (싱크되지 않은 경우나 장치UI통해 삭제된)경우",
-          "attachments": []
-        },
-        {
-          "id": 19599,
-          "index": 6,
-          "step": "[BioStar X - User]\n1. User > Credential > Security Option \n2. Assign Lock Override \n",
-          "data": "Lock Override\n> Max Enroll",
-          "result": "1. Lock Override Max 이상 장치에 등록 시 유무 확인 한다.\n> Max : 1000개 / User : 8개\n> Max 이상 등록 시 메시지 팝업 추후 확인 ",
-          "attachments": []
-        },
-        {
-          "id": 19600,
-          "index": 7,
-          "step": "[BioStar-X]\n1. USER > 기등록된 LockOverride \n2. Credential > Block버튼> Apply\n3. 장치로 사용자 전송",
-          "data": "[BioStar] - Lock Override\n1. Lock Override 설정\n> Max : 1,000개\n> User : 8개 ",
-          "result": "1. 장치에서 BioStar 를 통해 입력한 Credential이 정상적으로 반영 되어야 한다.\n2. Block(Blacklist) 설정된 Lock Override Card로 인증 시 Lock Overrie로 동작 한다.\n> Lock Override가 BlackList보다 우선 ",
-          "attachments": []
-        },
-        {
-          "id": 19601,
-          "index": 8,
-          "step": "[출입문/구역 미설정 상태]\n1. Step 2에서 등록한 Lock Override > 인증 시도",
-          "data": "인증시도\n> 단일장치\n> Master-Slave 장치\n> 장치 인증 모드별\n=: Card, 이중인증, 근태, 권한별 메뉴 진입",
-          "result": "1. 출입문/구역 미설정으로 인해 일반 인증으로 동작한다.\n> Lock Override 동작 조건이 아닌 경우, 일반 인증 처럼 동작한다.\n",
-          "attachments": []
-        },
-        {
-          "id": 19602,
-          "index": 9,
-          "step": "[장치간 RS485 연결 => Door 구성 상태]\n1. Door> Add Door> Door 구성\n2. Step 2에서 등록한 Lock Override > Master/Slave 장치에 인증 시도",
-          "data": "Lock Override\n> Schedule Lock\n> Operator Lock(Manual Lock)\n",
-          "result": "1. Lock Override로 인증 시 Unlock 상태를 유지해야 한다.\n> 일반 인증 무시 \n> LCD 존재 유무에 따른 표시 : Lock Override / 비상개방 카드 활성화\n> Door Open은 사용자 직접 출입문을 열고 나가는 경우 event 발생\n2. Held Open Alarm은 미발생되어야 한다.\n3. Dual Auth 무시하고, Card Only로 동작되어 Lock Override로 인증 시 동작한다.\n4. Master와 연결이 끊어진 Slave는 지원하지 않는다.\n5. Lock Override로 인증 시 이벤트는 아래와 같다.\n> Door release request by emergency / 출입문 비상 잠금 해제 (eventType.23554)\n> Door unlock request by emergency / 출입문 비상 개방 요청 (eventType.24066)\n>> Event: 1:1 authentication succeeded (Lock Override)(영문) / 1:1 인증 성공 (비상 개방 카드)(eventType.4145)\n\n\n* 출입문 열려 있음 표시 - 비상 개방 카드 활성화 / Fireman's Card에 대해서 스트링 수정 여부 확인 필요\n* LCD 존재 유무에 따른 표시 - 추후 논의 후 요구사항 및 코멘트 확인 필요로 현재는 Non LCD 장치는 본건의 제외\n",
-          "attachments": []
-        },
-        {
-          "id": 19603,
-          "index": 10,
-          "step": "1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Access Group 설정\n3. Access Group : +Add\n4. Step 2에서 등록한 Lock Override 인증 시도",
-          "data": "Lock Override\n> Schedule Lock\n> Operator Lock(Manual Lock)\nDevice\n> Disable Device",
-          "result": "1. Access Group에 속한 사용자만이 Arm/Disarm 권한을 갖는다.\n> Normal -> Arm : Arm \n> Arm -> Disarm : Disarm\n2. 경비 상태에서 인증 시 아래와 같이 동작한다.\n> Disable Device(Lock Device) - 일반 인증 동작 안하고, Lock Override에 대한 카드만 동작하고, Lock Override 조건 이면 Unlock 상태, Arm 상태 유지\n> Lock Override 미동작 조건이면 Arm 상태의 출입문이 닫힘 상태 유지된다. Arm 상태 유지\n> Disarm - Disarm\n> Lock Override - 동작 조건이면 Lock Override로 동작",
-          "attachments": [
-            {
-              "id": 1130,
-              "fileName": "LockOverride 동작 Case[최종].jpg",
-              "fileIcon": "image.gif",
-              "fileIconAlt": "JPEG File",
-              "fileSize": "173 kB",
-              "numericalFileSize": 0,
-              "created": "21/5월/25 3:14 오후",
-              "author": "hmkang"
-            }
-          ]
-        },
-        {
-          "id": 19894,
-          "index": 11,
-          "step": "[장치간 RS485 연결 => Door 구성 상태]\n\n1. Door> Add Door> Door 구성\n2. Schedule Lock & Manual LocK 동작\n3. Step 2에서 등록한 Lock Override > Master/Slave 장치에 인증 시도\n4. Master / Slave 장치 화면표시 확인",
-          "data": "Lock Override\n> Schedule Lock\n> Operator Lock(Manual Lock)\n",
-          "result": "1. Lock Override 설정 카드로 장치에 인증 시 비상 동작 했음을 장치 화면에 표시한다.\n> Master/Slave 표시\n> 표시하는 기간 : Emergency Unlock이 Normalize 될 때까지\n2. Lock Override 비상 동작에 대한 인증 결과는 인증 메시지 표시 시간을 따라 동작한다.\n> 비상 개방(eventType.4145) / Emergency Open (eventType.4145)  \n\n",
-          "attachments": []
-        },
-        {
-          "id": 19604,
-          "index": 12,
-          "step": "[장치간 RS485 연결 => Door 구성 상태]\n\n1. Door> Add Door> Door 구성\n2. Intrusion Alarm Zone 동작\n3. Scheudle Unlock 동작\n4. Fire Alarm 동작\n5. Manual Lock 동작\n6. Manual Unlock 동작\n\n** 각 단계별 Step 2에서 등록한 Lock Override 인증 시도\n",
-          "data": "우선 순위 확인\n> Lock Override(1)\n> Fire Alarm Zone(1)\n> Manual Lock/Unlcok (Monitoring > Door Status)(2)\n> Scheduled Lock/Unlock Zone(3)\n\n>> > Intrusion Alarm Zone 동작",
-          "result": "1. 최초 Intrusion Alarm Zone에 의해 Locked 된다.\n> Door Unlock - Locked 된 상태로 경비 개시\n> Fire Alarm - Unlocked 된 상태이면 우선 순위에 의해 Unlocked 된 상태로 경비 개시. Door Open 시 Alarm 발생(Fire Alarm, Intrusion Alarm)\n> Lock Override 인증 - Door Locked(Lock Override) 상태, Arm 상태이면, Lock -> Unlocked 상태로, Unlock 상태이면 반응 없음\n2. Schedule Unlock에 의해 Unlocked 된다.\n> Door Open - Alarm 발생(Intrusion Alarm)\n> Lock Override 인증 - 반응 없음\n3. Fire Alarm 발생시 Unlocked 유지된다. (Fire Alarm 이 Scheduled Unlock 보다 우선순위가 높다)\n4. Manual Lock 발생시 Unlocked 유지된다. (Manual Lock 이 Fire Alarm 보다 우선순위가 낮다)\n> Lock Override에 의해 비상 개방으로 동작(Emergency Unlock)\n5. Fire Alarm 해제 후 Manual Lock 발생시 Locked 된다. (Manual Lock 이 Scheduled Unlock 보다 우선순위가 높다)\n6. Fire Alarm 해제 후 Manual Unlock 발생시 Unlocked 유지된다. (Manual Unlock 이 Scheduled Unlock 보다 우선순위가 높다)\n7. Manual Lock/Unlock 해제 후 Scheduled Unlock 에 의해 Unlocked 된다.",
-          "attachments": []
-        },
-        {
-          "id": 19605,
-          "index": 13,
-          "step": "[장치간 RS485 연결 => Door 구성 상태]\n\n1. Door> Add Door> Door 구성\n2. Schedule Lock & Manual Lock 동작 \n3. Step 2에서 등록한 Lock Override 인증 시도\n4. Fire Alarm 동작",
-          "data": "우선 순위 확인\n> Lock Override(1)\n : Schedule Lock\n : Manual Lock\n> Fire Alarm Zone(1)\n",
-          "result": "1. 최초 Schedule Lock & Manual Lock에 의해 Locked 된다.\n2. Lock Override로 인증 시 Unlocked 된다.\n3. Fire Alarm 발생시 Unlocked 유지된다. (Fire Alarm과 Lock Override 우선순위가 같다)\n4. Fire Alarm 해제 시 Locked 된다.\n> Lock Override에 의한 Door도 Locked로 초기화 된다.\n5. Door Control에 의해 출입문 상태를 Normalized로 복구 할 수 없다.(알람 해제 후 가능)",
-          "attachments": []
-        },
-        {
-          "id": 19864,
-          "index": 14,
-          "step": "[장치간 RS485 연결 => Door 구성 상태]\n\n1. Door> Add Door> Door 구성\n2. Schedule Lock & Manual LocK 동작\n3. Step 2에서 등록한 Lock Override > Master/Slave 장치에 인증 시도\n4. Master / Slave 장치 Reboot 시도\n5. Master / Slave 장치 Rebooting 완료 후 동작",
-          "data": "Lock Override\n> Schedule Lock\n> Operator Lock(Manual Lock)\n",
-          "result": "1. Master & Slave 장치가 Reboot되는 경우에도 Lock Override 로 동작한 상태는 Unlock 상태를 유지해야 한다.\n\n",
-          "attachments": []
-        },
-        {
-          "id": 19865,
-          "index": 15,
-          "step": "[장치간 RS485 연결 => Door 구성 상태]\n\n1. Door> Add Door> Door 구성\n2. Schedule Lock & Manual LocK 동작\n3. Step 2에서 등록한 Lock Override > Master/Slave 장치에 인증 시도\n4. Zone 삭제\n5. Door 삭제\n\n* 편집(정보 변경)은 Zone 구성 상태로 가정하고 제외",
-          "data": "Lock Override\n> Schedule Lock\n> Operator Lock(Manual Lock)\n",
-          "result": "1. Zone 삭제 시 Emergency Unlock 유지됨\n2. Door 삭제 시 Lock Override에 의해 Unlock된 Relay를 Lock로 동작 한다.\n",
-          "attachments": []
-        },
-        {
-          "id": 19895,
-          "index": 16,
-          "step": "[Door 생성 - 출입그룹 미생성]\n1. Door > Add Door > Door 구성\n2. 출입그룹 미생성\n3. *Schedule Lock 동작*\n4. Step 2에서 등록한 Lock Override > Master/Slave 장치에 인증 시도",
-          "data": "Lock Override\n> Schedule Lock\n> Operator Lock(Manual Lock)\n",
-          "result": "1. Lock Override로 인증 시 비상 개방으로 동작 한다.\n",
-          "attachments": []
-        },
-        {
-          "id": 19896,
-          "index": 17,
-          "step": "[Door 생성 - 출입그룹 미생성]\n1. Door > Add Door > Door 구성\n2. 출입그룹 미생성\n3. *Manual Lock* 동작\n4. Step 2에서 등록한 Lock Override > Master/Slave 장치에 인증 시도",
-          "data": "Lock Override\n> Schedule Lock\n> Operator Lock(Manual Lock)\n",
-          "result": "1.Lock Override로 인증 시 비상 개방으로 동작한다.",
-          "attachments": []
-        },
-        {
-          "id": 19898,
-          "index": 18,
-          "step": "[Door 생성]\n1. Door > Add Door > Door 구성\n2. Manual Lock 동작\n3. Admin Menu 로그인 시도(Step 2에서 등록한 Lock Override) > Master장치에 인증 시도",
-          "data": "1. Card\n> Admin User에 등록된 Card이자 Lock Override 설정된 Card",
-          "result": "1.Admin Menu 인증을 통해 장치 메뉴가 출력된다.\n> Lock Override 설정 의미 없음",
-          "attachments": []
-        },
-        {
-          "id": 19905,
-          "index": 19,
-          "step": "[Door 생성]\n1. Door > Add Door > Door 구성\n2. Manual Lock 동작\n3. Door Control > Card로 진입 시도",
-          "data": "1. Card\n> Admin User에 등록된 Card이자 Lock Override 설정된 Card",
-          "result": "1. Door Control 진입 가능해야함",
-          "attachments": []
-        },
-        {
-          "id": 19899,
-          "index": 20,
-          "step": "(on) *Door, Zone 생성*\n1. Door > Add Door > Door 구성\n2. Zone > Schedule Lock 구성\n3. Manual Lock / Unlock 동작\n4. (Step 2에서 등록한 Lock Override) Master/Slave 장치에 인증 시도",
-          "data": "",
-          "result": "1. Emergency Unlock으로 동작한다",
-          "attachments": [
-            {
-              "id": 1132,
-              "fileName": "예외케이스.png",
-              "fileIcon": "image.gif",
-              "fileIconAlt": "PNG File",
-              "fileSize": "33 kB",
-              "numericalFileSize": 0,
-              "created": "05/6월/25 10:58 오전",
-              "author": "dhwoo"
-            }
-          ]
-        },
-        {
-          "id": 19900,
-          "index": 21,
-          "step": "(on) *Door, Zone 생성*\n1. Door > Add Door > Door 구성\n2. Zone > Schedule Unlock 구성\n3. Manual lock 동작\n4. (Step 2에서 등록한 Lock Override) Master/Slave 장치에 인증 시도",
-          "data": "",
-          "result": "1. Emergency Unlock으로 동작한다.",
-          "attachments": []
-        },
-        {
-          "id": 19901,
-          "index": 22,
-          "step": "(on) *Door, Zone 생성*\n1. Door > Add Door > Door 구성\n2. Zone > Schedule Unlock 구성\n3. Manual unlock 동작\n4. (Step 2에서 등록한 Lock Override) Master/Slave 장치에 인증 시도",
-          "data": "",
-          "result": "1. 일반 인증으로 동작한다.\n(장치 Credential로 동작)",
-          "attachments": []
-        },
-        {
-          "id": 19903,
-          "index": 23,
-          "step": "(on) *Intrusion Alarm Zone*\n1. Zone > Intrusion Alarm Zone 구성\n2. Manual Lock 동작\n3. Arm 카드 인식 후 User에 등록된 카드 인식하여 Arm 동작\n4. Disarm 카드 인식 후 Lock Override 카드 인식",
-          "data": "",
-          "result": "1. Emergency Unlock으로 동작한다\n※Schedule Unlock 설정되어 있어도 동일하게 동작해야함",
-          "attachments": []
-        },
-        {
-          "id": 19904,
-          "index": 24,
-          "step": "(on) *Intrusion Alarm Zone*\n1. Zone > Intrusion Alarm Zone 구성\n2. Zone > Schedule Lock Zone 구성\n3. Arm 카드 인식 후 User에 등록된 카드 인식하여 Arm 동작\n4. Disarm 카드 인식 후 Lock Override 카드 인식",
-          "data": "",
-          "result": "1. Emergency Unlock으로 동작한다\n※ Manual Unlock/lock 설정되어 있어도 동일하게 동작해야함",
-          "attachments": []
-        },
-        {
-          "id": 19902,
-          "index": 25,
-          "step": "(on) *Fire Alarm Zone*\n1. Zone > Fire Alarm Zone 구성\n2. Manual Lock 동작\n3. Fire Alarm Input 접지하여 Fire Alarm 발생\n4. Lock Override Card 인증하여 Emergency Unlock으로 동작\n5. Fire Alarm Zone 삭제",
-          "data": "",
-          "result": "1. Normal 상태로 동작\n※ Emergency Unlock은 Fire Alarm에 의한 Emergency인지 Lock Override에 대한 Emergency인지 구분하지 않아 삭제해도 Emergency Unlock 해제되어야 함",
-          "attachments": []
-        },
-        {
-          "id": 19908,
-          "index": 26,
-          "step": "(on) *미지원 장치 및 FW*\n1. Door 구성 후 Manual Lock\n2. 미지원 장치 Slave에 Lock Override Card 인증 시도\n3. 미지원 FW Slave 장치에 Lock Override Card 인증 시도",
-          "data": "",
-          "result": "1. 인증 성공/실패 상관 없이 Emergency Unlock으로 동작한다. (장치 성공 / 실패 관계 없이 Emergency Unlock으로 동작하는 것이 현재 사양임)\n※ 장치별 현재 동작\nXP2, D2, W2 : Fail Buzzer / LED 출력\nF2 : Access Granted 팝업 출력\nXS2, BS3, W3 : Access Denied 팝업 출력",
-          "attachments": []
-        },
-        {
-          "id": 20014,
-          "index": 27,
-          "step": "(on) *지원 > 미지원 SW*\n1. 지원하는 SW에서 Door 구성 후 Manual Lock\n2. 지원 / 미지원 장치 Master/Slave에 Lock Override Card 인증\n3. 미지원하는 SW로 Downgrade\n4. Biostar에 장치 연결 후에 Door 구성 후, Manual Lock\n5. 장치에 Lock Override Card 인증",
-          "data": "지원 SW\n> Biostar2 v3.0.0.74 이상\n\n미지원 SW\n> Biostar2 v2.9.x.x",
-          "result": "2. Emergency Unlock으로 동작한다.\n5. 미지원하는 SW에서도 Lock Override로 동작 가능 (호환성을 보장하지 않음)",
-          "attachments": []
-        },
-        {
-          "id": 19912,
-          "index": 28,
-          "step": "(on) *Alarm 해제*\n1. User > Card에 Lock Override Check\n2. Door > Add Door > Door 구성\n3. Device or Door > Manual Lock\n4. Lock Override Card 인증하여 Emergency Unlock 발생\n5. Monitoring > Door Status > Clear Alarm\n(BSX의 경우에 Door 우클릭)",
-          "data": "",
-          "result": "1. Emergency Unlock 해제 되어야 함",
-          "attachments": []
-        },
-        {
-          "id": 19913,
-          "index": 29,
-          "step": "(on) *Alarm 해제*\n1. User > Card에 Lock Override Check\n2. Door > Add Door > Door 구성\n3. Zone > Schedule Lock\n4. Lock Override Card 인증하여 Emergency Unlock 발생\n5. Monitoring > Door Status > Clear Alarm\n(BSX의 경우에 Door 우클릭)",
-          "data": "",
-          "result": "1. Emergency Unlock 해제 되어야 함",
-          "attachments": []
-        },
-        {
-          "id": 19914,
-          "index": 30,
-          "step": "(on) *Alarm 상태에서 Normalize 동작*\n1. User > Card에 Lock Override Check\n2. Door > Add Door > Door 구성\n3. Device or Door > Manual Lock\n4. Lock Override Card 인증하여 Emergency Unlock 발생\n5. Monitoring > Door Status > Normalize(Release)\n(BSX의 경우에 Door 우클릭)",
-          "data": "",
-          "result": "1. Manual Lock 상태만 해제 되어야 함, Relay Unlock 유지\n(Emergency Unlock 해제되면 안 됨)",
-          "attachments": []
-        },
-        {
-          "id": 19915,
-          "index": 31,
-          "step": "(on) *Alarm 상태에서 Normalize 동작*\n1. User > Card에 Lock Override Check\n2. Door > Add Door > Door 구성\n3. Device or Door > Manual Lock\n4. Lock Override Card 인증하여 Emergency Unlock 발생\n5. Device > Door Control > Normalize(Release)",
-          "data": "",
-          "result": "1. Manual Lock 상태만 해제 되어야 함, Relay Unlock 유지\n(Emergency Unlock 해제되면 안 됨)",
-          "attachments": []
-        },
-        {
-          "id": 20015,
-          "index": 32,
-          "step": "*(on) lock override 초기화*\n1. without network reset 동작 후 lock override 확인\n2. all reset 동작 후 lock override 확인\n3. secure tamper 동작 후 lock override 확인\n4. factory default 동작 후 lock override 확인",
-          "data": "",
-          "result": "1,2 : lock Override로 동작한다\n3,4 : 일반 인증으로 동작한다\n※ lock override는 사용자의 정보를 따라가기 때문에 사용자 정보가 삭제되는 secure tamper, factory default에서 일반 인증으로 동작됨",
-          "attachments": []
-        },
-        {
-          "id": 20019,
-          "index": 33,
-          "step": "*(on) lock override 상태에서 manual lock / unlock 후 Normalize*\n1. Door Control / Biostar로 Manual lock 동작\n2. Lock Override Card로 Emergency Unlock 발생\n3. Door Control > Manual Lock / Unlock 후 Normalize(Release)",
-          "data": "",
-          "result": "1. Manual Lock / Unlock 상태만 해제된다 (Emergency Unlock만 유지, Alarm 발생)",
-          "attachments": []
-        }
-      ]
-    },
-    "customfield_10236": null,
-    "customfield_10237": null,
-    "environment": null,
-    "customfield_10238": null,
-    "customfield_10239": null,
-    "duedate": null,
-    "comment": {
-      "comments": [
-        {
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/69843/comment/341611",
-          "id": "341611",
-          "author": {
-            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=jcahn",
-            "name": "jcahn",
-            "key": "jcahn",
-            "emailAddress": "jcahn@suprema.co.kr",
-            "avatarUrls": {
-              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10112",
-              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10112",
-              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10112",
-              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10112"
-            },
-            "displayName": "안종철",
-            "active": true,
-            "timeZone": "Asia/Seoul"
-          },
-          "body": "[~김소영]수석님, \r\n* TC 검토 \r\n** 5월중에는 BioStar X에서 사용자 등록/수정이 불가할 것으로 예상되는데요. BSX 설치 패키지에 BioStar2가 포함되어 있어 기존 UI를 통해 테스트하여도 문제 없을까요? \r\n** lock override 설정도 biostar2 ui를 사용하여야\r\n** 3번8번  door 미구성시 일반인증 처럼 동작 해야 한다는 스펙이 있나요? - lock override는 카드 식별을 위해 userID를 가지고 있지만, 사용자 DB에 저장이 되지 않고 별도로 저장됩니다. \r\n** 7번 lock override 카드를 blacklist에 등록한다는 스펙이 있나요? - blacklist 체크는 하지 않고 있습니다. ",
-          "updateAuthor": {
-            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=jcahn",
-            "name": "jcahn",
-            "key": "jcahn",
-            "emailAddress": "jcahn@suprema.co.kr",
-            "avatarUrls": {
-              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10112",
-              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10112",
-              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10112",
-              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10112"
-            },
-            "displayName": "안종철",
-            "active": true,
-            "timeZone": "Asia/Seoul"
-          },
-          "created": "2025-05-16T11:42:48.000+0900",
-          "updated": "2025-05-16T11:42:48.000+0900"
-        },
-        {
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/69843/comment/341625",
-          "id": "341625",
-          "author": {
-            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
-            "name": "김소영",
-            "key": "김소영",
-            "emailAddress": "sykim@suprema.co.kr",
-            "avatarUrls": {
-              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-            },
-            "displayName": "김소영",
-            "active": true,
-            "timeZone": "Asia/Seoul"
-          },
-          "body": "[~jcahn] 수석님\r\n\r\n1) 바이오스타 2와도 호환이 되기 때문에 테스트시 문제없을 것 같습니다.\r\n 2) 바이오스타 UI를 사용해야 하는 경우라면 테스트 버전 전달 가능 일정을 받아야겠죠~\r\n 3) -일반 인증처럼 동작이 되어야 할 듯 합니다. 사용자 DB에 저장이 되지 않기 때문에 등록되지 않은 카드로 처리가 되어야 하지 않을까요??-  => BPS와 협의가 필요한 부분이기에 월요일날 얘기하면 좋을 것 같습니다.\r\n 4) 권나연 과장님과 최종 정리했습니다. 해당 TC는 수정하도록 하겠습니다.\r\n => Lock Override 설정된 크리덴셜을 Block 처리하여 사용을 막는 것에 대해서는 고려하지 않는다. (2025-05-16 추가)",
-          "updateAuthor": {
-            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
-            "name": "김소영",
-            "key": "김소영",
-            "emailAddress": "sykim@suprema.co.kr",
-            "avatarUrls": {
-              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-            },
-            "displayName": "김소영",
-            "active": true,
-            "timeZone": "Asia/Seoul"
-          },
-          "created": "2025-05-16T12:14:29.000+0900",
-          "updated": "2025-05-16T12:27:45.000+0900"
-        },
-        {
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/69843/comment/341769",
-          "id": "341769",
-          "author": {
-            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=jcahn",
-            "name": "jcahn",
-            "key": "jcahn",
-            "emailAddress": "jcahn@suprema.co.kr",
-            "avatarUrls": {
-              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10112",
-              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10112",
-              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10112",
-              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10112"
-            },
-            "displayName": "안종철",
-            "active": true,
-            "timeZone": "Asia/Seoul"
-          },
-          "body": "[~김소영]수석님, \r\n금일 BPS와 논의하였였습니다. \r\n BDP-1239의 내용 중 정의되지 않은 내용에 대해서 BPS에서 정리하여 전달하기로 하였습니다. 해당 스펙의 목적이 정확히 공유되지 않은것 같습니다. 이 부분에 대해서 정리되면 TC도 재검토 되어야 합니다. \r\n\r\n[~nykwon]과장님, \r\nBDP-1239에 대한 내용이 정리되면 김소영수석님에게도 공유 해주시면 감사하겠습니다. \r\n",
-          "updateAuthor": {
-            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=jcahn",
-            "name": "jcahn",
-            "key": "jcahn",
-            "emailAddress": "jcahn@suprema.co.kr",
-            "avatarUrls": {
-              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10112",
-              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10112",
-              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10112",
-              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10112"
-            },
-            "displayName": "안종철",
-            "active": true,
-            "timeZone": "Asia/Seoul"
-          },
-          "created": "2025-05-19T14:25:26.000+0900",
-          "updated": "2025-05-19T14:25:26.000+0900"
-        },
-        {
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/69843/comment/341770",
-          "id": "341770",
-          "author": {
-            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=nykwon",
-            "name": "nykwon",
-            "key": "권나연",
-            "emailAddress": "nayeon@suprema.co.kr",
-            "avatarUrls": {
-              "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=%EA%B6%8C%EB%82%98%EC%97%B0&avatarId=12703",
-              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=%EA%B6%8C%EB%82%98%EC%97%B0&avatarId=12703",
-              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=%EA%B6%8C%EB%82%98%EC%97%B0&avatarId=12703",
-              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=%EA%B6%8C%EB%82%98%EC%97%B0&avatarId=12703"
-            },
-            "displayName": "권나연",
-            "active": true,
-            "timeZone": "Asia/Seoul"
-          },
-          "body": "[~jcahn] 수석님, 코멘트 감사합니다. \r\n\r\n[~김소영] 수석님, 빠르게 정리하여서 재 공유 드리겠습니다. ",
-          "updateAuthor": {
-            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=nykwon",
-            "name": "nykwon",
-            "key": "권나연",
-            "emailAddress": "nayeon@suprema.co.kr",
-            "avatarUrls": {
-              "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=%EA%B6%8C%EB%82%98%EC%97%B0&avatarId=12703",
-              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=%EA%B6%8C%EB%82%98%EC%97%B0&avatarId=12703",
-              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=%EA%B6%8C%EB%82%98%EC%97%B0&avatarId=12703",
-              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=%EA%B6%8C%EB%82%98%EC%97%B0&avatarId=12703"
-            },
-            "displayName": "권나연",
-            "active": true,
-            "timeZone": "Asia/Seoul"
-          },
-          "created": "2025-05-19T14:26:59.000+0900",
-          "updated": "2025-05-19T14:26:59.000+0900"
-        },
-        {
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/69843/comment/341802",
-          "id": "341802",
-          "author": {
-            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=jcahn",
-            "name": "jcahn",
-            "key": "jcahn",
-            "emailAddress": "jcahn@suprema.co.kr",
-            "avatarUrls": {
-              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10112",
-              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10112",
-              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10112",
-              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10112"
-            },
-            "displayName": "안종철",
-            "active": true,
-            "timeZone": "Asia/Seoul"
-          },
-          "body": "BSX 미지원 SLAVE로 door가 설정된 경우에 대한 기획 의견([링크|https://teams.microsoft.com/l/message/19:meeting_MDg5OGNlODMtNzM1MC00ZDI2LTkyYzMtYWE5OWZjNzNjYmU4@thread.v2/1747640399529?context=%7B%22contextType%22%3A%22chat%22%7D])\r\n\r\n \r\n\r\n!image-2025-05-19-16-49-35-143.png|width=600!\r\n\r\n \r\n\r\n ",
-          "updateAuthor": {
-            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=jcahn",
-            "name": "jcahn",
-            "key": "jcahn",
-            "emailAddress": "jcahn@suprema.co.kr",
-            "avatarUrls": {
-              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10112",
-              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10112",
-              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10112",
-              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10112"
-            },
-            "displayName": "안종철",
-            "active": true,
-            "timeZone": "Asia/Seoul"
-          },
-          "created": "2025-05-19T16:52:54.000+0900",
-          "updated": "2025-05-19T16:52:54.000+0900"
-        },
-        {
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/69843/comment/341847",
-          "id": "341847",
-          "author": {
-            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=jcahn",
-            "name": "jcahn",
-            "key": "jcahn",
-            "emailAddress": "jcahn@suprema.co.kr",
-            "avatarUrls": {
-              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10112",
-              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10112",
-              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10112",
-              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10112"
-            },
-            "displayName": "안종철",
-            "active": true,
-            "timeZone": "Asia/Seoul"
-          },
-          "body": "[~김소영]수석님, \r\nBDP-1239 스펙이 확정되어 변경사항 확인하시어 TC 재검토 요청 드립니다. ",
-          "updateAuthor": {
-            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=jcahn",
-            "name": "jcahn",
-            "key": "jcahn",
-            "emailAddress": "jcahn@suprema.co.kr",
-            "avatarUrls": {
-              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10112",
-              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10112",
-              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10112",
-              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10112"
-            },
-            "displayName": "안종철",
-            "active": true,
-            "timeZone": "Asia/Seoul"
-          },
-          "created": "2025-05-20T08:46:35.000+0900",
-          "updated": "2025-05-20T08:46:35.000+0900"
-        },
-        {
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/69843/comment/341854",
-          "id": "341854",
-          "author": {
-            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
-            "name": "김소영",
-            "key": "김소영",
-            "emailAddress": "sykim@suprema.co.kr",
-            "avatarUrls": {
-              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-            },
-            "displayName": "김소영",
-            "active": true,
-            "timeZone": "Asia/Seoul"
-          },
-          "body": "네 TC 업데이트 후 다시 공유드리도록 하겠습니다.\r\n\r\n참조. [~hmkang] 수석님",
-          "updateAuthor": {
-            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
-            "name": "김소영",
-            "key": "김소영",
-            "emailAddress": "sykim@suprema.co.kr",
-            "avatarUrls": {
-              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-            },
-            "displayName": "김소영",
-            "active": true,
-            "timeZone": "Asia/Seoul"
-          },
-          "created": "2025-05-20T08:52:07.000+0900",
-          "updated": "2025-05-20T08:52:07.000+0900"
-        },
-        {
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/69843/comment/343178",
-          "id": "343178",
-          "author": {
-            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=jcahn",
-            "name": "jcahn",
-            "key": "jcahn",
-            "emailAddress": "jcahn@suprema.co.kr",
-            "avatarUrls": {
-              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10112",
-              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10112",
-              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10112",
-              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10112"
-            },
-            "displayName": "안종철",
-            "active": true,
-            "timeZone": "Asia/Seoul"
-          },
-          "body": "* TC 3번 - Door 미구성한 상태에서 Scheduled lock은 설정될 수 없습니다. 만약 미구성 정보의 의미가 Access group/level을 구성하지 않는 것 이라면, locke by schedule/operator는 동작할 수 있습니다. \r\n!image-2025-05-28-14-00-09-716.png|thumbnail!\r\n* TC 13번 - lock override zone 은 잘못 기재 된 것으로 생각 됩니다. \r\n\r\n ",
-          "updateAuthor": {
-            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=jcahn",
-            "name": "jcahn",
-            "key": "jcahn",
-            "emailAddress": "jcahn@suprema.co.kr",
-            "avatarUrls": {
-              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10112",
-              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10112",
-              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10112",
-              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10112"
-            },
-            "displayName": "안종철",
-            "active": true,
-            "timeZone": "Asia/Seoul"
-          },
-          "created": "2025-05-28T14:03:41.000+0900",
-          "updated": "2025-05-28T14:18:39.000+0900"
-        },
-        {
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/69843/comment/343305",
-          "id": "343305",
-          "author": {
-            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=jcahn",
-            "name": "jcahn",
-            "key": "jcahn",
-            "emailAddress": "jcahn@suprema.co.kr",
-            "avatarUrls": {
-              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10112",
-              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10112",
-              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10112",
-              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10112"
-            },
-            "displayName": "안종철",
-            "active": true,
-            "timeZone": "Asia/Seoul"
-          },
-          "body": "TC 11~ 15는 BSX 기준으로 작성되어 있어 현재는 BioStar2로 대체하여 테스트 하는 방법하여야 함. \r\n\r\nBioStar2 > User > Credential > lock_override 에서 구성할 수 있음. \r\n !screenshot-1.png|thumbnail! ",
-          "updateAuthor": {
-            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=jcahn",
-            "name": "jcahn",
-            "key": "jcahn",
-            "emailAddress": "jcahn@suprema.co.kr",
-            "avatarUrls": {
-              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10112",
-              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10112",
-              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10112",
-              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10112"
-            },
-            "displayName": "안종철",
-            "active": true,
-            "timeZone": "Asia/Seoul"
-          },
-          "created": "2025-05-29T08:57:16.000+0900",
-          "updated": "2025-05-29T08:57:16.000+0900"
-        }
-      ],
-      "maxResults": 9,
-      "total": 9,
-      "startAt": 0
-    },
-    "customfield_10230": null,
-    "fixVersions": [],
-    "customfield_10231": null,
-    "customfield_10232": null,
-    "customfield_10233": null,
-    "customfield_12410": null,
-    "customfield_10234": null,
-    "customfield_10235": null,
-    "customfield_10225": null,
-    "customfield_12404": null,
-    "customfield_10226": null,
-    "customfield_12403": null,
-    "customfield_10227": null,
-    "customfield_12406": null,
-    "customfield_10228": null,
-    "customfield_10229": null,
-    "customfield_10900": null,
-    "customfield_12408": null,
-    "customfield_10901": null,
-    "customfield_10902": null,
-    "customfield_10903": null,
-    "customfield_12409": null,
-    "customfield_10904": null,
-    "customfield_10905": null,
-    "customfield_10220": null,
-    "priority": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-      "name": "미할당",
-      "id": "10100"
-    },
-    "customfield_10221": null,
-    "customfield_12400": null,
-    "customfield_12402": null,
-    "customfield_10224": null,
-    "customfield_10214": null,
-    "customfield_10217": null,
-    "customfield_10218": null,
-    "timeestimate": null,
-    "versions": [],
-    "customfield_10219": null,
-    "status": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
-      "description": "",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
-      "name": "할 일",
-      "id": "10000",
-      "statusCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
-        "id": 2,
-        "key": "new",
-        "colorName": "blue-gray",
-        "name": "할 일"
-      }
-    },
-    "customfield_12510": null,
-    "customfield_10213": null,
-    "customfield_12511": null,
-    "customfield_10203": null,
-    "customfield_10204": null,
-    "customfield_12502": null,
-    "customfield_10205": null,
-    "customfield_10206": null,
-    "customfield_10207": null,
-    "aggregatetimeestimate": null,
-    "customfield_10208": null,
-    "customfield_10209": null,
-    "customfield_12509": null,
-    "customfield_12508": null,
-    "creator": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
-      "name": "hmkang",
-      "key": "hmkang",
-      "emailAddress": "hmkang@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
-      },
-      "displayName": "강현민",
-      "active": true,
-      "timeZone": "Asia/Seoul"
-    },
-    "aggregateprogress": {
-      "progress": 0,
-      "total": 0
-    },
-    "customfield_10320": null,
-    "customfield_10321": null,
-    "customfield_12501": null,
-    "customfield_10202": null,
-    "customfield_12500": null,
-    "customfield_10313": "1|hzzgpj:",
-    "customfield_10316": null,
-    "customfield_10317": null,
-    "timespent": null,
-    "aggregatetimespent": null,
-    "customfield_10310": null,
-    "customfield_10302": null,
-    "customfield_10303": null,
-    "customfield_12601": null,
-    "customfield_10304": null,
-    "customfield_10305": null,
-    "customfield_10308": null,
-    "workratio": -1,
-    "created": "2025-03-05T15:03:02.000+0900",
-    "customfield_10533": null,
-    "customfield_10534": null,
-    "customfield_11501": null,
-    "customfield_11503": null,
-    "customfield_13001": null,
-    "customfield_13000": null,
-    "customfield_10530": null,
-    "customfield_10531": null,
-    "customfield_10532": null,
-    "customfield_10401": null,
-    "customfield_10522": null,
-    "customfield_10402": null,
-    "customfield_12700": null,
-    "customfield_10524": null,
-    "customfield_10525": null,
-    "customfield_12702": null,
-    "attachment": [
-      {
-        "self": "https://jira.suprema.co.kr/rest/api/2/attachment/126821",
-        "id": "126821",
-        "filename": "image-2025-05-19-16-49-35-143.png",
-        "author": {
-          "self": "https://jira.suprema.co.kr/rest/api/2/user?username=jcahn",
-          "name": "jcahn",
-          "key": "jcahn",
-          "emailAddress": "jcahn@suprema.co.kr",
-          "avatarUrls": {
-            "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10112",
-            "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10112",
-            "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10112",
-            "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10112"
-          },
-          "displayName": "안종철",
-          "active": true,
-          "timeZone": "Asia/Seoul"
-        },
-        "created": "2025-05-19T16:52:42.000+0900",
-        "size": 36540,
-        "mimeType": "image/png",
-        "content": "https://jira.suprema.co.kr/secure/attachment/126821/image-2025-05-19-16-49-35-143.png",
-        "thumbnail": "https://jira.suprema.co.kr/secure/thumbnail/126821/_thumb_126821.png"
-      },
-      {
-        "self": "https://jira.suprema.co.kr/rest/api/2/attachment/127274",
-        "id": "127274",
-        "filename": "image-2025-05-28-14-00-09-716.png",
-        "author": {
-          "self": "https://jira.suprema.co.kr/rest/api/2/user?username=jcahn",
-          "name": "jcahn",
-          "key": "jcahn",
-          "emailAddress": "jcahn@suprema.co.kr",
-          "avatarUrls": {
-            "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10112",
-            "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10112",
-            "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10112",
-            "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10112"
-          },
-          "displayName": "안종철",
-          "active": true,
-          "timeZone": "Asia/Seoul"
-        },
-        "created": "2025-05-28T14:03:29.000+0900",
-        "size": 40231,
-        "mimeType": "image/png",
-        "content": "https://jira.suprema.co.kr/secure/attachment/127274/image-2025-05-28-14-00-09-716.png",
-        "thumbnail": "https://jira.suprema.co.kr/secure/thumbnail/127274/_thumb_127274.png"
-      },
-      {
-        "self": "https://jira.suprema.co.kr/rest/api/2/attachment/126955",
-        "id": "126955",
-        "filename": "LockOverride 동작 Case[최종].jpg",
-        "author": {
-          "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
-          "name": "hmkang",
-          "key": "hmkang",
-          "emailAddress": "hmkang@suprema.co.kr",
-          "avatarUrls": {
-            "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
-            "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
-            "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
-            "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
-          },
-          "displayName": "강현민",
-          "active": true,
-          "timeZone": "Asia/Seoul"
-        },
-        "created": "2025-05-21T15:13:33.000+0900",
-        "size": 177232,
-        "mimeType": "image/jpeg",
-        "content": "https://jira.suprema.co.kr/secure/attachment/126955/LockOverride+%EB%8F%99%EC%9E%91+Case%5B%EC%B5%9C%EC%A2%85%5D.jpg",
-        "thumbnail": "https://jira.suprema.co.kr/secure/thumbnail/126955/_thumb_126955.png"
-      },
-      {
-        "self": "https://jira.suprema.co.kr/rest/api/2/attachment/127315",
-        "id": "127315",
-        "filename": "screenshot-1.png",
-        "author": {
-          "self": "https://jira.suprema.co.kr/rest/api/2/user?username=jcahn",
-          "name": "jcahn",
-          "key": "jcahn",
-          "emailAddress": "jcahn@suprema.co.kr",
-          "avatarUrls": {
-            "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10112",
-            "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10112",
-            "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10112",
-            "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10112"
-          },
-          "displayName": "안종철",
-          "active": true,
-          "timeZone": "Asia/Seoul"
-        },
-        "created": "2025-05-29T08:57:11.000+0900",
-        "size": 61002,
-        "mimeType": "image/png",
-        "content": "https://jira.suprema.co.kr/secure/attachment/127315/screenshot-1.png",
-        "thumbnail": "https://jira.suprema.co.kr/secure/thumbnail/127315/_thumb_127315.png"
-      }
-    ],
-    "customfield_10526": null,
-    "customfield_12704": null,
-    "customfield_10528": null,
-    "customfield_12706": null,
-    "customfield_10520": null,
-    "customfield_10521": null,
-    "customfield_10400": null,
-    "customfield_10511": null,
-    "customfield_10512": null,
-    "customfield_11600": null,
-    "customfield_10513": null,
-    "customfield_10514": null,
-    "customfield_10515": null,
-    "customfield_10516": null,
-    "customfield_10517": null,
-    "customfield_10518": null,
-    "customfield_10519": null
+[
+  {
+    "id": "COMMONR-379_step_1",
+    "document": "Test Step: [BioStar-X]\n1. USER > ADD USER\n2. Credential(카드) > Device 선택\nTest Data: [BioStar] - 카드 등록 가능 장치\n> Scan(Registerd by Card Reader)\n> Enter Manually\n> Assign Card\nExpected Result: 1. 카드 등록은 Master, Salve를 통해 Scan, Manually, Assign으로 등록가능하다.\n>  BioStar에 기등록된 카드를 복제하여 사용하는 것을 방지하기 위해  Secure Credential Card(SCC) 유형만 등록/사용\n2. 장치가 Disable 상태일땐 모든 지문/카드 등록 불가능하다.\n3. 등록하는 장치의 Card Type Masking 비활성화 시 등록 및 사용할 수 없다.\n> 메시지 팝업 확인 필요",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "1",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_2",
+    "document": "Test Step: [BioStar-X]\n1. USER > 카드 등록된 사용자 선택\n2. Credential > Lock Override선택 > Apply\n3. 장치로 사용자 전송\nTest Data: [BioStar]\n1. Lock Override 설정\n> Max : 1,000개\n> User : 8개 \n> Default : Uncheck\n2. Lock Override 미지원\n[Card]\nSuprema Smart Card - Access on Card\nMobile Access\nTemplate on Mobile - Access on Card\n[Biometric]\nFace\nFingerprint\n[QR]\nQR/Barcode\nBioStar QR\n[PIN]\nExpected Result: 1. 장치에서 BioStar 를 통해 입력한 Credential이 정상적으로 반영 되어야 한다.\n> Card / Mobile Access - SCC\n2. LockOverride(Fireman's Card) 설정된 카드로 인증시 아래 사항을 확인하여 Door Relay를 개방한다.\n> 최대 설정 개수(1,000개) 확인\n> User - 8개\n> 장치에서의 크리덴셜의 인증 시작 / LockOverride 설정 확인 / 해당 크리덴셜의 카드 타입이 Lock Override가 설정된 카드 타입과 동일한 지 확인\n>> 지원 가능한 수를 초과하여 설정하려는 경우 장치에서 서버로 에러 메시지를 리턴한다. \n- 국문:  비상 개방이 1,000개를 초과했습니다. 기존에 설정된 비상 개방을 삭제하거나 해제한 뒤 다시 시도하세요.\n- 영문:  The number of lock overrides cannot exceed 1,000. Please delete or disable existing lock overrides before trying again\n\n>> 장치 메뉴 리스트 뷰의 Device Status 칼럼에 이 사유로 인해 Sync Error 발생한 사실을 안내한다.\n- 상태 이름\n-- 국문 : 동기화 실패(최대 비상 개방 수 초과)\n-- 영문 : Sync Error(Exceeded max lock override count)",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "2",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_3",
+    "document": "Test Step: [Stand Alone]\n1. Door 미구성\n2. Step 2에서 등록한 Lock Override > Master/Slave 장치에 인증 시도\nTest Data: Device Relay\n\nExpected Result: 1. 일반 인증 처럼 동작 한다.\n> 출입문 미설정이기 때문에 Lock Override, Door Control 모두 미지원\n> 일반 인증 처럼 - 등록 여부에 따라 인증 성공/실패 메시지 팝업",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "3",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_4",
+    "document": "Test Step: [장치간 RS485 연결 => Door 구성 상태]\n1. Door> Add Door> Door 구성\n2. Step 2에서 등록한 Lock Override > Master/Slave 장치에 인증 시도\nTest Data: Lock Override\n> Schedule Lock\n> Operator Lock(Manual Lock)\nDoor -> Disable Device\n\nExpected Result: 1. Lock Override로 인증 시 Unlock 후 Open 되어야 하며, 열림상태를 유지해야 한다.\n> 일반 인증 무시 - Lock Override Card 동작\n> LCD 존재 유무에 따른 표시 : Lock Override / 비상개방 카드 활성화\n> 출입문 열려 있음 표시 : 비상 개방(eventType.4145) / Emergency Open (eventType.4145)\n2. Lock Override로 인증 시 이벤트는 아래와 같다.\n> Door release request by emergency / 출입문 비상 개방/잠금 해제 (eventType.23554)\n> Door unlock request by emergency / 출입문 비상 개방 요청 (eventType.24066)\n>> Event: 1:1 authentication succeeded (Lock Override)(영문) / 1:1 인증 성공 (비상 개방)(eventType.4145)\n>> *사용자 ID가 로그 상으로 같이 표시된다(장치, 바이오스타 로그 확인)*\n\n* LCD 존재 유무에 따른 표시 - 추후 논의 후 요구사항 및 코멘트 확인 필요로 현재는 Non LCD 장치는 본건의 제외",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "4",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_5",
+    "document": "Test Step: [BioStar X - User]\n1. User > Credential > Lock Override Check\n\nTest Data: Lock Override\nExpected Result: 1. 크리덴셜 목록에서 Lock Override가 Check된 크리덴셜을 확인할 수 있다.\n>  Lock Override 지원 - CSN, SCC(Smart Card, CSN Mobile/Template On Mobile))\n2. Lock Override Auto Sync로 동작을 한다.(자동)\n> 사용자 동기화 모드와 별개로 동작\n> 장치가 끊어진 상태에서 등록된 Lock Override는 장치가 재연결되면 장치로 재전송된다.\n> 장치 동기화 시에는 별다른 로그를 남기지 않는다.\n3. Lock Override 할당 카드는 사용자 유효성과는 별개로 동작한다. 단 Lock Override 동작 조건 확인 필요\n> Period 경과 유무\n> Status 유무\n> 장치에 사용자 정보가 없는 (싱크되지 않은 경우나 장치UI통해 삭제된)경우",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "5",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_6",
+    "document": "Test Step: [BioStar X - User]\n1. User > Credential > Lock Override Check\n\nTest Data: Lock Override\n> Max Enroll\nExpected Result: 1. Lock Override Max 이상 장치에 등록 시 유무 확인 한다.\n> Max : 1000개 / User : 8개\n> Max 이상 등록 시 메시지 팝업 추후 확인 ",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "6",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_7",
+    "document": "Test Step: [BioStar-X]\n1. USER > 기등록된 LockOverride \n2. Credential > Block버튼> Apply\n3. 장치로 사용자 전송\nTest Data: [BioStar] - Lock Override\n1. Lock Override 설정\n> Max : 1,000개\n> User : 8개 \nExpected Result: 1. 장치에서 BioStar 를 통해 입력한 Credential이 정상적으로 반영 되어야 한다.\n2. Block(Blacklist) 설정된 Lock Override Card로 인증 시 Lock Overrie로 동작 한다.\n> Lock Override가 BlackList보다 우선 ",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "7",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_8",
+    "document": "Test Step: [출입문/구역 미설정 상태]\n1. Step 2에서 등록한 Lock Override > 인증 시도\nTest Data: 인증시도\n> 단일장치\n> Master-Slave 장치\n> 장치 인증 모드별\n=: Card, 이중인증, 근태, 권한별 메뉴 진입\nExpected Result: 1. 출입문/구역 미설정으로 인해 일반 인증으로 동작한다.\n> Lock Override 동작 조건이 아닌 경우, 일반 인증 처럼 동작한다.\n",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "8",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_9",
+    "document": "Test Step: [장치간 RS485 연결 => Door 구성 상태]\n1. Door> Add Door> Door 구성\n2. Step 2에서 등록한 Lock Override > Master/Slave 장치에 인증 시도\nTest Data: Lock Override\n> Schedule Lock\n> Operator Lock(Manual Lock)\n\nExpected Result: 1. Lock Override로 인증 시 Unlock 상태를 유지해야 한다.\n> 일반 인증 무시 \n> LCD 존재 유무에 따른 표시 : Lock Override / 비상개방 카드 활성화\n> Door Open은 사용자 직접 출입문을 열고 나가는 경우 event 발생\n2. Held Open Alarm은 미발생되어야 한다.\n3. Dual Auth 무시하고, Card Only로 동작되어 Lock Override로 인증 시 동작한다.\n4. Master와 연결이 끊어진 Slave는 지원하지 않는다.\n5. Lock Override로 인증 시 이벤트는 아래와 같다.\n> Door release request by emergency / 출입문 비상 잠금 해제 (eventType.23554)\n> Door unlock request by emergency / 출입문 비상 개방 요청 (eventType.24066)\n>> Event: 1:1 authentication succeeded (Lock Override)(영문) / 1:1 인증 성공 (비상 개방)(eventType.4145)\n\n\n* 출입문 열려 있음 표시 - 비상 개방 카드 활성화 / Fireman's Card에 대해서 스트링 수정 여부 확인 필요\n* LCD 존재 유무에 따른 표시 - 추후 논의 후 요구사항 및 코멘트 확인 필요로 현재는 Non LCD 장치는 본건의 제외\n",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "9",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_10",
+    "document": "Test Step: 1. Zone> Add Zone> Intrusion Alarm Zone\n2. Intrusion Alarm Zone> Arm/Disarm Setting> Access Group 설정\n3. Access Group : +Add\n4. Step 2에서 등록한 Lock Override 인증 시도\nTest Data: Lock Override\n> Schedule Lock\n> Operator Lock(Manual Lock)\nDevice\n> Disable Device\nExpected Result: 1. Access Group에 속한 사용자만이 Arm/Disarm 권한을 갖는다.\n> Normal -> Arm : Arm \n> Arm -> Disarm : Disarm\n2. 경비 상태에서 인증 시 아래와 같이 동작한다.\n> Disable Device(Lock Device) - 일반 인증 동작 안하고, Lock Override에 대한 카드만 동작하고, Lock Override 조건 이면 Unlock 상태, Arm 상태 유지\n> Lock Override 미동작 조건이면 Arm 상태의 출입문이 닫힘 상태 유지된다. Arm 상태 유지\n> Disarm - Disarm\n> Lock Override - 동작 조건이면 Lock Override로 동작",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "10",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_11",
+    "document": "Test Step: [장치간 RS485 연결 => Door 구성 상태]\n\n1. Door> Add Door> Door 구성\n2. Schedule Lock & Manual LocK 동작\n3. Step 2에서 등록한 Lock Override > Master/Slave 장치에 인증 시도\n4. Master / Slave 장치 화면표시 확인\nTest Data: Lock Override\n> Schedule Lock\n> Operator Lock(Manual Lock)\n\nExpected Result: 1. Lock Override 설정 카드로 장치에 인증 시 비상 동작 했음을 장치 화면에 표시한다.\n> Master/Slave 표시\n> 표시하는 기간 : Emergency Unlock이 Normalize 될 때까지\n2. Lock Override 비상 동작에 대한 인증 결과는 인증 메시지 표시 시간을 따라 동작한다.\n> 비상 개방(eventType.4145) / Emergency Open (eventType.4145)  \n\n",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "11",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_12",
+    "document": "Test Step: [장치간 RS485 연결 => Door 구성 상태]\n\n1. Door> Add Door> Door 구성\n2. Intrusion Alarm Zone 동작\n3. Scheudle Unlock 동작\n4. Fire Alarm 동작\n5. Manual Lock 동작\n6. Manual Unlock 동작\n\n** 각 단계별 Step 2에서 등록한 Lock Override 인증 시도\n\nTest Data: 우선 순위 확인\n> Lock Override(1)\n> Fire Alarm Zone(1)\n> Manual Lock/Unlcok (Monitoring > Door Status)(2)\n> Scheduled Lock/Unlock Zone(3)\n\n>> > Intrusion Alarm Zone 동작\nExpected Result: 1. 최초 Intrusion Alarm Zone에 의해 Locked 된다.\n> Door Unlock - Locked 된 상태로 경비 개시\n> Fire Alarm - Unlocked 된 상태이면 우선 순위에 의해 Unlocked 된 상태로 경비 개시. Door Open 시 Alarm 발생(Fire Alarm, Intrusion Alarm)\n> Lock Override 인증 - Door Locked(Lock Override) 상태, Arm 상태이면, Lock -> Unlocked 상태로, Unlock 상태이면 반응 없음\n2. Schedule Unlock에 의해 Unlocked 된다.\n> Door Open - Alarm 발생(Intrusion Alarm)\n> Lock Override 인증 - 반응 없음\n3. Fire Alarm 발생시 Unlocked 유지된다. (Fire Alarm 이 Scheduled Unlock 보다 우선순위가 높다)\n4. Manual Lock 발생시 Unlocked 유지된다. (Manual Lock 이 Fire Alarm 보다 우선순위가 낮다)\n> Lock Override에 의해 비상 개방으로 동작(Emergency Unlock)\n5. Fire Alarm 해제 후 Manual Lock 발생시 Locked 된다. (Manual Lock 이 Scheduled Unlock 보다 우선순위가 높다)\n6. Fire Alarm 해제 후 Manual Unlock 발생시 Unlocked 유지된다. (Manual Unlock 이 Scheduled Unlock 보다 우선순위가 높다)\n7. Manual Lock/Unlock 해제 후 Scheduled Unlock 에 의해 Unlocked 된다.",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "12",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_13",
+    "document": "Test Step: [장치간 RS485 연결 => Door 구성 상태]\n\n1. Door> Add Door> Door 구성\n2. Schedule Lock & Manual Lock 동작 \n3. Step 2에서 등록한 Lock Override 인증 시도\n4. Fire Alarm 동작\nTest Data: 우선 순위 확인\n> Lock Override(1)\n : Schedule Lock\n : Manual Lock\n> Fire Alarm Zone(1)\n\nExpected Result: 1. 최초 Schedule Lock & Manual Lock에 의해 Locked 된다.\n2. Lock Override로 인증 시 Unlocked 된다.\n3. Fire Alarm 발생시 Unlocked 유지된다. (Fire Alarm과 Lock Override 우선순위가 같다)\n4. Fire Alarm 해제 시 Locked 된다.\n> Lock Override에 의한 Door도 Locked로 초기화 된다.\n5. Door Control에 의해 출입문 상태를 Normalized로 복구 할 수 없다.(알람 해제 후 가능)",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "13",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_14",
+    "document": "Test Step: [장치간 RS485 연결 => Door 구성 상태]\n\n1. Door> Add Door> Door 구성\n2. Schedule Lock & Manual LocK 동작\n3. Step 2에서 등록한 Lock Override > Master/Slave 장치에 인증 시도\n4. Master / Slave 장치 Reboot 시도\n5. Master / Slave 장치 Rebooting 완료 후 동작\nTest Data: Lock Override\n> Schedule Lock\n> Operator Lock(Manual Lock)\n\nExpected Result: 1. Master & Slave 장치가 Reboot되는 경우에도 Lock Override 로 동작한 상태는 Unlock 상태를 유지해야 한다.\n\n",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "14",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_15",
+    "document": "Test Step: [장치간 RS485 연결 => Door 구성 상태]\n\n1. Door> Add Door> Door 구성\n2. Schedule Lock & Manual LocK 동작\n3. Step 2에서 등록한 Lock Override > Master/Slave 장치에 인증 시도\n4. Zone 삭제\n5. Door 삭제\n\n* 편집(정보 변경)은 Zone 구성 상태로 가정하고 제외\nTest Data: Lock Override\n> Schedule Lock\n> Operator Lock(Manual Lock)\n\nExpected Result: 1. Zone 삭제 시 Emergency Unlock 유지됨\n2. Door 삭제 시 Lock Override에 의해 Unlock된 Relay를 Lock로 동작 한다.\n",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "15",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_16",
+    "document": "Test Step: [Door 생성 - 출입그룹 미생성]\n1. Door > Add Door > Door 구성\n2. 출입그룹 미생성\n3. *Schedule Lock 동작*\n4. Step 2에서 등록한 Lock Override > Master/Slave 장치에 인증 시도\nTest Data: Lock Override\n> Schedule Lock\n> Operator Lock(Manual Lock)\n\nExpected Result: 1. Lock Override로 인증 시 비상 개방으로 동작 한다.\n",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "16",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_17",
+    "document": "Test Step: [Door 생성 - 출입그룹 미생성]\n1. Door > Add Door > Door 구성\n2. 출입그룹 미생성\n3. *Manual Lock* 동작\n4. Step 2에서 등록한 Lock Override > Master/Slave 장치에 인증 시도\nTest Data: Lock Override\n> Schedule Lock\n> Operator Lock(Manual Lock)\n\nExpected Result: 1.Lock Override로 인증 시 비상 개방으로 동작한다.",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "17",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_18",
+    "document": "Test Step: [Door 생성]\n1. Door > Add Door > Door 구성\n2. Manual Lock 동작\n3. Admin Menu 로그인 시도(Step 2에서 등록한 Lock Override) > Master장치에 인증 시도\nTest Data: 1. Card\n> Admin User에 등록된 Card이자 Lock Override 설정된 Card\nExpected Result: 1.Admin Menu 인증을 통해 장치 메뉴가 출력된다.\n> Lock Override 설정 의미 없음",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "18",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_19",
+    "document": "Test Step: [Door 생성]\n1. Door > Add Door > Door 구성\n2. Manual Lock 동작\n3. Door Control > Card로 진입 시도\nTest Data: 1. Card\n> Admin User에 등록된 Card이자 Lock Override 설정된 Card\nExpected Result: 1. Door Control 진입 가능해야함",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "19",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_20",
+    "document": "Test Step: (on) *Door, Zone 생성*\n1. Door > Add Door > Door 구성\n2. Zone > Schedule Lock 구성\n3. Manual Lock / Unlock 동작\n4. (Step 2에서 등록한 Lock Override) Master/Slave 장치에 인증 시도\nExpected Result: 1. Emergency Unlock으로 동작한다",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "20",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_21",
+    "document": "Test Step: (on) *Door, Zone 생성*\n1. Door > Add Door > Door 구성\n2. Zone > Schedule Unlock 구성\n3. Manual lock 동작\n4. (Step 2에서 등록한 Lock Override) Master/Slave 장치에 인증 시도\nExpected Result: 1. Emergency Unlock으로 동작한다.",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "21",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_22",
+    "document": "Test Step: (on) *Door, Zone 생성*\n1. Door > Add Door > Door 구성\n2. Zone > Schedule Unlock 구성\n3. Manual unlock 동작\n4. (Step 2에서 등록한 Lock Override) Master/Slave 장치에 인증 시도\nExpected Result: 1. 일반 인증으로 동작한다.\n(장치 Credential로 동작)",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "22",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_23",
+    "document": "Test Step: (on) *Intrusion Alarm Zone*\n1. Zone > Intrusion Alarm Zone 구성\n2. Manual Lock 동작\n3. Arm 카드 인식 후 User에 등록된 카드 인식하여 Arm 동작\n4. Disarm 카드 인식 후 Lock Override 카드 인식\nExpected Result: 1. Emergency Unlock으로 동작한다\n※Schedule Unlock 설정되어 있어도 동일하게 동작해야함",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "23",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_24",
+    "document": "Test Step: (on) *Intrusion Alarm Zone*\n1. Zone > Intrusion Alarm Zone 구성\n2. Zone > Schedule Lock Zone 구성\n3. Arm 카드 인식 후 User에 등록된 카드 인식하여 Arm 동작\n4. Disarm 카드 인식 후 Lock Override 카드 인식\nExpected Result: 1. Emergency Unlock으로 동작한다\n※ Manual Unlock/lock 설정되어 있어도 동일하게 동작해야함",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "24",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_25",
+    "document": "Test Step: (on) *Fire Alarm Zone*\n1. Zone > Fire Alarm Zone 구성\n2. Manual Lock 동작\n3. Fire Alarm Input 접지하여 Fire Alarm 발생\n4. Lock Override Card 인증하여 Emergency Unlock으로 동작\n5. Fire Alarm Zone 삭제\nExpected Result: 1. Normal 상태로 동작\n※ Emergency Unlock은 Fire Alarm에 의한 Emergency인지 Lock Override에 대한 Emergency인지 구분하지 않아 삭제해도 Emergency Unlock 해제되어야 함",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "25",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_26",
+    "document": "Test Step: (on) *미지원 장치 및 FW*\n1. Door 구성 후 Manual Lock\n2. 미지원 장치 Slave에 Lock Override Card 인증 시도\n3. 미지원 FW Slave 장치에 Lock Override Card 인증 시도\nExpected Result: 1. 인증 성공/실패 상관 없이 Emergency Unlock으로 동작한다. (장치 성공 / 실패 관계 없이 Emergency Unlock으로 동작하는 것이 현재 사양임)\n※ 장치별 현재 동작\nXP2, D2, W2 : Fail Buzzer / LED 출력\nF2 : Access Granted 팝업 출력\nXS2, BS3, W3 : Access Denied 팝업 출력",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "26",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_27",
+    "document": "Test Step: (on) *지원 > 미지원 SW*\n1. 지원하는 SW에서 Door 구성 후 Manual Lock\n2. 지원 / 미지원 장치 Master/Slave에 Lock Override Card 인증\n3. 미지원하는 SW로 Downgrade\n4. Biostar에 장치 연결 후에 Door 구성 후, Manual Lock\n5. 장치에 Lock Override Card 인증\nTest Data: 지원 SW\n> Biostar2 v3.0.0.74 이상\n\n미지원 SW\n> Biostar2 v2.9.x.x\nExpected Result: 2. Emergency Unlock으로 동작한다.\n5. 미지원하는 SW에서도 Lock Override로 동작 가능 (호환성을 보장하지 않음)",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "27",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_28",
+    "document": "Test Step: (on) *Alarm 해제*\n1. User > Card에 Lock Override Check\n2. Door > Add Door > Door 구성\n3. Device or Door > Manual Lock\n4. Lock Override Card 인증하여 Emergency Unlock 발생\n5. Monitoring > Door Status > Clear Alarm\n(BSX의 경우에 Door 우클릭)\nExpected Result: 1. Emergency Unlock 해제 되어야 함",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "28",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_29",
+    "document": "Test Step: (on) *Alarm 해제*\n1. User > Card에 Lock Override Check\n2. Door > Add Door > Door 구성\n3. Zone > Schedule Lock\n4. Lock Override Card 인증하여 Emergency Unlock 발생\n5. Monitoring > Door Status > Clear Alarm\n(BSX의 경우에 Door 우클릭)\nExpected Result: 1. Emergency Unlock 해제 되어야 함",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "29",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_30",
+    "document": "Test Step: (on) *Alarm 상태에서 Normalize 동작*\n1. User > Card에 Lock Override Check\n2. Door > Add Door > Door 구성\n3. Device or Door > Manual Lock\n4. Lock Override Card 인증하여 Emergency Unlock 발생\n5. Monitoring > Door Status > Normalize(Release)\n(BSX의 경우에 Door 우클릭)\nExpected Result: 1. Manual Lock 상태만 해제 되어야 함, Relay Unlock 유지\n(Emergency Unlock 해제되면 안 됨)",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "30",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_31",
+    "document": "Test Step: (on) *Alarm 상태에서 Normalize 동작*\n1. User > Card에 Lock Override Check\n2. Door > Add Door > Door 구성\n3. Device or Door > Manual Lock\n4. Lock Override Card 인증하여 Emergency Unlock 발생\n5. Device > Door Control > Normalize(Release)\nExpected Result: 1. Manual Lock 상태만 해제 되어야 함, Relay Unlock 유지\n(Emergency Unlock 해제되면 안 됨)",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "31",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_32",
+    "document": "Test Step: *(on) lock override 초기화*\n1. without network reset 동작 후 lock override 확인\n2. all reset 동작 후 lock override 확인\n3. secure tamper 동작 후 lock override 확인\n4. factory default 동작 후 lock override 확인\nExpected Result: 1,2 : lock Override로 동작한다\n3,4 : 일반 인증으로 동작한다\n※ lock override는 사용자의 정보를 따라가기 때문에 사용자 정보가 삭제되는 secure tamper, factory default에서 일반 인증으로 동작됨",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "32",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_33",
+    "document": "Test Step: *(on) lock override 상태에서 manual lock / unlock 후 Normalize*\n1. Door Control / Biostar로 Manual lock 동작\n2. Lock Override Card로 Emergency Unlock 발생\n3. Door Control > Manual Lock / Unlock 후 Normalize(Release)\nTest Data: Door Control\nManual Lock / Unlock\n- Permanent\n- Timed : 30sec\nExpected Result: 1. Manual Lock / Unlock 상태만 해제된다 (Emergency Unlock만 유지, Alarm 발생)",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "33",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-379_step_34",
+    "document": "Test Step: *(on) manual lock / unlock 후 lock override/Fire Alarm Zone 상태 Clear Alarm*\n1. Door Control / Biostar로 Manual lock Timed 동작\n2. Lock Override Card로 Emergency Unlock 발생\n3. Biostar에서 Clear Alarm\nExpected Result: 1. Manual Lock / Unlock 상태는 Timed에 의해 Normalize되고 Emergency Unlock 상태는 Clear Alarm에 의해 Normalize된다 (*Timed로 동작한 Manual Lock / Unlock 상태 유지되면 안 됨*)",
+    "metadata": {
+      "issue_key": "COMMONR-379",
+      "step_index": "34",
+      "source": "jira_test_step"
+    }
   }
-}
+]

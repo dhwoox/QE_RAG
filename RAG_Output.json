@@ -1,0 +1,87 @@
+{
+  "answer": "\n\n테스트 스텝:  \n1. **관리자 설정** 메뉴에서 **Master Password**를 설정하고 저장합니다.  \n2. 동일한 장치에서 다시 **Master Password**를 다른 사용자로 변경하거나 추가하려고 시도합니다.  \n\n예상 결과:  \n- 첫 번째 Master Admin이 성공적으로 설정된 후, 두 번째 Master Admin을 설정하려는 시도는 **오류 메시지** 또는 **제한 사항으로 인해 거부**되어야 합니다.  \n- **Master Password는 1명만 허용**되며, 추가 설정은 불가능해야 합니다.",
+  "sources": [
+    {
+      "rank": 1,
+      "relevance_score": "Top 1/5",
+      "content": "Description:  Test Step: 1. 관리자 설정 2. 인증서&Data 암호화 설정 3. 출입문 제어 진입 시도 Data:  Expected Result: 1. 설정된 권한으로 출입문제어가 되어야 한다. 해시키 수동관리 설정 시 장치에 사용자 재설정 후 확인",
+      "metadata": {
+        "created_date": "2025-03-05",
+        "issue_key": "COMMONR-380",
+        "related_issue": "BS3FW-2068, BS3FW-1951",
+        "source": "COMMONR-380.json",
+        "step_index": 8
+      },
+      "issue_key": "COMMONR-380",
+      "step_index": 8,
+      "created_date": "2025-03-05"
+    },
+    {
+      "rank": 2,
+      "relevance_score": "Top 2/5",
+      "content": "Description:  Test Step: 1. Device> 관리자 설정 Data: 1. Master Password 설정 2. 전체 관리자 설정 3. 장치 설정 관리자 설정 4. 사용자 관리자 설정 Expected Result: 1. 사용자가 선택한 관리자로 설정되어야 한다. > 관리자에 대해 총 10명으로 제한(Old Version) ex) 전체관리자 10명을 만들경우 다른 관리자에 대해 설정할 수 없음. > 관리자에 대해 총 1000명으로 제한(New Version) > Master Password는 1명 Only",
+      "metadata": {
+        "created_date": "2025-03-05",
+        "issue_key": "COMMONR-380",
+        "related_issue": "BS3FW-2068, BS3FW-1951",
+        "source": "COMMONR-380.json",
+        "step_index": 1
+      },
+      "issue_key": "COMMONR-380",
+      "step_index": 1,
+      "created_date": "2025-03-05"
+    },
+    {
+      "rank": 3,
+      "relevance_score": "Top 3/5",
+      "content": "Description:  Test Step: 1. 관리자 설정/미설정 2. 메뉴 진입 상태 > 인증 3. 메뉴 진입 시도와 동시에 인증 시도 Data:  Expected Result: 1. 설정된 권한으로 출입문제어가 되어야 한다. > 메뉴 진입 후 인증 동작이 안되는 지 확인 2. 관리자 미설정 상태에서 인증 시 메뉴 진입 시도로 인증 동작 안되는 지 확인한다. > 타이밍 상 발생할 수도 있으나, 대부분 인증 동작이 안되는 지 확인",
+      "metadata": {
+        "created_date": "2025-03-05",
+        "issue_key": "COMMONR-380",
+        "related_issue": "BS3FW-2068, BS3FW-1951",
+        "source": "COMMONR-380.json",
+        "step_index": 9
+      },
+      "issue_key": "COMMONR-380",
+      "step_index": 9,
+      "created_date": "2025-03-05"
+    },
+    {
+      "rank": 4,
+      "relevance_score": "Top 4/5",
+      "content": "Description: 출입문 설정 및 동작에 이상이 없는지 확인 Test Step: [APB : Use] 1. APB 위반을 발생 2. Reset Time 이내 Master 장치를 Reboot Data: Soft APB Hard APB Expected Result: 1.Reset Time 이내 장치가 재부팅 되는 경우 APB 유지 2. APB 이전 설정 유지 확인",
+      "metadata": {
+        "created_date": "2015-08-19",
+        "issue_key": "COMMONR-40",
+        "related_issue": "FLFW-449, ONYXFW-433, FLFW-282, BEWIIFWDI-262, BEWIIFWDI-650, BLIIFWI-600, FSTIIFW-214, XPASSII-118, BEWIIFWDI-268, BLIIFWI-598, CSTFW-392, FLFW-323, FLFW-324, FSTIIFW-144, FSTIIFW-1091, FSTIIFW-1094, TIIDFI-2061, TIIDFI-2253, TIIDFI-2552, ENTRYIIDII-99, BLIIFWI-88, CS20FW-78",
+        "source": "COMMONR-40.json",
+        "step_index": 17
+      },
+      "issue_key": "COMMONR-40",
+      "step_index": 17,
+      "created_date": "2015-08-19"
+    },
+    {
+      "rank": 5,
+      "relevance_score": "Top 5/5",
+      "content": "Description:  Test Step: [전체 관리자 미설정 상태] 1. 장치 내에서 사용자에 사용자관리자 & 설정 관리자 설정 2. BioStar X에서 장치>고급에서 사용자관리자 & 설정 관리자 설정 3. 설정한 관리자 및 일반 사용자로 출입문 제어 진입 시도 Data: 1. CE 인증 장치 2. CE 미인증 장치 Expected Result: 1. 전체 관리자가 없는 상태에서 장치 설정 관리자로 출입문 제어 진입시도시 바로 진입이 가능해야 한다. 2. 사용자관리자&일반 사용자의 경우 해당 메뉴에 진입할 수 없으므로 관리자...",
+      "metadata": {
+        "created_date": "2025-03-05",
+        "issue_key": "COMMONR-380",
+        "related_issue": "BS3FW-2068, BS3FW-1951",
+        "source": "COMMONR-380.json",
+        "step_index": 2
+      },
+      "issue_key": "COMMONR-380",
+      "step_index": 2,
+      "created_date": "2025-03-05"
+    }
+  ],
+  "question": "master admin과 관련된 tc를 참고해서 master admin tc에 필요한 테스트 스텝 1개 짜줘",
+  "num_sources": 5,
+  "total_documents": 2633,
+  "collection_name": "langflow",
+  "persist_directory": "chroma_embedding",
+  "execution_mode": "Smart Auto-Detection",
+  "text": "\n\n테스트 스텝:  \n1. **관리자 설정** 메뉴에서 **Master Password**를 설정하고 저장합니다.  \n2. 동일한 장치에서 다시 **Master Password**를 다른 사용자로 변경하거나 추가하려고 시도합니다.  \n\n예상 결과:  \n- 첫 번째 Master Admin이 성공적으로 설정된 후, 두 번째 Master Admin을 설정하려는 시도는 **오류 메시지** 또는 **제한 사항으로 인해 거부**되어야 합니다.  \n- **Master Password는 1명만 허용**되며, 추가 설정은 불가능해야 합니다."
+}

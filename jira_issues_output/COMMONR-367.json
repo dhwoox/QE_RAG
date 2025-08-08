@@ -1,704 +1,398 @@
-{
-  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
-  "id": "66999",
-  "self": "https://jira.suprema.co.kr/rest/api/2/issue/66999",
-  "key": "COMMONR-367",
-  "fields": {
-    "resolution": null,
-    "customfield_13103": null,
-    "customfield_10510": null,
-    "customfield_10500": "0.0",
-    "customfield_10501": null,
-    "customfield_10502": null,
-    "customfield_12802": null,
-    "customfield_12804": null,
-    "customfield_10505": null,
-    "customfield_12803": null,
-    "customfield_10506": null,
-    "customfield_12806": null,
-    "customfield_10507": null,
-    "customfield_12805": null,
-    "customfield_10508": null,
-    "customfield_12808": null,
-    "customfield_10509": null,
-    "lastViewed": null,
-    "customfield_10180": null,
-    "customfield_10181": null,
-    "customfield_10182": null,
-    "customfield_10183": null,
-    "customfield_10184": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10173",
-      "value": "Major",
-      "id": "10173"
-    },
-    "customfield_10185": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
-      "value": "Medium (2-3일 이내 피드백)",
-      "id": "10220"
-    },
-    "labels": [],
-    "customfield_11702": null,
-    "aggregatetimeoriginalestimate": null,
-    "issuelinks": [
-      {
-        "id": "63365",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63365",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "72483",
-          "key": "BS3FW-1977",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72483",
-          "fields": {
-            "summary": "[VoIP] Schedule Lock 상태에서 DTMF로 Door Open 시 Door Realy가 Unlocked로 출력됨",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
-              "name": "Major (B+)",
-              "id": "10200"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      }
-    ],
-    "assignee": null,
-    "components": [],
-    "customfield_10170": null,
-    "customfield_10171": null,
-    "customfield_10172": null,
-    "customfield_10174": null,
-    "customfield_10175": null,
-    "customfield_10176": null,
-    "customfield_10177": null,
-    "customfield_10178": null,
-    "customfield_10179": null,
-    "customfield_10600": 44.0,
-    "customfield_10601": [],
-    "customfield_12901": null,
-    "customfield_10602": null,
-    "customfield_12900": null,
-    "subtasks": [],
-    "reporter": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=ybwoo",
-      "name": "ybwoo",
-      "key": "JIRAUSER13405",
-      "emailAddress": "ybwoo@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-      },
-      "displayName": "우유빈",
-      "active": true,
-      "timeZone": "Asia/Seoul"
-    },
-    "customfield_10168": null,
-    "customfield_10169": null,
-    "customfield_11800": null,
-    "progress": {
-      "progress": 0,
-      "total": 0
-    },
-    "votes": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-367/votes",
-      "votes": 0,
-      "hasVoted": false
-    },
-    "worklog": {
-      "startAt": 0,
-      "maxResults": 20,
-      "total": 0,
-      "worklogs": []
-    },
-    "issuetype": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
-      "id": "10000",
-      "description": "Represents a Test",
-      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
-      "name": "Test",
-      "subtask": false
-    },
-    "project": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
-      "id": "10000",
-      "key": "COMMONR",
-      "name": "Common Requirement And Test Case",
-      "projectTypeKey": "software",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
-        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
-        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
-        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
-      },
-      "projectCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
-        "id": "10000",
-        "description": "Requirements And Test Cases For The BioStar System Device",
-        "name": "BioStar System Device Requirement And Test Case"
-      }
-    },
-    "customfield_11000": null,
-    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@24da1d7e[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@1d5d091a[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@c65ed17[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@79852058[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@4c24b3f1[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@3509d04b[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@16278ea8[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@4670ebd4[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@2f2273d0[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@54d275f7[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@7eaae30b[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@3fc58941[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
-    "resolutiondate": null,
-    "watches": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-367/watchers",
-      "watchCount": 1,
-      "isWatching": false
-    },
-    "customfield_11900": null,
-    "customfield_11901": null,
-    "updated": "2025-08-01T10:16:30.000+0900",
-    "timeoriginalestimate": null,
-    "description": "biostar 설정 변경을 통한 검증 TC",
-    "customfield_10251": null,
-    "customfield_10252": null,
-    "customfield_10253": null,
-    "customfield_10254": null,
-    "customfield_10255": null,
-    "timetracking": {},
-    "customfield_10257": null,
-    "customfield_10247": null,
-    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p><span class=\"error\">&#91;Batch Edit로 Phonebook(내선번호) CSV Import 동작 확인&#93;</span><br/>1. VoIP설정이 Disabled인 장치를 두 개 이상 선택<br/>2. Batch Edit로 Phonebook CSV Import 동작</p></td><td></td><td><p>1. import 성공된다.</p></td></tr><tr><td>2</td><td><p>1. 장치메뉴에 진입 intercom:ON<br/>2. Extensions 진입</p></td><td></td><td><p>1. CSV Import된 내선번호가 모두 출력 됨</p></td></tr><tr><td>3</td><td><p>1. VoIP 사용 중이며 Extension Number가 설정되어 있는 장치를 두 개 이상 선택<br/>2. Batch Edit로 Phonebook CSV Import 동작</p></td><td></td><td><p>1. Import 성공 된다.</p></td></tr><tr><td>4</td><td><p>1. 장치화면의 Call 버튼 선택</p></td><td></td><td><p>1. 기존 장치의 Extension Number가 삭제되고 CSV Import된 Extension Number가 출력 됨</p>\n<ul>\n<li>사양 : 내선번호 CSV Import는 무조건 Overwrite</li>\n</ul>\n</td></tr><tr><td>5</td><td><p>1. VoIP 사용 중인 장치를 두 개 이상 선택<br/>2. Batch Edit로 Phonebook에 129개의 내선번호가 저장된 CSV Import 동작</p></td><td></td><td><p>1. 에러 팝업이 출력되고 CSV Import가 되지 않음</p></td></tr><tr><td>6</td><td><p>1. VoIP 사용 중인 장치를 두 개 이상 선택<br/>2. Batch Edit로 Phonebook에 128개의 내선번호가 저장된 CSV Import 동작</p></td><td></td><td><p>1. Import 성공 됨</p></td></tr><tr><td>7</td><td><p>1. 장치화면의 Call 버튼 선택</p></td><td></td><td><p>1. 128개의 내선번호가 출력 됨</p></td></tr><tr><td>8</td><td><p>1. VoIP 사용 중인 장치를 두 개 이상 선택<br/>2. Batch Edit로 Number의 자리수가 32자를 초과 Name이 48자를 초과하는 내선번호가 포함된 CSV Import 동작</p></td><td></td><td><p>1. 에러 팝업이 출력되고 CSV Import가 되지 않음</p></td></tr><tr><td>9</td><td><p>1. VoIP 사용 중인 장치를 두 개 이상 선택<br/>2. Batch Edit로 Phonebook에 Number의 자리수가 32자, Name이 48자인 내선번호가 포함된 CSV Import 동작</p></td><td></td><td><p>1. Import 성공 됨</p></td></tr><tr><td>10</td><td><p>1. 장치화면의 Call 버튼 선택</p></td><td></td><td><p>1. Number의 자리수가 32자를 초과하지 않고 Name이 48자를 초과하지 않는 내선번호 출력 됨</p></td></tr><tr><td>11</td><td><p><span class=\"error\">&#91;Secure communication with device를 사용 중 VoIP 동작 확인&#93;</span><br/>1. Settings &gt; Security 진입하여 Secure communication with device를 Use로 설정<br/>2. 장치 화면에서 Call 버튼 선택</p></td><td></td><td><p>1. 정상적으로 연결되어 Video및 Audio가 출력 됨</p></td></tr><tr><td>12</td><td><p><span class=\"error\">&#91;VoIP 통화 중 장치에 사용자 전송/삭제&#93;</span><br/>1. 장치 화면에서 Call 버튼 선택 후 VoIP 통화<br/>2. VoIP 통화 중 BioStar에서 장치에 사용자를 전송</p></td><td></td><td><p>1. 사용자가 전송되어도 VoIP 통화에 영향을 미치지 않음</p></td></tr><tr><td>13</td><td><p>1. VoIP 통화 중 BioStar에서 장치의 사용자를 삭제</p></td><td></td><td><p>1. 사용자가 삭제되어도 VoIP 통화에 영향을 미치지 않음</p></td></tr><tr><td>14</td><td><p><span class=\"error\">&#91;VoIP 통화 중 Slave 장치에 인증 동작&#93;</span><br/>1. 장치 화면에서 Call 버튼 선택 후 VoIP 통화<br/>2. VoIP 통화 중 slave 장치에서 얼굴 인증 시도</p></td><td><p>BioStation3 (Master, VoIP 통화 장치)<br/>L BioStation3 (Slave)</p>\n\n<p>5. Master/Slave 장치로 Door 구성</p></td><td><p>1. 인증 성공되며 출입문이 열림<br/>2. VoIP 통화 이상 없음</p></td></tr><tr><td>15</td><td><p>1. VoIP 통화 중 Slave 장치에서 카드 인증 시도</p></td><td></td><td><p>1. 인증 성공되며 출입문이 열림<br/>2. VoIP 통화 이상 없음</p></td></tr><tr><td>16</td><td><p><span class=\"error\">&#91;Delete Data &amp; Sync Device 후 VoIP 동작 확인&#93;</span><br/>1. VoIP 설정 된 장치를 Sync Device 선택<br/>2. 장치에서 MicroSIP에 VoIP 통화 시도</p></td><td></td><td><p>1. VoIP 통화 동작 됨</p></td></tr><tr><td>17</td><td><p>1. VoIP 설정 된 장치를 Delete Data&amp;Sync Device 선택<br/>2. 장치에서 MicroSIP에 VoIP 통화 시도 </p></td><td></td><td><p>1. VoIP 통화 동작 됨</p></td></tr><tr><td>18</td><td><p><span class=\"error\">&#91;Device Hashkey Management를 사용 시 VoIP 동작 확인&#93;</span><br/>1. 장치상세페이지&gt;Intercom 설정 및 Extension 설정<br/>2. 장치에서 MicroSIP SIP와 VoIP 동작 확인</p></td><td><p>바이오스타 보안통신:ON</p></td><td><p>1. VoIP 영상통화 정상 동작 됨</p></td></tr><tr><td>19</td><td><p>1. Settings &gt; Security 진입하여 Device Hashkey Management를 설정 후 저장<br/>2. voip 연결</p></td><td></td><td><p>1. VoIP 영상통화 정상 동작 됨</p></td></tr><tr><td>20</td><td><p>1. 장치상세&gt; SIP 계정을 다른 계정으로 설정<br/>2.  MicroSIP SIP와 VoIP 동작 확인</p></td><td></td><td><p>1. VoIP 영상통화 정상 동작 됨</p></td></tr><tr><td>21</td><td><p><span class=\"error\">&#91;APB Zone으로 구성된 Door를 VoIP 통화 중 DTMF로 Door Open 시 동작 확인&#93;</span><br/>1. 장치상세&gt; SIP 계정 설정 및 Open Door Button을 0 설정<br/>2. 사용자1 Entry Device에 2번 연속 인증</p>\n</td><td><p>1. 장치 설정<br/>Master 장치 (BS3)<br/>L Slave 장치(BS3)</p>\n\n<p>2. Door 설정<br/>-. Entry Device : Master<br/>-. Exit Device : Slave<br/>-. Relay : Master Relay 0</p>\n\n<p>3. APB Zone 설정<br/>-. Name : APB Zone<br/>-. Anti-passback Type : Hard APB<br/>-. Entry Devices : Master<br/>-. Exit Devices : Slave</p></td><td><p>1. APB위반으로 인증 실패 및 APB Violation 로그 생성</p></td></tr><tr><td>22</td><td><p>1. 사용자2 Exit Device에 2번 연속 인증</p></td><td></td><td><p>1. APB위반으로 인증 실패 및 APB Violation 로그 생성</p></td></tr><tr><td>23</td><td><p>1. 실시간 로그 진입 &gt; VoIP 통화 중 다이얼 0입력하여 Door Open</p></td><td></td><td><p>1. Door unlocked 로그 출력 및 VoIP에 의한 문열림 로그 출력</p></td></tr><tr><td>24</td><td><p>1. 통화 종료 후 사용자1 Entry Device에 인증 시도</p></td><td></td><td><p>1. APB위반으로 인증 실패 및 APB Violation 로그 생성</p></td></tr><tr><td>25</td><td><p>1. 사용자2 Exit Device에 인증 시도</p></td><td></td><td><p>1. APB위반으로 인증 실패 및 APB Violation 로그 생성</p></td></tr><tr><td>26</td><td><p><span class=\"error\">&#91;Fire Alarm Zone으로 구성된 Door를 VoIP 통화 중 DTMF로 Door Open 시 동작 확인&#93;</span><br/>1. 장치상세&gt; SIP 계정 설정 및 Open Door Button을 0 설정 후 저장<br/>2. voip 통화중 0번 선택</p></td><td><p>1. 장치 설정<br/>Master 장치 (BS3)<br/>L Slave 장치(BS3)</p>\n\n<p>2. Door 설정<br/>-. Name : Door1<br/>-. Entry Device : Master<br/>-. Exit Device : Slave<br/>-. Relay : Master Relay 0</p>\n\n<p>3. Fire Alarm Zone 설정<br/>-. Name : Fire Alarm Zone<br/>-. Door : Door1<br/>-. Device/Input : Master Input Port 0</p></td><td><p>1. Door Relay가 Unlocked 되었다가 Door Open Time이후 Locked 됨</p></td></tr><tr><td>27</td><td><p>1. Master Input Port 0 접지</p></td><td></td><td><p>1. Door Status Type이 Emergency Unlock, Door Relay가 Unlocked 출력 됨</p></td></tr><tr><td>28</td><td><p>1. VoIP 통화 중 다이얼 0으로 Door Open</p></td><td></td><td><p>1. Door Status Type이 Emergency Unlock, Door Relay가 Unlocked 출력됨</p></td></tr><tr><td>29</td><td><p><span class=\"error\">&#91;Scheduled Lock Zone으로 구성된 Door를 VoIP 통화 중 DTMF로 Door Open 시 동작 확인&#93;</span><br/>1. 장치상세&gt; SIP 계정 설정 및 Open Door Button을 0 설정 후 저장<br/>2. Monitoring &gt; Door Status 진입</p></td><td><p>1. 장치 설정<br/>Master 장치 (BS3)<br/>L Slave 장치(BS3)</p>\n\n<p>2. Door 설정<br/>-. Name : Door1<br/>-. Entry Device : Master<br/>-. Exit Device : Slave<br/>-. Relay : Master Relay 0</p>\n\n<p>3. Scheduled Lock Zone 설정<br/>-. Name : Scheduled Lock Zone<br/>-. Door : Door1<br/>-. Schedule : Schedule1 (현재시간 포함, 앞으로 5분 후 스케줄 종료)</p></td><td><p>1.. Door Status Type이 Schedule Lock, Door Relay가 Locked 출력 됨</p></td></tr><tr><td>30</td><td><p>1. VoIP 통화 중 다이얼 0 입력</p></td><td></td><td><p>1. Door Status Type이 Schedule Lock, Door Relay가 Locked 출력 유지 됨<br/>(Sheduled Lock상태임으로)</p></td></tr><tr><td>31</td><td><p>1. Scheduled Lock 상태가 종료된 후 VoIP 통화 중 다이얼 0 입력</p></td><td></td><td><p>1. Door Status Type이 Normal, Door Relay가 Unlocked 출력 됨</p></td></tr><tr><td>32</td><td><p><span class=\"error\">&#91;Scheduled Unlock Zone으로 구성된 Door를 VoIP 통화 중 DTMF로 Door Open 시 동작 확인&#93;</span><br/>1. 장치상세 &gt; SIP 계정 설정 및 Open Door Button을 0 설정 후 저장<br/>2. Monitoring &gt; Door Status 진입</p></td><td></td><td><p>1. Door Status Type이 Schedule Unlock, Door Relay가 Unlocked 출력 됨</p></td></tr><tr><td>33</td><td><p>1. VoIP 통화 중 다이얼 0 입력</p></td><td></td><td><p>1. Door Status Type이 Schedule Unlock, Door Relay가 Unlocked 유지 됨</p></td></tr><tr><td>34</td><td><p>1.Scheduled Unlock 종료<br/>2. VoIP 통화 중 다이얼 0 입력</p></td><td></td><td><p>1. Door Status Type이 Normal, Door Relay가 Unlocked 출력 됨</p></td></tr><tr><td>35</td><td><p><span class=\"error\">&#91;Intrusion Alarm Zone으로 구성된 Door에 경비 중일 경우 Call 버튼 미출력 확인&#93;</span><br/>1. 장치상세&gt; SIP 계정 설정 및 Open Door Button을 0 설정 후 저장<br/>2. Master Input Port 1 접지<br/>3. 경비진입</p></td><td></td><td><p>1. 장치화면에 Call 버튼이 출력되지 않음</p></td></tr><tr><td>36</td><td><p><span class=\"error\">&#91;Manual Lock/Unlock 상태의 Door를 VoIP 통화 중 DTMF로 Door Open할 경우 동작 확인&#93;</span><br/>1. 장치상세&gt; SIP 계정 설정 및 Open Door Button을 0 설정 후 저장<br/>2. Monitoring &gt; Door Status&gt;  Manual Lock 버튼 선택</p></td><td><p>1. 장치 설정<br/>Master 장치 (BS3)<br/>L Slave 장치(BS3)</p>\n\n<p>2. Door 설정<br/>-. Name : Door1<br/>-. Entry Device : Master<br/>-. Exit Device : Slave<br/>-. Relay : Master Relay 0</p></td><td><p>1. Door Status Type이 Operator Lock, Door Relay가 Locked 출력 됨</p></td></tr><tr><td>37</td><td><p>1. VoIP 통화 중 다이얼 0 입력</p></td><td></td><td><p>1. Door Status Type이 Operator Lock, Door Relay가 Locked 출력 유지 됨</p></td></tr><tr><td>38</td><td><p>1. Door1을 체크 후 Manual Unlock 버튼 선택</p></td><td></td><td><p>1. Door Status Type이 Operator Unlock, Door Relay가 Unlocked 출력 됨</p></td></tr><tr><td>39</td><td><p>1. VoIP 통화 중 다이얼 0 입력하여 Door Open 시도</p></td><td></td><td><p>1. Door Status Type이 Operator Unlock, Door Relay가 Unlocked 출력 유지 됨</p></td></tr><tr><td>40</td><td><p>1. Door1을 체크 후 Release 버튼 선택</p></td><td></td><td><p>1. Door Status Type이 Normal, Door Relay가 Locked 출력 됨</p></td></tr><tr><td>41</td><td><p>1. VoIP 통화 중 다이얼 0 입력</p></td><td></td><td><p>1. Door Status Type이 Normal, Door Relay가 Unlocked 출력 됨</p></td></tr><tr><td>42</td><td><p><span class=\"error\">&#91;Intercom Microphone Volume 설정 동작 확인&#93;</span><br/>1.장치상세&gt;Intercom 사용 설정 후 계정 정보 설정<br/>2. Advanced &gt; Display/Sound의 Intercom Microphone Volume:0 설정 후 저장<br/>3.VOIP 통화 연결</p></td><td><p>-intercom Microphone Volume (IP 인터폰 마이크 음량) </p>\n<ul class=\"alternate\" type=\"square\">\n<li>음량 0/50/100 설정</li>\n</ul>\n</td><td><p>1. 통화 시 PC의 MicroSIP에서 장치의 음량이 장치의 마이크 설정에 맞게 출력 됨</p></td></tr><tr><td>43</td><td><p><span class=\"error\">&#91;Intercom Speaker Volume 설정 동작 확인&#93;</span><br/>1. 장치상세&gt; Intercom 사용 설정 후 계정 정보 설정<br/>2. Advanced &gt; Display/Sound의 Intercom Speaker Volume:0 설정<br/>3. VOIP 통화 연결</p></td><td><p>-Intercom Speaker Volume (IP 인터폰 스피커 음량)</p>\n<ul class=\"alternate\" type=\"square\">\n<li>음량 0/50/100 설정</li>\n</ul>\n</td><td><p>1. 통화 시 음량이 설정에 맞게 출력 됨</p></td></tr><tr><td>44</td><td><p><span class=\"error\">&#91;BioStar에서 IP인터폰 비디오 해상도 설정 및 동작 확인&#93;</span><br/>1.장치상세&gt;Intercom Video Resolution 설정 후 저장<br/>2. VOIP 통화 연결<br/>3. Intercom Video Resolution 해상도 저장</p></td><td><p>-Intercom Video Resolution: </p>\n<ul class=\"alternate\" type=\"square\">\n<li>360X640</li>\n<li>720x480</li>\n</ul>\n</td><td><p>1. 정상적으로 연결되어 선택한 해상도에 맞게 Video및 Audio가 출력 됨</p></td></tr></table>",
-    "customfield_10248": null,
-    "customfield_10006": [],
-    "customfield_10007": [],
-    "customfield_10008": {
-      "issueId": 66999,
-      "statuses": [
-        {
-          "statusResults": [
-            {
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 34769,
-              "latestFinalId": 34769
-            }
-          ]
-        }
-      ]
-    },
-    "customfield_12309": null,
-    "customfield_10802": null,
-    "customfield_10803": null,
-    "customfield_10805": null,
-    "summary": "VOIP",
-    "customfield_10240": null,
-    "customfield_10000": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
-      "value": "Manual",
-      "id": "10000"
-    },
-    "customfield_10243": null,
-    "customfield_10001": null,
-    "customfield_10244": null,
-    "customfield_10002": null,
-    "customfield_10003": null,
-    "customfield_10246": null,
-    "customfield_10004": {
-      "steps": [
-        {
-          "id": 19010,
-          "index": 1,
-          "step": "[Batch Edit로 Phonebook(내선번호) CSV Import 동작 확인]\n1. VoIP설정이 Disabled인 장치를 두 개 이상 선택\n2. Batch Edit로 Phonebook CSV Import 동작",
-          "result": "1. import 성공된다.",
-          "attachments": []
-        },
-        {
-          "id": 19011,
-          "index": 2,
-          "step": "1. 장치메뉴에 진입 intercom:ON\n2. Extensions 진입",
-          "result": "1. CSV Import된 내선번호가 모두 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 19012,
-          "index": 3,
-          "step": "1. VoIP 사용 중이며 Extension Number가 설정되어 있는 장치를 두 개 이상 선택\n2. Batch Edit로 Phonebook CSV Import 동작",
-          "result": "1. Import 성공 된다.",
-          "attachments": []
-        },
-        {
-          "id": 19013,
-          "index": 4,
-          "step": "1. 장치화면의 Call 버튼 선택",
-          "result": "1. 기존 장치의 Extension Number가 삭제되고 CSV Import된 Extension Number가 출력 됨\n* 사양 : 내선번호 CSV Import는 무조건 Overwrite",
-          "attachments": []
-        },
-        {
-          "id": 19014,
-          "index": 5,
-          "step": "1. VoIP 사용 중인 장치를 두 개 이상 선택\n2. Batch Edit로 Phonebook에 129개의 내선번호가 저장된 CSV Import 동작",
-          "result": "1. 에러 팝업이 출력되고 CSV Import가 되지 않음",
-          "attachments": []
-        },
-        {
-          "id": 19015,
-          "index": 6,
-          "step": "1. VoIP 사용 중인 장치를 두 개 이상 선택\n2. Batch Edit로 Phonebook에 128개의 내선번호가 저장된 CSV Import 동작",
-          "result": "1. Import 성공 됨",
-          "attachments": []
-        },
-        {
-          "id": 19016,
-          "index": 7,
-          "step": "1. 장치화면의 Call 버튼 선택",
-          "result": "1. 128개의 내선번호가 출력 됨\n",
-          "attachments": []
-        },
-        {
-          "id": 19017,
-          "index": 8,
-          "step": "1. VoIP 사용 중인 장치를 두 개 이상 선택\n2. Batch Edit로 Number의 자리수가 32자를 초과 Name이 48자를 초과하는 내선번호가 포함된 CSV Import 동작",
-          "result": "1. 에러 팝업이 출력되고 CSV Import가 되지 않음",
-          "attachments": []
-        },
-        {
-          "id": 19018,
-          "index": 9,
-          "step": "1. VoIP 사용 중인 장치를 두 개 이상 선택\n2. Batch Edit로 Phonebook에 Number의 자리수가 32자, Name이 48자인 내선번호가 포함된 CSV Import 동작",
-          "result": "1. Import 성공 됨",
-          "attachments": []
-        },
-        {
-          "id": 19019,
-          "index": 10,
-          "step": "1. 장치화면의 Call 버튼 선택",
-          "result": "1. Number의 자리수가 32자를 초과하지 않고 Name이 48자를 초과하지 않는 내선번호 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 19020,
-          "index": 11,
-          "step": "[Secure communication with device를 사용 중 VoIP 동작 확인]\n1. Settings > Security 진입하여 Secure communication with device를 Use로 설정\n2. 장치 화면에서 Call 버튼 선택",
-          "result": "1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 19021,
-          "index": 12,
-          "step": "[VoIP 통화 중 장치에 사용자 전송/삭제]\n1. 장치 화면에서 Call 버튼 선택 후 VoIP 통화\n2. VoIP 통화 중 BioStar에서 장치에 사용자를 전송",
-          "data": "",
-          "result": "1. 사용자가 전송되어도 VoIP 통화에 영향을 미치지 않음",
-          "attachments": []
-        },
-        {
-          "id": 19022,
-          "index": 13,
-          "step": "1. VoIP 통화 중 BioStar에서 장치의 사용자를 삭제",
-          "result": "1. 사용자가 삭제되어도 VoIP 통화에 영향을 미치지 않음",
-          "attachments": []
-        },
-        {
-          "id": 19023,
-          "index": 14,
-          "step": "[VoIP 통화 중 Slave 장치에 인증 동작]\n1. 장치 화면에서 Call 버튼 선택 후 VoIP 통화\n2. VoIP 통화 중 slave 장치에서 얼굴 인증 시도",
-          "data": "BioStation3 (Master, VoIP 통화 장치)\nL BioStation3 (Slave)\n\n5. Master/Slave 장치로 Door 구성",
-          "result": "1. 인증 성공되며 출입문이 열림\n2. VoIP 통화 이상 없음",
-          "attachments": []
-        },
-        {
-          "id": 19024,
-          "index": 15,
-          "step": "1. VoIP 통화 중 Slave 장치에서 카드 인증 시도",
-          "result": "1. 인증 성공되며 출입문이 열림\n2. VoIP 통화 이상 없음",
-          "attachments": []
-        },
-        {
-          "id": 19025,
-          "index": 16,
-          "step": "[Delete Data & Sync Device 후 VoIP 동작 확인]\n1. VoIP 설정 된 장치를 Sync Device 선택\n2. 장치에서 MicroSIP에 VoIP 통화 시도",
-          "data": "",
-          "result": "1. VoIP 통화 동작 됨\n",
-          "attachments": []
-        },
-        {
-          "id": 19026,
-          "index": 17,
-          "step": "1. VoIP 설정 된 장치를 Delete Data&Sync Device 선택\n2. 장치에서 MicroSIP에 VoIP 통화 시도 ",
-          "result": "1. VoIP 통화 동작 됨",
-          "attachments": []
-        },
-        {
-          "id": 19027,
-          "index": 18,
-          "step": "[Device Hashkey Management를 사용 시 VoIP 동작 확인]\n1. 장치상세페이지>Intercom 설정 및 Extension 설정\n2. 장치에서 MicroSIP SIP와 VoIP 동작 확인\n",
-          "data": "바이오스타 보안통신:ON",
-          "result": "1. VoIP 영상통화 정상 동작 됨",
-          "attachments": []
-        },
-        {
-          "id": 19028,
-          "index": 19,
-          "step": "1. Settings > Security 진입하여 Device Hashkey Management를 설정 후 저장\n2. voip 연결",
-          "result": "1. VoIP 영상통화 정상 동작 됨",
-          "attachments": []
-        },
-        {
-          "id": 19029,
-          "index": 20,
-          "step": "1. 장치상세> SIP 계정을 다른 계정으로 설정\n2.  MicroSIP SIP와 VoIP 동작 확인",
-          "result": "1. VoIP 영상통화 정상 동작 됨",
-          "attachments": []
-        },
-        {
-          "id": 19030,
-          "index": 21,
-          "step": "[APB Zone으로 구성된 Door를 VoIP 통화 중 DTMF로 Door Open 시 동작 확인]\n1. 장치상세> SIP 계정 설정 및 Open Door Button을 0 설정\n2. 사용자1 Entry Device에 2번 연속 인증\n\n",
-          "data": "1. 장치 설정\nMaster 장치 (BS3)\nL Slave 장치(BS3)\n\n2. Door 설정\n-. Entry Device : Master\n-. Exit Device : Slave\n-. Relay : Master Relay 0\n\n3. APB Zone 설정\n-. Name : APB Zone\n-. Anti-passback Type : Hard APB\n-. Entry Devices : Master\n-. Exit Devices : Slave",
-          "result": "1. APB위반으로 인증 실패 및 APB Violation 로그 생성",
-          "attachments": []
-        },
-        {
-          "id": 19031,
-          "index": 22,
-          "step": "1. 사용자2 Exit Device에 2번 연속 인증",
-          "result": "1. APB위반으로 인증 실패 및 APB Violation 로그 생성",
-          "attachments": []
-        },
-        {
-          "id": 19032,
-          "index": 23,
-          "step": "1. 실시간 로그 진입 > VoIP 통화 중 다이얼 0입력하여 Door Open",
-          "result": "1. Door unlocked 로그 출력 및 VoIP에 의한 문열림 로그 출력",
-          "attachments": []
-        },
-        {
-          "id": 19033,
-          "index": 24,
-          "step": "1. 통화 종료 후 사용자1 Entry Device에 인증 시도",
-          "result": "1. APB위반으로 인증 실패 및 APB Violation 로그 생성\n",
-          "attachments": []
-        },
-        {
-          "id": 19034,
-          "index": 25,
-          "step": "1. 사용자2 Exit Device에 인증 시도",
-          "result": "1. APB위반으로 인증 실패 및 APB Violation 로그 생성",
-          "attachments": []
-        },
-        {
-          "id": 19035,
-          "index": 26,
-          "step": "[Fire Alarm Zone으로 구성된 Door를 VoIP 통화 중 DTMF로 Door Open 시 동작 확인]\n1. 장치상세> SIP 계정 설정 및 Open Door Button을 0 설정 후 저장\n2. voip 통화중 0번 선택",
-          "data": "1. 장치 설정\nMaster 장치 (BS3)\nL Slave 장치(BS3)\n\n2. Door 설정\n-. Name : Door1\n-. Entry Device : Master\n-. Exit Device : Slave\n-. Relay : Master Relay 0\n\n3. Fire Alarm Zone 설정\n-. Name : Fire Alarm Zone\n-. Door : Door1\n-. Device/Input : Master Input Port 0",
-          "result": "1. Door Relay가 Unlocked 되었다가 Door Open Time이후 Locked 됨",
-          "attachments": []
-        },
-        {
-          "id": 19036,
-          "index": 27,
-          "step": "1. Master Input Port 0 접지",
-          "data": "",
-          "result": "1. Door Status Type이 Emergency Unlock, Door Relay가 Unlocked 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 19037,
-          "index": 28,
-          "step": "1. VoIP 통화 중 다이얼 0으로 Door Open",
-          "result": "1. Door Status Type이 Emergency Unlock, Door Relay가 Unlocked 출력됨",
-          "attachments": []
-        },
-        {
-          "id": 19038,
-          "index": 29,
-          "step": "[Scheduled Lock Zone으로 구성된 Door를 VoIP 통화 중 DTMF로 Door Open 시 동작 확인]\n1. 장치상세> SIP 계정 설정 및 Open Door Button을 0 설정 후 저장\n2. Monitoring > Door Status 진입",
-          "data": "1. 장치 설정\nMaster 장치 (BS3)\nL Slave 장치(BS3)\n\n2. Door 설정\n-. Name : Door1\n-. Entry Device : Master\n-. Exit Device : Slave\n-. Relay : Master Relay 0\n\n3. Scheduled Lock Zone 설정\n-. Name : Scheduled Lock Zone\n-. Door : Door1\n-. Schedule : Schedule1 (현재시간 포함, 앞으로 5분 후 스케줄 종료)",
-          "result": "1.. Door Status Type이 Schedule Lock, Door Relay가 Locked 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 19039,
-          "index": 30,
-          "step": "1. VoIP 통화 중 다이얼 0 입력",
-          "result": "1. Door Status Type이 Schedule Lock, Door Relay가 Locked 출력 유지 됨\n(Sheduled Lock상태임으로)",
-          "attachments": []
-        },
-        {
-          "id": 19040,
-          "index": 31,
-          "step": "1. Scheduled Lock 상태가 종료된 후 VoIP 통화 중 다이얼 0 입력",
-          "result": "1. Door Status Type이 Normal, Door Relay가 Unlocked 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 19041,
-          "index": 32,
-          "step": "[Scheduled Unlock Zone으로 구성된 Door를 VoIP 통화 중 DTMF로 Door Open 시 동작 확인]\n1. 장치상세 > SIP 계정 설정 및 Open Door Button을 0 설정 후 저장\n2. Monitoring > Door Status 진입",
-          "result": "1. Door Status Type이 Schedule Unlock, Door Relay가 Unlocked 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 19042,
-          "index": 33,
-          "step": "1. VoIP 통화 중 다이얼 0 입력",
-          "result": "1. Door Status Type이 Schedule Unlock, Door Relay가 Unlocked 유지 됨",
-          "attachments": []
-        },
-        {
-          "id": 19043,
-          "index": 34,
-          "step": "1.Scheduled Unlock 종료\n2. VoIP 통화 중 다이얼 0 입력",
-          "result": "1. Door Status Type이 Normal, Door Relay가 Unlocked 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 19044,
-          "index": 35,
-          "step": "[Intrusion Alarm Zone으로 구성된 Door에 경비 중일 경우 Call 버튼 미출력 확인]\n1. 장치상세> SIP 계정 설정 및 Open Door Button을 0 설정 후 저장\n2. Master Input Port 1 접지\n3. 경비진입\n",
-          "result": "1. 장치화면에 Call 버튼이 출력되지 않음",
-          "attachments": []
-        },
-        {
-          "id": 19045,
-          "index": 36,
-          "step": "[Manual Lock/Unlock 상태의 Door를 VoIP 통화 중 DTMF로 Door Open할 경우 동작 확인]\n1. 장치상세> SIP 계정 설정 및 Open Door Button을 0 설정 후 저장\n2. Monitoring > Door Status>  Manual Lock 버튼 선택",
-          "data": "1. 장치 설정\nMaster 장치 (BS3)\nL Slave 장치(BS3)\n\n2. Door 설정\n-. Name : Door1\n-. Entry Device : Master\n-. Exit Device : Slave\n-. Relay : Master Relay 0",
-          "result": "1. Door Status Type이 Operator Lock, Door Relay가 Locked 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 19046,
-          "index": 37,
-          "step": "1. VoIP 통화 중 다이얼 0 입력",
-          "result": "1. Door Status Type이 Operator Lock, Door Relay가 Locked 출력 유지 됨",
-          "attachments": []
-        },
-        {
-          "id": 19047,
-          "index": 38,
-          "step": "1. Door1을 체크 후 Manual Unlock 버튼 선택",
-          "result": "1. Door Status Type이 Operator Unlock, Door Relay가 Unlocked 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 19048,
-          "index": 39,
-          "step": "1. VoIP 통화 중 다이얼 0 입력하여 Door Open 시도",
-          "result": "1. Door Status Type이 Operator Unlock, Door Relay가 Unlocked 출력 유지 됨",
-          "attachments": []
-        },
-        {
-          "id": 19049,
-          "index": 40,
-          "step": "1. Door1을 체크 후 Release 버튼 선택",
-          "result": "1. Door Status Type이 Normal, Door Relay가 Locked 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 19050,
-          "index": 41,
-          "step": "1. VoIP 통화 중 다이얼 0 입력",
-          "result": "1. Door Status Type이 Normal, Door Relay가 Unlocked 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 19051,
-          "index": 42,
-          "step": "[Intercom Microphone Volume 설정 동작 확인]\n1.장치상세>Intercom 사용 설정 후 계정 정보 설정\n2. Advanced > Display/Sound의 Intercom Microphone Volume:0 설정 후 저장\n3.VOIP 통화 연결",
-          "data": "-intercom Microphone Volume (IP 인터폰 마이크 음량) \n- 음량 0/50/100 설정\n",
-          "result": "1. 통화 시 PC의 MicroSIP에서 장치의 음량이 장치의 마이크 설정에 맞게 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 19052,
-          "index": 43,
-          "step": "[Intercom Speaker Volume 설정 동작 확인]\n1. 장치상세> Intercom 사용 설정 후 계정 정보 설정\n2. Advanced > Display/Sound의 Intercom Speaker Volume:0 설정\n3. VOIP 통화 연결",
-          "data": "-Intercom Speaker Volume (IP 인터폰 스피커 음량)\n- 음량 0/50/100 설정",
-          "result": "1. 통화 시 음량이 설정에 맞게 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 19053,
-          "index": 44,
-          "step": "[BioStar에서 IP인터폰 비디오 해상도 설정 및 동작 확인]\n1.장치상세>Intercom Video Resolution 설정 후 저장\n2. VOIP 통화 연결\n3. Intercom Video Resolution 해상도 저장",
-          "data": "-Intercom Video Resolution: \n- 360X640\n- 720x480 ",
-          "result": "1. 정상적으로 연결되어 선택한 해상도에 맞게 Video및 Audio가 출력 됨",
-          "attachments": []
-        }
-      ]
-    },
-    "customfield_10236": null,
-    "customfield_10237": null,
-    "environment": null,
-    "customfield_10238": null,
-    "customfield_10239": null,
-    "duedate": null,
-    "comment": {
-      "comments": [],
-      "maxResults": 0,
-      "total": 0,
-      "startAt": 0
-    },
-    "customfield_10230": null,
-    "fixVersions": [],
-    "customfield_10231": null,
-    "customfield_10232": null,
-    "customfield_10233": null,
-    "customfield_12410": null,
-    "customfield_10234": null,
-    "customfield_10235": null,
-    "customfield_10225": null,
-    "customfield_12404": null,
-    "customfield_10226": null,
-    "customfield_12403": null,
-    "customfield_10227": null,
-    "customfield_12406": null,
-    "customfield_10228": null,
-    "customfield_10229": null,
-    "customfield_10900": null,
-    "customfield_12408": null,
-    "customfield_10901": null,
-    "customfield_10902": null,
-    "customfield_10903": null,
-    "customfield_12409": null,
-    "customfield_10904": null,
-    "customfield_10905": null,
-    "customfield_10220": null,
-    "priority": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-      "name": "미할당",
-      "id": "10100"
-    },
-    "customfield_10221": null,
-    "customfield_12400": null,
-    "customfield_12402": null,
-    "customfield_10224": null,
-    "customfield_10214": null,
-    "customfield_10217": null,
-    "customfield_10218": null,
-    "timeestimate": null,
-    "versions": [],
-    "customfield_10219": null,
-    "status": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
-      "description": "",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
-      "name": "할 일",
-      "id": "10000",
-      "statusCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
-        "id": 2,
-        "key": "new",
-        "colorName": "blue-gray",
-        "name": "할 일"
-      }
-    },
-    "customfield_12510": null,
-    "customfield_10213": null,
-    "customfield_12511": null,
-    "customfield_10203": null,
-    "customfield_10204": null,
-    "customfield_12502": null,
-    "customfield_10205": null,
-    "customfield_10206": null,
-    "customfield_10207": null,
-    "aggregatetimeestimate": null,
-    "customfield_10208": null,
-    "customfield_10209": null,
-    "customfield_12509": null,
-    "customfield_12508": null,
-    "creator": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=ybwoo",
-      "name": "ybwoo",
-      "key": "JIRAUSER13405",
-      "emailAddress": "ybwoo@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-      },
-      "displayName": "우유빈",
-      "active": true,
-      "timeZone": "Asia/Seoul"
-    },
-    "aggregateprogress": {
-      "progress": 0,
-      "total": 0
-    },
-    "customfield_10320": null,
-    "customfield_10321": null,
-    "customfield_12501": null,
-    "customfield_10202": null,
-    "customfield_12500": null,
-    "customfield_10313": "1|hzz1iv:",
-    "customfield_10316": null,
-    "customfield_10317": null,
-    "timespent": null,
-    "aggregatetimespent": null,
-    "customfield_10310": null,
-    "customfield_10302": null,
-    "customfield_10303": null,
-    "customfield_12601": null,
-    "customfield_10304": null,
-    "customfield_10305": null,
-    "customfield_10308": null,
-    "workratio": -1,
-    "created": "2024-10-24T15:16:27.000+0900",
-    "customfield_10533": null,
-    "customfield_10534": null,
-    "customfield_11501": null,
-    "customfield_11503": null,
-    "customfield_13001": null,
-    "customfield_13000": null,
-    "customfield_10530": null,
-    "customfield_10531": null,
-    "customfield_10532": null,
-    "customfield_10401": null,
-    "customfield_10522": null,
-    "customfield_10402": null,
-    "customfield_12700": null,
-    "customfield_10524": null,
-    "customfield_10525": null,
-    "customfield_12702": null,
-    "attachment": [],
-    "customfield_10526": null,
-    "customfield_12704": null,
-    "customfield_10528": null,
-    "customfield_12706": null,
-    "customfield_10520": null,
-    "customfield_10521": null,
-    "customfield_10400": null,
-    "customfield_10511": null,
-    "customfield_10512": null,
-    "customfield_11600": null,
-    "customfield_10513": null,
-    "customfield_10514": null,
-    "customfield_10515": null,
-    "customfield_10516": null,
-    "customfield_10517": null,
-    "customfield_10518": null,
-    "customfield_10519": null
+[
+  {
+    "id": "COMMONR-367_step_1",
+    "document": "Test Step: [Batch Edit로 Phonebook(내선번호) CSV Import 동작 확인]\n1. VoIP설정이 Disabled인 장치를 두 개 이상 선택\n2. Batch Edit로 Phonebook CSV Import 동작\nExpected Result: 1. import 성공된다.",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "1",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_2",
+    "document": "Test Step: 1. 장치메뉴에 진입 intercom:ON\n2. Extensions 진입\nExpected Result: 1. CSV Import된 내선번호가 모두 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "2",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_3",
+    "document": "Test Step: 1. VoIP 사용 중이며 Extension Number가 설정되어 있는 장치를 두 개 이상 선택\n2. Batch Edit로 Phonebook CSV Import 동작\nExpected Result: 1. Import 성공 된다.",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "3",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_4",
+    "document": "Test Step: 1. 장치화면의 Call 버튼 선택\nExpected Result: 1. 기존 장치의 Extension Number가 삭제되고 CSV Import된 Extension Number가 출력 됨\n* 사양 : 내선번호 CSV Import는 무조건 Overwrite",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "4",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_5",
+    "document": "Test Step: 1. VoIP 사용 중인 장치를 두 개 이상 선택\n2. Batch Edit로 Phonebook에 129개의 내선번호가 저장된 CSV Import 동작\nExpected Result: 1. 에러 팝업이 출력되고 CSV Import가 되지 않음",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "5",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_6",
+    "document": "Test Step: 1. VoIP 사용 중인 장치를 두 개 이상 선택\n2. Batch Edit로 Phonebook에 128개의 내선번호가 저장된 CSV Import 동작\nExpected Result: 1. Import 성공 됨",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "6",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_7",
+    "document": "Test Step: 1. 장치화면의 Call 버튼 선택\nExpected Result: 1. 128개의 내선번호가 출력 됨\n",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "7",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_8",
+    "document": "Test Step: 1. VoIP 사용 중인 장치를 두 개 이상 선택\n2. Batch Edit로 Number의 자리수가 32자를 초과 Name이 48자를 초과하는 내선번호가 포함된 CSV Import 동작\nExpected Result: 1. 에러 팝업이 출력되고 CSV Import가 되지 않음",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "8",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_9",
+    "document": "Test Step: 1. VoIP 사용 중인 장치를 두 개 이상 선택\n2. Batch Edit로 Phonebook에 Number의 자리수가 32자, Name이 48자인 내선번호가 포함된 CSV Import 동작\nExpected Result: 1. Import 성공 됨",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "9",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_10",
+    "document": "Test Step: 1. 장치화면의 Call 버튼 선택\nExpected Result: 1. Number의 자리수가 32자를 초과하지 않고 Name이 48자를 초과하지 않는 내선번호 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "10",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_11",
+    "document": "Test Step: [Secure communication with device를 사용 중 VoIP 동작 확인]\n1. Settings > Security 진입하여 Secure communication with device를 Use로 설정\n2. 장치 화면에서 Call 버튼 선택\nExpected Result: 1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "11",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_12",
+    "document": "Test Step: [VoIP 통화 중 장치에 사용자 전송/삭제]\n1. 장치 화면에서 Call 버튼 선택 후 VoIP 통화\n2. VoIP 통화 중 BioStar에서 장치에 사용자를 전송\nExpected Result: 1. 사용자가 전송되어도 VoIP 통화에 영향을 미치지 않음",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "12",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_13",
+    "document": "Test Step: 1. VoIP 통화 중 BioStar에서 장치의 사용자를 삭제\nExpected Result: 1. 사용자가 삭제되어도 VoIP 통화에 영향을 미치지 않음",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "13",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_14",
+    "document": "Test Step: [VoIP 통화 중 Slave 장치에 인증 동작]\n1. 장치 화면에서 Call 버튼 선택 후 VoIP 통화\n2. VoIP 통화 중 slave 장치에서 얼굴 인증 시도\nTest Data: BioStation3 (Master, VoIP 통화 장치)\nL BioStation3 (Slave)\n\n5. Master/Slave 장치로 Door 구성\nExpected Result: 1. 인증 성공되며 출입문이 열림\n2. VoIP 통화 이상 없음",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "14",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_15",
+    "document": "Test Step: 1. VoIP 통화 중 Slave 장치에서 카드 인증 시도\nExpected Result: 1. 인증 성공되며 출입문이 열림\n2. VoIP 통화 이상 없음",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "15",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_16",
+    "document": "Test Step: [Delete Data & Sync Device 후 VoIP 동작 확인]\n1. VoIP 설정 된 장치를 Sync Device 선택\n2. 장치에서 MicroSIP에 VoIP 통화 시도\nExpected Result: 1. VoIP 통화 동작 됨\n",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "16",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_17",
+    "document": "Test Step: 1. VoIP 설정 된 장치를 Delete Data&Sync Device 선택\n2. 장치에서 MicroSIP에 VoIP 통화 시도 \nExpected Result: 1. VoIP 통화 동작 됨",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "17",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_18",
+    "document": "Test Step: [Device Hashkey Management를 사용 시 VoIP 동작 확인]\n1. 장치상세페이지>Intercom 설정 및 Extension 설정\n2. 장치에서 MicroSIP SIP와 VoIP 동작 확인\n\nTest Data: 바이오스타 보안통신:ON\nExpected Result: 1. VoIP 영상통화 정상 동작 됨",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "18",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_19",
+    "document": "Test Step: 1. Settings > Security 진입하여 Device Hashkey Management를 설정 후 저장\n2. voip 연결\nExpected Result: 1. VoIP 영상통화 정상 동작 됨",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "19",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_20",
+    "document": "Test Step: 1. 장치상세> SIP 계정을 다른 계정으로 설정\n2.  MicroSIP SIP와 VoIP 동작 확인\nExpected Result: 1. VoIP 영상통화 정상 동작 됨",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "20",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_21",
+    "document": "Test Step: [APB Zone으로 구성된 Door를 VoIP 통화 중 DTMF로 Door Open 시 동작 확인]\n1. 장치상세> SIP 계정 설정 및 Open Door Button을 0 설정\n2. 사용자1 Entry Device에 2번 연속 인증\n\n\nTest Data: 1. 장치 설정\nMaster 장치 (BS3)\nL Slave 장치(BS3)\n\n2. Door 설정\n-. Entry Device : Master\n-. Exit Device : Slave\n-. Relay : Master Relay 0\n\n3. APB Zone 설정\n-. Name : APB Zone\n-. Anti-passback Type : Hard APB\n-. Entry Devices : Master\n-. Exit Devices : Slave\nExpected Result: 1. APB위반으로 인증 실패 및 APB Violation 로그 생성",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "21",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_22",
+    "document": "Test Step: 1. 사용자2 Exit Device에 2번 연속 인증\nExpected Result: 1. APB위반으로 인증 실패 및 APB Violation 로그 생성",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "22",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_23",
+    "document": "Test Step: 1. 실시간 로그 진입 > VoIP 통화 중 다이얼 0입력하여 Door Open\nExpected Result: 1. Door unlocked 로그 출력 및 VoIP에 의한 문열림 로그 출력",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "23",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_24",
+    "document": "Test Step: 1. 통화 종료 후 사용자1 Entry Device에 인증 시도\nExpected Result: 1. APB위반으로 인증 실패 및 APB Violation 로그 생성\n",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "24",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_25",
+    "document": "Test Step: 1. 사용자2 Exit Device에 인증 시도\nExpected Result: 1. APB위반으로 인증 실패 및 APB Violation 로그 생성",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "25",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_26",
+    "document": "Test Step: [Fire Alarm Zone으로 구성된 Door를 VoIP 통화 중 DTMF로 Door Open 시 동작 확인]\n1. 장치상세> SIP 계정 설정 및 Open Door Button을 0 설정 후 저장\n2. voip 통화중 0번 선택\nTest Data: 1. 장치 설정\nMaster 장치 (BS3)\nL Slave 장치(BS3)\n\n2. Door 설정\n-. Name : Door1\n-. Entry Device : Master\n-. Exit Device : Slave\n-. Relay : Master Relay 0\n\n3. Fire Alarm Zone 설정\n-. Name : Fire Alarm Zone\n-. Door : Door1\n-. Device/Input : Master Input Port 0\nExpected Result: 1. Door Relay가 Unlocked 되었다가 Door Open Time이후 Locked 됨",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "26",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_27",
+    "document": "Test Step: 1. Master Input Port 0 접지\nExpected Result: 1. Door Status Type이 Emergency Unlock, Door Relay가 Unlocked 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "27",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_28",
+    "document": "Test Step: 1. VoIP 통화 중 다이얼 0으로 Door Open\nExpected Result: 1. Door Status Type이 Emergency Unlock, Door Relay가 Unlocked 출력됨",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "28",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_29",
+    "document": "Test Step: [Scheduled Lock Zone으로 구성된 Door를 VoIP 통화 중 DTMF로 Door Open 시 동작 확인]\n1. 장치상세> SIP 계정 설정 및 Open Door Button을 0 설정 후 저장\n2. Monitoring > Door Status 진입\nTest Data: 1. 장치 설정\nMaster 장치 (BS3)\nL Slave 장치(BS3)\n\n2. Door 설정\n-. Name : Door1\n-. Entry Device : Master\n-. Exit Device : Slave\n-. Relay : Master Relay 0\n\n3. Scheduled Lock Zone 설정\n-. Name : Scheduled Lock Zone\n-. Door : Door1\n-. Schedule : Schedule1 (현재시간 포함, 앞으로 5분 후 스케줄 종료)\nExpected Result: 1.. Door Status Type이 Schedule Lock, Door Relay가 Locked 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "29",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_30",
+    "document": "Test Step: 1. VoIP 통화 중 다이얼 0 입력\nExpected Result: 1. Door Status Type이 Schedule Lock, Door Relay가 Locked 출력 유지 됨\n(Sheduled Lock상태임으로)",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "30",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_31",
+    "document": "Test Step: 1. Scheduled Lock 상태가 종료된 후 VoIP 통화 중 다이얼 0 입력\nExpected Result: 1. Door Status Type이 Normal, Door Relay가 Unlocked 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "31",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_32",
+    "document": "Test Step: [Scheduled Unlock Zone으로 구성된 Door를 VoIP 통화 중 DTMF로 Door Open 시 동작 확인]\n1. 장치상세 > SIP 계정 설정 및 Open Door Button을 0 설정 후 저장\n2. Monitoring > Door Status 진입\nExpected Result: 1. Door Status Type이 Schedule Unlock, Door Relay가 Unlocked 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "32",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_33",
+    "document": "Test Step: 1. VoIP 통화 중 다이얼 0 입력\nExpected Result: 1. Door Status Type이 Schedule Unlock, Door Relay가 Unlocked 유지 됨",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "33",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_34",
+    "document": "Test Step: 1.Scheduled Unlock 종료\n2. VoIP 통화 중 다이얼 0 입력\nExpected Result: 1. Door Status Type이 Normal, Door Relay가 Unlocked 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "34",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_35",
+    "document": "Test Step: [Intrusion Alarm Zone으로 구성된 Door에 경비 중일 경우 Call 버튼 미출력 확인]\n1. 장치상세> SIP 계정 설정 및 Open Door Button을 0 설정 후 저장\n2. Master Input Port 1 접지\n3. 경비진입\n\nExpected Result: 1. 장치화면에 Call 버튼이 출력되지 않음",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "35",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_36",
+    "document": "Test Step: [Manual Lock/Unlock 상태의 Door를 VoIP 통화 중 DTMF로 Door Open할 경우 동작 확인]\n1. 장치상세> SIP 계정 설정 및 Open Door Button을 0 설정 후 저장\n2. Monitoring > Door Status>  Manual Lock 버튼 선택\nTest Data: 1. 장치 설정\nMaster 장치 (BS3)\nL Slave 장치(BS3)\n\n2. Door 설정\n-. Name : Door1\n-. Entry Device : Master\n-. Exit Device : Slave\n-. Relay : Master Relay 0\nExpected Result: 1. Door Status Type이 Operator Lock, Door Relay가 Locked 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "36",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_37",
+    "document": "Test Step: 1. VoIP 통화 중 다이얼 0 입력\nExpected Result: 1. Door Status Type이 Operator Lock, Door Relay가 Locked 출력 유지 됨",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "37",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_38",
+    "document": "Test Step: 1. Door1을 체크 후 Manual Unlock 버튼 선택\nExpected Result: 1. Door Status Type이 Operator Unlock, Door Relay가 Unlocked 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "38",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_39",
+    "document": "Test Step: 1. VoIP 통화 중 다이얼 0 입력하여 Door Open 시도\nExpected Result: 1. Door Status Type이 Operator Unlock, Door Relay가 Unlocked 출력 유지 됨",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "39",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_40",
+    "document": "Test Step: 1. Door1을 체크 후 Release 버튼 선택\nExpected Result: 1. Door Status Type이 Normal, Door Relay가 Locked 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "40",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_41",
+    "document": "Test Step: 1. VoIP 통화 중 다이얼 0 입력\nExpected Result: 1. Door Status Type이 Normal, Door Relay가 Unlocked 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "41",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_42",
+    "document": "Test Step: [Intercom Microphone Volume 설정 동작 확인]\n1.장치상세>Intercom 사용 설정 후 계정 정보 설정\n2. Advanced > Display/Sound의 Intercom Microphone Volume:0 설정 후 저장\n3.VOIP 통화 연결\nTest Data: -intercom Microphone Volume (IP 인터폰 마이크 음량) \n- 음량 0/50/100 설정\n\nExpected Result: 1. 통화 시 PC의 MicroSIP에서 장치의 음량이 장치의 마이크 설정에 맞게 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "42",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_43",
+    "document": "Test Step: [Intercom Speaker Volume 설정 동작 확인]\n1. 장치상세> Intercom 사용 설정 후 계정 정보 설정\n2. Advanced > Display/Sound의 Intercom Speaker Volume:0 설정\n3. VOIP 통화 연결\nTest Data: -Intercom Speaker Volume (IP 인터폰 스피커 음량)\n- 음량 0/50/100 설정\nExpected Result: 1. 통화 시 음량이 설정에 맞게 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "43",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-367_step_44",
+    "document": "Test Step: [BioStar에서 IP인터폰 비디오 해상도 설정 및 동작 확인]\n1.장치상세>Intercom Video Resolution 설정 후 저장\n2. VOIP 통화 연결\n3. Intercom Video Resolution 해상도 저장\nTest Data: -Intercom Video Resolution: \n- 360X640\n- 720x480 \nExpected Result: 1. 정상적으로 연결되어 선택한 해상도에 맞게 Video및 Audio가 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-367",
+      "step_index": "44",
+      "source": "jira_test_step"
+    }
   }
-}
+]

@@ -1,1017 +1,380 @@
-{
-  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
-  "id": "60333",
-  "self": "https://jira.suprema.co.kr/rest/api/2/issue/60333",
-  "key": "COMMONR-328",
-  "fields": {
-    "resolution": null,
-    "customfield_13103": null,
-    "customfield_10510": null,
-    "customfield_10500": "2.0",
-    "customfield_10501": null,
-    "customfield_10502": null,
-    "customfield_12802": null,
-    "customfield_12804": null,
-    "customfield_10505": null,
-    "customfield_12803": null,
-    "customfield_10506": null,
-    "customfield_12806": null,
-    "customfield_10507": null,
-    "customfield_12805": null,
-    "customfield_10508": null,
-    "customfield_12808": null,
-    "customfield_10509": null,
-    "lastViewed": null,
-    "customfield_10180": null,
-    "customfield_10181": null,
-    "customfield_10182": null,
-    "customfield_10183": null,
-    "customfield_10184": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10173",
-      "value": "Major",
-      "id": "10173"
-    },
-    "customfield_10185": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
-      "value": "Medium (2-3일 이내 피드백)",
-      "id": "10220"
-    },
-    "labels": [],
-    "customfield_11702": null,
-    "aggregatetimeoriginalestimate": null,
-    "issuelinks": [
-      {
-        "id": "50740",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/50740",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "60490",
-          "key": "BES-1646",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/60490",
-          "fields": {
-            "summary": "[BDP-659] [Feasibiilty and limitation] BioStar 2와 장치에서 비주얼 페이스 템플릿만 저장하는 옵션 - TestCase 작성 건",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "완료",
-              "id": "10001",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
-              "id": "5",
-              "description": "이슈의 부작업",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
-              "name": "부작업",
-              "subtask": true,
-              "avatarId": 10316
-            }
-          }
-        }
-      },
-      {
-        "id": "54917",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/54917",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "64088",
-          "key": "BS3FW-1704",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/64088",
-          "fields": {
-            "summary": "[Store Visual Face Image : On / Off] Visual Face Image 사용 상태에서 사용자 등록 시 Visual Face Image  미사용 상태로 기 등록한 사용자의 Warped Image가 같이 활성화되어 등록이 되는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/5",
-              "description": "해결책이 제시되었고 보고자의 확인을 기다리는 중입니다. 지금부터는 이슈를 다시 열거나 이슈를 닫을 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/resolved.png",
-              "name": "해결됨",
-              "id": "5",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "54920",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/54920",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "64090",
-          "key": "DFW-1127",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/64090",
-          "fields": {
-            "summary": "'Store Visual Face Image: Disable ' 로 사용자A 등록 > 'Store Visual Face Image: Enable'  후 '사용자B 등록 시 사용자 A,B 모두 Warped Image 있음 ",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "54303",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/54303",
-        "type": {
-          "id": "10003",
-          "name": "Relates",
-          "inward": "relates to",
-          "outward": "relates to",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
-        },
-        "inwardIssue": {
-          "id": "60363",
-          "key": "DFW-1065",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/60363",
-          "fields": {
-            "summary": "[BDP-659] [Feasibiilty and limitation] BioStar 2와 장치에서 비주얼 페이스 템플릿만 저장하는 옵션",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "완료",
-              "id": "10001",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/3",
-              "id": "3",
-              "description": "해야할 일",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10318&avatarType=issuetype",
-              "name": "작업",
-              "subtask": false,
-              "avatarId": 10318
-            }
-          }
-        }
-      }
-    ],
-    "assignee": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
-      "name": "김소영",
-      "key": "김소영",
-      "emailAddress": "sykim@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-      },
-      "displayName": "김소영",
-      "active": true,
-      "timeZone": "Asia/Seoul"
-    },
-    "components": [],
-    "customfield_10170": null,
-    "customfield_10171": null,
-    "customfield_10172": null,
-    "customfield_10174": null,
-    "customfield_10175": null,
-    "customfield_10176": null,
-    "customfield_10177": null,
-    "customfield_10178": null,
-    "customfield_10179": null,
-    "customfield_10600": 42.0,
-    "customfield_10601": [],
-    "customfield_12901": null,
-    "customfield_10602": null,
-    "customfield_12900": null,
-    "subtasks": [],
-    "reporter": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
-      "name": "김소영",
-      "key": "김소영",
-      "emailAddress": "sykim@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-      },
-      "displayName": "김소영",
-      "active": true,
-      "timeZone": "Asia/Seoul"
-    },
-    "customfield_10168": null,
-    "customfield_10169": null,
-    "customfield_11800": null,
-    "progress": {
-      "progress": 0,
-      "total": 0
-    },
-    "votes": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-328/votes",
-      "votes": 0,
-      "hasVoted": false
-    },
-    "worklog": {
-      "startAt": 0,
-      "maxResults": 20,
-      "total": 0,
-      "worklogs": []
-    },
-    "issuetype": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
-      "id": "10000",
-      "description": "Represents a Test",
-      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
-      "name": "Test",
-      "subtask": false
-    },
-    "project": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
-      "id": "10000",
-      "key": "COMMONR",
-      "name": "Common Requirement And Test Case",
-      "projectTypeKey": "software",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
-        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
-        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
-        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
-      },
-      "projectCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
-        "id": "10000",
-        "description": "Requirements And Test Cases For The BioStar System Device",
-        "name": "BioStar System Device Requirement And Test Case"
-      }
-    },
-    "customfield_11000": null,
-    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@6ff17578[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@21c4d0bd[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@26ee0c03[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@2128715b[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@164ff252[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@53063744[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@5deb733[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@679eac7a[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@e2a1fb9[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@6c74b52f[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@1c63e0bd[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@e0c7237[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
-    "resolutiondate": null,
-    "watches": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-328/watchers",
-      "watchCount": 2,
-      "isWatching": false
-    },
-    "customfield_11900": null,
-    "customfield_11901": null,
-    "updated": "2025-08-01T10:07:34.000+0900",
-    "timeoriginalestimate": null,
-    "description": "https://jira.suprema.co.kr/browse/BDP-659\r\n\r\n바이오스타 지원버전 - V2.9.7 이상 버전\r\n 대상장치 - F2, BS3, W3 \r\n FW 지원버전 - F2 V2.2.0 / BS3 V1.3.0 이후 버전 / W2 V1.0.0 이후 버전\r\n\r\n0.개요\r\n - 현재 BioStar 2 시스템에서 비주얼 페이스의 저장은 사람이 식별할 수 있는 1)Warped Image와 사진의 특징 정보 만을 담은 2)Template, 이렇게 두 가지를 저장하고 있다. 그러나 1)의 경우, 2)와 달리 곧바로 사람을 특정할 수 있는 정보기 때문에 이를 직접 저장, 전송하는 것이 Data Controller 또는 Data Processor 에게 관리의 부담을 지워줄 수 있어 2)를 저장, 전송하는 옵션을 제공하는 것이 필요하다.\r\n - 그러한 요구에 따라,\r\n BioStar 2 및 장치가 1)을 저장하지 않고, 2)만을 저장하는 옵션을 제공하여야 한다.\r\n 사용자 동기화 성능 향상을 위해 BioStar 2 와 장치 간에 1), 2) 중 보유하고 있는 것만 전송할 수 있어야 한다.\r\n 즉, 2)만 저장하고 있는 경우, 2)만 전송할 수 있어야 한다.\r\n\r\n※ Template 버전\r\n > F2: template v1 & v2\r\n > BS3: template v3\r\n > W3: template v3\r\n\r\n \r\n\r\n※ BioStar2 관련 동작 명령어\r\n\r\n1. heidiSQL 실행\r\n\r\n2. 서버에 이미지만 있는 사용자 만들기\r\n\"delete FROM t_crdtbin WHERE typ IN (5,9)\"\r\n\r\n3. 마이그레이션 전 상황 만들기 \r\n \"UPDATE t_syscfg SET VAL='false' WHERE SYSCFGUID=9100;\" 입력\r\n\r\n4. 마이그레이션 후 상황 만들기\r\n \"UPDATE t_syscfg SET VAL='true' WHERE SYSCFGUID=9100;\"\r\n or UI 에서 User > More > Visual Face Migration\r\n\r\n5. 발급 기록만 있는 사용자는 \r\n delete FROM t_crdtbin WHERE typ IN (5,9,7)\r\n\r\n단, 수행 후 사용자 삭제 > 동기화는 다시 해주기!!\r\n 신규 설치한 경우 비주얼 페이스 마이그레이션 후 상황",
-    "customfield_10251": null,
-    "customfield_10252": null,
-    "customfield_10253": null,
-    "customfield_10254": null,
-    "customfield_10255": null,
-    "timetracking": {},
-    "customfield_10257": null,
-    "customfield_10247": null,
-    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. (BioStar2 이용) 미지원 버전에서 지원 버전으로 FW Upgrade<br/>2. Store Visual Face Image Default 값 확인</p></td><td><p>대상장치<br/>&gt; BS3<br/>&gt; F2</p></td><td><p>1. 기본값은 Store Visual Face Image: Enable 이다.</p>\n\n<p>※즉, Warped Image 를 저장하는게 기본값이다.</p></td></tr><tr><td>2</td><td><p>1. (USB 이용) 미지원 버전에서 지원 버전으로 FW Upgrade<br/>2. Store Visual Face Image Default 값 확인</p></td><td><p>대상장치<br/>&gt; BS3<br/>&gt; F2</p></td><td><p>1. 기본값은 Store Visual Face Image: Enable 이다.</p>\n\n<p>※즉, Warped Image 를 저장하는게 기본값이다.</p></td></tr><tr><td>3</td><td><p><span class=\"error\">&#91;Store Visual Face Image: Enable 상태&#93;</span><br/>1. 장치&gt; 인증&gt; 얼굴<br/>2. Store Visual Face Image : Disable 로 설정변경<br/>3. 출력되는 문구 확인</p></td><td></td><td><p>1. 하기의 내용을 노티한다.<br/>저장된 비주얼 페이스의 이미지가 모두 삭제됩니다.<br/>앞으로 등록되는 비주얼 페이스도 이미지를 제외한 템플릿만을 저장합니다.</p>\n\n<p>이 설정을 비활성화한 후에는 BioStar 2 v2.9.7 이상에 연결하여 사용하세요.</p></td></tr><tr><td>4</td><td><p><span class=\"error\">&#91;Store Visual Face Image: Enable 상태&#93;</span><br/>1. 장치&gt; 인증&gt; 얼굴<br/>2. Store Visual Face Image: Disable 설정 후 저장<br/>3. Warped Image 삭제유무 확인 및 인증시도</p></td><td></td><td><p>1. 저장되어 있는 모든 사용자들의 Warped Image가 삭제되며 이는 Diag log로 확인가능<br/>: FaceTable::clearAllImageOfVisualFace - thread to clear image started.<br/>: FaceTable::clearAllImageOfVisualFace - thread to clear image completed<br/>&gt; 인증 동작은 가능</p></td></tr><tr><td>5</td><td><p><span class=\"error\">&#91;장치의 Store Visual Face Image: Diable 상태&#93;</span><br/>1. 서버&gt; 사용자 추가&gt; 얼굴&gt; 등록시도</p></td><td><p>서버<br/>&gt; Store Visual Face Image: Not Use</p></td><td><p>1. Scan시에는 옵션과 상관없이 무조건 Warped Image 를 BioStar 2 에 전송한다.(기존과 동일)<br/>-&gt; 스캔하는 과정에는 이미지 표시되나 등록 후 재진입 시 이미지 없음으로 표시<br/>※ 이미지가 전송되어야 BS3에서 스캔하면 F2용 템플릿도 만들고 할 수 있음</p></td></tr><tr><td>6</td><td><p><span class=\"error\">&#91;장치의 Store Visual Face Image: Enable 상태&#93;</span><br/>1. 서버&gt; 사용자 추가&gt; 얼굴&gt; 등록시도</p></td><td><p>서버<br/>&gt; Store Visual Face Image: Not Use</p></td><td><p>1. Scan시에는 옵션과 상관없이 무조건 Warped Image 를 BioStar 2 에 전송한다.(기존과 동일)<br/>-&gt; 스캔하는 과정에는 이미지 표시되나 등록 후 재진입 시 이미지 없음으로 표시<br/>※ 이미지가 전송되어야 BS3에서 스캔하면 F2용 템플릿도 만들고 할 수 있음</p></td></tr><tr><td>7</td><td><p><span class=\"error\">&#91;장치의 Store Visual Face Image: Diable 상태&#93;</span><br/>1. 서버&gt; 사용자 추가&gt; 얼굴&gt; 등록시도</p></td><td><p>서버<br/>&gt; Store Visual Face Image: Use</p></td><td><p>1. Scan시에는 옵션과 상관없이 무조건 Warped Image 를 BioStar 2 에 전송한다.(기존과 동일)<br/>※ 이미지가 전송되어야 BS3에서 스캔하면 F2용 템플릿도 만들고 할 수 있음</p></td></tr><tr><td>8</td><td><p><span class=\"error\">&#91;장치의 Store Visual Face Image: Enable 상태&#93;</span><br/>1. 서버&gt; 사용자 추가&gt; 얼굴&gt; 등록시도</p></td><td><p>서버<br/>&gt; Store Visual Face Image: Use</p></td><td><p>1. Scan시에는 옵션과 상관없이 무조건 Warped Image 를 BioStar 2 에 전송한다.(기존과 동일)<br/>※ 이미지가 전송되어야 BS3에서 스캔하면 F2용 템플릿도 만들고 할 수 있음</p></td></tr><tr><td>9</td><td><p><span class=\"error\">&#91;Template만 저장된 사용자 등록된 상태&#93;</span><br/>1. 장치에 USB 연결<br/>2. Menu&gt; Device&gt; USB Memory&gt; Export&gt; User<br/>3. Export된 User Data 확인</p></td><td></td><td><p>1. Template만 포함해 내보낸다.<br/>=&gt; Export한 파일을 다른 장치에 Import 해 인증성공 확인</p></td></tr><tr><td>10</td><td><p><span class=\"error\">&#91;Tempate&amp;Image 모두 저장된 사용자 등록된 상태&#93;</span><br/>1. 장치에 USB 연결<br/>2. Menu&gt; Device&gt; USB Memory&gt; Export&gt; User<br/>3. Export된 User Data 확인</p></td><td></td><td><p>1. Warped Image + Template 을 포함해 내보낸다.<br/>=&gt; Export한 파일을 다른 장치에 Import 해 인증성공 확인</p></td></tr><tr><td>11</td><td><p><span class=\"error\">&#91;SW: V2.9.6 이하 버전 &amp; BDP-659 지원FW&#93;</span><br/>1. 서버에서 F2 장치로 얼굴 등록<br/>2. BS3,W3 장치로 사용자 전송</p></td><td><p><span class=\"error\">&#91;Store Visual Face Image: Disable&#93;</span><br/>&gt; F2, BS3,W3 연결</p>\n\n<p>서버에 등록된 Template 및 연결장치<br/>&gt; F2 Template 저장</p></td><td><p>1. 연결된 장치들에 기존 옵션으로 Template 만 전송한다.<br/>=&gt; 인증성공으로 동작</p></td></tr><tr><td>12</td><td><p><span class=\"error\">&#91;SW: V2.9.6 이하 버전 &amp; BDP-659 지원FW&#93;</span><br/>1. 서버에서 BS3,W3 장치로 얼굴 등록<br/>2. F2 장치로 사용자 전송</p></td><td><p><span class=\"error\">&#91;Store Visual Face Image: Disable&#93;</span></p>\n\n\n<p>&gt; F2, BS3,W3 연결</p>\n\n<p>서버에 등록된 Template 및 연결장치<br/>&gt; BS3,W3 Template 저장 </p></td><td><p>1. 연결된 장치들에 기존 옵션으로 Template 만 전송한다.<br/>=&gt; 인증성공으로 동작</p></td></tr><tr><td>13</td><td><p><span class=\"error\">&#91;SW: V2.9.6 이하 버전 &amp; BDP-659 지원FW&#93;</span><br/>1. 서버에서 F2 장치로 얼굴 등록<br/>2. BS3,W3 장치로 사용자 전송</p></td><td><p><span class=\"error\">&#91;Store Visual Face Image: Enable&#93;</span></p>\n\n<p>&gt; F2, BS3,W3 연결</p>\n\n<p>서버에 등록된 Template 및 연결장치<br/>&gt; F2 Template 저장</p></td><td><p>1. 기존 방식으로 Warped Image + Template 를 전송한다<br/>=&gt; 인증성공으로 동작</p></td></tr><tr><td>14</td><td><p><span class=\"error\">&#91;SW: V2.9.6 이하 버전 &amp; BDP-659 지원FW&#93;</span><br/>1. 서버에서 BS3,W3 장치로 얼굴 등록<br/>2. F2 장치로 사용자 전송</p></td><td><p><span class=\"error\">&#91;Store Visual Face Image: Enable&#93;</span><br/>&gt; F2, BS3,W3 연결</p>\n\n<p>서버에 등록된 Template 및 연결장치<br/>&gt; BS3,W3 Template 저장</p></td><td><p>1. 기존 방식으로 Warped Image + Template 를 전송한다<br/>=&gt; 인증성공으로 동작</p></td></tr><tr><td>15</td><td><p><span class=\"error\">&#91;V2.9.7 이상 &amp; 서버에서 사용자 등록한 상태&#93;</span><br/>1. <a href=\"https://jira.suprema.co.kr/browse/BDP-659\" title=\"BioStar 2 에서 비주얼 페이스 동기화 시 템플릿만 전송하기, BioStar 2와 장치에서 Warped Image 를 저장하지 않는 옵션\" class=\"issue-link\" data-issue-key=\"BDP-659\"><del>BDP-659</del></a>를 지원하는 장치로 사용자 전송</p></td><td><p>&gt; F2, BS3,W3 연결</p></td><td><p>1. 연결된 장치들에 기존 옵션으로 Template 만 전송한다.<br/>=&gt; 인증성공으로 동작</p></td></tr><tr><td>16</td><td><p><span class=\"error\">&#91;V2.9.7 이상 &amp; 서버에서 사용자 등록한 상태&#93;</span><br/>1. <a href=\"https://jira.suprema.co.kr/browse/BDP-659\" title=\"BioStar 2 에서 비주얼 페이스 동기화 시 템플릿만 전송하기, BioStar 2와 장치에서 Warped Image 를 저장하지 않는 옵션\" class=\"issue-link\" data-issue-key=\"BDP-659\"><del>BDP-659</del></a>를 미지원하는 장치로 사용자 전송</p></td><td><p>&gt; F2, BS3,W3 연결</p>\n</td><td><p>1. 연결된 장치들에 기존 옵션으로 Template 만 전송한다.<br/>=&gt; 인증성공으로 동작</p></td></tr><tr><td>17</td><td><p><span class=\"error\">&#91;V2.9.7 이상 &amp; F2 장치에서 등록 후 서버로 업로드한 상태&#93;</span><br/>1. 사용자&gt; 비주얼페이스 마이그레이션<br/>2. <a href=\"https://jira.suprema.co.kr/browse/BDP-659\" title=\"BioStar 2 에서 비주얼 페이스 동기화 시 템플릿만 전송하기, BioStar 2와 장치에서 Warped Image 를 저장하지 않는 옵션\" class=\"issue-link\" data-issue-key=\"BDP-659\"><del>BDP-659</del></a>를 미지원하는 장치로 사용자 전송</p></td><td><p><span class=\"error\">&#91;장치 - Store Visual Face Image: Enable&#93;</span></p>\n\n<p>&gt; F2, BS3,W3 연결</p></td><td><p>1. 비주얼페이스 마이그레이션 성공 팝업 출력<br/>2. 연결된 장치들에 기존 옵션으로 Template 만 전송한다.<br/>=&gt; 인증성공으로 동작</p></td></tr><tr><td>18</td><td><p><span class=\"error\">&#91;V2.9.7 이상 &amp; F2 장치에서 등록 후 서버로 업로드한 상태&#93;</span></p>\n\n<p>1. 사용자&gt; 비주얼페이스 마이그레이션<br/>2. <a href=\"https://jira.suprema.co.kr/browse/BDP-659\" title=\"BioStar 2 에서 비주얼 페이스 동기화 시 템플릿만 전송하기, BioStar 2와 장치에서 Warped Image 를 저장하지 않는 옵션\" class=\"issue-link\" data-issue-key=\"BDP-659\"><del>BDP-659</del></a>를 미지원하는 장치로 사용자 전송</p></td><td><p><span class=\"error\">&#91;장치 - Store Visual Face Image: Disable&#93;</span></p>\n\n<p>&gt; F2, BS3,W3 연결</p></td><td><p>1. 비주얼페이스 마이그레이션 실패 팝업 출력<br/>(Warped Image 가 없는 경우)<br/>2. F2 - Template 만 전송한다.<br/>=&gt; 인증성공으로 동작<br/>W3,BS3 - 전송 실패 확인<br/>=&gt; 인증실패로 동작</p></td></tr><tr><td>19</td><td><p><span class=\"error\">&#91;V2.9.7 이상 &amp; BS3 장치에서 등록 후 서버로 업로드한 상태&#93;</span><br/>1. 사용자&gt; 비주얼페이스 마이그레이션<br/>2. <a href=\"https://jira.suprema.co.kr/browse/BDP-659\" title=\"BioStar 2 에서 비주얼 페이스 동기화 시 템플릿만 전송하기, BioStar 2와 장치에서 Warped Image 를 저장하지 않는 옵션\" class=\"issue-link\" data-issue-key=\"BDP-659\"><del>BDP-659</del></a>를 미지원하는 장치로 사용자 전송</p></td><td><p><span class=\"error\">&#91;장치 - Store Visual Face Image: Enable&#93;</span></p>\n\n<p>&gt; F2, BS3,W3 연결</p></td><td><p>1. 비주얼페이스 마이그레이션 성공 팝업 출력<br/>2. 연결된 장치들에 기존 옵션으로 Template 만 전송한다.<br/>=&gt; 인증성공으로 동작</p></td></tr><tr><td>20</td><td><p><span class=\"error\">&#91;V2.9.7 이상 &amp; BS3 장치에서 등록 후 서버로 업로드한 상태&#93;</span></p>\n\n<p>1. 사용자&gt; 비주얼페이스 마이그레이션<br/>2. <a href=\"https://jira.suprema.co.kr/browse/BDP-659\" title=\"BioStar 2 에서 비주얼 페이스 동기화 시 템플릿만 전송하기, BioStar 2와 장치에서 Warped Image 를 저장하지 않는 옵션\" class=\"issue-link\" data-issue-key=\"BDP-659\"><del>BDP-659</del></a>를 미지원하는 장치로 사용자 전송</p></td><td><p><span class=\"error\">&#91;장치 - Store Visual Face Image: Disable&#93;</span></p>\n\n<p>&gt; F2, BS3,W3 연결</p></td><td><p>1. 비주얼페이스 마이그레이션 실패 팝업 출력<br/>(Warped Image 가 없는 경우)<br/>2. W3,BS3 - Template 만 전송한다.<br/>=&gt; 인증성공으로 동작<br/>F2 - 전송 실패 확인<br/>=&gt; 인증실패로 동작</p></td></tr><tr><td>21</td><td><p>1. 장치의 RS485 모드: Slave<br/>2. 메뉴&gt; Store Fame Image 옵션 유무 확인</p></td><td></td><td><p>1. 미표시된다.<br/>=&gt; Slave 모드일 때는 미지원.</p></td></tr><tr><td>22</td><td><ul>\n<li>BioStar 2 Settings &gt; Server &gt; Expert Settings</li>\n</ul>\n\n\n<p><span class=\"error\">&#91;서버: Store Visual Face Image - Not Use&#93;</span><br/>1. 바이오스타&gt; 사용자&gt; 사용자 선택<br/>2. 우측상단 … 버튼클릭&gt; Data File Export<br/>3. F2&gt; Apply&gt; USB에 해당 파일 저장<br/>4. USB를 장치에 삽입<br/>5. Menu&gt; Device&gt; USB&gt; Import&gt; User<br/>6. 동작확인</p></td><td><p><span class=\"error\">&#91;Store Visual Face Image: Disable 상태&#93;</span><br/>&gt; F2<br/>&gt; BS3</p></td><td><p>1. F2는 Import 성공으로 동작 후 장치 Reboot된다.<br/>2. BS3 및 W3는 Import 실패로 동작한다.</p></td></tr><tr><td>23</td><td><p><span class=\"error\">&#91;서버: Store Visual Face Image - Not Use&#93;</span><br/>1. 바이오스타&gt; 사용자&gt; 사용자 선택<br/>2. 우측상단 … 버튼클릭&gt; Data File Export<br/>3. BS3&gt; Apply&gt; USB에 해당 파일 저장<br/>4. USB를 장치에 삽입<br/>5. Menu&gt; Device&gt; USB&gt; Import&gt; User<br/>6. 동작확인</p></td><td><p><span class=\"error\">&#91;Store Visual Face Image: Disable 상태&#93;</span></p>\n\n<p>&gt; F2<br/>&gt; BS3</p></td><td><p>1. BS3 &amp; W3는 Import 성공으로 동작  후 장치 Reboot된다.(W3 확인필요)<br/>2. F2는 Import 실패로 동작한다.</p></td></tr><tr><td>24</td><td><p><span class=\"error\">&#91;서버: Store Face Image - Use&#93;</span><br/>1. 바이오스타&gt; 사용자&gt; 사용자 선택<br/>2. 우측상단 … 버튼클릭&gt; Data File Export<br/>3. F2&gt; Apply&gt; USB에 해당 파일 저장<br/>4. USB를 장치에 삽입<br/>5. Menu&gt; Device&gt; USB&gt; Import&gt; User<br/>6. 동작확인</p></td><td><p><span class=\"error\">&#91;Store Visual Face Image: Disable 상태&#93;</span></p>\n\n<p>&gt; F2<br/>&gt; BS3</p></td><td><p>1. F2 장치에서 Import 성공 후 장치 Reboot되고, 인증성공으로 동작한다.<br/>2. BS3 &amp; W3에서는 Import 실패된다.</p></td></tr><tr><td>25</td><td><p><span class=\"error\">&#91;서버: Store Visual Face Image - Use&#93;</span><br/>1. 바이오스타&gt; 사용자&gt; 사용자 선택<br/>2. 우측상단 … 버튼클릭&gt; Data File Export<br/>3. BS3&gt; Apply&gt; USB에 해당 파일 저장<br/>4. USB를 장치에 삽입<br/>5. Menu&gt; Device&gt; USB&gt; Import&gt; User<br/>6. 동작확인</p></td><td><p><span class=\"error\">&#91;Store Visual Face Image: Disable 상태&#93;</span></p>\n\n<p>&gt; F2<br/>&gt; BS3</p></td><td><p>1. BS3 &amp; W3 장치에서 Import 성공 후 장치 Reboot되고, 인증성공으로 동작한다.<br/>2. F2 에서는 Import 실패된다.</p></td></tr><tr><td>26</td><td><p><span class=\"error\">&#91;Store Visual Face Image: Disable 상태&#93;</span><br/>1. F2에 USB 삽입<br/>2. Menu&gt; Device&gt; USB&gt; Export&gt; User<br/>3. F2 에 Import</p></td><td><p><span class=\"error\">&#91;Store Visual Face Image: Disable 상태&#93;</span><br/>&gt; F2</p></td><td><p>1. Import 성공 후 장치 Reboot된다.</p>\n\n<p>※ template 버전이 동일시 성공, 상이할 경우 실패(하위호환을 보장하지 않음)</p></td></tr><tr><td>27</td><td><p><span class=\"error\">&#91;Store Visual Face Image: Disable 상태&#93;</span><br/>1. F2에 USB 삽입<br/>2. Menu&gt; Device&gt; USB&gt; Export&gt; User<br/>3. BS3 에 Import</p></td><td><p><span class=\"error\">&#91;Store Visual Face Image: Disable 상태&#93;</span><br/>&gt; BS3</p></td><td><p>1. Import 실패한다.</p></td></tr><tr><td>28</td><td><p><span class=\"error\">&#91;Store Visual Face Image: Disable 상태&#93;</span><br/>1. BS3 에 USB 삽입<br/>2. Menu&gt; Device&gt; USB&gt; Export&gt; User<br/>3. BS3 에 Import</p></td><td><p><span class=\"error\">&#91;Store Visual Face Image: Disable 상태&#93;</span><br/>&gt; BS3</p></td><td><p>1. Import 성공 후 장치 Reboot된다.</p></td></tr><tr><td>29</td><td><p><span class=\"error\">&#91;Store Visual Face Image: Disable 상태&#93;</span><br/>1. BS3 에 USB 삽입<br/>2. Menu&gt; Device&gt; USB&gt; Export&gt; User<br/>3. F2 에 Import</p></td><td><p><span class=\"error\">&#91;Store Visual Face Image: Disable 상태&#93;</span><br/>&gt; F2</p></td><td><p>1. Import 실패한다.</p></td></tr><tr><td>30</td><td><p><span class=\"error\">&#91;Store Visual Face Image: Enable 상태&#93;</span><br/>1. F2에 USB 삽입<br/>2. Menu&gt; Device&gt; USB&gt; Export&gt; User<br/>3. F2(2.x, <a href=\"https://jira.suprema.co.kr/browse/BDP-659\" title=\"BioStar 2 에서 비주얼 페이스 동기화 시 템플릿만 전송하기, BioStar 2와 장치에서 Warped Image 를 저장하지 않는 옵션\" class=\"issue-link\" data-issue-key=\"BDP-659\"><del>BDP-659</del></a> 미지원) 에 Import</p></td><td></td><td><p>1. Import 성공 후 장치 Reboot된다.</p></td></tr><tr><td>31</td><td><p><span class=\"error\">&#91;Store Visual Face Image: Enable 상태&#93;</span><br/>1. F2에 USB 삽입<br/>2. Menu&gt; Device&gt; USB&gt; Export&gt; User<br/>3. F2(2.x, <a href=\"https://jira.suprema.co.kr/browse/BDP-659\" title=\"BioStar 2 에서 비주얼 페이스 동기화 시 템플릿만 전송하기, BioStar 2와 장치에서 Warped Image 를 저장하지 않는 옵션\" class=\"issue-link\" data-issue-key=\"BDP-659\"><del>BDP-659</del></a> 미지원) 에 Import</p></td><td></td><td><p>1. Import 성공한다.</p></td></tr><tr><td>32</td><td><p><span class=\"error\">&#91;Store Visual Face Image: Enable 상태&#93;</span><br/>1. BS3에 USB 삽입<br/>2. Menu&gt; Device&gt; USB&gt; Export&gt; User<br/>3. BS3(<a href=\"https://jira.suprema.co.kr/browse/BDP-659\" title=\"BioStar 2 에서 비주얼 페이스 동기화 시 템플릿만 전송하기, BioStar 2와 장치에서 Warped Image 를 저장하지 않는 옵션\" class=\"issue-link\" data-issue-key=\"BDP-659\"><del>BDP-659</del></a> 미지원) 에 Import</p></td><td></td><td><p>1. Import 성공 후 장치 Reboot된다.</p></td></tr><tr><td>33</td><td><p><span class=\"error\">&#91;Store Visual Face Image: Disable 상태&#93;</span><br/>1. BS3에 USB 삽입<br/>2. Menu&gt; Device&gt; USB&gt; Export&gt; User<br/>3. BS3(<a href=\"https://jira.suprema.co.kr/browse/BDP-659\" title=\"BioStar 2 에서 비주얼 페이스 동기화 시 템플릿만 전송하기, BioStar 2와 장치에서 Warped Image 를 저장하지 않는 옵션\" class=\"issue-link\" data-issue-key=\"BDP-659\"><del>BDP-659</del></a> 미지원) 에 Import</p></td><td></td><td><p>1. Import 성공 후 장치 Reboot된다.</p></td></tr><tr><td>34</td><td><p>1. Device 의 Store Visual Face Image: Disable 설정<br/>2. Device 에서 사용자A 및 Visual Face 추가<br/>3. Device 의 Store Visual Face Image: Enable 설정<br/>4. Device 에서 사용자B 및 Visual Face 추가</p></td><td></td><td><p>1. 사용자A = 이미지 없이 템플릿만 있음<br/>2. 사용자B = 이미지 있고 템플릿도 있음</p></td></tr><tr><td>35</td><td><p>1) Device 에서 Store Visual Face Image: Disable 설정<br/>2) Server 에서 Visual Face 1st/2nd  등록 및 Device 에 동기화<br/>3) Device 에서 Store Visual Face Image: Enable 설정<br/>4) Device 에서 User 의 Visual Face 1st 를 변경<br/>5) Device 에서 Data File Export 진행<br/>6) Data File 을 Server 에 Import  후 확인</p></td><td></td><td><p>1. Visual Face 1st - Warped Image: 있음<br/>2. Visual Face 1st - Template: 있음<br/>3. Visual Face 2nd - Warped Image: 없음<br/>4. Visual Face 2nd - Template: 있음</p></td></tr><tr><td>36</td><td><p>1. BioStar 에서 비쥬얼 페이스 발급 없이 신규 사용자 등록 &gt; 장치 동기화<br/>2. BioStar 서버 stop<br/>3. Device 의 Store Visual Face Image: Disable 설정<br/>4. Device 에서 사용자A Visual Face 추가<br/>5. Device 의 Store Visual Face Image: Enable 설정<br/>6. Device 에서 사용자A Visual Face 추가<br/>7. BioStar 서버 재시작<br/>8. 장치에 있는 사용자 서버 동기화 <br/>9.  BioStar 에서 사용자A 진입하여 Visual Face 1st/2nd 의 이미지 상태를 확인</p></td><td><p>사용자 동기화 : 모든장치(장치 사용자 변경 포함)</p></td><td>\n\n\n\n\n\n<p>1. Visual Face 1st - Warped Image: 없음<br/>2. Visual Face 1st - Template: 있음<br/>3. Visual Face 2nd - Warped Image: 있음<br/>4. Visual Face 2nd - Template: 있음</p></td></tr><tr><td>37</td><td><p><span class=\"error\">&#91;Migration 전 &amp; BDP-659 미지원 FW&#93;</span><br/>1. 이미지만 있는 사용자<br/>(v2.9.6  이하 버전에서 v2.9.7로 업그레이드 <br/>-&gt; 이미지만 남기고 템플릿 모두 삭제)<br/>2. 장치에 동기화 </p></td><td><p>연결장치<br/> &gt; BS3 &amp; F2 &amp; W3</p>\n\n<p>동기화</p>\n<ul class=\"alternate\" type=\"square\">\n<li>장치 동기화</li>\n<li>사용자 자동 동기화</li>\n<li>사용자 장치로 전송</li>\n</ul>\n\n\n<ul>\n<li>'사용자 자동 동기화 : 사용 안 함' 으로 설정 시 '장치 동기화' 와 '데이터 삭제 후 장치 동기화'는 사용자 전송이 되지 않는 것이 사양</li>\n</ul>\n</td><td><p>1. 이미지만 장치에 전송<br/>=&gt; 인증성공으로 동작<br/>2. Warped Image 가 없는 경우, 동기화 실패 처리<br/>(BioStar2 로그 출력 확인 -&gt; 사용자 동기화 실패(호환 비주얼 페이스 템플릿 없음))<br/>=&gt; 인증실패로 동작</p>\n\n\n<ul>\n<li>'Migration 전' 상황에는 '2.9.6 이하 버전에서 서버가 가지고 있던 비주얼 페이스 템플릿은 2.9.7 로 업그레이드 시 비주얼 페이스 이미지만 남기고 모두 삭제</li>\n</ul>\n</td></tr><tr><td>38</td><td><p><span class=\"error\">&#91;Migration 전 &amp; BDP-659 지원 FW&#93;</span><br/>1. 이미지만 있는 사용자<br/>(v2.9.6  이하 버전에서 v2.9.7로 업그레이드 <br/>-&gt; 이미지만 남기고 템플릿 모두 삭제)<br/>2. 장치에 동기화 </p></td><td><p>연결장치<br/>&gt; BS3 &amp; F2 &amp; W3</p>\n\n<p>동기화</p>\n\n<ul class=\"alternate\" type=\"square\">\n<li>장치 동기화</li>\n<li>사용자 자동 동기화</li>\n<li>사용자 장치로 전송</li>\n</ul>\n</td><td><p>1. 이미지만 장치에 전송<br/>=&gt; 인증성공으로 동작<br/>2. Warped Image 가 없는 경우, 동기화 실패 처리<br/>(BioStar2 로그 출력 확인 -&gt; 사용자 동기화 실패(호환 비주얼 페이스 템플릿 없음))<br/>=&gt; 인증실패로 동작</p></td></tr><tr><td>39</td><td><p><span class=\"error\">&#91;Migration 후 &amp; BDP-659 미지원 FW&#93;</span></p>\n\n<p>1. 이미지 &amp; template 있는 사용자<br/>2. 장치에 동기화</p></td><td><p>연결장치<br/>&gt; BS3 &amp; F2 &amp; W3</p>\n\n<p>동기화</p>\n\n<ul class=\"alternate\" type=\"square\">\n<li>장치 동기화</li>\n<li>사용자 자동 동기화</li>\n<li>사용자 장치로 전송</li>\n</ul>\n</td><td><p>1. 장치와 호환되는 Template 있는 경우</p>\n<ul class=\"alternate\" type=\"square\">\n<li>Template (이미지 값은 0 채움) 정보만 전송<br/>=&gt; 인증성공으로 동작</li>\n</ul>\n\n\n<p>2. 장치와 호환되는 Template 없는 경우</p>\n<ul class=\"alternate\" type=\"square\">\n<li>Template 을 전송<br/> (서버가 보유중인 이미지를 가지고 서버가 템플릿을 추출하여 장치에 템플릿만 전송/이미지 값은 0 채움)<br/>=&gt; 인증성공으로 동작</li>\n<li>Warped Image 가 없는 경우, 동기화 실패 처리 / 등록 실패 (BioStar2 로그 출력 확인)<br/>=&gt; 인증실패로 동작</li>\n</ul>\n</td></tr><tr><td>40</td><td><p><span class=\"error\">&#91;Migration 후 &amp; BDP-659 지원 FW&#93;</span></p>\n\n<p>1. 이미지 &amp; template 있는 사용자<br/>2. 장치에 동기화</p></td><td><p>연결장치<br/>&gt; BS3 &amp; F2 &amp; W3</p>\n\n<p>동기화</p>\n\n<ul class=\"alternate\" type=\"square\">\n<li>장치 동기화</li>\n<li>사용자 자동 동기화</li>\n<li>사용자 장치로 전송</li>\n</ul>\n</td><td><p>1. 장치와 호환되는 Template 있는 경우</p>\n<ul class=\"alternate\" type=\"square\">\n<li>Template 정보만 전송<br/>=&gt; 인증성공으로 동작</li>\n</ul>\n\n\n<p>2. 장치와 호환되는 Template 없는 경우</p>\n<ul class=\"alternate\" type=\"square\">\n<li>Template 을 전송<br/>(서버가 보유중인 이미지를 가지고 서버가 템플릿을 추출하여 장치에 템플릿만 전송)<br/>=&gt; 인증성공으로 동작</li>\n<li>Warped Image 가 없는 경우, 동기화 실패 처리 / 등록 실패 (BioStar2 로그 출력 확인)<br/>=&gt; 인증실패로 동작</li>\n</ul>\n</td></tr><tr><td>41</td><td><p><span class=\"error\">&#91;SW: V2.9.6 이하 버전 &amp; BDP-659 지원FW&#93;</span><br/>1. 장치에서 사용자 등록(얼굴 포함)<br/>2. 서버로 사용자 업로드<br/>3. BioStar2 v2.9.7 이상으로 upgrade <br/>(서버 Migration 전 상황)<br/>4. BioStar2 &gt; 사용자 리스트 확인<br/>5. 장치에서 서버로 사용자 재 업로드</p></td><td><p><span class=\"error\">&#91;Store Face Image: Disable&#93;</span></p>\n\n<p>서버 &gt; 사용자 자동 동기화 : off</p></td><td><p>1. BioStar 마이그레이션 시 카운트에 포함되고 에러가 발생<br/>(BioStar2 &gt; 사용자 - 발급 기록만 있는 사용자로 표시)<br/>=&gt; 인증 실패로 동작<br/>2.  사용자 수정 시 에러 팝업 출력<br/> (재등록 안내 팝업 출력 - '1st visual face is invalid. Please delete and register again.')<br/>3. 장치 사용자 재 업로드 시 정상적으로 템플릿만 있는 사용자 표시 확인<br/>=&gt; 인증 성공으로 동작</p></td></tr><tr><td>42</td><td>\n<p><span class=\"error\">&#91;SW: V2.9.6 이하 버전 &amp; BDP-659 지원FW&#93;</span></p>\n\n<p>1. 사용자 등록(얼굴 포함)<br/>2. 서버로 사용자 업로드<br/>3. BioStar2 v2.9.7 이상으로 upgrade<br/>(서버 Migration 전 상황)<br/>4. BioStar2 &gt; 사용자 리스트 확인</p></td><td><p><span class=\"error\">&#91;Store Face Image: Enable&#93;</span></p></td><td><p>1.BioStar2 &gt; 사용자 정상 표시 확인<br/>=&gt; 인증 성공/실패</p></td></tr></table>",
-    "customfield_10248": null,
-    "customfield_10006": [],
-    "customfield_10007": [],
-    "customfield_10008": {
-      "issueId": 60333,
-      "statuses": [
-        {
-          "statusResults": [
-            {
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 34759,
-              "latestFinalId": 34759
-            },
-            {
-              "environment": "ES1",
-              "latest": 4,
-              "latestFinal": 4,
-              "latestId": 29880,
-              "latestFinalId": 29880
-            },
-            {
-              "environment": "BioStarV2.9.6.30",
-              "latest": 4,
-              "latestFinal": 4,
-              "latestId": 29880,
-              "latestFinalId": 29880
-            }
-          ]
-        }
-      ]
-    },
-    "customfield_12309": null,
-    "customfield_10802": null,
-    "customfield_10803": null,
-    "customfield_10805": null,
-    "summary": "[BDP-659] [Feasibiilty and limitation] BioStar 2와 장치에서 비주얼 페이스 템플릿만 저장하는 옵션 지원",
-    "customfield_10240": null,
-    "customfield_10000": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
-      "value": "Manual",
-      "id": "10000"
-    },
-    "customfield_10243": null,
-    "customfield_10001": null,
-    "customfield_10244": null,
-    "customfield_10002": null,
-    "customfield_10003": null,
-    "customfield_10246": null,
-    "customfield_10004": {
-      "steps": [
-        {
-          "id": 17535,
-          "index": 1,
-          "step": "1. (BioStar2 이용) 미지원 버전에서 지원 버전으로 FW Upgrade\n2. Store Visual Face Image Default 값 확인",
-          "data": "대상장치\n> BS3\n> F2",
-          "result": "1. 기본값은 Store Visual Face Image: Enable 이다.\n\n※즉, Warped Image 를 저장하는게 기본값이다.",
-          "attachments": []
-        },
-        {
-          "id": 17606,
-          "index": 2,
-          "step": "1. (USB 이용) 미지원 버전에서 지원 버전으로 FW Upgrade\n2. Store Visual Face Image Default 값 확인",
-          "data": "대상장치\n> BS3\n> F2",
-          "result": "1. 기본값은 Store Visual Face Image: Enable 이다.\n\n※즉, Warped Image 를 저장하는게 기본값이다.",
-          "attachments": []
-        },
-        {
-          "id": 17536,
-          "index": 3,
-          "step": "[Store Visual Face Image: Enable 상태]\n1. 장치> 인증> 얼굴\n2. Store Visual Face Image : Disable 로 설정변경\n3. 출력되는 문구 확인",
-          "data": "\n",
-          "result": "1. 하기의 내용을 노티한다.\n저장된 비주얼 페이스의 이미지가 모두 삭제됩니다.\n앞으로 등록되는 비주얼 페이스도 이미지를 제외한 템플릿만을 저장합니다.\n\n이 설정을 비활성화한 후에는 BioStar 2 v2.9.7 이상에 연결하여 사용하세요.",
-          "attachments": []
-        },
-        {
-          "id": 17537,
-          "index": 4,
-          "step": "[Store Visual Face Image: Enable 상태]\n1. 장치> 인증> 얼굴\n2. Store Visual Face Image: Disable 설정 후 저장\n3. Warped Image 삭제유무 확인 및 인증시도",
-          "data": "",
-          "result": "1. 저장되어 있는 모든 사용자들의 Warped Image가 삭제되며 이는 Diag log로 확인가능\n: FaceTable::clearAllImageOfVisualFace - thread to clear image started.\n: FaceTable::clearAllImageOfVisualFace - thread to clear image completed\n> 인증 동작은 가능",
-          "attachments": []
-        },
-        {
-          "id": 17541,
-          "index": 5,
-          "step": "[장치의 Store Visual Face Image: Diable 상태]\n1. 서버> 사용자 추가> 얼굴> 등록시도",
-          "data": "서버\n> Store Visual Face Image: Not Use",
-          "result": "1. Scan시에는 옵션과 상관없이 무조건 Warped Image 를 BioStar 2 에 전송한다.(기존과 동일)\n-> 스캔하는 과정에는 이미지 표시되나 등록 후 재진입 시 이미지 없음으로 표시\n※ 이미지가 전송되어야 BS3에서 스캔하면 F2용 템플릿도 만들고 할 수 있음",
-          "attachments": []
-        },
-        {
-          "id": 17857,
-          "index": 6,
-          "step": "[장치의 Store Visual Face Image: Enable 상태]\n1. 서버> 사용자 추가> 얼굴> 등록시도",
-          "data": "서버\n> Store Visual Face Image: Not Use",
-          "result": "1. Scan시에는 옵션과 상관없이 무조건 Warped Image 를 BioStar 2 에 전송한다.(기존과 동일)\n-> 스캔하는 과정에는 이미지 표시되나 등록 후 재진입 시 이미지 없음으로 표시\n※ 이미지가 전송되어야 BS3에서 스캔하면 F2용 템플릿도 만들고 할 수 있음",
-          "attachments": []
-        },
-        {
-          "id": 17858,
-          "index": 7,
-          "step": "[장치의 Store Visual Face Image: Diable 상태]\n1. 서버> 사용자 추가> 얼굴> 등록시도",
-          "data": "서버\n> Store Visual Face Image: Use",
-          "result": "1. Scan시에는 옵션과 상관없이 무조건 Warped Image 를 BioStar 2 에 전송한다.(기존과 동일)\n※ 이미지가 전송되어야 BS3에서 스캔하면 F2용 템플릿도 만들고 할 수 있음",
-          "attachments": []
-        },
-        {
-          "id": 17859,
-          "index": 8,
-          "step": "[장치의 Store Visual Face Image: Enable 상태]\n1. 서버> 사용자 추가> 얼굴> 등록시도",
-          "data": "서버\n> Store Visual Face Image: Use",
-          "result": "1. Scan시에는 옵션과 상관없이 무조건 Warped Image 를 BioStar 2 에 전송한다.(기존과 동일)\n※ 이미지가 전송되어야 BS3에서 스캔하면 F2용 템플릿도 만들고 할 수 있음",
-          "attachments": []
-        },
-        {
-          "id": 17566,
-          "index": 9,
-          "step": "[Template만 저장된 사용자 등록된 상태]\n1. 장치에 USB 연결\n2. Menu> Device> USB Memory> Export> User\n3. Export된 User Data 확인",
-          "data": "",
-          "result": "1. Template만 포함해 내보낸다.\n=> Export한 파일을 다른 장치에 Import 해 인증성공 확인",
-          "attachments": []
-        },
-        {
-          "id": 17567,
-          "index": 10,
-          "step": "[Tempate&Image 모두 저장된 사용자 등록된 상태]\n1. 장치에 USB 연결\n2. Menu> Device> USB Memory> Export> User\n3. Export된 User Data 확인",
-          "data": "",
-          "result": "1. Warped Image + Template 을 포함해 내보낸다.\n=> Export한 파일을 다른 장치에 Import 해 인증성공 확인",
-          "attachments": []
-        },
-        {
-          "id": 17595,
-          "index": 11,
-          "step": "[SW: V2.9.6 이하 버전 & BDP-659 지원FW]\n1. 서버에서 F2 장치로 얼굴 등록\n2. BS3,W3 장치로 사용자 전송",
-          "data": "[Store Visual Face Image: Disable]\n> F2, BS3,W3 연결\n\n서버에 등록된 Template 및 연결장치\n> F2 Template 저장",
-          "result": "1. 연결된 장치들에 기존 옵션으로 Template 만 전송한다.\n=> 인증성공으로 동작",
-          "attachments": []
-        },
-        {
-          "id": 17596,
-          "index": 12,
-          "step": "[SW: V2.9.6 이하 버전 & BDP-659 지원FW]\n1. 서버에서 BS3,W3 장치로 얼굴 등록\n2. F2 장치로 사용자 전송",
-          "data": "[Store Visual Face Image: Disable]\n\n\n> F2, BS3,W3 연결\n\n서버에 등록된 Template 및 연결장치\n> BS3,W3 Template 저장 ",
-          "result": "1. 연결된 장치들에 기존 옵션으로 Template 만 전송한다.\n=> 인증성공으로 동작",
-          "attachments": []
-        },
-        {
-          "id": 17597,
-          "index": 13,
-          "step": "[SW: V2.9.6 이하 버전 & BDP-659 지원FW]\n1. 서버에서 F2 장치로 얼굴 등록\n2. BS3,W3 장치로 사용자 전송",
-          "data": "[Store Visual Face Image: Enable]\n\n> F2, BS3,W3 연결\n\n서버에 등록된 Template 및 연결장치\n> F2 Template 저장",
-          "result": "1. 기존 방식으로 Warped Image + Template 를 전송한다\n=> 인증성공으로 동작",
-          "attachments": []
-        },
-        {
-          "id": 17598,
-          "index": 14,
-          "step": "[SW: V2.9.6 이하 버전 & BDP-659 지원FW]\n1. 서버에서 BS3,W3 장치로 얼굴 등록\n2. F2 장치로 사용자 전송",
-          "data": "[Store Visual Face Image: Enable]\n> F2, BS3,W3 연결\n\n서버에 등록된 Template 및 연결장치\n> BS3,W3 Template 저장",
-          "result": "1. 기존 방식으로 Warped Image + Template 를 전송한다\n=> 인증성공으로 동작",
-          "attachments": []
-        },
-        {
-          "id": 17600,
-          "index": 15,
-          "step": "[V2.9.7 이상 & 서버에서 사용자 등록한 상태]\n1. BDP-659를 지원하는 장치로 사용자 전송",
-          "data": "> F2, BS3,W3 연결",
-          "result": "1. 연결된 장치들에 기존 옵션으로 Template 만 전송한다.\n=> 인증성공으로 동작",
-          "attachments": []
-        },
-        {
-          "id": 17599,
-          "index": 16,
-          "step": "[V2.9.7 이상 & 서버에서 사용자 등록한 상태]\n1. BDP-659를 미지원하는 장치로 사용자 전송",
-          "data": "> F2, BS3,W3 연결\n\n",
-          "result": "1. 연결된 장치들에 기존 옵션으로 Template 만 전송한다.\n=> 인증성공으로 동작",
-          "attachments": []
-        },
-        {
-          "id": 18043,
-          "index": 17,
-          "step": "[V2.9.7 이상 & F2 장치에서 등록 후 서버로 업로드한 상태]\n1. 사용자> 비주얼페이스 마이그레이션\n2. BDP-659를 미지원하는 장치로 사용자 전송",
-          "data": "[장치 - Store Visual Face Image: Enable]\n\n> F2, BS3,W3 연결",
-          "result": "1. 비주얼페이스 마이그레이션 성공 팝업 출력\n2. 연결된 장치들에 기존 옵션으로 Template 만 전송한다.\n=> 인증성공으로 동작",
-          "attachments": []
-        },
-        {
-          "id": 18064,
-          "index": 18,
-          "step": "[V2.9.7 이상 & F2 장치에서 등록 후 서버로 업로드한 상태]\n\n1. 사용자> 비주얼페이스 마이그레이션\n2. BDP-659를 미지원하는 장치로 사용자 전송",
-          "data": "[장치 - Store Visual Face Image: Disable]\n\n> F2, BS3,W3 연결",
-          "result": "1. 비주얼페이스 마이그레이션 실패 팝업 출력\n(Warped Image 가 없는 경우)\n2. F2 - Template 만 전송한다.\n=> 인증성공으로 동작\nW3,BS3 - 전송 실패 확인\n=> 인증실패로 동작",
-          "attachments": []
-        },
-        {
-          "id": 18044,
-          "index": 19,
-          "step": "[V2.9.7 이상 & BS3 장치에서 등록 후 서버로 업로드한 상태]\n1. 사용자> 비주얼페이스 마이그레이션\n2. BDP-659를 미지원하는 장치로 사용자 전송",
-          "data": "[장치 - Store Visual Face Image: Enable]\n\n> F2, BS3,W3 연결",
-          "result": "1. 비주얼페이스 마이그레이션 성공 팝업 출력\n2. 연결된 장치들에 기존 옵션으로 Template 만 전송한다.\n=> 인증성공으로 동작",
-          "attachments": []
-        },
-        {
-          "id": 18065,
-          "index": 20,
-          "step": "[V2.9.7 이상 & BS3 장치에서 등록 후 서버로 업로드한 상태]\n\n1. 사용자> 비주얼페이스 마이그레이션\n2. BDP-659를 미지원하는 장치로 사용자 전송",
-          "data": "[장치 - Store Visual Face Image: Disable]\n\n> F2, BS3,W3 연결",
-          "result": "1. 비주얼페이스 마이그레이션 실패 팝업 출력\n(Warped Image 가 없는 경우)\n2. W3,BS3 - Template 만 전송한다.\n=> 인증성공으로 동작\nF2 - 전송 실패 확인\n=> 인증실패로 동작",
-          "attachments": []
-        },
-        {
-          "id": 17607,
-          "index": 21,
-          "step": "1. 장치의 RS485 모드: Slave\n2. 메뉴> Store Fame Image 옵션 유무 확인",
-          "data": "",
-          "result": "1. 미표시된다.\n=> Slave 모드일 때는 미지원.",
-          "attachments": []
-        },
-        {
-          "id": 17609,
-          "index": 22,
-          "step": "* BioStar 2 Settings > Server > Expert Settings\n\n[서버: Store Visual Face Image - Not Use]\n1. 바이오스타> 사용자> 사용자 선택\n2. 우측상단 … 버튼클릭> Data File Export\n3. F2> Apply> USB에 해당 파일 저장\n4. USB를 장치에 삽입\n5. Menu> Device> USB> Import> User\n6. 동작확인",
-          "data": "[Store Visual Face Image: Disable 상태]\n> F2\n> BS3\n",
-          "result": "1. F2는 Import 성공으로 동작 후 장치 Reboot된다.\n2. BS3 및 W3는 Import 실패로 동작한다.",
-          "attachments": []
-        },
-        {
-          "id": 17611,
-          "index": 23,
-          "step": "[서버: Store Visual Face Image - Not Use]\n1. 바이오스타> 사용자> 사용자 선택\n2. 우측상단 … 버튼클릭> Data File Export\n3. BS3> Apply> USB에 해당 파일 저장\n4. USB를 장치에 삽입\n5. Menu> Device> USB> Import> User\n6. 동작확인",
-          "data": "[Store Visual Face Image: Disable 상태]\n\n> F2\n> BS3\n",
-          "result": "1. BS3 & W3는 Import 성공으로 동작  후 장치 Reboot된다.(W3 확인필요)\n2. F2는 Import 실패로 동작한다.",
-          "attachments": []
-        },
-        {
-          "id": 17613,
-          "index": 24,
-          "step": "[서버: Store Face Image - Use]\n1. 바이오스타> 사용자> 사용자 선택\n2. 우측상단 … 버튼클릭> Data File Export\n3. F2> Apply> USB에 해당 파일 저장\n4. USB를 장치에 삽입\n5. Menu> Device> USB> Import> User\n6. 동작확인",
-          "data": "[Store Visual Face Image: Disable 상태]\n\n> F2\n> BS3\n",
-          "result": "1. F2 장치에서 Import 성공 후 장치 Reboot되고, 인증성공으로 동작한다.\n2. BS3 & W3에서는 Import 실패된다.",
-          "attachments": []
-        },
-        {
-          "id": 17869,
-          "index": 25,
-          "step": "[서버: Store Visual Face Image - Use]\n1. 바이오스타> 사용자> 사용자 선택\n2. 우측상단 … 버튼클릭> Data File Export\n3. BS3> Apply> USB에 해당 파일 저장\n4. USB를 장치에 삽입\n5. Menu> Device> USB> Import> User\n6. 동작확인",
-          "data": "[Store Visual Face Image: Disable 상태]\n\n> F2\n> BS3",
-          "result": "1. BS3 & W3 장치에서 Import 성공 후 장치 Reboot되고, 인증성공으로 동작한다.\n2. F2 에서는 Import 실패된다.",
-          "attachments": []
-        },
-        {
-          "id": 17616,
-          "index": 26,
-          "step": "[Store Visual Face Image: Disable 상태]\n1. F2에 USB 삽입\n2. Menu> Device> USB> Export> User\n3. F2 에 Import",
-          "data": "[Store Visual Face Image: Disable 상태]\n> F2",
-          "result": "1. Import 성공 후 장치 Reboot된다.\n\n※ template 버전이 동일시 성공, 상이할 경우 실패(하위호환을 보장하지 않음)",
-          "attachments": []
-        },
-        {
-          "id": 17860,
-          "index": 27,
-          "step": "[Store Visual Face Image: Disable 상태]\n1. F2에 USB 삽입\n2. Menu> Device> USB> Export> User\n3. BS3 에 Import",
-          "data": "[Store Visual Face Image: Disable 상태]\n> BS3",
-          "result": "1. Import 실패한다.",
-          "attachments": []
-        },
-        {
-          "id": 17862,
-          "index": 28,
-          "step": "[Store Visual Face Image: Disable 상태]\n1. BS3 에 USB 삽입\n2. Menu> Device> USB> Export> User\n3. BS3 에 Import",
-          "data": "[Store Visual Face Image: Disable 상태]\n> BS3",
-          "result": "1. Import 성공 후 장치 Reboot된다.",
-          "attachments": []
-        },
-        {
-          "id": 17863,
-          "index": 29,
-          "step": "[Store Visual Face Image: Disable 상태]\n1. BS3 에 USB 삽입\n2. Menu> Device> USB> Export> User\n3. F2 에 Import",
-          "data": "[Store Visual Face Image: Disable 상태]\n> F2",
-          "result": "1. Import 실패한다.",
-          "attachments": []
-        },
-        {
-          "id": 17871,
-          "index": 30,
-          "step": "[Store Visual Face Image: Enable 상태]\n1. F2에 USB 삽입\n2. Menu> Device> USB> Export> User\n3. F2(2.x, BDP-659 미지원) 에 Import",
-          "data": "",
-          "result": "1. Import 성공 후 장치 Reboot된다.",
-          "attachments": []
-        },
-        {
-          "id": 17872,
-          "index": 31,
-          "step": "[Store Visual Face Image: Enable 상태]\n1. F2에 USB 삽입\n2. Menu> Device> USB> Export> User\n3. F2(2.x, BDP-659 미지원) 에 Import",
-          "data": "",
-          "result": "1. Import 성공한다.",
-          "attachments": []
-        },
-        {
-          "id": 17874,
-          "index": 32,
-          "step": "[Store Visual Face Image: Enable 상태]\n1. BS3에 USB 삽입\n2. Menu> Device> USB> Export> User\n3. BS3(BDP-659 미지원) 에 Import",
-          "data": "",
-          "result": "1. Import 성공 후 장치 Reboot된다.",
-          "attachments": []
-        },
-        {
-          "id": 17875,
-          "index": 33,
-          "step": "[Store Visual Face Image: Disable 상태]\n1. BS3에 USB 삽입\n2. Menu> Device> USB> Export> User\n3. BS3(BDP-659 미지원) 에 Import",
-          "data": "",
-          "result": "1. Import 성공 후 장치 Reboot된다.",
-          "attachments": []
-        },
-        {
-          "id": 18041,
-          "index": 34,
-          "step": "1. Device 의 Store Visual Face Image: Disable 설정\n2. Device 에서 사용자A 및 Visual Face 추가\n3. Device 의 Store Visual Face Image: Enable 설정\n4. Device 에서 사용자B 및 Visual Face 추가",
-          "data": "",
-          "result": "1. 사용자A = 이미지 없이 템플릿만 있음\n2. 사용자B = 이미지 있고 템플릿도 있음",
-          "attachments": []
-        },
-        {
-          "id": 18042,
-          "index": 35,
-          "step": "1) Device 에서 Store Visual Face Image: Disable 설정\n2) Server 에서 Visual Face 1st/2nd  등록 및 Device 에 동기화\n3) Device 에서 Store Visual Face Image: Enable 설정\n4) Device 에서 User 의 Visual Face 1st 를 변경\n5) Device 에서 Data File Export 진행\n6) Data File 을 Server 에 Import  후 확인",
-          "data": "",
-          "result": "1. Visual Face 1st - Warped Image: 있음\n2. Visual Face 1st - Template: 있음\n3. Visual Face 2nd - Warped Image: 없음\n4. Visual Face 2nd - Template: 있음",
-          "attachments": []
-        },
-        {
-          "id": 18193,
-          "index": 36,
-          "step": "1. BioStar 에서 비쥬얼 페이스 발급 없이 신규 사용자 등록 > 장치 동기화\n2. BioStar 서버 stop\n3. Device 의 Store Visual Face Image: Disable 설정\n4. Device 에서 사용자A Visual Face 추가\n5. Device 의 Store Visual Face Image: Enable 설정\n6. Device 에서 사용자A Visual Face 추가\n7. BioStar 서버 재시작\n8. 장치에 있는 사용자 서버 동기화 \n9.  BioStar 에서 사용자A 진입하여 Visual Face 1st/2nd 의 이미지 상태를 확인",
-          "data": "사용자 동기화 : 모든장치(장치 사용자 변경 포함)",
-          "result": "\n\n\n\n\n\n1. Visual Face 1st - Warped Image: 없음\n2. Visual Face 1st - Template: 있음\n3. Visual Face 2nd - Warped Image: 있음\n4. Visual Face 2nd - Template: 있음\n",
-          "attachments": []
-        },
-        {
-          "id": 18054,
-          "index": 37,
-          "step": "[Migration 전 & BDP-659 미지원 FW]\n1. 이미지만 있는 사용자\n(v2.9.6  이하 버전에서 v2.9.7로 업그레이드 \n-> 이미지만 남기고 템플릿 모두 삭제)\n2. 장치에 동기화 \n",
-          "data": "연결장치\n > BS3 & F2 & W3\n\n동기화\n - 장치 동기화\n - 사용자 자동 동기화\n - 사용자 장치로 전송\n\n * '사용자 자동 동기화 : 사용 안 함' 으로 설정 시 '장치 동기화' 와 '데이터 삭제 후 장치 동기화'는 사용자 전송이 되지 않는 것이 사양",
-          "result": "1. 이미지만 장치에 전송\n=> 인증성공으로 동작\n2. Warped Image 가 없는 경우, 동기화 실패 처리\n(BioStar2 로그 출력 확인 -> 사용자 동기화 실패(호환 비주얼 페이스 템플릿 없음))\n=> 인증실패로 동작\n\n\n* 'Migration 전' 상황에는 '2.9.6 이하 버전에서 서버가 가지고 있던 비주얼 페이스 템플릿은 2.9.7 로 업그레이드 시 비주얼 페이스 이미지만 남기고 모두 삭제",
-          "attachments": []
-        },
-        {
-          "id": 18056,
-          "index": 38,
-          "step": "[Migration 전 & BDP-659 지원 FW]\n1. 이미지만 있는 사용자\n(v2.9.6  이하 버전에서 v2.9.7로 업그레이드 \n-> 이미지만 남기고 템플릿 모두 삭제)\n2. 장치에 동기화 \n",
-          "data": "연결장치\n> BS3 & F2 & W3\n\n동기화\n\n- 장치 동기화\n- 사용자 자동 동기화\n- 사용자 장치로 전송",
-          "result": "1. 이미지만 장치에 전송\n=> 인증성공으로 동작\n2. Warped Image 가 없는 경우, 동기화 실패 처리\n(BioStar2 로그 출력 확인 -> 사용자 동기화 실패(호환 비주얼 페이스 템플릿 없음))\n=> 인증실패로 동작",
-          "attachments": []
-        },
-        {
-          "id": 18059,
-          "index": 39,
-          "step": "[Migration 후 & BDP-659 미지원 FW]\n\n1. 이미지 & template 있는 사용자\n2. 장치에 동기화",
-          "data": "연결장치\n> BS3 & F2 & W3\n\n동기화\n\n- 장치 동기화\n- 사용자 자동 동기화\n- 사용자 장치로 전송",
-          "result": "1. 장치와 호환되는 Template 있는 경우\n - Template (이미지 값은 0 채움) 정보만 전송\n=> 인증성공으로 동작\n\n2. 장치와 호환되는 Template 없는 경우\n - Template 을 전송\n (서버가 보유중인 이미지를 가지고 서버가 템플릿을 추출하여 장치에 템플릿만 전송/이미지 값은 0 채움)\n=> 인증성공으로 동작\n - Warped Image 가 없는 경우, 동기화 실패 처리 / 등록 실패 (BioStar2 로그 출력 확인)\n=> 인증실패로 동작",
-          "attachments": []
-        },
-        {
-          "id": 18061,
-          "index": 40,
-          "step": "[Migration 후 & BDP-659 지원 FW]\n\n1. 이미지 & template 있는 사용자\n2. 장치에 동기화",
-          "data": "연결장치\n> BS3 & F2 & W3\n\n동기화\n\n- 장치 동기화\n- 사용자 자동 동기화\n- 사용자 장치로 전송",
-          "result": "1. 장치와 호환되는 Template 있는 경우\n- Template 정보만 전송\n=> 인증성공으로 동작\n\n2. 장치와 호환되는 Template 없는 경우\n- Template 을 전송\n(서버가 보유중인 이미지를 가지고 서버가 템플릿을 추출하여 장치에 템플릿만 전송)\n=> 인증성공으로 동작\n- Warped Image 가 없는 경우, 동기화 실패 처리 / 등록 실패 (BioStar2 로그 출력 확인)\n=> 인증실패로 동작",
-          "attachments": []
-        },
-        {
-          "id": 18062,
-          "index": 41,
-          "step": "[SW: V2.9.6 이하 버전 & BDP-659 지원FW]\n1. 장치에서 사용자 등록(얼굴 포함)\n2. 서버로 사용자 업로드\n3. BioStar2 v2.9.7 이상으로 upgrade \n(서버 Migration 전 상황)\n4. BioStar2 > 사용자 리스트 확인\n5. 장치에서 서버로 사용자 재 업로드",
-          "data": "[Store Face Image: Disable]\n\n서버 > 사용자 자동 동기화 : off",
-          "result": "1. BioStar 마이그레이션 시 카운트에 포함되고 에러가 발생\n(BioStar2 > 사용자 - 발급 기록만 있는 사용자로 표시)\n=> 인증 실패로 동작\n2.  사용자 수정 시 에러 팝업 출력\n (재등록 안내 팝업 출력 - '1st visual face is invalid. Please delete and register again.')\n3. 장치 사용자 재 업로드 시 정상적으로 템플릿만 있는 사용자 표시 확인\n=> 인증 성공으로 동작",
-          "attachments": []
-        },
-        {
-          "id": 18063,
-          "index": 42,
-          "step": "\t\n[SW: V2.9.6 이하 버전 & BDP-659 지원FW]\n\n1. 사용자 등록(얼굴 포함)\n2. 서버로 사용자 업로드\n3. BioStar2 v2.9.7 이상으로 upgrade\n(서버 Migration 전 상황)\n4. BioStar2 > 사용자 리스트 확인",
-          "data": "[Store Face Image: Enable]\n",
-          "result": "1.BioStar2 > 사용자 정상 표시 확인\n=> 인증 성공/실패",
-          "attachments": []
-        }
-      ]
-    },
-    "customfield_10236": null,
-    "customfield_10237": null,
-    "environment": null,
-    "customfield_10238": null,
-    "customfield_10239": null,
-    "duedate": null,
-    "comment": {
-      "comments": [
-        {
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/60333/comment/289709",
-          "id": "289709",
-          "author": {
-            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=jcahn",
-            "name": "jcahn",
-            "key": "jcahn",
-            "emailAddress": "jcahn@suprema.co.kr",
-            "avatarUrls": {
-              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10112",
-              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10112",
-              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10112",
-              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10112"
-            },
-            "displayName": "안종철",
-            "active": true,
-            "timeZone": "Asia/Seoul"
-          },
-          "body": "본문의 'Store Face/Fame Image'옵션의 'Use'와 'Not Use'를  각각 '얼굴 이미지 저장'과 '얼굴 이미지 저장안함'으로 생각하고 아래 내용을 작성하였습니다. \r\n\r\n아래 문의 내용에 대해서 확인 요청 드려요. \r\n* 1,2번 - 기본값은 '얼굴이미지 저장' 이어야 함. \r\n* 5번 - Not Use 상태에서 warped image를 전소 ㅇ함. \r\n* 17번\r\n** F2(2x, BDP-659 지원)에 '얼굴이미지 저장'하고, F2(2.x, BDP-659 미지원)로 import 하면 : import 성공\r\n** F2(2x, BDP-659 지원)에 '얼굴이미지 저장안함'하고, F2(2.x, BDP-659 미지원)로 import 하면 : import 성공\r\n** F2(2x, BDP-659 지원)에 '얼굴이미지 저장안함'하고, F2(1.x)로 import 하면 : import는 성공하지만, 사용자에 템플릿이 없는 것으로 보이고,  인증은 안됨. \r\n** BS3(1.x, BDP-659)지원에 '얼굴이미지 저장'하고, BS3(1.x,BDP-659 미지원)로 import하면 : import 성공\r\n** BS3(1.x, BDP-659)지원에 '얼굴이미지 저장안함'하고, BS3(1.x,BDP-659 미지원)로 import하면 : import 성공\r\n** BS3는 현재 1.x 이므로 하위버전 테스트가 필요 없음. \r\n* 18번 - F2(2.x 기준)에서 F2(최신버전)으로, BS3(1.x 기준)에서 BS3(최신버전)으로 export/import하는 것이죠? \r\n* 24번 -  F2에서 F2 , BS3 에서 BS3로 export/import하는 것이죠? 옵션에 따라 안될 수 있어서요. \r\n\r\n이상입니다. ",
-          "updateAuthor": {
-            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=jcahn",
-            "name": "jcahn",
-            "key": "jcahn",
-            "emailAddress": "jcahn@suprema.co.kr",
-            "avatarUrls": {
-              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10112",
-              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10112",
-              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10112",
-              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10112"
-            },
-            "displayName": "안종철",
-            "active": true,
-            "timeZone": "Asia/Seoul"
-          },
-          "created": "2024-01-15T17:39:40.000+0900",
-          "updated": "2024-01-15T17:39:40.000+0900"
-        },
-        {
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/60333/comment/301385",
-          "id": "301385",
-          "author": {
-            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=jcahn",
-            "name": "jcahn",
-            "key": "jcahn",
-            "emailAddress": "jcahn@suprema.co.kr",
-            "avatarUrls": {
-              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10112",
-              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10112",
-              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10112",
-              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10112"
-            },
-            "displayName": "안종철",
-            "active": true,
-            "timeZone": "Asia/Seoul"
-          },
-          "body": "F2 기능 테스트중 관련 기록입니다. \r\n* 장치 설정 UI\r\n!image-2024-05-02-10-26-58-503.png|thumbnail!\r\n* 관련 DIAG 로그 - 이미지 로그를 저장하지 않음 설정 시\r\n{code}\r\n[2024/05/02 10:29:47 ][TRACE] FaceService::setUnableToSaveImageOfVisualFace - [true]\r\n[2024/05/02 10:29:47 ][TRACE] FaceTable::clearAllImageOfVisualFace - thread to clear image started.\r\n[2024/05/02 10:29:47 ][TRACE] tartget to remove - first[2], second[4]\r\n[2024/05/02 10:29:47 ][TRACE] tartget to remove - first[3], second[133]\r\n[2024/05/02 10:29:47 ][TRACE] tartget to remove - first[7], second[17]\r\n[2024/05/02 10:29:47 ][TRACE] tartget to remove - first[14], second[103]\r\n[2024/05/02 10:29:47 ][TRACE] tartget to remove - first[17], second[719]\r\n[2024/05/02 10:29:47 ][TRACE] tartget to remove - first[21], second[6]\r\n[2024/05/02 10:29:47 ][TRACE] tartget to remove - first[23], second[234]\r\n[2024/05/02 10:29:47 ][TRACE] tartget to remove - first[27], second[392]\r\n[2024/05/02 10:29:47 ][TRACE] tartget to remove - first[29], second[197]\r\n:\r\n[2024/05/02 10:30:10 ][TRACE] tartget to remove - first[5195], second[5129]\r\n[2024/05/02 10:30:10 ][TRACE] tartget to remove - first[5196], second[4845]\r\n[2024/05/02 10:30:10 ][TRACE] tartget to remove - first[5197], second[4927]\r\n[2024/05/02 10:30:10 ][TRACE] tartget to remove - first[5198], second[4833]\r\n[2024/05/02 10:30:10 ][TRACE] tartget to remove - first[5199], second[4634]\r\n[2024/05/02 10:30:10 ][TRACE] tartget to remove - first[5200], second[5140]\r\n[2024/05/02 10:30:10 ][INFO ] FaceTable::clearAllImageOfVisualFace - thread to clear image completed[elapsed: 21.484 (sec)]\r\n\r\n{code}\r\n\r\n",
-          "updateAuthor": {
-            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=jcahn",
-            "name": "jcahn",
-            "key": "jcahn",
-            "emailAddress": "jcahn@suprema.co.kr",
-            "avatarUrls": {
-              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10112",
-              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10112",
-              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10112",
-              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10112"
-            },
-            "displayName": "안종철",
-            "active": true,
-            "timeZone": "Asia/Seoul"
-          },
-          "created": "2024-05-02T10:28:49.000+0900",
-          "updated": "2024-05-02T10:34:04.000+0900"
-        }
-      ],
-      "maxResults": 2,
-      "total": 2,
-      "startAt": 0
-    },
-    "customfield_10230": null,
-    "fixVersions": [],
-    "customfield_10231": null,
-    "customfield_10232": null,
-    "customfield_10233": null,
-    "customfield_12410": null,
-    "customfield_10234": null,
-    "customfield_10235": null,
-    "customfield_10225": null,
-    "customfield_12404": null,
-    "customfield_10226": null,
-    "customfield_12403": null,
-    "customfield_10227": null,
-    "customfield_12406": null,
-    "customfield_10228": null,
-    "customfield_10229": null,
-    "customfield_10900": null,
-    "customfield_12408": null,
-    "customfield_10901": null,
-    "customfield_10902": null,
-    "customfield_10903": null,
-    "customfield_12409": null,
-    "customfield_10904": null,
-    "customfield_10905": null,
-    "customfield_10220": null,
-    "priority": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-      "name": "미할당",
-      "id": "10100"
-    },
-    "customfield_10221": null,
-    "customfield_12400": null,
-    "customfield_12402": null,
-    "customfield_10224": null,
-    "customfield_10214": null,
-    "customfield_10217": null,
-    "customfield_10218": null,
-    "timeestimate": null,
-    "versions": [],
-    "customfield_10219": null,
-    "status": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/status/3",
-      "description": "현재 담당자가 이 이슈를 처리하고 있습니다.",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/inprogress.png",
-      "name": "진행 중",
-      "id": "3",
-      "statusCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/4",
-        "id": 4,
-        "key": "indeterminate",
-        "colorName": "yellow",
-        "name": "진행 중"
-      }
-    },
-    "customfield_12510": null,
-    "customfield_10213": null,
-    "customfield_12511": null,
-    "customfield_10203": null,
-    "customfield_10204": null,
-    "customfield_12502": null,
-    "customfield_10205": null,
-    "customfield_10206": null,
-    "customfield_10207": null,
-    "aggregatetimeestimate": null,
-    "customfield_10208": null,
-    "customfield_10209": null,
-    "customfield_12509": null,
-    "customfield_12508": null,
-    "creator": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
-      "name": "김소영",
-      "key": "김소영",
-      "emailAddress": "sykim@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-      },
-      "displayName": "김소영",
-      "active": true,
-      "timeZone": "Asia/Seoul"
-    },
-    "aggregateprogress": {
-      "progress": 0,
-      "total": 0
-    },
-    "customfield_10320": null,
-    "customfield_10321": null,
-    "customfield_12501": null,
-    "customfield_10202": null,
-    "customfield_12500": null,
-    "customfield_10313": "1|hzxzlz:",
-    "customfield_10316": null,
-    "customfield_10317": null,
-    "timespent": null,
-    "aggregatetimespent": null,
-    "customfield_10310": null,
-    "customfield_10302": null,
-    "customfield_10303": null,
-    "customfield_12601": null,
-    "customfield_10304": null,
-    "customfield_10305": null,
-    "customfield_10308": null,
-    "workratio": -1,
-    "created": "2023-11-23T13:26:48.000+0900",
-    "customfield_10533": null,
-    "customfield_10534": null,
-    "customfield_11501": null,
-    "customfield_11503": null,
-    "customfield_13001": null,
-    "customfield_13000": null,
-    "customfield_10530": null,
-    "customfield_10531": null,
-    "customfield_10532": null,
-    "customfield_10401": null,
-    "customfield_10522": null,
-    "customfield_10402": null,
-    "customfield_12700": null,
-    "customfield_10524": null,
-    "customfield_10525": null,
-    "customfield_12702": null,
-    "attachment": [
-      {
-        "self": "https://jira.suprema.co.kr/rest/api/2/attachment/111897",
-        "id": "111897",
-        "filename": "FaceStation F2 비주얼 페이스 템플릿 동기화.txt",
-        "author": {
-          "self": "https://jira.suprema.co.kr/rest/api/2/user?username=rachel",
-          "name": "rachel",
-          "key": "JIRAUSER11400",
-          "emailAddress": "rachel@suprema.co.kr",
-          "avatarUrls": {
-            "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11020",
-            "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11020",
-            "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11020",
-            "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11020"
-          },
-          "displayName": "이지윤",
-          "active": true,
-          "timeZone": "Asia/Seoul"
-        },
-        "created": "2024-07-02T09:27:35.000+0900",
-        "size": 1899,
-        "mimeType": "text/plain",
-        "content": "https://jira.suprema.co.kr/secure/attachment/111897/FaceStation+F2+%EB%B9%84%EC%A3%BC%EC%96%BC+%ED%8E%98%EC%9D%B4%EC%8A%A4+%ED%85%9C%ED%94%8C%EB%A6%BF+%EB%8F%99%EA%B8%B0%ED%99%94.txt"
-      },
-      {
-        "self": "https://jira.suprema.co.kr/rest/api/2/attachment/108977",
-        "id": "108977",
-        "filename": "image-2024-05-02-10-26-58-503.png",
-        "author": {
-          "self": "https://jira.suprema.co.kr/rest/api/2/user?username=jcahn",
-          "name": "jcahn",
-          "key": "jcahn",
-          "emailAddress": "jcahn@suprema.co.kr",
-          "avatarUrls": {
-            "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10112",
-            "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10112",
-            "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10112",
-            "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10112"
-          },
-          "displayName": "안종철",
-          "active": true,
-          "timeZone": "Asia/Seoul"
-        },
-        "created": "2024-05-02T10:28:26.000+0900",
-        "size": 53626,
-        "mimeType": "image/png",
-        "content": "https://jira.suprema.co.kr/secure/attachment/108977/image-2024-05-02-10-26-58-503.png",
-        "thumbnail": "https://jira.suprema.co.kr/secure/thumbnail/108977/_thumb_108977.png"
-      }
-    ],
-    "customfield_10526": null,
-    "customfield_12704": null,
-    "customfield_10528": null,
-    "customfield_12706": null,
-    "customfield_10520": null,
-    "customfield_10521": null,
-    "customfield_10400": null,
-    "customfield_10511": null,
-    "customfield_10512": null,
-    "customfield_11600": null,
-    "customfield_10513": null,
-    "customfield_10514": null,
-    "customfield_10515": null,
-    "customfield_10516": null,
-    "customfield_10517": null,
-    "customfield_10518": null,
-    "customfield_10519": null
+[
+  {
+    "id": "COMMONR-328_step_1",
+    "document": "Test Step: 1. (BioStar2 이용) 미지원 버전에서 지원 버전으로 FW Upgrade\n2. Store Visual Face Image Default 값 확인\nTest Data: 대상장치\n> BS3\n> F2\nExpected Result: 1. 기본값은 Store Visual Face Image: Enable 이다.\n\n※즉, Warped Image 를 저장하는게 기본값이다.",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "1",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_2",
+    "document": "Test Step: 1. (USB 이용) 미지원 버전에서 지원 버전으로 FW Upgrade\n2. Store Visual Face Image Default 값 확인\nTest Data: 대상장치\n> BS3\n> F2\nExpected Result: 1. 기본값은 Store Visual Face Image: Enable 이다.\n\n※즉, Warped Image 를 저장하는게 기본값이다.",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "2",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_3",
+    "document": "Test Step: [Store Visual Face Image: Enable 상태]\n1. 장치> 인증> 얼굴\n2. Store Visual Face Image : Disable 로 설정변경\n3. 출력되는 문구 확인\nTest Data: \n\nExpected Result: 1. 하기의 내용을 노티한다.\n저장된 비주얼 페이스의 이미지가 모두 삭제됩니다.\n앞으로 등록되는 비주얼 페이스도 이미지를 제외한 템플릿만을 저장합니다.\n\n이 설정을 비활성화한 후에는 BioStar 2 v2.9.7 이상에 연결하여 사용하세요.",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "3",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_4",
+    "document": "Test Step: [Store Visual Face Image: Enable 상태]\n1. 장치> 인증> 얼굴\n2. Store Visual Face Image: Disable 설정 후 저장\n3. Warped Image 삭제유무 확인 및 인증시도\nExpected Result: 1. 저장되어 있는 모든 사용자들의 Warped Image가 삭제되며 이는 Diag log로 확인가능\n: FaceTable::clearAllImageOfVisualFace - thread to clear image started.\n: FaceTable::clearAllImageOfVisualFace - thread to clear image completed\n> 인증 동작은 가능",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "4",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_5",
+    "document": "Test Step: [장치의 Store Visual Face Image: Diable 상태]\n1. 서버> 사용자 추가> 얼굴> 등록시도\nTest Data: 서버\n> Store Visual Face Image: Not Use\nExpected Result: 1. Scan시에는 옵션과 상관없이 무조건 Warped Image 를 BioStar 2 에 전송한다.(기존과 동일)\n-> 스캔하는 과정에는 이미지 표시되나 등록 후 재진입 시 이미지 없음으로 표시\n※ 이미지가 전송되어야 BS3에서 스캔하면 F2용 템플릿도 만들고 할 수 있음",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "5",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_6",
+    "document": "Test Step: [장치의 Store Visual Face Image: Enable 상태]\n1. 서버> 사용자 추가> 얼굴> 등록시도\nTest Data: 서버\n> Store Visual Face Image: Not Use\nExpected Result: 1. Scan시에는 옵션과 상관없이 무조건 Warped Image 를 BioStar 2 에 전송한다.(기존과 동일)\n-> 스캔하는 과정에는 이미지 표시되나 등록 후 재진입 시 이미지 없음으로 표시\n※ 이미지가 전송되어야 BS3에서 스캔하면 F2용 템플릿도 만들고 할 수 있음",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "6",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_7",
+    "document": "Test Step: [장치의 Store Visual Face Image: Diable 상태]\n1. 서버> 사용자 추가> 얼굴> 등록시도\nTest Data: 서버\n> Store Visual Face Image: Use\nExpected Result: 1. Scan시에는 옵션과 상관없이 무조건 Warped Image 를 BioStar 2 에 전송한다.(기존과 동일)\n※ 이미지가 전송되어야 BS3에서 스캔하면 F2용 템플릿도 만들고 할 수 있음",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "7",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_8",
+    "document": "Test Step: [장치의 Store Visual Face Image: Enable 상태]\n1. 서버> 사용자 추가> 얼굴> 등록시도\nTest Data: 서버\n> Store Visual Face Image: Use\nExpected Result: 1. Scan시에는 옵션과 상관없이 무조건 Warped Image 를 BioStar 2 에 전송한다.(기존과 동일)\n※ 이미지가 전송되어야 BS3에서 스캔하면 F2용 템플릿도 만들고 할 수 있음",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "8",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_9",
+    "document": "Test Step: [Template만 저장된 사용자 등록된 상태]\n1. 장치에 USB 연결\n2. Menu> Device> USB Memory> Export> User\n3. Export된 User Data 확인\nExpected Result: 1. Template만 포함해 내보낸다.\n=> Export한 파일을 다른 장치에 Import 해 인증성공 확인",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "9",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_10",
+    "document": "Test Step: [Tempate&Image 모두 저장된 사용자 등록된 상태]\n1. 장치에 USB 연결\n2. Menu> Device> USB Memory> Export> User\n3. Export된 User Data 확인\nExpected Result: 1. Warped Image + Template 을 포함해 내보낸다.\n=> Export한 파일을 다른 장치에 Import 해 인증성공 확인",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "10",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_11",
+    "document": "Test Step: [SW: V2.9.6 이하 버전 & BDP-659 지원FW]\n1. 서버에서 F2 장치로 얼굴 등록\n2. BS3,W3 장치로 사용자 전송\nTest Data: [Store Visual Face Image: Disable]\n> F2, BS3,W3 연결\n\n서버에 등록된 Template 및 연결장치\n> F2 Template 저장\nExpected Result: 1. 연결된 장치들에 기존 옵션으로 Template 만 전송한다.\n=> 인증성공으로 동작",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "11",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_12",
+    "document": "Test Step: [SW: V2.9.6 이하 버전 & BDP-659 지원FW]\n1. 서버에서 BS3,W3 장치로 얼굴 등록\n2. F2 장치로 사용자 전송\nTest Data: [Store Visual Face Image: Disable]\n\n\n> F2, BS3,W3 연결\n\n서버에 등록된 Template 및 연결장치\n> BS3,W3 Template 저장 \nExpected Result: 1. 연결된 장치들에 기존 옵션으로 Template 만 전송한다.\n=> 인증성공으로 동작",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "12",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_13",
+    "document": "Test Step: [SW: V2.9.6 이하 버전 & BDP-659 지원FW]\n1. 서버에서 F2 장치로 얼굴 등록\n2. BS3,W3 장치로 사용자 전송\nTest Data: [Store Visual Face Image: Enable]\n\n> F2, BS3,W3 연결\n\n서버에 등록된 Template 및 연결장치\n> F2 Template 저장\nExpected Result: 1. 기존 방식으로 Warped Image + Template 를 전송한다\n=> 인증성공으로 동작",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "13",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_14",
+    "document": "Test Step: [SW: V2.9.6 이하 버전 & BDP-659 지원FW]\n1. 서버에서 BS3,W3 장치로 얼굴 등록\n2. F2 장치로 사용자 전송\nTest Data: [Store Visual Face Image: Enable]\n> F2, BS3,W3 연결\n\n서버에 등록된 Template 및 연결장치\n> BS3,W3 Template 저장\nExpected Result: 1. 기존 방식으로 Warped Image + Template 를 전송한다\n=> 인증성공으로 동작",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "14",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_15",
+    "document": "Test Step: [V2.9.7 이상 & 서버에서 사용자 등록한 상태]\n1. BDP-659를 지원하는 장치로 사용자 전송\nTest Data: > F2, BS3,W3 연결\nExpected Result: 1. 연결된 장치들에 기존 옵션으로 Template 만 전송한다.\n=> 인증성공으로 동작",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "15",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_16",
+    "document": "Test Step: [V2.9.7 이상 & 서버에서 사용자 등록한 상태]\n1. BDP-659를 미지원하는 장치로 사용자 전송\nTest Data: > F2, BS3,W3 연결\n\n\nExpected Result: 1. 연결된 장치들에 기존 옵션으로 Template 만 전송한다.\n=> 인증성공으로 동작",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "16",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_17",
+    "document": "Test Step: [V2.9.7 이상 & F2 장치에서 등록 후 서버로 업로드한 상태]\n1. 사용자> 비주얼페이스 마이그레이션\n2. BDP-659를 미지원하는 장치로 사용자 전송\nTest Data: [장치 - Store Visual Face Image: Enable]\n\n> F2, BS3,W3 연결\nExpected Result: 1. 비주얼페이스 마이그레이션 성공 팝업 출력\n2. 연결된 장치들에 기존 옵션으로 Template 만 전송한다.\n=> 인증성공으로 동작",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "17",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_18",
+    "document": "Test Step: [V2.9.7 이상 & F2 장치에서 등록 후 서버로 업로드한 상태]\n\n1. 사용자> 비주얼페이스 마이그레이션\n2. BDP-659를 미지원하는 장치로 사용자 전송\nTest Data: [장치 - Store Visual Face Image: Disable]\n\n> F2, BS3,W3 연결\nExpected Result: 1. 비주얼페이스 마이그레이션 실패 팝업 출력\n(Warped Image 가 없는 경우)\n2. F2 - Template 만 전송한다.\n=> 인증성공으로 동작\nW3,BS3 - 전송 실패 확인\n=> 인증실패로 동작",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "18",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_19",
+    "document": "Test Step: [V2.9.7 이상 & BS3 장치에서 등록 후 서버로 업로드한 상태]\n1. 사용자> 비주얼페이스 마이그레이션\n2. BDP-659를 미지원하는 장치로 사용자 전송\nTest Data: [장치 - Store Visual Face Image: Enable]\n\n> F2, BS3,W3 연결\nExpected Result: 1. 비주얼페이스 마이그레이션 성공 팝업 출력\n2. 연결된 장치들에 기존 옵션으로 Template 만 전송한다.\n=> 인증성공으로 동작",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "19",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_20",
+    "document": "Test Step: [V2.9.7 이상 & BS3 장치에서 등록 후 서버로 업로드한 상태]\n\n1. 사용자> 비주얼페이스 마이그레이션\n2. BDP-659를 미지원하는 장치로 사용자 전송\nTest Data: [장치 - Store Visual Face Image: Disable]\n\n> F2, BS3,W3 연결\nExpected Result: 1. 비주얼페이스 마이그레이션 실패 팝업 출력\n(Warped Image 가 없는 경우)\n2. W3,BS3 - Template 만 전송한다.\n=> 인증성공으로 동작\nF2 - 전송 실패 확인\n=> 인증실패로 동작",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "20",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_21",
+    "document": "Test Step: 1. 장치의 RS485 모드: Slave\n2. 메뉴> Store Fame Image 옵션 유무 확인\nExpected Result: 1. 미표시된다.\n=> Slave 모드일 때는 미지원.",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "21",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_22",
+    "document": "Test Step: * BioStar 2 Settings > Server > Expert Settings\n\n[서버: Store Visual Face Image - Not Use]\n1. 바이오스타> 사용자> 사용자 선택\n2. 우측상단 … 버튼클릭> Data File Export\n3. F2> Apply> USB에 해당 파일 저장\n4. USB를 장치에 삽입\n5. Menu> Device> USB> Import> User\n6. 동작확인\nTest Data: [Store Visual Face Image: Disable 상태]\n> F2\n> BS3\n\nExpected Result: 1. F2는 Import 성공으로 동작 후 장치 Reboot된다.\n2. BS3 및 W3는 Import 실패로 동작한다.",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "22",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_23",
+    "document": "Test Step: [서버: Store Visual Face Image - Not Use]\n1. 바이오스타> 사용자> 사용자 선택\n2. 우측상단 … 버튼클릭> Data File Export\n3. BS3> Apply> USB에 해당 파일 저장\n4. USB를 장치에 삽입\n5. Menu> Device> USB> Import> User\n6. 동작확인\nTest Data: [Store Visual Face Image: Disable 상태]\n\n> F2\n> BS3\n\nExpected Result: 1. BS3 & W3는 Import 성공으로 동작  후 장치 Reboot된다.(W3 확인필요)\n2. F2는 Import 실패로 동작한다.",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "23",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_24",
+    "document": "Test Step: [서버: Store Face Image - Use]\n1. 바이오스타> 사용자> 사용자 선택\n2. 우측상단 … 버튼클릭> Data File Export\n3. F2> Apply> USB에 해당 파일 저장\n4. USB를 장치에 삽입\n5. Menu> Device> USB> Import> User\n6. 동작확인\nTest Data: [Store Visual Face Image: Disable 상태]\n\n> F2\n> BS3\n\nExpected Result: 1. F2 장치에서 Import 성공 후 장치 Reboot되고, 인증성공으로 동작한다.\n2. BS3 & W3에서는 Import 실패된다.",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "24",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_25",
+    "document": "Test Step: [서버: Store Visual Face Image - Use]\n1. 바이오스타> 사용자> 사용자 선택\n2. 우측상단 … 버튼클릭> Data File Export\n3. BS3> Apply> USB에 해당 파일 저장\n4. USB를 장치에 삽입\n5. Menu> Device> USB> Import> User\n6. 동작확인\nTest Data: [Store Visual Face Image: Disable 상태]\n\n> F2\n> BS3\nExpected Result: 1. BS3 & W3 장치에서 Import 성공 후 장치 Reboot되고, 인증성공으로 동작한다.\n2. F2 에서는 Import 실패된다.",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "25",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_26",
+    "document": "Test Step: [Store Visual Face Image: Disable 상태]\n1. F2에 USB 삽입\n2. Menu> Device> USB> Export> User\n3. F2 에 Import\nTest Data: [Store Visual Face Image: Disable 상태]\n> F2\nExpected Result: 1. Import 성공 후 장치 Reboot된다.\n\n※ template 버전이 동일시 성공, 상이할 경우 실패(하위호환을 보장하지 않음)",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "26",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_27",
+    "document": "Test Step: [Store Visual Face Image: Disable 상태]\n1. F2에 USB 삽입\n2. Menu> Device> USB> Export> User\n3. BS3 에 Import\nTest Data: [Store Visual Face Image: Disable 상태]\n> BS3\nExpected Result: 1. Import 실패한다.",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "27",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_28",
+    "document": "Test Step: [Store Visual Face Image: Disable 상태]\n1. BS3 에 USB 삽입\n2. Menu> Device> USB> Export> User\n3. BS3 에 Import\nTest Data: [Store Visual Face Image: Disable 상태]\n> BS3\nExpected Result: 1. Import 성공 후 장치 Reboot된다.",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "28",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_29",
+    "document": "Test Step: [Store Visual Face Image: Disable 상태]\n1. BS3 에 USB 삽입\n2. Menu> Device> USB> Export> User\n3. F2 에 Import\nTest Data: [Store Visual Face Image: Disable 상태]\n> F2\nExpected Result: 1. Import 실패한다.",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "29",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_30",
+    "document": "Test Step: [Store Visual Face Image: Enable 상태]\n1. F2에 USB 삽입\n2. Menu> Device> USB> Export> User\n3. F2(2.x, BDP-659 미지원) 에 Import\nExpected Result: 1. Import 성공 후 장치 Reboot된다.",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "30",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_31",
+    "document": "Test Step: [Store Visual Face Image: Enable 상태]\n1. F2에 USB 삽입\n2. Menu> Device> USB> Export> User\n3. F2(2.x, BDP-659 미지원) 에 Import\nExpected Result: 1. Import 성공한다.",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "31",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_32",
+    "document": "Test Step: [Store Visual Face Image: Enable 상태]\n1. BS3에 USB 삽입\n2. Menu> Device> USB> Export> User\n3. BS3(BDP-659 미지원) 에 Import\nExpected Result: 1. Import 성공 후 장치 Reboot된다.",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "32",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_33",
+    "document": "Test Step: [Store Visual Face Image: Disable 상태]\n1. BS3에 USB 삽입\n2. Menu> Device> USB> Export> User\n3. BS3(BDP-659 미지원) 에 Import\nExpected Result: 1. Import 성공 후 장치 Reboot된다.",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "33",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_34",
+    "document": "Test Step: 1. Device 의 Store Visual Face Image: Disable 설정\n2. Device 에서 사용자A 및 Visual Face 추가\n3. Device 의 Store Visual Face Image: Enable 설정\n4. Device 에서 사용자B 및 Visual Face 추가\nExpected Result: 1. 사용자A = 이미지 없이 템플릿만 있음\n2. 사용자B = 이미지 있고 템플릿도 있음",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "34",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_35",
+    "document": "Test Step: 1) Device 에서 Store Visual Face Image: Disable 설정\n2) Server 에서 Visual Face 1st/2nd  등록 및 Device 에 동기화\n3) Device 에서 Store Visual Face Image: Enable 설정\n4) Device 에서 User 의 Visual Face 1st 를 변경\n5) Device 에서 Data File Export 진행\n6) Data File 을 Server 에 Import  후 확인\nExpected Result: 1. Visual Face 1st - Warped Image: 있음\n2. Visual Face 1st - Template: 있음\n3. Visual Face 2nd - Warped Image: 없음\n4. Visual Face 2nd - Template: 있음",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "35",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_36",
+    "document": "Test Step: 1. BioStar 에서 비쥬얼 페이스 발급 없이 신규 사용자 등록 > 장치 동기화\n2. BioStar 서버 stop\n3. Device 의 Store Visual Face Image: Disable 설정\n4. Device 에서 사용자A Visual Face 추가\n5. Device 의 Store Visual Face Image: Enable 설정\n6. Device 에서 사용자A Visual Face 추가\n7. BioStar 서버 재시작\n8. 장치에 있는 사용자 서버 동기화 \n9.  BioStar 에서 사용자A 진입하여 Visual Face 1st/2nd 의 이미지 상태를 확인\nTest Data: 사용자 동기화 : 모든장치(장치 사용자 변경 포함)\nExpected Result: \n\n\n\n\n\n1. Visual Face 1st - Warped Image: 없음\n2. Visual Face 1st - Template: 있음\n3. Visual Face 2nd - Warped Image: 있음\n4. Visual Face 2nd - Template: 있음\n",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "36",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_37",
+    "document": "Test Step: [Migration 전 & BDP-659 미지원 FW]\n1. 이미지만 있는 사용자\n(v2.9.6  이하 버전에서 v2.9.7로 업그레이드 \n-> 이미지만 남기고 템플릿 모두 삭제)\n2. 장치에 동기화 \n\nTest Data: 연결장치\n > BS3 & F2 & W3\n\n동기화\n - 장치 동기화\n - 사용자 자동 동기화\n - 사용자 장치로 전송\n\n * '사용자 자동 동기화 : 사용 안 함' 으로 설정 시 '장치 동기화' 와 '데이터 삭제 후 장치 동기화'는 사용자 전송이 되지 않는 것이 사양\nExpected Result: 1. 이미지만 장치에 전송\n=> 인증성공으로 동작\n2. Warped Image 가 없는 경우, 동기화 실패 처리\n(BioStar2 로그 출력 확인 -> 사용자 동기화 실패(호환 비주얼 페이스 템플릿 없음))\n=> 인증실패로 동작\n\n\n* 'Migration 전' 상황에는 '2.9.6 이하 버전에서 서버가 가지고 있던 비주얼 페이스 템플릿은 2.9.7 로 업그레이드 시 비주얼 페이스 이미지만 남기고 모두 삭제",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "37",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_38",
+    "document": "Test Step: [Migration 전 & BDP-659 지원 FW]\n1. 이미지만 있는 사용자\n(v2.9.6  이하 버전에서 v2.9.7로 업그레이드 \n-> 이미지만 남기고 템플릿 모두 삭제)\n2. 장치에 동기화 \n\nTest Data: 연결장치\n> BS3 & F2 & W3\n\n동기화\n\n- 장치 동기화\n- 사용자 자동 동기화\n- 사용자 장치로 전송\nExpected Result: 1. 이미지만 장치에 전송\n=> 인증성공으로 동작\n2. Warped Image 가 없는 경우, 동기화 실패 처리\n(BioStar2 로그 출력 확인 -> 사용자 동기화 실패(호환 비주얼 페이스 템플릿 없음))\n=> 인증실패로 동작",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "38",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_39",
+    "document": "Test Step: [Migration 후 & BDP-659 미지원 FW]\n\n1. 이미지 & template 있는 사용자\n2. 장치에 동기화\nTest Data: 연결장치\n> BS3 & F2 & W3\n\n동기화\n\n- 장치 동기화\n- 사용자 자동 동기화\n- 사용자 장치로 전송\nExpected Result: 1. 장치와 호환되는 Template 있는 경우\n - Template (이미지 값은 0 채움) 정보만 전송\n=> 인증성공으로 동작\n\n2. 장치와 호환되는 Template 없는 경우\n - Template 을 전송\n (서버가 보유중인 이미지를 가지고 서버가 템플릿을 추출하여 장치에 템플릿만 전송/이미지 값은 0 채움)\n=> 인증성공으로 동작\n - Warped Image 가 없는 경우, 동기화 실패 처리 / 등록 실패 (BioStar2 로그 출력 확인)\n=> 인증실패로 동작",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "39",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_40",
+    "document": "Test Step: [Migration 후 & BDP-659 지원 FW]\n\n1. 이미지 & template 있는 사용자\n2. 장치에 동기화\nTest Data: 연결장치\n> BS3 & F2 & W3\n\n동기화\n\n- 장치 동기화\n- 사용자 자동 동기화\n- 사용자 장치로 전송\nExpected Result: 1. 장치와 호환되는 Template 있는 경우\n- Template 정보만 전송\n=> 인증성공으로 동작\n\n2. 장치와 호환되는 Template 없는 경우\n- Template 을 전송\n(서버가 보유중인 이미지를 가지고 서버가 템플릿을 추출하여 장치에 템플릿만 전송)\n=> 인증성공으로 동작\n- Warped Image 가 없는 경우, 동기화 실패 처리 / 등록 실패 (BioStar2 로그 출력 확인)\n=> 인증실패로 동작",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "40",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_41",
+    "document": "Test Step: [SW: V2.9.6 이하 버전 & BDP-659 지원FW]\n1. 장치에서 사용자 등록(얼굴 포함)\n2. 서버로 사용자 업로드\n3. BioStar2 v2.9.7 이상으로 upgrade \n(서버 Migration 전 상황)\n4. BioStar2 > 사용자 리스트 확인\n5. 장치에서 서버로 사용자 재 업로드\nTest Data: [Store Face Image: Disable]\n\n서버 > 사용자 자동 동기화 : off\nExpected Result: 1. BioStar 마이그레이션 시 카운트에 포함되고 에러가 발생\n(BioStar2 > 사용자 - 발급 기록만 있는 사용자로 표시)\n=> 인증 실패로 동작\n2.  사용자 수정 시 에러 팝업 출력\n (재등록 안내 팝업 출력 - '1st visual face is invalid. Please delete and register again.')\n3. 장치 사용자 재 업로드 시 정상적으로 템플릿만 있는 사용자 표시 확인\n=> 인증 성공으로 동작",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "41",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-328_step_42",
+    "document": "Test Step: \t\n[SW: V2.9.6 이하 버전 & BDP-659 지원FW]\n\n1. 사용자 등록(얼굴 포함)\n2. 서버로 사용자 업로드\n3. BioStar2 v2.9.7 이상으로 upgrade\n(서버 Migration 전 상황)\n4. BioStar2 > 사용자 리스트 확인\nTest Data: [Store Face Image: Enable]\n\nExpected Result: 1.BioStar2 > 사용자 정상 표시 확인\n=> 인증 성공/실패",
+    "metadata": {
+      "issue_key": "COMMONR-328",
+      "step_index": "42",
+      "source": "jira_test_step"
+    }
   }
-}
+]

@@ -1,608 +1,146 @@
-{
-  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
-  "id": "53211",
-  "self": "https://jira.suprema.co.kr/rest/api/2/issue/53211",
-  "key": "COMMONR-292",
-  "fields": {
-    "resolution": null,
-    "customfield_13103": null,
-    "customfield_10510": null,
-    "customfield_10500": "0.0",
-    "customfield_10501": null,
-    "customfield_10502": null,
-    "customfield_12802": null,
-    "customfield_12804": null,
-    "customfield_10505": null,
-    "customfield_12803": null,
-    "customfield_10506": null,
-    "customfield_12806": null,
-    "customfield_10507": null,
-    "customfield_12805": null,
-    "customfield_10508": null,
-    "customfield_12808": null,
-    "customfield_10509": null,
-    "lastViewed": null,
-    "customfield_10180": null,
-    "customfield_10181": null,
-    "customfield_10182": null,
-    "customfield_10183": null,
-    "customfield_10184": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10173",
-      "value": "Major",
-      "id": "10173"
-    },
-    "customfield_10185": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
-      "value": "Medium (2-3일 이내 피드백)",
-      "id": "10220"
-    },
-    "labels": [],
-    "customfield_11702": null,
-    "aggregatetimeoriginalestimate": null,
-    "issuelinks": [
-      {
-        "id": "43839",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/43839",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "53720",
-          "key": "ONYXFW-651",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/53720",
-          "fields": {
-            "summary": "Non-Q 모델 BioStar2에서 Use QR/Barcod Disable 시 'Use QR as Card' 메뉴 비활성화 처리되지 않음.",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "43848",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/43848",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "53743",
-          "key": "ONYXFW-652",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/53743",
-          "fields": {
-            "summary": "라이선스 활성화된 Non-QR 장치 default 값이 Disable로 표시.",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "43400",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/43400",
-        "type": {
-          "id": "10003",
-          "name": "Relates",
-          "inward": "relates to",
-          "outward": "relates to",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
-        },
-        "outwardIssue": {
-          "id": "53056",
-          "key": "BES-467",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/53056",
-          "fields": {
-            "summary": "Test Case 작성",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "완료",
-              "id": "10001",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
-              "id": "5",
-              "description": "이슈의 부작업",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
-              "name": "부작업",
-              "subtask": true,
-              "avatarId": 10316
-            }
-          }
-        }
-      }
-    ],
-    "assignee": null,
-    "components": [],
-    "customfield_10170": null,
-    "customfield_10171": null,
-    "customfield_10172": null,
-    "customfield_10174": null,
-    "customfield_10175": null,
-    "customfield_10176": null,
-    "customfield_10177": null,
-    "customfield_10178": null,
-    "customfield_10179": null,
-    "customfield_10600": 16.0,
-    "customfield_10601": [],
-    "customfield_12901": null,
-    "customfield_10602": null,
-    "customfield_12900": null,
-    "subtasks": [],
-    "reporter": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=ybwoo",
-      "name": "ybwoo",
-      "key": "JIRAUSER13405",
-      "emailAddress": "ybwoo@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-      },
-      "displayName": "우유빈",
-      "active": true,
-      "timeZone": "Asia/Seoul"
-    },
-    "customfield_10168": null,
-    "customfield_10169": null,
-    "customfield_11800": null,
-    "progress": {
-      "progress": 0,
-      "total": 0
-    },
-    "votes": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-292/votes",
-      "votes": 0,
-      "hasVoted": false
-    },
-    "worklog": {
-      "startAt": 0,
-      "maxResults": 20,
-      "total": 0,
-      "worklogs": []
-    },
-    "issuetype": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
-      "id": "10000",
-      "description": "Represents a Test",
-      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
-      "name": "Test",
-      "subtask": false
-    },
-    "project": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
-      "id": "10000",
-      "key": "COMMONR",
-      "name": "Common Requirement And Test Case",
-      "projectTypeKey": "software",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
-        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
-        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
-        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
-      },
-      "projectCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
-        "id": "10000",
-        "description": "Requirements And Test Cases For The BioStar System Device",
-        "name": "BioStar System Device Requirement And Test Case"
-      }
-    },
-    "customfield_11000": null,
-    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@47af415d[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@1e4ea40[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@5bc924d5[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@7d597306[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@13c57093[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@7cdcf8fc[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6e21843e[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@58561bbf[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@60afb9ce[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@7bafa63f[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@194dcd00[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@712ea675[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
-    "resolutiondate": null,
-    "watches": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-292/watchers",
-      "watchCount": 1,
-      "isWatching": false
-    },
-    "customfield_11900": null,
-    "customfield_11901": null,
-    "updated": "2025-08-01T10:07:34.000+0900",
-    "timeoriginalestimate": null,
-    "description": "https://jira.suprema.co.kr/browse/BDP-656\r\n",
-    "customfield_10251": null,
-    "customfield_10252": null,
-    "customfield_10253": null,
-    "customfield_10254": null,
-    "customfield_10255": null,
-    "timetracking": {},
-    "customfield_10257": null,
-    "customfield_10247": null,
-    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1.장치상세페이지&gt; AUTHENTICATION&gt; QR/Barcode<br/>2.Use QR/Barcode through Scanner: Enabled(default)<br/>3.Use QR/Barcode</p></td><td><p>Q모델(QDPB/QAPB)</p></td><td><p>1. Enable,Disable 설정할 수 있다.<br/>(default: Disabled)<br/>2. 하위 메뉴로 Scanner Timeout이 노출된다.</p></td></tr><tr><td>2</td><td><p><span class=\"error\">&#91;이하 CASE는 NoN-Q모델로 진행&#93;</span><br/>1.장치상세페이지&gt; AUTHENTICATION&gt; QR/Barcode<br/>2. Use QR/Barcode through Scanner</p></td><td><p>장치에 라이선스가 있는 경우</p></td><td><p>1. Enable,Disable 설정할 수 있다.<br/>(Default: Enable)</p></td></tr><tr><td>3</td><td><p>1.장치상세페이지&gt; AUTHENTICATION&gt; QR/Barcode<br/>2. Use QR/Barcode through Scanner</p></td><td><p>장치에 라이선스가 없는 경우</p></td><td><p>1. Enable,Disable 설정할 수 없다.<br/>(Default: Disable)</p></td></tr><tr><td>4</td><td><p>1.장치상세페이지&gt; AUTHENTICATION&gt; QR/Barcode<br/>2.Use QR/Barcode through Scanner:Disable<br/>3.카메라 센서에 QR 입력</p></td><td></td><td><p>XS2<br/>1.하위 메뉴가 비활성화 된다.</p>\n<ul class=\"alternate\" type=\"square\">\n<li>Camera Timeout, Motion Sensor,Use QR as Card</li>\n</ul>\n\n\n<p>2. QR Preview 화면이 미노출된다.</p>\n\n<p>BS3<br/>1. Use QR as Card 비활성화<br/>2. QR 인증 되지 않음</p></td></tr><tr><td>5</td><td><p>1.장치상세페이지&gt; AUTHENTICATION&gt; QR/Barcode<br/>2.Use QR/Barcode through Scanner:Enable</p></td><td>\n</td><td><p>XS2<br/>1. 하위 메뉴가 활성화된다.</p>\n<ul class=\"alternate\" type=\"square\">\n<li>Camera Timeout, Motion Sensor,Use QR as Card (영문)</li>\n<li>카메라 대기 시간, 모션 센서 감도, 카드를 QR로 인증하기(국문)</li>\n</ul>\n\n\n<p>BS3<br/>1. Use QR as Card 활성화</p></td></tr><tr><td>6</td><td><p>1.장치상세페이지&gt; AUTHENTICATION&gt; QR/Barcode<br/>2.Use QR/Barcode through Scanner:Enable<br/>3.Camera 센서에 QR입력</p></td><td></td><td><p>1. Camera Preview 영역에 QR Preview 화면이 출력된다.</p>\n<ul class=\"alternate\" type=\"square\">\n<li>상단 아이콘 영역: 메뉴 버튼,시계, X버튼</li>\n<li>카메라 프리뷰 영역(중앙): Camera QR 스캔 가이드 표시</li>\n<li>카메라 프리뷰 영역(하단): ID아이콘, 근태 아이콘 노출</li>\n<li>하단에 안내 문구 노출 확인:Input Fingerprint / Card / ID (EN) | 지문 / 카드 / ID를 입력하십시오. (KO)</li>\n</ul>\n</td></tr><tr><td>7</td><td><p>1.장치상세페이지&gt; AUTHENTICATION&gt; QR/Barcode<br/>2.Use QR/Barcode through Scanner:Enable<br/>3. Camera Timeout 값 설정 &gt; Apply<br/>4. Camera 센서에 모션 입력<br/>5. Preview 화면이 설정된 Scan Timeout만큼 출력 후 사라지는지 확인</p></td><td><p>QR/Barcode Camera Timeout<br/>:3 ~ 20초(default:10초)</p></td><td><p>1. 설정한 Camera Timeout으로 동작한다.</p>\n<ul class=\"alternate\" type=\"square\">\n<li>Camera Preview 영역에 QR Preview 화면이 출력되고 이후 Timeout으로 동작</li>\n</ul>\n</td></tr><tr><td>8</td><td><p>1. 장치상세페이지&gt; AUTHENTICATION&gt; Use QR/Barcode through Scanner: Enable<br/>2. Motion Sensor:Low/Medium/High 선택<br/>3. Camera 센서에 QR 입력<br/>4. QR 입력</p></td><td><p>Motion Sensor<br/>&gt;Low/Medium/High<br/>(default:Medium)</p></td><td><p>1. 모션을 감지해서 QR Preview 화면이 출력된다.</p>\n<ul>\n<li>모션 설정이 High에 가까울수록 먼 거리에서 움직이는 물체에 대한 감지가 더 잘 됨</li>\n</ul>\n\n\n<p>2. 입력된 QR에 대한 인증 결과가 노출된다. </p></td></tr><tr><td>9</td><td><p>1.장치상세페이지&gt; AUTHENTICATION&gt; QR/Barcode<br/>2. Use QR/Barcode through Scanner: Enable<br/>3. Use QR as Card</p></td><td></td><td><p>1. Enable,Disable 설정할 수 있다.<br/>(Default: Disabled)</p></td></tr><tr><td>10</td><td><p>1.장치상세페이지&gt; AUTHENTICATION&gt; QR/Barcode<br/>2. Use QR/Barcode through Scanner: Enable/Disable<br/>3. Use QR as Card: Enable/Disable<br/>4. Camera Timeout 값 설정<br/>5. Motion Sensor:Low/Medium/High 선택<br/>6. Apply<br/>7. 장치 Reboot</p></td><td></td><td><p>1. 장치가 재부팅되어도 설정값은 유지된다. </p></td></tr><tr><td>11</td><td><p><span class=\"error\">&#91;QR -&gt; CSN 등록&#93;</span><br/>1. 메뉴&gt;AUTHENTICATION&gt;QR/Barcode Operation<br/>2. Use QR/Barcode: Enable<br/>3. Use QR as Card: Enable</p></td><td><p>Card Type<br/>&gt;CSN/Wiegand<br/>Card Format Type<br/>&gt;Normal</p></td><td><p>1. 사용자에 등록된 CSN/Wiegand 카드 값과 QR값이 동일할 경우 인증이 허용된다.</p>\n<ul class=\"alternate\" type=\"square\">\n<li>발급된 카드 ID(10진수값)와 동일하게 QR 생성 후 인증<br/>(ex: 등록된 Wiegnad 카드 51-235 -&gt; 3342571로 QR 발급)</li>\n</ul>\n</td></tr><tr><td>12</td><td><p><span class=\"error\">&#91;QR -&gt; CSN 등록&#93;</span><br/>1. 메뉴&gt;AUTHENTICATION&gt;QR/Barcode Operation<br/>2. Use QR/Barcode: Enable<br/>3. Use QR as Card: Disable</p></td><td><p>Card Type<br/>&gt;CSN/Wiegand<br/>Card Format Type<br/>&gt;Normal</p></td><td><p>1. 사용자에 등록된 CSN/Wiegand 카드 값과 QR값이 동일할 경우 인증이 실패된다.</p>\n<ul class=\"alternate\" type=\"square\">\n<li>발급된 카드 ID(10진수값)와 동일하게 QR 생성 후 인증<br/>(ex: 등록된 Wiegnad 카드 51-235 -&gt; 3342571로 QR 발급)</li>\n</ul>\n</td></tr><tr><td>13</td><td><p><span class=\"error\">&#91;QR/Barcode 등록&#93;</span><br/>1. 메뉴&gt;AUTHENTICATION&gt;QR/Barcode Operation<br/>2. Use QR/Barcode: Enable<br/>3. Use QR as Card: Disable</p></td><td><p>Card Format Type<br/>&gt;Normal / Wiegand</p></td><td><p>1. 사용자에 등록된 QR값이 CSN/Wiegand와 동일할 경우 인증이 성공한다.<br/>-QR : 159753 <br/>&gt;DIAG LOG: Normal(54104662947123]) / Wiegand(54104662947123)</p></td></tr><tr><td>14</td><td>\n<p><span class=\"error\">&#91;QR/Barcode 등록&#93;</span></p>\n\n<p>1. 메뉴&gt;AUTHENTICATION&gt;QR/Barcode Operation<br/>2. Use QR/Barcode: Enable<br/>3. Use QR as Card: Enable</p></td><td><p>Card Format Type<br/>&gt;Normal / Wiegand</p></td><td><p>1. 기존 QR card type 으로 등록된 카드의 경우 data 가 동일하다고 하여도 인증 실패로 처리</p>\n<ul>\n<li>type 이 다르므로 인증 실패로 처리</li>\n</ul>\n</td></tr><tr><td>15</td><td><p><span class=\"error\">&#91;QR -&gt; CSN 등록&#93;</span><br/>1. 메뉴&gt;AUTHENTICATION&gt;QR/Barcode Operation<br/>2. Use QR/Barcode: Enable<br/>3. Use QR as Card: Enable</p></td><td><p>Card Type<br/>&gt;CSN/Wiegand<br/>Card Format Type<br/>&gt;Wiegand / 26bit</p></td><td><p>1. 사용자에 등록된 CSN/Wiegand 카드 값과 QR값이 동일할 경우 인증이 성공한다.</p>\n<ul class=\"alternate\" type=\"square\">\n<li>발급된 카드 ID(10진수값)와 동일하게 QR 생성 후 인증<br/>&gt; 159753 -&gt; 2-28681</li>\n</ul>\n</td></tr><tr><td>16</td><td><p><span class=\"error\">&#91;QR -&gt; CSN 등록&#93;</span><br/>1. 메뉴&gt;AUTHENTICATION&gt;QR/Barcode Operation<br/>2. Use QR/Barcode: Enable<br/>3. Use QR as Card: Disable</p></td><td><p>Card Type<br/>&gt;CSN/Wiegand<br/>Card Format Type<br/>&gt;Wiegand / 26bit</p></td><td><p>1. 사용자에 등록된 CSN/Wiegand 카드 값과 QR값이 동일할 경우 인증이 실패한다.</p>\n<ul class=\"alternate\" type=\"square\">\n<li>발급된 카드 ID(10진수값)와 동일하게 QR 생성 후 인증<br/>&gt; 159753 -&gt; 2-28681</li>\n</ul>\n</td></tr></table>",
-    "customfield_10248": null,
-    "customfield_10006": [],
-    "customfield_10007": [],
-    "customfield_10008": {
-      "issueId": 53211,
-      "statuses": [
-        {
-          "statusResults": [
-            {
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 34744,
-              "latestFinalId": 34744
-            }
-          ]
-        }
-      ]
-    },
-    "customfield_12309": null,
-    "customfield_10802": null,
-    "customfield_10803": null,
-    "customfield_10805": null,
-    "summary": "카메라를 이용한 QR 인식 및 인증 지원 - 설정",
-    "customfield_10240": null,
-    "customfield_10000": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
-      "value": "Manual",
-      "id": "10000"
-    },
-    "customfield_10243": null,
-    "customfield_10001": null,
-    "customfield_10244": null,
-    "customfield_10002": null,
-    "customfield_10003": null,
-    "customfield_10246": null,
-    "customfield_10004": {
-      "steps": [
-        {
-          "id": 14813,
-          "index": 1,
-          "step": "1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2.Use QR/Barcode through Scanner: Enabled(default)\n3.Use QR/Barcode",
-          "data": "Q모델(QDPB/QAPB)\n",
-          "result": "1. Enable,Disable 설정할 수 있다.\n(default: Disabled)\n2. 하위 메뉴로 Scanner Timeout이 노출된다.",
-          "attachments": []
-        },
-        {
-          "id": 14814,
-          "index": 2,
-          "step": "[이하 CASE는 NoN-Q모델로 진행]\n1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2. Use QR/Barcode through Scanner",
-          "data": "장치에 라이선스가 있는 경우",
-          "result": "1. Enable,Disable 설정할 수 있다.\n(Default: Enable)",
-          "attachments": []
-        },
-        {
-          "id": 14908,
-          "index": 3,
-          "step": "1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2. Use QR/Barcode through Scanner",
-          "data": "장치에 라이선스가 없는 경우",
-          "result": "1. Enable,Disable 설정할 수 없다.\n(Default: Disable)",
-          "attachments": []
-        },
-        {
-          "id": 14819,
-          "index": 4,
-          "step": "1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2.Use QR/Barcode through Scanner:Disable\n3.카메라 센서에 QR 입력",
-          "data": "",
-          "result": "XS2\n1.하위 메뉴가 비활성화 된다.\n- Camera Timeout, Motion Sensor,Use QR as Card\n\n2. QR Preview 화면이 미노출된다.\n\nBS3\n1. Use QR as Card 비활성화\n2. QR 인증 되지 않음",
-          "attachments": []
-        },
-        {
-          "id": 14818,
-          "index": 5,
-          "step": "1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2.Use QR/Barcode through Scanner:Enable",
-          "data": "\n\n",
-          "result": "XS2\n1. 하위 메뉴가 활성화된다.\n- Camera Timeout, Motion Sensor,Use QR as Card (영문)\n- 카메라 대기 시간, 모션 센서 감도, 카드를 QR로 인증하기(국문)\n\nBS3\n1. Use QR as Card 활성화",
-          "attachments": []
-        },
-        {
-          "id": 14823,
-          "index": 6,
-          "step": "1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2.Use QR/Barcode through Scanner:Enable\n3.Camera 센서에 QR입력",
-          "data": "",
-          "result": "1. Camera Preview 영역에 QR Preview 화면이 출력된다.\n- 상단 아이콘 영역: 메뉴 버튼,시계, X버튼\n- 카메라 프리뷰 영역(중앙): Camera QR 스캔 가이드 표시\n- 카메라 프리뷰 영역(하단): ID아이콘, 근태 아이콘 노출\n- 하단에 안내 문구 노출 확인:Input Fingerprint / Card / ID (EN) | 지문 / 카드 / ID를 입력하십시오. (KO) ",
-          "attachments": []
-        },
-        {
-          "id": 14815,
-          "index": 7,
-          "step": "1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2.Use QR/Barcode through Scanner:Enable\n3. Camera Timeout 값 설정 > Apply\n4. Camera 센서에 모션 입력\n5. Preview 화면이 설정된 Scan Timeout만큼 출력 후 사라지는지 확인",
-          "data": "QR/Barcode Camera Timeout\n:3 ~ 20초(default:10초)",
-          "result": "1. 설정한 Camera Timeout으로 동작한다.\n- Camera Preview 영역에 QR Preview 화면이 출력되고 이후 Timeout으로 동작",
-          "attachments": []
-        },
-        {
-          "id": 14817,
-          "index": 8,
-          "step": "1. 장치상세페이지> AUTHENTICATION> Use QR/Barcode through Scanner: Enable\n2. Motion Sensor:Low/Medium/High 선택\n3. Camera 센서에 QR 입력\n4. QR 입력",
-          "data": "Motion Sensor\n>Low/Medium/High\n(default:Medium)",
-          "result": "1. 모션을 감지해서 QR Preview 화면이 출력된다.\n* 모션 설정이 High에 가까울수록 먼 거리에서 움직이는 물체에 대한 감지가 더 잘 됨\n\n2. 입력된 QR에 대한 인증 결과가 노출된다. ",
-          "attachments": []
-        },
-        {
-          "id": 14837,
-          "index": 9,
-          "step": "1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2. Use QR/Barcode through Scanner: Enable\n3. Use QR as Card",
-          "data": "",
-          "result": "1. Enable,Disable 설정할 수 있다.\n(Default: Disabled)",
-          "attachments": []
-        },
-        {
-          "id": 14821,
-          "index": 10,
-          "step": "1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2. Use QR/Barcode through Scanner: Enable/Disable\n3. Use QR as Card: Enable/Disable\n4. Camera Timeout 값 설정\n5. Motion Sensor:Low/Medium/High 선택\n6. Apply\n7. 장치 Reboot",
-          "data": "",
-          "result": "1. 장치가 재부팅되어도 설정값은 유지된다. ",
-          "attachments": []
-        },
-        {
-          "id": 14816,
-          "index": 11,
-          "step": "[QR -> CSN 등록]\n1. 메뉴>AUTHENTICATION>QR/Barcode Operation\n2. Use QR/Barcode: Enable\n3. Use QR as Card: Enable",
-          "data": "Card Type\n>CSN/Wiegand\nCard Format Type\n>Normal",
-          "result": "1. 사용자에 등록된 CSN/Wiegand 카드 값과 QR값이 동일할 경우 인증이 허용된다.\n- 발급된 카드 ID(10진수값)와 동일하게 QR 생성 후 인증\n(ex: 등록된 Wiegnad 카드 51-235 -> 3342571로 QR 발급)",
-          "attachments": []
-        },
-        {
-          "id": 14820,
-          "index": 12,
-          "step": "[QR -> CSN 등록]\n1. 메뉴>AUTHENTICATION>QR/Barcode Operation\n2. Use QR/Barcode: Enable\n3. Use QR as Card: Disable",
-          "data": "Card Type\n>CSN/Wiegand\nCard Format Type\n>Normal",
-          "result": "1. 사용자에 등록된 CSN/Wiegand 카드 값과 QR값이 동일할 경우 인증이 실패된다.\n- 발급된 카드 ID(10진수값)와 동일하게 QR 생성 후 인증\n(ex: 등록된 Wiegnad 카드 51-235 -> 3342571로 QR 발급)\n",
-          "attachments": []
-        },
-        {
-          "id": 18022,
-          "index": 13,
-          "step": "[QR/Barcode 등록]\n1. 메뉴>AUTHENTICATION>QR/Barcode Operation\n2. Use QR/Barcode: Enable\n3. Use QR as Card: Disable",
-          "data": "Card Format Type\n>Normal / Wiegand",
-          "result": "1. 사용자에 등록된 QR값이 CSN/Wiegand와 동일할 경우 인증이 성공한다.\n-QR : 159753 \n>DIAG LOG: Normal(54104662947123]) / Wiegand(54104662947123)\n",
-          "attachments": []
-        },
-        {
-          "id": 18023,
-          "index": 14,
-          "step": "\t\n[QR/Barcode 등록]\n\n1. 메뉴>AUTHENTICATION>QR/Barcode Operation\n2. Use QR/Barcode: Enable\n3. Use QR as Card: Enable",
-          "data": "Card Format Type\n>Normal / Wiegand",
-          "result": "1. 기존 QR card type 으로 등록된 카드의 경우 data 가 동일하다고 하여도 인증 실패로 처리\n*  type 이 다르므로 인증 실패로 처리",
-          "attachments": []
-        },
-        {
-          "id": 18024,
-          "index": 15,
-          "step": "[QR -> CSN 등록]\n1. 메뉴>AUTHENTICATION>QR/Barcode Operation\n2. Use QR/Barcode: Enable\n3. Use QR as Card: Enable",
-          "data": "Card Type\n>CSN/Wiegand\nCard Format Type\n>Wiegand / 26bit",
-          "result": "1. 사용자에 등록된 CSN/Wiegand 카드 값과 QR값이 동일할 경우 인증이 성공한다.\n- 발급된 카드 ID(10진수값)와 동일하게 QR 생성 후 인증\n> 159753 -> 2-28681",
-          "attachments": []
-        },
-        {
-          "id": 18025,
-          "index": 16,
-          "step": "[QR -> CSN 등록]\n1. 메뉴>AUTHENTICATION>QR/Barcode Operation\n2. Use QR/Barcode: Enable\n3. Use QR as Card: Disable",
-          "data": "Card Type\n>CSN/Wiegand\nCard Format Type\n>Wiegand / 26bit",
-          "result": "1. 사용자에 등록된 CSN/Wiegand 카드 값과 QR값이 동일할 경우 인증이 실패한다.\n- 발급된 카드 ID(10진수값)와 동일하게 QR 생성 후 인증\n> 159753 -> 2-28681",
-          "attachments": []
-        }
-      ]
-    },
-    "customfield_10236": null,
-    "customfield_10237": null,
-    "environment": null,
-    "customfield_10238": null,
-    "customfield_10239": null,
-    "duedate": null,
-    "comment": {
-      "comments": [],
-      "maxResults": 0,
-      "total": 0,
-      "startAt": 0
-    },
-    "customfield_10230": null,
-    "fixVersions": [],
-    "customfield_10231": null,
-    "customfield_10232": null,
-    "customfield_10233": null,
-    "customfield_12410": null,
-    "customfield_10234": null,
-    "customfield_10235": null,
-    "customfield_10225": null,
-    "customfield_12404": null,
-    "customfield_10226": null,
-    "customfield_12403": null,
-    "customfield_10227": null,
-    "customfield_12406": null,
-    "customfield_10228": null,
-    "customfield_10229": null,
-    "customfield_10900": null,
-    "customfield_12408": null,
-    "customfield_10901": null,
-    "customfield_10902": null,
-    "customfield_10903": null,
-    "customfield_12409": null,
-    "customfield_10904": null,
-    "customfield_10905": null,
-    "customfield_10220": null,
-    "priority": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-      "name": "미할당",
-      "id": "10100"
-    },
-    "customfield_10221": null,
-    "customfield_12400": null,
-    "customfield_12402": null,
-    "customfield_10224": null,
-    "customfield_10214": null,
-    "customfield_10217": null,
-    "customfield_10218": null,
-    "timeestimate": null,
-    "versions": [],
-    "customfield_10219": null,
-    "status": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
-      "description": "",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
-      "name": "할 일",
-      "id": "10000",
-      "statusCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
-        "id": 2,
-        "key": "new",
-        "colorName": "blue-gray",
-        "name": "할 일"
-      }
-    },
-    "customfield_12510": null,
-    "customfield_10213": null,
-    "customfield_12511": null,
-    "customfield_10203": null,
-    "customfield_10204": null,
-    "customfield_12502": null,
-    "customfield_10205": null,
-    "customfield_10206": null,
-    "customfield_10207": null,
-    "aggregatetimeestimate": null,
-    "customfield_10208": null,
-    "customfield_10209": null,
-    "customfield_12509": null,
-    "customfield_12508": null,
-    "creator": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=ybwoo",
-      "name": "ybwoo",
-      "key": "JIRAUSER13405",
-      "emailAddress": "ybwoo@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-      },
-      "displayName": "우유빈",
-      "active": true,
-      "timeZone": "Asia/Seoul"
-    },
-    "aggregateprogress": {
-      "progress": 0,
-      "total": 0
-    },
-    "customfield_10320": null,
-    "customfield_10321": null,
-    "customfield_12501": null,
-    "customfield_10202": null,
-    "customfield_12500": null,
-    "customfield_10313": "1|hzwvaf:",
-    "customfield_10316": null,
-    "customfield_10317": null,
-    "timespent": null,
-    "aggregatetimespent": null,
-    "customfield_10310": null,
-    "customfield_10302": null,
-    "customfield_10303": null,
-    "customfield_12601": null,
-    "customfield_10304": null,
-    "customfield_10305": null,
-    "customfield_10308": null,
-    "workratio": -1,
-    "created": "2022-10-24T14:51:04.000+0900",
-    "customfield_10533": null,
-    "customfield_10534": null,
-    "customfield_11501": null,
-    "customfield_11503": null,
-    "customfield_13001": null,
-    "customfield_13000": null,
-    "customfield_10530": null,
-    "customfield_10531": null,
-    "customfield_10532": null,
-    "customfield_10401": null,
-    "customfield_10522": null,
-    "customfield_10402": null,
-    "customfield_12700": null,
-    "customfield_10524": null,
-    "customfield_10525": null,
-    "customfield_12702": null,
-    "attachment": [],
-    "customfield_10526": null,
-    "customfield_12704": null,
-    "customfield_10528": null,
-    "customfield_12706": null,
-    "customfield_10520": null,
-    "customfield_10521": null,
-    "customfield_10400": null,
-    "customfield_10511": null,
-    "customfield_10512": null,
-    "customfield_11600": null,
-    "customfield_10513": null,
-    "customfield_10514": null,
-    "customfield_10515": null,
-    "customfield_10516": null,
-    "customfield_10517": null,
-    "customfield_10518": null,
-    "customfield_10519": null
+[
+  {
+    "id": "COMMONR-292_step_1",
+    "document": "Test Step: 1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2.Use QR/Barcode through Scanner: Enabled(default)\n3.Use QR/Barcode\nTest Data: Q모델(QDPB/QAPB)\n\nExpected Result: 1. Enable,Disable 설정할 수 있다.\n(default: Disabled)\n2. 하위 메뉴로 Scanner Timeout이 노출된다.",
+    "metadata": {
+      "issue_key": "COMMONR-292",
+      "step_index": "1",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-292_step_2",
+    "document": "Test Step: [이하 CASE는 NoN-Q모델로 진행]\n1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2. Use QR/Barcode through Scanner\nTest Data: 장치에 라이선스가 있는 경우\nExpected Result: 1. Enable,Disable 설정할 수 있다.\n(Default: Enable)",
+    "metadata": {
+      "issue_key": "COMMONR-292",
+      "step_index": "2",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-292_step_3",
+    "document": "Test Step: 1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2. Use QR/Barcode through Scanner\nTest Data: 장치에 라이선스가 없는 경우\nExpected Result: 1. Enable,Disable 설정할 수 없다.\n(Default: Disable)",
+    "metadata": {
+      "issue_key": "COMMONR-292",
+      "step_index": "3",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-292_step_4",
+    "document": "Test Step: 1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2.Use QR/Barcode through Scanner:Disable\n3.카메라 센서에 QR 입력\nExpected Result: XS2\n1.하위 메뉴가 비활성화 된다.\n- Camera Timeout, Motion Sensor,Use QR as Card\n\n2. QR Preview 화면이 미노출된다.\n\nBS3\n1. Use QR as Card 비활성화\n2. QR 인증 되지 않음",
+    "metadata": {
+      "issue_key": "COMMONR-292",
+      "step_index": "4",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-292_step_5",
+    "document": "Test Step: 1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2.Use QR/Barcode through Scanner:Enable\nTest Data: \n\n\nExpected Result: XS2\n1. 하위 메뉴가 활성화된다.\n- Camera Timeout, Motion Sensor,Use QR as Card (영문)\n- 카메라 대기 시간, 모션 센서 감도, 카드를 QR로 인증하기(국문)\n\nBS3\n1. Use QR as Card 활성화",
+    "metadata": {
+      "issue_key": "COMMONR-292",
+      "step_index": "5",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-292_step_6",
+    "document": "Test Step: 1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2.Use QR/Barcode through Scanner:Enable\n3.Camera 센서에 QR입력\nExpected Result: 1. Camera Preview 영역에 QR Preview 화면이 출력된다.\n- 상단 아이콘 영역: 메뉴 버튼,시계, X버튼\n- 카메라 프리뷰 영역(중앙): Camera QR 스캔 가이드 표시\n- 카메라 프리뷰 영역(하단): ID아이콘, 근태 아이콘 노출\n- 하단에 안내 문구 노출 확인:Input Fingerprint / Card / ID (EN) | 지문 / 카드 / ID를 입력하십시오. (KO) ",
+    "metadata": {
+      "issue_key": "COMMONR-292",
+      "step_index": "6",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-292_step_7",
+    "document": "Test Step: 1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2.Use QR/Barcode through Scanner:Enable\n3. Camera Timeout 값 설정 > Apply\n4. Camera 센서에 모션 입력\n5. Preview 화면이 설정된 Scan Timeout만큼 출력 후 사라지는지 확인\nTest Data: QR/Barcode Camera Timeout\n:3 ~ 20초(default:10초)\nExpected Result: 1. 설정한 Camera Timeout으로 동작한다.\n- Camera Preview 영역에 QR Preview 화면이 출력되고 이후 Timeout으로 동작",
+    "metadata": {
+      "issue_key": "COMMONR-292",
+      "step_index": "7",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-292_step_8",
+    "document": "Test Step: 1. 장치상세페이지> AUTHENTICATION> Use QR/Barcode through Scanner: Enable\n2. Motion Sensor:Low/Medium/High 선택\n3. Camera 센서에 QR 입력\n4. QR 입력\nTest Data: Motion Sensor\n>Low/Medium/High\n(default:Medium)\nExpected Result: 1. 모션을 감지해서 QR Preview 화면이 출력된다.\n* 모션 설정이 High에 가까울수록 먼 거리에서 움직이는 물체에 대한 감지가 더 잘 됨\n\n2. 입력된 QR에 대한 인증 결과가 노출된다. ",
+    "metadata": {
+      "issue_key": "COMMONR-292",
+      "step_index": "8",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-292_step_9",
+    "document": "Test Step: 1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2. Use QR/Barcode through Scanner: Enable\n3. Use QR as Card\nExpected Result: 1. Enable,Disable 설정할 수 있다.\n(Default: Disabled)",
+    "metadata": {
+      "issue_key": "COMMONR-292",
+      "step_index": "9",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-292_step_10",
+    "document": "Test Step: 1.장치상세페이지> AUTHENTICATION> QR/Barcode\n2. Use QR/Barcode through Scanner: Enable/Disable\n3. Use QR as Card: Enable/Disable\n4. Camera Timeout 값 설정\n5. Motion Sensor:Low/Medium/High 선택\n6. Apply\n7. 장치 Reboot\nExpected Result: 1. 장치가 재부팅되어도 설정값은 유지된다. ",
+    "metadata": {
+      "issue_key": "COMMONR-292",
+      "step_index": "10",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-292_step_11",
+    "document": "Test Step: [QR -> CSN 등록]\n1. 메뉴>AUTHENTICATION>QR/Barcode Operation\n2. Use QR/Barcode: Enable\n3. Use QR as Card: Enable\nTest Data: Card Type\n>CSN/Wiegand\nCard Format Type\n>Normal\nExpected Result: 1. 사용자에 등록된 CSN/Wiegand 카드 값과 QR값이 동일할 경우 인증이 허용된다.\n- 발급된 카드 ID(10진수값)와 동일하게 QR 생성 후 인증\n(ex: 등록된 Wiegnad 카드 51-235 -> 3342571로 QR 발급)",
+    "metadata": {
+      "issue_key": "COMMONR-292",
+      "step_index": "11",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-292_step_12",
+    "document": "Test Step: [QR -> CSN 등록]\n1. 메뉴>AUTHENTICATION>QR/Barcode Operation\n2. Use QR/Barcode: Enable\n3. Use QR as Card: Disable\nTest Data: Card Type\n>CSN/Wiegand\nCard Format Type\n>Normal\nExpected Result: 1. 사용자에 등록된 CSN/Wiegand 카드 값과 QR값이 동일할 경우 인증이 실패된다.\n- 발급된 카드 ID(10진수값)와 동일하게 QR 생성 후 인증\n(ex: 등록된 Wiegnad 카드 51-235 -> 3342571로 QR 발급)\n",
+    "metadata": {
+      "issue_key": "COMMONR-292",
+      "step_index": "12",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-292_step_13",
+    "document": "Test Step: [QR/Barcode 등록]\n1. 메뉴>AUTHENTICATION>QR/Barcode Operation\n2. Use QR/Barcode: Enable\n3. Use QR as Card: Disable\nTest Data: Card Format Type\n>Normal / Wiegand\nExpected Result: 1. 사용자에 등록된 QR값이 CSN/Wiegand와 동일할 경우 인증이 성공한다.\n-QR : 159753 \n>DIAG LOG: Normal(54104662947123]) / Wiegand(54104662947123)\n",
+    "metadata": {
+      "issue_key": "COMMONR-292",
+      "step_index": "13",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-292_step_14",
+    "document": "Test Step: \t\n[QR/Barcode 등록]\n\n1. 메뉴>AUTHENTICATION>QR/Barcode Operation\n2. Use QR/Barcode: Enable\n3. Use QR as Card: Enable\nTest Data: Card Format Type\n>Normal / Wiegand\nExpected Result: 1. 기존 QR card type 으로 등록된 카드의 경우 data 가 동일하다고 하여도 인증 실패로 처리\n*  type 이 다르므로 인증 실패로 처리",
+    "metadata": {
+      "issue_key": "COMMONR-292",
+      "step_index": "14",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-292_step_15",
+    "document": "Test Step: [QR -> CSN 등록]\n1. 메뉴>AUTHENTICATION>QR/Barcode Operation\n2. Use QR/Barcode: Enable\n3. Use QR as Card: Enable\nTest Data: Card Type\n>CSN/Wiegand\nCard Format Type\n>Wiegand / 26bit\nExpected Result: 1. 사용자에 등록된 CSN/Wiegand 카드 값과 QR값이 동일할 경우 인증이 성공한다.\n- 발급된 카드 ID(10진수값)와 동일하게 QR 생성 후 인증\n> 159753 -> 2-28681",
+    "metadata": {
+      "issue_key": "COMMONR-292",
+      "step_index": "15",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-292_step_16",
+    "document": "Test Step: [QR -> CSN 등록]\n1. 메뉴>AUTHENTICATION>QR/Barcode Operation\n2. Use QR/Barcode: Enable\n3. Use QR as Card: Disable\nTest Data: Card Type\n>CSN/Wiegand\nCard Format Type\n>Wiegand / 26bit\nExpected Result: 1. 사용자에 등록된 CSN/Wiegand 카드 값과 QR값이 동일할 경우 인증이 실패한다.\n- 발급된 카드 ID(10진수값)와 동일하게 QR 생성 후 인증\n> 159753 -> 2-28681",
+    "metadata": {
+      "issue_key": "COMMONR-292",
+      "step_index": "16",
+      "source": "jira_test_step"
+    }
   }
-}
+]

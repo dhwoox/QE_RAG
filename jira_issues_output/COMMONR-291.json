@@ -1,2317 +1,497 @@
-{
-  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
-  "id": "52741",
-  "self": "https://jira.suprema.co.kr/rest/api/2/issue/52741",
-  "key": "COMMONR-291",
-  "fields": {
-    "resolution": null,
-    "customfield_13103": null,
-    "customfield_10510": null,
-    "customfield_10500": "0.0",
-    "customfield_10501": null,
-    "customfield_10502": null,
-    "customfield_12802": null,
-    "customfield_12804": null,
-    "customfield_10505": null,
-    "customfield_12803": null,
-    "customfield_10506": null,
-    "customfield_12806": null,
-    "customfield_10507": null,
-    "customfield_12805": null,
-    "customfield_10508": null,
-    "customfield_12808": null,
-    "customfield_10509": null,
-    "lastViewed": null,
-    "customfield_10180": null,
-    "customfield_10181": null,
-    "customfield_10182": null,
-    "customfield_10183": null,
-    "customfield_10184": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10173",
-      "value": "Major",
-      "id": "10173"
-    },
-    "customfield_10185": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
-      "value": "Medium (2-3일 이내 피드백)",
-      "id": "10220"
-    },
-    "labels": [],
-    "customfield_11702": null,
-    "aggregatetimeoriginalestimate": null,
-    "issuelinks": [
-      {
-        "id": "55684",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/55684",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "64619",
-          "key": "BEW3FW-243",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/64619",
-          "fields": {
-            "summary": "DesFire Custom Smart Card key 레이아웃을 Secondary Key로 설정 시 CSN 으로 인식",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
-              "name": "Critical (A+)",
-              "id": "1"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "49869",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/49869",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "59705",
-          "key": "BEWIIFWDI-1036",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/59705",
-          "fields": {
-            "summary": "[RS485 모드: Slave]Custom Smart Card 리드 시 발급된 카드가 Byte Order 설정에 맞게 출력 되지 않음(MSB 로만 출력)",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
-              "name": "Critical (A+)",
-              "id": "1"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "57966",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/57966",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "66927",
-          "key": "BEWIIFWDI-1100",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/66927",
-          "fields": {
-            "summary": "DesFire Custom Smart Card key 레이아웃을 Secondary Key로 설정 시 CSN 으로 인식",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
-              "name": "Critical (A+)",
-              "id": "1"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "49739",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/49739",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "59567",
-          "key": "BPIIFW-136",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/59567",
-          "fields": {
-            "summary": "OSDP Tool과 연결 후 Custom Smart Card Read 시 카드ID가 출력되지 않는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
-              "name": "Critical (A+)",
-              "id": "1"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "49743",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/49743",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "59568",
-          "key": "BPIIFW-137",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/59568",
-          "fields": {
-            "summary": "OSDP Tool과 연결 후 Custom Smart Card Read 시 발급 된 카드 ID로 출력되지 않는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
-              "name": "Critical (A+)",
-              "id": "1"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "48294",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/48294",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "58023",
-          "key": "DFW-1003",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/58023",
-          "fields": {
-            "summary": "OSDP Tool과 연결 후 Custom Smart Card Read 시 카드ID가 출력되지 않는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
-              "name": "Critical (A+)",
-              "id": "1"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "48296",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/48296",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "58024",
-          "key": "DFW-1004",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/58024",
-          "fields": {
-            "summary": "OSDP Tool과 연결 후 Custom Smart Card Read 시 LSB로 설정하여도 MSB로 출력되는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
-              "name": "Critical (A+)",
-              "id": "1"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "51733",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/51733",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "61284",
-          "key": "BEW3FW-36",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/61284",
-          "fields": {
-            "summary": "[Intelligent PD] 카드 인증 시 띡 소리만 나고 인증 성공음이나 인증 성공 문구 출력되지 않음",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "49885",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/49885",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "59708",
-          "key": "BEWIIFWDI-1037",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/59708",
-          "fields": {
-            "summary": "[Custom Smart Card] Mifare: DesFire/DesFire EV1 언체크 > Custrom desfire 카드 CSN 으로 리드 되지 않음 / '띡' 소리 출력",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "57968",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/57968",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "60068",
-          "key": "BEWIIFWDI-1042",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/60068",
-          "fields": {
-            "summary": "custom smartcard 일괄 편집 시 설정한 레이아웃으로 적용 안됨.  ",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "57950",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/57950",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "66808",
-          "key": "BEWIIFWDI-1091",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/66808",
-          "fields": {
-            "summary": "RS485-Slave 모드 상태에서 Custom Smartcard layout 변경 후 장치상세정보창 진입 시 'None'으로 표시",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "57953",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/57953",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "66926",
-          "key": "BEWIIFWDI-1099",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/66926",
-          "fields": {
-            "summary": "RS485-Slave 모드 상태에서 Custom Smart Card 미표시",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "58007",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/58007",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "66946",
-          "key": "BEWIIFWDI-1101",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/66946",
-          "fields": {
-            "summary": "Custom Smart Card Layout을 미지원 하는 버전에서 v1.4.2 지원 버전으로 FW Upgrade 시 'Custom Smart Card : Enabled 및 옵션 체크' 로 표시",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "58341",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/58341",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "67341",
-          "key": "BLNIIFW-1172",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/67341",
-          "fields": {
-            "summary": "OSDP로 Default/Slave모드 Custom Smart Card 값 미출력 되는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "63165",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63165",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "72255",
-          "key": "BS3FW-1961",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72255",
-          "fields": {
-            "summary": "Seconday Key로 인증이 성공한 후 보조키 비활성화된 Primary Key레이아웃으로 변경 시 계속 인증 실패되는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "62149",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/62149",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "71302",
-          "key": "CS20FW-200",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/71302",
-          "fields": {
-            "summary": "Custom Smart Card를 CS-20의 Slave 장치로 Read Card 하여 등록 시, CSN 카드로 저장됨",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "58500",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/58500",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "67198",
-          "key": "DFW-1185",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/67198",
-          "fields": {
-            "summary": "Mifare Custom Smart Card Secondary Key 레이아웃 삭제 후 Default Key 레이아웃으로 설정 시 CSN 으로 인식",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "57574",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/57574",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "66541",
-          "key": "XPASSII-523",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/66541",
-          "fields": {
-            "summary": "장치 초기화 후 BioStar2 장치 상세정보창 진입 시 'Custom Smart Card : Enabled' 로 표시",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "57576",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/57576",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "66543",
-          "key": "XPASSII-524",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/66543",
-          "fields": {
-            "summary": "Custom Smart Card Layout을 미지원 하는 버전에서 v1.4.2 지원 버전으로 FW Upgrade 시 'Custom Smart Card : Enabled 및 옵션 체크' 로 표시",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "62348",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/62348",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "71537",
-          "key": "XPASSII-598",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/71537",
-          "fields": {
-            "summary": "Seconday Key로 인증이 성공한 후 보조키 비활성화된 레이아웃으로 변경 시 계속 인증 실패되는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "50237",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/50237",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "59986",
-          "key": "XPASSRII-587",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/59986",
-          "fields": {
-            "summary": "custom smartcard 일괄 편집 시 설정한 레이아웃으로 적용 안됨.  ",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "56945",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/56945",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "66101",
-          "key": "XPASSRII-616",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/66101",
-          "fields": {
-            "summary": "D2 장치 초기화 후 BioStar2 장치 상세정보창 진입 시 'Custom Smart Card : Enabled' 로 표시",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "54703",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/54703",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "63718",
-          "key": "BEW3FW-205",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/63718",
-          "fields": {
-            "summary": "[Output info : User ID/Byte Order : LSB] Custom Smart Card Read 시 User ID 값이 뒤집혀서 출력됨.",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
-              "name": "Major (B+)",
-              "id": "10200"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "58136",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/58136",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "64350",
-          "key": "BLNIIFW-1129",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/64350",
-          "fields": {
-            "summary": "Suprema Smart Card 레이아웃에 Primary Key만 설정되어 있고 Custom Smart Card 레이아웃에 Secondary Key만 설정된 상태에서 장치 부팅을 하고나면 Custom Smart Card에 대해 Secondary Key로 리드되지 않는 문제",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
-              "name": "Major (B+)",
-              "id": "10200"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "62974",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/62974",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "71616",
-          "key": "DI24FW-161",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/71616",
-          "fields": {
-            "summary": "DI24 하위로 연결된 Reader에서 Custorm Smart Card 적용 후 값 재확인시 적용된 값이 아닌 None으로 표시되는 문제",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
-              "name": "Major (B+)",
-              "id": "10200"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "43007",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/43007",
-        "type": {
-          "id": "10003",
-          "name": "Relates",
-          "inward": "relates to",
-          "outward": "relates to",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
-        },
-        "inwardIssue": {
-          "id": "52417",
-          "key": "BES-389",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/52417",
-          "fields": {
-            "summary": "Test Case 작성",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "완료",
-              "id": "10001",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
-              "id": "5",
-              "description": "이슈의 부작업",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
-              "name": "부작업",
-              "subtask": true,
-              "avatarId": 10316
-            }
-          }
-        }
-      },
-      {
-        "id": "45357",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/45357",
-        "type": {
-          "id": "10003",
-          "name": "Relates",
-          "inward": "relates to",
-          "outward": "relates to",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
-        },
-        "inwardIssue": {
-          "id": "53868",
-          "key": "BES-539",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/53868",
-          "fields": {
-            "summary": "CLONE - Test Case 작성",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "완료",
-              "id": "10001",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
-              "id": "5",
-              "description": "이슈의 부작업",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
-              "name": "부작업",
-              "subtask": true,
-              "avatarId": 10316
-            }
-          }
-        }
-      },
-      {
-        "id": "55694",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/55694",
-        "type": {
-          "id": "10003",
-          "name": "Relates",
-          "inward": "relates to",
-          "outward": "relates to",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
-        },
-        "inwardIssue": {
-          "id": "64620",
-          "key": "DFW-1153",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/64620",
-          "fields": {
-            "summary": "DesFire Custom Smart Card key 레이아웃을 Secondary Key로 설정 시 CSN 으로 인식",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
-              "name": "Critical (A+)",
-              "id": "1"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "46788",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/46788",
-        "type": {
-          "id": "10003",
-          "name": "Relates",
-          "inward": "relates to",
-          "outward": "relates to",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
-        },
-        "inwardIssue": {
-          "id": "55452",
-          "key": "DFW-948",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/55452",
-          "fields": {
-            "summary": "[BDP-693] 오픈 스마트카드 레이아웃 구현",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "완료",
-              "id": "10001",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/3",
-              "id": "3",
-              "description": "해야할 일",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10318&avatarType=issuetype",
-              "name": "작업",
-              "subtask": false,
-              "avatarId": 10318
-            }
-          }
-        }
-      },
-      {
-        "id": "48707",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/48707",
-        "type": {
-          "id": "10200",
-          "name": "Tests",
-          "inward": "tested by",
-          "outward": "tests",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10200"
-        },
-        "inwardIssue": {
-          "id": "55443",
-          "key": "BEWIIFWDI-1008",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/55443",
-          "fields": {
-            "summary": "[BDP-693] 오픈 스마트카드 레이아웃",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "완료",
-              "id": "10001",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/3",
-              "id": "3",
-              "description": "해야할 일",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10318&avatarType=issuetype",
-              "name": "작업",
-              "subtask": false,
-              "avatarId": 10318
-            }
-          }
-        }
-      },
-      {
-        "id": "48706",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/48706",
-        "type": {
-          "id": "10200",
-          "name": "Tests",
-          "inward": "tested by",
-          "outward": "tests",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10200"
-        },
-        "inwardIssue": {
-          "id": "55441",
-          "key": "BPIIFW-117",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/55441",
-          "fields": {
-            "summary": "[BDP-693] 오픈 스마트카드 레이아웃",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "완료",
-              "id": "10001",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/3",
-              "id": "3",
-              "description": "해야할 일",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10318&avatarType=issuetype",
-              "name": "작업",
-              "subtask": false,
-              "avatarId": 10318
-            }
-          }
-        }
-      }
-    ],
-    "assignee": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
-      "name": "김소영",
-      "key": "김소영",
-      "emailAddress": "sykim@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-      },
-      "displayName": "김소영",
-      "active": true,
-      "timeZone": "Asia/Seoul"
-    },
-    "components": [],
-    "customfield_10170": null,
-    "customfield_10171": null,
-    "customfield_10172": null,
-    "customfield_10174": null,
-    "customfield_10175": null,
-    "customfield_10176": null,
-    "customfield_10177": null,
-    "customfield_10178": null,
-    "customfield_10179": null,
-    "customfield_10600": 55.0,
-    "customfield_10601": [],
-    "customfield_12901": null,
-    "customfield_10602": null,
-    "customfield_12900": null,
-    "subtasks": [],
-    "reporter": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
-      "name": "김소영",
-      "key": "김소영",
-      "emailAddress": "sykim@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-      },
-      "displayName": "김소영",
-      "active": true,
-      "timeZone": "Asia/Seoul"
-    },
-    "customfield_10168": null,
-    "customfield_10169": null,
-    "customfield_11800": null,
-    "progress": {
-      "progress": 0,
-      "total": 0
-    },
-    "votes": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-291/votes",
-      "votes": 0,
-      "hasVoted": false
-    },
-    "worklog": {
-      "startAt": 0,
-      "maxResults": 20,
-      "total": 0,
-      "worklogs": []
-    },
-    "issuetype": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
-      "id": "10000",
-      "description": "Represents a Test",
-      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
-      "name": "Test",
-      "subtask": false
-    },
-    "project": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
-      "id": "10000",
-      "key": "COMMONR",
-      "name": "Common Requirement And Test Case",
-      "projectTypeKey": "software",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
-        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
-        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
-        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
-      },
-      "projectCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
-        "id": "10000",
-        "description": "Requirements And Test Cases For The BioStar System Device",
-        "name": "BioStar System Device Requirement And Test Case"
-      }
-    },
-    "customfield_11000": null,
-    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@63a3d920[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6c6e88b0[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@5cb6217[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@1d785116[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@4a530ed3[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@54665a8a[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@a6341cb[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@554c5170[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@7bbf89c[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@61ef40eb[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@71922804[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@46e22097[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
-    "resolutiondate": null,
-    "watches": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-291/watchers",
-      "watchCount": 1,
-      "isWatching": false
-    },
-    "customfield_11900": null,
-    "customfield_11901": null,
-    "updated": "2025-08-01T09:45:37.000+0900",
-    "timeoriginalestimate": null,
-    "description": "https://jira.suprema.co.kr/browse/BDP-693\r\n - 타 시스템과 BioStar 2, 슈프리마 장치를 통합하여 사용하는 사례가 많아 BioStar 2 가 아닌 타 시스템에서 발급한 스마트 카드를 슈프리마 장치에서 읽고자 하는 요구가 빈번하게 발생하고 있다.\r\n - BioStar 2 에서 커스텀 스마트 카드 레이아웃 기능을 통하여 타 시스템에서 발급한 스마트 카드의 데이터 읽기를 지원한다.\r\n\r\nTEST Custom Card 정보(DFW-948)\r\n - DesFire CISF-1722\r\n app id : 16742145\r\n app master key : 3321908746AD8638235E028618393125\r\n file read key : 8C464A62C068C5781E595EEBCC5DCDDD\r\n file read index : 3\r\n file id : 0\r\n encrypt type : AES\r\n skip bytes : 0\r\n data size : 8\r\n data: 2325282374792773715 (0x20:0x45:0x10:0x00:0x00:0x00:0x00:0x53)\r\n| |Hex|Dec|\r\n|MSB|2045100000000053|2325282374792773715|\r\n|LSB|5300000000104520|5980780305149084960|\r\n\r\n - DesFire CISF-2263 / card 값 확인 필요(Card Data 000000000000)\r\n app id : 16711938\r\n app master key : 00000000000000000000000000000000 (default X. 0으로 채워줘야함)\r\n file read key : 32930620944292409944094512991289\r\n file id : 0\r\n encrypt type : AES\r\n data size : 7\r\n data: 1240866690253952 (0x04:0x68:0x8F:0xCA:0x49:0x44:0x80)\r\n| |Hex|Dec|\r\n|MSB|4688FCA494480|1240866690253952|\r\n|LSB|804049CA8F6804|36099482694150148|\r\n\r\n - DesFire CISF-2059\r\n primary key : 76B212CF88FF08A37DE26827042566B1\r\n app id : 6856692(689FF4)\r\n file id : 10\r\n data size : 16\r\n skip bytes : 0\r\n encrypt type : DES\r\n data: 70704483696195065015318880356830281728(0x35:31:30:30:30:30:31:32:33:34:31:32:33:34:00:00)\r\n CSN: 1170385468220032 (0x04:28:75:9A:15:62:80)\r\n| |Hex|Dec|\r\n|MSB|35313030303031323334313233340000|70704483696195065015318880356830281728|\r\n|LSB|00003433323134333231303030303135|1058741469412478029414733626487093|\r\n\r\n - 카드키 정보 변경 후\r\n App Master Key : 76B212CF88FF08A37DE26827042566B1\r\n File Read Key : 3B88CEE1287C96ABCDE8054A5C37721A\r\n App iD : 6856692\r\n File Read Key Index : 1\r\n File ID : 7\r\n Data Size : 4\r\n Skip Bytes : 0\r\n encrypt type : AES\r\n data : 785565235\r\n CSN : 1170385468220032\r\n| |Hex|Dec|\r\n|MSB| | |\r\n|LSB| | |\r\n\r\nLSB 셋팅 필요\r\n - Mifare CISF-1395\r\n Read key: 2431679a4b11\r\n start Block: 60\r\n skip bytes: 5\r\n data size: 11\r\n 카드1(흰색)\r\n Data: 207802788164215429398528 (00:2C:01:03:00:00:FF:00:00:00:00)\r\n CSN: 4044635060 (0xF1:14:3B:B4)\r\n| |Hex|Dec|\r\n|MSB|2C01030000FF00000000|207802788164215429398528|\r\n|LSB|00000000FF000003012C00|71776119111625728|\r\n\r\n카드2(검정노랑)\r\n Data: 59493317280093887366443058 (31:36:33:31:32:35:30:30:30:30:32)\r\n CSN: 1237962303 (49:C9:CE:3F)\r\n| |Hex|Dec|\r\n|MSB|3136333132353030303032|59493317280093887366443058|\r\n|LSB|3230303030353231333631|60673853487958542156772913|",
-    "customfield_10251": null,
-    "customfield_10252": null,
-    "customfield_10253": null,
-    "customfield_10254": null,
-    "customfield_10255": null,
-    "timetracking": {},
-    "customfield_10257": null,
-    "customfield_10247": null,
-    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. Settings&gt; Card Format&gt; Smart Card&gt; Add Smart Card<br/>2. Card Type: Custom Smart Card 선택<br/>3. Smart Card Tab 선택<br/>4. Layout UI 확인</p></td><td><p>Smart Card Tab<br/>: Mifare</p>\n</td><td><p>1. Data Size(byte) / Skip Bytes 표시된다.<br/>&gt; Data Size: 1 ~ 32bytes(Default: 8bytes) 범위 지원<br/>&gt; Skip Bytes: 0 ~ 15 지원</p>\n\n<p>※ 1차: Raw만 지원</p></td></tr><tr><td>2</td><td><p>1. Settings&gt; Card Format&gt; Smart Card&gt; Add Smart Card<br/>2. Card Type: Custom Smart Card 선택<br/>3. Smart Card Tab 선택<br/>4. Layout UI 확인</p></td><td><p>Smart Card Tab<br/>: DesFire<br/>=&gt; Advanced: Disable</p></td><td><p>1. Encryption Type의 Default는 AES이다.<br/>2. Convert to HEX UI 미출력된다.<br/>3. Data Size(byte) 표시된다.<br/>&gt; 1 ~ 32bytes(Default: 8bytes)</p></td></tr><tr><td>3</td><td><p>1. Settings&gt; Card Format&gt; Smart Card&gt; Add Smart Card<br/>2. Card Type: Custom Smart Card 선택<br/>3. Smart Card Tab 선택<br/>4. 해당탭의 UI 확인</p></td><td><p>Smart Card Tab<br/>: DesFire<br/>=&gt; Advanced: Enable</p></td><td><p>1. Custom Smart Card의 경우 Read만 지원하기 때문에 기존 지원되는 UI에서 File Write Access Key / File Write Key Index는 삭제.</p></td></tr><tr><td>4</td><td><p>1. Settings&gt; Card Format&gt; Smart Card&gt; Add Smart Card<br/>2. Card Type: Custom Smart Card 선택<br/>3. Smart Card Tab 선택<br/>4. 해당탭의 UI 확인</p></td><td><p>Smart Card Tab<br/>: iClass</p></td><td><p>1. 기존 지원되던 UI에서 Convert to HEX UI 미출력된다.</p></td></tr><tr><td>5</td><td><p>1. Settings&gt; Card Format&gt; Smart Card&gt; Add Smart Card<br/>2. Card Type: Custom Smart Card 선택<br/>3. Smart Card Tab 선택<br/>4. 해당탭의 UI 확인</p></td><td><p>Smart Card Tab<br/>: iClass SEOS</p></td><td><p>1. 기존 지원되던 UI에서 Convert to HEX UI 미출력된다.</p></td></tr><tr><td>6</td><td><p><span class=\"error\">&#91;Custom Smart Card Layout 설정된 상태&#93;</span><br/>1. 장치상세정보창&gt; Card Type&gt; Smart Card<br/>2. Custom Smart Card: Layout 설정<br/>3. User&gt; User Add&gt; +Card<br/>4. Card Type: Smart Card 선택<br/>5. Device: Custom Smart Card Layout 설정된 장치 선택<br/>6. SmartCard Type: Custom Smart Card 선택<br/>7. Registration Option: Register by Card Reader<br/>8. Read Card&gt; 카드읽히지 않은 상태로 10초간 유지</p></td><td></td><td><p>1. Timeout 발생된다.</p></td></tr><tr><td>7</td><td><p><span class=\"error\">&#91;Custom Smart Card Layout 설정된 상태&#93;</span><br/>1. 장치상세정보창&gt; Card Type&gt; Smart Card<br/>2. Custom Smart Card: Layout 설정<br/>3. User&gt; User Add&gt; +Card<br/>4. Card Type: Smart Card 선택<br/>5. Device: Custom Smart Card Layout 설정된 장치 선택<br/>6. SmartCard Type: Custom Smart Card 선택<br/>7. Registration Option: Register by Card Reader<br/>8. Read Card&gt; Custom Smart Card Read</p></td><td><p>Custm Smart Card Read<br/>&gt; Key 일치</p></td><td><p>1. Key 일치시 타사에서 발급한 스마트 카드가 등록된다.</p></td></tr><tr><td>8</td><td><p><span class=\"error\">&#91;Custom Smart Card Layout 설정된 상태&#93;</span><br/>1. 장치상세정보창&gt; Card Type&gt; Smart Card<br/>2. Custom Smart Card: Layout 설정<br/>3. User&gt; User Add&gt; +Card<br/>4. Card Type: Smart Card 선택<br/>5. Device: Custom Smart Card Layout 설정된 장치 선택<br/>6. SmartCard Type: Custom Smart Card 선택<br/>7. Registration Option: Register by Card Reader<br/>8. Read Card&gt; Custom Smart Card Read</p></td><td><p>Custm Smart Card Read<br/>&gt; Key 불일치</p></td><td><p>1. CSN 카드 정보로 리드됨</p></td></tr><tr><td>9</td><td><p>1. 장치상세정보창&gt; Card Type&gt; Smart Card<br/>2. Custom Smart Card: Layout 설정<br/>3. Byte Order 설정: MSB<br/>4. Custom Smart Card Read</p></td><td><p>Custom Smart Card의 Data Format<br/>&gt; Raw(Decimal)</p>\n\n<p>Byte Order<br/>&gt; MSB<br/>&gt; LSB</p>\n\n<ul>\n<li>CSN과 동일하게 MSB/LSB 가 다른 카드로 인식</li>\n<li>본문 내용 참고(MSB/LSB 값)</li>\n</ul>\n</td><td><p>1. Byte Order 설정에 맞게 출력된다.<br/>2. 1:1 인증 성공 (카드) 로그 출력된다.</p></td></tr><tr><td>10</td><td><p>1. 장치상세정보창&gt; Card Type&gt; Smart Card<br/>2. Custom Smart Card: Layout 설정<br/>3. Byte Order 설정 : LSB<br/>4. Custom Smart Card Read</p></td><td><p>Custom Smart Card의 Data Format<br/>&gt; Raw(Decimal)</p>\n\n<p>Byte Order<br/>&gt; MSB<br/>&gt; LSB</p>\n\n<ul>\n<li>CSN과 동일하게 MSB/LSB 가 다른 카드로 인식</li>\n<li>본문 내용 참고(MSB/LSB 값)</li>\n</ul>\n</td><td><p>1. Byte Order 설정에 맞게 출력된다.<br/>2. 1:1 인증 성공 (카드) 로그 출력된다.</p></td></tr><tr><td>11</td><td><p>1. 장치상세정보창&gt; Card Type&gt; Smart Card<br/>2. Custom Smart Card: Layout 설정<br/>3. Byte Order 설정<br/>4. Custom Smart Card Read</p></td><td><p>Custom Smart Card의 Data Format<br/>&gt; ASCII</p>\n\n<p>Byte Order<br/>&gt; MSB<br/>&gt; LSB</p></td><td><p>1. Byte Order 설정에 맞게 출력된다.<br/>2. 1:1 인증 성공 (카드) 로그 출력된다.</p>\n\n<p>※ 1차에서 ASCII 미지원</p></td></tr><tr><td>12</td><td><p>1. 장치상세정보창&gt; Card Type&gt; Smart Card<br/>2. Custom Smart Card: Layout 설정<br/>3. Byte Order 설정<br/>4. Custom Smart Card Read</p></td><td><p>Custom Smart Card의 Data Format<br/>&gt; BCD</p>\n\n<p>Byte Order<br/>&gt; MSB<br/>&gt; LSB</p></td><td><p>1. Byte Order 설정에 맞게 출력된다.<br/>2. 1:1 인증 성공 (카드) 로그 출력된다.</p>\n\n<p>※ 1차에서 BCD 미지원</p></td></tr><tr><td>13</td><td><p>1. User&gt; Add User&gt; +Card<br/>2. Custom Smart Card 등록<br/>3. Custom Smart Card Block<br/>4. Custom Smart Card Unblock</p></td><td><p>Custom SmartCard Layout <br/>&gt; Key 일치</p></td><td><p>1. Block시 Blacklist로 동작된다.<br/>2. Unblock시 인증성공으로 동작된다.</p></td></tr><tr><td>14</td><td><p>1. Custom Smart Card Read</p></td><td><p>Custom SmartCard Layout <br/>&gt; Key 불일치</p></td><td><p>1. CSN 카드 정보로 읽힌다.</p></td></tr><tr><td>15</td><td><p>1. Custom Smart Card Read</p></td><td><p>Custom SmartCard Layout <br/>&gt; Key 일치<br/>&gt; Data Format 불일치</p></td><td><p>1. CSN 카드 정보로 읽힌다.</p></td></tr><tr><td>16</td><td><p>1. Settings&gt; Card Format&gt; Smart Card&gt; Add Smart Card<br/>2. Card Type: Custom Smart Card 선택<br/>3. Smart Card Tab 선택<br/>4. Layout UI 설정<br/>5. 장치에 Custom Smart Card Layout 설정<br/>6. Custom Smart Card Read</p></td><td><p>Mifare Layout 설정<br/>&gt; Data Size/Data Format<br/>&gt; Skip Bytes<br/>예시.<br/>Skip Bytes: 3</p></td><td><p>1. 3byte를 건너뛰고 이후의 위치부터 카드ID가 리드된다.</p></td></tr><tr><td>17</td><td><p>1. Settings&gt; Card Format&gt; Smart Card&gt; Add Smart Card<br/>2. Card Type: Custom Smart Card 선택<br/>3. Smart Card Tab 선택<br/>4. Layout UI 설정<br/>5. 장치에 Custom Smart Card Layout 설정<br/>6. Custom Smart Card Read</p></td><td><p>Mifare Layout 설정<br/>&gt; Data Size/Data Format<br/>&gt; Skip Bytes: 3<br/>예시.<br/>실제 카드에서 읽혀야 하는 Data 위치: 5</p></td><td><p>1. Skip Bytes가 불일치할 경우 인증실패로 동작된다.</p></td></tr><tr><td>18</td><td><p>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 Custom Smart Card Read<br/>3. Wiegand In으로 들어온 값 확인</p></td><td><p>Wiegand Out 장치<br/>&gt; Custom Smart Card Layout 설정<br/>=&gt; Data Format: Raw(Decimal)</p>\n\n<p>Wiegand Format<br/>&gt; Default<br/>&gt; 임의 Custom Format</p>\n\n<p>Custom Smart Card Byte Order<br/>&gt; MSB</p></td><td><p>1. 리드된 카드ID가 위겐드 포맷에 맞게 동작된다.<br/>예시. <br/>발급ID - 12121212121212<br/>Wiegand Format - 26bit<br/>=&gt; Input data - 9105532</p></td></tr><tr><td>19</td><td><p>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 Custom Smart Card Read<br/>3. Wiegand In으로 들어온 값 확인</p></td><td><p>Wiegand Out 장치<br/>&gt; Custom Smart Card Layout 설정<br/>=&gt; Data Format: Raw(Decimal)</p>\n\n<p>Wiegand Format<br/>&gt; Default<br/>&gt; 임의 Custom Format</p>\n\n<p>Custom Smart Card Byte Order<br/>&gt; LSB</p>\n\n<ul>\n<li>본문 내용 참고(MSB/LSB 값)</li>\n</ul>\n</td><td><p>1. 리드된 카드ID의 LSB값이 위겐드 포맷에 맞게 동작된다.<br/>예시. <br/>발급ID - 12121212121212<br/>Wiegand Format - 26bit<br/>=&gt; Input data - 3147275</p></td></tr><tr><td>20</td><td><p>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 Custom Smart Card Read<br/>3. Wiegand In으로 들어온 값 확인</p></td><td><p>Wiegand Out 장치<br/>&gt; Custom Smart Card Layout 설정<br/>=&gt; Data Format: ASCII</p>\n\n<p>Wiegand Format<br/>&gt; Default<br/>&gt; 임의 Custom Format</p>\n\n<p>Custom Smart Card Byte Order<br/>&gt; MSB</p></td><td><p>1. 리드된 카드ID가 위겐드 포맷에 맞게 동작된다.<br/> 예시.<br/> 발급ID - 12121212(=3132 3132 3132 3132)<br/> Wiegand Format - 26bit<br/> =&gt; Input data - 3289394(=32 3132)</p>\n\n<p>※ 1차에서 ASCII 미지원</p></td></tr><tr><td>21</td><td><p>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 Custom Smart Card Read<br/>3. Wiegand In으로 들어온 값 확인</p></td><td><p>Wiegand Out 장치<br/>&gt; Custom Smart Card Layout 설정<br/>=&gt; Data Format: ASCII</p>\n\n<p>Wiegand Format<br/>&gt; Default<br/>&gt; 임의 Custom Format</p>\n\n<p>Custom Smart Card Byte Order<br/>&gt; LSB</p>\n\n<ul>\n<li>본문 내용 참고(MSB/LSB 값)</li>\n</ul>\n</td><td><p>1. 리드된 카드ID의 LSB값이 위겐드 포맷에 맞게 동작된다.<br/> 예시. <br/> 발급ID - 12121212(=3132 3132 3132 3132)<br/> Wiegand Format - 26bit<br/> =&gt; Input data - 3224113(=31 3231)</p>\n\n<p>※ 1차에서 ASCII 미지원</p></td></tr><tr><td>22</td><td><p>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 Custom Smart Card Read<br/>3. Wiegand In으로 들어온 값 확인</p></td><td><p>Wiegand Out 장치<br/>&gt; Custom Smart Card Layout 설정<br/>=&gt; Data Format: BCD</p>\n\n<p>Wiegand Format<br/>&gt; Default<br/>&gt; 임의 Custom Format</p>\n\n<p>Custom Smart Card Byte Order<br/>&gt; MSB</p></td><td><p>1. 리드된 카드ID가 위겐드 포맷에 맞게 동작된다.<br/>예시. <br/>12121212(=0001 0010 0001 0010 0001 0010 0001 0010)<br/>Wiegand Format - 26bit<br/>=&gt; Input data - 1184274(=12 1212)</p>\n\n<p>※ 1차에서 BCD 미지원</p></td></tr><tr><td>23</td><td><p>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 Custom Smart Card Read<br/>3. Wiegand In으로 들어온 값 확인</p></td><td><p>Wiegand Out 장치<br/>&gt; Custom Smart Card Layout 설정<br/>=&gt; Data Format: BCD</p>\n\n<p>Wiegand Format<br/>&gt; Default<br/>&gt; 임의 Custom Format</p>\n\n<p>Custom Smart Card Byte Order<br/>&gt; LSB</p>\n\n<ul>\n<li>본문 내용 참고(MSB/LSB 값)</li>\n</ul>\n</td><td><p>1. 리드된 카드ID의 LSB값이 위겐드 포맷에 맞게 동작된다.<br/>예시. <br/>12121212(=0001 0010 0001 0010 0001 0010 0001 0010)<br/>Wiegand Format - 26bit<br/>=&gt; Input data - 1184274(=12 1212)</p>\n\n<p>※ 1차에서 BCD 미지원</p></td></tr><tr><td>24</td><td><p>1. OSDP Tool과 연결<br/>2. 연결된 장치에 Custom Smart Card Read<br/>3. OSDP로 출력되는 값 확인</p></td><td><p>3rd party reader<br/>&gt; RS485 모드: Default</p>\n\n<p>Custom Smart Card Layout 설정<br/>=&gt; Data Format: Raw(Decimal)</p>\n\n<p>Custom Smart Card Byte Order<br/>&gt; MSB</p></td><td><p>1. 인증성공 후 발급된 카드ID가 출력된다.<br/>&gt; 발급된 Card ID의 BitCount<br/>&gt; 발급된 Card ID값<br/>&gt; 예시. 12345678(=BC 614E)</p></td></tr><tr><td>25</td><td><p>1. OSDP Tool과 연결<br/>2. 연결된 장치에 Custom Smart Card Read<br/>3. OSDP로 출력되는 값 확인</p></td><td><p>3rd party reader<br/>&gt; RS485 모드: Default</p>\n\n<p>Custom Smart Card Layout 설정<br/>=&gt; Data Format: Raw(Decimal)</p>\n\n<p> Custom Smart Card Byte Order<br/>&gt; LSB</p>\n\n<ul>\n<li>본문 내용 참고(MSB/LSB 값)</li>\n</ul>\n</td><td><p>1. 인증성공 후 발급된 카드ID가 LSB값으로 출력된다.<br/>&gt; 발급된 Card ID의 BitCount<br/>&gt; 발급된 Card ID값</p></td></tr><tr><td>26</td><td><p>1. OSDP Tool과 연결<br/>2. 연결된 장치에 Custom Smart Card Read<br/>3. OSDP로 출력되는 값 확인</p></td><td><p>3rd party reader<br/>&gt; RS485 모드: Default</p>\n\n<p>Custom Smart Card Layout 설정<br/>=&gt; Data Format: ASCII</p>\n\n<p>Custom Smart Card Byte Order<br/>&gt; MSB</p></td><td><p>1. 인증성공 후 발급된 카드ID가 출력된다.<br/>&gt; 발급된 Card ID의 BitCount<br/>&gt; 발급된 Card ID값<br/>&gt; 예시. sykim<br/>=&gt; MSB: 495958321517(73 796B 696D)</p>\n\n<p>※ 1차에서 ASCII 미지원</p></td></tr><tr><td>27</td><td><p>1. OSDP Tool과 연결<br/>2. 연결된 장치에 Custom Smart Card Read<br/>3. OSDP로 출력되는 값 확인</p></td><td><p>3rd party reader<br/>&gt; RS485 모드: Default</p>\n\n<p>Custom Smart Card Layout 설정<br/>=&gt; Data Format: ASCII</p>\n\n<p>Custom Smart Card Byte Order<br/>&gt; LSB</p>\n\n<ul>\n<li>본문 내용 참고(MSB/LSB 값)</li>\n</ul>\n</td><td><p>1. 인증성공 후 발급된 카드ID가 LSB값으로 출력된다.<br/>&gt; 발급된 Card ID의 BitCount<br/>&gt; 발급된 Card ID값</p>\n\n<p>※ 1차에서 ASCII 미지원</p></td></tr><tr><td>28</td><td><p>1. OSDP Tool과 연결<br/>2. 연결된 장치에 Custom Smart Card Read<br/>3. OSDP로 출력되는 값 확인</p></td><td><p>3rd party reader<br/>&gt; RS485 모드: Default</p>\n\n<p>Custom Smart Card Layout 설정<br/>=&gt; Data Format: BCD</p>\n\n<p>Custom Smart Card Byte Order<br/>&gt; MSB</p></td><td><p>1. 인증성공 후 발급된 카드ID가 출력된다.<br/>&gt; 발급된 Card ID의 BitCount<br/>&gt; 발급된 Card ID값<br/>&gt; 예시. 12341234(=0001 0010 0011 0100 0001 0010 0011 0100)<br/>=&gt; MSB: 305402420</p>\n\n<p>※ 1차에서 BCD 미지원</p></td></tr><tr><td>29</td><td><p>1. OSDP Tool과 연결<br/>2. 연결된 장치에 Custom Smart Card Read<br/>3. OSDP로 출력되는 값 확인</p></td><td><p>3rd party reader<br/>&gt; RS485 모드: Default</p>\n\n<p>Custom Smart Card Layout 설정<br/>=&gt; Data Format: BCD</p>\n\n<p> Custom Smart Card Byte Order<br/>&gt; LSB</p>\n\n<ul>\n<li>본문 내용 참고(MSB/LSB 값)</li>\n</ul>\n</td><td><p>1. 인증성공 후 발급된 카드ID가 LSB값으로 출력된다.<br/>&gt; 발급된 Card ID의 BitCount<br/>&gt; 발급된 Card ID값<br/>※ 1차에서 BCD 미지원</p></td></tr><tr><td>30</td><td><p>1. OSDP Tool과 연결<br/>2. 연결된 장치에 Custom Smart Card Read<br/>3. OSDP로 출력되는 값 확인</p></td><td><p>3rd party reader<br/>&gt; RS485 모드: Slave</p>\n\n<p>Custom Smart Card Layout 설정<br/>=&gt; Data Format: Raw(Decimal)</p>\n\n<p>Custom Smart Card Byte Order<br/>&gt; MSB</p></td><td><p>1. 발급된 카드ID가 출력된다.<br/>&gt; 발급된 Card ID의 BitCount<br/>&gt; 발급된 Card ID값<br/>&gt; 예시. 12345678(=BC 614E)</p></td></tr><tr><td>31</td><td><p>1. OSDP Tool과 연결<br/>2. 연결된 장치에 Custom Smart Card Read<br/>3. OSDP로 출력되는 값 확인</p></td><td><p>3rd party reader<br/>&gt; RS485 모드: Slave</p>\n\n<p>Custom Smart Card Layout 설정<br/>=&gt; Data Format: Raw(Decimal)</p>\n\n<p> Custom Smart Card Byte Order<br/>&gt; LSB</p>\n\n<ul>\n<li>본문 내용 참고(MSB/LSB 값)</li>\n</ul>\n</td><td><p>1. 발급된 카드ID가 LSB값으로 출력된다.<br/>&gt; 발급된 Card ID의 BitCount<br/>&gt; 발급된 Card ID값</p></td></tr><tr><td>32</td><td><p>1. OSDP Tool과 연결<br/>2. 연결된 장치에 Custom Smart Card Read<br/>3. OSDP로 출력되는 값 확인</p></td><td><p>3rd party reader<br/>&gt; RS485 모드: Slave</p>\n\n<p>Custom Smart Card Layout 설정<br/>=&gt; Data Format: ASCII</p>\n\n<p>Custom Smart Card Byte Order<br/>&gt; MSB</p></td><td><p>1. 발급된 카드ID가 출력된다.<br/>&gt; 발급된 Card ID의 BitCount<br/>&gt; 발급된 Card ID값<br/>&gt; 예시. sykim<br/>=&gt; MSB: 495958321517(73 796B 696D)</p>\n\n<p>※ 1차에서 ASCII 미지원</p></td></tr><tr><td>33</td><td><p>1. OSDP Tool과 연결<br/>2. 연결된 장치에 Custom Smart Card Read<br/>3. OSDP로 출력되는 값 확인</p></td><td><p>3rd party reader<br/>&gt; RS485 모드: Slave</p>\n\n<p>Custom Smart Card Layout 설정<br/>=&gt; Data Format: ASCII</p>\n\n<p> Custom Smart Card Byte Order<br/>&gt; LSB</p>\n\n\n<ul>\n<li>본문 내용 참고(MSB/LSB 값)</li>\n</ul>\n</td><td><p>1. 발급된 카드ID가 LSB값으로 출력된다.<br/>&gt; 발급된 Card ID의 BitCount<br/>&gt; 발급된 Card ID값</p>\n\n<p>※ 1차에서 ASCII 미지원</p></td></tr><tr><td>34</td><td><p>1. OSDP Tool과 연결<br/>2. 연결된 장치에 Custom Smart Card Read<br/>3. OSDP로 출력되는 값 확인</p></td><td><p>3rd party reader<br/>&gt; RS485 모드: Slave</p>\n\n<p>Custom Smart Card Layout 설정<br/>=&gt; Data Format: BCD</p>\n\n<p>Custom Smart Card Byte Order<br/>&gt; MSB</p></td><td><p>1. 발급된 카드ID가 출력된다.<br/>&gt; 발급된 Card ID의 BitCount<br/>&gt; 발급된 Card ID값<br/>&gt; 예시. 12341234(=0001 0010 0011 0100 0001 0010 0011 0100)<br/>=&gt; MSB: 305402420</p>\n\n<p>※ 1차에서 BCD 미지원</p></td></tr><tr><td>35</td><td><p>1. OSDP Tool과 연결<br/>2. 연결된 장치에 Custom Smart Card Read<br/>3. OSDP로 출력되는 값 확인</p></td><td><p>3rd party reader<br/>&gt; RS485 모드: Slave</p>\n\n<p>Custom Smart Card Layout 설정<br/>=&gt; Data Format: BCD</p>\n\n<p> Custom Smart Card Byte Order<br/>&gt; LSB</p>\n\n<ul>\n<li>본문 내용 참고(MSB/LSB 값)</li>\n</ul>\n</td><td><p>1. 발급된 카드ID가 LSB값으로 출력된다.<br/>&gt; 발급된 Card ID의 BitCount<br/>&gt; 발급된 Card ID값</p>\n\n<p>※ 1차에서 BCD 미지원</p></td></tr><tr><td>36</td><td><p>1. Custom Smart Card Layout을 미지원 하는 버전에서 지원하는 버전으로 FW Upgrade<br/>2. Custom Smart Card 항목의 Default 확인</p></td><td><p>장치 초기화 후 FW Upgrade</p></td><td><p>1. FW Upgrade시 Off로 동작한다.</p></td></tr><tr><td>37</td><td><p>1. Custom Smart Card Layout을 미지원 하는 버전에서 지원하는 버전으로 FW Upgrade<br/>2. Reset All 수행<br/>3. Custom Smart Card 항목의 Default 확인</p></td><td></td><td><p>1. 초기화시 Off로 동작한다.</p></td></tr><tr><td>38</td><td><p>1. Custom Smart Card 미지원 master<br/>2. Custom Smart Card 지원 slave 연결 &gt; slave 장치 상세정보창 진입</p></td><td></td><td><p>1. Custom Smart Card UI 미출력 확인<br/>2. 커스텀 스마트 카드 레이아웃을 미지원하는 슈프리마 Master에 연결하는 경우에는 동작하지 않는다.</p></td></tr><tr><td>39</td><td><p>1. Custom Smart Card 지원 master<br/>2. Custom Smart Card 지원 slave 연결 &gt; slave 장치 상세정보창 진입</p></td><td></td><td><p>1. Custom Smart Card UI 출력 확인</p></td></tr><tr><td>40</td><td><p>1. OSDP Tool과 연결<br/>2. 연결된 장치에 Custom Smart Card Read<br/>3. OSDP로 출력되는 값 확인</p></td><td><p>OSDP로 연결된 장치<br/>&gt; Default 모드<br/>&gt; Output info - User ID</p>\n\n<p>Custom Smart Card Layout 설정</p>\n\n<p> Custom Smart Card Byte Order<br/>&gt; MSB</p>\n</td><td><p>1. MSB Card 로 등록한 사용자 ID 가 출력된다.<br/>ex) User ID - 12345 <br/>=&gt; hex 값 3039 출력</p>\n<ul>\n<li>데이터 그대로 출력(순서 변경 X)</li>\n</ul>\n</td></tr><tr><td>41</td><td>\n<p>1. OSDP Tool과 연결<br/>2. 연결된 장치에 Custom Smart Card Read<br/>3. OSDP로 출력되는 값 확인</p></td><td><p>OSDP로 연결된 장치<br/>&gt; Default 모드<br/>&gt; Output info - User ID</p>\n\n<p>Custom Smart Card Layout 설정</p>\n\n<p> Custom Smart Card Byte Order<br/>&gt; LSB</p>\n\n<ul>\n<li>본문 내용 참고(MSB/LSB 값)</li>\n</ul>\n</td><td><p>1. LSB Card 로 등록한 사용자 ID 가 출력된다.<br/>ex) User ID - 6789<br/>=&gt; hex 값 1A85 출력</p>\n<ul>\n<li>데이터 그대로 출력(순서 변경 X)</li>\n</ul>\n</td></tr><tr><td>42</td><td><p>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 Custom Smart Card Read<br/>3. Wiegand In으로 들어온 값 확인</p></td><td><p>Wiegand Out 장치<br/> &gt; Custom Smart Card Layout 설정</p>\n\n<p>Wiegand Output Info<br/> &gt; User ID</p>\n\n<p>Wiegand Format<br/> &gt; Default<br/> &gt; 임의 Custom Format</p>\n\n<p>Custom Smart Card Byte Order<br/> &gt; MSB</p>\n\n<p>Bypass</p>\n\n<p>&gt; ON/OFF</p></td><td><p>1. MSB Card 로 등록한 사용자 ID 가 출력된다.<br/> ex) User ID - 12345 <br/> =&gt; hex 값 3039 출력<br/>2. Bypass 인 경우, User ID를 내보내는 옵션이 적용되지 않는다.(카드ID 출력)</p>\n\n<ul>\n<li>데이터 그대로 출력(순서 변경 X)</li>\n</ul>\n</td></tr><tr><td>43</td><td><p>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 Custom Smart Card Read<br/>3. Wiegand In으로 들어온 값 확인</p></td><td><p>Wiegand Out 장치<br/> &gt; Custom Smart Card Layout 설정</p>\n\n<p>Wiegand Output Info<br/> &gt; User ID</p>\n\n<p>Wiegand Format<br/> &gt; Default<br/> &gt; 임의 Custom Format</p>\n\n<p>Custom Smart Card Byte Order<br/> &gt; LSB</p>\n\n<p>Bypass</p>\n\n<p>&gt; ON/OFF</p></td><td><p>1. LSB Card 로 등록한 사용자 ID 가 출력된다.<br/>ex) User ID - 6789<br/>=&gt; hex 값 1A85 출력<br/>2. Bypass 인 경우, User ID를 내보내는 옵션이 적용되지 않는다.(카드ID 출력)</p>\n<ul>\n<li>데이터 그대로 출력(순서 변경 X)</li>\n</ul>\n</td></tr><tr><td>44</td><td><p>1. 커스텀 카드 지원 장치 두대이상 선택&gt; Batch Edit 클릭</p></td><td></td><td><p>1.'커스텀 스마트 카드' / '커스텀 스마트 카드 레이아웃' 옵션 확인<br/>&gt; Default - Disabled</p></td></tr><tr><td>45</td><td><p>1. 커스텀 카드 지원 장치 두대이상 선택&gt; Batch Edit 클릭<br/>2. 커스텀 스마트 카드 &gt; Enabled<br/>3. 카드 종류 설정 후 적용<br/>4. 장치상세정보창 진입</p></td><td></td><td><p>1. 사용할 카드 종류에 대하여 체크 박스를 선택할 수 있다.<br/>&gt; Classic/Plus<br/>&gt; DESFire, DESFire EV1/EV2/EV3<br/>2. 선택한 카드 종류 적용 확인</p></td></tr><tr><td>46</td><td>\n<p>1. 커스텀 카드 지원 장치 두대이상 선택&gt; Batch Edit 클릭<br/>2. 커스텀 스마트 카드 레이아웃 &gt; 레이아웃 선택<br/>3. 레이아웃 선택 후 적용<br/>4. 장치 상세정보창 진입</p></td><td></td><td><p>1. 커스텀 스마트 카드로 생성된 레이아웃 목록 표시 확인<br/>&gt; 커스텀 스마트 카드로 생성된 레이아웃 목록만 표시<br/>2. 선택한 레이아웃 적용 확인</p>\n</td></tr><tr><td>47</td><td><p>1. 커스텀 카드 지원 장치 두대이상 선택&gt; Batch Edit 클릭<br/>2. 커스텀 스마트 카드 &gt; Enabled &gt; 카드 종류 선택<br/>3. 커스텀 스마트 카드 레이아웃 &gt; 레이아웃 선택 <br/>4. 카드종류 &amp; 레이아웃 적용<br/>5. 장치 상세정보창 진입</p></td><td></td><td><p>1. 선택한 카드 종류 &amp; 레이아웃 적용 확인</p>\n</td></tr><tr><td>48</td><td><p>1. 장치에 커스텀 카드 레이아웃 설정<br/>2. 카드 레이아웃 중 Secondary Key로 설정한 Key를 가진 카드리드</p></td><td><p>커스텀 카드 레이아웃 설정상태<br/>&gt; Primary Key - Default<br/>&gt; Secondary Key - Key 일치(리드할 카드)</p>\n\n<ul class=\"alternate\" type=\"square\">\n<li>Mifare</li>\n<li>DesFire(Advanced)</li>\n</ul>\n</td><td><p>1. Secondary Key로 인증성공으로 동작한다.</p></td></tr><tr><td>49</td><td><p>1. 장치에 Suprema Smart Card Layout/Custom Smart Card Layout 모두 설정<br/>2. 장치재시작(SW Reset)<br/>3. Custom Smart Card 리드</p></td><td><p>: Suprema Smart Card Layout - Default Key(Secondary key: disable)<br/>: Custom Smart Card Layout - Secondary Key 설정</p></td><td><p>1. 발급된 카드 정보로 리드되어야 한다.</p></td></tr><tr><td>50</td><td><p>1. 장치에 Suprema Smart Card Layout/Custom Smart Card Layout 모두 설정<br/>2. 장치재시작(SW Reset)<br/>3. Suprema Smart Card 리드</p></td><td><p>: Custom Smart Card Layout - Default Key(Secondary key: disable)<br/>: Suprema Smart Card Layout - Secondary Key 설정</p></td><td><p>1. 발급된 카드 정보로 리드되어야 한다.</p></td></tr><tr><td>51</td><td><p>-Mifare Custom Smart Card<br/>1. 설정 &gt; 카드 형식 &gt; Custom Smart Card Layout - Secondary Key 설정(A Layout)<br/>2. 장치 &gt; Custom Smart Card 포맷에 A 레이아웃 선택<br/>3. A사용자 &gt; Secondary Key 커스텀 카드 등록 &gt; 인증<br/>4. 장치 &gt; Primary key Custom Card Layout(B Layout)으로 변경<br/>5. A사용자 &gt; 등록된 커스텀 카드 삭제<br/>6. B사용자 &gt; 카드 &gt; Primary Key Custom Card read </p></td><td><p>A사용자, A Layout - Secondary Key 카드<br/>ex) Primary Key - default Key / Secondary Key - 1234</p>\n\n<p>B사용자, B Layout - Primary Key 카드<br/>ex) Primary Key - 1234 / Secondary Key - Inactive</p></td><td><p>1. 발급된 카드 정보로 리드되어야 한다.<br/> *CSN 카드 정보로 리드됨<br/> <a href=\"https://jira.suprema.co.kr/browse/BLNIIFW-1154\" title=\"Mifare Custom Smart Card Secondary Key 레이아웃 삭제 후 Primary Key 레이아웃으로 설정 시 CSN 으로 인식\" class=\"issue-link\" data-issue-key=\"BLNIIFW-1154\">BLNIIFW-1154</a> (현상태 유지)<br/><img src=\"https://jira.suprema.co.kr/images/icons/attach/noimage.png\" imagetext=\"Mifarer.png|thumbnail\" align=\"absmiddle\" border=\"0\" /></p></td></tr><tr><td>52</td><td><p>-DesFire Custom Smart Card<br/>1. 설정 &gt; Card Format &gt; Custom Smart Card Layout - Secondary Key 설정(A Layout)<br/>2. 장치 &gt; Custom Smart Card 포맷에 A 레이아웃 선택<br/>3. A사용자 &gt; Secondary Key 커스텀 카드 등록 &gt; 인증<br/>4. 장치 &gt; Primary key Custom Card Layout(B Layout)으로 변경<br/>5. A사용자 &gt; 등록된 커스텀 카드 삭제<br/>6. B사용자 &gt; 카드 &gt; Primary Key Custom Card read</p></td><td><p>A사용자, A Layout - Secondary Key 카드<br/>ex) Primary Key - default Key / Secondary Key - 1234</p>\n\n<p>B사용자, B Layout - Primary Key 카드<br/>ex) Primary Key - 1234 / Secondary Key - Inactive</p></td><td><p>1. 발급된 카드 정보로 리드되어야 한다.</p></td></tr><tr><td>53</td><td><p>-Mifare Suprema Smart Card<br/>1. 설정 &gt; 카드 형식 &gt; Suprema Smart Card Layout - Secondary Key 설정(A Layout)<br/>2. 장치 &gt; Suprema Smart Card 포맷에 A 레이아웃 선택<br/>3. A사용자 &gt; Secondary Key Suprema 카드 발급 &gt; 인증<br/>4. 장치 &gt; Primary key Suprema Card Layout(B Layout)으로 변경<br/>5. A사용자 &gt; 등록된 Suprema 카드 삭제<br/>6. B사용자 &gt; 카드 &gt; Primary Key Suprema Card read </p></td><td><p>A사용자, A Layout - Secondary Key 카드(Primary Key-Default)<br/>B사용자, B Layout - Primary Key 카드(Secondary Key Inactive)</p></td><td><p>1. CSN 카드 정보로 리드됨</p></td></tr><tr><td>54</td><td><p>-DesFire Suprema Smart Card<br/>1. 설정 &gt; Card Format &gt; Suprema Smart Card Layout - Secondary Key 설정(A Layout)<br/>2. 장치 &gt; Suprema Smart Card 포맷에 A 레이아웃 선택<br/>3. A사용자 &gt; Secondary Key Suprema 카드 등록 &gt; 인증<br/>4. 장치 &gt; Primary key Suprema Card Layout(B Layout)으로 변경<br/>5. A사용자 &gt; 등록된 Suprema 카드 삭제<br/>6. B사용자 &gt; 카드 &gt; Primary Key Suprema Card read</p></td><td><p>A사용자, A Layout - Secondary Key 카드<br/>ex) Primary Key - default Key / Secondary Key - 1234</p>\n\n<p>B사용자, B Layout - Primary Key 카드<br/>ex) Primary Key - 1234 / Secondary Key - Inactive</p></td><td><p>1. CSN 카드 정보로 리드됨</p></td></tr><tr><td>55</td><td><p>-Mifare Custom/Suprema Smart Card (<a href=\"https://jira.suprema.co.kr/browse/XPASSII-594\" title=\"SL3 레이아웃 설정된 장치에서 인증실패 후 SL1 레이아웃 장치에 SL1 카드 인증 시 CSN 값으로 읽혀 인증 실패 되는 현상\" class=\"issue-link\" data-issue-key=\"XPASSII-594\"><del>XPASSII-594</del></a>) <br/>1. 장치 &gt;  Primary key Suprema Card Layout(#1 Layout) 설정 &gt; #1 사용자 등록<br/>2. 장치 &gt; #1_Second Layout 설정 &gt; #1 사용자 인증 성공<br/>3. 장치 &gt; #1 Layout 설정 &gt; #1 사용자 인증 </p></td><td><p>#1_second Layout - Secondary Key 카드<br/>ex) Primary Key - default Key / Secondary Key - 1234</p>\n\n<p>#1 Layout - Primary Key 카드<br/>ex) Primary Key - 1234 / Secondary Key - Inactive</p></td><td><p>발급된 카드 정보로 read 인증 성공해야한다.</p></td></tr></table>",
-    "customfield_10248": null,
-    "customfield_10006": [],
-    "customfield_10007": [],
-    "customfield_10008": {
-      "issueId": 52741,
-      "statuses": [
-        {
-          "statusResults": [
-            {
-              "latest": 2,
-              "latestFinal": 0,
-              "latestId": 35268,
-              "latestFinalId": 34743
-            },
-            {
-              "environment": "ES1",
-              "latest": 3,
-              "latestFinal": 3,
-              "latestId": 29874,
-              "latestFinalId": 29874
-            },
-            {
-              "environment": "BioStarV2.9.6.30",
-              "latest": 3,
-              "latestFinal": 3,
-              "latestId": 29874,
-              "latestFinalId": 29874
-            }
-          ]
-        }
-      ]
-    },
-    "customfield_12309": null,
-    "customfield_10802": null,
-    "customfield_10803": null,
-    "customfield_10805": null,
-    "summary": "[BDP-693] 커스텀 스마트 카드 레이아웃",
-    "customfield_10240": null,
-    "customfield_10000": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
-      "value": "Manual",
-      "id": "10000"
-    },
-    "customfield_10243": null,
-    "customfield_10001": null,
-    "customfield_10244": null,
-    "customfield_10002": null,
-    "customfield_10003": null,
-    "customfield_10246": null,
-    "customfield_10004": {
-      "steps": [
-        {
-          "id": 14769,
-          "index": 1,
-          "step": "1. Settings> Card Format> Smart Card> Add Smart Card\n2. Card Type: Custom Smart Card 선택\n3. Smart Card Tab 선택\n4. Layout UI 확인",
-          "data": "Smart Card Tab\n: Mifare\n\n",
-          "result": "1. Data Size(byte) / Skip Bytes 표시된다.\n> Data Size: 1 ~ 32bytes(Default: 8bytes) 범위 지원\n> Skip Bytes: 0 ~ 15 지원\n\n※ 1차: Raw만 지원",
-          "attachments": []
-        },
-        {
-          "id": 14770,
-          "index": 2,
-          "step": "1. Settings> Card Format> Smart Card> Add Smart Card\n2. Card Type: Custom Smart Card 선택\n3. Smart Card Tab 선택\n4. Layout UI 확인",
-          "data": "Smart Card Tab\n: DesFire\n=> Advanced: Disable",
-          "result": "1. Encryption Type의 Default는 AES이다.\n2. Convert to HEX UI 미출력된다.\n3. Data Size(byte) 표시된다.\n> 1 ~ 32bytes(Default: 8bytes)",
-          "attachments": []
-        },
-        {
-          "id": 14771,
-          "index": 3,
-          "step": "1. Settings> Card Format> Smart Card> Add Smart Card\n2. Card Type: Custom Smart Card 선택\n3. Smart Card Tab 선택\n4. 해당탭의 UI 확인",
-          "data": "Smart Card Tab\n: DesFire\n=> Advanced: Enable",
-          "result": "1. Custom Smart Card의 경우 Read만 지원하기 때문에 기존 지원되는 UI에서 File Write Access Key / File Write Key Index는 삭제.",
-          "attachments": []
-        },
-        {
-          "id": 14772,
-          "index": 4,
-          "step": "1. Settings> Card Format> Smart Card> Add Smart Card\n2. Card Type: Custom Smart Card 선택\n3. Smart Card Tab 선택\n4. 해당탭의 UI 확인",
-          "data": "Smart Card Tab\n: iClass\n",
-          "result": "1. 기존 지원되던 UI에서 Convert to HEX UI 미출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 14773,
-          "index": 5,
-          "step": "1. Settings> Card Format> Smart Card> Add Smart Card\n2. Card Type: Custom Smart Card 선택\n3. Smart Card Tab 선택\n4. 해당탭의 UI 확인",
-          "data": "Smart Card Tab\n: iClass SEOS\n",
-          "result": "1. 기존 지원되던 UI에서 Convert to HEX UI 미출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 14777,
-          "index": 6,
-          "step": "[Custom Smart Card Layout 설정된 상태]\n1. 장치상세정보창> Card Type> Smart Card\n2. Custom Smart Card: Layout 설정\n3. User> User Add> +Card\n4. Card Type: Smart Card 선택\n5. Device: Custom Smart Card Layout 설정된 장치 선택\n6. SmartCard Type: Custom Smart Card 선택\n7. Registration Option: Register by Card Reader\n8. Read Card> 카드읽히지 않은 상태로 10초간 유지",
-          "data": "",
-          "result": "1. Timeout 발생된다.",
-          "attachments": []
-        },
-        {
-          "id": 14774,
-          "index": 7,
-          "step": "[Custom Smart Card Layout 설정된 상태]\n1. 장치상세정보창> Card Type> Smart Card\n2. Custom Smart Card: Layout 설정\n3. User> User Add> +Card\n4. Card Type: Smart Card 선택\n5. Device: Custom Smart Card Layout 설정된 장치 선택\n6. SmartCard Type: Custom Smart Card 선택\n7. Registration Option: Register by Card Reader\n8. Read Card> Custom Smart Card Read",
-          "data": "Custm Smart Card Read\n> Key 일치",
-          "result": "1. Key 일치시 타사에서 발급한 스마트 카드가 등록된다.",
-          "attachments": []
-        },
-        {
-          "id": 14775,
-          "index": 8,
-          "step": "[Custom Smart Card Layout 설정된 상태]\n1. 장치상세정보창> Card Type> Smart Card\n2. Custom Smart Card: Layout 설정\n3. User> User Add> +Card\n4. Card Type: Smart Card 선택\n5. Device: Custom Smart Card Layout 설정된 장치 선택\n6. SmartCard Type: Custom Smart Card 선택\n7. Registration Option: Register by Card Reader\n8. Read Card> Custom Smart Card Read",
-          "data": "Custm Smart Card Read\n> Key 불일치",
-          "result": "1. CSN 카드 정보로 리드됨",
-          "attachments": []
-        },
-        {
-          "id": 17295,
-          "index": 9,
-          "step": "1. 장치상세정보창> Card Type> Smart Card\n2. Custom Smart Card: Layout 설정\n3. Byte Order 설정: MSB\n4. Custom Smart Card Read",
-          "data": "Custom Smart Card의 Data Format\n> Raw(Decimal)\n\nByte Order\n> MSB\n> LSB\n\n*  CSN과 동일하게 MSB/LSB 가 다른 카드로 인식\n* 본문 내용 참고(MSB/LSB 값)",
-          "result": "1. Byte Order 설정에 맞게 출력된다.\n2. 1:1 인증 성공 (카드) 로그 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 17296,
-          "index": 10,
-          "step": "1. 장치상세정보창> Card Type> Smart Card\n2. Custom Smart Card: Layout 설정\n3. Byte Order 설정 : LSB\n4. Custom Smart Card Read",
-          "data": "Custom Smart Card의 Data Format\n> Raw(Decimal)\n\nByte Order\n> MSB\n> LSB\n\n*  CSN과 동일하게 MSB/LSB 가 다른 카드로 인식\n* 본문 내용 참고(MSB/LSB 값)",
-          "result": "1. Byte Order 설정에 맞게 출력된다.\n2. 1:1 인증 성공 (카드) 로그 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 14779,
-          "index": 11,
-          "step": "1. 장치상세정보창> Card Type> Smart Card\n2. Custom Smart Card: Layout 설정\n3. Byte Order 설정\n4. Custom Smart Card Read",
-          "data": "Custom Smart Card의 Data Format\n> ASCII\n\nByte Order\n> MSB\n> LSB",
-          "result": "1. Byte Order 설정에 맞게 출력된다.\n2. 1:1 인증 성공 (카드) 로그 출력된다.\n\n※ 1차에서 ASCII 미지원",
-          "attachments": []
-        },
-        {
-          "id": 14780,
-          "index": 12,
-          "step": "1. 장치상세정보창> Card Type> Smart Card\n2. Custom Smart Card: Layout 설정\n3. Byte Order 설정\n4. Custom Smart Card Read",
-          "data": "Custom Smart Card의 Data Format\n> BCD\n\nByte Order\n> MSB\n> LSB",
-          "result": "1. Byte Order 설정에 맞게 출력된다.\n2. 1:1 인증 성공 (카드) 로그 출력된다.\n\n※ 1차에서 BCD 미지원",
-          "attachments": []
-        },
-        {
-          "id": 14781,
-          "index": 13,
-          "step": "1. User> Add User> +Card\n2. Custom Smart Card 등록\n3. Custom Smart Card Block\n4. Custom Smart Card Unblock",
-          "data": "Custom SmartCard Layout \n> Key 일치",
-          "result": "1. Block시 Blacklist로 동작된다.\n2. Unblock시 인증성공으로 동작된다.",
-          "attachments": []
-        },
-        {
-          "id": 14782,
-          "index": 14,
-          "step": "1. Custom Smart Card Read",
-          "data": "Custom SmartCard Layout \n> Key 불일치",
-          "result": "1. CSN 카드 정보로 읽힌다.",
-          "attachments": []
-        },
-        {
-          "id": 14783,
-          "index": 15,
-          "step": "1. Custom Smart Card Read",
-          "data": "Custom SmartCard Layout \n> Key 일치\n> Data Format 불일치",
-          "result": "1. CSN 카드 정보로 읽힌다.",
-          "attachments": []
-        },
-        {
-          "id": 14811,
-          "index": 16,
-          "step": "1. Settings> Card Format> Smart Card> Add Smart Card\n2. Card Type: Custom Smart Card 선택\n3. Smart Card Tab 선택\n4. Layout UI 설정\n5. 장치에 Custom Smart Card Layout 설정\n6. Custom Smart Card Read",
-          "data": "Mifare Layout 설정\n> Data Size/Data Format\n> Skip Bytes\n예시.\nSkip Bytes: 3",
-          "result": "1. 3byte를 건너뛰고 이후의 위치부터 카드ID가 리드된다.\n",
-          "attachments": []
-        },
-        {
-          "id": 14812,
-          "index": 17,
-          "step": "1. Settings> Card Format> Smart Card> Add Smart Card\n2. Card Type: Custom Smart Card 선택\n3. Smart Card Tab 선택\n4. Layout UI 설정\n5. 장치에 Custom Smart Card Layout 설정\n6. Custom Smart Card Read",
-          "data": "Mifare Layout 설정\n> Data Size/Data Format\n> Skip Bytes: 3\n예시.\n실제 카드에서 읽혀야 하는 Data 위치: 5",
-          "result": "1. Skip Bytes가 불일치할 경우 인증실패로 동작된다.",
-          "attachments": []
-        },
-        {
-          "id": 14784,
-          "index": 18,
-          "step": "1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 Custom Smart Card Read\n3. Wiegand In으로 들어온 값 확인",
-          "data": "Wiegand Out 장치\n> Custom Smart Card Layout 설정\n=> Data Format: Raw(Decimal)\n\nWiegand Format\n> Default\n> 임의 Custom Format\n\nCustom Smart Card Byte Order\n> MSB",
-          "result": "1. 리드된 카드ID가 위겐드 포맷에 맞게 동작된다.\n예시. \n발급ID - 12121212121212\nWiegand Format - 26bit\n=> Input data - 9105532\n",
-          "attachments": []
-        },
-        {
-          "id": 14797,
-          "index": 19,
-          "step": "1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 Custom Smart Card Read\n3. Wiegand In으로 들어온 값 확인",
-          "data": "Wiegand Out 장치\n> Custom Smart Card Layout 설정\n=> Data Format: Raw(Decimal)\n\nWiegand Format\n> Default\n> 임의 Custom Format\n\nCustom Smart Card Byte Order\n> LSB\n\n* 본문 내용 참고(MSB/LSB 값)",
-          "result": "1. 리드된 카드ID의 LSB값이 위겐드 포맷에 맞게 동작된다.\n예시. \n발급ID - 12121212121212\nWiegand Format - 26bit\n=> Input data - 3147275",
-          "attachments": []
-        },
-        {
-          "id": 14794,
-          "index": 20,
-          "step": "1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 Custom Smart Card Read\n3. Wiegand In으로 들어온 값 확인",
-          "data": "Wiegand Out 장치\n> Custom Smart Card Layout 설정\n=> Data Format: ASCII\n\nWiegand Format\n> Default\n> 임의 Custom Format\n\nCustom Smart Card Byte Order\n> MSB",
-          "result": "1. 리드된 카드ID가 위겐드 포맷에 맞게 동작된다.\n 예시.\n 발급ID - 12121212(=3132 3132 3132 3132)\n Wiegand Format - 26bit\n => Input data - 3289394(=32 3132)\n\n※ 1차에서 ASCII 미지원",
-          "attachments": []
-        },
-        {
-          "id": 14798,
-          "index": 21,
-          "step": "1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 Custom Smart Card Read\n3. Wiegand In으로 들어온 값 확인",
-          "data": "Wiegand Out 장치\n> Custom Smart Card Layout 설정\n=> Data Format: ASCII\n\nWiegand Format\n> Default\n> 임의 Custom Format\n\nCustom Smart Card Byte Order\n> LSB\n\n* 본문 내용 참고(MSB/LSB 값)",
-          "result": "1. 리드된 카드ID의 LSB값이 위겐드 포맷에 맞게 동작된다.\n 예시. \n 발급ID - 12121212(=3132 3132 3132 3132)\n Wiegand Format - 26bit\n => Input data - 3224113(=31 3231)\n\n※ 1차에서 ASCII 미지원",
-          "attachments": []
-        },
-        {
-          "id": 14795,
-          "index": 22,
-          "step": "1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 Custom Smart Card Read\n3. Wiegand In으로 들어온 값 확인",
-          "data": "Wiegand Out 장치\n> Custom Smart Card Layout 설정\n=> Data Format: BCD\n\nWiegand Format\n> Default\n> 임의 Custom Format\n\nCustom Smart Card Byte Order\n> MSB",
-          "result": "1. 리드된 카드ID가 위겐드 포맷에 맞게 동작된다.\n예시. \n12121212(=0001 0010 0001 0010 0001 0010 0001 0010)\nWiegand Format - 26bit\n=> Input data - 1184274(=12 1212)\n\n※ 1차에서 BCD 미지원",
-          "attachments": []
-        },
-        {
-          "id": 14799,
-          "index": 23,
-          "step": "1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 Custom Smart Card Read\n3. Wiegand In으로 들어온 값 확인",
-          "data": "Wiegand Out 장치\n> Custom Smart Card Layout 설정\n=> Data Format: BCD\n\nWiegand Format\n> Default\n> 임의 Custom Format\n\nCustom Smart Card Byte Order\n> LSB\n\n* 본문 내용 참고(MSB/LSB 값)",
-          "result": "1. 리드된 카드ID의 LSB값이 위겐드 포맷에 맞게 동작된다.\n예시. \n12121212(=0001 0010 0001 0010 0001 0010 0001 0010)\nWiegand Format - 26bit\n=> Input data - 1184274(=12 1212)\n\n※ 1차에서 BCD 미지원",
-          "attachments": []
-        },
-        {
-          "id": 14796,
-          "index": 24,
-          "step": "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read\n3. OSDP로 출력되는 값 확인",
-          "data": "3rd party reader\n> RS485 모드: Default\n\nCustom Smart Card Layout 설정\n=> Data Format: Raw(Decimal)\n\nCustom Smart Card Byte Order\n> MSB",
-          "result": "1. 인증성공 후 발급된 카드ID가 출력된다.\n> 발급된 Card ID의 BitCount\n> 발급된 Card ID값\n> 예시. 12345678(=BC 614E)",
-          "attachments": []
-        },
-        {
-          "id": 14800,
-          "index": 25,
-          "step": "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read\n3. OSDP로 출력되는 값 확인",
-          "data": "3rd party reader\n> RS485 모드: Default\n\nCustom Smart Card Layout 설정\n=> Data Format: Raw(Decimal)\n\n Custom Smart Card Byte Order\n> LSB\n\n* 본문 내용 참고(MSB/LSB 값)",
-          "result": "1. 인증성공 후 발급된 카드ID가 LSB값으로 출력된다.\n> 발급된 Card ID의 BitCount\n> 발급된 Card ID값",
-          "attachments": []
-        },
-        {
-          "id": 14801,
-          "index": 26,
-          "step": "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read\n3. OSDP로 출력되는 값 확인",
-          "data": "3rd party reader\n> RS485 모드: Default\n\nCustom Smart Card Layout 설정\n=> Data Format: ASCII\n\nCustom Smart Card Byte Order\n> MSB",
-          "result": "1. 인증성공 후 발급된 카드ID가 출력된다.\n> 발급된 Card ID의 BitCount\n> 발급된 Card ID값\n> 예시. sykim\n=> MSB: 495958321517(73 796B 696D)\n\n※ 1차에서 ASCII 미지원",
-          "attachments": []
-        },
-        {
-          "id": 14802,
-          "index": 27,
-          "step": "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read\n3. OSDP로 출력되는 값 확인",
-          "data": "3rd party reader\n> RS485 모드: Default\n\nCustom Smart Card Layout 설정\n=> Data Format: ASCII\n \nCustom Smart Card Byte Order\n> LSB\n\n* 본문 내용 참고(MSB/LSB 값)",
-          "result": "1. 인증성공 후 발급된 카드ID가 LSB값으로 출력된다.\n> 발급된 Card ID의 BitCount\n> 발급된 Card ID값\n\n※ 1차에서 ASCII 미지원",
-          "attachments": []
-        },
-        {
-          "id": 14803,
-          "index": 28,
-          "step": "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read\n3. OSDP로 출력되는 값 확인",
-          "data": "3rd party reader\n> RS485 모드: Default\n\nCustom Smart Card Layout 설정\n=> Data Format: BCD\n\nCustom Smart Card Byte Order\n> MSB",
-          "result": "1. 인증성공 후 발급된 카드ID가 출력된다.\n> 발급된 Card ID의 BitCount\n> 발급된 Card ID값\n> 예시. 12341234(=0001 0010 0011 0100 0001 0010 0011 0100)\n=> MSB: 305402420\n\n※ 1차에서 BCD 미지원",
-          "attachments": []
-        },
-        {
-          "id": 14804,
-          "index": 29,
-          "step": "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read\n3. OSDP로 출력되는 값 확인",
-          "data": "3rd party reader\n> RS485 모드: Default\n\nCustom Smart Card Layout 설정\n=> Data Format: BCD\n\n Custom Smart Card Byte Order\n> LSB\n\n* 본문 내용 참고(MSB/LSB 값)",
-          "result": "1. 인증성공 후 발급된 카드ID가 LSB값으로 출력된다.\n> 발급된 Card ID의 BitCount\n> 발급된 Card ID값\n※ 1차에서 BCD 미지원",
-          "attachments": []
-        },
-        {
-          "id": 14805,
-          "index": 30,
-          "step": "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read\n3. OSDP로 출력되는 값 확인",
-          "data": "3rd party reader\n> RS485 모드: Slave\n\nCustom Smart Card Layout 설정\n=> Data Format: Raw(Decimal)\n\nCustom Smart Card Byte Order\n> MSB",
-          "result": "1. 발급된 카드ID가 출력된다.\n> 발급된 Card ID의 BitCount\n> 발급된 Card ID값\n> 예시. 12345678(=BC 614E)",
-          "attachments": []
-        },
-        {
-          "id": 14806,
-          "index": 31,
-          "step": "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read\n3. OSDP로 출력되는 값 확인",
-          "data": "3rd party reader\n> RS485 모드: Slave\n\nCustom Smart Card Layout 설정\n=> Data Format: Raw(Decimal)\n\n Custom Smart Card Byte Order\n> LSB\n\n* 본문 내용 참고(MSB/LSB 값)",
-          "result": "1. 발급된 카드ID가 LSB값으로 출력된다.\n> 발급된 Card ID의 BitCount\n> 발급된 Card ID값",
-          "attachments": []
-        },
-        {
-          "id": 14807,
-          "index": 32,
-          "step": "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read\n3. OSDP로 출력되는 값 확인",
-          "data": "3rd party reader\n> RS485 모드: Slave\n\nCustom Smart Card Layout 설정\n=> Data Format: ASCII\n\nCustom Smart Card Byte Order\n> MSB",
-          "result": "1. 발급된 카드ID가 출력된다.\n> 발급된 Card ID의 BitCount\n> 발급된 Card ID값\n> 예시. sykim\n=> MSB: 495958321517(73 796B 696D)\n\n※ 1차에서 ASCII 미지원",
-          "attachments": []
-        },
-        {
-          "id": 14808,
-          "index": 33,
-          "step": "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read\n3. OSDP로 출력되는 값 확인",
-          "data": "3rd party reader\n> RS485 모드: Slave\n\nCustom Smart Card Layout 설정\n=> Data Format: ASCII\n\n Custom Smart Card Byte Order\n> LSB\n\n\n* 본문 내용 참고(MSB/LSB 값)",
-          "result": "1. 발급된 카드ID가 LSB값으로 출력된다.\n> 발급된 Card ID의 BitCount\n> 발급된 Card ID값\n\n※ 1차에서 ASCII 미지원",
-          "attachments": []
-        },
-        {
-          "id": 14809,
-          "index": 34,
-          "step": "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read\n3. OSDP로 출력되는 값 확인",
-          "data": "3rd party reader\n> RS485 모드: Slave\n\nCustom Smart Card Layout 설정\n=> Data Format: BCD\n\nCustom Smart Card Byte Order\n> MSB",
-          "result": "1. 발급된 카드ID가 출력된다.\n> 발급된 Card ID의 BitCount\n> 발급된 Card ID값\n> 예시. 12341234(=0001 0010 0011 0100 0001 0010 0011 0100)\n=> MSB: 305402420\n\n※ 1차에서 BCD 미지원",
-          "attachments": []
-        },
-        {
-          "id": 14810,
-          "index": 35,
-          "step": "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read\n3. OSDP로 출력되는 값 확인",
-          "data": "3rd party reader\n> RS485 모드: Slave\n\nCustom Smart Card Layout 설정\n=> Data Format: BCD\n\n Custom Smart Card Byte Order\n> LSB\n\n* 본문 내용 참고(MSB/LSB 값)",
-          "result": "1. 발급된 카드ID가 LSB값으로 출력된다.\n> 발급된 Card ID의 BitCount\n> 발급된 Card ID값\n\n※ 1차에서 BCD 미지원",
-          "attachments": []
-        },
-        {
-          "id": 14900,
-          "index": 36,
-          "step": "1. Custom Smart Card Layout을 미지원 하는 버전에서 지원하는 버전으로 FW Upgrade\n2. Custom Smart Card 항목의 Default 확인",
-          "data": "장치 초기화 후 FW Upgrade",
-          "result": "1. FW Upgrade시 Off로 동작한다.",
-          "attachments": []
-        },
-        {
-          "id": 14901,
-          "index": 37,
-          "step": "1. Custom Smart Card Layout을 미지원 하는 버전에서 지원하는 버전으로 FW Upgrade\n2. Reset All 수행\n3. Custom Smart Card 항목의 Default 확인",
-          "data": "",
-          "result": "1. 초기화시 Off로 동작한다.",
-          "attachments": []
-        },
-        {
-          "id": 17231,
-          "index": 38,
-          "step": "1. Custom Smart Card 미지원 master\n2. Custom Smart Card 지원 slave 연결 > slave 장치 상세정보창 진입",
-          "data": "",
-          "result": "1. Custom Smart Card UI 미출력 확인\n2. 커스텀 스마트 카드 레이아웃을 미지원하는 슈프리마 Master에 연결하는 경우에는 동작하지 않는다.",
-          "attachments": []
-        },
-        {
-          "id": 17232,
-          "index": 39,
-          "step": "1. Custom Smart Card 지원 master\n2. Custom Smart Card 지원 slave 연결 > slave 장치 상세정보창 진입",
-          "result": "1. Custom Smart Card UI 출력 확인",
-          "attachments": []
-        },
-        {
-          "id": 17297,
-          "index": 40,
-          "step": "1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read\n3. OSDP로 출력되는 값 확인",
-          "data": "OSDP로 연결된 장치\n> Default 모드\n> Output info - User ID\n\nCustom Smart Card Layout 설정\n\n Custom Smart Card Byte Order\n> MSB\n\n",
-          "result": "1. MSB Card 로 등록한 사용자 ID 가 출력된다.\nex) User ID - 12345 \n=> hex 값 3039 출력\n* 데이터 그대로 출력(순서 변경 X) ",
-          "attachments": []
-        },
-        {
-          "id": 17298,
-          "index": 41,
-          "step": "\t\n1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read\n3. OSDP로 출력되는 값 확인",
-          "data": "OSDP로 연결된 장치\n> Default 모드\n> Output info - User ID\n\nCustom Smart Card Layout 설정\n\n Custom Smart Card Byte Order\n> LSB\n\n* 본문 내용 참고(MSB/LSB 값)\n",
-          "result": "1. LSB Card 로 등록한 사용자 ID 가 출력된다.\nex) User ID - 6789\n=> hex 값 1A85 출력\n* 데이터 그대로 출력(순서 변경 X) ",
-          "attachments": []
-        },
-        {
-          "id": 17299,
-          "index": 42,
-          "step": "1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 Custom Smart Card Read\n3. Wiegand In으로 들어온 값 확인",
-          "data": "Wiegand Out 장치\n > Custom Smart Card Layout 설정\n\nWiegand Output Info\n > User ID\n\nWiegand Format\n > Default\n > 임의 Custom Format\n\nCustom Smart Card Byte Order\n > MSB\n\nBypass\n\n> ON/OFF",
-          "result": "1. MSB Card 로 등록한 사용자 ID 가 출력된다.\n ex) User ID - 12345 \n => hex 값 3039 출력\n2. Bypass 인 경우, User ID를 내보내는 옵션이 적용되지 않는다.(카드ID 출력)\n\n* 데이터 그대로 출력(순서 변경 X)",
-          "attachments": []
-        },
-        {
-          "id": 17300,
-          "index": 43,
-          "step": "1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 Custom Smart Card Read\n3. Wiegand In으로 들어온 값 확인",
-          "data": "Wiegand Out 장치\n > Custom Smart Card Layout 설정\n\nWiegand Output Info\n > User ID\n\nWiegand Format\n > Default\n > 임의 Custom Format\n\nCustom Smart Card Byte Order\n > LSB\n\nBypass\n\n> ON/OFF",
-          "result": "1. LSB Card 로 등록한 사용자 ID 가 출력된다.\nex) User ID - 6789\n=> hex 값 1A85 출력\n2. Bypass 인 경우, User ID를 내보내는 옵션이 적용되지 않는다.(카드ID 출력)\n* 데이터 그대로 출력(순서 변경 X) ",
-          "attachments": []
-        },
-        {
-          "id": 17461,
-          "index": 44,
-          "step": "1. 커스텀 카드 지원 장치 두대이상 선택> Batch Edit 클릭\n",
-          "data": "",
-          "result": "1.'커스텀 스마트 카드' / '커스텀 스마트 카드 레이아웃' 옵션 확인\n> Default - Disabled\n",
-          "attachments": []
-        },
-        {
-          "id": 17463,
-          "index": 45,
-          "step": "1. 커스텀 카드 지원 장치 두대이상 선택> Batch Edit 클릭\n2. 커스텀 스마트 카드 > Enabled\n3. 카드 종류 설정 후 적용\n4. 장치상세정보창 진입",
-          "data": "",
-          "result": "1. 사용할 카드 종류에 대하여 체크 박스를 선택할 수 있다.\n> Classic/Plus\n> DESFire, DESFire EV1/EV2/EV3\n2. 선택한 카드 종류 적용 확인",
-          "attachments": []
-        },
-        {
-          "id": 17465,
-          "index": 46,
-          "step": "\t\n1. 커스텀 카드 지원 장치 두대이상 선택> Batch Edit 클릭\n2. 커스텀 스마트 카드 레이아웃 > 레이아웃 선택\n3. 레이아웃 선택 후 적용\n4. 장치 상세정보창 진입",
-          "data": "",
-          "result": "1. 커스텀 스마트 카드로 생성된 레이아웃 목록 표시 확인\n> 커스텀 스마트 카드로 생성된 레이아웃 목록만 표시\n2. 선택한 레이아웃 적용 확인\n ",
-          "attachments": []
-        },
-        {
-          "id": 17464,
-          "index": 47,
-          "step": "1. 커스텀 카드 지원 장치 두대이상 선택> Batch Edit 클릭\n2. 커스텀 스마트 카드 > Enabled > 카드 종류 선택\n3. 커스텀 스마트 카드 레이아웃 > 레이아웃 선택 \n4. 카드종류 & 레이아웃 적용\n5. 장치 상세정보창 진입",
-          "data": "",
-          "result": "1. 선택한 카드 종류 & 레이아웃 적용 확인\n ",
-          "attachments": []
-        },
-        {
-          "id": 18074,
-          "index": 48,
-          "step": "1. 장치에 커스텀 카드 레이아웃 설정\n2. 카드 레이아웃 중 Secondary Key로 설정한 Key를 가진 카드리드",
-          "data": "커스텀 카드 레이아웃 설정상태\n> Primary Key - Default\n> Secondary Key - Key 일치(리드할 카드)\n\n- Mifare\n- DesFire(Advanced)\n",
-          "result": "1. Secondary Key로 인증성공으로 동작한다.",
-          "attachments": []
-        },
-        {
-          "id": 18078,
-          "index": 49,
-          "step": "1. 장치에 Suprema Smart Card Layout/Custom Smart Card Layout 모두 설정\n2. 장치재시작(SW Reset)\n3. Custom Smart Card 리드",
-          "data": ": Suprema Smart Card Layout - Default Key(Secondary key: disable)\n: Custom Smart Card Layout - Secondary Key 설정",
-          "result": "1. 발급된 카드 정보로 리드되어야 한다.",
-          "attachments": []
-        },
-        {
-          "id": 18125,
-          "index": 50,
-          "step": "1. 장치에 Suprema Smart Card Layout/Custom Smart Card Layout 모두 설정\n2. 장치재시작(SW Reset)\n3. Suprema Smart Card 리드",
-          "data": ": Custom Smart Card Layout - Default Key(Secondary key: disable)\n: Suprema Smart Card Layout - Secondary Key 설정",
-          "result": "1. 발급된 카드 정보로 리드되어야 한다.",
-          "attachments": []
-        },
-        {
-          "id": 19110,
-          "index": 51,
-          "step": "-Mifare Custom Smart Card\n1. 설정 > 카드 형식 > Custom Smart Card Layout - Secondary Key 설정(A Layout)\n2. 장치 > Custom Smart Card 포맷에 A 레이아웃 선택\n3. A사용자 > Secondary Key 커스텀 카드 등록 > 인증\n4. 장치 > Primary key Custom Card Layout(B Layout)으로 변경\n5. A사용자 > 등록된 커스텀 카드 삭제\n6. B사용자 > 카드 > Primary Key Custom Card read ",
-          "data": "A사용자, A Layout - Secondary Key 카드\nex) Primary Key - default Key / Secondary Key - 1234\n\nB사용자, B Layout - Primary Key 카드\nex) Primary Key - 1234 / Secondary Key - Inactive",
-          "result": "1. 발급된 카드 정보로 리드되어야 한다.\n *CSN 카드 정보로 리드됨\n BLNIIFW-1154 (현상태 유지)\n!Mifarer.png|thumbnail!",
-          "attachments": []
-        },
-        {
-          "id": 19111,
-          "index": 52,
-          "step": "-DesFire Custom Smart Card\n1. 설정 > Card Format > Custom Smart Card Layout - Secondary Key 설정(A Layout)\n2. 장치 > Custom Smart Card 포맷에 A 레이아웃 선택\n3. A사용자 > Secondary Key 커스텀 카드 등록 > 인증\n4. 장치 > Primary key Custom Card Layout(B Layout)으로 변경\n5. A사용자 > 등록된 커스텀 카드 삭제\n6. B사용자 > 카드 > Primary Key Custom Card read",
-          "data": "A사용자, A Layout - Secondary Key 카드\nex) Primary Key - default Key / Secondary Key - 1234\n\nB사용자, B Layout - Primary Key 카드\nex) Primary Key - 1234 / Secondary Key - Inactive",
-          "result": "1. 발급된 카드 정보로 리드되어야 한다.",
-          "attachments": []
-        },
-        {
-          "id": 19112,
-          "index": 53,
-          "step": "-Mifare Suprema Smart Card\n1. 설정 > 카드 형식 > Suprema Smart Card Layout - Secondary Key 설정(A Layout)\n2. 장치 > Suprema Smart Card 포맷에 A 레이아웃 선택\n3. A사용자 > Secondary Key Suprema 카드 발급 > 인증\n4. 장치 > Primary key Suprema Card Layout(B Layout)으로 변경\n5. A사용자 > 등록된 Suprema 카드 삭제\n6. B사용자 > 카드 > Primary Key Suprema Card read ",
-          "data": "A사용자, A Layout - Secondary Key 카드(Primary Key-Default)\nB사용자, B Layout - Primary Key 카드(Secondary Key Inactive)\n",
-          "result": "1. CSN 카드 정보로 리드됨",
-          "attachments": []
-        },
-        {
-          "id": 19113,
-          "index": 54,
-          "step": "-DesFire Suprema Smart Card\n1. 설정 > Card Format > Suprema Smart Card Layout - Secondary Key 설정(A Layout)\n2. 장치 > Suprema Smart Card 포맷에 A 레이아웃 선택\n3. A사용자 > Secondary Key Suprema 카드 등록 > 인증\n4. 장치 > Primary key Suprema Card Layout(B Layout)으로 변경\n5. A사용자 > 등록된 Suprema 카드 삭제\n6. B사용자 > 카드 > Primary Key Suprema Card read",
-          "data": "A사용자, A Layout - Secondary Key 카드\nex) Primary Key - default Key / Secondary Key - 1234\n\nB사용자, B Layout - Primary Key 카드\nex) Primary Key - 1234 / Secondary Key - Inactive",
-          "result": "1. CSN 카드 정보로 리드됨",
-          "attachments": []
-        },
-        {
-          "id": 19845,
-          "index": 55,
-          "step": "-Mifare Custom/Suprema Smart Card (XPASSII-594) \n1. 장치 >  Primary key Suprema Card Layout(#1 Layout) 설정 > #1 사용자 등록\n2. 장치 > #1_Second Layout 설정 > #1 사용자 인증 성공\n3. 장치 > #1 Layout 설정 > #1 사용자 인증 ",
-          "data": "#1_second Layout - Secondary Key 카드\nex) Primary Key - default Key / Secondary Key - 1234\n\n#1 Layout - Primary Key 카드\nex) Primary Key - 1234 / Secondary Key - Inactive",
-          "result": "발급된 카드 정보로 read 인증 성공해야한다.",
-          "attachments": []
-        }
-      ]
-    },
-    "customfield_10236": null,
-    "customfield_10237": null,
-    "environment": null,
-    "customfield_10238": null,
-    "customfield_10239": null,
-    "duedate": null,
-    "comment": {
-      "comments": [],
-      "maxResults": 0,
-      "total": 0,
-      "startAt": 0
-    },
-    "customfield_10230": null,
-    "fixVersions": [],
-    "customfield_10231": null,
-    "customfield_10232": null,
-    "customfield_10233": null,
-    "customfield_12410": null,
-    "customfield_10234": null,
-    "customfield_10235": null,
-    "customfield_10225": null,
-    "customfield_12404": null,
-    "customfield_10226": null,
-    "customfield_12403": null,
-    "customfield_10227": null,
-    "customfield_12406": null,
-    "customfield_10228": null,
-    "customfield_10229": null,
-    "customfield_10900": null,
-    "customfield_12408": null,
-    "customfield_10901": null,
-    "customfield_10902": null,
-    "customfield_10903": null,
-    "customfield_12409": null,
-    "customfield_10904": null,
-    "customfield_10905": null,
-    "customfield_10220": null,
-    "priority": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-      "name": "미할당",
-      "id": "10100"
-    },
-    "customfield_10221": null,
-    "customfield_12400": null,
-    "customfield_12402": null,
-    "customfield_10224": null,
-    "customfield_10214": null,
-    "customfield_10217": null,
-    "customfield_10218": null,
-    "timeestimate": null,
-    "versions": [],
-    "customfield_10219": null,
-    "status": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/status/3",
-      "description": "현재 담당자가 이 이슈를 처리하고 있습니다.",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/inprogress.png",
-      "name": "진행 중",
-      "id": "3",
-      "statusCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/4",
-        "id": 4,
-        "key": "indeterminate",
-        "colorName": "yellow",
-        "name": "진행 중"
-      }
-    },
-    "customfield_12510": null,
-    "customfield_10213": null,
-    "customfield_12511": null,
-    "customfield_10203": null,
-    "customfield_10204": null,
-    "customfield_12502": null,
-    "customfield_10205": null,
-    "customfield_10206": null,
-    "customfield_10207": null,
-    "aggregatetimeestimate": null,
-    "customfield_10208": null,
-    "customfield_10209": null,
-    "customfield_12509": null,
-    "customfield_12508": null,
-    "creator": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
-      "name": "김소영",
-      "key": "김소영",
-      "emailAddress": "sykim@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-      },
-      "displayName": "김소영",
-      "active": true,
-      "timeZone": "Asia/Seoul"
-    },
-    "aggregateprogress": {
-      "progress": 0,
-      "total": 0
-    },
-    "customfield_10320": null,
-    "customfield_10321": null,
-    "customfield_12501": null,
-    "customfield_10202": null,
-    "customfield_12500": null,
-    "customfield_10313": "1|hzwsof:",
-    "customfield_10316": null,
-    "customfield_10317": null,
-    "timespent": null,
-    "aggregatetimespent": null,
-    "customfield_10310": null,
-    "customfield_10302": null,
-    "customfield_10303": null,
-    "customfield_12601": null,
-    "customfield_10304": null,
-    "customfield_10305": null,
-    "customfield_10308": null,
-    "workratio": -1,
-    "created": "2022-10-04T17:18:44.000+0900",
-    "customfield_10533": null,
-    "customfield_10534": null,
-    "customfield_11501": null,
-    "customfield_11503": null,
-    "customfield_13001": null,
-    "customfield_13000": null,
-    "customfield_10530": null,
-    "customfield_10531": null,
-    "customfield_10532": null,
-    "customfield_10401": null,
-    "customfield_10522": null,
-    "customfield_10402": null,
-    "customfield_12700": null,
-    "customfield_10524": null,
-    "customfield_10525": null,
-    "customfield_12702": null,
-    "attachment": [
-      {
-        "self": "https://jira.suprema.co.kr/rest/api/2/attachment/118134",
-        "id": "118134",
-        "filename": "Mifarer.png",
-        "author": {
-          "self": "https://jira.suprema.co.kr/rest/api/2/user?username=separk",
-          "name": "separk",
-          "key": "JIRAUSER14018",
-          "emailAddress": "separk@suprema.co.kr",
-          "avatarUrls": {
-            "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11015",
-            "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11015",
-            "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11015",
-            "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11015"
-          },
-          "displayName": "박상은",
-          "active": true,
-          "timeZone": "Asia/Seoul"
-        },
-        "created": "2024-11-07T09:54:50.000+0900",
-        "size": 53035,
-        "mimeType": "image/png",
-        "content": "https://jira.suprema.co.kr/secure/attachment/118134/Mifarer.png",
-        "thumbnail": "https://jira.suprema.co.kr/secure/thumbnail/118134/_thumb_118134.png"
-      }
-    ],
-    "customfield_10526": null,
-    "customfield_12704": null,
-    "customfield_10528": null,
-    "customfield_12706": null,
-    "customfield_10520": null,
-    "customfield_10521": null,
-    "customfield_10400": null,
-    "customfield_10511": null,
-    "customfield_10512": null,
-    "customfield_11600": null,
-    "customfield_10513": null,
-    "customfield_10514": null,
-    "customfield_10515": null,
-    "customfield_10516": null,
-    "customfield_10517": null,
-    "customfield_10518": null,
-    "customfield_10519": null
+[
+  {
+    "id": "COMMONR-291_step_1",
+    "document": "Test Step: 1. Settings> Card Format> Smart Card> Add Smart Card\n2. Card Type: Custom Smart Card 선택\n3. Smart Card Tab 선택\n4. Layout UI 확인\nTest Data: Smart Card Tab\n: Mifare\n\n\nExpected Result: 1. Data Size(byte) / Skip Bytes 표시된다.\n> Data Size: 1 ~ 32bytes(Default: 8bytes) 범위 지원\n> Skip Bytes: 0 ~ 15 지원\n\n※ 1차: Raw만 지원",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "1",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_2",
+    "document": "Test Step: 1. Settings> Card Format> Smart Card> Add Smart Card\n2. Card Type: Custom Smart Card 선택\n3. Smart Card Tab 선택\n4. Layout UI 확인\nTest Data: Smart Card Tab\n: DesFire\n=> Advanced: Disable\nExpected Result: 1. Encryption Type의 Default는 AES이다.\n2. Convert to HEX UI 미출력된다.\n3. Data Size(byte) 표시된다.\n> 1 ~ 32bytes(Default: 8bytes)",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "2",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_3",
+    "document": "Test Step: 1. Settings> Card Format> Smart Card> Add Smart Card\n2. Card Type: Custom Smart Card 선택\n3. Smart Card Tab 선택\n4. 해당탭의 UI 확인\nTest Data: Smart Card Tab\n: DesFire\n=> Advanced: Enable\nExpected Result: 1. Custom Smart Card의 경우 Read만 지원하기 때문에 기존 지원되는 UI에서 File Write Access Key / File Write Key Index는 삭제.",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "3",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_4",
+    "document": "Test Step: 1. Settings> Card Format> Smart Card> Add Smart Card\n2. Card Type: Custom Smart Card 선택\n3. Smart Card Tab 선택\n4. 해당탭의 UI 확인\nTest Data: Smart Card Tab\n: iClass\n\nExpected Result: 1. 기존 지원되던 UI에서 Convert to HEX UI 미출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "4",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_5",
+    "document": "Test Step: 1. Settings> Card Format> Smart Card> Add Smart Card\n2. Card Type: Custom Smart Card 선택\n3. Smart Card Tab 선택\n4. 해당탭의 UI 확인\nTest Data: Smart Card Tab\n: iClass SEOS\n\nExpected Result: 1. 기존 지원되던 UI에서 Convert to HEX UI 미출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "5",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_6",
+    "document": "Test Step: [Custom Smart Card Layout 설정된 상태]\n1. 장치상세정보창> Card Type> Smart Card\n2. Custom Smart Card: Layout 설정\n3. User> User Add> +Card\n4. Card Type: Smart Card 선택\n5. Device: Custom Smart Card Layout 설정된 장치 선택\n6. SmartCard Type: Custom Smart Card 선택\n7. Registration Option: Register by Card Reader\n8. Read Card> 카드읽히지 않은 상태로 10초간 유지\nExpected Result: 1. Timeout 발생된다.",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "6",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_7",
+    "document": "Test Step: [Custom Smart Card Layout 설정된 상태]\n1. 장치상세정보창> Card Type> Smart Card\n2. Custom Smart Card: Layout 설정\n3. User> User Add> +Card\n4. Card Type: Smart Card 선택\n5. Device: Custom Smart Card Layout 설정된 장치 선택\n6. SmartCard Type: Custom Smart Card 선택\n7. Registration Option: Register by Card Reader\n8. Read Card> Custom Smart Card Read\nTest Data: Custm Smart Card Read\n> Key 일치\nExpected Result: 1. Key 일치시 타사에서 발급한 스마트 카드가 등록된다.",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "7",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_8",
+    "document": "Test Step: [Custom Smart Card Layout 설정된 상태]\n1. 장치상세정보창> Card Type> Smart Card\n2. Custom Smart Card: Layout 설정\n3. User> User Add> +Card\n4. Card Type: Smart Card 선택\n5. Device: Custom Smart Card Layout 설정된 장치 선택\n6. SmartCard Type: Custom Smart Card 선택\n7. Registration Option: Register by Card Reader\n8. Read Card> Custom Smart Card Read\nTest Data: Custm Smart Card Read\n> Key 불일치\nExpected Result: 1. CSN 카드 정보로 리드됨",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "8",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_9",
+    "document": "Test Step: 1. 장치상세정보창> Card Type> Smart Card\n2. Custom Smart Card: Layout 설정\n3. Byte Order 설정: MSB\n4. Custom Smart Card Read\nTest Data: Custom Smart Card의 Data Format\n> Raw(Decimal)\n\nByte Order\n> MSB\n> LSB\n\n*  CSN과 동일하게 MSB/LSB 가 다른 카드로 인식\n* 본문 내용 참고(MSB/LSB 값)\nExpected Result: 1. Byte Order 설정에 맞게 출력된다.\n2. 1:1 인증 성공 (카드) 로그 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "9",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_10",
+    "document": "Test Step: 1. 장치상세정보창> Card Type> Smart Card\n2. Custom Smart Card: Layout 설정\n3. Byte Order 설정 : LSB\n4. Custom Smart Card Read\nTest Data: Custom Smart Card의 Data Format\n> Raw(Decimal)\n\nByte Order\n> MSB\n> LSB\n\n*  CSN과 동일하게 MSB/LSB 가 다른 카드로 인식\n* 본문 내용 참고(MSB/LSB 값)\nExpected Result: 1. Byte Order 설정에 맞게 출력된다.\n2. 1:1 인증 성공 (카드) 로그 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "10",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_11",
+    "document": "Test Step: 1. 장치상세정보창> Card Type> Smart Card\n2. Custom Smart Card: Layout 설정\n3. Byte Order 설정\n4. Custom Smart Card Read\nTest Data: Custom Smart Card의 Data Format\n> ASCII\n\nByte Order\n> MSB\n> LSB\nExpected Result: 1. Byte Order 설정에 맞게 출력된다.\n2. 1:1 인증 성공 (카드) 로그 출력된다.\n\n※ 1차에서 ASCII 미지원",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "11",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_12",
+    "document": "Test Step: 1. 장치상세정보창> Card Type> Smart Card\n2. Custom Smart Card: Layout 설정\n3. Byte Order 설정\n4. Custom Smart Card Read\nTest Data: Custom Smart Card의 Data Format\n> BCD\n\nByte Order\n> MSB\n> LSB\nExpected Result: 1. Byte Order 설정에 맞게 출력된다.\n2. 1:1 인증 성공 (카드) 로그 출력된다.\n\n※ 1차에서 BCD 미지원",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "12",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_13",
+    "document": "Test Step: 1. User> Add User> +Card\n2. Custom Smart Card 등록\n3. Custom Smart Card Block\n4. Custom Smart Card Unblock\nTest Data: Custom SmartCard Layout \n> Key 일치\nExpected Result: 1. Block시 Blacklist로 동작된다.\n2. Unblock시 인증성공으로 동작된다.",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "13",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_14",
+    "document": "Test Step: 1. Custom Smart Card Read\nTest Data: Custom SmartCard Layout \n> Key 불일치\nExpected Result: 1. CSN 카드 정보로 읽힌다.",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "14",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_15",
+    "document": "Test Step: 1. Custom Smart Card Read\nTest Data: Custom SmartCard Layout \n> Key 일치\n> Data Format 불일치\nExpected Result: 1. CSN 카드 정보로 읽힌다.",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "15",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_16",
+    "document": "Test Step: 1. Settings> Card Format> Smart Card> Add Smart Card\n2. Card Type: Custom Smart Card 선택\n3. Smart Card Tab 선택\n4. Layout UI 설정\n5. 장치에 Custom Smart Card Layout 설정\n6. Custom Smart Card Read\nTest Data: Mifare Layout 설정\n> Data Size/Data Format\n> Skip Bytes\n예시.\nSkip Bytes: 3\nExpected Result: 1. 3byte를 건너뛰고 이후의 위치부터 카드ID가 리드된다.\n",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "16",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_17",
+    "document": "Test Step: 1. Settings> Card Format> Smart Card> Add Smart Card\n2. Card Type: Custom Smart Card 선택\n3. Smart Card Tab 선택\n4. Layout UI 설정\n5. 장치에 Custom Smart Card Layout 설정\n6. Custom Smart Card Read\nTest Data: Mifare Layout 설정\n> Data Size/Data Format\n> Skip Bytes: 3\n예시.\n실제 카드에서 읽혀야 하는 Data 위치: 5\nExpected Result: 1. Skip Bytes가 불일치할 경우 인증실패로 동작된다.",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "17",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_18",
+    "document": "Test Step: 1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 Custom Smart Card Read\n3. Wiegand In으로 들어온 값 확인\nTest Data: Wiegand Out 장치\n> Custom Smart Card Layout 설정\n=> Data Format: Raw(Decimal)\n\nWiegand Format\n> Default\n> 임의 Custom Format\n\nCustom Smart Card Byte Order\n> MSB\nExpected Result: 1. 리드된 카드ID가 위겐드 포맷에 맞게 동작된다.\n예시. \n발급ID - 12121212121212\nWiegand Format - 26bit\n=> Input data - 9105532\n",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "18",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_19",
+    "document": "Test Step: 1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 Custom Smart Card Read\n3. Wiegand In으로 들어온 값 확인\nTest Data: Wiegand Out 장치\n> Custom Smart Card Layout 설정\n=> Data Format: Raw(Decimal)\n\nWiegand Format\n> Default\n> 임의 Custom Format\n\nCustom Smart Card Byte Order\n> LSB\n\n* 본문 내용 참고(MSB/LSB 값)\nExpected Result: 1. 리드된 카드ID의 LSB값이 위겐드 포맷에 맞게 동작된다.\n예시. \n발급ID - 12121212121212\nWiegand Format - 26bit\n=> Input data - 3147275",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "19",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_20",
+    "document": "Test Step: 1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 Custom Smart Card Read\n3. Wiegand In으로 들어온 값 확인\nTest Data: Wiegand Out 장치\n> Custom Smart Card Layout 설정\n=> Data Format: ASCII\n\nWiegand Format\n> Default\n> 임의 Custom Format\n\nCustom Smart Card Byte Order\n> MSB\nExpected Result: 1. 리드된 카드ID가 위겐드 포맷에 맞게 동작된다.\n 예시.\n 발급ID - 12121212(=3132 3132 3132 3132)\n Wiegand Format - 26bit\n => Input data - 3289394(=32 3132)\n\n※ 1차에서 ASCII 미지원",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "20",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_21",
+    "document": "Test Step: 1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 Custom Smart Card Read\n3. Wiegand In으로 들어온 값 확인\nTest Data: Wiegand Out 장치\n> Custom Smart Card Layout 설정\n=> Data Format: ASCII\n\nWiegand Format\n> Default\n> 임의 Custom Format\n\nCustom Smart Card Byte Order\n> LSB\n\n* 본문 내용 참고(MSB/LSB 값)\nExpected Result: 1. 리드된 카드ID의 LSB값이 위겐드 포맷에 맞게 동작된다.\n 예시. \n 발급ID - 12121212(=3132 3132 3132 3132)\n Wiegand Format - 26bit\n => Input data - 3224113(=31 3231)\n\n※ 1차에서 ASCII 미지원",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "21",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_22",
+    "document": "Test Step: 1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 Custom Smart Card Read\n3. Wiegand In으로 들어온 값 확인\nTest Data: Wiegand Out 장치\n> Custom Smart Card Layout 설정\n=> Data Format: BCD\n\nWiegand Format\n> Default\n> 임의 Custom Format\n\nCustom Smart Card Byte Order\n> MSB\nExpected Result: 1. 리드된 카드ID가 위겐드 포맷에 맞게 동작된다.\n예시. \n12121212(=0001 0010 0001 0010 0001 0010 0001 0010)\nWiegand Format - 26bit\n=> Input data - 1184274(=12 1212)\n\n※ 1차에서 BCD 미지원",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "22",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_23",
+    "document": "Test Step: 1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 Custom Smart Card Read\n3. Wiegand In으로 들어온 값 확인\nTest Data: Wiegand Out 장치\n> Custom Smart Card Layout 설정\n=> Data Format: BCD\n\nWiegand Format\n> Default\n> 임의 Custom Format\n\nCustom Smart Card Byte Order\n> LSB\n\n* 본문 내용 참고(MSB/LSB 값)\nExpected Result: 1. 리드된 카드ID의 LSB값이 위겐드 포맷에 맞게 동작된다.\n예시. \n12121212(=0001 0010 0001 0010 0001 0010 0001 0010)\nWiegand Format - 26bit\n=> Input data - 1184274(=12 1212)\n\n※ 1차에서 BCD 미지원",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "23",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_24",
+    "document": "Test Step: 1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read\n3. OSDP로 출력되는 값 확인\nTest Data: 3rd party reader\n> RS485 모드: Default\n\nCustom Smart Card Layout 설정\n=> Data Format: Raw(Decimal)\n\nCustom Smart Card Byte Order\n> MSB\nExpected Result: 1. 인증성공 후 발급된 카드ID가 출력된다.\n> 발급된 Card ID의 BitCount\n> 발급된 Card ID값\n> 예시. 12345678(=BC 614E)",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "24",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_25",
+    "document": "Test Step: 1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read\n3. OSDP로 출력되는 값 확인\nTest Data: 3rd party reader\n> RS485 모드: Default\n\nCustom Smart Card Layout 설정\n=> Data Format: Raw(Decimal)\n\n Custom Smart Card Byte Order\n> LSB\n\n* 본문 내용 참고(MSB/LSB 값)\nExpected Result: 1. 인증성공 후 발급된 카드ID가 LSB값으로 출력된다.\n> 발급된 Card ID의 BitCount\n> 발급된 Card ID값",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "25",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_26",
+    "document": "Test Step: 1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read\n3. OSDP로 출력되는 값 확인\nTest Data: 3rd party reader\n> RS485 모드: Default\n\nCustom Smart Card Layout 설정\n=> Data Format: ASCII\n\nCustom Smart Card Byte Order\n> MSB\nExpected Result: 1. 인증성공 후 발급된 카드ID가 출력된다.\n> 발급된 Card ID의 BitCount\n> 발급된 Card ID값\n> 예시. sykim\n=> MSB: 495958321517(73 796B 696D)\n\n※ 1차에서 ASCII 미지원",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "26",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_27",
+    "document": "Test Step: 1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read\n3. OSDP로 출력되는 값 확인\nTest Data: 3rd party reader\n> RS485 모드: Default\n\nCustom Smart Card Layout 설정\n=> Data Format: ASCII\n \nCustom Smart Card Byte Order\n> LSB\n\n* 본문 내용 참고(MSB/LSB 값)\nExpected Result: 1. 인증성공 후 발급된 카드ID가 LSB값으로 출력된다.\n> 발급된 Card ID의 BitCount\n> 발급된 Card ID값\n\n※ 1차에서 ASCII 미지원",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "27",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_28",
+    "document": "Test Step: 1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read\n3. OSDP로 출력되는 값 확인\nTest Data: 3rd party reader\n> RS485 모드: Default\n\nCustom Smart Card Layout 설정\n=> Data Format: BCD\n\nCustom Smart Card Byte Order\n> MSB\nExpected Result: 1. 인증성공 후 발급된 카드ID가 출력된다.\n> 발급된 Card ID의 BitCount\n> 발급된 Card ID값\n> 예시. 12341234(=0001 0010 0011 0100 0001 0010 0011 0100)\n=> MSB: 305402420\n\n※ 1차에서 BCD 미지원",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "28",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_29",
+    "document": "Test Step: 1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read\n3. OSDP로 출력되는 값 확인\nTest Data: 3rd party reader\n> RS485 모드: Default\n\nCustom Smart Card Layout 설정\n=> Data Format: BCD\n\n Custom Smart Card Byte Order\n> LSB\n\n* 본문 내용 참고(MSB/LSB 값)\nExpected Result: 1. 인증성공 후 발급된 카드ID가 LSB값으로 출력된다.\n> 발급된 Card ID의 BitCount\n> 발급된 Card ID값\n※ 1차에서 BCD 미지원",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "29",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_30",
+    "document": "Test Step: 1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read\n3. OSDP로 출력되는 값 확인\nTest Data: 3rd party reader\n> RS485 모드: Slave\n\nCustom Smart Card Layout 설정\n=> Data Format: Raw(Decimal)\n\nCustom Smart Card Byte Order\n> MSB\nExpected Result: 1. 발급된 카드ID가 출력된다.\n> 발급된 Card ID의 BitCount\n> 발급된 Card ID값\n> 예시. 12345678(=BC 614E)",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "30",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_31",
+    "document": "Test Step: 1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read\n3. OSDP로 출력되는 값 확인\nTest Data: 3rd party reader\n> RS485 모드: Slave\n\nCustom Smart Card Layout 설정\n=> Data Format: Raw(Decimal)\n\n Custom Smart Card Byte Order\n> LSB\n\n* 본문 내용 참고(MSB/LSB 값)\nExpected Result: 1. 발급된 카드ID가 LSB값으로 출력된다.\n> 발급된 Card ID의 BitCount\n> 발급된 Card ID값",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "31",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_32",
+    "document": "Test Step: 1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read\n3. OSDP로 출력되는 값 확인\nTest Data: 3rd party reader\n> RS485 모드: Slave\n\nCustom Smart Card Layout 설정\n=> Data Format: ASCII\n\nCustom Smart Card Byte Order\n> MSB\nExpected Result: 1. 발급된 카드ID가 출력된다.\n> 발급된 Card ID의 BitCount\n> 발급된 Card ID값\n> 예시. sykim\n=> MSB: 495958321517(73 796B 696D)\n\n※ 1차에서 ASCII 미지원",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "32",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_33",
+    "document": "Test Step: 1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read\n3. OSDP로 출력되는 값 확인\nTest Data: 3rd party reader\n> RS485 모드: Slave\n\nCustom Smart Card Layout 설정\n=> Data Format: ASCII\n\n Custom Smart Card Byte Order\n> LSB\n\n\n* 본문 내용 참고(MSB/LSB 값)\nExpected Result: 1. 발급된 카드ID가 LSB값으로 출력된다.\n> 발급된 Card ID의 BitCount\n> 발급된 Card ID값\n\n※ 1차에서 ASCII 미지원",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "33",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_34",
+    "document": "Test Step: 1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read\n3. OSDP로 출력되는 값 확인\nTest Data: 3rd party reader\n> RS485 모드: Slave\n\nCustom Smart Card Layout 설정\n=> Data Format: BCD\n\nCustom Smart Card Byte Order\n> MSB\nExpected Result: 1. 발급된 카드ID가 출력된다.\n> 발급된 Card ID의 BitCount\n> 발급된 Card ID값\n> 예시. 12341234(=0001 0010 0011 0100 0001 0010 0011 0100)\n=> MSB: 305402420\n\n※ 1차에서 BCD 미지원",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "34",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_35",
+    "document": "Test Step: 1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read\n3. OSDP로 출력되는 값 확인\nTest Data: 3rd party reader\n> RS485 모드: Slave\n\nCustom Smart Card Layout 설정\n=> Data Format: BCD\n\n Custom Smart Card Byte Order\n> LSB\n\n* 본문 내용 참고(MSB/LSB 값)\nExpected Result: 1. 발급된 카드ID가 LSB값으로 출력된다.\n> 발급된 Card ID의 BitCount\n> 발급된 Card ID값\n\n※ 1차에서 BCD 미지원",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "35",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_36",
+    "document": "Test Step: 1. Custom Smart Card Layout을 미지원 하는 버전에서 지원하는 버전으로 FW Upgrade\n2. Custom Smart Card 항목의 Default 확인\nTest Data: 장치 초기화 후 FW Upgrade\nExpected Result: 1. FW Upgrade시 Off로 동작한다.",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "36",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_37",
+    "document": "Test Step: 1. Custom Smart Card Layout을 미지원 하는 버전에서 지원하는 버전으로 FW Upgrade\n2. Reset All 수행\n3. Custom Smart Card 항목의 Default 확인\nExpected Result: 1. 초기화시 Off로 동작한다.",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "37",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_38",
+    "document": "Test Step: 1. Custom Smart Card 미지원 master\n2. Custom Smart Card 지원 slave 연결 > slave 장치 상세정보창 진입\nExpected Result: 1. Custom Smart Card UI 미출력 확인\n2. 커스텀 스마트 카드 레이아웃을 미지원하는 슈프리마 Master에 연결하는 경우에는 동작하지 않는다.",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "38",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_39",
+    "document": "Test Step: 1. Custom Smart Card 지원 master\n2. Custom Smart Card 지원 slave 연결 > slave 장치 상세정보창 진입\nExpected Result: 1. Custom Smart Card UI 출력 확인",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "39",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_40",
+    "document": "Test Step: 1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read\n3. OSDP로 출력되는 값 확인\nTest Data: OSDP로 연결된 장치\n> Default 모드\n> Output info - User ID\n\nCustom Smart Card Layout 설정\n\n Custom Smart Card Byte Order\n> MSB\n\n\nExpected Result: 1. MSB Card 로 등록한 사용자 ID 가 출력된다.\nex) User ID - 12345 \n=> hex 값 3039 출력\n* 데이터 그대로 출력(순서 변경 X) ",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "40",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_41",
+    "document": "Test Step: \t\n1. OSDP Tool과 연결\n2. 연결된 장치에 Custom Smart Card Read\n3. OSDP로 출력되는 값 확인\nTest Data: OSDP로 연결된 장치\n> Default 모드\n> Output info - User ID\n\nCustom Smart Card Layout 설정\n\n Custom Smart Card Byte Order\n> LSB\n\n* 본문 내용 참고(MSB/LSB 값)\n\nExpected Result: 1. LSB Card 로 등록한 사용자 ID 가 출력된다.\nex) User ID - 6789\n=> hex 값 1A85 출력\n* 데이터 그대로 출력(순서 변경 X) ",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "41",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_42",
+    "document": "Test Step: 1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 Custom Smart Card Read\n3. Wiegand In으로 들어온 값 확인\nTest Data: Wiegand Out 장치\n > Custom Smart Card Layout 설정\n\nWiegand Output Info\n > User ID\n\nWiegand Format\n > Default\n > 임의 Custom Format\n\nCustom Smart Card Byte Order\n > MSB\n\nBypass\n\n> ON/OFF\nExpected Result: 1. MSB Card 로 등록한 사용자 ID 가 출력된다.\n ex) User ID - 12345 \n => hex 값 3039 출력\n2. Bypass 인 경우, User ID를 내보내는 옵션이 적용되지 않는다.(카드ID 출력)\n\n* 데이터 그대로 출력(순서 변경 X)",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "42",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_43",
+    "document": "Test Step: 1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 Custom Smart Card Read\n3. Wiegand In으로 들어온 값 확인\nTest Data: Wiegand Out 장치\n > Custom Smart Card Layout 설정\n\nWiegand Output Info\n > User ID\n\nWiegand Format\n > Default\n > 임의 Custom Format\n\nCustom Smart Card Byte Order\n > LSB\n\nBypass\n\n> ON/OFF\nExpected Result: 1. LSB Card 로 등록한 사용자 ID 가 출력된다.\nex) User ID - 6789\n=> hex 값 1A85 출력\n2. Bypass 인 경우, User ID를 내보내는 옵션이 적용되지 않는다.(카드ID 출력)\n* 데이터 그대로 출력(순서 변경 X) ",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "43",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_44",
+    "document": "Test Step: 1. 커스텀 카드 지원 장치 두대이상 선택> Batch Edit 클릭\n\nExpected Result: 1.'커스텀 스마트 카드' / '커스텀 스마트 카드 레이아웃' 옵션 확인\n> Default - Disabled\n",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "44",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_45",
+    "document": "Test Step: 1. 커스텀 카드 지원 장치 두대이상 선택> Batch Edit 클릭\n2. 커스텀 스마트 카드 > Enabled\n3. 카드 종류 설정 후 적용\n4. 장치상세정보창 진입\nExpected Result: 1. 사용할 카드 종류에 대하여 체크 박스를 선택할 수 있다.\n> Classic/Plus\n> DESFire, DESFire EV1/EV2/EV3\n2. 선택한 카드 종류 적용 확인",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "45",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_46",
+    "document": "Test Step: \t\n1. 커스텀 카드 지원 장치 두대이상 선택> Batch Edit 클릭\n2. 커스텀 스마트 카드 레이아웃 > 레이아웃 선택\n3. 레이아웃 선택 후 적용\n4. 장치 상세정보창 진입\nExpected Result: 1. 커스텀 스마트 카드로 생성된 레이아웃 목록 표시 확인\n> 커스텀 스마트 카드로 생성된 레이아웃 목록만 표시\n2. 선택한 레이아웃 적용 확인\n ",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "46",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_47",
+    "document": "Test Step: 1. 커스텀 카드 지원 장치 두대이상 선택> Batch Edit 클릭\n2. 커스텀 스마트 카드 > Enabled > 카드 종류 선택\n3. 커스텀 스마트 카드 레이아웃 > 레이아웃 선택 \n4. 카드종류 & 레이아웃 적용\n5. 장치 상세정보창 진입\nExpected Result: 1. 선택한 카드 종류 & 레이아웃 적용 확인\n ",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "47",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_48",
+    "document": "Test Step: 1. 장치에 커스텀 카드 레이아웃 설정\n2. 카드 레이아웃 중 Secondary Key로 설정한 Key를 가진 카드리드\nTest Data: 커스텀 카드 레이아웃 설정상태\n> Primary Key - Default\n> Secondary Key - Key 일치(리드할 카드)\n\n- Mifare\n- DesFire(Advanced)\n\nExpected Result: 1. Secondary Key로 인증성공으로 동작한다.",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "48",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_49",
+    "document": "Test Step: 1. 장치에 Suprema Smart Card Layout/Custom Smart Card Layout 모두 설정\n2. 장치재시작(SW Reset)\n3. Custom Smart Card 리드\nTest Data: : Suprema Smart Card Layout - Default Key(Secondary key: disable)\n: Custom Smart Card Layout - Secondary Key 설정\nExpected Result: 1. 발급된 카드 정보로 리드되어야 한다.",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "49",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_50",
+    "document": "Test Step: 1. 장치에 Suprema Smart Card Layout/Custom Smart Card Layout 모두 설정\n2. 장치재시작(SW Reset)\n3. Suprema Smart Card 리드\nTest Data: : Custom Smart Card Layout - Default Key(Secondary key: disable)\n: Suprema Smart Card Layout - Secondary Key 설정\nExpected Result: 1. 발급된 카드 정보로 리드되어야 한다.",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "50",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_51",
+    "document": "Test Step: -Mifare Custom Smart Card\n1. 설정 > 카드 형식 > Custom Smart Card Layout - Secondary Key 설정(A Layout)\n2. 장치 > Custom Smart Card 포맷에 A 레이아웃 선택\n3. A사용자 > Secondary Key 커스텀 카드 등록 > 인증\n4. 장치 > Primary key Custom Card Layout(B Layout)으로 변경\n5. A사용자 > 등록된 커스텀 카드 삭제\n6. B사용자 > 카드 > Primary Key Custom Card read \nTest Data: A사용자, A Layout - Secondary Key 카드\nex) Primary Key - default Key / Secondary Key - 1234\n\nB사용자, B Layout - Primary Key 카드\nex) Primary Key - 1234 / Secondary Key - Inactive\nExpected Result: 1. 발급된 카드 정보로 리드되어야 한다.\n *CSN 카드 정보로 리드됨\n BLNIIFW-1154 (현상태 유지)\n!Mifarer.png|thumbnail!",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "51",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_52",
+    "document": "Test Step: -DesFire Custom Smart Card\n1. 설정 > Card Format > Custom Smart Card Layout - Secondary Key 설정(A Layout)\n2. 장치 > Custom Smart Card 포맷에 A 레이아웃 선택\n3. A사용자 > Secondary Key 커스텀 카드 등록 > 인증\n4. 장치 > Primary key Custom Card Layout(B Layout)으로 변경\n5. A사용자 > 등록된 커스텀 카드 삭제\n6. B사용자 > 카드 > Primary Key Custom Card read\nTest Data: A사용자, A Layout - Secondary Key 카드\nex) Primary Key - default Key / Secondary Key - 1234\n\nB사용자, B Layout - Primary Key 카드\nex) Primary Key - 1234 / Secondary Key - Inactive\nExpected Result: 1. 발급된 카드 정보로 리드되어야 한다.",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "52",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_53",
+    "document": "Test Step: -Mifare Suprema Smart Card\n1. 설정 > 카드 형식 > Suprema Smart Card Layout - Secondary Key 설정(A Layout)\n2. 장치 > Suprema Smart Card 포맷에 A 레이아웃 선택\n3. A사용자 > Secondary Key Suprema 카드 발급 > 인증\n4. 장치 > Primary key Suprema Card Layout(B Layout)으로 변경\n5. A사용자 > 등록된 Suprema 카드 삭제\n6. B사용자 > 카드 > Primary Key Suprema Card read \nTest Data: A사용자, A Layout - Secondary Key 카드(Primary Key-Default)\nB사용자, B Layout - Primary Key 카드(Secondary Key Inactive)\n\nExpected Result: 1. CSN 카드 정보로 리드됨",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "53",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_54",
+    "document": "Test Step: -DesFire Suprema Smart Card\n1. 설정 > Card Format > Suprema Smart Card Layout - Secondary Key 설정(A Layout)\n2. 장치 > Suprema Smart Card 포맷에 A 레이아웃 선택\n3. A사용자 > Secondary Key Suprema 카드 등록 > 인증\n4. 장치 > Primary key Suprema Card Layout(B Layout)으로 변경\n5. A사용자 > 등록된 Suprema 카드 삭제\n6. B사용자 > 카드 > Primary Key Suprema Card read\nTest Data: A사용자, A Layout - Secondary Key 카드\nex) Primary Key - default Key / Secondary Key - 1234\n\nB사용자, B Layout - Primary Key 카드\nex) Primary Key - 1234 / Secondary Key - Inactive\nExpected Result: 1. CSN 카드 정보로 리드됨",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "54",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-291_step_55",
+    "document": "Test Step: -Mifare Custom/Suprema Smart Card (XPASSII-594) \n1. 장치 >  Primary key Suprema Card Layout(#1 Layout) 설정 > #1 사용자 등록\n2. 장치 > #1_Second Layout 설정 > #1 사용자 인증 성공\n3. 장치 > #1 Layout 설정 > #1 사용자 인증 \nTest Data: #1_second Layout - Secondary Key 카드\nex) Primary Key - default Key / Secondary Key - 1234\n\n#1 Layout - Primary Key 카드\nex) Primary Key - 1234 / Secondary Key - Inactive\nExpected Result: 발급된 카드 정보로 read 인증 성공해야한다.",
+    "metadata": {
+      "issue_key": "COMMONR-291",
+      "step_index": "55",
+      "source": "jira_test_step"
+    }
   }
-}
+]

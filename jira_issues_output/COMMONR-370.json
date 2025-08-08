@@ -1,803 +1,191 @@
-{
-  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
-  "id": "69091",
-  "self": "https://jira.suprema.co.kr/rest/api/2/issue/69091",
-  "key": "COMMONR-370",
-  "fields": {
-    "resolution": null,
-    "customfield_13103": null,
-    "customfield_10510": null,
-    "customfield_10500": "0.0",
-    "customfield_10501": null,
-    "customfield_10502": null,
-    "customfield_12802": null,
-    "customfield_12804": null,
-    "customfield_10505": null,
-    "customfield_12803": null,
-    "customfield_10506": null,
-    "customfield_12806": null,
-    "customfield_10507": null,
-    "customfield_12805": null,
-    "customfield_10508": null,
-    "customfield_12808": null,
-    "customfield_10509": null,
-    "lastViewed": null,
-    "customfield_10180": null,
-    "customfield_10181": null,
-    "customfield_10182": null,
-    "customfield_10183": null,
-    "customfield_10184": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10173",
-      "value": "Major",
-      "id": "10173"
-    },
-    "customfield_10185": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
-      "value": "Medium (2-3일 이내 피드백)",
-      "id": "10220"
-    },
-    "labels": [],
-    "customfield_11702": null,
-    "aggregatetimeoriginalestimate": null,
-    "issuelinks": [
-      {
-        "id": "63860",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63860",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "72255",
-          "key": "BS3FW-1961",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72255",
-          "fields": {
-            "summary": "Seconday Key로 인증이 성공한 후 보조키 비활성화된 Primary Key레이아웃으로 변경 시 계속 인증 실패되는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "63824",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/63824",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "72933",
-          "key": "BS3FW-2051",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72933",
-          "fields": {
-            "summary": "Suprema Smart Card Mifare Plus  AES-128 형식일 때 카드 포맷 및 발급 안되는 현상(Read는 됨)",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "62320",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/62320",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "71388",
-          "key": "XPASSII-590",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/71388",
-          "fields": {
-            "summary": "Custom Smart Card의 Data가 실제 Data값과 상이한 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
-              "name": "Major (B+)",
-              "id": "10200"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "62183",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/62183",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "71391",
-          "key": "XPASSII-591",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/71391",
-          "fields": {
-            "summary": "[특정장치] Mifare Plus EV1 SL1, SL3, SL1SL3 Mix Mode 미지원 FW에서 지원 FW upgrade시 카드 정보 CSN으로 리드 되는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
-              "name": "Major (B+)",
-              "id": "10200"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "62318",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/62318",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "71509",
-          "key": "XPASSII-595",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/71509",
-          "fields": {
-            "summary": "커스텀 카드 형식에서 Encryption Type 기본값이 Crypto-1이 아닌 AES-128으로 표출되는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
-              "name": "Major (B+)",
-              "id": "10200"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "59990",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/59990",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "inwardIssue": {
-          "id": "68977",
-          "key": "BES-3068",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/68977",
-          "fields": {
-            "summary": "TestCase 작성",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "완료",
-              "id": "10001",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
-              "id": "5",
-              "description": "이슈의 부작업",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
-              "name": "부작업",
-              "subtask": true,
-              "avatarId": 10316
-            }
-          }
-        }
-      }
-    ],
-    "assignee": null,
-    "components": [],
-    "customfield_10170": null,
-    "customfield_10171": null,
-    "customfield_10172": null,
-    "customfield_10174": null,
-    "customfield_10175": null,
-    "customfield_10176": null,
-    "customfield_10177": null,
-    "customfield_10178": null,
-    "customfield_10179": null,
-    "customfield_10600": 21.0,
-    "customfield_10601": [],
-    "customfield_12901": null,
-    "customfield_10602": null,
-    "customfield_12900": null,
-    "subtasks": [],
-    "reporter": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
-      "name": "김소영",
-      "key": "김소영",
-      "emailAddress": "sykim@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-      },
-      "displayName": "김소영",
-      "active": true,
-      "timeZone": "Asia/Seoul"
-    },
-    "customfield_10168": null,
-    "customfield_10169": null,
-    "customfield_11800": null,
-    "progress": {
-      "progress": 0,
-      "total": 0
-    },
-    "votes": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-370/votes",
-      "votes": 0,
-      "hasVoted": false
-    },
-    "worklog": {
-      "startAt": 0,
-      "maxResults": 20,
-      "total": 0,
-      "worklogs": []
-    },
-    "issuetype": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
-      "id": "10000",
-      "description": "Represents a Test",
-      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
-      "name": "Test",
-      "subtask": false
-    },
-    "project": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
-      "id": "10000",
-      "key": "COMMONR",
-      "name": "Common Requirement And Test Case",
-      "projectTypeKey": "software",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
-        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
-        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
-        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
-      },
-      "projectCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
-        "id": "10000",
-        "description": "Requirements And Test Cases For The BioStar System Device",
-        "name": "BioStar System Device Requirement And Test Case"
-      }
-    },
-    "customfield_11000": null,
-    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@4d8c3ddb[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@18379fbe[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6caba8a2[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@48c500e6[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@75220644[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@1c1266c7[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@2dcd235f[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@4defc430[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@289afbef[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@27b18465[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@63a28c17[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@505f1a17[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
-    "resolutiondate": null,
-    "watches": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-370/watchers",
-      "watchCount": 1,
-      "isWatching": false
-    },
-    "customfield_11900": null,
-    "customfield_11901": null,
-    "updated": "2025-08-04T16:58:19.000+0900",
-    "timeoriginalestimate": null,
-    "description": "https://jira.suprema.co.kr/browse/BDP-1067\r\n * 지원 바이오스타: V2.9.9 이상\r\n => 바이오스타 UI상 Mifare Tab에서 SL1(Crypto-1) <-> SL3(AES-128) 옵션을 토글키로 지원\r\n\r\n * 지원 Device Manager: v1.2.1 이상\r\n\r\n * 선 반영모델: XPD2 V1.8.1(2025-03 등록)\r\n => 이후 릴리즈되는 모델들에 대해 순차 적용 진행\r\n\r\n※ Mifare Plus Suprema layout은 SL3만 지원한다.\r\n ※ SL1 > SL2 > SL3 => SL3가 보안이 가장 좋음. 보안상 상위 레벨에서 하위 레벨로 갈 수 없음.\r\n ※ 바이오스타 UI상에서는 지원 Byte를 모두 설정하지 않더라도 적용이 됨. 이때 설정하지 않은 뒷부분은 0xFF로 채워짐. 즉 mifare key(6byte)를 11로 설정하면 뒷부분은 0xFF로 채워서 내려보내줌(11 ff ff ff ff ff)\r\n => 단, SDK는 예외. 모두 설정해줘야 함.",
-    "customfield_10251": null,
-    "customfield_10252": null,
-    "customfield_10253": null,
-    "customfield_10254": null,
-    "customfield_10255": null,
-    "timetracking": {},
-    "customfield_10257": null,
-    "customfield_10247": null,
-    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1) BioStar&gt; Settings&gt; Card Format<br/>2) Smart Card&gt; Add Smart Card<br/>3) Smart Card Type: Suprema<br/>4) Mifare Tab&gt; Encryption Type 확인</p></td><td><p>Encryption Type<br/>&gt; SL1(Default)<br/>&gt; SL3</p></td><td><p>1. 기본값은 SL1으로 SL1이 Enable 처리되어 있으며 SL1 &lt;-&gt; SL3 옵션을 토글키로 지원</p></td></tr><tr><td>2</td><td><p>1) Step 1 수행<br/>2) Key 및 Layout 설정 후 저장<br/>3) Device&gt; 장치선택&gt; Suprema Smart Card 설정 후 저장<br/>4) 기 발급된 Mifare Classic 카드 Read</p></td><td><p>설정한 Encryption Type<br/>&gt; Crypto-1 Enable 상태</p></td><td><p>1. 인증성공으로 동작되면서 발급된 정보로 리드된다.</p></td></tr><tr><td>3</td><td><p>1) Step 2의 1)~3) 수행<br/>2) 기 발급된 Mifare Classic 카드 Read</p></td><td><p>설정한 Encryption Type<br/>&gt; AES-128 Enable 상태</p></td><td><p>1. 인증실패로 동작되면서 CSN으로 리드된다.</p></td></tr><tr><td>4</td><td><p>1) Step 2의 1)~3) 수행<br/>2) 기 발급된 Mifare Plus 카드 Read</p></td><td><p>설정한 Encryption Type<br/>&gt; Crypto-1 Enable 상태</p>\n\n<p>기 발급된 Mifare Plus Key<br/>&gt; 6byte + FFFFFF... 발급</p></td><td><p>1. 인증성공으로 동작되면서 발급된 정보로 리드된다.</p></td></tr><tr><td>5</td><td><p>1) Step 2의 1)~3) 수행<br/>2) 기 발급된 Mifare Plus 카드 Read</p></td><td><p>설정한 Encryption Type<br/>&gt; AES-128 Enable 상태<br/>=&gt; 6byte + FFFFFF... 로 설정</p>\n\n<p>기 발급된 Mifare Plus Key<br/>&gt; 6byte + FFFFFF... 발급</p></td><td><p>1. 인증성공으로 동작되면서 발급된 정보로 리드된다.</p></td></tr><tr><td>6</td><td><p>1) Step 2의 1)~3) 수행<br/>2) 기 발급된 Mifare Plus 카드 Read</p></td><td><p>설정한 Encryption Type<br/>&gt; AES-128 Enable 상태<br/>=&gt; 6byte 만 설정</p>\n\n<p>기 발급된 Mifare Plus Key<br/>&gt; 6byte + FFFFFF... 발급</p></td><td><p>1. 인증성공으로 동작되면서 발급된 정보로 리드된다.</p></td></tr><tr><td>7</td><td><p>1) Step 1의 1)~3) 수행<br/>2) Encryption Type: Crypto-1 Enable 설정<br/>3) Key 및 Layout 설정 후 저장<br/>3) Device&gt; 장치선택&gt; Suprema Smart Card 설정 후 저장<br/>4) User&gt; User 선택&gt; Card&gt; Card Type: Read Card&gt; Device 선택&gt; Format<br/>5) Card Type: Smart Card&gt; Device 선택&gt; Mifare Classic 카드 발급</p></td><td><p>Primary Key 및 Layout 설정<br/>&gt; Case 1 - Default Key <br/>&gt; Case 2 - 임의키(ex.1234)</p></td><td><p>1. 설정된 Key로 카드 발급이 된다.</p>\n\n<p>※ 발급하려고 하는 카드에 키가 존재할 경우 Secondary Key 항목에 기존 키 설정 후 진행</p></td></tr><tr><td>8</td><td><p>1) Step 7 수행<br/>2) Device&gt; <a href=\"https://jira.suprema.co.kr/browse/BDP-1067\" title=\"Mifare Plus EV1 SL1, SL3, SL1SL3 Mix Mode 지원 [PFE 281]\" class=\"issue-link\" data-issue-key=\"BDP-1067\"><del>BDP-1067</del></a> 지원 장치선택&gt; Suprema Smart Card 설정 후 저장<br/>3) Step 7에서 발급한 Mifare Classic 카드 리드</p></td><td><p>Primary Key 및 Layout 설정<br/>&gt; Case 1 - Default Key <br/>&gt; Case 2 - 임의키(ex.1234)</p></td><td><p>1. 인증성공으로 동작되면서 발급된 정보로 리드된다.</p></td></tr><tr><td>9</td><td><p>1) Step 7 수행<br/>2) Device&gt; <a href=\"https://jira.suprema.co.kr/browse/BDP-1067\" title=\"Mifare Plus EV1 SL1, SL3, SL1SL3 Mix Mode 지원 [PFE 281]\" class=\"issue-link\" data-issue-key=\"BDP-1067\"><del>BDP-1067</del></a> 미지원 장치선택&gt; Suprema Smart Card 설정 후 저장<br/>3) Step 7에서 발급한 Mifare Classic 카드 리드</p></td><td><p>Primary Key 및 Layout 설정<br/>&gt; Case 1 - Default Key <br/>&gt; Case 2 - 임의키(ex.1234)</p></td><td><p>1. 인증성공으로 동작되면서 발급된 정보로 리드된다.</p></td></tr><tr><td>10</td><td><p>1) Step 1의 1)~3) 수행<br/>2) Encryption Type: AES-128 Enable 설정<br/>3) Key 및 Layout 설정 후 저장<br/>3) Device&gt; 장치선택&gt; Suprema Smart Card 설정 후 저장<br/>4) User&gt; User 선택&gt; Card&gt; Card Type: Read Card&gt; Device 선택&gt; Format<br/>5) Card Type: Smart Card&gt; Device 선택&gt; Mifare Plus 카드 발급</p></td><td><p>Primary Key 및 Layout 설정<br/>&gt; Case 1 - Default Key <br/>&gt; Case 2 - 임의키(ex.1234)<br/>&gt; Case 3 - 임의키(ex.16byte 설정)</p></td><td><p>1. 설정된 Key로 카드 발급이 된다.</p>\n\n<p>※ 발급하려고 하는 카드에 키가 존재할 경우 Secondary Key 항목에 기존 키 설정 후 진행</p></td></tr><tr><td>11</td><td><p>1) Step 10 수행<br/>2) Device&gt; <a href=\"https://jira.suprema.co.kr/browse/BDP-1067\" title=\"Mifare Plus EV1 SL1, SL3, SL1SL3 Mix Mode 지원 [PFE 281]\" class=\"issue-link\" data-issue-key=\"BDP-1067\"><del>BDP-1067</del></a> 지원 장치선택&gt; Suprema Smart Card 설정 후 저장<br/>3) Step 10에서 발급한 Mifare Plus 카드 리드</p></td><td><p>Primary Key 및 Layout 설정<br/>&gt; Case 1 - Default Key <br/>&gt; Case 2 - 임의키(ex.1234)<br/>&gt; Case 3 - 임의키(ex.16byte 설정)</p></td><td><p>1. 인증성공으로 동작되면서 발급된 정보로 리드된다.</p></td></tr><tr><td>12</td><td><p>1) Step 10 수행<br/>2) Device&gt; <a href=\"https://jira.suprema.co.kr/browse/BDP-1067\" title=\"Mifare Plus EV1 SL1, SL3, SL1SL3 Mix Mode 지원 [PFE 281]\" class=\"issue-link\" data-issue-key=\"BDP-1067\"><del>BDP-1067</del></a> 미지원 장치선택&gt; Suprema Smart Card 설정 후 저장<br/>3) Step 10에서 발급한 Mifare Plus 카드 리드</p></td><td><p>Primary Key 및 Layout 설정<br/>&gt; Case 1 - Default Key <br/>&gt; Case 2 - 임의키(ex.1234)<br/>&gt; Case 3 - 임의키(ex.16byte 설정)</p></td><td><p>1. 인증성공으로 동작되면서 발급된 정보로 리드된다.<br/>2. 카드 발급시 키를 16byte 모두 설정한 상태에서 발급을 한 경우 인증실패로 동작되면서 CSN으로 리드된다.</p></td></tr><tr><td>13</td><td><p>1) BioStar&gt; Settings&gt; Card Format<br/>2) Smart Card&gt; Add Smart Card<br/>3) Smart Card Type: Custom <br/>4) Mifare Tab&gt; Encryption Type 확인</p></td><td><p>Encryption Type<br/>&gt; Crypto-1(Default)<br/>&gt; AES-128</p></td><td><p>1. 기본값은 Crypto-1로 Crypto-1 토글은 Disable 처리되어 있어야한다.</p></td></tr><tr><td>14</td><td><p>1) Step 13 수행<br/>2) Key 및 Layout 설정 후 저장<br/>3) Device&gt; 장치선택&gt; Custom Smart Card 설정 후 저장<br/>4) 커스텀 스마트 카드 Read</p></td><td><p>설정한 Encryption Type<br/>&gt; Crypto-1 Enable 상태</p></td><td><p>1. 인증성공으로 동작되면서 발급된 정보로 리드된다.</p></td></tr><tr><td>15</td><td><p>1) Step 14의 1)~3) 수행<br/>2) UID 7Byte인 커스텀 스마트 카드 Read</p></td><td><p>설정한 Encryption Type<br/>&gt; Crypto-1 Enable 상태4</p></td><td><p>1. 인증실패로 동작되면서 CSN으로 리드된다.</p></td></tr><tr><td>16</td><td><p>1) Step 14의 1)~3) 수행<br/>2)  UID 7Byte인 커스텀 스마트 카드 Read</p></td><td><p>설정한 Encryption Type<br/>&gt; AES-128 Enable 상태4</p></td><td><p>1. 인증성공으로 동작되면서 발급된 정보로 리드된다.</p></td></tr><tr><td>17</td><td><p>1) <a href=\"https://jira.suprema.co.kr/browse/BDP-1067\" title=\"Mifare Plus EV1 SL1, SL3, SL1SL3 Mix Mode 지원 [PFE 281]\" class=\"issue-link\" data-issue-key=\"BDP-1067\"><del>BDP-1067</del></a> 미지원 버전 장치에 기 Mifare Layout 설정된 상태<br/>2) <a href=\"https://jira.suprema.co.kr/browse/BDP-1067\" title=\"Mifare Plus EV1 SL1, SL3, SL1SL3 Mix Mode 지원 [PFE 281]\" class=\"issue-link\" data-issue-key=\"BDP-1067\"><del>BDP-1067</del></a> 지원 FW로 Upgrade<br/>3) Mifare Classic/Plus 스마트 카드 리드</p></td><td><p>기 Smart Card Layout(Mifare 탭)<br/>&gt; Key - Default </p></td><td><p>1. 인증성공으로 동작되면서 발급된 정보로 리드된다.</p></td></tr><tr><td>18</td><td><p><span class=\"error\">&#91;BDP-1067 적용 바이오스타에 연결&#93;</span><br/>1) <a href=\"https://jira.suprema.co.kr/browse/BDP-1067\" title=\"Mifare Plus EV1 SL1, SL3, SL1SL3 Mix Mode 지원 [PFE 281]\" class=\"issue-link\" data-issue-key=\"BDP-1067\"><del>BDP-1067</del></a> 미지원 버전 장치에 기 Mifare Layout 설정된 상태<br/>2) <a href=\"https://jira.suprema.co.kr/browse/BDP-1067\" title=\"Mifare Plus EV1 SL1, SL3, SL1SL3 Mix Mode 지원 [PFE 281]\" class=\"issue-link\" data-issue-key=\"BDP-1067\"><del>BDP-1067</del></a> 지원 FW로 Upgrade<br/>3) Smart Card Layout에서 변경없이 Apply<br/>4) Mifare Classic/Plus 스마트 카드 리드</p></td><td><p>기 Smart Card Layout(Mifare 탭)<br/>&gt; Key - Default</p></td><td><p>1. 인증성공으로 동작되면서 발급된 정보로 리드된다.</p></td></tr><tr><td>19</td><td><p><span class=\"error\">&#91;BDP-1067 적용 바이오스타에 연결&#93;</span><br/>1) <a href=\"https://jira.suprema.co.kr/browse/BDP-1067\" title=\"Mifare Plus EV1 SL1, SL3, SL1SL3 Mix Mode 지원 [PFE 281]\" class=\"issue-link\" data-issue-key=\"BDP-1067\"><del>BDP-1067</del></a> 미지원 버전 장치에 기 Mifare Layout 설정된 상태<br/>2) <a href=\"https://jira.suprema.co.kr/browse/BDP-1067\" title=\"Mifare Plus EV1 SL1, SL3, SL1SL3 Mix Mode 지원 [PFE 281]\" class=\"issue-link\" data-issue-key=\"BDP-1067\"><del>BDP-1067</del></a> 지원 FW로 Upgrade<br/>3) Smart Card Layout에서 AES-128로 변경 후 Apply<br/>4) Mifare Classic/Plus 스마트 카드 리드</p></td><td><p>기 Smart Card Layout(Mifare 탭)<br/>&gt; Key - Default</p></td><td><p>1. 인증성공으로 동작되면서 발급된 정보로 리드된다.</p></td></tr><tr><td>20</td><td><p><span class=\"error\">&#91;BDP-1067 적용 바이오스타에 연결&#93;</span><br/>1) <a href=\"https://jira.suprema.co.kr/browse/BDP-1067\" title=\"Mifare Plus EV1 SL1, SL3, SL1SL3 Mix Mode 지원 [PFE 281]\" class=\"issue-link\" data-issue-key=\"BDP-1067\"><del>BDP-1067</del></a> 미지원 버전 장치에 기 Mifare Layout 설정된 상태<br/>2) <a href=\"https://jira.suprema.co.kr/browse/BDP-1067\" title=\"Mifare Plus EV1 SL1, SL3, SL1SL3 Mix Mode 지원 [PFE 281]\" class=\"issue-link\" data-issue-key=\"BDP-1067\"><del>BDP-1067</del></a> 지원 FW로 Upgrade<br/>3) Smart Card Layout에서 AES-128로 변경 후 Apply<br/>4) Mifare Classic/Plus 스마트 카드 리드</p></td><td><p>기 Smart Card Layout(Mifare 탭)<br/>&gt; Key - 123456</p></td><td><p>1. Classic 카드는 인증실패로 동작되면서 CSN으로 리드된다.<br/>2. Mifare Plus는 인증성공으로 동작되면서 발급된 정보로 리드된다.</p></td></tr><tr><td>21</td><td><p>(<a href=\"https://jira.suprema.co.kr/browse/XPASSII-594\" title=\"SL3 레이아웃 설정된 장치에서 인증실패 후 SL1 레이아웃 장치에 SL1 카드 인증 시 CSN 값으로 읽혀 인증 실패 되는 현상\" class=\"issue-link\" data-issue-key=\"XPASSII-594\"><del>XPASSII-594</del></a>-&gt;SL1(Crytpo1) 인증시 Seconday Key 인증이 실패 이슈)<br/>1. 설정 &gt; 카드 형식 &gt; Custom Card Layout <br/>2. 카드 Key 정보 SecondaryKey로 입력<br/>3. 장치 Reboot<br/>4. 장치 &gt; SecondaryKey로 설정한 Layout 설정<br/>5. 카드 리드</p></td><td></td><td><p>1. 발급된 카드 정보로 리드된다.</p></td></tr></table>",
-    "customfield_10248": null,
-    "customfield_10006": [],
-    "customfield_10007": [],
-    "customfield_10008": {
-      "issueId": 69091,
-      "statuses": [
-        {
-          "statusResults": [
-            {
-              "latest": 3,
-              "latestFinal": 3,
-              "latestId": 35296,
-              "latestFinalId": 35296
-            }
-          ]
-        }
-      ]
-    },
-    "customfield_12309": null,
-    "customfield_10802": null,
-    "customfield_10803": null,
-    "customfield_10805": null,
-    "summary": "[BDP-1067]Mifare Plus EV1 SL1, SL3, SL1SL3 Mix Mode 지원[PFE 281]",
-    "customfield_10240": null,
-    "customfield_10000": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
-      "value": "Manual",
-      "id": "10000"
-    },
-    "customfield_10243": null,
-    "customfield_10001": null,
-    "customfield_10244": null,
-    "customfield_10002": null,
-    "customfield_10003": null,
-    "customfield_10246": null,
-    "customfield_10004": {
-      "steps": [
-        {
-          "id": 19336,
-          "index": 1,
-          "step": "1) BioStar> Settings> Card Format\n2) Smart Card> Add Smart Card\n3) Smart Card Type: Suprema\n4) Mifare Tab> Encryption Type 확인",
-          "data": "Encryption Type\n> SL1(Default)\n> SL3",
-          "result": "1. 기본값은 SL1으로 SL1이 Enable 처리되어 있으며 SL1 <-> SL3 옵션을 토글키로 지원",
-          "attachments": [
-            {
-              "id": 1139,
-              "fileName": "이미지 (3).png",
-              "fileIcon": "image.gif",
-              "fileIconAlt": "PNG File",
-              "fileSize": "80 kB",
-              "numericalFileSize": 0,
-              "created": "어제 4:58 오후",
-              "author": "separk"
-            }
-          ]
-        },
-        {
-          "id": 19337,
-          "index": 2,
-          "step": "1) Step 1 수행\n2) Key 및 Layout 설정 후 저장\n3) Device> 장치선택> Suprema Smart Card 설정 후 저장\n4) 기 발급된 Mifare Classic 카드 Read",
-          "data": "설정한 Encryption Type\n> Crypto-1 Enable 상태",
-          "result": "1. 인증성공으로 동작되면서 발급된 정보로 리드된다.",
-          "attachments": []
-        },
-        {
-          "id": 19338,
-          "index": 3,
-          "step": "1) Step 2의 1)~3) 수행\n2) 기 발급된 Mifare Classic 카드 Read",
-          "data": "설정한 Encryption Type\n> AES-128 Enable 상태",
-          "result": "1. 인증실패로 동작되면서 CSN으로 리드된다.",
-          "attachments": []
-        },
-        {
-          "id": 19339,
-          "index": 4,
-          "step": "1) Step 2의 1)~3) 수행\n2) 기 발급된 Mifare Plus 카드 Read",
-          "data": "설정한 Encryption Type\n> Crypto-1 Enable 상태\n\n기 발급된 Mifare Plus Key\n> 6byte + FFFFFF... 발급",
-          "result": "1. 인증성공으로 동작되면서 발급된 정보로 리드된다.",
-          "attachments": []
-        },
-        {
-          "id": 19340,
-          "index": 5,
-          "step": "1) Step 2의 1)~3) 수행\n2) 기 발급된 Mifare Plus 카드 Read",
-          "data": "설정한 Encryption Type\n> AES-128 Enable 상태\n=> 6byte + FFFFFF... 로 설정\n\n기 발급된 Mifare Plus Key\n> 6byte + FFFFFF... 발급",
-          "result": "1. 인증성공으로 동작되면서 발급된 정보로 리드된다.",
-          "attachments": []
-        },
-        {
-          "id": 19342,
-          "index": 6,
-          "step": "1) Step 2의 1)~3) 수행\n2) 기 발급된 Mifare Plus 카드 Read",
-          "data": "설정한 Encryption Type\n> AES-128 Enable 상태\n=> 6byte 만 설정\n\n기 발급된 Mifare Plus Key\n> 6byte + FFFFFF... 발급",
-          "result": "1. 인증성공으로 동작되면서 발급된 정보로 리드된다.",
-          "attachments": []
-        },
-        {
-          "id": 19343,
-          "index": 7,
-          "step": "1) Step 1의 1)~3) 수행\n2) Encryption Type: Crypto-1 Enable 설정\n3) Key 및 Layout 설정 후 저장\n3) Device> 장치선택> Suprema Smart Card 설정 후 저장\n4) User> User 선택> Card> Card Type: Read Card> Device 선택> Format\n5) Card Type: Smart Card> Device 선택> Mifare Classic 카드 발급",
-          "data": "Primary Key 및 Layout 설정\n> Case 1 - Default Key \n> Case 2 - 임의키(ex.1234)",
-          "result": "1. 설정된 Key로 카드 발급이 된다.\n\n※ 발급하려고 하는 카드에 키가 존재할 경우 Secondary Key 항목에 기존 키 설정 후 진행",
-          "attachments": []
-        },
-        {
-          "id": 19344,
-          "index": 8,
-          "step": "1) Step 7 수행\n2) Device> BDP-1067 지원 장치선택> Suprema Smart Card 설정 후 저장\n3) Step 7에서 발급한 Mifare Classic 카드 리드",
-          "data": "Primary Key 및 Layout 설정\n> Case 1 - Default Key \n> Case 2 - 임의키(ex.1234)",
-          "result": "1. 인증성공으로 동작되면서 발급된 정보로 리드된다.",
-          "attachments": []
-        },
-        {
-          "id": 19347,
-          "index": 9,
-          "step": "1) Step 7 수행\n2) Device> BDP-1067 미지원 장치선택> Suprema Smart Card 설정 후 저장\n3) Step 7에서 발급한 Mifare Classic 카드 리드",
-          "data": "Primary Key 및 Layout 설정\n> Case 1 - Default Key \n> Case 2 - 임의키(ex.1234)",
-          "result": "1. 인증성공으로 동작되면서 발급된 정보로 리드된다.",
-          "attachments": []
-        },
-        {
-          "id": 19345,
-          "index": 10,
-          "step": "1) Step 1의 1)~3) 수행\n2) Encryption Type: AES-128 Enable 설정\n3) Key 및 Layout 설정 후 저장\n3) Device> 장치선택> Suprema Smart Card 설정 후 저장\n4) User> User 선택> Card> Card Type: Read Card> Device 선택> Format\n5) Card Type: Smart Card> Device 선택> Mifare Plus 카드 발급",
-          "data": "Primary Key 및 Layout 설정\n> Case 1 - Default Key \n> Case 2 - 임의키(ex.1234)\n> Case 3 - 임의키(ex.16byte 설정)",
-          "result": "1. 설정된 Key로 카드 발급이 된다.\n\n※ 발급하려고 하는 카드에 키가 존재할 경우 Secondary Key 항목에 기존 키 설정 후 진행",
-          "attachments": []
-        },
-        {
-          "id": 19346,
-          "index": 11,
-          "step": "1) Step 10 수행\n2) Device> BDP-1067 지원 장치선택> Suprema Smart Card 설정 후 저장\n3) Step 10에서 발급한 Mifare Plus 카드 리드",
-          "data": "Primary Key 및 Layout 설정\n> Case 1 - Default Key \n> Case 2 - 임의키(ex.1234)\n> Case 3 - 임의키(ex.16byte 설정)",
-          "result": "1. 인증성공으로 동작되면서 발급된 정보로 리드된다.",
-          "attachments": []
-        },
-        {
-          "id": 19348,
-          "index": 12,
-          "step": "1) Step 10 수행\n2) Device> BDP-1067 미지원 장치선택> Suprema Smart Card 설정 후 저장\n3) Step 10에서 발급한 Mifare Plus 카드 리드",
-          "data": "Primary Key 및 Layout 설정\n> Case 1 - Default Key \n> Case 2 - 임의키(ex.1234)\n> Case 3 - 임의키(ex.16byte 설정)",
-          "result": "1. 인증성공으로 동작되면서 발급된 정보로 리드된다.\n2. 카드 발급시 키를 16byte 모두 설정한 상태에서 발급을 한 경우 인증실패로 동작되면서 CSN으로 리드된다.",
-          "attachments": []
-        },
-        {
-          "id": 19349,
-          "index": 13,
-          "step": "1) BioStar> Settings> Card Format\n2) Smart Card> Add Smart Card\n3) Smart Card Type: Custom \n4) Mifare Tab> Encryption Type 확인",
-          "data": "Encryption Type\n> Crypto-1(Default)\n> AES-128",
-          "result": "1. 기본값은 Crypto-1로 Crypto-1 토글은 Disable 처리되어 있어야한다.",
-          "attachments": []
-        },
-        {
-          "id": 19350,
-          "index": 14,
-          "step": "1) Step 13 수행\n2) Key 및 Layout 설정 후 저장\n3) Device> 장치선택> Custom Smart Card 설정 후 저장\n4) 커스텀 스마트 카드 Read",
-          "data": "설정한 Encryption Type\n> Crypto-1 Enable 상태",
-          "result": "1. 인증성공으로 동작되면서 발급된 정보로 리드된다.",
-          "attachments": []
-        },
-        {
-          "id": 19351,
-          "index": 15,
-          "step": "1) Step 14의 1)~3) 수행\n2) UID 7Byte인 커스텀 스마트 카드 Read",
-          "data": "설정한 Encryption Type\n> Crypto-1 Enable 상태4",
-          "result": "1. 인증실패로 동작되면서 CSN으로 리드된다.",
-          "attachments": []
-        },
-        {
-          "id": 19352,
-          "index": 16,
-          "step": "1) Step 14의 1)~3) 수행\n2)  UID 7Byte인 커스텀 스마트 카드 Read",
-          "data": "설정한 Encryption Type\n> AES-128 Enable 상태4",
-          "result": "1. 인증성공으로 동작되면서 발급된 정보로 리드된다.",
-          "attachments": []
-        },
-        {
-          "id": 19356,
-          "index": 17,
-          "step": "1) BDP-1067 미지원 버전 장치에 기 Mifare Layout 설정된 상태\n2) BDP-1067 지원 FW로 Upgrade\n3) Mifare Classic/Plus 스마트 카드 리드",
-          "data": "기 Smart Card Layout(Mifare 탭)\n> Key - Default ",
-          "result": "1. 인증성공으로 동작되면서 발급된 정보로 리드된다.",
-          "attachments": []
-        },
-        {
-          "id": 19357,
-          "index": 18,
-          "step": "[BDP-1067 적용 바이오스타에 연결]\n1) BDP-1067 미지원 버전 장치에 기 Mifare Layout 설정된 상태\n2) BDP-1067 지원 FW로 Upgrade\n3) Smart Card Layout에서 변경없이 Apply\n4) Mifare Classic/Plus 스마트 카드 리드",
-          "data": "기 Smart Card Layout(Mifare 탭)\n> Key - Default",
-          "result": "1. 인증성공으로 동작되면서 발급된 정보로 리드된다.",
-          "attachments": []
-        },
-        {
-          "id": 19359,
-          "index": 19,
-          "step": "[BDP-1067 적용 바이오스타에 연결]\n1) BDP-1067 미지원 버전 장치에 기 Mifare Layout 설정된 상태\n2) BDP-1067 지원 FW로 Upgrade\n3) Smart Card Layout에서 AES-128로 변경 후 Apply\n4) Mifare Classic/Plus 스마트 카드 리드",
-          "data": "기 Smart Card Layout(Mifare 탭)\n> Key - Default",
-          "result": "1. 인증성공으로 동작되면서 발급된 정보로 리드된다.",
-          "attachments": []
-        },
-        {
-          "id": 19358,
-          "index": 20,
-          "step": "[BDP-1067 적용 바이오스타에 연결]\n1) BDP-1067 미지원 버전 장치에 기 Mifare Layout 설정된 상태\n2) BDP-1067 지원 FW로 Upgrade\n3) Smart Card Layout에서 AES-128로 변경 후 Apply\n4) Mifare Classic/Plus 스마트 카드 리드",
-          "data": "기 Smart Card Layout(Mifare 탭)\n> Key - 123456",
-          "result": "1. Classic 카드는 인증실패로 동작되면서 CSN으로 리드된다.\n2. Mifare Plus는 인증성공으로 동작되면서 발급된 정보로 리드된다.",
-          "attachments": []
-        },
-        {
-          "id": 19846,
-          "index": 21,
-          "step": "(XPASSII-594->SL1(Crytpo1) 인증시 Seconday Key 인증이 실패 이슈)\n1. 설정 > 카드 형식 > Custom Card Layout \n2. 카드 Key 정보 SecondaryKey로 입력\n3. 장치 Reboot\n4. 장치 > SecondaryKey로 설정한 Layout 설정\n5. 카드 리드",
-          "data": "",
-          "result": "1. 발급된 카드 정보로 리드된다.",
-          "attachments": []
-        }
-      ]
-    },
-    "customfield_10236": null,
-    "customfield_10237": null,
-    "environment": null,
-    "customfield_10238": null,
-    "customfield_10239": null,
-    "duedate": null,
-    "comment": {
-      "comments": [],
-      "maxResults": 0,
-      "total": 0,
-      "startAt": 0
-    },
-    "customfield_10230": null,
-    "fixVersions": [],
-    "customfield_10231": null,
-    "customfield_10232": null,
-    "customfield_10233": null,
-    "customfield_12410": null,
-    "customfield_10234": null,
-    "customfield_10235": null,
-    "customfield_10225": null,
-    "customfield_12404": null,
-    "customfield_10226": null,
-    "customfield_12403": null,
-    "customfield_10227": null,
-    "customfield_12406": null,
-    "customfield_10228": null,
-    "customfield_10229": null,
-    "customfield_10900": null,
-    "customfield_12408": null,
-    "customfield_10901": null,
-    "customfield_10902": null,
-    "customfield_10903": null,
-    "customfield_12409": null,
-    "customfield_10904": null,
-    "customfield_10905": null,
-    "customfield_10220": null,
-    "priority": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-      "name": "미할당",
-      "id": "10100"
-    },
-    "customfield_10221": null,
-    "customfield_12400": null,
-    "customfield_12402": null,
-    "customfield_10224": null,
-    "customfield_10214": null,
-    "customfield_10217": null,
-    "customfield_10218": null,
-    "timeestimate": null,
-    "versions": [],
-    "customfield_10219": null,
-    "status": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
-      "description": "",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
-      "name": "할 일",
-      "id": "10000",
-      "statusCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
-        "id": 2,
-        "key": "new",
-        "colorName": "blue-gray",
-        "name": "할 일"
-      }
-    },
-    "customfield_12510": null,
-    "customfield_10213": null,
-    "customfield_12511": null,
-    "customfield_10203": null,
-    "customfield_10204": null,
-    "customfield_12502": null,
-    "customfield_10205": null,
-    "customfield_10206": null,
-    "customfield_10207": null,
-    "aggregatetimeestimate": null,
-    "customfield_10208": null,
-    "customfield_10209": null,
-    "customfield_12509": null,
-    "customfield_12508": null,
-    "creator": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
-      "name": "김소영",
-      "key": "김소영",
-      "emailAddress": "sykim@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-      },
-      "displayName": "김소영",
-      "active": true,
-      "timeZone": "Asia/Seoul"
-    },
-    "aggregateprogress": {
-      "progress": 0,
-      "total": 0
-    },
-    "customfield_10320": null,
-    "customfield_10321": null,
-    "customfield_12501": null,
-    "customfield_10202": null,
-    "customfield_12500": null,
-    "customfield_10313": "1|hzzd3r:",
-    "customfield_10316": null,
-    "customfield_10317": null,
-    "timespent": null,
-    "aggregatetimespent": null,
-    "customfield_10310": null,
-    "customfield_10302": null,
-    "customfield_10303": null,
-    "customfield_12601": null,
-    "customfield_10304": null,
-    "customfield_10305": null,
-    "customfield_10308": null,
-    "workratio": -1,
-    "created": "2025-01-22T12:50:19.000+0900",
-    "customfield_10533": null,
-    "customfield_10534": null,
-    "customfield_11501": null,
-    "customfield_11503": null,
-    "customfield_13001": null,
-    "customfield_13000": null,
-    "customfield_10530": null,
-    "customfield_10531": null,
-    "customfield_10532": null,
-    "customfield_10401": null,
-    "customfield_10522": null,
-    "customfield_10402": null,
-    "customfield_12700": null,
-    "customfield_10524": null,
-    "customfield_10525": null,
-    "customfield_12702": null,
-    "attachment": [],
-    "customfield_10526": null,
-    "customfield_12704": null,
-    "customfield_10528": null,
-    "customfield_12706": null,
-    "customfield_10520": null,
-    "customfield_10521": null,
-    "customfield_10400": null,
-    "customfield_10511": null,
-    "customfield_10512": null,
-    "customfield_11600": null,
-    "customfield_10513": null,
-    "customfield_10514": null,
-    "customfield_10515": null,
-    "customfield_10516": null,
-    "customfield_10517": null,
-    "customfield_10518": null,
-    "customfield_10519": null
+[
+  {
+    "id": "COMMONR-370_step_1",
+    "document": "Test Step: 1) BioStar> Settings> Card Format\n2) Smart Card> Add Smart Card\n3) Smart Card Type: Suprema\n4) Mifare Tab> Encryption Type 확인\nTest Data: Encryption Type\n> SL1(Default)\n> SL3\nExpected Result: 1. 기본값은 SL1으로 SL1이 Enable 처리되어 있으며 SL1 <-> SL3 옵션을 토글키로 지원",
+    "metadata": {
+      "issue_key": "COMMONR-370",
+      "step_index": "1",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-370_step_2",
+    "document": "Test Step: 1) Step 1 수행\n2) Key 및 Layout 설정 후 저장\n3) Device> 장치선택> Suprema Smart Card 설정 후 저장\n4) 기 발급된 Mifare Classic 카드 Read\nTest Data: 설정한 Encryption Type\n> Crypto-1 Enable 상태\nExpected Result: 1. 인증성공으로 동작되면서 발급된 정보로 리드된다.",
+    "metadata": {
+      "issue_key": "COMMONR-370",
+      "step_index": "2",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-370_step_3",
+    "document": "Test Step: 1) Step 2의 1)~3) 수행\n2) 기 발급된 Mifare Classic 카드 Read\nTest Data: 설정한 Encryption Type\n> AES-128 Enable 상태\nExpected Result: 1. 인증실패로 동작되면서 CSN으로 리드된다.",
+    "metadata": {
+      "issue_key": "COMMONR-370",
+      "step_index": "3",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-370_step_4",
+    "document": "Test Step: 1) Step 2의 1)~3) 수행\n2) 기 발급된 Mifare Plus 카드 Read\nTest Data: 설정한 Encryption Type\n> Crypto-1 Enable 상태\n\n기 발급된 Mifare Plus Key\n> 6byte + FFFFFF... 발급\nExpected Result: 1. 인증성공으로 동작되면서 발급된 정보로 리드된다.",
+    "metadata": {
+      "issue_key": "COMMONR-370",
+      "step_index": "4",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-370_step_5",
+    "document": "Test Step: 1) Step 2의 1)~3) 수행\n2) 기 발급된 Mifare Plus 카드 Read\nTest Data: 설정한 Encryption Type\n> AES-128 Enable 상태\n=> 6byte + FFFFFF... 로 설정\n\n기 발급된 Mifare Plus Key\n> 6byte + FFFFFF... 발급\nExpected Result: 1. 인증성공으로 동작되면서 발급된 정보로 리드된다.",
+    "metadata": {
+      "issue_key": "COMMONR-370",
+      "step_index": "5",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-370_step_6",
+    "document": "Test Step: 1) Step 2의 1)~3) 수행\n2) 기 발급된 Mifare Plus 카드 Read\nTest Data: 설정한 Encryption Type\n> AES-128 Enable 상태\n=> 6byte 만 설정\n\n기 발급된 Mifare Plus Key\n> 6byte + FFFFFF... 발급\nExpected Result: 1. 인증성공으로 동작되면서 발급된 정보로 리드된다.",
+    "metadata": {
+      "issue_key": "COMMONR-370",
+      "step_index": "6",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-370_step_7",
+    "document": "Test Step: 1) Step 1의 1)~3) 수행\n2) Encryption Type: Crypto-1 Enable 설정\n3) Key 및 Layout 설정 후 저장\n3) Device> 장치선택> Suprema Smart Card 설정 후 저장\n4) User> User 선택> Card> Card Type: Read Card> Device 선택> Format\n5) Card Type: Smart Card> Device 선택> Mifare Classic 카드 발급\nTest Data: Primary Key 및 Layout 설정\n> Case 1 - Default Key \n> Case 2 - 임의키(ex.1234)\nExpected Result: 1. 설정된 Key로 카드 발급이 된다.\n\n※ 발급하려고 하는 카드에 키가 존재할 경우 Secondary Key 항목에 기존 키 설정 후 진행",
+    "metadata": {
+      "issue_key": "COMMONR-370",
+      "step_index": "7",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-370_step_8",
+    "document": "Test Step: 1) Step 7 수행\n2) Device> BDP-1067 지원 장치선택> Suprema Smart Card 설정 후 저장\n3) Step 7에서 발급한 Mifare Classic 카드 리드\nTest Data: Primary Key 및 Layout 설정\n> Case 1 - Default Key \n> Case 2 - 임의키(ex.1234)\nExpected Result: 1. 인증성공으로 동작되면서 발급된 정보로 리드된다.",
+    "metadata": {
+      "issue_key": "COMMONR-370",
+      "step_index": "8",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-370_step_9",
+    "document": "Test Step: 1) Step 7 수행\n2) Device> BDP-1067 미지원 장치선택> Suprema Smart Card 설정 후 저장\n3) Step 7에서 발급한 Mifare Classic 카드 리드\nTest Data: Primary Key 및 Layout 설정\n> Case 1 - Default Key \n> Case 2 - 임의키(ex.1234)\nExpected Result: 1. 인증성공으로 동작되면서 발급된 정보로 리드된다.",
+    "metadata": {
+      "issue_key": "COMMONR-370",
+      "step_index": "9",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-370_step_10",
+    "document": "Test Step: 1) Step 1의 1)~3) 수행\n2) Encryption Type: AES-128 Enable 설정\n3) Key 및 Layout 설정 후 저장\n3) Device> 장치선택> Suprema Smart Card 설정 후 저장\n4) User> User 선택> Card> Card Type: Read Card> Device 선택> Format\n5) Card Type: Smart Card> Device 선택> Mifare Plus 카드 발급\nTest Data: Primary Key 및 Layout 설정\n> Case 1 - Default Key \n> Case 2 - 임의키(ex.1234)\n> Case 3 - 임의키(ex.16byte 설정)\nExpected Result: 1. 설정된 Key로 카드 발급이 된다.\n\n※ 발급하려고 하는 카드에 키가 존재할 경우 Secondary Key 항목에 기존 키 설정 후 진행",
+    "metadata": {
+      "issue_key": "COMMONR-370",
+      "step_index": "10",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-370_step_11",
+    "document": "Test Step: 1) Step 10 수행\n2) Device> BDP-1067 지원 장치선택> Suprema Smart Card 설정 후 저장\n3) Step 10에서 발급한 Mifare Plus 카드 리드\nTest Data: Primary Key 및 Layout 설정\n> Case 1 - Default Key \n> Case 2 - 임의키(ex.1234)\n> Case 3 - 임의키(ex.16byte 설정)\nExpected Result: 1. 인증성공으로 동작되면서 발급된 정보로 리드된다.",
+    "metadata": {
+      "issue_key": "COMMONR-370",
+      "step_index": "11",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-370_step_12",
+    "document": "Test Step: 1) Step 10 수행\n2) Device> BDP-1067 미지원 장치선택> Suprema Smart Card 설정 후 저장\n3) Step 10에서 발급한 Mifare Plus 카드 리드\nTest Data: Primary Key 및 Layout 설정\n> Case 1 - Default Key \n> Case 2 - 임의키(ex.1234)\n> Case 3 - 임의키(ex.16byte 설정)\nExpected Result: 1. 인증성공으로 동작되면서 발급된 정보로 리드된다.\n2. 카드 발급시 키를 16byte 모두 설정한 상태에서 발급을 한 경우 인증실패로 동작되면서 CSN으로 리드된다.",
+    "metadata": {
+      "issue_key": "COMMONR-370",
+      "step_index": "12",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-370_step_13",
+    "document": "Test Step: 1) BioStar> Settings> Card Format\n2) Smart Card> Add Smart Card\n3) Smart Card Type: Custom \n4) Mifare Tab> Encryption Type 확인\nTest Data: Encryption Type\n> Crypto-1(Default)\n> AES-128\nExpected Result: 1. 기본값은 Crypto-1로 Crypto-1 토글은 Disable 처리되어 있어야한다.",
+    "metadata": {
+      "issue_key": "COMMONR-370",
+      "step_index": "13",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-370_step_14",
+    "document": "Test Step: 1) Step 13 수행\n2) Key 및 Layout 설정 후 저장\n3) Device> 장치선택> Custom Smart Card 설정 후 저장\n4) 커스텀 스마트 카드 Read\nTest Data: 설정한 Encryption Type\n> Crypto-1 Enable 상태\nExpected Result: 1. 인증성공으로 동작되면서 발급된 정보로 리드된다.",
+    "metadata": {
+      "issue_key": "COMMONR-370",
+      "step_index": "14",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-370_step_15",
+    "document": "Test Step: 1) Step 14의 1)~3) 수행\n2) UID 7Byte인 커스텀 스마트 카드 Read\nTest Data: 설정한 Encryption Type\n> Crypto-1 Enable 상태4\nExpected Result: 1. 인증실패로 동작되면서 CSN으로 리드된다.",
+    "metadata": {
+      "issue_key": "COMMONR-370",
+      "step_index": "15",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-370_step_16",
+    "document": "Test Step: 1) Step 14의 1)~3) 수행\n2)  UID 7Byte인 커스텀 스마트 카드 Read\nTest Data: 설정한 Encryption Type\n> AES-128 Enable 상태4\nExpected Result: 1. 인증성공으로 동작되면서 발급된 정보로 리드된다.",
+    "metadata": {
+      "issue_key": "COMMONR-370",
+      "step_index": "16",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-370_step_17",
+    "document": "Test Step: 1) BDP-1067 미지원 버전 장치에 기 Mifare Layout 설정된 상태\n2) BDP-1067 지원 FW로 Upgrade\n3) Mifare Classic/Plus 스마트 카드 리드\nTest Data: 기 Smart Card Layout(Mifare 탭)\n> Key - Default \nExpected Result: 1. 인증성공으로 동작되면서 발급된 정보로 리드된다.",
+    "metadata": {
+      "issue_key": "COMMONR-370",
+      "step_index": "17",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-370_step_18",
+    "document": "Test Step: [BDP-1067 적용 바이오스타에 연결]\n1) BDP-1067 미지원 버전 장치에 기 Mifare Layout 설정된 상태\n2) BDP-1067 지원 FW로 Upgrade\n3) Smart Card Layout에서 변경없이 Apply\n4) Mifare Classic/Plus 스마트 카드 리드\nTest Data: 기 Smart Card Layout(Mifare 탭)\n> Key - Default\nExpected Result: 1. 인증성공으로 동작되면서 발급된 정보로 리드된다.",
+    "metadata": {
+      "issue_key": "COMMONR-370",
+      "step_index": "18",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-370_step_19",
+    "document": "Test Step: [BDP-1067 적용 바이오스타에 연결]\n1) BDP-1067 미지원 버전 장치에 기 Mifare Layout 설정된 상태\n2) BDP-1067 지원 FW로 Upgrade\n3) Smart Card Layout에서 AES-128로 변경 후 Apply\n4) Mifare Classic/Plus 스마트 카드 리드\nTest Data: 기 Smart Card Layout(Mifare 탭)\n> Key - Default\nExpected Result: 1. 인증성공으로 동작되면서 발급된 정보로 리드된다.",
+    "metadata": {
+      "issue_key": "COMMONR-370",
+      "step_index": "19",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-370_step_20",
+    "document": "Test Step: [BDP-1067 적용 바이오스타에 연결]\n1) BDP-1067 미지원 버전 장치에 기 Mifare Layout 설정된 상태\n2) BDP-1067 지원 FW로 Upgrade\n3) Smart Card Layout에서 AES-128로 변경 후 Apply\n4) Mifare Classic/Plus 스마트 카드 리드\nTest Data: 기 Smart Card Layout(Mifare 탭)\n> Key - 123456\nExpected Result: 1. Classic 카드는 인증실패로 동작되면서 CSN으로 리드된다.\n2. Mifare Plus는 인증성공으로 동작되면서 발급된 정보로 리드된다.",
+    "metadata": {
+      "issue_key": "COMMONR-370",
+      "step_index": "20",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-370_step_21",
+    "document": "Test Step: (XPASSII-594->SL1(Crytpo1) 인증시 Seconday Key 인증이 실패 이슈)\n1. 설정 > 카드 형식 > Custom Card Layout \n2. 카드 Key 정보 SecondaryKey로 입력\n3. 장치 Reboot\n4. 장치 > SecondaryKey로 설정한 Layout 설정\n5. 카드 리드\nExpected Result: 1. 발급된 카드 정보로 리드된다.",
+    "metadata": {
+      "issue_key": "COMMONR-370",
+      "step_index": "21",
+      "source": "jira_test_step"
+    }
   }
-}
+]

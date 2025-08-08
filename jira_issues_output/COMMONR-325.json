@@ -1,678 +1,317 @@
-{
-  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
-  "id": "59764",
-  "self": "https://jira.suprema.co.kr/rest/api/2/issue/59764",
-  "key": "COMMONR-325",
-  "fields": {
-    "resolution": null,
-    "customfield_13103": null,
-    "customfield_10510": null,
-    "customfield_10500": "0.0",
-    "customfield_10501": null,
-    "customfield_10502": null,
-    "customfield_12802": null,
-    "customfield_12804": null,
-    "customfield_10505": null,
-    "customfield_12803": null,
-    "customfield_10506": null,
-    "customfield_12806": null,
-    "customfield_10507": null,
-    "customfield_12805": null,
-    "customfield_10508": null,
-    "customfield_12808": null,
-    "customfield_10509": null,
-    "lastViewed": null,
-    "customfield_10180": null,
-    "customfield_10181": null,
-    "customfield_10182": null,
-    "customfield_10183": null,
-    "customfield_10184": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10173",
-      "value": "Major",
-      "id": "10173"
-    },
-    "customfield_10185": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
-      "value": "Medium (2-3일 이내 피드백)",
-      "id": "10220"
-    },
-    "labels": [],
-    "customfield_11702": null,
-    "aggregatetimeoriginalestimate": null,
-    "issuelinks": [
-      {
-        "id": "57658",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/57658",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "66645",
-          "key": "BEW3FW-310",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/66645",
-          "fields": {
-            "summary": "[User Upload]장치에서 사용자를 BioStar로 업로드 시 장치가 비정상으로 죽는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
-              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
-              "name": "열림",
-              "id": "1",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
-                "id": 2,
-                "key": "new",
-                "colorName": "blue-gray",
-                "name": "할 일"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      }
-    ],
-    "assignee": null,
-    "components": [],
-    "customfield_10170": null,
-    "customfield_10171": null,
-    "customfield_10172": null,
-    "customfield_10174": null,
-    "customfield_10175": null,
-    "customfield_10176": null,
-    "customfield_10177": null,
-    "customfield_10178": null,
-    "customfield_10179": null,
-    "customfield_10600": 35.0,
-    "customfield_10601": [],
-    "customfield_12901": null,
-    "customfield_10602": null,
-    "customfield_12900": null,
-    "subtasks": [],
-    "reporter": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=brlee",
-      "name": "brlee",
-      "key": "JIRAUSER13401",
-      "emailAddress": "brlee@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11016",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11016",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11016",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11016"
-      },
-      "displayName": "이보라",
-      "active": false,
-      "timeZone": "Asia/Seoul"
-    },
-    "customfield_10168": null,
-    "customfield_10169": null,
-    "customfield_11800": null,
-    "progress": {
-      "progress": 0,
-      "total": 0
-    },
-    "votes": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-325/votes",
-      "votes": 0,
-      "hasVoted": false
-    },
-    "worklog": {
-      "startAt": 0,
-      "maxResults": 20,
-      "total": 0,
-      "worklogs": []
-    },
-    "issuetype": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
-      "id": "10000",
-      "description": "Represents a Test",
-      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
-      "name": "Test",
-      "subtask": false
-    },
-    "project": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
-      "id": "10000",
-      "key": "COMMONR",
-      "name": "Common Requirement And Test Case",
-      "projectTypeKey": "software",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
-        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
-        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
-        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
-      },
-      "projectCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
-        "id": "10000",
-        "description": "Requirements And Test Cases For The BioStar System Device",
-        "name": "BioStar System Device Requirement And Test Case"
-      }
-    },
-    "customfield_11000": null,
-    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@45a45b6a[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@213d2142[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@a9ef13f[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@4261f61f[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@4ab14bc8[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@13a9fb08[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6e43e74b[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@235f2592[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@63f0c53a[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@3fdd03f7[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@4e55c2f8[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@14fc1d15[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
-    "resolutiondate": null,
-    "watches": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-325/watchers",
-      "watchCount": 1,
-      "isWatching": false
-    },
-    "customfield_11900": null,
-    "customfield_11901": null,
-    "updated": "2025-08-01T10:16:30.000+0900",
-    "timeoriginalestimate": null,
-    "description": "[Pre-Condition]\r\n # VLC 미디어플레이어 설치\r\n # Biostar2에서 Device > RTSP On\r\n # 임의 ID/PW 입력(VLC 네트워크 입력 시 必)\r\n # VLC > 미디어 > 네트워크 스트림 > 네트워크 입력\r\n▶rtsp:// ID : PW @ rtsp주소 : port",
-    "customfield_10251": null,
-    "customfield_10252": null,
-    "customfield_10253": null,
-    "customfield_10254": null,
-    "customfield_10255": null,
-    "timetracking": {},
-    "customfield_10257": null,
-    "customfield_10247": null,
-    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. 바이오스타의 장치 상세페이지에 진입하여 RTSP를 Enabled로 변경<br/>2. Address 출력 확인</p></td><td></td><td><p>고정된 주소로 출력 됨 (rtsp://IP/stream)</p></td></tr><tr><td>2</td><td><p>1. 바이오스타의 장치 상세페이지에 진입하여 RTSP를 Enabled로 변경<br/>2. ID와 Password를 입력 후 저장<br/>3. VMS에 ID, PW, RTSP Address를 입력 후 송출 영상 확인</p></td><td></td><td><p>1. 영상이 정상적으로 송출 됨<br/>2. RTSP 연결 성공 이벤트 로그 생성</p></td></tr><tr><td>3</td><td><p>바이오스타의 장치 상세페이지에 Network &gt; TCP/IP의 IP Address설정을 변경하여 저장</p></td><td></td><td><p>1. IP주소가 변경되어 RTSP 연결되지 않음<br/>2. RTSP 연결 해제 이벤트가 생성</p></td></tr><tr><td>4</td><td><p>1. Network &gt; TCP/IP의 IP Address설정을 변경하여 저장<br/>2. RTSP의 Address 출력 확인<br/>3. VMS에 변경된 주소를 입력하여 영상 송출 확인</p></td><td></td><td><p>1. 변경된 IP가 반영되어 주소 출력(rtsp://변경한 IP/stream)<br/>2. 영상이 정상적으로 송출</p></td></tr><tr><td>5</td><td><p>1. RTSP : Enable<br/>2. ID 입력<br/>3. PW 입력 후 저장<br/>4. VMS에 ID, PW, Address, Port를 입력 후 송출 영상 확인</p></td><td><p>ID 입력<br/>&gt; 대문자 1 ~ 32자<br/>&gt; 소문자 1 ~ 32자<br/>&gt; 숫자 1 ~ 32자<br/>&gt; 특수문자 '-', '_'포함한 대소문자, 숫자 조합의 32자</p></td><td><p>VMS에 실시간 영상이 출력</p></td></tr><tr><td>6</td><td><p>1. RTSP : Enable<br/>2. ID 입력<br/>3. PW 입력 후 저장<br/>4. VMS에 ID, PW, Address, Port를 입력 후 송출 영상 확인</p></td><td><p>PW 입력<br/>&gt; 소문자 7자+숫자 1자<br/>&gt; 대문자 31자+숫자 1자<br/>&gt; 대문자 1자 + 숫자 7자<br/>&gt; 대문자 1자 + 숫자 31자<br/>&gt; 소문자 1자 + 숫자 7자<br/>&gt; 소문자 1자 + 숫자 31자<br/>&gt; 대문자 1자 + 특수문자 6자 + 숫자 1자<br/>&gt; 소문자 1자 + 특수문자 30자 + 숫자1자</p>\n\n\n<ul>\n<li>Password 제약조건 사양 : 8~32자, 최소 알파벳+숫자</li>\n</ul>\n</td><td><p>VMS에 실시간 영상이 출력</p></td></tr><tr><td>7</td><td><p>1. RTSP : Enable<br/>2. ID와 Password를 입력<br/>3. Port 출력 확인</p></td><td></td><td><p>554 출력 (장치의 RTSP Port 기본값이 554)</p></td></tr><tr><td>8</td><td><p>1. RTSP : Enable<br/>2. ID와 Password를 입력<br/>3. Port 출력 확인<br/>4. Port를 설정 후 저장<br/>5. VMS에 ID, PW, Address, Port를 입력 후 송출 영상 확인</p></td><td><p>Port<br/>&gt; 1<br/>&gt; 65535</p></td><td><p>영상이 정상적으로 송출</p></td></tr><tr><td>9</td><td><p>1. 바이오스타의 장치 상세페이지에 진입하여 RTSP를 Disabled로 변경하여 저장<br/>2. VMS에 영상 확인</p></td><td></td><td><p>1. VMS에 실시간 영상이 출력되지 않음 (연결이 해제 됨)<br/>2. RTSP 연결 해제 이벤트가 생성</p></td></tr><tr><td>10</td><td><p>1. 장치 상세페이지에 진입하여 RTSP를 Disabled로 변경하여 저장<br/>2. 장치 상세페이지에 진입하여 RTSP를 Enabled로 변경하여 이전에 사용한 ID와 PW 설정 후 저장</p></td><td></td><td><p>1. VMS에 실시간 영상이 출력<br/>2. RTSP 연결 성공 이벤트가 생성</p></td></tr><tr><td>11</td><td><p>1. Biostar2 &gt; Device메뉴 &gt; Slave장치를 선택하여 장치 상세페이지 진입</p></td><td></td><td><p>RTSP 관련 설정이 출력되지 않음</p></td></tr><tr><td>12</td><td><p>1. VMS에 실시간 영상 출력<br/>2. VoIP 동작 시 동작 영향 확인</p></td><td><p>&gt; VoIP 연결 시도 중<br/>&gt; VoIP 연결 후 통화 중<br/>&gt; VoIP 통화 종료 후<br/>&gt; VoIP 통화 중인 상태를 10분간 유지 후<br/>&gt; VoIP 통화/종료를 10회 시도</p></td><td><p>VMS에 영상 송출에는 영향이 없음</p></td></tr><tr><td>13</td><td><p>1. VMS에 실시간 영상 출력<br/>2. Image Log 캡처 이벤트 발생</p></td><td><p>&gt; 1회<br/>&gt; 100회</p></td><td><p>1. Image 로그가 정상적으로 생성 됨<br/>2. VMS에 실시간 영상이 끊김 없이 동작</p></td></tr><tr><td>14</td><td><p>1. VMS에 실시간 영상 출력<br/>2. Device to Server로 장치를 추가</p></td><td></td><td><p>장치가 정상적으로 추가되며 VMS에 실시간 영상이 끊김 없이 동작</p></td></tr><tr><td>15</td><td><p>1. VMS에 실시간 영상 출력<br/>2. Server to Device로 장치를 추가</p></td><td></td><td><p>장치가 정상적으로 추가되며 VMS에 실시간 영상이 끊김 없이 동작 </p></td></tr><tr><td>16</td><td><p>1. VMS에 실시간 영상 출력<br/>2. Biostar2 &gt; Device &gt; Device Tree에서 장치를 우클릭하여 Reboot 선택</p></td><td></td><td><p>부팅 완료 후 VMS와 연결 시 영상이 송출</p></td></tr><tr><td>17</td><td><p>1. VMS에 실시간 영상 출력<br/>2. 장치의 Power를 Off/ON</p></td><td></td><td><p>부팅 완료 후 VMS와 연결 시 영상이 송출되어야 함</p></td></tr><tr><td>18</td><td><p>1. VMS에 실시간 영상 출력<br/>2. 장치의 LAN 연결 해제 후 재연결</p></td><td></td><td><p>재연결 된 후 VMS와 연결 시 영상이 송출 되어야 함</p></td></tr><tr><td>19</td><td><p>1. VMS에 실시간 영상 출력<br/>2. Biostar2 &gt; Device &gt; Device Tree에서 장치를 우클릭하여 Reconnect 선택</p></td><td></td><td><p>VMS에 실시간 영상이 끊김 없이 동작</p></td></tr><tr><td>20</td><td><p>1. VMS에 실시간 영상 출력<br/>2. Biostar2 &gt; Device &gt; Device Tree에서 장치를 우클릭하여 Sync Device</p></td><td></td><td><p>VMS에 실시간 영상이 끊김 없이 동작</p></td></tr><tr><td>21</td><td><p>1. VMS에 실시간 영상 출력<br/>2. Biostar2 &gt; Device &gt; Device Tree에서 장치를 우클릭하여 Delete Data &amp; Sync Device</p></td><td></td><td><p>VMS에 실시간 영상이 끊김 없이 동작</p></td></tr><tr><td>22</td><td><p>1. VMS에 실시간 영상 출력<br/>2. Biostar2 &gt; Device &gt; Device Tree에서 장치를 우클릭하여 Manage Users in Device로 장치의 사용자를 서버로 Upload 선택</p></td><td></td><td><p>VMS에 실시간 영상이 끊김 없이 동작</p></td></tr><tr><td>23</td><td><p>1. VMS에 실시간 영상 출력<br/>2. Settings &gt; Security 진입하여 Secure communication with device를 Use로 설정 후 저장</p></td><td></td><td><p>1. RTSP 연결 끊어짐<br/>2. 재연결 된 후 VMS와 연결 시 영상이 송출 되어야 함<br/>(보안설정을 변경하면 SSL 구동을 위해 이더넷 링크를 내렸다 올려야 하므로 현재 BSCore 구현상 RTSP도 끊어짐)</p></td></tr><tr><td>24</td><td>\n<p>1. VMS에 실시간 영상 출력<br/>2. Settings &gt; Security 진입하여 Device Hashkey Management를 Use로 설정 후 저장</p></td><td></td><td><p>VMS에 실시간 영상이 끊김 없이 동작 됨</p></td></tr><tr><td>25</td><td><p>1. VMS에 실시간 영상 출력<br/>2. Setting &gt; Mobile Access &gt; 장치에 Key 전송</p></td><td></td><td><p>VMS에 실시간 영상이 끊김 없이 동작 됨</p></td></tr><tr><td>26</td><td><p>1. VMS에 실시간 영상 출력<br/>2. 바이오스타에서 장치에 저장된 모든 사용자를 삭제</p></td><td><p>&gt; 사용자 1000명</p></td><td><p>장치의 저장된 사용자를 다수 삭제시에도 VMS에 실시간 영상이 끊김 없이 동작</p></td></tr><tr><td>27</td><td><p>1. VMS에 실시간 영상 출력<br/>2. 사용자 메뉴에서 사용자를 선택하여 Transfer To Device로 전송</p></td><td><p>&gt; 사용자 1000명</p></td><td><p>장치에 다수의 사용자를 추가시에도 VMS에 실시간 영상이 끊김 없이 동작</p></td></tr><tr><td>28</td><td>\n<p>1. VMS에 실시간 영상 출력<br/>2. Biostar2 &gt; 출입그룹을 생성 시 사용자그룹을 All Users선택하여 저장</p></td><td></td><td><p>장치에 저장된 다수의 사용자가 업데이트되어도 VMS에 실시간 영상이 끊김 없이 동작</p></td></tr><tr><td>29</td><td><p>1. VMS에 실시간 영상 출력<br/>2. Trigger &amp; Action 설정하여 저장<br/>3. Input Port 0 접지</p></td><td><p>-. Trigger : Input/Master장치 Input Port 0, N/O, 100, Always<br/>-. Action : Alert Sound, Alarm 1, Loop</p></td><td><p>Alarm이 발생하여 Alert Sound가 출력되며, 실시간 영상은 끊김 없이 출력</p></td></tr><tr><td>30</td><td><p>1. VMS에 실시간 영상 출력<br/>2. Alarm이 발생하여 Alert Sound가 출력 중<br/>3. Monitoring &gt; Device Status에서 장치 선택 후 Clear Alarm 선택</p></td><td></td><td><p>Alarm이 Clear 되며, 실시간 영상은 끊김 없이 출력</p></td></tr><tr><td>31</td><td><p>1. VMS에 실시간 영상 출력<br/>2. Trigger &amp; Action 설정하여 저장<br/>3. 등록되지 않은 Card 인증 시도</p></td><td><p>-. Trigger : Event/1:1authentication failed(Card)<br/>-. Action : Disable Device (Master)</p></td><td><p>(Master)장치가 잠기며, 실시간 영상은 끊김 없이 출력</p></td></tr><tr><td>32</td><td><p>1. VMS에 실시간 영상 출력<br/>2. 잠긴 장치 상세페이지 진입하여 장치를 Unlock</p></td><td></td><td><p>장치가 Unlock되고, 실시간 영상은 끊김 없이 출력</p></td></tr><tr><td>33</td><td><p>1. VMS에 실시간 영상 출력<br/>2. Fire Alarm Zone 생성<br/>3. Fire Alarm이 발생</p></td><td></td><td><p>Fire Alarm이 발생하여 Signal Output이 출력되며, 실시간 영상은 끊김 없이 출력</p></td></tr><tr><td>34</td><td><p>1. VMS에 실시간 영상 출력<br/>2. Fire Alarm이 발생<br/>3. Monitoring &gt; Zone Status에서 Fire Alarm Zone 선택 후 Clear Alarm 선택</p></td><td></td><td><p>Alarm이 Clear 되며, 실시간 영상은 끊김 없이 출력</p></td></tr><tr><td>35</td><td><p>1. RTSP : Enable<br/>2. ID와 Password를 입력<br/>3. Port 출력 확인<br/>4. Port를 설정 후 저장<br/>5. RTSP Video Resolution 설정<br/>6. VMS에 ID, PW, Address, Port를 입력 후 송출 영상 확인</p></td><td><p>RTSP Video Resolution<br/>BS3<br/>&gt; 180x320(Default)<br/>&gt; 720x480</p>\n\n<p>F2<br/>&gt; 360x640(Default)<br/>&gt; 720x480</p></td><td><p>선택한 해상도에 맞게 송출</p></td></tr></table>",
-    "customfield_10248": null,
-    "customfield_10006": [],
-    "customfield_10007": [],
-    "customfield_10008": {
-      "issueId": 59764,
-      "statuses": [
-        {
-          "statusResults": [
-            {
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 34756,
-              "latestFinalId": 34756
-            },
-            {
-              "environment": "ES1",
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 29879,
-              "latestFinalId": 29879
-            },
-            {
-              "environment": "BioStarV2.9.6.30",
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 29879,
-              "latestFinalId": 29879
-            }
-          ]
-        }
-      ]
-    },
-    "customfield_12309": null,
-    "customfield_10802": null,
-    "customfield_10803": null,
-    "customfield_10805": null,
-    "summary": "RTSP",
-    "customfield_10240": null,
-    "customfield_10000": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
-      "value": "Manual",
-      "id": "10000"
-    },
-    "customfield_10243": null,
-    "customfield_10001": null,
-    "customfield_10244": null,
-    "customfield_10002": null,
-    "customfield_10003": null,
-    "customfield_10246": null,
-    "customfield_10004": {
-      "steps": [
-        {
-          "id": 17331,
-          "index": 1,
-          "step": "1. 바이오스타의 장치 상세페이지에 진입하여 RTSP를 Enabled로 변경\n2. Address 출력 확인",
-          "data": "",
-          "result": "고정된 주소로 출력 됨 (rtsp://IP/stream)",
-          "attachments": []
-        },
-        {
-          "id": 17332,
-          "index": 2,
-          "step": "1. 바이오스타의 장치 상세페이지에 진입하여 RTSP를 Enabled로 변경\n2. ID와 Password를 입력 후 저장\n3. VMS에 ID, PW, RTSP Address를 입력 후 송출 영상 확인",
-          "data": "",
-          "result": "1. 영상이 정상적으로 송출 됨\n2. RTSP 연결 성공 이벤트 로그 생성",
-          "attachments": []
-        },
-        {
-          "id": 17333,
-          "index": 3,
-          "step": "바이오스타의 장치 상세페이지에 Network > TCP/IP의 IP Address설정을 변경하여 저장",
-          "data": "",
-          "result": "1. IP주소가 변경되어 RTSP 연결되지 않음\n2. RTSP 연결 해제 이벤트가 생성",
-          "attachments": []
-        },
-        {
-          "id": 17334,
-          "index": 4,
-          "step": "1. Network > TCP/IP의 IP Address설정을 변경하여 저장\n2. RTSP의 Address 출력 확인\n3. VMS에 변경된 주소를 입력하여 영상 송출 확인",
-          "data": "",
-          "result": "1. 변경된 IP가 반영되어 주소 출력(rtsp://변경한 IP/stream)\n2. 영상이 정상적으로 송출",
-          "attachments": []
-        },
-        {
-          "id": 17335,
-          "index": 5,
-          "step": "1. RTSP : Enable\n2. ID 입력\n3. PW 입력 후 저장\n4. VMS에 ID, PW, Address, Port를 입력 후 송출 영상 확인",
-          "data": "ID 입력\n> 대문자 1 ~ 32자\n> 소문자 1 ~ 32자\n> 숫자 1 ~ 32자\n> 특수문자 '-', '_'포함한 대소문자, 숫자 조합의 32자",
-          "result": "VMS에 실시간 영상이 출력",
-          "attachments": []
-        },
-        {
-          "id": 17336,
-          "index": 6,
-          "step": "1. RTSP : Enable\n2. ID 입력\n3. PW 입력 후 저장\n4. VMS에 ID, PW, Address, Port를 입력 후 송출 영상 확인",
-          "data": "PW 입력\n> 소문자 7자+숫자 1자\n> 대문자 31자+숫자 1자\n> 대문자 1자 + 숫자 7자\n> 대문자 1자 + 숫자 31자\n> 소문자 1자 + 숫자 7자\n> 소문자 1자 + 숫자 31자\n> 대문자 1자 + 특수문자 6자 + 숫자 1자\n> 소문자 1자 + 특수문자 30자 + 숫자1자\n\n\n* Password 제약조건 사양 : 8~32자, 최소 알파벳+숫자",
-          "result": "VMS에 실시간 영상이 출력",
-          "attachments": []
-        },
-        {
-          "id": 17337,
-          "index": 7,
-          "step": "1. RTSP : Enable\n2. ID와 Password를 입력\n3. Port 출력 확인",
-          "data": "",
-          "result": "554 출력 (장치의 RTSP Port 기본값이 554)",
-          "attachments": []
-        },
-        {
-          "id": 17338,
-          "index": 8,
-          "step": "1. RTSP : Enable\n2. ID와 Password를 입력\n3. Port 출력 확인\n4. Port를 설정 후 저장\n5. VMS에 ID, PW, Address, Port를 입력 후 송출 영상 확인",
-          "data": "Port\n> 1\n> 65535",
-          "result": "영상이 정상적으로 송출",
-          "attachments": []
-        },
-        {
-          "id": 17339,
-          "index": 9,
-          "step": "1. 바이오스타의 장치 상세페이지에 진입하여 RTSP를 Disabled로 변경하여 저장\n2. VMS에 영상 확인",
-          "data": "",
-          "result": "1. VMS에 실시간 영상이 출력되지 않음 (연결이 해제 됨)\n2. RTSP 연결 해제 이벤트가 생성",
-          "attachments": []
-        },
-        {
-          "id": 17340,
-          "index": 10,
-          "step": "1. 장치 상세페이지에 진입하여 RTSP를 Disabled로 변경하여 저장\n2. 장치 상세페이지에 진입하여 RTSP를 Enabled로 변경하여 이전에 사용한 ID와 PW 설정 후 저장",
-          "data": "",
-          "result": "1. VMS에 실시간 영상이 출력\n2. RTSP 연결 성공 이벤트가 생성",
-          "attachments": []
-        },
-        {
-          "id": 17341,
-          "index": 11,
-          "step": "1. Biostar2 > Device메뉴 > Slave장치를 선택하여 장치 상세페이지 진입",
-          "data": "",
-          "result": "RTSP 관련 설정이 출력되지 않음",
-          "attachments": []
-        },
-        {
-          "id": 17342,
-          "index": 12,
-          "step": "1. VMS에 실시간 영상 출력\n2. VoIP 동작 시 동작 영향 확인",
-          "data": "> VoIP 연결 시도 중\n> VoIP 연결 후 통화 중\n> VoIP 통화 종료 후\n> VoIP 통화 중인 상태를 10분간 유지 후\n> VoIP 통화/종료를 10회 시도",
-          "result": "VMS에 영상 송출에는 영향이 없음",
-          "attachments": []
-        },
-        {
-          "id": 17343,
-          "index": 13,
-          "step": "1. VMS에 실시간 영상 출력\n2. Image Log 캡처 이벤트 발생",
-          "data": "> 1회\n> 100회",
-          "result": "1. Image 로그가 정상적으로 생성 됨\n2. VMS에 실시간 영상이 끊김 없이 동작",
-          "attachments": []
-        },
-        {
-          "id": 17344,
-          "index": 14,
-          "step": "1. VMS에 실시간 영상 출력\n2. Device to Server로 장치를 추가",
-          "data": "",
-          "result": "장치가 정상적으로 추가되며 VMS에 실시간 영상이 끊김 없이 동작",
-          "attachments": []
-        },
-        {
-          "id": 17345,
-          "index": 15,
-          "step": "1. VMS에 실시간 영상 출력\n2. Server to Device로 장치를 추가",
-          "data": "",
-          "result": "장치가 정상적으로 추가되며 VMS에 실시간 영상이 끊김 없이 동작 ",
-          "attachments": []
-        },
-        {
-          "id": 17346,
-          "index": 16,
-          "step": "1. VMS에 실시간 영상 출력\n2. Biostar2 > Device > Device Tree에서 장치를 우클릭하여 Reboot 선택",
-          "data": "",
-          "result": "부팅 완료 후 VMS와 연결 시 영상이 송출",
-          "attachments": []
-        },
-        {
-          "id": 17347,
-          "index": 17,
-          "step": "1. VMS에 실시간 영상 출력\n2. 장치의 Power를 Off/ON",
-          "data": "",
-          "result": "부팅 완료 후 VMS와 연결 시 영상이 송출되어야 함",
-          "attachments": []
-        },
-        {
-          "id": 17348,
-          "index": 18,
-          "step": "1. VMS에 실시간 영상 출력\n2. 장치의 LAN 연결 해제 후 재연결",
-          "data": "",
-          "result": "재연결 된 후 VMS와 연결 시 영상이 송출 되어야 함",
-          "attachments": []
-        },
-        {
-          "id": 17349,
-          "index": 19,
-          "step": "1. VMS에 실시간 영상 출력\n2. Biostar2 > Device > Device Tree에서 장치를 우클릭하여 Reconnect 선택",
-          "data": "",
-          "result": "VMS에 실시간 영상이 끊김 없이 동작",
-          "attachments": []
-        },
-        {
-          "id": 17350,
-          "index": 20,
-          "step": "1. VMS에 실시간 영상 출력\n2. Biostar2 > Device > Device Tree에서 장치를 우클릭하여 Sync Device",
-          "data": "",
-          "result": "VMS에 실시간 영상이 끊김 없이 동작",
-          "attachments": []
-        },
-        {
-          "id": 17351,
-          "index": 21,
-          "step": "1. VMS에 실시간 영상 출력\n2. Biostar2 > Device > Device Tree에서 장치를 우클릭하여 Delete Data & Sync Device",
-          "data": "",
-          "result": "VMS에 실시간 영상이 끊김 없이 동작",
-          "attachments": []
-        },
-        {
-          "id": 17352,
-          "index": 22,
-          "step": "1. VMS에 실시간 영상 출력\n2. Biostar2 > Device > Device Tree에서 장치를 우클릭하여 Manage Users in Device로 장치의 사용자를 서버로 Upload 선택",
-          "data": "",
-          "result": "VMS에 실시간 영상이 끊김 없이 동작",
-          "attachments": []
-        },
-        {
-          "id": 17353,
-          "index": 23,
-          "step": "1. VMS에 실시간 영상 출력\n2. Settings > Security 진입하여 Secure communication with device를 Use로 설정 후 저장",
-          "data": "",
-          "result": "1. RTSP 연결 끊어짐\n2. 재연결 된 후 VMS와 연결 시 영상이 송출 되어야 함\n(보안설정을 변경하면 SSL 구동을 위해 이더넷 링크를 내렸다 올려야 하므로 현재 BSCore 구현상 RTSP도 끊어짐)",
-          "attachments": []
-        },
-        {
-          "id": 17354,
-          "index": 24,
-          "step": "\t\n1. VMS에 실시간 영상 출력\n2. Settings > Security 진입하여 Device Hashkey Management를 Use로 설정 후 저장",
-          "data": "",
-          "result": "VMS에 실시간 영상이 끊김 없이 동작 됨",
-          "attachments": []
-        },
-        {
-          "id": 17355,
-          "index": 25,
-          "step": "1. VMS에 실시간 영상 출력\n2. Setting > Mobile Access > 장치에 Key 전송",
-          "data": "",
-          "result": "VMS에 실시간 영상이 끊김 없이 동작 됨",
-          "attachments": []
-        },
-        {
-          "id": 17356,
-          "index": 26,
-          "step": "1. VMS에 실시간 영상 출력\n2. 바이오스타에서 장치에 저장된 모든 사용자를 삭제",
-          "data": "> 사용자 1000명",
-          "result": "장치의 저장된 사용자를 다수 삭제시에도 VMS에 실시간 영상이 끊김 없이 동작",
-          "attachments": []
-        },
-        {
-          "id": 17357,
-          "index": 27,
-          "step": "1. VMS에 실시간 영상 출력\n2. 사용자 메뉴에서 사용자를 선택하여 Transfer To Device로 전송",
-          "data": "> 사용자 1000명",
-          "result": "장치에 다수의 사용자를 추가시에도 VMS에 실시간 영상이 끊김 없이 동작",
-          "attachments": []
-        },
-        {
-          "id": 17358,
-          "index": 28,
-          "step": "\t\n1. VMS에 실시간 영상 출력\n2. Biostar2 > 출입그룹을 생성 시 사용자그룹을 All Users선택하여 저장",
-          "data": "",
-          "result": "장치에 저장된 다수의 사용자가 업데이트되어도 VMS에 실시간 영상이 끊김 없이 동작",
-          "attachments": []
-        },
-        {
-          "id": 17359,
-          "index": 29,
-          "step": "1. VMS에 실시간 영상 출력\n2. Trigger & Action 설정하여 저장\n3. Input Port 0 접지",
-          "data": "-. Trigger : Input/Master장치 Input Port 0, N/O, 100, Always\n-. Action : Alert Sound, Alarm 1, Loop",
-          "result": "Alarm이 발생하여 Alert Sound가 출력되며, 실시간 영상은 끊김 없이 출력",
-          "attachments": []
-        },
-        {
-          "id": 17360,
-          "index": 30,
-          "step": "1. VMS에 실시간 영상 출력\n2. Alarm이 발생하여 Alert Sound가 출력 중\n3. Monitoring > Device Status에서 장치 선택 후 Clear Alarm 선택",
-          "data": "",
-          "result": "Alarm이 Clear 되며, 실시간 영상은 끊김 없이 출력",
-          "attachments": []
-        },
-        {
-          "id": 17361,
-          "index": 31,
-          "step": "1. VMS에 실시간 영상 출력\n2. Trigger & Action 설정하여 저장\n3. 등록되지 않은 Card 인증 시도",
-          "data": "-. Trigger : Event/1:1authentication failed(Card)\n-. Action : Disable Device (Master)",
-          "result": "(Master)장치가 잠기며, 실시간 영상은 끊김 없이 출력",
-          "attachments": []
-        },
-        {
-          "id": 17362,
-          "index": 32,
-          "step": "1. VMS에 실시간 영상 출력\n2. 잠긴 장치 상세페이지 진입하여 장치를 Unlock",
-          "data": "",
-          "result": "장치가 Unlock되고, 실시간 영상은 끊김 없이 출력",
-          "attachments": []
-        },
-        {
-          "id": 17363,
-          "index": 33,
-          "step": "1. VMS에 실시간 영상 출력\n2. Fire Alarm Zone 생성\n3. Fire Alarm이 발생",
-          "data": "",
-          "result": "Fire Alarm이 발생하여 Signal Output이 출력되며, 실시간 영상은 끊김 없이 출력",
-          "attachments": []
-        },
-        {
-          "id": 17364,
-          "index": 34,
-          "step": "1. VMS에 실시간 영상 출력\n2. Fire Alarm이 발생\n3. Monitoring > Zone Status에서 Fire Alarm Zone 선택 후 Clear Alarm 선택",
-          "data": "",
-          "result": "Alarm이 Clear 되며, 실시간 영상은 끊김 없이 출력",
-          "attachments": []
-        },
-        {
-          "id": 17917,
-          "index": 35,
-          "step": "1. RTSP : Enable\n2. ID와 Password를 입력\n3. Port 출력 확인\n4. Port를 설정 후 저장\n5. RTSP Video Resolution 설정\n6. VMS에 ID, PW, Address, Port를 입력 후 송출 영상 확인",
-          "data": "RTSP Video Resolution\nBS3\n> 180x320(Default)\n> 720x480\n\nF2\n> 360x640(Default)\n> 720x480",
-          "result": "선택한 해상도에 맞게 송출",
-          "attachments": []
-        }
-      ]
-    },
-    "customfield_10236": null,
-    "customfield_10237": null,
-    "environment": null,
-    "customfield_10238": null,
-    "customfield_10239": null,
-    "duedate": null,
-    "comment": {
-      "comments": [],
-      "maxResults": 0,
-      "total": 0,
-      "startAt": 0
-    },
-    "customfield_10230": null,
-    "fixVersions": [],
-    "customfield_10231": null,
-    "customfield_10232": null,
-    "customfield_10233": null,
-    "customfield_12410": null,
-    "customfield_10234": null,
-    "customfield_10235": null,
-    "customfield_10225": null,
-    "customfield_12404": null,
-    "customfield_10226": null,
-    "customfield_12403": null,
-    "customfield_10227": null,
-    "customfield_12406": null,
-    "customfield_10228": null,
-    "customfield_10229": null,
-    "customfield_10900": null,
-    "customfield_12408": null,
-    "customfield_10901": null,
-    "customfield_10902": null,
-    "customfield_10903": null,
-    "customfield_12409": null,
-    "customfield_10904": null,
-    "customfield_10905": null,
-    "customfield_10220": null,
-    "priority": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-      "name": "미할당",
-      "id": "10100"
-    },
-    "customfield_10221": null,
-    "customfield_12400": null,
-    "customfield_12402": null,
-    "customfield_10224": null,
-    "customfield_10214": null,
-    "customfield_10217": null,
-    "customfield_10218": null,
-    "timeestimate": null,
-    "versions": [],
-    "customfield_10219": null,
-    "status": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
-      "description": "",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
-      "name": "할 일",
-      "id": "10000",
-      "statusCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
-        "id": 2,
-        "key": "new",
-        "colorName": "blue-gray",
-        "name": "할 일"
-      }
-    },
-    "customfield_12510": null,
-    "customfield_10213": null,
-    "customfield_12511": null,
-    "customfield_10203": null,
-    "customfield_10204": null,
-    "customfield_12502": null,
-    "customfield_10205": null,
-    "customfield_10206": null,
-    "customfield_10207": null,
-    "aggregatetimeestimate": null,
-    "customfield_10208": null,
-    "customfield_10209": null,
-    "customfield_12509": null,
-    "customfield_12508": null,
-    "creator": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=brlee",
-      "name": "brlee",
-      "key": "JIRAUSER13401",
-      "emailAddress": "brlee@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11016",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11016",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11016",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11016"
-      },
-      "displayName": "이보라",
-      "active": false,
-      "timeZone": "Asia/Seoul"
-    },
-    "aggregateprogress": {
-      "progress": 0,
-      "total": 0
-    },
-    "customfield_10320": null,
-    "customfield_10321": null,
-    "customfield_12501": null,
-    "customfield_10202": null,
-    "customfield_12500": null,
-    "customfield_10313": "1|hzxwh3:",
-    "customfield_10316": null,
-    "customfield_10317": null,
-    "timespent": null,
-    "aggregatetimespent": null,
-    "customfield_10310": null,
-    "customfield_10302": null,
-    "customfield_10303": null,
-    "customfield_12601": null,
-    "customfield_10304": null,
-    "customfield_10305": null,
-    "customfield_10308": null,
-    "workratio": -1,
-    "created": "2023-10-24T15:31:37.000+0900",
-    "customfield_10533": null,
-    "customfield_10534": null,
-    "customfield_11501": null,
-    "customfield_11503": null,
-    "customfield_13001": null,
-    "customfield_13000": null,
-    "customfield_10530": null,
-    "customfield_10531": null,
-    "customfield_10532": null,
-    "customfield_10401": null,
-    "customfield_10522": null,
-    "customfield_10402": null,
-    "customfield_12700": null,
-    "customfield_10524": null,
-    "customfield_10525": null,
-    "customfield_12702": null,
-    "attachment": [],
-    "customfield_10526": null,
-    "customfield_12704": null,
-    "customfield_10528": null,
-    "customfield_12706": null,
-    "customfield_10520": null,
-    "customfield_10521": null,
-    "customfield_10400": null,
-    "customfield_10511": null,
-    "customfield_10512": null,
-    "customfield_11600": null,
-    "customfield_10513": null,
-    "customfield_10514": null,
-    "customfield_10515": null,
-    "customfield_10516": null,
-    "customfield_10517": null,
-    "customfield_10518": null,
-    "customfield_10519": null
+[
+  {
+    "id": "COMMONR-325_step_1",
+    "document": "Test Step: 1. 바이오스타의 장치 상세페이지에 진입하여 RTSP를 Enabled로 변경\n2. Address 출력 확인\nExpected Result: 고정된 주소로 출력 됨 (rtsp://IP/stream)",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "1",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_2",
+    "document": "Test Step: 1. 바이오스타의 장치 상세페이지에 진입하여 RTSP를 Enabled로 변경\n2. ID와 Password를 입력 후 저장\n3. VMS에 ID, PW, RTSP Address를 입력 후 송출 영상 확인\nExpected Result: 1. 영상이 정상적으로 송출 됨\n2. RTSP 연결 성공 이벤트 로그 생성",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "2",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_3",
+    "document": "Test Step: 바이오스타의 장치 상세페이지에 Network > TCP/IP의 IP Address설정을 변경하여 저장\nExpected Result: 1. IP주소가 변경되어 RTSP 연결되지 않음\n2. RTSP 연결 해제 이벤트가 생성",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "3",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_4",
+    "document": "Test Step: 1. Network > TCP/IP의 IP Address설정을 변경하여 저장\n2. RTSP의 Address 출력 확인\n3. VMS에 변경된 주소를 입력하여 영상 송출 확인\nExpected Result: 1. 변경된 IP가 반영되어 주소 출력(rtsp://변경한 IP/stream)\n2. 영상이 정상적으로 송출",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "4",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_5",
+    "document": "Test Step: 1. RTSP : Enable\n2. ID 입력\n3. PW 입력 후 저장\n4. VMS에 ID, PW, Address, Port를 입력 후 송출 영상 확인\nTest Data: ID 입력\n> 대문자 1 ~ 32자\n> 소문자 1 ~ 32자\n> 숫자 1 ~ 32자\n> 특수문자 '-', '_'포함한 대소문자, 숫자 조합의 32자\nExpected Result: VMS에 실시간 영상이 출력",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "5",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_6",
+    "document": "Test Step: 1. RTSP : Enable\n2. ID 입력\n3. PW 입력 후 저장\n4. VMS에 ID, PW, Address, Port를 입력 후 송출 영상 확인\nTest Data: PW 입력\n> 소문자 7자+숫자 1자\n> 대문자 31자+숫자 1자\n> 대문자 1자 + 숫자 7자\n> 대문자 1자 + 숫자 31자\n> 소문자 1자 + 숫자 7자\n> 소문자 1자 + 숫자 31자\n> 대문자 1자 + 특수문자 6자 + 숫자 1자\n> 소문자 1자 + 특수문자 30자 + 숫자1자\n\n\n* Password 제약조건 사양 : 8~32자, 최소 알파벳+숫자\nExpected Result: VMS에 실시간 영상이 출력",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "6",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_7",
+    "document": "Test Step: 1. RTSP : Enable\n2. ID와 Password를 입력\n3. Port 출력 확인\nExpected Result: 554 출력 (장치의 RTSP Port 기본값이 554)",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "7",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_8",
+    "document": "Test Step: 1. RTSP : Enable\n2. ID와 Password를 입력\n3. Port 출력 확인\n4. Port를 설정 후 저장\n5. VMS에 ID, PW, Address, Port를 입력 후 송출 영상 확인\nTest Data: Port\n> 1\n> 65535\nExpected Result: 영상이 정상적으로 송출",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "8",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_9",
+    "document": "Test Step: 1. 바이오스타의 장치 상세페이지에 진입하여 RTSP를 Disabled로 변경하여 저장\n2. VMS에 영상 확인\nExpected Result: 1. VMS에 실시간 영상이 출력되지 않음 (연결이 해제 됨)\n2. RTSP 연결 해제 이벤트가 생성",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "9",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_10",
+    "document": "Test Step: 1. 장치 상세페이지에 진입하여 RTSP를 Disabled로 변경하여 저장\n2. 장치 상세페이지에 진입하여 RTSP를 Enabled로 변경하여 이전에 사용한 ID와 PW 설정 후 저장\nExpected Result: 1. VMS에 실시간 영상이 출력\n2. RTSP 연결 성공 이벤트가 생성",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "10",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_11",
+    "document": "Test Step: 1. Biostar2 > Device메뉴 > Slave장치를 선택하여 장치 상세페이지 진입\nExpected Result: RTSP 관련 설정이 출력되지 않음",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "11",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_12",
+    "document": "Test Step: 1. VMS에 실시간 영상 출력\n2. VoIP 동작 시 동작 영향 확인\nTest Data: > VoIP 연결 시도 중\n> VoIP 연결 후 통화 중\n> VoIP 통화 종료 후\n> VoIP 통화 중인 상태를 10분간 유지 후\n> VoIP 통화/종료를 10회 시도\nExpected Result: VMS에 영상 송출에는 영향이 없음",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "12",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_13",
+    "document": "Test Step: 1. VMS에 실시간 영상 출력\n2. Image Log 캡처 이벤트 발생\nTest Data: > 1회\n> 100회\nExpected Result: 1. Image 로그가 정상적으로 생성 됨\n2. VMS에 실시간 영상이 끊김 없이 동작",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "13",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_14",
+    "document": "Test Step: 1. VMS에 실시간 영상 출력\n2. Device to Server로 장치를 추가\nExpected Result: 장치가 정상적으로 추가되며 VMS에 실시간 영상이 끊김 없이 동작",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "14",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_15",
+    "document": "Test Step: 1. VMS에 실시간 영상 출력\n2. Server to Device로 장치를 추가\nExpected Result: 장치가 정상적으로 추가되며 VMS에 실시간 영상이 끊김 없이 동작 ",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "15",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_16",
+    "document": "Test Step: 1. VMS에 실시간 영상 출력\n2. Biostar2 > Device > Device Tree에서 장치를 우클릭하여 Reboot 선택\nExpected Result: 부팅 완료 후 VMS와 연결 시 영상이 송출",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "16",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_17",
+    "document": "Test Step: 1. VMS에 실시간 영상 출력\n2. 장치의 Power를 Off/ON\nExpected Result: 부팅 완료 후 VMS와 연결 시 영상이 송출되어야 함",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "17",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_18",
+    "document": "Test Step: 1. VMS에 실시간 영상 출력\n2. 장치의 LAN 연결 해제 후 재연결\nExpected Result: 재연결 된 후 VMS와 연결 시 영상이 송출 되어야 함",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "18",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_19",
+    "document": "Test Step: 1. VMS에 실시간 영상 출력\n2. Biostar2 > Device > Device Tree에서 장치를 우클릭하여 Reconnect 선택\nExpected Result: VMS에 실시간 영상이 끊김 없이 동작",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "19",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_20",
+    "document": "Test Step: 1. VMS에 실시간 영상 출력\n2. Biostar2 > Device > Device Tree에서 장치를 우클릭하여 Sync Device\nExpected Result: VMS에 실시간 영상이 끊김 없이 동작",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "20",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_21",
+    "document": "Test Step: 1. VMS에 실시간 영상 출력\n2. Biostar2 > Device > Device Tree에서 장치를 우클릭하여 Delete Data & Sync Device\nExpected Result: VMS에 실시간 영상이 끊김 없이 동작",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "21",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_22",
+    "document": "Test Step: 1. VMS에 실시간 영상 출력\n2. Biostar2 > Device > Device Tree에서 장치를 우클릭하여 Manage Users in Device로 장치의 사용자를 서버로 Upload 선택\nExpected Result: VMS에 실시간 영상이 끊김 없이 동작",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "22",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_23",
+    "document": "Test Step: 1. VMS에 실시간 영상 출력\n2. Settings > Security 진입하여 Secure communication with device를 Use로 설정 후 저장\nExpected Result: 1. RTSP 연결 끊어짐\n2. 재연결 된 후 VMS와 연결 시 영상이 송출 되어야 함\n(보안설정을 변경하면 SSL 구동을 위해 이더넷 링크를 내렸다 올려야 하므로 현재 BSCore 구현상 RTSP도 끊어짐)",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "23",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_24",
+    "document": "Test Step: \t\n1. VMS에 실시간 영상 출력\n2. Settings > Security 진입하여 Device Hashkey Management를 Use로 설정 후 저장\nExpected Result: VMS에 실시간 영상이 끊김 없이 동작 됨",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "24",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_25",
+    "document": "Test Step: 1. VMS에 실시간 영상 출력\n2. Setting > Mobile Access > 장치에 Key 전송\nExpected Result: VMS에 실시간 영상이 끊김 없이 동작 됨",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "25",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_26",
+    "document": "Test Step: 1. VMS에 실시간 영상 출력\n2. 바이오스타에서 장치에 저장된 모든 사용자를 삭제\nTest Data: > 사용자 1000명\nExpected Result: 장치의 저장된 사용자를 다수 삭제시에도 VMS에 실시간 영상이 끊김 없이 동작",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "26",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_27",
+    "document": "Test Step: 1. VMS에 실시간 영상 출력\n2. 사용자 메뉴에서 사용자를 선택하여 Transfer To Device로 전송\nTest Data: > 사용자 1000명\nExpected Result: 장치에 다수의 사용자를 추가시에도 VMS에 실시간 영상이 끊김 없이 동작",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "27",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_28",
+    "document": "Test Step: \t\n1. VMS에 실시간 영상 출력\n2. Biostar2 > 출입그룹을 생성 시 사용자그룹을 All Users선택하여 저장\nExpected Result: 장치에 저장된 다수의 사용자가 업데이트되어도 VMS에 실시간 영상이 끊김 없이 동작",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "28",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_29",
+    "document": "Test Step: 1. VMS에 실시간 영상 출력\n2. Trigger & Action 설정하여 저장\n3. Input Port 0 접지\nTest Data: -. Trigger : Input/Master장치 Input Port 0, N/O, 100, Always\n-. Action : Alert Sound, Alarm 1, Loop\nExpected Result: Alarm이 발생하여 Alert Sound가 출력되며, 실시간 영상은 끊김 없이 출력",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "29",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_30",
+    "document": "Test Step: 1. VMS에 실시간 영상 출력\n2. Alarm이 발생하여 Alert Sound가 출력 중\n3. Monitoring > Device Status에서 장치 선택 후 Clear Alarm 선택\nExpected Result: Alarm이 Clear 되며, 실시간 영상은 끊김 없이 출력",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "30",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_31",
+    "document": "Test Step: 1. VMS에 실시간 영상 출력\n2. Trigger & Action 설정하여 저장\n3. 등록되지 않은 Card 인증 시도\nTest Data: -. Trigger : Event/1:1authentication failed(Card)\n-. Action : Disable Device (Master)\nExpected Result: (Master)장치가 잠기며, 실시간 영상은 끊김 없이 출력",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "31",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_32",
+    "document": "Test Step: 1. VMS에 실시간 영상 출력\n2. 잠긴 장치 상세페이지 진입하여 장치를 Unlock\nExpected Result: 장치가 Unlock되고, 실시간 영상은 끊김 없이 출력",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "32",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_33",
+    "document": "Test Step: 1. VMS에 실시간 영상 출력\n2. Fire Alarm Zone 생성\n3. Fire Alarm이 발생\nExpected Result: Fire Alarm이 발생하여 Signal Output이 출력되며, 실시간 영상은 끊김 없이 출력",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "33",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_34",
+    "document": "Test Step: 1. VMS에 실시간 영상 출력\n2. Fire Alarm이 발생\n3. Monitoring > Zone Status에서 Fire Alarm Zone 선택 후 Clear Alarm 선택\nExpected Result: Alarm이 Clear 되며, 실시간 영상은 끊김 없이 출력",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "34",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-325_step_35",
+    "document": "Test Step: 1. RTSP : Enable\n2. ID와 Password를 입력\n3. Port 출력 확인\n4. Port를 설정 후 저장\n5. RTSP Video Resolution 설정\n6. VMS에 ID, PW, Address, Port를 입력 후 송출 영상 확인\nTest Data: RTSP Video Resolution\nBS3\n> 180x320(Default)\n> 720x480\n\nF2\n> 360x640(Default)\n> 720x480\nExpected Result: 선택한 해상도에 맞게 송출",
+    "metadata": {
+      "issue_key": "COMMONR-325",
+      "step_index": "35",
+      "source": "jira_test_step"
+    }
   }
-}
+]

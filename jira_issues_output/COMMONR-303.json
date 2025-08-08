@@ -1,1138 +1,191 @@
-{
-  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
-  "id": "55505",
-  "self": "https://jira.suprema.co.kr/rest/api/2/issue/55505",
-  "key": "COMMONR-303",
-  "fields": {
-    "resolution": null,
-    "customfield_13103": null,
-    "customfield_10510": null,
-    "customfield_10500": "0.0",
-    "customfield_10501": null,
-    "customfield_10502": null,
-    "customfield_12802": null,
-    "customfield_12804": null,
-    "customfield_10505": null,
-    "customfield_12803": null,
-    "customfield_10506": null,
-    "customfield_12806": null,
-    "customfield_10507": null,
-    "customfield_12805": null,
-    "customfield_10508": null,
-    "customfield_12808": null,
-    "customfield_10509": null,
-    "lastViewed": null,
-    "customfield_10180": null,
-    "customfield_10181": null,
-    "customfield_10182": null,
-    "customfield_10183": null,
-    "customfield_10184": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10173",
-      "value": "Major",
-      "id": "10173"
-    },
-    "customfield_10185": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
-      "value": "Medium (2-3일 이내 피드백)",
-      "id": "10220"
-    },
-    "labels": [],
-    "customfield_11702": null,
-    "aggregatetimeoriginalestimate": null,
-    "issuelinks": [
-      {
-        "id": "50474",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/50474",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "60214",
-          "key": "BS3FW-1548",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/60214",
-          "fields": {
-            "summary": "ToM 얼굴 등록 화면에서 얼굴 등록후 장치에 스마트폰 대지 않고 취소했을경우 실패 팝업 발생하지 않는현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
-              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
-              "name": "열림",
-              "id": "1",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
-                "id": 2,
-                "key": "new",
-                "colorName": "blue-gray",
-                "name": "할 일"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
-              "name": "Major (B+)",
-              "id": "10200"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "48651",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/48651",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "58458",
-          "key": "BS3FW-1424",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/58458",
-          "fields": {
-            "summary": "AIRPOB APP에 ToM visual Face 등록 성공 푸시 알림이 출력",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/5",
-              "description": "해결책이 제시되었고 보고자의 확인을 기다리는 중입니다. 지금부터는 이슈를 다시 열거나 이슈를 닫을 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/resolved.png",
-              "name": "해결됨",
-              "id": "5",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "48659",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/48659",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "58462",
-          "key": "BS3FW-1425",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/58462",
-          "fields": {
-            "summary": "AirPob APP에 ToM Visual Face 등록 실패 푸시 알림 없음.",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/5",
-              "description": "해결책이 제시되었고 보고자의 확인을 기다리는 중입니다. 지금부터는 이슈를 다시 열거나 이슈를 닫을 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/resolved.png",
-              "name": "해결됨",
-              "id": "5",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "49155",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/49155",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "58977",
-          "key": "BS3FW-1468",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/58977",
-          "fields": {
-            "summary": "에어팝 앱의 블루투스 연결 : 앱 실행 시로 설정/ 스마트폰 화면 OFF 시에도 ToM 등록되는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/5",
-              "description": "해결책이 제시되었고 보고자의 확인을 기다리는 중입니다. 지금부터는 이슈를 다시 열거나 이슈를 닫을 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/resolved.png",
-              "name": "해결됨",
-              "id": "5",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "49131",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/49131",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "58939",
-          "key": "BS3FW-1461",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/58939",
-          "fields": {
-            "summary": "ToM 비주얼 페이스 등록 실패(등록 취소) 로그 2번 출력되는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "58865",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/58865",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "68054",
-          "key": "ONYXFW-855",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/68054",
-          "fields": {
-            "summary": "ToM 미지원(M)에 ToM 지원(S) 연결 후 지원(S) ToM 카드 인증 시 Master 장치 재부팅 함",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "54630",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/54630",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "63731",
-          "key": "DFW-1118",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/63731",
-          "fields": {
-            "summary": "ToM 비주얼 페이스 등록 대기 시간 초과 시 이벤트 로그에 등록 취소 로그와 등록 대기 초과 로그 두개가 남는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
-              "name": "Major (B+)",
-              "id": "10200"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "52068",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/52068",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "60926",
-          "key": "BES-1799",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/60926",
-          "fields": {
-            "summary": "Template On Mobile(TOM) 안드로이드 제품군 지원",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "완료",
-              "id": "10001",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10300",
-              "id": "10300",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10315&avatarType=issuetype",
-              "name": "이야기",
-              "subtask": false,
-              "avatarId": 10315
-            }
-          }
-        }
-      },
-      {
-        "id": "52855",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/52855",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "62124",
-          "key": "BES-2006",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/62124",
-          "fields": {
-            "summary": "Template On Mobile(TOM) 안드로이드 제품군 지원(추가진행)",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "완료",
-              "id": "10001",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10300",
-              "id": "10300",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10315&avatarType=issuetype",
-              "name": "이야기",
-              "subtask": false,
-              "avatarId": 10315
-            }
-          }
-        }
-      },
-      {
-        "id": "53946",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/53946",
-        "type": {
-          "id": "10003",
-          "name": "Relates",
-          "inward": "relates to",
-          "outward": "relates to",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
-        },
-        "outwardIssue": {
-          "id": "62127",
-          "key": "BES-2009",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/62127",
-          "fields": {
-            "summary": "CLONE - TC 수행 및 기능 안정화",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "완료",
-              "id": "10001",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
-              "id": "5",
-              "description": "이슈의 부작업",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
-              "name": "부작업",
-              "subtask": true,
-              "avatarId": 10316
-            }
-          }
-        }
-      },
-      {
-        "id": "45837",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/45837",
-        "type": {
-          "id": "10003",
-          "name": "Relates",
-          "inward": "relates to",
-          "outward": "relates to",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
-        },
-        "inwardIssue": {
-          "id": "55399",
-          "key": "BES-842",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/55399",
-          "fields": {
-            "summary": "Test Case 작성",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "완료",
-              "id": "10001",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
-              "id": "5",
-              "description": "이슈의 부작업",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
-              "name": "부작업",
-              "subtask": true,
-              "avatarId": 10316
-            }
-          }
-        }
-      },
-      {
-        "id": "47171",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/47171",
-        "type": {
-          "id": "10003",
-          "name": "Relates",
-          "inward": "relates to",
-          "outward": "relates to",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
-        },
-        "inwardIssue": {
-          "id": "54614",
-          "key": "BS3FW-1259",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/54614",
-          "fields": {
-            "summary": "Template on Mobile 지원",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "완료",
-              "id": "10001",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/3",
-              "id": "3",
-              "description": "해야할 일",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10318&avatarType=issuetype",
-              "name": "작업",
-              "subtask": false,
-              "avatarId": 10318
-            }
-          }
-        }
-      },
-      {
-        "id": "48052",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/48052",
-        "type": {
-          "id": "10200",
-          "name": "Tests",
-          "inward": "tested by",
-          "outward": "tests",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10200"
-        },
-        "inwardIssue": {
-          "id": "54614",
-          "key": "BS3FW-1259",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/54614",
-          "fields": {
-            "summary": "Template on Mobile 지원",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "완료",
-              "id": "10001",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/3",
-              "id": "3",
-              "description": "해야할 일",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10318&avatarType=issuetype",
-              "name": "작업",
-              "subtask": false,
-              "avatarId": 10318
-            }
-          }
-        }
-      }
-    ],
-    "assignee": null,
-    "components": [],
-    "customfield_10170": null,
-    "customfield_10171": null,
-    "customfield_10172": null,
-    "customfield_10174": null,
-    "customfield_10175": null,
-    "customfield_10176": null,
-    "customfield_10177": null,
-    "customfield_10178": null,
-    "customfield_10179": null,
-    "customfield_10600": 21.0,
-    "customfield_10601": [],
-    "customfield_12901": null,
-    "customfield_10602": null,
-    "customfield_12900": null,
-    "subtasks": [],
-    "reporter": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=ybwoo",
-      "name": "ybwoo",
-      "key": "JIRAUSER13405",
-      "emailAddress": "ybwoo@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-      },
-      "displayName": "우유빈",
-      "active": true,
-      "timeZone": "Asia/Seoul"
-    },
-    "customfield_10168": null,
-    "customfield_10169": null,
-    "customfield_11800": null,
-    "progress": {
-      "progress": 0,
-      "total": 0
-    },
-    "votes": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-303/votes",
-      "votes": 0,
-      "hasVoted": false
-    },
-    "worklog": {
-      "startAt": 0,
-      "maxResults": 20,
-      "total": 0,
-      "worklogs": []
-    },
-    "issuetype": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
-      "id": "10000",
-      "description": "Represents a Test",
-      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
-      "name": "Test",
-      "subtask": false
-    },
-    "project": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
-      "id": "10000",
-      "key": "COMMONR",
-      "name": "Common Requirement And Test Case",
-      "projectTypeKey": "software",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
-        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
-        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
-        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
-      },
-      "projectCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
-        "id": "10000",
-        "description": "Requirements And Test Cases For The BioStar System Device",
-        "name": "BioStar System Device Requirement And Test Case"
-      }
-    },
-    "customfield_11000": null,
-    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@7d1849bd[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@c5d3fee[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6c8993fe[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@94e73ce[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@5afe007c[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@12b999a0[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@328fee6a[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@48253bf6[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@62f22f6e[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@3c58ce09[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@71e99b56[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@1072f416[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
-    "resolutiondate": null,
-    "watches": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-303/watchers",
-      "watchCount": 2,
-      "isWatching": false
-    },
-    "customfield_11900": null,
-    "customfield_11901": null,
-    "updated": "2025-08-01T10:19:16.000+0900",
-    "timeoriginalestimate": null,
-    "description": "Template on Mobile 지원 -  ToM 발급, Visual Face 등록에 대한 TC",
-    "customfield_10251": null,
-    "customfield_10252": null,
-    "customfield_10253": null,
-    "customfield_10254": null,
-    "customfield_10255": null,
-    "timetracking": {},
-    "customfield_10257": null,
-    "customfield_10247": null,
-    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p><span class=\"error\">&#91;카드 ID 값에 따른 ToM&#93;</span><br/>1. BioStar 2&gt; User 상세&gt; Credential &gt; + Mobile<br/>2. 카드 ID 입력<br/>3. 그 외 정보 입력 후 Enroll</p></td><td><p>카드 ID<br/>&gt;USER ID 일치<br/>&gt;USER ID 불일치</p></td><td><p>1. 팝업이 종료되고 Template on Mobile 카드가 추가된다.</p></td></tr><tr><td>2</td><td><p>1-1. appy &gt; 이메일을 통해 전달된 링크를 통해 Airfob Pass 앱에서 ToM 발급</p></td><td></td><td><p>1. Visual Face 등록 및 인증이 가능하다.</p></td></tr><tr><td>3</td><td><p><span class=\"error\">&#91;ToM 발급/Visual Face 미등록 상태&#93;</span><br/>1. BioStar2 &gt; 장치 상세(BS3)&gt; Template on Mobile &gt; ToM Enrollment &gt; Visual Face: 체크 <br/>2. ToM을 장치에 인증 시도</p></td><td><p>Warning 팝업: Enroll Timeout </p></td><td><p>1. Warning 팝업이 노출된다. <br/> Don't turn off your smartphone screen while enrolling face. <span class=\"error\">&#91;continue&#93;</span></p>\n\n\n<p>2.얼굴 등록 화면으로 전환된다.<br/>좌측 상단에 Title 표시: 얼굴 등록<br/>우측 상단 취소 아이콘 표시: X<br/>화면 중앙: 얼굴 등록 가이드 이미지 표시<br/>화면 하단: No visual face in card. Enroll visual face 메시지 가 표시된다</p>\n\n\n<p>3. Visual FACE가 없으므로 얼굴 등록을 진행한다는 음성안내가 노출된다. </p></td></tr><tr><td>4</td><td><p>1. 에어팝 패스 앱 설정</p></td><td><ul class=\"alternate\" type=\"square\">\n<li>앱 실행 시/스마트 폰 화면 ON</li>\n<li>앱 실행 시/스마트 폰 화면 OFF</li>\n<li>상시/스마트 폰 화면 OF,OFF</li>\n</ul>\n</td><td><p>1. 앱 설정에 따라 동작한다. </p>\n<ul class=\"alternate\" type=\"square\">\n<li>통신 및 ToM 등록이 진행된다.</li>\n<li>통신이 끊어지고 ToM 등록에 실패한다.</li>\n<li>통신 및 ToM  등록이 진행된다.</li>\n</ul>\n</td></tr><tr><td>5</td><td><p>1. Continue 버튼 선택</p></td><td><p>Warning 팝업 노출</p></td><td><p>1. Visual Face 등록이 진행된다. </p></td></tr><tr><td>6</td><td><p>3-1. 우측 상단에 취소 버튼 선택</p></td><td></td><td><p>1. 메인 화면으로 이동한다.</p></td></tr><tr><td>7</td><td><p>3-2. 등록할 얼굴 입력</p></td><td><p>Visual Face 등록 성공</p></td><td><p>1. 촬영에 성공하고 아래와 같이 출력된다. </p>\n<ul class=\"alternate\" type=\"square\">\n<li>Capture success</li>\n<li>Re-Shot/OK</li>\n</ul>\n</td></tr><tr><td>8</td><td><p>3-2-1. 등록할 얼굴 입력</p></td><td><p>Visual Face 입력 실패<br/>&gt; 등록 취소<br/>&gt; 등록 대기 시간 초과<br/>&gt; 템플릿 추출 실패<br/>&gt; 통신오류<br/>&gt; 오류</p></td><td><p>1. 얼굴 등록 화면이 종료된다.</p></td></tr><tr><td>9</td><td><p>3-2-2<br/>1. BioStar 2&gt;Monitoring&gt;Event Log,Real-time Log 확인<br/>2. 장치메뉴&gt;Event Log 확인</p></td><td><p>&gt; 등록 취소<br/>&gt; 등록 대기 시간 초과<br/>&gt; 템플릿 추출 실패<br/>&gt; 통신오류<br/>&gt; 오류</p></td><td><p>1. 이벤트로그가 노출된다. <br/>&gt; ToM 비주얼 페이스 등록 실패 (등록 취소)/ToM Visual Face Enrollment Failed (Scan Canceled)<br/>&gt; ToM 비주얼 페이스 등록 실패 (등록 대기 시간 초과)/ToM Visual Face Enrollment Failed (Scan Timeout)<br/>&gt;ToM 비주얼 페이스 등록 실패 (템플릿 추출 실패)/ ToM Visual Face Enrollment Failed (Template Extraction Failed)<br/>&gt;ToM 비주얼 페이스 등록 실패 (통신 오류)/ToM Visual Face Enrollment Failed (Communication Failed)<br/>&gt;ToM 비주얼 페이스 등록 실패 (오류)/ToM Visual Face Enrollment Failed (Error)</p>\n\n<p>※ 추후 변경될 수 있음</p></td></tr><tr><td>10</td><td><p>1. Re-Shot 선택<br/>2. 등록할 얼굴 입력</p></td><td></td><td><p>1. 얼굴 등록 화면이 출력된다.<br/>2 .촬영에 성공하고 아래와 같이 출력된다. </p>\n<ul class=\"alternate\" type=\"square\">\n<li>Capture success</li>\n<li>Re-shot/OK</li>\n</ul>\n</td></tr><tr><td>11</td><td><p>1. OK 선택</p></td><td></td><td><p>1. 촬영한 사진으로 Visual Face 등록을 진행한다.</p></td></tr><tr><td>12</td><td><p>스마트폰을 장치에 대고 유지<br/>(템플릿을 airpob 앱에 전송하는 과정, Ble/NFC통신이 잘 유지될수 있도록 유지)</p></td><td></td><td><p>1. 메시지 및 음성안내가 출력된다.<br/>화면 하단: Tag your smartphone on the device and hold it.<br/>음성안내:<br/>2. 스마트폰을 장치 하단에 대고 유지하도록 안내하는 가이드 이미지가 표시된다.(기존 scan card 가이드 이미지와 톤을일치)</p></td></tr><tr><td>13</td><td><p>1. 스마트폰을 장치에 대고 유지<br/>2. 일정시간이 지나고..</p></td><td><p>등록 성공한 경우</p></td><td><p>1. ToM Visual Face 등록 성공 화면이 출력된다. </p>\n<ul class=\"alternate\" type=\"square\">\n<li>ToM Visual Face 등록 성공 메시지와 음성 안내가 출력</li>\n</ul>\n\n\n<p>2. AIRPOB APP에 ToM visual Face 등록 성공 푸시 알림이 출력된다. </p></td></tr><tr><td>14</td><td><p>1. 등록에 실패하도록 제어 </p></td><td><p>등록 실패한 경우 <br/>1.<br/>&gt;등록 중 스마트폰을 장치에서 제거<br/>&gt;등록 중 장치에 X 버튼 선택<br/>&gt;등록 중 장치 전원 재인가<br/>&gt;등록 중 전화 수신</p>\n\n<p>※ 등록 중 다른 카드 입력</p></td><td><p>1. ToM Visual Face 등록 실패 화면이 출력된다.</p>\n<ul class=\"alternate\" type=\"square\">\n<li>장치하단에 ToM Visual Face Enrollment Failed 노출</li>\n</ul>\n\n\n<p>2. AirPob APP에 ToM Visual Face 등록 실패 푸시 알림이 출력된다. </p>\n\n<p>※ 등록 중 다른 카드 입력 시 인증되지 않고 무시된다(무반응)</p></td></tr><tr><td>15</td><td><p>1. 장치메뉴&gt; EVENT LOG 확인</p></td><td></td><td><p>1. 이벤트 로그가 출력된다.</p>\n\n<p>등록 성공한 경우</p>\n<ul class=\"alternate\" type=\"square\">\n<li>ToM Visual Face Enrollment Succeeded</li>\n</ul>\n\n\n<p>  등록 실패한 경우</p>\n<ul class=\"alternate\" type=\"square\">\n<li>ToM Visual Face Enrollment Failed</li>\n</ul>\n</td></tr><tr><td>16</td><td><p><span class=\"error\">&#91;ToM 지원/미지원 장치에 따른 Visual Face등록&#93;</span><br/>1. USER에서 ToM을 발급<br/>2. 발급받은 ToM을 장치에 인증</p></td><td><p><span class=\"error\">&#91;이하 ToM Enrollment &gt; Visual Face: 체크 상태&#93;</span> <br/>ToM 지원 BS3(D)</p></td><td><p>1. ToM_AoC, SCC: Visual Face 등록 및 인증된다.</p></td></tr><tr><td>17</td><td><p>1. USER에서 ToM을 발급<br/>2. 발급받은 ToM_Aoc를 Slave 장치에 인증</p></td><td><p>ToM 지원 BS3(M) - ToM 지원 BS3(S)</p></td><td><p>1. ToM_AoC, SCC: Visual Face 등록 및 인증된다.</p></td></tr><tr><td>18</td><td><p>1. USER에서 ToM을 발급<br/>2. 발급받은 ToM_SCC를 Slave 장치에 인증</p></td><td><p>ToM 지원 BS3(M) - ToM 미지원 BS3(S)</p></td><td><p>1. 반응이 없다.</p></td></tr><tr><td>19</td><td><p>1. USER에서 ToM을 발급<br/>2. 발급받은 ToM을 Slave 장치에 인증</p></td><td><p>ToM 미지원 BS3(M) - ToM 지원 BS3(S)</p></td><td><p>1. ToM_AOC/SCC 모두 인증실패로 동작된다.<br/>(등록할 때는 Master와 무관하게 Slave에서 등록옵션이 켜져있을 경우 등록가능)</p>\n\n<p>※<a href=\"https://jira.suprema.co.kr/browse/BDP-559\" title=\"Template on Mobile 지원\" class=\"issue-link\" data-issue-key=\"BDP-559\"><del>BDP-559</del></a> 1.4.2.2.1.2 내용 업데이트 완료(2023-08-21)</p></td></tr><tr><td>20</td><td><p>1. USER에서 ToM을 발급<br/>2. 발급받은 ToM을 Slave 장치에 인증</p></td><td><p>OSDP 툴에 연결 후 SLAVE 인 장치</p></td><td><p>1. ToM_AOC: Visual Face 등록된다.<br/>2. ToM_SCC:  Visual Face 등록된다.</p></td></tr><tr><td>21</td><td><p>1. USER에서 ToM을 발급<br/>2. 장치상세&gt;Advanced&gt;Wiegand&gt; Output Mode: BYPASS 설정<br/>3. 발급받은 ToM을 Bypass 설정한 장치에 인증</p></td><td><p>BYPASS 설정된 장치</p></td><td><p>1. ToM_AoC, SCC: Visual Face 등록 및 인증실패된다.</p>\n<ul class=\"alternate\" type=\"square\">\n<li>Visual Face가 없을 경우: Visual Face등록 진행</li>\n<li>Visual Face가 있을 경우: 인증 실패</li>\n</ul>\n</td></tr></table>",
-    "customfield_10248": null,
-    "customfield_10006": [],
-    "customfield_10007": [],
-    "customfield_10008": {
-      "issueId": 55505,
-      "statuses": [
-        {
-          "statusResults": [
-            {
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 34750,
-              "latestFinalId": 34750
-            },
-            {
-              "environment": "ES1",
-              "latest": 4,
-              "latestFinal": 4,
-              "latestId": 29881,
-              "latestFinalId": 29881
-            },
-            {
-              "environment": "BioStarV2.9.6.30",
-              "latest": 4,
-              "latestFinal": 4,
-              "latestId": 29881,
-              "latestFinalId": 29881
-            }
-          ]
-        }
-      ]
-    },
-    "customfield_12309": null,
-    "customfield_10802": null,
-    "customfield_10803": null,
-    "customfield_10805": null,
-    "summary": "[BDP-559] Template On Mobile(발급 및 등록) ",
-    "customfield_10240": null,
-    "customfield_10000": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
-      "value": "Manual",
-      "id": "10000"
-    },
-    "customfield_10243": null,
-    "customfield_10001": null,
-    "customfield_10244": null,
-    "customfield_10002": null,
-    "customfield_10003": null,
-    "customfield_10246": null,
-    "customfield_10004": {
-      "steps": [
-        {
-          "id": 15074,
-          "index": 1,
-          "step": "[카드 ID 값에 따른 ToM]\n1. BioStar 2> User 상세> Credential > + Mobile\n2. 카드 ID 입력\n3. 그 외 정보 입력 후 Enroll",
-          "data": "카드 ID\n>USER ID 일치\n>USER ID 불일치",
-          "result": "1. 팝업이 종료되고 Template on Mobile 카드가 추가된다.",
-          "attachments": []
-        },
-        {
-          "id": 15075,
-          "index": 2,
-          "step": "1-1. appy > 이메일을 통해 전달된 링크를 통해 Airfob Pass 앱에서 ToM 발급",
-          "result": "1. Visual Face 등록 및 인증이 가능하다.",
-          "attachments": []
-        },
-        {
-          "id": 15076,
-          "index": 3,
-          "step": "[ToM 발급/Visual Face 미등록 상태]\n1. BioStar2 > 장치 상세(BS3)> Template on Mobile > ToM Enrollment > Visual Face: 체크 \n2. ToM을 장치에 인증 시도",
-          "data": "Warning 팝업: Enroll Timeout ",
-          "result": "1. Warning 팝업이 노출된다. \n Don't turn off your smartphone screen while enrolling face. [continue]\n\n\n2.얼굴 등록 화면으로 전환된다.\n좌측 상단에 Title 표시: 얼굴 등록\n우측 상단 취소 아이콘 표시: X\n화면 중앙: 얼굴 등록 가이드 이미지 표시\n화면 하단: No visual face in card. Enroll visual face 메시지 가 표시된다\n\n\n3. Visual FACE가 없으므로 얼굴 등록을 진행한다는 음성안내가 노출된다. ",
-          "attachments": []
-        },
-        {
-          "id": 15236,
-          "index": 4,
-          "step": "1. 에어팝 패스 앱 설정\n",
-          "data": " - 앱 실행 시/스마트 폰 화면 ON \n - 앱 실행 시/스마트 폰 화면 OFF\n - 상시/스마트 폰 화면 OF,OFF",
-          "result": "1. 앱 설정에 따라 동작한다. \n - 통신 및 ToM 등록이 진행된다. \n - 통신이 끊어지고 ToM 등록에 실패한다.\n - 통신 및 ToM  등록이 진행된다. ",
-          "attachments": []
-        },
-        {
-          "id": 15284,
-          "index": 5,
-          "step": "1. Continue 버튼 선택",
-          "data": "Warning 팝업 노출",
-          "result": "1. Visual Face 등록이 진행된다. ",
-          "attachments": []
-        },
-        {
-          "id": 15077,
-          "index": 6,
-          "step": "3-1. 우측 상단에 취소 버튼 선택",
-          "result": "1. 메인 화면으로 이동한다.\n",
-          "attachments": []
-        },
-        {
-          "id": 15078,
-          "index": 7,
-          "step": "3-2. 등록할 얼굴 입력",
-          "data": "Visual Face 등록 성공",
-          "result": "1. 촬영에 성공하고 아래와 같이 출력된다. \n - Capture success\n - Re-Shot/OK",
-          "attachments": []
-        },
-        {
-          "id": 15165,
-          "index": 8,
-          "step": "3-2-1. 등록할 얼굴 입력",
-          "data": "Visual Face 입력 실패\n> 등록 취소\n> 등록 대기 시간 초과\n> 템플릿 추출 실패\n> 통신오류\n> 오류",
-          "result": "1. 얼굴 등록 화면이 종료된다.",
-          "attachments": []
-        },
-        {
-          "id": 15167,
-          "index": 9,
-          "step": "3-2-2\n1. BioStar 2>Monitoring>Event Log,Real-time Log 확인\n2. 장치메뉴>Event Log 확인",
-          "data": "> 등록 취소\n> 등록 대기 시간 초과\n> 템플릿 추출 실패\n> 통신오류\n> 오류",
-          "result": "1. 이벤트로그가 노출된다. \n> ToM 비주얼 페이스 등록 실패 (등록 취소)/ToM Visual Face Enrollment Failed (Scan Canceled)\n> ToM 비주얼 페이스 등록 실패 (등록 대기 시간 초과)/ToM Visual Face Enrollment Failed (Scan Timeout)\n>ToM 비주얼 페이스 등록 실패 (템플릿 추출 실패)/ ToM Visual Face Enrollment Failed (Template Extraction Failed)\n>ToM 비주얼 페이스 등록 실패 (통신 오류)/ToM Visual Face Enrollment Failed (Communication Failed)\n>ToM 비주얼 페이스 등록 실패 (오류)/ToM Visual Face Enrollment Failed (Error)\n\n※ 추후 변경될 수 있음",
-          "attachments": []
-        },
-        {
-          "id": 15079,
-          "index": 10,
-          "step": "1. Re-Shot 선택\n2. 등록할 얼굴 입력\n",
-          "data": "",
-          "result": "1. 얼굴 등록 화면이 출력된다.\n2 .촬영에 성공하고 아래와 같이 출력된다. \n- Capture success\n- Re-shot/OK",
-          "attachments": []
-        },
-        {
-          "id": 15080,
-          "index": 11,
-          "step": "1. OK 선택\n",
-          "result": "1. 촬영한 사진으로 Visual Face 등록을 진행한다.\n",
-          "attachments": []
-        },
-        {
-          "id": 15081,
-          "index": 12,
-          "step": "스마트폰을 장치에 대고 유지\n(템플릿을 airpob 앱에 전송하는 과정, Ble/NFC통신이 잘 유지될수 있도록 유지)\n",
-          "data": "",
-          "result": "1. 메시지 및 음성안내가 출력된다.\n화면 하단: Tag your smartphone on the device and hold it.\n음성안내:\n2. 스마트폰을 장치 하단에 대고 유지하도록 안내하는 가이드 이미지가 표시된다.(기존 scan card 가이드 이미지와 톤을일치)\n",
-          "attachments": []
-        },
-        {
-          "id": 15082,
-          "index": 13,
-          "step": "1. 스마트폰을 장치에 대고 유지\n2. 일정시간이 지나고..\n",
-          "data": "등록 성공한 경우\n",
-          "result": "1. ToM Visual Face 등록 성공 화면이 출력된다. \n- ToM Visual Face 등록 성공 메시지와 음성 안내가 출력\n\n2. AIRPOB APP에 ToM visual Face 등록 성공 푸시 알림이 출력된다. \n",
-          "attachments": []
-        },
-        {
-          "id": 15180,
-          "index": 14,
-          "step": "1. 등록에 실패하도록 제어 \n",
-          "data": "등록 실패한 경우 \n1.\n>등록 중 스마트폰을 장치에서 제거\n>등록 중 장치에 X 버튼 선택\n>등록 중 장치 전원 재인가\n>등록 중 전화 수신\n\n※ 등록 중 다른 카드 입력",
-          "result": "1. ToM Visual Face 등록 실패 화면이 출력된다.\n - 장치하단에 ToM Visual Face Enrollment Failed 노출\n\n2. AirPob APP에 ToM Visual Face 등록 실패 푸시 알림이 출력된다. \n\n※ 등록 중 다른 카드 입력 시 인증되지 않고 무시된다(무반응)",
-          "attachments": []
-        },
-        {
-          "id": 15084,
-          "index": 15,
-          "step": "1. 장치메뉴> EVENT LOG 확인\n",
-          "result": "1. 이벤트 로그가 출력된다.\n  \n등록 성공한 경우\n-  ToM Visual Face Enrollment Succeeded\n\n  등록 실패한 경우\n- ToM Visual Face Enrollment Failed\n",
-          "attachments": []
-        },
-        {
-          "id": 15085,
-          "index": 16,
-          "step": "[ToM 지원/미지원 장치에 따른 Visual Face등록]\n1. USER에서 ToM을 발급\n2. 발급받은 ToM을 장치에 인증\n",
-          "data": "[이하 ToM Enrollment > Visual Face: 체크 상태] \nToM 지원 BS3(D)\n",
-          "result": "1. ToM_AoC, SCC: Visual Face 등록 및 인증된다.\n",
-          "attachments": []
-        },
-        {
-          "id": 15086,
-          "index": 17,
-          "step": "1. USER에서 ToM을 발급\n2. 발급받은 ToM_Aoc를 Slave 장치에 인증\n",
-          "data": "ToM 지원 BS3(M) - ToM 지원 BS3(S)\n",
-          "result": "1. ToM_AoC, SCC: Visual Face 등록 및 인증된다.\n",
-          "attachments": []
-        },
-        {
-          "id": 15087,
-          "index": 18,
-          "step": "1. USER에서 ToM을 발급\n2. 발급받은 ToM_SCC를 Slave 장치에 인증\n",
-          "data": "ToM 지원 BS3(M) - ToM 미지원 BS3(S)\n",
-          "result": "1. 반응이 없다.\n",
-          "attachments": []
-        },
-        {
-          "id": 15088,
-          "index": 19,
-          "step": "1. USER에서 ToM을 발급\n2. 발급받은 ToM을 Slave 장치에 인증\n",
-          "data": "ToM 미지원 BS3(M) - ToM 지원 BS3(S)\n",
-          "result": "1. ToM_AOC/SCC 모두 인증실패로 동작된다.\n(등록할 때는 Master와 무관하게 Slave에서 등록옵션이 켜져있을 경우 등록가능)\n\n※BDP-559 1.4.2.2.1.2 내용 업데이트 완료(2023-08-21)",
-          "attachments": []
-        },
-        {
-          "id": 15089,
-          "index": 20,
-          "step": "1. USER에서 ToM을 발급\n2. 발급받은 ToM을 Slave 장치에 인증\n",
-          "data": "OSDP 툴에 연결 후 SLAVE 인 장치\n",
-          "result": "1. ToM_AOC: Visual Face 등록된다.\n2. ToM_SCC:  Visual Face 등록된다.",
-          "attachments": []
-        },
-        {
-          "id": 15090,
-          "index": 21,
-          "step": "1. USER에서 ToM을 발급\n2. 장치상세>Advanced>Wiegand> Output Mode: BYPASS 설정\n3. 발급받은 ToM을 Bypass 설정한 장치에 인증\n",
-          "data": "BYPASS 설정된 장치\n",
-          "result": "1. ToM_AoC, SCC: Visual Face 등록 및 인증실패된다.\n- Visual Face가 없을 경우: Visual Face등록 진행\n- Visual Face가 있을 경우: 인증 실패",
-          "attachments": []
-        }
-      ]
-    },
-    "customfield_10236": null,
-    "customfield_10237": null,
-    "environment": null,
-    "customfield_10238": null,
-    "customfield_10239": null,
-    "duedate": null,
-    "comment": {
-      "comments": [],
-      "maxResults": 0,
-      "total": 0,
-      "startAt": 0
-    },
-    "customfield_10230": null,
-    "fixVersions": [],
-    "customfield_10231": null,
-    "customfield_10232": null,
-    "customfield_10233": null,
-    "customfield_12410": null,
-    "customfield_10234": null,
-    "customfield_10235": null,
-    "customfield_10225": null,
-    "customfield_12404": null,
-    "customfield_10226": null,
-    "customfield_12403": null,
-    "customfield_10227": null,
-    "customfield_12406": null,
-    "customfield_10228": null,
-    "customfield_10229": null,
-    "customfield_10900": null,
-    "customfield_12408": null,
-    "customfield_10901": null,
-    "customfield_10902": null,
-    "customfield_10903": null,
-    "customfield_12409": null,
-    "customfield_10904": null,
-    "customfield_10905": null,
-    "customfield_10220": null,
-    "priority": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-      "name": "미할당",
-      "id": "10100"
-    },
-    "customfield_10221": null,
-    "customfield_12400": null,
-    "customfield_12402": null,
-    "customfield_10224": null,
-    "customfield_10214": null,
-    "customfield_10217": null,
-    "customfield_10218": null,
-    "timeestimate": null,
-    "versions": [],
-    "customfield_10219": null,
-    "status": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
-      "description": "",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
-      "name": "할 일",
-      "id": "10000",
-      "statusCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
-        "id": 2,
-        "key": "new",
-        "colorName": "blue-gray",
-        "name": "할 일"
-      }
-    },
-    "customfield_12510": null,
-    "customfield_10213": null,
-    "customfield_12511": null,
-    "customfield_10203": null,
-    "customfield_10204": null,
-    "customfield_12502": null,
-    "customfield_10205": null,
-    "customfield_10206": null,
-    "customfield_10207": null,
-    "aggregatetimeestimate": null,
-    "customfield_10208": null,
-    "customfield_10209": null,
-    "customfield_12509": null,
-    "customfield_12508": null,
-    "creator": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=ybwoo",
-      "name": "ybwoo",
-      "key": "JIRAUSER13405",
-      "emailAddress": "ybwoo@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-      },
-      "displayName": "우유빈",
-      "active": true,
-      "timeZone": "Asia/Seoul"
-    },
-    "aggregateprogress": {
-      "progress": 0,
-      "total": 0
-    },
-    "customfield_10320": null,
-    "customfield_10321": null,
-    "customfield_12501": null,
-    "customfield_10202": null,
-    "customfield_12500": null,
-    "customfield_10313": "1|hzx7rj:",
-    "customfield_10316": null,
-    "customfield_10317": null,
-    "timespent": null,
-    "aggregatetimespent": null,
-    "customfield_10310": null,
-    "customfield_10302": null,
-    "customfield_10303": null,
-    "customfield_12601": null,
-    "customfield_10304": null,
-    "customfield_10305": null,
-    "customfield_10308": null,
-    "workratio": -1,
-    "created": "2023-03-13T17:45:14.000+0900",
-    "customfield_10533": null,
-    "customfield_10534": null,
-    "customfield_11501": null,
-    "customfield_11503": null,
-    "customfield_13001": null,
-    "customfield_13000": null,
-    "customfield_10530": null,
-    "customfield_10531": null,
-    "customfield_10532": null,
-    "customfield_10401": null,
-    "customfield_10522": null,
-    "customfield_10402": null,
-    "customfield_12700": null,
-    "customfield_10524": null,
-    "customfield_10525": null,
-    "customfield_12702": null,
-    "attachment": [],
-    "customfield_10526": null,
-    "customfield_12704": null,
-    "customfield_10528": null,
-    "customfield_12706": null,
-    "customfield_10520": null,
-    "customfield_10521": null,
-    "customfield_10400": null,
-    "customfield_10511": null,
-    "customfield_10512": null,
-    "customfield_11600": null,
-    "customfield_10513": null,
-    "customfield_10514": null,
-    "customfield_10515": null,
-    "customfield_10516": null,
-    "customfield_10517": null,
-    "customfield_10518": null,
-    "customfield_10519": null
+[
+  {
+    "id": "COMMONR-303_step_1",
+    "document": "Test Step: [카드 ID 값에 따른 ToM]\n1. BioStar 2> User 상세> Credential > + Mobile\n2. 카드 ID 입력\n3. 그 외 정보 입력 후 Enroll\nTest Data: 카드 ID\n>USER ID 일치\n>USER ID 불일치\nExpected Result: 1. 팝업이 종료되고 Template on Mobile 카드가 추가된다.",
+    "metadata": {
+      "issue_key": "COMMONR-303",
+      "step_index": "1",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-303_step_2",
+    "document": "Test Step: 1-1. appy > 이메일을 통해 전달된 링크를 통해 Airfob Pass 앱에서 ToM 발급\nExpected Result: 1. Visual Face 등록 및 인증이 가능하다.",
+    "metadata": {
+      "issue_key": "COMMONR-303",
+      "step_index": "2",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-303_step_3",
+    "document": "Test Step: [ToM 발급/Visual Face 미등록 상태]\n1. BioStar2 > 장치 상세(BS3)> Template on Mobile > ToM Enrollment > Visual Face: 체크 \n2. ToM을 장치에 인증 시도\nTest Data: Warning 팝업: Enroll Timeout \nExpected Result: 1. Warning 팝업이 노출된다. \n Don't turn off your smartphone screen while enrolling face. [continue]\n\n\n2.얼굴 등록 화면으로 전환된다.\n좌측 상단에 Title 표시: 얼굴 등록\n우측 상단 취소 아이콘 표시: X\n화면 중앙: 얼굴 등록 가이드 이미지 표시\n화면 하단: No visual face in card. Enroll visual face 메시지 가 표시된다\n\n\n3. Visual FACE가 없으므로 얼굴 등록을 진행한다는 음성안내가 노출된다. ",
+    "metadata": {
+      "issue_key": "COMMONR-303",
+      "step_index": "3",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-303_step_4",
+    "document": "Test Step: 1. 에어팝 패스 앱 설정\n\nTest Data:  - 앱 실행 시/스마트 폰 화면 ON \n - 앱 실행 시/스마트 폰 화면 OFF\n - 상시/스마트 폰 화면 OF,OFF\nExpected Result: 1. 앱 설정에 따라 동작한다. \n - 통신 및 ToM 등록이 진행된다. \n - 통신이 끊어지고 ToM 등록에 실패한다.\n - 통신 및 ToM  등록이 진행된다. ",
+    "metadata": {
+      "issue_key": "COMMONR-303",
+      "step_index": "4",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-303_step_5",
+    "document": "Test Step: 1. Continue 버튼 선택\nTest Data: Warning 팝업 노출\nExpected Result: 1. Visual Face 등록이 진행된다. ",
+    "metadata": {
+      "issue_key": "COMMONR-303",
+      "step_index": "5",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-303_step_6",
+    "document": "Test Step: 3-1. 우측 상단에 취소 버튼 선택\nExpected Result: 1. 메인 화면으로 이동한다.\n",
+    "metadata": {
+      "issue_key": "COMMONR-303",
+      "step_index": "6",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-303_step_7",
+    "document": "Test Step: 3-2. 등록할 얼굴 입력\nTest Data: Visual Face 등록 성공\nExpected Result: 1. 촬영에 성공하고 아래와 같이 출력된다. \n - Capture success\n - Re-Shot/OK",
+    "metadata": {
+      "issue_key": "COMMONR-303",
+      "step_index": "7",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-303_step_8",
+    "document": "Test Step: 3-2-1. 등록할 얼굴 입력\nTest Data: Visual Face 입력 실패\n> 등록 취소\n> 등록 대기 시간 초과\n> 템플릿 추출 실패\n> 통신오류\n> 오류\nExpected Result: 1. 얼굴 등록 화면이 종료된다.",
+    "metadata": {
+      "issue_key": "COMMONR-303",
+      "step_index": "8",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-303_step_9",
+    "document": "Test Step: 3-2-2\n1. BioStar 2>Monitoring>Event Log,Real-time Log 확인\n2. 장치메뉴>Event Log 확인\nTest Data: > 등록 취소\n> 등록 대기 시간 초과\n> 템플릿 추출 실패\n> 통신오류\n> 오류\nExpected Result: 1. 이벤트로그가 노출된다. \n> ToM 비주얼 페이스 등록 실패 (등록 취소)/ToM Visual Face Enrollment Failed (Scan Canceled)\n> ToM 비주얼 페이스 등록 실패 (등록 대기 시간 초과)/ToM Visual Face Enrollment Failed (Scan Timeout)\n>ToM 비주얼 페이스 등록 실패 (템플릿 추출 실패)/ ToM Visual Face Enrollment Failed (Template Extraction Failed)\n>ToM 비주얼 페이스 등록 실패 (통신 오류)/ToM Visual Face Enrollment Failed (Communication Failed)\n>ToM 비주얼 페이스 등록 실패 (오류)/ToM Visual Face Enrollment Failed (Error)\n\n※ 추후 변경될 수 있음",
+    "metadata": {
+      "issue_key": "COMMONR-303",
+      "step_index": "9",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-303_step_10",
+    "document": "Test Step: 1. Re-Shot 선택\n2. 등록할 얼굴 입력\n\nExpected Result: 1. 얼굴 등록 화면이 출력된다.\n2 .촬영에 성공하고 아래와 같이 출력된다. \n- Capture success\n- Re-shot/OK",
+    "metadata": {
+      "issue_key": "COMMONR-303",
+      "step_index": "10",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-303_step_11",
+    "document": "Test Step: 1. OK 선택\n\nExpected Result: 1. 촬영한 사진으로 Visual Face 등록을 진행한다.\n",
+    "metadata": {
+      "issue_key": "COMMONR-303",
+      "step_index": "11",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-303_step_12",
+    "document": "Test Step: 스마트폰을 장치에 대고 유지\n(템플릿을 airpob 앱에 전송하는 과정, Ble/NFC통신이 잘 유지될수 있도록 유지)\n\nExpected Result: 1. 메시지 및 음성안내가 출력된다.\n화면 하단: Tag your smartphone on the device and hold it.\n음성안내:\n2. 스마트폰을 장치 하단에 대고 유지하도록 안내하는 가이드 이미지가 표시된다.(기존 scan card 가이드 이미지와 톤을일치)\n",
+    "metadata": {
+      "issue_key": "COMMONR-303",
+      "step_index": "12",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-303_step_13",
+    "document": "Test Step: 1. 스마트폰을 장치에 대고 유지\n2. 일정시간이 지나고..\n\nTest Data: 등록 성공한 경우\n\nExpected Result: 1. ToM Visual Face 등록 성공 화면이 출력된다. \n- ToM Visual Face 등록 성공 메시지와 음성 안내가 출력\n\n2. AIRPOB APP에 ToM visual Face 등록 성공 푸시 알림이 출력된다. \n",
+    "metadata": {
+      "issue_key": "COMMONR-303",
+      "step_index": "13",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-303_step_14",
+    "document": "Test Step: 1. 등록에 실패하도록 제어 \n\nTest Data: 등록 실패한 경우 \n1.\n>등록 중 스마트폰을 장치에서 제거\n>등록 중 장치에 X 버튼 선택\n>등록 중 장치 전원 재인가\n>등록 중 전화 수신\n\n※ 등록 중 다른 카드 입력\nExpected Result: 1. ToM Visual Face 등록 실패 화면이 출력된다.\n - 장치하단에 ToM Visual Face Enrollment Failed 노출\n\n2. AirPob APP에 ToM Visual Face 등록 실패 푸시 알림이 출력된다. \n\n※ 등록 중 다른 카드 입력 시 인증되지 않고 무시된다(무반응)",
+    "metadata": {
+      "issue_key": "COMMONR-303",
+      "step_index": "14",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-303_step_15",
+    "document": "Test Step: 1. 장치메뉴> EVENT LOG 확인\n\nExpected Result: 1. 이벤트 로그가 출력된다.\n  \n등록 성공한 경우\n-  ToM Visual Face Enrollment Succeeded\n\n  등록 실패한 경우\n- ToM Visual Face Enrollment Failed\n",
+    "metadata": {
+      "issue_key": "COMMONR-303",
+      "step_index": "15",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-303_step_16",
+    "document": "Test Step: [ToM 지원/미지원 장치에 따른 Visual Face등록]\n1. USER에서 ToM을 발급\n2. 발급받은 ToM을 장치에 인증\n\nTest Data: [이하 ToM Enrollment > Visual Face: 체크 상태] \nToM 지원 BS3(D)\n\nExpected Result: 1. ToM_AoC, SCC: Visual Face 등록 및 인증된다.\n",
+    "metadata": {
+      "issue_key": "COMMONR-303",
+      "step_index": "16",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-303_step_17",
+    "document": "Test Step: 1. USER에서 ToM을 발급\n2. 발급받은 ToM_Aoc를 Slave 장치에 인증\n\nTest Data: ToM 지원 BS3(M) - ToM 지원 BS3(S)\n\nExpected Result: 1. ToM_AoC, SCC: Visual Face 등록 및 인증된다.\n",
+    "metadata": {
+      "issue_key": "COMMONR-303",
+      "step_index": "17",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-303_step_18",
+    "document": "Test Step: 1. USER에서 ToM을 발급\n2. 발급받은 ToM_SCC를 Slave 장치에 인증\n\nTest Data: ToM 지원 BS3(M) - ToM 미지원 BS3(S)\n\nExpected Result: 1. 반응이 없다.\n",
+    "metadata": {
+      "issue_key": "COMMONR-303",
+      "step_index": "18",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-303_step_19",
+    "document": "Test Step: 1. USER에서 ToM을 발급\n2. 발급받은 ToM을 Slave 장치에 인증\n\nTest Data: ToM 미지원 BS3(M) - ToM 지원 BS3(S)\n\nExpected Result: 1. ToM_AOC/SCC 모두 인증실패로 동작된다.\n(등록할 때는 Master와 무관하게 Slave에서 등록옵션이 켜져있을 경우 등록가능)\n\n※BDP-559 1.4.2.2.1.2 내용 업데이트 완료(2023-08-21)",
+    "metadata": {
+      "issue_key": "COMMONR-303",
+      "step_index": "19",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-303_step_20",
+    "document": "Test Step: 1. USER에서 ToM을 발급\n2. 발급받은 ToM을 Slave 장치에 인증\n\nTest Data: OSDP 툴에 연결 후 SLAVE 인 장치\n\nExpected Result: 1. ToM_AOC: Visual Face 등록된다.\n2. ToM_SCC:  Visual Face 등록된다.",
+    "metadata": {
+      "issue_key": "COMMONR-303",
+      "step_index": "20",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-303_step_21",
+    "document": "Test Step: 1. USER에서 ToM을 발급\n2. 장치상세>Advanced>Wiegand> Output Mode: BYPASS 설정\n3. 발급받은 ToM을 Bypass 설정한 장치에 인증\n\nTest Data: BYPASS 설정된 장치\n\nExpected Result: 1. ToM_AoC, SCC: Visual Face 등록 및 인증실패된다.\n- Visual Face가 없을 경우: Visual Face등록 진행\n- Visual Face가 있을 경우: 인증 실패",
+    "metadata": {
+      "issue_key": "COMMONR-303",
+      "step_index": "21",
+      "source": "jira_test_step"
+    }
   }
-}
+]

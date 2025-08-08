@@ -1,0 +1,2125 @@
+{
+  "data": {
+    "edges": [
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "JiraIssuesFetcher",
+            "id": "CustomComponent-PKSzT",
+            "name": "issues_output",
+            "output_types": [
+              "Data"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input_data",
+            "id": "CustomComponent-pc2vj",
+            "inputTypes": [
+              "Data"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__CustomComponent-PKSzT{œdataTypeœ:œJiraIssuesFetcherœ,œidœ:œCustomComponent-PKSzTœ,œnameœ:œissues_outputœ,œoutput_typesœ:[œDataœ]}-CustomComponent-pc2vj{œfieldNameœ:œinput_dataœ,œidœ:œCustomComponent-pc2vjœ,œinputTypesœ:[œDataœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "CustomComponent-PKSzT",
+        "sourceHandle": "{œdataTypeœ:œJiraIssuesFetcherœ,œidœ:œCustomComponent-PKSzTœ,œnameœ:œissues_outputœ,œoutput_typesœ:[œDataœ]}",
+        "target": "CustomComponent-pc2vj",
+        "targetHandle": "{œfieldNameœ:œinput_dataœ,œidœ:œCustomComponent-pc2vjœ,œinputTypesœ:[œDataœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "LocalHuggingFaceEmbeddings",
+            "id": "CustomComponent-76e7k",
+            "name": "embeddings",
+            "output_types": [
+              "Embeddings"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "embedding",
+            "id": "Chroma-HoNIf",
+            "inputTypes": [
+              "Embeddings"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__CustomComponent-76e7k{œdataTypeœ:œLocalHuggingFaceEmbeddingsœ,œidœ:œCustomComponent-76e7kœ,œnameœ:œembeddingsœ,œoutput_typesœ:[œEmbeddingsœ]}-Chroma-HoNIf{œfieldNameœ:œembeddingœ,œidœ:œChroma-HoNIfœ,œinputTypesœ:[œEmbeddingsœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "CustomComponent-76e7k",
+        "sourceHandle": "{œdataTypeœ:œLocalHuggingFaceEmbeddingsœ,œidœ:œCustomComponent-76e7kœ,œnameœ:œembeddingsœ,œoutput_typesœ:[œEmbeddingsœ]}",
+        "target": "Chroma-HoNIf",
+        "targetHandle": "{œfieldNameœ:œembeddingœ,œidœ:œChroma-HoNIfœ,œinputTypesœ:[œEmbeddingsœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "JiraIssueToEmbeddingProcessor",
+            "id": "CustomComponent-W6Rpe",
+            "name": "data_output",
+            "output_types": [
+              "Data"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "ingest_data",
+            "id": "Chroma-HoNIf",
+            "inputTypes": [
+              "Data",
+              "DataFrame"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__CustomComponent-W6Rpe{œdataTypeœ:œJiraIssueToEmbeddingProcessorœ,œidœ:œCustomComponent-W6Rpeœ,œnameœ:œdata_outputœ,œoutput_typesœ:[œDataœ]}-Chroma-HoNIf{œfieldNameœ:œingest_dataœ,œidœ:œChroma-HoNIfœ,œinputTypesœ:[œDataœ,œDataFrameœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "CustomComponent-W6Rpe",
+        "sourceHandle": "{œdataTypeœ:œJiraIssueToEmbeddingProcessorœ,œidœ:œCustomComponent-W6Rpeœ,œnameœ:œdata_outputœ,œoutput_typesœ:[œDataœ]}",
+        "target": "Chroma-HoNIf",
+        "targetHandle": "{œfieldNameœ:œingest_dataœ,œidœ:œChroma-HoNIfœ,œinputTypesœ:[œDataœ,œDataFrameœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "LMStudioModel",
+            "id": "LMStudioModel-vbfji",
+            "name": "model_output",
+            "output_types": [
+              "LanguageModel"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "llm",
+            "id": "CustomComponent-NEnl4",
+            "inputTypes": [
+              "LanguageModel"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__LMStudioModel-vbfji{œdataTypeœ:œLMStudioModelœ,œidœ:œLMStudioModel-vbfjiœ,œnameœ:œmodel_outputœ,œoutput_typesœ:[œLanguageModelœ]}-CustomComponent-NEnl4{œfieldNameœ:œllmœ,œidœ:œCustomComponent-NEnl4œ,œinputTypesœ:[œLanguageModelœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "LMStudioModel-vbfji",
+        "sourceHandle": "{œdataTypeœ:œLMStudioModelœ,œidœ:œLMStudioModel-vbfjiœ,œnameœ:œmodel_outputœ,œoutput_typesœ:[œLanguageModelœ]}",
+        "target": "CustomComponent-NEnl4",
+        "targetHandle": "{œfieldNameœ:œllmœ,œidœ:œCustomComponent-NEnl4œ,œinputTypesœ:[œLanguageModelœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "LocalHuggingFaceEmbeddings",
+            "id": "CustomComponent-76e7k",
+            "name": "embeddings",
+            "output_types": [
+              "Embeddings"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "embedding",
+            "id": "CustomComponent-NEnl4",
+            "inputTypes": [
+              "Embeddings"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__CustomComponent-76e7k{œdataTypeœ:œLocalHuggingFaceEmbeddingsœ,œidœ:œCustomComponent-76e7kœ,œnameœ:œembeddingsœ,œoutput_typesœ:[œEmbeddingsœ]}-CustomComponent-NEnl4{œfieldNameœ:œembeddingœ,œidœ:œCustomComponent-NEnl4œ,œinputTypesœ:[œEmbeddingsœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "CustomComponent-76e7k",
+        "sourceHandle": "{œdataTypeœ:œLocalHuggingFaceEmbeddingsœ,œidœ:œCustomComponent-76e7kœ,œnameœ:œembeddingsœ,œoutput_typesœ:[œEmbeddingsœ]}",
+        "target": "CustomComponent-NEnl4",
+        "targetHandle": "{œfieldNameœ:œembeddingœ,œidœ:œCustomComponent-NEnl4œ,œinputTypesœ:[œEmbeddingsœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "SmartRetrievalQAChain",
+            "id": "CustomComponent-NEnl4",
+            "name": "answer",
+            "output_types": [
+              "Data"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input",
+            "id": "SaveToFile-4JRU3",
+            "inputTypes": [
+              "Data",
+              "DataFrame",
+              "Message"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__CustomComponent-NEnl4{œdataTypeœ:œSmartRetrievalQAChainœ,œidœ:œCustomComponent-NEnl4œ,œnameœ:œanswerœ,œoutput_typesœ:[œDataœ]}-SaveToFile-4JRU3{œfieldNameœ:œinputœ,œidœ:œSaveToFile-4JRU3œ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "CustomComponent-NEnl4",
+        "sourceHandle": "{œdataTypeœ:œSmartRetrievalQAChainœ,œidœ:œCustomComponent-NEnl4œ,œnameœ:œanswerœ,œoutput_typesœ:[œDataœ]}",
+        "target": "SaveToFile-4JRU3",
+        "targetHandle": "{œfieldNameœ:œinputœ,œidœ:œSaveToFile-4JRU3œ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "id": "note-WXRso",
+          "node": {
+            "description": "# ♾️ RAG Workflow\n```\n1. Jira to JSON\n```\n### 1. Jira에서 JSON을 파싱\n### 2. JSON에 대하여 열을 정제",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "neutral"
+            }
+          },
+          "type": "note"
+        },
+        "dragging": false,
+        "height": 419,
+        "id": "note-WXRso",
+        "measured": {
+          "height": 419,
+          "width": 572
+        },
+        "position": {
+          "x": -996.7606717375934,
+          "y": -98.71308728957048
+        },
+        "resizing": false,
+        "selected": false,
+        "type": "noteNode",
+        "width": 572
+      },
+      {
+        "data": {
+          "id": "note-xf06f",
+          "node": {
+            "description": "# ♾️ RAG Workflow\n\n```\n2. JSON 파일 > 임베딩 > 벡터 DB 저장\n```\n### 1. JSON 파일을 임베딩 모델에 임베딩\n### 2. 임베딩값 벡터 DB에 저장",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "neutral"
+            }
+          },
+          "type": "note"
+        },
+        "dragging": false,
+        "height": 448,
+        "id": "note-xf06f",
+        "measured": {
+          "height": 448,
+          "width": 496
+        },
+        "position": {
+          "x": -192.07813060914506,
+          "y": 286.293676276307
+        },
+        "resizing": false,
+        "selected": false,
+        "type": "noteNode",
+        "width": 496
+      },
+      {
+        "data": {
+          "id": "note-oFXcO",
+          "node": {
+            "description": "# ♾️ RAG Workflow\n\n```\n3. langchain을 이용한 RAG 연결\n```\n### 1. JSON 파일을 임베딩 모델에 임베딩\n### 2. JSON에 대하여 열을 정제",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "neutral"
+            }
+          },
+          "type": "note"
+        },
+        "dragging": false,
+        "id": "note-oFXcO",
+        "measured": {
+          "height": 324,
+          "width": 324
+        },
+        "position": {
+          "x": 987.0976605082395,
+          "y": 287.7542081852084
+        },
+        "selected": false,
+        "type": "noteNode"
+      },
+      {
+        "data": {
+          "id": "CustomComponent-PKSzT",
+          "node": {
+            "base_classes": [
+              "Data"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "JQL 쿼리를 사용하여 Jira에서 이슈를 검색하고 상세 정보를 가져옵니다.",
+            "display_name": "Jira 이슈 가져오기",
+            "documentation": "https://developer.atlassian.com/server/jira/platform/jira-rest-api-examples/",
+            "edited": true,
+            "field_order": [
+              "jira_url",
+              "username",
+              "password",
+              "jql_query",
+              "max_results_per_page"
+            ],
+            "frozen": false,
+            "icon": "Jira",
+            "legacy": false,
+            "lf_version": "1.5.0.post1",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "이슈 목록",
+                "group_outputs": false,
+                "hidden": null,
+                "method": "fetch_issues",
+                "name": "issues_output",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Data",
+                "tool_mode": true,
+                "types": [
+                  "Data"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "import requests\r\n\r\n# 사용자님의 LangFlow 템플릿에서 확인된 정확한 import 경로입니다.\r\nfrom langflow.custom.custom_component.component import Component\r\nfrom langflow.io import MessageTextInput, Output\r\nfrom langflow.schema.data import Data\r\n\r\nclass JiraIssuesFetcher(Component):\r\n    display_name = \"Jira 이슈 가져오기\"\r\n    description = \"JQL 쿼리를 사용하여 Jira에서 이슈를 검색하고 상세 정보를 가져옵니다.\"\r\n    documentation: str = \"https://developer.atlassian.com/server/jira/platform/jira-rest-api-examples/\"\r\n    icon = \"Jira\"\r\n    name = \"JiraIssuesFetcher\"\r\n\r\n    # password=True 인자를 제거하여 문제를 해결합니다.\r\n    inputs = [\r\n        MessageTextInput(name=\"jira_url\", display_name=\"Jira URL\", value=\"https://jira.suprema.co.kr\"),\r\n        MessageTextInput(name=\"username\", display_name=\"Jira 사용자 이름\", info=\"Jira 로그인 시 사용하는 아이디를 입력하세요.\"),\r\n        MessageTextInput(name=\"password\", display_name=\"Jira 비밀번호\", info=\"Jira 비밀번호 또는 API 토큰을 입력하세요.\"),\r\n        MessageTextInput(name=\"jql_query\", display_name=\"JQL 쿼리\", value='project = \"COMMONR\" AND issuetype = \"Test\"'),\r\n        MessageTextInput(name=\"max_results_per_page\", display_name=\"페이지당 최대 결과 수\", value=\"100\", info=\"API 요청 시 한 번에 가져올 이슈의 수입니다.\")\r\n    ]\r\n\r\n    outputs = [\r\n        Output(display_name=\"이슈 목록\", name=\"issues_output\", method=\"fetch_issues\")\r\n    ]\r\n\r\n    def _get_all_issue_keys(self, jira_url, auth, jql, max_results):\r\n        \"\"\"Helper method: JQL로 모든 이슈 키를 검색하여 리스트로 반환합니다.\"\"\"\r\n        all_issue_keys = []\r\n        start_at = 0\r\n        while True:\r\n            url = f\"{jira_url}/rest/api/2/search\"\r\n            headers = {\"Accept\": \"application/json\"}\r\n            params = {'jql': jql, 'fields': 'key', 'startAt': start_at, 'maxResults': max_results}\r\n            try:\r\n                response = requests.get(url, headers=headers, params=params, auth=auth)\r\n                response.raise_for_status()\r\n                data = response.json()\r\n                issues_on_page = data.get('issues', [])\r\n                if not issues_on_page: break\r\n                keys_on_page = [issue['key'] for issue in issues_on_page]\r\n                all_issue_keys.extend(keys_on_page)\r\n                total = data.get('total', 0)\r\n                self.status = f\"-> 이슈 키 수집 중... ({len(all_issue_keys)} / {total})\"\r\n                start_at += len(issues_on_page)\r\n                if start_at >= total: break\r\n            except requests.exceptions.RequestException as e:\r\n                raise ConnectionError(f\"Jira 이슈 검색 중 오류 발생: {e}\")\r\n        return all_issue_keys\r\n\r\n    def _get_issue_details(self, jira_url, auth, issue_key):\r\n        \"\"\"Helper method: 하나의 이슈 키에 대한 전체 정보를 JSON 형태로 가져옵니다.\"\"\"\r\n        url = f\"{jira_url}/rest/api/2/issue/{issue_key}\"\r\n        headers = {\"Accept\": \"application/json\"}\r\n        try:\r\n            response = requests.get(url, headers=headers, auth=auth)\r\n            response.raise_for_status()\r\n            return response.json()\r\n        except requests.exceptions.RequestException as e:\r\n            print(f\"경고: '{issue_key}' 정보 조회 중 오류 - {e}\")\r\n            return None\r\n\r\n    def fetch_issues(self) -> Data:\r\n        \"\"\"컴포넌트의 메인 실행 로직입니다.\"\"\"\r\n        jira_url, username, password, jql_query = self.jira_url, self.username, self.password, self.jql_query\r\n        \r\n        try:\r\n            max_results = int(self.max_results_per_page)\r\n        except (ValueError, TypeError):\r\n            self.status = \"오류: '페이지당 최대 결과 수'는 반드시 숫자여야 합니다.\"\r\n            # Pydantic 오류 수정을 위해 빈 딕셔너리를 반환합니다.\r\n            return Data(data={})\r\n\r\n        if not all([jira_url, username, password, jql_query]):\r\n            self.status = \"오류: 필수 입력값이 누락되었습니다.\"\r\n            # Pydantic 오류 수정을 위해 빈 딕셔너리를 반환합니다.\r\n            return Data(data={})\r\n            \r\n        auth = (username, password)\r\n        all_issue_details = []\r\n        try:\r\n            self.status = \"Jira에 연결하여 이슈 키 검색을 시작합니다...\"\r\n            issue_keys = self._get_all_issue_keys(jira_url, auth, jql_query, max_results)\r\n            if not issue_keys:\r\n                self.status = \"✅ JQL 검색 결과, 조회할 이슈가 없습니다.\"\r\n                # Pydantic 오류 수정을 위해 빈 딕셔너리를 반환합니다.\r\n                return Data(data={})\r\n\r\n            self.status = f\"총 {len(issue_keys)}개 이슈의 상세 정보 조회를 시작합니다.\"\r\n            total = len(issue_keys)\r\n            for i, key in enumerate(issue_keys):\r\n                self.status = f\"상세 정보 조회 중... [{i+1}/{total}] '{key}'\"\r\n                issue_data = self._get_issue_details(jira_url, auth, key)\r\n                if issue_data: all_issue_details.append(issue_data)\r\n            final_message = f\"✅ 작업 완료! 총 {len(all_issue_details)}개 이슈 정보를 성공적으로 가져왔습니다.\"\r\n            self.status = final_message\r\n            \r\n            # Pydantic 오류 수정을 위해 리스트를 딕셔너리로 감싸서 반환합니다.\r\n            return Data(data={\"issues\": all_issue_details}, text=final_message)\r\n            \r\n        except Exception as e:\r\n            self.status = f\"오류 발생: {str(e)}\"\r\n            # Pydantic 오류 수정을 위해 빈 딕셔너리를 반환합니다.\r\n            return Data(data={})\r\n"
+              },
+              "jira_url": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "Jira URL",
+                "dynamic": false,
+                "info": "",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "jira_url",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "https://jira.suprema.co.kr"
+              },
+              "jql_query": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "JQL 쿼리",
+                "dynamic": false,
+                "info": "",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "jql_query",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "project = \"COMMONR\" AND issuetype = \"Test\""
+              },
+              "max_results_per_page": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "페이지당 최대 결과 수",
+                "dynamic": false,
+                "info": "API 요청 시 한 번에 가져올 이슈의 수입니다.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "max_results_per_page",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "100"
+              },
+              "password": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "Jira 비밀번호",
+                "dynamic": false,
+                "info": "Jira 비밀번호 또는 API 토큰을 입력하세요.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "password",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "android0237@"
+              },
+              "username": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "Jira 사용자 이름",
+                "dynamic": false,
+                "info": "Jira 로그인 시 사용하는 아이디를 입력하세요.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "username",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "dhwoo"
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "JiraIssuesFetcher"
+        },
+        "dragging": false,
+        "id": "CustomComponent-PKSzT",
+        "measured": {
+          "height": 550,
+          "width": 320
+        },
+        "position": {
+          "x": -994.0207418572347,
+          "y": -696.2648490852246
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "note-b7Ybl",
+          "node": {
+            "description": "# Custom Component (~jira issue save with json)\n\n```\n1. Jira의 이슈를 가져오는 Component\n2. 해당 이슈를 json으로 저장하는 Component\n```",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "blue"
+            }
+          },
+          "type": "note"
+        },
+        "dragging": false,
+        "id": "note-b7Ybl",
+        "measured": {
+          "height": 324,
+          "width": 575
+        },
+        "position": {
+          "x": -990.4849720602504,
+          "y": -1054.1156849918093
+        },
+        "selected": false,
+        "type": "noteNode"
+      },
+      {
+        "data": {
+          "id": "CustomComponent-pc2vj",
+          "node": {
+            "base_classes": [
+              "Data"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Jira 이슈 데이터 목록을 issue_key를 파일명으로 하는 개별 JSON 파일들로 저장합니다.",
+            "display_name": "Jira 이슈 개별 파일로 저장",
+            "documentation": "이 컴포넌트는 'Jira 이슈 가져오기' 컴포넌트의 출력을 받아 로컬 파일 시스템에 저장합니다.",
+            "edited": true,
+            "field_order": [
+              "input_data"
+            ],
+            "frozen": false,
+            "icon": "save",
+            "legacy": false,
+            "lf_version": "1.5.0.post1",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "결과 메시지",
+                "group_outputs": false,
+                "hidden": null,
+                "method": "save_to_individual_files",
+                "name": "result_message",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Data",
+                "tool_mode": true,
+                "types": [
+                  "Data"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "import os\r\nimport json\r\nimport requests\r\n\r\n# SaveToFileComponent를 참조하여 HandleInput을 사용하도록 수정했습니다.\r\nfrom langflow.custom.custom_component.component import Component\r\nfrom langflow.io import HandleInput, StrInput, Output\r\nfrom langflow.schema.data import Data\r\n\r\nclass JiraIssueFileSaver(Component):\r\n    display_name = \"Jira 이슈 개별 파일로 저장\"\r\n    description = \"Jira 이슈 데이터 목록을 issue_key를 파일명으로 하는 개별 JSON 파일들로 저장합니다.\"\r\n    documentation: str = \"이 컴포넌트는 'Jira 이슈 가져오기' 컴포넌트의 출력을 받아 로컬 파일 시스템에 저장합니다.\"\r\n    icon = \"save\"\r\n    name = \"JiraIssueFileSaver\"\r\n\r\n    inputs = [\r\n        # HandleInput을 사용하여 'Data' 타입의 입력을 명시적으로 받습니다.\r\n        # 이제 다른 컴포넌트의 'Data' 출력과 정상적으로 연결됩니다.\r\n        HandleInput(\r\n            name=\"input_data\",\r\n            display_name=\"Jira 이슈 데이터\",\r\n            info=\"'Jira 이슈 가져오기'의 '이슈 목록' 출력을 여기에 연결하세요.\",\r\n            input_types=[\"Data\"],\r\n            required=True,\r\n        ),\r\n        # 개별 파일 저장이므로 파일 이름 입력은 더 이상 필요 없습니다.\r\n    ]\r\n\r\n    outputs = [\r\n        Output(display_name=\"결과 메시지\", name=\"result_message\", method=\"save_to_individual_files\")\r\n    ]\r\n\r\n    def save_to_individual_files(self) -> Data:\r\n        \"\"\"입력받은 Data 객체 안의 각 이슈를 개별 JSON 파일로 저장합니다.\"\"\"\r\n        self.status = \"개별 파일 저장 프로세스를 시작합니다...\"\r\n        input_data = self.input_data\r\n        output_folder = \"jira_issues_output\" # 저장 폴더는 내부적으로 고정\r\n\r\n        # --- 입력 데이터 유효성 검사 ---\r\n        if not isinstance(input_data, Data):\r\n            message = \"오류: 입력이 유효한 데이터 객체가 아닙니다. 이전 컴포넌트와 연결되었는지 확인하세요.\"\r\n            self.status = message\r\n            raise ValueError(message)\r\n\r\n        # Data 객체에서 'issues' 리스트를 추출합니다.\r\n        list_of_issues = input_data.data.get(\"issues\")\r\n        if not isinstance(list_of_issues, list):\r\n            message = \"오류: 입력 데이터에 'issues' 리스트가 없습니다. 'Jira 이슈 가져오기' 컴포넌트의 출력 형식과 다릅니다.\"\r\n            self.status = message\r\n            raise ValueError(message)\r\n\r\n        if not list_of_issues:\r\n            message = \"정보: 저장할 이슈가 없습니다.\"\r\n            self.status = message\r\n            return Data(data={\"status\": \"Complete\", \"saved_count\": 0, \"message\": message})\r\n\r\n        # --- 메인 실행 로직 ---\r\n        try:\r\n            # 폴더 생성\r\n            os.makedirs(output_folder, exist_ok=True)\r\n            abs_folder_path = os.path.abspath(output_folder)\r\n            self.status = f\"저장 폴더: '{abs_folder_path}'\"\r\n            \r\n            success_count = 0\r\n            total_count = len(list_of_issues)\r\n\r\n            # 각 이슈를 순회하며 개별 파일로 저장\r\n            for i, issue_data in enumerate(list_of_issues):\r\n                issue_key = issue_data.get(\"key\")\r\n                if not issue_key:\r\n                    print(f\"경고: {i+1}번째 이슈에 'key' 필드가 없어 건너뜁니다.\")\r\n                    continue\r\n\r\n                self.status = f\"저장 중... [{i+1}/{total_count}] '{issue_key}'\"\r\n                output_filepath = os.path.join(output_folder, f\"{issue_key}.json\")\r\n\r\n                try:\r\n                    with open(output_filepath, 'w', encoding='utf-8') as f:\r\n                        json.dump(issue_data, f, ensure_ascii=False, indent=2)\r\n                    success_count += 1\r\n                except Exception as file_error:\r\n                    print(f\"오류: '{issue_key}' 파일 저장 실패 - {file_error}\")\r\n\r\n            final_message = f\"✅ 모든 작업 완료! 총 {total_count}개 중 {success_count}개의 파일이 성공적으로 저장되었습니다.\"\r\n            self.status = final_message\r\n            \r\n            return Data(\r\n                data={\"status\": \"Complete\", \"saved_count\": success_count, \"total_count\": total_count, \"folder\": abs_folder_path},\r\n                text=final_message\r\n            )\r\n\r\n        except Exception as e:\r\n            error_message = f\"파일 저장 중 오류 발생: {e}\"\r\n            self.status = error_message\r\n            raise RuntimeError(error_message) from e\r\n"
+              },
+              "input_data": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "display_name": "Jira 이슈 데이터",
+                "dynamic": false,
+                "info": "'Jira 이슈 가져오기'의 '이슈 목록' 출력을 여기에 연결하세요.",
+                "input_types": [
+                  "Data"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "input_data",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "JiraIssueFileSaver"
+        },
+        "dragging": false,
+        "id": "CustomComponent-pc2vj",
+        "measured": {
+          "height": 181,
+          "width": 320
+        },
+        "position": {
+          "x": -615.8068752162562,
+          "y": -698.3137010307455
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "note-OK4nj",
+          "node": {
+            "description": "# Custom Component (~embedding)\n\n```\n1. Jira의 이슈를 하나씩 가져와서 필요한 json값만 가져와서 저장하는 컴포넌트\n2. 로컬 hugging face 생성하는 컴포넌트\n```",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "blue"
+            }
+          },
+          "type": "note"
+        },
+        "dragging": false,
+        "id": "note-OK4nj",
+        "measured": {
+          "height": 324,
+          "width": 563
+        },
+        "position": {
+          "x": -177.95871356166435,
+          "y": -1208.9337726760486
+        },
+        "selected": false,
+        "type": "noteNode"
+      },
+      {
+        "data": {
+          "id": "CustomComponent-W6Rpe",
+          "node": {
+            "base_classes": [
+              "Data"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "폴더의 Jira 이슈 파일들을 읽어 Chroma DB에 저장하기 적합한 Data 객체 리스트를 생성합니다.",
+            "display_name": "Jira 이슈 임베딩 데이터 생성",
+            "documentation": "이 컴포넌트는 JSON 파일들을 읽어 HuggingFace 임베딩 및 ChromaDB 저장에 적합한 형태로 데이터를 가공합니다.",
+            "edited": true,
+            "field_order": [
+              "input_folder",
+              "target_issue_key"
+            ],
+            "frozen": false,
+            "icon": "HuggingFace",
+            "legacy": false,
+            "lf_version": "1.5.0.post1",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Data",
+                "group_outputs": false,
+                "hidden": null,
+                "method": "build_data_list_output",
+                "name": "data_output",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Data",
+                "tool_mode": true,
+                "types": [
+                  "Data"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "import os\r\nimport json\r\nimport requests\r\nimport re\r\nfrom typing import List\r\n\r\n# 필요한 클래스들을 import합니다.\r\nfrom langflow.custom.custom_component.component import Component\r\nfrom langflow.io import StrInput, Output\r\n# Chroma DB 컴포넌트가 요구하는 Data 객체를 사용합니다.\r\nfrom langflow.schema.data import Data\r\n\r\nclass JiraIssueToEmbeddingProcessor(Component):\r\n    display_name = \"Jira 이슈 임베딩 데이터 생성\"\r\n    description = \"폴더의 Jira 이슈 파일들을 읽어 Chroma DB에 저장하기 적합한 Data 객체 리스트를 생성합니다.\"\r\n    documentation: str = \"이 컴포넌트는 JSON 파일들을 읽어 HuggingFace 임베딩 및 ChromaDB 저장에 적합한 형태로 데이터를 가공합니다.\"\r\n    icon = \"HuggingFace\"\r\n    name = \"JiraIssueToEmbeddingProcessor\"\r\n\r\n    inputs = [\r\n        StrInput(\r\n            name=\"input_folder\",\r\n            display_name=\"입력 폴더 경로\",\r\n            info=\"Jira 이슈 JSON 파일들이 저장된 폴더입니다.\",\r\n            value=\"jira_issues_output\",\r\n        ),\r\n        StrInput(\r\n            name=\"target_issue_key\",\r\n            display_name=\"특정 이슈 키 조회\",\r\n            info=\"내용을 확인하고 싶은 특정 이슈 키를 입력하세요. (예: COMMONR-123)\",\r\n            value=\"\",\r\n            required=False,\r\n        )\r\n    ]\r\n\r\n    outputs = [\r\n        Output(display_name=\"Data\", name=\"data_output\", method=\"build_data_list_output\")\r\n    ]\r\n\r\n    def _clean_text(self, text: str) -> str:\r\n        \"\"\"Jira 서식, 불필요한 공백 등을 제거하여 텍스트를 정제하는 헬퍼 함수입니다.\"\"\"\r\n        if not text or not isinstance(text, str):\r\n            return \"\"\r\n        text = re.sub(r'\\{code.*?\\}.*?\\{code\\}', ' ', text, flags=re.DOTALL)\r\n        text = re.sub(r'\\{noformat.*?\\}.*?\\{noformat\\}', ' ', text, flags=re.DOTALL)\r\n        text = re.sub(r'[\\*_~\\^\\+-]', '', text)\r\n        text = re.sub(r'\\{panel:.*?\\}', '', text)\r\n        text = re.sub(r'\\{color:.*?\\}', '', text)\r\n        text = re.sub(r'\\s+', ' ', text).strip()\r\n        return text\r\n\r\n    def build_data_list_output(self) -> List[Data]:\r\n        \"\"\"파일을 읽고 데이터를 처리하여 Data 객체 리스트를 반환하며, 특정 이슈 조회를 상태 메시지로 표시합니다.\"\"\"\r\n        self.status = \"데이터 처리를 시작합니다...\"\r\n        folder_path = self.input_folder\r\n        target_key = self.target_issue_key.strip()\r\n\r\n        if not os.path.isdir(folder_path):\r\n            message = f\"오류: '{folder_path}' 폴더를 찾을 수 없습니다.\"\r\n            self.status = message\r\n            raise ValueError(message)\r\n\r\n        json_files = [f for f in os.listdir(folder_path) if f.endswith('.json')]\r\n        \r\n        if not json_files:\r\n            message = f\"정보: '{folder_path}' 폴더에 처리할 JSON 파일이 없습니다.\"\r\n            self.status = message\r\n            return []\r\n\r\n        all_data_objects = []\r\n        total_files = len(json_files)\r\n        \r\n        for i, file_name in enumerate(json_files):\r\n            file_path = os.path.join(folder_path, file_name)\r\n            self.status = f\"파일 처리 중... [{i+1}/{total_files}] '{file_name}'\"\r\n\r\n            try:\r\n                with open(file_path, 'r', encoding='utf-8') as f:\r\n                    issue_data = json.load(f)\r\n                \r\n                fields = issue_data.get(\"fields\", {})\r\n                issue_key = issue_data.get('key', '')\r\n                description = self._clean_text(fields.get('description', ''))\r\n                custom_field_10004 = fields.get('customfield_10004', {})\r\n                steps_list = custom_field_10004.get('steps', [])\r\n                related_issues = [link.get(\"outwardIssue\", {}).get(\"key\") for link in fields.get(\"issuelinks\", []) if link.get(\"outwardIssue\")]\r\n                created_date_full = fields.get(\"created\", \"N/A\")\r\n                created_date_formatted = created_date_full.split('T')[0] if 'T' in created_date_full else created_date_full\r\n\r\n                if isinstance(steps_list, list):\r\n                    for item in steps_list:\r\n                        if isinstance(item, dict):\r\n                            step_index = item.get('index', '')\r\n                            step_content = self._clean_text(item.get('step', ''))\r\n                            step_data = self._clean_text(item.get('data', ''))\r\n                            step_result = self._clean_text(item.get('result', ''))\r\n\r\n                            page_content = (\r\n                                f\"Description: {description} \"\r\n                                f\"Test Step: {step_content} \"\r\n                                f\"Data: {step_data} \"\r\n                                f\"Expected Result: {step_result}\"\r\n                            ).strip()\r\n\r\n                            metadata = {\r\n                                \"issue_key\": issue_key,\r\n                                \"step_index\": step_index,\r\n                                \"related_issue\": \", \".join(related_issues) if related_issues else \"None\",\r\n                                \"created_date\": created_date_formatted,\r\n                                \"source\": file_name,\r\n                            }\r\n                            \r\n                            # 샘플 생성기에서 성공했던 방식으로 Data 객체를 생성합니다.\r\n                            # 텍스트와 메타데이터를 하나의 딕셔너리로 합칩니다.\r\n                            flat_data = {\"text\": page_content}\r\n                            flat_data.update(metadata)\r\n                            \r\n                            # data 인자에 모든 정보를 포함하여 Data 객체를 생성합니다.\r\n                            data_object = Data(data=flat_data)\r\n                            all_data_objects.append(data_object)\r\n\r\n            except Exception as e:\r\n                print(f\"오류: '{file_name}' 처리 중 문제 발생 - {e}\")\r\n\r\n        final_message = f\"✅ 모든 작업 완료! 총 {len(all_data_objects)}개의 Data 객체를 생성했습니다.\"\r\n        \r\n        if target_key:\r\n            found_data_str = \"\"\r\n            for data_obj in all_data_objects:\r\n                # 수정된 구조에 맞게 조회 로직을 변경합니다.\r\n                if data_obj.data.get(\"issue_key\") == target_key:\r\n                    page_content = data_obj.data.get(\"text\", \"\")\r\n                    # 메타데이터는 data 딕셔너리에서 text를 제외한 나머지입니다.\r\n                    metadata = {k: v for k, v in data_obj.data.items() if k != 'text'}\r\n                    found_data_str += (\r\n                        f\"\\n\\n--- [ {target_key} | Step: {metadata.get('step_index', '')} ] Inspected Data ---\\n\"\r\n                        f\"■ Content to be Embedded:\\n{page_content}\\n\"\r\n                        f\"■ Metadata:\\n{json.dumps(metadata, indent=2, ensure_ascii=False)}\"\r\n                    )\r\n            \r\n            if found_data_str:\r\n                self.status = final_message + found_data_str\r\n            else:\r\n                self.status = final_message + f\"\\n\\n'{target_key}'에 해당하는 이슈를 찾을 수 없습니다.\"\r\n        else:\r\n            self.status = final_message\r\n        \r\n        return all_data_objects\r\n"
+              },
+              "input_folder": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "입력 폴더 경로",
+                "dynamic": false,
+                "info": "Jira 이슈 JSON 파일들이 저장된 폴더입니다.",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "input_folder",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "jira_issues_output"
+              },
+              "target_issue_key": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "특정 이슈 키 조회",
+                "dynamic": false,
+                "info": "내용을 확인하고 싶은 특정 이슈 키를 입력하세요. (예: COMMONR-123)",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "target_issue_key",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "COMMONR-379"
+              }
+            },
+            "tool_mode": false
+          },
+          "selected_output": "all_data",
+          "showNode": true,
+          "type": "JiraIssueToEmbeddingProcessor"
+        },
+        "dragging": false,
+        "id": "CustomComponent-W6Rpe",
+        "measured": {
+          "height": 302,
+          "width": 320
+        },
+        "position": {
+          "x": -132.38553906406162,
+          "y": -691.7485998697576
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "CustomComponent-D0qOq",
+          "node": {
+            "base_classes": [
+              "Text"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "입력된 데이터의 실제 타입을 확인합니다.",
+            "display_name": "타입 검사기",
+            "documentation": "",
+            "edited": true,
+            "field_order": [
+              "input_value"
+            ],
+            "frozen": false,
+            "icon": "search",
+            "legacy": false,
+            "lf_version": "1.5.0.post1",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "검사 결과",
+                "group_outputs": false,
+                "hidden": null,
+                "method": "inspect_type",
+                "name": "result",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Text",
+                "tool_mode": true,
+                "types": [
+                  "Text"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from typing import Any, List\r\nfrom langflow.custom.custom_component.component import Component\r\nfrom langflow.io import HandleInput, Output\r\nfrom langflow.schema.data import Data\r\n\r\nclass TypeInspector(Component):\r\n    display_name = \"타입 검사기\"\r\n    description = \"입력된 데이터의 실제 타입을 확인합니다.\"\r\n    icon = \"search\"\r\n    name = \"TypeInspector\"\r\n\r\n    inputs = [\r\n        HandleInput(\r\n            name=\"input_value\",\r\n            display_name=\"검사할 데이터\",\r\n            info=\"타입을 확인할 데이터를 여기에 연결하세요.\",\r\n            input_types=[\"Data\", \"str\", \"int\", \"float\", \"list\", \"dict\"]\r\n        )\r\n    ]\r\n    outputs = [\r\n        Output(display_name=\"검사 결과\", name=\"result\", method=\"inspect_type\")\r\n    ]\r\n\r\n    def inspect_type(self) -> str:\r\n        \"\"\"입력 데이터의 타입을 검사하여 상태 메시지로 보여줍니다.\"\"\"\r\n        data = self.input_value\r\n        \r\n        # 1. 전체 데이터의 타입 확인\r\n        result_str = f\"전체 데이터 타입: {type(data)}\\n\\n\"\r\n        \r\n        # 2. 데이터가 리스트인 경우, 내부 항목까지 검사\r\n        if isinstance(data, list):\r\n            if not data:\r\n                result_str += \"내용: 비어있는 리스트입니다.\"\r\n            else:\r\n                # 리스트의 첫 번째 항목 타입을 확인\r\n                first_item = data[0]\r\n                result_str += f\"리스트의 첫 번째 항목 타입: {type(first_item)}\\n\"\r\n                \r\n                # 첫 번째 항목이 Data 객체인지 명확히 확인\r\n                if isinstance(first_item, Data):\r\n                    result_str += \"✅ Chroma DB가 요구하는 'Data 객체 리스트' 형식이 맞습니다!\"\r\n                else:\r\n                    result_str += \"❌ 오류: 리스트의 내용물이 'Data' 객체가 아닙니다.\"\r\n        else:\r\n            result_str += \"❌ 오류: Chroma DB가 요구하는 리스트 형식이 아닙니다.\"\r\n\r\n        self.status = result_str\r\n        return result_str"
+              },
+              "input_value": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "display_name": "검사할 데이터",
+                "dynamic": false,
+                "info": "타입을 확인할 데이터를 여기에 연결하세요.",
+                "input_types": [
+                  "Data",
+                  "str",
+                  "int",
+                  "float",
+                  "list",
+                  "dict"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "input_value",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "TypeInspector"
+        },
+        "dragging": false,
+        "id": "CustomComponent-D0qOq",
+        "measured": {
+          "height": 165,
+          "width": 320
+        },
+        "position": {
+          "x": -1461.2154557376039,
+          "y": -1091.1821042166061
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "CustomComponent-RNC53",
+          "node": {
+            "base_classes": [
+              "Data"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Chroma DB 테스트를 위한 가장 단순하고 안전한 샘플 데이터를 생성합니다.",
+            "display_name": "안전한 샘플 데이터 생성기",
+            "documentation": "",
+            "edited": true,
+            "field_order": [],
+            "frozen": false,
+            "icon": "database",
+            "legacy": false,
+            "lf_version": "1.5.0.post1",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Safe Sample Data",
+                "group_outputs": false,
+                "hidden": null,
+                "method": "generate_safe_sample_data",
+                "name": "safe_sample_data",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Data",
+                "tool_mode": true,
+                "types": [
+                  "Data"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from typing import List\r\n\r\n# 사용자님의 환경에서 확인된 정확한 import 경로를 사용합니다.\r\nfrom langflow.custom.custom_component.component import Component\r\nfrom langflow.io import Output\r\nfrom langflow.schema.data import Data\r\n\r\nclass SafeSampleDataGenerator(Component):\r\n    display_name = \"안전한 샘플 데이터 생성기\"\r\n    description = \"Chroma DB 테스트를 위한 가장 단순하고 안전한 샘플 데이터를 생성합니다.\"\r\n    icon = \"database\"\r\n    name = \"SafeSampleDataGenerator\"\r\n\r\n    # 이 컴포넌트는 입력이 필요 없습니다.\r\n    inputs = []\r\n\r\n    outputs = [\r\n        Output(display_name=\"Safe Sample Data\", name=\"safe_sample_data\", method=\"generate_safe_sample_data\")\r\n    ]\r\n\r\n    def generate_safe_sample_data(self) -> List[Data]:\r\n        \"\"\"\r\n        가장 단순하고 안전한 형태의 Data 객체 리스트를 생성합니다.\r\n        모든 메타데이터 값은 문자열(string)로만 구성됩니다.\r\n        \"\"\"\r\n        self.status = \"안전한 샘플 데이터를 생성합니다...\"\r\n        \r\n        sample_records = [\r\n            {\r\n                \"text\": \"This is the first document about Chroma DB.\",\r\n                \"metadata\": {\r\n                    \"source\": \"sample-1\",\r\n                    \"category\": \"tech\"\r\n                }\r\n            },\r\n            {\r\n                \"text\": \"The second document is about Langflow components.\",\r\n                \"metadata\": {\r\n                    \"source\": \"sample-2\",\r\n                    \"category\": \"ai\"\r\n                }\r\n            }\r\n        ]\r\n        \r\n        data_list = []\r\n        for record in sample_records:\r\n            # 텍스트와 메타데이터를 하나의 딕셔너리로 합칩니다.\r\n            # Data 객체의 to_lc_document() 메서드가 'text' 키를 page_content로,\r\n            # 나머지를 metadata로 처리하는 표준적인 방식을 따릅니다.\r\n            flat_data = {\"text\": record[\"text\"]}\r\n            flat_data.update(record[\"metadata\"])\r\n            \r\n            # data 인자에 모든 정보를 포함하여 Data 객체를 생성합니다.\r\n            data_object = Data(data=flat_data)\r\n            data_list.append(data_object)\r\n            \r\n        self.status = f\"✅ {len(data_list)}개의 안전한 샘플 Data 객체를 생성했습니다.\"\r\n        return data_list\r\n"
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "SafeSampleDataGenerator"
+        },
+        "dragging": false,
+        "id": "CustomComponent-RNC53",
+        "measured": {
+          "height": 136,
+          "width": 320
+        },
+        "position": {
+          "x": -1459.2972103602156,
+          "y": -887.4565430159798
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "Chroma-HoNIf",
+          "node": {
+            "base_classes": [
+              "Data",
+              "DataFrame"
+            ],
+            "beta": false,
+            "category": "vectorstores",
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Chroma Vector Store with search capabilities",
+            "display_name": "Chroma DB",
+            "documentation": "",
+            "edited": false,
+            "field_order": [
+              "collection_name",
+              "persist_directory",
+              "ingest_data",
+              "search_query",
+              "should_cache_vector_store",
+              "embedding",
+              "chroma_server_cors_allow_origins",
+              "chroma_server_host",
+              "chroma_server_http_port",
+              "chroma_server_grpc_port",
+              "chroma_server_ssl_enabled",
+              "allow_duplicates",
+              "search_type",
+              "number_of_results",
+              "limit"
+            ],
+            "frozen": false,
+            "icon": "Chroma",
+            "key": "Chroma",
+            "legacy": false,
+            "lf_version": "1.5.0.post1",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Search Results",
+                "group_outputs": false,
+                "method": "search_documents",
+                "name": "search_results",
+                "tool_mode": true,
+                "types": [
+                  "Data"
+                ],
+                "value": "__UNDEFINED__"
+              },
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "DataFrame",
+                "group_outputs": false,
+                "method": "as_dataframe",
+                "name": "dataframe",
+                "selected": "DataFrame",
+                "tool_mode": true,
+                "types": [
+                  "DataFrame"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "score": 0.0004518559443749226,
+            "template": {
+              "_type": "Component",
+              "allow_duplicates": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Allow Duplicates",
+                "dynamic": false,
+                "info": "If false, will not add documents that are already in the Vector Store.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "allow_duplicates",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": false
+              },
+              "chroma_server_cors_allow_origins": {
+                "_input_type": "StrInput",
+                "advanced": true,
+                "display_name": "Server CORS Allow Origins",
+                "dynamic": false,
+                "info": "",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "chroma_server_cors_allow_origins",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "chroma_server_grpc_port": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Server gRPC Port",
+                "dynamic": false,
+                "info": "",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "chroma_server_grpc_port",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": ""
+              },
+              "chroma_server_host": {
+                "_input_type": "StrInput",
+                "advanced": true,
+                "display_name": "Server Host",
+                "dynamic": false,
+                "info": "",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "chroma_server_host",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "chroma_server_http_port": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Server HTTP Port",
+                "dynamic": false,
+                "info": "",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "chroma_server_http_port",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": ""
+              },
+              "chroma_server_ssl_enabled": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Server SSL Enabled",
+                "dynamic": false,
+                "info": "",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "chroma_server_ssl_enabled",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": false
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from copy import deepcopy\nfrom typing import TYPE_CHECKING\n\nfrom chromadb.config import Settings\nfrom langchain_chroma import Chroma\nfrom typing_extensions import override\n\nfrom langflow.base.vectorstores.model import LCVectorStoreComponent, check_cached_vector_store\nfrom langflow.base.vectorstores.utils import chroma_collection_to_data\nfrom langflow.inputs.inputs import BoolInput, DropdownInput, HandleInput, IntInput, StrInput\nfrom langflow.schema.data import Data\n\nif TYPE_CHECKING:\n    from langflow.schema.dataframe import DataFrame\n\n\nclass ChromaVectorStoreComponent(LCVectorStoreComponent):\n    \"\"\"Chroma Vector Store with search capabilities.\"\"\"\n\n    display_name: str = \"Chroma DB\"\n    description: str = \"Chroma Vector Store with search capabilities\"\n    name = \"Chroma\"\n    icon = \"Chroma\"\n\n    inputs = [\n        StrInput(\n            name=\"collection_name\",\n            display_name=\"Collection Name\",\n            value=\"langflow\",\n        ),\n        StrInput(\n            name=\"persist_directory\",\n            display_name=\"Persist Directory\",\n        ),\n        *LCVectorStoreComponent.inputs,\n        HandleInput(name=\"embedding\", display_name=\"Embedding\", input_types=[\"Embeddings\"]),\n        StrInput(\n            name=\"chroma_server_cors_allow_origins\",\n            display_name=\"Server CORS Allow Origins\",\n            advanced=True,\n        ),\n        StrInput(\n            name=\"chroma_server_host\",\n            display_name=\"Server Host\",\n            advanced=True,\n        ),\n        IntInput(\n            name=\"chroma_server_http_port\",\n            display_name=\"Server HTTP Port\",\n            advanced=True,\n        ),\n        IntInput(\n            name=\"chroma_server_grpc_port\",\n            display_name=\"Server gRPC Port\",\n            advanced=True,\n        ),\n        BoolInput(\n            name=\"chroma_server_ssl_enabled\",\n            display_name=\"Server SSL Enabled\",\n            advanced=True,\n        ),\n        BoolInput(\n            name=\"allow_duplicates\",\n            display_name=\"Allow Duplicates\",\n            advanced=True,\n            info=\"If false, will not add documents that are already in the Vector Store.\",\n        ),\n        DropdownInput(\n            name=\"search_type\",\n            display_name=\"Search Type\",\n            options=[\"Similarity\", \"MMR\"],\n            value=\"Similarity\",\n            advanced=True,\n        ),\n        IntInput(\n            name=\"number_of_results\",\n            display_name=\"Number of Results\",\n            info=\"Number of results to return.\",\n            advanced=True,\n            value=10,\n        ),\n        IntInput(\n            name=\"limit\",\n            display_name=\"Limit\",\n            advanced=True,\n            info=\"Limit the number of records to compare when Allow Duplicates is False.\",\n        ),\n    ]\n\n    @override\n    @check_cached_vector_store\n    def build_vector_store(self) -> Chroma:\n        \"\"\"Builds the Chroma object.\"\"\"\n        try:\n            from chromadb import Client\n            from langchain_chroma import Chroma\n        except ImportError as e:\n            msg = \"Could not import Chroma integration package. Please install it with `pip install langchain-chroma`.\"\n            raise ImportError(msg) from e\n        # Chroma settings\n        chroma_settings = None\n        client = None\n        if self.chroma_server_host:\n            chroma_settings = Settings(\n                chroma_server_cors_allow_origins=self.chroma_server_cors_allow_origins or [],\n                chroma_server_host=self.chroma_server_host,\n                chroma_server_http_port=self.chroma_server_http_port or None,\n                chroma_server_grpc_port=self.chroma_server_grpc_port or None,\n                chroma_server_ssl_enabled=self.chroma_server_ssl_enabled,\n            )\n            client = Client(settings=chroma_settings)\n\n        # Check persist_directory and expand it if it is a relative path\n        persist_directory = self.resolve_path(self.persist_directory) if self.persist_directory is not None else None\n\n        chroma = Chroma(\n            persist_directory=persist_directory,\n            client=client,\n            embedding_function=self.embedding,\n            collection_name=self.collection_name,\n        )\n\n        self._add_documents_to_vector_store(chroma)\n        self.status = chroma_collection_to_data(chroma.get(limit=self.limit))\n        return chroma\n\n    def _add_documents_to_vector_store(self, vector_store: \"Chroma\") -> None:\n        \"\"\"Adds documents to the Vector Store.\"\"\"\n        ingest_data: list | Data | DataFrame = self.ingest_data\n        if not ingest_data:\n            self.status = \"\"\n            return\n\n        # Convert DataFrame to Data if needed using parent's method\n        ingest_data = self._prepare_ingest_data()\n\n        stored_documents_without_id = []\n        if self.allow_duplicates:\n            stored_data = []\n        else:\n            stored_data = chroma_collection_to_data(vector_store.get(limit=self.limit))\n            for value in deepcopy(stored_data):\n                del value.id\n                stored_documents_without_id.append(value)\n\n        documents = []\n        for _input in ingest_data or []:\n            if isinstance(_input, Data):\n                if _input not in stored_documents_without_id:\n                    documents.append(_input.to_lc_document())\n            else:\n                msg = \"Vector Store Inputs must be Data objects.\"\n                raise TypeError(msg)\n\n        if documents and self.embedding is not None:\n            self.log(f\"Adding {len(documents)} documents to the Vector Store.\")\n            vector_store.add_documents(documents)\n        else:\n            self.log(\"No documents to add to the Vector Store.\")\n"
+              },
+              "collection_name": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "Collection Name",
+                "dynamic": false,
+                "info": "",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "collection_name",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "langflow"
+              },
+              "embedding": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "display_name": "Embedding",
+                "dynamic": false,
+                "info": "",
+                "input_types": [
+                  "Embeddings"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "embedding",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "ingest_data": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "display_name": "Ingest Data",
+                "dynamic": false,
+                "info": "",
+                "input_types": [
+                  "Data",
+                  "DataFrame"
+                ],
+                "list": true,
+                "list_add_label": "Add More",
+                "name": "ingest_data",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "limit": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Limit",
+                "dynamic": false,
+                "info": "Limit the number of records to compare when Allow Duplicates is False.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "limit",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": ""
+              },
+              "number_of_results": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Number of Results",
+                "dynamic": false,
+                "info": "Number of results to return.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "number_of_results",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 10
+              },
+              "persist_directory": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "Persist Directory",
+                "dynamic": false,
+                "info": "",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "persist_directory",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "chroma_db"
+              },
+              "search_query": {
+                "_input_type": "QueryInput",
+                "advanced": true,
+                "display_name": "Search Query",
+                "dynamic": false,
+                "info": "Enter a query to run a similarity search.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "search_query",
+                "placeholder": "Enter a query...",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "query",
+                "value": "data"
+              },
+              "search_type": {
+                "_input_type": "DropdownInput",
+                "advanced": true,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Search Type",
+                "dynamic": false,
+                "info": "",
+                "name": "search_type",
+                "options": [
+                  "Similarity",
+                  "MMR"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "Similarity"
+              },
+              "should_cache_vector_store": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Cache Vector Store",
+                "dynamic": false,
+                "info": "If True, the vector store will be cached for the current build of the component. This is useful for components that have multiple output methods and want to share the same vector store.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "should_cache_vector_store",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              }
+            },
+            "tool_mode": false
+          },
+          "selected_output": "dataframe",
+          "showNode": true,
+          "type": "Chroma"
+        },
+        "dragging": false,
+        "id": "Chroma-HoNIf",
+        "measured": {
+          "height": 376,
+          "width": 320
+        },
+        "position": {
+          "x": 541.1563579074171,
+          "y": -139.68390277540072
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "CustomComponent-76e7k",
+          "node": {
+            "base_classes": [
+              "Embeddings"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Sentence-Transformers를 사용하여 HuggingFace 임베딩 모델을 로컬에서 실행합니다.",
+            "display_name": "Local HuggingFace Embeddings",
+            "documentation": "https://www.sbert.net/docs/pretrained_models.html",
+            "edited": true,
+            "field_order": [
+              "model_name"
+            ],
+            "frozen": false,
+            "icon": "HuggingFace",
+            "legacy": false,
+            "lf_version": "1.5.0.post1",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Embeddings",
+                "group_outputs": false,
+                "hidden": null,
+                "method": "build_embeddings",
+                "name": "embeddings",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Embeddings",
+                "tool_mode": true,
+                "types": [
+                  "Embeddings"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from typing import Any\r\n# sentence-transformers 라이브러리가 필요합니다: pip install sentence-transformers\r\n# langchain-community 라이브러리가 필요합니다: pip install langchain-community\r\nfrom langchain_community.embeddings import HuggingFaceEmbeddings\r\n\r\n# 사용자님의 환경에서 확인된 정확한 import 경로를 사용합니다.\r\nfrom langflow.custom.custom_component.component import Component\r\nfrom langflow.io import StrInput, Output\r\nfrom langflow.field_typing import Embeddings\r\n\r\nclass LocalHuggingFaceEmbeddingsComponent(Component):\r\n    display_name = \"Local HuggingFace Embeddings\"\r\n    description = \"Sentence-Transformers를 사용하여 HuggingFace 임베딩 모델을 로컬에서 실행합니다.\"\r\n    documentation: str = \"https://www.sbert.net/docs/pretrained_models.html\"\r\n    icon = \"HuggingFace\"\r\n    name = \"LocalHuggingFaceEmbeddings\"\r\n\r\n    inputs = [\r\n        StrInput(\r\n            name=\"model_name\",\r\n            display_name=\"Model Name\",\r\n            info=\"사용할 Sentence-Transformers 모델의 이름입니다.\",\r\n            value=\"intfloat/multilingual-e5-large-instruct\"\r\n        ),\r\n    ]\r\n\r\n    outputs = [\r\n        Output(display_name=\"Embeddings\", name=\"embeddings\", method=\"build_embeddings\")\r\n    ]\r\n\r\n    def build_embeddings(self) -> Embeddings:\r\n        \"\"\"HuggingFaceEmbeddings 객체를 생성합니다.\"\"\"\r\n        model_name = self.model_name\r\n        \r\n        self.status = f\"'{model_name}' 모델을 로딩합니다... 처음 실행 시에는 시간이 걸릴 수 있습니다.\"\r\n        \r\n        try:\r\n            # LangChain의 HuggingFaceEmbeddings 클래스를 사용하여 로컬 모델을 로드합니다.\r\n            # 이 클래스는 내부적으로 sentence-transformers 라이브러리를 사용합니다.\r\n            embeddings = HuggingFaceEmbeddings(model_name=model_name)\r\n            self.status = \"모델이 성공적으로 로드되었습니다.\"\r\n            return embeddings\r\n        except Exception as e:\r\n            error_message = f\"모델 로딩 중 오류 발생: {e}. 'sentence-transformers'와 'torch'가 설치되었는지 확인하세요.\"\r\n            self.status = error_message\r\n            raise ValueError(error_message)\r\n\r\n"
+              },
+              "model_name": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "Model Name",
+                "dynamic": false,
+                "info": "사용할 Sentence-Transformers 모델의 이름입니다.",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "model_name",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "intfloat/multilingual-e5-large-instruct"
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "LocalHuggingFaceEmbeddings"
+        },
+        "dragging": false,
+        "id": "CustomComponent-76e7k",
+        "measured": {
+          "height": 219,
+          "width": 320
+        },
+        "position": {
+          "x": -141.40603427669316,
+          "y": -309.4451563636985
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "CustomComponent-NEnl4",
+          "node": {
+            "base_classes": [
+              "Data"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "벡터 DB 존재 여부를 자동 감지하여 RetrievalQA 체인을 실행합니다.",
+            "display_name": "Smart RetrievalQA Chain",
+            "documentation": "https://python.langchain.com/docs/modules/chains/popular/vector_db_qa/",
+            "edited": true,
+            "field_order": [
+              "llm",
+              "embedding",
+              "collection_name",
+              "persist_directory",
+              "auto_detect",
+              "input_value"
+            ],
+            "frozen": false,
+            "icon": "chain",
+            "legacy": false,
+            "lf_version": "1.5.0.post1",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Answer",
+                "group_outputs": false,
+                "hidden": null,
+                "method": "run_chain",
+                "name": "answer",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Data",
+                "tool_mode": true,
+                "types": [
+                  "Data"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "auto_detect": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Auto Detect Vector DB",
+                "dynamic": false,
+                "info": "벡터 DB 존재 여부를 자동으로 감지합니다.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "auto_detect",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "import os\r\nfrom typing import Any, Optional\r\n# langchain 라이브러리가 필요합니다: pip install langchain\r\nfrom langchain.chains import RetrievalQA\r\nfrom langchain_chroma import Chroma\r\n# 사용자님의 환경에서 확인된 정확한 import 경로를 사용합니다.\r\nfrom langflow.custom.custom_component.component import Component\r\nfrom langflow.io import HandleInput, StrInput, Output, BoolInput\r\nfrom langflow.schema.data import Data\r\n\r\nclass SmartRetrievalQAComponent(Component):\r\n    display_name = \"Smart RetrievalQA Chain\"\r\n    description = \"벡터 DB 존재 여부를 자동 감지하여 RetrievalQA 체인을 실행합니다.\"\r\n    documentation: str = \"https://python.langchain.com/docs/modules/chains/popular/vector_db_qa/\"\r\n    icon = \"chain\"\r\n    name = \"SmartRetrievalQAChain\"\r\n    \r\n    inputs = [\r\n        HandleInput(\r\n            name=\"llm\",\r\n            display_name=\"Language Model\",\r\n            info=\"답변 생성에 사용할 언어 모델(LLM)을 연결하세요.\",\r\n            input_types=[\"LanguageModel\"],\r\n            required=True\r\n        ),\r\n        HandleInput(\r\n            name=\"embedding\",\r\n            display_name=\"Embedding Model\",\r\n            info=\"벡터 DB에서 사용할 임베딩 모델을 연결하세요.\",\r\n            input_types=[\"Embeddings\"],\r\n            required=True\r\n        ),\r\n        StrInput(\r\n            name=\"collection_name\",\r\n            display_name=\"Collection Name\",\r\n            info=\"사용할 컬렉션 이름 (기본값: langflow)\",\r\n            value=\"langflow\",\r\n            required=True\r\n        ),\r\n        StrInput(\r\n            name=\"persist_directory\",\r\n            display_name=\"Persist Directory\",\r\n            info=\"벡터 DB 저장 디렉토리 (기본값: chroma_db)\",\r\n            value=\"chroma_db\",\r\n            required=True\r\n        ),\r\n        BoolInput(\r\n            name=\"auto_detect\",\r\n            display_name=\"Auto Detect Vector DB\",\r\n            info=\"벡터 DB 존재 여부를 자동으로 감지합니다.\",\r\n            value=True,\r\n            advanced=True\r\n        ),\r\n        StrInput(\r\n            name=\"input_value\",\r\n            display_name=\"Question\",\r\n            info=\"답변을 원하는 질문을 입력하세요.\",\r\n            required=True\r\n        ),\r\n    ]\r\n    \r\n    outputs = [\r\n        Output(display_name=\"Answer\", name=\"answer\", method=\"run_chain\")\r\n    ]\r\n    \r\n    def _check_vector_db_exists(self, persist_directory: str, collection_name: str) -> bool:\r\n        \"\"\"벡터 DB가 존재하는지 확인합니다.\"\"\"\r\n        if not os.path.exists(persist_directory):\r\n            return False\r\n        \r\n        # ChromaDB 파일들이 있는지 확인\r\n        chroma_files = [f for f in os.listdir(persist_directory) if f.endswith('.sqlite3') or f == 'chroma.sqlite3']\r\n        return len(chroma_files) > 0\r\n    \r\n    def run_chain(self) -> Data:\r\n        \"\"\"스마트하게 벡터 DB를 감지하고 RetrievalQA 체인을 실행합니다.\"\"\"\r\n        llm = self.llm\r\n        embedding = self.embedding\r\n        collection_name = self.collection_name\r\n        persist_directory = self.persist_directory\r\n        auto_detect = self.auto_detect\r\n        question = self.input_value\r\n        \r\n        self.status = \"벡터 DB 상태를 확인하고 있습니다...\"\r\n        \r\n        try:\r\n            # 벡터 DB 존재 여부 확인\r\n            if auto_detect:\r\n                db_exists = self._check_vector_db_exists(persist_directory, collection_name)\r\n                if not db_exists:\r\n                    raise ValueError(\r\n                        f\"벡터 DB를 찾을 수 없습니다. \"\r\n                        f\"경로: {persist_directory}, 컬렉션: {collection_name}\\n\"\r\n                        f\"먼저 ChromaDB 컴포넌트를 사용하여 데이터를 저장하거나, \"\r\n                        f\"올바른 경로와 컬렉션 이름을 입력해주세요.\"\r\n                    )\r\n                \r\n                self.status = f\"벡터 DB 발견: {persist_directory}/{collection_name}\"\r\n            \r\n            # 벡터스토어 로드\r\n            vector_store = Chroma(\r\n                persist_directory=persist_directory,\r\n                embedding_function=embedding,\r\n                collection_name=collection_name\r\n            )\r\n            \r\n            # 컬렉션에 데이터가 있는지 확인\r\n            collection_data = vector_store.get()\r\n            if not collection_data.get('ids'):\r\n                raise ValueError(\r\n                    f\"컬렉션 '{collection_name}'이 비어있습니다. \"\r\n                    f\"먼저 데이터를 추가해주세요.\"\r\n                )\r\n            \r\n            document_count = len(collection_data['ids'])\r\n            print(f\"✅ {document_count}개의 문서가 포함된 벡터 DB를 성공적으로 로드했습니다.\")\r\n            self.status = f\"벡터 DB 로드 완료 ({document_count}개 문서). RetrievalQA 실행 중...\"\r\n            \r\n            # Retriever 생성\r\n            retriever = vector_store.as_retriever(\r\n                search_type=\"similarity\",\r\n                search_kwargs={\"k\": 5}  # 상위 5개 결과 반환\r\n            )\r\n            \r\n            # RetrievalQA 체인 생성\r\n            qa_chain = RetrievalQA.from_chain_type(\r\n                llm=llm,\r\n                chain_type=\"stuff\",\r\n                retriever=retriever,\r\n                return_source_documents=True\r\n            )\r\n            \r\n            # 체인 실행\r\n            result = qa_chain.invoke({\"query\": question})\r\n            \r\n            # 결과 처리\r\n            answer = result.get(\"result\", \"답변을 생성하지 못했습니다.\")\r\n            source_documents = result.get(\"source_documents\", [])\r\n            \r\n            # 소스 정보 추출\r\n            source_info = []\r\n            for i, doc in enumerate(source_documents):\r\n                source_info.append({\r\n                    \"rank\": i + 1,\r\n                    \"relevance_score\": f\"Top {i+1}/5\",\r\n                    \"content\": doc.page_content[:300] + \"...\" if len(doc.page_content) > 300 else doc.page_content,\r\n                    \"metadata\": doc.metadata,\r\n                    \"issue_key\": doc.metadata.get(\"issue_key\", \"N/A\"),\r\n                    \"step_index\": doc.metadata.get(\"step_index\", \"N/A\"),\r\n                    \"created_date\": doc.metadata.get(\"created_date\", \"N/A\")\r\n                })\r\n            \r\n            self.status = f\"✅ 답변 생성 완료! {len(source_documents)}개의 관련 문서를 참조했습니다.\"\r\n            \r\n            return Data(\r\n                data={\r\n                    \"answer\": answer,\r\n                    \"sources\": source_info,\r\n                    \"question\": question,\r\n                    \"num_sources\": len(source_documents),\r\n                    \"total_documents\": document_count,\r\n                    \"collection_name\": collection_name,\r\n                    \"persist_directory\": persist_directory,\r\n                    \"execution_mode\": \"Smart Auto-Detection\"\r\n                }, \r\n                text=answer\r\n            )\r\n            \r\n        except Exception as e:\r\n            error_message = f\"RetrievalQA 실행 중 오류: {str(e)}\"\r\n            self.status = error_message\r\n            print(f\"오류 상세: {e}\")\r\n            \r\n            # 도움말 메시지 추가\r\n            if \"찾을 수 없습니다\" in str(e) or \"비어있습니다\" in str(e):\r\n                help_msg = (\r\n                    \"\\n\\n💡 해결 방법:\\n\"\r\n                    \"1. ChromaDB 컴포넌트로 먼저 데이터를 저장하세요\\n\"\r\n                    \"2. persist_directory와 collection_name이 정확한지 확인하세요\\n\"\r\n                    \"3. Auto Detect를 끄고 수동으로 경로를 설정해보세요\"\r\n                )\r\n                error_message += help_msg\r\n            \r\n            import traceback\r\n            traceback.print_exc()\r\n            raise ValueError(error_message)"
+              },
+              "collection_name": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "Collection Name",
+                "dynamic": false,
+                "info": "사용할 컬렉션 이름 (기본값: langflow)",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "collection_name",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "langflow"
+              },
+              "embedding": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "display_name": "Embedding Model",
+                "dynamic": false,
+                "info": "벡터 DB에서 사용할 임베딩 모델을 연결하세요.",
+                "input_types": [
+                  "Embeddings"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "embedding",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "input_value": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "Question",
+                "dynamic": false,
+                "info": "답변을 원하는 질문을 입력하세요.",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "input_value",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "master admin과 관련된 tc를 참고해서 master admin tc에 필요한 테스트 스텝 1개 짜줘"
+              },
+              "llm": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "display_name": "Language Model",
+                "dynamic": false,
+                "info": "답변 생성에 사용할 언어 모델(LLM)을 연결하세요.",
+                "input_types": [
+                  "LanguageModel"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "llm",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "persist_directory": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "Persist Directory",
+                "dynamic": false,
+                "info": "벡터 DB 저장 디렉토리 (기본값: chroma_db)",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "persist_directory",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "chroma_embedding"
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "SmartRetrievalQAChain"
+        },
+        "dragging": false,
+        "id": "CustomComponent-NEnl4",
+        "measured": {
+          "height": 474,
+          "width": 320
+        },
+        "position": {
+          "x": 970.1508243582841,
+          "y": -592.5404862690432
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "LMStudioModel-vbfji",
+          "node": {
+            "base_classes": [
+              "LanguageModel",
+              "Message"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Generate text using LM Studio Local LLMs.",
+            "display_name": "LM Studio",
+            "documentation": "",
+            "edited": false,
+            "field_order": [
+              "input_value",
+              "system_message",
+              "stream",
+              "max_tokens",
+              "model_kwargs",
+              "model_name",
+              "base_url",
+              "api_key",
+              "temperature",
+              "seed"
+            ],
+            "frozen": false,
+            "icon": "LMStudio",
+            "last_updated": "2025-08-06T00:24:45.216Z",
+            "legacy": false,
+            "lf_version": "1.5.0.post1",
+            "metadata": {
+              "keywords": [
+                "model",
+                "llm",
+                "language model",
+                "large language model"
+              ]
+            },
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Model Response",
+                "group_outputs": false,
+                "method": "text_response",
+                "name": "text_output",
+                "options": null,
+                "required_inputs": null,
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              },
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Language Model",
+                "group_outputs": false,
+                "method": "build_model",
+                "name": "model_output",
+                "options": null,
+                "required_inputs": null,
+                "selected": "LanguageModel",
+                "tool_mode": true,
+                "types": [
+                  "LanguageModel"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "api_key": {
+                "_input_type": "SecretStrInput",
+                "advanced": true,
+                "display_name": "LM Studio API Key",
+                "dynamic": false,
+                "info": "The LM Studio API Key to use for LM Studio.",
+                "input_types": [],
+                "load_from_db": false,
+                "name": "api_key",
+                "password": true,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "type": "str",
+                "value": ""
+              },
+              "base_url": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "Base URL",
+                "dynamic": false,
+                "info": "Endpoint of the LM Studio API. Defaults to 'http://localhost:1234/v1' if not specified.",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "base_url",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "http://localhost:1234/v1"
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from typing import Any\nfrom urllib.parse import urljoin\n\nimport httpx\nfrom langchain_openai import ChatOpenAI\nfrom typing_extensions import override\n\nfrom langflow.base.models.model import LCModelComponent\nfrom langflow.field_typing import LanguageModel\nfrom langflow.field_typing.range_spec import RangeSpec\nfrom langflow.inputs.inputs import DictInput, DropdownInput, FloatInput, IntInput, SecretStrInput, StrInput\n\n\nclass LMStudioModelComponent(LCModelComponent):\n    display_name = \"LM Studio\"\n    description = \"Generate text using LM Studio Local LLMs.\"\n    icon = \"LMStudio\"\n    name = \"LMStudioModel\"\n\n    @override\n    async def update_build_config(self, build_config: dict, field_value: Any, field_name: str | None = None):\n        if field_name == \"model_name\":\n            base_url_dict = build_config.get(\"base_url\", {})\n            base_url_load_from_db = base_url_dict.get(\"load_from_db\", False)\n            base_url_value = base_url_dict.get(\"value\")\n            if base_url_load_from_db:\n                base_url_value = await self.get_variables(base_url_value, field_name)\n            elif not base_url_value:\n                base_url_value = \"http://localhost:1234/v1\"\n            build_config[\"model_name\"][\"options\"] = await self.get_model(base_url_value)\n\n        return build_config\n\n    @staticmethod\n    async def get_model(base_url_value: str) -> list[str]:\n        try:\n            url = urljoin(base_url_value, \"/v1/models\")\n            async with httpx.AsyncClient() as client:\n                response = await client.get(url)\n                response.raise_for_status()\n                data = response.json()\n\n                return [model[\"id\"] for model in data.get(\"data\", [])]\n        except Exception as e:\n            msg = \"Could not retrieve models. Please, make sure the LM Studio server is running.\"\n            raise ValueError(msg) from e\n\n    inputs = [\n        *LCModelComponent._base_inputs,\n        IntInput(\n            name=\"max_tokens\",\n            display_name=\"Max Tokens\",\n            advanced=True,\n            info=\"The maximum number of tokens to generate. Set to 0 for unlimited tokens.\",\n            range_spec=RangeSpec(min=0, max=128000),\n        ),\n        DictInput(name=\"model_kwargs\", display_name=\"Model Kwargs\", advanced=True),\n        DropdownInput(\n            name=\"model_name\",\n            display_name=\"Model Name\",\n            advanced=False,\n            refresh_button=True,\n        ),\n        StrInput(\n            name=\"base_url\",\n            display_name=\"Base URL\",\n            advanced=False,\n            info=\"Endpoint of the LM Studio API. Defaults to 'http://localhost:1234/v1' if not specified.\",\n            value=\"http://localhost:1234/v1\",\n        ),\n        SecretStrInput(\n            name=\"api_key\",\n            display_name=\"LM Studio API Key\",\n            info=\"The LM Studio API Key to use for LM Studio.\",\n            advanced=True,\n            value=\"LMSTUDIO_API_KEY\",\n        ),\n        FloatInput(\n            name=\"temperature\",\n            display_name=\"Temperature\",\n            value=0.1,\n            advanced=True,\n        ),\n        IntInput(\n            name=\"seed\",\n            display_name=\"Seed\",\n            info=\"The seed controls the reproducibility of the job.\",\n            advanced=True,\n            value=1,\n        ),\n    ]\n\n    def build_model(self) -> LanguageModel:  # type: ignore[type-var]\n        lmstudio_api_key = self.api_key\n        temperature = self.temperature\n        model_name: str = self.model_name\n        max_tokens = self.max_tokens\n        model_kwargs = self.model_kwargs or {}\n        base_url = self.base_url or \"http://localhost:1234/v1\"\n        seed = self.seed\n\n        return ChatOpenAI(\n            max_tokens=max_tokens or None,\n            model_kwargs=model_kwargs,\n            model=model_name,\n            base_url=base_url,\n            api_key=lmstudio_api_key,\n            temperature=temperature if temperature is not None else 0.1,\n            seed=seed,\n        )\n\n    def _get_exception_message(self, e: Exception):\n        \"\"\"Get a message from an LM Studio exception.\n\n        Args:\n            e (Exception): The exception to get the message from.\n\n        Returns:\n            str: The message from the exception.\n        \"\"\"\n        try:\n            from openai import BadRequestError\n        except ImportError:\n            return None\n        if isinstance(e, BadRequestError):\n            message = e.body.get(\"message\")\n            if message:\n                return message\n        return None\n"
+              },
+              "input_value": {
+                "_input_type": "MessageInput",
+                "advanced": false,
+                "display_name": "Input",
+                "dynamic": false,
+                "info": "",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "input_value",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "max_tokens": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Max Tokens",
+                "dynamic": false,
+                "info": "The maximum number of tokens to generate. Set to 0 for unlimited tokens.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "max_tokens",
+                "placeholder": "",
+                "range_spec": {
+                  "max": 128000,
+                  "min": 0,
+                  "step": 0.1,
+                  "step_type": "float"
+                },
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": ""
+              },
+              "model_kwargs": {
+                "_input_type": "DictInput",
+                "advanced": true,
+                "display_name": "Model Kwargs",
+                "dynamic": false,
+                "info": "",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "model_kwargs",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "type": "dict",
+                "value": {}
+              },
+              "model_name": {
+                "_input_type": "DropdownInput",
+                "advanced": false,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Model Name",
+                "dynamic": false,
+                "info": "",
+                "name": "model_name",
+                "options": [
+                  "text-embedding-nomic-embed-text-v1.5",
+                  "qwen/qwen3-8b"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "refresh_button": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "qwen/qwen3-8b"
+              },
+              "seed": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Seed",
+                "dynamic": false,
+                "info": "The seed controls the reproducibility of the job.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "seed",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 1
+              },
+              "stream": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Stream",
+                "dynamic": false,
+                "info": "Stream the response from the model. Streaming works only in Chat.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "stream",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": false
+              },
+              "system_message": {
+                "_input_type": "MultilineInput",
+                "advanced": false,
+                "copy_field": false,
+                "display_name": "System Message",
+                "dynamic": false,
+                "info": "System message to pass to the model.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "system_message",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "temperature": {
+                "_input_type": "FloatInput",
+                "advanced": true,
+                "display_name": "Temperature",
+                "dynamic": false,
+                "info": "",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "temperature",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "float",
+                "value": 0.1
+              }
+            },
+            "tool_mode": false
+          },
+          "selected_output": "model_output",
+          "showNode": true,
+          "type": "LMStudioModel"
+        },
+        "dragging": false,
+        "id": "LMStudioModel-vbfji",
+        "measured": {
+          "height": 451,
+          "width": 320
+        },
+        "position": {
+          "x": 529.2425029189426,
+          "y": -952.6001892406457
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "SaveToFile-4JRU3",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "category": "processing",
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Save data to a local file in the selected format.",
+            "display_name": "Save File",
+            "documentation": "https://docs.langflow.org/components-processing#save-file",
+            "edited": false,
+            "field_order": [
+              "input",
+              "file_name",
+              "file_format"
+            ],
+            "frozen": false,
+            "icon": "save",
+            "key": "SaveToFile",
+            "legacy": false,
+            "lf_version": "1.5.0.post1",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "File Path",
+                "group_outputs": false,
+                "method": "save_to_file",
+                "name": "result",
+                "selected": "Text",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "score": 0.0008531001140175896,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "import json\nfrom collections.abc import AsyncIterator, Iterator\nfrom pathlib import Path\n\nimport orjson\nimport pandas as pd\nfrom fastapi import UploadFile\nfrom fastapi.encoders import jsonable_encoder\n\nfrom langflow.api.v2.files import upload_user_file\nfrom langflow.custom import Component\nfrom langflow.io import DropdownInput, HandleInput, StrInput\nfrom langflow.schema import Data, DataFrame, Message\nfrom langflow.services.auth.utils import create_user_longterm_token\nfrom langflow.services.database.models.user.crud import get_user_by_id\nfrom langflow.services.deps import get_session, get_settings_service, get_storage_service\nfrom langflow.template.field.base import Output\n\n\nclass SaveToFileComponent(Component):\n    display_name = \"Save File\"\n    description = \"Save data to a local file in the selected format.\"\n    documentation: str = \"https://docs.langflow.org/components-processing#save-file\"\n    icon = \"save\"\n    name = \"SaveToFile\"\n\n    # File format options for different types\n    DATA_FORMAT_CHOICES = [\"csv\", \"excel\", \"json\", \"markdown\"]\n    MESSAGE_FORMAT_CHOICES = [\"txt\", \"json\", \"markdown\"]\n\n    inputs = [\n        HandleInput(\n            name=\"input\",\n            display_name=\"Input\",\n            info=\"The input to save.\",\n            dynamic=True,\n            input_types=[\"Data\", \"DataFrame\", \"Message\"],\n            required=True,\n        ),\n        StrInput(\n            name=\"file_name\",\n            display_name=\"File Name\",\n            info=\"Name file will be saved as (without extension).\",\n            required=True,\n        ),\n        DropdownInput(\n            name=\"file_format\",\n            display_name=\"File Format\",\n            options=list(dict.fromkeys(DATA_FORMAT_CHOICES + MESSAGE_FORMAT_CHOICES)),\n            info=\"Select the file format to save the input. If not provided, the default format will be used.\",\n            value=\"\",\n            advanced=True,\n        ),\n    ]\n\n    outputs = [Output(display_name=\"File Path\", name=\"result\", method=\"save_to_file\")]\n\n    async def save_to_file(self) -> Message:\n        \"\"\"Save the input to a file and upload it, returning a confirmation message.\"\"\"\n        # Validate inputs\n        if not self.file_name:\n            msg = \"File name must be provided.\"\n            raise ValueError(msg)\n        if not self._get_input_type():\n            msg = \"Input type is not set.\"\n            raise ValueError(msg)\n\n        # Validate file format based on input type\n        file_format = self.file_format or self._get_default_format()\n        allowed_formats = (\n            self.MESSAGE_FORMAT_CHOICES if self._get_input_type() == \"Message\" else self.DATA_FORMAT_CHOICES\n        )\n        if file_format not in allowed_formats:\n            msg = f\"Invalid file format '{file_format}' for {self._get_input_type()}. Allowed: {allowed_formats}\"\n            raise ValueError(msg)\n\n        # Prepare file path\n        file_path = Path(self.file_name).expanduser()\n        if not file_path.parent.exists():\n            file_path.parent.mkdir(parents=True, exist_ok=True)\n        file_path = self._adjust_file_path_with_format(file_path, file_format)\n\n        # Save the input to file based on type\n        if self._get_input_type() == \"DataFrame\":\n            confirmation = self._save_dataframe(self.input, file_path, file_format)\n        elif self._get_input_type() == \"Data\":\n            confirmation = self._save_data(self.input, file_path, file_format)\n        elif self._get_input_type() == \"Message\":\n            confirmation = await self._save_message(self.input, file_path, file_format)\n        else:\n            msg = f\"Unsupported input type: {self._get_input_type()}\"\n            raise ValueError(msg)\n\n        # Upload the saved file\n        await self._upload_file(file_path)\n\n        # Return the final file path and confirmation message\n        final_path = Path.cwd() / file_path if not file_path.is_absolute() else file_path\n\n        return Message(text=f\"{confirmation} at {final_path}\")\n\n    def _get_input_type(self) -> str:\n        \"\"\"Determine the input type based on the provided input.\"\"\"\n        # Use exact type checking (type() is) instead of isinstance() to avoid inheritance issues.\n        # Since Message inherits from Data, isinstance(message, Data) would return True for Message objects,\n        # causing Message inputs to be incorrectly identified as Data type.\n        if type(self.input) is DataFrame:\n            return \"DataFrame\"\n        if type(self.input) is Message:\n            return \"Message\"\n        if type(self.input) is Data:\n            return \"Data\"\n        msg = f\"Unsupported input type: {type(self.input)}\"\n        raise ValueError(msg)\n\n    def _get_default_format(self) -> str:\n        \"\"\"Return the default file format based on input type.\"\"\"\n        if self._get_input_type() == \"DataFrame\":\n            return \"csv\"\n        if self._get_input_type() == \"Data\":\n            return \"json\"\n        if self._get_input_type() == \"Message\":\n            return \"json\"\n        return \"json\"  # Fallback\n\n    def _adjust_file_path_with_format(self, path: Path, fmt: str) -> Path:\n        \"\"\"Adjust the file path to include the correct extension.\"\"\"\n        file_extension = path.suffix.lower().lstrip(\".\")\n        if fmt == \"excel\":\n            return Path(f\"{path}.xlsx\").expanduser() if file_extension not in [\"xlsx\", \"xls\"] else path\n        return Path(f\"{path}.{fmt}\").expanduser() if file_extension != fmt else path\n\n    async def _upload_file(self, file_path: Path) -> None:\n        \"\"\"Upload the saved file using the upload_user_file service.\"\"\"\n        if not file_path.exists():\n            msg = f\"File not found: {file_path}\"\n            raise FileNotFoundError(msg)\n\n        with file_path.open(\"rb\") as f:\n            async for db in get_session():\n                user_id, _ = await create_user_longterm_token(db)\n                current_user = await get_user_by_id(db, user_id)\n\n                await upload_user_file(\n                    file=UploadFile(filename=file_path.name, file=f, size=file_path.stat().st_size),\n                    session=db,\n                    current_user=current_user,\n                    storage_service=get_storage_service(),\n                    settings_service=get_settings_service(),\n                )\n\n    def _save_dataframe(self, dataframe: DataFrame, path: Path, fmt: str) -> str:\n        \"\"\"Save a DataFrame to the specified file format.\"\"\"\n        if fmt == \"csv\":\n            dataframe.to_csv(path, index=False)\n        elif fmt == \"excel\":\n            dataframe.to_excel(path, index=False, engine=\"openpyxl\")\n        elif fmt == \"json\":\n            dataframe.to_json(path, orient=\"records\", indent=2)\n        elif fmt == \"markdown\":\n            path.write_text(dataframe.to_markdown(index=False), encoding=\"utf-8\")\n        else:\n            msg = f\"Unsupported DataFrame format: {fmt}\"\n            raise ValueError(msg)\n        return f\"DataFrame saved successfully as '{path}'\"\n\n    def _save_data(self, data: Data, path: Path, fmt: str) -> str:\n        \"\"\"Save a Data object to the specified file format.\"\"\"\n        if fmt == \"csv\":\n            pd.DataFrame(data.data).to_csv(path, index=False)\n        elif fmt == \"excel\":\n            pd.DataFrame(data.data).to_excel(path, index=False, engine=\"openpyxl\")\n        elif fmt == \"json\":\n            path.write_text(\n                orjson.dumps(jsonable_encoder(data.data), option=orjson.OPT_INDENT_2).decode(\"utf-8\"), encoding=\"utf-8\"\n            )\n        elif fmt == \"markdown\":\n            path.write_text(pd.DataFrame(data.data).to_markdown(index=False), encoding=\"utf-8\")\n        else:\n            msg = f\"Unsupported Data format: {fmt}\"\n            raise ValueError(msg)\n        return f\"Data saved successfully as '{path}'\"\n\n    async def _save_message(self, message: Message, path: Path, fmt: str) -> str:\n        \"\"\"Save a Message to the specified file format, handling async iterators.\"\"\"\n        content = \"\"\n        if message.text is None:\n            content = \"\"\n        elif isinstance(message.text, AsyncIterator):\n            async for item in message.text:\n                content += str(item) + \" \"\n            content = content.strip()\n        elif isinstance(message.text, Iterator):\n            content = \" \".join(str(item) for item in message.text)\n        else:\n            content = str(message.text)\n\n        if fmt == \"txt\":\n            path.write_text(content, encoding=\"utf-8\")\n        elif fmt == \"json\":\n            path.write_text(json.dumps({\"message\": content}, indent=2), encoding=\"utf-8\")\n        elif fmt == \"markdown\":\n            path.write_text(f\"**Message:**\\n\\n{content}\", encoding=\"utf-8\")\n        else:\n            msg = f\"Unsupported Message format: {fmt}\"\n            raise ValueError(msg)\n        return f\"Message saved successfully as '{path}'\"\n"
+              },
+              "file_format": {
+                "_input_type": "DropdownInput",
+                "advanced": true,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "File Format",
+                "dynamic": false,
+                "info": "Select the file format to save the input. If not provided, the default format will be used.",
+                "name": "file_format",
+                "options": [
+                  "csv",
+                  "excel",
+                  "json",
+                  "markdown",
+                  "txt"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "file_name": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "File Name",
+                "dynamic": false,
+                "info": "Name file will be saved as (without extension).",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "file_name",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "RAG_Output"
+              },
+              "input": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "display_name": "Input",
+                "dynamic": true,
+                "info": "The input to save.",
+                "input_types": [
+                  "Data",
+                  "DataFrame",
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "input",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "SaveToFile"
+        },
+        "dragging": false,
+        "id": "SaveToFile-4JRU3",
+        "measured": {
+          "height": 248,
+          "width": 320
+        },
+        "position": {
+          "x": 1525.6386655060778,
+          "y": -427.345286895537
+        },
+        "selected": false,
+        "type": "genericNode"
+      }
+    ],
+    "viewport": {
+      "x": 276.6189665820293,
+      "y": 496.5812641980302,
+      "zoom": 0.4555197464503168
+    }
+  },
+  "description": "Create, Curate, Communicate with Langflow.",
+  "endpoint_name": null,
+  "id": "5dafa98c-49d4-4e6c-8112-e14185af8b3d",
+  "is_component": false,
+  "last_tested_version": "1.5.0.post1",
+  "name": "QA_RAG_workflow",
+  "tags": []
+}

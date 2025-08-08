@@ -1,835 +1,389 @@
-{
-  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
-  "id": "59291",
-  "self": "https://jira.suprema.co.kr/rest/api/2/issue/59291",
-  "key": "COMMONR-324",
-  "fields": {
-    "resolution": null,
-    "customfield_13103": null,
-    "customfield_10510": null,
-    "customfield_10500": "0.0",
-    "customfield_10501": null,
-    "customfield_10502": null,
-    "customfield_12802": null,
-    "customfield_12804": null,
-    "customfield_10505": null,
-    "customfield_12803": null,
-    "customfield_10506": null,
-    "customfield_12806": null,
-    "customfield_10507": null,
-    "customfield_12805": null,
-    "customfield_10508": null,
-    "customfield_12808": null,
-    "customfield_10509": null,
-    "lastViewed": null,
-    "customfield_10180": null,
-    "customfield_10181": null,
-    "customfield_10182": null,
-    "customfield_10183": null,
-    "customfield_10184": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10173",
-      "value": "Major",
-      "id": "10173"
-    },
-    "customfield_10185": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
-      "value": "Medium (2-3일 이내 피드백)",
-      "id": "10220"
-    },
-    "labels": [],
-    "customfield_11702": null,
-    "aggregatetimeoriginalestimate": null,
-    "issuelinks": [
-      {
-        "id": "49483",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/49483",
-        "type": {
-          "id": "10001",
-          "name": "Cloners",
-          "inward": "is cloned by",
-          "outward": "clones",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10001"
-        },
-        "outwardIssue": {
-          "id": "46908",
-          "key": "BCRTC-93",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/46908",
-          "fields": {
-            "summary": "Masking 을 이용한 사용자 정보의 선별적인 업데이트",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
-              "name": "할 일",
-              "id": "10000",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
-                "id": 2,
-                "key": "new",
-                "colorName": "blue-gray",
-                "name": "할 일"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
-              "id": "10000",
-              "description": "Represents a Test",
-              "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
-              "name": "Test",
-              "subtask": false
-            }
-          }
-        }
-      },
-      {
-        "id": "61754",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/61754",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "70834",
-          "key": "CS20FW-160",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/70834",
-          "fields": {
-            "summary": "DIAG에 표시되는 Masking 값이 상이한 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
-              "name": "Minor (C)",
-              "id": "3"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "62934",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/62934",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "72077",
-          "key": "CS20FW-235",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72077",
-          "fields": {
-            "summary": "DIAG log에 지원하지 않는 크리덴셜의 Masking값이 표시되는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
-              "name": "Minor (C)",
-              "id": "3"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      }
-    ],
-    "assignee": null,
-    "components": [],
-    "customfield_10170": null,
-    "customfield_10171": null,
-    "customfield_10172": null,
-    "customfield_10174": null,
-    "customfield_10175": null,
-    "customfield_10176": null,
-    "customfield_10177": null,
-    "customfield_10178": null,
-    "customfield_10179": null,
-    "customfield_10600": 43.0,
-    "customfield_10601": [],
-    "customfield_12901": null,
-    "customfield_10602": null,
-    "customfield_12900": null,
-    "subtasks": [],
-    "reporter": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
-      "name": "김소영",
-      "key": "김소영",
-      "emailAddress": "sykim@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-      },
-      "displayName": "김소영",
-      "active": true,
-      "timeZone": "Asia/Seoul"
-    },
-    "customfield_10168": null,
-    "customfield_10169": null,
-    "customfield_11800": null,
-    "progress": {
-      "progress": 0,
-      "total": 0
-    },
-    "votes": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-324/votes",
-      "votes": 0,
-      "hasVoted": false
-    },
-    "worklog": {
-      "startAt": 0,
-      "maxResults": 20,
-      "total": 0,
-      "worklogs": []
-    },
-    "issuetype": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
-      "id": "10000",
-      "description": "Represents a Test",
-      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
-      "name": "Test",
-      "subtask": false
-    },
-    "project": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
-      "id": "10000",
-      "key": "COMMONR",
-      "name": "Common Requirement And Test Case",
-      "projectTypeKey": "software",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
-        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
-        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
-        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
-      },
-      "projectCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
-        "id": "10000",
-        "description": "Requirements And Test Cases For The BioStar System Device",
-        "name": "BioStar System Device Requirement And Test Case"
-      }
-    },
-    "customfield_11000": null,
-    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@b307cab[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@2031c18b[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6155a482[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@4fc60cba[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@18ae2488[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@334c5699[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@7ff195c6[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@adf55e[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@69ce1ba7[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@38676099[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@4b4b8df6[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@242396c4[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
-    "resolutiondate": null,
-    "watches": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-324/watchers",
-      "watchCount": 1,
-      "isWatching": false
-    },
-    "customfield_11900": null,
-    "customfield_11901": null,
-    "updated": "2025-08-01T10:07:34.000+0900",
-    "timeoriginalestimate": null,
-    "description": "[http://192.168.1.4:8001/browse/BDP-561]\r\n\r\n수정된 사용자 정보에 대해 Masking 하여 업데이트 할 수 있도록 하는 기능.\r\n\r\n선별적 업데이트 항목\r\n > BS2_USER_MASK_DATA= 0x0001\r\n : 모든 크리덴셜에 대한 카운트 정보, Disable 여부, 인증그룹(그룹매칭) 정보\r\n\r\n> BS2_USER_MASK_SETTING= 0x0002\r\n : 유효기간 정보, 개인인증모드(기본), Security Level\r\n\r\n> BS2_USER_MASK_NAME= 0x0004\r\n > BS2_USER_MASK_PHOTO= 0x0008\r\n > BS2_USER_MASK_PIN= 0x0010\r\n > BS2_USER_MASK_CARD= 0x0020\r\n > BS2_USER_MASK_FINGER= 0x0040\r\n > BS2_USER_MASK_FACE= 0x0080\r\n > BS2_USER_MASK_ACCESS_GROUP= 0x0100\r\n > BS2_USER_MASK_JOB= 0x0200 (바이오스타 사용 안함)\r\n > BS2_USER_MASK_PHRASE= 0x0400 (바이오스타 사용 안함)\r\n > BS2_USER_MASK_FACE_EX= 0x0800\r\n > BS2_USER_MASK_SETTING_EX= 0x1000\r\n : 개인인증모드(확장)\r\n\r\n \r\n\r\n테스트 환경 구성\r\n> 서버에는 Station 계열 제품, Entry 계열 제품 모두 연결되어진 상태에서 진행\r\n> Entery 계열 제품이 Master인 경우 Slave로 Station 계열 제품 연결한 상태로 진행(ex. Slave - L2 & N2)\r\n\r\n참고. QR은 Card Type으로 보고 서버에서 장치로 내려줌.(바이오스타 팝업으로도 Card/QR 최대 8장까지 입력가능이라고 노티)\r\n참고. Visual Face는 F2만 지원(2021/11 기준)",
-    "customfield_10251": null,
-    "customfield_10252": null,
-    "customfield_10253": null,
-    "customfield_10254": null,
-    "customfield_10255": null,
-    "timetracking": {},
-    "customfield_10257": null,
-    "customfield_10247": null,
-    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 기 등록된 사용자 클릭<br/>2. 사용자의 Credential 추가/삭제를 통해 갯수 변경 후 저장<br/>3. 출력로그 확인<br/>4. 인증을 통한 동작 확인</p></td><td><p>Credential<br/>=&gt; Finger/Card/Face/Visual Face/QR</p></td><td><p>1. 변경한 정보에 대해 업데이트 된다.<br/>&gt; 출력로그: 신규 프로토콜에 대한 로그 추가 예정<br/>2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.<br/>3. 업데이트된 설정으로 동작된다.</p></td></tr><tr><td>2</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 기 등록된 사용자 클릭<br/>2. 사용자의 \"Status\" 설정 변경 후 저장<br/>3. 출력로그 확인<br/>4. 인증을 통한 동작 확인</p></td><td><p>Status<br/>=&gt; Active/Inactive</p></td><td><p>1. 변경한 정보에 대해 업데이트 된다.<br/>&gt; 출력로그: 신규 프로토콜에 대한 로그 추가 예정<br/>2. 업데이트된 설정으로 동작된다.</p></td></tr><tr><td>3</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. Settings&gt; Face Group Matching<br/>2. 설정 변경 후 저장<br/>3. 출력로그 확인<br/>4. 인증을 통한 동작 확인</p></td><td><p>Face Group Matching<br/>=&gt; Matching Group Settings</p></td><td><p>1. 변경한 정보에 대해 업데이트 된다.<br/>&gt; 출력로그: 신규 프로토콜에 대한 로그 추가 예정<br/>2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.<br/>3. 업데이트된 설정으로 동작된다.</p></td></tr><tr><td>4</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 기 등록된 사용자 클릭<br/>2. 사용자의 \"Period\" 설정 변경 후 저장<br/>3. 출력로그 확인<br/>4. 인증을 통한 동작 확인</p></td><td><p>Period 설정 변경 범위<br/>=&gt; 현재시간 포함<br/>=&gt; 현재시간 미포함</p></td><td><p>1. 변경한 정보에 대해 업데이트 된다.<br/>&gt; 출력로그: 신규 프로토콜에 대한 로그 추가 예정<br/>2. 업데이트된 설정으로 동작된다.</p></td></tr><tr><td>5</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 기 등록된 사용자 클릭<br/>2. 사용자의 \"Private Auth Mode\" 변경 후 저장<br/>3. 출력로그 확인<br/>4. 인증을 통한 동작 확인</p></td><td><p>Private Auth Mode<br/>=&gt; Biometrics/Card/ID</p></td><td><p>1. 변경한 정보에 대해 업데이트 된다.<br/>&gt; 출력로그: 신규 프로토콜에 대한 로그 추가 예정<br/>2. 업데이트된 설정으로 동작된다.</p></td></tr><tr><td>6</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 기 등록된 사용자 클릭<br/>2. 사용자의 \"Private Auth Mode\" 설정 변경 후 저장<br/>3. 출력로그 확인<br/>4. 인증을 통한 동작 확인</p></td><td><p>Private Auth Mode<br/>=&gt; Extended Auth Mode</p></td><td><p>1. 변경한 정보에 대해 업데이트 된다.<br/>&gt; 출력로그: 신규 프로토콜에 대한 로그 추가 예정<br/>2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.<br/>3. 업데이트된 설정으로 동작된다.</p></td></tr><tr><td>7</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 기 등록된 사용자 클릭<br/>2. 사용자의 \"1:1 Security Level 변경 후 저장<br/>3. 출력로그 확인<br/>4. 인증을 통한 동작 확인</p></td><td><p>1:1 Security Level<br/>=&gt; Device Default/Lowest/Low/Normal/High/Highest</p></td><td><p>1. 변경한 정보에 대해 업데이트 된다.<br/>&gt; 출력로그: 신규 프로토콜에 대한 로그 추가 예정<br/>2. 업데이트된 설정으로 동작된다.</p></td></tr><tr><td>8</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 기 등록된 사용자 클릭<br/>2. 사용자의 \"Name\" 변경 후 저장<br/>3. 출력로그 확인<br/>4. 인증을 통한 동작 확인</p></td><td><p>Name<br/>=&gt; 국문/영문/특수문자<br/>=&gt; 글자수</p></td><td><p>1. 변경한 정보에 대해 업데이트 된다.<br/>&gt; 출력로그: 신규 프로토콜에 대한 로그 추가 예정<br/>2. 업데이트된 설정으로 동작된다.</p></td></tr><tr><td>9</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 기 등록된 사용자 클릭<br/>2. 사용자의 \"Profile Image\" 변경 후 저장<br/>3. 출력로그 확인<br/>4. LCD 지원장치에서 사용자의 Profile Image 업데이트 확인</p></td><td></td><td><p>1. 변경한 정보에 대해 업데이트 된다.<br/>&gt; 출력로그: 신규 프로토콜에 대한 로그 추가 예정<br/>2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.<br/>3. 업데이트된 설정으로 표시된다.</p></td></tr><tr><td>10</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 기 등록된 사용자 클릭<br/>2. 사용자의 \"PIN\" 설정 변경 후 저장<br/>3. 출력로그 확인<br/>4. 인증을 통한 동작 확인</p></td><td></td><td><p>1. 변경한 정보에 대해 업데이트 된다.<br/>&gt; 출력로그: 신규 프로토콜에 대한 로그 추가 예정<br/>2. 업데이트된 설정으로 동작된다.</p></td></tr><tr><td>11</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 기 등록된 사용자 클릭<br/>2. 사용자의 \"Card\" 설정 변경 후 저장<br/>3. 출력로그 확인<br/>4. 인증을 통한 동작 확인</p></td><td><p>Card<br/>=&gt; CSN Type/Wiegand Type/Smart Card(=SCC 발급)</p></td><td><p>1. 변경한 정보에 대해 업데이트 된다.<br/>&gt; 출력로그: 신규 프로토콜에 대한 로그 추가 예정<br/>2. 업데이트된 설정으로 동작된다.</p></td></tr><tr><td>12</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 기 등록된 사용자 클릭<br/>2. 사용자의 \"Fingerprint\" 설정 변경 후 저장<br/>3. 출력로그 확인<br/>4. 인증을 통한 동작 확인</p></td><td></td><td><p>1. 변경한 정보에 대해 업데이트 된다.<br/>&gt; 출력로그: 신규 프로토콜에 대한 로그 추가 예정<br/>2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.<br/>3. 업데이트된 설정으로 동작된다.</p></td></tr><tr><td>13</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 기 등록된 사용자 클릭<br/>2. 사용자의 \"Face\" 설정 변경 후 저장<br/>3. 출력로그 확인<br/>4. 인증을 통한 동작 확인</p></td><td></td><td><p>1. 변경한 정보에 대해 업데이트 된다.<br/>&gt; 출력로그: 신규 프로토콜에 대한 로그 추가 예정<br/>2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.<br/>3. 업데이트된 설정으로 표시된다.</p></td></tr><tr><td>14</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 기 등록된 사용자 클릭<br/>2. 사용자의 \"Access Group\" 설정 변경 후 저장<br/>3. 출력로그 확인<br/>4. 인증을 통한 동작 확인</p></td><td><p>Access Group<br/>=&gt; 사용자/사용자 그룹 추가/수정/삭제</p></td><td><p>1. 변경한 사용자 및 사용자 그룹에 속한 사용자에 Access Group에 대한 정보가 업데이트 된다.<br/>&gt; 출력로그: 신규 프로토콜에 대한 로그 추가 예정<br/>2. 업데이트된 설정으로 동작된다.</p>\n\n<p>※ access control 메뉴가 아닌 user 메뉴에서 변경 시에만 해당</p></td></tr><tr><td>15</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 기 등록된 사용자 클릭<br/>2. 사용자의 \"JobCode\" 설정 변경 후 저장<br/>3. 출력로그 확인<br/>4. 인증을 통한 동작 확인</p></td><td><p>Job Code<br/>=&gt; SDK 혹은 AutoTest Tool 이용</p></td><td><p>1. 변경한 정보에 대해 업데이트 된다.<br/>&gt; 출력로그: 신규 프로토콜에 대한 로그 추가 예정<br/>2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.<br/>3. 업데이트된 설정으로 표시된다.</p></td></tr><tr><td>16</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 기 등록된 사용자 클릭<br/>2. 사용자의 \"Phrase Message\" 설정 변경 후 저장<br/>3. 출력로그 확인<br/>4. 인증을 통한 동작 확인</p></td><td><p>Phrase Message<br/>=&gt; SDK 혹은 AutoTest Tool 이용</p></td><td><p>1. 변경한 정보에 대해 업데이트 된다.<br/>&gt; 출력로그: 신규 프로토콜에 대한 로그 추가 예정<br/>2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.<br/>3. 업데이트된 설정으로 표시된다.</p></td></tr><tr><td>17</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 기 등록된 사용자 클릭<br/>2. 사용자의 \"Visual Face\" 설정 변경 후 저장<br/>3. 출력로그 확인<br/>4. 인증을 통한 동작 확인</p></td><td></td><td><p>1. 변경한 정보에 대해 업데이트 된다.<br/>&gt; 출력로그: 신규 프로토콜에 대한 로그 추가 예정<br/>2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.<br/>3. 업데이트된 설정으로 표시된다.</p></td></tr><tr><td>18</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 기 등록된 사용자 다수 선택<br/>2. Batch Edit&gt; User Group 변경 후 OK<br/>3. 출력로그 확인<br/>4. 인증을 통한 동작 확인</p></td><td><p>User Group<br/>&gt; Access Group에 설정되어진 User Group</p></td><td><p>1. 선택된 사용자에 Access Group에 대한 정보가 업데이트 된다.<br/>&gt; 출력로그: 신규 프로토콜에 대한 로그 추가 예정<br/>2. 업데이트된 설정으로 표시된다.</p></td></tr><tr><td>19</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 기 등록된 사용자 다수 선택<br/>2. Batch Edit&gt; User Group 변경 후 OK<br/>3. 출력로그 확인<br/>4. 인증을 통한 동작 확인</p></td><td><p>User Group<br/>&gt; Access Group에 설정되지 않은 User Group<br/>&gt; Face Group Matching에 설정되지 않은 User Group</p></td><td><p>1. 선택된 사용자에 대해 업데이트 되지 않는다.</p></td></tr><tr><td>20</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 기 등록된 사용자 다수 선택<br/>2. Batch Edit&gt; User Group 변경 후 OK<br/>3. 출력로그 확인<br/>4. 인증을 통한 동작 확인</p></td><td><p>User Group<br/>&gt; Face Group Matching에 설정되어진 User Group</p></td><td><p>1. 선택된 사용자에 그룹매칭에 대한 정보가 업데이트 된다.<br/>&gt; 출력로그: 신규 프로토콜에 대한 로그 추가 예정<br/>2. 업데이트된 설정으로 표시된다.</p></td></tr><tr><td>21</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 기 등록된 사용자 다수 선택<br/>2. Batch Edit&gt; Status 변경 후 OK<br/>3. 출력로그 확인<br/>4. 인증을 통한 동작 확인</p></td><td><p>Status<br/>=&gt; Active/Inactive</p></td><td><p>1. 선택된 사용자에 변경한 정보에 대해 업데이트 된다.<br/>&gt; 출력로그: 신규 프로토콜에 대한 로그 추가 예정<br/>2. 업데이트된 설정으로 동작된다.</p></td></tr><tr><td>22</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 기 등록된 사용자 다수 선택<br/>2. Batch Edit&gt; Period 설정 변경 후 OK<br/>3. 출력로그 확인<br/>4. 인증을 통한 동작 확인</p></td><td><p>Period 설정 변경 범위<br/>=&gt; 현재시간 포함<br/>=&gt; 현재시간 미포함</p></td><td><p>1. 선택된 사용자에 변경한 정보에 대해 업데이트 된다.<br/>&gt; 출력로그: 신규 프로토콜에 대한 로그 추가 예정<br/>2. 업데이트된 설정으로 동작된다.</p></td></tr><tr><td>23</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 기 등록된 사용자 다수 선택<br/>2. Batch Edit&gt; Access Group 설정 변경 후 OK<br/>3. 출력로그 확인<br/>4. 인증을 통한 동작 확인</p></td><td></td><td><p>1. 선택된 사용자에 Access Group에 대한 정보가 업데이트 된다.<br/>&gt; 출력로그: 신규 프로토콜에 대한 로그 추가 예정<br/>2. 업데이트된 설정으로 동작된다.</p></td></tr><tr><td>24</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목 &amp; 장치에 사용자 미등록 상태&#93;</span> <br/>1. 사용자 정보 변경 후 저장<br/>2. 출력로그 확인</p></td><td><p>사용자 정보<br/>&gt; 위에서 언급된 항목들 중 임의 항목 변경</p></td><td><p>1. 업데이트가 아닌 사용자 전체 정보가 전송된다.</p></td></tr><tr><td>25</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 사용자 1,2,3에 대해 CSV Export 수행<br/>2. 서버에서 사용자 2,3 삭제<br/>3. CSV Import 수행<br/>4. 장치에 전송된 출력로그 확인</p></td><td><p>CSV Import시 옵션<br/>&gt; preserve</p></td><td><p>1. 사용자 1,2,3에 대해 사용자 전체정보가 전송된다.(기존과 동일)<br/>※ CSV Import는 선별업데이트 미지원</p></td></tr><tr><td>26</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 사용자 1,2,3에 대해 CSV Export 수행<br/>2. 서버에서 사용자 2,3 삭제<br/>3. CSV Import 수행<br/>4. 장치에 전송된 출력로그 확인</p></td><td><p>CSV Import시 옵션<br/>&gt; overwrite</p></td><td><p>1. 사용자 1,2,3에 대해 사용자 전체정보가 전송된다.(기존과 동일)<br/>※ CSV Import는 선별업데이트 미지원</p></td></tr><tr><td>27</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used&#93;</span><br/>1. 사용자에 등록된 크리덴셜 리스트에 Sync 버튼 출력 유무 확인</p></td><td><p>등록된 크리덴셜<br/>&gt; Fingerprint<br/>&gt; Face<br/>&gt; Visual Face</p></td><td><p>1. Sync 버튼 표시되지 않는다.</p></td></tr><tr><td>28</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 사용자에 크리덴셜 등록 및 수정<br/>2. 사용자에 대해 Apply하지 않은 상태에서 Credential List에 Sync 버튼 출력 유무 확인</p></td><td><p>크리덴셜<br/>&gt; Fingerprint<br/>&gt; Face<br/>&gt; Visual Face</p></td><td><p>1. Sync 버튼 표시되지 않는다.</p></td></tr><tr><td>29</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. Fingerprint 가 등록된 사용자 클릭<br/>2. Credential List에서 Sync 버튼 클릭<br/>3. 출력로그 확인<br/>4. 인증을 통한 동작 확인</p></td><td></td><td><p>1. Continue/Cancel 팝업 발생된다.<br/>2. 크리덴셜 수정없이도 업데이트 된다.<br/>&gt; 출력로그: 신규 프로토콜에 대한 로그 추가 예정<br/>3. 장치에서 지원하지 않는 데이터는 전송하지 않는다.<br/>4. 업데이트된 설정으로 동작된다.</p></td></tr><tr><td>30</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. Face 가 등록된 사용자 클릭<br/>2. Credential List에서 Sync 버튼 클릭<br/>3. 출력로그 확인<br/>4. 인증을 통한 동작 확인</p></td><td></td><td><p>1. 크리덴셜 수정없이도 업데이트 된다.<br/>&gt; 출력로그: 신규 프로토콜에 대한 로그 추가 예정<br/>2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.<br/>3. 업데이트된 설정으로 동작된다.</p></td></tr><tr><td>31</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. Visual Face 가 등록된 사용자 클릭<br/>2. Credential List에서 Sync 버튼 클릭<br/>3. 출력로그 확인<br/>4. 인증을 통한 동작 확인</p></td><td></td><td><p>1. 크리덴셜 수정없이도 업데이트 된다.<br/>&gt; 출력로그: 신규 프로토콜에 대한 로그 추가 예정<br/>2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.<br/>3. 업데이트된 설정으로 동작된다.</p></td></tr><tr><td>32</td><td><p><span class=\"error\">&#91;사용자 동기화: All Devices(including user update from device&#93;</span><br/>1. 장치에서 사용자 정보 변경<br/>2. 다른 장치에 사용자 정보 업데이트 유무 확인</p></td><td></td><td><p>1. 다른 장치에도 사용자 정보가 업데이트 된다.</p></td></tr><tr><td>33</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used&#93;</span><br/>1. 서버에서 Mask에 해당하는 항목들 수정<br/>2. Transfer to device 수행</p></td><td><p>Transfer to device<br/>&gt; Overwrite 체크/미체크</p></td><td><p>1. 사용자 전체정보가 전송된다.</p></td></tr><tr><td>34</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 서버와 장치간 연결 끊음<br/>2. 사용자 정보 변경<br/>3. 서버와 장치간 재연결<br/>4. 인증을 통한 동작 확인</p></td><td><p>사용자 정보 변경<br/>&gt; 지원하는 Mask에 해당하는 항목</p></td><td><p>1. 변경한 정보에 대해 업데이트 된다.<br/>&gt; 출력로그: 신규 프로토콜에 대한 로그 추가 예정<br/>2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.<br/>3. 업데이트된 설정으로 동작된다.</p></td></tr><tr><td>35</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 다수의 카드가 등록된 사용자 클릭<br/>2. 사용자에 등록된 카드 1장 삭제 후 저장<br/>3. 출력로그 확인<br/>4. 인증을 통한 동작 확인</p></td><td></td><td><p>1. 변경한 정보에 대해 업데이트 된다.<br/>&gt; 출력로그: 신규 프로토콜에 대한 로그 추가 예정<br/>2. 업데이트된 설정으로 동작된다.</p></td></tr><tr><td>36</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 다수의 카드가 등록된 사용자 클릭<br/>2. 사용자에 등록된 모든 카드 삭제 후 저장<br/>3. 출력로그 확인<br/>4. 인증을 통한 동작 확인</p></td><td></td><td><p>1. 변경한 정보에 대해 업데이트 된다.<br/>&gt; 출력로그: 신규 프로토콜에 대한 로그 추가 예정<br/>2. 업데이트된 설정으로 동작된다.</p></td></tr><tr><td>37</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목 &amp; 선별적 업데이트 기능 미지원 FW 적용 장치&#93;</span><br/>1. 사용자 정보 변경<br/>2. 출력로그 확인</p></td><td><p>사용자 정보 변경<br/>&gt; 지원하는 Mask에 해당하는 항목</p></td><td><p>1. 사용자의 전체정보를 전송한다.<br/>&gt; 기존 프로토콜로 동작</p></td></tr><tr><td>38</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. Device&gt; Sync 수행</p></td><td></td><td><p>1. 사용자의 전제청보를 전송한다.</p></td></tr><tr><td>39</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. Device&gt; Delete &amp; Sync 수행</p></td><td></td><td><p>1. 사용자의 전제청보를 전송한다.<br/>&gt; Message popup 발생</p></td></tr><tr><td>40</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 서버 1:N or 1:1 크리덴셜 Max 등록<br/>2. 서버 사용자 장치와 동기화<br/>(장치, 사용자 동일한 A 사용자 등록 상태)<br/>3. A 사용자 크리덴셜 2~3개 추가 등록 후 저장<br/>4. 출력 로그 확인<br/>5. 인증을 통한 동작 확인</p></td><td><p>Credential<br/>=&gt; Finger<br/>=&gt; Card/QR 포함<br/>=&gt; Face <br/>=&gt; Visual Face</p></td><td><p>1. 최대 지원하는 갯수에 오버되기 때문에 변경한 정보에 대해 업데이트 되지 않는다.<br/>&gt; 원본 데이터 유지<br/>2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.<br/>3. 서버에서 추가한 크리덴셜에 대해서는 인증실패로 동작된다.<br/>4. 로그 출력 확인<br/>&gt; 장치의 max 템플릿 수 초과<br/>영문 : User partial update failed (Exceeded max credential count)<br/>국문 : 사용자 부분 업데이트 실패 (최대 크리덴셜 수 초과)</p></td></tr><tr><td>41</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 서버와 Fingerprint Template Format이 상이한 장치 추가<br/>2. 기 등록 사용자의 Fingerprint 설정 변경 후 저장<br/>3. 출력로그 확인<br/>4. 인증을 통한 동작 확인</p></td><td><p>Fingerprint Template Format<br/>&gt; Suprema<br/>&gt; ISO<br/>&gt; ANSI378</p></td><td><p>1. Template Format이 상이하기 때문에 변경한 정보에 대해 업데이트 되지 않는다.<br/>2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.</p></td></tr><tr><td>42</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. Visual Face 기 등록 사용자 클릭&gt; Visual Face 이미지 변경 후 저장<br/>2. 출력로그 확인</p></td><td><p>Visual Face 이미지 변경<br/>&gt; 큰 이미지<br/>&gt; 작은 이미지<br/>&gt; 사람이 아닌 이미지</p></td><td><p>1. 변경한 정보에 대해 업데이트 되지 않는다.<br/>&gt; 원본 데이터 유지</p></td></tr><tr><td>43</td><td><p><span class=\"error\">&#91;사용자 동기화 - Not Used 외 항목&#93;</span><br/>1. 장치에서 A 사용자 삭제<br/>2. 서버에서 A 사용자 수정<br/>3. 출력로그 확인</p></td><td></td><td><p>1. 로그 출력 확인<br/>장치에 해당 사용자 없음<br/>영문 : User partial update failed (User does not exist)<br/>국문 : 사용자 부분 업데이트 실패 (사용자 없음)</p></td></tr></table>",
-    "customfield_10248": null,
-    "customfield_10006": [],
-    "customfield_10007": [],
-    "customfield_10008": {
-      "issueId": 59291,
-      "statuses": [
-        {
-          "statusResults": [
-            {
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 34755,
-              "latestFinalId": 34755
-            },
-            {
-              "environment": "ES1",
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 29878,
-              "latestFinalId": 29878
-            },
-            {
-              "environment": "BioStarV2.9.6.30",
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 29878,
-              "latestFinalId": 29878
-            }
-          ]
-        }
-      ]
-    },
-    "customfield_12309": null,
-    "customfield_10802": null,
-    "customfield_10803": null,
-    "customfield_10805": null,
-    "summary": "Masking 을 이용한 사용자 정보의 선별적인 업데이트",
-    "customfield_10240": null,
-    "customfield_10000": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
-      "value": "Manual",
-      "id": "10000"
-    },
-    "customfield_10243": null,
-    "customfield_10001": null,
-    "customfield_10244": null,
-    "customfield_10002": null,
-    "customfield_10003": null,
-    "customfield_10246": null,
-    "customfield_10004": {
-      "steps": [
-        {
-          "id": 17251,
-          "index": 1,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 Credential 추가/삭제를 통해 갯수 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인",
-          "data": "Credential\n=> Finger/Card/Face/Visual Face/QR",
-          "result": "1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.\n3. 업데이트된 설정으로 동작된다.",
-          "attachments": []
-        },
-        {
-          "id": 17252,
-          "index": 2,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"Status\" 설정 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인",
-          "data": "Status\n=> Active/Inactive",
-          "result": "1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 동작된다.",
-          "attachments": []
-        },
-        {
-          "id": 17253,
-          "index": 3,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. Settings> Face Group Matching\n2. 설정 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인",
-          "data": "Face Group Matching\n=> Matching Group Settings",
-          "result": "1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.\n3. 업데이트된 설정으로 동작된다.",
-          "attachments": []
-        },
-        {
-          "id": 17254,
-          "index": 4,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"Period\" 설정 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인",
-          "data": "Period 설정 변경 범위\n=> 현재시간 포함\n=> 현재시간 미포함",
-          "result": "1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 동작된다.",
-          "attachments": []
-        },
-        {
-          "id": 17255,
-          "index": 5,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"Private Auth Mode\" 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인",
-          "data": "Private Auth Mode\n=> Biometrics/Card/ID",
-          "result": "1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 동작된다.",
-          "attachments": []
-        },
-        {
-          "id": 17256,
-          "index": 6,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"Private Auth Mode\" 설정 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인",
-          "data": "Private Auth Mode\n=> Extended Auth Mode",
-          "result": "1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.\n3. 업데이트된 설정으로 동작된다.",
-          "attachments": []
-        },
-        {
-          "id": 17257,
-          "index": 7,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"1:1 Security Level 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인",
-          "data": "1:1 Security Level\n=> Device Default/Lowest/Low/Normal/High/Highest\n",
-          "result": "1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 동작된다.",
-          "attachments": []
-        },
-        {
-          "id": 17258,
-          "index": 8,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"Name\" 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인",
-          "data": "Name\n=> 국문/영문/특수문자\n=> 글자수",
-          "result": "1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 동작된다.",
-          "attachments": []
-        },
-        {
-          "id": 17259,
-          "index": 9,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"Profile Image\" 변경 후 저장\n3. 출력로그 확인\n4. LCD 지원장치에서 사용자의 Profile Image 업데이트 확인",
-          "data": "",
-          "result": "1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.\n3. 업데이트된 설정으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 17260,
-          "index": 10,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"PIN\" 설정 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인",
-          "data": "",
-          "result": "1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 동작된다.",
-          "attachments": []
-        },
-        {
-          "id": 17261,
-          "index": 11,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"Card\" 설정 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인",
-          "data": "Card\n=> CSN Type/Wiegand Type/Smart Card(=SCC 발급)",
-          "result": "1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 동작된다.",
-          "attachments": []
-        },
-        {
-          "id": 17262,
-          "index": 12,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"Fingerprint\" 설정 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인",
-          "data": "",
-          "result": "1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.\n3. 업데이트된 설정으로 동작된다.",
-          "attachments": []
-        },
-        {
-          "id": 17263,
-          "index": 13,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"Face\" 설정 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인",
-          "data": "",
-          "result": "1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.\n3. 업데이트된 설정으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 17264,
-          "index": 14,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"Access Group\" 설정 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인",
-          "data": "Access Group\n=> 사용자/사용자 그룹 추가/수정/삭제",
-          "result": "1. 변경한 사용자 및 사용자 그룹에 속한 사용자에 Access Group에 대한 정보가 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 동작된다.\n\n※ access control 메뉴가 아닌 user 메뉴에서 변경 시에만 해당",
-          "attachments": []
-        },
-        {
-          "id": 17265,
-          "index": 15,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"JobCode\" 설정 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인",
-          "data": "Job Code\n=> SDK 혹은 AutoTest Tool 이용",
-          "result": "1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.\n3. 업데이트된 설정으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 17266,
-          "index": 16,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"Phrase Message\" 설정 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인",
-          "data": "Phrase Message\n=> SDK 혹은 AutoTest Tool 이용",
-          "result": "1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.\n3. 업데이트된 설정으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 17267,
-          "index": 17,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"Visual Face\" 설정 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인",
-          "data": "",
-          "result": "1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.\n3. 업데이트된 설정으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 17268,
-          "index": 18,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 다수 선택\n2. Batch Edit> User Group 변경 후 OK\n3. 출력로그 확인\n4. 인증을 통한 동작 확인",
-          "data": "User Group\n> Access Group에 설정되어진 User Group",
-          "result": "1. 선택된 사용자에 Access Group에 대한 정보가 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 17269,
-          "index": 19,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 다수 선택\n2. Batch Edit> User Group 변경 후 OK\n3. 출력로그 확인\n4. 인증을 통한 동작 확인",
-          "data": "User Group\n> Access Group에 설정되지 않은 User Group\n> Face Group Matching에 설정되지 않은 User Group",
-          "result": "1. 선택된 사용자에 대해 업데이트 되지 않는다.",
-          "attachments": []
-        },
-        {
-          "id": 17270,
-          "index": 20,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 다수 선택\n2. Batch Edit> User Group 변경 후 OK\n3. 출력로그 확인\n4. 인증을 통한 동작 확인",
-          "data": "User Group\n> Face Group Matching에 설정되어진 User Group",
-          "result": "1. 선택된 사용자에 그룹매칭에 대한 정보가 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 17271,
-          "index": 21,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 다수 선택\n2. Batch Edit> Status 변경 후 OK\n3. 출력로그 확인\n4. 인증을 통한 동작 확인",
-          "data": "Status\n=> Active/Inactive",
-          "result": "1. 선택된 사용자에 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 동작된다.",
-          "attachments": []
-        },
-        {
-          "id": 17272,
-          "index": 22,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 다수 선택\n2. Batch Edit> Period 설정 변경 후 OK\n3. 출력로그 확인\n4. 인증을 통한 동작 확인",
-          "data": "Period 설정 변경 범위\n=> 현재시간 포함\n=> 현재시간 미포함",
-          "result": "1. 선택된 사용자에 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 동작된다.",
-          "attachments": []
-        },
-        {
-          "id": 17273,
-          "index": 23,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 다수 선택\n2. Batch Edit> Access Group 설정 변경 후 OK\n3. 출력로그 확인\n4. 인증을 통한 동작 확인",
-          "data": "",
-          "result": "1. 선택된 사용자에 Access Group에 대한 정보가 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 동작된다.",
-          "attachments": []
-        },
-        {
-          "id": 17274,
-          "index": 24,
-          "step": "[사용자 동기화 - Not Used 외 항목 & 장치에 사용자 미등록 상태] \n1. 사용자 정보 변경 후 저장\n2. 출력로그 확인",
-          "data": "사용자 정보\n> 위에서 언급된 항목들 중 임의 항목 변경",
-          "result": "1. 업데이트가 아닌 사용자 전체 정보가 전송된다.",
-          "attachments": []
-        },
-        {
-          "id": 17275,
-          "index": 25,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 사용자 1,2,3에 대해 CSV Export 수행\n2. 서버에서 사용자 2,3 삭제\n3. CSV Import 수행\n4. 장치에 전송된 출력로그 확인",
-          "data": "CSV Import시 옵션\n> preserve",
-          "result": "1. 사용자 1,2,3에 대해 사용자 전체정보가 전송된다.(기존과 동일)\n※ CSV Import는 선별업데이트 미지원",
-          "attachments": []
-        },
-        {
-          "id": 17276,
-          "index": 26,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 사용자 1,2,3에 대해 CSV Export 수행\n2. 서버에서 사용자 2,3 삭제\n3. CSV Import 수행\n4. 장치에 전송된 출력로그 확인",
-          "data": "CSV Import시 옵션\n> overwrite",
-          "result": "1. 사용자 1,2,3에 대해 사용자 전체정보가 전송된다.(기존과 동일)\n※ CSV Import는 선별업데이트 미지원",
-          "attachments": []
-        },
-        {
-          "id": 17277,
-          "index": 27,
-          "step": "[사용자 동기화 - Not Used]\n1. 사용자에 등록된 크리덴셜 리스트에 Sync 버튼 출력 유무 확인\n",
-          "data": "등록된 크리덴셜\n> Fingerprint\n> Face\n> Visual Face",
-          "result": "1. Sync 버튼 표시되지 않는다.",
-          "attachments": []
-        },
-        {
-          "id": 17278,
-          "index": 28,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 사용자에 크리덴셜 등록 및 수정\n2. 사용자에 대해 Apply하지 않은 상태에서 Credential List에 Sync 버튼 출력 유무 확인\n",
-          "data": "크리덴셜\n> Fingerprint\n> Face\n> Visual Face",
-          "result": "1. Sync 버튼 표시되지 않는다.",
-          "attachments": []
-        },
-        {
-          "id": 17279,
-          "index": 29,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. Fingerprint 가 등록된 사용자 클릭\n2. Credential List에서 Sync 버튼 클릭\n3. 출력로그 확인\n4. 인증을 통한 동작 확인",
-          "data": "",
-          "result": "1. Continue/Cancel 팝업 발생된다.\n2. 크리덴셜 수정없이도 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n3. 장치에서 지원하지 않는 데이터는 전송하지 않는다.\n4. 업데이트된 설정으로 동작된다.",
-          "attachments": []
-        },
-        {
-          "id": 17280,
-          "index": 30,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. Face 가 등록된 사용자 클릭\n2. Credential List에서 Sync 버튼 클릭\n3. 출력로그 확인\n4. 인증을 통한 동작 확인",
-          "data": "",
-          "result": "1. 크리덴셜 수정없이도 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.\n3. 업데이트된 설정으로 동작된다.",
-          "attachments": []
-        },
-        {
-          "id": 17281,
-          "index": 31,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. Visual Face 가 등록된 사용자 클릭\n2. Credential List에서 Sync 버튼 클릭\n3. 출력로그 확인\n4. 인증을 통한 동작 확인",
-          "data": "",
-          "result": "1. 크리덴셜 수정없이도 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.\n3. 업데이트된 설정으로 동작된다.",
-          "attachments": []
-        },
-        {
-          "id": 17282,
-          "index": 32,
-          "step": "[사용자 동기화: All Devices(including user update from device]\n1. 장치에서 사용자 정보 변경\n2. 다른 장치에 사용자 정보 업데이트 유무 확인",
-          "data": "",
-          "result": "1. 다른 장치에도 사용자 정보가 업데이트 된다.",
-          "attachments": []
-        },
-        {
-          "id": 17283,
-          "index": 33,
-          "step": "[사용자 동기화 - Not Used]\n1. 서버에서 Mask에 해당하는 항목들 수정\n2. Transfer to device 수행",
-          "data": "Transfer to device\n> Overwrite 체크/미체크",
-          "result": "1. 사용자 전체정보가 전송된다.",
-          "attachments": []
-        },
-        {
-          "id": 17284,
-          "index": 34,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 서버와 장치간 연결 끊음\n2. 사용자 정보 변경\n3. 서버와 장치간 재연결\n4. 인증을 통한 동작 확인",
-          "data": "사용자 정보 변경\n> 지원하는 Mask에 해당하는 항목",
-          "result": "1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.\n3. 업데이트된 설정으로 동작된다.",
-          "attachments": []
-        },
-        {
-          "id": 17285,
-          "index": 35,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 다수의 카드가 등록된 사용자 클릭\n2. 사용자에 등록된 카드 1장 삭제 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인",
-          "data": "",
-          "result": "1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 동작된다.",
-          "attachments": []
-        },
-        {
-          "id": 17286,
-          "index": 36,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 다수의 카드가 등록된 사용자 클릭\n2. 사용자에 등록된 모든 카드 삭제 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인",
-          "result": "1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 동작된다.",
-          "attachments": []
-        },
-        {
-          "id": 17287,
-          "index": 37,
-          "step": "[사용자 동기화 - Not Used 외 항목 & 선별적 업데이트 기능 미지원 FW 적용 장치]\n1. 사용자 정보 변경\n2. 출력로그 확인",
-          "data": "사용자 정보 변경\n> 지원하는 Mask에 해당하는 항목",
-          "result": "1. 사용자의 전체정보를 전송한다.\n> 기존 프로토콜로 동작",
-          "attachments": []
-        },
-        {
-          "id": 17288,
-          "index": 38,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. Device> Sync 수행",
-          "data": "",
-          "result": "1. 사용자의 전제청보를 전송한다.",
-          "attachments": []
-        },
-        {
-          "id": 17289,
-          "index": 39,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. Device> Delete & Sync 수행",
-          "data": "",
-          "result": "1. 사용자의 전제청보를 전송한다.\n> Message popup 발생",
-          "attachments": []
-        },
-        {
-          "id": 17290,
-          "index": 40,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 서버 1:N or 1:1 크리덴셜 Max 등록\n2. 서버 사용자 장치와 동기화\n(장치, 사용자 동일한 A 사용자 등록 상태)\n3. A 사용자 크리덴셜 2~3개 추가 등록 후 저장\n4. 출력 로그 확인\n5. 인증을 통한 동작 확인",
-          "data": "Credential\n=> Finger\n=> Card/QR 포함\n=> Face \n=> Visual Face",
-          "result": "1. 최대 지원하는 갯수에 오버되기 때문에 변경한 정보에 대해 업데이트 되지 않는다.\n> 원본 데이터 유지\n2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.\n3. 서버에서 추가한 크리덴셜에 대해서는 인증실패로 동작된다.\n4. 로그 출력 확인\n> 장치의 max 템플릿 수 초과\n영문 : User partial update failed (Exceeded max credential count)\n국문 : 사용자 부분 업데이트 실패 (최대 크리덴셜 수 초과)",
-          "attachments": []
-        },
-        {
-          "id": 17291,
-          "index": 41,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 서버와 Fingerprint Template Format이 상이한 장치 추가\n2. 기 등록 사용자의 Fingerprint 설정 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인",
-          "data": "Fingerprint Template Format\n> Suprema\n> ISO\n> ANSI378",
-          "result": "1. Template Format이 상이하기 때문에 변경한 정보에 대해 업데이트 되지 않는다.\n2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.",
-          "attachments": []
-        },
-        {
-          "id": 17292,
-          "index": 42,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. Visual Face 기 등록 사용자 클릭> Visual Face 이미지 변경 후 저장\n2. 출력로그 확인",
-          "data": "Visual Face 이미지 변경\n> 큰 이미지\n> 작은 이미지\n> 사람이 아닌 이미지",
-          "result": "1. 변경한 정보에 대해 업데이트 되지 않는다.\n> 원본 데이터 유지",
-          "attachments": []
-        },
-        {
-          "id": 18080,
-          "index": 43,
-          "step": "[사용자 동기화 - Not Used 외 항목]\n1. 장치에서 A 사용자 삭제\n2. 서버에서 A 사용자 수정\n3. 출력로그 확인",
-          "result": "1. 로그 출력 확인\n장치에 해당 사용자 없음\n영문 : User partial update failed (User does not exist)\n국문 : 사용자 부분 업데이트 실패 (사용자 없음)",
-          "attachments": []
-        }
-      ]
-    },
-    "customfield_10236": null,
-    "customfield_10237": null,
-    "environment": null,
-    "customfield_10238": null,
-    "customfield_10239": null,
-    "duedate": null,
-    "comment": {
-      "comments": [],
-      "maxResults": 0,
-      "total": 0,
-      "startAt": 0
-    },
-    "customfield_10230": null,
-    "fixVersions": [],
-    "customfield_10231": null,
-    "customfield_10232": null,
-    "customfield_10233": null,
-    "customfield_12410": null,
-    "customfield_10234": null,
-    "customfield_10235": null,
-    "customfield_10225": null,
-    "customfield_12404": null,
-    "customfield_10226": null,
-    "customfield_12403": null,
-    "customfield_10227": null,
-    "customfield_12406": null,
-    "customfield_10228": null,
-    "customfield_10229": null,
-    "customfield_10900": null,
-    "customfield_12408": null,
-    "customfield_10901": null,
-    "customfield_10902": null,
-    "customfield_10903": null,
-    "customfield_12409": null,
-    "customfield_10904": null,
-    "customfield_10905": null,
-    "customfield_10220": null,
-    "priority": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-      "name": "미할당",
-      "id": "10100"
-    },
-    "customfield_10221": null,
-    "customfield_12400": null,
-    "customfield_12402": null,
-    "customfield_10224": null,
-    "customfield_10214": null,
-    "customfield_10217": null,
-    "customfield_10218": null,
-    "timeestimate": null,
-    "versions": [],
-    "customfield_10219": null,
-    "status": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
-      "description": "",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
-      "name": "할 일",
-      "id": "10000",
-      "statusCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
-        "id": 2,
-        "key": "new",
-        "colorName": "blue-gray",
-        "name": "할 일"
-      }
-    },
-    "customfield_12510": null,
-    "customfield_10213": null,
-    "customfield_12511": null,
-    "customfield_10203": null,
-    "customfield_10204": null,
-    "customfield_12502": null,
-    "customfield_10205": null,
-    "customfield_10206": null,
-    "customfield_10207": null,
-    "aggregatetimeestimate": null,
-    "customfield_10208": null,
-    "customfield_10209": null,
-    "customfield_12509": null,
-    "customfield_12508": null,
-    "creator": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=ybwoo",
-      "name": "ybwoo",
-      "key": "JIRAUSER13405",
-      "emailAddress": "ybwoo@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-      },
-      "displayName": "우유빈",
-      "active": true,
-      "timeZone": "Asia/Seoul"
-    },
-    "aggregateprogress": {
-      "progress": 0,
-      "total": 0
-    },
-    "customfield_10320": null,
-    "customfield_10321": null,
-    "customfield_12501": null,
-    "customfield_10202": null,
-    "customfield_12500": null,
-    "customfield_10313": "1|hzxt67:",
-    "customfield_10316": null,
-    "customfield_10317": null,
-    "timespent": null,
-    "aggregatetimespent": null,
-    "customfield_10310": null,
-    "customfield_10302": null,
-    "customfield_10303": null,
-    "customfield_12601": null,
-    "customfield_10304": null,
-    "customfield_10305": null,
-    "customfield_10308": null,
-    "workratio": -1,
-    "created": "2023-09-22T11:25:42.000+0900",
-    "customfield_10533": null,
-    "customfield_10534": null,
-    "customfield_11501": null,
-    "customfield_11503": null,
-    "customfield_13001": null,
-    "customfield_13000": null,
-    "customfield_10530": null,
-    "customfield_10531": null,
-    "customfield_10532": null,
-    "customfield_10401": null,
-    "customfield_10522": null,
-    "customfield_10402": null,
-    "customfield_12700": null,
-    "customfield_10524": null,
-    "customfield_10525": null,
-    "customfield_12702": null,
-    "attachment": [],
-    "customfield_10526": null,
-    "customfield_12704": null,
-    "customfield_10528": null,
-    "customfield_12706": null,
-    "customfield_10520": null,
-    "customfield_10521": null,
-    "customfield_10400": null,
-    "customfield_10511": null,
-    "customfield_10512": null,
-    "customfield_11600": null,
-    "customfield_10513": null,
-    "customfield_10514": null,
-    "customfield_10515": null,
-    "customfield_10516": null,
-    "customfield_10517": null,
-    "customfield_10518": null,
-    "customfield_10519": null
+[
+  {
+    "id": "COMMONR-324_step_1",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 Credential 추가/삭제를 통해 갯수 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인\nTest Data: Credential\n=> Finger/Card/Face/Visual Face/QR\nExpected Result: 1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.\n3. 업데이트된 설정으로 동작된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "1",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_2",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"Status\" 설정 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인\nTest Data: Status\n=> Active/Inactive\nExpected Result: 1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 동작된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "2",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_3",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. Settings> Face Group Matching\n2. 설정 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인\nTest Data: Face Group Matching\n=> Matching Group Settings\nExpected Result: 1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.\n3. 업데이트된 설정으로 동작된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "3",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_4",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"Period\" 설정 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인\nTest Data: Period 설정 변경 범위\n=> 현재시간 포함\n=> 현재시간 미포함\nExpected Result: 1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 동작된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "4",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_5",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"Private Auth Mode\" 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인\nTest Data: Private Auth Mode\n=> Biometrics/Card/ID\nExpected Result: 1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 동작된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "5",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_6",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"Private Auth Mode\" 설정 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인\nTest Data: Private Auth Mode\n=> Extended Auth Mode\nExpected Result: 1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.\n3. 업데이트된 설정으로 동작된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "6",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_7",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"1:1 Security Level 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인\nTest Data: 1:1 Security Level\n=> Device Default/Lowest/Low/Normal/High/Highest\n\nExpected Result: 1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 동작된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "7",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_8",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"Name\" 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인\nTest Data: Name\n=> 국문/영문/특수문자\n=> 글자수\nExpected Result: 1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 동작된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "8",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_9",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"Profile Image\" 변경 후 저장\n3. 출력로그 확인\n4. LCD 지원장치에서 사용자의 Profile Image 업데이트 확인\nExpected Result: 1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.\n3. 업데이트된 설정으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "9",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_10",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"PIN\" 설정 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인\nExpected Result: 1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 동작된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "10",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_11",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"Card\" 설정 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인\nTest Data: Card\n=> CSN Type/Wiegand Type/Smart Card(=SCC 발급)\nExpected Result: 1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 동작된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "11",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_12",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"Fingerprint\" 설정 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인\nExpected Result: 1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.\n3. 업데이트된 설정으로 동작된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "12",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_13",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"Face\" 설정 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인\nExpected Result: 1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.\n3. 업데이트된 설정으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "13",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_14",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"Access Group\" 설정 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인\nTest Data: Access Group\n=> 사용자/사용자 그룹 추가/수정/삭제\nExpected Result: 1. 변경한 사용자 및 사용자 그룹에 속한 사용자에 Access Group에 대한 정보가 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 동작된다.\n\n※ access control 메뉴가 아닌 user 메뉴에서 변경 시에만 해당",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "14",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_15",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"JobCode\" 설정 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인\nTest Data: Job Code\n=> SDK 혹은 AutoTest Tool 이용\nExpected Result: 1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.\n3. 업데이트된 설정으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "15",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_16",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"Phrase Message\" 설정 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인\nTest Data: Phrase Message\n=> SDK 혹은 AutoTest Tool 이용\nExpected Result: 1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.\n3. 업데이트된 설정으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "16",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_17",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 클릭\n2. 사용자의 \"Visual Face\" 설정 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인\nExpected Result: 1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.\n3. 업데이트된 설정으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "17",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_18",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 다수 선택\n2. Batch Edit> User Group 변경 후 OK\n3. 출력로그 확인\n4. 인증을 통한 동작 확인\nTest Data: User Group\n> Access Group에 설정되어진 User Group\nExpected Result: 1. 선택된 사용자에 Access Group에 대한 정보가 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "18",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_19",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 다수 선택\n2. Batch Edit> User Group 변경 후 OK\n3. 출력로그 확인\n4. 인증을 통한 동작 확인\nTest Data: User Group\n> Access Group에 설정되지 않은 User Group\n> Face Group Matching에 설정되지 않은 User Group\nExpected Result: 1. 선택된 사용자에 대해 업데이트 되지 않는다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "19",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_20",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 다수 선택\n2. Batch Edit> User Group 변경 후 OK\n3. 출력로그 확인\n4. 인증을 통한 동작 확인\nTest Data: User Group\n> Face Group Matching에 설정되어진 User Group\nExpected Result: 1. 선택된 사용자에 그룹매칭에 대한 정보가 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "20",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_21",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 다수 선택\n2. Batch Edit> Status 변경 후 OK\n3. 출력로그 확인\n4. 인증을 통한 동작 확인\nTest Data: Status\n=> Active/Inactive\nExpected Result: 1. 선택된 사용자에 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 동작된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "21",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_22",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 다수 선택\n2. Batch Edit> Period 설정 변경 후 OK\n3. 출력로그 확인\n4. 인증을 통한 동작 확인\nTest Data: Period 설정 변경 범위\n=> 현재시간 포함\n=> 현재시간 미포함\nExpected Result: 1. 선택된 사용자에 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 동작된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "22",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_23",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 기 등록된 사용자 다수 선택\n2. Batch Edit> Access Group 설정 변경 후 OK\n3. 출력로그 확인\n4. 인증을 통한 동작 확인\nExpected Result: 1. 선택된 사용자에 Access Group에 대한 정보가 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 동작된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "23",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_24",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목 & 장치에 사용자 미등록 상태] \n1. 사용자 정보 변경 후 저장\n2. 출력로그 확인\nTest Data: 사용자 정보\n> 위에서 언급된 항목들 중 임의 항목 변경\nExpected Result: 1. 업데이트가 아닌 사용자 전체 정보가 전송된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "24",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_25",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 사용자 1,2,3에 대해 CSV Export 수행\n2. 서버에서 사용자 2,3 삭제\n3. CSV Import 수행\n4. 장치에 전송된 출력로그 확인\nTest Data: CSV Import시 옵션\n> preserve\nExpected Result: 1. 사용자 1,2,3에 대해 사용자 전체정보가 전송된다.(기존과 동일)\n※ CSV Import는 선별업데이트 미지원",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "25",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_26",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 사용자 1,2,3에 대해 CSV Export 수행\n2. 서버에서 사용자 2,3 삭제\n3. CSV Import 수행\n4. 장치에 전송된 출력로그 확인\nTest Data: CSV Import시 옵션\n> overwrite\nExpected Result: 1. 사용자 1,2,3에 대해 사용자 전체정보가 전송된다.(기존과 동일)\n※ CSV Import는 선별업데이트 미지원",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "26",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_27",
+    "document": "Test Step: [사용자 동기화 - Not Used]\n1. 사용자에 등록된 크리덴셜 리스트에 Sync 버튼 출력 유무 확인\n\nTest Data: 등록된 크리덴셜\n> Fingerprint\n> Face\n> Visual Face\nExpected Result: 1. Sync 버튼 표시되지 않는다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "27",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_28",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 사용자에 크리덴셜 등록 및 수정\n2. 사용자에 대해 Apply하지 않은 상태에서 Credential List에 Sync 버튼 출력 유무 확인\n\nTest Data: 크리덴셜\n> Fingerprint\n> Face\n> Visual Face\nExpected Result: 1. Sync 버튼 표시되지 않는다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "28",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_29",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. Fingerprint 가 등록된 사용자 클릭\n2. Credential List에서 Sync 버튼 클릭\n3. 출력로그 확인\n4. 인증을 통한 동작 확인\nExpected Result: 1. Continue/Cancel 팝업 발생된다.\n2. 크리덴셜 수정없이도 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n3. 장치에서 지원하지 않는 데이터는 전송하지 않는다.\n4. 업데이트된 설정으로 동작된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "29",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_30",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. Face 가 등록된 사용자 클릭\n2. Credential List에서 Sync 버튼 클릭\n3. 출력로그 확인\n4. 인증을 통한 동작 확인\nExpected Result: 1. 크리덴셜 수정없이도 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.\n3. 업데이트된 설정으로 동작된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "30",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_31",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. Visual Face 가 등록된 사용자 클릭\n2. Credential List에서 Sync 버튼 클릭\n3. 출력로그 확인\n4. 인증을 통한 동작 확인\nExpected Result: 1. 크리덴셜 수정없이도 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.\n3. 업데이트된 설정으로 동작된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "31",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_32",
+    "document": "Test Step: [사용자 동기화: All Devices(including user update from device]\n1. 장치에서 사용자 정보 변경\n2. 다른 장치에 사용자 정보 업데이트 유무 확인\nExpected Result: 1. 다른 장치에도 사용자 정보가 업데이트 된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "32",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_33",
+    "document": "Test Step: [사용자 동기화 - Not Used]\n1. 서버에서 Mask에 해당하는 항목들 수정\n2. Transfer to device 수행\nTest Data: Transfer to device\n> Overwrite 체크/미체크\nExpected Result: 1. 사용자 전체정보가 전송된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "33",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_34",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 서버와 장치간 연결 끊음\n2. 사용자 정보 변경\n3. 서버와 장치간 재연결\n4. 인증을 통한 동작 확인\nTest Data: 사용자 정보 변경\n> 지원하는 Mask에 해당하는 항목\nExpected Result: 1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.\n3. 업데이트된 설정으로 동작된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "34",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_35",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 다수의 카드가 등록된 사용자 클릭\n2. 사용자에 등록된 카드 1장 삭제 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인\nExpected Result: 1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 동작된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "35",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_36",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 다수의 카드가 등록된 사용자 클릭\n2. 사용자에 등록된 모든 카드 삭제 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인\nExpected Result: 1. 변경한 정보에 대해 업데이트 된다.\n> 출력로그: 신규 프로토콜에 대한 로그 추가 예정\n2. 업데이트된 설정으로 동작된다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "36",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_37",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목 & 선별적 업데이트 기능 미지원 FW 적용 장치]\n1. 사용자 정보 변경\n2. 출력로그 확인\nTest Data: 사용자 정보 변경\n> 지원하는 Mask에 해당하는 항목\nExpected Result: 1. 사용자의 전체정보를 전송한다.\n> 기존 프로토콜로 동작",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "37",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_38",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. Device> Sync 수행\nExpected Result: 1. 사용자의 전제청보를 전송한다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "38",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_39",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. Device> Delete & Sync 수행\nExpected Result: 1. 사용자의 전제청보를 전송한다.\n> Message popup 발생",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "39",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_40",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 서버 1:N or 1:1 크리덴셜 Max 등록\n2. 서버 사용자 장치와 동기화\n(장치, 사용자 동일한 A 사용자 등록 상태)\n3. A 사용자 크리덴셜 2~3개 추가 등록 후 저장\n4. 출력 로그 확인\n5. 인증을 통한 동작 확인\nTest Data: Credential\n=> Finger\n=> Card/QR 포함\n=> Face \n=> Visual Face\nExpected Result: 1. 최대 지원하는 갯수에 오버되기 때문에 변경한 정보에 대해 업데이트 되지 않는다.\n> 원본 데이터 유지\n2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.\n3. 서버에서 추가한 크리덴셜에 대해서는 인증실패로 동작된다.\n4. 로그 출력 확인\n> 장치의 max 템플릿 수 초과\n영문 : User partial update failed (Exceeded max credential count)\n국문 : 사용자 부분 업데이트 실패 (최대 크리덴셜 수 초과)",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "40",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_41",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 서버와 Fingerprint Template Format이 상이한 장치 추가\n2. 기 등록 사용자의 Fingerprint 설정 변경 후 저장\n3. 출력로그 확인\n4. 인증을 통한 동작 확인\nTest Data: Fingerprint Template Format\n> Suprema\n> ISO\n> ANSI378\nExpected Result: 1. Template Format이 상이하기 때문에 변경한 정보에 대해 업데이트 되지 않는다.\n2. 장치에서 지원하지 않는 데이터는 전송하지 않는다.",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "41",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_42",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. Visual Face 기 등록 사용자 클릭> Visual Face 이미지 변경 후 저장\n2. 출력로그 확인\nTest Data: Visual Face 이미지 변경\n> 큰 이미지\n> 작은 이미지\n> 사람이 아닌 이미지\nExpected Result: 1. 변경한 정보에 대해 업데이트 되지 않는다.\n> 원본 데이터 유지",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "42",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-324_step_43",
+    "document": "Test Step: [사용자 동기화 - Not Used 외 항목]\n1. 장치에서 A 사용자 삭제\n2. 서버에서 A 사용자 수정\n3. 출력로그 확인\nExpected Result: 1. 로그 출력 확인\n장치에 해당 사용자 없음\n영문 : User partial update failed (User does not exist)\n국문 : 사용자 부분 업데이트 실패 (사용자 없음)",
+    "metadata": {
+      "issue_key": "COMMONR-324",
+      "step_index": "43",
+      "source": "jira_test_step"
+    }
   }
-}
+]

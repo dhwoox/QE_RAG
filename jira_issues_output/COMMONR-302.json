@@ -1,1216 +1,668 @@
-{
-  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
-  "id": "55440",
-  "self": "https://jira.suprema.co.kr/rest/api/2/issue/55440",
-  "key": "COMMONR-302",
-  "fields": {
-    "resolution": null,
-    "customfield_13103": null,
-    "customfield_10510": null,
-    "customfield_10500": "0.0",
-    "customfield_10501": null,
-    "customfield_10502": null,
-    "customfield_12802": null,
-    "customfield_12804": null,
-    "customfield_10505": null,
-    "customfield_12803": null,
-    "customfield_10506": null,
-    "customfield_12806": null,
-    "customfield_10507": null,
-    "customfield_12805": null,
-    "customfield_10508": null,
-    "customfield_12808": null,
-    "customfield_10509": null,
-    "lastViewed": null,
-    "customfield_10180": null,
-    "customfield_10181": null,
-    "customfield_10182": null,
-    "customfield_10183": null,
-    "customfield_10184": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10173",
-      "value": "Major",
-      "id": "10173"
-    },
-    "customfield_10185": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
-      "value": "Medium (2-3일 이내 피드백)",
-      "id": "10220"
-    },
-    "labels": [],
-    "customfield_11702": null,
-    "aggregatetimeoriginalestimate": null,
-    "issuelinks": [
-      {
-        "id": "50288",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/50288",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "60082",
-          "key": "CSTFW-867",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/60082",
-          "fields": {
-            "summary": "OSDP Antenna 비활성화 상태이지만 무선 도어락 동작하는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
-              "name": "Critical (A+)",
-              "id": "1"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "50297",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/50297",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "60087",
-          "key": "CSTFW-868",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/60087",
-          "fields": {
-            "summary": "무선 도어락 자동 추가 시도 시, 무선 도어락 검색 중 타임아웃이 발생할 경우에 대기 시간을 초과하였습니다. 팝업 발생",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
-              "name": "Critical (A+)",
-              "id": "1"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "50307",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/50307",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "60092",
-          "key": "CSTFW-869",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/60092",
-          "fields": {
-            "summary": "무선 도어락 Lock 상태에서 CS40 Reboot 시 Lock이 해제되는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
-              "name": "Critical (A+)",
-              "id": "1"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "51179",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/51179",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "60745",
-          "key": "CSTFW-898",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/60745",
-          "fields": {
-            "summary": "[U&Z 무선도어락] DOOR OPEN 시 바이오스타이벤트 로그에 Door open request by operator 로그 device 표시 오류",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10109",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/generic.png",
-              "name": "Developed",
-              "id": "10109",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/4",
-                "id": 4,
-                "key": "indeterminate",
-                "colorName": "yellow",
-                "name": "진행 중"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
-              "name": "Major (B+)",
-              "id": "10200"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "45849",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/45849",
-        "type": {
-          "id": "10003",
-          "name": "Relates",
-          "inward": "relates to",
-          "outward": "relates to",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
-        },
-        "outwardIssue": {
-          "id": "55398",
-          "key": "BES-841",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/55398",
-          "fields": {
-            "summary": "Test Case 작성",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "완료",
-              "id": "10001",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
-              "id": "5",
-              "description": "이슈의 부작업",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
-              "name": "부작업",
-              "subtask": true,
-              "avatarId": 10316
-            }
-          }
-        }
-      },
-      {
-        "id": "47556",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/47556",
-        "type": {
-          "id": "10200",
-          "name": "Tests",
-          "inward": "tested by",
-          "outward": "tests",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10200"
-        },
-        "inwardIssue": {
-          "id": "54846",
-          "key": "CSTFW-826",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/54846",
-          "fields": {
-            "summary": "[BDP-726][CS40] Support UZ Wireless door lock 지원",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/2",
-              "id": "2",
-              "description": "개발해야할 제품의 새 기능.",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10311&avatarType=issuetype",
-              "name": "새 기능",
-              "subtask": false,
-              "avatarId": 10311
-            }
-          }
-        }
-      }
-    ],
-    "assignee": null,
-    "components": [],
-    "customfield_10170": null,
-    "customfield_10171": null,
-    "customfield_10172": null,
-    "customfield_10174": null,
-    "customfield_10175": null,
-    "customfield_10176": null,
-    "customfield_10177": null,
-    "customfield_10178": null,
-    "customfield_10179": null,
-    "customfield_10600": 74.0,
-    "customfield_10601": [],
-    "customfield_12901": null,
-    "customfield_10602": null,
-    "customfield_12900": null,
-    "subtasks": [],
-    "reporter": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=brlee",
-      "name": "brlee",
-      "key": "JIRAUSER13401",
-      "emailAddress": "brlee@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11016",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11016",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11016",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11016"
-      },
-      "displayName": "이보라",
-      "active": false,
-      "timeZone": "Asia/Seoul"
-    },
-    "customfield_10168": null,
-    "customfield_10169": null,
-    "customfield_11800": null,
-    "progress": {
-      "progress": 0,
-      "total": 0
-    },
-    "votes": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-302/votes",
-      "votes": 0,
-      "hasVoted": false
-    },
-    "worklog": {
-      "startAt": 0,
-      "maxResults": 20,
-      "total": 0,
-      "worklogs": []
-    },
-    "issuetype": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
-      "id": "10000",
-      "description": "Represents a Test",
-      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
-      "name": "Test",
-      "subtask": false
-    },
-    "project": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
-      "id": "10000",
-      "key": "COMMONR",
-      "name": "Common Requirement And Test Case",
-      "projectTypeKey": "software",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
-        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
-        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
-        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
-      },
-      "projectCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
-        "id": "10000",
-        "description": "Requirements And Test Cases For The BioStar System Device",
-        "name": "BioStar System Device Requirement And Test Case"
-      }
-    },
-    "customfield_11000": null,
-    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@1c3006[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6512bdac[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@31441d2f[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@414b2976[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@5b17ad1e[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@476bbd29[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@56576d8e[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@4e4ffeab[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@2856d521[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@324ea7f7[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@5f98972d[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@6e1380d3[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
-    "resolutiondate": null,
-    "watches": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-302/watchers",
-      "watchCount": 1,
-      "isWatching": false
-    },
-    "customfield_11900": null,
-    "customfield_11901": null,
-    "updated": "2025-01-10T12:21:34.000+0900",
-    "timeoriginalestimate": null,
-    "description": "https://jira.suprema.co.kr/browse/BDP-726\r\n\r\nBDP-685 에서 구현한 CS-40에 타사 OSDP 장치를 연결하는 기능을 확장하여 UZ 무선 도어락 사용을 지원\r\n\r\nhttps://jira.suprema.co.kr/browse/BDP-872\r\nBDP-872 [사양 변경] Support U&Z Wireless Door Lock",
-    "customfield_10251": null,
-    "customfield_10252": null,
-    "customfield_10253": null,
-    "customfield_10254": null,
-    "customfield_10255": null,
-    "timetracking": {},
-    "customfield_10257": null,
-    "customfield_10247": null,
-    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p><span class=\"error\">&#91;OSDP Module을 물리적으로 결선하지 않은 상태&#93;</span><br/>1. CS40&gt; 마우스 우클릭&gt; Add OSDP Device<br/>2. Select OSDP Device Type 팝업 출력<br/>3. OSDP Antenna 선택 후 cancel 버튼 클릭</p></td><td></td><td><p>팝업 닫히며 OSDP Module 추가 되지 않음</p></td></tr><tr><td>2</td><td><p><span class=\"error\">&#91;OSDP Module을 물리적으로 결선하지 않은 상태&#93;</span><br/>1. CS40&gt; 마우스 우클릭&gt; Add OSDP Device<br/>2. Select OSDP Device Type 팝업 출력<br/>3. OSDP Antenna 선택 후 OK 버튼 클릭</p></td><td><p>CS40 라이선스 비활성화 상태</p></td><td><p>OSDP Module 추가 되지 않으며 에러 팝업 출력</p>\n<ul class=\"alternate\" type=\"square\">\n<li>국문 : 무선 도어락을 사용하기 위해서는 먼저 도어락 라이선스를 활성화해야 합니다.</li>\n<li>영문 : To use the door lock, you should activate the door lock license before.</li>\n</ul>\n</td></tr><tr><td>3</td><td><p><span class=\"error\">&#91;OSDP Module을 물리적으로 결선하지 않은 상태&#93;</span><br/>1. CS40&gt; 마우스 우클릭&gt; Add OSDP Device<br/>2. Select OSDP Device Type 팝업 출력<br/>3. OSDP Antenna 선택 후 OK 버튼 클릭<br/>4. Add OSDP Device 팝업 출력<br/>5. OSDP Module 추가할 포트 선택</p></td><td><p>CS40 라이선스 활성화 상태</p></td><td><p>Add New OSDP Device 화면 출력</p></td></tr><tr><td>4</td><td><p>1. Add New OSDP Device 화면 출력</p></td><td></td><td><p>아래와 같이 값 출력 됨<br/>Information</p>\n<ul class=\"alternate\" type=\"square\">\n<li>Title : Add New OSDP Device</li>\n<li>Name : Device Name</li>\n<li>OSDP Device Type : OSDP Antenna</li>\n<li>Port : Port (비활성화)</li>\n<li>Device ID : CS-40이 부여하는 Device ID (비활성화)</li>\n<li>Vendor Code : 빈칸 (비활성화)</li>\n<li>Serial Number : 빈칸 (비활성화)</li>\n<li>Product Name : 빈칸 (비활성화)</li>\n<li>Hardware Version : 빈칸 (비활성화)</li>\n<li>Firmware Version : 빈칸 (비활성화)</li>\n<li>Status : Active</li>\n</ul>\n\n\n<p>Network(RS-485)</p>\n<ul class=\"alternate\" type=\"square\">\n<li>OSDP ID</li>\n<li>Secure Communication : Use</li>\n</ul>\n</td></tr><tr><td>5</td><td><p>1. Add New OSDP Device 화면<br/>2. OSDP ID 입력 후 Apply</p></td><td><p>OSDP ID <br/>&gt;0번 ~ 119번 설정 가능</p></td><td><p>All Devices 화면으로 전환</p></td></tr><tr><td>6</td><td><p>1. OSDP Module 두개가 추가된 상태<br/>2. CS40&gt; 마우스 우클릭&gt; Add OSDP Device<br/>3. Select OSDP Device Type 팝업 출력<br/>4. OSDP Antenna 선택 후 OK 버튼 클릭<br/>5. Add New OSDP Device 화면에서 Apply</p></td><td></td><td><p>1. 에러 메시지 출력<br/>: CS40 한대에 무선 안테나 모듈 2대까지 연결 가능하다.</p>\n\n<ul class=\"alternate\" type=\"square\">\n<li>국문 : 최대 OSDP 장치 수에 도달하여 더 이상 추가할 수 없습니다.</li>\n</ul>\n</td></tr><tr><td>7</td><td><p>1.OSDP Module 한개가 추가된 상태<br/>2.CS40&gt;마우스우클릭&gt;Add OSDP Device<br/>3.Select OSDP Device Type 팝업 출력<br/>4.OSDP Antenna 선택 &gt; OK 선택<br/>5.Add osdp Device  팝업 확인</p></td><td></td><td><p>이미 OSDP Module이 추가되어 있는 포트는 비활성화되어 출력된다.</p></td></tr><tr><td>8</td><td><p>1. CS40&gt; 마우스 우클릭&gt; Add OSDP Device<br/>2. Select OSDP Device Type 팝업 출력<br/>3. OSDP Reader 선택 후 OK 버튼 클릭<br/>4. Add OSDP Device 팝업 출력<br/>5. OSDP Antenna 추가된 포트 확인</p></td><td></td><td><p>Port 버튼 비활성화 문구 출력<br/>: 하나의 Port에 하나의 OSDP 모듈만 추가 가능</p>\n<ul class=\"alternate\" type=\"square\">\n<li>국문 : OSDP 안테나 연결됨</li>\n</ul>\n</td></tr><tr><td>9</td><td><p>1. OSDP Antenna 하나 추가된 상태<br/>2. OSDP Antenna&gt; 마우스 우클릭&gt; Delete Device</p></td><td></td><td><p>OSDP Antenna 삭제가 된다.<br/>: 하위에 연결된 무선 도어락이 Door, Zone으로 설정되어 있는 경우 삭제 불가</p></td></tr><tr><td>10</td><td><p>1. OSDP Module 하나 추가된 상태<br/>2. OSDP Module&gt; 마우스 우클릭&gt; Delete Device &gt; OSDP Module 삭제됨<br/>3. CS40&gt; 마우스 우클릭&gt; Add OSDP Device<br/>4. Select OSDP Device Type 팝업 출력<br/>5. OSDP Antenna 선택 후 OK 버튼 클릭<br/>6. Add OSDP Device 팝업 출력<br/>7. OSDP Module 추가할 포트 선택</p></td><td></td><td><p>Add New OSDP Module 화면 출력된다.<br/>: 기존 추가 되어있다가 삭제 된 OSDP Module 의 포트도 활성화 되어 표시된다.<br/>: 추가된 OSDP Module 삭제 후 OSDP Module을 새로 추가할 경우 문제 없이 추가되어야 한다.</p></td></tr><tr><td>11</td><td><p>1. OSDP Module 추가, 삭제를 반복해서 진행</p></td><td><p>10번 이상</p></td><td><p>반복적인 추가, 삭제에도 문제없이 추가, 삭제되어야한다.</p></td></tr><tr><td>12</td><td><p>1. 추가한 OSDP Module 상세페이지 진입</p></td><td></td><td><p>아래와 같이 값 출력 됨<br/>Information</p>\n<ul class=\"alternate\" type=\"square\">\n<li>Title : OSDP Antenna</li>\n<li>Name : Device Name</li>\n<li>OSDP Device Type : OSDP Antenna</li>\n<li>Port : Port (비활성화)</li>\n<li>Device ID : CS-40이 부여하는 Device ID (비활성화)</li>\n<li>Vendor Code : 빈칸 (비활성화)</li>\n<li>Serial Number : 빈칸 (비활성화)</li>\n<li>Product Name : 빈칸 (비활성화)</li>\n<li>Hardware Version : 빈칸 (비활성화)</li>\n<li>Firmware Version : 빈칸 (비활성화)</li>\n<li>Status : Active</li>\n</ul>\n\n\n<p>Network(RS-485)</p>\n<ul class=\"alternate\" type=\"square\">\n<li>OSDP ID : 설정한 OSDP ID</li>\n<li>Secure Communication : Use</li>\n</ul>\n</td></tr><tr><td>13</td><td><p>1. 설정한 OSDP ID와 다른 ID를 가진 OSDP Module을 물리적으로 CS40 과 연결<br/>2. 통신유무 확인</p></td><td></td><td><p>설정한 OSDP ID와 다른 ID를 가진 OSDP Device가 해당 포트에 결선되면 연결되지 않는다.</p></td></tr><tr><td>14</td><td><p>1. 설정한 OSDP ID와 동일한 ID를 가진 OSDP Module을 물리적으로 CS40 과 연결<br/>2. 통신유무 확인</p></td><td></td><td><p>설정한 OSDP ID와 동일한 ID를 가진 OSDP Device가 해당 포트에 결선되면 연결이 이루어진다.<br/>: RS-485 Connected 이벤트 로그 발생</p></td></tr><tr><td>15</td><td><p><span class=\"error\">&#91;OSDP Module 물리적으로 연결된 상태&#93;</span><br/>1. OSDP Module 상세페이지 진입</p></td><td></td><td><p>OSDP Module 정보가 정상적으로 출력된다.</p></td></tr><tr><td>16</td><td><p><span class=\"error\">&#91;OSDP Module 물리적으로 연결된 상태&#93;</span><br/>1. Status를 Inactive로 변경</p></td><td></td><td><p>Deactivation Warning Message 팝업 발생<br/>비활성화 시, 해당 OSDP Module 하위에 연결된 Door Lock 에 설정해 놓은 Trigger &amp; Action, Zone 등이 동작하지 않을 수 있다는 경고 메시지를 발생</p>\n<ul class=\"alternate\" type=\"square\">\n<li>국문 : OSDP 장치가 비활성화 되고 설정한 대로 동작하지 않습니다. 계속 하시겠습니까?</li>\n<li>영문 : OSDP device will not work once it is deactivated. Continue?</li>\n</ul>\n</td></tr><tr><td>17</td><td><p><span class=\"error\">&#91;OSDP Module 물리적으로 연결된 상태&#93;</span><br/>1. Status를 Inactive로 변경후 Apply</p></td><td></td><td><p>1. Device List의 Status가 Normal (Inactive)로 출력<br/>2. BioStar UI상 아이콘은 회색처리</p></td></tr><tr><td>18</td><td><p><span class=\"error\">&#91;OSDP Module 물리적으로 연결된 상태&#93;</span><br/>1. Status를 Inactive로 설정 후 동작확인</p></td><td></td><td><p>1. 비활성화 시, CS40 은 OSDP Module 및 해당 OSDP Module 에 연결된 Door Lock 의 메시지에 대한 동작들을 수행하지 않는다.</p></td></tr><tr><td>19</td><td><p><span class=\"error\">&#91;OSDP Module 물리적으로 연결된 상태&#93;</span><br/>1. OSDP Module 상세페이지 진입<br/>2. Status를 Active로 변경후 Apply</p></td><td></td><td><p>1. Device List의 Status가 Normal (Active)로 출력<br/>2. 장치에 입력에 따른 CS40이 동작</p></td></tr><tr><td>20</td><td><p><span class=\"error\">&#91;OSDP Module 물리적으로 연결된 상태&amp;도어락 추가하지 않은 상태&#93;</span><br/>1. OSDP Module 상세페이지 진입<br/>2. OSDP ID 변경 후 Apply</p></td><td><p>&gt; OSDP ID<br/>=&gt; 0~119번 설정가능</p></td><td><p>1. OSDP 변경 가능하지만 연결 끊어짐을 안내하는 메시지 출력</p>\n<ul class=\"alternate\" type=\"square\">\n<li>국문 : OSDP ID를 변경하면 OSDP 장치가 OSDP ID 불일치로 연결 해제될 수 있습니다.</li>\n<li>영문 : If you change the OSDP ID, the OSDP device may be disconnected due to the OSDP ID mismatch.</li>\n</ul>\n\n\n<p>2. 설정된 OSDP ID로 연결된 상태에서 주소 변경시 연결 끊어짐 발생</p></td></tr><tr><td>21</td><td><p><span class=\"error\">&#91;OSDP Module 물리적으로 연결된 상태&amp;도어락 추가하여 연결 된 상태&#93;</span><br/>1. OSDP Module 상세페이지 진입<br/>2. OSDP ID 변경</p></td><td></td><td><p>OSDP ID 변경 불가</p></td></tr><tr><td>22</td><td><p><span class=\"error\">&#91;OSDP Module 물리적으로 연결된 상태&#93;</span><br/>1. OSDP Module 상세페이지 진입<br/>2. Secure Communication </p></td><td><p>&gt; Secure Communication <br/>=&gt; Default: Use</p></td><td><p>Use 상태로 변경 불가(비활성화)<br/>: 안테나 모듈의 경우 무조건 보안 통신을 하기에, 해당 옵션은 수정 하지 못함</p></td></tr><tr><td>23</td><td><p>1. 장치목록에서 OSDP Module에 해당하는 장치정보 확인</p></td><td></td><td><p>1. OSDP Module인 경우 Device Address에 OSDP 주소를 표시한다.<br/>2. Device Status에서는 OSDP 장치의 연결 및 활성화 상태를 표시한다.<br/>&gt; Normal(Active)<br/>&gt; Normal(Inactive)<br/>&gt; Disconnected</p></td></tr><tr><td>24</td><td><p><span class=\"error\">&#91;OSDP Module 추가된 상태&#93;</span><br/>1. OSDP Module에 추가할 무선도어락에 커맨드 카드 태깅<br/>2. 삑소리 나며 서비스 모드로 진입<br/>3. OSDP Module&gt; 마우스 우클릭&gt; Auto Add Wireless Door Lock<br/>4. Auto Add Wireless Door Lock 팝업 출력</p></td><td><p>: 연결할 무선도어락이 서비스 모드여야함<br/>: 서비스모드로 진입하기 위해 무선 도어락에 커맨드 카드 태깅</p></td><td><p>1. 무선 도어락이 OSDP Module에 연결되면 파란불 3번 깜빡인다<br/>2. Auto Add Wireless Door Lock 팝업에 무선 도어락 표시</p></td></tr><tr><td>25</td><td><p><span class=\"error\">&#91;OSDP Module 추가된 상태&#93;</span><br/>1. OSDP Module&gt; 마우스 우클릭&gt; Auto Add Wireless Door Lock<br/>2. Auto Add Wireless Door Lock 팝업 출력</p></td><td></td><td><p>1. OSDP Module이 연결할 수 있는 무선 도어락이 표시된다.<br/>2. 무선 도어락의 Serial Number, Device Type 표시<br/>&gt; Serial Number : 무선 도어락의 Serial Number<br/>&gt; Device Type : 무선 도어락 장치 이름/타입 표시 (Door Handle, Door Knob)</p></td></tr><tr><td>26</td><td><p><span class=\"error\">&#91;OSDP Module 추가된 상태&#93;</span><br/>1. OSDP Module&gt; 마우스 우클릭&gt; Auto Add Wireless Door Lock<br/>2. Auto Add Wireless Door Lock 팝업 출력<br/>3. 검색된 무선 도어락 표시</p></td><td></td><td><p>무선 도어락이 리스트에 뜨면 OSDP 모듈밑으로 자동으로 추가가 된다.<br/>: 무선 도어락은 무선 안테나 모듈 한대에 최개 6대까지 연결할 수 있다</p>\n\n<p>※ 무선 도어락 연결 사양은 최대 8대까지 연결할 수 있지만, 연결 동작 및 운영 안정성을 고려하여 6대까지만 연결할 수 있도록 제한</p>\n</td></tr><tr><td>27</td><td><p>1. Device &gt; 장치 리스트 &gt; 추가된 무선 도어락 확인</p></td><td></td><td><p>추가된 무선 도어락 타입에 따라 Knob, Handle 형태의 아이콘이 맞게 표시된다. </p></td></tr><tr><td>28</td><td><p><span class=\"error\">&#91;OSDP Module 추가된 상태&#93;</span><br/>1. OSDP Module&gt; 마우스 우클릭&gt; Auto Add Wireless Door Lock<br/>2. 서비스 모드로 진입한 무선 도어락이 없는 상태</p></td><td></td><td><p>검색되는 무선 도어락 없어서 타임아웃 발생<br/>: 무선 도어락이 검색되지 않습니다. </p></td></tr><tr><td>29</td><td><p><span class=\"error\">&#91;OSDP Module 추가된 상태&#93;</span><br/>1. OSDP Module&gt; 마우스 우클릭&gt; Auto Add Wireless Door Lock<br/>2. 하나의 무선 도어락 서비스 모드 진입<br/>3. Auto Add Wireless Door Lock 팝업 출력<br/>4. 검색된 무선 도어락 표시</p></td><td></td><td><p>서비스 모드에 진입한 무선 도어락만 연결되어 표시</p></td></tr><tr><td>30</td><td><p><span class=\"error\">&#91;OSDP Module 추가된 상태&#93;</span><br/>1. OSDP Module&gt; 마우스 우클릭&gt; Auto Add Wireless Door Lock<br/>2. 두개 이상의 무선 도어락 서비스 모드 진입<br/>3. Auto Add Wireless Door Lock 팝업 출력<br/>4. 검색된 무선 도어락 표시</p></td><td></td><td><p>서비스 모드에 진입한 2개 이상의 무선 도어락만 연결되어 표시</p>\n\n<p>: TC 수정 예정.<br/>무선 도어락은 한번에 한 대씩만 추가할 수 있다</p></td></tr><tr><td>31</td><td><p><span class=\"error\">&#91;OSDP Module 추가된 상태 &amp; 한개 이상 연결되어있는 무선 도어락&#93;</span><br/>1. OSDP Module&gt; 마우스 우클릭&gt; Auto Add Wireless Door Lock<br/>2. 이미 연결되어있는 무선 도어락 서비스 모드 진입(커맨드카드 태킹)<br/>3. Auto Add Wireless Door Lock 팝업 출력<br/>4. 검색된 무선 도어락 표시</p></td><td></td><td><p>이미 추가되어 연결되어 있는 무선 도어락이기 때문에 팝업창에 출력되지 않는다.</p>\n\n<p>: TC 수정 예정<br/>결과값 확인 후 수정 예정</p>\n\n<p>: Device Timed Out??</p></td></tr><tr><td>32</td><td><p><span class=\"error\">&#91;OSDP Module 추가된 상태&#93;</span><br/>1. 발급된 라이선스로 연결 가능한 최대 대수 만큼 연결된 상태<br/>2. OSDP Module&gt; 마우스 우클릭&gt; Auto Add Wireless Door Lock</p></td><td></td><td><p>에러 메시지 발생<br/>: 적용된 라이선스로 연결할 수 있는 최대 무선 도어락 수에 도달하여 더 이상 추가할 수 없습니다.</p></td></tr><tr><td>33</td><td><p><span class=\"error\">&#91;OSDP Module 추가된 상태&#93;</span></p>\n\n<p>1. 연결 가능한 최대 대수 확인</p></td><td><p>&gt; 무선 안테나 모듈 2대 <br/>&gt; 무선 도어락 12대</p></td><td><p>1. 무선 안테나 1대당 6개의 무선 도어락 연결 확인<br/>2. 무선 안테나 모듈 2대에 무선 도어락 최대 12개 연결 확인</p></td></tr><tr><td>34</td><td><p>1. 무선 도어락 추가, 삭제를 반복해서 진행</p></td><td><p>10번 이상</p></td><td><p>반복적인 추가, 삭제에도 문제없이 추가, 삭제되어야한다.</p></td></tr><tr><td>35</td><td><p>1. 추가된 무선 도어락 상세페이지 진입</p></td><td></td><td><p>아래와 같이 값 출력 됨<br/>Information</p>\n<ul class=\"alternate\" type=\"square\">\n<li>Name : Door Lock(\"device ID\")</li>\n<li>Device Type : Door Lock (비활성화)</li>\n<li>Port : Add OSDP device 시 선택한 Port (비활성화)</li>\n<li>Serial Number : OSDP Device 로 부터 전송되는 Device ID</li>\n<li>Device ID : CS-40이 부여하는 Device ID (비활성화)</li>\n<li>Product Name : Model Code (비활성화)</li>\n<li>Vendor Code : OSDP Device로 부터 전송되는 Vendor Code 표시 (비활성화)</li>\n<li>Hardware Version</li>\n<li>Firmware Version</li>\n<li>Locked</li>\n<li>Status : Active</li>\n</ul>\n\n\n<p>Authentication</p>\n<ul class=\"alternate\" type=\"square\">\n<li>Auth Mode : Card / Always</li>\n<li>Full Access : Disabled</li>\n</ul>\n</td></tr><tr><td>36</td><td><p>1. 추가된 무선 도어락이 있는 경우<br/>2. OSDP 모듈과 멀어지도록 무선도어락 이동</p></td><td></td><td><p>OSDP Module과 멀어지면 연결이 끊어지고, 다시 가까워지면 연결된다.</p></td></tr><tr><td>37</td><td><p>1. 무선 도어락의 배터리가 다한 상태<br/>2. 무선 도어락의 배터리 교체</p></td><td></td><td><p>배터리가 다하면 연결이 끊어지고, 무선 도어락의 배터리 교체 시 다시 연결된다.</p></td></tr><tr><td>38</td><td><p>1. Authentication 동작확인<br/>2. 사용자에 등록된 Card 인증 시도</p></td><td><p>Authentication 항목<br/>&gt; Auth Mode<br/>=&gt; Card Only / Always</p></td><td><p>1. 설정된 인증모드로 동작된다.<br/>2. 인증 성공 되며, 무선 도어락이 동작한다.</p></td></tr><tr><td>39</td><td><p>1. Authentication 동작확인<br/>2. 등록되지 않은 Card 인증 시도</p></td><td><p>Authentication 항목<br/>&gt; Auth Mode<br/>=&gt; Card Only / Always</p></td><td><p>1. 인증 실패 되며, 무선 도어락이 동작하지 않는다.</p></td></tr><tr><td>40</td><td><p>1. 무선 도어락에 사용자에 등록 된 MIFARE 카드 인증 시도</p></td><td></td><td><p>인증 성공 되며, 무선 도어락이 동작된다.</p></td></tr><tr><td>41</td><td><p>1. 무선 도어락에 사용자에 등록 된 MIFARE 이외의 카드 인증 시도</p></td><td></td><td><p>CSN 타입의 카드는 인증 실패 되며, 무선 도어락이 동작하지 않는다.<br/>Wiegand 타입의 카드는 아무런 반응이 없다.<br/>: CSN 타입의 MIFARE 카드만 지원<br/>: AoC 경우 추후 진행</p></td></tr><tr><td>42</td><td><p>1. Card 인증모드에 스케줄 설정<br/>2. 사용자에 등록된 Card 인증 시도</p></td><td><p>아래와 같이 스케줄을 생성</p>\n\n<p>Schedule1 : 현재시간 5분 후 시작 ~ 5분간 유지 후 종료</p>\n\n<p>Authentication 항목<br/>&gt; Auth Mode<br/>=&gt; Card Only / Schedule1 </p></td><td><p>1. 인증 실패 되며, 무선 도어락이 동작하지 않는다. (현재시간)<br/>2. 인증 성공 되며, 무선 도어락이 동작한다. (현재시간 5분후 Schedule1에 설정된 시간)<br/>3. 인증 실패 되며, 무선 도어락이 동작하지 않는다. (현재시간 10분후 Schedule1에 포함되지 않은 시간)</p></td></tr><tr><td>43</td><td><p>1. 사용자에 등록된 Card 연속 인증 시도</p></td><td></td><td><p>1. 인증 성공 되며 장치의 연결이 끊기면 안된다.</p></td></tr><tr><td>44</td><td><p>1. 블랙리스트로 등록된 Card 인증 시도</p></td><td></td><td><p>인증 실패 되며, 무선 도어락이 동작하지 않는다.</p></td></tr><tr><td>45</td><td><p>1. 사용자에 등록된 카드를 여러장 겹친 상태에서 장치에 연속적으로 인증시도</p></td><td></td><td><p>1. 인증결과(=인증성공)를 정상적으로 출력해주어야 한다.</p></td></tr><tr><td>46</td><td><p>1. 사용자에 등록되지 않은 카드를 여러장 겹친 상태에서 장치에 연속적으로 인증시도</p></td><td></td><td><p>1. 인증결과(=인증실패)를 정상적으로 출력해주어야 한다.</p></td></tr><tr><td>47</td><td><p>1. 사용자에 등록된 카드 + 등록되지 않은 카드를 여러장 겹친 상태에서 장치에 연속적으로 인증시도</p></td><td></td><td><p>1. 인증결과(=실패or성공)를 정상적으로 출력해주어야 한다.</p></td></tr><tr><td>48</td><td><p>1. Full Access : Disabled<br/>2. 무선 도어락을 설정하여 Door 생성<br/>2. 사용자에 등록된 Card 인증 시도</p></td><td><p>출입그룹이 설정되지 않은 상태</p></td><td><p>1. 인증 실패 되며, 무선 도어락이 동작하지 않는다.</p></td></tr><tr><td>49</td><td><p>1. Full Access : Enabled<br/>2. 무선 도어락을 설정하여 Door 생성<br/>2. 사용자에 등록된 Card 인증 시도</p></td><td><p>출입그룹이 설정되지 않은 상태</p></td><td><p>1. 인증 성공 되며, 무선 도어락이 동작한다.</p></td></tr><tr><td>50</td><td><p>1. 무선 도어락 &gt; 장치 상세페이지 &gt; Status를 Inactive로 변경</p></td><td></td><td><p>비활성화 시, 무선 도어락에 설정해 놓은 Trigger &amp; Action, Zone 등이 동작하지 않는다.</p></td></tr><tr><td>51</td><td><p>1. 무선 도어락 &gt; 장치 상세페이지 &gt; Status를 Active로 변경 후 Apply</p></td><td></td><td><p>무선 도어락이 활성화되며 설정해 놓은대로 동작한다.</p></td></tr><tr><td>52</td><td><p>1. 무선 도어락&gt; 마우스 우클릭&gt; Delete Wireless Door Lock</p></td><td></td><td><p>OSDP Module에 연결된 무선 도어락이 삭제된다.</p>\n<ul>\n<li>무선 도어락에 출입문/구역 등이 설정된 경우에는 삭제 불가</li>\n</ul>\n</td></tr><tr><td>53</td><td><p>1. 무선 도어락 &gt; 마우스 우클릭 &gt; Deactivate All Wireless Door Lock</p></td><td></td><td><p>1. 비활성화 시 무선 도어락의 메시지에 대한 동작들을 수행하지 않는다.</p></td></tr><tr><td>54</td><td><p>1. CS40 &gt; OSDP Reader LED/Buzzer 설정<br/>&gt; Auth Success<br/>&gt; Auth Fail</p></td><td><p>LED</p></td><td><p>1. 연결된 무선 도어락이 LED가 설정된대로 동작한다.<br/>: 인증 실패 시에는 별도의 설정 없이 RED LED 를 표현이 가능<br/>: 인증 성공일 경우에만 CS-40에서 GREEN LED 실행에 대한 명령을 전송</p></td></tr><tr><td>55</td><td><p>1. CS40 &gt; Trigger&amp;Action<br/>2. Device : CS40 - OSDP Module, 무선도어락<br/>3. Device &gt; Advanced &gt; Trigger &amp; Action &gt; +Add &gt; Trigger &gt; Event &gt; Device : CS40 선택 &gt; Event List : BioStar Disconnected 선택</p>\n<ul class=\"alternate\" type=\"square\">\n<li>Device List에서 해당 Device 선택 후 Reconnect 버튼 1회 클릭</li>\n</ul>\n</td><td><p>Action Device : 무선 도어락<br/>1. Action 선택<br/>: Disable Device</p></td><td><p>1. Disabled Device로 설정한 무선 도어락이 잠긴다.<br/>&gt; 인증 불가<br/>&gt; 장치 잠금/해제 로그가 남는다.<br/>&gt; 장치 잠금 해제 후 정상 동작 확인</p></td></tr><tr><td>56</td><td><p>1. CS40 &gt; Trigger&amp;Action<br/>2. Device : CS40 - OSDP Module, 무선도어락<br/>3. Device &gt; Advanced &gt; Trigger &amp; Action &gt; +Add &gt; Trigger &gt; Event &gt; Device : 무선 도어락 선택 &gt; Event List : 1:1 authentication failed(Card)선택</p></td><td><p>Action Device : 무선 도어락<br/>1. Action 선택<br/>: Disable Device</p></td><td><p>1. Disabled Device로 설정한 무선 도어락이 잠긴다.<br/>&gt; 인증 불가<br/>&gt; 장치 잠금/해제 로그가 남는다.<br/>&gt; 장치 잠금 해제 후 정상 동작 확인</p></td></tr><tr><td>57</td><td><p>1. CS40 &gt; Trigger&amp;Action<br/>2. Device : CS40 - OSDP Module, 무선도어락<br/>3. Device &gt; Advanced &gt; Trigger &amp; Action &gt; +Add &gt; Trigger &gt; Input &gt; Device : CS40 선택 &gt; Port 설정 &gt; Switch Type &gt; Duration&gt; Schedule 선택</p></td><td><p>Action Device : 무선 도어락<br/>1. Action 선택<br/>: Release All Alarm<br/>: Disable Device</p></td><td><p>1. Release All Alarm 무선 도어락 출력<br/>2. Disabled Device로 설정한 무선 도어락이 잠긴다.<br/>&gt; 인증 불가<br/>&gt; 장치 잠금/해제 로그가 남는다.<br/>&gt; 장치 잠금 해제 후 정상 동작 확인</p></td></tr><tr><td>58</td><td><p>1. 무선 도어락 Lock 상태<br/>2. CS40 &gt; 마우스 우클릭 &gt; Reboot</p></td><td></td><td><p>CS40이 재부팅되어 재연결 된 후에도 무선 도어락은 Lock 상태 유지하여야 한다.</p></td></tr><tr><td>59</td><td><p>1. 무선 도어락 Lock 상태<br/>2. 무선 도어락 상세페이지 진입<br/>3. Unlock으로 변경 후 상세페이지에 머무는 상태<br/>4. 무선 도어락 Lock 상태로 변경<br/>5. 상세페이지 Apply로 설정 후 장치 리스트로 전환 </p></td><td></td><td><p>무선 도어락은 Lock 상태여야 한다.</p></td></tr><tr><td>60</td><td><p>1. CS40&gt; 마우스 우클릭&gt; Reconnected<br/>2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인</p></td><td></td><td><p>1. Reconnected 시 연결이 끊긴다.<br/>&gt; RS485 Disconnected 로그출력<br/>2. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력</p></td></tr><tr><td>61</td><td><p>1. CS40&gt; 마우스 우클릭&gt; Reboot<br/>2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인</p></td><td></td><td><p>1. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력</p></td></tr><tr><td>62</td><td><p>1. CS40 Power Off/On<br/>2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인</p></td><td></td><td><p>1. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력</p></td></tr><tr><td>63</td><td><p>1. MONITORING &gt; Door Lock Status<br/>2. 무선 도어락의 배터리 상태 변경</p></td><td><p>0 -&gt; 1<br/>1 -&gt; 2<br/>2 -&gt; 3</p></td><td><p>무선 도어락의 배터리 상태가 변경되어 발생된 Notify를 저장하여 보여준다.<br/>: CS40에서 12시간에 한번씩 무선 도어락의 상태를 확인</p></td></tr><tr><td>64</td><td><p>1. 무선 도어락의 배터리가 거의 없는 경우</p></td><td></td><td><p>Alert을 통해 알림이 제공된다.</p></td></tr><tr><td>65</td><td><p>1. MONITORING &gt; Door Lock Status</p></td><td></td><td><p>무선 도어락 상태가 표시 된다.<br/>: 배터리 상태가 2 또는 3인 무선 도어락이 있다면 아이콘에 알림 표시가 된다.</p>\n<ul class=\"alternate\" type=\"square\">\n<li>배터리 상태 2인 경우, 노란색으로 표시</li>\n<li>배터리 상태 3인 경우, 빨간색으로 표시</li>\n</ul>\n</td></tr><tr><td>66</td><td><p>1. MONITORING &gt; Door Lock Status<br/>2. 무선 도어락의 배터리 상태 변경</p></td><td></td><td><p>1. Event Log, Real-time Log 페이지에 로그 출력</p></td></tr><tr><td>67</td><td><p>1. CS40 초기화</p></td><td><p>Restore to default<br/>&gt; All<br/>&gt; Without Network</p></td><td><p>하위 장치가 모두 삭제된다.</p></td></tr><tr><td>68</td><td><p>1. 무선 도어락의 대수에 대한 라이선스 발급<br/>2. Biostar2 라이선스 화면</p></td><td></td><td><p>무선 도어락 라이선스 현황에 대해서 확인 가능</p></td></tr><tr><td>69</td><td><p>1. 무선 도어락의 대수에 대한 라이선스 발급<br/>2. Biostar2 라이선스 화면<br/>3. 추가로 무선 도어락의 라이선스 발급</p></td><td></td><td><p>Biostar2 라이선스 화면에서 라이선스 추가된 갯수만큼 증가 확인</p></td></tr><tr><td>70</td><td><p><span class=\"error\">&#91;EventLog&#93;</span><br/>1. Biostar&gt;MONITORING&gt;Door Status&gt;무선도어락 체크&gt;'OPEN' 선택</p></td><td><p>무선도어락 door 설정된 상태</p></td><td><p>1. Event Log, Real-time Log에 관련 로그가 남는다.<br/>&gt; Wireless door lock - Door open requested by operator<br/>&gt; CoreStation - Door open request sent</p></td></tr><tr><td>71</td><td><p><span class=\"error\">&#91;EventLog&#93;</span><br/>1. Biostar&gt;MONITORING&gt;Door Status&gt;무선도어락 체크&gt;'Manual Unlock' 선택</p></td><td><p>무선도어락 door 설정된 상태</p></td><td><p>1. Event Log, Real-time Log에 관련 로그가 남는다.<br/>&gt; Wireless door lock - Door unlock requested by operator<br/>&gt; CoreStation - Door unlock request sent</p></td></tr><tr><td>72</td><td><p><span class=\"error\">&#91;EventLog&#93;</span><br/>1. Biostar&gt;MONITORING&gt;Door Status&gt;무선도어락 체크&gt;'Manual lock' 선택</p></td><td><p>무선도어락 door 설정된 상태</p></td><td><p>1. Event Log, Real-time Log에 관련 로그가 남는다.<br/>&gt; Wireless door lock - Door lock requested by operator<br/>&gt; CoreStation - Door lock request sent</p></td></tr><tr><td>73</td><td><p><span class=\"error\">&#91;EventLog&#93;</span><br/>1. Biostar&gt;MONITORING&gt;Door Status&gt;무선도어락 체크&gt;'Release' 선택</p></td><td><p>무선도어락 door 설정된 상태</p></td><td><p>1. Event Log, Real-time Log에 관련 로그가 남는다.<br/>&gt; Wireless door lock - Door release requested by operator<br/>&gt; CoreStation - Door lock release sent</p></td></tr><tr><td>74</td><td><p><span class=\"error\">&#91;EventLog&#93;</span><br/>1. 무선도어락에 인증 성공</p></td><td><p>무선도어락 door 설정된 상태</p></td><td><p>1. Event Log, Real-time Log에 관련 로그가 남는다.<br/>&gt; Wireless door lock - 1:1 authentication succeeded (Card)<br/>&gt; CoreStation - Door open request sent</p></td></tr></table>",
-    "customfield_10248": null,
-    "customfield_10006": [],
-    "customfield_10007": [],
-    "customfield_10008": {
-      "issueId": 55440,
-      "statuses": [
-        {
-          "statusResults": [
-            {
-              "latest": 1,
-              "latestFinal": 3,
-              "latestId": 32574,
-              "latestFinalId": 29483
-            }
-          ]
-        }
-      ]
-    },
-    "customfield_12309": null,
-    "customfield_10802": null,
-    "customfield_10803": null,
-    "customfield_10805": null,
-    "summary": "[BDP-726] Support UZ Wireless door lock",
-    "customfield_10240": null,
-    "customfield_10000": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
-      "value": "Manual",
-      "id": "10000"
-    },
-    "customfield_10243": null,
-    "customfield_10001": null,
-    "customfield_10244": null,
-    "customfield_10002": null,
-    "customfield_10003": null,
-    "customfield_10246": null,
-    "customfield_10004": {
-      "steps": [
-        {
-          "id": 15117,
-          "index": 1,
-          "step": "[OSDP Module을 물리적으로 결선하지 않은 상태]\n1. CS40> 마우스 우클릭> Add OSDP Device\n2. Select OSDP Device Type 팝업 출력\n3. OSDP Antenna 선택 후 cancel 버튼 클릭",
-          "data": "",
-          "result": "팝업 닫히며 OSDP Module 추가 되지 않음",
-          "attachments": []
-        },
-        {
-          "id": 15118,
-          "index": 2,
-          "step": "[OSDP Module을 물리적으로 결선하지 않은 상태]\n1. CS40> 마우스 우클릭> Add OSDP Device\n2. Select OSDP Device Type 팝업 출력\n3. OSDP Antenna 선택 후 OK 버튼 클릭",
-          "data": "CS40 라이선스 비활성화 상태",
-          "result": "OSDP Module 추가 되지 않으며 에러 팝업 출력\n- 국문 : 무선 도어락을 사용하기 위해서는 먼저 도어락 라이선스를 활성화해야 합니다. \n- 영문 : To use the door lock, you should activate the door lock license before.",
-          "attachments": []
-        },
-        {
-          "id": 15119,
-          "index": 3,
-          "step": "[OSDP Module을 물리적으로 결선하지 않은 상태]\n1. CS40> 마우스 우클릭> Add OSDP Device\n2. Select OSDP Device Type 팝업 출력\n3. OSDP Antenna 선택 후 OK 버튼 클릭\n4. Add OSDP Device 팝업 출력\n5. OSDP Module 추가할 포트 선택",
-          "data": "CS40 라이선스 활성화 상태",
-          "result": "Add New OSDP Device 화면 출력",
-          "attachments": []
-        },
-        {
-          "id": 15120,
-          "index": 4,
-          "step": "1. Add New OSDP Device 화면 출력",
-          "data": "",
-          "result": "아래와 같이 값 출력 됨\nInformation\n- Title : Add New OSDP Device\n- Name : Device Name\n- OSDP Device Type : OSDP Antenna\n- Port : Port (비활성화)\n- Device ID : CS-40이 부여하는 Device ID (비활성화)\n- Vendor Code : 빈칸 (비활성화)\n- Serial Number : 빈칸 (비활성화)\n- Product Name : 빈칸 (비활성화)\n- Hardware Version : 빈칸 (비활성화)\n- Firmware Version : 빈칸 (비활성화)\n- Status : Active\n\nNetwork(RS-485)\n- OSDP ID\n- Secure Communication : Use",
-          "attachments": []
-        },
-        {
-          "id": 15121,
-          "index": 5,
-          "step": "1. Add New OSDP Device 화면\n2. OSDP ID 입력 후 Apply",
-          "data": "OSDP ID \n>0번 ~ 119번 설정 가능",
-          "result": "All Devices 화면으로 전환",
-          "attachments": []
-        },
-        {
-          "id": 15122,
-          "index": 6,
-          "step": "1. OSDP Module 두개가 추가된 상태\n2. CS40> 마우스 우클릭> Add OSDP Device\n3. Select OSDP Device Type 팝업 출력\n4. OSDP Antenna 선택 후 OK 버튼 클릭\n5. Add New OSDP Device 화면에서 Apply",
-          "data": "",
-          "result": "1. 에러 메시지 출력\n: CS40 한대에 무선 안테나 모듈 2대까지 연결 가능하다.\n\n- 국문 : 최대 OSDP 장치 수에 도달하여 더 이상 추가할 수 없습니다.",
-          "attachments": []
-        },
-        {
-          "id": 17294,
-          "index": 7,
-          "step": "1.OSDP Module 한개가 추가된 상태\n2.CS40>마우스우클릭>Add OSDP Device\n3.Select OSDP Device Type 팝업 출력\n4.OSDP Antenna 선택 > OK 선택\n5.Add osdp Device  팝업 확인",
-          "data": "",
-          "result": "이미 OSDP Module이 추가되어 있는 포트는 비활성화되어 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 15123,
-          "index": 8,
-          "step": "1. CS40> 마우스 우클릭> Add OSDP Device\n2. Select OSDP Device Type 팝업 출력\n3. OSDP Reader 선택 후 OK 버튼 클릭\n4. Add OSDP Device 팝업 출력\n5. OSDP Antenna 추가된 포트 확인",
-          "data": "",
-          "result": "Port 버튼 비활성화 문구 출력\n: 하나의 Port에 하나의 OSDP 모듈만 추가 가능\n- 국문 : OSDP 안테나 연결됨",
-          "attachments": []
-        },
-        {
-          "id": 15124,
-          "index": 9,
-          "step": "1. OSDP Antenna 하나 추가된 상태\n2. OSDP Antenna> 마우스 우클릭> Delete Device\n",
-          "data": "",
-          "result": "OSDP Antenna 삭제가 된다.\n: 하위에 연결된 무선 도어락이 Door, Zone으로 설정되어 있는 경우 삭제 불가",
-          "attachments": []
-        },
-        {
-          "id": 15125,
-          "index": 10,
-          "step": "1. OSDP Module 하나 추가된 상태\n2. OSDP Module> 마우스 우클릭> Delete Device > OSDP Module 삭제됨\n3. CS40> 마우스 우클릭> Add OSDP Device\n4. Select OSDP Device Type 팝업 출력\n5. OSDP Antenna 선택 후 OK 버튼 클릭\n6. Add OSDP Device 팝업 출력\n7. OSDP Module 추가할 포트 선택",
-          "data": "",
-          "result": "Add New OSDP Module 화면 출력된다.\n: 기존 추가 되어있다가 삭제 된 OSDP Module 의 포트도 활성화 되어 표시된다.\n: 추가된 OSDP Module 삭제 후 OSDP Module을 새로 추가할 경우 문제 없이 추가되어야 한다.",
-          "attachments": []
-        },
-        {
-          "id": 15126,
-          "index": 11,
-          "step": "1. OSDP Module 추가, 삭제를 반복해서 진행",
-          "data": "10번 이상",
-          "result": "반복적인 추가, 삭제에도 문제없이 추가, 삭제되어야한다.",
-          "attachments": []
-        },
-        {
-          "id": 15127,
-          "index": 12,
-          "step": "1. 추가한 OSDP Module 상세페이지 진입",
-          "data": "",
-          "result": "아래와 같이 값 출력 됨\nInformation\n- Title : OSDP Antenna\n- Name : Device Name\n- OSDP Device Type : OSDP Antenna\n- Port : Port (비활성화)\n- Device ID : CS-40이 부여하는 Device ID (비활성화)\n- Vendor Code : 빈칸 (비활성화)\n- Serial Number : 빈칸 (비활성화)\n- Product Name : 빈칸 (비활성화)\n- Hardware Version : 빈칸 (비활성화)\n- Firmware Version : 빈칸 (비활성화)\n- Status : Active\n\nNetwork(RS-485)\n- OSDP ID : 설정한 OSDP ID\n- Secure Communication : Use",
-          "attachments": []
-        },
-        {
-          "id": 15128,
-          "index": 13,
-          "step": "1. 설정한 OSDP ID와 다른 ID를 가진 OSDP Module을 물리적으로 CS40 과 연결\n2. 통신유무 확인",
-          "data": "",
-          "result": "설정한 OSDP ID와 다른 ID를 가진 OSDP Device가 해당 포트에 결선되면 연결되지 않는다.",
-          "attachments": []
-        },
-        {
-          "id": 15129,
-          "index": 14,
-          "step": "1. 설정한 OSDP ID와 동일한 ID를 가진 OSDP Module을 물리적으로 CS40 과 연결\n2. 통신유무 확인",
-          "data": "",
-          "result": "설정한 OSDP ID와 동일한 ID를 가진 OSDP Device가 해당 포트에 결선되면 연결이 이루어진다.\n: RS-485 Connected 이벤트 로그 발생",
-          "attachments": []
-        },
-        {
-          "id": 15130,
-          "index": 15,
-          "step": "[OSDP Module 물리적으로 연결된 상태]\n1. OSDP Module 상세페이지 진입",
-          "data": "",
-          "result": "OSDP Module 정보가 정상적으로 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 15131,
-          "index": 16,
-          "step": "[OSDP Module 물리적으로 연결된 상태]\n1. Status를 Inactive로 변경",
-          "data": "",
-          "result": "Deactivation Warning Message 팝업 발생\n비활성화 시, 해당 OSDP Module 하위에 연결된 Door Lock 에 설정해 놓은 Trigger & Action, Zone 등이 동작하지 않을 수 있다는 경고 메시지를 발생\n- 국문 : OSDP 장치가 비활성화 되고 설정한 대로 동작하지 않습니다. 계속 하시겠습니까?\n- 영문 : OSDP device will not work once it is deactivated. Continue?",
-          "attachments": []
-        },
-        {
-          "id": 15132,
-          "index": 17,
-          "step": "[OSDP Module 물리적으로 연결된 상태]\n1. Status를 Inactive로 변경후 Apply",
-          "data": "",
-          "result": "1. Device List의 Status가 Normal (Inactive)로 출력\n2. BioStar UI상 아이콘은 회색처리",
-          "attachments": []
-        },
-        {
-          "id": 15133,
-          "index": 18,
-          "step": "[OSDP Module 물리적으로 연결된 상태]\n1. Status를 Inactive로 설정 후 동작확인",
-          "data": "",
-          "result": "1. 비활성화 시, CS40 은 OSDP Module 및 해당 OSDP Module 에 연결된 Door Lock 의 메시지에 대한 동작들을 수행하지 않는다.",
-          "attachments": []
-        },
-        {
-          "id": 15134,
-          "index": 19,
-          "step": "[OSDP Module 물리적으로 연결된 상태]\n1. OSDP Module 상세페이지 진입\n2. Status를 Active로 변경후 Apply",
-          "data": "",
-          "result": "1. Device List의 Status가 Normal (Active)로 출력\n2. 장치에 입력에 따른 CS40이 동작",
-          "attachments": []
-        },
-        {
-          "id": 15135,
-          "index": 20,
-          "step": "[OSDP Module 물리적으로 연결된 상태&도어락 추가하지 않은 상태]\n1. OSDP Module 상세페이지 진입\n2. OSDP ID 변경 후 Apply",
-          "data": "> OSDP ID\n=> 0~119번 설정가능",
-          "result": "1. OSDP 변경 가능하지만 연결 끊어짐을 안내하는 메시지 출력\n- 국문 : OSDP ID를 변경하면 OSDP 장치가 OSDP ID 불일치로 연결 해제될 수 있습니다.\n- 영문 : If you change the OSDP ID, the OSDP device may be disconnected due to the OSDP ID mismatch.\n\n2. 설정된 OSDP ID로 연결된 상태에서 주소 변경시 연결 끊어짐 발생",
-          "attachments": []
-        },
-        {
-          "id": 15136,
-          "index": 21,
-          "step": "[OSDP Module 물리적으로 연결된 상태&도어락 추가하여 연결 된 상태]\n1. OSDP Module 상세페이지 진입\n2. OSDP ID 변경",
-          "data": "",
-          "result": "OSDP ID 변경 불가",
-          "attachments": []
-        },
-        {
-          "id": 15137,
-          "index": 22,
-          "step": "[OSDP Module 물리적으로 연결된 상태]\n1. OSDP Module 상세페이지 진입\n2. Secure Communication ",
-          "data": "> Secure Communication \n=> Default: Use",
-          "result": "Use 상태로 변경 불가(비활성화)\n: 안테나 모듈의 경우 무조건 보안 통신을 하기에, 해당 옵션은 수정 하지 못함",
-          "attachments": []
-        },
-        {
-          "id": 15138,
-          "index": 23,
-          "step": "1. 장치목록에서 OSDP Module에 해당하는 장치정보 확인",
-          "data": "",
-          "result": "1. OSDP Module인 경우 Device Address에 OSDP 주소를 표시한다.\n2. Device Status에서는 OSDP 장치의 연결 및 활성화 상태를 표시한다.\n> Normal(Active)\n> Normal(Inactive)\n> Disconnected",
-          "attachments": []
-        },
-        {
-          "id": 15139,
-          "index": 24,
-          "step": "[OSDP Module 추가된 상태]\n1. OSDP Module에 추가할 무선도어락에 커맨드 카드 태깅\n2. 삑소리 나며 서비스 모드로 진입\n3. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\n4. Auto Add Wireless Door Lock 팝업 출력",
-          "data": ": 연결할 무선도어락이 서비스 모드여야함\n: 서비스모드로 진입하기 위해 무선 도어락에 커맨드 카드 태깅",
-          "result": "1. 무선 도어락이 OSDP Module에 연결되면 파란불 3번 깜빡인다\n2. Auto Add Wireless Door Lock 팝업에 무선 도어락 표시\n",
-          "attachments": []
-        },
-        {
-          "id": 15140,
-          "index": 25,
-          "step": "[OSDP Module 추가된 상태]\n1. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\n2. Auto Add Wireless Door Lock 팝업 출력",
-          "data": "",
-          "result": "1. OSDP Module이 연결할 수 있는 무선 도어락이 표시된다.\n2. 무선 도어락의 Serial Number, Device Type 표시\n> Serial Number : 무선 도어락의 Serial Number\n> Device Type : 무선 도어락 장치 이름/타입 표시 (Door Handle, Door Knob)",
-          "attachments": []
-        },
-        {
-          "id": 15141,
-          "index": 26,
-          "step": "[OSDP Module 추가된 상태]\n1. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\n2. Auto Add Wireless Door Lock 팝업 출력\n3. 검색된 무선 도어락 표시",
-          "data": "",
-          "result": "무선 도어락이 리스트에 뜨면 OSDP 모듈밑으로 자동으로 추가가 된다.\n: 무선 도어락은 무선 안테나 모듈 한대에 최개 6대까지 연결할 수 있다\n\n※ 무선 도어락 연결 사양은 최대 8대까지 연결할 수 있지만, 연결 동작 및 운영 안정성을 고려하여 6대까지만 연결할 수 있도록 제한\n\n",
-          "attachments": []
-        },
-        {
-          "id": 15142,
-          "index": 27,
-          "step": "1. Device > 장치 리스트 > 추가된 무선 도어락 확인",
-          "data": "",
-          "result": "추가된 무선 도어락 타입에 따라 Knob, Handle 형태의 아이콘이 맞게 표시된다. ",
-          "attachments": []
-        },
-        {
-          "id": 15143,
-          "index": 28,
-          "step": "[OSDP Module 추가된 상태]\n1. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\n2. 서비스 모드로 진입한 무선 도어락이 없는 상태",
-          "data": "",
-          "result": "검색되는 무선 도어락 없어서 타임아웃 발생\n: 무선 도어락이 검색되지 않습니다. ",
-          "attachments": []
-        },
-        {
-          "id": 15144,
-          "index": 29,
-          "step": "[OSDP Module 추가된 상태]\n1. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\n2. 하나의 무선 도어락 서비스 모드 진입\n3. Auto Add Wireless Door Lock 팝업 출력\n4. 검색된 무선 도어락 표시",
-          "data": "",
-          "result": "서비스 모드에 진입한 무선 도어락만 연결되어 표시",
-          "attachments": []
-        },
-        {
-          "id": 15145,
-          "index": 30,
-          "step": "[OSDP Module 추가된 상태]\n1. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\n2. 두개 이상의 무선 도어락 서비스 모드 진입\n3. Auto Add Wireless Door Lock 팝업 출력\n4. 검색된 무선 도어락 표시",
-          "data": "",
-          "result": "서비스 모드에 진입한 2개 이상의 무선 도어락만 연결되어 표시\n\n: TC 수정 예정.\n무선 도어락은 한번에 한 대씩만 추가할 수 있다",
-          "attachments": []
-        },
-        {
-          "id": 15146,
-          "index": 31,
-          "step": "[OSDP Module 추가된 상태 & 한개 이상 연결되어있는 무선 도어락]\n1. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\n2. 이미 연결되어있는 무선 도어락 서비스 모드 진입(커맨드카드 태킹)\n3. Auto Add Wireless Door Lock 팝업 출력\n4. 검색된 무선 도어락 표시",
-          "data": "",
-          "result": "이미 추가되어 연결되어 있는 무선 도어락이기 때문에 팝업창에 출력되지 않는다.\n\n: TC 수정 예정\n결과값 확인 후 수정 예정\n\n: Device Timed Out??",
-          "attachments": []
-        },
-        {
-          "id": 17111,
-          "index": 32,
-          "step": "[OSDP Module 추가된 상태]\n1. 발급된 라이선스로 연결 가능한 최대 대수 만큼 연결된 상태\n2. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock",
-          "data": "",
-          "result": "에러 메시지 발생\n: 적용된 라이선스로 연결할 수 있는 최대 무선 도어락 수에 도달하여 더 이상 추가할 수 없습니다.",
-          "attachments": []
-        },
-        {
-          "id": 17466,
-          "index": 33,
-          "step": "[OSDP Module 추가된 상태]\n\n1. 연결 가능한 최대 대수 확인",
-          "data": "> 무선 안테나 모듈 2대 \n> 무선 도어락 12대",
-          "result": "1. 무선 안테나 1대당 6개의 무선 도어락 연결 확인\n2. 무선 안테나 모듈 2대에 무선 도어락 최대 12개 연결 확인",
-          "attachments": []
-        },
-        {
-          "id": 15147,
-          "index": 34,
-          "step": "1. 무선 도어락 추가, 삭제를 반복해서 진행",
-          "data": "10번 이상",
-          "result": "반복적인 추가, 삭제에도 문제없이 추가, 삭제되어야한다.",
-          "attachments": []
-        },
-        {
-          "id": 15148,
-          "index": 35,
-          "step": "1. 추가된 무선 도어락 상세페이지 진입",
-          "data": "",
-          "result": "아래와 같이 값 출력 됨\nInformation\n- Name : Door Lock(\"device ID\")\n- Device Type : Door Lock (비활성화)\n- Port : Add OSDP device 시 선택한 Port (비활성화)\n- Serial Number : OSDP Device 로 부터 전송되는 Device ID\n- Device ID : CS-40이 부여하는 Device ID (비활성화)\n- Product Name : Model Code (비활성화)\n- Vendor Code : OSDP Device로 부터 전송되는 Vendor Code 표시 (비활성화)\n- Hardware Version\n- Firmware Version\n- Locked\n- Status : Active\n\nAuthentication\n- Auth Mode : Card / Always\n- Full Access : Disabled",
-          "attachments": []
-        },
-        {
-          "id": 15149,
-          "index": 36,
-          "step": "1. 추가된 무선 도어락이 있는 경우\n2. OSDP 모듈과 멀어지도록 무선도어락 이동",
-          "data": "",
-          "result": "OSDP Module과 멀어지면 연결이 끊어지고, 다시 가까워지면 연결된다.",
-          "attachments": []
-        },
-        {
-          "id": 15150,
-          "index": 37,
-          "step": "1. 무선 도어락의 배터리가 다한 상태\n2. 무선 도어락의 배터리 교체",
-          "data": "",
-          "result": "배터리가 다하면 연결이 끊어지고, 무선 도어락의 배터리 교체 시 다시 연결된다.",
-          "attachments": []
-        },
-        {
-          "id": 15151,
-          "index": 38,
-          "step": "1. Authentication 동작확인\n2. 사용자에 등록된 Card 인증 시도",
-          "data": "Authentication 항목\n> Auth Mode\n=> Card Only / Always",
-          "result": "1. 설정된 인증모드로 동작된다.\n2. 인증 성공 되며, 무선 도어락이 동작한다.",
-          "attachments": []
-        },
-        {
-          "id": 15152,
-          "index": 39,
-          "step": "1. Authentication 동작확인\n2. 등록되지 않은 Card 인증 시도",
-          "data": "Authentication 항목\n> Auth Mode\n=> Card Only / Always",
-          "result": "1. 인증 실패 되며, 무선 도어락이 동작하지 않는다.",
-          "attachments": []
-        },
-        {
-          "id": 15153,
-          "index": 40,
-          "step": "1. 무선 도어락에 사용자에 등록 된 MIFARE 카드 인증 시도",
-          "data": "",
-          "result": "인증 성공 되며, 무선 도어락이 동작된다.",
-          "attachments": []
-        },
-        {
-          "id": 15154,
-          "index": 41,
-          "step": "1. 무선 도어락에 사용자에 등록 된 MIFARE 이외의 카드 인증 시도",
-          "data": "",
-          "result": "CSN 타입의 카드는 인증 실패 되며, 무선 도어락이 동작하지 않는다.\nWiegand 타입의 카드는 아무런 반응이 없다.\n: CSN 타입의 MIFARE 카드만 지원\n: AoC 경우 추후 진행",
-          "attachments": []
-        },
-        {
-          "id": 15155,
-          "index": 42,
-          "step": "1. Card 인증모드에 스케줄 설정\n2. 사용자에 등록된 Card 인증 시도",
-          "data": "아래와 같이 스케줄을 생성\n\nSchedule1 : 현재시간 5분 후 시작 ~ 5분간 유지 후 종료\n\nAuthentication 항목\n> Auth Mode\n=> Card Only / Schedule1 ",
-          "result": "1. 인증 실패 되며, 무선 도어락이 동작하지 않는다. (현재시간)\n2. 인증 성공 되며, 무선 도어락이 동작한다. (현재시간 5분후 Schedule1에 설정된 시간)\n3. 인증 실패 되며, 무선 도어락이 동작하지 않는다. (현재시간 10분후 Schedule1에 포함되지 않은 시간)",
-          "attachments": []
-        },
-        {
-          "id": 15156,
-          "index": 43,
-          "step": "1. 사용자에 등록된 Card 연속 인증 시도",
-          "data": "",
-          "result": "1. 인증 성공 되며 장치의 연결이 끊기면 안된다.",
-          "attachments": []
-        },
-        {
-          "id": 15157,
-          "index": 44,
-          "step": "1. 블랙리스트로 등록된 Card 인증 시도",
-          "data": "",
-          "result": "인증 실패 되며, 무선 도어락이 동작하지 않는다.",
-          "attachments": []
-        },
-        {
-          "id": 15158,
-          "index": 45,
-          "step": "1. 사용자에 등록된 카드를 여러장 겹친 상태에서 장치에 연속적으로 인증시도",
-          "data": "",
-          "result": "1. 인증결과(=인증성공)를 정상적으로 출력해주어야 한다.",
-          "attachments": []
-        },
-        {
-          "id": 15159,
-          "index": 46,
-          "step": "1. 사용자에 등록되지 않은 카드를 여러장 겹친 상태에서 장치에 연속적으로 인증시도",
-          "data": "",
-          "result": "1. 인증결과(=인증실패)를 정상적으로 출력해주어야 한다.",
-          "attachments": []
-        },
-        {
-          "id": 15160,
-          "index": 47,
-          "step": "1. 사용자에 등록된 카드 + 등록되지 않은 카드를 여러장 겹친 상태에서 장치에 연속적으로 인증시도",
-          "data": "",
-          "result": "1. 인증결과(=실패or성공)를 정상적으로 출력해주어야 한다.",
-          "attachments": []
-        },
-        {
-          "id": 15161,
-          "index": 48,
-          "step": "1. Full Access : Disabled\n2. 무선 도어락을 설정하여 Door 생성\n2. 사용자에 등록된 Card 인증 시도",
-          "data": "출입그룹이 설정되지 않은 상태",
-          "result": "1. 인증 실패 되며, 무선 도어락이 동작하지 않는다.",
-          "attachments": []
-        },
-        {
-          "id": 15162,
-          "index": 49,
-          "step": "1. Full Access : Enabled\n2. 무선 도어락을 설정하여 Door 생성\n2. 사용자에 등록된 Card 인증 시도",
-          "data": "출입그룹이 설정되지 않은 상태",
-          "result": "1. 인증 성공 되며, 무선 도어락이 동작한다.",
-          "attachments": []
-        },
-        {
-          "id": 15163,
-          "index": 50,
-          "step": "1. 무선 도어락 > 장치 상세페이지 > Status를 Inactive로 변경",
-          "data": "",
-          "result": "비활성화 시, 무선 도어락에 설정해 놓은 Trigger & Action, Zone 등이 동작하지 않는다.",
-          "attachments": []
-        },
-        {
-          "id": 15164,
-          "index": 51,
-          "step": "1. 무선 도어락 > 장치 상세페이지 > Status를 Active로 변경 후 Apply",
-          "data": "",
-          "result": "무선 도어락이 활성화되며 설정해 놓은대로 동작한다.",
-          "attachments": []
-        },
-        {
-          "id": 15166,
-          "index": 52,
-          "step": "1. 무선 도어락> 마우스 우클릭> Delete Wireless Door Lock",
-          "data": "",
-          "result": "OSDP Module에 연결된 무선 도어락이 삭제된다.\n* 무선 도어락에 출입문/구역 등이 설정된 경우에는 삭제 불가",
-          "attachments": []
-        },
-        {
-          "id": 15168,
-          "index": 53,
-          "step": "1. 무선 도어락 > 마우스 우클릭 > Deactivate All Wireless Door Lock",
-          "data": "",
-          "result": "1. 비활성화 시 무선 도어락의 메시지에 대한 동작들을 수행하지 않는다.",
-          "attachments": []
-        },
-        {
-          "id": 15169,
-          "index": 54,
-          "step": "1. CS40 > OSDP Reader LED/Buzzer 설정\n> Auth Success\n> Auth Fail",
-          "data": "LED",
-          "result": "1. 연결된 무선 도어락이 LED가 설정된대로 동작한다.\n: 인증 실패 시에는 별도의 설정 없이 RED LED 를 표현이 가능\n: 인증 성공일 경우에만 CS-40에서 GREEN LED 실행에 대한 명령을 전송",
-          "attachments": []
-        },
-        {
-          "id": 15170,
-          "index": 55,
-          "step": "1. CS40 > Trigger&Action\n2. Device : CS40 - OSDP Module, 무선도어락\n3. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : CS40 선택 > Event List : BioStar Disconnected 선택\n- Device List에서 해당 Device 선택 후 Reconnect 버튼 1회 클릭",
-          "data": "Action Device : 무선 도어락\n1. Action 선택\n: Disable Device",
-          "result": "1. Disabled Device로 설정한 무선 도어락이 잠긴다.\n> 인증 불가\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 정상 동작 확인",
-          "attachments": []
-        },
-        {
-          "id": 15171,
-          "index": 56,
-          "step": "1. CS40 > Trigger&Action\n2. Device : CS40 - OSDP Module, 무선도어락\n3. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : 무선 도어락 선택 > Event List : 1:1 authentication failed(Card)선택",
-          "data": "Action Device : 무선 도어락\n1. Action 선택\n: Disable Device",
-          "result": "1. Disabled Device로 설정한 무선 도어락이 잠긴다.\n> 인증 불가\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 정상 동작 확인",
-          "attachments": []
-        },
-        {
-          "id": 15172,
-          "index": 57,
-          "step": "1. CS40 > Trigger&Action\n2. Device : CS40 - OSDP Module, 무선도어락\n3. Device > Advanced > Trigger & Action > +Add > Trigger > Input > Device : CS40 선택 > Port 설정 > Switch Type > Duration> Schedule 선택",
-          "data": "Action Device : 무선 도어락\n1. Action 선택\n: Release All Alarm\n: Disable Device",
-          "result": "1. Release All Alarm 무선 도어락 출력\n2. Disabled Device로 설정한 무선 도어락이 잠긴다.\n> 인증 불가\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 정상 동작 확인",
-          "attachments": []
-        },
-        {
-          "id": 15173,
-          "index": 58,
-          "step": "1. 무선 도어락 Lock 상태\n2. CS40 > 마우스 우클릭 > Reboot",
-          "data": "",
-          "result": "CS40이 재부팅되어 재연결 된 후에도 무선 도어락은 Lock 상태 유지하여야 한다.",
-          "attachments": []
-        },
-        {
-          "id": 15174,
-          "index": 59,
-          "step": "1. 무선 도어락 Lock 상태\n2. 무선 도어락 상세페이지 진입\n3. Unlock으로 변경 후 상세페이지에 머무는 상태\n4. 무선 도어락 Lock 상태로 변경\n5. 상세페이지 Apply로 설정 후 장치 리스트로 전환 ",
-          "data": "",
-          "result": "무선 도어락은 Lock 상태여야 한다.",
-          "attachments": []
-        },
-        {
-          "id": 15175,
-          "index": 60,
-          "step": "1. CS40> 마우스 우클릭> Reconnected\n2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인",
-          "data": "",
-          "result": "1. Reconnected 시 연결이 끊긴다.\n> RS485 Disconnected 로그출력\n2. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력",
-          "attachments": []
-        },
-        {
-          "id": 15176,
-          "index": 61,
-          "step": "1. CS40> 마우스 우클릭> Reboot\n2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인",
-          "data": "",
-          "result": "1. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력",
-          "attachments": []
-        },
-        {
-          "id": 15177,
-          "index": 62,
-          "step": "1. CS40 Power Off/On\n2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인",
-          "data": "",
-          "result": "1. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력",
-          "attachments": []
-        },
-        {
-          "id": 15179,
-          "index": 63,
-          "step": "1. MONITORING > Door Lock Status\n2. 무선 도어락의 배터리 상태 변경",
-          "data": "0 -> 1\n1 -> 2\n2 -> 3",
-          "result": "무선 도어락의 배터리 상태가 변경되어 발생된 Notify를 저장하여 보여준다.\n: CS40에서 12시간에 한번씩 무선 도어락의 상태를 확인",
-          "attachments": []
-        },
-        {
-          "id": 15181,
-          "index": 64,
-          "step": "1. 무선 도어락의 배터리가 거의 없는 경우",
-          "data": "",
-          "result": "Alert을 통해 알림이 제공된다.",
-          "attachments": []
-        },
-        {
-          "id": 15182,
-          "index": 65,
-          "step": "1. MONITORING > Door Lock Status",
-          "data": "",
-          "result": "무선 도어락 상태가 표시 된다.\n: 배터리 상태가 2 또는 3인 무선 도어락이 있다면 아이콘에 알림 표시가 된다.\n- 배터리 상태 2인 경우, 노란색으로 표시\n- 배터리 상태 3인 경우, 빨간색으로 표시",
-          "attachments": []
-        },
-        {
-          "id": 15183,
-          "index": 66,
-          "step": "1. MONITORING > Door Lock Status\n2. 무선 도어락의 배터리 상태 변경",
-          "data": "",
-          "result": "1. Event Log, Real-time Log 페이지에 로그 출력",
-          "attachments": []
-        },
-        {
-          "id": 15205,
-          "index": 67,
-          "step": "1. CS40 초기화",
-          "data": "Restore to default\n> All\n> Without Network",
-          "result": "하위 장치가 모두 삭제된다.",
-          "attachments": []
-        },
-        {
-          "id": 17112,
-          "index": 68,
-          "step": "1. 무선 도어락의 대수에 대한 라이선스 발급\n2. Biostar2 라이선스 화면",
-          "data": "",
-          "result": "무선 도어락 라이선스 현황에 대해서 확인 가능",
-          "attachments": []
-        },
-        {
-          "id": 17467,
-          "index": 69,
-          "step": "1. 무선 도어락의 대수에 대한 라이선스 발급\n2. Biostar2 라이선스 화면\n3. 추가로 무선 도어락의 라이선스 발급",
-          "data": "",
-          "result": "Biostar2 라이선스 화면에서 라이선스 추가된 갯수만큼 증가 확인",
-          "attachments": []
-        },
-        {
-          "id": 17569,
-          "index": 70,
-          "step": "[EventLog]\n1. Biostar>MONITORING>Door Status>무선도어락 체크>'OPEN' 선택",
-          "data": "무선도어락 door 설정된 상태",
-          "result": "1. Event Log, Real-time Log에 관련 로그가 남는다.\n> Wireless door lock - Door open requested by operator\n> CoreStation - Door open request sent",
-          "attachments": []
-        },
-        {
-          "id": 17570,
-          "index": 71,
-          "step": "[EventLog]\n1. Biostar>MONITORING>Door Status>무선도어락 체크>'Manual Unlock' 선택",
-          "data": "무선도어락 door 설정된 상태",
-          "result": "1. Event Log, Real-time Log에 관련 로그가 남는다.\n> Wireless door lock - Door unlock requested by operator\n> CoreStation - Door unlock request sent",
-          "attachments": []
-        },
-        {
-          "id": 17571,
-          "index": 72,
-          "step": "[EventLog]\n1. Biostar>MONITORING>Door Status>무선도어락 체크>'Manual lock' 선택",
-          "data": "무선도어락 door 설정된 상태",
-          "result": "1. Event Log, Real-time Log에 관련 로그가 남는다.\n> Wireless door lock - Door lock requested by operator\n> CoreStation - Door lock request sent",
-          "attachments": []
-        },
-        {
-          "id": 17572,
-          "index": 73,
-          "step": "[EventLog]\n1. Biostar>MONITORING>Door Status>무선도어락 체크>'Release' 선택",
-          "data": "무선도어락 door 설정된 상태",
-          "result": "1. Event Log, Real-time Log에 관련 로그가 남는다.\n> Wireless door lock - Door release requested by operator\n> CoreStation - Door lock release sent",
-          "attachments": []
-        },
-        {
-          "id": 17573,
-          "index": 74,
-          "step": "[EventLog]\n1. 무선도어락에 인증 성공",
-          "data": "무선도어락 door 설정된 상태",
-          "result": "1. Event Log, Real-time Log에 관련 로그가 남는다.\n> Wireless door lock - 1:1 authentication succeeded (Card)\n> CoreStation - Door open request sent",
-          "attachments": []
-        }
-      ]
-    },
-    "customfield_10236": null,
-    "customfield_10237": null,
-    "environment": null,
-    "customfield_10238": null,
-    "customfield_10239": null,
-    "duedate": null,
-    "comment": {
-      "comments": [],
-      "maxResults": 0,
-      "total": 0,
-      "startAt": 0
-    },
-    "customfield_10230": null,
-    "fixVersions": [],
-    "customfield_10231": null,
-    "customfield_10232": null,
-    "customfield_10233": null,
-    "customfield_12410": null,
-    "customfield_10234": null,
-    "customfield_10235": null,
-    "customfield_10225": null,
-    "customfield_12404": null,
-    "customfield_10226": null,
-    "customfield_12403": null,
-    "customfield_10227": null,
-    "customfield_12406": null,
-    "customfield_10228": null,
-    "customfield_10229": null,
-    "customfield_10900": null,
-    "customfield_12408": null,
-    "customfield_10901": null,
-    "customfield_10902": null,
-    "customfield_10903": null,
-    "customfield_12409": null,
-    "customfield_10904": null,
-    "customfield_10905": null,
-    "customfield_10220": null,
-    "priority": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-      "name": "미할당",
-      "id": "10100"
-    },
-    "customfield_10221": null,
-    "customfield_12400": null,
-    "customfield_12402": null,
-    "customfield_10224": null,
-    "customfield_10214": null,
-    "customfield_10217": null,
-    "customfield_10218": null,
-    "timeestimate": null,
-    "versions": [],
-    "customfield_10219": null,
-    "status": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
-      "description": "",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
-      "name": "할 일",
-      "id": "10000",
-      "statusCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
-        "id": 2,
-        "key": "new",
-        "colorName": "blue-gray",
-        "name": "할 일"
-      }
-    },
-    "customfield_12510": null,
-    "customfield_10213": null,
-    "customfield_12511": null,
-    "customfield_10203": null,
-    "customfield_10204": null,
-    "customfield_12502": null,
-    "customfield_10205": null,
-    "customfield_10206": null,
-    "customfield_10207": null,
-    "aggregatetimeestimate": null,
-    "customfield_10208": null,
-    "customfield_10209": null,
-    "customfield_12509": null,
-    "customfield_12508": null,
-    "creator": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=brlee",
-      "name": "brlee",
-      "key": "JIRAUSER13401",
-      "emailAddress": "brlee@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=11016",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=11016",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=11016",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=11016"
-      },
-      "displayName": "이보라",
-      "active": false,
-      "timeZone": "Asia/Seoul"
-    },
-    "aggregateprogress": {
-      "progress": 0,
-      "total": 0
-    },
-    "customfield_10320": null,
-    "customfield_10321": null,
-    "customfield_12501": null,
-    "customfield_10202": null,
-    "customfield_12500": null,
-    "customfield_10313": "1|hzx7d3:",
-    "customfield_10316": null,
-    "customfield_10317": null,
-    "timespent": null,
-    "aggregatetimespent": null,
-    "customfield_10310": null,
-    "customfield_10302": null,
-    "customfield_10303": null,
-    "customfield_12601": null,
-    "customfield_10304": null,
-    "customfield_10305": null,
-    "customfield_10308": null,
-    "workratio": -1,
-    "created": "2023-03-10T11:00:21.000+0900",
-    "customfield_10533": null,
-    "customfield_10534": null,
-    "customfield_11501": null,
-    "customfield_11503": null,
-    "customfield_13001": null,
-    "customfield_13000": null,
-    "customfield_10530": null,
-    "customfield_10531": null,
-    "customfield_10532": null,
-    "customfield_10401": null,
-    "customfield_10522": null,
-    "customfield_10402": null,
-    "customfield_12700": null,
-    "customfield_10524": null,
-    "customfield_10525": null,
-    "customfield_12702": null,
-    "attachment": [],
-    "customfield_10526": null,
-    "customfield_12704": null,
-    "customfield_10528": null,
-    "customfield_12706": null,
-    "customfield_10520": null,
-    "customfield_10521": null,
-    "customfield_10400": null,
-    "customfield_10511": null,
-    "customfield_10512": null,
-    "customfield_11600": null,
-    "customfield_10513": null,
-    "customfield_10514": null,
-    "customfield_10515": null,
-    "customfield_10516": null,
-    "customfield_10517": null,
-    "customfield_10518": null,
-    "customfield_10519": null
+[
+  {
+    "id": "COMMONR-302_step_1",
+    "document": "Test Step: [OSDP Module을 물리적으로 결선하지 않은 상태]\n1. CS40> 마우스 우클릭> Add OSDP Device\n2. Select OSDP Device Type 팝업 출력\n3. OSDP Antenna 선택 후 cancel 버튼 클릭\nExpected Result: 팝업 닫히며 OSDP Module 추가 되지 않음",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "1",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_2",
+    "document": "Test Step: [OSDP Module을 물리적으로 결선하지 않은 상태]\n1. CS40> 마우스 우클릭> Add OSDP Device\n2. Select OSDP Device Type 팝업 출력\n3. OSDP Antenna 선택 후 OK 버튼 클릭\nTest Data: CS40 라이선스 비활성화 상태\nExpected Result: OSDP Module 추가 되지 않으며 에러 팝업 출력\n- 국문 : 무선 도어락을 사용하기 위해서는 먼저 도어락 라이선스를 활성화해야 합니다. \n- 영문 : To use the door lock, you should activate the door lock license before.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "2",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_3",
+    "document": "Test Step: [OSDP Module을 물리적으로 결선하지 않은 상태]\n1. CS40> 마우스 우클릭> Add OSDP Device\n2. Select OSDP Device Type 팝업 출력\n3. OSDP Antenna 선택 후 OK 버튼 클릭\n4. Add OSDP Device 팝업 출력\n5. OSDP Module 추가할 포트 선택\nTest Data: CS40 라이선스 활성화 상태\nExpected Result: Add New OSDP Device 화면 출력",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "3",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_4",
+    "document": "Test Step: 1. Add New OSDP Device 화면 출력\nExpected Result: 아래와 같이 값 출력 됨\nInformation\n- Title : Add New OSDP Device\n- Name : Device Name\n- OSDP Device Type : OSDP Antenna\n- Port : Port (비활성화)\n- Device ID : CS-40이 부여하는 Device ID (비활성화)\n- Vendor Code : 빈칸 (비활성화)\n- Serial Number : 빈칸 (비활성화)\n- Product Name : 빈칸 (비활성화)\n- Hardware Version : 빈칸 (비활성화)\n- Firmware Version : 빈칸 (비활성화)\n- Status : Active\n\nNetwork(RS-485)\n- OSDP ID\n- Secure Communication : Use",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "4",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_5",
+    "document": "Test Step: 1. Add New OSDP Device 화면\n2. OSDP ID 입력 후 Apply\nTest Data: OSDP ID \n>0번 ~ 119번 설정 가능\nExpected Result: All Devices 화면으로 전환",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "5",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_6",
+    "document": "Test Step: 1. OSDP Module 두개가 추가된 상태\n2. CS40> 마우스 우클릭> Add OSDP Device\n3. Select OSDP Device Type 팝업 출력\n4. OSDP Antenna 선택 후 OK 버튼 클릭\n5. Add New OSDP Device 화면에서 Apply\nExpected Result: 1. 에러 메시지 출력\n: CS40 한대에 무선 안테나 모듈 2대까지 연결 가능하다.\n\n- 국문 : 최대 OSDP 장치 수에 도달하여 더 이상 추가할 수 없습니다.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "6",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_7",
+    "document": "Test Step: 1.OSDP Module 한개가 추가된 상태\n2.CS40>마우스우클릭>Add OSDP Device\n3.Select OSDP Device Type 팝업 출력\n4.OSDP Antenna 선택 > OK 선택\n5.Add osdp Device  팝업 확인\nExpected Result: 이미 OSDP Module이 추가되어 있는 포트는 비활성화되어 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "7",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_8",
+    "document": "Test Step: 1. CS40> 마우스 우클릭> Add OSDP Device\n2. Select OSDP Device Type 팝업 출력\n3. OSDP Reader 선택 후 OK 버튼 클릭\n4. Add OSDP Device 팝업 출력\n5. OSDP Antenna 추가된 포트 확인\nExpected Result: Port 버튼 비활성화 문구 출력\n: 하나의 Port에 하나의 OSDP 모듈만 추가 가능\n- 국문 : OSDP 안테나 연결됨",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "8",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_9",
+    "document": "Test Step: 1. OSDP Antenna 하나 추가된 상태\n2. OSDP Antenna> 마우스 우클릭> Delete Device\n\nExpected Result: OSDP Antenna 삭제가 된다.\n: 하위에 연결된 무선 도어락이 Door, Zone으로 설정되어 있는 경우 삭제 불가",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "9",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_10",
+    "document": "Test Step: 1. OSDP Module 하나 추가된 상태\n2. OSDP Module> 마우스 우클릭> Delete Device > OSDP Module 삭제됨\n3. CS40> 마우스 우클릭> Add OSDP Device\n4. Select OSDP Device Type 팝업 출력\n5. OSDP Antenna 선택 후 OK 버튼 클릭\n6. Add OSDP Device 팝업 출력\n7. OSDP Module 추가할 포트 선택\nExpected Result: Add New OSDP Module 화면 출력된다.\n: 기존 추가 되어있다가 삭제 된 OSDP Module 의 포트도 활성화 되어 표시된다.\n: 추가된 OSDP Module 삭제 후 OSDP Module을 새로 추가할 경우 문제 없이 추가되어야 한다.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "10",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_11",
+    "document": "Test Step: 1. OSDP Module 추가, 삭제를 반복해서 진행\nTest Data: 10번 이상\nExpected Result: 반복적인 추가, 삭제에도 문제없이 추가, 삭제되어야한다.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "11",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_12",
+    "document": "Test Step: 1. 추가한 OSDP Module 상세페이지 진입\nExpected Result: 아래와 같이 값 출력 됨\nInformation\n- Title : OSDP Antenna\n- Name : Device Name\n- OSDP Device Type : OSDP Antenna\n- Port : Port (비활성화)\n- Device ID : CS-40이 부여하는 Device ID (비활성화)\n- Vendor Code : 빈칸 (비활성화)\n- Serial Number : 빈칸 (비활성화)\n- Product Name : 빈칸 (비활성화)\n- Hardware Version : 빈칸 (비활성화)\n- Firmware Version : 빈칸 (비활성화)\n- Status : Active\n\nNetwork(RS-485)\n- OSDP ID : 설정한 OSDP ID\n- Secure Communication : Use",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "12",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_13",
+    "document": "Test Step: 1. 설정한 OSDP ID와 다른 ID를 가진 OSDP Module을 물리적으로 CS40 과 연결\n2. 통신유무 확인\nExpected Result: 설정한 OSDP ID와 다른 ID를 가진 OSDP Device가 해당 포트에 결선되면 연결되지 않는다.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "13",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_14",
+    "document": "Test Step: 1. 설정한 OSDP ID와 동일한 ID를 가진 OSDP Module을 물리적으로 CS40 과 연결\n2. 통신유무 확인\nExpected Result: 설정한 OSDP ID와 동일한 ID를 가진 OSDP Device가 해당 포트에 결선되면 연결이 이루어진다.\n: RS-485 Connected 이벤트 로그 발생",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "14",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_15",
+    "document": "Test Step: [OSDP Module 물리적으로 연결된 상태]\n1. OSDP Module 상세페이지 진입\nExpected Result: OSDP Module 정보가 정상적으로 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "15",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_16",
+    "document": "Test Step: [OSDP Module 물리적으로 연결된 상태]\n1. Status를 Inactive로 변경\nExpected Result: Deactivation Warning Message 팝업 발생\n비활성화 시, 해당 OSDP Module 하위에 연결된 Door Lock 에 설정해 놓은 Trigger & Action, Zone 등이 동작하지 않을 수 있다는 경고 메시지를 발생\n- 국문 : OSDP 장치가 비활성화 되고 설정한 대로 동작하지 않습니다. 계속 하시겠습니까?\n- 영문 : OSDP device will not work once it is deactivated. Continue?",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "16",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_17",
+    "document": "Test Step: [OSDP Module 물리적으로 연결된 상태]\n1. Status를 Inactive로 변경후 Apply\nExpected Result: 1. Device List의 Status가 Normal (Inactive)로 출력\n2. BioStar UI상 아이콘은 회색처리",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "17",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_18",
+    "document": "Test Step: [OSDP Module 물리적으로 연결된 상태]\n1. Status를 Inactive로 설정 후 동작확인\nExpected Result: 1. 비활성화 시, CS40 은 OSDP Module 및 해당 OSDP Module 에 연결된 Door Lock 의 메시지에 대한 동작들을 수행하지 않는다.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "18",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_19",
+    "document": "Test Step: [OSDP Module 물리적으로 연결된 상태]\n1. OSDP Module 상세페이지 진입\n2. Status를 Active로 변경후 Apply\nExpected Result: 1. Device List의 Status가 Normal (Active)로 출력\n2. 장치에 입력에 따른 CS40이 동작",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "19",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_20",
+    "document": "Test Step: [OSDP Module 물리적으로 연결된 상태&도어락 추가하지 않은 상태]\n1. OSDP Module 상세페이지 진입\n2. OSDP ID 변경 후 Apply\nTest Data: > OSDP ID\n=> 0~119번 설정가능\nExpected Result: 1. OSDP 변경 가능하지만 연결 끊어짐을 안내하는 메시지 출력\n- 국문 : OSDP ID를 변경하면 OSDP 장치가 OSDP ID 불일치로 연결 해제될 수 있습니다.\n- 영문 : If you change the OSDP ID, the OSDP device may be disconnected due to the OSDP ID mismatch.\n\n2. 설정된 OSDP ID로 연결된 상태에서 주소 변경시 연결 끊어짐 발생",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "20",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_21",
+    "document": "Test Step: [OSDP Module 물리적으로 연결된 상태&도어락 추가하여 연결 된 상태]\n1. OSDP Module 상세페이지 진입\n2. OSDP ID 변경\nExpected Result: OSDP ID 변경 불가",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "21",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_22",
+    "document": "Test Step: [OSDP Module 물리적으로 연결된 상태]\n1. OSDP Module 상세페이지 진입\n2. Secure Communication \nTest Data: > Secure Communication \n=> Default: Use\nExpected Result: Use 상태로 변경 불가(비활성화)\n: 안테나 모듈의 경우 무조건 보안 통신을 하기에, 해당 옵션은 수정 하지 못함",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "22",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_23",
+    "document": "Test Step: 1. 장치목록에서 OSDP Module에 해당하는 장치정보 확인\nExpected Result: 1. OSDP Module인 경우 Device Address에 OSDP 주소를 표시한다.\n2. Device Status에서는 OSDP 장치의 연결 및 활성화 상태를 표시한다.\n> Normal(Active)\n> Normal(Inactive)\n> Disconnected",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "23",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_24",
+    "document": "Test Step: [OSDP Module 추가된 상태]\n1. OSDP Module에 추가할 무선도어락에 커맨드 카드 태깅\n2. 삑소리 나며 서비스 모드로 진입\n3. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\n4. Auto Add Wireless Door Lock 팝업 출력\nTest Data: : 연결할 무선도어락이 서비스 모드여야함\n: 서비스모드로 진입하기 위해 무선 도어락에 커맨드 카드 태깅\nExpected Result: 1. 무선 도어락이 OSDP Module에 연결되면 파란불 3번 깜빡인다\n2. Auto Add Wireless Door Lock 팝업에 무선 도어락 표시\n",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "24",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_25",
+    "document": "Test Step: [OSDP Module 추가된 상태]\n1. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\n2. Auto Add Wireless Door Lock 팝업 출력\nExpected Result: 1. OSDP Module이 연결할 수 있는 무선 도어락이 표시된다.\n2. 무선 도어락의 Serial Number, Device Type 표시\n> Serial Number : 무선 도어락의 Serial Number\n> Device Type : 무선 도어락 장치 이름/타입 표시 (Door Handle, Door Knob)",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "25",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_26",
+    "document": "Test Step: [OSDP Module 추가된 상태]\n1. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\n2. Auto Add Wireless Door Lock 팝업 출력\n3. 검색된 무선 도어락 표시\nExpected Result: 무선 도어락이 리스트에 뜨면 OSDP 모듈밑으로 자동으로 추가가 된다.\n: 무선 도어락은 무선 안테나 모듈 한대에 최개 6대까지 연결할 수 있다\n\n※ 무선 도어락 연결 사양은 최대 8대까지 연결할 수 있지만, 연결 동작 및 운영 안정성을 고려하여 6대까지만 연결할 수 있도록 제한\n\n",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "26",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_27",
+    "document": "Test Step: 1. Device > 장치 리스트 > 추가된 무선 도어락 확인\nExpected Result: 추가된 무선 도어락 타입에 따라 Knob, Handle 형태의 아이콘이 맞게 표시된다. ",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "27",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_28",
+    "document": "Test Step: [OSDP Module 추가된 상태]\n1. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\n2. 서비스 모드로 진입한 무선 도어락이 없는 상태\nExpected Result: 검색되는 무선 도어락 없어서 타임아웃 발생\n: 무선 도어락이 검색되지 않습니다. ",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "28",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_29",
+    "document": "Test Step: [OSDP Module 추가된 상태]\n1. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\n2. 하나의 무선 도어락 서비스 모드 진입\n3. Auto Add Wireless Door Lock 팝업 출력\n4. 검색된 무선 도어락 표시\nExpected Result: 서비스 모드에 진입한 무선 도어락만 연결되어 표시",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "29",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_30",
+    "document": "Test Step: [OSDP Module 추가된 상태]\n1. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\n2. 두개 이상의 무선 도어락 서비스 모드 진입\n3. Auto Add Wireless Door Lock 팝업 출력\n4. 검색된 무선 도어락 표시\nExpected Result: 서비스 모드에 진입한 2개 이상의 무선 도어락만 연결되어 표시\n\n: TC 수정 예정.\n무선 도어락은 한번에 한 대씩만 추가할 수 있다",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "30",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_31",
+    "document": "Test Step: [OSDP Module 추가된 상태 & 한개 이상 연결되어있는 무선 도어락]\n1. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\n2. 이미 연결되어있는 무선 도어락 서비스 모드 진입(커맨드카드 태킹)\n3. Auto Add Wireless Door Lock 팝업 출력\n4. 검색된 무선 도어락 표시\nExpected Result: 이미 추가되어 연결되어 있는 무선 도어락이기 때문에 팝업창에 출력되지 않는다.\n\n: TC 수정 예정\n결과값 확인 후 수정 예정\n\n: Device Timed Out??",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "31",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_32",
+    "document": "Test Step: [OSDP Module 추가된 상태]\n1. 발급된 라이선스로 연결 가능한 최대 대수 만큼 연결된 상태\n2. OSDP Module> 마우스 우클릭> Auto Add Wireless Door Lock\nExpected Result: 에러 메시지 발생\n: 적용된 라이선스로 연결할 수 있는 최대 무선 도어락 수에 도달하여 더 이상 추가할 수 없습니다.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "32",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_33",
+    "document": "Test Step: [OSDP Module 추가된 상태]\n\n1. 연결 가능한 최대 대수 확인\nTest Data: > 무선 안테나 모듈 2대 \n> 무선 도어락 12대\nExpected Result: 1. 무선 안테나 1대당 6개의 무선 도어락 연결 확인\n2. 무선 안테나 모듈 2대에 무선 도어락 최대 12개 연결 확인",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "33",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_34",
+    "document": "Test Step: 1. 무선 도어락 추가, 삭제를 반복해서 진행\nTest Data: 10번 이상\nExpected Result: 반복적인 추가, 삭제에도 문제없이 추가, 삭제되어야한다.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "34",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_35",
+    "document": "Test Step: 1. 추가된 무선 도어락 상세페이지 진입\nExpected Result: 아래와 같이 값 출력 됨\nInformation\n- Name : Door Lock(\"device ID\")\n- Device Type : Door Lock (비활성화)\n- Port : Add OSDP device 시 선택한 Port (비활성화)\n- Serial Number : OSDP Device 로 부터 전송되는 Device ID\n- Device ID : CS-40이 부여하는 Device ID (비활성화)\n- Product Name : Model Code (비활성화)\n- Vendor Code : OSDP Device로 부터 전송되는 Vendor Code 표시 (비활성화)\n- Hardware Version\n- Firmware Version\n- Locked\n- Status : Active\n\nAuthentication\n- Auth Mode : Card / Always\n- Full Access : Disabled",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "35",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_36",
+    "document": "Test Step: 1. 추가된 무선 도어락이 있는 경우\n2. OSDP 모듈과 멀어지도록 무선도어락 이동\nExpected Result: OSDP Module과 멀어지면 연결이 끊어지고, 다시 가까워지면 연결된다.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "36",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_37",
+    "document": "Test Step: 1. 무선 도어락의 배터리가 다한 상태\n2. 무선 도어락의 배터리 교체\nExpected Result: 배터리가 다하면 연결이 끊어지고, 무선 도어락의 배터리 교체 시 다시 연결된다.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "37",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_38",
+    "document": "Test Step: 1. Authentication 동작확인\n2. 사용자에 등록된 Card 인증 시도\nTest Data: Authentication 항목\n> Auth Mode\n=> Card Only / Always\nExpected Result: 1. 설정된 인증모드로 동작된다.\n2. 인증 성공 되며, 무선 도어락이 동작한다.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "38",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_39",
+    "document": "Test Step: 1. Authentication 동작확인\n2. 등록되지 않은 Card 인증 시도\nTest Data: Authentication 항목\n> Auth Mode\n=> Card Only / Always\nExpected Result: 1. 인증 실패 되며, 무선 도어락이 동작하지 않는다.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "39",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_40",
+    "document": "Test Step: 1. 무선 도어락에 사용자에 등록 된 MIFARE 카드 인증 시도\nExpected Result: 인증 성공 되며, 무선 도어락이 동작된다.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "40",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_41",
+    "document": "Test Step: 1. 무선 도어락에 사용자에 등록 된 MIFARE 이외의 카드 인증 시도\nExpected Result: CSN 타입의 카드는 인증 실패 되며, 무선 도어락이 동작하지 않는다.\nWiegand 타입의 카드는 아무런 반응이 없다.\n: CSN 타입의 MIFARE 카드만 지원\n: AoC 경우 추후 진행",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "41",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_42",
+    "document": "Test Step: 1. Card 인증모드에 스케줄 설정\n2. 사용자에 등록된 Card 인증 시도\nTest Data: 아래와 같이 스케줄을 생성\n\nSchedule1 : 현재시간 5분 후 시작 ~ 5분간 유지 후 종료\n\nAuthentication 항목\n> Auth Mode\n=> Card Only / Schedule1 \nExpected Result: 1. 인증 실패 되며, 무선 도어락이 동작하지 않는다. (현재시간)\n2. 인증 성공 되며, 무선 도어락이 동작한다. (현재시간 5분후 Schedule1에 설정된 시간)\n3. 인증 실패 되며, 무선 도어락이 동작하지 않는다. (현재시간 10분후 Schedule1에 포함되지 않은 시간)",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "42",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_43",
+    "document": "Test Step: 1. 사용자에 등록된 Card 연속 인증 시도\nExpected Result: 1. 인증 성공 되며 장치의 연결이 끊기면 안된다.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "43",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_44",
+    "document": "Test Step: 1. 블랙리스트로 등록된 Card 인증 시도\nExpected Result: 인증 실패 되며, 무선 도어락이 동작하지 않는다.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "44",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_45",
+    "document": "Test Step: 1. 사용자에 등록된 카드를 여러장 겹친 상태에서 장치에 연속적으로 인증시도\nExpected Result: 1. 인증결과(=인증성공)를 정상적으로 출력해주어야 한다.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "45",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_46",
+    "document": "Test Step: 1. 사용자에 등록되지 않은 카드를 여러장 겹친 상태에서 장치에 연속적으로 인증시도\nExpected Result: 1. 인증결과(=인증실패)를 정상적으로 출력해주어야 한다.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "46",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_47",
+    "document": "Test Step: 1. 사용자에 등록된 카드 + 등록되지 않은 카드를 여러장 겹친 상태에서 장치에 연속적으로 인증시도\nExpected Result: 1. 인증결과(=실패or성공)를 정상적으로 출력해주어야 한다.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "47",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_48",
+    "document": "Test Step: 1. Full Access : Disabled\n2. 무선 도어락을 설정하여 Door 생성\n2. 사용자에 등록된 Card 인증 시도\nTest Data: 출입그룹이 설정되지 않은 상태\nExpected Result: 1. 인증 실패 되며, 무선 도어락이 동작하지 않는다.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "48",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_49",
+    "document": "Test Step: 1. Full Access : Enabled\n2. 무선 도어락을 설정하여 Door 생성\n2. 사용자에 등록된 Card 인증 시도\nTest Data: 출입그룹이 설정되지 않은 상태\nExpected Result: 1. 인증 성공 되며, 무선 도어락이 동작한다.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "49",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_50",
+    "document": "Test Step: 1. 무선 도어락 > 장치 상세페이지 > Status를 Inactive로 변경\nExpected Result: 비활성화 시, 무선 도어락에 설정해 놓은 Trigger & Action, Zone 등이 동작하지 않는다.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "50",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_51",
+    "document": "Test Step: 1. 무선 도어락 > 장치 상세페이지 > Status를 Active로 변경 후 Apply\nExpected Result: 무선 도어락이 활성화되며 설정해 놓은대로 동작한다.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "51",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_52",
+    "document": "Test Step: 1. 무선 도어락> 마우스 우클릭> Delete Wireless Door Lock\nExpected Result: OSDP Module에 연결된 무선 도어락이 삭제된다.\n* 무선 도어락에 출입문/구역 등이 설정된 경우에는 삭제 불가",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "52",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_53",
+    "document": "Test Step: 1. 무선 도어락 > 마우스 우클릭 > Deactivate All Wireless Door Lock\nExpected Result: 1. 비활성화 시 무선 도어락의 메시지에 대한 동작들을 수행하지 않는다.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "53",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_54",
+    "document": "Test Step: 1. CS40 > OSDP Reader LED/Buzzer 설정\n> Auth Success\n> Auth Fail\nTest Data: LED\nExpected Result: 1. 연결된 무선 도어락이 LED가 설정된대로 동작한다.\n: 인증 실패 시에는 별도의 설정 없이 RED LED 를 표현이 가능\n: 인증 성공일 경우에만 CS-40에서 GREEN LED 실행에 대한 명령을 전송",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "54",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_55",
+    "document": "Test Step: 1. CS40 > Trigger&Action\n2. Device : CS40 - OSDP Module, 무선도어락\n3. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : CS40 선택 > Event List : BioStar Disconnected 선택\n- Device List에서 해당 Device 선택 후 Reconnect 버튼 1회 클릭\nTest Data: Action Device : 무선 도어락\n1. Action 선택\n: Disable Device\nExpected Result: 1. Disabled Device로 설정한 무선 도어락이 잠긴다.\n> 인증 불가\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 정상 동작 확인",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "55",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_56",
+    "document": "Test Step: 1. CS40 > Trigger&Action\n2. Device : CS40 - OSDP Module, 무선도어락\n3. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : 무선 도어락 선택 > Event List : 1:1 authentication failed(Card)선택\nTest Data: Action Device : 무선 도어락\n1. Action 선택\n: Disable Device\nExpected Result: 1. Disabled Device로 설정한 무선 도어락이 잠긴다.\n> 인증 불가\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 정상 동작 확인",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "56",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_57",
+    "document": "Test Step: 1. CS40 > Trigger&Action\n2. Device : CS40 - OSDP Module, 무선도어락\n3. Device > Advanced > Trigger & Action > +Add > Trigger > Input > Device : CS40 선택 > Port 설정 > Switch Type > Duration> Schedule 선택\nTest Data: Action Device : 무선 도어락\n1. Action 선택\n: Release All Alarm\n: Disable Device\nExpected Result: 1. Release All Alarm 무선 도어락 출력\n2. Disabled Device로 설정한 무선 도어락이 잠긴다.\n> 인증 불가\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 정상 동작 확인",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "57",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_58",
+    "document": "Test Step: 1. 무선 도어락 Lock 상태\n2. CS40 > 마우스 우클릭 > Reboot\nExpected Result: CS40이 재부팅되어 재연결 된 후에도 무선 도어락은 Lock 상태 유지하여야 한다.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "58",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_59",
+    "document": "Test Step: 1. 무선 도어락 Lock 상태\n2. 무선 도어락 상세페이지 진입\n3. Unlock으로 변경 후 상세페이지에 머무는 상태\n4. 무선 도어락 Lock 상태로 변경\n5. 상세페이지 Apply로 설정 후 장치 리스트로 전환 \nExpected Result: 무선 도어락은 Lock 상태여야 한다.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "59",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_60",
+    "document": "Test Step: 1. CS40> 마우스 우클릭> Reconnected\n2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인\nExpected Result: 1. Reconnected 시 연결이 끊긴다.\n> RS485 Disconnected 로그출력\n2. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "60",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_61",
+    "document": "Test Step: 1. CS40> 마우스 우클릭> Reboot\n2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인\nExpected Result: 1. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "61",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_62",
+    "document": "Test Step: 1. CS40 Power Off/On\n2. 재연결 된 후 Device Tree 출력 및 Device List의 통신유무 확인\nExpected Result: 1. 재연결된 후 끊김 아이콘이 해제되며, Device List의 Status에는 Nomal 출력",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "62",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_63",
+    "document": "Test Step: 1. MONITORING > Door Lock Status\n2. 무선 도어락의 배터리 상태 변경\nTest Data: 0 -> 1\n1 -> 2\n2 -> 3\nExpected Result: 무선 도어락의 배터리 상태가 변경되어 발생된 Notify를 저장하여 보여준다.\n: CS40에서 12시간에 한번씩 무선 도어락의 상태를 확인",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "63",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_64",
+    "document": "Test Step: 1. 무선 도어락의 배터리가 거의 없는 경우\nExpected Result: Alert을 통해 알림이 제공된다.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "64",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_65",
+    "document": "Test Step: 1. MONITORING > Door Lock Status\nExpected Result: 무선 도어락 상태가 표시 된다.\n: 배터리 상태가 2 또는 3인 무선 도어락이 있다면 아이콘에 알림 표시가 된다.\n- 배터리 상태 2인 경우, 노란색으로 표시\n- 배터리 상태 3인 경우, 빨간색으로 표시",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "65",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_66",
+    "document": "Test Step: 1. MONITORING > Door Lock Status\n2. 무선 도어락의 배터리 상태 변경\nExpected Result: 1. Event Log, Real-time Log 페이지에 로그 출력",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "66",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_67",
+    "document": "Test Step: 1. CS40 초기화\nTest Data: Restore to default\n> All\n> Without Network\nExpected Result: 하위 장치가 모두 삭제된다.",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "67",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_68",
+    "document": "Test Step: 1. 무선 도어락의 대수에 대한 라이선스 발급\n2. Biostar2 라이선스 화면\nExpected Result: 무선 도어락 라이선스 현황에 대해서 확인 가능",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "68",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_69",
+    "document": "Test Step: 1. 무선 도어락의 대수에 대한 라이선스 발급\n2. Biostar2 라이선스 화면\n3. 추가로 무선 도어락의 라이선스 발급\nExpected Result: Biostar2 라이선스 화면에서 라이선스 추가된 갯수만큼 증가 확인",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "69",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_70",
+    "document": "Test Step: [EventLog]\n1. Biostar>MONITORING>Door Status>무선도어락 체크>'OPEN' 선택\nTest Data: 무선도어락 door 설정된 상태\nExpected Result: 1. Event Log, Real-time Log에 관련 로그가 남는다.\n> Wireless door lock - Door open requested by operator\n> CoreStation - Door open request sent",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "70",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_71",
+    "document": "Test Step: [EventLog]\n1. Biostar>MONITORING>Door Status>무선도어락 체크>'Manual Unlock' 선택\nTest Data: 무선도어락 door 설정된 상태\nExpected Result: 1. Event Log, Real-time Log에 관련 로그가 남는다.\n> Wireless door lock - Door unlock requested by operator\n> CoreStation - Door unlock request sent",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "71",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_72",
+    "document": "Test Step: [EventLog]\n1. Biostar>MONITORING>Door Status>무선도어락 체크>'Manual lock' 선택\nTest Data: 무선도어락 door 설정된 상태\nExpected Result: 1. Event Log, Real-time Log에 관련 로그가 남는다.\n> Wireless door lock - Door lock requested by operator\n> CoreStation - Door lock request sent",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "72",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_73",
+    "document": "Test Step: [EventLog]\n1. Biostar>MONITORING>Door Status>무선도어락 체크>'Release' 선택\nTest Data: 무선도어락 door 설정된 상태\nExpected Result: 1. Event Log, Real-time Log에 관련 로그가 남는다.\n> Wireless door lock - Door release requested by operator\n> CoreStation - Door lock release sent",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "73",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-302_step_74",
+    "document": "Test Step: [EventLog]\n1. 무선도어락에 인증 성공\nTest Data: 무선도어락 door 설정된 상태\nExpected Result: 1. Event Log, Real-time Log에 관련 로그가 남는다.\n> Wireless door lock - 1:1 authentication succeeded (Card)\n> CoreStation - Door open request sent",
+    "metadata": {
+      "issue_key": "COMMONR-302",
+      "step_index": "74",
+      "source": "jira_test_step"
+    }
   }
-}
+]

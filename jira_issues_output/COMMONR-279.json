@@ -1,720 +1,200 @@
-{
-  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
-  "id": "44804",
-  "self": "https://jira.suprema.co.kr/rest/api/2/issue/44804",
-  "key": "COMMONR-279",
-  "fields": {
-    "resolution": null,
-    "customfield_13103": null,
-    "customfield_10510": null,
-    "customfield_10500": "0.0",
-    "customfield_10501": null,
-    "customfield_10502": null,
-    "customfield_12802": null,
-    "customfield_12804": null,
-    "customfield_10505": null,
-    "customfield_12803": null,
-    "customfield_10506": null,
-    "customfield_12806": null,
-    "customfield_10507": null,
-    "customfield_12805": null,
-    "customfield_10508": null,
-    "customfield_12808": null,
-    "customfield_10509": null,
-    "lastViewed": null,
-    "customfield_10180": null,
-    "customfield_10181": null,
-    "customfield_10182": null,
-    "customfield_10183": null,
-    "customfield_10184": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10173",
-      "value": "Major",
-      "id": "10173"
-    },
-    "customfield_10185": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
-      "value": "Medium (2-3일 이내 피드백)",
-      "id": "10220"
-    },
-    "labels": [],
-    "customfield_11702": null,
-    "aggregatetimeoriginalestimate": null,
-    "issuelinks": [
-      {
-        "id": "51639",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/51639",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "61197",
-          "key": "XPASSII-436",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/61197",
-          "fields": {
-            "summary": "[OSDP] Exception Code 설정 후 '이중 인증 실패(잘못된 출입 그룹)' 으로 동작할 경우 Exception Code 미 출력",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
-              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
-              "name": "열림",
-              "id": "1",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
-                "id": 2,
-                "key": "new",
-                "colorName": "blue-gray",
-                "name": "할 일"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
-              "name": "Major (B+)",
-              "id": "10200"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "42913",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/42913",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "52667",
-          "key": "DFW-872",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/52667",
-          "fields": {
-            "summary": "HID OSDP Tool 연결 중 input 접지/해제 시 설정에 따른 동작 안됨.",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
-              "name": "Critical (A+)",
-              "id": "1"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "55229",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/55229",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "63905",
-          "key": "BLNIIFW-1122",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/63905",
-          "fields": {
-            "summary": "[Intelligent PD] 'Output Info : User ID' 로 선택 후 카드 인증 시 User ID 가 아닌 Card ID 로 출력",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "55230",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/55230",
-        "type": {
-          "id": "10003",
-          "name": "Relates",
-          "inward": "relates to",
-          "outward": "relates to",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
-        },
-        "inwardIssue": {
-          "id": "63905",
-          "key": "BLNIIFW-1122",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/63905",
-          "fields": {
-            "summary": "[Intelligent PD] 'Output Info : User ID' 로 선택 후 카드 인증 시 User ID 가 아닌 Card ID 로 출력",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      }
-    ],
-    "assignee": null,
-    "components": [],
-    "customfield_10170": null,
-    "customfield_10171": null,
-    "customfield_10172": null,
-    "customfield_10174": null,
-    "customfield_10175": null,
-    "customfield_10176": null,
-    "customfield_10177": null,
-    "customfield_10178": null,
-    "customfield_10179": null,
-    "customfield_10600": 22.0,
-    "customfield_10601": [],
-    "customfield_12901": null,
-    "customfield_10602": null,
-    "customfield_12900": null,
-    "subtasks": [],
-    "reporter": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EC%A1%B0%EC%9E%84%EC%84%B1",
-      "name": "조임성",
-      "key": "조임성",
-      "emailAddress": "isjo@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607"
-      },
-      "displayName": "조임성",
-      "active": false,
-      "timeZone": "Asia/Seoul"
-    },
-    "customfield_10168": null,
-    "customfield_10169": null,
-    "customfield_11800": null,
-    "progress": {
-      "progress": 0,
-      "total": 0
-    },
-    "votes": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-279/votes",
-      "votes": 0,
-      "hasVoted": false
-    },
-    "worklog": {
-      "startAt": 0,
-      "maxResults": 20,
-      "total": 0,
-      "worklogs": []
-    },
-    "issuetype": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
-      "id": "10000",
-      "description": "Represents a Test",
-      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
-      "name": "Test",
-      "subtask": false
-    },
-    "project": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
-      "id": "10000",
-      "key": "COMMONR",
-      "name": "Common Requirement And Test Case",
-      "projectTypeKey": "software",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
-        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
-        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
-        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
-      },
-      "projectCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
-        "id": "10000",
-        "description": "Requirements And Test Cases For The BioStar System Device",
-        "name": "BioStar System Device Requirement And Test Case"
-      }
-    },
-    "customfield_11000": null,
-    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@56a4d662[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6df106f6[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@30dea376[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@55fdc52d[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@30bdc134[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@3b596aa4[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@7ed9bbaa[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@45b6cdf1[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@1bdc0012[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@6b204587[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@5897b7a2[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@2b3d2004[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
-    "resolutiondate": null,
-    "watches": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-279/watchers",
-      "watchCount": 1,
-      "isWatching": false
-    },
-    "customfield_11900": null,
-    "customfield_11901": null,
-    "updated": "2025-08-01T10:07:34.000+0900",
-    "timeoriginalestimate": null,
-    "description": "*요구사항 정의*\r\n > http://192.168.1.4:8001/browse/BDP-92\r\n\r\n*관련 테스트를 진행하기 위한 전제조건*\r\n >CS40 V1.5.1 / BEW2 V1.6.3 / BSL2 V1.6.1 / BEP2 V1.4.1 / XP2 V1.2.3 이상 버전\r\n > RS-485 mode 가 Default 상태로 Suprema 장치가 아닌 3rd-party Controller 에 연결\r\n > User ID Type: Number 사용\r\n > Output info : User ID 사용\r\n\r\n*작성된 TestCase 내용*\r\n\r\n> [Use User ID 사용 & 숫자모드] 카드인증 성공시 출력되는 값에 대한 확인케이스\r\n - CSN Card\r\n - Wiegand Card\r\n - Smart Card\r\n - Mobile Access Card\r\n\r\n> [Use User ID 사용 & 숫자모드] 카드인증 실패시 Exception Code 설정에 따라 출력되는 값에 대한 확인케이스\r\n\r\n> [Use User ID 사용 & 숫자모드] 카드 외 크리덴셜로 인증 및 Byte Order 설정에 따른 출력되는 값에 대한 확인케이스\r\n - 사용자에 카드가 미등록된 경우\r\n - 사용자에 카드가 등록된 경우",
-    "customfield_10251": null,
-    "customfield_10252": null,
-    "customfield_10253": null,
-    "customfield_10254": null,
-    "customfield_10255": null,
-    "timetracking": {},
-    "customfield_10257": null,
-    "customfield_10247": null,
-    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. HID OSDP Tool에 연결<br/>2. 사용자에 등록된 CSN Card 인증<br/>3. 출력되는 데이터 확인</p></td><td><p>CSN Card<br/>&gt; Mifare / DesFire / Felica / EM / ISO-15693</p>\n\n<p>ex. User ID: 11111 / Card ID: 12345</p></td><td><p>1. 인증한 카드가 등록된 User ID가 출력된다.<br/>&gt; User ID인 11111 출력 및 User ID에 대한 BitCount가 표시</p></td></tr><tr><td>2</td><td><p>1. HID OSDP Tool에 연결<br/>2. 사용자에 Wiegand Format으로 CSN Card 등록<br/>3. 등록된 CSN Card 인증<br/>4. 출력되는 데이터 확인</p></td><td><p>CSN Wiegand Format</p>\n\n<p>CSN Card<br/>&gt; Mifare / DesFire / Felica / EM / ISO-15693</p>\n\n<p>ex. User ID: 11111 / Card ID: 1-12345</p></td><td><p>1. 인증한 카드가 등록된 User ID가 출력된다.<br/>&gt; User ID인 11111 출력 및 User ID에 대한 BitCount가 표시</p></td></tr><tr><td>3</td><td><p>1. HID OSDP Tool에 연결<br/>2. 사용자에 Wiegand Card 등록<br/>3. 등록된 Wiegand Card로 인증<br/>4. 출력되는 데이터 확인</p></td><td><p>Wiegand Card<br/>&gt; HID / iCLASS</p>\n\n<p>ex. User ID: 22222 / Card ID: 1-2345</p></td><td><p>1. 인증한 카드가 등록된 User ID가 출력된다.<br/>&gt; User ID인 22222 출력 및 User ID에 대한 BitCount가 표시</p></td></tr><tr><td>4</td><td><p>1. HID OSDP Tool에 연결<br/>2. 사용자에 Smart Card 발급<br/>3. Smart Card로 인증<br/>4. 출력되는 데이터 확인</p></td><td><p>Smart Card(AOC, SCC)<br/>&gt; Mifare/DesFire</p>\n\n<p>ex. SCC<br/>&gt; User ID: 20201009 / Card ID: 20201099</p></td><td><p>1. 발급된 카드가 등록된 User ID가 출력된다.<br/>&gt; User ID인 20201009 출력 및 User ID에 대한 BitCount가 표시</p></td></tr><tr><td>5</td><td><p>1. HID OSDP Tool에 연결<br/>2. 사용자에 Smart Card 발급<br/>3. Smart Card로 인증<br/>4. 출력되는 데이터 확인</p></td><td><p>Smart Card(AOC, SCC)<br/>&gt; iCLASS/SEOS</p>\n\n<p>ex. SCC<br/>&gt; User ID: 20201010 / 발급된 Card ID: 20200202</p>\n\n<p>ex. AOC<br/>&gt; User ID: 20201010 / 발급된 Card ID: 20201010</p></td><td><p>1. 발급된 카드가 등록된 User ID가 출력된다.<br/>&gt; User ID인 20201010 출력 및 User ID에 대한 BitCount가 표시</p></td></tr><tr><td>6</td><td><p>1. HID OSDP Tool에 연결<br/>2. 사용자에 Mobile Access Card 발급<br/>3. Mobile Access Card로 인증<br/>4. 출력되는 데이터 확인</p></td><td><p>Mobile Access Card<br/>&gt; NFC, BLE</p>\n\n<p>ex. User ID: 33333 / Card ID: 1212121212</p></td><td><p>1. 발급된 카드가 등록된 User ID가 출력된다.<br/>&gt; User ID인 33333 출력 및 User ID에 대한 BitCount가 표시</p></td></tr><tr><td>7</td><td><p>1. HID OSDP Tool과 연결<br/>2. 등록되지 않은 크리덴셜로 인증해 인증실패로 동작<br/>3. 출력되는 데이터 확인</p></td><td><p>크리덴셜<br/>&gt; 카드 / Finger(Face) / ID(추후 키패드 지원장치에 해당)</p></td><td><p>1. 출력되는 카드데이터가 없다.</p></td></tr><tr><td>8</td><td><p>1. HID OSDP Tool과 연결<br/>2. Exception Code 설정<br/>3. 등록되지 않은 크리덴셜로 인증해 인증실패로 동작<br/>4. 출력되는 데이터 확인</p></td><td><p>Exception Code<br/>&gt; 1(Default) - BioStar2 UI<br/>&gt; 직접입력(0xFF...FF(8Byte))</p>\n\n<p>크리덴셜<br/>&gt; 카드 / Finger(Face) / ID(추후 키패드 지원장치에 해당)</p></td><td><p>1. Exception Code에 해당하는 데이터가  출력된다.<br/>&gt; Default - 01로 출력<br/>&gt; 직접입력 - 설정한 값이 그대로 출력되며 최대 8Byte까지 지원</p></td></tr><tr><td>9</td><td><p>1. HID OSDP Tool과 연결<br/>2. 사용자의 첫번째 카드로 CSN 등록<br/>3. 카드 외 크리덴셜로 인증해 인증성공으로 동작<br/>4. 출력되는 데이터 확인</p></td><td><p>CSN Card Format<br/>&gt; Normal</p>\n\n<p>크리덴셜<br/>&gt; Finger(Face) / ID(추후 키패드 지원장치에 해당)</p></td><td><p>1. 인증된 사용자의 User ID가 출력된다.</p></td></tr><tr><td>10</td><td><p>1. HID OSDP Tool과 연결<br/>2. 사용자의 첫번째 카드로 CSN Wiegand Format으로 등록<br/>3. CSN Card Format 설정<br/>4. 카드 외 크리덴셜로 인증해 인증성공으로 동작<br/>5. 출력되는 데이터 확인</p></td><td><p>CSN Card Format<br/>&gt; Wiegand Format</p>\n\n<p>크리덴셜<br/>&gt; Finger(Face) / ID(추후 키패드 지원장치에 해당)</p></td><td><p>1. 인증된 사용자의 User ID가 출력된다.</p></td></tr><tr><td>11</td><td><p>1. HID OSDP Tool과 연결<br/>2. 사용자의 첫번째 카드로 위겐드 카드 등록<br/>3. 카드 외 크리덴셜로 인증해 인증성공으로 동작<br/>4. 출력되는 데이터 확인</p></td><td><p>Wiegand Card<br/>&gt; HID, Iclass</p>\n\n<p>크리덴셜<br/>&gt; Finger(Face) / ID(추후 키패드 지원장치에 해당)</p></td><td><p>1. 인증된 사용자의 User ID가 출력된다.</p></td></tr><tr><td>12</td><td><p>1. HID OSDP Tool과 연결<br/>2. 사용자의 첫번째 카드로 AOC 카드 발급해 등록<br/>3. 카드 외 크리덴셜로 인증해 인증성공으로 동작<br/>4. 출력되는 데이터 확인</p></td><td><p>AOC 카드<br/>&gt; Mifare/DesFire<br/>&gt; iCLASS/SEOS</p>\n\n<p>크리덴셜</p></td><td><p>1. 인증된 사용자의 User ID가 출력된다.</p></td></tr><tr><td>13</td><td><p>1. HID OSDP Tool과 연결<br/>2. 사용자의 첫번째 카드로 AOC 카드, 두번째 카드로 SCC 카드 발급해 등록<br/>3. 카드 외 크리덴셜로 인증해 인증성공으로 동작<br/>4. 출력되는 데이터 확인</p></td><td><p>AOC 카드<br/>&gt; Mifare/DesFire<br/>&gt; iCLASS/SEOS</p>\n\n<p>크리덴셜<br/>&gt; Finger(Face) / ID(추후 키패드 지원장치에 해당)</p></td><td><p>1. 인증된 사용자의 User ID가 출력된다.</p></td></tr><tr><td>14</td><td><p>1. HID OSDP Tool과 연결<br/>2. 사용자의 첫번째 카드로 SCC 카드 발급해 등록<br/>3. 카드 외 크리덴셜로 인증해 인증성공으로 동작<br/>4. 출력되는 데이터 확인</p></td><td><p>SCC 카드<br/>&gt; Mifare/DesFire</p></td><td><p>1. 인증된 사용자의 User ID가 출력된다.</p></td></tr><tr><td>15</td><td><p>1. HID OSDP Tool과 연결<br/>2. 사용자의 첫번째 카드로 SCC 카드 발급해 등록<br/>3. 카드 외 크리덴셜로 인증해 인증성공으로 동작<br/>4. 출력되는 데이터 확인</p></td><td><p>SCC 카드<br/>&gt; iCLASS/SEOS</p></td><td><p>1. 인증된 사용자의 User ID가 출력된다.</p></td></tr><tr><td>16</td><td><p>1. HID OSDP Tool과 연결<br/>2. 사용자의 첫번째 카드로 Mobile Access Card 발급해 등록<br/>3. 카드 외 크리덴셜로 인증해 인증성공으로 동작<br/>4. 출력되는 데이터 확인</p></td><td><p>Mobile Access Card<br/>&gt; NFC, BLE</p>\n\n<p>크리덴셜<br/>&gt; Finger(Face) / ID(추후 키패드 지원장치에 해당)</p></td><td><p>1. 인증된 사용자의 User ID가 출력된다.</p></td></tr><tr><td>17</td><td><p>1. HID OSDP Tool과 연결<br/>2. 사용자의 첫번째 등록된 카드가 Blacklist로 처리<br/>3. 카드 외 크리덴셜로 인증해 인증성공으로 동작<br/>4. 출력되는 데이터 확인</p></td><td></td><td><p>1. 인증된 사용자의 User ID가 출력된다.</p></td></tr><tr><td>18</td><td><p>1. HID OSDP Tool과 연결<br/>2. 사용자에 카드, 지문, PIN 등록<br/>3. Byte Order 설정<br/>4. 크리덴셜로 인증<br/>5. 출력되는 데이터 확인</p></td><td><p>Byte Order<br/>&gt; MSB<br/>&gt; LSB</p></td><td><p>1. CSN - User ID를 사용하는 경우 Byte Order 설정을 보지 않는다.(MSB 기준으로 동작)<br/>Smart card - User ID를 사용하는 경우 Byte Order 설정에 따라 동작</p>\n\n<ul class=\"alternate\" type=\"square\">\n<li>카드외 크리덴셜 인증 시 사양 확정 후 수정예정</li>\n</ul>\n</td></tr><tr><td>19</td><td><p>1. HID OSDP Tool과 연결<br/>2. Exception Code 설정<br/>3. 출입그룹이 맞지 않는 사용자로 인증<br/>4. 출력되는 데이터 확인</p></td><td><p>1. 출입그룹을 설정하고 출입그룹에 속하지 않은 사용자를 생성<br/>2. Exception Code<br/>&gt; 1(Default) - BioStar2 UI<br/>&gt; 직접입력(0xFF...FF(8Byte))</p></td><td><p>1. Exception Code에 해당하는 데이터가  출력된다.<br/>&gt; Default - 01로 출력<br/>&gt; 직접입력 - 설정한 값이 그대로 출력되며 최대 8Byte까지 지원</p></td></tr><tr><td>20</td><td><p>1. HID OSDP Tool과 연결<br/>2. Exception Code 설정<br/>3. 출입그룹이 맞지 않는 사용자로 인증<br/>4. 출력되는 데이터 확인</p></td><td><p>1. 출입그룹을 설정하고 출입그룹에 속하지 않은 사용자를 생성<br/>2. Exception Code<br/>&gt; 사용안함</p></td><td><p>1. 출력되는 카드데이터가 없다.</p></td></tr><tr><td>21</td><td><p>1. HID OSDP Tool과 연결<br/>2. Exception Code 설정<br/>3. 이중인증에 실패하는 인증을 시도<br/>4. 출력되는 데이터 확인</p></td><td><p>1. Door에서 이중인증 설정<br/>2. Exception Code<br/>&gt; 1(Default) - BioStar2 UI<br/>&gt; 직접입력(0xFF...FF(8Byte))</p></td><td><p>1. Exception Code에 해당하는 데이터가  출력된다.<br/>&gt; Default - 01로 출력<br/>&gt; 직접입력 - 설정한 값이 그대로 출력되며 최대 8Byte까지 지원</p></td></tr><tr><td>22</td><td><p>1. HID OSDP Tool과 연결<br/>2. Exception Code 설정<br/>3. 이중인증에 실패하는 인증을 시도<br/>4. 출력되는 데이터 확인</p></td><td><p>1. Door에서 이중인증 설정<br/>2. Exception Code<br/>&gt; 사용안함</p></td><td><p>1. 출력되는 카드데이터가 없다.</p></td></tr></table>",
-    "customfield_10248": null,
-    "customfield_10006": [
-      "COMMONR-275"
-    ],
-    "customfield_10007": [],
-    "customfield_10008": {
-      "issueId": 44804,
-      "statuses": [
-        {
-          "statusResults": [
-            {
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 34735,
-              "latestFinalId": 34735
-            },
-            {
-              "environment": "ES1",
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 29868,
-              "latestFinalId": 29868
-            },
-            {
-              "environment": "BioStarV2.9.6.30",
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 29868,
-              "latestFinalId": 29868
-            }
-          ]
-        }
-      ]
-    },
-    "customfield_12309": null,
-    "customfield_10802": null,
-    "customfield_10803": null,
-    "customfield_10805": null,
-    "summary": "[Intelligent Slave] Output Info : User ID 사용(User ID Type : Number)",
-    "customfield_10240": null,
-    "customfield_10000": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
-      "value": "Manual",
-      "id": "10000"
-    },
-    "customfield_10243": null,
-    "customfield_10001": null,
-    "customfield_10244": null,
-    "customfield_10002": null,
-    "customfield_10003": null,
-    "customfield_10246": null,
-    "customfield_10004": {
-      "steps": [
-        {
-          "id": 14274,
-          "index": 1,
-          "step": "1. HID OSDP Tool에 연결\n2. 사용자에 등록된 CSN Card 인증\n3. 출력되는 데이터 확인",
-          "data": "CSN Card\n> Mifare / DesFire / Felica / EM / ISO-15693\n\nex. User ID: 11111 / Card ID: 12345",
-          "result": "1. 인증한 카드가 등록된 User ID가 출력된다.\n> User ID인 11111 출력 및 User ID에 대한 BitCount가 표시",
-          "attachments": []
-        },
-        {
-          "id": 14275,
-          "index": 2,
-          "step": "1. HID OSDP Tool에 연결\n2. 사용자에 Wiegand Format으로 CSN Card 등록\n3. 등록된 CSN Card 인증\n4. 출력되는 데이터 확인",
-          "data": "CSN Wiegand Format\n\nCSN Card\n> Mifare / DesFire / Felica / EM / ISO-15693\n\nex. User ID: 11111 / Card ID: 1-12345",
-          "result": "1. 인증한 카드가 등록된 User ID가 출력된다.\n> User ID인 11111 출력 및 User ID에 대한 BitCount가 표시",
-          "attachments": []
-        },
-        {
-          "id": 14276,
-          "index": 3,
-          "step": "1. HID OSDP Tool에 연결\n2. 사용자에 Wiegand Card 등록\n3. 등록된 Wiegand Card로 인증\n4. 출력되는 데이터 확인",
-          "data": "Wiegand Card\n> HID / iCLASS\n\nex. User ID: 22222 / Card ID: 1-2345",
-          "result": "1. 인증한 카드가 등록된 User ID가 출력된다.\n> User ID인 22222 출력 및 User ID에 대한 BitCount가 표시",
-          "attachments": []
-        },
-        {
-          "id": 14277,
-          "index": 4,
-          "step": "1. HID OSDP Tool에 연결\n2. 사용자에 Smart Card 발급\n3. Smart Card로 인증\n4. 출력되는 데이터 확인",
-          "data": "Smart Card(AOC, SCC)\n> Mifare/DesFire\n\nex. SCC\n> User ID: 20201009 / Card ID: 20201099",
-          "result": "1. 발급된 카드가 등록된 User ID가 출력된다.\n> User ID인 20201009 출력 및 User ID에 대한 BitCount가 표시",
-          "attachments": []
-        },
-        {
-          "id": 14278,
-          "index": 5,
-          "step": "1. HID OSDP Tool에 연결\n2. 사용자에 Smart Card 발급\n3. Smart Card로 인증\n4. 출력되는 데이터 확인",
-          "data": "Smart Card(AOC, SCC)\n> iCLASS/SEOS\n\nex. SCC\n> User ID: 20201010 / 발급된 Card ID: 20200202\n\nex. AOC\n> User ID: 20201010 / 발급된 Card ID: 20201010",
-          "result": "1. 발급된 카드가 등록된 User ID가 출력된다.\n> User ID인 20201010 출력 및 User ID에 대한 BitCount가 표시",
-          "attachments": []
-        },
-        {
-          "id": 14279,
-          "index": 6,
-          "step": "1. HID OSDP Tool에 연결\n2. 사용자에 Mobile Access Card 발급\n3. Mobile Access Card로 인증\n4. 출력되는 데이터 확인",
-          "data": "Mobile Access Card\n> NFC, BLE\n\nex. User ID: 33333 / Card ID: 1212121212",
-          "result": "1. 발급된 카드가 등록된 User ID가 출력된다.\n> User ID인 33333 출력 및 User ID에 대한 BitCount가 표시",
-          "attachments": []
-        },
-        {
-          "id": 14280,
-          "index": 7,
-          "step": "1. HID OSDP Tool과 연결\n2. 등록되지 않은 크리덴셜로 인증해 인증실패로 동작\n3. 출력되는 데이터 확인",
-          "data": "크리덴셜\n> 카드 / Finger(Face) / ID(추후 키패드 지원장치에 해당)",
-          "result": "1. 출력되는 카드데이터가 없다.",
-          "attachments": []
-        },
-        {
-          "id": 14281,
-          "index": 8,
-          "step": "1. HID OSDP Tool과 연결\n2. Exception Code 설정\n3. 등록되지 않은 크리덴셜로 인증해 인증실패로 동작\n4. 출력되는 데이터 확인",
-          "data": "Exception Code\n> 1(Default) - BioStar2 UI\n> 직접입력(0xFF...FF(8Byte))\n\n크리덴셜\n> 카드 / Finger(Face) / ID(추후 키패드 지원장치에 해당)",
-          "result": "1. Exception Code에 해당하는 데이터가  출력된다.\n> Default - 01로 출력\n> 직접입력 - 설정한 값이 그대로 출력되며 최대 8Byte까지 지원",
-          "attachments": []
-        },
-        {
-          "id": 14282,
-          "index": 9,
-          "step": "1. HID OSDP Tool과 연결\n2. 사용자의 첫번째 카드로 CSN 등록\n3. 카드 외 크리덴셜로 인증해 인증성공으로 동작\n4. 출력되는 데이터 확인",
-          "data": "CSN Card Format\n> Normal\n\n크리덴셜\n> Finger(Face) / ID(추후 키패드 지원장치에 해당)",
-          "result": "1. 인증된 사용자의 User ID가 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 14283,
-          "index": 10,
-          "step": "1. HID OSDP Tool과 연결\n2. 사용자의 첫번째 카드로 CSN Wiegand Format으로 등록\n3. CSN Card Format 설정\n4. 카드 외 크리덴셜로 인증해 인증성공으로 동작\n5. 출력되는 데이터 확인",
-          "data": "CSN Card Format\n> Wiegand Format\n\n크리덴셜\n> Finger(Face) / ID(추후 키패드 지원장치에 해당)",
-          "result": "1. 인증된 사용자의 User ID가 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 14284,
-          "index": 11,
-          "step": "1. HID OSDP Tool과 연결\n2. 사용자의 첫번째 카드로 위겐드 카드 등록\n3. 카드 외 크리덴셜로 인증해 인증성공으로 동작\n4. 출력되는 데이터 확인",
-          "data": "Wiegand Card\n> HID, Iclass\n\n크리덴셜\n> Finger(Face) / ID(추후 키패드 지원장치에 해당)",
-          "result": "1. 인증된 사용자의 User ID가 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 14285,
-          "index": 12,
-          "step": "1. HID OSDP Tool과 연결\n2. 사용자의 첫번째 카드로 AOC 카드 발급해 등록\n3. 카드 외 크리덴셜로 인증해 인증성공으로 동작\n4. 출력되는 데이터 확인",
-          "data": "AOC 카드\n> Mifare/DesFire\n> iCLASS/SEOS\n\n크리덴셜",
-          "result": "1. 인증된 사용자의 User ID가 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 14286,
-          "index": 13,
-          "step": "1. HID OSDP Tool과 연결\n2. 사용자의 첫번째 카드로 AOC 카드, 두번째 카드로 SCC 카드 발급해 등록\n3. 카드 외 크리덴셜로 인증해 인증성공으로 동작\n4. 출력되는 데이터 확인",
-          "data": "AOC 카드\n> Mifare/DesFire\n> iCLASS/SEOS\n\n크리덴셜\n> Finger(Face) / ID(추후 키패드 지원장치에 해당)",
-          "result": "1. 인증된 사용자의 User ID가 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 14287,
-          "index": 14,
-          "step": "1. HID OSDP Tool과 연결\n2. 사용자의 첫번째 카드로 SCC 카드 발급해 등록\n3. 카드 외 크리덴셜로 인증해 인증성공으로 동작\n4. 출력되는 데이터 확인",
-          "data": "SCC 카드\n> Mifare/DesFire",
-          "result": "1. 인증된 사용자의 User ID가 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 14288,
-          "index": 15,
-          "step": "1. HID OSDP Tool과 연결\n2. 사용자의 첫번째 카드로 SCC 카드 발급해 등록\n3. 카드 외 크리덴셜로 인증해 인증성공으로 동작\n4. 출력되는 데이터 확인",
-          "data": "SCC 카드\n> iCLASS/SEOS",
-          "result": "1. 인증된 사용자의 User ID가 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 14289,
-          "index": 16,
-          "step": "1. HID OSDP Tool과 연결\n2. 사용자의 첫번째 카드로 Mobile Access Card 발급해 등록\n3. 카드 외 크리덴셜로 인증해 인증성공으로 동작\n4. 출력되는 데이터 확인",
-          "data": "Mobile Access Card\n> NFC, BLE\n\n크리덴셜\n> Finger(Face) / ID(추후 키패드 지원장치에 해당)",
-          "result": "1. 인증된 사용자의 User ID가 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 14290,
-          "index": 17,
-          "step": "1. HID OSDP Tool과 연결\n2. 사용자의 첫번째 등록된 카드가 Blacklist로 처리\n3. 카드 외 크리덴셜로 인증해 인증성공으로 동작\n4. 출력되는 데이터 확인",
-          "data": "",
-          "result": "1. 인증된 사용자의 User ID가 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 14291,
-          "index": 18,
-          "step": "1. HID OSDP Tool과 연결\n2. 사용자에 카드, 지문, PIN 등록\n3. Byte Order 설정\n4. 크리덴셜로 인증\n5. 출력되는 데이터 확인",
-          "data": "Byte Order\n> MSB\n> LSB",
-          "result": "1. CSN - User ID를 사용하는 경우 Byte Order 설정을 보지 않는다.(MSB 기준으로 동작)\nSmart card - User ID를 사용하는 경우 Byte Order 설정에 따라 동작\n\n- 카드외 크리덴셜 인증 시 사양 확정 후 수정예정",
-          "attachments": []
-        },
-        {
-          "id": 14359,
-          "index": 19,
-          "step": "1. HID OSDP Tool과 연결\n2. Exception Code 설정\n3. 출입그룹이 맞지 않는 사용자로 인증\n4. 출력되는 데이터 확인",
-          "data": "1. 출입그룹을 설정하고 출입그룹에 속하지 않은 사용자를 생성\n2. Exception Code\n> 1(Default) - BioStar2 UI\n> 직접입력(0xFF...FF(8Byte))",
-          "result": "1. Exception Code에 해당하는 데이터가  출력된다.\n> Default - 01로 출력\n> 직접입력 - 설정한 값이 그대로 출력되며 최대 8Byte까지 지원",
-          "attachments": []
-        },
-        {
-          "id": 14360,
-          "index": 20,
-          "step": "1. HID OSDP Tool과 연결\n2. Exception Code 설정\n3. 출입그룹이 맞지 않는 사용자로 인증\n4. 출력되는 데이터 확인",
-          "data": "1. 출입그룹을 설정하고 출입그룹에 속하지 않은 사용자를 생성\n2. Exception Code\n> 사용안함",
-          "result": "1. 출력되는 카드데이터가 없다.",
-          "attachments": []
-        },
-        {
-          "id": 14361,
-          "index": 21,
-          "step": "1. HID OSDP Tool과 연결\n2. Exception Code 설정\n3. 이중인증에 실패하는 인증을 시도\n4. 출력되는 데이터 확인",
-          "data": "1. Door에서 이중인증 설정\n2. Exception Code\n> 1(Default) - BioStar2 UI\n> 직접입력(0xFF...FF(8Byte))",
-          "result": "1. Exception Code에 해당하는 데이터가  출력된다.\n> Default - 01로 출력\n> 직접입력 - 설정한 값이 그대로 출력되며 최대 8Byte까지 지원",
-          "attachments": []
-        },
-        {
-          "id": 14362,
-          "index": 22,
-          "step": "1. HID OSDP Tool과 연결\n2. Exception Code 설정\n3. 이중인증에 실패하는 인증을 시도\n4. 출력되는 데이터 확인",
-          "data": "1. Door에서 이중인증 설정\n2. Exception Code\n> 사용안함",
-          "result": "1. 출력되는 카드데이터가 없다.",
-          "attachments": []
-        }
-      ]
-    },
-    "customfield_10236": null,
-    "customfield_10237": null,
-    "environment": null,
-    "customfield_10238": null,
-    "customfield_10239": null,
-    "duedate": null,
-    "comment": {
-      "comments": [],
-      "maxResults": 0,
-      "total": 0,
-      "startAt": 0
-    },
-    "customfield_10230": null,
-    "fixVersions": [],
-    "customfield_10231": null,
-    "customfield_10232": null,
-    "customfield_10233": null,
-    "customfield_12410": null,
-    "customfield_10234": null,
-    "customfield_10235": null,
-    "customfield_10225": null,
-    "customfield_12404": null,
-    "customfield_10226": null,
-    "customfield_12403": null,
-    "customfield_10227": null,
-    "customfield_12406": null,
-    "customfield_10228": null,
-    "customfield_10229": null,
-    "customfield_10900": null,
-    "customfield_12408": null,
-    "customfield_10901": null,
-    "customfield_10902": null,
-    "customfield_10903": null,
-    "customfield_12409": null,
-    "customfield_10904": null,
-    "customfield_10905": null,
-    "customfield_10220": null,
-    "priority": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-      "name": "미할당",
-      "id": "10100"
-    },
-    "customfield_10221": null,
-    "customfield_12400": null,
-    "customfield_12402": null,
-    "customfield_10224": null,
-    "customfield_10214": null,
-    "customfield_10217": null,
-    "customfield_10218": null,
-    "timeestimate": null,
-    "versions": [],
-    "customfield_10219": null,
-    "status": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
-      "description": "",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
-      "name": "할 일",
-      "id": "10000",
-      "statusCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
-        "id": 2,
-        "key": "new",
-        "colorName": "blue-gray",
-        "name": "할 일"
-      }
-    },
-    "customfield_12510": null,
-    "customfield_10213": null,
-    "customfield_12511": null,
-    "customfield_10203": null,
-    "customfield_10204": null,
-    "customfield_12502": null,
-    "customfield_10205": null,
-    "customfield_10206": null,
-    "customfield_10207": null,
-    "aggregatetimeestimate": null,
-    "customfield_10208": null,
-    "customfield_10209": null,
-    "customfield_12509": null,
-    "customfield_12508": null,
-    "creator": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EC%A1%B0%EC%9E%84%EC%84%B1",
-      "name": "조임성",
-      "key": "조임성",
-      "emailAddress": "isjo@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=%EC%A1%B0%EC%9E%84%EC%84%B1&avatarId=10607"
-      },
-      "displayName": "조임성",
-      "active": false,
-      "timeZone": "Asia/Seoul"
-    },
-    "aggregateprogress": {
-      "progress": 0,
-      "total": 0
-    },
-    "customfield_10320": null,
-    "customfield_10321": null,
-    "customfield_12501": null,
-    "customfield_10202": null,
-    "customfield_12500": null,
-    "customfield_10313": "1|hzvmfb:",
-    "customfield_10316": null,
-    "customfield_10317": null,
-    "timespent": null,
-    "aggregatetimespent": null,
-    "customfield_10310": null,
-    "customfield_10302": null,
-    "customfield_10303": null,
-    "customfield_12601": null,
-    "customfield_10304": null,
-    "customfield_10305": null,
-    "customfield_10308": null,
-    "workratio": -1,
-    "created": "2021-08-02T15:36:50.000+0900",
-    "customfield_10533": null,
-    "customfield_10534": null,
-    "customfield_11501": null,
-    "customfield_11503": null,
-    "customfield_13001": null,
-    "customfield_13000": null,
-    "customfield_10530": null,
-    "customfield_10531": null,
-    "customfield_10532": null,
-    "customfield_10401": null,
-    "customfield_10522": null,
-    "customfield_10402": null,
-    "customfield_12700": null,
-    "customfield_10524": null,
-    "customfield_10525": null,
-    "customfield_12702": null,
-    "attachment": [],
-    "customfield_10526": null,
-    "customfield_12704": null,
-    "customfield_10528": null,
-    "customfield_12706": null,
-    "customfield_10520": null,
-    "customfield_10521": null,
-    "customfield_10400": null,
-    "customfield_10511": null,
-    "customfield_10512": null,
-    "customfield_11600": null,
-    "customfield_10513": null,
-    "customfield_10514": null,
-    "customfield_10515": null,
-    "customfield_10516": null,
-    "customfield_10517": null,
-    "customfield_10518": null,
-    "customfield_10519": null
+[
+  {
+    "id": "COMMONR-279_step_1",
+    "document": "Test Step: 1. HID OSDP Tool에 연결\n2. 사용자에 등록된 CSN Card 인증\n3. 출력되는 데이터 확인\nTest Data: CSN Card\n> Mifare / DesFire / Felica / EM / ISO-15693\n\nex. User ID: 11111 / Card ID: 12345\nExpected Result: 1. 인증한 카드가 등록된 User ID가 출력된다.\n> User ID인 11111 출력 및 User ID에 대한 BitCount가 표시",
+    "metadata": {
+      "issue_key": "COMMONR-279",
+      "step_index": "1",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-279_step_2",
+    "document": "Test Step: 1. HID OSDP Tool에 연결\n2. 사용자에 Wiegand Format으로 CSN Card 등록\n3. 등록된 CSN Card 인증\n4. 출력되는 데이터 확인\nTest Data: CSN Wiegand Format\n\nCSN Card\n> Mifare / DesFire / Felica / EM / ISO-15693\n\nex. User ID: 11111 / Card ID: 1-12345\nExpected Result: 1. 인증한 카드가 등록된 User ID가 출력된다.\n> User ID인 11111 출력 및 User ID에 대한 BitCount가 표시",
+    "metadata": {
+      "issue_key": "COMMONR-279",
+      "step_index": "2",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-279_step_3",
+    "document": "Test Step: 1. HID OSDP Tool에 연결\n2. 사용자에 Wiegand Card 등록\n3. 등록된 Wiegand Card로 인증\n4. 출력되는 데이터 확인\nTest Data: Wiegand Card\n> HID / iCLASS\n\nex. User ID: 22222 / Card ID: 1-2345\nExpected Result: 1. 인증한 카드가 등록된 User ID가 출력된다.\n> User ID인 22222 출력 및 User ID에 대한 BitCount가 표시",
+    "metadata": {
+      "issue_key": "COMMONR-279",
+      "step_index": "3",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-279_step_4",
+    "document": "Test Step: 1. HID OSDP Tool에 연결\n2. 사용자에 Smart Card 발급\n3. Smart Card로 인증\n4. 출력되는 데이터 확인\nTest Data: Smart Card(AOC, SCC)\n> Mifare/DesFire\n\nex. SCC\n> User ID: 20201009 / Card ID: 20201099\nExpected Result: 1. 발급된 카드가 등록된 User ID가 출력된다.\n> User ID인 20201009 출력 및 User ID에 대한 BitCount가 표시",
+    "metadata": {
+      "issue_key": "COMMONR-279",
+      "step_index": "4",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-279_step_5",
+    "document": "Test Step: 1. HID OSDP Tool에 연결\n2. 사용자에 Smart Card 발급\n3. Smart Card로 인증\n4. 출력되는 데이터 확인\nTest Data: Smart Card(AOC, SCC)\n> iCLASS/SEOS\n\nex. SCC\n> User ID: 20201010 / 발급된 Card ID: 20200202\n\nex. AOC\n> User ID: 20201010 / 발급된 Card ID: 20201010\nExpected Result: 1. 발급된 카드가 등록된 User ID가 출력된다.\n> User ID인 20201010 출력 및 User ID에 대한 BitCount가 표시",
+    "metadata": {
+      "issue_key": "COMMONR-279",
+      "step_index": "5",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-279_step_6",
+    "document": "Test Step: 1. HID OSDP Tool에 연결\n2. 사용자에 Mobile Access Card 발급\n3. Mobile Access Card로 인증\n4. 출력되는 데이터 확인\nTest Data: Mobile Access Card\n> NFC, BLE\n\nex. User ID: 33333 / Card ID: 1212121212\nExpected Result: 1. 발급된 카드가 등록된 User ID가 출력된다.\n> User ID인 33333 출력 및 User ID에 대한 BitCount가 표시",
+    "metadata": {
+      "issue_key": "COMMONR-279",
+      "step_index": "6",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-279_step_7",
+    "document": "Test Step: 1. HID OSDP Tool과 연결\n2. 등록되지 않은 크리덴셜로 인증해 인증실패로 동작\n3. 출력되는 데이터 확인\nTest Data: 크리덴셜\n> 카드 / Finger(Face) / ID(추후 키패드 지원장치에 해당)\nExpected Result: 1. 출력되는 카드데이터가 없다.",
+    "metadata": {
+      "issue_key": "COMMONR-279",
+      "step_index": "7",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-279_step_8",
+    "document": "Test Step: 1. HID OSDP Tool과 연결\n2. Exception Code 설정\n3. 등록되지 않은 크리덴셜로 인증해 인증실패로 동작\n4. 출력되는 데이터 확인\nTest Data: Exception Code\n> 1(Default) - BioStar2 UI\n> 직접입력(0xFF...FF(8Byte))\n\n크리덴셜\n> 카드 / Finger(Face) / ID(추후 키패드 지원장치에 해당)\nExpected Result: 1. Exception Code에 해당하는 데이터가  출력된다.\n> Default - 01로 출력\n> 직접입력 - 설정한 값이 그대로 출력되며 최대 8Byte까지 지원",
+    "metadata": {
+      "issue_key": "COMMONR-279",
+      "step_index": "8",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-279_step_9",
+    "document": "Test Step: 1. HID OSDP Tool과 연결\n2. 사용자의 첫번째 카드로 CSN 등록\n3. 카드 외 크리덴셜로 인증해 인증성공으로 동작\n4. 출력되는 데이터 확인\nTest Data: CSN Card Format\n> Normal\n\n크리덴셜\n> Finger(Face) / ID(추후 키패드 지원장치에 해당)\nExpected Result: 1. 인증된 사용자의 User ID가 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-279",
+      "step_index": "9",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-279_step_10",
+    "document": "Test Step: 1. HID OSDP Tool과 연결\n2. 사용자의 첫번째 카드로 CSN Wiegand Format으로 등록\n3. CSN Card Format 설정\n4. 카드 외 크리덴셜로 인증해 인증성공으로 동작\n5. 출력되는 데이터 확인\nTest Data: CSN Card Format\n> Wiegand Format\n\n크리덴셜\n> Finger(Face) / ID(추후 키패드 지원장치에 해당)\nExpected Result: 1. 인증된 사용자의 User ID가 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-279",
+      "step_index": "10",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-279_step_11",
+    "document": "Test Step: 1. HID OSDP Tool과 연결\n2. 사용자의 첫번째 카드로 위겐드 카드 등록\n3. 카드 외 크리덴셜로 인증해 인증성공으로 동작\n4. 출력되는 데이터 확인\nTest Data: Wiegand Card\n> HID, Iclass\n\n크리덴셜\n> Finger(Face) / ID(추후 키패드 지원장치에 해당)\nExpected Result: 1. 인증된 사용자의 User ID가 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-279",
+      "step_index": "11",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-279_step_12",
+    "document": "Test Step: 1. HID OSDP Tool과 연결\n2. 사용자의 첫번째 카드로 AOC 카드 발급해 등록\n3. 카드 외 크리덴셜로 인증해 인증성공으로 동작\n4. 출력되는 데이터 확인\nTest Data: AOC 카드\n> Mifare/DesFire\n> iCLASS/SEOS\n\n크리덴셜\nExpected Result: 1. 인증된 사용자의 User ID가 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-279",
+      "step_index": "12",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-279_step_13",
+    "document": "Test Step: 1. HID OSDP Tool과 연결\n2. 사용자의 첫번째 카드로 AOC 카드, 두번째 카드로 SCC 카드 발급해 등록\n3. 카드 외 크리덴셜로 인증해 인증성공으로 동작\n4. 출력되는 데이터 확인\nTest Data: AOC 카드\n> Mifare/DesFire\n> iCLASS/SEOS\n\n크리덴셜\n> Finger(Face) / ID(추후 키패드 지원장치에 해당)\nExpected Result: 1. 인증된 사용자의 User ID가 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-279",
+      "step_index": "13",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-279_step_14",
+    "document": "Test Step: 1. HID OSDP Tool과 연결\n2. 사용자의 첫번째 카드로 SCC 카드 발급해 등록\n3. 카드 외 크리덴셜로 인증해 인증성공으로 동작\n4. 출력되는 데이터 확인\nTest Data: SCC 카드\n> Mifare/DesFire\nExpected Result: 1. 인증된 사용자의 User ID가 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-279",
+      "step_index": "14",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-279_step_15",
+    "document": "Test Step: 1. HID OSDP Tool과 연결\n2. 사용자의 첫번째 카드로 SCC 카드 발급해 등록\n3. 카드 외 크리덴셜로 인증해 인증성공으로 동작\n4. 출력되는 데이터 확인\nTest Data: SCC 카드\n> iCLASS/SEOS\nExpected Result: 1. 인증된 사용자의 User ID가 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-279",
+      "step_index": "15",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-279_step_16",
+    "document": "Test Step: 1. HID OSDP Tool과 연결\n2. 사용자의 첫번째 카드로 Mobile Access Card 발급해 등록\n3. 카드 외 크리덴셜로 인증해 인증성공으로 동작\n4. 출력되는 데이터 확인\nTest Data: Mobile Access Card\n> NFC, BLE\n\n크리덴셜\n> Finger(Face) / ID(추후 키패드 지원장치에 해당)\nExpected Result: 1. 인증된 사용자의 User ID가 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-279",
+      "step_index": "16",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-279_step_17",
+    "document": "Test Step: 1. HID OSDP Tool과 연결\n2. 사용자의 첫번째 등록된 카드가 Blacklist로 처리\n3. 카드 외 크리덴셜로 인증해 인증성공으로 동작\n4. 출력되는 데이터 확인\nExpected Result: 1. 인증된 사용자의 User ID가 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-279",
+      "step_index": "17",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-279_step_18",
+    "document": "Test Step: 1. HID OSDP Tool과 연결\n2. 사용자에 카드, 지문, PIN 등록\n3. Byte Order 설정\n4. 크리덴셜로 인증\n5. 출력되는 데이터 확인\nTest Data: Byte Order\n> MSB\n> LSB\nExpected Result: 1. CSN - User ID를 사용하는 경우 Byte Order 설정을 보지 않는다.(MSB 기준으로 동작)\nSmart card - User ID를 사용하는 경우 Byte Order 설정에 따라 동작\n\n- 카드외 크리덴셜 인증 시 사양 확정 후 수정예정",
+    "metadata": {
+      "issue_key": "COMMONR-279",
+      "step_index": "18",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-279_step_19",
+    "document": "Test Step: 1. HID OSDP Tool과 연결\n2. Exception Code 설정\n3. 출입그룹이 맞지 않는 사용자로 인증\n4. 출력되는 데이터 확인\nTest Data: 1. 출입그룹을 설정하고 출입그룹에 속하지 않은 사용자를 생성\n2. Exception Code\n> 1(Default) - BioStar2 UI\n> 직접입력(0xFF...FF(8Byte))\nExpected Result: 1. Exception Code에 해당하는 데이터가  출력된다.\n> Default - 01로 출력\n> 직접입력 - 설정한 값이 그대로 출력되며 최대 8Byte까지 지원",
+    "metadata": {
+      "issue_key": "COMMONR-279",
+      "step_index": "19",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-279_step_20",
+    "document": "Test Step: 1. HID OSDP Tool과 연결\n2. Exception Code 설정\n3. 출입그룹이 맞지 않는 사용자로 인증\n4. 출력되는 데이터 확인\nTest Data: 1. 출입그룹을 설정하고 출입그룹에 속하지 않은 사용자를 생성\n2. Exception Code\n> 사용안함\nExpected Result: 1. 출력되는 카드데이터가 없다.",
+    "metadata": {
+      "issue_key": "COMMONR-279",
+      "step_index": "20",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-279_step_21",
+    "document": "Test Step: 1. HID OSDP Tool과 연결\n2. Exception Code 설정\n3. 이중인증에 실패하는 인증을 시도\n4. 출력되는 데이터 확인\nTest Data: 1. Door에서 이중인증 설정\n2. Exception Code\n> 1(Default) - BioStar2 UI\n> 직접입력(0xFF...FF(8Byte))\nExpected Result: 1. Exception Code에 해당하는 데이터가  출력된다.\n> Default - 01로 출력\n> 직접입력 - 설정한 값이 그대로 출력되며 최대 8Byte까지 지원",
+    "metadata": {
+      "issue_key": "COMMONR-279",
+      "step_index": "21",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-279_step_22",
+    "document": "Test Step: 1. HID OSDP Tool과 연결\n2. Exception Code 설정\n3. 이중인증에 실패하는 인증을 시도\n4. 출력되는 데이터 확인\nTest Data: 1. Door에서 이중인증 설정\n2. Exception Code\n> 사용안함\nExpected Result: 1. 출력되는 카드데이터가 없다.",
+    "metadata": {
+      "issue_key": "COMMONR-279",
+      "step_index": "22",
+      "source": "jira_test_step"
+    }
   }
-}
+]

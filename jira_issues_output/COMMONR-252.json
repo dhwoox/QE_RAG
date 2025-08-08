@@ -1,1168 +1,308 @@
-{
-  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
-  "id": "30183",
-  "self": "https://jira.suprema.co.kr/rest/api/2/issue/30183",
-  "key": "COMMONR-252",
-  "fields": {
-    "resolution": null,
-    "customfield_13103": null,
-    "customfield_10510": null,
-    "customfield_10500": "0.0",
-    "customfield_10501": null,
-    "customfield_10502": null,
-    "customfield_12802": null,
-    "customfield_12804": null,
-    "customfield_10505": null,
-    "customfield_12803": null,
-    "customfield_10506": null,
-    "customfield_12806": null,
-    "customfield_10507": null,
-    "customfield_12805": null,
-    "customfield_10508": null,
-    "customfield_12808": null,
-    "customfield_10509": null,
-    "lastViewed": null,
-    "customfield_10180": null,
-    "customfield_10181": null,
-    "customfield_10182": null,
-    "customfield_10183": null,
-    "customfield_10184": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10173",
-      "value": "Major",
-      "id": "10173"
-    },
-    "customfield_10185": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
-      "value": "Medium (2-3일 이내 피드백)",
-      "id": "10220"
-    },
-    "labels": [],
-    "customfield_11702": null,
-    "aggregatetimeoriginalestimate": null,
-    "issuelinks": [
-      {
-        "id": "25616",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/25616",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "31913",
-          "key": "TIIDFI-2280",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/31913",
-          "fields": {
-            "summary": "[FISF-1196] Byte Order: LSB & Wiegand Out: User ID로 설정된 상태에서 지문인증시 장치 Reboot되는 문제",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "31122",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/31122",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "41324",
-          "key": "ONYXFW-317",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/41324",
-          "fields": {
-            "summary": "Wiegand Out장치에 User ID로 동작 안하는 현상.",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/1",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/critical.svg",
-              "name": "Critical (A+)",
-              "id": "1"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "52046",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/52046",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "61481",
-          "key": "BEW3FW-85",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/61481",
-          "fields": {
-            "summary": "User ID Type : Alphanumeric 으로 ToM_AoC 발급 후, 인증 시 인증 실패 되는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "52021",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/52021",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "61490",
-          "key": "BEW3FW-87",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/61490",
-          "fields": {
-            "summary": "[Wiegand Reader] 숫자모드에서 발급받은 ToM_SCC카드를 위갠드 리더에 인증 시 IN장치에서 인증 성공으로 동작",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "53268",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/53268",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "62432",
-          "key": "BS3FW-1644",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/62432",
-          "fields": {
-            "summary": "영숫자 모드에서 ToM_AOC,SCC카드를 위갠드 장치에 인증 시 user id값이 다르게 들어오는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "62948",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/62948",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "72085",
-          "key": "BS3FW-1946",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72085",
-          "fields": {
-            "summary": "Wiegand Reader에서 Smart Card ID Max값으로 설정하면 CardData가 empty되는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
-              "name": "Major (B+)",
-              "id": "10200"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "52069",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/52069",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "60926",
-          "key": "BES-1799",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/60926",
-          "fields": {
-            "summary": "Template On Mobile(TOM) 안드로이드 제품군 지원",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "완료",
-              "id": "10001",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10300",
-              "id": "10300",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10315&avatarType=issuetype",
-              "name": "이야기",
-              "subtask": false,
-              "avatarId": 10315
-            }
-          }
-        }
-      },
-      {
-        "id": "52856",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/52856",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "62124",
-          "key": "BES-2006",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/62124",
-          "fields": {
-            "summary": "Template On Mobile(TOM) 안드로이드 제품군 지원(추가진행)",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "완료",
-              "id": "10001",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10300",
-              "id": "10300",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10315&avatarType=issuetype",
-              "name": "이야기",
-              "subtask": false,
-              "avatarId": 10315
-            }
-          }
-        }
-      },
-      {
-        "id": "23568",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/23568",
-        "type": {
-          "id": "10003",
-          "name": "Relates",
-          "inward": "relates to",
-          "outward": "relates to",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
-        },
-        "inwardIssue": {
-          "id": "29572",
-          "key": "BSPP-414",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/29572",
-          "fields": {
-            "summary": "Wiegand output 으로 User ID 전송",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10202",
-              "description": "개발이 완료된 요구 사항",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/generic.png",
-              "name": "개발완료",
-              "id": "10202",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
-              "id": "4",
-              "description": "기존 기능이나 작업의 개선점.",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
-              "name": "개선",
-              "subtask": false,
-              "avatarId": 10310
-            }
-          }
-        }
-      },
-      {
-        "id": "23667",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/23667",
-        "type": {
-          "id": "10003",
-          "name": "Relates",
-          "inward": "relates to",
-          "outward": "relates to",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
-        },
-        "inwardIssue": {
-          "id": "29510",
-          "key": "XPASSII-26",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/29510",
-          "fields": {
-            "summary": "2019 1H - Wiegand output 으로 User ID 전송",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "완료",
-              "id": "10001",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10200",
-              "id": "10200",
-              "description": "개별 Interaction 관리용 타입",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10304&avatarType=issuetype",
-              "name": "Interaction",
-              "subtask": false,
-              "avatarId": 10304
-            }
-          }
-        }
-      }
-    ],
-    "assignee": null,
-    "components": [],
-    "customfield_10170": null,
-    "customfield_10171": null,
-    "customfield_10172": null,
-    "customfield_10174": null,
-    "customfield_10175": null,
-    "customfield_10176": null,
-    "customfield_10177": null,
-    "customfield_10178": null,
-    "customfield_10179": null,
-    "customfield_10600": 34.0,
-    "customfield_10601": [],
-    "customfield_12901": null,
-    "customfield_10602": null,
-    "customfield_12900": null,
-    "subtasks": [],
-    "reporter": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
-      "name": "김소영",
-      "key": "김소영",
-      "emailAddress": "sykim@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-      },
-      "displayName": "김소영",
-      "active": true,
-      "timeZone": "Asia/Seoul"
-    },
-    "customfield_10168": null,
-    "customfield_10169": null,
-    "customfield_11800": null,
-    "progress": {
-      "progress": 0,
-      "total": 0
-    },
-    "votes": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-252/votes",
-      "votes": 0,
-      "hasVoted": false
-    },
-    "worklog": {
-      "startAt": 0,
-      "maxResults": 20,
-      "total": 0,
-      "worklogs": []
-    },
-    "issuetype": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
-      "id": "10000",
-      "description": "Represents a Test",
-      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
-      "name": "Test",
-      "subtask": false
-    },
-    "project": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
-      "id": "10000",
-      "key": "COMMONR",
-      "name": "Common Requirement And Test Case",
-      "projectTypeKey": "software",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
-        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
-        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
-        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
-      },
-      "projectCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
-        "id": "10000",
-        "description": "Requirements And Test Cases For The BioStar System Device",
-        "name": "BioStar System Device Requirement And Test Case"
-      }
-    },
-    "customfield_11000": null,
-    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@32732ac7[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@7a069b73[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6c57ec6a[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@22c43f90[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@4776e0c[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@d3ddea5[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@5eda47d4[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@5de1cb20[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6259c99e[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@1f2eb86[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@d9af88b[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@5e718ad3[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
-    "resolutiondate": null,
-    "watches": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-252/watchers",
-      "watchCount": 1,
-      "isWatching": false
-    },
-    "customfield_11900": null,
-    "customfield_11901": null,
-    "updated": "2025-08-01T10:10:21.000+0900",
-    "timeoriginalestimate": null,
-    "description": "> Wiegand Out으로 Card ID(=Default), User ID 지원.\r\n> 사용자 ID 출력을 선택하는 경우, Card ID 출력 대신 사용자 ID를 인증 성공 시 출력.\r\n> Bypass 사용 혹은 Smart Card 중 AoC 사용인 경우 Card ID가 출력 된다. Secure Credential Card의 경우 사용자 ID 출력 지원 한다. \r\n> Xpass D2 를 제외한 모든 장치에서 지원(슬레이브로 연결 된 장치에서는 설정 불가)\r\n\r\n> User ID 출력에 대해 숫자모드/영숫자모드에서 모두 지원\r\n:: 숫자모드일 때, User ID 설정: User ID가 1234일 때 0x04 D2로 출력\r\n:: 영숫자모드일 때, User ID 설정: User ID가 1234일 때 0x31 32 33 34로 출력\r\n\r\n>> AOC(영숫자ID 발급) 카드를 User ID 설정된 장치에 리드시: User ID가 A1234일 때 0x41 31 32 33 34로 출력\r\n>> AOC(숫자ID 발급) 카드를 User ID 설정된 장치에 리드시: User ID가 1234일 때 0x04 D2로 출력\r\n>> AOC(영숫자ID 혹은 숫자ID 발급) 카드를 Card ID 설정된 장치에 리드시: User ID가 A1234일 때 발급된 카드ID가 출력(기존과 동일)\r\n=> AOC의 경우 장치의 모드와 상관없이 발급된 카드ID에 대해 Card ID/User ID 설정대로 출력\r\n\r\n>> (숫자모드) SCC 카드를 User ID로 설정된 장치에 리드시: User ID가 1234일 때 0x04 D2로 출력\r\n>> (영숫자모드) SCC 카드를 User ID로 설정된 장치에 리드시: User ID가 1234일 때 0x31 32 33 34로 출력\r\n\r\n>> (숫자모드) User ID 설정된 장치에 지문/ID 인증시: User ID가 1234일 때 0x04 D2로 출력\r\n>> (영숫자모드) User ID 설정된 장치에 지문/ID 인증시: User ID가 1234일 때 0x31 32 33 34로 출력\r\n\r\n>> User ID 출력과 Bypass 모드를 같이 사용할 경우, 카드의 Wiegand 출력은 기존과 동일(Card ID 출력)\r\n>> 미지원 FW(2019 1H 이전FW)의 경우 Card ID 설정으로 동작\r\n>> User ID 설정된 장치를 구버전 BioStar(2.7.6 이전버전)에 연결해 Wiegand Config가 내려오게 되면 Card ID로 동작\r\n\r\n\r\nex. User ID = 48 & User ID로 Wiegand Out시 \r\n> 48의 Hex 값은 0x34 0x38 => 따라서 Dec로 변환된 값인 13368로 출력됨.",
-    "customfield_10251": null,
-    "customfield_10252": null,
-    "customfield_10253": null,
-    "customfield_10254": null,
-    "customfield_10255": null,
-    "timetracking": {},
-    "customfield_10257": null,
-    "customfield_10247": null,
-    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>&lt;Wiegand Out: 2019 1H 이전FW&gt;<br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 카드리드<br/>3. 출력되는 값 확인</p></td><td></td><td><p>1. 카드ID가 출력된다.</p></td></tr><tr><td>2</td><td><p>&lt;숫자모드&gt;<br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 카드리드<br/>3. 출력되는 값 확인</p></td><td><p>사용자ID = Card ID 동일하게 설정</p>\n\n<p>Wiegand Out: User ID</p></td><td><p>1. 카드가 등록된 UserID가 출력된다.</p></td></tr><tr><td>3</td><td><p>&lt;숫자모드&gt;<br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 카드리드<br/>3. 출력되는 값 확인</p></td><td><p>Wiegand Out: Card ID</p></td><td><p>1. 카드ID가 출력된다.</p></td></tr><tr><td>4</td><td><p>&lt;숫자모드&gt;<br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 지문입력<br/>3. 출력되는 값 확인</p></td><td><p>사용자: 지문만 등록</p>\n\n<p>Wiegand Out: User ID</p></td><td><p>1. UserID가 출력된다.</p></td></tr><tr><td>5</td><td><p>&lt;숫자모드&gt;<br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 지문입력<br/>3. 출력되는 값 확인</p></td><td><p>사용자: 지문만 등록</p>\n\n<p>Wiegand Out: Card ID</p></td><td><p>1. 등록된 카드가 없기 때문에 출력되는 값이 없다.</p></td></tr><tr><td>6</td><td><p>&lt;숫자모드&gt;<br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 ID인증<br/>3. 출력되는 값 확인</p></td><td><p>사용자: PIN 등록</p>\n\n<p>Wiegand Out: User ID</p></td><td><p>1. UserID가 출력된다.</p></td></tr><tr><td>7</td><td><p>&lt;숫자모드&gt;<br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 ID인증<br/>3. 출력되는 값 확인</p></td><td><p>사용자: PIN만 등록</p>\n\n<p>Wiegand Out: Card ID</p></td><td><p>1. 등록된 카드가 없기 때문에 출력되는 값이 없다.<br/>&gt; 사용자에 카드가 등록된 경우 카드ID가 출력된다.</p></td></tr><tr><td>8</td><td><p>&lt;영숫자모드&gt;<br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 카드리드<br/>3. 출력되는 값 확인</p></td><td><p>Wiegand Out 장치<br/>&gt; A사용자에 카드 등록된 상태<br/>Wiegand In 장치<br/>&gt; A사용자 없는 상태</p>\n\n<p>Wiegand Out: User ID</p></td><td><p>1. UserID가 출력된다.<br/>&gt; 등록된 UserID가 12인 경우 0x31 0x32인 12594로 출력.</p></td></tr><tr><td>9</td><td><p>&lt;영숫자모드&gt;<br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 카드리드<br/>3. 출력되는 값 확인</p></td><td><p>사용자ID: sykim<br/>&gt; CardID: 1234026420066176</p>\n\n<p>Wiegand Format: 64bit<br/>Wiegand Out: User ID</p></td><td><p>1. UserID로 출력된다.<br/>&gt; sykim = 0x73 0x79 0x6B 0x69 0x6D<br/>따라서 495958321517로 출력.</p></td></tr><tr><td>10</td><td><p>&lt;영숫자모드&gt;<br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 카드리드<br/>3. 출력되는 값 확인</p></td><td><p>사용자ID: sykim<br/>&gt; CardID: 1234026420066176</p>\n\n<p>Wiegand Format: 64bit<br/>Wiegand Out: Card ID</p></td><td><p>1. 카드ID가 출력된다.<br/>&gt; 인증성공으로 동작.</p></td></tr><tr><td>11</td><td><p>&lt;영숫자모드&gt;<br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 지문입력<br/>3. 출력되는 값 확인</p></td><td><p>사용자: 지문만 등록</p>\n\n<p>Wiegand Out: User ID</p></td><td><p>1. UserID가 출력된다.<br/>&gt; User ID가 2002인 경우 0x32 0x30 0x30 0x32 즉, 842018866으로 출력.</p></td></tr><tr><td>12</td><td><p>&lt;영숫자모드&gt;<br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 지문입력<br/>3. 출력되는 값 확인</p></td><td><p>사용자: 지문만 등록</p>\n\n<p>Wiegand Out: Card ID</p></td><td><p>1. 등록된 카드가 없기 때문에 출력되는 값이 없다.</p></td></tr><tr><td>13</td><td><p>&lt;영숫자모드&gt;<br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 ID인증<br/>3. 출력되는 값 확인</p></td><td><p>사용자: PIN 등록</p>\n\n<p>Wiegand Out: User ID</p></td><td><p>1. UserID가 출력된다.<br/>&gt; User ID가 4인 경우 0x34 즉, 52로 출력.</p></td></tr><tr><td>14</td><td><p>&lt;영숫자모드&gt;<br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 ID인증<br/>3. 출력되는 값 확인</p></td><td><p>사용자: PIN만 등록</p>\n\n<p>Wiegand Out: Card ID</p></td><td><p>1. 등록된 카드가 없기 때문에 출력되는 값이 없다.<br/>&gt; 사용자에 카드가 등록된 경우 카드ID가 출력된다.</p></td></tr><tr><td>15</td><td><p>&lt;숫자모드&gt; <br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 카드리드<br/>3. 출력되는 값 확인</p></td><td><p>리드할 카드<br/>&gt; AOC</p>\n\n<p>Wiegand Out: Card ID</p></td><td><p>1. 발급된 카드ID값이 출력된다.(기존과 동일)</p></td></tr><tr><td>16</td><td><p>&lt;숫자모드&gt; <br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 카드리드<br/>3. 출력되는 값 확인</p></td><td><p>리드할 카드<br/>&gt; AOC(영숫자모드에서 영숫자ID로 발급)</p>\n\n<p>Wiegand Out: Card ID</p></td><td><p>1. 발급된 카드ID값이 출력된다.(기존과 동일)</p></td></tr><tr><td>17</td><td><p>&lt;영숫자모드&gt; <br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 카드리드<br/>3. 출력되는 값 확인</p></td><td><p>리드할 카드<br/>&gt; AOC(영숫자모드에서 숫자ID로 발급) - 2000</p>\n\n<p>Wiegand Out: User ID</p></td><td><p>1. UserID로 출력된다<br/>&gt; User ID가 2000인 경우 0x32 0x30 0x30 0x30 즉, 842018864로 출력.</p></td></tr><tr><td>18</td><td><p>&lt;영숫자모드&gt; <br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 카드리드<br/>3. 출력되는 값 확인</p></td><td><p>리드할 카드<br/>&gt; AOC(영숫자ID로 발급) - sykim</p>\n\n<p>Wiegand Out: User ID</p></td><td><p>1. UserID로 출력된다.<br/>&gt; UserID가 sykim인 경우 0x73 0x79 0x6B 0x69 0x6D 즉, 495958321517로 출력.</p></td></tr><tr><td>19</td><td><p>&lt;숫자모드&gt; <br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 카드리드<br/>3. 출력되는 값 확인</p></td><td><p>리드할 카드<br/>&gt; SCC</p>\n\n<p>Wiegand Out: Card ID</p></td><td><p>1. 카드ID로 출력된다.</p></td></tr><tr><td>20</td><td><p>&lt;숫자모드&gt; <br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 카드리드<br/>3. 출력되는 값 확인</p></td><td><p>리드할 카드<br/>&gt; SCC</p>\n\n<p>Wiegand Out: User ID</p></td><td><p>1. UserID로 출력된다.</p></td></tr><tr><td>21</td><td><p>&lt;영숫자모드&gt; <br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 카드리드<br/>3. 출력되는 값 확인</p></td><td><p>리드할 카드<br/>&gt; SCC</p>\n\n<p>Wiegand Out: Card ID</p></td><td><p>1. 카드ID로 출력된다.</p></td></tr><tr><td>22</td><td><p>&lt;영숫자모드&gt; <br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 카드리드<br/>3. 출력되는 값 확인</p></td><td><p>리드할 카드<br/>&gt; SCC</p>\n\n<p>Wiegand Out: User ID</p></td><td><p>1. User ID로 출력된다.<br/>&gt; UserID가 6인 경우 0x36 즉 54로 출력.</p></td></tr><tr><td>23</td><td><p>&lt;숫자모드&gt;<br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 카드리드<br/>3. 출력되는 값 확인</p></td><td><p>Wiegand Out: User ID<br/>Bypass 모드 설정</p></td><td><p>1. 카드ID로 출력된다.</p></td></tr><tr><td>24</td><td><p>&lt;영숫자모드&gt;<br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 카드리드<br/>3. 출력되는 값 확인</p></td><td><p>Wiegand Out: User ID<br/>Bypass 모드 설정</p></td><td><p>1. 카드ID로 출력된다.</p></td></tr><tr><td>25</td><td><p><span class=\"error\">&#91;Wiegand In - Out 구성&#93;</span><br/>1. Wiegand Out 장치 설정 변경<br/>2. 인증시도 </p></td><td><p>Wiegand Out 장치 설정 변경<br/>&gt; Byte Order: MSB<br/>&gt; Output Info: Card ID</p>\n\n<p>인증시도<br/>&gt; 지문/카드/ID/얼굴</p></td><td><p>1. 카드ID가 출력된다.</p></td></tr><tr><td>26</td><td><p><span class=\"error\">&#91;Wiegand In - Out 구성&#93;</span><br/>1. Wiegand Out 장치 설정 변경<br/>2. 인증시도 </p></td><td><p>Wiegand Out 장치 설정 변경<br/>&gt; Byte Order: MSB<br/>&gt; Output Info: User ID</p>\n\n<p>인증시도<br/>&gt; 지문/카드/ID/얼굴</p></td><td><p>1. UserID가 출력된다.</p></td></tr><tr><td>27</td><td><p><span class=\"error\">&#91;Wiegand In - Out 구성&#93;</span><br/>1. Wiegand Out 장치 설정 변경<br/>2. Wiegand Out 장치에 인증시도 </p></td><td><p>Wiegand Out 장치 설정 변경<br/>&gt; Byte Order: LSB<br/>&gt; Output Info: Card ID</p>\n\n<p>인증시도<br/>&gt; 지문/카드/ID/얼굴</p></td><td><p>1. 카드ID가 출력된다.</p></td></tr><tr><td>28</td><td><p><span class=\"error\">&#91;Wiegand In - Out 구성&#93;</span><br/>1. Wiegand Out 장치 설정 변경<br/>2. Wiegand Out 장치에 인증시도 </p></td><td><p>Wiegand Out 장치 설정 변경<br/>&gt; Byte Order: LSB<br/>&gt; Output Info: User ID</p>\n\n<p>인증시도<br/>&gt; 지문/카드/ID/얼굴</p></td><td><p>1. UserID가 출력된다.<br/>&gt; User ID인 경우 Byte Order 보지않음(카드 외 크리덴셜)</p>\n</td></tr><tr><td>29</td><td><p><span class=\"error\">&#91;ToM 지원 장치&#93;</span><br/>&lt;숫자모드&gt;<br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 ToM 리드<br/>3. 출력되는 값 확인</p></td><td><p>Wiegand Out: Card ID</p>\n\n<ul class=\"alternate\" type=\"square\">\n<li>ToM_AoC,ToM_SCC</li>\n</ul>\n</td><td><p>1. 카드ID가 출력된다.</p></td></tr><tr><td>30</td><td><p><span class=\"error\">&#91;ToM 지원 장치&#93;</span></p>\n\n<p>&lt;숫자모드&gt;<br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 ToM 리드<br/>3. 출력되는 값 확인</p></td><td><p>Wiegand Out:User ID</p>\n\n<ul class=\"alternate\" type=\"square\">\n<li>ToM_AoC,ToM_SCC</li>\n</ul>\n</td><td><p>1. 카드가 등록된 USER ID가 출력된다.</p></td></tr><tr><td>31</td><td><p><span class=\"error\">&#91;ToM 지원 장치&#93;</span><br/>&lt;영숫자모드&gt;<br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 ToM 리드<br/>3. 출력되는 값 확인</p></td><td><p>Wiegand Out: Card ID</p>\n\n<ul class=\"alternate\" type=\"square\">\n<li>ToM_AoC,ToM_SCC</li>\n</ul>\n</td><td><p>1. 카드ID가 출력된다.</p></td></tr><tr><td>32</td><td><p><span class=\"error\">&#91;ToM 지원 장치&#93;</span></p>\n\n<p>&lt;영숫자모드&gt;<br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 ToM 리드<br/>3. 출력되는 값 확인</p></td><td><p>Wiegand Out: User ID</p>\n\n<ul class=\"alternate\" type=\"square\">\n<li>ToM_AOC 카드 발급(영숫자 모드에서 숫자id 발급)<br/>Card id/User id: 2001</li>\n</ul>\n</td><td><p>1. 카드가 등록된 USER ID가 출력된다.<br/>&gt; User ID가 2001인 경우. 2001출력</p></td></tr><tr><td>33</td><td><p><span class=\"error\">&#91;ToM 지원 장치&#93;</span><br/>&lt;영숫자모드&gt;<br/>1. Wiegand In - Out 구성<br/>2. Wiegand Out 장치에 ToM 리드<br/>3. 출력되는 값 확인</p></td><td><p>Wiegand Out: User ID</p>\n\n<ul class=\"alternate\" type=\"square\">\n<li>ToM_SCC 카드 발급(영숫자 모드에서 숫자id 발급)<br/>Card id: 11/User id: 2001</li>\n</ul>\n</td><td><p>1. 카드가 등록된 USER ID가 출력된다.<br/>&gt; User ID가 2001인 경우, 842018865 출력</p></td></tr><tr><td>34</td><td><p><span class=\"error\">&#91;Lock Override&#93;</span><br/>1. Wiegand In-Out 구성<br/>2. Wiegand Out 장치에 지문,Face 인증<br/>3. 출력되는 값 확인</p></td><td><p>User에 지문, Face, Card 등록되어 있는 상태<br/>&gt; Wiegand Out : Card ID</p></td><td><p>1. 카드 ID가 출력되며 Emergency Unlock으로 동작한다.</p></td></tr></table>",
-    "customfield_10248": null,
-    "customfield_10006": [],
-    "customfield_10007": [],
-    "customfield_10008": {
-      "issueId": 30183,
-      "statuses": [
-        {
-          "statusResults": [
-            {
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 34724,
-              "latestFinalId": 34724
-            },
-            {
-              "environment": "ES1",
-              "latest": 3,
-              "latestFinal": 3,
-              "latestId": 29857,
-              "latestFinalId": 29857
-            },
-            {
-              "environment": "BioStarV2.9.6.30",
-              "latest": 3,
-              "latestFinal": 3,
-              "latestId": 29857,
-              "latestFinalId": 29857
-            }
-          ]
-        },
-        {
-          "group": "V1.3.0_190805_Interaction 5차",
-          "statusResults": [
-            {
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 15285,
-              "latestFinalId": 15285
-            }
-          ]
-        },
-        {
-          "group": "V1.1.0_190809_Interaction 6차",
-          "statusResults": [
-            {
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 15641,
-              "latestFinalId": 15641
-            }
-          ]
-        },
-        {
-          "group": "V1.8.0_190806_Interaction 6차",
-          "statusResults": [
-            {
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 15398,
-              "latestFinalId": 15398
-            }
-          ]
-        },
-        {
-          "group": "V1.7.0_190806_Interaction 7차",
-          "statusResults": [
-            {
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 15146,
-              "latestFinalId": 15146
-            }
-          ]
-        },
-        {
-          "group": "V1.2.0_190806_Interaction 5차",
-          "statusResults": [
-            {
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 15520,
-              "latestFinalId": 15520
-            }
-          ]
-        },
-        {
-          "group": "V1.3.0_20200601_Interaction 12차",
-          "statusResults": [
-            {
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 17252,
-              "latestFinalId": 17252
-            }
-          ]
-        }
-      ]
-    },
-    "customfield_12309": null,
-    "customfield_10802": null,
-    "customfield_10803": null,
-    "customfield_10805": null,
-    "summary": "[BSPP-414] Wiegand output 으로 User ID 전송",
-    "customfield_10240": null,
-    "customfield_10000": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
-      "value": "Manual",
-      "id": "10000"
-    },
-    "customfield_10243": null,
-    "customfield_10001": null,
-    "customfield_10244": null,
-    "customfield_10002": null,
-    "customfield_10003": null,
-    "customfield_10246": null,
-    "customfield_10004": {
-      "steps": [
-        {
-          "id": 10562,
-          "index": 1,
-          "step": "<Wiegand Out: 2019 1H 이전FW>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
-          "data": "",
-          "result": "1. 카드ID가 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 10561,
-          "index": 2,
-          "step": "<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
-          "data": "사용자ID = Card ID 동일하게 설정\n\nWiegand Out: User ID",
-          "result": "1. 카드가 등록된 UserID가 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 10622,
-          "index": 3,
-          "step": "<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
-          "data": "Wiegand Out: Card ID",
-          "result": "1. 카드ID가 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 10623,
-          "index": 4,
-          "step": "<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 지문입력\n3. 출력되는 값 확인",
-          "data": "사용자: 지문만 등록\n\nWiegand Out: User ID",
-          "result": "1. UserID가 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 10624,
-          "index": 5,
-          "step": "<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 지문입력\n3. 출력되는 값 확인",
-          "data": "사용자: 지문만 등록\n\nWiegand Out: Card ID",
-          "result": "1. 등록된 카드가 없기 때문에 출력되는 값이 없다.",
-          "attachments": []
-        },
-        {
-          "id": 10625,
-          "index": 6,
-          "step": "<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ID인증\n3. 출력되는 값 확인",
-          "data": "사용자: PIN 등록\n\nWiegand Out: User ID",
-          "result": "1. UserID가 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 10626,
-          "index": 7,
-          "step": "<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ID인증\n3. 출력되는 값 확인",
-          "data": "사용자: PIN만 등록\n\nWiegand Out: Card ID",
-          "result": "1. 등록된 카드가 없기 때문에 출력되는 값이 없다.\n> 사용자에 카드가 등록된 경우 카드ID가 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 10627,
-          "index": 8,
-          "step": "<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
-          "data": "Wiegand Out 장치\n> A사용자에 카드 등록된 상태\nWiegand In 장치\n> A사용자 없는 상태\n\nWiegand Out: User ID",
-          "result": "1. UserID가 출력된다.\n> 등록된 UserID가 12인 경우 0x31 0x32인 12594로 출력.",
-          "attachments": []
-        },
-        {
-          "id": 10633,
-          "index": 9,
-          "step": "<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
-          "data": "사용자ID: sykim\n> CardID: 1234026420066176\n\nWiegand Format: 64bit\nWiegand Out: User ID",
-          "result": "1. UserID로 출력된다.\n> sykim = 0x73 0x79 0x6B 0x69 0x6D\n따라서 495958321517로 출력.",
-          "attachments": []
-        },
-        {
-          "id": 10628,
-          "index": 10,
-          "step": "<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
-          "data": "사용자ID: sykim\n> CardID: 1234026420066176\n\nWiegand Format: 64bit\nWiegand Out: Card ID",
-          "result": "1. 카드ID가 출력된다.\n> 인증성공으로 동작.",
-          "attachments": []
-        },
-        {
-          "id": 10629,
-          "index": 11,
-          "step": "<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 지문입력\n3. 출력되는 값 확인",
-          "data": "사용자: 지문만 등록\n\nWiegand Out: User ID",
-          "result": "1. UserID가 출력된다.\n> User ID가 2002인 경우 0x32 0x30 0x30 0x32 즉, 842018866으로 출력.",
-          "attachments": []
-        },
-        {
-          "id": 10630,
-          "index": 12,
-          "step": "<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 지문입력\n3. 출력되는 값 확인",
-          "data": "사용자: 지문만 등록\n\nWiegand Out: Card ID",
-          "result": "1. 등록된 카드가 없기 때문에 출력되는 값이 없다.",
-          "attachments": []
-        },
-        {
-          "id": 10631,
-          "index": 13,
-          "step": "<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ID인증\n3. 출력되는 값 확인",
-          "data": "사용자: PIN 등록\n\nWiegand Out: User ID",
-          "result": "1. UserID가 출력된다.\n> User ID가 4인 경우 0x34 즉, 52로 출력.",
-          "attachments": []
-        },
-        {
-          "id": 10632,
-          "index": 14,
-          "step": "<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ID인증\n3. 출력되는 값 확인",
-          "data": "사용자: PIN만 등록\n\nWiegand Out: Card ID",
-          "result": "1. 등록된 카드가 없기 때문에 출력되는 값이 없다.\n> 사용자에 카드가 등록된 경우 카드ID가 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 10634,
-          "index": 15,
-          "step": "<숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
-          "data": "리드할 카드\n> AOC\n\nWiegand Out: Card ID",
-          "result": "1. 발급된 카드ID값이 출력된다.(기존과 동일)",
-          "attachments": []
-        },
-        {
-          "id": 10635,
-          "index": 16,
-          "step": "<숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
-          "data": "리드할 카드\n> AOC(영숫자모드에서 영숫자ID로 발급)\n\nWiegand Out: Card ID",
-          "result": "1. 발급된 카드ID값이 출력된다.(기존과 동일)",
-          "attachments": []
-        },
-        {
-          "id": 10636,
-          "index": 17,
-          "step": "<영숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
-          "data": "리드할 카드\n> AOC(영숫자모드에서 숫자ID로 발급) - 2000\n\nWiegand Out: User ID",
-          "result": "1. UserID로 출력된다\n> User ID가 2000인 경우 0x32 0x30 0x30 0x30 즉, 842018864로 출력.\n",
-          "attachments": []
-        },
-        {
-          "id": 10637,
-          "index": 18,
-          "step": "<영숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
-          "data": "리드할 카드\n> AOC(영숫자ID로 발급) - sykim\n\nWiegand Out: User ID",
-          "result": "1. UserID로 출력된다.\n> UserID가 sykim인 경우 0x73 0x79 0x6B 0x69 0x6D 즉, 495958321517로 출력.",
-          "attachments": []
-        },
-        {
-          "id": 10638,
-          "index": 19,
-          "step": "<숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
-          "data": "리드할 카드\n> SCC\n\nWiegand Out: Card ID",
-          "result": "1. 카드ID로 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 10639,
-          "index": 20,
-          "step": "<숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
-          "data": "리드할 카드\n> SCC\n\nWiegand Out: User ID",
-          "result": "1. UserID로 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 10640,
-          "index": 21,
-          "step": "<영숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
-          "data": "리드할 카드\n> SCC\n\nWiegand Out: Card ID",
-          "result": "1. 카드ID로 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 10641,
-          "index": 22,
-          "step": "<영숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
-          "data": "리드할 카드\n> SCC\n\nWiegand Out: User ID",
-          "result": "1. User ID로 출력된다.\n> UserID가 6인 경우 0x36 즉 54로 출력.",
-          "attachments": []
-        },
-        {
-          "id": 10642,
-          "index": 23,
-          "step": "<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
-          "data": "Wiegand Out: User ID\nBypass 모드 설정",
-          "result": "1. 카드ID로 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 10643,
-          "index": 24,
-          "step": "<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인",
-          "data": "Wiegand Out: User ID\nBypass 모드 설정",
-          "result": "1. 카드ID로 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 11027,
-          "index": 25,
-          "step": "[Wiegand In - Out 구성]\n1. Wiegand Out 장치 설정 변경\n2. 인증시도 ",
-          "data": "Wiegand Out 장치 설정 변경\n> Byte Order: MSB\n> Output Info: Card ID\n\n인증시도\n> 지문/카드/ID/얼굴",
-          "result": "1. 카드ID가 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 11028,
-          "index": 26,
-          "step": "[Wiegand In - Out 구성]\n1. Wiegand Out 장치 설정 변경\n2. 인증시도 ",
-          "data": "Wiegand Out 장치 설정 변경\n> Byte Order: MSB\n> Output Info: User ID\n\n인증시도\n> 지문/카드/ID/얼굴",
-          "result": "1. UserID가 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 11029,
-          "index": 27,
-          "step": "[Wiegand In - Out 구성]\n1. Wiegand Out 장치 설정 변경\n2. Wiegand Out 장치에 인증시도 ",
-          "data": "Wiegand Out 장치 설정 변경\n> Byte Order: LSB\n> Output Info: Card ID\n\n인증시도\n> 지문/카드/ID/얼굴",
-          "result": "1. 카드ID가 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 11030,
-          "index": 28,
-          "step": "[Wiegand In - Out 구성]\n1. Wiegand Out 장치 설정 변경\n2. Wiegand Out 장치에 인증시도 ",
-          "data": "Wiegand Out 장치 설정 변경\n> Byte Order: LSB\n> Output Info: User ID\n\n인증시도\n> 지문/카드/ID/얼굴",
-          "result": "1. UserID가 출력된다.\n> User ID인 경우 Byte Order 보지않음(카드 외 크리덴셜)\n\n",
-          "attachments": []
-        },
-        {
-          "id": 16993,
-          "index": 29,
-          "step": "[ToM 지원 장치]\n<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ToM 리드\n3. 출력되는 값 확인",
-          "data": "Wiegand Out: Card ID\n\n- ToM_AoC,ToM_SCC",
-          "result": "1. 카드ID가 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 16992,
-          "index": 30,
-          "step": "[ToM 지원 장치]\n\n<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ToM 리드\n3. 출력되는 값 확인",
-          "data": "Wiegand Out:User ID\n\n- ToM_AoC,ToM_SCC",
-          "result": "1. 카드가 등록된 USER ID가 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 17907,
-          "index": 31,
-          "step": "[ToM 지원 장치]\n<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ToM 리드\n3. 출력되는 값 확인",
-          "data": "Wiegand Out: Card ID\n\n- ToM_AoC,ToM_SCC",
-          "result": "1. 카드ID가 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 17908,
-          "index": 32,
-          "step": "[ToM 지원 장치]\n\n<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ToM 리드\n3. 출력되는 값 확인",
-          "data": "Wiegand Out: User ID\n\n- ToM_AOC 카드 발급(영숫자 모드에서 숫자id 발급)\nCard id/User id: 2001",
-          "result": "1. 카드가 등록된 USER ID가 출력된다.\n> User ID가 2001인 경우. 2001출력",
-          "attachments": []
-        },
-        {
-          "id": 18006,
-          "index": 33,
-          "step": "[ToM 지원 장치]\n<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ToM 리드\n3. 출력되는 값 확인",
-          "data": "Wiegand Out: User ID\n\n- ToM_SCC 카드 발급(영숫자 모드에서 숫자id 발급)\nCard id: 11/User id: 2001",
-          "result": "1. 카드가 등록된 USER ID가 출력된다.\n> User ID가 2001인 경우, 842018865 출력\n",
-          "attachments": []
-        },
-        {
-          "id": 19909,
-          "index": 34,
-          "step": "[Lock Override]\n1. Wiegand In-Out 구성\n2. Wiegand Out 장치에 지문,Face 인증\n3. 출력되는 값 확인",
-          "data": "User에 지문, Face, Card 등록되어 있는 상태\n> Wiegand Out : Card ID",
-          "result": "1. 카드 ID가 출력되며 Emergency Unlock으로 동작한다.",
-          "attachments": []
-        }
-      ]
-    },
-    "customfield_10236": null,
-    "customfield_10237": null,
-    "environment": null,
-    "customfield_10238": null,
-    "customfield_10239": null,
-    "duedate": null,
-    "comment": {
-      "comments": [],
-      "maxResults": 0,
-      "total": 0,
-      "startAt": 0
-    },
-    "customfield_10230": null,
-    "fixVersions": [],
-    "customfield_10231": null,
-    "customfield_10232": null,
-    "customfield_10233": null,
-    "customfield_12410": null,
-    "customfield_10234": null,
-    "customfield_10235": null,
-    "customfield_10225": null,
-    "customfield_12404": null,
-    "customfield_10226": null,
-    "customfield_12403": null,
-    "customfield_10227": null,
-    "customfield_12406": null,
-    "customfield_10228": null,
-    "customfield_10229": null,
-    "customfield_10900": null,
-    "customfield_12408": null,
-    "customfield_10901": null,
-    "customfield_10902": null,
-    "customfield_10903": null,
-    "customfield_12409": null,
-    "customfield_10904": null,
-    "customfield_10905": null,
-    "customfield_10220": null,
-    "priority": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-      "name": "미할당",
-      "id": "10100"
-    },
-    "customfield_10221": null,
-    "customfield_12400": null,
-    "customfield_12402": null,
-    "customfield_10224": null,
-    "customfield_10214": null,
-    "customfield_10217": null,
-    "customfield_10218": null,
-    "timeestimate": null,
-    "versions": [],
-    "customfield_10219": null,
-    "status": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
-      "description": "",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
-      "name": "할 일",
-      "id": "10000",
-      "statusCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
-        "id": 2,
-        "key": "new",
-        "colorName": "blue-gray",
-        "name": "할 일"
-      }
-    },
-    "customfield_12510": null,
-    "customfield_10213": null,
-    "customfield_12511": null,
-    "customfield_10203": null,
-    "customfield_10204": null,
-    "customfield_12502": null,
-    "customfield_10205": null,
-    "customfield_10206": null,
-    "customfield_10207": null,
-    "aggregatetimeestimate": null,
-    "customfield_10208": null,
-    "customfield_10209": null,
-    "customfield_12509": null,
-    "customfield_12508": null,
-    "creator": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
-      "name": "김소영",
-      "key": "김소영",
-      "emailAddress": "sykim@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-      },
-      "displayName": "김소영",
-      "active": true,
-      "timeZone": "Asia/Seoul"
-    },
-    "aggregateprogress": {
-      "progress": 0,
-      "total": 0
-    },
-    "customfield_10320": null,
-    "customfield_10321": null,
-    "customfield_12501": null,
-    "customfield_10202": null,
-    "customfield_12500": null,
-    "customfield_10313": "1|hztiav:",
-    "customfield_10316": null,
-    "customfield_10317": null,
-    "timespent": null,
-    "aggregatetimespent": null,
-    "customfield_10310": null,
-    "customfield_10302": null,
-    "customfield_10303": null,
-    "customfield_12601": null,
-    "customfield_10304": null,
-    "customfield_10305": null,
-    "customfield_10308": null,
-    "workratio": -1,
-    "created": "2019-04-15T10:39:10.000+0900",
-    "customfield_10533": null,
-    "customfield_10534": null,
-    "customfield_11501": null,
-    "customfield_11503": null,
-    "customfield_13001": null,
-    "customfield_13000": null,
-    "customfield_10530": null,
-    "customfield_10531": null,
-    "customfield_10532": null,
-    "customfield_10401": null,
-    "customfield_10522": null,
-    "customfield_10402": null,
-    "customfield_12700": null,
-    "customfield_10524": null,
-    "customfield_10525": null,
-    "customfield_12702": null,
-    "attachment": [],
-    "customfield_10526": null,
-    "customfield_12704": null,
-    "customfield_10528": null,
-    "customfield_12706": null,
-    "customfield_10520": null,
-    "customfield_10521": null,
-    "customfield_10400": null,
-    "customfield_10511": null,
-    "customfield_10512": null,
-    "customfield_11600": null,
-    "customfield_10513": null,
-    "customfield_10514": null,
-    "customfield_10515": null,
-    "customfield_10516": null,
-    "customfield_10517": null,
-    "customfield_10518": null,
-    "customfield_10519": null
+[
+  {
+    "id": "COMMONR-252_step_1",
+    "document": "Test Step: <Wiegand Out: 2019 1H 이전FW>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인\nExpected Result: 1. 카드ID가 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "1",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_2",
+    "document": "Test Step: <숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인\nTest Data: 사용자ID = Card ID 동일하게 설정\n\nWiegand Out: User ID\nExpected Result: 1. 카드가 등록된 UserID가 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "2",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_3",
+    "document": "Test Step: <숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인\nTest Data: Wiegand Out: Card ID\nExpected Result: 1. 카드ID가 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "3",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_4",
+    "document": "Test Step: <숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 지문입력\n3. 출력되는 값 확인\nTest Data: 사용자: 지문만 등록\n\nWiegand Out: User ID\nExpected Result: 1. UserID가 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "4",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_5",
+    "document": "Test Step: <숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 지문입력\n3. 출력되는 값 확인\nTest Data: 사용자: 지문만 등록\n\nWiegand Out: Card ID\nExpected Result: 1. 등록된 카드가 없기 때문에 출력되는 값이 없다.",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "5",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_6",
+    "document": "Test Step: <숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ID인증\n3. 출력되는 값 확인\nTest Data: 사용자: PIN 등록\n\nWiegand Out: User ID\nExpected Result: 1. UserID가 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "6",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_7",
+    "document": "Test Step: <숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ID인증\n3. 출력되는 값 확인\nTest Data: 사용자: PIN만 등록\n\nWiegand Out: Card ID\nExpected Result: 1. 등록된 카드가 없기 때문에 출력되는 값이 없다.\n> 사용자에 카드가 등록된 경우 카드ID가 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "7",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_8",
+    "document": "Test Step: <영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인\nTest Data: Wiegand Out 장치\n> A사용자에 카드 등록된 상태\nWiegand In 장치\n> A사용자 없는 상태\n\nWiegand Out: User ID\nExpected Result: 1. UserID가 출력된다.\n> 등록된 UserID가 12인 경우 0x31 0x32인 12594로 출력.",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "8",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_9",
+    "document": "Test Step: <영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인\nTest Data: 사용자ID: sykim\n> CardID: 1234026420066176\n\nWiegand Format: 64bit\nWiegand Out: User ID\nExpected Result: 1. UserID로 출력된다.\n> sykim = 0x73 0x79 0x6B 0x69 0x6D\n따라서 495958321517로 출력.",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "9",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_10",
+    "document": "Test Step: <영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인\nTest Data: 사용자ID: sykim\n> CardID: 1234026420066176\n\nWiegand Format: 64bit\nWiegand Out: Card ID\nExpected Result: 1. 카드ID가 출력된다.\n> 인증성공으로 동작.",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "10",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_11",
+    "document": "Test Step: <영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 지문입력\n3. 출력되는 값 확인\nTest Data: 사용자: 지문만 등록\n\nWiegand Out: User ID\nExpected Result: 1. UserID가 출력된다.\n> User ID가 2002인 경우 0x32 0x30 0x30 0x32 즉, 842018866으로 출력.",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "11",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_12",
+    "document": "Test Step: <영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 지문입력\n3. 출력되는 값 확인\nTest Data: 사용자: 지문만 등록\n\nWiegand Out: Card ID\nExpected Result: 1. 등록된 카드가 없기 때문에 출력되는 값이 없다.",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "12",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_13",
+    "document": "Test Step: <영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ID인증\n3. 출력되는 값 확인\nTest Data: 사용자: PIN 등록\n\nWiegand Out: User ID\nExpected Result: 1. UserID가 출력된다.\n> User ID가 4인 경우 0x34 즉, 52로 출력.",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "13",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_14",
+    "document": "Test Step: <영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ID인증\n3. 출력되는 값 확인\nTest Data: 사용자: PIN만 등록\n\nWiegand Out: Card ID\nExpected Result: 1. 등록된 카드가 없기 때문에 출력되는 값이 없다.\n> 사용자에 카드가 등록된 경우 카드ID가 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "14",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_15",
+    "document": "Test Step: <숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인\nTest Data: 리드할 카드\n> AOC\n\nWiegand Out: Card ID\nExpected Result: 1. 발급된 카드ID값이 출력된다.(기존과 동일)",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "15",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_16",
+    "document": "Test Step: <숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인\nTest Data: 리드할 카드\n> AOC(영숫자모드에서 영숫자ID로 발급)\n\nWiegand Out: Card ID\nExpected Result: 1. 발급된 카드ID값이 출력된다.(기존과 동일)",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "16",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_17",
+    "document": "Test Step: <영숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인\nTest Data: 리드할 카드\n> AOC(영숫자모드에서 숫자ID로 발급) - 2000\n\nWiegand Out: User ID\nExpected Result: 1. UserID로 출력된다\n> User ID가 2000인 경우 0x32 0x30 0x30 0x30 즉, 842018864로 출력.\n",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "17",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_18",
+    "document": "Test Step: <영숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인\nTest Data: 리드할 카드\n> AOC(영숫자ID로 발급) - sykim\n\nWiegand Out: User ID\nExpected Result: 1. UserID로 출력된다.\n> UserID가 sykim인 경우 0x73 0x79 0x6B 0x69 0x6D 즉, 495958321517로 출력.",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "18",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_19",
+    "document": "Test Step: <숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인\nTest Data: 리드할 카드\n> SCC\n\nWiegand Out: Card ID\nExpected Result: 1. 카드ID로 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "19",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_20",
+    "document": "Test Step: <숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인\nTest Data: 리드할 카드\n> SCC\n\nWiegand Out: User ID\nExpected Result: 1. UserID로 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "20",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_21",
+    "document": "Test Step: <영숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인\nTest Data: 리드할 카드\n> SCC\n\nWiegand Out: Card ID\nExpected Result: 1. 카드ID로 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "21",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_22",
+    "document": "Test Step: <영숫자모드> \n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인\nTest Data: 리드할 카드\n> SCC\n\nWiegand Out: User ID\nExpected Result: 1. User ID로 출력된다.\n> UserID가 6인 경우 0x36 즉 54로 출력.",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "22",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_23",
+    "document": "Test Step: <숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인\nTest Data: Wiegand Out: User ID\nBypass 모드 설정\nExpected Result: 1. 카드ID로 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "23",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_24",
+    "document": "Test Step: <영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 카드리드\n3. 출력되는 값 확인\nTest Data: Wiegand Out: User ID\nBypass 모드 설정\nExpected Result: 1. 카드ID로 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "24",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_25",
+    "document": "Test Step: [Wiegand In - Out 구성]\n1. Wiegand Out 장치 설정 변경\n2. 인증시도 \nTest Data: Wiegand Out 장치 설정 변경\n> Byte Order: MSB\n> Output Info: Card ID\n\n인증시도\n> 지문/카드/ID/얼굴\nExpected Result: 1. 카드ID가 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "25",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_26",
+    "document": "Test Step: [Wiegand In - Out 구성]\n1. Wiegand Out 장치 설정 변경\n2. 인증시도 \nTest Data: Wiegand Out 장치 설정 변경\n> Byte Order: MSB\n> Output Info: User ID\n\n인증시도\n> 지문/카드/ID/얼굴\nExpected Result: 1. UserID가 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "26",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_27",
+    "document": "Test Step: [Wiegand In - Out 구성]\n1. Wiegand Out 장치 설정 변경\n2. Wiegand Out 장치에 인증시도 \nTest Data: Wiegand Out 장치 설정 변경\n> Byte Order: LSB\n> Output Info: Card ID\n\n인증시도\n> 지문/카드/ID/얼굴\nExpected Result: 1. 카드ID가 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "27",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_28",
+    "document": "Test Step: [Wiegand In - Out 구성]\n1. Wiegand Out 장치 설정 변경\n2. Wiegand Out 장치에 인증시도 \nTest Data: Wiegand Out 장치 설정 변경\n> Byte Order: LSB\n> Output Info: User ID\n\n인증시도\n> 지문/카드/ID/얼굴\nExpected Result: 1. UserID가 출력된다.\n> User ID인 경우 Byte Order 보지않음(카드 외 크리덴셜)\n\n",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "28",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_29",
+    "document": "Test Step: [ToM 지원 장치]\n<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ToM 리드\n3. 출력되는 값 확인\nTest Data: Wiegand Out: Card ID\n\n- ToM_AoC,ToM_SCC\nExpected Result: 1. 카드ID가 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "29",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_30",
+    "document": "Test Step: [ToM 지원 장치]\n\n<숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ToM 리드\n3. 출력되는 값 확인\nTest Data: Wiegand Out:User ID\n\n- ToM_AoC,ToM_SCC\nExpected Result: 1. 카드가 등록된 USER ID가 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "30",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_31",
+    "document": "Test Step: [ToM 지원 장치]\n<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ToM 리드\n3. 출력되는 값 확인\nTest Data: Wiegand Out: Card ID\n\n- ToM_AoC,ToM_SCC\nExpected Result: 1. 카드ID가 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "31",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_32",
+    "document": "Test Step: [ToM 지원 장치]\n\n<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ToM 리드\n3. 출력되는 값 확인\nTest Data: Wiegand Out: User ID\n\n- ToM_AOC 카드 발급(영숫자 모드에서 숫자id 발급)\nCard id/User id: 2001\nExpected Result: 1. 카드가 등록된 USER ID가 출력된다.\n> User ID가 2001인 경우. 2001출력",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "32",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_33",
+    "document": "Test Step: [ToM 지원 장치]\n<영숫자모드>\n1. Wiegand In - Out 구성\n2. Wiegand Out 장치에 ToM 리드\n3. 출력되는 값 확인\nTest Data: Wiegand Out: User ID\n\n- ToM_SCC 카드 발급(영숫자 모드에서 숫자id 발급)\nCard id: 11/User id: 2001\nExpected Result: 1. 카드가 등록된 USER ID가 출력된다.\n> User ID가 2001인 경우, 842018865 출력\n",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "33",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-252_step_34",
+    "document": "Test Step: [Lock Override]\n1. Wiegand In-Out 구성\n2. Wiegand Out 장치에 지문,Face 인증\n3. 출력되는 값 확인\nTest Data: User에 지문, Face, Card 등록되어 있는 상태\n> Wiegand Out : Card ID\nExpected Result: 1. 카드 ID가 출력되며 Emergency Unlock으로 동작한다.",
+    "metadata": {
+      "issue_key": "COMMONR-252",
+      "step_index": "34",
+      "source": "jira_test_step"
+    }
   }
-}
+]

@@ -1,1138 +1,227 @@
-{
-  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
-  "id": "23808",
-  "self": "https://jira.suprema.co.kr/rest/api/2/issue/23808",
-  "key": "COMMONR-217",
-  "fields": {
-    "resolution": null,
-    "customfield_13103": null,
-    "customfield_10510": null,
-    "customfield_10500": "0.0",
-    "customfield_10501": null,
-    "customfield_10502": null,
-    "customfield_12802": null,
-    "customfield_12804": null,
-    "customfield_10505": null,
-    "customfield_12803": null,
-    "customfield_10506": null,
-    "customfield_12806": null,
-    "customfield_10507": null,
-    "customfield_12805": null,
-    "customfield_10508": null,
-    "customfield_12808": null,
-    "customfield_10509": null,
-    "lastViewed": null,
-    "customfield_10180": null,
-    "customfield_10181": null,
-    "customfield_10182": null,
-    "customfield_10183": null,
-    "customfield_10184": null,
-    "customfield_10185": null,
-    "labels": [],
-    "customfield_11702": null,
-    "aggregatetimeoriginalestimate": null,
-    "issuelinks": [
-      {
-        "id": "39121",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/39121",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "19305",
-          "key": "TIIDFI-820",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/19305",
-          "fields": {
-            "summary": "Wiegand Out 장치에서 등록되지 않은 카드로 인증시 Fail Code[0x00]가 미적용되는 현상.",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
-              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
-              "name": "열림",
-              "id": "1",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
-                "id": 2,
-                "key": "new",
-                "colorName": "blue-gray",
-                "name": "할 일"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "19920",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19920",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "18346",
-          "key": "BSIIDII-376",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/18346",
-          "fields": {
-            "summary": "Wiegand In/Out을 BS2로 설정후 Pulse Interval을 20000으로 설정하면 카드ID 값이 미전달되는 현상.",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
-              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
-              "name": "열림",
-              "id": "1",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
-                "id": 2,
-                "key": "new",
-                "colorName": "blue-gray",
-                "name": "할 일"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
-              "name": "Minor (C)",
-              "id": "3"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "19377",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19377",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "23793",
-          "key": "BSIIDII-845",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/23793",
-          "fields": {
-            "summary": "Master장치에 Wiegand 입출력모드로 설정, Wiegand장치를 추가 후 해당 Wiegand장치에 카드 Read시 Master장치에서 Out으로 Wiegand 출력이 나가지 않음(사양확인 필요)",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "20157",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/20157",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "24567",
-          "key": "BLNIIFW-171",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/24567",
-          "fields": {
-            "summary": "Wiegand Width/Interval의 Min/Default/Max 동작에 대한 결과물 요청",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/6",
-              "description": "이 이슈는 올바른 해결책으로 완료된 것으로 간주됩니다. 닫힌 이슈는 다시 열기를 할 수 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "닫힘",
-              "id": "6",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
-              "name": "Minor (C)",
-              "id": "3"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "19520",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/19520",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "25107",
-          "key": "BLNIIFW-248",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/25107",
-          "fields": {
-            "summary": "Wiegand Out 장치에서 등록되지 않은 카드로 인증시 Fail Code[0x00]가 미적용되는 현상.",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
-              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
-              "name": "열림",
-              "id": "1",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
-                "id": 2,
-                "key": "new",
-                "colorName": "blue-gray",
-                "name": "할 일"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/4",
-              "id": "4",
-              "description": "기존 기능이나 작업의 개선점.",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10310&avatarType=issuetype",
-              "name": "개선",
-              "subtask": false,
-              "avatarId": 10310
-            }
-          }
-        }
-      },
-      {
-        "id": "18283",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/18283",
-        "type": {
-          "id": "10003",
-          "name": "Relates",
-          "inward": "relates to",
-          "outward": "relates to",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
-        },
-        "inwardIssue": {
-          "id": "23818",
-          "key": "BSIIDII-850",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/23818",
-          "fields": {
-            "summary": "08. Interaction - Wieand In / Out 동시 지원",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "완료",
-              "id": "10001",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10200",
-              "id": "10200",
-              "description": "개별 Interaction 관리용 타입",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10304&avatarType=issuetype",
-              "name": "Interaction",
-              "subtask": false,
-              "avatarId": 10304
-            }
-          }
-        }
-      },
-      {
-        "id": "18287",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/18287",
-        "type": {
-          "id": "10003",
-          "name": "Relates",
-          "inward": "relates to",
-          "outward": "relates to",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
-        },
-        "inwardIssue": {
-          "id": "23821",
-          "key": "FSTIIFW-691",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/23821",
-          "fields": {
-            "summary": "2017 - 2H 08. Interaction - Wieand In / Out 동시 지원",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "완료",
-              "id": "10001",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10200",
-              "id": "10200",
-              "description": "개별 Interaction 관리용 타입",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10304&avatarType=issuetype",
-              "name": "Interaction",
-              "subtask": false,
-              "avatarId": 10304
-            }
-          }
-        }
-      },
-      {
-        "id": "18274",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/18274",
-        "type": {
-          "id": "10003",
-          "name": "Relates",
-          "inward": "relates to",
-          "outward": "relates to",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
-        },
-        "inwardIssue": {
-          "id": "23796",
-          "key": "TIIDFI-1588",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/23796",
-          "fields": {
-            "summary": "08. Interaction - Wieand In / Out 동시 지원",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "완료",
-              "id": "10001",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10200",
-              "id": "10200",
-              "description": "개별 Interaction 관리용 타입",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10304&avatarType=issuetype",
-              "name": "Interaction",
-              "subtask": false,
-              "avatarId": 10304
-            }
-          }
-        }
-      }
-    ],
-    "assignee": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
-      "name": "김소영",
-      "key": "김소영",
-      "emailAddress": "sykim@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-      },
-      "displayName": "김소영",
-      "active": true,
-      "timeZone": "Asia/Seoul"
-    },
-    "components": [],
-    "customfield_10170": null,
-    "customfield_10171": null,
-    "customfield_10172": null,
-    "customfield_10174": null,
-    "customfield_10175": null,
-    "customfield_10176": null,
-    "customfield_10177": null,
-    "customfield_10178": null,
-    "customfield_10179": null,
-    "customfield_10600": 25.0,
-    "customfield_10601": [],
-    "customfield_12901": null,
-    "customfield_10602": null,
-    "customfield_12900": null,
-    "subtasks": [],
-    "reporter": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
-      "name": "hmkang",
-      "key": "hmkang",
-      "emailAddress": "hmkang@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
-      },
-      "displayName": "강현민",
-      "active": true,
-      "timeZone": "Asia/Seoul"
-    },
-    "customfield_10168": null,
-    "customfield_10169": null,
-    "customfield_11800": null,
-    "progress": {
-      "progress": 0,
-      "total": 0
-    },
-    "votes": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-217/votes",
-      "votes": 0,
-      "hasVoted": false
-    },
-    "worklog": {
-      "startAt": 0,
-      "maxResults": 20,
-      "total": 0,
-      "worklogs": []
-    },
-    "issuetype": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
-      "id": "10000",
-      "description": "Represents a Test",
-      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
-      "name": "Test",
-      "subtask": false
-    },
-    "project": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
-      "id": "10000",
-      "key": "COMMONR",
-      "name": "Common Requirement And Test Case",
-      "projectTypeKey": "software",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
-        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
-        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
-        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
-      },
-      "projectCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
-        "id": "10000",
-        "description": "Requirements And Test Cases For The BioStar System Device",
-        "name": "BioStar System Device Requirement And Test Case"
-      }
-    },
-    "customfield_11000": null,
-    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@16e3690b[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@52428bd8[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@69585bcf[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@2f821177[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@2f1ef495[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@3d99e911[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@16344b4e[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@2902e956[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@71e00abf[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@3c3b4f3[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@3719f1fe[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@96fe612[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
-    "resolutiondate": null,
-    "watches": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-217/watchers",
-      "watchCount": 1,
-      "isWatching": false
-    },
-    "customfield_11900": null,
-    "customfield_11901": null,
-    "updated": "2025-08-01T10:04:08.000+0900",
-    "timeoriginalestimate": null,
-    "description": "Entry  & Station 계열 \r\n\r\n((i))Wiegand Cable Setting...\r\n\r\n1. Master-Slave-Wiegand Reader 0\r\n!Master-Slave-Wiegand Reader0.png!\r\n2. Master-DM20-Wiegand Reader 0,1\r\n!Master-DM20-Wiegand Reader0,1.png!\r\n3. Master-Wiegand Reader 0\r\n!Master-Wiegand Reader0.png!\r\n위의 세가지 케이스에 대해 확인필요\r\n\r\n& Secure Credential Card &\r\n > BioStar에서 표시되는 카드 ID와 장치에서 표시되는 카드 ID 및 Wiegand로 출력되는 카드 ID가 모두 일치해야 한다.\r\n > 24Byte의 카드 ID와 8Byte의 발급회차를 갖는다. 24Byte 카드 ID가 화면 및 Wiegand로 출력되고 로그에 저장되는 카드 ID이다.\r\n > 카드 ID와 발급회차가 모두 일치해야 유효한 카드로 인식한다.\r\n > BlackList 검사 시에도 카드 ID와 발급회차를 검사한다.\r\n > Mifare 카드일 경우만 Wiegand 출력시에 24Byte 카드 ID를 사용한다.(iClass 카드는 PACs을 Wiegand Output으로 출력)\r\n\r\n& Access On Card &(iClass 카드는 PACs을 Wiegand Output으로 출력)\r\n > Access On Card에 ID의 형식을 구분하는 Flag 추가\r\n > ID 형식은 String, Binary 두가지 지원\r\n > ID 형식이 String일 경우 로그 저장 시 해당 String을 그대로 로그의 사용자 ID에 저장\r\n > ID 형식이 Binary일 경우 로그 저장 시 해당 Binary 값을 10진수로 변환하여 로그의 사용자 ID에 저장\r\n > Wiegand 출력의 경우 ID 형식에 관계 없이 항상 Binary 값을 출력한다.\r\n\r\n&&& 각 장치별 스펙상 Wiegand Reader 최대 연결갯수는 다음과 같음(추후 수정 가능)\r\n||Device||WiegandIn Only||Wiegand In & Out||WiegandOut Only||\r\n|SIO2/OM/IM/R2/D2|N/A|N/A|N/A|\r\n|DM20|2|N/A|N/A|\r\n|CS|4|N/A|N/A|\r\n|BS2/A2/FS2|1|1|0|\r\n|P2/L2/W2/N2|1|N/A|0|",
-    "customfield_10251": null,
-    "customfield_10252": null,
-    "customfield_10253": null,
-    "customfield_10254": null,
-    "customfield_10255": null,
-    "timetracking": {},
-    "customfield_10257": null,
-    "customfield_10247": null,
-    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. Setting&gt; Card Format&gt; Wiegand&gt; Add Wiegand<br/>2. ID Field 영역 설정확인</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span></p>\n<div class='table-wrap'>\n<table class='confluenceTable'><tbody>\n<tr>\n<th class='confluenceTh'>Predefined Wiegand Format</th>\n</tr>\n<tr>\n<td class='confluenceTd'>26bit SIA Standard-H10301</td>\n</tr>\n<tr>\n<td class='confluenceTd'>HID 37 bit-H10302</td>\n</tr>\n<tr>\n<td class='confluenceTd'>HID 37 bit-H10304</td>\n</tr>\n<tr>\n<td class='confluenceTd'>HID Corporate 1000</td>\n</tr>\n<tr>\n<td class='confluenceTd'>HID Corporate 1000 48bit</td>\n</tr>\n</tbody></table>\n</div>\n</td><td><p>1.ID 영역을 4개까지 설정할 수 있다.<br/><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> HID Coporate 1000 설정 참조</p>\n<div class='table-wrap'>\n<table class='confluenceTable'><tbody>\n<tr>\n<th class='confluenceTh'>ID Field</th>\n</tr>\n<tr>\n<td class='confluenceTd'>Facility Code Field</td>\n</tr>\n<tr>\n<td class='confluenceTd'>ID Field</td>\n</tr>\n</tbody></table>\n</div>\n\n<p>&gt; Facility Code Field 추가 시 ID Field는 3개 추가 가능 <br/>2. ID 영역은 256Bit를 설정할 수 있다.<br/>&gt; ID Bit를 256을 초과한 값에 대해 설정 후 추가되는지 확인<br/>3. ID 영역간에는 중복될 수 없다.<br/>&gt; ID 영역간 중복되게 설정 후 추가되는지 확인</p></td></tr><tr><td>2</td><td><p>1. Setting&gt; Card Format&gt; Wiegand&gt; Add Wiegand<br/>2. Parity Bits 영역 설정확인</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span></p>\n<div class='table-wrap'>\n<table class='confluenceTable'><tbody>\n<tr>\n<th class='confluenceTh'>Predefined Wiegand Format</th>\n</tr>\n<tr>\n<td class='confluenceTd'>26bit SIA Standard-H10301</td>\n</tr>\n<tr>\n<td class='confluenceTd'>HID 37 bit-H10302</td>\n</tr>\n<tr>\n<td class='confluenceTd'>HID 37 bit-H10304</td>\n</tr>\n<tr>\n<td class='confluenceTd'>HID Corporate 1000</td>\n</tr>\n<tr>\n<td class='confluenceTd'>HID Corporate 1000 48bit</td>\n</tr>\n</tbody></table>\n</div>\n</td><td><p>1. Parity 영역을 4개까지 설정할 수 있다.<br/>2. Parity 영역은 서로 중복될 수 있다.</p>\n\n<p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> HID Coporate 1000 설정 참조</p>\n<div class='table-wrap'>\n<table class='confluenceTable'><tbody>\n<tr>\n<th class='confluenceTh'>Parity Bits</th>\n</tr>\n<tr>\n<td class='confluenceTd'>Even</td>\n</tr>\n<tr>\n<td class='confluenceTd'>Odd</td>\n</tr>\n</tbody></table>\n</div>\n</td></tr><tr><td>3</td><td><p>1. Setting&gt; Card Format&gt; Wiegand<br/>2. 수정 가능한 리스트 선택<br/>3. 각 항목들에 대해 설정 후 저장<br/>&gt; Name, Description, Total Bits, Facility Code Field, ID Field, Parity Bits</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span></p>\n<div class='table-wrap'>\n<table class='confluenceTable'><tbody>\n<tr>\n<th class='confluenceTh'>Predefined Wiegand Format ID</th>\n<th class='confluenceTh'>Custom Wiegand Format ID</th>\n</tr>\n<tr>\n<td class='confluenceTd'>1 ~ 5</td>\n<td class='confluenceTd'>6 ~ 15</td>\n</tr>\n<tr>\n<td class='confluenceTd'>수정 불가능</td>\n<td class='confluenceTd'>수정 가능</td>\n</tr>\n</tbody></table>\n</div>\n\n\n<p>&gt; 각 항목들에 대해 Default 포맷 참조해 설정</p></td><td><p>1. 설정한 Custom Format이 리스트에 추가된다.<br/>&gt; 6 ~ 15 중 추가한 Custom이 표시 된다.<br/>Name, Total Bits, Number of Fields, Number of Issued Cards</p></td></tr><tr><td>4</td><td><p>1. Setting&gt; Card Format&gt; Wiegand<br/>2. 생성된 Wiegand Custom Format 선택<br/>3. 설정값 변경<br/>&gt; Name, Description, Total Bits, Facility Code Field, ID Field, Parity Bits</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span></p>\n<div class='table-wrap'>\n<table class='confluenceTable'><tbody>\n<tr>\n<th class='confluenceTh'>Predefined Wiegand Format ID</th>\n<th class='confluenceTh'>Custom Wiegand Format ID</th>\n</tr>\n<tr>\n<td class='confluenceTd'>1 ~ 5</td>\n<td class='confluenceTd'>6 ~ 15</td>\n</tr>\n<tr>\n<td class='confluenceTd'>수정 불가능</td>\n<td class='confluenceTd'>수정 가능</td>\n</tr>\n</tbody></table>\n</div>\n</td><td><p>1. 변경한 값이 저장된다.</p></td></tr><tr><td>5</td><td><p>1. Device&gt; Wiegand 입력/출력에 대한 Wiegand Format 설정</p></td><td><p>Wiegand Format<br/>&gt; Default(BioStar V2.3 추가)<br/>&gt; 26bit SIA Standard-H10301(Default)<br/>&gt; HID 37 bit-H10302<br/>&gt; HID 37 bit-H10304<br/>&gt; HID Corporate 1000 <br/>&gt; HID Corporate 1000 48bit</p></td><td><p>1. 선택한 값이 설정되어야 한다.<br/>2. Slave인 경우 Wiegand Input으로 강제 설정된다. </p>\n\n<p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> Master-Slave-3rd Party Reader<br/> &gt; Master : Wiegand Input 설정<br/> &gt; Slave : Wiegand Input 강제 설정</p></td></tr><tr><td>6</td><td><p>1. Device&gt; Advanced&gt; Wiegand&gt; Wiegand Input/Output 설정<br/>2. 장치 별로 Wiegand Port에 따른 Wiegand Input/Output 옵션 설정</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Wiegand - Input/Output<br/>&gt; Input (Default)<br/>&gt; Output</p></td><td><p>1. Wiegand In으로 동작시킬 것인지, Wiegand Out으로 동작시킬 것인지 설정할 수 있다.<br/>&gt; Input<br/>&gt; Output<br/>&gt; Both(Input/Output)</p></td></tr><tr><td>7</td><td><p>1. Device&gt; Advanced&gt;Wiegand&gt; Wiegand Pulse 설정</p>\n\n<p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> Wiegand Output - Pulse Width, Interval</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span></p>\n<div class=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;\"><b>Wiegand Pulse</b></div><div class=\"panelContent\">\n<div class='table-wrap'>\n<table class='confluenceTable'><tbody>\n<tr>\n<th class='confluenceTh'>Width</th>\n<th class='confluenceTh'>Interval</th>\n</tr>\n<tr>\n<td class='confluenceTd'>Min(20)~Max(100)<br/>Default(40)</td>\n<td class='confluenceTd'>Min(200)~Max(20000)<br/>Default(10000)</td>\n</tr>\n</tbody></table>\n</div>\n\n<p>※ BS2 <br/>&gt; Pluse Interval : 2000(Default)</p>\n</div></div></td><td><p>1. 선택한 값이 설정되어야 한다.<br/>2. Scope를 이용해 설정한 값으로 동작되는지 확인할 수 있어야 한다.</p>\n\n<p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/check.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> 측정 : RND 개발 검증 결과로 대체</p>\n\n<p>※ DM 20 - Wiegand Pulse Width/Pulse Interval Min/Max로 기본 설정<br/>&gt; 기본 설정값 (추후 확인 예정)</p>\n\n<p>&gt; Wiegand Out에 대한 동작확인은 Scope로 확인</p></td></tr><tr><td>8</td><td><p>1. Device&gt; Device List&gt; Device 선택(Master)&gt; Advanced&gt; Wiegand<br/>2. 각 항목에 대해 설정</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Wiegand - Input/Output</p>\n\n<p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> Wiegand Input-입력 받을 수 있는 Wiegand Format만 지원(All(15개), Multi(1개 이상))<br/> &gt; Wiegand : Input, Input Format</p>\n\n<p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> Wiegand Out- Card ID Format에 따라 입력된 Card 값 출력<br/> &gt; Wiegand : Output, Output Mode, Fail Code<br/> <img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/check.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> CSN Card Format/Wiegand Card Format : Wiegand Format</p></td><td><p>1. Wiegand 설정에 대해 추가/편집/저장이 가능하다.</p></td></tr><tr><td>9</td><td><p>1. Device&gt; Wiegand In/Out 장치의 Wiegand Format을 동일하게 설정<br/><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> Wiegand Input<br/>&gt; Wiegand : Input, Input Format<br/>2. Wieagnd Reader에 카드인증시도</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span></p>\n<div class='table-wrap'>\n<table class='confluenceTable'><tbody>\n<tr>\n<th class='confluenceTh'>Wiegand Format</th>\n</tr>\n<tr>\n<td class='confluenceTd'>26bit SIA Standard-H10301</td>\n</tr>\n<tr>\n<td class='confluenceTd'>HID 37 bit-H10302</td>\n</tr>\n<tr>\n<td class='confluenceTd'>HID 37 bit-H10304</td>\n</tr>\n<tr>\n<td class='confluenceTd'>HID Corporate 1000</td>\n</tr>\n<tr>\n<td class='confluenceTd'>HID Corporate 1000 48bit</td>\n</tr>\n<tr>\n<td class='confluenceTd'>추가한 Custom Format</td>\n</tr>\n</tbody></table>\n</div>\n\n\n<p>카드인증<br/>&gt; CSN/Wiegand 카드</p></td><td><p>1. Wiegand 포맷에 맞추어 Card 값이 출력된다.<br/>2. 미등록된 카드로 인증시도해 실패시 설정한 Wiegand 포맷에 맞추어 Card 값이 출력된다.<br/>&gt; VERIFY_FAIL_CARD</p></td></tr><tr><td>10</td><td><p>1. Device&gt; Wiegand Input 장치와 Output 장치의 Wiegand Format을 상이하게 설정<br/><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> Wiegand Input <br/>&gt; Wiegand : Input, Input Format<br/>2. Wieagnd Reader에 카드인증시도</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span></p>\n<div class='table-wrap'>\n<table class='confluenceTable'><tbody>\n<tr>\n<th class='confluenceTh'>Wiegand Format</th>\n</tr>\n<tr>\n<td class='confluenceTd'>26bit SIA Standard-H10301</td>\n</tr>\n<tr>\n<td class='confluenceTd'>HID 37 bit-H10302</td>\n</tr>\n<tr>\n<td class='confluenceTd'>HID 37 bit-H10304</td>\n</tr>\n<tr>\n<td class='confluenceTd'>HID Corporate 1000</td>\n</tr>\n<tr>\n<td class='confluenceTd'>HID Corporate 1000 48bit</td>\n</tr>\n<tr>\n<td class='confluenceTd'>추가한 Custom Format</td>\n</tr>\n</tbody></table>\n</div>\n\n\n<p>카드인증<br/>&gt; CSN/Wiegand 카드</p></td><td><p>1. Wiegand 포맷이 다른경우 입력되는 카드ID에 대해 무시된다.<br/>&gt; Mismatched Wiegand Format</p>\n<div class='table-wrap'>\n<table class='confluenceTable'><tbody>\n<tr>\n<th class='confluenceTh'>Parity Fial</th>\n<th class='confluenceTh'>Mismatched Wiegand  Format</th>\n</tr>\n<tr>\n<td class='confluenceTd'>Wiegand Legnth 동일한 상태에서 Parity만 역순으로 저장시</td>\n<td class='confluenceTd'>Wiegand Format 상이</td>\n</tr>\n</tbody></table>\n</div>\n</td></tr><tr><td>11</td><td><p>1. Device&gt; 장치추가<br/>2. Wiegand Out 및 Format 설정<br/>3. Enable Fail Code 체크<br/>4. Fail Code: 0x00 설정<br/>5. Wiegand Out 장치에 저장되지 않은 카드인증</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Wiegand Output Fail Code-Normal(Output Mode)<br/>&gt; Wiegand Input과 동일하게 설정<br/><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> Wiegand Out <br/> &gt; Wiegand : Output, Output Mode, Fail Code<br/> &gt; CSN Card Format/Wiegand Card Format : Wiegand Format</p>\n\n<p>카드인증<br/>&gt; CSN/Wiegand 카드</p></td><td><p>1. 설정된 Format에 맞게 카드ID가 0으로 채워져서 출력된다.</p></td></tr><tr><td>12</td><td><p>1. Device&gt; 장치추가<br/>2. Wiegand Out 및 Format 설정<br/>3. Enable Fail Code 체크<br/>4. Fail Code: 0xFF 설정<br/>5. Wiegand Out 장치에 저장되지 않은 카드인증</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Wiegand Output Fail Code-Normal(Output Mode)<br/>&gt; Wiegand Input 과 동일하게 설정<br/><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> Wiegand Out <br/> &gt; Wiegand : Output, Output Mode, Fail Code<br/> &gt; CSN Card Format/Wiegand Card Format : Wiegand Format</p>\n\n<p>카드인증<br/>&gt; CSN/Wiegand 카드</p></td><td><p>1. 설정된 Format에 맞게 카드ID가 1로 채워져서 출력된다.</p></td></tr><tr><td>13</td><td><p>1. Device&gt; 장치추가<br/>2. Wiegand Out 및 Format 설정<br/>3. Enable Fail Code 체크<br/>4. Fail Code 설정<br/>5. Bypass Mode: Enable<br/>6. Wiegand Out 장치에 저장되지 않은 카드인증</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Wiegand Out Output Mode-Bypass<br/>&gt; Wiegand Input 과 동일하게 설정<br/><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> Wiegand Out <br/> &gt; Wiegand : Output, Output Mode, Fail Code<br/> &gt; CSN Card Format/Wiegand Card Format : Wiegand Format</p>\n\n<p>Fail Code<br/>&gt; 0x00<br/>&gt; 0xFF</p>\n\n<p>카드인증<br/>&gt; CSN/Wiegand 카드</p></td><td><p>1. 카드ID가 Bypass되어 Format에 맞게 출력된다.</p></td></tr><tr><td>14</td><td><p>&lt;Master-Slave/DM20-Wiegand Reader 연결 <br/>or Master-Wiegand Reader 연결&gt;<br/>1. Master Reboot<br/>2. Master와 연결된 Slave/DM20 혹은 Wiegand Reader 동작확인</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span></p></td><td><p>1. Master가 Reboot 되더라도 Slave/DM20 와 Wiegand Reader는 Reboot되지 않아야 한다.</p></td></tr><tr><td>15</td><td><p>&lt;Master-Slave/DM20-Wiegand Reader 연결 <br/>or Master-Wiegand Reader 연결&gt;<br/>1. Wiegand Reader Reboot<br/>2. Wiegand Reader 와 연결된 Slave/DM20 혹은 Master 동작확인</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span></p></td><td><p>1. Wiegand Reader Reboot시 Master 혹은 Slave/DM20 은 Reboot되지 않아야 한다.</p></td></tr><tr><td>16</td><td><p>&lt;Master-Wiegand Reader 연결&gt; <br/>1. User&gt; Add User<br/>2. +Card&gt; Wiegand Reader 선택<br/>3. Wiegand Reader에 카드 입력</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Wiegand - Input/Output</p>\n\n<p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> Wiegand Input-입력 받을 수 있는 Wiegand Format만 지원(All(15개), Multi(1개 이상))<br/> &gt; Wiegand : Input, Input Format</p>\n\n<p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> Wiegand Out- Card ID Format에 따라 입력된 Card 값 출력<br/> &gt; Wiegand : Output, Output Mode, Fail Code<br/> <img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/check.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> CSN Card Format/Wiegand Card Format : Wiegand Format</p></td><td><p>1. 입력된 카드는 Wiegand Out으로 동작한다.<br/>2.  Wiegnad Format에 맞게 카드ID가 표시되어야 한다.</p></td></tr><tr><td>17</td><td><p>&lt;Master-Slave/DM20-Wiegand Reader 연결&gt;<br/>1. Wiegand Reader에 카드입력</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Wiegand - Input/Output</p>\n\n<p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> Wiegand Input-입력 받을 수 있는 Wiegand Format만 지원(All(15개), Multi(1개 이상))<br/> &gt; Wiegand : Input, Input Format</p>\n\n<p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> Wiegand Out- Card ID Format에 따라 입력된 Card 값 출력<br/> &gt; Wiegand : Output, Output Mode, Fail Code<br/> <img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/check.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> CSN Card Format/Wiegand Card Format : Wiegand Format</p></td><td><p>1. Master 장치에서는 Wiegand Reader에서 입력된 카드ID를 매칭해 일치하면 인증성공으로 동작한다.</p></td></tr><tr><td>18</td><td><p>&lt;Master-Slave/DM20-Wiegand Reader 연결&gt;<br/>1. Wiegand Reader에 Smart Card 입력<br/>&gt; 3rd Party Reader, Wiegand Output(Suprema Device)</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Smart Card - Mifare/DesFire<br/>&gt; Secure Credential<br/>&gt; AOC</p>\n\n<p>Wiegand Card Format<br/>&gt; Wiegand Input Format 과 동일하게 설정</p>\n\n<p>Smart Card Layout<br/>&gt; 발급된 Smart Card Layout</p>\n\n<p>Fail Code<br/>&gt; 0x00<br/>&gt; 0xFF</p>\n\n<p>카드인증<br/>&gt; CSN/Wiegand 카드</p></td><td><p>1. Bypass 여부에 따라 해당 장치의 인증모드 상관 없이 카드 ID가 전송되어야 한다.<br/>2. AOC/SCC로 인증시 In 장치에서는 인증실패로 동작한다.(CSN값으로 IN장치에 들어옴)<br/>3. Wiegand Reader(Out) 장치가 재부팅되면 안된다.<br/>4. SCC인 경우 24 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.<br/>: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴인 경우 24 Byte 카드 ID를 사용하여 출력함<br/>: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함<br/>&gt; AOC인 경우 32 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.</p>\n\n<p>※ 의도치않게 CardID(CSN)와 UserID가 동일한 경우 인증성공으로 동작될 수 있다.</p></td></tr><tr><td>19</td><td><p>&lt;Controller-Wiegand Reader 연결&gt;<br/>1. Wiegand Reader에 Smart Card 인증<br/>&gt; 3rd Praty, Wiegand Output(Suprema Device)</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Smart Card - iClass<br/>&gt; Secure Credential<br/>&gt; AOC</p>\n\n<p>Wiegand Card Format<br/>&gt; Wiegand Input Format 과 동일하게 설정</p>\n\n<p>Smart Card Layout<br/>&gt; 발급된 Smart Card Layout</p>\n\n<p>Fail Code<br/>&gt; 0x00<br/>&gt; 0xFF</p>\n\n<p>카드인증<br/>&gt; CSN/Wiegand 카드</p></td><td><p>1. 카드에 Write한 ID가 아닌 iClass 카드의 Secure ID(PAC Data)가 Wiegand로 출력된다.<br/>2. SCC인 경우 24 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.<br/>: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴인 경우 24 Byte 카드 ID를 사용하여 출력함<br/>: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함<br/>&gt; AOC인 경우 32 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.<br/>2. Wiegand Reader(Out) 장치가 재부팅되면 안된다.</p></td></tr><tr><td>20</td><td><p>&lt;Wiegand In/Out 구성된 상태 : Finger 인증&gt;<br/>1. 사용자에 지문/카드/PIN 등록 후 Wiegand In/Out 장치에 전송<br/>2. Wiegand Out 장치에 등록된 카드인증시도<br/>3. Wiegand Out 장치에 등록되지 않은 카드인증시도<br/>4. 등록된 사용자의 지문인증모드로 인증시도</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Wiegand Out Output Mode-Normal<br/>&gt; Wiegand Input 과 동일하게 설정<br/><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> Wiegand Out <br/> &gt; Wiegand : Output, Output Mode, Fail Code<br/> &gt; CSN Card Format/Wiegand Card Format : Wiegand Format</p></td><td><p>1. 인증된 사용자의 카드ID가 Wiegand Output 으로 출력되어야 함</p>\n\n<p>인증 실패 창의 카드 ID와 Event Log에 표시되는 카드 ID 상이함.</p>\n<ul class=\"alternate\" type=\"square\">\n<li>현 상태 유지</li>\n</ul>\n<ul>\n<li><a href=\"https://jira.suprema.co.kr/browse/BSIIDII-415\" title=\"[Wiegand Format 설정] 인증 실패 창의 카드 ID와 Event Log에 표시되는 카드 ID 상이\" class=\"issue-link\" data-issue-key=\"BSIIDII-415\">BSIIDII-415</a></li>\n</ul>\n</td></tr><tr><td>21</td><td><p>&lt;Wiegand In/Out 구성된 상태 : ID 인증&gt;<br/>1. 사용자에 지문/카드/PIN 등록 후 Wiegand In/Out 장치에 전송<br/>2. Wiegand Out 장치에 등록된 카드인증시도<br/>3. Wiegand Out 장치에 등록되지 않은 카드인증시도<br/>4. 등록된 사용자의 ID인증모드로 인증시도</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Wiegand Out Output Mode-Normal<br/>&gt; Wiegand Input 과 동일하게 설정<br/><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> Wiegand Out <br/> &gt; Wiegand : Output, Output Mode, Fail Code<br/> &gt; CSN Card Format/Wiegand Card Format : Wiegand Format</p></td><td><p>1. 인증된 사용자의 카드ID가 Wiegand Output 으로 출력되어야 함</p>\n\n<p>인증 실패 창의 카드 ID와 Event Log에 표시되는 카드 ID 상이함.</p>\n<ul class=\"alternate\" type=\"square\">\n<li>현 상태 유지</li>\n</ul>\n<ul>\n<li><a href=\"https://jira.suprema.co.kr/browse/BSIIDII-415\" title=\"[Wiegand Format 설정] 인증 실패 창의 카드 ID와 Event Log에 표시되는 카드 ID 상이\" class=\"issue-link\" data-issue-key=\"BSIIDII-415\">BSIIDII-415</a></li>\n</ul>\n</td></tr><tr><td>22</td><td><p>&lt;Wiegand In/Out 구성된 상태 : Face 인증&gt;<br/>1. 사용자에 얼굴/카드/PIN 등록 후 Wiegand In/Out 장치에 전송<br/>2. Wiegand Out 장치에 등록된 카드인증시도<br/>3. Wiegand Out 장치에 등록되지 않은 카드인증시도<br/>4. 등록된 사용자의 얼굴인증모드로 인증시도</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>Wiegand Out Output Mode-Normal<br/>&gt; Wiegand Input 과 동일하게 설정<br/><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/lightbulb_on.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> Wiegand Out <br/> &gt; Wiegand : Output, Output Mode, Fail Code<br/> &gt; CSN Card Format/Wiegand Card Format : Wiegand Format</p></td><td><p>1. 인증된 사용자의 카드ID가 Wiegand Output 으로 출력되어야 함</p>\n\n<p>인증 실패 창의 카드 ID와 Event Log에 표시되는 카드 ID 상이함.</p>\n<ul class=\"alternate\" type=\"square\">\n<li>현 상태 유지</li>\n</ul>\n<ul>\n<li><a href=\"https://jira.suprema.co.kr/browse/BSIIDII-415\" title=\"[Wiegand Format 설정] 인증 실패 창의 카드 ID와 Event Log에 표시되는 카드 ID 상이\" class=\"issue-link\" data-issue-key=\"BSIIDII-415\">BSIIDII-415</a></li>\n</ul>\n</td></tr><tr><td>23</td><td><p>&lt;Wiegand In/Out 구성&gt;<br/>1. Wiegand Out장치&gt; Width/Interval 설정<br/>2. Wiegand Out장치에 인증시도</p></td><td><p>Width/Interval<br/>&gt; 최소값 설정<br/>&gt; 최대값 설정<br/>&gt; 구성 <br/>: 3rd Party Wiegand Reader-Wiegand Input<br/>: Wiegand Input-DM20-3rd Party Wiegand Reader<br/>: Wiegand Output-Wiegand Input</p></td><td><p>1. In장치에 Wiegand 신호가 정상적으로 들어와 인증성공/실패 유무를 표시해주어야 한다.<br/>&gt; Wiegand In에 대한 동작확인</p></td></tr><tr><td>24</td><td><p>&lt;3rd Party Wiegand Reader(중국산) - Wiegand Input Device)<br/>1. Device(Wiegand Input)&gt; Advanced&gt;Wiegand &gt; Wiegand Pulse 설정</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span>- Wiegnad Input 기본 설정 유지</p>\n<div class=\"panel\" style=\"border-width: 1px;\"><div class=\"panelHeader\" style=\"border-bottom-width: 1px;\"><b>Wiegand Pulse</b></div><div class=\"panelContent\">\n<div class='table-wrap'>\n<table class='confluenceTable'><tbody>\n<tr>\n<th class='confluenceTh'>Width</th>\n<th class='confluenceTh'>Interval</th>\n</tr>\n<tr>\n<td class='confluenceTd'>Min(20)~Max(100)<br/>Default(40)</td>\n<td class='confluenceTd'>Min(200)~Max(20000)<br/>Default(10000)</td>\n</tr>\n</tbody></table>\n</div>\n\n<p>※ BS2 <br/>&gt; Pluse Interval : 2000(Default)</p>\n</div></div></td><td><p>1. Wiegand In장치에 Wiegand 신호가 정상적으로 들어와 인증성공/실패 유무를 표시해 주어야 한다.<br/>&gt; Wiegand Pulse Width의 값에 따라 적용 버전과 미적용 버전으로 동작 유무 확인 포함<br/>2. Scope를 이용해 설정한 값으로 동작되는지 확인할 수 있어야 한다.<br/>&gt; 필요시(Wiegand Input)</p>\n\n<p><img class=\"emoticon\" src=\"https://jira.suprema.co.kr/images/icons/emoticons/check.png\" height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"/> 측정 : RND 개발 검증 결과로 대체</p>\n\n<p>※ DM 20 - Wiegand Pulse Width 사양 변경 적용(10 ~ 1000) 버전 이용</p>\n\n<p>&gt; Wiegand Input에 대한 동작 확인</p></td></tr><tr><td>25</td><td><p>&lt;장치 2 - 장치 1 - 장치 3&gt;</p>\n<div class='table-wrap'>\n<table class='confluenceTable'><tbody>\n<tr>\n<td class='confluenceTd'><ul class=\"alternate\" type=\"square\">\n<li>장치 4</li>\n</ul>\n</td>\n</tr>\n</tbody></table>\n</div>\n\n\n<p>1. Device&gt; 장치추가<br/>2. Wiegand In / Out 및 Format 설정<br/>3. Wiegand Bypass: Enable, Disable 설정<br/>4. One Device Reader에 인증 시도<br/>5. Separated Device Reader에 인증 시도</p></td><td><p><span class=\"error\">&#91;BioStar&#93;</span><br/>장치 1<br/>&gt; Wiegand Input / Output<br/>장치 2(One Device Mode)<br/>&gt; Wiegand Output<br/>장치 3(Separated Device Mode)<br/>&gt; Wiegand Output<br/>장치 4<br/>&gt; Wiegand Input</p></td><td><p>1. In / Out 장치에서 Wiegand 신호가 정상적으로 들어 오고 이후 다시 Wiegand 신호가 정상적으로 출력 되어야 한다.<br/>&gt; Wiegand Reader (One / Separated Device Mode) 동작 확인</p>\n\n<p>: <a href=\"https://jira.suprema.co.kr/browse/BSIIDII-845\" title=\"Master장치에 Wiegand 입출력모드로 설정, Wiegand장치를 추가 후 해당 Wiegand장치에 카드 Read시 Master장치에서 Out으로 Wiegand 출력이 나가지 않음(사양확인 필요)\" class=\"issue-link\" data-issue-key=\"BSIIDII-845\"><del>BSIIDII-845</del></a> 실제 태스트 이력 참조<br/>: Wiegand In/Out 시 One Device Reader로 구성을 하면 무한으로 인증 성공/실패가 발생함(루프..)</p></td></tr></table>",
-    "customfield_10248": null,
-    "customfield_10006": [
-      "COMMONR-52"
-    ],
-    "customfield_10007": [],
-    "customfield_10008": {
-      "issueId": 23808,
-      "statuses": [
-        {
-          "statusResults": [
-            {
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 34709,
-              "latestFinalId": 34709
-            }
-          ]
-        },
-        {
-          "group": "V1.0.0_180329",
-          "statusResults": [
-            {
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 10386,
-              "latestFinalId": 10386
-            }
-          ]
-        },
-        {
-          "group": "V1.3.0_190805_Interaction 5차",
-          "statusResults": [
-            {
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 15259,
-              "latestFinalId": 15259
-            }
-          ]
-        },
-        {
-          "group": "V1.8.0_190806_Interaction 6차",
-          "statusResults": [
-            {
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 15380,
-              "latestFinalId": 15380
-            }
-          ]
-        },
-        {
-          "group": "V1.7.1_181204(Hotfix)",
-          "statusResults": [
-            {
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 12725,
-              "latestFinalId": 12725
-            }
-          ]
-        },
-        {
-          "group": "V1.1.0_181210_Interaction 6차",
-          "statusResults": [
-            {
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 12836,
-              "latestFinalId": 12836
-            }
-          ]
-        },
-        {
-          "group": "V1.0.0_180322",
-          "statusResults": [
-            {
-              "latest": 3,
-              "latestFinal": 3,
-              "latestId": 10206,
-              "latestFinalId": 10206
-            }
-          ]
-        },
-        {
-          "group": "V1.7.0_190806_Interaction 7차",
-          "statusResults": [
-            {
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 15126,
-              "latestFinalId": 15126
-            }
-          ]
-        },
-        {
-          "group": "V1.2.0_181119_Interaction 5차",
-          "statusResults": [
-            {
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 12972,
-              "latestFinalId": 12972
-            }
-          ]
-        },
-        {
-          "group": "V1.2.0_190806_Interaction 5차",
-          "statusResults": [
-            {
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 15500,
-              "latestFinalId": 15500
-            }
-          ]
-        },
-        {
-          "group": "V1.3.0_20200601_Interaction 12차",
-          "statusResults": [
-            {
-              "latest": 0,
-              "latestFinal": 0,
-              "latestId": 17232,
-              "latestFinalId": 17232
-            }
-          ]
-        }
-      ]
-    },
-    "customfield_12309": null,
-    "customfield_10802": null,
-    "customfield_10803": null,
-    "customfield_10805": null,
-    "summary": "Wiegand - In / Out 동시 사용 지원",
-    "customfield_10240": null,
-    "customfield_10000": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
-      "value": "Manual",
-      "id": "10000"
-    },
-    "customfield_10243": null,
-    "customfield_10001": null,
-    "customfield_10244": null,
-    "customfield_10002": null,
-    "customfield_10003": null,
-    "customfield_10246": null,
-    "customfield_10004": {
-      "steps": [
-        {
-          "id": 4793,
-          "index": 1,
-          "step": "1. Setting> Card Format> Wiegand> Add Wiegand\n2. ID Field 영역 설정확인",
-          "data": "[BioStar]\n||Predefined Wiegand Format||\n|26bit SIA Standard-H10301|\n|HID 37 bit-H10302|\n|HID 37 bit-H10304|\n|HID Corporate 1000| \n|HID Corporate 1000 48bit|",
-          "result": "1.ID 영역을 4개까지 설정할 수 있다.\n(on) HID Coporate 1000 설정 참조\n||ID Field||\n|Facility Code Field|\n|ID Field|\n> Facility Code Field 추가 시 ID Field는 3개 추가 가능 \n2. ID 영역은 256Bit를 설정할 수 있다.\n> ID Bit를 256을 초과한 값에 대해 설정 후 추가되는지 확인\n3. ID 영역간에는 중복될 수 없다.\n> ID 영역간 중복되게 설정 후 추가되는지 확인",
-          "attachments": []
-        },
-        {
-          "id": 4794,
-          "index": 2,
-          "step": "1. Setting> Card Format> Wiegand> Add Wiegand\n2. Parity Bits 영역 설정확인",
-          "data": "[BioStar]\n||Predefined Wiegand Format||\n|26bit SIA Standard-H10301|\n|HID 37 bit-H10302|\n|HID 37 bit-H10304|\n|HID Corporate 1000| \n|HID Corporate 1000 48bit|",
-          "result": "1. Parity 영역을 4개까지 설정할 수 있다.\n2. Parity 영역은 서로 중복될 수 있다.\n\n(on) HID Coporate 1000 설정 참조\n||Parity Bits||\n|Even|\n|Odd|",
-          "attachments": []
-        },
-        {
-          "id": 4795,
-          "index": 3,
-          "step": "1. Setting> Card Format> Wiegand\n2. 수정 가능한 리스트 선택\n3. 각 항목들에 대해 설정 후 저장\n> Name, Description, Total Bits, Facility Code Field, ID Field, Parity Bits",
-          "data": "[BioStar]\n||Predefined Wiegand Format ID||Custom Wiegand Format ID||\n|1 ~ 5|6 ~ 15|\n|수정 불가능|수정 가능|\n\n> 각 항목들에 대해 Default 포맷 참조해 설정",
-          "result": "1. 설정한 Custom Format이 리스트에 추가된다.\n> 6 ~ 15 중 추가한 Custom이 표시 된다.\nName, Total Bits, Number of Fields, Number of Issued Cards",
-          "attachments": []
-        },
-        {
-          "id": 4796,
-          "index": 4,
-          "step": "1. Setting> Card Format> Wiegand\n2. 생성된 Wiegand Custom Format 선택\n3. 설정값 변경\n> Name, Description, Total Bits, Facility Code Field, ID Field, Parity Bits",
-          "data": "[BioStar]\n||Predefined Wiegand Format ID||Custom Wiegand Format ID||\n|1 ~ 5|6 ~ 15|\n|수정 불가능|수정 가능|",
-          "result": "1. 변경한 값이 저장된다.",
-          "attachments": []
-        },
-        {
-          "id": 4797,
-          "index": 5,
-          "step": "1. Device> Wiegand 입력/출력에 대한 Wiegand Format 설정\n",
-          "data": "Wiegand Format\n> Default(BioStar V2.3 추가)\n> 26bit SIA Standard-H10301(Default)\n> HID 37 bit-H10302\n> HID 37 bit-H10304\n> HID Corporate 1000 \n> HID Corporate 1000 48bit\n",
-          "result": "1. 선택한 값이 설정되어야 한다.\n2. Slave인 경우 Wiegand Input으로 강제 설정된다. \n\n(on) Master-Slave-3rd Party Reader\n > Master : Wiegand Input 설정\n > Slave : Wiegand Input 강제 설정",
-          "attachments": []
-        },
-        {
-          "id": 4816,
-          "index": 6,
-          "step": "1. Device> Advanced> Wiegand> Wiegand Input/Output 설정\n2. 장치 별로 Wiegand Port에 따른 Wiegand Input/Output 옵션 설정",
-          "data": "[BioStar]\nWiegand - Input/Output\n> Input (Default)\n> Output",
-          "result": "1. Wiegand In으로 동작시킬 것인지, Wiegand Out으로 동작시킬 것인지 설정할 수 있다.\n> Input\n> Output\n> Both(Input/Output)",
-          "attachments": []
-        },
-        {
-          "id": 4799,
-          "index": 7,
-          "step": "1. Device> Advanced>Wiegand> Wiegand Pulse 설정\n\n(on) Wiegand Output - Pulse Width, Interval",
-          "data": "[BioStar]\n{panel:title=Wiegand Pulse}\n||Width||Interval||\n|Min(20)~Max(100)\nDefault(40)|Min(200)~Max(20000)\nDefault(10000)|\n※ BS2 \n> Pluse Interval : 2000(Default)\n{panel}",
-          "result": "1. 선택한 값이 설정되어야 한다.\n2. Scope를 이용해 설정한 값으로 동작되는지 확인할 수 있어야 한다.\n\n(/) 측정 : RND 개발 검증 결과로 대체\n\n※ DM 20 - Wiegand Pulse Width/Pulse Interval Min/Max로 기본 설정\n> 기본 설정값 (추후 확인 예정)\n\n> Wiegand Out에 대한 동작확인은 Scope로 확인",
-          "attachments": []
-        },
-        {
-          "id": 4800,
-          "index": 8,
-          "step": "1. Device> Device List> Device 선택(Master)> Advanced> Wiegand\n2. 각 항목에 대해 설정",
-          "data": "[BioStar]\nWiegand - Input/Output\n\n(on) Wiegand Input-입력 받을 수 있는 Wiegand Format만 지원(All(15개), Multi(1개 이상))\n > Wiegand : Input, Input Format\n\n(on) Wiegand Out- Card ID Format에 따라 입력된 Card 값 출력\n > Wiegand : Output, Output Mode, Fail Code\n (/) CSN Card Format/Wiegand Card Format : Wiegand Format",
-          "result": "1. Wiegand 설정에 대해 추가/편집/저장이 가능하다.",
-          "attachments": []
-        },
-        {
-          "id": 4801,
-          "index": 9,
-          "step": "1. Device> Wiegand In/Out 장치의 Wiegand Format을 동일하게 설정\n(on) Wiegand Input\n> Wiegand : Input, Input Format\n2. Wieagnd Reader에 카드인증시도",
-          "data": "[BioStar]\n||Wiegand Format||\n|26bit SIA Standard-H10301|\n|HID 37 bit-H10302|\n|HID 37 bit-H10304|\n|HID Corporate 1000| \n|HID Corporate 1000 48bit|\n|추가한 Custom Format|\n\n카드인증\n> CSN/Wiegand 카드",
-          "result": "1. Wiegand 포맷에 맞추어 Card 값이 출력된다.\n2. 미등록된 카드로 인증시도해 실패시 설정한 Wiegand 포맷에 맞추어 Card 값이 출력된다.\n> VERIFY_FAIL_CARD\n",
-          "attachments": []
-        },
-        {
-          "id": 4802,
-          "index": 10,
-          "step": "1. Device> Wiegand Input 장치와 Output 장치의 Wiegand Format을 상이하게 설정\n(on) Wiegand Input \n> Wiegand : Input, Input Format\n2. Wieagnd Reader에 카드인증시도",
-          "data": "[BioStar]\n||Wiegand Format||\n|26bit SIA Standard-H10301|\n|HID 37 bit-H10302|\n|HID 37 bit-H10304|\n|HID Corporate 1000| \n|HID Corporate 1000 48bit|\n|추가한 Custom Format|\n\n카드인증\n> CSN/Wiegand 카드",
-          "result": "1. Wiegand 포맷이 다른경우 입력되는 카드ID에 대해 무시된다.\n> Mismatched Wiegand Format\n||Parity Fial||Mismatched Wiegand  Format||\n|Wiegand Legnth 동일한 상태에서 Parity만 역순으로 저장시|Wiegand Format 상이|",
-          "attachments": []
-        },
-        {
-          "id": 4803,
-          "index": 11,
-          "step": "1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Enable Fail Code 체크\n4. Fail Code: 0x00 설정\n5. Wiegand Out 장치에 저장되지 않은 카드인증",
-          "data": "[BioStar]\nWiegand Output Fail Code-Normal(Output Mode)\n> Wiegand Input과 동일하게 설정\n(on) Wiegand Out \n > Wiegand : Output, Output Mode, Fail Code\n > CSN Card Format/Wiegand Card Format : Wiegand Format\n\n카드인증\n> CSN/Wiegand 카드",
-          "result": "1. 설정된 Format에 맞게 카드ID가 0으로 채워져서 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 4804,
-          "index": 12,
-          "step": "1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Enable Fail Code 체크\n4. Fail Code: 0xFF 설정\n5. Wiegand Out 장치에 저장되지 않은 카드인증",
-          "data": "[BioStar]\nWiegand Output Fail Code-Normal(Output Mode)\n> Wiegand Input 과 동일하게 설정\n(on) Wiegand Out \n > Wiegand : Output, Output Mode, Fail Code\n > CSN Card Format/Wiegand Card Format : Wiegand Format\n\n카드인증\n> CSN/Wiegand 카드",
-          "result": "1. 설정된 Format에 맞게 카드ID가 1로 채워져서 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 4805,
-          "index": 13,
-          "step": "1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Enable Fail Code 체크\n4. Fail Code 설정\n5. Bypass Mode: Enable\n6. Wiegand Out 장치에 저장되지 않은 카드인증",
-          "data": "[BioStar]\nWiegand Out Output Mode-Bypass\n> Wiegand Input 과 동일하게 설정\n(on) Wiegand Out \n > Wiegand : Output, Output Mode, Fail Code\n > CSN Card Format/Wiegand Card Format : Wiegand Format\n\nFail Code\n> 0x00\n> 0xFF\n\n카드인증\n> CSN/Wiegand 카드",
-          "result": "1. 카드ID가 Bypass되어 Format에 맞게 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 4806,
-          "index": 14,
-          "step": "<Master-Slave/DM20-Wiegand Reader 연결 \nor Master-Wiegand Reader 연결>\n1. Master Reboot\n2. Master와 연결된 Slave/DM20 혹은 Wiegand Reader 동작확인",
-          "data": "[BioStar]",
-          "result": "1. Master가 Reboot 되더라도 Slave/DM20 와 Wiegand Reader는 Reboot되지 않아야 한다.",
-          "attachments": []
-        },
-        {
-          "id": 4807,
-          "index": 15,
-          "step": "<Master-Slave/DM20-Wiegand Reader 연결 \nor Master-Wiegand Reader 연결>\n1. Wiegand Reader Reboot\n2. Wiegand Reader 와 연결된 Slave/DM20 혹은 Master 동작확인",
-          "data": "[BioStar]",
-          "result": "1. Wiegand Reader Reboot시 Master 혹은 Slave/DM20 은 Reboot되지 않아야 한다.",
-          "attachments": []
-        },
-        {
-          "id": 4808,
-          "index": 16,
-          "step": "<Master-Wiegand Reader 연결> \n1. User> Add User\n2. +Card> Wiegand Reader 선택\n3. Wiegand Reader에 카드 입력",
-          "data": "[BioStar]\nWiegand - Input/Output\n\n(on) Wiegand Input-입력 받을 수 있는 Wiegand Format만 지원(All(15개), Multi(1개 이상))\n > Wiegand : Input, Input Format\n\n(on) Wiegand Out- Card ID Format에 따라 입력된 Card 값 출력\n > Wiegand : Output, Output Mode, Fail Code\n (/) CSN Card Format/Wiegand Card Format : Wiegand Format",
-          "result": "1. 입력된 카드는 Wiegand Out으로 동작한다.\n2.  Wiegnad Format에 맞게 카드ID가 표시되어야 한다.",
-          "attachments": []
-        },
-        {
-          "id": 4809,
-          "index": 17,
-          "step": "<Master-Slave/DM20-Wiegand Reader 연결>\n1. Wiegand Reader에 카드입력",
-          "data": "[BioStar]\nWiegand - Input/Output\n\n(on) Wiegand Input-입력 받을 수 있는 Wiegand Format만 지원(All(15개), Multi(1개 이상))\n > Wiegand : Input, Input Format\n\n(on) Wiegand Out- Card ID Format에 따라 입력된 Card 값 출력\n > Wiegand : Output, Output Mode, Fail Code\n (/) CSN Card Format/Wiegand Card Format : Wiegand Format",
-          "result": "1. Master 장치에서는 Wiegand Reader에서 입력된 카드ID를 매칭해 일치하면 인증성공으로 동작한다.",
-          "attachments": []
-        },
-        {
-          "id": 4810,
-          "index": 18,
-          "step": "<Master-Slave/DM20-Wiegand Reader 연결>\n1. Wiegand Reader에 Smart Card 입력\n> 3rd Party Reader, Wiegand Output(Suprema Device)",
-          "data": "[BioStar]\nSmart Card - Mifare/DesFire\n> Secure Credential\n> AOC\n\nWiegand Card Format\n> Wiegand Input Format 과 동일하게 설정\n\nSmart Card Layout\n> 발급된 Smart Card Layout\n\nFail Code\n> 0x00\n> 0xFF\n\n카드인증\n> CSN/Wiegand 카드",
-          "result": "1. Bypass 여부에 따라 해당 장치의 인증모드 상관 없이 카드 ID가 전송되어야 한다.\n2. AOC/SCC로 인증시 In 장치에서는 인증실패로 동작한다.(CSN값으로 IN장치에 들어옴)\n3. Wiegand Reader(Out) 장치가 재부팅되면 안된다.\n4. SCC인 경우 24 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴인 경우 24 Byte 카드 ID를 사용하여 출력함\n: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함\n> AOC인 경우 32 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n\n※ 의도치않게 CardID(CSN)와 UserID가 동일한 경우 인증성공으로 동작될 수 있다.\n",
-          "attachments": []
-        },
-        {
-          "id": 4811,
-          "index": 19,
-          "step": "<Controller-Wiegand Reader 연결>\n1. Wiegand Reader에 Smart Card 인증\n> 3rd Praty, Wiegand Output(Suprema Device)",
-          "data": "[BioStar]\nSmart Card - iClass\n> Secure Credential\n> AOC\n\nWiegand Card Format\n> Wiegand Input Format 과 동일하게 설정\n\nSmart Card Layout\n> 발급된 Smart Card Layout\n\nFail Code\n> 0x00\n> 0xFF\n\n카드인증\n> CSN/Wiegand 카드\n",
-          "result": "1. 카드에 Write한 ID가 아닌 iClass 카드의 Secure ID(PAC Data)가 Wiegand로 출력된다.\n2. SCC인 경우 24 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴인 경우 24 Byte 카드 ID를 사용하여 출력함\n: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함\n> AOC인 경우 32 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n2. Wiegand Reader(Out) 장치가 재부팅되면 안된다.",
-          "attachments": []
-        },
-        {
-          "id": 4812,
-          "index": 20,
-          "step": "<Wiegand In/Out 구성된 상태 : Finger 인증>\n1. 사용자에 지문/카드/PIN 등록 후 Wiegand In/Out 장치에 전송\n2. Wiegand Out 장치에 등록된 카드인증시도\n3. Wiegand Out 장치에 등록되지 않은 카드인증시도\n4. 등록된 사용자의 지문인증모드로 인증시도",
-          "data": "[BioStar]\nWiegand Out Output Mode-Normal\n> Wiegand Input 과 동일하게 설정\n(on) Wiegand Out \n > Wiegand : Output, Output Mode, Fail Code\n > CSN Card Format/Wiegand Card Format : Wiegand Format",
-          "result": "1. 인증된 사용자의 카드ID가 Wiegand Output 으로 출력되어야 함\n\n인증 실패 창의 카드 ID와 Event Log에 표시되는 카드 ID 상이함.\n- 현 상태 유지\n* BSIIDII-415",
-          "attachments": []
-        },
-        {
-          "id": 4813,
-          "index": 21,
-          "step": "<Wiegand In/Out 구성된 상태 : ID 인증>\n1. 사용자에 지문/카드/PIN 등록 후 Wiegand In/Out 장치에 전송\n2. Wiegand Out 장치에 등록된 카드인증시도\n3. Wiegand Out 장치에 등록되지 않은 카드인증시도\n4. 등록된 사용자의 ID인증모드로 인증시도",
-          "data": "[BioStar]\nWiegand Out Output Mode-Normal\n> Wiegand Input 과 동일하게 설정\n(on) Wiegand Out \n > Wiegand : Output, Output Mode, Fail Code\n > CSN Card Format/Wiegand Card Format : Wiegand Format",
-          "result": "1. 인증된 사용자의 카드ID가 Wiegand Output 으로 출력되어야 함\n\n인증 실패 창의 카드 ID와 Event Log에 표시되는 카드 ID 상이함.\n- 현 상태 유지\n* BSIIDII-415",
-          "attachments": []
-        },
-        {
-          "id": 4814,
-          "index": 22,
-          "step": "<Wiegand In/Out 구성된 상태 : Face 인증>\n1. 사용자에 얼굴/카드/PIN 등록 후 Wiegand In/Out 장치에 전송\n2. Wiegand Out 장치에 등록된 카드인증시도\n3. Wiegand Out 장치에 등록되지 않은 카드인증시도\n4. 등록된 사용자의 얼굴인증모드로 인증시도",
-          "data": "[BioStar]\nWiegand Out Output Mode-Normal\n> Wiegand Input 과 동일하게 설정\n(on) Wiegand Out \n > Wiegand : Output, Output Mode, Fail Code\n > CSN Card Format/Wiegand Card Format : Wiegand Format",
-          "result": "1. 인증된 사용자의 카드ID가 Wiegand Output 으로 출력되어야 함\n\n인증 실패 창의 카드 ID와 Event Log에 표시되는 카드 ID 상이함.\n- 현 상태 유지\n* BSIIDII-415",
-          "attachments": []
-        },
-        {
-          "id": 4815,
-          "index": 23,
-          "step": "<Wiegand In/Out 구성>\n1. Wiegand Out장치> Width/Interval 설정\n2. Wiegand Out장치에 인증시도",
-          "data": "Width/Interval\n> 최소값 설정\n> 최대값 설정\n> 구성 \n: 3rd Party Wiegand Reader-Wiegand Input\n: Wiegand Input-DM20-3rd Party Wiegand Reader\n: Wiegand Output-Wiegand Input",
-          "result": "1. In장치에 Wiegand 신호가 정상적으로 들어와 인증성공/실패 유무를 표시해주어야 한다.\n> Wiegand In에 대한 동작확인",
-          "attachments": []
-        },
-        {
-          "id": 9452,
-          "index": 24,
-          "step": "<3rd Party Wiegand Reader(중국산) - Wiegand Input Device)\n1. Device(Wiegand Input)> Advanced>Wiegand > Wiegand Pulse 설정",
-          "data": "[BioStar]- Wiegnad Input 기본 설정 유지\n{panel:title=Wiegand Pulse}\n||Width||Interval||\n|Min(20)~Max(100)\nDefault(40)|Min(200)~Max(20000)\nDefault(10000)|\n※ BS2 \n> Pluse Interval : 2000(Default)\n{panel}",
-          "result": "1. Wiegand In장치에 Wiegand 신호가 정상적으로 들어와 인증성공/실패 유무를 표시해 주어야 한다.\n> Wiegand Pulse Width의 값에 따라 적용 버전과 미적용 버전으로 동작 유무 확인 포함\n2. Scope를 이용해 설정한 값으로 동작되는지 확인할 수 있어야 한다.\n> 필요시(Wiegand Input)\n\n(/) 측정 : RND 개발 검증 결과로 대체\n\n※ DM 20 - Wiegand Pulse Width 사양 변경 적용(10 ~ 1000) 버전 이용\n\n> Wiegand Input에 대한 동작 확인",
-          "attachments": []
-        },
-        {
-          "id": 4818,
-          "index": 25,
-          "step": "<장치 2 - 장치 1 - 장치 3>\n            |- 장치 4\n\n1. Device> 장치추가\n2. Wiegand In / Out 및 Format 설정\n3. Wiegand Bypass: Enable, Disable 설정\n4. One Device Reader에 인증 시도\n5. Separated Device Reader에 인증 시도",
-          "data": "[BioStar]\n장치 1\n> Wiegand Input / Output\n장치 2(One Device Mode)\n> Wiegand Output\n장치 3(Separated Device Mode)\n> Wiegand Output\n장치 4\n> Wiegand Input\n",
-          "result": "1. In / Out 장치에서 Wiegand 신호가 정상적으로 들어 오고 이후 다시 Wiegand 신호가 정상적으로 출력 되어야 한다.\n> Wiegand Reader (One / Separated Device Mode) 동작 확인\n\n: BSIIDII-845 실제 태스트 이력 참조\n: Wiegand In/Out 시 One Device Reader로 구성을 하면 무한으로 인증 성공/실패가 발생함(루프..)",
-          "attachments": []
-        }
-      ]
-    },
-    "customfield_10236": null,
-    "customfield_10237": null,
-    "environment": null,
-    "customfield_10238": null,
-    "customfield_10239": null,
-    "duedate": null,
-    "comment": {
-      "comments": [],
-      "maxResults": 0,
-      "total": 0,
-      "startAt": 0
-    },
-    "customfield_10230": null,
-    "fixVersions": [],
-    "customfield_10231": null,
-    "customfield_10232": null,
-    "customfield_10233": null,
-    "customfield_12410": null,
-    "customfield_10234": null,
-    "customfield_10235": null,
-    "customfield_10225": null,
-    "customfield_12404": null,
-    "customfield_10226": null,
-    "customfield_12403": null,
-    "customfield_10227": null,
-    "customfield_12406": null,
-    "customfield_10228": null,
-    "customfield_10229": null,
-    "customfield_10900": null,
-    "customfield_12408": null,
-    "customfield_10901": null,
-    "customfield_10902": null,
-    "customfield_10903": null,
-    "customfield_12409": null,
-    "customfield_10904": null,
-    "customfield_10905": null,
-    "customfield_10220": null,
-    "priority": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/priority/3",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/minor.svg",
-      "name": "Minor (C)",
-      "id": "3"
-    },
-    "customfield_10221": null,
-    "customfield_12400": null,
-    "customfield_12402": null,
-    "customfield_10224": null,
-    "customfield_10214": null,
-    "customfield_10217": null,
-    "customfield_10218": null,
-    "timeestimate": null,
-    "versions": [],
-    "customfield_10219": null,
-    "status": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
-      "description": "",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
-      "name": "할 일",
-      "id": "10000",
-      "statusCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
-        "id": 2,
-        "key": "new",
-        "colorName": "blue-gray",
-        "name": "할 일"
-      }
-    },
-    "customfield_12510": null,
-    "customfield_10213": null,
-    "customfield_12511": null,
-    "customfield_10203": null,
-    "customfield_10204": null,
-    "customfield_12502": null,
-    "customfield_10205": null,
-    "customfield_10206": null,
-    "customfield_10207": null,
-    "aggregatetimeestimate": null,
-    "customfield_10208": null,
-    "customfield_10209": null,
-    "customfield_12509": null,
-    "customfield_12508": null,
-    "creator": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
-      "name": "hmkang",
-      "key": "hmkang",
-      "emailAddress": "hmkang@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
-      },
-      "displayName": "강현민",
-      "active": true,
-      "timeZone": "Asia/Seoul"
-    },
-    "aggregateprogress": {
-      "progress": 0,
-      "total": 0
-    },
-    "customfield_10320": null,
-    "customfield_10321": null,
-    "customfield_12501": null,
-    "customfield_10202": null,
-    "customfield_12500": null,
-    "customfield_10313": "1|hzsgdz:",
-    "customfield_10316": null,
-    "customfield_10317": null,
-    "timespent": null,
-    "aggregatetimespent": null,
-    "customfield_10310": null,
-    "customfield_10302": null,
-    "customfield_10303": null,
-    "customfield_12601": null,
-    "customfield_10304": null,
-    "customfield_10305": null,
-    "customfield_10308": null,
-    "workratio": -1,
-    "created": "2017-12-11T13:05:10.000+0900",
-    "customfield_10533": null,
-    "customfield_10534": null,
-    "customfield_11501": null,
-    "customfield_11503": null,
-    "customfield_13001": null,
-    "customfield_13000": null,
-    "customfield_10530": null,
-    "customfield_10531": null,
-    "customfield_10532": null,
-    "customfield_10401": null,
-    "customfield_10522": null,
-    "customfield_10402": null,
-    "customfield_12700": null,
-    "customfield_10524": null,
-    "customfield_10525": null,
-    "customfield_12702": null,
-    "attachment": [
-      {
-        "self": "https://jira.suprema.co.kr/rest/api/2/attachment/24508",
-        "id": "24508",
-        "filename": "BioStar 2 카드 포맷 및 위겐드 지원_Draft_v0.92.pdf",
-        "author": {
-          "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
-          "name": "hmkang",
-          "key": "hmkang",
-          "emailAddress": "hmkang@suprema.co.kr",
-          "avatarUrls": {
-            "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
-            "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
-            "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
-            "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
-          },
-          "displayName": "강현민",
-          "active": true,
-          "timeZone": "Asia/Seoul"
-        },
-        "created": "2017-12-11T13:05:11.000+0900",
-        "size": 385659,
-        "mimeType": "application/pdf",
-        "content": "https://jira.suprema.co.kr/secure/attachment/24508/BioStar+2+%EC%B9%B4%EB%93%9C+%ED%8F%AC%EB%A7%B7+%EB%B0%8F+%EC%9C%84%EA%B2%90%EB%93%9C+%EC%A7%80%EC%9B%90_Draft_v0.92.pdf"
-      },
-      {
-        "self": "https://jira.suprema.co.kr/rest/api/2/attachment/24509",
-        "id": "24509",
-        "filename": "Master-DM20-Wiegand Reader0,1.png",
-        "author": {
-          "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
-          "name": "hmkang",
-          "key": "hmkang",
-          "emailAddress": "hmkang@suprema.co.kr",
-          "avatarUrls": {
-            "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
-            "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
-            "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
-            "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
-          },
-          "displayName": "강현민",
-          "active": true,
-          "timeZone": "Asia/Seoul"
-        },
-        "created": "2017-12-11T13:05:11.000+0900",
-        "size": 105560,
-        "mimeType": "image/png",
-        "content": "https://jira.suprema.co.kr/secure/attachment/24509/Master-DM20-Wiegand+Reader0%2C1.png",
-        "thumbnail": "https://jira.suprema.co.kr/secure/thumbnail/24509/_thumb_24509.png"
-      },
-      {
-        "self": "https://jira.suprema.co.kr/rest/api/2/attachment/24510",
-        "id": "24510",
-        "filename": "Master-Slave-Wiegand Reader0.png",
-        "author": {
-          "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
-          "name": "hmkang",
-          "key": "hmkang",
-          "emailAddress": "hmkang@suprema.co.kr",
-          "avatarUrls": {
-            "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
-            "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
-            "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
-            "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
-          },
-          "displayName": "강현민",
-          "active": true,
-          "timeZone": "Asia/Seoul"
-        },
-        "created": "2017-12-11T13:05:11.000+0900",
-        "size": 93695,
-        "mimeType": "image/png",
-        "content": "https://jira.suprema.co.kr/secure/attachment/24510/Master-Slave-Wiegand+Reader0.png",
-        "thumbnail": "https://jira.suprema.co.kr/secure/thumbnail/24510/_thumb_24510.png"
-      },
-      {
-        "self": "https://jira.suprema.co.kr/rest/api/2/attachment/24511",
-        "id": "24511",
-        "filename": "Master-Wiegand Reader0.png",
-        "author": {
-          "self": "https://jira.suprema.co.kr/rest/api/2/user?username=hmkang",
-          "name": "hmkang",
-          "key": "hmkang",
-          "emailAddress": "hmkang@suprema.co.kr",
-          "avatarUrls": {
-            "48x48": "https://jira.suprema.co.kr/secure/useravatar?ownerId=hmkang&avatarId=12501",
-            "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&ownerId=hmkang&avatarId=12501",
-            "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&ownerId=hmkang&avatarId=12501",
-            "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&ownerId=hmkang&avatarId=12501"
-          },
-          "displayName": "강현민",
-          "active": true,
-          "timeZone": "Asia/Seoul"
-        },
-        "created": "2017-12-11T13:05:11.000+0900",
-        "size": 26653,
-        "mimeType": "image/png",
-        "content": "https://jira.suprema.co.kr/secure/attachment/24511/Master-Wiegand+Reader0.png",
-        "thumbnail": "https://jira.suprema.co.kr/secure/thumbnail/24511/_thumb_24511.png"
-      }
-    ],
-    "customfield_10526": null,
-    "customfield_12704": null,
-    "customfield_10528": null,
-    "customfield_12706": null,
-    "customfield_10520": null,
-    "customfield_10521": null,
-    "customfield_10400": null,
-    "customfield_10511": null,
-    "customfield_10512": null,
-    "customfield_11600": null,
-    "customfield_10513": null,
-    "customfield_10514": null,
-    "customfield_10515": null,
-    "customfield_10516": null,
-    "customfield_10517": null,
-    "customfield_10518": null,
-    "customfield_10519": null
+[
+  {
+    "id": "COMMONR-217_step_1",
+    "document": "Test Step: 1. Setting> Card Format> Wiegand> Add Wiegand\n2. ID Field 영역 설정확인\nTest Data: [BioStar]\n||Predefined Wiegand Format||\n|26bit SIA Standard-H10301|\n|HID 37 bit-H10302|\n|HID 37 bit-H10304|\n|HID Corporate 1000| \n|HID Corporate 1000 48bit|\nExpected Result: 1.ID 영역을 4개까지 설정할 수 있다.\n(on) HID Coporate 1000 설정 참조\n||ID Field||\n|Facility Code Field|\n|ID Field|\n> Facility Code Field 추가 시 ID Field는 3개 추가 가능 \n2. ID 영역은 256Bit를 설정할 수 있다.\n> ID Bit를 256을 초과한 값에 대해 설정 후 추가되는지 확인\n3. ID 영역간에는 중복될 수 없다.\n> ID 영역간 중복되게 설정 후 추가되는지 확인",
+    "metadata": {
+      "issue_key": "COMMONR-217",
+      "step_index": "1",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-217_step_2",
+    "document": "Test Step: 1. Setting> Card Format> Wiegand> Add Wiegand\n2. Parity Bits 영역 설정확인\nTest Data: [BioStar]\n||Predefined Wiegand Format||\n|26bit SIA Standard-H10301|\n|HID 37 bit-H10302|\n|HID 37 bit-H10304|\n|HID Corporate 1000| \n|HID Corporate 1000 48bit|\nExpected Result: 1. Parity 영역을 4개까지 설정할 수 있다.\n2. Parity 영역은 서로 중복될 수 있다.\n\n(on) HID Coporate 1000 설정 참조\n||Parity Bits||\n|Even|\n|Odd|",
+    "metadata": {
+      "issue_key": "COMMONR-217",
+      "step_index": "2",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-217_step_3",
+    "document": "Test Step: 1. Setting> Card Format> Wiegand\n2. 수정 가능한 리스트 선택\n3. 각 항목들에 대해 설정 후 저장\n> Name, Description, Total Bits, Facility Code Field, ID Field, Parity Bits\nTest Data: [BioStar]\n||Predefined Wiegand Format ID||Custom Wiegand Format ID||\n|1 ~ 5|6 ~ 15|\n|수정 불가능|수정 가능|\n\n> 각 항목들에 대해 Default 포맷 참조해 설정\nExpected Result: 1. 설정한 Custom Format이 리스트에 추가된다.\n> 6 ~ 15 중 추가한 Custom이 표시 된다.\nName, Total Bits, Number of Fields, Number of Issued Cards",
+    "metadata": {
+      "issue_key": "COMMONR-217",
+      "step_index": "3",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-217_step_4",
+    "document": "Test Step: 1. Setting> Card Format> Wiegand\n2. 생성된 Wiegand Custom Format 선택\n3. 설정값 변경\n> Name, Description, Total Bits, Facility Code Field, ID Field, Parity Bits\nTest Data: [BioStar]\n||Predefined Wiegand Format ID||Custom Wiegand Format ID||\n|1 ~ 5|6 ~ 15|\n|수정 불가능|수정 가능|\nExpected Result: 1. 변경한 값이 저장된다.",
+    "metadata": {
+      "issue_key": "COMMONR-217",
+      "step_index": "4",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-217_step_5",
+    "document": "Test Step: 1. Device> Wiegand 입력/출력에 대한 Wiegand Format 설정\n\nTest Data: Wiegand Format\n> Default(BioStar V2.3 추가)\n> 26bit SIA Standard-H10301(Default)\n> HID 37 bit-H10302\n> HID 37 bit-H10304\n> HID Corporate 1000 \n> HID Corporate 1000 48bit\n\nExpected Result: 1. 선택한 값이 설정되어야 한다.\n2. Slave인 경우 Wiegand Input으로 강제 설정된다. \n\n(on) Master-Slave-3rd Party Reader\n > Master : Wiegand Input 설정\n > Slave : Wiegand Input 강제 설정",
+    "metadata": {
+      "issue_key": "COMMONR-217",
+      "step_index": "5",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-217_step_6",
+    "document": "Test Step: 1. Device> Advanced> Wiegand> Wiegand Input/Output 설정\n2. 장치 별로 Wiegand Port에 따른 Wiegand Input/Output 옵션 설정\nTest Data: [BioStar]\nWiegand - Input/Output\n> Input (Default)\n> Output\nExpected Result: 1. Wiegand In으로 동작시킬 것인지, Wiegand Out으로 동작시킬 것인지 설정할 수 있다.\n> Input\n> Output\n> Both(Input/Output)",
+    "metadata": {
+      "issue_key": "COMMONR-217",
+      "step_index": "6",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-217_step_7",
+    "document": "Test Step: 1. Device> Advanced>Wiegand> Wiegand Pulse 설정\n\n(on) Wiegand Output - Pulse Width, Interval\nTest Data: [BioStar]\n{panel:title=Wiegand Pulse}\n||Width||Interval||\n|Min(20)~Max(100)\nDefault(40)|Min(200)~Max(20000)\nDefault(10000)|\n※ BS2 \n> Pluse Interval : 2000(Default)\n{panel}\nExpected Result: 1. 선택한 값이 설정되어야 한다.\n2. Scope를 이용해 설정한 값으로 동작되는지 확인할 수 있어야 한다.\n\n(/) 측정 : RND 개발 검증 결과로 대체\n\n※ DM 20 - Wiegand Pulse Width/Pulse Interval Min/Max로 기본 설정\n> 기본 설정값 (추후 확인 예정)\n\n> Wiegand Out에 대한 동작확인은 Scope로 확인",
+    "metadata": {
+      "issue_key": "COMMONR-217",
+      "step_index": "7",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-217_step_8",
+    "document": "Test Step: 1. Device> Device List> Device 선택(Master)> Advanced> Wiegand\n2. 각 항목에 대해 설정\nTest Data: [BioStar]\nWiegand - Input/Output\n\n(on) Wiegand Input-입력 받을 수 있는 Wiegand Format만 지원(All(15개), Multi(1개 이상))\n > Wiegand : Input, Input Format\n\n(on) Wiegand Out- Card ID Format에 따라 입력된 Card 값 출력\n > Wiegand : Output, Output Mode, Fail Code\n (/) CSN Card Format/Wiegand Card Format : Wiegand Format\nExpected Result: 1. Wiegand 설정에 대해 추가/편집/저장이 가능하다.",
+    "metadata": {
+      "issue_key": "COMMONR-217",
+      "step_index": "8",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-217_step_9",
+    "document": "Test Step: 1. Device> Wiegand In/Out 장치의 Wiegand Format을 동일하게 설정\n(on) Wiegand Input\n> Wiegand : Input, Input Format\n2. Wieagnd Reader에 카드인증시도\nTest Data: [BioStar]\n||Wiegand Format||\n|26bit SIA Standard-H10301|\n|HID 37 bit-H10302|\n|HID 37 bit-H10304|\n|HID Corporate 1000| \n|HID Corporate 1000 48bit|\n|추가한 Custom Format|\n\n카드인증\n> CSN/Wiegand 카드\nExpected Result: 1. Wiegand 포맷에 맞추어 Card 값이 출력된다.\n2. 미등록된 카드로 인증시도해 실패시 설정한 Wiegand 포맷에 맞추어 Card 값이 출력된다.\n> VERIFY_FAIL_CARD\n",
+    "metadata": {
+      "issue_key": "COMMONR-217",
+      "step_index": "9",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-217_step_10",
+    "document": "Test Step: 1. Device> Wiegand Input 장치와 Output 장치의 Wiegand Format을 상이하게 설정\n(on) Wiegand Input \n> Wiegand : Input, Input Format\n2. Wieagnd Reader에 카드인증시도\nTest Data: [BioStar]\n||Wiegand Format||\n|26bit SIA Standard-H10301|\n|HID 37 bit-H10302|\n|HID 37 bit-H10304|\n|HID Corporate 1000| \n|HID Corporate 1000 48bit|\n|추가한 Custom Format|\n\n카드인증\n> CSN/Wiegand 카드\nExpected Result: 1. Wiegand 포맷이 다른경우 입력되는 카드ID에 대해 무시된다.\n> Mismatched Wiegand Format\n||Parity Fial||Mismatched Wiegand  Format||\n|Wiegand Legnth 동일한 상태에서 Parity만 역순으로 저장시|Wiegand Format 상이|",
+    "metadata": {
+      "issue_key": "COMMONR-217",
+      "step_index": "10",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-217_step_11",
+    "document": "Test Step: 1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Enable Fail Code 체크\n4. Fail Code: 0x00 설정\n5. Wiegand Out 장치에 저장되지 않은 카드인증\nTest Data: [BioStar]\nWiegand Output Fail Code-Normal(Output Mode)\n> Wiegand Input과 동일하게 설정\n(on) Wiegand Out \n > Wiegand : Output, Output Mode, Fail Code\n > CSN Card Format/Wiegand Card Format : Wiegand Format\n\n카드인증\n> CSN/Wiegand 카드\nExpected Result: 1. 설정된 Format에 맞게 카드ID가 0으로 채워져서 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-217",
+      "step_index": "11",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-217_step_12",
+    "document": "Test Step: 1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Enable Fail Code 체크\n4. Fail Code: 0xFF 설정\n5. Wiegand Out 장치에 저장되지 않은 카드인증\nTest Data: [BioStar]\nWiegand Output Fail Code-Normal(Output Mode)\n> Wiegand Input 과 동일하게 설정\n(on) Wiegand Out \n > Wiegand : Output, Output Mode, Fail Code\n > CSN Card Format/Wiegand Card Format : Wiegand Format\n\n카드인증\n> CSN/Wiegand 카드\nExpected Result: 1. 설정된 Format에 맞게 카드ID가 1로 채워져서 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-217",
+      "step_index": "12",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-217_step_13",
+    "document": "Test Step: 1. Device> 장치추가\n2. Wiegand Out 및 Format 설정\n3. Enable Fail Code 체크\n4. Fail Code 설정\n5. Bypass Mode: Enable\n6. Wiegand Out 장치에 저장되지 않은 카드인증\nTest Data: [BioStar]\nWiegand Out Output Mode-Bypass\n> Wiegand Input 과 동일하게 설정\n(on) Wiegand Out \n > Wiegand : Output, Output Mode, Fail Code\n > CSN Card Format/Wiegand Card Format : Wiegand Format\n\nFail Code\n> 0x00\n> 0xFF\n\n카드인증\n> CSN/Wiegand 카드\nExpected Result: 1. 카드ID가 Bypass되어 Format에 맞게 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-217",
+      "step_index": "13",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-217_step_14",
+    "document": "Test Step: <Master-Slave/DM20-Wiegand Reader 연결 \nor Master-Wiegand Reader 연결>\n1. Master Reboot\n2. Master와 연결된 Slave/DM20 혹은 Wiegand Reader 동작확인\nTest Data: [BioStar]\nExpected Result: 1. Master가 Reboot 되더라도 Slave/DM20 와 Wiegand Reader는 Reboot되지 않아야 한다.",
+    "metadata": {
+      "issue_key": "COMMONR-217",
+      "step_index": "14",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-217_step_15",
+    "document": "Test Step: <Master-Slave/DM20-Wiegand Reader 연결 \nor Master-Wiegand Reader 연결>\n1. Wiegand Reader Reboot\n2. Wiegand Reader 와 연결된 Slave/DM20 혹은 Master 동작확인\nTest Data: [BioStar]\nExpected Result: 1. Wiegand Reader Reboot시 Master 혹은 Slave/DM20 은 Reboot되지 않아야 한다.",
+    "metadata": {
+      "issue_key": "COMMONR-217",
+      "step_index": "15",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-217_step_16",
+    "document": "Test Step: <Master-Wiegand Reader 연결> \n1. User> Add User\n2. +Card> Wiegand Reader 선택\n3. Wiegand Reader에 카드 입력\nTest Data: [BioStar]\nWiegand - Input/Output\n\n(on) Wiegand Input-입력 받을 수 있는 Wiegand Format만 지원(All(15개), Multi(1개 이상))\n > Wiegand : Input, Input Format\n\n(on) Wiegand Out- Card ID Format에 따라 입력된 Card 값 출력\n > Wiegand : Output, Output Mode, Fail Code\n (/) CSN Card Format/Wiegand Card Format : Wiegand Format\nExpected Result: 1. 입력된 카드는 Wiegand Out으로 동작한다.\n2.  Wiegnad Format에 맞게 카드ID가 표시되어야 한다.",
+    "metadata": {
+      "issue_key": "COMMONR-217",
+      "step_index": "16",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-217_step_17",
+    "document": "Test Step: <Master-Slave/DM20-Wiegand Reader 연결>\n1. Wiegand Reader에 카드입력\nTest Data: [BioStar]\nWiegand - Input/Output\n\n(on) Wiegand Input-입력 받을 수 있는 Wiegand Format만 지원(All(15개), Multi(1개 이상))\n > Wiegand : Input, Input Format\n\n(on) Wiegand Out- Card ID Format에 따라 입력된 Card 값 출력\n > Wiegand : Output, Output Mode, Fail Code\n (/) CSN Card Format/Wiegand Card Format : Wiegand Format\nExpected Result: 1. Master 장치에서는 Wiegand Reader에서 입력된 카드ID를 매칭해 일치하면 인증성공으로 동작한다.",
+    "metadata": {
+      "issue_key": "COMMONR-217",
+      "step_index": "17",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-217_step_18",
+    "document": "Test Step: <Master-Slave/DM20-Wiegand Reader 연결>\n1. Wiegand Reader에 Smart Card 입력\n> 3rd Party Reader, Wiegand Output(Suprema Device)\nTest Data: [BioStar]\nSmart Card - Mifare/DesFire\n> Secure Credential\n> AOC\n\nWiegand Card Format\n> Wiegand Input Format 과 동일하게 설정\n\nSmart Card Layout\n> 발급된 Smart Card Layout\n\nFail Code\n> 0x00\n> 0xFF\n\n카드인증\n> CSN/Wiegand 카드\nExpected Result: 1. Bypass 여부에 따라 해당 장치의 인증모드 상관 없이 카드 ID가 전송되어야 한다.\n2. AOC/SCC로 인증시 In 장치에서는 인증실패로 동작한다.(CSN값으로 IN장치에 들어옴)\n3. Wiegand Reader(Out) 장치가 재부팅되면 안된다.\n4. SCC인 경우 24 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴인 경우 24 Byte 카드 ID를 사용하여 출력함\n: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함\n> AOC인 경우 32 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n\n※ 의도치않게 CardID(CSN)와 UserID가 동일한 경우 인증성공으로 동작될 수 있다.\n",
+    "metadata": {
+      "issue_key": "COMMONR-217",
+      "step_index": "18",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-217_step_19",
+    "document": "Test Step: <Controller-Wiegand Reader 연결>\n1. Wiegand Reader에 Smart Card 인증\n> 3rd Praty, Wiegand Output(Suprema Device)\nTest Data: [BioStar]\nSmart Card - iClass\n> Secure Credential\n> AOC\n\nWiegand Card Format\n> Wiegand Input Format 과 동일하게 설정\n\nSmart Card Layout\n> 발급된 Smart Card Layout\n\nFail Code\n> 0x00\n> 0xFF\n\n카드인증\n> CSN/Wiegand 카드\n\nExpected Result: 1. 카드에 Write한 ID가 아닌 iClass 카드의 Secure ID(PAC Data)가 Wiegand로 출력된다.\n2. SCC인 경우 24 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n: iClass 카드는 PAC Data를 출력하나, 지문/ID/얼굴인 경우 24 Byte 카드 ID를 사용하여 출력함\n: Mifare 카드에 대해서 영숫자로 발급한 경우 출력되는 카드 ID는 보장을 못함\n> AOC인 경우 32 Byte 카드 ID를 사용하여 Wiegand Out으로 동작을 한다.\n2. Wiegand Reader(Out) 장치가 재부팅되면 안된다.",
+    "metadata": {
+      "issue_key": "COMMONR-217",
+      "step_index": "19",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-217_step_20",
+    "document": "Test Step: <Wiegand In/Out 구성된 상태 : Finger 인증>\n1. 사용자에 지문/카드/PIN 등록 후 Wiegand In/Out 장치에 전송\n2. Wiegand Out 장치에 등록된 카드인증시도\n3. Wiegand Out 장치에 등록되지 않은 카드인증시도\n4. 등록된 사용자의 지문인증모드로 인증시도\nTest Data: [BioStar]\nWiegand Out Output Mode-Normal\n> Wiegand Input 과 동일하게 설정\n(on) Wiegand Out \n > Wiegand : Output, Output Mode, Fail Code\n > CSN Card Format/Wiegand Card Format : Wiegand Format\nExpected Result: 1. 인증된 사용자의 카드ID가 Wiegand Output 으로 출력되어야 함\n\n인증 실패 창의 카드 ID와 Event Log에 표시되는 카드 ID 상이함.\n- 현 상태 유지\n* BSIIDII-415",
+    "metadata": {
+      "issue_key": "COMMONR-217",
+      "step_index": "20",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-217_step_21",
+    "document": "Test Step: <Wiegand In/Out 구성된 상태 : ID 인증>\n1. 사용자에 지문/카드/PIN 등록 후 Wiegand In/Out 장치에 전송\n2. Wiegand Out 장치에 등록된 카드인증시도\n3. Wiegand Out 장치에 등록되지 않은 카드인증시도\n4. 등록된 사용자의 ID인증모드로 인증시도\nTest Data: [BioStar]\nWiegand Out Output Mode-Normal\n> Wiegand Input 과 동일하게 설정\n(on) Wiegand Out \n > Wiegand : Output, Output Mode, Fail Code\n > CSN Card Format/Wiegand Card Format : Wiegand Format\nExpected Result: 1. 인증된 사용자의 카드ID가 Wiegand Output 으로 출력되어야 함\n\n인증 실패 창의 카드 ID와 Event Log에 표시되는 카드 ID 상이함.\n- 현 상태 유지\n* BSIIDII-415",
+    "metadata": {
+      "issue_key": "COMMONR-217",
+      "step_index": "21",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-217_step_22",
+    "document": "Test Step: <Wiegand In/Out 구성된 상태 : Face 인증>\n1. 사용자에 얼굴/카드/PIN 등록 후 Wiegand In/Out 장치에 전송\n2. Wiegand Out 장치에 등록된 카드인증시도\n3. Wiegand Out 장치에 등록되지 않은 카드인증시도\n4. 등록된 사용자의 얼굴인증모드로 인증시도\nTest Data: [BioStar]\nWiegand Out Output Mode-Normal\n> Wiegand Input 과 동일하게 설정\n(on) Wiegand Out \n > Wiegand : Output, Output Mode, Fail Code\n > CSN Card Format/Wiegand Card Format : Wiegand Format\nExpected Result: 1. 인증된 사용자의 카드ID가 Wiegand Output 으로 출력되어야 함\n\n인증 실패 창의 카드 ID와 Event Log에 표시되는 카드 ID 상이함.\n- 현 상태 유지\n* BSIIDII-415",
+    "metadata": {
+      "issue_key": "COMMONR-217",
+      "step_index": "22",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-217_step_23",
+    "document": "Test Step: <Wiegand In/Out 구성>\n1. Wiegand Out장치> Width/Interval 설정\n2. Wiegand Out장치에 인증시도\nTest Data: Width/Interval\n> 최소값 설정\n> 최대값 설정\n> 구성 \n: 3rd Party Wiegand Reader-Wiegand Input\n: Wiegand Input-DM20-3rd Party Wiegand Reader\n: Wiegand Output-Wiegand Input\nExpected Result: 1. In장치에 Wiegand 신호가 정상적으로 들어와 인증성공/실패 유무를 표시해주어야 한다.\n> Wiegand In에 대한 동작확인",
+    "metadata": {
+      "issue_key": "COMMONR-217",
+      "step_index": "23",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-217_step_24",
+    "document": "Test Step: <3rd Party Wiegand Reader(중국산) - Wiegand Input Device)\n1. Device(Wiegand Input)> Advanced>Wiegand > Wiegand Pulse 설정\nTest Data: [BioStar]- Wiegnad Input 기본 설정 유지\n{panel:title=Wiegand Pulse}\n||Width||Interval||\n|Min(20)~Max(100)\nDefault(40)|Min(200)~Max(20000)\nDefault(10000)|\n※ BS2 \n> Pluse Interval : 2000(Default)\n{panel}\nExpected Result: 1. Wiegand In장치에 Wiegand 신호가 정상적으로 들어와 인증성공/실패 유무를 표시해 주어야 한다.\n> Wiegand Pulse Width의 값에 따라 적용 버전과 미적용 버전으로 동작 유무 확인 포함\n2. Scope를 이용해 설정한 값으로 동작되는지 확인할 수 있어야 한다.\n> 필요시(Wiegand Input)\n\n(/) 측정 : RND 개발 검증 결과로 대체\n\n※ DM 20 - Wiegand Pulse Width 사양 변경 적용(10 ~ 1000) 버전 이용\n\n> Wiegand Input에 대한 동작 확인",
+    "metadata": {
+      "issue_key": "COMMONR-217",
+      "step_index": "24",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-217_step_25",
+    "document": "Test Step: <장치 2 - 장치 1 - 장치 3>\n            |- 장치 4\n\n1. Device> 장치추가\n2. Wiegand In / Out 및 Format 설정\n3. Wiegand Bypass: Enable, Disable 설정\n4. One Device Reader에 인증 시도\n5. Separated Device Reader에 인증 시도\nTest Data: [BioStar]\n장치 1\n> Wiegand Input / Output\n장치 2(One Device Mode)\n> Wiegand Output\n장치 3(Separated Device Mode)\n> Wiegand Output\n장치 4\n> Wiegand Input\n\nExpected Result: 1. In / Out 장치에서 Wiegand 신호가 정상적으로 들어 오고 이후 다시 Wiegand 신호가 정상적으로 출력 되어야 한다.\n> Wiegand Reader (One / Separated Device Mode) 동작 확인\n\n: BSIIDII-845 실제 태스트 이력 참조\n: Wiegand In/Out 시 One Device Reader로 구성을 하면 무한으로 인증 성공/실패가 발생함(루프..)",
+    "metadata": {
+      "issue_key": "COMMONR-217",
+      "step_index": "25",
+      "source": "jira_test_step"
+    }
   }
-}
+]

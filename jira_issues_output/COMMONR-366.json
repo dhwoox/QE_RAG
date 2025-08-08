@@ -1,891 +1,551 @@
-{
-  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
-  "id": "66979",
-  "self": "https://jira.suprema.co.kr/rest/api/2/issue/66979",
-  "key": "COMMONR-366",
-  "fields": {
-    "resolution": null,
-    "customfield_13103": null,
-    "customfield_10510": null,
-    "customfield_10500": "0.0",
-    "customfield_10501": null,
-    "customfield_10502": null,
-    "customfield_12802": null,
-    "customfield_12804": null,
-    "customfield_10505": null,
-    "customfield_12803": null,
-    "customfield_10506": null,
-    "customfield_12806": null,
-    "customfield_10507": null,
-    "customfield_12805": null,
-    "customfield_10508": null,
-    "customfield_12808": null,
-    "customfield_10509": null,
-    "lastViewed": null,
-    "customfield_10180": null,
-    "customfield_10181": null,
-    "customfield_10182": null,
-    "customfield_10183": null,
-    "customfield_10184": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10173",
-      "value": "Major",
-      "id": "10173"
-    },
-    "customfield_10185": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
-      "value": "Medium (2-3일 이내 피드백)",
-      "id": "10220"
-    },
-    "labels": [],
-    "customfield_11702": null,
-    "aggregatetimeoriginalestimate": null,
-    "issuelinks": [
-      {
-        "id": "62873",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/62873",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "65397",
-          "key": "BS3FW-1744",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/65397",
-          "fields": {
-            "summary": "[Intercom] 장치메뉴에서 Extension 삭제 시, 저장되어 있는 Extension의 순서가 역으로 출력됨",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
-              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
-              "name": "열림",
-              "id": "1",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
-                "id": 2,
-                "key": "new",
-                "colorName": "blue-gray",
-                "name": "할 일"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
-              "name": "Major (B+)",
-              "id": "10200"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "62879",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/62879",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "72020",
-          "key": "BS3FW-1945",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/72020",
-          "fields": {
-            "summary": "[VOIP] Call 버튼 선택하여 내선번호 목록 출력 상태에서 장치 상세페이지 intercom 사용 안함 설정 후 장치 화면에서 임의 내선번호 통화 시 장치 발신 화면으로 유지되며 종료되지 않는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
-              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
-              "name": "열림",
-              "id": "1",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
-                "id": 2,
-                "key": "new",
-                "colorName": "blue-gray",
-                "name": "할 일"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10200",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/highest.svg",
-              "name": "Major (B+)",
-              "id": "10200"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      }
-    ],
-    "assignee": null,
-    "components": [],
-    "customfield_10170": null,
-    "customfield_10171": null,
-    "customfield_10172": null,
-    "customfield_10174": null,
-    "customfield_10175": null,
-    "customfield_10176": null,
-    "customfield_10177": null,
-    "customfield_10178": null,
-    "customfield_10179": null,
-    "customfield_10600": 61.0,
-    "customfield_10601": [],
-    "customfield_12901": null,
-    "customfield_10602": null,
-    "customfield_12900": null,
-    "subtasks": [],
-    "reporter": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=ybwoo",
-      "name": "ybwoo",
-      "key": "JIRAUSER13405",
-      "emailAddress": "ybwoo@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-      },
-      "displayName": "우유빈",
-      "active": true,
-      "timeZone": "Asia/Seoul"
-    },
-    "customfield_10168": null,
-    "customfield_10169": null,
-    "customfield_11800": null,
-    "progress": {
-      "progress": 0,
-      "total": 0
-    },
-    "votes": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-366/votes",
-      "votes": 0,
-      "hasVoted": false
-    },
-    "worklog": {
-      "startAt": 0,
-      "maxResults": 20,
-      "total": 0,
-      "worklogs": []
-    },
-    "issuetype": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
-      "id": "10000",
-      "description": "Represents a Test",
-      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
-      "name": "Test",
-      "subtask": false
-    },
-    "project": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
-      "id": "10000",
-      "key": "COMMONR",
-      "name": "Common Requirement And Test Case",
-      "projectTypeKey": "software",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
-        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
-        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
-        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
-      },
-      "projectCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
-        "id": "10000",
-        "description": "Requirements And Test Cases For The BioStar System Device",
-        "name": "BioStar System Device Requirement And Test Case"
-      }
-    },
-    "customfield_11000": null,
-    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@21df54ee[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@40180fcc[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@63d79574[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@63b190ad[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@1027dbc6[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@eb8162c[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@511b4eba[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@3ec088cc[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@10978d39[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@5ed0f071[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@55350b8f[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@6f097f0d[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
-    "resolutiondate": null,
-    "watches": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-366/watchers",
-      "watchCount": 1,
-      "isWatching": false
-    },
-    "customfield_11900": null,
-    "customfield_11901": null,
-    "updated": "2025-08-01T10:16:30.000+0900",
-    "timeoriginalestimate": null,
-    "description": "http://bss-jira.suprema.co.kr:8880/secure/Tests.jspa#/testCycle/DTP-C832\r\n>SIP Setting 및 Extensions 설정 TC",
-    "customfield_10251": null,
-    "customfield_10252": null,
-    "customfield_10253": null,
-    "customfield_10254": null,
-    "customfield_10255": null,
-    "timetracking": {},
-    "customfield_10257": null,
-    "customfield_10247": null,
-    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p>1. 장치 상세페이지에 진입하여 SIP Server Address에 Test용 URL 입력</p></td><td><p>suprema.test-dns.co.kr</p></td><td><p>1. 장치 메뉴에 voip 설정이 저장된다. <br/>-. Setting &gt; Device &gt; Intercom &gt; SIP Account </p>\n<ul class=\"alternate\" type=\"square\">\n<li>SIP Server Address에 suprema.test-dns.co.kr 출력 됨</li>\n</ul>\n</td></tr><tr><td>2</td><td><p>1. SIP Server Port 및 Username, Password 입력 후 저장</p></td><td></td><td><p>1. 장치 메인 화면에 call 버튼이 활성화된다.</p></td></tr><tr><td>3</td><td><p>1. 장치 화면에서 Call 버튼 선택 후 PC의 MicroSIP 계정에 연결 시도</p></td><td></td><td><p>1. 정상적으로 연결되어 Video및 Audio가 출력된다.</p></td></tr><tr><td>4</td><td><p><span class=\"error\">&#91;SIP 계정을 잘못 설정 후 동작 및 이후 정상 연결 동작 확인&#93;</span><br/>1. 장치 상세페이지에 진입하여 Intercom &gt; SIP Server IP 잘못된 값으로 입력 후 저장<br/>2. SIP Server Port, Username, Password는 사전조건에서 생성한 계정정보 입력 후 저장<br/>3. 장치 홈화면 확인</p></td><td></td><td><p>1. Call버튼이 출력되나 비활성화로 출력되어 동작되지 않음</p></td></tr><tr><td>5</td><td><p>1. 장치 상세페이지에 진입하여 SIP Server Port를 구축한 SIP서버 포트가 아닌 값으로 입력<br/>2. SIP Server IP는 구축한 SIP서버 IP로 변경하고 저장 후 장치 홈화면 확인</p></td><td></td><td><p>1. Call버튼이 출력되나 비활성화로 출력되어 동작되지 않음</p></td></tr><tr><td>6</td><td><p>1. 장치 상세페이지에 진입하여 SIP Username을 SIP서버에 존재하지 않는 Username으로 입력 <br/>2. SIP Port는 구축한 SIP서버 Port로 변경하고 저장 후 장치 홈화면 확인</p></td><td></td><td><p>1. Call버튼이 출력되나 비활성화로 출력되어 동작되지 않음</p></td></tr><tr><td>7</td><td><p>1. 장치 상세페이지에 진입하여 SIP Username에 사전조건에서 생성한 계정을 입력<br/>2. Password에는 잘못된 값으로 입력하여 저장<br/>3. 장치 홈화면 확인</p></td><td></td><td><p>1. Call버튼이 출력되나 비활성화로 출력되어 동작되지 않음</p></td></tr><tr><td>8</td><td><p>1. 장치 상세페이지에 진입하여 SIP Username에 사전조건에서 생성한 계정을 입력<br/>2. Password에는 해당 계정의 비밀번호를 입력하여 저장 <br/>3. 장치홈화면 확인</p></td><td></td><td><p>1. Call버튼이 활성화로 출력되고 정상적으로 VoIP 통화 됨</p></td></tr><tr><td>9</td><td><p><span class=\"error\">&#91;SIP Server Port 최소/최대 값 설정 동작 확인&#93;</span><br/>1. 장치 상세페이지에 진입 &gt; SIP Server Port에 1 입력 및 SIP 계정 정보 입력 후 저장</p></td><td></td><td><p>1. 장치 메뉴에서 VoIP 설정의 SIP Server Port 출력 확인</p>\n<ul class=\"alternate\" type=\"square\">\n<li>SIP Server Port: 1출력</li>\n</ul>\n\n\n<p>※ 출력만 확인, 연결동작은 확인 불가(Asterisk PBX에서는 1포트 설정 불가, 1024 and 65535 설정 가능))</p></td></tr><tr><td>10</td><td><p>1. 장치 상세페이지에 진입 &gt; SIP Server Port에 65535 입력 후 저장<br/>2.장치 메뉴 Setting &gt; Device &gt; Intercom &gt; SIP Account 선택</p></td><td></td><td><p>1. SIP Server Port에 65535 출력 됨</p></td></tr><tr><td>11</td><td><p><span class=\"error\">&#91;SIP Username 숫자 최소/최대값으로 계정을 생성하여 VoIP 동작 확인&#93;</span></p>\n\n<p>1. 장치 상세페이지에 진입하여 SIP Username 0 입력 및 SIP 설정 후 저장<br/>2. 장치 화면에서 Call 버튼 선택 후 PC의 MicroSIP 계정에 연결 시도</p></td><td><p>User Extension:0 인 계정 생성</p></td><td><p>1. 정상적으로 연결되어 Video및 Audio가 출력 됨<br/>(0으로 생성 불가 00으로 확인)</p></td></tr><tr><td>12</td><td><p>1. 장치 상세페이지에 진입하여 SIP Username 99999999999999999999999999999999 입력 및 SIP 설정 후 저장<br/>2. 장치 메뉴 Settings &gt; Device &gt; Intercom &gt; SIP Account 확인</p></td><td><p>User Extension: 99999999999999999999999999999999인 계정</p></td><td><p>1. SIP Username이 99999999999999999999999999999999로 출력 됨<br/>(생성불가 확인 후 TC 삭제 필요)</p></td></tr><tr><td>13</td><td><p><span class=\"error\">&#91;Password를 최소/최대값으로 생성하여 VoIP 동작 확인&#93;</span></p>\n\n<p>1. 장치 상세페이지에 진입하여 Password에 a 입력 및 SIP 설정 후 저장<br/>2. 장치 메뉴 Settings &gt; Device &gt; Intercom &gt; SIP Account 진입하여 설정 정보 확인</p></td><td><p>계정 생성 시 Secret을 a로 생성</p></td><td><p>1. Password 정상 출력 됨</p></td></tr><tr><td>14</td><td><p>1. 장치 화면에서 CALL 버튼 선택</p></td><td></td><td><p>1. 정상적으로 연결되어 Video및 Audio가 출력 됨</p></td></tr><tr><td>15</td><td><p>1. 장치 상세페이지에 진입하여 Password에 aaaaaaaaaabbbbbbbbbbccccccccccdd로 입력 및 SIP 설정 후 저장<br/>2. 장치 메뉴 Settings &gt; Device &gt; Intercom &gt; SIP Account 진입하여 설정 정보 확인</p></td><td><p>계정 생성 시 Secret을 aaaaaaaaaabbbbbbbbbbccccccccccdd로 생성</p></td><td><p>1. SIP Password 정상 출력 됨</p></td></tr><tr><td>16</td><td><p>1. 장치 화면에서 Call 버튼 선택</p></td><td></td><td><p>1. 정상적으로 연결되어 Video및 Audio가 출력 됨</p></td></tr><tr><td>17</td><td><p>1. 장치 상세페이지에 진입하여 Password에 AbCdEfG12345!@#$%^&amp;*()?로 입력 및 SIP 설정 후 저장<br/>2. 장치 화면에서 Call 버튼 선택</p></td><td><p>계정 생성 시 Secret을 AbCdEfG12345!@#$%^&amp;*()?로 생성</p></td><td><p>1. 정상적으로 연결되어 Video및 Audio가 출력 됨</p></td></tr><tr><td>18</td><td><p><span class=\"error\">&#91;Outbound proxy server address 및 Port 설정하여 VoIP 동작 확인&#93;</span><br/>1. 장치 상세페이지에 진입하여 Outbound Proxy Server를 Enabled 설정<br/>2. Outbound Proxy Server Port에 1 입력<br/>3. Outbound proxy server address 입력 후 SIP 계정 설정 후 저장<br/>4. 장치 메뉴 Settings &gt; Device &gt; Intercom &gt; SIP Account 진입</p></td><td><p>192.168.42.146</p></td><td><p>1. Outbound proxy server address 및 Outbound Proxy Server Port에 설정한 값이 출력 됨<br/>(Outbound Proxy Server Port를 SIP 서버 환경을 사내에 구축되지 않아서 임의로 Port 변경하면서 VoIP 동작까지 검토는 불가)</p></td></tr><tr><td>19</td><td><p>1. 장치 상세페이지에 진입하여 Outbound Proxy Server Port에 65535 입력 후 저장<br/>2. 장치 메뉴 Settings &gt; Device &gt; Intercom &gt; SIP Account 진입</p></td><td></td><td><p>1. Outbound Proxy Server Port에 설정한 값이 출력 됨<br/>(Outbound Proxy Server Port를 SIP 서버 환경을 사내에 구축되지 않아서 임의로 Port 변경하면서 VoIP 동작까지 검토는 불가)</p></td></tr><tr><td>20</td><td><p>1. 장치 상세페이지에 진입하여 Outbound proxy server address 와 Outbound Proxy Server Port에 검토용 Ringcentral 계정 정보를 입력 후 저장<br/>2. 검토용 Ringcentral 계정의 Outbound proxy server address 와 Outbound Proxy Server Port 입력<br/>3. 장치 메뉴 Settings &gt; Device &gt; Intercom &gt; SIP Account 진입</p></td><td><p>&gt;&gt; 계정 정보는 추후 SP팀에서 받기로 함</p></td><td><p>1. Outbound proxy server address/Port에 설정 값이 출력 됨</p></td></tr><tr><td>21</td><td><p><span class=\"error\">&#91;VoIP 통화 시에 Open Door Button에 설정된 다이얼로 문이 열리는지 확인&#93;</span><br/>1. 장치 상세페이지에 진입하여 Open Door Button을 0 설정 후 저장<br/>2. VoIP 통화 중 MicroSIP 다이얼에 0 선택</p></td><td><p>Master 장치 (BS3)<br/>L Slave 장치(BS3)<br/>L SIO2<br/>L DM20</p>\n\n<p>Door 설정<br/>-. Entry Device : Master<br/>-. Exit Device : Slave<br/>-. Relay : Master Relay 0</p></td><td><p>1. 실시간 로그에 Door unlocked 로그 출력 및 VoIP에 의한 문열림 로그 출력<br/>&gt; Door open request by Intercom door open button</p></td></tr><tr><td>22</td><td><p>1. 장치메뉴 &gt; 이벤트로그 진입</p></td><td></td><td><p>1. Door unlocked 로그 출력 및 VoIP에 의한 문열림 로그 출력</p></td></tr><tr><td>23</td><td><p>1. Door의 Relay를 Slave장치의 Relay 0으로 변경 후 저장<br/>2. Open Door Button을 1 설정 후 저장<br/>3. 장치 화면에서 Call 버튼 선택 </p></td><td></td><td><p>1. 정상적으로 연결되어 Video및 Audio가 출력 됨</p></td></tr><tr><td>24</td><td><p>1. VoIP 통화 중 MicroSIP 다이얼에 1 선택</p></td><td><p>MicroSIP 다이얼: 1~9, *,# 설정</p></td><td><p>1. 실시간 로그에 Door unlocked 로그 출력 및 VoIP에 의한 문열림 로그 출력<br/>-. Door open request by Intercom door open button</p></td></tr><tr><td>25</td><td><p>1. 장치메뉴 &gt; 이벤트로그에 진입</p></td><td></td><td><p>1. Door unlocked 로그 출력 및 VoIP에 의한 문열림 로그 출력</p></td></tr><tr><td>26</td><td><p><span class=\"error\">&#91;Extension Number 최대 설정 및 VoIP 동작 확인&#93;</span><br/>1. 장치 상세페이지에 진입하여 Extension Number 128개 추가 저장<br/>2. 장치 메뉴 Settings &gt; Device &gt; Intercom &gt; Extensions 진입하여 설정 정보 확인</p></td><td></td><td><p>1. Extension Number 128개 정상 출력 됨</p></td></tr><tr><td>27</td><td><p>1. 장치 화면에서 Call 버튼 선택 후 UI 출력 확인</p></td><td></td><td><p>1. 128개의 Extension Number가 Order에 맞게 출력됨</p></td></tr><tr><td>28</td><td><p>1. 장치의 Select the extension 화면에서 Order 1번의 Extension을 선택하여 PC의 MicroSIP 연결 시도</p></td><td><p>order :1번, 64번. 128번</p></td><td><p>1. 정상적으로 연결되어 Video및 Audio가 출력 됨</p></td></tr><tr><td>29</td><td><p>1. 장치 상세페이지에 진입하여 Extension Number 3개 추가 설정 및 SIP 계정 설정 후 저장<br/>2. 장치 화면홈&gt; Call 버튼 선택</p></td><td><p>Order 1 : ABC111<br/>Order 2 : DEF222<br/>Order 3 : GHI333</p></td><td><p>1. 설정한 Extension Number가 Order에 맞게 출력</p></td></tr><tr><td>30</td><td><p>1. 장치 상세페이지에 진입하여 Extension Number의 Order1을 Drag하여 Order3아래로 변경<br/>2. Order3을 Order2 위로 Drag하여 저장<br/>3. 장치 메뉴 Settings &gt; Device &gt; Intercom &gt; Extensions 진입</p></td><td><p>Order 1 : DEF222<br/>Order 2 : ABC111<br/>Order 3 : GHI333</p></td><td><p>1. 변경된 Order에 맞게 출력 됨<br/>Order 1 : DEF222<br/>Order 2 : ABC111<br/>Order 3 : GHI333</p></td></tr><tr><td>31</td><td><p>1. 장치 화면에서 Call 버튼 선택</p></td><td></td><td><p>1. 변경한 Order에 맞게 Extension Number가 출력 됨</p></td></tr><tr><td>32</td><td><p>1. 장치의 Select the extension 화면에서 Order 3번의 Extension을 선택하여 PC의 MicroSIP 연결 시도</p></td><td><ul>\n<li>PC의 MicroSIP는 Order 3번의 Extension 계정으로 로그인 상태</li>\n</ul>\n</td><td><p>1. 정상적으로 연결되어 Video및 Audio가 출력 됨</p></td></tr><tr><td>33</td><td><p><span class=\"error\">&#91;BioStar에서 Extension Number 삭제 시 장치 동작 확인&#93;</span><br/>1. 장치 상세페이지에 진입하여 Extension<br/> Number 3개 추가 설정 및 SIP 계정 설정 후 저장<br/>2. 장치 화면에서 Call 버튼 선택</p></td><td><p>Order 1 : ABC111<br/>Order 2 : DEF222<br/>Order 3 : GHI333</p></td><td><p>1. 설정한 Extension Number가 Order에 맞게 출력 됨</p></td></tr><tr><td>34</td><td><p>1. 장치 상세페이지에 진입하여 Extension Number의 Order 2번을 삭제 후 저장</p></td><td></td><td><p>1. 2번 Order삭제시 3번 Order가 2번으로 설정 됨<br/>Order 1 : ABC111<br/>Order 2 : GHI333</p></td></tr><tr><td>35</td><td><p>1. 장치 메뉴 Settings &gt; Device &gt; Intercom &gt; Extensions 진입하여 설정 정보 확인</p></td><td></td><td><p>1. 삭제한 Extension Number는 출력되지 않고 Order 1, 2가 출력 됨</p></td></tr><tr><td>36</td><td><p>1. 장치 화면에서 Call 버튼 선택</p></td><td></td><td><p>1. 삭제한 Extension Number는 출력되지 않고 Order 1, 2가 출력 됨<br/>Order 1 : ABC111<br/>Order 2 : GHI333</p></td></tr><tr><td>37</td><td><p>1. 장치의 Select the extension 화면에서 Order 2번의 Extension을 선택</p></td><td><ul>\n<li>PC의 MicroSIP는 Order 2번의 Extension 계정으로 로그인 상태</li>\n</ul>\n</td><td><p>1. 정상적으로 연결되어 Video및 Audio가 출력 됨</p></td></tr><tr><td>38</td><td><p>1. 장치 상세페이지에 진입하여 Extension Number을 전체선택하여 삭제 후 새로운 Extension Number를 설정하여 저장<br/>2. 장치 화면에서 Call 버튼 선택</p></td><td><p>Order 1 : JKL444</p></td><td><p>1. 신규 설정한 Extension Number가 출력 됨<br/>Order 1 : JKL444</p></td></tr><tr><td>39</td><td><p>1. 장치의 Select the extension 화면에서 신규 설정한 Extension을 선택하여 PC의 MicroSIP 연결 시도</p></td><td></td><td><p>1. 정상적으로 연결되어 Video및 Audio가 출력 됨</p></td></tr><tr><td>40</td><td><p><span class=\"error\">&#91;Extension Number의 Data Type별 설정 동작 확인&#93;</span><br/>1. 장치 상세페이지에 진입하여 Extension Number 대문자 32자 입력<br/>2. 소문자 32자 입력<br/>3. 숫자 32자 입력<br/>4. 장치 메뉴 Settings &gt; Device &gt; Intercom &gt; Extensions 진입</p></td><td><ul class=\"alternate\" type=\"square\">\n<li>AAAAAAAAAABBBBBBBBBBCCCCCCCCCCDD</li>\n<li>aaaaaaaaaabbbbbbbbbbccccccccccdd</li>\n<li>12345678901234567890123456789012</li>\n</ul>\n</td><td><p>1. Extension Number가 정상 출력 됨</p></td></tr><tr><td>41</td><td><p>1. 장치 화면에서 Call 버튼 선택</p></td><td></td><td><p>1. Extension Number가 정상 출력 됨</p></td></tr><tr><td>42</td><td><p>1. 장치의 Select the extension 화면에서 대문자 /소문자/숫자 Extension을 선택</p></td><td></td><td><p>1. 정상적으로 연결되어 Video및 Audio가 출력 됨 (freepbx가 아닌 경우)</p>\n\n<p>※ 대문자 / 소문자의 경우 freepbx에서 등록 불가능함 숫자의 경우에 32자는 등록은 가능하지만 연결 불가능한 것으로 확인</p></td></tr><tr><td>43</td><td><p>1. 장치 상세페이지에 진입하여 Extension Number에 특수문자 입력 후 저장</p></td><td><p>!@#$%^&amp;*()&lt;&gt;?[]{}|\"':+=_-~`.!@#$</p></td><td><p>1. 에러 팝업 출력 됨</p></td></tr><tr><td>44</td><td><p>1. 장치 상세페이지에 진입하여 Extension Number에 한글 입력 후 저장</p></td><td><p>가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라</p></td><td><p>1. 에러 팝업 출력 됨</p></td></tr><tr><td>45</td><td><p><span class=\"error\">&#91;Extension Number에 중복되는 번호 설정 후 동작 확인&#93;</span><br/>1. 장치 상세페이지에 진입하여 Extension Number에 101 입력<br/>2. +add 후 Extension Number에 101 추가 저장</p></td><td></td><td><p>1. 중복설정이 허용된다.<br/>(Display Name으로 구분할 수 있어서 목적에 따라 동일한 번호로 여러 개 설정 할 수 있기 때문)</p></td></tr><tr><td>46</td><td><p>1. 장치 메뉴 Settings &gt; Device &gt; Intercom &gt; Extensions 진입</p></td><td></td><td><p>1. Extension Number가 101 번호가 두개 출력 됨</p></td></tr><tr><td>47</td><td><p>1. 장치 화면에서 Call 버튼 선택</p></td><td></td><td><p>1. Select the extension 화면에 101 번호가 두개 출력</p></td></tr><tr><td>48</td><td><p>1. 장치의 Select the extension 화면에서 첫번째 101을 선택</p></td><td><ul>\n<li>PC의 MicroSIP는 101 Extension 계정으로 로그인 상태</li>\n</ul>\n</td><td><p>1. 정상적으로 연결되어 Video및 Audio가 출력 됨</p></td></tr><tr><td>49</td><td><p>1. 장치의 Select the extension 화면에서 두번째 101을 선택</p></td><td></td><td><p>1. 정상적으로 연결되어 Video및 Audio가 출력 됨</p></td></tr><tr><td>50</td><td><p><span class=\"error\">&#91;Extension Number의 Display Name 설정 동작 확인&#93;</span><br/>1. 장치 상세페이지에 진입하여 Extension Number 추가 및 Display Name입력 <br/>2. 장치 메뉴 Settings &gt; Device &gt; Intercom &gt; Extensions 진입</p></td><td><p>Display Name<br/>&gt; 대문자 48자<br/>&gt; 소문자 48자 <br/>&gt; 숫자 48자 <br/>&gt; 특수문자 48자 <br/>&gt; 한글 48자</p></td><td><p>1. Display Name이 정상 출력 됨</p></td></tr><tr><td>51</td><td><p>1. 장치 화면에서 Call 버튼 선택</p></td><td></td><td><p>1. Display Name이 정상 출력 됨</p></td></tr><tr><td>52</td><td><p>1. 장치의 Select the extension 화면에서 Extension을 선택</p></td><td><p>Display Name<br/>&gt; 대문자 48자<br/>&gt; 소문자 48자 <br/>&gt; 숫자 48자 <br/>&gt; 특수문자 48자 <br/>&gt; 한글 48자</p></td><td><p>1. 정상적으로 연결되어 Video및 Audio가 출력 됨</p></td></tr><tr><td>53</td><td><p><span class=\"error\">&#91;VoIP 사용에서 사용 안 함으로 설정 시 동작 확인&#93;</span><br/>1. VoIP 사용 중인 장치 상세페이지 진입&gt; Intercom 설:사용 안 함 설정<br/>2. 장치 메뉴 Settings &gt; Device &gt; Intercom 진입하여 설정 정보 확인</p></td><td></td><td><p>1. intercom 사용 안 함으로 출력 됨</p></td></tr><tr><td>54</td><td><p>1. 장치 화면에 Call 버튼 출력확인</p></td><td></td><td><p>1. Call 버튼이 출력되지 않음</p></td></tr><tr><td>55</td><td><p>1. PC의 MicroSIP에서 이전에 장치에 설정된 Extension Number를 입력하여 통화 시도</p></td><td></td><td><p>1. 통화가 되지 않음</p></td></tr><tr><td>56</td><td><p>1. 장치 상세페이지 진입<br/>2. intercom 사용 설정 및 Extension Number 설정 후 저장<br/>3. Call버튼 선택하여 내선번호 목록 출력 상태에서 장치 상세페이지 진입하여 Intercom 설정을 사용 안 함 설정 후 저장<br/>4. 장치화면에서 내선번호 목록 종료(X버튼 선택)</p></td><td></td><td><p>1. 내선번호 목록이 종료되고 장치 홈화면에 Call버튼 출력되지 않음</p></td></tr><tr><td>57</td><td><p>1. 장치 상세페이지 진입하여 Intercom 사용 설정 및 Extension Number 설정 후 저장<br/>2.Call버튼 선택 <br/>3. VoIP 통화 중에 장치 상세페이지 진입하여 Intercom 설정을 사용 안 함 설정 후 저장</p></td><td></td><td><p>1. VoIP 통화연결이 종료되고 장치 홈화면에 Call버튼이 출력되지 않음</p></td></tr><tr><td>58</td><td><p><span class=\"error\">&#91;Display Extension Number 설정 동작 확인&#93;</span><br/>1. 장치 상세페이지에 진입하여 Extension Number 및 Display Name 입력<br/>2. Display Extension Number: Off(Not Use) 저장<br/>3. 장치 메뉴 Settings &gt; Device &gt; Intercom 진입</p></td><td></td><td><p>1. Display Extension Number가 Off로 출력됨</p></td></tr><tr><td>59</td><td><p>1. 장치 화면에서 Call 버튼 선택</p></td><td></td><td><p>1. 통화 UI에 Extension Number가 출력되지 않고 Display Name만 출력 됨</p></td></tr><tr><td>60</td><td><p>1. 내선번호 선택 후 통화 연결 동작 확인</p></td><td></td><td><p>1. 통화 연결 화면에서 Extension Number가 출력되지 않음</p></td></tr><tr><td>61</td><td><p>1. 장치 상세페이지에 진입하여 Extension Number:빈칸으로 저장<br/>2. 장치 화면 call 버튼 선택</p></td><td></td><td><p>1. Extension number 빈칸으로 입력 시에 등록 불가능하고 에러 팝업 발생됨</p></td></tr></table>",
-    "customfield_10248": null,
-    "customfield_10006": [],
-    "customfield_10007": [],
-    "customfield_10008": {
-      "issueId": 66979,
-      "statuses": [
-        {
-          "statusResults": [
-            {
-              "latest": 3,
-              "latestFinal": 3,
-              "latestId": 34768,
-              "latestFinalId": 34768
-            }
-          ]
-        }
-      ]
-    },
-    "customfield_12309": null,
-    "customfield_10802": null,
-    "customfield_10803": null,
-    "customfield_10805": null,
-    "summary": "VOIP (SIP Setting 및 Extensions설정)",
-    "customfield_10240": null,
-    "customfield_10000": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
-      "value": "Manual",
-      "id": "10000"
-    },
-    "customfield_10243": null,
-    "customfield_10001": null,
-    "customfield_10244": null,
-    "customfield_10002": null,
-    "customfield_10003": null,
-    "customfield_10246": null,
-    "customfield_10004": {
-      "steps": [
-        {
-          "id": 18947,
-          "index": 1,
-          "step": "1. 장치 상세페이지에 진입하여 SIP Server Address에 Test용 URL 입력\n",
-          "data": "suprema.test-dns.co.kr",
-          "result": "1. 장치 메뉴에 voip 설정이 저장된다. \n-. Setting > Device > Intercom > SIP Account \n- SIP Server Address에 suprema.test-dns.co.kr 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 18948,
-          "index": 2,
-          "step": "1. SIP Server Port 및 Username, Password 입력 후 저장",
-          "result": "1. 장치 메인 화면에 call 버튼이 활성화된다.",
-          "attachments": []
-        },
-        {
-          "id": 18949,
-          "index": 3,
-          "step": "1. 장치 화면에서 Call 버튼 선택 후 PC의 MicroSIP 계정에 연결 시도",
-          "data": "",
-          "result": "1. 정상적으로 연결되어 Video및 Audio가 출력된다.",
-          "attachments": []
-        },
-        {
-          "id": 18952,
-          "index": 4,
-          "step": "[SIP 계정을 잘못 설정 후 동작 및 이후 정상 연결 동작 확인]\n1. 장치 상세페이지에 진입하여 Intercom > SIP Server IP 잘못된 값으로 입력 후 저장\n2. SIP Server Port, Username, Password는 사전조건에서 생성한 계정정보 입력 후 저장\n3. 장치 홈화면 확인",
-          "data": "",
-          "result": "1. Call버튼이 출력되나 비활성화로 출력되어 동작되지 않음",
-          "attachments": []
-        },
-        {
-          "id": 18953,
-          "index": 5,
-          "step": "1. 장치 상세페이지에 진입하여 SIP Server Port를 구축한 SIP서버 포트가 아닌 값으로 입력\n2. SIP Server IP는 구축한 SIP서버 IP로 변경하고 저장 후 장치 홈화면 확인",
-          "result": "1. Call버튼이 출력되나 비활성화로 출력되어 동작되지 않음",
-          "attachments": []
-        },
-        {
-          "id": 18954,
-          "index": 6,
-          "step": "1. 장치 상세페이지에 진입하여 SIP Username을 SIP서버에 존재하지 않는 Username으로 입력 \n2. SIP Port는 구축한 SIP서버 Port로 변경하고 저장 후 장치 홈화면 확인",
-          "result": "1. Call버튼이 출력되나 비활성화로 출력되어 동작되지 않음",
-          "attachments": []
-        },
-        {
-          "id": 18955,
-          "index": 7,
-          "step": "1. 장치 상세페이지에 진입하여 SIP Username에 사전조건에서 생성한 계정을 입력\n2. Password에는 잘못된 값으로 입력하여 저장\n3. 장치 홈화면 확인",
-          "result": "1. Call버튼이 출력되나 비활성화로 출력되어 동작되지 않음",
-          "attachments": []
-        },
-        {
-          "id": 18956,
-          "index": 8,
-          "step": "1. 장치 상세페이지에 진입하여 SIP Username에 사전조건에서 생성한 계정을 입력\n2. Password에는 해당 계정의 비밀번호를 입력하여 저장 \n3. 장치홈화면 확인",
-          "data": "",
-          "result": "1. Call버튼이 활성화로 출력되고 정상적으로 VoIP 통화 됨",
-          "attachments": []
-        },
-        {
-          "id": 18957,
-          "index": 9,
-          "step": "[SIP Server Port 최소/최대 값 설정 동작 확인]\n1. 장치 상세페이지에 진입 > SIP Server Port에 1 입력 및 SIP 계정 정보 입력 후 저장",
-          "data": "",
-          "result": "1. 장치 메뉴에서 VoIP 설정의 SIP Server Port 출력 확인\n-  SIP Server Port: 1출력\n\n※ 출력만 확인, 연결동작은 확인 불가(Asterisk PBX에서는 1포트 설정 불가, 1024 and 65535 설정 가능))",
-          "attachments": []
-        },
-        {
-          "id": 18958,
-          "index": 10,
-          "step": "1. 장치 상세페이지에 진입 > SIP Server Port에 65535 입력 후 저장\n2.장치 메뉴 Setting > Device > Intercom > SIP Account 선택",
-          "result": "1. SIP Server Port에 65535 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 18959,
-          "index": 11,
-          "step": "[SIP Username 숫자 최소/최대값으로 계정을 생성하여 VoIP 동작 확인]\n\n1. 장치 상세페이지에 진입하여 SIP Username 0 입력 및 SIP 설정 후 저장\n2. 장치 화면에서 Call 버튼 선택 후 PC의 MicroSIP 계정에 연결 시도",
-          "data": "User Extension:0 인 계정 생성",
-          "result": "1. 정상적으로 연결되어 Video및 Audio가 출력 됨\n(0으로 생성 불가 00으로 확인)",
-          "attachments": []
-        },
-        {
-          "id": 18960,
-          "index": 12,
-          "step": "1. 장치 상세페이지에 진입하여 SIP Username 99999999999999999999999999999999 입력 및 SIP 설정 후 저장\n2. 장치 메뉴 Settings > Device > Intercom > SIP Account 확인",
-          "data": "User Extension: 99999999999999999999999999999999인 계정",
-          "result": "1. SIP Username이 99999999999999999999999999999999로 출력 됨\n(생성불가 확인 후 TC 삭제 필요)",
-          "attachments": []
-        },
-        {
-          "id": 18961,
-          "index": 13,
-          "step": "[Password를 최소/최대값으로 생성하여 VoIP 동작 확인]\n\n1. 장치 상세페이지에 진입하여 Password에 a 입력 및 SIP 설정 후 저장\n2. 장치 메뉴 Settings > Device > Intercom > SIP Account 진입하여 설정 정보 확인",
-          "data": "계정 생성 시 Secret을 a로 생성",
-          "result": "1. Password 정상 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 18962,
-          "index": 14,
-          "step": "1. 장치 화면에서 CALL 버튼 선택",
-          "data": "",
-          "result": "1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 18963,
-          "index": 15,
-          "step": "1. 장치 상세페이지에 진입하여 Password에 aaaaaaaaaabbbbbbbbbbccccccccccdd로 입력 및 SIP 설정 후 저장\n2. 장치 메뉴 Settings > Device > Intercom > SIP Account 진입하여 설정 정보 확인",
-          "data": "계정 생성 시 Secret을 aaaaaaaaaabbbbbbbbbbccccccccccdd로 생성",
-          "result": "1. SIP Password 정상 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 18964,
-          "index": 16,
-          "step": "1. 장치 화면에서 Call 버튼 선택",
-          "result": "1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 18965,
-          "index": 17,
-          "step": "1. 장치 상세페이지에 진입하여 Password에 AbCdEfG12345!@#$%^&*()?로 입력 및 SIP 설정 후 저장\n2. 장치 화면에서 Call 버튼 선택",
-          "data": "계정 생성 시 Secret을 AbCdEfG12345!@#$%^&*()?로 생성",
-          "result": "1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 18966,
-          "index": 18,
-          "step": "[Outbound proxy server address 및 Port 설정하여 VoIP 동작 확인]\n1. 장치 상세페이지에 진입하여 Outbound Proxy Server를 Enabled 설정\n2. Outbound Proxy Server Port에 1 입력\n3. Outbound proxy server address 입력 후 SIP 계정 설정 후 저장\n4. 장치 메뉴 Settings > Device > Intercom > SIP Account 진입",
-          "data": "192.168.42.146",
-          "result": "1. Outbound proxy server address 및 Outbound Proxy Server Port에 설정한 값이 출력 됨\n(Outbound Proxy Server Port를 SIP 서버 환경을 사내에 구축되지 않아서 임의로 Port 변경하면서 VoIP 동작까지 검토는 불가)",
-          "attachments": []
-        },
-        {
-          "id": 18967,
-          "index": 19,
-          "step": "1. 장치 상세페이지에 진입하여 Outbound Proxy Server Port에 65535 입력 후 저장\n2. 장치 메뉴 Settings > Device > Intercom > SIP Account 진입",
-          "result": "1. Outbound Proxy Server Port에 설정한 값이 출력 됨\n(Outbound Proxy Server Port를 SIP 서버 환경을 사내에 구축되지 않아서 임의로 Port 변경하면서 VoIP 동작까지 검토는 불가)",
-          "attachments": []
-        },
-        {
-          "id": 18968,
-          "index": 20,
-          "step": "1. 장치 상세페이지에 진입하여 Outbound proxy server address 와 Outbound Proxy Server Port에 검토용 Ringcentral 계정 정보를 입력 후 저장\n2. 검토용 Ringcentral 계정의 Outbound proxy server address 와 Outbound Proxy Server Port 입력\n3. 장치 메뉴 Settings > Device > Intercom > SIP Account 진입",
-          "data": ">> 계정 정보는 추후 SP팀에서 받기로 함",
-          "result": "1. Outbound proxy server address/Port에 설정 값이 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 18969,
-          "index": 21,
-          "step": "[VoIP 통화 시에 Open Door Button에 설정된 다이얼로 문이 열리는지 확인]\n1. 장치 상세페이지에 진입하여 Open Door Button을 0 설정 후 저장\n2. VoIP 통화 중 MicroSIP 다이얼에 0 선택",
-          "data": "Master 장치 (BS3)\nL Slave 장치(BS3)\nL SIO2\nL DM20\n\nDoor 설정\n-. Entry Device : Master\n-. Exit Device : Slave\n-. Relay : Master Relay 0",
-          "result": "1. 실시간 로그에 Door unlocked 로그 출력 및 VoIP에 의한 문열림 로그 출력\n> Door open request by Intercom door open button",
-          "attachments": []
-        },
-        {
-          "id": 18970,
-          "index": 22,
-          "step": "1. 장치메뉴 > 이벤트로그 진입",
-          "data": "",
-          "result": "1. Door unlocked 로그 출력 및 VoIP에 의한 문열림 로그 출력",
-          "attachments": []
-        },
-        {
-          "id": 18971,
-          "index": 23,
-          "step": "1. Door의 Relay를 Slave장치의 Relay 0으로 변경 후 저장\n2. Open Door Button을 1 설정 후 저장\n3. 장치 화면에서 Call 버튼 선택 ",
-          "result": "1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 18972,
-          "index": 24,
-          "step": "1. VoIP 통화 중 MicroSIP 다이얼에 1 선택",
-          "data": "MicroSIP 다이얼: 1~9, *,# 설정",
-          "result": "1. 실시간 로그에 Door unlocked 로그 출력 및 VoIP에 의한 문열림 로그 출력\n-. Door open request by Intercom door open button",
-          "attachments": []
-        },
-        {
-          "id": 18973,
-          "index": 25,
-          "step": "1. 장치메뉴 > 이벤트로그에 진입",
-          "result": "1. Door unlocked 로그 출력 및 VoIP에 의한 문열림 로그 출력",
-          "attachments": []
-        },
-        {
-          "id": 18974,
-          "index": 26,
-          "step": "[Extension Number 최대 설정 및 VoIP 동작 확인]\n1. 장치 상세페이지에 진입하여 Extension Number 128개 추가 저장\n2. 장치 메뉴 Settings > Device > Intercom > Extensions 진입하여 설정 정보 확인",
-          "result": "1. Extension Number 128개 정상 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 18975,
-          "index": 27,
-          "step": "1. 장치 화면에서 Call 버튼 선택 후 UI 출력 확인",
-          "result": "1. 128개의 Extension Number가 Order에 맞게 출력됨",
-          "attachments": []
-        },
-        {
-          "id": 18976,
-          "index": 28,
-          "step": "1. 장치의 Select the extension 화면에서 Order 1번의 Extension을 선택하여 PC의 MicroSIP 연결 시도",
-          "data": "order :1번, 64번. 128번",
-          "result": "1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 18977,
-          "index": 29,
-          "step": "1. 장치 상세페이지에 진입하여 Extension Number 3개 추가 설정 및 SIP 계정 설정 후 저장\n2. 장치 화면홈> Call 버튼 선택\n",
-          "data": "Order 1 : ABC111\nOrder 2 : DEF222\nOrder 3 : GHI333",
-          "result": "1. 설정한 Extension Number가 Order에 맞게 출력",
-          "attachments": []
-        },
-        {
-          "id": 18978,
-          "index": 30,
-          "step": "1. 장치 상세페이지에 진입하여 Extension Number의 Order1을 Drag하여 Order3아래로 변경\n2. Order3을 Order2 위로 Drag하여 저장\n3. 장치 메뉴 Settings > Device > Intercom > Extensions 진입",
-          "data": "Order 1 : DEF222\nOrder 2 : ABC111\nOrder 3 : GHI333",
-          "result": "1. 변경된 Order에 맞게 출력 됨\nOrder 1 : DEF222\nOrder 2 : ABC111\nOrder 3 : GHI333",
-          "attachments": []
-        },
-        {
-          "id": 18979,
-          "index": 31,
-          "step": "1. 장치 화면에서 Call 버튼 선택",
-          "result": "1. 변경한 Order에 맞게 Extension Number가 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 18980,
-          "index": 32,
-          "step": "1. 장치의 Select the extension 화면에서 Order 3번의 Extension을 선택하여 PC의 MicroSIP 연결 시도",
-          "data": "* PC의 MicroSIP는 Order 3번의 Extension 계정으로 로그인 상태",
-          "result": "1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 18981,
-          "index": 33,
-          "step": "[BioStar에서 Extension Number 삭제 시 장치 동작 확인]\n1. 장치 상세페이지에 진입하여 Extension\n Number 3개 추가 설정 및 SIP 계정 설정 후 저장\n2. 장치 화면에서 Call 버튼 선택",
-          "data": "Order 1 : ABC111\nOrder 2 : DEF222\nOrder 3 : GHI333",
-          "result": "1. 설정한 Extension Number가 Order에 맞게 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 18982,
-          "index": 34,
-          "step": "1. 장치 상세페이지에 진입하여 Extension Number의 Order 2번을 삭제 후 저장",
-          "result": "1. 2번 Order삭제시 3번 Order가 2번으로 설정 됨\nOrder 1 : ABC111\nOrder 2 : GHI333",
-          "attachments": []
-        },
-        {
-          "id": 18983,
-          "index": 35,
-          "step": "1. 장치 메뉴 Settings > Device > Intercom > Extensions 진입하여 설정 정보 확인",
-          "result": "1. 삭제한 Extension Number는 출력되지 않고 Order 1, 2가 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 18984,
-          "index": 36,
-          "step": "1. 장치 화면에서 Call 버튼 선택",
-          "data": "",
-          "result": "1. 삭제한 Extension Number는 출력되지 않고 Order 1, 2가 출력 됨\nOrder 1 : ABC111\nOrder 2 : GHI333",
-          "attachments": []
-        },
-        {
-          "id": 18985,
-          "index": 37,
-          "step": "1. 장치의 Select the extension 화면에서 Order 2번의 Extension을 선택",
-          "data": "* PC의 MicroSIP는 Order 2번의 Extension 계정으로 로그인 상태",
-          "result": "1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 18986,
-          "index": 38,
-          "step": "1. 장치 상세페이지에 진입하여 Extension Number을 전체선택하여 삭제 후 새로운 Extension Number를 설정하여 저장\n2. 장치 화면에서 Call 버튼 선택",
-          "data": "Order 1 : JKL444",
-          "result": "1. 신규 설정한 Extension Number가 출력 됨\nOrder 1 : JKL444",
-          "attachments": []
-        },
-        {
-          "id": 18987,
-          "index": 39,
-          "step": "1. 장치의 Select the extension 화면에서 신규 설정한 Extension을 선택하여 PC의 MicroSIP 연결 시도",
-          "result": "1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 18988,
-          "index": 40,
-          "step": "[Extension Number의 Data Type별 설정 동작 확인]\n1. 장치 상세페이지에 진입하여 Extension Number 대문자 32자 입력\n2. 소문자 32자 입력\n3. 숫자 32자 입력\n4. 장치 메뉴 Settings > Device > Intercom > Extensions 진입",
-          "data": "- AAAAAAAAAABBBBBBBBBBCCCCCCCCCCDD\n- aaaaaaaaaabbbbbbbbbbccccccccccdd\n- 12345678901234567890123456789012",
-          "result": "1. Extension Number가 정상 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 18989,
-          "index": 41,
-          "step": "1. 장치 화면에서 Call 버튼 선택",
-          "result": "1. Extension Number가 정상 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 18990,
-          "index": 42,
-          "step": "1. 장치의 Select the extension 화면에서 대문자 /소문자/숫자 Extension을 선택",
-          "data": "",
-          "result": "1. 정상적으로 연결되어 Video및 Audio가 출력 됨 (freepbx가 아닌 경우)\n\n※ 대문자 / 소문자의 경우 freepbx에서 등록 불가능함 숫자의 경우에 32자는 등록은 가능하지만 연결 불가능한 것으로 확인",
-          "attachments": []
-        },
-        {
-          "id": 18991,
-          "index": 43,
-          "step": "1. 장치 상세페이지에 진입하여 Extension Number에 특수문자 입력 후 저장",
-          "data": "!@#$%^&*()<>?[]{}|\"':+=_-~`.!@#$",
-          "result": "1. 에러 팝업 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 18992,
-          "index": 44,
-          "step": "1. 장치 상세페이지에 진입하여 Extension Number에 한글 입력 후 저장",
-          "data": "가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라",
-          "result": "1. 에러 팝업 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 18993,
-          "index": 45,
-          "step": "[Extension Number에 중복되는 번호 설정 후 동작 확인]\n1. 장치 상세페이지에 진입하여 Extension Number에 101 입력\n2. +add 후 Extension Number에 101 추가 저장",
-          "result": "1. 중복설정이 허용된다.\n(Display Name으로 구분할 수 있어서 목적에 따라 동일한 번호로 여러 개 설정 할 수 있기 때문)",
-          "attachments": []
-        },
-        {
-          "id": 18994,
-          "index": 46,
-          "step": "1. 장치 메뉴 Settings > Device > Intercom > Extensions 진입",
-          "result": "1. Extension Number가 101 번호가 두개 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 18995,
-          "index": 47,
-          "step": "1. 장치 화면에서 Call 버튼 선택",
-          "result": "1. Select the extension 화면에 101 번호가 두개 출력",
-          "attachments": []
-        },
-        {
-          "id": 18996,
-          "index": 48,
-          "step": "1. 장치의 Select the extension 화면에서 첫번째 101을 선택",
-          "data": "* PC의 MicroSIP는 101 Extension 계정으로 로그인 상태",
-          "result": "1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 18997,
-          "index": 49,
-          "step": "1. 장치의 Select the extension 화면에서 두번째 101을 선택",
-          "result": "1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 18998,
-          "index": 50,
-          "step": "[Extension Number의 Display Name 설정 동작 확인]\n1. 장치 상세페이지에 진입하여 Extension Number 추가 및 Display Name입력 \n2. 장치 메뉴 Settings > Device > Intercom > Extensions 진입",
-          "data": "Display Name\n> 대문자 48자\n> 소문자 48자 \n> 숫자 48자 \n> 특수문자 48자 \n> 한글 48자",
-          "result": "1. Display Name이 정상 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 18999,
-          "index": 51,
-          "step": "1. 장치 화면에서 Call 버튼 선택",
-          "result": "1. Display Name이 정상 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 19000,
-          "index": 52,
-          "step": "1. 장치의 Select the extension 화면에서 Extension을 선택",
-          "data": "Display Name\n> 대문자 48자\n> 소문자 48자 \n> 숫자 48자 \n> 특수문자 48자 \n> 한글 48자",
-          "result": "1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 19001,
-          "index": 53,
-          "step": "[VoIP 사용에서 사용 안 함으로 설정 시 동작 확인]\n1. VoIP 사용 중인 장치 상세페이지 진입> Intercom 설:사용 안 함 설정\n2. 장치 메뉴 Settings > Device > Intercom 진입하여 설정 정보 확인",
-          "result": "1. intercom 사용 안 함으로 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 19002,
-          "index": 54,
-          "step": "1. 장치 화면에 Call 버튼 출력확인",
-          "result": "1. Call 버튼이 출력되지 않음",
-          "attachments": []
-        },
-        {
-          "id": 19003,
-          "index": 55,
-          "step": "1. PC의 MicroSIP에서 이전에 장치에 설정된 Extension Number를 입력하여 통화 시도",
-          "result": "1. 통화가 되지 않음",
-          "attachments": []
-        },
-        {
-          "id": 19004,
-          "index": 56,
-          "step": "1. 장치 상세페이지 진입\n2. intercom 사용 설정 및 Extension Number 설정 후 저장\n3. Call버튼 선택하여 내선번호 목록 출력 상태에서 장치 상세페이지 진입하여 Intercom 설정을 사용 안 함 설정 후 저장\n4. 장치화면에서 내선번호 목록 종료(X버튼 선택)",
-          "result": "1. 내선번호 목록이 종료되고 장치 홈화면에 Call버튼 출력되지 않음",
-          "attachments": []
-        },
-        {
-          "id": 19005,
-          "index": 57,
-          "step": "1. 장치 상세페이지 진입하여 Intercom 사용 설정 및 Extension Number 설정 후 저장\n2.Call버튼 선택 \n3. VoIP 통화 중에 장치 상세페이지 진입하여 Intercom 설정을 사용 안 함 설정 후 저장",
-          "result": "1. VoIP 통화연결이 종료되고 장치 홈화면에 Call버튼이 출력되지 않음",
-          "attachments": []
-        },
-        {
-          "id": 19006,
-          "index": 58,
-          "step": "[Display Extension Number 설정 동작 확인]\n1. 장치 상세페이지에 진입하여 Extension Number 및 Display Name 입력\n2. Display Extension Number: Off(Not Use) 저장\n3. 장치 메뉴 Settings > Device > Intercom 진입",
-          "result": "1. Display Extension Number가 Off로 출력됨",
-          "attachments": []
-        },
-        {
-          "id": 19007,
-          "index": 59,
-          "step": "1. 장치 화면에서 Call 버튼 선택",
-          "result": "1. 통화 UI에 Extension Number가 출력되지 않고 Display Name만 출력 됨",
-          "attachments": []
-        },
-        {
-          "id": 19008,
-          "index": 60,
-          "step": "1. 내선번호 선택 후 통화 연결 동작 확인",
-          "result": "1. 통화 연결 화면에서 Extension Number가 출력되지 않음",
-          "attachments": []
-        },
-        {
-          "id": 19009,
-          "index": 61,
-          "step": "1. 장치 상세페이지에 진입하여 Extension Number:빈칸으로 저장\n2. 장치 화면 call 버튼 선택",
-          "data": "",
-          "result": "1. Extension number 빈칸으로 입력 시에 등록 불가능하고 에러 팝업 발생됨",
-          "attachments": []
-        }
-      ]
-    },
-    "customfield_10236": null,
-    "customfield_10237": null,
-    "environment": null,
-    "customfield_10238": null,
-    "customfield_10239": null,
-    "duedate": null,
-    "comment": {
-      "comments": [],
-      "maxResults": 0,
-      "total": 0,
-      "startAt": 0
-    },
-    "customfield_10230": null,
-    "fixVersions": [],
-    "customfield_10231": null,
-    "customfield_10232": null,
-    "customfield_10233": null,
-    "customfield_12410": null,
-    "customfield_10234": null,
-    "customfield_10235": null,
-    "customfield_10225": null,
-    "customfield_12404": null,
-    "customfield_10226": null,
-    "customfield_12403": null,
-    "customfield_10227": null,
-    "customfield_12406": null,
-    "customfield_10228": null,
-    "customfield_10229": null,
-    "customfield_10900": null,
-    "customfield_12408": null,
-    "customfield_10901": null,
-    "customfield_10902": null,
-    "customfield_10903": null,
-    "customfield_12409": null,
-    "customfield_10904": null,
-    "customfield_10905": null,
-    "customfield_10220": null,
-    "priority": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-      "name": "미할당",
-      "id": "10100"
-    },
-    "customfield_10221": null,
-    "customfield_12400": null,
-    "customfield_12402": null,
-    "customfield_10224": null,
-    "customfield_10214": null,
-    "customfield_10217": null,
-    "customfield_10218": null,
-    "timeestimate": null,
-    "versions": [],
-    "customfield_10219": null,
-    "status": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/status/10000",
-      "description": "",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
-      "name": "할 일",
-      "id": "10000",
-      "statusCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
-        "id": 2,
-        "key": "new",
-        "colorName": "blue-gray",
-        "name": "할 일"
-      }
-    },
-    "customfield_12510": null,
-    "customfield_10213": null,
-    "customfield_12511": null,
-    "customfield_10203": null,
-    "customfield_10204": null,
-    "customfield_12502": null,
-    "customfield_10205": null,
-    "customfield_10206": null,
-    "customfield_10207": null,
-    "aggregatetimeestimate": null,
-    "customfield_10208": null,
-    "customfield_10209": null,
-    "customfield_12509": null,
-    "customfield_12508": null,
-    "creator": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=ybwoo",
-      "name": "ybwoo",
-      "key": "JIRAUSER13405",
-      "emailAddress": "ybwoo@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-      },
-      "displayName": "우유빈",
-      "active": true,
-      "timeZone": "Asia/Seoul"
-    },
-    "aggregateprogress": {
-      "progress": 0,
-      "total": 0
-    },
-    "customfield_10320": null,
-    "customfield_10321": null,
-    "customfield_12501": null,
-    "customfield_10202": null,
-    "customfield_12500": null,
-    "customfield_10313": "1|hzz1en:",
-    "customfield_10316": null,
-    "customfield_10317": null,
-    "timespent": null,
-    "aggregatetimespent": null,
-    "customfield_10310": null,
-    "customfield_10302": null,
-    "customfield_10303": null,
-    "customfield_12601": null,
-    "customfield_10304": null,
-    "customfield_10305": null,
-    "customfield_10308": null,
-    "workratio": -1,
-    "created": "2024-10-24T09:03:47.000+0900",
-    "customfield_10533": null,
-    "customfield_10534": null,
-    "customfield_11501": null,
-    "customfield_11503": null,
-    "customfield_13001": null,
-    "customfield_13000": null,
-    "customfield_10530": null,
-    "customfield_10531": null,
-    "customfield_10532": null,
-    "customfield_10401": null,
-    "customfield_10522": null,
-    "customfield_10402": null,
-    "customfield_12700": null,
-    "customfield_10524": null,
-    "customfield_10525": null,
-    "customfield_12702": null,
-    "attachment": [],
-    "customfield_10526": null,
-    "customfield_12704": null,
-    "customfield_10528": null,
-    "customfield_12706": null,
-    "customfield_10520": null,
-    "customfield_10521": null,
-    "customfield_10400": null,
-    "customfield_10511": null,
-    "customfield_10512": null,
-    "customfield_11600": null,
-    "customfield_10513": null,
-    "customfield_10514": null,
-    "customfield_10515": null,
-    "customfield_10516": null,
-    "customfield_10517": null,
-    "customfield_10518": null,
-    "customfield_10519": null
+[
+  {
+    "id": "COMMONR-366_step_1",
+    "document": "Test Step: 1. 장치 상세페이지에 진입하여 SIP Server Address에 Test용 URL 입력\n\nTest Data: suprema.test-dns.co.kr\nExpected Result: 1. 장치 메뉴에 voip 설정이 저장된다. \n-. Setting > Device > Intercom > SIP Account \n- SIP Server Address에 suprema.test-dns.co.kr 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "1",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_2",
+    "document": "Test Step: 1. SIP Server Port 및 Username, Password 입력 후 저장\nExpected Result: 1. 장치 메인 화면에 call 버튼이 활성화된다.",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "2",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_3",
+    "document": "Test Step: 1. 장치 화면에서 Call 버튼 선택 후 PC의 MicroSIP 계정에 연결 시도\nExpected Result: 1. 정상적으로 연결되어 Video및 Audio가 출력된다.",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "3",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_4",
+    "document": "Test Step: [SIP 계정을 잘못 설정 후 동작 및 이후 정상 연결 동작 확인]\n1. 장치 상세페이지에 진입하여 Intercom > SIP Server IP 잘못된 값으로 입력 후 저장\n2. SIP Server Port, Username, Password는 사전조건에서 생성한 계정정보 입력 후 저장\n3. 장치 홈화면 확인\nExpected Result: 1. Call버튼이 출력되나 비활성화로 출력되어 동작되지 않음",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "4",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_5",
+    "document": "Test Step: 1. 장치 상세페이지에 진입하여 SIP Server Port를 구축한 SIP서버 포트가 아닌 값으로 입력\n2. SIP Server IP는 구축한 SIP서버 IP로 변경하고 저장 후 장치 홈화면 확인\nExpected Result: 1. Call버튼이 출력되나 비활성화로 출력되어 동작되지 않음",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "5",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_6",
+    "document": "Test Step: 1. 장치 상세페이지에 진입하여 SIP Username을 SIP서버에 존재하지 않는 Username으로 입력 \n2. SIP Port는 구축한 SIP서버 Port로 변경하고 저장 후 장치 홈화면 확인\nExpected Result: 1. Call버튼이 출력되나 비활성화로 출력되어 동작되지 않음",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "6",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_7",
+    "document": "Test Step: 1. 장치 상세페이지에 진입하여 SIP Username에 사전조건에서 생성한 계정을 입력\n2. Password에는 잘못된 값으로 입력하여 저장\n3. 장치 홈화면 확인\nExpected Result: 1. Call버튼이 출력되나 비활성화로 출력되어 동작되지 않음",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "7",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_8",
+    "document": "Test Step: 1. 장치 상세페이지에 진입하여 SIP Username에 사전조건에서 생성한 계정을 입력\n2. Password에는 해당 계정의 비밀번호를 입력하여 저장 \n3. 장치홈화면 확인\nExpected Result: 1. Call버튼이 활성화로 출력되고 정상적으로 VoIP 통화 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "8",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_9",
+    "document": "Test Step: [SIP Server Port 최소/최대 값 설정 동작 확인]\n1. 장치 상세페이지에 진입 > SIP Server Port에 1 입력 및 SIP 계정 정보 입력 후 저장\nExpected Result: 1. 장치 메뉴에서 VoIP 설정의 SIP Server Port 출력 확인\n-  SIP Server Port: 1출력\n\n※ 출력만 확인, 연결동작은 확인 불가(Asterisk PBX에서는 1포트 설정 불가, 1024 and 65535 설정 가능))",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "9",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_10",
+    "document": "Test Step: 1. 장치 상세페이지에 진입 > SIP Server Port에 65535 입력 후 저장\n2.장치 메뉴 Setting > Device > Intercom > SIP Account 선택\nExpected Result: 1. SIP Server Port에 65535 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "10",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_11",
+    "document": "Test Step: [SIP Username 숫자 최소/최대값으로 계정을 생성하여 VoIP 동작 확인]\n\n1. 장치 상세페이지에 진입하여 SIP Username 0 입력 및 SIP 설정 후 저장\n2. 장치 화면에서 Call 버튼 선택 후 PC의 MicroSIP 계정에 연결 시도\nTest Data: User Extension:0 인 계정 생성\nExpected Result: 1. 정상적으로 연결되어 Video및 Audio가 출력 됨\n(0으로 생성 불가 00으로 확인)",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "11",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_12",
+    "document": "Test Step: 1. 장치 상세페이지에 진입하여 SIP Username 99999999999999999999999999999999 입력 및 SIP 설정 후 저장\n2. 장치 메뉴 Settings > Device > Intercom > SIP Account 확인\nTest Data: User Extension: 99999999999999999999999999999999인 계정\nExpected Result: 1. SIP Username이 99999999999999999999999999999999로 출력 됨\n(생성불가 확인 후 TC 삭제 필요)",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "12",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_13",
+    "document": "Test Step: [Password를 최소/최대값으로 생성하여 VoIP 동작 확인]\n\n1. 장치 상세페이지에 진입하여 Password에 a 입력 및 SIP 설정 후 저장\n2. 장치 메뉴 Settings > Device > Intercom > SIP Account 진입하여 설정 정보 확인\nTest Data: 계정 생성 시 Secret을 a로 생성\nExpected Result: 1. Password 정상 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "13",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_14",
+    "document": "Test Step: 1. 장치 화면에서 CALL 버튼 선택\nExpected Result: 1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "14",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_15",
+    "document": "Test Step: 1. 장치 상세페이지에 진입하여 Password에 aaaaaaaaaabbbbbbbbbbccccccccccdd로 입력 및 SIP 설정 후 저장\n2. 장치 메뉴 Settings > Device > Intercom > SIP Account 진입하여 설정 정보 확인\nTest Data: 계정 생성 시 Secret을 aaaaaaaaaabbbbbbbbbbccccccccccdd로 생성\nExpected Result: 1. SIP Password 정상 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "15",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_16",
+    "document": "Test Step: 1. 장치 화면에서 Call 버튼 선택\nExpected Result: 1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "16",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_17",
+    "document": "Test Step: 1. 장치 상세페이지에 진입하여 Password에 AbCdEfG12345!@#$%^&*()?로 입력 및 SIP 설정 후 저장\n2. 장치 화면에서 Call 버튼 선택\nTest Data: 계정 생성 시 Secret을 AbCdEfG12345!@#$%^&*()?로 생성\nExpected Result: 1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "17",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_18",
+    "document": "Test Step: [Outbound proxy server address 및 Port 설정하여 VoIP 동작 확인]\n1. 장치 상세페이지에 진입하여 Outbound Proxy Server를 Enabled 설정\n2. Outbound Proxy Server Port에 1 입력\n3. Outbound proxy server address 입력 후 SIP 계정 설정 후 저장\n4. 장치 메뉴 Settings > Device > Intercom > SIP Account 진입\nTest Data: 192.168.42.146\nExpected Result: 1. Outbound proxy server address 및 Outbound Proxy Server Port에 설정한 값이 출력 됨\n(Outbound Proxy Server Port를 SIP 서버 환경을 사내에 구축되지 않아서 임의로 Port 변경하면서 VoIP 동작까지 검토는 불가)",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "18",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_19",
+    "document": "Test Step: 1. 장치 상세페이지에 진입하여 Outbound Proxy Server Port에 65535 입력 후 저장\n2. 장치 메뉴 Settings > Device > Intercom > SIP Account 진입\nExpected Result: 1. Outbound Proxy Server Port에 설정한 값이 출력 됨\n(Outbound Proxy Server Port를 SIP 서버 환경을 사내에 구축되지 않아서 임의로 Port 변경하면서 VoIP 동작까지 검토는 불가)",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "19",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_20",
+    "document": "Test Step: 1. 장치 상세페이지에 진입하여 Outbound proxy server address 와 Outbound Proxy Server Port에 검토용 Ringcentral 계정 정보를 입력 후 저장\n2. 검토용 Ringcentral 계정의 Outbound proxy server address 와 Outbound Proxy Server Port 입력\n3. 장치 메뉴 Settings > Device > Intercom > SIP Account 진입\nTest Data: >> 계정 정보는 추후 SP팀에서 받기로 함\nExpected Result: 1. Outbound proxy server address/Port에 설정 값이 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "20",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_21",
+    "document": "Test Step: [VoIP 통화 시에 Open Door Button에 설정된 다이얼로 문이 열리는지 확인]\n1. 장치 상세페이지에 진입하여 Open Door Button을 0 설정 후 저장\n2. VoIP 통화 중 MicroSIP 다이얼에 0 선택\nTest Data: Master 장치 (BS3)\nL Slave 장치(BS3)\nL SIO2\nL DM20\n\nDoor 설정\n-. Entry Device : Master\n-. Exit Device : Slave\n-. Relay : Master Relay 0\nExpected Result: 1. 실시간 로그에 Door unlocked 로그 출력 및 VoIP에 의한 문열림 로그 출력\n> Door open request by Intercom door open button",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "21",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_22",
+    "document": "Test Step: 1. 장치메뉴 > 이벤트로그 진입\nExpected Result: 1. Door unlocked 로그 출력 및 VoIP에 의한 문열림 로그 출력",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "22",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_23",
+    "document": "Test Step: 1. Door의 Relay를 Slave장치의 Relay 0으로 변경 후 저장\n2. Open Door Button을 1 설정 후 저장\n3. 장치 화면에서 Call 버튼 선택 \nExpected Result: 1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "23",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_24",
+    "document": "Test Step: 1. VoIP 통화 중 MicroSIP 다이얼에 1 선택\nTest Data: MicroSIP 다이얼: 1~9, *,# 설정\nExpected Result: 1. 실시간 로그에 Door unlocked 로그 출력 및 VoIP에 의한 문열림 로그 출력\n-. Door open request by Intercom door open button",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "24",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_25",
+    "document": "Test Step: 1. 장치메뉴 > 이벤트로그에 진입\nExpected Result: 1. Door unlocked 로그 출력 및 VoIP에 의한 문열림 로그 출력",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "25",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_26",
+    "document": "Test Step: [Extension Number 최대 설정 및 VoIP 동작 확인]\n1. 장치 상세페이지에 진입하여 Extension Number 128개 추가 저장\n2. 장치 메뉴 Settings > Device > Intercom > Extensions 진입하여 설정 정보 확인\nExpected Result: 1. Extension Number 128개 정상 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "26",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_27",
+    "document": "Test Step: 1. 장치 화면에서 Call 버튼 선택 후 UI 출력 확인\nExpected Result: 1. 128개의 Extension Number가 Order에 맞게 출력됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "27",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_28",
+    "document": "Test Step: 1. 장치의 Select the extension 화면에서 Order 1번의 Extension을 선택하여 PC의 MicroSIP 연결 시도\nTest Data: order :1번, 64번. 128번\nExpected Result: 1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "28",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_29",
+    "document": "Test Step: 1. 장치 상세페이지에 진입하여 Extension Number 3개 추가 설정 및 SIP 계정 설정 후 저장\n2. 장치 화면홈> Call 버튼 선택\n\nTest Data: Order 1 : ABC111\nOrder 2 : DEF222\nOrder 3 : GHI333\nExpected Result: 1. 설정한 Extension Number가 Order에 맞게 출력",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "29",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_30",
+    "document": "Test Step: 1. 장치 상세페이지에 진입하여 Extension Number의 Order1을 Drag하여 Order3아래로 변경\n2. Order3을 Order2 위로 Drag하여 저장\n3. 장치 메뉴 Settings > Device > Intercom > Extensions 진입\nTest Data: Order 1 : DEF222\nOrder 2 : ABC111\nOrder 3 : GHI333\nExpected Result: 1. 변경된 Order에 맞게 출력 됨\nOrder 1 : DEF222\nOrder 2 : ABC111\nOrder 3 : GHI333",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "30",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_31",
+    "document": "Test Step: 1. 장치 화면에서 Call 버튼 선택\nExpected Result: 1. 변경한 Order에 맞게 Extension Number가 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "31",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_32",
+    "document": "Test Step: 1. 장치의 Select the extension 화면에서 Order 3번의 Extension을 선택하여 PC의 MicroSIP 연결 시도\nTest Data: * PC의 MicroSIP는 Order 3번의 Extension 계정으로 로그인 상태\nExpected Result: 1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "32",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_33",
+    "document": "Test Step: [BioStar에서 Extension Number 삭제 시 장치 동작 확인]\n1. 장치 상세페이지에 진입하여 Extension\n Number 3개 추가 설정 및 SIP 계정 설정 후 저장\n2. 장치 화면에서 Call 버튼 선택\nTest Data: Order 1 : ABC111\nOrder 2 : DEF222\nOrder 3 : GHI333\nExpected Result: 1. 설정한 Extension Number가 Order에 맞게 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "33",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_34",
+    "document": "Test Step: 1. 장치 상세페이지에 진입하여 Extension Number의 Order 2번을 삭제 후 저장\nExpected Result: 1. 2번 Order삭제시 3번 Order가 2번으로 설정 됨\nOrder 1 : ABC111\nOrder 2 : GHI333",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "34",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_35",
+    "document": "Test Step: 1. 장치 메뉴 Settings > Device > Intercom > Extensions 진입하여 설정 정보 확인\nExpected Result: 1. 삭제한 Extension Number는 출력되지 않고 Order 1, 2가 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "35",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_36",
+    "document": "Test Step: 1. 장치 화면에서 Call 버튼 선택\nExpected Result: 1. 삭제한 Extension Number는 출력되지 않고 Order 1, 2가 출력 됨\nOrder 1 : ABC111\nOrder 2 : GHI333",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "36",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_37",
+    "document": "Test Step: 1. 장치의 Select the extension 화면에서 Order 2번의 Extension을 선택\nTest Data: * PC의 MicroSIP는 Order 2번의 Extension 계정으로 로그인 상태\nExpected Result: 1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "37",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_38",
+    "document": "Test Step: 1. 장치 상세페이지에 진입하여 Extension Number을 전체선택하여 삭제 후 새로운 Extension Number를 설정하여 저장\n2. 장치 화면에서 Call 버튼 선택\nTest Data: Order 1 : JKL444\nExpected Result: 1. 신규 설정한 Extension Number가 출력 됨\nOrder 1 : JKL444",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "38",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_39",
+    "document": "Test Step: 1. 장치의 Select the extension 화면에서 신규 설정한 Extension을 선택하여 PC의 MicroSIP 연결 시도\nExpected Result: 1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "39",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_40",
+    "document": "Test Step: [Extension Number의 Data Type별 설정 동작 확인]\n1. 장치 상세페이지에 진입하여 Extension Number 대문자 32자 입력\n2. 소문자 32자 입력\n3. 숫자 32자 입력\n4. 장치 메뉴 Settings > Device > Intercom > Extensions 진입\nTest Data: - AAAAAAAAAABBBBBBBBBBCCCCCCCCCCDD\n- aaaaaaaaaabbbbbbbbbbccccccccccdd\n- 12345678901234567890123456789012\nExpected Result: 1. Extension Number가 정상 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "40",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_41",
+    "document": "Test Step: 1. 장치 화면에서 Call 버튼 선택\nExpected Result: 1. Extension Number가 정상 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "41",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_42",
+    "document": "Test Step: 1. 장치의 Select the extension 화면에서 대문자 /소문자/숫자 Extension을 선택\nExpected Result: 1. 정상적으로 연결되어 Video및 Audio가 출력 됨 (freepbx가 아닌 경우)\n\n※ 대문자 / 소문자의 경우 freepbx에서 등록 불가능함 숫자의 경우에 32자는 등록은 가능하지만 연결 불가능한 것으로 확인",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "42",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_43",
+    "document": "Test Step: 1. 장치 상세페이지에 진입하여 Extension Number에 특수문자 입력 후 저장\nTest Data: !@#$%^&*()<>?[]{}|\"':+=_-~`.!@#$\nExpected Result: 1. 에러 팝업 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "43",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_44",
+    "document": "Test Step: 1. 장치 상세페이지에 진입하여 Extension Number에 한글 입력 후 저장\nTest Data: 가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라\nExpected Result: 1. 에러 팝업 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "44",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_45",
+    "document": "Test Step: [Extension Number에 중복되는 번호 설정 후 동작 확인]\n1. 장치 상세페이지에 진입하여 Extension Number에 101 입력\n2. +add 후 Extension Number에 101 추가 저장\nExpected Result: 1. 중복설정이 허용된다.\n(Display Name으로 구분할 수 있어서 목적에 따라 동일한 번호로 여러 개 설정 할 수 있기 때문)",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "45",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_46",
+    "document": "Test Step: 1. 장치 메뉴 Settings > Device > Intercom > Extensions 진입\nExpected Result: 1. Extension Number가 101 번호가 두개 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "46",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_47",
+    "document": "Test Step: 1. 장치 화면에서 Call 버튼 선택\nExpected Result: 1. Select the extension 화면에 101 번호가 두개 출력",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "47",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_48",
+    "document": "Test Step: 1. 장치의 Select the extension 화면에서 첫번째 101을 선택\nTest Data: * PC의 MicroSIP는 101 Extension 계정으로 로그인 상태\nExpected Result: 1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "48",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_49",
+    "document": "Test Step: 1. 장치의 Select the extension 화면에서 두번째 101을 선택\nExpected Result: 1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "49",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_50",
+    "document": "Test Step: [Extension Number의 Display Name 설정 동작 확인]\n1. 장치 상세페이지에 진입하여 Extension Number 추가 및 Display Name입력 \n2. 장치 메뉴 Settings > Device > Intercom > Extensions 진입\nTest Data: Display Name\n> 대문자 48자\n> 소문자 48자 \n> 숫자 48자 \n> 특수문자 48자 \n> 한글 48자\nExpected Result: 1. Display Name이 정상 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "50",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_51",
+    "document": "Test Step: 1. 장치 화면에서 Call 버튼 선택\nExpected Result: 1. Display Name이 정상 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "51",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_52",
+    "document": "Test Step: 1. 장치의 Select the extension 화면에서 Extension을 선택\nTest Data: Display Name\n> 대문자 48자\n> 소문자 48자 \n> 숫자 48자 \n> 특수문자 48자 \n> 한글 48자\nExpected Result: 1. 정상적으로 연결되어 Video및 Audio가 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "52",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_53",
+    "document": "Test Step: [VoIP 사용에서 사용 안 함으로 설정 시 동작 확인]\n1. VoIP 사용 중인 장치 상세페이지 진입> Intercom 설:사용 안 함 설정\n2. 장치 메뉴 Settings > Device > Intercom 진입하여 설정 정보 확인\nExpected Result: 1. intercom 사용 안 함으로 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "53",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_54",
+    "document": "Test Step: 1. 장치 화면에 Call 버튼 출력확인\nExpected Result: 1. Call 버튼이 출력되지 않음",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "54",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_55",
+    "document": "Test Step: 1. PC의 MicroSIP에서 이전에 장치에 설정된 Extension Number를 입력하여 통화 시도\nExpected Result: 1. 통화가 되지 않음",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "55",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_56",
+    "document": "Test Step: 1. 장치 상세페이지 진입\n2. intercom 사용 설정 및 Extension Number 설정 후 저장\n3. Call버튼 선택하여 내선번호 목록 출력 상태에서 장치 상세페이지 진입하여 Intercom 설정을 사용 안 함 설정 후 저장\n4. 장치화면에서 내선번호 목록 종료(X버튼 선택)\nExpected Result: 1. 내선번호 목록이 종료되고 장치 홈화면에 Call버튼 출력되지 않음",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "56",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_57",
+    "document": "Test Step: 1. 장치 상세페이지 진입하여 Intercom 사용 설정 및 Extension Number 설정 후 저장\n2.Call버튼 선택 \n3. VoIP 통화 중에 장치 상세페이지 진입하여 Intercom 설정을 사용 안 함 설정 후 저장\nExpected Result: 1. VoIP 통화연결이 종료되고 장치 홈화면에 Call버튼이 출력되지 않음",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "57",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_58",
+    "document": "Test Step: [Display Extension Number 설정 동작 확인]\n1. 장치 상세페이지에 진입하여 Extension Number 및 Display Name 입력\n2. Display Extension Number: Off(Not Use) 저장\n3. 장치 메뉴 Settings > Device > Intercom 진입\nExpected Result: 1. Display Extension Number가 Off로 출력됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "58",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_59",
+    "document": "Test Step: 1. 장치 화면에서 Call 버튼 선택\nExpected Result: 1. 통화 UI에 Extension Number가 출력되지 않고 Display Name만 출력 됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "59",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_60",
+    "document": "Test Step: 1. 내선번호 선택 후 통화 연결 동작 확인\nExpected Result: 1. 통화 연결 화면에서 Extension Number가 출력되지 않음",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "60",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-366_step_61",
+    "document": "Test Step: 1. 장치 상세페이지에 진입하여 Extension Number:빈칸으로 저장\n2. 장치 화면 call 버튼 선택\nExpected Result: 1. Extension number 빈칸으로 입력 시에 등록 불가능하고 에러 팝업 발생됨",
+    "metadata": {
+      "issue_key": "COMMONR-366",
+      "step_index": "61",
+      "source": "jira_test_step"
+    }
   }
-}
+]

@@ -1,913 +1,335 @@
-{
-  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
-  "id": "69293",
-  "self": "https://jira.suprema.co.kr/rest/api/2/issue/69293",
-  "key": "COMMONR-371",
-  "fields": {
-    "resolution": null,
-    "customfield_13103": null,
-    "customfield_10510": null,
-    "customfield_10500": "2.0",
-    "customfield_10501": null,
-    "customfield_10502": null,
-    "customfield_12802": null,
-    "customfield_12804": null,
-    "customfield_10505": null,
-    "customfield_12803": null,
-    "customfield_10506": null,
-    "customfield_12806": null,
-    "customfield_10507": null,
-    "customfield_12805": null,
-    "customfield_10508": null,
-    "customfield_12808": null,
-    "customfield_10509": null,
-    "lastViewed": null,
-    "customfield_10180": null,
-    "customfield_10181": null,
-    "customfield_10182": null,
-    "customfield_10183": null,
-    "customfield_10184": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10173",
-      "value": "Major",
-      "id": "10173"
-    },
-    "customfield_10185": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10220",
-      "value": "Medium (2-3일 이내 피드백)",
-      "id": "10220"
-    },
-    "labels": [],
-    "customfield_11702": null,
-    "aggregatetimeoriginalestimate": null,
-    "issuelinks": [
-      {
-        "id": "64340",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/64340",
-        "type": {
-          "id": "10201",
-          "name": "Defect",
-          "inward": "created by",
-          "outward": "created",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10201"
-        },
-        "outwardIssue": {
-          "id": "73447",
-          "key": "BS3FW-2114",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/73447",
-          "fields": {
-            "summary": "[BioStar X] BioStarX 에서 Clear APB 장치 적용은 되나 Failed to Clear APB 팝업 출력되는 현상",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/1",
-              "description": "이슈가 열려 있고 담당자가 처리할 수 있는 준비가 되어 있습니다.",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/open.png",
-              "name": "열림",
-              "id": "1",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/2",
-                "id": 2,
-                "key": "new",
-                "colorName": "blue-gray",
-                "name": "할 일"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/2",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/major.svg",
-              "name": "Serious (A)",
-              "id": "2"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/1",
-              "id": "1",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
-              "name": "버그",
-              "subtask": false,
-              "avatarId": 10303
-            }
-          }
-        }
-      },
-      {
-        "id": "60130",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/60130",
-        "type": {
-          "id": "10003",
-          "name": "Relates",
-          "inward": "relates to",
-          "outward": "relates to",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
-        },
-        "inwardIssue": {
-          "id": "68773",
-          "key": "BES-3015",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/68773",
-          "fields": {
-            "summary": "[BDP-962] Real Time Status of all devices connected to BioStar 3",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "완료",
-              "id": "10001",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
-              "id": "5",
-              "description": "이슈의 부작업",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
-              "name": "부작업",
-              "subtask": true,
-              "avatarId": 10316
-            }
-          }
-        }
-      },
-      {
-        "id": "61372",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/61372",
-        "type": {
-          "id": "10003",
-          "name": "Relates",
-          "inward": "relates to",
-          "outward": "relates to",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
-        },
-        "inwardIssue": {
-          "id": "70624",
-          "key": "BES-3298",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/70624",
-          "fields": {
-            "summary": "CLONE - [BDP-962] Real Time Status of all devices connected to BioStar 3",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "완료",
-              "id": "10001",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/5",
-              "id": "5",
-              "description": "이슈의 부작업",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
-              "name": "부작업",
-              "subtask": true,
-              "avatarId": 10316
-            }
-          }
-        }
-      },
-      {
-        "id": "62540",
-        "self": "https://jira.suprema.co.kr/rest/api/2/issueLink/62540",
-        "type": {
-          "id": "10003",
-          "name": "Relates",
-          "inward": "relates to",
-          "outward": "relates to",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issueLinkType/10003"
-        },
-        "inwardIssue": {
-          "id": "70622",
-          "key": "BES-3296",
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/70622",
-          "fields": {
-            "summary": "[BDP-962, 956, 954, 990, 953, 1239] BioStar X FW 개발 - 추가진행 건",
-            "status": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/status/10001",
-              "description": "",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/closed.png",
-              "name": "완료",
-              "id": "10001",
-              "statusCategory": {
-                "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/3",
-                "id": 3,
-                "key": "done",
-                "colorName": "green",
-                "name": "완료"
-              }
-            },
-            "priority": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-              "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-              "name": "미할당",
-              "id": "10100"
-            },
-            "issuetype": {
-              "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/3",
-              "id": "3",
-              "description": "해야할 일",
-              "iconUrl": "https://jira.suprema.co.kr/secure/viewavatar?size=xsmall&avatarId=10318&avatarType=issuetype",
-              "name": "작업",
-              "subtask": false,
-              "avatarId": 10318
-            }
-          }
-        }
-      }
-    ],
-    "assignee": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
-      "name": "김소영",
-      "key": "김소영",
-      "emailAddress": "sykim@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-      },
-      "displayName": "김소영",
-      "active": true,
-      "timeZone": "Asia/Seoul"
-    },
-    "components": [],
-    "customfield_10170": null,
-    "customfield_10171": null,
-    "customfield_10172": null,
-    "customfield_10174": null,
-    "customfield_10175": null,
-    "customfield_10176": null,
-    "customfield_10177": null,
-    "customfield_10178": null,
-    "customfield_10179": null,
-    "customfield_10600": 37.0,
-    "customfield_10601": [],
-    "customfield_12901": null,
-    "customfield_10602": null,
-    "customfield_12900": null,
-    "subtasks": [],
-    "reporter": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
-      "name": "김소영",
-      "key": "김소영",
-      "emailAddress": "sykim@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-      },
-      "displayName": "김소영",
-      "active": true,
-      "timeZone": "Asia/Seoul"
-    },
-    "customfield_10168": null,
-    "customfield_10169": null,
-    "customfield_11800": null,
-    "progress": {
-      "progress": 0,
-      "total": 0
-    },
-    "votes": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-371/votes",
-      "votes": 0,
-      "hasVoted": false
-    },
-    "worklog": {
-      "startAt": 0,
-      "maxResults": 20,
-      "total": 0,
-      "worklogs": []
-    },
-    "issuetype": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issuetype/10000",
-      "id": "10000",
-      "description": "Represents a Test",
-      "iconUrl": "https://jira.suprema.co.kr/download/resources/com.xpandit.plugins.xray/images/test.png",
-      "name": "Test",
-      "subtask": false
-    },
-    "project": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/project/10000",
-      "id": "10000",
-      "key": "COMMONR",
-      "name": "Common Requirement And Test Case",
-      "projectTypeKey": "software",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/projectavatar?pid=10000&avatarId=10011",
-        "24x24": "https://jira.suprema.co.kr/secure/projectavatar?size=small&pid=10000&avatarId=10011",
-        "16x16": "https://jira.suprema.co.kr/secure/projectavatar?size=xsmall&pid=10000&avatarId=10011",
-        "32x32": "https://jira.suprema.co.kr/secure/projectavatar?size=medium&pid=10000&avatarId=10011"
-      },
-      "projectCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/projectCategory/10000",
-        "id": "10000",
-        "description": "Requirements And Test Cases For The BioStar System Device",
-        "name": "BioStar System Device Requirement And Test Case"
-      }
-    },
-    "customfield_11000": null,
-    "customfield_10700": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@3bd03c3c[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@76907cc5[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@418a5acd[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@3409606d[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@37fc9dcf[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@414998ad[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@5286ee7b[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@2df3e64e[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@7eb214da[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@73b36751[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@1623ba6a[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@2450ff76[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
-    "resolutiondate": null,
-    "watches": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/issue/COMMONR-371/watchers",
-      "watchCount": 2,
-      "isWatching": false
-    },
-    "customfield_11900": null,
-    "customfield_11901": null,
-    "updated": "2025-08-01T10:07:34.000+0900",
-    "timeoriginalestimate": null,
-    "description": "https://jira.suprema.co.kr/browse/BDP-962\r\n https://jira.suprema.co.kr/browse/BDP-1002(BSS용)\r\n\r\n[https://teams.microsoft.com/l/message/19:ecc0d14090004f94a316ff252d8726ca@thread.tacv2/1738713072175?tenantId=5303b6fd-d5c2-4a9e-b1cf-b03b0162bd4d&groupId=00a70211-1691-4cc6-8fce-2b42e6a8531d&parentMessageId=1738713072175&teamName=Product%20Management&channelName=BioStar%203%20Deploy&createdTime=1738713072175&ngc=true]\r\n 위의 링크 참고해 TC 작성예정\r\n\r\nDoor 설정 후 TC 수행\r\n > Reader/Relay/Exit Button/Door Sensor 기본적으로 설정\r\n\r\nInput 검증을 할 때 하기와 같이 진행\r\n > Normal Input & Supervised Input 확인하는 케이스 진행\r\n > Supervised Input 포트는 Normal Input으로 설정 후 확인하는 케이스 진행\r\n > Aux Input을 지원하는 경우 Aux Input에 대한 케이스도 확인\r\n\r\n ※ 글로벌 존의 상태는 바이오스타에서 판단할 수 있기 때문에 제외.",
-    "customfield_10251": null,
-    "customfield_10252": null,
-    "customfield_10253": null,
-    "customfield_10254": null,
-    "customfield_10255": null,
-    "timetracking": {},
-    "customfield_10257": null,
-    "customfield_10247": null,
-    "customfield_10005": "<table border='1' bordercolor='#79a1c9' style='background-color:#79a1c9' width='100%' cellpadding='3' cellspacing='3'><tr><td></td><td>Step</td><td>Inputs/Data</td><td>Expected Results</td></tr><tr><td>1</td><td><p><span class=\"error\">&#91;Door 설정 상태&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. 문을 닫힌 상태로 유지<br/>3. 모니터링에서 출입문 상태를 확인<br/>4. 문을 연다.<br/>5. 화면에서 출입문 상태가 \"열림\"으로 변경되었는지 확인</p></td><td></td><td><p>1. 상태가 각각 \"닫힘\"과 \"열림\"으로 실시간으로 표시된다.</p></td></tr><tr><td>2</td><td><p><span class=\"error\">&#91;Door 설정 상태&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. 인증성공을 통한 Relay 상태 확인</p></td><td></td><td><p>1. Relay 상태 정보가 실시간으로 표시된다.</p></td></tr><tr><td>3</td><td><p><span class=\"error\">&#91;Door 설정 상태&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. Exit Button 접지/해제를 통한 Relay 상태 확인</p></td><td></td><td><p>1. Relay 상태 정보가 실시간으로 표시된다.</p></td></tr><tr><td>4</td><td><p><span class=\"error\">&#91;Door 설정 상태&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. 인증성공 + Door Sensor 접지/해제을 통한 상태 확인</p></td><td></td><td><p>1. Relay 상태 및 Door 상태가 실시간으로 표시된다.</p></td></tr><tr><td>5</td><td><p><span class=\"error\">&#91;Door 설정 상태&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. Exit Button 접지 + Door Sensor 접지/해제을 통한 상태 확인</p></td><td></td><td><p>1. Relay 상태 및 Door 상태가 실시간 표시된다.<br/>2. Forced Open 상태 미표시</p></td></tr><tr><td>6</td><td><p><span class=\"error\">&#91;Door 설정 상태&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. Door Sensor 접지<br/>3. 상태확인</p></td><td></td><td><p>1. Forced Open 상태가 실시간으로 표시된다.</p></td></tr><tr><td>7</td><td><p><span class=\"error\">&#91;Door 설정 상태&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. Exit Button 접지 + Door Sensor 접지<br/>3. Timeout 동안 Sensor 접지 유지<br/>4. 상태확인</p></td><td><p>Held Open Timeout<br/>&gt; 10초</p></td><td><p>1. 10초가 접지가 유지되면 Held Open 상태로 실시간 표시된다.</p></td></tr><tr><td>8</td><td><p><span class=\"error\">&#91;Door 설정 상태&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. Exit Button 접지 + Door Sensor 접지<br/>3. 9초 동안 Sensor 접지 후 접지해제<br/>4. 상태확인</p></td><td><p>Held Open Timeout<br/>&gt; 10초</p></td><td><p>1. Relay 상태 및 Door 상태가 실시간으로 표시된다.</p></td></tr><tr><td>9</td><td><p><span class=\"error\">&#91;Door_Alarm 설정&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. 하나의 Reader에 동일 사용자 2회 인증<br/>3. 상태확인</p></td><td><p>1) 출입기반 APB<br/>&gt; OFF<br/>2) APB Type <br/>&gt; Soft APB<br/>&gt; Hard APB<br/>3) Alarm 설정<br/>&gt; APB</p></td><td><p>1. APB Violation으로 동작되면서 APB Violation Alarm 상태가 실시간으로 표시된다.</p></td></tr><tr><td>10</td><td><p><span class=\"error\">&#91;Door_Alarm 설정&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. Reader에 동일 사용자 2회 인증<br/>3. 상태확인</p></td><td><p>1) 출입기반 APB<br/>&gt; ON<br/>2) APB Type <br/>&gt; Soft APB<br/>&gt; Hard APB<br/>3) Alarm 설정<br/>&gt; APB</p></td><td><p>1. 인증성공으로 동작<br/>2. Relay 상태 및 Door 상태가 실시간으로 표시된다.<br/>&gt; APB Violation Alarm 미발생.</p></td></tr><tr><td>11</td><td><p><span class=\"error\">&#91;Door_Alarm 설정&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. Reader에 사용자 인증 후 Door Sensor 접지해 문열림 발생<br/>3. 다시 동일 Reader에 동일 사용자로 인증<br/>4. 상태확인</p></td><td><p>1) 출입기반 APB<br/>&gt; ON<br/>2) APB Type <br/>&gt; Soft APB<br/>&gt; Hard APB<br/>3) Alarm 설정<br/>&gt; APB</p></td><td><p>1. APB Violation으로 동작되면서 APB Violation Alarm 상태가 실시간으로 표시된다.</p></td></tr><tr><td>12</td><td><p><span class=\"error\">&#91;Door_Alarm 설정&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. Reader에 동일 사용자 연속인증 <br/>3. 상태확인</p></td><td><p>1) Timed APB<br/>&gt; 입실장치만<br/>&gt; 퇴실장치만<br/>&gt; 모든 장치<br/>2) 초기화 시간<br/>&gt; 10분 (Default)</p></td><td><p>1. APB Violation으로 동작되면서 APB Violation Alarm 상태가 실시간으로 표시된다. (Hard APB로 동작)</p></td></tr><tr><td>13</td><td><p><span class=\"error\">&#91;Door_Alarm 설정&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. Reader에 사용자 인증 후 10분 지난 다음 동일 사용자로 재인증<br/>3. 상태확인</p></td><td><p>1) Timed APB<br/>&gt; 입실장치만<br/>&gt; 퇴실장치만<br/>&gt; 모든 장치<br/>2) 초기화 시간<br/>&gt; 10분 (Default)</p></td><td><p>1. 인증성공으로 동작<br/>2. Relay 상태 및 Door 상태가 실시간으로 표시된다.<br/>&gt; APB Violation Alarm 미발생.</p></td></tr><tr><td>14</td><td><p><span class=\"error\">&#91;LIFT 설정&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. Reader에 인증을 통해 상태 확인</p></td><td></td><td><p>1. Floor Relay 상태 정보가 실시간으로 표시된다.</p>\n\n<p>※ 일정문제로 출시 이후 보강되는 항목.</p></td></tr><tr><td>15</td><td><p><span class=\"error\">&#91;LIFT 설정&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. Reader에 이중 인증을 통해 상태 확인</p></td><td></td><td><p>1. Floor Relay 상태 정보가 실시간으로 표시된다.</p>\n\n<p>※ 일정문제로 출시 이후 보강되는 항목.</p></td></tr><tr><td>16</td><td><p><span class=\"error\">&#91;LIFT 설정&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. 설정된 Tamper 발생<br/>3. 상태확인</p></td><td><p>Tamper 설정<br/>Alarm 설정<br/>&gt; Tamper On</p></td><td><p>1. Tamper 감지되면서  Alarm 상태가 실시간으로 표시된다.</p></td></tr><tr><td>17</td><td><p><span class=\"error\">&#91;LIFT 설정&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. Alarm에 설정된 Input 접지<br/>3. 상태확인</p></td><td><p>Alarm 설정<br/>&gt; 신호입력</p>\n\n<p>Input<br/>&gt; 본문 참조</p></td><td><p>1. LIFT 알람입력 감지되면서 Alarm 상태가 실시간으로 표시된다.</p></td></tr><tr><td>18</td><td><p><span class=\"error\">&#91;FireAlarm Zone 설정&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. Input 발생 후 상태확인</p></td><td><p>Local Zone<br/>&gt; Door</p>\n\n<p>Device/Input<br/>&gt; Normal Input</p></td><td><p>1. FireAlarm Input이 발생되면서 Door 상태가 실시간으로 표시된다.</p></td></tr><tr><td>19</td><td><p><span class=\"error\">&#91;FireAlarm Zone 설정&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. Supervised Input 발생 후 상태확인</p></td><td><p>Local Zone<br/>&gt; Door</p>\n\n<p>Device/Input<br/>&gt; Supervised Input</p></td><td><p>1. FireAlarm Input이 발생되면서 Door 상태가 실시간으로 표시된다.</p></td></tr><tr><td>20</td><td><p><span class=\"error\">&#91;FireAlarm Zone 설정&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. Input or Supervised Input 발생 후 상태확인</p></td><td><p>Local Zone<br/>&gt; Door</p>\n\n<p>Device/Input<br/>&gt; Normal Input or Supervised Input</p>\n\n<p>Alarm 설정</p></td><td><p>1. FireAlarm Input이 발생되면서 Door 상태 및 Alarm 상태가 실시간으로 표시된다.</p></td></tr><tr><td>21</td><td><p><span class=\"error\">&#91;FireAlarm Zone 설정&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. Input 발생 후 상태확인</p></td><td><p>Local Zone<br/>&gt; LIFT</p>\n\n<p>Device/Input<br/>&gt; Normal Input</p></td><td><p>1. FireAlarm Input이 발생되면서 LIFT 상태가 실시간으로 표시된다.</p></td></tr><tr><td>22</td><td><p><span class=\"error\">&#91;FireAlarm Zone 설정&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. Supervised Input 발생 후 상태확인</p></td><td><p>Local Zone<br/>&gt; LIFT</p>\n\n<p>Device/Input<br/>&gt; Supervised Input</p></td><td><p>1. FireAlarm Input이 발생되면서 LIFT 상태가 실시간으로 표시된다.</p></td></tr><tr><td>23</td><td><p><span class=\"error\">&#91;FireAlarm Zone 설정&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. Input or Supervised Input 발생 후 상태확인</p></td><td><p>Local Zone<br/>&gt; LIFT</p>\n\n<p>Device/Input<br/>&gt; Normal Input or Supervised Input</p>\n\n<p>Alarm 설정</p></td><td><p>1. FireAlarm Input이 발생되면서 LIFT 상태 및 Alarm 상태가 실시간으로 표시된다.</p></td></tr><tr><td>24</td><td><p><span class=\"error\">&#91;FireAlarm Zone 설정&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. Input or Supervised Input 발생 후 상태확인</p></td><td><p>Global Zone<br/>&gt; Door &amp; LIFT</p>\n\n<p>Device/Input<br/>&gt; Normal Input or Supervised Input</p>\n\n<p>Alarm 설정</p></td><td><p>1. FireAlarm Input이 발생되면서 Door&amp;LIFT 상태 및 Alarm 상태가 실시간으로 표시된다.</p></td></tr><tr><td>25</td><td><p><span class=\"error\">&#91;APB Zone_Alarm 설정&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. 하나의 Reader에 동일 사용자 2회 인증<br/>3. 상태확인</p></td><td><p>Local Zone 설정<br/>1) 출입기반 APB<br/>&gt; OFF<br/>2) APB Type <br/>&gt; Soft APB<br/>&gt; Hard APB<br/>3) Alarm 설정</p></td><td><p>1. APB Violation으로 동작되면서 APB Violation Alarm 상태가 실시간으로 표시된다.</p></td></tr><tr><td>26</td><td><p><span class=\"error\">&#91;APB Zone_Alarm 설정&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. Reader에 동일 사용자 2회 인증<br/>3. 상태확인</p></td><td><p>Local Zone 설정<br/>1) 출입기반 APB<br/>&gt; ON<br/>2) APB Type <br/>&gt; Soft APB<br/>&gt; Hard APB<br/>3) Alarm 설정</p></td><td><p>1. 인증성공으로 동작<br/>2. Relay 상태 및 Door 상태가 실시간으로 표시된다.<br/>&gt; APB Violation Alarm 미발생.</p></td></tr><tr><td>27</td><td><p><span class=\"error\">&#91;APB Zone_Alarm 설정&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. Reader에 사용자 인증 후 Door Sensor 접지해 문열림 발생<br/>3. 다시 동일 Reader에 동일 사용자로 인증<br/>4. 상태확인</p></td><td><p>Local Zone 설정<br/>1) 출입기반 APB<br/>&gt; ON<br/>2) APB Type <br/>&gt; Soft APB<br/>&gt; Hard APB<br/>3) Alarm 설정</p></td><td><p>1. APB Violation으로 동작되면서 APB Violation Alarm 상태가 실시간으로 표시된다.</p></td></tr><tr><td>28</td><td><p><span class=\"error\">&#91;Intrusion Alarm Zone&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. 인증을 통해 Arm/Disarm 시도 후 상태확인</p></td><td><p>Intrusion Config 설정<br/>&gt; Arm/Disarm Setting(Device)</p></td><td><p>1. Door의 Arm/Disarm 상태가 실시간으로 표시된다.</p></td></tr><tr><td>29</td><td><p><span class=\"error\">&#91;Intrusion Alarm Zone&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. input을 통해 Arm/Disarm 시도 후 상태확인</p></td><td><p>Intrusion Config 설정<br/>&gt; Arm/Disarm Setting(Input)</p></td><td><p>1. Door의 Arm/Disarm 상태가 실시간으로 표시된다.</p></td></tr><tr><td>30</td><td><p><span class=\"error\">&#91;Intrusion Alarm Zone&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. 인증 혹은 Input을 통해 Alarm으로 설정한 이벤트 발생으로 상태확인</p></td><td><p>Intrusion Config 설정<br/>1) Arm/Disarm Setting(Device) and &gt; Arm/Disarm Setting(Input)<br/>2) Detect Intrusion<br/>3) Alarm 설정</p></td><td><p>1. Arm/Disarm 상태에서의 Alarm 에 해당하는 이벤트 발생시 Alarm 상태가 실시간으로 표시된다. </p></td></tr><tr><td>31</td><td><p><span class=\"error\">&#91;Interlock Zone&#93;</span><br/>1. 모니터링&gt; Door Tab<br/>2. 설정된 Alarm 발생에 따른 상태확인</p></td><td><p>Interlock Zone 지원 제품 - CS40/CS20</p>\n\n<p>1) Door 설정<br/>&gt; Door Sensor 설정된 Door 2개 ~ Door 4개<br/>2) Alarm 설정</p></td><td><p>1. Alarm 상태가 실시간으로 표시된다.</p></td></tr><tr><td>32</td><td><p>1. 모니터링&gt; Device Tab<br/>2. 장치별 Input에 대한 실시간 상태 확인</p></td><td><p>Input<br/>&gt; Normal Input(NO/NC)<br/>&gt; Supervised Input(NO/NC/Short/Open)</p>\n\n<p>대상장치<br/>&gt; Controller(CS40/CS20)<br/>&gt; Reader(Master/Slave)<br/>&gt; IO 장치(SIO2/DM20/IM120/DI24)</p></td><td><p>1. Input 발생에 따른 상태가 실시간으로 표시된다.</p></td></tr><tr><td>33</td><td><p>1. 모니터링&gt; Device Tab<br/>2. 장치별 Output에 대한 실시간 상태 확인</p></td><td><p>대상장치<br/>&gt; Controller(CS40/CS20)<br/>&gt; IO 장치(DM20/DI24)</p></td><td><p>1. 현재 Output을 제어할 방법이 없어 확인불가.</p></td></tr><tr><td>34</td><td><p>1. 모니터링&gt; Device Tab<br/>2. 장치별 Aux Input에 대한 실시간 상태 확인</p></td><td><p>대상장치<br/>&gt; Controller(CS40/CS20)<br/>&gt; IO 장치(IM120/OM120/DI24)</p></td><td><p>1. Input 발생에 따른 상태가 실시간으로 표시된다.</p></td></tr><tr><td>35</td><td><p>1. 모니터링&gt; Device Tab<br/>2. 장치별 Relay에서 마우스 우클릭<br/>3. On/Off 를 통해 실시간 상태 확인</p></td><td><p>대상장치<br/>&gt;  Controller(CS40/CS20)<br/>&gt; Reader(Master/Slave)<br/>&gt; IO 장치(SIO2/DM20/OM120/IM120/DI24)</p></td><td><p>1. Relay 상태가 실시간으로 표시된다.</p></td></tr><tr><td>36</td><td><p>1. 모니터링&gt; Device Tab<br/>2. 장치별 Relay UI 표시유무 확인</p></td><td><p>Relay가 출입문에 할당된 상태</p></td><td><p>1. 출입문에 할당되어 있다면 Relay 항목에 대해 표시하지 않는다</p></td></tr><tr><td>37</td><td><p>1. 모니터링&gt; Device Tab<br/>2. 장치별 Tamper 발생에 따른 실시간 상태확인</p></td><td><p>대상장치<br/>&gt; Controller(CS40/CS20) - Aux Input 이용한 Tamper 발생<br/>&gt; Reader(Master/Slave/Wiegand)<br/>&gt; IO 장치(IM120/DI24) - Aux Input 이용한 Tamper 발생</p></td><td><p>1. Tamper On/Off 상태가 실시간으로 표시된다.</p></td></tr></table>",
-    "customfield_10248": null,
-    "customfield_10006": [],
-    "customfield_10007": [],
-    "customfield_10008": {
-      "issueId": 69293,
-      "statuses": [
-        {
-          "statusResults": [
-            {
-              "latest": 4,
-              "latestFinal": 4,
-              "latestId": 34772,
-              "latestFinalId": 34772
-            }
-          ]
-        }
-      ]
-    },
-    "customfield_12309": null,
-    "customfield_10802": null,
-    "customfield_10803": null,
-    "customfield_10805": null,
-    "summary": "[BSX지원기능][BDP-962] Real Time Status of all devices connected to BioStar 3",
-    "customfield_10240": null,
-    "customfield_10000": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/customFieldOption/10000",
-      "value": "Manual",
-      "id": "10000"
-    },
-    "customfield_10243": null,
-    "customfield_10001": null,
-    "customfield_10244": null,
-    "customfield_10002": null,
-    "customfield_10003": null,
-    "customfield_10246": null,
-    "customfield_10004": {
-      "steps": [
-        {
-          "id": 19411,
-          "index": 1,
-          "step": "[Door 설정 상태]\n1. 모니터링> Door Tab\n2. 문을 닫힌 상태로 유지\n3. 모니터링에서 출입문 상태를 확인\n4. 문을 연다.\n5. 화면에서 출입문 상태가 \"열림\"으로 변경되었는지 확인",
-          "data": "",
-          "result": "1. 상태가 각각 \"닫힘\"과 \"열림\"으로 실시간으로 표시된다.\n",
-          "attachments": []
-        },
-        {
-          "id": 19409,
-          "index": 2,
-          "step": "[Door 설정 상태]\n1. 모니터링> Door Tab\n2. 인증성공을 통한 Relay 상태 확인",
-          "data": "",
-          "result": "1. Relay 상태 정보가 실시간으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 19410,
-          "index": 3,
-          "step": "[Door 설정 상태]\n1. 모니터링> Door Tab\n2. Exit Button 접지/해제를 통한 Relay 상태 확인",
-          "data": "",
-          "result": "1. Relay 상태 정보가 실시간으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 19412,
-          "index": 4,
-          "step": "[Door 설정 상태]\n1. 모니터링> Door Tab\n2. 인증성공 + Door Sensor 접지/해제을 통한 상태 확인",
-          "data": "",
-          "result": "1. Relay 상태 및 Door 상태가 실시간으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 19413,
-          "index": 5,
-          "step": "[Door 설정 상태]\n1. 모니터링> Door Tab\n2. Exit Button 접지 + Door Sensor 접지/해제을 통한 상태 확인",
-          "data": "",
-          "result": "1. Relay 상태 및 Door 상태가 실시간 표시된다.\n2. Forced Open 상태 미표시",
-          "attachments": []
-        },
-        {
-          "id": 19414,
-          "index": 6,
-          "step": "[Door 설정 상태]\n1. 모니터링> Door Tab\n2. Door Sensor 접지\n3. 상태확인",
-          "data": "",
-          "result": "1. Forced Open 상태가 실시간으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 19454,
-          "index": 7,
-          "step": "[Door 설정 상태]\n1. 모니터링> Door Tab\n2. Exit Button 접지 + Door Sensor 접지\n3. Timeout 동안 Sensor 접지 유지\n4. 상태확인",
-          "data": "Held Open Timeout\n> 10초",
-          "result": "1. 10초가 접지가 유지되면 Held Open 상태로 실시간 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 19455,
-          "index": 8,
-          "step": "[Door 설정 상태]\n1. 모니터링> Door Tab\n2. Exit Button 접지 + Door Sensor 접지\n3. 9초 동안 Sensor 접지 후 접지해제\n4. 상태확인",
-          "data": "Held Open Timeout\n> 10초",
-          "result": "1. Relay 상태 및 Door 상태가 실시간으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 19457,
-          "index": 9,
-          "step": "[Door_Alarm 설정]\n1. 모니터링> Door Tab\n2. 하나의 Reader에 동일 사용자 2회 인증\n3. 상태확인",
-          "data": "1) 출입기반 APB\n> OFF\n2) APB Type \n> Soft APB\n> Hard APB\n3) Alarm 설정\n> APB",
-          "result": "1. APB Violation으로 동작되면서 APB Violation Alarm 상태가 실시간으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 19458,
-          "index": 10,
-          "step": "[Door_Alarm 설정]\n1. 모니터링> Door Tab\n2. Reader에 동일 사용자 2회 인증\n3. 상태확인",
-          "data": "1) 출입기반 APB\n> ON\n2) APB Type \n> Soft APB\n> Hard APB\n3) Alarm 설정\n> APB",
-          "result": "1. 인증성공으로 동작\n2. Relay 상태 및 Door 상태가 실시간으로 표시된다.\n> APB Violation Alarm 미발생.",
-          "attachments": []
-        },
-        {
-          "id": 19459,
-          "index": 11,
-          "step": "[Door_Alarm 설정]\n1. 모니터링> Door Tab\n2. Reader에 사용자 인증 후 Door Sensor 접지해 문열림 발생\n3. 다시 동일 Reader에 동일 사용자로 인증\n4. 상태확인",
-          "data": "1) 출입기반 APB\n> ON\n2) APB Type \n> Soft APB\n> Hard APB\n3) Alarm 설정\n> APB",
-          "result": "1. APB Violation으로 동작되면서 APB Violation Alarm 상태가 실시간으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 19462,
-          "index": 12,
-          "step": "[Door_Alarm 설정]\n1. 모니터링> Door Tab\n2. Reader에 동일 사용자 연속인증 \n3. 상태확인",
-          "data": "1) Timed APB\n> 입실장치만\n> 퇴실장치만\n> 모든 장치\n2) 초기화 시간\n> 10분 (Default)",
-          "result": "1. APB Violation으로 동작되면서 APB Violation Alarm 상태가 실시간으로 표시된다. (Hard APB로 동작)",
-          "attachments": []
-        },
-        {
-          "id": 19463,
-          "index": 13,
-          "step": "[Door_Alarm 설정]\n1. 모니터링> Door Tab\n2. Reader에 사용자 인증 후 10분 지난 다음 동일 사용자로 재인증\n3. 상태확인",
-          "data": "1) Timed APB\n> 입실장치만\n> 퇴실장치만\n> 모든 장치\n2) 초기화 시간\n> 10분 (Default)",
-          "result": "1. 인증성공으로 동작\n2. Relay 상태 및 Door 상태가 실시간으로 표시된다.\n> APB Violation Alarm 미발생.",
-          "attachments": []
-        },
-        {
-          "id": 19464,
-          "index": 14,
-          "step": "[LIFT 설정]\n1. 모니터링> Door Tab\n2. Reader에 인증을 통해 상태 확인",
-          "data": "",
-          "result": "1. Floor Relay 상태 정보가 실시간으로 표시된다.\n\n※ 일정문제로 출시 이후 보강되는 항목.",
-          "attachments": []
-        },
-        {
-          "id": 19465,
-          "index": 15,
-          "step": "[LIFT 설정]\n1. 모니터링> Door Tab\n2. Reader에 이중 인증을 통해 상태 확인",
-          "data": "",
-          "result": "1. Floor Relay 상태 정보가 실시간으로 표시된다.\n\n※ 일정문제로 출시 이후 보강되는 항목.",
-          "attachments": []
-        },
-        {
-          "id": 19466,
-          "index": 16,
-          "step": "[LIFT 설정]\n1. 모니터링> Door Tab\n2. 설정된 Tamper 발생\n3. 상태확인",
-          "data": "Tamper 설정\nAlarm 설정\n> Tamper On",
-          "result": "1. Tamper 감지되면서  Alarm 상태가 실시간으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 19467,
-          "index": 17,
-          "step": "[LIFT 설정]\n1. 모니터링> Door Tab\n2. Alarm에 설정된 Input 접지\n3. 상태확인",
-          "data": "Alarm 설정\n> 신호입력\n\nInput\n> 본문 참조",
-          "result": "1. LIFT 알람입력 감지되면서 Alarm 상태가 실시간으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 19472,
-          "index": 18,
-          "step": "[FireAlarm Zone 설정]\n1. 모니터링> Door Tab\n2. Input 발생 후 상태확인",
-          "data": "Local Zone\n> Door\n\nDevice/Input\n> Normal Input",
-          "result": "1. FireAlarm Input이 발생되면서 Door 상태가 실시간으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 19471,
-          "index": 19,
-          "step": "[FireAlarm Zone 설정]\n1. 모니터링> Door Tab\n2. Supervised Input 발생 후 상태확인",
-          "data": "Local Zone\n> Door\n\nDevice/Input\n> Supervised Input",
-          "result": "1. FireAlarm Input이 발생되면서 Door 상태가 실시간으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 19473,
-          "index": 20,
-          "step": "[FireAlarm Zone 설정]\n1. 모니터링> Door Tab\n2. Input or Supervised Input 발생 후 상태확인",
-          "data": "Local Zone\n> Door\n\nDevice/Input\n> Normal Input or Supervised Input\n\nAlarm 설정",
-          "result": "1. FireAlarm Input이 발생되면서 Door 상태 및 Alarm 상태가 실시간으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 19475,
-          "index": 21,
-          "step": "[FireAlarm Zone 설정]\n1. 모니터링> Door Tab\n2. Input 발생 후 상태확인",
-          "data": "Local Zone\n> LIFT\n\nDevice/Input\n> Normal Input",
-          "result": "1. FireAlarm Input이 발생되면서 LIFT 상태가 실시간으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 19476,
-          "index": 22,
-          "step": "[FireAlarm Zone 설정]\n1. 모니터링> Door Tab\n2. Supervised Input 발생 후 상태확인",
-          "data": "Local Zone\n> LIFT\n\nDevice/Input\n> Supervised Input",
-          "result": "1. FireAlarm Input이 발생되면서 LIFT 상태가 실시간으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 19477,
-          "index": 23,
-          "step": "[FireAlarm Zone 설정]\n1. 모니터링> Door Tab\n2. Input or Supervised Input 발생 후 상태확인",
-          "data": "Local Zone\n> LIFT\n\nDevice/Input\n> Normal Input or Supervised Input\n\nAlarm 설정",
-          "result": "1. FireAlarm Input이 발생되면서 LIFT 상태 및 Alarm 상태가 실시간으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 19480,
-          "index": 24,
-          "step": "[FireAlarm Zone 설정]\n1. 모니터링> Door Tab\n2. Input or Supervised Input 발생 후 상태확인",
-          "data": "Global Zone\n> Door & LIFT\n\nDevice/Input\n> Normal Input or Supervised Input\n\nAlarm 설정",
-          "result": "1. FireAlarm Input이 발생되면서 Door&LIFT 상태 및 Alarm 상태가 실시간으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 19482,
-          "index": 25,
-          "step": "[APB Zone_Alarm 설정]\n1. 모니터링> Door Tab\n2. 하나의 Reader에 동일 사용자 2회 인증\n3. 상태확인",
-          "data": "Local Zone 설정\n1) 출입기반 APB\n> OFF\n2) APB Type \n> Soft APB\n> Hard APB\n3) Alarm 설정",
-          "result": "1. APB Violation으로 동작되면서 APB Violation Alarm 상태가 실시간으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 19483,
-          "index": 26,
-          "step": "[APB Zone_Alarm 설정]\n1. 모니터링> Door Tab\n2. Reader에 동일 사용자 2회 인증\n3. 상태확인",
-          "data": "Local Zone 설정\n1) 출입기반 APB\n> ON\n2) APB Type \n> Soft APB\n> Hard APB\n3) Alarm 설정",
-          "result": "1. 인증성공으로 동작\n2. Relay 상태 및 Door 상태가 실시간으로 표시된다.\n> APB Violation Alarm 미발생.",
-          "attachments": []
-        },
-        {
-          "id": 19484,
-          "index": 27,
-          "step": "[APB Zone_Alarm 설정]\n1. 모니터링> Door Tab\n2. Reader에 사용자 인증 후 Door Sensor 접지해 문열림 발생\n3. 다시 동일 Reader에 동일 사용자로 인증\n4. 상태확인",
-          "data": "Local Zone 설정\n1) 출입기반 APB\n> ON\n2) APB Type \n> Soft APB\n> Hard APB\n3) Alarm 설정",
-          "result": "1. APB Violation으로 동작되면서 APB Violation Alarm 상태가 실시간으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 19488,
-          "index": 28,
-          "step": "[Intrusion Alarm Zone]\n1. 모니터링> Door Tab\n2. 인증을 통해 Arm/Disarm 시도 후 상태확인",
-          "data": "Intrusion Config 설정\n> Arm/Disarm Setting(Device)",
-          "result": "1. Door의 Arm/Disarm 상태가 실시간으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 19520,
-          "index": 29,
-          "step": "[Intrusion Alarm Zone]\n1. 모니터링> Door Tab\n2. input을 통해 Arm/Disarm 시도 후 상태확인",
-          "data": "Intrusion Config 설정\n> Arm/Disarm Setting(Input)",
-          "result": "1. Door의 Arm/Disarm 상태가 실시간으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 19521,
-          "index": 30,
-          "step": "[Intrusion Alarm Zone]\n1. 모니터링> Door Tab\n2. 인증 혹은 Input을 통해 Alarm으로 설정한 이벤트 발생으로 상태확인",
-          "data": "Intrusion Config 설정\n1) Arm/Disarm Setting(Device) and > Arm/Disarm Setting(Input)\n2) Detect Intrusion\n3) Alarm 설정",
-          "result": "1. Arm/Disarm 상태에서의 Alarm 에 해당하는 이벤트 발생시 Alarm 상태가 실시간으로 표시된다. ",
-          "attachments": []
-        },
-        {
-          "id": 19522,
-          "index": 31,
-          "step": "[Interlock Zone]\n1. 모니터링> Door Tab\n2. 설정된 Alarm 발생에 따른 상태확인",
-          "data": "Interlock Zone 지원 제품 - CS40/CS20\n\n1) Door 설정\n> Door Sensor 설정된 Door 2개 ~ Door 4개\n2) Alarm 설정",
-          "result": "1. Alarm 상태가 실시간으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 19523,
-          "index": 32,
-          "step": "1. 모니터링> Device Tab\n2. 장치별 Input에 대한 실시간 상태 확인",
-          "data": "Input\n> Normal Input(NO/NC)\n> Supervised Input(NO/NC/Short/Open)\n\n대상장치\n> Controller(CS40/CS20)\n> Reader(Master/Slave)\n> IO 장치(SIO2/DM20/IM120/DI24)",
-          "result": "1. Input 발생에 따른 상태가 실시간으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 19524,
-          "index": 33,
-          "step": "1. 모니터링> Device Tab\n2. 장치별 Output에 대한 실시간 상태 확인",
-          "data": "대상장치\n> Controller(CS40/CS20)\n> IO 장치(DM20/DI24)",
-          "result": "1. 현재 Output을 제어할 방법이 없어 확인불가.",
-          "attachments": []
-        },
-        {
-          "id": 19525,
-          "index": 34,
-          "step": "1. 모니터링> Device Tab\n2. 장치별 Aux Input에 대한 실시간 상태 확인",
-          "data": "대상장치\n> Controller(CS40/CS20)\n> IO 장치(IM120/OM120/DI24)",
-          "result": "1. Input 발생에 따른 상태가 실시간으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 19526,
-          "index": 35,
-          "step": "1. 모니터링> Device Tab\n2. 장치별 Relay에서 마우스 우클릭\n3. On/Off 를 통해 실시간 상태 확인",
-          "data": "대상장치\n>  Controller(CS40/CS20)\n> Reader(Master/Slave)\n> IO 장치(SIO2/DM20/OM120/IM120/DI24)",
-          "result": "1. Relay 상태가 실시간으로 표시된다.",
-          "attachments": []
-        },
-        {
-          "id": 19527,
-          "index": 36,
-          "step": "1. 모니터링> Device Tab\n2. 장치별 Relay UI 표시유무 확인",
-          "data": "Relay가 출입문에 할당된 상태",
-          "result": "1. 출입문에 할당되어 있다면 Relay 항목에 대해 표시하지 않는다",
-          "attachments": []
-        },
-        {
-          "id": 19528,
-          "index": 37,
-          "step": "1. 모니터링> Device Tab\n2. 장치별 Tamper 발생에 따른 실시간 상태확인",
-          "data": "대상장치\n> Controller(CS40/CS20) - Aux Input 이용한 Tamper 발생\n> Reader(Master/Slave/Wiegand)\n> IO 장치(IM120/DI24) - Aux Input 이용한 Tamper 발생",
-          "result": "1. Tamper On/Off 상태가 실시간으로 표시된다.",
-          "attachments": []
-        }
-      ]
-    },
-    "customfield_10236": null,
-    "customfield_10237": null,
-    "environment": null,
-    "customfield_10238": null,
-    "customfield_10239": null,
-    "duedate": null,
-    "comment": {
-      "comments": [
-        {
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/69293/comment/343150",
-          "id": "343150",
-          "author": {
-            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=jcahn",
-            "name": "jcahn",
-            "key": "jcahn",
-            "emailAddress": "jcahn@suprema.co.kr",
-            "avatarUrls": {
-              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10112",
-              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10112",
-              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10112",
-              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10112"
-            },
-            "displayName": "안종철",
-            "active": true,
-            "timeZone": "Asia/Seoul"
-          },
-          "body": "[~김소영]수석님,\r\nTC 31~37번 사항은 현시점 BSX와 관계없는 사항으로 확인 하였습니다. ",
-          "updateAuthor": {
-            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=jcahn",
-            "name": "jcahn",
-            "key": "jcahn",
-            "emailAddress": "jcahn@suprema.co.kr",
-            "avatarUrls": {
-              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10112",
-              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10112",
-              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10112",
-              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10112"
-            },
-            "displayName": "안종철",
-            "active": true,
-            "timeZone": "Asia/Seoul"
-          },
-          "created": "2025-05-28T13:24:10.000+0900",
-          "updated": "2025-05-28T13:24:10.000+0900"
-        },
-        {
-          "self": "https://jira.suprema.co.kr/rest/api/2/issue/69293/comment/343202",
-          "id": "343202",
-          "author": {
-            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
-            "name": "김소영",
-            "key": "김소영",
-            "emailAddress": "sykim@suprema.co.kr",
-            "avatarUrls": {
-              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-            },
-            "displayName": "김소영",
-            "active": true,
-            "timeZone": "Asia/Seoul"
-          },
-          "body": "네 이해했습니다. 말씀하신 사항들은 해당 제품에 적용된 후에 진행예정입니다.",
-          "updateAuthor": {
-            "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
-            "name": "김소영",
-            "key": "김소영",
-            "emailAddress": "sykim@suprema.co.kr",
-            "avatarUrls": {
-              "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-              "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-              "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-              "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-            },
-            "displayName": "김소영",
-            "active": true,
-            "timeZone": "Asia/Seoul"
-          },
-          "created": "2025-05-28T15:15:48.000+0900",
-          "updated": "2025-05-28T15:15:48.000+0900"
-        }
-      ],
-      "maxResults": 2,
-      "total": 2,
-      "startAt": 0
-    },
-    "customfield_10230": null,
-    "fixVersions": [],
-    "customfield_10231": null,
-    "customfield_10232": null,
-    "customfield_10233": null,
-    "customfield_12410": null,
-    "customfield_10234": null,
-    "customfield_10235": null,
-    "customfield_10225": null,
-    "customfield_12404": null,
-    "customfield_10226": null,
-    "customfield_12403": null,
-    "customfield_10227": null,
-    "customfield_12406": null,
-    "customfield_10228": null,
-    "customfield_10229": null,
-    "customfield_10900": null,
-    "customfield_12408": null,
-    "customfield_10901": null,
-    "customfield_10902": null,
-    "customfield_10903": null,
-    "customfield_12409": null,
-    "customfield_10904": null,
-    "customfield_10905": null,
-    "customfield_10220": null,
-    "priority": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/priority/10100",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/priorities/trivial.svg",
-      "name": "미할당",
-      "id": "10100"
-    },
-    "customfield_10221": null,
-    "customfield_12400": null,
-    "customfield_12402": null,
-    "customfield_10224": null,
-    "customfield_10214": null,
-    "customfield_10217": null,
-    "customfield_10218": null,
-    "timeestimate": null,
-    "versions": [],
-    "customfield_10219": null,
-    "status": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/status/3",
-      "description": "현재 담당자가 이 이슈를 처리하고 있습니다.",
-      "iconUrl": "https://jira.suprema.co.kr/images/icons/statuses/inprogress.png",
-      "name": "진행 중",
-      "id": "3",
-      "statusCategory": {
-        "self": "https://jira.suprema.co.kr/rest/api/2/statuscategory/4",
-        "id": 4,
-        "key": "indeterminate",
-        "colorName": "yellow",
-        "name": "진행 중"
-      }
-    },
-    "customfield_12510": null,
-    "customfield_10213": null,
-    "customfield_12511": null,
-    "customfield_10203": null,
-    "customfield_10204": null,
-    "customfield_12502": null,
-    "customfield_10205": null,
-    "customfield_10206": null,
-    "customfield_10207": null,
-    "aggregatetimeestimate": null,
-    "customfield_10208": null,
-    "customfield_10209": null,
-    "customfield_12509": null,
-    "customfield_12508": null,
-    "creator": {
-      "self": "https://jira.suprema.co.kr/rest/api/2/user?username=%EA%B9%80%EC%86%8C%EC%98%81",
-      "name": "김소영",
-      "key": "김소영",
-      "emailAddress": "sykim@suprema.co.kr",
-      "avatarUrls": {
-        "48x48": "https://jira.suprema.co.kr/secure/useravatar?avatarId=10122",
-        "24x24": "https://jira.suprema.co.kr/secure/useravatar?size=small&avatarId=10122",
-        "16x16": "https://jira.suprema.co.kr/secure/useravatar?size=xsmall&avatarId=10122",
-        "32x32": "https://jira.suprema.co.kr/secure/useravatar?size=medium&avatarId=10122"
-      },
-      "displayName": "김소영",
-      "active": true,
-      "timeZone": "Asia/Seoul"
-    },
-    "aggregateprogress": {
-      "progress": 0,
-      "total": 0
-    },
-    "customfield_10320": null,
-    "customfield_10321": null,
-    "customfield_12501": null,
-    "customfield_10202": null,
-    "customfield_12500": null,
-    "customfield_10313": "1|hzzdqf:",
-    "customfield_10316": null,
-    "customfield_10317": null,
-    "timespent": null,
-    "aggregatetimespent": null,
-    "customfield_10310": null,
-    "customfield_10302": null,
-    "customfield_10303": null,
-    "customfield_12601": null,
-    "customfield_10304": null,
-    "customfield_10305": null,
-    "customfield_10308": null,
-    "workratio": -1,
-    "created": "2025-02-04T18:42:05.000+0900",
-    "customfield_10533": null,
-    "customfield_10534": null,
-    "customfield_11501": null,
-    "customfield_11503": null,
-    "customfield_13001": null,
-    "customfield_13000": null,
-    "customfield_10530": null,
-    "customfield_10531": null,
-    "customfield_10532": null,
-    "customfield_10401": null,
-    "customfield_10522": null,
-    "customfield_10402": null,
-    "customfield_12700": null,
-    "customfield_10524": null,
-    "customfield_10525": null,
-    "customfield_12702": null,
-    "attachment": [],
-    "customfield_10526": null,
-    "customfield_12704": null,
-    "customfield_10528": null,
-    "customfield_12706": null,
-    "customfield_10520": null,
-    "customfield_10521": null,
-    "customfield_10400": null,
-    "customfield_10511": null,
-    "customfield_10512": null,
-    "customfield_11600": null,
-    "customfield_10513": null,
-    "customfield_10514": null,
-    "customfield_10515": null,
-    "customfield_10516": null,
-    "customfield_10517": null,
-    "customfield_10518": null,
-    "customfield_10519": null
+[
+  {
+    "id": "COMMONR-371_step_1",
+    "document": "Test Step: [Door 설정 상태]\n1. 모니터링> Door Tab\n2. 문을 닫힌 상태로 유지\n3. 모니터링에서 출입문 상태를 확인\n4. 문을 연다.\n5. 화면에서 출입문 상태가 \"열림\"으로 변경되었는지 확인\nExpected Result: 1. 상태가 각각 \"닫힘\"과 \"열림\"으로 실시간으로 표시된다.\n",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "1",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_2",
+    "document": "Test Step: [Door 설정 상태]\n1. 모니터링> Door Tab\n2. 인증성공을 통한 Relay 상태 확인\nExpected Result: 1. Relay 상태 정보가 실시간으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "2",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_3",
+    "document": "Test Step: [Door 설정 상태]\n1. 모니터링> Door Tab\n2. Exit Button 접지/해제를 통한 Relay 상태 확인\nExpected Result: 1. Relay 상태 정보가 실시간으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "3",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_4",
+    "document": "Test Step: [Door 설정 상태]\n1. 모니터링> Door Tab\n2. 인증성공 + Door Sensor 접지/해제을 통한 상태 확인\nExpected Result: 1. Relay 상태 및 Door 상태가 실시간으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "4",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_5",
+    "document": "Test Step: [Door 설정 상태]\n1. 모니터링> Door Tab\n2. Exit Button 접지 + Door Sensor 접지/해제을 통한 상태 확인\nExpected Result: 1. Relay 상태 및 Door 상태가 실시간 표시된다.\n2. Forced Open 상태 미표시",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "5",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_6",
+    "document": "Test Step: [Door 설정 상태]\n1. 모니터링> Door Tab\n2. Door Sensor 접지\n3. 상태확인\nExpected Result: 1. Forced Open 상태가 실시간으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "6",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_7",
+    "document": "Test Step: [Door 설정 상태]\n1. 모니터링> Door Tab\n2. Exit Button 접지 + Door Sensor 접지\n3. Timeout 동안 Sensor 접지 유지\n4. 상태확인\nTest Data: Held Open Timeout\n> 10초\nExpected Result: 1. 10초가 접지가 유지되면 Held Open 상태로 실시간 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "7",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_8",
+    "document": "Test Step: [Door 설정 상태]\n1. 모니터링> Door Tab\n2. Exit Button 접지 + Door Sensor 접지\n3. 9초 동안 Sensor 접지 후 접지해제\n4. 상태확인\nTest Data: Held Open Timeout\n> 10초\nExpected Result: 1. Relay 상태 및 Door 상태가 실시간으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "8",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_9",
+    "document": "Test Step: [Door_Alarm 설정]\n1. 모니터링> Door Tab\n2. 하나의 Reader에 동일 사용자 2회 인증\n3. 상태확인\nTest Data: 1) 출입기반 APB\n> OFF\n2) APB Type \n> Soft APB\n> Hard APB\n3) Alarm 설정\n> APB\nExpected Result: 1. APB Violation으로 동작되면서 APB Violation Alarm 상태가 실시간으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "9",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_10",
+    "document": "Test Step: [Door_Alarm 설정]\n1. 모니터링> Door Tab\n2. Reader에 동일 사용자 2회 인증\n3. 상태확인\nTest Data: 1) 출입기반 APB\n> ON\n2) APB Type \n> Soft APB\n> Hard APB\n3) Alarm 설정\n> APB\nExpected Result: 1. 인증성공으로 동작\n2. Relay 상태 및 Door 상태가 실시간으로 표시된다.\n> APB Violation Alarm 미발생.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "10",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_11",
+    "document": "Test Step: [Door_Alarm 설정]\n1. 모니터링> Door Tab\n2. Reader에 사용자 인증 후 Door Sensor 접지해 문열림 발생\n3. 다시 동일 Reader에 동일 사용자로 인증\n4. 상태확인\nTest Data: 1) 출입기반 APB\n> ON\n2) APB Type \n> Soft APB\n> Hard APB\n3) Alarm 설정\n> APB\nExpected Result: 1. APB Violation으로 동작되면서 APB Violation Alarm 상태가 실시간으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "11",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_12",
+    "document": "Test Step: [Door_Alarm 설정]\n1. 모니터링> Door Tab\n2. Reader에 동일 사용자 연속인증 \n3. 상태확인\nTest Data: 1) Timed APB\n> 입실장치만\n> 퇴실장치만\n> 모든 장치\n2) 초기화 시간\n> 10분 (Default)\nExpected Result: 1. APB Violation으로 동작되면서 APB Violation Alarm 상태가 실시간으로 표시된다. (Hard APB로 동작)",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "12",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_13",
+    "document": "Test Step: [Door_Alarm 설정]\n1. 모니터링> Door Tab\n2. Reader에 사용자 인증 후 10분 지난 다음 동일 사용자로 재인증\n3. 상태확인\nTest Data: 1) Timed APB\n> 입실장치만\n> 퇴실장치만\n> 모든 장치\n2) 초기화 시간\n> 10분 (Default)\nExpected Result: 1. 인증성공으로 동작\n2. Relay 상태 및 Door 상태가 실시간으로 표시된다.\n> APB Violation Alarm 미발생.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "13",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_14",
+    "document": "Test Step: [LIFT 설정]\n1. 모니터링> Door Tab\n2. Reader에 인증을 통해 상태 확인\nExpected Result: 1. Floor Relay 상태 정보가 실시간으로 표시된다.\n\n※ 일정문제로 출시 이후 보강되는 항목.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "14",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_15",
+    "document": "Test Step: [LIFT 설정]\n1. 모니터링> Door Tab\n2. Reader에 이중 인증을 통해 상태 확인\nExpected Result: 1. Floor Relay 상태 정보가 실시간으로 표시된다.\n\n※ 일정문제로 출시 이후 보강되는 항목.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "15",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_16",
+    "document": "Test Step: [LIFT 설정]\n1. 모니터링> Door Tab\n2. 설정된 Tamper 발생\n3. 상태확인\nTest Data: Tamper 설정\nAlarm 설정\n> Tamper On\nExpected Result: 1. Tamper 감지되면서  Alarm 상태가 실시간으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "16",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_17",
+    "document": "Test Step: [LIFT 설정]\n1. 모니터링> Door Tab\n2. Alarm에 설정된 Input 접지\n3. 상태확인\nTest Data: Alarm 설정\n> 신호입력\n\nInput\n> 본문 참조\nExpected Result: 1. LIFT 알람입력 감지되면서 Alarm 상태가 실시간으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "17",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_18",
+    "document": "Test Step: [FireAlarm Zone 설정]\n1. 모니터링> Door Tab\n2. Input 발생 후 상태확인\nTest Data: Local Zone\n> Door\n\nDevice/Input\n> Normal Input\nExpected Result: 1. FireAlarm Input이 발생되면서 Door 상태가 실시간으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "18",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_19",
+    "document": "Test Step: [FireAlarm Zone 설정]\n1. 모니터링> Door Tab\n2. Supervised Input 발생 후 상태확인\nTest Data: Local Zone\n> Door\n\nDevice/Input\n> Supervised Input\nExpected Result: 1. FireAlarm Input이 발생되면서 Door 상태가 실시간으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "19",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_20",
+    "document": "Test Step: [FireAlarm Zone 설정]\n1. 모니터링> Door Tab\n2. Input or Supervised Input 발생 후 상태확인\nTest Data: Local Zone\n> Door\n\nDevice/Input\n> Normal Input or Supervised Input\n\nAlarm 설정\nExpected Result: 1. FireAlarm Input이 발생되면서 Door 상태 및 Alarm 상태가 실시간으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "20",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_21",
+    "document": "Test Step: [FireAlarm Zone 설정]\n1. 모니터링> Door Tab\n2. Input 발생 후 상태확인\nTest Data: Local Zone\n> LIFT\n\nDevice/Input\n> Normal Input\nExpected Result: 1. FireAlarm Input이 발생되면서 LIFT 상태가 실시간으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "21",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_22",
+    "document": "Test Step: [FireAlarm Zone 설정]\n1. 모니터링> Door Tab\n2. Supervised Input 발생 후 상태확인\nTest Data: Local Zone\n> LIFT\n\nDevice/Input\n> Supervised Input\nExpected Result: 1. FireAlarm Input이 발생되면서 LIFT 상태가 실시간으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "22",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_23",
+    "document": "Test Step: [FireAlarm Zone 설정]\n1. 모니터링> Door Tab\n2. Input or Supervised Input 발생 후 상태확인\nTest Data: Local Zone\n> LIFT\n\nDevice/Input\n> Normal Input or Supervised Input\n\nAlarm 설정\nExpected Result: 1. FireAlarm Input이 발생되면서 LIFT 상태 및 Alarm 상태가 실시간으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "23",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_24",
+    "document": "Test Step: [FireAlarm Zone 설정]\n1. 모니터링> Door Tab\n2. Input or Supervised Input 발생 후 상태확인\nTest Data: Global Zone\n> Door & LIFT\n\nDevice/Input\n> Normal Input or Supervised Input\n\nAlarm 설정\nExpected Result: 1. FireAlarm Input이 발생되면서 Door&LIFT 상태 및 Alarm 상태가 실시간으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "24",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_25",
+    "document": "Test Step: [APB Zone_Alarm 설정]\n1. 모니터링> Door Tab\n2. 하나의 Reader에 동일 사용자 2회 인증\n3. 상태확인\nTest Data: Local Zone 설정\n1) 출입기반 APB\n> OFF\n2) APB Type \n> Soft APB\n> Hard APB\n3) Alarm 설정\nExpected Result: 1. APB Violation으로 동작되면서 APB Violation Alarm 상태가 실시간으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "25",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_26",
+    "document": "Test Step: [APB Zone_Alarm 설정]\n1. 모니터링> Door Tab\n2. Reader에 동일 사용자 2회 인증\n3. 상태확인\nTest Data: Local Zone 설정\n1) 출입기반 APB\n> ON\n2) APB Type \n> Soft APB\n> Hard APB\n3) Alarm 설정\nExpected Result: 1. 인증성공으로 동작\n2. Relay 상태 및 Door 상태가 실시간으로 표시된다.\n> APB Violation Alarm 미발생.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "26",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_27",
+    "document": "Test Step: [APB Zone_Alarm 설정]\n1. 모니터링> Door Tab\n2. Reader에 사용자 인증 후 Door Sensor 접지해 문열림 발생\n3. 다시 동일 Reader에 동일 사용자로 인증\n4. 상태확인\nTest Data: Local Zone 설정\n1) 출입기반 APB\n> ON\n2) APB Type \n> Soft APB\n> Hard APB\n3) Alarm 설정\nExpected Result: 1. APB Violation으로 동작되면서 APB Violation Alarm 상태가 실시간으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "27",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_28",
+    "document": "Test Step: [Intrusion Alarm Zone]\n1. 모니터링> Door Tab\n2. 인증을 통해 Arm/Disarm 시도 후 상태확인\nTest Data: Intrusion Config 설정\n> Arm/Disarm Setting(Device)\nExpected Result: 1. Door의 Arm/Disarm 상태가 실시간으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "28",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_29",
+    "document": "Test Step: [Intrusion Alarm Zone]\n1. 모니터링> Door Tab\n2. input을 통해 Arm/Disarm 시도 후 상태확인\nTest Data: Intrusion Config 설정\n> Arm/Disarm Setting(Input)\nExpected Result: 1. Door의 Arm/Disarm 상태가 실시간으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "29",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_30",
+    "document": "Test Step: [Intrusion Alarm Zone]\n1. 모니터링> Door Tab\n2. 인증 혹은 Input을 통해 Alarm으로 설정한 이벤트 발생으로 상태확인\nTest Data: Intrusion Config 설정\n1) Arm/Disarm Setting(Device) and > Arm/Disarm Setting(Input)\n2) Detect Intrusion\n3) Alarm 설정\nExpected Result: 1. Arm/Disarm 상태에서의 Alarm 에 해당하는 이벤트 발생시 Alarm 상태가 실시간으로 표시된다. ",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "30",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_31",
+    "document": "Test Step: [Interlock Zone]\n1. 모니터링> Door Tab\n2. 설정된 Alarm 발생에 따른 상태확인\nTest Data: Interlock Zone 지원 제품 - CS40/CS20\n\n1) Door 설정\n> Door Sensor 설정된 Door 2개 ~ Door 4개\n2) Alarm 설정\nExpected Result: 1. Alarm 상태가 실시간으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "31",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_32",
+    "document": "Test Step: 1. 모니터링> Device Tab\n2. 장치별 Input에 대한 실시간 상태 확인\nTest Data: Input\n> Normal Input(NO/NC)\n> Supervised Input(NO/NC/Short/Open)\n\n대상장치\n> Controller(CS40/CS20)\n> Reader(Master/Slave)\n> IO 장치(SIO2/DM20/IM120/DI24)\nExpected Result: 1. Input 발생에 따른 상태가 실시간으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "32",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_33",
+    "document": "Test Step: 1. 모니터링> Device Tab\n2. 장치별 Output에 대한 실시간 상태 확인\nTest Data: 대상장치\n> Controller(CS40/CS20)\n> IO 장치(DM20/DI24)\nExpected Result: 1. 현재 Output을 제어할 방법이 없어 확인불가.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "33",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_34",
+    "document": "Test Step: 1. 모니터링> Device Tab\n2. 장치별 Aux Input에 대한 실시간 상태 확인\nTest Data: 대상장치\n> Controller(CS40/CS20)\n> IO 장치(IM120/OM120/DI24)\nExpected Result: 1. Input 발생에 따른 상태가 실시간으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "34",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_35",
+    "document": "Test Step: 1. 모니터링> Device Tab\n2. 장치별 Relay에서 마우스 우클릭\n3. On/Off 를 통해 실시간 상태 확인\nTest Data: 대상장치\n>  Controller(CS40/CS20)\n> Reader(Master/Slave)\n> IO 장치(SIO2/DM20/OM120/IM120/DI24)\nExpected Result: 1. Relay 상태가 실시간으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "35",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_36",
+    "document": "Test Step: 1. 모니터링> Device Tab\n2. 장치별 Relay UI 표시유무 확인\nTest Data: Relay가 출입문에 할당된 상태\nExpected Result: 1. 출입문에 할당되어 있다면 Relay 항목에 대해 표시하지 않는다",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "36",
+      "source": "jira_test_step"
+    }
+  },
+  {
+    "id": "COMMONR-371_step_37",
+    "document": "Test Step: 1. 모니터링> Device Tab\n2. 장치별 Tamper 발생에 따른 실시간 상태확인\nTest Data: 대상장치\n> Controller(CS40/CS20) - Aux Input 이용한 Tamper 발생\n> Reader(Master/Slave/Wiegand)\n> IO 장치(IM120/DI24) - Aux Input 이용한 Tamper 발생\nExpected Result: 1. Tamper On/Off 상태가 실시간으로 표시된다.",
+    "metadata": {
+      "issue_key": "COMMONR-371",
+      "step_index": "37",
+      "source": "jira_test_step"
+    }
   }
-}
+]
