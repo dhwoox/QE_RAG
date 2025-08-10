@@ -1,0 +1,552 @@
+[
+  {
+    "timestamp": "2025-08-11T00:09:58.867814",
+    "framework": "llamaindex",
+    "test_type": "find_test_cases",
+    "query": "Master Admin과 관련된 테스트케이스 중에서 master admin 설정 갯수에 대한 테스트케이스를 가져와줘",
+    "result": {
+      "query": "Master Admin과 관련된 테스트케이스 중에서 master admin 설정 갯수에 대한 테스트케이스를 가져와줘",
+      "found_nodes": [
+        {
+          "content": "Test Step: 1. Device> 관리자 설정\nTest Data: 1. Master Password 설정\n2. 전체 관리자 설정\n3. 장치 설정 관리자 설정\n4. 사용자 관리자 설정\nExpected Result: 1. 사용자가 선택한 관리자로 설정되어야 한다.\n> 관리자에 대해 총 10명으로 제한(Old Version)\n  ex) 전체관리자 10명을 만들경우 다른 관리자에 대해 설정할 수 없음.\n> 관리자에 대해 총 1000명으로 제한(New Version)\n> Master Password는 1명 Only",
+          "metadata": {
+            "step_index": "1",
+            "source": "jira_test_step",
+            "issue_key": "COMMONR-380"
+          },
+          "score": 0.892050228371596,
+          "issue_key": "COMMONR-380",
+          "step_index": "1"
+        },
+        {
+          "content": "Test Step: [Master Admin 지원 신규HW]\n1. Master Admin 설정\n2. Secure Tamper: Enable 설정\n3. Secure Tamper 발생\nTest Data: UI 지원모델\n\n※ Device> Device Info> Mac을 길게 누르면 CE RED항목에 Ready로 표시로 확인가능.\nExpected Result: 1. Secure Tamper 발생시 장치 Reboot된다.\n2. Boot팅 후 Master Admin 설정화면 출력된다.\n3. 초기화 되는 사항은 스펙대로 동작한다.",
+          "metadata": {
+            "step_index": "5",
+            "source": "jira_test_step",
+            "issue_key": "COMMONR-218"
+          },
+          "score": 0.8717672721275579,
+          "issue_key": "COMMONR-218",
+          "step_index": "5"
+        },
+        {
+          "content": "Test Step: 1. 장치 두대이상 선택> Batch Edit 클릭\n2. 다수의 관리자(All/User/Config) 최대로 설정 후 적용\n3. 장치상세정보창 진입\n4. 관리자 확인\n5. All/User/Config 관리자로 메뉴진입시도\nTest Data: > Max 관리자수: 1000명\n> 각 장치별 관리자 미설정된 상태\nExpected Result: 1. All/User/Config 관리자가 설정된다.\n: 장치상세정보창_관리자 항목에 표시\n2. 관리자로 메뉴진입시 각 관리자에 해당하는 메뉴에 접근이 가능해야 한다.",
+          "metadata": {
+            "issue_key": "COMMONR-247",
+            "step_index": "1",
+            "source": "jira_test_step"
+          },
+          "score": 0.8716586276554439,
+          "issue_key": "COMMONR-247",
+          "step_index": "1"
+        },
+        {
+          "content": "Test Step: [Door 생성]\n1. Door > Add Door > Door 구성\n2. Manual Lock 동작\n3. Admin Menu 로그인 시도(Step 2에서 등록한 Lock Override) > Master장치에 인증 시도\nTest Data: 1. Card\n> Admin User에 등록된 Card이자 Lock Override 설정된 Card\nExpected Result: 1.Admin Menu 인증을 통해 장치 메뉴가 출력된다.\n> Lock Override 설정 의미 없음",
+          "metadata": {
+            "source": "jira_test_step",
+            "issue_key": "COMMONR-379",
+            "step_index": "18"
+          },
+          "score": 0.870296448437956,
+          "issue_key": "COMMONR-379",
+          "step_index": "18"
+        },
+        {
+          "content": "Test Step: 1. 장치 두대이상 선택> Batch Edit 클릭\n2. All/User/Config 관리자를 1명씩 설정 후 적용\n3. 장치상세정보창 진입\n4. 관리자 확인\n5. All/User/Config 관리자로 메뉴진입시도\nTest Data: > Max 관리자수: 1000명\n> 각 장치별 관리자 Max로 설정된 상태\nExpected Result: 1. 이미 Max로 설정되었기 때문에 새로 내린 관리자는 저장되지 않는다.\n2. 기존 관리자로 메뉴진입이 가능하다.",
+          "metadata": {
+            "step_index": "2",
+            "issue_key": "COMMONR-247",
+            "source": "jira_test_step"
+          },
+          "score": 0.8692886075153601,
+          "issue_key": "COMMONR-247",
+          "step_index": "2"
+        },
+        {
+          "content": "Test Step: [Master Admin 지원 FW로 Upgrade한 기존 HW]\n1. Master Admin 설정\n2. Secure Tamper: Enable 설정\n3. Secure Tamper 발생\nTest Data: UI 지원모델\nExpected Result: 1. Secure Tamper 발생시 장치 Reboot 되지 않는다.\n2. 초기화 되는 사항은 스펙대로 동작한다.",
+          "metadata": {
+            "source": "jira_test_step",
+            "issue_key": "COMMONR-218",
+            "step_index": "7"
+          },
+          "score": 0.8663309982975745,
+          "issue_key": "COMMONR-218",
+          "step_index": "7"
+        },
+        {
+          "content": "Test Step: 1. 장치 두대이상 선택> Batch Edit 클릭\n2. All/User/Config 관리자를 1명씩 설정 후 적용\n3. 장치상세정보창 진입\n4. 관리자 확인\nTest Data: > 기존FW의 장치 준비(2019 1H 릴리즈 전버전)\n  : Max 관리자수 - 10명\n> 각 장치별 관리자 설정된 상태\nExpected Result: 1. 기 설정된 관리자 + 새로운 관리자로 설정된다.\n2. 기 설정된 관리자 & 새 관리자로 메뉴진입이 가능하다.",
+          "metadata": {
+            "step_index": "3",
+            "source": "jira_test_step",
+            "issue_key": "COMMONR-247"
+          },
+          "score": 0.8661468790704204,
+          "issue_key": "COMMONR-247",
+          "step_index": "3"
+        },
+        {
+          "content": "Test Step: 1. Device> 장치관리자 설정\nTest Data: > 전체 관리자\n> 사용자 관리자\n> 설정 관리자\n\n{panel:title=지원 장치}\n||장치||버전||일정||\n|BS2|V1.8.0|2019 상반기|\n|BSA2|V1.7.0|\n|BSL2|V1.5.0|\n|BLN2|V1.2.0|\n|FS2|V1.3.0|\n|FL|V1.0.1|\n\n|FSF2|V1.0.0|2020 상반기|\n{panel}\nExpected Result: 사용자가 선택한 관리자로 설정되어야 한다.\n> 관리자에 대해 총 10명으로 제한(Old Version)\n  ex) 전체관리자 10명을 만들경우 다른 관리자에 대해 설정할 수 없음.\n> 관리자에 대해 총 1000명으로 제한(New Version)",
+          "metadata": {
+            "issue_key": "COMMONR-36",
+            "source": "jira_test_step",
+            "step_index": "1"
+          },
+          "score": 0.8659671862942201,
+          "issue_key": "COMMONR-36",
+          "step_index": "1"
+        },
+        {
+          "content": "Test Step: 1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인\nTest Data: LCD 지원 장치\n1. Master Password 설정되지 않은 상태\n2-1. 전체 관리자가 설정된 상태\n2-2. 장치 설정 관리자만 설정된 상태\n2-3. 사용자 관리자만 설정된 상태\nExpected Result: 1. Master 장치 Main UI에 출입문 제어 아이콘이 표시 된다.\n> Admin Menu 진입과 동일하게 동작하여, 사용자 권한을 제외한 모든 권한의 사용자가 인증 없이 출입문 제어 기능을 사용할 수 있다.(확인 필요)\n> 전체/ 장치 권한 관리자로 인증 후 진입하여 출입문 제어 기능 사용 및 정상적으로 기능 동작을 해야 한다.\n> 사용자 권한은 인증 시 \"Permission Denied\" 오류 메시지 발생하고, 진입이 안된다.\n> Master Password 기능 미지원 시 일반 사용자로 출입문 제어가 가능해야 한다.\n\n*** 추후 사양 확인 필요",
+          "metadata": {
+            "source": "jira_test_step",
+            "step_index": "5",
+            "issue_key": "COMMONR-374"
+          },
+          "score": 0.8632724561771079,
+          "issue_key": "COMMONR-374",
+          "step_index": "5"
+        },
+        {
+          "content": "Test Step: 1. Device : Master-Slave(SIO2, DM20)\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Tamper On 선택\n\n* Tamper on : 장치에서 Tamper 제거\nTest Data: [BioStar]\nAction Device : Master, Slave(SIO2, DM20)\n1. Action 선택\n1) Output\nExpected Result: 1. Trigger&Action에서의 Action은 최대 128 개까지 설정된다.\n> Event 중 Door/Lift/Zone에 해당하는 Action은 Trigger에서 설정을 해도 동작 안함\n2. 설정한 Action이 동시에 발생되어야 한다.\n> 최소 5개 이상 확인",
+          "metadata": {
+            "step_index": "12",
+            "issue_key": "COMMONR-226",
+            "source": "jira_test_step"
+          },
+          "score": 0.8629482473588578,
+          "issue_key": "COMMONR-226",
+          "step_index": "12"
+        },
+        {
+          "content": "Test Step: 1. 장치 두대이상 선택> Batch Edit 클릭\n2. All/User/Config 관리자를 Max로 설정 후 적용\n3. 장치상세정보창 진입> 관리자 확인\n4. 설정된 관리자로 메뉴진입 시도\n5. Reset All 시도\n6. 메뉴진입 시도\nTest Data: 인증서가 내려간 상태\nExpected Result: 1. 관리자가 삭제된다.\n2. 관리자 인증없이 메뉴진입이 가능하다.",
+          "metadata": {
+            "step_index": "6",
+            "source": "jira_test_step",
+            "issue_key": "COMMONR-247"
+          },
+          "score": 0.8619141350130204,
+          "issue_key": "COMMONR-247",
+          "step_index": "6"
+        },
+        {
+          "content": "Test Step: 1. Device : Master-Slave(SIO2, DM20)\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Pre-defined Alarm > Device : Master 장치 선택 > Tamper on 선택\n\n* Tamper on : 장치에서 Tamper 제거\nTest Data: [BioStar]\nAction Device : Master, Slave(SIO2, DM20)\n1. Action 선택\n1) Output\nExpected Result: 1. Trigger&Action에서의 Output은 최대 5개까지 설정되어야 한다.(BioStar UI)\n2. 현재 BioStar에서 5개 이상 설정이 가능하므로 5개 이상 설정하여 5번째 Action까지만 동작하는지 확인.\n3. 설정한 Action이 동시에 발생되어야 한다.",
+          "metadata": {
+            "issue_key": "COMMONR-13",
+            "step_index": "10",
+            "source": "jira_test_step"
+          },
+          "score": 0.8616448227641322,
+          "issue_key": "COMMONR-13",
+          "step_index": "10"
+        },
+        {
+          "content": "Test Step: 1. Zone> Add Zone> APB Zone 추가\n2. 하나의 리더에 동일사용자로 2회 이상 인증해 APB 위반 발생\n3. Reset Time 이내 Master 장치를 Reboot\nExpected Result: Reset Time 이내 Master가 Reboot되는 경우 모든 APB 정보 유지\n",
+          "metadata": {
+            "step_index": "7",
+            "source": "jira_test_step",
+            "issue_key": "COMMONR-12"
+          },
+          "score": 0.8614533299388334,
+          "issue_key": "COMMONR-12",
+          "step_index": "7"
+        },
+        {
+          "content": "Test Step: 1. Master-Slave and Wiegand로 구성한다.\n2. Device Func > Wiegnand를 선택한다.\n3. Wiegand > FormatID : H10301(26bit)로 선택한다.\n4. InputMask : 1,2,3,4,5 선택한다.\n5. CardMask : 1,2,3,4,5 선택한다.\n6. CSNIndex : 2번을 선택한 후 장치 적용.\n7. Multi Wiegand > 1번에 37bit 10304 설정.\n8. Multi Wiegand > 2번에 35bit 설정.\n9. Multi Wiegand > 3번에 32bit 설정.\n10. Multi Wiegand > 4번에 36bit 설정.\n11. Multi Wiegand > 5번에 26bit 설정.\n12. 자동 매칭 > 장치적용\n13. Diag Tool에서 확인\nTest Data: 1. Wiegand > FormatID : H10301(26bit)\n2. InputMask : 1,2,3,4\n3. CardMask : 1,2,3,4\n4. CSNIndex : 2번\n5. Multi Wiegand > 1번에 37bit 10304\n6. Multi Wiegand > 2번에 35bit\n7. Multi Wiegand > 3번에 32bit\n8. Multi Wiegand > 4번에 36bit\n9. Multi Wiegand > 4번에 26bit\nExpected Result: 1. CSN 35bit로 카드가 읽혀야 한다.\n2. Master, Slave, Wiegand 장치에서 37bit, 35bit, 32bit, 36bit, 26bit로 동작해야 한다.",
+          "metadata": {
+            "issue_key": "COMMONR-151",
+            "step_index": "4",
+            "source": "jira_test_step"
+          },
+          "score": 0.861284056766643,
+          "issue_key": "COMMONR-151",
+          "step_index": "4"
+        },
+        {
+          "content": "Test Step: 1. 관리자 설정/미설정\n2. 메뉴 진입 상태 > 인증 \n3. 메뉴 진입 시도와 동시에 인증 시도\nExpected Result: 1. 설정된 권한으로 출입문제어가 되어야 한다.\n> 메뉴 진입 후 인증 동작이 안되는 지 확인\n2. 관리자 미설정 상태에서 인증 시 메뉴 진입 시도로 인증 동작 안되는 지 확인한다.\n> 타이밍 상 발생할 수도 있으나, 대부분 인증 동작이 안되는 지 확인",
+          "metadata": {
+            "issue_key": "COMMONR-380",
+            "source": "jira_test_step",
+            "step_index": "9"
+          },
+          "score": 0.8610824304798085,
+          "issue_key": "COMMONR-380",
+          "step_index": "9"
+        },
+        {
+          "content": "Test Step: [UI지원모델 및 Admin 설정된 상태]\n\n1. 장치의 근태모드 설정되어 화면에 근태캡션 표시되는 상태\n2. Admin으로 메뉴접근 시도\n3. 메인화면으로 이동 후 화면에 근태캡션 표시유무 확인\nTest Data: 근태모드\n> By Schedule\n> Last Choice\n> Fixed\nExpected Result: 1. 설정한 값이 유지되어야 한다.\n> 화면표시 및 저장값",
+          "metadata": {
+            "source": "jira_test_step",
+            "issue_key": "COMMONR-9",
+            "step_index": "20"
+          },
+          "score": 0.8603225985676071,
+          "issue_key": "COMMONR-9",
+          "step_index": "20"
+        },
+        {
+          "content": "Test Step: [Master Admin 지원 신규HW]\n1. Secure Tamper: Enable 설정\n2. Secure Tamper 발생\nTest Data: UI 미지원모델 - ex. XP2\nExpected Result: 1. Secure Tamper 발생시 장치 Reboot 되지 않는다.\n2. 초기화 되는 사항은 스펙대로 동작한다.",
+          "metadata": {
+            "issue_key": "COMMONR-218",
+            "source": "jira_test_step",
+            "step_index": "6"
+          },
+          "score": 0.8601600075177077,
+          "issue_key": "COMMONR-218",
+          "step_index": "6"
+        },
+        {
+          "content": "Test Step: 1. 장치 두대이상 선택> Batch Edit 클릭\n2. All/User/Config 관리자를 Max로 설정 후 적용\n3. 장치상세정보창 진입> 관리자 확인\n4. 설정된 관리자로 메뉴진입 시도\n5. Without Network 시도\n6. 메뉴진입 시도\nTest Data: 인증서가 내려간 상태\nExpected Result: 1. 관리자가 삭제된다.\n2. 관리자 인증없이 메뉴진입이 가능하다.",
+          "metadata": {
+            "step_index": "7",
+            "issue_key": "COMMONR-247",
+            "source": "jira_test_step"
+          },
+          "score": 0.8588801963917193,
+          "issue_key": "COMMONR-247",
+          "step_index": "7"
+        },
+        {
+          "content": "Test Step: 1. 관리자 설정/미설정\n2. 메뉴 진입 상태 > 인증 \n3. 메뉴 진입 시도와 동시에 인증 시도\nExpected Result: 1. 설정된 Admin 권한으로 메뉴진입이 되어야 한다.\n> 메뉴 진입 후 인증 동작이 안되는 지 확인(FISF-1548)\n2. 관리자 미설정 상태에서 인증 시 메뉴 진입 시도로 인증 동작 안되는 지 확인한다.\n> 타이밍 상 발생할 수도 있으나, 대부분 인증 동작이 안되는 지 확인(FISF-1548)",
+          "metadata": {
+            "source": "jira_test_step",
+            "step_index": "15",
+            "issue_key": "COMMONR-36"
+          },
+          "score": 0.8587625623619302,
+          "issue_key": "COMMONR-36",
+          "step_index": "15"
+        },
+        {
+          "content": "Test Step: 1. 관리자 설정\n2. 인증서&Data 암호화 설정\n3. 메뉴진입시도\nExpected Result: 1. 설정된 Admin 권한으로 메뉴진입이 되어야 한다.\n* 해시키 수동관리 설정 시 장치에 사용자 재설정 후 확인",
+          "metadata": {
+            "source": "jira_test_step",
+            "step_index": "14",
+            "issue_key": "COMMONR-36"
+          },
+          "score": 0.858734256839103,
+          "issue_key": "COMMONR-36",
+          "step_index": "14"
+        }
+      ],
+      "issue_groups": {
+        "COMMONR-380": [
+          {
+            "content": "Test Step: 1. Device> 관리자 설정\nTest Data: 1. Master Password 설정\n2. 전체 관리자 설정\n3. 장치 설정 관리자 설정\n4. 사용자 관리자 설정\nExpected Result: 1. 사용자가 선택한 관리자로 설정되어야 한다.\n> 관리자에 대해 총 10명으로 제한(Old Version)\n  ex) 전체관리자 10명을 만들경우 다른 관리자에 대해 설정할 수 없음.\n> 관리자에 대해 총 1000명으로 제한(New Version)\n> Master Password는 1명 Only",
+            "metadata": {
+              "step_index": "1",
+              "source": "jira_test_step",
+              "issue_key": "COMMONR-380"
+            },
+            "score": 0.892050228371596,
+            "issue_key": "COMMONR-380",
+            "step_index": "1"
+          },
+          {
+            "content": "Test Step: 1. 관리자 설정/미설정\n2. 메뉴 진입 상태 > 인증 \n3. 메뉴 진입 시도와 동시에 인증 시도\nExpected Result: 1. 설정된 권한으로 출입문제어가 되어야 한다.\n> 메뉴 진입 후 인증 동작이 안되는 지 확인\n2. 관리자 미설정 상태에서 인증 시 메뉴 진입 시도로 인증 동작 안되는 지 확인한다.\n> 타이밍 상 발생할 수도 있으나, 대부분 인증 동작이 안되는 지 확인",
+            "metadata": {
+              "issue_key": "COMMONR-380",
+              "source": "jira_test_step",
+              "step_index": "9"
+            },
+            "score": 0.8610824304798085,
+            "issue_key": "COMMONR-380",
+            "step_index": "9"
+          }
+        ],
+        "COMMONR-218": [
+          {
+            "content": "Test Step: [Master Admin 지원 신규HW]\n1. Master Admin 설정\n2. Secure Tamper: Enable 설정\n3. Secure Tamper 발생\nTest Data: UI 지원모델\n\n※ Device> Device Info> Mac을 길게 누르면 CE RED항목에 Ready로 표시로 확인가능.\nExpected Result: 1. Secure Tamper 발생시 장치 Reboot된다.\n2. Boot팅 후 Master Admin 설정화면 출력된다.\n3. 초기화 되는 사항은 스펙대로 동작한다.",
+            "metadata": {
+              "step_index": "5",
+              "source": "jira_test_step",
+              "issue_key": "COMMONR-218"
+            },
+            "score": 0.8717672721275579,
+            "issue_key": "COMMONR-218",
+            "step_index": "5"
+          },
+          {
+            "content": "Test Step: [Master Admin 지원 신규HW]\n1. Secure Tamper: Enable 설정\n2. Secure Tamper 발생\nTest Data: UI 미지원모델 - ex. XP2\nExpected Result: 1. Secure Tamper 발생시 장치 Reboot 되지 않는다.\n2. 초기화 되는 사항은 스펙대로 동작한다.",
+            "metadata": {
+              "issue_key": "COMMONR-218",
+              "source": "jira_test_step",
+              "step_index": "6"
+            },
+            "score": 0.8601600075177077,
+            "issue_key": "COMMONR-218",
+            "step_index": "6"
+          },
+          {
+            "content": "Test Step: [Master Admin 지원 FW로 Upgrade한 기존 HW]\n1. Master Admin 설정\n2. Secure Tamper: Enable 설정\n3. Secure Tamper 발생\nTest Data: UI 지원모델\nExpected Result: 1. Secure Tamper 발생시 장치 Reboot 되지 않는다.\n2. 초기화 되는 사항은 스펙대로 동작한다.",
+            "metadata": {
+              "source": "jira_test_step",
+              "issue_key": "COMMONR-218",
+              "step_index": "7"
+            },
+            "score": 0.8663309982975745,
+            "issue_key": "COMMONR-218",
+            "step_index": "7"
+          }
+        ],
+        "COMMONR-247": [
+          {
+            "content": "Test Step: 1. 장치 두대이상 선택> Batch Edit 클릭\n2. 다수의 관리자(All/User/Config) 최대로 설정 후 적용\n3. 장치상세정보창 진입\n4. 관리자 확인\n5. All/User/Config 관리자로 메뉴진입시도\nTest Data: > Max 관리자수: 1000명\n> 각 장치별 관리자 미설정된 상태\nExpected Result: 1. All/User/Config 관리자가 설정된다.\n: 장치상세정보창_관리자 항목에 표시\n2. 관리자로 메뉴진입시 각 관리자에 해당하는 메뉴에 접근이 가능해야 한다.",
+            "metadata": {
+              "issue_key": "COMMONR-247",
+              "step_index": "1",
+              "source": "jira_test_step"
+            },
+            "score": 0.8716586276554439,
+            "issue_key": "COMMONR-247",
+            "step_index": "1"
+          },
+          {
+            "content": "Test Step: 1. 장치 두대이상 선택> Batch Edit 클릭\n2. All/User/Config 관리자를 1명씩 설정 후 적용\n3. 장치상세정보창 진입\n4. 관리자 확인\n5. All/User/Config 관리자로 메뉴진입시도\nTest Data: > Max 관리자수: 1000명\n> 각 장치별 관리자 Max로 설정된 상태\nExpected Result: 1. 이미 Max로 설정되었기 때문에 새로 내린 관리자는 저장되지 않는다.\n2. 기존 관리자로 메뉴진입이 가능하다.",
+            "metadata": {
+              "step_index": "2",
+              "issue_key": "COMMONR-247",
+              "source": "jira_test_step"
+            },
+            "score": 0.8692886075153601,
+            "issue_key": "COMMONR-247",
+            "step_index": "2"
+          },
+          {
+            "content": "Test Step: 1. 장치 두대이상 선택> Batch Edit 클릭\n2. All/User/Config 관리자를 1명씩 설정 후 적용\n3. 장치상세정보창 진입\n4. 관리자 확인\nTest Data: > 기존FW의 장치 준비(2019 1H 릴리즈 전버전)\n  : Max 관리자수 - 10명\n> 각 장치별 관리자 설정된 상태\nExpected Result: 1. 기 설정된 관리자 + 새로운 관리자로 설정된다.\n2. 기 설정된 관리자 & 새 관리자로 메뉴진입이 가능하다.",
+            "metadata": {
+              "step_index": "3",
+              "source": "jira_test_step",
+              "issue_key": "COMMONR-247"
+            },
+            "score": 0.8661468790704204,
+            "issue_key": "COMMONR-247",
+            "step_index": "3"
+          },
+          {
+            "content": "Test Step: 1. 장치 두대이상 선택> Batch Edit 클릭\n2. All/User/Config 관리자를 Max로 설정 후 적용\n3. 장치상세정보창 진입> 관리자 확인\n4. 설정된 관리자로 메뉴진입 시도\n5. Reset All 시도\n6. 메뉴진입 시도\nTest Data: 인증서가 내려간 상태\nExpected Result: 1. 관리자가 삭제된다.\n2. 관리자 인증없이 메뉴진입이 가능하다.",
+            "metadata": {
+              "step_index": "6",
+              "source": "jira_test_step",
+              "issue_key": "COMMONR-247"
+            },
+            "score": 0.8619141350130204,
+            "issue_key": "COMMONR-247",
+            "step_index": "6"
+          },
+          {
+            "content": "Test Step: 1. 장치 두대이상 선택> Batch Edit 클릭\n2. All/User/Config 관리자를 Max로 설정 후 적용\n3. 장치상세정보창 진입> 관리자 확인\n4. 설정된 관리자로 메뉴진입 시도\n5. Without Network 시도\n6. 메뉴진입 시도\nTest Data: 인증서가 내려간 상태\nExpected Result: 1. 관리자가 삭제된다.\n2. 관리자 인증없이 메뉴진입이 가능하다.",
+            "metadata": {
+              "step_index": "7",
+              "issue_key": "COMMONR-247",
+              "source": "jira_test_step"
+            },
+            "score": 0.8588801963917193,
+            "issue_key": "COMMONR-247",
+            "step_index": "7"
+          }
+        ],
+        "COMMONR-379": [
+          {
+            "content": "Test Step: [Door 생성]\n1. Door > Add Door > Door 구성\n2. Manual Lock 동작\n3. Admin Menu 로그인 시도(Step 2에서 등록한 Lock Override) > Master장치에 인증 시도\nTest Data: 1. Card\n> Admin User에 등록된 Card이자 Lock Override 설정된 Card\nExpected Result: 1.Admin Menu 인증을 통해 장치 메뉴가 출력된다.\n> Lock Override 설정 의미 없음",
+            "metadata": {
+              "source": "jira_test_step",
+              "issue_key": "COMMONR-379",
+              "step_index": "18"
+            },
+            "score": 0.870296448437956,
+            "issue_key": "COMMONR-379",
+            "step_index": "18"
+          }
+        ],
+        "COMMONR-36": [
+          {
+            "content": "Test Step: 1. Device> 장치관리자 설정\nTest Data: > 전체 관리자\n> 사용자 관리자\n> 설정 관리자\n\n{panel:title=지원 장치}\n||장치||버전||일정||\n|BS2|V1.8.0|2019 상반기|\n|BSA2|V1.7.0|\n|BSL2|V1.5.0|\n|BLN2|V1.2.0|\n|FS2|V1.3.0|\n|FL|V1.0.1|\n\n|FSF2|V1.0.0|2020 상반기|\n{panel}\nExpected Result: 사용자가 선택한 관리자로 설정되어야 한다.\n> 관리자에 대해 총 10명으로 제한(Old Version)\n  ex) 전체관리자 10명을 만들경우 다른 관리자에 대해 설정할 수 없음.\n> 관리자에 대해 총 1000명으로 제한(New Version)",
+            "metadata": {
+              "issue_key": "COMMONR-36",
+              "source": "jira_test_step",
+              "step_index": "1"
+            },
+            "score": 0.8659671862942201,
+            "issue_key": "COMMONR-36",
+            "step_index": "1"
+          },
+          {
+            "content": "Test Step: 1. 관리자 설정\n2. 인증서&Data 암호화 설정\n3. 메뉴진입시도\nExpected Result: 1. 설정된 Admin 권한으로 메뉴진입이 되어야 한다.\n* 해시키 수동관리 설정 시 장치에 사용자 재설정 후 확인",
+            "metadata": {
+              "source": "jira_test_step",
+              "step_index": "14",
+              "issue_key": "COMMONR-36"
+            },
+            "score": 0.858734256839103,
+            "issue_key": "COMMONR-36",
+            "step_index": "14"
+          },
+          {
+            "content": "Test Step: 1. 관리자 설정/미설정\n2. 메뉴 진입 상태 > 인증 \n3. 메뉴 진입 시도와 동시에 인증 시도\nExpected Result: 1. 설정된 Admin 권한으로 메뉴진입이 되어야 한다.\n> 메뉴 진입 후 인증 동작이 안되는 지 확인(FISF-1548)\n2. 관리자 미설정 상태에서 인증 시 메뉴 진입 시도로 인증 동작 안되는 지 확인한다.\n> 타이밍 상 발생할 수도 있으나, 대부분 인증 동작이 안되는 지 확인(FISF-1548)",
+            "metadata": {
+              "source": "jira_test_step",
+              "step_index": "15",
+              "issue_key": "COMMONR-36"
+            },
+            "score": 0.8587625623619302,
+            "issue_key": "COMMONR-36",
+            "step_index": "15"
+          }
+        ],
+        "COMMONR-374": [
+          {
+            "content": "Test Step: 1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인\nTest Data: LCD 지원 장치\n1. Master Password 설정되지 않은 상태\n2-1. 전체 관리자가 설정된 상태\n2-2. 장치 설정 관리자만 설정된 상태\n2-3. 사용자 관리자만 설정된 상태\nExpected Result: 1. Master 장치 Main UI에 출입문 제어 아이콘이 표시 된다.\n> Admin Menu 진입과 동일하게 동작하여, 사용자 권한을 제외한 모든 권한의 사용자가 인증 없이 출입문 제어 기능을 사용할 수 있다.(확인 필요)\n> 전체/ 장치 권한 관리자로 인증 후 진입하여 출입문 제어 기능 사용 및 정상적으로 기능 동작을 해야 한다.\n> 사용자 권한은 인증 시 \"Permission Denied\" 오류 메시지 발생하고, 진입이 안된다.\n> Master Password 기능 미지원 시 일반 사용자로 출입문 제어가 가능해야 한다.\n\n*** 추후 사양 확인 필요",
+            "metadata": {
+              "source": "jira_test_step",
+              "step_index": "5",
+              "issue_key": "COMMONR-374"
+            },
+            "score": 0.8632724561771079,
+            "issue_key": "COMMONR-374",
+            "step_index": "5"
+          }
+        ],
+        "COMMONR-226": [
+          {
+            "content": "Test Step: 1. Device : Master-Slave(SIO2, DM20)\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Tamper On 선택\n\n* Tamper on : 장치에서 Tamper 제거\nTest Data: [BioStar]\nAction Device : Master, Slave(SIO2, DM20)\n1. Action 선택\n1) Output\nExpected Result: 1. Trigger&Action에서의 Action은 최대 128 개까지 설정된다.\n> Event 중 Door/Lift/Zone에 해당하는 Action은 Trigger에서 설정을 해도 동작 안함\n2. 설정한 Action이 동시에 발생되어야 한다.\n> 최소 5개 이상 확인",
+            "metadata": {
+              "step_index": "12",
+              "issue_key": "COMMONR-226",
+              "source": "jira_test_step"
+            },
+            "score": 0.8629482473588578,
+            "issue_key": "COMMONR-226",
+            "step_index": "12"
+          }
+        ],
+        "COMMONR-13": [
+          {
+            "content": "Test Step: 1. Device : Master-Slave(SIO2, DM20)\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Pre-defined Alarm > Device : Master 장치 선택 > Tamper on 선택\n\n* Tamper on : 장치에서 Tamper 제거\nTest Data: [BioStar]\nAction Device : Master, Slave(SIO2, DM20)\n1. Action 선택\n1) Output\nExpected Result: 1. Trigger&Action에서의 Output은 최대 5개까지 설정되어야 한다.(BioStar UI)\n2. 현재 BioStar에서 5개 이상 설정이 가능하므로 5개 이상 설정하여 5번째 Action까지만 동작하는지 확인.\n3. 설정한 Action이 동시에 발생되어야 한다.",
+            "metadata": {
+              "issue_key": "COMMONR-13",
+              "step_index": "10",
+              "source": "jira_test_step"
+            },
+            "score": 0.8616448227641322,
+            "issue_key": "COMMONR-13",
+            "step_index": "10"
+          }
+        ],
+        "COMMONR-12": [
+          {
+            "content": "Test Step: 1. Zone> Add Zone> APB Zone 추가\n2. 하나의 리더에 동일사용자로 2회 이상 인증해 APB 위반 발생\n3. Reset Time 이내 Master 장치를 Reboot\nExpected Result: Reset Time 이내 Master가 Reboot되는 경우 모든 APB 정보 유지\n",
+            "metadata": {
+              "step_index": "7",
+              "source": "jira_test_step",
+              "issue_key": "COMMONR-12"
+            },
+            "score": 0.8614533299388334,
+            "issue_key": "COMMONR-12",
+            "step_index": "7"
+          }
+        ],
+        "COMMONR-151": [
+          {
+            "content": "Test Step: 1. Master-Slave and Wiegand로 구성한다.\n2. Device Func > Wiegnand를 선택한다.\n3. Wiegand > FormatID : H10301(26bit)로 선택한다.\n4. InputMask : 1,2,3,4,5 선택한다.\n5. CardMask : 1,2,3,4,5 선택한다.\n6. CSNIndex : 2번을 선택한 후 장치 적용.\n7. Multi Wiegand > 1번에 37bit 10304 설정.\n8. Multi Wiegand > 2번에 35bit 설정.\n9. Multi Wiegand > 3번에 32bit 설정.\n10. Multi Wiegand > 4번에 36bit 설정.\n11. Multi Wiegand > 5번에 26bit 설정.\n12. 자동 매칭 > 장치적용\n13. Diag Tool에서 확인\nTest Data: 1. Wiegand > FormatID : H10301(26bit)\n2. InputMask : 1,2,3,4\n3. CardMask : 1,2,3,4\n4. CSNIndex : 2번\n5. Multi Wiegand > 1번에 37bit 10304\n6. Multi Wiegand > 2번에 35bit\n7. Multi Wiegand > 3번에 32bit\n8. Multi Wiegand > 4번에 36bit\n9. Multi Wiegand > 4번에 26bit\nExpected Result: 1. CSN 35bit로 카드가 읽혀야 한다.\n2. Master, Slave, Wiegand 장치에서 37bit, 35bit, 32bit, 36bit, 26bit로 동작해야 한다.",
+            "metadata": {
+              "issue_key": "COMMONR-151",
+              "step_index": "4",
+              "source": "jira_test_step"
+            },
+            "score": 0.861284056766643,
+            "issue_key": "COMMONR-151",
+            "step_index": "4"
+          }
+        ],
+        "COMMONR-9": [
+          {
+            "content": "Test Step: [UI지원모델 및 Admin 설정된 상태]\n\n1. 장치의 근태모드 설정되어 화면에 근태캡션 표시되는 상태\n2. Admin으로 메뉴접근 시도\n3. 메인화면으로 이동 후 화면에 근태캡션 표시유무 확인\nTest Data: 근태모드\n> By Schedule\n> Last Choice\n> Fixed\nExpected Result: 1. 설정한 값이 유지되어야 한다.\n> 화면표시 및 저장값",
+            "metadata": {
+              "source": "jira_test_step",
+              "issue_key": "COMMONR-9",
+              "step_index": "20"
+            },
+            "score": 0.8603225985676071,
+            "issue_key": "COMMONR-9",
+            "step_index": "20"
+          }
+        ]
+      },
+      "total_found": 20,
+      "unique_issues": 11,
+      "llm_analysis": "\n\n### **Master Admin 설정 갯수 관련 테스트케이스 정리**  \n다음은 **Master Admin 설정 갯수 제한**(예: 10명, 1000명)에 대한 테스트케이스를 **이슈별로 그룹화**하여 체계적으로 정리한 내용입니다.  \n\n---\n\n#### **1. COMMONR-247: 관리자 설정 갯수 제한 테스트**  \n| 이슈 키 | 테스트 스텝 | 테스트 데이터 | 예상 결과 |  \n|---------|-------------|--------------|----------|  \n| **COMMONR-247** | 1. 장치 두대 이상 선택 > Batch Edit 클릭<br>2. All/User/Config 관리자를 1명씩 설정 후 적용 | - Max 관리자수: 1000명<br>- 각 장치별 관리자 미설정된 상태 | 1. All/User/Config 관리자가 설정된다.<br>2. 관리자로 메뉴 진입 시 각 권한에 해당하는 메뉴 접근 가능 |  \n| **COMMONR-247** | 1. 장치 두대 이상 선택 > Batch Edit 클릭<br>2. All/User/Config 관리자를 Max로 설정 후 적용 | - Max 관리자수: 1000명<br>- 기존 FW 장치 (Max 10명) | 1. Max로 설정된 상태에서 추가 저장 불가<br>2. 기존 관리자로 메뉴 진입 가능 |  \n| **COMMONR-247** | 1. 장치 두대 이상 선택 > Batch Edit 클릭<br>2. 기존 FW 장치 (Max 10명)에 관리자 설정 | - Max 관리자수: 10명<br>- 기존 관리자 설정된 상태 | 1. 기 설정된 관리자 + 새 관리자로 설정됨<br>2. 모든 관리자로 메뉴 진입 가능 |  \n\n---\n\n#### **2. COMMONR-380: Master Password 및 관리자 제한 테스트**  \n| 이슈 키 | 테스트 스텝 | 테스트 데이터 | 예상 결과 |  \n|---------|-------------|--------------|----------|  \n| **COMMONR-380** | 1. Master Password 설정<br>2. 전체 관리자 설정 | - Master Password: 1명 Only<br>- 관리자 제한: 10명 (Old Version) / 1000명 (New Version) | 1. Master Password는 1명만 설정 가능<br>2. 관리자 수 제한에 따라 설정 불가능 |  \n\n---\n\n#### **3. COMMONR-36: 관리자 제한 사양 테스트**  \n| 이슈 키 | 테스트 스텝 | 테스트 데이터 | 예상 결과 |  \n|---------|-------------|--------------|----------|  \n| **COMMONR-36** | 1. 장치관리자 설정 | - Old Version: 관리자 제한 10명<br>- New Version: 관리자 제한 1000명 | 1. 사용자가 선택한 관리자로 설정됨<br>2. Old Version: 10명 초과 시 추가 불가능 |  \n\n---\n\n### **추천 추가 검색 키워드**  \n현재 제공된 데이터에서 Master Admin 갯수 제한에 대한 테스트케이스는 **COMMONR-247, COMMONR-36, COMMONR-380**에 집중되어 있습니다.  \n추가 검색 시 사용할 수 있는 키워드:  \n- `Master Admin count limit`  \n- `Admin user maximum number`  \n- `New Version 1000 admin limit`  \n- `Old Version 10 admin restriction`  \n\n---\n\n### **요약**  \n- **Master Admin 갯수 제한**: 10명 (Old Version) / 1000명 (New Version)  \n- **테스트 포인트**:  \n  - Master Password는 1명만 설정 가능 (COMMONR-380)  \n  - Batch Edit 시 Max 제한 초과 시 저장 불가 (COMMONR-247)  \n  - 기존 FW와 New Version 간 제한 차이 확인 (COMMONR-36)  \n\n필요에 따라 추가 테스트케이스를 검색하거나, 특정 장치 버전(예: BS2, BSA2)에 대한 제한 사항을 확인할 수 있습니다."
+    }
+  },
+  {
+    "timestamp": "2025-08-11T00:18:30.759383",
+    "framework": "llamaindex",
+    "test_type": "generate_test_case",
+    "query": "장치에 전체 관리자 설정을 강제할 수 있는 Master Admin 기능이 있는데 이 기능은 다음과 같이 동작을 해. 다만 이 기능이 동작을 하기 위해서는 조건이 있어. 버전이 V1.4.0 이상으로 생산된 제품이어야해. 조건에 부합되는 장치의 전원이 인가되면 화면에 Master Admin 설정화면이 표시가 돼. 하지만 버전이 V1.4.0 이하로 생산된 제품의 경우에는 장치 전원이 인가되면 메인화면이 표시가 돼. 버전은 BS3의 이전 버전들을 참고해서 테스트 케이스로 작성해줘.",
+    "result": {
+      "requirement": "장치에 전체 관리자 설정을 강제할 수 있는 Master Admin 기능이 있는데 이 기능은 다음과 같이 동작을 해. 다만 이 기능이 동작을 하기 위해서는 조건이 있어. 버전이 V1.4.0 이상으로 생산된 제품이어야해. 조건에 부합되는 장치의 전원이 인가되면 화면에 Master Admin 설정화면이 표시가 돼. 하지만 버전이 V1.4.0 이하로 생산된 제품의 경우에는 장치 전원이 인가되면 메인화면이 표시가 돼. 버전은 BS3의 이전 버전들을 참고해서 테스트 케이스로 작성해줘.",
+      "generated_test_case": "\n\n**테스트 케이스: V1.4.0 이상 장치 전원 인가 시 Master Admin 화면 표시 확인**  \n- **테스트 목적**: 버전 1.4.0 이상의 장치가 전원을 인가하면 Master Admin 설정 화면이 표시되는지 확인.  \n- **전제 조건**:  \n  - 테스트 장치는 BS2 (V1.8.0) 또는 BSA2 (V1.7.0) 등 버전 1.",
+      "reference_analysis": {
+        "pattern_analysis": "분석된 15개 참조 자료에서 1개 이슈 타입 발견",
+        "patterns": {
+          "common_steps": [
+            "test step: 1. door> add door> door 생성\n2. door에 속한 장치의 master 장치 main ui 확인\ntest data: lcd 지원 장치\n1. m",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > event >",
+            "test step: 1. device> 장치관리자 설정\ntest data: > 전체 관리자\n> 사용자 관리자\n> 설정 관리자\n\n{panel:title=지원 장치}\n||장치||버전|",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > pre-def",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > input 선",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > input 선",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > input 선",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > input 선",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > event >",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > pre-def",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > event >",
+            "test step: 1. device : master-slave(sio2, dm20) 연결\n2. device > advanced > trigger & action > +add > ",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > pre-def",
+            "test step: 1. device : master-slave(sio2, dm20) 연결\n2. device > advanced > trigger & action > +add > ",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > event >"
+          ],
+          "test_data_patterns": [
+            "test step: 1. door> add door> door 생성\n2. door에 속한 장치의 master 장치 main ui 확인\ntest data: lcd 지원 장치\n1. m",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > event >",
+            "test step: 1. device> 장치관리자 설정\ntest data: > 전체 관리자\n> 사용자 관리자\n> 설정 관리자\n\n{panel:title=지원 장치}\n||장치||버전|",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > pre-def",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > input 선",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > input 선",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > input 선",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > input 선",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > event >",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > pre-def",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > event >",
+            "test step: 1. device : master-slave(sio2, dm20) 연결\n2. device > advanced > trigger & action > +add > ",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > pre-def",
+            "test step: 1. device : master-slave(sio2, dm20) 연결\n2. device > advanced > trigger & action > +add > ",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > event >"
+          ],
+          "result_patterns": [
+            "test step: 1. door> add door> door 생성\n2. door에 속한 장치의 master 장치 main ui 확인\ntest data: lcd 지원 장치\n1. m",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > event >",
+            "test step: 1. device> 장치관리자 설정\ntest data: > 전체 관리자\n> 사용자 관리자\n> 설정 관리자\n\n{panel:title=지원 장치}\n||장치||버전|",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > pre-def",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > input 선",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > input 선",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > input 선",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > input 선",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > event >",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > pre-def",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > event >",
+            "test step: 1. device : master-slave(sio2, dm20) 연결\n2. device > advanced > trigger & action > +add > ",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > pre-def",
+            "test step: 1. device : master-slave(sio2, dm20) 연결\n2. device > advanced > trigger & action > +add > ",
+            "test step: 1. device : master만 연결\n2. device > advanced > trigger & action > +add > trigger > event >"
+          ],
+          "issue_types": [
+            "COMMONR"
+          ]
+        },
+        "reference_quality": 15
+      },
+      "reference_count": 15,
+      "generation_quality_score": 50
+    }
+  }
+]

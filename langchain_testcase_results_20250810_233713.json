@@ -1,0 +1,208 @@
+[
+  {
+    "timestamp": "2025-08-10T23:35:11.987347",
+    "framework": "langchain",
+    "test_type": "find_test_cases",
+    "query": "Master Admin과 관련된 테스트케이스 중에서 master admin 설정 갯수에 대한 테스트케이스를 가져와줘",
+    "result": {
+      "query": "Master Admin과 관련된 테스트케이스 중에서 master admin 설정 갯수에 대한 테스트케이스를 가져와줘",
+      "answer": "Error: LM Studio 통신 오류 - HTTPConnectionPool(host='127.0.0.1', port=1234): Read timed out. (read timeout=120)",
+      "found_test_cases": [
+        {
+          "content": "Test Step: 1. Device> 관리자 설정\nTest Data: 1. Master Password 설정\n2. 전체 관리자 설정\n3. 장치 설정 관리자 설정\n4. 사용자 관리자 설정\nExpected Result: 1. 사용자가 선택한 관리자로 설정되어야 한다.\n> 관리자에 대해 총 10명으로 제한(Old Version)\n  ex) 전체관리자 10명을 만들경우 다른 관리자에 대해 설정할 수 없음.\n> 관리자에 대해 총 1000명으로 제한(New Version)\n> Master Password는 1명 Only",
+          "metadata": {
+            "step_index": "1",
+            "issue_key": "COMMONR-380",
+            "source": "jira_test_step"
+          },
+          "issue_key": "COMMONR-380",
+          "step_index": "1"
+        },
+        {
+          "content": "Test Step: [Master Admin 지원 신규HW]\n1. Master Admin 설정\n2. Secure Tamper: Enable 설정\n3. Secure Tamper 발생\nTest Data: UI 지원모델\n\n※ Device> Device Info> Mac을 길게 누르면 CE RED항목에 Ready로 표시로 확인가능.\nExpected Result: 1. Secure Tamper 발생시 장치 Reboot된다.\n2. Boot팅 후 Master Admin 설정화면 출력된다.\n3. 초기화 되는 사항은 스펙대로 동작한다.",
+          "metadata": {
+            "step_index": "5",
+            "issue_key": "COMMONR-218",
+            "source": "jira_test_step"
+          },
+          "issue_key": "COMMONR-218",
+          "step_index": "5"
+        },
+        {
+          "content": "Test Step: 1. 장치 두대이상 선택> Batch Edit 클릭\n2. 다수의 관리자(All/User/Config) 최대로 설정 후 적용\n3. 장치상세정보창 진입\n4. 관리자 확인\n5. All/User/Config 관리자로 메뉴진입시도\nTest Data: > Max 관리자수: 1000명\n> 각 장치별 관리자 미설정된 상태\nExpected Result: 1. All/User/Config 관리자가 설정된다.\n: 장치상세정보창_관리자 항목에 표시\n2. 관리자로 메뉴진입시 각 관리자에 해당하는 메뉴에 접근이 가능해야 한다.",
+          "metadata": {
+            "issue_key": "COMMONR-247",
+            "step_index": "1",
+            "source": "jira_test_step"
+          },
+          "issue_key": "COMMONR-247",
+          "step_index": "1"
+        },
+        {
+          "content": "Test Step: [Door 생성]\n1. Door > Add Door > Door 구성\n2. Manual Lock 동작\n3. Admin Menu 로그인 시도(Step 2에서 등록한 Lock Override) > Master장치에 인증 시도\nTest Data: 1. Card\n> Admin User에 등록된 Card이자 Lock Override 설정된 Card\nExpected Result: 1.Admin Menu 인증을 통해 장치 메뉴가 출력된다.\n> Lock Override 설정 의미 없음",
+          "metadata": {
+            "step_index": "18",
+            "issue_key": "COMMONR-379",
+            "source": "jira_test_step"
+          },
+          "issue_key": "COMMONR-379",
+          "step_index": "18"
+        },
+        {
+          "content": "Test Step: 1. 장치 두대이상 선택> Batch Edit 클릭\n2. All/User/Config 관리자를 1명씩 설정 후 적용\n3. 장치상세정보창 진입\n4. 관리자 확인\n5. All/User/Config 관리자로 메뉴진입시도\nTest Data: > Max 관리자수: 1000명\n> 각 장치별 관리자 Max로 설정된 상태\nExpected Result: 1. 이미 Max로 설정되었기 때문에 새로 내린 관리자는 저장되지 않는다.\n2. 기존 관리자로 메뉴진입이 가능하다.",
+          "metadata": {
+            "source": "jira_test_step",
+            "step_index": "2",
+            "issue_key": "COMMONR-247"
+          },
+          "issue_key": "COMMONR-247",
+          "step_index": "2"
+        },
+        {
+          "content": "Test Step: [Master Admin 지원 FW로 Upgrade한 기존 HW]\n1. Master Admin 설정\n2. Secure Tamper: Enable 설정\n3. Secure Tamper 발생\nTest Data: UI 지원모델\nExpected Result: 1. Secure Tamper 발생시 장치 Reboot 되지 않는다.\n2. 초기화 되는 사항은 스펙대로 동작한다.",
+          "metadata": {
+            "step_index": "7",
+            "issue_key": "COMMONR-218",
+            "source": "jira_test_step"
+          },
+          "issue_key": "COMMONR-218",
+          "step_index": "7"
+        },
+        {
+          "content": "Test Step: 1. 장치 두대이상 선택> Batch Edit 클릭\n2. All/User/Config 관리자를 1명씩 설정 후 적용\n3. 장치상세정보창 진입\n4. 관리자 확인\nTest Data: > 기존FW의 장치 준비(2019 1H 릴리즈 전버전)\n  : Max 관리자수 - 10명\n> 각 장치별 관리자 설정된 상태\nExpected Result: 1. 기 설정된 관리자 + 새로운 관리자로 설정된다.\n2. 기 설정된 관리자 & 새 관리자로 메뉴진입이 가능하다.",
+          "metadata": {
+            "step_index": "3",
+            "source": "jira_test_step",
+            "issue_key": "COMMONR-247"
+          },
+          "issue_key": "COMMONR-247",
+          "step_index": "3"
+        },
+        {
+          "content": "Test Step: 1. Device> 장치관리자 설정\nTest Data: > 전체 관리자\n> 사용자 관리자\n> 설정 관리자\n\n{panel:title=지원 장치}\n||장치||버전||일정||\n|BS2|V1.8.0|2019 상반기|\n|BSA2|V1.7.0|\n|BSL2|V1.5.0|\n|BLN2|V1.2.0|\n|FS2|V1.3.0|\n|FL|V1.0.1|\n\n|FSF2|V1.0.0|2020 상반기|\n{panel}\nExpected Result: 사용자가 선택한 관리자로 설정되어야 한다.\n> 관리자에 대해 총 10명으로 제한(Old Version)\n  ex) 전체관리자 10명을 만들경우 다른 관리자에 대해 설정할 수 없음.\n> 관리자에 대해 총 1000명으로 제한(New Version)",
+          "metadata": {
+            "source": "jira_test_step",
+            "issue_key": "COMMONR-36",
+            "step_index": "1"
+          },
+          "issue_key": "COMMONR-36",
+          "step_index": "1"
+        },
+        {
+          "content": "Test Step: 1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인\nTest Data: LCD 지원 장치\n1. Master Password 설정되지 않은 상태\n2-1. 전체 관리자가 설정된 상태\n2-2. 장치 설정 관리자만 설정된 상태\n2-3. 사용자 관리자만 설정된 상태\nExpected Result: 1. Master 장치 Main UI에 출입문 제어 아이콘이 표시 된다.\n> Admin Menu 진입과 동일하게 동작하여, 사용자 권한을 제외한 모든 권한의 사용자가 인증 없이 출입문 제어 기능을 사용할 수 있다.(확인 필요)\n> 전체/ 장치 권한 관리자로 인증 후 진입하여 출입문 제어 기능 사용 및 정상적으로 기능 동작을 해야 한다.\n> 사용자 권한은 인증 시 \"Permission Denied\" 오류 메시지 발생하고, 진입이 안된다.\n> Master Password 기능 미지원 시 일반 사용자로 출입문 제어가 가능해야 한다.\n\n*** 추후 사양 확인 필요",
+          "metadata": {
+            "step_index": "5",
+            "issue_key": "COMMONR-374",
+            "source": "jira_test_step"
+          },
+          "issue_key": "COMMONR-374",
+          "step_index": "5"
+        },
+        {
+          "content": "Test Step: 1. Device : Master-Slave(SIO2, DM20)\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Tamper On 선택\n\n* Tamper on : 장치에서 Tamper 제거\nTest Data: [BioStar]\nAction Device : Master, Slave(SIO2, DM20)\n1. Action 선택\n1) Output\nExpected Result: 1. Trigger&Action에서의 Action은 최대 128 개까지 설정된다.\n> Event 중 Door/Lift/Zone에 해당하는 Action은 Trigger에서 설정을 해도 동작 안함\n2. 설정한 Action이 동시에 발생되어야 한다.\n> 최소 5개 이상 확인",
+          "metadata": {
+            "issue_key": "COMMONR-226",
+            "source": "jira_test_step",
+            "step_index": "12"
+          },
+          "issue_key": "COMMONR-226",
+          "step_index": "12"
+        }
+      ],
+      "total_found": 10
+    }
+  },
+  {
+    "timestamp": "2025-08-10T23:37:13.947043",
+    "framework": "langchain",
+    "test_type": "generate_test_case",
+    "query": "장치에 전체 관리자 설정을 강제할 수 있는 Master Admin 기능이 있는데 이 기능은 다음과 같이 동작을 해. 다만 이 기능이 동작을 하기 위해서는 조건이 있어. 버전이 V1.4.0 이상으로 생산된 제품이어야해. 조건에 부합되는 장치의 전원이 인가되면 화면에 Master Admin 설정화면이 표시가 돼. 하지만 버전이 V1.4.0 이하로 생산된 제품의 경우에는 장치 전원이 인가되면 메인화면이 표시가 돼. 버전은 BS3의 이전 버전들을 참고해서 테스트 케이스로 작성해줘.",
+    "result": {
+      "requirement": "장치에 전체 관리자 설정을 강제할 수 있는 Master Admin 기능이 있는데 이 기능은 다음과 같이 동작을 해. 다만 이 기능이 동작을 하기 위해서는 조건이 있어. 버전이 V1.4.0 이상으로 생산된 제품이어야해. 조건에 부합되는 장치의 전원이 인가되면 화면에 Master Admin 설정화면이 표시가 돼. 하지만 버전이 V1.4.0 이하로 생산된 제품의 경우에는 장치 전원이 인가되면 메인화면이 표시가 돼. 버전은 BS3의 이전 버전들을 참고해서 테스트 케이스로 작성해줘.",
+      "generated_test_case": "Error: LM Studio 통신 오류 - HTTPConnectionPool(host='127.0.0.1', port=1234): Read timed out. (read timeout=120)",
+      "reference_test_cases": [
+        {
+          "content": "Test Step: 1. Door> Add Door> Door 생성\n2. Door에 속한 장치의 Master 장치 Main UI 확인\nTest Data: LCD 지원 장치\n1. Master Password 설정되지 않은 상태\n2-1. 전체 관리자가 설정된 상태\n2-2. 장치 설정 관리자만 설정된 상태\n2-3. 사용자 관리자만 설정된 상태\nExpected Result: 1. Master 장치 Main UI에 출입문 제어 아이콘이 표시 된다.\n> Admin Menu 진입과 동일하게 동작하여, 사용자 권한을 제외한 모든 권한의 사용자가 인증 없이 출입문 제어 기능을 사용할 수 있다.(확인 필요)\n> 전체/ 장치 권한 관리자로 인증 후 진입하여 출입문 제어 기능 사용 및 정상적으로 기능 동작을 해야 한다.\n> 사용자 권한은 인증 시 \"Permission Denied\" 오류 메시지 발생하고, 진입이 안된다.\n> Master Password 기능 미지원 시 일반 사용자로 출입문 제어가 가능해야 한다.\n\n*** 추후 사양 확인 필요",
+          "metadata": {
+            "source": "jira_test_step",
+            "issue_key": "COMMONR-374",
+            "step_index": "5"
+          },
+          "issue_key": "COMMONR-374",
+          "step_index": "5"
+        },
+        {
+          "content": "Test Step: 1. Device : Master만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Event > Device : Master 장치 선택 > Tamper On 선택\n\n* Tamper on : 장치에서 Tamper 제거\nTest Data: [BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*Alert Sound\n> 지원하는 장치만 표시됨\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied\nExpected Result: 1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n\n*사양 변경으로 인한 삭제 항목\n1. Signal Alarm에 대해 Release All Alarm이 된다.\n2. 장치가 Reboot 된다.",
+          "metadata": {
+            "step_index": "1",
+            "issue_key": "COMMONR-226",
+            "source": "jira_test_step"
+          },
+          "issue_key": "COMMONR-226",
+          "step_index": "1"
+        },
+        {
+          "content": "Test Step: 1. Device> 장치관리자 설정\nTest Data: > 전체 관리자\n> 사용자 관리자\n> 설정 관리자\n\n{panel:title=지원 장치}\n||장치||버전||일정||\n|BS2|V1.8.0|2019 상반기|\n|BSA2|V1.7.0|\n|BSL2|V1.5.0|\n|BLN2|V1.2.0|\n|FS2|V1.3.0|\n|FL|V1.0.1|\n\n|FSF2|V1.0.0|2020 상반기|\n{panel}\nExpected Result: 사용자가 선택한 관리자로 설정되어야 한다.\n> 관리자에 대해 총 10명으로 제한(Old Version)\n  ex) 전체관리자 10명을 만들경우 다른 관리자에 대해 설정할 수 없음.\n> 관리자에 대해 총 1000명으로 제한(New Version)",
+          "metadata": {
+            "source": "jira_test_step",
+            "issue_key": "COMMONR-36",
+            "step_index": "1"
+          },
+          "issue_key": "COMMONR-36",
+          "step_index": "1"
+        },
+        {
+          "content": "Test Step: 1. Device : Master만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Pre-defined Alarm > Device : Master 장치 선택 > Tamper on 선택\n\n* Tamper on : 장치에서 Tamper 제거\nTest Data: [BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Disable Device\n\n*사양 변경으로 인한 삭제 항목\n1) Release All Alarm\n2) Reboot Device\n3) Access Granted\n4) Access Denied\nExpected Result: 1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound가 Master 장치에서 출력된다\n3. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n\n*사양 변경으로 인한 삭제 항목\n1. Signal Alarm에 대해 Release All Alarm이 된다.\n2. 장치가 Reboot 된다.",
+          "metadata": {
+            "step_index": "1",
+            "issue_key": "COMMONR-13",
+            "source": "jira_test_step"
+          },
+          "issue_key": "COMMONR-13",
+          "step_index": "1"
+        },
+        {
+          "content": "Test Step: 1. Device : Master만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Input 선택 > Device : Master 장치 선택 > Port : Input Port 0 선택 > Switch : Normally Close 선택 > Duration : 100 > Schedule : Always 선택\nTest Data: [BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Release All Alarm\n4) Disable Device\n5) Function \n> Access Granted\n> Access Denied\nExpected Result: 1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Signal Alarm에 대해 Release All Alarm이 된다.\n4. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n5. Access Granted\n> 인증성공 팝업과 소리 1회만 처리.\n> Input Port 로그는 남음.\n6. Access Denied\n> 인증 실패 팝업과 소리가 1회만 처리된다.\n> Input Port 로그는 남음.",
+          "metadata": {
+            "step_index": "2",
+            "issue_key": "COMMONR-68",
+            "source": "jira_test_step"
+          },
+          "issue_key": "COMMONR-68",
+          "step_index": "2"
+        },
+        {
+          "content": "Test Step: 1. Device : Master만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Input 선택 > Device : Master 장치 선택 > Port : Input Port 1 선택 > Switch : Normally Close 선택 > Duration : 100 > Schedule : Always 선택\nTest Data: [BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Release All Alarm\n4) Disable Device\n5) Function \n> Access Granted\n> Access Denied\nExpected Result: 1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Signal Alarm에 대해 Release All Alarm이 된다.\n4. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n5. Access Granted\n> 인증성공 팝업과 소리 1회만 처리.\n> Input Port 로그는 남음.\n6. Access Denied\n> 인증 실패 팝업과 소리가 1회만 처리된다.\n> Input Port 로그는 남음.",
+          "metadata": {
+            "issue_key": "COMMONR-68",
+            "step_index": "4",
+            "source": "jira_test_step"
+          },
+          "issue_key": "COMMONR-68",
+          "step_index": "4"
+        },
+        {
+          "content": "Test Step: 1. Device : Master만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Input 선택 > Device : Master 장치 선택 > Port : Input Port 0 선택 > Switch : Normally Open 선택 > Duration : 100 > Schedule : Always 선택\nTest Data: [BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Release All Alarm\n4) Disable Device\n5) Function \n> Access Granted\n> Access Denied\nExpected Result: 1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Signal Alarm에 대해 Release All Alarm이 된다.\n4. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n5. Access Granted\n> 인증성공 팝업과 소리 1회만 처리.\n> Input Port 로그는 남음.\n6. Access Denied\n> 인증 실패 팝업과 소리가 1회만 처리된다.\n> Input Port 로그는 남음.",
+          "metadata": {
+            "source": "jira_test_step",
+            "step_index": "1",
+            "issue_key": "COMMONR-68"
+          },
+          "issue_key": "COMMONR-68",
+          "step_index": "1"
+        },
+        {
+          "content": "Test Step: 1. Device : Master만 연결\n2. Device > Advanced > Trigger & Action > +Add > Trigger > Input 선택 > Device : Master 장치 선택 > Port : Input Port 1 선택 > Switch : Normally Open 선택 > Duration : 100 > Schedule : Always 선택\nTest Data: [BioStar]\nAction Device : Master\n1. Action 선택\n1) Output\n2) Alert Sound\n3) Release All Alarm\n4) Disable Device\n5) Function \n> Access Granted\n> Access Denied\nExpected Result: 1. 설정한 Output이 Master 장치에서 출력된다.\n2. 설정한 Alert Sound Alarm이 Master 장치에서 출력된다.\n2-1) Alert Sound Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Sound Type : Sound가 목록에 존재\n > Play Option : Infinite/Counts 존재 \n2-2) Alert Buzzer Type이 출력된다.\n > Device : 하위 장치가 존재할 경우\n > Alert Buzzer Type : low/medium/high\n2-3) IO 장치 제외\n3. Signal Alarm에 대해 Release All Alarm이 된다.\n4. Disable Device로 설정한 장치가 잠긴다.\n> 메뉴 진입은 가능하다. (Master 장치만)\n> 모든 인증모드에서 인증이 불가하다.(ID / Card / Finger / Face)\n> LED는 Red-Magenta 로 2초 간격 전환된다.\n> 장치 잠금/해제 로그가 남는다.\n> 장치 잠금 해제 후 장치 정상동작 확인(인증)\n5. Access Granted\n> 인증성공 팝업과 소리 1회만 처리.\n> Input Port 로그는 남음.\n6. Access Denied\n> 인증 실패 팝업과 소리가 1회만 처리된다.\n> Input Port 로그는 남음.",
+          "metadata": {
+            "source": "jira_test_step",
+            "step_index": "3",
+            "issue_key": "COMMONR-68"
+          },
+          "issue_key": "COMMONR-68",
+          "step_index": "3"
+        }
+      ],
+      "reference_count": 8
+    }
+  }
+]
